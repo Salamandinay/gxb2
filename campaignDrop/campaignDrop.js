@@ -53,7 +53,17 @@ function init() {
 	oBin9 = document.getElementById('bin9');
 	oBin10 = document.getElementById('bin10');
 	oBin11 = document.getElementById('bin11');
-	arrBins = [oBin1, oBin2, oBin3, oBin4, oBin5, oBin6, oBin7, oBin8, oBin9, oBin10, oBin11];
+	oBin12 = document.getElementById('bin12');
+	oBin13 = document.getElementById('bin13');
+	oBin14 = document.getElementById('bin14');
+	oBin15 = document.getElementById('bin15');
+	oBin16 = document.getElementById('bin16');
+	oBin17 = document.getElementById('bin17');
+	oBin18 = document.getElementById('bin18');
+	oBin19 = document.getElementById('bin19');
+	oBin20 = document.getElementById('bin20');
+	oBin21 = document.getElementById('bin21');
+	arrBins = [oBin1, oBin2, oBin3, oBin4, oBin5, oBin6, oBin7, oBin8, oBin9, oBin10, oBin11, oBin12, oBin13, oBin14, oBin15, oBin16, oBin17, oBin18, oBin19, oBin20, oBin21];
 
 	updateItems();
 }
