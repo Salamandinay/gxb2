@@ -62,22 +62,19 @@ body {
 
 .col0 {
   float: left;
-  text-align: right;
-  width: 100px
+  width: 100px;
   padding: 3px;
 }
 
 .col1 {
-  float: center;
-  text-align: center;
-  width: 100px
+  float: left;
+  width: 100px;
   padding: 3px;
 }
 
 .col2 {
   float: right;
-  text-align: left;
-  display: inline-block;
+  width: 80%;
   padding: 3px;
 }
 
@@ -86,7 +83,6 @@ body {
   content: "";
   display: table;
   clear: both;
-  width: 90%;
 }
 
 div.chart div.row div.col1 {
