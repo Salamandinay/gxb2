@@ -42,6 +42,7 @@ function init() {
 		//}
 	}
 
+	oBin0 = document.getElementById('bin0');
 	oBin1 = document.getElementById('bin1');
 	oBin2 = document.getElementById('bin2');
 	oBin3 = document.getElementById('bin3');
@@ -63,7 +64,7 @@ function init() {
 	oBin19 = document.getElementById('bin19');
 	oBin20 = document.getElementById('bin20');
 	oBin21 = document.getElementById('bin21');
-	arrBins = [oBin1, oBin2, oBin3, oBin4, oBin5, oBin6, oBin7, oBin8, oBin9, oBin10, oBin11, oBin12, oBin13, oBin14, oBin15, oBin16, oBin17, oBin18, oBin19, oBin20, oBin21];
+	arrBins = [oBin0, oBin1, oBin2, oBin3, oBin4, oBin5, oBin6, oBin7, oBin8, oBin9, oBin10, oBin11, oBin12, oBin13, oBin14, oBin15, oBin16, oBin17, oBin18, oBin19, oBin20, oBin21];
 
 	updateItems();
 }
