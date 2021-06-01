@@ -77,6 +77,15 @@ function updateTime() {
 }
 
 
+function updateItems() {
+	updateTime();
+	
+	let items = (604800 - secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
+
+	document.getElementById('currentNum').value = items;
+}
+
+
 function storeLocal(i) {
 	if (typeof (Storage) !== 'undefined') {
 		localStorage.setItem(lsPrefix + i.id, i.value);
