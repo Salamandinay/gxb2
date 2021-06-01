@@ -1,0 +1,115 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+
+.banner {
+  margin-bottom: 2em;
+  padding: 2em;
+  background-color: #00a0fa;
+	border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.total {
+  width: 100%;
+  padding: 1em;
+  background-color: #eee;
+	border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+
+.chart {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  background-color: #fdf6ce;
+	border-radius: 20px;
+}
+
+
+.container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.bar {
+  text-align: right;
+  color: black;
+  width: 1%;
+  background-color: #4ea8ec;
+}
+
+.column {
+  float: left;
+  padding: 3px;
+}
+
+.col1 {
+  float: left;
+  width: 20%;
+  padding: 3px;
+}
+
+.col2 {
+  float: right;
+  width: 80%;
+  padding: 3px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.chart div.row div.col1 {
+  text-align: right;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea {
+  color: #222;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 5px;
+  color: #222;
+  display: inline-block;
+}
