@@ -141,30 +141,50 @@ function nextSimBlock() {
 			// update results
 			totalDrops += numDrops;
 
-			if (numDrops < 2000) {
+			if (numDrops < 999) {
 				binNum = 0;
-			} else if (numDrops < 2100) {
+			} else if (numDrops < 1100) {
 				binNum = 1;
-			} else if (numDrops < 2200) {
+			} else if (numDrops < 1200) {
 				binNum = 2;
-			} else if (numDrops < 2300) {
+			} else if (numDrops < 1300) {
 				binNum = 3;
-			} else if (numDrops < 2400) {
+			} else if (numDrops < 1400) {
 				binNum = 4;
-			} else if (numDrops < 2500) {
+			} else if (numDrops < 1500) {
 				binNum = 5;
-			} else if (numDrops < 2600) {
+			} else if (numDrops < 1600) {
 				binNum = 6;
-			} else if (numDrops < 2700) {
+			} else if (numDrops < 1700) {
 				binNum = 7;
-			} else if (numDrops < 2800) {
+			} else if (numDrops < 1800) {
 				binNum = 8;
-			} else if (numDrops < 2900) {
+			} else if (numDrops < 1900) {
 				binNum = 9;
-			} else if (numDrops < 3000) {
+			} else if (numDrops < 2000) {
 				binNum = 10;
-			} else if (numDrops >= 3000) {
+			} else if (numDrops < 2100) {
 				binNum = 11;
+			} else if (numDrops < 2200) {
+				binNum = 12;
+			} else if (numDrops < 2300) {
+				binNum = 13;
+			} else if (numDrops < 2400) {
+				binNum = 14;
+			} else if (numDrops < 2500) {
+				binNum = 15;
+			} else if (numDrops < 2600) {
+				binNum = 16;
+			} else if (numDrops < 2700) {
+				binNum = 17;
+			} else if (numDrops < 2800) {
+				binNum = 18;
+			} else if (numDrops < 2900) {
+				binNum = 19;
+			} else if (numDrops < 3000) {
+				binNum = 20;
+			} else if (numDrops >= 3000) {
+				binNum = 21;
 			}
 
 			arrResults[binNum]++;
