@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campaign Drop Simulator</title>
+  
+  <link rel="stylesheet" type="text/css" href="campaignDrop.css">
+  
+  <script src="campaignDrop.js"></script>
+</head>
+
+
+<body onload="init();">
+  <div class="banner">
+    <div><a href="../index.html">Home</a></div>
+    <h1>Campaign Drop</h1>
+  </div>  
+  
+  <div class="panel">
+    <h4>Overview</h4>
+    <p>
+      <div>For most campaign drop events:</div>
+      <div>The first tick occurs at UTC Friday at 00:02:48. (On my game's timer anyways.)</div>
+      <div>The ticks then happen every 5 minutes after that until UTC Thursday at 23:57:48.</div>
+      <div>Each tick, there is a 44% chance to drop the event currency.</div>
+      <div>If a drop occurs, there will be an evenly distributed chance of dropping 1, 2, or 3 of the event currency.</div>
+    </p>
+        
+    <p>
+      <div>Why is this timer off from the in game timer?</div>
+      <div>You don't get drops during the last 24 hours of the event.</div>
+    </p>
+  </div>
+  
+  
+  <p>
+    <div class="row">
+      <div class="column">
+        <div class="row"><div class="column"><label for="hoursLeft">Hours Left: </label></div><div class="column"><input type="text" id="hoursLeft" size="2" value="168"></input></div></div>
+        <div class="row"><div class="column"><label for="minsLeft">Minutes Left: </label></div><div class="column"><input type="text" id="minsLeft" size="2" value="0"></input></div></div>
+        <div class="row"><div class="column"><label for="secsLeft">Seconds Left: </label></div><div class="column"><input type="text" id="secsLeft" size="2" value="0"></input></div></div>
+        <div><input type="submit" value="Get Current Time Left" onclick="updateTime();"></input></div>
+        
+        <div class="row"><div class="column"><label for="daily">Daily Reward: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="daily" size="3" value="100"></input></div></div>
+        <div class="row"><div class="column"><label for="dropChance">Drop Chance: </label></div><div class="column"><input type="text" id="dropChance" size="2" value="0.44"></input></div></div>
+        <div class="row"><div class="column"><label for="minDrop">Min Dropped: </label></div><div class="column"><input type="text" id="minDrop" size="2" value="1"></input></div></div>
+        <div class="row"><div class="column"><label for="maxDrop">Max Dropped: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="maxDrop" size="3" value="3"></input></div></div>
+        <div class="row"><div class="column"><label for="currentNum">Current Number: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="currentNum" size="3" value="100"></input></div></div>
+      </div>
+    </div>
+    
+    <div><input type="submit" value="Run 100K Simulations" onclick="runDropSim();"></input></div>
+  </p>
+  
+  <div class="chart">
+    <div class="row">
+      <div class="col1">0-1499</div>
+      <div class="col2 container"><div class="bar" id="bin1">&nbsp;</div></div>
+    </div>
+    
+    <div class="row">
+      <div class="col1">1500-2299</div>
+      <div class="col2 container"><div class="bar" id="bin2">&nbsp;</div></div>
+    </div>
+    
+    <div class="row">
+      <div class="col1">2300-2699</div>
+      <div class="col2 container"><div class="bar" id="bin3">&nbsp;</div></div>
+    </div>
+    
+    <div class="row">
+      <div class="col1">2700-3099</div>
+      <div class="col2 container"><div class="bar" id="bin4">&nbsp;</div></div>
+    </div>
+    
+    <div class="row">
+      <div class="col1">3100-3599</div>
+      <div class="col2 container"><div class="bar" id="bin5">&nbsp;</div></div>
+    </div>
+    
+    <div class="row">
+      <div class="col1">3600+</div>
+      <div class="col2 container"><div class="bar" id="bin6">&nbsp;</div></div>
+    </div>
+  </div>  
+  
+  <div class="total">Average Drops: <span id="avgDrops">0</span></div>
+  
+</body>
+
+</html>
