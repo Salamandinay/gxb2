@@ -59,7 +59,7 @@ function init() {
 }
 
 
-let _secsDiff;
+let secsPassed;
 
 function updateTime() {
 	const d = new Date();
@@ -76,7 +76,7 @@ function updateTime() {
 	const minsLeft = Math.floor((secsDiff - (hoursLeft * 60 * 60)) / 60);
 	const secsLeft = secsDiff % 60;
 	
-	_secsDiff = secsDiff;
+	secsPassed = 604800 - secsDiff;
 	document.getElementById('hoursLeft').value = hoursLeft;
 	document.getElementById('minsLeft').value = minsLeft;
 	document.getElementById('secsLeft').value = secsLeft;
@@ -85,8 +85,8 @@ function updateTime() {
 function updateItems() {
 	updateTime();
 
-	let items = (604800 - _secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
-	items += document.getElementById('daily').value * (1 + Math.floor(_secsDiff/86400));
+	let items = (secsPassed) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
+	items += document.getElementById('daily').value * (1 + Math.floor(secsPassed/86400));
 	
 	document.getElementById('currentNum').value = Math.floor(items);
 }
