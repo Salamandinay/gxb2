@@ -86,8 +86,9 @@ function updateItems() {
 	updateTime();
 
 	let items = (604800 - _secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
-
-	document.getElementById('currentNum').value = items;
+	items += document.getElementById('daily').value * (1 + Math.floor(_secsDiff/86400));
+	
+	document.getElementById('currentNum').value = Math.floor(items);
 }
 
 function storeLocal(i) {
