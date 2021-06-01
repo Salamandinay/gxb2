@@ -86,7 +86,7 @@ body {
 .row:after {
   content: "";
   display: table;
-  border-bottom: 3px solid #4588ba;
+  width: 90%;
 }
 
 div.chart div.row div.col1 {
