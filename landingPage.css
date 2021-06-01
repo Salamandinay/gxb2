@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+
+.banner {
+  margin-bottom: 2em;
+  padding: 2em;
+  background-color: #00a0fa;
+	border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+
+a.card, a:link.card, a:visited.card, a:hover.card, a:active.card {
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+.notab {
+	margin: 2em;
+}
+
+.tab {
+  margin: 2em;
+	margin-left: 6em;
+}
+
+div.card {
+	border: 1px solid #FAFAFA;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+	border-radius: 20px;
+  
+  background-color: #fae6be;
+  padding: 2em;
+	cursor: pointer;
+}
+
+div.card img {
+  float: left;
+  width: 150px;
+  margin-right: 1em;
+}
+
+div.card .column {
+  float: left;
+  width: 75%;
+}
+
+
+div.card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.gray {
+  background-color: #808080 !important;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  div.card .column {
+    width: 100%;
+  }
+}
