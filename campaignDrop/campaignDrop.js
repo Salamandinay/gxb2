@@ -240,7 +240,7 @@ function nextSimBlock() {
 		let percentComplete = secsPassed/604800.0;
 		let addDaily = document.getElementById('daily').value * (1 + Math.floor(secsPassed/86400));
 	
-		document.getElementById('col0').innerHTML = '(' + Math.round((999-700)*percentComplete + addDaily) + '-)';
+		document.getElementById('col0').innerHTML = '(<' + Math.round((999-700)*percentComplete + addDaily) + ')';
 		document.getElementById('col1').innerHTML = '(' + Math.round((1099-700)*percentComplete + addDaily) + ')';
 		document.getElementById('col2').innerHTML = '(' + Math.round((1199-700)*percentComplete + addDaily) + ')';
 		document.getElementById('col3').innerHTML = '(' + Math.round((1299-700)*percentComplete + addDaily) + ')';
@@ -261,6 +261,6 @@ function nextSimBlock() {
 		document.getElementById('col18').innerHTML = '(' + Math.round((2799-700)*percentComplete + addDaily) + ')';
 		document.getElementById('col19').innerHTML = '(' + Math.round((2899-700)*percentComplete + addDaily) + ')';
 		document.getElementById('col20').innerHTML = '(' + Math.round((2999-700)*percentComplete + addDaily) + ')';
-		document.getElementById('col21').innerHTML = '(' + Math.round((3000-700)*percentComplete + addDaily) + '+)';
+		document.getElementById('col21').innerHTML = '(>' + Math.round((3000-700)*percentComplete + addDaily) + ')';
 	}
 }
