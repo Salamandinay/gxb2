@@ -127,7 +127,7 @@ function storeLocal(i) {
 
 function runDropSim() {
 	if (!(simRunning)) {
-		arrResults = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+		arrResults = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 		simNum = 0;
 		totalDrops = 0;
 		simRunning = true;
