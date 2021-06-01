@@ -62,9 +62,12 @@ function init() {
 function updateTime() {
 	const d = new Date();
 	const dEnd = new Date(d.toUTCString());
-	const numDaysAdd = 6 - ((d.getUTCDay() + 1) % 7);
+	const numDaysAdd = 6 - ((d.getUTCDay() + 2) % 7);
 
 	dEnd.setUTCDate(d.getUTCDate() + numDaysAdd);
+	dEnd.setUTCHours(23);
+	dEnd.setUTCMinutes(59);
+	dEnd.setUTCSeconds(59);
 
 	const secsDiff = Math.floor((dEnd - d) / 1000);
 	const hoursLeft = Math.floor(secsDiff / 60 / 60);
