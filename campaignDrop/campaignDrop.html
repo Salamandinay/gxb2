@@ -21,16 +21,9 @@
   <div class="panel">
     <h4>Overview</h4>
     <p>
-      <div>For most campaign drop events:</div>
-      <div>The first tick occurs at UTC Friday at 00:02:48. (On my game's timer anyways.)</div>
-      <div>The ticks then happen every 5 minutes after that until UTC Thursday at 23:57:48.</div>
-      <div>Each tick, there is a 44% chance to drop the event currency.</div>
-      <div>If a drop occurs, there will be an evenly distributed chance of dropping 1, 2, or 3 of the event currency.</div>
-    </p>
-        
-    <p>
-      <div>Why is this timer off from the in game timer?</div>
-      <div>You don't get drops during the last 24 hours of the event.</div>
+      <div>For campaign drop events of GirlsxBattle2.</div>
+      <div>Original page by vincitego at https://vincitego.github.io/campaignDrop/campaignDrop.html</div
+      <div>GxB2 drop rates at https://docs.google.com/spreadsheets/d/1k9cyAnD-TTnGAvaf4KflgZ0KZu1xtXwE-8PBpLYut_I</div>
     </p>
   </div>
   
@@ -44,10 +37,10 @@
         <div><input type="submit" value="Get Current Time Left" onclick="updateTime();"></input></div>
         
         <div class="row"><div class="column"><label for="daily">Daily Reward: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="daily" size="3" value="100"></input></div></div>
-        <div class="row"><div class="column"><label for="dropChance">Drop Chance: </label></div><div class="column"><input type="text" id="dropChance" size="2" value="0.44"></input></div></div>
-        <div class="row"><div class="column"><label for="minDrop">Min Dropped: </label></div><div class="column"><input type="text" id="minDrop" size="2" value="1"></input></div></div>
-        <div class="row"><div class="column"><label for="maxDrop">Max Dropped: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="maxDrop" size="3" value="3"></input></div></div>
-        <div class="row"><div class="column"><label for="currentNum">Current Number: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="currentNum" size="3" value="100"></input></div></div>
+        <div class="row"><div class="column"><label for="dropChance">Drop Chance: </label></div><div class="column"><input type="text" id="dropChance" size="2" value="0.0926"></input></div></div>
+        <div class="row"><div class="column"><label for="minDrop">Min Dropped: </label></div><div class="column"><input type="text" id="minDrop" size="2" value="8"></input></div></div>
+        <div class="row"><div class="column"><label for="maxDrop">Max Dropped: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="maxDrop" size="3" value="10"></input></div></div>
+        <div class="row"><div class="column"><label for="currentNum">Current Number: </label></div><div class="column"><input type="text" onchange="storeLocal(this);" id="currentNum" size="3" value="0"></input></div></div>
       </div>
     </div>
     
