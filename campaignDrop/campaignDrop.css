@@ -63,7 +63,7 @@ body {
 .col0 {
   float: left;
   text-align: right;
-  width: 6%;
+  width: 100px;
   display: inline-block;
   padding: 3px;
 }
@@ -71,7 +71,7 @@ body {
 .col1 {
   float: center;
   text-align: center;
-  width: 4%;
+  width: 100px;
   display: inline-block;
   padding: 3px;
 }
@@ -79,7 +79,6 @@ body {
 .col2 {
   float: right;
   text-align: left;
-  width: 90%;
   padding: 3px;
 }
 
@@ -87,7 +86,6 @@ body {
 .row:after {
   content: "";
   display: table;
-  clear: both;
   border-bottom: 3px solid #4588ba;
 }
 
