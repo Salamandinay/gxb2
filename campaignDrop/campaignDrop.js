@@ -55,7 +55,7 @@ function init() {
 	oBin11 = document.getElementById('bin11');
 	arrBins = [oBin1, oBin2, oBin3, oBin4, oBin5, oBin6, oBin7, oBin8, oBin9, oBin10, oBin11];
 
-	updateTime();
+	updateItems();
 }
 
 
