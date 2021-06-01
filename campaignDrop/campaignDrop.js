@@ -59,6 +59,8 @@ function init() {
 }
 
 
+let _secsDiff;
+
 function updateTime() {
 	const d = new Date();
 	const dEnd = new Date(d.toUTCString());
@@ -73,7 +75,8 @@ function updateTime() {
 	const hoursLeft = Math.floor(secsDiff / 60 / 60);
 	const minsLeft = Math.floor((secsDiff - (hoursLeft * 60 * 60)) / 60);
 	const secsLeft = secsDiff % 60;
-
+	
+	_secsDiff = secsDiff;
 	document.getElementById('hoursLeft').value = hoursLeft;
 	document.getElementById('minsLeft').value = minsLeft;
 	document.getElementById('secsLeft').value = secsLeft;
@@ -82,7 +85,7 @@ function updateTime() {
 function updateItems() {
 	updateTime();
 
-	let items = (604800 - secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
+	let items = (604800 - _secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
 
 	document.getElementById('currentNum').value = items;
 }
