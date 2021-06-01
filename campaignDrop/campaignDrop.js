@@ -27,19 +27,19 @@ const lsPrefix = 'cd_';
 function init() {
 	// check local storage
 	if (typeof (Storage) !== 'undefined') {
-		//if (localStorage.getItem(lsPrefix + 'daily') !== null) {
-		//	document.getElementById('daily').value = localStorage.getItem(lsPrefix + 'daily');
-		//	document.getElementById('currentNum').value = localStorage.getItem(lsPrefix + 'currentNum');
-		//	document.getElementById('dropChance').value = localStorage.getItem(lsPrefix + 'dropChance');
-		//	document.getElementById('minDrop').value = localStorage.getItem(lsPrefix + 'minDrop');
-		//	document.getElementById('maxDrop').value = localStorage.getItem(lsPrefix + 'maxDrop');
-		//} else {
+		if (localStorage.getItem(lsPrefix + 'daily') !== null) {
+			document.getElementById('daily').value = localStorage.getItem(lsPrefix + 'daily');
+			document.getElementById('currentNum').value = localStorage.getItem(lsPrefix + 'currentNum');
+			document.getElementById('dropChance').value = localStorage.getItem(lsPrefix + 'dropChance');
+			document.getElementById('minDrop').value = localStorage.getItem(lsPrefix + 'minDrop');
+			document.getElementById('maxDrop').value = localStorage.getItem(lsPrefix + 'maxDrop');
+		} else {
 			localStorage.setItem(lsPrefix + 'daily', 100);
-			localStorage.setItem(lsPrefix + 'currentNum', 0);
-			localStorage.setItem(lsPrefix + 'dropChance', 0.0926);
-			localStorage.setItem(lsPrefix + 'minDrop', 8);
-			localStorage.setItem(lsPrefix + 'maxDrop', 10);
-		//}
+			localStorage.setItem(lsPrefix + 'currentNum', 100);
+			localStorage.setItem(lsPrefix + 'dropChance', 0.44);
+			localStorage.setItem(lsPrefix + 'minDrop', 1);
+			localStorage.setItem(lsPrefix + 'maxDrop', 3);
+		}
 	}
 
 	oBin1 = document.getElementById('bin1');
@@ -77,15 +77,6 @@ function updateTime() {
 	document.getElementById('hoursLeft').value = hoursLeft;
 	document.getElementById('minsLeft').value = minsLeft;
 	document.getElementById('secsLeft').value = secsLeft;
-}
-
-
-function updateItems() {
-	updateTime();
-	
-	let items = (604800 - secsDiff) / 60 / 5 * parseFloat(document.getElementById('dropChance').value) * (parseFloat(document.getElementById('minDrop').value) + parseFloat(document.getElementById('maxDrop').value)) / 2;
-
-	document.getElementById('currentNum').value = items;
 }
 
 
