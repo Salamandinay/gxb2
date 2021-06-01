@@ -35,10 +35,10 @@ function init() {
 			document.getElementById('maxDrop').value = localStorage.getItem(lsPrefix + 'maxDrop');
 		} else {
 			localStorage.setItem(lsPrefix + 'daily', 100);
-			localStorage.setItem(lsPrefix + 'currentNum', 100);
-			localStorage.setItem(lsPrefix + 'dropChance', 0.44);
-			localStorage.setItem(lsPrefix + 'minDrop', 1);
-			localStorage.setItem(lsPrefix + 'maxDrop', 3);
+			localStorage.setItem(lsPrefix + 'currentNum', 0);
+			localStorage.setItem(lsPrefix + 'dropChance', 0.0926);
+			localStorage.setItem(lsPrefix + 'minDrop', 8);
+			localStorage.setItem(lsPrefix + 'maxDrop', 10);
 		}
 	}
 
