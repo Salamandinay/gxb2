@@ -63,22 +63,21 @@ body {
 .col0 {
   float: left;
   text-align: right;
-  width: 100px;
-  display: inline-block;
+  width: 100px
   padding: 3px;
 }
 
 .col1 {
   float: center;
   text-align: center;
-  width: 100px;
-  display: inline-block;
+  width: 100px
   padding: 3px;
 }
 
 .col2 {
   float: right;
-  text-align: left;
+  text-align: left;;
+  display: inline-block;
   padding: 3px;
 }
 
