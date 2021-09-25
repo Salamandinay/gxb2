@@ -1,1 +1,1 @@
-https://salamandinay.github.io/index.html
+https://salamandinay.github.io/gxb2/index.html
