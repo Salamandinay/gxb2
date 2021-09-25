@@ -1,0 +1,35 @@
+id,name,desc
+1,Dicker Panzer,Erhöht die HP von allen Gegnern um 30%
+2,Adrenalin,Erhöht den Angriff von allen Gegnern um 30%
+3,Schutzunterstand,Erhöht die Krit. Resistenz aller Gegner um 30% (Die Verringerung der Krit.-Rate vom Angreifer gleicht den Wert der eigenen Krit.-Resistenz aus)
+4,Miasma,Reduziert die erhaltene Heilung von deinen Mädchen um 60%
+5,Energieablenkung,In den ersten 3 Runden können deine Mädchen keine aktiven Fertigkeiten freigeben
+6,Zusammensein,"Wenn die Gegner Schaden erleiden, werden sie den Schaden mit ihren Verbündeten teilen"
+7,Heilverstärkung,Erhöht zu Ende der Runde die HP aller Gegner um 15% ihrer Max. HP
+8,Schmerzübertragung,"Zu Ende der Runde wird jeder Gegner seine 2 zufälligen Debuffs auf eine seiner Verbündeten übertragen (Der Kontroll-Debuff wird bevorzugt übertragen und die Verbündete, deren erlittenen Debuffs am wenigsten sind, wird bevorzugt als Zielmädchen gewählt.)"
+9,Ultimative Sperre,"Wenn ein Gegner zum ersten Mal einen tödlichen Angriff erleidet, bekommt er 2 Schilde, damit er nicht davon getötet werden kann. Zur gleichen Zeit wird eine zufällige Verbündete gesperrt (sie kann sich nicht bewegen und ihre passiven Fertigkeiten, Potenziale oder Fertigkeiten der Rüstungssets können nicht ausgelöst werden und es dauert 2 Runden)."
+10,Unbekannte Fessel,Zu Beginn des Kampfs werden deine 3 zufälligen Mädchen gesperrt (alle auslösbaren passiven Fertigkeiten funktionieren nicht). Alle 2 Runden wird dieser Effekt einmal ausgelöst und es dauert 2 Runden.
+11,Panzerplatte,"Wenn ein Gegner einen Schaden erleidet, wird dieser Einzelschaden nicht mehr als 10% seiner Max. HP sein."
+12,Blind machen,Zu Beginn des Kampfs werden deine 2 zufälligen Mädchen blind gemacht (Ihre aktiven Fertigkeiten werden gezwungenermassen nur einen zufälligen Gegner angreifen und es dauert 1 Runde.). Dieser Effekt wird jede Runde 1 Mal ausgelöst.
+13,Bluten,"Zu Ende der Runde erleiden deine Mädchen Schaden, der 12% ihrer Max. HP gleicht."
+14,Verzögerer,Zu Beginn des Kampfs erhalten alle Gegner eine 90%ige Schadensermäßigung (einschließlich prozentiges Schadens). Zu Ende der Runde wird diese Schadensermäßigung um 10% reduziert und maximal auf 50%.
+15,Dorn,"Wenn deine Mädchen Standardangriffe oder aktive Fertigkeiten freigeben und Schaden verursachen, werden ihnen 100% des verursachten Schadens zugefügt."
+16,Gesamtangriff,Zu Beginn des Kampfs erhalten alle Gegner 200 Energie. In den ersten 2 Runden regeneriert sich die Energie aller Gegner zu Ende der Runde um 100. Ab der 3. Runde regeneriert sich die Energie aller Gegner zu Ende der Runde um 50.
+17,Schutzkleidung,In der ersten Runde sind die Gegner immun gegen alle Debuffs und in den ersten 2 Runden erleiden sie keinen Schaden.
+18,Müdigkeit,"Reduziert die Blockade deiner Krieger um 20%, die Präzision deiner Magier und Ranger um 20%, den Rüstungsbruch deiner Mörder um 25% und die Heilung deiner Priester um 15%"
+19,Desinfektionsmittel,Am Ende der Runde entfernt jeder Gegner zufällig 3 erlittene Debuffs
+20,Mobilisieren,"Die ersten 2 Gegner, die einen tödlichen Schaden erleiden, regenerieren ihre HP sofort um 100%."
+21,Energietrank,Erhöht zum Ende einer Runde 2 Runden lang die HP eines zufälligen Gegners in der Frontline um 8% seiner max. HP und den Angriff eines zufälligen Gegners in der Backline um 20%.
+22,Schwindel,"Betäubt in ungeradzahligen Runden 1 Runde lang 1 zufällige Verbündete in der Frontline, in geradzahligen Runden wird 1 zufällige Verbündete in der Backline 1 Runde lang betäubt."
+23,Kreuzinfektion,"Vermindert in ungeradzahligen Runden den Schaden, der von den Verbündeten auf den ungeradzahligen Positionen verursacht wird, um 15%. In geradzahligen Runden wird die erhaltene Heilung der Verbündeten auf den geradzahligen Positionen um 30% vermindert."
+24,Verfolgung,"Erhöht zu Beginn des Kampfes 3 Runden lang den Schaden, den die Verbündete mit den niedrigsten HP erleidet, um 20%. Wenn ein Gegner ein zufälliges Ziel angreift, wird die Verbündete mit den niedrigsten HP bevorzugt gewählt."
+25,Kraftlosigkeit,Vermindert den Angriff aller Mädchen des eigenen Teams um 10%.
+26,Auswegslosigkeit,"Vermindert alle Schäden, die die Gegner erleiden, um 20%, wenn deren HP niedriger als 50% sind."
+27,Schmerzlosigkeit,"Vermindert alle Schäden, die der Gegners erleidet um 70%. Fügt 4 Runden lang den Gegnern einen Schaden in Höhe von 25% des zuvor verminderten Schadens zu. (Kann weder übertragen noch entfernt werden.)"
+28,Geschwächt,Vermindert die HP aller Mädchen des eigenen Teams um 15%
+29,Demoralisation,"Die Mädchen des eigenen Teams können keine kritischen Treffer mehr landen. (Außer Fertigkeiten, die sicher einen Krit. Schaden verursacht.)"
+30,Rache,"Jedes Mal wenn ein Gegner stirbt, werden die HP von allen Gegnern um 30% ihrer max. HP erhöht. Ihr Angriff, Präzision, Blockade und Krit. Rate werden 3 Runden lang jeweils um 30% erhöht."
+31,Unsichtbarkeit,"Wenn die HP von einem Gegner im Kampf zum ersten Mal niedriger als 50% liegen, wird er 4 Runden unsichtbar werden (weicht Angriffen gegen ein einzelnes Ziel oder Angriffen gegen ein zufälliges Ziel aus. Alle erlittenen Schäden werden um 50% verringert und die Krit. Rate um 100% erhöht.)"
+32,Verbannung,"Verbannt zu Beginn des Kampfes die Verbündete mit den höchsten HP bis zum Ende des Kampfes (HP und Energie des verbannten Mädchens werden nicht geändert. Das verbannte Mädchen kann sich weder bewegen noch als zufälliges Ziel gewählt werden. Dem verbannten Mädchen werden weder Buffs noch Debuffs gegeben. Wenn in einem Team nur noch verbannte Mädchen überlebt haben, verliert dieses Team den Kampf.)"
+33,Heilungsfluch,"Zu Beginn des Kampfs erhalten alle Mädchen des eigenen Teams 3 Schichten Heilungsfluch. Wenn der Heilungsfluch entfernt wird, fügt jede Schicht dem Befallenen einen Schaden in Höhe von 10% seiner max. HP zu."
+34,Erschöpfung,"Vermindert die Energie, die die Mädchen des eigenen Teams erhalten werden, um 50%. Die Verbündeten mit 0 Energie können keinen Schaden verursachen. Der Angriff der Verbündeten, die mehr als 50 Energie haben, wird um 20% vermindert. Zum Ende der Runde wird die Energie von den Verbündeten, die nur 50 Energie oder weniger haben, geleert."

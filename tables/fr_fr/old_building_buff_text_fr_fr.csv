@@ -1,0 +1,35 @@
+id,name,desc
+1,Armure lourde,Augmente les PV des ennemis de 30%.
+2,Adrénaline,Augmente l'Attaque des ennemis de 30%.
+3,Barrière,Augmente la Résistance aux Coups Critiques des ennemis de 30% (La Résistance aux Coups Critiques peut diminuer la probabilité de subir un Coup Critique).
+4,Miasme,Réduit les Soins Reçus par les alliées de 60%.
+5,Épuisement,"Pendant les 3 premiers tours, les Filles alliées ne peuvent pas utiliser leur Compétence Active."
+6,Formation Serrée,"Lorsque un des ennemis subit des dégâts, les dégâts seront partagés entre tous les ennemis."
+7,Soin,Tous les ennemis récupèrent 15% de leur PV à la fin du tour
+8,Bouc Émissaire,Chaque ennemi transfèrent aléatoirement 2 malus à une de vos Filles alliées au hasard à la fin de chaque tour (Les Effets de Contrôle seront transférés en priorité; Les Filles avec le moins de malus les transféreront en priorité).
+9,Sceau Ultime,"Chaque ennemi obtient 2 boucliers qui peuvent neutraliser 1 attaque mortelle le visant; en neutralisant cette attaque mortelle, une de vos Filles alliées sera aléatoirement scellée (toutes les compétences passives qui doivent être déclenchées seront inutilisables) pendant 2 tours."
+10,Emprisonnement,"Au début du combat, 3 de vos Filles alliées sont scellées (toutes les compétences passives sont neutralisées, impossible à annuler) pendant 2 tours. Cet effet se déclenche 1 fois tous les 2 tours."
+11,Renforcement,"Lorsqu'un ennemi subit des dégâts, ces derniers ne pourront pas être supérieurs à 10% de la valeur de leur PV max"
+12,Aveuglement,"Au début du combat, les Compétences Actives de 2 Filles alliées aléatoires ne peuvent cibler qu'un 1 ennemi aléatoire pendant 1 tour. Cet effet se déclenche 1 fois à chaque tour."
+13,Saignement,"À la fin du tour, chaque Fille alliée subit des dégâts (12% de leur PV max)."
+14,Éponge,"Au début du combat, tous les dégâts subis par les ennemis sont réduits de 90%. À chaque fin de tour, ce pourcentage diminue de 10% (Descend jusqu'à 50% minimum)."
+15,Revers,"Lorsqu'une Fille alliée effectue une Attaque Basique ou utilise sa Compétence Active, elle subit 100% des dégâts qu'elle inflige."
+16,Raid ennemi,"Au début de la bataille, tous les ennemis ont 200 points d'Énergie. Pendant les 2 premiers tours de la bataille, à la fin du tour, tous les ennemis récupèrent 100 points d'Énergie; au début du 3ème tour, tous les ennemis récupèrent 50 points d'Énergie à la fin du tour."
+17,Combinaison,"Lors du 1er tour, les ennemis sont immunisés à tous les malus. Pendant les 2 premiers tours, ils ne subissent aucun dégât."
+18,Fatigue,"Réduit le Blocage des Guerriers allliés de 20%, la Précision des Mages alliés de 20%, la Précision des Éclaireurs alliés de 20%, la Pénétration d'Armure des Assassins alliés de 20% et les Soins des Prêtres alliés de 15%."
+19,Neutralisation,"À la fin du tour, chaque ennemi neutralise 3 malus dont il est la cible."
+20,Ranimation,Les 2 premiers ennemis qui subissent des dégâts mortels récupèrent 100% de leur PV.
+21,Potion de vitalité,"Soigne un ennemi aléatoire de la ligne avant de 8% de ses PV Max, et augmente l'Attaque d'un ennemi aléatoire de la ligne arrière de 20% à la fin de chaque tour pendant 2 tours."
+22,Étourdir,"Étourdit une Fille alliée aléatoire de la ligne avant pendant 1 tour, à chaque tour impair. Étouridt une Fille alliée aléatoire de la ligne arrière pendant 1 tour, à chaque tour pair."
+23,Infection Mutuelle,"À chaque tour impair, les dégâts infligés par les Filles alliées placées en position impair seront réduits de 15%. À chaque tour pair, le Soin Reçu par les Filles alliées en position pair seront réduits de 30%."
+24,Désir de Victoire,"Au début de la Bataille, augmente de 20% les dégâts infligés par la Fille alliée ayant le moins de PV pendant 3 tours. Lorsque l'ennemi lance une attaque, la Fille alliée ayant le moins de PV sera la première cible."
+25,Faiblesse,Réduit l'Attaque des alliées de 10%.
+26,Dernier Combat,"Lorsque les PV de tous les ennemis sont inférieurs à 50%, réduit les dégâts subis de 30%."
+27,Paralyser,"Réduit les dégâts subis par les ennemis de 70%, à la fin du tour, ils recevront des dégâts supplémentaires équivalent à 25% des précédents dégâts réduits pendant 4 tours. ( Ne peut pas être transféré ni purifié)"
+28,Fragile,Réduit les PV des alliées de 10%.
+29,Démoralisateur,Les dégâts infligés par les alliées ne peuvent pas être Critiques. (Sauf les dégâts à 100% de Crit.)
+30,Revanche,"Chaque fois qu'un ennemi meurt, tous les ennemis récupèrent 30% de leurs PV Max, leur Attaque augmente de 30%, leur Précision de 30%, leur Blocage de 30% et leur Critique de 30% pendant 3 tours."
+31,Invisible,"Lorsque les PV des ennemis sont pour la première fois inférieurs à 50%, ils deviendront invisibles aux alliées pendant 4 tours. (Esquive l'Attaque Basique et les Attaques aléatoires, réduit les dégâts de 50%, et augmente les Critiques de 100%)"
+32,Expulser,"Au début de la Bataille, la Fille alliées ayant le plus de PV sera expulsée jusqu'à la fin de la Bataille (Les PV et l'Énergie de la Fille expulsée resteront tels quels, elle ne pourra effectuer aucune action, ni recevoir de bonus, ou être ciblée par les attaques aléatoires). Si lors d'une Bataille toutes les Filles sont expulsées, alors cela sera considéré comme défaite."
+33,Soin Maudit,"Au début de la Bataille, les alliées obtiennent 3 couches de Soin Maudit. Lorsque les alliées sont purifiées de Soin Maudit, ils subiront pour chaques couches reçues des dégâts équivalent à 10% de leurs PV Max."
+34,Épuisement d'Énergie,"Réduit le gain d'Énergie des alliées de 50%, les Filles alliées ayant 0 d'Énergie ne peuvent infliger auncun dégât. Réduit l'Attaque des alliées ayant plus de 50 d'Énergie de 20%. À la fin du tour, consomme toutes les Énergies des alliées ayant moins de 50 d'Énergie."

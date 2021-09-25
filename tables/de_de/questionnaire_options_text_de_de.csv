@@ -1,0 +1,854 @@
+id,text
+1,Schlecht
+2,Nicht zufriedenstellend
+3,Normal
+4,Gut
+5,Sehr gut
+6,Spiel Forum
+7,Facebook
+8,App Store durchsuchen
+9,Empfohlen von einem Freund oder Kollegen
+10,Durch eine Webseite oder andere
+11,Soziale Plattform wie Line
+12,Ich bin nicht interessiert oder mag die Subkultur nicht
+13,"Ich mag die Subkultur. Ich lese, spiele oder schaue hauptsächlich beliebte oder klassische Anime, Manga und Spiele"
+14,"Ich mag die Subkultur. Es gibt ein bestimmtes Genre, das ich mag und das schaue und lese ich gerne."
+15,Ich bin ein richtiger Otaku. Ich schaue alles an Animes und liebe die Subkultur.
+16,Handyspiele
+17,Am PC
+18,PC Webseiten für Spiele
+19,"Konsolenspiel (Ps, Xbox, Switch etc.)"
+20,Ich spiele nicht oft andere Spiele
+21,Idle Spiele
+22,Rollenspiele (fate/go)
+23,Aktionsspiele (Honkai Impact 3rd)
+24,Echtzeitstrategie (Clash Royale)
+25,"Ego Shooter (Pubg, Fortnite)"
+26,MMORPG
+27,Musik oder Rhythmusspiel
+28,Weniger als 75
+29,76-150
+30,151-750
+31,751-1500
+32,Mehr als 1500
+33,Erfahrung: Das Spiel zu spielen ist eine unterhaltsame und interessante Erfahrung.
+34,"Sammeln: Sammle die Charaktere, Gegenstände und Kostüme, um die Sammlung zu vervollständigen"
+35,Geschichte: Interessiert an der Geschichte des Spiels
+36,Strategie: Löse herausfordernde Probleme und Rätsel im Spiel
+37,"Wettbewerb: Steige in der Rangliste auf, um mehr Ruhm zu erlangen"
+38,"Charaktere entwickeln: Charaktere steigern, Teamgeist"
+39,Freizeit: Zum Entspannen und Zeit töten
+40,Soziales: Freunde finden und / oder mit Freunden im Spiel spielen
+41,Ich weiß nicht / ich spiele was ich will. Ich habe keine besonderes Motiv
+42,Musik hören
+43,Comics lesen
+44,Romane lesen
+45,Radio und Podcast hören
+46,Fernsehen / Filme schauen
+47,"Schaue mir Animes, Mangas und Videospiele an"
+48,Cartoons schauen
+49,Durchsuche Spielforen
+50,Sonstiges (das Feld kann ausgefüllt werden)
+51,Männlich
+52,Weiblich
+53,Unter 16
+54,16-18
+55,19-22
+56,23-25
+57,Über 25
+58,Ich bin ein/e Student/in
+59,in einem Arbeitsverhältnis
+60,Andere
+61,Charaktere sammeln
+62,Kristalle aufleveln
+63,Diener trainieren
+64,Tests
+65,Sonstiges (das Feld kann ausgefüllt werden)
+66,Andere
+67,Geheim
+68,Weniger als 1 Monat
+69,1-3 Monate
+70,3-6 Monate
+71,6-12 Monate
+72,Mehr als 1 Jahr
+73,Level 70-79
+74,Level 80-89
+75,Level 90-99
+76,Level 100-109
+77,Level 110-119
+78,Über Level 120
+79,Beinahe jeden Tag
+80,Ich spiele 5-6 Tage die Woche
+81,Ich spiele 3-4 Tage die Woche
+82,Ich spiele 1-2 mal die Woche oder weniger
+83,Ich muss zur Schule gehen
+84,Ich spiele in anderen Spielen
+85,Der Spielinhalt ist nicht wichtig genug
+86,Das Spiel wird mit der Zeit langweilig
+87,Sonstiges (das Feld kann ausgefüllt werden)
+88,SEHR GUT
+89,Gefällt mir
+90,Ganz ok
+91,Nicht meins
+92,NEIN
+93,Die Events sind interessant
+94,Die Eventbelohnungen sind gut
+95,Die Kostüme sind gut
+96,Neue Charaktere sind bezaubernd
+97,Sonstiges (das Feld kann ausgefüllt werden)
+98,Es ist P2W
+99,Die Events erfordern zu viel Aufwand
+100,Die Eventbelohnungen sind nicht zufriedenstellend
+101,Die neuen Kostüme sehen furchtbar aus
+102,Die neuen Charaktere könnten besser sein
+103,Sonstiges (das Feld kann ausgefüllt werden)
+104,"Ich schaue mir die Geschichte nicht an, ich überspringe die Geschichte jedes Mal"
+105,"Ich lese mir die Geschichten ab und zu Mal durch, meistens jedoch überspringe ich sie."
+106,"Ich lese alle Geschichten ohne sie zu überspringen, aber nicht sehr aufmerksam."
+107,Ich habe alle Geschichten im Detail gelesen.
+108,Ja
+109,Nein
+110,"Mir gefällt es nicht, wie die Events aufgebaut sind"
+111,Ich mag die Eventbelohnungen nicht
+112,Ich habe keine Zeit zu spielen
+113,Die Regeln sind mir zu kompliziert
+114,Sonstiges (das Feld kann ausgefüllt werden)
+115,Ja
+116,Nein
+117,Ich mag die neue Grafik
+118,Das alte Design ist besser
+119,Beide Designs sind gut
+120,Ich mag keins von den beiden Designs
+121,Egal
+122,"Mir gefällt es nicht, wie die Events aufgebaut sind"
+123,Ich mag die Eventbelohnungen nicht
+124,Ich habe keine Zeit zu spielen
+125,Die Regeln sind mir zu kompliziert
+126,Sonstiges (das Feld kann ausgefüllt werden)
+127,Ja
+128,Nein
+129,Ich mag nicht wie es funktioniert
+130,Die Belohnung sind nicht gut genug
+131,Die Regeln sind mir zu kompliziert
+132,Ich habe nicht genug Zeit dafür
+133,Sonstiges (das Feld kann ausgefüllt werden)
+134,LINE
+135,FACEBOOK
+136,Twitter
+137,Discord
+138,巴哈姆特
+139,Sonstiges (das Feld kann ausgefüllt werden)
+140,Ich verwende keine der oben genannten
+141,Neue Geschichte
+142,Neue Kostüme
+143,Weitere neue Charaktere
+144,Neue Events
+145,Sonstiges (das Feld kann ausgefüllt werden)
+146,NEIN
+147,Gefällt mir nicht
+148,Normal
+149,Gefällt mir
+150,SEHR GUT
+151,Ernsthaft?
+152,Nein
+153,Normal
+154,Ja und Nein
+155,Stimme zu
+156,Weniger als 1 Monat
+157,1-3 Monate
+158,3-6 Monate
+159,6-12 Monate
+160,Mehr als 1 Jahr
+161,Sehr gut
+162,Gefällt mir
+163,Normal
+164,Gefällt mir nicht
+165,Schlecht
+166,Öfter gespielt
+167,Gleich wie zuvor
+168,Weniger gespielt
+169,Beschäftigt mit Studium oder Arbeit
+170,Ich spiele andere Spiele
+171,Weniger interessiert an GXB2
+172,Unzufrieden mit den letzten Aktualisierungen
+173,Gesteckt in Verstärkung meiner Mädchen
+174,Keine gewollten Mädchen bekommen
+175,"Gesteckt in Test, Patrouille usw."
+176,Keine Herausforderung in der Arena
+177,Wenige Leute im eigenen Server
+178,Sonstiges (das Feld kann ausgefüllt werden)
+179,Wohnheim
+180,Haus-Prüfung
+181,Sicherheitstrupp
+182,Strategie
+183,Einkaufsstraße
+184,Monatliche Events
+185,Sonstiges (das Feld kann ausgefüllt werden)
+186,Sehr gut. Weitere neue Möbel wären schön.
+187,Die komplizierten Regeln sind schwer zu verstehen.
+188,Ich will dass die Möbel leichter gesetzt werden können.
+189,Ich will all meine Lieblingsmädchen ins Wohnheim setzen.
+190,Sonstiges (das Feld kann ausgefüllt werden)
+191,Sehr attraktiv. Ich versuche weiter voranzugehen.
+192,Zu schwer. Eine Stufe kostet schon viel Zeit.
+193,Benutzerunfreundlich. Bei der Auswahl schon sehr oft vertippt.
+194,Keine Idee. Ich will mehr Strategien dafür.
+195,Noch nicht gespielt
+196,Ich finde keine Kollegen.
+197,Sehr gut
+198,Die komplizierten Regeln sind schwer zu verstehen.
+199,"Es langweiligt, immer gegen einen Boss zu kämpfen. Ich will mehr Bosse."
+200,Noch nicht gespielt
+201,Sonstiges (das Feld kann ausgefüllt werden)
+202,Ein Team zu erstellen ist mir eine Unannehmlichkeit
+203,Meine Freunde haben bereit ihre Teams.
+204,Ein Kollege mit demselben Sicherheitslevel ist schwer zu finden.
+205,Keine Antwort auf Bewerbung oder Einladung bekommen
+206,Was? Kann ich noch in einem Team kämpfen?
+207,Sogar viel kompilizierter als zuvor
+208,"Keine Ahnung, welche im Kostümladen gekauft werden können"
+209,Sehr gut. Ich freue mich auf mehr neue Shops.
+210,Ich bin Neuling hier aber die aktuelle finde ich gut.
+211,Ich bin ein Neuling hier aber die aktuelle finde ich eigentlich etwas kompliziert.
+212,Besser geworden. Ich brauche nicht mehr auf die wöchentlichen neuen Events zu warten.
+213,Ich mag es nicht. Es hat meine Spannung auf neue Events gesenkt.
+214,Ich will mehr andere Events hinzufügen
+215,Die Events sind schwer abzuschließen.
+216,Keinen Eingang zu monatlichen Events gefunden
+217,Sonstiges (das Feld kann ausgefüllt werden)
+218,Sehr hilfreich
+219,"Normal, kann weiter optimiert werden."
+220,Schlecht. Viele Beschreibungen sind falsch.
+221,Noch nicht gespielt
+222,Alle gefallen mir gut
+223,"Normal, sie hasse ich nicht."
+224,Das im letzten Update ist besser
+225,Neue Mädchen
+226,Neue Kostüme
+227,Neue Funktionen
+228,Neue Events
+229,Riesig gefreut
+230,Gefreut
+231,Normal
+232,Nich gefreut
+233,GAR NICHT
+234,Sehr interessant. Gewährt eine neue Funktion im Spiel
+235,Normal. Kann weiter optimiert werden
+236,Schlecht. Sehr langweilig und schwerverständlich
+237,Noch nicht gespielt
+238,Sonstiges (das Feld kann ausgefüllt werden)
+239,Sehr gut. Im Vergleich zu früheren Auren ist es viel praktischer
+240,"Normal, nicht gleich effektiv wie die früheren Auren"
+241,Schlecht. Die neue Aura ist schwer zu aktivieren und nicht praktisch
+242,Noch nicht gespielt
+243,Sonstiges (das Feld kann ausgefüllt werden)
+244,Sehr gern. Ich werde mich bestimmt wieder bewerben.
+245,Gerne
+246,Normal. Ja wenn ich mich daran erinnere.
+247,Nein. Ich bin raus.
+248,Normal. Ich kann es nicht verstehen.
+249,Normal. Es entspricht dem aktuellen Spiel-Stil nicht.
+250,Normal. Es hat das Spiel nur komplizierter gemacht.
+251,Männlich
+252,Weiblich
+253,Geheimnis
+254,Unter 18
+255,18-22
+256,23-25
+257,26-30
+258,30+
+259,Weniger als 1 Monat
+260,Länger als 1 Monat
+261,Länger als 3 Monate
+262,Länger als 6 Monate
+263,Länger als 1 Jahr
+264,Weniger als 1 Stunde
+265,1h - 3h
+266,3h - 6h
+267,Länger als 6 Stunden
+268,Sehr gut
+269,Zufrieden
+270,NIEDRIG
+271,Gefällt mir nicht
+272,Schlecht
+273,Dampffestival
+274,Sammlung
+275,Buchheiligtum
+276,Möbel
+277,Sonstiges (das Feld kann ausgefüllt werden)
+278,Dampffestival
+279,Sammlung
+280,Buchheiligtum
+281,Kooperation
+282,Möbel
+283,Sonstiges (das Feld kann ausgefüllt werden)
+284,Reiche Belohnungen sind reizend
+285,Die komplizierten Regeln sind schwer zu verstehen.
+286,Passt dem Spiel nicht
+287,Noch nicht gespielt
+288,Sonstiges (das Feld kann ausgefüllt werden)
+289,Damit sind die Ausrüstungen leichter zu prüfen
+290,Die Sortierung kann weiter optimiert werden
+291,Ich will mehr neue Items im Shop
+292,Noch nicht gespielt
+293,Sonstiges (das Feld kann ausgefüllt werden)
+294,"Interessanter als Wandern, gewährt reiche Belohnungen"
+295,Ich freue mich auf mehr neue Bosse da
+296,Zu schwer für mich
+297,Noch nicht gespielt
+298,Sonstiges (das Feld kann ausgefüllt werden)
+299,Raumfähre
+300,Spielzimmer
+301,U-Bahnhaltestelle
+302,Kneipe
+303,Schloss
+304,Sonstiges (das Feld kann ausgefüllt werden)
+305,Alle gefallen mir gut
+306,"Normal, sie hasse ich nicht."
+307,Das im letzten Update ist besser
+308,Neue Mädchen
+309,Neue Kostüme
+310,Neue Funktionen
+311,Neue Events
+312,Neue Geschichte
+313,Sonstiges (das Feld kann ausgefüllt werden)
+314,Schulleben
+315,Außerhalb der Schule
+316,Geschichte der Welt
+317,Mädchens Abenteuer
+318,Mädchens Vergangenheit
+319,Dieners Geschichte
+320,Geschichte von Antiquitäten
+321,Sonstiges (das Feld kann ausgefüllt werden)
+322,"Sehr gut, kann vielseitig verwendet werden"
+323,"Normal, nicht so praktisch wie die alten Antiquitäten"
+324,"So so, ich will sie nicht so dringend bekommen"
+325,"Schlecht, gewährt nur kleinen Buff, passt den Mädchen kaum nicht"
+326,Noch nicht gespielt
+327,Sonstiges (das Feld kann ausgefüllt werden)
+328,"Sehr gut, interessant und originell"
+329,"Gut, die Zufälle inzwischen machen mich spannend"
+330,"Normal, man muss Glück haben"
+331,"Normal, so wenig Ressourcen fürs Erhalten der Mädchen dass es langsam vorangeht"
+332,"Normal, kann weiter optimiert werden"
+333,"Schlecht, es gibt ein großes Problem mit dieser Funktion"
+334,"Schlecht, es ist schwer zu verstehen und hat das Spiel nur komplizierter gemacht."
+335,Noch nicht gespielt
+336,Sonstiges (das Feld kann ausgefüllt werden)
+337,Männlich
+338,Weiblich
+339,Geheimnis
+340,Unter 18
+341,18-22
+342,23-25
+343,26-30
+344,30+
+345,Weniger als 1 Monat
+346,Länger als 1 Monat
+347,Länger als 3 Monate
+348,Länger als 6 Monate
+349,Länger als 1 Jahr
+350,Weniger als 1 Stunde
+351,Länger als 1 Stunde
+352,Länger als 3 Stunden
+353,Länger als 6 Stunden
+354,Sehr gut
+355,Zufrieden
+356,Normal
+357,Gefällt mir nicht
+358,Schlecht
+359,"Sehr gut, hat eigene Kraft erhöht"
+360,Ressourcen reichen nicht aus
+361,Hat bessere Spielbarkeit ermöglicht
+362,Will mehr weitere Updates
+363,Noch nicht gespielt
+364,Sonstiges (das Feld kann ausgefüllt werden)
+365,Die komplizierten Regeln sind schwer zu verstehen.
+366,Es wurden reiche Belohnungen gegeben
+367,Es ist zu schwer für mich
+368,Sehr interessant
+369,Noch nicht gespielt
+370,Sonstiges (das Feld kann ausgefüllt werden)
+371,Dieses Event kann wiederholt geöffnet werden
+372,Das Mädchen bei Limiterter Rekrutierung ist nicht stark genug
+373,Sehr praktisch
+374,Noch nicht gespielt
+375,Sonstiges (das Feld kann ausgefüllt werden)
+376,Charakter
+377,Grafik
+378,CV
+379,Hintergrundgeschichte
+380,Stärke
+381,Sonstiges (das Feld kann ausgefüllt werden)
+382,Stolz und arrogant (Tsundere)
+383,Makaber & Schüchtern (Yandere)
+384,Kalte Schönheit
+385,Traditionelle Frau
+386,Irreführend
+387,Scharf
+388,Äußerlich naiv aber innerlich schlau
+389,Königin
+390,Schweigsam
+391,Naiv
+392,Sanft
+393,Lebhaft
+394,Sonstiges (das Feld kann ausgefüllt werden)
+395,Elf
+396,Mechanischer Stil
+397,Puppe
+398,Tiermädchen
+399,Vampir
+400,Dämon
+401,Engel
+402,Mensch
+403,Drache
+404,Sonstiges (das Feld kann ausgefüllt werden)
+405,Samurai
+406,Ninja
+407,Ritter
+408,Hexe
+409,Lehrerin
+410,Alle gefallen mir nicht
+411,Soldatin
+412,Detektivin
+413,Krankenschwester
+414,Dienstmädchen
+415,Idol
+416,Alle gefallen mir nicht
+417,Hexe
+418,Nonne
+419,Magisches Mächen
+420,Prinzessin
+421,Studentin
+422,Alle gefallen mir nicht
+423,Sonstiges (das Feld kann ausgefüllt werden)
+424,Japanisch
+425,Englisch
+426,Egal
+427,Beide gefallen mir gut
+428,Männlich
+429,Weiblich
+430,Sonstiges
+431,Unter 18
+432,18-22
+433,23-25
+434,25-30
+435,30+
+436,Weniger als 1h
+437,Länger als 1h
+438,Länger als 3h
+439,Länger als 6h
+440,Sehr gut
+441,Gut
+442,Geht so
+443,Schlecht
+444,Sehr schlecht
+445,Campusausflug
+446,Entsperrung der Geschichte
+447,Elite-Fertigkeit
+448,Antiquitätsladen
+449,Alter Campus
+450,Yume-Lernzentrum
+451,Ja
+452,Nein
+453,Die Stufen sind zu schwer zu bestehen.
+454,Es stehen zu wenige Projekte zur Wahl. Mehr Projekte zu haben wäre gut.
+455,Die gemäß den Projekten vergebenen Punkte sind zu wenig.
+456,"Wäre gut, wenn die gegnerischen Aufstellungen weiter erweitert und angepasst werden könnten."
+457,"Wäre gut, wenn die Projekte für jede Saison erweitert und angepasst werden könnten."
+458,Sonstiges (das Feld kann ausgefüllt werden)
+459,Ja
+460,Nein
+461,Der zusätzliche Nutzen der Elite-Fähigkeiten ist zu gering. Mehr besondere Effekte wären toll.
+462,Der zusätzliche Nutzen der Elite-Fähigkeiten ist zu groß und das Spiel wird dadurch unbalanced.
+463,Das Training der Elite-Fähigkeiten dauert zu lange und der Ressourcenoutput ist zu niedrig
+464,Sonstiges (das Feld kann ausgefüllt werden)
+465,Ja
+466,Nein
+467,"Zu wenig Möglichkeiten, die Geschichte zu entsperren. Es dauert zu lange, die Geschichte durchzulesen. Mehr angebotene Items zum Entsperren wären besser."
+468,Es fehlen noch viele Geschichten. Weitere Ergänzungen wären gut.
+469,"Damit kann ich die Geschichten nachlesen, die ich verpasst habe. Sehr hilfreiche Funktion."
+470,Sonstiges (das Feld kann ausgefüllt werden)
+471,Ja
+472,Nein
+473,"Gewährt mir die Möglichkeit, die Funktionen im Spiel besser zu verstehen."
+474,"Gewährt mir die Möglichkeit, die Geschichten und die Regeln besser zu verstehen."
+475,Die Belohnungen sind zufriedenstellend.
+476,Sonstiges (das Feld kann ausgefüllt werden)
+477,Ja
+478,Nein
+479,Die Belohnungen sind attraktiv.
+480,"Sehr interessant, macht viel Spaß beim Spielen"
+481,Zu kompliziert und schwer verständlich
+482,Sonstiges (das Feld kann ausgefüllt werden)
+483,Magisches Mädchen
+484,Alltägliche Kleidung
+485,Wunderland
+486,Rennfahrerin
+487,Idol-Sängerin
+488,Sportliche Mädchen
+489,Arzt und Patient
+490,Abendkleidung
+491,Sonstiges (das Feld kann ausgefüllt werden)
+492,Das würde ich eher für das Kostüm. Die anderen Items im Paket sind mir unwichtig.
+493,Das würde ich eher für die Items kaufen. Das Aussehen des Kostüms ist mir unwichtig.
+494,"Erst wenn mir das Kostüm und die Items gefallen, würde ich es kaufen."
+495,Das Kostümpaket habe ich noch nie gekauft.
+496,Hina-Matsuri (Minos Kostüm im Blumenstil)
+497,Lila Blütentraum (Amelias Kostüm im Blumenstil)
+498,Feierliche Röte (Vivians Kostüm zum Frühlingsfest)
+499,Frühlingsduft (Joans Kostüm zum Frühlingsfest)
+500,Neujahrsgrüße (Pandarias Kostüm zum Frühlingsfest)
+501,Glückskarpfen (Fenrirs Kostüm zum Frühlingsfest)
+502,Schiffzerstörer (Ronjas Kostüm zum Dampffestival)
+503,Unerfahrene Magd (Königin Historias Magdkostüm)
+504,Zither Spielerin (Geishas Kostüm zum Frühlingsfest)
+505,Winterleckerei (Maskas Winterkostüm)
+506,Teufelsbeschwörerin (Sakuras Kostüm zum Frühlingsfest)
+507,Explosionsfeier (Izanamis Weihnachtskostüm)
+508,Weihnachtself (Uriels Weihnachtskostüm)
+509,Weihnachtsgeschenk (Trinitys Weihnachtskostüm)
+510,Dunkle Sägerin (Kratos Kostüm zum Dampffestival)
+511,Billardspielerin (Leilas Mafia-Kostüm)
+512,Alle oben genannten Kostüme gefallen mir nicht
+513,Obstparty
+514,Philharmonie
+515,Hochzeit
+516,Garten
+517,Küche
+518,Sonstiges (das Feld kann ausgefüllt werden)
+519,Alltägliches Campusleben
+520,Abenteuerreisen
+521,Detektivgeschichten
+522,Liebesgeschichten
+523,Sonstiges (das Feld kann ausgefüllt werden)
+524,Hauptgeschichte
+525,Eventgeschichte
+526,Mädchen-Aufgaben
+527,Geschichte der Antiquitäten
+528,Geschichten der Mädchen
+529,Geschichten der Diener
+530,Keine Lust auf Geschichten
+531,Sonstiges (das Feld kann ausgefüllt werden)
+532,Yume Akademie (Episode 1 der Hauptgeschichte)
+533,Walküres Rückkehr (Episode 2 der Hauptgeschichte)
+534,Tyrann des Vulkans (Episode 3 der Hauptgeschichte)
+535,"Musikfest (Geschichte zum Event ""Musikfest"")"
+536,Komplizierter Strandurlaub (Geschichte zum Badeanzugsevent)
+537,Mondlicht (Anastasias Mädchen-Aufgabe)
+538,Weg der Ärzte (Isabellas Mädchen-Aufgabe)
+539,Die Erste Aufseherin (Turins Mädchen-Aufgabe)
+540,Wiedergeburt (Phönix Mädchen-Aufgabe)
+541,Giftiger Pfeil (Leilas Mädchen-Aufgabe)
+542,Kristallwunder (Krystals Mädchen-Aufgabe)
+543,Tagebuch (Iron Fists Mädchen-Aufgabe)
+544,Leave No Girl Behind (Hotties Mädchen-Aufgabe)
+545,Geheimnis (KongMings Mädchen-Aufgabe)
+546,Die Gefährtin (Aquaris Mädchen-Aufgabe)
+547,Gerechtigkeitsbringer (Hexas Mädchen-Aufgabe)
+548,Die Mystik (Feneks Mädchen-Aufgabe)
+549,Das Schicksal (Esau & Jacobs Mädchen-Aufgabe)
+550,Keine Lust auf Geschichten
+551,Sonstiges (das Feld kann ausgefüllt werden)
+552,Events mit verständlichen Regeln
+553,"Großes Event (zum Beispiel Märchentraumwelt, Alter Campus usw.)"
+554,Events mit kleinen Spielen (Zum Beispiel Musikspiel)
+555,Events mit einer kleinen Geschichte
+556,Events mit einer langen Geschichte (Zum Beispiel Märchentraumwelt)
+557,Sonstiges (das Feld kann ausgefüllt werden)
+558,Selbst die allgemeinen Funktionen täglich einmal zu spielen kostet mich schon viel Zeit.
+559,An den Events teilzunehmen kostet mich viel Zeit.
+560,Beides kostet mich zu viel Zeit
+561,Bin zufrieden mit dem aktuellen Zustand. Alles läuft gerade richtig.
+562,"Weitere Inhalte, die einen Zeit kosten, können eingeführt werden."
+563,RPG Games + Sammeln von Karten
+564,"Schach, Karten- und Brettspiele"
+565,Sandbox Games
+566,MOBA
+567,Casual Games
+568,Action Games
+569,MMORPG
+570,Sport/Racing Games
+571,Trading Card Games
+572,Business Simulation Games
+573,SLG
+574,Idle Games
+575,Casual Strategy Games
+576,Battle Royale Games
+577,Music Games
+578,Sonstiges (das Feld kann ausgefüllt werden)
+579,Vollständig in die Geschichte des Spiels eintauchen zu können
+580,Sich mit anderen Spielern anfreunden und chatten
+581,"Gegner besiegen, Duelle, Kämpfe usw."
+582,Die Geschichten oder Ereignisse im Spiel kennenlernen
+583,"Nach eigenem Willen bauen, herstellen und gestalten"
+584,"Figuren, Karten usw. hochziehen"
+585,Hohe Anforderungen an die motorischen Fähigkeiten des Spielers (schnelle Reaktion etc.)
+586,Simulation der Realität
+587,"Rätsel, Geheimnisse usw. lösen"
+588,Strategien entwickeln und anwenden
+589,Die im Spiel versteckten Details und Geschichten kennenlernen
+590,"Karten, Figuren, Items, Kostüme usw. sammeln"
+591,Sonstiges (das Feld kann ausgefüllt werden)
+592,Weiß nicht
+593,Schlecht
+594,Geht so
+595,Zufrieden
+596,Sehr gut
+597,Männlich
+598,Weiblich
+599,Divers
+600,Unter 18
+601,18-22
+602,23-25
+603,26-30
+604,30+
+605,<1 Stunde
+606,1 - 3 Stunden
+607,3 - 6 Stunden
+608,>6 Stunden
+609,Sehr zufrieden
+610,Zufrieden
+611,Geht so
+612,Nicht zufrieden
+613,Überhaupt nicht zufrieden
+614,Kostbarer Kern des Dieners
+615,Ein etwas anderer Valentinstag
+616,Buch der Illusion
+617,Himmelsinsel
+618,Schatzjäger
+619,Ja
+620,Nein
+621,"Sehr gut, so kann mein Diener noch stärker werden."
+622,Die Attributsverstärkungen sind nicht gut genug.
+623,"Es ist schwer die benötigten Ressourcen zu bekommen, weshalb das Aufleveln zu lange dauert."
+624,Die ersten Attributsverstärkungen sind zu schwach und die höheren sind zu stark.
+625,Sonstiges (Bitte angeben)
+626,Ja
+627,Nein
+628,"Gefällt mir sehr und ich hoffe, dass es in Zukunft mehr solche Events gibt."
+629,"Finde den Inhalt nicht sonderlich interessant, aber die Kostüm-Belohnungen sind nicht schlecht."
+630,Interessiere mich weder für den Inhalt noch die Belohnungen des Events.
+631,"Gefällt mir nicht und ich hoffe, dass in Zukunft nicht mehr solche Events veranstaltet werden."
+632,Sonstiges (Bitte angeben)
+633,Ja
+634,Nein
+635,Ich würde für neue Kostüme und Avatarbildrahmen bezahlen.
+636,Ich würde für Item-Belohnungen bezahlen.
+637,Ich würde eventuell für neue Kostüme und Item-Belohnungen bezahlen.
+638,Die Kostüme und Items sind nicht sonderlich attraktiv. Ich würde nicht dafür bezahlen.
+639,Sonstiges (Bitte angeben)
+640,Ja
+641,Nein
+642,Das Event-Icon ist zu sehr versteckt. Es ist schwer das Event zu finden.
+643,"Die Gegner sind zu stark. Es ist zu schwer, genug Schaden anzurichten."
+644,Man muss zu viel Zeit aufwenden.
+645,Die Belohnungen sind zu gering. Ich bin nicht sonderlich motiviert daran teilzunehmen.
+646,"Gefällt mir sehr und ich hoffe, dass es in Zukunft weiterhin stattfindet."
+647,Sonstiges (Bitte angeben)
+648,Ja
+649,Nein
+650,Die Belohnungen sind sehr attraktiv.
+651,Das Gameplay ist sehr interessant und mal was Neues.
+652,Es ist zu kompliziert.
+653,"Es ist zu sehr vom Glück abhängig, weshalb ich es nicht sehr gerne spiele."
+654,Man muss zu viel Zeit aufwenden.
+655,Sonstiges (Bitte angeben)
+656,Schadensverteilerin (PVE)
+657,Schadensverteilerin (PVP)
+658,Tank
+659,Support
+660,Egal
+661,Sonstiges (Bitte angeben)
+662,Stolz und arrogant
+663,Ernst
+664,Größenwahnsinnig
+665,Dümmlich
+666,Von unschuldiger Natur
+667,Kleiner Teufel
+668,Multiple Persönlichkeit
+669,Jungenhaft
+670,Fragil
+671,Sanftmütig
+672,Lebhaft
+673,Sonstiges (Bitte angeben)
+674,Pferdeschwanz
+675,Zwei Zöpfe
+676,Kurze Haare
+677,Lange Haare
+678,Geflochtene Zöpfe
+679,Locken
+680,Glatte Haare
+681,Sonstiges (Bitte angeben)
+682,Lolita / Gothic style
+683,Alltagskleidung
+684,"Kleidung aus besonderem Material (Leder, Rüstungen...)"
+685,Festtagskleidung
+686,Sonstiges (Bitte angeben)
+687,Dämonin/Hexe
+688,Samurai
+689,Ninja
+690,Dieb/Verbrecher
+691,Mystisches Wesen
+692,Sonstiges
+693,Dienstmädchen
+694,Krankenschwester
+695,Künstlerin
+696,Klassensprecherin
+697,Naturwissenschaftlerin
+698,Sonstiges
+699,Katzen
+700,Hunde
+701,Etwas mit Tentakeln
+702,Fisch
+703,Insekten
+704,Pflanzen
+705,Mir gefallen nicht-menschliche Wesen nicht
+706,Sonstiges (Bitte angeben)
+707,A
+708,E
+709,D
+710,C
+711,B
+712,Männlich
+713,Weiblich
+714,Andere
+715,Unter 18
+716,18-22
+717,23-25
+718,26-30
+719,30+
+720,<1 Stunde
+721,1-3 Stunden
+722,3-6 Stunden
+723,>6 Stunden
+724,Sehr gut
+725,Gut
+726,Geht so
+727,Nicht gut
+728,Schlecht
+729,Einsatz in der Fremde
+730,Miss Yume
+731,Aufnahmeprüfung
+732,Ja
+733,Nein
+734,Es ist mal etwas Neues und macht Spaß
+735,Die Attribute der einzelnen Mädchen spielen häufig eine zu große Rolle in den Kämpfen. Strategien und Aufstellungen/Kombinationen sind oft zu bedeutungslos.
+736,"Es ist klar und einfach zu verstehen. Kauft man sich Pakete, kommt man schneller voran und bekommt mehr Belohnungen."
+737,Das Event kenne ich nicht
+738,Sonstiges (Bitte angeben)
+739,Mehr Ereignisse und interessante Dinge auf der Karte hinzufügen
+740,"Mehr Abenteuer-Mädchen, auch gerne mit verschiedenen/neuen Skills und Attributen."
+741,Lieber mehr Stufen und jede einzelne Stufe dafür etwas leichter.
+742,Die wöchentlichen Aufgaben für dieses Event bitte einfacher gestalten.
+743,Sonstiges (Bitte angeben)
+744,Ja
+745,Nein
+746,"Hat mir sehr gut gefallen und ich hoffe, dass es weitere solche Events gibt."
+747,"Abstimmungen interessieren mich generell nicht so, aber die Belohnungen waren nicht schlecht."
+748,"Ich bin mit einigen der Aufgaben nicht zufrieden, vor allem wenn sie verlangen, dass man VIP-EXP benötigt."
+749,"Zu wenig Belohnungen, deshalb hatte ich keine Motivation daran teilzunehmen."
+750,"Hat mir nicht gefallen und ich hoffe, dass in Zukunft nicht mehr solche Events veranstaltet werden."
+751,Sonstiges (Bitte angeben)
+752,Ja
+753,Nein
+754,"Man konnte verschiedene Aufstellungen und Kombinationen ausprobieren. Ich hoffe, dass es in Zukunft weitere solche Events gibt."
+755,"Viele der Mädchen kannte ich nicht, deshalb war es schwer gute Aufstellungen zu erstellen."
+756,"Es war viel zu umständlich ein gesamtes Team voll auszurüsten und zu konfigurieren. Ich hoffe, dass das beim nächsten Mal vereinfacht werden kann."
+757,Die Belohnungen waren nicht sonderlich attraktiv und ich hatte keinen Anreiz weiter aufzusteigen.
+758,Sonstiges (Bitte angeben)
+759,Ja
+760,Nein
+761,Ist mir aufgefallen und ich habe meine Aufstellung entsprechend angepasst.
+762,"Ist mir aufgefallen, aber ich habe meine Aufstellung nicht extra angepasst."
+763,Ist mir gar nicht aufgefallen.
+764,Ich habe einfach jeden Tag meine 3 Herausforderungsmale genutzt und nicht so genau auf den Schadensoutput geachtet.
+765,"Ich habe den Simulationskampf genutzt, um meine Aufstellung und den Schadensoutput zu optimieren."
+766,"Ich habe nur gekämpft, weil mich der Gildenanführer darum gebeten hat. Ansonsten würde ich nicht kämpfen."
+767,"Ja, das würde ich in Betracht ziehen. Mehr Belohnungen und ein höherer Rang sind immer gut."
+768,"Nein, das würde ich nicht in Betracht ziehen. Meine Gilde und ihre Mitglieder sind mir zu wichtig."
+769,"Ist mir egal, ich schere mich weder um Belohnungen, meinen Rang noch um meine Gilde."
+770,Ja
+771,Nein
+772,"Es ist cool, dass man während man offline ist Ressourcen anhäufen kann (vor allem gratis Münzen und Dias)"
+773,Kann bestimmte Attribute meiner Mädchen verbessern und sie so im Kampf verstärken.
+774,Durch den Abenteuermodus kann man Ressourcen für das Aufleveln der Gebäude sammeln.
+775,Diese Funktion kenne ich nicht.
+776,Sonstiges (Bitte angeben)
+777,"Da meine Gebäudelevel schon relativ hoch sind, hoffe ich, dass die Obergrenze für die Level noch weiter angehoben werden kann."
+778,"Ich hoffe, dass beim Abenteuermodus noch mehr interessante/spannende Ereignisse eingebaut werden."
+779,"Ich hoffe, dass die Anzahl der Dias, die für das Öffnen der Boxen benötigt wird, weniger werden, je mehr Wartezeit verstrichen ist."
+780,"Ich hoffe, dass noch mehr neue Funktionen und Gebäude dazu kommen."
+781,Sonstiges (Bitte angeben)
+782,Ja
+783,Nein
+784,"Ich hoffe, dass es eine Möglichkeit geben wird, durch die man regelmäßig neue Kleidungsstücke erhalten kann."
+785,"Ich hoffe, dass ich meinen fertigen Charakter dann auch in das Wohnheim setzen kann und dieser dort mit den anderen Mädchen interagieren kann."
+786,"Ich hoffe, dass die Outfits und Kleidungsstücke besondere Boni für andere Funktionen des Spiels bieten können."
+787,"Ich hoffe, dass ich durch das Upgraden der Outfits weitere besondere Boni bekomme, die u.a. auch meine Mädchen im Kampf verstärken können."
+788,"Ein neues, dazu passendes Feature, bei dem man Material für das Verbessern der Outfits und Kleidungsstücke bekommt."
+789,Sonstiges (Bitte angeben)
+790,Kampfanzüge/Mecha
+791,Traditionelle asiatische Kleidung/Yukata
+792,Sportliche Outfits
+793,Militär-Outfits
+794,Soldatenuniformen
+795,Festliche Kleidung/Hochzeitskleidung
+796,Dämonen-Stil
+797,Sonstiges (Bitte angeben)
+798,Ja
+799,Nein
+800,"Der Sportplatz bietet zu wenige Belohnungen. Es wäre gut, wenn es mehr geben würde."
+801,"Zu wenige Gilden nehmen aktuell daran teil. Es wäre gut, wenn die Voraussetzungen etwas gesenkt werden könnten."
+802,Es ist einfach zu langweilig. Die Funktion sollte angepasst werden.
+803,Sonstiges (Bitte angeben)
+804,"Ich würde mich gerne mit anderen Spielern zusammentun, gemeinsam mehrere Aufstellungen zusammenstellen und als Team gegen andere Spieler kämpfen"
+805,Ich würde gerne auch mit mehr als nur 3 Teams gegen andere Spieler kämpfen.
+806,"Ich würde gerne ""Ersatzmädchen"" als Teil der Aufstellung aufstellen können, die in den Kampf eintreten, sobald ein Mädchen im Kampf stirbt."
+807,Ich würde gerne mit anderen Spielern von meinem Server gegen Spieler anderer Server kämpfen.
+808,Sonstiges (Bitte angeben)
+809,"Ich hätte gerne wieder ein Spielsystem, bei dem alle Mädchen vom System gestellt werden und man diese innerhalb des Events/der Funktion aufleveln etc. kann."
+810,"Ich hätte gerne eine Funktion/Event, bei der meine Mädchen automatisch erkunden und Materialien sammeln während ich offline bin."
+811,Ich würde gerne gegen einzelne Bosse mit speziellen Fähigkeiten kämpfen.
+812,"Ich hätte gerne Herausforderungen/Aufgaben, bei denen es bestimmte Voraussetzungen an das Team oder an den Sieg gibt (Bps.: Nur Mädchen der Dämonenfraktion im Team usw.)"
+813,Sonstiges (Bitte angeben)
+814,Izakaya (Japanische Bar)
+815,Unterwasserwelt/Aquarium
+816,Rennstrecke
+817,Freizeitpark
+818,Campus
+819,Holzbaustein-Stil/Baukasten
+820,Sonstiges (Bitte angeben)
+821,"Ja, ich kenne diese und ich weiß, dass dies jüngere Versionen der Mädchen sind und auch, dass sie eigene Stimmen haben."
+822,Ich kenne sie nicht. Interessiere mich allgemein nicht sonderlich für die Kostüme der Mädchen.
+823,"Ja, mir gefällt das und ich hoffe, dass in Zukunft weiter solche Kostüme erscheinen."
+824,"Mir gefällt das nicht besonders, wenn sie zu sehr von der originalen Darstellungsweise der Mädchen abweichen."
+825,"Ich fände es cool, wenn man es auch andersrum machen würde, also für ein jüngeres Mädchen ein Kostüm, bei dem man sieht, wie sie aussieht, wenn sie älter ist."
+826,Ist mir egal
+827,Sonstiges (Bitte angeben)
+828,"Ich fände es toll, wenn in Zukunft jedes Kostüm sein eigenes spezielles Voice-Over hätte."
+829,"Ein eigenes Voice-Over wäre zumindest für die Kostüme sinnvoll, die das Äußere der Mädchen sehr stark verändern."
+830,Ich möchte keine extra Voice-Overs. Die Originalstimmen sind ausreichend.
+831,Ist mir egal
+832,"Ich mag Mädchen, deren Design religiöse Eigenschaften innehaben, wie zum Beispiel Isabella."
+833,"Ich mag Mädchen in Alltags- bzw. in Schulkleidung, wie Joan oder Historia."
+834,"Ich mag Mädchen mit futuristischen Eigenschaften oder im Cyberpunk-Design, wie Trinity oder Turin."
+835,"Ich mag Mädchen, die ein schweres Schicksal durchlebt haben, wie Minos oder Van Helsing."
+836,"Ich mag Mädchen, die ihren ganz eigenen Stil haben, wie Fiona."
+837,"Ich mag Mädchen im K-Pop-Stil, die sich gerne auf einer Bühne präsentieren und singen/tanzen."
+838,Sonstiges (Bitte angeben)
+839,Apate
+840,Skye
+841,Glimmer
+842,Van Helsing
+843,Pippi
+844,Moonie
+845,Holly
+846,Angie
+847,Fiona
+848,Andere (Bitte angeben)
+849,A
+850,E
+851,C
+852,B
+853,D

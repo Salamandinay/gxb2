@@ -1,0 +1,200 @@
+name,desc,desc1
+atk,Attaque,Attaque
+hp,PV,生命上限百分比燃烧伤害
+arm,Armure,Armure
+spd,Vitesse,Vitesse
+sklP,Dég. Comp.,Dég. Comp.
+hit,Précision,Précision
+miss,Blocage,Esquive
+crit,Critique,Critique
+critTime,Dég. Crit.,Dég. Crit.
+brk,Péné. Armure,Péné. Armure
+free,Immunité,Immunité
+trueAtk,Dégâts Divins,Dégâts Divins
+energy,Énergie,Énergie
+decDmg,Résis. aux Dég.,Résis. aux Dég.
+stun,Étourdir,Étourdir (Passe son tour)
+ice,Geler,Geler (Passe son tour)
+stone,Pétrifier,Pétrifier
+forbid,Rendre au Silence,Rendre au Silence (Ne peut pas utiliser de capacité)
+hurt,Dégâts Directs,Dégâts Directs
+dot,Dégâts sur la durée,Dégâts sur la durée (perd des PV tous les tours)
+heal,Soin Direct,Soin Direct
+hot,Soin sur la durée,Soin sur la durée (soigne chaque tour)
+healP,恢復%生命,恢复%生命
+trueHurt,Dégâts Divins,Dégâts Divins
+dotPoison,Empoisonné,Empoisonné
+dotBlood,Saignement,Saignement
+dotFire,Brûlé,Brûlé
+atkP,Attaque,Attaque (En % de dégâts)
+hpP,PV,PV(En % de dégâts)
+armP,Armure,Armure
+addhurt,Ajoute une attaque,Ajoute une attaque
+revive,Ressuscite,Ressuscite
+siphonAtk,Pourcentage de vol d'attaque ,Pourcentage de vol d'attaque 
+siphonHp,Pourcentage de vol de vie,Pourcentage de vol de vie
+siphonArm,Pourcentage de vol d'armure,Pourcentage de vol d'armure
+shield,Bouclier de Résister,Bouclier de Résister
+brier,Renvoie x% de dégâts,Renvoie x% de dégâts
+rImpress,Marque Retardement,Marque Retardement
+cImpress,Marque Coup Critique,Marque Coup Critique
+rImpressB,Explosion de la Marque Retardement,Explosion de la Marque Retardement
+cImpressB,Explosion de la Marque Coup Critique,Explosion de la Marque Coup Critique
+fImpress,Marque Éclair,Marque Éclair
+oImpress,Marque de l'Observateur,Marque de l'Observateur
+weak,Affaibli,Affaibli
+atkPos,La position augmente l'attaque,La position augmente l'attaque
+hpPos,La position augmente les PV,La position augmente les PV
+armPos,la position augmente l'armure,La position augmente l'Armure
+spdPos,la position augmente la vitesse,La position augmente la Vitesse
+hitPos,位置增加精準,位置增加精準
+missPos,la position augmente l'esquive,la position augmente l'esquive
+critPos,la position augmente les critiques,la position augmente les critiques
+critTimePos,La position augmente les dégâts critiques,La position augmente les dégâts critiques
+stunB,Augmente les dégâts quand étourdi,Augmente les dégâts quand étourdi
+iceB,Augmente les dégâts quand gelé,Augmente les dégâts quand gelé
+stoneB,Augmente les dégâts quand pétrifié,Augmente les dégâts quand pétrifié
+dotFireB,Augmente les dégâts quand brûlé,Augmente les dégâts quand brûlé
+dotPoisonB,Augmente les dégâts quand empoisonné,Augmente les dégâts quand empoisonné
+dotBloodB,Augmente les dégâts quand saigne,Augmente les dégâts quand saigne
+zs,Dégats Supp. contre Guerrier,Dégâts supplémentaires contre Guerrier
+fs,Dégats Supp. contre Mage,Dégâts supplémentaires contre Mage
+ms,Dégats Supp. contre Prêtre,Dégâts supplémentaires contre Prêtre
+ck,Dégats Supp. contre Assassin,Dégâts supplémentaires contre Assassin
+yx,Dégats Supp. contre Éclaireur,Dégâts supplémentaires contre Éclaireur
+changeCombat,Change pour Attaque normal,Change pour Attaque normal
+fsStun,Étourdit les Mages,Étourdit les Mages
+fsDotBlood,Fait saigner les Mages,Fait saigner les Mages
+zsIce,Gèle les Guerriers,Gèle les Guerriers
+zsStun,Étourdit les Guerriers,Étourdit les Guerriers
+zsForbid,Rend les Guerriers au silence,Rend les Guerriers au silence
+zsHurt,Dégâts supplémentaires aux Guerriers,Dégâts supplémentaires aux Guerriers
+zsArmP,Réduit l'armure des Guerriers,Réduit l'armure des Guerriers
+ckStone,Pétrifie les Assassins,Pétrifie les Assassins
+ckForbid,Rend les Assassins au silence,Rend les Assassins au silence
+ckHurt,Dégâts supplémentaires contre les Assassins,Dégâts supplémentaires contre les Assassins
+msForbid,Rend les Prêtres au silence,Rend les Prêtres au silence
+yxHurt,Dégâts supplémentaires contre les Éclaireurs,Dégâts supplémentaires contre les Éclaireurs
+yxAtkP,Réduit l'attaque des Éclaireurs,Réduit l'attaque des Éclaireurs
+zsHpPO,PV,Augmente les PV des Guerriers
+zsAtkPO,Attaque,Augmente l'attaque des Guerriers
+zsCritO,Critique,Augmente les critiques des Guerriers
+zsMissO,Blocage,Augmente l'esquive des Guerriers
+zsSklPO,Dég. Comp.,Dég. Comp.
+fsHpPO,PV,Augmente les PV des Mages
+fsAtkPO,Attaque,Augmente l'attaque des Mages
+fsCritO,Critique,Augmente les critiques des Mages
+fsHitO,Précision,Précision
+fsSklPO,Dég. Comp.,Dég. Comp.
+ckHpPO,PV,Augmente les PV des Assassins
+ckCritTimeO,Dégâts Critiques,Dégâts Crit
+ckCritO,Critique,Augmente les critiques des Assassins
+ckBrkO,Péné. Armure,Péné. Armure
+ckSklPO,Dég. Comp.,Dég. Comp.
+yxHpPO,PV,Augmente les PV des Éclaireurs
+yxAtkPO,Attaque,Augmente l'attaque des Éclaireurs
+yxMissO,Blocage,Augmente l'esquive des Éclaireurs
+yxHitO,Précision,Précision
+yxSklPO,Dég. Comp.,Dég. Comp.
+msHpPO,PV,Augmente les PV des Prêtres
+msMissO,Blocage,Augmente l'esquive des Prêtres
+msCritO,Critique,Augmente les critiques des Prêtres
+msSpdO,Vitesse,Vitesse
+msSklPO,Dég. Comp.,Dég. Comp.
+ckStun,Étourdit les Assassins,Étourdit les Assassins
+mhurt,Inflige des dégâts directs,Inflige des dégâts directs
+mdotFire,Inflige des dégâts sur la durée (Brûle),Inflige des dégâts sur la durée (Brûle)
+mdotPoison,Inflige des dégâts sur la durée (Empoisonne),Inflige des dégâts sur la durée (Empoisonne)
+mdotBlood,Inflige des dégâts sur la durée (Saignement),Inflige des dégâts sur la durée (Saignement)
+yxDotBlood,Fait saigner les Éclaireurs,Fait saigner les Éclaireurs
+phurt,"Si les PV de la cible sont inférieurs, inflige % de dégâts directs","Si les PV de la cible sont inférieurs, inflige % de dégâts directs"
+addHurtd,Inflige une attaque supplémentaire aux cibles ayant moins de défense que soi,Inflige une attaque supplémentaire aux cibles ayant moins de défense que soi
+zsDotFire,Brûle les Guerriers,Brûle les Guerriers
+yxStun,Étourdit les Éclaireurs,Étourdit les Éclaireurs
+fsForbid,Rend les Mages au silence,Rend les Mages au silence
+ckDotPoison,Empoisonne les Assassins,Empoisonne les Assassins
+msStun,Étourdit les Prêtres,Étourdit les Prêtres
+msDotFire,Brûle les Prêtres,Brûle les Prêtres
+zsSpdO,Vitesse,Vitesse
+fsSpdO,Vitesse,Vitesse
+ckSpdO,Vitesse,Vitesse
+ckAtkPO,Attaque,Augmente l'attaque des Assassins
+yxSpdO,Vitesse,Vitesse
+msAtkPO,Attaque,Augmente l'attaque des Prêtres
+iceless,Immuniser contre Geler,Immuniser contre Geler
+stoneless,Immuniser contre Pétrifier,Immuniser contre Pétrifier
+stunless,Immuniser contre Étourdir,Immuniser contre Étourdir
+forbidless,Immuniser contre Rendre au Silence,Immuniser contre Rendre au Silence
+stunH,生命不低于自己的目标眩晕,生命不低于自己的目标眩晕
+hurtH,Inflige des dégâts supplémentaires à la cible dont ses PV sont inférieurs à soi,Inflige des dégâts supplémentaires à la cible dont ses PV sont inférieurs à soi
+msHurt,Dégâts supplémentaires aux Prêtres,Dégâts supplémentaires aux Prêtres
+forbidH,生命不高于自己的目标禁魔,生命不高于自己的目标禁魔
+phurtH,Inflige des dégâts supplémentaires équivalent à x% des PV Max de la cible dont ses PV sont supérieurs à soi,Inflige des dégâts supplémentaires équivalent à x% des PV Max de la cible dont ses PV sont supérieurs à soi
+rddot,"Dégât aléatoire sur la durée (Saignement, Brûlure, Empoisionnement)","Dégât aléatoire sur la durée (Saignement, Brûlure, Empoisionnement)"
+rdcontrol,"Effet aléatoire de contrôle (Étourdir, Gêler, Pétrifier)","Effet aléatoire de contrôle (Étourdir, Gêler, Pétrifier)"
+hurtmaxM,Inflige dégâts supplémentaires équivalent à x% des PV max d'allié,Inflige dégâts supplémentaires équivalent à x% des PV max d'allié
+hurtmaxH,Inflige dégâts supplémentaires équivalent à x% de son PV max,Inflige dégâts supplémentaires équivalent à x% de son PV max
+healB,Soin Reçu,被治疗效果增强x%
+hurtshare,Toute l'allié subit les dégâts,Toute l'allié subit les dégâts
+exhurt,Attaque Basique supplémentaire,Attaque Basique supplémentaire
+hurtB,Augmente l'attaque basique de x%,Augmente l'attaque basique de x%
+newRound,击杀角色获得新回合,击杀角色获得新回合
+overflow,Partage des dégâts,Partage des dégâts
+buffExloded,buff d'explosion,buff d'explosion
+mindControl,Contrôle mental,Contrôle mental
+transformBK,祭献转化成分身,祭献转化成分身
+atkPBK,黑骑士攻击buff,黑骑士攻击buff
+brkBK,黑骑士破甲buff,黑骑士破甲buff
+sw,神威學院傷害提升,神威學院傷害提升
+yz,隱蹤學院傷害提升,隱蹤學院傷害提升
+th,曇華學院傷害提升,曇華學院傷害提升
+fj,風見學院傷害提升,風見學院傷害提升
+cx,辰星學院傷害提升,辰星學院傷害提升
+xl,修羅學院傷害提升,修羅學院傷害提升
+critDef,受到暴击伤害,受到暴击伤害
+debuffClean,清除减益效果,清除减益效果
+surAtkP,存活战姬数*1.2%攻击力,存活战姬数*1.2%攻击力
+hurtLhurtP,生命高于自己，额外伤害量x%的伤害,生命高于自己，额外伤害量x%的伤害
+healI,Soin,造成治疗效果增强x%
+healPlose,恢复已损失生命%生命,恢复已损失生命%生命
+rowFArmP,Armure pour l'avant,Armure pour l'avant
+rowFStone,Pétrifie les ennemis en avant,Pétrifie les ennemis en avant
+rowBAtkP,对后排攻击,对后排攻击
+rowBSpd,对后排速度,对后排速度
+dotTwins,双子持续伤害,双子持续伤害
+rowFHpP,hpPos-前排,hpPos-前排
+rowBHpP,hpPos-后排,hpPos-后排
+rowBArmP,armPos-后排,armPos-后排
+rowFHit,hitPos-前排,hitPos-前排
+rowBMiss,missPos-后排,missPos-后排
+rowBCrit,critPos-后排,critPos-后排
+hotHuatuo,持续回血（每回合回血）,持续回血（每回合回血
+reviveINF,无限复活（立刻复活）,无限复活（立刻复活）
+reviveINFbuff,无限复活累加buff,无限复活累加buff
+dotFireMaxHp,生命上限百分比燃烧伤害,生命上限百分比燃烧伤害
+atkUnable,无法攻击,无法攻击
+free_harm,免死护盾,免死护盾
+aggression,杀意buff,杀意buff
+aggressionHarm,杀意伤害,杀意伤害
+stunSober,对未眩晕敌人眩晕,对未眩晕敌人眩晕
+critStun,对已眩晕敌人暴击伤害（配置攻击百分比、此伤害必定暴击）,对已眩晕敌人暴击伤害（配置攻击百分比、此伤害必定暴击）
+hurtmaxHLimit15,对目标造成其生命上限x%的伤害（不超過15倍攻擊）,对目标造成其生命上限x%的伤害（不超過15倍攻擊）
+unfree,Chance de Contrôle,Chance de Contrôle
+incDmg,增伤率,增伤率
+incDmgGroupCom,Augmenter les dégâts reçus par les filles de la Maison Fantôme/Humain/Monstre/Fée,增伤率-四系
+incDmgGroupSpe,Augmenter les dégâts reçus par les filles de Maison Ange/Démon,增伤率-光暗
+incDmgGroupChaos,Augmenter les dégâts reçus par les Chaos,增伤率-混沌
+decDmgGroupCom,Réduire les dégâts causés par les filles de la Maison Fantôme/Humain/Monstre/Fée,减伤率-四系
+decDmgGroupSpe,Réduire les dégâts causés par les filles de Maison Ange/Démon,减伤率-光暗
+decDmgGroupChaos,Réduire les dégâts causés par les Chaos,减伤率-光暗
+incDmgSkl,Augmenter les Dégâts des Compétences des Filles,增伤率-技能
+decDmgSkl,Réduire les dégâts reçus par les filles,减伤率-技能
+incDmgNorAtk,Augmenter l'attaque basique des filles,增伤率-普攻
+decDmgNorAtk,Réduire les dégâts de l'attaque basique reçus par les filles,减伤率-普攻
+allHarmDec,Résistance Totale,Résistance Totale（inclut les dégâts en %）
+unCrit,Résistance aux Critiques,Résistance aux Critiques
+resist_zs,Réduc. Dég. des Guerriers,Réduc. Dég. des Guerriers
+resist_fs,Réduc. Dég. des Mages,Réduc. Dég. des Mages
+resist_yx,Réduc. Dég. des Éclaireurs,Réduc. Dég. des Éclaireurs
+resist_ck,Réduc. Dég. des Assassins,Réduc. Dég. des Assassins
+resist_ms,Réduc. Dég. des Prêtres,Réduc. Dég. des Prêtres
