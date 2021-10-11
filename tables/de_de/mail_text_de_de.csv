@@ -46,12 +46,12 @@ id,name,from,content
 45,Belohnungen - Expedition,Systembenachrichtigung,Die Expedition ist beendet. Herzlichen Glückwunsch! Hier sind deine Belohnungen!
 46,Erinnerung: Elite Arena endet bald,Systembenachrichtigung,"Senpai, die Elite Arena endet in weniger als 24 Stunden! Bitte begebe dich schnell in die Elite Arena und verteidige deinen Ruhm!"
 47,"Belohnungen - ""Stimme der Liebe""",Systembenachrichtigung,"Vielen Dank für deine Teilnahme am Event ""Stimme der Liebe""! Hier sind deine Belohnungen!"
-48,Tägliche Belohnung,Systembenachrichtigung,Melde dich jeden Tag während des Events an und erhalte 1 Super Lottoschein und 5 Sanduhren. Hier sind deine Belohnungen!
-49,Praktische Arbeit,Systembenachrichtigung,"Senpai! Die praktische Arbeit beginnt! Verwende diese 4 Sanduhren, um an dem Event teilzunehmen."
+48,Tägliche Belohnung,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Lottoschein *1 und Landkarte *5 zu erhalten. Hier sind deine Belohnungen."
+49,Praktische Arbeit,Systembenachrichtigung,"Lieber Senpai,\n\ndie praktische Arbeit hat begonnen! Hierzu werden dir 4 Landkarten gesendet. Komm und nimm an der praktischen Arbeit teil!"
 50,Start - Elite Liga,Arena-Mail,Senpai! Die Elite Liga ist jetzt verfügbar! Komm vorbei und nimm an der Schlacht in der Elite Liga teil!
 51,Erinnerung: Elite Liga endet bald,Arena-Mail,Senpai! Die Elite Liga endet in weniger als 24 Stunden! Kämpfe in der Elite Liga um Belohnungen!
 52,Belohnungen zum Saisonende,Arena-Mail,"Als Direktor der Yume Akademie möchte ich dir gratulieren, dass du den Rang {1} in der Elite Liga erreicht hast. Deine hervorragenden Fähigkeiten und dein Mut haben dir folgende Belohnungen eingebracht."
-53,Anfrage aktzeptiert,Arena-Mail,"Senpai! Deine Bewerbung für ein Elite Liga-Team wurde angenommen! Schnell, schau dir dein Team an!"
+53,Anfrage akzeptiert,Arena-Mail,"Senpai! Deine Bewerbung für ein Elite Liga-Team wurde angenommen! Schnell, schau dir dein Team an!"
 54,Teamleiter-Wechsel,Arena-Mail,Senpai! du bist jetzt der Teamleiter! Mach dich an die Arbeit und erfülle deine Aufgaben als Teamleiter in der Elite Liga!
 55,Rauswurfsbenachrichtigung,Arena-Mail,"Senpai, der Teamleiter hat dich aus dem Team geworfen. Bitte erstelle ein neues Team oder schließe dich einem an!"
 56,Abonnement erfolgreich abgeschlossen,Abonnement,"Herzlichen Glückwunsch! Du hast die Wochenkarte erfolgreich abonniert! Ab sofort bringt dir dein Auto-Kampf 100% mehr Münzen ein. Dieser Vorteil ist mit deinem Vip-Münzen-Boni kombinierbar! Nach 1 Woche werden die Kosten deines Abonnements automatisch abgezogen. Wenn du die Wochenkarte kündigst, erhälst du den Rest der Woche weiterhin Vorteile. Das Abonnement muss manuell gekündigt werden. Um dein Abonnement zu verwalten, gehe zu den Hausaufgaben und tippen auf Karten."
@@ -62,7 +62,7 @@ id,name,from,content
 61,Karte zum Mondfest,Systembenachrichtigung,Du bist ein Lv.{1} Spieler und erhältst heute die folgenden Belohnungen. Deine Karte zum Mondfest läuft in {3} Tag(en) ab!
 62,Monatskarten-Verlängerung erfolgreich,Monatskarte,"Vielen Dank, dass du deine Monatskarte verlängert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 63,Mini Monatskarten-Verländerung erfolgreich,Mini Monatskarte,"Vielen Dank, dass du deine Mini Monatskarte erneuert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
-64,Puzzelevent,Event Mail,Herzliche Glückwünsche! Du hast {1} Puzzles abgeschlossen. Du hast die folgenden Belohnungen verdient!
+64,Puzzleevent,Event Mail,Herzliche Glückwünsche! Du hast {1} Puzzles abgeschlossen. Du hast die folgenden Belohnungen verdient!
 65,Lieber Senpai!,Systembenachrichtigung,"
 Wir laden dich zu unserer FB-Fangruppe ein, wo du mit anderen Spielerinnen und Spielern Strategien und Erfahrungen des Spiels austauschen kannst!
 
@@ -217,3 +217,5 @@ die Darstellung vom Kostüm ""Strand & Sonne"" wurde angepasst. (Der Hintergrund
 Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigungen gesendet."
 196,Auszeichnung der Aufnahmeprüfung,Event-Mail,"Gratuliere, du hast im Event ""Aufnahmeprüfung"" die höchste Stufe erreicht und den limitierten Avatarbildrahmen ""Ausgezeichneter Student"" erhalten! Dieser Rahmen läuft in 28 Tagen ab. Unter ""Persönliche Info"" kannst du den Rahmen überprüfen."
 197,Yume Sportfest - Elite Wettkampf,Event-Mail,Glückwunsch! Du bist beim Yume Sportfest unter den TOP100 gelandet und hast dich für den Elite Wettkampf qualifiziert! Bitte nimm an dem Kampf teil!
+198,Praktische Arbeit - Belohnungen,Systembenachrichtigung,"Gratuliere, du hast ein neues Thema bei der praktischen Arbeit abgeschlossen und folgende Belohnungen erhalten!"
+199,Neulingsfonds,Systembenachrichtigung,"Lieber Senpai,\n\nbezüglich der Anpassung des Neulingsfonds werden dir hier die restlichen Belohnungen von deinem zuvor gekauften Neulingsfonds per Mail gesendet. Bitte sammle sie ein!"
