@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratuit
 PUB_MISSION_COMPLETE2,Finir
 PUB_TICKET_NO_ENOUGH1,Parchemins de Jobs Insuffisants !
 PUB_TICKET_NO_ENOUGH2,Parchemins de Jobs Avancés Insuffisants !
-TAVERN_WINDOW_TIPS,"1. Des récompenses généreuses sont données pour avoir fini le Job dans le temps imparti. Chaque Fille ne peut avoir qu'un Job à la fois.|2. Le nombre de Job quotidien est limité. Vous pouvez cependant augmenter la limite en augmentant votre niveau VIP.|3. Les Jobs n'ayant pas encore été commencées peuvent être réinitialisés. Vous pouvez utiliser des gemmes pour actualiser les Jobs que vous ne voulez pas.|4. Vous pouvez utiliser des Parchemins de Jobs afin d'obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des gemmes pour accélérer le temps des Jobs.|6. Chances d'actualiser des Jobs：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles."
+TAVERN_WINDOW_TIPS,"1. Des récompenses généreuses sont données pour avoir fini le Job dans le temps imparti. Chaque Fille ne peut avoir qu'un Job à la fois.|2. Le nombre de Job quotidien est limité. Vous pouvez cependant augmenter la limite en augmentant votre niveau VIP.|3. Les Jobs n'ayant pas encore été commencées peuvent être réinitialisés. Vous pouvez utiliser des Gemmes pour actualiser les Jobs que vous ne voulez pas.|4. Vous pouvez utiliser des Parchemins de Jobs afin d'obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps des Jobs.|6. Chances d'actualiser des Jobs：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles."
 ITEM_SUMMON,Invoquer
 ITEM_SELL,Vendre
 ITEM_DETAIL,Détails
@@ -175,7 +175,7 @@ PERSON_NAME_LONG,Pseudo trop long !
 PERSON_NAME_SUCCEED,Nom changé !
 PERSON_NAME_FAIL,Nom déjà existant !
 GET_ITEMS,Objet Acquis
-PUB_MISSION_REFRESH_1,"Il faut {1} gemmes pour actualiser, voulez-vous continuer ?"
+PUB_MISSION_REFRESH_1,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
 PUB_MISSION_REFRESH_2,Aucun job à acutaliser !
 PUB_MISSION_REFRESH_3,Gemmes insuffisantes pour rafraîchir !
 PUB_START_MISSION_1,Vous n'avez pas atteint les requêtes !
@@ -205,7 +205,7 @@ GAMBLE_BUY_ONE,1 fois
 GAMBLE_BUY_TEN,10 fois
 GAMBLE_SYSTEM_REFRESH_TIME,Prochain
 GAMBLE_COIN_NOT_ENOUGH,Tickets du Distributeur insuffisants !
-GAMBLE_VIP_NOT_ENOUGH,"Vous devez être VIP Niv. {1} ou Joueur Niv. {2}, voulez-vous gagner de l'EXP VIP en achetant des gemmes ?"
+GAMBLE_VIP_NOT_ENOUGH,"Vous devez être VIP Niv. {1} ou Joueur Niv. {2}, voulez-vous gagner de l'EXP VIP en achetant des Gemmes ?"
 CRYSTAL_NOT_ENOUGH,"Gemmes insuffisantes, voulez-vous en acheter ?"
 GAMBLE_BUY_TITLE,Acheter un ticket de distributeur
 GAMBLE_ITEM_RATE,Chances : {1}%%
@@ -223,7 +223,7 @@ GAMBLE_UP_WOMAN_TALK_2,Distributeur Avancé Parole 2
 GAMBLE_UP_WOMAN_TALK_3,Distributeur Avancé Parole 3
 GAMBLE_UP_WOMAN_TALK_4,Distributeur Avancé Parole 4
 GAMBLE_UP_WOMAN_TALK_5,Distributeur Avancé Parole 5
-OPEN_SLOT_TIPS,Utilisez {1} Gemmes pour augmenter la Capacité Max de Fille de {2} ?
+OPEN_SLOT_TIPS,Voulez-vous utiliser {1} Gemmes pour augmenter la Capacité Max de Fille de {2} ?
 NOT_ENOUGH,{1} insuffisant(e)
 LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire
 ALTAR_DECOMPOSE_TIP,Êtes-vous sûr de vouloir transférer une Fille supérieure à 3 étoiles ?
@@ -284,7 +284,7 @@ TOWER_VIDEO_WINDOW,Complété récemment
 DAILY_MISSION,Quêtes Journalières
 REFRESH_TIME,Rafraîchit dans
 GO,Aller à
-PURCHASE_SUCCESS,Paiement effectué
+PURCHASE_SUCCESS,Objet(s) Acheté(s)
 GROUP_1,Fantôme
 GROUP_2,Humain
 GROUP_3,Monstre
@@ -330,7 +330,7 @@ DAILY_QUIZ_FIGHT_TIPS,Vous avez fini tous vos quiz aujourd'hui !
 NEXT_BATTLE,Suivant
 BACKPACK_WINDOW,Sac
 SKIP_BATTLE,Passer la bataille ?
-ALTAR_TITLE,Transfert
+ALTAR_TITLE,Transférer
 ACTIVITY_WINDOW,Foire
 TOWER_TEXT01,Ennemi
 TOWER_TEXT02,Récompenses
@@ -343,7 +343,7 @@ NO_ITEM,Pas d'objets…
 NO_DEBRIS,Pas de fragments…
 NO_ARTIFACT,Aucune Antiquité Disponible...
 SMITHY_WINDOW,Synthétiser
-SMITHY_WINDOW_HELP,1. Combinez des objets de qualité plus faible pour obtenir un objet d'une meilleur qualité.|2. La synthétisation nécessite des pièces|3. Pour synthétiser il faut que l'équipement soit dans votre inventaire ; il ne peut pas être équipé sur une Fille.
+SMITHY_WINDOW_HELP,"1. Combinez des équipements de faible qualité pour obtenir un équipement d'une meilleure qualité.|2. La synthétisation nécessite des Pièces d'Or|3. Pour synthétiser, il faut que l'équipement soit dans votre inventaire."
 EQUIP_NAME_1,Arme
 EQUIP_NAME_2,Vêtements
 EQUIP_NAME_3,Accessoire
@@ -423,7 +423,7 @@ FEEDBACK_TEXT_OVER,200 caractères maximum
 FEEDBACK_TEXT_RECEIVED,Merci de votre commentaire !
 FEEDBACK_TEXT_INVALID,Contient des mots inacceptables
 INVALID_CHARACTER,Contient des mots inacceptables
-AWARD_ITEM,Récompense
+AWARD_ITEM,Récompenses
 NO_HANG_REWARD,Vous n'avez pas encore de Butin
 ALREADY_IN_FORMATION,Cette Fille a déjà été déployée
 NOTICE_TIPS,Mise à jour
@@ -444,7 +444,7 @@ FORGET_PASSWORD,Mot de passe\noublié
 CANCEL,Annuler
 SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée."
 TOWER_WINDOW_HELP,"1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport à l'Étape du Test qu'ils ont atteint. |5. Atteignez l'Étape 200 pour débloquer la fonction ""Passer le combat""."
-DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit au minimum choisir 1 Fille pour la Patrouille(5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochine ouverture.(les attributs, les équipements et les potentiels ne seront pas mis à jour avant la prochaine ouverture)|3. Touchez pour voir les Informations des Ennemis et choisissez une Fille manuellement pour se battre contre les Ennemis.|4. Choisissez Combat Rapide pour passer le combat et voir directement les résultats ou choisissez Combat Normal pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV des Filles des deux côtés seront sauvegardés. Les Filles qui n'ont plus de PV ne peuvent plus participer dans les combats de l'événement.|6. Chaque combat dure 15 tours. L'équipe qui tue l'Ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un Objet.|8. Coffre：Obtient des récompenses aléatoires de pièces ou de gemmes.|9. Marchand：Cliquez sur le Marchand pour acheter des Objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Balle. Cliquez sur Balle pour obtenir l'effet correspondant et cliquez sur Papeterie pour recevoir un bonus, l'utilisation de Papeterie est limitée pour chaque Fille.|11. Les Balles peuvent être préservées. Cliquez sur la Balle pour l'utiliser.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 étages d'un niveau (disponible pour chaque niveau) vous pouvez choisir le mode Auto la prochaine fois que la Patrouille est disponible."
+DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit au minimum choisir 1 Fille pour la Patrouille(5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochine ouverture.(les attributs, les équipements et les potentiels ne seront pas mis à jour avant la prochaine ouverture)|3. Touchez pour voir les Informations des Ennemis et choisissez une Fille manuellement pour se battre contre les Ennemis.|4. Choisissez Combat Rapide pour passer le combat et voir directement les résultats ou choisissez Combat Normal pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV des Filles des deux côtés seront sauvegardés. Les Filles qui n'ont plus de PV ne peuvent plus participer dans les combats de l'événement.|6. Chaque combat dure 15 tours. L'équipe qui tue l'Ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un Objet.|8. Coffre：Obtient des récompenses aléatoires de pièces ou de Gemmes.|9. Marchand：Cliquez sur le Marchand pour acheter des Objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Balle. Cliquez sur Balle pour obtenir l'effet correspondant et cliquez sur Papeterie pour recevoir un bonus, l'utilisation de Papeterie est limitée pour chaque Fille.|11. Les Balles peuvent être préservées. Cliquez sur la Balle pour l'utiliser.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 étages d'un niveau (disponible pour chaque niveau) vous pouvez choisir le mode Auto la prochaine fois que la Patrouille est disponible."
 GET_WAY_EQUIP,Aller à {1}-{2}
 PARTNER_LIST_FULL,La liste des Filles est pleine. Vous pouvez augmenter le nombre d'emplacement disponible en augmentant votre niveau VIP ou en achetant des places supplémentaires. Voulez-vous acheter plus d'emplacement?
 REST_TIME,Restant
@@ -491,11 +491,11 @@ BATTLE_TIPS,Conseil de Bataille
 MONTH_CARD_TEXT01,Obtenez 900 Gemmes immédiatement après\nl'achat
 MONTH_CARD_TEXT02,Recevez 370 Gemmes tous les jours pendant 30 jours
 MONTH_CARD_TEXT03,12k Gemmes au total
-MONTH_CARD_TEXT04,Prix d'Origine: 16.99€
+MONTH_CARD_TEXT04,Prix d'Origine : 16.99€
 MINI_MONTH_CARD_TEXT01,Obtenez 350 Gemmes immédiatement après\nl'achat
 MINI_MONTH_CARD_TEXT02,Recevez 85 Gemmes tous les jours pendant 30 jours
 MINI_MONTH_CARD_TEXT03,2900 Gemmes au total
-MINI_MONTH_CARD_TEXT04,Prix d'Origine: €5.49
+MINI_MONTH_CARD_TEXT04,Prix d'Origine : €5.49
 PERSON_CREATE_NAME,Choisir un Nom
 MONTH_CARD_HELP1,"Après avoir acheté la Carte Mensuelle, vous recevrez 900 Gemmes et 750 EXP VIP immédiatement.|Vous recevrez ensuite 370 Gemmes par jour pendant 30 jours.|Pour un total de 12000 Gemmes! Prenez-la sans plus attendre !|La réduction n'est valable que pour le premier achat."
 MONTH_CARD_HELP2,"Après avoir acheté la Carte Mensuelle, vous recevrez 900 Gemmes et 750 EXP VIP immédiatement.|Vous recevrez ensuite 370 Gemmes par jour pendant 30 jours.|Pour un total de 12000 Gemmes ! Prenez-la sans plus attendre !|La réduction n'est valable que pour le premier achat."
@@ -651,7 +651,7 @@ FRIEND_NONE,Vous n'avez pas encore d'amis
 FRIEND_APPLY_NONE,Pas de demande d'amitié
 FRIEND,Ami
 FRIEND_BOSS_RANK_WINDOW,Statistiques de dégâts
-FRIEND_SEARCH_ONLY_NUM,Recherche limité à l'ID du Senpai
+FRIEND_SEARCH_ONLY_NUM,Veuillez tout d'abord entrer l'ID pour chercher
 FRIEND_NO_TILI,Énergie insuffisante
 MAIL_NULL,Le courrier ne peut pas être vide
 MAIL_ILLEGAL,Contient des mots inacceptables
@@ -728,7 +728,7 @@ TRIAL_TEXT03,Restant :
 TRIAL_TEXT04,Ennemi
 TRIAL_TEXT05,Récompenses
 TRIAL_TEXT06,Combattre
-TRIAL_TEXT07,Récompense
+TRIAL_TEXT07,Récompenses
 USELESS_MAIL_ALL_DELETE_TEXT,Êtes-vous sûr de vouloir supprimer les courriers ?
 NO_BUSINESS_MAN,Aucun marchand...
 BATTLE_LOAD_ERROR,Chargement échoué !
@@ -796,7 +796,7 @@ GUILD_JOB3,Chef
 GUILD_MAIL_TITLE,Tous les membres
 GUILD_SKILL_NO_RES,Pièce de Guilde Insuffisante
 GUILD_NO_SKILL_CAN_RESET,Aucune capacité réinitialisable !
-GUILD_RESET_TIPS,Réinitialiser les améliorations des capacités actuelles coûtera un certain nombre de gemmes et vous rendra les pièces de Guilde dépensées. La première réinitialisation est gratuite.
+GUILD_RESET_TIPS,Réinitialiser les améliorations des capacités actuelles coûtera un certain nombre de Gemmes et vous rendra les Pièces de Guilde dépensées. La première réinitialisation est gratuite.
 GUILD_RESET_SUCCESS,Réinitialisé
 GUILD_RESET,Réinitialiser
 GUILD_JOIN_WINDOW,Guilde
@@ -960,15 +960,15 @@ GUILD_TEXT64,Candidature envoyée
 ACTIVITY_WORLD_BOSS_AWARD_TITLE,Récompenses du Classement
 ACTIVITY_WORLD_BOSS_AWARD_DESC,Les récompenses seront déterminées selon votre classement
 ACTIVITY_WORLD_BOSS_HELP_TITLE,Aide
-ACTIVITY_WORLD_BOSS_HELP,"1. Il y a 3 types de Pratiques Extra-Scolaire ouvertes au même moment. Afin de combattre vous devrez utiliser 1 Sablier. Il n'y a pas de limite d'achat des Sabliers avec des Gemmes.|2. Vous pourrez obtenir des récompenses différentes en participant aux différents défis.|3. Chaque bataille vous donnera une quantité aléatoire de récompenses.|4. Finissez un projet pour recevoir les récompenses correspondantes par courrier.|5. Après avoir vaincu le boss, le boss qui le remplacera dans le même projet sera plus puissant. Il y a 8 boss dans chaque projet. |6. L'événement sera rafraichi tous les mois, et les boss de chacun des projets sera remis à sa difficulté minimale. |7. Les dégâts causés par Serviteurs ne sont pas pris en compte."
+ACTIVITY_WORLD_BOSS_HELP,"1. Il y a 3 types de Pratiques Extra-Scolaire ouvertes au même moment. Afin de combattre vous devrez utiliser 1 Carte Pratique. Il n'y a pas de limite d'achat des Cartes Pratiques avec des Gemmes.|2. Vous pourrez obtenir des récompenses différentes en participant aux différents défis.|3. Chaque bataille vous donnera une quantité aléatoire de récompenses.|4. Finissez un projet pour recevoir les récompenses correspondantes par courrier.|5. Après avoir vaincu le boss, le boss qui le remplacera dans le même projet sera plus puissant. Il y a 8 boss dans chaque projet. |6. L'événement sera rafraichi tous les mois, et les boss de chacun des projets sera remis à sa difficulté minimale. |7. Les dégâts causés par Serviteurs ne sont pas pris en compte."
 ACTIVITY_WORLD_BOSS_LIMIT,Limite d'achat atteinte
 ACTIVITY_WORLD_BOSS_RANK_TEXT,Points
-ACTIVITY_WORLD_BOSS_NOT_ENOUGH,Sabliers insuffisants
+ACTIVITY_WORLD_BOSS_NOT_ENOUGH,Carte Pratique Insuffisante !
 BUY_TIME_TITLE,Nombre d'Achats
 SETTING_UP_PRIVACY,Politique de Confidentialité
 SETTING_UP_FEEDBACK_PROMPT,Veuillez entrez votre commentaire
 WORLD_BOSS_FIGHT,Commencer
-WORLD_BOSS_BUY_TITLE,Acheter des Sabliers
+WORLD_BOSS_BUY_TITLE,Acheter des Cartes Pratiques
 WORLD_BOSS_SWEEP_TITLE,Raid
 ACTIVITY_WORLD_BOSS_TITLE,Ennemi
 WORLD_BOSS_SWEEP_TIPS,Combien de fois voulez-vous faire le Raid ?
@@ -1631,7 +1631,7 @@ SETTING_UP_10,Social
 CDKEY_WINDOW,Entrez le code d’invitation
 ENTER_CDKEY,Code d'Invitation
 PERSON_SOUND_OPEN,Ouvert
-PERSON_SOUND_CLOSE,Fermé
+PERSON_SOUND_CLOSE,Fermer
 TOUCH_ME_DUDE,Touchez pour entrer dans l'Académie !
 PLOT_PERSON_EDIT_NAME,Entrez votre nom
 PLOT_PERSON_EDIT_TIPS1,Quel est votre nom ?
@@ -1701,7 +1701,7 @@ GO_BIND_ACCOUNT,Lier
 EQUIP_GACHA_TIPS1,"Utilisez des Cartes d'Approvisionnement d'Equipement afin d'obtenir aléatoirement des Equipements Rouges ou mieux. Les récompenses seront envoyées par courrier lorsque le nombre de Cartes atteint la quantité requise. C'est la dernier fois de cet événement, vous pourrez vendre vos Cartes après qu'il est terminé."
 EQUIP_GACHA_TIPS2,[c][fff32d]{1}[-][/c] fois restant avant d'obtenir un des équipements suivants.
 EQUIP_GACHA_TIPS3,Liste des Équipements
-EQUIP_GACHA_HELP,"1. Durant l'événement, utilisez des Cartes d'Approvisionnement afin d'obtenir aléatoirement un des équipements.|2. Les Cartes d'Approvisionnement peuvent être obtenus dans les packs, en finissant des quêtes et en achetant avec des gemmes. En achetant avec des gemmes vous ne pouvez qu'en acheter 20.|Cartes obtenues：{4}/20|3. Durant l'événement vous pouvez obtenir 1 Carte d'Approvisionnement après avoir fait 3 tirages dans le Distributeur Avancé, vous ne pouvez en obtenir que 10 de cette façon.|Cartes obtenues：{1}/10|4. Durant l'événement achevez 4 jobs 4 étoiles pour obtenir une Carte d'Approvisionnement, maximum 5|Carte obtenues：{2}/5|5. Durant l'événement, combattez 10 fois dans l'Arène pour obtenir une Carte d'Approvisionnement, maximum 5|Carte obtenues：{3}/5|6. Avant d'avoir reçu un Ensemble Angélique (Equipement Orange 6 étoiles) une partie de l'ensemble est garantie après avoir utilisé 50 Cartes d'Approvisionnement d'Équipement à la suite. Ce qui signifie que pendant l'événement, vous obtiendrez l'Ensemble au complet en utilisant 200 Cartes d'Approvisionnement d'Équipement.|7. L'interface de l'événement affichera les quatre équipements de l'Ensemble Angélique. Quand l'un d'entre eux est obtenu durant l'événement, l'image de l'équipement sera validé.|8. Les récompenses seront envoyées par courrier lorsque les Cartes d'Approvisionnement d'Équipement utilisées atteindront le quota requis.|10. C'est la dernière ouverture cet événement, après cela il ne sera plus jamais ouvert. Après l'événement les Cartes d'Approvisionnement d'Equipement seront vendables."
+EQUIP_GACHA_HELP,"1. Durant l'événement, utilisez des Cartes d'Approvisionnement afin d'obtenir aléatoirement un des équipements.|2. Les Cartes d'Approvisionnement peuvent être obtenus dans les packs, en finissant des quêtes et en achetant avec des Gemmes. En achetant avec des Gemmes vous ne pouvez qu'en acheter 20.|Cartes obtenues：{4}/20|3. Durant l'événement vous pouvez obtenir 1 Carte d'Approvisionnement après avoir fait 3 tirages dans le Distributeur Avancé, vous ne pouvez en obtenir que 10 de cette façon.|Cartes obtenues：{1}/10|4. Durant l'événement achevez 4 jobs 4 étoiles pour obtenir une Carte d'Approvisionnement, maximum 5|Carte obtenues：{2}/5|5. Durant l'événement, combattez 10 fois dans l'Arène pour obtenir une Carte d'Approvisionnement, maximum 5|Carte obtenues：{3}/5|6. Avant d'avoir reçu un Ensemble Angélique (Equipement Orange 6 étoiles) une partie de l'ensemble est garantie après avoir utilisé 50 Cartes d'Approvisionnement d'Équipement à la suite. Ce qui signifie que pendant l'événement, vous obtiendrez l'Ensemble au complet en utilisant 200 Cartes d'Approvisionnement d'Équipement.|7. L'interface de l'événement affichera les quatre équipements de l'Ensemble Angélique. Quand l'un d'entre eux est obtenu durant l'événement, l'image de l'équipement sera validé.|8. Les récompenses seront envoyées par courrier lorsque les Cartes d'Approvisionnement d'Équipement utilisées atteindront le quota requis.|10. C'est la dernière ouverture cet événement, après cela il ne sera plus jamais ouvert. Après l'événement les Cartes d'Approvisionnement d'Equipement seront vendables."
 EQUIP_GACHA_TIPS4,Utiliser 1
 EQUIP_GACHA_TIPS5,Utiliser 10
 EQUIP_GACHA_BUY_TITLE,Acheter Carte d'Approvisionnement d'Équipement
@@ -1783,7 +1783,7 @@ ACTIVITY_BEACH_TIPS3,Attaque
 ACTIVITY_BEACH_TIPS4,Êtes-vous certain de vouloir réinitialiser les progrès ?
 ACTIVITY_BEACH_ATTACK_NUM,Attaques Restantes : {1}
 ACTIVITY_BEACH_ATTACK_COST,Consommé : {1}
-BEACH_HELP,"1. Vous avez une chance gratuite de réinitialiser la progression du jeu une fois par jour. Vous pouvez également utiliser des gemmes pour réinitialiser.|2. Cinq attaques gratuites seront données au début de chaque tour. Cinq attaques peuvent également être achetées avec 200 Gemmes. Chaque attaque coûtera une attaque à un adversaire.|3. Il y a trois sortes de pieuvre：Pieuvre Rose, Pieuvre Bleue et Pieuvre Rouge. 1 Pieuvre Rose inflige 1 de dégât, 1 Pieuvre Bleue inflige 3 de dégâts et une Pieuvre Rouge inflige 5 de dégâts.|Quand le joueur active un bonus d’attaque x3, les dégâts seront multipliés par 3. (Attention：Chaque attaque pendant l’effet x3 coûtera 100 Gemmes)|4. Vous ne pouvez connecter les pieuvres de la même sorte qu’une à la fois verticalement, horizontalement ou diagonalement. Plus vous connectez de pieuvre, plus les dégâts infligés seront important.|5. Si les dégâts infligés sont supérieurs aux points de vie de l’adversaire, les dégâts ne seront pas infligés à l’adversaire suivant.|6. Lorsque l’adversaire est battu, vous recevrez les points de récompenses correspondants. Plus vous battez d’adversaire, meilleures seront les récompenses obtenues.|7. Les points obtenus seront accumulés afin d’augmenter votre niveau de récompense, chaque fois que vous monterez de niveau, vous obtiendrez les récompenses correspondantes. Les récompenses sont divisées entre régulières et avancées. Les récompenses avancées ne peuvent être débloquées qu’en achetant des packs ou en débloquant des récompenses spéciales.|8. Vous pouvez également obtenir des récompenses en dépensant des gemmes, mais cela vous coûtera plus qu’en vainquant les ennemis. Nous vous recommandons donc de participer à l’activité afin d’obtenir des récompenses !|9 Les récompenses doivent être collectées dans l’interface des récompenses !"
+BEACH_HELP,"1. Vous avez une chance gratuite de réinitialiser la progression du jeu une fois par jour. Vous pouvez également utiliser des Gemmes pour réinitialiser.|2. Cinq attaques gratuites seront données au début de chaque tour. Cinq attaques peuvent également être achetées avec 200 Gemmes. Chaque attaque coûtera une attaque à un adversaire.|3. Il y a trois sortes de pieuvre：Pieuvre Rose, Pieuvre Bleue et Pieuvre Rouge. 1 Pieuvre Rose inflige 1 de dégât, 1 Pieuvre Bleue inflige 3 de dégâts et une Pieuvre Rouge inflige 5 de dégâts.|Quand le joueur active un bonus d’attaque x3, les dégâts seront multipliés par 3. (Attention：Chaque attaque pendant l’effet x3 coûtera 100 Gemmes)|4. Vous ne pouvez connecter les pieuvres de la même sorte qu’une à la fois verticalement, horizontalement ou diagonalement. Plus vous connectez de pieuvre, plus les dégâts infligés seront important.|5. Si les dégâts infligés sont supérieurs aux points de vie de l’adversaire, les dégâts ne seront pas infligés à l’adversaire suivant.|6. Lorsque l’adversaire est battu, vous recevrez les points de récompenses correspondants. Plus vous battez d’adversaire, meilleures seront les récompenses obtenues.|7. Les points obtenus seront accumulés afin d’augmenter votre niveau de récompense, chaque fois que vous monterez de niveau, vous obtiendrez les récompenses correspondantes. Les récompenses sont divisées entre régulières et avancées. Les récompenses avancées ne peuvent être débloquées qu’en achetant des packs ou en débloquant des récompenses spéciales.|8. Vous pouvez également obtenir des récompenses en dépensant des Gemmes, mais cela vous coûtera plus qu’en vainquant les ennemis. Nous vous recommandons donc de participer à l’activité afin d’obtenir des récompenses !|9 Les récompenses doivent être collectées dans l’interface des récompenses !"
 ACTIVITY_BEACH_PROGRESS,{1} [c][e1405a]- {2}[-][/c] / {3}
 ACTIVITY_BEACH_TIPS5,Êtes-vous certain de vouloir utiliser {1} Gemmes pour acheter {2} attaques ?
 ACTIVITY_BEACH_TIPS6,Point Bonus + {1}
@@ -1794,7 +1794,7 @@ ACTIVITY_BEACH_TIPS10,Version Normale
 ACTIVITY_BEACH_TIPS11,Version Avancée
 ACTIVITY_BEACH_TIPS12,Liste des récompenses
 ACTIVITY_BEACH_TIPS13,Points：{1}/{2}
-ACTIVITY_BEACH_AWARDS_WINDOW_HELP,"1. Les points obtenus en battant un adversaire vont s’accumuler et augmenteront le niveau de récompense. Ce n’est que lorsque vous atteignez un certain niveau que vous pourrez recevoir des récompenses pour ce niveau.|2. Les récompenses sont classées comme régulières ou avancées. Les récompenses avancées doivent être déverrouillées à partir du pack surprise avant de pouvoir être collectées.|3. Vous pouvez également obtenir des niveaux de récompenses en dépensant des gemmes, mais cela vous coûtera plus de gemmes que de vaincre votre adversaire. Il est recommandé de jouer à ce jeu pour obtenir des points et des améliorations !|4. Les récompenses voient être collectées sur l’interface de la liste de récompenses."
+ACTIVITY_BEACH_AWARDS_WINDOW_HELP,"1. Les points obtenus en battant un adversaire vont s’accumuler et augmenteront le niveau de récompense. Ce n’est que lorsque vous atteignez un certain niveau que vous pourrez recevoir des récompenses pour ce niveau.|2. Les récompenses sont classées comme régulières ou avancées. Les récompenses avancées doivent être déverrouillées à partir du pack surprise avant de pouvoir être collectées.|3. Vous pouvez également obtenir des niveaux de récompenses en dépensant des Gemmes, mais cela vous coûtera plus de Gemmes que de vaincre votre adversaire. Il est recommandé de jouer à ce jeu pour obtenir des points et des améliorations !|4. Les récompenses voient être collectées sur l’interface de la liste de récompenses."
 ACTIVITY_BEACH_BUY_WINDOW_HELP,Règles d'achat
 ACTIVITY_BEACH_TIPS14,Montez au Niv.[c][d76500]{1}[-][/c] pour débloquer [c][d76500]{2}[-][/c] récompenses
 ACTIVITY_BEACH_TIPS15,Vous pouvez gagner des points en participant à cet événement. Acheter avec des Gemmes coûte très cher ! Êtes-vous certain de vouloir continuer ?
@@ -1847,7 +1847,7 @@ IMG_GUIDE_BEACH_7,Les niveaux de récompenses peuvent également être débloqu�
 IMG_GUIDE_BEACH_8,Vous devez acheter le pack dans [c][cc0011]Récompenses Spéciales[-][/c] afin de le débloquer.
 IMG_GUIDE_BEACH_9,Les récompenses devront être [c][cc0011]collectées[-][/c] manuellement
 IMG_GUIDE_BEACH_10,Obtenez des points dans l'événement Jeu de Plage pour débloquer les récompenses affichées dans les récompenses avancées !
-GOVERN_TEAM_RULE,"1. Vous ne pouvez inviter que vos amis dans votre Équipe de Sécurité, assemblez votre équipe pour défendre l’Académie !|2. Le Seigneur du Chaos s'actualisera tous les Lundi et Jeudi, et restera pendant 48 heures. Les récompenses seront calculées après que le compteur arrive à 0. |3. Quand un Seigneur du Chaos est présent, vous ne pouvez pas quitter votre équipe ou recruter de nouveaux membres, veuillez modifier votre équipe en période de repos. Appuyez sur le bouton rouge en bas à droite pour quitter l'équipe actuelle. Appuyez sur les avatars des joueurs de l'équipe pour les expulser si vous êtes le chef d'équipe. |4. Quand le compteur arrive à 0, si le Seigneur du Chaos a plus de 50%% de PV, votre niveau de sécurité descendra de 1, et vous recevrez une récompense de rétrogradation. Si le Seigneur du Chaos a moins de 50%% de PV mais n’est pas mort, vous recevrez une récompense de protection. Si le Seigneur du Chaos est vaincu, votre niveau de sécurité augmentera de 1 et vous obtiendrez une récompense de promotion.|5. Niveau de Sécurité : chaque joueur à son propre niveau de sécurité, en faisant équipe avec d'autres joueurs, le Seigneur du Chaos apparaîtra selon le niveau de sécurité le plus bas des joueurs de l’équipe.|6. Un Seigneur du Chaos apparaîtra avec 2 Chevaliers Noirs, vous infligerez 20%% de dégâts au Seigneur pour chaque Chevalier Noir tué.|7. Vous aurez deux chances de combattre le Seigneur du Chaos après son apparition. Chaque membre de l’équipe peut également acheter 1 chance supplémentaire avec des Gemmes à chaque apparition du boss, coopérez ensemble pour un meilleur résultat."
+GOVERN_TEAM_RULE,"1. Vous pouvez inviter d'autre joueurs dans le Tchat Serveurs dans votre Équipe de Sécurité, assemblez votre équipe pour défendre l’Académie !|2. Le Seigneur du Chaos s'actualisera tous les Lundi et Jeudi, et restera pendant 48 heures. Les récompenses seront calculées après que le compteur arrive à 0.|3. Quand un Seigneur du Chaos est présent, vous ne pouvez pas quitter votre équipe ou recruter de nouveaux membres, veuillez modifier votre équipe en période de repos. Appuyez sur le bouton rouge en bas à droite pour quitter l'équipe actuelle. Appuyez sur les avatars des joueurs de l'équipe pour les expulser si vous êtes le chef d'équipe. |4. Quand le compteur arrive à 0, si le Seigneur du Chaos a plus de 50%% de Pv, votre niveau de sécurité descendra de 1, et vous recevrez une récompense de rétrogradation. Si le Seigneur du Chaos a moins de 50%% de PV mais n’est pas mort, vous recevrez une récompense de protection. Si le Seigneur du Chaos est vaincu, votre niveau de sécurité augmentera de 1 et vous obtiendrez une récompense de promotion.|5. Niveau de Sécurité : chaque joueur à son propre niveau de sécurité, en faisant équipe avec d'autres joueurs, le Seigneur du Chaos apparaîtra selon le niveau de sécurité le plus bas des joueurs de l’équipe.|6. Un Seigneur du Chaos apparaîtra avec 2 Chevaliers Noirs, vous infligerez 20%% de dégâts au Seigneur pour chaque Chevalier Noir tué.|7. Vous aurez deux chances de combattre le Seigneur du Chaos après son apparition. Chaque membre de l’équipe peut également acheter 1 chance supplémentaire avec des Gemmes à chaque apparition du boss, coopérez ensemble pour un meilleur résultat."
 FORT_BTN_LABEL_5,Cauchemar
 TOWER_PRACTICE_WIN_TIPS,Formation Actuelle
 HERO_CHALLENGE_TITLE,Défi du Personnage
@@ -2193,7 +2193,7 @@ FRIEND_TEAM_BOSS_QUIT,Êtes-vous certain de vouloir quitter cette équipe ? (Vou
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_1,Restant
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_2,Restant
 FRIEND_TEAM_BOSS_CANNOT_BUY_TIMES,Vous ne pouvez pas l'acheter pendant la période de repos
-GAMBLE_REFRESH_CONFIRM,"Il faut {1} gemmes pour actualiser, voulez-vous continuer ?"
+GAMBLE_REFRESH_CONFIRM,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
 GAMBLE_REFRESH_NOT_SHOW_TODAY,Ne plus rappeler aujourd'hui
 ARENA_ALL_SERVER_TEXT_33,"Malheureusement, vous ne pouvez plus continuer à combattre"
 HOUSE_ITEM_TIPS_1,Type de Meuble
@@ -2263,7 +2263,7 @@ ACADEMY_ASSESSMENT_TEXT03,Nous accueillons tous ceux qui recherchent la liberté
 ACADEMY_ASSESSMENT_TEXT04,Seuls les gracieux pourront réussir notre test !
 ACADEMY_ASSESSMENT_TEXT05,La puissance est la seule chose qui nous importe !
 ACADEMY_ASSESSMENT_TEXT06,"N'aie pas peur des défis, la lumière te protégera des blessures !"
-ACADEMY_ASSESSMENT_WINDOW_HELP,"1. Vous ne pouvez qu'utiliser les Filles de la Maison correspondante dans l'Examen des Maisons.|2. Vous utiliserez 1 Ticket d'Admission afin de combattre une étape que vous n'avez pas encore vaincu. Les Tickets d'Admission que vous avez seront immédiatement remis à 10 chaque jour. Vous pouvez également dépenser des gemmes afin d'en acheter plus.|3. Vous recevrez des récompenses supplémentaires après avoir passé une nouvelle étape.|4. Vous pouvez faire un Raid dans les étapes déjà passées, chaque Raid nécessite un Certificat, le Raid sera toujours un succès.|5. Vous obtiendrez 2 Certificats gratuitement par jour. Après avoir réussi pour la première fois les étapes 9/18/30 dans l'examen d'une des Maisons, vous obtiendrez 1 Certificat en plus par jour. Maximum 3 de plus par jour|6. Vous pouvez également acheter jusqu'à 10 Certificats par jour avec des Gemmes. (Le prix d'achat augmentera progressivement. Si vous ne les avez pas tous utilisé le montant sera tout de même réinitialisé).|7. Les Tickets d'Admission et les Certificats seront réinitialisés à 00:00 (UTC/GMT 0) chaque jour."
+ACADEMY_ASSESSMENT_WINDOW_HELP,"1. Vous ne pouvez qu'utiliser les Filles de la Maison correspondante dans l'Examen des Maisons.|2. Vous utiliserez 1 Ticket d'Admission afin de combattre une étape que vous n'avez pas encore vaincu. Les Tickets d'Admission que vous avez seront immédiatement remis à 10 chaque jour. Vous pouvez également dépenser des Gemmes afin d'en acheter plus.|3. Vous recevrez des récompenses supplémentaires après avoir passé une nouvelle étape.|4. Vous pouvez faire un Raid dans les étapes déjà passées, chaque Raid nécessite un Certificat, le Raid sera toujours un succès.|5. Vous obtiendrez 2 Certificats gratuitement par jour. Après avoir réussi pour la première fois les étapes 9/18/30 dans l'examen d'une des Maisons, vous obtiendrez 1 Certificat en plus par jour. Maximum 3 de plus par jour|6. Vous pouvez également acheter jusqu'à 10 Certificats par jour avec des Gemmes. (Le prix d'achat augmentera progressivement. Si vous ne les avez pas tous utilisé le montant sera tout de même réinitialisé).|7. Les Tickets d'Admission et les Certificats seront réinitialisés à 00:00 (UTC/GMT 0) chaque jour."
 SCHOOL_PRACTICE_SWEEP_TICKETS_NOT_ENOUGH,Certificats Insuffisants
 ACADEMY_ASSESSMENT_BATTLE_FORMATION_WINDOW,Bataille
 SCHOOL_PRACTICE_CHALLENGE_TICKETS_NOT_ENOUGH,Ticket d'Admission Insuffisant
@@ -2344,9 +2344,9 @@ POTENTIALITY_BACK_TITLE,Inverser
 POTENTIALITY_BACK_TEXT01,Voir
 POTENTIALITY_BACK_TEXT02,Inverser
 PUPPET_PARTNER_NO_CLICK,"Les poupées ne peuvent pas être éveillées, libérées ou équipées avec un Skin."
-POTENTIALITY_BACK_WINDOW_HELP,"1. Toutes les Filles peuvent être Inversées (Y compris celles qui ont été libérées)|2. Les Poupées ne peuvent pas être Eveillées, Echangées, Inversées, Transférées, elles ne peuvent pas recevoir de cadeau ou placées dans le Dortoir.|3. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le sac.|4. Détails d'Inverse：|Fille 10 étoiles étant Inversée：2* Poupées de la même Maison 9 étoiles + 5 Filles 5 étoiles|Libérer 1 étant Inversée：3* Poupées de la même Maison 9 étoiles + 5 Filles 5 étoiles|Libérer 2 étant Inversée：4* Poupées de la même Maison 9 étoiles + 7 Filles 5 étoiles|Libérer 3 étant Inversée：1* Poupée de la même Maison 10 étoiles + 4* Poupées de la même Maison 9 étoiles + 7 Filles 5 étoiles|Libérer 4 étant Inversée：2* Poupée de la même Maison 10 étoiles + 4* Poupée de la même Maison 9 étoiles + 8 Filles 5 étoiles|Libérer 5 étant Inversée：3* Poupée de la même Maison 10 étoiles + 4* Poupée de la même Maison 9 étoiles + 9 Filles 5 étoiles|5. L'Inverse ne rendra pas les pièces utilisées pour augmenter le niveau de la Fille, les Jus d'EXP et les Plateaux Repas ne seront que partiellement rendus. Les Pièces et les Ciseaux de Cristal ne seront aussi que partiellement rendus selon le niveau du Cristal de la Fille Inversée.|6. L'intimité et le Serment seront rendus à l'une des Filles étant Inversée|7. Les Poupées 9/10 étoiles obtenues dans l'Inverse ne sont pas comptées dans l'Evénement Mensuel."
+POTENTIALITY_BACK_WINDOW_HELP,"1. Les Filles (1/2/3/4/5/7/8/9/10 étoile(s)) peuvent être Inversées.|2. Les Poupées ne peuvent pas être Éveillées, Échangées, Inversées, Transférées, elles ne peuvent pas recevoir de cadeau ou placées dans le Dortoir.|3. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le Sac.|4. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupées de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*2|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*2 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*3 + Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*9|5. Pour inverser une Fille 1-5 étoile(s), vous recevrez toutes les ressources utilisées.|Pour inverser une Fille 7-10 étoiles, l'Inverse ne rendra pas les Pièces d'Or utilisées pour augmenter le niveau de la Fille et les Jus d'EXP et les Plateaux Repas utilisés ne seront que partiellement rendus. Les Pièces d'Or et les Ciseaux de Cristal ne seront aussi que partiellement rendus selon le niveau du Cristal de la Fille Inversée.|6. La Faveur et le Serment seront rendus à l'une des Filles étant Inversée|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne sont pas comptées dans l'Evénement Mensuel."
 POTENTIALITY_BACK_TEXT03,"Cette action est irréversible, voulez-vous continuer ?"
-POTENTIALITY_BACK_ALTAR_TIPS,Les Poupées ne peuvent pas être transférées
+POTENTIALITY_BACK_ALTAR_TIP,Les Poupées ne peuvent pas être transférées
 SUBSCRIPTION_RECOVER,Restaurer
 SUBSCRIPTION_TIPS,"Après avoir choisi l'abonnement, il sera renouvelé automatiquement après que l'abonnement en cours ait expiré."
 SKIN_TEXT26,Aller à
@@ -2481,7 +2481,7 @@ GUILD_BOSS_TEXT02,Chance insuffisante !
 GUILD_FINAL_BOSS_WINDOW_HELP,"1. Chaque membre peut défier le Boss de Guilde deux fois par jour. Vous obtiendrez les récompenses à la fin de chaque bataille. Plus vous infligez de dégâts, plus vos récompenses seront importantes.|2. Le total des dégâts causé par les membres de la Guilde sera réinitialisé tous les vendredis à 00h00 de 01h00(UTC/GMT +1), les récompenses au classement des dégâts seront envoyées par courrier.|3. Les dégâts causés par les Serviteurs ne sont pas pris en compte. |4. Vous n'obtiendrez que les récompenses du classement de votre Guilde actuelle. |5. Après avoir quitté votre Guilde, vous ne pourrez plus défier le Boss de Guilde pendant un délai d'1 jour."
 GUILD_BOSS_TEXT03,Calcul hebdomaire des Récompenses：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Niveau {1}
-SUMMON_CONFIRM,"Il faut {2} gemmes pour utiliser {1} fois le Capsule, voulez-vous continuer ?"
+SUMMON_CONFIRM,"Il faut {2} Gemmes pour utiliser {1} fois le Capsule, voulez-vous continuer ?"
 TURING_TASK_LIMIT,Limite
 TURING_TASK_TEXT01,Terminez ces tâches pour obtenir les récompenses (envoyées dans votre Sac directement).
 WELFARE_TEXT01,Utilisez des Sceaux pour débloquer plus de récompenses !
@@ -2519,7 +2519,7 @@ ACTIVITY_SCRATCH_CARD_CONFIRM,Confirmer
 ACTIVITY_SCRATCH_CARD_MOVE,Gratter ici
 ACTIVITY_SCRATCH_CARD_RES_TITLE1,Récompenses supplémentaires
 ACTIVITY_SCRATCH_CARD_RES_TITLE2,Récompenses régulières
-ACTIVITY_SCRATCH_CARD_RES_TITLE3,Récompense
+ACTIVITY_SCRATCH_CARD_RES_TITLE3,Récompenses
 ACTIVITY_SCRATCH_CARD_ONE,Grattez 1 carte
 ACTIVITY_SCRATCH_CARD_TEN,Grattez 10 cartes
 ACTIVITY_SCRATCH_CARD_BUY_TITLE,Achetez des Cartes à gratter
@@ -2636,7 +2636,7 @@ HERO_CHALLENGE_TIPS6,Mode de Vitesse s'ouvre
 HERO_CHALLENGE_TIPS7,Bataille la plus rapide：
 HERO_CHALLENGE_TIPS8,Round
 FEEDBACK_WINDOW,Conseil
-FEEDBACK_TEXT01,"Vous pouvez soumettre vos conseils ici. \nNous examinerons toutes les suggestions et choisirons de les adopter. Vous recevrez 1,000 gemmes si vos conseils sont acceptés. La récompense sera envoyée à votre compte principal."
+FEEDBACK_TEXT01,"Vous pouvez soumettre vos conseils ici. \nNous examinerons toutes les suggestions et choisirons de les adopter. Vous recevrez 1,000 Gemmes si vos conseils sont acceptés. La récompense sera envoyée à votre compte principal."
 FEEDBACK_TEXT02,"Écrivez ici, 400 caractères maximum !"
 TEST_SERVER_PIC_MAX,Le nombre de photos dépasse la limite
 FEEDBACK_OVER_WORD,Le nombre de mots dépasse la limite
@@ -2869,7 +2869,7 @@ BATTLE_PASS_PURCHASE_WINDOW_TIP,"
 2. Le cadre d\'avatar et les engrenages peuvent être acquis dès l\'acquisition d\'un billet Première Classe, le reste des récompenses supplémentaires sont déblocables en fonction du Niveau de Vapeur; 
 3.Les récompenses supplémentaires ne sont obtenables qu\'une seule fois; 
 4.Après vous être fait surclasser en Classe Premium, vous pouvez quand même vous faire surclasser en Première Classe mais le prix total sera différent. Vous pouvez sélectionner le bouton ""?"" pour plus de détails."
-BATTLE_PASS_BUY_LEV_WINDOW_HELP,"1. Vous pouvez améliorer le niveau en utilisant des gemmes|2. Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer votre niveau de vapeur jusqu'au niveau 50 au maximum|3. Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration de niveau 2 semaines avant la fin du Festival à Vapeur."
+BATTLE_PASS_BUY_LEV_WINDOW_HELP,"1. Vous pouvez améliorer le niveau en utilisant des Gemmes|2. Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer votre niveau de vapeur jusqu'au niveau 50 au maximum|3. Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration de niveau 2 semaines avant la fin du Festival à Vapeur."
 BATTLE_PASS_BUY_LEV_PREAWARD,Récompenses
 BATTLE_PASS_BUY_LEV_TIP2,Ce sera moins cher durant les deux dernières semaines !
 BATTLE_PASS_SHOP_HELP,"1.Vous pouvez utiliser Noyau mécanique et Vis pour échanger des objets|2.Certains objets du Bureau d'échange Premium seront mis à jour à la période suivante. Dans le même temps, les Noyaux mécaniques obtenus dans la période actuelle continueront d'être conservés.Veuillez bien réfléchir aux quels objets pour échanger |3Les Vis obtenus dans la période actuelle seront décomptés à la fin de cette période,n'oubliez pas de les utiliser pour échanger."
@@ -3013,7 +3013,7 @@ FIXED_GAIN,Bonus Fixe
 ADDITIONAL_GAIN,Bonus Supp.
 NOMINU_COUNTDOWN,{1}J.{2}H.
 ACTIVITY_FOOD_FESTIVIAL_DESC,"Durant l'événement, vous pouvez échanger des Tamagoyaki, Crêpe et Mikan Wagashi contre de magnifiques récompenses."
-ACTIVITY_FOOD_FESTIVIAL_HELP,"1. Moyen d'obtention：|——Tamagoyaki：Obtenable dans le Butin d'Auto-Bataille, dans les Packs de Grande Valeur, dans les Packs Surprises, dans les Packs Surprises de Skin, dans Rassemblement et dans la Boutique；|——Mikan Wagashi：Obtenable dans les Packs de Grande Valeur, dans les Packs Surprises, dans les Packs Surprises de Skin, dans l'Examen d'admission et dans la Boutique；|——Crêpe：Obtenable dans le Butin d'Auto-Bataille, dans l'Examen d'admission et dans la Boutique.|2. Les matériaux d'événement ne seront plus obtenables lors des 24 dernières heures de l'événement. |3. Après l'événement, les objets inutilisés seront automatiquement convertis en pièces d'or. 1 Tamagoyaki contre 50K, 1 Mikan Wagashi contre 50K et 1 Crêpe contre 15K."
+ACTIVITY_FOOD_FESTIVIAL_HELP,"1. Moyen d'obtention：|——Tamagoyaki：Obtenable dans le Butin d'Auto-Bataille, dans les Packs de Grande Valeur, dans les Packs Surprises, dans les Packs Surprises de Skin et dans la Boutique；|——Mikan Wagashi：Obtenable dans les Packs de Grande Valeur, dans les Packs Surprises, dans les Pack Surprises de Skin, dans le Bonus de Distributeur et dans la Boutique；|——Crêpe：Obtenable dans le Butin d'Auto-Bataille, dans le Bonus de Distributeur et dans la Boutique.|2. Les matériaux d'événement ne seront plus obtenables lors des 24 dernières heures de l'événement. |3. Après l'événement, les objets inutilisés seront automatiquement convertis en pièces d'or. 1 Tamagoyaki contre 50K, 1 Mikan Wagashi contre 50K et 1 Crêpe contre 15K."
 ACTIVITY_FOOD_FESTIVAL_FOOD,Échange
 ACTIVITY_FOOD_FESTIVAL_STORE,Boutique
 ACTIVITY_FOOD_FESTIVAL_EXHCANGE_WINDOW,Nombre
@@ -3078,10 +3078,10 @@ ENERGY_NOT_ENOUGH,Énergie SP Insuffisante
 ACTIVITY_DRAGON_BOAT_PRICE_2,{1}{2}
 ACTIVITY_DRAGON_BOAT_HELP,"1. Vous pouvez choisir les ressources dont vous avez besoin en appuyant sur le bouton ""Sur Mesure"". |2. Si vous voulez modifier les ressources que vous avez choisi pour le pack, vous pouvez cliquer sur les boutons de droite pour faire des modifications. |3. Veuillez bien vérifier les contenus de Packs avant de confirmer."
 DATECHOOSEWINDOW_HELP,"1. L'événement dure 14 jours. Vous pouvez obtenir des Roses d'Amour à partir de cet événement et échanger des récompenses dans la boutique.|2.Il vous faut utiliser Cœur en cristal*1 ou Diamant d'Amour*1 pour avancer sur le plan.||Cœur en cristal：Vous pouvez avancer au hasard de 1 à 3 pas pour chaque utilisation. Vous pouvez obtenir Cœur en cristal*15 par courrier à 0h00 (GMT0), vous pouvez également obtenir cet objet par d'autres moyens.|Diamant d'Amour：vous pouvez choisir d'avancer de 1 à 3 pas pour chaque utilisation. Vous pouvez obtenir Diamant d'Amour*5 par courrier à 0h00 (GMT0), vous pouvez également obtenir cet objet par d'autres moyens.|3.Au début de l'événement, vous n'avez accès qu'à l'Académie Yume. Après avoir augmenté l'intimité des 3 Filles de l'événement, vous pourrez débloquer leurs scénarios exclusifs.|4.Une fois que l'intimité d'une Fille a atteint un certain niveau, le Défi du boss sera débloqué, vous serez récompensé en complétant les Défis correspondants.||Types d'événements|1. Batailles：Vous devrez terminer une bataille après être entré dans un bloc de bataille. Une fois le Défi réussi, de l'intimité, un bonus et des Roses d'Amour peuvent être obtenus; si le Défi échoue, seule de l'intimité peut être obtenue.|2.Rendez-vous：Vous débloquerez les histoires correspondantes et devrez faire des choix dans l'histoire après être entré dans un bloc ""Rendez-vous"", et vous ne pourrez plus vous déplacer avant d'avoir fait vos choix. Certains des choix vous coûteront des Pièces d’Amour pour vous permettre d'obtenir plus de récompenses (points d'intimité, bonus et Roses d'Amour), mais les récompenses dépendent de vos choix.|3.Quotidien：Vous débloquerez également certaines histoires et ferez des choix lorsque vous entrerez dans un bloc ""Quotidien"", et vous ne pourrez plus vous déplacer avant d'avoir fait vos choix. Mais ces blocs fournissent plutôt des Pièces d'Amour, et le montant des Pièces d'Amour est basé sur les choix que vous faites."
-ACTIVITY_DATE_BUYDICE,Acheter un Cœur en cristal avec des gemmes
+ACTIVITY_DATE_BUYDICE,Acheter un Cœur en cristal avec des Gemmes
 ACTIVITY_DATE_DICEBAG,Pack d'Amour
-ACTIVITY_DATE_BUYDICE_HELP,"1.Vous pouvez acheter les objets Cœur en cristal et Diamant d'Amour en utilisant des gemmes. Vous pouvez obtenir directement Cœur en cristal*3 et Diamant d'Amour*1 après les avoir achetés, vous pouvez les acheter 3 fois par jour.|2.Le coût d'achat dans la même journée augmente progressivement avec le nombre d'achats, respectivement 100/150/200 gemmes."
-ACTIVITY_DATE_DICEBAG_HELP,"1. Vous pouvez prendre un Pack d'Amour pour obtenir 1000 gemmes et 1000 EXP VIP immédiatement, ainsi que 12 Cœurs de Cristal et 4 Diamants d'Amour le jour suivant celui où vous prenez le Pack d'Amour si l'événement se finit dans plus de 7 jours.|2. Si l'événement se finit dans moins de 7 jours lorsque vous prenez le Pack, vous obtiendrez tout de même la quantité de Cœurs de Cristal et Diamants d'Amour équivalant à la quantité que vous auriez dû avoir en le prenant dès le premier jour de l'événement.|Exemple：Si vous prenez le Pack au 10ème jour de l'événement, vous obtiendrez 3 jours de ressources le jour même (Cœur de Cristal *36 & Diamant d'Amour *12). Le reste des ressources vous seront envoyées pendant les 4 jours suivants par courrier normalement."
+ACTIVITY_DATE_BUYDICE_HELP,"1.Vous pouvez acheter les objets Cœur en cristal et Diamant d'Amour en utilisant des Gemmes. Vous pouvez obtenir directement Cœur en cristal*3 et Diamant d'Amour*1 après les avoir achetés, vous pouvez les acheter 3 fois par jour.|2.Le coût d'achat dans la même journée augmente progressivement avec le nombre d'achats, respectivement 100/150/200 Gemmes."
+ACTIVITY_DATE_DICEBAG_HELP,"1. Vous pouvez prendre un Pack d'Amour pour obtenir 1000 Gemmes et 1000 EXP VIP immédiatement, ainsi que 12 Cœurs de Cristal et 4 Diamants d'Amour le jour suivant celui où vous prenez le Pack d'Amour si l'événement se finit dans plus de 7 jours.|2. Si l'événement se finit dans moins de 7 jours lorsque vous prenez le Pack, vous obtiendrez tout de même la quantité de Cœurs de Cristal et Diamants d'Amour équivalant à la quantité que vous auriez dû avoir en le prenant dès le premier jour de l'événement.|Exemple：Si vous prenez le Pack au 10ème jour de l'événement, vous obtiendrez 3 jours de ressources le jour même (Cœur de Cristal *36 & Diamant d'Amour *12). Le reste des ressources vous seront envoyées pendant les 4 jours suivants par courrier normalement."
 ACTIVITY_DATE_MEMORY_LABEL_1,1er contact intime
 ACTIVITY_DATE_MEMORY_LABEL_2,2ème contact intime
 ACTIVITY_DATE_MEMORY_LABEL_3,3ème contact intime
@@ -3100,7 +3100,7 @@ ACTIVITY_DATE_MAP_ENTRANCE_2,Attractions
 ACTIVITY_DATE_MAP_ENTRANCE_3,Théâtre
 ACTIVITY_DATE_MAP_ENTRANCE_4,Shopping
 ACTIVITY_DATE_MAP_ENTRANCE_5,Parc
-ACTIVITY_DATE_BUYDICE_TIPS,Êtes-vous sûr d'acheter Cœur en cristal *3 et Diamant d'Amour *1 avec {1} gemmes ?
+ACTIVITY_DATE_BUYDICE_TIPS,Êtes-vous sûr d'acheter Cœur en cristal *3 et Diamant d'Amour *1 avec {1} Gemmes ?
 BATTLE_PASS_SEASON_NUMBER_2,6e période
 ACTIVITY_DUANWU_SHUOMING,Veuillez choisir les choses dont vous avez besoin
 ACTIVITY_CANTMOVE_TIPS,Finissez l'activité actuelle(Cliquez sur le Personnage) pour continuer d'avancer
@@ -3144,7 +3144,7 @@ ACTIVITY_DATE_HELP_FAVOR_USE,Débloquer l'intimité
 ACTIVITY_FANPAI_DESC,1 Ticket de jeu pour retourner 1 fois
 ACTIVITY_FANPAI_DESC_1,Retourner 2 cartes identiques pour obtenir des récompenses.
 ACTIVITY_FANPAI_GOTO,Commencer
-ACTIVITY_FANPAI_HELP,"1. Pendant l'événement, vous pouvez utiliser un Ticket de jeu afin de retourner une carte et obtenir des récompenses. |2.Lorsque deux cartes identiques sont retournées (les cartes déjà utilisées pour former une paire ne sont pas comptabilisées) vous pouvez obtenir des récompenses. |3.Les Tickets de jeu peuvent être obtenus quotidiennement via le courrier ou avec des gemmes. |4.À la fin de l'événement, les Tickets de jeu non utilisés seront automatiquement convertis en Pièces d'or, chaque Ticket de jeu équivalant à 500k Pièces d'or, et vous seront envoyés par courrier."
+ACTIVITY_FANPAI_HELP,"1. Pendant l'événement, vous pouvez utiliser un Ticket de jeu afin de retourner une carte et obtenir des récompenses. |2.Lorsque deux cartes identiques sont retournées (les cartes déjà utilisées pour former une paire ne sont pas comptabilisées) vous pouvez obtenir des récompenses. |3.Les Tickets de jeu peuvent être obtenus quotidiennement via le courrier ou avec des Gemmes. |4.À la fin de l'événement, les Tickets de jeu non utilisés seront automatiquement convertis en Pièces d'or, chaque Ticket de jeu équivalant à 500k Pièces d'or, et vous seront envoyés par courrier."
 FANPAI_TICKETS_NOT_ENOUGH,Nombre insuffisant
 FANPAI_TICKETS_LIMITS,Limite d'achat atteinte
 ACTIVITY_SCHOOL_EXPLORE_COLLECTION_WINDOW,Progression
@@ -3167,8 +3167,8 @@ ACTIVITY_SCHOOL_EXPLORE_EVENT_TITLE,Événement d'Exploration
 GO_TO_PROPHET,Aller à Recruter
 GO_TO_WISHING_POOL,Distributeur
 ACTIVITY_SCHOOL_EXPLORE_FINISH_TITLE,Récompense d'Exploration
-ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,"Pendant l'événement, [c][c1003d]Tripler[-][/c] le nombre de gemmes !"
-ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,Remarque: cette première recharge de gemmes X3 n'est disponible que pendant l'événement. Cette offre prendra fin avec la fin de l'événement.
+ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,"Pendant l'événement, [c][c1003d]Tripler[-][/c] le nombre de Gemmes !"
+ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,Remarque: cette première recharge de Gemmes X3 n'est disponible que pendant l'événement. Cette offre prendra fin avec la fin de l'événement.
 GOTO_RECHARGE,Recharger
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME,Augmenter de {1} sec.
 ANNIVERSARY_CAKE_END_AWARD,Préavis
@@ -3182,7 +3182,7 @@ ACTIVITY_BIRTHDAY_COLOUR_EXHCANGE_WINDOW,Colorer
 ACTIVITY_BIRTHDAY_COLOUR_EXCHANGE_DESC,Choisir la couleur et le nombre
 ACTIVITY_BIRTHDAY_COLOUR_LIMIT_REACH,Cette couleur a atteint la limite
 ACTIVITY_BIRTHDAY_COLOUR_NEED_CHOOSE,Choisir une couleur
-ACTIVITY_BIRTHDAY_COLOUR_HELP,"1.Pendant l’événement, vous pouvez utiliser les accessoires de l’événement 「Peinture universelle」afin de colorer les puzzles.Tous les Senpais partagent la progression de coloration des puzzles.|2.Lors de la coloration, vous disposez de 8 couleurs, mais chaque puzzle ne possède que 3 couleurs correctes. Vous obtiendrez des récompenses selon la quantité d’accessoires utilisée. Plus les couleurs utilisées sont correctes, plus les récompenses sont meilleures.|3.Chaque couleur de puzzle a une limite maximum d’utilisation. Une couleur qui a atteint sa limite ne peut plus être sélectionnée. Lorsque les trois couleurs correctes d’une pièce du puzzle atteignent la limite maximum, la pièce du puzzle est alors colorée.|4.À chaque fois qu’un puzzle est terminé, la progression de coloration des puzzles de célébration augmente de 5%%. À chaque fois que la progression de coloration atteint un certain palier, les joueurs de tous les serveurs obtiendront unique correspondante au palier.|5.Les accessoires de l’événement「Peinture universelle」sont obtenables à partir de l’événement「Explorer le Campus」. Lorsque la progression de coloration atteint 100%%, les accessoires ne peuvent plus être utilisés et ne peuvent plus être échangés contre des gemmes.Vous pouvez les vendre après la fin de l’événement."
+ACTIVITY_BIRTHDAY_COLOUR_HELP,"1.Pendant l’événement, vous pouvez utiliser les accessoires de l’événement 「Peinture universelle」afin de colorer les puzzles.Tous les Senpais partagent la progression de coloration des puzzles.|2.Lors de la coloration, vous disposez de 8 couleurs, mais chaque puzzle ne possède que 3 couleurs correctes. Vous obtiendrez des récompenses selon la quantité d’accessoires utilisée. Plus les couleurs utilisées sont correctes, plus les récompenses sont meilleures.|3.Chaque couleur de puzzle a une limite maximum d’utilisation. Une couleur qui a atteint sa limite ne peut plus être sélectionnée. Lorsque les trois couleurs correctes d’une pièce du puzzle atteignent la limite maximum, la pièce du puzzle est alors colorée.|4.À chaque fois qu’un puzzle est terminé, la progression de coloration des puzzles de célébration augmente de 5%%. À chaque fois que la progression de coloration atteint un certain palier, les joueurs de tous les serveurs obtiendront unique correspondante au palier.|5.Les accessoires de l’événement「Peinture universelle」sont obtenables à partir de l’événement「Explorer le Campus」. Lorsque la progression de coloration atteint 100%%, les accessoires ne peuvent plus être utilisés et ne peuvent plus être échangés contre des Gemmes.Vous pouvez les vendre après la fin de l’événement."
 ACTIVITY_2ND_LETTER_1,À {1}
 ACTIVITY_2ND_LETTER_2,Cher senpai：\n   Le temps est passé si vite ! Cela fait déjà deux ans que l'Académie Yume a ouvert ses portes ! Pour célébrer cet événement Yuki a préparé pour toi un cadeau très spécial ! N'oublie pas de le collecter !
 MAX_ROUNDS,Après le\n Tour {1}
@@ -3207,7 +3207,7 @@ BATTLE_PASS_PURCHASE_JPTIPS2,Récompenses déblocables
 PARTNER_LIST_FULL_WITHOUT_BUY_LIMIT,La liste des Filles est pleine. Vous pouvez augmenter le nombre d'emplacement disponible en augmentant votre niveau VIP ou transférer certaines Filles. Voulez-vous aller transférer les Filles ?
 GO_TO_TRANSFER,Transférer
 ACTIVITY_SCHOOL_EXPLORE_END_TIP,L'événement se terminera. Vous ne pouvez plus explorer ce lieu.
-WEAPON_LVUP_LOCK,"Bloquer les attributs actuels en utilisant des gemmes, voulez-vous continuer ?"
+WEAPON_LVUP_LOCK,"Bloquer les attributs actuels en utilisant des Gemmes, voulez-vous continuer ?"
 SLOT_SORT10,Favorites
 ACTIVITY_BIRTHDAY_INCR_COLOR_TRUE,"C'est la bonne couleur, continue senpai !"
 ACTIVITY_BIRTHDAY_INCR_COLOR_FALSE,"C'est la mauvaise couleur Senpai, essaie une autre couleur !"
@@ -3391,12 +3391,12 @@ SPIRIT_HAS_WORK,Cette Fille a fini la Mission {1}
 SPIRIT_NEED_FILL_UP_PARTNER,Veuillez remplir l'espace pour commencer
 SPIRIT_NOT_ENOUGH,{1} insuffisant(e)
 SPIRIT_NOT_ENOUGH_AND_BUY,"{1} insuffisant(e), voulez-vous en acheter ?"
-SPIRIT_REFRESH_COST,Dépensez {1} gemmes pour actualiser ?
+SPIRIT_REFRESH_COST,Dépensez {1} Gemmes pour actualiser ?
 SPIRIT_FIGHT,Attaquer
 SPIRIT_RECOMMEND,Recommander
 SPIRIT_MISC,Explorer l'Âme\nDéfier vos limites !
 SPIRIT_DUNGEON_WINDOW_HELP,"1. Vous pourrez débloquer les Missions d'Âme au Niveau correspondant en atteignant un certain valeur de Puissance d'Âme. |2. Vous pouvez accepter plusieurs Missions en même temps, mais une seule tâche peut être effectuée à la fois. |3.Chaque Mission a sa propre Durée de la Mission. Vous obtiendrez les récompenses en remplissant les Missions. |4.Le montant des tickets achetables dépend de votre niveau de VIP. |5.La Tâche est actualisée tous les jours à 00:00 (UTC/GMT +0). |6. Chaque Fille ne peut que finir une Mission chaque jour."
-SPIRIT_DUNGEON_TASK_BEGIN_WINDOW_HELP,"1. Utiliser les Filles recommandées pour augmenter la Chance de Mission. |2. Plus vous avez la Chance, plus vous obtiendrez les récompenses après que les missions sont finis. |3. Vous pouvez mettre les mêmes Filles dans votre équipe. |4. Les Filles recommandées se rafraîchira automatiquement après un certain temps. Vous pouvez aussi actualiser les Filles recommandées en dépensant les gemmes."
+SPIRIT_DUNGEON_TASK_BEGIN_WINDOW_HELP,"1. Utiliser les Filles recommandées pour augmenter la Chance de Mission. |2. Plus vous avez la Chance, plus vous obtiendrez les récompenses après que les missions sont finis. |3. Vous pouvez mettre les mêmes Filles dans votre équipe. |4. Les Filles recommandées se rafraîchira automatiquement après un certain temps. Vous pouvez aussi actualiser les Filles recommandées en dépensant les Gemmes."
 SPIRIT_STAGE_LOCK_TIPS,Débloquer au le Niv.{1} et en atteingnant {2} Puissance d'Âme
 SPIRIT_STAGE_REWARD_TITLE,Récompense de Mission
 SHOP_MAP_TEXT05,Antiquaire
@@ -3474,7 +3474,7 @@ PUT_OUT_AWARD_ACCORDING_TO_SCORE,Vous recevrez des récompenses différentes en 
 NOW_SCORE,Points actuels：
 NOW_AWARD_ACCORDING_TO_SCORE,Récompense Actuelle :
 ACADEMY_ASSESSMENT_FIRST_PASS_AWARD,1ère Récompense : 
-ACTIVITY_RED_RIDING_HOOD_HELP,"1. Vous pouvez choisir un des paliers différents de l'événement Panier du Chaperon Rouge et l'acheter. Vous pouvez obtenir les objets que vous avez choisi une fois par jour pendant sept jours après l'achat. |2.Après l'achat, vous obtiendrez immédiatement les Récompenses Quotidiennes correspondant au jour de l'événement. Les récompenses seront envoyées par courrier."
+ACTIVITY_RED_RIDING_HOOD_HELP,"1. Vous pouvez choisir un des paliers différents de l'événement Panier du Chaperon Rouge et l'acheter.|2. Vous pouvez obtenir les objets que vous avez choisi une fois par jour pendant sept jours après l'achat. |3. Après l'achat, vous obtiendrez immédiatement les Récompenses Quotidiennes correspondant au jour de l'événement.|4. Les récompenses vous seront envoyées par courrier."
 ACTIVITY_RED_RIDING_HOOD_TIP,"Achat effectué, veuillez vérifier votre Courrier"
 FAIRY_TALE_MISSION_TIPS1,"Aucune case de ce genre, essayez sur une autre carte"
 FAIRY_TALE_MISSION_TIPS2,"Veuillez aller sur la carte ""Tourbillon Fantastique"" pour compléter cette tâche"
@@ -3491,7 +3491,7 @@ TREASURE_RESERVE,{1}(optionnel）
 TREASURE_RESERVE_NUM,{1}-Cristal Optionnel
 TREASURE_UNLOCK,Débloquer
 TREASURE_NOT_UNLOCK,Bloqué
-TREASURE_UNLOCK_HELP,Utiliser {1} gemmes pour débloquer l'emplacement de cristal {2} ?
+TREASURE_UNLOCK_HELP,Utiliser {1} Gemmes pour débloquer l'emplacement de cristal {2} ?
 TREASURE_COVER_TITLE,Remplacer le critstal
 TREASURE_COVER,Remplacer
 TREASURE_COVER_HELP,Le remplacement est irréversible. Voulez-vous continuer?
@@ -3508,7 +3508,7 @@ WISH_GACHA_TEXT8,x{1}
 MONTH_CARD_VIP,+{1} VIP EXP
 MONTH_CARD_TIP_1,Obtenez {1} Gemmes immédiatement après l'achat
 MONTH_CARD_TIP_2,Recevez {1} Gemmes tous les jours pendant 30 jours
-ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Senpai, la nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et Senpai ne peut qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et Senpai obtiendra les récompenses correspondantes.|3. Chaque Examen des Maisons a 60 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et Senpai aura 10 Tickets d'Admission chaque jour. Tu peux également utiliser des gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Terminer un défi avec succès pour pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Senpai recevra 2 Certificats chaque jour. Lorsque Senpai terminera avec succès le défi 9/18/30 d'une Maison pour la première fois, il obtiendra 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple: une fois que Senpai a réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, il obtiendra 3 Certificats chaque jour pour les raids).|8. Senpai peut utiliser des gemmes pour acheter des Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60. Lors de la journée d'affichage des résultats, les récompenses seront émises par courrier et les points obtenus seront réinitialisés. |11. Les Senpais avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire: un cadre d'avatar de 14 jours; s'il y a plusieurs Senpais à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 Senpais max). Les récompenses seront envoyées par courrier."
+ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Senpai, la nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et Senpai ne peut qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et Senpai obtiendra les récompenses correspondantes.|3. Chaque Examen des Maisons a 60 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et Senpai aura 10 Tickets d'Admission chaque jour. Tu peux également utiliser des Gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Terminer un défi avec succès pour pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Senpai recevra 2 Certificats chaque jour. Lorsque Senpai terminera avec succès le défi 9/18/30 d'une Maison pour la première fois, il obtiendra 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple: une fois que Senpai a réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, il obtiendra 3 Certificats chaque jour pour les raids).|8. Senpai peut utiliser des Gemmes pour acheter des Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60. Lors de la journée d'affichage des résultats, les récompenses seront émises par courrier et les points obtenus seront réinitialisés. |11. Les Senpais avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire: un cadre d'avatar de 14 jours; s'il y a plusieurs Senpais à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 Senpais max). Les récompenses seront envoyées par courrier."
 WISH_GACHA_NUM1,100
 WISH_GACHA_NUM2,200
 WISH_GACHA_NUM3,300
@@ -3522,7 +3522,7 @@ PARTNER_LOCK_TIP_1,Fille Verrouillée !
 PARTNER_LOCK_TIP_2,Fille Déverrouillée !
 ACTIVITY_CRYSTAL_GIFT_TEXT,Le Jade peut être amélioré ! Ces packs sont là pour t'aider !
 ALTAR_6UP_LIMIT,Vous ne pouvez plus transférer la Fille plus de 6 étoiles
-TREASURE_HELP,1. Le Cristal Optionnel peut être enregistré par un cristal que vous venez d'échanger. |2.Chaque Fille peut avoir 2 Cristaux Optionnels et vous pouvez utiliser des gemmes pour les débloquer. |3.Vous ne pouvez pas améliorer le Cristal Optionnel ni changer ses attributs.
+TREASURE_HELP,1. Le Cristal Optionnel peut être enregistré par un cristal que vous venez d'échanger. |2.Chaque Fille peut avoir 2 Cristaux Optionnels et vous pouvez utiliser des Gemmes pour les débloquer. |3.Vous ne pouvez pas améliorer le Cristal Optionnel ni changer ses attributs.
 IS_IN_BATTLE_FORMATION,"Échec, cette Fille est dans l'équipe !"
 TOWER_FUND_GIFT_BAG_DESC,Obtenez l'Investissement de Test pour récupérer plus de récompenses ! \nRécompenses Totales ：
 TOWER_FUND_GIFT_BAG_LIMIT_TIPS,Vous devez avoir obtenu l'Investissement du palier précédent pour l'obtenir !
@@ -3533,12 +3533,12 @@ NEED_DEFFORMATION,"Votre Équipe de Défense n'est pas encore prête, Voulez-vou
 LIMIT_BUY_TIMES,Limite d'achat： {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent sur le Campus, vous pouvez les essayer dans différentes compositions."
 GUILD_KICK_TIPS,Êtes-vous sûr d'exclure ce joueur ?
-ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Terminer un défi avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous terminerez avec succès le défi 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60; 6 points du niveau 61-80; 8 points du niveau 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Les joueurs avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire : un Cadre d'Avatar de 14 jours; s'il y a plusieurs joueurs à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 joueurs au maximum)."
+ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des Gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Terminer un défi avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous terminerez avec succès le défi 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des Gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60; 6 points du niveau 61-80; 8 points du niveau 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Les joueurs avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire : un Cadre d'Avatar de 14 jours; s'il y a plusieurs joueurs à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 joueurs au maximum)."
 GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir ces nouvelles Filles augmente avec chaque [c][DE512B]100[-][/c] tirages de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression est réinitialisée dès son obtention."
 GACHA_GUARANTEE_UP,Possibilité UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Tentative restante : {1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Tentative insuffisante !
-ACTIVITY_ICE_SECRET_BOSS_TEXT03,Récompenses
+ACTIVITY_ICE_SECRET_BOSS_TEXT03,Récompense
 ACTIVITY_ICE_SECRET_BOSS_TEXT04,Récompenses basées sur les dégâts infligés
 ACTIVITY_ICE_SECRET_BOSS_TEXT05,Dégâts
 ACTIVITY_ICE_SECRET_BOSS_HELP,"1. Vous disposez d'1 tentative par jour.\n2. Une fois chaque bataille terminée, vous aurez la possibilité d'obtenir des ""Baguette Magique"" supplémentaires en fonction des dégâts infligés. Plus les dégâts sont élevés, plus la récompense est importante."
@@ -3714,7 +3714,7 @@ ACTIVITY_LIMIT_GACHA_HELP,"1. Durant l'événement, utilisez les Pièces Tempore
 ACTIVITY_LIMIT_CALL_BOSS_CHALLENGE,Chances de Défi：
 BLACK_FRIDAY_GIFTBAG_DISCOUNT,90%% OFF
 BLACK_FRIDAY_GIFTBAG_PRICE1,€549.99
-BLACK_FRIDAY_GIFTBAG_PRICE2,Prix d'Origine: €1099.99
+BLACK_FRIDAY_GIFTBAG_PRICE2,Prix d'Origine : €1099.99
 GACHA_LIMIT_CALL_TEXT_1,[c][fee19e]{2}[-][/c] garantie après avoir tiré [c][fee19e]{1}[-][/c] fois
 GACHA_LIMIT_BOSS_HELP,"1. Durant l'événement, vous disposez de 2 tentatives par jour. |2. Une fois chaque bataille terminée, vous obtiendrez des ""Rosées"" et des Pièce d'Or en fonction des dégâts infligés. Plus les dégâts sont élevés, plus la récompense est importante."
 GACHA_LIMIT_EXCHANGE_HELP,"1. Durant l'événement, échangez vos 「Coupons Spéciaux」 contre des récompenses. |2. Après avoir échangé toutes les récompenses sur la page actuelle, vous pouvez déverrouiller la page suivante. |3. Obtention des 「Coupons Spéciaux」 : Recrutement en Temps Limité, Échanges de Récompenses, Entraînement de Shina. |4. Après l'événement, les「Coupons Spéciaux」 inutilisés seront automatiquement convertis en pièces d'or, un「Coupon Spécial」pour 10k et distribués par courrier."
@@ -3730,7 +3730,7 @@ NEW_RECHARGE_TEXT01,"Grâce à votre 1ère recharge ([c][dd7324]peu importe le m
 NEW_RECHARGE_TEXT02,Experte Assassin
 NEW_RECHARGE_TEXT03,Aperçu
 NEW_RECHARGE_TEXT04,Intelligence Artificielle—Turin\nMastodonte Intrépide
-NEW_RECHARGE_TEXT05,Prix d'Origine: €74.99
+NEW_RECHARGE_TEXT05,Prix d'Origine : €74.99
 NEW_RECHARGE_TEXT06,6400%%
 NEW_RECHARGE_TEXT07,"Après avoir obtenu le Plan de Récompense de Hottie, vous recevrez des Gemmes lorsque vous atteignez le niveau requis !"
 NEW_RECHARGE_TEXT08,Acheter
@@ -3764,7 +3764,7 @@ ALTAR_AUTO_TEXT03,Transférer
 ALTAR_AUTO_TEXT04,Êtes-vous sûr de vouloir transférer ces {1} Filles 3 étoiles ?
 ALTAR_AUTO_TEXT05,Transfert en cours...
 ALTAR_AUTO_TEXT01,Aucune Fille à transférer
-ACTIVITY_YEAR_FUND_HELP,"1.Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2.Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3.Après l'avoir acheté, vous pouvez obtenir des gemmes immédiatement et collecter les récompenses pendant les 30 jours suivants.|4.Vous pouvez également recollecter les récompenses non collectées en utilisant des gemmes après l'avoir acheté."
+ACTIVITY_YEAR_FUND_HELP,"1. Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2. Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3. Après l'avoir acheté, vous pouvez obtenir des Gemmes immédiatement et collecter les récompenses pendant les 30 jours suivants.|4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes après l'avoir acheté."
 ACTIVITY_YEAR_FUND_NOTICE_TEXT01,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
 ACTIVITY_DOLL_BUY,Échange de Poupées
 ACTIVITY_DOLL_EXCHANGE_TITLE,Fragmentation de Poupées
@@ -3875,14 +3875,14 @@ ACTIVITY_LAFULI_DRIFT_POINT,Collecter Branche de Corail *{1}
 ACTIVITY_LAFULI_DRIFT_SPOILS,Récompenses\nObtenues
 ARTIFACT_OPEN_TIPS,Ouvrir dans :
 GROPUP_GIFTBAG_TIPS,Intelligence Artificielle—Turin\nPack de Personnalisation de Turin
-GIFTBAG_TURIN_PRICE1,Prix d'Origine: €219.99
-GIFTBAG_TURIN_PRICE2,Prix d'Origine: €319.99
+GIFTBAG_TURIN_PRICE1,Prix d'Origine : €219.99
+GIFTBAG_TURIN_PRICE2,Prix d'Origine : €319.99
 OLD_SCHOLL_BUFF_NAME3,Bonus Avancé
 EX_SKILL2,Compétences\nd'Élite
 ACTIVITY_MISSION_POINT_TEXT01,Collection\nd'Antiquités
 ACTIVITY_MISSION_POINT_TEXT02,Collection d'Antiquités
 ACTIVITY_MISSION_POINT_TEXT03,Terminez les Quêtes Journalières pour obtenir des Points d'Antiquités pour obtenir des Récompenses. Vous pouvez obtenir des Récompenses Supplémentaires (Suppléments) en achetant la Collection d'Antiquités !
-ACTIVITY_MISSION_POINT_TEXT04,"Règles|1. Durant l'événement, compléter 1 Quête Journalière vous donnera 1 Point d'Antiquités. Lorsque vos Points d'Antiquités remplissent les conditions, vous recevrez des récompenses envoyées par courrier. |2. Vous n'obtiendrez pas de Point d'Antiquités en complétant la quête ""Terminer toutes les Quêtes Journalières"". |3. Après l'achat de Collection d'Antiquités, vous pouvez immédiatement récupérer les récompenses supplémentaires précédentes. |4. Vous pouvez également recollecter les récompenses non collectées en utilisant des gemmes. |5. À partir du premier jour et jusqu'à la veille de la fin de l'événement, tous les Points d'Antiquités manquants peuvent être obtenus contre 5 Gemmes pour 1 Point d'Antiquités."
+ACTIVITY_MISSION_POINT_TEXT04,"Règles|1. Durant l'événement, compléter 1 Quête Journalière vous donnera 1 Point d'Antiquités. Lorsque vos Points d'Antiquités remplissent les conditions, vous recevrez des récompenses envoyées par courrier. |2. Vous n'obtiendrez pas de Point d'Antiquités en complétant la quête ""Terminer toutes les Quêtes Journalières"". |3. Après l'achat de Collection d'Antiquités, vous pouvez immédiatement récupérer les récompenses supplémentaires précédentes. |4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes. |5. À partir du premier jour et jusqu'à la veille de la fin de l'événement, tous les Points d'Antiquités manquants peuvent être obtenus contre 5 Gemmes pour 1 Point d'Antiquités."
 ACTIVITY_MISSION_POINT_TEXT05,Points d'Antiquités
 ACTIVITY_MISSION_POINT_TEXT06,Points
 ACTIVITY_MISSION_POINT_TEXT07,Récompense\nBasique
@@ -3893,7 +3893,7 @@ ACTIVITY_MISSION_POINT_TEXT11,Voulez-vous dépenser {1} Gemmes pour recollecter 
 ACTIVITY_MISSION_POINT_TEXT12,Aucun Point d'Antiquités collectable
 SLOT_INCREASE_TITLE,"La liste des Filles est pleine. Pour augmenter le nombre d'emplacement disponible, vous pouvez :"
 SLOT_INCREASE_TEXT0,Transférer
-SLOT_INCREASE_TEXT1,Acheter des places supplémentaires
+SLOT_INCREASE_TEXT1,Acheter des emplacements
 SLOT_INCREASE_TEXT2,Graduer
 SLOT_INCREASE_TEXT3,Augmenter votre niveau de VIP
 NEWBEE_10GACHA_HELP01,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 1 Qualification pour obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Vous avez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *1, Fille 5 étoiles *4 et Fille 4 étoiles *5. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments de Filles vous seront envoyés par courrier."
@@ -3904,7 +3904,7 @@ NEWBEE_10GACHA_TEXT1,Fille 5 étoiles
 NEWBEE_10GACHA_TEXT2,Fille 4 étoiles
 EX_SKILL_TIPS_TEXT,Aucune Compétence d'Élite
 ACTIVITY_MISSION_POINT_TEXT13,Recollecter
-ACTIVITY_NEWBEE_FUND_DES,Récupérez les récompenses chaque jour pendant 30 jours après l'achat. Collectez les récompenses non récupérées contre des gemmes.
+ACTIVITY_NEWBEE_FUND_DES,Récupérez les récompenses chaque jour pendant 30 jours après l'achat. Collectez les récompenses non récupérées contre des Gemmes.
 LARGE_ACTIVITY_NEWBEE_TEXT,Capsules\nde Débutant
 ACTIVITY_MISSION_POINT_TEXT14,Commencez\nmaintenant
 ACTIVITY_MISSION_POINT_TEXT15,Touchez ici pour entrer l'Antiquaire
@@ -4084,7 +4084,7 @@ ACTIVITY_SPROUTS_NEW_TEXT03,Récompense
 ACTIVITY_SPROUTS_NEW_TEXT04,Obtenir Vanessa
 ACTIVITY_SPROUTS_NEW_TEXT05,Obtenir Vanessa {1} fois
 ACTIVITY_SPROUTS_NEW_HELP,1. Vous obtiendrez Fleurette*10 au 10ème arrosage.|2. Vous obtiendrez Fragment de Vanessa*50 après avoir collecté Fleurette*80. (Répétable)
-ACTIVITY_NEWBEE_FUND_HELP,"1.Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2.Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3.Après l'avoir acheté, vous pouvez obtenir des gemmes immédiatement et collecter les récompenses pendant les 20 jours suivants.|4.Vous pouvez également recollecter les récompenses non collectées en utilisant des gemmes après l'avoir acheté."
+ACTIVITY_NEWBEE_FUND_HELP,"1. Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2. Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3. Après l'avoir acheté, vous pouvez obtenir des Gemmes immédiatement et collecter les récompenses pendant les 20 jours suivants.|4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes après l'avoir acheté."
 ACTIVITY_NEWBEE_FUND_TEXT01,"Obtenez Investissement de Débutant, et collectez des récompenses de grandes valeurs pendant 20 jours !"
 ACTIVITY_NEWBEE_FUND_TEXT02,Collectez des récompenses quotidiennes en obtenant Investissement de Débutant !
 HOUSE_SETTING,Régler
@@ -4150,7 +4150,7 @@ BP_PURCHASE_WINDOW_TIP,"
 2. Le cadre d\'avatar peut être acquis dès l\'achat du Livre Collector, le reste des récompenses supplémentaires seront déblocables en fonction du Niveau de votre Livre.
 3. Les récompenses supplémentaires ne sont obtenables qu\'une seule fois.
 4. Après avoir acquis Livre Rare, vous pourrez toujours acquérir Livre Collector, néanmoins le prix total différera. Vous pouvez cliquer sur le bouton ""?"" pour plus de détails."
-BP_BUY_LEV_WINDOW_HELP,"1.Vous pouvez améliorer le niveau en utilisant des gemmes|2.Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer le niveau de votre Livre jusqu'au niveau 50 au maximum|3.Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration du niveau des Livres, 2 semaines avant la fin de la période."
+BP_BUY_LEV_WINDOW_HELP,"1.Vous pouvez améliorer le niveau en utilisant des Gemmes|2.Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer le niveau de votre Livre jusqu'au niveau 50 au maximum|3.Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration du niveau des Livres, 2 semaines avant la fin de la période."
 BP_BUY_LEV_PREAWARD,Récompenses
 BP_BUY_LEV_TIP2,Ce sera moins onéreux durant les deux dernières semaines !
 BP_SHOP_HELP,"1. Vous pouvez utiliser les Autocollants et les Feuilles de Cristal pour échanger des objets|2. Vous pouvez utiliser les Autocollants pour échanger des récompenses dans Page Florale.|3. Certains objets de la Bibliothèque d'Échange seront mis à jour à la période suivante. D'ici-là, les Feuilles de Cristal obtenues dans la période actuelle seront conservées.Veuillez bien choisir les objets que vous voulez échanger. |4. Les Autocollants obtenus dans la période actuelle seront décomptés à la fin de cette période, n'oubliez pas de les échanger."
@@ -4280,14 +4280,14 @@ STAGE_ACHIEVEMENT_ENTRANCE_TEXT02,Collectable
 ACTIVITY_LAFULI_BRANCH_TEXT,"Durant l'événement, collectez les Branches de Corail pour récupérer les récompenses."
 ACTIVITY_ICE_SECRET_ITEM_TIPS,Appuyez longuement sur l'icône pour plus de détails
 ACTIVITY_TIME_GAMBLE_HELP,"
-1. Durant cet événement, utilisez des Circuits Magiques pour activer l\'horloge et récupérer les récompenses. |2. Vous pouvez actualiser les récompenses gratuitement 1 fois par jour, et également en utilisant des gemmes. Touchez la loupe pour savoir plus de détails.(La probabilité d\'obtenir les objets est la même au sein de chaque section, aucune possibilité d\'avoir deux mêmes objets sur l\'horloge)|3. Vous obtiendrez obligatoirement des fragments de Lys à chaque 50e tirage. Après avoir obtenu les fragments de Lys, les récompenses seront automatiquement actualisées.|4. Chaque fois que vous activez l\'horloge, vous obtiendrez une certaine quantité de Pépite Temporelle que vous pourrez échanger contre des récompenses dans la Boutique (au coin en haut à droit de l\'interface).Probabilité d\'obtention de Pépite Temporelle : 
+1. Durant cet événement, utilisez des Circuits Magiques pour activer l\'horloge et récupérer les récompenses. |2. Vous pouvez actualiser les récompenses gratuitement 1 fois par jour, et également en utilisant des Gemmes. Touchez la loupe pour savoir plus de détails.(La probabilité d\'obtenir les objets est la même au sein de chaque section, aucune possibilité d\'avoir deux mêmes objets sur l\'horloge)|3. Vous obtiendrez obligatoirement des fragments de Lys à chaque 50e tirage. Après avoir obtenu les fragments de Lys, les récompenses seront automatiquement actualisées.|4. Chaque fois que vous activez l\'horloge, vous obtiendrez une certaine quantité de Pépite Temporelle que vous pourrez échanger contre des récompenses dans la Boutique (au coin en haut à droit de l\'interface).Probabilité d\'obtention de Pépite Temporelle : 
 Pépite Temporelle*4-40%%
 Pépite Temporelle*5-30%%
 Pépite Temporelle*6-20%%
 Pépite Temporelle*7-10%%|5. À la fin de l\'événement, les objets non utilisés seront convertis en pièce d\'or, 1 Circuit Magique contre 600K Pièces d\'or et 1 Pépite Temporelle contre 50K Pièces d\'or."
 ACTIVITY_TIME_GAMBLE_NUM,[c][ffffff]Fragments de Lys garantis après avoir tiré[-][/c] [c][ffd235]{1}[-][/c] [c][ffffff]fois[-][/c]
 ACTIVITY_TIME_REFRESH_FREE,Voulez-vous actualiser les récompenses gratuitement ?\nChance(s) Gratuite(s) Restante(s) aujourd'hui：{1}
-ACTIVITY_TIME_REFRESH_GEM,"Il faut {1} gemmes pour actualiser, voulez-vous continuer ?"
+ACTIVITY_TIME_REFRESH_GEM,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
 ACTIVITY_TIME_REFRESH_ITEM,Changement après actualisation
 ACTIVITY_TIME_MISSION_HELP,"1. Durant cet événément, de nouvelles tâches seront débloquées chaque jour.|2. Obtenez des Points en terminant les tâches, et récupérez ensuite les récompenses de chaque palier.|3. Le progrès des tâches de cet événement sera cumulé tout au long de l'événement. (Exemple : Il est possible que lors du premier jour vous ayez déjà complétez une tâche d'un des jours suivants qui sera donc débloqué plus tard, arrivé à ce jour-là votre tâche sera déjà comptabilisée comme étant complétée, ainsi vous aurez juste à la Collecter.)"
 ACTIVITY_TIME_MISSION_DAY,Jour {1}
@@ -4410,7 +4410,7 @@ SPACE_EXPLORE_SUPPLY_TEXT02,Grande\nValeur
 SPACE_EXPLORE_PREPARE_TEXT01,"Complétez les tâches pour obtenir des récompenses, les tâches hebdo. seront réinitialisées après une semaine."
 SPACE_EXPLORE_PREPARE_TEXT02,Journalière
 SPACE_EXPLORE_PREPARE_TEXT03,Hebdomaire
-SPACE_EXPLORE_HELP_03,"1. Durant cet événement, vous utiliserez de nouvelles Capsules - Capsule Insolite, afin de recruter des Filles Insolites. (uniquement disponibles dans l'Aventure Insolite)|2. Les Filles Insolites sont classées selon leurs rangs SSR, SR et R, plus le rang de la Fille est haut plus le niveau maximal de la Fille sera élevé.|3. Possibilité d'obtention des Filles Insolites：|   SSR：2%%|   SR：15%%|   R：83%%. |4. Une Fille Insolite de rang SSR est garantie après 49 Capsules Insolites tirées sans avoir obtenu de Fille de rang SSR.|5. En tirant une Fille de rang SSR vous obtiendrez en priorité les Filles que vous ne possédez pas encore.|6. Lorsque vous tirez une Fille Insolite que vous possédez déjà, elle sera automatiquement convertie en Âme Insolite. La convertion en âme dépend du rang de la Fille Insolite tirée：|SSR： Âme Insolite*100|SR：Âme Insolite*15|R：Âme Insolite*3.|7. Les Âmes Insolites peuvent être utilisées pour améliorer le niveau des Filles. Vous pouvez également inverser une Fille Insolite en utilisant des gemmes pour récupérer les Âmes Insolites utilisées.|8. Après la fin de l'événement, les Âmes Insolites disparaîtront et les Capsules Insolites non utilisées seront converties en Pièces d'Or, une Capsule Insolite contre 200k."
+SPACE_EXPLORE_HELP_03,"1. Durant cet événement, vous utiliserez de nouvelles Capsules - Capsule Insolite, afin de recruter des Filles Insolites. (uniquement disponibles dans l'Aventure Insolite)|2. Les Filles Insolites sont classées selon leurs rangs SSR, SR et R, plus le rang de la Fille est haut plus le niveau maximal de la Fille sera élevé.|3. Possibilité d'obtention des Filles Insolites：|   SSR：2%%|   SR：15%%|   R：83%%. |4. Une Fille Insolite de rang SSR est garantie après 49 Capsules Insolites tirées sans avoir obtenu de Fille de rang SSR.|5. En tirant une Fille de rang SSR vous obtiendrez en priorité les Filles que vous ne possédez pas encore.|6. Lorsque vous tirez une Fille Insolite que vous possédez déjà, elle sera automatiquement convertie en Âme Insolite. La convertion en âme dépend du rang de la Fille Insolite tirée：|SSR： Âme Insolite*100|SR：Âme Insolite*15|R：Âme Insolite*3.|7. Les Âmes Insolites peuvent être utilisées pour améliorer le niveau des Filles. Vous pouvez également inverser une Fille Insolite en utilisant des Gemmes pour récupérer les Âmes Insolites utilisées.|8. Après la fin de l'événement, les Âmes Insolites disparaîtront et les Capsules Insolites non utilisées seront converties en Pièces d'Or, une Capsule Insolite contre 200k."
 SPACE_EXPLORE_TEAM_TEXT01,Recrutez des Filles Insolites afin de renforcer votre équipe et gagner plus de récompenses !
 SPACE_EXPLORE_TEAM_TEXT02,Fille Insolite de rang SSR garantie après avoir tiré [c][DE512B]{1}[-][/c] fois
 SPACE_EXPLORE_HELP_01,"1. La durée de cet événement est de 2 semaines. Commencez votre aventure quand vous le voulez !|2. Les Filles Insolites sont différentes de vos Filles. Vous pouvez recruter les Filles Insolites dans Recrutement d'Aventure et Provision d'Aventure.|3. À la fin de l'événement, les Filles Insolites obtenues ne seront plus disponibles."
@@ -4445,7 +4445,7 @@ SPACE_EXPLORE_AWARD_LABEL2,Quantité
 SPACE_EXPLORE_TEXT_24,Félicitations ! Vous avez terminé tous les Étages !
 SPACE_EXPLORE_TEXT_25,Rétablissement
 SPACE_EXPLORE_TEXT_26,Équipe
-SPACE_EXPLORE_TEXT_27,Voulez-vous utiliser {1} gemmes pour inverser cette Fille ?
+SPACE_EXPLORE_TEXT_27,Voulez-vous utiliser {1} Gemmes pour inverser cette Fille ?
 SPACE_EXPLORE_TEXT_28,Ne peut être inversée.
 SPACE_EXPLORE_TEXT_29,Offres
 SPACE_EXPLORE_TEXT_30,Recrutement
@@ -4490,7 +4490,7 @@ GUILD_WAR_NO_TIPS,Impossible de participer à cette saison de Terrain de Sport
 ACTIVITY_RETURN2_SUPPORT_TEXT01,"Terminez les Quêtes Journalières pour récupérer les Récompense Basiques ! Plus de Récompenses Supplémentaires à obtenir en achetant ""Retour à l'Académie""~"
 ACTIVITY_RETURN2_SUPPORT_TEXT02,Aucun Point Recollectable ！
 ACTIVITY_RETURN2_SUPPORT_TEXT03,Retour à l'Académie
-ACTIVITY_RETURN2_SUPPORT_TEXT04,"Règles|1. Durant l'événement, compléter 1 Quête Journalière vous donnera 5 Points. Lorsque vos Points remplissent les conditions, vous recevrez des récompenses envoyées par courrier. |2. Vous n'obtiendrez pas de Point en complétant la quête ""Terminer toutes les Quêtes Journalières"". |3. Après l'achat de retour à l'Académie, vous pouvez immédiatement récupérer les récompenses supplémentaires précédentes. |4. Vous pouvez également recollecter les récompenses non collectées en utilisant des gemmes. |5. À partir du premier jour et jusqu'à la veille de la fin de l'événement, tous les Points manquants peuvent être obtenus contre 2 Gemmes pour 1 Point."
+ACTIVITY_RETURN2_SUPPORT_TEXT04,"Règles|1. Durant l'événement, compléter 1 Quête Journalière vous donnera 5 Points. Lorsque vos Points remplissent les conditions, vous recevrez des récompenses envoyées par courrier. |2. Vous n'obtiendrez pas de Point en complétant la quête ""Terminer toutes les Quêtes Journalières"". |3. Après l'achat de retour à l'Académie, vous pouvez immédiatement récupérer les récompenses supplémentaires précédentes. |4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes. |5. À partir du premier jour et jusqu'à la veille de la fin de l'événement, tous les Points manquants peuvent être obtenus contre 2 Gemmes pour 1 Point."
 ACTIVITY_RETURN2_SUPPORT_TEXT05,Point
 ACTIVITY_RETURN2_SUPPORT_TEXT06,Point(s) Recollectable(s): [c][369900]{1}[-][/c]
 ACTIVITY_RETURN_RESIDENT_MAIN_TEXT01,Récompenses Multipliées
@@ -4520,7 +4520,7 @@ ACTIVITY_CRYSTAL_BALL_TEXT06,Chapitre débloqué : {1}
 ACTIVITY_RETURN2_ADD_TEXT11,Retour
 ACTIVITY_CRYSTAL_BALL_TEXT07,Propriétaire trouvé
 ACTIVITY_CRYSTAL_BALL_TEXT08,Vous devez finir l'histoire du chapitre précédent
-ACTIVITY_RETURN2_ADD_TEXT12,Prix d'Origine: €10.99
+ACTIVITY_RETURN2_ADD_TEXT12,Prix d'Origine : €10.99
 TRAVEL_MAIN_TEXT66,達成後，限購增加至{1}次
 ENTRANCE_TEST_CANNOT_FIGHT,"Vous ne pouvez pas encore participer à la bataille pour le moment, voulez-vous tout de même former une équipe ?"
 ENTRANCE_TEST_NOT_OPEN,"Veuillez d'abord terminer l'Étape {1} de la Campagne pour accéder aux batailles de Test d'Admission. Pour le moment, vous pouvez seulement participer aux paris !"
@@ -4735,7 +4735,7 @@ ACTIVITY_BEACH_ISLAND_TEXT02,Rafraîchit
 ACTIVITY_BEACH_ISLAND_TEXT03,Veuillez passer l'Étape précédente pour y continuer
 ACTIVITY_BEACH_ISLAND_TEXT04,Étape - {1}
 ACTIVITY_BEACH_ISLAND_TEXT05,Ennemi
-ACTIVITY_BEACH_ISLAND_TEXT06,Récompense d'Étape
+ACTIVITY_BEACH_ISLAND_TEXT06,Récompenses d'Étape
 ACTIVITY_BEACH_ISLAND_TEXT07,Objectif
 ACTIVITY_BEACH_ISLAND_TEXT08,Récompenses d'Étoiles
 ACTIVITY_BEACH_ISLAND_TEXT09,Étoile(s) Obtenue(s)
@@ -5074,3 +5074,84 @@ ACTIVITY_SPORTS_PLAYERRANK_TEXT3,Aucune Quête
 ACTIVITY_SPORTS_PLAYERRANK_TEXT4,Aucun Historique
 SCHOOL_PRACTISE_100STAGE_TIP,"L'Examen des Maisons de cette saison a débuté, le nombre de niveaux de Défis de chaque Maison a été augmenté de [c][cc0011]20[-][/c], [c][cc0011]100[-][/c] Défis sont maintenant disponibles, venez voir Senpai !"
 FRIEND_TEAM_BOSS_INVITE_TIPS,Vous ne pouvez pas faire équipe avec les joueurs appartenant à un autre serveur.
+NEW_ARENA_ALL_SERVER,Une nouvelle version d'Arène Ultime arrive bientôt !
+ACTIVITY_MONTHLY_HIKE_SKILL_1,"Cette réinitialisation est gratuite ! Après la réinitialisation, toutes les Compétences Pratiques seront remises à zéro et tous les Points de Compétences Pratiques utilisés vous seront rendus. Voulez-vous continuer ?"
+ACTIVITY_MONTHLY_HIKE_SKILL_2,"Cette réinitialisation vous coûtera 100 Gemmes. Après la réinitialisation, toutes les Compétences Pratiques seront remises à zéro et tous les Points de Compétences Pratiques utilisés vous seront rendus. Voulez-vous continuer ?"
+ACTIVITY_MONTHLY_HIKE_SKILL_3,Aucune Compétence à réinitialiser
+ACTIVITY_MONTHLY_HIKE_SKILL_4,Compétence(s) acquise(s) !
+ACTIVITY_MONTHLY_HIKE_SKILL_5,Compétence(s) réinitialisée(s) !
+BATTLE_OVER_IS_AUTO_CARD,Retourner la carte automatiquement
+ACTIVITY_MONTHLY_HIKE_HELP,"1. La Pratique Extra-Scolaire comprend au total 53 Étapes. Chaque combat consommera 1 Carte Pratique.|2. Les Cartes Pratiques peuvent être obtenues dans le Butin de Campagne ou par achat avec des Gemmes.|3. Chaque combat vous permettra d'obtenir une quantité aléatoire de récompenses. Vaincre le Boss d'une Étape vous permettra d'obtenir les récompenses correspondantes (via courrier) et ainsi débloquer l'Étape suivante.|4. Après avoir passé l'Étape 50, vous combattrez les 3 étapes restantes de manière répétitives. Vous obtiendrez une quantité aléatoire de récompenses à chaque combat. Cependant, ces 3 dernières étapes ne comptent aucune récompense d'Étape.|5. Passer les 50 premières Étapes vous permettra d'obtenir des Points de Compétences Pratiques utilisés pour améliorer vos Compétences Pratiques.|6. Les Compétences Pratiques sont uniquement prises en compte dans La Pratique Extra-Scolaire.|7. Cet événement sera réinitialisé tous les mois. Votre avancée dans l'événement et vos Points de Compétences Pratiques seront réinitialisés à chaque début d'événement.|8. Les dégâts infligés par les Serviteurs ne sont pas comptabilisés dans les statistiques de dégâts de chaque combat."
+ACTIVITY_MONTHLY_HIKE_SKILL_WINDOW,Compétences Pratiques
+ACTIVITY_MONTHLY_HIKE_SKILL_HELP,"1. Utilisez vos Points de Compétences Pratiques afin d'améliorer vos Compétences Pratiques. Améliorer vos Points de Compétences Pratiques vous permettra de rendre vos Filles plus puissantes dans la Pratique Extra-Scolaire.|2. Les Compétences Pratiques sont divisées en 3 Rangs. Les Compétences Pratiques de Rang 1 ne nécessitent pas d'être débloquées. Afin de débloquer les Compétences Pratiques de Rang 2 et 3, il vous faudra utiliser le nombre de Points de Compétences Pratiques requis.|3. Certaines Compétences Pratiques nécessiteront d'améliorer une ou plusieurs Compétences Pratiques à un certain niveau avant de pouvoir être débloquées.|4. Les Compétences Pratiques seront uniquement prises en compte dans La Pratique Extra-Scolaire, et seront remises à 0 à chaque réinitialisation de l'événement.|5. Vous pouvez réinitialiser vos Compétences Pratiques une fois par saison. Une seconde réinitialisation (d'une même saison) vous coûtera des Gemmes."
+ACTIVITY_MONTHLY_TEXT001,Récompenses de Défi
+ACTIVITY_MONTHLY_TEXT002,Cette Étape n'est pas encore débloquée !
+SELECT_ALL_YES,Tout Cocher
+SELECT_ALL_NO,Tout Décocher
+SELECT_ALL_TEXT01,Rien à cocher pour le moment !
+ACTIVITY_MONTHLY_TEXT003,Aperçu
+TIME_CLOISTER_HELP01,時間迴廊幫助文本
+TIME_CLOISTER_HELP02,時間迴廊觀測界面幫助文本
+TIME_CLOISTER_HELP03,時間迴廊星空儀界面幫助文本
+TIME_CLOISTER_HELP04,時間迴廊關卡界面幫助文本
+TIME_CLOISTER_TEXT01,Succès
+TIME_CLOISTER_TEXT02,關卡
+TIME_CLOISTER_TEXT03,開始觀測
+TIME_CLOISTER_TEXT04,總觀測進度：
+TIME_CLOISTER_TEXT05,該迴廊暫未開放，敬請期待
+TIME_CLOISTER_TEXT06,時間迴廊「{1}」的探索進度達到80%%後解鎖
+TIME_CLOISTER_TEXT07,該迴廊暫未解鎖
+TIME_CLOISTER_TEXT08,觀測中可能會遭遇戰鬥，請選擇出戰戰姬。根據出戰戰姬的總戰力，增加此次觀測中戰鬥的屬性（出戰戰姬在觀測中無法更改）
+TIME_CLOISTER_TEXT09,正在其他時間迴廊中進行觀測
+TIME_CLOISTER_TEXT10,繼續觀測
+TIME_CLOISTER_TEXT11,是否提前結束此次觀測？
+TIME_CLOISTER_TEXT12,觀測已結束
+TIME_CLOISTER_TEXT13,Voir
+TIME_CLOISTER_TEXT14,觀測加速
+TIME_CLOISTER_TEXT15,使用「時間之塵」令觀測加速，加速時會消耗對應數量的「回溯懷錶」
+TIME_CLOISTER_TEXT16,剩餘時間
+TIME_CLOISTER_TEXT17,觀測已結束，無需加速
+TIME_CLOISTER_TEXT18,觀測加速成功
+TIME_CLOISTER_TEXT19,觀測中……
+TIME_CLOISTER_TEXT20,觀測完成，點擊進行結算
+TIME_CLOISTER_TEXT21,補給卡
+TIME_CLOISTER_TEXT22,挑戰卡
+TIME_CLOISTER_TEXT23,事件卡
+TIME_CLOISTER_TEXT24,Historique
+TIME_CLOISTER_TEXT25,補給卡預覽
+TIME_CLOISTER_TEXT26,挑戰卡預覽
+TIME_CLOISTER_TEXT27,事件卡預覽
+TIME_CLOISTER_TEXT28,隱藏未解鎖卡牌
+TIME_CLOISTER_TEXT29,獎勵總覽
+TIME_CLOISTER_TEXT30,補給獎勵
+TIME_CLOISTER_TEXT31,挑戰獎勵
+TIME_CLOISTER_TEXT32,星空儀
+TIME_CLOISTER_TEXT33,觀測結算
+TIME_CLOISTER_TEXT34,數據總覽
+TIME_CLOISTER_TEXT35,觀測時長
+TIME_CLOISTER_TEXT36,戰鬥勝率
+TIME_CLOISTER_TEXT37,觀測得分
+TIME_CLOISTER_TEXT38,結算獎勵
+TIME_CLOISTER_TEXT39,觀測獎勵
+TIME_CLOISTER_TEXT40,消耗「星空碎片·無空之殿」可升級星空儀科技
+TIME_CLOISTER_TEXT41,升級
+TIME_CLOISTER_TEXT42,升級預覽
+TIME_CLOISTER_TEXT43,Succès：{1}
+TIME_CLOISTER_TEXT44,在此迴廊中進行觀測，達成下列成就即可提高探索度，探索度達到80%%後可解鎖新的時間迴廊
+TIME_CLOISTER_TEXT45,探索度
+TIME_CLOISTER_TEXT46,關卡：{1}
+TIME_CLOISTER_TEXT47,需通關上一個關卡
+TIME_CLOISTER_TEXT48,需要解鎖此迴廊的星空儀科技「關卡解鎖」
+PUB_MISSION_AUTO_TEXT001,Parchemin de Jobs (Avancé) Insuffisant !
+TIME_CLOISTER_TEXT49,暫無觀測記錄
+ACTIVITY_MONTHLY_TEXT004,Voulez-vous sauvegarder les Compétences Pratiques choisies ?
+ALTAR_INFO_1,Cette Fille n'a pas besoin d'être inversée
+ALTAR_INFO_2,"Après l'avoir inversée, cette Fille reviendra à son état original, voulez-vous continuer ?"
+ACTIVITY_MONTHLY_TEXT005,Annuler
+ALTAR_INFO_3,Les Poupées ne peuvent pas être inversées !
+ACTIVITY_MONTHLY_TEXT006,Niv.{1}
+ACTIVITY_MONTHLY_TEXT007,Progrès Actuel
+ARENA_TEAM_RANK_DESC_NEW,Classement Actuel：{1} Maintenez jusqu'à la fin de la saion pour obtenir les récompenses suivantes：
+ACTIVITY_MONTHLY_TEXT008,Point(s) Restant(s)：
+ACTIVITY_MONTHLY_TEXT009,Voulez-vous dépenser {1} Gemmes pour acheter ?
+ALTAR_INFO_4,Aperçu

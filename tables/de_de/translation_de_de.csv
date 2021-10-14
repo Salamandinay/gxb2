@@ -954,15 +954,15 @@ GUILD_TEXT64,Erfolgreich beworben
 ACTIVITY_WORLD_BOSS_AWARD_TITLE,Ranglistenbelohnung
 ACTIVITY_WORLD_BOSS_AWARD_DESC,Die Belohnungen richten sich nach dem Rang am Ende des Events
 ACTIVITY_WORLD_BOSS_HELP_TITLE,Hilfe
-ACTIVITY_WORLD_BOSS_HELP,"1. Drei Arten von Praktischer Arbeit sind gleichzeitig verfügbar. Jeder Kampf kostet dich 1 Sanduhr. Du kannst unbegrenzt Sanduhren mit Dias kaufen. |2. Für jede Art von praktischer Arbeit stehen unterschiedliche Belohnungen zur Verfügung (Münzen, Kristallmeißel, Spirit-Kekse/Diener-Kekse).|3. Bei jedem Kampf werden zufällige Belohnungsbeträge vergeben.|4. Wenn du eine Herausforderung bzw. eine Art der praktischen Arbeit erfolgreich beendet (alle Level geschafft) und wenn du einen Boss erfolgreich besiegt hast, erhältst du jeweils zusätzliche Belohnungen per Mail.|5. Nachdem du einen Boss besiegt hast, wird der Boss stärker. Jede Art von praktischer Arbeit hat 8 Bosse/Level.|6. Das Event wird alle 30 Tage aktualisiert und die Bosse in den 3 Herausforderungen werden danach auf den niedrigsten Schwierigkeitsgrad zurückgesetzt.|7. Der Schaden durch Diener wird nicht in der Berechnung berücksichtigt."
+ACTIVITY_WORLD_BOSS_HELP,"1. Drei Arten von Praktischer Arbeit sind gleichzeitig verfügbar. Jeder Kampf kostet dich 1 Landkarte. Du kannst unbegrenzt Landkarten mit Dias kaufen. |2. Für jede Art von praktischer Arbeit stehen unterschiedliche Belohnungen zur Verfügung (Münzen, Kristallmeißel, Spirit-Kekse/Diener-Kekse).|3. Bei jedem Kampf werden zufällige Belohnungsbeträge vergeben.|4. Wenn du eine Herausforderung bzw. eine Art der praktischen Arbeit erfolgreich beendet (alle Level geschafft) und wenn du einen Boss erfolgreich besiegt hast, erhältst du jeweils zusätzliche Belohnungen per Mail.|5. Nachdem du einen Boss besiegt hast, wird der Boss stärker. Jede Art von praktischer Arbeit hat 8 Bosse/Level.|6. Das Event wird alle 30 Tage aktualisiert und die Bosse in den 3 Herausforderungen werden danach auf den niedrigsten Schwierigkeitsgrad zurückgesetzt.|7. Der Schaden durch Diener wird nicht in der Berechnung berücksichtigt."
 ACTIVITY_WORLD_BOSS_LIMIT,Kauflimit erreicht
 ACTIVITY_WORLD_BOSS_RANK_TEXT,Punkte
-ACTIVITY_WORLD_BOSS_NOT_ENOUGH,Sanduhr nicht ausreichend
+ACTIVITY_WORLD_BOSS_NOT_ENOUGH,Landkarten nicht ausreichend
 BUY_TIME_TITLE,Kaufmale
 SETTING_UP_PRIVACY,Datenschutz
 SETTING_UP_FEEDBACK_PROMPT,Bitte Feedback eingeben
 WORLD_BOSS_FIGHT,Starten
-WORLD_BOSS_BUY_TITLE,Sanduhr kaufen
+WORLD_BOSS_BUY_TITLE,Landkarte kaufen
 WORLD_BOSS_SWEEP_TITLE,Raid
 ACTIVITY_WORLD_BOSS_TITLE,Feinde
 WORLD_BOSS_SWEEP_TIPS,Wie oft willst du raiden?
@@ -1805,7 +1805,7 @@ IMG_GUIDE_BEACH_7,Belohnungslevel können auch mit Dias entsperrt werden
 IMG_GUIDE_BEACH_8,Muss durch den Kauf des Pakets beim [c][cc0011]Deluxe Bonus[-][/c] entsperrt werden
 IMG_GUIDE_BEACH_9,Die Belohnung muss [c][cc0011]manuell eingesammelt werden[-][/c]
 IMG_GUIDE_BEACH_10,Erhalte Punkte im Strandspiel-Event und entsperre Preise in der Fortgeschrittenen Belohnungsliste!
-GOVERN_TEAM_RULE,"1. Stelle dein Team für die Yume Akademie zusammen! Du kannst nur deine Freunde zu deinem Sicherheitsteam einladen. |2. Jeden Montag und Donnerstag erscheint der Chaoslord, der 48 Stunden bleibt. Die Belohnungen werden berechnet, nachdem der Countdown 0 erreicht hat.|3. Wenn ein Chaoslord anwesend ist, kannst du weder dein Team verlassen noch neue Mitglieder rekrutieren. Passe dein Team also während der Erholungszeiten an. Tippe auf den roten Button unten rechts auf der Team-Seite, um aus dem Team auszutreten. Tippe auf die Profilbilder der anderen Mitgliedern des Teams, um sie aus dem Team zu kicken.|4. Wenn der Chaoslord mehr als 50%% HP hat und der Countdown 0 erreicht, sinkt deine Sicherheitsstufe um 1 und du erhältst eine Teilnahmebelohnung. Wenn der Chaoslord weniger als 50%% HP hat, aber nicht besiegt wurde, erhältst du eine Klassenerhaltsbelohnung. Wenn der Chaoslord besiegt wird, erhöht sich deine Sicherheitsstufe um 1 und du erhältst eine Aufstiegsbelohnung.|5. Sicherheitsstufe: Jeder Spieler hat seine eigene Sicherheitsstufe. Wenn du dich mit anderen Spielern zusammenschließt, erscheint entsprechend des Spielers mit der niedrigsten Sicherheitsstufe der Chaoslord.|6. Ein Chaoslord wird mit 2 dunklen Rittern an seiner Seite erscheinen. Pro getötetem Ritter fügst du dem Chaoslord 20%% Schaden zu.|7. Du hast 2 Chancen, den Chaoslord anzugreifen, nachdem er erschienen ist. Jedes Mitglied deines Teams kann außerdem während jedes Spawns 1 zusätzliche Angriffschance mit Münzen erwerben. Wählt eure begrenzten Chancen mit Bedacht."
+GOVERN_TEAM_RULE,"1. Stelle dein Team für die Yume Akademie zusammen! Du kannst nur Freunde von deinem Server oder von Servern, die mit deinem Server zusammengelegt wurden, zu deinem Sicherheitsteam einladen. |2. Jeden Montag und Donnerstag erscheint der Chaoslord, der 48 Stunden bleibt. Die Belohnungen werden berechnet, nachdem der Countdown 0 erreicht hat.|3. Wenn ein Chaoslord anwesend ist, kannst du weder dein Team verlassen noch neue Mitglieder rekrutieren. Passe dein Team also während der Erholungszeiten an. Tippe auf den roten Button unten rechts auf der Team-Seite, um aus dem Team auszutreten. Tippe auf die Profilbilder der anderen Mitgliedern des Teams, um sie aus dem Team zu kicken.|4. Wenn der Chaoslord mehr als 50%% HP hat und der Countdown 0 erreicht, sinkt deine Sicherheitsstufe um 1 und du erhältst eine Teilnahmebelohnung. Wenn der Chaoslord weniger als 50%% HP hat, aber nicht besiegt wurde, erhältst du eine Klassenerhaltsbelohnung. Wenn der Chaoslord besiegt wird, erhöht sich deine Sicherheitsstufe um 1 und du erhältst eine Aufstiegsbelohnung.|5. Sicherheitsstufe: Jeder Spieler hat seine eigene Sicherheitsstufe. Wenn du dich mit anderen Spielern zusammenschließt, erscheint entsprechend des Spielers mit der niedrigsten Sicherheitsstufe der Chaoslord.|6. Ein Chaoslord wird mit 2 dunklen Rittern an seiner Seite erscheinen. Pro getötetem Ritter fügst du dem Chaoslord 20%% Schaden zu.|7. Du hast 2 Chancen, den Chaoslord anzugreifen, nachdem er erschienen ist. Jedes Mitglied deines Teams kann außerdem während jedes Spawns 1 zusätzliche Angriffschance mit Münzen erwerben. Wählt eure begrenzten Chancen mit Bedacht."
 FORT_BTN_LABEL_5,Albtraum
 TOWER_PRACTICE_WIN_TIPS,Aktuelle Aufstellung
 HERO_CHALLENGE_TITLE,Mädchen-Aufgaben
@@ -2301,9 +2301,9 @@ POTENTIALITY_BACK_TITLE,Umkehren
 POTENTIALITY_BACK_TEXT01,Vorschau
 POTENTIALITY_BACK_TEXT02,Umkehren
 PUPPET_PARTNER_NO_CLICK,"Puppen können nicht absolviert, erweckt oder weiterentwickelt werden und auch keine Kostüme tragen."
-POTENTIALITY_BACK_WINDOW_HELP,"1. Alle 10-Sterne-Mädchen können zurückgesetzt werden (einschließlich derjenigen, die einmal den Status ""Weiterentwicklung"" hatten) |2. Die Puppen können nicht erweckt, ausgetauscht, rückgängig gemacht, übertragen, beschenkt oder ins Wohnheim gebracht werden. |3. Die Ausrüstungen und Antiquitäten der zurückgesetzten Mädchen werden automatisch in deinen Rucksack zurückgeschickt. |4. Die Details des Umkehrens werden unten erläutert: |Umkehren eines 10-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *2 + 5-Sterne Kopie *5|Umkehren eines 11-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *3 + 5-Sterne Kopie *6 |Umkehren eines 12-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *4 + 5-Sterne Kopie *7|Umkehren eines 13-Sterne-Mädchens: 10-Sterne-Puppe *1 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *7|Umkehren eines 14-Sterne-Mädchens: 10-Sterne-Puppe *2 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *8|Umkehren des 15-Sterne Mädchens: 10-Sterne-Puppe *3 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *9|5. Das Umkehren WIRD NICHT DIE MÜNZEN ZURÜCKGEBEN, die verwendet wurden, um das Mädchen zu verbessern. Der Exp-Saft und die Brotdosen, die für das Mädchen verwendet wurden, werden TEILWEISE zurückgegeben. Die Münzen und Kristallmeißel werden auch teilweise entsprechend der Stufe des Mädchenkristalls zurückgegeben.|6. Intimität und Eid werden einem der Mädchen zurückgegeben, nachdem sie umgekehrt wurde. |7. Die 9/10-Sterne-Puppen, die du nach dem Umkehren erhältst, werden im monatlichen Event nicht gezählt (für das Erwecken von 9/10-Sterne-Mädchen)."
+POTENTIALITY_BACK_WINDOW_HELP,"1. Mädchen unter 10-Sterne (10-Sterne eingeschlossen, 6-Sterne ausgeschlossen) können zurückgesetzt werden (einschließlich derjenigen, die einmal den Status ""Weiterentwicklung"" hatten).|2. Die Puppen können nicht erweckt, ausgetauscht, rückgängig gemacht, übertragen, beschenkt oder ins Wohnheim gebracht werden. |3. Die Ausrüstungen und Antiquitäten der zurückgesetzten Mädchen werden automatisch in deinen Rucksack zurückgeschickt. |4. Die Details des Umkehrens werden unten erläutert: |Umkehren eines 1- bis 5-Sterne Mädchens: Mädchen-Kopie desselben Sternlevels *1|Umkehren eines 7-Sterne Mädchens: 5-Sterne Puppe derselben Fraktiotn *5 +5-Sterne Kopie *2|Umkehren eines 8-Sterne Mädchens: 5-Sterne Puppe derselben Frakation *7 + 5-Sterne Kopie *2|Umkehren eines 9-Sterne Mädchens: 6-Sterne Puppe derselben Fraktion *1 +5-Sterne Puppe derselben Fraktion *8 + 5-Sterne Kopie *2|Umkehren eines 10-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *2 + 5-Sterne Kopie *5|Umkehren eines 11-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *3 + 5-Sterne Kopie *6 |Umkehren eines 12-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *4 + 5-Sterne Kopie *7|Umkehren eines 13-Sterne-Mädchens: 10-Sterne-Puppe *1 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *7|Umkehren eines 14-Sterne-Mädchens: 10-Sterne-Puppe *2 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *8|Umkehren des 15-Sterne Mädchens: 10-Sterne-Puppe *3 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *9|5. Bei 1- bis 5-Sterne Mädchen werden nach dem Umkehren alle verwendeten Ressourcen zurückgeben. Bei 7- bis 10-Sterne Mädchen werden die verwendeten Ressourcen (EXP-Saft und Brotdosen) nur teilweise zurückgegeben und die zum Leveln verwendeten Münzen werden nicht zurückgegeben. Hat das Mädchen einen Kristall, werden gemäß dem Level des Kristalls die verwendeten Münzen und Kristallmeißel teilweise zurückgegeben.|6. Intimität und Eid werden einem der Mädchen zurückgegeben, nachdem sie umgekehrt wurde. |7. Die 5/9/10-Sterne-Puppen, die du nach dem Umkehren erhältst, werden im monatlichen Event nicht gezählt (für das Erwecken von 5/9/10-Sterne-Mädchen)."
 POTENTIALITY_BACK_TEXT03,Diese Aktion kann nicht rückgängig gemacht werden. Willst du sicher fortfahren?
-POTENTIALITY_BACK_ALTAR_TIPS,Puppen können nicht transferiert werden
+POTENTIALITY_BACK_ALTAR_TIP,Puppen können nicht transferiert werden
 SUBSCRIPTION_RECOVER,Erholen
 SUBSCRIPTION_TIPS,Nach dem Aboabschluss werden die Gebühren am Ende der Laufzeit automatisch abgezogen.
 SKIN_TEXT26,Laden
@@ -2972,7 +2972,7 @@ FIXED_GAIN,Bestimmter Bonus
 ADDITIONAL_GAIN,Extra-Bonus
 NOMINU_COUNTDOWN,{1}D. {2}H.
 ACTIVITY_FOOD_FESTIVIAL_DESC,"Tausche die Omeletts, Pfannkuchen und Wagashi gegen reichhaltige Belohnungen. Im Souvenirladen kannst du die Materialien direkt mit Dias kaufen!"
-ACTIVITY_FOOD_FESTIVIAL_HELP,"1. Die drei Snacks können durch verschiedene Methoden erhalten werden:|——Omelett: Auto-Kampf, Superpakete, Glückspakete, Kostümpakete, Souvenirladen.|——Wagashi: Superpakete, Glückspakete, Kostümpakete, Einschreibe-Aufgaben, Souvenirladen.|——Pfannkuchen: Auto-Kampf, Einschreibe-Aufgaben, Souvenirladen. |2. Die Eventitems können während der letzten 24 Stunden des Events nicht mehr erhalten werden.|3. Nach dem Ende des Events werden die noch nicht verwendeten Materialien automatisch gegen Münzen umgetauscht. 1 Omelett entspricht 50K Münzen, 1 Wagashi 50K und 1 Pfannkuchen 15K."
+ACTIVITY_FOOD_FESTIVIAL_HELP,"1. Die drei Snacks können durch verschiedene Methoden erhalten werden:|——Omelett: Auto-Kampf, Superpakete, Glückspakete, Kostümpakete, Souvenirladen.|——Wagashi: Superpakete, Glückspakete, Kostümpakete, Lottoevent, Souvenirladen.|——Pfannkuchen: Auto-Kampf, Lottoevent, Souvenirladen. |2. Die Eventitems können während der letzten 24 Stunden des Events nicht mehr erhalten werden.|3. Nach dem Ende des Events werden die noch nicht verwendeten Materialien automatisch gegen Münzen umgetauscht. 1 Omelett entspricht 50K Münzen, 1 Wagashi 50K und 1 Pfannkuchen 15K."
 ACTIVITY_FOOD_FESTIVAL_FOOD,Tauschen
 ACTIVITY_FOOD_FESTIVAL_STORE,Souvenirladen
 ACTIVITY_FOOD_FESTIVAL_EXHCANGE_WINDOW,Menge
@@ -4100,7 +4100,7 @@ BP_EXP_CURRENT,Gesammelte Seiten
 BP_LEV,Level
 BP_BRASS_AWARD,Buch des Wissens
 BP_SILVER_AWARD,Buch der Weisheit
-BP_MISSION_DES,"Schließe die Aufgaben ab, um die fehlenden Seiten zu sammeln. Die zusätzlichen Aufgaben werden ab einem bestimmten Level erscheinen und können nicht wiederholt abgeschlossen werden. Der Fortschritt der vorherigen Aufgaben bleibt trotz dem Auftauchen der zusätzlichen Aufgaben erhalten. Mach dir also keine Sorgen!"
+BP_MISSION_DES,"Schließe die Aufgaben ab, um die fehlenden Seiten zu sammeln. Die zusätzlichen Aufgaben werden ab einem bestimmten Buchlevel erscheinen und können nicht wiederholt abgeschlossen werden. Der Fortschritt der vorherigen Aufgaben bleibt trotz dem Auftauchen der zusätzlichen Aufgaben erhalten. Mach dir also keine Sorgen!"
 BP_MISSION_REFRESH_TIME,Wird aktualisiert:
 BP_UPGRADE_BUTTON,Buch aufleveln
 BP_PURCHASE_WINDOW_TIP,"
@@ -4685,7 +4685,7 @@ ACTIVITY_BEACH_ISLAND_TEXT02,Wird erneuert in:
 ACTIVITY_BEACH_ISLAND_TEXT03,Schließe zuerst die vorherige Stufe ab
 ACTIVITY_BEACH_ISLAND_TEXT04,Stufe-{1}
 ACTIVITY_BEACH_ISLAND_TEXT05,Gegner
-ACTIVITY_BEACH_ISLAND_TEXT06,Stufenbelohnung
+ACTIVITY_BEACH_ISLAND_TEXT06,Belohnung
 ACTIVITY_BEACH_ISLAND_TEXT07,Ziel
 ACTIVITY_BEACH_ISLAND_TEXT08,Belohnung
 ACTIVITY_BEACH_ISLAND_TEXT09,Erhaltene Sterne:
@@ -4908,7 +4908,7 @@ WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten A
 ACTIVITY_ENTRANCE_TEST_RECORD_TIPS,Ihr seid auf verschiedene Stufen und könnt nicht gegeneinander kämpfen!
 WARMUP_ARENA_TASK_HELP,"1. Schließe die Neulings-Herausforderungen ab, um reichhaltige Belohnungen zu erhalten.|2. Nach dem Kauf des Einschulungspakets werden noch weitere Belohnungen entsperrt.|3. Jedes Mal, wenn du einen Stern erhältst, wird eine neues Kapitel über das neue Mädchen entsperrt."
 ENTRANCE_TEST_NO_FIGHT_PARTNERS,Du hast noch kein Angriffsteam aufgestellt. Willst du das Verteidigungsteam als Angriffsteam übernehmen?
-PUB_MISSION_AUTO_TEXT4,Abgeschlossene Jobaufgaben wählen
+PUB_MISSION_AUTO_TEXT4,Abgeschl. Jobaufgaben wählen
 LIMITED_FOR_ACTIVITY,Limitiert
 ACTIVITY_WARMUP_PACK_TEXT06,Zusatz-\nbelohnungen
 ACTIVITY_WARMUP_PACK_TEXT07,Aufnahmeprüfung
@@ -5014,7 +5014,7 @@ ACTIVITY_ENTRANCE_TEST_RANK_SHOW_TEXT,Rangliste
 ACTIVITY_WARMUP_ARENA_RANK_DEMAND,Erreiche zuerst Stufe {1}!
 ACTIVITY_TEA_TEXT6,"Teehaus-Punkte nicht ausreichend. Schließe die täglichen Aufgaben ab, um Teehaus-Punkte zu erhalten."
 NEWBEE_10GACHA_HELP04,"1. Während des Events kannst du auf dieser Seite die Premiumzüge (10 Züge) für Anfänger 1 Mal kaufen.|2. Tippe nach dem Kauf auf den Kapsel-Button, um 10 Mal zu ziehen.|3. Bei diesen 10 Zügen bekommst du sicher 3 Elite 5-Sterne Mädchen und 7 normale 5-Sterne Mädchen. Tippe auf die Lupe, um die detaillierten Wahrscheinlichkeiten für jedes Mädchen zu prüfen.|4. Wenn du deine gekauften 10 Züge nicht rechtzeitig verwendest, werden die entsprechenden Mädchen-Fragmente nach dem Zufallsprinzip per Mail gesendet, wenn das Event zu Ende ist."
-ACHIEVEMENT_REACHED,Geschafft
+ACHIEVEMENT_REACHED,Erfolg erzielt
 ACTIVITY_SPORTS_PLAYER_WINDOW,Spieler Info
 ACTIVITY_SPORTS_PLAYERRANK_TEXT1,Medaillenspiegel|Punkteranking
 ACTIVITY_SPORTS_PLAYERRANK_TEXT2,Medaillen
@@ -5022,3 +5022,84 @@ ACTIVITY_SPORTS_PLAYERRANK_TEXT3,Keine Aufgaben verfügbar
 ACTIVITY_SPORTS_PLAYERRANK_TEXT4,Keine Rekorde
 SCHOOL_PRACTISE_100STAGE_TIP,Ab dieser Saison wird die höchste Stufe in der Prüfung von [c][cc0011]80[-][/c] auf [c][cc0011]100[-][/c] erhöht! Viel Erfolg! (Die Einstellung der automatischen Herausforderung wurde zurückgesetzt. )
 FRIEND_TEAM_BOSS_INVITE_TIPS,Spieler auf einem anderen Server kann nicht als Mitglied des Sicherheitstrupps aufgenommen werden.
+NEW_ARENA_ALL_SERVER,Die neue Version der Ultimativen Arena wird bald starten!
+ACTIVITY_MONTHLY_HIKE_SKILL_1,Das aktuelle Zurücksetzen ist gratis. Hierdurch werden alle Fertigkeiten zurückgesetzt und alle Fertigkeitspunkte zurückgegeben. Fortfahren?
+ACTIVITY_MONTHLY_HIKE_SKILL_2,Das aktuelle Zurücksetzen kostet 100 Dias. Hierdurch werden alle Fertigkeiten zurückgesetzt und alle Fertigkeitspunkte zurückgegeben. Fortfahren?
+ACTIVITY_MONTHLY_HIKE_SKILL_3,Keine verfügbaren Fertigkeiten
+ACTIVITY_MONTHLY_HIKE_SKILL_4,Erfolgreich gespeichert
+ACTIVITY_MONTHLY_HIKE_SKILL_5,Fertigkeit(en) zurückgesetzt
+BATTLE_OVER_IS_AUTO_CARD,Auto. aufdecken
+ACTIVITY_MONTHLY_HIKE_HELP,"1. In der praktischen Arbeit gibt es insgesamt 53 Runden. Zur Herausforderung jeder Runde wird 1 Landkarte benötigt.|2. Die Landkarten kannst du nicht nur beim Auto-Kampf unter Abenteuer erhalten, sondern auch direkt mit Dias kaufen.|3. Durch jede Herausforderung erhältst du zufällige Belohnungen. Wenn du eine Runde abgeschlossen hast, bekommst du per Mail die entsprechenden Belohnungen und die nächste Runde wird entsperrt.|4. Bei den letzten 3 Runden (Runde 51-53) wird es kein Limit der Anzahl an Herausforderung geben. Du kannst diese 3 Runden wiederholt herausfordern und deren zufällige Belohnungen erhalten, aber für diese 3 Stufen gibt es keine Belohnungen für das Bestehen der Runde.|5. Durch Abschluss der ersten 50 Runden erhältst du Fertigkeitspunkte, die fürs Leveln der praktischen Fertigkeiten verwendet werden können.|6. Alle praktischen Fertigkeiten wirken sich nur hier in der praktische Arbeit aus.|7. Die praktische Arbeit wird monatlich erneuert, wobei dein Fortschritt sowie die praktischen Fertigkeiten zurückgesetzt werden.|8. Schaden durch Diener werden nicht bei der Schadensabrechnung mitgerechnet."
+ACTIVITY_MONTHLY_HIKE_SKILL_WINDOW,Praktische Fertigkeiten
+ACTIVITY_MONTHLY_HIKE_SKILL_HELP,"1. Zum Leveln der praktischen Fertigkeiten werden Fertigkeitspunkte benötigt.|2. Die praktischen Fertigkeiten werden in 3 Teile gegliedert. Du musst eine bestimmte Anzahl von Fertigkeitspunkten verwenden, um die letzten 2 Teile zu entsperren.|3. Einige praktische Fertigkeiten sind an andere Fertigkeiten geknüpft und du musst zunächst diese Fertigkeiten leveln, um die nächste Stufe zu entsperren.|4. Alle praktischen Fertigkeiten wirken sich nur hier in der praktischen Arbeit aus und werden beim monatlichen Erneuern automatisch zurückgesetzt.|5. Das monatliche erste manuelle Zurücksetzen der praktischen Fertigkeiten ist gratis. Danach kannst du Dias ausgeben, um die Fertigkeiten erneut zurückzusetzen."
+ACTIVITY_MONTHLY_TEXT001,Belohnung
+ACTIVITY_MONTHLY_TEXT002,Gesperrt
+SELECT_ALL_YES,Alles\nauswählen
+SELECT_ALL_NO,Auswahl\naufheben
+SELECT_ALL_TEXT01,Keine verfügbaren Optionen
+ACTIVITY_MONTHLY_TEXT003,Fertigkeitsvorschau
+TIME_CLOISTER_HELP01,時間迴廊幫助文本
+TIME_CLOISTER_HELP02,時間迴廊觀測界面幫助文本
+TIME_CLOISTER_HELP03,時間迴廊星空儀界面幫助文本
+TIME_CLOISTER_HELP04,時間迴廊關卡界面幫助文本
+TIME_CLOISTER_TEXT01,Erfolg
+TIME_CLOISTER_TEXT02,Stufe
+TIME_CLOISTER_TEXT03,Erkunden
+TIME_CLOISTER_TEXT04,Erkundens-Fortschritt:
+TIME_CLOISTER_TEXT05,Dieser Korridor wird noch nicht zugänglich gemacht. Bitte bleib daran.
+TIME_CLOISTER_TEXT06,"Bedingung: Erkundens-Fortschritt vom Korridor ""{1}"" erreicht 80%%"
+TIME_CLOISTER_TEXT07,Gesperrt
+TIME_CLOISTER_TEXT08,觀測中可能會遭遇戰鬥，請選擇出戰戰姬。根據出戰戰姬的總戰力，增加此次觀測中戰鬥的屬性（出戰戰姬在觀測中無法更改）
+TIME_CLOISTER_TEXT09,正在其他時間迴廊中進行觀測
+TIME_CLOISTER_TEXT10,繼續觀測
+TIME_CLOISTER_TEXT11,是否提前結束此次觀測？
+TIME_CLOISTER_TEXT12,觀測已結束
+TIME_CLOISTER_TEXT13,查看
+TIME_CLOISTER_TEXT14,觀測加速
+TIME_CLOISTER_TEXT15,使用「時間之塵」令觀測加速，加速時會消耗對應數量的「回溯懷錶」
+TIME_CLOISTER_TEXT16,剩餘時間
+TIME_CLOISTER_TEXT17,觀測已結束，無需加速
+TIME_CLOISTER_TEXT18,觀測加速成功
+TIME_CLOISTER_TEXT19,觀測中……
+TIME_CLOISTER_TEXT20,觀測完成，點擊進行結算
+TIME_CLOISTER_TEXT21,補給卡
+TIME_CLOISTER_TEXT22,挑戰卡
+TIME_CLOISTER_TEXT23,事件卡
+TIME_CLOISTER_TEXT24,觀測記錄
+TIME_CLOISTER_TEXT25,補給卡預覽
+TIME_CLOISTER_TEXT26,挑戰卡預覽
+TIME_CLOISTER_TEXT27,事件卡預覽
+TIME_CLOISTER_TEXT28,隱藏未解鎖卡牌
+TIME_CLOISTER_TEXT29,獎勵總覽
+TIME_CLOISTER_TEXT30,補給獎勵
+TIME_CLOISTER_TEXT31,挑戰獎勵
+TIME_CLOISTER_TEXT32,星空儀
+TIME_CLOISTER_TEXT33,觀測結算
+TIME_CLOISTER_TEXT34,數據總覽
+TIME_CLOISTER_TEXT35,觀測時長
+TIME_CLOISTER_TEXT36,戰鬥勝率
+TIME_CLOISTER_TEXT37,觀測得分
+TIME_CLOISTER_TEXT38,結算獎勵
+TIME_CLOISTER_TEXT39,觀測獎勵
+TIME_CLOISTER_TEXT40,消耗「星空碎片·無空之殿」可升級星空儀科技
+TIME_CLOISTER_TEXT41,升級
+TIME_CLOISTER_TEXT42,升級預覽
+TIME_CLOISTER_TEXT43,成就：{1}
+TIME_CLOISTER_TEXT44,在此迴廊中進行觀測，達成下列成就即可提高探索度，探索度達到80%%後可解鎖新的時間迴廊
+TIME_CLOISTER_TEXT45,探索度
+TIME_CLOISTER_TEXT46,關卡：{1}
+TIME_CLOISTER_TEXT47,需通關上一個關卡
+TIME_CLOISTER_TEXT48,需要解鎖此迴廊的星空儀科技「關卡解鎖」
+PUB_MISSION_AUTO_TEXT001,Job-Pergamente nicht ausreichend
+TIME_CLOISTER_TEXT49,暫無觀測記錄
+ACTIVITY_MONTHLY_TEXT004,Willst du die aktuelle Verteilung der Fertigkeitspunkte speichern?
+ALTAR_INFO_1,Das aktuelle Mädchen muss nicht zurückgesetzt werden.
+ALTAR_INFO_2,Das Mädchen wird auf den ursprünglichen Zustand zurückgesetzt. Fortfahren?
+ACTIVITY_MONTHLY_TEXT005,Abbrechen
+ALTAR_INFO_3,Die Puppen können nicht zurückgesetzt werden.
+ACTIVITY_MONTHLY_TEXT006,Lv.{1}
+ACTIVITY_MONTHLY_TEXT007,Fortschritt
+ARENA_TEAM_RANK_DESC_NEW,Akt. Rang:{1}. Halte den Rang bis zum Ende der Saison und erhalte folgende Belohnungen:
+ACTIVITY_MONTHLY_TEXT008,Verbleibend:
+ACTIVITY_MONTHLY_TEXT009,Dieser Kauf benötigt {1} Dias. Fortfahren?
+ALTAR_INFO_4,Rückgabe
