@@ -189,9 +189,9 @@ id,desc,days,date,limit,last_time,server_type,special_interval,icon,title,type1,
 188,-1,7,44281,,,1,0,activity_tree_group_png,-1,2,1,49,,,,,,,
 189,-1,7,44281,,,1,0,activity_puppet_png,-1,2,1,48,,,5545,,,,
 190,-1,3,44290,,259200,1,0,activity_egg_gift_png,-1,1,1,97,209|210,,,,,,
-191,-1,7,44491,,,1,0,activity_smash_egg_png,-1,7,,4,,,,,,activity_window,"{'activity_ids':[191,192,193], 'activity_type':7}"
-192,-1,7,44491,,604800,1,0,easter_egg_giftbag_png,-1,7,,3,211|212|213,,,,,activity_window,"{'activity_ids':[191,192,193], 'activity_type':7}"
-193,-1,7,44288,,,1,0,activity_limited_task_png,-1,7,,2,,,,,,activity_window,"{'activity_ids':[191,192,193], 'activity_type':7}"
+191,-1,7,44491,,,1,0,activity_smash_egg_png,-1,7,,4,,,,,,activity_window,"{'activity_ids':[191,192], 'activity_type':7}"
+192,-1,7,44491,,604800,1,0,easter_egg_giftbag_png,-1,7,,3,211|212|213,,,,,activity_window,"{'activity_ids':[191,192], 'activity_type':7}"
+193,-1,7,44288,,,1,0,activity_limited_task_png,-1,2,,2,,,,,,,
 194,-1,11,44309,,,1,0,,,,,,,,,,,,
 195,-1,-1,44295,,,1,0,activity_limited_task_png,-1,7,,5,,,,,,,
 196,-1,14,44302,,,1,0,activity_bomb_png,-1,2,1,45,,,,,,,
