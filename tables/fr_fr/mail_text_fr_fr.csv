@@ -22,7 +22,7 @@ id,name,from,content
 21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Orbe Élémentaire*100 et Parchemin de Jobs Avancée*1, voici vos récompenses, veuillez les récupérer !"
 22,Récompense de Jobs,Courrier du Système,"Félicitations ! Vous avez fini un Job {1} étoiles durant l'événement, voici vos récompenses."
 23,Avis de Recharge,Courrier du Système,"Merci d'avoir acheté {1}, vos récompenses ont été envoyés dans votre sac."
-24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150 et Canne à pêche*5, voici vos récompenses, veuillez les récupérer !"
+24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150 et Bouteille Usée*5. Voici vos récompenses, veuillez les récupérer !"
 25,Bataille dans l'Arène,Courrier du Système,Félicitations ! Vous avez atteint un objectif durant l'événement. Voici vos récompenses.
 26,Abonnement,Pass de Pièces Hebdomadaire,Félicitations ! Vous avez désormais un Pass de Pièces Hebdomadaire. Votre butin de Pièces augmentera de 100% pour les prochaines 168 heures. Ce bonus peut-être combiné avec celui des bénéfices VIP
 27,L'abonnement se termine,Pass de Pièces Hebdomadaire,Votre Pass de Pièces Hebdomadaire se termine aujourd'hui. Veuillez renouveler votre abonnement pour continuer à profiter des bénéfices. Les Pièces du butin sont augmentés de 100% lorsque l'abonnement est actif !
@@ -150,7 +150,7 @@ id,name,from,content
 149,Récompense de Débutant (1),Courrier du Système,"Senpai ! Félicitations ! Vous avez terminé les Tâches de 7 jours, voici les récompenses non collectées, n'oubliez pas de les récupérer !"
 150,Récompense de Débutant (2),Courrier du Système,"Félicitations Senpai ! Vous avez obtenu {1} point(s) dans l'événement de Tâches de 7 jours, voici vos récompenses non collectées, n'oubliez pas de les récupérer !"
 151,Récompense du Périple de Lavli,Courrier d'Événement,"Félicitations ! Vous avez collecté {1} Corails dans Le Périple de Lavli. Voici vos récompenses, veuillez les récupérer !"
-152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150 et Canne à pêche*5, voici vos récompenses, veuillez les récupérer !"
+152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150 et Bouteille Usée*5. Voici vos récompenses, veuillez les récupérer !"
 153,Récupération d'objet d'événement,Courrier du Système,"Bonjour senpai,\nL'événement {1} est déjà terminé. tous les {2} {3} ont été récupéré(e)(s)."
 154,Récompenses du Classement,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans l'événement d'Exploration du Vieux Campus ! Voici vos récompenses.
 155,Récompense d'Exploration du Vieux Campus,Courrier du Système,"Bonjour senpai, \nL'événement Exploration du Vieux Campus est déjà terminé, voici vos récompenses non collectées, veuillez les récupérer !"
@@ -177,7 +177,7 @@ Si vous avez des questions concernant le jeu, n\'hésitez pas à nous contacter.
 169,Récompense d'événement,Courrier du Système,"Cher Senpai, l'événement {1}a été terminé, voici les récompenses non collectées, veuillez les récupérer !"
 170,Bonus de Recrutement,Courrier du Système,"Félicitations ! Senpai ! Vous avez obtenu {2} points de Maison {1} ! Voici vos récompenses, veuillez les récupérer !"
 171,Récompense de Spectacle des Marionnettes,Courrier du Système,"Félicitations ! Senpai ! Vous avez collecté Marionnette*{1} pendant cet événement, voici vos récompenses, veuillez les récupérer !"
-172,Récompense d'Œufs Surprises de Pâques,Courrier du Système,"Félicitations ! Vous avez brisé {1} {2} dans l'événement Œufs Surprises de Pâques, voici vos récompenses !"
+172,Bouteille à la mer,Courrier du Système,"Félicitations Senpai ! Vous avez ouvert {2}*{1}, voici vos récompenses, veuillez les récupérer !"
 173,Récompense de Quêtes Exclusives,Courrier du Système,"Félicitations ! Vous avez rempli les conditions de la Quête Exclusive, voici vos récompenses !"
 174,Pré-annonce : Îles Célestes,Courrier du Système,"Les Îles Célestes ouvriront bientôt ! Votre Guilde et vous devrez joindre vos forces pour vaincre le BOSS.\nPendant cette période là, vous ne pourrez ni quitter la Guilde, ni la dissoudre. Soyez prêt pour la bataille !\nVous pouvez voir l'heure exacte du commencement en cliquant sur l'icône d'Îles Célestes."
 175,Classement de Boss des Îles Célestes,Courrier du Système,"Cher Senpai, les Îles Célestes sont désormais fermées. Vous avez atteint la {2}e place au Boss {1} ! Veuillez collecter vos récompenses !"
@@ -204,6 +204,7 @@ Si vous avez des questions concernant le jeu, n\'hésitez pas à nous contacter.
 197,Festival Sportif,Courrier d'Événement,"Félicitations ! Vous vous êtes classé au Top 100 de votre Maison ! La Compétition d'Élite vous attend, préparez-vous !"
 198,Pratique Extra-Scolaire - Récompenses,Courrier du Système,"Félicitations, Senpai ! Vous avez fini un projet dans la Pratique Extra-Scolaire. Voici vos récompenses !"
 199,Investissement de Débutant - Compensation,Courrier du Système,"Cher Senpai, en raison de la modification du contenu de l'Investissement de Débutant, nous vous envoyons le reste de vos récompenses dues pour avoir fait l'achat de ce pack récemment. Veuillez collecter vos récompenses."
-200,Les Échos du Temps,Courrier du Système,恭喜學長在時間迴廊·{1}的傷害排名中獲得了第{2}名的成績，獲得以下獎勵！
+200,Les Échos du Temps,Courrier du Système,"Félicitations, vous vous êtes classé {2}e du Classement de dégâts dans Les Échos du Temps - {1}, voici vos récompenses, veuillez les récupérer !"
 201,Événement Mensuel,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses, veuillez les récupérer !"
 202,Bonus de Luxe,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses de Luxe, veuillez les récupérer !"
+203,Récompenses d'Étape (Pratique Extra-Scolaire),Courrier du Système,"Félicitations Senpai ! Vous avez réussi à vaincre le Boss d'un Étape dans la Pratique Extra-Scolaire, voici vos récompenses, veuillez les récupérer !"

@@ -117,7 +117,7 @@ CAMPAIGN_HANG_FORMATION_WINDOW,Équipe
 SHENXUE_SELECT_WINDOW,Choisissez les Filles Matérielles
 NO_PARTNER,Vous n'avez pas de Filles Matérielles
 PUB_SPEED_MISSION_1,Vous n'avez pas assez de Gemmes pour pouvoir accélérer !
-PUB_SPEED_MISSION_2,Voulez-vous utiliser {1} Gemmes afin d'accélérer ce job ?
+PUB_SPEED_MISSION_2,Voulez-vous utiliser {1} Gemmes afin d'accélérer ce Job ?
 COMPOSE_EQUIP_NO_MATERIAL,Vous n'avez pas assez d'Équipement Matériel !
 CAMPAIGN_REQUIRE,Exigences
 CAMPAIGN_REQUIRE_1,Nécessite que le joueur soit Niv.{1}
@@ -506,7 +506,7 @@ ENHANCE_WINDOW,Je veux devenir plus fort
 FIGHT_BOSS,Commencer
 MODIFY_PICTURE,Changer
 EDIT_PICTURE_WINDOW,Liste des Fonds
-ARENA_HELP,"Règles de la Bataille|1. Les récompenses seront envoyées par courrier tous les jours à 21 heures (GMT 0).|2. Chaque Bataille dans l'Arène consommera un Ticket, les Tickets peuvent être achetés avec des Gemmes.|3. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient mortes, celle-ci sera considérée comme vaincue.|4. Après la fin de la Bataille, les points des joueurs changeront, le gagnant obtiendra des points et le perdant perdra des points, tous les joueurs sont classés avec ces points.|5. Les points que vous obtiendrez sont basés sur la différence entre vos points actuels et les points de votre ennemi (Attention : Vous obtiendriez 0 point si vos points actuels sont beaucoup plus élevés que ceux de votre ennemi)|6. Vous pouvez consulter les 10 dernières Batailles dans l'historique des Batailles.||Récompenses|Les récompenses seront envoyées par rapport à votre classement.|Pour plus de détails regardez 【Récompense Quotidienne】"
+ARENA_HELP,"Règles de la Bataille|1. Les récompenses seront envoyées par courrier tous les jours à 21 heures (GMT 0).|2. Chaque Bataille dans l'Arène consommera un Ticket, les Tickets peuvent être achetés avec des Gemmes.|3. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|4. Après la fin de la Bataille, les points des joueurs changeront, le gagnant obtiendra des points et le perdant perdra des points, tous les joueurs sont classés avec ces points.|5. Les points que vous obtiendrez sont basés sur la différence entre vos points actuels et les points de votre ennemi (Attention : Vous obtiendriez 0 point si vos points actuels sont beaucoup plus élevés que ceux de votre ennemi)|6. Vous pouvez consulter les 10 dernières Batailles dans l'historique des Batailles.||Récompenses|Les récompenses seront envoyées par rapport à votre classement.|Pour plus de détails regardez 【Récompense Quotidienne】"
 ENERGY_SKILL,Compétence Active
 PAS_SKILL,Compétence Passive
 EQUIP_NO_WAY,Aucun
@@ -941,7 +941,7 @@ PASSWORD_INVALID,Le mot de passe ne peut pas être vide
 END_TEXT,Restant
 SKILL_UNLOCK,Capacité débloquée
 ARENA_CHOOSE_WINDOW,Arène
-ARENA_3V3_HELP,"Règles de la Bataille|1. Le joueur doit tout d'abord déployer 3 équipes de Filles. Vous devez avoir au moins 1 Fille par équipe. Vous pouvez changer la composition à tout moment.|2. Afin d'emporter la victoire vous devez gagner 2 Batailles sur les 3.|3. Vainquez toutes les Filles de l'adversaire dans 1 Bataille pour gagner la Bataille.|4. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient mortes, celle-ci sera considérée comme vaincue.|5. Après la Bataille si vous êtes victorieux vous obtiendrez des points au classement, si vous êtes perdant vous perdrez des points.|6. Vous pouvez revoir vos 10 dernières batailles dans l'Historique des Batailles.||Règles des Récompenses|À la fin de la saison vous obtiendrez des récompenses suivant votre classement."
+ARENA_3V3_HELP,"Règles de la Bataille|1. Le joueur doit tout d'abord déployer 3 équipes de Filles. Vous devez avoir au moins 1 Fille par équipe. Vous pouvez changer la composition à tout moment.|2. Afin d'emporter la victoire vous devez gagner 2 Batailles sur les 3.|3. Vainquez toutes les Filles de l'adversaire dans 1 Bataille pour gagner la Bataille.|4. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Après la Bataille si vous êtes victorieux vous obtiendrez des points au classement, si vous êtes perdant vous perdrez des points.|6. Vous pouvez revoir vos 10 dernières batailles dans l'Historique des Batailles.||Règles des Récompenses|À la fin de la saison vous obtiendrez des récompenses suivant votre classement."
 SET_DEF_FORMATION,Modifier
 SAVE_DEF_FORMATION,Sauvegarder
 ARENA3V3_BATTLE_FORMATION_WINDOW,Bataille
@@ -1206,24 +1206,24 @@ LIMIT_GIFT_TEXT,Vous avez débloqué un pack à durée limité ! Allez vite voir
 IMG_GUIDE_DAILY_MISSION_1,Touchez [c][cc0011]Aller à[-][/c] pour continuer
 IMG_GUIDE_DAILY_MISSION_2,Complétez [c][cc0011]Conditions des tâches[-][/c]
 IMG_GUIDE_DAILY_MISSION_3,Touchez pour [c][cc0011]Collecter[-][/c] les récompenses
-IMG_GUIDE_TAVERN_1,Touchez ici pour commencer la préparation
-IMG_GUIDE_TAVERN_2,Touchez [c][cc0011]Finir[-][/c] pour collecter\nles récompenses
-IMG_GUIDE_TAVERN_3,Touchez [c][cc0011]Accélérer[-][/c]\n pour finir\nimmédiatement
-IMG_GUIDE_TAVERN_4,Touchez [c][cc0011]Verrouiller[-][/c]\npour empêcher\nle rafraîchissement
-IMG_GUIDE_TAVERN_5,Rafraîchir les jobs [c][cc0011]non verrouillés et non commencés[-][/c]
-IMG_GUIDE_TAVERN_6,Complétez les tâches quotidiennes afin d'obtenir\ndes [c][cc0011]récompenses spéciales[-][/c]
-IMG_GUIDE_TAVERN_7,[c][cc0011]Temps[-][/c] requis pour finir les quêtes
-IMG_GUIDE_TAVERN_8,[c][cc0011]Récompenses[-][/c] pour\nfinir ces quêtes
-IMG_GUIDE_TAVERN_9,Conditions afin\nde pouvoir participer
-IMG_GUIDE_TAVERN_10,Touchez [c][cc0011]Remplis. Auto[-][/c]
-IMG_GUIDE_TAVERN_11,Utilisez des [c][cc0011]Filles plus puissantes[-][/c]\npour les quêtes plus difficiles.
+IMG_GUIDE_TAVERN_1,Touchez ici pour commencer le Job
+IMG_GUIDE_TAVERN_2,Touchez [c][cc0011]Finir[-][/c] pour\ncollecter\nles récompenses
+IMG_GUIDE_TAVERN_3,Touchez [c][cc0011]Accélérer[-][/c]\npour finir\nimmédiatement
+IMG_GUIDE_TAVERN_4,Touchez [c][cc0011]Verrouiller[-][/c]\npour empêcher\nl'actualisation
+IMG_GUIDE_TAVERN_5,Actualisez les Jobs [c][cc0011]non verrouillés et non commencés[-][/c]
+IMG_GUIDE_TAVERN_6,Finissez les Jobs Quotidiens pour obtenir\nbeaucoup de [c][cc0011]récompenses[-][/c]
+IMG_GUIDE_TAVERN_7,[c][cc0011]Temps[-][/c] requis pour finir ce Job
+IMG_GUIDE_TAVERN_8,[c][cc0011]Récompenses[-][/c]\nde ce Job
+IMG_GUIDE_TAVERN_9,Conditions des\nFilles nécessaires
+IMG_GUIDE_TAVERN_10,Touchez [c][cc0011]Remplis. Auto[-][/c]\npour commencer automatiquement
+IMG_GUIDE_TAVERN_11,Modifiez [c][cc0011]l'équipe de Job[-][/c]\npour finir les Jobs plus facilement.
 IMG_GUIDE_GAMBLE_1,[c][cc0011]Touchez[-][/c]
-IMG_GUIDE_GAMBLE_2,Acheter un ticket de distributeur
+IMG_GUIDE_GAMBLE_2,Pour acheter un Ticket de Distributeur
 IMG_GUIDE_GAMBLE_3,Boutique
 IMG_GUIDE_GAMBLE_4,[c][cc0011]Actualiser[-][/c] les récompenses
-IMG_GUIDE_GAMBLE_5,[c][cc0011]Toucher[-][/c] pour\nfaire 1 tirage
-IMG_GUIDE_GAMBLE_6,[c][cc0011]Toucher[-][/c] pour\nfaire 10 tirages
-IMG_GUIDE_GAMBLE_7,"Chaque fois que vous faites un tirage vous\npouvez obtenir 10 [c][cc0011]Tickets[-][/c], utilisez-les dans\nla [c][cc0011]boutique[-][/c] pour les échanger contre [c][cc0011]différents objets[-][/c]"
+IMG_GUIDE_GAMBLE_5,[c][cc0011]Touchez[-][/c] pour\nfaire 1 tirage
+IMG_GUIDE_GAMBLE_6,[c][cc0011]Touchez[-][/c] pour\nfaire 10 tirages
+IMG_GUIDE_GAMBLE_7,"Chaque fois que vous faites un tirage vous\npouvez obtenir 10 [c][cc0011]Coupons[-][/c], utilisez-les dans\nla [c][cc0011]Boutique[-][/c] pour les échanger contre [c][cc0011]différents objets[-][/c]"
 IMG_GUIDE_ARENA_1,Veuillez tout d'abord\npréparer votre [c][cc0011]Formation\nDéfensive[-][/c]
 IMG_GUIDE_ARENA_2,Touchez [c][cc0011]Combat[-][/c]
 IMG_GUIDE_ARENA_3,Choisissez le joueur à défier
@@ -1261,12 +1261,12 @@ des [c][cc0011]récompenses[-][/c], en
 perdant vous perdrez 1
 [c][cc0011]Pass[-][/c]"
 IMG_GUIDE_PROPHET_1,Choisissez [c][cc0011]la Maison[-][/c]\nà recruter en\ntouchant à droite
-IMG_GUIDE_PROPHET_2,Touchez le tampon\npour utiliser 1 [c][cc0011]Sceau[-][/c]\nafin de [c][cc0011]Recruter[-][/c]
-IMG_GUIDE_PROPHET_3,Dans Recruter vous n'obtiendrez\nque des Filles [c][cc0011] 4 étoiles[-][/c] et [c][cc0011]5 étoiles[-][/c]\net des Fragments de Filles
+IMG_GUIDE_PROPHET_2,Touchez ici\npour utiliser 1 [c][cc0011]Sceau[-][/c]\nafin de [c][cc0011]Recruter[-][/c]
+IMG_GUIDE_PROPHET_3,Vous n'obtiendrez\nque des Filles [c][cc0011] 4 et 5 étoiles[-][/c] dans Recruter
 IMG_GUIDE_PROPHET_4,"Chaque fois que vous utilisez un Sceau, vous obtiendrez également [c][cc0011]des Dossiers[-][/c], vous pouvez les utiliser dans [c][cc0011]Échange[-][/c]"
 IMG_GUIDE_PROPHET_5,Touchez pour choisir\nles Filles [c][cc0011]que vous\nvoulez échanger[-][/c]
-IMG_GUIDE_PROPHET_6,Touchez [c][cc0011]Échanger[-][/c] pour\nutiliser les Dossiers afin\nde procéder à l'échange
-IMG_GUIDE_PROPHET_7,Vous pouvez choisir de\n[c][cc0011]garder ou refuser[-][/c] l'échange
+IMG_GUIDE_PROPHET_6,Touchez [c][cc0011]Échanger[-][/c] pour\nutiliser les Dossiers afin\nde procéder à l'Échange
+IMG_GUIDE_PROPHET_7,Vous pouvez choisir de\n[c][cc0011]garder ou annuler[-][/c] l'Échange
 IMG_GUIDE_PROPHET_8,"
 Seulement les Filles
 [c][cc0011]4/5 étoiles[-][/c] n\'étant pas
@@ -1307,7 +1307,7 @@ IMG_GUIDE_SHENXUE_3,Choisissez les Filles\nMatérielles [c][cc0011]à utiliser[-
 IMG_GUIDE_SHENXUE_4,[c][cc0011]Touchez[-][/c] pour\nvoir les détails\nde la Fille
 IMG_GUIDE_SHENXUE_5,Le niveau de cette\nFille et ses équipements\n[c][cc0011]resteront[-][/c] les mêmes.
 IMG_GUIDE_SHENXUE_6,[c][cc0011]Touchez[-][/c] ici pour finir\nde Graduer cette Fille
-IMG_GUIDE_SHENXUE_7,"Après la Graduation, les [c][cc0011]Attributs[-][/c]\net les [c][cc0011]Capacités[-][/c] seront améliorés"
+IMG_GUIDE_SHENXUE_7,"Après la Graduation, les [c][cc0011]Attributs[-][/c]\net les [c][cc0011]Compétences[-][/c] seront améliorés"
 GM_IMG_SIZE,Image Originale ({1})
 UPLOAD_FAIL,Échec du téléchargement !
 GM_UPLOAD_LIMIT_TIP,La taille maximale de l'image de téléchargement est {1} M
@@ -1598,11 +1598,11 @@ TEST_FEEDBACK_TEXT_10,Soumettre
 TEST_FEEDBACK_TEXT_11,Changer la note
 TEST_FEEDBACK_TEXT_12,Veuillez sélectionner une note
 TEST_FEEDBACK_TEXT_13,Envoyé
-TOWER_MISC,Combattez\npour atteindre\nle sommet !
+TOWER_MISC,Combattez\npour atteindre\nle sommet
 TRIAL_MISC,Participez aux\nbatailles du passé
-DUNGEON_MISC,Neutralisez la menace !
-ARENA_MISC,"Menez les Filles à la bataille, battez vous pour la Gloire !"
-ARENA_3V3_MISC,Ennemi détecté\nEngagez !
+DUNGEON_MISC,Neutralisez\nla menace
+ARENA_MISC,"Menez les Filles à la\nbataille, battez vous\npour la Gloire"
+ARENA_3V3_MISC,Engagez\nles ennemis
 ARENA_PARTNER_MISC,Battez-vous\nen équipe
 PERSON_BTN_1,Compte
 PERSON_BTN_2,Serveur
@@ -1857,7 +1857,7 @@ HERO_CHALLENGE_TIPS3,"Êtes-vous certain de vouloir réinitialiser le défi de c
 HERO_CHALLENGE_TEAM_TITLE,Voir
 HERO_CHALLENGE_TIPS4,Choisissez une des récompenses
 HERO_CHALLENGE_TIPS5,Vous avez obtenu la bénédiction {1} pendant ce défi
-HERO_CHALLENGE_MISC,Découvrez les\nsecrets
+HERO_CHALLENGE_MISC,Découvrez \nleurs secrets
 OTHER_BATTLE,Arène
 HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu’utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d’au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l’étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n’obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l’étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement.Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leurs Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si les nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
 ALREADY_DIE,La Fille a été vaincue
@@ -2070,7 +2070,7 @@ ARENA_ALL_SERVER_ROUND_TEXT_5,Demi-Finale
 ARENA_ALL_SERVER_ROUND_TEXT_6,Finale
 MATCH_NUM4,4ème bataille
 MATCH_NUM5,5ème bataille
-ARENA_ALL_SERVER_MISC,Deviens le\nChampion !
+ARENA_ALL_SERVER_MISC,Devenez\nle Champion
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Vous pouvez choisir de soutenir un autre joueur après le début de la manche de qualification. Si le joueur gagne, vous gagnerez le pari, et vice versa.|2. Les joueurs ne peuvent seulement parier sur eux qu’en Finale.|3. Le système décidera automatiquement de la bataille qui est mise sur ce tour. Les batailles avec des joueurs de la même Guilde, du même serveur ou de la même région linguistique seront choisies en premier.|4. Les pièces pouvant être placées dans un pari dépendent du progrès que vous avez atteint dans la Campagne. Le montant correspondra au nombre de pièces que vous pouvez obtenir dans l'Auto-Bataille à l’étape la plus élevée que vous avez atteint dans la campagne en une journée. (Sans compter les bonus VIP et d’abonnement).|5. Si le joueur que vous avez choisi gagne, vous obtiendrez le double du nombre de pièces que vous avez placé dans le pari. Les récompenses seront envoyées par courrier."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. Dans Champion Précédent vous pourrez voir tous les Champions en commençant depuis la première Saison.|2. Vous pouvez voir le Top 8 des joueurs de chaque saison en allant sur la saison correspondante.
 ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison：
@@ -2179,7 +2179,7 @@ FRIEND_TEAM_BOSS_RANK_DESC,Aperçu
 END,Fin
 FRIEND_TEAM_BOSS_MSG_WINDOW,Messages
 Edit_Name,Changer de Nom
-FRIEND_TEAM_BOSS_DESC,Vainquez le Chaos\nAvec vos amis
+FRIEND_TEAM_BOSS_DESC,Vainquez le Chaos\navec vos amis
 FRIEND_TEAM_BOSS_LEVEL,Niveau de Sécurité
 FRIEND_TEAM_BOSS_JOIN_LIMIT2,Vous ne pouvez pas postuler pour une autre équipe en ayant déjà une équipe
 FRIEND_TEAM_BOSS_KICK_CONFIRM,Voulez-vous enlever ce coéquipier ? (Tentatives restantes {1})
@@ -2244,7 +2244,7 @@ HOUSE_TEXT_31,Vous devez tout d'abord terminer l'action du meuble en cours
 HOUSE_TEXT_32,Voulez-vous sauvegarder ce placement ?
 HOUSE_TEXT_33,Êtes-vous certain de vouloir annuler le placement actuel ?
 HOUSE_TEXT_34,La Fille ne peut actuellement pas entrer dans le Dortoir
-ACADEMY_ASSESSMENT_MISC,Devenez plus puissant
+ACADEMY_ASSESSMENT_MISC,Devenez\nplus puissant
 SCHOOL_PRACTICE_TITLE_01,Maison Fantôme
 SCHOOL_PRACTICE_TITLE_02,Maison Humain
 SCHOOL_PRACTICE_TITLE_03,Maison Monstre
@@ -3351,7 +3351,7 @@ ENTRANCE_TEST_HELP_DES_3_1,"Appuyez ici pour entrer en [c][cc0011]combat[-][/c].
 ENTRANCE_TEST_HELP_DES_3_2,"Vous aurez besoin d'un Certificat de Test d'Admission pour une bataille.\nChaque jour à 00:00 (UTC/GMT 0), votre nombre de Certificat de Test d'Admission sera réinitialisé à [c][cc0011]10[-][/c].\nDes Certificats de Test d'Admission supplémentaires sont achetables avec des Gemmes."
 ENTRANCE_TEST_HELP_DES_3_3,"Pendant l'événement, votre classement et les points que vous avez obtenus s'affichent ici."
 ENTRANCE_TEST_HELP_DES_3_4,Touchez l'icône de [c][cc0011]Récompenses[-][/c] pour accéder à l'interface de Tâches de la Nouvelle Fille.\nDes récompenses supplémentaires seront débloquées si vous achetez [c][cc0011]Avis d'admission[-][/c].
-ACTIVITY_WARMUP_PACK_TEXT04,En prenant ce pack vous obtiendrez ：
+ACTIVITY_WARMUP_PACK_TEXT04,"Après l'achat,\nvous obtiendrez："
 ACTIVITY_WARMUP_PACK_TEXT05,Valeur
 CHESS_EXCHANGE,Échanger
 CHESS_GET_PARTNER,Obtenir
@@ -4176,7 +4176,7 @@ SMASH_EGG_HELP,"1. Durant cet événement, vous devez briser les œufs afin de r
 LIMITED_TASK_TEXT_01,Complétez les Quêtes suivantes et recevez les récompenses par courrier\nPS : Filles obtenues par Échange non inclus
 LIMITED_TASK_HELP,"1. Complétez les Quêtes pour pouvoir obtenir les récompenses correspondantes. Les récompenses de chaque palier ne peuvent être collectées qu'une seule fois. |2. Certaines Quêtes requièrent plusieurs conditions, vous devez toutes les remplir afin de pouvoir collecter les récompenses. |3. Cet événement n'inclut pas les Filles obtenues par Échange ou par Inverse."
 SMASH_EGG_TEXT_06,Briser {2}*{1}
-LARGE_ACTIVITY_EGG_TEXT,Œuf de Pâques
+LARGE_ACTIVITY_EGG_TEXT,Bouteille\nà la mer
 BP_LOTTERY_CONFIRM,Vous voulez utiliser Autocollant*{1} pour échanger des récompenses ?
 SMASH_EGG_TEXT_07,Briser X{1}
 SMASH_EGG_TEXT_08,Touchez les œufs pour voir les récompenses
@@ -4670,7 +4670,7 @@ PERSON_DRESS_MAIN_11,Bonus Spéciaux
 PERSON_DRESS_MAIN_12,Améliorer
 PERSON_DRESS_MAIN_13,Pas de Bonus
 PERSON_DRESS_MAIN_14,Bonus d'Attribut
-PERSON_DRESS_MAIN_HELP,"1. L'Audace, le Charme et le Génie sont 3 attributs disponibles uniquement dans les batailles : Arène, Arène d'Élite, Arène 3V3, Arène Ultime et Terrain de Sport.|2. Durant les batailles mentionnées ci-dessus, le système comparera respectivement vos 3 Attributs avec ceux de votre adversaire. Si votre attribut est plus élevé que celui de votre adversaire, vous recevrez des Bonus (tel que mentionné ci-dessous). Dans le cas où votre attribut est plus bas que celui de votre adversaire, vous ne serez pas désavantagé, mais n'aurez aucun Bonus.||Différence de：|1/100/200/300/500/800/1300/2100/3400/5500||Audace：|Augmente tous vos dégâts de 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%||Charme：|Augmente votre Résistance Totale de 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%||Génie：|Augmente vos chances de Contrôle de 1,5%%/3%%/4,5%%/6%%/7,5%%/9%%/10,5%%/12%%/13,5%%/15%%|Augmente votre Immunité de 1,5%%/3%%/4,5%%/6%%/7,5%%/9%%/10,5%%/12%%/13,5%%/15%%|Augmente votre Vitesse de|2/4/6/8/10/12/14/16/18/20"
+PERSON_DRESS_MAIN_HELP,"1. L'Audace, le Charme et le Génie sont 3 attributs disponibles uniquement dans les batailles : Arène, Arène d'Élite, Arène 3V3, Arène Ultime, Terrain de Sport et les Échos du Temps.|2. Durant les batailles mentionnées ci-dessus, le système comparera respectivement vos 3 Attributs avec ceux de votre adversaire. Si votre attribut est plus élevé que celui de votre adversaire, vous recevrez des Bonus (tel que mentionné ci-dessous). Dans le cas où votre attribut est plus bas que celui de votre adversaire, vous ne serez pas désavantagé, mais n'aurez aucun Bonus.||Différence de：|1/100/200/300/500/800/1300/2100/3400/5500||Audace：|Augmente tous vos dégâts de 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%||Charme：|Augmente votre Résistance Totale de 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%||Génie：|Augmente vos chances de Contrôle de 1,5%%/3%%/4,5%%/6%%/7,5%%/9%%/10,5%%/12%%/13,5%%/15%%|Augmente votre Immunité de 1,5%%/3%%/4,5%%/6%%/7,5%%/9%%/10,5%%/12%%/13,5%%/15%%|Augmente votre Vitesse de|2/4/6/8/10/12/14/16/18/20)|Ces Bonus seront multipliés par 5 dans les Échos du Temps."
 PERSON_DRESS_HELP,"1. Dans la Cabine d'Essayage, vous pouvez y personnaliser votre Tenue. Cette Tenue sera vue par tous les joueurs.|2. Votre Tenue comprend 5 éléments, la Tête, le Haut, le Bas, les Accessoires et les Objets, que vous pouvez personnaliser séparément.|3. Vous pouvez choisir entre un ou plusieurs Styles. Certains seront directement débloqués une fois obtention, d'autres pourront uniquement être débloqués avec des Gemmes une fois obtention. Une fois débloqué, vous pouvez changer de Style comme bon vous semble.|4. Chaque élément de Tenue que vous possédez vous permettra d'obtenir des Attributs tels que l'Audace, le Charme et le Génie. Nul besoin de les porter pour activer ces Attributs. Vous pouvez améliorer les éléments de votre Tenue dans l'Armoire, ce qui vous permettra d'obtenir de meilleurs attributs. Changer de Style ou débloquer un nouveau Style influera uniquement l'aspect physique mais n'influera pas vos Attributs ou vos Bonus Spéciaux.|5. Chaque élément de Tenue que vous possédez vous permettra d'obtenir des Bonus Spéciaux. Nul besoin de les porter pour activer ces Bonus Spéciaux. Chaque Tenue vous apportera des Bonus différents. Plus votre Tenue sera étoilée, plus les Bonus seront élevés."
 PERSON_DRESS_MAIN_15,Galerie
 PERSON_DRESS_MAIN_16,Bientôt
@@ -4732,7 +4732,7 @@ GUILD_OPWER_LIMIT_LABEL2,Seuil de Puissance
 ACTIVITY_BEACH_ISLAND_HELP,"1. Durant cet événement, terminez les quêtes et obtenez des récompenses. Les quêtes seront réinitialisées durant la deuxième semaine de l'événement.|2. Utilisez les Filles pré-définies pour combattre les ennemis et passer les Étapes. Les récompenses d'Étapes sont collectables qu'une seule fois.|3. Passez les Étapes et collectez des étoiles, qui vous permettront d'obtenir des récompenses après en avoir collecté un certain nombre.|4. Les objectifs ne doivent pas obligatoirement être complétés en un combat, mais peuvent être complétés séparément.|5. Il y a 10 Étapes au total, les Étapes (6-10) seront débloquées durant la 2ème semaine de l'événement."
 ACTIVITY_BEACH_ISLAND_TEXT01,Hebdomaire
 ACTIVITY_BEACH_ISLAND_TEXT02,Rafraîchit
-ACTIVITY_BEACH_ISLAND_TEXT03,Veuillez passer l'Étape précédente pour y continuer
+ACTIVITY_BEACH_ISLAND_TEXT03,Veuillez d'abord passer l'Étape précédente
 ACTIVITY_BEACH_ISLAND_TEXT04,Étape - {1}
 ACTIVITY_BEACH_ISLAND_TEXT05,Ennemi
 ACTIVITY_BEACH_ISLAND_TEXT06,Récompenses d'Étape
@@ -4953,7 +4953,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,Nouveautés du Rang {1}：|{2}|Nouveautés du Rang {3}：|{4}|Nouveautés du Rang {5}：|{6}
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Retour de Ruben
+WARMUP_ARENA_TASK_INFO_2,Reine du Nord
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5090,60 +5090,60 @@ SELECT_ALL_YES,Tout Cocher
 SELECT_ALL_NO,Tout Décocher
 SELECT_ALL_TEXT01,Rien à cocher pour le moment !
 ACTIVITY_MONTHLY_TEXT003,Aperçu
-TIME_CLOISTER_HELP01,時間迴廊幫助文本
-TIME_CLOISTER_HELP02,時間迴廊觀測界面幫助文本
-TIME_CLOISTER_HELP03,時間迴廊星空儀界面幫助文本
-TIME_CLOISTER_HELP04,時間迴廊關卡界面幫助文本
+TIME_CLOISTER_HELP01,"1. Obtenez des récompenses après une Exploration dans les Échos du Temps.|2. Un premier Corridor Temporel est débloqué, déployez vos Filles et commencez l'Exploration.|3. La puissance totale de vos Filles déployées sera convertie en Attributs : l'Audace, le Charme et le Génie.|4. Dans les Échos du Temps, la durée maximale d'une Exploration dépend de la quantité de Montre à Gousset que vous possédez. Une Montre à Gousset sera consommée chaque 6 minutes.|5. Utilisez vos Poussières Temporelles pour accélérer une Exploration, cette action consommera également la quantité correspondante de Montre à Gousset. Moyen d'obtention de Poussière Temporelle : Succès et Étape.|6. Augmentez l'Avancée Totale d'un Corridor Temporel en complétant les tâches dans le Succès. Un nouveau Corridor Temporel sera débloqué, une fois que l'Avancée Totale du Corridor Temporel précédent aura atteint 85%%."
+TIME_CLOISTER_HELP02,"1. Durant votre Exploration dans les Échos du Temps, 1 Carte sera aléatoirement déclenchée toutes les 5 minutes. Il y existe 3 types de Carte : Carte de Ressources, Carte de Défis et Carte d'Événements. Chaque type de Carte a son propre effet.|2. Lorsqu'une Carte de Ressources est déclenchée, vous recevrez des ressources en fonction des Cartes obtenues lors de l'Exploration. Ces dernières vous seront envoyées après le calcul de l'Exploration.|3. Lorsqu'une Carte de Défis est déclenchée, vous entrerez dans une bataille spéciale où la puissance de votre Équipe est convertie en vos 3 attributs de Tenue : Audace, Charme, Génie. En noir s'afficheront vos attributs fournis par vos Tenues additionnés à ceux founis par votre Planétarium. En vert s'afficheront vos attributs fournis par vos Filles déployées.|4. Après la fin de l'Exploration, vous recevrez des récompenses aléatoires en fonction des Cartes de Défis obtenues. Les récompenses d'une bataille victorieuse seront plus riches que celle d'une défaite.|5. Lorsqu'une Carte d'Événements est déclenchée, vous pourrez obtenir soit des Cartes de Souvenirs soit des Cartes de Points. Les Cartes de Points vous permettront de compléter certaines tâches dans le Succès de ce Corridor Temporel (une fois le calcul de l'Exploration terminé).|6. L'Exploration prendra fin une fois que toutes vos Montres à Gousset seront consommées, ou si vous arrêtez l'Exploration manuellement. Une fois l'Exploration finie, vous devrez toucher sur ""calculer vos récompenses"" afin de voir les résultats et ainsi obtenir vos récompenses.|7. Les Résultats de Calcul de votre Exploration comprendra vos récompenses obtenues durant l'Exploration ainsi que la quantité de Fragment Galactique obtenue en fonction de votre Score Total obtenu. Enfin, le système évaluera les tâches que vous avez terminées dans le Succès de ce Corridor Temporel."
+TIME_CLOISTER_HELP03,"1. Après avoir terminé une Exploration, vous recevrez des Fragments Galactiques pour le Planétarium de ce Corridor Temporel.|2. Il y existe 2 types de technique pour chaque Corridor Temporel. Utilisez les Fragments Galactiques pour améliorer le niveau de vos techniques. Certaines techniques nécessiteront de remplir des conditions avant de pouvoir les déverrouiller.|3. Les techniques améliorées durant une Exploration en cours prendront effet uniquement à partir de la prochaine Exploration."
+TIME_CLOISTER_HELP04,"1. Chaque Corridor Temporel comprend 11 étapes et chaque étape est un Défi. Chaque 10 premières étapes sont des Étapes Normales et chaque 11ème étapes est une Étape Spéciale. Utilisez 1 Engrenage Temporel pour chaque défi.|2. Les ennemis de chaque étape possèdent également les 3 Attributs suivants : Audace, Charme, Génie. Vos 3 attributs correspondent aux statistiques de vos Tenues et des techniques de votre Planétarium.|3. Rendez vous sur l'interface de la Cabine d'Essayage, appuyez sur l'icône ""!"" pour en savoir plus sur les effets de ces 3 attributs.|4. Après avoir passé les Étapes Normales (1ère à 10ème), vous recevrez les récompenses d'Étape (celles-ci ne peuvent être collectées qu'une seule fois et ne seront pas être réinitialisées).|5. L'ennemi de l'Étape Spéciale (11ème) peut se ressusciter sans limite. Chaque fois que vous défierez cet ennemi, le système enregistrera vos dégâts infligés. Votre maximum de dégâts infligés pour cette étape sera utilisé pour vous classer parmi la liste des autres joueurs ayant également défié cette étape. Les résultats de classement sont calculés chaque vendredi à (UTC/GMT 00:00), ainsi vous recevrez des récompenses en fonction de votre classement."
 TIME_CLOISTER_TEXT01,Succès
-TIME_CLOISTER_TEXT02,關卡
-TIME_CLOISTER_TEXT03,開始觀測
-TIME_CLOISTER_TEXT04,總觀測進度：
-TIME_CLOISTER_TEXT05,該迴廊暫未開放，敬請期待
-TIME_CLOISTER_TEXT06,時間迴廊「{1}」的探索進度達到80%%後解鎖
-TIME_CLOISTER_TEXT07,該迴廊暫未解鎖
-TIME_CLOISTER_TEXT08,觀測中可能會遭遇戰鬥，請選擇出戰戰姬。根據出戰戰姬的總戰力，增加此次觀測中戰鬥的屬性（出戰戰姬在觀測中無法更改）
-TIME_CLOISTER_TEXT09,正在其他時間迴廊中進行觀測
-TIME_CLOISTER_TEXT10,繼續觀測
-TIME_CLOISTER_TEXT11,是否提前結束此次觀測？
-TIME_CLOISTER_TEXT12,觀測已結束
-TIME_CLOISTER_TEXT13,Voir
-TIME_CLOISTER_TEXT14,觀測加速
-TIME_CLOISTER_TEXT15,使用「時間之塵」令觀測加速，加速時會消耗對應數量的「回溯懷錶」
-TIME_CLOISTER_TEXT16,剩餘時間
-TIME_CLOISTER_TEXT17,觀測已結束，無需加速
-TIME_CLOISTER_TEXT18,觀測加速成功
-TIME_CLOISTER_TEXT19,觀測中……
-TIME_CLOISTER_TEXT20,觀測完成，點擊進行結算
-TIME_CLOISTER_TEXT21,補給卡
-TIME_CLOISTER_TEXT22,挑戰卡
-TIME_CLOISTER_TEXT23,事件卡
+TIME_CLOISTER_TEXT02,Étapes
+TIME_CLOISTER_TEXT03,Explorer
+TIME_CLOISTER_TEXT04,Avancée Totale：
+TIME_CLOISTER_TEXT05,Contenu à venir
+TIME_CLOISTER_TEXT06,Débloqué après que l'Avancée Totale du Corridor Temporel「{1}」ait atteint 85%%.
+TIME_CLOISTER_TEXT07,Bloqué
+TIME_CLOISTER_TEXT08,"Durant l'Exploration, vous pourrez déclencher des Cartes Défis et avoir à vous battre. Veuillez sélectionner les Filles pour votre Équipe de combat. Vos Attributs dépendront de la puissance totale des Filles de votre Équipe (modification de l'Équipe impossible durant une Exploration)."
+TIME_CLOISTER_TEXT09,Vous êtes en train d'explorer dans un autre Corridor Temporel
+TIME_CLOISTER_TEXT10,En cours
+TIME_CLOISTER_TEXT11,Voulez-vous mettre fin à cette Exploration maintenant ?
+TIME_CLOISTER_TEXT12,Exploration terminée
+TIME_CLOISTER_TEXT13,Résultats
+TIME_CLOISTER_TEXT14,Accélérer
+TIME_CLOISTER_TEXT15,"Utilisez les Poussières Temporelles pour accélérer l'Exploration. Lors de l'accélération, le nombre correspondant de Montre à Gousset sera consommé."
+TIME_CLOISTER_TEXT16,Temps Restant
+TIME_CLOISTER_TEXT17,"L'Exploration est terminée, nul besoin d'accélérer."
+TIME_CLOISTER_TEXT18,Exploration accélérée !
+TIME_CLOISTER_TEXT19,En cours d'Exploration...
+TIME_CLOISTER_TEXT20,"Exploration terminée,\ntouchez pour calculer vos résultats."
+TIME_CLOISTER_TEXT21,Ressources
+TIME_CLOISTER_TEXT22,Défis
+TIME_CLOISTER_TEXT23,Événements
 TIME_CLOISTER_TEXT24,Historique
-TIME_CLOISTER_TEXT25,補給卡預覽
-TIME_CLOISTER_TEXT26,挑戰卡預覽
-TIME_CLOISTER_TEXT27,事件卡預覽
-TIME_CLOISTER_TEXT28,隱藏未解鎖卡牌
-TIME_CLOISTER_TEXT29,獎勵總覽
-TIME_CLOISTER_TEXT30,補給獎勵
-TIME_CLOISTER_TEXT31,挑戰獎勵
-TIME_CLOISTER_TEXT32,星空儀
-TIME_CLOISTER_TEXT33,觀測結算
-TIME_CLOISTER_TEXT34,數據總覽
-TIME_CLOISTER_TEXT35,觀測時長
-TIME_CLOISTER_TEXT36,戰鬥勝率
-TIME_CLOISTER_TEXT37,觀測得分
-TIME_CLOISTER_TEXT38,結算獎勵
-TIME_CLOISTER_TEXT39,觀測獎勵
-TIME_CLOISTER_TEXT40,消耗「星空碎片·無空之殿」可升級星空儀科技
-TIME_CLOISTER_TEXT41,升級
-TIME_CLOISTER_TEXT42,升級預覽
+TIME_CLOISTER_TEXT25,Aperçu des Cartes de Ressources
+TIME_CLOISTER_TEXT26,Aperçu des Cartes de Défis
+TIME_CLOISTER_TEXT27,Aperçu des Cartes d'Événements
+TIME_CLOISTER_TEXT28,Cacher les Cartes bloquées
+TIME_CLOISTER_TEXT29,Aperçu des récompenses
+TIME_CLOISTER_TEXT30,Récompenses de Ressources
+TIME_CLOISTER_TEXT31,Récompenses de Défis
+TIME_CLOISTER_TEXT32,Planétarium
+TIME_CLOISTER_TEXT33,Résultats
+TIME_CLOISTER_TEXT34,Détails
+TIME_CLOISTER_TEXT35,Durée de l'Exploration
+TIME_CLOISTER_TEXT36,Ratio de Victoire
+TIME_CLOISTER_TEXT37,Score Total
+TIME_CLOISTER_TEXT38,Récompenses de Score
+TIME_CLOISTER_TEXT39,Récompenses d'Exploration
+TIME_CLOISTER_TEXT40,Utilisez les Fragments Galactiques · Sanctuaire du Néant pour améliorer le niveau du Planétarium.
+TIME_CLOISTER_TEXT41,Améliorer
+TIME_CLOISTER_TEXT42,Aperçu de l'Amélioration
 TIME_CLOISTER_TEXT43,Succès：{1}
-TIME_CLOISTER_TEXT44,在此迴廊中進行觀測，達成下列成就即可提高探索度，探索度達到80%%後可解鎖新的時間迴廊
-TIME_CLOISTER_TEXT45,探索度
-TIME_CLOISTER_TEXT46,關卡：{1}
-TIME_CLOISTER_TEXT47,需通關上一個關卡
-TIME_CLOISTER_TEXT48,需要解鎖此迴廊的星空儀科技「關卡解鎖」
+TIME_CLOISTER_TEXT44,"Complétez les tâches dans le Succès pour augmenter votre Avancée Totale dans ce Corridor Temporel. Un nouveau Corridor Temporel sera débloqué, une fois que l'Avancée Totale du Corridor Temporel aura atteint 85%%."
+TIME_CLOISTER_TEXT45,Avancée Totale
+TIME_CLOISTER_TEXT46,Étape：{1}
+TIME_CLOISTER_TEXT47,Passer l'Étape précédente pour continuer
+TIME_CLOISTER_TEXT48,Débloquez la technique「Déverrouillage d'Étape」du Planétarium de ce Corridor Temporel
 PUB_MISSION_AUTO_TEXT001,Parchemin de Jobs (Avancé) Insuffisant !
-TIME_CLOISTER_TEXT49,暫無觀測記錄
+TIME_CLOISTER_TEXT49,Aucun Historique
 ACTIVITY_MONTHLY_TEXT004,Voulez-vous sauvegarder les Compétences Pratiques choisies ?
 ALTAR_INFO_1,Cette Fille n'a pas besoin d'être inversée
 ALTAR_INFO_2,"Après l'avoir inversée, cette Fille reviendra à son état original, voulez-vous continuer ?"
@@ -5155,4 +5155,74 @@ ARENA_TEAM_RANK_DESC_NEW,Classement Actuel：{1} Maintenez jusqu'à la fin de la
 ACTIVITY_MONTHLY_TEXT008,Point(s) Restant(s)：
 ACTIVITY_MONTHLY_TEXT009,Voulez-vous dépenser {1} Gemmes pour acheter ?
 ALTAR_INFO_4,Aperçu
-ACTIVITY_ENTRANCE_TEST_RECORD_HELP,入學測驗戰鬥記錄幫助文本
+ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Durant cet événement, vous obtiendrez et perdrez des points en fonction de la différence entre vos points actuels et ceux de votre adversaire. Si vous gagnez une bataille (Attaque), plus votre adversaire a de point, plus vous obtiendrez de point.|2. Si vous perdez une Attaque contre un adversaire, vous ne perdrez pas de point.|3. En Défense, les points obtenus pour une victoire et les points perdus pour une défaite seront réduit de moitié."
+NEW_ARENA_ALL_SERVER_HELP,"
+L’Arène Ultime est une Arène en interserveur qui permet aux tous les joueurs d’y participer.
+La durée de chaque saison est 28 jours. Chaque saison se divise en 5 phases : Préparation de Combat, Ruée de Point, Élimination, Finaliste et Trêve.|1.Préparation de Combat|(1) Durée : 1ère journée de chaque saison. 
+(2)Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour. 
+(2) Pendant cette phase, utilisez vos Tickets de l’Arène pour combattre contre d’autres joueurs. Vous pouvez également actualiser la liste des adversaires (5 fois au maximum par jour).
+(3) Vos 10 derniers combats sont enregistrés dans l’Historique.|3.Rang|(1) Il y en a 6 Rangs pendant la phase de Ruée de Point : Bronez, Argent, Or, Diamant, Maître, Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) se compose de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
+(2) il vous faudra atteindre 100 points dans votre division actuelle, qui vous permettront d’accéder à une promotion. Les Top 320 joueurs du Rang Maître seront promus au Rang Grand Maître.
+(3) Vous vous serez classé Bronez V pour la première fois que vous participerez à la Ruée de Point. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des Points en fonction du votre Rang de la saison précédente.|4.Règle de Combat|(1) L’Arène Ultime adopte un nouvel système de remplaçant. Votre Équipe se divisent en 2 parties : Équipe de Combat et Équipe de Remplaçant. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels ; les Filles remplaçantes seront sur le champ de bataille dans l\'ordre en remplaçant les Filles vaincues (les Filles remplaçantes de la ligne avant seront mis à la place de la ligne avant en priorité, les Filles remplaçantes de la ligne arrière seront mis à la place de la ligne arrière en priorité). Si toutes les Filles d\'une Équipe soient vaincue, celle-ci sera considérée comme Défaite.
+(2) Chaque Fille ne peut combattre pendant 2 tours au maximum, si elle n’est pas encore vaincue après ces 2 tours, elle sera obligatoirement tiré du champ de bataille (peut considéré comme vaincue). 
+(3) Vous pouvez également choisir les Serviteurs à combattre dans l’ordre. Après la Défaite d’un tour, les Serviteurs remplaçants seront sur le champ de bataille dans l’ordre. Après la Victoire d’un tour, le Serviteur actuel continuera à combattre.
+(4) Le nombre des Filles remplaçantes et des Serviteurs remplaçants est différent en fonction du Rang.
+ Bronze : Aucun remplaçant
+ Argent：2 Filles remplaçantes de la ligne avant, 4 Filles remplaçantes de la ligne arrière, 2 Serviteurs remplaçants
+ Or：4 Filles remplaçantes de la ligne avant, 8 Filles remplaçantes de la ligne arrière, 3 Serviteurs remplaçants
+ Diamant, Maître, Grand Maître：8 Filles remplaçantes de la ligne avant, 16 Filles remplaçantes de la ligne arrière, 5 Serviteurs remplaçants
+(5) Lors du choix d\'un adversaire à combattre, le nombre correspondant de remplaçants sera sélectionné en fonction du Rang de cet adversaire.
+(6) La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5.Élimination&Finaliste|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Maître se divise aléatoirement en 5 Groupes (Chaque Groupe se compose de 64 joueurs) pour l’Élimination. S’il y a moins de 320 joueurs du Rang Maître, les joueurs participeront à l’Élimination en fonction de leurs Classement, jusqu\'à ce que moins de 64 joueurs ne puissent former un Groupe (Par exemple, S’il y a 300 joueurs du Rang Maître, les premiers 256 y participeront, les 44 restes ne pourront pas y parcitiper). S’il y a moins de 64 joueurs du Rang Maître, les Top 64 joueurs du Classement Total pariticperont à l’Élimination. 
+(2) Il n’y a qu’une bataille par jour et la période de calcul est de 0:00 (UTC/GMT 0) à 2 (UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas enregistrer vos Équipes.
+(3) Règle de Combat (Élimination&Finaliste) 
+Pendant ces 2 phases, vous ne pouvez déployer que des Filles pouvant atteindre au moins la forme 10 étoiles. Durant la bataille, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attribus acutels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront niveaux 180, les Auras seront niveaux 50, les niveaux de Noyaux Précieux seront conservés. Les statistiques du Laboratoire de la Guilde seront tous au maximum. Vous garderez les statistiques des Skins, du bonus de Faveur, des Antiquités et des potentiels que vous possèdez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. 
+Durant la bataille, les PV et l’Attaque des Filles sera multiplié selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6.Trêve|(1) Durée : 2 jours après la fin de la phase – Finaliste.|7.Temple de la Gloire|(1) Les Top 8 joueurs de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire. 
+(2) Le nombre de fois Champion comprit les fois que vous êtes devenu Champion avant cette nouvelle version de l’Arène Ultime.|8.Quête Journalière|(1) Pendant la phase – Ruée de Point, vous pourrez compléter les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9.Récompenses de Calcul|(1) Après la fin de phase - Ruée de Point, les récompenses vous seront envoyées en fonction du votre Rang actuel.
+(2) Après la fin de phase – Finaliste, le Cadre d’Avatar vous seront envoyé en fonction du votre Classement."
+NEW_ARENA_ALL_SERVER_RANK_1,[c][399d21]Bronze {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_2,[c][6b7a86]Argent {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_3,[c][e6b300]Or {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_4,[c][2587e2]Diamant {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_5,[c][ea7900]Maître[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_6,[c][ee2d5a]Grand Maître[-][/c]
+NEW_ARENA_ALL_SERVER_TEXT_1,Ruée de Points
+NEW_ARENA_ALL_SERVER_TEXT_2,Classement de Rang
+NEW_ARENA_ALL_SERVER_TEXT_3,Classement Total
+NEW_ARENA_ALL_SERVER_TEXT_4,Points
+NEW_ARENA_ALL_SERVER_TEXT_5,Ligne Avant
+NEW_ARENA_ALL_SERVER_TEXT_6,Ligne Arrière
+NEW_ARENA_ALL_SERVER_TEXT_7,Remplaçant de la ligne avant
+NEW_ARENA_ALL_SERVER_TEXT_8,Remplaçant de la ligne arrière
+NEW_ARENA_ALL_SERVER_TEXT_9,Débloqué après avoir atteint le Rang Argent
+NEW_ARENA_ALL_SERVER_TEXT_10,Débloqué après avoir atteint le Rang Or
+NEW_ARENA_ALL_SERVER_TEXT_11,Débloqué après avoir atteint le Rang Diamant
+NEW_ARENA_ALL_SERVER_TEXT_12,Actualiser({1})
+NEW_ARENA_ALL_SERVER_TEXT_13,Rang Actuel :
+NEW_ARENA_ALL_SERVER_TEXT_14,Récompense Actuelle :
+NEW_ARENA_ALL_SERVER_TEXT_15,Les récompenses vous seront envoyées en fonction de votre Rang après la fin de Ruée de Points
+NEW_ARENA_ALL_SERVER_TEXT_16,Retourner les cartes automatiquement
+NEW_ARENA_ALL_SERVER_TEXT_17,Groupe {1}
+NEW_ARENA_ALL_SERVER_TEXT_18,Nombre de fois\nChampion
+DRIFT_BOTTLE_AWARD_WINDOW,Aperçu des récompenses
+DRIFT_BOTTLE_TEXT_01,Récompenses
+DRIFT_BOTTLE_TEXT_02,Ouvrir
+DRIFT_BOTTLE_TEXT_03,Bouteille Usée
+DRIFT_BOTTLE_TEXT_04,Bouteille Ordinaire
+DRIFT_BOTTLE_TEXT_05,Bouteille Précieuse
+DRIFT_BOTTLE_HELP,"1. Durant cet événement, vous pourrez obtenir des récompenses en ouvrant 3 types de Bouteilles.|2. Vous devez posséder une Bouteille à la mer avant de pouvoir l'ouvrir.|3. Après avoir ouvert un certain nombre de Bouteille à la mer, vous recevrez des récompenses de palier par courrier.|4. En ouvrant une Bouteille Normale ou une Bouteille Précieuse, vous ne pourrez pas obtenir les Skins que vous possédez déjà. (À moins que vous possédiez déjà tous ces Skins)|5. Moyen d'obtention de Bouteille Usée : Récompenses Quotidiennes, Achat avec des Gemmes (30 fois au maximum), Collecter des Branches de Corail, Cadeaux Mystères, Pack de Grande Valeur, Pack Surprise de Skin et Pack Surprise.|Moyen d'obtention de Bouteille Normale : Bouteille Usée, Cadeaux Mystères, Pack de Grande Valeur, Pack Surprise de Skin et Pack de Bouteille à la mer.|Moyen d'obtention de Bouteille Précieuse : Bouteille Normale, Cadeaux Mystères, Pack de Grande Valeur, Pack de Bouteille à la mer et Pack Surprise."
+DRIFT_BOTTLE_TEXT_06,Ouvrir {2}*{1}
+DRIFT_BOTTLE_TEXT_07,Ouvrir X{1}
+DRIFT_BOTTLE_TEXT_08,Touchez les Bouteilles pour voir les récompenses.
+NEW_ARENA_ALL_SERVER_TEXT_19,Plus aucune chance d'actualisation pour aujourd'hui
+DRIFT_BOTTLE_TEXT_09,Ouvrez les Bouteilles et obtenez des récompenses !
+WARM_UP_GIFT_TEXT_01,Obtenable dans le Test d'Admission
+WARM_UP_GIFT_TEXT_02,Obtention Immédiate
+DRIFT_BOTTLE_TEXT_10,Ouvrir X1
+NEW_ARENA_ALL_MISSION_REFRESH,Quête(s) Actualisée(s)
+NEW_ARENA_ALL_MATCH_ERROR,"L'adversaire a modifié son équipe, veuillez choisir un autre adversaire."
+TIME_CLOISTER_TEXT50,Technique I
+TIME_CLOISTER_TEXT51,Technique II
+TIME_CLOISTER_TEXT52,Carte de Ressources
+TIME_CLOISTER_TEXT53,Carte de Défis
+TIME_CLOISTER_TEXT54,Carte d'Événements
+TIME_CLOISTER_MISC,Explorez les\nCorridors Temporels

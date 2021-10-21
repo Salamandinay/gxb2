@@ -1142,7 +1142,7 @@ FINAL_DETAIL,Final-Details
 TIME_TO_BEGIN,Beginnt in:
 TIME_TO_GUILD_WAR_1,Zeit für Vorbereitung:
 TIME_TO_GUILD_WAR_2,Finale endet in:
-TIME_TO_GUILD_WAR_3,Nächster Kampf startet in:
+TIME_TO_GUILD_WAR_3,Qualifikationsrunde:
 TIME_TO_END,Endet in:
 GUILD_FINAL_RESULT,Finale Ergebnisse
 DINNING_ALREADY_MAX,Max. Level erreicht
@@ -3286,7 +3286,7 @@ ACTIVITY_ENTRANCE_TEST_TIME_TIPS,Wird auf 10x zurückgesetzt in:
 ACTIVITY_ENTRANCE_TEST_TILI_HELP,1. Maximal kann man 15 Prüfungszertifikate im Besitz haben und die Zertifikate werden täglich um 00:00 Uhr (UTC/GMT 0) um [c][cc0011]10[-][/c] vermehrt.|2. Du kannst mit Dias zusätzliche Prüfungszertigikate kaufen aber täglich kannst du maximal [c][cc0011]20[-][/c] kaufen.
 ACTIVITY_ENTRANCE_TEST_TILI_FULL,Max. Anzahl an Prüfungszertifikaten erreicht
 ENTRANCE_TEST_UNEQUIP_TIP,Nicht konfiguriert
-ENTRANCE_TEST_NEW_HERO_TIPS,Neue Mädchen da!
+ENTRANCE_TEST_NEW_HERO_TIPS,Das neue Mädchen ist da!
 LOCK_COUNT_DOWN,Wird gesperrt in:
 ARENA_ALL_SERVER_QUIZ_CHANGE,Wette\nbearbeiten
 ARENA_ALL_SERVER_QUIZ_SUCCESS,Wette erfolgreich geändert!
@@ -3301,7 +3301,7 @@ ENTRANCE_TEST_HELP_TITLE_2_1,Konfigurieren
 ENTRANCE_TEST_HELP_TITLE_2_2,Verteidigung
 ENTRANCE_TEST_HELP_DES_2_1,Auf Stufe A werden die Mädchen auf 15-Sterne levelt und du kannst passende [c][cc0011]Potenziale[-][/c] für sie wählen.
 ENTRANCE_TEST_HELP_DES_2_2,"Nachdem die Konfiguration beendet wurde, wird die Karte mit einem「Fertig」-Zeichen markiert."
-ENTRANCE_TEST_HELP_DES_2_3,"Bitte stelle zuerst dein [c][cc0011]Verteidigungsteam[-][/c] mit deinen konfigurierten Mädchen auf. Wenn dein Verteidigungsteam einen Kampf verliert, verlierst du Punkte. Bitte stelle das Team mit Bedacht auf."
+ENTRANCE_TEST_HELP_DES_2_3,"Bitte stelle zuerst dein [c][cc0011]Verteidigungsteam[-][/c] mit deinen konfigurierten Mädchen auf. Wenn dein Verteidigungsteam einen Kampf gewinnt, bekommst du Punkte, ansonsten verlierst du Punkte. Bitte stelle das Team mit Bedacht auf."
 ENTRANCE_TEST_HELP_TITLE_3_1,Kampf
 ENTRANCE_TEST_HELP_TITLE_3_2,Punkte & Rang
 ENTRANCE_TEST_HELP_TITLE_3_3,Belohnungen
@@ -3309,7 +3309,7 @@ ENTRANCE_TEST_HELP_DES_3_1,"Erfüllst du die Voraussetzungen, dann kannst du auf
 ENTRANCE_TEST_HELP_DES_3_2,Jeder Kampf benötigt 1 Prüfungszertifikat.\nDie Menge an Prüfungszertifikaten wird täglich um 00:00 Uhr (UTC/GMT 0) auf [c][cc0011]10[-][/c] zurückgesetzt/aufgefüllt.\nDu kannst auch zusätzliche Prüfungszertifikate mit Dias kaufen.
 ENTRANCE_TEST_HELP_DES_3_3,Während des Events kannst du die aktuellen Punkte und Rangliste prüfen.
 ENTRANCE_TEST_HELP_DES_3_4,"Tippe auf [c][cc0011]Belohnung[-][/c], um die aktuellen Aufgaben und deren Belohnungen zu prüfen.\nDurch Kauf des [c][cc0011]Einschulungspakets[-][/c] entsperrst du noch mehr Belohnungen!"
-ACTIVITY_WARMUP_PACK_TEXT04,Limit-Avatarbild vom neuen Mädchen als Zusatzgeschenk:
+ACTIVITY_WARMUP_PACK_TEXT04,Avatar des neuen\nMädchens gratis dazu:
 ACTIVITY_WARMUP_PACK_TEXT05,Premium
 CHESS_EXCHANGE,Umwandeln
 CHESS_GET_PARTNER,Erhalten
@@ -3591,7 +3591,7 @@ ACTIVITY_WEEK_GIFT_HELP,1. Während des Events werden täglich Pakete entsperrt.
 ACTIVITY_WEEK_LOCKING,Gesperrt
 SCHOOL_PRACTICE_NEW_SEASON,Neue Saison
 SCHOOL_PRACTICE_FINISH,Bald zuende
-SCHOOL_PRACTICE_DISPLAY,Ausstellung
+SCHOOL_PRACTICE_DISPLAY,Auswertungsphase
 BALLOON_GET_TEXT1,"Voller süßer rosa Ballons~ Danke dir, Senpai~"
 BALLOON_GET_TEXT2,Ich habe deine Liebe empfunden. Bitte nimm auch mein Geschenk an~
 BALLOON_GET_TEXT3,Wow~ Das ist eine große Menge Ballons. Ich fühle mich wie als würde ich selber fliegen~
@@ -4134,7 +4134,7 @@ SMASH_EGG_HELP,"1. Während des Events kannst du Eier von 3 Typen zerbrechen, um
 LIMITED_TASK_TEXT_01,"Schließe die folgenden Aufgaben ab, um die entsprechenden Belohnungen per Mail zu erhalten!\nP.S.: Durch Austauschen erhaltene Mädchen zählen nicht."
 LIMITED_TASK_HELP,"1. Schließe die Aufgaben ab, um die entsprechenden Belohnungen zu erhalten. Die Belohnungen jeder Stufe können nur einmal erhalten werden und werden per Mail gesendet.|2. Bei einigen Aufgaben gibt es 2 Bedingungen. Du musst beide Bedingungen erfüllen, um die Belohnungen zu erhalten.|3. Bei den Aufgaben zählen die durch Austausch oder Umkehren erhaltenen Mädchen nicht."
 SMASH_EGG_TEXT_06,Zerbreche {1}x {2}(er)
-LARGE_ACTIVITY_EGG_TEXT,Osterei
+LARGE_ACTIVITY_EGG_TEXT,Flaschenpost
 BP_LOTTERY_CONFIRM,"Willst du {1} Mädchensticker verwenden, um Belohnungen zu ziehen?"
 SMASH_EGG_TEXT_07,{1}x zerbr.
 SMASH_EGG_TEXT_08,Tippe auf die Eier für mehr Details
@@ -4255,7 +4255,7 @@ ACTIVITY_TIME_MISSION_POINT,Erhalte {1} Sanduhren
 ACTIVITY_TIME_PARTNER_NUM,Erhalte {1} Mal Holly
 FAIR_ARENA_POINT,Punkte
 FAIR_ARENA_END_TIME_1,Event endet in:
-FAIR_ARENA_END_TIME_2,Vorbereitungsphase endet in:
+FAIR_ARENA_END_TIME_2,Auswertungsphase endet in:
 FAIR_ARENA_HISTORY,Verlauf
 FAIR_ARENA_RANK,Rang
 FAIR_ARENA_POINT_NOW,Akt. Pkt.:
@@ -4620,7 +4620,7 @@ PERSON_DRESS_MAIN_11,Sonderboni
 PERSON_DRESS_MAIN_12,Verbessern
 PERSON_DRESS_MAIN_13,Keine Sonderboni verfügbar
 PERSON_DRESS_MAIN_14,Beschreibung der Attribute
-PERSON_DRESS_MAIN_HELP,"1. Die 3 Attribute Mut, Charme und Wissen wirken sich nur auf die folgenden Kämpfe aus: Arena, Elite-Arena, Elite-Liga, Gildenkampf (auf dem Sportplatz), Ultimative Arena.|2. Während der oben erwähnten Kämpfe werden diese 3 Attribute der beiden Seiten jeweils einzeln miteinander verglichen: Entsprechend der Differenz der Attributswerte bekommt das Team, dessen Attributswerts höher liegt, in den ersten 5 Runden des Kampfes die entsprechenden Buffs, während das andere Team weder Buffs noch Debuffs erhalten wird. Mut erhöht den zugefügten Schaden, Charme die Schadensreduzierung aller Schäden und Wissen die Extra-Kontrollrate, die Kontrollimmunitätsrate und den Speed.||Differenz:|1-99/100-199/200-299/300-499/500-799/800-1299/1300-2099/2100-3399/3400-5499/≥5000 |Mut:|Erhöht den zugefügten Schaden um 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%|Charme:|Erhöht die Schadensreduzierung aller Schäden um 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%|Wissen: Erhöht die Extra-Kontrollrate um 1.5%%/3%%/4.5%%/6%%/7.5%%/9%%/10.5%%/12%%/13.5%%/15%%|Erhöht die Kontrollimmunitätsrate um 1.5%%/3%%/4.5%%/6%%/7.5%%/9%%/10.5%%/12%%/13.5%%/15%%|Erhöht den Speed um 2/4/6/8/10/12/14/16/18/20"
+PERSON_DRESS_MAIN_HELP,"1. Die 3 Attribute Mut, Charme und Wissen wirken sich nur auf die folgenden Kämpfe aus: Arena, Elite-Arena, Elite-Liga, Gildenkampf (auf dem Sportplatz), Ultimative Arena, Korridore der Zeit.|2. Während der oben erwähnten Kämpfe werden diese 3 Attribute der beiden Seiten jeweils einzeln miteinander verglichen: Entsprechend der Differenz der Attributswerte bekommt das Team, dessen Attributswerts höher liegt, in den ersten 5 Runden des Kampfes die entsprechenden Buffs, während das andere Team weder Buffs noch Debuffs erhalten wird. Mut erhöht den zugefügten Schaden, Charme die Schadensreduzierung aller Schäden und Wissen die Extra-Kontrollrate, die Kontrollimmunitätsrate und den Speed.||Differenz:|1-99/100-199/200-299/300-499/500-799/800-1299/1300-2099/2100-3399/3400-5499/≥5000 |Mut:|Erhöht den zugefügten Schaden um 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%|Charme:|Erhöht die Schadensreduzierung aller Schäden um 1%%/2%%/3%%/4%%/5%%/6%%/7%%/8%%/9%%/10%%|Wissen: Erhöht die Extra-Kontrollrate um 1.5%%/3%%/4.5%%/6%%/7.5%%/9%%/10.5%%/12%%/13.5%%/15%%|Erhöht die Kontrollimmunitätsrate um 1.5%%/3%%/4.5%%/6%%/7.5%%/9%%/10.5%%/12%%/13.5%%/15%%|Erhöht den Speed um 2/4/6/8/10/12/14/16/18/20|(Im Kampf unter ""Korridore der Zeit"" werden diese Boni auf das 5-Fache erhöht.)"
 PERSON_DRESS_HELP,"1. Hier kannst du dein persönliches Outfit prüfen und anpassen. Dieses Outfit wird den anderen Spielern auf der Seite ""Persönliche Info"" angezeigt.|2. Folgende Details kannst du anpassen: Kopf, Oberkörper, Unterkörper, Kopfschmuck und Extra-Utensilien. Jedes Detail kann separat angepasst werden. Von allen Eigenschaften können der Kopf, Oberkörper und Unterkörper nur ausgetauscht werden. Die Kleidung am Unterkörper kann nicht entfernt werden.|3. Für alle Kleidungsstücke/Körperteile/Utensilien (genannt ""Outfit-Teile"") etc. stehen 1 oder mehr Designs zur Auswahl. Designs einiger Outfit-Teile werden direkt entsperrt, sobald sie erhalten werden, während man diese bei anderen Outfit-Teilen mit Dias entsperren kann, nachdem man sie erhalten hat. Du kannst die bereits entsperrten Designs zu jeder Zeit wechseln.|4. Sobald du ein Outfit-Teil erhalten hast, werden die 3 Attribute ""Mut"", ""Charme"" und ""Wissen"" automatisch aktiviert, auch wenn du es noch nicht angezogen hast. Im ""Ankleideraum"" kannst du die erhaltenen Outfit-Teile leveln, um deren Attribute weiter zu verstärken. Durch Wechseln und Entsperren verschiedener Designs wird nur das Aussehen deines Outfits beeinflusst, nicht aber die Attributs-Boni der Outfit-Teile.|5. Sobald du ein vollständiges Set oder einige bestimmte Outfit-Teile gesammelt hast, bekommst du einen Sonderbonus, der sofort aktiviert wird, ohne dass das Outfit-Teil angezogen werden muss. Verschiedene Outfit-Teile gewähren dir verschiedene Sonderboni. Je höher das Gesamtsternlevel deines Sets ist, desto stärkere Sonderboni gewährt dir das Set."
 PERSON_DRESS_MAIN_15,Galerie
 PERSON_DRESS_MAIN_16,Keine verfügbaren Outfit-Teile
@@ -4901,7 +4901,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,Stufe {1} erreicht:|{2}|Stufe {3} erreicht:|{4}|Stufe {5} erreicht:|{6}
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,Albertas Rückkehr!
+WARMUP_ARENA_TASK_INFO_2,Lumi - \nKönigin des Nordens
 WARMUP_ARENA_TASK_INFO_3,Herausforderungsaufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -5038,60 +5038,60 @@ SELECT_ALL_YES,Alles\nauswählen
 SELECT_ALL_NO,Auswahl\naufheben
 SELECT_ALL_TEXT01,Keine verfügbaren Optionen
 ACTIVITY_MONTHLY_TEXT003,Fertigkeitsvorschau
-TIME_CLOISTER_HELP01,時間迴廊幫助文本
-TIME_CLOISTER_HELP02,時間迴廊觀測界面幫助文本
-TIME_CLOISTER_HELP03,時間迴廊星空儀界面幫助文本
-TIME_CLOISTER_HELP04,時間迴廊關卡界面幫助文本
+TIME_CLOISTER_HELP01,"1. Durchs Ansehen der Erinnerungen im Korridor der Zeit erhältst du reichhaltige Belohnungen.|2. Zu Beginn wird nur 1 Korridor der Zeit entsperrt. Du kannst deine Mädchen zum entsperrten Korridor entsenden, um die Erinnerungen dieses Korridors anzusehen.|3. Entsprechend der Gesamtkampfkraft deiner aufgestellten Mädchen werden die 3 Attribute ""Mut"", ""Charme"" und ""Wissen"" für das Ansehen aktiviert.|4. Die Dauer des Ansehens richtet sich nach der Anzahl der ""Taschenuhren"" in diesem Korridor. Vor jedem Ansehen werden deine verfügbaren ""Taschenuhren"" wieder aufgefüllt, so weit, bis die oben genannte Anzahl erreicht ist. D.h. du startest immer mit der maximalen Anzahl an ""Taschenuhren"". Während des Ansehens wird alle 6 Minuten 1 ""Taschenuhr"" verwendet. D.h. je höher die Anzahl der Taschenuhren in diesem Korridor ist, desto länger dauert das Ansehen und desto mehr Chancen auf Belohnungen hast du.|5. Verwende den ""Zeitstaub"", um das Ansehen zu beschleunigen. Für das Ansehen wird allerdings trotzdem die entsprechende Menge an ""Taschenuhren"" benötigt. Erhalten des Zeitstaubs: Stufenherausforderung und Erreichen bestimmter Erfolge im Korridor der Zeit.|6. Während des Ansehens kannst du außerdem bestimmte Erfolge abschließen. Schließe die Erfolge im Korridor der Zeit ab, um den Gesamtfortschritt dieses Korridors voranzutreiben. Sobald der Fortschritt 85%% erreicht hat, wird der nächste Korridor entsperrt.|7. In jedem Korridor der Zeit wird es mehrere Stufen geben. Level während des Ansehens die Zweige im Sternkreisel auf, um die Stufen herausfordern zu können."
+TIME_CLOISTER_HELP02,"1. Während des Ansehens wird alle 5 Minuten 1 Karte ausgelöst. Es gibt 3 Kartentypen mit unterschiedlichen Karteneffekten. Sie sind Versorgungskarte, Kampfkarte und Ereigniskarte.|2. Löst du während des Ansehens die Versorgungskarten aus, erhältst du bei der Abrechnung die entsprechenden Ressourcen, die deinen ausgelösten Versorgungskarten entsprechen.|3. Löst du während des Ansehens die Kampfkarten aus, wird ein spezieller Kampf gestartet, bei welchem deine Kampfkraft durch die 3 Outfit-Attribute ""Mut"", ""Charme"" und ""Wissen"" bestimmt wird. Je stärker die 3 Attribute sind, desto höher ist deine Kampfkraft. Die 3 Outfit-Attribute und die 3 Attribute des Sternkreisels in diesem Korridor werden schwarz angezeigt und die temporären Attribute, die durch die aufgestellten Mädchen bereitgestellt werden, grün.|4. Entsprechend des Ergebnisses in diesem Kampf erhältst du zufällige Belohnungen. Die Belohnungen für eine Niederlage sind geringer als für einen Sieg.|5. Die Ereigniskarten werden keine besonderen Effekte auslösen und dienen nur für den Abschluss der entsprechenden Erfolge, die nach dem Ende des Ansehens abgerechnet werden.|6. Ohne genug ""Taschenuhren"" im Besitz wird das Ansehen automatisch beendet. Außerdem kann das Ansehen auch manuell beendet werden. Nach dem Ende des Ansehens musst du manuell abrechnen.|7. Bei der Abrechnung erhältst du alle Belohnungen, die du durch das Ansehens gewonnen hast und gleichzeitig werden auch die Erfolge abgerechnet. Entsprechend der ausgelösten Karten während des Ansehens wird das Ansehen bewertet und dir eine bestimmte Menge von ""Sternfragmenten"" gesendet, die nützlich fürs Leveln der Zweige im Sternkreisel in diesem Korridor sind."
+TIME_CLOISTER_HELP03,"1. Sehe die Erinnerungen in diesem Korridor an, um bei der Abrechnung spezielle ""Sternfragmente"" für diesen Korridor zu erhalten.|2. Die Zweige in diesem Korridor werden in 2 Gruppen aufgeteilt. Zum Leveln der Zweige werden ""Sternfragmente"" benötigt. Außer den zu Beginn schon entsperrten Zweigen werden zum Entsperren der anderen Zweige entsprechende Bedingungen eingestellt.|3. Die während eines Ansehens gelevelten Zweige werden sich erst auf das nächste Ansehen auswirken."
+TIME_CLOISTER_HELP04,"1. In jedem Korridor gibt es insgesamt 11 Stufen. Die ersten 10 sind normale Stufen und die 11. ist eine spezielle Stufe. Jedes Mal, wenn du eine Stufe herausforderst, wird 1 ""Korridor-Wertmarke"" verwendet, unabhängig davon, ob du den Kampf gewinnst oder nicht.|2. Die Gegner in jeder Stufe werden mit den 3 Attributen ""Mut"", ""Charme"" und ""Wissen"" ausgestattet. Bei dir hängen diese 3 Attribute von deinem Outfit und den Zweigen im Sternkreisel dieses Korridors ab.|3. Details zu diesen 3 Attributen findest du unter der Funktion ""Outfit"". Im Vergleich mit den anderen Kämpfen werden diese Boni im Kampf unter ""Korridore der Zeit"" auf das 5-Fache erhöht.|4. Schließt du die normalen Stufen ab, erhältst du die einmaligen Stufenbelohnungen, die weder zurückgesetzt noch wiederholt gesammelt werden können.|5. Der Boss in der speziellen Stufe kann sich wiederbeleben. Nach dem Ende jedes Kampfes wird der verursachte Schaden notiert und dein neuester Rang richtet sich nach dem höchsten verursachte Schaden in einem Kampf. Wöchentlich um 0 Uhr (UTC/GMT 0) am Freitag werden Belohnungen entsprechend der Rangliste abgerechnet."
 TIME_CLOISTER_TEXT01,Erfolg
 TIME_CLOISTER_TEXT02,Stufe
-TIME_CLOISTER_TEXT03,Erkunden
-TIME_CLOISTER_TEXT04,Erkundens-Fortschritt:
-TIME_CLOISTER_TEXT05,Dieser Korridor wird noch nicht zugänglich gemacht. Bitte bleib daran.
-TIME_CLOISTER_TEXT06,"Bedingung: Erkundens-Fortschritt vom Korridor ""{1}"" erreicht 80%%"
+TIME_CLOISTER_TEXT03,Ansehen
+TIME_CLOISTER_TEXT04,Gesamtfortschritt:
+TIME_CLOISTER_TEXT05,Dieser Korridor ist noch nicht zugänglich.
+TIME_CLOISTER_TEXT06,"Benötigt: Fortschritt beim Korridor ""{1}"" erreicht 85%%"
 TIME_CLOISTER_TEXT07,Gesperrt
-TIME_CLOISTER_TEXT08,觀測中可能會遭遇戰鬥，請選擇出戰戰姬。根據出戰戰姬的總戰力，增加此次觀測中戰鬥的屬性（出戰戰姬在觀測中無法更改）
-TIME_CLOISTER_TEXT09,正在其他時間迴廊中進行觀測
-TIME_CLOISTER_TEXT10,繼續觀測
-TIME_CLOISTER_TEXT11,是否提前結束此次觀測？
-TIME_CLOISTER_TEXT12,觀測已結束
-TIME_CLOISTER_TEXT13,查看
-TIME_CLOISTER_TEXT14,觀測加速
-TIME_CLOISTER_TEXT15,使用「時間之塵」令觀測加速，加速時會消耗對應數量的「回溯懷錶」
-TIME_CLOISTER_TEXT16,剩餘時間
-TIME_CLOISTER_TEXT17,觀測已結束，無需加速
-TIME_CLOISTER_TEXT18,觀測加速成功
-TIME_CLOISTER_TEXT19,觀測中……
-TIME_CLOISTER_TEXT20,觀測完成，點擊進行結算
-TIME_CLOISTER_TEXT21,補給卡
-TIME_CLOISTER_TEXT22,挑戰卡
-TIME_CLOISTER_TEXT23,事件卡
-TIME_CLOISTER_TEXT24,觀測記錄
-TIME_CLOISTER_TEXT25,補給卡預覽
-TIME_CLOISTER_TEXT26,挑戰卡預覽
-TIME_CLOISTER_TEXT27,事件卡預覽
-TIME_CLOISTER_TEXT28,隱藏未解鎖卡牌
-TIME_CLOISTER_TEXT29,獎勵總覽
-TIME_CLOISTER_TEXT30,補給獎勵
-TIME_CLOISTER_TEXT31,挑戰獎勵
-TIME_CLOISTER_TEXT32,星空儀
-TIME_CLOISTER_TEXT33,觀測結算
-TIME_CLOISTER_TEXT34,數據總覽
-TIME_CLOISTER_TEXT35,觀測時長
-TIME_CLOISTER_TEXT36,戰鬥勝率
-TIME_CLOISTER_TEXT37,觀測得分
-TIME_CLOISTER_TEXT38,結算獎勵
-TIME_CLOISTER_TEXT39,觀測獎勵
-TIME_CLOISTER_TEXT40,消耗「星空碎片·無空之殿」可升級星空儀科技
-TIME_CLOISTER_TEXT41,升級
-TIME_CLOISTER_TEXT42,升級預覽
-TIME_CLOISTER_TEXT43,成就：{1}
-TIME_CLOISTER_TEXT44,在此迴廊中進行觀測，達成下列成就即可提高探索度，探索度達到80%%後可解鎖新的時間迴廊
-TIME_CLOISTER_TEXT45,探索度
-TIME_CLOISTER_TEXT46,關卡：{1}
-TIME_CLOISTER_TEXT47,需通關上一個關卡
-TIME_CLOISTER_TEXT48,需要解鎖此迴廊的星空儀科技「關卡解鎖」
+TIME_CLOISTER_TEXT08,"Beim Ansehen kann es zu Kämpfen kommen, stelle also Mädchen auf. Die Gesamtkraft der Mädchen bestimmt die Kampfattribute. (Aufstellung kann während des Ansehens nicht angepasst werden.)"
+TIME_CLOISTER_TEXT09,Du befindest dich aktuell in einem anderen Korridor der Zeit
+TIME_CLOISTER_TEXT10,Weiter ansehen
+TIME_CLOISTER_TEXT11,Willst du das Ansehen frühzeitig beenden?
+TIME_CLOISTER_TEXT12,Ansehen beendet
+TIME_CLOISTER_TEXT13,Prüfen
+TIME_CLOISTER_TEXT14,Speed Up
+TIME_CLOISTER_TEXT15,"Verwende den ""Zeitstaub"", um das Ansehen der Erinnerung zu beschleunigen. Außerdem wird dafür die entsprechende Menge von ""Taschenuhren"" benötigt."
+TIME_CLOISTER_TEXT16,Restliche Zeit:
+TIME_CLOISTER_TEXT17,Ansehen beendet. Es muss nicht mehr beschleunigt werden.
+TIME_CLOISTER_TEXT18,Ansehen beschleunigt
+TIME_CLOISTER_TEXT19,Beim Ansehen...
+TIME_CLOISTER_TEXT20,"Ansehen abgeschlossen.\nTippe, um deine Belohnungen zu sammeln."
+TIME_CLOISTER_TEXT21,Versorgungs-\nkarten
+TIME_CLOISTER_TEXT22,Kampf-\nkarten
+TIME_CLOISTER_TEXT23,Ereignis-\nkarten
+TIME_CLOISTER_TEXT24,Verlauf
+TIME_CLOISTER_TEXT25,Vorschau der Versorgungskarten
+TIME_CLOISTER_TEXT26,Vorschau der Kampfkarten
+TIME_CLOISTER_TEXT27,Vorschau der Ereigniskarten
+TIME_CLOISTER_TEXT28,Gesperrte Karten verstecken
+TIME_CLOISTER_TEXT29,Überblick der Belohnungen
+TIME_CLOISTER_TEXT30,Versorgungsbel.
+TIME_CLOISTER_TEXT31,Kampfbelohnung
+TIME_CLOISTER_TEXT32,Sternkreisel
+TIME_CLOISTER_TEXT33,Abrechnung
+TIME_CLOISTER_TEXT34,Details
+TIME_CLOISTER_TEXT35,Anschau-Dauer
+TIME_CLOISTER_TEXT36,Siegesrate
+TIME_CLOISTER_TEXT37,Punkte
+TIME_CLOISTER_TEXT38,Abschlussbelohnungen
+TIME_CLOISTER_TEXT39,Belohnung fürs Ansehen
+TIME_CLOISTER_TEXT40,"Verwende das ""Sternfragment · Tempel der Leere"", um die Zweige im Sternkreisel zu leveln."
+TIME_CLOISTER_TEXT41,Leveln
+TIME_CLOISTER_TEXT42,Auflevel-Vorschau
+TIME_CLOISTER_TEXT43,Erfolg: {1}
+TIME_CLOISTER_TEXT44,"Schließe folgende Erfolge in diesem Korridor ab, um den Fortschritt voranzutreiben. Erreicht dieser 85%%, wird ein neuer Korridor entsperrt."
+TIME_CLOISTER_TEXT45,Gesamtfortschritt
+TIME_CLOISTER_TEXT46,Stufe: {1}
+TIME_CLOISTER_TEXT47,Schließe die vorherige Stufe ab
+TIME_CLOISTER_TEXT48,"Entsperre zuerst den Zweig ""Stufenentsperrung"" im Sternkreisel"
 PUB_MISSION_AUTO_TEXT001,Job-Pergamente nicht ausreichend
-TIME_CLOISTER_TEXT49,暫無觀測記錄
+TIME_CLOISTER_TEXT49,Noch kein Verlauf
 ACTIVITY_MONTHLY_TEXT004,Willst du die aktuelle Verteilung der Fertigkeitspunkte speichern?
 ALTAR_INFO_1,Das aktuelle Mädchen muss nicht zurückgesetzt werden.
 ALTAR_INFO_2,Das Mädchen wird auf den ursprünglichen Zustand zurückgesetzt. Fortfahren?
@@ -5103,4 +5103,72 @@ ARENA_TEAM_RANK_DESC_NEW,Akt. Rang:{1}. Halte den Rang bis zum Ende der Saison u
 ACTIVITY_MONTHLY_TEXT008,Verbleibend:
 ACTIVITY_MONTHLY_TEXT009,Dieser Kauf benötigt {1} Dias. Fortfahren?
 ALTAR_INFO_4,Rückgabe
-ACTIVITY_ENTRANCE_TEST_RECORD_HELP,入學測驗戰鬥記錄幫助文本
+ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Nach dem Kampf in der Aufnahmeprüfung werden entsprechend den aktuellen Punkten der beiden Seiten Punkte gegeben oder abgezogen. Je mehr Punkte der besiegte Gegner als du hat, desto mehr Punkte erhältst du nach dem Sieg.|2. Forderst du einen Gegner heraus und verlierst du diesen Kampf, werden keine Punkte abgezogen.|3. Wirst du von einem Spieler herausgefordert, werden die für einen Sieg  gegebenen oder die wegen einer Niederlage abgezogenen Punkte halbiert."
+NEW_ARENA_ALL_SERVER_HELP,"
+Die ultimative Arena ist ein Wettbewerb, an dem die SpielerInnen aller Server teilnehmen.
+Jede Saison dauert 28 Tage und wird in 5 Phasen unterteilet: Vorbereitungsphase, Qualifikationsphase, KO-Phase, Finale und Ruhezeit.|1. Vorbereitungsphase|Die Vorbereitungsphase findet am 1. Tag statt und dauert 1 Tag. Während der Vorbereitungsphase können die Spieler ihre Verteidigungsteams aufstellen, aber sie können keinen Kampf starten.|2. Qualifikationsphase|(1) Die Qualifikationsphase findet am 2. Tag statt und dauert bis zum 20. Tag der Saison.
+(2) Verwende die Arenatickets, um gegen die anderen Spieler zu kämpfen. Die zur Wahl stehenden Gegner können täglich maximal 5 Mal erneuert werden.
+(3) Unter ""Verlauf"" können die letzten 10 Kämpfe angeschaut werden.|3. Stufen|(1) Während der Qualifikationsphase werden die Spieler in 6 Stufen gegliedert: Bronze, Silber, Gold, Diamant, Meister und Großmeister. Außer in den Stufen „Meister“ und „Großmeister“ gibt es bei den anderen 4 Stufen jeweils noch 5 Untergruppen, in denen die Spieler von 5 bis auf 1 aufsteigen können.
+(2) Jedes Mal, wenn ein Spieler 100 Punkte gewonnen hat, steigt er in die nächste Gruppe auf. Die TOP320 Spieler in der Stufe „Meister“ qualifizieren sich für die Stufe „Großmeister“.
+(3) Nimmst du zum ersten Mal an dem Qualifikationskampf teil, musst du in der Gruppe 5 der Stufe „Bronze“ anfangen. Zu Beginn der neuen Saison werden alle Stufen sowie Gruppen zurückgesetzt. Entsprechend den Ergebnissen der vorherigen Saison wird dein Rang in der darauffolgenden Saison festgelegt.|4. Kampfregeln|(1)In der ultimativen Arena wird eine brandneue Backup-Kampfregel eingeführt. Man hat nicht nur eine Kampfaufstellung, sondern auch eine Backup-Aufstellung. Sind in einem Kampf die 6 Mädchen der Startaufstellung einer Seite gestorben, so ist ein Durchgang beendet und die toten Mädchen (beider Seiten) werden durch Mädchen aus der Backup-Aufstellung entsprechend ihrer Reihenfolge ersetzt, um die Kampfaufstellung wieder aufzufüllen (Die Backup-Mädchen der Frontline werden bevorzugt auf der Frontline eingestellt, die der Backline auf der Backline). Die HP der lebenden Mädchen werden beibehalten. Dann startet der nächste Durchgang. Das ganze geht so lange, bis alle Mädchen und Backup-Mädchen einer Seite gestorben sind.
+(2) Jedes Mädchen darf maximal an 2 Durchgängen teilnehmen. Hat ein Mädchen 2 Durchgänge überlebt, wird sie automatisch durch ein Backup-Mädchen ersetzt (und gilt dann dadurch quasi als „tot“).
+(3) Die Reihenfolge der Diener kann vom Spieler bestimmt werden. Nachdem der Spieler einen Durchgang verloren hat, wird entsprechend der Reihenfolge der nächste Diener aufgestellt. Gewinnt der Spieler den Durchgang, wird der aufgestellte Diener weiterkämpfen.
+(4) Je höher die Stufe, desto mehr Backup-Mädchen und Diener sind verfügbar.
+Bronze: Keine Backup-Mädchen
+Silber: 2x Backup-Mädchen der Frontline, 4x Backup-Mädchen der Backline, 2x Diener
+Gold: 4x Backup-Mädchen der Frontline, 8x Backup-Mädchen der Backline, 3x Diener
+Diamant: 8x Backup-Mädchen der Frontline, 16x Backup-Mädchen der Backline, 5x Diener
+(5) Entsprechend der Stufe des gewählten Gegners wird die Anzahl von deinen verfügbaren Backup-Mädchen in diesem Kampf festgelegt.
+(6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die 320 Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, werden die leeren Plätze mit Spielern aus niedrigeren Stufen aufgefüllt, bis es in jeder Gruppe 64 Spieler gibt. Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
+(2) Täglich findet 1 Kampf der KO-Phase statt. Jeden Tag von 0 Uhr bis 2 Uhr (UTC/GMT 0) ist die Abrechnungsphase, während der die Aufstellungen nicht konfiguriert oder gespeichert werden können.
+(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch den Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
+(4) HP und Angriffswert der Mädchen werden nach ihrem jeweiligen Sternlevel, auf das sie der Spieler gelevelt hat, mit einem bestimmten Wert multipliziert. Details wie folgt:|  5-Sterne: 50%%, 6-Sterne: 51%%, 7-Sterne: 53%%|  8-Sterne: 55%%, 9-Sterne: 60%%, 10-Sterne: 65%%|  11-Sterne: 70%%, 12-Sterne: 75%%, 13-Sterne: 80%%|  14-Sterne: 90%%, 15-Sterne: 100%%.|6. Ruhezeit|(1) Die 2 Tage nach dem Ende des Finales sind die Ruhezeit.|7. Ehrenschloss|(1) Die TOP8 Spieler aus jeder Kampfgruppe jeder Saison werden einen Platz im Ehrenschloss erhalten.
+(2) Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.|8. Tägliche Aufgabe|(1) Während der Qualifikationsphase können die Spieler die täglichen Aufgaben in der Qualifikationsphase abschließen, um Belohnungen zu erhalten.|9. Abrechnungsbelohnungen|(1) Nach dem Ende der Qualifikationsphase erhältst du entsprechend deines Rangs in der Stufe Belohnungen.
+(2) Nach dem Ende des Finales werden limitierte Avatarbildrahmen entsprechend des Rangs versendet."
+NEW_ARENA_ALL_SERVER_RANK_1,[c][399d21]Bronze - {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_2,[c][6b7a86]Silber - {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_3,[c][e6b300]Gold - {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_4,[c][2587e2]Diamant - {1}[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_5,[c][ea7900]Meister[-][/c]
+NEW_ARENA_ALL_SERVER_RANK_6,[c][ee2d5a]Großmeister[-][/c]
+NEW_ARENA_ALL_SERVER_TEXT_1,Qualifikationsphase
+NEW_ARENA_ALL_SERVER_TEXT_2,Stufenrang
+NEW_ARENA_ALL_SERVER_TEXT_3,Gesamtrang
+NEW_ARENA_ALL_SERVER_TEXT_4,Punkte
+NEW_ARENA_ALL_SERVER_TEXT_5,Frontline
+NEW_ARENA_ALL_SERVER_TEXT_6,Backline
+NEW_ARENA_ALL_SERVER_TEXT_7,Frontline-Backup
+NEW_ARENA_ALL_SERVER_TEXT_8,Backline-Backup
+NEW_ARENA_ALL_SERVER_TEXT_9,Entsperrt ab Silber-Stufe
+NEW_ARENA_ALL_SERVER_TEXT_10,Entsperrt ab Gold-Stufe
+NEW_ARENA_ALL_SERVER_TEXT_11,Entsperrt ab Diamant-Stufe
+NEW_ARENA_ALL_SERVER_TEXT_12,Erneuern ({1})
+NEW_ARENA_ALL_SERVER_TEXT_13,Derzeitige Stufe:
+NEW_ARENA_ALL_SERVER_TEXT_14,Derzeitige Belohnung:
+NEW_ARENA_ALL_SERVER_TEXT_15,Nach dem Ende der Qualifikationsphase werden dir Belohnungen entsprechend deiner Stufe gesendet.
+NEW_ARENA_ALL_SERVER_TEXT_16,Aufdecken skippen (nur heute)
+NEW_ARENA_ALL_SERVER_TEXT_17,Gruppe {1}
+NEW_ARENA_ALL_SERVER_TEXT_18,Als Champion gewonnen
+DRIFT_BOTTLE_AWARD_WINDOW,Belohnungsvorschau
+DRIFT_BOTTLE_TEXT_01,Belohnung
+DRIFT_BOTTLE_TEXT_02,Öffnen
+DRIFT_BOTTLE_TEXT_03,Alte Flaschenpost
+DRIFT_BOTTLE_TEXT_04,Normale Flaschenpost
+DRIFT_BOTTLE_TEXT_05,Mystische Flaschenpost
+DRIFT_BOTTLE_HELP,"1. Öffne die 3 Flaschenposten, um reichhaltige Belohnungen zu erhalten!|2. Verwende 1 Flaschenpost, um die entsprechende Flaschenpost zu öffnen und zufällige Belohnungen zu erhalten.|3. Entsprechend der Anzahl der geöffneten Flaschenposten werden Öffnungsbelohnungen per Mail gesendet. Jede Öffnungsbelohnung kann nur einmal erhalten werden.|4. Beim Öffnen der normalen und mystischen Flaschenposten erhältst du keine Kostüme, die du schon besitzt. (Außer du hast schon alle in dem Pool erhältlichen Kostüme erhalten.)|5. Erhalten der Flaschenposten:|Alte Flaschenpost: Tägliche Mail, mit Dias kaufen (maximal 30 Mal kaufbar), Sammlung der Korallenzweige, Geschenke des Grafen, Superpakete, Kostümpakete, Glückspakete.|Normale Flaschenpost: Öffnung der alten Flaschenposten, Geschenke des Grafen, Superpakete, Kostümpakete, Pakete zur Flaschenpost, Reiseversorgung.|Mystische Flaschepost: Öffnung der normalen Flaschenposten, Geschenke des Grafen, Superpakete, Pakete zur Flaschenpost, Glückspakete."
+DRIFT_BOTTLE_TEXT_06,Öffne {1}x {2}(en)
+DRIFT_BOTTLE_TEXT_07,{1} X
+DRIFT_BOTTLE_TEXT_08,"Tippe auf die Flaschenposten, um die Belohnungen zu prüfen."
+NEW_ARENA_ALL_SERVER_TEXT_19,Heute keine Chance mehr
+DRIFT_BOTTLE_TEXT_09,Nimm am Event teil und hol dir das neue Kostüm~
+WARM_UP_GIFT_TEXT_01,Neulings-Herausford.
+WARM_UP_GIFT_TEXT_02,Sof. erhält.
+DRIFT_BOTTLE_TEXT_10,1 X
+NEW_ARENA_ALL_MISSION_REFRESH,Die Aufgaben wurden erneuert.
+NEW_ARENA_ALL_MATCH_ERROR,Die gegnerische Verteidigungsaufstellung wurde angepasst und es kann nicht herausgefordert werden. Bitte wähle erneut einen Gegner aus.
+TIME_CLOISTER_TEXT50,Sternkreisel · Gruppe 1
+TIME_CLOISTER_TEXT51,Sternkreisel · Gruppe 2
+TIME_CLOISTER_TEXT52,Versorgungskarten
+TIME_CLOISTER_TEXT53,Kampfkarten
+TIME_CLOISTER_TEXT54,Ereigniskarten
+TIME_CLOISTER_MISC,Entdecke die\nGeheimnisse der\nErinnerungen

@@ -9387,3 +9387,145 @@ Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den erlittenen Schaden (
 502107,Himmelsinsel,Betäubungsbonus,"Immer wenn ein Mädchen auf dem Schlachtfeld betäubt wird, wird der Angriff aller Gegner um 5% erhöht."
 503110,Himmelsinsel,Todessegen,"Immer wenn ein Mädchen auf dem Schlachtfeld gestorben ist, wird die Schadensreduzierung aller Schäden aller Gegner um 5% erhöht."
 503111,Himmelsinsel,Lebenssegen,"Wenn eine gegnerischen Alberta einen Standardangriff einsetzt, verbraucht sie dabei keine HP mehr."
+5401700,Lumi,Standardangriff,Standardangriff
+65402400,Lumi,Standardangriff,Standardangriff
+75401700,Lumi,Standardangriff,Standardangriff
+5401701,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 100% des AW zu. Außerdem besteht eine 10%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 20% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+65402401,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 200% des AW zu. Außerdem besteht eine 20%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 40% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+75401701,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 400% des AW zu. Außerdem besteht eine 30%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 70% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+5401702,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 20%, ihren Angriff um 15%, ihre Krit. Rate um 10% und ihren Speed um 20."
+65402402,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 30%, ihren Angriff um 20%, ihre Krit. Rate um 20% und ihren Speed um 40."
+65402412,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 40%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 60."
+75401702,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 40%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 60."
+5401703,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 100% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 5% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 5% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65402403,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 120% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 10% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 10% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65402413,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 160% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+75401703,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 160% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+5401704,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 5% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 5%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 100% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+65402404,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 7% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 10%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 200% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+65402414,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 300% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+75401704,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 300% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017011,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 408% des AW zu. Außerdem besteht eine 30%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 70% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017012,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 416% des AW zu. Außerdem besteht eine 30%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 70% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017013,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 424% des AW zu. Außerdem besteht eine 40%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 90% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017014,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 432% des AW zu. Außerdem besteht eine 40%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 90% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017015,Lumi,Eisiges Fegefeuer,"
+Spürt die endlose Kälte des Nordens! Sie greift einen zufälligen Gegner an und fügt diesem Schaden in Höhe von 440% des AW zu. Außerdem besteht eine 50%ige Wahrscheinlichkeit, dass dieser für zwei Runden [c][e28002]kristallisiert[-][/c] wird. Wenn 2 oder mehr Gegner auf dem Feld stehen, dann wird ihr Angriff bis zu 5x zwischen den Gegnern hin und herspringen und der dabei verursachte Schaden wird bei jedem Aufprall um 110% des AW höher. Außerdem wird mit jedem Aufprall die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, um 10% erhöht (ein Gegner wird nie 2 Mal direkt hintereinander von dem Aufprall getroffen).
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017021,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 40%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 62."
+754017022,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 40%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 64."
+754017023,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 42%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 66."
+754017024,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 42%, ihren Angriff um 25%, ihre Krit. Rate um 30% und ihren Speed um 68."
+754017025,Lumi,Krone des Nordens,"Wer die Krone trägt, trägt auch die Verantwortung. Erhöht ihre HP um 44%, ihren Angriff um 28%, ihre Krit. Rate um 30% und ihren Speed um 70."
+754017031,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 163% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+754017032,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 166% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+754017033,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 169% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+754017034,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 172% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 15% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 15% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+754017035,Lumi,Schneeweiße Seele,"
+Fehlverhalten muss bestraft werden. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 175% des AW zu und fügt ihnen 2 Runden lang einen [c][01a310]Giftschaden[-][/c] in Höhe von 17% der jeweils max. HP des Gegners zu (nicht höher als 1500% von Lumis AW). Gleichzeitig heilt sie sich selbst 2 Runden lang um je 17% ihrer max. HP.
+
+[c][01a310]Giftschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+754017041,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 330% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017042,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 360% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017043,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 390% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017044,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 15%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 420% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+754017045,Lumi,Nordwind,"
+Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegriffen, dann senkt sie den Schaden, den der Angreifer ihr zufügt, um 10% (pro Angriff; jeder Angreifer separat gerechnet; auf max. 30% stapelbar). Gleichzeitig erhöht sie ihren Angriff für 4 Runden lang um 17%. Greift sie einen Gegner an und ist dieser [c][e28002]kristallisiert[-][/c], dann fügt sie diesem einen Extraschaden in Höhe von 450% des AW zu.
+
+[c][e28002]Kristallisierung:[-][/c]
+Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
