@@ -5018,7 +5018,7 @@ ACTIVITY_ENTRANCE_TEST_RANK_SHOW_TEXT,랭킹 리스트
 ACTIVITY_WARMUP_ARENA_RANK_DEMAND,해당 미션은 먼저 {1}단계에 달성하셔야 합니다!
 ACTIVITY_TEA_TEXT6,"티티임 포인트 부족, 일일 미션 완성 시 티타임 포인트 획득 가능."
 NEWBEE_10GACHA_HELP04,1. 이벤트 기간 동안 이 페이지에서 초보자 캡슐 뽑기 10회의 뽑기 기회를 구매할 수 있습니다.|2. 구매 완료 후 화면의 캡슐 뽑기 버튼을 클릭하여 10회의 캡슐 뽑기를 시작할 수 있습니다.|3. 이 특별한 10회 캡슐 뽑기에서는 고정적으로 5성 엘리트 소녀 3명과 일반 5성 소녀 7명을 획득할 수 있습니다. 이벤트 화면의 돋보기 버튼을 클릭하여 각 소녀의 구체적인 획득 확률을 확인하실 수 있습니다.|4. 이벤트 종료 시 사용하지 않은 초보자 캡슐 뽑기 기회(구매 후)는 획득 확률에 따라 소녀 조각으로 교환되며 메일을 통해 전송됩니다.
-ACHIEVEMENT_REACHED,성과 달성
+ACHIEVEMENT_REACHED,성적 달성
 ACTIVITY_SPORTS_PLAYER_WINDOW,플레이어 정보
 ACTIVITY_SPORTS_PLAYERRANK_TEXT1,메달 랭킹|포인트 랭킹
 ACTIVITY_SPORTS_PLAYERRANK_TEXT2,메달
@@ -5052,7 +5052,7 @@ TIME_CLOISTER_TEXT03,관측 시작
 TIME_CLOISTER_TEXT04,관측 진도：
 TIME_CLOISTER_TEXT05,해당 회랑 아직 오픈되지 않습니다. 기대해주세요!
 TIME_CLOISTER_TEXT06,시간 회랑 '{1}'의 관측 진도 85%% 달성 후 해제 가능
-TIME_CLOISTER_TEXT07,자금중
+TIME_CLOISTER_TEXT07,잠금중
 TIME_CLOISTER_TEXT08,"회랑 관측 시 전투가 발생할 수 있으므로 출전 소녀 라인업을 구성하세요. 출전 소녀의 총 전투력에 따라, 이번 관측에서의 전투 속성이 증가됩니다(관측 도중 출전 소녀 변경 불가)."
 TIME_CLOISTER_TEXT09,다른 회랑에서 관측하고 있습니다.
 TIME_CLOISTER_TEXT10,계속 관측
@@ -5060,7 +5060,7 @@ TIME_CLOISTER_TEXT11,관측을 완료하시겠습니까?
 TIME_CLOISTER_TEXT12,관측 완료
 TIME_CLOISTER_TEXT13,보기
 TIME_CLOISTER_TEXT14,관측 가속
-TIME_CLOISTER_TEXT15,'시간 먼지'를 사용하여 관측을 가속화한다. 가속 시 대응 수량의 '추억 시계'가 소모된다.
+TIME_CLOISTER_TEXT15,시간 먼지'를 사용하여 관측을 가속화한다. 가속 시 대응 수량의 '추억 시계'가 소모된다.
 TIME_CLOISTER_TEXT16,남은 시간
 TIME_CLOISTER_TEXT17,관측이 종료되었으므로 가속하지 않으셔도 됩니다.
 TIME_CLOISTER_TEXT18,관측 가속 성공
@@ -5163,7 +5163,7 @@ DRIFT_BOTTLE_HELP,"1. 이벤트 기간 동안 세 종류의 소원병을 오픈�
 DRIFT_BOTTLE_TEXT_06,{2} {1}개 오픈
 DRIFT_BOTTLE_TEXT_07,{1}회
 DRIFT_BOTTLE_TEXT_08,소원병을 클릭하여 보상을 확인할 수 있습니다.
-NEW_ARENA_ALL_SERVER_TEXT_19,일일 리셋 횟수 사용 완료
+NEW_ARENA_ALL_SERVER_TEXT_19,{1}강
 DRIFT_BOTTLE_TEXT_09,소녀의 새로운 스킨을 획득할 수 있어요~
 WARM_UP_GIFT_TEXT_01,신입생 챌린지로 획득
 WARM_UP_GIFT_TEXT_02,즉시 획득
@@ -5175,4 +5175,11 @@ TIME_CLOISTER_TEXT51,플라네타륨 스킬 II
 TIME_CLOISTER_TEXT52,보급 카드
 TIME_CLOISTER_TEXT53,챌린지 카드
 TIME_CLOISTER_TEXT54,사건 카드
+NEW_ARENA_ALL_SERVER_TEXT_20,일일 리셋 횟수 사용 완료
 TIME_CLOISTER_MISC,시간 회랑에서 숨겨진\n비밀을 탐색해보세요!
+NEW_ARENA_ALL_SERVER_TEXT_21,積分賽結束倒計時：
+NEW_ARENA_ALL_SERVER_TEXT_22,冠軍榜單
+NEW_ARENA_ALL_SERVER_TEXT_23,冠軍
+NEW_ARENA_ALL_SERVER_TEXT_24,當前還未到淘汰賽階段！
+NEW_ARENA_ALL_SERVER_TEXT_25,開啟倒計時
+WARMUP_ARENA_TASK_INFO_7,챌린지 보상

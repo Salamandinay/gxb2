@@ -571,7 +571,7 @@ CHAT_LABEL_2,Instructeur
 TEXT_END,Restant
 NO_PARTNER_2,Aucune Fille...
 PRAISE_TEXT,"Senpai ! Envoyez-nous 5 étoiles, si vous aimez notre jeu !"
-PRAISE_BTN_1,Ne plus le me rappeler
+PRAISE_BTN_1,Ne plus afficher
 PRAISE_BTN_2,Rappeler plus tard
 PRAISE_BTN_3,5 étoiles
 SUMMON_GIFTBAG_TEXT01,Obtenir {1} points
@@ -1276,7 +1276,7 @@ AWAKE_GIFTBAG_WITH_STAR,Graduer une Fille à {1} étoiles：
 AWAKE_GIFTBAG_TEXT01,Libérer une Fille à [c][f55090]14 étoiles[-][/c] et [c][f55090]15 étoiles[-][/c] pour récupérer des récompenses ! \nLes récompenses seront distribuées par courrier.
 PRIVACY_WARNING_TEXT01,Attention !
 PRIVACY_WARNING_TEXT02,"Afin d'éviter tout problème, ne partagez pas vos informations personnelles aux autres joueurs. Évitez également les publicités et les transactions entre joueurs."
-PRIVACY_WARNING_TEXT03,Ne plus le me rappeler
+PRIVACY_WARNING_TEXT03,Ne plus afficher
 PRIVACY_WARNING_TEXT04,Ne dévoilez pas vos informations personnelles aux autres joueurs.
 BATTLE_STATISTICS_TITLE,Combats
 ARTIFACT_LIST,Collection
@@ -3845,7 +3845,7 @@ ACTIVITY_STUDY_SEARCH,Indice
 ACTIVITY_STUDY_REANSWER,Réessayer
 ACTIVITY_STUDY_NEED_ENERGY1,"Retourner cette case utilisera 1 Chance, souhaitez-vous continuer ?"
 ACTIVITY_STUDY_NEED_ENERGY2,(Il faut utiliser 1 opportunité de réponse pour essayer à nouveau ou réinitialiser après une mauvaise réponse)
-COMMON_NOT_SHOW,Ne plus le me rappeler
+COMMON_NOT_SHOW,Ne plus afficher
 ACTIVITY_STUDY_QUEST_TITLE,Question
 DUNGEON_HARD_5,Fantaisie
 DUNGEON_HARD_6,Cauchemar
@@ -4916,7 +4916,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"Votre limite de Pierre Antique obtenue a été 
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"Cette Antiquité est utilisée,\nvoulez-vous continuer à choisir ?"
 DAILY_QUIZ_TEXT04,Utiliser des Gemmes pour obtenir plus de Chances：
 PUB_MISSION_AUTO_TEXT1,Tout Collecter
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Les Antiquités Orange disponibles ici sont celles\nque vous avez déjà obtenues au moins une fois.
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Plus vous possédez d'Antiquités Orange dans votre Collection\nplus vous aurez de choix d'Antiquités Orange pour équiper vos Filles.
 ENTRANCE_TEST_PARTNER_NOT_READY,Vous avez choisi des Filles qui n'ont pas encore été entièrement équipées dans votre Équipe. Voulez-vous continuer ?
 ENTRANCE_TEST_BATTLE_JUMP_SET,Configurer
 ENTRANCE_TEST_PET_EXSKILL,Le niveau de Noyau Précieux ici est du même niveau que celui du Serviteur correspondant.
@@ -5101,14 +5101,14 @@ TIME_CLOISTER_TEXT04,Avancée Totale：
 TIME_CLOISTER_TEXT05,Contenu à venir
 TIME_CLOISTER_TEXT06,Débloqué après que l'Avancée Totale du Corridor Temporel「{1}」ait atteint 85%%.
 TIME_CLOISTER_TEXT07,Bloqué
-TIME_CLOISTER_TEXT08,"Durant l'Exploration, vous pourrez déclencher des Cartes Défis et avoir à vous battre. Veuillez sélectionner les Filles pour votre Équipe de combat. Vos Attributs dépendront de la puissance totale des Filles de votre Équipe (modification de l'Équipe impossible durant une Exploration)."
+TIME_CLOISTER_TEXT08,"Durant l'Exploration, vous pourrez déclencher des Cartes Défis et ainsi avoir à vous battre. Veuillez sélectionner les Filles pour votre Équipe de combat. Vos Attributs dépendront de la puissance totale des Filles de votre Équipe (modification de l'Équipe impossible durant une Exploration)."
 TIME_CLOISTER_TEXT09,Vous êtes en train d'explorer dans un autre Corridor Temporel
 TIME_CLOISTER_TEXT10,En cours
 TIME_CLOISTER_TEXT11,Voulez-vous mettre fin à cette Exploration maintenant ?
 TIME_CLOISTER_TEXT12,Exploration terminée
 TIME_CLOISTER_TEXT13,Résultats
 TIME_CLOISTER_TEXT14,Accélérer
-TIME_CLOISTER_TEXT15,"Utilisez les Poussières Temporelles pour accélérer l'Exploration. Lors de l'accélération, le nombre correspondant de Montre à Gousset sera consommé."
+TIME_CLOISTER_TEXT15,"Utilisez vos Poussières Temporelles pour accélérer une Exploration, cette action consommera également la quantité correspondante de Montre à Gousset."
 TIME_CLOISTER_TEXT16,Temps Restant
 TIME_CLOISTER_TEXT17,"L'Exploration est terminée, nul besoin d'accélérer."
 TIME_CLOISTER_TEXT18,Exploration accélérée !
@@ -5137,7 +5137,7 @@ TIME_CLOISTER_TEXT40,Utilisez les Fragments Galactiques · Sanctuaire du Néant 
 TIME_CLOISTER_TEXT41,Améliorer
 TIME_CLOISTER_TEXT42,Aperçu de l'Amélioration
 TIME_CLOISTER_TEXT43,Succès：{1}
-TIME_CLOISTER_TEXT44,"Complétez les tâches dans le Succès pour augmenter votre Avancée Totale dans ce Corridor Temporel. Un nouveau Corridor Temporel sera débloqué, une fois que l'Avancée Totale du Corridor Temporel aura atteint 85%%."
+TIME_CLOISTER_TEXT44,"Augmentez l'Avancée Totale de ce Corridor Temporel en complétant les tâches ci-dessous. Le Corridor Temporel suivant sera débloqué, une fois que l'Avancée Totale de ce Corridor Temporel aura atteint 85%%."
 TIME_CLOISTER_TEXT45,Avancée Totale
 TIME_CLOISTER_TEXT46,Étape：{1}
 TIME_CLOISTER_TEXT47,Passer l'Étape précédente pour continuer
@@ -5213,7 +5213,7 @@ DRIFT_BOTTLE_HELP,"1. Durant cet événement, vous pourrez obtenir des récompen
 DRIFT_BOTTLE_TEXT_06,Ouvrir {2}*{1}
 DRIFT_BOTTLE_TEXT_07,Ouvrir X{1}
 DRIFT_BOTTLE_TEXT_08,Touchez les Bouteilles pour voir les récompenses.
-NEW_ARENA_ALL_SERVER_TEXT_19,Plus aucune chance d'actualisation pour aujourd'hui
+NEW_ARENA_ALL_SERVER_TEXT_19,TOP {1}
 DRIFT_BOTTLE_TEXT_09,Ouvrez les Bouteilles et obtenez des récompenses !
 WARM_UP_GIFT_TEXT_01,Obtenable dans le Test d'Admission
 WARM_UP_GIFT_TEXT_02,Obtention Immédiate
@@ -5225,4 +5225,11 @@ TIME_CLOISTER_TEXT51,Technique II
 TIME_CLOISTER_TEXT52,Carte de Ressources
 TIME_CLOISTER_TEXT53,Carte de Défis
 TIME_CLOISTER_TEXT54,Carte d'Événements
+NEW_ARENA_ALL_SERVER_TEXT_20,Plus aucune chance d'actualisation pour aujourd'hui
 TIME_CLOISTER_MISC,Explorez les\nCorridors Temporels
+NEW_ARENA_ALL_SERVER_TEXT_21,積分賽結束倒計時：
+NEW_ARENA_ALL_SERVER_TEXT_22,冠軍榜單
+NEW_ARENA_ALL_SERVER_TEXT_23,冠軍
+NEW_ARENA_ALL_SERVER_TEXT_24,當前還未到淘汰賽階段！
+NEW_ARENA_ALL_SERVER_TEXT_25,開啟倒計時
+WARMUP_ARENA_TASK_INFO_7,Récompenses de Défi

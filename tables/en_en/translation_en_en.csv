@@ -4866,7 +4866,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"You have reached the limit of 60,000 Antique Ex
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"The chosen Antique is currently\nequipped by another Girl, continue?"
 DAILY_QUIZ_TEXT04,"If you need extra Quiz Chances, please enter\nthe number of Chances you would like to purchase:"
 PUB_MISSION_AUTO_TEXT1,Claim in Bulk
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,The Orange Antiques available here are the ones that have already been obtained by you at least once.
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,"The more Orange Antiques collected in Collection, the more Orange Antique options will be available to be equipped."
 ENTRANCE_TEST_PARTNER_NOT_READY,You have chosen Girls that haven't been fully equipped yet in your Team. Would you still like to continue?
 ENTRANCE_TEST_BATTLE_JUMP_SET,Adjust
 ENTRANCE_TEST_PET_EXSKILL,The Ulticore Level of the Servants chosen here will have the same Level as your Servants.
@@ -5058,7 +5058,7 @@ TIME_CLOISTER_TEXT11,Confirm to end this observation in advance?
 TIME_CLOISTER_TEXT12,The observation is over
 TIME_CLOISTER_TEXT13,Check
 TIME_CLOISTER_TEXT14,Speed Up
-TIME_CLOISTER_TEXT15,"Use ""Time Essence"" to speed up the process of Observation in Echoes of Time. The accelerated time will still consume the corresponding number of ""Clockwork of Memory""."
+TIME_CLOISTER_TEXT15,"You can accelerate the Observation by consuming “Time Essence”, the time sped up will still consume the corresponding number of “Clockwork of Memory”."
 TIME_CLOISTER_TEXT16,Remaining time
 TIME_CLOISTER_TEXT17,"Observation is completed, you don't need to speed it up"
 TIME_CLOISTER_TEXT18,Observation accelerated
@@ -5147,7 +5147,7 @@ NEW_ARENA_ALL_SERVER_TEXT_12,Refresh ({1})
 NEW_ARENA_ALL_SERVER_TEXT_13,Current Division:
 NEW_ARENA_ALL_SERVER_TEXT_14,Current Reward:
 NEW_ARENA_ALL_SERVER_TEXT_15,Players will be awarded according to their Divisions after Score Match is over
-NEW_ARENA_ALL_SERVER_TEXT_16,Skip the animation to get the reward
+NEW_ARENA_ALL_SERVER_TEXT_16,Skip the animation to get the reward for today
 NEW_ARENA_ALL_SERVER_TEXT_17,Group {1}
 NEW_ARENA_ALL_SERVER_TEXT_18,Won as Champion
 DRIFT_BOTTLE_AWARD_WINDOW,Preview
@@ -5160,7 +5160,7 @@ DRIFT_BOTTLE_HELP,"1. During the event, rewards can be obtained by opening 3 typ
 DRIFT_BOTTLE_TEXT_06,Open {1} {2}(s)
 DRIFT_BOTTLE_TEXT_07,{1}x
 DRIFT_BOTTLE_TEXT_08,Tap the Bottles to check the rewards
-NEW_ARENA_ALL_SERVER_TEXT_19,No reset chance left
+NEW_ARENA_ALL_SERVER_TEXT_19,Top {1}
 DRIFT_BOTTLE_TEXT_09,Join to get new skin!
 WARM_UP_GIFT_TEXT_01,Obtainable in New Girl Missions
 WARM_UP_GIFT_TEXT_02,Go
@@ -5172,4 +5172,11 @@ TIME_CLOISTER_TEXT51,Technology II
 TIME_CLOISTER_TEXT52,Supply Card
 TIME_CLOISTER_TEXT53,Challenge Card
 TIME_CLOISTER_TEXT54,Encounter Card
+NEW_ARENA_ALL_SERVER_TEXT_20,No reset chance left
 TIME_CLOISTER_MISC,Explore the\nSecrets of Time
+NEW_ARENA_ALL_SERVER_TEXT_21,Countdown:
+NEW_ARENA_ALL_SERVER_TEXT_22,Champion List
+NEW_ARENA_ALL_SERVER_TEXT_23,Champion
+NEW_ARENA_ALL_SERVER_TEXT_24,Single Elimination Phase hasn't begun!
+NEW_ARENA_ALL_SERVER_TEXT_25,Countdown
+WARMUP_ARENA_TASK_INFO_7,Challenge Reward
