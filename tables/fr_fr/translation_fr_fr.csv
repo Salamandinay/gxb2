@@ -175,7 +175,7 @@ PERSON_NAME_LONG,Pseudo trop long !
 PERSON_NAME_SUCCEED,Nom changé !
 PERSON_NAME_FAIL,Nom déjà existant !
 GET_ITEMS,Objet Acquis
-PUB_MISSION_REFRESH_1,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
+PUB_MISSION_REFRESH_1,"Il faut utiliser {1} Gemmes pour actualiser, voulez-vous continuer ?"
 PUB_MISSION_REFRESH_2,Aucun job à acutaliser !
 PUB_MISSION_REFRESH_3,Gemmes insuffisantes pour rafraîchir !
 PUB_START_MISSION_1,Vous n'avez pas atteint les requêtes !
@@ -267,7 +267,7 @@ DUNGEON_SHOP,Boutique
 DUNGEON_SHOP_LEV_1,Primaire
 DUNGEON_SHOP_LEV_2,Intermédiaire
 DUNGEON_SHOP_LEV_3,Avancée
-DUNGEON_SHOP_DETAIL,{1} Marchand
+DUNGEON_SHOP_DETAIL,Marchand {1}
 DUNGEON_SHOP_TIPS_1,Total：
 DUNGEON_SHOP_TIPS_2,Aucun objet achetable !
 DUNGEON_HERO_TITLE,Bataille
@@ -313,7 +313,7 @@ ACHIEVEMENT,Succès
 SUMMON_RATE,Possibilité
 NOT_MAX_GRADE,La Fille n'a pas atteint le maximum
 CONFIRM_BUY,Confirmez-vous l'achat ?
-CONFIRM_REFRESH,"Il faut {2} {1} pour actualiser, voulez-vous continuer ?"
+CONFIRM_REFRESH,"Il faut utiliser {1}*{2} pour actualiser, voulez-vous continuer ?"
 CHOOSE_MATERIAL_PARTNER,Choisissez les Filles Matérielles
 NOT_ENOUGH_PARTNERS,Filles Matérielles Insuffisantes
 DAILY_QUIZ_AWARD,Récompenses du Quiz：
@@ -460,7 +460,7 @@ DAILY_AWARD,Quotidienne
 SEASON_AWARD,Saisonnière
 NOW_RANK,Classement Actuel
 TOP_RANK,Meilleur Classement
-NOW_AWARD,Récompense Actuelle :
+NOW_AWARD,Récompenses Actuelle :
 ARENA_RANK_DESC1,Envoyées tous les jours à 21h (GMT 0)
 ARENA_RANK_DESC2,Récompenses envoyées par courrier
 BATTLE_RECORD,Historique
@@ -1284,7 +1284,7 @@ GM_AUTO_ANSWER,"Cher Senpai ! Yuki est partie recharger ses batteries ! Elle ne 
 ACTIVITY_CHRISTMAS_TEXT01,"Durant l'événement, utilisez 【Chausette de Noël】 afin de récupérer des récompenses dans l'interface de l'événement !"
 ACTIVITY_CHRISTMAS_TEXT02,"Durant l'événement, utilisez 【Bonhomme de Neige】 afin de récupérer des récompenses dans l'interface de l'événement !"
 CHRISTMAS_LOCK,Vous devez tout d'abord échanger les récompenses précédentes afin de pouvoir débloquer celle-ci !
-CONFIRM_REGRESH_GUILD,"Il faut {1}*{2} pour actualiser, l'actualisation n'affectera que la limite d'achat, mais ne changera pas les objets en vente, êtes-vous certain de vouloir continuer ?"
+CONFIRM_REGRESH_GUILD,"Il faut utiliser {1}*{2} pour rafraîchir, le rafraîchissement n'affectera que la limite d'achat, mais ne changera pas les objets en vente, êtes-vous certain de vouloir continuer ?"
 GET3,Échanger
 SUBSCRIPTION_TEXT01,Réessayez dans {1} secondes
 SUBSCRIPTION_TEXT01_AND,"
@@ -2035,9 +2035,9 @@ JUMP_GAME_TARGET_POINT,Objectif：{1}
 PACK_FEEDBACK_TEXT01,"Vous avez acheté [c][fff799]{1}[-][/c],\nVous avez reçu ："
 PACK_FEEDBACK_TEXT02,Touchez l'écran pour fermer
 ARENA_ALL_SERVER_TEXT_1,Temple de la Gloire
-ARENA_ALL_SERVER_TEXT_2,Qualification
-ARENA_ALL_SERVER_TEXT_3,Finale
-ARENA_ALL_SERVER_TEXT_4,Aucun Classement dans le Temple de la Gloire
+ARENA_ALL_SERVER_TEXT_2,Élimination
+ARENA_ALL_SERVER_TEXT_3,Finaliste
+ARENA_ALL_SERVER_TEXT_4,Aucun classement pour le moment
 ARENA_ALL_SERVER_TEXT_5,Pari
 ARENA_ALL_SERVER_TEXT_6,Historique
 ARENA_ALL_SERVER_TEXT_7,Statistique
@@ -2072,7 +2072,7 @@ MATCH_NUM4,4ème bataille
 MATCH_NUM5,5ème bataille
 ARENA_ALL_SERVER_MISC,Devenez\nle Champion
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Vous pouvez choisir de soutenir un autre joueur après le début de la manche de qualification. Si le joueur gagne, vous gagnerez le pari, et vice versa.|2. Les joueurs ne peuvent seulement parier sur eux qu’en Finale.|3. Le système décidera automatiquement de la bataille qui est mise sur ce tour. Les batailles avec des joueurs de la même Guilde, du même serveur ou de la même région linguistique seront choisies en premier.|4. Les pièces pouvant être placées dans un pari dépendent du progrès que vous avez atteint dans la Campagne. Le montant correspondra au nombre de pièces que vous pouvez obtenir dans l'Auto-Bataille à l’étape la plus élevée que vous avez atteint dans la campagne en une journée. (Sans compter les bonus VIP et d’abonnement).|5. Si le joueur que vous avez choisi gagne, vous obtiendrez le double du nombre de pièces que vous avez placé dans le pari. Les récompenses seront envoyées par courrier."
-ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. Dans Champion Précédent vous pourrez voir tous les Champions en commençant depuis la première Saison.|2. Vous pouvez voir le Top 8 des joueurs de chaque saison en allant sur la saison correspondante.
+ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,"1. Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché."
 ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison：
 IMG_GUIDE_JUMP_GAME_1,"Valeera [c][cc0011]récupérera[-][/c] 1 PV en arrivant sur une plate-forme, lorsqu'elle atteint 0 PV le jeu sera fini."
 IMG_GUIDE_JUMP_GAME_2,Valeera perdra beaucoup de PV si elle touche aux [c][cc0011]pics[-][/c]
@@ -2094,7 +2094,7 @@ JUMP_GAME_TARGET_GOLD,Acquis：
 LIBRARY_WATCHER_TEXT08,Débloqué dans {1}
 ARENA_ALL_SERVER_CLOSE_COUNTDOWN,La Saison finira dans ：
 ARENA_ALL_SERVER_OPEN,Cette fonctionnalité sera disponible dans：
-ARENA_ALL_SERVER_TEXT_31,La Finale n'a pas encore commencé !
+ARENA_ALL_SERVER_TEXT_31,La phase - Finalistes n'a pas encore commencé !
 ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
 VOW_SWAP_TIPS,"Vous avez un Serment avec la Fille que vous allez utiliser, si vous continuez la Fille sera utilisée, mais vous ne récupérerez pas la Bague de Serment, voulez-vous continuer ?"
 CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir une Lanterne après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 5 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 1 Lanterne après avoir fini un Job de 4 étoiles ou plus.|——Vous pouvez obtenir 1 Lanterne après avoir combattu 5 fois dans l'Arène|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, une Lanterne pour 15K et distribuées par courrier."
@@ -2193,7 +2193,7 @@ FRIEND_TEAM_BOSS_QUIT,Êtes-vous certain de vouloir quitter cette équipe ? (Vou
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_1,Restant
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_2,Restant
 FRIEND_TEAM_BOSS_CANNOT_BUY_TIMES,Vous ne pouvez pas l'acheter pendant la période de repos
-GAMBLE_REFRESH_CONFIRM,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
+GAMBLE_REFRESH_CONFIRM,"Il faut utiliser {1} Gemmes pour actualiser, voulez-vous continuer ?"
 GAMBLE_REFRESH_NOT_SHOW_TODAY,Ne plus rappeler aujourd'hui
 ARENA_ALL_SERVER_TEXT_33,"Malheureusement, vous ne pouvez plus continuer à combattre"
 HOUSE_ITEM_TIPS_1,Type de Meuble
@@ -2481,7 +2481,7 @@ GUILD_BOSS_TEXT02,Chance insuffisante !
 GUILD_FINAL_BOSS_WINDOW_HELP,"1. Chaque membre peut défier le Boss de Guilde deux fois par jour. Vous obtiendrez les récompenses à la fin de chaque bataille. Plus vous infligez de dégâts, plus vos récompenses seront importantes.|2. Le total des dégâts causé par les membres de la Guilde sera réinitialisé tous les vendredis à 00h00 de 01h00(UTC/GMT +1), les récompenses au classement des dégâts seront envoyées par courrier.|3. Les dégâts causés par les Serviteurs ne sont pas pris en compte. |4. Vous n'obtiendrez que les récompenses du classement de votre Guilde actuelle. |5. Après avoir quitté votre Guilde, vous ne pourrez plus défier le Boss de Guilde pendant un délai d'1 jour."
 GUILD_BOSS_TEXT03,Calcul hebdomaire des Récompenses：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Niveau {1}
-SUMMON_CONFIRM,"Il faut {2} Gemmes pour utiliser {1} fois le Capsule, voulez-vous continuer ?"
+SUMMON_CONFIRM,"Utiliser {2} Gemmes pour tirer {1} fois les Capsules, voulez-vous continuer ?"
 TURING_TASK_LIMIT,Limite
 TURING_TASK_TEXT01,Terminez ces tâches pour obtenir les récompenses (envoyées dans votre Sac directement).
 WELFARE_TEXT01,Utilisez des Sceaux pour débloquer plus de récompenses !
@@ -3391,7 +3391,7 @@ SPIRIT_HAS_WORK,Cette Fille a fini la Mission {1}
 SPIRIT_NEED_FILL_UP_PARTNER,Veuillez remplir l'espace pour commencer
 SPIRIT_NOT_ENOUGH,{1} insuffisant(e)
 SPIRIT_NOT_ENOUGH_AND_BUY,"{1} insuffisant(e), voulez-vous en acheter ?"
-SPIRIT_REFRESH_COST,Dépensez {1} Gemmes pour actualiser ?
+SPIRIT_REFRESH_COST,"Il faut utiliser {1} Gemmes pour actualiser, voulez-vous continuer ?"
 SPIRIT_FIGHT,Attaquer
 SPIRIT_RECOMMEND,Recommander
 SPIRIT_MISC,Explorer l'Âme\nDéfier vos limites !
@@ -3969,8 +3969,8 @@ ACTIVITY_NEWYEAR_WELFARE_TEXT01,Termine dans：
 ACTIVITY_NEWYEAR_WELFARE_TEXT02,Gemme
 ACTIVITY_NEWYEAR_WELFARE_TEXT03,Pièce d'Or
 GACHA_LIMIT_PARTNER,UP
-SPRING_FESTIVAL_HELP,"1.Pendant l'événement, vous pouvez utiliser「Sac porte-bonheur」pour échanger des Filles de différente Maison.|2.Vous obtiendrez des récompenses de palier selon le nombre d'échange.|3.Vous pouvez échanger des Filles de toute Maison pour échanger à nouveau mais chaque Fille ne peut être obtenue qu'une seule fois.|4.Moyen d'obtention de「Sac porte-bonheur」：| - Utilisez 3000 Gemmes - 30 Sacs ({1}/1) | - Utilisez 30M Pièces d'Or - 30 Sacs ({2}/1)| - Utilisez 100 Tickets de l'Arène - 30 Sacs ({3}/1)| - Utilisez 1 Gouvernail - 2 Sacs ({4}/100)| - Pack de Grande Valeur| - Pack Surprise| - Pack Surprise de Skin|5.Après la fin de l'événement, les「Sacs porte-bonheur」inutilisés seront convertis en Gravure de Rune, 「Sac porte-bonheur」*1 pour Gravure de Rune*1 et distribuées par courrier."
-SPRING_FESTIVAL_TEXT01,Choisir la Fille
+SPRING_FESTIVAL_HELP,"1.Pendant l'événement, vous pouvez utiliser「Sac porte-bonheur」pour échanger des Filles de différente Maison.|2.Vous obtiendrez des récompenses de palier selon le nombre d'échange.|3.Vous pouvez échanger des Filles de toute Maison pour échanger à nouveau mais chaque Fille ne peut être obtenue qu'une seule fois.|4.Moyen d'obtention de「Sac porte-bonheur」：| - Utilisez 3000 Gemmes - 30 Sacs ({1}/1) | - Utilisez 30M Pièces d'Or - 30 Sacs ({2}/1)| - Utilisez 100 Tickets d'Arène - 30 Sacs ({3}/1)| - Utilisez 1 Gouvernail - 2 Sacs ({4}/100)| - Pack de Grande Valeur| - Pack Surprise| - Pack Surprise de Skin|5.Après la fin de l'événement, les「Sacs porte-bonheur」inutilisés seront convertis en Gravure de Rune, 「Sac porte-bonheur」*1 pour Gravure de Rune*1 et distribuées par courrier."
+SPRING_FESTIVAL_TEXT01,Choisissez vos Filles
 SPRING_FESTIVAL_TEXT02,Échangez des Filles (peu importe leur Maison) pour faire un nouvel échange
 GAMBLE_BUY_TWENTY,20 Fois
 GAMBLE_BUY_FIFTY,50 Fois
@@ -4119,13 +4119,13 @@ PET_EVOLUTION_WINDOW_HELP,"1. La fonction du Noyau Précieux sera débloquée ap
 PET_EVOLUTION_WINDOW,Noyau Précieux
 UNCRIT,Résis. aux Crit.
 GUILD_COMPETITION_HELP,"
-Combattez les ennemis avec les membres de votre Guilde.|Conditions：|Pendant l\'ouverture de Îles Célestes, vous ne pouvez pas quitter votre Guilde, bannir vos membres ou dissoudre la Guilde. Cependant, vous pouvez tout de même rejoindre une Guilde ou en créer une.|Règle du point：|Chaque ennemi peut fournir 100K points au total, vous gagnerez les points en fonction des dégâts que vous infligez.|Chance de défi：|1. Chaque membre peut défier l\'ennemi 3 fois au maximum.
+Combattez les ennemis avec les membres de votre Guilde.|Conditions：|Pendant l\'ouverture de Îles Célestes, vous ne pouvez pas quitter votre Guilde, bannir vos membres ou dissoudre la Guilde. Cependant, vous pouvez tout de même rejoindre une Guilde ou en créer une.|Règle du point：|Chaque ennemi peut fournir 100K points au total, vous gagnerez les points en fonction des dégâts que vous infligez.|Chance de défi：|1. Chaque membre peut défier l\'ennemi 3 fois au maximum par jour.
 2. Chaque ennemi peut être défié 30 fois au maximum par jour.|Bataille Réelle et Bataille Démo：|1. Il y a deux modes, Bataille Réelle et Bataille Démo.
-2. Bataille Réelle：Utiliser une Chance de défi pour combattre l\'ennemi et vous recevrez des points et des récompenses après la bataille.
-3. Bataille Démo：Nul besoin d\'utiliser une Chance de défi pour combattre, néanmoins vous ne recevrez aucune récompense. Au début de la Bataille Démo, les PV de l\'ennemi sont ses PV restants dans la Bataille Réelle.|Récompenses：|1. Récompenses de Bataille：vous recevrez des récompenses après chaque Bataille.
-2. Récompenses d\'Élimination：Lorsqu\'un Boss a été vaincu, tous les membres participants recevront une récompenses d\'Élimination.
+2. Bataille Réelle：utiliser une Chance de défi pour combattre l\'ennemi et vous recevrez des points et des récompenses après la bataille.
+3. Bataille Démo：nul besoin d\'utiliser une Chance de défi pour combattre, néanmoins vous ne recevrez aucune récompense. Au début de la Bataille Démo, les PV de l\'ennemi sont ses PV restants dans la Bataille Réelle.|Récompenses：|1. Récompenses de Bataille：vous recevrez des récompenses après chaque Bataille.
+2. Récompenses d\'Élimination：lorsqu\'un Boss a été vaincu, tous les membres participants recevront une récompenses d\'Élimination.
 3. Récompenses au Classement des Dégâts：les membres de la Guilde seront classés en fonction de leurs dégâts infligés totaux. Chaque membre obtiendra des récompenses sur chaque Boss en fonction de leurs dégâts infligés. Les récompenses seront envoyées par courrier.
- Lorsque le nombre de membres participant est inférieur à 10, pour chaque membre manquant, les récompenses au Classement des Dégâts seront réduites de 10%% (90%% au maximum)
+Attention : lorsque le nombre de membres participant est inférieur à 10, pour chaque membre manquant, les récompenses au Classement des Dégâts seront réduites de 10%% (90%% au maximum)
 4. Récompenses au Classement des Guildes：les Guildes seront classées en fonction des dégâts totaux infligés par ses membres. Ces récompenses vous seront envoyées par courrier. Les résultats seront comptabilisés après la fermeture des Îles Célestes, ainsi les membres n\'y ayant pas participés (0 dégât) ne recevront aucune récompense. (Si après la fermeture des Îles Célestes, vous avez quitté votre Guilde, avez été banni ou si votre Guilde a été dissoute, vous recevrez tout de même vos récompenses)"
 BP_TAGS,Livres|Quêtes|Échanges|Succès
 BP_MISSION_TAGS,Journalière|Hebdo|Supplémentaire
@@ -4222,7 +4222,7 @@ NO_GET_RANK,Non classé
 GUILD_COMPETITION_READY_TIME,Prép. Bataille
 GUILD_COMPETITION_END_TIME,Terminé
 GUILD_COMPETITION_START_TIME,Commence dans {1}
-GUILD_COMPETITION_FIGHT_TIME,Êtes vous sûrs de vouloir utiliser une chance et entrer dans Bataille Réelle ?
+GUILD_COMPETITION_FIGHT_TIME,Êtes vous sûrs de vouloir utiliser une Chance et entrer dans Bataille Réelle ?
 GUILD_COMPETITION_NO_TIPS1,"Les Îles Célestes sont ouvertes, vous ne pouvez pas quitter votre Guilde."
 GUILD_COMPETITION_NO_TIPS2,"Les Îles Célestes sont ouvertes, vous ne pouvez pas exclure des membres de votre Guilde."
 GUILD_COMPETITION_NO_TIPS3,"Les Îles Célestes sont ouvertes, vous ne pouvez pas dissoudre la Guilde."
@@ -4287,7 +4287,7 @@ Pépite Temporelle*6-20%%
 Pépite Temporelle*7-10%%|5. À la fin de l\'événement, les objets non utilisés seront convertis en pièce d\'or, 1 Circuit Magique contre 600K Pièces d\'or et 1 Pépite Temporelle contre 50K Pièces d\'or."
 ACTIVITY_TIME_GAMBLE_NUM,[c][ffffff]Fragments de Lys garantis après avoir tiré[-][/c] [c][ffd235]{1}[-][/c] [c][ffffff]fois[-][/c]
 ACTIVITY_TIME_REFRESH_FREE,Voulez-vous actualiser les récompenses gratuitement ?\nChance(s) Gratuite(s) Restante(s) aujourd'hui：{1}
-ACTIVITY_TIME_REFRESH_GEM,"Il faut {1} Gemmes pour actualiser, voulez-vous continuer ?"
+ACTIVITY_TIME_REFRESH_GEM,"Il faut utiliser {1} Gemmes pour actualiser, voulez-vous continuer ?"
 ACTIVITY_TIME_REFRESH_ITEM,Changement après actualisation
 ACTIVITY_TIME_MISSION_HELP,"1. Durant cet événément, de nouvelles tâches seront débloquées chaque jour.|2. Obtenez des Points en terminant les tâches, et récupérez ensuite les récompenses de chaque palier.|3. Le progrès des tâches de cet événement sera cumulé tout au long de l'événement. (Exemple : Il est possible que lors du premier jour vous ayez déjà complétez une tâche d'un des jours suivants qui sera donc débloqué plus tard, arrivé à ce jour-là votre tâche sera déjà comptabilisée comme étant complétée, ainsi vous aurez juste à la Collecter.)"
 ACTIVITY_TIME_MISSION_DAY,Jour {1}
@@ -4836,7 +4836,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Vote du Skin de Miss Yume
 DRESS_SUMMON_LABEL_2,Défilez pour voir les Tenues obtenables
 DRESS_SUMMON_LABEL_4,Tenue Orange garantie après avoir tiré [c][e96516]{1}[-][/c] fois
 DRESS_SUMMON_LABEL_1,Chance Gratuite : {1} fois
-DRESS_SUMMON_LABEL_3,Taux d'obtention de\nla Tenue - Plage d'Été
+DRESS_SUMMON_LABEL_3,Taux d'Obtention de \nla Tenue - Halloween
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
@@ -4916,7 +4916,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"Votre limite de Pierre Antique obtenue a été 
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"Cette Antiquité est utilisée,\nvoulez-vous continuer à choisir ?"
 DAILY_QUIZ_TEXT04,Utiliser des Gemmes pour obtenir plus de Chances：
 PUB_MISSION_AUTO_TEXT1,Tout Collecter
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Plus vous possédez d'Antiquités Orange dans votre Collection\nplus vous aurez de choix d'Antiquités Orange pour équiper vos Filles.
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Plus vous possédez d'Antiquités Oranges dans votre collection\nplus vous aurez de choix d'Antiquités Oranges pour équiper vos Filles.
 ENTRANCE_TEST_PARTNER_NOT_READY,Vous avez choisi des Filles qui n'ont pas encore été entièrement équipées dans votre Équipe. Voulez-vous continuer ?
 ENTRANCE_TEST_BATTLE_JUMP_SET,Configurer
 ENTRANCE_TEST_PET_EXSKILL,Le niveau de Noyau Précieux ici est du même niveau que celui du Serviteur correspondant.
@@ -4996,7 +4996,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
 EQUIP_LEVELUP_TEXT_19,Veuillez sélectionner l'ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez sélectionner l'ensemble d'équipement que vous souhaitez obtenir
-DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Plage d'Été est actuellement augmenté !
+DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Halloween est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
@@ -5157,28 +5157,29 @@ ACTIVITY_MONTHLY_TEXT009,Voulez-vous dépenser {1} Gemmes pour acheter ?
 ALTAR_INFO_4,Aperçu
 ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Durant cet événement, vous obtiendrez et perdrez des points en fonction de la différence entre vos points actuels et ceux de votre adversaire. Si vous gagnez une bataille (Attaque), plus votre adversaire a de point, plus vous obtiendrez de point.|2. Si vous perdez une Attaque contre un adversaire, vous ne perdrez pas de point.|3. En Défense, les points obtenus pour une victoire et les points perdus pour une défaite seront réduit de moitié."
 NEW_ARENA_ALL_SERVER_HELP,"
-L’Arène Ultime est une Arène en interserveur qui permet aux tous les joueurs d’y participer.
-La durée de chaque saison est 28 jours. Chaque saison se divise en 5 phases : Préparation de Combat, Ruée de Point, Élimination, Finaliste et Trêve.|1.Préparation de Combat|(1) Durée : 1ère journée de chaque saison. 
-(2)Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour. 
-(2) Pendant cette phase, utilisez vos Tickets de l’Arène pour combattre contre d’autres joueurs. Vous pouvez également actualiser la liste des adversaires (5 fois au maximum par jour).
-(3) Vos 10 derniers combats sont enregistrés dans l’Historique.|3.Rang|(1) Il y en a 6 Rangs pendant la phase de Ruée de Point : Bronez, Argent, Or, Diamant, Maître, Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) se compose de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
-(2) il vous faudra atteindre 100 points dans votre division actuelle, qui vous permettront d’accéder à une promotion. Les Top 320 joueurs du Rang Maître seront promus au Rang Grand Maître.
-(3) Vous vous serez classé Bronez V pour la première fois que vous participerez à la Ruée de Point. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des Points en fonction du votre Rang de la saison précédente.|4.Règle de Combat|(1) L’Arène Ultime adopte un nouvel système de remplaçant. Votre Équipe se divisent en 2 parties : Équipe de Combat et Équipe de Remplaçant. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels ; les Filles remplaçantes seront sur le champ de bataille dans l\'ordre en remplaçant les Filles vaincues (les Filles remplaçantes de la ligne avant seront mis à la place de la ligne avant en priorité, les Filles remplaçantes de la ligne arrière seront mis à la place de la ligne arrière en priorité). Si toutes les Filles d\'une Équipe soient vaincue, celle-ci sera considérée comme Défaite.
-(2) Chaque Fille ne peut combattre pendant 2 tours au maximum, si elle n’est pas encore vaincue après ces 2 tours, elle sera obligatoirement tiré du champ de bataille (peut considéré comme vaincue). 
-(3) Vous pouvez également choisir les Serviteurs à combattre dans l’ordre. Après la Défaite d’un tour, les Serviteurs remplaçants seront sur le champ de bataille dans l’ordre. Après la Victoire d’un tour, le Serviteur actuel continuera à combattre.
-(4) Le nombre des Filles remplaçantes et des Serviteurs remplaçants est différent en fonction du Rang.
- Bronze : Aucun remplaçant
- Argent：2 Filles remplaçantes de la ligne avant, 4 Filles remplaçantes de la ligne arrière, 2 Serviteurs remplaçants
- Or：4 Filles remplaçantes de la ligne avant, 8 Filles remplaçantes de la ligne arrière, 3 Serviteurs remplaçants
- Diamant, Maître, Grand Maître：8 Filles remplaçantes de la ligne avant, 16 Filles remplaçantes de la ligne arrière, 5 Serviteurs remplaçants
-(5) Lors du choix d\'un adversaire à combattre, le nombre correspondant de remplaçants sera sélectionné en fonction du Rang de cet adversaire.
-(6) La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5.Élimination&Finaliste|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Maître se divise aléatoirement en 5 Groupes (Chaque Groupe se compose de 64 joueurs) pour l’Élimination. S’il y a moins de 320 joueurs du Rang Maître, les joueurs participeront à l’Élimination en fonction de leurs Classement, jusqu\'à ce que moins de 64 joueurs ne puissent former un Groupe (Par exemple, S’il y a 300 joueurs du Rang Maître, les premiers 256 y participeront, les 44 restes ne pourront pas y parcitiper). S’il y a moins de 64 joueurs du Rang Maître, les Top 64 joueurs du Classement Total pariticperont à l’Élimination. 
-(2) Il n’y a qu’une bataille par jour et la période de calcul est de 0:00 (UTC/GMT 0) à 2 (UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas enregistrer vos Équipes.
-(3) Règle de Combat (Élimination&Finaliste) 
-Pendant ces 2 phases, vous ne pouvez déployer que des Filles pouvant atteindre au moins la forme 10 étoiles. Durant la bataille, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attribus acutels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront niveaux 180, les Auras seront niveaux 50, les niveaux de Noyaux Précieux seront conservés. Les statistiques du Laboratoire de la Guilde seront tous au maximum. Vous garderez les statistiques des Skins, du bonus de Faveur, des Antiquités et des potentiels que vous possèdez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. 
-Durant la bataille, les PV et l’Attaque des Filles sera multiplié selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6.Trêve|(1) Durée : 2 jours après la fin de la phase – Finaliste.|7.Temple de la Gloire|(1) Les Top 8 joueurs de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire. 
-(2) Le nombre de fois Champion comprit les fois que vous êtes devenu Champion avant cette nouvelle version de l’Arène Ultime.|8.Quête Journalière|(1) Pendant la phase – Ruée de Point, vous pourrez compléter les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9.Récompenses de Calcul|(1) Après la fin de phase - Ruée de Point, les récompenses vous seront envoyées en fonction du votre Rang actuel.
-(2) Après la fin de phase – Finaliste, le Cadre d’Avatar vous seront envoyé en fonction du votre Classement."
+L’Arène Ultime est une Arène interserveur permettant la participation à tous les joueurs.
+La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases : Préparation au Combat, Ruée de Point, Élimination, Finalistes et Trêve.|1. Préparation au Combat|(1) Durée : 1ère journée de chaque saison.
+(2) Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour.
+(2) Pendant cette phase, utilisez vos Tickets d\'Arène pour combattre vos adversaires. La liste de vos adversairespeut être actualisée 5 fois par jour au maximum.
+(3) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
+(2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Rang Maître passeront au Rang Grand Maître.
+(3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.|4. Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Supléantes. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
+(2) Chaque Fille peut combattre pendant 2 tours au maximum. Si elle n’est pas vaincue au bout de ces 2 tours, elle sera obligatoirement retirée du champs de bataille (considérée comme vaincue).
+(3) Vous pouvez également choisir les Serviteurs de remplacement. Lors d’une Défaite d’un tour, les Serviteurs suppléants entreront sur le champs de bataille dans l’ordre prédéfini. Après une Victoire d’un tour, le Serviteur actuel continuera à combattre.
+(4) Le nombre de Filles suppléantes et de Serviteurs suppléants est différent pour chaque Rang.
+Bronze : Aucun suppléant
+Argent：2 Filles suppléantes sur la ligne avant, 4 Filles suppléantes sur la ligne arrière, 2 Serviteurs suppléants
+ Or：4 Filles suppléantes sur la ligne avant，8 Filles suppléantes sur la ligne arrière, 3 Serviteurs suppléants
+Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 Filles suppléantes sur la ligne arrière, 5 Serviteurs suppléants
+(5) Lors du choix d\'un adversaire à combattre, le nombre correspondant de suppléants sera sélectionné en fonction du Rang de cet adversaire.
+(6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l’Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l’Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s’il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l’Élimination.
+(2) Pendant cette phase, vous ne ferez qu\'un combat par jour et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
+(3) Règles de Combat (Élimination&Finalistes)
+Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut.
+Durant le combat, les PV et l’Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
+(2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
+Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
+(2) Après la fin de la phase – Finalistes, le Cadre d’Avatar spécial (28 Jours) vous seront envoyé en fonction de votre Classement."
 NEW_ARENA_ALL_SERVER_RANK_1,[c][399d21]Bronze {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_2,[c][6b7a86]Argent {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_3,[c][e6b300]Or {1}[-][/c]
@@ -5187,20 +5188,20 @@ NEW_ARENA_ALL_SERVER_RANK_5,[c][ea7900]Maître[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_6,[c][ee2d5a]Grand Maître[-][/c]
 NEW_ARENA_ALL_SERVER_TEXT_1,Ruée de Points
 NEW_ARENA_ALL_SERVER_TEXT_2,Classement de Rang
-NEW_ARENA_ALL_SERVER_TEXT_3,Classement Total
+NEW_ARENA_ALL_SERVER_TEXT_3,Classement Général
 NEW_ARENA_ALL_SERVER_TEXT_4,Points
 NEW_ARENA_ALL_SERVER_TEXT_5,Ligne Avant
 NEW_ARENA_ALL_SERVER_TEXT_6,Ligne Arrière
-NEW_ARENA_ALL_SERVER_TEXT_7,Remplaçant de la ligne avant
-NEW_ARENA_ALL_SERVER_TEXT_8,Remplaçant de la ligne arrière
+NEW_ARENA_ALL_SERVER_TEXT_7,Suppléante\nde la ligne avant
+NEW_ARENA_ALL_SERVER_TEXT_8,Suppléante\nde la ligne arrière
 NEW_ARENA_ALL_SERVER_TEXT_9,Débloqué après avoir atteint le Rang Argent
 NEW_ARENA_ALL_SERVER_TEXT_10,Débloqué après avoir atteint le Rang Or
 NEW_ARENA_ALL_SERVER_TEXT_11,Débloqué après avoir atteint le Rang Diamant
 NEW_ARENA_ALL_SERVER_TEXT_12,Actualiser({1})
 NEW_ARENA_ALL_SERVER_TEXT_13,Rang Actuel :
-NEW_ARENA_ALL_SERVER_TEXT_14,Récompense Actuelle :
-NEW_ARENA_ALL_SERVER_TEXT_15,Les récompenses vous seront envoyées en fonction de votre Rang après la fin de Ruée de Points
-NEW_ARENA_ALL_SERVER_TEXT_16,Retourner les cartes automatiquement
+NEW_ARENA_ALL_SERVER_TEXT_14,Récompenses Actuelles :
+NEW_ARENA_ALL_SERVER_TEXT_15,Les récompenses seront envoyées selon votre Rang après la fin de Ruée de Point (Condition de récupération : avoir lancé 10 combats ou + )
+NEW_ARENA_ALL_SERVER_TEXT_16,Retourner les cartes automatiquement aujourd'hui
 NEW_ARENA_ALL_SERVER_TEXT_17,Groupe {1}
 NEW_ARENA_ALL_SERVER_TEXT_18,Nombre de fois\nChampion
 DRIFT_BOTTLE_AWARD_WINDOW,Aperçu des récompenses
@@ -5227,9 +5228,30 @@ TIME_CLOISTER_TEXT53,Carte de Défis
 TIME_CLOISTER_TEXT54,Carte d'Événements
 NEW_ARENA_ALL_SERVER_TEXT_20,Plus aucune chance d'actualisation pour aujourd'hui
 TIME_CLOISTER_MISC,Explorez les\nCorridors Temporels
-NEW_ARENA_ALL_SERVER_TEXT_21,積分賽結束倒計時：
-NEW_ARENA_ALL_SERVER_TEXT_22,冠軍榜單
-NEW_ARENA_ALL_SERVER_TEXT_23,冠軍
-NEW_ARENA_ALL_SERVER_TEXT_24,當前還未到淘汰賽階段！
-NEW_ARENA_ALL_SERVER_TEXT_25,開啟倒計時
+NEW_ARENA_ALL_SERVER_TEXT_21,Fin de la phase - Ruée de Point：
+NEW_ARENA_ALL_SERVER_TEXT_22,Liste de Champion
+NEW_ARENA_ALL_SERVER_TEXT_23,Champion
+NEW_ARENA_ALL_SERVER_TEXT_24,La phase d'Élimination n'a pas encore commencé !
+NEW_ARENA_ALL_SERVER_TEXT_25,Commence dans
 WARMUP_ARENA_TASK_INFO_7,Récompenses de Défi
+ACTIVITY_TRICKORTREAT_BUTTON01,Farce
+ACTIVITY_TRICKORTREAT_BUTTON02,Tâches
+ACTIVITY_TRICKORTREAT_HELP,"1. Durant cet événement, donnez des Potions Magiques à Azumi la petite sorcière afin qu'elle se transforme en fantôme et fasse des Farces au Manoir Hanté.|2. À chaque tour, Azumi fera des Farces sur les 6 Sites de la carte, à commencer par le premier. Plus le Site est éloignée, plus vous obtiendrez de récompenses. Vous passerez au tour suivant, une fois avoir obtenu les récompenses du Site sur lequel Azumi est positionnée.|3. Vous obtiendrez des récompenses à chaque Farce faite. Si vous obtenez les Récompenses Spéciales du Site actuel, Azumi avancera d'un Site, si vous n'en obtenez pas, alors Azumi reculera d'un Site (si Azumi est sur le Site de départ, elle ne reculera pas).|4. Lorsque Azumi recule d'un Site, elle a des chances de déclencher son pouvoir caché de sorcière. Ce dernier lui permettra de rester sur le Site actuel.|5. Vous obtiendrez des points à chaque Farce faite. Lorsque vous aurez obtenu 200 points, vous recevrez Panier de Bonbons*1.|6. Moyen d'obtention des Potions Magiques：Chaudron Magique, Gemmes (Potion Magique*100 achetables au maximum), Surprise d'Halloween, Capsule de Nouvelle Fille, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin.|7. Vous recevrez également des récompenses en fonction du nombre de Farce faite.|8. Vous pouvez échanger les Bonbons Citrouilles et les Paniers de Bonbons contre des récompenses dans la Boutique."
+ACTIVITY_TRICKORTREAT_TASK01,"Complétez les tâches pour obtenir des Potions Magiques, utilisables dans l'événement - Des Bonbons ? ou une Farce !"
+ACTIVITY_TRICKORTREAT_BUTTON03,Farce x1
+ACTIVITY_TRICKORTREAT_BUTTON04,Farce x10
+ACTIVITY_TRICKORTREAT_TEXT01,Faites encore des Farces {1} fois :
+ACTIVITY_TRICKORTREAT_TEXT02,Récompenses Collectables
+ACTIVITY_TRICKORTREAT_TIPS,"Pouvoir de sorcière déclenché, Azumi reste sur ce Site !"
+ACTIVITY_TRICKORTREAT_AWARDS,Faire une Farce {1} fois
+NEW_ARENA_ALL_SERVER_TEXT_26,La phase - Ruée de Point commence dans：
+ACTIVITY_TRICKORTREAT_TITLE,Des bonbons ?\nou une Farce !
+TIME_CLOISTER_TEXT55,En cours d'Exploration...
+TIME_CLOISTER_TEXT56,"L'Exploration est terminée, en attente de calcul..."
+TIME_CLOISTER_TEXT57,Aucune Exploration en cours
+ACTIVITY_TRICKORTREAT_TEXT03,Aperçu des récompenses
+ACTIVITY_TRICKORTREAT_TEXT04,Récompenses Spéciales
+ACTIVITY_TRICKORTREAT_TEXT05,Récompenses Normales
+ACTIVITY_TRICKORTREAT_AWARDS_TITLE,Récompenses
+ACTIVITY_TRICKORTREAT_AWARDS_JUMP,Passer l'animation et obtenir les récompenses aujourd'hui
+REFRESH_SHOP_TIMES,Rafraîchir

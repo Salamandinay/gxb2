@@ -1990,7 +1990,7 @@ JUMP_GAME_TARGET_POINT,Ziel: {1}
 PACK_FEEDBACK_TEXT01,Du hast den Gegenstand [c][fff799]{1}[-][/c]\nerfolgreich gekauft und folgende Items erhalten:
 PACK_FEEDBACK_TEXT02,"Tippe auf den Bildschirm, um zu schließen"
 ARENA_ALL_SERVER_TEXT_1,Ehrenschloss
-ARENA_ALL_SERVER_TEXT_2,Qualifikation
+ARENA_ALL_SERVER_TEXT_2,KO-Phase
 ARENA_ALL_SERVER_TEXT_3,Finale
 ARENA_ALL_SERVER_TEXT_4,Noch nicht im Ehrenschloss gelistet
 ARENA_ALL_SERVER_TEXT_5,Wetten
@@ -2027,7 +2027,7 @@ MATCH_NUM4,4ter Kampf
 MATCH_NUM5,5ter Kampf
 ARENA_ALL_SERVER_MISC,Werde der Champion!
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Du kannst Festlegen, dass nach Beginn der Qualifikationsrunde ein anderer Spieler unterstützt wird. Wenn der Spieler gewinnt, ist die Wette gewonnen, ansonsten ist sie verloren. |2. Spieler können sich nur im Finale selber unterstützen. |3. Das System entscheidet automatisch über den Kampf, auf den in dieser Runde gewettet wird. Kämpfe mit Spielern in derselben Gilde, auf demselben Server oder in demselben Sprachraum werden zuerst ausgewählt. |4. Die Münzen, die in eine Wette gesetzt werden können, hängen vom Fortschritt ab, den du beim Abenteuer erreicht hast: Die Menge der Münzen bestimmt sich danach wieviel du an einem Tag im Auto-Kampf, bei deiner weitesten Stufe, erhalten kannst (VIP und Abonnementenbonus sind nicht enthalten). |5. Wenn der Spieler, den du ausgewählt hast, gewonnen hat, erhältst du die doppelte Anzahl am Münzen, die du gesetzt hast. Die Belohnungen werden per Mail verschickt."
-ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,"1. Frühere Champions zeigen alle Champions ab der ersten Saison an. |2. Du kannst die Top-8-Spieler jeder Saison überprüfen, indem du auf die jeweilige Saison tippst."
+ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.
 ARENA_ALL_SERVER_NEW_COUNTDOWN,Nächste Saison:
 IMG_GUIDE_JUMP_GAME_1,"Fenek stellt jedes Mal[c][cc0011]wenn sie auf einer Plattform landet 1 Punkt Verstand[-][/c]wieder her. Wenn der Verstand 0 ist, ist das Spiel vorbei."
 IMG_GUIDE_JUMP_GAME_2,"Wenn Fenek an [c][cc0011]die Spikes[-][/c] stößt, verliert sie eine große Menge an Verstand"
@@ -4786,7 +4786,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume - Kostümabstimmung
 DRESS_SUMMON_LABEL_2,"Tippe, um die erhältlichen Outfit-Teile zu überprüfen"
 DRESS_SUMMON_LABEL_4,Garantiertes orangenes Outfit-Teil in [c][e96516]{1}[-][/c] Zügen (Zug)
 DRESS_SUMMON_LABEL_1,Gratischance(n): {1}
-DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Côte d’Azur"""
+DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Halloween"""
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Kostüm-\nabstimmung
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,Danke für deine Stimme! Wir wünschen dir noch viel Spaß an der Yume Akademie!
 ONE_KEY_UPLEVEL_TITLE,Schnell aufleveln
@@ -4864,7 +4864,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,Du hast die Obergrenze für Saphire bereits erre
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,Diese Antiquität wird von einem Mädchen\nbenutzt. Trotzdem fortfahren?
 DAILY_QUIZ_TEXT04,"Brauchst du noch mehr Chancen,\ndann gib bitte deine Anzahl ein:"
 PUB_MISSION_AUTO_TEXT1,Schnell\neinsammeln
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,"Je mehr Bilder von orangenen Antiquitäten du entsperrt\nhast, desto mehr Antiquitäten stehen zur Wahl."
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,"Einige Antiquitäten stehen dir standardmäßig zur Auswahl. Andere Antiquitäten musst du erst erhalten, damit du sie ausrüsten kannst."
 ENTRANCE_TEST_PARTNER_NOT_READY,"Es gibt in deinem Team noch einige Mädchen, die noch nicht vollständig ausgerüstet sind. Sicher mit diesem Team kämpfen?"
 ENTRANCE_TEST_BATTLE_JUMP_SET,Zum Konfigurieren
 ENTRANCE_TEST_PET_EXSKILL,In der Aufnahmeprüfung richtet sich das Kernlevel der Diener nach dem Fortschritt deiner eigenen Dienern.
@@ -4944,7 +4944,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Zum Shop
 QUICK_STARS_TEXT05,Beim Absolvieren...
 EQUIP_LEVELUP_TEXT_19,"Bitte wähle das Professions-Set, bei dem du die Profession ändern möchtest"
 EQUIP_LEVELUP_TEXT_20,Wähle dein gewünschtes Set
-DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Côte d’Azur""."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Halloween""."
 HOUSE_TEXT_60,Willst du das Mädchen auf diesen Stock umziehen lassen?
 HOUSE_TEXT_61,Auf diesem Stock gibt es keine freien Plätze mehr
 HOUSE_TEXT_62,Selber auch auf diesem Stockwerk einziehen
@@ -5056,7 +5056,7 @@ TIME_CLOISTER_TEXT11,Willst du das Ansehen frühzeitig beenden?
 TIME_CLOISTER_TEXT12,Ansehen beendet
 TIME_CLOISTER_TEXT13,Prüfen
 TIME_CLOISTER_TEXT14,Speed Up
-TIME_CLOISTER_TEXT15,"Verwende den ""Zeitstaub"", um das Ansehen der Erinnerung zu beschleunigen. Außerdem wird dafür die entsprechende Menge von ""Taschenuhren"" benötigt."
+TIME_CLOISTER_TEXT15,"Verwende den ""Zeitstaub"", um das Ansehen zu beschleunigen. Für das Beschleunigen wird allerdings trotzdem die entsprechende Menge an ""Taschenuhren"" benötigt."
 TIME_CLOISTER_TEXT16,Restliche Zeit:
 TIME_CLOISTER_TEXT17,Ansehen beendet. Es muss nicht mehr beschleunigt werden.
 TIME_CLOISTER_TEXT18,Ansehen beschleunigt
@@ -5108,9 +5108,9 @@ NEW_ARENA_ALL_SERVER_HELP,"
 Die ultimative Arena ist ein Wettbewerb, an dem die SpielerInnen aller Server teilnehmen.
 Jede Saison dauert 28 Tage und wird in 5 Phasen unterteilet: Vorbereitungsphase, Qualifikationsphase, KO-Phase, Finale und Ruhezeit.|1. Vorbereitungsphase|Die Vorbereitungsphase findet am 1. Tag statt und dauert 1 Tag. Während der Vorbereitungsphase können die Spieler ihre Verteidigungsteams aufstellen, aber sie können keinen Kampf starten.|2. Qualifikationsphase|(1) Die Qualifikationsphase findet am 2. Tag statt und dauert bis zum 20. Tag der Saison.
 (2) Verwende die Arenatickets, um gegen die anderen Spieler zu kämpfen. Die zur Wahl stehenden Gegner können täglich maximal 5 Mal erneuert werden.
-(3) Unter ""Verlauf"" können die letzten 10 Kämpfe angeschaut werden.|3. Stufen|(1) Während der Qualifikationsphase werden die Spieler in 6 Stufen gegliedert: Bronze, Silber, Gold, Diamant, Meister und Großmeister. Außer in den Stufen „Meister“ und „Großmeister“ gibt es bei den anderen 4 Stufen jeweils noch 5 Untergruppen, in denen die Spieler von 5 bis auf 1 aufsteigen können.
-(2) Jedes Mal, wenn ein Spieler 100 Punkte gewonnen hat, steigt er in die nächste Gruppe auf. Die TOP320 Spieler in der Stufe „Meister“ qualifizieren sich für die Stufe „Großmeister“.
-(3) Nimmst du zum ersten Mal an dem Qualifikationskampf teil, musst du in der Gruppe 5 der Stufe „Bronze“ anfangen. Zu Beginn der neuen Saison werden alle Stufen sowie Gruppen zurückgesetzt. Entsprechend den Ergebnissen der vorherigen Saison wird dein Rang in der darauffolgenden Saison festgelegt.|4. Kampfregeln|(1)In der ultimativen Arena wird eine brandneue Backup-Kampfregel eingeführt. Man hat nicht nur eine Kampfaufstellung, sondern auch eine Backup-Aufstellung. Sind in einem Kampf die 6 Mädchen der Startaufstellung einer Seite gestorben, so ist ein Durchgang beendet und die toten Mädchen (beider Seiten) werden durch Mädchen aus der Backup-Aufstellung entsprechend ihrer Reihenfolge ersetzt, um die Kampfaufstellung wieder aufzufüllen (Die Backup-Mädchen der Frontline werden bevorzugt auf der Frontline eingestellt, die der Backline auf der Backline). Die HP der lebenden Mädchen werden beibehalten. Dann startet der nächste Durchgang. Das ganze geht so lange, bis alle Mädchen und Backup-Mädchen einer Seite gestorben sind.
+(3) Unter ""Verlauf"" können die letzten 10 Kämpfe angeschaut werden.|3. Stufen|(1) Während der Qualifikationsphase werden die Spieler in 6 Stufen gegliedert: Bronze, Silber, Gold, Diamant, Meister und Großmeister. Außer in den Stufen „Meister“ und „Großmeister“ gibt es bei den anderen 4 Stufen jeweils noch 5 Untergruppen, in denen die Spieler von V bis auf I aufsteigen können.
+(2) Jedes Mal, wenn ein Spieler 100 Punkte gewonnen hat, steigt er in die nächste Untergruppe/Gruppe auf. Die TOP320 Spieler in der Stufe „Meister“ qualifizieren sich für die Stufe „Großmeister“.
+(3) Nimmst du zum ersten Mal an dem Qualifikationskampf teil, musst du in der Gruppe V der Stufe „Bronze“ anfangen. Zu Beginn der neuen Saison werden alle Stufen sowie Gruppen zurückgesetzt. Entsprechend den Ergebnissen der vorherigen Saison wird dein Rang in der darauffolgenden Saison festgelegt.|4. Kampfregeln|(1)In der ultimativen Arena wird eine brandneue Backup-Kampfregel eingeführt. Man hat nicht nur eine Kampfaufstellung, sondern auch eine Backup-Aufstellung. Sind in einem Kampf die 6 Mädchen der Startaufstellung einer Seite gestorben, so ist ein Durchgang beendet und die toten Mädchen (beider Seiten) werden durch Mädchen aus der Backup-Aufstellung entsprechend ihrer Reihenfolge ersetzt, um die Kampfaufstellung wieder aufzufüllen (Die Backup-Mädchen der Frontline werden bevorzugt auf der Frontline eingestellt, die der Backline auf der Backline). Die HP der lebenden Mädchen werden beibehalten. Dann startet der nächste Durchgang. Das ganze geht so lange, bis alle Mädchen und Backup-Mädchen einer Seite gestorben sind.
 (2) Jedes Mädchen darf maximal an 2 Durchgängen teilnehmen. Hat ein Mädchen 2 Durchgänge überlebt, wird sie automatisch durch ein Backup-Mädchen ersetzt (und gilt dann dadurch quasi als „tot“).
 (3) Die Reihenfolge der Diener kann vom Spieler bestimmt werden. Nachdem der Spieler einen Durchgang verloren hat, wird entsprechend der Reihenfolge der nächste Diener aufgestellt. Gewinnt der Spieler den Durchgang, wird der aufgestellte Diener weiterkämpfen.
 (4) Je höher die Stufe, desto mehr Backup-Mädchen und Diener sind verfügbar.
@@ -5119,12 +5119,13 @@ Silber: 2x Backup-Mädchen der Frontline, 4x Backup-Mädchen der Backline, 2x Di
 Gold: 4x Backup-Mädchen der Frontline, 8x Backup-Mädchen der Backline, 3x Diener
 Diamant: 8x Backup-Mädchen der Frontline, 16x Backup-Mädchen der Backline, 5x Diener
 (5) Entsprechend der Stufe des gewählten Gegners wird die Anzahl von deinen verfügbaren Backup-Mädchen in diesem Kampf festgelegt.
-(6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die 320 Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, werden die leeren Plätze mit Spielern aus niedrigeren Stufen aufgefüllt, bis es in jeder Gruppe 64 Spieler gibt. Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
+(6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, dann werden entsprechend der Reihenfolge in dieser Stufe (Großmeister) so lange Gruppen aus 64 Spielern gebildet, bis die Anzahl der Spieler nicht mehr ausreicht, um eine Gruppe zu erstellen (<64). Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
 (2) Täglich findet 1 Kampf der KO-Phase statt. Jeden Tag von 0 Uhr bis 2 Uhr (UTC/GMT 0) ist die Abrechnungsphase, während der die Aufstellungen nicht konfiguriert oder gespeichert werden können.
 (3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch den Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
 (4) HP und Angriffswert der Mädchen werden nach ihrem jeweiligen Sternlevel, auf das sie der Spieler gelevelt hat, mit einem bestimmten Wert multipliziert. Details wie folgt:|  5-Sterne: 50%%, 6-Sterne: 51%%, 7-Sterne: 53%%|  8-Sterne: 55%%, 9-Sterne: 60%%, 10-Sterne: 65%%|  11-Sterne: 70%%, 12-Sterne: 75%%, 13-Sterne: 80%%|  14-Sterne: 90%%, 15-Sterne: 100%%.|6. Ruhezeit|(1) Die 2 Tage nach dem Ende des Finales sind die Ruhezeit.|7. Ehrenschloss|(1) Die TOP8 Spieler aus jeder Kampfgruppe jeder Saison werden einen Platz im Ehrenschloss erhalten.
 (2) Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.|8. Tägliche Aufgabe|(1) Während der Qualifikationsphase können die Spieler die täglichen Aufgaben in der Qualifikationsphase abschließen, um Belohnungen zu erhalten.|9. Abrechnungsbelohnungen|(1) Nach dem Ende der Qualifikationsphase erhältst du entsprechend deines Rangs in der Stufe Belohnungen.
-(2) Nach dem Ende des Finales werden limitierte Avatarbildrahmen entsprechend des Rangs versendet."
+Tipp: Du musst während der Qualifikationsrunde 10 oder mehr Kämpfe abgeschlossen haben,  um diese Abrechnungsbelohnungen erhalten zu können.
+(2) Nach dem Ende des Finales werden limitierte Avatarbildrahmen (gültig für 28 Tage) entsprechend des Rangs versendet."
 NEW_ARENA_ALL_SERVER_RANK_1,[c][399d21]Bronze - {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_2,[c][6b7a86]Silber - {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_3,[c][e6b300]Gold - {1}[-][/c]
@@ -5145,7 +5146,7 @@ NEW_ARENA_ALL_SERVER_TEXT_11,Entsperrt ab Diamant-Stufe
 NEW_ARENA_ALL_SERVER_TEXT_12,Erneuern ({1})
 NEW_ARENA_ALL_SERVER_TEXT_13,Derzeitige Stufe:
 NEW_ARENA_ALL_SERVER_TEXT_14,Derzeitige Belohnung:
-NEW_ARENA_ALL_SERVER_TEXT_15,Nach dem Ende der Qualifikationsphase werden dir Belohnungen entsprechend deiner Stufe gesendet.
+NEW_ARENA_ALL_SERVER_TEXT_15,Nach der Qualifikationsrunde werden Stufenbelohnungen versendet. (Min. 10 Kämpfe benötigt)
 NEW_ARENA_ALL_SERVER_TEXT_16,Aufdecken skippen (nur heute)
 NEW_ARENA_ALL_SERVER_TEXT_17,Gruppe {1}
 NEW_ARENA_ALL_SERVER_TEXT_18,Als Champion gewonnen
@@ -5173,9 +5174,38 @@ TIME_CLOISTER_TEXT53,Kampfkarten
 TIME_CLOISTER_TEXT54,Ereigniskarten
 NEW_ARENA_ALL_SERVER_TEXT_20,Heute keine Chance mehr
 TIME_CLOISTER_MISC,Entdecke die\nGeheimnisse der\nErinnerungen
-NEW_ARENA_ALL_SERVER_TEXT_21,積分賽結束倒計時：
-NEW_ARENA_ALL_SERVER_TEXT_22,冠軍榜單
-NEW_ARENA_ALL_SERVER_TEXT_23,冠軍
-NEW_ARENA_ALL_SERVER_TEXT_24,當前還未到淘汰賽階段！
-NEW_ARENA_ALL_SERVER_TEXT_25,開啟倒計時
+NEW_ARENA_ALL_SERVER_TEXT_21,Qualifikationsphase endet in:
+NEW_ARENA_ALL_SERVER_TEXT_22,Championliste
+NEW_ARENA_ALL_SERVER_TEXT_23,Champion
+NEW_ARENA_ALL_SERVER_TEXT_24,Die KO-Phase hat noch nicht begonnen!
+NEW_ARENA_ALL_SERVER_TEXT_25,Startet in:
 WARMUP_ARENA_TASK_INFO_7,Belohnungen
+ACTIVITY_TRICKORTREAT_BUTTON01,Streich spielen
+ACTIVITY_TRICKORTREAT_BUTTON02,Aufgaben
+ACTIVITY_TRICKORTREAT_HELP,"
+1. Die kleine Hexe Apate hat den Geistertrank getrunken und sich in einen kleinen Geist verwandelt! So läuft sie durch die Gegend und spielt an verschiedenen Orten Streiche.
+2. Jede Runde spielt Apate an 6 verschiedenen Orten Streiche. Je weiter weg der Ort, desto reichhaltigere Belohnungen wird sie mit zurückbringen! Sobald du die Belohnungen vom letzten Ort, dem Geisterhaus, erhalten hast, wird die nächste Runde entsperrt.
+3. Jedes Mal, wenn Apate einen Streich spielt, erhältst du eine Belohnung. Hast du die ultimative Belohnung an diesem Ort bekommen, so wirst du zum nächsten Ort voranschreiten, wenn nicht, dann kehrst du zum vorherigen Ort zurück. (Befindet sich Apate am 1. Ort, gibt es keinen vorherigen Ort und Apate wird auch nirgendwohin zurückgehen.)
+4. Wenn Apate zurückgehen muss, besteht eine gewisse Wahrscheinlichkeit, dass die Hexenkraft ausgelöst wird, wodurch das Zurückgehen abgebrochen wird und Apate am aktuellen Ort bleiben kann.
+5. Jedes Mal, wenn Apate einen Streich spielt, erhältst du Punkte. Jedes Mal, wenn die Punkte 200 erreichen, erhältst du einen Süßigkeitenkorb.
+6. Erhalten des Geistertranks: Magischer Kessel, mit Dias kaufen (maximal 100 Mal kaufbar), Pakete zu Halloween, Willkommenskapseln, Superpakete, Kostümpakete, Glückspakete.
+7. Entsprechend der Anzahl der Streiche, die Apate gespielt hat, erhältst du Belohnungen. Sobald du 475x Streiche gespielt hast, bekommst du das neue Halloween-Kostüm von Apate!
+8. Kürbisbonbons und Süßigkeitenkörbe können im Shop gegen Belohnungen eingetauscht werden."
+ACTIVITY_TRICKORTREAT_TASK01,"Schließe die Aufgaben ab, um Geistertränke zu erhalten! Sie können im Event ""Süßes oder Saures"" verwendet werden~"
+ACTIVITY_TRICKORTREAT_BUTTON03,Streich x1
+ACTIVITY_TRICKORTREAT_BUTTON04,Streich x10
+ACTIVITY_TRICKORTREAT_TEXT01,Noch {1} Streich(e)
+ACTIVITY_TRICKORTREAT_TEXT02,Erhältliche Belohnungen
+ACTIVITY_TRICKORTREAT_TIPS,Die Hexenkraft wurde ausgelöst! Das Zurückgehen wird abgebrochen.
+ACTIVITY_TRICKORTREAT_AWARDS,Spiele {1} Mal Streiche
+NEW_ARENA_ALL_SERVER_TEXT_26,Qualifikationsrunde startet in:
+ACTIVITY_TRICKORTREAT_TITLE,Süßes oder Saures!
+TIME_CLOISTER_TEXT55,Beim Ansehen...
+TIME_CLOISTER_TEXT56,Ansehen fertig. Wartet auf die manuelle Abrechnung...
+TIME_CLOISTER_TEXT57,Kein Ansehen im Gange
+ACTIVITY_TRICKORTREAT_TEXT03,Belohnungsvorschau
+ACTIVITY_TRICKORTREAT_TEXT04,Ultimative Belohnung
+ACTIVITY_TRICKORTREAT_TEXT05,Normale Belohnungen
+ACTIVITY_TRICKORTREAT_AWARDS_TITLE,Belohnungen für Streiche
+ACTIVITY_TRICKORTREAT_AWARDS_JUMP,Animation skippen und Belohnungen erhalten (nur heute)
+REFRESH_SHOP_TIMES,Erneuern

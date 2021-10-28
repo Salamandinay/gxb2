@@ -1,7 +1,7 @@
 id,name,from,content
 1,Arène Journalière,Courrier de l'Arène,"Félicitations, vous avez atteint la {2}e place dans l'Arène du {1}, voici vos récompenses !"
 2,Fin de Saison,Courrier de l'Arène,"En tant que représentant de l'Académie Yume, je voudrais vous féliciter pour avoir atteint la {1}e place dans l'Arène, voici vos récompenses !"
-3,Bonus de Nouveau Serveur,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gemme x50, Ticket du Distributeur x2, Ticket de l'Arène x2, voici vos récompenses !"
+3,Bonus de Nouveau Serveur,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gemme x50, Ticket du Distributeur x2, Ticket d'Arène x2, voici vos récompenses !"
 4,Carte Mensuelle,Carte Mensuelle,"Félicitations ! Du {1}, vous obtiendrez 370 Gemmes tous les jours à 00:00 (GMT 0). Les Gemmes du premier jour vous seront envoyées directement après l'achat."
 5,Carte Mensuelle,Carte Mensuelle,"Cher Senpai VIP{1}, voici vos récompenses de la journée. Votre Carte Mensuelle expirera dans {2} jours."
 6,La Carte Mensuelle a expiré,Carte Mensuelle,"Cher Senpai, votre Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 13 fois plus de Gemmes qu'en achetant individuellement."
@@ -87,7 +87,7 @@ id,name,from,content
 86,Show,Courrier du Système,Félicitations ! Vous avez débloqué le mode difficile du Show en direct ! Vous avez obtenu Hexa Skin Tambour.
 87,Classement du Show,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans le mode difficile du Show en direct ! Voici vos récompenses.
 88,Arène Ultime Ouverte,Courrier du Système,Cher Senpai ! La nouvelle saison de l'Arène Ultime a commencé ! Vous pourrez parier après que la Phase de Qualification débute.
-89,Equipe Qualifié,Courrier du Système,Félicitations ! Vous vous êtes qualifiés à l'Arène Ultime en groupe ! Préparez vite votre formation !
+89,Phase Élimination&Finalistes,Courrier du Système,Félicitations Senpai ! Vous êtes désormais en phase Élimination&Finalistes de l'Arène Ultime ! Pensez à réajuster votre Équipe pour les prochaines batailles !
 90,Pari raté,Courrier du Système,"Vous n'avez pas de chance, le joueur {1} que vous aviez choisi n'a pas gagné ce match de l'Arène Ultime. Bon courage pour vos paris suivants !"
 91,Pari réussi,Courrier du Système,Félicitations ! Le joueur {1} a gagné cette manche ! Voici vos récompenses.
 92,Chapitre Terminé,Courrier du Système,Félicitations ! Vous avez fini le Chapitre {1} dans l'Observateur de la Librairie. Voici vos récompenses.
@@ -208,3 +208,8 @@ Si vous avez des questions concernant le jeu, n\'hésitez pas à nous contacter.
 201,Événement Mensuel,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses, veuillez les récupérer !"
 202,Bonus de Luxe,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses de Luxe, veuillez les récupérer !"
 203,Récompenses d'Étape (Pratique Extra-Scolaire),Courrier du Système,"Félicitations Senpai ! Vous avez réussi à vaincre le Boss d'un Étape dans la Pratique Extra-Scolaire, voici vos récompenses, veuillez les récupérer !"
+204,Les Échos du Temps,Courrier du Système,"Félicitations ! Vous vous êtes classé {2}e du Classement de dégâts dans Les Échos du Temps - {1}, voici vos récompenses, veuillez les récupérer !"
+205,Rappel de fin de phase - Ruée de Point,Courrier du Système,"Cher Senpai ! Dans moins de 24 heures, la phase - Ruée de Point sera terminée. N'oubliez pas d'y participer pour gagner beaucoup de points !"
+206,Calcul de Ruée de Point,Courrier du Système,"Félicitations Senpai ! Vous avez atteint le Rang {1}, voici vos récompenses, veuillez les récupérer !"
+207,Champion de l'Arène Ultime,Courrier du Système,Félicitations ! Vous êtes champion de l'Arène Ultime ! Voici le Cadre d'Avatar spécial (28 Jours) pour vous ! Veuillez toucher votre avatar pour l'utiliser !
+208,Classement de l'Arène Ultime,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans l'Arène Ultime ! Voici le Cadre d'Avatar spécial (28 Jours) pour vous ! Veuillez toucher votre avatar pour l'utiliser !

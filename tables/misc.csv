@@ -477,7 +477,7 @@ comic_comment_length_limit_ko_kr,12|120,-1
 activity_letter,36#10|2#1000|940002#50,-1
 activity_birthday_colour_awards,1#18000|1#16000,-1
 activity_birthday_colour_limit,100000,-1
-activity_44_hero_model,liubei_pifu04_lihui01|600|-1400|0.7|5401305|7213,-1
+activity_44_hero_model,monika_pifu02_lihui01|572|-761|0.7|5201703|7218,-1
 activity_birthday_colour_cost,147#1,-1
 activity_birthday_cake_cost,148#1,-1
 activity_birthday_cake_rounds_limit,25,-1
@@ -813,7 +813,7 @@ activity_popularity_vote_open,60,-1
 dress_gacha_dropbox4,50001,-1
 dress_gacha_dropbox5,50003,-1
 dress_common_fragment_qlt_item_ids,3999991|3999992|3999993|3999994|3999995|3999996,-1
-dress_gacha_show,3100139|3100145|3100151|3100157|3100163,-1
+dress_gacha_show,3100541|3100547|3100553|3100559|3100565,-1
 dress_gacha_free1,86400|1,-1
 dress_gacha_free2,43200|1,-1
 activity_equip_decompose,262|60000|6000,-1
@@ -827,7 +827,7 @@ activity_warmup_arena_partners,754017,-1
 activity_warmup_arena_revenge,1,-1
 guild_quick_order_open,5,-1
 gacha_10drawcard_endtime,1636070400,-1
-dress_gacha_activity_show,6,-1
+dress_gacha_activity_show,19,-1
 activity_equip_exchange_cost,268#3|268#6|268#9|268#12,-1
 activity_equip_exchange_6,1166|2166|3166|4166#1266|2266|3266|4266#1366|2366|3366|4366#1466|2466|3466|4466#1566|2566|3566|4566,-1
 activity_equip_exchange_1,1167|2167|3167|4167#1267|2267|3267|4267#1367|2367|3367|4367#1467|2467|3467|4467#1567|2567|3567|4567,-1
@@ -878,8 +878,15 @@ arena_all_server_cost,34#2|34#2|34#2|34#2|34#2|34#3|34#3|34#3|34#3|34#3|34#4|34#
 arena_all_server_same_num,3,-1
 arena_all_server_refresh_num,5,-1
 arena_all_server_rank_num,320,-1
-arena_all_server_award_limit,5,-1
+arena_all_server_award_limit,10,-1
 arena_all_server_area,5,-1
 arena_all_server_knockout,4|8|2,-1
 arena_all_server_finals,8|16|4,-1
 arena_all_server_partner_round,2,-1
+activity_trickortreat_buy,2#200,-1
+activity_trickortreat_buy_limit,100,-1
+activity_trickortreat_point,2|1,-1
+activity_trickortreat_point_full,200,-1
+activity_trickortreat_point_award,299#1,-1
+activity_trickortreat_cost,297#1,-1
+activity_trickortreat_get,297#1,-1
