@@ -4103,7 +4103,7 @@ BP_EXP_CURRENT,當前殘頁數
 BP_LEV,等級
 BP_BRASS_AWARD,普通手冊獎勵
 BP_SILVER_AWARD,精裝手冊獎勵
-BP_MISSION_DES,學長可透過完成任務收集殘頁，值得注意的是額外任務會在指定等級刷新出現，並且無法重複完成。在額外任務出現前完成的進度將會保留，請學長放心遊玩。
+BP_MISSION_DES,學長可透過完成任務收集殘頁，值得注意的是額外任務會在指定手冊等級刷新出現，並且無法重複完成。在額外任務出現前完成的進度將會保留，請學長放心遊玩。
 BP_MISSION_REFRESH_TIME,刷新時間：
 BP_UPGRADE_BUTTON,升級手冊
 BP_PURCHASE_WINDOW_TIP,"
@@ -5178,7 +5178,7 @@ ACTIVITY_TRICKORTREAT_HELP,"
 3.每次搗蛋都將獲得一份獎勵，如果獲得的獎勵為本層大獎，將前往下一間房子。沒有獲得本層大獎將倒退回前一間房子（當阿帕忒處於第一間房子時，不會倒退）。
 4.在即將倒退時，將有機率觸發女巫之力，取消倒退並停留在當前房子。
 5.每次搗蛋將獲得一定積分，積分達到200時將獲得一個糖果籃補給。
-6.「幽靈藥劑」可透過：魔藥製作、鑽石購買（最多可使用鑽石購買100個「幽靈藥劑」）、萬聖節驚喜禮包、扭蛋迎新、超值禮包、造型禮包、資源禮包獲得。
+6.「幽靈藥劑」可透過：魔藥製作、鑽石購買（最多可使用鑽石購買100個「幽靈藥劑」）、萬聖節驚喜禮包、扭蛋迎新、超值禮包、造型禮包、特惠禮包獲得。
 7.根據阿帕忒搗蛋的次數將獲得對應的累計獎勵。累計獎勵中還包含阿帕忒新造型「南瓜幽靈」哦~
 8.搗蛋獲得的「南瓜糖」和「糖果籃」可以在兌換商店兌換獎勵。"
 ACTIVITY_TRICKORTREAT_TASK01,完成任務獲得幽靈藥劑，使用幽靈藥劑便可參與“不給糖？就搗蛋！”活動哦~
@@ -5199,3 +5199,11 @@ ACTIVITY_TRICKORTREAT_TEXT05,本層普通獎勵
 ACTIVITY_TRICKORTREAT_AWARDS_TITLE,搗蛋獎勵
 ACTIVITY_TRICKORTREAT_AWARDS_JUMP,今日跳過搗蛋動畫直接獲得獎勵
 REFRESH_SHOP_TIMES,刷新
+FAIR_ARENA_OPEN_BACK_PACK_TIPS,點擊戰姬頭像，可以打開戰姬詳情介面，並且為戰姬裝備魂器！
+FAIR_ARENA_OPEN_BACK_PACK_TIPS2,本次活動不再提示
+PARTNER_CHALLENGE_CHESS_TEXT01,試煉
+PARTNER_CHALLENGE_CHESS_TEXT02,試煉挑戰
+PARTNER_CHALLENGE_CHESS_TEXT03,強化效果
+PARTNER_CHALLENGE_CHESS_TEXT04,完成4-9關的試煉可解除本關boss的強化效果
+PARTNER_CHALLENGE_CHESS_TEXT05,完成試煉挑戰可以解除第10關boss的一個強化效果
+PARTNER_CHALLENGE_CHESS_TEXT06,完成{1}個試煉後解除
