@@ -8,7 +8,7 @@ hit,Précision,Précision
 miss,Blocage,Esquive
 crit,Critique,Critique
 critTime,Dég. Crit.,Dég. Crit.
-brk,Péné. Armure,Péné. Armure
+brk,Péné. d'Armure,Péné. d'Armure
 free,Immunité,Immunité
 trueAtk,Dégâts Divins,Dégâts Divins
 energy,Énergie,Énergie
@@ -89,7 +89,7 @@ fsSklPO,Dég. Comp.,Dég. Comp.
 ckHpPO,PV,Augmente les PV des Assassins
 ckCritTimeO,Dégâts Critiques,Dégâts Crit
 ckCritO,Critique,Augmente les critiques des Assassins
-ckBrkO,Péné. Armure,Péné. Armure
+ckBrkO,Péné. d'Armure,Péné. d'Armure
 ckSklPO,Dég. Comp.,Dég. Comp.
 yxHpPO,PV,Augmente les PV des Éclaireurs
 yxAtkPO,Attaque,Augmente l'attaque des Éclaireurs
@@ -137,7 +137,7 @@ hurtmaxH,Inflige dégâts supplémentaires équivalent à x% de son PV max,Infli
 healB,Soin Reçu,被治疗效果增强x%
 hurtshare,Toute l'allié subit les dégâts,Toute l'allié subit les dégâts
 exhurt,Attaque Basique supplémentaire,Attaque Basique supplémentaire
-hurtB,Augmente l'attaque basique de x%,Augmente l'attaque basique de x%
+hurtB,Augmente l'Attaque Basique de x%,Augmente l'attaque basique de x%
 newRound,击杀角色获得新回合,击杀角色获得新回合
 overflow,Partage des dégâts,Partage des dégâts
 buffExloded,buff d'explosion,buff d'explosion
@@ -181,16 +181,16 @@ critStun,对已眩晕敌人暴击伤害（配置攻击百分比、此伤害必�
 hurtmaxHLimit15,对目标造成其生命上限x%的伤害（不超過15倍攻擊）,对目标造成其生命上限x%的伤害（不超過15倍攻擊）
 unfree,Chance de Contrôle,Chance de Contrôle
 incDmg,增伤率,增伤率
-incDmgGroupCom,Augmenter les dégâts reçus par les filles de la Maison Fantôme/Humain/Monstre/Fée,增伤率-四系
-incDmgGroupSpe,Augmenter les dégâts reçus par les filles de Maison Ange/Démon,增伤率-光暗
+incDmgGroupCom,Augmenter les dégâts reçus par les Filles de la Maison Fantôme/Humain/Monstre/Fée,增伤率-四系
+incDmgGroupSpe,Augmenter les dégâts reçus par les Filles de Maison Ange/Démon,增伤率-光暗
 incDmgGroupChaos,Augmenter les dégâts reçus par les Chaos,增伤率-混沌
-decDmgGroupCom,Réduire les dégâts causés par les filles de la Maison Fantôme/Humain/Monstre/Fée,减伤率-四系
-decDmgGroupSpe,Réduire les dégâts causés par les filles de Maison Ange/Démon,减伤率-光暗
+decDmgGroupCom,Réduire les dégâts causés par les Filles de la Maison Fantôme/Humain/Monstre/Fée,减伤率-四系
+decDmgGroupSpe,Réduire les dégâts causés par les Filles de Maison Ange/Démon,减伤率-光暗
 decDmgGroupChaos,Réduire les dégâts causés par les Chaos,减伤率-光暗
 incDmgSkl,Augmenter les Dégâts des Compétences des Filles,增伤率-技能
-decDmgSkl,Réduire les dégâts reçus par les filles,减伤率-技能
-incDmgNorAtk,Augmenter l'attaque basique des filles,增伤率-普攻
-decDmgNorAtk,Réduire les dégâts de l'attaque basique reçus par les filles,减伤率-普攻
+decDmgSkl,Réduire les dégâts reçus par les Filles,减伤率-技能
+incDmgNorAtk,Augmenter l'attaque basique des Filles,增伤率-普攻
+decDmgNorAtk,Réduire les dégâts de l'attaque basique reçus par les Filles,减伤率-普攻
 allHarmDec,Résistance Totale,Résistance Totale（inclut les dégâts en %）
 unCrit,Résistance aux Critiques,Résistance aux Critiques
 resist_zs,Réduc. Dég. des Guerriers,Réduc. Dég. des Guerriers

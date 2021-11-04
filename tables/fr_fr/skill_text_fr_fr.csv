@@ -807,9 +807,9 @@ Si la cible reçoit un coup Critique, elle subira des dégâts supplémentaires.
 3600102,Luna,Ordre Divin,Augmente les Dégâts Divins de 18% et l'Attaque de 20%.
 4100102,Zombia,Soif de Sang,Se soigne de 25% de la valeur d'Attaque lorsque l'Attaque a été bloquée par l'ennemi.
 4100202,Flash,Potentiel du Bambou,"Augmente l'Attaque de 15% de la ligne arrière, augmente les PV de 15% de la ligne avant."
-4100302,Werewolf,Péné. Armure,Augmente la Pénétration d'Armure de 40%.
+4100302,Werewolf,Péné. d'Armure,Augmente la Pénétration d'Armure de 40%.
 4100402,Nona,Une Pierre Deux Coups,Augmente les PV de 15% et la Précision de 15%.
-4100502,Assassin,Péné. Armure,Chaque attaque octroie un bonus de 8.4% de Pénétration d'Armure.
+4100502,Assassin,Péné. d'Armure,Chaque attaque octroie un bonus de 8.4% de Pénétration d'Armure.
 4100602,Ashely,Sang Froid,"Quand attaqué (contre-attaque non comprise), obtient un bonus d'Armure de 8% pendant 2 tours."
 4100702,Ninja,Rage,Augmente la Pénétration d'Armure de 16% et l'Attaque de 10%.
 4100802,Cynthia,Feu de Papillon,"Chaque attaque a 100% de chance de [c][01a310]brûler[-][/c] l'ennemi, infligeant 10% d'Attaque chaque tour jusqu'à sa mort.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
@@ -893,9 +893,9 @@ Si la cible reçoit un coup Critique, elle subira des dégâts supplémentaires.
 5600402,Phénix,Malédiction de l'Âme,"L'Attaque Basique cible l'ennemi ayant le moins de PV, infligeant 110% d'Attaque, attaque inesquivable."
 54100102,Zombia,Soif de Sang,Se soigne de 100% de la valeur d'Attaque lorsque l'Attaque a été bloquée par l'ennemi.
 54100202,Flash,Potentiel du Bambou,"Augmente l'Attaque de 25% de la ligne arrière, augmente les PV de 25% de la ligne avant."
-54100302,Werewolf,Péné. Armure,Augmente la Pénétration d'Armure de 64%.
+54100302,Werewolf,Péné. d'Armure,Augmente la Pénétration d'Armure de 64%.
 54100402,Nona,Une Pierre Deux Coups,Augmente les PV de 25% et la Précision de 20%.
-54100502,Assassin,Péné. Armure,Chaque attaque octroie un bonus de 14% de Pénétration d'Armure.
+54100502,Assassin,Péné. d'Armure,Chaque attaque octroie un bonus de 14% de Pénétration d'Armure.
 54100602,Ashely,Sang Froid,"Quand attaqué (contre-attaque non comprise), obtient un bonus d'Armure de 8% pendant 2 tours."
 54100702,Ninja,Rage,Augmente la Pénétration d'Armure de 32% et l'Attaque de 20%.
 54100802,Cynthia,Feu de Papillon,"Chaque attaque a 100% de chance de [c][01a310]brûler[-][/c] l'ennemi, infligeant 17.5% d'Attaque chaque tour jusqu'à sa mort.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
@@ -941,7 +941,7 @@ Si la cible reçoit un coup Critique, elle subira des dégâts supplémentaires.
 65101002,Caitlyn,Maître des Armes à Feu II,"L'Attaque a 70% de chance de faire [c][01a310]saigner[-][/c] la cible, le [c][01a310]Saignement[-][/c] inflige 60% d'Attaque pendant 2 tours.\n[c][01a310]Saignement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101102,Ennmaya,Sang Empoisonné II,"Augmente la Pénétration d'Armure de 15%, l'Attaque de 30%, les PV de 12% et augmente les dégâts de 15% contre les ennemis [c][01a310]empoisonnés[-][/c].\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101202,Cynthia,Feu de Papillon II,"Chaque attaque a 100% de chance de [c][01a310]brûler[-][/c] l'ennemi, infligeant 20% d'Attaque chaque tour jusqu'à sa mort.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-65101302,Werewolf,Péné. Armure II,Augmente la Pénétration d'Armure de 64% et les PV de 10%.
+65101302,Werewolf,Péné. d'Armure II,Augmente la Pénétration d'Armure de 64% et les PV de 10%.
 65101402,Nona,Une Pierre Deux Coups II,Augmente les PV de 30% et la Précision de 30%.
 65101502,Gambler,Saignée II,"Chaque attaque a 100% de chance de faire [c][01a310]saigner[-][/c] la cible, infligeant 35% d'Attaque pendant 4 tours, et obtient un bonus de Pénétration d'Armure de 14% pendant 4 tours.\n[c][01a310]Saignement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101602,Fencer,Champ de Givre,"Quand attaqué (contre-attaque non comprise) par une cible autre qu'un Guerrier, elle a 15% de chance de [c][01a310]geler[-][/c] la cible pendant 2 tours. Si la cible est un guerrier, elle a 27% de chance de [c][01a310]geler[-][/c] la cible pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable d'utiliser sa Compétence Active ou d'attaquer les ennemis."
@@ -1584,7 +1584,7 @@ Après un coup Critique, la marque infligera 180% de dégâts supplémentaires (
 65101012,Caitlyn,Maître des Armes à Feu III,"L'Attaque a 100% de chance de faire [c][01a310]saigner[-][/c] la cible, le [c][01a310]Saignement[-][/c] inflige 96% d'Attaque pendant 2 tours.\n[c][01a310]Saignement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101112,Ennmaya,Sang Empoisonné III,"Augmente la Pénétration d'Armure de 20%, l'Attaque de 35%, les PV de 15%, et augmente les dégâts de 20% contre les ennemis [c][01a310]empoisonnés[-][/c].\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101212,Cynthia,Feu de Papillon III,"Chaque attaque a 100% de chance de [c][01a310]brûler[-][/c] l'ennemi, infligeant 25% d'Attaque chaque tour jusqu'à sa mort.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-65101312,Werewolf,Péné. Armure III,Augmente la Pénétration d'Armure de 64% et les PV de 20%.
+65101312,Werewolf,Péné. d'Armure III,Augmente la Pénétration d'Armure de 64% et les PV de 20%.
 65101412,Nona,Une Pierre Deux Coups II,Augmente les PV de 35% et la Précision de 35%.
 65101512,Gambler,Saignée III,"Chaque attaque a 100% de chance de faire [c][01a310]saigner[-][/c] la cible, infligeant 45% d'Attaque pendant 4 tours, et obtient un bonus de Pénétration d'Armure de 16.8% pendant 4 tours.\n[c][01a310]Saignement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65101612,Fencer,Champ de Givre,"Quand attaqué (contre-attaque non comprise) par une cible autre qu'un Guerrier, elle a 20% de chance de [c][01a310]geler[-][/c] la cible pendant 2 tours. Si la cible est un guerrier, elle a 35% de chance de [c][01a310]geler[-][/c] la cible pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable d'utiliser sa Compétence Active ou d'attaquer les ennemis."
@@ -6932,15 +6932,15 @@ L\'arc de Vanessa pénètre au cœur de la proie, causant 3 à 5 fois 200% de d�
 À chaque couche de Malédiction Sanguinaire, les dégâts de la cible subis par Vanessa seront augmentés de 20% (Si c\'est un coup Critique, ces dégâts seront augmentés de 30%, 8 couches de Malédiction Sanguinaire au maximum) ; Après que la cible marquée soit morte, chaque couche de Malédiction Sanguinaire va infliger des dégâts (Nombre de Malédiction Sanguinaire x300% d\'Attaque) à l\'ennemi ayant l\'Attaque la plus élevée.(S\'il y a plusieurs Vanessa dans votre équipe, chaque Vanessa infligera des dégâts en fonction du nombre total de Malédiction Sanguinaire de la cible)
 [c][e28002]Soif de Sang (Effet de Compétence)：[-][/c]
 Inflige des dégâts à la cible et elle les récupère en PV par la suite (cumulable). Ces dégâts sont déterminés en fonction de sa Compétence Active."
-5101402,Vanessa,Prédateur,"L'intuition de chasseur lui permet d'augmenter l'Attaque de 20%, les PV de 10%, la Péné. Armure de 30% et les Critiques de 15%."
-65102102,Vanessa,Prédateur,"L'intuition de chasseur lui permet d'augmenter l'Attaque de 25%, les PV de 15%, la Péné. Armure de 40%, et les Critiques de 20%. Chaque fois qu'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 2% des PV Max de la cible [c][e28002]Visée[-][/c]. (1500% de la valeur d'Attaque de Vanessa au maximum)"
+5101402,Vanessa,Prédateur,"L'intuition de chasseur lui permet d'augmenter l'Attaque de 20%, les PV de 10%, la Péné. d'Armure de 30% et les Critiques de 15%."
+65102102,Vanessa,Prédateur,"L'intuition de chasseur lui permet d'augmenter l'Attaque de 25%, les PV de 15%, la Péné. d'Armure de 40%, et les Critiques de 20%. Chaque fois qu'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 2% des PV Max de la cible [c][e28002]Visée[-][/c]. (1500% de la valeur d'Attaque de Vanessa au maximum)"
 65102112,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 35%, les PV de 25%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 35%, les PV de 25%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
 75101402,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 35%, les PV de 25%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 35%, les PV de 25%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
@@ -7784,27 +7784,27 @@ L\'arc de Vanessa pénètre au cœur de la proie, causant 3 à 5 fois 220% de d�
 [c][e28002]Soif de Sang (Effet de Compétence)：[-][/c]
 Inflige des dégâts à la cible et elle les récupère en PV par la suite (cumulable). Ces dégâts sont déterminés en fonction de sa Compétence Active."
 751014021,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37%, les PV de 25%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3,3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37%, les PV de 25%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3,3% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
 751014022,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37%, les PV de 27%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3,6% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37%, les PV de 27%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 3,6% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
 751014023,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37,5%, les PV de 27%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 4% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37,5%, les PV de 27%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 4% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
 751014024,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37,5%, les PV de 27,5%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 4,5% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 37,5%, les PV de 27,5%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 4,5% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
 751014025,Vanessa,Prédateur,"
-L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 38%, les PV de 28%, la Péné. Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 5% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
+L\'intuition de chasseur lui permet d\'augmenter l\'Attaque de 38%, les PV de 28%, la Péné. d\'Armure de 60% et les Critiques de 30%. Chaque fois qu\'elle obtient 1 couche de [c][e28002]Soif de Sang[-][/c], elle vole 5% des PV Max de la cible [c][e28002]Visée[-][/c](1500% de la valeur d\'Attaque de Vanessa au maximum) et inflige également des dégâts de [c][01a310]Saignement[-][/c] pendant 3 tours (80% de l\'Attaque de Vanessa).
 
 [c][01a310]Saignement :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."

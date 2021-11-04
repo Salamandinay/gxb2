@@ -8,8 +8,8 @@ GET2,Collecter
 TEAM,Équipe
 AWARD,Butin
 EQUIP,Équipement
-ITEM,Objets
-DEBRIS,Fragments
+ITEM,Objet
+DEBRIS,Fragment
 ARTIFACT,Antiquité
 NOW_NONE,Aucun {1}
 NOT_SELL,Non vendable
@@ -85,7 +85,7 @@ HIT,Précision
 MISS,Blocage
 CRIT,Critique
 TRUEATK,Dég. Divins
-BRK,Péné. Armure
+BRK,Péné. d'Armure
 CRITTIME,Dég. Crit.
 FREE,Immunité
 SKLP,Dég. Comp.
@@ -94,8 +94,8 @@ CAMPAIGN_HANG_ITEM_WINDOW,Butin
 TIPS,Conseil
 TOP_LEV_UP,Niveau
 COMPOSE_EQUIP,Synthétiser
-COMPOSE_EQUIP_NO_MANA,Pas assez de Pièces d'or pour synthétiser !
-COMPOSE_EQUIP_NUM_0,Vous ne pouvez pas synthétiser 0 objets !
+COMPOSE_EQUIP_NO_MANA,Pièces d'Or Insuffisantes !
+COMPOSE_EQUIP_NUM_0,Aucun équipement à synthétiser !
 POWER,Puissance
 DAY,{1} Jour(s)
 HOUR,{1} Heures
@@ -908,7 +908,7 @@ TRIAL_TEXT08,Étape - {1}
 ACTIVITY_AWARD_PREVIEW_TITLE,Récompenses
 SWEETY_HOUSE_TEXT01,"Durant l'événement vous pourrez échanger ""Bisou au Sang"" dans l'interface de l'événement pour obtenir des récompenses !"
 SWEETY_HOUSE_CONFIRM,Êtes-vous sûr de vouloir échanger ?
-QIXI_TEXT01,"Durant l'événement, vous pouvez utiliser des Gemmes pour acheter Sac d'aventurier !\n(Achetable qu'une seule fois)"
+QIXI_TEXT01,"Durant l'événement, vous pouvez utiliser des Gemmes pour acheter Sac d'Aventurier !\n(Achetable qu'une seule fois)"
 TRIAL_TEXT09,Sanctuaire Secret terminé
 CHAT_CONFIG_5,Cacher votre statut VIP en message privé
 CHAT_CONFIG_0,Liste Noire
@@ -1079,7 +1079,7 @@ TERMS_SERVICE,Conditions d'Utilisation
 PRIVACY_POLICY,Politique de Confidentialité
 TERMS_SERVICE_URL,https://girlsh5.carolgames.com/article/terms_of_use?language=zh
 PRIVACY_POLICY_URL,https://mhome.carolgames.com/fr/article/privacy_policy
-MANA_WEEK_CARD_HELP_IOS,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours pour prolonger l'effet de l'abonnement pour 7 jours supplémentaires.|2. Votre abonnement iPhone sera prélevé sur votre compte Apple iTune.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode: De la page principale, entrez dans [Option]—>Touchez [iTune Store ou App Store]—>Touchez [ID Apple] et sélectionnez [Voir ID Apple]—>[Abonnement], puis sélectionnez annuler l'abonnement."
+MANA_WEEK_CARD_HELP_IOS,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours pour prolonger l'effet de l'abonnement pour 7 jours supplémentaires.|2. Votre abonnement iPhone sera prélevé sur votre compte Apple iTune.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode : De la page principale, entrez dans [Option]—>Touchez [iTune Store ou App Store]—>Touchez [ID Apple] et sélectionnez [Voir ID Apple]—>[Abonnement], puis sélectionnez annuler l'abonnement."
 WEEKCARD_BTN_LABEL,Abonnement
 DAY_HOUR,{1} Jours {2} Heures
 TYPE,Type
@@ -1188,7 +1188,7 @@ ACTIVITY_JIGSAW_BUY_TITLE,Acheter de l'Énergie
 ACTIVITY_JIGSAW_BUY_TEXT1,L'Énergie obtenable dans le Butin
 ACTIVITY_JIGSAW_BUY_TEXT2,"50 fois par jour max\nPour plus de détails, veuillez consulter les règles de l'événement"
 WEEK_SUBSCRIPTION_FREE_BTN_LABEL,Gratuit\n7 jours
-SUBSCRIPTION_HELP_IOS,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours (30 jours, 90 jours) pour prolonger l'effet de l'abonnement pour 7 jours (30 jours, 90 jours) supplémentaires.|2. Votre abonnement iPhone sera prélevé sur votre compte Apple iTune.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode: De la page principale, entrez dans [Option]—>Cliquez sur [iTune Store ou App Store]—>Touchez [ID Apple] et sélectionnez [Voir ID Apple]—>[Abonnement], puis sélectionnez annuler l'abonnement."
+SUBSCRIPTION_HELP_IOS,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours (30 jours, 90 jours) pour prolonger l'effet de l'abonnement pour 7 jours (30 jours, 90 jours) supplémentaires.|2. Votre abonnement iPhone sera prélevé sur votre compte Apple iTune.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode : De la page principale, entrez dans [Option]—>Cliquez sur [iTune Store ou App Store]—>Touchez [ID Apple] et sélectionnez [Voir ID Apple]—>[Abonnement], puis sélectionnez annuler l'abonnement."
 SUBSCRIPTION_TEXT01_IOS,"
 1.Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
 2. Un compte iTunes ne peut avoir qu\'une seule semaine d\'abonnement gratuite.
@@ -1290,13 +1290,13 @@ SUBSCRIPTION_TEXT01,Réessayez dans {1} secondes
 SUBSCRIPTION_TEXT01_AND,"
 1.Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
 2. Un compte Google ne peut avoir qu\'une seule semaine d\'abonnement gratuite.
-3. Pendant la durée de l\'abonnement, vous obtiendrez un bonus de +100%% de Pièces et +60%% de Jus d\'EXP dans l\'Auto-Bataille, ce bonus est cumulable à celui du niveau VIP
+3. Pendant la durée de l\'abonnement, vous obtiendrez un bonus de +100%% de Pièces et +60%% de Jus d\'EXP dans l\'Auto-Bataille, ce bonus est cumulable à celui du niveau VIP.
 4. Votre compte sera déduit lorsque l\'achat sera confirmé.
-5. L\'abonnement sera déduit et renouvelé automatiquement 24 heures avant la fin de l\'abonnement, sauf si l\'abonnement est annulé plus de 24 heures avant la fin de la période actuelle. La période en cours ne peut pas être annulée
-6. L\'abonnement sera déduit 24 heures avant la fin de période d\'abonnement en cours
+5. L\'abonnement sera déduit et renouvelé automatiquement 24 heures avant la fin de l\'abonnement, sauf si l\'abonnement est annulé plus de 24 heures avant la fin de la période actuelle. La période en cours ne peut pas être annulée.
+6. L\'abonnement sera déduit 24 heures avant la fin de période d\'abonnement en cours.
 7. L\'abonnement peut être annulé dans les paramètres.
 8. Vous ne pouvez pas changer le type d\'abonnement tant qu\'un autre abonnement est encore actif. Si vous voulez changer votre méthode d\'abonnement, veuillez tout d\'abord vous désabonner, puis prenez un autre abonnement après que la période d\'abonnement actuelle soit terminée."
-SUBSCRIPTION_HELP_AND,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours (30 jours, 90 jours) pour prolonger l'effet de l'abonnement pour 7 jours (30 jours, 90 jours) supplémentaires.|2. Votre abonnement sera prélevé sur votre compte Google.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode: De la page principal, entrez dans [Option]—>Touchez [Google]—>puis [Compte Google] et sélectionnez [Paiement et Abonnement]—>[Gérer les Abonnements] et enfin sélectionnez annuler l'abonnement."
+SUBSCRIPTION_HELP_AND,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours (30 jours, 90 jours) pour prolonger l'effet de l'abonnement pour 7 jours (30 jours, 90 jours) supplémentaires.|2. Votre abonnement sera prélevé sur votre compte Google.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode : De la page principal, entrez dans [Option]—>Touchez [Google]—>puis [Compte Google] et sélectionnez [Paiement et Abonnement]—>[Gérer les Abonnements] et enfin sélectionnez annuler l'abonnement."
 IMG_GUIDE_SHENXUE_1,Choisissez [c][cc0011]la Maison[-][/c] à graduer en touchant en haut.
 IMG_GUIDE_SHENXUE_2,"
 Choisissez
@@ -1859,7 +1859,7 @@ HERO_CHALLENGE_TIPS4,Choisissez une des récompenses
 HERO_CHALLENGE_TIPS5,Vous avez obtenu la bénédiction {1} pendant ce défi
 HERO_CHALLENGE_MISC,Découvrez \nleurs secrets
 OTHER_BATTLE,Arène
-HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu’utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d’au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l’étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n’obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l’étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement.Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leurs Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si les nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
+HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu’utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d’au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l’étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n’obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l’étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leur Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si leur nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
 ALREADY_DIE,La Fille a été vaincue
 QUESTIONNAIRE_TEXT1,"Cela fait pas mal de temps que vous êtes à l’Académie Yume, nous espérons que vous avez aimé le temps passé ici. Pourriez-vous remplir ce questionnaire pour Yuki afin qu’elle puisse mieux vous assister ? \nDes récompenses vous attendent ! \nLes résultats du Questionnaire ne seront pas divulgués à d’autres personnes, il nous servira cependant à mieux développer ce jeu !"
 QUESTIONNAIRE_FINISH_TEXT01,"Merci pour votre soutien, Senpai ! Les récompenses pour avoir complété le questionnaire vous ont été envoyées par courrier ! Bon jeu !"
@@ -2084,7 +2084,7 @@ IMG_GUIDE_JUMP_GAME_7,Disparaîtra rapidement après avoir marché dessus.
 IMG_GUIDE_JUMP_GAME_8,[c][cc0011]Diminuera[-][/c] les PV en marchant dessus.
 IMG_GUIDE_JUMP_GAME_9,En marchant dessus Valeera [c][cc0011]rebondira[-][/c]
 IMG_GUIDE_JUMP_GAME_10,Force Valeera à se déplacer vers la gauche ou la droite
-ARENA_ALL_SERVER_ROUND_TEXT_0,Match en Groupe
+ARENA_ALL_SERVER_ROUND_TEXT_0,Élimination
 ARENA_ALL_SERVER_TEXT_28,Défense
 ARENA_ALL_SERVER_TEXT_29,Êtes-vous certain de vouloir parier [c][d48a9d]{1} Pièces[-][/c] sur ce joueur ?
 ARENA_ALL_SERVER_TEXT_30,Vous ne pouvez parier sur vous même qu'en Finale !
@@ -2097,7 +2097,7 @@ ARENA_ALL_SERVER_OPEN,Cette fonctionnalité sera disponible dans：
 ARENA_ALL_SERVER_TEXT_31,La phase - Finalistes n'a pas encore commencé !
 ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
 VOW_SWAP_TIPS,"Vous avez un Serment avec la Fille que vous allez utiliser, si vous continuez la Fille sera utilisée, mais vous ne récupérerez pas la Bague de Serment, voulez-vous continuer ?"
-CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir une Lanterne après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 5 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 1 Lanterne après avoir fini un Job de 4 étoiles ou plus.|——Vous pouvez obtenir 1 Lanterne après avoir combattu 5 fois dans l'Arène|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, une Lanterne pour 15K et distribuées par courrier."
+CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir 1 Lanterne après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 5 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 1 Lanterne après avoir fini un Job de 4 étoiles (ou +).|——Vous pouvez obtenir 1 Lanterne après avoir combattu 5 fois dans l'Arène|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, 1 Lanterne pour 15K et distribuées par courrier."
 CANDY_COLLECT_TEXT_1,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
 CANDY_COLLECT_TEXT_2,Etes-vous certain de vouloir échanger ?
 CANDY_COLLECT_TEXT_3,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
@@ -2344,7 +2344,7 @@ POTENTIALITY_BACK_TITLE,Inverser
 POTENTIALITY_BACK_TEXT01,Voir
 POTENTIALITY_BACK_TEXT02,Inverser
 PUPPET_PARTNER_NO_CLICK,"Les poupées ne peuvent pas être éveillées, libérées ou équipées avec un Skin."
-POTENTIALITY_BACK_WINDOW_HELP,"1. Les Filles (1/2/3/4/5/7/8/9/10 étoile(s)) peuvent être Inversées.|2. Les Poupées ne peuvent pas être Éveillées, Échangées, Inversées ou Transférées, elles ne peuvent pas recevoir de cadeau ou être placées dans le Dortoir.|3. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le Sac.|4. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupées de la même Maison 5 étoiles*7 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupées de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*3|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*2 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*3 + Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*9|5. Après avoir inversé une Fille 1-5 étoile(s), vous recevrez toutes les ressources utilisées.|Après avoir inversé une Fille 7-10 étoiles, l'Inverse ne vous rendra pas les Pièces d'Or utilisées pour avoir augmenté le niveau de la Fille, cependant elle vous rendra une partie des Jus d'EXP et Plateaux Repas utilisés. Les Pièces d'Or et les Ciseaux de Cristal ne seront aussi que partiellement rendus selon le niveau du Cristal de la Fille Inversée.|6. La Faveur et le Serment seront rendus à l'une des copies rendues de cette Fille.|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne seront pas comptabilisées dans l'Evénement Mensuel."
+POTENTIALITY_BACK_WINDOW_HELP,"1. Les Filles (sauf 6 étoiles) peuvent être Inversées et les Poupées ne peuvent pas être Éveillées, Échangées, Inversées ou Transférées, elles ne peuvent pas recevoir de cadeau ou être placées dans le Dortoir.|2. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le Sac.|3. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupées de la même Maison 5 étoiles*7 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupées de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*3|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*2 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*3 + Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*9|4. Après avoir inversé une Fille 1-5 étoile(s), vous recevrez toutes les ressources utilisées.|Après avoir inversé une Fille 7-15 étoiles, l'Inverse ne vous rendra pas les Pièces d'Or utilisées pour avoir augmenté le niveau de la Fille, cependant elle vous rendra une partie des Jus d'EXP et Plateaux Repas utilisés. Les Pièces d'Or et les Ciseaux de Cristal ne seront aussi que partiellement rendus selon le niveau du Cristal de la Fille Inversée.|5. Vous pouvez inverser les Filles (1-5 étoiles) gratuitement, cependant il vous faut utiliser respectivement 400/600/800 Gemmes pour inverser une Fille 7/8/9 étoiles. Pour inverser une Fille (10-15 étoiles), il vous faut utiliser 5 Diplômes pour l'effectuer.|6. La Faveur et le Serment seront rendus à l'une des copies rendues de cette Fille.|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne seront pas comptabilisées dans l'Evénement Mensuel."
 POTENTIALITY_BACK_TEXT03,"Cette action est irréversible, voulez-vous continuer ?"
 POTENTIALITY_BACK_ALTAR_TIP,Les Poupées ne peuvent pas être transférées
 SUBSCRIPTION_RECOVER,Restaurer
@@ -3593,7 +3593,7 @@ MIDAS_TEXT08,Acheté
 EQUIP_LEVELUP_TEXT_1,Synthétiser
 EQUIP_LEVELUP_TEXT_2,Améliorer
 EQUIP_LEVELUP_TEXT_3,"Appuyez sur le bouton ""Filtrer"" pour choisir l'ensemble d'équipement que vous voulez améliorer."
-EQUIP_LEVELUP_TEXT_4,Veuillez choisir 1 ensemble de classe
+EQUIP_LEVELUP_TEXT_4,Veuillez choisir la classe de l'ensemble.
 EQUIP_LEVELUP_TEXT_5,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_6,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_7,"Toucher le "" + "" à gauche pour choisir les matériaux"
@@ -4302,24 +4302,24 @@ FAIR_ARENA_HISTORY,Historique
 FAIR_ARENA_RANK,Classement
 FAIR_ARENA_POINT_NOW,Points：
 FAIR_ARENA_COLLECTION,Galerie
-FAIR_ARENA_DESC_USE_ONLY,Uniquement valable dans cet événement
+FAIR_ARENA_DESC_USE_ONLY,Uniquement valable durant cet événement
 FAIR_ARENA_AWARD_PREVIEW,Récompenses
-FAIR_ARENA_TIME_EXTRA_LIMIT,Possibilité d'explorer 2 fois dans ：
+FAIR_ARENA_TIME_EXTRA_LIMIT,Possibilité d'Explorer 2 fois dans ：
 FAIR_ARENA_DEMO,Démo
 FAIR_ARENA_EXPLORE,Exploration
 FAIR_ARENA_FREE_EXPLORE,Gratuit
-FAIR_ARENA_EXPLORE_LIMIT,Chance(s) Restante(s)：[c][e7724d]{1}[-][/c] fois
-FAIR_ARENA_HELP1,"1. La durée de cet événement est de [c][DE512B]6 jours[-][/c]. La Cité aux Trésors sera alors ouverte à tous ! À chaque Exploration, vous pourrez obtenir des récompenses !|2. À la fin de l'événement, vous pourrez gagner encore plus de récompenses en fonction des résultats de votre Classement.|3. Les Filles, Bonus et Antiquités obtenus lors d'une Exploration sont valables uniquement pour cette Exploration.|4. Au début de l'événement vous obtiendrez [c][DE512B]6 chances[-][/c] d'Exploration, puis vous obtiendrez par la suite [c][DE512B]2 chances[-][/c] d'Exploration chaque jour.|5. Les 2 premières chances d'Exploration sont gratuites. Pour faire plus d'Explorations, vous pouvez également acheter des chances supplémentaires, 1 chance pour [c][DE512B]400 Gemmes[-][/c].|6. Vous avez également la possibilité d'entrer en Exploration Démo, [c][DE512B]5 chances[-][/c] Démo vous sont fournies. Vous ne pouvez pas obtenir de récompense de Coffre dans le mode Démo."
-FAIR_ARENA_TIPS_EXPLORE_LIMIT,Chance d'exploration Insufissante !
-FAIR_ARENA_TIPS_DIAMONDS,Gemmes insuffisantes ! Impossible d'explorer !
-FAIR_ARENA_TIPS_EXPLORE_FIRST,Voulez-vous tout d'abord essayer le mode Démo ? \n(Le mode Démo n'utilise pas de chance d'exploration ainsi vous ne pourrez pas non plus obtenir de récompenses)
-FAIR_ARENA_TIPS_DEMO,Êtes-vous sûr de vouloir entrer en mode Démo ? Vous n'obtiendrez aucun Coffre donc aucune récompense.\nIl vous reste actuellement {1} chance(s) de Démo.
+FAIR_ARENA_EXPLORE_LIMIT,Chance(s)：[c][e7724d]{1}[-][/c]
+FAIR_ARENA_HELP1,"1. La durée de cet événement est de [c][DE512B]6 jours[-][/c]. La Cité aux Trésors sera alors ouverte à tous ! À chaque Exploration, vous pourrez obtenir des récompenses !|2. À la fin de l'événement, vous pourrez gagner encore plus de récompenses en fonction des résultats de votre Classement.|3. Les Filles, Bonus et Antiquités obtenus lors d'une Exploration sont valables uniquement pour cette Exploration.|4. Chaque Exploration consomme 1 Pioche Dorée à commencer. Lors du premier échec d'une bataille, cette Pioche Dorée sera utilisée. Vous pouvez vous ressusciter en utilisant des Gemmes. Si vous ne voulez pas vous ressusciter ou ne pouvez pas vous ressusciter, vous recevrez des récompenses en fonction du Coffre de niveau actuel.|5. Lors du 3ème et 5ème jour de l'événement, vous recevrez 1 [c][DE512B]Pioche Dorée[-][/c] et vous pouvez également acheter des Pioches Dorées en utilisant des Gemmes.|6. Vous avez également la possibilité d'entrer en Exploration Démo, [c][DE512B]5 Chances[-][/c] Démo vous sont fournies. Vous ne pouvez pas obtenir de récompense de Coffre dans le mode Démo."
+FAIR_ARENA_TIPS_EXPLORE_LIMIT,Pioche Dorée Insuffisante !
+FAIR_ARENA_TIPS_DIAMONDS,Gemmes insuffisantes ! Impossible d'Explorer !
+FAIR_ARENA_TIPS_EXPLORE_FIRST,Voulez-vous tout d'abord essayer [c][DE512B]le mode Démo[-][/c] ?\n([c][DE512B]le mode Démo[-][/c] n'utilise pas de chance d'Exploration ainsi vous ne pourrez pas non plus obtenir de récompenses)
+FAIR_ARENA_TIPS_DEMO,"Êtes-vous sûr de vouloir entrer en mode Démo ? Dans ce mode, vous n'obtiendrez aucune récompense.\nIl vous reste actuellement {1} Chance(s) de Démo."
 FAIR_ARENA_TIPS_DEMO_LIMIT,Chance de Démo Insuffisante !
 FAIR_ARENA_RANK_WINDOW,Classement
 FAIR_ARENA_RANK_TOP,TOP50
 FAIR_ARENA_RANK_TOTAL,Palier
 FAIR_ARENA_RANK_SCORE_MAX,Points Max
-FAIR_ARENA_AWARDS,Récompense
+FAIR_ARENA_AWARDS,Récompenses
 FAIR_ARENA_AWARDS_RANK,Classement
 FAIR_ARENA_AWARDS_LEVEL,Coffre
 FAIR_ARENA_RANK_NOW,Classement：
@@ -4332,30 +4332,30 @@ FAIR_ARENA_NOTES_SCORE,*Points de Démo non-comptabilisés
 FAIR_ARENA_SORT_TIME,Chronologique
 FAIR_ARENA_SORT_SCORE,Point
 FAIR_ARENA_AWARDS_PREVIEW,Aperçu des récompenses
-FAIR_ARENA_DESC_AWARDS_LEVEL,Obtenable dans le Coffre niv.{1}
+FAIR_ARENA_DESC_AWARDS_LEVEL,Obtenable dans le Coffre Niv.{1}
 FAIR_ARENA_NOTES_AWARDS_LEVEL,*Aucune récompense en mode Démo.
-FAIR_ARENA_DESC_SELECT_PARTNER,"Vous avez rencontré 3 Filles dans les passages secrets, avec laquelle voulez-vous continuer l'exploration ?"
+FAIR_ARENA_DESC_SELECT_PARTNER,"Vous avez rencontré 3 Filles dans les passages secrets, avec laquelle voulez-vous continuer l'Exploration ?"
 FAIR_ARENA_DESC_SELECT_EQUIP,"Vous avez trouvé 3 Antiquités dans les fissures des murs, laquelle voulez-vous prendre ?"
 FAIR_ARENA_DESC_SELECT_BUFF,"Vous ressentez 3 pouvoirs magiques dans les Vestiges, lequel voulez-vous absorber ?"
 FAIR_ARENA_DESC_RESET,"Voulez-vous actualiser les choix en échangeant une Fille ?\n(Après confirmation, ces choix seront réinitialisés et cette Fille quittera votre équipe)"
-FAIR_ARENA_TIPS_RESET_UNLOCK,"Cette Fille est dans votre équipe d'exploration, voulez-vous l'enlever ?"
+FAIR_ARENA_TIPS_RESET_UNLOCK,"Cette Fille est dans votre équipe d'Exploration, voulez-vous l'enlever ?"
 FAIR_ARENA_DESC_FIGHT,Vous avez rencontré une autre équipe !
 FAIR_ARENA_SUCCESS,Victoire
 FAIR_ARENA_FAILURE,Échec
 FAIR_ARENA_GIVEUP,Renoncer
 FAIR_ARENA_DESC_END,Coffre trouvé !
-FAIR_ARENA_TIPS_REVIVE,"Après l'échec d'une Bataille, une Pioche sera utilisée pour déterrer un Coffre du niveau actuel."
-FAIR_ARENA_TIPS_END,"Êtes-vous sûr de renoncer à cette exploration ?\nAprès confirmation, le résultat de cette exploration sera calculé en fonction du nombre de victoires actuelles."
-FAIR_ARENA_TIPS_REVIVE_UNLOCK1,"Êtes-vous sûr de vouloir utiliser {1} Gemmes pour débloquer une nouvelle Pioche ? Après l'avoir débloquée, vous aurez une chance de chosir une autre Fille, et pourrez continuer d'explorer et déterrer un Coffre de niveau supérieur."
-FAIR_ARENA_TIPS_REVIVE_UNLOCK2,Êtes-vous sûr de vouloir débloquer une nouvelle Pioche ? Après l'avoir débloquée vous pourrez déterrer un Coffre de niveau supérieur. (Vous n'avez pas besoin d'utiliser des Gemmes pour débloquer des Pioches dans la Bataille Démo)
-FAIR_ARENA_NOTES_REVIVE,Nouvelle Pioche déblocable !
+FAIR_ARENA_TIPS_REVIVE,"Cette Pioche Dorée sera consommée après l'échec d'une bataille. Si vous ne voulez pas continuer à combattre, vous recevrez des récompenses du Coffre de niveau actuel."
+FAIR_ARENA_TIPS_END,"Êtes-vous sûr de renoncer à cette Exploration ?\nAprès confirmation, le résultat de cette Exploration sera calculé en fonction du nombre de victoires actuelles."
+FAIR_ARENA_TIPS_REVIVE_UNLOCK1,"Êtes-vous sûr de vouloir utiliser Gemmes*{1} pour vous ressusciter ? Après la résurrection, vous pourrez déterrer un Coffre de niveau supérieur et choisir une nouvelle Fille pour votre équipe."
+FAIR_ARENA_TIPS_REVIVE_UNLOCK2,"Êtes-vous sûr de vouloir débloquer cette Pioche Argentée ? Après l'avoir débloquée, vous pourrez vous ressusciter et déterrer un Coffre de niveau supérieur. (vous n'avez pas besoin d'utiliser des Gemmes pour débloquer des Picohes Argentées dans le modo Démo)"
+FAIR_ARENA_NOTES_REVIVE,Achetez des Pioches Argentées pour se ressusciter !
 FAIR_ARENA_TIPS_REVIVE_LIMIT,Pioche épuisée !
 FAIR_ARENA_DEMO_ABBR,Démo
 FAIR_ARENA_GROUP_BUFF,Aura
 FAIR_ARENA_TIPS_BUFF_UNLOCK,Ce bonus sera débloqué dans {1}e tour !
 FAIR_ARENA_FIGHT_PREPARE,Combattre
 FAIR_ARENA_TEAM,Équipe
-FAIR_ARENA_DESC_USE_ONLY2,Uniquement valable dans cette exploration
+FAIR_ARENA_DESC_USE_ONLY2,Uniquement valable durant cette Exploration
 FAIR_ARENA_TEAM_PARTNER,Filles obtenues
 FAIR_ARENA_TEAM_EQUIP,Antiquités obtenues
 FAIR_ARENA_ENEMY,Ennemi
@@ -4363,30 +4363,30 @@ FAIR_ARENA_GOTO_FIGHT,Compo.
 FAIR_ARENA_BATTLE_FORMATION_WINDOW,Préparation
 FAIR_ARENA_FIGHT,Combattre
 FAIR_ARENA_NOTES_PRESS,Appuyez longuement sur l'icône pour plus de détails
-FAIR_ARENA_HELP2,"1. Pour chaque exploration, vous pouvez former la composition de votre équipe avec les Filles que vous aurez rencontré en Exploration et ainsi trouver des Coffres.|2. Plus vous vaincrez d'ennemis, plus vous gagnerez de Points et de Coffres, et ainsi de récompenses.|3. À la fin de l'événement, vous recevrez des récompenses supplémentaires en fonction des résultats de votre Classement.|4. Les Filles, Bonus et Antiquités obtenus lors d'une Exploration sont valables uniquement pour cette Exploration.|5. Vous avez également la possibilité d'entrer en Exploration Démo, [c][DE512B]5 chances[-][/c] Démo vous sont fournies. Vous ne pouvez pas obtenir de récompense de Coffre dans le mode Démo.|6. Vous pouvez toucher l'icône Équipe - Avatar de Fille pour équiper une Antiquité à cette Fille."
+FAIR_ARENA_HELP2,"1. Pour chaque Exploration, vous pouvez former la composition de votre équipe avec les Filles que vous aurez rencontré en Exploration et ainsi trouver des Coffres.|2. Plus vous vaincrez d'ennemis, plus vous gagnerez de Points et de Coffres, et ainsi de récompenses.|3. À la fin de l'événement, vous recevrez des récompenses supplémentaires en fonction des résultats de votre Classement.|4. Les Filles, Bonus et Antiquités obtenus lors d'une Exploration sont valables uniquement pour cette Exploration.|5. Vous avez également la possibilité d'entrer en Exploration Démo, [c][DE512B]5 Chances[-][/c] Démo vous sont fournies. Vous ne pouvez pas obtenir de récompense de Coffre dans le mode Démo.|6. Vous pouvez toucher l'icône Équipe - Avatar de Fille pour équiper une Antiquité à cette Fille."
 SLOT_SORT_DEFAULT,Par défaut
 HISTORY_PARTNER_STATION_LINEUP,Équipe Précédente
-FAIR_ARENA_DESC_GROUP_BUFF,Déployez des Filles de Maison requise pour activer l'aura correspondante
+FAIR_ARENA_DESC_GROUP_BUFF,Déployez des Filles de Maison requise pour activer l'Aura correspondante
 FAIR_ARENA_BACKPACK,Équipe
 FAIR_ARENA_TIPS_REVIVE_UNLOCK3,Félicitations ! Vous avez trouvé le Coffre du niveau le plus haut !
 IF_UNLOCK_HERO_4,"Cette Fille est verrouillée, la déverrouiller pour la graduer? Si la Fille reste dans la Défense de l'Arène, elle sera enlevée de l'équipe après l'avoir graduée."
 FAIR_ARENA_SETTLE,Calculer
 FAIR_ARENA_RESET_NEED_ONE,Veuillez choisir une Fille !
-FAIR_ARENA_TEAM_PARTNER2,Filles Possédées：
+FAIR_ARENA_TEAM_PARTNER2,Filles Obtenues：
 ARTIFACT_ONEBUTTON,Tout ajouter
 ARTIFACT_REMINDER_TEXT1,Êtes-vous sûr de vouloir utiliser des Antiquités Rouges ou Oranges ?
 ACTIVITY_TIME_SHOP_UNLOCK,Échangez d'abord toutes les récompenses de la page précédente
-FAIR_ARENA_TIPS_NEED_SELECT,Veuillez tout d'abord choisir pour continuer !
+FAIR_ARENA_TIPS_NEED_SELECT,Veuillez tout d'abord choisir une Fille pour continuer !
 NO_PARTNER_3,Aucune Fille disponible...
 FAIR_ARENA_GROUP_BUFF_TITLE,Aura de Maison
-FAIR_ARENA_DESC_SETTLE,L'événement est terminé ! Les résultats de cette exploration ont été automatiquement calculés. Les récompenses non collectées vous ont été envoyées directement dans votre sac.
+FAIR_ARENA_DESC_SETTLE,L'événement est terminé ! Les résultats de cette Exploration ont été automatiquement calculés. Les récompenses non collectées vous ont été envoyées directement dans votre sac.
 FAIR_ARENA_DESC_SETTLE_DEMO,L'événement est terminé ! Les résultats de Démo ont été automatiquement calculés.
 FAIR_ARENA_TIPS_REVIVE_NO,Calculer
 FAIR_ARENA_TIPS_REVIVE_YES,Débloquer
 FAIR_ARENA_GOTO_EXPLORE,Continuer
-FAIR_ARENA_GOTO_DEMO,Aller à
+FAIR_ARENA_GOTO_DEMO,Démo
 ACTIVITY_TIME_REFRESH_TIPS,Les récompenses ont été automatiquement actualisées !
-FAIR_ARENA_TITLE_GIFT,Coffre niv.{1}
+FAIR_ARENA_TITLE_GIFT,Coffre Niv.{1}
 MONTHLY_CARD_OFFER_FIRST,Réduc. du\n1er achat
 ACADEMY_ASSESSMENT_FORMATION_TIPS,Touchez l'avatar de la Fille pour plus détails.
 ACTIVITY_GIFTBAG_OPTIONAL_TEXT01,Choisissez 4 objets parmi les objets suivants.
@@ -4994,8 +4994,8 @@ EQUIP_LEVELUP_TEXT_18,Ensemble d'équipement à obtenir
 ACTIVITY_DRESS_GACHA_AWARD_HELP,Terminez les tâches pour obtenir les récompenses correspondantes. (envoyées par courrier)
 ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
-EQUIP_LEVELUP_TEXT_19,Veuillez sélectionner l'ensemble d'équipement que vous souhaitez convertir
-EQUIP_LEVELUP_TEXT_20,Veuillez sélectionner l'ensemble d'équipement que vous souhaitez obtenir
+EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'ensemble d'équipement que vous souhaitez convertir
+EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
 DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Halloween est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
@@ -5255,3 +5255,24 @@ ACTIVITY_TRICKORTREAT_TEXT05,Récompenses Normales
 ACTIVITY_TRICKORTREAT_AWARDS_TITLE,Récompenses
 ACTIVITY_TRICKORTREAT_AWARDS_JUMP,Passer l'animation et obtenir les récompenses aujourd'hui
 REFRESH_SHOP_TIMES,Rafraîchir
+FAIR_ARENA_OPEN_BACK_PACK_TIPS,Appuyez sur l'avatar d'une Fille pour savoir plus de détails et équipez-la d'une Antiquité appropriée !
+FAIR_ARENA_OPEN_BACK_PACK_TIPS2,Ne plus rappeler durant cet événement
+PARTNER_CHALLENGE_CHESS_TEXT01,Mission
+PARTNER_CHALLENGE_CHESS_TEXT02,Mission
+PARTNER_CHALLENGE_CHESS_TEXT03,Bonus
+PARTNER_CHALLENGE_CHESS_TEXT04,Terminez les Missions (Étape 4 à 9) pour retirer les Bonus des ennemis de l'Étape 10.
+PARTNER_CHALLENGE_CHESS_TEXT05,Terminez cette Mission pour retirer 1 Bonus des ennemis de l'Étape 10.
+PARTNER_CHALLENGE_CHESS_TEXT06,Ce Bonus peut être retiré après avoir complété {1} Mission(s)
+FAIR_ARENA_GET_HOE_TIME_EXPLAIN,{1} Pioche(s) Dorée(s) Gratuite(s) dans：
+FAIR_ARENA_GET_HOE_EXPLAIN,Chaque Exploration consomme 1 Pioche Dorée !
+FAIR_ARENA_GET_HOE_BUY_TIMES_YET,Limite d'achat\npar jour：
+FAIR_ARENA_GET_HOE_BUY_HELP,"1. Chaque Exploration consomme 1 Pioche Dorée.|2. Lors du premier jour de l'événement, vous recevez 2 Pioches Dorées. Lors du 3ème et 5ème jour de l'événement, vous recevrez 1 Pioche Dorée (GMT : 0:00).|3. Durant l'événement, vous pouvez acheter 2 Pioches Dorées par jour et le nombre d'achats restants peut être cumulé au jour suivant.|4. Le prix de la Pioche Dorée augmentera avec le nombre d'achats, jusqu'à 400 Gemmes au maximum."
+FAIR_ARENA_GET_HOE_TITLE,Acheter des Pioches Dorées
+FAIR_ARENA_GET_HOE_NONE_TIPS,Toutes vos Pioches Dorées ont été consommées ! Voulez-vous acheter des Pioches Dorées?
+FAIR_ARENA_GET_HOE_TIME_END,Restant：
+FAIR_ARENA_GET_HOE_SHOW_TIME_NO,Vous ne pouvez plus acheter des Pioches durant la période d'affichage.
+FAIR_ARENA_GET_HOE_SHOW_TIMES_NONE,Vous avez attient la limite d'achat !
+FAIR_ARENA_GET_HOE_BUY_TIPS,"Les 3 premiers achats coûtent respectivement 100, 200 et 300 Gemmes. À parti du 4ème achat, 400 Gemmes contre 1 Pioche Dorée.\nCet achat coûtera [c][2587e2]{1}[-][/c] Gemmes, confirmez-vous l'achat ?"
+PARTNER_CHALLENGE_CHESS_TEXT07,"Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'Étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.|5. Dans chacune des Étapes 4 à 10 se trouve une Mission à terminer. Terminez cette Mission en complétant la condition et en passant l’Étape.|6. Les ennemis de l'Étape 10 ont 6 Bonus. Chaque fois que vous terminerez une Mission des étapes précédentes, un Bonus sera retiré, ce qui vous aidera à passer l’Étape 10.|7. Après avoir passé l’Étape actuelle, vous pourrez redéfier l’Étape pour retenter de terminer la Mission. Cependant, si vous perdez, l’Énergie sera déduite et le Coupon de Défi sera également consommé."
+FAIR_ARENA_TIPS_REVIVE_2,"Arpès avoir acheté une Pioche Argentée, vous pourrez vous ressusciter après l'échec d'une bataille et continuer de combattre."
+PARTNER_CHALLENGE_CHESS_TEXT08,Récompense
