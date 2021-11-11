@@ -95,7 +95,7 @@ id,text,option1,option2,option3
 10020022,"Quelle est l'utilité de l'Attribut ""Immunité"" ?","Plus l'Immunité d'une Fille est élevé, plus elle aura de chance d'être immunisée contre les Dégâts sur la Durée tel que Saignement.","Plus l'Immunité d'une Fille est élevée, plus elle aura de chance d'être immunisée par les Effets de Contrôles.","Plus l'Immunité d'une Fille est élevée, plus elle aura de chance d'être immunisée par les Effets de Marques."
 10020023,"Quelle est l'utilité de l'Attribut de ""Blocage"" ?",Peut réduire les dégâts en bloquant l'Attaque de l'ennemi.,Réduit les chances de subir une Critique.,Réduit les dégâts subis par les Compétences Actives.
 10020024,"Après avoir Gradué une Fille 10 étoiles, vous pouvez la libérer. Lorsque vous libérez une Fille, cette dernière peut acquérir des Potentiels. Lequel de ces Boosts est un Potentiel ?","Augmente le Blocage, les Crits et l'Immunité de la Fille.","Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts.",Obtient 50 d'Énergies supplémentaires au début de la Bataille.
-10020025,"Après avoir Gradué une Fille 10 étoiles, vous pouvez la libérer. Lorsque vous libérez une Fille, cette dernière peut acquérir des Potentiels. Lequel de ces Boosts est un Potentiel ?",Augmente les dégâts contre les Guerriers.,Obtient une Immunité contre les Effets de Contrôle tels que Étourdissement et Pétrification.,每回合結束，隨機清除自身一種負面效果
+10020025,"Après avoir Gradué une Fille 10 étoiles, vous pouvez la libérer. Lorsque vous libérez une Fille, cette dernière peut acquérir des Potentiels. Lequel de ces Boosts est un Potentiel ?",Augmente les dégâts contre les Guerriers.,Obtient une Immunité contre les Effets de Contrôle tels que Étourdissement et Pétrification.,"À la fin de chaque tour, peut s'enlever 1 Effet Négatif aléatoirement."
 10020026,"Dans l'Excursion, vous pouvez collecter des ressources grâce à l'Arbre à Souhait et au Marché. Quelles sont les ressources que vous pouvez collecter ?",Paquet Cadeau et Pièce de Meuble,Gemmes et Pièce d'or,Plateau Repas et Jus d'EXP
 10020027,"Dans l'Excursion Scolaire, le Gîte permet d'augmenter les Attributs tels que les PV et l'Attaque. Quels sont les autres Attributs qui peuvent être Améliorer ?","Résistance aux Critiques, peut réduire les chances de subir une Critique.","Péné. d'Armure, peut réduire l'effet de l'Armure de la Fille ciblée.","Réduction des Dégâts, peut réduire les dégâts reçus."
 10020028,"Dans l'Excursion Scolaire, plus votre niveau d'Aventure est élevé, plus le niveau maximum de vos coffres sera élevé. Concernant le niveau d'Aventure, laquelle des réponses ci-dessous est incorrecte ?","Plus votre niveau d'Aventure est élevé, plus les ennemis rencontrés seront puissants.","Plus votre niveau d'Aventure est élevé, plus le nombre d'emplacement de Coffre augmentera.","Plus votre niveau d'Aventure est élevé, plus le nombre de Pain Délicieux nécessaire pour une Aventure augmentera."
@@ -149,27 +149,27 @@ id,text,option1,option2,option3
 12040008,"Quelle est l'assassine de la Maison Fée, capable d'infliger des dégâts explosifs tout en se soignant, et en soignant ses alliées également ?",Linky,Cassie,Himoto
 12040009,Vera est capable de rapetisser ses ennemies. Les ennemies rapetissées subiront plus de dégâts et en infligeront moins. Mais quand est-ce que les ennemies rappetissées subissent des dégâts supplémentaires ?,Lorsqu'elles utilisent leur Attaque Basique.,Lorsqu'elles sont brûlées.,Lorsqu'elles sont sous un effet de Contrôle.
 12040010,Que peut faire un ennemi qui est sous l'effet de Cristallisation ?,Déclencher sa Compétence Active/ Lancer son Attaque Basique,Chasser ou Contre-attaquer,Rien
-11060001,在學院招生儀式上，擔任辰星學院考核官的同學是誰？,米迦勒,華佗,加百列
-11060002,有一間音樂練習室裡放著一張巨大的豎琴，可能是哪位同學的專用練習室？,龐統,加百列,烏列爾
-11060003,按照米迦勒同學在分院考核上的說法，辰星學院最歡迎有著以下哪種特質的同學加入？,自由,神秘,正義
-11060004,辰星學院中，有一位同學在魏延和呂蒙入學的那一學年擔任學姐代表，這位同學是？,米迦勒,龐統,水鏡
-11060005,以下三位辰星學院的同學中，哪一位同學沒有翅膀？,水鏡,后羿,龐統
-11060006,辰星學院中，有一位同學表面上是新聞社的記者，實際上卻是守衛校園的巡夜人，這位同學是？,華佗,烏列爾,加百列
-11060007,嫦娥同學遇到了一些麻煩，向以下哪位同學求助時最有可能得到幫助呢？,后羿,德古拉,于吉
-11060008,關於米迦勒與路西法在融合時的稱呼，除了路西菲爾之外，米迦勒還中意一個名字，這個名字是？,希多,米法,露咪
-11060009,如果學園內發生了混沌體征事件，學長想要把受傷的學妹帶去給華佗治療，最應該去什麼地方呢？,圖書館,教室,醫務室
-11060010,你好像聽見了有人吵架的聲音，走過去一看，卻發現只是一位辰星學院的同學在自言自語，這位同學是？,華佗,后羿,路西菲爾
-11060011,幽夢軍是由「理」創建、對抗混沌的軍隊，也是幽夢學園的前身。龐統同學曾經也是幽夢軍的成員，她屬於哪個部隊？,風,華,麗
-11060012,華佗同學曾經開發了一種高效麻醉劑，讓敵人和同伴都聞之色變，學長知道這種麻醉劑的名字嗎？,還魂丹,麻沸散,鶴頂紅
-11060013,學長初次見到龐統是在烏布羅斯大圖書館，她帶著復仇的烈焰降臨學園，對某人發起了義無反顧的進攻。龐統想要復仇的對象是？,圖靈,銀月,呂布
-11060014,戰姬秘事：水鏡同學有嚴重的潔癖，厭惡污穢與邪惡，她每天要洗三次澡，最喜歡的食物是奶油布丁，討厭髒髒的、黑色的東西。學長知道水鏡同學最討厭的食物是什麼嗎？,巧克力蛋糕,芒果千層,草莓蛋糕
-11060015,你在圖書館悠然地看著書，這時，龐統同學第三次從你面前經過，你攔住龐統問她為什麼在圖書館裡走來走去，龐統對你說：,我當然是想看看親愛的什麼時候才會注意到我,學長，我又迷路了……,我在圖書館捉迷藏呢，學長要一起嗎？
-11060016,你在學園的小徑上散步，遠遠看見前方有個美麗的人影坐在樹蔭下，你情不自禁地走上前去，發現原來是華佗同學在看書，她看的書是？,《百種月見團子製作大全》,《獨家秘方——讓你的愛馬不再掉毛》,《稀有藥草在哪裡》
-11060017,你在學園的小徑上散步，遠遠看見前方有個美麗的人影坐在樹蔭下，你情不自禁地走上前去，發現原來是嫦娥同學在看書，她看的書是？,《百種月見團子製作大全》,《獨家秘方——讓你的愛馬不再掉毛》,《稀有藥草在哪裡》
-11060018,你在學園的小徑上散步，遠遠看見前方有個美麗的人影坐在樹蔭下，你情不自禁地走上前去，發現原來是烏列爾同學在看書，她看的書是？,《百種月見團子製作大全》,《獨家秘方——讓你的愛馬不再掉毛》,《稀有藥草在哪裡》
-12060001,在戰鬥中，辰星學院與以下哪個學院互為克制關係？,Démon,Fée,Monstre
-12060002,當學長在隊伍中編入六名辰星學院的同學時，會觸發以下哪個光環效果？,攻擊+20%，精准+18%,生命+20%，減傷率+25%,破甲+35%，格擋+30%
-12060003,以下同學中，有一位同學的主動技能在施放的下一回合才會對敵方造成傷害，這位同學是？,加百列,烏列爾,后羿
-12060004,嫦娥同學的主動技能會使目標暈眩，這項能力在面對哪位辰星學院的同學時是沒有作用的？,龐統,路西菲爾,水鏡
-12060005,你遇到了一個血量非常高的敵人，有一位能夠按照敵方生命上限百分比造成傷害的戰姬希望學長將她編入隊伍，學長知道是哪位同學嗎？,華佗,路西菲爾,法正
-12060006,這位同學戰敗了……等等，這位同學又站起來了！以下辰星學院的同學中，哪位同學的被動技能有復活的能力？,水鏡,嫦娥,米迦勒
+11060001,Laquelle des Filles suivantes est l'examinatrice de l'Examen de la Maison Ange：,Michael,Isabelle,Gabriel
+11060002,Dans la salle de classe se trouve une géante harpe. À qui appartient-elle ?,Phénix,Gabriel,Uriel
+11060003,"Parmi les choix suivants, quel est, selon Michael, l'aspect le plus valorisé dans la Maison Ange ?",Liberté,Mystérieux,Justice
+11060004,Qui était la Senpai en charge lorsque Iron Fist et Aquaris ont rejoint l'Académie Yume ?,Michael,Phénix,Angel
+11060005,"Parmi les Filles suivantes de la Maison Ange, laquelle ne possède pas d'ailes ?",Angel,Angélina,Phénix
+11060006,"Quelle est la Fille de la Maison Ange qui est membre du Club de Journalisme mais qui en réalité, est juste une fausse couverture pour garder son équipe de patrouille secrète ?",Isabelle,Uriel,Gabriel
+11060007,"Si Luna a des ennuis, qui est la première personne qui courrait à son secours ?",Angélina,Dracula,Scythe
+11060008,"Hormis ""Lucifael"", Michael avait l'idée d'un autre nom pour leur fusion. Lequel des noms suivants était-ce ?",Cifer,Mifer,Lumi
+11060009,"Si une Fille s'est blessée lors d'une Attaque contre le Chaos, où est-ce que Senpai devrait l'emmener pour avoir recours à des soins médicaux ?",Bibliothèque,Salle de Classe,Infirmerie
+11060010,"Vous entendez des personnes se disputer, en regardant aux alentours, vous ne voyez qu'une seule personne. Qui est-ce ?",Isabelle,Angélina,Lucifael
+11060011,"Les Forces Unies de Yume ont été fondées par Li dans le but de combattre le Chaos, et ainsi devenir l'Académie Yume d'aujourd'hui. À quel régiment appartenait Phénix ?",Oméga,Sigma,Bêta
+11060012,"Isabelle est une experte en potion et remède, et a concocté une potion extrêmement puissante. Quelle est-elle ?",Résurrection,Anesthésiant,Neurotoxine
+11060013,"Senpai rencontra Phénix pour la première fois à la Grande Bibliothèque d'Ulbricht. À ce moment-là, elle se battait pour venger ses partenaires. Qui est celle qu'elle attaquait ?",Turin,Ithil,Kratos
+11060014,Angel est obsédée par la propreté et déteste la saleté et la méchanceté. Elle prend une douche 3 fois par jour et déteste les desserts de couleurs sombre. Qu'est-ce que cela pourrait-être ?,Fondant au chocolat,Gâteau-mousse à la mangue,Fraisier
+11060015,"Vous êtes à la Librairie en train de lire et vous voyez Phénix passer à côté pour la troisième fois. Lorsque vous lui demandé pourquoi est-ce qu'elle fait des aller-retour au lieu de lire, elle vous répond :","Oh, tu as remarqué que j'étais là, Senpai !",Je me suis encore perdue...,"Je joue à cache-cache, tu veux jouer avec moi ?"
+11060016,"Vous êtes en train de vous promener sur le Campus, lorsque vous apercevez au loin, une Fille sublime assise sur un banc un livre à la main. En vous approchant, vous voyez que c'est Isabelle. Quel pourrait être le titre du livre ?",« 100 Recettes de snacks »,« Le grand guide du cheval »,« Les plantes rares : Où les trouver ? »
+11060017,"Vous êtes en train de vous promener sur le Campus, lorsque vous apercevez au loin, une Fille sublime assise sur un banc un livre à la main. En vous approchant, vous voyez que c'est Luna. Quel pourrait être le titre du livre ?",« 100 Recettes de snacks »,« Le grand guide du cheval »,« Les plantes rares : Où les trouver ? »
+11060018,"Vous êtes en train de vous promener sur le Campus, lorsque vous apercevez au loin, une Fille sublime assise sur un banc un livre à la main. En vous approchant, vous voyez que c'est Uriel. Quel pourrait être le titre du livre ?",« 100 Recettes de snacks »,« Le grand guide du cheval »,« Les plantes rares : Où les trouver ? »
+12060001,"Lors d'une bataille, contre quelle Maison les Filles de la Maison Ange obtiennent un bonus de Rivalité de Maison ?",Démon,Fée,Monstre
+12060002,Quelle Aura déclencherez-vous si les 6 Filles de votre équipe appartiennent à la Maison Ange ?,"Attaque +20%, Précision +18%","PV +20%, Résistance aux Dégâts +25%","Pénétration d'Armure +35%, Blocage +30%"
+12060003,Quelle est la Fille qui inflige des dégâts un tour après qu'elle ait lancé sa Compétence Active ?,Gabriel,Uriel,Angélina
+12060004,"La Compétence Active ""Lumière Sacrée"" de Luna étourdit son ennemi. Quelle est la Fille de la Maison Ange qui est immunisée par cet Effet de Contrôle ?",Phénix,Lucifael,Angel
+12060005,"L'Attribut PV de l'ennemi que vous rencontré est très élevé. Parmi les Filles suivantes, laquelle peut infliger des dégâts en fonction des PV Max de l'ennemi et pourrait être utile ?",Isabelle,Lucifael,Selene
+12060006,"Dans la Maison Ange, quelle est la Fille pouvant se ressusciter ?",Angel,Luna,Michael

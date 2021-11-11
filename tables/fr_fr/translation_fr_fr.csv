@@ -91,7 +91,7 @@ FREE,Immunité
 SKLP,Dég. Comp.
 DECDMG,Résis. aux Dég.
 CAMPAIGN_HANG_ITEM_WINDOW,Butin
-TIPS,Conseil
+TIPS,Attention
 TOP_LEV_UP,Niveau
 COMPOSE_EQUIP,Synthétiser
 COMPOSE_EQUIP_NO_MANA,Pièces d'Or Insuffisantes !
@@ -332,7 +332,7 @@ BACKPACK_WINDOW,Sac
 SKIP_BATTLE,Passer la bataille ?
 ALTAR_TITLE,Transférer
 ACTIVITY_WINDOW,Foire
-TOWER_TEXT01,Ennemi
+TOWER_TEXT01,Ennemis
 TOWER_TEXT02,Récompenses
 TOWER_TEXT03,Étape {1}
 TOWER_TEXT04,Combattre
@@ -460,9 +460,9 @@ DAILY_AWARD,Quotidienne
 SEASON_AWARD,Saisonnière
 NOW_RANK,Classement Actuel
 TOP_RANK,Meilleur Classement
-NOW_AWARD,Récompenses Actuelle :
+NOW_AWARD,Récompenses Actuelles :
 ARENA_RANK_DESC1,Envoyées tous les jours à 21h (GMT 0)
-ARENA_RANK_DESC2,Récompenses envoyées par courrier
+ARENA_RANK_DESC2,Les récompenses seront envoyées par courrier
 BATTLE_RECORD,Historique
 DAY_BEFORE,Il y a {1} jours
 HOUR_BEFORE,Il y a {1} heure(s)
@@ -578,7 +578,7 @@ SUMMON_GIFTBAG_TEXT01,Obtenir {1} points
 SUMMON_GIFTBAG_TEXT02,Les récompenses seront envoyées par courrier une fois les objectifs atteints.
 FIRST_RECHARGE,Récompense de première recharge (peu importe le montant)
 ALREADY_BUY,Acheté
-PUB_MISSION_CANCEL,Êtes-vous certain de vouloir annuler le Job ? Il sera enlevé de la liste si vous l'annulez.
+PUB_MISSION_CANCEL,Êtes-vous sûr de vouloir annuler le Job ? Il sera enlevé de la liste si vous l'annulez.
 CONNECT_EXCEPTION,"Erreur de connexion, réessayer ?"
 RETRY,Réessayer
 NEED_UPDATE_APK,Vous devez mettre le jeu à jour
@@ -897,7 +897,7 @@ GUILD_TEXT56,Courrier de la Guilde
 GUILD_TEXT57,Nombre maximum de second atteint
 GUILD_TEXT58,Nombre de membre maximum atteint
 GUILD_TEXT59,Vous avez rejoint une autre Guilde
-GUILD_TEXT60,Êtes-vous sûr de vouloir transmettre votre rang ?
+GUILD_TEXT60,Êtes-vous sûr de vouloir transmettre le Chef à un autre membre ?
 GUILD_TEXT61,Touchez pour changer l'Annonce
 GUILD_TEXT62,3-12 caractères alphanumériques
 NO_RANK_DATA,Aucun Classement…
@@ -1046,8 +1046,8 @@ ARENA_TEAM_DEL_ALL,Tout\nSupprimer
 ARENA_TEAM_INVITE_WINDOW,Liste des Demandes
 ARENA_TEAM_NONE_1,Aucune personne à inviter
 ARENA_TEAM_HAS_INVITE,Invité
-ARENA_TEAM_DISSOLVE,Êtes-vous certain de vouloir dissoudre l'équipe ?
-ARENA_TEAM_SUBMIT,Êtes-vous certain de vouloir soumettre l'équipe ?
+ARENA_TEAM_DISSOLVE,Êtes-vous sûr de vouloir dissoudre l'équipe ?
+ARENA_TEAM_SUBMIT,Êtes-vous sûr de vouloir soumettre l'équipe ?
 ARENA_TEAM_INVITATION_WINDOW,Liste d'Invitation
 ARENA_TEAM_INVITATION_1,Demande reçue: {1}
 ARENA_TEAM_CHANGE_LEADER,Nommer Chef
@@ -1069,8 +1069,8 @@ ARENA_TEAM_RECORD_NO_TEAM_TIPS,Rejoignez tout d'abord l'Arène 3v3 !
 ARENA_TEAM_APPLY_SUCCESS,Candidature envoyée
 ARENA_RANK_DESC3,Récompenses de fin de saison avec ce classement：
 ARENA_TEAM_LEADER_ONLY,Seul le Chef de l'équipe peut commencer une Bataille !
-ARENA_TEAM_TRANSFER_LEADER,Êtes-vous certain de vouloir changer le Chef de l'équipe ?
-ARENA_TEAM_QUIT_TEAM,Êtes-vous certain de vouloir quitter l'équipe ?
+ARENA_TEAM_TRANSFER_LEADER,Êtes-vous sûr de vouloir changer le Chef de l'équipe ?
+ARENA_TEAM_QUIT_TEAM,Êtes-vous sûr de vouloir quitter l'équipe ?
 ARENA_TEAM_NO_OPEN,L'Arène 3v3 n'a pas encore commencé.
 SUBSCRIBE,S'abonner
 ALREADY_SUBSCRIBE,Abonné
@@ -1085,7 +1085,7 @@ DAY_HOUR,{1} Jours {2} Heures
 TYPE,Type
 SKIN_LOCKED,Atteignez le Niv.{1} ou obtenez un Skin afin de débloquer cette fonctionnalité
 MAIL_TEXT05,Tout Lire
-MAIL_TIPS01,Aucun courrier non lu
+MAIL_TIPS01,Aucun Courrier
 MAIL_TEXT06,Tous les messages sont lus
 COMIC_HOT_COMMENTS,Meilleur commentaire
 COMIC_NO_COMMENTS,Laisser un commentaire !
@@ -1142,7 +1142,7 @@ GUILD_WAR_TEAM_SET_SUCCESS,La formation de la Guilde a été complétée
 GUILD_WAR_CAN_NOT_REDUCE_TEAM,Vous avez déjà atteint la limite minimum d'équipe.
 GUILD_WAR_NO_TILI,Endurance insuffisante
 GUILD_WAR_SEND_SUCCESS,Envoi réussi
-GUILD_WAR_CONFIRM_SEND,Êtes-vous certain de vouloir envoyer une invitation dans le Tchat de la Guilde ?
+GUILD_WAR_CONFIRM_SEND,Êtes-vous sûr de vouloir envoyer une invitation dans le Tchat de la Guilde ?
 GUILD_WAR_IS_SIGNED,Votre Guilde est déjà inscrite
 FINAL_DETAIL,Information de la Finale
 TIME_TO_BEGIN,Commence dans :
@@ -1383,7 +1383,7 @@ DATES_GIFTS_GROUP_3,Accessoire
 DATES_GIFTS_GROUP_4,Autre
 AUTO,Auto
 NOT_AUTO,Manuel
-STORY_IS_SKIP,Êtes-vous certain de vouloir passer l'histoire ?
+STORY_IS_SKIP,Êtes-vous sûr de vouloir passer l'histoire ?
 STORY_RECORD_TITLE,Mémoire
 DATES_TEXT09,Faveur
 DATES_TEXT10,Faveur :
@@ -1394,7 +1394,7 @@ GUILD_DININGHALL_HELP,"1. Touchez ""Obtenir la commande"" afin de rafraîchir la
 DATES_TEXT12,Donation Réussie
 COMPOSE_DATES_GIFTS_TEXT01,Création réussie
 COMPOSE_DATES_GIFTS_TEXT02,Matériaux Insuffisants
-IF_UNLOCK_HERO,"Êtes-vous certain de vouloir débloquer cette Fille ? Si la Fille est en train de défendre dans l'Arène, elle sera enlevée de l'équipe après avoir été débloquée."
+IF_UNLOCK_HERO,"Êtes-vous sûr de vouloir débloquer cette Fille ? Si la Fille est en train de défendre dans l'Arène, elle sera enlevée de l'équipe après avoir été débloquée."
 UNLOCK_FAILED,"Cette Fille est la dernière Fille dans l'Équipe de Défense, elle ne peut donc pas être enlevée."
 DATES_TEXT13,Aucun bonus
 SHELTER_TIPS,Page suivante
@@ -1448,7 +1448,7 @@ TEN_STAR_EXCHANGE_SUMMARY,"En utilisant 5 Filles Cibles et des Diplômes, vous p
 TEN_STAR_EXCHANGE_HELP,"1. Échanger une Fille 10 étoiles (ou plus) vous permet d'échanger une Fille 10 étoiles (ou plus) contre celle de votre choix dans la même Maison.（Les 5 copies de la Fille que vous avez choisies disparaîtront）|2. Échanger une Fille 10 étoiles nécessite d'utiliser 5 Diplômes et un certain nombre de Filles Matérielles 5 étoiles. Plus le niveau de Libération est élevé, plus il faut de Filles 5 étoiles.|3. Le Niveau, le grade, les équipements, le cristal, l'antiquité et niveau de libération de la Fille seront transférés sur la nouvelle Fille.|4. La Fille héritera de la Faveur de la Fille 5 étoiles ayant le plus de Faveur.|5. Si une des Filles 5 étoiles a un Serment avec vous, la Fille 10 étoile aura également un Serment avec vous après le remplacement. Les Bagues de Serment portées par les autres Filles ne vous seront pas rendues.|6. Les Filles utilisées seront transformées en Pièces, Jus d'EXP et Plateau-Repas après l'échange.|7. Les Diplômes peuvent être obtenus dans les événements exclusifs."
 TEN_STAR_EXCHANGE_TEXT05,Échanger {1} 10 étoiles ?
 TEN_STAR_EXCHANGE_TEXT06,Vous ne pouvez pas choisir la Fille 10 étoiles sélectionnée contre elle-même
-TEN_STAR_EXCHANGE_TEXT03,Êtes-vous certain de vouloir échanger ?
+TEN_STAR_EXCHANGE_TEXT03,Êtes-vous sûr de vouloir échanger ?
 ATTR_UP2,Amélioration des Statistiques
 STATISTICAL,Statistique
 FRIEND_BOSS_HAS_KILL,"La bataille est une défaite, le BOSS a déjà été vaincu"
@@ -1456,10 +1456,10 @@ STAGE_LV_NOT_ENOUGH,Débloquer en atteignant le Niv.{1}
 GAMBLE_NEED_VIP,Nécessite VIP {1}
 BATTLE_FORMAION_PET,Serviteur
 PET_BUFF,Aura
-PET_RESTORE_TIPS,Voulez-vous faire renaître votre Serviteur? Une partie des ressources vous sera rendue après la renaissance.\n[c][CC0011](Les Pièces utilisées ne seront pas rendues)[-][/c]
+PET_RESTORE_TIPS,Voulez-vous faire renaître votre Serviteur ? Une partie des ressources vous sera rendue après la renaissance.\n[c][CC0011](les Pièces d'Or utilisées ne seront pas rendues)[-][/c]
 PET_LEV_LIMIT,Niveau
 PET_BUFF_UNLOCK,Débloquez l'Aura
-PET_WINDOW_HELP,"1. Dans l’interface de la Liste des Serviteurs, choisissez le Serviteur qui vous intéresse puis touchez「Adopter」afin de domestiquer le Serviteur en utilisant des Biscuits de Serviteur. Chaque Serviteur ne peut être domestiqué qu’une seule fois. Les Biscuits de Serviteur peuvent être obtenus dans l'Auto-Bataille à partir de l’étape 10-8, dans la Boutique de Sanctuaire, la Patrouille et dans les Événements.|2. Un serviteur venant juste d’être domestiqué est de Niv.1 avec 1 compétence active et 1 aura.|3. Le niveau du Serviteur peut être augmenté en utilisant des Biscuits de Serviteur et des Pièces. Le niveau de sa compétence active augmentera en même temps que le niveau du Serviteur.|4. L’Aura du Serviteur peut être augmentée avec des Biscuits Spiritueux et des Pièces. Les Biscuits Spiritueux peuvent être obtenus dans l'Auto-Bataille à partir de l’étape 10-8, dans la Boutique de Sanctuaire, la Patrouille, et les Événements.|5. Quand le Serviteur atteint le niveau maximum, il peut être évolué en utilisant des Pièces et des Biscuits de Serviteur. Après l’évolution, la compétence active du Serviteur changera, vous débloquerez également la nouvelle aura du Serviteur et la limite de niveau du Serviteur augmentera également.|6. Vous pouvez choisir le Serviteur avec lequel se battre dans l’interface de l’équipe. Le Serviteur dans l’équipe donnera un bonus à tous les membres de l’équipe. Les Serviteurs n’utilisent que leurs compétences actives dans la bataille.|7. L’énergie du Serviteur augmente à chaque début de tour et à chaque fois qu'une Fille alliée utilise une compétence active. Le Serviteur utilisera sa compétence active avant le tour suivant d'une alliée quand sa barre d’Énergie est remplie et consommera toute l'énergie obtenue.|8. Dans l’Arène, vous pouvez choisir un Serviteur différent pour chaque équipe, et le bonus du Serviteur n’affectera que l’équipe dont il fait partie.|9. Faire renaître un Serviteur permet de récupérer tous les biscuits utilisés pour l’améliorer. (Attention：Les Pièces ne seront pas rendues )|10. La fonctionnalité d'Entraînement du Serviteur sera débloquée lorsque 1 de vos serviteurs atteint Niv.120."
+PET_WINDOW_HELP,"1. Dans l’interface de la Liste des Serviteurs, choisissez le Serviteur qui vous intéresse puis touchez「Adopter」afin de domestiquer le Serviteur en utilisant des Biscuits de Serviteur. Chaque Serviteur ne peut être domestiqué qu’une seule fois. Les Biscuits de Serviteur peuvent être obtenus dans l'Auto-Bataille à partir de l’étape 10-8, dans la Boutique de Sanctuaire, la Patrouille et dans les Événements.|2. Un Serviteur venant juste d’être domestiqué est de Niv.1 avec 1 compétence active et 1 aura.|3. Le niveau du Serviteur peut être augmenté en utilisant des Biscuits de Serviteur et des Pièces. Le niveau de sa compétence active augmentera en même temps que le niveau du Serviteur.|4. L’Aura du Serviteur peut être augmentée avec des Biscuits Spiritueux et des Pièces. Les Biscuits Spiritueux peuvent être obtenus dans l'Auto-Bataille à partir de l’étape 10-8, dans la Boutique de Sanctuaire, la Patrouille, et les Événements.|5. Quand le Serviteur atteint le niveau maximum, il peut être évolué en utilisant des Pièces et des Biscuits de Serviteur. Après l’évolution, la compétence active du Serviteur changera, vous débloquerez également la nouvelle aura du Serviteur et la limite de niveau du Serviteur augmentera également.|6. Vous pouvez choisir le Serviteur avec lequel se battre dans l’interface de l’équipe. Le Serviteur dans l’équipe donnera un bonus à tous les membres de l’équipe. Les Serviteurs n’utilisent que leurs compétences actives dans la bataille.|7. L’énergie du Serviteur augmente à chaque début de tour et à chaque fois qu'une Fille alliée utilise une compétence active. Le Serviteur utilisera sa compétence active avant le tour suivant d'une alliée quand sa barre d’Énergie est remplie et consommera toute l'énergie obtenue.|8. Dans l’Arène, vous pouvez choisir un Serviteur différent pour chaque équipe, et le bonus du Serviteur n’affectera que l’équipe dont il fait partie.|9. Faire renaître un Serviteur ou réinitailiser le niveau du Noyau Précieux vous permet de récupérer les Biscuits de Serviteur, les Biscuits Spiritueux et Cristaux du Serviteur utilisés. (Attention：Les Pièces ne seront pas rendues )|10. La fonctionnalité d'Entraînement du Serviteur sera débloquée lorsque 1 de vos Serviteurs atteint Niv.120."
 PET_EVOLVE_TITLE,Évolution
 PET,Serviteur
 PET_CANT_RESTORE_TIPS,"Pour faire renaître un Serviteur, il faut que son niveau ou que son aura soient supérieurs à 1"
@@ -1559,7 +1559,7 @@ WEDDING_VOTE_TEXT_9,Vote(s)
 WEDDING_VOTE_TEXT_10,Vous n'avez pas encore voté...
 WEDDING_VOTE_TEXT_11,Résultat
 WEDDING_VOTE_TEXT_12,L'événement est terminé. Vous ne pouvez plus voter
-WEDDING_VOTE_TEXT_13,"1. L'événement durera 14 jours. Pendant l'événement, vous pourrez obtenir des 【Bulletin d'amour】 en accomplissant des tâches afin de voter pour les Filles que vous préférez. La Fille ayant obtenu le plus de vote sera considérée en priorité lorsque l'Académie fera un nouveau Skin de Serment. (Si la Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des votes)|2. C'est le 4ème événement de Vote de Fille populaire, les 6 Filles de l'événement précédent ( Iron Fist, Angel, Hexa, Ésaü&Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael) ne participent plus pour cette fois. |3. L'événement est divisé en Phase de Groupes et Phase Finale, il y a le Groupe A et Groupe B pendant la Phase de Groupes, les 6 premières de chaque Groupe participeront à la Phase Finale. Groupe A : Maison Fantôme, Monstre et Démon. Groupe B : Maison Fée, Humain et Ange. La Phase de Groupe A aura lieu les jours 1 à 4 ; La Phase de Groupe B aura lieu les jours 5 à 8 et la Phase Finale se jouera les jours 9 à 14.|4. Les joueurs étant en dessous du Niv.30 ne peuvent pas voter.|5. Il y a 4 tâches d'événement. Vous pouvez obtenir 1 【Bulletin d'amour】 en complétant chaque tâche. Les tâches seront raffraîchies chaque jour, les【Bulletin d'amour】 non récupérés ne seront pas réenvoyés.|6. Les 【Bulletin d'amour】non-utilisés seront remis à 0 après chaque Phase de Groupe. N'oubliez pas de les utiliser dans le temps imparti.|7. Quand vous utilisez un certain nombre de 【Bulletin d'amour】 vous recevrez des récompenses dans vos courriers. Vous pouvez voir les détails des récompenses sur l'interface d'aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que ayez voté.|9. Si vous avez eu le cadre d'avatar 【Vraie Promesse】, vous obtiendrez des Gemmes comme récompense."
+WEDDING_VOTE_TEXT_13,"1. L'événement durera 14 jours. Pendant l'événement, vous pourrez obtenir des 【Bulletin d'amour】 en accomplissant des tâches afin de voter pour les Filles que vous préférez. La Fille ayant obtenu le plus de vote sera considérée en priorité lorsque l'Académie fera un nouveau Skin de Serment. (Si la Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des votes)|2. C'est le 4ème événement de Vote de Fille populaire, les 6 Filles de l'événement précédent ( Iron Fist, Angel, Hexa, Ésaü&Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael) ne participent plus pour cette fois. |3. L'événement est divisé en Phase de Groupes et Phase Finale, il y a le Groupe A et Groupe B pendant la Phase de Groupes, les 6 premières de chaque Groupe participeront à la Phase Finale. Groupe A : Maison Fantôme, Monstre et Démon. Groupe B : Maison Fée, Humain et Ange. La Phase de Groupe A aura lieu les jours 1 à 4 ; La Phase de Groupe B aura lieu les jours 5 à 8 et la Phase Finale se jouera les jours 9 à 14.|4. Les joueurs étant en dessous du Niv.30 ne peuvent pas voter.|5. Il y a 4 tâches d'événement. Vous pouvez obtenir 1 【Bulletin d'amour】 en complétant chaque tâche. Les tâches seront raffraîchies chaque jour, les【Bulletin d'amour】 non récupérés ne seront pas réenvoyés.|6. Les 【Bulletin d'amour】non-utilisés seront remis à 0 après chaque Phase de Groupe. N'oubliez pas de les utiliser dans le temps imparti.|7. Quand vous utilisez un certain nombre de 【Bulletin d'amour】 vous recevrez des récompenses dans vos courriers. Vous pouvez voir les détails des récompenses sur l'interface d'aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que ayez voté.|9. Si vous avez eu le Cadre d'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes comme récompense."
 WEDDING_VOTE_TEXT_14,Par défaut
 WEDDING_VOTE_TEXT_15,Bulletin d'amour restant：{1}
 GAME_REPAIR_TIPS,"Si une erreur vous empêche de vous connecter, vous pouvez cliquer sur 【Réparation du client】 afin de résoudre le problème. Le système redémarrera le jeu une fois que le problème sera résolu."
@@ -1576,7 +1576,7 @@ WEDDING_VOTE_TEXT_19,Cet événement est terminé. Vous ne pouvez pas recevoir d
 FIT_UP_DORM_TITLE,Décoration du dortoir
 FIT_UP_DORM_TIPS1,Décoré
 FIT_UP_DORM_TIPS2,Les récompenses seront envoyées par courrier
-FIT_UP_DORM_TIPS3,Êtes-vous certain de vouloir échanger ?
+FIT_UP_DORM_TIPS3,Êtes-vous sûr de vouloir échanger ?
 FIT_UP_DORM_TIPS4,Objets insuffisants !
 RETRIEVE_TOKEN_ERROR,La vérification de la connexion a échouée. Veuillez réessayer plus tard.
 SCHOOL_GIFTBAG_EXCHANGE_TEXT01,Échanger
@@ -1780,12 +1780,12 @@ FIRST_RECHARGE_TIPS_TEXT06,20歲以上  無限制
 ACTIVITY_BEACH_TIPS1,Progrès du jeu：
 ACTIVITY_BEACH_TIPS2,Attaque x3
 ACTIVITY_BEACH_TIPS3,Attaque
-ACTIVITY_BEACH_TIPS4,Êtes-vous certain de vouloir réinitialiser les progrès ?
+ACTIVITY_BEACH_TIPS4,Êtes-vous sûr de vouloir réinitialiser les progrès ?
 ACTIVITY_BEACH_ATTACK_NUM,Attaques Restantes : {1}
 ACTIVITY_BEACH_ATTACK_COST,Consommé : {1}
 BEACH_HELP,"1. Vous avez une chance gratuite de réinitialiser la progression du jeu une fois par jour. Vous pouvez également utiliser des Gemmes pour réinitialiser.|2. Cinq attaques gratuites seront données au début de chaque tour. Cinq attaques peuvent également être achetées avec 200 Gemmes. Chaque attaque coûtera une attaque à un adversaire.|3. Il y a trois sortes de pieuvre：Pieuvre Rose, Pieuvre Bleue et Pieuvre Rouge. 1 Pieuvre Rose inflige 1 de dégât, 1 Pieuvre Bleue inflige 3 de dégâts et une Pieuvre Rouge inflige 5 de dégâts.|Quand le joueur active un bonus d’attaque x3, les dégâts seront multipliés par 3. (Attention：Chaque attaque pendant l’effet x3 coûtera 100 Gemmes)|4. Vous ne pouvez connecter les pieuvres de la même sorte qu’une à la fois verticalement, horizontalement ou diagonalement. Plus vous connectez de pieuvre, plus les dégâts infligés seront important.|5. Si les dégâts infligés sont supérieurs aux points de vie de l’adversaire, les dégâts ne seront pas infligés à l’adversaire suivant.|6. Lorsque l’adversaire est battu, vous recevrez les points de récompenses correspondants. Plus vous battez d’adversaire, meilleures seront les récompenses obtenues.|7. Les points obtenus seront accumulés afin d’augmenter votre niveau de récompense, chaque fois que vous monterez de niveau, vous obtiendrez les récompenses correspondantes. Les récompenses sont divisées entre régulières et avancées. Les récompenses avancées ne peuvent être débloquées qu’en achetant des packs ou en débloquant des récompenses spéciales.|8. Vous pouvez également obtenir des récompenses en dépensant des Gemmes, mais cela vous coûtera plus qu’en vainquant les ennemis. Nous vous recommandons donc de participer à l’activité afin d’obtenir des récompenses !|9 Les récompenses doivent être collectées dans l’interface des récompenses !"
 ACTIVITY_BEACH_PROGRESS,{1} [c][e1405a]- {2}[-][/c] / {3}
-ACTIVITY_BEACH_TIPS5,Êtes-vous certain de vouloir utiliser {1} Gemmes pour acheter {2} attaques ?
+ACTIVITY_BEACH_TIPS5,Êtes-vous sûr de vouloir utiliser {1} Gemmes pour acheter {2} attaques ?
 ACTIVITY_BEACH_TIPS6,Point Bonus + {1}
 ACTIVITY_BEACH_TIPS7,Niveau
 ACTIVITY_BEACH_TIPS8,Acheter
@@ -1797,8 +1797,8 @@ ACTIVITY_BEACH_TIPS13,Points：{1}/{2}
 ACTIVITY_BEACH_AWARDS_WINDOW_HELP,"1. Les points obtenus en battant un adversaire vont s’accumuler et augmenteront le niveau de récompense. Ce n’est que lorsque vous atteignez un certain niveau que vous pourrez recevoir des récompenses pour ce niveau.|2. Les récompenses sont classées comme régulières ou avancées. Les récompenses avancées doivent être déverrouillées à partir du pack surprise avant de pouvoir être collectées.|3. Vous pouvez également obtenir des niveaux de récompenses en dépensant des Gemmes, mais cela vous coûtera plus de Gemmes que de vaincre votre adversaire. Il est recommandé de jouer à ce jeu pour obtenir des points et des améliorations !|4. Les récompenses voient être collectées sur l’interface de la liste de récompenses."
 ACTIVITY_BEACH_BUY_WINDOW_HELP,Règles d'achat
 ACTIVITY_BEACH_TIPS14,Montez au Niv.[c][d76500]{1}[-][/c] pour débloquer [c][d76500]{2}[-][/c] récompenses
-ACTIVITY_BEACH_TIPS15,Vous pouvez gagner des points en participant à cet événement. Acheter avec des Gemmes coûte très cher ! Êtes-vous certain de vouloir continuer ?
-ACTIVITY_BEACH_TIPS16,Êtes-vous certains de vouloir dépenser {1} Gemmes pour réinitialiser le progrès ?
+ACTIVITY_BEACH_TIPS15,Vous pouvez gagner des points en participant à cet événement. Acheter avec des Gemmes coûte très cher ! Êtes-vous sûr de vouloir continuer ?
+ACTIVITY_BEACH_TIPS16,Êtes-vous sûrs de vouloir dépenser {1} Gemmes pour réinitialiser le progrès ?
 ACTIVITY_BEACH_TIPS17,Vous êtes actuellement à la récompense la plus élevée de la liste
 ACTIVITY_BEACH_TIPS18,Connectez les pieuvres avant d'attaquer
 ACTIVITY_BEACH_TIPS19,Cette manche est terminée. Touchez en haut à gauche de l'écran pour réinitialiser le jeu !
@@ -1832,8 +1832,8 @@ ACTIVITY_JACKPOT_ENERGY_NOT_ENOUGH,Énergie insuffisante
 SUBSCRIPTION_CANCEL_TIP1,"Essai gratuit pendant 7 jours. Après cette période, les paiements seront prélevés automatiquement au prix de 1.09€ pour 7 jours supplémentaires. Vous pouvez annuler l'abonnement à tout moment."
 SUBSCRIPTION_CANCEL_TIP2,"Essai gratuit pendant 7 jours. Après cette période, les paiements seront prélevés automatiquement au prix de 4.49€ pour 7 jours supplémentaires. Vous pouvez annuler l'abonnement à tout moment."
 SUBSCRIPTION_CANCEL_TIP3,"Essai gratuit pendant 7 jours. Après cette période, les paiements seront prélevés automatiquement au prix de 10.99€ pour 7 jours supplémentaires. Vous pouvez annuler l'abonnement à tout moment."
-ACTIVITY_BEACH_ONE_TIPS,Vous pouvez infliger plus de dégâts en reliant plus de pieuvre de la même sorte ! Êtes-vous certain de vouloir continuer ?
-ACTIVITY_BEACH_OVERKILL_TIPS,Tripler vos dégâts pour cette attaque n'est pas nécessaire pour vaincre l'ennemi ! Êtes-vous certain de vouloir continuer ?
+ACTIVITY_BEACH_ONE_TIPS,Vous pouvez infliger plus de dégâts en reliant plus de pieuvre de la même sorte ! Êtes-vous sûr de vouloir continuer ?
+ACTIVITY_BEACH_OVERKILL_TIPS,Tripler vos dégâts pour cette attaque n'est pas nécessaire pour vaincre l'ennemi ! Êtes-vous sûr de vouloir continuer ?
 DUNGEON_BUSSINESS_MAN_TEXT1,"Hé ! C'est vous Senpai ? C'est rare de vous voir, je vais vous faire une promotion alors !"
 DUNGEON_BUSSINESS_MAN_TEXT2,Oh ! Senpai c'est vous ! Regardez mes marchandises y'a des trucs sympas !
 DUNGEON_BUSSINESS_MAN_TEXT3,"Le trésor en dessous de mes pieds est intéresssant n'est-ce pas ? Si vous le voulez, va falloir payer Senpai !"
@@ -1853,7 +1853,7 @@ TOWER_PRACTICE_WIN_TIPS,Formation Actuelle
 HERO_CHALLENGE_TITLE,Défi du Personnage
 HERO_CHALLENGE_TIPS1,Réinitialisation non nécessaire
 HERO_CHALLENGE_TIPS2,"Coupon de Défi insuffisant, vous avez besoin de {1} Coupons de Défi"
-HERO_CHALLENGE_TIPS3,"Êtes-vous certain de vouloir réinitialiser le défi de ce personnage ? (Vous perdrez les Filles, les Bénédictions et les Serviteurs obtenus dans ce défi)"
+HERO_CHALLENGE_TIPS3,"Êtes-vous sûr de vouloir réinitialiser le défi de ce personnage ? (Vous perdrez les Filles, les Bénédictions et les Serviteurs obtenus dans ce défi)"
 HERO_CHALLENGE_TEAM_TITLE,Voir
 HERO_CHALLENGE_TIPS4,Choisissez une des récompenses
 HERO_CHALLENGE_TIPS5,Vous avez obtenu la bénédiction {1} pendant ce défi
@@ -1910,7 +1910,7 @@ BACKGROUND_NAV_TEXT1,Image de fond
 BACKGROUND_NAV_TEXT2,Galerie
 BACKGROUND_GALLERY_TITLE,Vos Images：
 BACKGROUND_HELP,"1. Les images de la Galerie peuvent être utilisées comme image de téléchargement de la Bataille.|2. Durant chaque téléchargement, le système choisira aléatoirement une des images comme image de téléchargement.|3. Il y a des images ayant des effets spéciaux, il y en aura de plus en plus dans le futur.|4. Les effets spéciaux peuvent également être affichés s’il s’agit de l’image de téléchargement de la bataille."
-BACKGROUND_CONFIRM,Êtes-vous certain de vouloir acheter ce fond ?
+BACKGROUND_CONFIRM,Êtes-vous sûr de vouloir acheter ce fond ?
 MUSIC_GAME_TEXT1,Score：{1}
 MUSIC_GAME_TEXT2,Rang：{1}
 MUSIC_GAME_TEXT3,Score
@@ -1924,7 +1924,7 @@ MUSIC_GAME_TEXT10,Terminer
 RETURN,Retour
 PERSON_SIGNATURE_TEXT_1,Touchez pour entrer vos informations
 PERSON_SIGNATURE_TEXT_2,La signature ne peut pas dépasser 100 caractères ni dépasser 3 lignes
-PERSON_SIGNATURE_TEXT_3,Êtes-vous certain de vouloir signaler cette Signature ?
+PERSON_SIGNATURE_TEXT_3,Êtes-vous sûr de vouloir signaler cette Signature ?
 GUILD_APPLY_DETAIL_WINDOW,Information de la Guilde
 GUILD_APPLY,Postuler
 STAGE_OUTPUT_ADDITION_VIP,(VIP +{1}%%)
@@ -1944,7 +1944,7 @@ LOGIN_HANGUP_TEXT07,{1} M {2} S
 LOGIN_HANGUP_TEXT08,{1} s
 AWARD3,Récompenses
 MUSIC_GAME_AWARD_1,Seul votre plus haut classement en mode Difficile sera comptabilisé.
-ENEMY_TEAM_INFO_WINDOW,Ennemi
+ENEMY_TEAM_INFO_WINDOW,Ennemis
 ACTIVITY_MUSIC_JIGSAW_TEXT01,Débloquer le Puzzle
 ACTIVITY_MUSIC_JIGSAW_TITLE,Puzzle
 ACTIVITY_MUSIC_JIGSAW_HELP,"1. Le puzzle a 20 pièces, après les avoir toutes débloquées vous pourrez obtenir le Skin de Nani - Concert de Rock. Le Skin sera envoyé par courrier.|2. Vous débloquerez un chapitre supplémentaire dans le scénario de l’événement après avoir complété le puzzle, ne le manquez pas !|3. Chaque pièce du puzzle peut être débloquée grâce à une mission. Lors de ces missions vous devrez atteindre certaines difficultés de chansons particulières.|4. Complétez chaque mission pour obtenir des récompenses.|5. Certaines missions seront limitées dans le temps, vous devrez attendre qu’elles soient disponibles."
@@ -1998,7 +1998,7 @@ IMG_GUIDE_MUSIC_GAME_8,Ligne
 IMG_GUIDE_MUSIC_GAME_9,"[c][cc0011]Touchez et maintenez[-][/c] lorsque la première note descend, [c][cc0011]relâchez[-][/c] quand la deuxième note descend."
 IMG_GUIDE_MUSIC_GAME_10,Combo
 IMG_GUIDE_MUSIC_GAME_11,"Lorsque la note atteint la ligne du bas, vous devez [c][cc0011]tapez rapidement plusieurs fois[-][/c] pour obtenir plus de points."
-CONCERT_CONFIRM,Êtes-vous certain de vouloir utiliser [c][d48a9d]{1}*{2}[-][/c] ?
+CONCERT_CONFIRM,Êtes-vous sûr de vouloir utiliser [c][d48a9d]{1}*{2}[-][/c] ?
 COPY_SELF_ID_SUCCESSFUL,Copié
 BOOK_RESEARCH_TEXT01,Meilleur Score
 BOOK_RESEARCH_TEXT02,Score Total
@@ -2086,7 +2086,7 @@ IMG_GUIDE_JUMP_GAME_9,En marchant dessus Valeera [c][cc0011]rebondira[-][/c]
 IMG_GUIDE_JUMP_GAME_10,Force Valeera à se déplacer vers la gauche ou la droite
 ARENA_ALL_SERVER_ROUND_TEXT_0,Élimination
 ARENA_ALL_SERVER_TEXT_28,Défense
-ARENA_ALL_SERVER_TEXT_29,Êtes-vous certain de vouloir parier [c][d48a9d]{1} Pièces[-][/c] sur ce joueur ?
+ARENA_ALL_SERVER_TEXT_29,Êtes-vous sûr de vouloir parier [c][d48a9d]{1} Pièces[-][/c] sur ce joueur ?
 ARENA_ALL_SERVER_TEXT_30,Vous ne pouvez parier sur vous même qu'en Finale !
 DEFFORMATION_2,Défense
 JUMP_GAME_TARGET_EXTRA_POINT,Points requis：{1}
@@ -2099,7 +2099,7 @@ ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
 VOW_SWAP_TIPS,"Vous avez un Serment avec la Fille que vous allez utiliser, si vous continuez la Fille sera utilisée, mais vous ne récupérerez pas la Bague de Serment, voulez-vous continuer ?"
 CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir 1 Lanterne après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 5 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 1 Lanterne après avoir fini un Job de 4 étoiles (ou +).|——Vous pouvez obtenir 1 Lanterne après avoir combattu 5 fois dans l'Arène|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, 1 Lanterne pour 15K et distribuées par courrier."
 CANDY_COLLECT_TEXT_1,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
-CANDY_COLLECT_TEXT_2,Etes-vous certain de vouloir échanger ?
+CANDY_COLLECT_TEXT_2,Êtes-vous sûr de vouloir échanger ?
 CANDY_COLLECT_TEXT_3,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
 CANDY_COLLECT_TEXT_4,1. Obtenir par Pack de Valeur. |2. Obtenir par Pack Surprise. |3. Obtenir dans la tâche de Turin.
 QUESTIONNAIRE_FINISHED,Vous avez complété le questionnaire
@@ -2140,7 +2140,7 @@ INVITE_TIPS,[c][5e6996]Recommande：[-][/c][c][d78400]{1}[-][/c]
 TIP_STRONG,Puissante
 TIP_ACTIVE,Actif
 TIP_FORMATION,Flexible
-FRIEND_TEAM_BOSS_BUY_TIPS,Êtes-vous certain de vouloir dépenser 1000k Pièces pour acheter une tentative de défi ?
+FRIEND_TEAM_BOSS_BUY_TIPS,Êtes-vous sûr de vouloir dépenser 1000k Pièces pour acheter une tentative de défi ?
 FRIEND_TEAM_BOSS_ATTACK_LIMIT,Tentative de Défi Insuffisante
 LEFT_TIMES,Chance(s)：{1}
 FRIEND_TEAM_BOSS_BUY_LIMIT,Vous pouvez acheter une Tentative de défi supplémentaire à chaque tour.
@@ -2189,7 +2189,7 @@ FRIEND_TEAM_BOSS_JOIN_LIMIT3,Votre équipe est complète
 FRIEND_TEAM_BOSS_NO_APPLY,Personne n'a postulé pour le moment...
 FRIEND_TEAM_BOSS_NO_INVATE,Aucune invitation...
 FRIEND_TEAM_BOSS_NO_TEAM,Aucune équipe actuellement...
-FRIEND_TEAM_BOSS_QUIT,Êtes-vous certain de vouloir quitter cette équipe ? (Vous ne pouvez que rejoindre 3 équipes par semaine)
+FRIEND_TEAM_BOSS_QUIT,Êtes-vous sûr de vouloir quitter cette équipe ? (Vous ne pouvez que rejoindre 3 équipes par semaine)
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_1,Restant
 FRIEND_TEAM_BOSS_COUNT_DOWN_DESC_2,Restant
 FRIEND_TEAM_BOSS_CANNOT_BUY_TIMES,Vous ne pouvez pas l'acheter pendant la période de repos
@@ -2242,7 +2242,7 @@ HOUSE_TEXT_29,Vous avez atteint la limite pour ce type de meuble
 HOUSE_TEXT_30,Meuble insuffisant
 HOUSE_TEXT_31,Vous devez tout d'abord terminer l'action du meuble en cours
 HOUSE_TEXT_32,Voulez-vous sauvegarder ce placement ?
-HOUSE_TEXT_33,Êtes-vous certain de vouloir annuler le placement actuel ?
+HOUSE_TEXT_33,Êtes-vous sûr de vouloir annuler le placement actuel ?
 HOUSE_TEXT_34,La Fille ne peut actuellement pas entrer dans le Dortoir
 ACADEMY_ASSESSMENT_MISC,Devenez\nplus puissant
 SCHOOL_PRACTICE_TITLE_01,Maison Fantôme
@@ -2254,7 +2254,7 @@ SCHOOL_PRACTICE_TITLE_06,Maison Ange
 SCHOOL_PRACTICE_TEXT_01,"Si tu les a trouvé, tu as\npresque réussi !"
 SCHOOL_PRACTICE_TEXT_02,Battez-vous comme de vrais guerriers !
 SCHOOL_PRACTICE_TEXT_03,Attention ! Ces élèves\nont des monstres à\nl'intérieur d'eux !
-SCHOOL_PRACTICE_TEXT_04,Etes-vous prêts à\naccepter le défi\ndes fées ?
+SCHOOL_PRACTICE_TEXT_04,Êtes-vous prêts à\naccepter le défi\ndes fées ?
 SCHOOL_PRACTICE_TEXT_05,Alerte !\nDanger imminent !
 SCHOOL_PRACTICE_TEXT_06,La Lumière Divine n'est pas juste pour soigner\nmais sert aussi d'arme !
 ACADEMY_ASSESSMENT_TEXT01,Attrape-moi si tu peux !
@@ -2298,8 +2298,8 @@ LIBRARY_WATCHER2_HELP,"1. Il y a en tout 3 chapitres, chaque chapitre comporte 1
 POTENTIALITY_LOCK,Débloqué à\nLibération {1}
 POTENTIALITY_UNLOCK_TEXT1,Débloqué à\nLibération {1}
 SCHOOL_PRACTICE_NOT_OPEN_YET,Contenu à venir
-HOUSE_TEXT_35,Etes-vous certain de vouloir supprimer l'ensemble {1} ?
-HOUSE_TEXT_36,Etes-vous certain de vouloir utiliser l'ensemble {1} ?
+HOUSE_TEXT_35,Êtes-vous sûr de vouloir supprimer l'ensemble {1} ?
+HOUSE_TEXT_36,Êtes-vous sûr de vouloir utiliser l'ensemble {1} ?
 HOUSE_TEXT_37,Voulez-vous utiliser l'Ensemble de Meubles actuel ?
 HOUSE_TEXT_38,"
 1. Touchez le bouton Repos pour installer vos Filles dans le Dortoir.
@@ -2420,7 +2420,7 @@ PARTNER_STATION_APPEAR_TOWER,Test：
 PARTNER_STATION_APPEAR_ARENA,Arène：
 PARTNER_STATION_APPEAR_GUILD_BOSS,BOSS (Guilde)：
 PARTNER_STATION_FORMATION_TITLE,Composition
-PARTNER_FORMATION_STAKE,Test des dégâts
+PARTNER_FORMATION_STAKE,Dégâts
 PARTNER_FORMATION_TOWER,Test
 PARTNER_FORMATION_GUILD,BOSS (Guilde)
 PARTNER_FORMATION_JJC,Arène
@@ -2479,7 +2479,7 @@ GUILD_BOSS_DIALOG,"Je suis le Chaos, tous les mortels doivent s'agenouiller deva
 GUILD_BOSS_TEXT01,Chance(s) restante(s) : {1}
 GUILD_BOSS_TEXT02,Chance insuffisante !
 GUILD_FINAL_BOSS_WINDOW_HELP,"1. Chaque membre peut défier le Boss de Guilde deux fois par jour. Vous obtiendrez les récompenses à la fin de chaque bataille. Plus vous infligez de dégâts, plus vos récompenses seront importantes.|2. Le total des dégâts causé par les membres de la Guilde sera réinitialisé tous les vendredis à 00h00 de 01h00(UTC/GMT +1), les récompenses au classement des dégâts seront envoyées par courrier.|3. Les dégâts causés par les Serviteurs ne sont pas pris en compte. |4. Vous n'obtiendrez que les récompenses du classement de votre Guilde actuelle. |5. Après avoir quitté votre Guilde, vous ne pourrez plus défier le Boss de Guilde pendant un délai d'1 jour."
-GUILD_BOSS_TEXT03,Calcul hebdomaire des Récompenses：
+GUILD_BOSS_TEXT03,Calcul hebdomaire des récompenses：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Niveau {1}
 SUMMON_CONFIRM,"Utiliser {2} Gemmes pour tirer {1} fois les Capsules, voulez-vous continuer ?"
 TURING_TASK_LIMIT,Limite
@@ -2608,7 +2608,7 @@ SUMMON_DROP_NAV1,Capsule d'Amitié
 SUMMON_DROP_NAV2,Capsule Normale
 MAKE_COFFEE_TEXT17,Vous avez terminé toutes les commandes
 MAKE_COFFEE_TEXT18,Commencer
-ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 10 Pièces à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Pierres de la Maison correspondante.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 8%% de chance d'obtenir des récompenses doublées et des Pierres de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Pierres de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 20%% de chance d'obtenir des récompenses doublées et des Pierres de la Maison correspondante, et 5%% de chance d'obtenir des récompenses triplées et des Pierres de la Maison correspondante.|4. Après avoir obtenu des Pierres de Maison, offrez-les à la Fontaine et obtenez en échange des Fragments de la Maison correspondante ou des Fragments Chanceux. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|6. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|7. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|8. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination.|9. Pour chaque Pierre de Maison offerte à la Fontaine à vœux, vous obtiendrez 4 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes (1500 Pièces à vœux au maximum), Pack de Grande Valeur, Pack de Skin, Pack Surprise de Skin, Pack Surprise et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 5k chacune. Les Pierres Fantôme, Monstre, Humain et Fée non-utilisées seront automatiquement converties en Pièce d'Or, 45k chacune. Les Pierres Ange et Démon non-utilisées seront automatiquement converties en Pièce d'Or, 50k chacune."
+ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 1 Pièce à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Fragments de la Maison et vous aurez également une certaine chance d'obtenir des Fragments Chanceux.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 13%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 30%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 10%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante.|4. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Lorsque vous faites plusieurs vœux à la fois et obtenez 200 Fragments de la Maison correspondante, alors le surplus de Pièce à vœux vous sera retourné. Cependant, en raison des récompenses doublées et triplées, si vous avez obtenu plus de 200 Fragments d'une même Maison, alors le surplus de Fragments ne vous sera pas retourné.|6. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|7. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|8. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|9. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination, 10 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes(300 Pièces à vœux au maximum), Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack à Souhait et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
 ACTIVITY_PRAY_GROUP1,Maison Fantôme
 ACTIVITY_PRAY_GROUP2,Maison Humain
 ACTIVITY_PRAY_GROUP3,Maison Monstre
@@ -2852,7 +2852,7 @@ NO_RANK,Aucun joueur
 ACTIVITY_SPORTS_TEXT03,Aucune quête
 BATTLE_PASS_BUY_LEV_TIP,Augmenter le niveau {1} à [c][0xd76500 size=34]{2}[-][/c]
 BATTLE_PASS_SHOP_LIMIT,Limite d'Achat : {1}/{2}
-BATTLE_PASS_MAIN_HELP,"1. La Classe Éco est gratuitement débloquée, vous pouvez vous faire surclasser en Classe Premium et en 1ère Classe pour récupérer les récompenses supplémentaires! Vous pouvez immédiatement récupérer les récompenses précédentes après avoir vous être fait surclasser en Classe Premium et en 1ère Classe.| 2. Après avois pris un billet en 1ère Classe, vous pouvez obtenir le cadre d'avatar exclusif et passer au niveau 10; Après avoir pris un billet en Classe Premium, vous pouvez toujours vous faire surclasser en 1ère classe en prenant en compte la différence de prix.| 3. Vous pouvez passer de niveau grâce aux moyens suivants: quête journalière, quête hebdomadaire, quête supplémentaire| 4. Certains objets de la période précédente seront conservés lorsque le Bureau d'Échange Prémium se réinitialise. Veuillez les échanger dans le temps imparti. |5. Il y aura des objets échangeables différents après la réinitialisation du Bureau d'échange de Vis. Les Vis disparaîtront à la fin de chaque période du Festival à Vapeur. Veuillez les échanger dans le temps imparti."
+BATTLE_PASS_MAIN_HELP,"1. La Classe Éco est gratuitement débloquée, vous pouvez vous faire surclasser en Classe Premium et en 1ère Classe pour récupérer les récompenses supplémentaires! Vous pouvez immédiatement récupérer les récompenses précédentes après avoir vous être fait surclasser en Classe Premium et en 1ère Classe.| 2. Après avois pris un billet en 1ère Classe, vous pouvez obtenir le Cadre d'Avatar exclusif et passer au niveau 10; Après avoir pris un billet en Classe Premium, vous pouvez toujours vous faire surclasser en 1ère classe en prenant en compte la différence de prix.| 3. Vous pouvez passer de niveau grâce aux moyens suivants: quête journalière, quête hebdomadaire, quête supplémentaire| 4. Certains objets de la période précédente seront conservés lorsque le Bureau d'Échange Prémium se réinitialise. Veuillez les échanger dans le temps imparti. |5. Il y aura des objets échangeables différents après la réinitialisation du Bureau d'échange de Vis. Les Vis disparaîtront à la fin de chaque période du Festival à Vapeur. Veuillez les échanger dans le temps imparti."
 BATTLE_PASS_SEASON_NUMBER,5e Période
 BATTLE_PASS_SUB_LOGO,Collecter les engrenages
 BATTLE_PASS_PUR_BUTTON_1,Se faire\nsurclasser
@@ -2866,7 +2866,7 @@ BATTLE_PASS_MISSION_REFRESH_TIME,Rafraîchir：
 BATTLE_PASS_UPGRADE_BUTTON,Surclassement
 BATTLE_PASS_PURCHASE_WINDOW_TIP,"
 1. Le billet en Classe Premium permet de débloquer les récompenses supplémentaires en fonction du Niveau de Vapeur; 
-2. Le cadre d\'avatar et les engrenages peuvent être acquis dès l\'acquisition d\'un billet Première Classe, le reste des récompenses supplémentaires sont déblocables en fonction du Niveau de Vapeur; 
+2. Le Cadre d\'Avatar et les engrenages peuvent être acquis dès l\'acquisition d\'un billet Première Classe, le reste des récompenses supplémentaires sont déblocables en fonction du Niveau de Vapeur; 
 3.Les récompenses supplémentaires ne sont obtenables qu\'une seule fois; 
 4.Après vous être fait surclasser en Classe Premium, vous pouvez quand même vous faire surclasser en Première Classe mais le prix total sera différent. Vous pouvez sélectionner le bouton ""?"" pour plus de détails."
 BATTLE_PASS_BUY_LEV_WINDOW_HELP,"1. Vous pouvez améliorer le niveau en utilisant des Gemmes|2. Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer votre niveau de vapeur jusqu'au niveau 50 au maximum|3. Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration de niveau 2 semaines avant la fin du Festival à Vapeur."
@@ -3155,7 +3155,7 @@ ACTIVITY_SCHOOL_EXPLORE_BTN_1,Partir
 ACTIVITY_SCHOOL_EXPLORE_BTN_2,Explorer
 ACTIVITY_SCHOOL_EXPLORE_BTN_3,Terminé
 ACTIVITY_SCHOOL_EXPLORE_SELECT_POINT_TIP,Choisir l'endroit à explorer
-ACTIVITY_SCHOOL_EXPLORE_FIGHT_TIPS,"Pendant l'Exploration, choisissez bien les Filles et les serviteurs car une fois l'Exploration lancée l'équipe ne peut plus être changée."
+ACTIVITY_SCHOOL_EXPLORE_FIGHT_TIPS,"Pendant l'Exploration, choisissez bien les Filles et les Serviteurs car une fois l'Exploration lancée l'équipe ne peut plus être changée."
 ACTIVITY_SCHOOL_EXPLORE_GOT_ITEM_UNLOCK,Obtenez「 {1}」 pour déverrouiller
 ACTIVITY_SCHOOL_EXPLORE_TIP_DES_1,Durée
 ACTIVITY_SCHOOL_EXPLORE_TIP_DES_2,Normal
@@ -3250,10 +3250,10 @@ ACT_RETURN_MISSION_BTN,Retour à l'Académie Yume
 ACT_RETURN_GIFT_BTN,Packs de Boîte
 ACT_RETURN_COMMEND_BTN,Amis & Guildes\nrecommandés
 ACT_RETURN_CARD_BTN,Rabais sur Carte Mensuelle
-ACTIVITY_ICE_SECRET_AWARDS_CD,Rafraîchit
+ACTIVITY_ICE_SECRET_AWARDS_CD,Rafraîchit dans
 ACTIVITY_ICE_SECRET_MISSION_DAILY,Journalière
 ACTIVITY_ICE_SECRET_MISSION_WEEKLY,Hebdo.
-ACTIVITY_ICE_SECRET_MISSION_CD,Rafraîchit
+ACTIVITY_ICE_SECRET_MISSION_CD,Rafraîchit dans
 ACTIVITY_ICE_SECRET_MISSION_TIP,Dernière Série de Quêtes
 ACTIVITY_ICE_SECRET_ROUNDS,Tour actuel : {1}
 ACTIVITY_ICE_SECRET_MAXAWARD_TEXT,Récompense Finale
@@ -3447,7 +3447,7 @@ FAIRY_TALE_SELECT_TITLE,Journal Quotidien
 ACTIVITY_GERMANY_GIFTBAG_TEXT,Pack de Pâques Exclusif ! \nDurant 3 jours Uniquement !
 FAIRY_TALE_CONFIRM_CHANGE_BUFF,Choisissez une bénédiction
 FAIRY_TALE_MISSION_ENPTY,Aucune Mission
-ACADEMY_ASSESSMENT_CURRENT_TEXT,Progrès Actuel : {1}/{2}
+ACADEMY_ASSESSMENT_CURRENT_TEXT,Étape Actuelle : {1}/{2}
 FAIRY_TALE_LOG,Le joueur {1} a participé au défi de la case {3} sur la carte {2} et obtenu {4} points de contribution
 FAIRY_TALE_SHOP_LEVEL_NOT_ENOUGH_1,Vaincre 1 BOSS
 FAIRY_TALE_SHOP_LEVEL_NOT_ENOUGH_2,Vaincre 5 BOSS sur les 5 cartes initiales
@@ -3467,7 +3467,7 @@ FAIRY_TALE_NO_BATTLE_REPORT,Aucun Rapport
 FAIRY_TALE_LEVEL_NOT_ENOUGH,Niveau insuffisant ! Vous ne pouvez pas choisir cette bénédiction
 FAIRY_TALE_NPC,PNJ
 FAIRY_TALE_NPC_LOCATION_RESTRICT,Emplacement insuffisant ! Le PNJ doit avoir 2 cases adjacentes vides.
-ACADEMY_ASSESSMENT_ONE_CAMP_RANK_AWARD_HELP,"1. Le joueur qui obtient les points les plus élevés à l'Examen des Maison recevra le cadre d'avatar correspondant pendant 14 jours. |2. S'il y a plusieurs joueurs obtenant le même nombre de points en 1ère place, leur position dans la liste de classement sera classée selon le temps qu'ils ont pris pour terminer l'Examen. 10 joueurs au maximum peuvent obtenir le cadre de l'examen d'une maison. |3. Les points de classement sont propres à chaque serveur !"
+ACADEMY_ASSESSMENT_ONE_CAMP_RANK_AWARD_HELP,"1. Le joueur qui obtient les points les plus élevés à l'Examen des Maison recevra le Cadre d'Avatar correspondant pendant 14 jours. |2. S'il y a plusieurs joueurs obtenant le même nombre de points en 1ère place, leur position dans la liste de classement sera classée selon le temps qu'ils ont pris pour terminer l'Examen. 10 joueurs au maximum peuvent obtenir le cadre de l'examen d'une maison. |3. Les points de classement sont propres à chaque serveur !"
 SETTLEMENT_AWARD,Total de récompenses
 TOP_SCORE,Record :
 PUT_OUT_AWARD_ACCORDING_TO_SCORE,Vous recevrez des récompenses différentes en fonction du total de vos points
@@ -3508,7 +3508,7 @@ WISH_GACHA_TEXT8,x{1}
 MONTH_CARD_VIP,+{1} VIP EXP
 MONTH_CARD_TIP_1,Obtenez {1} Gemmes immédiatement après l'achat
 MONTH_CARD_TIP_2,Recevez {1} Gemmes tous les jours pendant 30 jours
-ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Senpai, la nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et Senpai ne peut qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et Senpai obtiendra les récompenses correspondantes.|3. Chaque Examen des Maisons a 60 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et Senpai aura 10 Tickets d'Admission chaque jour. Tu peux également utiliser des Gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois. |6. Terminer un défi avec succès pour pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Senpai recevra 2 Certificats chaque jour. Lorsque Senpai terminera avec succès le défi 9/18/30 d'une Maison pour la première fois, il obtiendra 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple: une fois que Senpai a réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, il obtiendra 3 Certificats chaque jour pour les raids).|8. Senpai peut utiliser des Gemmes pour acheter des Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60. Lors de la journée d'affichage des résultats, les récompenses seront émises par courrier et les points obtenus seront réinitialisés. |11. Les Senpais avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire: un cadre d'avatar de 14 jours; s'il y a plusieurs Senpais à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 Senpais max). Les récompenses seront envoyées par courrier."
+ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Senpai, la nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et Senpai ne peut qu'utiliser des Filles de cette Maison pour participer aux défis. Pendant la journée d'affichage, aucun défi n'est possible, la progression sera réinitialisée et Senpai obtiendra les récompenses correspondantes.|3. Chaque Examen des Maisons a 60 niveaux. Les ennemis des examens changeront chaque saison. La formation des ennemis peut être aperçue via le bouton ""Détails"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un défi, et Senpai aura 10 Tickets d'Admission chaque jour. Tu peux également utiliser des Gemmes pour en acheter.|5. Chaque niveau permet d'obtenir des récompenses très importantes lorsqu'il est terminé pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois. |6. Terminer un défi avec succès pour pouvoir obtenir des récompenses de première complétion, de plus, un niveau qui a été terminé peut consommer des Certificats pour obtenir des récompenses de Raid.|7. Senpai recevra 2 Certificats chaque jour. Lorsque Senpai terminera avec succès le défi 9/18/30 d'une Maison pour la première fois, il obtiendra 1 Certificat quotidien supplémentaire pour chaque défi (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple: une fois que Senpai a réussi à terminer le 9ème niveau de n'importe quelle Maison pour la première fois, il obtiendra 3 Certificats chaque jour pour les raids).|8. Senpai peut utiliser des Gemmes pour acheter des Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quel niveau pour obtenir des points d'Examen: 1 point du niveau 1 à 20; 2 points du niveau 21 à 40; 4 points du niveau 41-60. Lors de la journée d'affichage des résultats, les récompenses seront émises par courrier et les points obtenus seront réinitialisés. |11. Les Senpais avec les points d'Examen les plus élevés dans chaque Maison recevront une récompense supplémentaire: un Cadre d'Avatar de 14 jours; s'il y a plusieurs Senpais à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 Senpais max). Les récompenses seront envoyées par courrier."
 WISH_GACHA_NUM1,100
 WISH_GACHA_NUM2,200
 WISH_GACHA_NUM3,300
@@ -3597,14 +3597,14 @@ EQUIP_LEVELUP_TEXT_4,Veuillez choisir la classe de l'ensemble.
 EQUIP_LEVELUP_TEXT_5,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_6,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_7,"Toucher le "" + "" à gauche pour choisir les matériaux"
-EQUIP_LEVELUP_TEXT_8,Nombre d'équipement Insuffisant
+EQUIP_LEVELUP_TEXT_8,Équipement Insuffisant
 EQUIP_LEVELUP_TEXT_9,Activez une des trois compétences de l'ensemble d'équipement
 EQUIP_LEVELUP_TEXT_10,Un ensemble d'équipement complet a été équippé et a activé ses compétences
 EQUIP_LEVELUP_TEXT_11,Choisir l'équipement pour améliorer
 EQUIP_LEVELUP_TITLE_1,Choisir
 EQUIP_LEVELUP_TITLE_2,Préavis
 SHOP_SKIN_TEXT09,Skin Introuvable
-EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer l'ensemble ?
+EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer la classe de l'ensemble ?
 SUIT_SKILL_DETAIL_WINDOW_TITLE,Choisir la compétence
 SUIT_SKILL_DETAIL_WINDOW_BTN,Changer
 EQUIP_LEVELUP_HELP,"1. Durant l'événement vous pouvez améliorer vos équipements oranges 4/5/6 étoiles en utilisant des Pièces d'Or et des Gemmes. Chaque amélioration est limitée à une seule fois. |2. En utilisant ""Fragments de Météorite"", vous pourrez améliorer vos ensembles d'équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre. Plus le niveau des équipements que vous souhaitez améliorer est élevé, plus vous devez utiliser de ""Fragments de Météorite"". Cette opération peut être effectuée plusieurs fois. |3.En utilisant ""Engrenage de conversion"", vous pourrez également convertir vos ensembles d'équipement d'une classe contre une autre classe.|4. Complétez les tâches de l'événement - Examen d'Admission pour obtenir ""Roulement Conique"". |5. Vous pouvez échangez des ""Roulements Coniques"" contre des ""Fragments de Météorite"", des équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre ou des ""Engrenage de conversion"" dans le Magasin. |6. Vous ne pouvez qu'améliorer/utiliser/changer les équipements se trouvrant dans votre Sac. |7. Les ""Roulements Coniques"", les ""Fragments de Météorite"" et les ""Engrenage de conversion"" obtenus seront conservés après la fin de cet événement et pourront être utilisés lors du suivant."
@@ -3814,7 +3814,7 @@ ACTIVITY_STUDY_TIPS1,Thème：
 ACTIVITY_STUDY_TIPS2,Votre niveau est proche du sien：
 ACTIVITY_STUDY_TIPS3,Chance(s) Restante(s)：
 ACTIVITY_STUDY_TIPS4,Obtenez des récompenses\npour chaque ligne ou colonne complétée
-ACTIVITY_STUDY_HELP,"Bienvenue à l’Évaluation de Yume ! Cet événement est organisé tour à tour par les différentes Maisons du campus.| 1. Appuyez sur les cases de question pour participer. Vous recevrez des récompenses en complétant une ligne ou une colonne entière.| 2. Si vous trouvez une question trop difficile, vous pouvez la réinitialiser. Cependant, chaque case de question ne peut être réinitialisée qu'une seule fois.| 3. Vous avez besoin d'une chance pour retourner la case de question/réinitialiser la question/répondre à la question à nouveau.| 4. Durant les 7 jours de l'événement, vous récupérerez jusqu'à la limite de 4 chances au maximum par jour à 00:00 (GMT 0) chaque jour afin de participer à l'évaluation.| 5. Après avoir terminé toutes les cases de question, vous débloquerez la récompense finale. N’oubliez pas de la récupérer !| 6. Vous pouvez également copier la question et obtenir rapidement de l’aide de la part des autres joueurs sur Facebook/Discord."
+ACTIVITY_STUDY_HELP,"Bienvenue à l’Évaluation de Yume ! Cet événement est organisé tour à tour par les différentes Maisons du campus.|1. Appuyez sur les cases de question pour participer. Vous recevrez des récompenses en complétant une ligne ou une colonne entière.|2. Si vous trouvez une question trop difficile, vous pouvez la réinitialiser. Cependant, chaque case de question ne peut être réinitialisée qu'une seule fois.|3. Vous avez besoin d'une chance pour retourner la case de question/réinitialiser la question/répondre à la question à nouveau.|4. Durant les 7 jours de l'événement, vous récupérerez jusqu'à la limite de 4 chances au maximum par jour à 00:00 (GMT 0) chaque jour afin de participer à l'évaluation.|5. Après avoir terminé toutes les cases de question, vous débloquerez la récompense finale. N’oubliez pas de la récupérer !|6. Vous pouvez également copier la question et obtenir rapidement de l’aide de la part des autres joueurs sur Facebook/Discord."
 ALTAR_AUTO_TEXT06,"Vous êtes sûr de transférer Fille(s) 1 étoile*{1}, Fille(s) 2 étoiles*{2} et Fille(s) 3 étoiles*{3} ?"
 ALTAR_AUTO_TEXT07,Transférer toutes les Filles 1 et 2 étoiles
 ALTAR_AUTO_TEXT08,Transférer toutes les Filles 3 étoiles
@@ -3824,8 +3824,8 @@ EX_SKILL_GRADE_UP_FULL,Niv. MAX !
 EX_SKILL_GRADE_UP_SUCCESS,Compétence d'Élite Améliorée !
 NO_EX_SKILL_RESET,Aucune Compétence d'Élite réinitialisable !
 EX_SKILL_RESET_SUCCESS,Réinitialisé !
-ACTIVITY_STUDY_NO_ENERGY1,"Vos opportunités de répondre aux questions aujourd'hui sont épuisées, veuillez réessayer demain !"
-ACTIVITY_STUDY_NO_ENERGY2,Les opportunités de réponse pour cet événement ont toutes été utiliséées ! Retentez votre chance la prochaine fois !
+ACTIVITY_STUDY_NO_ENERGY1,"Vos Chances de répondre aux questions aujourd'hui sont épuisées, veuillez réessayer demain !"
+ACTIVITY_STUDY_NO_ENERGY2,Les chances de réponse pour cet événement ont toutes été utilisées ! Retentez votre chance la prochaine fois !
 ACTIVITY_STUDY_RESET,Chaque case ne peut être réinitialiser qu'une seule fois. Êtes-vous sûr de vouloir réinitialiser ?
 ACTIVITY_STUDY_NO_ANWER,Veuillez choisir une réponse !
 ACTIVITY_STUDY_COPY,Copié！
@@ -3857,8 +3857,8 @@ OLD_SCHOLL_BUFF_NAME1,Bonus Primaire
 OLD_SCHOLL_BUFF_NAME2,Bonus Intermédiaire
 OLD_SCHOOL_FIGHT_NAME,Étage {1} Défi {2}
 OLD_SCHOOL_HELP1,"Règles de l'événement|1. Durée de l'événement : 14 jours - Période de défi (13 jours) et Journée d'affichage (1 jour). |2. Le bâtiment du Vieux Campus possède 10 étages. Chaque étage peut proposer 3 Défis au maximum. Passer un Défi de l'étage actuel permet de déverrouiller l'étage suivant. ||Défi|1. Avant de lancer un Défi, choisissez votre équipe pour tous les Défis de cet Étage.|2. Vous pouvez choisir toutes sortes de Bonus pour renforcer les ennemis. Chaque type de Bonus donne un nombre de Scores différents après votre victoire.|3. Score Basique de Défi Actuel： Après avoir terminé un Défi avec l'équipe que vous avez enregistrée, le Score obtenu sera considéré comme votre Score Basique de Défi Actuel. Ce Score changera si vous ajustez votre équipe pour ce Défi.|4. Meilleur Score d'Étage： La somme des meilleurs Scores Basiques des Défis Actuels. Ne changera pas même après avoir ajusté votre équipe dans un des Défis.|5. Score total： La somme des meilleurs Scores de chaque étage.||Récompense Saisonnière|1. Récompense d’Étage： passez les Défis de cet Étage sans ajuster votre équipe pour obtenir les récompenses correspondantes (récupérables manuellement).|2. Récompenses de Score total： en atteignant certains paliers de Score, vous obtiendrez des récompenses de palier (récupérables manuellement)|3. Récompenses de Classement： les joueurs sont classés selon leur Score total par Zone inter-serveurs. (Dans le cas de Scores identiques, le joueur qui atteint le Score le premier sera considéré comme premier). Les récompenses de Classement vous seront envoyées par courrier à la fin de chaque saison. Les joueurs n’ayant aucun Score ne recevront rien.|4. Récompenses de Boutique： la Boutique Saisonnière sera déverrouillée après avoir atteint un certain Score; la Boutique Permanente sera déverrouillée après avoir atteint un certain Score au fil des saisons. Dans ces Boutiques, vous pouvez acheter des Documents Préparatoires et des Documents Préparatoires Avancés pour améliorer les Compétences d'Élites de vos Filles."
-OLD_SCHOOL_HELP2,"1. À la fin de la Période de Défi de chaque saison de l'Exploration du Vieux Campus, les récompenses de classement seront envoyées et les dix meilleurs joueurs recevront un cadre d'avatar de 14 jours. |2. Classement des points par inter-serveurs."
-ACTIVITY_STUDY_NEED_ENERGY3,Utiliser 1 chance pour choisir une autre réponse ?
+OLD_SCHOOL_HELP2,"1. À la fin de la Période de Défi de chaque saison de l'Exploration du Vieux Campus, les récompenses de classement seront envoyées et les dix meilleurs joueurs recevront un Cadre d'Avatar de 14 jours. |2. Classement des points par inter-serveurs."
+ACTIVITY_STUDY_NEED_ENERGY3,Voulez-vous utiliser 1 Chance pour choisir une autre réponse ?
 OLD_SCHOOL_SHOP_TEXT1,Saisonnière
 OLD_SCHOOL_SHOP_TEXT2,Permanente
 OLD_SCHOOL_SHOP_TEXT3,Débloqué après avoir obtenu {1} Scores au total
@@ -4071,7 +4071,7 @@ ACTIVITY_NEW_SHIMO_MASK_TEXT02,Évolution 2
 ACTIVITY_NEW_SHIMO_MASK_TEXT03,Évolution 3
 ACTIVITY_NEW_SHIMO_MASK_TEXT04,Évolution 4
 ACTIVITY_NEW_SHIMO_MASK_HELP,1. Vous pouvez terminer les tâches afin d'améliorer Takoïzu.|2. Les récompenses vous seront envoyées par courrier après avoir terminé les tâches correspondantes.
-ACTIVITY_NEW_SHIMO_MASK_TEXT05,Terminez les tâches pour améliorer votre serviteur Takoïzu ! Les récompenses seront envoyées par courrier !
+ACTIVITY_NEW_SHIMO_MASK_TEXT05,Terminez les tâches pour améliorer votre Serviteur Takoïzu ! Les récompenses seront envoyées par courrier !
 ACTIVITY_NEW_SHIMO_MASK_TEXT06,{1}/{2}
 FUNC_OPEN_STAGE,Passez Étape {1} pour déverrouiller
 ACTIVITY_VALENTINE_PHOTO_CLOSE,Appuyez sur l'espace à l'extérieur de l'album pour le fermer
@@ -4142,19 +4142,24 @@ BP_EXP_CURRENT,Nombre de Page
 BP_LEV,Niveau
 BP_BRASS_AWARD,Livre Ordinaire
 BP_SILVER_AWARD,Livre Rare
-BP_MISSION_DES,Terminez les Quêtes et collectez des Pages.\nLes Quêtes supp. seront actualisées au niveau spécifié et ne pourront pas être effectuées de manière répétée.\nLes progrès réalisés avant l'apparition des Quêtes supplémentaires seront conservés.
+BP_MISSION_DES,"
+Terminez les Quêtes et collectez des Pages.
+
+Les Quêtes supp. seront actualisées au niveau spécifié et ne pourront pas être effectuées de manière répétée.
+
+Les progrès réalisés avant l\'apparition des Quêtes supp. seront conservés."
 BP_MISSION_REFRESH_TIME,Rafraîchir：
 BP_UPGRADE_BUTTON,Se faire surclasser
 BP_PURCHASE_WINDOW_TIP,"
 1. Une fois le Livre Rare débloqué, vous obtiendrez des récompenses supplémentaires au fil des niveaux. Après avoir terminé toutes les tâches, vous pouvez améliorer le niveau de votre manuel avec des Gemmes. Toutes les récompenses pourront être collectées après que votre Livre ait atteint le niveau 50.
-2. Le cadre d\'avatar peut être acquis dès l\'achat du Livre Collector, le reste des récompenses supplémentaires seront déblocables en fonction du Niveau de votre Livre.
+2. Le Cadre d\'Avatar peut être acquis dès l\'achat du Livre Collector, le reste des récompenses supplémentaires seront déblocables en fonction du Niveau de votre Livre.
 3. Les récompenses supplémentaires ne sont obtenables qu\'une seule fois.
 4. Après avoir acquis Livre Rare, vous pourrez toujours acquérir Livre Collector, néanmoins le prix total différera. Vous pouvez cliquer sur le bouton ""?"" pour plus de détails."
 BP_BUY_LEV_WINDOW_HELP,"1.Vous pouvez améliorer le niveau en utilisant des Gemmes|2.Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer le niveau de votre Livre jusqu'au niveau 50 au maximum|3.Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration du niveau des Livres, 2 semaines avant la fin de la période."
 BP_BUY_LEV_PREAWARD,Récompenses
 BP_BUY_LEV_TIP2,Ce sera moins onéreux durant les deux dernières semaines !
 BP_SHOP_HELP,"1. Vous pouvez utiliser les Autocollants et les Feuilles de Cristal pour échanger des objets|2. Vous pouvez utiliser les Autocollants pour échanger des récompenses dans Page Florale.|3. Certains objets de la Bibliothèque d'Échange seront mis à jour à la période suivante. D'ici-là, les Feuilles de Cristal obtenues dans la période actuelle seront conservées.Veuillez bien choisir les objets que vous voulez échanger. |4. Les Autocollants obtenus dans la période actuelle seront décomptés à la fin de cette période, n'oubliez pas de les échanger."
-BP_ACHIEVEMENT_DES,Vous devez accomplir le\nsuccès pour obtenir les récompenses.\nCourage Senpai !
+BP_ACHIEVEMENT_DES,Accomplissez le succès pour obtenir les récompenses.\n\nCourage Senpai !
 BP_GOLD_PRICE,€ 43.99
 BP_LEV_MAX,"Niveau maximum atteint, impossible d'améliorer."
 BP_TITLE,Livre
@@ -4734,7 +4739,7 @@ ACTIVITY_BEACH_ISLAND_TEXT01,Hebdomaire
 ACTIVITY_BEACH_ISLAND_TEXT02,Rafraîchit
 ACTIVITY_BEACH_ISLAND_TEXT03,Veuillez d'abord passer l'Étape précédente
 ACTIVITY_BEACH_ISLAND_TEXT04,Étape - {1}
-ACTIVITY_BEACH_ISLAND_TEXT05,Ennemi
+ACTIVITY_BEACH_ISLAND_TEXT05,Ennemis
 ACTIVITY_BEACH_ISLAND_TEXT06,Récompenses d'Étape
 ACTIVITY_BEACH_ISLAND_TEXT07,Objectif
 ACTIVITY_BEACH_ISLAND_TEXT08,Récompenses d'Étoiles
@@ -5161,7 +5166,8 @@ L’Arène Ultime est une Arène interserveur permettant la participation à tou
 La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases : Préparation au Combat, Ruée de Point, Élimination, Finalistes et Trêve.|1. Préparation au Combat|(1) Durée : 1ère journée de chaque saison.
 (2) Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour.
 (2) Pendant cette phase, utilisez vos Tickets d\'Arène pour combattre vos adversaires. La liste de vos adversairespeut être actualisée 5 fois par jour au maximum.
-(3) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
+(3) Le nombre de Tickets d\'Arène nécessaire dans l\'Arène Ultime augmentera en fonction du nombre de combats par jour. 2 Tickets d\'Arène (du 1er au 5ème combat), 3 Tickets d\'Arène (du 6ème au 10ème combat), 4 Tickets d\'Arène (du 11ème au 15ème combat), 5 Tickets d\'Arène (à parti du 16ème combat).
+(4) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
 (2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Rang Maître passeront au Rang Grand Maître.
 (3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.|4. Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Suppléants. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
 (2) Chaque Fille peut combattre pendant 2 tours au maximum. Si elle n’est pas vaincue au bout de ces 2 tours, elle sera obligatoirement retirée du champs de bataille (considérée comme vaincue).
@@ -5275,4 +5281,53 @@ FAIR_ARENA_GET_HOE_SHOW_TIMES_NONE,Vous avez attient la limite d'achat !
 FAIR_ARENA_GET_HOE_BUY_TIPS,"Les 3 premiers achats coûtent respectivement 100, 200 et 300 Gemmes. À parti du 4ème achat, 400 Gemmes contre 1 Pioche Dorée.\nCet achat coûtera [c][2587e2]{1}[-][/c] Gemmes, confirmez-vous l'achat ?"
 PARTNER_CHALLENGE_CHESS_TEXT07,"Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'Étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.|5. Dans chacune des Étapes 4 à 10 se trouve une Mission à terminer. Terminez cette Mission en complétant la condition et en passant l’Étape.|6. Les ennemis de l'Étape 10 ont 6 Bonus. Chaque fois que vous terminerez une Mission des étapes précédentes, un Bonus sera retiré, ce qui vous aidera à passer l’Étape 10.|7. Après avoir passé l’Étape actuelle, vous pourrez redéfier l’Étape pour retenter de terminer la Mission. Cependant, si vous perdez, l’Énergie sera déduite et le Coupon de Défi sera également consommé."
 FAIR_ARENA_TIPS_REVIVE_2,"Arpès avoir acheté une Pioche Argentée, vous pourrez vous ressusciter après l'échec d'une bataille et continuer de combattre."
-PARTNER_CHALLENGE_CHESS_TEXT08,Récompense
+PARTNER_CHALLENGE_CHESS_TEXT08,Récompenses
+BP_LOTTERY_NUM,Combien de fois voulez-vous\néchanger les Autocollants ?
+PET_CORE_RESTORE_TIPS,Voulez-vous réinitialiser ce Noyau Précieux ? Une partie des ressources vous sera rendue après la réinitialisation.\n[c][CC0011](les Pièces d'Or utilisées ne seront pas rendues)[-][/c]
+PARTNER_CHALLENGE_CHESS_TEXT09,Coupon de Défi insuffisant !
+ACTIVITY_SECTRETTREASURE_TEXT01,Explorer
+ACTIVITY_SECTRETTREASURE_TEXT02,Récompenses
+ACTIVITY_SECTRETTREASURE_TEXT03,Taux d'obtention\nd'un Trésor
+ACTIVITY_SECTRETTREASURE_TEXT04,Trésors
+ACTIVITY_SECTRETTREASURE_TEXT05,Surprise Déclenchée
+ACTIVITY_SECTRETTREASURE_TEXT06,{1} tour(s) restant(s)
+ACTIVITY_SECTRETTREASURE_TEXT07,Pierre-Papier-Ciseaux
+ACTIVITY_SECTRETTREASURE_TEXT08,Continuer
+ACTIVITY_SECTRETTREASURE_TEXT09,Abandonner
+ACTIVITY_SECTRETTREASURE_TEXT10,"
+Choisissez de jouer ou non à Pierre-Papier-Ciseaux. Si vous choisissez d\'abandonner et de ne pas y jouer, obtenez alors directement une Récompense Ordinaire.
+Si vous choisissez d\'y jouer :
+Vous avez 1 chance sur 3 de gagner, et ainsi d\'obtenir une Boîte de Ressources (Boîte à choix), en plus d\'une Récompense Ordinaire.
+Vous avez 1 chance sur 3 de faire match nul et ainsi d\'obtenir une Récompense Ordinaire uniquement.
+Vous avez 1 chance sur 3 de perdre et de n\'obtenir aucune récompense."
+ACTIVITY_SECTRETTREASURE_TEXT11,Enregistrer mon choix
+ACTIVITY_SECTRETTREASURE_TEXT12,Trésors
+ACTIVITY_SECTRETTREASURE_TEXT13,Récompenses
+ACTIVITY_SECTRETTREASURE_TEXT14,Récompenses Surprises
+ACTIVITY_SECTRETTREASURE_TEXT15,Surprises
+ACTIVITY_SECTRETTREASURE_TEXT16,Effets Surprises
+ACTIVITY_PARY_ALL_AWARDS,Récompense(s) Obtenue(s)
+BATTLE_RECORD_ERROR,"Une erreur est survenue durant l'analyse de cette bataille, la vidéo est indisponible."
+ACTIVITY_SECTRETTREASURE_TEXT17,Rafraîchit dans
+ACTIVITY_SECTRETTREASURE_TEXT18,Termine dans
+ACTIVITY_SECTRETTREASURE_TEXT19,Exploration-Auto débloquée après avoir exploré {1} fois.
+ACTIVITY_SECTRETTREASURE_TEXT20,Passer l'animation après avoir exploré {1} fois.
+ACTIVITY_SECTRETTREASURE_TEXT21,Chasse aux\nTrésors
+ACTIVITY_SECTRETTREASURE_TEXT22,Vous avez gagné !
+ACTIVITY_SECTRETTREASURE_TEXT23,Vous avez fait un match nul !
+ACTIVITY_SECTRETTREASURE_TEXT24,Vous avez perdu !
+ACTIVITY_SECTRETTREASURE_TEXT25,Vous avez abandonné !
+ACTIVITY_SECTRETTREASURE_TEXT26,Effet
+ACTIVITY_SECTRETTREASURE_TEXT27,La limite d'achat de tous les Packs de cet événement sera réinitialisé lors de la deuxième semaine de l'événement. Le nombre de Pack non-acheté durant la première semaine sera ajouté à votre limite d'achat de la deuxième semaine.
+ACTIVITY_SECTRETTREASURE_TEXT28,"1. Durant cet événement, partez en exploration pour trouver les Trésors qui se cachent aux alentours ! Consommez une Boussole pour explorer. À chaque exploration, choisissez une direction qui vous mènera à une Surprise et obtenez des récompenses.|2. Moyen d'obtention des Boussoles : Courrier Quotidien, Quêtes de Chasseur en Or et Pack - Réserve de Trésors.|3. À chaque exploration, vous avez des chances de tomber sur la Surprise - Trésor Trouvé et d'obtenir des récompenses spéciales. Si vous ne tombez pas sur Trésor Trouvé, votre taux d'obtention d'un Trésor augmentera de 2%%, un Trésor Trouvé est garanti à la 20ème exploration. À chaque Trésor Trouvé, votre taux d'obtention d'un Trésor seront réinitialisé, ainsi que le décompte d'exploration.|4. Après avoir exploré un certain nombre de fois, vous aurez des chances de tomber sur la Surprise - Récompense Surprise. Lorsque cette Surprise est déclenchée, vos récompenses obtenues sont améliorées à des Récompenses Surprises pendant un nombre de tour limité. Pendant la durée de ces tours limités, vous ne pourrez tomber uniquement sur Pas de surprise ou Trésor Trouvé. Notez que tomber sur un Trésor Trouvé ne réduira pas le nombre de tour restant de Récompense Surprise.\nRécompense Surprise déclenchée après avoir consommé 20 / 140 / 230 / 340 / 450 / 570 / 600 / 750 / 1050 / 1200 Boussoles et ce, respectivement pendant 5 / 15 / 15 / 16 / 16 / 18 / 18 / 20 / 22 / 24 tours.|5. Vous pourrez passer l'animation et utiliser Exploration-Auto après avoir consommé 40 Boussoles. Cependant, si vous choisissez de passer l'animation ou d'utiliser Exploration-Auto, alors vous ne pourrez pas jouer à Pierre-Papier-Ciseaux.|6. Après la fin de l'événement, les Boussoles non-utilisées seront automatiquement converties en Pièce d'Or, 50K chacune."
+ACTIVITY_SECTRETTREASURE_TEXT29,Choisissez une direction
+ACTIVITY_SECTRETTREASURE_TEXT30,Trésors garantis après avoir exploré {1} fois
+ACTIVITY_SECTRETTREASURE_TEXT31,Passer l'animation
+DRESS_EDIT_TIPS_1,Voulez-vous enlever votre Tenue actuelle ?
+DRESS_EDIT_TIPS_2,Voulez-vous sauvegarder votre Tenue acutelle ?
+ACTIVITY_SECTRETTREASURE_TEXT32,Récompenses Ordinaires
+DRESS_EDIT_TIPS_3,Changer
+ACTIVITY_SECTRETTREASURE_TEXT33,Trésors
+ACTIVITY_SECTRETTREASURE_TEXT34,Récompenses
+ACTIVITY_SECTRETTREASURE_TEXT35,Choisir
+ACTIVITY_SECTRETTREASURE_TEXT36,Continuer

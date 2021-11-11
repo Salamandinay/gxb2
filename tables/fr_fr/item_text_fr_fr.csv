@@ -9,7 +9,7 @@ id,name,brief,desc
 8,VIP EXP,VIP EXP,
 9,Jus d'EXP,Augmente l'EXP d'une Fille,À utiliser pour augmenter le niveau d'une Fille dans l'interface des attributs
 10,Plateau Repas,Augmente le niveau max d'une Fille,À utiliser pour augmenter le niveau max d'une Fille dans l'interface des attributs
-11,Cœur,Monnaie pour acheter Capsule d'Amitié,Envoyez et réclamez aux autres joueurs de la liste d'amis. À utiliser pour recruter une Fille dans Capsule d'Amitié
+11,Cœur,Monnaie pour acheter Capsule d'Amitié,Envoyez et réclamez aux autres joueurs de la liste d'amis. À utiliser pour invoquer une Fille dans Capsule d'Amitié
 12,Points de la Capsule Œuf d'Or,Points de la Capsule Œuf d'Or,
 13,Pass,Pass pour participer au Test,À utiliser pour faire un combat dans Test
 14,Ciseau de Cristal,Matériaux,À utiliser pour améliorer un Cristal dans l'interface des équipements d'une Fille
@@ -18,7 +18,7 @@ id,name,brief,desc
 17,Coffre de l'Arène,Le coffre sera ouvert automatiquement dans les courriers,"Obtient aléatoirement des Pièces, Jus d'EXP, Plateau Repas, Equipement Légendaire, Fragment de Filles, et autres objets rare"
 18,Pain,Objet d'Endurance,À utiliser pour faire un Raid dans le Moulin de la Guilde
 19,Dossier,Matériel d'échange de Fille,À utiliser pour échanger une Fille dans le Bureau d'Admission
-20,Sceau,Objet de recrutement,À utiliser pour Recruter une Fille 4 étoiles (ou plus) ou obtenir des Fragments de Filles dans le Bureau d'Admission
+20,Sceau,Objet de recrutement,À utiliser pour recruter une Fille 4 étoiles (ou plus) ou obtenir des Fragments de Filles dans le Bureau d'Admission
 22,Coffre d'Antiquité Rouge 1 étoile,Coffre d'Antiquité,Obtenez une Antiquité Rouge 1 étoile après achat
 23,Coffre d'Antiquité Verte 1 étoile,Coffre d'Antiquité,Obtenez une Antiquité Verte 1 étoile après achat
 24,Parchemin de Jobs,Parchemin de Jobs,À utiliser pour obtenir aléatoirement 1 Job de 1 à 4 étoiles
@@ -42,7 +42,7 @@ id,name,brief,desc
 42,Chaussette de Noël,Matériel d'Evènement,Objet exclusif pouvant être utilisé pour obtenir des récompenses durant l'événement. L'objet ne peut plus être utilisé après la fin de l'événement. Utilisez-le donc durant la période de l'événement !
 43,Paquet Cadeau,Coffre de Cadeau,Une boîte mystérieuse contenant 1 Cadeau Aléatoire et des Fragments de Cadeau
 44,Fragment de Cadeau,Matériel de Cadeau,Fragments fabriqués à partir de cristaux mystérieux. Ils peuvent être obtenus dans des Paquet Cadeau et peuvent être utilisés comme des matériaux pour faire différentes sortes de cadeaux
-45,Bague de Serment,Objet de Serment,Peut être utilisé dans Rendez-vous afin de faire un serment à une Fille lorsque la Faveur d'une Fille atteint 100
+45,Bague de Serment,Objet de Serment,À utiliser dans Rendez-vous afin de faire un Serment à une Fille lorsque la Faveur d'une Fille atteint 100
 46,Feu d'Artifice du Nouvel An Chinois,Matériel d'Evenement,"Matériel Spécial, à utiliser pour obtenir des objets"
 47,Diplôme,Matériel Spécial,À utiliser pour échanger et inverser une Fille au moins 10 étoiles
 48,Ballon en Cœur,Matériaux d'Echange,"Matériel Spécial, à utiliser pour obtenir des objets"
@@ -79,197 +79,197 @@ id,name,brief,desc
 2004,Stylo,Objet,Augmente l'Attaque de 1.5%
 2005,Gomme,Objet,Augmente les Dégâts Critiques de 2%
 2006,Equerre,Objet,Augmente les Critiques de 2%
-930000,Skarivine 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930001,Cayla 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930002,Vanees 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930003,Maidam 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930004,Aegis 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930005,Handana 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930006,Lin AI 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930007,Sorcière 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930008,Stella 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930009,Elloi 5 étoiles,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930010,Veila 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930011,Yuri 1 étoile,Recruter une Fille,Collectez 5 Fragments pour recruter une Fille
-930012,Talia 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930013,Nasha 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930014,Hancer 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930015,Nono 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930016,Roselle 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930017,Hynel 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930018,Fleur 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930019,Meimi 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930020,Boro 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930021,Lana 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930022,Sasuke 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930023,Shamoke 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930024,Pyra 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930025,Octagirl 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930026,Aeris 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930027,Puny 2 étoiles,Recruter une Fille,Collectez 10 Fragments pour recruter une Fille
-930028,Poppi 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930029,Jade 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930030,Ursula 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930031,Kitty 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930032,Samurai 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930033,Tula 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930034,Edward 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930035,King 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930036,Donna 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930037,Nobuna 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930038,Annabelle 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930039,Harley 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930040,Magicien 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930041,Caitlin 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930042,Marynari 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930043,Robin 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930044,Sisha 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930045,Mythra 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930046,Athena 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930047,Kenshin 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930048,Reo 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930049,Luna 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille
-930050,Zombia 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930051,Flash 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930052,Werewolf 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930053,Nona 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930054,Assassin 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930055,Ashely 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930056,Miya 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930057,Bidenty 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930058,Boxer 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930059,Lily 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930060,Nagia 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930061,Hypatia 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930062,Nun 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930063,Diva 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930064,Liz 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930065,Anna 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930066,Oméga 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930067,Lightin 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930068,Beary 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930069,Litana 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930070,Jelly 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930071,Wandy 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930072,Elvis 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930073,Chainsaw 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930074,Toy Girl 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930075,Lisa 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930076,Androi 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930077,Calista 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930078,Sapphire 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930079,Gambler 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930080,Succuba 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930081,Dracula 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930082,Wu Kong 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930083,Fencer 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930084,Wildtress 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930085,Sakura 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930086,Giana 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930087,Ennmaya 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930088,Hottie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930089,Blowie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930090,Chevalir 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930091,Saint 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930092,Javelin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930093,Geisha 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930094,Sonya 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930095,Caitlyn 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930096,Guan Yin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930097,Libraria 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930098,Prêtresse 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930099,Alice 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930100,Nia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930101,Muppy 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930102,Nobunaga 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930103,Silvia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930104,Turin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930105,Toyo 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930106,Masamune 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930107,Hexa 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930108,Amazon 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930109,Elfe Bourgeon 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930110,Himoto 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930111,Nani 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930112,Lavia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930113,Susan 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930114,Aquaris 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930115,Kong Ming 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930116,Pandaria 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930117,Linky 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930118,Valasaki 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930119,Amelia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930120,Wraith 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930121,Angel 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930122,Gabriel 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930123,Michael 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930125,Ninja 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930126,Cynthia 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930127,Quinie 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930128,Haxie 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930129,Iron Fist 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930130,Ada 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930131,Medusa 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930132,Zoe 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930133,Zombia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930134,Flash 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930135,Miya 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930136,Bidenty 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930137,Nun 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930138,Diva 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930139,Beary 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930140,Litana 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930141,Toy Girl 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930142,Lisa 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930143,Androi 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930144,Calista 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930145,Boxer 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930146,Lily 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930147,Liz 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930148,Jelly 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930149,Wandy 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930150,Werewolf 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930151,Ashely 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930152,Nagia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930153,Oméga 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930154,Nona 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930155,Assassin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930156,Hypatia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930157,Anna 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930158,Lightin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930159,Elvis 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930160,Chainsaw 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930161,Ninja 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930162,Cynthia 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930163,Quinie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930164,Haxie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930165,Iron Fist 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930166,Ada 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930167,Medusa 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930168,Zoe 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930169,Scythe 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930170,Selene 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930171,Annie 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille
-930172,Selene 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930173,Annie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930174,Lucifer 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930175,Psychic 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930176,Phénix 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-940001,Fragment de Fille 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille 4 étoiles
-940002,Fragment de Fille 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille 5 étoiles
-940003,Fragment de Fille 3 étoiles,Recruter une Fille,Collectez 20 Fragments pour recruter une Fille 3 étoiles
-940011,Fragment de Fantôme 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Fantôme 5 étoiles
-940012,Fragment d'Humain 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Humain 5 étoiles
-940013,Fragment de Monstre 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Monstre 5 étoiles
-940014,Fragment de Fée 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Fée 5 étoiles
-940015,Fragment de Démon 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Démon 5 étoiles
-940016,Fragment d'Ange 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter une Fille Ange 5 étoiles
-940021,Fragment de Fantôme 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Fantôme 4 étoiles
-940022,Fragment d'Humain 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Humain 4 étoiles
-940023,Fragment de Monstre 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Monstre 4 étoiles
-940024,Fragment de Fée 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Fée 4 étoiles
-940025,Fragment de Démon 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Démon 4 étoiles
-940026,Fragment d'Ange 4 étoiles,Recruter une Fille,Collectez 30 Fragments pour recruter une Fille Ange 4 étoiles
+930000,Skarivine 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930001,Cayla 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930002,Vanees 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930003,Maidam 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930004,Aegis 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930005,Handana 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930006,Lin AI 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930007,Sorcière 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930008,Stella 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930009,Elloi 5 étoiles,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930010,Veila 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930011,Yuri 1 étoile,Invoquer une Fille,Collectez 5 Fragments pour invoquer une Fille
+930012,Talia 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930013,Nasha 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930014,Hancer 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930015,Nono 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930016,Roselle 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930017,Hynel 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930018,Fleur 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930019,Meimi 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930020,Boro 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930021,Lana 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930022,Sasuke 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930023,Shamoke 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930024,Pyra 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930025,Octagirl 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930026,Aeris 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930027,Puny 2 étoiles,Invoquer une Fille,Collectez 10 Fragments pour invoquer une Fille
+930028,Poppi 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930029,Jade 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930030,Ursula 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930031,Kitty 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930032,Samurai 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930033,Tula 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930034,Edward 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930035,King 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930036,Donna 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930037,Nobuna 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930038,Annabelle 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930039,Harley 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930040,Magicien 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930041,Caitlin 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930042,Marynari 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930043,Robin 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930044,Sisha 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930045,Mythra 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930046,Athena 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930047,Kenshin 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930048,Reo 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930049,Luna 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille
+930050,Zombia 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930051,Flash 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930052,Werewolf 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930053,Nona 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930054,Assassin 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930055,Ashely 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930056,Miya 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930057,Bidenty 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930058,Boxer 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930059,Lily 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930060,Nagia 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930061,Hypatia 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930062,Nun 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930063,Diva 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930064,Liz 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930065,Anna 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930066,Oméga 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930067,Lightin 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930068,Beary 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930069,Litana 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930070,Jelly 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930071,Wandy 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930072,Elvis 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930073,Chainsaw 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930074,Toy Girl 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930075,Lisa 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930076,Androi 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930077,Calista 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930078,Sapphire 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930079,Gambler 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930080,Succuba 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930081,Dracula 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930082,Wu Kong 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930083,Fencer 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930084,Wildtress 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930085,Sakura 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930086,Giana 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930087,Ennmaya 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930088,Hottie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930089,Blowie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930090,Chevalir 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930091,Saint 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930092,Javelin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930093,Geisha 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930094,Sonya 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930095,Caitlyn 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930096,Guan Yin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930097,Libraria 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930098,Prêtresse 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930099,Alice 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930100,Nia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930101,Muppy 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930102,Nobunaga 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930103,Silvia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930104,Turin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930105,Toyo 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930106,Masamune 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930107,Hexa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930108,Amazon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930109,Elfe Bourgeon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930110,Himoto 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930111,Nani 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930112,Lavia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930113,Susan 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930114,Aquaris 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930115,Kong Ming 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930116,Pandaria 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930117,Linky 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930118,Valasaki 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930119,Amelia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930120,Wraith 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930121,Angel 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930122,Gabriel 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930123,Michael 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930125,Ninja 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930126,Cynthia 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930127,Quinie 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930128,Haxie 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930129,Iron Fist 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930130,Ada 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930131,Medusa 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930132,Zoe 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930133,Zombia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930134,Flash 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930135,Miya 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930136,Bidenty 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930137,Nun 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930138,Diva 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930139,Beary 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930140,Litana 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930141,Toy Girl 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930142,Lisa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930143,Androi 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930144,Calista 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930145,Boxer 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930146,Lily 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930147,Liz 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930148,Jelly 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930149,Wandy 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930150,Werewolf 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930151,Ashely 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930152,Nagia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930153,Oméga 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930154,Nona 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930155,Assassin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930156,Hypatia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930157,Anna 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930158,Lightin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930159,Elvis 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930160,Chainsaw 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930161,Ninja 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930162,Cynthia 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930163,Quinie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930164,Haxie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930165,Iron Fist 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930166,Ada 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930167,Medusa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930168,Zoe 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930169,Scythe 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930170,Selene 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930171,Annie 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille
+930172,Selene 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930173,Annie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930174,Lucifer 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930175,Psychic 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930176,Phénix 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+940001,Fragment de Fille 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille 4 étoiles
+940002,Fragment de Fille 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille 5 étoiles
+940003,Fragment de Fille 3 étoiles,Invoquer une Fille,Collectez 20 Fragments pour invoquer une Fille 3 étoiles
+940011,Fragment de Fantôme 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Fantôme 5 étoiles
+940012,Fragment d'Humain 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Humain 5 étoiles
+940013,Fragment de Monstre 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Monstre 5 étoiles
+940014,Fragment de Fée 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Fée 5 étoiles
+940015,Fragment de Démon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Démon 5 étoiles
+940016,Fragment d'Ange 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer une Fille Ange 5 étoiles
+940021,Fragment de Fantôme 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Fantôme 4 étoiles
+940022,Fragment d'Humain 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Humain 4 étoiles
+940023,Fragment de Monstre 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Monstre 4 étoiles
+940024,Fragment de Fée 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Fée 4 étoiles
+940025,Fragment de Démon 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Démon 4 étoiles
+940026,Fragment d'Ange 4 étoiles,Invoquer une Fille,Collectez 30 Fragments pour invoquer une Fille Ange 4 étoiles
 953001,Fragment d'Antiquité Violette,Recruter Antiquité,Collectez 20 Fragments pour obtenir une Antiquité Violette
 954001,Fragment d'Antiquité Verte,Recruter Antiquité,Collectez 30 Fragments pour obtenir une Antiquité Verte
 955001,Fragment d'Antiquité Rouge,Recruter Antiquité,Collectez 50 Fragments pour obtenir une Antiquité Rouge
@@ -1447,7 +1447,7 @@ id,name,brief,desc
 27049,Voile Gracieux,Skin,Skin de Wraith - Voile Gracieux
 59,Lanterne de Fête,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 1029,Épée de Détermination,Avatar Spécial,Avatar de la Fête de l'Été
-930177,Capsula 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930177,Capsula 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 5641,Jade Dragon,,
 5642,Jade Dragon,,
 5643,Jade Dragon,,
@@ -1493,7 +1493,7 @@ id,name,brief,desc
 20001031,Feuille d'Érable,Avatar Spécial,Avatar de la Fête de la Lune
 7055,Opération Secrète,Skin,Skin de Linky - Opération Secrète
 27055,Opération Secrète,Skin,Skin de Linky - Opération Secrète
-930178,Valeera 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930178,Valeera 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 7056,Grimoire,Skin,Skin de Valeera - Grimoire
 27056,Grimoire,Skin,Skin de Valeera - Grimoire
 7057,Plume Radieuse,Skin,Skin de Phénix - Plume Radieuse
@@ -1544,7 +1544,7 @@ id,name,brief,desc
 1010017,Porte,Meuble,N'oublie pas de fermer la porte en sortant.
 1010018,Fenêtre,Meuble,"Il est nécessaire de faire aérer une pièce, sauf si tu utilises la clim'."
 69,Pièce de Meuble,Devise pour la Boutique de Meuble,À utiliser pour acheter des meubles dans la Boutique de Meuble
-930179,Turin 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930179,Turin 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 7063,Comète,Skin,Javelin Skin Comète
 27063,Comète,Skin,Javelin Skin Comète
 7064,Etoile Filante,Skin,Skin de Libraria - Etoile Filante
@@ -1611,9 +1611,9 @@ id,name,brief,desc
 27069,Chaleur Tentante,Skin,Scythe Skin Chaleur Tentante
 72,Marque d'Ange,Matériel d'Évènement,"Matériel Spécial, à utiliser pour obtenir des objets"
 73,Gravure de Rune,Matériaux,À utiliser pour échanger des Filles dans le Café
-940004,Fragment d'Élite 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour obtenir une Élite 5 étoiles autre que Ange/Démon
-940005,Fragment d'Élite Démon 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour obtenir une Démon Élite 5 étoiles
-940006,Fragment d'Élite Ange 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour obtenir une Ange Élite 5 étoiles
+940004,Fragment d'Élite 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Élite 5 étoiles autre que Ange/Démon
+940005,Fragment d'Élite Démon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Démon Élite 5 étoiles
+940006,Fragment d'Élite Ange 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Ange Élite 5 étoiles
 9105,Hexa · Choquée,Émoji de Tchat,「Choquée」 Émoji de Tchat d'Hexa
 9106,Valeera · Désagréable,Émoji de Tchat,「Désagréable」 Émoji de Tchat de Valeera
 7070,Bain Chaud,Skin,Succuba Skin Bain Chaud
@@ -1669,8 +1669,8 @@ id,name,brief,desc
 1040019,Fenêtre de\nNoël,Meuble,Il n'y a rien de l'autre côté !
 1040020,Décoration de Noël,Meuble,C'est ça ce qu'on appelle Noël !
 77,Débloquer le 4ème Cadeau,,Vous pouvez débloquer la 4e récompense de l'événement d'été en obtenant ce pack.
-930180,Fragment d'Ésaü & Jacob 5 Étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
-930181,Fragment de Isabelle 5 Étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930180,Fragment d'Ésaü & Jacob 5 Étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
+930181,Fragment de Isabelle 5 Étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 55006,Ésaü & Jacob,,
 655015,Ésaü & Jacob,,
 755005,Ésaü & Jacob,,
@@ -1713,7 +1713,7 @@ id,name,brief,desc
 1050019,Fenêtre Chinoise,Meuble,Joyeuse Fête du Printemps !
 1050020,Lanterne en Pierre,Meuble,"Ici il n'y a pas de lampadaire, le soir tu dois te diriger avec les lanternes en pierre."
 1050021,占位,Meuble,描述占位
-930182,Kira 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930182,Kira 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54011,Kira,,
 654018,Kira,,
 754011,Kira,,
@@ -1739,7 +1739,7 @@ id,name,brief,desc
 52012,Ithil,,
 652019,Ithil,,
 752012,Ithil,,
-930183,Ithil 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930183,Ithil 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 6467,Mirage d'Argent,,
 6468,Mirage d'Argent,,
 6469,Mirage d'Argent,,
@@ -1778,7 +1778,7 @@ id,name,brief,desc
 1060024,Peinture,Meuble,Elle sera vide oubliée des mémoires.
 7083,Sommelière,Skin,Skin d'Isabelle - Sommelière
 27083,Sommelière,Skin,Skin d'Isabelle - Sommelière
-930184,Papillon·Iron Fist 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930184,Papillon·Iron Fist 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 53012,Papillon·Iron Fist,,
 653019,Papillon·Iron Fist,,
 753012,Papillon·Iron Fist,,
@@ -1875,7 +1875,7 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 114,Orbe Élémentaire,Matériel d'Événement,À utiliser pour obtenir des récompenses dans Labo Alchimique de Valeera. Inéchangeable après l'événement. Utilisez-le dans le temps imparti
 115,Revenu de Pièces d'or (8h),Coffre de Monnaie,Obtenez un revenu de Pièce d'or pendant 8h.(Selon l'étape actuelle de la Campagne où vous êtes et non affecté par les bonus de VIP)\nVous obtiendrez：Pièce d'or *
 116,Revenu de Jus d'Exp (8h),Coffre de Jus d'Exp,Obtenez un revenu de Jus d'EXP pendant 8h.(Selon l'étape actuelle de la Campagne où vous êtes et non affecté par les bonus de VIP)\nVous obtiendrez：Jus d'EXP *
-930185,Fragments 5 étoiles de Fenrir,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930185,Fragments 5 étoiles de Fenrir,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 51012,Fenrir,,
 651019,Fenrir,,
 751012,Fenrir,,
@@ -1938,7 +1938,7 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 52013,Saint Majesté,,
 652020,Saint Majesté,,
 752013,Saint Majesté,,
-930186,Saint Majesté 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930186,Saint Majesté 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 7097,Promesse Violette,Skin,Skin de Capsula - Promesse Violette
 27097,Promesse Violette,Skin,Skin de Capsula - Promesse Violette
 121,Énergie Vitale,Monnaie,Utilisée pour renforcer les Âmes
@@ -2135,14 +2135,14 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 8032,Collectionneur Débutant,Cadre d'Avatar,Obtenable dans le Magasin de Collection
 8033,Collectionneur Confirmé,Cadre d'Avatar,Obtenable dans le Magasin de Collection
 8034,Collectionneur Légendaire,Cadre d'Avatar,Obtenable dans le Magasin de Collection
-20001035,Avatar de Collectionneur Débutant,Avatar Spécial,Avatar exclusif du Magasin de Collection
-20001036,Avatar de Collectionneur Confirmé,Avatar Spécial,Avatar exclusif du Magasin de Collection
-20001037,Avatar de Collectionneur Légendaire,Avatar Spécial,Avatar exclusif du Magasin de Collection
-930187,Fragments de Kratos 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+20001035,Collectionneur Débutant,Avatar Spécial,Avatar exclusif du Magasin de Collection
+20001036,Collectionneur Confirmé,Avatar Spécial,Avatar exclusif du Magasin de Collection
+20001037,Collectionneur Légendaire,Avatar Spécial,Avatar exclusif du Magasin de Collection
+930187,Fragments de Kratos 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 55007,Kratos,,
 655016,Kratos,,
 755006,Kratos,,
-930188,Fragments de Lucifael 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930188,Fragments de Lucifael 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 56006,Lucifael,,
 656016,Lucifael,,
 756006,Lucifael,,
@@ -2238,7 +2238,7 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 160,Dorayaki,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 161,Takoyaki,Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 162,Mochi,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
-930189,Chris 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930189,Chris 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54012,Chris,,
 654019,Chris,,
 754012,Chris,,
@@ -2503,7 +2503,7 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 53013,Sino,,
 653020,Sino,,
 753013,Sino,,
-930190,Sino 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930190,Sino 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 173,Preuve de Gloire,Devise de la Boutique de l'Examen des Maisons,"Matériel Spécial, à utiliser pour échanger des Bagdes Solaires/Lunaires"
 7119,Yin&Yang,Skin,Skin de Lucifael - Yin&Yang
 27119,Yin&Yang,Skin,Skin de Lucifael - Yin&Yang
@@ -2657,7 +2657,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 52014,Rina,,
 652021,Rina,,
 752014,Rina,,
-930191,Rina 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930191,Rina 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 4201001,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *8M, Jus d'EXP *8M, Ciseau de Cristal *6600, Plateau Repas *6600, Biscuit de Serviteur *4000, Biscuit Spiritueux *500"
 4201002,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *15M, Jus d'EXP *15M, Ciseau de Cristal *12500, Plateau Repas *12500, Biscuit de Serviteur *7500, Biscuit Spiritueux *1000"
 4301001,Boîte de Skin,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Skin - Star de Baseball *1, Skin - Sprinteuse *1, Skin - Bourgeoise *1, Skin - Tenue d'été *1, Ticket de Costume *100"
@@ -2759,13 +2759,13 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 7134,Omerta,Skin,Skin d'Isabelle - Omerta
 27134,Omerta,Skin,Skin d'Isabelle - Omerta
 20001045,Avatar de Viviane,Avatar Spécial,Avatar Spécial de Viviane
-930192,Fragment de Viviane 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930192,Fragment de Viviane 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 51013,Viviane,,
 651020,Viviane,,
 751013,Viviane,,
 27124,Douceur d'Automne,Skin,Skin de Giana - Douceur d'Automne
 27125,Inséparables,Skin,Skin de Lucifael - Inséparables
-930193,Joan 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930193,Joan 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54013,Joan,,
 654020,Joan,,
 754013,Joan,,
@@ -2795,11 +2795,11 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 4201006,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *4M, Jus d'EXP *4M, Plateau Repas *3000, Ciseau de Cristal *3000, Biscuit de Serviteur *3000, Biscuit Spiritueux *600"
 4403001,Boîte d'Antiquité Orange Exclusive,Boîte à choix,À utiliser pour choisir d'obtenir une Antiquité Orange Exclusive. (Touchez la loupe pour savoir plus)
 191,Branche de Corail,Matériel d'Événement,"Matériel d'Événement, utilisé dans l'événement du Périple de Lavli"
-930194,Uriel 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930194,Uriel 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 56007,Uriel,,
 656017,Uriel,,
 756007,Uriel,,
-930195,Izanami 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930195,Izanami 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 55008,Izanami,,
 655017,Izanami,,
 755007,Izanami,,
@@ -2882,13 +2882,13 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 20001051,Avatar Exclusif de Vera,Avatar Spécial,Avatar Exclusif de Vera
 200,Macaron,Événement,"Matériel d'Événement, à utiliser pour échanger contre des objets"
 222222221,As de Cœur,,
-202,Capsule de Débutant,Matériel d'Événement,À utiliser pour recruter une Fille dans l'événement de Capsules Exclusives de Débutant
+202,Capsule de Débutant,Matériel d'Événement,À utiliser pour invoquer une Fille dans l'événement de Capsules Exclusives de Débutant
 7146,Reine du Ménage,Skin,Skin de Saint Majesté - Reine du Ménage
 27146,Reine du Ménage,Skin,Skin de Saint Majesté - Reine du Ménage
 4101013,Boîte de Fille 5 étoiles (Capsules Exclusives de Débutant),Boîte à choix,À utiliser pour choisir d'obtenir les Fragments d'une Fille 5 étoiles de la Maison Fantôme/Humain/Monstre/Fée. (Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4102012,Boîte de Fille 5 étoiles Ange/ Démon (Capsules Exclusives de Débutant),Boîte à choix,À utiliser pour choisir d'obtenir les Fragments d'une Fille 5 étoiles de la Maison Ange/Démon. (Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4203002,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *1300K, Jus d'EXP *1300K, Plateau Repas *1000, Ciseau de Cristal *1000"
-930197,Azumi 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930197,Azumi 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 55009,Azumi,,
 655018,Azumi,,
 755008,Azumi,,
@@ -2908,7 +2908,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 8003,Demi-Finaliste de la Bataille de Guilde,Cadre d'Avatar,Cadre d'Avatar Demi Final de la Bataille de Guilde (7 Jours)
 8004,Quart-de-Finaliste de la Bataille de Guilde,Cadre d'Avatar,Quart-de-Finaliste de la Bataille de Guilde (7 Jours)
 8005,Huitième-de-Finaliste de la Bataille de Guilde,Cadre d'Avatar,Huitième-de-Finaliste de la Bataille de Guilde (7 Jours)
-930198,Shina 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930198,Shina 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 53014,Shina,,
 653021,Shina,,
 753014,Shina,,
@@ -2948,11 +2948,11 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 4102014,Boîte de Fille 5 étoiles Ange/Démon,Boîte à choix,À utiliser pour choisir d'obtenir les Fragments d'une Fille 5 étoiles de la Maison Ange/Démon. (Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 7155,Flamme d'Amour,Skin,Skin de Kira - Flamme d'Amour
 27155,Flamme d'Amour,Skin,Skin de Kira - Flamme d'Amour
-930199,Ambre 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930199,Ambre 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 52015,Ambre,,
 652022,Ambre,,
 752015,Ambre,,
-930200,Vanessa 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930200,Vanessa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 51014,Vanessa,,
 651021,Vanessa,,
 751014,Vanessa,,
@@ -2995,7 +2995,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 7163,Kimono Céleste,Skin,Skin de Silvia - Kimono Céleste
 27163,Kimono Céleste,Skin,Skin de Silvia - Kimono Céleste
 8053,Belle Récréation,Cadre d'Avatar,1ère période de la Reconstitution du Livre
-930201,Fragments d'Estelle 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930201,Fragments d'Estelle 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 53015,Estelle,,
 653022,Estelle,,
 753015,Estelle,,
@@ -3026,11 +3026,11 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 27166,Violette Éphémère,Skin,Skin d'Izanami - Violette Éphémère
 7167,Robe Idyllique,Skin,Skin de Susan - Robe Idyllique
 27167,Robe Idyllique,Skin,Skin de Susan - Robe Idyllique
-930202,Éléanor 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930202,Éléanor 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 51015,Éléanor,,
 651022,Éléanor,,
 751015,Éléanor,,
-930203,Lys 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930203,Lys 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54015,Lys,,
 654022,Lys,,
 754015,Lys,,
@@ -3123,7 +3123,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 243,Boîte d'Ensemble Démoniaque,Boîte d'équipement,À utiliser pour obtenir l'Ensemble Démoniaque
 244,Boîte d'Ensemble Angélique,Boîte d'équipement,À utiliser pour obtenir l'Ensemble Angélique
 4402004,Boîte d'Antiquité Orange (Aventure Insolite),Boîte à choix,À utiliser pour choisir d'obtenir une Antiquité Orange. (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-930204,Térèsa 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930204,Térèsa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 52016,Térèsa,,
 652023,Térèsa,,
 752016,Térèsa,,
@@ -3149,11 +3149,11 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 27181,Malagauche,Skin,Skin d'Ithil - Malagauche
 7182,Promenade d'Été,Skin,Skin de Vera - Promenade d'Été
 27182,Promenade d'Été,Skin,Skin de Vera - Promenade d'Été
-930205,Frexie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930205,Frexie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 55010,Frexie,,
 655019,Frexie,,
 755009,Frexie,,
-930206,Angélina 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930206,Angélina 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 56008,Angélina,,
 656018,Angélina,,
 756008,Angélina,,
@@ -3235,7 +3235,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 252,Cadeaux d'Été Niv. 3,,"Après l'avoir acheté, vous pourrez débloquer Cadeaux d'Été Niv. 3 et vous recevrez Ticket Cadeau*1, Capsule Avancée*5 et Gemme*500 tous les jours pendant cet événement"
 7191,Pluie d'Été ,Skin,Skin d'Izanami - Pluie d'Été
 27191,Pluie d'Été ,Skin,Skin d'Izanami - Pluie d'Été
-930207,Cassie 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930207,Cassie 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54016,Cassie,,
 654023,Cassie,,
 754016,Cassie,,
@@ -3299,11 +3299,11 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 7200,Course Déchaînée,Skin,Skin de Térèsa - Course Déchaînée
 27200,Course Déchaînée,Skin,Skin de Térèsa - Course Déchaînée
 262,Pierre Antique,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Usine d'Antiquité pour améliorer les Antiquités"
-930208,Monica 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930208,Monica 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 52017,Monica,,
 652024,Monica,,
 752017,Monica,,
-930209,Diana 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930209,Diana 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 51016,Diana,,
 651023,Diana,,
 751016,Diana,,
@@ -3936,7 +3936,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 280,Fragment à vœux (Humain),Matériel d'Événement,"Matériel d'Événement, à utiliser pour obtenir des Filles de la Maison Humain"
 281,Fragment à vœux (Fée),Matériel d'Événement,"Matériel d'Événement, à utiliser pour obtenir des Filles de la Maison Fée"
 282,Fragment Chanceux,Matériel d'Événement,"Matériel d'Événement, à utiliser pour choisir une Fille parmi les 6 Maisons dans l'événement - Fontaine à vœux"
-930210,Ruben 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930210,Ruben 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 53016,Ruben,,
 653023,Ruben,,
 753016,Ruben,,
@@ -3993,7 +3993,7 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 940058,Fragments de Poupée Ange 5 étoiles,Invoquer,"Collectez 50 Fragments pour invoquer une Poupée 5 étoiles de la Maison Ange\nLes Poupées peuvent être utilisées comme Fille Matérielle afin de graduer, éveiller et libérer d'autres Fille"
 7214,Cyber-Amour,Skin,Skin de Turin - Cyber-Amour
 27214,Cyber-Amour,Skin,Skin de Turin - Cyber-Amour
-930211,Aurore 5 étoiles,Recruter une Fille,Collectez 50 Fragments pour recruter cette Fille
+930211,Aurore 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour recruter cette Fille
 54017,Aurore,,
 654024,Aurore,,
 754017,Aurore,,
@@ -4213,3 +4213,23 @@ Ce livre n\'est qu\'un prototype et doit utiliser des histoires d\'autrefois com
 4601002,Boîte de Tenue (Samouraï),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Samouraï. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4601003,Boîte de Tenue (Ange Céleste),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Ange Céleste. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4601004,Boîte de Tenue (Combinaison de Félin),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Combinaison de Félin. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+7221,Maid Lapine,Skin,Skin de Ruben - Maid Lapine
+27221,Maid Lapine,Skin,Skin de Ruben - Maid Lapine
+8068,Stéréo-Lapin,Cadre d'Avatar,Obtenable dans la Reconstitution du Livre
+1900006,Stéréo-Pingouin,Meuble,Artiste indépendant du Pôle Sud.
+7222,Yukata Enchanté,Skin,Skin de Cassie - Yukata Enchanté
+27222,Yukata Enchanté,Skin,Skin de Cassie - Yukata Enchanté
+302,Boussole,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Chasse aux Trésors"
+975001,Fragment de Tenue Rouge,Invoquer,Collectez 40 Fragments pour invoquer un élément d'une Tenue Rouge
+976001,Fragment de Tenue Orange,Invoquer,Collectez 50 Fragments pour invoquer un élément d'une Tenue Orange
+971001,Fragment de Tenue Bleue,Invoquer,Collectez 10 Fragments pour invoquer un élément d'une Tenue Bleue
+972001,Fragment de Tenue Jaune,Invoquer,Collectez 10 Fragments pour invoquer un élément d'une Tenue Jaune
+973001,Fragment de Tenue Violette,Invoquer,Collectez 20 Fragments pour invoquer un élément d'une Tenue Violette
+974001,Fragment de Tenue Verte,Invoquer,Collectez 30 Fragments pour invoquer un élément d'une Tenue Verte
+4601005,Boîte de l'ensemble de Tenue (Halloween),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - Halloween (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601006,Boîte de l'ensemble de Tenue (Samouraï),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - Samouraï (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601007,Boîte de l'ensemble de Tenue (Ange Céleste),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - Ange Céleste (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601008,Boîte de l'ensemble de Tenue (Combinaison de Félin),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - Combinaison de Félin (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601009,Boîte de l'ensemble de Tenue (Plage d'Été),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - Plage d'Été (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601010,Boîte de l'ensemble de Tenue (L'Heure du Thé),Boîte de Tenue,À utiliser pour obtenir tous les éléments de la Tenue - L'Heure du Thé (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601011,Boîte de l'ensemble de Tenue Orange,Boîte à choix,À utiliser pour choisir d'obtenir un ensemble de Tenue Orange (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
