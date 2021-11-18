@@ -9366,7 +9366,7 @@ Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den erlittenen Schaden (
 Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den erlittenen Schaden (kontinuierlicher Schaden ausgeschlossen) um 75% und verringert die erhaltene Heilung um 22%."
 6730101,Ruf des Todes,Verstärkte Fertigkeit,"Zu Beginn des Kampfes und zum Ende jeder Runde besteht jeweils eine 100%ige, 66%ige und 33%ige Wahrscheinlichkeit, den 3 Gegnern mit dem höchsten Speed den Effekt ""Todeszittern"" aufzulegen (Todeszittern: Fertigkeitseffekt. Senkt den Speed um 20)."
 6730201,Ruf des Todes,Verstärkte Fertigkeit,"Zu Beginn des Kampfes und zum Ende jeder Runde besteht jeweils eine 100%ige, 66%ige und 33%ige Wahrscheinlichkeit, den 3 Gegnern mit dem höchsten Speed den Effekt ""Todeszittern"" aufzulegen (Todeszittern: Fertigkeitseffekt. Senkt den Speed um 40)."
-6730301,Ruf des Todes,Verstärkte Fertigkeit,"Zu Beginn des Kampfes und zum Ende jeder Runde besteht jeweils eine 100%ige, 66%ige und 33%ige Wahrscheinlichkeit, den 3 Gegnern mit dem höchsten Speed den Effekt ""Todeszittern"" aufzulegen (Todeszittern: Fertigkeitseffekt. Senkt den Speed um60)."
+6730301,Ruf des Todes,Verstärkte Fertigkeit,"Zu Beginn des Kampfes und zum Ende jeder Runde besteht jeweils eine 100%ige, 66%ige und 33%ige Wahrscheinlichkeit, den 3 Gegnern mit dem höchsten Speed den Effekt ""Todeszittern"" aufzulegen (Todeszittern: Fertigkeitseffekt. Senkt den Speed um 60)."
 6502101,Festlicher Zauberstab,Verstärkte Fertigkeit,"Erhöht die Heilung um 10%. Erleidet die Besitzerin während des Kampfes zum ersten Mal einen Kontrolleffekt, wird sie bis zum Ende des Kampfes immun gegen diesen Kontrolleffekt sein. Erleidet die Besitzerin Kontrolleffekte oder Zeichen, werden ihre HP um 4% ihrer max. HP erhöht."
 6502201,Festlicher Zauberstab,Verstärkte Fertigkeit,"Erhöht die Heilung um 20%. Erleidet die Besitzerin während des Kampfes zum ersten Mal einen Kontrolleffekt, wird sie bis zum Ende des Kampfes immun gegen diesen Kontrolleffekt sein. Erleidet die Besitzerin Kontrolleffekte oder Zeichen, werden ihre HP um 6% ihrer max. HP erhöht."
 6502301,Festlicher Zauberstab,Verstärkte Fertigkeit,"Erhöht die Heilung um 30%. Erleidet die Besitzerin während des Kampfes zum ersten Mal einen Kontrolleffekt, wird sie bis zum Ende des Kampfes immun gegen diesen Kontrolleffekt sein. Erleidet die Besitzerin Kontrolleffekte oder Zeichen, werden ihre HP um 8% ihrer max. HP erhöht."
@@ -9529,3 +9529,161 @@ Der eisige Wind des Nordens umgibt mich und bietet mir Schutz! Wird sie angegrif
 
 [c][e28002]Kristallisierung:[-][/c]
 Kontrolleffekt. Kristallisierte Mädchen können 2 Runden lang weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen. Kann gestapelt werden."
+5301700,Robbie,Standardangriff,Standardangriff
+65302400,Robbie,Standardangriff,Standardangriff
+75301700,Robbie,Standardangriff,Standardangriff
+5301701,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 240% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 240% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 10%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 10% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302401,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 360% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 360% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 20%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 20% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+75301701,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 600% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 600% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 30% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+5301702,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 20%, den Angriff um 10%, die Krit. Rate um 10% und die erhaltene Heilung um 20%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+65302402,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 30%, den Angriff um 20%, die Krit. Rate um 20% und die erhaltene Heilung um 30%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+65302412,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 40%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+75301702,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 40%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+5301703,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie eine Schicht [c][e28002]Laserladung[-][/c] und es besteht eine 30%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 10% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+65302403,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie eine Schicht [c][e28002]Laserladung[-][/c] und es besteht eine 50%ige Wahrscheinlichkeit, dass sie eine extra Schicht [c][e28002]Laserladung[-][/c] erhält. Außerdem besteht eine 60%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 15% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+65302413,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 20% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+75301703,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 20% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+5301704,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 40% gesteigert und ihre erlittenen Schäden um max. 20% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 40% bzw. 20%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 30% ihrer max. HP erhöhen."
+65302404,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 60% gesteigert und ihre erlittenen Schäden um max. 30% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 60% bzw. 30%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 40% ihrer max. HP erhöhen."
+65302414,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 120% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 120% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 50% ihrer max. HP erhöhen."
+75301704,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 120% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 120% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 50% ihrer max. HP erhöhen."
+753017011,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 612% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 612% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 30% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753017012,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 624% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 624% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 30% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753017013,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 636% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 636% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 30% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753017014,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 30% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 648% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 648% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 30% ihrer max. HP. Zu Beginn des Kampfes erhält sie 2 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753017015,Robbie,Protokoll 1: Mechaangriff,"
+Die Verbindung zwischen Robbie und Irene ist stärker denn je und sie greifen gemeinsam an! Wenn sie diese Fähigkeit einsetzt, werden ihre aktuellen HP um 33% gesenkt und sie fügt einem zufälligen Gegner der Backline Schaden in Höhe von 660% des AW zu und 2 Runden lang einen zusätzlichen [c][01a310]Brennschaden[-][/c] in Höhe von jeweils 660% ihres AW. Außerdem erhöht die Fähigkeit den [c][01a310]Brennschaden[-][/c], den das Ziel erleidet für 2 Runden lang um 30%. Anschließend wird sie alle Schichten von [c][e28002]Laserladung[-][/c] einsetzen. Jede Schicht [c][e28002]Laserladung[-][/c] greift einen zufälligen Gegner der Backline an. Nachdem sie den Skill eingesetzt hat, erhöht sie ihre HP um 33% ihrer max. HP. Zu Beginn des Kampfes erhält sie 3 Schichten [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden.
+[c][01a310]Brennschaden:[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753017021,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 42%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+753017022,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 44%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+753017023,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 46%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+753017024,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 40%, den Angriff um 30%, die Krit. Rate um 30% und die erhaltene Heilung um 48%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+753017025,Robbie,Protokoll 2: Update,"
+Robbie und Irene updaten ihr Kommunikationsprotokoll. Erhöht die HP um 43%, den Angriff um 33%, die Krit. Rate um 30% und die erhaltene Heilung um 50%. Außerdem wird sie immun gegen [c][01a310]Lähmung[-][/c].
+
+[c][01a310]Lähmen:[-][/c]
+Kontrolleffekt. Die gelähmten Mädchen können ihre aktive Fertigkeit nicht einsetzen."
+753017031,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 21% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+753017032,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 22% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+753017033,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 23% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+753017034,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 24% erhöhen.
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+753017035,Robbie,Protokoll 3: Aufladung,"
+Anfrage wird bearbeitet... Aufladung gestartet! Robbie und Irene saugen die Energie über dem Schlachtfeld auf und stärken sich dadurch. Wenn Robbie ihren Standardangriff einsetzt, erhält sie 2 Schichten [c][e28002]Laserladung[-][/c] und es besteht eine 100%ige Wahrscheinlichkeit, dass sie einen zufälligen Debuff von sich selbst entfernt (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen). Wenn sie zu Beginn einer Runde von einem Debuff beeinflusst wird (Kontinuierlicher Schaden, Attributsschwächung, Kontrolleffekt, Zeichen), dann wird sie ihre Schadensreduzierung aller Schäden für eine Runde um 25% erhöhen. Gleichzeitig erhält sie eine zusätzliche Schicht [c][e28002]Laserladung[-][/c].
+
+[c][e28002]Laserladung:[-][/c]
+Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminderung um 20%. Kann max. auf 5 Schichten gestapelt werden."
+753017041,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 120% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 120% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 54% ihrer max. HP erhöhen."
+753017042,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 120% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 120% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 58% ihrer max. HP erhöhen."
+753017043,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 125% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 125% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 62% ihrer max. HP erhöhen."
+753017044,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 125% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 125% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 66% ihrer max. HP erhöhen."
+753017045,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 130% gesteigert und ihre erlittenen Schäden um max. 44% gesenkt (sind nur noch 30% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 130% bzw. 44%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 70% ihrer max. HP erhöhen."

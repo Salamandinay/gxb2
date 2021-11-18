@@ -1,14 +1,14 @@
 id,name,desc
 1,Dicker Panzer,Erhöht die HP von allen Gegnern um 30%
 2,Adrenalin,Erhöht den Angriff von allen Gegnern um 30%
-3,Schutzunterstand,Erhöht die Krit. Resistenz aller Gegner um 30% (Die Verringerung der Krit.-Rate vom Angreifer gleicht den Wert der eigenen Krit.-Resistenz aus)
+3,Schutzunterstand,"Krit. Widerstand aller Gegner um 30% erhöht (Bei der Berechnung, ob der Angriff ein kritischer Treffer wird oder nicht, wird die Krit. Rate des Angreifers um den Wert des Krit. Widerstands des Ziels verringert)."
 4,Miasma,Reduziert die erhaltene Heilung von deinen Mädchen um 60%
 5,Energieablenkung,In den ersten 3 Runden können deine Mädchen keine aktiven Fertigkeiten freigeben
 6,Zusammensein,"Wenn die Gegner Schaden erleiden, werden sie den Schaden mit ihren Verbündeten teilen"
 7,Heilverstärkung,Erhöht zu Ende der Runde die HP aller Gegner um 15% ihrer Max. HP
 8,Schmerzübertragung,"Zu Ende der Runde wird jeder Gegner seine 2 zufälligen Debuffs auf eine seiner Verbündeten übertragen (Der Kontroll-Debuff wird bevorzugt übertragen und die Verbündete, deren erlittenen Debuffs am wenigsten sind, wird bevorzugt als Zielmädchen gewählt.)"
 9,Ultimative Sperre,"Wenn ein Gegner zum ersten Mal einen tödlichen Angriff erleidet, bekommt er 2 Schilde, damit er nicht davon getötet werden kann. Zur gleichen Zeit wird eine zufällige Verbündete gesperrt (sie kann sich nicht bewegen und ihre passiven Fertigkeiten, Potenziale oder Fertigkeiten der Rüstungssets können nicht ausgelöst werden und es dauert 2 Runden)."
-10,Unbekannte Fessel,Zu Beginn des Kampfs werden deine 3 zufälligen Mädchen gesperrt (alle auslösbaren passiven Fertigkeiten funktionieren nicht). Alle 2 Runden wird dieser Effekt einmal ausgelöst und es dauert 2 Runden.
+10,Unbekannte Fessel,Zu Beginn des Kampfes werden 3 zufällige Mädchen deines Teams 2 Runden lang gefesselt (Ihre passiven Fertigkeiten können nicht ausgelöst werden. Dieser Effekt kann nicht entfernt werden.). Alle 2 Runden wird dieser Effekt ausgelöst.
 11,Panzerplatte,"Wenn ein Gegner einen Schaden erleidet, wird dieser Einzelschaden nicht mehr als 10% seiner Max. HP sein."
 12,Blind machen,Zu Beginn des Kampfs werden deine 2 zufälligen Mädchen blind gemacht (Ihre aktiven Fertigkeiten werden gezwungenermassen nur einen zufälligen Gegner angreifen und es dauert 1 Runde.). Dieser Effekt wird jede Runde 1 Mal ausgelöst.
 13,Bluten,"Zu Ende der Runde erleiden deine Mädchen Schaden, der 12% ihrer Max. HP gleicht."
@@ -24,12 +24,16 @@ id,name,desc
 23,Kreuzinfektion,"Vermindert in ungeradzahligen Runden den Schaden, der von den Verbündeten auf den ungeradzahligen Positionen verursacht wird, um 15%. In geradzahligen Runden wird die erhaltene Heilung der Verbündeten auf den geradzahligen Positionen um 30% vermindert."
 24,Verfolgung,"Erhöht zu Beginn des Kampfes 3 Runden lang den Schaden, den die Verbündete mit den niedrigsten HP erleidet, um 20%. Wenn ein Gegner ein zufälliges Ziel angreift, wird die Verbündete mit den niedrigsten HP bevorzugt gewählt."
 25,Kraftlosigkeit,Vermindert den Angriff aller Mädchen des eigenen Teams um 10%.
-26,Auswegslosigkeit,"Vermindert alle Schäden, die die Gegner erleiden, um 20%, wenn deren HP niedriger als 50% sind."
-27,Schmerzlosigkeit,"Vermindert alle Schäden, die der Gegners erleidet um 70%. Fügt 4 Runden lang den Gegnern einen Schaden in Höhe von 25% des zuvor verminderten Schadens zu. (Kann weder übertragen noch entfernt werden.)"
+26,Auswegslosigkeit,"Vermindert alle Schäden, die die Gegner erleiden, um 30%, wenn deren HP niedriger als 50% sind."
+27,Schmerzlosigkeit,Verringert alle von den Gegnern erlittenen Schäden um 70%. Fügt 4 Runden lang zum Ende einer Runde den Gegnern 25% von den verringerten Schäden zu (kann weder übernommen noch entfernt werden).
 28,Geschwächt,Vermindert die HP aller Mädchen des eigenen Teams um 15%
 29,Demoralisation,"Die Mädchen des eigenen Teams können keine kritischen Treffer mehr landen. (Außer Fertigkeiten, die sicher einen Krit. Schaden verursacht.)"
-30,Rache,"Jedes Mal wenn ein Gegner stirbt, werden die HP von allen Gegnern um 30% ihrer max. HP erhöht. Ihr Angriff, Präzision, Blockade und Krit. Rate werden 3 Runden lang jeweils um 30% erhöht."
+30,Rache,"Jedes Mal, wenn ein Gegner stirbt, werden die HP von allen Gegnern um 30% ihrer max. HP erhöht. Ihr Angriff, Präzision, Blockade und Krit. Rate werden 3 Runden lang jeweils um 30% erhöht."
 31,Unsichtbarkeit,"Wenn die HP von einem Gegner im Kampf zum ersten Mal niedriger als 50% liegen, wird er 4 Runden unsichtbar werden (weicht Angriffen gegen ein einzelnes Ziel oder Angriffen gegen ein zufälliges Ziel aus. Alle erlittenen Schäden werden um 50% verringert und die Krit. Rate um 100% erhöht.)"
 32,Verbannung,"Verbannt zu Beginn des Kampfes die Verbündete mit den höchsten HP bis zum Ende des Kampfes (HP und Energie des verbannten Mädchens werden nicht geändert. Das verbannte Mädchen kann sich weder bewegen noch als zufälliges Ziel gewählt werden. Dem verbannten Mädchen werden weder Buffs noch Debuffs gegeben. Wenn in einem Team nur noch verbannte Mädchen überlebt haben, verliert dieses Team den Kampf.)"
 33,Heilungsfluch,"Zu Beginn des Kampfs erhalten alle Mädchen des eigenen Teams 3 Schichten Heilungsfluch. Wenn der Heilungsfluch entfernt wird, fügt jede Schicht dem Befallenen einen Schaden in Höhe von 10% seiner max. HP zu."
 34,Erschöpfung,"Vermindert die Energie, die die Mädchen des eigenen Teams erhalten werden, um 50%. Die Verbündeten mit 0 Energie können keinen Schaden verursachen. Der Angriff der Verbündeten, die mehr als 50 Energie haben, wird um 20% vermindert. Zum Ende der Runde wird die Energie von den Verbündeten, die nur 50 Energie oder weniger haben, geleert."
+35,Todesruf,"Gibt zu Beginn des Kampfes der Verbündeten mit dem höchsten Angriffswert den Effekt ""Todesruf"". (Todesruf: Dieser Effekt kann nicht entfernt werden. Das Mädchen wird 6 Runden nach dem Erhalten dieses Effekts sterben. Stirbt das Mädchen, wird dieser Effekt von der lebenden Verbündeten mit dem höchsten Angriffswert übernommen.)"
+36,Blockade,"In einer Runde kann nur eines deiner Mädchen ihre aktive Fertigkeit freisetzen. Hat das Mädchen ihre aktive Fertigkeit freigesetzt, wird ihr Angriff 6 Runden lang um 100% verringert."
+37,Schmerzempfindlich,"Der Angriff deiner Mädchen wird ihren HP angepasst. Liegen die HP deiner Mädchen bei 100%,  wird auch der Angriffswert 100% ihres ursprünglichen AW sein. Liegen die HP bei 0%, fällt der auch AW auf 0% ihres ursprünglichen AW."
+38,Angriffsraub,"Zu Beginn jeder Runde der ersten 4 Runden im Kampf werden die Gegner den Mädchen deines Teams 5% ihres Angriffs stehlen. Dieser Effekt kann nicht entfernt werden. (Jeder Gegner wird den Angriff desjenigen Mädchens stehlen, das auf der gleichen Position steht wie er selbst. Steht auf dem entsprechenden Platz kein Mädchen, findet der Diebstahl nicht statt.)"

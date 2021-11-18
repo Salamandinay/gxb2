@@ -2467,7 +2467,7 @@ La cible sera temporairement incapable d\'utiliser sa Compétence Active ou d\'a
 [c][01a310]Pétrifier (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable d\'utiliser sa Compétence Active ou d\'attaquer les ennemis."
 75101103,Valeera,Spécialisation Magique,"
-La pureté de la magie de Valeera augmente grâce à la stupeur. Augmente l\'Attaque de 20%, les Dégâts Critiques de 30%, les PV de 25%, la Vitesse de 40, les dégâts contre les cibles [c][01a310]gelées[-][/c] ou [c][01a310]pétrifiées[-][/c] de 80%.
+La pureté de la magie de Valeera augmente grâce à la stupeur. Augmente l\'Attaque de 20%, les Critiques de 30%, les PV de 25%, la Vitesse de 40, les dégâts contre les cibles [c][01a310]gelées[-][/c] ou [c][01a310]pétrifiées[-][/c] de 80%.
 [c][01a310]Geler (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable d\'utiliser sa Compétence Active ou d\'attaquer les ennemis.
 [c][01a310]Pétrifier (Effet de Contrôle) :[-][/c]
@@ -9498,3 +9498,141 @@ Les vents glacials du Nord me protégeront pour toujours ! Lorsqu\'elle est atta
 
 [c][e28002]Cristallisation (Effet de Contrôle) ：[-][/c]
 La cible cristallisée ne peut effectuer aucune action pendant 2 tours (cumulable)."
+5301700,Robbie,Attaque Basique,Attaque Basique
+65302400,Robbie,Attaque Basique,Attaque Basique
+75301700,Robbie,Attaque Basique,Attaque Basique
+5301701,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 240% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (240% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 10% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 10% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+65302401,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 360% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (360% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 20% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 20% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+75301701,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 600% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 30% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 30% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+5301702,Robbie,Code 2：Synchronisation,"Augmente les PV de 20%, l'Attaque de 10%, les Critiques de 10% et les Soins Reçus de 20%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+65302402,Robbie,Code 2：Synchronisation,"Augmente les PV de 30%, l'Attaque de 20%, les Critiques de 20% et les Soins Reçus de 30%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+65302412,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 40%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+75301702,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 40%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+5301703,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 1 couche de [c][e28002]Charge Laser[-][/c] et a 30% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 10% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+65302403,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 1 couche de [c][e28002]Charge Laser[-][/c] , a 50% de chance d\'obtenir 1 couche de [c][e28002]Charge Laser[-][/c], et a 60% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 15% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+65302413,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 20% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+75301703,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 20% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+5301704,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 40% au maximum et sa Résistance Totale de 20% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 30% de ses PV Max."
+65302404,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 60% au maximum et sa Résistance Totale de 30% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 40% de ses PV Max."
+65302414,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 120% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 50% de ses PV Max."
+75301704,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 120% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 50% de ses PV Max."
+753017011,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 612% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (612% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 30% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 30% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+753017012,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 624% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (624% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 30% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 30% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+753017013,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 636% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (636% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 30% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 30% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+753017014,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 648% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (648% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 30% pendant 2 tours.
+Au début de la bataille, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 30% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+753017015,Robbie,Code 1：Érina,"
+Lorsque ce mode est activé, Robbie et Érina lanceront à deux une attaque combinée. Robbie consomme 30% de ses PV actuels en lançant cette Compétence Active. Inflige 660% d\'Attaque à 1 ennemi aléatoire de la ligne arrière, en lui infligeant également des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (660% de l\'Attaque de Robbie) pendant 2 tours, et augmente les dégâts de [c][01a310]Brûlure [-][/c] subis par cette cible brûlée de 33% pendant 2 tours.
+Au début de la bataille, elle obtient 3 couches de [c][e28002]Charge Laser[-][/c]. En lançant sa Compétence Active, elle consomme toutes les couches de [c][e28002]Charge Laser[-][/c]. Chaque couche de [c][e28002]Charge Laser[-][/c] lui permet de répéter la même attaque à 1 ennemi aléatoire de la ligne arrière.
+Après avoir lancé sa Compétence Active, elle récupérera 33% de ses PV Max.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum.
+[c][01a310]Brûlure：[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+753017021,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 42%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+753017022,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 44%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+753017023,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 46%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+753017024,Robbie,Code 2：Synchronisation,"Augmente les PV de 40%, l'Attaque de 30%, les Critiques de 30% et les Soins Reçus de 48%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+753017025,Robbie,Code 2：Synchronisation,"Augmente les PV de 43%, l'Attaque de 33%, les Critiques de 30% et les Soins Reçus de 50%, immunisée contre l'effet [c][01a310]Silence[-][/c].\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLes cibles seront temporairement incapables de déclencher leurs Compétences Actives."
+753017031,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 21% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+753017032,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 22% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+753017033,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 23% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+753017034,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 24% pendant 1 tour.
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+753017035,Robbie,Code 3：Recharge d'Énergie,"
+Lorsque ce code est activé, Robbie absorbe l\'énergie du champ de bataille. Lorsqu\'elle lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Charge Laser[-][/c] et a 100% de chance d\'enlever aléatoirement 1 de ses Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque). Au début de chaque tour, si elle reçoit des Effets Négatifs (Dégâts sur la Durée, Réduction d\'Attribut, Effet de Contrôle et Marque), sa Résistance Totale sera augmentée de 25% pendant 1 tour et elle obtient également 1 couche de [c][e28002]Charge Laser[-][/c].
+
+[c][e28002]Charge Laser (Effet de Compétence)：[-][/c]
+Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énergie de 20%, 5 couches au maximum."
+753017041,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 120% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 54% de ses PV Max."
+753017042,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 120% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 58% de ses PV Max."
+753017043,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 125% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 62% de ses PV Max."
+753017044,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 125% au maximum et sa Résistance Totale de 40% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 66% de ses PV Max."
+753017045,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 30%, elle pourra augmenter ses dégâts infligés de 130% au maximum et sa Résistance Totale de 44% au maximum. La première fois que ses PV seront inférieurs à 30%, elle récupérera 70% de ses PV Max."
