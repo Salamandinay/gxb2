@@ -374,7 +374,7 @@ RANK_TEXT02,Étape
 FREE2,Gratuit
 FREE3,Gratuit
 SUMMON_X_TIME,Tirer {1}
-SUMMON_HELP_1,"1. Les Capsules Normales vous permettent d'obtenir des Filles de bas rang (1, 2, 3, 4 et 5 étoiles), il faut une pièce de Capsule Normale pour tirer une Capsule Normale.|2. Les Capsules Avancées vous permettent d'obtenir des Filles de haut rang (3, 4 et 5 étoiles), il faut une Pièce de Capsule Avancée pour tirer une Capsule Avancée.|3. Les Capsules d'Amitiés vous permettent d'obtenir des Filles de rang moyen (2, 3, 4 et 5 étoiles), il faut 10 cœurs pour obtenir une Capsule d'Amitié. Le joueur peut maximum avoir 1,000 cœurs.|4.Obtenez 10 d'énergie pour chaque obtention d'une Capsule Avancée. Les joueurs VIP 3 peuvent échanger 1,000 d'énergie afin d'obtenir l'Œuf d'Or et avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié.|5. Les chances des Capsules Avancées sont de：|78.42%% pour 3 étoiles, 20%% pour 4 étoiles et 1.58%% pour 5 étoiles|6. Pendant l'événement Capsule de Filles, les chances des Capsules Avancées sont de：|77.84%% pour 3 étoiles, 19%% pour 4 étoiles et 3.16%% pour 5 étoiles.|7. Les chances des Capsules d'Amitiés sont de：|32%% pour 2 étoiles, 54%% pour 3 étoiles, 13.2%% pour 4 étoiles et 0.8%% pour 5 étoiles.|8. Les chances des Capsules Normales sont de :|56%% pour 1 étoile, 34%% pour 2 étoiles, 8.5%% pour 3 étoiles, 1.45%% pour 4 étoiles et 0.05%% pour 5 étoiles. "
+SUMMON_HELP_1,"1. Les Capsules Normales vous permettent d'obtenir des Filles de bas rang (1, 2, 3, 4 et 5 étoiles), il faut une pièce de Capsule Normale pour tirer une Capsule Normale.|2. Les Capsules Avancées vous permettent d'obtenir des Filles de haut rang (3, 4 et 5 étoiles), il faut une Pièce de Capsule Avancée pour tirer une Capsule Avancée.|3. Les Capsules d'Amitiés vous permettent d'obtenir des Filles de rang moyen (2, 3, 4 et 5 étoiles), il faut 10 cœurs pour obtenir une Capsule d'Amitié. Le joueur peut maximum avoir 1,000 cœurs.|4. Obtenez 10 d'énergie pour chaque obtention d'une Capsule Avancée. Les joueurs VIP 3 peuvent échanger 1,000 d'énergie afin d'obtenir l'Œuf d'Or et avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié.|5. Les chances des Capsules Avancées sont de：|78.42%% pour 3 étoiles, 20%% pour 4 étoiles et 1.58%% pour 5 étoiles|6. Pendant l'événement Capsule de Filles, les chances des Capsules Avancées sont de：|77.84%% pour 3 étoiles, 19%% pour 4 étoiles et 3.16%% pour 5 étoiles.|7. Les chances des Capsules d'Amitiés sont de：|32%% pour 2 étoiles, 54%% pour 3 étoiles, 13.2%% pour 4 étoiles et 0.8%% pour 5 étoiles.|8. Les chances des Capsules Normales sont de :|56%% pour 1 étoile, 34%% pour 2 étoiles, 8.5%% pour 3 étoiles, 1.45%% pour 4 étoiles et 0.05%% pour 5 étoiles. "
 SUMMON_HELP_2,"Les chances des Capsules Avancées sont de：|78.42%% pour 3 étoiles, 20%% pour 4 étoiles et 1.58%% pour 5 étoiles||. Pendant l'événement des Packs de Capsules, les chances des Capsules Avancées sont de：|77.84%% pour 3 étoiles, 19%% pour 4 étoiles et 3.16%% pour 5 étoiles.||. Les chances des Capsules d'Amitiés sont de：|32%% pour 2 étoiles, 54%% pour 3 étoiles, 13.2%% pour 4 étoiles et 0.8%% pour 5 étoiles.||. Les chances des Capsules Normales sont de :|56%% pour 1 étoile, 34%% pour 2 étoiles, 8.5%% pour 3 étoiles, 1.45%% pour 4 étoiles et 0.05%% pour 5 étoiles."
 SUMMON_HELP_3,"1. Obtenez 10 d'énergies pour chaque utilisation d'une Capsule Avancée.\n\n2. Les joueurs VIP 3 peuvent utiliser 1,000 d'énergies afin d'obtenir une Œuf d'Or et d'avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié."
 NIUDANJI,Capsule
@@ -435,7 +435,7 @@ HAS_NO_EQUIP,Aucun Équipement disponible
 DUNGEON_WINDOW,Patrouille
 GUIDE_CAMPAIGN_TIPS_1,Les Filles de [c][d76500]la ligne avant[-][/c] recevront plus de dégâts.
 GUIDE_CAMPAIGN_TIPS_2,Les Filles de [c][d76500]la ligne arrière[-][/c] infligeront plus de dégâts.
-FUNC_OPEN_LEV,Débloqué au Niv. {1} !
+FUNC_OPEN_LEV,Débloqué au Niv.{1} !
 LOADING_1,Cherche le meilleur serveur
 LOADING_2,Vérifier le Compte
 POINT_TO_START,Touchez pour jouer
@@ -885,7 +885,7 @@ GUILD_TEXT44,Envoyé
 GUILD_TEXT45,Choisir
 GUILD_TEXT46,Dissoudre
 GUILD_TEXT47,Annuler
-GUILD_TEXT48,Débloqué au Niv{1} de la Guilde
+GUILD_TEXT48,Débloqué au Niv.{1} de la Guilde
 GUILD_TEXT49,Contenu à venir
 GUILD_TEXT50,Guilde
 GUILD_TEXT51,Cafétéria
@@ -1164,7 +1164,7 @@ NOT_HAVE_AVATAR,Vous n'avez pas encore ce genre d'Avatar...
 RET_TIME_TEXT,Restant :
 DAYS_TEXT,{1} Jour(s)
 PROPHET_SUMMON_TEN_TIMES,Utiliser 10
-BLACK_CARD_TEXT01,Obtenir chaque jour\n(pendant 10 jours)：
+BLACK_CARD_TEXT01,Obtenable chaque jour\n(pendant 10 jours)：
 BLACK_CARD_TEXT02,"1. Après l'achat, vous obtiendrez les récompenses pendant 10 jours suivants par courrier\n2. Vous recevrez toutes les récompenses du moment que vous achetez cette carte avant qu'elle disparaisse."
 BLACK_CARD_TEXT03,Récompense totale：
 GUILD_WAR_NEXT_WEEK,"Nous sommes en train de nettoyer le terrain de sport, la prochaine guerre de Guilde commencera bientôt."
@@ -1643,7 +1643,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musique
 NORMAL_SLOT_MACHINE,Distributeur Normal
 HIGH_SLOT_MACHINE,Distributeur Avancé
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Une montagne de cadeaux vous attend dans cet événement ! Collectez les différents cadeaux en vous connectant quotidiennement.|2. Les cadeaux pas encore débloqués seront cumulés et collectables après les avoir débloqué.|3. Appuyez sur les cadeaux pour voir les récompenses.|4. Le 3ème Cadeau sera débloqué après l'achat du 2ème Pack Surprise.|5. Après la fin de l'événement, les Badges de Dinde non-utilisés seront automatiquement convertis en Pièce d'Or, 25K chacun."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Une montagne de cadeaux vous attend dans cet événement ! Collectez les différents cadeaux en vous connectant quotidiennement.|2. Les cadeaux pas encore débloqués seront cumulés et collectables après les avoir débloqué.|3. Appuyez sur les cadeaux pour voir les récompenses.|4. Le 3ème Cadeau sera débloqué après l'achat du 2ème Pack Surprise (celui de 74.99 euro).|5. Après la fin de l'événement, les Badges de Dinde non-utilisés seront automatiquement convertis en Pièce d'Or, 25K chacun."
 CHAPTER_COUNT,Chapitre {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,Ce Chapitre n'est pas encore débloqué
@@ -2387,7 +2387,7 @@ CHAT_CONFIG_7,Ignorer les messages français
 CHAT_HIDE_LOCAL,Vous avez bloqué les messages français
 GUILD_FREE_CREATE,Gratuit
 ACTIVITY_XMAS_GIFTBAG_TEXT,Pack de Pâques Exclusif ! Durant 7 jours Uniquement !
-DROP_PROBABILITY_WINDOW_TITLE,Chance
+DROP_PROBABILITY_WINDOW_TITLE,Taux d'obtention
 ACTIVTIY_NEWYEAR_BOX1_TEXT,Vous obtiendrez aléatoirement l'un des objets en ouvrant Cadeau Supérieur du Nouvel An.
 ACTIVTIY_NEWYEAR_BOX2_TEXT,Vour obtiendrez Pièce *100K et Jus d'EXP*70K et d'autres items en ouvrant Cadeau du Nouvel An
 WEDDING_VOTE_TEXT_20,Fin du vote du Groupe A dans：
@@ -2483,7 +2483,7 @@ GUILD_BOSS_TEXT03,Calcul hebdomaire des récompenses：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Niveau {1}
 SUMMON_CONFIRM,"Utiliser {2} Gemmes pour tirer {1} fois les Capsules, voulez-vous continuer ?"
 TURING_TASK_LIMIT,Limite
-TURING_TASK_TEXT01,Terminez ces tâches pour obtenir les récompenses (envoyées dans votre Sac directement).
+TURING_TASK_TEXT01,"Durant l'événement, terminez les tâches pour obtenir des Tickets du Black Friday !\nLes récompenses vous seront envoyées directement dans votre Sac."
 WELFARE_TEXT01,Utilisez des Sceaux pour débloquer plus de récompenses !
 WELFARE_TEXT02,Débloqué après avoir utilisé {1} Sceaux dans Recruter
 BEGINNER_QUEST_LOCKED,Bloqué
@@ -2659,7 +2659,7 @@ ACTIVITY_PARTNER_JACKPOT_POOL02,Prochaine rotation
 ACTIVITY_PARTNER_JACKPOT_POOL03,Dans 2 rotations
 ACTIVITY_PARTNER_JACKPOT_POOL04,Dans 3 rotations
 ACTIVITY_PARTNER_JACKPOT_POOL05,Dans 4 rotations
-ACTIVITY_PARTNER_JACKPOT_TEXT01,Obtenir au moins 1 des Filles
+ACTIVITY_PARTNER_JACKPOT_TEXT01,1 des Filles suivantes garantie
 LIBRARY_WATCHER2_REVIEW,Scénario précédent
 ACTIVITY_PARTNER_JACKPOT_END1,À ce tour
 ACTIVITY_PARTNER_JACKPOT_END2,Terminé
@@ -2850,7 +2850,7 @@ BATTLE_PASS_BUY_LEV_WINDOW,Améliorer le Niveau
 BATTLE_PASS_CHECK_AWARD_WINDOW,Aperçu de récompenses
 NO_RANK,Aucun joueur
 ACTIVITY_SPORTS_TEXT03,Aucune quête
-BATTLE_PASS_BUY_LEV_TIP,Augmenter le niveau {1} à [c][0xd76500 size=34]{2}[-][/c]
+BATTLE_PASS_BUY_LEV_TIP,Augmenter le Niveau du {1} à [c][0xd76500 size=34]{2}[-][/c]
 BATTLE_PASS_SHOP_LIMIT,Limite d'Achat : {1}/{2}
 BATTLE_PASS_MAIN_HELP,"1. La Classe Éco est gratuitement débloquée, vous pouvez vous faire surclasser en Classe Premium et en 1ère Classe pour récupérer les récompenses supplémentaires! Vous pouvez immédiatement récupérer les récompenses précédentes après avoir vous être fait surclasser en Classe Premium et en 1ère Classe.| 2. Après avois pris un billet en 1ère Classe, vous pouvez obtenir le Cadre d'Avatar exclusif et passer au niveau 10; Après avoir pris un billet en Classe Premium, vous pouvez toujours vous faire surclasser en 1ère classe en prenant en compte la différence de prix.| 3. Vous pouvez passer de niveau grâce aux moyens suivants: quête journalière, quête hebdomadaire, quête supplémentaire| 4. Certains objets de la période précédente seront conservés lorsque le Bureau d'Échange Prémium se réinitialise. Veuillez les échanger dans le temps imparti. |5. Il y aura des objets échangeables différents après la réinitialisation du Bureau d'échange de Vis. Les Vis disparaîtront à la fin de chaque période du Festival à Vapeur. Veuillez les échanger dans le temps imparti."
 BATTLE_PASS_SEASON_NUMBER,5e Période
@@ -2931,7 +2931,7 @@ SPRITE,Âme
 ENHANCE,Améliorer
 BACKPACK,Sac
 SUIT,Ensemble
-SPIRIT_LOCK_ALERT,Débloqué au Niv{1}
+SPIRIT_LOCK_ALERT,Débloqué au Niv.{1}
 SPIRIT_UPGRADE_LABEL,Améliorer
 SPIRIT_UPGRADE_FAIL,{1} insuffisant(e)
 SPIRIT_POSITION_NAME_0,Améliorer l'Âme Écaille
@@ -3057,7 +3057,7 @@ DEFENSE,PV: +{1}%%
 ACTIVITY_DRAGON_BOAT_PRICE,Pack Gratuit
 DRAGON_BOAT_SELECT,Sur Mesure
 ACTIVITY_DRAGON_BOAT_AWARD_SELECT_WINDOW,Pack Personnalisable
-ACTIVITY_DRAGON_BOAT_AWARD_SELECT_WINDOW_SECOND_TITLE,Veuillez tout d'abord choisir les objets
+ACTIVITY_DRAGON_BOAT_AWARD_SELECT_WINDOW_SECOND_TITLE,Choisissez votre récompense
 NEXT,Suivant
 GO_TO_SELECT,Cliquez ici pour choisir les objets dont vous avez besoin !
 ACTIVITY_DRAGON_BOAT_DESC,Cadeaux Mystères à une durée limitée !
@@ -3102,7 +3102,7 @@ ACTIVITY_DATE_MAP_ENTRANCE_4,Shopping
 ACTIVITY_DATE_MAP_ENTRANCE_5,Parc
 ACTIVITY_DATE_BUYDICE_TIPS,Êtes-vous sûr d'acheter Cœur en cristal *3 et Diamant d'Amour *1 avec {1} Gemmes ?
 BATTLE_PASS_SEASON_NUMBER_2,6e période
-ACTIVITY_DUANWU_SHUOMING,Veuillez choisir les choses dont vous avez besoin
+ACTIVITY_DUANWU_SHUOMING,"Quelle est la récompense dont vous avez besoin, Senpai ?"
 ACTIVITY_CANTMOVE_TIPS,Finissez l'activité actuelle(Cliquez sur le Personnage) pour continuer d'avancer
 ACTIVITY_DATE_HELP_1,"L'événement dure 14 jours, vous pouvez utiliser les Cœurs en cristal ou les Diamants d'Amour pour déclencher une activité. Vous pouvez obtenir la Rose d'Amour après avoir fait certains choix, et vous pouvez également échanger les récompenses en utilisant la Rose d'Amour."
 ACTIVITY_DATE_HELP_CELLTITLE,Type d'activités
@@ -3498,7 +3498,7 @@ TREASURE_COVER_HELP,Le remplacement est irréversible. Voulez-vous continuer?
 TREASURE_CHOOSE,Choisir le cristal
 WISH_GACHA_PS,Capsule à souhait ne comptera pas dans les quêtes quotidiennes et le succès
 WISH_GACHA_TEXT3,Possibilité Actuelle
-WISH_GACHA_TEXT4,pour la prochaine\naugmentation
+WISH_GACHA_TEXT4,avant la prochaine\naugmentation
 WISH_GACHA_TEXT5,Fille Garantie
 WISH_GACHA_TEXT6,Progrès Actuel
 WISH_GACHA_NUM,Fois
@@ -3586,7 +3586,7 @@ TREASURE_RESERVE_EMPTY,Êtes-vous sûr de sauvegarder les attributs du cristal a
 TREASURE_SAME_HELP,Vous avez déjà un autre Cristal ayant les mêmes attributs. Êtes-vous sûr de continuer ?
 MIDAS_TEXT05,Restant(s)：
 MIDAS_TEXT06,Achat(s) Restant(s)：
-MIDAS_TEXT_HELP,"1. Chaque jour vous pouvez collecter gratuitement les Pièces d'Or dans l'Alchimie 1 fois. |2. Plus le niveau de VIP ou le niveau de senpai est élevé, plus les Pièces d'Or vous pouvez collecter. |3. L'Alchimie se renouvelra chaque jour à 00:00 (UTC/GMT 0)."
+MIDAS_TEXT_HELP,"1. Chaque jour vous pouvez collecter gratuitement les Pièces d'Or dans l'Alchimie 1 fois. |2. Plus le niveau de VIP ou le niveau du joueur est élevé, plus les Pièces d'Or vous pouvez collecter. |3. L'Alchimie se réinitialisera chaque jour à 00:00 (UTC/GMT 0)."
 SHOP_SKIN_TEXT08,Afficher les Skins des Filles obtenues
 MIDAS_TEXT07,Voulez-vous dépenser {1} Gemmes pour acheter ?
 MIDAS_TEXT08,Acheté
@@ -3713,7 +3713,7 @@ GACHA_LIMIT_CALL_FIVESTAR_TIPS,5 étoiles\ngarantie
 ACTIVITY_LIMIT_GACHA_HELP,"1. Durant l'événement, utilisez les Pièces Temporelles pour obtenir des Filles (3/4/5 étoiles, Diana non inclut). |2. Si vous utilisez 10 fois les Pièces Temporelles, vous recevrez obligatoirement une Fille 5 étoiles (y compris les filles 5 étoiles qui ont une version 4 étoiles); si vous n'avez pas obtenu Monica durant les premiers 49 tirages, vous recevrez obligatoirement des fragments de Monica à chaque 50e tirage.|3. Chaque fois que vous utilisez la Pièce Temporelle, vous obtiendrez une certaine quantité de Coupon Temporel que vous pourrez échanger contre des récompenses dans la Boutique.|4. Après l'événement, les objets inutilisés seront automatiquement convertis en Pièces d'Or : 1 Pièce Temporelle contre 150K, 1 Coupon Temporel contre 10k."
 ACTIVITY_LIMIT_CALL_BOSS_CHALLENGE,Chances de Défi：
 BLACK_FRIDAY_GIFTBAG_DISCOUNT,90%% OFF
-BLACK_FRIDAY_GIFTBAG_PRICE1,€549.99
+BLACK_FRIDAY_GIFTBAG_PRICE1,Prix d'Origine : €549.99
 BLACK_FRIDAY_GIFTBAG_PRICE2,Prix d'Origine : €1099.99
 GACHA_LIMIT_CALL_TEXT_1,[c][fee19e]{2}[-][/c] garantie après avoir tiré [c][fee19e]{1}[-][/c] fois
 GACHA_LIMIT_BOSS_HELP,"1. Durant l'événement, vous disposez de 2 tentatives par jour. |2. Une fois chaque bataille terminée, vous obtiendrez des ""Rosées"" et des Pièce d'Or en fonction des dégâts infligés. Plus les dégâts sont élevés, plus la récompense est importante."
@@ -3786,7 +3786,7 @@ ACTIVITY_YEAR_FUND_LATE_AWARD_TIP,Voulez-vous dépenser {1} Gemmes pour recollec
 ACTIVITY_YEAR_FUND_BUY,Obtention\nImmédiate
 ACTIVITY_YEAR_FUND_PRICE,"€21,99"
 ACTIVITY_DOLL_BUY_UNLIMIT,Illimité
-ACTIVITY_CHRISTMAS_SALE_HELP,"1. Pendant l'événement, vous pouvez échanger diverses récompenses contre des ""Bois de Renne"". Les 2 premières récompenses peuvent être échangées directement. Les récompenses suivantes ne peuvent être échangées qu'après avoir dépensé un nombre spécifique de «Bois de Renne» au préalable. |2. À l'exception des récompenses fixes du premier palier, les paliers suivants sont divisés en récompenses fixes et récompenses optionnelles. |3. Chaque palier et chaque récompense optionnelle a un nombre limité d'achats: une fois que la limite est à 0, les récompenses de ce palier ne peuvent plus être obtenues. |4. Le ""Bois de Renne"" peut être obtenu grâce à l'événement ""Requêtes d'Uriel"", l'événement ""Cadeaux de Noël"", Packs de Grande Valeur, Packs Surprise de Skin, Packs Surprise, Pack Exclusif de Noël. |5. À la fin de l'événement, les ""Bois de Renne"" non utilisés seront automatiquement échangés contre des Pièces d'Or, 1 ""Bois de Renne"" = 50k Pièces d'Or, qui seront distribuées par courrier."
+ACTIVITY_CHRISTMAS_SALE_HELP,"1. Pendant l'événement, vous pouvez échanger des ""Tickets du Black Friday"" contre diverses récompenses. Les 3 premières récompenses peuvent être échangées directement. Les récompenses suivantes ne peuvent être échangées qu'après avoir dépensé un nombre spécifique de Tickets du Black Friday au préalable. |2. Tous les paliers sont divisés en Récompenses Fixes et Récompenses Optionnelles. |3. Chaque palier et chaque récompense Optionnelle ont un nombre limité d'achat : une fois que la limite est à 0, les récompenses de ce palier ne peuvent plus être obtenues. |4. Les Tickets du Black Friday peuvent être obtenus via l'événement Coupon du Black Friday, Boutique du Black Friday, Packs de Grande Valeur, Packs Surprise de Skin, Packs Surprise et Sac d'Aventurier. |5. À la fin de l'événement, les Tickets du Black Friday non utilisés seront automatiquement échangés contre des Pièces d'Or, 1 Ticket du Black Friday = 50k Pièces d'Or, qui seront distribuées par courrier."
 RE_CHECKIN,Recollecter
 RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
 SUMMON_GIFTBAG_MENU01,Capsules utilisées ({1}/{2})
@@ -3794,8 +3794,8 @@ SUMMON_GIFTBAG_MENU02,Capsules de Filles
 SUMMON_GIFTBAG_HELP,"Capsula a préparé des récompenses spéciales pour ces nouvelles Filles : Pendant l'événement, vous pouvez tirer des Capsules Avancées pour obtenir beaucoup de récompenses ! ||Nous publierons la date de la période prochaine sur notre Facebook."
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,Utilisez {2}*{1} pour le débloquer
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Aperçu Partiel
-ACTIVITY_CHRISTMAS_SALE_DESC,"Utilisez "" Bois de Renne "" pour échanger des récompenses !"
-LARGE_ACTIVITY_CHRISTMAS_TEXT,Noël
+ACTIVITY_CHRISTMAS_SALE_DESC,Obtenez des récompenses\npersonnalisées grâce à vos\nTickets du Black Friday !
+LARGE_ACTIVITY_CHRISTMAS_TEXT,Black Friday
 ACTIVITY_YEAR_FUND_NOTICE_TEXT02,Contenu à venir…
 ACTIVITY_CHRISTMAS_SALE_TITLE,Sur Mesure
 AWARD_LOOK_WINDOW_NEW,Aperçu
@@ -4155,7 +4155,7 @@ BP_PURCHASE_WINDOW_TIP,"
 2. Le Cadre d\'Avatar peut être acquis dès l\'achat du Livre Collector, le reste des récompenses supplémentaires seront déblocables en fonction du Niveau de votre Livre.
 3. Les récompenses supplémentaires ne sont obtenables qu\'une seule fois.
 4. Après avoir acquis Livre Rare, vous pourrez toujours acquérir Livre Collector, néanmoins le prix total différera. Vous pouvez cliquer sur le bouton ""?"" pour plus de détails."
-BP_BUY_LEV_WINDOW_HELP,"1.Vous pouvez améliorer le niveau en utilisant des Gemmes|2.Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer le niveau de votre Livre jusqu'au niveau 50 au maximum|3.Ne vous inquiétez pas, il y aura des réductions pour l'achat d'amélioration du niveau des Livres, 2 semaines avant la fin de la période."
+BP_BUY_LEV_WINDOW_HELP,"1. Vous pouvez améliorer le Niveau du Livre en utilisant des Gemmes.|2. Après avoir amélioré le niveau, l'EXP actuelle sera conservée. Vous pouvez améliorer le Niveau de votre Livre jusqu'au niveau 50 au maximum.|3. Il y aura des réductions pour l'achat d'amélioration du Niveau des Livres, 2 semaines avant la fin de la période."
 BP_BUY_LEV_PREAWARD,Récompenses
 BP_BUY_LEV_TIP2,Ce sera moins onéreux durant les deux dernières semaines !
 BP_SHOP_HELP,"1. Vous pouvez utiliser les Autocollants et les Feuilles de Cristal pour échanger des objets|2. Vous pouvez utiliser les Autocollants pour échanger des récompenses dans Page Florale.|3. Certains objets de la Bibliothèque d'Échange seront mis à jour à la période suivante. D'ici-là, les Feuilles de Cristal obtenues dans la période actuelle seront conservées.Veuillez bien choisir les objets que vous voulez échanger. |4. Les Autocollants obtenus dans la période actuelle seront décomptés à la fin de cette période, n'oubliez pas de les échanger."
@@ -4200,7 +4200,7 @@ TRAVEL_MAIN_TEXT64,Aperçu des Attributs
 TRAVEL_MAIN_TEXT65,Quelle chance ! Vous avez croisé le Marchant Mystérieux !
 CDKEY_TEXT04,Aller échanger
 ERROR_CODE,Ce Code Cadeau a expiré
-STAGE_UNLOCK_TEXT02,Utilisez ce Code「GXB222」pour obtenir：Capsule Avancée *30 !
+STAGE_UNLOCK_TEXT02,Utilisez ce Code「GXB222」pour obtenir：Capsule Avancée *30
 TALK_TEXT_LINE_LIMIT_TIPS,Limite de ligne atteinte
 STAGE_UNLOCK_TEXT03,"Pour débloquer, veuillez passer l'Étape {1} dans Campagne, obtenir une Fille 10 étoiles ou + et atteindre l'Étape 300 dans Test."
 CDKEY_TEXT05,Code Cadeau：
@@ -4970,7 +4970,7 @@ LIMITED_FOR_ACTIVITY,En temps limité
 ACTIVITY_WARMUP_PACK_TEXT06,Récompenses\nSupplémentaires
 ACTIVITY_WARMUP_PACK_TEXT07,Combattre
 ENTRANCE_TEST_NEXT_DAY,"En cours de calcul, impossible de combattre !"
-ENTRANCE_TEST_ENERGY_EXCEED,"Chaque jour à 00:00 (UTC/GMT 0), vos Certificats de Test d'Admission seront réinitialisés à 10, vos Certificats de Test d'Admission non-utilisés disparaîtront. Êtes-vous sûr de vouloir acheter des Certificats de Test d'Admission supplémentaires ?"
+ENTRANCE_TEST_ENERGY_EXCEED,"Chaque jour à 00 : 00 (UTC/GMT 0), vos Certificats de Test d'Admission seront réinitialisés à 10, vos Certificats de Test d'Admission non-utilisés disparaîtront. Êtes-vous sûr de vouloir acheter des Certificats de Test d'Admission supplémentaires ?"
 ENTRANCE_TEST_LEVEL_UP_DESC,Amélioration
 WARMUP_ARENA_TASK_ENTRANCE,Récompenses
 SNS_ACTIVITY_TEXT02,Venez participer à l'événement de communauté !
@@ -5169,7 +5169,8 @@ La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases 
 (3) Le nombre de Tickets d\'Arène nécessaire dans l\'Arène Ultime augmentera en fonction du nombre de combats par jour. 2 Tickets d\'Arène (du 1er au 5ème combat), 3 Tickets d\'Arène (du 6ème au 10ème combat), 4 Tickets d\'Arène (du 11ème au 15ème combat), 5 Tickets d\'Arène (à parti du 16ème combat).
 (4) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
 (2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Classement Général passeront au Rang Grand Maître.
-(3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.|4. Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Suppléants. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
+(3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.
+(4) En cas de défaite défensive en Rang Bronze, Argent et Or, aucun point ne sera déduit. Après avoir atteint le Rang Diamant, en cas de défaite défensive quelques points seront déduits. Après avoir atteint le Rang Maître, en cas de défaite défensive les points seront déduits normalement.|4.Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Suppléants. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
 (2) Chaque Fille peut combattre pendant 2 tours au maximum. Si elle n’est pas vaincue au bout de ces 2 tours, elle sera obligatoirement retirée du champs de bataille (considérée comme vaincue).
 (3) Vous pouvez également choisir les Serviteurs de remplacement. Lors d’une Défaite d’un tour, les Serviteurs suppléants entreront sur le champs de bataille dans l’ordre prédéfini. Après une Victoire d’un tour, le Serviteur actuel continuera à combattre.
 (4) Le nombre de Filles suppléantes et de Serviteurs suppléants est différent pour chaque Rang.
@@ -5346,3 +5347,13 @@ SCHOOL_PRACTISE_QUICK6,Voulez-vous utiliser {1} Gemmes afin de continuer ?
 SCHOOL_PRACTISE_QUICK7,Vous ne pouvez pas utiliser la fonction Smasher au-delà du nombre indiqué.
 CHOOSE_ARTIFACT,Choisir l'Antiquité
 SCHOOL_PRACTISE_QUICK8,Smasher
+TRAVEL_NEW_TEXT17,"Cette Fille est actuellement dans le Gîte dans Excursion, voulez-vous la retirer ?"
+TRAVEL_NEW_TEXT18,"Cette Fille est actuellement dans un Bâtiment (Boulangerie/Arbre à Souhait/Marché) dans Excursion, voulez-vous la retirer ?"
+ACTIVITY_COUNTDOWN_TEXT01,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël et Pack de l'Avent !
+ACTIVITY_COUNTDOWN_TEXT02,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël !
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT01,Récompense(s) Obtenue(s)
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT02,"Cette récompenses de Noël n'est plus disponible, Senpai !"
+ACTIVITY_COUNTDOWN_HELP,"1. Durant cet événement, collectez des récompenses de Noël de votre Calendrier de l'Avent à chaque connexion quotidienne !|2. En collectant certaines des récompenses de Noël, un Pack de l'Avent sera déclenché durant une période de temps limité.|3. Les récompenses de Noël de connexion quotidienne et les Pack de l'Avent ne seront disponibles uniquement durant 24 heures."
+ACTIVITY_COUNTDOWN_TEXT03,Pack de l'Avent
+ACTIVITY_COUNTDOWN_TEXT04,Récompenses de Connexion
+ACTIVITY_COUNTDOWN_TIPS,"Ce Pack de l'Avent n'est pas encore disponible ! Ne le ratez pas le jour J, Senpai~"

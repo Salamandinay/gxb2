@@ -38,7 +38,7 @@ id,name,charge_ios,charge,currency,show_name
 35,Gratis Auflade Paket,1.99,2.29,€,Gratis Auflade Paket
 37,5-Sterne Paket,0.99,1.09,€,5-Sterne Paket
 38,Abonnieren,0.99,0.99,€,Abonnement
-39,Karte zum Mondfest,9.99,10.99,€,Karte zum Mondfest
+39,Black Friday Bonuskarte,9.99,10.99,€,Black Friday Bonuskarte
 40,Wöchentliches Abonnement,0.99,0.99,€,Wöchentliches Abonnement
 41,Monatliches Abonnement,3.99,4.49,€,Monatliches Abonnement
 42,Vierteljähriges Abonnement,9.99,10.49,€,Vierteljähriges Abonnement
@@ -349,8 +349,8 @@ id,name,charge_ios,charge,currency,show_name
 166,Neulingspaket 1,0.99,1.09,€,Neulingspaket 1
 167,Neulingspaket 2,19.99,21.99,€,Neulingspaket 2
 168,Neulingspaket 3,29.99,32.99,€,Neulingspaket 3
-177,Frühsommershopping 1,49.99,54.99,€,Frühsommershopping 1
-178,Frühsommershopping 2,99.99,109.99,€,Frühsommershopping 2
+177,Black Friday Sonderangebot 1,49.99,54.99,€,Black Friday Sonderangebot 1
+178,Black Friday Sonderangebot 2,99.99,109.99,€,Black Friday Sonderangebot 2
 180,Monatsanfangspaket 2,29.99,32.99,€,Monatsanfangspaket 2
 181,Monatsanfangspaket 3,49.99,54.99,€,Monatsanfangspaket 3
 182,Monatsanfangspaket 4,69.99,74.99,€,Monatsanfangspaket 4
@@ -549,3 +549,11 @@ id,name,charge_ios,charge,currency,show_name
 334,Bankett zu Thanksgiving 1,0.99,1.09,€,Bankett zu Thanksgiving 1
 335,Bankett zu Thanksgiving 2,9.99,10.99,€,Bankett zu Thanksgiving 2
 336,Bankett zu Thanksgiving 3,49.99,54.99,€,Bankett zu Thanksgiving 3
+337,Adventspaket 1,0.99,1.09,€,Adventspaket 1
+338,Adventspaket 2,0.99,1.09,€,Adventspaket 2
+339,Adventspaket 3,0.99,1.09,€,Adventspaket 3
+340,Adventspaket 4,9.99,10.99,€,Adventspaket 4
+341,Adventspaket 5,0.99,1.09,€,Adventspaket 5
+342,Adventspaket 6,0.99,1.09,€,Adventspaket 6
+343,Adventspaket 7,0.99,1.09,€,Adventspaket 7
+344,Adventspaket 8,9.99,10.99,€,Adventspaket 8

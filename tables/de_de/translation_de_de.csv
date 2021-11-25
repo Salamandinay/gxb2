@@ -1552,16 +1552,20 @@ TEST_FEEDBACK_TEXT_10,Schicken
 TEST_FEEDBACK_TEXT_11,Bewertung ändern
 TEST_FEEDBACK_TEXT_12,Bitte wähle eine Bewertung
 TEST_FEEDBACK_TEXT_13,Erfolgreich verschickt
-TOWER_MISC,Tests in der Akademie\nKämpfe dich hoch!
+TOWER_MISC,Teste dein Können und\nkämpfe dich hoch!
 TRIAL_MISC,Die Kämpfe der\nVergangenheit
 DUNGEON_MISC,Beseitigt die\nChaos-Monster
 ARENA_MISC,"
 Führe die Mädchen
-in den Kampf
+in den Kampf!
 Kämpfe für
-Ruhm und Ehre"
-ARENA_3V3_MISC,Feind gesichtet\nSofort angreifen!
-ARENA_PARTNER_MISC,Bilde Teams mit\ndeinen Freunden\nKämpft für die Ehre
+Ruhm und Ehre!"
+ARENA_3V3_MISC,Bilde drei Teams\nund kämpfe in\nmehreren Runden!
+ARENA_PARTNER_MISC,"
+Bilde Teams mit
+deinen Freunden
+und kämpft für
+Ruhm und Ehre!"
 PERSON_BTN_1,Konto
 PERSON_BTN_2,Server
 PERSON_BTN_3,Diagnose
@@ -2025,7 +2029,11 @@ ARENA_ALL_SERVER_ROUND_TEXT_5,Halbfinale
 ARENA_ALL_SERVER_ROUND_TEXT_6,Finale
 MATCH_NUM4,4ter Kampf
 MATCH_NUM5,5ter Kampf
-ARENA_ALL_SERVER_MISC,Werde der Champion!
+ARENA_ALL_SERVER_MISC,"
+Werde Champion
+beim server-
+übergreifenden
+Wettbewerb!"
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Du kannst Festlegen, dass nach Beginn der Qualifikationsrunde ein anderer Spieler unterstützt wird. Wenn der Spieler gewinnt, ist die Wette gewonnen, ansonsten ist sie verloren. |2. Spieler können sich nur im Finale selber unterstützen. |3. Das System entscheidet automatisch über den Kampf, auf den in dieser Runde gewettet wird. Kämpfe mit Spielern in derselben Gilde, auf demselben Server oder in demselben Sprachraum werden zuerst ausgewählt. |4. Die Münzen, die in eine Wette gesetzt werden können, hängen vom Fortschritt ab, den du beim Abenteuer erreicht hast: Die Menge der Münzen bestimmt sich danach wieviel du an einem Tag im Auto-Kampf, bei deiner weitesten Stufe, erhalten kannst (VIP und Abonnementenbonus sind nicht enthalten). |5. Wenn der Spieler, den du ausgewählt hast, gewonnen hat, erhältst du die doppelte Anzahl am Münzen, die du gesetzt hast. Die Belohnungen werden per Mail verschickt."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.
 ARENA_ALL_SERVER_NEW_COUNTDOWN,Nächste Saison:
@@ -2440,7 +2448,7 @@ GUILD_BOSS_TEXT03,Wöchentliche Belohnung:
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Level {1}
 SUMMON_CONFIRM,"Um {1} Male zu ziehen, musst du {2} Dias ausgeben. Willst du fortfahren?"
 TURING_TASK_LIMIT,Limit
-TURING_TASK_TEXT01,"Schließe während des Events die entsprechenden Aufgaben ab, um süffige Weine zu erhalten. Die Belohnungen werden direkt in deinen Rucksack gesendet."
+TURING_TASK_TEXT01,"Schließe die bestimmten Aufgaben ab, um Einkaufsgutscheine zu erhalten. Die Belohnungen werden direkt in deinem Rucksack gesendet."
 WELFARE_TEXT01,"Schreibe eine gewisse Anzahl an Mädchen ein, um den Kauf von wertvollen Items zu entsperren!"
 WELFARE_TEXT02,"Schreibe {1} Mal während des Events ein, um zu entsperren"
 BEGINNER_QUEST_LOCKED,Gesperrt
@@ -3744,16 +3752,16 @@ ACTIVITY_YEAR_FUND_LATE_AWARD_TIP,Sicher {1} Dias für nachträgliche Sammlung d
 ACTIVITY_YEAR_FUND_BUY,Sofort erhältlich\nnach dem Kauf:
 ACTIVITY_YEAR_FUND_PRICE,"€21,99"
 ACTIVITY_DOLL_BUY_UNLIMIT,Unbegrenzt
-ACTIVITY_CHRISTMAS_SALE_HELP,"1. Verwende die Geweihzucker um die Belohnungen zu tauschen. Die Belohnungen der ersten 2 Stufen können direkt getauscht werden. Um die folgenden Stufen zu entsperren musst du zuerst eine bestimme Menge von Geweihnzucker verwenden.|2. Die Belohnungen von der 1. Stufe werden festgelegt und die Belohnungen von den folgenden Stufen enthalten festgelegte Belohnungen und Belohnungen, die frei gewählt werden können.|3. Es wird beschränkt, wievielmal die Auswahlbelohnungen von jeder Stufe getauscht werden dürfen. Nachdem die Anzahl auf 0 gefallen ist können die entsprechenden Belohnungen nicht mehr gewählt und getauscht werden.|4. Erhalten der Geweihzucker: Uriels Auftrag, Weihnachtsüberraschung, Superpakete, Kostümpakete, Glückspakete, Weihnachtspakete.|5. Nach dem Ende des Events werden die noch nicht verwendeten Geweihzucker automatisch gegen Münzen getauscht. Jeder Geweihzucker entspricht 50K Münzen und die Münzen werden per Mail gesendet."
+ACTIVITY_CHRISTMAS_SALE_HELP,"1. Verwende die Einkaufsgutscheine, um die Belohnungen einzutauschen. Die Belohnungen der ersten 3 Stufen können direkt eingetauscht werden. Um die nächsten Stufen zu entsperren, musst du zuerst eine bestimme Menge von Einkaufsgutscheinen verwenden.|2. Die Belohnungen enthalten feste Belohnungen und Auswahlbelohnungen.|3. Die Chancen für Belohnungen jeder Stufe und jede Auswahlbelohnung sind begrenzt. Fallen die Chancen für eine Stufe auf 0, können Belohnungen dieser Stufe nicht mehr gekauft werden. Fallen die Chancen für eine Auswahlbelohnung auf 0, kann diese Auswahlbelohnung nicht mehr gewählt werden.|4. Erhalten des Einkaufsgutscheins: Einkaufsvorbereitung, Black Friday Sonderangebote, Superpakete, Kostümpakete, Glückspakete, Entdecker-Pakete.|5. Nach dem Ende des Events werden die noch nicht verwendeten ""Einkaufsgutscheine"" recycelt. Jeder Einkaufsgutschein entspricht 50k Münzen und die Münzen werden per Mail gesendet."
 RE_CHECKIN,Nachträglich\nanmelden
 RE_CHECKIN_TIPS,Sicher {1} Dias für nachträgliches Anmelden ausgeben?
 SUMMON_GIFTBAG_MENU01,Kapseln ziehen ({1}/{2})
 SUMMON_GIFTBAG_MENU02,Neues Mädchen
 SUMMON_GIFTBAG_HELP,"1. Um die neuen Mädchen an der Schule willkommen zu heißen, hat Babel euch einen Spezialbonus vorbereitet: Während des Events kannst du durch Ziehen der Kapseln zusätzliche Belohnungen erhalten. Wenn die gezogenen Super Kapseln oder neuen Mädchen eine bestimmte Zahl erreicht haben, bekommst du zusätzliche Belohnungen.|2. Wann dieses Event das nächste Mal stattfindet, wird auf unserer offiziellen Facebookseite vorher bekanntgegeben. Folg uns doch, um keine News mehr zu verpassen!"
-ACTIVITY_CHRISTMAS_SALE_NEED_COST,Verwende {1}x {2} um es zu entsperren
+ACTIVITY_CHRISTMAS_SALE_NEED_COST,"Verwende {1}x ""{2}"", um es zu entsperren."
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Vorschau
-ACTIVITY_CHRISTMAS_SALE_DESC,Verbrauch die Geweihzucker um gewollte Ressourcen zu kaufen!
-LARGE_ACTIVITY_CHRISTMAS_TEXT,Karte zum\nFrühlingsfest
+ACTIVITY_CHRISTMAS_SALE_DESC,"Verwende deine Einkaufsgutscheine, um die gewünschten Items einzutauschen!"
+LARGE_ACTIVITY_CHRISTMAS_TEXT,Black Friday\nShop
 ACTIVITY_YEAR_FUND_NOTICE_TEXT02,Kommt bald...
 ACTIVITY_CHRISTMAS_SALE_TITLE,Auswählen
 AWARD_LOOK_WINDOW_NEW,Belohnungsvorschau
@@ -4993,7 +5001,7 @@ ACTIVITY_TEA_TEXT2,Preiswertes Bonuspaket mit reichhaltigen Belohnungen und eine
 ACTIVITY_TEA_TEXT3,Schließe zuerst das vorherige Kapitel ab
 ACTIVITY_TEA_TEXT4,Teehaus-Fortschritt
 ACTIVITY_TEA_TEXT5,"Schließe die entsprechenden Kapitel ab, um Belohnungen zu bekommen."
-ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events ""Luvlys Inselreise"" und ""Mädchen-Spezialmissionen"", den Kauf der Superpakete, Kostümpakete, Glückspakete, Reiseversorgung, Geschenke zu Thanksgiving und Bankett zu Thanksgiving erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Es benötigt 5 Angelruten, 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Menge der gefangenen Fische werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
+ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events ""Luvlys Inselreise"" und ""Mädchen-Spezialmissionen"", den Kauf der Superpakete, Kostümpakete, Glückspakete, Reiseversorgung, Geschenke zu Thanksgiving und Bankett zu Thanksgiving erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Du benötigst 5 Angelruten, um 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Menge der gefangenen Fische werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
 ACTIVITY_FISH_BUTTON01,Galerie
 ACTIVITY_FISH_BUTTON02,Belohnung
 ACTIVITY_FISH_SKIP,Skip
@@ -5111,7 +5119,8 @@ Jede Saison dauert 28 Tage und wird in 5 Phasen unterteilet: Vorbereitungsphase,
 (3) Es hängt von der Anzahl deiner täglichen Kämpfe in der Ultimativen Arena ab, wie viele Arenatickets für einen Kampf benötigt werden. Für den 1. bis 5. Kampf werden jeweils 2 Arenatickets benötigt, für den 6. bis 10. Kampf 3 Arenatickets, für den 11. bis 15. Kampf 4 Arenatickets und ab dem 16. Kampf immer 5 Arenatickets.
 (4) Unter ""Verlauf"" können die letzten 10 Kämpfe angeschaut werden.|3. Stufen|(1) Während der Qualifikationsphase werden die Spieler in 6 Stufen gegliedert: Bronze, Silber, Gold, Diamant, Meister und Großmeister. Außer in den Stufen „Meister“ und „Großmeister“ gibt es bei den anderen 4 Stufen jeweils noch 5 Untergruppen, in denen die Spieler von V bis auf I aufsteigen können.
 (2) Jedes Mal, wenn ein Spieler 100 Punkte gewonnen hat, steigt er in die nächste Untergruppe/Gruppe auf. Die TOP320 Spieler in der Stufe „Meister“ qualifizieren sich für die Stufe „Großmeister“.
-(3) Nimmst du zum ersten Mal an dem Qualifikationskampf teil, musst du in der Gruppe V der Stufe „Bronze“ anfangen. Zu Beginn der neuen Saison werden alle Stufen sowie Gruppen zurückgesetzt. Entsprechend den Ergebnissen der vorherigen Saison wird dein Rang in der darauffolgenden Saison festgelegt.|4. Kampfregeln|(1)In der ultimativen Arena wird eine brandneue Backup-Kampfregel eingeführt. Man hat nicht nur eine Kampfaufstellung, sondern auch eine Backup-Aufstellung. Sind in einem Kampf die 6 Mädchen der Startaufstellung einer Seite gestorben, so ist ein Durchgang beendet und die toten Mädchen (beider Seiten) werden durch Mädchen aus der Backup-Aufstellung entsprechend ihrer Reihenfolge ersetzt, um die Kampfaufstellung wieder aufzufüllen (Die Backup-Mädchen der Frontline werden bevorzugt auf der Frontline eingestellt, die der Backline auf der Backline). Die HP der lebenden Mädchen werden beibehalten. Dann startet der nächste Durchgang. Das ganze geht so lange, bis alle Mädchen und Backup-Mädchen einer Seite gestorben sind.
+(3) Nimmst du zum ersten Mal an dem Qualifikationskampf teil, musst du in der Gruppe V der Stufe „Bronze“ anfangen. Zu Beginn der neuen Saison werden alle Stufen sowie Gruppen zurückgesetzt. Entsprechend den Ergebnissen der vorherigen Saison wird dein Rang in der darauffolgenden Saison festgelegt.
+(4) Wirst du von einem anderen Spieler herausgefordert, werden dir bei einer Niederlage in den Stufen Bronze, Silber und Gold keine Punkte abgezogen, in der Stufe Diamant ein paar wenige Punkte und ab der Stufe Meister werden dir normal Punkte abgezogen.|4. Kampfregeln|(1)In der ultimativen Arena wird eine brandneue Backup-Kampfregel eingeführt. Man hat nicht nur eine Kampfaufstellung, sondern auch eine Backup-Aufstellung. Sind in einem Kampf die 6 Mädchen der Startaufstellung einer Seite gestorben, so ist ein Durchgang beendet und die toten Mädchen (beider Seiten) werden durch Mädchen aus der Backup-Aufstellung entsprechend ihrer Reihenfolge ersetzt, um die Kampfaufstellung wieder aufzufüllen (Die Backup-Mädchen der Frontline werden bevorzugt auf der Frontline eingestellt, die der Backline auf der Backline). Die HP der lebenden Mädchen werden beibehalten. Dann startet der nächste Durchgang. Das ganze geht so lange, bis alle Mädchen und Backup-Mädchen einer Seite gestorben sind.
 (2) Jedes Mädchen darf maximal an 2 Durchgängen teilnehmen. Hat ein Mädchen 2 Durchgänge überlebt, wird sie automatisch durch ein Backup-Mädchen ersetzt (und gilt dann dadurch quasi als „tot“).
 (3) Die Reihenfolge der Diener kann vom Spieler bestimmt werden. Nachdem der Spieler einen Durchgang verloren hat, wird entsprechend der Reihenfolge der nächste Diener aufgestellt. Gewinnt der Spieler den Durchgang, wird der aufgestellte Diener weiterkämpfen.
 (4) Je höher die Stufe, desto mehr Backup-Mädchen und Diener sind verfügbar.
@@ -5281,7 +5290,7 @@ ACTIVITY_FISH_SURPRISE_TITLE,Belohnungen fürs Angeln
 ACTIVITY_FISH_SURPRISE_BUTTON,Prüfen
 NEW_RECHARGE_PUSH_TEXT01,Insgesamt erhältlich: {1} Dias
 SCHOOL_PRACTISE_QUICK1,Schnell abschließen
-SCHOOL_PRACTISE_QUICK2,"Du hast in der Vergangenheit Stufe 60 erreicht und kannst die ""schnell abschließen""-Funktion nutzen.\nDu kannst bis zur {1}. Stufe schnell abschließen~"
+SCHOOL_PRACTISE_QUICK2,"Du hast in der Vergangenheit Stufe 60 erreicht und kannst die ""schnell abschließen""-Funktion nutzen.\nDu kannst die folgende(n) {1} Stufe(n) schnell abschließen~"
 SCHOOL_PRACTISE_QUICK3,Wähle die Anzahl der Stufen
 SCHOOL_PRACTISE_QUICK4,Normal\nkämpfen
 SCHOOL_PRACTISE_QUICK_HELP,"1. Sobald du die [c][ea7900]60.[-][/c] Stufe in der Prüfung einer Fraktion abgeschlossen hast, wird in der nächsten Saison die Funktion ""Schnell abschließen"" entsperrt.|2. Benutzt du die Funktion ""Schnell abschließen"", brauchst du nicht mehr zu kämpfen und die ersten[c][ea7900]「Höchste jemals abgeschlossene Stufe minus 30」[-][/c] Stufen werden automatisch abgeschlossen.|3. Die Funktion wird separat für jedes Haus ermittelt und sie beeinflussen sich nicht gegenseitig.|4. Wenn die Anzahl der ausgewählten Stufen höher ist als deine vorhandenen Zulassungstickets, werden entsprechend dem ursprünglichen Preis Dias abgezogen."
@@ -5290,3 +5299,13 @@ SCHOOL_PRACTISE_QUICK6,Es kostet {1} Dias. Fortfahren?
 SCHOOL_PRACTISE_QUICK7,Limit der schnell abschließbaren Stufen erreicht
 CHOOSE_ARTIFACT,Antiquität wählen
 SCHOOL_PRACTISE_QUICK8,Schnell\nabschließen
+TRAVEL_NEW_TEXT17,Das Mädchen ist aktuell in der Basis unter Campusausflug eingesetzt. Willst du sie aus der Basis entfernen?
+TRAVEL_NEW_TEXT18,Das Mädchen ist in einem der Gebäude (Bäckerei/Wunschbaum/Markt) eingesetzt. Willst du sie aus dem Gebäude entfernen?
+ACTIVITY_COUNTDOWN_TEXT01,Du hast die heutigen Anmelde-Belohnungen eingesammelt. Morgen gibt es weitere reichhaltige Belohnungen und ein Überraschungspaket~
+ACTIVITY_COUNTDOWN_TEXT02,Du hast die heutigen Anmelde-Belohnungen eingesammelt. Morgen gibt es weitere reichhaltige Belohnungen~
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT01,Erhaltene Belohnungen
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT02,Heutiges Anmelden beendet
+ACTIVITY_COUNTDOWN_HELP,"1. Melde dich während des Events täglich an, um die Adventsbelohnungen zum Anmelden zu sammeln!|2. An bestimmten Tagen werden zusätzliche tägliche Adventspakete ausgelöst, sobald du die Anmelde-Belohnungen eingesammelt hast.|3. Nach dem täglichen Reset können die Anmelde-Belohnungen und die Adventspakete des letzten Tages nicht mehr erhalten oder gekauft werden."
+ACTIVITY_COUNTDOWN_TEXT03,Adventspaket
+ACTIVITY_COUNTDOWN_TEXT04,Belohnungen zum Anmelden
+ACTIVITY_COUNTDOWN_TIPS,An diesem Tag wird ein Überraschungs-Adventspaket angeboten. Verpass es bloß nicht~
