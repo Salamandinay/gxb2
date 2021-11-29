@@ -1279,9 +1279,9 @@ RECEIVE_LIKE,Herz erhalten
 NO_COMMENTS,Keine Kommentare bisher…
 LIKE,LIKE
 PARTNER_CHOOSE_PICTURE,Aktivieren
-HAVE_CHOOSE_PICTURE,Wurde bereits als Standardbild festgelegt
-PARTNER_CANCEL_PICTURE,Canceln
-HAVE_CANCEL_PICTURE,Dieses Bild als Standardbild zu verwenden wurde bereits gecancelt
+HAVE_CHOOSE_PICTURE,Als Standardbild festgelegt
+PARTNER_CANCEL_PICTURE,Deaktivieren
+HAVE_CANCEL_PICTURE,Als Standardbild deaktiviert
 PARTNER_COMMENT_IN_CD,Du hast zu schnell kommentiert. Bitte warte kurz
 PARTNER_WAIT_TO_ADD_COMMENT,Lass uns eine Nachricht senden!
 PARTNER_COMMENT_LOCKED,Du hast das Mädchen nicht erhalten und kannst keinen Kommentar senden
@@ -3433,7 +3433,7 @@ FAIRY_TALE_NO_BATTLE_REPORT,Kein Kampfverlauf verfügbar
 FAIRY_TALE_LEVEL_NOT_ENOUGH,Zu niedriges Level. Buff von diesem Level kann nicht gewählt werden.
 FAIRY_TALE_NPC,NPC
 FAIRY_TALE_NPC_LOCATION_RESTRICT,Platz nicht ausreichend! Die NPCs brauchen 2 Plätze nebeneinander.
-ACADEMY_ASSESSMENT_ONE_CAMP_RANK_AWARD_HELP,"1. Der Spieler der die meisten Punkte bei der jeweiligen Hausprüfung erreicht hat, erhält als zusätzliche Belohnung einen auf 14 Tage limitierten Avatar. |2. Wenn es mehrere Spieler (bis zu 10) gibt, die die gleiche Punktzahl haben und den ersten Platz einnehmen, werden sie in der Reihenfolge ihrer Freigabe mit den Avatars belohnt. |3. Die Bewertungsergebnisse werden als individuelle Server-Bestenliste eingestuft."
+ACADEMY_ASSESSMENT_ONE_CAMP_RANK_AWARD_HELP,"1. Der Spieler, der die meisten Punkte bei der jeweiligen Hausprüfung erreicht hat, erhält als zusätzliche Belohnung einen auf 14 Tage limitierten Avatarbildrahmen. |2. Wenn es mehrere Spieler (bis zu 10) gibt, die die gleiche Punktzahl haben und den ersten Platz einnehmen, werden sie in der Reihenfolge, in der sie die Punktzahl erreicht haben, mit den Avatarbildrahmen belohnt. |3. Die Bewertungsergebnisse werden als individuelle Server-Bestenliste eingestuft."
 SETTLEMENT_AWARD,Abschlussbelohnungen
 TOP_SCORE,Höchste Punkte:
 PUT_OUT_AWARD_ACCORDING_TO_SCORE,Die Belohnungen werden nach den Punkten\nabgerechnet
@@ -3474,7 +3474,7 @@ WISH_GACHA_TEXT8,x{1}
 MONTH_CARD_VIP,+{1} VIP EXP
 MONTH_CARD_TIP_1,Kaufe um {1} Dias sofort zu erhalten
 MONTH_CARD_TIP_2,Erhatle 30 Tage täglich {1} Dias
-ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Lieber Senpai, die aktuelle Prüfung findet nun in Saisonform statt. Eine Saison dauert 14 Tage. Davon sind 13 Tage Prüfungsphase und 1 Tag Anzeigephase der Ergebnisse.|2. Die 6 Häuser werden für die Prüfung geöffnet. Du kannst du nur Mädchen des entsprechenden Hauses einsetzen. Am Eröffnungstag wird der Herausforderungseingang geschlossen, der Herausforderungsfortschritt der Senpais zurückgesetzt und die entsprechenden Belohnungen geschickt. |3. Jede Hausprüfung hat 60 Stufen. Die Feinde in der Prüfung ändern sich mit jeder Saison. Die feindliche Aufstellung kann über die Detaill-Taste am Eingang der Stufe geprüft werden.|4. Jede Herausforderung kostet 1 Zulassungsticket. Jeden Tag erhälst du 10 Zulassungstickets. Bitte achte darauf sie besonnen einzusetzen. Natürlich kannst du aber auch mit Dias weitere Zulassungstickets kaufen.|5. In jeder Stufe sind Belohnungen für das zusätzliche Belohnungen für das erstmalige Absolvieren der Stufe erhältlich. Diese Belohnungen kann man nur das erste Mal erhalten.|6. Wenn die Herausforderung erfolgreich war, kannst du Belohnungen für das Bestehen der Stufe erhalten. Gleichzeitig können Prüfungszertifikate eingesetzt werden, um Säuberungsbelohnungen zu erhalten. Säuberungen sind immer erfolgreich. |7. Jeden Tag erhälst du 2 Prüfungszertifikate. Wenn du zum ersten Mal die 9./18./30. Stufe bestehst, wird am nächsten Tag jeweils 1 Zertifikat hinzugefügt. Maximal können 3 Zertifikate hinzugefügt werden. Unterschiedliche Häuser werden nicht zurückgesetzt. (Beispiel: Wenn du zum ersten Mal die 9. Stufe bestehst, erhälst du ab dem nächsten Tag täglich 3 Prüfungszertifikate für die Säuberung). |8. Du kannst mit Dias weitere Prüfungszertifikate kaufen. Der Preis steigt mit der Anzahl der gekauften Male. Jeden Tag kannst du maximal 10 Prüfungszertifikate kaufen. (Die Prüfungszertifikate, die nicht verwendet werden, werden zurückgesetzt). |9. Zulassungstickets und Prüfungszertifikate werden jeden Tag um 00:00 (UTC/GMT 0) zurückgesetzt. |10. Nach dem Ende der Herausforderung (bezieht sich nicht auf die Säuberung), kannst du Prüfungspunkte erhalten. In jedem Haus erhälst du von Stufe 1-20 1 Punkt, Stufe 21-40 2 Punkte und Stufe 41-60 4 Punkte. Am Abrechnungstag werden deine Belohnungen entsprechend deine gesamten Stufenpunkte per Mail an dich geschickt und diese Stufenpunkte werden zurückgesetzt.|11. Der Spieler der die meisten Punkte bei der jeweiligen Hausprüfung erreicht hat, erhält als zusätzliche Belohnung einen auf 14 Tage limitierten Avatar. Wenn es mehrere Spieler (bis zu 10) gibt, die die gleiche Punktzahl haben und den ersten Platz einnehmen, werden sie in der Reihenfolge ihrer Freigabe mit den Avatars belohnt. Belohnungen werden per Mail geschickt."
+ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Lieber Senpai, die aktuelle Prüfung findet nun in Saisonform statt. Eine Saison dauert 14 Tage. Davon sind 13 Tage Prüfungsphase und 1 Tag Anzeigephase der Ergebnisse.|2. Die 6 Häuser werden für die Prüfung geöffnet. Du kannst du nur Mädchen des entsprechenden Hauses einsetzen. Am Eröffnungstag wird der Herausforderungseingang geschlossen, der Herausforderungsfortschritt der Senpais zurückgesetzt und die entsprechenden Belohnungen geschickt. |3. Jede Hausprüfung hat 60 Stufen. Die Feinde in der Prüfung ändern sich mit jeder Saison. Die feindliche Aufstellung kann über die Detaill-Taste am Eingang der Stufe geprüft werden.|4. Jede Herausforderung kostet 1 Zulassungsticket. Jeden Tag erhälst du 10 Zulassungstickets. Bitte achte darauf sie besonnen einzusetzen. Natürlich kannst du aber auch mit Dias weitere Zulassungstickets kaufen.|5. In jeder Stufe sind Belohnungen für das zusätzliche Belohnungen für das erstmalige Absolvieren der Stufe erhältlich. Diese Belohnungen kann man nur das erste Mal erhalten.|6. Wenn die Herausforderung erfolgreich war, kannst du Belohnungen für das Bestehen der Stufe erhalten. Gleichzeitig können Prüfungszertifikate eingesetzt werden, um Säuberungsbelohnungen zu erhalten. Säuberungen sind immer erfolgreich. |7. Jeden Tag erhälst du 2 Prüfungszertifikate. Wenn du zum ersten Mal die 9./18./30. Stufe bestehst, wird am nächsten Tag jeweils 1 Zertifikat hinzugefügt. Maximal können 3 Zertifikate hinzugefügt werden. Unterschiedliche Häuser werden nicht zurückgesetzt. (Beispiel: Wenn du zum ersten Mal die 9. Stufe bestehst, erhälst du ab dem nächsten Tag täglich 3 Prüfungszertifikate für die Säuberung). |8. Du kannst mit Dias weitere Prüfungszertifikate kaufen. Der Preis steigt mit der Anzahl der gekauften Male. Jeden Tag kannst du maximal 10 Prüfungszertifikate kaufen. (Die Prüfungszertifikate, die nicht verwendet werden, werden zurückgesetzt). |9. Zulassungstickets und Prüfungszertifikate werden jeden Tag um 00:00 (UTC/GMT 0) zurückgesetzt. |10. Nach dem Ende der Herausforderung (bezieht sich nicht auf die Säuberung), kannst du Prüfungspunkte erhalten. In jedem Haus erhälst du von Stufe 1-20 1 Punkt, Stufe 21-40 2 Punkte und Stufe 41-60 4 Punkte. Am Abrechnungstag werden deine Belohnungen entsprechend deine gesamten Stufenpunkte per Mail an dich geschickt und diese Stufenpunkte werden zurückgesetzt.|11. Der Spieler, der die meisten Punkte bei der jeweiligen Hausprüfung erreicht hat, erhält als zusätzliche Belohnung einen auf 14 Tage limitierten Avatarbildrahmen. Wenn es mehrere Spieler (bis zu 10) gibt, die die gleiche Punktzahl haben und den ersten Platz einnehmen, werden sie in der Reihenfolge, in der sie die Punktzahl erreicht haben, mit den Avatarbildrahmen belohnt."
 WISH_GACHA_NUM1,100
 WISH_GACHA_NUM2,200
 WISH_GACHA_NUM3,300
@@ -5311,3 +5311,20 @@ ACTIVITY_COUNTDOWN_TEXT04,Belohnungen zum Anmelden
 ACTIVITY_COUNTDOWN_TIPS,An diesem Tag wird ein Überraschungs-Adventspaket angeboten. Verpass es bloß nicht~
 ACTIVITY_BLACKFRIDAYSHOP_TEXT1,Tauschen
 ACTIVITY_BLACKFRIDAYSHOP_TEXT2,Gib die Anzahl der Tausche ein
+TIME_CLOISTER_TEXT58,Dieser Zweig wird noch nicht gesperrt.
+TIME_CLOISTER_TEXT59,Gesperrte Zweige angezeigt
+TIME_CLOISTER_TEXT60,Gesperrte Zweige versteckt
+ACTIVITY_GROWTH_PLAN_TEXT01,Mädchen wählen
+ACTIVITY_GROWTH_PLAN_TEXT02,"Wähle ein Zielmädchen zum Ausbilden aus und die Belonungen von ""Sonderausbildung"" werden diesem Mädchen entsprechend eingestellt."
+ACTIVITY_GROWTH_PLAN_TEXT03,Mädchen wählen
+ACTIVITY_GROWTH_PLAN_TEXT04,Ausbildungspunkt
+ACTIVITY_GROWTH_PLAN_TEXT05,Aufgaben
+ACTIVITY_GROWTH_PLAN_TEXT06,Mädchen wechseln
+ACTIVITY_GROWTH_PLAN_TEXT07,Sammeln
+ACTIVITY_GROWTH_PLAN_TEXT08,Punkte
+ACTIVITY_GROWTH_PLAN_TEXT09,Grundbelohnung
+ACTIVITY_GROWTH_PLAN_TEXT10,Zusatzbelohnung
+ACTIVITY_GROWTH_PLAN_TEXT11,Ausbildungsprojekt kaufen
+ACTIVITY_GROWTH_PLAN_TEXT12,"Wähle zuerst ein Mädchen zum Ausbilden aus. Schließe die täglichen aufgaben ab, um Ausbildungspunkte zu erhalten und die Grundbelohnungen zu sammeln! Kaufst du das Ausbildungsprojekt, werden noch weitere Zusatzbelohnungen entsperrt!"
+ACTIVITY_GROWTH_PLAN_TEXT13,"1. Jede tägliche Aufgabe (unter ""Buch der Illusion"") gibt 1 Ausbildungspunkt. Sobald du eine bestimmte Menge von Ausbildungspunkten gesammelt hast, kannst du die entsprechenden Belohnungen (manuell) sammeln.|2. Hast du die Aufgabe【Schließe alle täglichen Aufgaben ab】abgeschlossen, werden keine Ausbildungspunkte gegeben.|3. Zuerst musst du ein Mädchen zum Ausbilden wählen und die Belohnungen von ""Sonderausbildung"" werden diesem Mädchen entsprechend angepasst. Sobald du eine Belohnung gesammelt hast, kann dieses Mädchen zum Ausbilden nicht mehr gewechselt werden.|4. Hast du während des Events einige Aufgaben nicht rechtzeitig abgeschlossen oder Belohnungen unter ""Sonderausbildung"" nicht rechtzeitig gesammelt, sodass du keine Punkte erhalten kannst, kannst du am nächsten Tag oder nachher diese Punkte nachträglich erhalten, indem du auf das Pluszeichen tippst. 5 Punkte kosten 20 Dias."
+TIME_CLOISTER_TEXT61,Dieser Korridor ist noch\nnicht zugänglich.

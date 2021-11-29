@@ -2696,7 +2696,7 @@ ACTIVITY_EASTER_EGG_FOUND,Congratulations! You've found an Easter Egg!
 ACTIVITY_EASTER_EGG_HELP,"1. You can get a random reward and increase KongMing's Event Intimacy in the event by sending her Pink Balloons, sometimes the reward you receive will be better (special rewards). If you fail to get a special reward, the rate for you to acquire special reward will be boosted. The rate-boost will be reset after you get a special reward.|2. KongMing's Event Intimacy will increase by 1 point if she sends out a normal reward, her Event Intimacy will increase by 2 points if she sends out a special reward. You will get additional rewards via Mail after KongMing's Event Intimacy reaches certain levels.|3. Methods to acquire Pink Balloons: Daily Mail, Complete all Daily Tasks, Slot Points Event, Lucky Bonus, Value Pack, Special Gift Pack and Special Skin Pack.|4. The unused Pink Balloons will be automatically exchanged into Coins at the rate of 300K Coins each after the event is over. The Coins will be sent via Mail."
 ACTIVITY_EASTER_EGG_TIPS01,Find Easter Eggs to unlock more color!
 DATES_GIFTS_TEXT02,Send Gift
-HOUSE_TEXT_55,Switch Floor
+HOUSE_TEXT_55,Switch
 HERO_CHALLENGE_TIPS40,"The chapter is currently locked, do you want to go to Character Challenge?"
 EASTER_GIFTBAG_DES,Exclusive Pack for Easter! It will only be available today!
 ROB_EQUIP_CONFIRM,"Another girl is equipping this, continue?"
@@ -3502,7 +3502,7 @@ LIMIT_BUY_TIMES,Purchase limit: {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,The Entrance Exam for the new semester has begun!\nIt's a perfect chance for you to test out the new Girls on campus!
 GUILD_KICK_TIPS,Are you sure to remove this player from your Guild?
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. The new version of the feature: House Exams is updated. It now will be divided into seasons that are made up of an exam period (13 days) and a result display period (1 day).|2. The Exams of 6 Houses will all be available during the exam period. But only the girls in the corresponding faction can be used in the exams. You will have your Exam progress reset and receive rewards according to your progress in this season(before the reset) in the result display period.|3. The Exam for each House has 100 stages, the enemies will be different in each season. You will be able to check the detail of the enemy lineups of each stage by tapping the button in the top right corner of the stage.|4. The Admission Tickets will be refreshed to 25 each day, you can purchase more Admission Tickets with Gems.|5. You will get an additional reward for the first time you pass a stage. This reward won't be refreshed by seasons. (But if you have acquired the reward in the old version of this feature, you will still be able to acquire it again for once in the new version)|6. You will get rewards for passing a stage. You will also be able to raid the passed levels with Certificates for additional rewards.|7. The Certificate you hold will be refreshed to 2 each day. And you will increase your daily Certificate refresh amount to 3/4/5 after passing Stage 9/18/30 in the exam of any one of the 6 Houses and get 1 additional Certificate on the day you achieve this.|8. You are able to purchase 10 additional Certificates with Gems (The price of Certificates will increase gradually as you buy more in a day) each day. (Certificate you have will also be refreshed so please use them up in time).|9. The daily refresh time for Admission Tickets and Certificates will be at 0:00 （UTC/GMT 0) every day.|10. You will get Exam Scores for passing (not raiding) stages. You can get 1 Exam Score for passing Stage 1-20, 2 Exam Scores for passing Stage 21-40, 4 Exam Scores for passing Stage 41-60, 6 Exam Scores for passing Stage 61-80 and 8 Exam Scores for passing Stage 81-100. You will get different rewards on the result display days according to the total Exam Scores you get|11. The player who gets the highest score in the exam of a House will also get a frame that lasts for 14 days from that house. If multiple players get the same Exam Score in 1 season, their position in the ranking list will be arranged according to the time they pass the test. 10 players at most can get the frame in the exam of a House this way(Which means they will also need to get the same highest scores instead of just being in Top 10 of the ranking list). The rewards will be issued via Mail."
-GACHA_GUARANTEE_TEXT,"1. During the event, all chances to obtain 5-star girls will be [c][DE512B]doubled[-][/c].|2. For every [c][DE512B]100[-][/c] Advanced Capsules drawn, an additional increased rate to obtain the new Girl will be added on top of the doubled rate.|3. Once [c][DE512B]500[-][/c] draws have been reached, [c][DE512B]{1}[-][/c] is guaranteed to be drawn. Thereafter, your progress will reset."
+GACHA_GUARANTEE_TEXT,"1. During the event, all chances to obtain 5-star girls will be [c][DE512B]doubled[-][/c].|2. For every [c][DE512B]100[-][/c] Advanced Capsules drawn, an additional increased rate to obtain the new Girl will be added on top of the doubled rate.|3. Once [c][DE512B]500[-][/c] draws have been reached, [c][DE512B]{1}[-][/c] is guaranteed to be drawn. Whenever you receive {1} from Advanced Capsules, your progress will reset."
 GACHA_GUARANTEE_UP,Rate UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Chances:{1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Not enough Challenge Chance!
@@ -5288,7 +5288,7 @@ ACTIVITY_FISH_SURPRISE_TITLE,Reward
 ACTIVITY_FISH_SURPRISE_BUTTON,Check
 NEW_RECHARGE_PUSH_TEXT01,Total reward: {1} Gems
 SCHOOL_PRACTISE_QUICK1,Smash
-SCHOOL_PRACTISE_QUICK2,"Senpai, you've successfully unlocked ""Smash"" feature! You can pass the following {1} Stages easier in bulk now!"
+SCHOOL_PRACTISE_QUICK2,"Senpai, you've successfully unlocked ""Smash"" feature! You can pass the following {1} Stages in bulk now!"
 SCHOOL_PRACTISE_QUICK3,Select the number of Stages you want to pass
 SCHOOL_PRACTISE_QUICK4,Fight
 SCHOOL_PRACTISE_QUICK_HELP,"1. After passing [c][ea7900]60[-][/c] stages in any one of the House Exams, ""Smash"" feature will be unlocked in the next season.|2. Once the feature is unlocked, you can quickly pass the previous [c][ea7900]([highest stage reached] – 30)[-][/c] Stages without actually entering the battles.|3. This feature unlocks and functions separately in each House.|4. If the number of stages to be completed is more than the number of Admission Tickets you have, corresponding Gems will be consumed to purchase more Admission Tickets for the procedure."
@@ -5309,3 +5309,20 @@ ACTIVITY_COUNTDOWN_TEXT04,Login Reward
 ACTIVITY_COUNTDOWN_TIPS,"Here is the Advent Pack of the day! Don't miss it, Senpai~"
 ACTIVITY_BLACKFRIDAYSHOP_TEXT1,Exchange
 ACTIVITY_BLACKFRIDAYSHOP_TEXT2,Select Quantity
+TIME_CLOISTER_TEXT58,對應的星空儀科技未解鎖
+TIME_CLOISTER_TEXT59,已顯示未解鎖科技
+TIME_CLOISTER_TEXT60,已隱藏未解鎖科技
+ACTIVITY_GROWTH_PLAN_TEXT01,選擇成長戰姬
+ACTIVITY_GROWTH_PLAN_TEXT02,選擇一個戰姬作爲成長戰姬。戰姬正成長劃的獎勵内容會隨選擇的戰姬而定。
+ACTIVITY_GROWTH_PLAN_TEXT03,選擇戰姬
+ACTIVITY_GROWTH_PLAN_TEXT04,成長積分
+ACTIVITY_GROWTH_PLAN_TEXT05,前往任務
+ACTIVITY_GROWTH_PLAN_TEXT06,重選戰姬
+ACTIVITY_GROWTH_PLAN_TEXT07,領取獎勵
+ACTIVITY_GROWTH_PLAN_TEXT08,積分
+ACTIVITY_GROWTH_PLAN_TEXT09,基礎獎勵
+ACTIVITY_GROWTH_PLAN_TEXT10,額外獎勵
+ACTIVITY_GROWTH_PLAN_TEXT11,購買額外計劃
+ACTIVITY_GROWTH_PLAN_TEXT12,選擇一個戰姬作爲成長戰姬，完成每日任務纍計成長積分，可獲得基礎獎勵。購買額外成長計劃后更有豐厚額外獎勵。
+ACTIVITY_GROWTH_PLAN_TEXT13,1.活動期間，每完成1個每日任務可獲得1點成長積分。成長積分滿足條件可獲得獎勵，需要手動領取。|2.每日任務的【完成所有日常任務】不獲得魂器積分。|3.活動期間，學長可以選擇一個戰姬作爲成長戰姬，戰姬養成計劃的獎勵内容會根據成長戰姬而定。領取獎勵后將無法再更改成長戰戟。|4.活動期間，玩家若有未完成/未領取的每日任務而錯失積分，仍可在次日及之後點擊補分按鍵補足成長積分。5點積分需要消耗20鑽石。
+TIME_CLOISTER_TEXT61,Coming Soon

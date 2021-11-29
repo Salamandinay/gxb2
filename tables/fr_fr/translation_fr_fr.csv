@@ -738,7 +738,7 @@ SHELTER_GIFTBAG_HELP_TITLE,Aide
 SHELTER_GIFTBAG_INPUT,Choisissez les matériaux
 SHELTER_GIFTBAG_TITLE,Tâche
 SHELTER_ACCEPT_MISSION,Accepter
-BATTLE_ARENA_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois: Une victoire donne 2 points, une défaite donne 1 point."
+BATTLE_ARENA_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois :\nUne victoire donne 2 points, une défaite donne 1 point."
 SHELTER_NOT_ENOUGH_MATERIAL,Matériaux Insuffisants
 NO_USELESS_MAIL,Aucun courrier à supprimer
 MANA_WEEK_CARD_TEXT01,"
@@ -1464,7 +1464,7 @@ PET_EVOLVE_TITLE,Évolution
 PET,Serviteur
 PET_CANT_RESTORE_TIPS,"Pour faire renaître un Serviteur, il faut que son niveau ou que son aura soient supérieurs à 1"
 CHOOSE_PET_WINDOW,Serviteur dans l'Équipe
-CHOOSE_PET_TITLE,Choisissez un Serviteur à faire combattre
+CHOOSE_PET_TITLE,Choisissez un Serviteur pour combattre
 CHOOSE_PET_TEXT01,Non\nDomestiqué
 CHOOSE_PET_TEXT02,Choisir
 PET_INFO_WINDOW,Détail du Serviteur
@@ -5090,7 +5090,7 @@ ACTIVITY_MONTHLY_HIKE_HELP,"1. La Pratique Extra-Scolaire comprend au total 53 �
 ACTIVITY_MONTHLY_HIKE_SKILL_WINDOW,Compétences Pratiques
 ACTIVITY_MONTHLY_HIKE_SKILL_HELP,"1. Utilisez vos Points de Compétences Pratiques afin d'améliorer vos Compétences Pratiques. Améliorer vos Points de Compétences Pratiques vous permettra de rendre vos Filles plus puissantes dans la Pratique Extra-Scolaire.|2. Les Compétences Pratiques sont divisées en 3 Rangs. Les Compétences Pratiques de Rang 1 ne nécessitent pas d'être débloquées. Afin de débloquer les Compétences Pratiques de Rang 2 et 3, il vous faudra utiliser le nombre de Points de Compétences Pratiques requis.|3. Certaines Compétences Pratiques nécessiteront d'améliorer une ou plusieurs Compétences Pratiques à un certain niveau avant de pouvoir être débloquées.|4. Les Compétences Pratiques seront uniquement prises en compte dans La Pratique Extra-Scolaire, et seront remises à 0 à chaque réinitialisation de l'événement.|5. Vous pouvez réinitialiser vos Compétences Pratiques une fois par saison. Une seconde réinitialisation (d'une même saison) vous coûtera des Gemmes."
 ACTIVITY_MONTHLY_TEXT001,Récompenses de Défi
-ACTIVITY_MONTHLY_TEXT002,Cette Étape n'est pas encore débloquée !
+ACTIVITY_MONTHLY_TEXT002,Cette Étape n'est pas encore débloquée
 SELECT_ALL_YES,Tout Cocher
 SELECT_ALL_NO,Tout Décocher
 SELECT_ALL_TEXT01,Rien à cocher pour le moment !
@@ -5357,5 +5357,21 @@ ACTIVITY_COUNTDOWN_HELP,"1. Durant cet événement, collectez des récompenses d
 ACTIVITY_COUNTDOWN_TEXT03,Pack de l'Avent
 ACTIVITY_COUNTDOWN_TEXT04,Récompenses de Connexion
 ACTIVITY_COUNTDOWN_TIPS,"Ce Pack de l'Avent n'est pas encore disponible ! Ne le ratez pas le jour J, Senpai~"
-ACTIVITY_BLACKFRIDAYSHOP_TEXT1,Échanger
-ACTIVITY_BLACKFRIDAYSHOP_TEXT2,Combien voulez-vous en échanger ?
+ACTIVITY_BLACKFRIDAYSHOP_TEXT1,Combien voulez-vous en échanger ?
+TIME_CLOISTER_TEXT58,對應的星空儀科技未解鎖
+TIME_CLOISTER_TEXT59,已顯示未解鎖科技
+TIME_CLOISTER_TEXT60,已隱藏未解鎖科技
+ACTIVITY_GROWTH_PLAN_TEXT01,選擇成長戰姬
+ACTIVITY_GROWTH_PLAN_TEXT02,選擇一個戰姬作爲成長戰姬。戰姬正成長劃的獎勵内容會隨選擇的戰姬而定。
+ACTIVITY_GROWTH_PLAN_TEXT03,選擇戰姬
+ACTIVITY_GROWTH_PLAN_TEXT04,成長積分
+ACTIVITY_GROWTH_PLAN_TEXT05,Tâches
+ACTIVITY_GROWTH_PLAN_TEXT06,重選戰姬
+ACTIVITY_GROWTH_PLAN_TEXT07,領取獎勵
+ACTIVITY_GROWTH_PLAN_TEXT08,Points
+ACTIVITY_GROWTH_PLAN_TEXT09,Récompenses Basiques
+ACTIVITY_GROWTH_PLAN_TEXT10,Récompenses Supplémentaires
+ACTIVITY_GROWTH_PLAN_TEXT11,購買額外計劃
+ACTIVITY_GROWTH_PLAN_TEXT12,選擇一個戰姬作爲成長戰姬，完成每日任務纍計成長積分，可獲得基礎獎勵。購買額外成長計劃后更有豐厚額外獎勵。
+ACTIVITY_GROWTH_PLAN_TEXT13,1.活動期間，每完成1個每日任務可獲得1點成長積分。成長積分滿足條件可獲得獎勵，需要手動領取。|2.每日任務的【完成所有日常任務】不獲得魂器積分。|3.活動期間，學長可以選擇一個戰姬作爲成長戰姬，戰姬養成計劃的獎勵内容會根據成長戰姬而定。領取獎勵后將無法再更改成長戰戟。|4.活動期間，玩家若有未完成/未領取的每日任務而錯失積分，仍可在次日及之後點擊補分按鍵補足成長積分。5點積分需要消耗20鑽石。
+TIME_CLOISTER_TEXT61,Contenu à venir
