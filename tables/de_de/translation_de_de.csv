@@ -1785,7 +1785,7 @@ MAKE_CAKE_TEXT05,Zusätzlicher Gewinn für jeden Tausch:
 ASSASSIN_SUIT,Mörder Set
 ACTIVITY_JACKPOT_POINT_HELP,Während des Events können reiche Belohnungen für den Verbrauch einer bestimmten Menge von Jubiläumsenergie erhalten werden! Belohnungen werden per Mail geschickt~
 ACTIVITY_JACKPOT_POINT_LIST,Verbauche {1} Jubiläumsenergie
-ACTIVITY_JACKPOT_HELP_TEXT,"1. Verwende jedes Mal 5x ""Spielenergie"", um am normalen Spielautomaten oder Super-Spielautomaten zu spielen und Belohnungen oder Spielpunkte zu erhalten. Werden an 2 oder mehreren Slots das gleiche Mädchen angezeigt, erhältst du die entsprechenden Spielpunkte oder Super-Spielpunkte, ansonsten erhältst du eine zufällige Belohnung.|2. Jedes Mal, wenn du am Spielautomaten spielst, kannst du wählen, wie viel Spielenergie verbraucht werden soll. Vervielfachst du die Menge deines Energieeinsatzes, so vervielfachen sich auch die Belohnungen.|3. Wenn du die ""Spiel-Vorteilskarte"" gekauft oder 40 Mal am normalen Spielautomaten gespielt hast, wird der Super-Spielautomaten entsperrt.|4. Die Spielpunkte und Super-Spielpunkte können im Event ""Sonderauslosung"" verwendet werden, um Belohnungen zu ziehen. Nachdem du alle Belohnungen dort gesammelt hast, wird der Belohnungspool zurückgesetzt.|5. Erhalten der Spielenergie: Tägliche Mail, Paket zum Spielautomaten, Superpakete, Glückspakete, Kostümpakete, Mädchen-Versammlung, Einschreiben-Aufgaben.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Spielenergien"", ""Spielpunkte"" und ""Super-Spielpunkte"" automatisch recycelt. Jede Spielenergie entspricht 25k Münzen, jeder Spielpunkt auch 25k und jeder Super-Spielpunkt 50k. Die Münzen werden per Mail gesendet."
+ACTIVITY_JACKPOT_HELP_TEXT,"1. Verwende jedes Mal 5x ""Spielenergie"", um am normalen Spielautomaten oder Super-Spielautomaten zu spielen und Belohnungen oder Spielpunkte zu erhalten. Werden an 2 oder mehreren Slots das gleiche Mädchen angezeigt, erhältst du die entsprechenden Spielpunkte oder Super-Spielpunkte, ansonsten erhältst du eine zufällige Belohnung.|2. Jedes Mal, wenn du am Spielautomaten spielst, kannst du wählen, wie viel Spielenergie verbraucht werden soll. Vervielfachst du die Menge deines Energieeinsatzes, so vervielfachen sich auch die Belohnungen.|3. Wenn du die ""Vorteilskarte zum Spielautomaten"" gekauft oder 40 Mal am normalen Spielautomaten gespielt hast, wird der Super-Spielautomaten entsperrt.|4. Die Spielpunkte und Super-Spielpunkte können im Event ""Sonderauslosung"" verwendet werden, um Belohnungen zu ziehen. Nachdem du alle Belohnungen dort gesammelt hast, wird der Belohnungspool zurückgesetzt.|5. Erhalten der Spielenergie: Tägliche Mail, Paket zum Spielautomaten, Superpakete, Glückspakete, Kostümpakete, Mädchen-Versammlung, Einschreiben-Aufgaben.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Spielenergien"", ""Spielpunkte"" und ""Super-Spielpunkte"" automatisch recycelt. Jede Spielenergie entspricht 25k Münzen, jeder Spielpunkt auch 25k und jeder Super-Spielpunkt 50k. Die Münzen werden per Mail gesendet."
 ACTIVITY_JACKPOT_ENERGY_USE,Einsatz: {1}x
 ACTIVITY_JACKPOT_ENERGY_USE_TIPS,Du erhältst die Belohnung {1} Mal
 ACTIVITY_JACKPOT_ENERGY_RESUME,1 Energie wieder herstellen:
@@ -5332,7 +5332,7 @@ SENPAI_DRESS_GIFTBOX_WARN,Dieses Outfit-Teil hast du bereits erhalten. Willst du
 TIME_CLOISTER_TEXT62,"Level die Zweige im Sternkreisel, um diese Karte zu leveln."
 ACTIVITY_JACKPOT_MACHINE1,Normaler Spielautomat
 ACTIVITY_JACKPOT_MACHINE2,Super-Spielautomat
-ACTIVITY_JACKPOT_TIPS,"Kaufe die Spiel-Vorteilskarte oder spiele 40 Mal am normalen Spielautomaten, um den Super-Spielautomaten zu entsperren."
+ACTIVITY_JACKPOT_TIPS,"Kaufe die ""Vorteilskarte zum Spielautomaten"" oder spiele {1} Mal (1 Mal kostet 5 Spielenergie) am normalen Spielautomaten, um den Super-Spielautomaten zu entsperren."
 ACTIVITY_JACKPOT_GIFTBAG_TITLE,Pakete zum Spielautomaten
 ACTIVITY_JACKPOT_GIFTBAG_TEXT01,Sonderangebot
 ACTIVITY_JACKPOT_GIFTBAG_TEXT02,Permanente Angebote
@@ -5351,3 +5351,6 @@ ACTIVITY_GROWTH_PLAN_TEXT19,Sicher {1} Dias für die verpassten Punkte ausgeben?
 ACTIVITY_JACKPOT_TEXT01,Pakete zum\nAutomaten
 ACTIVITY_JACKPOT_TEXT02,"Du hast den Super-Spielautomaten entsperrt! Tippe auf ""Los"", um zum Super-Spielautomaten zu gelangen!"
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Los
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Weiterziehen
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,Umwandeln
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Du hast die Vorteilskarte zum Spielautomaten erhalten! Willst du jetzt deine ""Spielpunkte"" zu ""Super-Spielpunkten"" umwandeln oder einfach weiterziehen?"

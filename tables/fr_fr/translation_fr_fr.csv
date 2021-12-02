@@ -5383,7 +5383,7 @@ SENPAI_DRESS_GIFTBOX_WARN,"Vous avez déjà possédé cet élément de Tenue, vo
 TIME_CLOISTER_TEXT62,Améliorez les Techniques correspondantes du Planétarium pour monter le niveau de cette Carte.
 ACTIVITY_JACKPOT_MACHINE1,Machine Normale
 ACTIVITY_JACKPOT_MACHINE2,Machine Avancée
-ACTIVITY_JACKPOT_TIPS,"Après avoir obtenu Carte Pass Avancé ou joué 40 fois à la Machine Normale, vous pourrez avoir accès à la Machine Avancée !"
+ACTIVITY_JACKPOT_TIPS,Accédez à la Machine Avancée en achetant la Carte Pass Avancé ou bien en jouant encore {1} fois (1 fois = 5 Énergies) à la Machine Normale.
 ACTIVITY_JACKPOT_GIFTBAG_TITLE,Pack Exclusif
 ACTIVITY_JACKPOT_GIFTBAG_TEXT01,Offre Unique
 ACTIVITY_JACKPOT_GIFTBAG_TEXT02,Offres
@@ -5402,3 +5402,6 @@ ACTIVITY_GROWTH_PLAN_TEXT19,Voulez-vous dépenser {1} Gemmes pour collecter les 
 ACTIVITY_JACKPOT_TEXT01,Pack Exclusif
 ACTIVITY_JACKPOT_TEXT02,"Félicitations ! Vous pouvez avoir accès à la Machine Avancée ! Appuyez sur ""Aller à"" pour voir !"
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Allez à
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Jouer
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,Convertir
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Vous avez obtenu la Carte Pass Avancé, voulez-vous convertir vos Pièces de Machine Normale en Pièces de Machine Avancée ?"

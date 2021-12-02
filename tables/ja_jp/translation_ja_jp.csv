@@ -5334,7 +5334,7 @@ SENPAI_DRESS_GIFTBOX_WARN,このアバターパーツは既に所持していま
 TIME_CLOISTER_TEXT62,プラネタリウムのレベルアップ後に、このカードのレベルをアップできます。
 ACTIVITY_JACKPOT_MACHINE1,普通スロット
 ACTIVITY_JACKPOT_MACHINE2,高級スロット
-ACTIVITY_JACKPOT_TIPS,スロット特権パスを購入、または普通スロットを40回回すと、高級スロットがアンロックされますよ～。
+ACTIVITY_JACKPOT_TIPS,スロット特権パスを購入、または普通スロットを{1}回回すと、高級スロットをアンロックできますよ～！(※1回回すとスロットエネルギーを5pt消費します)
 ACTIVITY_JACKPOT_GIFTBAG_TITLE,スロットお助けパック
 ACTIVITY_JACKPOT_GIFTBAG_TEXT01,スペシャル
 ACTIVITY_JACKPOT_GIFTBAG_TEXT02,レギュラー
@@ -5353,3 +5353,6 @@ ACTIVITY_GROWTH_PLAN_TEXT19,今回の補填で{1}ダイヤが消費されます�
 ACTIVITY_JACKPOT_TEXT01,お助け\nパック
 ACTIVITY_JACKPOT_TEXT02,高級スロットがアンロックされました！ボタンをタップすると、移動できますよ～。
 ACTIVITY_JACKPOT_UPDATE_BUTTON,移動
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,続ける
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,交換へ
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,先輩は「スロット特権パス」を所持しているので、スロットptを高級スロットptに交換できます。交換しますか？

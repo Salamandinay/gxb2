@@ -1774,7 +1774,7 @@ MAKE_CAKE_TEXT04_LOCK,Unlock previous rewards in order to unlock the next reward
 MAKE_CAKE_TEXT04_UNLOCK,Exchange any item to unlock the next
 MAKE_CAKE_TEXT05,Extra gains for each exchange:
 ASSASSIN_SUIT,Assassin Suit
-ACTIVITY_JACKPOT_POINT_HELP,You will get 1 point for each Energy consumed. And the rewards will be issued via Mail when you acquire certain points!
+ACTIVITY_JACKPOT_POINT_HELP,You will get 1 point for each Energy consumed. Rewards will be issued via Mail when you acquire the required number of points!
 ACTIVITY_JACKPOT_POINT_LIST,Consume {1} Energy
 ACTIVITY_JACKPOT_HELP_TEXT,"1. Use Jackpot Energy (5 energy for each spin) to spin Basic Jackpot and Super Jackpot for item rewards, Jackpot Points, or Super Jackpot Points. If two or more of the same girl is displayed in the result, Jackpot Points or Super Jackpot Points will be rewarded based on which Jackpot you were spinning from. If all of the girls displayed in the result are different, a random item reward will be given.|2. You can choose the amount of Jackpot Energy you want to use before each spin. If you choose to consume multiple times of Jackpot Energy in the next spin, the reward for the spin will thus be multiplied.|3. Super Jackpot will be unlocked after acquiring Advanced Access or spinning the Basic Jackpot 40 times.|4. Jackpot Points and Super Jackpot Points can be used to draw from Basic Draw and Super Draw respectively. After getting all the rewards of Basic Draw/Super Draw, the rewards of Basic Draw/Super Draw will be reset.|5. Additional rewards will also be granted based on how many times you spin the Super Jackpot.|6. Jackpot Points and Super Jackpot Points are required to participate in Lucky Draw, where you will receive a random reward from Basic Draw or Super Draw for each draw. Once all rewards from Basic Draw or Super Draw are claimed, it will be reset.|7. Jackpot Energy can be obtained from the following methods: Daily Reward Mail, Jackpot Support Pack, Mega Value Pack, Special Gift Pack, Special Skin Pack, Girls Assembly, and Enroll Exam.|8. After the event ends, any remaining Jackpot Energy, Jackpot Points, and Super Jackpot Points will be removed from your account and changed into Coins. Jackpot Energy will be transformed into 25K Coins each, Jackpot Points will be transformed into 25K Coins each, and Super Jackpot Points will be transformed into 50K Coins each. The Coins will be sent via Mail."
 ACTIVITY_JACKPOT_ENERGY_USE,Use x {1}
@@ -5330,7 +5330,7 @@ SENPAI_DRESS_GIFTBOX_WARN,You already own this Outfit piece. Would you still lik
 TIME_CLOISTER_TEXT62,Upgrade corresponding technologies in the Planetarium to level up this Card.
 ACTIVITY_JACKPOT_MACHINE1,Basic Jackpot
 ACTIVITY_JACKPOT_MACHINE2,Super Jackpot
-ACTIVITY_JACKPOT_TIPS,Purchase Advanced Access or spin the Basic Jackpot 40 times to unlock Super Jackpot!
+ACTIVITY_JACKPOT_TIPS,Purchase Advanced Access or spin the Basic Jackpot {1} time(s) (every 5 Jackpot Energy consumed will count as 1 spin) to unlock Super Jackpot.
 ACTIVITY_JACKPOT_GIFTBAG_TITLE,Jackpot Support Pack
 ACTIVITY_JACKPOT_GIFTBAG_TEXT01,Special Offer
 ACTIVITY_JACKPOT_GIFTBAG_TEXT02,Standard Packs
@@ -5349,3 +5349,6 @@ ACTIVITY_GROWTH_PLAN_TEXT19,Would you like to spend {1} Gems to recover your Gro
 ACTIVITY_JACKPOT_TEXT01,Exclusive Pack
 ACTIVITY_JACKPOT_TEXT02,"Congratulations, you've unlocked Super Jackpot! Tap ""Go"" to check it out!"
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Go
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Continue
+ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,Exchange
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Senpai, you've acquired the Advanced Access, do you want to exchange your Jackpot Points for Super Jackpot Points now?"
