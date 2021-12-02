@@ -1412,8 +1412,8 @@ id,name,brief,desc
 27036,Ruineuse de Fête,Skin,Skin de Sonya - Ruineuse de Fête
 7037,Gourmande,Skin,Skin de Gabriel - Gourmande
 27037,Gourmande,Skin,Skin de Gabriel - Gourmande
-57,Énergie,Matériel d'Événement,À utiliser dans la Machine à Sous d'Anniversaire durant l'événement
-58,Point de la Machine à Sous d'Anniversaire,Matériel d'Événement,À utiliser pour obtenir des récompenses dans la Boutique Événement de la Machine à Sous d'Anniversaire. Inéchangeable après l'événement. Utilisez-le dans le temps imparti.
+57,Énergie,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Machine à Sous"
+58,Pièce de Machine Normale,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Machine à Récompenses"
 7038,Surfeuse,Skin,Skin d'Hexa - Surfeuse
 27038,Surfeuse,Skin,Skin d'Hexa - Surfeuse
 7039,Mariée Divine,Skin,Skin de Prêtresse - Mariée Divine
@@ -2199,7 +2199,7 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 4101002,Boîte de Poupée 6 étoiles(Exclusif),Boîte à choix,À utiliser pour choisir d'obtenir\nune poupée 6 étoiles de la Maison Fantôme/Humain/Monstre/Fée
-4501001,Boîte d'équipement (Exclusif),Boîte à choix,À utiliser pour choisir d'obtenir un ensemble d'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre
+4501001,Boîte d'équipement (Exclusif),Boîte à choix,À utiliser pour choisir d'obtenir un Ensemble d'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre
 4102001,Boîte de Fille 5 étoiles (Exclusif),Boîte à choix,À utiliser pour choisir d'obtenir d'une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4102002,Boîte de Poupée 6 étoiles(Exclusif),Boîte à choix,À utiliser pour choisir d'obtenir\nune poupée 6 étoiles de la Maison Ange/Démon
 9107,C'est tout ?,Émoji de Tchat,2nd Anniversaire·Émoji de tchat de Dracula 1
@@ -2211,11 +2211,11 @@ Humain/Monstre/Fée.
 9113,Fais de beaux rêves,Émoji de Tchat,2nd Anniversaire·Émoji de tchat de Blowie 3
 9114,Oups,Émoji de Tchat,2nd Anniversaire·Émoji de tchat de Blowie 4
 4102003,Boîte de Kratos & Lucifael,Boîte à choix,À utiliser pour obtenir 50 fragments de Kratos ou 50 fragments de Lucifael
-149,Coffret de Guerrier,Coffret d'ensemble d'équipement,À utiliser pour obtenir l'ensemble d'équipement de Guerrier
-150,Coffret de Mage,Coffret d'ensemble d'équipement,À utiliser pour obtenir l'ensemble d'équipement de Mage
-151,Coffret d'Éclaireur,Coffret d'ensemble d'équipement,À utiliser pour obtenir l'ensemble d'équipement d'Éclaireur
-152,Coffret d'Assassin,Coffret d'ensemble d'équipement,À utiliser pour obtenir l'ensemble d'équipement d'Assassin
-153,Coffret de Prêtre,Coffret d'ensemble d'équipement,À utiliser pour obtenir l'ensemble d'équipement de Prêtre
+149,Boîte de Guerrier,Boîte d'Ensemble d'équipement,À utiliser pour obtenir l'Ensemble d'équipement de Guerrier
+150,Boîte de Mage,Boîte d'Ensemble d'équipement,À utiliser pour obtenir l'Ensemble d'équipement de Mage
+151,Boîte d'Éclaireur,Boîte d'Ensemble d'équipement,À utiliser pour obtenir l'Ensemble d'équipement d'Éclaireur
+152,Boîte d'Assassin,Boîte d'Ensemble d'équipement,À utiliser pour obtenir l'Ensemble d'équipement d'Assassin
+153,Boîte de Prêtre,Boîte d'Ensemble d'équipement,À utiliser pour obtenir l'Ensemble d'équipement de Prêtre
 6497,Canne d'Anniversaire,,
 6498,Canne d'Anniversaire,,
 6499,Canne d'Anniversaire,,
@@ -2525,7 +2525,7 @@ Humain/Monstre/Fée.
 6706,Hikari,Antiquité,
 166,Feuille Royale,Endurance d'événement,"Endurance d'événement, peut être récupérée au fil du temps et utilisée pour participer à l'événement d'Aventure Fantastique"
 167,Œil de Saphir,Matériel d'Événement,"Matériel Spécial, à utiliser pour échanger des objets dans l'événement d'Aventure Fantastique"
-4501002,Boîte d'équipement,Boîte à choix,À utiliser pour choisir d'obtenir un ensemble d'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre
+4501002,Boîte d'équipement,Boîte à choix,À utiliser pour choisir d'obtenir un Ensemble d'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre
 7120,Chaperon Rouge,Skin,Skin de Succuba - Chaperon Rouge
 27120,Chaperon Rouge,Skin,Skin de Succuba - Chaperon Rouge
 7121,Blanche-Neige,Skin,Skin de Wraith - Blanche-Neige
@@ -3066,7 +3066,7 @@ Humain/Monstre/Fée.
 4403015,Boîte d'Antiquité Orange Exclusive (Démon),Boîte à choix,À utiliser pour choisir d'obtenir une Antiquité Orange Exclusive. (Touchez la loupe pour savoir plus)
 4403016,Boîte d'Antiquité Orange Exclusive (Ange),Boîte à choix,À utiliser pour choisir d'obtenir une Antiquité Orange Exclusive. (Touchez la loupe pour savoir plus)
 4204002,Boîte de Ressources de Serviteur,Boîte à choix,"Boîte précieuse de Ressources de Serviteur, vous pouvez choisir l'une des récompenses suivantes après son ouverture：Biscuit de Serviteur *4K, Biscuit Spiritueux *500, Cristal du Serviteur *200"
-228,Boîte de Ressources Avancées,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：「Pièce de Capsule Avancée *25, Sceau *7, Ticket du Distributeur *120, Pièce de Capsule Avancée *45, Sceau *13, Ticket du Distributeur *240, Ticket Avancé du Distributeur *20」"
+228,Boîte de Ressources Avancées,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：「Capsule Avancée*25, Sceau*7, Ticket du Distributeur*120, Capsule Avancée*45, Sceau*13, Ticket du Distributeur*240, Ticket Avancé du Distributeur*20, Bouton Chic*20」"
 229,Boîte Magique Bleu,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：Plateau Repas *15K, Biscuit de Serviteur *6K, Biscuit Spiritueux *1K, Cristal du Serviteur *400, Plateau Repas *20K, Ciseau de Cristal *20K, Fragment d'Antiquité Orange Exclusif *50"
 230,Boîte de Guilde,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes: Fragment d'Élite Ange 5 étoiles *50, Fragment d'Élite Démon 5 étoiles *50, Fragment d'Élite 5 étoiles *50, Fragment d'Ange *50, Fragment de Démon *50, Fragment de Fille 5 étoiles *50, Baguette Angélique *1, Robe Angélique *1, Ruban Angélique *1, Ailes Angéliques *1, Sceau *1, Capsule Avancée *1, Ticket du Distributeur Avancé *1, Gravure de Rune *1, Cristal de Divination *1, Jus d'EXP *200K, Ciseau de Cristal *100, Plateau Repas *150 et Ticket du Distributeur *2"
 4202003,Boîte de Ressources Avancées,Boîte à choix,"À utiliser pour choisir d'obtenir une des récompenses suivantes：「Pièce de Capsule Avancée *8, Sceau *2, Ticket du Distributeur *35, Ticket Avancé du Distributeur *4」"
@@ -4388,3 +4388,50 @@ Humain/Monstre/Fée.
 Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 304,Boîte Surprise de Noël,Boîte de Ressources,"À utiliser pour obtenir toutes les ressources suivantes : Bouton Chic*20, Gravure de Rune*10, Cristal de Divination*10, Jeton de Capsule Avancée*20, Sceau*10"
+1140001,Clôture,Meuble,Vous ne passerez pas !
+1140002,Pelouse,Meuble,C'est si relaxant de s'allonger sur la pelouse... à condition de ne pas se faire prendre par Elfe Bourgeon !
+1140003,Jardin de Yume,Meuble,Bienvenue au Jardin de Yume !
+1140004,Fontaine à vœux,Meuble,Lancez une pièce et faites un vœu~
+1140005,Bac à fleurs,Meuble,Vous pouvez planter des fleurs dans ces bacs en bois~
+1140006,Arbuste,Meuble,Beaucoup trop petit pour se cacher dedans...
+1140007,Jasmin,Meuble,"Cette fleur est très odorante, et vous parfumera votre environnement."
+1140008,Hortensia rose,Meuble,"L'hortensia rose est lié à l'amour et représente le romantisme, les émotions sincères et le mariage."
+1140009,Tulipe jaune,Meuble,"La tulipe jaune est considérée comme étant une déclaration d'amour impossible, sans espoir."
+1140010,Arbuste coloré,Meuble,C'est une nouvelle variété de fleur créée par le Club de Jardinerie.
+1140011,Lavande,Meuble,"La lavande représente la pureté, l'élégance et le silence."
+1140012,Haie,Meuble,Elfe Bourgeon a insisté pour les mettre là.
+1140013,Dalle en pierre,Meuble,Les dalles en pierre vous mèneront vers le cœur du jardin.
+1140014,Lampadaire,Meuble,"Quand la nuit tombe, le chemin du retour sera toujours illuminé."
+1140015,Tableau 1,Meuble,Une peinture de la fontaine à vœux.
+1140016,Tableau 2,Meuble,Une peinture d'un cerisier en fleur.
+1140017,Tableau 3,Meuble,Une peinture d'un bassin.
+1140018,Cerisier en fleurs,Meuble,Croiserez-vous votre amour lors de la première floraison de l'année ?
+1140019,Chat,Meuble,Ce chat vous tiendra compagnie toute la journée !
+1140020,Banc de jardin 1,Meuble,Asseyez-vous et profitez de cette légère brise~
+1140021,Banc de jardin 2,Meuble,Asseyez-vous et profitez de cette légère brise~
+1140022,Stand de glace,Meuble,"Des glaces ! Offrez-en une à Senpai, il va adorer~"
+1140023,Poubelle,Meuble,Veillez à jeter vos déchets dans la poubelle !
+1140024,Chaise de jardin 1,Meuble,Asseyez-vous et savourez une glace~
+1140025,Chaise de jardin 2,Meuble,Asseyez-vous et savourez une glace~
+1140026,Table de jardin ronde,Meuble,Quelle belle nape~ Faites attention à ce qu'elle ne s'envole pas !
+1140027,Chariot floral,Meuble,L'indispensable d'un bon jardinier !
+1140028,Bassin de jardin,Meuble,Baignade et pêche interdites !
+4202009,Boîte de Ressources Avancées,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Capsule Avancée *10, Sceaux*3, Ticket du Distributeur*50, Gravure de Rune*6"
+4201017,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Plateau Repas*4000, Ciseau de Cristal*4000, Biscuit de Serviteur*2400, Biscuit Spiritueux*300, Pièce de Guilde*6000"
+4101036,Boîte de Filles 5 étoiles,Boîte à choix,"
+À utiliser pour choisir d\'une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
+305,Pièce de Machine Avancée,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Machine à Récompenses"
+306,Carte Pass Avancé,Matériel d'Événement,"Après l'avoir obtenue, vous pourrez avoir accès à la Machine Avancée et convertir les Pièces de Machine Normale en Pièces de Machine Avancée au ratio de 1 : 1"
+4201018,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or*400K, Jus d'EXP400K, Plateau Repas*300, Ciseau de Cristal*300, Ticket d'Arène*5"
+4202010,Boîte de Ressources Avancées,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or*850K, Jus d'EXP850K, Plateau Repas*650, Ciseau de Cristal*650, Biscuit de Serviteur*400, Biscuit Spiritueux*50, Serviteur*25, Ticket d'Arène*10"
+7226,Capitaine Astrale,Skin,Skin de Diana - Capitaine Astrale
+27226,Capitaine Astrale,Skin,Skin de Diana - Capitaine Astrale
+4601017,Boîte de l'ensemble de Tenue Orange,Boîte à choix,À utiliser pour choisir d'obtenir un ensemble de Tenue Orange (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+1140029,Jasmin,Meuble,"Cette fleur est très odorante, et vous parfumera votre environnement."
+1140030,Hortensia rose,Meuble,"L'hortensia rose est lié à l'amour et représente le romantisme, les émotions sincères et le mariage."
+1140031,Tulipe jaune,Meuble,"La tulipe jaune est considérée comme étant une déclaration d'amour impossible, sans espoir."
+1140032,Lavande,Meuble,"La lavande représente la pureté, l'élégance et le silence."
+1140033,Haie,Meuble,Elfe Bourgeon a insisté pour les mettre là.

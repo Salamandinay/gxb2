@@ -1412,8 +1412,8 @@ id,name,brief,desc
 27036,Spielverderberin,Kostüm,Sonyas Kostüm Spielverderberin
 7037,Honig-Göttin,Kostüm,Gabriels Kostüm Honig-Göttin
 27037,Honig-Göttin,Kostüm,Gabriels Kostüm Honig-Göttin
-57,Jubiläumsenergie,Eventmaterial,Kann am Jubiläums-Spielautomat während des Events verwendet werden.
-58,Punkt für Jubiläumsmaschine,Eventmaterial,"Können verwemdet werden, um Belohnungen im Jubiläums-Spielautomaten Laden während des Events zu erhalten. Wenn das Event zuende ist, kann er nicht mehr ausgetauscht werden. Bitte denke daran, ihn währen des Events einzutauschen."
+57,Spielenergie,Eventmaterial,"Eventmaterial. Kann im Event ""Spielautomat"" verwendet werden."
+58,Spielpunkt,Eventmaterial,"Eventmaterial. Kann im Event ""Sonderauslosung"" verwendet werden."
 7038,Wellenbrecher,Kostüm,"Hexas Kostüm ""Wellenbrecher"""
 27038,Wellenbrecher,Kostüm,"Hexas Kostüm ""Wellenbrecher"""
 7039,Göttliche Braut,Kostüm,Priesterins Kostüm Göttliche Braut
@@ -3013,7 +3013,7 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 4403015,Antiquitätenbox für Dämonen,Auswahlbox,Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine exklusive orangene Antiquität für Dämonen aussuchen. (Tippe auf die Lupe für mehr Details.)
 4403016,Antiquitätenbox für Engel,Auswahlbox,Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine exklusive orangene Antiquität für Engel aussuchen. (Tippe auf die Lupe für mehr Details.)
 4204002,Diener-Truhe,Auswahlbox,"Wertvolle Schatzbox: Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Diener-Keks *4000, Spirit-Keks *500, Diener-Kristall *200."
-228,Premium Ressourcenbox,Ressourcenbox,"Nach dem Öffnen erhältst du zufällig eine der folgenden Belohnungen: Super Kapselmünze *25, Stempel *7, Lottoschein *120, Super Kapselmünze *45, Stempel *13, Lottoschein *240 und Super Lottoschein *20."
+228,Premium Ressourcenbox,Ressourcenbox,"Nach dem Öffnen erhältst du zufällig eine der folgenden Belohnungen: Super Kapselmünze *25, Stempel *7, Lottoschein *120, Super Kapselmünze *45, Stempel *13, Lottoschein *240, Super Lottoschein *20 und Seltener Knopf *20."
 229,Blaue Zauberbox,Ressourcenbox,"Nach dem Öffnen erhältst du zufällig eine der folgenden Belohnungen: Brotdose *15000, Diener-Keks *6000, Spirit-Keks *1000, Diener-Kristall *400, Brotdose *20000, Kristallmeißel *20000, orangenes exklusives Antiquitätenfragment *50."
 230,Zufallsgildenbox,Ressourcenbox,"Nach dem Öffnen kannst du zufällig eine der folgenden Belohnungen erhalten: Elite 5-Sterne Engel-Mädchen-Fragment *50, Elite 5-Sterne Dämon-Mädchen-Fragment *50, 5-Sterne Mädchen-Fragment *50, Engelsstab *1, Engelsrobe *1, Engelshaarband *1, Engelsflügel *1, Stempel *1, Super Kapselmünze *1, Super Lottoschein *1, Runenstein *1, Wahrsagekristall *1, EXP-Saft *200000, Kristallmeißel *100, Brotdose *150, Lottoschein *2."
 4202003,Premium Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox: Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen:「Super Kapselmünze *8, Stempel*2, Lottoschein *35, Super Lottoschein *4」"
@@ -4267,3 +4267,46 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 27225,Geschenkkorb,Kostüm,"Robbies Kostüm ""Geschenkkorb"""
 4101035,5-Sterne-Auswahlbox,Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne-Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 304,Weihnachtsüberraschungsbox,Ressourcenbox,"Nach dem Öffnen erhältst du folgende Ressourcen: Seltener Knopf *20, Runenstein *10, Wahrsagekristall *10, Super Kapselmünze *20, Stempel *10."
+1140001,Gartenzaun,Möbel,"Hey, ihr dürft da nicht einfach drüberklettern!"
+1140002,Grasfläche,Möbel,"Das Gras ist so weich, da möchte ich meinen Mittagsschlaf drauf machen!"
+1140003,Yume Garten,Möbel,Willkommen im Garten der Yume Akademie!
+1140004,Wunschbrunnen,Möbel,"Ich habe gehört, dass es Glück bringt, wenn man eine Münze in den Brunnen wirft..."
+1140005,Blumenkasten,Möbel,Schön ordentlich bepflanzt~
+1140006,Kleiner Busch,Möbel,Ein kleiner Busch mit einer großen Wirkung.
+1140007,Weiße Lilien,Möbel,Einfache und elegante Blumen.
+1140008,Rosa Hortensien,Möbel,"Die Blumen blühen auf, der Frühling kommt und mit ihm die Hoffnung."
+1140009,Gelbe Tulpen,Möbel,Blume: Reichtum und verlorene Liebe...
+1140010,Bunter Strauß,Möbel,Gelb und Blau passen einfach gut zueinander!
+1140011,Lavendel,Möbel,Blume: Sehnlichst warte ich auf die Liebe meines Lebens.
+1140012,Hecke,Möbel,Die Hecke zu stutzen ist fast eine alltägliche Arbeit hier im Garten.
+1140013,Gartenweg,Möbel,Der kleine Pfad schlängelt sich durch den Garten.
+1140014,Gartenlampen,Möbel,Sie werden mir in der Dunkelheit den Weg nach Hause leiten.
+1140015,Gemälde 1,Möbel,Den schönen Wunschbrunnen in einem Bild festgehalten.
+1140016,Gemälde 2,Möbel,Die leuchtenden Kirschblüten in einem Bild festgehalten.
+1140017,Gemälde 3,Möbel,Das Leben in und um den Teich festgehalten.
+1140018,Kirschblütenbaum,Möbel,"Wenn die letzte Blüte zu Boden fällt, werde ich dich dann endlich treffen?"
+1140019,Kätzchen,Möbel,So ein kleines Kätzchen bringt einfach immer Freude!
+1140020,Gartenbank 1,Möbel,Setzen wir uns ein Weilchen und genießen die leichte Brise auf unserer Haut.
+1140021,Gartenbank 2,Möbel,Setzen wir uns ein Weilchen und genießen die leichte Brise auf unserer Haut.
+1140022,Eiswagen,Möbel,"Leckeres, fruchtiges Eis. Ich kauf noch eins für Senpai."
+1140023,Mülltonne,Möbel,Bitte euren Müll nicht einfach im Garten liegen lassen. In die Mülltonnen damit!
+1140024,Gartenstuhl 1,Möbel,Hier können wir uns setzen und unser Eis genießen!
+1140025,Gartenstuhl 2,Möbel,Hier können wir uns setzen und unser Eis genießen!
+1140026,Gartentisch,Möbel,Das ist aber eine schöne Tischdecke!
+1140027,Blumenwagen,Möbel,Blumen! Bunte Blumen! Verkaufe Blumen!
+1140028,Gartenteich,Möbel,"Das ist kein Badeteich, da dürft ihr nicht rein!"
+4202009,Premium Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Super Kapselmünze *10, Stempel *3, Lottoschein *50, Runenstein *6."
+4201017,Normale Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Brotdose *4000, Kristallmeißel *4000, Diener-Keks *2400, Spirit-Keks *300 und Gildenmünze *600."
+4101036,5-Sterne-Auswahlbox,Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne-Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+305,Super-Spielpunkt,Eventmaterial,"Eventmaterial. Kann im Event ""Sonderauslosung"" verwendet werden."
+306,Vorteilskarte zum Spielautomaten,Eventmaterial,"Entsperrt den ""Super-Spielautomaten"" und wandelt zum Verhältnis 1:1 die Spielpunkte in Super-Spielpunkte um."
+4201018,Normale Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Münzen *400.000, EXP-Saft *400.000, Brotdose *300, Kristallmeißel *300, Arenaticket *5."
+4202010,Premium Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Münzen *850.000, EXP-Saft *850.000, Brotdose *650, Kristallmeißel *650, Diener-Keks *400, Spirit-Keks *50, Diener-Kristall *25, Arenaticket *10."
+7226,Kampfvorbereitung,Kostüm,"Finjas Kostüm ""Kampfvorbereitung"""
+27226,Kampfvorbereitung,Kostüm,"Finjas Kostüm ""Kampfvorbereitung"""
+4601017,Auswahlbox vom orangenen Outfit,Outfit-Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir ein orangenes Outfit-Set aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich deren Inhalte nicht mehr ändern.)"
+1140029,Weiße Lilien (Hecke),Möbel,Einfache und elegante Blumen.
+1140030,Pinke Hortensien (Hecke),Möbel,"Die Blumen blühen auf, der Frühling kommt und mit ihm die Hoffnung."
+1140031,Gelbe Tulpen (Hecke),Möbel,"Gelbe Tulpen stehen für Freundschaft, Hoffnung und Fröhlichkeit."
+1140032,Lavendel (Hecke),Möbel,"Lavendel hat eine beruhigende, ja fast schon betörende Bedeutung..."
+1140033,Große Hecke,Möbel,Die Hecke zu stutzen ist fast eine alltägliche Arbeit hier im Garten.

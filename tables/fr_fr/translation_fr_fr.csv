@@ -444,7 +444,7 @@ FORGET_PASSWORD,Mot de passe\noublié
 CANCEL,Annuler
 SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée."
 TOWER_WINDOW_HELP,"1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport à l'Étape du Test qu'ils ont atteint. |5. Atteignez l'Étape 200 pour débloquer la fonction ""Passer le combat""."
-DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit au minimum choisir 1 Fille pour la Patrouille(5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochine ouverture.(les attributs, les équipements et les potentiels ne seront pas mis à jour avant la prochaine ouverture)|3. Touchez pour voir les Informations des Ennemis et choisissez une Fille manuellement pour se battre contre les Ennemis.|4. Choisissez Combat Rapide pour passer le combat et voir directement les résultats ou choisissez Combat Normal pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV des Filles des deux côtés seront sauvegardés. Les Filles qui n'ont plus de PV ne peuvent plus participer dans les combats de l'événement.|6. Chaque combat dure 15 tours. L'équipe qui tue l'Ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un Objet.|8. Coffre：Obtient des récompenses aléatoires de pièces ou de Gemmes.|9. Marchand：Cliquez sur le Marchand pour acheter des Objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Balle. Cliquez sur Balle pour obtenir l'effet correspondant et cliquez sur Papeterie pour recevoir un bonus, l'utilisation de Papeterie est limitée pour chaque Fille.|11. Les Balles peuvent être préservées. Cliquez sur la Balle pour l'utiliser.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 étages d'un niveau (disponible pour chaque niveau) vous pouvez choisir le mode Auto la prochaine fois que la Patrouille est disponible."
+DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit au minimum choisir 1 Fille pour la Patrouille(5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochine ouverture.(les attributs, les équipements et les potentiels ne seront pas mis à jour avant la prochaine ouverture)|3. Touchez pour voir les Informations des Ennemis et choisissez une Fille manuellement pour se battre contre les Ennemis.|4. Choisissez Combat Rapide pour passer le combat et voir directement les résultats ou choisissez Combat Normal pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV des Filles des deux côtés seront sauvegardés. Les Filles qui n'ont plus de PV ne peuvent plus participer dans les combats de l'événement.|6. Chaque combat dure 15 tours. L'équipe qui tue l'Ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un Objet.|8. Coffre：Obtient des récompenses aléatoires de Pièces d'Or ou de Gemmes ou bien d'autres.|9. Marchand：Cliquez sur le Marchand pour acheter des objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Balle. Cliquez sur Balle pour obtenir l'effet correspondant et cliquez sur Papeterie pour recevoir un bonus, l'utilisation de Papeterie est limitée pour chaque Fille.|11. Les Balles ne peuvent pas être préservées à la prochaine Patrouille.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème Étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 Étages d'un niveau (disponible pour chaque niveau), vous pouvez choisir le mode Auto la prochaine fois que la Patrouille sera disponible."
 GET_WAY_EQUIP,Aller à {1}-{2}
 PARTNER_LIST_FULL,La liste des Filles est pleine. Vous pouvez augmenter le nombre d'emplacement disponible en augmentant votre niveau VIP ou en achetant des places supplémentaires. Voulez-vous acheter plus d'emplacement?
 REST_TIME,Restant
@@ -1156,7 +1156,7 @@ GUILD_WAR_CONFIRM_LIMIT_TIME,Veuillez attendre {1} minute(s) avant d'envoyer un 
 FIGHTING,Bataille en cours
 GUILD_WAR_SIGN_MAX,Le nombre de participant a déjà atteint la limite
 COST,Améliorer
-GUILD_WAR_MY_TEAM_TIPS,"La formation de la Guilde ne peut plus être modifiée plus tard, êtes-vous certain de vouloir continuer ?"
+GUILD_WAR_MY_TEAM_TIPS,Votre équipe formée lors de la saison actuelle ne peut être enregistrée uniquement avec votre Guilde actuelle.
 AVATAR_TEXT_1,Avatar
 AVATAR_TEXT_2,Cadre d'Avatar
 AVATAR_TEXT_3,Avatar Spécial
@@ -1823,7 +1823,7 @@ MAKE_CAKE_TEXT05,Gains supplémentaires pour chaque échange：
 ASSASSIN_SUIT,Ensemble d'Assassin
 ACTIVITY_JACKPOT_POINT_HELP,"Durant l'événement, vous obtiendrez 1 point pour chaque énergie consommée. Les récompenses seront envoyées par courrier lorsque vous atteindrez les objectifs !"
 ACTIVITY_JACKPOT_POINT_LIST,Utilisez {1} d'énergie
-ACTIVITY_JACKPOT_HELP_TEXT,"1. Utilisez de l’Énergie afin d’utiliser la Machine à Sous de l’Anniversaire pour obtenir des objets et des points. Les Points peuvent être échangés dans la boutique de la page.|2. Vous commencerez l’événement avec 15 pts d’Énergie. Après cela vous obtiendrez 1 pt d’Énergie toutes les 4 heures. Vous ne pourrez plus obtenir d’Énergie après que vous en ayez cumulées 20.|3. Moyen d’obtention de l’Énergie : Récupération avec le temps, achat de Pack Spécial.|4. Vous pouvez toucher le bouton au milieu afin de décider de la quantité d’Énergie à utiliser pour chaque tirage. Les récompenses seront multipliées en conséquence.|5. Quand l’Énergie dépensé atteint les différents paliers, vous obtiendrez des récompenses.|6. Si les trois images sont identiques vous obtiendrez la récompense indiquée, si les images sont différentes mais que vous avez au moins un Point de l’événement, vous obtiendrez des points de l’événement.|7. Les Points peuvent utilisés dans la Boutique (coin supérieur droit) pour échanger contre des récompenses. Les récompenses limitées ne peuvent être collectées qu’une seule fois.|8. Après la fin de l’événement, l’Énergie et les Points seront remis à 0. N’oubliez pas de les utiliser dans le temps imparti !"
+ACTIVITY_JACKPOT_HELP_TEXT,"Durant cet événement, utilisez 5 Énergies pour lancer la Machine à Sous une fois et obtenir des récompenses de ressources ou des Pièces de Machine. Vos récompenses varient en fonction du nombre de filles identiques sur l’écran. Si 2(+) filles identiques sont affichées sur l'écran, vous recevrez alors des Pièces de Machine. Si aucune Fille identique n'est affichée, vous recevrez alors une récompense de ressources.|2. La quantité de récompense que vous obtiendrez sera multipliée en fonction du nombre d'Énergie que vous utilisez. Vous pourrez avoir accès à la Machine Avancée, après avoir obtenu la Carte Pass Avancé ou après avoir joué 40 fois à la Machine Normale.|3. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|4. Moyen d’obtention de l’Énergie : Courrier Quoitidien, Pack de Machine à Sous, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Examen d'Admission et Rassemblement.|5. À la fin de l’événement, les Énergies, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Énergie = 25 000 Pièces d'Or, 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
 ACTIVITY_JACKPOT_ENERGY_USE,Utiliser × {1}
 ACTIVITY_JACKPOT_ENERGY_USE_TIPS,Vous obtiendrez les récompenses {1} fois
 ACTIVITY_JACKPOT_ENERGY_RESUME,Récupérez 1 d'énergie：
@@ -1861,8 +1861,12 @@ HERO_CHALLENGE_MISC,Découvrez \nleurs secrets
 OTHER_BATTLE,Arène
 HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu’utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d’au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l’étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n’obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l’étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leur Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si leur nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
 ALREADY_DIE,La Fille a été vaincue
-QUESTIONNAIRE_TEXT1,"Cela fait pas mal de temps que vous êtes à l’Académie Yume, nous espérons que vous avez aimé le temps passé ici. Pourriez-vous remplir ce questionnaire pour Yuki afin qu’elle puisse mieux vous assister ? \nDes récompenses vous attendent ! \nLes résultats du Questionnaire ne seront pas divulgués à d’autres personnes, il nous servira cependant à mieux développer ce jeu !"
-QUESTIONNAIRE_FINISH_TEXT01,"Merci pour votre soutien, Senpai ! Les récompenses pour avoir complété le questionnaire vous ont été envoyées par courrier ! Bon jeu !"
+QUESTIONNAIRE_TEXT1,"
+Cela fait maintenant un bout de temps que vous êtes à l’Académie Yume, Senpai ! Nous espérons que vous appréciez le temps passé ici~
+Yuki serait ravie que vous remplissiez ce questionnaire afin qu’elle puisse mieux vous assister tout au long de votre aventure sur le campus !
+Des récompenses vous attendent ! 
+Les résultats du questionnaire restent anonymes et nous serviront à mieux développer notre jeu !"
+QUESTIONNAIRE_FINISH_TEXT01,"Yuki vous remercie pour votre soutien, Senpai !\nLes récompenses pour avoir complété le questionnaire vous ont été envoyées par courrier ! Bon jeu~"
 QUESTIONNAIRE_START_TITLE,Questionnaire
 QUESTIONNAIRE_START,Commencer
 QUESTIONNAIRE_WINDOW_TITLE,Questionnaire
@@ -2215,7 +2219,7 @@ HOUSE_TEXT_3,Par défaut
 HOUSE_TEXT_4,Surface
 HOUSE_TEXT_5,Prix
 HOUSE_TEXT_6,Mes Meubles
-HOUSE_TEXT_7,Ordre
+HOUSE_TEXT_7,Filtrer
 HOUSE_TEXT_8,Gestion
 HOUSE_TEXT_9,Boutique
 HOUSE_TEXT_10,Rendez-vous
@@ -2241,7 +2245,7 @@ HOUSE_TEXT_28,Espace insuffisant
 HOUSE_TEXT_29,Vous avez atteint la limite pour ce type de meuble
 HOUSE_TEXT_30,Meuble insuffisant
 HOUSE_TEXT_31,Vous devez tout d'abord terminer l'action du meuble en cours
-HOUSE_TEXT_32,Voulez-vous sauvegarder ce placement ?
+HOUSE_TEXT_32,Voulez-vous sauvegarder cette modification ?
 HOUSE_TEXT_33,Êtes-vous sûr de vouloir annuler le placement actuel ?
 HOUSE_TEXT_34,La Fille ne peut actuellement pas entrer dans le Dortoir
 ACADEMY_ASSESSMENT_MISC,Devenez\nplus puissant
@@ -2326,7 +2330,7 @@ ACTIVITY_MONTHLY_TEXT02,Progrès actuel
 ACTIVITY_MONTHLY_TEXT03,Pass de Luxe\n{1}
 SHOP_SKIN_TEXT01,"Vous avez déjà ce Skin dans votre inventaire, voulez-vous l'acheter à nouveau ?"
 SHOP_SKIN_TEXT02,"Vous n'avez pas la Fille correspondante, voulez-vous tout de même acheter ce skin ?"
-SHOP_SKIN_TEXT03,Ordre
+SHOP_SKIN_TEXT03,Filtrer
 SHOP_SKIN_TEXT04,Prix ↑
 SHOP_SKIN_TEXT05,Prix ↓
 SHOP_SKIN_TEXT06,Tous les Skins
@@ -3592,8 +3596,8 @@ MIDAS_TEXT07,Voulez-vous dépenser {1} Gemmes pour acheter ?
 MIDAS_TEXT08,Acheté
 EQUIP_LEVELUP_TEXT_1,Synthétiser
 EQUIP_LEVELUP_TEXT_2,Améliorer
-EQUIP_LEVELUP_TEXT_3,"Appuyez sur le bouton ""Filtrer"" pour choisir l'ensemble d'équipement que vous voulez améliorer."
-EQUIP_LEVELUP_TEXT_4,Veuillez choisir la classe de l'ensemble.
+EQUIP_LEVELUP_TEXT_3,"Appuyez sur le bouton ""Filtrer"" pour choisir l'Ensemble d'équipement que vous voulez améliorer."
+EQUIP_LEVELUP_TEXT_4,Veuillez choisir la classe de l'Ensemble.
 EQUIP_LEVELUP_TEXT_5,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_6,Nouvel attribut après amélioration
 EQUIP_LEVELUP_TEXT_7,"Toucher le "" + "" à gauche pour choisir les matériaux"
@@ -3604,7 +3608,7 @@ EQUIP_LEVELUP_TEXT_11,Choisir l'équipement pour améliorer
 EQUIP_LEVELUP_TITLE_1,Choisir
 EQUIP_LEVELUP_TITLE_2,Préavis
 SHOP_SKIN_TEXT09,Skin Introuvable
-EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer la classe de l'ensemble ?
+EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer la classe de l'Ensemble ?
 SUIT_SKILL_DETAIL_WINDOW_TITLE,Choisir la compétence
 SUIT_SKILL_DETAIL_WINDOW_BTN,Changer
 EQUIP_LEVELUP_HELP,"1. Durant l'événement vous pouvez améliorer vos équipements oranges 4/5/6 étoiles en utilisant des Pièces d'Or et des Gemmes. Chaque amélioration est limitée à une seule fois. |2. En utilisant ""Fragments de Météorite"", vous pourrez améliorer vos ensembles d'équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre. Plus le niveau des équipements que vous souhaitez améliorer est élevé, plus vous devez utiliser de ""Fragments de Météorite"". Cette opération peut être effectuée plusieurs fois. |3.En utilisant ""Engrenage de conversion"", vous pourrez également convertir vos ensembles d'équipement d'une classe contre une autre classe.|4. Complétez les tâches de l'événement - Examen d'Admission pour obtenir ""Roulement Conique"". |5. Vous pouvez échangez des ""Roulements Coniques"" contre des ""Fragments de Météorite"", des équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre ou des ""Engrenage de conversion"" dans le Magasin. |6. Vous ne pouvez qu'améliorer/utiliser/changer les équipements se trouvrant dans votre Sac. |7. Les ""Roulements Coniques"", les ""Fragments de Météorite"" et les ""Engrenage de conversion"" obtenus seront conservés après la fin de cet événement et pourront être utilisés lors du suivant."
@@ -3746,7 +3750,7 @@ SETTING_UP_NOTICE_TITLE,Annonce
 SETTING_UP_NOTICE_TEXT01,Voulez-vous utiliser l'Annonce pour apprendre davantage sur de nouvelles choses qui se passent à l'académie ?
 SETTING_UP_NOTICE_OPEN,Oui
 SETTING_UP_NOTICE_ClOSE,Non
-ACTIVITY_LAFULI_DRIFT_LV,Niv. {1}
+ACTIVITY_LAFULI_DRIFT_LV,Niv.{1}
 ACTIVITY_LAFULI_DRIFT_GO,Choisissez le nombre de case souhaité
 ACTIVITY_LAFULI_DRIFT_CARD,Choisissez une carte
 ACTIVITY_LAFULI_DRIFT_AWARD,Collectez les récompenses
@@ -4032,7 +4036,7 @@ POTENTIAL_PLAN_TEXT07,Activer
 POTENTIAL_PLAN_TEXT08,Changé !
 POTENTIAL_PLAN_TEXT09,Êtes-vous sûr de vouloir supprimer ce Plan ?
 POTENTIAL_PLAN_HELP,"1. Vous pouvez sauvegarder plusieurs Plans de Potentiel pour les utiliser dans différents modes|2. Vous pouvez toucher [Créer] pour créer un nouveau Plan de Potentiel. Chaque Fille peut avoir 3 Plans de Potentiel au maximum, qui seront respectivement déverrouillés à 11/13/15 étoiles.|3. Vous pouvez appuyer sur [Copier] pour sauvegarder le Plan de Potentiel actuel ou appuyer sur l'icône Potentiel pour changer.|4. Vous pouvez appuyer sur [Activer] pour utiliser le nouveau Plan de Potentiel."
-ACITVITY_EXCHANGE_TEXT,"Pendant l'événement, utilisez des matériaux pour échanger des objets !"
+ACITVITY_EXCHANGE_TEXT,"Pendant l'événement, utilisez des matériaux\npour échanger des objets !"
 PLOT_UNLOCK_PROGRESS,Progression
 PLOT_UNLOCK_GO_TO_MAIN,Aller à la Campagne
 PLOT_UNLOCK_CONSUME,Déverrouiller
@@ -4762,7 +4766,7 @@ ACTIVITY_BEACH_MAIN_WINDOW_TEXT03,Touchez la zone blanche pour fermer l'interfac
 DAILY_QUIZ_TEXT01,Tout Collecter
 DRESS_SUIT_WINDOW_1,Tenue
 DRESS_SUIT_WINDOW_2,Personnaliser
-DRESS_SUIT_WINDOW_3,Choisir
+DRESS_SUIT_WINDOW_3,Choisissez votre Tenue
 DRESS_SUIT_WINDOW_4,Aucune Tenue
 MANA_QUIZ2,Quiz de Pièces [size=26]{1}
 EXP_QUIZ2,Quiz d'EXP [size=26]{1}
@@ -5006,7 +5010,7 @@ HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
 DRESS_ITEM_UP_TIPS,Cette amélioration\nne consomme pas de Fragment de Tenue.
-EQUIP_LEVELUP_TEXT_21,Choisissez la classe de l'ensemble à améliorer
+EQUIP_LEVELUP_TEXT_21,Choisissez la classe de l'Ensemble à améliorer
 DRESS_CHANGE,Porter
 ACTIVITY_END_COUNT,Fin dans [c][9eff8b]{1}[-][/c]
 DRESS_GACHA_OPEN_TIME,Cette fonction sera débloqué dans {1}
@@ -5352,26 +5356,49 @@ TRAVEL_NEW_TEXT18,"Cette Fille est actuellement dans un Bâtiment (Boulangerie/A
 ACTIVITY_COUNTDOWN_TEXT01,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël et Pack de l'Avent !
 ACTIVITY_COUNTDOWN_TEXT02,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël !
 ACTIVITY_CHRISTMAS_SIGN_UP_TEXT01,Récompense(s) Obtenue(s)
-ACTIVITY_CHRISTMAS_SIGN_UP_TEXT02,"Cette récompenses de Noël n'est plus disponible, Senpai !"
-ACTIVITY_COUNTDOWN_HELP,"1. Durant cet événement, collectez des récompenses de Noël de votre Calendrier de l'Avent à chaque connexion quotidienne !|2. En collectant certaines des récompenses de Noël, un Pack de l'Avent sera déclenché durant une période de temps limité.|3. Les récompenses de Noël de connexion quotidienne et les Pack de l'Avent ne seront disponibles uniquement durant 24 heures."
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT02,"Cette récompense de Noël n'est plus disponible, Senpai !"
+ACTIVITY_COUNTDOWN_HELP,"1. Durant cet événement, collectez des récompenses de Noël de votre Calendrier de l'Avent à chaque connexion quotidienne !|2. En collectant certaines des récompenses de Noël, un Pack de l'Avent sera déclenché durant une période de temps limité.|3. Les récompenses de Noël de connexion quotidienne et les Pack de l'Avent ne seront disponibles uniquement durant 24 heures, et ne seront plus obtenables après la réinitialisation à 00:00 (GMT)."
 ACTIVITY_COUNTDOWN_TEXT03,Pack de l'Avent
 ACTIVITY_COUNTDOWN_TEXT04,Récompenses de Connexion
 ACTIVITY_COUNTDOWN_TIPS,"Ce Pack de l'Avent n'est pas encore disponible ! Ne le ratez pas le jour J, Senpai~"
 ACTIVITY_BLACKFRIDAYSHOP_TEXT1,Combien voulez-vous en échanger ?
-TIME_CLOISTER_TEXT58,對應的星空儀科技未解鎖
-TIME_CLOISTER_TEXT59,已顯示未解鎖科技
-TIME_CLOISTER_TEXT60,已隱藏未解鎖科技
-ACTIVITY_GROWTH_PLAN_TEXT01,選擇成長戰姬
-ACTIVITY_GROWTH_PLAN_TEXT02,選擇一個戰姬作爲成長戰姬。戰姬正成長劃的獎勵内容會隨選擇的戰姬而定。
-ACTIVITY_GROWTH_PLAN_TEXT03,選擇戰姬
-ACTIVITY_GROWTH_PLAN_TEXT04,成長積分
-ACTIVITY_GROWTH_PLAN_TEXT05,Tâches
-ACTIVITY_GROWTH_PLAN_TEXT06,重選戰姬
-ACTIVITY_GROWTH_PLAN_TEXT07,領取獎勵
+TIME_CLOISTER_TEXT58,La Technique correspondante n'est pas encore débloquée
+TIME_CLOISTER_TEXT59,Techniques non-débloquées sont affichées
+TIME_CLOISTER_TEXT60,Techniques non-débloquées sont cachées
+ACTIVITY_GROWTH_PLAN_TEXT01,Choisissez une Fille
+ACTIVITY_GROWTH_PLAN_TEXT02,Les récompenses de l'Entraînement Avancé diffèrent dépendamment de la Fille choisie.
+ACTIVITY_GROWTH_PLAN_TEXT03,Choisir
+ACTIVITY_GROWTH_PLAN_TEXT04,Points
+ACTIVITY_GROWTH_PLAN_TEXT05,Quêtes
+ACTIVITY_GROWTH_PLAN_TEXT06,Changer
+ACTIVITY_GROWTH_PLAN_TEXT07,Collecter
 ACTIVITY_GROWTH_PLAN_TEXT08,Points
-ACTIVITY_GROWTH_PLAN_TEXT09,Récompenses Basiques
-ACTIVITY_GROWTH_PLAN_TEXT10,Récompenses Supplémentaires
-ACTIVITY_GROWTH_PLAN_TEXT11,購買額外計劃
-ACTIVITY_GROWTH_PLAN_TEXT12,選擇一個戰姬作爲成長戰姬，完成每日任務纍計成長積分，可獲得基礎獎勵。購買額外成長計劃后更有豐厚額外獎勵。
-ACTIVITY_GROWTH_PLAN_TEXT13,1.活動期間，每完成1個每日任務可獲得1點成長積分。成長積分滿足條件可獲得獎勵，需要手動領取。|2.每日任務的【完成所有日常任務】不獲得魂器積分。|3.活動期間，學長可以選擇一個戰姬作爲成長戰姬，戰姬養成計劃的獎勵内容會根據成長戰姬而定。領取獎勵后將無法再更改成長戰戟。|4.活動期間，玩家若有未完成/未領取的每日任務而錯失積分，仍可在次日及之後點擊補分按鍵補足成長積分。5點積分需要消耗20鑽石。
+ACTIVITY_GROWTH_PLAN_TEXT09,Basique
+ACTIVITY_GROWTH_PLAN_TEXT10,Supplémentaire
+ACTIVITY_GROWTH_PLAN_TEXT11,Après l'achat :
+ACTIVITY_GROWTH_PLAN_TEXT12,Choisissez une des Filles proposées et faites lui suivre un Entraînement Avancé !\nComplétez les Quêtes Journalières pour obtenir des Points et recevoir les Récompenses Basiques.\nDébloquez les Récompenses Supplémentaires en achetant le Pack de l'Entraînement Avancé.
+ACTIVITY_GROWTH_PLAN_TEXT13,"1. Durant l'événement, vous obtiendrez 5 Points pour chaque Quête Journalière terminée. Après avoir collectez assez de Points, vous pourrez collecter les récompenses manuellement.|2. Vous n'obtiendrez aucun Point en accomplissant【Terminer toutes les Quêtes Journalières】.|3. Vous pouvez choisir une Fille proposée et lui faire suivre un Entraînement Avancé. Vous pouvez choisir une Fille proposée et lui faire suivre un Entraînement Avancé. Les récompenses de l'Entraînement Avancé diffèrent dépendamment de la Fille choisie. Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie.|4. Après avoir acheté le Pack d'Entraînement Avancé, vous pourrez débloquer les Récompenses Supplémentaires.|5. Dans le cas où vous n'avez pas complété une Quête Journalière ou que vous avez oublié de collecter les récompenses, vous aurez la possibilité le lendemain, de récupérer ces Points manquants en les achetant avec des Gemmes (4 Gemmes/Point)."
 TIME_CLOISTER_TEXT61,Contenu à venir
+SENPAI_DRESS_GIFTBOX_WARN,"Vous avez déjà possédé cet élément de Tenue, voulez-vous continuer de choisir ?"
+TIME_CLOISTER_TEXT62,Améliorez les Techniques correspondantes du Planétarium pour monter le niveau de cette Carte.
+ACTIVITY_JACKPOT_MACHINE1,Machine Normale
+ACTIVITY_JACKPOT_MACHINE2,Machine Avancée
+ACTIVITY_JACKPOT_TIPS,"Après avoir obtenu Carte Pass Avancé ou joué 40 fois à la Machine Normale, vous pourrez avoir accès à la Machine Avancée !"
+ACTIVITY_JACKPOT_GIFTBAG_TITLE,Pack Exclusif
+ACTIVITY_JACKPOT_GIFTBAG_TEXT01,Offre Unique
+ACTIVITY_JACKPOT_GIFTBAG_TEXT02,Offres
+ACTIVITY_JACKPOT_SHOW_TITLE,Récompenses
+ACTIVITY_JACKPOT_SHOW_TEXT01,Récompenses Chanceuses
+ACTIVITY_JACKPOT_SHOW_TEXT02,Récompenses Normales
+ACTIVITY_JACKPOT_EXCHANGE_TITLE,Conversion des Pièces de Machine
+ACTIVITY_JACKPOT_AWARDS,Tirer des Pièces de Machine Avancée {1} fois
+ACTIVITY_GROWTH_PLAN_TEXT14,Aucun Point manquant à collecter
+ACTIVITY_GROWTH_PLAN_TEXT15,Point manquant à collecter：{1} Point(s)
+ACTIVITY_GROWTH_PLAN_TEXT16,Entraînement\nAvancé
+ACTIVITY_GROWTH_PLAN_TEXT17,Veuillez d'abord choisir une Fille pour l'Entraînement Avancé !
+ACTIVITY_JACKPOT_DRAW_HELP,"1. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|2. Après avoir obtenu la Carte Pass Avancé, vous pourrez convertir les Pièces de Machine Normale en Pièces de Machine Avancée au ratio de 1 : 1.|3. Vous receverez des récompenses correspondantes en fonction du nombre de fois que vous aurez tiré des Pièces de Machine Avancée.|4. À la fin de l’événement, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
+ACTIVITY_GROWTH_PLAN_TEXT18,"Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie, voulez-vous continuer ?"
+ACTIVITY_GROWTH_PLAN_TEXT19,Voulez-vous dépenser {1} Gemmes pour collecter les Points manquants ?
+ACTIVITY_JACKPOT_TEXT01,Pack Exclusif
+ACTIVITY_JACKPOT_TEXT02,"Félicitations ! Vous pouvez avoir accès à la Machine Avancée ! Appuyez sur ""Aller à"" pour voir !"
+ACTIVITY_JACKPOT_UPDATE_BUTTON,Allez à
