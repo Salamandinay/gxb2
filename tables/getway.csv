@@ -26,7 +26,7 @@ id,name,lv_limit,function_id,stage,go_window,go_params,is_close,close_win_name,l
 25,-1,20,29,,daily_quiz_window,,1,activity_growth_plan_window|activity_growth_plan_award_window,,
 27,-1,40,18,,shop_window,shopType:13,1,pet_evolution_window|activity_growth_plan_window|activity_growth_plan_award_window,,
 28,-1,55,23,,arena_3v3_window,,1,,,
-29,-1,18,,,shop_window,shopType:5,1,|activity_growth_plan_window|activity_growth_plan_award_window,,
+29,-1,18,,,shop_window,shopType:5,1,activity_growth_plan_window|activity_growth_plan_award_window,,
 30,-1,0,9,,shenxue_window,,1,,,
 31,-1,0,2,,slot_window,,1,,,
 32,-1,0,,,main_window,,1,,,
@@ -173,3 +173,4 @@ id,name,lv_limit,function_id,stage,go_window,go_params,is_close,close_win_name,l
 174,-1,0,,,activity_window,"select:255,activity_type2:1",1,,,
 175,-1,0,,,activity_window|activity_jackpot_machine_giftbag_window,"select:64,activity_type2:1",,item_tips_window|award_item_tips_window|award_select_window|drop_probability_window|activity_wine_award_preview_window|parnter_info_window|gamble_rewards_window,,
 176,-1,0,,,activity_window,"select:64,activity_type2:1",1,,,
+177,-1,0,,,battle_choose_window,show_index:2,1,,,

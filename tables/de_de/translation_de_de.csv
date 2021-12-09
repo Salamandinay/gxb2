@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratis
 PUB_MISSION_COMPLETE2,Fertig
 PUB_TICKET_NO_ENOUGH1,Normale Job-Pergamente nicht ausreichend!
 PUB_TICKET_NO_ENOUGH2,Super Job-Pergamente nicht ausreichend!
-TAVERN_WINDOW_TIPS,"1. Für das Abschließen von Jobaufträgen in der angegebenen Zeit werden großzügige Belohnungen vergeben. Jedes Mädchen kann jeweils nur eine Aufgabe ausführen. |2. Die Anzahl der täglich verfügbaren Jobaufgaben ist begrenzt. Du kannst das Limit erhöhen, indem du dein VIP-Level erhöhst. |3. Noch nicht gestartete Jobaufgaben können aktualisiert werden. Du kannst Dias ausgeben, um Jobs zu aktualisieren, die du nicht erledigen möchtest. |4. Du kannst Job-Pergamente verwenden, um zusätzliche Jobs hinzuzufügen. |5. Du kannst Dias ausgeben, um Aufgaben schneller zu erledigen. |6. Erneuerst du die Jobs, hast du folgende Chancenverteilung bei den neuen Aufgaben: 1-Stern-Aufgaben: 25,6%%, 2-Stern-Aufgaben: 27%%, 3-Stern-Aufgaben: 23,2%%, 4-Stern-Aufgaben: 15%%, 5-Stern-Aufgaben: 8%%, 6-Stern-Aufgaben: 1%%, 7-Sterne-Aufgaben: 0,2%%. |7. Verwendest du normale Job-Pergamente, so kannst du 1-4-Sterne-Aufgaben bekommen. Chancenverteilung:|1-Stern-Aufgabe: 20%%, 2-Sterne-Aufgabe: 27%%, 3-Sterne-Aufgabe: 35%%, 4-Sterne-Aufgabe: 18%%.|Verwendest du super Job-Pergamente, so kannst du 4-7-Sterne-Aufgaben bekommen. Chancenverteilung:|4-Stern-Aufgabe: 56%%, 5-Sterne-Aufgabe: 35%%, 6-Sterne-Aufgabe: 7%%, 7-Sterne-Aufgabe: 2%%."
+TAVERN_WINDOW_TIPS,"1. Für das Abschließen von Jobaufträgen in der angegebenen Zeit werden großzügige Belohnungen vergeben. Jedes Mädchen kann jeweils nur eine Aufgabe ausführen. |2. Die Anzahl der täglich verfügbaren Jobaufgaben ist begrenzt. Du kannst das Limit erhöhen, indem du dein VIP-Level erhöhst. |3. Noch nicht gestartete Jobaufgaben können aktualisiert werden. Du kannst Dias ausgeben, um Jobs zu aktualisieren, die du nicht erledigen möchtest. |4. Du kannst Job-Pergamente verwenden, um zusätzliche Jobs hinzuzufügen. |5. Du kannst Dias ausgeben, um Aufgaben schneller zu erledigen. |6. Erneuerst du die Jobs, hast du folgende Chancenverteilung bei den neuen Aufgaben: 1-Stern-Aufgaben: 25,6%%, 2-Stern-Aufgaben: 27%%, 3-Stern-Aufgaben: 23,2%%, 4-Stern-Aufgaben: 15%%, 5-Stern-Aufgaben: 8%%, 6-Stern-Aufgaben: 1%%, 7-Sterne-Aufgaben: 0,2%%. |7. Verwendest du normale Job-Pergamente, so kannst du 1-4-Sterne-Aufgaben bekommen. Chancenverteilung:|1-Stern-Aufgabe: 20%%, 2-Sterne-Aufgabe: 27%%, 3-Sterne-Aufgabe: 35%%, 4-Sterne-Aufgabe: 18%%.|Verwendest du super Job-Pergamente, so kannst du 4-7-Sterne-Aufgaben bekommen. Chancenverteilung:|4-Stern-Aufgabe: 56%%, 5-Sterne-Aufgabe: 35%%, 6-Sterne-Aufgabe: 7%%, 7-Sterne-Aufgabe: 2%%.|8. Maximal kannst du 999 normale Job-Pergamente und 999 Super Job-Pergamente auf einmal besitzen. Alle darüber hinaus erhaltene Pergamente werden nicht gespeichert."
 ITEM_SUMMON,Beschwören
 ITEM_SELL,Verkaufen
 ITEM_DETAIL,Details
@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Super Spielautomat Gespräch 4
 GAMBLE_UP_WOMAN_TALK_5,Super Spielautomat Gespräch 5
 OPEN_SLOT_TIPS,Mit {1} Dias zusätzliche {2}\nMädchenkapazität erwerben?
 NOT_ENOUGH,{1} nicht ausreichend!
-LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert
+LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert||Das Mädchen wurde in der Ultimativen Arena aufgestellt
 ALTAR_DECOMPOSE_TIP,Der Sterne-Rang dieses Mädchens ist höher als 3. Möchtest du sie wirklich übertragen?
 ALTAR_HERO_NUM_TEXT,Verbleibend：
 ALTAR_SMART_TEXT,Schnell-Wahl
@@ -374,7 +374,7 @@ RANK_TEXT02,Stufe
 FREE2,Gratis
 FREE3,Gratis
 SUMMON_X_TIME,{1} X
-SUMMON_HELP_1,"1. Normale Kapseln ermöglichen es dir, Mädchen mit niedrigem Rang (1, 2, 3, 4 und 5 Sterne) zu bekommen. Um die normalen Kapsel zu ziehen, benötigst du die normalen Kapselmünze.|2. Mit Super Kapseln bekommst du hochrangige Mädchen (3, 4 und 5 Sterne). Um die Super Kapseln zu ziehen, benötigst du Super Kapselmünzen oder Dias.|3. BFF Kapseln ermöglichen es dir, mittelrangige Mädchen (2, 3, 4 und 5 Sterne) zu bekommen. Du brauchst Herzen, um die BFF Kapseln zu ziehen. Spieler können maximal 1.000 Herzen speichern|4. Erhalte 10 Energie (Punkte) für jede verwendete Super Kapsel. Wenn du 1.000 Energie erhalten hast und dein VIP-Level 3 erreicht hat, kannst du das goldene Ei öffnen. Aus dem goldenen Ei erhältst du zu 100%% ein 5-Sterne-Mädchen.|5. Die Chancenverteilung bei den Super Kapseln ist:|78,42%% für 3 Sterne, 20%% für 4 Sterne und 1,58%% für 5 Sterne| Während des Kapselevents ist die Chancenverteilung bei den Super Kapseln wie folgt:|77,84%% für 3 Sterne, 19%% für 4 Sterne und 3,16%% für 5 Sterne.| ​Die Chancenverteilung bei den BFF Kapseln ist:|32%% für 2 Sterne, 54%% für 3 Sterne, 13,2%% für 4 Sterne und 0,8%% für 5 Sterne. |​ Die Chancenverteilung bei den Normalen Kapseln ist:|56%% für 1 Stern, 34%% für 2 Sterne, 8,5%% für 3 Sterne, 1,45%% für 4 Sterne und 0,05%% für 5 Sterne. "
+SUMMON_HELP_1,"1. Normale Kapseln ermöglichen es dir, Mädchen mit niedrigem Rang (1, 2, 3, 4 und 5 Sterne) zu bekommen. Um die normalen Kapsel zu ziehen, benötigst du die normalen Kapselmünze.|2. Mit Super Kapseln bekommst du hochrangige Mädchen (3, 4 und 5 Sterne). Um die Super Kapseln zu ziehen, benötigst du Super Kapselmünzen oder Dias.|3. BFF Kapseln ermöglichen es dir, mittelrangige Mädchen (2, 3, 4 und 5 Sterne) zu bekommen. Du brauchst Herzen, um die BFF Kapseln zu ziehen. Spieler können maximal 1.000 Herzen speichern|4. Erhalte 10 Energie (Punkte) für jede verwendete Super Kapsel. Wenn du 1.000 Energie erhalten hast und dein VIP-Level 3 erreicht hat, kannst du das goldene Ei öffnen. Aus dem goldenen Ei erhältst du zu 100%% ein 5-Sterne-Mädchen.|5. Die Chancenverteilung bei den Super Kapseln ist:|78,42%% für 3 Sterne, 20%% für 4 Sterne und 1,58%% für 5 Sterne| Während des Kapselevents ist die Chancenverteilung bei den Super Kapseln wie folgt:|77,84%% für 3 Sterne, 19%% für 4 Sterne und 3,16%% für 5 Sterne.| ​Die Chancenverteilung bei den BFF Kapseln ist:|32%% für 2 Sterne, 54%% für 3 Sterne, 13,2%% für 4 Sterne und 0,8%% für 5 Sterne. |​ Die Chancenverteilung bei den Normalen Kapseln ist:|56%% für 1 Stern, 34%% für 2 Sterne, 8,5%% für 3 Sterne, 1,45%% für 4 Sterne und 0,05%% für 5 Sterne.|6. Maximal kannst du 9999 normale Kapselmünzen und 9999 Super Kapselmünzen auf einmal besitzen. Alle darüber hinaus erhaltene Kapselmünzen werden nicht gespeichert. "
 SUMMON_HELP_2,"Die Chancen der Super Kapsel sind:| 78,42%% für 3 Sterne, 20%% für 4 Sterne und 1,58%% für 5 Sterne ||Während des Kapsel Pack-Events betragen die Chancen für die Super Kapseln:| 77,84%% für 3 Sterne, 19%% für 4 Sterne und 3,16%% für 5 Sterne.||Die Chancen der BFF Kapseln sind:| 32%% für 2 Sterne, 54%% für 3 Sterne, 13,2%% für 4 Sterne und 0,8%% für 5 Sterne.||Die Chancen der Normalen Kapseln sind:| 56%% für 1 Stern, 34%% für 2 Sterne, 8,5%% für 3 Sterne, 1,45%% für 4 Sterne und 0,05%% für 5 Sterne."
 SUMMON_HELP_3,"Aus der Super Kapsel kannst du Energie für das goldene Ei erhalten. Wenn die Energie voll ist, kannst du das goldene Ei öffnen und aus der BFF Kapsel ein zufälliges 5-Sterne Mädchen erhalten. Du musst den VIP3-Status erreichen, um das goldene Ei öffnen zu können."
 NIUDANJI,Kapsel
@@ -1002,7 +1002,7 @@ SHENXUE_INIT_TEXT,Bite wähle ein Mädchen zum absolvieren
 ARTIFACT_UP_TITLE,Antiquität aufleveln
 TREASURE_CHANGE_TITLE,Kristall austauschen
 WORLD_BOSS_SWEEP_WARNING,Maximal 50 Raids auf einmal möglich!
-ZHONGQIU_FESTIVAL_TEXT,"1. Nutze ""Elementarkugeln"" während des Events, um Belohnungen auf der Eventseite zu erhalten. |2. ""Elementarkugeln"" können durch den Auto-Kampf, Superpakete oder im Austausch gegen Phantome durch tippen auf das + Zeichen erhalten werden! |3. In den letzten 24 Stunden des Events kann man keine Elementarkugeln mehr erhalten, sondern sie nur noch gegen Belohnungen eintauschen.|4. Die Pakete für Elementarkugeln werden vor dem letzten Tag des Events entfernt. Bitte kaufe die Pakete vor der Zeit ein!|5. Nachdem das Event vorbei ist verwandeln sich die nicht verwendeten Elementarkugeln automatisch in Gold um. Jede Elementarkugel entspricht 15K. Das Gold wird per Mail verschickt."
+ZHONGQIU_FESTIVAL_TEXT,"1. Nutze ""Elementarkugeln"" während des Events, um Belohnungen auf der Eventseite zu erhalten. |2. ""Elementarkugeln"" können durch den Auto-Kampf, Superpakete, Kostümpakete, Glückspakete oder im Austausch gegen Phantome durch tippen auf das + Zeichen erhalten werden! |3. In den letzten 24 Stunden des Events kann man keine Elementarkugeln mehr erhalten, sondern sie nur noch gegen Belohnungen eintauschen.|4. Die Pakete für Elementarkugeln werden vor dem letzten Tag des Events entfernt. Bitte kaufe die Pakete vor der Zeit ein!|5. Nachdem das Event vorbei ist verwandeln sich die nicht verwendeten Elementarkugeln automatisch in Gold um. Jede Elementarkugel entspricht 15K. Das Gold wird per Mail verschickt."
 MID_AUTUMN_ACTIVITY_EXCHANGE_TITLE,Event Tausch
 MID_AUTUMN_NOT_ENOUGH_WARNING,Elementarkugeln nicht ausreichend
 COMIC_ALREADY_LAST,Letzte Episode
@@ -3224,7 +3224,8 @@ ACTIVITY_ICE_SECRET_MISSION_CD,Erneuern:
 ACTIVITY_ICE_SECRET_MISSION_TIP,Wird nicht länger aktualisiert
 ACTIVITY_ICE_SECRET_ROUNDS,Runde {1}
 ACTIVITY_ICE_SECRET_MAXAWARD_TEXT,Ultim. Belohnung
-ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Keine ultimative Belohnung eingestellt
+ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Ultimative Belohnung einstellen
+ACTIVITY_ICE_SECRET_MAXAWARD_ERROR,Keine ultimative Belohnung eingestellt
 ACTIVITY_ICE_SECRET_MAXAWARD_TIP,Wird in Runde {1} entsperrt
 ACTIVITY_ICE_SECRET_START,Starten
 ACTIVITY_ICE_SECRET_PARTNER_TEXT1,Das Spiel beginnt!
@@ -3283,10 +3284,10 @@ WISH_GACHA_TEXT_2,Ziehe {1} Wunschkapseln
 WISH_GACHA_GOTOGACHA,Zum Ziehen
 WISH_GACHA_TIPS_1,"Verwende während des Events die Wunschkapseln, um die entsprechenden Belohnungen zu erhalten."
 WISH_GACHA_TIPS_2,Tippe um dein Wunschmädchen zu wählen
-WISH_GACHA_TIPS_3,"Höhere Wahrscheinlichkeit für 5-Sterne Mädchen! Je mehr Wunschkapseln du verwendet hast, desto wahrscheinlicher erhältst du {1}."
+WISH_GACHA_TIPS_3,"Das Wunschmädchen kann jederzeit gewechselt werden. Dadurch wird weder der aktuelle Ziehungsfortschritt noch die akt. Wkt. fürs Wunschmädchen beeinflusst. Je öfter du ziehst, desto wahrscheinlicher erhältst du das Wunschmädchen!"
 WISH_GACHA_SELECT_PARTNER_WINDOW,Wähle dein Wunschmädchen
 WISH_GACHA_SELECT_PARTNER_TIPS_1,Wähle dein Wunschmädchen
-WISH_GACHA_SELECT_PARTNER_TIPS_2,Danach kann das Wunschmädchen nicht gewechselt werden. Wählen bestätigen?
+WISH_GACHA_SELECT_PARTNER_TIPS_2,Willst du sie als dein Wunschmädchen wählen?
 PET_STORY_UNLOCK,Entsperrt auf Diener Klasse {1}
 THE_PET_HAS_NOT_DATA,Der Diener hat momentan keine Geschichte
 ACTIVITY_ENTRANCE_TEST_BUY_TILI_WINDOW,Prüfungszertifikat kaufen
@@ -3367,7 +3368,7 @@ SPIRIT_STAGE_LOCK_TIPS,Lv.{1} und Seelenkraft {2} benötigt
 SPIRIT_STAGE_REWARD_TITLE,Belohnungen für Seelenaufgaben
 SHOP_MAP_TEXT05,Antiquitätsladen
 CONCERN_SNS_HTTP,https://www.facebook.com/de.gxb2/
-ACTIVITY_KEYBOARD_HELP,"1. Verwende 1 Rassel, um auf die Taste zu drücken und eine zufällige Belohnung zu erhalten. Wenn du die ""Goldene Note"" im Zentrum erfolgreich getroffen hast, erhältst du eine der obenstehenden besonderen Belohnungen per Zufall und die Belohnungen auf den Tasten werden erneuert.|2. Nachdem alle besonderen Belohnungen (Belohnungen über den Tasten) eingesammelt wurden, wird die ""Goldene Note"" im Zentrum automatisch zu「Exclusive Orangene Antiquitätenbox *1」geändert.|3. Wie erhältst du die Rasseln: Lottoevent, Kostümpakete, Glückspakete, Superpakete, Tägliche Mail!|4. Nach dem Ende des Events verwandeln sich die nicht mehr verwendbaren Rasseln automatisch in Münzen. Jede Rassel entspricht 100k Münzen. Diese werden per Mail geschickt."
+ACTIVITY_KEYBOARD_HELP,"1. Verwende 1 Rassel, um auf die Taste zu drücken und eine zufällige Belohnung zu erhalten. Wenn du auf der ""Goldenen Note"" in der Mitte landest, erhältst du zufällig eine der obenstehenden besonderen Belohnungen aus der Reihe, die du vorher ausgewählt hast (man braucht keine weitere Rassel zu verwenden) und die Belohnungen auf den Tasten werden erneuert.|2. Die 2. bis 6. Reihe der besonderen Belohnungen werden entsperrt, nachdem du die ""Goldene Note"" 2, 4, 7, 9, 11 Mal getroffen hast. Du kannst deine gewünschte Reihe auswählen, indem du auf die Zahl vor der Reihe tippst.|3. Nachdem alle oberhalb dargestellten Belohnungen eingesammelt wurden, wird die ""Goldene Note"" im Zentrum automatisch zu「Ressourcenauswahlbox*30」geändert.|4. Nach dem Ende des Events verwandeln sich die nicht mehr verwendbaren Rasseln automatisch in Münzen. Jede Rassel entspricht 100k Münzen. Diese werden per Mail geschickt."
 HAD_COLLECTED,Gesammelt:
 ENTRANCE_TEST_TILI_OK_TIPS,{1} Zertifikat(e) gekauft
 MAX,MAX
@@ -4179,7 +4180,7 @@ GUILD_COMPETITION_RANK_NAME,Rang
 GUILD_COMPETITION_EVERY_BOSS_AWARD,Rangbelohnung:
 ACTIVITY_PARTNER_GALLERY_AWARD,Erhalte insgesamt {1} Punkte
 ACTIVITY_PARTNER_GALLERY_TIP,"Erleuchte die Bilder bestimmter 5-Sterne und 6-Sterne Mädchen, um reichhaltige Belohnungen zu erhalten."
-ACTIVITY_PARTNER_GALLERY_HELP,"1. Entsperre die Bilder bestimmter 5-Sterne und 6-Sterne Mädchen, um entsprechend Punkte zu erhalten.|5-Sterne Mädchen geben 2 Punkte. 6-Sterne Mädchen geben 5 Punkte.|Tippe auf ""Details"", um die Mädchenliste und den Fortschritt zu prüfen.|2. Die Bilder, die vor dem Event erleuchtet wurden, werden auch gezählt. (Durch Erhalten der bereits erleuchteten Mädchen werden keine weiteren Punkte vergeben.)|3. Basierend auf der Summe deiner gesammelten Punkte erhältst du die entsprechenden Belohnungen."
+ACTIVITY_PARTNER_GALLERY_HELP,"1. Entsperre die Bilder bestimmter 5-Sterne und 6-Sterne Mädchen, um entsprechend Punkte zu erhalten.|5-Sterne Mädchen geben 2 Punkte. 6-Sterne Mädchen geben 5 Punkte.|Tippe auf ""Details"", um die Mädchenliste und den Fortschritt zu prüfen.|2. Die Bilder, die vor dem Event erleuchtet wurden, werden auch gezählt. (Durch Erhalten der bereits erleuchteten Mädchen werden keine weiteren Punkte vergeben. Erhältst du durch ""Tauschen"" unter ""Weiterentwickeln"" ein 10-Sterne Mädchen oder höher, wird ihr 6-Sterne Bild nicht entsperrt.)|3. Basierend auf der Summe deiner gesammelten Punkte erhältst du die entsprechenden Belohnungen."
 ACTIVITY_PARTNER_GALLERY_CHECK,Details
 ACTIVITY_PARTNER_GALLERY_TITLE,Details
 ACTIVITY_PARTNER_GALLERY_POINT,Derzeitige Punkte:
@@ -5351,6 +5352,58 @@ ACTIVITY_GROWTH_PLAN_TEXT19,Sicher {1} Dias für die verpassten Punkte ausgeben?
 ACTIVITY_JACKPOT_TEXT01,Pakete zum\nAutomaten
 ACTIVITY_JACKPOT_TEXT02,"Du hast den Super-Spielautomaten entsperrt! Tippe auf ""Los"", um zum Super-Spielautomaten zu gelangen!"
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Los
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Du hast die Vorteilskarte zum Spielautomaten erhalten. Willst du deine ""Spielpunkte"" zu ""Super-Spielpunkten"" umwandeln?"
 ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Weiterziehen
 ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,Umwandeln
-ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Du hast die Vorteilskarte zum Spielautomaten erhalten! Willst du jetzt deine ""Spielpunkte"" zu ""Super-Spielpunkten"" umwandeln oder einfach weiterziehen?"
+WISH_GACHA_TEXT9,Wechseln
+WISH_GACHA_TEXT10,P.S.: Wunschkapseln zählen nicht in den täglichen Aufgaben und Erfolgen
+SALE_MAIN_TITLE,Limitiertes Angebot
+SALE_COUNTDOWN,Angebot endet in
+SALE_UPPER_TITLE,Rabatt
+SALE_MONTH_GIFTBAG1,Alter Preis:
+SALE_MONTH_GIFTBAG2,"Alter Preis: €10,99"
+SALE_MONTH_GIFTBAG3,"Alter Preis: €32,99"
+SALE_MONTH_GIFTBAG4,Alter Preis: €54.99
+SALE_MONTH_GIFTBAG5,"Alter Preis: €74,99"
+SALE_MONTH_GIFTBAG6,Alter Preis: €89.99
+SALE_MONTH_GIFTBAG7,"Alter Preis: €109,99"
+SALE_MONTH_CARD,"Alter Preis: €16,99"
+SALE_WEEK_GIFTBAG2,"Alter Preis: €21,99"
+SALE_DAY_GIFTBAG1,"Alter Preis: €1,09"
+SALE_DAY_GIFTBAG2,"Alter Preis: €2,29"
+ACTIVITY_KEYBOARD_TEXT1,Willst du sicher diese Reihe der besonderen Belohnungen wählen?
+ACTIVITY_KEYBOARD_TEXT2,"Triff noch {1} Mal die goldene Note, um sie zu entsperren."
+ARCTIC_EXPEDITION_TEXT_1,Lagerpunkte:
+ARCTIC_EXPEDITION_TEXT_2,Gestern dazubekommen:
+ARCTIC_EXPEDITION_TEXT_3,Besetztes Feld
+ARCTIC_EXPEDITION_TEXT_4,Anzahl
+ARCTIC_EXPEDITION_TEXT_5,Punktebonus
+ARCTIC_EXPEDITION_TEXT_6,Feldinfo
+ARCTIC_EXPEDITION_TEXT_7,Lagerbuff
+ARCTIC_EXPEDITION_TEXT_8,Gewährt zusätzliche Buffs im Kampf
+ARCTIC_EXPEDITION_TEXT_9,Verteidigerinnen
+ARCTIC_EXPEDITION_TEXT_10,[u]Versammlung läuft...[/u]
+ARCTIC_EXPEDITION_TEXT_11,Akt. Verteidigung
+ARCTIC_EXPEDITION_TEXT_12,Ruhezeit
+ARCTIC_EXPEDITION_GROUP_1,Studierendenvereinigung
+ARCTIC_EXPEDITION_GROUP_2,DEF
+ARCTIC_EXPEDITION_GROUP_3,Disziplinarkomitee
+ARCTIC_EXPEDITION_GROUP_4,Neutral
+ARCTIC_EXPEDITION_TEXT_13,Kampfergebnis
+ARCTIC_EXPEDITION_TEXT_14,Siege
+ARCTIC_EXPEDITION_TEXT_15,Eig. Beitrag
+ARCTIC_EXPEDITION_TEXT_16,Verteidigung
+ARCTIC_EXPEDITION_TEXT_17,Zahl der Verteidigerinnen erhöht!
+ARCTIC_EXPEDITION_TEXT_18,1 Kampf kostet das Mädchen 1 Energie
+ARCTIC_EXPEDITION_TEXT_19,Eine neue Epoche beginnt!
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,Expeditionsaufgaben
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,Punktbelohnungen
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_3,Fortschritt
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_4,Expeditionsfortschritt
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,Neue Epoche beginnt in:
+WISH_GACHA_TEXT11,Wunschmädchen wechseln
+WISH_GACHA_TEXT12,Willst du sicher das Wunschmädchen wechseln?
+ARCTIC_EXPEDITION_TEXT_20,Zahl der Verteidigerinnen gesenkt!
+SALE_PRICE_TEXT01,67%% OFF
+SALE_PRICE_TEXT02,40%% OFF
+ACTIVITY_KEYBOARD_TEXT3,Weitere Reihe(n) mit besseren besonderen Belohnungen wurde(n) bereits entsperrt. Willst du dennoch die aktuelle Reihe als gewünschte Reihe wählen?

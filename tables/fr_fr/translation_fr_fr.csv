@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratuit
 PUB_MISSION_COMPLETE2,Finir
 PUB_TICKET_NO_ENOUGH1,Parchemins de Jobs Insuffisants !
 PUB_TICKET_NO_ENOUGH2,Parchemins de Jobs Avancés Insuffisants !
-TAVERN_WINDOW_TIPS,"1. Des récompenses généreuses sont données pour avoir fini le Job dans le temps imparti. Chaque Fille ne peut avoir qu'un Job à la fois.|2. Le nombre de Job quotidien est limité. Vous pouvez cependant augmenter la limite en augmentant votre niveau VIP.|3. Les Jobs n'ayant pas encore été commencées peuvent être réinitialisés. Vous pouvez utiliser des Gemmes pour actualiser les Jobs que vous ne voulez pas.|4. Vous pouvez utiliser des Parchemins de Jobs afin d'obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps des Jobs.|6. Chances d'actualiser des Jobs：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Chances d'obtenir des Jobs après avoir utilisé les Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles."
+TAVERN_WINDOW_TIPS,"1. Finissez un Job et obtenez diverses récompenses. Chaque Fille ne peut prendre part à qu'à un seul Job à la fois.|2. Le nombre de Job quotidien est limité. Augmentez cette limite en améliorant votre niveau de Vip.|3. Si vous ne souhaitez pas faire certains Jobs, vous pouvez choisir de les réinitialiser tant que vous ne les avez pas encore commencé, en utilisant des Gemmes.|4. Utilisez des Parchemins de Jobs pour obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps et ainsi finir les Jobs.|6. Taux d'obtention de Job：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Taux d'obtention de Job en utilisant des Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Taux d'obtenir de Job en utilisant des Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles.|9. Stockage maximal de Parchemin de Jobs/Avancés : 999."
 ITEM_SUMMON,Invoquer
 ITEM_SELL,Vendre
 ITEM_DETAIL,Détails
@@ -184,7 +184,7 @@ PUB_START_MISSION_3,Vous avez besoin d'une Fille de la Maison {1} !
 PUB_START_MISSION_4,Vous avez besoin d'une Fille {1} étoiles
 PUB_START_MISSION_5,Votre Puissance n'est pas assez haute !
 PUB_START_MISSION_6,Cette Fille a déjà été déployée !
-PUB_LOCK_MISSION,Le job déjà commencé ne peut pas être débloqué !
+PUB_LOCK_MISSION,Un Job en cours ne peut pas être débloqué !
 SKILL_UNLOCK_DESC,Débloqué au Grade {1}
 ATTR_UP,Amélioration d'Attribut :
 TOP_LEV_UP_TO,Niveau max monté à :
@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Distributeur Avancé Parole 4
 GAMBLE_UP_WOMAN_TALK_5,Distributeur Avancé Parole 5
 OPEN_SLOT_TIPS,Voulez-vous utiliser {1} Gemmes pour augmenter la Capacité Max de Fille de {2} ?
 NOT_ENOUGH,{1} insuffisant(e)
-LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire
+LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans l'équipe de l'Arène Ultime|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans le Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire
 ALTAR_DECOMPOSE_TIP,Êtes-vous sûr de vouloir transférer une Fille supérieure à 3 étoiles ?
 ALTAR_HERO_NUM_TEXT,Restant：
 ALTAR_SMART_TEXT,Auto
@@ -374,8 +374,8 @@ RANK_TEXT02,Étape
 FREE2,Gratuit
 FREE3,Gratuit
 SUMMON_X_TIME,Tirer {1}
-SUMMON_HELP_1,"1. Les Capsules Normales vous permettent d'obtenir des Filles de bas rang (1, 2, 3, 4 et 5 étoiles), il faut une pièce de Capsule Normale pour tirer une Capsule Normale.|2. Les Capsules Avancées vous permettent d'obtenir des Filles de haut rang (3, 4 et 5 étoiles), il faut une Pièce de Capsule Avancée pour tirer une Capsule Avancée.|3. Les Capsules d'Amitiés vous permettent d'obtenir des Filles de rang moyen (2, 3, 4 et 5 étoiles), il faut 10 cœurs pour obtenir une Capsule d'Amitié. Le joueur peut maximum avoir 1,000 cœurs.|4. Obtenez 10 d'énergie pour chaque obtention d'une Capsule Avancée. Les joueurs VIP 3 peuvent échanger 1,000 d'énergie afin d'obtenir l'Œuf d'Or et avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié.|5. Les chances des Capsules Avancées sont de：|78.42%% pour 3 étoiles, 20%% pour 4 étoiles et 1.58%% pour 5 étoiles|6. Pendant l'événement Capsule de Filles, les chances des Capsules Avancées sont de：|77.84%% pour 3 étoiles, 19%% pour 4 étoiles et 3.16%% pour 5 étoiles.|7. Les chances des Capsules d'Amitiés sont de：|32%% pour 2 étoiles, 54%% pour 3 étoiles, 13.2%% pour 4 étoiles et 0.8%% pour 5 étoiles.|8. Les chances des Capsules Normales sont de :|56%% pour 1 étoile, 34%% pour 2 étoiles, 8.5%% pour 3 étoiles, 1.45%% pour 4 étoiles et 0.05%% pour 5 étoiles. "
-SUMMON_HELP_2,"Les chances des Capsules Avancées sont de：|78.42%% pour 3 étoiles, 20%% pour 4 étoiles et 1.58%% pour 5 étoiles||. Pendant l'événement des Packs de Capsules, les chances des Capsules Avancées sont de：|77.84%% pour 3 étoiles, 19%% pour 4 étoiles et 3.16%% pour 5 étoiles.||. Les chances des Capsules d'Amitiés sont de：|32%% pour 2 étoiles, 54%% pour 3 étoiles, 13.2%% pour 4 étoiles et 0.8%% pour 5 étoiles.||. Les chances des Capsules Normales sont de :|56%% pour 1 étoile, 34%% pour 2 étoiles, 8.5%% pour 3 étoiles, 1.45%% pour 4 étoiles et 0.05%% pour 5 étoiles."
+SUMMON_HELP_1,"1. Les Capsules Normales vous permettent d'obtenir des Filles Matérielles (1, 2, 3, 4 et 5 étoiles), il faut un Jeton de Capsule Normale pour tirer une fois.|2. Les Capsules Avancées vous permettent d'obtenir des Filles Puissantes (3, 4 et 5 étoiles), il faut un Jeton de Capsule Avancée pour tirer une fois.|3. Les Capsules d'Amitié vous permettent d'obtenir des Filles Matérielles (2, 3, 4 et 5 étoiles), il faut 10 Cœurs pour obtenir une Capsule d'Amitié. (vous pouvez avoir 1,000 Cœurs au maximum)|4. À chaque tirage de Capsule Avancée, vous obtiendrez 10 énergies. Les joueurs VIP 3 peuvent échanger 1,000 d'énergie afin d'obtenir l'Œuf d'Or et avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié.|5. Stockage maximal de Capsule Normale/Avancée : 9999.|6. Le taux d'obention des Filles dans la Capsule Avancée：|78.42%% pour Fille 3 étoiles, 20%% pour Fille 4 étoiles et 1.58%% pour Fille 5 étoiles.|7. Le taux d'obtention des Filles dans la Capsule Avancée (Pendant l'événement Capsule de nouvelles Filles)：|77.84%% pour Fille 3 étoiles, 19%% pour Fille 4 étoiles et 3.16%% pour 5 Fille étoiles.|8. Le taux d'obtention des Filles dans la Capsule d'Amitié：|32%% pour Fille 2 étoiles, 54%% pour 3 Fille étoiles, 13.2%% pour Fille 4 étoiles et 0.8%% pour 5 Fille étoiles.|9. Le taux d'obtention des Filles dans la Capsule Normale：|56%% pour Fille 1 étoile, 34%% pour Fille 2 étoiles, 8.5%% pour Fille 3 étoiles, 1.45%% pour Fille 4 étoiles et 0.05%% pour Fille 5 étoiles. "
+SUMMON_HELP_2,"Le taux d'obtention des Filles dans la Capsule Avancée：|78.42%% pour Fille 3 étoiles, 20%% pour Fille 4 étoiles et 1.58%% pour Fille 5 étoiles||. Le taux d'obtention des Filles dans la Capsule Avancée (Pendant l'événement de Capsules de nouvelles Filles)：|77.84%% pour Fille 3 étoiles, 19%% pour Fille 4 étoiles et 3.16%% pour Fille 5 étoiles.||Le taux d'obtention des Fille dans la Capsule d'Amitié：|32%% pour Fille 2 étoiles, 54%% pour Fille 3 étoiles, 13.2%% pour Fille 4 étoiles et 0.8%% pour Fille 5 étoiles.||. Le taux d'obtention des Filles dans la Capsule Normale：|56%% pour Fille 1 étoile, 34%% pour Fille 2 étoiles, 8.5%% pour Fille 3 étoiles, 1.45%% pour Fille 4 étoiles et 0.05%% pour Fille 5 étoiles."
 SUMMON_HELP_3,"1. Obtenez 10 d'énergies pour chaque utilisation d'une Capsule Avancée.\n\n2. Les joueurs VIP 3 peuvent utiliser 1,000 d'énergies afin d'obtenir une Œuf d'Or et d'avoir une Fille 5 étoiles qui se trouve dans la liste de Capsule d'Amitié."
 NIUDANJI,Capsule
 SURE_2,Confirmer
@@ -644,7 +644,7 @@ RANK_TEXT03,Points
 FRIEND_LOVE_MAX,La limite du nombre de cœurs réclamé a été atteinte
 FRIEND_NOT_SEND_OR_GET,Il n'y a pas de cœur à réclamer ou à envoyer
 FRIEND_DAILY_LOVE_MAX,Le maximum de cœurs aujourd'hui a déjà été réclamé
-FRIEND_ASSISTANT_HELP,"1. L' Ami Boss se renouvelera chaque jour à 00:00 (UTC/GMT 0). Vous n'avez qu'une chance de défi. Seulement les victoires sont comptées.|2. Vous pouvez choisir le niveau d'Ami Boss pour combattre, le niveau le plus élevé nécessite que vos six Filles atteignent la puissance requise. Vous pouvez obtenir des récompenses différentes selon le niveau d'Ami Boss. ( Vous pouvez voir si vous pouvez choisir le nouveau niveau chaque jour à 00:00 (UTC/GMT 0) )|3. Vous pouvez choisir une Fille en service pour aider vos amis à vaincre l'Ami Boss. Lorsque vous combattez le Boss de votre ami, vous ne pouvez choisir qu'une Fille en service de votre ami.|4. Les Filles de soutien de vos amis bénéficient des attributs et des équipements de ces amis, mais elles bénéficient des attributs de votre Laboratoire.|5. À chaque fois que Senpai a aidé à vaincre le Boss d'un ami avec succès, le nombre de soutien de la semaine de Senpai augmentera de 1. Chaque lundi à 0h (UTC/GMT 0), les récompenses de soutien seront décidées en fonction du nombre de soutien effectuées de la semaine passée. |6. Vous pouvez passer le combat après avoir battu 3 fois le BOSS du niveau actuel sans l'aide de Fille en service."
+FRIEND_ASSISTANT_HELP,"1. L'Ami Boss se renouvelera chaque jour à 00:00 (UTC/GMT 0). Vous n'avez qu'une chance de défi. Seulement les victoires sont comptées.|2. Vous pouvez choisir le niveau d'Ami Boss pour combattre, le niveau le plus élevé nécessite que vos six Filles atteignent la puissance requise. Vous pouvez obtenir des récompenses différentes selon le niveau d'Ami Boss. ( Vous pouvez voir si vous pouvez choisir le nouveau niveau chaque jour à 00:00 (UTC/GMT 0) )|3. Vous pouvez choisir une Fille en service pour aider vos amis à vaincre l'Ami Boss. Lorsque vous combattez le Boss de votre ami, vous ne pouvez choisir qu'une Fille en service de votre ami.|4. Les Filles de soutien de vos amis bénéficient des attributs et des équipements de ces amis, mais elles bénéficient des attributs de votre Laboratoire.|5. À chaque fois que Senpai a aidé à vaincre le Boss d'un ami avec succès, le nombre de soutien de la semaine de Senpai augmentera de 1. Chaque lundi à 0h (UTC/GMT 0), les récompenses de soutien seront décidées en fonction du nombre de soutien effectuées de la semaine passée. |6. Vous pouvez passer le combat après avoir battu 3 fois le BOSS du niveau actuel sans l'aide de Fille en service."
 FRIEND_SEND_MAIL,Envoyer un Courrier
 FRIEND_DEL_FRIEND,Voulez-vous supprimer cet ami ?
 FRIEND_NONE,Vous n'avez pas encore d'amis
@@ -1008,7 +1008,7 @@ SHENXUE_INIT_TEXT,Choisissez la Fille à Graduer
 ARTIFACT_UP_TITLE,Améliorer l'Antiquité
 TREASURE_CHANGE_TITLE,Changer les attributs
 WORLD_BOSS_SWEEP_WARNING,Vous ne pouvez faire le Raid que 50 fois d'un coup !
-ZHONGQIU_FESTIVAL_TEXT,"1. Utilisez des "" Orbes Élémentaires"" pour échanger des récompenses ! Ils sont disponibles dans le butin, en achetant des Packs ou en échangant avec de l'Élémentium.|2. Vous n'obtiendrez aucune Orbe Élémentaire dans les derniers 24h de l'événement. |3. Les packs pour obtenir des ""Orbes Élémentaires"" seront retirés 24 heures avant la fin de l'événement. Veuillez les acheter avant leur retrait si besoin ! |4. Après l'événement, les Orbes Élémentaires inutilisées seront automatiquement converties en pièces d'or, une Orbe pour 15k, et distribués par courrier."
+ZHONGQIU_FESTIVAL_TEXT,"1. Utilisez des Orbes Élémentaires pour échanger des récompenses.|2. Moyens d'obtention d'Orbe Élémentaire : Butin de Campagne, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Échanger avec de l'Élémentium.|3. Vous n'obtiendrez aucun Orbe Élémentaire dans les derniers 24h de l'événement. |4. Les packs pour obtenir des Orbes Élémentaires seront retirés 24 heures avant la fin de l'événement. Veuillez les acheter avant leur retrait si besoin ! |5. À la fin de l'événement, les Orbes Élémentaires inutilisés seront automatiquement convertis en Pièces d'Or, 1 Orbe Élémentaire = 15k Pièces d'Or, et distribuées par courrier."
 MID_AUTUMN_ACTIVITY_EXCHANGE_TITLE,Événement d'Échange
 MID_AUTUMN_NOT_ENOUGH_WARNING,Orbes Élémentaires insuffisantes !
 COMIC_ALREADY_LAST,Dernier Épisode
@@ -2320,7 +2320,7 @@ HOUSE_TEXT_38,"
 
 8. Détails selon votre Confort (24h)：<t>150#Confort|150#Pièces|150#Gemmes|190#Ciseau de Cristal $150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
 "
-HOUSE_LOCK_FAIL,"Cette Fille est dans le dortoir, elle n'est pas déverouillable"
+HOUSE_LOCK_FAIL,"Cette Fille est dans le dortoir, elle n'est pas déverouillable."
 WARRIOR_SUIT,Ensemble de Guerrière
 SUMMON_SPECIAL_HERO_GIFT_TEXT04,Défi du Personnage
 SUMMON_SPECIAL_HERO_GIFT_TEXT05,Aucune limite de niveau
@@ -3261,14 +3261,14 @@ ACTIVITY_ICE_SECRET_MISSION_CD,Rafraîchit dans
 ACTIVITY_ICE_SECRET_MISSION_TIP,Dernière Série de Quêtes
 ACTIVITY_ICE_SECRET_ROUNDS,Tour actuel : {1}
 ACTIVITY_ICE_SECRET_MAXAWARD_TEXT,Récompense Finale
-ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Choisir la récompense finale
-ACTIVITY_ICE_SECRET_MAXAWARD_ERROR,Aucune récompense finale réglée
+ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Choisir la Récompense Finale
+ACTIVITY_ICE_SECRET_MAXAWARD_ERROR,Veuillez d'abord choisir une Récompense Finale
 ACTIVITY_ICE_SECRET_MAXAWARD_TIP,Débloqué après avoir atteint Tour {1}
 ACTIVITY_ICE_SECRET_START,Commencer
 ACTIVITY_ICE_SECRET_PARTNER_TEXT1,C'est parti !
 ACTIVITY_ICE_SECRET_PARTNER_TEXT2,Est-ce que tu peux deviner quelle est la bonne carte ?
 ACTIVITY_ICE_SECRET_PARTNER_TEXT3,Appuyez sur la carte pour obtenir des récompenses !
-ACTIVITY_ICE_SECRET_GAME_HELP,"1. Durant l'évènement, utilisez ""Baguette Magique"" *15 afin de retourner les cartes pour récupérer les récompenses. |2. Vous pouvez choisir une récompense finale que vous souhaitez dans la liste des récompenses à sélectionner. |3. La liste des récompenses à sélectionner changera, plus le tour est élevé, plus la récompense est précieuse. |4. Après avoir récupéré la récompense finale, vous pouvez cliquer sur ""NEXT"" pour accéder au tour suivant. |5. Moyens d'obtention de ""Baguette Magique"" : Boîte Magique, Préparation du Spectacle et Épopée Magique. |6. Après l'événement, les Baguettes Magiques inutilisées seront automatiquement converties en pièces d'or, une Baguette Magique pour 20k, et distribuées par courrier."
+ACTIVITY_ICE_SECRET_GAME_HELP,"1. Durant l'évènement, utilisez les Baguette Magique*15 afin de retourner une carte pour récupérer des récompenses. |2. Vous pouvez choisir une Récompense Finale que vous souhaitez dans la liste des récompenses à sélectionner. |3. La liste des récompenses à sélectionner changera, plus le tour est élevé, plus la récompense est précieuse. |4. Après avoir récupéré la Récompense Finale, vous pouvez appuyer sur ""NEXT"" pour accéder au tour suivant. |5. Moyens d'obtention de Baguette Magique : Boîte Magique, Préparation du Spectacle et Épopée Magique. |6. À la fin de l'événement, les Baguettes Magiques inutilisées seront automatiquement converties en Pièces d'Or, 1 Baguette Magique = 20k Pièces d'Or, et distribuées par courrier."
 ACTIVITY_ICE_SECRET_GAME_TIP,Le tour suivant est déverrouillé. Êtes-vous sûr de continuer dans ce tour actuel ?
 ACTIVITY_ICE_SECRET_GAME_TITLE,Aperçu
 ACTIVITY_RETURN_WINDOW_HELP,"1. L'évènement Vieilles Connaissances est une activité célébrant le retour d'un Senpai. Sa durée totale est de 42 jours, les premiers 28 jours sont la période de retour. |2. Les Senpais qui remplissent les conditions suivantes peuvent obtenir le statut de ""Retour"" en se connectant au jeu et accéder à l'événement：niveau de compte ≥50, dernière connexion ≥ 30 jours à compter de l'ouverture de l'événement. |[c][ba6d63]Remarque：Il faut se connecter pendant la période de retour (dans les 28 jours après le début de l'évènement) pour obtenir le statut de ""Retour"".[-][/c]|3.Pendant la durée de l'évènement (42 jours), les Senpais qui reviennent peuvent obtenir des «Grues en Papier» en remplissant les «Tâches de Retour» et «Tâches Co-op». Échangez les dans la boutique pour obtenir les récompenses. Les «Tâches Co-op» doivent être complétées en coopérant avec votre partenaire. De plus, certaines «Tâches de Retour» peuvent être répétées.|4. Les Senpais de retour récupéront leurs récompenses de campagne (Pièce d'Or, Jus d'EXP, Butin de base) et les récompenses des Quiz quotidiens doublés pendant les 2 semaines suivant le début de l'événement.|[c][ba6d63]Remarque: ce bonus ne chevauche pas les privilèges VIP et les revenus d'abonnement. Le plus grand bonus sera pris en compte. Par exemple: les Senpais de retour VIP13 ne peuvent pas obtenir le bonus de récompenses doublées car leurs privilèges octroient déjà 200%% de récompenses.[-][/c]|5.Pendant la période de l'événement, les Senpais de retour peuvent acheter un Pack de Boîtes de Filles. Pour plus de détails sur son contenu, veuillez consulter l'interface correspondante. |6.Pendant la période de l'événement, les Senpais de retour peuvent obtenir une carte mensuelle à prix réduit. La carte mensuelle à prix réduit ne peut être achetée qu'une seule fois, elle entrera en vigueur immédiatement après l'achat et aura le même qu'une carte mensuelle originale.|7.Les Senpais qui remplissent les conditions suivantes obtiendront le statut Actif après s'être connectés au jeu pendant la période de retour. Les Senpais Actifs peuvent inviter les Senpais de Retour à entrer leur propre code d'invitation et se lier à eux pour aider les Senpais de Retour à effectuer des tâches et obtenir des récompenses：l'événement débute lors de la dernière connexion du Senpai d'une durée inférieure à 30 jours. |[c][ba6d63]Remarque: les Senpais qui créent un compte après le début de l'événement ne peuvent pas obtenir le statut ""Actif"" : dernière connexion＜30 jours à compter de l'ouverture de l'événement. Ils doivent se connecter pendant la période de retour (28 jours après le début de l'événement) pour obtenir le statut ""Actif"".[-][/c]|8. Les Senpais Actifs peuvent envoyer leur code d'invitation aux Senpais de retour. Une fois que les Senpais deviennent compagnons, ils devront accomplir les «Tâches Co-op» ensemble. Les récompenses peuvent être obtenues et les récompenses sont distribuées par courrier; un Senpai Actif ne peut être associé qu'à deux Senpais de retour pendant la période de l'événement et doit accomplir les «Tâches Co-op» du Senpai de retour. Il faut d'abord terminer les ""Tâches Co-op"" du premier Senpai de retour avant de pouvoir commencer celles du deuxième Senpai de retour."
@@ -3320,11 +3320,11 @@ WISH_GACHA_TEXT_1,Tirer Capsule à Souhait {1} fois (Répétable)
 WISH_GACHA_TEXT_2,Tirer Capsule à Souhait {1} fois
 WISH_GACHA_GOTOGACHA,Aller à Capsule
 WISH_GACHA_TIPS_1,"Durant l'événement, vous obtiendrez les récompenses correspondantes en utilisant les Capusles à Souhait."
-WISH_GACHA_TIPS_2,Toucher ici pour choisir la Fille Souhaitée
-WISH_GACHA_TIPS_3,"Pendant l'événement, vous avez plus de chances d'obtenir une Fille 5 étoiles avec les Capsules à Souhait. Plus vous effectuez de tirages, plus les chances d'obtenir {1} sont élevées."
-WISH_GACHA_SELECT_PARTNER_WINDOW,Choisir la Fille Souhaitée
-WISH_GACHA_SELECT_PARTNER_TIPS_1,Choisir la Fille Souhaitée
-WISH_GACHA_SELECT_PARTNER_TIPS_2,"Après avoir choisi la Fille Souhaitée, vous ne pouvez pas la changer ! Êtes-vous sûr de la choisir ?"
+WISH_GACHA_TIPS_2,Touchez ici pour choisir votre Fille Souhaitée
+WISH_GACHA_TIPS_3,"Choisissez votre Fille Souhaitée et changez la à tout moment ! Plus vous tirerez de Capsule, plus vos chances d'obtenir la Fille Souhaitée seront élevées. (Changer de Fille Souhaitée ne réinitialisera PAS votre progression actuelle.)"
+WISH_GACHA_SELECT_PARTNER_WINDOW,Choisissez votre Fille Souhaitée
+WISH_GACHA_SELECT_PARTNER_TIPS_1,Choisissez votre Fille Souhaitée
+WISH_GACHA_SELECT_PARTNER_TIPS_2,Êtes -vous sûr de vouloir changer votre Fille à Souhait ?
 PET_STORY_UNLOCK,Déverouillé au palier {1} de Serviteur
 THE_PET_HAS_NOT_DATA,Aucune Histoire de ce Serviteur
 ACTIVITY_ENTRANCE_TEST_BUY_TILI_WINDOW,Acheter les Certificats
@@ -3405,7 +3405,7 @@ SPIRIT_STAGE_LOCK_TIPS,Débloquer au le Niv.{1} et en atteingnant {2} Puissance 
 SPIRIT_STAGE_REWARD_TITLE,Récompense de Mission
 SHOP_MAP_TEXT05,Antiquaire
 CONCERN_SNS_HTTP,https://www.facebook.com/fr.gxb2/
-ACTIVITY_KEYBOARD_HELP,"1. Pendant l'évènement, utilisez 1 Baguette pour frapper aléatoirement l'une des touches et obtenir une récompense. En frappant la ""Note d'Or"", vous obtiendrez une des récompenses au-dessus du clavier aléatoire. Les récompenses des touches du clavier seront alors rafraîchies.| 2. Lorsque toutes les récompenses au-dessus du clavier ont été obtenues, la ""Note d'Or"" au centre de la touche sera automatiquement remplacée par 「Fragment d'Antiquité Orange Exclusif」 * 1. |3. Moyens d'obtention de Baguette : Bonus de Distributeur, Pack Surprise, Pack Surprise de Skin, Pack de Grande Valeur, Récompense Quotidienne.|4. Après l’événement, les Baguettes inutilisées seront automatiquement converties en pièces d’or, une Baguette pour 100k et distribuées par courrier !"
+ACTIVITY_KEYBOARD_HELP,"1. Pendant l'évènement, utilisez 1 Baguette pour frapper aléatoirement l'une des touches et obtenir une récompense. En frappant la ""Note d'Or"", vous obtiendrez aléatoirement une des récompenses de la partition et les récompenses des touches du clavier seront alors rafraîchies.|2. Après avoir frappé la ""Note d'Or"" 2/4/7/9/11 fois, vous débloquerez la 2ème/3ème/4ème/5ème/6ème partition. Vous pouvez appuyer sur le numéro de partition pour changer.|3. Lorsque toutes les récompenses de la partition ont été obtenues, la ""Note d'Or"" au centre de la touche sera automatiquement remplacée par Boîte de Ressources*30.|4. À la fin de l’événement, les Baguettes inutilisées seront automatiquement converties en Pièces d'Or, 1 Baguette = 100k Pièces d'Or et distribuées par courrier !"
 HAD_COLLECTED,Collecté：
 ENTRANCE_TEST_TILI_OK_TIPS,{1} Certificat(s) Acheté(s)
 MAX,MAX
@@ -3500,11 +3500,11 @@ TREASURE_COVER_TITLE,Remplacer le critstal
 TREASURE_COVER,Remplacer
 TREASURE_COVER_HELP,Le remplacement est irréversible. Voulez-vous continuer?
 TREASURE_CHOOSE,Choisir le cristal
-WISH_GACHA_PS,Capsule à souhait ne comptera pas dans les quêtes quotidiennes et le succès
+WISH_GACHA_PS,Capsules à Souhait non-comptabilisées dans Quêtes Journalières et Succès
 WISH_GACHA_TEXT3,Possibilité Actuelle
 WISH_GACHA_TEXT4,avant la prochaine\naugmentation
 WISH_GACHA_TEXT5,Fille Garantie
-WISH_GACHA_TEXT6,Progrès Actuel
+WISH_GACHA_TEXT6,Progression Actuelle
 WISH_GACHA_NUM,Fois
 WISH_GACHA_CHANCE,Possibilité
 WISH_GACHA_TEXT7,{1}/{2}
@@ -3795,7 +3795,7 @@ RE_CHECKIN,Recollecter
 RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
 SUMMON_GIFTBAG_MENU01,Capsules utilisées ({1}/{2})
 SUMMON_GIFTBAG_MENU02,Capsules de Filles
-SUMMON_GIFTBAG_HELP,"Capsula a préparé des récompenses spéciales pour ces nouvelles Filles : Pendant l'événement, vous pouvez tirer des Capsules Avancées pour obtenir beaucoup de récompenses ! ||Nous publierons la date de la période prochaine sur notre Facebook."
+SUMMON_GIFTBAG_HELP,"Capsula a préparé des récompenses spéciales pour ces nouvelles Filles : Pendant l'événement, tirez des Capsules Avancées pour obtenir beaucoup de récompenses ! ||Nous publierons la date de la période suivante sur notre Facebook."
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,Utilisez {2}*{1} pour le débloquer
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Aperçu Partiel
 ACTIVITY_CHRISTMAS_SALE_DESC,Obtenez des récompenses\npersonnalisées grâce à vos\nTickets du Black Friday !
@@ -4222,7 +4222,7 @@ GUILD_COMPETITION_RANK_NAME,Classement
 GUILD_COMPETITION_EVERY_BOSS_AWARD,Récompense du Classement
 ACTIVITY_PARTNER_GALLERY_AWARD,Obtenir {1} points
 ACTIVITY_PARTNER_GALLERY_TIP,Obtenez des Filles 5/6 étoiles et récupérez les récompenses !
-ACTIVITY_PARTNER_GALLERY_HELP,"1. Débloquez des Filles 5/6 étoiles pour obtenir des points：|5 étoiles-2 points, 6 étoiles-5 points|Appuyez sur ""Détails"" pour en savoir plus sur la liste des Filles et comment les débloquer.|2. Les points obtenus en débloquant les Filles peuvent être cumulés avant l'événement.(Si vous obtenez une même Fille une deuxième fois, vous n'obtiendrez pas de points supplémentaires)|3. Atteignez le nombre de points demandés afin d'obtenir les récompenses."
+ACTIVITY_PARTNER_GALLERY_HELP,"1. Débloquez des Filles 5/6 étoiles pour obtenir des points：|5 étoiles - 2 points, 6 étoiles - 5 points|Appuyez sur ""Détails"" pour en savoir plus sur la liste des Filles et comment les débloquer.|2. Les points obtenus en débloquant les Filles peuvent être cumulés avant l'événement. (si vous obtenez une même Fille une deuxième fois, vous n'obtiendrez pas de points supplémentaires. Attention : si vous obtenez une Fille 10 étoiles ou plus via l'Échange, alors sa forme 6 étoiles ne sera pas débloquée.)|3. Atteignez le nombre de points nécessaires afin d'obtenir les récompenses."
 ACTIVITY_PARTNER_GALLERY_CHECK,Détails
 ACTIVITY_PARTNER_GALLERY_TITLE,Détails des points
 ACTIVITY_PARTNER_GALLERY_POINT,Points Actuels：
@@ -5003,7 +5003,7 @@ EQUIP_LEVELUP_TEXT_18,Ensemble d'équipement à obtenir
 ACTIVITY_DRESS_GACHA_AWARD_HELP,Terminez les tâches pour obtenir les récompenses correspondantes. (envoyées par courrier)
 ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
-EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'ensemble d'équipement que vous souhaitez convertir
+EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'Ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
 DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Halloween est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
@@ -5174,7 +5174,7 @@ La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases 
 (4) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
 (2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Classement Général passeront au Rang Grand Maître.
 (3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.
-(4) En cas de défaite défensive en Rang Bronze, Argent et Or, aucun point ne sera déduit. Après avoir atteint le Rang Diamant, en cas de défaite défensive quelques points seront déduits. Après avoir atteint le Rang Maître, en cas de défaite défensive les points seront déduits normalement.|4.Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Suppléants. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
+(4) En cas de défaite défensive en Rang Bronze, Argent et Or, aucun point ne sera déduit. Après avoir atteint le Rang Diamant, en cas de défaite défensive quelques points seront déduits. Après avoir atteint le Rang Maître, en cas de défaite défensive les points seront déduits normalement.|4. Règles de Combat|(1) L’Arène Ultime comprend un nouveau système de remplacement. Votre équipe est divisée en 2 parties : l’Équipe de Combat et l’Équipe de Suppléants. Après la fin de chaque tour, les Filles non-vaincues continueront de combattre au tour suivant avec leurs PV actuels. Les Filles suppléantes entreront sur le champs de bataille dans l\'ordre des Filles vaincues (les Filles suppléantes de la ligne avant seront placées sur la ligne avant en priorité, les Filles suppléantes de la ligne arrière seront placées sur la ligne arrière en priorité). L’Équipe dont toutes les Filles seront vaincues en premier, sera considérée comme défaite.
 (2) Chaque Fille peut combattre pendant 2 tours au maximum. Si elle n’est pas vaincue au bout de ces 2 tours, elle sera obligatoirement retirée du champs de bataille (considérée comme vaincue).
 (3) Vous pouvez également choisir les Serviteurs de remplacement. Lors d’une Défaite d’un tour, les Serviteurs suppléants entreront sur le champs de bataille dans l’ordre prédéfini. Après une Victoire d’un tour, le Serviteur actuel continuera à combattre.
 (4) Le nombre de Filles suppléantes et de Serviteurs suppléants est différent pour chaque Rang.
@@ -5402,6 +5402,58 @@ ACTIVITY_GROWTH_PLAN_TEXT19,Voulez-vous dépenser {1} Gemmes pour collecter les 
 ACTIVITY_JACKPOT_TEXT01,Pack Exclusif
 ACTIVITY_JACKPOT_TEXT02,"Félicitations ! Vous pouvez avoir accès à la Machine Avancée ! Appuyez sur ""Aller à"" pour voir !"
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Allez à
+ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Vous avez obtenu la Carte Pass Avancé, voulez-vous convertir vos Pièces de Machine Normale en Pièces de Machine Avancée ?"
 ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Jouer
 ACTIVITY_JACKPOT_EXCHANGE_BUTTON02,Convertir
-ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Vous avez obtenu la Carte Pass Avancé, voulez-vous convertir vos Pièces de Machine Normale en Pièces de Machine Avancée ?"
+WISH_GACHA_TEXT9,Changer
+WISH_GACHA_TEXT10,Capsules à Souhait non-comptabilisées dans Quêtes Journalières et Succès
+SALE_MAIN_TITLE,PROMO
+SALE_COUNTDOWN,Fin des soldes
+SALE_UPPER_TITLE,En soldes
+SALE_MONTH_GIFTBAG1,Prix d'Origine :
+SALE_MONTH_GIFTBAG2,Prix d'Origine : €10.99
+SALE_MONTH_GIFTBAG3,Prix d'Origine : 32.99€
+SALE_MONTH_GIFTBAG4,Prix d'Origine : €54.99
+SALE_MONTH_GIFTBAG5,Prix d'Origine : €74.99
+SALE_MONTH_GIFTBAG6,Prix d'Origine : €89.99
+SALE_MONTH_GIFTBAG7,Prix d'Origine : €109.99
+SALE_MONTH_CARD,Prix d'Origine : €16.99
+SALE_WEEK_GIFTBAG2,Prix d'Origine : €21.99
+SALE_DAY_GIFTBAG1,Prix d'Origine : €1.09
+SALE_DAY_GIFTBAG2,Prix d'Origine : €2.29
+ACTIVITY_KEYBOARD_TEXT1,Voulez-vous chosir cette partition ?
+ACTIVITY_KEYBOARD_TEXT2,Débloqué après avoir encore touché la Note d'Or {1} fois
+ARCTIC_EXPEDITION_TEXT_1,Points de Faction：
+ARCTIC_EXPEDITION_TEXT_2,Croissance ：
+ARCTIC_EXPEDITION_TEXT_3,Case Occupée
+ARCTIC_EXPEDITION_TEXT_4,Nombre
+ARCTIC_EXPEDITION_TEXT_5,Points de Faction
+ARCTIC_EXPEDITION_TEXT_6,Information
+ARCTIC_EXPEDITION_TEXT_7,Bonus de combat
+ARCTIC_EXPEDITION_TEXT_8,Déclenchable au cours du combat
+ARCTIC_EXPEDITION_TEXT_9,Nombre
+ARCTIC_EXPEDITION_TEXT_10,[u]Raid en cours[/u]
+ARCTIC_EXPEDITION_TEXT_11,Armée Défensive
+ARCTIC_EXPEDITION_TEXT_12,En Trêve
+ARCTIC_EXPEDITION_GROUP_1,Union Étudiante
+ARCTIC_EXPEDITION_GROUP_2,DEF
+ARCTIC_EXPEDITION_GROUP_3,Comité de Discipline
+ARCTIC_EXPEDITION_GROUP_4,Neutre
+ARCTIC_EXPEDITION_TEXT_13,Résultats du Combat
+ARCTIC_EXPEDITION_TEXT_14,Victoire(s)
+ARCTIC_EXPEDITION_TEXT_15,Contribution Individuelle
+ARCTIC_EXPEDITION_TEXT_16,Armée Défensive
+ARCTIC_EXPEDITION_TEXT_17,Votre Armée Défensive a été renforcée !
+ARCTIC_EXPEDITION_TEXT_18,Chaque combat consomme 1 Endurance de la Fille
+ARCTIC_EXPEDITION_TEXT_19,Une nouvelle ère commence !
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,Quêtes d'Expédition
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,Points de Faction
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_3,Progression
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_4,Avancée de l'Expédition
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,Nouvelle ère dans：
+WISH_GACHA_TEXT11,Changez de Fille Souhaitée
+WISH_GACHA_TEXT12,Êtes -vous sûr de vouloir changer la Fille à Souhait ?
+ARCTIC_EXPEDITION_TEXT_20,Votre Armée Défensive a été affaiblie !
+SALE_PRICE_TEXT01,67%% OFF
+SALE_PRICE_TEXT02,40%% OFF
+ACTIVITY_KEYBOARD_TEXT3,Vous pouvez accéder à la partition suivante qui vous permettra d'otenir des meilleures récompenses ! Voulez-vous encore choisir la partition acutelle ?
