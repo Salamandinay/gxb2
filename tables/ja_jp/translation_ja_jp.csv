@@ -261,7 +261,7 @@ DUNGEON_HARD_4,エクストリーム
 DUNGEON_MONSTER_PREVIEW,敵一覧
 DUNGEON_FIGHT,出撃
 DUNGEON_HERO_HAS_UP,戦姫は出撃中です
-DUNGEON_FULL_HERO,選択上限になりました
+DUNGEON_FULL_HERO,選択上限に達しました
 DUNGEON_START_ERROR,出撃戦姫を選択してください
 DUNGEON_SHOP,ショップ
 DUNGEON_SHOP_LEV_1,初級
@@ -3001,7 +3001,7 @@ TRIAL_NEW_COUNTDOWN,開始まで：
 TRIAL_CLOSE_COUNTDOWN,終了まで：
 DUNGEON_NEW_COUNTDOWN,開始まで：
 DUNGEON_CLOSE_COUNTDOWN,終了まで：
-ENTRANCE_TEST_HERO_LIMIT_TIP,上限になりました
+ENTRANCE_TEST_HERO_LIMIT_TIP,上限に達しました
 ENTRANCE_TEST_NO_ENEMY,マッチングできませんでした
 GAMBLE_PRO_0,普通販賣機
 GAMBLE_PRO_1,高級販売機
@@ -3119,7 +3119,7 @@ ACTIVITY_FANPAI_DESC_1,同じ絵のカードを2枚揃えると、アイテム�
 ACTIVITY_FANPAI_GOTO,GO！
 ACTIVITY_FANPAI_HELP,1、イベント期間中、「選択券」を使用して、イベント画面でカードをめくることができます。|2、同じ絵のカードを2枚めくると（獲得済みのカードは含まれない）、アイテムを獲得できます。|3、「選択券」は毎日のメールで獲得、もしくは「+」をタップしてダイヤで購入できます。|4、イベント終了後、未使用の「選択券」は1枚あたり500kゴールドに変換され、メールで送られます。
 FANPAI_TICKETS_NOT_ENOUGH,アイテムの数が足りません
-FANPAI_TICKETS_LIMITS,購入上限になりました
+FANPAI_TICKETS_LIMITS,購入上限に達しました
 ACTIVITY_SCHOOL_EXPLORE_COLLECTION_WINDOW,収集進捗
 ACTIVITY_SCHOOL_EXPLORE_TEAM_1,探索チーム休憩中
 ACTIVITY_SCHOOL_EXPLORE_TEAM_2,探索チーム探索中
@@ -3153,7 +3153,7 @@ ACTIVITY_BIRTHDAY_COLOUR_DESC,着色進捗
 ACTIVITY_BIRTHDAY_COLOUR_COMPLETED,当パズルは着色完了です
 ACTIVITY_BIRTHDAY_COLOUR_EXHCANGE_WINDOW,パズル着色
 ACTIVITY_BIRTHDAY_COLOUR_EXCHANGE_DESC,着色する色と数量を選択してください
-ACTIVITY_BIRTHDAY_COLOUR_LIMIT_REACH,着色上限になりました
+ACTIVITY_BIRTHDAY_COLOUR_LIMIT_REACH,着色上限に達しました
 ACTIVITY_BIRTHDAY_COLOUR_NEED_CHOOSE,色を選択してください
 ACTIVITY_BIRTHDAY_COLOUR_HELP,1、イベント期間中、イベントアイテムの「万能絵の具」を使用して、パズルに色を塗ることができます。着色進捗は全サーバ共有です。|2、8種類の色を選択できますが、各パズルには3つの最良選択が存在します。消費したアイテム数によりボーナスを獲得できます。最良選択をした場合、ボーナスが増加します。|3、各パズルでの各色の使用回数には上限があり、上限に達すると使用不可となります。各パズルの最良選択色の3種類が全て使用上限に達すると、着色完了となります。|4、着色進捗が指定値になると、ボーナスを獲得できます。|5、「万能絵の具」は限定イベント「学園探索」で獲得できます。着色進捗が100％になると、「万能絵の具」は使用不可となり、余った「万能絵の具」はイベント終了後に売却できます。
 ACTIVITY_2ND_LETTER_1,{1} へ
@@ -3177,7 +3177,7 @@ ACTIVITY_SCHOOL_EXPLORE_FULL_SPECIAL,ここの探索ポイントで新しい隠�
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME2,探索予定時間が{1}秒減る
 BATTLE_PASS_PURCHASE_JPTIPS1,「白銀ボーナス」
 BATTLE_PASS_PURCHASE_JPTIPS2,がアンロック
-PARTNER_LIST_FULL_WITHOUT_BUY_LIMIT,戦姫の所持上限になりました。VIPレベルをアップ、または戦姫を転校させてください。転校画面に移動しますか？
+PARTNER_LIST_FULL_WITHOUT_BUY_LIMIT,戦姫の所持上限に達しました。VIPレベルをアップ、または戦姫を転校させてください。転校画面に移動しますか？
 GO_TO_TRANSFER,転校画面に移動
 ACTIVITY_SCHOOL_EXPLORE_END_TIP,イベントが間もなく終了するため、選択した場所を探索できません。
 WEAPON_LVUP_LOCK,既存のステータスをロックする場合、ダイヤを消費します。よろしいですか？
@@ -3374,7 +3374,7 @@ SPIRIT_STAGE_LOCK_TIPS,プレイヤーレベルが{1}に達して、更に命魂
 SPIRIT_STAGE_REWARD_TITLE,命魂ミッションボーナス
 SHOP_MAP_TEXT05,専用魂器ショップ
 CONCERN_SNS_HTTP,https://twitter.com/girlsxbattle2jp
-ACTIVITY_KEYBOARD_HELP,1、イベント期間中、「マレット」を1つ消費することで鍵盤を演奏することができ、ランダムでボーナスを獲得することができます。「金色の音符」を当てた場合、上の既に選択された譜面からランダムでボーナスを1つ獲得することができます。譜面のボーナスを獲得した後、鍵盤のボーナスはリセットされます。|2、第2～6の譜面は、2、4、7、9、11回目の「金色の音符」を当てたらアンロックされます。譜面の前にある数字をタップすると、欲しい譜面を獲得できます。|3、上の譜面の全てのボーナスを獲得すると、鍵盤中央の「金色の音符」は自動的に「普通資源カスタムパック*30」に変換されます。|4、イベント終了後、未使用の「マレット」は自動的に1個100kでゴールドに変換され、メールで送信されます。
+ACTIVITY_KEYBOARD_HELP,1、イベント期間中、「マレット」を1つ消費することで鍵盤を演奏することができ、ランダムでボーナスを獲得することができます。「金色の音符」を当てた場合、上の既に選択された譜面からランダムでボーナスを1つ獲得することができます。譜面のボーナスを獲得した後、鍵盤のボーナスはリセットされます。|2、第2～6の譜面は、2、4、7、9、11回目の「金色の音符」を当てたらアンロックされます。譜面の前にある数字をタップすると、その譜面が選択されます。|3、上の譜面の全てのボーナスを獲得すると、鍵盤中央の「金色の音符」は自動的に「普通資源カスタムパック*30」に変換されます。|4、イベント終了後、未使用の「マレット」は自動的に1個100kでゴールドに変換され、メールで送信されます。
 HAD_COLLECTED,所持数：
 ENTRANCE_TEST_TILI_OK_TIPS,{1}枚購入しました
 MAX,MAX
