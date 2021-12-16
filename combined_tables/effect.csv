@@ -9431,7 +9431,7 @@ id,type,buff,num,round,prob
 1447002,1447,unfreeRecieve,0.15,4.0,1.0
 1448001,1448,cleanBuffByEffect,1452001,0.0,1.0
 1448002,1448,cleanBuffByEffect,1447001,0.0,1.0
-1449001,1449,hurtAllLevel,2|-2460,0.0,1.0
+1449001,1449,hurtAllLevel,1.5|-1000,0.0,1.0
 1450001,1450,freeDecChange,0.5|1,99.0,1.0
 1451001,1451,hitEnergyChange,25,2.0,1.0
 1452001,1452,bossStorm,0.2|0.2|-0.2,99.0,1.0
@@ -9502,6 +9502,7 @@ id,type,buff,num,round,prob
 1462004,1462,allDmgC40,-0.22,99.0,1.0
 1463001,1463,roundUseTimes,1023112|6,0.0,1.0
 1463002,1463,roundUseTimes,1023113|6,0.0,1.0
+1464001,1464,mayaHpLoseSealFx,,0.0,1.0
 11041000,1104,mhurt,204717,0.0,1.0
 11041001,1104,mhurt,209446,0.0,1.0
 11041002,1104,mhurt,214174,0.0,1.0
