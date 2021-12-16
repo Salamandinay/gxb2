@@ -1,4 +1,5 @@
 id,state,brief,detail
-1,Kämpferisch,Schaden +10%,Die Energie des Mädchen hat 24 erreicht. Der von ihr zugefügte Schaden wird um 10% erhöht.
+1,Kämpferisch,Alle Schäden +10%,Die Energie des Mädchens hat 24 erreicht. Alle von ihr zugefügten Schäden werden um 10% erhöht.
+2,Normal,Kein Effekt,Die Energie des Mädchens liegt zwischen 13 und 23. Kein zusätzlicher Effekt wird ausgelöst.
 3,Erschöpft,"Schaden -30%, erhaltene Heilung -30%",Die Energie des Mädchens liegt zwischen 1 und 12. Der von ihr zugefügte Schaden und die erhaltene Heilung werden jeweils um 30% verringert.
 4,Unterkühlt,"Schaden -60%, erhaltene Heilung -60%.",Die Energie des Mädchens ist auf 0 gefallen. Der von ihr zugefügte Schaden und die erhaltene Heilung werden jeweils um 60% verringert.

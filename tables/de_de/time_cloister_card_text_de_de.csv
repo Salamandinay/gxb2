@@ -24,14 +24,14 @@ id,name,desc,unlock_desc
 110405,Prem. Seid. Lv.5,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
 110406,Prem. Seid. Lv.6,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
 120101,Kampf · Lv.1,"In Lv.1 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
-120102,Kampf · Lv.1 (Sieg),Gewinne den Lv.1 Kampf und erhalte alle Belohnungen.,
-120103,Kampf · Lv.1 (Nied.),"Verlierst du den Lv.1 Kampf, erhältst du nur die Hälfte der Belohnungen.",
+120102,Kampf · Lv.1 (Sieg),Lv.1 Kampf gewonnen und alle Belohnungen erhalten,
+120103,Kampf · Lv.1 (Nied.),Lv.1 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
 120201,Kampf · Lv.2,"In Lv.2 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
-120202,Kampf · Lv.2 (Sieg),Gewinne den Lv.2 Kampf und erhalte alle Belohnungen.,
-120203,Kampf · Lv.2 (Nied.),"Verlierst du den Lv.2 Kampf, erhältst du nur die Hälfte der Belohnungen.",
+120202,Kampf · Lv.2 (Sieg),Lv.2 Kampf gewonnen und alle Belohnungen erhalten,
+120203,Kampf · Lv.2 (Nied.),Lv.2 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
 120301,Kampf · Lv.3,"In Lv.3 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
-120302,Kampf · Lv.3 (Sieg),Gewinne den Lv.3 Kampf und erhalte alle Belohnungen.,
-120303,Kampf · Lv.3 (Nied.),"Verlierst du den Lv.3 Kampf, erhältst du nur die Hälfte der Belohnungen.",
+120302,Kampf · Lv.3 (Sieg),Lv.3 Kampf gewonnen und alle Belohnungen erhalten,
+120303,Kampf · Lv.3 (Nied.),Lv.3 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
 130101,Luna · 1,"Am Fuße des Berges sammelte Isabella mich auf. Schwerverletzt und ohnmächtig lag ich da. Sie brachte mich zurück zur Yume Akademie und versorgte meine Verletzungen. Als ich wieder aufwachte, konnte ich mich an nichts mehr erinnern, außer meinen Namen...",
 130102,Luna · 2,"Luna -- Das ist mein Name. Doch was bleibt mir außer meinem Namen. Ich weiß nicht, wo ich herkomme oder wo ich hingehöre. Eine einsame Insel…","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.1"
 130103,Luna · 3,"Ein gewisser ""Senpai"" hat mir gesagt, dass ich so sei wie all die anderen Mädchen hier und dass ich gerne hier bleiben dürfte, wenn ich wolle. Und dann hat er mir noch einen kleinen Hasen geschenkt!","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.2"
@@ -86,3 +86,147 @@ id,name,desc,unlock_desc
 131001,Punkt x4,"Erhalte 4 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
 131101,Punkt x8,"Erhalte 8 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
 131201,Punkt x16,"Erhalte 16 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+210101,Stand.vers. Lv.1,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210102,Stand.vers. Lv.2,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210103,Stand.vers. Lv.3,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210104,Stand.vers. Lv.4,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210105,Stand.vers. Lv.5,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210106,Stand.vers. Lv.6,"Nachdem du die Erinnerung angesehen hast, erhältst du zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen/Dias.",
+210201,Knopf Lv.1,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210202,Knopf Lv.2,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210203,Knopf Lv.3,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210204,Knopf Lv.4,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210205,Knopf Lv.5,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210206,Knopf Lv.6,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Knöpfen.",
+210301,Seidentuch Lv.1,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210302,Seidentuch Lv.2,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210303,Seidentuch Lv.3,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210304,Seidentuch Lv.4,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210305,Seidentuch Lv.5,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210306,Seidentuch Lv.6,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Seidentüchern.",
+210401,Prem. Seid. Lv.1,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210402,Prem. Seid. Lv.2,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210403,Prem. Seid. Lv.3,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210404,Prem. Seid. Lv.4,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210405,Prem. Seid. Lv.5,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210406,Prem. Seid. Lv.6,"Nachdem du die Erinnerung angesehen hast, erhältst du eine bestimmte Menge an Premium Seidentüchern",
+210501,Alptraum·1,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x1.",
+210601,Alptraum·2,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x2.",
+210701,Alptraum·4,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x4.",
+210801,Alptraum·6,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x6.",
+210901,Alptraum·8,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x8.",
+211001,Alptraum·10,"Nachdem du die Erinnerung angesehen hast, erhältst du「Alptraumpunkt」x10.",
+211101,Outfit-Show·Kopf 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.",
+211201,Outfit-Show·Kopf 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211301,Outfit-Show·Kopf 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211401,Outfit-Show·Oberkörper 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211501,Outfit-Show·Oberkörper 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211601,Outfit-Show·Oberkörper 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211701,Outfit-Show·Unterkörper 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211801,Outfit-Show·Unterkörper 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+211901,Outfit-Show·Unterkörper 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212001,Outfit-Show·Kopfschmuck 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212101,Outfit-Show·Kopfschmuck 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212201,Outfit-Show·Kopfschmuck 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212301,Outfit-Show·Extra-Utensil 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212401,Outfit-Show·Extra-Utensil 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212501,Outfit-Show·Extra-Utensil 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212601,Outfit-Show·Attribut 1,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212701,Outfit-Show·Attribut 2,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+212801,Outfit-Show·Attribut 3,"Such dir nach der Bedingung ein Outfit-Teil aus, um es zu zeigen. Nach dem Ende des Ansehens erhältst du zufällig eine der folgende Belohnungen: Münzen/EXP-Saft/Kristallmeißel/Brotdosen/Dias.",
+220101,Kampf · Lv.1,"In Lv.1 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
+220102,Kampf · Lv.1 (Sieg),Lv.1 Kampf gewonnen und alle Belohnungen erhalten,
+220103,Kampf · Lv.1 (Nied.),Lv.1 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
+220201,Kampf · Lv.2,"In Lv.2 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
+220202,Kampf · Lv.2 (Sieg),Lv.2 Kampf gewonnen und alle Belohnungen erhalten,
+220203,Kampf · Lv.2 (Nied.),Lv.2 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
+220301,Kampf · Lv.3,"In Lv.3 Kämpfen werden die 3 Outfit-Attribute Mut, Charme und Wissen als Kampfattribute gewertet.",
+220302,Kampf · Lv.3 (Sieg),Lv.3 Kampf gewonnen und alle Belohnungen erhalten,
+220303,Kampf · Lv.3 (Nied.),Lv.3 Kampf verloren und nur die Hälfte der Belohnungen erhalten,
+220401,Krieg I,"Stelle deine Mädchen auf, um die Gegner zu besiegen. Die Unterstützungsmädchen in diesem Korridor stehen zur Verfügung. (Die entsprechenden Zweige im Sternenkreisel müssen dafür entsperrt werden.)",
+220402,Krieg I (Sieg),Krieg I gewonnen und alle Belohnungen erhalten.,
+220403,Krieg I (Nied.),Krieg I verloren und nur einige Belohnungen erhalten.,
+220501,Krieg II,"Stelle deine Mädchen auf, um die Gegner zu besiegen. Die Unterstützungsmädchen in diesem Korridor stehen zur Verfügung. (Die entsprechenden Zweige im Sternenkreisel müssen dafür entsperrt werden.)",
+220502,Krieg II (Sieg),Krieg II gewonnen und alle Belohnungen erhalten.,
+220503,Krieg II (Nied.),Krieg II verloren und nur einige Belohnungen erhalten.,
+220601,Krieg III,"Stelle deine Mädchen auf, um die Gegner zu besiegen. Die Unterstützungsmädchen in diesem Korridor stehen zur Verfügung. (Die entsprechenden Zweige im Sternenkreisel müssen dafür entsperrt werden.)",
+220602,Krieg III (Sieg),Krieg III gewonnen und alle Belohnungen erhalten.,
+220603,Krieg III (Nied.),Krieg III verloren und nur einige Belohnungen erhalten.,
+220701,Krieg IV,"Stelle deine Mädchen auf, um die Gegner zu besiegen. Die Unterstützungsmädchen in diesem Korridor stehen zur Verfügung. (Die entsprechenden Zweige im Sternenkreisel müssen dafür entsperrt werden.)",
+220702,Krieg IV (Sieg),Krieg IV gewonnen und alle Belohnungen erhalten.,
+220703,Krieg IV (Nied.),Krieg IV verloren und nur einige Belohnungen erhalten.,
+220801,Krieg V,"Stelle deine Mädchen auf, um die Gegner zu besiegen. Die Unterstützungsmädchen in diesem Korridor stehen zur Verfügung. (Die entsprechenden Zweige im Sternenkreisel müssen dafür entsperrt werden.)",
+220802,Krieg V (Sieg),Krieg V gewonnen und alle Belohnungen erhalten.,
+220803,Krieg V (Nied.),Krieg V verloren und nur einige Belohnungen erhalten.,
+230101,Vera · 1,"Du hast heute so oft geniest, ich wette du hast heute Nacht wieder die Bettdecke von dir weggetreten… Hmpf, da kümmere ich mich einmal nicht um dich und schon wirst du krank.",
+230102,Vera · 2,"Hier, ich hab dir eine dickere Wolldecke mitgebracht. Wie kannst du bei einem so kalten Wetter immer noch deine Sommerdecke benutzen.","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.1"
+230103,Vera · 3,Auf dem ganzen Campus hört man Mädchen niesen. Während des Jahreszeitenwechsels wird man wohl am leichtesten krank... Dann sollten wir unsere Abwehrkräfte stärken! Am besten mit -- Hatschi!,"Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.2"
+230104,Vera · 4,"Sogar ich habe mich erkältet und das, obwohl ich doch immer darauf achte genug anzuziehen und regelmäßig Sport mache… Dann muss es bei den anderen sicher noch schlimmer sein. Es wird Zeit mehr nährstoffreiche Gerichte zuzubereiten!","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.3"
+230105,Vera · 5,"Hatschi! Es ist schon fast dunkel, warum ist denn noch niemand gekommen? Haben sie den Aushang nicht gesehen, dass ich gesundes Essen für alle vorbereitet habe? Hatschi… Mir ist ein echt warm… Vielleicht habe ich doch ein bisschen zu viel an…","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.4"
+230106,Vera · 6,"Senpai? Isabella? Was?! Ich bin umgekippt, weil ich mich mit dem Fieber überanstrengt habe? Oh nein, ich wollte wirklich nicht, dass ihr euch Sorgen um mich machen müsst… Tut mir leid. o(╥﹏╥)o","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.5"
+230107,Vera · 7,"Hier Senpai, deine Portion. Wie schmeckt's? Gut? Puh, und ich dachte schon, die anderen kommen nicht, weil ihnen mein Essen nicht schmeckt. Dann haben sie wohl einfach den Aushang nicht gesehen.","Entsperrt ab ""Ereigniskarte Upgrade · I"" Lv.6"
+230201,Misty · 1,"Gähn~ Wer hat mich da gerufen? Ich hab gestern wohl ein bisschen zu lange gespielt… Ah, Chevalier, du bist es. Kannst du nicht später nochmal kommen? Ich muss hier noch ein bisschen… Tzzz~",
+230202,Misty · 2,"Jetzt bin ich wach! Hach, die ganze Nacht daheim zu bleiben und Spiele zu spielen macht einfach am meisten Spaß! Was gibt es Besseres? -- Wah, ist das hell draußen! Moment… Wer hat mir meine VR-Brille abgezogen?!","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.1"
+230203,Misty · 3,"Ich dachte, das sei eine Mädchenschule. Hab mich schon immer gefragt, was dieser Senpai hier macht. Und wieso kommt der einfach so in unser Wohnheim gelaufen? Eröffnungsfeier? Was soll das denn sein?","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.2"
+230204,Misty · 4,"Das muss für ihn ja sein, wie wenn er der Hahn im Korb wäre... So als einziger Junge an einer Mädchenschule. Aber was er jetzt von mir will, weiß ich nicht… Mal schauen, was ich daraus machen kann, hehe. Oh, Meister, du bist es~","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.3"
+230205,Misty · 5,"Nein! Auch wenn das ein Befehl von dir ist, Meister, ich werde nicht rausgehen! Die männlichen Charaktere in den Spielen zwingen die Mädchen auch nie zu etwas, was sie nicht wollen! Du fällst aus deiner Rolle, Meister!","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.4"
+230206,Misty · 6,"Senpai ist heute nicht gekommen… Egal. Dann muss ich meine Rolle vom letzten Mal wohl aufgeben. Aber es hat echt Spaß gemacht, die Untergebene von Senpai zu spielen… Schade, dass es schon vorbei ist….","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.5"
+230207,Misty · 7,"Oh, Senpai~ Das Spiel vom letzten Mal ist vorbei. Jetzt bin ich eine Konkubine im Badeanzug, die am Strand gegen Zombies kämpft, hehe. Oder soll ich dich doch wieder… Meister nennen?","Entsperrt ab ""Ereigniskarte Upgrade · II"" Lv.6"
+230301,Boxer · 1,"Huh! Ha! Diese Schlagkombi ist echt gut! Auch wenn Saphira immer sagt, dass sie mich nicht mag, glaube ich trotzdem, dass es tief in ihrem Inneren anders aussieht. Warum sonst sollte sie mir so eine tolle Kombi beibringen!",
+230302,Boxer · 2,"Es gibt in letzter Zeit immer mehr vom Chaos Infizierte auf dem Campus. Ich muss weiter fleißig trainieren, damit ich Saphira, Geisha und Miya gut beschützen kann!","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.1"
+230303,Boxer · 3,"Was?! Saphira hat sich verletzt? Hab ich ihnen nicht gesagt, sie sollen sich an einem sicheren Ort verstecken und dass ich sie beschützen werde…?","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.2"
+230304,Boxer · 4,"KONG-MING! Hast du etwa Saphira hereingelegt, so dass sie dem Disziplinarkomitee beigetreten ist?! Die arme kleine, schwache Saphira. Ihre Hände sind nicht fürs Kämpfen gemacht, sie muss mit ihnen Klavier spielen!","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.3"
+230305,Boxer · 5,"Ich verstehe das Gerede nicht, das ihr Schlaumeierchen immer von euch gebt. Gebt euch keine Mühe es mir zu erklären, wir sehen uns nach dem Unterricht!","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.4"
+230306,Boxer · 6,"Sa… Saphira? Ich dachte du bist im Krankenhaus? Nein, nein, wir haben nicht miteinander gekämpft, wir unterhalten uns ganz freundschaftlich hier. Stimmt doch, KongMing, oder?","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.5"
+230307,Boxer · 7,"Aiaa--- Aua--- Kannst du ein bisschen vorsichtiger mit dem Verband sein, Isabella. Nein, nein, Saphira, dein Schlag hat gar nicht weh getan! Es war wie ein Streicheln…","Entsperrt ab ""Ereigniskarte Upgrade · III"" Lv.6"
+230401,Odanna · 1,"Gehänselte Kinder kommen irgendwie immer zu mir und suchen bei mir Schutz... Ich weiß zwar nicht warum, aber es gefällt mir, ihre Beschützerin zu sein.",
+230402,Odanna · 2,"Die meisten Lehrer und älteren Studierenden blicken herab auf mich, weil ich nicht so fleißig bin und nicht gerne lerne. Sie finden es auch nicht gut, dass sich so viele von den jüngeren Schülerinnen um mich scharen. Aber dafür kann ich auch nichts. Das war deren Entscheidung.","Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.1"
+230403,Odanna · 3,"Ein Dummkopf. Tunichtgut. Taugenichts. Barbarisch. Verrückt. Mir haben die Leute schon alle möglichen Beschreibungen zugeordnet. Aber das ist mir egal, denn tief in meinem Herzen weiß ich, was ich bin.","Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.2"
+230404,Odanna · 4,"Da möchte jemand meine Autorität infrage stellen. Das ist doch wirklich albern. Ich habe nie gesagt, dass ich eine Königin oder so etwas bin. Meine Anhänger sind mir einfach so gefolgt. Ich brauche keinen Titel.","Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.3"
+230405,Odanna · 5,Sogar meine eigene Schwester beneidet mich um meine Beliebtheit und meine Stellung... Aber meinen Posten mit ihr teilen? Dazu ist die Zeit noch nicht gekommen.,"Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.4"
+230406,Odanna · 6,"Ich muss meine Autorität und Position als rechtmäßige Anführerin des Hauses der Monster verteidigen. Ich werde ihnen beweisen, dass ich nicht nur ein dahergelaufenes Dummerchen bin!","Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.5"
+230407,Odanna · 7,"Es gibt nicht sehr viele Leute auf dieser Welt, denen man vertrauen kann. Selbst deine engsten Vertrauten könnten dich eines Tages hintergehen... Das Feuer im Honnoji-Tempel hat meinen letzten Funken Vertrauen in andere zerstört.","Entsperrt ab ""Ereigniskarte Upgrade · IV"" Lv.6"
+230501,Finja · 1,"Die Wintersonne scheint hell zur Mittagszeit. Gestern habe ich meiner Schwester versprochen, dass wir uns zu einem Picknick im Grünen treffen. Sie liebt die Natur.",
+230502,Finja · 2,Doch der Himmel verdunkelte sich plötzlich und ein merkwürdiger lila Nebel breitete sich am Himmel aus. Daher mussten wir das Picknick leider frühzeitig abbrechen. Mein Schwesterchen war gar nicht glücklich darüber...,"Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.1"
+230503,Finja · 3,"Alle im Dorf bemerkten, dass sich der Himmel äußerst merkwürdig verfärbt hatte, aber keine wusste warum. Mein Schwesterchen lief niedergeschlagen hinter mir und beschwerte sich, dass ich mein Versprechen nicht eingehalten habe.","Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.2"
+230504,Finja · 4,"Der lila Nebel am Himmel formte sich zu einer Klaue, die anfing sich über das Dorf herzumachen und Gebäude und Bäume niederzureißen. Meine Nachbarn kämpften mit aller Kraft gegen den Nebel an, wurden aber letztendlich von seiner Kraft in die Dunkelheit gesogen...","Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.3"
+230505,Finja · 5,"Als ich mich panisch nach meinem Schwesterchen umdrehte, war sie schon verschwunden. Ich wusste nicht mehr, wo ich war und wo alle hin sind...","Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.4"
+230506,Finja · 6,Die Leere in meinem Herzen war unbeschreiblich schmerzlich. Als wenn man mir einen Teil des Herzens ausgerissen hätte...,"Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.5"
+230507,Finja · 7,"Sonne und Mond gehören zusammen... Bei Nacht spendet mir der Mond Kraft und am Tag sind es die Sonnenstrahlen, die auf meine Wangen fallen. Ohne sie kann ich nicht leben.","Entsperrt ab ""Ereigniskarte Upgrade · V"" Lv.6"
+230601,Sakura · 1,"Immer wenn mich die Leute fragen, ob ich traurig werde, wenn die Kirschblüten das Ende ihrer Blütezeit erreicht haben und zu Boden fallen, bin ich mir nicht sicher, ob sie mir nicht noch etwas anderes sagen wollen oder ob sie nur auf meinen Namen anspielen.",
+230602,Sakura · 2,"Mein Glück beschränkt sich nicht nur auf das eine. Und selbst wenn mich das gleiche Schicksal erwartet wie eine Kirschblüte und ich dazu verdammt bin ein kurzes Leben zu haben, dann will ich dies wenigstens voll ausnutzen!","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.1"
+230603,Sakura · 3,"Wie Regen fallen die Kirschblüten im Frühling zu Boden. Leider erfreuen sich die meisten nur daran, wenn die Blüten noch an den Ästen hängen. Aber für mich ist das alles ein Kreislauf. Blüte und Fall, Leben und Tod - alles hat seinen Reiz.","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.2"
+230604,Sakura · 4,"Viele denken oft, dass ich ein zerbrechlicher Mensch bin, nur weil ich Kirschblüten so liebe. Die Überheblichkeit mancher, die denken, sie wüssten, wie andere Menschen denken, überrascht mich manchmal.","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.3"
+230605,Sakura · 5,"Während ich mit dem Schwert inmitten der Kirschblütenbäume trainierte, wehte eine sanfte Brise vorbei. Sofort lösten sich einige Hundert Kirschblüten von ihren Ästchen und flogen durch die Luft. Ich brachte es nicht übers Herz, die tanzenden Blüten mit meinem Schwert zu verletzen. Deshalb hörte ich auf zu trainieren.","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.4"
+230606,Sakura · 6,"Das Geräusch, das die Blüten machen, wenn sie auf dem Boden aufkommen, ist wie Musik in meinen Ohren. Sie spielen ein Lied für mich und fordern mich zum Tanzen auf.","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.5"
+230607,Sakura · 7,"Zwischen Harmonie und Bedauern tanzte ich wie in Trance zwischen den Blüten umher... Als ich wieder zu Sinnen kam, bemerkte ich, dass ich von Mädchen umringt war, die mir bei meinem peinlichen Tanz zugeschaut hatten.","Entsperrt ab ""Ereigniskarte Upgrade · VI"" Lv.6"
+230701,Hottie · 1,"Wenn ich eines Tages meinen Abschluss machen sollte und von hier weg muss, dann werde ich das alles hier vermissen. Vor allem die anderen süßen Mädchen, die mich jeden Tag umgeben... Aber einfach als Lehrerin zurückkommen und sie unterrichten, das wäre wirklich sehr spannend!",
+230702,Hottie · 2,"Historia scheint eine sehr aufsässige Schülerin zu sein. Nur blöd für sie, dass es mir besonders Spaß macht Schülerinnen wie sie zu züchtigen, hehehe~","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.1"
+230703,Hottie · 3,"Meine Methoden aus ""Bund der Begierde"" scheinen zu funktionieren. Normalerweise schaut sie doch immer so cool. Jetzt ist sie ganz rot und verlegen, hehehe~","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.2"
+230704,Hottie · 4,"Haha, eigentlich hab ich ihr gar nichts getan, aber trotzdem war sie ganz rot, als sie ging... Ich hoffe, sie schwänzt nächstes Mal nicht den Unterricht. Ich glaube, ich konnte eine ganz gute Bindung zu ihr aufbauen.","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.3"
+230705,Hottie · 5,"Odanna, du scheinst auch eine aufmüpfige Schülerin zu sein... Jetzt sei doch nicht so! Dir würde eine Privatstunde in meinem Zimmer auch mal guttun.","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.4"
+230706,Hottie · 6,"Ich gebe immer mein Bestes, um den Schülerinnen dabei zu helfen, zu ihrem besten selbst zu werden. Gemeinsam mit dem ""Bund der Begierde""... Bist du bereit?","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.5"
+230707,Hottie · 7,"Ich fühle mich immer total lebhaft, nachdem ich Zeit mit meinen Studierenden verbracht habe. Aber wenn ich dann wieder abends alleine im Wohnheim bin, dann fühle ich mich manchmal schon einsam...","Entsperrt ab ""Ereigniskarte Upgrade · VII"" Lv.6"
+230801,Punkt x1,"Erhalte 1 Punkt (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+230901,Punkt x2,"Erhalte 2 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+231001,Punkt x4,"Erhalte 4 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+231101,Punkt x8,"Erhalte 8 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+231201,Punkt x16,"Erhalte 16 Punkte (Die Gesamtpunktzahl, die du beim Anschauen der Erinnerung erreichst, wird auf deine Erfolge angerechnet.)",
+211102,Outfit-Show·Kopf 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211202,Outfit-Show·Kopf 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211302,Outfit-Show·Kopf 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211402,Outfit-Show·Oberkörper 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211502,Outfit-Show·Oberkörper 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211602,Outfit-Show·Oberkörper 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211702,Outfit-Show·Unterkörper 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211802,Outfit-Show·Unterkörper 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+211902,Outfit-Show·Unterkörper 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212002,Outfit-Show·Kopfschmuck 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212102,Outfit-Show·Kopfschmuck 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212202,Outfit-Show·Kopfschmuck 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212302,Outfit-Show·Extra-Utensil 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212402,Outfit-Show·Extra-Utensil 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212502,Outfit-Show·Extra-Utensil 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212602,Outfit-Show·Attribut 1,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212702,Outfit-Show·Attribut 2,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,
+212802,Outfit-Show·Attribut 3,Outfit gezeigt. Du erhältst nach dem Ende des Ansehens zufällig eine der folgenden Belohnungen: Münzen / EXP-Saft / Kristallmeißel / Brotdosen / Dias.,

@@ -296,7 +296,7 @@ PROPHET_TREE_NOT_ENOUGH,Sceaux Insuffisants
 PROPHET_BRANCH_NOT_ENOUGH,Dossiers insuffisants
 DAILY_QUIZ_TIME_COUNT,Restant :
 DAILY_QUIZ_LEFT_COUNT,Chance(s) Restante(s) :
-FIGHT,Défis
+FIGHT,Défier
 AFTER_FREE,Rafraîchit dans
 MAINWIN_RIGHT_1,Marché
 MAINWIN_RIGHT_2,Défis
@@ -733,7 +733,7 @@ USELESS_MAIL_ALL_DELETE_TEXT,Êtes-vous sûr de vouloir supprimer les courriers 
 NO_BUSINESS_MAN,Aucun marchand...
 BATTLE_LOAD_ERROR,Chargement échoué !
 GUIDE_ERROR,Nous avons rencontré un petit problème. Veuillez rafraîchir le jeu !
-SHELTER_GIFTBAG_HELP,"1. Durant l'événement, utilisez le nombre de Filles, Pièces, Gemmes et autres objets nécessaires pour recevoir des récompenses spéciales !|2. Chaque mission ne peut être complétée qu'une seule fois !|3. Les récompenses seront envoyées directement dans votre sac.|4. Les Fragments de Filles et les Jus d'EXP ne seront pas rendus !"
+SHELTER_GIFTBAG_HELP,"1. Durant l'événement, utilisez le nombre de Filles, Pièces, Gemmes et autres objets nécessaires pour recevoir des récompenses spéciales !|2. Chaque mission ne peut être complétée qu'une seule fois !|3. Les récompenses seront envoyées directement dans votre Sac.|4. Les Fragments de Filles et les Jus d'EXP ne seront pas rendus !"
 SHELTER_GIFTBAG_HELP_TITLE,Aide
 SHELTER_GIFTBAG_INPUT,Choisissez les matériaux
 SHELTER_GIFTBAG_TITLE,Tâche
@@ -767,7 +767,7 @@ GRADE_UP_2,Monter
 SHENXUE_GIFTBAG_WITH_STAR,Graduer une Fille {1} étoiles 1 fois：
 SHENXUE_GIFTBAG_ITEM_TEXT01,Limite
 SHENXUE_GIFTBAG_TIMES,{1}/{2}
-SHENXUE_GIFTBAG_TEXT01,"Evénement réinitialisé tous les mois, vous pouvez obtenir des récompenses en Graduant des Filles [c][f55090]5 étoiles[-][/c] ou [c][f55090]6 étoiles[-][/c] ou en éveillant des Filles [c][f55090]9 étoiles[-][/c] ou [c][f55090]10 étoiles[-][/c]."
+SHENXUE_GIFTBAG_TEXT01,"Événement réinitialisé tous les mois, vous pouvez obtenir des récompenses en Graduant des Filles [c][f55090]5 étoiles[-][/c] ou [c][f55090]6 étoiles[-][/c] ou en éveillant des Filles [c][f55090]9 étoiles[-][/c] ou [c][f55090]10 étoiles[-][/c]."
 EQUIPMENT_COMPOSE,Synthétiser
 ChooseEquipWindow,Sélectionner l'équipement
 EXCHANGE,Échanger
@@ -1190,7 +1190,7 @@ ACTIVITY_JIGSAW_BUY_TEXT2,"50 fois par jour max\nPour plus de détails, veuillez
 WEEK_SUBSCRIPTION_FREE_BTN_LABEL,Gratuit\n7 jours
 SUBSCRIPTION_HELP_IOS,"Informations du service d'abonnement：|1. Après l'inscription, le coût de l'abonnement sera automatiquement prélevé tous les 7 jours (30 jours, 90 jours) pour prolonger l'effet de l'abonnement pour 7 jours (30 jours, 90 jours) supplémentaires.|2. Votre abonnement iPhone sera prélevé sur votre compte Apple iTune.|3. Si vous souhaitez arrêter votre abonnement, veuillez l'annuler 24 heures avant le prochain prélèvement.|4. Méthode : De la page principale, entrez dans [Option]—>Cliquez sur [iTune Store ou App Store]—>Touchez [ID Apple] et sélectionnez [Voir ID Apple]—>[Abonnement], puis sélectionnez annuler l'abonnement."
 SUBSCRIPTION_TEXT01_IOS,"
-1.Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
+1. Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
 2. Un compte iTunes ne peut avoir qu\'une seule semaine d\'abonnement gratuite.
 3. Pendant la durée de l\'abonnement, vous obtiendrez un bonus de +100%% de Pièces et +60%% de Jus d\'EXP dans la Bataille Auto, ce bonus est cumulable à celui du niveau VIP
 4. L\'abonnement sera renouvelé automatiquement à la fin de l\'abonnement précédent, si vous souhaitez annuler votre abonnement, vous devrez le faire manuellement
@@ -1288,7 +1288,7 @@ CONFIRM_REGRESH_GUILD,"Il faut utiliser {1}*{2} pour rafraîchir, le rafraîchis
 GET3,Échanger
 SUBSCRIPTION_TEXT01,Réessayez dans {1} secondes
 SUBSCRIPTION_TEXT01_AND,"
-1.Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
+1. Durée：Abonnement Hebdomadaire 7 jours, Abonnement Mensuel 30 jours, Abonnement Trimestriel 90 jours
 2. Un compte Google ne peut avoir qu\'une seule semaine d\'abonnement gratuite.
 3. Pendant la durée de l\'abonnement, vous obtiendrez un bonus de +100%% de Pièces et +60%% de Jus d\'EXP dans l\'Auto-Bataille, ce bonus est cumulable à celui du niveau VIP.
 4. Votre compte sera déduit lorsque l\'achat sera confirmé.
@@ -1559,7 +1559,7 @@ WEDDING_VOTE_TEXT_9,Vote(s)
 WEDDING_VOTE_TEXT_10,Vous n'avez pas encore voté...
 WEDDING_VOTE_TEXT_11,Résultat
 WEDDING_VOTE_TEXT_12,L'événement est terminé. Vous ne pouvez plus voter
-WEDDING_VOTE_TEXT_13,"1. L'événement durera 14 jours. Pendant l'événement, vous pourrez obtenir des 【Bulletin d'amour】 en accomplissant des tâches afin de voter pour les Filles que vous préférez. La Fille ayant obtenu le plus de vote sera considérée en priorité lorsque l'Académie fera un nouveau Skin de Serment. (Si la Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des votes)|2. C'est le 4ème événement de Vote de Fille populaire, les 6 Filles de l'événement précédent ( Iron Fist, Angel, Hexa, Ésaü&Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael) ne participent plus pour cette fois. |3. L'événement est divisé en Phase de Groupes et Phase Finale, il y a le Groupe A et Groupe B pendant la Phase de Groupes, les 6 premières de chaque Groupe participeront à la Phase Finale. Groupe A : Maison Fantôme, Monstre et Démon. Groupe B : Maison Fée, Humain et Ange. La Phase de Groupe A aura lieu les jours 1 à 4 ; La Phase de Groupe B aura lieu les jours 5 à 8 et la Phase Finale se jouera les jours 9 à 14.|4. Les joueurs étant en dessous du Niv.30 ne peuvent pas voter.|5. Il y a 4 tâches d'événement. Vous pouvez obtenir 1 【Bulletin d'amour】 en complétant chaque tâche. Les tâches seront raffraîchies chaque jour, les【Bulletin d'amour】 non récupérés ne seront pas réenvoyés.|6. Les 【Bulletin d'amour】non-utilisés seront remis à 0 après chaque Phase de Groupe. N'oubliez pas de les utiliser dans le temps imparti.|7. Quand vous utilisez un certain nombre de 【Bulletin d'amour】 vous recevrez des récompenses dans vos courriers. Vous pouvez voir les détails des récompenses sur l'interface d'aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que ayez voté.|9. Si vous avez eu le Cadre d'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes comme récompense."
+WEDDING_VOTE_TEXT_13,"1. L'événement durera 14 jours. Pendant l'événement, vous pourrez obtenir des 【Bulletin d'amour】 en accomplissant des tâches afin de voter pour les Filles que vous préférez. La Fille ayant obtenu le plus de vote sera considérée en priorité lorsque l'Académie fera un nouveau Skin de Serment. (Si la Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des votes)|2. C'est le 4ème événement de Vote de Fille populaire, les 6 Filles de l'événement précédent ( Iron Fist, Angel, Hexa, Ésaü & Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael) ne participent plus pour cette fois. |3. L'événement est divisé en Phase de Groupes et Phase Finale, il y a le Groupe A et Groupe B pendant la Phase de Groupes, les 6 premières de chaque Groupe participeront à la Phase Finale. Groupe A : Maison Fantôme, Monstre et Démon. Groupe B : Maison Fée, Humain et Ange. La Phase de Groupe A aura lieu les jours 1 à 4 ; La Phase de Groupe B aura lieu les jours 5 à 8 et la Phase Finale se jouera les jours 9 à 14.|4. Les joueurs étant en dessous du Niv.30 ne peuvent pas voter.|5. Il y a 4 tâches d'événement. Vous pouvez obtenir 1 【Bulletin d'amour】 en complétant chaque tâche. Les tâches seront raffraîchies chaque jour, les【Bulletin d'amour】 non récupérés ne seront pas réenvoyés.|6. Les 【Bulletin d'amour】non-utilisés seront remis à 0 après chaque Phase de Groupe. N'oubliez pas de les utiliser dans le temps imparti.|7. Quand vous utilisez un certain nombre de 【Bulletin d'amour】 vous recevrez des récompenses dans vos courriers. Vous pouvez voir les détails des récompenses sur l'interface d'aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que ayez voté.|9. Si vous avez eu le Cadre d'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes comme récompense."
 WEDDING_VOTE_TEXT_14,Par défaut
 WEDDING_VOTE_TEXT_15,Bulletin d'amour restant：{1}
 GAME_REPAIR_TIPS,"Si une erreur vous empêche de vous connecter, vous pouvez cliquer sur 【Réparation du client】 afin de résoudre le problème. Le système redémarrera le jeu une fois que le problème sera résolu."
@@ -2318,7 +2318,7 @@ HOUSE_TEXT_38,"
 
 6. Vous pouvez également visiter le Dortoir des autres joueurs et toucher ""J\'aime"". Vous ne pouvez toucher ""J\'aime"" qu\'une seule fois par dortoir. 
 
-8. Détails selon votre Confort (24h)：<t>150#Confort|150#Pièces|150#Gemmes|190#Ciseau de Cristal $150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
+8. Détails selon votre Confort (24h)：<t>150#Confort|150#Pièces d\'Or|150#Gemmes|190#Ciseaux de Cristal $150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
 "
 HOUSE_LOCK_FAIL,"Cette Fille est dans le dortoir, elle n'est pas déverouillable."
 WARRIOR_SUIT,Ensemble de Guerrière
@@ -3261,7 +3261,7 @@ ACTIVITY_ICE_SECRET_MISSION_CD,Rafraîchit dans
 ACTIVITY_ICE_SECRET_MISSION_TIP,Dernière Série de Quêtes
 ACTIVITY_ICE_SECRET_ROUNDS,Tour actuel : {1}
 ACTIVITY_ICE_SECRET_MAXAWARD_TEXT,Récompense Finale
-ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Choisir la Récompense Finale
+ACTIVITY_ICE_SECRET_MAXAWARD_WINDOW,Choisissez la Récompense Finale
 ACTIVITY_ICE_SECRET_MAXAWARD_ERROR,Veuillez d'abord choisir une Récompense Finale
 ACTIVITY_ICE_SECRET_MAXAWARD_TIP,Débloqué après avoir atteint Tour {1}
 ACTIVITY_ICE_SECRET_START,Commencer
@@ -3755,7 +3755,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Choisissez le nombre de case souhaité
 ACTIVITY_LAFULI_DRIFT_CARD,Choisissez une carte
 ACTIVITY_LAFULI_DRIFT_AWARD,Collectez les récompenses
 ACTIVITY_LAFULI_DRIFT_ROUND,Tours terminés：{1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail: ：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Connexion Quotidienne (via Courrier)."
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail ：| -En utilisant des Gemmes (Limite : 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Connexion Quotidienne (via Courrier)."
 ONE_KEY_COMPOSE,Tout synthétiser
 ONE_KEY_COMPOSE_TEXT,Vous avez assez de ressources pour synthétiser les équipements suivants. Voulez-vous les synthétiser ?
 ONE_KEY_COMPOSE_TEXT2,Aucun équipement du type actuel ne peut être synthétisé.
@@ -4962,7 +4962,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,Nouveautés du Rang {1}：|{2}|Nouveautés du Rang {3}：|{4}|Nouveautés du Rang {5}：|{6}
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Robbie\net son Mecha
+WARMUP_ARENA_TASK_INFO_2,Les Jumelles\nCambrioleuses\net la Déesse du Chaos
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5423,37 +5423,137 @@ SALE_DAY_GIFTBAG1,Prix d'Origine : €1.09
 SALE_DAY_GIFTBAG2,Prix d'Origine : €2.29
 ACTIVITY_KEYBOARD_TEXT1,Voulez-vous chosir cette partition ?
 ACTIVITY_KEYBOARD_TEXT2,Débloqué après avoir encore touché la Note d'Or {1} fois
-ARCTIC_EXPEDITION_TEXT_1,Points de Faction：
-ARCTIC_EXPEDITION_TEXT_2,Croissance ：
+ARCTIC_EXPEDITION_TEXT_1,Points d'Expédition：
+ARCTIC_EXPEDITION_TEXT_2,Points obtenus le jour précédent：
 ARCTIC_EXPEDITION_TEXT_3,Case Occupée
 ARCTIC_EXPEDITION_TEXT_4,Nombre
-ARCTIC_EXPEDITION_TEXT_5,Points de Faction
+ARCTIC_EXPEDITION_TEXT_5,Point d'Expédition
 ARCTIC_EXPEDITION_TEXT_6,Information
-ARCTIC_EXPEDITION_TEXT_7,Bonus de combat
+ARCTIC_EXPEDITION_TEXT_7,Bonus de Camp
 ARCTIC_EXPEDITION_TEXT_8,Déclenchable au cours du combat
-ARCTIC_EXPEDITION_TEXT_9,Nombre
-ARCTIC_EXPEDITION_TEXT_10,[u]Raid en cours[/u]
+ARCTIC_EXPEDITION_TEXT_9,Nombre\nd'Armée
+ARCTIC_EXPEDITION_TEXT_10,[u]Rassemblement en cours[/u] (a rejoint：{1} )
 ARCTIC_EXPEDITION_TEXT_11,Armée Défensive
-ARCTIC_EXPEDITION_TEXT_12,En Trêve
-ARCTIC_EXPEDITION_GROUP_1,Union Étudiante
+ARCTIC_EXPEDITION_TEXT_12,En trêve
+ARCTIC_EXPEDITION_GROUP_1,Comité de Discipline
 ARCTIC_EXPEDITION_GROUP_2,DEF
-ARCTIC_EXPEDITION_GROUP_3,Comité de Discipline
+ARCTIC_EXPEDITION_GROUP_3,Union Étudiante
 ARCTIC_EXPEDITION_GROUP_4,Neutre
 ARCTIC_EXPEDITION_TEXT_13,Résultats du Combat
 ARCTIC_EXPEDITION_TEXT_14,Victoire(s)
-ARCTIC_EXPEDITION_TEXT_15,Contribution Individuelle
+ARCTIC_EXPEDITION_TEXT_15,Médaille
 ARCTIC_EXPEDITION_TEXT_16,Armée Défensive
-ARCTIC_EXPEDITION_TEXT_17,Votre Armée Défensive a été renforcée !
-ARCTIC_EXPEDITION_TEXT_18,Chaque combat consomme 1 Endurance de la Fille
+ARCTIC_EXPEDITION_TEXT_17,Armée Défensive renforcée !
+ARCTIC_EXPEDITION_TEXT_18,Chaque combat consomme 1 Endurance. L'Endurance se réinitialisera à 0:00 (UTC/GMT 0) chaque jour.
 ARCTIC_EXPEDITION_TEXT_19,Une nouvelle ère commence !
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,Quêtes d'Expédition
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,Points de Faction
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,Objectifs
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,Points d'Expédition
 ARCTIC_EXPEDITION_TIME_MISSION_TEXT_3,Progression
 ARCTIC_EXPEDITION_TIME_MISSION_TEXT_4,Avancée de l'Expédition
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,Nouvelle ère dans：
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,Nouvelle ère dans : {1}
 WISH_GACHA_TEXT11,Changez de Fille Souhaitée
 WISH_GACHA_TEXT12,Êtes -vous sûr de vouloir changer la Fille à Souhait ?
-ARCTIC_EXPEDITION_TEXT_20,Votre Armée Défensive a été affaiblie !
+ARCTIC_EXPEDITION_TEXT_24,Armée Défensive affaiblie !
 SALE_PRICE_TEXT01,67%% OFF
 SALE_PRICE_TEXT02,40%% OFF
 ACTIVITY_KEYBOARD_TEXT3,Vous pouvez accéder à la partition suivante qui vous permettra d'otenir des meilleures récompenses ! Voulez-vous encore choisir la partition acutelle ?
+TIME_CLOISTER_TEXT63,Attributs d'Ennemi
+TIME_CLOISTER_TEXT64,Ennemis
+ARCTIC_EXPEDITION_TEXT_20,Expédition\nPolaire
+ARCTIC_EXPEDITION_TEXT_21,Cette ère n'a pas encore commencé
+ARCTIC_EXPEDITION_TEXT_22,Avalanche - En hibernation|Avalanche - Éveillé|Avalanche - Vaincu
+ARCTIC_EXPEDITION_TEXT_23,Toutes les Factions|Votre Faction
+ARCTIC_EXPEDITION_TEXT_25,La phase Expédition commence dans：
+ARCTIC_EXPEDITION_TEXT_26,La phase Expédition termine dans：
+ARCTIC_EXPEDITION_TEXT_27,Événement terminé
+ACTIVITY_LUCKYBOXES_TEXT01,Tirer 1 fois
+ACTIVITY_LUCKYBOXES_TEXT02,Tirer 10 fois
+ACTIVITY_LUCKYBOXES_TEXT03,Fortune
+ACTIVITY_LUCKYBOXES_TEXT04,Pack de Fortune
+ACTIVITY_LUCKYBOXES_TEXT05,Pièce de Fortune Insuffisante !
+ACTIVITY_LUCKYBOXES_TEXT06,Choisissez la Récompense Finale
+ACTIVITY_LUCKYBOXES_TEXT07,Choisir
+ACTIVITY_LUCKYBOXES_TEXT08,Choisissez une récompense comme la Récompense Finale.\nObtenez toutes ces 3 récompenses pour accéder au tour suivant !
+ACTIVITY_LUCKYBOXES_TEXT09,Récompenses
+ACTIVITY_LUCKYBOXES_TEXT10,Tour {1}
+ACTIVITY_LUCKYBOXES_TEXT11,Récompense(s) Obtenue(s)
+ACTIVITY_LUCKYBOXES_TEXT12,Pack à durée limité
+ACTIVITY_LUCKYBOXES_TEXT13,Veuillez d'abord choisir la Récompense Finale !
+DUNGEON_TEXT1,Cette Fille n'a perdu aucun PV
+ARCTIC_EXPEDITION_TEXT_28,Classement de Faction
+ARCTIC_EXPEDITION_TEXT_29,Classement Individuel
+ARCTIC_EXPEDITION_TEXT_30,Faction Top {1}
+ARCTIC_EXPEDITION_TEXT_31,Contribution
+ARCTIC_EXPEDITION_TEXT_32,Faction
+ARCTIC_EXPEDITION_TEXT_33,Récompenses envoyées en fonction du Classement de votre Faction et de votre Classement Individuel
+ARCTIC_EXPEDITION_TEXT_34,Récompenses envoyées en fonction du Classement de votre Faction
+ARCTIC_EXPEDITION_BUY_TIPS,[c][4799FF]1[-][/c] Barre Chocolatée dans
+ARCTIC_EXPEDITION_TEXT_36,Combat indisponible !
+ARCTIC_EXPEDITION_TEXT_37,L'Armée Défensive a atteint sa capacité maximale !
+ARCTIC_EXPEDITION_TEXT_38,Impossible de défier une case non-adjacente
+ARCTIC_EXPEDITION_TEXT_39,Barre Chocolatée Insuffissante !
+ARCTIC_EXPEDITION_TEXT_40,L'Armée Défensive a atteint sa capacité maximale !
+ARCTIC_EXPEDITION_HELP_MAIN,"1. L’Expédition Polaire dure [c][4799FF]14[-][/c] jours et est divisée en 3 phases : Préparation ([c][4799FF]1[-][/c] jour), Expédition ([c][4799FF]12[-][/c] jours), Affichage ([c][4799FF]1[-][/c] jour).|2. Les joueurs de différents serveurs exploreront ensemble sur 1 même carte. Vous serez affilié à une des 3 Factions suivantes, selon votre serveur : [c][CD9500] Comité de Discipline [-][/c], [c][C13726]DEF[-][/c] et [c][4AB32F]Union Étudiante[-][/c]. Le Camp de chaques Factions se trouve à trois localisations différentes de la carte.|3. Durant la phase d’Expédition, vous pouvez explorer la carte et défier les ennemis à l’aide d’autres joueurs pour obtenir des récompenses.|4. Durant la phase d’Expédition, les joueurs des 3 Factions s'affronteront mais combatteront également ensemble pour surmonter la situation critique des Pays du Nord. À la fin de la phase d’Expédition, les récompenses seront calculées en fonction de votre Classement Individuel au sein de votre Faction et du Classement de votre Faction.|5. La carte est segmentée en plusieurs cases de territoire. Pendant la phase d'Expédition, vous pouvez défier les cases de territoire autour de votre Camp de Faction et celles autour des cases de territoire occupées par votre Faction. Une fois la dernière Armée Défensive d'une case de territoire vaincue par vous ou d'autres joueurs de votre Faction, cette case de territoire sera considérée comme occupée par votre Faction.|6. Les 3 Factions seront classées en fonction de leurs Points d’Expédition. Une fois qu'une case de territoire est occupée, le système fournira des Points d’Expédition à la Faction en fonction des dégâts inflgés par ses membres, ainsi les Points d’Expédition fournis à chaque Faction peuvent être différents.|7. Vous serez également classé au sein de votre Faction en fonction du nombre de [c][4799FF]Médailles[-][/c] que vous possédez. Un certain nombre de [c][4799FF]Médaille[-][/c] sera obtenable après chaque combat. Plus les dégâts infligés et le niveau de difficulté de l’Armée Défensive seront élevés, plus vous obtiendrez de [c][4799FF]Médailles[-][/c]."
+ARCTIC_EXPEDITION_HELP_CELL,"1. Chaque case de territoire compte plusieurs Armées Défensives. Une fois que toutes les Armées Défensives présentes sont vaincues, cette case de territoire sera considérée comme occupée par la Faction des joueurs ayant vaincu la dernière Armée Défensive.|2. Durant la phase de Préparation et d’Expédition, vous pouvez obtenir [c][4799FF]1[-][/c] Barre Chocolatée toutes les 4.8 heures, soit [c][4799FF]5[-][/c] Barres Chocolatées au total par jour. Vous pouvez obtenir des Barres Chocolatées supplémentaires avec des Gemmes. ([c][4799FF]100[-][/c] Gemmes contre [c][4799FF]1[-][/c] Barre Chocolatée, limité à [c][4799FF]2[-][/c] Barres Chocolatées par jour. Les Barres Chocolatées non utilisées et la limite d'achat sont accumulées. Si vous possédez [c][4799FF]15[-][/c] Barres Chocolatées, vous ne pourrez plus obtenir de Barre Chocolatée du système. Durant la phase d'Expédition, utilisez les Barres Chocolatées pour défier les Armées Défensives. Seules les Filles de Niv.[c][4799FF]100[-][/c] minimum peuvent participer aux combats.|3. Si vous vainquez une Armée Défensive, vous pouvez continuer à défier une Armée Défensive suivante sans consommer de Barre Chocolatée supplémentaire jusqu’à ce que vous soyez vaincu ou que vous atteignez la limite de victoires consécutives de 3/4/5 (diffère en fonction de l’ère dans laquelle vous combattez). Si un combat n’est pas terminé au bout de 15 tours, le système vous considèrera comme vaincu.|4. Après une défaite, les PV de l’Armée Défensive ne seront pas réinitialisés.|5. La météo des Pays du Nord étant défavorable à vos Filles, elles perdront [c][4799FF]1[-][/c] Endurance après chaque combat. Si l’Endurance d’une Fille est trop faible, sa puissance sera alors réduite. Vos Filles récupèrent [c][4799FF]1[-][/c] Endurance toutes les heures.|6. Vous pouvez continuer à défier une case de territoire même si elle appartient déjà à votre Faction. Chaque victoire sur une case de territoire occupée par votre Faction, vous renforcera de [c][4799FF]1[-][/c] Armée Défensive supplémentaire pour défendre votre territoire de l’invasion des autres Factions."
+ARCTIC_EXPEDITION_HELP_ERA,"1. L'Expédition Poliare compte 3 ères distinctifs : [c][4799FF] Crise du Nord[-][/c], [c][4799FF] Avalanche Meurtrière[-][/c] et [c][4799FF] Dernier Souffle[-][/c].|2. Chaque ère requiert que tous les joueurs des 3 Factions complètent plusieurs objectifs. Des Points d'Expédition seront fournis à la Faction en fonction de sa contribution aux objectifs correspondants.|3. Après avoir complété tous les objectifs d’une ère, une nouvelle ère débutera le jour suivant à 0:00 (UTC/GMT 0). Après une victoire, votre limite de victoires consécutives augmentera en fonction de votre avancée dans les ères. ([c][4799FF] Crise du Nord[-][/c] : 3 victoires consécutives, [c][4799FF]Avalanche Meurtrière[-][/c] : 4 victoires consécutives, [c][4799FF] Dernier Souffle[-][/c] : 5 victoires consécutives)"
+ARCTIC_EXPEDITION_HELP_AWARD,"1. À la fin de la phase d’Expédition, les récompenses seront calculées en fonction de votre Classement Individuel au sein de votre Faction et du Classement de votre Faction.|2. Les récompenses vous seront envoyées en fonction de votre contribution durant l’événement, ainsi les récompenses peuvent être différentes les uns des autres. Plus le Classement de votre Faction est élevé, plus les joueurs de la Faction recevront de meilleures récompenses individuelles.|3. À la fin de la phase d’Expédition, tous les joueurs recevront une récompense supplémentaire en fonction du Classement de votre Faction."
+ARCTIC_EXPEDITION_HELP_ENERGY,"1. Chaque défi contre une Armée Défensive consomme [c][4799FF]1[-][/c] Barre Chocolatée.|2. Durant la phase de Préparation et d’Expédition, vous pouvez obtenir [c][4799FF]1[-][/c] Barre Chocolatée toutes les 4.8 heures, soit [c][4799FF]5[-][/c] Barres Chocolatées au total par jour.|3. Vous pouvez obtenir des Barres Chocolatées supplémentaires avec des Gemmes. ([c][4799FF]100[-][/c] Gemmes contre [c][4799FF]1[-][/c] Barre Chocolatée, limité à [c][4799FF]2[-][/c] Barres Chocolatées par jour.|4. Les Barres Chocolatées non utilisées et la limite d'achat sont accumulées.|5. Si vous possédez [c][4799FF]15[-][/c] Barres Chocolatées, vous ne pouvez plus obtenir de Barre Chocolatée du système."
+TIME_CLOISTER_HELP05,"1. Une Fille Suppléante est disponible dans les Défis des Étapes et les Duels de Carte de Défis de ce Corridor Temporel.|2. Améliorez les Compétences Avancées de la Fille Suppléante en l'améliorant avec des Points de Cauchemar.|3. Les Points de Cauchemar peuvent être utilisés pour améliorer les Compétences Avancées de la Fille Suppléante, et ainsi obtenir un bonus supplémentaire d'Audace, de Charme et de Génie dans les Défis d'Étapes, les Défis et les Duels de Carte de Défis de ce Corridor Temporel. (les Compétences Avancées seront prises en compte même si la Fille Suppléante n'est pas dans votre équipe)"
+TIME_CLOISTER_TEXT65,Technique · Fille Suppléante
+TIME_CLOISTER_TEXT66,Utilisez les Points de Cauchemar pour améliorer le niveau et les Compétences Avancées de la Fille Suppléante.
+TIME_CLOISTER_TEXT67,Montrer
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune|——Dépenser 200 Gemmes = 1 Pièce de Fortune|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune|——Utiliser 1 Gouvernail = 1 Pièce de Fortune|——Obtenir 250 VIP EXP = 2 Pièces de Fortune|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
+ACTIVITY_LUCKYBOXES_TEXT15,"Après la fin de l'événement, vos Pièces de Fortune, les points de Fortune et la progression des Récompenses Finales seront conservés jusqu'au prochain événement."
+TIME_CLOISTER_TEXT68,Veuillez montrer une {1} pour compléter cette tâche.
+TIME_CLOISTER_TEXT69,Veuillez choisir la Tenue requise à montrer.
+TIME_CLOISTER_TEXT70,Montré !
+TIME_CLOISTER_TEXT71,"Certaines tâches n'étant pas encore terminées, vous ne recevrez pas toutes les récompenses. Voulez-vous calculer vos résultats maintenant ?"
+TIME_CLOISTER_TEXT72,Bleue
+TIME_CLOISTER_TEXT73,Jaune
+TIME_CLOISTER_TEXT74,Violette
+TIME_CLOISTER_TEXT75,Verte
+TIME_CLOISTER_TEXT76,Rouge
+TIME_CLOISTER_TEXT77,Orange
+TIME_CLOISTER_TEXT78,Rosée
+TIME_CLOISTER_TEXT79,Tenue (Tête)
+TIME_CLOISTER_TEXT80,Tenue (Haut)
+TIME_CLOISTER_TEXT81,Tenue (Bas)
+TIME_CLOISTER_TEXT82,Tenue (Accessoire)
+TIME_CLOISTER_TEXT83,Tenue (Objet)
+ARCTIC_EXPEDITION_TEXT_41,Défendre
+ARCTIC_EXPEDITION_TEXT_42,Acheter Barre Chocolatée
+ARCTIC_EXPEDITION_TEXT_43,"Avalanche est en état d'hibernation, impossible de l'attaquer dans cette ère !"
+ARCTIC_EXPEDITION_TEXT_44,Raid
+ARCTIC_EXPEDITION_TEXT_45,Rassemblement en cours
+ARCTIC_EXPEDITION_TEXT_46,"Cette case de territoire est actuellement sous protection, impossible à attaquer !"
+ARCTIC_EXPEDITION_TEXT_47,Aucun historique
+ARCTIC_EXPEDITION_TEXT_48,Seuls les joueurs du Top 50 de la Faction peuvent envoyer des invitations de Raid.
+ARCTIC_EXPEDITION_TEXT_49,"Vous avez lancé un Raid ciblant cette case de territoire, voulez-vous l'annuler ?"
+ARCTIC_EXPEDITION_TEXT_50,Voulez-vous utiliser {1} Gemmes pour inviter votre Faction à rejoindre le Raid ?
+ARCTIC_EXPEDITION_TEXT_51,"Surcharge d'invitations de Raid envoyées, veuillez réessayer plus tard."
+ARCTIC_EXPEDITION_TEXT_52,"Vous ne pouvez envoyer qu'une invitation de Raid par jour, veuillez réessayer demain."
+ARCTIC_EXPEDITION_TEXT_53,"Un Raid est actuellement en cours, nul besoin d'en lancer un autre."
+ACTIVITY_LUCKYBOXES_TEXT16,Voulez-vous choisir cette récompense comme Récompense Finale ?
+TIME_CLOISTER_TEXT84,Utilisez les Fragments Galactiques · Escaliers de Jade pour améliorer le niveau de votre Planétarium.
+TIME_CLOISTER_TEXT85,Compétence Avancée
+ARCTIC_EXPEDITION_TEXT_54,Une nouvelle ère commence ! Veuillez réouvrir cette interface pour actualiser !
+ARCTIC_EXPEDITION_TEXT_55,Information
+ARCTIC_EXPEDITION_TEXT_56,Point de 1ère Occupation
+ARCTIC_EXPEDITION_TEXT_57,Point Quotidien
+ARCTIC_EXPEDITION_TEXT_58,Médailles obtenables/victoire
+CHAT_TAP_25,Faction
+CHAT_TAP_26,Système
+ARCTIC_EXPEDITION_TEXT_59,/Jour
+ARCTIC_EXPEDITION_TEXT_60,Point
+ARCTIC_CHAT_WINDOW,Expédition
+TIME_CLOISTER_TEXT86,Montrer sa Tenue
+ARCTIC_EXPEDITION_TEXT_61,"L'occupant de cette case de territoire a changé, veuillez réouvrir cette interface pour actualiser !"
+ARCTIC_EXPEDITION_TEXT_62,"Avalanche a été vaincue, impossible à l'attaquer !"
+ARCTIC_EXPEDITION_TEXT_63,"Expédition terminée, impossible à acheter Barre Chocolatée."
+ARCTIC_EXPEDITION_TEXT_64,Impossible à lancer un Raid dans cette phase !
+ARCTIC_EXPEDITION_TEXT_65,Combat indisponible dans cette phase !
+ARCTIC_EXPEDITION_TEXT_66,Ères
+ARCTIC_EXPEDITION_TEXT_67,Entrer
+ARCTIC_EXPEDITION_TEXT_68,Bonus de combat
+ARCTIC_EXPEDITION_TEXT_69,Un Camp ou une Station de Recherche est à proximité
+ARCTIC_EXPEDITION_TEXT_70,Quêtes

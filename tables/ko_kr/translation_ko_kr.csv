@@ -3334,7 +3334,7 @@ SPIRIT_MERGE2,명혼 합성
 SPIRIT_RESOLVE_CONFIRM,이번 분해는 고급 명혼 분해를 포함하고 있습니다. 계속하시겠습니까?
 SPIRIT,명혼
 SPIRIT_EXPLORE,명혼 탐색
-SPIRIT_LUCKY_NUM,행운치：
+SPIRIT_LUCKY_NUM,럭키 포인트：
 SPIRIT_TASK_AWARD,미션 보상
 SPIRIT_RECEIVE,확인
 SPIRIT_TASK_DURATION,미션 시간：
@@ -4905,7 +4905,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,진급 조건
 WARMUP_ARENA_REACH_RANK_HELP,{1} 단계 달성 후:|{2}|{3}단계 달성 후:|{4}|{5}단계 달성 후:|{6}
 ENTRANCE_TEST_LEVEL_UP_ING,단계 확인 중...
 WARMUP_ARENA_TASK_INFO_1,신입생 챌린지
-WARMUP_ARENA_TASK_INFO_2,로미-로봇과 소녀
+WARMUP_ARENA_TASK_INFO_2,카오스의 신&쌍둥이 괴도
 WARMUP_ARENA_TASK_INFO_3,챌린지 미션
 WARMUP_ARENA_TASK_INFO_4,입학 세트 보상
 WARMUP_ARENA_TASK_INFO_5,별 미션 완료 후 해제
@@ -5325,7 +5325,7 @@ ACTIVITY_GROWTH_PLAN_TEXT12,"1명의 소녀를 육성 소녀로 선택해, 일�
 ACTIVITY_GROWTH_PLAN_TEXT13,"1. 이벤트 기간 동안, 선배님이 일일 미션을 완료할 때마다 5육성 포인트를 획득합니다. 일정량의 육성 포인트를 획득한 후 그에 상응하는 보상을 수령할 수 있습니다.|2. 일일 미션 중의 '모든 일일 미션 완성' 미션으로는 육성 포인트를 획득할 수 없습니다.|3. 이벤트 기간 동안, 선배님은 1명의 소녀를 육성 소녀로 선택할 수 있으며, 선택한 소녀에 따라 소녀 육성 계획의 보상 내용이 달라집니다. 보상을 수령한 후에는 육성 소녀를 변경할 수 없습니다.|4. 이벤트 기간 동안, '진급 계획'을 구입하시면 바로 대응한 추가 보상을 획득할 수 있습니다.|5. 당일 미션을 완료하지 못했거나 미션 포인트를 수령하지 못하였어도 이후 다이아를 사용하여 육성 포인트를 보충 수령할 수 있으며, 1포인트마다 다이아 4개를 소모합니다."
 TIME_CLOISTER_TEXT61,해당 회랑 아직 오픈되지 않습니다.\n기대해주세요!
 SENPAI_DRESS_GIFTBOX_WARN,해당 부품이 이미 보유하고 있으며 계속 교환하시겠습니까?
-TIME_CLOISTER_TEXT62,플라네타륨 스킬 업그레이드한 후 해당 카드의 레벨을 계속 올릴 수 있습니다.
+TIME_CLOISTER_TEXT62,플라네타륨 스킬 업그레이드한 후\n해당 카드의 레벨을\n계속 올릴 수 있습니다.
 ACTIVITY_JACKPOT_MACHINE1,냥냥 슬롯 머신
 ACTIVITY_JACKPOT_MACHINE2,고급 냥냥 슬롯 머신
 ACTIVITY_JACKPOT_TIPS,냥냥 특권 패스를 구입하거나 냥냥 슬롯 머신을 {1}회(1회=5에너지) 돌려 고급 냥냥 슬롯 머신을 해제할 수 있습니다~
@@ -5368,37 +5368,136 @@ SALE_DAY_GIFTBAG1,원가: ₩1200
 SALE_DAY_GIFTBAG2,원가: ₩2500
 ACTIVITY_KEYBOARD_TEXT1,목표 악보로 선택하시겠습니까?
 ACTIVITY_KEYBOARD_TEXT2,금색 음표를 {1}회 뽑은 후 해제
-ARCTIC_EXPEDITION_TEXT_1,진영 포인트:
+ARCTIC_EXPEDITION_TEXT_1,원정 포인트:
 ARCTIC_EXPEDITION_TEXT_2,어제 새로 증가:
 ARCTIC_EXPEDITION_TEXT_3,소유지
 ARCTIC_EXPEDITION_TEXT_4,수량
 ARCTIC_EXPEDITION_TEXT_5,보너스 포인트
-ARCTIC_EXPEDITION_TEXT_6,영지 정보
-ARCTIC_EXPEDITION_TEXT_7,영지 버프
+ARCTIC_EXPEDITION_TEXT_6,구역 정보
+ARCTIC_EXPEDITION_TEXT_7,소유지 버프
 ARCTIC_EXPEDITION_TEXT_8,전투 시 추가 버프가 있다.
 ARCTIC_EXPEDITION_TEXT_9,방위팀 수량
-ARCTIC_EXPEDITION_TEXT_10,[u]집결 중[/u]
+ARCTIC_EXPEDITION_TEXT_10,[u]집결중[/u](응답 횟수: {1}회)
 ARCTIC_EXPEDITION_TEXT_11,방위팀
 ARCTIC_EXPEDITION_TEXT_12,휴전 중
-ARCTIC_EXPEDITION_GROUP_1,학생회
+ARCTIC_EXPEDITION_GROUP_1,선도위원회
 ARCTIC_EXPEDITION_GROUP_2,DEF
-ARCTIC_EXPEDITION_GROUP_3,선도위원회
+ARCTIC_EXPEDITION_GROUP_3,학생회
 ARCTIC_EXPEDITION_GROUP_4,미개척지
 ARCTIC_EXPEDITION_TEXT_13,전투 결과
 ARCTIC_EXPEDITION_TEXT_14,승리 횟수
 ARCTIC_EXPEDITION_TEXT_15,개인 공헌
 ARCTIC_EXPEDITION_TEXT_16,방위팀
-ARCTIC_EXPEDITION_TEXT_17,방위팀 수량이 증가됩니다!
-ARCTIC_EXPEDITION_TEXT_18,전투할 때마다 1pt의 활력이 소모됩니다.
+ARCTIC_EXPEDITION_TEXT_17,방위팀의 수량이 증가되었습니다!
+ARCTIC_EXPEDITION_TEXT_18,한 번의 전투를 겪을 때마다 활력을 1점씩 떨어뜨립니다. 매일 한국 시간 9시에 리셋됩니다.
 ARCTIC_EXPEDITION_TEXT_19,새 시대가 열렸다!
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,원정 미션
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,포인트 보상
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_1,시대 목표
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_2,원정 포인트
 ARCTIC_EXPEDITION_TIME_MISSION_TEXT_3,완성 상태
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_4,완정 진도
-ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,카운트다운 후 새 시대가 해제됨:
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_4,원정 진도
+ARCTIC_EXPEDITION_TIME_MISSION_TEXT_5,새 시대가 해제될 때까지:{1}
 WISH_GACHA_TEXT11,소원 소녀 변경
 WISH_GACHA_TEXT12,소원 소녀를 변경하시겠습니까?
-ARCTIC_EXPEDITION_TEXT_20,방위팀 수량이 감소됩니다!
+ARCTIC_EXPEDITION_TEXT_24,방위팀의 수량이 감소되었습니다!
 SALE_PRICE_TEXT01,67%% OFF
 SALE_PRICE_TEXT02,40%% OFF
 ACTIVITY_KEYBOARD_TEXT3,더 높은 레벨의 악보가 해제되었습니다! 현재의 악보에서 계속 추첨하시겠습니까?
+TIME_CLOISTER_TEXT63,적군 속성
+TIME_CLOISTER_TEXT64,적
+ARCTIC_EXPEDITION_TEXT_20,노스랜드 원정대
+ARCTIC_EXPEDITION_TEXT_21,해당 시대가 아직 해제되지 않습니다.
+ARCTIC_EXPEDITION_TEXT_22,눈사태 과물-혼수상태|눈사태 과물-깨어났다!|눈사태 과물-무너졌다...
+ARCTIC_EXPEDITION_TEXT_23,전체 랭킹|진영 랭킹
+ARCTIC_EXPEDITION_TEXT_25,원정 시작 까지:
+ARCTIC_EXPEDITION_TEXT_26,원정 종료까지:
+ARCTIC_EXPEDITION_TEXT_27,이벤트 종료
+ACTIVITY_LUCKYBOXES_TEXT01,1회 추첨
+ACTIVITY_LUCKYBOXES_TEXT02,10회 추첨
+ACTIVITY_LUCKYBOXES_TEXT03,럭키 포인트
+ACTIVITY_LUCKYBOXES_TEXT04,럭키 추첨 팩
+ACTIVITY_LUCKYBOXES_TEXT05,럭키 코인 부족
+ACTIVITY_LUCKYBOXES_TEXT06,그랜드 보상 선택
+ACTIVITY_LUCKYBOXES_TEXT07,보상 선택
+ACTIVITY_LUCKYBOXES_TEXT08,"보상 1개를 그랜드 보상으로 선택하여, 이번 라운드의 모든 보상을 획득한 후 보상이 리셋됩니다."
+ACTIVITY_LUCKYBOXES_TEXT09,보상 미리 보기
+ACTIVITY_LUCKYBOXES_TEXT10,제 {1}라운드
+ACTIVITY_LUCKYBOXES_TEXT11,획득한 보상
+ACTIVITY_LUCKYBOXES_TEXT12,기간 한정 팩
+ACTIVITY_LUCKYBOXES_TEXT13,그랜드 보상을 먼저 선택하세요!
+DUNGEON_TEXT1,해당 소녀의 HP가 최대치에 도달했어요.
+ARCTIC_EXPEDITION_TEXT_28,진영 랭킹
+ARCTIC_EXPEDITION_TEXT_29,개인 랭킹
+ARCTIC_EXPEDITION_TEXT_30,제 {1}진영
+ARCTIC_EXPEDITION_TEXT_31,공헌 보상
+ARCTIC_EXPEDITION_TEXT_32,진영 보상
+ARCTIC_EXPEDITION_TEXT_33,"카운트다운 후, 진영 랭킹과 개인 랭킹에 따라 보상을 발송해드릴 예정입니다."
+ARCTIC_EXPEDITION_TEXT_34,"카운트다운 후, 진영 랭킹에 따라 보상을 발송해드릴 예정입니다."
+ARCTIC_EXPEDITION_BUY_TIPS,카운트다운 후 선배님께 초콜릿 [c][4799FF]1[-][/c]개를 보내드릴 예정입니다!
+ARCTIC_EXPEDITION_TEXT_36,이 시점에 전투 불가합니다.
+ARCTIC_EXPEDITION_TEXT_37,방위팀의 수량이 최대치로 회복되었습니다!
+ARCTIC_EXPEDITION_TEXT_38,인접하지 않은 칸을 도전할 수 없습니다.
+ARCTIC_EXPEDITION_TEXT_39,초콜릿이 부족해요!
+ARCTIC_EXPEDITION_TEXT_40,방위팀은 상한에 달했습니다!
+ARCTIC_EXPEDITION_HELP_MAIN,"1. 이번 노스랜드 원정대는 총 [c][4799FF]14일[-][/c] 동안 진행되며, 이는 준비 기간([c][4799FF]1[-][/c]일), 원정 기간([c][4799FF]12[-][/c]일), 발표 기간([c][4799FF]1[-][/c]일)으로 나누어져 있습니다.|2. 원정대는 서버에 따라 랜덤으로 [c][CD9500]선도위원회[-][/c], [c][C13726]DEF[-][/c], [c][4AB32F]학생회[-][/c] 3가지 진영으로 나누어지며, 각 진영 본거지는 노스랜드의 각기 다른 3개의 방향에 위치합니다.|3. 원정 기간 오픈 후, 선배님은 다른 플레이어와 함께 노스랜드로 떠나 적을 무찌르고 푸짐한 보상을 획득할 수 있습니다.|4. 원정 기간에 3개의 진영이 서로 경쟁하며, 함께 노스랜드의 위기를 극복해야 합니다. 원정 종료 후, 선배님 진영 내의 랭킹과 선배님이 소속된 진영의 포인트 랭킹에 따라 보상이 발송됩니다.|5. 노스랜드는 수많은 육각형 구역으로 구성되어 있으며, 원정 기간에 선배님께서 소속된 진영의 소유시 및 소유지와 인접한 다른 구역에 도전할 수 있으며, 선배님 혹은 선배님 소속 진영의 다른 플레이어가 임의 구역의 마지막 방위팀을 쓰러뜨릴 경우 선배님이 소속된 진영이 해당 구역을 점령하게 됩니다.|6. 진영의 포인트 랭킹은 진영이 획득한 [c][4799FF]진영 포인트[-][/c]에 의해 결정됩니다. 구역이 점령된 후, 각 진영의 플레이어가 해당 구역 도전 시 방위팀에 가한 대미지에 따라 해당 구역에 도전한 적이 있는 진영에게 포인트가 제공되며, 해당 구역을 점령한 진영은 지속적으로 일정량의 포인트를 획득할 수 있습니다. |7. 선배님 소속 진영 내의 랭킹은 선배님이 획득하신 [c][4799FF]'개인 공헌'[-][/c]의 수량에 의해 결정됩니다. 매회 전투를 통해 일정 수량의 [c][4799FF]'개인 공헌'[-][/c]을 획득할 수 있으며, 도전의 난이도와 방위팀에게 가한 대미지가 높을수록 더 많은 [c][4799FF]'개인 공헌'[-][/c]을 획득할 수 있습니다."
+ARCTIC_EXPEDITION_HELP_CELL,"1. 각 구역 내에는 일정 수량의 방위팀이 존재하며, 구역 내의 모든 방위팀을 전부 쓰러뜨릴 경우 해당 구역을 점령 중이던 본래의 진영이 마지막 방위팀을 쓰러뜨린 진영으로 교체됩니다.|2. 준비 기간 및 원정 기간 동안 시스템에 의해 일정 시간마다 [c][4799FF]1[-][/c]개의 초콜릿을 획득할 수 있으며, 하루 최대 [c][4799FF]5[-][/c]개의 초콜릿을 획득할 수 있습니다. 그 외에도, 다이아를 사용하여 초콜릿을 추가 구입할 수 있으며(초콜릿*1=[c][4799FF]다이아*100[-][/c], 매일 최대 [c][4799FF]2[-][/c]회 구입 가능), 사용하지 않은 초콜릿 및 구입 횟수는 누적됩니다(최대 [c][4799FF]15[-][/c]개의 초콜릿을 누적 보유할 수 있으며, 최대 수량 초과 시 회복이 중단됩니다). 원정 기간에 방위팀에 도전할 때마다 초콜릿을 [c][4799FF]1[-][/c]개 소모하며, 도전 시 [c][4799FF]100[-][/c]레벨 이상인 소녀만이 전투에 참여할 수 있습니다.|3. 방위팀을 성공적으로 쓰러트릴 경우 계속하여 다음 방위팀에 도전할 수 있으며(초콜릿 소모 불필요), 도전은 실패 혹은 연속 승리 상한 도달 시까지 계속 진행할 수 있습니다. 전투 중 최대 라운드 수는 [c][4799FF]15[-][/c]라운드이며, 15라운드 이내에 적을 쓰러뜨리지 못할 경우 도전 실패로 판정됩니다.|4. 도전 종료 후 방위팀의 남은 HP 상태는 유지되며, 다른 플레이어가 해당 구역 도전 시 이전 전투 후 HP가 유지된 상태의 방위팀과 이어서 전투를 진행하게 됩니다.|5. 노스랜드의 강력한 추위로 인하여 매 전투 종료 시마다 전투에 참여한 소녀의 활력이 [c][4799FF]1[-][/c]포인트 감소되며, 활력이 낮아질수록 소녀의 이후 전투 중의 활약을 방해할 수 있습니다. 모든 소녀의 활력은 [c][4799FF]1[-][/c]시간마다 [c][4799FF]1[-][/c]포인트씩 회복됩니다.|6. 아군 진영이 이미 점령한 구역은 여전히 도전할 수 있으며, 승리할 때마다 해당 구역의 방위팀을 [c][4799FF]1[-][/c]팀씩 증가시켜 다른 진영의 침략으로부터 해당 구역을 보호할 수 있습니다."
+ARCTIC_EXPEDITION_HELP_ERA,"1. 노스랜드 원정은 [c][4799FF]'극지 위기'[-][/c], [c][4799FF]'눈사태'[-][/c], [c][4799FF]'폭풍 후'[-][/c] 3개의 시대로 구성되어 있습니다.|2. 각 시대마다 모든 플레이어가 함께 완성해야 하는 미션이 있으며, 미션을 1개 완성할 때마다 각 진영의 완성 비율에 따라 원정 포인트 보상이 발송됩니다.|3. 해당 시대의 미션을 전부 완성할 경우, [c][4799FF]다음날 9시[-][/c]에 새로운 시대로 진입할 수 있습니다. 새로운 시대의 개막에 따라, 모든 플레이어가 도전 승리 후 계속하여 도전 가능한 횟수의 상한이 높아집니다. (각 시대의 상한 횟수: [c][4799FF]3[-][/c], [c][4799FF]4[-][/c], [c][4799FF]5[-][/c])"
+ARCTIC_EXPEDITION_HELP_AWARD,"1. 원정 종료 후, 선배님의 진영 내의 랭킹과 선배님이 소속된 진영의 포인트 랭킹에 따라 보상이 발송됩니다.|2. 보상은 각 진영 플레이어의 공헌에 따라 몇 가지의 단계로 나누어져 있습니다. 진영의 랭킹이 높을수록 높은 단계의 보상을 획득할 수 있는 인원수도 많아집니다.|3. 또한, 원정 종료 후 각 진영의 포인트 랭킹에 따라 진영의 모든 플레이어에게 보상을 발송합니다."
+ARCTIC_EXPEDITION_HELP_ENERGY,"1.방위팀을 도전할 때마다 초콜릿 [c][4799FF]1[-][/c]개가 소모됩니다.|2. 준비 기간 및 원정 기간 동안 시스템에 의해 일정 시간마다 [c][4799FF]1[-][/c]개의 초콜릿을 획득할 수 있으며, 하루 최대 [c][4799FF]5[-][/c]개의 초콜릿을 획득할 수 있습니다.|3. 다이아를 사용하여 초콜릿을 추가 구입할 수 있습니다(초콜릿*1=다이아*[c][4799FF]100[-][/c], 매일 최대 [c][4799FF]2[-][/c]회 구입 가능)|4. 사용하지 않은 초콜릿 및 구입 횟수는 누적됩니다.|5. 최대 [c][4799FF]15[-][/c]개의 초콜릿을 누적 보유할 수 있으며, 최대 수량 초과 시 회복이 중단됩니다."
+TIME_CLOISTER_HELP05,"1. 이 회랑에서 스테이지를 도전하거나 조우전을 진행할 때 협력 소녀를 배치할 수 있습니다.|2. '악몽 포인트'를 사용해 협력 소녀를 업그레이드할 수 있습니다. 업그레이드 후 소녀의 속성과 스킬이 강화됩니다.|3. '악몽 포인트'를 사용하여 협력 소녀의 진급 스킬을 업그레이드할 수 있으며, 이 회랑에서 스테이지를 도전하거나 챌린지 카드, 조우전 카드를 만날 때 용기, 매력, 지식의 추가 버프를 획득하게 됩니다. 이 효과는 협력 소녀를 배치하지 않아도 적용됩니다."
+TIME_CLOISTER_TEXT65,플라네타륨 스킬·협력
+TIME_CLOISTER_TEXT66,'악몽 포인트' 를 사용하여 협력 소녀 혹은 협력 소녀의 진급 스킬을 업그레이드할 수 있습니다.
+TIME_CLOISTER_TEXT67,전시하기
+ACTIVITY_LUCKYBOXES_TEXT14,"1. 이벤트 기간에 선배님께서는 럭키 코인을 사용하여 추첨을 진행할 수 있습니다. 보상은 일반 보상과 그랜드 보상 2종류로 나누어져 있으며, 그중 그랜드 보상은 선배님께서 직접 선택하셔야 합니다.|2. 매번 추첨 진행 시마다 2 럭키 포인트를 획득할 수 있으며, 럭키 포인트가 100 도달 시 그랜드 보상을 100%% 확률로 획득할 수 있습니다.|3. 각 라운드마다 3개의 그랜드 보상이 존재하며, 해당 라운드 중 3개의 그랜드 보상을 전부 획득하였을 경우 그랜드 보상이 다음 라운드의 보상으로 전환됩니다. (총 6라운드로, 전부 추첨 후 다시 1라운드부터 시작)|4. 럭키 코인은 일일 보상 및 럭키 추첨 팩을 통해 획득할 수 있으며, 그 외에도 아래의 미션을 완성하여 일정량의 럭키 코인을 획득할 수 있습니다.|--토너먼트 입장권 3장 소모(럭키 코인*1)|--다이아 200개 소모(럭키 코인*1) |--3성 이상의 아르바이트 미션 1회 완성(럭키 코인*1) |--크리스탈 검 200개 소모(럭키 코인*1) |--배 키 1개 소모(럭키 코인*1)|--250pt의 VIP경험치 획득(럭키 코인*2)|5. 이벤트 종료 후, 럭키 코인, 럭키 포인트, 그랜드 보상 추첨 진도는 다음 이벤트 오픈 시까지 보류됩니다."
+ACTIVITY_LUCKYBOXES_TEXT15,"이벤트 종료 후, 럭키 코인, 럭키 포인트, 그랜드 보상 추첨 진도는 다음 이벤트 오픈 시까지 보류됩니다."
+TIME_CLOISTER_TEXT68,{1} 1개를 전시하세요~
+TIME_CLOISTER_TEXT69,조건에 맞는 유니크 장식을 전시하세요~!
+TIME_CLOISTER_TEXT70,전시 성공!
+TIME_CLOISTER_TEXT71,교환하지 않는 카드가 있을 경우 결산 시 대응 보상을 획득할 수 없습니다. 계속 하시겠습니까?
+TIME_CLOISTER_TEXT72,파란 등급
+TIME_CLOISTER_TEXT73,노란 등급
+TIME_CLOISTER_TEXT74,보라 등급
+TIME_CLOISTER_TEXT75,초록 등급
+TIME_CLOISTER_TEXT76,빨간 등급
+TIME_CLOISTER_TEXT77,주황 등급
+TIME_CLOISTER_TEXT78,핑크 등급
+TIME_CLOISTER_TEXT79,유니크 장식(머리)
+TIME_CLOISTER_TEXT80,유니크 장식(상의)
+TIME_CLOISTER_TEXT81,유니크 장식(하의)
+TIME_CLOISTER_TEXT82,유니크 장식(머리 장식구)
+TIME_CLOISTER_TEXT83,유니크 장식(액세서리)
+ARCTIC_EXPEDITION_TEXT_41,주둔
+ARCTIC_EXPEDITION_TEXT_42,초콜릿을 구입하기
+ARCTIC_EXPEDITION_TEXT_43,눈사태 괴물이 아직 깨어나지 않았어요! 도전할 수 없습니다.
+ARCTIC_EXPEDITION_TEXT_44,집결
+ARCTIC_EXPEDITION_TEXT_45,집결 중
+ARCTIC_EXPEDITION_TEXT_46,해당 구역은 휴전 중이기 때문에 공격할 수 없습니다!
+ARCTIC_EXPEDITION_TEXT_47,전투 기록 없음
+ARCTIC_EXPEDITION_TEXT_48,진영 상위 50명의 선배님만 집결을 발동할 수 있습니다!
+ARCTIC_EXPEDITION_TEXT_49,해당 구역의 집결을 시작하였습니다. 취소하시겠습니까?
+ARCTIC_EXPEDITION_TEXT_50,{1}다이아를 소모하여 진영 내의 모든 선배님을 이 구역으로 불러 모을까요?
+ARCTIC_EXPEDITION_TEXT_51,최근 집결 명령이 너무 많습니다. 나중에 다시 시도해 주세요.
+ARCTIC_EXPEDITION_TEXT_52,"하루에 한 번만 집결 가능합니다, 내일 시도해 주세요."
+ARCTIC_EXPEDITION_TEXT_53,집결 중인 구역에서 다시 집결할 수 없습니다!
+ACTIVITY_LUCKYBOXES_TEXT16,해당 보상으로 선택하시겠습니까?
+TIME_CLOISTER_TEXT84,'은하 파편·백옥 계단'은 플라네타륨 스킬을 업그레이드에 사용될 수 있습니다.
+TIME_CLOISTER_TEXT85,진급 스킬
+ARCTIC_EXPEDITION_TEXT_54,새로운 시대가 열렸습니다! 이벤트 화면에 다시 들어오세요.
+ARCTIC_EXPEDITION_TEXT_55,구역 설명
+ARCTIC_EXPEDITION_TEXT_56,선점 포인트
+ARCTIC_EXPEDITION_TEXT_57,일일 포인트
+ARCTIC_EXPEDITION_TEXT_58,매회 개인 공헌
+CHAT_TAP_25,진영 내
+CHAT_TAP_26,시스템
+ARCTIC_EXPEDITION_TEXT_59,/일
+ARCTIC_EXPEDITION_TEXT_60,원정 포인트
+ARCTIC_CHAT_WINDOW,원정 채팅
+TIME_CLOISTER_TEXT86,디자인 전시
+ARCTIC_EXPEDITION_TEXT_61,해당 구역의 정보가 변경되었습니다! 리셋한 후 다시 확인해보세요~
+ARCTIC_EXPEDITION_TEXT_62,눈사태 괴물이 무너졌습니다. 다시 도전할 수 없습니다.
+ARCTIC_EXPEDITION_TEXT_63,원정 종료되었으니 초콜릿을 구매하실 수 없습니다.
+ARCTIC_EXPEDITION_TEXT_64,지금 집결할 수 없습니다!
+ARCTIC_EXPEDITION_TEXT_65,지금 도전할 수 없습니다!
+ARCTIC_EXPEDITION_TEXT_66,원정 진도
+ARCTIC_EXPEDITION_TEXT_67,들어가기
+ARCTIC_EXPEDITION_TEXT_68,소유지 버프
+ARCTIC_EXPEDITION_TEXT_69,근처에 본거지 혹은 과학기지가 있습니다.
