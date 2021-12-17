@@ -852,7 +852,7 @@ activity_tea_point,1,-1
 space_explore_auto_level,31,-1
 custom_skin_summer_houyi_or_feisina,2#300,-1
 entrance_test_help_show,755010,-1
-activity_lafuli_get,283#1,-1
+activity_lafuli_get,283#0,-1
 house_senpai_sit,-20|-30,-1
 house_senpai_lie,15|-40,-1
 time_cloister_energy_time,360,-1
@@ -916,7 +916,7 @@ school_practise_quick2,30,-1
 expedition_time_interval,1|12|1,-1
 expedition_energy_cd,17280,-1
 expedition_energy_max,15,-1
-expedition_energy_buy_count,99,-1
+expedition_energy_buy_count,2,-1
 expedition_energy_price,2#100,-1
 expedition_girls_lv,100,-1
 expedition_girls_labor,24,-1
@@ -938,10 +938,14 @@ activity_jackpot_normal,58#5,-1
 activity_jackpot_updated,305#5,-1
 activity_growth_plan_partner,51014|52016|53014|54015,-1
 activity_jackpot_draw,57#5,-1
-activity_growth_plan_picture,-7#-196#0.65#0.65|50#-168#0.75#0.75|-18#-235#0.7#0.7|43#-145#0.7#0.7,-1
-activity_growth_plan_cut,1010#100#700#600|980#100#665#700|1050#100#737#600|950#500#650#600,-1
+activity_growth_plan_picture,-7#-196#0.65#0.65|50#-168#0.75#0.75|-104#-239#0.7#0.7|43#-145#0.7#0.7,-1
+activity_growth_plan_cut,1010#100#700#600|980#100#665#700|1050#100#350#200|950#500#650#600,-1
 time_cloister_card_cd7,21600,-1
 time_cloister_card_cd10,21600,-1
 activity_luckyboxes_pointmax,100,-1
 activity_luckyboxes_pointuprise,2,-1
 activity_luckyboxes_cost,309#1,-1
+activity_christmas_socks_cost,310#1,-1
+activity_christmas_socks_get,311#1,-1
+activity_christmas_socks_buy,2#40,-1
+activity_christmas_socks_buy_limit,50,-1

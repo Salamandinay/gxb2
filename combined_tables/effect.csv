@@ -8988,10 +8988,10 @@ id,type,buff,num,round,prob
 1367001,1367,lowHpTarget,0,99.0,1.0
 1368001,1368,halfHpDecP,0.3,99.0,1.0
 1369001,1369,superDecHurt,0.7,0.0,1.0
-1369002,1369,superDecHurt,0.666,99.0,1.0
+1369002,1369,superDecHurt,0.66,99.0,1.0
 1369003,1369,superDecHurt,0.9,99.0,1.0
-1369004,1369,superDecHurt,0.966,99.0,1.0
-1369005,1369,superDecHurt,0.99,99.0,1.0
+1369004,1369,superDecHurt,0.98,99.0,1.0
+1369005,1369,superDecHurt,0.9975,99.0,1.0
 1370001,1370,atkDot,0.58,4.0,1.0
 1371001,1371,noCrit,0,99.0,1.0
 1372001,1372,invisible,0,4.0,1.0
@@ -9438,8 +9438,8 @@ id,type,buff,num,round,prob
 1453001,1453,hpLoseSeal,0,99.0,1.0
 1454001,1454,allDmgCGod,0.5,99.0,1.0
 1454002,1454,allDmgCGod,1.5,99.0,1.0
-1454003,1454,allDmgCGod,3,99.0,1.0
-1454004,1454,allDmgCGod,5,99.0,1.0
+1454003,1454,allDmgCGod,3.5,99.0,1.0
+1454004,1454,allDmgCGod,6,99.0,1.0
 1454005,1454,allDmgCGod,0.5,99.0,1.0
 1454006,1454,allDmgCGod,0.3,99.0,1.0
 1454007,1454,allDmgCGod,0.1,99.0,1.0
