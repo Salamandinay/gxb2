@@ -9,7 +9,7 @@ id,name,from,content
 8,Petite Carte Mensuelle,Petite Carte Mensuelle,"Cher Senpai, voici vos récompenses. Votre Petite Carte Mensuelle expirera dans {1} jours."
 9,Petite Carte Mensuelle a expiré,Petite Carte Mensuelle,"Dear Senpai, votre Petite Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 10 fois plus de Gemmes qu'en achetant individuellement."
 10,Recruter une Fille,Recrutement,Félicitations vous avez recruté {1} Filles durant l'événement. Voici vos récompenses.
-11,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Capsule Avancée*3, voici vos récompenses, veuillez les récupérer !"
+11,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Capsule Avancée*3, Chaussette de Noël*1. \nVoici vos récompenses, veuillez les récupérer !"
 12,Points de capsules,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement Capsule de Nouvelle Fille, veuillez collecter les récompenses !"
 13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau*1 et Énergie (Machine à Sous)*10. Voici vos récompenses, veuillez les récupérer !"
 14,Recrutement,Courrier du Système,"Félicitations vous avez obtenu {1} points pendant l'événement - Examen d'admission, voici vos récompenses, veuillez les récupérer !"
@@ -59,7 +59,7 @@ id,name,from,content
 58,Final de la Bataille de Guilde,Courrier du Système,Félicitations ! Votre Guilde s'est classée {1}e dans la Finale de la Bataille de Guilde. Voici vos récompenses.
 59,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde a atteint la Deuxième Place dans la Bataille de Guilde ! Voici vos récompenses !
 60,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde est Championne de la Bataille de la Guilde. Voici vos récompenses.
-61,Carte du Black Friday,Courrier du Système,"Vous êtes un joueur au Niv.{1}, voici vos récompenses de Carte du Black Friday qui expirera dans {3} jours !"
+61,Carte de Noël,Courrier du Système,"Vous êtes un joueur au Niv.{1}, voici vos récompenses de Carte de Noël qui expirera dans {3} jours !"
 62,Carte Mensuelle Renouvelée,Carte Mensuelle,Félicitations ! Vous avez renouvelé votre carte mensuelle. Votre abonnement actuel finira dans {1} jours
 63,Petite Carte Mensuelle Renouvelée,Petite Carte Mensuelle,Félicitations ! Vous avez renouvelé votre petite carte mensuelle. Votre abonnement actuel finira dans {1} jours
 64,Evénement de Puzzle,Courrier du Système,Félicitations ! Vous avez complété {1} Puzzles. Voici vos récompenses.
@@ -78,9 +78,9 @@ id,name,from,content
 77,L'Histoire de l'Académie Yume,Courrier du Système,Félicitations ! Vous avez atteint le Chapitre {1} de la Campagne ! Voici vos récompenses.
 78,Approvisionnement,Courrier du Système,Félicitations ! Vous avez obtenu {1} points dans l'événement d'Approvisionnement d'Equipement. Voici vos récompenses.
 79,Point de l'Anniversaire,Courrier du Système,Félicitations ! Vous avez obtenu {1} points dans Cérémonie de Machine à sous . Voici vos récompenses.
-80,Bonus de Sécurité,Courrier du Système,"Vous avez été vaincu par le BOSS du Chaos, obtenez ces provisions et réessayer !"
-81,Bonus de Sécurité,Courrier du Système,"Vous avez infligé beaucoup de dégâts au BOSS du Chaos, il est en train de battre en retraite. Prenez ceci et poursuivez-le !"
-82,Bonus de Sécurité,Courrier du Système,Vous avez purifié le BOSS du Chaos et êtes entré dans une zone encore plus dangereuse. Voici vos récompenses.
+80,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous avez été vaincu par le BOSS du Chaos, collectez ces provisions et réessayez !"
+81,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous avez infligé des dégâts monstrueux au Seigneur du Chaos, il est en train de battre en retraite.\nPrenez vos récompenses et poursuivez-le !"
+82,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous avez purifié le Seigneur du Chaos et êtes entré dans une zone encore plus dangereuse.\nVoici vos récompenses, veuillez les récupérer !"
 83,Questionnaire,Courrier du Système,Merci d'avoir rempli le questionnaire ! Voici vos récompenses.
 84,Fête de la musique,Courrier du Système,Félicitations ! Vous avez fini le puzzle de la Fête de la Musique et vous avez obtenu Nani Skin Concert de Rock. Voici vos récompenses.
 85,Programme de Motivation,Courrier du Système,Félicitations ! Vous avez atteint le Niv.{1}. Voici vos récompenses.
@@ -111,7 +111,7 @@ id,name,from,content
 110,Récompense de Défi de Vitesse,Courrier du Système,"Félicitation ! Vous avez atteint la {1}e place dans Mode de Vitesse, veuillez collecter vos récompenses !"
 111,Récompenses d'Évaluation P￼articulière,Courrier du Système,"Félicitations ! Vous avez accompli les tâches d'Évaluation Particulière, voici vos récompenses, veuillez les collecter !"
 112,Récupération d'objet d'événement,Courrier du Système,"Senpai, l'événement {1} est terminé. Vos {3}*{2} ont été récupérées. Voici vos récompenses, n'oubliez pas de les récupérer."
-113,Capsules de Filles,Courrier du Système,"Félicitations ! Vous avez obtenu {2} {1} fois dans l'événement de Capsule de Nouvelle Fille, voici vos récompenses !"
+113,Capsules de Filles,Courrier du Système,"Félicitations ! Vous avez obtenu une {1}e Maïa ou Carmen & Bianca durant l'événement, voici vos récompenses ! Veuillez les récupérér !"
 114,Récompense d'événement Ballons Colorés,Courrier du Système,"Félicitations ! Vous avez atteint {1} d'Intimité lors de l'événement Ballons Colorés, veuillez récupérer les récompenses correspondantes."
 115,Récompense de Guerre de Maison,Courrier du Système,Félicitations ! Vous avez atteint la {1}e place lors de la Guerre de Maison de Festival Sportif de Yume (Compétition Normale). Voici vos récompenses.
 116,Récompense de Guerre de Maison,Courrier du Système,Félicitations Senpai ! Vous faites partie des premiers {1}% lors de la Guerre de Maison de Festival Sportif de Yume (Compétition Normale). Voici vos récompenses.
@@ -228,3 +228,8 @@ Venez vite explorer la Cité aux Trésors avec elle !
 *(2 Pioches vous seront offertes lors du premier jour de l\'événement)"
 210,Récompenses Individuelles (Expédition Polaire),Courrier du Système,"Cher Senpai, merci pour votre contribution dans l'Expédition Polaire.\nVoici vos récompenses, veuillez les récupérer !"
 211,Récompenses de Faction (Expédition Polaire),Courrier du Système,"Félicitations, Senpai ! Votre Faction s'est classée Top {1} parmi les 3 Factions.\nVoici vos récompenses, veuillez les récupérer !"
+212,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous êtes vaincu par le Seigneur du Chaos.\nObtenez ces provisions et réessayer !\n(Bonus de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
+213,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous avez infligé beaucoup de dégâts au Seigneur du Chaos, il est en train de battre en retraite.\nPrenez vos récompenses et poursuivez-le !\n(Bonus de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
+214,Équipe de Sécurité,Courrier du Système,"Cher Senpai, vous avez réussi à purifier le Seigneur du Chaos et êtes entré dans une zone encore plus dangereuse.\nVoici vos récompenses, veuillez les récupérer !\n(Bonus de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
+215,Échange de Noël,Courrier d'Événement,"Cher Senpai, l'événement - Échange de Noël va bientôt prendre fin, n'oubliez pas d'échanger des cadeaux !"
+216,Près de la Cheminée,Courrier du Système,"Félicitations Senpai ! Vous avez accroché {1} Chaussettes de Noël, voici vos récompenses, veuillez les récupérer !"

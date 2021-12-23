@@ -1418,7 +1418,7 @@ LOGIN_DAY_4,Jour 4
 LOGIN_DAY_5,Jour 5
 LOGIN_DAY_6,Jour 6
 LOGIN_DAY_7,Jour 7
-NEWYEAR_TEXT01,Connectez-vous tous les jours pour obtenir des récompenses !
+NEWYEAR_TEXT01,Connectez-vous tous les jours\npour obtenir des récompenses !
 NEWYEAR_TEXT02,Connexion
 DATES_TEXT18,"L'histoire de cette Fille a été débloquée, voulez-vous la voir ?"
 DATE_LOCK_FAIL,"Cette Fille est choisie comme fond, elle ne peut pas être débloquée."
@@ -1643,7 +1643,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musique
 NORMAL_SLOT_MACHINE,Distributeur Normal
 HIGH_SLOT_MACHINE,Distributeur Avancé
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,1. Il y a de nombreuses récompenses. Les joueurs peuvent collecter les cadeaux en se connectant tous les jours.|2. Les cadeaux verrouillés garderont toujours leurs récompenses. Les joueurs peuvent récolter toutes les récompenses quand ils les débloquent.|3. Touchez la page pour voir les récompenses.|4. Le 4ème Cadeau sera débloqué après l'achat du 2ème Pack Surprise.
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,1. Connectez-vous quotidiennement et collectez les cadeaux déverrouillés.|2. Les récompenses des cadeaux verrouillés sont cumulables et pourront être collectés une fois le cadeau déverrouillé.|3. Touchez le cadeau pour voir les récompenses.|4. Le 4ème Cadeau sera débloqué après avoir fait l'achat du 2ème Pack Surprise.
 CHAPTER_COUNT,Chapitre {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,Ce Chapitre n'est pas encore débloqué
@@ -2699,14 +2699,14 @@ ACTIVITY_FACTORY_PRODUCE_NUM,Quantité à confectionner
 ACTIVITY_FACTORY_PRODUCE_COST,Matériel à utiliser
 ACTIVITY_FACTORY_TIPS,"Vous avez réussi de confectionner {1}, veuillez collecter vos récompenses !"
 ACTIVITY_FACTORY_EASTER_EGG,Le dessert {1} a été mangé par les Chasseurs…Mais regarde ! Voici les récompenses envoyées par les Chasseurs !
-NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT02,"Durant l'événement, vous aurez plus de chance d'obtenir ：{1}.\nPlus vous tirez les Capsules, plus vous aurez de chances d'obtenir {1} !"
+NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT02,"Durant l'événement, vous aurez plus de chance d'obtenir ：Carmen & Bianca et Maïa\nPlus vous tirez les Capsules, plus vous aurez de chances de les obtenir.\n(Ces Filles ne peuvent pas être obtenues dans - Recruter)"
 NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT03,"[c][d95b61]Attention：[-][/c]\nSi vous obtenez ces Filles via l'Échange dans Recruter, vous n'obtiendrez pas de récompenses."
 NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT04,Détails de la Fille
-NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT05,Obtenir {1} {2} fois
+NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT05,Obtenir Carmen & Bianca ou Maïa {2} fois
 NEED_HERO_GUIDE,"Senpai, vous avez encore des Filles qui peuvent se joindre à la bataille, cliquez sur elles pour les envoyer se battre !"
 DELETE_CHAT_FOR_SURE,Êtes-vous sûr de vouloir le supprimer ?
 ACTIVITY_FACTORY_TIPS1,Veuillez choisir votre récompense préférée !
-ACTIVITY_FACTORY_TIPS2,Êtes-vous sur de vouloir confectionner ?
+ACTIVITY_FACTORY_TIPS2,Êtes-vous sûr de vouloir fabriquer ?
 TWITTER_ID,日語專用
 SCHOOL_PRACTISE_RANK_TIP,Aucun détail sur son équipe pour l'instant
 ACTIVITY_EASTER_EGG_PEN_COLOR,Couleur
@@ -3538,7 +3538,7 @@ LIMIT_BUY_TIMES,Limite d'achat： {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent sur le Campus, vous pouvez les essayer dans différentes compositions."
 GUILD_KICK_TIPS,Êtes-vous sûr d'exclure ce joueur ?
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour combattre. Pendant la journée d'affichage, aucune Étape n'est possible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 Étapes. Les ennemis changeront chaque saison. L'équipe des ennemis peut être aperçue via le bouton ""!"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un Défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des Gemmes pour en acheter.|5. Chaque Étape vous permet d'obtenir des récompenses très importantes lorsque vous la passez pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Passer une Étape avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, vous pouvez utiliser des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous passez l'Étape 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque Étape (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à passer 9ème Étape de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des Gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quelle Étape pour obtenir des points d'Examen: 1 point de l'Étape 1 à 20; 2 points de l'Étape 21 à 40; 4 points de l'Étape 41-60; 6 points de l'Étape 61-80; 8 points de l'Étape 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Les joueurs avec les points les plus élevés dans chaque Maison recevront une récompense supplémentaire : un Cadre d'Avatar de 14 jours; s'il y a plusieurs joueurs à égalité pour la première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen (10 joueurs au maximum)."
-GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir ces nouvelles Filles augmente avec chaque [c][DE512B]100[-][/c] tirages de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression est réinitialisée dès son obtention."
+GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir ces nouvelles Filles augmente avec chaque [c][DE512B]100[-][/c] tirages de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]Carmen & Bianca[-][/c] ou une [c][DE512B]Maïa[-][/c].|4. La progression est réinitialisée dès l'obtention de Carmen & Bianca ou Maïa."
 GACHA_GUARANTEE_UP,Possibilité UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Tentative restante : {1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Tentative insuffisante !
@@ -3777,7 +3777,7 @@ ACTIVITY_DOLL_EXCHANGE_TIPS,Êtes-vous sûr de confirmer la fabrication ?
 ACTIVITY_DOLL_MAKE_TITLE,Fabriquer
 ACTIVITY_DOLL_MAKE_BUTTON,Sélection Auto.
 ACTIVITY_DOLL_SELECT,Fabriquer
-ACTIVITY_DOLL_HELP,"1.Vous pouvez choisir des Filles niv.1 de 3/4/5 étoiles pour fabriquer des nœuds papillons.|2.Les Filles seront sacrifiées pour fabriquer des nœuds papillons. Vous pouvez cliquer sur le bouton "" Aperçu "" pour voir les matériaux nécéssaires.|3.Vous pouvez échanger des fragments de poupées en utilisant des nœuds papillons dans Échange de Poupées.|4.Vous pouvez utiliser certains nœuds papillons pour transformer des poupées en fragments dans Fragmentation de Poupées. |5. Une fois l'événement terminé, le nœud papillon inutilisé sera automatiquement échangé contre des fragments de Fille 5 étoiles dans un rapport de 10:1."
+ACTIVITY_DOLL_HELP,"1. Choisissez des Filles 3/4/5 étoiles de Niv.1 pour fabriquer des Nœuds Papillons.|2. Les Filles que vous avez choisi seront consommées pour fabriquer des Nœuds Papillons. Appuyez sur la loupe en haut à droite de la fenêtre de fabrication pour voir le nombre de Nœud Papillon obtenable.|3. Sur l'interface - Échange de Poupées, échangez vos Nœuds Papillons contre des Fragments de Poupées.|4. Sur l'interface de Fragmentation de Poupées, utilisez vos Nœuds Papillons pour transformer vos Poupées en Fragments. |5. Après la fin de l'événement, les Nœuds Papillons non-utilisés seront automatiquement convertis en Fragments de Fille 5 étoiles (10 Nœuds Papillons = 1 Fragment de Fille 5 étoiles)."
 ACTIVITY_YEAR_FUND_DATE,Validité：{1}.{2}-{3}.{4}
 ACTIVITY_YEAR_FUND_DAYS,Connexion：{1} Jour(s)
 ACTIVITY_YEAR_FUND_INNER_TITLE,Aperçu Partiel
@@ -3804,7 +3804,7 @@ ACTIVITY_YEAR_FUND_NOTICE_TEXT02,Contenu à venir…
 ACTIVITY_CHRISTMAS_SALE_TITLE,Sur Mesure
 AWARD_LOOK_WINDOW_NEW,Aperçu
 SUMMON_GIFTBAG_TEXT03,Tirer Capsule Avancée {1} fois
-ACTIVITY_DOLL_EXCHANGE_TIPS_HIGHSTAR,Êtes-vous sûr d’utiliser les Filles 4&5 étoiles ?
+ACTIVITY_DOLL_EXCHANGE_TIPS_HIGHSTAR,"Vous avez choisi les Filles 4 étoiles et plus, voulez-vous les utiliser pour fabriquer les Nœuds Papillons ?"
 ALLHARMDEC,Résis. Totale
 VOW_TEXT_1,Passer ?
 VOW_TEXT_2,Revoir l'animation de serment ?
@@ -4845,7 +4845,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Vote du Skin de Miss Yume
 DRESS_SUMMON_LABEL_2,Défilez pour voir les Tenues obtenables
 DRESS_SUMMON_LABEL_4,Tenue Orange garantie après avoir tiré [c][e96516]{1}[-][/c] fois
 DRESS_SUMMON_LABEL_1,Chance Gratuite : {1} fois
-DRESS_SUMMON_LABEL_3,Taux d'Obtention de \nla Tenue - Halloween
+DRESS_SUMMON_LABEL_3,Taux d'Obtention de \nla Tenue - Magie de Noël
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
@@ -5005,7 +5005,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
 EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'Ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
-DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Halloween est actuellement augmenté !
+DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Magie de Noël est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
@@ -5522,7 +5522,7 @@ TIME_CLOISTER_TEXT82,Tenue (Accessoire)
 TIME_CLOISTER_TEXT83,Tenue (Objet)
 ARCTIC_EXPEDITION_TEXT_41,Défendre
 ARCTIC_EXPEDITION_TEXT_42,Acheter Barre Chocolatée
-ARCTIC_EXPEDITION_TEXT_43,"Avalanche est en état d'hibernation, impossible de l'attaquer dans cette ère !"
+ARCTIC_EXPEDITION_TEXT_43,"Avalanche va prochainement se réveiller dans la deuxième ère, impossible de l'attaquer dans cette ère !"
 ARCTIC_EXPEDITION_TEXT_44,Raid
 ARCTIC_EXPEDITION_TEXT_45,Rassemblement en cours
 ARCTIC_EXPEDITION_TEXT_46,"Cette case de territoire est actuellement sous protection, impossible à attaquer !"
@@ -5561,22 +5561,36 @@ ARCTIC_EXPEDITION_HELP_BATTLE,"1. Si vous vainquez une Armée Défensive, vous p
 ARCTIC_EXPEDITION_GROUP_1_notNL,Comité de Discipline
 ARCTIC_EXPEDITION_GROUP_2_notNL,DEF
 ARCTIC_EXPEDITION_GROUP_3_notNL,Union Étudiante
-ACTIVITY_SOCKS_TASK_TEXT,活動期間，完成任務可以收集散落在學院各地的聖誕襪。把聖誕襪掛在床頭會有聖誕老人前來拜訪哦~
-ACTIVITY_SOCKS_CHANGE_HELP,1.活動期間，開啟限時聖誕禮物交換！|2.學長選定自己送出的禮物後，還可選定想要獲得的禮物，消耗一定數量的【樹頂星】後便可成功完成禮物交換。|3.學長送出的禮物將從背包中扣除，但依舊保留圖鑒解鎖狀態。|4.樹頂星可透過聖誕老人的拜訪，鑽石購買（最多可使用鑽石購買100個樹頂星）獲得。|5.活動結束後，未使用的樹頂星將以每個5000金幣的價格回收。
-ACTIVITY_SOCKS_AWARD_TEXT,消耗聖誕襪後，還將額外獲得豐厚獎勵哦~
-ACTIVITY_SOCKS_GAMBLE_HELP,1.聖誕老人來拜訪學院了！|2.每次掛起1個聖誕襪，學長便可獲得隨機一份聖誕老人的禮物，以及1個樹頂星獎勵。獲得聖誕老人的禮物後，禮物將會進行升級，單個獎勵最高升至3級。|3.根據禮物總等級，可以獲得禮物升級獎勵。|4.根據掛起的聖誕襪數量，可以獲得累計次數獎勵。|5.聖誕襪可以透過散落的聖誕襪，每日信件，聖誕禮物，聖誕限時禮包，超值禮包，特惠禮包和造型禮包獲得。|6.活動結束後，未使用的聖誕襪將以每個25000金幣的價格回收。
-ACTIVITY_SOCKS_GAMBLE_LEVEL,總等級：
-ACTIVITY_SOCKS_GAMBLE_GIFT,Récompense(s) Obtenue(s)
-ACTIVITY_SOCKS_LEVEL_AWARD,禮物總等級達到{1}級
-ACTIVITY_SOCKS_GAMBLE_AWARD,掛起{1}個聖誕襪
-ACTIVITY_SOCKS_GAMBLE_BUTTON,掛襪
+ACTIVITY_SOCKS_TASK_TEXT,Complétez les tâches pour collecter les Chaussettes de Noël !\nAccrochez-les près de la cheminée et le Père Noël viendra les remplir.
+ACTIVITY_SOCKS_CHANGE_HELP,"1. L'échange limité de Noël est ouvert, Senpai !|2. Choisissez le cadeau que vous souhaitez échanger, puis celui que vous souhaitez recevoir. Utilisez la quantité requise d'Étoile de Noël pour effectuer un échange.|3. Le cadeau que vous souhaitez échanger sera consommé directement de votre inventaire. Cependant, il sera conservé dans votre Collection et ainsi toujours disponible dans votre Liste de Fonds.|4. Moyen d'obtention d'Étoiles de Noël : Une Visite du Père Noël, Acheter avec des Gemmes (Étoiles de Noël*100 au maximum).|5. Après la fin de l'événement, les Étoiles de Noël non-utilisées seront automatiquement converties en Pièce d'Or, 5k chacune."
+ACTIVITY_SOCKS_AWARD_TEXT,Obtenez des récompenses en accrochant les Chaussettes de Noël !
+ACTIVITY_SOCKS_GAMBLE_HELP,"1. Le Père Noël est enfin arrivé !|2. Obtenez un cadeau aléatoire du Père Noël et une Étoile de Noël, pour chaque Chaussette de Noël accrochée. Le niveau d'un cadeau sera amélioré après l'avoir obtenu à nouveau. Le niveau maximum d'un cadeau est de 3.|3. Obtenez des récompenses supplémentaires en fonction de la somme des niveaux de tous vos cadeaux reçus par le Père Noël.|4. Obtenez des récompenses de paliers après avoir accroché un certain nombre de Chaussette de Noël.|5. Moyen d’obtention des Chaussettes de Noël : Événement - Les Chaussettes de Noël, Courrier Quotidien, Cadeaux de Noël, Pack Exclusif de Noël, Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|6. Après la fin de l'événement, les Chaussettes de Noël non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
+ACTIVITY_SOCKS_GAMBLE_LEVEL,Niv. total : {1}
+ACTIVITY_SOCKS_GAMBLE_GIFT,Récompenses Obtenues
+ACTIVITY_SOCKS_LEVEL_AWARD,Atteindre le Niv. total\ndes cadeaux de {1}
+ACTIVITY_SOCKS_GAMBLE_AWARD,Accrocher {1} Chaussettes de Noël
+ACTIVITY_SOCKS_GAMBLE_BUTTON,Accrocher
 ACTIVITY_SOCKS_CHANGE_TEXT01,Fille
 ACTIVITY_SOCKS_CHANGE_TEXT02,Skin
 ACTIVITY_SOCKS_CHANGE_TEXT03,Antiquité
-ACTIVITY_SOCKS_CHANGE_TEXT04,學長沒有閒置的造型，是否前往脫下造型？
-ACTIVITY_SOCKS_CHANGE_TEXT05,確認消耗{1}個樹頂星和{2}交換獲得{3}？
-ACTIVITY_SOCKS_CHANGE_TEXT06,學長剩餘禮物交換次數為0，無法進行交換
+ACTIVITY_SOCKS_CHANGE_TEXT04,"Vous ne possédez pas de Skin en plus, voulez-vous le retirer d'une de vos Filles ?"
+ACTIVITY_SOCKS_CHANGE_TEXT05,Voulez-vous échanger Étoile de Noël*{1} et [c][ea7900]{2}[-][/c] contre [c][ea7900]{3}[-][/c] ?
+ACTIVITY_SOCKS_CHANGE_TEXT06,Aucune chance restante pour échanger des cadeaux
 GUILD_TEXT69,"Aucune Guilde à recommander, vous pouvez en créer une."
-ACTIVITY_SOCKS_GAMBLE_TITLE,掛起聖誕襪
-ACTIVITY_SOCKS_GAMBLE_TEXT01,請輸入掛起聖誕襪的數量：
-ACTIVITY_SOCKS_OUT_TITLE,Noël
+ACTIVITY_SOCKS_GAMBLE_TITLE,Accrocher
+ACTIVITY_SOCKS_GAMBLE_TEXT01,Sélectionnez le nombre de\nChaussette de Noël à accrocher：
+ACTIVITY_SOCKS_OUT_TITLE,Joyeux\nNoël !
+POTENTIALITY_BACK_ALTAR_TIPS,Les Poupées ne peuvent pas être utilisées pour fabriquer les Nœuds Papillons.
+ACTIVITY_SOCKS_GAMBLE_NONE,Aucun cadeau obtenu...
+ACTIVITY_SOCKS_CHANGE_TEXT07,"Vous ne possédez pas de Fille en plus, voulez-vous aller à l'interface de Capsule pour l'obtenir ?"
+ACTIVITY_SOCKS_CHANGE_TEXT08,"Vous ne possédez pas d'Antiqutié en plus, voulez-vous le retirer d'une de vos Filles ?"
+ACTIVITY_SOCKS_CHANGE_TIPS,Veuillez d'abord sélectionner le Matériel d'échange.
+ACTIVITY_SOCKS_CHANGE_BUY,Acheter Étoile de Noël
+ACTIVITY_SOCKS_LEVEL_TITLE,Récompenses
+ACTIVITY_SOCKS_CHANGE_TEXT09,Échange restant：
+ACTIVITY_SOCKS_CHANGE_BUY_TEXT,Limite d'achat：{1}/{2}
+ACTIVITY_SOCKS_CHANGE_BUY_TEXT02,Vous avez atteint la limite d'achat !
+ACTIVITY_SOCKS_CHANGE_TEXT10,Veuillez sélectionner le Matériel d'échange et votre récompense.
+ACTIVITY_SOCKS_CHANGE_TEXT11,Veuillez sélectionner le Matériel d'échange.
+A_AND_B,{1} et {2}
+ACTIVITY_SOCKS_CHANGE_TEXT12,Veuillez sélectionner le Matériel d'échange
