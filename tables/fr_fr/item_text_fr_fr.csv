@@ -4,7 +4,7 @@ id,name,brief,desc
 3,EXP,EXP,À utiliser pour augmenter le niveau du joueur
 4,Pièce de Guilde,Pièce de Guilde,À utiliser pour acheter des objets dans la Boutique de Guilde
 5,EXP de Guilde,EXP de Guilde,À utiliser pour augmenter le niveau de la Guilde
-6,Coupon,Coupon,À utiliser pour acheter des objets au Distributeur et dans la Boutique de la Chance
+6,Coupon,Coupon,À utiliser pour acheter des objets dans le Distributeur et dans la Boutique de la Chance
 7,Liste de la Classe,Monnaie utilisée pour acheter des Filles,À utiliser pour échanger des Filles dans le Magasin de Transfert
 8,VIP EXP,VIP EXP,
 9,Jus d'EXP,Augmente l'EXP d'une Fille,À utiliser pour augmenter le niveau d'une Fille dans l'interface des attributs
@@ -52,27 +52,27 @@ id,name,brief,desc
 52,Budget de Décoration,Matériel d'Evenement,"Objet utilisé pour aider les Filles à finir la mission de décoration, objet échangeable"
 53,Coupon d'Orientation,Matériel d'Evènement,"Objet exclusif pour échanger des récompenses dans l'événement de Cadeaux de la Rentrée. L'échange sera fermé après la fin de l'événement, utilisez-le avant la fin de l'événement"
 54,Carte d'Approvisionnement d'Equipement,Matériel d'Evènement,Echangeable durant l'événement pour obtenir des équipements rares
-1001,Avatar Limité de la Première Bataille en Arène,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
+1001,Avatar Limité de la Première Bataille en Arène,Avatar Spécial,Avatar Exclusif de l'Arène
 1002,Avatar Solaire,Avatar Spécial,Avatar du Champion de l'Arène 3v3
 1003,Avatar Lunaire,Avatar Spécial,Avatar du Finaliste de l'Arène 3v3
 1004,Avatar d'Or,Avatar Spécial,Avatar d'Or de l'Arène 3v3
 1005,Avatar Argent,Avatar Spécial,Avatar pour rang 4-10 Arène 3v3
 1006,Avatar Bronze,Avatar Spécial,Avatar pour rang 11-20 Arène 3v3
-1007,Avatar d'Halloween,Avatar Spécial,Avatar spécial pour Halloween. Finissez toutes les missions de l'Arène d'Halloween pour l'obtenir
-1008,Avatar Puzzle Spécial,Avatar Spécial,Finissez l'événement Puzzle pour obtenir cet avatar
-1009,Avatar Nouvel An,Avatar Spécial,Avatar Limité du nouvel an
-1010,Avatar Limité Flocon de Neige,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
-1013,Avatar Limité,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
-1014,Avatar Limité du Nouvel An Chinois,Avatar Spécial,Avatar Spécial du Nouvel An Chinois
+1007,Avatar de Halloween,Avatar Spécial,Avatar Exclusif de Halloween
+1008,Avatar de Puzzle,Avatar Spécial,Avatar Exclusif de l'événement - Puzzle
+1009,Avatar du Nouvel An,Avatar Spécial,Avatar Exclusif du Nouvel An
+1010,Avatar de Flocons de Neige,Avatar Spécial,Avatar Exclusif de l'Arène
+1013,Avatar Limité,Avatar Spécial,Avatar Exclusif de l'Arène
+1014,Avatar du Nouvel An Chinois,Avatar Spécial,Avatar Exclusif du Nouvel An Chinois
 1015,Infortuné,Avatar Spécial,Aucune Fille 5 étoiles obtenues après 200 essais consécutifs dans la Capsule Avancée
 1016,Très Infortuné,Avatar Spécial,Aucune Fille 5 étoiles obtenues après 300 essais consécutifs dans la Capsule Avancée
 1017,Extrêmement Infortuné,Avatar Spécial,Aucune Fille 5 étoiles obtenues après 400 essais consécutifs dans la Capsule Avancée
-1018,Avatar Limité du Printemps,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
-1019,Avatar de la Promesse,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
-1020,Avatar de Pâques,Avatar Spécial,Avatar Limité de Pâques
-1023,Avatar de la Fête des Mères,Avatar Spécial,Avatar Limité de la Fête des Mères
-1024,Avatar de la Cérémonie d'Ouverture,Avatar Spécial,Avatar Limité de la Cérémonie d'Ouverture
-1025,Avatar de la Fête des Bateaux Dragons,Avatar Spécial,Avatar de récompense de l'Arène pour avoir terminé toutes les missions
+1018,Avatar du Printemps,Avatar Spécial,Avatar Exclusif de l'Arène
+1019,Avatar de la Promesse,Avatar Spécial,Avatar Exclusif de l'Arène
+1020,Avatar de Pâques,Avatar Spécial,Avatar Exclusif de Pâques
+1023,Avatar de la Fête des Mères,Avatar Spécial,Avatar Exclusif de la Fête des Mères
+1024,Avatar de la Cérémonie d'Ouverture,Avatar Spécial,Avatar Exclusif de la Cérémonie d'Ouverture
+1025,Avatar de la Fête des Bateaux Dragons,Avatar Spécial,Avatar Exclusif de l'Arène
 2001,Balle de Riz,Objet,Soigne 20% des PV
 2002,Boulette de riz au Jujube,Objet,Soigne 50% des PV et ajoute 300 d'Énergie
 2003,Boulette de riz au Saumon,Objet,Soigne 100% des PV
@@ -1041,7 +1041,7 @@ id,name,brief,desc
 88888883,Cadre d'Avatar Demi Final de la Bataille de Guilde,Cadre d'Avatar,
 88888884,Cadre d'Avatar Quart de Final de la Bataille de Guilde,Cadre d'Avatar,
 88888885,Cadre d'Avatar\nHuitième de Finale de la Bataille de Guilde,Cadre d'Avatar,
-8006,Vraie Promesse,Cadre d'Avatar,"Cadre d'Avatar obtenu dans l'événement ""Gagner les Cœurs"""
+8006,Vraie Promesse,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Gagner les Cœurs
 8007,Par défaut,Cadre d'Avatar,
 9001,Rendez-vous sous le Cerisier,Skin de Fond,Le Skin de Fond d'Iron Fist être acquis dans l'événement exclusif et peut être mis comme fond d'écran.
 11001,Skarivine,,
@@ -1374,8 +1374,8 @@ id,name,brief,desc
 27032,Examen Monstre,Skin,Skin de Nobunaga - Examen Monstre
 7033,Fraîcheur,Skin,Skin d'Amelia - Fraîcheur
 27033,Fraîcheur,Skin,Skin d'Amelia - Fraîcheur
-1026,Avatar du Jeu de Plage,Avatar Spécial,Avatar du Jeu de Plage
-8008,Été Frais,Cadre d'Avatar,Le Cadre d'Avatar peut être obtenu dans l'événement à temps limité
+1026,Avatar du Jeu de Plage,Avatar Spécial,Avatar Exclusif de l'événement - Jeu de Plage
+8008,Été Frais,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Jeu de Plage
 7034,Mer d'Azur,Skin,Skin de Fencer - Mer d'Azur
 27034,Mer d'Azur,Skin,Skin de Fencer - Mer d'Azur
 7035,Examen Démon,Skin,Skin de Lucifer - Examen Démon
@@ -1421,8 +1421,8 @@ id,name,brief,desc
 1027,Avatar Exclusif d'Anniversaire,Avatar Spécial,Avatar Exclusif d'Anniversaire
 7040,Quartz Rose,Skin,Skin d'Hexa - Quartz Rose
 27040,Quartz Rose,Skin,Skin d'Hexa - Quartz Rose
-1028,Avatar Glace de l'Eté,Avatar Spécial,Avatar du Jeu de Plage
-8009,Soirée Piscine,Cadre d'Avatar,Le Cadre d'Avatar peut être obtenu dans l'événement à temps limité
+1028,Avatar Glace de l'Eté,Avatar Spécial,Avatar Exclusif de l'événement - Jeu de Plage
+8009,Soirée Piscine,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Jeu de Plage
 7041,Brise de l'Océan,Skin,Skin d'Amazon - Brise de l'Océan
 27041,Brise de l'Océan,Skin,Skin d'Amazon - Brise de l'Océan
 7042,Examen Fée,Skin,Skin de Kong Ming - Examen Fée
@@ -1472,7 +1472,7 @@ id,name,brief,desc
 27050,Musique de l'Âme,Skin,Lucifer Skin - Musique de l'Âme
 7051,Concert de Rock,Skin,Skin de Nani - Concert de Rock
 27051,Concert de Rock,Skin,Skin de Nani - Concert de Rock
-8010,Performance de la Bande,Cadre d'Avatar,"Cadre d'Avatar Exclusif du Show en direct, obtenu dans l'événement à temps limité."
+8010,Performance de la Bande,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Show en direct
 52011,Capsula,,
 652018,Capsula,,
 752011,Capsula,,
@@ -1498,7 +1498,7 @@ id,name,brief,desc
 27056,Grimoire,Skin,Skin de Valeera - Grimoire
 7057,Plume Radieuse,Skin,Skin de Phénix - Plume Radieuse
 27057,Plume Radieuse,Skin,Skin de Phénix - Plume Radieuse
-8011,Chercheur,Cadre d'Avatar,"Cadre d'Avatar pour l'événement Recherche des Classiques, peut être obtenu dans l'événement à temps limité."
+8011,Chercheur,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Recherche des Classiques
 8012,Arène Ultime Top 64,Cadre d'Avatar,Défi-Atteindre le Top 64 dans l'Arène Ultime
 8013,Arène Ultime Top 8,Cadre d'Avatar,Défi-Atteindre le Top 8 dans l'Arène Ultime
 8014,Arène Ultime Top 4,Cadre d'Avatar,Défi-Atteindre le Top 4 dans l'Arène Ultime
@@ -1524,7 +1524,7 @@ id,name,brief,desc
 7062,Charmante,Skin,Skin de Lavia - Charmante
 27062,Charmante,Skin,Skin de Lavia - Charmante
 68,Livre des Esprits,Matériel d'Evènement,"Matériel Spécial, à utiliser pour obtenir des objets"
-20001032,Chat Noir d'Halloween,Avatar Spécial,Avatar Exclusif d'Halloween 2019
+20001032,Chat Noir d'Halloween,Avatar Spécial,Avatar Exclusif de Halloween 2019
 1010001,Papier Peint Uni,Meuble,"Du papier peint, pratique pour les fainéants ne voulant pas peindre."
 1010002,Parquet,Meuble,"Du parquet, il craque quand vous marchez dessus pour vous dire bonjour."
 1010003,Carpette,Meuble,C'est important de nettoyer l'intérieur du dortoir.
@@ -1677,7 +1677,7 @@ id,name,brief,desc
 56005,Isabelle,,
 656015,Isabelle,,
 756005,Isabelle,,
-8021,Bulle d'amour,Cadre d'Avatar,Cadre d'Avatar obtenu dans l'événement de vote
+8021,Bulle d'Amour,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Gagner les Cœurs
 78,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
 79,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
 80,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
@@ -2135,9 +2135,9 @@ Matériel spécial. Un oeuf délicat avec un emballage décoré de différents m
 8032,Collectionneur Débutant,Cadre d'Avatar,Obtenable dans le Magasin de Collection
 8033,Collectionneur Confirmé,Cadre d'Avatar,Obtenable dans le Magasin de Collection
 8034,Collectionneur Légendaire,Cadre d'Avatar,Obtenable dans le Magasin de Collection
-20001035,Collectionneur Débutant,Avatar Spécial,Avatar exclusif du Magasin de Collection
-20001036,Collectionneur Confirmé,Avatar Spécial,Avatar exclusif du Magasin de Collection
-20001037,Collectionneur Légendaire,Avatar Spécial,Avatar exclusif du Magasin de Collection
+20001035,Collectionneur Débutant,Avatar Spécial,Avatar Exclusif du Magasin de Collection
+20001036,Collectionneur Confirmé,Avatar Spécial,Avatar Exclusif du Magasin de Collection
+20001037,Collectionneur Légendaire,Avatar Spécial,Avatar Exclusif du Magasin de Collection
 930187,Fragments de Kratos 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
 55007,Kratos,,
 655016,Kratos,,
@@ -2268,7 +2268,7 @@ Humain/Monstre/Fée.
 1090020,Limite de Terrain 3,Meuble,"Un match doit être accompagné de règles et de limites, il est donc nécessaire de délimiter clairement le terrain."
 1100001,Papier Peint\nTransparent,Meuble,Le papier peint transparent permet d'avoir une vue imprenable sur le paysage environnant.
 1100002,Sol\nTransparent,Meuble,Le sol transparent donne l'impression d'être plus proche de la nature.
-8039,Amour Éternel,Cadre d'Avatar,Cadre d'Avatar obtenu dans l'événement de vote
+8039,Amour Éternel,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Gagner les Cœurs
 7109,Reine des Eaux,Skin,Skin de Valeera - Reine des Eaux
 27109,Reine des Eaux,Skin,Skin de Valeera - Reine des Eaux
 7110,Douceur d'été,Skin,Skin de Capsula - Douceur d'été
@@ -2530,7 +2530,7 @@ Humain/Monstre/Fée.
 27120,Chaperon Rouge,Skin,Skin de Succuba - Chaperon Rouge
 7121,Blanche-Neige,Skin,Skin de Wraith - Blanche-Neige
 27121,Blanche-Neige,Skin,Skin de Wraith - Blanche-Neige
-20001040,Aventure Fantastique,Avatar Spécial,Avatar exclusif de l'événement Aventure Fantastique
+20001040,Aventure Fantastique,Avatar Spécial,Avatar Exclusif de l'événement Aventure Fantastique
 174,Lettre d'amour,Matériel d'Événement,"Matériel Spécial, à utiliser pour échanger des objets"
 175,Utopie d'Egret,Objet de l'Histoire,"
 L\'étrange livre trouvé dans la Grande Bibliothèque d\'Ulbricht de Valeera est maintenant revenu au silence. À part l\'œil sur la couverture, il ressemble à un livre normal. La plupart des pages du livre sont déchirées et ils ne reste que quelques pages intactes.
@@ -2674,7 +2674,7 @@ Humain/Monstre/Fée.
 4201002,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *15M, Jus d'EXP *15M, Ciseau de Cristal *12500, Plateau Repas *12500, Biscuit de Serviteur *7500, Biscuit Spiritueux *1000"
 4301001,Boîte de Skin,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Skin - Star de Baseball *1, Skin - Sprinteuse *1, Skin - Bourgeoise *1, Skin - Tenue d'été *1, Ticket de Costume *100"
 20001042,Avatar de Rina,Avatar Spécial,Avatar Spécial de Rina
-20001043,Sucette d'Halloween,Avatar Spécial,Avatar Exclusif d'Halloween 2020
+20001043,Sucette d'Halloween,Avatar Spécial,Avatar Exclusif de Halloween 2020
 182,Épée d'Halloween,Matériel d'Événement,"Matériel d'Événement, utilisable dans l'événement Citrouille d'Halloween"
 7130,Chat Cristallin,Skin,Skin de Chris -- Chat Cristallin
 27130,Chat Cristallin,Skin,Skin de Chris -- Chat Cristallin
@@ -2758,7 +2758,7 @@ Humain/Monstre/Fée.
 3569,Croix de Prêtre,Accessoire,
 4569,Bottes de Prêtre,Bas,
 183,Roulement Conique,Matériel d'Événement,"Matériel Spécial, utilisé pour échanger des objets dans l'événement de Technologie Supérieure"
-184,Fragments de Météorite,Matériel d'Événement,"Matériel Spécial, obtenable dans l'événement de Technologie Supérieure, utilisable pour améliorer l'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre"
+184,Fragment de Météorite,Matériel d'Événement,"Matériel Spécial, obtenable dans l'événement de Technologie Supérieure, utilisable pour améliorer l'équipement de Guerrier/Mage/Éclaireur/Assassin/Prêtre"
 7061,Halloween,Skin,Skin d'Ennmaya - Halloween
 27061,Halloween,Skin,Skin d'Ennmaya - Halloween
 7133,Jugement d'Amour,Skin,Skin de Lucifael - Jugement d'Amour
@@ -2774,7 +2774,7 @@ Humain/Monstre/Fée.
 186,Ballon Rose,Matériel d'Événement,"Matériel d'Événement, utilisable pour participer à l'événement Ballons Colorés"
 7134,Omerta,Skin,Skin d'Isabelle - Omerta
 27134,Omerta,Skin,Skin d'Isabelle - Omerta
-20001045,Avatar de Viviane,Avatar Spécial,Avatar Spécial de Viviane
+20001045,Avatar Exclusif de Viviane,Avatar Spécial,Avatar Exclusif de Viviane
 930192,Fragment de Viviane 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
 51013,Viviane,,
 651020,Viviane,,
@@ -2787,7 +2787,7 @@ Humain/Monstre/Fée.
 754013,Joan,,
 187,Jeton Spécial,Matériel d'Événement,À utiliser dans l'événement Recrutement Spécial
 188,Coupon Spécial,Matériel d'Événement,"Matériel Spécial, à utiliser pour échanger des objets"
-20001046,Avatar de Joan,Avatar Spécial,Avatar Spécial de Joan
+20001046,Avatar Exclusif de Joan,Avatar Spécial,Avatar Exclusif de Viviane
 4201004,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *180K, Jus d'EXP *180K, Ciseau de Cristal *150, Plateau Repas *150"
 4402001,Boîte d'Antiquité Orange,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Cristal du Destin *1, Ailes d'Icare*1, Cœur d'Épine *1, Ombrelle de Fusion *1, Bâton des Jumelles *1, Lame Enflammée *1, Lame d'Imagination *1, Hache Crénelée *1, Canne d'Anniversaire *1, Hikari *1"
 20001047,Avatar de Libération 5,Avatar Spécial,Libérer une Fille à 15 étoiles
@@ -2831,7 +2831,7 @@ Humain/Monstre/Fée.
 Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 4102010,Boîte de Fille 5 étoiles Ange/Démon,Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-20001048,Avatar Exclusif de Uriel & Izanami,Avatar Spécial,Avatar Exclusif de Uriel & Izanami. L'Aube ou le Crépuscule ?
+20001048,Avatar Exclusif de Uriel & Izanami,Avatar Spécial,Avatar Exclusif de Uriel & Izanami.
 193,Nœud papillon,Matériel d'Événement,Matériel d'Événement. À utiliser dans l'événement Maison de poupées
 7140,Livraison de Noël,Skin,Skin d'Uriel - Livraison de Noël
 27140,Livraison de Noël,Skin,Skin d'Uriel - Livraison de Noël
@@ -3005,8 +3005,8 @@ Humain/Monstre/Fée.
 4302005,Boîte de Skin (Le Périple de Lavli-S4),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 7156,Lotus du Lac,Skin,Skin de Papillon - Lotus du Lac
 27156,Lotus du Lac,Skin,Skin de Papillon - Lotus du Lac
-20001055,Avatar d'Ambre,Avatar Spécial,"Avatar Exclusif d'Ambre, obtenable dans l'événement Avis d'admission"
-20001056,Avatar de Vanessa,Avatar Spécial,Avatar Exclusif de Vanessa
+20001055,Avatar Exclusif d'Ambre,Avatar Spécial,Avatar Exclusif d'Ambre
+20001056,Avatar Exclusif de Vanessa,Avatar Spécial,Avatar Exclusif de Vanessa
 7157,Cœur Fondant,Skin,Skin de Chris - Cœur Fondant
 27157,Cœur Fondant,Skin,Skin de Chris - Cœur Fondant
 4101017,Boîte de Filles 5 étoiles,Boîte à choix,"
@@ -3051,7 +3051,7 @@ Humain/Monstre/Fée.
 53015,Estelle,,
 653022,Estelle,,
 753015,Estelle,,
-20001057,Avatar d'Estelle,Avatar Spécial,"Avatar Exclusif d'Estelle, obtenable dans l'événement Avis d'admission"
+20001057,Avatar Exclusif d'Estelle,Avatar Spécial,Avatar Exclusif d'Estelle
 224,Boîte de compensation de Pâques,Boîte Spéciale,Boîte de compensation dû à l'échec d'achat durant l'Événement Œuf Surprise de Pâques
 225,Poussière Magique,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement de Projet Feu d'Artifice"
 226,Lapin d'Artifice,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement de Projet Feu d'Artifice"
@@ -3103,7 +3103,7 @@ Humain/Monstre/Fée.
 7169,Amour Irrésistible,Skin,Skin de Fenrir - Amour Irrésistible
 27169,Amour Irrésistible,Skin,Skin de Fenrir - Amour Irrésistible
 234,Coupon d'Échange,Matériel d'Événement,"Matériel d'Événement, utilisable pour échanger des récompenses dans l'événement Cadeaux de la Rentrée."
-20001058,Avatar d'Éléanor,Avatar Spécial,"Avatar Exclusif d'Éléanor, obtenable dans l'événement Avis d'admission"
+20001058,Avatar Exclusif d'Éléanor,Avatar Spécial,Avatar Exclusif d'Éléanor
 233,Le 4ème Cadeau de la Rentrée,,Le 4ème Cadeau de la Rentrée sera débloqué après l'achat de ce pack
 235,Circuit Magique,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement de Secret du Temps"
 236,Pépite Temporelle,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement de Secret du Temps"
@@ -3118,7 +3118,7 @@ Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 4201008,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir d'obtenir une des récompenses suivantes：「Jus d'Exp *2M, Plateau Repas *1500, Ciseau de Cristal *1500, Biscuit de Serviteur *900, Biscuit Spiritueux *120」"
 4201009,Boîte de Ressources (Cité aux Trésors),Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：「Pièce d'Or *400K, Jus d'EXP *400K, Plateau Repas *300, Ciseau de Cristal *300, Biscuit de Serviteur *300, Biscuit Spiritueux *60, Cristal du Serviteur*30」"
-20001059,Avatar de Lys,Avatar Spécial,Avatar Exclusif de Lys
+20001059,Avatar Exclusif de Lys,Avatar Spécial,Avatar Exclusif de Lys
 7172,Doctoresse,Skin,Skin d'Ambre - Doctoresse
 27172,Doctoresse,Skin,Skin d'Ambre - Doctoresse
 4402003,Boîte d'Antiquité Orange,Boîte à choix,À utiliser pour choisir d'obtenir une Antiquité Orange (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
@@ -3191,7 +3191,7 @@ Humain/Monstre/Fée.
 52016,Térèsa,,
 652023,Térèsa,,
 752016,Térèsa,,
-20001060,Avatar de Térèsa,Avatar Spécial,Avatar Exclusif de Térèsa
+20001060,Avatar Exclusif de Térèsa,Avatar Spécial,Avatar Exclusif de Térèsa
 240,Fille Insolite Exclusive,Matériel d'Événement,
 7177,Roseaux Sauvages,Skin,Skin de Wu Kong - Roseaux Sauvages
 27177,Roseaux Sauvages,Skin,Skin de Wu Kong - Roseaux Sauvages
@@ -3236,7 +3236,7 @@ Humain/Monstre/Fée.
 4302010,Boîte de Skin (Le Périple de Lavli-S8),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 7183,Paradis Infernal,Skin,Skin d'Izanami - Paradis Infernal
 27183,Paradis Infernal,Skin,Skin d'Izanami - Paradis Inferna
-20001061,Avatar de Frexie & Angélina,Avatar Spécial,Avatar Exclusif de Frexie et Angélina
+20001061,Avatar Exclusif de Frexie & Angélina,Avatar Spécial,Avatar Exclusif de Frexie et Angélina
 20001062,Avatar Exclusif de 3ème Anniversaire,Avatar Spécial,Avatar Exclusif de 3ème Anniversaire
 4204010,Boîte de Ressources du Serviteur,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Biscuit de Serviteur *4000, Biscuit Spiritueux*500, Cristal du Serviteur*250"
 7184,Soirée Pompette,Skin,Skin de Kratos - Soirée Pompette
@@ -3331,7 +3331,7 @@ Humain/Monstre/Fée.
 3199999,測試用裝扮,123,123
 7193,Déesse des Sables,Skin,Skin de Lucifael - Déesse des Sables
 27193,Déesse des Sables,Skin,Skin de Lucifael - Déesse des Sables
-20001063,Avatar de Cassie,Avatar Spécial,Avatar Exclusif de Cassie
+20001063,Avatar Exclusif de Cassie,Avatar Spécial,Avatar Exclusif de Cassie
 253,Sable Arc-en-ciel,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Peinture de Sable"
 254,Coupon d'Été,Matériel d'Événement,"Matériel d'Événement, à utiliser pour échanger des Skins d'Été (Ne peut être conservé après la fin de l'événement)"
 7194,Cristal de Mer,Skin,Skin d'Ambre - Cristal de Mer
@@ -3406,8 +3406,8 @@ Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 4102025,Boîte de Fille Ange/Démon (Le Périple de Lavli-S10),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4302012,Boîte de Skin (Le Périple de Lavli-S10),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-20001066,Avatar de Monica,Avatar Spécial,Avatar Exclusif de Monica
-20001065,Avatar de Diana,Avatar Spécial,Avatar Exclusif de Diana
+20001066,Avatar Exclusif de Monica,Avatar Spécial,Avatar Exclusif de Monica
+20001065,Avatar Exclusif de Diana,Avatar Spécial,Avatar Exclusif de Diana
 265,Pièce Temporelle,Matériel d'Événement,"Matériel d'Événement, à utiliser pour tirer les Filles dans l'événement - Voyage Temporel"
 266,Coupon Temporel,Matériel d'Événement,"Matériel d'Événement, à utiliser pour échanger des récompenses dans l'événement - Voyage Temporel"
 267,Sphère de Mémoire,Matériel d'Événement,"Matériel d'Événement, à utiliser pour débloquer les histoires de Monica dans l'événement - Voyage Temporel"
@@ -3897,7 +3897,7 @@ Humain/Monstre/Fée.
 3100502,Katana (Samouraï),Objet,Objet de la Tenue - Samouraï
 3100503,Katana (Samouraï),Objet,Objet de la Tenue - Samouraï
 3100504,Katana (Samouraï),Objet,Objet de la Tenue - Samouraï
-268,Engrenage de conversion,Matériel d'Événement,"Matériel Spécial, à utiliser pour convertir la classe d'un ensemble d'équipement dans l'événement - Technologie Supérieure"
+268,Engrenage de Conversion,Matériel d'Événement,"Matériel Spécial, à utiliser pour convertir la classe d'un ensemble d'équipement dans l'événement - Technologie Supérieure"
 3100505,Objet (Saint-Esprit),Objet,Objet de la Tenue - Saint-Esprit
 3100506,Objet (Saint-Esprit),Objet,Objet de la Tenue - Saint-Esprit
 3100507,Objet (Saint-Esprit),Objet,Objet de la Tenue - Saint-Esprit
@@ -4033,7 +4033,7 @@ Humain/Monstre/Fée.
 653023,Ruben,,
 753016,Ruben,,
 8063,Étudiant Élite,Cadre d'Avatar,Obtenable après avoir atteint le Rang S+ dans l'événement - Test d'Admission (28 Jours)
-20001067,Avatar de Ruben,Avatar Spécial,Avatar Exclusif de Ruben
+20001067,Avatar Exclusif de Ruben,Avatar Spécial,Avatar Exclusif de Ruben
 264,Coupon de tirage x10,Coupon Spécial,"À utiliser pour tirer 10 fois la Capsule Avancée durant l'événement - Capsules de Nouvelle Fille.\nAttention : Cet objet disparaîtra après la fin de cet événement, veuillez l'utiliser à temps."
 283,Canne à pêche,Matériel d'Événement,"Matériel d'Événement, obtenable après l'utilisation de Gouvernail ou Gouvernail Avancé, à utiliser dans l'événement - À la pêche"
 4101029,Boîte de Fille (Le Périple de Lavli-S11),Boîte à choix,"
@@ -4112,7 +4112,7 @@ Humain/Monstre/Fée.
 4102027,Boîte de Fille Ange/Démon (Le Périple de Lavli-S12),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4302014,Boîte de Skin (Le Périple de Lavli-S12),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4302015,Boîte de Skin (Bouteille à la mer),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-20001068,Avatar d'Aurore,Avatar Spécial,Avatar Exclusif d'Aurore
+20001068,Avatar Exclusif d'Aurore,Avatar Spécial,Avatar Exclusif d'Aurore
 4101032,Boîte de Filles 5 étoiles,Boîte à choix,"
 À utiliser pour choisir d\'une Fille
 5 étoiles de la Maison Fantôme/
@@ -4370,7 +4370,7 @@ Humain/Monstre/Fée.
 7224,Phénix Ardent,Skin,Skin d'Angélina - Phénix Ardent
 27224,Phénix Ardent,Skin,Skin d'Angélina - Phénix Ardent
 303,Badge de Dinde,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Cadeaux de Thanksgiving"
-20001069,Avatar de Robbie,Avatar Spécial,Avatar Exclusif de Robbie
+20001069,Avatar Exclusif de Robbie,Avatar Spécial,Avatar Exclusif de Robbie
 6737,Revolver Trouble,Antiquité,
 6738,Revolver Trouble,Antiquité,
 6739,Revolver Trouble,Antiquité,
@@ -4797,7 +4797,7 @@ Humain/Monstre/Fée.
 3100990,Objet (Magie de Noël),Objet,Objet de la Tenue - Magie de Noël
 4202011,Boîte de Ressources Avancées,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or*2M, Jus d'EXP*2M, Plateau Repas*1500, Ciseau de Cristal*1500, Ticket du Distributeur Acancé*2, Biscuit de Serviteur*1000, Biscuit Spiritueux*125, Cristal du Serviteur*60, Ticket d'Arène*25, Soie Ordinaire*100, Soie Colorée*10 et Poussière Temporelle*30"
 4201020,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *400K, Jus d'EXP *400K, Plateau Repas *300, Ciseau de Cristal *300, Biscuit de Serviteur *180, Biscuit Spiritueux *20, Ticket d'Arène*4"
-20001071,Avatar de Maïa & Carmen & Bianca,Avatar Spécial,Avatar Exclusif de Maïa & Carmen & Bianca
+20001071,Avatar Exclusif de Maïa & Carmen & Bianca,Avatar Spécial,Avatar Exclusif de Maïa & Carmen & Bianca
 7230,Ailes Enneigées,Skin,Skin d'Uriel - Ailes Enneigées
 27230,Ailes Enneigées,Skin,Skin d'Uriel - Ailes Enneigées
 7231,Présent Scellé,Skin,Skin de Maïa - Présent Scellé
@@ -4879,3 +4879,9 @@ Humain/Monstre/Fée.
 311,Étoile de Noël,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Échange de Noël"
 7232,Papillons Mystérieux,Skin,Skin de Carmen & Bianca - Papillons Mystérieux
 27232,Papillons Mystérieux,Skin,Skin de Carmen & Bianca - Papillons Mystérieux
+7233,Flore Hivernale,Skin,Skin d'Aurore - Flore Hivernale
+27233,Flore Hivernale,Skin,Skin d'Aurore - Flore Hivernale
+7234,Vœu Divin,Skin,Skin de Giana - Vœu Divin
+27234,Vœu Divin,Skin,Skin de Giana - Vœu Divin
+312,Boîte du Nouvel An 2022,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：\nPièce d'Or*388k, Jus d'EXP *388k, Plateau Repas*388, Ciseau de Cristal*388, Biscuit de Serviteur*388, Biscuit Spiritueux*66"
+313,Boîte Avancée du Nouvel An 2022,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：\nJeton de Capsule Avancée*1, Sceau*1, Ticket Avancé du Distributeur*1, Fragment de Fille 5 étoiles*10, Essence*50"

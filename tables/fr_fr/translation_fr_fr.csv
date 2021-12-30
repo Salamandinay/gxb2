@@ -17,7 +17,7 @@ BATTLE_FORMATION_WIN,Bataille
 FRONT_ROW,Avant
 BACK_ROW,Arrière
 ARTIFACT_ATTR_LIMIT,Attributs : {1}
-GET_WAYS,Obtention :
+GET_WAYS,Moyen d'obtention :
 FORT_NAME_1,Illusion de Sarah
 FORT_NAME_2,Ile de la Lune
 FORT_NAME_3,Terre de la Peur
@@ -356,8 +356,8 @@ CHECKIN_TEXT04,Connexion
 FIGHT_EVENT,Commencer
 STAGE_FIGHTED,Terminé
 DUNGEON_USE_DRUG,Voulez-vous utiliser {1} ?
-AWAKE_UP,Éveillé
-SKILL_UP,Améliore les compétences
+AWAKE_UP,Éveillée
+SKILL_UP,Amélioration des Compétences
 TOWER_WINDOW,Test
 PROPHET_WINDOW,Recruter
 ALTAR_WINDOW,Transfert
@@ -716,7 +716,7 @@ MAIL_TEXT03,Supprimer
 MAIL_TEXT04,Répondre
 WISHING_POOL_GIFTBAG_TEXT01,Vous obtiendrez 1 point pour chaque utilisation du Distributeur Normal.\nObtenez le nombre nécessaire de points pour recevoir les récompenses correspondantes. L'événement peut être accompli 8 fois !
 GAMBLE_NO_RECORDS,Vide
-PUB_MISSION_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois, complétez les Jobs requis afin de recevoir les récompenses."
+PUB_MISSION_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois, finissez les Jobs requis afin de récupérer les récompenses."
 PUB_MISSION_WITH_STAR,Job {1} étoiles
 CHAT_RECORD_NUM,{1} messages
 TRIAL_ENTER_WINDOW_HELP,"1. Le Sanctuaire sera ouvert pendant 24 heures, après cette période vous devrez attendre 24 heures avant sa réouverture.|2. Les Filles supérieures au niveau 40 peuvent rejoindre le Sanctuaire Secret. Les Filles ne récupèrent pas leurs PV après chaque Bataille.|3. La puissance de l'ennemi sera modifiée en fonction de la puissance de vos 6 Filles les plus puissantes.|4. Les Filles n'ayant plus de PV ne peuvent plus continuer le Sanctuaire Secret.|5. Il y a 9 étapes dans le Sanctuaire Secret. Après avoir terminé l'étape 2, l'étape 4 et l'étape 7, vous pourrez choisir des bénédictions. À l'étape 8, toutes vos Filles pourront récupérer leurs PV. |6. Jusqu'à l'étape 7, vous pouvez combattre autant de fois que vous le pouvez pour compléter les étapes. À l'étape 9, vous n'aurez qu'une seule tentative, les récompenses d'étape 9 vous seront envoyées selon les dégâts que vous aurez infligés. |7. Les Livres Sacrés pourront être échangés contre les objets dans la Boutique du Sanctuaire."
@@ -1499,7 +1499,7 @@ PLOT_SAVE,Voulez-vous quitter le Rendez-vous ? (Le progrès sera sauvegardé)
 CANT_REPORT_SELF,Vous ne pouvez pas vous reporter
 PLOT_SKIP,Passer
 PLOT_CANT_SKIP,Veuillez d'abord arrêter le mode automatique
-VOW_SHOW_HAND,"Senpai, veuille tendre ta main~"
+VOW_SHOW_HAND,"Senpai, tends-moi ta main~"
 VOW_TIPS,Veuillez mettre la bague à son doigt
 VOW_OATH,"
 À compter de ce jour,
@@ -1878,7 +1878,7 @@ QUESTIONNAIRE_EMPTY,Vous n'avez rien écrit !
 QUESTIONNAIRE_TOO_LONG,Vous avez dépassé la limite !
 QUESTIONNAIRE_DIRTY,Contient des mots inacceptables
 QUESTIONNAIRE,Enquête
-EMOTICON_AWARD_TIPS,Méthode d'Obtention：{1}
+EMOTICON_AWARD_TIPS,Moyen d'obtention：{1}
 ACTIVITY_JAPAN_GIFTBAG_TEXT,Offre limitée pour célébrer la sortie de la version allemande du jeu : Linky 5 étoiles avec son Skin !
 IMG_GUIDE_CHALLENGE_1,Vous perdrez 1 [c][cc0011]Coupon de Défi[-][/c] chaque fois\nque vous perdez ou que vous réinitialisez.
 IMG_GUIDE_CHALLENGE_2,"
@@ -2119,7 +2119,7 @@ MAIL_SEND_MYSELF,Vous ne pouvez pas vous répondre
 QUESTIONNAIRE_NO_SELECT_NEW,Veuillez répondre à toutes les questions !
 LOAD_NEW_VERSION_RES_WINDOW,Mise à jour des ressources
 NEW_VERSION_RES_LOADING,Les ressources ont été mises à jour. Touchez confirmer pour redémarrer
-SKIN_TEXT18,Obtention :
+SKIN_TEXT18,Moyen d'obtention :
 SKIN_TEXT19,Graduez une Fille jusqu'à 6 étoiles
 SKIN_TEXT20,Libérez une Fille jusqu'à 10 étoiles
 SKIN_TEXT21,Evénement Exclusif
@@ -2345,7 +2345,7 @@ AWARD_TIPS1,"Senpai, j'ai collecté beaucoup de choses pour toi pendant ton abse
 AWARD_TIPS2,"Senpai, il y a déjà beaucoup trop de choses qui t'attendent, si tu ne viens pas nous n'aurrons bientôt plus de route pour aller en classe !"
 POTENTIALITY_BACK,Inverser
 POTENTIALITY_BACK_TITLE,Inverser
-POTENTIALITY_BACK_TEXT01,Voir
+POTENTIALITY_BACK_TEXT01,Aperçu
 POTENTIALITY_BACK_TEXT02,Inverser
 PUPPET_PARTNER_NO_CLICK,"Les poupées ne peuvent pas être éveillées, libérées ou équipées avec un Skin."
 POTENTIALITY_BACK_WINDOW_HELP,"1. Les Filles (sauf 6 étoiles) peuvent être Inversées et les Poupées ne peuvent pas être Éveillées, Échangées, Inversées ou Transférées, elles ne peuvent pas recevoir de cadeau ou être placées dans le Dortoir.|2. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le Sac.|3. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupées de la même Maison 5 étoiles*7 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupées de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*3|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*2 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*3 + Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*9|4. Après avoir inversé une Fille 1-5 étoile(s), vous recevrez toutes les ressources utilisées.|Après avoir inversé une Fille 7-15 étoiles, l'Inverse ne vous rendra pas les Pièces d'Or utilisées pour avoir augmenté le niveau de la Fille, cependant elle vous rendra une partie des Jus d'EXP et Plateaux Repas utilisés. Les Pièces d'Or et les Ciseaux de Cristal ne seront aussi que partiellement rendus selon le niveau du Cristal de la Fille Inversée.|5. Vous pouvez inverser les Filles (1-5 étoiles) gratuitement, cependant il vous faut utiliser respectivement 400/600/800 Gemmes pour inverser une Fille 7/8/9 étoiles. Pour inverser une Fille (10-15 étoiles), il vous faut utiliser 5 Diplômes pour l'effectuer.|6. La Faveur et le Serment seront rendus à l'une des copies rendues de cette Fille.|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne seront pas comptabilisées dans l'Evénement Mensuel."
@@ -2381,7 +2381,7 @@ NEW_PARTNER_WARMUP_NO_PARTNER_TIPS,Cette Fille n'est pas encore disponible
 GAIN_PARTNER_CV,Voix : {1}
 REPAIR_RESOURCES_BY_FORCE,"Les données du jeu sont endommagés, le client va vider le cache et redémarrer après 3 secondes."
 SCHOOL_GIFTBAG_EXCHANGE_TEXT05,La 4ème récompense du Cadeau de Noël sera débloqué après l'achat de celui-ci.
-SUMMON_EFFECT_SKIP,Voulez-vous passer l'animation ?
+SUMMON_EFFECT_SKIP,Voulez-vous passer cette animation ?
 HELP_TABLE_WINDOW,Aide
 CHAT_TAP_13,Français
 CHAT_GM_WINDOW,GM
@@ -2401,7 +2401,7 @@ ACTIVITY_VOTE_EMPTY,Aucune de Fille de cette Maison participe dans ce Match
 ACTIVITY_VOTE_RANK_WINDOW,Résultat du Match
 ACTIVITY_VOTE_NEW_NAV_TEXT1,Groupe A
 ACTIVITY_VOTE_NEW_NAV_TEXT2,Groupe B
-ACTIVTIY_NEWYEAR_BOX_TEXT,Collectez des Boîte de Nouvel An et Boîte de Luxe du Nouvel An dans le Butin de Campagne pour récupérer beaucoup de récompenses !
+ACTIVTIY_NEWYEAR_BOX_TEXT,Collectez les Boîtes du Nouvel An et Boîtes Avancées du Nouvel An dans le Butin de Campagne pour récupérer les récompenses !
 PARTNER_STATION_DIRECTION_C,Guide
 PARTNER_STATION_DIRECTION_E,Strategy
 PARTNER_STATION_LINEUP_C,Compo.
@@ -2543,7 +2543,7 @@ NEXT_STEP,Suivant
 PARTNER_STATION_SELECT_ENEMY_WINDOW_HELP,"1. Vous pouvez modifier la composition d'ennemi que vous souhaitez défier; | 2. Il y aura un personnage spécial qui pourra soigner tous ses PV après avoir subi des dégâts dans ce mode, cela vous aidera à mieux tester les dégâts que vous pouvez infliger."
 PLAYER_IS_IN_BLACK_LIST,Vous avez bloqué ce joueur
 ACTIVITY_PROPEL_GACHA,"Senpai, j'ai préparé un Pack Bonus de Capsules pour vous !"
-ACTIVITY_PROPEL_TALK_TEXT,"Senpai, viens vite\nessayer le pack que je\nt'ai préparé !"
+ACTIVITY_PROPEL_TALK_TEXT,"Senpai, viens vite\njeter un œil au pack que\nje t'ai préparé !"
 ACTIVITY_CV_CV_NAME0,Ésaü
 ACTIVITY_CV_CV_NAME1,Jacob
 ACTIVITY_CV_CV_NAME2,Ithil
@@ -2906,7 +2906,7 @@ FRIEND_ASSISTANT,Alliées
 THIS_WEEK_ASSIST_NUM,Aide aux ami(s)
 SELECT_ONE_ASSISTANT_IN,Choisir une Fille
 BATTLE_PASS_INSTANT_REWARD,Obtention directe
-NEW_TRIAL_MON,"Cet événement sera réinitialisé tous les mois, accomplissez les tâches requises afin de récupérer les récompenses."
+NEW_TRIAL_MON,"Cet événement sera réinitialisé tous les mois, complétez les tâches afin de récupérer les récompenses."
 ASSISTANT,Alliées
 ASSIST_NUM,Nombre d'Aide
 ASSIST_AWARD,Récompense
@@ -2963,7 +2963,7 @@ SPIRIT_EQUIP_HELP,"1. Toutes les Filles bénéficient des attributs supplémenta
 SPIRIT_UPGRADE_HELP,"1.Les Âmes peuvent être améliorées avec de l'Énergie Vitale, plus le niveau d'amélioration des Âmes est élevée, plus leurs attributs seront élevés. |2. L'Énergie Vitale est obtenable en décomposant les matériaux d'Âme ou en en décomposant des Âmes. 3. Une Âme améliorée reste dans son port, toute Âme dans un port est active. |4. Le niveau d'amélioration maximum d'une Âme est déterminée par l'Âme que vous portez. |5. Lorsque la limite d'amélioration maximum est inférieure au niveau d'amélioration du port, seul le niveau d'amélioration de l'Âme sera activé."
 GET_WAYS_TOP_WORDS,[c][121211]Obtention：[-][/c]{1}
 COLLECTION_SKIN_TIP_1,Bonus
-COLLECTION_SKIN_TIP_2,Obtention
+COLLECTION_SKIN_TIP_2,Moyen d'obtention
 HOUSE_ITEM_TIPS_4,Confort
 HOUSE_ITEM_TYPE_0,Tous
 BATTLE_PASS_SHOP_OFFSHELF,Restant
@@ -3611,7 +3611,7 @@ SHOP_SKIN_TEXT09,Skin Introuvable
 EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer la classe de l'Ensemble ?
 SUIT_SKILL_DETAIL_WINDOW_TITLE,Choisir la compétence
 SUIT_SKILL_DETAIL_WINDOW_BTN,Changer
-EQUIP_LEVELUP_HELP,"1. Durant l'événement vous pouvez améliorer vos équipements oranges 4/5/6 étoiles en utilisant des Pièces d'Or et des Gemmes. Chaque amélioration est limitée à une seule fois. |2. En utilisant ""Fragments de Météorite"", vous pourrez améliorer vos ensembles d'équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre. Plus le niveau des équipements que vous souhaitez améliorer est élevé, plus vous devez utiliser de ""Fragments de Météorite"". Cette opération peut être effectuée plusieurs fois. |3.En utilisant ""Engrenage de conversion"", vous pourrez également convertir vos ensembles d'équipement d'une classe contre une autre classe.|4. Complétez les tâches de l'événement - Examen d'Admission pour obtenir ""Roulement Conique"". |5. Vous pouvez échangez des ""Roulements Coniques"" contre des ""Fragments de Météorite"", des équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre ou des ""Engrenage de conversion"" dans le Magasin. |6. Vous ne pouvez qu'améliorer/utiliser/changer les équipements se trouvrant dans votre Sac. |7. Les ""Roulements Coniques"", les ""Fragments de Météorite"" et les ""Engrenage de conversion"" obtenus seront conservés après la fin de cet événement et pourront être utilisés lors du suivant."
+EQUIP_LEVELUP_HELP,"1. Durant l'événement vous pouvez améliorer vos équipements oranges 4/5/6 étoiles en utilisant des Pièces d'Or et des Gemmes. Chaque amélioration est limitée à une seule fois. |2. En utilisant les ""Fragments de Météorite"", vous pourrez améliorer vos ensembles d'équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre. Plus le niveau des équipements que vous souhaitez améliorer est élevé, plus vous devez utiliser de ""Fragments de Météorite"". Cette opération peut être effectuée plusieurs fois. |3. En utilisant les ""Engrenages de Conversion"", vous pourrez également convertir vos ensembles d'équipement d'une classe contre une autre classe.|4. Complétez les tâches de l'événement - Examen d'Admission pour obtenir les ""Roulements Coniques"". |5. Vous pouvez échangez des ""Roulements Coniques"" contre des ""Fragments de Météorite"", des équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre ou des ""Engrenages de Conversion"" dans le Magasin. |6. Vous ne pouvez qu'améliorer/utiliser/changer les équipements se trouvrant dans votre Sac. |7. Les ""Roulements Coniques"", les ""Fragments de Météorite"" et les ""Engrenages de conversion"" obtenus seront conservés après la fin de cet événement et pourront être utilisés lors du suivant."
 EQUIP_LEVELUP_TEXT_13,Matériel
 ACTIVITY_EASTER_EGG_GETWAY_WINDOW,Moyen d'obtention
 ACTIVITY_EXPLORE_CAMPUS_1,Bonus Alliées
@@ -3782,7 +3782,7 @@ ACTIVITY_YEAR_FUND_DATE,Validité：{1}.{2}-{3}.{4}
 ACTIVITY_YEAR_FUND_DAYS,Connexion：{1} Jour(s)
 ACTIVITY_YEAR_FUND_INNER_TITLE,Aperçu Partiel
 ACTIVITY_YEAR_FUND_AWARD_WINDOW,Aperçu
-ACTIVITY_YEAR_FUND_DES,Obtenez les récompenses pendant 30 jours après l'avoir acheté
+ACTIVITY_YEAR_FUND_DES,Obtenez les récompenses pendant 30 jours après l'avoir acheté !
 ACTIVITY_YEAR_FUND_TOTAL_CRYSTAL,Valeur Totale
 ACTIVITY_YEAR_FUND_AWARD_TIPS,Les objets non collectés peuvent être recollectés
 ACTIVITY_YEAR_FUND_LATE_AWARD,Collectable
@@ -3808,7 +3808,7 @@ ACTIVITY_DOLL_EXCHANGE_TIPS_HIGHSTAR,"Vous avez choisi les Filles 4 étoiles et 
 ALLHARMDEC,Résis. Totale
 VOW_TEXT_1,Passer ?
 VOW_TEXT_2,Revoir l'animation de serment ?
-ACTIVTIY_NEWYEAR_TITLE,{2}*{1} ouverte(s)
+ACTIVTIY_NEWYEAR_TITLE,Ouvrir {2} *{1}
 ACTIVTIY_NEWYEAR_COST,Récompenses
 NOTICE_GO,"[url=""event:NOTICE_GO""][c][f95e6a]Aller à[-][/c][/url]"
 OLD_SCHOOL_OPEN_LEV,Passer le Chapitre {1}
@@ -5562,7 +5562,7 @@ ARCTIC_EXPEDITION_GROUP_1_notNL,Comité de Discipline
 ARCTIC_EXPEDITION_GROUP_2_notNL,DEF
 ARCTIC_EXPEDITION_GROUP_3_notNL,Union Étudiante
 ACTIVITY_SOCKS_TASK_TEXT,Complétez les tâches pour collecter les Chaussettes de Noël !\nAccrochez-les près de la cheminée et le Père Noël viendra les remplir.
-ACTIVITY_SOCKS_CHANGE_HELP,"1. L'échange limité de Noël est ouvert, Senpai !|2. Choisissez le cadeau que vous souhaitez échanger, puis celui que vous souhaitez recevoir. Utilisez la quantité requise d'Étoile de Noël pour effectuer un échange.|3. Le cadeau que vous souhaitez échanger sera consommé directement de votre inventaire. Cependant, il sera conservé dans votre Collection et ainsi toujours disponible dans votre Liste de Fonds.|4. Moyen d'obtention d'Étoiles de Noël : Une Visite du Père Noël, Acheter avec des Gemmes (Étoiles de Noël*100 au maximum).|5. Après la fin de l'événement, les Étoiles de Noël non-utilisées seront automatiquement converties en Pièce d'Or, 5k chacune."
+ACTIVITY_SOCKS_CHANGE_HELP,"1. L'échange limité de Noël est ouvert, Senpai !|2. Choisissez le cadeau que vous souhaitez échanger, puis celui que vous souhaitez recevoir. Utilisez la quantité requise d'Étoile de Noël pour effectuer un échange. (les Filles à échanger doivent au niveau 1, 5 étoiles)|3. Le cadeau que vous souhaitez échanger sera consommé directement de votre inventaire. Cependant, il sera conservé dans votre Collection et ainsi toujours disponible dans votre Liste de Fonds.|4. Moyen d'obtention d'Étoiles de Noël : Une Visite du Père Noël, Acheter avec des Gemmes (Étoiles de Noël*100 au maximum).|5. Après la fin de l'événement, les Étoiles de Noël non-utilisées seront automatiquement converties en Pièce d'Or, 5k chacune."
 ACTIVITY_SOCKS_AWARD_TEXT,Obtenez des récompenses en accrochant les Chaussettes de Noël !
 ACTIVITY_SOCKS_GAMBLE_HELP,"1. Le Père Noël est enfin arrivé !|2. Obtenez un cadeau aléatoire du Père Noël et une Étoile de Noël, pour chaque Chaussette de Noël accrochée. Le niveau d'un cadeau sera amélioré après l'avoir obtenu à nouveau. Le niveau maximum d'un cadeau est de 3.|3. Obtenez des récompenses supplémentaires en fonction de la somme des niveaux de tous vos cadeaux reçus par le Père Noël.|4. Obtenez des récompenses de paliers après avoir accroché un certain nombre de Chaussette de Noël.|5. Moyen d’obtention des Chaussettes de Noël : Événement - Les Chaussettes de Noël, Courrier Quotidien, Cadeaux de Noël, Pack Exclusif de Noël, Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|6. Après la fin de l'événement, les Chaussettes de Noël non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
 ACTIVITY_SOCKS_GAMBLE_LEVEL,Niv. total : {1}
@@ -5594,3 +5594,9 @@ ACTIVITY_SOCKS_CHANGE_TEXT10,Veuillez sélectionner le Matériel d'échange et v
 ACTIVITY_SOCKS_CHANGE_TEXT11,Veuillez sélectionner le Matériel d'échange.
 A_AND_B,{1} et {2}
 ACTIVITY_SOCKS_CHANGE_TEXT12,Veuillez sélectionner le Matériel d'échange
+BAG_NUM_LIMIT_TEXT1,"Vous Stockage de {1} a atteint sa limite maximale, veuillez les utiliser."
+BAG_NUM_LIMIT_TEXT2,"Vous Stockage de {1} a atteint/ a bientôt atteint sa limite maximale, veuillez les utiliser à temps."
+ALTAR_INFO_5,Cette Fille ne peut pas être inversée.
+ALTAR_INFO_6,"Cette Fille n'a pas été améliorée, nul besoin de l'inverser."
+GAMBLE_JUMP_CARTOON,Ne plus afficher
+FRIEND_APPLY_LIMIT_TIPS,"Votre liste de demandes d'amis a atteint sa limite, veuillez la trier."

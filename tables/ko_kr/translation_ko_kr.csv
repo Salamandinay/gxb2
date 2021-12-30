@@ -1404,7 +1404,7 @@ TEN_STAR_EXCHANGE_TEXT01,같은 소녀를 선택해 주세요.
 TEN_STAR_EXCHANGE_TEXT02,교환하고 싶은 10성 소녀를 선택하세요!
 TEN_STAR_EXCHANGE_TEXT04,해당 소녀의 재료로 사용할 수 있는 소녀를 선택하세요.
 TEN_STAR_EXCHANGE_SUMMARY,5성 목표 소녀와 졸업 증서를 사용해 10성 소녀를 이 학부의 10성 소녀와 교환할 수 있습니다. 레벨과 장비도 저장됩니다!
-TEN_STAR_EXCHANGE_HELP,"1. 소지한 10성(혹은 10성 이상) 소녀를 이 학부의 다른 소녀와 교환할 수 있습니다.(동일한 레벨, 본체는 돌려주지 않습니다.)|2. 10성 교환을 실시하려면, 5부의 졸업 증서와 일정 수량의 5성 소녀가 필요합니다. 한계 돌파 레벨이 높을수록 필요한 5성 소녀의 수가 많아집니다.|3. 교환 완료 시 교환 전의 10성 소녀의 레벨, 랭킹, 장비, 크리스탈, 혼기, 한계 돌파 레벨은 새로운 10성 소녀에게 전승됩니다.|4. 새로운 소녀의 호감도는 사용된 5성 소녀 중 호감도가 가장 높은 소녀의 수치로 전승됩니다.|5. 사용된 5성 소녀 중에 ""서약 상태""의 소녀가 있으면 획득한 소녀도 ""서약 상태""가 됩니다. 교환한 원래 소녀 및 목표 5성 소녀의 교환에 사용한 서약 반지는 반환되지 않습니다.|6. 사용된 5성 소녀에 사용된 전학 자원은 반환됩니다.|7. 졸업 증서는 기간 한정 이벤트를 클리어하면 얻을 수 있습니다."
+TEN_STAR_EXCHANGE_HELP,"1. 소지한 10성(혹은 10성 이상) 소녀를 이 학부의 다른 소녀와 교환할 수 있습니다.(동일한 레벨, 본체는 돌려주지 않습니다.)|2. 10성 교환을 실시하려면, 5부의 졸업 증서와 일정 수량의 5성 소녀가 필요합니다. 한계 돌파 레벨이 높을수록 필요한 5성 소녀의 수가 많아집니다.|3. 교환 완료 시 교환 전의 10성 소녀의 레벨, 랭킹, 장비, 크리스탈, 혼기, 한계 돌파 레벨은 새로운 10성 소녀에게 전승됩니다.|4. 새로운 소녀의 호감도는 사용된 5성 소녀 중 호감도가 가장 높은 소녀의 수치로 전승됩니다.|5. 사용된 5성 소녀 중에 '서약 상태'의 소녀가 있으면 획득한 소녀도 '서약 상태'가 됩니다. '서약 상태'인 소녀를 교환될 경우 소녀의 '서약 상태'가 사라지며, 사용한 서약 반지는 반환되지 않습니다.|6. 사용된 5성 소녀에 사용된 전학 자원은 반환됩니다.|7. 졸업 증서는 기간 한정 이벤트를 클리어하면 얻을 수 있습니다."
 TEN_STAR_EXCHANGE_TEXT05,10성 {1}과 교환하시겠습니까?
 TEN_STAR_EXCHANGE_TEXT06,동명 소녀는 교환할 수 없습니다!
 TEN_STAR_EXCHANGE_TEXT03,교환하시겠습니까?
@@ -2357,7 +2357,7 @@ ACTIVITY_VOTE_EMPTY,이 조의 경기에서는 해당 소녀가 없습니다.
 ACTIVITY_VOTE_RANK_WINDOW,경기 결과
 ACTIVITY_VOTE_NEW_NAV_TEXT1,A조
 ACTIVITY_VOTE_NEW_NAV_TEXT2,B조
-ACTIVTIY_NEWYEAR_BOX_TEXT,"이벤트 기간 동안, 자동 모드에서 일정 확률로 2021 새해 스페셜 팩, 2021 새해 프리미엄 팩이 드롭됩니다. 팩을 열어 풍부한 보상을 획득하세요!"
+ACTIVTIY_NEWYEAR_BOX_TEXT,"이벤트 기간 동안, 자동 모드에서 일정 확률로 2022 새해 스페셜 팩, 2022 새해 프리미엄 팩이 드롭됩니다. 팩을 열어 풍부한 보상을 획득하세요!"
 PARTNER_STATION_DIRECTION_C,공략
 PARTNER_STATION_DIRECTION_E,Strategy
 PARTNER_STATION_LINEUP_C,라인업
@@ -5406,7 +5406,7 @@ TIME_CLOISTER_TEXT63,적군 속성
 TIME_CLOISTER_TEXT64,적
 ARCTIC_EXPEDITION_TEXT_20,노스랜드 원정대
 ARCTIC_EXPEDITION_TEXT_21,해당 시대가 아직 해제되지 않습니다.
-ARCTIC_EXPEDITION_TEXT_22,눈사태 과물-혼수상태|눈사태 과물-깨어났다!|눈사태 과물-무너졌다...
+ARCTIC_EXPEDITION_TEXT_22,눈사태 괴물-혼수상태|눈사태 괴물-깨어났다!|눈사태 괴물-무너졌다...
 ARCTIC_EXPEDITION_TEXT_23,전체 랭킹|진영 랭킹
 ARCTIC_EXPEDITION_TEXT_25,원정 시작 까지:
 ARCTIC_EXPEDITION_TEXT_26,원정 종료까지:
@@ -5539,3 +5539,9 @@ ACTIVITY_SOCKS_CHANGE_TEXT10,아이템을 전부 선택하셔야 교환하실 �
 ACTIVITY_SOCKS_CHANGE_TEXT11,교환할 아이템을 선택하세요.
 A_AND_B,{1}와(과) {2}
 ACTIVITY_SOCKS_CHANGE_TEXT12,교환할 보상을 선택하세요.
+BAG_NUM_LIMIT_TEXT1,{1}의 수량이 상한에 도달하였습니다. 사용하시길 바랍니다.
+BAG_NUM_LIMIT_TEXT2,{1}의 수량이 곧 상한에 도달할 거예요~ 앞으로도 아이템을 수령할 수 있도록 즉시 사용하시길 바랍니다.
+ALTAR_INFO_5,해당 소녀는 재입학할 수 없습니다.
+ALTAR_INFO_6,육성하지 않은 소녀가 재입학할 수 없습니다.
+GAMBLE_JUMP_CARTOON,애니메이션 스킵
+FRIEND_APPLY_LIMIT_TIPS,친구 신청 수량이 상한에 도달했습니다. 확인하시길 바랍니다.
