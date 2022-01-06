@@ -1611,9 +1611,9 @@ id,name,brief,desc
 27069,Chaleur Tentante,Skin,Scythe Skin Chaleur Tentante
 72,Marque d'Ange,Matériel d'Évènement,"Matériel Spécial, à utiliser pour obtenir des objets"
 73,Gravure de Rune,Matériaux,À utiliser pour échanger des Filles dans le Café
-940004,Fragment d'Élite 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Élite 5 étoiles autre que Ange/Démon
-940005,Fragment d'Élite Démon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Démon Élite 5 étoiles
-940006,Fragment d'Élite Ange 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Ange Élite 5 étoiles
+940004,Fragment d'Élite 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Fille Élite 5 étoiles autre que Ange/Démon
+940005,Fragment d'Élite Démon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Fille Démon Élite 5 étoiles
+940006,Fragment d'Élite Ange 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour obtenir une Fille Ange Élite 5 étoiles
 9105,Hexa · Choquée,Émoji de Tchat,「Choquée」 Émoji de Tchat d'Hexa
 9106,Valeera · Désagréable,Émoji de Tchat,「Désagréable」 Émoji de Tchat de Valeera
 7070,Bain Chaud,Skin,Succuba Skin Bain Chaud
@@ -4884,4 +4884,22 @@ Humain/Monstre/Fée.
 7234,Vœu Divin,Skin,Skin de Giana - Vœu Divin
 27234,Vœu Divin,Skin,Skin de Giana - Vœu Divin
 312,Boîte du Nouvel An 2022,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：\nPièce d'Or*388k, Jus d'EXP *388k, Plateau Repas*388, Ciseau de Cristal*388, Biscuit de Serviteur*388, Biscuit Spiritueux*66"
-313,Boîte Avancée du Nouvel An 2022,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：\nJeton de Capsule Avancée*1, Sceau*1, Ticket Avancé du Distributeur*1, Fragment de Fille 5 étoiles*10, Essence*50"
+313,Boîte Avancée du Nouvel An 2022,Boîte de Ressources,"À utiliser pour obtenir aléatoirement une des récompenses suivantes：Jeton de Capsule Avancée*1, Sceau*1, Ticket Avancé du Distributeur*1, Fragment de Fille 5 étoiles*10, Essence*50"
+314,Étiquette Dorée,Monnaie dans le Magasin des Galeries,À utiliser pour acheter des objets dans le Magasin des Galeries
+315,Étiquette Métallique,Monnaie dans le Magasin des Galeries,À utiliser pour acheter des objets dans le Magasin des Galeries
+4601018,Boîte de Tenue (Steampunk),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Steampunk. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601019,Boîte de Tenue (Aventurier),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Aventurier. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601020,Boîte de Tenue (Souffle du Dragon),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Démon. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601021,Boîte de Tenue (Aviateur),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément de la Tenue - Aviateur. (Touchez la loupe pour en savoir plus. Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+7235,Pétale Idyllique,Skin,Skin de Joan - Pétale Idyllique
+27235,Pétale Idyllique,Skin,Skin de Joan - Pétale Idyllique
+7236,Parfum Séduisant,Skin,Skin d'Ambre - Parfum Séduisant
+27236,Parfum Séduisant,Skin,Skin d'Ambre - Parfum Séduisant
+3000027,Test - Bonus 1,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Test (incluant Exploration du Vieux Campus).
+3000028,Test - Bonus 2,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Test (incluant Exploration du Vieux Campus).
+3000029,Patrouille - Bonus 1,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Patrouille.
+3000030,Patrouille - Bonus 2,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Patrouille.
+3000031,Équipe de Sécurité - Bonus 1,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Équipe de Sécurité.
+3000032,Équipe de Sécurité - Bonus 2,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Équipe de Sécurité.
+3000033,Examen des Maisons - Bonus 1,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Examen des Maisons.
+3000034,Examen des Maisons - Bonus 2,Bonus des Galeries,Augmente les attributs de vos Filles pendant 3 combats dans Examen des Maisons.

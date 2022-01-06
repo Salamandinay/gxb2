@@ -444,7 +444,7 @@ FORGET_PASSWORD,Mot de passe\noublié
 CANCEL,Annuler
 SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée."
 TOWER_WINDOW_HELP,"1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport à l'Étape du Test qu'ils ont atteint. |5. Atteignez l'Étape 200 pour débloquer la fonction ""Passer le combat""."
-DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit au minimum choisir 1 Fille pour la Patrouille(5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochine ouverture.(les attributs, les équipements et les potentiels ne seront pas mis à jour avant la prochaine ouverture)|3. Touchez pour voir les Informations des Ennemis et choisissez une Fille manuellement pour se battre contre les Ennemis.|4. Choisissez Combat Rapide pour passer le combat et voir directement les résultats ou choisissez Combat Normal pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV des Filles des deux côtés seront sauvegardés. Les Filles qui n'ont plus de PV ne peuvent plus participer dans les combats de l'événement.|6. Chaque combat dure 15 tours. L'équipe qui tue l'Ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un Objet.|8. Coffre：Obtient des récompenses aléatoires de Pièces d'Or ou de Gemmes ou bien d'autres.|9. Marchand：Cliquez sur le Marchand pour acheter des objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Balle. Cliquez sur Balle pour obtenir l'effet correspondant et cliquez sur Papeterie pour recevoir un bonus, l'utilisation de Papeterie est limitée pour chaque Fille.|11. Les Balles ne peuvent pas être préservées à la prochaine Patrouille.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème Étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 Étages d'un niveau (disponible pour chaque niveau), vous pouvez choisir le mode Auto la prochaine fois que la Patrouille sera disponible."
+DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit choisir au minimum 1 Fille dans son équipe de Patrouille (5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochaine ouverture (les attributs, équipements et potentiels ne seront pas mis à jour non plus).|3. Touchez pour voir les informations de l'ennemi et choisissez une Fille manuellement pour combattre les ennemis.|4. Cochez ""passer"" le combat et voir directement le résultat, ou décochez ""passer"" pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV restants des Filles de votre équipe et des Filles ennemis seront gardés. Les Filles qui n'ont plus de PV ne peuvent plus participer aux combats.|6. Chaque combat dure 15 tours. L'équipe qui tue l'ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un objet.|8. Coffre：Obtienez des récompenses aléatoires telles que Pièces d'Or, Gemmes ou bien d'autres.|9. Marchand：Cliquez sur le Marchand pour acheter des objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Boulette. Cliquez sur la Boulette pour obtenir l'effet correspondant et cliquez sur une des Papeteries pour recevoir un bonus, l'utilisation des Papeteries est limitée pour chaque Fille.|11. Les Boulettes ne peuvent pas être préservées jusque la prochaine Patrouille.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème Étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 Étages d'un niveau (disponible pour chaque niveau), vous pouvez choisir le mode Auto la prochaine fois que la Patrouille sera disponible."
 GET_WAY_EQUIP,Aller à {1}-{2}
 PARTNER_LIST_FULL,La liste des Filles est pleine. Vous pouvez augmenter le nombre d'emplacement disponible en augmentant votre niveau VIP ou en achetant des places supplémentaires. Voulez-vous acheter plus d'emplacement?
 REST_TIME,Restant
@@ -2612,7 +2612,7 @@ SUMMON_DROP_NAV1,Capsule d'Amitié
 SUMMON_DROP_NAV2,Capsule Normale
 MAKE_COFFEE_TEXT17,Vous avez terminé toutes les commandes
 MAKE_COFFEE_TEXT18,Commencer
-ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 1 Pièce à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Fragments de la Maison et vous aurez également une certaine chance d'obtenir des Fragments Chanceux.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 13%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 30%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 10%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante.|4. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Lorsque vous faites plusieurs vœux à la fois et obtenez 200 Fragments de la Maison correspondante, alors le surplus de Pièce à vœux vous sera retourné. Cependant, en raison des récompenses doublées et triplées, si vous avez obtenu plus de 200 Fragments d'une même Maison, alors le surplus de Fragments ne vous sera pas retourné.|6. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|7. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|8. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|9. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination, 10 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes(300 Pièces à vœux au maximum), Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack à Souhait et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
+ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 1 Pièce à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Fragments de la Maison et vous aurez également une certaine chance d'obtenir des Fragments Chanceux.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 13%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 30%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 10%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante.|4. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Lorsque vous faites plusieurs vœux à la fois et obtenez 200 Fragments de la Maison correspondante, alors le surplus de Pièce à vœux vous sera retourné. Cependant, en raison des récompenses doublées et triplées, si vous avez obtenu plus de 200 Fragments d'une même Maison, alors le surplus de Fragments ne vous sera pas retourné.|6. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|7. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|8. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|9. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination, 10 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes (200 Pièces à vœux au maximum), Courrier Quoitidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack à Souhait, Distribution Chanceuse et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
 ACTIVITY_PRAY_GROUP1,Maison Fantôme
 ACTIVITY_PRAY_GROUP2,Maison Humain
 ACTIVITY_PRAY_GROUP3,Maison Monstre
@@ -3329,7 +3329,7 @@ PET_STORY_UNLOCK,Déverouillé au palier {1} de Serviteur
 THE_PET_HAS_NOT_DATA,Aucune Histoire de ce Serviteur
 ACTIVITY_ENTRANCE_TEST_BUY_TILI_WINDOW,Acheter les Certificats
 ACTIVITY_ENTRANCE_TEST_TIME_TIPS,Réinit. à 10 Certificats dans ：
-ACTIVITY_ENTRANCE_TEST_TILI_HELP,"1. Lors de votre première ouverture de l'interface de l'événement, vous obtiendrez 15 Certificats de Test d'Admission. Chaque jour à 00:00 (UTC/GMT 0), votre nombre de Certificat de Test d'Admission sera réinitialisé à [c][cc0011]10[-][/c] tout au long de la durée de l'événement.|2. Vous pouvez également acheter des Certificats de Test d'Admission supplémentaires avec des Gemmes. La limite d'achat de Certificats de Test d'Admission supplémentaires est de [c][cc0011]20[-][/c] par jour."
+ACTIVITY_ENTRANCE_TEST_TILI_HELP,"1. Lors de votre première ouverture de l'interface de l'événement, vous obtiendrez 15 Certificats de Test d'Admission. Chaque jour à 00:00 (UTC/GMT 0), votre nombre de Certificat de Test d'Admission sera réinitialisé à [c][cc0011]10[-][/c] tout au long de la durée de l'événement.|2. Vous pouvez également acheter des Certificats de Test d'Admission supplémentaires avec des Gemmes. La limite d'achat de Certificats de Test d'Admission supplémentaires est de [c][cc0011]20[-][/c] par jour. Plus vous achetez de Certificats, plus de Gemmes seront consommées."
 ACTIVITY_ENTRANCE_TEST_TILI_FULL,Vous avez suffisamment de certificats
 ENTRANCE_TEST_UNEQUIP_TIP,Composition Incomplète
 ENTRANCE_TEST_NEW_HERO_TIPS,Nouvelle Fille
@@ -5329,7 +5329,7 @@ ACTIVITY_SECTRETTREASURE_TEXT29,Choisissez une direction
 ACTIVITY_SECTRETTREASURE_TEXT30,Trésors garantis après avoir exploré {1} fois
 ACTIVITY_SECTRETTREASURE_TEXT31,Passer l'animation
 DRESS_EDIT_TIPS_1,Voulez-vous enlever votre Tenue actuelle ?
-DRESS_EDIT_TIPS_2,Voulez-vous sauvegarder votre Tenue acutelle ?
+DRESS_EDIT_TIPS_2,Voulez-vous sauvegarder votre Tenue actuelle ?
 ACTIVITY_SECTRETTREASURE_TEXT32,Récompenses Ordinaires
 DRESS_EDIT_TIPS_3,Changer
 ACTIVITY_SECTRETTREASURE_TEXT33,Trésors
@@ -5456,7 +5456,7 @@ WISH_GACHA_TEXT12,Êtes -vous sûr de vouloir changer la Fille à Souhait ?
 ARCTIC_EXPEDITION_TEXT_24,Armée Défensive affaiblie !
 SALE_PRICE_TEXT01,67%% OFF
 SALE_PRICE_TEXT02,40%% OFF
-ACTIVITY_KEYBOARD_TEXT3,Vous pouvez accéder à la partition suivante qui vous permettra d'otenir des meilleures récompenses ! Voulez-vous encore choisir la partition acutelle ?
+ACTIVITY_KEYBOARD_TEXT3,Vous pouvez accéder à la partition suivante qui vous permettra d'otenir des meilleures récompenses ! Voulez-vous encore choisir la partition actuelle ?
 TIME_CLOISTER_TEXT63,Attributs d'Ennemi
 TIME_CLOISTER_TEXT64,Ennemis
 ARCTIC_EXPEDITION_TEXT_20,Expédition\nPolaire
@@ -5600,3 +5600,60 @@ ALTAR_INFO_5,Cette Fille ne peut pas être inversée.
 ALTAR_INFO_6,"Cette Fille n'a pas été améliorée, nul besoin de l'inverser."
 GAMBLE_JUMP_CARTOON,Ne plus afficher
 FRIEND_APPLY_LIMIT_TIPS,"Votre liste de demandes d'amis a atteint sa limite, veuillez la trier."
+SHOW_WINDOW_HELP,"1. Les Galeries de Tenues comptent 4 différentes Galeries (pour Test, Patrouille, Équipe de Sécurité et Examen des Maisons). Les Galeries seront disponibles une fois que leur fonctionnalité correspondante sera débloquée.|2. Retrouvez dans chaque Galerie 3 Vitrines différentes (Audace, Charme et Génie). Chaque Vitrine compte 5 emplacements, certains emplacements nécessiteront de remplir des conditions afin de pouvoir les débloquer.|3. Chaque emplacement débloqué peut afficher 1 élément de Tenue. Chaque élément exposé dans un emplacement doit respecter l'exigence requise.|4. Obtenez des points pour chaque tenue exposée dans vos Vitrines (exemple: une Tenue exposée dans l'emplacement d'Audace d'une Vitrine vous donnera 1 point pour chaque point d'Audace que cette Tenue possède).|5. Les récompenses seront calculées quotidiennement en fonction du total de vos points obtenus dans chaque Galerie respective. Les récompenses seront collectées automatiquement chaque fois que vous entrerez dans une Galerie. Elles peuvent être cumulées pendant 3 jours maximum."
+SHOW_WINDOW_SHOP_HELP,"1. Obtenez des Étiquettes Métalliques et des Étiquettes Dorées dans les récompenses quotidiennes des Galeries de Tenues que vous pourrez utilisez dans le Magasin des Galeries.|2. Utilisez les Étiquettes Dorées pour activer des bonus dans différentes fonctionnalités. 4 Couches de bonus maximum peuvent être activées en même temps. La limite d'achat de bonus sera réinitialisé chaque semaine.|3. Utilisez les Étiquettes Métalliques pour acheter des objets dans le Magasin des Galeries. La limite d'achat des objets dans Collection ne seront pas réintialisée, tandis que celle des objets dans Bazar sera réinitialisée chaque semaine."
+SHOW_WINDOW_TEXT01,Exposez vos Tenues dans les Galeries et montrez votre bon chic bon genre à toutes les Filles ! Soyez le meneur ou la meneuse des nouvelles tendances de l'Académie Yume !
+SHOW_WINDOW_TEXT02,nº{1}
+SHOW_WINDOW_TEXT03,Bloqué
+SHOW_WINDOW_TEXT04,Disponible après avoir débloqué {1}
+SHOW_WINDOW_TEXT05,Vitrine
+SHOW_WINDOW_TEXT06,Vitrine
+SHOW_WINDOW_TEXT07,Emplacement
+SHOW_WINDOW_TEXT08,Point
+SHOW_WINDOW_TEXT09,Récompenses Quotidiennes
+SHOW_WINDOW_TEXT10,Vitrine de l'Audace
+SHOW_WINDOW_TEXT11,Vitrine du Charme
+SHOW_WINDOW_TEXT12,Vitrine du Génie
+SHOW_WINDOW_TEXT13,Débloquer un emplacement
+SHOW_WINDOW_TEXT14,Emplacement débloqué !
+SHOW_WINDOW_TEXT15,Veuillez d'abord débloquer l'emplacement précédent de cette Vitrine
+SHOW_WINDOW_TEXT16,Cet emplacement ne peut uniquement exposer un élément de Tenue {1}.
+SHOW_WINDOW_TEXT17,Cet emplacement ne peut uniquement exposer un élément de Tenue {1} {2}.
+SHOW_WINDOW_TEXT18,Récompenses
+SHOW_WINDOW_TEXT19,Points actuels：
+SHOW_WINDOW_TEXT20,Niveau actuel：
+SHOW_WINDOW_TEXT21,Récompense actuelle :
+SHOW_WINDOW_TEXT22,Récompenses envoyées tous les jours à 00:00 (GMT 0)
+SHOW_WINDOW_TEXT23,Points de Vitrine：
+SHOW_WINDOW_TEXT24,Emplacement {1}
+SHOW_WINDOW_TEXT25,Point(s)：
+SHOW_WINDOW_TEXT26,Exposer
+SHOW_WINDOW_TEXT27,Élément exposé dans {1}
+SHOW_WINDOW_TEXT28,Cette Tenue est exposée dans l'emplacement {1} de cette Vitrine. Cette modification retirera cet élément de Tenue de son emplacement. Voulez-vous continuer ?
+SHOW_WINDOW_TEXT29,"Cette Tenue est exposée dans la {2} (Vitrine nº{1}, emplacement {3}). Cette modification retirera cet élément de Tenue de son emplacement. Voulez-vous continuer ?"
+SHOW_WINDOW_TEXT30,Magasin des Galeries
+SHOW_WINDOW_TEXT31,Bonus
+SHOW_WINDOW_TEXT32,Collection
+SHOW_WINDOW_TEXT33,Bazar
+SHOW_WINDOW_TEXT34,Limité：{1}
+SHOW_WINDOW_TEXT35,Inactif
+SHOW_WINDOW_TEXT36,Couche activée : {1}
+SHOW_WINDOW_TEXT37,Ce Bonus de {1} couche(s) expirera dans {2} combats.
+SHOW_WINDOW_TEXT38,Acheté
+SHOW_WINDOW_TEXT39,{1}er Palier
+SHOW_WINDOW_TEXT40,Débloqué après avoir obtenu {1} points
+SHOW_WINDOW_TEXT41,Achetable après avoir débloqué ce palier
+SHOW_WINDOW_TEXT42,Acheté
+SHOW_WINDOW_TEXT43,Points totaux
+SHOW_WINDOW_TEXT44,Obtenable dans {1}
+DUNGEON_NAME_1,Simple
+DUNGEON_NAME_2,Normal
+DUNGEON_NAME_3,Difficile
+DUNGEON_NAME_4,Extrême
+DUNGEON_NAME_5,Fantaisie
+DUNGEON_NAME_6,Cauchemar
+SHOW_WINDOW_TEXT45,1er Palier|2e Palier|3e Palier|4e Palier
+NEW_ARENA_ALL_SERVER_TEXT_27,Saison {1}
+WORLD_BOSS_SWEEP_TIPS2,Passer à l'Étape suivante automatiquement
+ACTIVITY_GIFTBAG_OPTIONAL_WINDOW_TEXT,Offre Personnalisée
+SHOW_WINDOW_TEXT46,"Impossible d'acheter, ce bonus ne peut cumuler que 4 couches."
