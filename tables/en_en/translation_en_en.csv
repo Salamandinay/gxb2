@@ -4902,7 +4902,7 @@ ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_5,Event ends in:
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_6,Reward calculation in:
 PUB_MISSION_AUTO_HELP2,"1. The ""Claim in Bulk"" feature helps you claim finished Internship Quests easier.|2. You can choose the star rank of the Internship Quests you would like to claim rewards from. Multiple star ranks can be selected at the same time. After the selection, completed Internship Quests of the corresponding star ranks will appear.|3. If a 6-Star or 7-Star Internship Quest is included in the Internship Quests you would like to claim, a window will pop up asking for your confirmation."
 ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
-WARMUP_ARENA_REACH_RANK_HELP,Benefits for Division {1}:|{2}|Benefits for Division {3}:|{4}|Benefits for Division {5}:|{6}
+WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: after reaching Division{1}:|{2}|after reaching Division {3}:|{4}|after reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
 WARMUP_ARENA_TASK_INFO_2,New Arrivals
@@ -5180,7 +5180,7 @@ TIME_CLOISTER_TEXT53,Challenge Card
 TIME_CLOISTER_TEXT54,Encounter Card
 NEW_ARENA_ALL_SERVER_TEXT_20,No reset chance left
 TIME_CLOISTER_MISC,Explore the\nSecrets of Time
-NEW_ARENA_ALL_SERVER_TEXT_21,Countdown:
+NEW_ARENA_ALL_SERVER_TEXT_21,Points Race ends in：
 NEW_ARENA_ALL_SERVER_TEXT_22,Champion List
 NEW_ARENA_ALL_SERVER_TEXT_23,Champion
 NEW_ARENA_ALL_SERVER_TEXT_24,Single Elimination hasn't begun!
@@ -5593,7 +5593,7 @@ SHOW_WINDOW_TEXT39,Stage {1}
 SHOW_WINDOW_TEXT40,Unlock after total score reaches {1}
 SHOW_WINDOW_TEXT41,Available after this Stage is unlocked
 SHOW_WINDOW_TEXT42,Purchased
-SHOW_WINDOW_TEXT43,Show total score
+SHOW_WINDOW_TEXT43,Total Score
 SHOW_WINDOW_TEXT44,Collectable In {1}
 DUNGEON_NAME_1,Easy
 DUNGEON_NAME_2,Normal
@@ -5606,3 +5606,10 @@ NEW_ARENA_ALL_SERVER_TEXT_27,Season {1}
 WORLD_BOSS_SWEEP_TIPS2,Auto Challenge the next Stage
 ACTIVITY_GIFTBAG_OPTIONAL_WINDOW_TEXT,Customized Supply
 SHOW_WINDOW_TEXT46,You already have 4 stacks of this buff activated!
+ACTIVITY_FISH_AUTO,Auto
+ACTIVITY_FISH_AUTO_TEXT,Please choose your Fishing times
+WORLD_BOSS_SWEEP_TEXT01,Raiding…
+WORLD_BOSS_SWEEP_TEXT02,Stop
+WORLD_BOSS_SWEEP_TEXT03,Confirm
+WORLD_BOSS_SWEEP_TEXT04,The raid is over! You challenged {1} time(s)
+WORLD_BOSS_SWEEP_TEXT05,Confirm to stop the raid now?

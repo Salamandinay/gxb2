@@ -4908,7 +4908,7 @@ ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_5,カウント終了後にイベント終了�
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_6,カウント終了後に精算：
 PUB_MISSION_AUTO_HELP2,1.「一括受取」機能で、完了済ミッションのボーナスを楽に受け取れます。|2.画面下の星マークを1つ、または複数タップすると、指定の星ランクの完了済ミッションをフィルタリングできます。|3.チェックしたミッションのうち、星6または星7のミッションについては、再確認後に対応するボーナスを獲得できます。
 ENTRANCE_TEST_LEVEL_UP_NEED,ランクUP条件
-WARMUP_ARENA_REACH_RANK_HELP,{1}ランク到達後：|{2}|{3}ランク到達後：|{4}|{5}ランク到達後：|{6}
+WARMUP_ARENA_REACH_RANK_HELP,1.本イベントは、B、A、S、S+の4つのランクがあります。自分と同じランクの他のプレイヤーにのみ挑戦できます。イベント開始時、全てのプレイヤーはBランクからスタートします。|2.毎日日本時間朝9時に、所属しているランクでの順位割合がランクUP条件に満たしている場合は、ランクが1つ上がります。満たしていない場合は、所属しているランクに留まります。|3.各ランク紹介：|ランク{1}に達したあと：|{2}|ランク{3}に達したあと：|{4}|ランク{5}に達したあと：|{6}|4.イベント中に表示される順位は、先輩が所属しているランクでの順位となります（ランクUPシステムは、毎日日本時間朝9時に精算を行い、各ランクのプレイヤー数が変化する可能性があります。もし先輩がランクUPできていない場合、2日目のスタート順位割合が前日の割合より多くなっている可能性があります）。
 ENTRANCE_TEST_LEVEL_UP_ING,ランク確定中……
 WARMUP_ARENA_TASK_INFO_1,新入生チャレンジ
 WARMUP_ARENA_TASK_INFO_2,カオスの神&双子の怪盗
@@ -5608,3 +5608,10 @@ NEW_ARENA_ALL_SERVER_TEXT_27,シーズン {1}
 WORLD_BOSS_SWEEP_TIPS2,自動で次のステージに挑戦
 ACTIVITY_GIFTBAG_OPTIONAL_WINDOW_TEXT,カスタム補給
 SHOW_WINDOW_TEXT46,このバフは既にスタック上限（4スタック）に達していますので、購入できません。
+ACTIVITY_FISH_AUTO,自動で釣る
+ACTIVITY_FISH_AUTO_TEXT,釣る回数を選択してください。
+WORLD_BOSS_SWEEP_TEXT01,スキップ中……
+WORLD_BOSS_SWEEP_TEXT02,中断
+WORLD_BOSS_SWEEP_TEXT03,確認
+WORLD_BOSS_SWEEP_TEXT04,スキップ終了！合計{1}回
+WORLD_BOSS_SWEEP_TEXT05,現在のスキップを中断しますか？
