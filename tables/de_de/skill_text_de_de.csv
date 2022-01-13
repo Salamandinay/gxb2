@@ -10039,3 +10039,145 @@ Kontrolleffekt. Während das Ziel eingefroren ist, kann es seine aktive Fertigke
 503114,Himmelsinsel,Krit. I,Erhöht die Krit. Rate von allen Gegnern um 30%
 503115,Himmelsinsel,Krit. II,Erhöht die Krit. Rate von allen Gegnern um 60%
 502111,Himmelsinsel,Stern und Mond,Das von der feindlichen Vivian zugefügte Stern- & Mondzeichen fügt nur 1% des von ihr erlittenen Schadens zu.
+5201800,Hermes,Standardangriff,Standardangriff
+65202500,Hermes,Standardangriff,Standardangriff
+75201800,Hermes,Standardangriff,Standardangriff
+5201801,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 240% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 30% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 60% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65202501,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 480% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 40% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 70% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+75201801,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1200% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 80% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+5201802,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 15%, den Angriff um 15%, die Kontrollimmunitätsrate um 10%, den Speed um 20 und senkt den erlittenen kritischen Schaden um 15%."
+65202502,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 20%, den Angriff um 25%, die Kontrollimmunitätsrate um 20%, den Speed um 40 und senkt den erlittenen kritischen Schaden um 20%."
+65202512,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 60 und senkt den erlittenen kritischen Schaden um 25%."
+75201802,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 60 und senkt den erlittenen kritischen Schaden um 25%."
+5201803,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 100% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 30% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 10% und deren Schäden durch kritische Treffer um 10% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65202503,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 200% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 40% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 20% und deren Schäden durch kritische Treffer um 15% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65202513,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 300% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+75201803,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 300% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+5201804,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 20% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 20% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 20% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65202504,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 30% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 30% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 25% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65202514,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 40% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 40% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+75201804,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 40% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 40% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018011,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1260% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 80% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018012,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1320% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 80% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018013,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1380% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 52% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 82% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018014,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1440% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 52% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 82% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018015,Hermes,Macht des Geldes,"
+Alles ist eine Frage des Geldes. Fügt den 3 Gegnern mit den höchsten Angriffswerten Schaden in Höhe von 1500% ihres AW zu und gibt sich selbst einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 55% des gesamten zugefügten Schadens. Wenn sie ihre aktive Fertigkeit einsetzt und gleichzeitig einen [c][e28002]Schutzwall[-][/c] um sich hat, so wird ihr Angriff garantiert ein kritischer Treffer und sie fügt einem weiteren zufälligen Gegner einen Schaden in Höhe von 85% der aktuellen HP (des Ziels) zu (max. in Höhe von 5000% von Hermes AW).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018021,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 62 und senkt den erlittenen kritischen Schaden um 25%."
+752018022,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 64 und senkt den erlittenen kritischen Schaden um 25%."
+752018023,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 66 und senkt den erlittenen kritischen Schaden um 25%."
+752018024,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 25%, den Angriff um 35%, die Kontrollimmunitätsrate um 30%, den Speed um 68 und senkt den erlittenen kritischen Schaden um 25%."
+752018025,Hermes,Maximale Gewinne,"Profitorientiertes Arbeiten - das ist mein Motto! Erhöht die HP um 28%, den Angriff um 38%, die Kontrollimmunitätsrate um 30%, den Speed um 70 und senkt den erlittenen kritischen Schaden um 25%."
+752018031,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 306% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018032,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 312% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 50% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018033,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 318% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 52% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018034,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 324% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 52% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 30% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018035,Hermes,All-in,"
+Die Rendite dieses Investments übersteigt jegliche Vorstellungskraft! Der Standardangriff greift nun die 3 Gegner mit den höchsten Angriffswerten an und fügt ihnen Schaden in Höhe von 330% von Hermes AW zu. Gleichzeitig erhält sie einen [c][e28002]Schutzwall[-][/c], mit einem Abwehrwert in Höhe von 55% des gesamten zugefügten Schadens und senkt den Angriff der Gegner um 33% und deren Schäden durch kritische Treffer um 20% (beides für 4 Runden lang).
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018041,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 41% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 41% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018042,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 42% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 42% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018043,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 43% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 43% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018044,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 44% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 44% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 30% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+752018045,Hermes,Trügerisches Angebot,"
+Eine gute Geschäftsfrau hat ihren Reichtum stets im Griff und wird nicht zu einer Marionette des Geldes. Zum Ende der Runde fügt sie einem zufälligen Gegner Schaden in Höhe von 45% der akt. HP des Ziels zu (max. in Höhe von 2500% von Hermes AW) und dem Gegner mit den niedrigsten HP Schaden in Höhe von 45% der bereits verlorenen HP des Ziels zu (max. in Höhe von 2500% von Hermes AW). Zudem erhält sie einen [c][e28002]Schutzwall[-][/c] mit einem Abwehrwert in Höhe von 33% des verursachten Schadens.
+
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."

@@ -187,7 +187,7 @@ PUB_START_MISSION_6,Cette Fille a déjà été déployée !
 PUB_LOCK_MISSION,Un Job en cours ne peut pas être débloqué !
 SKILL_UNLOCK_DESC,Débloqué au Grade {1}
 ATTR_UP,Amélioration d'Attribut :
-TOP_LEV_UP_TO,Niveau max monté à :
+TOP_LEV_UP_TO,Niveau Max monté à :
 TREASURE_NOT_OPEN,Débloqué au Niv. 40
 GET_FROM_STAGE,Disponible à l'étape {1}
 HAS_NOT_EQUIP,Pas encore d'équipement…
@@ -208,7 +208,7 @@ GAMBLE_COIN_NOT_ENOUGH,Tickets du Distributeur insuffisants !
 GAMBLE_VIP_NOT_ENOUGH,"Vous devez être VIP Niv. {1} ou Joueur Niv. {2}, voulez-vous gagner de l'EXP VIP en achetant des Gemmes ?"
 CRYSTAL_NOT_ENOUGH,"Gemmes insuffisantes, voulez-vous en acheter ?"
 GAMBLE_BUY_TITLE,Acheter un ticket de distributeur
-GAMBLE_ITEM_RATE,Chances : {1}%%
+GAMBLE_ITEM_RATE,Taux d'obtention : {1}%%
 GAMBLE_RECORD_ITEM,{1} a obtenu [c][{2}]{3} x{4}[-][/c]
 GAMBLE_RECORD_TITLE,Historique
 BUY,Acheter
@@ -329,7 +329,7 @@ DAILY_QUIZ_BUY_TIPS_3,Achat réussi !
 DAILY_QUIZ_FIGHT_TIPS,Vous avez fini tous vos quiz aujourd'hui !
 NEXT_BATTLE,Suivant
 BACKPACK_WINDOW,Sac
-SKIP_BATTLE,Passer la bataille ?
+SKIP_BATTLE,Voulez-vous passer la bataille ?
 ALTAR_TITLE,Transférer
 ACTIVITY_WINDOW,Foire
 TOWER_TEXT01,Ennemis
@@ -735,7 +735,7 @@ BATTLE_LOAD_ERROR,Chargement échoué !
 GUIDE_ERROR,Nous avons rencontré un petit problème. Veuillez rafraîchir le jeu !
 SHELTER_GIFTBAG_HELP,"1. Durant l'événement, utilisez le nombre de Filles, Pièces, Gemmes et autres objets nécessaires pour recevoir des récompenses spéciales !|2. Chaque mission ne peut être complétée qu'une seule fois !|3. Les récompenses seront envoyées directement dans votre Sac.|4. Les Fragments de Filles et les Jus d'EXP ne seront pas rendus !"
 SHELTER_GIFTBAG_HELP_TITLE,Aide
-SHELTER_GIFTBAG_INPUT,Choisissez les matériaux
+SHELTER_GIFTBAG_INPUT,Choisissez les Filles Matérielles
 SHELTER_GIFTBAG_TITLE,Tâche
 SHELTER_ACCEPT_MISSION,Accepter
 BATTLE_ARENA_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois :\nUne victoire donne 2 points, une défaite donne 1 point."
@@ -933,7 +933,7 @@ CHAT_TAP_7,Recruter
 CHAT_TAP_8,Privé
 ARENA_GIFTBAG_TEXT02_WITH_POINT,Arène : {1} Points
 ARENA_GIFTBAG_TEXT03_WITH_POINT,Arène d'Élite : {1} Points
-CONDITION,Besoins
+CONDITION,Condition
 ONLINE,En ligne
 PROPHET_TEXT01,Recruter
 CV,Voix :
@@ -968,7 +968,7 @@ BUY_TIME_TITLE,Nombre d'Achats
 SETTING_UP_PRIVACY,Politique de Confidentialité
 SETTING_UP_FEEDBACK_PROMPT,Veuillez entrez votre commentaire
 WORLD_BOSS_FIGHT,Commencer
-WORLD_BOSS_BUY_TITLE,Acheter des Cartes Pratiques
+WORLD_BOSS_BUY_TITLE,Acheter les Cartes Pratiques
 WORLD_BOSS_SWEEP_TITLE,Raid
 ACTIVITY_WORLD_BOSS_TITLE,Ennemi
 WORLD_BOSS_SWEEP_TIPS,Combien de fois voulez-vous faire le Raid ?
@@ -1116,7 +1116,7 @@ REST_ZONE,Aire de repos
 MATCH_ZONE,Zone de compétition
 GUILD_TEAM,Équipe de la Guilde
 GUILD_WAR_NO_MATCH_TEAM,Aucune Guilde trouvée
-GUILD_WAR_HELP,"Le Terrain de Sport est organisé en saison. Chaque saison dure une semaine.|Chaque saison est divisée en 3 parties：Les Qualifications, la Finale et la Phase de repos.||Qualification|1. Temps : du Lundi 00:00 au Vendredi 00:00 (GMT 0)|2. Inscription : Le Chef de la Guilde et les Seconds peuvent inscrire votre Guilde pour la phase de Qualification.|3. Condition Requise : La Guilde doit être Niv.12 ou plus. Chaque Guilde doit envoyer entre 10 et 15 équipes. Chaque membre ne peut déployer qu'une équipe.|4. Le Chef et les Seconds peuvent arranger l'ordre des membres.|5. Le Chef et les Seconds peuvent cacher les informations de 3 équipes maximum.|6. Le Chef et les Seconds peuvent chercher des adversaires toutes les 10 secondes.|7. Chaque Bataille consume 1 point d'Endurance de la Guilde. Vous recevez 1 point d'Endurance toutes les 3 heures.|8. Chaque équipe peut se battre au maximum 3 fois.|9. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduit et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient mortes.|10. L'équipe qui l'emporte gagne des points individuels pour chaque victoire. La Guilde ayant eu le plus de victoire gagne des points.|11. Les Guildes sont classées par rapport au nombre de points obtenus.|12. Les récompenses seront envoyées par courrier selon le Classement de votre Guilde.||La Finale|1. Le Top 16 des Guildes s'étant qualifiées entreront directement en Finale. Les Guildes s'affronteront selon leurs classements .|2. Phase de Préparation : Samedi de 00:00 à 16:00; Phase de Compétition : Samedi de 16:00 à 18:00.|3. Les Avatars Spéciaux seront enlevés lorsqu'une nouvelle saison débutera.|4. À la fin de la compétition, les récompenses vous seront envoyées par courrier selon le Classement de votre Guilde.|5. Récompenses de Classement de la Finale :|1ère place : 4,000 Pièces de Guilde et 1,500,000 Pièces d'Or|2ème place : 3,000 Pièces de Guilde et 1,000,000 Pièces d'Or|3ème et 4ème places : 2,000 Pièces de Guilde et 750,000 Pièces d'Or|5ème à 8ème places : 1,500 Pièces de Guilde et 500,000 Pièces d'Or|9ème à 16ème places : 1,000 Pièces de Guilde et 250,000 Pièces d'Or.||Phase de Repos|Durant la Phase de Repos, les joueurs peuvent voir l’Historique de Bataille de la Finale.||Attention : Si vous quittez la Guilde durant la saison, vous n’obtiendrez pas de récompenses et vous ne pourrez pas participer avant la prochaine saison."
+GUILD_WAR_HELP,"Le Terrain de Sport est organisé en saison.|Chaque saison dure 1 semaine.|Chaque saison est divisée en 3 phases：Les Qualifications, la Finale et la Phase de Repos.||Les Qualifications|1. Durée : du Lundi 00:00 au Samedi 00:00 (GMT 0)|2. Inscription : Le Chef et les Seconds peuvent inscrire votre Guilde pour la phase de Qualification.|3. Condition Requise : Niveau de la Guilde : Niv.12 ou plus.|Nombre d'équipes à inscrire : entre 10 et 15 équipes.|4. Le Chef et les Seconds peuvent arranger l'ordre des équipes à combattre.|5. Le Chef et les Seconds peuvent cacher les informations de 3 équipes au maximum.|6. Le Chef et les Seconds peuvent chercher des adversaires toutes les 10 secondes.|7. Chaque bataille consume 1 point d'Endurance de la Guilde. Votre Guilde recevra 1 point d'Endurance toutes les 3 heures.|8. Chaque équipe peut se battre au maximum 3 fois.|9. La bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues.|10. L'équipe qui l'emporte gagne des points individuels pour chaque victoire. La Guilde ayant eu le plus de victoire gagne des points.|11. Les Guildes sont classées par rapport au nombre de points obtenus.|12. Les récompenses seront envoyées par courrier selon le Classement de votre Guilde.|13. À l'exception du chef et du second, l'ordre des équipes est affiché aléatoirement pour tous les joueurs.||La Finale|1. Le Top 16 des Guildes s'étant qualifiées entreront directement en Finale. Les Guildes s'affronteront selon leurs classements .|2. Phase de Préparation : Samedi (de 00:00 à 16:00, GMT) et Phase de Compétition : Samedi (de 16:00 à 18:00 GMT).|3. Les Avatars Exclusifs seront enlevés lorsqu'une nouvelle saison débutera.|4. À la fin de la compétition, les récompenses seront envoyées par courrier selon le Classement de votre Guilde.|5. Récompenses de Classement de la Finale :|1ère place : 4,000 Pièces de Guilde et 1,500,000 Pièces d'Or|2ème place : 3,000 Pièces de Guilde et 1,000,000 Pièces d'Or|3ème et 4ème places : 2,000 Pièces de Guilde et 750,000 Pièces d'Or|5ème à 8ème places : 1,500 Pièces de Guilde et 500,000 Pièces d'Or|9ème à 16ème places : 1,000 Pièces de Guilde et 250,000 Pièces d'Or.||La Phase de Repos|Durant la Phase de Repos, les joueurs peuvent voir les historiques de bataille de la Finale.||Attention : Si vous quittez la Guilde durant la saison actuelle, vous n’obtiendrez pas de récompenses de cette saison et vous ne pourrez plus y participer avant la prochaine saison."
 GUILD_WAR_FORMATION,Équipe de la Guilde
 GUILD_WAR_FORMATION_WINDOW,Information de l'équipe
 GUILD_WAR_SWITCH_TEAM_WINDOW,Choisissez l'équipe à changer
@@ -1811,7 +1811,7 @@ DAILY_QUIZ_DESC,Il y a des niveaux plus élevés de récompense à obtenir. Touc
 DAILY_QUIZ_FIGHT_FIRST,Veuillez cliquer sur l'image à gauche pour changer le niveau du Quiz
 SENIOR_SCROLL_IF_BUY,プレミアムガチャコインが足りません、購入しますか？
 TOWER_LEVEL,Étape {1}
-MAKE_CAKE_HELP,"1. Vous pouvez utiliser {1} afin d'échanger des récompenses dans l’interface de l’événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l’interface de l’événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Vous ne pourrez échanger les récompenses qu'au 15ème jour.|5. Moyen d'obtention de {1}：Butin de la Bataille Automatique, achat de Pack de Grande Valeur, de Pack Surprise et de Pack Surprise de Skin, événement de Capsules de Nouvelle Fille (du 01/10 au 07/10) et Examen d'admission (du 08/10 au 14/10). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en pièces d'or, 1 {1} contre 20k, et distribuées par courrier."
+MAKE_CAKE_HELP,"1. Vous pouvez utiliser {1} afin d'échanger des récompenses dans l’interface de l’événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l’interface de l’événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Lors du 15ème jour, vous ne pourrez plus obtenir {1}, cependant vous pourrez toujours échanger vos récompenses. |5. Moyen d'obtention de {1}：Butin de Campagne, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Offres de Lavli, Le périple du Lavli (du 14/01 au 20/01), et Capsules de Nouvelle Fille (du 21/01 au 27/01). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en Pièces d'Or, 1 {1} contre 20k, et distribuées par courrier."
 MAKE_CAKE_ITEM_TEXT1,1er
 MAKE_CAKE_ITEM_TEXT2,2ème
 MAKE_CAKE_ITEM_TEXT3,3ème
@@ -2335,7 +2335,7 @@ SHOP_SKIN_TEXT04,Prix ↑
 SHOP_SKIN_TEXT05,Prix ↓
 SHOP_SKIN_TEXT06,Tous les Skins
 SHOP_SKIN_TEXT07,Skins Achetables
-SHOP_STREET_TEXT01,"Ce magasin n'a pas été encore ouvert, veuillez patienter !"
+SHOP_STREET_TEXT01,"Ce magasin n'a pas encore ouvert, veuillez patienter~"
 SHOP_STREET_TEXT02,Ouvre bientôt
 ACTIVITY_NAV_TEXT0,Exclusif
 ACTIVITY_NAV_TEXT1,Événement Mensuel
@@ -2626,7 +2626,7 @@ ACTIVITY_PRAY_COMMIT_TEXT02,Entrez le nombre de Pierre：
 ACTIVITY_PRAY_CONFIRM,Confirmer
 ACTIVITY_PRAY_CHANGE,Changer
 ACTIVITY_PRAY_TIPS02,Veuillez choisir 5 Filles !
-ACTIVITY_PRAY_BUY,Acheter des Pièces à vœux
+ACTIVITY_PRAY_BUY,Acheter les Pièces à vœux
 TEST_SERVER_FEEDBACK_TIPS,Vous pouvez nous donner à nouveau vos conseils après {1} ~
 TEST_SERVER_FEEDBACK_ICON,Conseil
 TEST_SERVER_MISSION_TEXT,"Pendant l'événement de Beta Testeur, en accomplissant les tâches données, vous recevrez les récompenses correspondantes par courrier sur votre compte principal dans les 5 jours ouvrables suivant la fin de cet événement."
@@ -2805,7 +2805,7 @@ ACTIVITY_SPORTS_STATE_2,Compétition Normale
 ACTIVITY_SPORTS_STATE_3,Étape de calcul
 ACTIVITY_SPORTS_SELECT_HERO_TIP,Choisissez un adversaire：
 ACTIVITY_SPORTS_SELECT_HERO_TIP_2,Veuillez d'abord choisir un adversaire !
-ACTIVITY_PRAY_BUY_TIPS01,Acheter par Gemmes
+ACTIVITY_PRAY_BUY_TIPS01,Acheter avec des Gemmes
 ACTIVITY_PRAY_BUY_TIPS02,Échanger par Objets
 ACTIVITY_SPORTS_SELECT_GUESS_TIP,Veuillez choisir la mise
 DATE_2,{2}/{1}
@@ -3532,7 +3532,7 @@ TOWER_FUND_GIFT_BAG_DESC,Obtenez l'Investissement de Test pour récupérer plus 
 TOWER_FUND_GIFT_BAG_LIMIT_TIPS,Vous devez avoir obtenu l'Investissement du palier précédent pour l'obtenir !
 SORT_TEXT1,Catégorie
 SORT_TEXT2,Ordre d'Affichage
-TOWER_FUND_GIFT_BAG_CONDITION,Terminer l'étage {1} du Test
+TOWER_FUND_GIFT_BAG_CONDITION,Terminer l'Étape {1} du Test
 NEED_DEFFORMATION,"Votre Équipe de Défense n'est pas encore prête, voulez-vous la former ?"
 LIMIT_BUY_TIMES,Limite d'achat： {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent sur le Campus, vous pouvez les essayer dans différentes compositions."
@@ -3755,7 +3755,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Choisissez le nombre de case souhaité
 ACTIVITY_LAFULI_DRIFT_CARD,Choisissez une carte
 ACTIVITY_LAFULI_DRIFT_AWARD,Collectez les récompenses
 ACTIVITY_LAFULI_DRIFT_ROUND,Tours terminés：{1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail ：| -En utilisant des Gemmes (Limite : 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Connexion Quotidienne (via Courrier)."
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Pack Surprise de Skin| -Connexion Quotidienne (via Courrier)"
 ONE_KEY_COMPOSE,Tout synthétiser
 ONE_KEY_COMPOSE_TEXT,Vous avez assez de ressources pour synthétiser les équipements suivants. Voulez-vous les synthétiser ?
 ONE_KEY_COMPOSE_TEXT2,Aucun équipement du type actuel ne peut être synthétisé.
@@ -3897,7 +3897,7 @@ ACTIVITY_MISSION_POINT_TEXT11,Voulez-vous dépenser {1} Gemmes pour recollecter 
 ACTIVITY_MISSION_POINT_TEXT12,Aucun Point d'Antiquités collectable
 SLOT_INCREASE_TITLE,"La liste des Filles est pleine. Pour augmenter le nombre d'emplacement disponible, vous pouvez :"
 SLOT_INCREASE_TEXT0,Transférer
-SLOT_INCREASE_TEXT1,Acheter des emplacements
+SLOT_INCREASE_TEXT1,Acheter les emplacements
 SLOT_INCREASE_TEXT2,Graduer
 SLOT_INCREASE_TEXT3,Augmenter votre niveau de VIP
 NEWBEE_10GACHA_HELP01,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 1 Qualification pour obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Vous avez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *1, Fille 5 étoiles *4 et Fille 4 étoiles *5. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments de Filles vous seront envoyés par courrier."
@@ -3922,7 +3922,7 @@ FRIEND_TEAM_MSG_TEXT02,"[c][0066cc]{1}[-][/c] de votre équipe ne s'est pas conn
 FRIEND_TEAM_MSG_TEXT03,"Le chef [c][0066cc]{1}[-][/c] ne s'est pas connecté depuis longtemps, vous pouvez [c][cc0011] quitter l'équipe actuelle[-][/c]"
 ACTIVITY_GAMBLE_PLUS_HELP,"1. Pendant l'événement, vous pouvez collecter「As de Cœur 」pour récupérer les récompenses ! |2. Vous pouvez acheter le pack de Distribution Chanceuse pour débloquer les récompenses spéciales, les objets bonus du pack vous seront envoyés immédiatement.|3. Les「As de Cœur」possédés disparaîtront à la fin d'événement. N'oubliez pas de récupérer les récompenses !"
 WEDDING_VOTE_RANK_TITLE,Ancien TOP3
-WEDDING_VOTE_RANK_SESSION,S{1} - Gagnez les Cœurs
+WEDDING_VOTE_RANK_SESSION,S{1} - Gagnez leurs Cœurs
 ACTIVITY_NEWBEE_GACHA_TEXT03,Possibilité d'obtenir Fille [c][ef4037]5[-][/c] étoiles multipliée par [c][ef4037]5[-][/c] !
 ACTIVITY_NEWBEE_GACHA_TEXT04,Tirer Capsule de Débutant {1} fois
 ACTIVITY_NEWBEE_GACHA_TEXT05,Récompense
@@ -4255,12 +4255,12 @@ GUILD_LAB_WINDOW_HELP_U3,"1. Améliorez les capacités dans le Laboratoire afin 
 TRAVEL_EXPLORE_HELP_U3,"1. Utilisez Pain Délicieux*10 pour participer à l'Aventure de l'Excursion Scolaire où vous rencontrerez des événements aléatoires.|2. Le Pain Délicieux peut être produit dans la Boulangerie ou vous pouvez directement en acheter.|3. Les différents événements aléatoires dans l'Aventure sont : Ennemi d'Aventure, Coffre Sauvage, Vagabonde, Boulangerie et Marché.|Ennemi d'Aventure : un combat se déclenche et vous devez éliminer les ennemis pour obtenir des Coffres. Vous rencontrerez des ennemis élites après chaque cycle de 5 victoires. En vous débarrassant des ennemis élites, vous obtiendrez des Coffres de meilleure qualité.|Coffre Sauvage : vous obtiendrez directement un Coffre.|Vagabonde : vous obtiendrez une tâche à compléter. En la complétant vous obtiendrez un Coffre.|Boulangerie : vous obtiendrez une quantité de Pains Délicieux.|Marché : vous pourrez y dépenser de l'Or pour obtenir des Coffres de meilleure qualité.|4. Les Coffres que vous obtenez seront déverrouillables après un certain temps mais vous pourrez utiliser des Gemmes pour les déverrouiller instantanément pour obtenir les récompenses qu'ils contiennent.|5. Si vos emplacements de Coffres sont pleins, vous ne pourrez plus en obtenir.|6. Améliorez votre niveau d'Aventure pour améliorer la qualité des Coffres obtenus et obtenir plus d'emplacements de Coffres, mais attention, le niveau de difficulté des ennemis augmentera également.|7. Une fois que votre Aventure aura atteint le niveau 3, le mode -Aventure Auto sera débloqué et vous pourrez activer la fonction passer la Bataille lorsqu'un ennemi vous provoque."
 GUILD_BOSS_CANT_FIGHT,Vous ne pouvez plus défier ce BOSS car vous en avez déjà défié un autre aujourd'hui.
 GUILD_COMPETITION_SIMULATE_DAMAGE,Dégâts de Bataille Démo：
-ACTIVITY_NEWBEE_LESSON_HELP,"1. La durée de cet événement est de 14 jours. Complétez les Devoirs Journaliers et les tâches cumulables.|2. Complétez 6 Devoirs Journaliers pour obtenir ""Certificat d'Études"". Les Devoirs Journaliers se réinitialiseront à 00:00(UTC/GMT 0) tous les jours. Les récompenses non collectées ne seront plus collectables après la réinitialisation.|3. Les tâches cumulables ne seront pas réinitialisées quotidiennement, et chaque section des récompenses peut être collecté qu'une seule fois. L'EXP VIP obtenus avant l'événement peut être cumulé.|4. Utilisez ""Certificat d'Études"" pour participer à l'événement Manuel d'Études."
+ACTIVITY_NEWBEE_LESSON_HELP,"1. La durée de cet événement est de 14 jours.|Complétez les Devoirs Journaliers et les tâches cumulables pour obtenir des récompenses.|2. Durant cet événement, vous pouvez compléter 6 Devoirs Journaliers par jour pour obtenir les Certificat d'Études. Les Devoirs Journaliers se réinitialiseront à 00:00(UTC/GMT 0) tous les jours. Les récompenses non collectées ne seront plus collectables après la réinitialisation.|3. Les tâches cumulables ne seront pas réinitialisées quotidiennement, et chaque section des récompenses peut être collecté qu'une seule fois. Les EXP VIP obtenus avant l'événement peut être cumulés.|4. les Certificats d'Études sont utilisables à l'événement Manuel d'Études."
 ACTIVITY_NEWBEE_LESSON_TITEL,Devoirs Journaliers
 ACTIVITY_NEWBEE_LESSON_TEXT01,Rafraîchit：
 ACTIVITY_NEWBEE_LESSON_TEXT02,Termine dans：
 ACTIVITY_NEWBEE_LESSON_TEXT03,Ne peut être collecté qu'une fois par palier
-ACTIVITY_COURSE_LEARNING_HELP,"1. La durée de l'événement est de 14 jours.|2. Chaque Étude utilise un ""Certificat d'Études"", qui une fois utilisé, augmentera aléatoirement votre progrès actuel, et vous recevrez ainsi une récompense aléatoire.|3. Une fois que votre progression actuel est à 100%%, vous recevrez une récompenses customisée et pourrez accéder au tour suivant.|4. Après la fin de l'événement, les Certificats d'Études inutilisés seront automatiquement convertis en Pièces d'Or, un Certificat valant 15K Pièces d'Or. (Vous sera envoyé par courrier)"
+ACTIVITY_COURSE_LEARNING_HELP,"1. La durée de l'événement est de 14 jours.|2. Utilisez un ""Certificat d'Études"" pour étudier. Chaque étude augmentera votre progrès d'un certain pourcentage, et vous recevrez ainsi une récompense aléatoire.|3. Une fois que votre progression actuel est à 100%%, vous recevrez une récompenses customisée et pourrez accéder au tour suivant.|4. Après la fin de l'événement, les Certificats d'Études non-utilisés seront automatiquement convertis en Pièces d'Or et envoyé par courrier, un Certificat valant 15K Pièces d'Or."
 ACTIVITY_COURSE_LEARNING_TEXT01,Tour [c][0xdf257a size=28]{1}[-][/c]
 ACTIVITY_COURSE_LEARNING_TEXT02,Étudier {1} fois
 ACTIVITY_COURSE_LEARNING_TEXT03,Choisissez une récompense à 100%%
@@ -4268,20 +4268,20 @@ ACTIVITY_COURSE_LEARNING_TEXT04,Choisissez une récompense
 ACTIVITY_COURSE_LEARNING_TEXT05,ou
 ACTIVITY_COURSE_LEARNING_TEXT06,Récompense Customisée
 ACTIVITY_COURSE_LEARNING_TEXT07,Récompense Unique
-ACTIVITY_COURSE_LEARNING_TEXT08,Collectez la récompense customisée du tour actuel pour accéder au tour suivant
+ACTIVITY_COURSE_LEARNING_TEXT08,Collectez la récompense customisée du tour actuel pour accéder au tour suivant.
 ACTIVITY_COURSE_LEARNING_TEXT09,Obtenez une récompense customisée une fois que votre progression atteint 100%%
 ACTIVITY_COURSE_LEARNING_TEXT10,Récompense d'Étude: augmentation de la progression + récompense aléatoire
 ACTIVITY_COURSE_LEARNING_TEXT11,Tour {1}
 ACTIVITY_COURSE_LEARNING_TEXT12,Après le Tour {1}
 ACTIVITY_COURSE_LEARNING_TEXT13,Progression
 ACTIVITY_COURSE_LEARNING_TEXT14,"
-Chaque étude fait un certain progrès：
+Chaque étude augmentera votre progrès d\'un certain pourcentage：
 10%% de chance +0,8%% de progrès
-35%% de chance +0,9%% de progès
-40%% de chance +1,0%% de progès
-15%% de chance +1,1%% de progès
+35%% de chance +0,9%% de progrès
+40%% de chance +1,0%% de progrès
+15%% de chance +1,1%% de progrès
 (Chaque Étude a également une petite probabilité de compléter votre progrès à 100%% !)"
-ACTIVITY_COURSE_LEARNING_TEXT15,Récompense Aléatoire
+ACTIVITY_COURSE_LEARNING_TEXT15,Récompenses
 ACTIVITY_COURSE_LEARNING_TEXT16,Récompense customisée pas encore sélectionnée !
 STAGE_ACHIEVEMENT_WINDOW_CLOSE,Touchez la zone blanche pour fermer l'interface
 STAGE_ACHIEVEMENT_ENTRANCE_TEXT01,Récompense\ncollectable après\nÉtape {1}
@@ -4959,10 +4959,10 @@ ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_5,Événement terminé dans :
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_6,Calcul dans :
 PUB_MISSION_AUTO_HELP2,"1. Vous pouvez récupérer des récompenses de Job(s) fini(s) en appuyant sur ""Tout Collecter"".|2. Vous pouvez filtrer les jobs en fonction du nombre d'étoile.|3. Attention : il vous faut recomfirmer les jobs 6 ou 7 étoiles pour récupérer des récompenses."
 ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
-WARMUP_ARENA_REACH_RANK_HELP,Nouveautés du Rang {1}：|{2}|Nouveautés du Rang {3}：|{4}|Nouveautés du Rang {5}：|{6}
+WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Les Jumelles\nCambrioleuses\net la Déesse du Chaos
+WARMUP_ARENA_TASK_INFO_2,Mercure ouvre\nsa Boutique !
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5019,7 +5019,7 @@ DRESS_ITEM_NUM,Possède：
 ACTIVITY_PRAY_TEXT1,Confirmer
 ACTIVITY_PRAY_TEXT2,Faire un vœu
 ACTIVITY_PRAY_TEXT3,Entrez le nombre de vœux
-ACTIVITY_PRAY_TEXT4,Acheter des Pièce à vœux
+ACTIVITY_PRAY_TEXT4,Acheter les Pièce à vœux
 ACTIVITY_PRAY_TEXT5,Offrir\nune Pierre
 ACTIVITY_PRAY_TEXT6,Entrez le nombre de Pierres：
 JUMP_TO,Aller à
@@ -5054,7 +5054,7 @@ ACTIVITY_TEA_TEXT2,Obtenez le skin unique & limité de Lucifael et plein d'autre
 ACTIVITY_TEA_TEXT3,Débloqué après avoir lu le chapitre précédent
 ACTIVITY_TEA_TEXT4,Progression
 ACTIVITY_TEA_TEXT5,Lisez l'histoire pour collecter la récompense !
-ACTIVITY_FISH_HELP,"1. Durant cet événement, les Cannes à pêche peuvent être obtenables par Courrier Quotidien, Offres de Lavli, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Banquet de Thanksgiving, et via les événements - Le Périple du Lavli, Cadeaux de Thanksgiving et Tâche des Filles. Vous obtiendrez 1 Canne à pêche pour chaque utilisation de Gouvernail ou de Gouvernail Avancé.|2. Utilisez 5 Cannes à pêche pour pêcher 1 fois, vous obtiendrez des récompenses différentes selon le poisson pêché. Si le poisson pêché répond aux attentes de la Sirène, vous obtiendrez une récompense supplémentaire.|3. Après avoir pêché le poisson souhaité par la Sirène, un nouveau souhaité s'affichera, et une nouvelle récompense supplémentaire s'affichera également.|4. Si le poisson que vous avec pêché n'est pas celui que la sirène souhaite, le taux d'obtention du poisson souhaité augmentera de 10%% et continuera d'augmenter jusqu'à son apparation.|5. Vous obtiendrez également des Couronnes d'Or ou des Couronnes d'Argent selon la taille du poisson que vous pêché. Vous obtiendrez des récompenses supplémentaires, la première fois que vous obtiendrez une Couronne d'Or pour un poisson et lorsque la taille et l'espèce du poisson pêché répond aux attentes de la Sirène, |6. Après avoir pêché un certain nombre de poisson, vous obtiendrez les récompenses correspondantes.|7. Après la fin de l'événement, les Cannes à pêche non-utilisées seront automatiquement converties en Pièces d'Or, 1 Canne à pêche pour 20k, envoyées par courrier."
+ACTIVITY_FISH_HELP,"1. Durant cet événement, les Cannes à pêche peuvent être obtenables par Courrier Quotidien, Le Périple de Lavli, Tâches des Filles, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise. Vous obtiendrez 1 Canne à pêche pour chaque utilisation de Gouvernail ou de Gouvernail Avancé.|2. Utilisez 5 Cannes à pêche pour pêcher 1 fois, vous obtiendrez des récompenses différentes selon le poisson pêché. Si le poisson pêché répond aux attentes de la Sirène, vous obtiendrez une récompense supplémentaire.|3. Après avoir pêché le poisson souhaité par la Sirène, un nouveau souhaité s'affichera, et une nouvelle récompense supplémentaire s'affichera également.|4. Si le poisson que vous avec pêché n'est pas celui que la sirène souhaite, le taux d'obtention du poisson souhaité augmentera de 10%% et continuera d'augmenter jusqu'à son apparation.|5. Vous obtiendrez également des Couronnes d'Or ou des Couronnes d'Argent selon la taille du poisson que vous pêché. Vous obtiendrez des récompenses supplémentaires, la première fois que vous obtiendrez une Couronne d'Or pour un poisson et lorsque la taille et l'espèce du poisson pêché répond aux attentes de la Sirène, |6. Après avoir pêché un certain nombre de poisson, vous obtiendrez les récompenses correspondantes.|7. Après la fin de l'événement, les Cannes à pêche non-utilisées seront automatiquement converties en Pièces d'Or, 1 Canne à pêche pour 20k, envoyées par courrier."
 ACTIVITY_FISH_BUTTON01,Galerie
 ACTIVITY_FISH_BUTTON02,Récompenses
 ACTIVITY_FISH_SKIP,Passer
@@ -5090,7 +5090,7 @@ ACTIVITY_MONTHLY_HIKE_SKILL_3,Aucune Compétence à réinitialiser
 ACTIVITY_MONTHLY_HIKE_SKILL_4,Compétence(s) acquise(s) !
 ACTIVITY_MONTHLY_HIKE_SKILL_5,Compétence(s) réinitialisée(s) !
 BATTLE_OVER_IS_AUTO_CARD,Retourner la carte automatiquement
-ACTIVITY_MONTHLY_HIKE_HELP,"1. La Pratique Extra-Scolaire comprend au total 53 Étapes. Chaque combat consommera 1 Carte Pratique.|2. Les Cartes Pratiques peuvent être obtenues dans le Butin de Campagne ou par achat avec des Gemmes.|3. Chaque combat vous permettra d'obtenir une quantité aléatoire de récompenses. Vaincre le Boss d'une Étape vous permettra d'obtenir les récompenses correspondantes (via courrier) et ainsi débloquer l'Étape suivante.|4. Après avoir passé l'Étape 50, vous combattrez les 3 étapes restantes de manière répétitives. Vous obtiendrez une quantité aléatoire de récompenses à chaque combat. Cependant, ces 3 dernières étapes ne comptent aucune récompense d'Étape.|5. Passer les 50 premières Étapes vous permettra d'obtenir des Points de Compétences Pratiques utilisés pour améliorer vos Compétences Pratiques.|6. Les Compétences Pratiques sont uniquement prises en compte dans La Pratique Extra-Scolaire.|7. Cet événement sera réinitialisé tous les mois. Votre avancée dans l'événement et vos Points de Compétences Pratiques seront réinitialisés à chaque début d'événement.|8. Les dégâts infligés par les Serviteurs ne sont pas comptabilisés dans les statistiques de dégâts de chaque combat."
+ACTIVITY_MONTHLY_HIKE_HELP,"1. La Pratique Extra-Scolaire comprend au total 53 Étapes. Chaque combat consommera 1 Carte Pratique.|2. Les Cartes Pratiques peuvent être obtenues dans le Butin de Campagne ou par achat avec des Gemmes.|3. Chaque combat vous permettra d'obtenir une quantité aléatoire de récompenses. Vaincre le Boss d'une Étape vous permettra d'obtenir les récompenses correspondantes (via courrier) et ainsi débloquer l'Étape suivante.|4. Après avoir passé l'Étape 50, vous combattrez les 3 étapes restantes de manière répétitives. Vous obtiendrez une quantité aléatoire de récompenses à chaque combat. Cependant, ces 3 dernières étapes ne comptent aucune récompense d'Étape.|5. Passer les 50 premières Étapes vous permettra d'obtenir des Points de Compétences Pratiques utilisés pour améliorer vos Compétences Pratiques.|6. Les Compétences Pratiques sont uniquement prises en compte dans La Pratique Extra-Scolaire.|7. Cet événement sera réinitialisé tous les mois. Votre avancée dans l'événement et vos Points de Compétences Pratiques seront réinitialisés à chaque début d'événement.|8. Les dégâts infligés par les Serviteurs ne sont pas comptabilisés dans les statistiques de dégâts de chaque combat.|9. Utilisez la fonction ""Passer à l'Étape suivante automatiquement"" pour vous aider à avancer de manière plus pratique et rapide."
 ACTIVITY_MONTHLY_HIKE_SKILL_WINDOW,Compétences Pratiques
 ACTIVITY_MONTHLY_HIKE_SKILL_HELP,"1. Utilisez vos Points de Compétences Pratiques afin d'améliorer vos Compétences Pratiques. Améliorer vos Points de Compétences Pratiques vous permettra de rendre vos Filles plus puissantes dans la Pratique Extra-Scolaire.|2. Les Compétences Pratiques sont divisées en 3 Rangs. Les Compétences Pratiques de Rang 1 ne nécessitent pas d'être débloquées. Afin de débloquer les Compétences Pratiques de Rang 2 et 3, il vous faudra utiliser le nombre de Points de Compétences Pratiques requis.|3. Certaines Compétences Pratiques nécessiteront d'améliorer une ou plusieurs Compétences Pratiques à un certain niveau avant de pouvoir être débloquées.|4. Les Compétences Pratiques seront uniquement prises en compte dans La Pratique Extra-Scolaire, et seront remises à 0 à chaque réinitialisation de l'événement.|5. Vous pouvez réinitialiser vos Compétences Pratiques une fois par saison. Une seconde réinitialisation (d'une même saison) vous coûtera des Gemmes."
 ACTIVITY_MONTHLY_TEXT001,Récompenses de Défi
@@ -5278,7 +5278,7 @@ FAIR_ARENA_GET_HOE_TIME_EXPLAIN,{1} Pioche(s) Dorée(s) Gratuite(s) dans：
 FAIR_ARENA_GET_HOE_EXPLAIN,Chaque Exploration consomme 1 Pioche Dorée !
 FAIR_ARENA_GET_HOE_BUY_TIMES_YET,Limite d'achat\npar jour：
 FAIR_ARENA_GET_HOE_BUY_HELP,"1. Chaque Exploration consomme 1 Pioche Dorée.|2. Lors du premier jour de l'événement, vous recevrez 2 Pioches Dorées. Lors du 3ème et 5ème jour de l'événement, vous recevrez 1 Pioche Dorée (GMT : 0:00).|3. Durant l'événement, vous pouvez acheter 2 Pioches Dorées par jour et le nombre d'achats restants peut être cumulé au jour suivant.|4. Le prix de la Pioche Dorée augmentera avec le nombre d'achats, jusqu'à 400 Gemmes au maximum."
-FAIR_ARENA_GET_HOE_TITLE,Acheter des Pioches Dorées
+FAIR_ARENA_GET_HOE_TITLE,Acheter les Pioches Dorées
 FAIR_ARENA_GET_HOE_NONE_TIPS,Toutes vos Pioches Dorées ont été consommées ! Voulez-vous acheter des Pioches Dorées?
 FAIR_ARENA_GET_HOE_TIME_END,Restant：
 FAIR_ARENA_GET_HOE_SHOW_TIME_NO,Vous ne pouvez plus acheter des Pioches durant la période d'affichage.
@@ -5600,7 +5600,7 @@ ALTAR_INFO_5,Cette Fille ne peut pas être inversée.
 ALTAR_INFO_6,"Cette Fille n'a pas été améliorée, nul besoin de l'inverser."
 GAMBLE_JUMP_CARTOON,Ne plus afficher
 FRIEND_APPLY_LIMIT_TIPS,"Votre liste de demandes d'amis a atteint sa limite, veuillez la trier."
-SHOW_WINDOW_HELP,"1. Les Galeries de Tenues comptent 4 différentes Galeries (pour Test, Patrouille, Équipe de Sécurité et Examen des Maisons). Les Galeries seront disponibles une fois que leur fonctionnalité correspondante sera débloquée.|2. Retrouvez dans chaque Galerie 3 Vitrines différentes (Audace, Charme et Génie). Chaque Vitrine compte 5 emplacements, certains emplacements nécessiteront de remplir des conditions afin de pouvoir les débloquer.|3. Chaque emplacement débloqué peut afficher 1 élément de Tenue. Chaque élément exposé dans un emplacement doit respecter l'exigence requise.|4. Obtenez des points pour chaque tenue exposée dans vos Vitrines (exemple: une Tenue exposée dans l'emplacement d'Audace d'une Vitrine vous donnera 1 point pour chaque point d'Audace que cette Tenue possède).|5. Les récompenses seront calculées quotidiennement en fonction du total de vos points obtenus dans chaque Galerie respective. Les récompenses seront collectées automatiquement chaque fois que vous entrerez dans une Galerie. Elles peuvent être cumulées pendant 3 jours maximum."
+SHOW_WINDOW_HELP,"1. Les Galeries de Tenues comptent 4 différentes Galeries (pour Test, Patrouille, Équipe de Sécurité et Examen des Maisons). Les Galeries seront disponibles une fois que leur fonctionnalité correspondante sera débloquée.|2. Retrouvez dans chaque Galerie 3 Vitrines différentes (Audace, Charme et Génie). Chaque Vitrine compte 5 emplacements, certains emplacements nécessiteront de remplir des conditions afin de pouvoir les débloquer.|3. Chaque emplacement débloqué peut afficher 1 élément de Tenue. Chaque élément exposé dans un emplacement doit respecter l'exigence requise.|4. Obtenez des points pour chaque élément de Tenue exposé dans vos Vitrines (exemple : un élément de Tenue exposé dans l'emplacement d'Audace d'une Vitrine vous donnera 1 point pour chaque point d'Audace que cet élément de Tenue possède).|5. Après avoir amélioré un élément de Tenue qui est exposé dans la Vitrine, le niveau de cette Vitrine ne sera pas automatiquement réactualisé, veuillez rouvrir l'interface pour réactualiser.|6. Les récompenses seront calculées quotidiennement en fonction du total de vos points obtenus dans chaque Galerie respective. Les récompenses seront collectées automatiquement chaque fois que vous entrerez dans une Galerie. Les récompenses non-récupérées peuvent être cumulées pendant 3 jours maximum.|7. Le niveau d'une Vitrine est évalué en fonction des points actuels obtenus dans cette dernière (ce niveau n'influence pas le contenu des récompenses quotidiennes).|Détails de Niveau : E：0-169 points, D： 170-449 points, C：450-799 points, B：800-1099 points, A：1100-1399 points, S：≥1400 points."
 SHOW_WINDOW_SHOP_HELP,"1. Obtenez des Étiquettes Métalliques et des Étiquettes Dorées dans les récompenses quotidiennes des Galeries de Tenues que vous pourrez utilisez dans le Magasin des Galeries.|2. Utilisez les Étiquettes Dorées pour activer des bonus dans différentes fonctionnalités. 4 Couches de bonus maximum peuvent être activées en même temps. La limite d'achat de bonus sera réinitialisé chaque semaine.|3. Utilisez les Étiquettes Métalliques pour acheter des objets dans le Magasin des Galeries. La limite d'achat des objets dans Collection ne seront pas réintialisée, tandis que celle des objets dans Bazar sera réinitialisée chaque semaine."
 SHOW_WINDOW_TEXT01,Exposez vos Tenues dans les Galeries et montrez votre bon chic bon genre à toutes les Filles ! Soyez le meneur ou la meneuse des nouvelles tendances de l'Académie Yume !
 SHOW_WINDOW_TEXT02,nº{1}
@@ -5609,7 +5609,7 @@ SHOW_WINDOW_TEXT04,Disponible après avoir débloqué {1}
 SHOW_WINDOW_TEXT05,Vitrine
 SHOW_WINDOW_TEXT06,Vitrine
 SHOW_WINDOW_TEXT07,Emplacement
-SHOW_WINDOW_TEXT08,Point
+SHOW_WINDOW_TEXT08,Point(s)
 SHOW_WINDOW_TEXT09,Récompenses Quotidiennes
 SHOW_WINDOW_TEXT10,Vitrine de l'Audace
 SHOW_WINDOW_TEXT11,Vitrine du Charme
@@ -5657,3 +5657,15 @@ NEW_ARENA_ALL_SERVER_TEXT_27,Saison {1}
 WORLD_BOSS_SWEEP_TIPS2,Passer à l'Étape suivante automatiquement
 ACTIVITY_GIFTBAG_OPTIONAL_WINDOW_TEXT,Offre Personnalisée
 SHOW_WINDOW_TEXT46,"Impossible d'acheter, ce bonus ne peut cumuler que 4 couches."
+ACTIVITY_FISH_AUTO,Auto
+ACTIVITY_FISH_AUTO_TEXT,Combien de fois voulez-vous pêcher ?
+WORLD_BOSS_SWEEP_TEXT01,Raid en cours...
+WORLD_BOSS_SWEEP_TEXT02,Arrêter
+WORLD_BOSS_SWEEP_TEXT03,Confirmer
+WORLD_BOSS_SWEEP_TEXT04,Le Raid est terminé ! [c][0069cc]{1}[-][/c] Carte(s) Pratique(s) utilisée(s) !
+WORLD_BOSS_SWEEP_TEXT05,Voulez-vous arrêter le Raid ?
+NEW_PLAYER_ACTIVITY_TIPS_TITLE,Attention
+NEW_PLAYER_ACTIVITY_TIPS_BUTTON,Confirmer
+WORLD_BOSS_SWEEP_TEXT06,Dégâts
+SHOW_WINDOW_TEXT47,Le Niveau de la Vitrine a été actualisé !
+WORLD_BOSS_SWEEP_TEXT07,Étape [c][0069cc]{1}[-][/c]

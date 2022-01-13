@@ -22,7 +22,7 @@ id,name,from,content
 21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Elementarkugel *100, Super Job-Pergament *1 und Wunschmünze *5 zu erhalten. Hier sind deine Belohnungen."
 22,Belohnungen - Jobaufgaben,Systembenachrichtigung,Herzlichen Glückwünsche! Du hast während des Jobaufgaben-Events die {1}-Sterne Jobaufgaben abgeschlossen! Hier sind deine Belohnungen!
 23,Auflade-Nachricht,Systembenachrichtigung,"Vielen Dank, dass du dich für {1} entschieden hast. Deine Items sind im Rucksack erhältlich. Schau nach~"
-24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150, alte Flaschenpost *5 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
+24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150 und Angelrute *5 zu erhalten. Hier sind deine Belohnungen."
 25,Belohnungen - Arena-Kampf,Systembenachrichtigung,Herzlichen Glückwunsch! Du hast während des Events Arena-Kampf ein bestimmtes Ziel erreicht. Hier sind die entsprechenden Belohnungen!
 26,Abonnement,Abonnement,Herzliche Glückwünsche! Du bist der glückliche Inhaber einer Wochenkarte. Deine Münzenausbeute wird für die nächsten 168 Stunden um 100% erhöht. Dieser Vorteil wird auf die Vip-Vorteile draufgerechnet.
 27,Erinnerung: Abonnement läuft aus,Abonnement,"Deine Wochenkarte läuft heute ab. Bitte verlängere deine Wochenkarte, um die Vorteile weiterhin nutzen zu können. Die Münzenausbeute wird um 100% erhöht, solange die Karte aktiv ist!"
@@ -116,7 +116,7 @@ Komm und tritt der FB-Fangruppe bei!
 110,Rangbelohnungen für Speed-Modus,Systembenachrichtigung,Herzlichen Glückwunsch. Du hast den Platz {1} in der Mädchen-Aufgabe im Speed-Modus erhalten. Hier sind deine Belohnungen!
 111,Test Server Belohnung,Systembenachrichtigung,Lieber Senpai. Herzlichen Glückwunsch. Du hast die Aufgaben währed der Test Server Zeit erledigt. Hier sind deine Belohnungen.
 112,Umwandlung der Eventitems,Systembenachrichtigung,"Lieber Senpai, das Event {1} ist zu Ende. Deine {2}x {3} wurden recycelt und du bekommst dafür die folgenden Belohnungen."
-113,Willkommensbelohnungen,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Willkommenskapseln"" zum {1}. Mal Maya oder Carmen & Bonnie erhalten! Hier sind deine Belohnungen!"
+113,Willkommensbelohnungen,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Willkommenskapseln"" {2} zum {1}. Mal erhalten! Hier sind deine Belohnungen."
 114,Bunte Ballons - Sympathiebelohnung,Systembenachrichtigung,"Gratuliere, du hast {1} Sympathie im Event ""Bunte Ballons"" erreicht. Hier sind deine Belohnungen."
 115,Yume Hauskampf Belohnungen,Systembenachrichtigung,Herzlichen Glückwunsch Senpai. Du hast im Sport-Hauskampf den {1}. Platz erreicht. Hier sind deine Belohnungen!
 116,Yume Hauskampf Belohnungen,Systembenachrichtigung,Herzlichen Glückwunsch Senpai. Du bist im Sport-Hauskampf unter die Besten {1}% gekommen. Hier sind deine Belohnungen!
@@ -155,7 +155,7 @@ Komm und tritt der FB-Fangruppe bei!
 149,Belohnungen des Neulingsevents,Systembenachrichtigung,"Gratuliere, Senpai! Du hast die 7-tägigen Aufgaben erfolgreich abgeschlossen. Die noch nicht gesammelten Belohnungen sind beigefügt!"
 150,Fortschrittsbelohnung des Neulingsevents,Systembenachrichtigung,"Gratuliere, Senpai! Du hast während des Neulingsevents {1} Punkte erreicht. Die noch nicht gesammelten Belohnungen sind beigefügt!"
 151,Belohnung von Luvlys Inselreise,Event Mail,"Gratuliere, dass du während des Events Luvlys Inselreise {1} Korallenzweige gesammelt hast. Hier sind deine Belohnungen!"
-152,Tägliche Belohnung,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150, alte Flaschenpost *5 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
+152,Tägliche Belohnung,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150 und Angelrute *5 zu erhalten. Hier sind deine Belohnungen."
 153,Umwandlung der Eventitems,Systembenachrichtigung,"Lieber Senpai, das Event {1} ist zu Ende. Deine {2}x {3} wurden automatisch recycelt."
 154,Rangbelohnung für Schulerkundung,Systembenachrichtigung,"Gratuliere, du hast in diesmaliger Schulerkundung den {1}. Platz beleget! Hier sind deine Belohnungen!"
 155,Belohnungen für Schulerkundung,Systembenachrichtigung,"Lieber Senpai, die Schulerkundung ist zu Ende. Hier sind die noch nicht eingesammelten Belohnungen!"
@@ -236,3 +236,5 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 214,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast den Chaos-Lord erfolgreich besiegt und bist in ein gefährlicheres Gebiet eingetreten. Bitte sammle die Belohnungen ein! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 215,Weihnachtsaustausch geht bald zu Ende,Event-Mail,"Lieber Senpai,\n\ndas Event ""Weihnachtsaustausch"" geht bald zu Ende. Vergiss bitte nicht, deine gewünschten Geschenke zu tauschen!"
 216,Belohnungen (Weihnachtselfe),Event-Mail,"Gratuliere, du hast im Event ""Weihnachtselfe"" insgesamt {1} Weihnachtssocken aufgehängt und folgende Belohnungen erhalten!"
+217,Alter Campus endet bald,Systembenachrichtigung,"Lieber Senpai, Alter Campus wird in 24 Stunden geschlossen. Bitte begebe dich schnell auf den Campus, um höhere Etagen zu erobern!"
+218,Letzter Tag für limitierte Pakete!,Systembenachrichtigung,"Lieber Senpai, das Paket-Event ""{1}"" wird in 1 Tag beendet! Verpass die preiswerten Pakete bloß nicht!"
