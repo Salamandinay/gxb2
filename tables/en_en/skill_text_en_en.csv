@@ -707,7 +707,7 @@ Deals (150% of Attack) damage against Back-line enemies and (32% chance) to [c][
 Mark effct, the Round Mark will be removed 2 round later and deals (250% of Attack) damage at the same time, can stack.
 [c][01a310]Stun:[-][/c]
 A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75300601,Hexa,Justice Rains,"Deals (190% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+75300601,Hexa,Justice Rains,"Deals (190% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
 75300701,Alice,Dragon Fight,"Deals (146% of Attack) damage against all enemies, dealing extra 140% damage to Warrior class enemies. Gains 12% Damage Reduction."
 75300801,Muppet,Muppet String,"Deals (200% of Attack) damage against Front-line enemies, if the enemy has lower HP than self, deals extra (18% of the enemy's MAXIMUM health) damage, increases self Attack by 15% and Armor Break by 15%."
 75300901,Priestess,Yinyang Strike,"
@@ -4886,11 +4886,11 @@ While below 50% health, increases Damage Reduction to self by 50% for 3 rounds a
 
 [c][e28002]Round Mark:[-][/c]
 Mark effect, the Round Mark will be removed 1 round later and deals (275% of Attack) damage at the same time, can stack. (Can only trigger once)"
-753006011,Hexa,Justice Rains,"Deals (193% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
-753006012,Hexa,Justice Rains,"Deals (196% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
-753006013,Hexa,Justice Rains,"Deals (199% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
-753006014,Hexa,Justice Rains,"Deals (202% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
-753006015,Hexa,Justice Rains,"Deals (205% of Attack) damage against 2 random backline enemies, steals 35% Attack from target for 2 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+753006011,Hexa,Justice Rains,"Deals (193% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+753006012,Hexa,Justice Rains,"Deals (196% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+753006013,Hexa,Justice Rains,"Deals (199% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+753006014,Hexa,Justice Rains,"Deals (202% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
+753006015,Hexa,Justice Rains,"Deals (205% of Attack) damage against 2 random backline enemies, steals 35% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
 753006021,Hexa,Holy Power,"Increases Attack by 37%, Crit by 30% and HP by 20%"
 753006022,Hexa,Holy Power,"Increases Attack by 37%, Crit by 30% and HP by 22%"
 753006023,Hexa,Holy Power,"Increases Attack by 37.5%, Crit by 30% and HP by 22%"
@@ -8711,7 +8711,7 @@ My bow is fully drawn; it\'s time to hunt. Run as far as you like, but my arrow 
 In the next round, deals (1632% of Attack) damage to all enemies, and gains 4 stacks of [c][e28002]Sun Slayer[-][/c] that lasts for 4 rounds.
 
 [c][e28002]Sun Slayer: [-][/c]
-Skill Effect, Angelica will Hunt the enemy with lowest HP percentage the same number of times as the stacks of Sun Slayer that she has when she triggers Active Skills and Basic Attacks, dealing (1306% of Attack) damage each time. The stacks of Sun Slayer will not be removed after use."
+Skill Effect, Angelica will Hunt the enemy with lowest HP percentage the same number of times as the stacks of Sun Slayer that she has when she triggers Active Skills and Basic Attacks, dealing (306% of Attack) damage each time. The stacks of Sun Slayer will not be removed after use."
 756008012,Angelica,"Ready, Aim, Fire!","
 My bow is fully drawn; it\'s time to hunt. Run as far as you like, but my arrow will find its way through your heart. Increases self Crit by 50% and Damage Reduction by 40% for 2 rounds, and prepares to release a rain of arrows upon all enemies in the next round. Preparation Period lasts for 1 round, starting from the round this skill is used. During Preparation Period, Angelica will not be able to attack the enemy, is immune to all Control Effects, and will not have her Energy increased or decreased. 
 In the next round, deals (1664% of Attack) damage to all enemies, and gains 4 stacks of [c][e28002]Sun Slayer[-][/c] that lasts for 4 rounds.
@@ -8729,7 +8729,7 @@ My bow is fully drawn; it\'s time to hunt. Run as far as you like, but my arrow 
 In the next round, deals (1728% of Attack) damage to all enemies, and gains 4 stacks of [c][e28002]Sun Slayer[-][/c] that lasts for 4 rounds.
 
 [c][e28002]Sun Slayer: [-][/c]
-Skill Effect, Angelica will Hunt the enemy with lowest HP percentage the same number of times as the stacks of Sun Slayer that she has when she triggers Active Skills and Basic Attacks, dealing (1324% of Attack) damage each time. The stacks of Sun Slayer will not be removed after use."
+Skill Effect, Angelica will Hunt the enemy with lowest HP percentage the same number of times as the stacks of Sun Slayer that she has when she triggers Active Skills and Basic Attacks, dealing (324% of Attack) damage each time. The stacks of Sun Slayer will not be removed after use."
 756008015,Angelica,"Ready, Aim, Fire!","
 My bow is fully drawn; it\'s time to hunt. Run as far as you like, but my arrow will find its way through your heart. Increases self Crit by 55% and Damage Reduction by 44% for 2 rounds, and prepares to release a rain of arrows upon all enemies in the next round. Preparation Period lasts for 1 round, starting from the round this skill is used. During Preparation Period, Angelica will not be able to attack the enemy, is immune to all Control Effects, and will not have her Energy increased or decreased. 
 In the next round, deals (1760% of Attack) damage to all enemies, and gains 4 stacks of [c][e28002]Sun Slayer[-][/c] that lasts for 4 rounds.

@@ -48,7 +48,7 @@ id,name,brief,desc
 48,Ballon en Cœur,Matériaux d'Echange,"Matériel Spécial, à utiliser pour obtenir des objets"
 49,Biscuit en forme d'Os,Matériel d'Evenement,À utiliser pour améliorer l'intimité du Serviteur Mystique
 50,Lapin de Pâques,Matériel d'Evènement,"Matériel Spécial, à utiliser pour obtenir des objets"
-51,Billet de Vote,Matériel d'Evènement,Objet exclusif pour voter dans Gagnez les Cœurs
+51,Billet de Vote,Matériel d'Evènement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
 52,Budget de Décoration,Matériel d'Evenement,"Objet utilisé pour aider les Filles à finir la mission de décoration, objet échangeable"
 53,Coupon d'Orientation,Matériel d'Evènement,"Objet exclusif pour échanger des récompenses dans l'événement de Cadeaux de la Rentrée. L'échange sera fermé après la fin de l'événement, utilisez-le avant la fin de l'événement"
 54,Carte d'Approvisionnement d'Equipement,Matériel d'Evènement,Echangeable durant l'événement pour obtenir des équipements rares
@@ -1678,9 +1678,9 @@ id,name,brief,desc
 656015,Isabelle,,
 756005,Isabelle,,
 8021,Bulle d'Amour,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement - Gagner les Cœurs
-78,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
-79,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
-80,Billet de Soutien,Matériel d'Évènement,Objet exclusif pour voter dans Gagnez les Cœurs
+78,Billet de Soutien,Matériel d'Évènement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+79,Billet de Soutien,Matériel d'Évènement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+80,Billet de Soutien,Matériel d'Évènement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
 81,Cadeau du Nouvel An,Boîte de ressource,"Ouvrez pour gagner : Pièce*100K, Jus d'EXP*70K"
 82,Cadeau Supérieur du Nouvel An,Boîte de ressource,"Utilisez ceci pour obtenir de façon aléatoire une des récompenses suivantes：「Pièce de Capsule Avancée*1, Sceau *1, Ticket Avancé du Distributeur *1, Fragment de Fille 5 étoiles *10, Fragment d'Antiquité Orange *10」"
 7075,Conte des Neiges,Skin,Skin d'Annie - Conte des Neiges
@@ -2234,9 +2234,9 @@ Humain/Monstre/Fée.
 7108,Repos Balnéaire,Skin,Skin de Chevalir - Repos Balnéaire
 27108,Repos Balnéaire,Skin,Skin de Chevalir - Repos Balnéaire
 4102004,Boîte de Fille 5 étoiles,Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-156,Bulletin d'amour,Matériel d'Événement,Objet exclusif pour voter dans Gagnez les Cœurs
-157,Bulletin d'amour,Matériel d'Événement,Objet exclusif pour voter dans Gagnez les Cœurs
-158,Bulletin d'amour,Événement,Objet exclusif pour voter dans Gagnez les Cœurs
+156,Bulletin d'amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+157,Bulletin d'amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+158,Bulletin d'amour,Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
 155,Billet de Théâtre,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 159,Marteau Gonflable,Matériel d'Événement,"Matériel d'Événement, à utiliser pour participer à l'événement Surprises Glacées."
 160,Dorayaki,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
@@ -4918,3 +4918,121 @@ Humain/Monstre/Fée.
 7237,Fourrure Neige,Skin,Skin de Diana - Fourrure Neige
 27237,Fourrure Neige,Skin,Skin de Diana - Fourrure Neige
 20001072,Avatar Exclusif de Mercure,Avatar Spécial,Avatar Exclusif de Mercure
+316,Allumette,Matériel d'Événement,"À utiliser pour allumer des pétards dans l'événement ""Les Pétards du Printemps""."
+317,Photographie de Feux d'Artifice,Matériel d'Événement,À utiliser pour échanger contre des récompenses. Obtenez 1 [c][d76500]Photographie de Feux d'Artifice[-][/c] pour chaque [c][d76500]Allumettes[-][/c] consommée.
+7238,Poker Passionnel,Skin,Skin d'Éléanor - Poker Passionnel
+27238,Poker Passionnel,Skin,Skin d'Éléanor - Poker Passionnel
+930216,Nouvelle Fille,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
+51017,Nouvelle Fille,,
+651024,Nouvelle Fille,,
+751017,Nouvelle Fille,,
+3100991,春节頭部,個性裝扮,套裝「春节」的頭部
+3100992,春节頭部,個性裝扮,套裝「春节」的頭部
+3100993,春节頭部,個性裝扮,套裝「春节」的頭部
+3100994,春节頭部,個性裝扮,套裝「春节」的頭部
+3100995,春节頭部,個性裝扮,套裝「春节」的頭部
+3100996,春节頭部,個性裝扮,套裝「春节」的頭部
+3100997,春节上衣,個性裝扮,套裝「春节」的上衣
+3100998,春节上衣,個性裝扮,套裝「春节」的上衣
+3100999,春节上衣,個性裝扮,套裝「春节」的上衣
+3101000,春节上衣,個性裝扮,套裝「春节」的上衣
+3101001,春节上衣,個性裝扮,套裝「春节」的上衣
+3101002,春节上衣,個性裝扮,套裝「春节」的上衣
+3101003,春节下裝,個性裝扮,套裝「春节」的下裝
+3101004,春节下裝,個性裝扮,套裝「春节」的下裝
+3101005,春节下裝,個性裝扮,套裝「春节」的下裝
+3101006,春节下裝,個性裝扮,套裝「春节」的下裝
+3101007,春节下裝,個性裝扮,套裝「春节」的下裝
+3101008,春节下裝,個性裝扮,套裝「春节」的下裝
+3101009,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101010,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101011,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101012,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101013,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101014,春节頭飾,個性裝扮,套裝「春节」的頭飾
+3101015,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101016,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101017,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101018,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101019,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101020,春节裝飾,個性裝扮,套裝「春节」的裝飾
+3101021,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101022,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101023,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101024,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101025,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101026,红色A頭部,個性裝扮,套裝「红色A」的頭部
+3101027,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101028,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101029,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101030,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101031,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101032,红色A上衣,個性裝扮,套裝「红色A」的上衣
+3101033,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101034,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101035,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101036,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101037,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101038,红色A下裝,個性裝扮,套裝「红色A」的下裝
+3101039,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101040,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101041,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101042,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101043,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101044,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
+3101045,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101046,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101047,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101048,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101049,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101050,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
+3101051,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101052,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101053,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101054,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101055,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101056,红色B頭部,個性裝扮,套裝「红色B」的頭部
+3101057,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101058,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101059,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101060,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101061,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101062,红色B上衣,個性裝扮,套裝「红色B」的上衣
+3101063,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101064,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101065,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101066,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101067,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101068,红色B下裝,個性裝扮,套裝「红色B」的下裝
+3101069,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101070,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101071,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101072,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101073,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101074,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
+3101075,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3101076,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3101077,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3101078,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3101079,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3101080,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
+3200991,春节頭部碎片,個性裝扮碎片,春节頭部碎片
+3200997,春节上衣碎片,個性裝扮碎片,春节上衣碎片
+3201003,春节下裝碎片,個性裝扮碎片,春节下裝碎片
+3201009,春节頭飾碎片,個性裝扮碎片,春节頭飾碎片
+3201015,春节裝飾碎片,個性裝扮碎片,春节裝飾碎片
+3201021,红色A頭部碎片,個性裝扮碎片,红色A頭部碎片
+3201027,红色A上衣碎片,個性裝扮碎片,红色A上衣碎片
+3201033,红色A下裝碎片,個性裝扮碎片,红色A下裝碎片
+3201039,红色A頭飾碎片,個性裝扮碎片,红色A頭飾碎片
+3201045,红色A裝飾碎片,個性裝扮碎片,红色A裝飾碎片
+3201051,红色B頭部碎片,個性裝扮碎片,红色B頭部碎片
+3201057,红色B上衣碎片,個性裝扮碎片,红色B上衣碎片
+3201063,红色B下裝碎片,個性裝扮碎片,红色B下裝碎片
+3201069,红色B頭飾碎片,個性裝扮碎片,红色B頭飾碎片
+3201075,红色B裝飾碎片,個性裝扮碎片,红色B裝飾碎片
+4101041,Boîte de Filles 5 étoiles,Boîte à choix,"
+À utiliser pour choisir d\'une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"

@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratuit
 PUB_MISSION_COMPLETE2,Finir
 PUB_TICKET_NO_ENOUGH1,Parchemins de Jobs Insuffisants !
 PUB_TICKET_NO_ENOUGH2,Parchemins de Jobs Avancés Insuffisants !
-TAVERN_WINDOW_TIPS,"1. Finissez un Job et obtenez diverses récompenses. Chaque Fille ne peut prendre part à qu'à un seul Job à la fois.|2. Le nombre de Job quotidien est limité. Augmentez cette limite en améliorant votre niveau de Vip.|3. Si vous ne souhaitez pas faire certains Jobs, vous pouvez choisir de les réinitialiser tant que vous ne les avez pas encore commencé, en utilisant des Gemmes.|4. Utilisez des Parchemins de Jobs pour obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps et ainsi finir les Jobs.|6. Taux d'obtention de Job：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Taux d'obtention de Job en utilisant des Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Taux d'obtenir de Job en utilisant des Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles.|9. Stockage maximal de Parchemin de Jobs/Avancés : 999."
+TAVERN_WINDOW_TIPS,"1. Finissez un Job et obtenez diverses récompenses. Chaque Fille ne peut prendre part qu'à un seul Job à la fois.|2. Le nombre de Job quotidien (actualisé par le système) est limité. Augmentez cette limite en améliorant votre niveau de Vip.|3. Si vous ne souhaitez pas faire certains Jobs, vous pouvez choisir de les réinitialiser tant que vous ne les avez pas encore commencé, en utilisant des Gemmes.|4. Utilisez des Parchemins de Jobs pour obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps et ainsi finir les Jobs.|6. Taux d'obtention de Job：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Taux d'obtention de Job en utilisant des Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Taux d'obtenir de Job en utilisant des Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles.|9. Stockage maximal de Parchemin de Jobs/Avancés : 999."
 ITEM_SUMMON,Invoquer
 ITEM_SELL,Vendre
 ITEM_DETAIL,Détails
@@ -295,7 +295,7 @@ GROUP_5_6,Ange/Démon
 PROPHET_TREE_NOT_ENOUGH,Sceaux Insuffisants
 PROPHET_BRANCH_NOT_ENOUGH,Dossiers insuffisants
 DAILY_QUIZ_TIME_COUNT,Restant :
-DAILY_QUIZ_LEFT_COUNT,Chance(s) Restante(s) :
+DAILY_QUIZ_LEFT_COUNT,Chance restante :
 FIGHT,Défier
 AFTER_FREE,Rafraîchit dans
 MAINWIN_RIGHT_1,Marché
@@ -320,7 +320,7 @@ DAILY_QUIZ_AWARD,Récompenses du Quiz：
 DAILY_QUIZ_AWARD_1,Pièce
 DAILY_QUIZ_AWARD_2,Jus d'EXP et Plateau Repas
 DAILY_QUIZ_AWARD_3,Fragments de Filles
-DAILY_QUIZ_HELP_1,"1. Le Quiz de Pièce est débloqué au Niv. 20.|2. Vous avez 2 chances gratuites pour chaque Quiz par jour. Si vous ne gagnez pas le Quiz, vous ne perdrez pas de chance.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz et gagner plus de récompenses !|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Si vous gagnez le Quiz, les récompenses pourront être doublées ou tripliées."
+DAILY_QUIZ_HELP_1,"1. Le Quiz de Pièces est débloqué au Niv. 20.|2. Vous avez 2 chances gratuites pour chaque Quiz par jour. Si vous ne gagnez pas le Quiz, vous ne perdrez pas de chance.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz et gagner plus de récompenses.|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Si vous gagnez le Quiz, les récompenses pourront être doublées ou triplées."
 DAILY_QUIZ_HELP_2,1. Le Quiz d'EXP est débloqué au Niv. 25. Les Jus d'EXP et les Plateaux Repas sont des récompenses de gain.|2. Vous avez deux Quiz gratuits par jour. Seulement les victoires sont comptées.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz et gagner plus de récompenses.|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Les récompenses peuvent être doublées ou triplées aléatoirement.
 DAILY_QUIZ_HELP_3,1. Le Quiz de Filles est débloqué au Niv. 30. Vous pouvez obtenir des Filles en récompenses de gain.|2. Vous avez deux Quiz gratuits par jour. Seulement les victoires sont comptées.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz afin de gagner plus de récompenses.|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Les récompenses peuvent être doublées aléatoirement.
 DAILY_QUIZ_BUY_TIPS_1,VIP {1} peut acheter {2} fois
@@ -470,7 +470,7 @@ MIN_BEFORE,Il y a {1} minute(s)
 SECOND_BEFORE,Il y a quelques secondes
 SKIP_BATTLE2,Passer
 CHOOSE_OPPONENT,Sélectionner l'Adversaire
-CHOOSE_OPPONENT_TIPS,Sélectionner l'adversaire que vous voulez affronter：
+CHOOSE_OPPONENT_TIPS,Sélectionnez l'adversaire que vous voulez affronter：
 MY_POWER,Puissance：
 SCORE2,Score
 VIP_TEXT01,Acheter
@@ -642,7 +642,7 @@ FRIEND_RANK_AWARDS_TIME,Les récompenses seront envoyées dans：
 FRIEND_RANK_AWARDS_WINDOW,Récompenses
 RANK_TEXT03,Points
 FRIEND_LOVE_MAX,La limite du nombre de cœurs réclamé a été atteinte
-FRIEND_NOT_SEND_OR_GET,Il n'y a pas de cœur à réclamer ou à envoyer
+FRIEND_NOT_SEND_OR_GET,Il n'y a pas de cœur à récupérer ni à envoyer
 FRIEND_DAILY_LOVE_MAX,Le maximum de cœurs aujourd'hui a déjà été réclamé
 FRIEND_ASSISTANT_HELP,"1. L'Ami Boss se renouvelera chaque jour à 00:00 (UTC/GMT 0). Vous n'avez qu'une chance de défi. Seulement les victoires sont comptées.|2. Vous pouvez choisir le niveau d'Ami Boss pour combattre, le niveau le plus élevé nécessite que vos six Filles atteignent la puissance requise. Vous pouvez obtenir des récompenses différentes selon le niveau d'Ami Boss. ( Vous pouvez voir si vous pouvez choisir le nouveau niveau chaque jour à 00:00 (UTC/GMT 0) )|3. Vous pouvez choisir une Fille en service pour aider vos amis à vaincre l'Ami Boss. Lorsque vous combattez le Boss de votre ami, vous ne pouvez choisir qu'une Fille en service de votre ami.|4. Les Filles de soutien de vos amis bénéficient des attributs et des équipements de ces amis, mais elles bénéficient des attributs de votre Laboratoire.|5. À chaque fois que Senpai a aidé à vaincre le Boss d'un ami avec succès, le nombre de soutien de la semaine de Senpai augmentera de 1. Chaque lundi à 0h (UTC/GMT 0), les récompenses de soutien seront décidées en fonction du nombre de soutien effectuées de la semaine passée. |6. Vous pouvez passer le combat après avoir battu 3 fois le BOSS du niveau actuel sans l'aide de Fille en service."
 FRIEND_SEND_MAIL,Envoyer un Courrier
@@ -763,7 +763,7 @@ MANA_WEEK_CARD_TEXT03,Par exemple：Si vous possédez en même temps le Pass de 
 MANA_WEEK_CARD_TEXT04,Les Pièces dans l'Auto-Bataille seront augmentées de 130%%
 MONTH_CARD_HELP3,"Après avoir acheté le Pass de Pièces Hebdomadaires, vous obtiendrez immédiatement 50 EXP VIP.|Durant une semaine (168 heures), vous aurez un bonus de 100%% de Pièces dans l'Auto-Bataille.|Le Pass de Pièces Hebdomadaires et les Bonus de Pièces du VIP sont cumulables !"
 MONTH_CARD_HELP38,"Achetez le Pass de Pièces Hebdomadaires et recevez 50 EXP VIP immédiatement. Les pièces obtenues dans l'Auto-Bataille seront augmentées de 100%%%% pendant que l'abonnement est actif. Votre méthode de paiement est {1}, votre compte sera débité lorsque l'achat sera confirmé. L'abonnement se renouvellera automatiquement et vous serez débité 24 heures avant la fin de celui-ci, sauf s'il est annulé plus de 24 heures avant la fin de la période actuelle. L'abonnement peut être annulé dans les paramètres.|Le bonus du Pass de Pièces Hebdomadaires est cumulable à celui du VIP. Par exemple si vous avez le Pass de Pièces Hebdomadaires et VIP 2 vous aurez 120%% de Pièces supplémentaires dans l'Auto-Bataille."
-GRADE_UP_2,Monter
+GRADE_UP_2,Améliorer
 SHENXUE_GIFTBAG_WITH_STAR,Graduer une Fille {1} étoiles 1 fois：
 SHENXUE_GIFTBAG_ITEM_TEXT01,Limite
 SHENXUE_GIFTBAG_TIMES,{1}/{2}
@@ -939,7 +939,7 @@ PROPHET_TEXT01,Recruter
 CV,Voix :
 PASSWORD_INVALID,Le mot de passe ne peut pas être vide
 END_TEXT,Restant
-SKILL_UNLOCK,Capacité débloquée
+SKILL_UNLOCK,Compétence débloquée
 ARENA_CHOOSE_WINDOW,Arène
 ARENA_3V3_HELP,"Règles de la Bataille|1. Le joueur doit tout d'abord déployer 3 équipes de Filles. Vous devez avoir au moins 1 Fille par équipe. Vous pouvez changer la composition à tout moment.|2. Afin d'emporter la victoire vous devez gagner 2 Batailles sur les 3.|3. Vainquez toutes les Filles de l'adversaire dans 1 Bataille pour gagner la Bataille.|4. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Après la Bataille si vous êtes victorieux vous obtiendrez des points au classement, si vous êtes perdant vous perdrez des points.|6. Vous pouvez revoir vos 10 dernières batailles dans l'Historique des Batailles.||Règles des Récompenses|À la fin de la saison vous obtiendrez des récompenses suivant votre classement."
 SET_DEF_FORMATION,Modifier
@@ -1543,10 +1543,10 @@ SUBSCRIPTION_DISABLE_TIPS,"L'abonnement n'est pas disponible actuellement, veuil
 DATES_SOUND_TIPS,Aucune voix actuellement
 COMPLETE,Terminé
 CANCEL_2,Annuler
-ACTIVITY_WEDDING_MISSION_DESC_1,Collecter {1} fois le Butin dans la Campagne
+ACTIVITY_WEDDING_MISSION_DESC_1,Acheter {1} meuble(s) dans la Boutique des Meubles
 ACTIVITY_WEDDING_MISSION_DESC_2,Finir {1} Job(s)
-ACTIVITY_WEDDING_MISSION_DESC_3,Combattre {1} fois dans l'Arène
-ACTIVITY_WEDDING_MISSION_DESC_4,Envoyer {1} cadeau
+ACTIVITY_WEDDING_MISSION_DESC_3,Terminer {1} Quiz
+ACTIVITY_WEDDING_MISSION_DESC_4,Envoyer {1} cadeau(x)
 WEDDING_VOTE_TEXT_1,Bulletin d'amour
 WEDDING_VOTE_TEXT_2,Popularité
 WEDDING_VOTE_TEXT_3,Obtenir
@@ -1559,7 +1559,12 @@ WEDDING_VOTE_TEXT_9,Vote(s)
 WEDDING_VOTE_TEXT_10,Vous n'avez pas encore voté...
 WEDDING_VOTE_TEXT_11,Résultat
 WEDDING_VOTE_TEXT_12,L'événement est terminé. Vous ne pouvez plus voter
-WEDDING_VOTE_TEXT_13,"1. L'événement durera 14 jours. Pendant l'événement, vous pourrez obtenir des 【Bulletin d'amour】 en accomplissant des tâches afin de voter pour les Filles que vous préférez. La Fille ayant obtenu le plus de vote sera considérée en priorité lorsque l'Académie fera un nouveau Skin de Serment. (Si la Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des votes)|2. C'est le 4ème événement de Vote de Fille populaire, les 6 Filles de l'événement précédent ( Iron Fist, Angel, Hexa, Ésaü & Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael) ne participent plus pour cette fois. |3. L'événement est divisé en Phase de Groupes et Phase Finale, il y a le Groupe A et Groupe B pendant la Phase de Groupes, les 6 premières de chaque Groupe participeront à la Phase Finale. Groupe A : Maison Fantôme, Monstre et Démon. Groupe B : Maison Fée, Humain et Ange. La Phase de Groupe A aura lieu les jours 1 à 4 ; La Phase de Groupe B aura lieu les jours 5 à 8 et la Phase Finale se jouera les jours 9 à 14.|4. Les joueurs étant en dessous du Niv.30 ne peuvent pas voter.|5. Il y a 4 tâches d'événement. Vous pouvez obtenir 1 【Bulletin d'amour】 en complétant chaque tâche. Les tâches seront raffraîchies chaque jour, les【Bulletin d'amour】 non récupérés ne seront pas réenvoyés.|6. Les 【Bulletin d'amour】non-utilisés seront remis à 0 après chaque Phase de Groupe. N'oubliez pas de les utiliser dans le temps imparti.|7. Quand vous utilisez un certain nombre de 【Bulletin d'amour】 vous recevrez des récompenses dans vos courriers. Vous pouvez voir les détails des récompenses sur l'interface d'aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que ayez voté.|9. Si vous avez eu le Cadre d'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes comme récompense."
+WEDDING_VOTE_TEXT_13,"
+1. L\'événement dure 14 jours. Durant cet événement, terminez les tâches pour obtenir des 【Bulletins d\'amour】. Parmi ces tâches, votez pour vos Filles préférées afin qu\'elles aient une chance d\'obtenir un Skin de Serment. La Fille ayant obtenu le plus de votes obtiendra un Skin de Serment (si cette Fille possède déjà un Skin de Serment, la chance ira à la suivante dans la liste des résultats de votes).|2. C\'est la 5ème édition de Gagnez leurs Cœurs, ainsi les 12 Filles de l\'événement précédent (Iron Fist, Angel, Hexa, Ésaü & Jacob, Hottie, Sakura, Ithil, Kong Ming, Lucifael, Fenrir, Rina et Izanami) ne participeront plus à cet événement.|3. L\'événement est divisé en 2 phases : Phase de Groupes (Groupe A et Groupe B) et Phase Finale. Les 6 premières Filles de chaque groupe participeront à la Phase Finale. Le Groupe A comprend les Maisons Fantôme, Monstre et Démon, et le Groupe B comprend les Maisons Fée, Humain et Ange.
+Période de vote :
+Phase de Groupe A : Jour 1 à 4
+Phase de Groupe B : Jour 5 à 8
+Phase Finale : Jour 9 à 14|4. Seuls les joueurs ayant atteint le niveau 30 pourront participer aux votes.|5. Complétez les 4 tâches d\'événement et obtenez des【Bulletins d\'amour】. Les tâches seront raffraîchies quotidiennement. Cependant, les【Bulletins d\'amour】 non récupérés ne seront plus collectables.|6. Les 【Bulletins d\'amour】non-utilisés disparaîtront après chaque Phase de Groupe. N\'oubliez pas de les utiliser dans le temps imparti.|7. Recevez des récompenses supplémentaires par courrier, après avoir utilisé un certain nombre de 【Bulletin d\'amour】. Vous pouvez voir les détails des récompenses sur l\'interface - Aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que vous ayez voté.|9. Si vous avez déjà eu le Cadre d\'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes en guise de récompense."
 WEDDING_VOTE_TEXT_14,Par défaut
 WEDDING_VOTE_TEXT_15,Bulletin d'amour restant：{1}
 GAME_REPAIR_TIPS,"Si une erreur vous empêche de vous connecter, vous pouvez cliquer sur 【Réparation du client】 afin de résoudre le problème. Le système redémarrera le jeu une fois que le problème sera résolu."
@@ -1807,7 +1812,7 @@ UPGRADE_GIFTBAG_TEXT02,Aller à
 MANA_QUIZ,Quiz de Pièces {1}
 EXP_QUIZ,Quiz d'EXP {1}
 HERO_QUIZ,Quiz de Filles {1}
-DAILY_QUIZ_DESC,Il y a des niveaux plus élevés de récompense à obtenir. Touchez ici pour défier
+DAILY_QUIZ_DESC,Touchez ici pour défier un niveau supérieur et obtenir plus de récompenses !
 DAILY_QUIZ_FIGHT_FIRST,Veuillez cliquer sur l'image à gauche pour changer le niveau du Quiz
 SENIOR_SCROLL_IF_BUY,プレミアムガチャコインが足りません、購入しますか？
 TOWER_LEVEL,Étape {1}
@@ -2157,7 +2162,7 @@ FRIEND_TEAM_BOSS_KILL_AWARD,Récompense Actuelle：
 FRIEND_TEAM_BOSS,Équipe
 FRIEND_TEAM_BOSS_NAME1,Seigneur du Chaos
 FRIEND_TEAM_BOSS_NAME2,Chevalier Noir
-FRIEND_TEAM_BOSS_SKILL,Description de la Capacité
+FRIEND_TEAM_BOSS_SKILL,Description de la Compétence
 FRIEND_TEAM_BOSS_INVITE_WINDOW,Invitation
 FRIEND_TEAM_BOSS_APPLY_WINDOW,Postuler
 FRIEND_APPLY_DESC_1,Votre ami souhaiterait rejoindre votre équipe
@@ -2699,10 +2704,10 @@ ACTIVITY_FACTORY_PRODUCE_NUM,Quantité à confectionner
 ACTIVITY_FACTORY_PRODUCE_COST,Matériel à utiliser
 ACTIVITY_FACTORY_TIPS,"Vous avez réussi de confectionner {1}, veuillez collecter vos récompenses !"
 ACTIVITY_FACTORY_EASTER_EGG,Le dessert {1} a été mangé par les Chasseurs…Mais regarde ! Voici les récompenses envoyées par les Chasseurs !
-NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT02,"Durant l'événement, vous aurez plus de chance d'obtenir ：Carmen & Bianca et Maïa\nPlus vous tirez les Capsules, plus vous aurez de chances de les obtenir.\n(Ces Filles ne peuvent pas être obtenues dans - Recruter)"
+NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT02,"Durant cet événement, obtenez {1} en tirant des Capsules Avancées !\nPlus vous tirez de Capsules Avancées, plus vous aurez de chances d'obtenir {1} !"
 NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT03,"[c][d95b61]Attention：[-][/c]\nSi vous obtenez ces Filles via l'Échange dans Recruter, vous n'obtiendrez pas de récompenses."
 NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT04,Détails de la Fille
-NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT05,Obtenir Carmen & Bianca ou Maïa {2} fois
+NEW_SUMMON_SPECIAL_HERO_GIFT_TEXT05,Obtenir {1} {2} fois
 NEED_HERO_GUIDE,"Senpai, vous avez encore des Filles qui peuvent se joindre à la bataille, cliquez sur elles pour les envoyer se battre !"
 DELETE_CHAT_FOR_SURE,Êtes-vous sûr de vouloir le supprimer ?
 ACTIVITY_FACTORY_TIPS1,Veuillez choisir votre récompense préférée !
@@ -3411,7 +3416,7 @@ ENTRANCE_TEST_TILI_OK_TIPS,{1} Certificat(s) Acheté(s)
 MAX,MAX
 ONE_KEY_UPGRADE,Monter au MAX
 ONE_KEY_UPGRADE_TITLE,MAX
-ONE_KEY_UPGRADE_HINT,Utiliser les ressources pour l'améliorer au niveau max possible ?
+ONE_KEY_UPGRADE_HINT,Voulez-vous utiliser les ressources nécessaires afin d'améliorer la Fille à son niveau max actuel ?
 ACTIVITY_SPROUTS_STORY_TIP,Revoir l'histoire ?
 ACTIVITY_SPROUTTS_GROW,L'Haricot a grandi de {1}m !
 ACTIVITY_SPROUTTS_TEXT,Obtenir aléatoirement l'une des récompenses par arrosage
@@ -3538,7 +3543,7 @@ LIMIT_BUY_TIMES,Limite d'achat： {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent sur le Campus, vous pouvez les essayer dans différentes compositions."
 GUILD_KICK_TIPS,Êtes-vous sûr d'exclure ce joueur ?
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour combattre. Pendant la journée d'affichage, aucune Étape n'est disponible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 Étapes. Les ennemis changeront à chaque saison. L'équipe des ennemis peut être aperçue via le bouton ""!"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un Défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des Gemmes pour en acheter.|5. Chaque Étape vous permet d'obtenir des récompenses très importantes lorsque vous la passez pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Passer une Étape avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, vous pouvez utiliser des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous passez l'Étape 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque Étape (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à passer la 9ème Étape de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des Gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quelle Étape pour obtenir des points d'Examen: 1 point de l'Étape 1 à 20; 2 points de l'Étape 21 à 40; 4 points de l'Étape 41-60; 6 points de l'Étape 61-80; 8 points de l'Étape 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Chaque joueur TOP1 de chaque Maison recevra une récompense supplémentaire : un Cadre d'Avatar de 14 jours. Dans le cas, où plusieurs joueurs sont à égalité en première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen, et 10 joueurs au maximum obtiendriont la récompense supplémentaire."
-GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir ces nouvelles Filles augmente avec chaque [c][DE512B]100[-][/c] tirages de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]Carmen & Bianca[-][/c] ou une [c][DE512B]Maïa[-][/c].|4. La progression est réinitialisée dès l'obtention de Carmen & Bianca ou Maïa."
+GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir la nouvelle Fille augmente à chaque [c][DE512B]100[-][/c] tirage de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression est réinitialisée dès son obtention."
 GACHA_GUARANTEE_UP,Possibilité UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Tentative restante : {1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Tentative insuffisante !
@@ -3795,7 +3800,7 @@ RE_CHECKIN,Recollecter
 RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
 SUMMON_GIFTBAG_MENU01,Capsules utilisées ({1}/{2})
 SUMMON_GIFTBAG_MENU02,Capsules de Filles
-SUMMON_GIFTBAG_HELP,"Capsula a préparé des récompenses spéciales pour ces nouvelles Filles : Pendant l'événement, tirez des Capsules Avancées pour obtenir beaucoup de récompenses ! ||Nous publierons la date de la période suivante sur notre Facebook."
+SUMMON_GIFTBAG_HELP,"Capsula vous a préparé des récompenses spéciales à l'occasion de la nouvelle recrue de l'Académie Yume !||1. Durant cet événement, tirez des Capsules Avancées et obtenez diverses récompenses. À chaque palier de Capsules Avancées utilisées ou de nouvelle Fille obtenue, vous obtiendrez une abondance de récompenses variées !|2. Retrouvez plus d'informations concernant les détails de la prochaine saison de l'événement sur notre page officielle Facebook Girls X Battle 2-FR."
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,Utilisez {2}*{1} pour le débloquer
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Aperçu Partiel
 ACTIVITY_CHRISTMAS_SALE_DESC,Obtenez des récompenses\npersonnalisées grâce à vos\nTickets du Black Friday !
@@ -3816,7 +3821,7 @@ OLD_SCHOOL_OPEN_FLOOR,Nécessite de passer {1} étage(s) de Test
 OLD_SCHOOL_OPEN_STAR,Nécessite au moins une Fille 10 étoiles
 ACTIVITY_STUDY_TIPS1,Thème：
 ACTIVITY_STUDY_TIPS2,Votre niveau est proche du sien：
-ACTIVITY_STUDY_TIPS3,Chance(s) Restante(s)：
+ACTIVITY_STUDY_TIPS3,Chance restante：
 ACTIVITY_STUDY_TIPS4,Obtenez des récompenses\npour chaque ligne ou colonne complétée
 ACTIVITY_STUDY_HELP,"Bienvenue à l’Évaluation de Yume ! Cet événement est organisé tour à tour par les différentes Maisons du campus.|1. Appuyez sur les cases de question pour participer. Vous recevrez des récompenses en complétant une ligne ou une colonne entière.|2. Si vous trouvez une question trop difficile, vous pouvez la réinitialiser. Cependant, chaque case de question ne peut être réinitialisée qu'une seule fois.|3. Vous avez besoin d'une chance pour retourner la case de question/réinitialiser la question/répondre à la question à nouveau.|4. Durant les 7 jours de l'événement, vous récupérerez jusqu'à la limite de 4 chances au maximum par jour à 00:00 (GMT 0) chaque jour afin de participer à l'évaluation.|5. Après avoir terminé toutes les cases de question, vous débloquerez la récompense finale. N’oubliez pas de la récupérer !|6. Vous pouvez également copier la question et obtenir rapidement de l’aide de la part des autres joueurs sur Facebook/Discord."
 ALTAR_AUTO_TEXT06,"Vous êtes sûr de transférer Fille(s) 1 étoile*{1}, Fille(s) 2 étoiles*{2} et Fille(s) 3 étoiles*{3} ?"
@@ -4284,7 +4289,11 @@ Chaque étude augmentera votre progrès d\'un certain pourcentage：
 ACTIVITY_COURSE_LEARNING_TEXT15,Récompenses
 ACTIVITY_COURSE_LEARNING_TEXT16,Récompense customisée pas encore sélectionnée !
 STAGE_ACHIEVEMENT_WINDOW_CLOSE,Touchez la zone blanche pour fermer l'interface
-STAGE_ACHIEVEMENT_ENTRANCE_TEXT01,Récompense\ncollectable après\nÉtape {1}
+STAGE_ACHIEVEMENT_ENTRANCE_TEXT01,"
+Récompense
+collectable
+après
+{1} Étape(s)"
 STAGE_ACHIEVEMENT_ENTRANCE_TEXT02,Collectable
 ACTIVITY_LAFULI_BRANCH_TEXT,"Durant l'événement, collectez les Branches de Corail pour récupérer les récompenses."
 ACTIVITY_ICE_SECRET_ITEM_TIPS,Appuyez longuement sur l'icône pour plus de détails
@@ -4439,7 +4448,7 @@ SPACE_EXPLORE_TEXT_13,Veuillez d'abord vaincre tous les ennemis avant de défier
 SPACE_EXPLORE_TEXT_14,Touchez la zone blanche pour passer la bataille
 SPACE_EXPLORE_TEXT_15,Voulez-vous passer la bataille ?
 SPACE_EXPLORE_TEXT_16,Ne plus rappeler aujourd'hui
-SPACE_EXPLORE_TEXT_17,Récompense(s) Obtenue(s)
+SPACE_EXPLORE_TEXT_17,Historique de Récompenses
 SPACE_EXPLORE_TEXT_18,Liste des Filles Insolites
 SPACE_EXPLORE_TEXT_19,Cacher
 SPACE_EXPLORE_TEXT_20,Améliorer le Niv.
@@ -4786,7 +4795,7 @@ DRESS_ITEM_UP_WINDOW_1,Améliorer
 DRESS_ITEM_UP_WINDOW_2,Matériel Insuffisant !
 ACTIVITY_BEACH_SHOP_TEXT04,Disponible\ndans\n[c][78ff0c]{1}[-][/c]
 ACTIVITY_BEACH_PUZZLE_TEXT08,Compléter la Peinture plus de {1} fois
-DAILY_QUIZ_HELP_4,"1. Le Quiz de Pièce est débloqué au Niv. 20, le Quiz d'EXP est débloqué au Niv. 25, le Quiz de Filles est débloqué au Niv. 30.|2. Vous avez 2 chances gratuites pour chaque Quiz par jour. Si vous ne gagnez pas le Quiz, vous ne perdrez pas de chance.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz et gagner plus de récompenses !|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Si vous gagnez le Quiz, les récompenses pourront être doublées ou tripliées.|6. Si vous avez débloqué tous les niveaux de Quiz (Pièce, EXP, Filles), la fonction de「Tout Collecter」sera débloquée !|7. La fonction de「Tout Collecter」vous permet de collecter des récompenses rapidement !"
+DAILY_QUIZ_HELP_4,"1. Le Quiz de Pièces est débloqué au Niv. 20, le Quiz d'EXP est débloqué au Niv. 25, le Quiz de Filles est débloqué au Niv. 30.|2. Vous avez 2 chances gratuites pour chaque Quiz par jour. Si vous ne gagnez pas le Quiz, vous ne perdrez pas de chance.|3. Augmentez votre niveau afin de pouvoir débloquer plus de Quiz et gagner plus de récompenses !|4. Un niveau VIP plus haut vous permet d'augmenter le nombre de Quiz achetable par jour.|5. Si vous gagnez le Quiz, les récompenses pourront être doublées ou triplées.|6. Si vous avez débloqué tous les niveaux de Quiz (Pièces, EXP, Filles), la fonction de「Tout Collecter」sera débloquée !|7. La fonction de「Tout Collecter」vous permet de collecter des récompenses rapidement !"
 GACHA_RECORD_HELP,"1. L'historique de tirage inclut les 50 derniers tirages que vous avez effectués.|2. L'historique comprend les Caspules Normales, les Capsules Avancées, les Capsules d'Amitié et les Capsules à Souhait.|3. L'historique peut être supprimé après une longue période sans connexion sur le jeu."
 GACHA_RECORD_TITLE,Historique
 ACTIVITY_BEACH_GIFTBAG_HELP,"1. Une fois que les Packs seront réinitialisés, une possibilité supplémentaire d'achat s'ajoutera à votre limite actuelle."
@@ -4849,7 +4858,7 @@ DRESS_SUMMON_LABEL_3,Taux d'Obtention de\nla Tenue - Magie de Noël
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
-ONE_KEY_UPLEVEL_HINT,Voulez-vous utiliser les ressources nécessaires afin d'améliorer la Fille à son niveau max actuel ?
+ONE_KEY_UPLEVEL_HINT,Voulez-vous utiliser les ressources nécessaires afin d'améliorer la Fille à son Niveau Max actuel ?
 CLICK_WHITE_AREA_SKIP,Toucher pour passer
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT12,Vous n'avez pas encore voté !
 DRESS_SUMMON_X_TIME,Tirer [size=34]{1}[-] fois
@@ -4923,7 +4932,7 @@ QUICK_STARS_TEXT03,Graduer
 QUICK_STARS_TEXT04,Aucune Fille Matérielle
 ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"Votre limite de Pierre Antique obtenue a été atteinte, voulez-vous continuer à désintégrer ?\n(À la place des Pierres Antiques, vous obtiendrez des Essences. 1 Pierre Antique égale 1 Essence.)"
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"Cette Antiquité est utilisée,\nvoulez-vous continuer à choisir ?"
-DAILY_QUIZ_TEXT04,Utiliser des Gemmes pour obtenir plus de Chances：
+DAILY_QUIZ_TEXT04,Utilisez des Gemmes pour obtenir plus de Chances：
 PUB_MISSION_AUTO_TEXT1,Tout Collecter
 ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Plus vous possédez d'Antiquités Oranges dans votre collection\nplus vous aurez de choix d'Antiquités Oranges pour équiper vos Filles.
 ENTRANCE_TEST_PARTNER_NOT_READY,Vous avez choisi des Filles qui n'ont pas encore été entièrement équipées dans votre Équipe. Voulez-vous continuer ?
@@ -5190,7 +5199,7 @@ Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant attein
 Durant le combat, les PV et l’Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
 (2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
 Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
-(2) Après la fin de la phase – Finalistes, le Cadre d’Avatar spécial (28 Jours) vous seront envoyé en fonction de votre Classement."
+(2) Après la fin de la phase – Finalistes, le Cadre d’Avatar spécial (28 Jours) vous sera envoyé en fonction de votre Classement."
 NEW_ARENA_ALL_SERVER_RANK_1,[c][399d21]Bronze {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_2,[c][6b7a86]Argent {1}[-][/c]
 NEW_ARENA_ALL_SERVER_RANK_3,[c][e6b300]Or {1}[-][/c]
@@ -5311,7 +5320,7 @@ ACTIVITY_SECTRETTREASURE_TEXT13,Récompenses
 ACTIVITY_SECTRETTREASURE_TEXT14,Récompenses Surprises
 ACTIVITY_SECTRETTREASURE_TEXT15,Surprises
 ACTIVITY_SECTRETTREASURE_TEXT16,Effets Surprises
-ACTIVITY_PARY_ALL_AWARDS,Récompense(s) Obtenue(s)
+ACTIVITY_PARY_ALL_AWARDS,Historique de Récompenses
 BATTLE_RECORD_ERROR,"Une erreur est survenue durant l'analyse de cette bataille, la vidéo est indisponible."
 ACTIVITY_SECTRETTREASURE_TEXT17,Rafraîchit dans
 ACTIVITY_SECTRETTREASURE_TEXT18,Termine dans
@@ -5355,7 +5364,7 @@ TRAVEL_NEW_TEXT17,"Cette Fille est actuellement dans le Gîte dans Excursion, vo
 TRAVEL_NEW_TEXT18,"Cette Fille est actuellement dans un Bâtiment (Boulangerie/Arbre à Souhait/Marché) dans Excursion, voulez-vous la retirer ?"
 ACTIVITY_COUNTDOWN_TEXT01,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël et Pack de l'Avent !
 ACTIVITY_COUNTDOWN_TEXT02,Vous avez déjà collecté les récompenses d'aujourd'hui.\nRevenez demain pour d'autres récompenses de Noël !
-ACTIVITY_CHRISTMAS_SIGN_UP_TEXT01,Récompense(s) Obtenue(s)
+ACTIVITY_CHRISTMAS_SIGN_UP_TEXT01,Historique de Récompenses
 ACTIVITY_CHRISTMAS_SIGN_UP_TEXT02,"Cette récompense de Noël n'est plus disponible, Senpai !"
 ACTIVITY_COUNTDOWN_HELP,"1. Durant cet événement, collectez des récompenses de Noël de votre Calendrier de l'Avent à chaque connexion quotidienne !|2. En collectant certaines des récompenses de Noël, un Pack de l'Avent sera déclenché durant une période de temps limité.|3. Les récompenses de Noël de connexion quotidienne et les Pack de l'Avent ne seront disponibles uniquement durant 24 heures, et ne seront plus obtenables après la réinitialisation à 00:00 (GMT)."
 ACTIVITY_COUNTDOWN_TEXT03,Pack de l'Avent
@@ -5476,7 +5485,7 @@ ACTIVITY_LUCKYBOXES_TEXT07,Choisir
 ACTIVITY_LUCKYBOXES_TEXT08,Choisissez une récompense comme la Récompense Finale.\nObtenez toutes ces 3 récompenses pour accéder au tour suivant !
 ACTIVITY_LUCKYBOXES_TEXT09,Récompenses
 ACTIVITY_LUCKYBOXES_TEXT10,Tour {1}
-ACTIVITY_LUCKYBOXES_TEXT11,Récompense(s) Obtenue(s)
+ACTIVITY_LUCKYBOXES_TEXT11,Historique de Récompenses
 ACTIVITY_LUCKYBOXES_TEXT12,Pack à durée limité
 ACTIVITY_LUCKYBOXES_TEXT13,Veuillez d'abord choisir la Récompense Finale !
 DUNGEON_TEXT1,Cette Fille n'a perdu aucun PV
@@ -5502,7 +5511,7 @@ TIME_CLOISTER_HELP05,"1. Une Fille Suppléante est disponible dans les Défis de
 TIME_CLOISTER_TEXT65,Technique · Fille Suppléante
 TIME_CLOISTER_TEXT66,Utilisez les Points de Cauchemar pour améliorer le niveau et les Compétences Avancées de la Fille Suppléante.
 TIME_CLOISTER_TEXT67,Montrer
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune(20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 1 Gouvernail = 1 Pièce de Fortune(80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune(100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune (20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune (20 fois au maximum)|——Tirer 5 Jetons de Capsule Avancée = 1 Pièce de Fortune (80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune (100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
 ACTIVITY_LUCKYBOXES_TEXT15,"Après la fin de l'événement, vos Pièces de Fortune, les points de Fortune et la progression des Récompenses Finales seront conservés jusqu'au prochain événement."
 TIME_CLOISTER_TEXT68,Veuillez montrer une {1} pour compléter cette tâche.
 TIME_CLOISTER_TEXT69,Veuillez choisir la Tenue requise à montrer.
@@ -5662,10 +5671,25 @@ ACTIVITY_FISH_AUTO_TEXT,Combien de fois voulez-vous pêcher ?
 WORLD_BOSS_SWEEP_TEXT01,Raid en cours...
 WORLD_BOSS_SWEEP_TEXT02,Arrêter
 WORLD_BOSS_SWEEP_TEXT03,Confirmer
-WORLD_BOSS_SWEEP_TEXT04,Le Raid est terminé ! [c][0069cc]{1}[-][/c] Carte(s) Pratique(s) utilisée(s) !
+WORLD_BOSS_SWEEP_TEXT04,Le Raid est terminé ! Vous avez défié [c][0069cc]{1}[-][/c] fois.
 WORLD_BOSS_SWEEP_TEXT05,Voulez-vous arrêter le Raid ?
 NEW_PLAYER_ACTIVITY_TIPS_TITLE,Attention
 NEW_PLAYER_ACTIVITY_TIPS_BUTTON,Confirmer
 WORLD_BOSS_SWEEP_TEXT06,Dégâts
 SHOW_WINDOW_TEXT47,Le Niveau de la Vitrine a été actualisé !
 WORLD_BOSS_SWEEP_TEXT07,Étape [c][0069cc]{1}[-][/c]
+SETTING_UP_11,Notification
+SETTING_UP_WINDOW_11,Notification
+ACTIVITY_WEDDING_MISSION_DESC_5,Combattre {1} fois dans l'Arène avec une Fille de Serment
+TOWER_SHOW_TEXT01,Passez encore {1} Étape(s) pour obtenir :
+TOWER_SHOW_TEXT02,Passez cette Étape pour obtenir :
+GUILD_TEXT70,Actualiser
+FIREWORK_TEXT01,已消耗代幣
+ACTIVITY_FIREWORK_SHOP_WINDOW,煙花節特供
+FIREWORK_TEXT03,已消耗{1}代幣
+FIREWORK_TEXT04,累計消耗一定數量的代幣後，可解鎖新商品
+FIREWORK_TEXT05,消耗{1}
+FIREWORK_TEXT06,累計消耗{1}個代幣后可解鎖！
+FIREWORK_TEXT07,初始解鎖
+FIREWORK_TEXT08,煙花節商店幫助=======
+NOTICE_BTN_GO_TO_TEXT,Aller voir
