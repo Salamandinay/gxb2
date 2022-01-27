@@ -11,7 +11,7 @@ id,name,from,content
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
 11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
-13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, ""Neujahrsbox zu 2022"" *5 und ""Premium Neujahrsbox zu 2022"" *1 zu erhalten. Hier sind deine Belohnungen."
+13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1 und Streichholz *1 zu erhalten. Hier sind deine Belohnungen."
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
 15,Tötungsbelohnungen,Systembenachrichtigung,Herzlichen Glückwunsch! Der Freundesboss wurde von dir getötet. Du erhältst die folgenden Belohnungen!
 16,Belohnungen (Freundesboss),Systembenachrichtigung,Der Freund BOSS wurde erfolgreich besiegt. Herzlichen Glückwunsch zu den folgenden Belohnungen!
@@ -19,7 +19,7 @@ id,name,from,content
 18,Belohnungen - Mädchenversammlung,Systembenachrichtigung,Herzliche Glückwünsche! Du hast beim Mädchen-Versammlungsevent ein bestimmtes Ziel erreicht. Hier sind die entsprechenden Belohnungen!
 19,Beta-Aufladungsrabatt,Systembenachrichtigung,"Vielen Dank, dass du während der Testphase {1} gekauft hast. Hier ist deine Bonusbelohnung für die Unterstützung!"
 20,Lottobelohnungen,Systembenachrichtigung,Herzliche Glückwünsche! Du hast {1} Punkte beim Lottoevent erreicht! Hier sind deine Belohnungen!
-21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Elementarkugel *100, Super Job-Pergament *1 und Wunschmünze *5 zu erhalten. Hier sind deine Belohnungen."
+21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Elementarkugel *100, Super Job-Pergament *1 und Streichholz *1 zu erhalten. Hier sind deine Belohnungen."
 22,Belohnungen - Jobaufgaben,Systembenachrichtigung,Herzlichen Glückwünsche! Du hast während des Jobaufgaben-Events die {1}-Sterne Jobaufgaben abgeschlossen! Hier sind deine Belohnungen!
 23,Auflade-Nachricht,Systembenachrichtigung,"Vielen Dank, dass du dich für {1} entschieden hast. Deine Items sind im Rucksack erhältlich. Schau nach~"
 24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150 und Angelrute *5 zu erhalten. Hier sind deine Belohnungen."
@@ -59,7 +59,7 @@ id,name,from,content
 58,Gildenkampf Finale Runde,Systembenachrichtigung,Herzlichen Glückwunsch! Deine Gilde belegte in der Endrunde des Gildenkriegs Platz {1}. Hier sind deine Belohnungen!
 59,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Zweitplatzierte in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
 60,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Champion in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
-61,Weihnachtskarte,Systembenachrichtigung,Als Lv.{1} Spieler bekommst du heute die folgenden Belohnungen. Deine Weihnachtskarte läuft in {3} Tag(en) ab!
+61,Karte zum Frühlingsfest,Systembenachrichtigung,Du bist ein Lv.{1} Spieler und heute erhältst du die folgenden Belohnungen. Deine Karte zum Frühlingsfest läuft in {3} Tag(en) ab.
 62,Monatskarten-Verlängerung erfolgreich,Monatskarte,"Vielen Dank, dass du deine Monatskarte verlängert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 63,Mini Monatskarten-Verländerung erfolgreich,Mini Monatskarte,"Vielen Dank, dass du deine Mini Monatskarte erneuert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 64,Puzzleevent,Event Mail,Herzliche Glückwünsche! Du hast {1} Puzzles abgeschlossen. Du hast die folgenden Belohnungen verdient!
@@ -200,7 +200,7 @@ Wir entschuldigen uns für die Unannehmlichkeit. Wenn du weitere Fragen hast, we
 187,Miss Yume - Abstimmungsbelohnung,Event-Mail,"Lieber Senpai, gratuliere, du hast während des Event ""Miss Yume"" die Abstimmungsaufgabe abgeschlossen. Hier sind deine Belohnungen!"
 188,Tägliches Geschenk der Sterne,Event-Mail,"Lieber Senpai, bitte nimm das Geschenk der Sterne an! Die Sterne werden dich weiter segnen und Vivian wünscht dir alles Gute in der Yume Akademie!"
 190,Aufnahmeprüfung - Stufe erhöht,Event-Mail,"Gratuliere, deine Stufe im Event ""Aufnahmeprüfung"" wird erhöht! Bitte gehe zum Event, um die neu entsperrten Effekte, die deiner aktuellen Stufe entsprechen, zu prüfen!"
-191,Outfit-Shop Eröffnungsfeier,Systembenachrichtigung,"Gratuliere, du hast während des Events zur Eröffnungsfeier vom Outfit-Shop die entsprechenden Aufgaben abgeschlossen und folgende Belohnungen erhalten!"
+191,Outfit Shopping-Festival,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Outfit Shopping-Festival"" die entsprechenden Aufgaben abgeschlossen und folgende Belohnungen erhalten!"
 192,Rotkäppchen-Belohnungen,Event-Mail,"Vielen Dank für den Kauf von ""Rotkäppchens Geschenk"". Hier sind die heutigen Belohnungen. Deine Luxus-Belohnungen (Lv.2) laufen in {1} Tag(en) ab!"
 193,Rotkäppchen-Belohnungen,Event-Mail,"Vielen Dank für den Kauf von ""Rotkäppchens Geschenk"". Hier sind die heutigen Belohnungen. Deine Luxus-Belohnungen (Lv.3) laufen in {1} Tag(en) ab!"
 194,Kostümanpassung (Wasserpistole),Systembenachrichtigung,"
@@ -239,4 +239,4 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 217,Alter Campus endet bald,Systembenachrichtigung,"Lieber Senpai, Alter Campus wird in 24 Stunden geschlossen. Bitte begebe dich schnell auf den Campus, um höhere Etagen zu erobern!"
 218,Letzter Tag für limitierte Pakete!,Systembenachrichtigung,"Lieber Senpai, das Paket-Event ""{1}"" wird in 1 Tag beendet! Verpass die preiswerten Pakete bloß nicht!"
 219,Bonus zum Feuerwerksspektakel,Systembenachrichtigung,"Lieber Senpai, hast du heute schon am Event ""Feuerwerksspektakel"" teilgenommen? Hier, ich schick dir noch ein Streichholz als Bonus!"
-220,Belohnungen zum Feuerwerksspektakel,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Feuerwerksspektakel"" insgesamt {1} Feuerwerksfotos gemacht und folgende Belohnungen erhalten!"
+220,Belohnungen zum Feuerwerksspektakel,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Feuerwerksspektakel"" insgesamt {1} Feuerwerksshow(s) abgeschlossen und folgende Belohnungen erhalten!"

@@ -440,6 +440,7 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 8004,ui_sound_web/ns_shaft_sound02,1,1,,0,1,-1,100,1,,
 8005,ui_sound_web/ns_shaft_sound03,1,1,,0,1,-1,100,1,,
 8006,ui_sound_web/ns_shaft_sound00,137,0,,0,2,-1,80,1,,
+8007,ui_sound_web/sound_firework_burst,1,1,,0,1,-1,100,1,,1
 60001,story_sound_web/01mijiale/mijiale_plot01,1,1,,0,1,,100,1,0.2,
 60002,story_sound_web/01mijiale/mijiale_plot02,1,1,,0,1,,100,1,0.2,
 60003,story_sound_web/01mijiale/mijiale_plot03,1,1,,0,1,,100,1,0.2,
@@ -4999,4 +5000,3 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 530150401,partner_sound/53015_web/530150401,7,1,0,0,1,0,70,1,0.2,
 530150601,partner_sound/53015_web/530150601,15,1,0,0,1,0,70,1,0.2,
 530150701,partner_sound/53015_web/530150701,7,1,0,0,1,0,70,1,0.2,
-530150801,partner_sound/53015_web/530150801,4,1,0,0,1,0,70,1,0.2,

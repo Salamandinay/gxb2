@@ -5,15 +5,15 @@ id,name,brief,desc
 4,Pièce de Guilde,Pièce de Guilde,À utiliser pour acheter des objets dans la Boutique de Guilde
 5,EXP de Guilde,EXP de Guilde,À utiliser pour augmenter le niveau de la Guilde
 6,Coupon,Coupon,À utiliser pour acheter des objets dans le Distributeur et dans la Boutique de la Chance
-7,Liste de la Classe,Monnaie utilisée pour acheter des Filles,À utiliser pour échanger des Filles dans le Magasin de Transfert
+7,Liste de la Classe,Matériel d'Échange,À utiliser pour échanger des Filles dans le Magasin de Transfert
 8,VIP EXP,VIP EXP,
-9,Jus d'EXP,Augmente l'EXP d'une Fille,À utiliser pour augmenter le niveau d'une Fille dans l'interface des attributs
-10,Plateau Repas,Augmente le Niveau Max d'une Fille,À utiliser pour augmenter le Niveau Max d'une Fille dans l'interface des attributs
-11,Cœur,Monnaie pour acheter Capsule d'Amitié,Envoyez et réclamez aux autres joueurs de la liste d'amis. À utiliser pour invoquer une Fille dans Capsule d'Amitié
+9,Jus d'EXP,Matériel d'Amélioration,À utiliser pour augmenter le niveau d'une Fille dans l'interface des attributs
+10,Plateau Repas,Matériel d'Amélioration,À utiliser pour augmenter le Niveau Max d'une Fille dans l'interface des attributs
+11,Cœur,Matériel d'Échange,Obtenable en envoyant et recevant des Cœurs à vos amis. À utiliser pour invoquer une Fille dans Capsule d'Amitié
 12,Points de la Capsule Œuf d'Or,Points de la Capsule Œuf d'Or,
-13,Pass,Pass pour participer au Test,À utiliser pour faire un combat dans Test
-14,Ciseau de Cristal,Matériaux,À utiliser pour améliorer un Cristal dans l'interface des équipements d'une Fille
-15,Livre Sacré,Devise du Sanctuaire,À utiliser pour acheter des objets dans la Boutique de Sanctuaire
+13,Pass,Pass,À utiliser pour faire un combat dans Test
+14,Ciseau de Cristal,Matériel de Cristal,À utiliser pour améliorer un Cristal dans l'interface des équipements d'une Fille
+15,Livre Sacré,Devise du Sanctuaire,À utiliser pour échanger des objets dans la Boutique de Sanctuaire
 16,Médaille d'Arène,Devise du Magasin de l'Arène,À utiliser pour échanger des objets dans le Magasin de l'Arène
 17,Coffre de l'Arène,Le coffre sera ouvert automatiquement dans les courriers,"Obtient aléatoirement des Pièces, Jus d'EXP, Plateau Repas, Equipement Légendaire, Fragment de Filles, et autres objets rare"
 18,Pain,Objet d'Endurance,À utiliser pour faire un Raid dans le Moulin de la Guilde
@@ -30,10 +30,10 @@ id,name,brief,desc
 30,頭像（無用）,Avatar Spécial,填充
 31,Matériaux de Construction,Matériaux de Construction,À utiliser pour construire
 32,戰姬置換材料（無用）,Matériaux d'Echange de Fille,À utiliser pour remplacer une Fille 10 étoiles
-33,Jeton de Capsule Normale,Jeton,À utiliser pour tirer une Fille dans la Capsule Normale
+33,Jeton de Capsule Normale,Jeton,À utiliser pour invoquer une Fille dans la Capsule Normale
 34,Ticket d'Arène,Ticket d'Arène,Ticket d'Arène
 35,Ticket du Distributeur,Ticket du Distributeur,À utiliser dans le Distributeur Normal
-36,Jeton de Capsule Avancée,Jeton,À utiliser pour tirer une Fille dans la Capsule Avancée
+36,Jeton de Capsule Avancée,Jeton,À utiliser pour Invoquer une Fille dans la Capsule Avancée
 37,Cookies,Matériaux d'Echange,"Matériel Spécial, à utiliser pour obtenir des objets"
 38,Gâteau de Lune,Matériaux d'Echange,"Matériel Spécial, à utiliser pour obtenir des objets"
 39,Batterie Manuelle,Matériel d'Evenement,"Les Filles ont fabriquées les batteries à la main, elles n'ont pas été prudentes durant la fabrication. Utilisez-les pour faire des dégâts important contre les BOSS"
@@ -2234,9 +2234,9 @@ Humain/Monstre/Fée.
 7108,Repos Balnéaire,Skin,Skin de Chevalir - Repos Balnéaire
 27108,Repos Balnéaire,Skin,Skin de Chevalir - Repos Balnéaire
 4102004,Boîte de Fille 5 étoiles,Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(Le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
-156,Bulletin d'amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
-157,Bulletin d'amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
-158,Bulletin d'amour,Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+156,Bulletin d'Amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+157,Bulletin d'Amour,Matériel d'Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
+158,Bulletin d'Amour,Événement,"Matériel d'Événement, à utiliser pour voter dans l'événement - Gagnez leurs Cœurs"
 155,Billet de Théâtre,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 159,Marteau Gonflable,Matériel d'Événement,"Matériel d'Événement, à utiliser pour participer à l'événement Surprises Glacées."
 160,Dorayaki,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
@@ -4918,121 +4918,136 @@ Humain/Monstre/Fée.
 7237,Fourrure Neige,Skin,Skin de Diana - Fourrure Neige
 27237,Fourrure Neige,Skin,Skin de Diana - Fourrure Neige
 20001072,Avatar Exclusif de Mercure,Avatar Spécial,Avatar Exclusif de Mercure
-316,Allumette,Matériel d'Événement,"À utiliser pour allumer des pétards dans l'événement ""Les Pétards du Printemps""."
-317,Photographie de Feux d'Artifice,Matériel d'Événement,À utiliser pour échanger contre des récompenses. Obtenez 1 [c][d76500]Photographie de Feux d'Artifice[-][/c] pour chaque [c][d76500]Allumettes[-][/c] consommée.
+316,Allumette,Matériel d'Événement,À utiliser pour allumer des pétards dans l'événement - Les Pétards du Printemps
+317,Carte de Spectacle,Matériel d'Événement,"Matériel d'Événement, à utiliser pour échanger des récompenses dans la boutique de l'événement - Les Pétards du Printemps. Pour chaque utilisation d'[c][d76500]Allumette[-][/c], vous obtiendrez 1 [c][d76500]Carte de Spectacle[-][/c]"
 7238,Poker Passionnel,Skin,Skin d'Éléanor - Poker Passionnel
 27238,Poker Passionnel,Skin,Skin d'Éléanor - Poker Passionnel
 930216,Nouvelle Fille,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
 51017,Nouvelle Fille,,
 651024,Nouvelle Fille,,
 751017,Nouvelle Fille,,
-3100991,春节頭部,個性裝扮,套裝「春节」的頭部
-3100992,春节頭部,個性裝扮,套裝「春节」的頭部
-3100993,春节頭部,個性裝扮,套裝「春节」的頭部
-3100994,春节頭部,個性裝扮,套裝「春节」的頭部
-3100995,春节頭部,個性裝扮,套裝「春节」的頭部
-3100996,春节頭部,個性裝扮,套裝「春节」的頭部
-3100997,春节上衣,個性裝扮,套裝「春节」的上衣
-3100998,春节上衣,個性裝扮,套裝「春节」的上衣
-3100999,春节上衣,個性裝扮,套裝「春节」的上衣
-3101000,春节上衣,個性裝扮,套裝「春节」的上衣
-3101001,春节上衣,個性裝扮,套裝「春节」的上衣
-3101002,春节上衣,個性裝扮,套裝「春节」的上衣
-3101003,春节下裝,個性裝扮,套裝「春节」的下裝
-3101004,春节下裝,個性裝扮,套裝「春节」的下裝
-3101005,春节下裝,個性裝扮,套裝「春节」的下裝
-3101006,春节下裝,個性裝扮,套裝「春节」的下裝
-3101007,春节下裝,個性裝扮,套裝「春节」的下裝
-3101008,春节下裝,個性裝扮,套裝「春节」的下裝
-3101009,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101010,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101011,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101012,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101013,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101014,春节頭飾,個性裝扮,套裝「春节」的頭飾
-3101015,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101016,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101017,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101018,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101019,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101020,春节裝飾,個性裝扮,套裝「春节」的裝飾
-3101021,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101022,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101023,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101024,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101025,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101026,红色A頭部,個性裝扮,套裝「红色A」的頭部
-3101027,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101028,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101029,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101030,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101031,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101032,红色A上衣,個性裝扮,套裝「红色A」的上衣
-3101033,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101034,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101035,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101036,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101037,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101038,红色A下裝,個性裝扮,套裝「红色A」的下裝
-3101039,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101040,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101041,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101042,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101043,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101044,红色A頭飾,個性裝扮,套裝「红色A」的頭飾
-3101045,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101046,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101047,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101048,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101049,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101050,红色A裝飾,個性裝扮,套裝「红色A」的裝飾
-3101051,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101052,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101053,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101054,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101055,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101056,红色B頭部,個性裝扮,套裝「红色B」的頭部
-3101057,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101058,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101059,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101060,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101061,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101062,红色B上衣,個性裝扮,套裝「红色B」的上衣
-3101063,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101064,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101065,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101066,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101067,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101068,红色B下裝,個性裝扮,套裝「红色B」的下裝
-3101069,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101070,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101071,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101072,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101073,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101074,红色B頭飾,個性裝扮,套裝「红色B」的頭飾
-3101075,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3101076,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3101077,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3101078,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3101079,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3101080,红色B裝飾,個性裝扮,套裝「红色B」的裝飾
-3200991,春节頭部碎片,個性裝扮碎片,春节頭部碎片
-3200997,春节上衣碎片,個性裝扮碎片,春节上衣碎片
-3201003,春节下裝碎片,個性裝扮碎片,春节下裝碎片
-3201009,春节頭飾碎片,個性裝扮碎片,春节頭飾碎片
-3201015,春节裝飾碎片,個性裝扮碎片,春节裝飾碎片
-3201021,红色A頭部碎片,個性裝扮碎片,红色A頭部碎片
-3201027,红色A上衣碎片,個性裝扮碎片,红色A上衣碎片
-3201033,红色A下裝碎片,個性裝扮碎片,红色A下裝碎片
-3201039,红色A頭飾碎片,個性裝扮碎片,红色A頭飾碎片
-3201045,红色A裝飾碎片,個性裝扮碎片,红色A裝飾碎片
-3201051,红色B頭部碎片,個性裝扮碎片,红色B頭部碎片
-3201057,红色B上衣碎片,個性裝扮碎片,红色B上衣碎片
-3201063,红色B下裝碎片,個性裝扮碎片,红色B下裝碎片
-3201069,红色B頭飾碎片,個性裝扮碎片,红色B頭飾碎片
-3201075,红色B裝飾碎片,個性裝扮碎片,红色B裝飾碎片
+3100991,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100992,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100993,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100994,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100995,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100996,Tête (Cerf-volant Printanier),Tête,Tête de la Tenue - Cerf-volant Printanier
+3100997,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3100998,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3100999,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3101000,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3101001,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3101002,Haut (Cerf-volant Printanier),Haut,Haut de la Tenue - Cerf-volant Printanier
+3101003,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101004,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101005,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101006,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101007,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101008,Bas (Cerf-volant Printanier),Bas,Bas de la Tenue - Cerf-volant Printanier
+3101009,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101010,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101011,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101012,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101013,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101014,Accessoire (Cerf-volant Printanier),Accessoire,Accessoire de la Tenue - Cerf-volant Printanier
+3101015,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101016,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101017,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101018,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101019,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101020,Objet (Cerf-volant Printanier),Objet,Objet de la Tenue - Cerf-volant Printanier
+3101021,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101022,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101023,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101024,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101025,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101026,Tête (Mystique),Tête,Tête de la Tenue - Mystique
+3101027,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101028,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101029,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101030,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101031,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101032,Haut (Mystique),Haut,Haut de la Tenue - Mystique
+3101033,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101034,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101035,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101036,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101037,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101038,Bas (Mystique),Bas,Bas de la Tenue - Mystique
+3101039,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101040,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101041,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101042,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101043,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101044,Accessoire (Mystique),Accessoire,Accessoire de la Tenue - Mystique
+3101045,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101046,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101047,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101048,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101049,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101050,Objet (Mystique),Objet,Objet de la Tenue - Mystique
+3101051,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101052,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101053,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101054,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101055,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101056,Tête (Bourgeoisie),Tête,Tête de la Tenue - Bourgeoisie
+3101057,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101058,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101059,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101060,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101061,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101062,Haut (Bourgeoisie),Haut,Haut de la Tenue - Bourgeoisie
+3101063,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101064,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101065,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101066,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101067,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101068,Bas (Bourgeoisie),Bas,Bas de la Tenue - Bourgeoisie
+3101069,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101070,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101071,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101072,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101073,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101074,Accessoire (Bourgeoisie),Accessoire,Accessoire de la Tenue - Bourgeoisie
+3101075,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3101076,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3101077,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3101078,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3101079,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3101080,Objet (Bourgeoisie),Objet,Objet de la Tenue - Bourgeoisie
+3200991,Fragment de la Tête (Cerf-volant Printanier),Fragment de Tenue,Fragment de la Tête (Cerf-volant Printanier)
+3200997,Fragment du Haut (Cerf-volant Printanier),Fragment de Tenue,Fragment du Haut (Cerf-volant Printanier)
+3201003,Fragment du Bas (Cerf-volant Printanier),Fragment de Tenue,Fragment du Bas (Cerf-volant Printanier)
+3201009,Fragment de l'Accessoire (Cerf-volant Printanier),Fragment de Tenue,Fragment de l'Accessoire (Cerf-volant Printanier)
+3201015,Fragment de l'Objet (Cerf-volant Printanier),Fragment de Tenue,Fragment de l'Objet (Cerf-volant Printanier)
+3201021,Fragment de la Tête (Mystique),Fragment de Tenue,Fragment de la Tête (Mystique)
+3201027,Fragment du Haut (Mystique),Fragment de Tenue,Fragment du Haut (Mystique)
+3201033,Fragment du Bas (Mystique),Fragment de Tenue,Fragment du Bas (Mystique)
+3201039,Fragment de l'Accessoire (Mystique),Fragment de Tenue,Fragment de l'Accessoire (Mystique)
+3201045,Fragment de l'Objet (Mystique),Fragment de Tenue,Fragment de l'Objet (Mystique)
+3201051,Fragment de la Tête (Bourgeoisie),Fragment de Tenue,Fragment de la Tête (Bourgeoisie)
+3201057,Fragment du Haut (Bourgeoisie),Fragment de Tenue,Fragment du Haut (Bourgeoisie)
+3201063,Fragment du Bas (Bourgeoisie),Fragment de Tenue,Fragment du Bas (Bourgeoisie)
+3201069,Fragment de l'Accessoire (Bourgeoisie),Fragment de Tenue,Fragment de l'Accessoire (Bourgeoisie)
+3201075,Fragment de l'Objet (Bourgeoisie),Fragment de Tenue,Fragment de l'Objet (Bourgeoisie)
 4101041,Boîte de Filles 5 étoiles,Boîte à choix,"
 À utiliser pour choisir d\'une Fille
 5 étoiles de la Maison Fantôme/
 Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
+4303001,Boîte de Skin (Vapeur),Boîte à choix,À utiliser pour choisir d'obtenir un Skin. (Touchez la loupe pour savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4202012,Boîte de Ressources Avancées,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Capsule Avancée*10, Ticket du Distributeur*50, Sceau*3, Bouton Bois*6, Bouton Chic*6"
+8071,Tendre Souvenir,Cadre d'Avatar,Obtenable dans la Reconstitution du Livre
+1900008,Sablier d'Amour,Meuble,"Ce sablier préservera à jamais l'amour inconditionnel de toutes les Filles, et ce malgré le temps qui passe."
+20001073,Avatar du Tigre d'Eau 2022,Avatar Spécial,Avatar du Tigre d'Eau 2022
+7241,Secret Chocolaté,Skin,Skin de Monica - Secret Chocolaté
+27241,Secret Chocolaté,Skin,Skin de Monica - Secret Chocolaté
+4601023,Boîte de Tenue (Magie de Noël),Boîte à choix,À utiliser pour obtenir tous les éléments de la Tenue - Magie de Noël (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4601024,Boîte de l'ensemble de Tenue Orange,Boîte à choix,À utiliser pour choisir d'obtenir un ensemble de Tenue Orange (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+7239,Tigre Fortuné,Skin,Skin de Carmen & Bianca - Tigre Fortuné
+27239,Tigre Fortuné,Skin,Skin de Carmen & Bianca - Tigre Fortuné
+7240,Prospérité Chatoyante,Skin,Skin de Cassie - Prospérité Chatoyante
+27240,Prospérité Chatoyante,Skin,Skin de Cassie - Prospérité Chatoyante
+7242,Serveuse Enivrée,Skin,Skin de Vanessa - Serveuse Enivrée
+27242,Serveuse Enivrée,Skin,Skin de Vanessa - Serveuse Enivrée

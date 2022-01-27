@@ -112,7 +112,7 @@ HEAL,Heal
 FAIL_ADVICE,Use the following methods to become stronger
 PUB_MISSION_FULL_HERO,You already have enough Girls to battle!
 BATTLE_TIPS_TITLE,Faction Rivalry
-CAMPAIGN_WINDOW_HELP,"1. Each battle zone contains several Stages. Pass all the zones on Normal to unlock Hard Mode. |2. Rewards are granted for beating each Stage. |3. Requirements must be met to unlock each stage. |4. Auto-Battle will collect loot for up to 10 hours. You must return to collect past rewards in order to collect more. |5. Auto-Battle grants EXP Juice, Player EXP, and Coins. Higher stages grant greater rewards. |6. Auto-Battle will also periodically drop other kinds of loot."
+CAMPAIGN_WINDOW_HELP,"1. Each battle zone contains several Stages. Pass all the zones on Normal to unlock Hard Mode. |2. Rewards are granted for beating each Stage. |3. Requirements must be met to unlock each stage. |4. Auto-Battle will collect loot for up to 12 hours. You must return to collect past rewards in order to collect more. |5. Auto-Battle grants EXP Juice, Player EXP, and Coins. Higher stages grant greater rewards. |6. Auto-Battle will also periodically drop other kinds of loot."
 CAMPAIGN_HANG_FORMATION_WINDOW,Team
 SHENXUE_SELECT_WINDOW,Please select Girls to use
 NO_PARTNER,No Girls Selected
@@ -1498,7 +1498,7 @@ COMPLETE,OK
 CANCEL_2,Cancel
 ACTIVITY_WEDDING_MISSION_DESC_1,Purchase {1} piece(s) of Furniture
 ACTIVITY_WEDDING_MISSION_DESC_2,Complete {1} Internship Quests
-ACTIVITY_WEDDING_MISSION_DESC_3,Complete {1} Daily Quest(s)
+ACTIVITY_WEDDING_MISSION_DESC_3,Complete {1} Daily Quiz(zes)
 ACTIVITY_WEDDING_MISSION_DESC_4,Send {1} gifts
 WEDDING_VOTE_TEXT_1,True Love's Ticket
 WEDDING_VOTE_TEXT_2,Popularity
@@ -1512,7 +1512,7 @@ WEDDING_VOTE_TEXT_9,Number of votes
 WEDDING_VOTE_TEXT_10,Haven't voted yet
 WEDDING_VOTE_TEXT_11,Outcome
 WEDDING_VOTE_TEXT_12,The event is over. You cannot vote
-WEDDING_VOTE_TEXT_13,"1. The event will last 14 days. During the event, you can acquire True Love's Tickets by completing tasks to vote for the girls who you like. The girls with the highest votes will be considered first when the Academy makes a new Oath Skin. (If the girl already has an Oath skin, the chance will move on to the next girl on the ranking list)|2. This is the fifth voting event so the girls who earned the top 3 positions (Iron Fist, Angel, Hexa, Esau & Jacob, Hottie, Sakura, Ithil, KongMing, Nephilim, Fenrir, Rogue, and Izanami) on the previous event will not be in this one.|3. This event has Group Matches and Finals. The girls from Ghost, Monster, and Demon Faction will be in Group A. The girls from Human, Fairy, and Angel Faction will be in Group B. The 6 winners from Group A will be concluded in the 1st-4th day of the event. The 4 winners from Group B will be concluded in the 5th-8th day of the event. The Finals will begin from the 9th day of the event and end on the last day of the event.|4. Players lower than Level 30 cannot vote.|5. There are 4 tasks for this event. You can acquire 1 True Love's Ticket for completing each task. The tasks will refresh every day, but the True Love's Tickets that are not claimed will not be sent to you automatically.|6. The True Love's Tickets you're holding will refresh to 0 at the end of each round of Group Matches. Please use up the True Love's Tickets that you already have on time.|7. Once you spend a certain number of True Love's Tickets, you will receive the rewards via Mail. You can check for details of the prizes on the preview page.|8. The voting number will refresh after a certain period of time or when you vote.|9. You are able to acquire Frames exclusive for this event. If you already acquired the 2 Frames of this event, you will get Gems as reward instead."
+WEDDING_VOTE_TEXT_13,"1. The event will last 14 days. During the event, you can acquire True Love's Tickets by completing tasks to vote for the girls who you like. The girls with the highest votes will be considered first when the Academy makes a new Oath Skin. (If the girl already has an Oath skin, the chance will move on to the next girl on the ranking list)|2. This is the fifth voting event so the girls who earned the top 3 positions (Iron Fist, Angel, Hexa, Esau & Jacob, Hottie, Sakura, Ithil, KongMing, Nephilim, Fenrir, Rogue, and Izanami) on the previous event will not be in this one.|3. This event has Group Matches and Finals. The girls from Ghost, Monster, and Demon Faction will be in Group A. The girls from Human, Fairy, and Angel Faction will be in Group B. The 6 winners from Group A will be concluded in the 1st-4th day of the event. The 4 winners from Group B will be concluded in the 5th-8th day of the event. The Finals will begin from the 9th day of the event and end on the last day of the event.|4. Players lower than Level 30 cannot vote.|5. There are 4 tasks for this event. You can acquire 1 True Love's Ticket for completing each task. The tasks will refresh every day, but the True Love's Tickets that are not claimed will not be sent to you automatically.|6. The True Love's Tickets you're holding will refresh to 0 at the end of each round of Group Matches. Please use up the True Love's Tickets that you already have on time.|7. Once you spend a certain number of True Love's Tickets, you will receive the rewards via Mail. You can check for details of the prizes on the preview page.|8. The voting number will refresh after a certain period of time or when you vote.| You are able to acquire Frames exclusive for this event."
 WEDDING_VOTE_TEXT_14,Default
 WEDDING_VOTE_TEXT_15,Votes remaining:{1}
 GAME_REPAIR_TIPS,"If something wrong happens that causes you to have login issues, you can click the ""Client Repair"" button to fix it. The system will automatically restart the game when the repair process is complete."
@@ -1892,7 +1892,7 @@ GUILD_APPLY_DETAIL_WINDOW,Guild News
 GUILD_APPLY,Apply
 STAGE_OUTPUT_ADDITION_VIP,(VIP +{1}%%)
 STAGE_OUTPUT_ADDITION_SUB,(Subscribe +{1}%%)
-AUTO_BATTLE_RESULTS_TALK,"Welcome back, Senpai!\nI've collected the loot\nof 10 hours for you~"
+AUTO_BATTLE_RESULTS_TALK,"Welcome back, Senpai!\nI've collected the loot\nof 12 hours for you~"
 LOGIN_HANGUP_TEXT03,"{1}H, {2}m, {3}sec"
 LOGIN_HANGUP_TEXT02,Duration：
 LOGIN_HANGUP_TEXT05,Location：
@@ -2267,7 +2267,7 @@ HOUSE_TEXT_38,"
 
 3. Furniture pieces will provide Comfort for the room without actually being placed in the Dorm once you acquire them.
 
-4. The increase in Comfort will also increase the resource output from the Dorm. Resource output is counted every 5 seconds and can accumulate up to 10 hours like Auto-Loot.
+4. The increase in Comfort will also increase the resource output from the Dorm. Resource output is counted every 5 seconds and can accumulate up to 12 hours like Auto-Loot.
 
 5. A player will get a chance each day to share your Dorm appearance in Chat Channels and invite others to visit.
 
@@ -3936,8 +3936,8 @@ TRAVEL_MAIN_TEXT34,Chests at or above Stage 4 provide 2 Random Rewards
 TRAVEL_MAIN_TEXT35,Chest Quality
 TRAVEL_MAIN_TEXT36,Claim Stage {1} Chest {2} Time(s)
 ACTIVITY_NEWYEAR_WELFARE_TEXT01,Ends in:
-ACTIVITY_NEWYEAR_WELFARE_TEXT02,Gem
-ACTIVITY_NEWYEAR_WELFARE_TEXT03,Coin
+ACTIVITY_NEWYEAR_WELFARE_TEXT02,Gems
+ACTIVITY_NEWYEAR_WELFARE_TEXT03,Coins
 GACHA_LIMIT_PARTNER,up
 SPRING_FESTIVAL_HELP,"1. During the event, you can exchange Girls from different Faction with Festival Charms.|2. You can get additional rewards after you have exchanged a certain number of Girls, you can get more rewards as you exchange more Girls.|3. Each Faction will become available again after you have exchanged 1 Girl from each Faction, but each Girl in the Factions can only be exchanged once.|4. Methods to acquire Festival Charms:|- Consume 3000 Gems - 30 Festival Charms({1}/1)|- Consume 30M Coins - 30 Festival Charms({2}/1)|- Consume 100 League Tickets - 30 Festival Charms({3}/1)|- Consume 1 Rudder - 2 Festival Charms({4}/100)|- Purchase Value Packs|- Purchase Special Gift Packs|- Purchase Special Skin Packs|5. After the event is over, the unused Festival Charms will be automatically retrieved by the system and exchanged into Rune Engravings. Each Festival Charm is worth 1 Rune Engraving. The Rune Engravings will be issued to your account via Mail."
 SPRING_FESTIVAL_TEXT01,Choose a Girl
@@ -4789,7 +4789,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume Skin Election
 DRESS_SUMMON_LABEL_2,Tap to check available Outfits
 DRESS_SUMMON_LABEL_4,Orange Outfit piece in [c][e96516]{1}[-][/c] Draw(s)
 DRESS_SUMMON_LABEL_1,Free Chance available: {1}
-DRESS_SUMMON_LABEL_3,"Rates of acquiring\n""Santa Claus"" set"
+DRESS_SUMMON_LABEL_3,"Rates of acquiring ""Traditional Game"" set"
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Miss Yume\nSkin Election
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Senpai, thank you for your support! Hope you enjoy a wonderful time on campus!"
 ONE_KEY_UPLEVEL_TITLE,Quick Upgrade
@@ -4948,7 +4948,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Go
 QUICK_STARS_TEXT05,Graduating
 EQUIP_LEVELUP_TEXT_19,Select the Class Set you want to exchange
 EQUIP_LEVELUP_TEXT_20,Select the Class Set you want to receive
-DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire pieces from the ""Santa Claus"" Outfit set is increased in this Outfit Sale event."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire ""Traditional Game"" Outfit set is increased in this Outfit Sale event."
 HOUSE_TEXT_60,Confirm to move the Girl to the current floor?
 HOUSE_TEXT_61,No more girls can stay on this floor!
 HOUSE_TEXT_62,Set yourself in this floor
@@ -5620,16 +5620,71 @@ SHOW_WINDOW_TEXT47,Showcase Rating refreshed successfully!
 WORLD_BOSS_SWEEP_TEXT07,Stage [c][0069cc]{1}[-][/c]
 SETTING_UP_11,Emergency
 SETTING_UP_WINDOW_11,Emergency
-ACTIVITY_WEDDING_MISSION_DESC_5,Engage {1} Junior Varsity battles with an Oathed Girl in team
+ACTIVITY_WEDDING_MISSION_DESC_5,Engage {1} Junior Varsity battle(s) with an Oathed Girl in team
 TOWER_SHOW_TEXT01,Get reward after passing {1} more stage(s)
 TOWER_SHOW_TEXT02,Get reward after passing this stage
 GUILD_TEXT70,Refresh
-FIREWORK_TEXT01,已消耗代幣
-ACTIVITY_FIREWORK_SHOP_WINDOW,煙花節特供
-FIREWORK_TEXT03,已消耗{1}代幣
-FIREWORK_TEXT04,累計消耗一定數量的代幣後，可解鎖新商品
-FIREWORK_TEXT05,消耗{1}
-FIREWORK_TEXT06,累計消耗{1}個代幣后可解鎖！
-FIREWORK_TEXT07,初始解鎖
-FIREWORK_TEXT08,煙花節商店幫助=======
+FIREWORK_TEXT01,Consumed
+ACTIVITY_FIREWORK_SHOP_WINDOW,Carnival Store
+FIREWORK_TEXT03,{1} Firework Point Cards consumed
+FIREWORK_TEXT04,New Merchandise will be unlocked after a certain number of Firework Point Cards are consumed
+FIREWORK_TEXT05,Consume {1}
+FIREWORK_TEXT06,Unlock after consuming {1} Firework Point Cards!
+FIREWORK_TEXT07,Stage {1}
+FIREWORK_TEXT08,"1. You can use “Firework Point Cards” to exchange for rewards in the event store.|2. ""Firework Point Cards"" can be obtained by consuming ""Matches"" in ""Firework Display"".|3. The rewards are separated into several sections. You can only exchange the rewards in the first section at the beginning. The following sections will be unlocked after a certain number of ""Firework Point Cards"" are consumed.|4. The unused ""Firework Point Cards"" will be removed once the event ends, don’t forget to use them in time."
 NOTICE_BTN_GO_TO_TEXT,Go
+FIREWORK_TEXT09,Display(s) completed:
+FIREWORK_TEXT10,Wiki
+FIREWORK_TEXT11,Normal
+FIREWORK_TEXT12,Auto
+FIREWORK_TEXT13,"1. There are 9 Fireworks prepared for each round of Firework Display. You can use a Match to set off a Firework by tapping on the Firework. You will move onto the next round after all Fireworks of your current round are set off.|2. There is a random reward hidden in each of the Fireworks, you can claim the rewards by setting them off.|3. Once a Firework is set, it will ignite flying Sparks. When a Spark reaches another Firework, it has the chance to light it up. When another Spark reaches a lit Firework, the Firework will then set off (additional Matches won’t be consumed in this case).|4. You can get 1 [c][0069cc]Firework Point Card[-][/c] for each Match consumed. Firework Point Cards can be used to exchange for rewards in the event store.|5. You will get 1 Energy after 1 Firework is set off successfully. By consuming 30 Energy, you will enter Fever mode and double the rewards you get for setting off the Fireworks in the current round (Firework Point Cards excluded).|6. [c][0069cc]""5x""[-][/c] mode and [c][0069cc]""Auto""[-][/c] mode can be unlocked after completing [c][0069cc]5[-][/c] rounds of Display or obtaining [c][0069cc]50[-][/c] Matches in total.|7. The rewards and Energy obtained, Match consumed and rounds completed will all be fivefold in [c][0069cc]""5x""[-][/c] mode.|8. After you activate [c][0069cc]""Auto""[-][/c] mode, the system will set off the Fireworks with Matches for you automatically (The un-lit Fireworks will be set off first). The system will also activate Fever mode at the start of a round when you have enough energy.|9. Once the event ends, the remaining Matches will automatically be recycled into Coins at a rate of 50k per Match.|10. The rates of rewards for setting off each Firework (under ""5x"" mode, the rewards mentioned below will be fivefold, but the rate to obtain them will remain the same) are:|500k Coins (18%%), 500k Exp Juice (18%%), 400 Crystal Chisels (18%%), 400 Lunch Boxes (18%%), 200 Servant Cookies (10%%), 20 Spirit Cookies (5%%), 10 Servant Crystals (5%%), 10 Afterglows (8%%)."
+FIREWORK_TEXT14,Round(s) completed:
+FIREWORK_TEXT15,Set off the Fireworks in Firework Display to win extra rewards! (The rewards will be sent via Mail)
+FIREWORK_TEXT16,Firework Display
+FIREWORK_TEXT17,Unlock after completing {1} rounds of Display or obtaining {2} Matches.
+FIREWORK_TEXT18,Reward(s) Acquired
+FIREWORK_TEXT19,No reward is obtained yet
+FIREWORK_TEXT20,Rewards you will get in this round are doubled!
+FIREWORK_TEXT21,Out of Fireworks!
+FIREWORK_TEXT22,You will need {1} energy to double the rewards you will get from this round!
+FIREWORK_TEXT23,Confirm to consume {1} energy to double the rewards you will get from this round?
+FIREWORK_TEXT24,Complete {1} round(s) of Firework Display
+FIREWORK_EXPLAIN_TEXT01,1. Set off the Fireworks with Matches.
+FIREWORK_EXPLAIN_TEXT02,"2. Once a Firework is set, it will ignite flying Sparks."
+FIREWORK_EXPLAIN_TEXT03,"3. When a Spark reaches another firework, it has the chance to light it up."
+FIREWORK_EXPLAIN_TEXT04,"4. When another Spark reaches a lit Firework, the Firework will then set off."
+FIREWORK_EXPLAIN_TEXT06,"""Firework"""
+FIREWORK_EXPLAIN_TEXT07,"""Spark"""
+FIREWORK_EXPLAIN_TEXT08,"""Lit Firework"""
+FIREWORK_EXPLAIN_TEXT09,Firework Wiki
+FIREWORK_TEXT11_2,5x
+FIREWORK_TEXT25,Display completed
+FIREWORK_TEXT26,Round(s) completed +{1}
+FIREWORK_TEXT27,Confirm to switch to Auto mode? The system will set off the Fireworks with Matches automatically in this mode. (The un-lit Fireworks will be set off first).
+TREASURE_EXCHANGE_WARN,Confirm to lock the current attribute with Gems?
+NEW_PINGFEN_TEXT01,Feedback Wanted
+NEW_PINGFEN_TEXT02,"Senpai, you've become stronger! We would like to hear your reviews and suggestions to make Yume Academy a better place. Thanks for your time in advance!"
+NEW_PINGFEN_TEXT03,Dislike
+NEW_PINGFEN_TEXT04,Not Interested
+NEW_PINGFEN_TEXT05,Neutral
+NEW_PINGFEN_TEXT06,Like
+NEW_PINGFEN_TEXT07,Perfect!
+NEW_PINGFEN_TEXT08,Later
+NEW_PINGFEN_TEXT09,Rating
+NEW_PINGFEN_TEXT10,Suggestions
+NEW_PINGFEN_TEXT11,Please leave your suggestion here to help us improve the game!
+NEW_PINGFEN_TEXT12,{1}/500
+NEW_PINGFEN_TEXT13,Please leave your suggestion right here
+NEW_PINGFEN_TEXT14,Cancel
+NEW_PINGFEN_TEXT15,Submit
+NEW_PINGFEN_TEXT16,Your feedback and suggestions have been submitted!
+NEW_PINGFEN_TEXT17,Please rate the game.
+NEW_PINGFEN_TEXT18,Character limit exceeded!
+FIREWORK_TEXT28,"Another Firework is still burning, it's not safe to set off a new one right now."
+NEW_PINGFEN_TEXT19,You haven't entered your suggestion yet.
+FIREWORK_TEXT29,"The Firework you want to set off is [c][cc6910]lit[-][/c] already, confirm to continue? [c][0069cc]Hint[-][/c]: You can save a Match by setting off a [c][cc6910]lit Firework[-][/c] with a flying Spark ignited by another set Firework!"
+ARENA_TEAM_NO_FRIEND,Currently there is no friend available...
+FIREWORK_TEXT30,"Congratulations, you've completed {1} rounds of display. ""5x"" mode is now available."
+NEW_YEAR_GIFTBAG_TITLE,Lunar Special
+ACTIVITY_FIREWORK,Firework\nCarnival
+FIREWORK_EXPLAIN_TEXT10,「Match」

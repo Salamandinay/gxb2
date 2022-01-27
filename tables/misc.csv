@@ -58,8 +58,8 @@ gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,52018#652025#752018,-1
 gacha_ensure_partner_handbook,52018#652025#752018,-1
 daily_mail_awards_gacha,2|43,-1
-daily_mail_awards_tree,3|31|32,-1
-daily_mail_awards_gamble,18|37|45,-1
+daily_mail_awards_tree,3|46,-1
+daily_mail_awards_gamble,18|37|46,-1
 daily_mail_awards_drift,30|6|39,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
@@ -177,7 +177,7 @@ guild_boss_max_id,61,-1
 partner_achievement_cost,1|2|43|44,-1
 login_loop_exclude,30,-1
 login_loop_max,390,-1
-hang_up_time_max,36000,-1
+hang_up_time_max,43200,-1
 activity_10_replace_cost,47#5,-1
 pet_frame_use,pet_bg03|pet_bg03|pet_bg04|pet_bg04|pet_bg05,-1
 sakura_date_energy_init,1,-1
@@ -454,7 +454,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,maya_pifu01_lihui01|277|-1381|0.8|5501102|7231,-1
+activity_45_hero_model,kawenbodi_pifu02_lihui01|610|-1850|0.7|5600903|7239,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -555,7 +555,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,dianna_pifu02_lihui01|274|-1934|0.7|5101603|7237,-1
+activity_147_hero_model,fanhexin_pifu03_lihui01|525|-1124|0.6|5101404|7242,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -733,7 +733,7 @@ activity_time_giftbag_cost,2#2500@235#9|940014#50|9#3000000,-1
 partner_signature_length_limit,3,-1
 activity_fair_arena_battle_time,6|1,-1
 monthly_card_offer_giftbag,282|283,-1
-battlepass_106_hero_model,luban_pifu02_lihui01|-155|-855|0.6,-1
+battlepass_106_hero_model,monika_pifu03_lihui01|-170|-600|0.6,-1
 battlepass_124_hero_model,wulieer_pifu05_lihui01|-170|-700|-0.5,-1
 questionnaire_other_limit,200|12,-1
 space_explore_dropbox,40004,-1
@@ -813,7 +813,7 @@ activity_popularity_vote_open,60,-1
 dress_gacha_dropbox4,50001,-1
 dress_gacha_dropbox5,50003,-1
 dress_common_fragment_qlt_item_ids,3999991|3999992|3999993|3999994|3999995|3999996,-1
-dress_gacha_show,3100961|3100967|3100973|3100979|3100985,-1
+dress_gacha_show,3100991|3100997|3101003|3101009|3101015,-1
 dress_gacha_free1,86400|1,-1
 dress_gacha_free2,43200|1,-1
 activity_equip_decompose,262|60000|6000,-1
@@ -827,7 +827,7 @@ activity_warmup_arena_partners,752018,-1
 activity_warmup_arena_revenge,1,-1
 guild_quick_order_open,5,-1
 gacha_10drawcard_endtime,1643328000,-1
-dress_gacha_activity_show,33,-1
+dress_gacha_activity_show,34,-1
 activity_equip_exchange_cost,268#3|268#6|268#9|268#12,-1
 activity_equip_exchange_6,1166|2166|3166|4166#1266|2266|3266|4266#1366|2366|3366|4366#1466|2466|3466|4466#1566|2566|3566|4566,-1
 activity_equip_exchange_1,1167|2167|3167|4167#1267|2267|3267|4267#1367|2367|3367|4367#1467|2467|3467|4467#1567|2567|3567|4567,-1
@@ -908,7 +908,7 @@ find_treasure_item,302#1,-1
 find_treasure_autostep,40,-1
 find_treasure_skipstep,40,-1
 find_treasure_treasurestep,20,-1
-thanksgiving_giftawards,930112#50|7223#1|189#5|283#10|4202008#1,-1
+thanksgiving_giftawards,20#5|316#10|259#5|940002#50,-1
 thanksgiving_giftcost,2#2000,-1
 activity_fish_golden_awards,976001#5|258#1|259#1,-1
 school_practise_quick1,60,-1
@@ -975,5 +975,7 @@ firework_ratio_5,5,-1
 firework_fire_weights,0|50|50|50|50|50|20|0,-1
 firework_energy,30,-1
 firework_ratio_5_unlock,5|50,-1
-firework_energy_init,15,-1
-activity_276_hero_model,dianna_pifu02_lihui01|274|-1934|0.7|5101603|7237,-1
+firework_energy_init,0,-1
+activity_276_hero_model,kaixi_pifu02_lihui01|439|-1555|0.7|5401603|7240,-1
+new_pingfen_stage_id,12|22|32|42|52|62|72|82|92|102|112|122|132|142,-1
+new_pingfen_level_limit,35,-1

@@ -112,7 +112,7 @@ HEAL,治 療
 FAIL_ADVICE,可以透過以下途徑讓自己變得更強
 PUB_MISSION_FULL_HERO,任務所需要戰姬已滿！
 BATTLE_TIPS_TITLE,陣營剋制
-CAMPAIGN_WINDOW_HELP,1.戰鬥區域的各個地區由多個小關組成，通關普通後可解鎖下一難度。|2.進入新的關卡後，會觸發戰鬥事件，戰鬥勝利後可獲得獎勵。|3.完成戰鬥事件後，才能解鎖下一關卡。|4.離線掛機最多持續10個小時，超過10個小時後不再獲得收益。|5.掛機固定掉落為學長經驗、經驗飲料、金幣，越後面的關卡掉落越多。|6.掛機有機率掉落裝備或者戰姬碎片。
+CAMPAIGN_WINDOW_HELP,1.戰鬥區域的各個地區由多個小關組成，通關普通後可解鎖下一難度。|2.進入新的關卡後，會觸發戰鬥事件，戰鬥勝利後可獲得獎勵。|3.完成戰鬥事件後，才能解鎖下一關卡。|4.離線掛機最多持續12個小時，超過12個小時後不再獲得收益。|5.掛機固定掉落為學長經驗、經驗飲料、金幣，越後面的關卡掉落越多。|6.掛機有機率掉落裝備或者戰姬碎片。
 CAMPAIGN_HANG_FORMATION_WINDOW,掛機陣容
 SHENXUE_SELECT_WINDOW,請選擇材料戰姬
 NO_PARTNER,沒有該材料戰姬
@@ -1523,7 +1523,7 @@ WEDDING_VOTE_TEXT_9,得票數
 WEDDING_VOTE_TEXT_10,還沒有投票…
 WEDDING_VOTE_TEXT_11,詳細結果
 WEDDING_VOTE_TEXT_12,活動已結束，無法投票
-WEDDING_VOTE_TEXT_13,1.活動持續14天，期間學長可透過任務獲得【真愛之證】，可使用【真愛之證】為心愛的學妹投票，人氣越高的學妹會在學園製作新的誓約造型時優先考慮。（如果最終人氣排名靠前的學妹已有誓約造型，原則上將製作機會順延一位）|2.此次活動為第4次人氣投票活動，往期人氣投票的前三名（魏延、水鏡、方天、以掃&雅各、貂蟬、千本櫻、銀月、諸葛亮、路西菲爾、芬里爾、坂本龍馬、伊邪那美）將進入殿堂，不參與本次投票。|3.本次活動分為小組賽階段和決賽階段。小組賽分為A、B兩組，每組的前4名晉級決賽。A組為隱蹤、風見、修羅學院的學妹；B組為神威、曇華、辰星學院的學妹。活動第1-4天為A組小組賽，第5-8天為B組小組賽，第9-14天為決賽。|4.等級低於30級的學長無法進行投票。|5.活動任務共4個，每完成1個即可獲得1個【真愛之證】。任務每日刷新，未領取的【真愛之證】不會補發。|6.每輪小組賽結束後，未使用的【真愛之證】會被清零，請學長記得及時使用。|7.每使用一定數量的【真愛之證】，都會獲得相應的獎勵，詳見獎勵預覽介面，獎勵將透過信件發放。|8.得票數只會定時刷新或在投票之後刷新顯示。|9.學長會優先獲取尚未擁有的愛與誓言系列頭像框；如學長已擁有所有頭像框，則獎勵會替換為鑽石。
+WEDDING_VOTE_TEXT_13,1.活動持續14天，期間學長可透過任務獲得【真愛之證】，可使用【真愛之證】為心愛的學妹投票，人氣越高的學妹會在學園製作新的誓約造型時優先考慮。（如果最終人氣排名靠前的學妹已有誓約造型，原則上將製作機會順延一位）|2.此次活動為第5次人氣投票活動，往期人氣投票的前三名（魏延、水鏡、方天、以掃&雅各、貂蟬、千本櫻、銀月、諸葛亮、路西菲爾、芬里爾、坂本龍馬、伊邪那美）將進入殿堂，不參與本次投票。|3.本次活動分為小組賽階段和決賽階段。小組賽分為A、B兩組，每組的前4名晉級決賽。A組為隱蹤、風見、修羅學院的學妹；B組為神威、曇華、辰星學院的學妹。活動第1-4天為A組小組賽，第5-8天為B組小組賽，第9-14天為決賽。|4.等級低於30級的學長無法進行投票。|5.活動任務共4個，每完成1個即可獲得1個【真愛之證】。任務每日刷新，未領取的【真愛之證】不會補發。|6.每輪小組賽結束後，未使用的【真愛之證】會被清零，請學長記得及時使用。|7.每使用一定數量的【真愛之證】，都會獲得相應的獎勵，詳見獎勵預覽介面，獎勵將透過信件發放。|8.得票數只會定時刷新或在投票之後刷新顯示。
 WEDDING_VOTE_TEXT_14,預設
 WEDDING_VOTE_TEXT_15,剩餘選票：{1}
 GAME_REPAIR_TIPS,當出現異常原因導致無法登入時，可嘗試點擊下方的【客戶端修復】按鈕進行修復，修復成功後將自動重啟遊戲。
@@ -1893,7 +1893,7 @@ GUILD_APPLY_DETAIL_WINDOW,社團資訊
 GUILD_APPLY,申請加入
 STAGE_OUTPUT_ADDITION_VIP,(VIP +{1}%%)
 STAGE_OUTPUT_ADDITION_SUB,(訂閱 +{1}%%)
-AUTO_BATTLE_RESULTS_TALK,學長，你終於回來啦！\n戰利品資源已滿啦，戰利品\n最多累積10小時的資源哦
+AUTO_BATTLE_RESULTS_TALK,學長，你終於回來啦！\n戰利品資源已滿啦，戰利品\n最多累積12小時的資源哦
 LOGIN_HANGUP_TEXT03,{1}小時{2}分{3}秒
 LOGIN_HANGUP_TEXT02,產出時間：
 LOGIN_HANGUP_TEXT05,作戰地點：
@@ -2268,7 +2268,7 @@ HOUSE_TEXT_38,"
 
 3.獲得家具後，無需將家具放入房間中，即可提供舒適度。
 
-4.舒適度越高，宿舍產出收益越高。宿舍產出收益每5秒計算一次，最多可儲存10小時的收益，可點擊左上角的舒適度按鈕進行領取，請學長不要忘記。
+4.舒適度越高，宿舍產出收益越高。宿舍產出收益每5秒計算一次，最多可儲存12小時的收益，可點擊左上角的舒適度按鈕進行領取，請學長不要忘記。
 
 5.學長每日有一次機會，將宿舍分享至聊天頻道，邀請他人參觀。
 
@@ -3927,8 +3927,8 @@ TRAVEL_MAIN_TEXT34,4階及4階以上寶箱會掉落2份隨機獎勵
 TRAVEL_MAIN_TEXT35,寶箱品質
 TRAVEL_MAIN_TEXT36,領取{1}階寶箱{2}次
 ACTIVITY_NEWYEAR_WELFARE_TEXT01,活動倒數計時：
-ACTIVITY_NEWYEAR_WELFARE_TEXT02,鑽石吧檯
-ACTIVITY_NEWYEAR_WELFARE_TEXT03,金幣吧檯
+ACTIVITY_NEWYEAR_WELFARE_TEXT02,鑽石吧台
+ACTIVITY_NEWYEAR_WELFARE_TEXT03,金幣吧台
 GACHA_LIMIT_PARTNER,up
 SPRING_FESTIVAL_HELP,1.活動期間，消耗「新春福袋」可以兌換不同陣營的戰姬。|2.兌換達到一定次數可獲得獎勵，兌換的次數越多獎勵越豐厚。|3.每個陣營的戰姬都兌換過1次後，可再次進行兌換。每個戰姬僅可兌換1次。|4.「新春福袋」的獲得方式：| - 消耗3000鑽石-30個（{1}/1）| - 消耗30M金幣-30個（{2}/1）| - 消耗100個競技場門票-30個（{3}/1）| - 消耗1個船舵-2個（{4}/100）| - 超值禮包獲得| - 特惠禮包獲得| - 造型禮包獲得|5.在活動結束後，未使用的「新春福袋」將會按1:1自動兌換成夢境石板，透過信件發放。
 SPRING_FESTIVAL_TEXT01,請選擇戰姬
@@ -4778,7 +4778,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,人氣戰姬造型投票
 DRESS_SUMMON_LABEL_2,點擊查看可能獲得的裝扮
 DRESS_SUMMON_LABEL_4,剩餘[c][e96516]{1}[-][/c]抽必出橙色裝扮
 DRESS_SUMMON_LABEL_1,限時免費{1}次
-DRESS_SUMMON_LABEL_3,活動期間「聖夜驚喜」套裝的獲取機率
+DRESS_SUMMON_LABEL_3,活動期間「飛鳶題春」套裝的獲取機率
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,人氣戰姬\n造型投票
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,感謝學長的配合！祝學長度過一段充實的學園時光！
 ONE_KEY_UPLEVEL_TITLE,快速升級
@@ -4934,7 +4934,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,前往採購
 QUICK_STARS_TEXT05,升學中……
 EQUIP_LEVELUP_TEXT_19,請選擇需轉換的職業套裝
 EQUIP_LEVELUP_TEXT_20,請選擇轉換後的目標套裝
-DRESS_SUMMON_LIMIT_ACT_DESC,活動期間，可消耗「鈕扣」或「稀有鈕扣」進行裝扮採購。在限時裝扮卡池中，有更大機率抽取到「聖夜驚喜」套裝。
+DRESS_SUMMON_LIMIT_ACT_DESC,活動期間，可消耗「鈕扣」或「稀有鈕扣」進行裝扮採購。在限時裝扮卡池中，有更大機率抽取到「飛鳶題春」套裝。
 HOUSE_TEXT_60,是否讓該學妹搬至當前樓層？
 HOUSE_TEXT_61,當前樓層學妹已滿
 HOUSE_TEXT_62,學長入住此樓層
@@ -5606,12 +5606,67 @@ ACTIVITY_WEDDING_MISSION_DESC_5,使用誓約戰姬進行{1}場校園聯賽
 TOWER_SHOW_TEXT01,再通關{1}層即可獲得獎勵
 TOWER_SHOW_TEXT02,通關本層即可獲得獎勵
 GUILD_TEXT70,刷新
-FIREWORK_TEXT01,已消耗代幣
-ACTIVITY_FIREWORK_SHOP_WINDOW,煙花節特供
-FIREWORK_TEXT03,已消耗{1}代幣
-FIREWORK_TEXT04,累計消耗一定數量的代幣後，可解鎖新商品
+FIREWORK_TEXT01,已消耗兌獎卡
+ACTIVITY_FIREWORK_SHOP_WINDOW,煙火節特供
+FIREWORK_TEXT03,已消耗{1}兌獎卡
+FIREWORK_TEXT04,累計消耗一定數量的兌獎卡後，\n可以解鎖新的商品檔位
 FIREWORK_TEXT05,消耗{1}
-FIREWORK_TEXT06,累計消耗{1}個代幣后可解鎖！
-FIREWORK_TEXT07,初始解鎖
-FIREWORK_TEXT08,煙花節商店幫助=======
+FIREWORK_TEXT06,累計消耗{1}張兌獎卡後可解鎖！
+FIREWORK_TEXT07,第{1}檔
+FIREWORK_TEXT08,1.本商店中，可以使用「煙火兌獎卡」來兌換商品。|2.在煙火表演中消耗火柴，即可獲得等量的兌獎卡。|3.商品分為若干個檔位。初始僅能購買第1個檔位的商品。累計消耗的兌獎卡達到一定數量後，可以解鎖新的檔位。|4.活動結束後，未使用完的兌獎卡將會被清空，請及時使用。
 NOTICE_BTN_GO_TO_TEXT,前往查看
+FIREWORK_TEXT09,完成場數：
+FIREWORK_TEXT10,百科
+FIREWORK_TEXT11,正常
+FIREWORK_TEXT12,自動
+FIREWORK_TEXT13,1.每場表演中，都有9個煙火，點擊煙火可消耗火柴使煙火爆炸，當所有煙火全部爆炸後，即可完成本場表演。|2.每個煙火都將包含一種隨機道具獎勵，煙火爆炸後，可點擊並領取對應獎勵。|3.煙火爆炸後，會向同行同列的其他煙火散射火花，火花有機率點燃其他煙火。當已被點燃的煙火再次遇到火花時，將會直接爆炸，不需要消耗火柴。|4.每消耗1根火柴，都可以獲得1張[c][0069cc]煙火兌獎卡[-][/c]，用於在特供商店中兌換獎勵。|5.每個煙火爆炸時，可以獲得1點能量。消耗30點能量，可以開啟高能狀態，使本場剩餘煙火的道具獎勵翻倍。|6.累計完成[c][0069cc]5[-][/c]場煙火表演，或者累計獲得[c][0069cc]50[-][/c]個火柴後，將解鎖[c][0069cc]5倍模式[-][/c]與[c][0069cc]自動功能[-][/c]。|7.[c][0069cc]5倍模式[-][/c]下，每次點擊煙火將消耗[c][0069cc]5倍[-][/c]的火柴，同時獲得[c][0069cc]5倍[-][/c]的煙火獎勵、能量與演出場數。|8.[c][0069cc]自動功能[-][/c]開啟時，將會自動消耗火柴引爆煙火（優先引爆尚未點燃的煙火）。能量足夠時，會在新一場表演開始時自動開啟高能狀態。|9.活動結束後，未使用的火柴將會被回收，每根火柴的價格為50k金幣。回收獲得的金幣獎勵將會透過信件發放。|10.正常模式下，煙火內包含的獎勵有：| 金幣x500k(18%%)、經驗飲料x500k(18%%)、水晶刻刀x400(18%%)、便當x400(18%%)、使魔餅乾x200(10%%)、精華餅乾x20(5%%)、使魔結晶x10(5%%)、精華x10(8%%)。
+FIREWORK_TEXT14,已完成輪數：
+FIREWORK_TEXT15,煙火節期間，參與煙火表演，可以額外獲得豐富獎勵（本獎勵透過信件發放）
+FIREWORK_TEXT16,煙火表演
+FIREWORK_TEXT17,完成{1}場煙火表演，或累計獲得{2}個火柴後解鎖
+FIREWORK_TEXT18,煙火節已獲得獎勵
+FIREWORK_TEXT19,暫未獲得煙火節獎勵
+FIREWORK_TEXT20,本場剩餘的所有煙火均獲得雙倍產出！
+FIREWORK_TEXT21,已經沒有煙火了！
+FIREWORK_TEXT22,能量不足！消耗{1}點能量後，可以使本場剩餘的所有煙火獲得雙倍產出
+FIREWORK_TEXT23,是否消耗{1}點能量，使本場剩餘的所有煙火獲得雙倍產出？
+FIREWORK_TEXT24,完成{1}場煙火表演
+FIREWORK_EXPLAIN_TEXT01,1.選擇煙火，消耗火柴產生爆炸
+FIREWORK_EXPLAIN_TEXT02,2.煙火在爆炸時，會向四周散射火花
+FIREWORK_EXPLAIN_TEXT03,3.煙火在遇到火花時，有機率被點燃
+FIREWORK_EXPLAIN_TEXT04,4.被點燃的煙火再次遇到火花時，會直接爆炸
+FIREWORK_EXPLAIN_TEXT06,「煙火」
+FIREWORK_EXPLAIN_TEXT07,「火花」
+FIREWORK_EXPLAIN_TEXT08,「點燃的煙火」
+FIREWORK_EXPLAIN_TEXT09,煙火百科
+FIREWORK_TEXT11_2,5倍
+FIREWORK_TEXT25,演出完成
+FIREWORK_TEXT26,完成場數+{1}
+FIREWORK_TEXT27,是否開啟自動功能？將會自動消耗火柴引爆煙火（優先引爆尚未點燃的煙火）。
+TREASURE_EXCHANGE_WARN,是否消耗鑽石鎖定現有屬性？
+NEW_PINGFEN_TEXT01,喜愛評分
+NEW_PINGFEN_TEXT02,學長又變強了呢！為了更好的建設幽夢學園，能否請您透露下對這裡的喜愛程度呢？學妹們也期待您的評分或建議喲！
+NEW_PINGFEN_TEXT03,有些討厭
+NEW_PINGFEN_TEXT04,不感興趣
+NEW_PINGFEN_TEXT05,感覺一般
+NEW_PINGFEN_TEXT06,比較喜歡
+NEW_PINGFEN_TEXT07,特別喜歡
+NEW_PINGFEN_TEXT08,稍後再說
+NEW_PINGFEN_TEXT09,評分
+NEW_PINGFEN_TEXT10,建議反映
+NEW_PINGFEN_TEXT11,請留下您的建議，以幫助我們改進遊戲！~
+NEW_PINGFEN_TEXT12,{1}/500
+NEW_PINGFEN_TEXT13,請在這裡留下您的建議
+NEW_PINGFEN_TEXT14,取消
+NEW_PINGFEN_TEXT15,提交
+NEW_PINGFEN_TEXT16,您的評分建議已提交
+NEW_PINGFEN_TEXT17,請選擇喜愛程度
+NEW_PINGFEN_TEXT18,文字數量超過上限
+FIREWORK_TEXT28,有煙火尚未結束燃放，請稍後再試。
+NEW_PINGFEN_TEXT19,當前建議為空
+FIREWORK_TEXT29,所選煙火已被[c][cc6910]點燃[-][/c]，是否仍要消耗火柴將其引爆？\n[c][0069cc]提示[-][/c]：煙火爆炸後，爆炸中散射的火花可以引爆同行同列中已被[c][cc6910]點燃[-][/c]的煙火（且不消耗火柴）！
+ARENA_TEAM_NO_FRIEND,暫時沒有可邀請的好友...
+FIREWORK_TEXT30,恭喜學長累計完成了{1}場表演。5倍模式與自動模式已解鎖。
+NEW_YEAR_GIFTBAG_TITLE,新春特供
+ACTIVITY_FIREWORK,煙火節
+FIREWORK_EXPLAIN_TEXT10,「火柴」

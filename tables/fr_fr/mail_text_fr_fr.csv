@@ -11,7 +11,7 @@ id,name,from,content
 10,Recruter une Fille,Recrutement,Félicitations vous avez recruté {1} Filles durant l'événement. Voici vos récompenses.
 11,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Capsule Avancée*3, Pièce de Fortune*2.\nVoici vos récompenses, veuillez les récupérer !"
 12,Récompenses de Capsules utilisées,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement Capsule de Nouvelle Fille, veuillez collecter vos récompenses !"
-13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous quotidiennement pour obtenir Sceau*1, Boîte du Nouvel An 2022*5 et Boîte Avancée du Nouvel An 2022*1, n'oubliez pas de récupérer vos récompenses."
+13,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Sceau*1, Allumette *1.\nVoici vos récompenses, veuillez les récupérer !"
 14,Recrutement,Courrier du Système,"Félicitations vous avez obtenu {1} points pendant l'événement - Examen d'admission, voici vos récompenses, veuillez les récupérer !"
 15,Combat de BOSS,Courrier du Système,"Félicitations pour avoir tué l'Ami BOSS, voici vos récompenses"
 16,Ami BOSS,Courrier du Système,"L'Ami BOSS a été vaincu, félicitations vous avez obtenus les récompenses suivantes"
@@ -19,7 +19,7 @@ id,name,from,content
 18,Rassemblement,Courrier du Système,Félicitations ! Vous avez terminé une Tâche lors du rassemblement des Filles. Voici vos récompenses
 19,Remise de Recharge de la Béta,Courrier du Système,"Merci d'avoir acheté {1}, voici vos récompenses bonus !"
 20,Bonus du Distributeur,Courrier du Système,"Félicitations, Senpai ! Vous avez obtenu {1} points durant l'Evénement de Bonus de Distributeur, voici vos récompenses ! Veuillez les récupérer !"
-21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Orbe Élémentaire *100, Parchemin de Jobs Avancé *1 et Pièce à vœux *5, voici vos récompenses, veuillez les récupérer !"
+21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Orbe Élémentaire*100, Parchemin de Jobs Avancé*1 et Allumette*1.\nVoici vos récompenses, veuillez les récupérer !"
 22,Récompense de Jobs,Courrier du Système,"Félicitations ! Vous avez fini un Job {1} étoiles durant l'événement, voici vos récompenses."
 23,Avis de Recharge,Courrier du Système,"Merci d'avoir acheté {1}, vos récompenses ont été envoyés dans votre sac."
 24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail *4, Gemme *150 et Canne à pêche *5, voici vos récompenses, veuillez les récupérer !"
@@ -59,7 +59,7 @@ id,name,from,content
 58,Final de la Bataille de Guilde,Courrier du Système,Félicitations ! Votre Guilde s'est classée {1}e dans la Finale de la Bataille de Guilde. Voici vos récompenses.
 59,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde a atteint la Deuxième Place dans la Bataille de Guilde ! Voici vos récompenses !
 60,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde est Championne de la Bataille de la Guilde. Voici vos récompenses.
-61,Carte de Noël,Courrier du Système,"Vous êtes un joueur au Niv.{1}, voici vos récompenses de Carte de Noël qui expirera dans {3} jours !"
+61,Récompense de Carte de la Fête du Printemps,Courrier du Système,"Vous êtes un joueur au Niv.{1}, voici vos récompenses de Carte de la Fête du Printemps qui expirera dans {3} jours !"
 62,Carte Mensuelle Renouvelée,Carte Mensuelle,Félicitations ! Vous avez renouvelé votre carte mensuelle. Votre abonnement actuel finira dans {1} jours
 63,Petite Carte Mensuelle Renouvelée,Petite Carte Mensuelle,Félicitations ! Vous avez renouvelé votre petite carte mensuelle. Votre abonnement actuel finira dans {1} jours
 64,Événement de Puzzle,Courrier du Système,Félicitations ! Vous avez complété {1} Puzzles. Voici vos récompenses.
@@ -69,7 +69,7 @@ id,name,from,content
 68,Evénement de Faveur,Courrier du Système,Vous avez atteint 80 de Faveur avec une de vos Filles durant l'événement ! Voici vos récompenses.
 69,Evénement de Faveur,Courrier du Système,Vous avez atteint 100 de Faveur avec une de vos Filles durant l'événement ! Voici vos récompenses.
 70,Evénement Sous le Cerisier,Courrier du Système,Félicitations ! Vous avez atteint la fin de {1} Rendez-vous. Voici vos récompenses.
-71,Gagnez leurs Cœurs,Courrier du Système,Félicitations ! Vous avez utilisé {1} Bulletin d'amour. Voici vos récompenses.
+71,Gagnez leurs Cœurs,Courrier du Système,"Félicitations ! Vous avez utilisé {1} Bulletins d'Amour dans l'événement - Gagnez leurs cœurs.\nVoici vos récompenses, veuillez les récupérer !"
 72,Déco. de Dortoir,Courrier du Système,"Avez votre aide, le nouveau dortoir est fini ! Voici vos récompenses."
 73,Le câdeau de gratitude de Ninja,Courrier du Système,"Avec votre aide, Ninja a terminé toutes ses missions de décoration. Voici vos récompenses."
 74,Gratitude d'Iron Fist,Courrier du Système,"Avec votre aide, Iron Fist a terminé toutes ses missions de décoration. Voici vos récompenses."
@@ -196,7 +196,7 @@ Nous nous excusons pour la gêne occasionnée~"
 187,Élection de Miss Yume 2021,Courrier du Système,"Félicitations Senpai ! Vous avez terminé les tâches de l'événement - Élection de Miss Yume 2021, voici vos récompenses ! Veuillez les récupérer !"
 188,Cadeaux des Étoiles,Courrier du Système,"Cher Senpai, veuillez récupérer les Cadeaux des Étoiles préparés par Viviane ! Yuki vous souhaite une bonne journée à l'Académie !"
 190,Test d'Admission,Courrier du Système,Félicitations Senpai ! Vous êtes passé au Rang supérieur dans Test d'Admission ! Allez vite jeter un œil aux nouveautés de ce Rang !
-191,Inauguration de la Boutique de Tenue,Courrier du Système,"Félicitations ! Vous avez terminé une tâche de l'événement - Inauguration de la Boutique de Tenue, voici vos récompenses, veuillez les récupérer !"
+191,Boutique Limitée\nde Tenue,Courrier du Système,"Félicitations ! Vous avez terminé une tâche de l'événement - Boutique Limitée de Tenue, voici vos récompenses, veuillez les récupérer !"
 192,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack I vont expirer dans {1} jour(s).
 193,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack II vont expirer dans {1} jour(s).
 194,Ajustement de Skin,Courrier du Système,"Cher Senpai, le design de fond du skin - Championne Balnéaire a été ajusté durant la dernière mise à jour : l'image en arrière-plan de ce skin a été supprimée et est désormais disponible en tant que Fond dans Menu-Fond. Voici la compensation de cet ajustement - Gemme *300, veuillez les récupérer !"
@@ -235,6 +235,6 @@ Venez vite explorer la Cité aux Trésors avec elle !
 215,Échange de Noël,Courrier d'Événement,"Cher Senpai, l'événement - Échange de Noël va bientôt prendre fin, n'oubliez pas d'échanger des cadeaux !"
 216,Près de la Cheminée,Courrier du Système,"Félicitations Senpai ! Vous avez accroché {1} Chaussettes de Noël, voici vos récompenses, veuillez les récupérer !"
 217,Rappel de fin d'Exploration du Vieux Campus,Courrier du Système,"Cher Senpai, l'Exploration du Vieux Campus va prendre fin dans 24 heures ! Alllez vite dans le Vieux Campus pour prouver votre valeur !"
-218,Rappel de fin de Pack limité,Courrier du Système,"Cher Senpai, {1} expirera dans moins de 24h, ne ratez pas cette occasion !"
-219,Les Pétards du Printemps,Courrier du Système,"Cher Senpai,\nAvez-vous participé à l'événement - Les Pétards du Printemps ? Voici quelques Allumettes afin que vous puissiez en allumer !"
-220,Récompenses - Les Pétards du Printemps,Courrier du Système,"Félicitations, Senpai !\nVous avez allumé {1} Pétard(s), voici vos récompenses, veuillez les récupérer !"
+218,Rappel de fin de Pack limité,Courrier du Système,"Cher Senpai, {1} expirera dans moins de 24 heures, ne ratez pas cette occasion !"
+219,Les Pétards du Printemps,Courrier du Système,"Cher Senpai,\nAvez-vous participé à l'événement - Les Pétards du Printemps ? Voici quelques Allumettes afin que vous puissiez réaliser des Spectacles de Feux d'artifice !"
+220,Les Pétards du Printemps,Courrier du Système,"Félicitations, Senpai !\nVous avez réalisé {1} Spectacle(s) de Feux d'artifice, voici vos récompenses, veuillez les récupérer !"

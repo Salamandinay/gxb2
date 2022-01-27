@@ -112,7 +112,7 @@ HEAL,Heilung
 FAIL_ADVICE,"Verwende die folgenden Methoden, um deine Stärke zu erhöhen:"
 PUB_MISSION_FULL_HERO,Du hast bereits genug Mädchen um den Kampf zu beginnen!
 BATTLE_TIPS_TITLE,Fraktionsrivalität
-CAMPAIGN_WINDOW_HELP,"1. Jede Kampfzone enthält mehrere Runden. Schaffe alle Zonen im normalen Modus, um den Harten-Modus zu entsperren.|2. Belohnungen werden für das Erledigen jeder Runde vergeben.|3. Erst wenn du eine Runde geschafft hast, kannst du die nächste freischalten.|4. Auto-Kämpfe dauern maximal 10 Stunden. Die Ansammlung von Belohnungen geht daher auch max. 10 Stunden und wird erst wieder aufgenommen, wenn du zurückkommst.|5. Die Auto-Kämpfe gewähren EXP-Saft, Spieler-EXP und Münzen. Auf höherer Stufe bekommt man größere Belohnungen.|6. Durch Auto-Kämpfe bekommt man außerdem regelmäßig Rüstungen und Mädchen-Fragmente."
+CAMPAIGN_WINDOW_HELP,"1. Jede Kampfzone enthält mehrere Runden. Schaffe alle Zonen im normalen Modus, um den nächsten Schwierigkeitsgrad zu entsperren.|2. Belohnungen werden für das Erledigen jeder Runde vergeben.|3. Erst wenn du eine Runde geschafft hast, kannst du die nächste freischalten.|4. Auto-Kämpfe dauern maximal 12 Stunden. Die Ansammlung von Belohnungen geht daher auch max. 12 Stunden und wird erst wieder aufgenommen, wenn du zurückkommst.|5. Die Auto-Kämpfe gewähren dir EXP-Saft, Spieler-EXP und Münzen. Auf höherer Stufe bekommst du größere Belohnungen.|6. Durch Auto-Kämpfe bekommt man außerdem regelmäßig Rüstungen und Mädchen-Fragmente."
 CAMPAIGN_HANG_FORMATION_WINDOW,Team
 SHENXUE_SELECT_WINDOW,Bitte wähle das Mädchenmaterial aus
 NO_PARTNER,Kein Mädchenmaterial vorhanden
@@ -1513,7 +1513,7 @@ WEDDING_VOTE_TEXT_9,Erhaltene Stimmen
 WEDDING_VOTE_TEXT_10,Du hast noch keine Stimme abgegeben…
 WEDDING_VOTE_TEXT_11,Ergebnis
 WEDDING_VOTE_TEXT_12,"Das Event ist vorbei, Stimmen können nicht mehr abgegeben werden"
-WEDDING_VOTE_TEXT_13,"1. Die Veranstaltung dauert 14 Tage. Während der Veranstaltung kannst du wahre Liebesbeweise erwerben, indem du Aufgaben erledigst, um für die Mädchen zu stimmen, die dir gefallen. Die Mädchen mit den höchsten Stimmen werden zuerst berücksichtigt, wenn die Akademie ein neues Eidkostüm erstellt. (Wenn das Mädchen bereits ein Eidkostüm hat, geht die Chance auf das nächste Mädchen in der Rangliste über.) |2. Dies ist das 5. Abstimmungsereignis, sodass die Mädchen, die die ersten Plätze (Iron Fist, Angel, Hexa, Esau&Jakob, Hottie, Sakura, Anastasia, KongMing, Lucifal, Fenrir, Ronja, Izanami) beim vorherigen Ereignis belegt haben, nicht an diesem teilnehmen werden.|3. Diese Veranstaltung hat Gruppenspiele und Finale. Die Mädchen aus der Geister, Monster und Dämonen Fraktion werden in Gruppe A sein. Die Mädchen aus der Menschen, Engel und Feen Fraktion werden in Gruppe B sein. Die 4 Gewinner aus Gruppe A werden am 1.-4. Veranstaltungstag ermittelt. Die 4 Gewinner aus Gruppe B werden am 5.-8. Veranstaltungstag ermittelt. Das Finale beginnt am 9. Veranstaltungstag und endet am letzten Veranstaltungstag. |4. Spieler unter Lv.30 können nicht abstimmen.|5. Für dieses Ereignis gibt es 4 Aufgaben. Sie können für jede Aufgabe 1 wahren Liebesbeweis erwerben. Die Aufgaben werden jeden Tag aktualisiert, aber die wahren Liebesbeweise, die nicht gesammelt werden, werden nicht automatisch an dich gesendet.|6. Nach jeder Runde werden die nicht verwendeten wahren Liebesbeweise gelöscht. Bitte denke daran, sie rechtzeitig zu benutzen.|7. Sobald du eine bestimmte Anzahl von wahren Liebesbeweisen ausgegeben hast, erhältst du eine Belohnung per Mail. Details zu den Preisen findest du beim Belohnungsvorschau.|8. Die Abstimmungsnummer wird nach einem bestimmten Zeitraum oder bei Ihrer Abstimmung aktualisiert.|9. Der noch nicht erhaltene Rahmen vom Event ""Wahre Liebe"" wird dir bevorzugt gesendet. Wenn du alle Rahmen dieses Events erhalten hast, werden Dias als Belohnungen gesendet."
+WEDDING_VOTE_TEXT_13,"1. Die Veranstaltung dauert 14 Tage. Während der Veranstaltung kannst du wahre Liebesbeweise erwerben, indem du Aufgaben erledigst, um für die Mädchen zu stimmen, die dir gefallen. Die Mädchen mit den höchsten Stimmen werden zuerst berücksichtigt, wenn die Akademie ein neues Eidkostüm erstellt. (Wenn das Mädchen bereits ein Eidkostüm hat, geht die Chance auf das nächste Mädchen in der Rangliste über.) |2. Dies ist das 5. Abstimmungsereignis, sodass die Mädchen, die die ersten Plätze (Iron Fist, Angel, Hexa, Esau&Jakob, Hottie, Sakura, Anastasia, KongMing, Lucifal, Fenrir, Ronja, Izanami) beim vorherigen Ereignis belegt haben, nicht an diesem teilnehmen werden.|3. Diese Veranstaltung hat Gruppenspiele und Finale. Die Mädchen aus der Geister, Monster und Dämonen Fraktion werden in Gruppe A sein. Die Mädchen aus der Menschen, Engel und Feen Fraktion werden in Gruppe B sein. Die 4 Gewinner aus Gruppe A werden am 1.-4. Veranstaltungstag ermittelt. Die 4 Gewinner aus Gruppe B werden am 5.-8. Veranstaltungstag ermittelt. Das Finale beginnt am  Veranstaltungstag und endet am letzten Veranstaltungstag. |4. Spieler unter Lv.30 können nicht abstimmen.|5. Für dieses Ereignis gibt es 4 Aufgaben. Sie können für jede Aufgabe 1 wahren Liebesbeweis erwerben. Die Aufgaben werden jeden Tag aktualisiert, aber die wahren Liebesbeweise, die nicht gesammelt werden, werden nicht automatisch an dich gesendet.|6. Nach jeder Runde werden die nicht verwendeten wahren Liebesbeweise gelöscht. Bitte denke daran, sie rechtzeitig zu benutzen.|7. Sobald du eine bestimmte Anzahl von wahren Liebesbeweisen ausgegeben hast, erhältst du eine Belohnung per Mail. Details zu den Preisen findest du beim Belohnungsvorschau.|8. Die Abstimmungsnummer wird nach einem bestimmten Zeitraum oder bei Ihrer Abstimmung aktualisiert."
 WEDDING_VOTE_TEXT_14,Standard
 WEDDING_VOTE_TEXT_15,Verbleibende Stimmen: {1}
 GAME_REPAIR_TIPS,"Wenn ein Fehler auftritt, der zu Anmeldeproblemen führt, kannst du auf die Schaltfläche ""Kundendienst"" klicken, um das Problem zu beheben. Das System startet das Spiel automatisch neu, wenn der Reparaturvorgang abgeschlossen ist."
@@ -1892,7 +1892,7 @@ GUILD_APPLY_DETAIL_WINDOW,Gilden Nachrichten
 GUILD_APPLY,Bewerben
 STAGE_OUTPUT_ADDITION_VIP,(VIP +{1}%%)
 STAGE_OUTPUT_ADDITION_SUB,(Abonnieren +{1}%%)
-AUTO_BATTLE_RESULTS_TALK,"Senpai, endlich bist du zurück! \nIch habe deine Beute eingesammelt.\nMaximal für 10 Stunden!"
+AUTO_BATTLE_RESULTS_TALK,"Senpai, endlich bist du zurück! \nIch habe deine Beute eingesammelt.\nMaximal für 12 Stunden!"
 LOGIN_HANGUP_TEXT03,{1}H {2}M {3}S
 LOGIN_HANGUP_TEXT02,Dauer:
 LOGIN_HANGUP_TEXT05,Kampfort:
@@ -2271,11 +2271,11 @@ HOUSE_TEXT_38,"
 
 3. Nachdem du Möbel gekauft hast, ist es nicht nötig, sie im Zimmer zu platzieren, um den Komfort zu erhöhen. 
 
-4. Je komfortabler das Wohnheimszimmer ist, desto größer ist die Outputrate. Der Komfort wird alle 5 Sekunden berechnet und die Ausbeute kann bist zu 10 Stunden akkumuliert werden. Tippe auf die Taste oben links, um die Ausbeute einzusammeln. Sobald der Komfort deines Wohnheims 50 erreicht hast, kannst du die Ausbeute beim Eingang zum Wohnheim schnell einsammeln.
+4. Je komfortabler das Wohnheimzimmer ist, desto größer ist die Outputrate. Der Komfort wird alle 5 Sekunden berechnet und die Ausbeute kann bis zu 12 Stunden akkumuliert werden. Tippe auf die Taste oben links, um die Ausbeute einzusammeln. Sobald der Komfort deines Wohnheims 50 erreicht hat, kannst du die Ausbeute beim Eingang zum Wohnheim schnell einsammeln.
 
-5. Du kannst jeden Tag einmal das Wohnheim für den Chat-Kanal freigeben. 
+5. Du kannst jeden Tag einmal dein Wohnheim im Chat mit den anderen teilen. 
 
-6. Du kannst auch zu den Wohnheimszimmern anderer Spieler gehen und sie ""liken"", allerdings jedes nur ein Mal pro Tag. 
+6. Du kannst auch zu den Wohnheimzimmern anderer Spieler gehen und sie ""liken"", allerdings jedes nur ein Mal pro Tag. 
 
 7. Jedes Möbelstück trägt zur Berechnung des Komforts bei, egal ob es im Zimmer platziert ist oder nicht. 
 
@@ -4795,7 +4795,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume - Kostümabstimmung
 DRESS_SUMMON_LABEL_2,"Tippe, um die erhältlichen Outfit-Teile zu überprüfen"
 DRESS_SUMMON_LABEL_4,Garantiertes orangenes Outfit-Teil in [c][e96516]{1}[-][/c] Zügen (Zug)
 DRESS_SUMMON_LABEL_1,Gratischance(n): {1}
-DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Weihnachtself"""
+DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Papierdrachen"""
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Kostüm-\nabstimmung
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,Danke für deine Stimme! Wir wünschen dir noch viel Spaß an der Yume Akademie!
 ONE_KEY_UPLEVEL_TITLE,Schnell aufleveln
@@ -4953,7 +4953,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Zum Shop
 QUICK_STARS_TEXT05,Beim Absolvieren...
 EQUIP_LEVELUP_TEXT_19,"Bitte wähle das Professions-Set, bei dem du die Profession ändern möchtest"
 EQUIP_LEVELUP_TEXT_20,Wähle dein gewünschtes Set
-DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Weihnachtself""."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Papierdrachen""."
 HOUSE_TEXT_60,Willst du das Mädchen auf diesen Stock umziehen lassen?
 HOUSE_TEXT_61,Auf diesem Stock gibt es keine freien Plätze mehr
 HOUSE_TEXT_62,Selber auch auf diesem Stockwerk einziehen
@@ -5483,7 +5483,7 @@ ARCTIC_EXPEDITION_TEXT_50,"Willst du {1} Dias ausgeben, um alle Lagermitglieder 
 ARCTIC_EXPEDITION_TEXT_51,Dein Lager hat zurzeit zu viele Versammlungsanweisungen gegeben. Bitte versuch später.
 ARCTIC_EXPEDITION_TEXT_52,Du kannst täglich nur eine Versammlungsanweisung geben. Bitte versuch es morgen wieder.
 ARCTIC_EXPEDITION_TEXT_53,Eine Versammlung zu diesem Feld wurde bereits veranlasst. Eine weitere Versammlung ist nicht nötig!
-ACTIVITY_LUCKYBOXES_TEXT16,Willst du sicher diese ultimativen Belohnungen wählen?
+ACTIVITY_LUCKYBOXES_TEXT16,Willst du sicher diese ultimative Belohnung wählen?
 TIME_CLOISTER_TEXT84,"Verwende das ""Sternfragment · Jadegang"", um die Zweige im Sternkreisel zu leveln."
 TIME_CLOISTER_TEXT85,Extraskill
 ARCTIC_EXPEDITION_TEXT_54,Eine neue Phase wurde entsperrt! Bitte öffne die Eventseite neu!
@@ -5621,16 +5621,71 @@ SHOW_WINDOW_TEXT47,Bewertung des Schaufensters erfolgreich angepasst!
 WORLD_BOSS_SWEEP_TEXT07,Stufe [c][0069cc]{1}[-][/c]
 SETTING_UP_11,Eilmeldung
 SETTING_UP_WINDOW_11,Eilmeldung
-ACTIVITY_WEDDING_MISSION_DESC_5,Schließe mit Eid-Mädchen {1} Kämpfe in der Arena ab
+ACTIVITY_WEDDING_MISSION_DESC_5,Kämpfe mit Eid-Mädchen {1} Mal in der Arena
 TOWER_SHOW_TEXT01,Schließe weitere {1} Stufen ab und erhalte:
 TOWER_SHOW_TEXT02,Schließe diese Stufe ab und erhalte:
 GUILD_TEXT70,Erneuern
-FIREWORK_TEXT01,已消耗代幣
-ACTIVITY_FIREWORK_SHOP_WINDOW,煙花節特供
-FIREWORK_TEXT03,已消耗{1}代幣
-FIREWORK_TEXT04,累計消耗一定數量的代幣後，可解鎖新商品
-FIREWORK_TEXT05,消耗{1}
-FIREWORK_TEXT06,累計消耗{1}個代幣后可解鎖！
-FIREWORK_TEXT07,初始解鎖
-FIREWORK_TEXT08,煙花節商店幫助=======
+FIREWORK_TEXT01,Verwendete Feuerwerksfotos
+ACTIVITY_FIREWORK_SHOP_WINDOW,Shop zum Feuerwerksspektakel
+FIREWORK_TEXT03,{1} Feuerwerksfoto(s) verwendet
+FIREWORK_TEXT04,"Verwende eine bestimmte Anzahl an Feuerwerksfotos, um neue Waren zu entsperren."
+FIREWORK_TEXT05,{1}x verwenden
+FIREWORK_TEXT06,"Verwende insg. {1} Feuerwerksfotos, um es zu entsperren!"
+FIREWORK_TEXT07,Stufe {1}
+FIREWORK_TEXT08,"1. In diesem Shop kannst du deine Feuerwerksfotos gegen Items eintauschen.|2. Verwende die Streichhölzer, um die gleiche Anzahl an Feuerwerksfotos zu erhalten.|3. Die Waren werden in mehrere Stufen eingeteilt. Zu Beginn kannst du nur die Waren der 1. Stufe kaufen. Sobald du eine bestimmte Menge an Feuerwerksfotos verwendet hast, werden Waren der nächsten Stufe entsperrt und so weiter.|4. Nach dem Ende des Events werden die noch nicht verwendeten Feuerwerksfotos entfernt. Bitte verwende sie rechtzeitig."
 NOTICE_BTN_GO_TO_TEXT,Prüfen
+FIREWORK_TEXT09,Abgeschlossene Show(s):
+FIREWORK_TEXT10,Anleitung
+FIREWORK_TEXT11,Normal
+FIREWORK_TEXT12,Autom.
+FIREWORK_TEXT13,"1. Pro Feuerwerksshow werden 9 Feuerwerke zur Verfügung gestellt. Tippe auf die Feuerwerke, um deine Streichhölzer zu verwenden und die Feuerwerke zum Explodieren zu bringen. Bringe alle 9 Feuerwerke zum Explodieren, um die aktuelle Show abzuschließen.|2. Jedes Feuerwerk gibt eine zufällige Belohnung. Nachdem das Feuerwerk explodiert ist, kannst du die Belohnungen einsammeln, indem du auf die Belohnungen tippst.|3. Wenn ein Feuerwerk explodiert, werden während der Explosion Funken umhersprühen, durch welche die anderen Feuerwerke auf derselben Reihe und Spalte möglicherweise auch entzündet werden. Treffen weitere Funken auf entzündete Feuerwerke, werden sie sofort explodieren, ohne dass du weitere Streichhölzer verwenden musst.|4. Jedes Mal, wenn du 1 Streichholz verwendet hast, erhältst du 1 [c][0069cc]Feuerwerksfoto[-][/c], die im Shop gegen Waren umgetauscht werden können.|5. Jedes Mal, wenn 1 Feuerwerk zum Explodieren gebracht wird, erhältst du 1 Punkt Energie. Verwende 30 Energiepunkte, um den Detonationsmodus zu aktivieren und die Belohnungen der übrigen Feuerwerke dieser Show zu verdoppeln!|6. Sobald du [c][0069cc]5[-][/c] Shows abgeschlossen oder [c][0069cc]50[-][/c] Streichhölzer erhalten hast, werden der [c][0069cc]5x Modus[-][/c] und der [c][0069cc]Auto.-Modus[-][/c] entsperrt|7. Im 5x Modus kannst du auf einmal 5 Streichhölzer verwenden und dann die [c][0069cc]5-fache[-][/c] Menge Belohnungen, Energie usw. erhalten.(Tipp: Die Belohnungspools unter Normal- und 5x-Modus werden separat eingestellt. Die Belohnungen der Feuerwerke im 5x-Modus werden automatisch verfünffacht. Der Fortschritt der Shows unter verschiedenen Modi wird unabhängig gerechnet.)|8. Hast du den [c][0069cc]Auto.-Modus[-][/c] aktiviert, werden deine Streichhölzer automatisch zur Explodion der Feuerwerke verwendet (die noch nicht entzündeten Feuerwerke werden bevorzugt gewählt.). Mit genug Energie (30 Punkte) wird der Detonationsmodus zu Beginn nächster Show automatisch aktiviert.|9. Nach dem Ende des Events werden die noch nicht verwendeten Streichhölzer automatisch per Mail recycelt. Jedes Streichholz entspricht 50k Münzen.|10. Die Belohnungen der Feuerwerke (im normalen Modus) sind wie folgt:|Münzen x500k (18%%), EXP-Saft x500k (18%%), Kristallmeißel *400 (15%%), Brotdose *400 (18%%), Diener-Keks *200 (10%%), Spirit-Keks *20 (5%%), Diener-Kristall *10 (5%%), Entwicklungstrank *10 (8%%). (Die Belohnungen unter 5x-Modus werden verfünffacht aber deren Wahrscheinlichkeiten bleiben gleich wie die im normalen Modus.)"
+FIREWORK_TEXT14,Abgeschlossene Show(s):
+FIREWORK_TEXT15,Komm und führe eine feierliche Feuerwerksshow auf! Reichhaltige Belohnungen erwarten dich! (Sie werden per Mail gesendet.)
+FIREWORK_TEXT16,Feuerwerks-\nshow
+FIREWORK_TEXT17,"Schließe {1} Feuerwerksshows ab oder erhalte insg. {2} Streichhölzer, um es zu entsperren."
+FIREWORK_TEXT18,Erhaltene Belohnungen
+FIREWORK_TEXT19,Noch keine Belohnungen erhalten
+FIREWORK_TEXT20,Die Belohnungen der restlichen Feuerwerke in dieser Show werden verdoppelt!
+FIREWORK_TEXT21,Du hast keine Feuerwerke mehr!
+FIREWORK_TEXT22,"Energie nicht ausreichend! Verwende {1} Punkte Energie, um die Belohnungen der restlichen Feuerwerke in dieser Show zu verdoppeln."
+FIREWORK_TEXT23,"Willst du sicher {1} Punkte Energie verwenden, um die Belohnungen der restlichen Feuerwerke in dieser Show zu verdoppeln?"
+FIREWORK_TEXT24,Schließe {1} Feuerwerksshow(s) ab
+FIREWORK_EXPLAIN_TEXT01,"1. Wähle 1 [Feuerwerk] und verwende 1 [Streichholz], um es zum [Explodieren] zu bringen."
+FIREWORK_EXPLAIN_TEXT02,2. [Funken] werden während der Explosion umhersprühen.
+FIREWORK_EXPLAIN_TEXT03,"3. Es besteht eine Wkt., dass andere [Feuerwerke] durch die [Funken] entzündet werden."
+FIREWORK_EXPLAIN_TEXT04,"4. Treffen weitere [Funken] auf entzündete [Feuerwerke], so werden sie explodieren."
+FIREWORK_EXPLAIN_TEXT06,[Feuerwerk]
+FIREWORK_EXPLAIN_TEXT07,[Funken]
+FIREWORK_EXPLAIN_TEXT08,[Entzündetes\nFeuerwerk]
+FIREWORK_EXPLAIN_TEXT09,Feuerwerksanleitung
+FIREWORK_TEXT11_2,5x
+FIREWORK_TEXT25,Perfekte Show!
+FIREWORK_TEXT26,Abgeschlossene Shows +{1}
+FIREWORK_TEXT27,Willst du den Auto.-Modus aktivieren? Deine Streichhölzer werden automatisch zur Explosion der Feuerwerke verwendet. (Die noch nicht entzündeten Feuerwerke werden bevorzugt zum Explodieren gebracht.)
+TREASURE_EXCHANGE_WARN,"Willst du Dias ausgeben, um die aktuellen Attribute zu sperren?"
+NEW_PINGFEN_TEXT01,Feedback Wanted
+NEW_PINGFEN_TEXT02,"Oh Senpai, schon wieder bist du stärker geworden! Jetzt würden wir gerne deine Bewertungen und Vorschläge hören, um die Yume Akademie weiter zu verbessern. Danke für deine Zeit im Voraus!"
+NEW_PINGFEN_TEXT03,Ich hasse es
+NEW_PINGFEN_TEXT04,Interessiert mich nicht
+NEW_PINGFEN_TEXT05,So lala
+NEW_PINGFEN_TEXT06,Gefällt mir gut
+NEW_PINGFEN_TEXT07,Ich liebe es!
+NEW_PINGFEN_TEXT08,Nicht jetzt
+NEW_PINGFEN_TEXT09,Bewerten
+NEW_PINGFEN_TEXT10,Feedback
+NEW_PINGFEN_TEXT11,"Bitte schreibe hier deine Vorschläge auf, damit wir das Spiel weiter optimieren können!"
+NEW_PINGFEN_TEXT12,{1}/500
+NEW_PINGFEN_TEXT13,Bitte schreib hier deine Vorschläge.
+NEW_PINGFEN_TEXT14,Abbrechen
+NEW_PINGFEN_TEXT15,Senden
+NEW_PINGFEN_TEXT16,Dein Feedback wurde gesendet!
+NEW_PINGFEN_TEXT17,"Bitte wähle aus, wie es dir gefällt. (Drücke auf die Herzen!)"
+NEW_PINGFEN_TEXT18,Zeichenlimit erreicht
+FIREWORK_TEXT28,Einige Feuerwerke brennen noch. Bitte versuche es später.
+NEW_PINGFEN_TEXT19,Noch keine Vorschläge eingeben
+FIREWORK_TEXT29,"Dieses Feuerwerk wurde [c][cc6910]entzündet[-][/c]. Willst du dennoch weitere Streichhölzer verwenden, um es zum Explodieren zu bringen? [c][0069cc]Tipp:[-][/c] Die entzündeten Feuerwerke können von den durch Explosion der Feuerwerke auf derselben Reihe oder Spalte entstandenen Funken direkt zum Explodieren gebracht werden, ohne dass du weitere Streichhölzer verwenden musst."
+ARENA_TEAM_NO_FRIEND,Derzeit keine Freunde verfügbar...
+FIREWORK_TEXT30,"Gratuliere, du hast insg. {1} Feuerwerksshows abgeschlossen und den ""5x Modus"" und ""Auto.-Modus"" entsperrt!"
+NEW_YEAR_GIFTBAG_TITLE,Frühjahrs-\nangebote
+ACTIVITY_FIREWORK,Feuerwerks-\nspektakel
+FIREWORK_EXPLAIN_TEXT10,[Streichholz]

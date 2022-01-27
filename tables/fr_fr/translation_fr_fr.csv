@@ -112,7 +112,7 @@ HEAL,Soin
 FAIL_ADVICE,Utilisez les méthodes ci-dessous pour améliorer votre force
 PUB_MISSION_FULL_HERO,Vous avez déjà assez de Filles pour la mission
 BATTLE_TIPS_TITLE,Rivalité de Maison
-CAMPAIGN_WINDOW_HELP,"1. Chaque zone de bataille contient plusieurs Étapes. Finissez tous les étages dans la difficulté actuelle afin de débloquer la difficulté suivante.|2. À la fin de chaque étape vous recevrez des récompenses.|3. Vous devez atteindre les requêtes nécessaires afin de pouvoir débloquer l'étape suivante.|4. L'Auto-Bataille durera au maximum 10 heures. Après 10 heures vous ne recevrez plus de récompenses.|5. L'Auto-Bataille donne du Jus d'EXP, de l'EXP de joueur, et des Pièces. Des étapes de niveaux plus élevées vous donnent des récompenses plus élevées.|6. L'Auto-Bataille vous donnera aussi des équipements et des fragments."
+CAMPAIGN_WINDOW_HELP,"1. Chaque zone de bataille contient plusieurs Étapes. Finissez tous les étages dans la difficulté actuelle afin de débloquer la difficulté suivante.|2. À la fin de chaque étape vous recevrez des récompenses.|3. Vous devez atteindre les requêtes nécessaires afin de pouvoir débloquer l'étape suivante.|4. La Bataille Auto durera au maximum 12 heures. Après 12 heures vous ne recevrez plus de récompenses.|5. La Bataille Auto donne du Jus d'EXP, de l'EXP de joueur, et des Pièces. Des étapes de niveaux plus élevées vous donnent des récompenses plus élevées.|6. La Bataille Auto vous donnera aussi des équipements et des fragments."
 CAMPAIGN_HANG_FORMATION_WINDOW,Équipe
 SHENXUE_SELECT_WINDOW,Choisissez les Filles Matérielles
 NO_PARTNER,Vous n'avez pas de Filles Matérielles
@@ -1543,17 +1543,17 @@ SUBSCRIPTION_DISABLE_TIPS,"L'abonnement n'est pas disponible actuellement, veuil
 DATES_SOUND_TIPS,Aucune voix actuellement
 COMPLETE,Terminé
 CANCEL_2,Annuler
-ACTIVITY_WEDDING_MISSION_DESC_1,Acheter {1} meuble(s) dans la Boutique des Meubles
-ACTIVITY_WEDDING_MISSION_DESC_2,Finir {1} Job(s)
+ACTIVITY_WEDDING_MISSION_DESC_1,Acheter {1} meuble dans la Boutique des Meubles
+ACTIVITY_WEDDING_MISSION_DESC_2,Finir {1} Job
 ACTIVITY_WEDDING_MISSION_DESC_3,Terminer {1} Quiz
-ACTIVITY_WEDDING_MISSION_DESC_4,Envoyer {1} cadeau(x)
-WEDDING_VOTE_TEXT_1,Bulletin d'amour
+ACTIVITY_WEDDING_MISSION_DESC_4,Envoyer {1} cadeaux
+WEDDING_VOTE_TEXT_1,Bulletin d'Amour
 WEDDING_VOTE_TEXT_2,Popularité
 WEDDING_VOTE_TEXT_3,Obtenir
-WEDDING_VOTE_TEXT_4,Vote Reçu
+WEDDING_VOTE_TEXT_4,Vote(s) obtenu(s) :
 WEDDING_VOTE_TEXT_5,Vous n'avez pas atteint le niveau requis pour voter
-WEDDING_VOTE_TEXT_6,Vote Réussi
-WEDDING_VOTE_TEXT_7,Utilisez {1} Bulletins d'amour
+WEDDING_VOTE_TEXT_6,A voté !
+WEDDING_VOTE_TEXT_7,Utiliser {1} Bulletins d'Amour
 WEDDING_VOTE_TEXT_8,Mes votes
 WEDDING_VOTE_TEXT_9,Vote(s)
 WEDDING_VOTE_TEXT_10,Vous n'avez pas encore voté...
@@ -1564,9 +1564,9 @@ WEDDING_VOTE_TEXT_13,"
 Période de vote :
 Phase de Groupe A : Jour 1 à 4
 Phase de Groupe B : Jour 5 à 8
-Phase Finale : Jour 9 à 14|4. Seuls les joueurs ayant atteint le niveau 30 pourront participer aux votes.|5. Complétez les 4 tâches d\'événement et obtenez des【Bulletins d\'amour】. Les tâches seront raffraîchies quotidiennement. Cependant, les【Bulletins d\'amour】 non récupérés ne seront plus collectables.|6. Les 【Bulletins d\'amour】non-utilisés disparaîtront après chaque Phase de Groupe. N\'oubliez pas de les utiliser dans le temps imparti.|7. Recevez des récompenses supplémentaires par courrier, après avoir utilisé un certain nombre de 【Bulletin d\'amour】. Vous pouvez voir les détails des récompenses sur l\'interface - Aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que vous ayez voté.|9. Si vous avez déjà eu le Cadre d\'Avatar 【Vraie Promesse】, vous obtiendrez des Gemmes en guise de récompense."
+Phase Finale : Jour 9 à 14|4. Seuls les joueurs ayant atteint le niveau 30 pourront participer aux votes.|5. Complétez les 4 tâches d\'événement et obtenez des【Bulletins d\'amour】. Les tâches seront raffraîchies quotidiennement. Cependant, les【Bulletins d\'amour】 non récupérés ne seront plus collectables.|6. Les 【Bulletins d\'amour】non-utilisés disparaîtront après chaque Phase de Groupe. N\'oubliez pas de les utiliser dans le temps imparti.|7. Recevez des récompenses supplémentaires par courrier, après avoir utilisé un certain nombre de 【Bulletin d\'Amour】. Vous pouvez voir les détails des récompenses sur l\'interface - Aperçu.|8. Les Votes seront raffraîchis après une certaine période de temps ou après que vous ayez voté."
 WEDDING_VOTE_TEXT_14,Par défaut
-WEDDING_VOTE_TEXT_15,Bulletin d'amour restant：{1}
+WEDDING_VOTE_TEXT_15,Bulletin d'Amour restant：{1}
 GAME_REPAIR_TIPS,"Si une erreur vous empêche de vous connecter, vous pouvez cliquer sur 【Réparation du client】 afin de résoudre le problème. Le système redémarrera le jeu une fois que le problème sera résolu."
 GAME_NETWORK_CHECK,Test réseau
 GAME_REPAIR,Réparation
@@ -1910,8 +1910,8 @@ BACKGROUND_TEXT03,Gratuit après déverrouillage
 BACKGROUND_TEXT04,Après déverrouillage
 BACKGROUND_TEXT05,Acheter
 BACKGROUND_TEXT06,Gratuit
-BACKGROUND_TEXT07,Aucun effets spéciaux pour cette image !
-BACKGROUND_TEXT08,Les images ont des effets spéciaux.
+BACKGROUND_TEXT07,Aucun effet spécial !
+BACKGROUND_TEXT08,Obtenez cette image pour pouvoir voir son effet spécial !
 BACKGROUND_TEXT09,Enlever
 BACKGROUND_TEXT10,Ajouter
 SETTING_UP_BACKGROUND,Fond
@@ -1940,8 +1940,8 @@ STAGE_OUTPUT_ADDITION_VIP,(VIP +{1}%%)
 STAGE_OUTPUT_ADDITION_SUB,(S'abonner +{1}%%)
 AUTO_BATTLE_RESULTS_TALK,"
 Senpai, tu es enfin de retour ! 
- Je t\'ai aidé à récupérer ton butin 
-(10h de Butin au maximum)!
+Je t\'ai aidé à récupérer ton butin 
+(12h de Butin au maximum)!
 "
 LOGIN_HANGUP_TEXT03,{1} H {2} M {3} S
 LOGIN_HANGUP_TEXT02,Durée：
@@ -2317,7 +2317,7 @@ HOUSE_TEXT_38,"
 
 3. Les Meubles achetés ajoutent du Confort à votre Dortoir. Le Confort du Dortoir inclut tous les meubles que vous avez achetés, nul besoin d\'être placé dans votre Dortoir pour être comptabilisé.
 
-4. L\'augmentation du Confort augmentera le revenu des ressources de votre Dortoir. Vous obtiendrez des ressources toutes les 5 secondes et vous pouvez les cumuler pendant 10 heures.
+4. L\'augmentation du Confort augmentera le revenu des ressources de votre Dortoir. Vous obtiendrez des ressources toutes les 5 secondes et vous pouvez les cumuler pendant 12 heures.
 
 5. Vous pouvez partager votre dortoir aux autres joueurs sur le Tchat une fois par jour. 
 
@@ -2403,7 +2403,7 @@ WEDDING_VOTE_TEXT_20,Fin du vote du Groupe A dans：
 WEDDING_VOTE_TEXT_21,Fin du vote du Groupe B dans：
 WEDDING_VOTE_TEXT_22,Finale se terminera dans：
 ACTIVITY_VOTE_EMPTY,Aucune de Fille de cette Maison participe dans ce Match
-ACTIVITY_VOTE_RANK_WINDOW,Résultat du Match
+ACTIVITY_VOTE_RANK_WINDOW,Résultat
 ACTIVITY_VOTE_NEW_NAV_TEXT1,Groupe A
 ACTIVITY_VOTE_NEW_NAV_TEXT2,Groupe B
 ACTIVTIY_NEWYEAR_BOX_TEXT,Collectez les Boîtes du Nouvel An et Boîtes Avancées du Nouvel An dans le Butin de Campagne pour récupérer les récompenses !
@@ -2459,7 +2459,7 @@ PARTNER_STATION_BATTLE_FORMATION_WINDOW,Bataille
 PARTNER_STATION_NO_APPEAR,Non classé
 ITEM_HAS_NUM,Possède：{1}
 BACKGROUND_PREVIEW_CONFIRM_WINDOW_TITLE,Choisir l'interface de téléchargement
-BACKGROUND_PREVIEW_CONFIRM_WINDOW_DESC,Êtes-vous sûr d'utiliser l'effet spéciaux ?\nAttention：Les effets spéciaux peuvent affecter le temps de chargement
+BACKGROUND_PREVIEW_CONFIRM_WINDOW_DESC,Êtes-vous sûr d'utiliser l'effet spécial ?\nAttention：l'effet spécial peut affecter le temps de chargement...
 BACKGROUND_PREVIEW_CONFIRM_WINDOW_IMG,Non
 BACKGROUND_PREVIEW_CONFIRM_WINDOW_EFFECT,Oui
 STATION_BATTLE_FORMATION_WINDOW,Bataille
@@ -3926,7 +3926,7 @@ FRIEND_TEAM_MSG_TEXT01,[c][0066cc]{1}[-][/c] n' a pas participé au combat de s�
 FRIEND_TEAM_MSG_TEXT02,"[c][0066cc]{1}[-][/c] de votre équipe ne s'est pas connecté depuis longtemps, le chef peut toucher son avatar pour l'[c][cc0011]expulser[-][/c]."
 FRIEND_TEAM_MSG_TEXT03,"Le chef [c][0066cc]{1}[-][/c] ne s'est pas connecté depuis longtemps, vous pouvez [c][cc0011] quitter l'équipe actuelle[-][/c]"
 ACTIVITY_GAMBLE_PLUS_HELP,"1. Pendant l'événement, vous pouvez collecter「As de Cœur 」pour récupérer les récompenses ! |2. Vous pouvez acheter le pack de Distribution Chanceuse pour débloquer les récompenses spéciales, les objets bonus du pack vous seront envoyés immédiatement.|3. Les「As de Cœur」possédés disparaîtront à la fin d'événement. N'oubliez pas de récupérer les récompenses !"
-WEDDING_VOTE_RANK_TITLE,Ancien TOP3
+WEDDING_VOTE_RANK_TITLE,Classements Précédents
 WEDDING_VOTE_RANK_SESSION,S{1} - Gagnez leurs Cœurs
 ACTIVITY_NEWBEE_GACHA_TEXT03,Possibilité d'obtenir Fille [c][ef4037]5[-][/c] étoiles multipliée par [c][ef4037]5[-][/c] !
 ACTIVITY_NEWBEE_GACHA_TEXT04,Tirer Capsule de Débutant {1} fois
@@ -4052,7 +4052,7 @@ PLOT_UNLOCK_DESC2,Automatiquement déverrouillé en terminant la Campagne {1}
 PLOT_UNLOCK_TIPS1,Déverrouillez en terminant le chapitre précédent
 PLOT_UNLOCK_TIPS2,Déverrouillez en terminant l'épisode précédent
 PLOT_UNLOCK_DESC3,Déverrouillable en utilisant des objets
-ACTIVITY_RECHARGE_TEXT,Recevez 1 point d'événement pour chaque point de VIP EXP obtenu pendant l'événement. Les récompenses vous seront envoyées par courrier !
+ACTIVITY_RECHARGE_TEXT,"Durant l'événement, obtenez des VIP EXP pour récupérer les récompenses. (récompenses envoyées par courrier)"
 PLOT_UNLOCK_CONFIRM,Êtes-vous sûr de vouloir débloquer l'histoire ?
 ACTIVITY_RECHARGE_POINT,Obtenir {1} VIP EXP
 TRAVEL_MAIN_TEXT53,Ouvrir
@@ -4854,7 +4854,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Vote du Skin de Miss Yume
 DRESS_SUMMON_LABEL_2,Défilez pour voir les Tenues obtenables
 DRESS_SUMMON_LABEL_4,Tenue Orange garantie après avoir tiré [c][e96516]{1}[-][/c] fois
 DRESS_SUMMON_LABEL_1,Chance Gratuite : {1} fois
-DRESS_SUMMON_LABEL_3,Taux d'Obtention de\nla Tenue - Magie de Noël
+DRESS_SUMMON_LABEL_3,Taux d'obtention de\nl'ensemble - Cerf-volant Printanier
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
@@ -5009,12 +5009,12 @@ EQUIP_LEVELUP_TEXT_15,Convertir
 EQUIP_LEVELUP_TEXT_16,Voulez-vous convertir cet ensemble d'équipement ?
 EQUIP_LEVELUP_TEXT_17,Ensemble d'équipement à convertir
 EQUIP_LEVELUP_TEXT_18,Ensemble d'équipement à obtenir
-ACTIVITY_DRESS_GACHA_AWARD_HELP,Terminez les tâches pour obtenir les récompenses correspondantes. (envoyées par courrier)
+ACTIVITY_DRESS_GACHA_AWARD_HELP,Terminez les tâches pour obtenir les récompenses correspondantes.\n(récompenses envoyées par courrier)
 ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
 EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'Ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
-DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Magie de Noël est actuellement augmenté !
+DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Cerf-volant Printanier est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
@@ -5179,7 +5179,7 @@ L’Arène Ultime est une Arène interserveur permettant la participation à tou
 La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases : Préparation au Combat, Ruée de Point, Élimination, Finalistes et Trêve.|1. Préparation au Combat|(1) Durée : 1ère journée de chaque saison.
 (2) Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour.
 (2) Pendant cette phase, utilisez vos Tickets d\'Arène pour combattre vos adversaires. La liste de vos adversairespeut être actualisée 5 fois par jour au maximum.
-(3) Le nombre de Tickets d\'Arène nécessaire dans l\'Arène Ultime augmentera en fonction du nombre de combats par jour. 2 Tickets d\'Arène (du 1er au 5ème combat), 3 Tickets d\'Arène (du 6ème au 10ème combat), 4 Tickets d\'Arène (du 11ème au 15ème combat), 5 Tickets d\'Arène (à parti du 16ème combat).
+(3) Le nombre de Tickets d\'Arène nécessaire dans l\'Arène Ultime augmentera en fonction du nombre de combats par jour. 2 Tickets d\'Arène (du 1er au 5ème combat), 3 Tickets d\'Arène (du 6ème au 10ème combat), 4 Tickets d\'Arène (du 11ème au 15ème combat), 5 Tickets d\'Arène (à partir du 16ème combat).
 (4) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
 (2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Classement Général passeront au Rang Grand Maître.
 (3) Lors de votre première participation à la phase Ruée de Point, vous serez classé Bronze V. Au début de chaque nouvelle saison, votre Rang sera réinitialisé et vous recevrez des points en fonction de votre Rang de la saison précédente.
@@ -5684,12 +5684,67 @@ ACTIVITY_WEDDING_MISSION_DESC_5,Combattre {1} fois dans l'Arène avec une Fille 
 TOWER_SHOW_TEXT01,Passez encore {1} Étape(s) pour obtenir :
 TOWER_SHOW_TEXT02,Passez cette Étape pour obtenir :
 GUILD_TEXT70,Actualiser
-FIREWORK_TEXT01,已消耗代幣
-ACTIVITY_FIREWORK_SHOP_WINDOW,煙花節特供
-FIREWORK_TEXT03,已消耗{1}代幣
-FIREWORK_TEXT04,累計消耗一定數量的代幣後，可解鎖新商品
-FIREWORK_TEXT05,消耗{1}
-FIREWORK_TEXT06,累計消耗{1}個代幣后可解鎖！
-FIREWORK_TEXT07,初始解鎖
-FIREWORK_TEXT08,煙花節商店幫助=======
+FIREWORK_TEXT01,Carte(s) de Spectacle utilisée(s)
+ACTIVITY_FIREWORK_SHOP_WINDOW,Boutique
+FIREWORK_TEXT03,{1} Cartes de Spectacle utilisées
+FIREWORK_TEXT04,De nouvelles récompenses seront échangeables après avoir utilisé un certain nombre de Carte de Spectacle !
+FIREWORK_TEXT05,Utiliser\n{1} Cartes
+FIREWORK_TEXT06,Débloqué après avoir utilisé {1} Cartes de Spectacle !
+FIREWORK_TEXT07,{1}e Palier
+FIREWORK_TEXT08,"1. Échangez les Cartes de Spectacle contre des récompenses.|2. Après avoir utilisé 1 Allumette, vous obtiendrez 1 Carte de Spectacle.|3. Le 1er palier de la boutique est débloqué par défaut. Après avoir utilisé un certain nombre de Carte de Spectacle, vous pourrez accéder aux paliers suivants.|4. Après la fin de cet événement, les Cartes de Spectacle inutilisées disparaîtront, veuillez les utiliser dans le temps imparti."
 NOTICE_BTN_GO_TO_TEXT,Aller voir
+FIREWORK_TEXT09,Spectacle(s) réalisé(s)：
+FIREWORK_TEXT10,Détails
+FIREWORK_TEXT11,Pétard x1
+FIREWORK_TEXT12,Auto
+FIREWORK_TEXT13,"1. Touchez les Pétards et utilisez des Allumettes pour les faire exploser.|2. Chaque Spectacle compte 9 Pétards. Après avoir fait exploser les 9 Pétards, le Spectacle sera considéré comme réalisé.|3. Après avoir fait explosé un Pétard, vous obtiendrez une récompense aléatoire, à collecter manuellement.|4. Après avoir fait explosé un Pétard, ce dernier produira des Étincelles. Lorsque qu'une Étincelle touche un autre Pétard, elle a des chances de l'allumer. Lorsqu'une Étincelle touche un Pétard déjà allumé, ce dernier explosera directement, ainsi aucune Allumette ne sera utilisée.|5. Après avoir utilisé 1 Allumette, vous obtiendrez 1 [c][0069cc]Carte de Spectacle[-][/c], utilisable pour échanger des récompenses dans la Boutique de cet événement.|6. Après qu'un Pétard ait explosé, vous obtiendrez également 1 Énergie. Vous pouvez utiliser 30 Énergies pour doubler les récompenses des Pétards restants du Spectacle actuel.|7. Après avoir réalisé 5 Spectacles ou avoir obtenu 50 Allumettes, [c][0069cc]le mode ""x5""[-][/c] et [c][0069cc]le mode ""Auto""[-][/c] seront débloqués.|8. Dans [c][0069cc]le mode ""x5""[-][/c], les Allumettes utilisées, les récompenses obtenues, les Énergies obtenues et les Spectacles réalisés seront multipliés par [c][0069cc]5[-][/c].|9. Dans [c][0069cc]le mode ""Auto""[-][/c], les Allumettes seront automatiquement utilisées pour faire exploser les Pétards (les Pétards non-allumés exploseront en priorité). Lorsque vous avez obtenu 30 Énergies, ces 30 Énergies seront automatiquement utilisées pour doubler les récompenses d'un prochain Spectacle.|10. Après la fin de cet événement, les Allumettes inutilisées seront automatiquement converties en Pièce d'Or, 1 Allumette = 50k Pièce d'Or, et envoyées par courrier.|11. Dans le mode ""x1"", chaque explosion de Pétard vous permettra d'obtenir aléatoirement une des récompenses suivantes : Pièce d'Or x500k (18%%), Jus d'EXP x500k (18%%), Ciseau de Cristal x 400 (18%%), Plateau Repas x400 (18%%), Biscuit de Serviteur x200 (10%%), Biscuit Spiritueux x20 (5%%) et Essence x10 (8%%)."
+FIREWORK_TEXT14,Spectacle(s) réalisé(s)：
+FIREWORK_TEXT15,"Durant cet événement, faites exploser des Pétards et réalisez des Spectacles de Feux d'artifice pour obtenir des récompenses !\nLes récompenses seront envoyées par courrier."
+FIREWORK_TEXT16,Aller à
+FIREWORK_TEXT17,Débloqué après avoir réalisé {1} Spectacles ou avoir obtenu {2} Allumettes.
+FIREWORK_TEXT18,Récompense(s) Obtenue(s)
+FIREWORK_TEXT19,Aucune récompense obtenue...
+FIREWORK_TEXT20,Les récompenses que vous obtiendrez dans ce Spectacle seront doublées !
+FIREWORK_TEXT21,"Vous n'avez plus de Pétard à faire exploser. Veuillez passer au Spectacle suivant, Senpai~"
+FIREWORK_TEXT22,Énergie insuffisante ! Il vous faut d'abord obtenir {1} Énergies afin de pouvoir doubler les récompenses des Pétards restants du Spectacle actuel.
+FIREWORK_TEXT23,Voulez-vous utiliser {1} Énergies pour doubler les récompenses des Pétards restants du Spectacle actuel ?
+FIREWORK_TEXT24,Réaliser {1} Spectacle(s) de Feux d'artifice
+FIREWORK_EXPLAIN_TEXT01,1. Utilisez des Allumettes pour faire exploser les Pétards.
+FIREWORK_EXPLAIN_TEXT02,2. Un Pétard explosé produira des Étincelles.
+FIREWORK_EXPLAIN_TEXT03,"3. Lorsque qu'une Étincelle touche un autre Pétard, elle a des chances de l'allumer."
+FIREWORK_EXPLAIN_TEXT04,"4. Lorsqu'une Étincelle touche un Pétard déjà allumé, ce dernier explosera."
+FIREWORK_EXPLAIN_TEXT06,「Pétard」
+FIREWORK_EXPLAIN_TEXT07,「Étincelle」
+FIREWORK_EXPLAIN_TEXT08,「Pétard Allumé」
+FIREWORK_EXPLAIN_TEXT09,Détails
+FIREWORK_TEXT11_2,x5
+FIREWORK_TEXT25,Spectacle réalisé !
+FIREWORK_TEXT26,Spectacle réalisé +{1}
+FIREWORK_TEXT27,Voulez-vous passer en mode Auto ? Le système utilisera automatiquement les Allumettes pour faire exploser les Pétards dans ce mode (les Pétards non-allumés exploseront en priorité).
+TREASURE_EXCHANGE_WARN,Voulez-vous utiliser des Gemmes pour bloquer les attributs actuels ?
+NEW_PINGFEN_TEXT01,Votre Avis
+NEW_PINGFEN_TEXT02,"Cher Senpai,\nJour après jour, nous vous voyons gagner en puissance et votre avis nous est important !\nNous souhaiterions avoir vos retours et suggestions afin de pouvoir améliorer votre expérience à l'Académie Yume. Nous vous remercions à l'avance pour le temps que vous nous consacrerez !"
+NEW_PINGFEN_TEXT03,Je n'aime pas du tout
+NEW_PINGFEN_TEXT04,Insatisfait(e)
+NEW_PINGFEN_TEXT05,Neutre
+NEW_PINGFEN_TEXT06,Satisfait(e)
+NEW_PINGFEN_TEXT07,J'adore !
+NEW_PINGFEN_TEXT08,Plus tard
+NEW_PINGFEN_TEXT09,Noter
+NEW_PINGFEN_TEXT10,Suggestions
+NEW_PINGFEN_TEXT11,Laissez-nous vos suggestions afin que nous puissions améliorer le jeu selon vous~
+NEW_PINGFEN_TEXT12,{1}/500
+NEW_PINGFEN_TEXT13,Inscrivez votre suggestion ici
+NEW_PINGFEN_TEXT14,Annuler
+NEW_PINGFEN_TEXT15,Soumettre
+NEW_PINGFEN_TEXT16,Vos retours et suggestions ont été transmis !
+NEW_PINGFEN_TEXT17,Veuillez noter le jeu
+NEW_PINGFEN_TEXT18,Limite de caractère atteinte !
+FIREWORK_TEXT28,"Un Pétard est encore en train d'exploser, il vaut mieux attendre avant d'en allumer un autre."
+NEW_PINGFEN_TEXT19,Veuillez inscrire votre suggestion
+FIREWORK_TEXT29,"Ce Pétard est déjà [c][cc6910]allumé[-][/c] ! Voulez-vous utiliser 1 Allumette pour le faire exploser ? [c][0069cc]Astuce[-][/c] : Un Pétard allumé peut également exploser grâce aux [c][cc6910]Étincelles d'un autre Pétard[-][/c], et ce sans utiliser d'Allumette."
+ARENA_TEAM_NO_FRIEND,Aucun ami disponible à inviter...
+FIREWORK_TEXT30,"Félicitations, vous avez réalisé {1} Spectacles. Le mode x5 est désormais débloqué !"
+NEW_YEAR_GIFTBAG_TITLE,Pack Lunaire
+ACTIVITY_FIREWORK,Fête du\nPrintemps
+FIREWORK_EXPLAIN_TEXT10,「Allumette」
