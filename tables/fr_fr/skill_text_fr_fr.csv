@@ -10583,190 +10583,172 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 5101700,Lord Dracula,Attaque Basique,
 65102400,Lord Dracula,Attaque Basique,
 75101700,Lord Dracula,Attaque Basique,
-5101701,Lord Dracula,Veine Pourpre,"
-Inflige 200% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 5% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+5101701,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 200% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 5% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 400% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 10% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (2% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-65102401,Lord Dracula,Veine Pourpre,"
-Inflige 400% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 10% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (2% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+65102401,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 400% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 10% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 800% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 15% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (4% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-75101701,Lord Dracula,Veine Pourpre,"
-Inflige 800% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (4% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+75101701,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 800% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 1600% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-5101702,Lord Dracula,Pur-Sang,"Augmente les PV de 20%, l'Attaque de 20%, le Blocage de 20%, l'Immunité de 10% et la Vitesse de 20."
-65102402,Lord Dracula,Pur-Sang,"Augmente les PV de 25%, l'Attaque de 25%, le Blocage de 40%, l'Immunité de 20% et la Vitesse de 30."
-65102412,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 40."
-75101702,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 40."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+5101702,Lord Dracula,Grand Corbeau,"Augmente les PV de 20%, l'Attaque de 20%, le Blocage de 20%, l'Immunité de 10% et la Vitesse de 20."
+65102402,Lord Dracula,Grand Corbeau,"Augmente les PV de 25%, l'Attaque de 25%, le Blocage de 40%, l'Immunité de 20% et la Vitesse de 30."
+65102412,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 40."
+75101702,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 40."
 5101703,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 10% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 10% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 5% et leurs dégâts infligés de 3% (réduit de 40% au maximum) pendant 6 tours et elle a également 50% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (2% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 65102403,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 15% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 15% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 10% et leurs dégâts infligés de 6% (réduit de 40% au maximum) pendant 6 tours et elle a également 70% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (4% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 65102413,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 20% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 20% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 75101703,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 20% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 20% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 5101704,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 100% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 200% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 100% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 200% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (4% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (1% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 65102404,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 200% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 400% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 200% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 400% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (4% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (3% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 65102414,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 400% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 800% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 400% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 800% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 75101704,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 400% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 800% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 400% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 800% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017011,Lord Dracula,Veine Pourpre,"
-Inflige 816% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017011,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 816% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 1680% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017012,Lord Dracula,Veine Pourpre,"
-Inflige 832% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017012,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 832% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 1760% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017013,Lord Dracula,Veine Pourpre,"
-Inflige 848% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017013,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 848% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 1840% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017014,Lord Dracula,Veine Pourpre,"
-Inflige 864% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017014,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 864% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 1920% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017015,Lord Dracula,Veine Pourpre,"
-Inflige 880% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017015,Lord Dracula,Chiroptère Rageur,"
+Personne ne pourra m\'échapper. Inflige 880% d\'Attaque à 3 ennemis aléatoires, réduit leurs Attaques de 15% pendant 2 tours et les marque avec 2 couches de [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 Lord Dracula inflige également des dégâts supplémentaires à ces 3 ennemis, ceux ayant 50% ou plus de leur PV subiront des dégâts supplémentaires équivalent à 2000% de l\'Attaque de Lord Dracula, ceux ayant moins de 50% de leur PV subiront des dégâts supplémentaires équivalent à 20% de leurs PV perdus (2500% d\'Attaque de Lord Dracula au maximum).
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (10% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-751017021,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 42."
-751017022,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 44."
-751017023,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 46."
-751017024,Lord Dracula,Pur-Sang,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 48."
-751017025,Lord Dracula,Pur-Sang,"Augmente les PV de 33%, l'Attaque de 33%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 50."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (10% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+751017021,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 42."
+751017022,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 44."
+751017023,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 46."
+751017024,Lord Dracula,Grand Corbeau,"Augmente les PV de 30%, l'Attaque de 30%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 48."
+751017025,Lord Dracula,Grand Corbeau,"Augmente les PV de 33%, l'Attaque de 33%, le Blocage de 60%, l'Immunité de 30% et la Vitesse de 50."
 751017031,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 22% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 22% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 751017032,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 24% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 24% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 751017033,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 26% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 26% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 751017034,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 28% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 28% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 50%, ces dégâts ne peuvent pas dépasser 3000% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 50%, ces dégâts ne peuvent pas dépasser 3750% d\'Attaque de Lord Dracula."
 751017035,Lord Dracula,Lune de Sang,"
-Lorsque Lord Dracula lance son Attaqua Basique, elle a 30% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
+Prouvez-moi votre loyauté, mes chauves-souris ! Lorsque Lord Dracula lance son Attaqua Basique, elle a 30% de chance d\'obtenir 1 couche de [c][e28002]Pur-Sang[-][/c].
 Lorsqu\'une Fille (alliée ou ennemie) est vaincue, Lord Dracula réduit la Précision de tous ses ennemis de 15% et leurs dégâts infligés de 10% (réduit de 40% au maximum) pendant 6 tours et elle a également 100% de chance d\'obtenir 2 couches de [c][e28002]Pur-Sang[-][/c].
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (10% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre.
 [c][e28002]Pur-Sang (Effet de Compétence, cumulable)：[-][/c]
-Lorsque Lord Dracula marquera une seconde fois un ennemi avec Veine Pourpre, 1 couche de Pur-Sang sera utilisée pour augmenter les dégâts infligés par Veine Pourpre de 55%, ces dégâts ne peuvent pas dépasser 3100% d\'Attaque de Lord Dracula."
+Lorsque Lord Dracula marquera une seconde fois un ennemi avec [c][01a310]Veine Pourpre[-][/c], 1 couche de [c][e28002]Pur-Sang[-][/c] sera utilisée pour augmenter les dégâts infligés par [c][01a310]Veine Pourpre[-][/c] de 55%, ces dégâts ne peuvent pas dépasser 3875% d\'Attaque de Lord Dracula."
 751017041,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 408% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 816% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 408% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 816% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 751017042,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 416% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 832% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 416% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 832% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 751017043,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 424% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 848% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 424% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 848% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 751017044,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 432% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 864% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 432% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 864% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (8% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 751017045,Lord Dracula,Toile Sanglante,"
-Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 440% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 880% d\'Attaque à 1 ennemi aléatoire et le marquera avec [c][e28002]Veine Pourpre[-][/c] pendant 2 tours.
+Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 440% d\'Attaque à l\'attaquant.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 832% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
-[c][e28002]Veine Pourpre：[-][/c]
-Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (10% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2000% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
-501112,Îles Célestes,Vampire I,"Lorsque Lord Dracula (ennemie) est attaquée, elle a 10% d'obtenir 1 couche de Pur-Sang."
-501113,Îles Célestes,Vampire II,"Lorsque Lord Dracula (ennemie) est attaquée, elle a 20% d'obtenir 1 couche de Pur-Sang."
+[c][01a310]Veine Pourpre：[-][/c]
+Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (7% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
+501112,Îles Célestes,Vampire I,"Lorsque Lord Dracula (ennemie) est attaquée, elle a 10% de chance d'obtenir 1 couche de Pur-Sang."
+501113,Îles Célestes,Vampire II,"Lorsque Lord Dracula (ennemie) est attaquée, elle a 20% de chance d'obtenir 1 couche de Pur-Sang."
 502112,Îles Célestes,Ébi,"Azumi (ennemie) et Michael (ennemie) ne peut pas se ressusciter après qu'elles ne soient vaincues, cependant Ébi d'Azumi (ennemie) infligera également des dégâts à la fin du tour."
 503116,Îles Célestes,Plume d'Amour,La Compétence Active d'Éléanor ennemie cible toutes vos alliées de la ligne arrière.

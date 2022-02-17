@@ -258,7 +258,7 @@ DUNGEON_HARD_1,Leicht
 DUNGEON_HARD_2,Normal
 DUNGEON_HARD_3,Schwer
 DUNGEON_HARD_4,Extrem
-DUNGEON_MONSTER_PREVIEW,Vorschau des Feindes
+DUNGEON_MONSTER_PREVIEW,Vorschau der Gegner
 DUNGEON_FIGHT,Kampf
 DUNGEON_HERO_HAS_UP,Die Mädchen sind im Einsatz!
 DUNGEON_FULL_HERO,Maximal eingesetzte Mädchen!
@@ -2861,7 +2861,7 @@ TRIAL_NO_RANK,Derzeit kein Spieler
 RED_MARK,Roter Punkt
 NOTIFY,Benachrichtigung
 SETTING_ASSISTANT,Assistentin
-ENEMY_PREVIEW,Feinde
+ENEMY_PREVIEW,Gegner
 BOSS_LEVEL_SWITCH,BOSS Level wechseln
 BEGIN,Wechseln
 MY_ASSISTANT,Meine
@@ -5695,3 +5695,122 @@ ACTIVITY_FIREWORK,Feuerwerks-\nspektakel
 FIREWORK_EXPLAIN_TEXT10,[Streichholz]
 HOUSE_TEXT_64,Nicht im Besitz
 POTENTIALITY_BACK_TEXT04,Die Kapazität deiner Mädchenliste ist nicht ausreichend
+ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. Verwende deine ""Sanduhren der Vergangenheit"" in der entsprechenden Szene, um die Rückblende abzuschließen. Nach der Rückblende erhältst du eine Szenebelohnung oder einen ""Schlüssel zur Vergangenheit"", mit dem die nächste Szene entsperrt werden kann. In verschiedenen Szenen werden verschiedene Mengen an ""Sanduhren der Vergangenheit"" benötigt.|2. Hast du während der Rückblende in einer Szene keinen ""Schlüssel zur Vergangenheit"" erhalten, wird bei der nächsten Rückblende die Wahrscheinlichkeit fürs Erscheinen des Schlüssels erhöht und du erhältst außerdem eine zufällige Szenenbelohnung (eine Szenenbelohnung kann nicht wiederholt erhalten werden), ansonsten wird die nächste Szene entsperrt und du erhältst auch keine Szenenbelohnungen.|3. Die 1. Szene wird zu Beginn automatisch entsperrt. In den ersten 4 Szenen erhältst du jeweils 1 ""Schlüssel zur Vergangenheit"", mit dem die nächste Szene entsperrt werden kann. In der 5. Szene gibt es keinen ""Schlüssel zur Vergangenheit"". Sobald du alle Szenenbelohnungen in den ersten 5 Szenen erhalten hast, wird die 6. Szene entsperrt. Hast du alle Szenenbelohnungen in der 6. Szene erhalten, wird diese Szene sowie deren Belohnungen zurückgesetzt.|4. Gibt es in den entsperrten Szenen noch nicht erhaltene Szenenbelohnungen, kannst du die Szene erneut auswählen, um dort die Rückblenden nochmal abzuschließen und die Belohnungen zu erhalten.|5. Unter ""Lord · Erwachen"" kannst du die ""Uralte Feder"" manuell verwenden (auf ""Erwecken"" tippen) , um Lord Dracula zu erwecken. Bei vollem Erwachen-Fortschritt erhältst du 50 Lord Dracula-Fragmente.|6. Erhalten der ""Uralten Feder"": Lord Draculas Aufträge. Erhalten der ""Sanduhren der Vergangenheit"": Lord Draculas Aufträge, Willkommenskapseln, Superpakete, Glückspakete, Kostümpakete.|7. Nach dem Ende des Events werden die noch nicht verwendeten ""Uralten Federn"", ""Sanduhren der Vergangenheit"" und ""Schlüssel zur Vergangenheit"" automatisch per Mail recycelt. Jede ""Uralte Feder"" entspricht 20k Münzen, jede ""Sanduhr der Vergangenheit"" 50k und jeder ""Schlüssel zur Vergangenheit"" 100k."
+ACTIVITY_VAMPIRE_TASK_HELP,"1. Schließe während des Events die Aufgaben ab und sammle die ""blutigen Seiten"", um dein Level zu erhöhen (1 blutige Seite gibt 1 Punkt) und die entsprechenden normalen Belohnungen zu sammeln.|2. Durch Kauf des Pakets ""Lord Draculas Geschenk"" kannst du die exklusiven Belohnungen entsperren. Egal wann du das Paket kaufst, können alle sammelbaren exklusiven Belohnungen sofort nach dem Kauf erhalten werden."
+ACTIVITY_VAMPIRE_TASK_GIFTBAG,Sofort erhältlich nach dem Kauf
+ACTIVITY_VAMPIRE_TASK_LABEL01,Belohnungen
+ACTIVITY_VAMPIRE_TASK_LABEL02,Aufträge
+ACTIVITY_VAMPIRE_TASK_TEXT01,Limit
+ACTIVITY_VAMPIRE_TASK_AWARD01,Normale Belohnungen
+ACTIVITY_VAMPIRE_TASK_AWARD02,Exklusive Belohnungen
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Lord · Erwachen
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,Rückblende
+GACHA_AUTOTRANSFER_TEXT01,Erhaltene 3-Sterne autom. übertragen
+GACHA_50TIMES_TEXT01,×1
+GACHA_50TIMES_TEXT02,×50
+GACHA_50TIMES_TEXT03,Ziehe 50 mal
+GACHA_50TIMES_TEXT04,50 X
+ACTIVITY_VAMPIRE_GAMBLE_TEXT01,"Schlüssel erhalten und ""{1}"" entsperrt. Rückblende nächster Szene beginnt..."
+ACTIVITY_VAMPIRE_GAMBLE_TEXT02,"Rückblende zu ""{1}"" beginnt..."
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,Nicht jetzt
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,Los
+ACTIVITY_VAMPIRE_GAMBLE_TEXT03,Akt. Fortschritt
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,Uralte Burg
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,Sommerfest
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,Alter Campus
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,Unter der Brücke
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,Nachtmarkt
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,Kosmos und Chaos
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,Erwecken
+ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,Gesperrte Szene (Schlüssel zur Vergangenheit benötigt). Rückblende kann nicht gestartet werden.
+ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,Alle Szenenbelohnungen erhalten. Rückblende kann nicht nochmal abgeschlossen werden.
+ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,"Rückblende in ""{1}"" gewählt"
+ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,"Tippe auf das Bild der Szene, um Ort der Rückblende zu wechseln."
+ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,Alle Szenenbelohnungen erhalten. Der Ort der Rückblende wird automatisch geändert.
+ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Alle Szenenbelohnungen erhalten und ""{1}"" entsperrt. Rückblende nächster Szene beginnen?"
+ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Alle Szenenbelohnungen erhalten. Die Szene ""Kosmos und Chaos"" wurde zurückgesetzt."
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Lord Dracula bereits erweckt!
+ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Nochmal
+SHRINE_HURDLE,Prüfung der Götter
+SHRINE_TREE,Baum der Ahnen
+SHRINE_NOTICE,Schwarzes Brett
+SHRINE_POOL,Teich der Wünsche
+SHRINE_HOME_TEXT01,Prüfung läuft...
+SHRINE_HOME_TEXT02,Aufgaben
+SHRINE_NOTICE_TAB1,Aufgaben
+SHRINE_NOTICE_TAB2,Rangliste
+SHRINE_NOTICE_TAB3,Belohnungen
+SHRINE_NOTICE_TAB4,Erfolge
+SHRINE_NOTICE_TEXT01,Restliche Zeit
+SHRINE_NOTICE_TEXT02,Gesamtpunkte
+SHRINE_NOTICE_TEXT03,Akt. Rang:
+SHRINE_NOTICE_TEXT04,Akt. Belohnungen:
+SHRINE_NOTICE_TEXT05,Kein Rang
+SHRINE_POOL_TEXT01,Saisonal
+SHRINE_POOL_TEXT02,Permanent
+SHRINE_POOL_TEXT03,Waren erneuert
+SHRINE_HURDLE_HELP,鶴華神宮||神隙試煉開放時間|每14天為一個賽季，由開放期(12天)與休整期(2天)組成。||入場規則|1.每期開放時，學長將獲得15張邀請函(上限15張)。|2.每期共有3個不同的試煉，存在不同的環境效果對戰姬進行增幅。玩家可手動選擇試煉，每次進入時消耗1張邀請函。|3.試煉中僅可使用10星以上的戰姬，且試煉中戰姬將保留進入時的屬性和狀態(包括裝備及潛能等)。||難度因子|1.每次進入試煉後，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。||試煉規則|試煉共有16層關卡，分為戰鬥層、獎勵層、商店層、回復層和最終BOSS。|戰鬥層|1.隨機出現敵人，點擊敵人可查看敵人資訊，學長可手動選擇戰姬進行出戰，戰鬥勝利後增加得分。|2.每次戰鬥限定15回合，在15回合內擊敗所有敵人戰鬥勝利，己方戰姬全部死亡或戰鬥超時則失敗。|3.每次戰鬥結束後，己方戰姬將保留血量。|4.戰鬥失敗後。敵人不會保留血量。|獎勵層|1.隨機出現3個增益，學長可手動選擇其中1個。|2.學長也可選擇放棄增益獲得試煉幣，試煉幣可在商店層中使用。|商店層|1.購買增益:隨機出現3個增益，學長可花費試煉幣購買。|2.升級增益：隨機出現3個已擁有增益，學長可花費試煉幣進行升級，每個增益最多升級2次。|回復層|1.學長可選擇回復戰姬血量或復活已陣亡戰姬。|最終BOSS|1.僅擁有1次挑戰機會，挑戰結束後，成功完成本次試煉。|2.最終BOSS無法被擊殺，將根據造成的傷害計算得分。||得分及排行榜|1.每期將記錄玩家3個試煉的最高得分，並分別對每個試煉的得分及3個試煉的總得分進行排名，開放期結束後，根據排名發放獎勵。||週期任務|1.週期任務將在每期神隙試煉開放時刷新。||千願之池|1.使用「千紙鶴」可在千願之池中兌換道具。|2.週期商品將在每期神隙試煉開放時刷新，常駐商品不會刷新。
+SHRINE_HURDLE_DIFFICULTY_HELP,1.每次進入試煉時，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。
+SHRINE_HURDLE_TEXT01,環境
+SHRINE_HURDLE_TEXT02,最高得分
+SHRINE_HURDLE_TEXT03,難度因子
+SHRINE_HURDLE_TEXT04,進入
+SHRINE_HURDLE_TEXT05,是否消耗1張邀請函進入試煉？\n（進入試煉後，戰姬將保留進入時的屬性和狀態）
+SHRINE_HURDLE_TEXT06,推薦難度因子：
+SHRINE_HURDLE_TEXT07,選擇難度較高，是否繼續？
+SHRINE_HURDLE_TEXT08,試煉詳情
+SHRINE_HURDLE_TEXT09,層數
+SHRINE_HURDLE_TEXT10,得分
+SHRINE_HURDLE_TEXT11,獲得增益
+SHRINE_HURDLE_TEXT12,戰鬥記錄
+SHRINE_HURDLE_TEXT13,熱點戰姬
+SHRINE_HURDLE_TEXT14,暫無數據
+SHRINE_HURDLE_TEXT15,第{1}層
+SHRINE_HURDLE_TEXT16,本層敵人
+SHRINE_HURDLE_TEXT17,選擇
+SHRINE_HURDLE_TEXT18,放棄
+SHRINE_HURDLE_TEXT19,購買
+SHRINE_HURDLE_TEXT20,升級
+SHRINE_HURDLE_TEXT21,已購買
+SHRINE_HURDLE_TEXT22,是否退出商店？
+SHRINE_HURDLE_TEXT23,是否放棄本次試煉？
+SHRINE_HURDLE_TEXT24,結算
+SHRINE_HURDLE_TEXT25,放棄試煉
+SHRINE_HURDLE_TEXT26,繼續戰鬥
+SHRINE_STORY,劇情回顧
+DRESS_BUFFS_SHOW_WINDOW,Outfit-Buffs
+PERSON_DRESS_BUFFS_TIPS_1,Keine Buffs durch blaue Outfits
+PERSON_DRESS_BUFFS_TIPS_2,Keine Buffs durch gelbe Outfits
+PERSON_DRESS_BUFFS_TIPS_3,Keine Buffs durch lila Outfits
+PERSON_DRESS_BUFFS_TIPS_4,Keine Buffs durch grüne Outfits
+PERSON_DRESS_BUFFS_TIPS_5,Keine Buffs durch rote Outfits
+PERSON_DRESS_BUFFS_TIPS_6,Keine Buffs durch orangene Outfits
+PERSON_DRESS_BUFFS_TIPS_7,Keine Buffs durch rosa Outfits
+PERSON_DRESS_RELATED_DRESS,Betroffene Outfits
+ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Szenebelohnungen
+ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Item zum Entsperren
+CHIME_HELP,幫助文本
+CHIME_ATLAS,圖鑒
+CHIME_BAG,碎片
+CHIME_TAB1,詳情
+CHIME_TAB2,充能
+CHIME_TAB3,激活
+CHIME_TAB4,喚醒
+CHIME_BUTTON1,充能
+CHIME_BUTTON2,激活
+CHIME_BUTTON3,喚醒
+CHIME_TEXT01,蘊養值
+CHIME_TEXT02,基礎屬性
+CHIME_TEXT03,激活
+CHIME_TEXT04,喚醒
+CHIME_TEXT05,尚未解鎖
+CHIME_TEXT06,蘊養值未充滿
+CHIME_TEXT07,效果未全部激活
+CHIME_TEXT08,蘊養值已滿
+CHIME_TEXT09,已激活
+CHIME_TEXT10,已喚醒
+CHIME_TEXT11,蘊養值未達到{1}
+CHIME_TEXT12,是否激活效果？
+CHIME_TEXT13,是否喚醒？
+CHIME_TEXT14,可解鎖
+CHIME_TEXT15,請選擇要分解的碎片
