@@ -1828,7 +1828,7 @@ MAKE_CAKE_TEXT05,Gains supplémentaires pour chaque échange：
 ASSASSIN_SUIT,Ensemble d'Assassin
 ACTIVITY_JACKPOT_POINT_HELP,"Durant l'événement, vous obtiendrez 1 point pour chaque énergie consommée. Les récompenses seront envoyées par courrier lorsque vous atteindrez les objectifs !"
 ACTIVITY_JACKPOT_POINT_LIST,Utilisez {1} d'énergie
-ACTIVITY_JACKPOT_HELP_TEXT,"Durant cet événement, utilisez 5 Énergies pour lancer la Machine à Sous une fois et obtenir des récompenses de ressources ou des Pièces de Machine. Vos récompenses varient en fonction du nombre de filles identiques sur l’écran. Si 2(+) filles identiques sont affichées sur l'écran, vous recevrez alors des Pièces de Machine. Si aucune Fille identique n'est affichée, vous recevrez alors une récompense de ressources.|2. La quantité de récompense que vous obtiendrez sera multipliée en fonction du nombre d'Énergie que vous utilisez. Vous pourrez avoir accès à la Machine Avancée, après avoir obtenu la Carte Pass Avancé ou après avoir joué 40 fois à la Machine Normale.|3. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|4. Moyen d’obtention de l’Énergie : Courrier Quoitidien, Pack de Machine à Sous, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Examen d'Admission et Rassemblement.|5. À la fin de l’événement, les Énergies, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Énergie = 25 000 Pièces d'Or, 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
+ACTIVITY_JACKPOT_HELP_TEXT,"1. Durant cet événement, utilisez 5 Énergies pour lancer la Machine à Sous une fois et obtenir des récompenses de ressources ou des Pièces de Machine. Vos récompenses varient en fonction du nombre de Filles identiques sur l’écran. Si 2(+) Filles identiques sont affichées sur l'écran, vous recevrez alors des Pièces de Machine. Si aucune Fille identique n'est affichée, vous recevrez alors une récompense de ressources.|2. La quantité de récompense que vous obtiendrez sera multipliée en fonction du nombre d'Énergie que vous utilisez.|3. Vous pourrez avoir accès à la Machine Avancée, après avoir obtenu la Carte Pass Avancé ou après avoir joué 40 fois à la Machine Normale.|4. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|5. Vous recevrez des récompenses de palier en fonction du nombre d'Énergies utilisées à la Machine Avancée.|6. Moyen d’obtention d'Énergie : Courrier Quoitidien, Pack de Machine à Sous, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Examen d'Admission et Rassemblement.|7. La Carte Pass Avancé expirera après la fin de l'événement.|8. Après la fin de l’événement, les Énergies, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Énergie = 25 000 Pièces d'Or, 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
 ACTIVITY_JACKPOT_ENERGY_USE,Utiliser × {1}
 ACTIVITY_JACKPOT_ENERGY_USE_TIPS,Vous obtiendrez les récompenses {1} fois
 ACTIVITY_JACKPOT_ENERGY_RESUME,Récupérez 1 d'énergie：
@@ -3501,17 +3501,17 @@ TREASURE_RESERVE_NUM,{1}-Cristal Optionnel
 TREASURE_UNLOCK,Débloquer
 TREASURE_NOT_UNLOCK,Bloqué
 TREASURE_UNLOCK_HELP,Utiliser {1} Gemmes pour débloquer l'emplacement de cristal {2} ?
-TREASURE_COVER_TITLE,Remplacer le critstal
+TREASURE_COVER_TITLE,Remplacer le Cristal
 TREASURE_COVER,Remplacer
 TREASURE_COVER_HELP,Le remplacement est irréversible. Voulez-vous continuer?
 TREASURE_CHOOSE,Choisir le cristal
 WISH_GACHA_PS,Capsules à Souhait non-comptabilisées dans Quêtes Journalières et Succès
-WISH_GACHA_TEXT3,Possibilité Actuelle
+WISH_GACHA_TEXT3,Taux actuel
 WISH_GACHA_TEXT4,avant la prochaine\naugmentation
 WISH_GACHA_TEXT5,Fille Garantie
 WISH_GACHA_TEXT6,Progression Actuelle
 WISH_GACHA_NUM,Fois
-WISH_GACHA_CHANCE,Possibilité
+WISH_GACHA_CHANCE,Taux
 WISH_GACHA_TEXT7,{1}/{2}
 WISH_GACHA_TEXT8,x{1}
 MONTH_CARD_VIP,+{1} VIP EXP
@@ -3544,7 +3544,7 @@ ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent su
 GUILD_KICK_TIPS,Êtes-vous sûr d'exclure ce joueur ?
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour combattre. Pendant la journée d'affichage, aucune Étape n'est disponible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 Étapes. Les ennemis changeront à chaque saison. L'équipe des ennemis peut être aperçue via le bouton ""!"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un Défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des Gemmes pour en acheter.|5. Chaque Étape vous permet d'obtenir des récompenses très importantes lorsque vous la passez pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Passer une Étape avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, vous pouvez utiliser des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous passez l'Étape 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque Étape (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à passer la 9ème Étape de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des Gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quelle Étape pour obtenir des points d'Examen: 1 point de l'Étape 1 à 20; 2 points de l'Étape 21 à 40; 4 points de l'Étape 41-60; 6 points de l'Étape 61-80; 8 points de l'Étape 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Chaque joueur TOP1 de chaque Maison recevra une récompense supplémentaire : un Cadre d'Avatar de 14 jours. Dans le cas, où plusieurs joueurs sont à égalité en première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen, et 10 joueurs au maximum obtiendriont la récompense supplémentaire."
 GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir la nouvelle Fille augmente à chaque [c][DE512B]100[-][/c] tirage de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression est réinitialisée dès son obtention."
-GACHA_GUARANTEE_UP,Possibilité UP
+GACHA_GUARANTEE_UP,Taux UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Tentative restante : {1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Tentative insuffisante !
 ACTIVITY_ICE_SECRET_BOSS_TEXT03,Récompense
@@ -3905,8 +3905,8 @@ SLOT_INCREASE_TEXT0,Transférer
 SLOT_INCREASE_TEXT1,Acheter les emplacements
 SLOT_INCREASE_TEXT2,Graduer
 SLOT_INCREASE_TEXT3,Augmenter votre niveau de VIP
-NEWBEE_10GACHA_HELP01,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 1 Qualification pour obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Vous avez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *1, Fille 5 étoiles *4 et Fille 4 étoiles *5. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments de Filles vous seront envoyés par courrier."
-NEWBEE_10GACHA_HELP02,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *1, Fille 5 étoiles *7 et Fille 4 étoiles *2. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
+NEWBEE_10GACHA_HELP01,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pourrez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de chance d'obtenir Fille Élite 5 étoiles *1, Fille 5 étoiles *3 et Fille 4 étoiles *6. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
+NEWBEE_10GACHA_HELP02,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pourrez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de chance d'obtenir Fille Élite 5 étoiles *2, Fille 5 étoiles *4 et Fille 4 étoiles *4. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
 NEWBEE_10GACHA_HELP03,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *2, Fille 5 étoiles *8. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
 NEWBEE_10GACHA_TEXT0,Fille Élite 5 étoiles
 NEWBEE_10GACHA_TEXT1,Fille 5 étoiles
@@ -5087,7 +5087,7 @@ ACTIVITY_FISH_TOTAL_TEXT,Pêcher {1} fois
 ACTIVITY_ENTRANCE_TEST_RANK_SHOW_TEXT,Classement
 ACTIVITY_WARMUP_ARENA_RANK_DEMAND,Veuillez d'abord atteindre le Rang {1} !
 ACTIVITY_TEA_TEXT6,"Tasse de Thé insuffisante, terminez les Quêtes Journalières du Livre pour en collecter."
-NEWBEE_10GACHA_HELP04,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pourrez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *3, Fille 5 étoiles *7. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
+NEWBEE_10GACHA_HELP04,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pourrez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de chance d'obtenir Fille Élite 5 étoiles *4, Fille 5 étoiles *6. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
 ACHIEVEMENT_REACHED,Succès
 ACTIVITY_SPORTS_PLAYER_WINDOW,Infos du Joueur
 ACTIVITY_SPORTS_PLAYERRANK_TEXT1,Médaille|Point
@@ -5182,7 +5182,7 @@ NEW_ARENA_ALL_SERVER_HELP,"
 L’Arène Ultime est une Arène interserveur permettant la participation à tous les joueurs.
 La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases : Préparation au Combat, Ruée de Point, Élimination, Finalistes et Trêve.|1. Préparation au Combat|(1) Durée : 1ère journée de chaque saison.
 (2) Pendant cette phase, vous ne pouvez qu’enregistrer vos Équipes.|2. Ruée de Point|(1) Durée : du 2e jour au 20e jour.
-(2) Pendant cette phase, utilisez vos Tickets d\'Arène pour combattre vos adversaires. La liste de vos adversairespeut être actualisée 5 fois par jour au maximum.
+(2) Pendant cette phase, utilisez vos Tickets d\'Arène pour combattre vos adversaires. La liste de vos adversairespeut être actualisée 7 fois par jour au maximum.
 (3) Le nombre de Tickets d\'Arène nécessaire dans l\'Arène Ultime augmentera en fonction du nombre de combats par jour. 2 Tickets d\'Arène (du 1er au 5ème combat), 3 Tickets d\'Arène (du 6ème au 10ème combat), 4 Tickets d\'Arène (du 11ème au 15ème combat), 5 Tickets d\'Arène (à partir du 16ème combat).
 (4) Vos 10 derniers combats sont enregistrés dans l’Historique.|3. Rang|(1) Pendant la phase - Ruée de Point, vous serez classé en 6 différents Rangs : Bronze, Argent, Or, Diamant, Maître et Grand Maître. Chaque Rang (à l’exception de Maître et Grand Maître) est composé de 5 divisions, démarrant à V (le plus bas) jusqu’à I (le plus haut).
 (2) Atteignez les 100 points dans votre division actuelle afin de pouvoir passer à la division supérieure. Les joueurs du Top 320 du Classement Général passeront au Rang Grand Maître.
@@ -5197,7 +5197,7 @@ Argent：2 Filles suppléantes sur la ligne avant, 4 Filles suppléantes sur la 
 Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 Filles suppléantes sur la ligne arrière, 5 Serviteurs suppléants
 (5) Lors du choix d\'un adversaire à combattre, le nombre correspondant de suppléants sera sélectionné en fonction du Rang de cet adversaire.
 (6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l’Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l’Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s’il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l’Élimination.
-(2) Pendant cette phase, vous ne ferez qu\'un combat par jour et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
+(2) Pendant cette phase, vous ne ferez qu\'un combat par jour (vous ne pouvez pas modifier votre Équipe durant les 2 heures précédant le combat) et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
 (3) Règles de Combat (Élimination&Finalistes)
 Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut.
 Durant le combat, les PV et l’Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
@@ -5404,12 +5404,12 @@ ACTIVITY_JACKPOT_SHOW_TITLE,Récompenses
 ACTIVITY_JACKPOT_SHOW_TEXT01,Récompenses Chanceuses
 ACTIVITY_JACKPOT_SHOW_TEXT02,Récompenses Normales
 ACTIVITY_JACKPOT_EXCHANGE_TITLE,Conversion des Pièces de Machine
-ACTIVITY_JACKPOT_AWARDS,Tirer des Pièces de Machine Avancée {1} fois
+ACTIVITY_JACKPOT_AWARDS,Utiliser {1} Énergies
 ACTIVITY_GROWTH_PLAN_TEXT14,Aucun Point manquant à collecter
 ACTIVITY_GROWTH_PLAN_TEXT15,Point manquant à collecter：{1} Point(s)
 ACTIVITY_GROWTH_PLAN_TEXT16,Entraînement\nAvancé
 ACTIVITY_GROWTH_PLAN_TEXT17,Veuillez d'abord choisir une Fille pour l'Entraînement Avancé !
-ACTIVITY_JACKPOT_DRAW_HELP,"1. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|2. Après avoir obtenu la Carte Pass Avancé, vous pourrez convertir les Pièces de Machine Normale en Pièces de Machine Avancée au ratio de 1 : 1.|3. Vous receverez des récompenses correspondantes en fonction du nombre de fois que vous aurez tiré des Pièces de Machine Avancée.|4. À la fin de l’événement, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
+ACTIVITY_JACKPOT_DRAW_HELP,"1. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|2. Après avoir obtenu la Carte Pass Avancé, vous pourrez convertir les Pièces de Machine Normale en Pièces de Machine Avancée au ratio de 1 : 1.|3. À la fin de l’événement, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
 ACTIVITY_GROWTH_PLAN_TEXT18,"Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie, voulez-vous continuer ?"
 ACTIVITY_GROWTH_PLAN_TEXT19,Voulez-vous dépenser {1} Gemmes pour collecter les Points manquants ?
 ACTIVITY_JACKPOT_TEXT01,Pack Exclusif
@@ -5790,54 +5790,53 @@ ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Toutes les Récompenses Mémorables ont été
 ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Toutes les Récompenses Mémorables ont été collectées, les récompenses de la Scène - L'Aube des Temps ont été réactualisées"
 ACTIVITY_VAMPIRE_GAMBLE_TEXT04,"Votre avancée a atteint 100%%, vous n'avez plus besoin d'offrir de Plume de Corbeau à Lord Dracula"
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Utiliser
-SHRINE_HURDLE,神隙試煉
-SHRINE_TREE,御神木
-SHRINE_NOTICE,告示板
-SHRINE_POOL,千願之池
-SHRINE_HOME_TEXT01,試煉進行中
-SHRINE_HOME_TEXT02,本期任務
-SHRINE_NOTICE_TAB1,週期任務
-SHRINE_NOTICE_TAB2,排行榜
-SHRINE_NOTICE_TAB3,獎勵預覽
-SHRINE_NOTICE_TAB4,成就
-SHRINE_NOTICE_TEXT01,本期剩餘時間
-SHRINE_NOTICE_TEXT02,總得分
-SHRINE_NOTICE_TEXT03,當前排名：
-SHRINE_NOTICE_TEXT04,當前排名獎勵內容：
-SHRINE_NOTICE_TEXT05,暫無排名
-SHRINE_POOL_TEXT01,本期
-SHRINE_POOL_TEXT02,常駐
+SHRINE_HURDLE,Dojo
+SHRINE_TREE,Arbre Divin
+SHRINE_NOTICE,Panneau d'Affichage
+SHRINE_POOL,Bassin aux Vœux
+SHRINE_HOME_TEXT01,Combat en cours...
+SHRINE_HOME_TEXT02,Complété
+SHRINE_NOTICE_TAB1,Quêtes
+SHRINE_NOTICE_TAB2,Classement
+SHRINE_NOTICE_TAB3,Récompenses
+SHRINE_NOTICE_TAB4,Succès
+SHRINE_NOTICE_TEXT01,Temps restant
+SHRINE_NOTICE_TEXT02,Points totaux
+SHRINE_NOTICE_TEXT03,Classement Actuel：
+SHRINE_HURDLE_TEXT04,Entrer
+SHRINE_NOTICE_TEXT05,Aucun Classement
+SHRINE_POOL_TEXT01,Saisonnière
+SHRINE_POOL_TEXT02,Permanente
 SHRINE_POOL_TEXT03,商品已刷新
 SHRINE_HURDLE_HELP,鶴華神宮||神隙試煉開放時間|每14天為一個賽季，由開放期(12天)與休整期(2天)組成。||入場規則|1.每期開放時，學長將獲得15張邀請函(上限15張)。|2.每期共有3個不同的試煉，存在不同的環境效果對戰姬進行增幅。玩家可手動選擇試煉，每次進入時消耗1張邀請函。|3.試煉中僅可使用10星以上的戰姬，且試煉中戰姬將保留進入時的屬性和狀態(包括裝備及潛能等)。||難度因子|1.每次進入試煉後，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。||試煉規則|試煉共有16層關卡，分為戰鬥層、獎勵層、商店層、回復層和最終BOSS。|戰鬥層|1.隨機出現敵人，點擊敵人可查看敵人資訊，學長可手動選擇戰姬進行出戰，戰鬥勝利後增加得分。|2.每次戰鬥限定15回合，在15回合內擊敗所有敵人戰鬥勝利，己方戰姬全部死亡或戰鬥超時則失敗。|3.每次戰鬥結束後，己方戰姬將保留血量。|4.戰鬥失敗後。敵人不會保留血量。|獎勵層|1.隨機出現3個增益，學長可手動選擇其中1個。|2.學長也可選擇放棄增益獲得試煉幣，試煉幣可在商店層中使用。|商店層|1.購買增益:隨機出現3個增益，學長可花費試煉幣購買。|2.升級增益：隨機出現3個已擁有增益，學長可花費試煉幣進行升級，每個增益最多升級2次。|回復層|1.學長可選擇回復戰姬血量或復活已陣亡戰姬。|最終BOSS|1.僅擁有1次挑戰機會，挑戰結束後，成功完成本次試煉。|2.最終BOSS無法被擊殺，將根據造成的傷害計算得分。||得分及排行榜|1.每期將記錄玩家3個試煉的最高得分，並分別對每個試煉的得分及3個試煉的總得分進行排名，開放期結束後，根據排名發放獎勵。||週期任務|1.週期任務將在每期神隙試煉開放時刷新。||千願之池|1.使用「千紙鶴」可在千願之池中兌換道具。|2.週期商品將在每期神隙試煉開放時刷新，常駐商品不會刷新。
 SHRINE_HURDLE_DIFFICULTY_HELP,1.每次進入試煉時，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。
-SHRINE_HURDLE_TEXT01,環境
+SHRINE_HURDLE_TEXT01,Environnement
 SHRINE_HURDLE_TEXT02,最高得分
 SHRINE_HURDLE_TEXT03,難度因子
-SHRINE_HURDLE_TEXT04,進入
 SHRINE_HURDLE_TEXT05,是否消耗1張邀請函進入試煉？\n（進入試煉後，戰姬將保留進入時的屬性和狀態）
 SHRINE_HURDLE_TEXT06,推薦難度因子：
 SHRINE_HURDLE_TEXT07,選擇難度較高，是否繼續？
-SHRINE_HURDLE_TEXT08,試煉詳情
-SHRINE_HURDLE_TEXT09,層數
+SHRINE_HURDLE_TEXT08,Détails
+SHRINE_HURDLE_TEXT09,Étape
 SHRINE_HURDLE_TEXT10,得分
 SHRINE_HURDLE_TEXT11,獲得增益
-SHRINE_HURDLE_TEXT12,戰鬥記錄
+SHRINE_HURDLE_TEXT12,Historique
 SHRINE_HURDLE_TEXT13,熱點戰姬
-SHRINE_HURDLE_TEXT14,暫無數據
-SHRINE_HURDLE_TEXT15,第{1}層
-SHRINE_HURDLE_TEXT16,本層敵人
-SHRINE_HURDLE_TEXT17,選擇
-SHRINE_HURDLE_TEXT18,放棄
-SHRINE_HURDLE_TEXT19,購買
-SHRINE_HURDLE_TEXT20,升級
-SHRINE_HURDLE_TEXT21,已購買
-SHRINE_HURDLE_TEXT22,是否退出商店？
-SHRINE_HURDLE_TEXT23,是否放棄本次試煉？
-SHRINE_HURDLE_TEXT24,結算
-SHRINE_HURDLE_TEXT25,放棄試煉
-SHRINE_HURDLE_TEXT26,繼續戰鬥
-SHRINE_STORY,劇情回顧
-DRESS_BUFFS_SHOW_WINDOW,裝扮特殊加成
+SHRINE_HURDLE_TEXT14,Aucune donnée
+SHRINE_HURDLE_TEXT15,{1}e Étape
+SHRINE_HURDLE_TEXT16,Ennemis
+SHRINE_HURDLE_TEXT17,Choisir
+SHRINE_HURDLE_TEXT18,Renoncer
+SHRINE_HURDLE_TEXT19,Acheter
+SHRINE_HURDLE_TEXT20,Améliorer
+SHRINE_HURDLE_TEXT21,Acheté
+SHRINE_HURDLE_TEXT22,Voulez-vous quitter la boutique ?
+SHRINE_HURDLE_TEXT23,Voulez-vous abandonner le combat ?
+SHRINE_HURDLE_TEXT24,Calculer
+SHRINE_HURDLE_TEXT25,Renoncer
+SHRINE_HURDLE_TEXT26,Continuer
+SHRINE_STORY,Revoir
+DRESS_BUFFS_SHOW_WINDOW,Bonus de Tenue
 PERSON_DRESS_BUFFS_TIPS_1,暫無藍色品質裝扮提供的特殊加成
 PERSON_DRESS_BUFFS_TIPS_2,暫無黃色品質裝扮提供的特殊加成
 PERSON_DRESS_BUFFS_TIPS_3,暫無紫色品質裝扮提供的特殊加成
@@ -5849,27 +5848,33 @@ PERSON_DRESS_RELATED_DRESS,相關裝扮
 ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Récompenses Mémorables
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Clef du Passé
 CHIME_HELP,幫助文本
-CHIME_ATLAS,圖鑒
+CHIME_ATLAS,Galerie
 CHIME_BAG,碎片
-CHIME_TAB1,詳情
-CHIME_TAB2,充能
-CHIME_TAB3,激活
-CHIME_TAB4,喚醒
-CHIME_BUTTON1,充能
-CHIME_BUTTON2,激活
-CHIME_BUTTON3,喚醒
+CHIME_TAB1,Détails
+CHIME_TAB2,Recharge
+CHIME_TAB3,Activation
+CHIME_TAB4,Éveil
+CHIME_BUTTON1,Recharger
+CHIME_BUTTON2,Activer
+CHIME_BUTTON3,Éveiller
 CHIME_TEXT01,蘊養值
 CHIME_TEXT02,基礎屬性
-CHIME_TEXT03,激活
-CHIME_TEXT04,喚醒
-CHIME_TEXT05,尚未解鎖
+CHIME_TEXT03,Activer
+CHIME_TEXT04,Éveiller
+CHIME_TEXT05,Bloqué
 CHIME_TEXT06,蘊養值未充滿
 CHIME_TEXT07,效果未全部激活
 CHIME_TEXT08,蘊養值已滿
-CHIME_TEXT09,已激活
-CHIME_TEXT10,已喚醒
+CHIME_TEXT09,Activé
+CHIME_TEXT10,Éveillé
 CHIME_TEXT11,蘊養值未達到{1}
 CHIME_TEXT12,是否激活效果？
 CHIME_TEXT13,是否喚醒？
-CHIME_TEXT14,可解鎖
+CHIME_TEXT14,Déblocable
 CHIME_TEXT15,請選擇要分解的碎片
+TIME_CLOISTER_TEXT87,Utilisez les「{1}」pour améliorer le niveau du Planétarium.
+ACTIVITY_JACKPOT_WARN,Vous avez débloqué la Machine Avancée. Voulez-vous arrêter ce tour et vous y rendre ?
+ACTIVITY_JACKPOT_WARN_BUTTON01,Ignorer
+ACTIVITY_JACKPOT_WARN_BUTTON02,Aller à
+MAIN_PLOT_NEW,Passer
+NEWBEE_10GACHA_HELP05,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *8, Fille 5 étoiles *2. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
