@@ -310,7 +310,7 @@ MAINWIN_TOP_3,Courrier
 MAINWIN_TOP_4,Réglage
 MIDAS_WINDOW,Alchimie
 ACHIEVEMENT,Succès
-SUMMON_RATE,Possibilité
+SUMMON_RATE,Taux
 NOT_MAX_GRADE,La Fille n'a pas atteint le maximum
 CONFIRM_BUY,Confirmez-vous l'achat ?
 CONFIRM_REFRESH,"Il faut utiliser {1}*{2} pour actualiser, voulez-vous continuer ?"
@@ -1828,7 +1828,7 @@ MAKE_CAKE_TEXT05,Gains supplémentaires pour chaque échange：
 ASSASSIN_SUIT,Ensemble d'Assassin
 ACTIVITY_JACKPOT_POINT_HELP,"Durant l'événement, vous obtiendrez 1 point pour chaque énergie consommée. Les récompenses seront envoyées par courrier lorsque vous atteindrez les objectifs !"
 ACTIVITY_JACKPOT_POINT_LIST,Utilisez {1} d'énergie
-ACTIVITY_JACKPOT_HELP_TEXT,"1. Durant cet événement, utilisez 5 Énergies pour lancer la Machine à Sous une fois et obtenir des récompenses de ressources ou des Pièces de Machine. Vos récompenses varient en fonction du nombre de Filles identiques sur l’écran. Si 2(+) Filles identiques sont affichées sur l'écran, vous recevrez alors des Pièces de Machine. Si aucune Fille identique n'est affichée, vous recevrez alors une récompense de ressources.|2. La quantité de récompense que vous obtiendrez sera multipliée en fonction du nombre d'Énergie que vous utilisez.|3. Vous pourrez avoir accès à la Machine Avancée, après avoir obtenu la Carte Pass Avancé ou après avoir joué 40 fois à la Machine Normale.|4. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|5. Vous recevrez des récompenses de palier en fonction du nombre d'Énergies utilisées à la Machine Avancée.|6. Moyen d’obtention d'Énergie : Courrier Quoitidien, Pack de Machine à Sous, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Examen d'Admission et Rassemblement.|7. La Carte Pass Avancé expirera après la fin de l'événement.|8. Après la fin de l’événement, les Énergies, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Énergie = 25 000 Pièces d'Or, 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
+ACTIVITY_JACKPOT_HELP_TEXT,"1. Durant cet événement, utilisez 5 Énergies pour lancer la Machine à Sous une fois et obtenir des récompenses de ressources ou des Pièces de Machine. Vos récompenses varient en fonction du nombre de Filles identiques sur l’écran. Si 2(+) Filles identiques sont affichées sur l'écran, vous recevrez alors des Pièces de Machine. Si aucune Fille identique n'est affichée, vous recevrez alors une récompense de ressources.|2. La quantité de récompense que vous obtiendrez sera multipliée en fonction du nombre d'Énergie que vous utilisez.|3. Vous pourrez avoir accès à la Machine Avancée, après avoir obtenu la Carte Pass Avancé ou après avoir joué 40 fois à la Machine Normale.|4. Les Pièces de Machine sont utilisables pour tirer des récompenses dans l'événement - Machine à Récompenses. Après avoir obtenu toutes les récompenses, les récompenses seront réinitialisées.|5. Vous recevrez des récompenses de palier en fonction du nombre d'Énergies utilisées dans les Machines à Sous.|6. Moyen d’obtention d'Énergie : Courrier Quoitidien, Pack de Machine à Sous, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Examen d'Admission et Rassemblement.|7. La Carte Pass Avancé expirera après la fin de l'événement.|8. Après la fin de l’événement, les Énergies, les Pièces de Machine Normale, les Pièces de Machine Avancée non-utilisées seront automatiquement converties en Pièces d'Or distribuées par courrier. 1 Énergie = 25 000 Pièces d'Or, 1 Pièce de Machine Normale = 25 000 Pièces d'Or, 1 Pièce de Machine Avancée = 50 000 Pièces d'Or."
 ACTIVITY_JACKPOT_ENERGY_USE,Utiliser × {1}
 ACTIVITY_JACKPOT_ENERGY_USE_TIPS,Vous obtiendrez les récompenses {1} fois
 ACTIVITY_JACKPOT_ENERGY_RESUME,Récupérez 1 d'énergie：
@@ -5413,7 +5413,7 @@ ACTIVITY_JACKPOT_DRAW_HELP,"1. Les Pièces de Machine sont utilisables pour tire
 ACTIVITY_GROWTH_PLAN_TEXT18,"Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie, voulez-vous continuer ?"
 ACTIVITY_GROWTH_PLAN_TEXT19,Voulez-vous dépenser {1} Gemmes pour collecter les Points manquants ?
 ACTIVITY_JACKPOT_TEXT01,Pack Exclusif
-ACTIVITY_JACKPOT_TEXT02,"Félicitations ! Vous pouvez avoir accès à la Machine Avancée ! Appuyez sur ""Aller à"" pour voir !"
+ACTIVITY_JACKPOT_TEXT02,"Félicitations, vous avez désormais accès à la Machine Avancée ! Appuyez sur ""Aller à"" pour voir."
 ACTIVITY_JACKPOT_UPDATE_BUTTON,Allez à
 ACTIVITY_JACKPOT_EXCHANGE_TIPS,"Vous avez obtenu la Carte Pass Avancé, voulez-vous convertir vos Pièces de Machine Normale en Pièces de Machine Avancée ?"
 ACTIVITY_JACKPOT_EXCHANGE_BUTTON01,Jouer
@@ -5515,7 +5515,7 @@ TIME_CLOISTER_HELP05,"1. Une Fille Suppléante est disponible dans les Défis de
 TIME_CLOISTER_TEXT65,Technique · Fille Suppléante
 TIME_CLOISTER_TEXT66,Utilisez les Points de Cauchemar pour améliorer le niveau et les Compétences Avancées de la Fille Suppléante.
 TIME_CLOISTER_TEXT67,Montrer
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune (20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune (20 fois au maximum)|——Tirer 5 Jetons de Capsule Avancée = 1 Pièce de Fortune (80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune (100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune (20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 1 Sceaux = 1 Pièce de Fortune (80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune (100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
 ACTIVITY_LUCKYBOXES_TEXT15,"Après la fin de l'événement, vos Pièces de Fortune, les points de Fortune et la progression des Récompenses Finales seront conservés jusqu'au prochain événement."
 TIME_CLOISTER_TEXT68,Veuillez montrer une {1} pour compléter cette tâche.
 TIME_CLOISTER_TEXT69,Veuillez choisir la Tenue requise à montrer.
@@ -5794,7 +5794,7 @@ SHRINE_HURDLE,Dojo
 SHRINE_TREE,Arbre Divin
 SHRINE_NOTICE,Panneau d'Affichage
 SHRINE_POOL,Bassin aux Vœux
-SHRINE_HOME_TEXT01,Combat en cours...
+SHRINE_HOME_TEXT01,Épreuve en cours...
 SHRINE_HOME_TEXT02,Complété
 SHRINE_NOTICE_TAB1,Quêtes
 SHRINE_NOTICE_TAB2,Classement
@@ -5807,15 +5807,15 @@ SHRINE_HURDLE_TEXT04,Entrer
 SHRINE_NOTICE_TEXT05,Aucun Classement
 SHRINE_POOL_TEXT01,Saisonnière
 SHRINE_POOL_TEXT02,Permanente
-SHRINE_POOL_TEXT03,商品已刷新
+SHRINE_POOL_TEXT03,Les objets ont été réinitialisés
 SHRINE_HURDLE_HELP,鶴華神宮||神隙試煉開放時間|每14天為一個賽季，由開放期(12天)與休整期(2天)組成。||入場規則|1.每期開放時，學長將獲得15張邀請函(上限15張)。|2.每期共有3個不同的試煉，存在不同的環境效果對戰姬進行增幅。玩家可手動選擇試煉，每次進入時消耗1張邀請函。|3.試煉中僅可使用10星以上的戰姬，且試煉中戰姬將保留進入時的屬性和狀態(包括裝備及潛能等)。||難度因子|1.每次進入試煉後，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。||試煉規則|試煉共有16層關卡，分為戰鬥層、獎勵層、商店層、回復層和最終BOSS。|戰鬥層|1.隨機出現敵人，點擊敵人可查看敵人資訊，學長可手動選擇戰姬進行出戰，戰鬥勝利後增加得分。|2.每次戰鬥限定15回合，在15回合內擊敗所有敵人戰鬥勝利，己方戰姬全部死亡或戰鬥超時則失敗。|3.每次戰鬥結束後，己方戰姬將保留血量。|4.戰鬥失敗後。敵人不會保留血量。|獎勵層|1.隨機出現3個增益，學長可手動選擇其中1個。|2.學長也可選擇放棄增益獲得試煉幣，試煉幣可在商店層中使用。|商店層|1.購買增益:隨機出現3個增益，學長可花費試煉幣購買。|2.升級增益：隨機出現3個已擁有增益，學長可花費試煉幣進行升級，每個增益最多升級2次。|回復層|1.學長可選擇回復戰姬血量或復活已陣亡戰姬。|最終BOSS|1.僅擁有1次挑戰機會，挑戰結束後，成功完成本次試煉。|2.最終BOSS無法被擊殺，將根據造成的傷害計算得分。||得分及排行榜|1.每期將記錄玩家3個試煉的最高得分，並分別對每個試煉的得分及3個試煉的總得分進行排名，開放期結束後，根據排名發放獎勵。||週期任務|1.週期任務將在每期神隙試煉開放時刷新。||千願之池|1.使用「千紙鶴」可在千願之池中兌換道具。|2.週期商品將在每期神隙試煉開放時刷新，常駐商品不會刷新。
 SHRINE_HURDLE_DIFFICULTY_HELP,1.每次進入試煉時，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。
 SHRINE_HURDLE_TEXT01,Environnement
 SHRINE_HURDLE_TEXT02,最高得分
-SHRINE_HURDLE_TEXT03,難度因子
+SHRINE_HURDLE_TEXT03,Niveau
 SHRINE_HURDLE_TEXT05,是否消耗1張邀請函進入試煉？\n（進入試煉後，戰姬將保留進入時的屬性和狀態）
 SHRINE_HURDLE_TEXT06,推薦難度因子：
-SHRINE_HURDLE_TEXT07,選擇難度較高，是否繼續？
+SHRINE_HURDLE_TEXT07,"Le niveau de cette Épreuve pourrait être un peu difficile pour vous, voulez-vous continuer ?"
 SHRINE_HURDLE_TEXT08,Détails
 SHRINE_HURDLE_TEXT09,Étape
 SHRINE_HURDLE_TEXT10,得分
@@ -5837,19 +5837,19 @@ SHRINE_HURDLE_TEXT25,Renoncer
 SHRINE_HURDLE_TEXT26,Continuer
 SHRINE_STORY,Revoir
 DRESS_BUFFS_SHOW_WINDOW,Bonus de Tenue
-PERSON_DRESS_BUFFS_TIPS_1,暫無藍色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_2,暫無黃色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_3,暫無紫色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_4,暫無綠色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_5,暫無紅色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_6,暫無橙色品質裝扮提供的特殊加成
-PERSON_DRESS_BUFFS_TIPS_7,暫無粉色品質裝扮提供的特殊加成
-PERSON_DRESS_RELATED_DRESS,相關裝扮
+PERSON_DRESS_BUFFS_TIPS_1,Aucun Bonus en Tenue Bleue
+PERSON_DRESS_BUFFS_TIPS_2,Aucun Bonus en Tenue Jaune
+PERSON_DRESS_BUFFS_TIPS_3,Aucun Bonus en Tenue Violette
+PERSON_DRESS_BUFFS_TIPS_4,Aucun Bonus en Tenue Verte
+PERSON_DRESS_BUFFS_TIPS_5,Aucun Bonus en Tenue Rouge
+PERSON_DRESS_BUFFS_TIPS_6,Aucun Bonus en Tenue Orange
+PERSON_DRESS_BUFFS_TIPS_7,Aucun Bonus en Tenue Rosée
+PERSON_DRESS_RELATED_DRESS,Tenue(s)
 ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Récompenses Mémorables
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Clef du Passé
 CHIME_HELP,幫助文本
 CHIME_ATLAS,Galerie
-CHIME_BAG,碎片
+CHIME_BAG,Fragment
 CHIME_TAB1,Détails
 CHIME_TAB2,Recharge
 CHIME_TAB3,Activation
