@@ -129,7 +129,7 @@ REPLACE,変更
 TRANSFORM,変換
 SAVE,保存
 REMOVE,外す
-LOCK_NOW_ATTR,現ステータスをロック（ダイヤが消費されます）
+LOCK_NOW_ATTR,現ステータスをロック\n（ダイヤが消費されます）
 UNKNOWN_TREASURE,未知の水晶
 REMOVE_ALL,装備外し
 EQUIP_ALL,一括装着
@@ -1792,7 +1792,7 @@ MAKE_CAKE_TEXT05,毎回の交換ボーナス：
 ASSASSIN_SUIT,アサシンセット
 ACTIVITY_JACKPOT_POINT_HELP,イベント期間中、スロットエネルギーの使用が指定のランクに達成すると豪華報酬が獲得可能！報酬はメールで配布されます～
 ACTIVITY_JACKPOT_POINT_LIST,エネルギーを{1}pt使用
-ACTIVITY_JACKPOT_HELP_TEXT,1.スロットエネルギーを5pt消費して、普通スロットや高級スロットを回すと、アイテムやスロットptボーナスを獲得できます。同じ戦姫が2体以上そろうと、マシンごとにスロットpt、または高級スロットptを獲得できます。同じ戦姫アイコンが出なかった場合は、アイテムボーナスをランダムに1つ獲得します。|2.スロットを回す際に、エネルギーの消費量を調整できます。消費量に応じて、ボーナスの獲得数が増えます。|3.「スロット特権パス」を購入、または普通スロットを40回まわすと、高級スロットがアンロックされます。|4.「スロットpt」や「高級スロットpt」を使用して、「スロットガチャ」イベントでガチャを回すことができます。ボーナス一覧のアイテムをすべて当てると、一覧がリセットされます。|5.スロットで消費したエネルギー量によって、累計ボーナスが配布されます。|6.スロットエネルギーの獲得方法：デイリーメール、スロットお助けパック、お得パック、超お得パック、超お得衣装パック、戦姫集結と募集審査で獲得できます。|7.「スロット特権パス」はイベント終了後に回収されます。|8.イベント終了後、余った「スロットエネルギー」、「スロットpt」、「高級スロットpt」は、それぞれ1ptあたり25K、25K、50Kゴールドに変換され、メールで配布されます。
+ACTIVITY_JACKPOT_HELP_TEXT,1.スロットエネルギーを5pt消費して、普通スロットや高級スロットを回すと、アイテムやスロットptボーナスを獲得できます。同じ戦姫が2体以上揃うと、マシンごとにスロットpt、または高級スロットptを獲得できます。同じ戦姫アイコンが出なかった場合は、アイテムボーナスをランダムで1つ獲得します。|2.スロットを回す際に、エネルギーの消費量を調整できます。消費量に応じて、ボーナスの獲得数が増えます。|3.「スロット特権パス」を購入、または普通スロットを40回回すと、高級スロットがアンロックされます。|4.「スロットpt」や「高級スロットpt」を使用して、「スロットガチャ」イベントでガチャを回すことができます。ボーナス一覧のアイテムをすべて当てると、一覧がリセットされます。|5.スロットで消費したエネルギー量によって、累計ボーナスが配布されます。|6.スロットエネルギーの獲得方法：デイリーメール、スロットお助けパック、お得パック、超お得パック、超お得衣装パック、戦姫集結と募集審査で獲得できます。|7.「スロット特権パス」はイベント終了後に回収されます。|8.イベント終了後、余った「スロットエネルギー」、「スロットpt」、「高級スロットpt」は、それぞれ1ptあたり25K、25K、50Kゴールドに変換され、メールで配布されます。
 ACTIVITY_JACKPOT_ENERGY_USE,使用× {1}
 ACTIVITY_JACKPOT_ENERGY_USE_TIPS,{1}倍のボーナスが獲得可能
 ACTIVITY_JACKPOT_ENERGY_RESUME,1pt回復まで：
@@ -4798,7 +4798,7 @@ DRESS_SUMMON_LABEL_3,イベント期間中\n「春の紙鳶」セットの獲得
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,人気戦姫\n衣装投票
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,ご協力ありがとうございました！\nこれからも素敵な学園ライフを、\nお過ごしくださいね、先輩！
 ONE_KEY_UPLEVEL_TITLE,超速LvUP
-ONE_KEY_UPLEVEL_HINT,資源を消費して、到達可能な最高レベルまでLvUPしますか？
+ONE_KEY_UPLEVEL_HINT,資源を消費して、\n到達可能な最高レベルまでLvUPしますか？
 CLICK_WHITE_AREA_SKIP,タップでスキップ
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT12,選択肢を選んでいません
 DRESS_SUMMON_X_TIME,[size=34]{1}[-]回購入
@@ -5425,11 +5425,15 @@ ARCTIC_EXPEDITION_TEXT_27,イベントは終了しました
 ACTIVITY_LUCKYBOXES_TEXT01,1回
 ACTIVITY_LUCKYBOXES_TEXT02,10回
 ACTIVITY_LUCKYBOXES_TEXT03,ラッキー値
-ACTIVITY_LUCKYBOXES_TEXT04,ラッキーガチャ\nパック
+ACTIVITY_LUCKYBOXES_TEXT04,ラッキー\nガチャ\nパック
 ACTIVITY_LUCKYBOXES_TEXT05,ラッキーコインが足りません
 ACTIVITY_LUCKYBOXES_TEXT06,ビッグボーナスを選択
 ACTIVITY_LUCKYBOXES_TEXT07,確定
-ACTIVITY_LUCKYBOXES_TEXT08,ビッグボーナスを1つ選んで！このラウンドのビッグボーナスを全て獲得すると更新されるよ～。
+ACTIVITY_LUCKYBOXES_TEXT08,"
+さぁ、ビッグボーナスを
+選んで！このラウンドの
+ビッグボーナスを全て獲得
+すると更新されるよ～。"
 ACTIVITY_LUCKYBOXES_TEXT09,ボーナス一覧
 ACTIVITY_LUCKYBOXES_TEXT10,ラウンド{1}
 ACTIVITY_LUCKYBOXES_TEXT11,獲得済みのボーナス
@@ -5762,7 +5766,7 @@ SHRINE_HURDLE_TEXT06,おすすめ難易度因子：
 SHRINE_HURDLE_TEXT07,選択した難易度が少し高いです。続けますか？
 SHRINE_HURDLE_TEXT08,試練詳細
 SHRINE_HURDLE_TEXT09,ステージ
-SHRINE_HURDLE_TEXT10,スコア
+SHRINE_HURDLE_TEXT10,点数：{1}
 SHRINE_HURDLE_TEXT11,バフを獲得
 SHRINE_HURDLE_TEXT12,戦闘記録
 SHRINE_HURDLE_TEXT13,人気戦姫
@@ -5790,7 +5794,7 @@ PERSON_DRESS_BUFFS_TIPS_7,現在アバター（ピンク色）による特殊バ
 PERSON_DRESS_RELATED_DRESS,関連アバター
 ACTIVITY_VAMPIRE_GAMBLE_AWARD01,回想ボーナス
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,アンロックアイテム
-CHIME_HELP,ヘルプ
+CHIME_HELP,1.御神木に「風鈴」を飾ると、全ての戦姫にバフ効果を与えます。|2.一定数の欠片を集めると風鈴をアンロックでき、「夢の塵埃」と「夢のお守り」を消費すると、風鈴を育成することができます。
 CHIME_ATLAS,図鑑
 CHIME_BAG,欠片
 CHIME_TAB1,詳細
@@ -5806,7 +5810,7 @@ CHIME_TEXT03,開放
 CHIME_TEXT04,覚醒
 CHIME_TEXT05,ロック中
 CHIME_TEXT06,育成値は上限に達していません
-CHIME_TEXT07,効果が全部開放されていません
+CHIME_TEXT07,効果は全部は開放されていません
 CHIME_TEXT08,育成値は上限に達しています
 CHIME_TEXT09,開放済
 CHIME_TEXT10,覚醒済
@@ -5821,3 +5825,16 @@ ACTIVITY_JACKPOT_WARN_BUTTON01,引き続き回す
 ACTIVITY_JACKPOT_WARN_BUTTON02,移動する
 MAIN_PLOT_NEW,スキップ
 NEWBEE_10GACHA_HELP05,1.イベント期間中、こちらの画面で初心者10連ガチャの権利を購入できます。|2.購入後にイベント画面のガチャボタンをタップすると、1度だけ特別な10連ガチャを行えます。|3.この特別な10連ガチャでは、確定で星5レア戦姫を8人、星5戦姫を2人の計10人獲得できます。各戦姫の排出確率については、イベント画面の虫眼鏡アイコンをタップしてご確認ください。|4.イベント終了後、権利を購入済みの状態でガチャを行っていなかった場合は、排出確率に従って、相応の戦姫の欠片がメールで配布されます。
+CHIME_TEXT16,所持欠片
+SHRINE_HURDLE_TEXT27,{1}後に開放
+SHRINE_HURDLE_TEXT28,最高LVに達しました。
+SHRINE_HURDLE_TEXT29,試練コインが足りません
+SHRINE_HURDLE_TEXT30,カードを選択してください
+SHRINE_HURDLE_TEXT31,バフを獲得しました
+SHRINE_HURDLE_TEXT32,購入完了
+SHRINE_HURDLE_TEXT33,LvUPしました
+SHRINE_HURDLE_TEXT34,回復済
+TIME_CLOISTER_TEXT88,この回廊でのステージ挑戦時や挑戦カード発動時に、獲得しているポイントによって勇気、魅力、知識がアップする。
+TIME_CLOISTER_TEXT89,現在のバフ
+TIME_CLOISTER_TEXT90,現在のpt
+TIME_CLOISTER_TEXT91,バフ内容
