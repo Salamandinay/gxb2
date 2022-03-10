@@ -3397,7 +3397,7 @@ Im Explosionsmodus wird Trinitys Zauber in einer stark komprimierten Form abgesc
 Zeichen. Reduziert die Blockade um 25%, erhöht den kontinuierlichen Schaden, den das Ziel erleidet, um 50%. Max. zweimal akkumulierbar.
 [c][01a310]Blutschaden:[-][/c]
 Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
-12701,Illusionsmaster (Boss aus dem Abenteuer in der Märchenwelt),Märchentraumwelt,"Der Illusionsmaster eint seine Kräfte und fügt allen Feinden einen großen Schaden zu. Feinde deren HP höher ist als 80% erleiden einen zusätzlichen Schaden von 10% ihrer maximalen HP. Hat eine 100% Wahrscheinlichkeit die Feinde mit dem höchsten Angriff für 2 Runden zu betäuben. Lässt die Feinde, deren HP geringer als 30% ist für 2 Runden bluten.\n[c][01a310]Blutschaden:[-][/c]\nKontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+12701,Illusionsmaster (Boss aus dem Abenteuer in der Märchenwelt),Märchentraumwelt,"Der Illusionsmaster eint seine Kräfte und fügt allen Feinden einen großen Schaden zu. Feinde, deren HP höher sind als 80%, erleiden einen zusätzlichen Schaden in Höhe von 10% ihrer maximalen HP. Hat eine 100% Wahrscheinlichkeit, die Feinde mit dem höchsten Angriff für 2 Runden zu betäuben. Lässt die Feinde, deren HP geringer als 30% sind für 2 Runden bluten.\n[c][01a310]Blutschaden:[-][/c]\nKontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
 12702,Illusionsmaster (Boss aus dem Abenteuer in der Märchenwelt),Standardangriff,Der Illusionsmaster greift 2 zufällige Gegner an um Schaden zu verursachen und ihre Energie um 100 zu reduzieren.
 12703,Illusionsmaster (Boss aus dem Abenteuer in der Märchenwelt),Bedrohung beseitigen,Der Illusionsmaster zieht auf den bedrohlichsten Gegner. Am Ende der Runde [c][e28002]verbannt[-][/c] einen Gegner mit der höchsten Energie.\n[c][e28002]Verbannen:[-][/c]\nDas verbannte Ziel kann sich in 1 Runde nicht bewegen und kann keine Spezialeffekte oder Buffs aufnehmen. Seine HP und Energie ändern sich nicht. Der bereits erhaltene und aktivierte Buff wird gezwungen entfernt.
 12704,Illusionsmaster (Boss aus dem Abenteuer in der Märchenwelt),Harter Weg,"Jedes Mal wenn ein Gegner aktive Fertigkeit freisetzt, fügt ihm der Illusionsmaster Blutschaden für 2 Runden zu.\n[c][01a310]Blutschaden:[-][/c]\nKontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
@@ -9384,7 +9384,7 @@ Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den erlittenen Schaden (
 6736302,Nachtpfeife,Antiquitätenfertigkeit,Erhöht nach dem Wiederbeleben die HP zusätzlich um 40% der eigenen max. HP und die Energie um 115. Verringert 2 Runden lang die vom Gegner abgezogene Energie um 80%.
 501106,Himmelsinsel,Blutzeichen,Jede 6. Runde fügt Van Helsing allen Mädchen deines Teams 1 Schicht Blutzeichen zu.
 501107,Himmelsinsel,Blutzeichen,Jede 4. Runde fügt Van Helsing allen Mädchen deines Teams 1 Schicht Blutzeichen zu.
-502107,Himmelsinsel,Betäubungsbonus,"Immer wenn ein Mädchen auf dem Schlachtfeld betäubt wird, wird der Angriff aller Gegner um 5% erhöht."
+502107,Himmelsinsel,Schwindelerregend,"Immer wenn ein Mädchen auf dem Schlachtfeld betäubt wird, wird der Angriff aller Gegner um 5% erhöht."
 503110,Himmelsinsel,Todessegen,"Immer wenn ein Mädchen auf dem Schlachtfeld gestorben ist, wird die Schadensreduzierung aller Schäden aller Gegner um 5% erhöht."
 503111,Himmelsinsel,Lebenssegen,"Wenn eine gegnerischen Alberta einen Standardangriff einsetzt, verbraucht sie dabei keine HP mehr."
 5401700,Lumi,Standardangriff,Standardangriff
@@ -10232,3 +10232,199 @@ Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. So
 6754101,Krähe des Abgrunds,Antiquitätenfertigkeit,"Fügt die Besitzerin einem Gegner einen beliebigen kontinuierlichen Schaden zu, hat sie eine 30%ige Wahrscheinlichkeit, zusätzlich einem anderen Gegner 1 Schicht desselben kontinuierlichen Schadens zuzufügen. Entsprechend der Gesamtanzahl der Schichten aller kontinuierlichen Schäden auf dem Ziel fügt die Besitzerin diesem sofort einen Schaden in Höhe von (20% *Gesamtanzahl der Schichten) des AW zu."
 6754201,Krähe des Abgrunds,Antiquitätenfertigkeit,"Fügt die Besitzerin einem Gegner einen beliebigen kontinuierlichen Schaden zu, hat sie eine 60%ige Wahrscheinlichkeit, zusätzlich einem anderen Gegner 1 Schicht desselben kontinuierlichen Schadens zuzufügen. Entsprechend der Gesamtanzahl der Schichten aller kontinuierlichen Schäden auf dem Ziel fügt die Besitzerin diesem sofort einen Schaden in Höhe von (40% *Gesamtanzahl der Schichten) des AW zu."
 6754301,Krähe des Abgrunds,Antiquitätenfertigkeit,"Fügt die Besitzerin einem Gegner einen beliebigen kontinuierlichen Schaden zu, hat sie eine 100%ige Wahrscheinlichkeit, zusätzlich einem anderen Gegner 1 Schicht desselben kontinuierlichen Schadens zuzufügen. Entsprechend der Gesamtanzahl der Schichten aller kontinuierlichen Schäden auf dem Ziel fügt die Besitzerin diesem sofort einen Schaden in Höhe von (80% *Gesamtanzahl der Schichten) des AW zu."
+5301800,Cygmar,Standardangriff,Standardangriff
+65302500,Cygmar,Standardangriff,Standardangriff
+75301800,Cygmar,Standardangriff,Standardangriff
+5301801,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 100% des AW zu und es besteht eine 15%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 10% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+65302501,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 200% des AW zu und es besteht eine 20%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 15% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+75301801,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 400% des AW zu und es besteht eine 25%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+5301802,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 20%, den Angriff um 20%, die Kontrollimmunität um 10% und den Speed um 30."
+65302502,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 25%, den Angriff um 25%, die Kontrollimmunität um 15% und den Speed um 40."
+65302512,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 50."
+75301802,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 50."
+5301803,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 10% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 40%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 3% und die Präzision um 2%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 2% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65302503,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 15% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 40%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 6% und die Präzision um 3%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 4% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+65302513,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 40%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+75301803,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 40%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+5301804,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 10% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 3% und die Präzision um 2%."
+65302504,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 15% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 6% und die Präzision um 3%."
+65302514,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 20% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+75301804,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 20% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+753018011,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 428% des AW zu und es besteht eine 25%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+753018012,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 416% des AW zu und es besteht eine 25%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+753018013,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 424% des AW zu und es besteht eine 27%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+753018014,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 432% des AW zu und es besteht eine 27%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+753018015,Cygmar,Reduktionsverfahren,"
+Der Schwachpunkt der Daten befindet sich in den Codes. Fügt allen Gegnern Schaden im Höhe von 440% des AW zu und es besteht eine 30%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Fügt einem zufälligen Gegner zusätzlichen Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW). Es besteht eine 100%ige Wahrscheinlichkeit, das Ziel 2 Runden lang zu [c][01a310]betäuben[-][/c].
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+753018021,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 52."
+753018022,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 54."
+753018023,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 56."
+753018024,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 30%, den Angriff um 30%, die Kontrollimmunität um 20% und den Speed um 58."
+753018025,Cygmar,Psychedelische Pille,"Bleibst du in deiner Illusion gefangen oder stellst du dich dem Fluch der Wahrheit? Erhöht die HP um 33%, den Angriff um 33%, die Kontrollimmunität um 30% und den Speed um 60."
+753018031,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 42%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+753018032,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 44%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+753018033,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 46%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+753018034,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 48%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 8% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+753018035,Cygmar,Zauberwürfel,"
+Befindest du dich in einem Zauberwürfel, gibt es nur zwei Möglichkeiten: Weiterentwickeln oder Zerstören. Ihr Standardangriff fügt 2 zufälligen Gegnern Schaden in Höhe von 20% der maximalen HP des Ziels zu (max. in Höhe von 1500% von Cygmars AW) und es besteht eine 50%ige Wahrscheinlichkeit, sie 2 Runden lang zu [c][01a310]betäuben[-][/c]. Gewährt ihren Verbündeten der Backline 2 Runden lang eine Schicht [c][e28002]Matrix-Buff[-][/c]. Jedes Mal, wenn sie die Gegner betäubt, bekommt sie selbst für 2 Runden lang eine Schicht [c][e28002]Schutzwürfel[-][/c] und stellt 5% ihrer maximalen HP wieder her.
+
+[c][01a310]Betäuben:[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 5%.
+[c][e28002]Schutzwürfel:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Jedes Mal, wenn sie HP wiederherstellt, gewährt ihr jede Schicht Schutzwürfel einen [c][e28002]Schutzwall[-][/c] in Höhe von 10% der wiederhergestellten HP.
+[c][e28002]Schutzwall:[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+753018041,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 22% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+753018042,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 24% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+753018043,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 26% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+753018044,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 28% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 4%."
+753018045,Cygmar,Datenmatrix,"
+Die Matrix segnet dich. Gibt zu Beginn des Kampfes allen Verbündeten 2 Schichten [c][e28002]Matrix-Buff[-][/c] und den Verbündeten der Backline zusätzlich eine Schicht [c][e28002]Matrix-Buff[-][/c] (dieser Effekt dauert 2 Runden an). Stellt bei weniger als 30% HP sofort 30% ihrer maximalen HP wieder her (nur beim ersten Mal) und bekommt danach am Ende jeder Runde 10% ihrer maximalen HP (dieser Effekt dauert 5 Runden an).
+
+[c][e28002]Matrix-Buff:[-][/c]
+Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Kontrollimmunität um 10% und die Präzision um 5%."

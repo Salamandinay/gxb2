@@ -11,7 +11,7 @@ id,name,brief,desc
 10,Brotdose,Zum Verbessern deiner Mädchen,"Kann in der Mädchen-Übersicht verwendet werden, um die Mädchen zu verbessern."
 11,Herz,Währung für BFF Kapseln,"Wird unter Freunden verschickt. Kann verwendet werden, um Mädchen zu beschwören."
 12,Punkte der goldenen Ei Kapsel,Punkte der goldenen Ei Kapsel,
-13,Pass,"Pass, mit dem man am Test teilnimmt","Mit diesem Pass kann man Kämpfen unter ""Test"" bestreiten"
+13,Pass,Zertifikat für Test,"Mit diesem Pass kann man Kämpfen unter ""Test"" bestreiten"
 14,Kristallmeißel,Material,"Kann in der Mädchen-Übersicht verwendet werden, um Kristalle aufzuleveln"
 15,Heiliges Buch,Währung für den Heiligtümerladen,Tausche sie im Heiligtümerladen gegen Items aus
 16,Arena-Medaille,Währung für den Arenaladen,Tausche sie im Arenaladen gegen Items aus
@@ -25,7 +25,7 @@ id,name,brief,desc
 25,Super Job-Pergament,Job-Pergament,"Verwende es auf der Jobseite, um eine beliebige Aufgabe hinzuzufügen (4-7 Sterne). Wenn die Aufgabe nicht erledigt wird, verschwindet sie nach dem Zurücksetzen."
 26,Diener-Keks,Diener-Material,"Verwende ihn, um Diener zu zähmen, zu trainieren und zu entwickeln."
 27,Spirit-Keks,Diener-Material,"Verwende sie, um die Aura der Diener aufzuleveln."
-28,Landkarte,Pass für die praktische Arbeit,"Wird verwendet, um an ""Praktischer Arbeit"" teilzunehmen."
+28,Landkarte,Zertifikat für praktische Arbeit,"Wird verwendet, um an ""Praktischer Arbeit"" teilzunehmen."
 29,Super Lottoschein,Lottoschein für Super Glücksautomat,Jeder Zug am Super Glücksautomaten kostet 1 Super Lottoschein
 30,頭像（無用）,Spezieller Avatar,填充
 31,Baumaterial,Baumaterial,Wird für den Bau benötigt
@@ -1380,7 +1380,7 @@ id,name,brief,desc
 27034,Azurblaues Meer,Kostüm,"Fencer Kostüm ""Azurblaues Meer"""
 7035,Dämonenprüferin,Kostüm,Lucifers Kostüm Dämonenprüferin
 27035,Dämonenprüferin,Kostüm,Lucifers Kostüm Dämonenprüferin
-55,Herausforderungsgutschein,"Zertifikat, um an der Mädchen-Aufgabe teilnehmen zu können","Wir verwendet, um an der Herausforderung teilzunehmen"
+55,Herausforderungsgutschein,Zertifikat für Mädchen-Aufgaben,"Wir verwendet, um an der Herausforderung teilzunehmen"
 56,Kuchen-Gutschein,Eventmaterial,"Tausche ihn gegen Belohnungen während des Kuchenevents ein. Wenn das Event zuende ist, kann er nicht mehr eingetauscht werden. Bitte denke daran, ihn während des Events einzutauschen."
 1166,Kriegerschwert,Waffe,
 2166,Kriegerrüstung,Oberkleidung,
@@ -2292,7 +2292,7 @@ Kann verwendet werden, um Belohnungen während des Osterevents zu erhalten.
 8040,Regen in der Altstadt,Avatarbildrahmen,Kann durch den Kauf des Schwarzgoldpasses während des 3. Dampffestivals erhalten werden
 168,Wunschmädchen,Spezielles Item,Wähle ein Mädchen aus und erhalte 50 Fragmente von ihr.
 170,Wahrsagekristall,Währung des Antiquitätsladen,Kann für Käufe im Antiquitätsladen verwendet werden
-165,Schachticket,Zertifikat für Mädchenaufgaben,Erhältlich im Schach-Modus in den Mädchen-Aufgaben. Nützlich für Kauf der Mädchen im Schach-Modus.
+165,Schachticket,Zertifikat für Mädchen-Aufgaben,Erhältlich im Schach-Modus in den Mädchen-Aufgaben. Nützlich für Kauf der Mädchen im Schach-Modus.
 6503,Siegelherz·Geister,Antiquität,
 6504,Siegelherz·Geister,Antiquität,
 6505,Siegelherz·Geister,Antiquität,
@@ -4958,8 +4958,34 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 4201021,Normale Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Brotdose *4000, Kristallmeißel *4000, Diener-Keks *2400, Diener-Kristall *150 und Gildenmünze *6000."
 7248,Nussknacker,Kostüm,"Monicas Kostüm ""Nussknacker"""
 27248,Nussknacker,Kostüm,"Monicas Kostüm ""Nussknacker"""
-322,Einladungskarte,Eintrittsticket,Kann zum Starten der Prüfung der Götter verwendet werden.
+322,Einladung,Zertifikat für Prüfung der Götter,Wird zum Starten der Prüfung der Götter verwendet.
 323,Papierkranich,Währung,"Kann im Teich der Wünsche (unter Tsuruga Schrein) verwendet werden, um Items zu tauschen."
 324,Prüfungsmünze,Währung,"Kann in der Prüfung der Götter (unter Tsuruga Schrein) verwendet werden, um Buffs zu kaufen und zu leveln."
 325,Mystischer Staub,Material,Kann zum Leveln der Glocken am Baum der Ahnen (unter Tsuruga Schrein) verwendet werden.
-326,Mystischer Taliman,Material,Kann zum Leveln der Glocken am Baum der Ahnen (unter Tsuruga Schrein) verwendet werden.
+326,Mystischer Talisman,Material,Kann zum Leveln der Glocken am Baum der Ahnen (unter Tsuruga Schrein) verwendet werden.
+335,Strandsand,Eventmaterial,"Eventmaterial. Kann für das Event ""Luvlys Traumschloss"" verwendet werden."
+336,Himmelssand,Eventmaterial,"Eventmaterial. Kann für das Event ""Luvlys Traumschloss"" verwendet werden."
+4703001,Glockentruhe - Lila,Auswahlbox,"Nach dem Öffnen kannst du dir eine der zur Wahl stehenden Belohnungen aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Truhe erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4704001,Glockentruhe - Grün,Auswahlbox,"Nach dem Öffnen kannst du dir eine der zur Wahl stehenden Belohnungen aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Truhe erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4705001,Glockentruhe - Rot,Auswahlbox,"Nach dem Öffnen kannst du dir eine der zur Wahl stehenden Belohnungen aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Truhe erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4706001,Glockentruhe - Orange,Auswahlbox,"Nach dem Öffnen kannst du dir eine der zur Wahl stehenden Belohnungen aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Truhe erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+331,Glockenbeutel - Lila,Ressourcenbox,"Nach dem Öffnen erhältst du eine zufällige Belohnung. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du den Beutel erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+332,Glockenbeutel - Grün,Ressourcenbox,"Nach dem Öffnen erhältst du eine zufällige Belohnung. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du den Beutel erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+333,Glockenbeutel - Rot,Ressourcenbox,"Nach dem Öffnen erhältst du eine zufällige Belohnung. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du den Beutel erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+334,Glockenbeutel - Orange,Ressourcenbox,"Nach dem Öffnen erhältst du eine zufällige Belohnung. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du den Beutel erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+7249,Spiegelblick,Kostüm,"Angies Kostüm ""Spiegelblick"""
+27249,Spiegelblick,Kostüm,"Angies Kostüm ""Spiegelblick"""
+930217,5-Sterne Cygmar,Mädchen beschwören,"Sammle 50 Fragmente, um das Mädchen zu beschwören."
+53018,Cygmar,,
+653025,Cygmar,,
+753018,Cygmar,,
+4601026,Auswahlbox vom orangenen Outfit (Unterkörper),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir einen Unterkörper von einem orangenen Outfit-Set aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich deren Inhalte nicht mehr ändern.)"
+4302022,Kostümauswahlbox (17. Luvlys Inselreise),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts, um die Kostüme anzuschauen. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4102033,5-Sterne Auswahlbox (Dämon/Engel),Auswahlbox,"Nach dem Öffnen kannst du dir ein Dämonen oder Engel 5-Sterne-Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4102034,Auswahlbox von 5-Sterne Mädchen (17. Luvlys Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Dämonen oder Engel 5-Sterne-Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4101043,Auswahlbox von 5-Sterne Mädchen (17. Luvlys Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne-Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+341,Aufstiegszertifikat,Eventmaterial,"Eventmaterial: Wird für das Event ""Aufstiegszeremonie"" verwendet."
+342,Empfehlungsschreiben,Eventmaterial,"Eventmaterial: Wird für das Event ""Aufstiegsprüfung"" verwendet."
+7250,Kuss der Rose,Kostüm,"Fionas Kostüm ""Kuss der Rose"""
+27250,Kuss der Rose,Kostüm,"Fionas Kostüm ""Kuss der Rose"""
+20001075,Cygmars limitierter Avatar,Spezieller Avatar,Cygmars limitierter Avatar. Die legendäre Hackerin ist hier!

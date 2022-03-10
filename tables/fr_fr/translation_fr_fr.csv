@@ -4975,12 +4975,12 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Lord Dracula\nLe Retour
+WARMUP_ARENA_TASK_INFO_2,Stigma\nHackeuse\nProfessionnelle
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
 ACTIVITY_ENTRANCE_TEST_RECORD_TIPS,"Votre adversaire et vous n'appartenez pas au même Rang, impossible de combattre !"
-WARMUP_ARENA_TASK_HELP,"1. Terminez les Tâches de la Nouvelle Fille pour obtenir des récompenses.|2. Vous pouvez débloquer des récompenses supplémentaires en achetant Avis d'Admission.|3. Après avoir terminé certaines Tâches, vous pourrez débloquer un épisode de l'histoire de la Nouvelle Fille."
+WARMUP_ARENA_TASK_HELP,"1. Complétez les Tâches de la Nouvelle Fille pour obtenir des récompenses.|2. Débloquez les récompenses supplémentaires en achetant Avis d'Admission.|3. Après avoir complété certaines Tâches comprenant une étoile, vous pourrez débloquer un épisode de l'histoire de la Nouvelle Fille."
 ENTRANCE_TEST_NO_FIGHT_PARTNERS,"Vous n'avez pas formé votre Équipe Offensive, voulez-vous utiliser votre Équipe de Défense actuelle ?"
 PUB_MISSION_AUTO_TEXT4,Choisissez le/les job(s) fini(s)
 LIMITED_FOR_ACTIVITY,En temps limité
@@ -5199,7 +5199,7 @@ Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 F
 (6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l’Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l’Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s’il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l’Élimination.
 (2) Pendant cette phase, vous ne ferez qu\'un combat par jour (vous ne pouvez pas modifier votre Équipe durant les 2 heures précédant le combat) et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
 (3) Règles de Combat (Élimination&Finalistes)
-Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut.
+Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d’un ensemble d’équipement de classe, elles le conserveront. Les Filles qui sont équipées d’équipement plus bas obtiendront toutes un ensemble d’équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
 Durant le combat, les PV et l’Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
 (2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
 Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
@@ -5802,41 +5802,42 @@ SHRINE_NOTICE_TAB3,Récompenses
 SHRINE_NOTICE_TAB4,Succès
 SHRINE_NOTICE_TEXT01,Temps restant
 SHRINE_NOTICE_TEXT02,Points totaux
-SHRINE_NOTICE_TEXT03,Classement Actuel：
-SHRINE_HURDLE_TEXT04,Entrer
+SHRINE_NOTICE_TEXT03,Classement : [c][0069cc]{1}[-][/c]
+SHRINE_NOTICE_TEXT04,Récompenses：
 SHRINE_NOTICE_TEXT05,Aucun Classement
-SHRINE_POOL_TEXT01,Saisonnière
-SHRINE_POOL_TEXT02,Permanente
-SHRINE_POOL_TEXT03,Les objets ont été réinitialisés
+SHRINE_POOL_TEXT01,Saisonnier
+SHRINE_POOL_TEXT02,Permanent
+SHRINE_POOL_TEXT03,Les objets ont été réinitialisés !
 SHRINE_HURDLE_HELP,"
-鶴華神宮
+Grand Sanctuaire de Tsuruga
 
-神隙試煉開放時間|每14天為一個賽季，由開放期(12天)與休整期(2天)組成。
+Ouverture du Dojo|Chaque saison dure 14 jours et se divise en 2 phases : Épreuves (12 jours) et Repos (2 jours).
 
-入場規則|1.每期開放時，學長將獲得15張邀請函(上限15張)。|2.每期共有3個不同的試煉，存在不同的環境效果對戰姬進行增幅。玩家可手動選擇試煉，每次進入時消耗1張邀請函。|3.試煉中僅可使用10星以上的戰姬，且試煉中戰姬將保留進入時的屬性和狀態(包括裝備及潛能等)。
+Règles de participation|1. Au début de chaque saison, vous obtiendrez 15 Lettres d’Invitation (limite de sotckage : 15).|2. Chaque saison comprend 3 Épreuves différentes, chacune ayant une Aura fournissant ou imposant un buff ou débuff à vos Filles. Consommez 1 Lettre d’Invitation pour commencer l’Épreuve que vous aurez choisi en amont.|3. Seules les Filles 10 étoiles ou (+) peuvent être sélectionnées pour participer aux Épreuves. Une fois qu\'une Fille est choisie, ses attributs et son statut (comprenant son équipement et ses potentiels) dans cette Épreuve ne seront pas mis à jour si vous les modifier dans d\'autres fonctionnalités.
 
-難度因子|1.每次進入試煉後，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。
+Niveau de Difficulté|1. Après avoir choisi une Épreuve, vous devrez choisir le niveau de difficulté.|2. Plus le niveau de difficulté choisi sera élevé, plus les ennemis rencontrés seront puissants, ce qui vous permettra ainsi de gagner plus de points.|3. La difficulté du niveau pourra être plus élevée à mesure que vous obtiendrez des points.
 
-試煉規則|試煉共有16層關卡，分為戰鬥層、獎勵層、商店層、回復層和最終BOSS。|戰鬥層|1.隨機出現敵人，點擊敵人可查看敵人資訊，學長可手動選擇戰姬進行出戰，戰鬥勝利後增加得分。|2.每次戰鬥限定15回合，在15回合內擊敗所有敵人戰鬥勝利，己方戰姬全部死亡或戰鬥超時則失敗。|3.每次戰鬥結束後，己方戰姬將保留血量。|4.戰鬥失敗後。敵人不會保留血量。|獎勵層|1.隨機出現3個增益，學長可手動選擇其中1個。|2.學長也可選擇放棄增益獲得試煉金幣，試煉金幣可在商店層中使用。|商店層|1.購買增益:隨機出現3個增益，學長可花費試煉金幣購買。|2.升級增益：隨機出現3個已擁有增益，學長可花費試煉金幣進行升級，每個增益最多升級2次。|回復層|1.學長可選擇回復戰姬血量或復活已陣亡戰姬。|最終BOSS|1.僅擁有1次挑戰機會，挑戰結束後，成功完成本次試煉。|2.最終BOSS無法被擊殺，將根據造成的傷害計算得分。
+Règles des Épreuves|Chaque Épreuve compte 15 étapes, incluant des Étapes Combat, des Étapes Récompense, des Étapes Boutique, des Étapes Guérison et une Étape Boss.|Étape Combat|1. Appuyez sur l’icône des ennemis pour en savoir plus sur eux. Formez votre équipe judicieusement pour les combattre. Obtenez des points en gagnant le combat.|2. Chaque combat dure 15 tours. Vous gagnerez le combat à condition que tous les ennemis soient vaincus en 15 tours. Dans le cas contraire, celui-ci sera considéré comme une défaite. |3. Les PV de vos Filles ne seront pas réinitialisés après chaque combat.|4. Après une défaite, les PV des ennemis seront réinitialisés à 100%%.|Étape Récompense|1. Durant cette étape, vous pouvez sélectionner manuellement un des 3 Bonus aléatoires affichés.|2. Vous pouvez également choisir de ne sélectionner aucun Bonus et ainsi obtenir un certain nombre de Jeton de Dojo qui peut être utilisé dans les Étapes Boutique.|Étape Boutique|1. Achat des Bonus : 3 Bonus vous seront présentés aléatoirement que vous pourrez acheter à l’aide des Jetons de Dojo.|2. Amélioration des Bonus : 3 Bonus que vous possédez vous seront présentés aléatoirement et vous pourrez choisir de les améliorer avec des Jetons de Dojo (chaque Bonus peut être amélioré 2 fois au maximum lors d’une Épreuve).|Étape Guérison|1. Durant cette étape, vous pouvez choisir de soigner vos Filles ou de faire revivre une Fille vaincue.|Étape Boss|1. Vous ne pouvez défier l’Étape Boss qu\'une seule fois lors d’une Épreuve. Après avoir combattu le Boss, cette Épreuve sera considérée comme complétée.|2. Le Boss Final de l’Étape Boss ne peut pas être vaincu. Vous gagnerez des points en fonction des dégâts infligés.
 
-得分及排行榜|1.每期將記錄玩家3個試煉的最高得分，並分別對每個試煉的得分及3個試煉的總得分進行排名，開放期結束後，根據排名發放獎勵。
+Points et Classement|1. Vos points totaux des 3 Épreuves seront enregistrés, ainsi que vos points obtenus dans chaque Épreuve respectivement, ce qui constituera deux classements. Une fois la phase d’Épreuve terminée, les récompenses vous seront envoyées en fonction de vos classements.
 
-週期任務|1.週期任務將在每期神隙試煉開放時刷新。
+Quêtes|1. Les Quêtes seront réactualisées au début de chaque saison.
 
-千願之池|1.使用「千紙鶴」可在千願之池中兌換道具。|2.週期商品將在每期神隙試煉開放時刷新，常駐商品不會刷新。"
-SHRINE_HURDLE_DIFFICULTY_HELP,1.每次進入試煉時，需要選擇本次試煉的難度因子。|2.隨著難度因子的提升，敵人的各項屬性會獲得提升，變得更為強大，並且通過戰鬥後的得分也會越高。|3.可選擇難度因子的上限將根據通過試煉的得分逐步提升。
-SHRINE_HURDLE_TEXT01,Environnement
+Bassin aux Vœux|1. Échangez vos Grues en papier contre des récompenses.|2. Les objets de la boutique saisonnière seront renouvelés au début de chaque saison, tandis que les objets dans la boutique permanente ne seront pas renouvelés."
+SHRINE_HURDLE_DIFFICULTY_HELP,"|1. Après avoir choisi une Épreuve, vous devrez choisir le niveau de Difficulté.|2. Plus le niveau de difficulté choisi sera élevé, plus les ennemis rencontrés seront puissants, ce qui vous permettra ainsi de gagner plus de points de combat.|3. La difficulté du niveau pourra être plus élevée à mesure que vous obteniez des points."
+SHRINE_HURDLE_TEXT01,Aura
 SHRINE_HURDLE_TEXT02,Record
-SHRINE_HURDLE_TEXT03,Niveau
-SHRINE_HURDLE_TEXT05,是否消耗1張邀請函進入試煉？\n進入試煉後，戰姬將保留進入時的屬性和狀態
-SHRINE_HURDLE_TEXT06,Niveau recommandé :
-SHRINE_HURDLE_TEXT07,"Le niveau de cette Épreuve pourrait être un peu difficile pour vous, voulez-vous continuer ?"
+SHRINE_HURDLE_TEXT03,Niveau de Difficulté
+SHRINE_HURDLE_TEXT04,Commencer
+SHRINE_HURDLE_TEXT05,"Voulez-vous utiliser 1 Lettre d'Invitation pour commencer cette Épreuve ?\nUne fois qu'une Fille est choisie, ses attributs et son statut (comprenant son équipement et ses potentiels) dans cette Épreuve ne seront pas mis à jour si vous les modifier dans d'autres fonctionnalités."
+SHRINE_HURDLE_TEXT06,Difficulté recommandée :
+SHRINE_HURDLE_TEXT07,"Le niveau de Difficulté de cette Épreuve pourrait être un peu élevé pour vous, voulez-vous continuer ?"
 SHRINE_HURDLE_TEXT08,Détails
 SHRINE_HURDLE_TEXT09,Étape
 SHRINE_HURDLE_TEXT10,Point : {1}
-SHRINE_HURDLE_TEXT11,Obtenir un Bonus
+SHRINE_HURDLE_TEXT11,Bonus Obtenu(s)
 SHRINE_HURDLE_TEXT12,Historique
-SHRINE_HURDLE_TEXT13,熱點戰姬
+SHRINE_HURDLE_TEXT13,Filles Populaires
 SHRINE_HURDLE_TEXT14,Aucune donnée
 SHRINE_HURDLE_TEXT15,{1}e Étape
 SHRINE_HURDLE_TEXT16,Ennemis
@@ -5846,9 +5847,9 @@ SHRINE_HURDLE_TEXT19,Acheter
 SHRINE_HURDLE_TEXT20,Améliorer
 SHRINE_HURDLE_TEXT21,Acheté
 SHRINE_HURDLE_TEXT22,Voulez-vous quitter la boutique ?
-SHRINE_HURDLE_TEXT23,Voulez-vous abandonner le combat ?
+SHRINE_HURDLE_TEXT23,Voulez-vous quitter cette Épreuve ?
 SHRINE_HURDLE_TEXT24,Calculer
-SHRINE_HURDLE_TEXT25,Renoncer
+SHRINE_HURDLE_TEXT25,Quitter
 SHRINE_HURDLE_TEXT26,Continuer
 SHRINE_STORY,Revoir
 DRESS_BUFFS_SHOW_WINDOW,Bonus de Tenue
@@ -5862,69 +5863,120 @@ PERSON_DRESS_BUFFS_TIPS_7,Aucun Bonus en Tenue Rosée
 PERSON_DRESS_RELATED_DRESS,Tenue(s)
 ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Récompenses Mémorables
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Clef du Passé
-CHIME_HELP,1.御神木上懸掛名為「玉振」之物，每個玉振都可以為所有戰姬提供增益效果。|2.收集足夠數量的碎片後可解鎖玉振，消耗「縹緲之夢」和「凝實之華」可培養玉振。
+CHIME_HELP,"
+1. Les Clochettes suspendues aux branches de l\'Arbre Divin sont enchantées et peuvent fournir des bonus à vos Filles. (Utilisable dans presque toutes les batailles)|2. Collectez un certain nombre de Fragments de Clochette pour en débloquer une. Une fois une Clochette débloquée, utilisez de la Poudre Mystique et des Talismans Mystiques pour l\'améliorer.
+
+Recharge d\'une Clochette : rechargez la Clochette pour augmenter sa Valeur et ses Attributs Basiques.
+
+Valeur d\'une Clochette (valeur maximale 100%%) : après avoir augmenté la Valeur à certain pourcentage, les Enchantements de la Clochette s\'activeront.
+
+Éveil d\'une Clochette : après avoir augmenté la Valeur d\'une Clochette à 100%% et activé tous ses Enchantements, vous pourrez éveiller cette Clochette.|3. Moyen d\'obtention des matériaux de Clochette : Panneau d\'Affichage, Bassin aux Vœux, Pack Hebdo. et Pack Mensuel."
 CHIME_ATLAS,Galerie
 CHIME_BAG,Fragment
-CHIME_TAB1,Détails
+CHIME_TAB1,Infos
 CHIME_TAB2,Recharge
-CHIME_TAB3,Activer
+CHIME_TAB3,Activation
 CHIME_TAB4,Éveil
 CHIME_BUTTON1,Recharger
 CHIME_BUTTON2,Activer
 CHIME_BUTTON3,Éveiller
-CHIME_TEXT01,蘊養值
+CHIME_TEXT01,Valeur
 CHIME_TEXT02,Attribut Basique
-CHIME_TEXT03,Activer
-CHIME_TEXT04,Éveiller
+CHIME_TEXT03,Enchantement Activé
+CHIME_TEXT04,Clochette Éveillée
 CHIME_TEXT05,Bloqué
-CHIME_TEXT06,蘊養值未充滿
-CHIME_TEXT07,效果未全部啟用
-CHIME_TEXT08,蘊養值已滿
-CHIME_TEXT09,Activé
-CHIME_TEXT10,Éveillé
-CHIME_TEXT11,蘊養值未達到{1}
-CHIME_TEXT12,是否啟用效果？
-CHIME_TEXT13,是否喚醒？
+CHIME_TEXT06,La Clochette n'a pas encore atteint sa Valeur maximale.
+CHIME_TEXT07,Veuillez d'abord recharger la valeur de la Clochette à 100%% et activer tous ses Enchantements.
+CHIME_TEXT08,La Clochette a atteint sa Valeur maximale
+CHIME_TEXT09,Les Enchantements ont été activés !
+CHIME_TEXT10,La Clochette a été éveillée !
+CHIME_TEXT11,La Valeur de la Clochette n'a pas encore atteint {1}
+CHIME_TEXT12,Voulez-vous activer cet Enchantement ?
+CHIME_TEXT13,Voulez-vous éveiller cette Clochette ?
 CHIME_TEXT14,Déblocable
-CHIME_TEXT15,Veuillez d'abord choisir les Fragments que vous voulez désintégrer
+CHIME_TEXT15,Veuillez d'abord choisir les Fragments que vous voulez désintégrer.
 TIME_CLOISTER_TEXT87,Utilisez les「{1}」pour améliorer le niveau du Planétarium.
 ACTIVITY_JACKPOT_WARN,Vous avez débloqué la Machine Avancée. Voulez-vous arrêter ce tour et vous y rendre ?
 ACTIVITY_JACKPOT_WARN_BUTTON01,Ignorer
 ACTIVITY_JACKPOT_WARN_BUTTON02,Aller à
 MAIN_PLOT_NEW,Passer
 NEWBEE_10GACHA_HELP05,"1. Durant l'événement, vous pouvez acheter le pack sur cette interface afin d'obtenir 10 Filles aléatoires. |2. Après l'achat, vous pouvez toucher l'icône pour commencer le tirage. |3. Après l'achat, vous aurez 100%% de possibilité d'obtenir Fille Élite 5 étoiles *8, Fille 5 étoiles *2. Touchez la loupe pour savoir plus. |4. Une fois l'événement terminé, si vous avez acheté ce pack, mais ne l'avez pas utilisé, le tirage se fera automatiquement et les Fragments des Filles vous seront envoyés par courrier."
-CHIME_TEXT16,Fragments possédés
+CHIME_TEXT16,Fragments Obtenus
 SHRINE_HURDLE_TEXT27,Commence dans {1}
-SHRINE_HURDLE_TEXT28,已升至最高等級
-SHRINE_HURDLE_TEXT29,試煉金幣不足
-SHRINE_HURDLE_TEXT30,請選擇卡片
-SHRINE_HURDLE_TEXT31,成功獲得增益
-SHRINE_HURDLE_TEXT32,Acheté !
-SHRINE_HURDLE_TEXT33,Amélioré
-SHRINE_HURDLE_TEXT34,已回復
+SHRINE_HURDLE_TEXT28,Ce Bonus a atteint son Niveau Max !
+SHRINE_HURDLE_TEXT29,Jeton de Dojo Insuffisant !
+SHRINE_HURDLE_TEXT30,Veuillez d'abord choisir une carte !
+SHRINE_HURDLE_TEXT31,Bonus obtenu !
+SHRINE_HURDLE_TEXT32,Achat réussi !
+SHRINE_HURDLE_TEXT33,Amélioration avec succès !
+SHRINE_HURDLE_TEXT34,Guérison avec succès !
 TIME_CLOISTER_TEXT88,在此迴廊中進行關卡挑戰或觸發挑戰卡時，根據積分增加勇氣、魅力、知識
 TIME_CLOISTER_TEXT89,當前加成
 TIME_CLOISTER_TEXT90,當前積分
 TIME_CLOISTER_TEXT91,加成內容
-SHRINE_HURDLE_TEXT35,成功獲得試煉金幣
-SHRINE_HURDLE_TEXT36,已達到最高等級
-SHRINE_HURDLE_TEXT37,所選戰姬生命過高，是否繼續回復?
-IS_IN_SHRINE_FORMATION,試煉中無法進行該操作
+SHRINE_HURDLE_TEXT35,Jeton de Dojo obtenu !
+SHRINE_HURDLE_TEXT36,Niveau Max
+SHRINE_HURDLE_TEXT37,La Fille que vous avez choisie n'a pas perdu beaucoup de PV. Voulez-vous continuer ?
+IS_IN_SHRINE_FORMATION,Cette opération n'est pas accessible lors d'une Épreuve !
 TIME_CLOISTER_TEXT92,獲取量設置
 TIME_CLOISTER_TEXT93,觀測結算時，對應道具的獲取量增加
 TIME_CLOISTER_TEXT94,無加成
 TIME_CLOISTER_TEXT95,{1}種道具加成{2}
 TIME_CLOISTER_TEXT96,設置
-ACTIVITY_LAFULI_CASTLE_HELP,主界面的help
-ACTIVITY_LAFULI_CASTLE_TEXT01,進度
-ACTIVITY_LAFULI_CASTLE_TEXT02,挑戰任務
-ACTIVITY_LAFULI_CASTLE_TEXT03,堆沙{1}次後可抽取自選陣營的5星戰姬
-ACTIVITY_LAFULI_CASTLE_TEXT04,選擇一個陣營并領取戰姬獎勵：
-ACTIVITY_LAFULI_CASTLE_HELP02,战姬奖励窗口的help
-ACTIVITY_LAFULI_CASTLE_TEXT05,战姬奖励窗口title
-ACTIVITY_LAFULI_CASTLE_TEXT06,挑战任务窗口title
-ACTIVITY_LAFULI_CASTLE_TEXT07,每獲得
-ACTIVITY_LAFULI_CASTLE_TEXT08,可額外獲得1份天空沙，至多獲得{1}份。
-ACTIVITY_LAFULI_CASTLE_TEXT09,領取上限
-ACTIVITY_LAFULI_CASTLE_TEXT10,任務獎勵透過信件發放
-ACTIVITY_LAFULI_CASTLE_TEXT11,完成上限
+ACTIVITY_LAFULI_CASTLE_HELP,"1. Durant cet événement, aidez Lavli à construire le château de ses rêves avec du Sable Fin et du Sable Céleste !|2. Pour chaque [c][0069cc]20[-][/c] Sables Fins ou Sables Célestes utilisés, obtenez aléatoirement une Récompense de [c][0069cc]Fille 5 étoiles[-][/c] de la Maison (Fantôme/Humain/Monstre/Fée) que vous aurez choisi au préalable.|3. Le Sable Fin est utilisé pour la construction des murs du château. Après avoir utilisé une certaine quantité de Sable Fin, vous pourrez récupérer les récompenses pour avoir construit les murs du château.|4. Le Sable Céleste est utilisé pour la décoration du château. Après avoir utilisé une certaine quantité de Sable Céleste, vous pourrez récupérer les récompenses pour avoir décoré le château. |5. Après la fin de l’événement, les Sables Fins et les Sables Céleste non-utilisés seront automatiquement convertis en Pièces d’Or et envoyées par courrier, 1 Sable Fin = 100K Pièce d’Or, 1 Sable Céleste = 100K Pièce d’Or."
+ACTIVITY_LAFULI_CASTLE_TEXT01,Avancée
+ACTIVITY_LAFULI_CASTLE_TEXT02,Tâches
+ACTIVITY_LAFULI_CASTLE_TEXT03,Obtenez une [c][0069cc]Fille 5 étoiles[/c][-] de la Maison choisie pour chaque {1} [c][0069cc]Sables Fins[-][/c] ou [c][0069cc]Sable Célestes[-][/c] utilisés.
+ACTIVITY_LAFULI_CASTLE_TEXT04,Choisissez la Maison de la Fille 5 étoiles que vous voulez obtenir
+ACTIVITY_LAFULI_CASTLE_HELP02,"1. Pour chaque [c][0069cc]20[-][/c] Sables Fins ou Sables Célestes utilisés, obtenez aléatoirement une Récompense de [c][0069cc]Fille 5 étoiles[-][/c] de la Maison (Fantôme/Humain/Monstre/Fée) que vous aurez choisi au préalable.|2. La Fille obtenue vous seront envoyée en forme de Fragments."
+ACTIVITY_LAFULI_CASTLE_TEXT05,Récompense de Fille
+ACTIVITY_LAFULI_CASTLE_TEXT06,Tâches
+ACTIVITY_LAFULI_CASTLE_TEXT07,Pour chaque
+ACTIVITY_LAFULI_CASTLE_TEXT08,"obtenu, vous obtiendrez 1 Sable Céleste|({1} Sables Célestes au maximum)"
+ACTIVITY_LAFULI_CASTLE_TEXT09,Limite :
+ACTIVITY_LAFULI_CASTLE_TEXT10,Les récompenses seront envoyées directement à votre Sac
+ACTIVITY_LAFULI_CASTLE_TEXT11,Limite
+TIME_CLOISTER_TEXT97,水晶卡詳情
+TIME_CLOISTER_TEXT98,全部
+TIME_CLOISTER_TEXT99,水晶卡詳情幫助本文，helpbtn
+ACTIVITY_LAFULI_CASTLE_TEXT12,"1. Complétez les Tâches pour obtenir des récompenses.|2. Après avoir complété certaines Tâches, vous obtiendrez des Points de Tâche. Pour chaque Point de Tâche obtenu, vous recevrez 1 Sable Céleste ([c][0069cc]100[-][/c] Sables Célestes au maximum)"
+TIME_CLOISTER_TEXT100,戰鬥加成
+TIME_CLOISTER_TEXT101,戰鬥加成會在此迴廊的遭遇戰、關卡戰鬥中生效
+ACTIVITY_START_COUNT,Commence dans [c][9eff8b]{1}[-][/c]
+SHRINE_HURDLE_CLOSE_TIME,Fin du Dojo dans：
+SHRINE_HURDLE_OPEN_TIME,Ouverture du Dojo dans：
+SHRINE_HURDLE_TEXT38,PV actuels de vos Filles
+ACTIVITY_LAFULI_CASTLE_TEXT13,La limite a été atteinte !
+ACTIVITY_PROMOTION_LADDER_TEXT01,幫助文本
+ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
+ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
+ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證明增長為{2}
+ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT07,碎片
+ACTIVITY_PROMOTION_LADDER_TEXT08,確認
+ACTIVITY_PROMOTION_LADDER_TEXT09,每交換9個本體，所需的晉升證明增加5個
+ACTIVITY_PROMOTION_LADDER_TEXT10,未選擇交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT11,晉升證書不足
+ACTIVITY_PROMOTION_TEST_TEXT01,幫助文本
+ACTIVITY_PROMOTION_TEST_TEXT02,高級召喚次數
+ACTIVITY_PROMOTION_TEST_TEXT03,解鎖條件
+ACTIVITY_PROMOTION_TEST_TEXT04,獲得{1}個直升證明後解鎖
+ACTIVITY_PROMOTION_TEST_TEXT05,當前包含直升證明的禮包仍有購買次數，確認要購買此禮包嗎？
+SHRINE_NOTICE_TEXT06,Épreuve terminée !
+SHRINE_NOTICE_TEXT07,Point(s)
+SHRINE_HURDLE_TEXT39,Voulez-vous renoncer au Bonus ? Vous obtiendrez des Jetons de Dojo par défaut.
+TIME_CLOISTER_TEXT102,科技組-水晶
+TIME_CLOISTER_TEXT103,獲取方案:
+TIME_CLOISTER_TEXT104,卡牌詳情
+TIME_CLOISTER_TEXT105,戰鬥技能
+TIME_CLOISTER_TEXT106,購買卡牌換取積分
+TIME_CLOISTER_TEXT107,科技組-水晶幫助文本
+TIME_CLOISTER_TEXT108,Points :
+ACTIVITY_LAFULI_CASTLE_TEXT14,Voulez-vous obtenir {2} Fille(s) de la Maison {1} ?
+SHRINE_HURDLE_SHOP_TAB1,Achat
+SHRINE_HURDLE_SHOP_TAB2,Amélioration
+SHRINE_HURDLE_SELECT1,Voulez-vous entrer dans l'Étape Combat ?
+SHRINE_HURDLE_SELECT2,Voulez-vous entrer dans l'Étape Récompense ?
+SHRINE_HURDLE_SELECT3,Voulez-vous entrer dans l'Étape Boutique ?
+SHRINE_HURDLE_SELECT4,Voulez-vous entrer dans l'Étape Guérison ?

@@ -14,12 +14,12 @@ id,name,charge_ios,charge,currency,show_name
 13,Pack de Niv.78,49.99,54.99,€,Pack de Niv.78
 14,Pack d'Entraînement de Filles 4 étoiles,4.99,5.49,€,Pack d'Entraînement de Filles 4 étoiles
 15,Pack d'Entraînement de Filles 5 étoiles,9.99,10.99,€,Pack d'Entraînement de Filles 5 étoiles
-16,Pack Mensuel 1,4.99,5.49,€,Pack\nMensuel
-17,Pack Mensuel 2,9.99,10.99,€,Pack\nMensuel
-18,Pack Mensuel 3,29.99,32.99,€,Pack\nMensuel
-19,Pack Mensuel 4,49.99,54.99,€,Pack\nMensuel
-20,Pack Mensuel 5,69.99,74.99,€,Pack\nMensuel
-89,Pack Mensuel 7,99.99,109.99,€,Pack\nMensuel
+16,Pack Mensuel 1,4.99,5.49,€,Pack Mensuel
+17,Pack Mensuel 2,9.99,10.99,€,Pack Mensuel
+18,Pack Mensuel 3,29.99,32.99,€,Pack Mensuel
+19,Pack Mensuel 4,49.99,54.99,€,Pack Mensuel
+20,Pack Mensuel 5,69.99,74.99,€,Pack Mensuel
+89,Pack Mensuel 7,99.99,109.99,€,Pack Mensuel
 22,Pack Hebdomadaire 1,9.99,10.99,€,Pack Hebdomadaire
 23,Pack Hebdomadaire 2,19.99,21.99,€,Pack Hebdomadaire
 24,Pack Hebdomadaire 3,49.99,54.99,€,Pack Hebdomadaire
@@ -42,12 +42,12 @@ id,name,charge_ios,charge,currency,show_name
 40,Abonnement Hebdomadaire,0.99,0.99,€,Abonnement Hebdomadaire
 41,Mensuel,3.99,4.49,€,Mensuel
 42,Trimestriel,9.99,10.49,€,Trimestriel
-43,Pack Mensuel 1,4.99,5.49,€,Pack\nMensuel
-44,Pack Mensuel 2,9.99,10.99,€,Pack\nMensuel
-45,Pack Mensuel 3,29.99,32.99,€,Pack\nMensuel
-46,Pack Mensuel 4,49.99,54.99,€,Pack\nMensuel
-47,Pack Mensuel 5,69.99,74.99,€,Pack\nMensuel
-48,Pack Mensuel 6,79.99,89.99,€,Pack\nMensuel
+43,Pack Mensuel 1,4.99,5.49,€,Pack Mensuel
+44,Pack Mensuel 2,9.99,10.99,€,Pack Mensuel
+45,Pack Mensuel 3,29.99,32.99,€,Pack Mensuel
+46,Pack Mensuel 4,49.99,54.99,€,Pack Mensuel
+47,Pack Mensuel 5,69.99,74.99,€,Pack Mensuel
+48,Pack Mensuel 6,79.99,89.99,€,Pack Mensuel
 49,Pack Hebdomadaire 1,9.99,10.99,€,Pack Hebdomadaire
 50,Pack Hebdomadaire 2,19.99,21.99,€,Pack Hebdomadaire
 51,Pack Hebdomadaire 3,49.99,54.99,€,Pack Hebdomadaire
@@ -206,8 +206,8 @@ id,name,charge_ios,charge,currency,show_name
 1090303,Pack Surprise de Capsules,99.99,109.99,€,Pack Bonus de Capsules
 90,Pack Hebdomadaire 6,99.99,109.99,€,Pack Hebdomadaire
 88,4000 Diamants,79.99,89.99,€,Pack de Gemmes
-21,Pack Mensuel 6,79.99,89.99,€,Pack\nMensuel
-87,Pack Hebdomadaire 5,79.99,89.99,€,Pack Hebdo
+21,Pack Mensuel 6,79.99,89.99,€,Pack Mensuel
+87,Pack Hebdomadaire 5,79.99,89.99,€,Pack Hebdomadaire
 105,Avis d'Admission,19.99,21.99,€,Avis d'Admission
 92,Pack\nQuotidien 1,0.99,1.09,€,Pack\nQuotidien
 93,Pack\nQuotidien 2,1.99,2.29,€,Pack\nQuotidien
@@ -617,3 +617,5 @@ id,name,charge_ios,charge,currency,show_name
 402,Pack Surprise de Skin 2,49.99,54.99,€,Pack Surprise de Skin
 403,Pack de Lord Dracula,19.99,21.99,€,Pack de Lord Dracula
 404,Capsules de Débutant,29.99,32.99,€,Capsules de Débutant
+405,Pack Hebdomadaire 7,29.99,32.99,€,Pack Hebdomadaire
+406,Pack Mensuel 8,69.99,74.99,€,Pack Mensuel

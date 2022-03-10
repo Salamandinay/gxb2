@@ -3239,7 +3239,7 @@ ACTIVITY_RETURN_CDKEY,Mein Einladungscode:
 ACTIVITY_RETURN_COMPANY_LIST,Partnerliste:
 HOUSE_ITEM_TYPE_10,Hintergrund
 EDIT_PICTURE_MEMBER,Derzeitiges Hintergrundmädchen
-EDIT_PICTURE_SHOWRANDOM,Beliebig auswählen
+EDIT_PICTURE_SHOWRANDOM,Zufällig anzeigen
 EDIT_PICTURE_LIMIT,Maximal 6 Mädchen
 EDIT_PICTURE_SELECT,Bitte wähle mindestens 1 Mädchen aus
 ACTIVITY_PLAYER_RETURN_ALLTIME,Endet in:
@@ -4914,7 +4914,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,Lord Dracula -\nErwachen
+WARMUP_ARENA_TASK_INFO_2,Cygmar ·\nTalentierte Hackerin
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -5136,7 +5136,7 @@ Diamant: 8x Backup-Mädchen der Frontline, 16x Backup-Mädchen der Backline, 5x 
 (5) Entsprechend der Stufe des gewählten Gegners wird die Anzahl von deinen verfügbaren Backup-Mädchen in diesem Kampf festgelegt.
 (6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, dann werden entsprechend der Reihenfolge in dieser Stufe (Großmeister) so lange Gruppen aus 64 Spielern gebildet, bis die Anzahl der Spieler nicht mehr ausreicht, um eine Gruppe zu erstellen (<64). Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
 (2) Täglich findet 1 Kampf der KO-Phase statt. In den letzten 2 Stunden vor dem Beginn jedes Kampfes können die Aufstellungen nicht mehr angepasst werden. Jeden Tag von 0 Uhr bis 2 Uhr (UTC/GMT 0) ist die Abrechnungsphase, während der die Aufstellungen nicht konfiguriert oder gespeichert werden können.
-(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch den Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
+(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch den Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt. Die Buffs durch die Glocken unter ""Tsuruga Schrein"" wirken sich nicht in KO-Phase und Finale aus.
 (4) HP und Angriffswert der Mädchen werden nach ihrem jeweiligen Sternlevel, auf das sie der Spieler gelevelt hat, mit einem bestimmten Wert multipliziert. Details wie folgt:|  5-Sterne: 50%%, 6-Sterne: 51%%, 7-Sterne: 53%%|  8-Sterne: 55%%, 9-Sterne: 60%%, 10-Sterne: 65%%|  11-Sterne: 70%%, 12-Sterne: 75%%, 13-Sterne: 80%%|  14-Sterne: 90%%, 15-Sterne: 100%%.|6. Ruhezeit|(1) Die 2 Tage nach dem Ende des Finales sind die Ruhezeit.|7. Ehrenschloss|(1) Die TOP8 Spieler aus jeder Kampfgruppe jeder Saison werden einen Platz im Ehrenschloss erhalten.
 (2) Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.|8. Tägliche Aufgabe|(1) Während der Qualifikationsphase können die Spieler die täglichen Aufgaben in der Qualifikationsphase abschließen, um Belohnungen zu erhalten.|9. Abrechnungsbelohnungen|(1) Nach dem Ende der Qualifikationsphase erhältst du entsprechend deines Rangs in der Stufe Belohnungen.
 Tipp: Du musst während der Qualifikationsrunde 10 oder mehr Kämpfe abgeschlossen haben,  um diese Abrechnungsbelohnungen erhalten zu können.
@@ -5743,32 +5743,47 @@ SHRINE_NOTICE_TAB3,Belohnungen
 SHRINE_NOTICE_TAB4,Erfolge
 SHRINE_NOTICE_TEXT01,Restliche Zeit
 SHRINE_NOTICE_TEXT02,Gesamtpunkte
-SHRINE_NOTICE_TEXT03,Akt. Rang:
+SHRINE_NOTICE_TEXT03,Rang: [c][0069cc]{1}[-][/c]
 SHRINE_NOTICE_TEXT04,Akt. Belohnungen:
 SHRINE_NOTICE_TEXT05,Kein Rang
 SHRINE_POOL_TEXT01,Saisonal
 SHRINE_POOL_TEXT02,Permanent
 SHRINE_POOL_TEXT03,Waren erneuert
-SHRINE_HURDLE_HELP,"Tsuruga Schrein||Prüfung der Götter - Saisonale Verfügbarkeit|Die Prüfung der Götter wird saisonal veranstaltet und jede Saison dauert 14 Tage, darunter sind 12 Tage für den Kampf und 2 Tage als Ruhezeit.||Regeln zum Beitritt|1. Zu Beginn jeder Saison bekommst du 15 Einladungskarten (maximal 15x erhältlich).|2. In jeder Saison gibt es 3 verschiedene Prüfungen, bei denen es jeweils verschiedene Verstärkungen gibt, die deinen Mädchen verschiedene Buffs verleihen. Du kannst manuell eine Prüfung auswählen und jedes Mal, wenn du eine Prüfung beginnst, wird 1 Einladungskarte verwendet.|3. In den Prüfungen können nur Mädchen ab 10-Sterne verwendet werden und deren Attribute, Ausrüstungen, Potenziale usw. werden beibehalten.||Schwierigkeitsgrad|1. Fängst du mit einer Prüfung an, musst du den Schwierigkeitsgrad dieser Prüfung bestimmen.|2. Je schwerer die Prüfung ist, desto stärker werden die Gegner in dieser Prüfung und desto höher werden die erhaltenen Punkte nach dem Sieg.|3. Mit der Erhöhung deiner erhaltenen Punkte in der Prüfung wird auch der max. verfügbare Schwierigkeitsgrad erhöht.||Regeln der Prüfung|In der Prüfung gibt es insgesamt 16 Stufen, die inhaltlich in Kampf, Belohnung, Shop, Heilung und Boss unterteilt werden.|Kampfstufe|1. In der Kampfstufe werden die Gegner zufällig erscheinen. Tippe auf die Gegner, um Details zu ihnen zu prüfen. Hier kannst du manuell deine Mädchen aufstellen, um die Gegner zu besiegen und Punkte zu erhalten.|2. Jeder Kampf geht maximal 15 Runden. Besiege alle Gegner in den 15 Runden, um Punkte zu erhalten. Ansonsten wird der Kampf als Niederlage gewertet (Alle deine Mädchen sterben oder der Kampf dauert länger als 15 Runden.).|3. Nach dem Ende eines Kampfes werden die HP und die Energie deiner Mädchen nicht zurückgesetzt.|4. Hast du den Kampf verloren, werden die HP der Gegner zurückgesetzt.|Belohnungsstufe|1. In der Belohnungsstufe werden 3 zufällige Buffs erscheinen und du kannst einen davon auswählen.|2. Du kannst auch die Auswahl ablehnen und stattdessen Prüfungsmünzen erhalten, die im Shop verwendet werden können.|Shop-Stufe|1. Buffs kaufen: 3 zufällige Buffs werden im Tausch gegen die Prüfungsmünzen angeboten.|2. Buffs leveln: 3 zufällige erhaltene Buffs können mit Prüfungsmünzen gelevelt werden. Jeder Buff kann maximal 2-mal gelevelt werden.|Heilungsstufe|1. In der Heilungsstufe kannst du die HP deiner Mädchen regenerieren oder die gestorbenen Mädchen wiederbeleben.|Boss|1. Den Boss kannst du nur einmal herausfordern. Nach dem Ende der Herausforderung gilt die laufende Prüfung als erfolgreich abgeschlossen.|2. Der Boss kann nicht getötet werden. Die Punkte werden nach dem von deinen Mädchen zugefügten Schaden berechnet.||Punkte und Rangliste|1. Jede Saison werden zwei Ranglisten erstellt: Eine für die höchste Punktzahl aus einer der drei Prüfungen und eine für die Gesamtpunktzahl aus allen drei Prüfungen. Nach dem Ende der Kampfphase erhältst du entsprechend deines Rangs Belohnungen.||Aufgaben|1. Die Aufgaben werden zu Beginn jeder Saison erneuert.||Teich der Wünsche|1. Verwende die Papierkraniche, um Items einzutauschen.|2. Die saisonalen Waren werden zu Beginn jeder Saison erneuert und die permanenten Waren werden nicht erneuert."
+SHRINE_HURDLE_HELP,"
+Tsuruga Schrein
+
+Prüfung der Götter - Saisonale Verfügbarkeit|Die Prüfung der Götter wird saisonal veranstaltet und jede Saison dauert 14 Tage, darunter sind 12 Tage für den Kampf und 2 Tage als Ruhezeit.
+
+Regeln zum Beitritt|1. Zu Beginn jeder Saison bekommst du 15 Einladungen (maximal 15x erhältlich).|2. In jeder Saison gibt es 3 verschiedene Prüfungen, bei denen es jeweils verschiedene Szenarien gibt, die deinen Mädchen verschiedene Buffs/Debuffs verleihen. Du kannst manuell eine Prüfung auswählen und jedes Mal, wenn du eine Prüfung beginnst, wird 1 Einladung verwendet.|3. In den Prüfungen können nur Mädchen ab 10-Sterne verwendet werden und deren Attribute, Ausrüstungen, Potenziale usw. werden beibehalten.
+
+Schwierigkeitsgrad|1. Fängst du mit einer Prüfung an, musst du den Schwierigkeitsgrad dieser Prüfung bestimmen.|2. Je schwerer die Prüfung ist, desto stärker werden die Gegner in dieser Prüfung und desto höher werden die erhaltenen Punkte nach dem Sieg.|3. Mit der Erhöhung deiner erhaltenen Punkte in der Prüfung wird auch der max. verfügbare Schwierigkeitsgrad erhöht.
+
+Regeln der Prüfung|In der Prüfung gibt es insgesamt 15 Phasen, die inhaltlich in Kampf, Belohnung, Shop, Heilung und Boss unterteilt werden.|Kampfphase|1. In der Kampfphase werden die Gegner zufällig erscheinen. Tippe auf die Gegner, um Details zu ihnen zu prüfen. Hier kannst du manuell deine Mädchen aufstellen, um die Gegner zu besiegen und Punkte zu erhalten.|2. Jeder Kampf geht maximal 15 Runden. Besiege alle Gegner in den 15 Runden, um Punkte zu erhalten. Ansonsten wird der Kampf als Niederlage gewertet (Alle deine Mädchen sterben oder der Kampf dauert länger als 15 Runden.).|3. Nach dem Ende eines Kampfes werden die HP und die Energie deiner Mädchen nicht zurückgesetzt.|4. Hast du den Kampf verloren, werden die HP der Gegner zurückgesetzt.|Belohnungsphase|1. In der Belohnungsphase werden 3 zufällige Buffs erscheinen und du kannst einen davon auswählen.|2. Du kannst auch die Auswahl ablehnen und stattdessen Prüfungsmünzen erhalten, die im Shop verwendet werden können.|Shopphase|1. Buffs kaufen: 3 zufällige Buffs werden im Tausch gegen die Prüfungsmünzen angeboten.|2. Buffs leveln: 3 zufällige erhaltene Buffs können mit Prüfungsmünzen gelevelt werden. Jeder Buff kann maximal 2-mal gelevelt werden.|Heilungsphase|1. In der Heilungsphase kannst du die HP deiner Mädchen regenerieren oder die gestorbenen Mädchen wiederbeleben.|Boss|1. Den Boss kannst du nur einmal herausfordern. Nach dem Ende der Herausforderung gilt die laufende Prüfung als erfolgreich abgeschlossen.|2. Der Boss kann nicht getötet werden. Die Punkte werden nach dem von deinen Mädchen zugefügten Schaden berechnet.
+
+Punkte und Rangliste|1. Jede Saison werden zwei Ranglisten erstellt: Eine für die höchste Punktzahl aus einer der drei Prüfungen und eine für die Gesamtpunktzahl aus allen drei Prüfungen. Nach dem Ende der Kampfphase erhältst du entsprechend deines Rangs Belohnungen.
+
+Aufgaben|1. Die Aufgaben werden zu Beginn jeder Saison erneuert.
+
+Teich der Wünsche|1. Verwende die Papierkraniche, um Items einzutauschen.|2. Die saisonalen Waren werden zu Beginn jeder Saison erneuert und die permanenten Waren werden nicht erneuert."
 SHRINE_HURDLE_DIFFICULTY_HELP,"1. Zu Beginn der Prüfung musst du einen Schwierigkeitsgrad für diese Prüfung wählen.|2. Je schwerer die Prüfung ist, desto stärker werden die Gegner in dieser Prüfung und desto höher werden die erhaltenen Punkte nach dem Sieg.|3. Mit der Erhöhung deiner erhaltenen Punkte in der Prüfung wird auch der max. verfügbare Schwierigkeitsgrad erhöht."
-SHRINE_HURDLE_TEXT01,Verstärkung
+SHRINE_HURDLE_TEXT01,Szenarien
 SHRINE_HURDLE_TEXT02,Höchste Punkte
 SHRINE_HURDLE_TEXT03,Schwierigkeitsgrad
 SHRINE_HURDLE_TEXT04,Eintreten
-SHRINE_HURDLE_TEXT05,"Willst du sicher 1 Einladungskarte verwenden, um die Prüfung zu beginnen? (Attribute und Zustand deiner Mädchen im Kampf richten sich nach denen beim Eintreten der Prüfung.)"
+SHRINE_HURDLE_TEXT05,"Willst du sicher 1 Einladung verwenden, um die Prüfung zu beginnen? \nAttribute und Zustand deiner Mädchen im Kampf richten sich nach denen beim Betreten der Prüfung."
 SHRINE_HURDLE_TEXT06,Empfohlener Grad:
 SHRINE_HURDLE_TEXT07,Du hast einen hohen Schwierigkeitsgrad gewählt. Fortfahren?
 SHRINE_HURDLE_TEXT08,Prüfungsdetails
-SHRINE_HURDLE_TEXT09,Stufe
+SHRINE_HURDLE_TEXT09,Phase
 SHRINE_HURDLE_TEXT10,Punkte: {1}
 SHRINE_HURDLE_TEXT11,Erhaltene Buffs
 SHRINE_HURDLE_TEXT12,Kampfverlauf
 SHRINE_HURDLE_TEXT13,Beliebte Mädchen
 SHRINE_HURDLE_TEXT14,Keine Daten
-SHRINE_HURDLE_TEXT15,Stufe {1}
+SHRINE_HURDLE_TEXT15,Phase {1}
 SHRINE_HURDLE_TEXT16,Gegner
 SHRINE_HURDLE_TEXT17,Wählen
-SHRINE_HURDLE_TEXT18,Ablehnen
+SHRINE_HURDLE_TEXT18,Aufgeben
 SHRINE_HURDLE_TEXT19,Kaufen
 SHRINE_HURDLE_TEXT20,Leveln
 SHRINE_HURDLE_TEXT21,Gekauft
@@ -5789,14 +5804,18 @@ PERSON_DRESS_BUFFS_TIPS_7,Keine Boni durch rosa Outfits
 PERSON_DRESS_RELATED_DRESS,Betroffene Outfits
 ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Szenebelohnungen
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Item zum Entsperren
-CHIME_HELP,"1. Am Baum der Ahnen hängen verschiedenste Glocken, die deinen Mädchen die unterschiedlichsten Buffs verleihen können.|2. Sammle die Fragmente, um die entsprechenden Glocken zu entsperren. Verwende den mystischen Staub und die mystischen Talismane, um die Glocken zu leveln."
+CHIME_HELP,"
+1. Am Baum der Ahnen hängen verschiedenste Glocken, die deinen Mädchen die unterschiedlichsten Buffs verleihen können und diese Buffs gelten permanent für nahezu alle Kämpfe.|2. Sammle die Glockenfragmente, um die entsprechenden Glocken zu entsperren. Verwende den mystischen Staub und die mystischen Talismane, um die Glocken zu verbessern.
+Durchs Verbessern kann der Glockenwert der Glocken und dadurch deren Grundattribute erhöht werden. Maximal kann der Glockenwert auf 100%% erhöht werden.
+Hat der Glockenwert einen bestimmten Wert erreicht, werden weitere Effekte der Glocke aktiviert.
+Hat der Glockenwert 100%% erreicht und wurden alle Effekt aktiviert, können die Glocken erweckt werden.|3. Die Glockenfragmente und Ressourcen zum Leveln der Glocken können unter ""Schwarzes Brett"" und ""Teich der Wünsche"" (beides unter ""Tsuruga Schrein"") erhalten werden."
 CHIME_ATLAS,Galerie
-CHIME_BAG,Fragmente
+CHIME_BAG,Fragment
 CHIME_TAB1,Details
-CHIME_TAB2,Aufladen
+CHIME_TAB2,Verbessern
 CHIME_TAB3,Aktivieren
 CHIME_TAB4,Erwecken
-CHIME_BUTTON1,Aufladen
+CHIME_BUTTON1,Verbessern
 CHIME_BUTTON2,Aktivieren
 CHIME_BUTTON3,Erwecken
 CHIME_TEXT01,Glockenwert
@@ -5833,3 +5852,69 @@ TIME_CLOISTER_TEXT88,"Forderst du in diesem Korridor die Stufen heraus oder lös
 TIME_CLOISTER_TEXT89,Aktuelle Buffs
 TIME_CLOISTER_TEXT90,Aktuelle Punkte
 TIME_CLOISTER_TEXT91,Buff-Details
+SHRINE_HURDLE_TEXT35,Prüfungsmünzen erhalten
+SHRINE_HURDLE_TEXT36,Max. Level erreicht
+SHRINE_HURDLE_TEXT37,Das Mädchen hat noch relativ hohe HP. Willst du trotzdem sie heilen?
+IS_IN_SHRINE_FORMATION,Während der Prüfung nicht möglich
+TIME_CLOISTER_TEXT92,Bonus wählen
+TIME_CLOISTER_TEXT93,Beim Abrechnen des Ansehens werden die erhaltenen Mengen der entsprechenden Items erhöht.
+TIME_CLOISTER_TEXT94,Kein Bonus
+TIME_CLOISTER_TEXT95,Menge an {1}x Item(s) um {2} erhöhen
+TIME_CLOISTER_TEXT96,Wählen
+ACTIVITY_LAFULI_CASTLE_HELP,"1. Verwende den ""Strandsand"" und den ""Himmelssand"", um Luvly ein schönes Traumschloss aufzubauen!|2. Alle [c][0069cc]20x[-][/c] ""Strandsand"" oder ""Himmelssand"" kannst du 1 zufälliges [c][0069cc]5-Sterne Mädchen[-][/c] einer gewünschten Fraktion (außer Dämonen- und Engel-Fraktion) ziehen.|3. Der ""Strandsand"" eignet sich aufgrund seiner Haltbarkeit für das Bauen der Schlossmauern. Der Menge des verwendeten ""Strandsandes"" entsprechend erhältst du die Belohnungen zur Schlossmauer.|4. Der ""Himmelssand"" eignet sich aufgrund seiner vielen Farbvarianten für die Dekoration des Schlosses. Der Menge des verwendeten ""Himmelssandes"" entsprechend erhältst du die Belohnungen zur Dekoration.|5. Nach dem Ende des Events werden die noch nicht verwendeten Eventitems, der ""Strandsand"" und der ""Himmelssand"", per Mail recycelt. Jeder Sand entspricht 100k Münzen."
+ACTIVITY_LAFULI_CASTLE_TEXT01,Fortschritt
+ACTIVITY_LAFULI_CASTLE_TEXT02,Aufgaben
+ACTIVITY_LAFULI_CASTLE_TEXT03,Alle {1}x [c][0069cc]Strandsand[-][/c] oder [c][0069cc]Himmelssand[-][/c] kannst du 1 zufälliges [c][0069cc]5-Sterne Mädchen[-][/c] einer gewollten Fraktion ziehen.
+ACTIVITY_LAFULI_CASTLE_TEXT04,Wähle eine Fraktion aus und schnapp dir dein Mädchen:
+ACTIVITY_LAFULI_CASTLE_HELP02,"1. Alle [c][0069cc]20x[-][/c] ""Sandstrand"" oder ""Himmelssand"" kannst du 1 [c][0069cc]5-Sterne Mädchen[-][/c] einer gewünschten Fraktion (außer Dämonen- und Engel-Fraktion) ziehen.|2. Die gezogenen Mädchen werden in Form von Fragmenten gesendet."
+ACTIVITY_LAFULI_CASTLE_TEXT05,Mädchenbelohnung
+ACTIVITY_LAFULI_CASTLE_TEXT06,Aufgaben
+ACTIVITY_LAFULI_CASTLE_TEXT07,Pro
+ACTIVITY_LAFULI_CASTLE_TEXT08,"erhältst du 1 extra ""Himmelssand"", max. {1}x."
+ACTIVITY_LAFULI_CASTLE_TEXT09,Limit
+ACTIVITY_LAFULI_CASTLE_TEXT10,Die Belohnungen werden direkt in deinen Rucksack gesendet.
+ACTIVITY_LAFULI_CASTLE_TEXT11,Limit
+TIME_CLOISTER_TEXT97,水晶卡詳情
+TIME_CLOISTER_TEXT98,全部
+TIME_CLOISTER_TEXT99,水晶卡詳情幫助本文，helpbtn
+ACTIVITY_LAFULI_CASTLE_TEXT12,"1. Schließe die Aufgaben ab, um reichhaltige Belohnungen zu erhalten.|2. Beim Abschließen einiger Aufgaben erhältst du zusätzliche Aufgabenpunkte und jeder Punkt gibt dir einen zusätzlichen ""Himmelssand"", maximal [c][0069cc]100x[-][/c] erhältlich."
+TIME_CLOISTER_TEXT100,戰鬥加成
+TIME_CLOISTER_TEXT101,戰鬥加成會在此迴廊的遭遇戰、關卡戰鬥中生效
+ACTIVITY_START_COUNT,Startet in [c][9eff8b]{1}[-][/c]
+SHRINE_HURDLE_CLOSE_TIME,Prüfung endet in:
+SHRINE_HURDLE_OPEN_TIME,Prüfung startet in:
+SHRINE_HURDLE_TEXT38,HP
+ACTIVITY_LAFULI_CASTLE_TEXT13,Limit erreicht
+ACTIVITY_PROMOTION_LADDER_TEXT01,幫助文本
+ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
+ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
+ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證明增長為{2}
+ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT07,碎片
+ACTIVITY_PROMOTION_LADDER_TEXT08,確認
+ACTIVITY_PROMOTION_LADDER_TEXT09,每交換9個本體，所需的晉升證明增加5個
+ACTIVITY_PROMOTION_LADDER_TEXT10,未選擇交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT11,晉升證書不足
+ACTIVITY_PROMOTION_TEST_TEXT01,幫助文本
+ACTIVITY_PROMOTION_TEST_TEXT02,高級召喚次數
+ACTIVITY_PROMOTION_TEST_TEXT03,解鎖條件
+ACTIVITY_PROMOTION_TEST_TEXT04,獲得{1}個直升證明後解鎖
+ACTIVITY_PROMOTION_TEST_TEXT05,當前包含直升證明的禮包仍有購買次數，確認要購買此禮包嗎？
+SHRINE_NOTICE_TEXT06,Prüfung beendet
+SHRINE_NOTICE_TEXT07,Punkte
+SHRINE_HURDLE_TEXT39,Willst du den Buff sicher nicht und stattdessen Prüfungsmünzen erhalten?
+TIME_CLOISTER_TEXT102,科技組-水晶
+TIME_CLOISTER_TEXT103,獲取方案:
+TIME_CLOISTER_TEXT104,卡牌詳情
+TIME_CLOISTER_TEXT105,戰鬥技能
+TIME_CLOISTER_TEXT106,購買卡牌換取積分
+TIME_CLOISTER_TEXT107,科技組-水晶幫助文本
+TIME_CLOISTER_TEXT108,積分:
+ACTIVITY_LAFULI_CASTLE_TEXT14,Willst du sicher {2} Mädchen aus dem Haus der {1} bekommen?
+SHRINE_HURDLE_SHOP_TAB1,Kaufen
+SHRINE_HURDLE_SHOP_TAB2,Leveln
+SHRINE_HURDLE_SELECT1,Willst du sicher zur Kampfphase gehen?
+SHRINE_HURDLE_SELECT2,Willst du sicher zur Belohnungsphase gehen?
+SHRINE_HURDLE_SELECT3,Willst du sicher zur Shopphase gehen?
+SHRINE_HURDLE_SELECT4,Willst du sicher zur Heilungsphase gehen?
