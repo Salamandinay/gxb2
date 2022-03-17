@@ -1,7 +1,7 @@
 id,name,from,content
 1,Arène Journalière,Courrier de l'Arène,"Félicitations, vous avez atteint la {2}e place dans l'Arène du {1}, voici vos récompenses !"
 2,Fin de Saison,Courrier de l'Arène,"En tant que représentant de l'Académie Yume, je voudrais vous féliciter pour avoir atteint la {1}e place dans l'Arène, voici vos récompenses !"
-3,Bonus de Nouveau Serveur,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gemme *50, Ticket du Distributeur *2, Ticket d'Arène *2, voici vos récompenses !"
+3,Bonus de Nouveau Serveur,Courrier du Système,"Durant la période des événements, connectez-vous quotidiennement et obtenez Gemme *50, Ticket du Distributeur *2, Ticket d'Arène *2.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 4,Carte Mensuelle,Carte Mensuelle,"Félicitations ! Du {1}, vous obtiendrez 370 Gemmes tous les jours à 00:00 (GMT 0). Les Gemmes du premier jour vous seront envoyées directement après l'achat."
 5,Carte Mensuelle,Carte Mensuelle,"Cher Senpai VIP{1}, voici vos récompenses de la journée. Votre Carte Mensuelle expirera dans {2} jours."
 6,La Carte Mensuelle a expiré,Carte Mensuelle,"Cher Senpai, votre Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 13 fois plus de Gemmes qu'en achetant individuellement."
@@ -9,9 +9,9 @@ id,name,from,content
 8,Petite Carte Mensuelle,Petite Carte Mensuelle,"Cher Senpai, voici vos récompenses. Votre Petite Carte Mensuelle expirera dans {1} jours."
 9,Petite Carte Mensuelle a expiré,Petite Carte Mensuelle,"Dear Senpai, votre Petite Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 10 fois plus de Gemmes qu'en achetant individuellement."
 10,Recruter une Fille,Recrutement,Félicitations vous avez recruté {1} Filles durant l'événement. Voici vos récompenses.
-11,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Capsule Avancée *3.\nVoici vos récompenses, veuillez les récupérer !"
+11,Récompense Quotidienne,Courrier du Système,"Durant la période des événements, connectez-vous quotidiennement et obtenez Capsule Avancée *3, Ticket Magique *2.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 12,Récompenses de Capsules utilisées,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement Capsule de Nouvelle Fille, veuillez collecter vos récompenses !"
-13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau *1 et Énergie (Machine à Sous) *10. Voici vos récompenses, veuillez les récupérer !"
+13,Récompense Quotidienne,Courrier du Système,"Durant la période des événements, connectez-vous quotidiennement et obtenez Sceau *1 et Énergie (Machine à Sous) *10.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 14,Recrutement,Courrier du Système,"Félicitations vous avez obtenu {1} points pendant l'événement - Examen d'admission, voici vos récompenses, veuillez les récupérer !"
 15,Combat de BOSS,Courrier du Système,"Félicitations pour avoir tué l'Ami BOSS, voici vos récompenses"
 16,Ami BOSS,Courrier du Système,"L'Ami BOSS a été vaincu, félicitations vous avez obtenus les récompenses suivantes"
@@ -110,7 +110,11 @@ id,name,from,content
 109,Récompenses de Priez aux étoiles,Courrier du Système,Félicitation ! Vous avez atteint l'objectif de l'événement Priez aux étoiles. Veuillez collecter vos récompenses !
 110,Récompense de Défi de Vitesse,Courrier du Système,"Félicitation ! Vous avez atteint la {1}e place dans Mode de Vitesse, veuillez collecter vos récompenses !"
 111,Récompenses d'Évaluation P￼articulière,Courrier du Système,"Félicitations ! Vous avez accompli les tâches d'Évaluation Particulière, voici vos récompenses, veuillez les collecter !"
-112,Récupération d'objet d'événement,Courrier du Système,"Senpai, l'événement {1} est terminé. Vos {3} *{2} ont été récupérées. Voici vos récompenses, n'oubliez pas de les récupérer."
+112,Récupération d'objet d'événement,Courrier du Système,"
+Bonjour Senpai,
+L\'événement - {1} est à présent terminé.
+Vos objets restants {3} *{2} ont été convertis.
+Veuillez vos récompenses, Senpai~"
 113,Capsules de Filles,Courrier du Système,"Félicitations ! Vous avez obtenu {2} {1} fois dans l'événement de Capsule de Nouvelle Fille, voici vos récompenses !"
 114,Récompense d'événement Ballons Colorés,Courrier du Système,"Félicitations ! Vous avez atteint {1} d'Intimité lors de l'événement Ballons Colorés, veuillez récupérer les récompenses correspondantes."
 115,Récompense de Guerre de Maison,Courrier du Système,Félicitations ! Vous avez atteint la {1}e place lors de la Guerre de Maison de Festival Sportif de Yume (Compétition Normale). Voici vos récompenses.
@@ -130,7 +134,7 @@ id,name,from,content
 129,Récompense de Tâches du Retour,Courrier du Système,"Vous avez complété la Tâches du Retour, veuillez collecter les récompenses !"
 130,Récompense de Tâches Co-op.,Courrier du Système,"Vous avez complété la Tâches Co-op., veuillez collecter les récompenses !"
 131,Récompenses de Capsules à Souhait,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement de Capsules à Souhait, veuillez collecter les récompenses !"
-132,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Baguette *1. Voici votre récompense."
+132,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Baguette *1.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 133,Aventure Fantastique,Courrier du Système,"Félicitations ! Vous avez atteint Niveau.{1} dans l'Aventure Fantastique, voici vos récompenses, veuillez les collecter !"
 134,Nouveau Chef,Courrier de la Guilde,"Puisque {1} ne s'est pas connecté depuis 7 jours, le poste de chef a été automatiquement transféré par le système. {2} est maintenant le nouveau chef de la Guilde {3}."
 135,Rappel de la fin d'Arène,Courrier de l'Arène,"Cher Senpai, l'Arène se terminera dans 24 heures ! Rends-toi vite dans l'Arène pour prouver ta valeur !"
@@ -150,8 +154,12 @@ id,name,from,content
 149,Récompense de Débutant (1),Courrier du Système,"Senpai ! Félicitations ! Vous avez terminé les Tâches de 7 jours, voici les récompenses non collectées, n'oubliez pas de les récupérer !"
 150,Récompense de Débutant (2),Courrier du Système,"Félicitations Senpai ! Vous avez obtenu {1} point(s) dans l'événement de Tâches de 7 jours, voici vos récompenses non collectées, n'oubliez pas de les récupérer !"
 151,Récompense du Périple de Lavli,Courrier d'Événement,"Félicitations ! Vous avez collecté {1} Corails dans Le Périple de Lavli. Voici vos récompenses, veuillez les récupérer !"
-152,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Gouvernail *4, Gemme *150.\nVoici vos récompenses, veuillez les récupérer !"
-153,Récupération d'objet d'événement,Courrier du Système,"Bonjour Senpai,\nL'événement - {1} est déjà terminé.\nTous les {3} *{2} ont été récupéré(e)(s)."
+152,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Gouvernail *4, Gemme *150.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
+153,Récupération d'objet d'événement,Courrier du Système,"
+Bonjour Senpai,
+L\'événement - {1} est à présent terminé.
+Vos objets restants {3} *{2} ont été convertis en Pièce d\'Or.
+Veuillez les collecter, Senpai~"
 154,Récompenses du Classement,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans l'événement d'Exploration du Vieux Campus ! Voici vos récompenses.
 155,Récompense d'Exploration du Vieux Campus,Courrier du Système,"Bonjour senpai, \nL'événement Exploration du Vieux Campus est déjà terminé, voici vos récompenses non collectées, veuillez les récupérer !"
 156,Récompenses du Classement,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans l'événement d'Exploration du Vieux Campus ! Voici le cadre d'avatar exclusif {2} de 14 jours ! Vous pouvez le changer en touchant votre avatar !
@@ -188,7 +196,7 @@ Nous nous excusons pour la gêne occasionnée~"
 179,Offre de Guilde,Courrier du Système,"Senpai, [c][0069cc]{1}[-][/c] de votre Guilde a acheté un Pack limité de Guilde, tous les membres ont reçu un cadeau. Collectez le vôtre !"
 180,Classement de Cité aux Trésors,Courrier du Système,Félicitations Senpai ! Vous vous êtes classé {1}e dans l'événement de Cité aux Trésors ! Voici vos récompenses.
 181,Rappel de fin d'événement,Courrier du Système,"Bonjour Senpai, l'Événement - {1} prendra fin dans 24 heures ! N'oubliez pas d'y participer !"
-182,Récompenses de Cristal Insolite,Courrier du Système,"Félicitations ! Vous avez collecté Cristal Insolite *{1} dans l'événement - Aventure Insolite, voici vos récompenses ! Veuillez les récupérer !"
+182,Récompenses de Cristal Insolite,Courrier du Système,"Félicitations ! Vous avez collecté Cristal Insolite *{1} dans l'événement - Aventure Insolite.\nVoici vos récompenses, veuillez les récupérer~"
 183,Classement des Guildes - Îles Célestes,Courrier du Système,"Félicitations Senpai ! Votre Guilde s'est classée au rang {1}, voici le Cadre d'Avatar - {2} qui dure 28 jours ! Vous pouvez toucher votre avatar pour l'utiliser !"
 184,Retour à l'Académie - Récompenses Basiques,Courrier du Système,"Senpai, félicitations ! Vous avez obtenu {1} Points durant l'événement - Retour à l'Académie. Voici vos récompenses basiques, veuillez les récupérer !"
 185,Retour à l'Académie - Récompenses Supplémentaires,Courrier du Système,"Senpai, félicitations ! Vous avez obtenu {1} Points durant l'événement - Retour à l'Académie. Voici vos récompenses supplémentaires, veuillez les récupérer !"
@@ -240,4 +248,6 @@ Venez vite explorer la Cité aux Trésors avec elle !
 220,Les Pétards du Printemps,Courrier du Système,"Félicitations, Senpai !\nVous avez réalisé {1} Spectacle(s) de Feux d'artifice, voici vos récompenses, veuillez les récupérer !"
 221,Récompenses du Dojo,Courrier du Système,"Félicitations Senpai~ Vous vous êtes classé {1}e au Classement Global du Dojo, veuillez récupérer vos récompenses !"
 222,Récompenses du Dojo,Courrier du Système,"Félicitations Senpai~ Vous vous êtes classé {1}e au Classement de {2}, veuillez récupérer vos récompenses !"
-223,Le Château des Rêves de Lavli,Courrier du Système,"Cher Senpai, l'événement - Le Château des Rêves de Lavli a commencé, veuillez collecter des sables et aider Lavli à construire un château des rêves.\nVous avez déjà débloqué {1} Fille(s) 5 étoiles, {2} Fille(s) 6 étoiles , {3} Fille(s) 10 étoiles dans la Galerie.\nLes récompenses correspondantes vous ont été envoyées direcetement à votre Sac, veuillez les vérifier."
+223,Le Château des Rêves de Lavli,Courrier du Système,"Cher Senpai, l'événement - Le Château des Rêves de Lavli a commencé. Collectez du Sable Fin et du Sable Céleste et aidez Lavli à construire le château de ses rêves.\nVous avez déjà débloqué {1} Fille(s) 5 étoiles, {2} Fille(s) 6 étoiles et {3} Fille(s) 10 étoiles dans la Galerie.\nLes récompenses correspondantes vous ont directement été envoyées dans votre Sac."
+224,Promotion Anticipée,Courrier d'Événement,"Félicitations, Senpai !\nDurant cet événément, vous avez tiré Capsule Avancée {1} fois.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
+225,Promotion Anticipée,Courrier d'Événement,"Félicitations, Senpai !\nDurant cet événement, vous avez tiré Capsule Avancée {1} fois et avez débloqué les récompenses supplémentaires.\nVoici vos récompenses, veuillez les récupérer, Senpai~"

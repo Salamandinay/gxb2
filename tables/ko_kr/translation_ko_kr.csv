@@ -521,7 +521,7 @@ FULL_BUY_SLOT_TIME,구매 한도에 도달했습니다.
 FACEBOOK_LOGING,Facebook 로그인
 GOOGLE_LOGING,Google 로그인
 FAST_LOGING,빠른 전환
-OR,혹은
+OR,or
 FORT_BTN_LABEL_1,보통
 FORT_BTN_LABEL_2,어려움
 FORT_BTN_LABEL_3,극한
@@ -3133,7 +3133,7 @@ ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,"주의：\n미사용한 첫 결제 3배는 
 GOTO_RECHARGE,결제하기
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME,탐색 시간 {1}초 증가
 ANNIVERSARY_CAKE_END_AWARD,도착 보상 미리보기
-ROUNDS,{1}바퀴
+ROUNDS,{1}라운드
 CELEBRATE,축하
 ANNIVERSARY_CAKE_HELP,"1. 이벤트 기간 동안 「2주년 카드」를 사용하여 이벤트에 참여할 수 있습니다.|2. [축하]를 클릭하면 하면, 1장의 「2주년 카드」가 출현할 수 있으니, 걸스 X 배틀 2의 2주년을 축하하고 풍부한 보너스를 챙기세요!|3. 기념 케이크 출발점부터 전진하여 케이크 위에 오를 때마다 「도착 보상」을 획득할 수 있습니다.|4. 「도착 보상」을 획득한 후 다음 라운드 진행 시 모든 보상은 초기화됩니다.|5. 전진하거나 케이크 꼭대기에 도달할 때마다 「도착 보상」을 획득할 수 있습니다.|6. 「2주년 카드」 획득 방법：일일 보상, 슈퍼 팩, 스페셜 팩, 캡슐 포인트(7월 10일~7월 16일), 입학 시험(7월 17일~7월 23일)."
 ANNIVERSARY_ENTRY_TITLE,3주년 축제
@@ -3146,7 +3146,7 @@ ACTIVITY_BIRTHDAY_COLOUR_NEED_CHOOSE,한 가지 색깔을 선택하세요.
 ACTIVITY_BIRTHDAY_COLOUR_HELP,"1. 이벤트 기간 동안, 선배님은 [만능 물감] 아이템을 사용하여 퍼즐을 색칠할 수 있으며, 전 서버의 플레이어는 모든 퍼즐의 색칠 진도를 공유할 수 있습니다.|2. 색칠 시 8가지의 색상을 선택할 수 있지만, 각각의 퍼즐은 3가지의 정확한 색상을 가지고 있습니다. 소모되는 아이템 수량에 따라 해당하는 색칠 보상을 받을 수 있으며, 각 퍼즐에 정확한 색상을 칠할 때 더 좋은 보상을 획득할 수 있습니다.|3. 각 퍼즐의 색상마다 각각 색칠 횟수 한도가 있으며 상한에 도달한 색상은 더 이상 선택할 수 없습니다. 퍼즐 한 조각의 정확한 색상 3가지가 모두 색칠 횟수 상한에 도달하면 해당 퍼즐은 색칠이 완성됩니다.|4. 퍼즐 1조각 당 색칠을 완성하면 축제 퍼즐의 색칠 진도가 5%% 증가합니다. 색칠 진도가 일정 수치에 도달할 때마다, 전 서버의 플레이어는 해당하는 보상을 1회 획득할 수 있습니다.|5. [만능 물감]은 [한정 이벤트-학원 탐색]에서 드롭되거나 다이아를 사용하여 구입할 수 있습니다. 색칠 진도 100%% 달성 시 [만능 물감]을 계속 사용할 수 없으며 더 이상 구매할 수 없습니다. 해당 아이템은 이벤트가 완료되면 자동으로 판매됩니다."
 ACTIVITY_2ND_LETTER_1,{1}께
 ACTIVITY_2ND_LETTER_2,"친애하는 선배님：\n어느새 유몽학원에서의 생활도 벌써 2년이 되었네요! 앞으로 무슨 일이 있어도 저희 후배들은 항상 선배님과 함께 할 거에요! 그런 의미에서 선배님을 위한 특별한 선물을 준비했으니, 어서 받아주세요!"
-MAX_ROUNDS,{1}바퀴 이후
+MAX_ROUNDS,{1}라운드 이후
 ACTIVITY_SCHOOL_EXPLORE_PLACE,행정동|운동장|신위 학부|은신 학부|풍견 학부|담화 학부|진성 학부|수라 학부|강의동
 ACTIVITY_SCHOOL_EXPLORE_HELP,"1. 이벤트 기간 동안 선배님은 학원 맵에서 이미 잠금 해제된 장소 중 하나를 선택해 소녀 팀을 파견하여, 자동 모드를 통해 탐색을 할 수 있습니다(탐색 중 소녀 변경 불가). 자동 탐색 종료 후 보상을 획득할 수 있습니다.|2. 각 장소마다 숨겨진 아이템을 드롭할 수 있으며, 아이템을 수집하여 새로운 탐색 장소를 클리어하고 수집 진도에 따라 보상을 해제할 수 있습니다.|3. 탐색 팀은 한 번에 한 팀만 파견할 수 있으며, 현재 진행 중인 자동 모드 탐색이 끝난 후 장소를 다시 선택하여 탐색을 진행할 수 있습니다.|4. 탐색 시 파견된 팀은 탐색 에너지를 사용하여 심층 탐색을 할 수 있습니다. 매번 심층 탐색 시 랜덤으로 한 개의 탐색 사건이 발생합니다. 현재 진행 중인 자동 모드 탐색 시간 변경 혹은 자동 모드 종료 시 추가 보상을 획득할 수 있습니다.|5. 탐색 사건은 전투를 포함하고 있을 수 있으며, 그럴 경우 탐색 팀 멤버를 사용하여 전투를 진행해야 합니다."
 ACTIVITY_2ND_CARD_1,축하 카드 구입 후 14일 동안 매일 아래의 아이템을 메일로 획득합니다：
@@ -3764,7 +3764,7 @@ RE_CHECKIN,보충 체크
 RE_CHECKIN_TIPS,다이아 {1}개를 사용하여 보충 체크하시겠습니까?
 SUMMON_GIFTBAG_MENU01,캡슐 포인트 ({1}/{2})
 SUMMON_GIFTBAG_MENU02,입학 환영
-SUMMON_GIFTBAG_HELP,1. 새로운 후배의 입학을 환영하기 위해 육손이 특별한 보상을 준비했어요! 이벤트 기간 동안 프리미엄 뽑기를 돌리면 추가로 풍부한 보상 획득 가능! 일정 횟수를 돌리거나 지정된 숫자의 새로운 소녀를 획득하면 풍부한 보상 획득 할 수 있습니다!||2. 다음 이벤트 일정은 걸스 X 배틀2 공식 카페에 예고할 테니 꼭 주목해주시길 바랍니다!
+SUMMON_GIFTBAG_HELP,1. 새로운 후배의 입학을 환영하기 위해 육손이 특별한 보상을 준비했어요! 이벤트 기간 동안 프리미엄 뽑기를 돌리면 추가로 풍부한 보상 획득 가능! 일정 횟수를 돌리거나 지정된 숫자의 새로운 소녀를 획득하면 풍부한 보상 획득 할 수 있습니다!|2. 진급의 계단을 통해 획득한 소녀는 신입생 캡슐 뽑기 이벤트 중 소녀 획득 횟수에 집계되지 않습니다.|3. 다음 이벤트 일정은 걸스 X 배틀2 공식 카페에 예고할 테니 꼭 주목해주시길 바랍니다!
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,"이벤트 기간 동안, {1}개의 {2} 소모하여 해제할 수 있습니다."
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,희귀 보상 미리보기
 ACTIVITY_CHRISTMAS_SALE_DESC,"이벤트 기간 동안, 선배님께서 쇼핑 티켓을 사용하여 원하시는 아이템을 교환하실 수 있답니다!"
@@ -5749,11 +5749,11 @@ SHRINE_HURDLE_HELP,"
 
 시공의 틈의 오픈 시간|각 시즌은 개방 기간(12일), 휴식 기간(2일)으로 나누어 총 14일 동안 진행됩니다.
 
-입장 규칙|1. 각 시즌 오픈 시 선배님은 15장의 초대장을 획득할 수 있습니다.(최대 15장 소유 가능)|2. 각 시즌 중 총 3가지 시련이 존재하며, 시련마다 각기 다른 아우라가 적용됩니다. 선배님께서는 시련을 선택하실 수 있으며, 시련에 진입하실 때마다 초대장 1장을 소모합니다.|3. 시련에는 10성 이상의 소녀만 파견할 수 있으며, 시련 시작 후 소녀의 상태(장비 및 잠재 능력 포함)는 시련이 끝날 때까지 유지됩니다.
+입장 규칙|1. 각 시즌 오픈 시 선배님이 소유하는 초대장의 수량은 15장으로 리셋됩니다.|2. 각 시즌 중 총 3가지 시련이 존재하며, 시련마다 각기 다른 아우라가 적용됩니다. 선배님께서는 시련을 선택하실 수 있으며, 시련에 진입하실 때마다 초대장 1장을 소모합니다.|3. 시련에는 10성 이상의 소녀만 파견할 수 있으며, 시련 시작 후 소녀의 상태(장비 및 잠재 능력 포함)는 시련이 끝날 때까지 유지됩니다.
 
-난이도|1. 시련 진입 후, 본 회 시련의 난이도를 선택하셔야 합니다.|2. 난이도가 높을수록 적의 실력이 더욱 강해지며, 전투를 통해 획득하는 포인트 또한 더욱 높아집니다. |3. 시련을 통해 획득한 포인트에 따라 더 높은 난이도를 해제할 수 있습니다.
+난이도|1. 시련 진입 후, 본 회 시련의 난이도를 선택하셔야 합니다.|2. 난이도가 높을수록 적의 실력이 더욱 강해지며, 전투를 통해 획득하는 포인트 또한 더욱 높아집니다. |3. 시련을 통해 획득한 포인트에 따라 더 높은 난이도를 해제할 수 있습니다.|4. 해제된 난이도 상한이 유지되며, 리셋되지 않습니다.
 
-시련 규칙|시련은 전투 스테이지, 보상 스테이지, 상점 스테이지, 회복 스테이지, 최종 보스까지 총 15 스테이지로 구성되어 있습니다.|전투 스테이지|1. 적이 랜덤으로 출현하며, 적을 클릭하여 적의 정보를 확인할 수 있습니다. 선배님은 출전 소녀를 선택하여 전투를 진행할 수 있으며, 전투 승리 후 일정 포인트를 획득합니다.|2. 매회 전투는 최대 15라운드까지 진행됩니다. 15라운드 안에 모든 적을 쓰러뜨릴 경우 승리로 판정되며, 아군 소녀가 모두 쓰러졌거나 15라운드 안에 승리하지 못할 경우 패배로 판정됩니다.|3. 매회 전투 종료 시의 아군 소녀 상태는 보류됩니다.|4. 전투 패배 시 적군 소녀의 상태는 보류되지 않습니다.|보상 스테이지|1. 3가지의 버프가 랜덤으로 출현하며, 선배님께서는 그중 1개를 선택할 수 있습니다.|2. 버프를 선택할 기회를 포기할 경우 시련 코인을 획득할 수 있으며, 시련 코인은 상점 스테이지에서 사용할 수 있습니다.|상점 스테이지|1. 버프 구매: 3가지의 버프가 랜덤으로 출현하며, 시련 코인을 소모하여 원하는 버프를 구매할 수 있습니다.|2. 버프 강화: 이미 보유한 버프 중 3가지 버프가 랜덤으로 출현하며, 시련 코인을 소모하여 원하는 버프를 강화할 수 있습니다. 각 버프는 최대 2회 강화할 수 있습니다.|회복 스테이지|1. 소녀의 HP를 회복하거나 이미 쓰러진 소녀를 부활시킬 수 있습니다.|최종 보스|1. 단 1회의 도전 기회가 주어지며, 도전 완료 후 본 회 시련이 종료됩니다.|2. 최종 보스는 쓰러뜨릴 수 없으며, 보스에 가한 대미지에 따라 포인트를 획득합니다.
+시련 규칙|시련은 전투 스테이지, 보상 스테이지, 상점 스테이지, 회복 스테이지, 최종 보스까지 총 15 스테이지로 구성되어 있습니다.|전투 스테이지|1. 적이 랜덤으로 출현하며, 적을 클릭하여 적의 정보를 확인할 수 있습니다. 선배님은 출전 소녀를 선택하여 전투를 진행할 수 있으며, 전투 승리 후 일정 포인트를 획득합니다.|2. 매회 전투는 최대 15라운드까지 진행됩니다. 15라운드 안에 모든 적을 쓰러뜨릴 경우 승리로 판정되며, 아군 소녀가 모두 쓰러졌거나 15라운드 안에 승리하지 못할 경우 패배로 판정됩니다.|3. 매회 전투 종료 시의 아군 소녀 상태는 보류됩니다.|4. 적군 소녀의 상태는 보류되지 않습니다.|보상 스테이지|1. 3가지의 버프가 랜덤으로 출현하며, 선배님께서는 그중 1개를 선택할 수 있습니다.|2. 버프를 선택할 기회를 포기할 경우 시련 코인을 획득할 수 있으며, 시련 코인은 상점 스테이지에서 사용할 수 있습니다.|상점 스테이지|1. 버프 구매: 3가지의 버프가 랜덤으로 출현하며, 시련 코인을 소모하여 원하는 버프를 구매할 수 있습니다.|2. 버프 강화: 이미 보유한 버프 중 3가지 버프가 랜덤으로 출현하며, 시련 코인을 소모하여 원하는 버프를 강화할 수 있습니다. 각 버프는 최대 2회 강화할 수 있습니다.|회복 스테이지|1. 소녀의 HP를 회복하거나 이미 쓰러진 소녀를 부활시킬 수 있습니다.|최종 보스|1. 단 1회의 도전 기회가 주어지며, 도전 완료 후 본 회 시련이 종료됩니다.|2. 최종 보스는 쓰러뜨릴 수 없으며, 보스에 가한 대미지에 따라 포인트를 획득합니다.
 
 포인트 및 랭킹|1. 해당 시즌 중 3가지 시련에서 달성한 최고 포인트만 기록되며, 각 시련 중 획득한 포인트 및 3가지 시련에서 획득한 총 포인트에 따라 두 랭킹을 따로 집계합니다. 개방 기간 종료 후 랭킹에 따라 보상을 발송합니다.
 
@@ -5766,7 +5766,7 @@ SHRINE_HURDLE_TEXT02,최고 포인트
 SHRINE_HURDLE_TEXT03,난이도
 SHRINE_HURDLE_TEXT04,들어가기
 SHRINE_HURDLE_TEXT05,초대장 1장을 사용해서 시련을 진행하시겠습니까?\n(시련 시작 후 소녀의 상태는 시련이 끝날 때까지 유지됩니다.)
-SHRINE_HURDLE_TEXT06,추천 난이도:
+SHRINE_HURDLE_TEXT06,추천 난이도: {1}
 SHRINE_HURDLE_TEXT07,높은 난이도를 선택하셨습니다. 계속하시겠습니까?
 SHRINE_HURDLE_TEXT08,시련 정보
 SHRINE_HURDLE_TEXT09,층수
@@ -5880,22 +5880,22 @@ SHRINE_HURDLE_CLOSE_TIME,종료까지:
 SHRINE_HURDLE_OPEN_TIME,사공의 틈 오픈까지:
 SHRINE_HURDLE_TEXT38,소녀 HP 상태
 ACTIVITY_LAFULI_CASTLE_TEXT13,수령 한도에 도달했습니다.
-ACTIVITY_PROMOTION_LADDER_TEXT01,幫助文本
-ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
-ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
-ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證明增長為{2}
-ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT07,碎片
-ACTIVITY_PROMOTION_LADDER_TEXT08,確認
-ACTIVITY_PROMOTION_LADDER_TEXT09,每交換9個本體，所需的晉升證明增加5個
-ACTIVITY_PROMOTION_LADDER_TEXT10,未選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT11,晉升證書不足
-ACTIVITY_PROMOTION_TEST_TEXT01,幫助文本
-ACTIVITY_PROMOTION_TEST_TEXT02,高級召喚次數
-ACTIVITY_PROMOTION_TEST_TEXT03,解鎖條件
-ACTIVITY_PROMOTION_TEST_TEXT04,獲得{1}個直升證明後解鎖
-ACTIVITY_PROMOTION_TEST_TEXT05,當前包含直升證明的禮包仍有購買次數，確認要購買此禮包嗎？
+ACTIVITY_PROMOTION_LADDER_TEXT01,"1. 이벤트 기간에 '진급 증서' 아이템을 소모하여 이번 이벤트 중 재료 소녀로 지정된 소녀를 목표 소녀로 교환할 수 있습니다.|2. 5성 목표 소녀 1명 교환 시 10장의 '진급 증서'를 소모하며, 5성 목표 소녀 9명 교환 시마다 소녀 1명 교환에 필요한 '진급 증서'의 수량이 5개씩 증가합니다.|3. 교환으로 획득한 목표 소녀의 레벨, 랭크, 장비, 크리스탈, 혼기는 교환에 사용한 재료 소녀와 동일합니다.(단, 호감도 및 서약은 양도 불가)|4. 6, 7, 8성 소녀 교환=5성 소녀*2 / 9성 소녀 교환=5성 소녀*3 / 10성 소녀 교환=5성 소녀*5 / 11성 소녀 교환=5성 소녀*6 / 12, 13성 소녀 교환=5성 소녀*7 / 14성 소녀 교환=5성 소녀*8 / 15성 소녀 교환=5성 소녀*9|5. 매회 이벤트 중 교환할 수 있는 재료 소녀는 각기 다릅니다.|6. 교환으로 획득한 소녀는 신입생 캡슐 뽑기 이벤트 중 소녀 획득 횟수에 집계되지 않습니다.|7. '진급 증서'는 진급 테스트 이벤트를 통해 획득할 수 있습니다.|8. 이벤트 종료 후 '진급 증서'는 회수되지 않습니다."
+ACTIVITY_PROMOTION_LADDER_TEXT02,더보기
+ACTIVITY_PROMOTION_LADDER_TEXT03,교환 가능한 소녀
+ACTIVITY_PROMOTION_LADDER_TEXT04,교환 진도
+ACTIVITY_PROMOTION_LADDER_TEXT05,"5성 소녀 {1}명을 교환한 후, 교환 시 필요한 진급 증서 수량이 {2}까지 증가"
+ACTIVITY_PROMOTION_LADDER_TEXT06,재료 소녀를 고르세요
+ACTIVITY_PROMOTION_LADDER_TEXT07,조각
+ACTIVITY_PROMOTION_LADDER_TEXT08,확인
+ACTIVITY_PROMOTION_LADDER_TEXT09,5성 소녀 9명 교환 시마다 필요한 진급 증서 수량이 5개씩 증가
+ACTIVITY_PROMOTION_LADDER_TEXT10,교환할 소녀를 아직 선택하지 않으셨어요.
+ACTIVITY_PROMOTION_LADDER_TEXT11,진급 증서 부족
+ACTIVITY_PROMOTION_TEST_TEXT01,"1. 이벤트 기간에 프리미엄 캡슐 뽑기 진행 횟수가 일정 목표 도달 시 보상을 획득할 수 있습니다.|2. 보상은 기초 보상 및 추가 보상으로 나누어져 있으며, 추가 보상은 일정 수량의 '시험 면제 증명' 아이템을 보유해야만 해제할 수 있습니다.|3. 이벤트 보상은 게임 내 메일을 통해 발송됩니다.|4. '시험 면제 증명'은 슈퍼 팩을 통해 획득할 수 있습니다.|5. 이벤트 종료 후 '시험 면제 증명' 아이템은 시스템에 의해 회수될 예정입니다.(시험 면제 증명*1=골드*500K)"
+ACTIVITY_PROMOTION_TEST_TEXT02,프리미엄 캡슐 뽑기 횟수
+ACTIVITY_PROMOTION_TEST_TEXT03,해제 조건
+ACTIVITY_PROMOTION_TEST_TEXT04,시험 면제 증명 {1}개 획득 후 해제
+ACTIVITY_PROMOTION_TEST_TEXT05,시험 면제 증명을 포함한 팩을 구입 가능합니다. 이 팩을 구입하시겠습니까?
 SHRINE_NOTICE_TEXT06,시련이 종료되었습니다.
 SHRINE_NOTICE_TEXT07,포인트
 SHRINE_HURDLE_TEXT39,시련 코인을 포기하시겠습니까?
@@ -5913,3 +5913,139 @@ SHRINE_HURDLE_SELECT1,전투 스테이지에 진입하시겠습니까?
 SHRINE_HURDLE_SELECT2,보상 스테이지에 진입하시겠습니까?
 SHRINE_HURDLE_SELECT3,상점 스테이지에 진입하시겠습니까?
 SHRINE_HURDLE_SELECT4,회복 스테이지에 진입하시겠습니까?
+TIME_CLOISTER_TEXT109,当时间回廊的加速小于一次触发卡牌的时间的提示
+TIME_CLOISTER_TEXT110,加速时多用一个道具时减去这个道具的提示
+GAME_ASSISTANT_TEXT01,학원 조수
+GAME_ASSISTANT_TEXT02,일상
+GAME_ASSISTANT_TEXT03,챌린지
+GAME_ASSISTANT_TEXT04,성장
+GAME_ASSISTANT_TEXT05,동아리
+GAME_ASSISTANT_TEXT06,執行本頁
+GAME_ASSISTANT_TEXT07,執行全部
+GAME_ASSISTANT_TEXT08,마이다스의 손
+GAME_ASSISTANT_TEXT09,무료 마이다스의 손
+GAME_ASSISTANT_TEXT10,다이아 마이다스의 손
+GAME_ASSISTANT_TEXT11,구매 상한 설정
+GAME_ASSISTANT_TEXT12,자동 모드 보상 수령
+GAME_ASSISTANT_TEXT13,기숙사 수익 수령
+GAME_ASSISTANT_TEXT14,일일 퀴즈
+GAME_ASSISTANT_TEXT15,무료 수령
+GAME_ASSISTANT_TEXT16,다이아로 수령
+GAME_ASSISTANT_TEXT17,캡슐 뽑기
+GAME_ASSISTANT_TEXT18,프리미엄 캡슐 뽑기
+GAME_ASSISTANT_TEXT19,일반 캡슐 뽑기
+GAME_ASSISTANT_TEXT20,하트 수발신
+GAME_ASSISTANT_TEXT21,학원 리그
+GAME_ASSISTANT_TEXT22,전투 회 완성
+GAME_ASSISTANT_TEXT23,아르바이트 미션 2회 클리어
+GAME_ASSISTANT_TEXT24,성급 선택
+GAME_ASSISTANT_TEXT25,수량 입력
+GAME_ASSISTANT_TEXT26,슬롯 머신 2회 돌림
+GAME_ASSISTANT_TEXT27,아이템 구매
+GAME_ASSISTANT_TEXT28,아이템을 선택하지 않았어요.
+GAME_ASSISTANT_TEXT29,아이템 선택
+GAME_ASSISTANT_TEXT30,쇼윈도 보상 수령
+GAME_ASSISTANT_TEXT31,초기화
+GAME_ASSISTANT_TEXT32,확인
+GAME_ASSISTANT_TEXT33,학원 순찰
+GAME_ASSISTANT_TEXT34,소탕 보상 수령
+GAME_ASSISTANT_TEXT35,아이템 구매
+GAME_ASSISTANT_TEXT36,학부 테스트
+GAME_ASSISTANT_TEXT37,학부 선택
+GAME_ASSISTANT_TEXT38,무료 소탕
+GAME_ASSISTANT_TEXT39,다이아로 소탕
+GAME_ASSISTANT_TEXT40,초급
+GAME_ASSISTANT_TEXT41,중급
+GAME_ASSISTANT_TEXT42,고급
+GAME_ASSISTANT_TEXT43,사역마
+GAME_ASSISTANT_TEXT44,트레이닝 코스 보상 수령
+GAME_ASSISTANT_TEXT45,트레이닝 코스 선택
+GAME_ASSISTANT_TEXT46,트레이닝 더미 도전
+GAME_ASSISTANT_TEXT47,체력 구매
+GAME_ASSISTANT_TEXT48,소풍
+GAME_ASSISTANT_TEXT49,수익 수령
+GAME_ASSISTANT_TEXT50,빵 구입
+GAME_ASSISTANT_TEXT51,구입 수량
+GAME_ASSISTANT_TEXT52,매일 한정 구매: {1}/{2}
+GAME_ASSISTANT_TEXT53,동아리
+GAME_ASSISTANT_TEXT54,동아리방
+GAME_ASSISTANT_TEXT55,출석 체크
+GAME_ASSISTANT_TEXT56,식당
+GAME_ASSISTANT_TEXT57,獲得訂單
+GAME_ASSISTANT_TEXT58,주문 레벨업
+GAME_ASSISTANT_TEXT59,주문 시작
+GAME_ASSISTANT_TEXT60,체육관
+GAME_ASSISTANT_TEXT61,팀 설정
+GAME_ASSISTANT_TEXT62,61 스테이지 도전
+GAME_ASSISTANT_TEXT63,한정 구매:{1}/{2}
+GAME_ASSISTANT_TEXT64,임무 수행 중......
+GAME_ASSISTANT_TEXT65,임무 완성
+GAME_ASSISTANT_TEXT66,중지
+GAME_ASSISTANT_TEXT67,확인
+GAME_ASSISTANT_TEXT68,선택 완료
+GAME_ASSISTANT_TEXT69,학부 선택하세요.
+GAME_ASSISTANT_TEXT70,스테이지를 클리어하지 않았어요.
+GAME_ASSISTANT_TEXT71,마이다스의 손 보상
+GAME_ASSISTANT_TEXT72,일일 퀴즈 보상
+GAME_ASSISTANT_TEXT73,학원 리그 전투 보상({1}회)
+GAME_ASSISTANT_TEXT74,아르바이트 미션 완성 보상
+GAME_ASSISTANT_TEXT75,슬롯 머신 추첨({1}회)
+GAME_ASSISTANT_TEXT76,학원 순찰 소탕 보상({1}회)
+GAME_ASSISTANT_TEXT77,學院考核掃蕩獎勵（{1}次）
+GAME_ASSISTANT_TEXT78,사역마 트레이닝 코스 보상
+GAME_ASSISTANT_TEXT79,새로운 트레이닝 코스 시작
+GAME_ASSISTANT_TEXT80,使魔_挑戰訓練體力購買
+GAME_ASSISTANT_TEXT81,使魔_挑戰訓練獎勵
+GAME_ASSISTANT_TEXT82,소풍_수익 수령
+GAME_ASSISTANT_TEXT83,소풍_빵 구매
+GAME_ASSISTANT_TEXT84,동아리_출석 체크
+GAME_ASSISTANT_TEXT85,社團餐廳_獲得訂單
+GAME_ASSISTANT_TEXT86,동아리 식당_주문 레벨 업({1}회)
+GAME_ASSISTANT_TEXT87,동아리 식당_주문 시작
+GAME_ASSISTANT_TEXT88,동아리 체육권_61 스테이지 도전({1}회)
+GAME_ASSISTANT_TEXT89,동아리 체육권_도전 횟수 구입({1}회)
+GAME_ASSISTANT_TEXT90,완료함
+GAME_ASSISTANT_TIPS01,더 높은 레벨의 일일 퀴즈 도전 가능. 도전하시겠습니까?('아니요' 버튼을 클릭하시면 현재 클리어한 최고 레벨의 보상을 수령 가능)
+GAME_ASSISTANT_TIPS02,수행 가능한 항목이 없습니다.
+GAME_ASSISTANT_TIPS03,"다이아 {1}개를 소모할 예정입니다.(동아리 주문 레벨업, 실제 소모에 비해 많을 수도 있습니다.) 계속 진행하시겠습니까?"
+GAME_ASSISTANT_TIPS04,사역마 트레이닝 {1}레벨 달성 후 해당 기능이 해제됩니다.
+GAME_ASSISTANT_TIPS05,소풍에서 탐험 {1}레벨 달성 후 해당 기능이 해제됩니다.
+GAME_ASSISTANT_TIPS06,사역마 트레이닝 {1}레벨 달성 혹은 소풍에서 탐험 {1}레벨 달성 후 해제
+GAME_ASSISTANT_TIPS07,{1}레벨 이상의 동아리에 가입한 후 해제됩니다.
+GAME_ASSISTANT_TIPS08,식당 {1}레벨 달성 후 해당 기능이 해제됩니다.
+GAME_ASSISTANT_TIPS09,체육관 61스테이지 오픈된 후 해당 기능이 해제됩니다.
+GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+ACTIVITY_PROMOTION_TEST_TEXT06,신입생 캡슐 뽑기에 참여하시면 진급 증서를 획득할 수 있습니다.
+ACTIVITY_LASSO_BUTTON,던지기
+ACTIVITY_LASSO_TEXT01,던질 횟수를 입력하세요.
+ACTIVITY_LASSO_TIPS,이번 라운드의 그랜드 보상을 선택하세요.
+ACTIVITY_LASSO_TEXT02,여러 개의 그랜드 보상이 존재할 경우 그중 1개의 보상을 해당 라운드의 그랜드 보상으로 선택 가능
+ACTIVITY_LASSO_HELP,"1. 이벤트 기간에 '플레이 티켓'을 1장 사용하여 고리를 1회 던질 수 있으며, 고리를 던질 때마다 반드시 1개의 인형에 당첨됩니다. 인형마다 상응하는 보상은 각기 다르며, 당첨 시 해당 인형에 상응하는 보상 중 1개를 랜덤으로 획득할 수 있습니다.|2. 고리를 던져 중간에 위치한 가장 큰 인형에 당첨될 경우 랜덤 보상을 획득하는 동시에 해당 라운드의 그랜드 보상도 획득할 수 있습니다. 해당 라운드 중 당첨된 인형을 다시 셋팅한 후 다음 라운드에 진입합니다.|3. 라운드별 그랜드 보상은 각기 다르며, 한 라운드 중 여러 개의 그랜드 보상이 존재할 경우 선배님이 그중 1개의 보상을 해당 라운드의 그랜드 보상으로 선택할 수 있습니다. 26라운드 이후, 선택 가능 보상은 변경되지 않습니다.|4. 한 번에 고리를 여러 개 던질 경우 그랜드 보상을 획득한 후 남은 '플레이 티켓'은 자동 반환됩니다.|5. '플레이 티켓' 획득 방법: 일일 보상, 신입생 캡슐 뽑기, 탐험가 팩, 슈퍼 팩, 스페셜 팩, 스페셜 스킨 팩.|6. 이벤트 종료 후 사용하지 않은 '플레이 티켓'은 시스템에 의해 자동으로 회수될 예정입니다. (플레이 티켓*1=골드*50K)"
+ACTIVITY_LASSO_OR,or
+ACTIVITY_LASSO_TEXT03,제 {1}라운드에 해제될 예정입니다. 미리 보상을 선택하시겠습니까?
+GAME_ASSISTANT_TEXT91,통계
+GAME_ASSISTANT_TEXT92,선택
+GAME_ASSISTANT_TEXT93,해제되지 않습니다.
+GAME_ASSISTANT_TIPS10,출전 팀을 설정하세요.
+ACTIVITY_PROMOTION_LADDER_TEXT12,목표 소녀를 교환하시겠습니까?
+ACTIVITY_LASSO_TEXT04,26 라운드 후
+TIME_CLOISTER_TEXT111,포인트
+TIME_CLOISTER_TEXT112,下一檔加成
+ACTIVITY_FREEBUY_TIME,{1}結束購買
+GAME_ASSISTANT_TEXT94,設置完成
+GAME_ASSISTANT_TEXT95,當前沒有遇到商人
+GAME_ASSISTANT_TEXT96,綺幻手冊_每日任務
+GAME_ASSISTANT_TEXT97,先領取守護校園掃蕩獎勵
+GAME_ASSISTANT_TEXT98,當前沒有商品
+ACTIVITY_LASSO_TITLE,던지기
+TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
+TIME_CLOISTER_TEXT114,設置成功
+ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵
+ACTIVITY_FREEBUY_TEXT02,購買後鑽石全額返還
+ACTIVITY_FREEBUY_TEXT03,購買總得：
+ACTIVITY_FREEBUY_TEXT04,今日可領：
+ACTIVITY_FREEBUY_HELP,零元購未定（暫時不翻）
+ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
+ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
+ACTIVITY_FREEBUY_TEXT07,返利{1}
+TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥加成

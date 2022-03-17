@@ -144,3 +144,5 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 143,shrine_hurdle,1,47,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
 144,shrine_hurdle,1,47,,,main_window,,arenaBtn,,,,,,2,buttoncrop_27,0|0,1.2|1.2,,1,,,,,,,,0.2,,,,,
 145,shrine_hurdle,1,47,,,battle_choose_window,,shrineHurdle,,,,1,49,0,,,,,,,,,,,,,,,,,,
+146,game_assistant,1,48,,,func_open_window,,btnGo_,,,,,,0,,,,,,1,,,,,,,,,,,,
+147,game_assistant,1,48,,,main_window,,gameAssistantBtn,,,,1,50,1,,,,,1,,,,,,2,,0.42,,,,,

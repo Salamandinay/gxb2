@@ -1110,7 +1110,7 @@ REST_ZONE,Rest Area
 MATCH_ZONE,Competition Area
 GUILD_TEAM,Guild Team
 GUILD_WAR_NO_MATCH_TEAM,No guild matched
-GUILD_WAR_HELP,"The Playground is organized into seasons with each season lasting one week. |Each season is divided into 3 phases: the Qualifying Round, Finals, and Off-Season.| |Qualifying Round| 1. Time: Monday 00:00 – Friday 24:00 (GMT 0) | 2. Registration: Guild Leaders and Deputy Leaders must sign their guild up to participate in the Qualifying Round. | 3. Requirements: Guild Lv. 12 or above is required. Each Guild should send between 10-15 Teams. Each Guild Member deploys one team. | 4. Guild Leaders and Deputy Leaders can arrange battle teams. |5. Guild Leaders and Deputy Leaders can 3 hidden teams. |6. Guild Leaders and Deputy Leaders match-up opponents at the Playground. Leaders are allowed 10 seconds to complete the match-up. | 7. Each battle consumes 1 point of Guild Stamina, which is recovered every 3 hours. | 8. Each team can battle 3 times. | 9. If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over. | 10. The winning team gains Battle Points for each victory. The Guild that wins the most battles gains Playground Points. | 11. Guilds are ranked based on their Playground Points. | 12. Rewards are sent to Mail based on their Playground Rank.| 13. Only the Guild Leader and the Deputy Leader of a Guild can see the actual order of the Guild members in Playground.| Finals| 1. The top 16 Guilds in the Qualifying Round automatically enter the Finals. The system matches up qualified Guilds with opponents based on their ranking. | 2. Preparation time: Saturday 00:00 to 16:00; Competition time: Saturday 16:00 to 18:00. | 3. Special frames will be removed when a new season begins. | 4. At the end of the competition, rewards will be sent to Mail based on rank. | 5. Final Ranking Rewards: | Rank 1: 4,000 Guild coins, 1,500,000 Coins| Rank 2: 3,000 Guild coins, 1,000,000 Coins| Rank 3-4: 2,000 Guild coins, 750,000 Coins| Rank 5-8: 1,500 Guild coins, 500,000 Coins| Rank 9-16: 1,000 Guild coins, 250,000 Coins. | Off-Season| 1. In the Off-Season, players can check the battle records from the Finals. | Attention: If players leave their Guild during the Playground season, they will not receive rewards and participate until the next Playground season."
+GUILD_WAR_HELP,"The Playground is organized into seasons with each season lasting one week. |Each season is divided into 3 phases: the Qualifying Round, Finals, and Off-Season.| |Qualifying Round| 1. Time: Monday 00:00 – Friday 24:00 (GMT 0) | 2. Registration: Guild Leaders and Deputy Leaders must sign their guild up to participate in the Qualifying Round. | 3. Requirements: Guild Lv. 12 or above is required. Each Guild should send between 10-15 Teams. Each Guild Member deploys one team. | 4. Guild Leaders and Deputy Leaders can arrange battle teams. |5. Guild Leaders and Deputy Leaders can hide the info of 3 teams. |6. Guild Leaders and Deputy Leaders match-up opponents at the Playground. Leaders are allowed 10 seconds to complete the match-up. | 7. Each battle consumes 1 point of Guild Stamina, which is recovered every 3 hours. | 8. Each team can battle 3 times. | 9. If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over. | 10. The winning team gains Battle Points for each victory. The Guild that wins the most battles gains Playground Points. | 11. Guilds are ranked based on their Playground Points. | 12. Rewards are sent to Mail based on their Playground Rank.| 13. Only the Guild Leader and the Deputy Leader of a Guild can see the actual order of the Guild members in Playground.| Finals| 1. The top 16 Guilds in the Qualifying Round automatically enter the Finals. The system matches up qualified Guilds with opponents based on their ranking. | 2. Preparation time: Saturday 00:00 to 16:00; Competition time: Saturday 16:00 to 18:00. | 3. Special frames will be removed when a new season begins. | 4. At the end of the competition, rewards will be sent to Mail based on rank. | 5. Final Ranking Rewards: | Rank 1: 4,000 Guild coins, 1,500,000 Coins| Rank 2: 3,000 Guild coins, 1,000,000 Coins| Rank 3-4: 2,000 Guild coins, 750,000 Coins| Rank 5-8: 1,500 Guild coins, 500,000 Coins| Rank 9-16: 1,000 Guild coins, 250,000 Coins. | Off-Season| 1. In the Off-Season, players can check the battle records from the Finals. | Attention: If players leave their Guild during the Playground season, they will not receive rewards and participate until the next Playground season."
 GUILD_WAR_FORMATION,Guild War Team
 GUILD_WAR_FORMATION_WINDOW,Team Info
 GUILD_WAR_SWITCH_TEAM_WINDOW,Select Team to Exchange
@@ -2514,7 +2514,7 @@ ACTIVITY_CV_NAME1,CV: Inori Minase
 ACTIVITY_CV_NAME2,CV: Rie Tanaka
 ACTIVITY_CV_NAME3,CV: Risa Kubota
 ACTIVITY_CV_NAME4,CV: Mai Kanno
-ACTIVITY_CV_NAME5,CV: Minori Chihara
+ACTIVITY_CV_NAME5,CV: Chihara Minori
 ACTIVITY_CV_NAME6,CV: Ayano Hamaguchi
 ACTIVITY_CV_NAME7,CV: Inori Minase
 TEST_SERVER_PROPHET_TITLE,Test Server Recruitment
@@ -3242,7 +3242,7 @@ ACTIVITY_RETURN_CDKEY,My Invitation Code:
 ACTIVITY_RETURN_COMPANY_LIST,Partner List:
 HOUSE_ITEM_TYPE_10,Background
 EDIT_PICTURE_MEMBER,Current Wallpaper Girl
-EDIT_PICTURE_SHOWRANDOM,Random Hint
+EDIT_PICTURE_SHOWRANDOM,Random Display
 EDIT_PICTURE_LIMIT,6 girls at most
 EDIT_PICTURE_SELECT,Please Choose
 ACTIVITY_PLAYER_RETURN_ALLTIME,Time Remaining:
@@ -3761,7 +3761,7 @@ RE_CHECKIN,Relog
 RE_CHECKIN_TIPS,"{1} Gems to relog, continue?"
 SUMMON_GIFTBAG_MENU01,Capsule Drawn ({1}/{2})
 SUMMON_GIFTBAG_MENU02,New Girls
-SUMMON_GIFTBAG_HELP,"1. To officially welcome the new girls, CapsuGirl’s prepared something special: during the event, draw Adv. Capsules to receive additional great rewards. Every target reached for Adv. Capsules drawn or new girls obtained, abundant rewards can be earned.|2. Please stay tune for the next event season update which will be posted on Girl X Battle 2 official Facebook page."
+SUMMON_GIFTBAG_HELP,"1. To officially welcome the new girls, CapsuGirl’s prepared something special: during the event, draw Adv. Capsules to receive additional great rewards. Every target reached for Adv. Capsules drawn or new girls obtained, abundant rewards can be earned.|2. The Girl you obtain from Promotion Ceremony won't be counted in the event.|3. Please stay tune for the next event season update which will be posted on Girl X Battle 2 official Facebook page."
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,Consume {1} {2}s to unlock during the event
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Rare rewards preview
 ACTIVITY_CHRISTMAS_SALE_DESC,"During the event, you can exchange the rewards you want with Black Friday Coupons!"
@@ -4424,7 +4424,7 @@ PET_TRAINING_TEXT07,{1} Course(s) completed
 PET_TRAINING_TEXT08,No course ongoing
 PET_TRAINING_TEXT09,Available
 PET_TRAINING_TEXT10,Tap to choose Courses
-PET_TRAINING_TEXT11,Energy Remaining: {1}
+PET_TRAINING_TEXT11,Stamina: {1}
 PET_TRAINING_TEXT12,Skip
 PET_TRAINING_TEXT13,Remaining Chance(s): {1}
 PET_TRAINING_TEXT14,Training Room
@@ -5755,7 +5755,7 @@ Realm of Trials Time Rule|Realm of Trials will occur in seasons, consisting of a
 
 Entry Rules|1. At the beginning of each season, the number of Trial Invitations owned will be set to 15 (max capacity).|2. There will be 3 different Trials in each season with different environmental effects in each Trial to boost your Girls in different ways. You can choose which Trial to enter manually. It will cost you 1 Trial Invitation to enter a Trial.|3. Only Girls who are 10-star or above can be chosen for Trials, once a Girl is chosen to enter a Trial, her attribute and status in this Trial (including her Gear and Potential status) will not be updated by the adjustments you make in other features.
 
-Difficulty Level|1. You will need to choose the difficulty level once you enter a Trial.|2. The enemies\' attributes and points they provide after each battle will be boosted if you choose a higher difficulty level.|3. Higher difficulty levels can be unlocked as your points recorded for Trials become higher.
+Difficulty Level|1. You will need to choose the Difficulty Level once you enter a Trial.|2. The enemies\' attributes and points they provide after each battle will be boosted if you choose a higher Difficulty Level.|3. Higher Difficulty Levels can be unlocked as your points recorded for Trials become higher.|4 After unlocking a Difficulty Level, it will remain unlocked in the following seasons.
 
 Trial Rules|There are 15 Stages in a Trial, where you will encounter Battle Stages, Reward Stages, Store Stages, Recover Stages, and Boss Stages in your Trials.|Battle Stage|1. Enemies spawn at random, you can tap on the icons of the enemies to check out their status. You can choose to deploy your Girls to defeat the enemies and win points.|2. Each battle of Battle Stages lasts for 15 rounds. You can win in a battle if you defeat the enemies in 15 rounds, but will lose the battle if all your Girls are defeated or the battle exceeds 15 rounds.|3. The HP of your Girls will not recover after each battle.|4. The status of the enemies will be reset after you lose a battle.|Reward Stage|1. There will be 3 random buffs available for you to choose in a Reward Stage.|2. You can also give up a chance to get a buff and receive Trial Tokens instead. Trial Tokens can be used in Store Stages.|Store Stage|1. Buff Purchase: there will be 3 random buffs available for you to purchase with Trial Tokens.|2. Buff Upgrade: 3 random buffs you own will appear, you can choose to upgrade them with Trial Tokens. Each buff can be upgraded twice in a Trial.|Recover Stage|1. You can choose to heal your Girls or revive a defeated Girl in a Recover Stage.|Boss Stage|1. You can only challenge a Boss Stage once in a Trial. (There\'s only 1 Boss Stage in each Trial) You will complete the Trial after the battle.|2. The enemy in Boss Stage cannot be defeated, you can earn more points if you deal higher damage in the stage.
 
@@ -5770,7 +5770,7 @@ SHRINE_HURDLE_TEXT02,Highest Score
 SHRINE_HURDLE_TEXT03,Difficulty Level
 SHRINE_HURDLE_TEXT04,Enter
 SHRINE_HURDLE_TEXT05,Confirm to consume 1 Invitation Card and enter the Trial?  The Girls' attribute and status in this Trial will not be updated by your adjustments in other features when they are in this trial
-SHRINE_HURDLE_TEXT06,Recommended Difficulty Level:
+SHRINE_HURDLE_TEXT06,Recommended Difficulty Level: {1}
 SHRINE_HURDLE_TEXT07,"This Difficult Level could be too hard for you, confirm to continue?"
 SHRINE_HURDLE_TEXT08,Details
 SHRINE_HURDLE_TEXT09,Stage
@@ -5859,7 +5859,7 @@ TIME_CLOISTER_TEXT92,Bonus Setting
 TIME_CLOISTER_TEXT93,"When an Observation is over, the amount of the corresponding items you receive will be increased."
 TIME_CLOISTER_TEXT94,No Bonus
 TIME_CLOISTER_TEXT95,Increase the amount of {1} type(s) of items received by {2}
-TIME_CLOISTER_TEXT96,設置
+TIME_CLOISTER_TEXT96,Set
 ACTIVITY_LAFULI_CASTLE_HELP,"1. Help Luvly build the dream sandcastle with ""Beach Sand"" and ""Rainbow Sand""!|2. For every [c][0069cc]20[-][/c] ""Beach Sand"" or ""Rainbow Sand"" consumed, you can select a faction (Ghost/Human/Monster/Fairy) to draw one [c][0069cc]5-star Girl[-][/c] at random as your reward.|3. ""Beach Sand"" is solid and stable, suitable to build up the walls of the castle. By consuming certain amounts of ""Beach Sand"", you will be able to claim additional progress rewards for castle wall construction.|4. “Rainbow Sand” is delicate and colorful, suitable for decorating the sandcastle. By consuming certain amounts of ""Rainbow Sand"", you will be able to claim additional progress rewards for castle decoration.|5. Once the event ends, the remaining ""Beach Sand"" and ""Rainbow Sand"" will automatically be recycled into Coins at a rate of 100k per unit of sand."
 ACTIVITY_LAFULI_CASTLE_TEXT01,Progress
 ACTIVITY_LAFULI_CASTLE_TEXT02,Challenge Tasks
@@ -5884,22 +5884,22 @@ SHRINE_HURDLE_CLOSE_TIME,Trial ends in:
 SHRINE_HURDLE_OPEN_TIME,Trial begins in:
 SHRINE_HURDLE_TEXT38,HP Status
 ACTIVITY_LAFULI_CASTLE_TEXT13,Obtain Limit Reached
-ACTIVITY_PROMOTION_LADDER_TEXT01,幫助文本
-ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
-ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
-ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證明增長為{2}
-ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT07,碎片
-ACTIVITY_PROMOTION_LADDER_TEXT08,確認
-ACTIVITY_PROMOTION_LADDER_TEXT09,每交換9個本體，所需的晉升證明增加5個
-ACTIVITY_PROMOTION_LADDER_TEXT10,未選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT11,晉升證書不足
-ACTIVITY_PROMOTION_TEST_TEXT01,幫助文本
-ACTIVITY_PROMOTION_TEST_TEXT02,高級召喚次數
-ACTIVITY_PROMOTION_TEST_TEXT03,解鎖條件
-ACTIVITY_PROMOTION_TEST_TEXT04,獲得{1}個直升證明後解鎖
-ACTIVITY_PROMOTION_TEST_TEXT05,當前包含直升證明的禮包仍有購買次數，確認要購買此禮包嗎？
+ACTIVITY_PROMOTION_LADDER_TEXT01,"1. You can exchange the Girls you have for the updated Girl by consuming Promotion Certificates during the event.|2. 10 Promotion Certificates will be required for each 5-star Girl copy you obtain from the exchange. The number of Promotion Certificates required in the exchange of each copy of the new updated Girl will be increased by 5 after every 9 copies exchanged during the event.|3. After the exchange, the new updated Girl you get will have the same level, star rank, Gear status, Crystal status, and Antique status as the Girl you use to exchange, however, the exchange will not let the Girl you get inherit the intimacy or the Oath status of the Girl you used for the exchange.|4. The system will see the exchange of the Girls of higher star rank as multiple copies exchanged: 6-8 star = 2 copies exchanged, 9 star = 3 copies exchanged, 10 star = 5 copies exchanged, 11 star = 6 copies exchanged, 12-13 star = 7 copies exchanged, 14 star = 8 copies exchanged, 15 star = 9 copies exchanged.|5. The Girls available for you to use for the exchange will be different during each event. You can check out the Girls available by tapping the ""!"" button in the top right corner of the event page.|6. The new updated Girl(s) you obtain via exchanging in this event won't advance the progress of the ""New Girls"" Task in the event: ""Girls X Capsule Points"".|8. Promotion Certificates won't be removed from your account after the event ends."
+ACTIVITY_PROMOTION_LADDER_TEXT02,Details
+ACTIVITY_PROMOTION_LADDER_TEXT03,Girls available for exchange
+ACTIVITY_PROMOTION_LADDER_TEXT04,Exchange Progress
+ACTIVITY_PROMOTION_LADDER_TEXT05,The Promotion Certificate needed for each exchange\nwill increase to {2} after {1} more exchange(s)
+ACTIVITY_PROMOTION_LADDER_TEXT06,Please choose the Girl for exchange
+ACTIVITY_PROMOTION_LADDER_TEXT07,Shards
+ACTIVITY_PROMOTION_LADDER_TEXT08,Confirm
+ACTIVITY_PROMOTION_LADDER_TEXT09,The number of Promotion Certificate needed for each copy of the new Girl will increase by 5 after every 9 copies exchanged
+ACTIVITY_PROMOTION_LADDER_TEXT10,Please select the Girl you use for the exchange
+ACTIVITY_PROMOTION_LADDER_TEXT11,Insufficient Promotion Certificate
+ACTIVITY_PROMOTION_TEST_TEXT01,"1. You will gain progress rewards for pulling a certain number of times from the Adv. Capsule during the event.|2. There are basic and additional progress rewards for this event. The additional rewards require Recommendation Letters to unlock.|3. The rewards will be issued via Mail.|4. Recommendation Letters can be obtained by purchasing Mega Value Packs.|5. After the event ends, the remaining Recommendation Letters will automatically be recycled into Coins at a rate of 500k per Recommendation Letter."
+ACTIVITY_PROMOTION_TEST_TEXT02,Adv. Capsule pulled
+ACTIVITY_PROMOTION_TEST_TEXT03,Requires
+ACTIVITY_PROMOTION_TEST_TEXT04,Unlock after obtaining {1} Recommendation Letter(s)
+ACTIVITY_PROMOTION_TEST_TEXT05,"There's still purchase limit left for the gift pack containing Recommendation Letter, confirm to continue?"
 SHRINE_NOTICE_TEXT06,The Trial is over
 SHRINE_NOTICE_TEXT07,Points
 SHRINE_HURDLE_TEXT39,Confirm to give up the buff and get Trial Tokens instead?
@@ -5917,3 +5917,139 @@ SHRINE_HURDLE_SELECT1,Confirm to enter Battle Stage?
 SHRINE_HURDLE_SELECT2,Confirm to enter Reward Stage?
 SHRINE_HURDLE_SELECT3,Confirm to enter Store Stage?
 SHRINE_HURDLE_SELECT4,Confirm to enter Recover Stage?
+TIME_CLOISTER_TEXT109,当时间回廊的加速小于一次触发卡牌的时间的提示
+TIME_CLOISTER_TEXT110,加速时多用一个道具时减去这个道具的提示
+GAME_ASSISTANT_TEXT01,Game Assistant
+GAME_ASSISTANT_TEXT02,Daily
+GAME_ASSISTANT_TEXT03,Challenges
+GAME_ASSISTANT_TEXT04,Growth
+GAME_ASSISTANT_TEXT05,Guild
+GAME_ASSISTANT_TEXT06,Initiate this page
+GAME_ASSISTANT_TEXT07,Initiate All
+GAME_ASSISTANT_TEXT08,Alchemy
+GAME_ASSISTANT_TEXT09,Use Free Chance
+GAME_ASSISTANT_TEXT10,Purchase with Gems
+GAME_ASSISTANT_TEXT11,Set Purchase Limit
+GAME_ASSISTANT_TEXT12,Claim Campaign Loot
+GAME_ASSISTANT_TEXT13,Claim Dorm resource
+GAME_ASSISTANT_TEXT14,Daily Quiz
+GAME_ASSISTANT_TEXT15,Use Free Chance
+GAME_ASSISTANT_TEXT16,Purchase chances with Gems
+GAME_ASSISTANT_TEXT17,Capsule
+GAME_ASSISTANT_TEXT18,Adv. Capsule
+GAME_ASSISTANT_TEXT19,Regular Capsule
+GAME_ASSISTANT_TEXT20,Claim & Send Hearts
+GAME_ASSISTANT_TEXT21,Junior Varsity
+GAME_ASSISTANT_TEXT22,Complete 3 Battles
+GAME_ASSISTANT_TEXT23,Complete 2 Internship Tasks
+GAME_ASSISTANT_TEXT24,Star Level Selection
+GAME_ASSISTANT_TEXT25,Quantity Selection
+GAME_ASSISTANT_TEXT26,Pull Slot Machine 2 times
+GAME_ASSISTANT_TEXT27,Market Purchase
+GAME_ASSISTANT_TEXT28,No merchandise is selected for purchase yet
+GAME_ASSISTANT_TEXT29,Select Item
+GAME_ASSISTANT_TEXT30,Claim Outfit Showcase Reward
+GAME_ASSISTANT_TEXT31,Reset
+GAME_ASSISTANT_TEXT32,Confirm
+GAME_ASSISTANT_TEXT33,Patrol
+GAME_ASSISTANT_TEXT34,Claim Raid Rewards
+GAME_ASSISTANT_TEXT35,Purchase items from merchants
+GAME_ASSISTANT_TEXT36,House Exams
+GAME_ASSISTANT_TEXT37,House Selection
+GAME_ASSISTANT_TEXT38,Free Certificate Raids
+GAME_ASSISTANT_TEXT39,Gem-purchase Certificate Raids
+GAME_ASSISTANT_TEXT40,Primary
+GAME_ASSISTANT_TEXT41,Medium
+GAME_ASSISTANT_TEXT42,Senior
+GAME_ASSISTANT_TEXT43,Servant
+GAME_ASSISTANT_TEXT44,Claim Course Rewards
+GAME_ASSISTANT_TEXT45,Course Selection
+GAME_ASSISTANT_TEXT46,Challenge Training Dummy
+GAME_ASSISTANT_TEXT47,Purchase Stamina
+GAME_ASSISTANT_TEXT48,School Excursion
+GAME_ASSISTANT_TEXT49,Claim Resources
+GAME_ASSISTANT_TEXT50,Purchase Tasty Bread
+GAME_ASSISTANT_TEXT51,Choose Quantity
+GAME_ASSISTANT_TEXT52,Limit: {1}/{2}
+GAME_ASSISTANT_TEXT53,Guild
+GAME_ASSISTANT_TEXT54,Office
+GAME_ASSISTANT_TEXT55,Sign in
+GAME_ASSISTANT_TEXT56,Cafeteria
+GAME_ASSISTANT_TEXT57,Get Order
+GAME_ASSISTANT_TEXT58,Upgrade Order
+GAME_ASSISTANT_TEXT59,Start Order
+GAME_ASSISTANT_TEXT60,Gym
+GAME_ASSISTANT_TEXT61,Set Team
+GAME_ASSISTANT_TEXT62,Challenge Stage 61
+GAME_ASSISTANT_TEXT63,Limit: {1}/{2}
+GAME_ASSISTANT_TEXT64,Initiating
+GAME_ASSISTANT_TEXT65,Completed
+GAME_ASSISTANT_TEXT66,Stop
+GAME_ASSISTANT_TEXT67,Confirm
+GAME_ASSISTANT_TEXT68,Selected
+GAME_ASSISTANT_TEXT69,You need to choose which House Exam you want to challenge
+GAME_ASSISTANT_TEXT70,Stage not cleared yet
+GAME_ASSISTANT_TEXT71,Alchemy Reward
+GAME_ASSISTANT_TEXT72,Daily Quiz Reward
+GAME_ASSISTANT_TEXT73,Junior Varsity battle Rewards ({1} time(s))
+GAME_ASSISTANT_TEXT74,Intern Reward
+GAME_ASSISTANT_TEXT75,Pull Slot Machine ({1} time(s))
+GAME_ASSISTANT_TEXT76,Patrol Raid Reward ({1} time(s))
+GAME_ASSISTANT_TEXT77,House Exam Raid Reward ({1} time(s))
+GAME_ASSISTANT_TEXT78,Servant Course Reward
+GAME_ASSISTANT_TEXT79,Servant - Start New Course
+GAME_ASSISTANT_TEXT80,Servant - Stamina Purcahse
+GAME_ASSISTANT_TEXT81,Servant - Training Reward
+GAME_ASSISTANT_TEXT82,Excursion - Resource Collection
+GAME_ASSISTANT_TEXT83,Excursion - Tasty Bread Purchase
+GAME_ASSISTANT_TEXT84,Guild - Sign in
+GAME_ASSISTANT_TEXT85,Cafeteria - Get Order
+GAME_ASSISTANT_TEXT86,Cafeteria - Upgrade Order ({1} time(s))
+GAME_ASSISTANT_TEXT87,Cafeteria - Start Order
+GAME_ASSISTANT_TEXT88,Gym - Challenge Stage 61 ({1} time(s))
+GAME_ASSISTANT_TEXT89,Gym - Challenge Chance purchase ({1} time(s))
+GAME_ASSISTANT_TEXT90,Completed
+GAME_ASSISTANT_TIPS01,"Higher level of Daily Quiz available to be challenged, do you want to check it out? (Choose ""No"" and get the current collectible Quiz rewards.)"
+GAME_ASSISTANT_TIPS02,Nothing can be completed here for now
+GAME_ASSISTANT_TIPS03,"{1} Gems will be consumed (if Cafeteria - Upgrade Order is included, maybe fewer Gems will be consumed), confirm to continue?"
+GAME_ASSISTANT_TIPS04,Unlock after reaching Servant Training level {1}
+GAME_ASSISTANT_TIPS05,Available after reaching Explore Level {1}
+GAME_ASSISTANT_TIPS06,Unlock after reaching Servant Training level {1} or Explore Level {1}
+GAME_ASSISTANT_TIPS07,Unlock after your Guild reaches level {1}
+GAME_ASSISTANT_TIPS08,Corresponding feature available after Cafeteria reaches level {1}
+GAME_ASSISTANT_TIPS09,Corresponding feature available after Stage 61 in Guild - Gym is unlocked.
+GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+ACTIVITY_PROMOTION_TEST_TEXT06,Pull Adv. Capsules to get Promotion Certificates
+ACTIVITY_LASSO_BUTTON,Toss
+ACTIVITY_LASSO_TEXT01,Please select quantity
+ACTIVITY_LASSO_TIPS,Please set the Grand Prize for this round.
+ACTIVITY_LASSO_TEXT02,"When there are multiple Grand Rewards available in a round, you can only choose to get one of them."
+ACTIVITY_LASSO_HELP,"1. You can toss 1 ring by consuming 1 Ring Toss Ticket during the event. With the help of the Girls, each ring you toss will guarantee a win. The reward for each type of doll is different.|2. You will get the Grand Prize of a round if you hit the biggest doll in the middle (there will also be a random reward for hitting the biggest doll too). After obtaining the Grand Prize, the game will reset and you will enter the next round.|3. The Grand Prize for each round is different. When there are multiple Grand Prizes available in a round, you can only choose to obtain one of them. The Grand Prize selection after round 26 is fixed. After obtaining all rewards in a round after round 26, the game will reset and you will be able to enter the next round and re-select the Grand Prize for the new round.|4. If you've already hit the biggest Doll before using up the Ring Toss Tickets you plan to consume in bulk, the unused Ring Toss Tickets will be returned and you will advance to the next round.|5. Ring Toss Ticket can be obtained from Daily Mail, completing Girls X Capsule Points, purchasing Explorer Packs, Mega Value Pack, Special Gift Pack, and Special Skin Pack.|6. After the event is over, unused Ring Toss Tickets will automatically be retrieved by the system and exchanged into Coins. Each Ring Toss Ticket is worth 50K."
+ACTIVITY_LASSO_OR,Or
+ACTIVITY_LASSO_TEXT03,"Round {1} unlocked, do you want to select your Grand Prize in advance?"
+GAME_ASSISTANT_TEXT91,Overview
+GAME_ASSISTANT_TEXT92,Select
+GAME_ASSISTANT_TEXT93,Not Available
+GAME_ASSISTANT_TIPS10,Please set your Lineup first
+ACTIVITY_PROMOTION_LADDER_TEXT12,Confirm the exchange?
+ACTIVITY_LASSO_TEXT04,After Round 25
+TIME_CLOISTER_TEXT111,所需積分
+TIME_CLOISTER_TEXT112,下一檔加成
+ACTIVITY_FREEBUY_TIME,Ends in {1}
+GAME_ASSISTANT_TEXT94,Setup completed
+GAME_ASSISTANT_TEXT95,No Merchant is met yet
+GAME_ASSISTANT_TEXT96,Fantasy Book - Daily Tasks
+GAME_ASSISTANT_TEXT97,Claim the raid rewards of Patrol first
+GAME_ASSISTANT_TEXT98,No merchandise available
+ACTIVITY_LASSO_TITLE,Toss
+TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
+TIME_CLOISTER_TEXT114,Set Successfully
+ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵
+ACTIVITY_FREEBUY_TEXT02,購買後鑽石全額返還
+ACTIVITY_FREEBUY_TEXT03,購買總得：
+ACTIVITY_FREEBUY_TEXT04,今日可領：
+ACTIVITY_FREEBUY_HELP,零元購未定（暫時不翻）
+ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
+ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
+ACTIVITY_FREEBUY_TEXT07,返利{1}
+TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥加成

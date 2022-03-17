@@ -3543,7 +3543,7 @@ LIMIT_BUY_TIMES,Limite d'achat： {1}
 ENTRANCE_TEST_HELP_DES_1_1_NONEWGIRL,"\nBeaucoup de nouvelles Filles arrivent sur le Campus, vous pouvez les essayer dans différentes compositions."
 GUILD_KICK_TIPS,Êtes-vous sûr d'exclure ce joueur ?
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW_2,"1. La nouvelle version de l'Examen des Maisons est arrivée. La nouvelle version adoptera un mode de saison, qui comprend une période d'évaluation (13 jours) et une journée d'affichage de résultats (1 jour). Chaque saison dure 14 jours.|2. Pendant la période d'évaluation, les 6 Maisons sont ouvertes et vous ne pouvez qu'utiliser des Filles de cette Maison pour combattre. Pendant la journée d'affichage, aucune Étape n'est disponible, la progression sera réinitialisée et vous obtiendrez les récompenses correspondantes.|3. Chaque Examen des Maisons a 100 Étapes. Les ennemis changeront à chaque saison. L'équipe des ennemis peut être aperçue via le bouton ""!"" avant de commencer la bataille.|4. Utiliser 1 Ticket d'Admission pour un Défi, et vous aurez 25 Tickets d'Admission chaque jour. Vous pouvez également utiliser des Gemmes pour en acheter.|5. Chaque Étape vous permet d'obtenir des récompenses très importantes lorsque vous la passez pour la première fois. Les récompenses de première complétion ne peuvent être obtenues qu'une seule fois et ne seront pas réinitialisées lors des saisons suivantes. |6. Passer une Étape avec succès afin de pouvoir obtenir des récompenses de première complétion, de plus, vous pouvez utiliser des Certificats pour obtenir des récompenses de Raid.|7. Vous recevrez 2 Certificats chaque jour. Lorsque vous passez l'Étape 9/18/30 d'une Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 1 Certificat quotidien supplémentaire pour chaque Étape (9/18/30) terminé. 3 Certificats supplémentaires quotidiens maximum. (Exemple : une fois que vous avez réussi à passer la 9ème Étape de n'importe quelle Maison pour la première fois, vous obtiendrez 1 Certificat immédiatement et 3 Certificats chaque jour pour les raids).|8. Vous pouvez utiliser des Gemmes pour acheter Certificats. Le prix d'achat augmentera progressivement avec le nombre d'achats. Jusqu'à 10 achats max par jour. (Les Certificats achetés non utilisés seront réinitialisés s'ils ne sont pas utilisés). |9. Les Tickets d'Admission et les Certificats seront réinitialisés à 00h00 (UTC / GMT 0) chaque jour. |10. Défiez (Raid non inclus) n'importe quelle Étape pour obtenir des points d'Examen: 1 point de l'Étape 1 à 20; 2 points de l'Étape 21 à 40; 4 points de l'Étape 41-60; 6 points de l'Étape 61-80; 8 points de l'Étape 81-100. Lors de la journée d'affichage des résultats, les récompenses seront envoyées par courrier et les points obtenus seront réinitialisés. |11. Chaque joueur TOP1 de chaque Maison recevra une récompense supplémentaire : un Cadre d'Avatar de 14 jours. Dans le cas, où plusieurs joueurs sont à égalité en première place, ils seront classés en fonction du temps qu'ils ont pris à terminer l'Examen, et 10 joueurs au maximum obtiendriont la récompense supplémentaire."
-GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir la nouvelle Fille augmente à chaque [c][DE512B]100[-][/c] tirage de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression est réinitialisée dès son obtention."
+GACHA_GUARANTEE_TEXT,"1. Durant cet événement, la possibilité d'obtenir les Filles 5 étoiles est [c][DE512B]doublée[-][/c].|2. La possibilité d'obtenir la nouvelle Fille augmente à chaque [c][DE512B]100[-][/c] tirage de Capsules Avancées.|3. [c][DE512B]500[-][/c] tirages de Capsules Avancées garantissent une [c][DE512B]{1}[-][/c].|4. La progression sera réinitialisée dès son obtention."
 GACHA_GUARANTEE_UP,Taux UP
 ACTIVITY_ICE_SECRET_BOSS_TEXT01,Tentative restante : {1}
 ACTIVITY_ICE_SECRET_BOSS_TEXT02,Tentative insuffisante !
@@ -3800,7 +3800,7 @@ RE_CHECKIN,Recollecter
 RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
 SUMMON_GIFTBAG_MENU01,Capsules utilisées ({1}/{2})
 SUMMON_GIFTBAG_MENU02,Capsules de Filles
-SUMMON_GIFTBAG_HELP,"Capsula vous a préparé des récompenses spéciales à l'occasion de la nouvelle recrue de l'Académie Yume !||1. Durant cet événement, tirez des Capsules Avancées et obtenez diverses récompenses. À chaque palier de Capsules Avancées utilisées ou de nouvelle Fille obtenue, vous obtiendrez une abondance de récompenses variées !|2. Retrouvez plus d'informations concernant les détails de la prochaine saison de l'événement sur notre page officielle Facebook Girls X Battle 2-FR."
+SUMMON_GIFTBAG_HELP,"Capsula vous a préparé des récompenses spéciales à l'occasion de la nouvelle recrue de l'Académie Yume !|1. Durant cet événement, tirez des Capsules Avancées et obtenez diverses récompenses. À chaque palier de Capsules Avancées utilisées ou de nouvelle Fille obtenue, vous obtiendrez une abondance de récompenses variées !|2. Les Filles obtenues via l'échange de l'événement - Promotion Anticipée ne seront pas comptabilisées dans l'événement - Capsule de Nouvelle Fille.|3. Retrouvez plus d'informations concernant les détails de la prochaine saison de l'événement sur notre page officielle Facebook Girls X Battle 2-FR."
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,Utilisez {2}*{1} pour le débloquer
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Aperçu Partiel
 ACTIVITY_CHRISTMAS_SALE_DESC,Obtenez des récompenses\npersonnalisées grâce à vos\nTickets du Black Friday !
@@ -5813,9 +5813,9 @@ Grand Sanctuaire de Tsuruga
 
 Ouverture du Dojo|Chaque saison dure 14 jours et se divise en 2 phases : Épreuves (12 jours) et Repos (2 jours).
 
-Règles de participation|1. Au début de chaque saison, vous obtiendrez 15 Lettres d’Invitation (limite de sotckage : 15).|2. Chaque saison comprend 3 Épreuves différentes, chacune ayant une Aura fournissant ou imposant un buff ou débuff à vos Filles. Consommez 1 Lettre d’Invitation pour commencer l’Épreuve que vous aurez choisi en amont.|3. Seules les Filles 10 étoiles ou (+) peuvent être sélectionnées pour participer aux Épreuves. Une fois qu\'une Fille est choisie, ses attributs et son statut (comprenant son équipement et ses potentiels) dans cette Épreuve ne seront pas mis à jour si vous les modifier dans d\'autres fonctionnalités.
+Règles de participation|1. Au début de chaque saison, vous obtiendrez 15 Lettres d’Invitation.|2. Chaque saison comprend 3 Épreuves différentes, chacune ayant une Aura fournissant ou imposant un buff ou débuff à vos Filles. Consommez 1 Lettre d’Invitation pour commencer l’Épreuve que vous aurez choisi en amont.|3. Seules les Filles 10 étoiles ou (+) peuvent être sélectionnées pour participer aux Épreuves. Une fois qu\'une Fille est choisie, ses attributs et son statut (comprenant son équipement et ses potentiels) dans cette Épreuve ne seront pas mis à jour si vous les modifier dans d\'autres fonctionnalités.
 
-Niveau de Difficulté|1. Après avoir choisi une Épreuve, vous devrez choisir le niveau de difficulté.|2. Plus le niveau de difficulté choisi sera élevé, plus les ennemis rencontrés seront puissants, ce qui vous permettra ainsi de gagner plus de points.|3. La difficulté du niveau pourra être plus élevée à mesure que vous obtiendrez des points.
+Niveau de Difficulté|1. Après avoir choisi une Épreuve, vous devrez choisir le niveau de difficulté.|2. Plus le niveau de difficulté choisi sera élevé, plus les ennemis rencontrés seront puissants, ce qui vous permettra ainsi de gagner plus de points.|3. Le niveau de difficulté pourra être plus haut à mesure que vous obtiendrez des points.|4. Le niveau de difficulté atteint sera sauvegardé jusqu\'à la prochaine saison et ne sera pas réinitialisé.
 
 Règles des Épreuves|Chaque Épreuve compte 15 étapes, incluant des Étapes Combat, des Étapes Récompense, des Étapes Boutique, des Étapes Guérison et une Étape Boss.|Étape Combat|1. Appuyez sur l’icône des ennemis pour en savoir plus sur eux. Formez votre équipe judicieusement pour les combattre. Obtenez des points en gagnant le combat.|2. Chaque combat dure 15 tours. Vous gagnerez le combat à condition que tous les ennemis soient vaincus en 15 tours. Dans le cas contraire, celui-ci sera considéré comme une défaite. |3. Les PV de vos Filles ne seront pas réinitialisés après chaque combat.|4. Après une défaite, les PV des ennemis seront réinitialisés à 100%%.|Étape Récompense|1. Durant cette étape, vous pouvez sélectionner manuellement un des 3 Bonus aléatoires affichés.|2. Vous pouvez également choisir de ne sélectionner aucun Bonus et ainsi obtenir un certain nombre de Jeton de Dojo qui peut être utilisé dans les Étapes Boutique.|Étape Boutique|1. Achat des Bonus : 3 Bonus vous seront présentés aléatoirement que vous pourrez acheter à l’aide des Jetons de Dojo.|2. Amélioration des Bonus : 3 Bonus que vous possédez vous seront présentés aléatoirement et vous pourrez choisir de les améliorer avec des Jetons de Dojo (chaque Bonus peut être amélioré 2 fois au maximum lors d’une Épreuve).|Étape Guérison|1. Durant cette étape, vous pouvez choisir de soigner vos Filles ou de faire revivre une Fille vaincue.|Étape Boss|1. Vous ne pouvez défier l’Étape Boss qu\'une seule fois lors d’une Épreuve. Après avoir combattu le Boss, cette Épreuve sera considérée comme complétée.|2. Le Boss Final de l’Étape Boss ne peut pas être vaincu. Vous gagnerez des points en fonction des dégâts infligés.
 
@@ -5830,7 +5830,7 @@ SHRINE_HURDLE_TEXT02,Record
 SHRINE_HURDLE_TEXT03,Niveau de Difficulté
 SHRINE_HURDLE_TEXT04,Commencer
 SHRINE_HURDLE_TEXT05,"Voulez-vous utiliser 1 Lettre d'Invitation pour commencer cette Épreuve ?\nUne fois qu'une Fille est choisie, ses attributs et son statut (comprenant son équipement et ses potentiels) dans cette Épreuve ne seront pas mis à jour si vous les modifier dans d'autres fonctionnalités."
-SHRINE_HURDLE_TEXT06,Difficulté recommandée :
+SHRINE_HURDLE_TEXT06,Difficulté recommandée : {1}
 SHRINE_HURDLE_TEXT07,"Le niveau de Difficulté de cette Épreuve pourrait être un peu élevé pour vous, voulez-vous continuer ?"
 SHRINE_HURDLE_TEXT08,Détails
 SHRINE_HURDLE_TEXT09,Étape
@@ -5947,22 +5947,22 @@ SHRINE_HURDLE_CLOSE_TIME,Fin du Dojo dans：
 SHRINE_HURDLE_OPEN_TIME,Ouverture du Dojo dans：
 SHRINE_HURDLE_TEXT38,PV actuels de vos Filles
 ACTIVITY_LAFULI_CASTLE_TEXT13,La limite a été atteinte !
-ACTIVITY_PROMOTION_LADDER_TEXT01,幫助文本
-ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
-ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
-ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證明增長為{2}
-ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT07,碎片
-ACTIVITY_PROMOTION_LADDER_TEXT08,確認
-ACTIVITY_PROMOTION_LADDER_TEXT09,每交換9個本體，所需的晉升證明增加5個
-ACTIVITY_PROMOTION_LADDER_TEXT10,未選擇交換戰姬
-ACTIVITY_PROMOTION_LADDER_TEXT11,晉升證書不足
-ACTIVITY_PROMOTION_TEST_TEXT01,幫助文本
-ACTIVITY_PROMOTION_TEST_TEXT02,高級召喚次數
-ACTIVITY_PROMOTION_TEST_TEXT03,解鎖條件
-ACTIVITY_PROMOTION_TEST_TEXT04,獲得{1}個直升證明後解鎖
-ACTIVITY_PROMOTION_TEST_TEXT05,當前包含直升證明的禮包仍有購買次數，確認要購買此禮包嗎？
+ACTIVITY_PROMOTION_LADDER_TEXT01,"1. Durant cet événement, échangez une des Filles Matérielles proposées contre la nouvelle Fille de la semaine en utilisant des Certificats de Promotion.|2. Pour vos premiers échanges, utilisez 10 Certificats de Promotion pour échanger 1 copie d'une Fille 5 étoiles. Après chaque 9 échanges de copie de Fille 5 étoiles complétés, le nombre de Certificat de Promotion nécessaire pour le prochain échange sera augmenté de 5.|3. Les Étoiles, le Niveau, le Grade, les Équipements, le Cristal, l'Antiquité et le Niveau de Libération de votre Fille Matérielle seront transférés sur la Fille obtenue via l'échange de cet événement (Attention : la Faveur, le Serment ne seront pas transférés).|4. Condition d'échange|Si vous échangez une Fille 6/7/8 étoiles, cet échange sera considéré comme 2 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 9 étoiles, cet échange sera considéré comme 3 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 10 étoiles, cet échange sera considéré comme 5 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 11 étoiles, cet échange sera considéré comme 6 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 12/13 étoiles, cet échange sera considéré comme 7 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 14 étoiles, cet échange sera considéré comme 8 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 15 étoiles, cet échange sera considéré comme 9 copies de Fille 5 étoiles échangées.|5. À chaque nouvelle saison, les Filles Matérielles à échanger seront différentes, et seront généralement les 5 dernières Filles sorties.|6. Les Filles obtenues via l'échange de cet événement ne seront pas comptabilisées dans l'événement - Capsule de Nouvelle Fille.|7. Moyen d'obtention de Certificat de Promotion : Promotion Anticipée.|8. Les Certificats de Promotion non-utilisés seront conservés jusqu'à la prochaine saison."
+ACTIVITY_PROMOTION_LADDER_TEXT02,Détails
+ACTIVITY_PROMOTION_LADDER_TEXT03,Filles Matérielles à échanger
+ACTIVITY_PROMOTION_LADDER_TEXT04,Nombre de Certificat Promotion nécessaire
+ACTIVITY_PROMOTION_LADDER_TEXT05,Le nombre de Certificat de Promotion nécessaire passera\nà {2} après avoir échangé {1} copie(s) de Fille 5 étoiles.
+ACTIVITY_PROMOTION_LADDER_TEXT06,Veuillez choisir une Fille Matérielle à échanger
+ACTIVITY_PROMOTION_LADDER_TEXT07,Fragment
+ACTIVITY_PROMOTION_LADDER_TEXT08,Confirmer
+ACTIVITY_PROMOTION_LADDER_TEXT09,"À chaque 9 échanges de copies de Fille 5 étoiles, le nombre de Certificat de Promotion nécessaire pour le prochain échange sera augmenté de 5."
+ACTIVITY_PROMOTION_LADDER_TEXT10,Vous n'avez pas encore choisi de Fille Matérielle à échanger~
+ACTIVITY_PROMOTION_LADDER_TEXT11,Certifcat de Promotion insuffisant !
+ACTIVITY_PROMOTION_TEST_TEXT01,"1. Durant cet événement, tirez des Capsules Avancées et débloquez les récompenses.|2. Les récompenses sont divisées en récompenses basiques et récompenses supplémentaires. Obtenez des Lettres de Recommandation pour débloquer les récompenses supplémentaires.|3. Les récompenses vous seront envoyées par courrier.|4. Moyen d'obtention de Lettre de Recommandation : Pack de Grande Valeur.|5. Après la fin de l'événement, les Lettres de Recommandation seront converties en Pièce d'Or, 1 Lettre de Recommandation = 500k Pièce d'Or et distribuées par courrier."
+ACTIVITY_PROMOTION_TEST_TEXT02,Capsule Avancée tirée
+ACTIVITY_PROMOTION_TEST_TEXT03,Requiert
+ACTIVITY_PROMOTION_TEST_TEXT04,Débloqué après avoir obtenu {1} Lettre(s) de Recommandation !
+ACTIVITY_PROMOTION_TEST_TEXT05,Vous avez encore la possibilité d'acheter le Pack de Grande Valeur contenant des Lettres de Recommandation. Voulez-vous continuer cet achat ?
 SHRINE_NOTICE_TEXT06,Épreuve terminée !
 SHRINE_NOTICE_TEXT07,Point(s)
 SHRINE_HURDLE_TEXT39,Voulez-vous renoncer au Bonus ? Vous obtiendrez des Jetons de Dojo par défaut.
@@ -5980,3 +5980,139 @@ SHRINE_HURDLE_SELECT1,Voulez-vous entrer dans l'Étape Combat ?
 SHRINE_HURDLE_SELECT2,Voulez-vous entrer dans l'Étape Récompense ?
 SHRINE_HURDLE_SELECT3,Voulez-vous entrer dans l'Étape Boutique ?
 SHRINE_HURDLE_SELECT4,Voulez-vous entrer dans l'Étape Guérison ?
+TIME_CLOISTER_TEXT109,当时间回廊的加速小于一次触发卡牌的时间的提示
+TIME_CLOISTER_TEXT110,加速时多用一个道具时减去这个道具的提示
+GAME_ASSISTANT_TEXT01,遊戲助手
+GAME_ASSISTANT_TEXT02,日常
+GAME_ASSISTANT_TEXT03,挑戰
+GAME_ASSISTANT_TEXT04,成長
+GAME_ASSISTANT_TEXT05,社團
+GAME_ASSISTANT_TEXT06,執行本頁
+GAME_ASSISTANT_TEXT07,執行全部
+GAME_ASSISTANT_TEXT08,點金手
+GAME_ASSISTANT_TEXT09,免費點金
+GAME_ASSISTANT_TEXT10,鑽石點金
+GAME_ASSISTANT_TEXT11,設置購買上限
+GAME_ASSISTANT_TEXT12,領取掛機收穫
+GAME_ASSISTANT_TEXT13,領取宿舍產出
+GAME_ASSISTANT_TEXT14,日常測驗
+GAME_ASSISTANT_TEXT15,免費領取
+GAME_ASSISTANT_TEXT16,鑽石領取
+GAME_ASSISTANT_TEXT17,扭蛋
+GAME_ASSISTANT_TEXT18,高級扭蛋
+GAME_ASSISTANT_TEXT19,普通扭蛋
+GAME_ASSISTANT_TEXT20,收發愛心
+GAME_ASSISTANT_TEXT21,校園聯賽
+GAME_ASSISTANT_TEXT22,完成3次戰鬥
+GAME_ASSISTANT_TEXT23,完成2次打工任務
+GAME_ASSISTANT_TEXT24,星級選擇
+GAME_ASSISTANT_TEXT25,數量選擇
+GAME_ASSISTANT_TEXT26,販賣機抽獎2次
+GAME_ASSISTANT_TEXT27,商品購買
+GAME_ASSISTANT_TEXT28,當前未選擇商品
+GAME_ASSISTANT_TEXT29,選擇商品
+GAME_ASSISTANT_TEXT30,領取櫥窗獎勵
+GAME_ASSISTANT_TEXT31,重置
+GAME_ASSISTANT_TEXT32,Confirmer
+GAME_ASSISTANT_TEXT33,Patrouille
+GAME_ASSISTANT_TEXT34,獲得掃蕩獎勵
+GAME_ASSISTANT_TEXT35,購買商品
+GAME_ASSISTANT_TEXT36,學園考核
+GAME_ASSISTANT_TEXT37,陣營選擇
+GAME_ASSISTANT_TEXT38,免費掃蕩
+GAME_ASSISTANT_TEXT39,鑽石掃蕩
+GAME_ASSISTANT_TEXT40,初級
+GAME_ASSISTANT_TEXT41,中級
+GAME_ASSISTANT_TEXT42,高級
+GAME_ASSISTANT_TEXT43,使魔
+GAME_ASSISTANT_TEXT44,領取課程獎勵
+GAME_ASSISTANT_TEXT45,課程選擇
+GAME_ASSISTANT_TEXT46,挑戰訓練假人
+GAME_ASSISTANT_TEXT47,購買體力
+GAME_ASSISTANT_TEXT48,校外遠足
+GAME_ASSISTANT_TEXT49,領取收益
+GAME_ASSISTANT_TEXT50,購買美味麵包
+GAME_ASSISTANT_TEXT51,購買數量
+GAME_ASSISTANT_TEXT52,每日限購：{1}/{2}
+GAME_ASSISTANT_TEXT53,社團
+GAME_ASSISTANT_TEXT54,社團辦公室
+GAME_ASSISTANT_TEXT55,簽到
+GAME_ASSISTANT_TEXT56,Cafétéria
+GAME_ASSISTANT_TEXT57,獲得訂單
+GAME_ASSISTANT_TEXT58,Améliorer en masse
+GAME_ASSISTANT_TEXT59,Commencer
+GAME_ASSISTANT_TEXT60,體育館
+GAME_ASSISTANT_TEXT61,設置陣容
+GAME_ASSISTANT_TEXT62,挑戰第61關敵人
+GAME_ASSISTANT_TEXT63,Limite d'Achat: {1}/{2}
+GAME_ASSISTANT_TEXT64,助手執行中...
+GAME_ASSISTANT_TEXT65,執行結束
+GAME_ASSISTANT_TEXT66,Arrêter
+GAME_ASSISTANT_TEXT67,Confirmer
+GAME_ASSISTANT_TEXT68,Sélectionné
+GAME_ASSISTANT_TEXT69,未選擇陣營
+GAME_ASSISTANT_TEXT70,當前未通關
+GAME_ASSISTANT_TEXT71,點金手獎勵
+GAME_ASSISTANT_TEXT72,日常測驗獎勵
+GAME_ASSISTANT_TEXT73,校園聯賽戰鬥獎勵（{1}次）
+GAME_ASSISTANT_TEXT74,完成打工獎勵
+GAME_ASSISTANT_TEXT75,販賣機抽獎（{1}次）
+GAME_ASSISTANT_TEXT76,守護校園掃蕩獎勵（{1}次）
+GAME_ASSISTANT_TEXT77,學院考核掃蕩獎勵（{1}次）
+GAME_ASSISTANT_TEXT78,使魔課程獎勵
+GAME_ASSISTANT_TEXT79,使魔開始新課程
+GAME_ASSISTANT_TEXT80,使魔_挑戰訓練體力購買
+GAME_ASSISTANT_TEXT81,使魔_挑戰訓練獎勵
+GAME_ASSISTANT_TEXT82,校外遠足_領取收益
+GAME_ASSISTANT_TEXT83,校外遠足_購買美味麵包
+GAME_ASSISTANT_TEXT84,社團_簽到
+GAME_ASSISTANT_TEXT85,社團餐廳_獲得訂單
+GAME_ASSISTANT_TEXT86,社團餐廳_升級訂單（{1}次）
+GAME_ASSISTANT_TEXT87,社團餐廳_開始訂單
+GAME_ASSISTANT_TEXT88,社團體育館_挑戰61關（{1}次）
+GAME_ASSISTANT_TEXT89,社團體育館_購買挑戰次數（{1}次）
+GAME_ASSISTANT_TEXT90,Terminé
+GAME_ASSISTANT_TIPS01,當前存在更高難度的日常測驗可挑戰，是否前往？（選否則領取當前可領的最高測驗獎勵）
+GAME_ASSISTANT_TIPS02,當前沒有可以執行的內容
+GAME_ASSISTANT_TIPS03,預計消耗包括{1}鑽石（選擇社團訂單升級，則實際耗鑽可能更少），是否繼續？
+GAME_ASSISTANT_TIPS04,使魔訓練室達到{1}級後，開啟相關功能
+GAME_ASSISTANT_TIPS05,校外遠足探險達到{1}級後，開啟相關功能
+GAME_ASSISTANT_TIPS06,使魔訓練室達到{1}級或者校外遠足中探險達到{1}級後解鎖
+GAME_ASSISTANT_TIPS07,學長加入{1}級及以上的社團後解鎖
+GAME_ASSISTANT_TIPS08,餐廳達到{1}級後，開啟相關功能
+GAME_ASSISTANT_TIPS09,體育館開啟第61關後，開啟相關功能
+GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+ACTIVITY_PROMOTION_TEST_TEXT06,Tirez des Capsules Avancées pour obtenir des Certificats de Promotion.
+ACTIVITY_LASSO_BUTTON,Lancer
+ACTIVITY_LASSO_TEXT01,Entrez le nombre d'anneaux que vous voulez lancer
+ACTIVITY_LASSO_TIPS,Veuillez d'abord choisir la Récompense Finale de ce tour !
+ACTIVITY_LASSO_TEXT02,Obtenez une Récompense Finale à chaque tour
+ACTIVITY_LASSO_HELP,"1. Durant cet événement, utilisez 1 Ticket Magique pour lancer 1 anneau pour obtenir une récompense aléatoire.|2. Si votre anneau tombe sur le grand lapin, vous recevrez une Récompense Finale et accéderez au tour suivant.|3. Si plusieurs Récompenses Finales sont proposées lors d'un tour, vous serez amené à choisir une Récompense Finale en amont. Après le 26ème tour, les 3 Récompenses Finales proposées ne changeront plus.|4. Si vous utilisez des Tickets Magiques en masse et qu'un des anneaux tombe sur le grand lapin, le surplus de Tickets Magiques vous sera rendu.|5. Moyen d'obtention de Ticket Magique : Courrier Quotidien, Capsule de Nouvelle Fille, Sac d'Aventurier, Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|6. Après l'événement, les Tickets Magiques non-utilisés seront convertis en Pièce d'Or, 1 Ticket Magique = 50K Pièce d'Or et distribuées par courrier."
+ACTIVITY_LASSO_OR,ou
+ACTIVITY_LASSO_TEXT03,"Cette récompense sera débloquée au {1}e tour, voulez-vous choisir la Récompense Finale de ce tour à l'avance ?"
+GAME_ASSISTANT_TEXT91,統計
+GAME_ASSISTANT_TEXT92,Choisir
+GAME_ASSISTANT_TEXT93,當前未開啟
+GAME_ASSISTANT_TIPS10,請先設置陣容
+ACTIVITY_PROMOTION_LADDER_TEXT12,Confirmez-vous cet échange ?
+ACTIVITY_LASSO_TEXT04,T.26 (et +)
+TIME_CLOISTER_TEXT111,所需積分
+TIME_CLOISTER_TEXT112,下一檔加成
+ACTIVITY_FREEBUY_TIME,{1}結束購買
+GAME_ASSISTANT_TEXT94,設置完成
+GAME_ASSISTANT_TEXT95,當前沒有遇到商人
+GAME_ASSISTANT_TEXT96,綺幻手冊_每日任務
+GAME_ASSISTANT_TEXT97,先領取守護校園掃蕩獎勵
+GAME_ASSISTANT_TEXT98,當前沒有商品
+ACTIVITY_LASSO_TITLE,Lancer d'anneaux
+TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
+TIME_CLOISTER_TEXT114,設置成功
+ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵
+ACTIVITY_FREEBUY_TEXT02,購買後鑽石全額返還
+ACTIVITY_FREEBUY_TEXT03,購買總得：
+ACTIVITY_FREEBUY_TEXT04,今日可領：
+ACTIVITY_FREEBUY_HELP,零元購未定（暫時不翻）
+ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
+ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
+ACTIVITY_FREEBUY_TEXT07,返利{1}
+TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥加成
