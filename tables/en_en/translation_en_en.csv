@@ -444,7 +444,7 @@ FORGET_PASSWORD,Forgot PW
 CANCEL,Cancel
 SHENXUE_WINDOW_HELP,"1. Chose one Girl to increase the Star Level of and Girls to use as materials.|2. The chosen Girl will maintain her original level and Gear.|3. Sacrificed Girls will be converted into EXP Juice and Lunch Boxes. Equipped Gear will also be sent automatically to your Bag. |4. After increasing Star Level, the chosen Girl will have better stats and skill effects.|5. When a girl whose Intimacy is higher than 0 when Graduated, she will inherit the Intimacy."
 TOWER_WINDOW_HELP,"1. You must hold at least one Permit to be allowed to enter a Test. Defeat will consume a single Permit. |2. You will get a new Permit every 30 minutes, and you can only hold 10 Permits at a time.|3. Difficulty increases at each floor. Defeating a Test Guardian awards more rewards. |4. Players will be ranked according to the Test level they reach.|5. You will be able to skip battles in Tests after you pass Stage 200."
-DUNGEON_WINDOW_HELP,"1. Patrol will open for 48 hours and reopen again after 48 hours.|2. Player can choose up to 5 Girls to join the Patrol Team. The lineup can't be changed until the next Challenge round. (The Level, Gear setup, and Potential Selection of the Girls selected will also NOT be updated until the next Chellenge round)|3. Tap to check the enemies' information and manually choose 1 Girl to fight against the enemies.|4. Choose Quick Combat to skip the fight and directly view results. or choose Normal Combat to watch the fight and view results when the fight is over.|5. After the fight is over, Girl HP for both sides will be retained. Girls who run out of HP can't participate in fights any more.|6. Each fight lasts 15 rounds. The team who kills the enemy within 15 rounds will win. Fights that last more than 15 rounds count as losses.|7. Victory will lead to 1 of 3 results: gaining a Chest, meeting a Merchant, or gaining an item. Results are randomly generated after each fight.|8. Chest: contains Coins or Gems.|9. Merchant: a chance to buy items (tap “Skip” continue to the next fight).|10. Items: divided into two categories -- Stationery and Rice Balls. Rice Balls can be used to heal your girls and Stationery can provide additional buffs. Each type of Stationery will no longer be obtained once you've acquired 20 of them.|11. Rice Balls can be saved (until the current Patrol ends). Tap the Rice Ball icon to use.|12. The Challenge ends after all Girls from the attack team run out of HP.|13. Patrol has 6 phases: Easy, Normal, Hard, Extreme, Fantasy and Nightmare. There are 100 stages for each phase. Passing the 100th stage will unlock the next phase challenge.|14. After you have passed 50 stages of each phase, you can Auto Smash past phases when Patrol opens the next time."
+DUNGEON_WINDOW_HELP,"1. Patrol will open for 48 hours and reopen again after 48 hours.|2. Player can choose up to 5 Girls to join the Patrol Team. The lineup can't be changed until the next Challenge round. (The Level, Gear setup, and Potential Selection of the Girls selected will also NOT be updated until the next Chellenge round)|3. Tap to check the enemies' information and manually choose 1 Girl to fight against the enemies.|4. Choose Quick Combat to skip the fight and directly view results. or choose Normal Combat to watch the fight and view results when the fight is over.|5. After the fight is over, Girl HP for both sides will be retained. Girls who run out of HP can't participate in fights any more.|6. Each fight lasts 15 rounds. The team who kills the enemy within 15 rounds will win. Fights that last more than 15 rounds count as losses.|7. Victory will lead to 1 of 3 results: gaining a Chest, meeting a Merchant, or gaining an item. Results are randomly generated after each fight.|8. Chest: contains Coins or Gems.|9. Merchant: a chance to buy items (tap “Skip” continue to the next fight). The merchandise they might provide is at random.|10. Items: divided into two categories -- Stationery and Rice Balls. Rice Balls can be used to heal your girls and Stationery can provide additional buffs. Each type of Stationery will no longer be obtained once you've acquired 20 of them.|11. Rice Balls can be saved (until the current Patrol ends). Tap the Rice Ball icon to use.|12. The Challenge ends after all Girls from the attack team run out of HP.|13. Patrol has 6 phases: Easy, Normal, Hard, Extreme, Fantasy and Nightmare. There are 100 stages for each phase. Passing the 100th stage will unlock the next phase challenge.|14. After you have passed 50 stages of each phase, you can Auto Smash past phases when Patrol opens the next time."
 GET_WAY_EQUIP,Go {1}-{2}
 PARTNER_LIST_FULL,Your Girls list is full. Increase your VIP level or purchase additional space. Do you want to purchase more space?
 REST_TIME,Ending in:
@@ -1782,9 +1782,9 @@ ACTIVITY_JACKPOT_ENERGY_USE_TIPS,You will get the reward {1} times
 ACTIVITY_JACKPOT_ENERGY_RESUME,Recover 1 Energy：
 ACTIVITY_JACKPOT_ENERGY_FULL,Energy is full
 ACTIVITY_JACKPOT_ENERGY_NOT_ENOUGH,Insufficient Energy
-SUBSCRIPTION_CANCEL_TIP1,"Each account has a free 7-day description. Afterwards, your account will be automatically be charged $0.99 for 7 more days. Can be cancelled at any time."
-SUBSCRIPTION_CANCEL_TIP2,"Each account has a free 7-day description. Afterwards, your account will be automatically be charged $3.99 for 30 more days. Can be cancelled at any time."
-SUBSCRIPTION_CANCEL_TIP3,"Each account has a free 7-day description. Afterwards, your account will be automatically be charged $9.99 for 90 more days. Can be cancelled at any time."
+SUBSCRIPTION_CANCEL_TIP1,"Each account has a free 7-day subscription. Afterwards, your account will be automatically be charged $0.99 for 7 more days. Can be cancelled at any time."
+SUBSCRIPTION_CANCEL_TIP2,"Each account has a free 7-day subscription. Afterwards, your account will be automatically be charged $3.99 for 30 more days. Can be cancelled at any time."
+SUBSCRIPTION_CANCEL_TIP3,"Each account has a free 7-day subscription. Afterwards, your account will be automatically be charged $9.99 for 90 more days. Can be cancelled at any time."
 ACTIVITY_BEACH_ONE_TIPS,You can deal more damage by linking more same type octopus to deal more damage! Are you sure to continue?
 ACTIVITY_BEACH_OVERKILL_TIPS,You can defeat the enemy in this attack without tripling you damage! Are you sure to continue?
 DUNGEON_BUSSINESS_MAN_TEXT1,"Hey! Isn't that Senpai? Since we've known each other this long, I'll give you a discount~"
@@ -2056,7 +2056,7 @@ ARENA_ALL_SERVER_OPEN,The feature will be unlocked after：
 ARENA_ALL_SERVER_TEXT_31,The Finals haven't started yet!
 ARENA_ALL_SERVER_TEXT_32,Support Rate
 VOW_SWAP_TIPS,One of these Girls has Oath status with you. The process will consume the Girl and WILL NOT return her Oath Ring. Do you wish to continue?
-CANDY_COLLECT_HELP,"1. Collect Lanterns to exchange rewards with the girls.|2. Tap on a girl to view their rewards exchange page.|3. Tap the “+” icon next to the Lantern icon to view details and acquire methods.|4. You can exchange a second reward from the same girl after one reward has been exchanged from every girl.|5. Lanterns can be earned by completing the tasks below:|---Get 1 Lantern for each 5-star girl obtained during the event|---Get 5 Lanterns for each 6-star girl obtained during the event|---Get 1 Lantern for each 4+star internship quest completed|---Get 1 Lantern for every 5 Junior Varsity battles|Note: There is a limit on how many times the tasks can be completed. Furthermore, Girls obtained from Enroll – Exchange and Girl Reverse will not count towards completing the event tasks.|6. Once event ends, remaining Lanterns will automatically be exchanged into Coins at a rate of 15K Coins each. The Coins will be sent via Mail."
+CANDY_COLLECT_HELP,"1. Collect Lanterns to exchange rewards with the girls.|2. Tap on a girl to view their rewards exchange page.|3. Tap the “+” icon next to the Lantern icon to view details and acquire methods.|4. You can exchange a second reward from the same girl after one reward has been exchanged from every girl.|5. Lanterns can be earned by completing the tasks below:|---Get 2 Lanterns for each 5-star girl obtained during the event|---Get 10 Lanterns for each 6-star girl obtained during the event|---Get 2 Lanterns for each 4+star internship quest completed|---Get 1 Lantern for every 3 League Tickets consumed|Note: There is a limit on how many times the tasks can be completed. Furthermore, Girls obtained from Enroll – Exchange and Girl Reverse will not count towards completing the event tasks.|6. Once event ends, remaining Lanterns will automatically be exchanged into Coins at a rate of 15K Coins each. The Coins will be sent via Mail."
 CANDY_COLLECT_TEXT_1,You can exchange another reward here after you've exchanged a reward from each girl
 CANDY_COLLECT_TEXT_2,Are you sure to exchange this reward?
 CANDY_COLLECT_TEXT_3,Exchange a reward from every girl to exchange a second reward here!
@@ -4493,7 +4493,7 @@ ACTIVITY_RETURN_GIFT_TEXT,Customize your own pack!
 ENTRANCE_TEST_SHOWS_TIPS,Win the Bet for [c][0x723c1c size=34]DOUBLE[-][/c] Coins.
 ENTRANCE_TEST_GUESS_CHANGE,Change Bet
 REPAIR_TO_RESET_GAME,"The game will be restarted automatically after the repair, continue?"
-PUB_MISSION_AUTO_HELP,"1. Multi-Intern can help you to start internship tasks easier.|2. When the number of ongoing internship tasks and the number of completed internship tasks reach the limit, you will not be able to use the Multi-Intern feature. Please collect the rewards first before you use the feature again.|3. You can select the star rank of the internship tasks you want to start in Multi-Intern feature.|4. If there's an internship task you don't want to start, please tap the ""√"" again to cancel it."
+PUB_MISSION_AUTO_HELP,"1. Multi-Intern can help you to start Internship Quests easier.|2. When the number of ongoing Internship Quests and the number of completed Internship Quests reach the limit, you will not be able to use the Multi-Intern feature. Please collect the rewards first before you use the feature again.|3. You can select the star rank of the Internship Quests you want to start in Multi-Intern feature.|4. If there's an Internship Quest you don't want to start, please tap the ""√"" again to cancel it."
 ENTRANCE_TEST_GUESS_CHANGE_TIPS,Do you want to change your bet on this team?
 ACTIVITY_RESIDENT_RETURN_RECOMMENT1,"Senpai, it's been a long time since we last met!"
 ACTIVITY_RESIDENT_RETURN_RECOMMENT2,We've listed some suitable friends and Guilds for you~
@@ -5873,12 +5873,12 @@ ACTIVITY_LAFULI_CASTLE_TEXT08,obtained|(can obtain {1} this way)
 ACTIVITY_LAFULI_CASTLE_TEXT09,Limit
 ACTIVITY_LAFULI_CASTLE_TEXT10,Task Reward will be issued directly to Bag
 ACTIVITY_LAFULI_CASTLE_TEXT11,Complete Limit
-TIME_CLOISTER_TEXT97,水晶卡詳情
-TIME_CLOISTER_TEXT98,全部
-TIME_CLOISTER_TEXT99,水晶卡詳情幫助本文，helpbtn
+TIME_CLOISTER_TEXT97,Crystal Card Details
+TIME_CLOISTER_TEXT98,All
+TIME_CLOISTER_TEXT99,Crystal Card Help
 ACTIVITY_LAFULI_CASTLE_TEXT12,"1. You can get rewards for completing Challenge Tasks.|2. You can obtain Challenge Points by completing some of the Tasks. You will get 1 additional ""Rainbow Sand"" for each Challenge Point obtained. (You can obtain [c][0069cc]100[-][/c] ""Rainbow Sand"" this way.)"
-TIME_CLOISTER_TEXT100,戰鬥加成
-TIME_CLOISTER_TEXT101,戰鬥加成會在此迴廊的遭遇戰、關卡戰鬥中生效
+TIME_CLOISTER_TEXT100,Battle Buffs
+TIME_CLOISTER_TEXT101,Battle buffs will take effect in the Stage battles and Skirmish battles in this World of Time.
 ACTIVITY_START_COUNT,Begins in [c][9eff8b]{1}[-][/c]
 SHRINE_HURDLE_CLOSE_TIME,Trial ends in:
 SHRINE_HURDLE_OPEN_TIME,Trial begins in:
@@ -5903,13 +5903,13 @@ ACTIVITY_PROMOTION_TEST_TEXT05,"There's still purchase limit left for the gift p
 SHRINE_NOTICE_TEXT06,The Trial is over
 SHRINE_NOTICE_TEXT07,Points
 SHRINE_HURDLE_TEXT39,Confirm to give up the buff and get Trial Tokens instead?
-TIME_CLOISTER_TEXT102,科技組-水晶
-TIME_CLOISTER_TEXT103,獲取方案:
-TIME_CLOISTER_TEXT104,卡牌詳情
-TIME_CLOISTER_TEXT105,戰鬥技能
-TIME_CLOISTER_TEXT106,購買卡牌換取積分
-TIME_CLOISTER_TEXT107,科技組-水晶幫助文本
-TIME_CLOISTER_TEXT108,積分:
+TIME_CLOISTER_TEXT102,Technology · Crystal
+TIME_CLOISTER_TEXT103,Obtain Method:
+TIME_CLOISTER_TEXT104,Card details
+TIME_CLOISTER_TEXT105,Battle Skill
+TIME_CLOISTER_TEXT106,Purchase Card to get points
+TIME_CLOISTER_TEXT107,"1. When Observing in this World of Time, you might obtain Red, Yellow, and Blue Crystals that can be used to purchase the Crystal Cards.|2. You can set bonuses for getting the 3 Crystals. Types and effects of the bonuses can be upgraded in Planetarium - Technology · Crystals.|3. There are multiple types of Crystal Cards, the price for each type of Crystal Card is different. You will be able to upgrade card level and get points upon purchasing the cards.|4. According to your total points, you will get boosts in Courage, Charm, and Knowledge in this World of Time.|5. Each type of Crystal Card provides a unique Battle Skill and you can activate 3 Battle Skills at a time in this World of Time to aid you in Skirmish Battles and Stage Battles."
+TIME_CLOISTER_TEXT108,Points:
 ACTIVITY_LAFULI_CASTLE_TEXT14,Confirm to get {2} Girl(s) from House {1}?
 SHRINE_HURDLE_SHOP_TAB1,Purchase
 SHRINE_HURDLE_SHOP_TAB2,Upgrade
@@ -5917,8 +5917,8 @@ SHRINE_HURDLE_SELECT1,Confirm to enter Battle Stage?
 SHRINE_HURDLE_SELECT2,Confirm to enter Reward Stage?
 SHRINE_HURDLE_SELECT3,Confirm to enter Store Stage?
 SHRINE_HURDLE_SELECT4,Confirm to enter Recover Stage?
-TIME_CLOISTER_TEXT109,当时间回廊的加速小于一次触发卡牌的时间的提示
-TIME_CLOISTER_TEXT110,加速时多用一个道具时减去这个道具的提示
+TIME_CLOISTER_TEXT109,"The Observation is over in advance since the remaining time is too short, this will not cost your Time Essence"
+TIME_CLOISTER_TEXT110,"When the remaining time of an Observation is not enough for you to get another Card, you can end the Observation without consuming additional Time Essence."
 GAME_ASSISTANT_TEXT01,Game Assistant
 GAME_ASSISTANT_TEXT02,Daily
 GAME_ASSISTANT_TEXT03,Challenges
@@ -5941,8 +5941,8 @@ GAME_ASSISTANT_TEXT19,Regular Capsule
 GAME_ASSISTANT_TEXT20,Claim & Send Hearts
 GAME_ASSISTANT_TEXT21,Junior Varsity
 GAME_ASSISTANT_TEXT22,Complete 3 Battles
-GAME_ASSISTANT_TEXT23,Complete 2 Internship Tasks
-GAME_ASSISTANT_TEXT24,Star Level Selection
+GAME_ASSISTANT_TEXT23,Complete 2 Internship Quests
+GAME_ASSISTANT_TEXT24,Select Level
 GAME_ASSISTANT_TEXT25,Quantity Selection
 GAME_ASSISTANT_TEXT26,Pull Slot Machine 2 times
 GAME_ASSISTANT_TEXT27,Market Purchase
@@ -5980,7 +5980,7 @@ GAME_ASSISTANT_TEXT58,Upgrade Order
 GAME_ASSISTANT_TEXT59,Start Order
 GAME_ASSISTANT_TEXT60,Gym
 GAME_ASSISTANT_TEXT61,Set Team
-GAME_ASSISTANT_TEXT62,Challenge Stage 61
+GAME_ASSISTANT_TEXT62,Challenge Boss 61
 GAME_ASSISTANT_TEXT63,Limit: {1}/{2}
 GAME_ASSISTANT_TEXT64,Initiating
 GAME_ASSISTANT_TEXT65,Completed
@@ -6018,7 +6018,7 @@ GAME_ASSISTANT_TIPS06,Unlock after reaching Servant Training level {1} or Explor
 GAME_ASSISTANT_TIPS07,Unlock after your Guild reaches level {1}
 GAME_ASSISTANT_TIPS08,Corresponding feature available after Cafeteria reaches level {1}
 GAME_ASSISTANT_TIPS09,Corresponding feature available after Stage 61 in Guild - Gym is unlocked.
-GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+GAME_ASSISTANT_HELP01,"[c][0069cc]Daily[-][/c]|1. If “Yes” is selected in the Capsule-related settings, then the Free Chances will be used first if any are available;|2. Only the Slot Machine will be drawn from. The Game Assistant will not draw from the Super Slot Machine;|3. The Game Assistant will claim rewards from the highest Daily Quiz Level that you can claim from;|4. In the opponents that you are paired with, the Game Assistant will challenge the team with the lowest Battle Power;|[c][0069cc]Challenges[-][/c]|1. The Patrol Team lineup needs to be set up before the Raid Rewards can be claimed by the Game Assistant;|2. After choosing the House of the House Exams, if you have already cleared several stages, the Game Assistant can use Certificates to Raid the cleared stages.;|[c][0069cc]Growth[-][/c]|1. Excursion Resources can be claimed once per hour;|2. After claiming course rewards, the Game Assistant will automatically start the same courses with the same Servants;|3. When challenging the Training Dummy, the Game Assistant will use Servants that are stronger than others to challenge;|[c][0069cc]Guild[-][/c]|1. Before getting new Orders, the Game Assistant will claim rewards from completed Orders. If there are orders waiting to be started, it will automatically start them;|2. When calculating the Gems needed to upgrade the orders, all the orders you get will be counted as Lv.1 orders. Therefore, fewer Gems might be consumed than predicted when upgrading orders in Cafeteria;|3. If you choose to  challenge the 61st boss in Gym, all challenge chances of the day will be used."
 ACTIVITY_PROMOTION_TEST_TEXT06,Pull Adv. Capsules to get Promotion Certificates
 ACTIVITY_LASSO_BUTTON,Toss
 ACTIVITY_LASSO_TEXT01,Please select quantity
@@ -6033,8 +6033,8 @@ GAME_ASSISTANT_TEXT93,Not Available
 GAME_ASSISTANT_TIPS10,Please set your Lineup first
 ACTIVITY_PROMOTION_LADDER_TEXT12,Confirm the exchange?
 ACTIVITY_LASSO_TEXT04,After Round 25
-TIME_CLOISTER_TEXT111,所需積分
-TIME_CLOISTER_TEXT112,下一檔加成
+TIME_CLOISTER_TEXT111,Points required
+TIME_CLOISTER_TEXT112,Next Tier Buff
 ACTIVITY_FREEBUY_TIME,Ends in {1}
 GAME_ASSISTANT_TEXT94,Setup completed
 GAME_ASSISTANT_TEXT95,No Merchant is met yet
@@ -6042,14 +6042,24 @@ GAME_ASSISTANT_TEXT96,Fantasy Book - Daily Tasks
 GAME_ASSISTANT_TEXT97,Claim the raid rewards of Patrol first
 GAME_ASSISTANT_TEXT98,No merchandise available
 ACTIVITY_LASSO_TITLE,Toss
-TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
+TIME_CLOISTER_TEXT113,Option available after unlocking Technology {1}
 TIME_CLOISTER_TEXT114,Set Successfully
-ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵
-ACTIVITY_FREEBUY_TEXT02,購買後鑽石全額返還
-ACTIVITY_FREEBUY_TEXT03,購買總得：
-ACTIVITY_FREEBUY_TEXT04,今日可領：
-ACTIVITY_FREEBUY_HELP,零元購未定（暫時不翻）
-ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
-ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
-ACTIVITY_FREEBUY_TEXT07,返利{1}
-TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥加成
+ACTIVITY_FREEBUY_TEXT01,"Tap the icon above the pack to check the rewards It provides|After the purchase, the Gems you consumed for the purchase will be returned in full."
+ACTIVITY_FREEBUY_TEXT02,Purchase to get:
+ACTIVITY_FREEBUY_TEXT04,Obtainable Today:
+ACTIVITY_FREEBUY_HELP,"1. The packs here can be purchased with Gems. Only the first pack is unlocked by default, the following packs will be unlocked after all their previous packs are purchased. You can claim 1 reward instantly upon purchasing a pack, you will also be able to claim a reward each day in the following 7 days.|2. The unclaimed daily rewards will be saved and remain claimable on the next day.|3. The unclaimed rewards will be issued via Mail after the event ends."
+ACTIVITY_FREEBUY_TEXT05,Get Gems and many other rewards in the next 7 days!
+ACTIVITY_FREEBUY_TEXT06,Over 250%% worth of rewards!
+ACTIVITY_FREEBUY_TEXT07,Value x{1}
+TIME_CLOISTER_TEXT115,3 Battle Skills from Crystal Cards can take effect at the same time at most
+ACTIVITY_LOTTERY_TEXT01,The chance for you to get collector's collections will increase as you draw more times.
+ACTIVITY_LOTTERY_TEXT02,Obtainable Rewards
+ACTIVITY_LOTTERY_TEXT03,Skip
+ACTIVITY_LOTTERY_TEXT04,Free
+ACTIVITY_LOTTERY_TEXT05,Obtain {1} VIP Exp during the event
+ACTIVITY_LOTTERY_TEXT06,Insufficient Treasure Ticket
+ACTIVITY_LOTTERY_TEXT07,Draw
+ACTIVITY_LOTTERY_TEXT08,By obtaining VIP Exp to get Treasure Tickets during the event. You can use the Treasure Tickets to draw rewards!
+TIME_CLOISTER_TEXT116,You can only compete your damage record with other players in 2 Worlds of Time at the same time. Your damage record in {1} is thus been erased.
+TIME_CLOISTER_TEXT117,"A new World of Time is unlocked, you cannot participate in the damage ranking of this World of Time, confirm to continue?"
+ACTIVITY_FREEBUY_TEXT08,"You can unlock this pack by purchasing the previous pack, do you want to go and check it out?"

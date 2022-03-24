@@ -15,7 +15,7 @@ id,name,desc,unlock
 14,Plain Button · 4,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
 15,Plain Button · 5,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 80%
 16,Plain Silk · 1,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",
-17,Plain Silk · 1,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 15%
+17,Plain Silk · 2,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 15%
 18,Plain Silk · 3,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 30%
 19,Plain Silk · 4,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 45%
 20,Plain Silk · 5,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
@@ -64,7 +64,7 @@ id,name,desc,unlock
 63,Plain Button · 4,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
 64,Plain Button · 5,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 80%
 65,Plain Silk · 1,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",
-66,Plain Silk · 1,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 15%
+66,Plain Silk · 2,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 15%
 67,Plain Silk · 3,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 30%
 68,Plain Silk · 4,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 45%
 69,Plain Silk · 5,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
@@ -98,3 +98,52 @@ id,name,desc,unlock
 97,Support · Advanced Skill 2,"When you challenge Stages in this World of Time or trigger Challenge Cards in the future, increase your Charisma by {1}.",
 98,Support · Advanced Skill 3,"When you challenge Stages in this World of Time or trigger Challenge Cards in the future, increase your Knowledge by {1}.",
 99,Support · Advanced Skill 4,"When you challenge Stages in this World of Time or trigger Challenge Cards in the future, increase your Courage, Charisma, and Knowledge by {1}.",
+100,Observation Length · 1,Increases your initial Clockwork of Memory number by {1} when observing in this World of Time.,
+101,Observation Length · 2,Increases your initial Clockwork of Memory number by {1} when observing in this World of Time.,"Requirement: Upgrading ""Observation Length · 1"" to level 2, reach 500 Courage (The attribute boost provided by your Girls is not included)"
+102,Observation Length · 3,Increases your initial Clockwork of Memory number by {1} when observing in this World of Time.,"Requirement: Upgrading ""Observation Length · 2"" to level 3, reach 1000 Charisma (The attribute boost provided by your Girls is not included)"
+103,Observation Length · 4,Increases your initial Clockwork of Memory number by {1} when observing in this World of Time.,"Requirement: Upgrading ""Observation Length · 3"" to level 3, reach 1500 Knowledge (The attribute boost provided by your Girls is not included)"
+104,Observation Length · 5,Increases your initial Clockwork of Memory number by {1} when observing in this World of Time.,"Requirement: Reach 1700 Courage, Charisma and Knowledge (The attribute boost provided by your Girls is not included)"
+105,Basic Supply · 1,"When triggering Supply Card ""Basic Supply"", increase the card level by 1 to offer you more rewards",
+106,Basic Supply · 2,"When triggering Supply Card ""Basic Supply"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 10%
+107,Basic Supply · 3,"When triggering Supply Card ""Basic Supply"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 20%
+108,Basic Supply · 4,"When triggering Supply Card ""Basic Supply"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 30%
+109,Basic Supply · 5,"When triggering Supply Card ""Basic Supply"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 40%
+110,Plain Button · 1,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",
+111,Plain Button · 2,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 20%
+112,Plain Button · 3,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 40%
+113,Plain Button · 4,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
+114,Plain Button · 5,"When triggering Supply Card ""Plain Button"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 80%
+115,Plain Silk · 1,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",
+116,Plain Silk · 2,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 15%
+117,Plain Silk · 3,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 30%
+118,Plain Silk · 4,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 45%
+119,Plain Silk · 5,"When triggering Supply Card ""Plain Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
+120,Dyed Silk · 1,"When triggering Supply Card ""Dyed Silk"", increase the card level by 1 to offer you more rewards",
+121,Dyed Silk · 2,"When triggering Supply Card ""Dyed Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 20%
+122,Dyed Silk · 3,"When triggering Supply Card ""Dyed Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 40%
+123,Dyed Silk · 4,"When triggering Supply Card ""Dyed Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 60%
+124,Dyed Silk · 5,"When triggering Supply Card ""Dyed Silk"", increase the card level by 1 to offer you more rewards",Requirement: Observation Progress of this World of Time reaches 80%
+125,Outfit Display · Head,"Unlock the next level of Supply Card ""Outfit Display · Head"", the upgrade will be activated in the next Observation",
+126,Outfit Display · Body,"Unlock the next level of Supply Card ""Outfit Display · Body"", the upgrade will be activated in the next Observation",
+127,Outfit Display · Legs,"Unlock the next level of Supply Card ""Outfit Display · Legs"", the upgrade will be activated in the next Observation",
+128,Outfit Display · Headwear,"Unlock the next level of Supply Card ""Outfit Display · Headwear"", the upgrade will be activated in the next Observation",
+129,Outfit Display · Accessories,"Unlock the next level of Supply Card ""Outfit Display · Accessories"", the upgrade will be activated in the next Observation",
+130,Outfit Display · Attribute,"Unlock the next level of Supply Card ""Outfit Display · Attribute, the upgrade will be activated in the next Observation",
+131,Stage Unlock,Unlock the next Stage of this World of Time (Need to pass the current Stage before you challenge the next Stage),
+132,Encounter Card Upgrade · 1,"When triggering Encounter Card ""Robbie"", increase the card level by 1",
+133,Encounter Card Upgrade · 2,"When triggering Encounter Card ""Yuri"", increase the card level by 1","Requirement: Trigger Encounter Card ""Robbie"" 50 times in this World of time for ({1}/50)"
+134,Encounter Card Upgrade · 3,"When triggering Encounter Card ""Skye"", increase the card level by 1","Requirement: Trigger Encounter Card ""Yuri"" 50 times in this World of time for ({1}/50)"
+135,Encounter Card Upgrade · 4,"When triggering Encounter Card ""Hermes"", increase the card level by 1","Requirement: Trigger Encounter Card ""Skye"" 50 times in this World of time for ({1}/50)"
+136,Encounter Card Upgrade · 5,"When triggering Encounter Card ""Blair"", increase the card level by 1","Requirement: Trigger Encounter Card ""Hermes"" 50 times in this World of time for ({1}/50)"
+137,Encounter Card Upgrade · 6,"When triggering Encounter Card ""Librarian"", increase the card level by 1","Requirement: Trigger Encounter Card ""Blair"" 50 times in this World of time for ({1}/50)"
+138,Encounter Card Upgrade · 7,"When triggering Encounter Card ""Mika"", increase the card level by 1","Requirement: Trigger Encounter Card ""Librarian"" 50 times in this World of time for ({1}/50)"
+139,Speed Up,"Upgrade to get {1} ""Time Essences"" to speed up the Observation in Echoes of Time",
+140,Card Unlock · Points,"Unlock Encounter Card ""Points"" that can provide you more points, when triggering Encounter Card ""Points"", have chance to increase the points it provides",
+141,Card Unlock · Battle 1,"Unlock Challenge Card ""Challenge · II"", the upgrade will be activated in the next Observation","Requirement: Reach 1000 Courage, Charisma and Knowledge (The attribute boost provided by your Girls is not included)"
+142,Card Unlock · Battle 2,"Unlock Challenge Card ""Challenge · III"", the upgrade will be activated in the next Observation","Requirement: Reach 2000 Courage, Charisma and Knowledge (The attribute boost provided by your Girls is not included)"
+143,Card Unlock · Battle 3,"Unlock the next level of Challenge Card ""Skirmish"", the upgrade will be activated in the next Observation","Requirement: challenge Challenge Card ""Skirmish I"" 10 times in this World of time for ({1}/10)"
+144,Crystal · Production Increase 1,"Unlocks the option to increase the Red Crystals obtained in this World of Time, you can set the options under Technology · Crystal in the Planetarium of this World of Time",
+145,Crystal · Production Increase 2,"Unlocks the option to increase the Yellow Crystals obtained in this World of Time, you can set the options under Technology · Crystal in the Planetarium of this World of Time",
+146,Crystal · Production Increase 3,"Unlocks the option to increase the Blue Crystals obtained in this World of Time, you can set the options under Technology · Crystal in the Planetarium of this World of Time",
+147,Crystal · Production Increase 4,"Unlocks the option to increase all types of Crystals obtained in this World of Time, you can set the options under Technology · Crystal in the Planetarium of this World of Time",
+148,Crystal Production Increase UP,Increases the effect of all the options that increases the Crystals you obtain in this World of Time,

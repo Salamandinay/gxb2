@@ -2106,7 +2106,7 @@ ARENA_ALL_SERVER_OPEN,Cette fonctionnalité sera disponible dans：
 ARENA_ALL_SERVER_TEXT_31,La phase - Finalistes n'a pas encore commencé !
 ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
 VOW_SWAP_TIPS,"Vous avez un Serment avec la Fille que vous allez utiliser, si vous continuez la Fille sera utilisée, mais vous ne récupérerez pas la Bague de Serment, voulez-vous continuer ?"
-CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir 1 Lanterne après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 5 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 1 Lanterne après avoir fini un Job de 4 étoiles (ou +).|——Vous pouvez obtenir 1 Lanterne après avoir combattu 5 fois dans l'Arène|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, 1 Lanterne pour 15K et distribuées par courrier."
+CANDY_COLLECT_HELP,"1. Vous pouvez collecter des Lanternes pour échanger une récompense avec les Filles.|2. Cliquez sur les Filles pour échanger une récompense.|3. Cliquez sur "" + "" pour plus de détails.|4. Vous pourrez renouveler les échanges avec les Filles uniquement après avoir effectué un échange avec toutes les Filles.|5. Vous pouvez accomplir les différentes tâches pour obtenir des Lanternes.|Moyen d'obtention des Lanternes : Vous pouvez obtenir 2 Lanternes après avoir obtenu une Fille 5 étoiles.|——Vous pouvez obtenir 10 Lanternes après avoir obtenu une Fille 6 étoiles.|——Vous pouvez obtenir 2 Lanternes après avoir fini un Job de 4 étoiles (ou +).|——Vous pouvez obtenir 1 Lanterne après avoir utilisé 3 Tickets d'Arène.|Attention：Si vous obtenez des Filles par l'échange de Recruter ou l'inverse, vous n'obtiendrez pas de récompenses|6. Après l'événement, les Lanternes innutilisées seront automatiquement converties en pièces d'or, 1 Lanterne pour 15K et distribuées par courrier."
 CANDY_COLLECT_TEXT_1,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
 CANDY_COLLECT_TEXT_2,Êtes-vous sûr de vouloir échanger ?
 CANDY_COLLECT_TEXT_3,Échangez une récompense avec chaque Fille pour commencer le tour suivant !
@@ -5904,25 +5904,25 @@ NEWBEE_10GACHA_HELP05,"1. Durant l'événement, vous pouvez acheter le pack sur 
 CHIME_TEXT16,Fragments Obtenus
 SHRINE_HURDLE_TEXT27,Commence dans {1}
 SHRINE_HURDLE_TEXT28,Ce Bonus a atteint son Niveau Max !
-SHRINE_HURDLE_TEXT29,Jeton de Dojo Insuffisant !
+SHRINE_HURDLE_TEXT29,Jeton de Dojo insuffisant !
 SHRINE_HURDLE_TEXT30,Veuillez d'abord choisir une carte !
 SHRINE_HURDLE_TEXT31,Bonus obtenu !
 SHRINE_HURDLE_TEXT32,Achat réussi !
 SHRINE_HURDLE_TEXT33,Amélioration avec succès !
 SHRINE_HURDLE_TEXT34,Guérison avec succès !
-TIME_CLOISTER_TEXT88,在此迴廊中進行關卡挑戰或觸發挑戰卡時，根據積分增加勇氣、魅力、知識
-TIME_CLOISTER_TEXT89,當前加成
-TIME_CLOISTER_TEXT90,當前積分
-TIME_CLOISTER_TEXT91,加成內容
+TIME_CLOISTER_TEXT88,"Augmente les attributs Audace, Charme et Génie en fonction des points obtenus durant les batailles des Cartes de Défis et les batailles d'Étapes de ce Corridor Temporel."
+TIME_CLOISTER_TEXT89,Bonus actuel
+TIME_CLOISTER_TEXT90,Points actuels
+TIME_CLOISTER_TEXT91,Détails de Bonus
 SHRINE_HURDLE_TEXT35,Jeton de Dojo obtenu !
 SHRINE_HURDLE_TEXT36,Niveau Max
 SHRINE_HURDLE_TEXT37,La Fille que vous avez choisie n'a pas perdu beaucoup de PV. Voulez-vous continuer ?
 IS_IN_SHRINE_FORMATION,Cette opération n'est pas accessible lors d'une Épreuve !
-TIME_CLOISTER_TEXT92,獲取量設置
-TIME_CLOISTER_TEXT93,觀測結算時，對應道具的獲取量增加
-TIME_CLOISTER_TEXT94,無加成
-TIME_CLOISTER_TEXT95,{1}種道具加成{2}
-TIME_CLOISTER_TEXT96,設置
+TIME_CLOISTER_TEXT92,Bonus à choisir
+TIME_CLOISTER_TEXT93,"Après l'Exploration, le nombre de Cristaux correspondants sera augmenté."
+TIME_CLOISTER_TEXT94,Aucun Bonus
+TIME_CLOISTER_TEXT95,Tous les {1} types de Cristaux + {2}
+TIME_CLOISTER_TEXT96,Choisir
 ACTIVITY_LAFULI_CASTLE_HELP,"1. Durant cet événement, aidez Lavli à construire le château de ses rêves avec du Sable Fin et du Sable Céleste !|2. Pour chaque [c][0069cc]20[-][/c] Sables Fins ou Sables Célestes utilisés, obtenez aléatoirement une Récompense de [c][0069cc]Fille 5 étoiles[-][/c] de la Maison (Fantôme/Humain/Monstre/Fée) que vous aurez choisi au préalable.|3. Le Sable Fin est utilisé pour la construction des murs du château. Après avoir utilisé une certaine quantité de Sable Fin, vous pourrez récupérer les récompenses pour avoir construit les murs du château.|4. Le Sable Céleste est utilisé pour la décoration du château. Après avoir utilisé une certaine quantité de Sable Céleste, vous pourrez récupérer les récompenses pour avoir décoré le château. |5. Après la fin de l’événement, les Sables Fins et les Sables Céleste non-utilisés seront automatiquement convertis en Pièces d’Or et envoyées par courrier, 1 Sable Fin = 100K Pièce d’Or, 1 Sable Céleste = 100K Pièce d’Or."
 ACTIVITY_LAFULI_CASTLE_TEXT01,Avancée
 ACTIVITY_LAFULI_CASTLE_TEXT02,Tâches
@@ -5936,12 +5936,12 @@ ACTIVITY_LAFULI_CASTLE_TEXT08,"obtenu, vous obtiendrez 1 Sable Céleste|({1} Sab
 ACTIVITY_LAFULI_CASTLE_TEXT09,Limite :
 ACTIVITY_LAFULI_CASTLE_TEXT10,Les récompenses seront envoyées directement à votre Sac
 ACTIVITY_LAFULI_CASTLE_TEXT11,Limite
-TIME_CLOISTER_TEXT97,水晶卡詳情
-TIME_CLOISTER_TEXT98,全部
+TIME_CLOISTER_TEXT97,Détails de Carte de Cristal
+TIME_CLOISTER_TEXT98,Tout
 TIME_CLOISTER_TEXT99,水晶卡詳情幫助本文，helpbtn
 ACTIVITY_LAFULI_CASTLE_TEXT12,"1. Complétez les Tâches pour obtenir des récompenses.|2. Après avoir complété certaines Tâches, vous obtiendrez des Points de Tâche. Pour chaque Point de Tâche obtenu, vous recevrez 1 Sable Céleste ([c][0069cc]100[-][/c] Sables Célestes au maximum)"
-TIME_CLOISTER_TEXT100,戰鬥加成
-TIME_CLOISTER_TEXT101,戰鬥加成會在此迴廊的遭遇戰、關卡戰鬥中生效
+TIME_CLOISTER_TEXT100,Bonus
+TIME_CLOISTER_TEXT101,Les Bonus de combat prendront effet dans les Duels et les batailles d'Étpaes de ce Corridor Temporel.
 ACTIVITY_START_COUNT,Commence dans [c][9eff8b]{1}[-][/c]
 SHRINE_HURDLE_CLOSE_TIME,Fin du Dojo dans：
 SHRINE_HURDLE_OPEN_TIME,Ouverture du Dojo dans：
@@ -5966,12 +5966,12 @@ ACTIVITY_PROMOTION_TEST_TEXT05,Vous avez encore la possibilité d'acheter le Pac
 SHRINE_NOTICE_TEXT06,Épreuve terminée !
 SHRINE_NOTICE_TEXT07,Point(s)
 SHRINE_HURDLE_TEXT39,Voulez-vous renoncer au Bonus ? Vous obtiendrez des Jetons de Dojo par défaut.
-TIME_CLOISTER_TEXT102,科技組-水晶
-TIME_CLOISTER_TEXT103,獲取方案:
-TIME_CLOISTER_TEXT104,卡牌詳情
-TIME_CLOISTER_TEXT105,戰鬥技能
-TIME_CLOISTER_TEXT106,購買卡牌換取積分
-TIME_CLOISTER_TEXT107,科技組-水晶幫助文本
+TIME_CLOISTER_TEXT102,Technique - Cristal
+TIME_CLOISTER_TEXT103,Bonus de Cristal :
+TIME_CLOISTER_TEXT104,Carte
+TIME_CLOISTER_TEXT105,Bonus de Combat
+TIME_CLOISTER_TEXT106,Achetez des Cartes de Cristal pour obtenir des Points
+TIME_CLOISTER_TEXT107,"1. Durant l'Exploration de ce Corridor Temporel, vous obtiendrez des Cristaux Rouges, Cristaux Jaunes et Cristaux Bleus qui peuvent être utilisés pour acheter les Cartes de Cristal.|2. Vous pouvez choisir le bonus de 3 types de cristaux lors de leur obtention. Ce bonus peuvent être amélioré dans le Planétarium - Technique · Cristal.|3. Il y en a plusieurs types de Carte de Cristal, le prix de chaque type de Carte de Cristal est différent. Après avoir acheté une Carte de Cristal, vous obtiendrez des points et le niveau de la Carte de Crsital achetée sera augmenté.|4. Augmente les attributs de l'Audace, du Charme et du Génie en fonction des points obtenus dans ce Corridor Temporel.|5. Chaque type de Carte de Cristal fournit un Bonus de combat et juste 3 Bonus de combat peuvent être déclenchés en même temps au maximum lors des batailles de Duel et des batailles d'Étapes."
 TIME_CLOISTER_TEXT108,Points :
 ACTIVITY_LAFULI_CASTLE_TEXT14,Voulez-vous obtenir {2} Fille(s) de la Maison {1} ?
 SHRINE_HURDLE_SHOP_TAB1,Achat
@@ -5980,107 +5980,107 @@ SHRINE_HURDLE_SELECT1,Voulez-vous entrer dans l'Étape Combat ?
 SHRINE_HURDLE_SELECT2,Voulez-vous entrer dans l'Étape Récompense ?
 SHRINE_HURDLE_SELECT3,Voulez-vous entrer dans l'Étape Boutique ?
 SHRINE_HURDLE_SELECT4,Voulez-vous entrer dans l'Étape Guérison ?
-TIME_CLOISTER_TEXT109,当时间回廊的加速小于一次触发卡牌的时间的提示
-TIME_CLOISTER_TEXT110,加速时多用一个道具时减去这个道具的提示
-GAME_ASSISTANT_TEXT01,遊戲助手
-GAME_ASSISTANT_TEXT02,日常
-GAME_ASSISTANT_TEXT03,挑戰
-GAME_ASSISTANT_TEXT04,成長
-GAME_ASSISTANT_TEXT05,社團
-GAME_ASSISTANT_TEXT06,執行本頁
-GAME_ASSISTANT_TEXT07,執行全部
-GAME_ASSISTANT_TEXT08,點金手
-GAME_ASSISTANT_TEXT09,免費點金
-GAME_ASSISTANT_TEXT10,鑽石點金
-GAME_ASSISTANT_TEXT11,設置購買上限
-GAME_ASSISTANT_TEXT12,領取掛機收穫
-GAME_ASSISTANT_TEXT13,領取宿舍產出
-GAME_ASSISTANT_TEXT14,日常測驗
-GAME_ASSISTANT_TEXT15,免費領取
-GAME_ASSISTANT_TEXT16,鑽石領取
-GAME_ASSISTANT_TEXT17,扭蛋
-GAME_ASSISTANT_TEXT18,高級扭蛋
-GAME_ASSISTANT_TEXT19,普通扭蛋
-GAME_ASSISTANT_TEXT20,收發愛心
-GAME_ASSISTANT_TEXT21,校園聯賽
-GAME_ASSISTANT_TEXT22,完成3次戰鬥
-GAME_ASSISTANT_TEXT23,完成2次打工任務
-GAME_ASSISTANT_TEXT24,星級選擇
-GAME_ASSISTANT_TEXT25,數量選擇
-GAME_ASSISTANT_TEXT26,販賣機抽獎2次
-GAME_ASSISTANT_TEXT27,商品購買
-GAME_ASSISTANT_TEXT28,當前未選擇商品
-GAME_ASSISTANT_TEXT29,選擇商品
-GAME_ASSISTANT_TEXT30,領取櫥窗獎勵
-GAME_ASSISTANT_TEXT31,重置
+TIME_CLOISTER_TEXT109,"Le temps restant de l'Exploration étant trop court, celle-ci s'est terminée en avance sans que cela ne vous coûte de Poussière Temporelle."
+TIME_CLOISTER_TEXT110,"Lorsque le temps restant d'une Exploration ne vous permet pas d'obtenir une autre Carte, vous pouvez mettre fin à cette Exploration à l'avance sans consommer les Poussières."
+GAME_ASSISTANT_TEXT01,Assistante Polly
+GAME_ASSISTANT_TEXT02,Quotidien
+GAME_ASSISTANT_TEXT03,Défis
+GAME_ASSISTANT_TEXT04,Développement
+GAME_ASSISTANT_TEXT05,Guilde
+GAME_ASSISTANT_TEXT06,Traiter cette page
+GAME_ASSISTANT_TEXT07,Traiter toutes\nles pages
+GAME_ASSISTANT_TEXT08,Alchimie
+GAME_ASSISTANT_TEXT09,Pièce d'Or (Gratuit)
+GAME_ASSISTANT_TEXT10,Pièce d'Or (en utilisant des Gemmes)
+GAME_ASSISTANT_TEXT11,Définir la limite d'achat
+GAME_ASSISTANT_TEXT12,Butin de Campagne
+GAME_ASSISTANT_TEXT13,Ressources du Dortoir
+GAME_ASSISTANT_TEXT14,Quiz Journalier
+GAME_ASSISTANT_TEXT15,Chance(s) Gratuite(s)
+GAME_ASSISTANT_TEXT16,Chance(s) Supplémentaire(s)
+GAME_ASSISTANT_TEXT17,Capsule
+GAME_ASSISTANT_TEXT18,Capsule Avancée
+GAME_ASSISTANT_TEXT19,Capsule Normale
+GAME_ASSISTANT_TEXT20,Ami Cœur
+GAME_ASSISTANT_TEXT21,Arène
+GAME_ASSISTANT_TEXT22,Terminer 3 batailles
+GAME_ASSISTANT_TEXT23,Finir 2 Jobs
+GAME_ASSISTANT_TEXT24,Étoile(s) de Jobs à sélectionner
+GAME_ASSISTANT_TEXT25,Nombre à sélectionner
+GAME_ASSISTANT_TEXT26,Tirer 2 fois dans Distributeur Normal
+GAME_ASSISTANT_TEXT27,Achat des objets
+GAME_ASSISTANT_TEXT28,Aucun objet choisi
+GAME_ASSISTANT_TEXT29,Choisir
+GAME_ASSISTANT_TEXT30,Récompense de Galeries de Tenues
+GAME_ASSISTANT_TEXT31,Réinitialiser
 GAME_ASSISTANT_TEXT32,Confirmer
 GAME_ASSISTANT_TEXT33,Patrouille
-GAME_ASSISTANT_TEXT34,獲得掃蕩獎勵
-GAME_ASSISTANT_TEXT35,購買商品
-GAME_ASSISTANT_TEXT36,學園考核
-GAME_ASSISTANT_TEXT37,陣營選擇
-GAME_ASSISTANT_TEXT38,免費掃蕩
-GAME_ASSISTANT_TEXT39,鑽石掃蕩
-GAME_ASSISTANT_TEXT40,初級
-GAME_ASSISTANT_TEXT41,中級
-GAME_ASSISTANT_TEXT42,高級
-GAME_ASSISTANT_TEXT43,使魔
-GAME_ASSISTANT_TEXT44,領取課程獎勵
-GAME_ASSISTANT_TEXT45,課程選擇
-GAME_ASSISTANT_TEXT46,挑戰訓練假人
-GAME_ASSISTANT_TEXT47,購買體力
-GAME_ASSISTANT_TEXT48,校外遠足
-GAME_ASSISTANT_TEXT49,領取收益
-GAME_ASSISTANT_TEXT50,購買美味麵包
-GAME_ASSISTANT_TEXT51,購買數量
-GAME_ASSISTANT_TEXT52,每日限購：{1}/{2}
-GAME_ASSISTANT_TEXT53,社團
-GAME_ASSISTANT_TEXT54,社團辦公室
-GAME_ASSISTANT_TEXT55,簽到
+GAME_ASSISTANT_TEXT34,Récompense de Raid
+GAME_ASSISTANT_TEXT35,Achat des objets
+GAME_ASSISTANT_TEXT36,Examen des Maisons
+GAME_ASSISTANT_TEXT37,Maison à choisir
+GAME_ASSISTANT_TEXT38,Raid (Gratuit)
+GAME_ASSISTANT_TEXT39,Raid (en utilisant des Gemmes)
+GAME_ASSISTANT_TEXT40,Ordinaire
+GAME_ASSISTANT_TEXT41,Moderne
+GAME_ASSISTANT_TEXT42,Deluxe
+GAME_ASSISTANT_TEXT43,Serviteur
+GAME_ASSISTANT_TEXT44,Récompense d'Entraînement
+GAME_ASSISTANT_TEXT45,Entraînement à choisir
+GAME_ASSISTANT_TEXT46,Épouvantail à défier
+GAME_ASSISTANT_TEXT47,Achat de l'Énergie
+GAME_ASSISTANT_TEXT48,Excursion
+GAME_ASSISTANT_TEXT49,Ressource à collecter
+GAME_ASSISTANT_TEXT50,Achat du Pain Délicieux
+GAME_ASSISTANT_TEXT51,Nombre d'achat
+GAME_ASSISTANT_TEXT52,Achat par jour：{1}/{2}
+GAME_ASSISTANT_TEXT53,Guilde
+GAME_ASSISTANT_TEXT54,Office
+GAME_ASSISTANT_TEXT55,Connexion
 GAME_ASSISTANT_TEXT56,Cafétéria
-GAME_ASSISTANT_TEXT57,獲得訂單
+GAME_ASSISTANT_TEXT57,Obtenir la commande
 GAME_ASSISTANT_TEXT58,Améliorer en masse
-GAME_ASSISTANT_TEXT59,Commencer
-GAME_ASSISTANT_TEXT60,體育館
-GAME_ASSISTANT_TEXT61,設置陣容
-GAME_ASSISTANT_TEXT62,挑戰第61關敵人
+GAME_ASSISTANT_TEXT59,Commencer la commande
+GAME_ASSISTANT_TEXT60,Gymnase
+GAME_ASSISTANT_TEXT61,Équipe de Combat
+GAME_ASSISTANT_TEXT62,Défier le Boss (61ème étape)
 GAME_ASSISTANT_TEXT63,Limite d'Achat: {1}/{2}
-GAME_ASSISTANT_TEXT64,助手執行中...
-GAME_ASSISTANT_TEXT65,執行結束
+GAME_ASSISTANT_TEXT64,Polly est en train d'y travailler
+GAME_ASSISTANT_TEXT65,Polly a fini de traiter vos demandes !
 GAME_ASSISTANT_TEXT66,Arrêter
 GAME_ASSISTANT_TEXT67,Confirmer
-GAME_ASSISTANT_TEXT68,Sélectionné
-GAME_ASSISTANT_TEXT69,未選擇陣營
-GAME_ASSISTANT_TEXT70,當前未通關
-GAME_ASSISTANT_TEXT71,點金手獎勵
-GAME_ASSISTANT_TEXT72,日常測驗獎勵
-GAME_ASSISTANT_TEXT73,校園聯賽戰鬥獎勵（{1}次）
-GAME_ASSISTANT_TEXT74,完成打工獎勵
-GAME_ASSISTANT_TEXT75,販賣機抽獎（{1}次）
-GAME_ASSISTANT_TEXT76,守護校園掃蕩獎勵（{1}次）
-GAME_ASSISTANT_TEXT77,學院考核掃蕩獎勵（{1}次）
-GAME_ASSISTANT_TEXT78,使魔課程獎勵
-GAME_ASSISTANT_TEXT79,使魔開始新課程
-GAME_ASSISTANT_TEXT80,使魔_挑戰訓練體力購買
-GAME_ASSISTANT_TEXT81,使魔_挑戰訓練獎勵
-GAME_ASSISTANT_TEXT82,校外遠足_領取收益
-GAME_ASSISTANT_TEXT83,校外遠足_購買美味麵包
-GAME_ASSISTANT_TEXT84,社團_簽到
-GAME_ASSISTANT_TEXT85,社團餐廳_獲得訂單
-GAME_ASSISTANT_TEXT86,社團餐廳_升級訂單（{1}次）
-GAME_ASSISTANT_TEXT87,社團餐廳_開始訂單
-GAME_ASSISTANT_TEXT88,社團體育館_挑戰61關（{1}次）
-GAME_ASSISTANT_TEXT89,社團體育館_購買挑戰次數（{1}次）
+GAME_ASSISTANT_TEXT68,Objet(s) choisi(s)
+GAME_ASSISTANT_TEXT69,Aucune Maison choisie à défier
+GAME_ASSISTANT_TEXT70,Aucune Étape disponible à défier
+GAME_ASSISTANT_TEXT71,Récompense - Alchimie
+GAME_ASSISTANT_TEXT72,Récompense - Quiz
+GAME_ASSISTANT_TEXT73,Récompense - Arène : {1} fois
+GAME_ASSISTANT_TEXT74,Récompense - Job
+GAME_ASSISTANT_TEXT75,{1} Tirage(s) dans le Distributeur Normal
+GAME_ASSISTANT_TEXT76,Récompense de Raid - Patrouille : {1} fois
+GAME_ASSISTANT_TEXT77,Récompense de Raid - Examen des Maisons : {1} fois
+GAME_ASSISTANT_TEXT78,Récompense - Entraînement du Serviteur
+GAME_ASSISTANT_TEXT79,Nouvel Entraînement commencé
+GAME_ASSISTANT_TEXT80,Serviteur - Achat de l'Énergie
+GAME_ASSISTANT_TEXT81,Serviteur - Récompense d'Épouvantail
+GAME_ASSISTANT_TEXT82,Excursion Scolaire - Ressource à collecter
+GAME_ASSISTANT_TEXT83,Excursion Scolaire - Achat du Pain Délicieux
+GAME_ASSISTANT_TEXT84,Guilde - Connexion
+GAME_ASSISTANT_TEXT85,Cafétéria - Obtenir la commande
+GAME_ASSISTANT_TEXT86,Cafétéria - Améliorer en masse : {1} fois
+GAME_ASSISTANT_TEXT87,Cafétéria - Obtenir la Commande
+GAME_ASSISTANT_TEXT88,Gymnase - Défier le Boss (61ème étape) : {1} fois
+GAME_ASSISTANT_TEXT89,Gymnase - Achat de la Chance de Défis : {1} fois
 GAME_ASSISTANT_TEXT90,Terminé
-GAME_ASSISTANT_TIPS01,當前存在更高難度的日常測驗可挑戰，是否前往？（選否則領取當前可領的最高測驗獎勵）
-GAME_ASSISTANT_TIPS02,當前沒有可以執行的內容
-GAME_ASSISTANT_TIPS03,預計消耗包括{1}鑽石（選擇社團訂單升級，則實際耗鑽可能更少），是否繼續？
-GAME_ASSISTANT_TIPS04,使魔訓練室達到{1}級後，開啟相關功能
-GAME_ASSISTANT_TIPS05,校外遠足探險達到{1}級後，開啟相關功能
-GAME_ASSISTANT_TIPS06,使魔訓練室達到{1}級或者校外遠足中探險達到{1}級後解鎖
-GAME_ASSISTANT_TIPS07,學長加入{1}級及以上的社團後解鎖
-GAME_ASSISTANT_TIPS08,餐廳達到{1}級後，開啟相關功能
-GAME_ASSISTANT_TIPS09,體育館開啟第61關後，開啟相關功能
+GAME_ASSISTANT_TIPS01,"Vous pouvez défier le Quiz Journalier du niveau plus haut, voulez-vous aller à défier? (Choisissez ""Non"" et obtenez les récompenses du niveau actuel de Quiz.)"
+GAME_ASSISTANT_TIPS02,Rien à compeléter pour le moment...
+GAME_ASSISTANT_TIPS03,"{1} Gemmes seront consommées (si Cafétéria - Améliorer en masse inclut, peut-être que moins de Gemmes seront consommées), voulez-vous continuer ?"
+GAME_ASSISTANT_TIPS04,Débloqué après que le niveau de la Salle d'Entraînement ait atteint {1} !
+GAME_ASSISTANT_TIPS05,Débloqué après que le niveau de l'Aventure - Excursion ait atteint {1} !
+GAME_ASSISTANT_TIPS06,Débloqué après que le niveau de la Salle d'Entraînement ait atteint {1} ou le niveau de l'Aventure - Excursion ait atteint {1} !
+GAME_ASSISTANT_TIPS07,Débloqué après que le niveau de Guilde ait atteint {1} !
+GAME_ASSISTANT_TIPS08,Débloqué après que le niveau de la Cafétéria ait atteint {1} !
+GAME_ASSISTANT_TIPS09,Débloqué après avoir accédé à 61ème étage de Gymnase de Guide !
 GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
 ACTIVITY_PROMOTION_TEST_TEXT06,Tirez des Capsules Avancées pour obtenir des Certificats de Promotion.
 ACTIVITY_LASSO_BUTTON,Lancer
@@ -6090,29 +6090,39 @@ ACTIVITY_LASSO_TEXT02,Obtenez une Récompense Finale à chaque tour
 ACTIVITY_LASSO_HELP,"1. Durant cet événement, utilisez 1 Ticket Magique pour lancer 1 anneau pour obtenir une récompense aléatoire.|2. Si votre anneau tombe sur le grand lapin, vous recevrez une Récompense Finale et accéderez au tour suivant.|3. Si plusieurs Récompenses Finales sont proposées lors d'un tour, vous serez amené à choisir une Récompense Finale en amont. Après le 26ème tour, les 3 Récompenses Finales proposées ne changeront plus.|4. Si vous utilisez des Tickets Magiques en masse et qu'un des anneaux tombe sur le grand lapin, le surplus de Tickets Magiques vous sera rendu.|5. Moyen d'obtention de Ticket Magique : Courrier Quotidien, Capsule de Nouvelle Fille, Sac d'Aventurier, Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|6. Après l'événement, les Tickets Magiques non-utilisés seront convertis en Pièce d'Or, 1 Ticket Magique = 50K Pièce d'Or et distribuées par courrier."
 ACTIVITY_LASSO_OR,ou
 ACTIVITY_LASSO_TEXT03,"Cette récompense sera débloquée au {1}e tour, voulez-vous choisir la Récompense Finale de ce tour à l'avance ?"
-GAME_ASSISTANT_TEXT91,統計
+GAME_ASSISTANT_TEXT91,Statistiques
 GAME_ASSISTANT_TEXT92,Choisir
-GAME_ASSISTANT_TEXT93,當前未開啟
-GAME_ASSISTANT_TIPS10,請先設置陣容
+GAME_ASSISTANT_TEXT93,Aucune Étape disponible à défier
+GAME_ASSISTANT_TIPS10,Veuillez d'abord former votre équipe.
 ACTIVITY_PROMOTION_LADDER_TEXT12,Confirmez-vous cet échange ?
 ACTIVITY_LASSO_TEXT04,T.26 (et +)
-TIME_CLOISTER_TEXT111,所需積分
-TIME_CLOISTER_TEXT112,下一檔加成
-ACTIVITY_FREEBUY_TIME,{1}結束購買
-GAME_ASSISTANT_TEXT94,設置完成
-GAME_ASSISTANT_TEXT95,當前沒有遇到商人
-GAME_ASSISTANT_TEXT96,綺幻手冊_每日任務
-GAME_ASSISTANT_TEXT97,先領取守護校園掃蕩獎勵
-GAME_ASSISTANT_TEXT98,當前沒有商品
+TIME_CLOISTER_TEXT111,Points nécessaires
+TIME_CLOISTER_TEXT112,Bonus du palier suivant
+ACTIVITY_FREEBUY_TIME,Fin dans {1}
+GAME_ASSISTANT_TEXT94,Polly a enregistré vos commandes !
+GAME_ASSISTANT_TEXT95,Aucun marchand rencontré...
+GAME_ASSISTANT_TEXT96,Livre - Quête Journalière
+GAME_ASSISTANT_TEXT97,Collecter les récompenses de raid - Patrouille en priorité
+GAME_ASSISTANT_TEXT98,Aucun objet
 ACTIVITY_LASSO_TITLE,Lancer d'anneaux
-TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
-TIME_CLOISTER_TEXT114,設置成功
-ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵
-ACTIVITY_FREEBUY_TEXT02,購買後鑽石全額返還
-ACTIVITY_FREEBUY_TEXT03,購買總得：
-ACTIVITY_FREEBUY_TEXT04,今日可領：
-ACTIVITY_FREEBUY_HELP,零元購未定（暫時不翻）
-ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
-ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
-ACTIVITY_FREEBUY_TEXT07,返利{1}
-TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥加成
+TIME_CLOISTER_TEXT113,Optionnel après avoir débloqué la Technique - {1}
+TIME_CLOISTER_TEXT114,Réglage modifé !
+ACTIVITY_FREEBUY_TEXT01,Appuyez sur l'icône en haut du pack pour voir les récompenses obtenables.|Toutes les Gemmes consommées pour ces packs de l'événément vous seront rendues.
+ACTIVITY_FREEBUY_TEXT02,Valeur Totale :
+ACTIVITY_FREEBUY_TEXT04,Récompense Collectable :
+ACTIVITY_FREEBUY_HELP,"1. Durant cet événement, utilisez des Gemmes pour acheter des packs de différents paliers. Afin de débloquer la possibilité d'achat du palier suivant, vous devrez faire l'achat du précédent. Après l'achat, vous obtiendrez immédiatement une récompense, puis vous obtiendrez quotidiennement une récompense pendant les 7 jours suivants.|2. Les récompenses non-collectées le Jour-J pourront être collectées les lendemains.|3. Après la fin de l'événement, les récompenses non-collectées vous seront envoyées par courrier."
+ACTIVITY_FREEBUY_TEXT05,Obtenez des Gemmes et d'autres récompenses pendant les 7 jours suivants !
+ACTIVITY_FREEBUY_TEXT06,À partir de 250%% sa valeur !
+ACTIVITY_FREEBUY_TEXT07,Valeur x{1}
+TIME_CLOISTER_TEXT115,3 Bonus de combat peuvent être déclenchés en même temps au maximum
+ACTIVITY_LOTTERY_TEXT01,抽獎越多，秘寶越容易獲得
+ACTIVITY_LOTTERY_TEXT02,Récompense obtenable
+ACTIVITY_LOTTERY_TEXT03,跳過動畫
+ACTIVITY_LOTTERY_TEXT04,首次免費
+ACTIVITY_LOTTERY_TEXT05,活動期間獲取 {1} VIP經驗
+ACTIVITY_LOTTERY_TEXT06,秘寶券不足
+ACTIVITY_LOTTERY_TEXT07,抽獎
+ACTIVITY_LOTTERY_TEXT08,活動期間，累計獲得一定的VIP經驗即可獲得秘寶券，進而抽獎獲得秘寶！
+TIME_CLOISTER_TEXT116,"Vous ne pouvez prendre part au classement de dégâts infligés dans uniquement 2 Corridors Temporels à la fois. Ainsi, vos statistiques de dégâts infligés dans le Vortex Temporel de {1} n'ont pas été enregistrées."
+TIME_CLOISTER_TEXT117,Un Corridor Temporel du niveau plus haut a été débloqué et vous ne pouvez pas participer au classement des dégâts infligés dans le Vortex Temporel de Corridor Temporel actuel. Voulez-vous continuer à défier ?
+ACTIVITY_FREEBUY_TEXT08,"Il vous faut faire l'achat du palier précédent afin de débloquer la possibilité d'achat de ce pack, voulez-vous aller à acheter ?"
