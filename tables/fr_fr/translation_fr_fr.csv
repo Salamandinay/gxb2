@@ -1994,7 +1994,7 @@ ACTIVITY_CONCERT_RANK_WINDOW_TEXT02,Classement actuel le plus élevé
 ACTIVITY_CONCERT_INFO_WINDOW_TEXT09,Jouer des chansons
 ACTIVITY_MUSIC_JIGSAW_LOCK_TIPS,Cette chanson n'a pas encore été déverrouillée !
 ACTIVITY_MUSIC_GAME_QUIT,Fin
-LEVEL_FUND_TEXT01,"Après avoir rejoint le programme de motivation de Hottie, vous recevrez des Gemmes lorsque vous atteignez le niveau requis. Si vous avez déjà atteint certains des objectifs lors de votre adhésion, vous recevrez immédiatement les Gemmes correspondants aux objectifs atteints."
+LEVEL_FUND_TEXT01,"1. Après avoir rejoint le programme de motivation de Hottie, vous recevrez des Gemmes lorsque vous atteignez le niveau requis.|2. Si vous avez déjà atteint le niveau requis, vous recevrez immédiatement les Gemmes correspondants."
 LEVEL_FUND_TEXT02,Atteignez le Niv.{1}
 IMG_GUIDE_MUSIC_GAME_1,Votre score sera doublé lorsque votre bar de FEVER sera pleine. Vous [c][cc0011]perdrez[-][/c] si votre bar de FEVER est vide.
 IMG_GUIDE_MUSIC_GAME_2,"[c][cc0011]L'évaluation[-][/c] et [c][cc0011]la précision[-][/c] du Show : \nPlus votre précision est élevée, plus votre évaluation sera haute."
@@ -3589,7 +3589,7 @@ ACTIVITY_HALLOWEEN_TEXT3,"Utilisez une Épée d'Halloween pour couper une citrou
 ACTIVITY_HALLOWEEN_TEXT4,Obtenez aléatoirement une des récompenses suivantes
 ACTIVITY_HALLOWEEN_USE,Couper
 ACTIVITY_HALLOWEEN_GET,Collecter
-ACTIVITY_HALLOWEEN_AWARD,Récompense Finale
+ACTIVITY_HALLOWEEN_AWARD,Récompenses
 ACTIVITY_HALLOWEEN_HELP,"1. Durant l'événement, utilisez ""Épée d'Halloween"" *1 afin de couper aléatoirement 1 citrouille pour récupérer 1 récompense aléatoire. |2. Touchez les citrouilles afin de voir les récompenses et les chances. |3. Après avoir coupé toutes les citrouilles du tour actuel, vous pouvez collecter la Récompense Finale et accéder au tour suivant. Au 27e tour et aux tours suivants, la Récompense Finale sera automatiquement remplacée par ""Fragment d'Antiquité Orange Exclusif"" *50. |4. Moyen d'obtention d'Épée d'Halloween：| - Examen d'Admission| - Courrier Quotidien| - Pack de Grande Valeur| - Pack Surprise| - Pack Surprise de Skin| - Gemmes dans l'interface de l'événement (maximum 30 fois)|5. Après l’événement, les ""Épées d'Halloween"" inutilisées seront automatiquement converties en pièce d’or, une ""Épée d'Halloween"" pour 300K, et envoyées par courrier."
 TREASURE_RESERVE_EMPTY,Êtes-vous sûr de sauvegarder les attributs du Cristal actuel dans {1}-Cristal Optionnel ?
 TREASURE_SAME_HELP,Vous avez déjà un autre Cristal ayant les mêmes attributs. Êtes-vous sûr de continuer ?
@@ -5115,7 +5115,7 @@ ACTIVITY_MONTHLY_TEXT003,Aperçu
 TIME_CLOISTER_HELP01,"1. Obtenez des récompenses après une Exploration dans les Échos du Temps.|2. Un premier Corridor Temporel est débloqué, déployez vos Filles et commencez l'Exploration.|3. La puissance totale de vos Filles déployées sera convertie en Attributs : l'Audace, le Charme et le Génie.|4. Dans les Échos du Temps, la durée maximale d'une Exploration dépend de la quantité de Montre à Gousset que vous possédez. Une Montre à Gousset sera consommée chaque 6 minutes.|5. Utilisez vos Poussières Temporelles pour accélérer une Exploration, cette action consommera également la quantité correspondante de Montre à Gousset. Moyen d'obtention de Poussière Temporelle : Succès et Étape.|6. Augmentez l'Avancée Totale d'un Corridor Temporel en complétant les tâches dans le Succès. Un nouveau Corridor Temporel sera débloqué, une fois que l'Avancée Totale du Corridor Temporel précédent aura atteint 85%%."
 TIME_CLOISTER_HELP02,"1. Durant votre Exploration dans les Échos du Temps, 1 Carte sera aléatoirement déclenchée toutes les 5 minutes. Il y existe 3 types de Carte : Carte de Ressources, Carte de Défis et Carte d'Événements. Chaque type de Carte a son propre effet.|2. Lorsqu'une Carte de Ressources est déclenchée, vous recevrez des ressources en fonction des Cartes obtenues lors de l'Exploration. Ces dernières vous seront envoyées après le calcul de l'Exploration.|3. Lorsqu'une Carte de Défis est déclenchée, vous entrerez dans une bataille spéciale où la puissance de votre Équipe est convertie en vos 3 attributs de Tenue : Audace, Charme, Génie. En noir s'afficheront vos attributs fournis par vos Tenues additionnés à ceux founis par votre Planétarium. En vert s'afficheront vos attributs fournis par vos Filles déployées.|4. Après la fin de l'Exploration, vous recevrez des récompenses aléatoires en fonction des Cartes de Défis obtenues. Les récompenses d'une bataille victorieuse seront plus riches que celle d'une défaite.|5. Lorsqu'une Carte d'Événements est déclenchée, vous pourrez obtenir soit des Cartes de Souvenirs soit des Cartes de Points. Les Cartes de Points vous permettront de compléter certaines tâches dans le Succès de ce Corridor Temporel (une fois le calcul de l'Exploration terminé).|6. L'Exploration prendra fin une fois que toutes vos Montres à Gousset seront consommées, ou si vous arrêtez l'Exploration manuellement. Une fois l'Exploration finie, vous devrez toucher sur ""calculer vos récompenses"" afin de voir les résultats et ainsi obtenir vos récompenses.|7. Les Résultats de Calcul de votre Exploration comprendra vos récompenses obtenues durant l'Exploration ainsi que la quantité de Fragment Galactique obtenue en fonction de votre Score Total obtenu. Enfin, le système évaluera les tâches que vous avez terminées dans le Succès de ce Corridor Temporel."
 TIME_CLOISTER_HELP03,"1. Après avoir terminé une Exploration, vous recevrez des Fragments Galactiques pour le Planétarium de ce Corridor Temporel.|2. Il y existe 2 types de technique pour chaque Corridor Temporel. Utilisez les Fragments Galactiques pour améliorer le niveau de vos techniques. Certaines techniques nécessiteront de remplir des conditions avant de pouvoir les déverrouiller.|3. Les techniques améliorées durant une Exploration en cours prendront effet uniquement à partir de la prochaine Exploration."
-TIME_CLOISTER_HELP04,"1. Chaque Corridor Temporel comprend 11 étapes et chaque étape est un Défi. Chaque 10 premières étapes sont des Étapes Normales et chaque 11ème étapes est une Étape Spéciale. Utilisez 1 Engrenage Temporel pour chaque défi.|2. Les ennemis de chaque étape possèdent également les 3 Attributs suivants : Audace, Charme, Génie. Vos 3 attributs correspondent aux statistiques de vos Tenues et des techniques de votre Planétarium.|3. Rendez vous sur l'interface de la Cabine d'Essayage, appuyez sur l'icône ""!"" pour en savoir plus sur les effets de ces 3 attributs.|4. Après avoir passé les Étapes Normales (1ère à 10ème), vous recevrez les récompenses d'Étape (celles-ci ne peuvent être collectées qu'une seule fois et ne seront pas être réinitialisées).|5. L'ennemi de l'Étape Spéciale (11ème) peut se ressusciter sans limite. Chaque fois que vous défierez cet ennemi, le système enregistrera vos dégâts infligés. Votre maximum de dégâts infligés pour cette étape sera utilisé pour vous classer parmi la liste des autres joueurs ayant également défié cette étape. Les résultats de classement sont calculés chaque vendredi à (UTC/GMT 00:00), ainsi vous recevrez des récompenses en fonction de votre classement."
+TIME_CLOISTER_HELP04,"1. Chaque Corridor Temporel comprend 11 étapes et chaque étape est un Défi. Chaque 10 premières étapes sont des Étapes Normales et chaque 11ème étapes est une Étape Spéciale. Utilisez 1 Engrenage Temporel pour chaque défi.|2. Les ennemis de chaque étape possèdent également les 3 Attributs suivants : Audace, Charme, Génie. Vos 3 attributs correspondent aux statistiques de vos Tenues et des techniques de votre Planétarium.|3. Rendez vous sur l'interface de la Cabine d'Essayage, appuyez sur l'icône ""!"" pour en savoir plus sur les effets de ces 3 attributs.|4. Après avoir passé les Étapes Normales (1ère à 10ème), vous recevrez les récompenses d'Étape (celles-ci ne peuvent être collectées qu'une seule fois et ne seront pas être réinitialisées).|5. L'ennemi de l'Étape Spéciale (11ème) peut se ressusciter sans limite. Chaque fois que vous défierez cet ennemi, le système enregistrera vos dégâts infligés. Votre maximum de dégâts infligés pour cette étape sera utilisé pour vous classer parmi la liste des autres joueurs ayant également défié cette étape. Les résultats de classement sont calculés chaque vendredi à (UTC/GMT 00:00), ainsi vous recevrez des récompenses en fonction de votre classement.|6. Vous ne pouvez prendre part au classement de dégâts infligés dans uniquement 2 Corridors Temporels à la fois (par exemple, si vous prenez part au classement du 3ème Corridor Temporel, vos statistiques de dégâts infligés dans le Vortex Temporel de 1ème Corridor Temporel ne seront pas enregistrées)."
 TIME_CLOISTER_TEXT01,Succès
 TIME_CLOISTER_TEXT02,Étapes
 TIME_CLOISTER_TEXT03,Explorer
@@ -5910,7 +5910,7 @@ SHRINE_HURDLE_TEXT31,Bonus obtenu !
 SHRINE_HURDLE_TEXT32,Achat réussi !
 SHRINE_HURDLE_TEXT33,Amélioration avec succès !
 SHRINE_HURDLE_TEXT34,Guérison avec succès !
-TIME_CLOISTER_TEXT88,"Augmente les attributs Audace, Charme et Génie en fonction des points obtenus durant les batailles des Cartes de Défis et les batailles d'Étapes de ce Corridor Temporel."
+TIME_CLOISTER_TEXT88,"Augmente les attributs Audace, Charme et Génie en fonction des Points obtenus durant les batailles des Cartes de Défis et les batailles d'Étapes de ce Corridor Temporel."
 TIME_CLOISTER_TEXT89,Bonus actuel
 TIME_CLOISTER_TEXT90,Points actuels
 TIME_CLOISTER_TEXT91,Détails de Bonus
@@ -5971,7 +5971,7 @@ TIME_CLOISTER_TEXT103,Bonus de Cristal :
 TIME_CLOISTER_TEXT104,Carte
 TIME_CLOISTER_TEXT105,Bonus de Combat
 TIME_CLOISTER_TEXT106,Achetez des Cartes de Cristal pour obtenir des Points
-TIME_CLOISTER_TEXT107,"1. Durant l'Exploration de ce Corridor Temporel, vous obtiendrez des Cristaux Rouges, Cristaux Jaunes et Cristaux Bleus qui peuvent être utilisés pour acheter les Cartes de Cristal.|2. Vous pouvez choisir le bonus de 3 types de cristaux lors de leur obtention. Ce bonus peuvent être amélioré dans le Planétarium - Technique · Cristal.|3. Il y en a plusieurs types de Carte de Cristal, le prix de chaque type de Carte de Cristal est différent. Après avoir acheté une Carte de Cristal, vous obtiendrez des points et le niveau de la Carte de Crsital achetée sera augmenté.|4. Augmente les attributs de l'Audace, du Charme et du Génie en fonction des points obtenus dans ce Corridor Temporel.|5. Chaque type de Carte de Cristal fournit un Bonus de combat et juste 3 Bonus de combat peuvent être déclenchés en même temps au maximum lors des batailles de Duel et des batailles d'Étapes."
+TIME_CLOISTER_TEXT107,"1. Durant l'Exploration de ce Corridor Temporel, vous obtiendrez des Cristaux Rouges, Cristaux Jaunes et Cristaux Bleus qui peuvent être utilisés pour acheter des Cartes de Cristal.|2. Vous pouvez choisir le bonus de 3 types de Cristaux lors de leur obtention. Ce bonus peut être amélioré dans le Planétarium - Technique · Cristal.|3. Il y en a plusieurs types de Carte de Cristal, le prix de chaque type de Carte de Cristal est différent. Après avoir acheté une Carte de Cristal, vous obtiendrez des points, le niveau de la Carte de Crsital achetée sera augmenté et la liste d'achat sera actualisée.|4. Augmente les attributs de l'Audace, du Charme et du Génie en fonction des points obtenus dans ce Corridor Temporel.|5. Chaque type de Carte de Cristal fournit un Bonus de combat et juste 3 Bonus de combat peuvent être déclenchés en même temps au maximum lors des batailles de Duel et des batailles d'Étapes."
 TIME_CLOISTER_TEXT108,Points :
 ACTIVITY_LAFULI_CASTLE_TEXT14,Voulez-vous obtenir {2} Fille(s) de la Maison {1} ?
 SHRINE_HURDLE_SHOP_TAB1,Achat
@@ -5987,14 +5987,14 @@ GAME_ASSISTANT_TEXT02,Quotidien
 GAME_ASSISTANT_TEXT03,Défis
 GAME_ASSISTANT_TEXT04,Développement
 GAME_ASSISTANT_TEXT05,Guilde
-GAME_ASSISTANT_TEXT06,Traiter cette page
-GAME_ASSISTANT_TEXT07,Traiter toutes\nles pages
+GAME_ASSISTANT_TEXT06,Traiter
+GAME_ASSISTANT_TEXT07,Tout Traiter
 GAME_ASSISTANT_TEXT08,Alchimie
-GAME_ASSISTANT_TEXT09,Pièce d'Or (Gratuit)
-GAME_ASSISTANT_TEXT10,Pièce d'Or (en utilisant des Gemmes)
-GAME_ASSISTANT_TEXT11,Définir la limite d'achat
-GAME_ASSISTANT_TEXT12,Butin de Campagne
-GAME_ASSISTANT_TEXT13,Ressources du Dortoir
+GAME_ASSISTANT_TEXT09,Pièce d'Or (gratuitement)
+GAME_ASSISTANT_TEXT10,Pièce d'Or (en Gemmes)
+GAME_ASSISTANT_TEXT11,Définissez la limite d'achat
+GAME_ASSISTANT_TEXT12,Butin\nde Campagne
+GAME_ASSISTANT_TEXT13,Ressources\ndu Dortoir
 GAME_ASSISTANT_TEXT14,Quiz Journalier
 GAME_ASSISTANT_TEXT15,Chance(s) Gratuite(s)
 GAME_ASSISTANT_TEXT16,Chance(s) Supplémentaire(s)
@@ -6004,41 +6004,41 @@ GAME_ASSISTANT_TEXT19,Capsule Normale
 GAME_ASSISTANT_TEXT20,Ami Cœur
 GAME_ASSISTANT_TEXT21,Arène
 GAME_ASSISTANT_TEXT22,Terminer 3 batailles
-GAME_ASSISTANT_TEXT23,Finir 2 Jobs
-GAME_ASSISTANT_TEXT24,Étoile(s) de Jobs à sélectionner
+GAME_ASSISTANT_TEXT23,Job
+GAME_ASSISTANT_TEXT24,Finir 2 Jobs
 GAME_ASSISTANT_TEXT25,Nombre à sélectionner
-GAME_ASSISTANT_TEXT26,Tirer 2 fois dans Distributeur Normal
-GAME_ASSISTANT_TEXT27,Achat des objets
-GAME_ASSISTANT_TEXT28,Aucun objet choisi
+GAME_ASSISTANT_TEXT26,Distributeur Normal
+GAME_ASSISTANT_TEXT27,Marché
+GAME_ASSISTANT_TEXT28,Vous n'avez choisi aucun objet
 GAME_ASSISTANT_TEXT29,Choisir
 GAME_ASSISTANT_TEXT30,Récompense de Galeries de Tenues
 GAME_ASSISTANT_TEXT31,Réinitialiser
 GAME_ASSISTANT_TEXT32,Confirmer
 GAME_ASSISTANT_TEXT33,Patrouille
 GAME_ASSISTANT_TEXT34,Récompense de Raid
-GAME_ASSISTANT_TEXT35,Achat des objets
+GAME_ASSISTANT_TEXT35,Acheter
 GAME_ASSISTANT_TEXT36,Examen des Maisons
-GAME_ASSISTANT_TEXT37,Maison à choisir
-GAME_ASSISTANT_TEXT38,Raid (Gratuit)
-GAME_ASSISTANT_TEXT39,Raid (en utilisant des Gemmes)
+GAME_ASSISTANT_TEXT37,Choisir une Maison
+GAME_ASSISTANT_TEXT38,Raid (gratuitement)
+GAME_ASSISTANT_TEXT39,Raid (en Gemmes)
 GAME_ASSISTANT_TEXT40,Ordinaire
 GAME_ASSISTANT_TEXT41,Moderne
 GAME_ASSISTANT_TEXT42,Deluxe
 GAME_ASSISTANT_TEXT43,Serviteur
 GAME_ASSISTANT_TEXT44,Récompense d'Entraînement
 GAME_ASSISTANT_TEXT45,Entraînement à choisir
-GAME_ASSISTANT_TEXT46,Épouvantail à défier
-GAME_ASSISTANT_TEXT47,Achat de l'Énergie
+GAME_ASSISTANT_TEXT46,Défier l'Épouvantail
+GAME_ASSISTANT_TEXT47,Achat d'Énergie
 GAME_ASSISTANT_TEXT48,Excursion
 GAME_ASSISTANT_TEXT49,Ressource à collecter
-GAME_ASSISTANT_TEXT50,Achat du Pain Délicieux
+GAME_ASSISTANT_TEXT50,Achat de Pain Délicieux
 GAME_ASSISTANT_TEXT51,Nombre d'achat
-GAME_ASSISTANT_TEXT52,Achat par jour：{1}/{2}
+GAME_ASSISTANT_TEXT52,Limite quotidienne：{1}/{2}
 GAME_ASSISTANT_TEXT53,Guilde
-GAME_ASSISTANT_TEXT54,Office
+GAME_ASSISTANT_TEXT54,Bureau
 GAME_ASSISTANT_TEXT55,Connexion
 GAME_ASSISTANT_TEXT56,Cafétéria
-GAME_ASSISTANT_TEXT57,Obtenir la commande
+GAME_ASSISTANT_TEXT57,Obtenir des commandes
 GAME_ASSISTANT_TEXT58,Améliorer en masse
 GAME_ASSISTANT_TEXT59,Commencer la commande
 GAME_ASSISTANT_TEXT60,Gymnase
@@ -6046,10 +6046,10 @@ GAME_ASSISTANT_TEXT61,Équipe de Combat
 GAME_ASSISTANT_TEXT62,Défier le Boss (61ème étape)
 GAME_ASSISTANT_TEXT63,Limite d'Achat: {1}/{2}
 GAME_ASSISTANT_TEXT64,Polly est en train d'y travailler
-GAME_ASSISTANT_TEXT65,Polly a fini de traiter vos demandes !
+GAME_ASSISTANT_TEXT65,Polly a fini de traiter vos demandes.
 GAME_ASSISTANT_TEXT66,Arrêter
 GAME_ASSISTANT_TEXT67,Confirmer
-GAME_ASSISTANT_TEXT68,Objet(s) choisi(s)
+GAME_ASSISTANT_TEXT68,Choisi(e)
 GAME_ASSISTANT_TEXT69,Aucune Maison choisie à défier
 GAME_ASSISTANT_TEXT70,Aucune Étape disponible à défier
 GAME_ASSISTANT_TEXT71,Récompense - Alchimie
@@ -6070,18 +6070,18 @@ GAME_ASSISTANT_TEXT85,Cafétéria - Obtenir la commande
 GAME_ASSISTANT_TEXT86,Cafétéria - Améliorer en masse : {1} fois
 GAME_ASSISTANT_TEXT87,Cafétéria - Obtenir la Commande
 GAME_ASSISTANT_TEXT88,Gymnase - Défier le Boss (61ème étape) : {1} fois
-GAME_ASSISTANT_TEXT89,Gymnase - Achat de la Chance de Défis : {1} fois
+GAME_ASSISTANT_TEXT89,Gymnase - Achat de Chance de Défis : {1} fois
 GAME_ASSISTANT_TEXT90,Terminé
-GAME_ASSISTANT_TIPS01,"Vous pouvez défier le Quiz Journalier du niveau plus haut, voulez-vous aller à défier? (Choisissez ""Non"" et obtenez les récompenses du niveau actuel de Quiz.)"
-GAME_ASSISTANT_TIPS02,Rien à compeléter pour le moment...
-GAME_ASSISTANT_TIPS03,"{1} Gemmes seront consommées (si Cafétéria - Améliorer en masse inclut, peut-être que moins de Gemmes seront consommées), voulez-vous continuer ?"
+GAME_ASSISTANT_TIPS01,"Vous pouvez défier le Quiz Journalier du niveau supérieur. Voulez-vous aller le défier?\n(En choisissant ""Non"", vous obtiendrez les récompenses du niveau actuel)"
+GAME_ASSISTANT_TIPS02,Rien à compléter pour le moment.
+GAME_ASSISTANT_TIPS03,"{1} Gemmes seront consommées (moins de gemmes pourraient être consommées si Cafétéria - Améliorer en masse est coché), voulez-vous continuer ?"
 GAME_ASSISTANT_TIPS04,Débloqué après que le niveau de la Salle d'Entraînement ait atteint {1} !
 GAME_ASSISTANT_TIPS05,Débloqué après que le niveau de l'Aventure - Excursion ait atteint {1} !
-GAME_ASSISTANT_TIPS06,Débloqué après que le niveau de la Salle d'Entraînement ait atteint {1} ou le niveau de l'Aventure - Excursion ait atteint {1} !
+GAME_ASSISTANT_TIPS06,Débloqué après que le niveau de la Salle d'Entraînement ait atteint {1} ou que le niveau de l'Aventure - Excursion ait atteint {1} !
 GAME_ASSISTANT_TIPS07,Débloqué après que le niveau de Guilde ait atteint {1} !
 GAME_ASSISTANT_TIPS08,Débloqué après que le niveau de la Cafétéria ait atteint {1} !
-GAME_ASSISTANT_TIPS09,Débloqué après avoir accédé à 61ème étage de Gymnase de Guide !
-GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+GAME_ASSISTANT_TIPS09,Débloqué après avoir accédé au 61ème étage du Gymnase de Guide !
+GAME_ASSISTANT_HELP01,"[c][0069cc]Quotidien[-][/c]|1. En cochant ""Oui"" pour les Capsules, l'Assistante Polly vous aidera à tirer vos Capsules gratuites disponibles.|2. Concernant le Distributeur, seuls les tickets du Distributeur Normal seront tirés.|3. L'Assistance Polly vous aidera à collecter les récompenses du Quiz au niveau le plus élevé atteint.|4. Polly défiera l'adversaire ayant la plus faible puissance de votre liste.|5. Vous pouvez sélectionner plusieurs niveaux d'étoile pour les 2 Jobs. Le système finira automatiquement les Jobs aux niveaux d'étoile les plus bas.|[c][0069cc]Défis[-][/c]|1. Votre équipe de Patrouille doit être formée avant que l'Assistante Polly puisse collecter vos récompenses de Raid.|2. Après avoir choisi votre Maison d’Examen des Maisons, l’Assistante Polly vous aidera à utiliser les Certificats pour Raid les étapes que vous avez déjà passées.|[c][0069cc]Développement[-][/c]|1. Les ressources de l’Excursion peuvent être collectées toutes les heures.|2. Après qu’un Entraînement du Serviteur soit terminé, l’Assistante Polly relancera le même entraînement avec les mêmes Serviteurs.|3. Pour défier l’Épouvantail, l’Assistante Polly utilisera le Serviteur le plus fort parmi ceux disponibles.|[c][0069cc]Guilde[-][/c]|1. Si aucune commande n'est obtenable dans votre Cafétéria (Guilde), alors l'assistante Polly ne pourra pas vous en obtenir davantage.|2. Avant d’obtenir de nouvelles commandes, l’Assistante Polly collectera vos récompenses des commandes précédentes terminées. Si une commande n’a pas encore commencé, alors elle commencera automatiquement.|3. Le calcul des Gemmes nécessaires à l’amélioration de vos commandes sera compté en fonction du niveau initial de vos commandes obtenues et du niveau auquel vous aurez choisi de les améliorer.|4. En cochant ""Oui"" pour défier le Boss 61 dans le Gymnase, toutes vos chances de bataille quotidiennes seront utilisées."
 ACTIVITY_PROMOTION_TEST_TEXT06,Tirez des Capsules Avancées pour obtenir des Certificats de Promotion.
 ACTIVITY_LASSO_BUTTON,Lancer
 ACTIVITY_LASSO_TEXT01,Entrez le nombre d'anneaux que vous voulez lancer
@@ -6092,32 +6092,32 @@ ACTIVITY_LASSO_OR,ou
 ACTIVITY_LASSO_TEXT03,"Cette récompense sera débloquée au {1}e tour, voulez-vous choisir la Récompense Finale de ce tour à l'avance ?"
 GAME_ASSISTANT_TEXT91,Statistiques
 GAME_ASSISTANT_TEXT92,Choisir
-GAME_ASSISTANT_TEXT93,Aucune Étape disponible à défier
-GAME_ASSISTANT_TIPS10,Veuillez d'abord former votre équipe.
+GAME_ASSISTANT_TEXT93,Aucune Étape défiable
+GAME_ASSISTANT_TIPS10,Veuillez former votre équipe
 ACTIVITY_PROMOTION_LADDER_TEXT12,Confirmez-vous cet échange ?
 ACTIVITY_LASSO_TEXT04,T.26 (et +)
 TIME_CLOISTER_TEXT111,Points nécessaires
 TIME_CLOISTER_TEXT112,Bonus du palier suivant
 ACTIVITY_FREEBUY_TIME,Fin dans {1}
-GAME_ASSISTANT_TEXT94,Polly a enregistré vos commandes !
+GAME_ASSISTANT_TEXT94,Polly a enregistré vos demandes !
 GAME_ASSISTANT_TEXT95,Aucun marchand rencontré...
 GAME_ASSISTANT_TEXT96,Livre - Quête Journalière
 GAME_ASSISTANT_TEXT97,Collecter les récompenses de raid - Patrouille en priorité
 GAME_ASSISTANT_TEXT98,Aucun objet
 ACTIVITY_LASSO_TITLE,Lancer d'anneaux
 TIME_CLOISTER_TEXT113,Optionnel après avoir débloqué la Technique - {1}
-TIME_CLOISTER_TEXT114,Réglage modifé !
-ACTIVITY_FREEBUY_TEXT01,Appuyez sur l'icône en haut du pack pour voir les récompenses obtenables.|Toutes les Gemmes consommées pour ces packs de l'événément vous seront rendues.
+TIME_CLOISTER_TEXT114,Réglage modifié !
+ACTIVITY_FREEBUY_TEXT01,Appuyez sur l'icône en haut du pack pour voir les récompenses obtenables.\nToutes les Gemmes consommées pour ces packs vous seront rendues.
 ACTIVITY_FREEBUY_TEXT02,Valeur Totale :
 ACTIVITY_FREEBUY_TEXT04,Récompense Collectable :
 ACTIVITY_FREEBUY_HELP,"1. Durant cet événement, utilisez des Gemmes pour acheter des packs de différents paliers. Afin de débloquer la possibilité d'achat du palier suivant, vous devrez faire l'achat du précédent. Après l'achat, vous obtiendrez immédiatement une récompense, puis vous obtiendrez quotidiennement une récompense pendant les 7 jours suivants.|2. Les récompenses non-collectées le Jour-J pourront être collectées les lendemains.|3. Après la fin de l'événement, les récompenses non-collectées vous seront envoyées par courrier."
 ACTIVITY_FREEBUY_TEXT05,Obtenez des Gemmes et d'autres récompenses pendant les 7 jours suivants !
-ACTIVITY_FREEBUY_TEXT06,À partir de 250%% sa valeur !
+ACTIVITY_FREEBUY_TEXT06,Plus de [c][e25a4c]275%%[-][/c] sa valeur !
 ACTIVITY_FREEBUY_TEXT07,Valeur x{1}
 TIME_CLOISTER_TEXT115,3 Bonus de combat peuvent être déclenchés en même temps au maximum
 ACTIVITY_LOTTERY_TEXT01,抽獎越多，秘寶越容易獲得
 ACTIVITY_LOTTERY_TEXT02,Récompense obtenable
-ACTIVITY_LOTTERY_TEXT03,跳過動畫
+ACTIVITY_LOTTERY_TEXT03,Passer l'animation
 ACTIVITY_LOTTERY_TEXT04,首次免費
 ACTIVITY_LOTTERY_TEXT05,活動期間獲取 {1} VIP經驗
 ACTIVITY_LOTTERY_TEXT06,秘寶券不足
@@ -6125,4 +6125,39 @@ ACTIVITY_LOTTERY_TEXT07,抽獎
 ACTIVITY_LOTTERY_TEXT08,活動期間，累計獲得一定的VIP經驗即可獲得秘寶券，進而抽獎獲得秘寶！
 TIME_CLOISTER_TEXT116,"Vous ne pouvez prendre part au classement de dégâts infligés dans uniquement 2 Corridors Temporels à la fois. Ainsi, vos statistiques de dégâts infligés dans le Vortex Temporel de {1} n'ont pas été enregistrées."
 TIME_CLOISTER_TEXT117,Un Corridor Temporel du niveau plus haut a été débloqué et vous ne pouvez pas participer au classement des dégâts infligés dans le Vortex Temporel de Corridor Temporel actuel. Voulez-vous continuer à défier ?
-ACTIVITY_FREEBUY_TEXT08,"Il vous faut faire l'achat du palier précédent afin de débloquer la possibilité d'achat de ce pack, voulez-vous aller à acheter ?"
+ACTIVITY_FREEBUY_TEXT08,"Il vous faut faire l'achat du tous les paliers précédents afin de débloquer la possibilité d'achat de ce pack, voulez-vous aller à acheter ?"
+ACTIVITY_LOTTERY_HELP,1.活動期間，累計獲得VIP經驗即可獲得「秘寶券」進行抽獎。|2.首次抽取秘寶免費。|3.所有獎勵被抽中后不放回，抽獎越多獲得秘寶的機會越大。|4.活動結束後，剩餘「秘寶券」將會自動回收，每個價格為50K金幣。
+PARTNER_CHALLENGE_CHESS_TEXT10,"C'est la dernière Fille que vous avez obtenu durant ce défis, voulez-vous continuer à la convertir en Tickets d'Échec ?"
+ACTIVITY_CLOCK_BUTTON01,Tourner
+ACTIVITY_CLOCK_TEXT01,Nombre d'Aiguille
+ACTIVITY_CLOCK_AWARDS_TEXT01,Utiliser {1} Pièces Mystères
+ACTIVITY_CLOCK_AWARDS_TEXT02,Utilisez encore {1}\nPièces Mystères
+ACTIVITY_CLOCK_AWARDS_TEXT03,Récompenses\nCollectables
+ACTIVITY_CLOCK_CHOOSE,Récompense Finale
+ACTIVITY_CLOCK_CHOOSE_TIPS,"Veuillez choisir les Récompenses Finales du tour actuel en appuyant sur les ""+""."
+ACTIVITY_CLOCK_CHOOSE_BUTTON,Aller à
+ACTIVITY_CLOCK_SHOW_TEXT01,Fixe
+ACTIVITY_CLOCK_SHOW_TEXT02,Au choix
+ACTIVITY_CLOCK_SHOW_TEXT03,Récompense du tour actuel
+ACTIVITY_CLOCK_SHOW_TEXT04,Récompense Finale
+ACTIVITY_CLOCK_SHOW_TEXT05,Tour {1}
+ACTIVITY_CLOCK_AWARD_GET,"Vous avez obtenu toutes les Récompenses Finales du tour actuel, ce qui vous permet d'obtenir les récompenses restantes !"
+ACTIVITY_CLOCK_HELP,"1. Durant cet événement, utilisez 1 Pièce Mystère pour faire tourner la Roue Mystère une fois (en fonction du nombre d'aiguille) et obtenir une récompense. Si vous choisissez plusieurs aiguilles, vous recevrez plusieurs récompenses, cependant le nombre de Pièces Mystères correspondantes sera utilisé.|2. Les récompenses dans la Roue Mystère sont divisées en Récompense Normale et en Récompense Finale. Les Récompenses Normales peuvent être obtenues plusieurs fois (le centre de la Roue Mystère indique le nombre de fois que les récompenses peuvent être gagnées). Chacune des Récompenses Finales peuvent être obtenues qu’une seule fois. Une fois que vous avez gagné tous les Récompenses Finales du tour actuel, vous recevrez toutes les récompenses restantes de la Roue Mystère.|3. Après avoir obtenu toutes les récompenses du tour actuel, vous pourrez accéder au tour suivant. Il y a 5 tours au total. Après avoir obtenu toutes les récompenses du 5ème tour, ce dernier sera répété et les récompenses ne changeront plus.|4. Vous recevrez des récompenses en fonction du nombre de Pièce Mystère que vous utilisez.|5. Moyen d'obtention des Pièces Mystère : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Sous le Chapiteau, Pack du Poisson d'Avril, Bonus de Distributeur et Célébration du Mois.|6. Après la fin de l'événement, les Pièces Mystères non-utilisées seront automatiquement converties en Pièce d'Or, 1 Pièce Mystère = 20 000 Pièces d'Or et seront distribuées par courrier."
+ACTIVITY_CLOCK_TASK,"Durant cet événement, terminez les tâches pour obtenir des Pièces Mystères que vous pourrez utiliser dans La Roue Mystère."
+ACTIVITY_CLOCK_TITLE,Poisson\nd'Avril
+ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Récompenses
+ACTIVITY_CLOCK_TEXT02,Récompenses
+ACTIVITY_CLOCK_GIFTBAG_HELP,"1. Personnalisez le contenu de votre pack !|2. Modifiez le contenu de votre pack avant son achat, en appuyant sur le bouton en haut à droite de l'objet."
+ACTIVITY_FREEBUY_TEXT09,Obtention\nImmédiate
+ACTIVITY_FREEBUY_TEXT10,Récompense du lendemain :
+ACTIVITY_FREEBUY_TEXT11,Obtenu：
+ACTIVITY_FREEBUY_TEXT12,"La période d'achat a été terminée, impossible à acheter ce pack pour le moment..."
+ACTIVITY_NEWBEE_FUND_TEXT03,Récompense Partielle： 
+ACTIVITY_NEWBEE_FUND_TEXT04,Valeur Totale： 
+ACTIVITY_CLOCK_TEXT03,Tourner en masse
+ACTIVITY_CLOCK_TEXT04,Choisissez une quantité de Pièce Mystère à utiliser pour faire tourner la Roue
+ACTIVITY_CLOCKGIFTBAG_TEXT01,Récompenses
+ACTIVITY_CLOCKGIFTBAG_TEXT02,Sélectionnez une récompense
+GAME_ASSISTANT_TEXT99,Tirer 2 fois dans Distributeur Normal
+GAME_ASSISTANT_TEXT100,Boutique
+ACTIVITY_CLOCK_SHOW_TEXT06,Après le Tour 5

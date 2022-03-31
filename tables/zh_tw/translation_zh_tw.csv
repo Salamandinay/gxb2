@@ -1945,7 +1945,7 @@ ACTIVITY_CONCERT_RANK_WINDOW_TEXT02,當前最高排名
 ACTIVITY_CONCERT_INFO_WINDOW_TEXT09,演奏歌曲
 ACTIVITY_MUSIC_JIGSAW_LOCK_TIPS,該難度歌曲尚未解鎖喔！
 ACTIVITY_MUSIC_GAME_QUIT,結束
-LEVEL_FUND_TEXT01,加入貂蟬老師的學習獎勵計劃後，每當學長到達指定等級，都能獲得對應的鑽石獎勵。若學長等級較高，則加入時會直接獲得較低等級的鑽石獎勵。
+LEVEL_FUND_TEXT01,1.加入貂蟬老師的學習獎勵計劃後，每當學長到達指定等級，都能獲得對應的鑽石獎勵。|2.若學長等級較高，則加入時會直接獲得較低等級的鑽石獎勵。
 LEVEL_FUND_TEXT02,達到{1}級
 IMG_GUIDE_MUSIC_GAME_1,Fever充滿後得分加倍\n但歸零時就會[c][cc0011]遊戲結束[-][/c]
 IMG_GUIDE_MUSIC_GAME_2,此次演奏的[c][cc0011]評價[-][/c]與[c][cc0011]準確率[-][/c]\n準確率越高評價越高
@@ -3541,7 +3541,7 @@ ACTIVITY_HALLOWEEN_TEXT3,使用1個南瓜刀可隨機切開一個南瓜\n切開�
 ACTIVITY_HALLOWEEN_TEXT4,從下列物品中隨機獲得一個
 ACTIVITY_HALLOWEEN_USE,切開南瓜
 ACTIVITY_HALLOWEEN_GET,領取
-ACTIVITY_HALLOWEEN_AWARD,本輪獎勵
+ACTIVITY_HALLOWEEN_AWARD,禮包獎勵
 ACTIVITY_HALLOWEEN_HELP,1.活動期間，消耗1個「南瓜刀」即可隨機切開1個南瓜，獲得其中的獎勵。|2.南瓜共有4個不同的檔位，點擊南瓜查看其中可能獲得的獎勵及機率。|3.切開本輪所有南瓜後，即可領取本輪獎勵，刷新所有南瓜並進入下一輪。第27輪及之後，每輪獎勵均為「橙色魂器專屬碎片」|4.「南瓜刀」的獲得方式：| - 活動介面使用鑽石購買(上限30次)| - 透過招生考核獲得| - 透過超值禮包獲得| - 透過特惠禮包獲得| - 透過造型禮包獲得| - 透過每日信件獲得|5.在活動結束後，未使用的「南瓜刀」將會自動兌換成金幣，每個價格為300k，透過信件發放。
 TREASURE_RESERVE_EMPTY,是否將主水晶備份到備用水晶欄{1}？
 TREASURE_SAME_HELP,存在相同屬性水晶，是否繼續備份？
@@ -5035,7 +5035,7 @@ ACTIVITY_MONTHLY_TEXT003,技能預覽
 TIME_CLOISTER_HELP01,1.學長可前往時間迴廊進行觀測，透過觀測可獲取豐厚獎勵。|2.時間迴廊初始解鎖1個，學長可派遣戰姬前往該迴廊進行觀測。|3.根據派遣戰姬的總戰力，轉換為臨時的「勇氣」、「魅力」、「知識」屬性參與此次觀測。|4.迴廊的最大觀測時長由該迴廊的「回溯懷錶」數決定。每次觀測都獲得當前「回溯懷錶」的最大值，開始觀測後每6分鐘消耗1個「回溯懷錶」。|5.消耗「時間之塵」，可加速觀測時間，加速時根據加速時長消耗對應數量的「回溯懷錶」。在時間迴廊中挑戰關卡或完成部分成就可獲取「時間之塵」（此2種獲取途徑均為一次性）|6.在迴廊中進行觀測可完成該迴廊的成就，以此增加該迴廊的總觀測進度，進度達到85%%後解鎖下一個迴廊。|7.每個時間迴廊都有獨立的多個關卡，可在該迴廊進行觀測時，透過升級星空儀科技來解鎖關卡的挑戰資格。
 TIME_CLOISTER_HELP02,1.進行觀測時，每5分鐘會隨機觸發1張卡牌。卡牌分為補給卡、挑戰卡、事件卡三類，不同類型的卡牌有不同的效果。|2.觀測中觸發補給卡時，根據觸發的卡牌，在觀測結束後進行結算時，可獲取對應的道具獎勵。|3.觀測中觸發挑戰卡時，會進行一場特殊戰鬥。學長在特殊戰鬥中的戰力與「勇氣」、「魅力」、「知識」三項屬性相關，屬性越高戰力越強。學長的個性裝扮提供的三項屬性，和此迴廊中星空儀科技提供的三項屬性在介面中顯示為黑色數字；派遣戰姬提供的臨時屬性在介面中顯示為綠色數字。|4.根據挑戰卡的戰鬥結果，獲得隨機的道具獎勵。戰敗時獲取的獎勵少於戰勝時的獎勵。|5.觀測中觸發事件卡時，無任何特殊效果，只會在觀測結束後進行結算時，完成對應的成就。|6.「回溯懷錶」耗盡或手動操作都會結束觀測，結束觀測後需學長手動結算此次觀測。|7.觀測結算時，獲得觀測中的所有道具獎勵並完成成就。同時根據此次觀測中觸發的所有卡牌進行評分，獲得一定數量的「星空碎片」用於在該迴廊中升級星空儀科技。
 TIME_CLOISTER_HELP03,1.在此迴廊進行觀測，每次觀測結算時都會獲取此迴廊專屬的「星空碎片」。|2.此迴廊的科技分為2組，升級時均消耗「星空碎片」。除初始解鎖的科技外，不同科技存在不同的解鎖條件。|3.一次觀測中升級科技後，其效果不會直接生效，只會在下一次觀測時生效。
-TIME_CLOISTER_HELP04,1.每個迴廊共11個關卡，前10關為普通關卡，第11關為特殊關卡。每次挑戰，無論結果，均會消耗1個「時間迴廊挑戰憑證」。|2.每個關卡都擁有「勇氣」、「魅力」、「知識」三項屬性，學長的此三項屬性為個性裝扮提供的加上此迴廊星空儀科技提供的。|3.此三項屬性影響戰鬥的具體規則詳見「個性裝扮」功能的幫助說明，相較其他功能，在時間迴廊中生效的數值為5倍。|4.通關普通關卡後，獲取一次性的通關獎勵，該獎勵不會重置，不可重複領取。|5.特殊關卡的敵人為無限復活的BOSS。每次挑戰後會記錄此次挑戰的傷害，單次挑戰的最大傷害將用於參與排名，每週星期五0點(UTC/GMT 0）進行排名結算，根據排名獲取對應檔位的獎勵。
+TIME_CLOISTER_HELP04,1.每個迴廊共11個關卡，前10關為普通關卡，第11關為特殊關卡。每次挑戰，無論結果，均會消耗1個「時間迴廊挑戰憑證」。|2.每個關卡都擁有「勇氣」、「魅力」、「知識」三項屬性，學長的此三項屬性為個性裝扮提供的加上此迴廊星空儀科技提供的。|3.此三項屬性影響戰鬥的具體規則詳見「個性裝扮」功能的幫助說明，相較其他功能，在時間迴廊中生效的數值為5倍。|4.通關普通關卡後，獲取一次性的通關獎勵，該獎勵不會重置，不可重複領取。|5.特殊關卡的敵人為無限復活的BOSS。每次挑戰後會記錄此次挑戰的傷害，單次挑戰的最大傷害將用於參與排名，每週星期五0點(UTC/GMT 0）進行排名結算，根據排名獲取對應檔位的獎勵。|6.學長只能參與已解鎖的最新2個迴廊的特殊關卡排名。（如：解鎖第3迴廊的特殊關卡後，無法再參與第1迴廊的特殊關卡排名）
 TIME_CLOISTER_TEXT01,成就
 TIME_CLOISTER_TEXT02,關卡
 TIME_CLOISTER_TEXT03,開始觀測
@@ -5890,7 +5890,7 @@ TIME_CLOISTER_TEXT103,獲取方案:
 TIME_CLOISTER_TEXT104,卡牌詳情
 TIME_CLOISTER_TEXT105,戰鬥技能
 TIME_CLOISTER_TEXT106,購買卡牌獲取積分
-TIME_CLOISTER_TEXT107,1.在此迴廊中進行觀測，可獲得紅水晶、黃水晶、藍水晶用於購買水晶卡。|2.可設置三種水晶在獲取時的獲取量加成，加成類型和加成效果可透過科技進行升級。|3.水晶卡有多個種類，每種水晶卡價格不同，購買後獲取對應積分並提升卡牌等級。|4.根據累計積分，在此迴廊中可獲得勇氣、魅力、知識屬性加成。|5.每種水晶卡提供一項特殊戰鬥技能，可最多設置三項戰鬥技能，在此迴廊的遭遇戰和關卡戰鬥中生效。
+TIME_CLOISTER_TEXT107,1.在此迴廊中進行觀測，可獲得紅水晶、黃水晶、藍水晶用於購買水晶卡。|2.可設置三種水晶在獲取時的獲取量加成，加成類型和加成效果可透過科技進行升級。|3.水晶卡有多個種類，每種水晶卡價格不同，購買後獲取對應積分並提升卡牌等級，同時刷新購買列表。|4.根據累計積分，在此迴廊中可獲得勇氣、魅力、知識屬性加成。|5.每種水晶卡提供一項特殊戰鬥技能，可最多設置三項戰鬥技能，在此迴廊的遭遇戰和關卡戰鬥中生效。
 TIME_CLOISTER_TEXT108,積分:
 ACTIVITY_LAFULI_CASTLE_TEXT14,是否確認在{1}陣營中抽取{2}次戰姬？
 SHRINE_HURDLE_SHOP_TAB1,購買
@@ -5923,11 +5923,11 @@ GAME_ASSISTANT_TEXT19,普通扭蛋
 GAME_ASSISTANT_TEXT20,收發愛心
 GAME_ASSISTANT_TEXT21,校園聯賽
 GAME_ASSISTANT_TEXT22,完成3次戰鬥
-GAME_ASSISTANT_TEXT23,完成2次打工任務
-GAME_ASSISTANT_TEXT24,星級選擇
+GAME_ASSISTANT_TEXT23,打工
+GAME_ASSISTANT_TEXT24,領取2個任務獎勵
 GAME_ASSISTANT_TEXT25,數量選擇
-GAME_ASSISTANT_TEXT26,販賣機抽獎2次
-GAME_ASSISTANT_TEXT27,商品購買
+GAME_ASSISTANT_TEXT26,普通販賣機
+GAME_ASSISTANT_TEXT27,福利社
 GAME_ASSISTANT_TEXT28,當前未選擇商品
 GAME_ASSISTANT_TEXT29,選擇商品
 GAME_ASSISTANT_TEXT30,領取櫥窗獎勵
@@ -5978,7 +5978,7 @@ GAME_ASSISTANT_TEXT74,完成打工獎勵
 GAME_ASSISTANT_TEXT75,販賣機抽獎（{1}次）
 GAME_ASSISTANT_TEXT76,守護校園掃蕩獎勵（{1}次）
 GAME_ASSISTANT_TEXT77,學院考核掃蕩獎勵（{1}次）
-GAME_ASSISTANT_TEXT78,使魔課程獎勵
+GAME_ASSISTANT_TEXT78,使魔_課程獎勵
 GAME_ASSISTANT_TEXT79,使魔開始新課程
 GAME_ASSISTANT_TEXT80,使魔_挑戰訓練體力購買
 GAME_ASSISTANT_TEXT81,使魔_挑戰訓練獎勵
@@ -5988,7 +5988,7 @@ GAME_ASSISTANT_TEXT84,社團_簽到
 GAME_ASSISTANT_TEXT85,社團餐廳_獲得訂單
 GAME_ASSISTANT_TEXT86,社團餐廳_升級訂單（{1}次）
 GAME_ASSISTANT_TEXT87,社團餐廳_開始訂單
-GAME_ASSISTANT_TEXT88,社團體育館_挑戰61關（{1}次）
+GAME_ASSISTANT_TEXT88,社團體育館_挑戰61關（第{1}次）
 GAME_ASSISTANT_TEXT89,社團體育館_購買挑戰次數（{1}次）
 GAME_ASSISTANT_TEXT90,已完成
 GAME_ASSISTANT_TIPS01,當前存在更高難度的日常測驗可挑戰，是否前往？（選否則領取當前可領的最高測驗獎勵）
@@ -6000,7 +6000,7 @@ GAME_ASSISTANT_TIPS06,使魔訓練室達到{1}級或者校外遠足中探險達�
 GAME_ASSISTANT_TIPS07,學長加入{1}級及以上的社團後解鎖
 GAME_ASSISTANT_TIPS08,餐廳達到{1}級後，開啟相關功能
 GAME_ASSISTANT_TIPS09,體育館開啟第61關後，開啟相關功能
-GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗默認領取當前可領的最高等級獎勵；|4.校園聯賽會默認挑戰戰力最低的隊伍；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將默認按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|2.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|3.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
+GAME_ASSISTANT_HELP01,[c][0069cc]日常[-][/c]|1.扭蛋相關設置中，選「是」，則優先使用免費扭蛋次數，其次使用對應扭蛋幣進行一次扭蛋；|2.販賣機抽獎僅會抽取普通販賣機；|3.每日測驗預設領取當前可領的最高等級獎勵；|4.校園聯賽會預設挑戰戰力最低的隊伍；|5.打工任務的星級可以多選，選擇后會優先領取較低星級任務的獎勵；|[c][0069cc]挑戰[-][/c]|1.守護校園，需要先設置陣容後才能獲得掃蕩獎勵；|2.學院考核，選擇陣營後，若有已通關的關卡則可以消耗通關憑證進行掃蕩；|[c][0069cc]成長[-][/c]|1.校外遠足的收益每隔1小時可以領取一次；|2.使魔的課程訓練完成後，將預設按照之前的配置繼續開始訓練；|3.使魔挑戰訓練假人時，將優先更強的使魔進行挑戰；|[c][0069cc]社團[-][/c]|1.如果獲取訂單正處於冷卻，餐廳訂單相關功能不會執行；|2.社團餐廳獲得訂單前，會先自動領取已經完成訂單獎勵，若已有未開始的訂單，則將其直接開始；|3.升級訂單消耗的鑽石按照所有獲得訂單1級來預計，所以實際消耗可能會減少；|4.選擇挑戰第61關敵人後會消耗當日剩餘所有次數；
 ACTIVITY_PROMOTION_TEST_TEXT06,參與高級扭蛋活動，可以獲得晉升證書
 ACTIVITY_LASSO_BUTTON,扔套圈
 ACTIVITY_LASSO_TEXT01,請輸入扔套圈次數
@@ -6026,12 +6026,12 @@ GAME_ASSISTANT_TEXT98,當前沒有商品
 ACTIVITY_LASSO_TITLE,扔套圈
 TIME_CLOISTER_TEXT113,解鎖科技{1}后可選擇
 TIME_CLOISTER_TEXT114,設置成功
-ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵|購買後鑽石全額返還
+ACTIVITY_FREEBUY_TEXT01,點擊禮包頁簽上方圖案查看可獲得的獎勵\n購買後鑽石全額返還
 ACTIVITY_FREEBUY_TEXT02,購買總得：
 ACTIVITY_FREEBUY_TEXT04,今日可領：
 ACTIVITY_FREEBUY_HELP,1.學長可消耗鑽石購買禮包。第二檔禮包開始，玩家需要購買上一檔禮包才能解鎖對應禮包。購買後當天即可領取一份獎勵，之後七天每天都可以獲得一份獎勵。|2.購買後七天內沒有領取的獎勵，將會保留至下一日。|3.活動結束後，尚未領取的獎勵將會透過信件發放。
 ACTIVITY_FREEBUY_TEXT05,7日免費獲取鑽石等好禮
-ACTIVITY_FREEBUY_TEXT06,超值返利250%%起
+ACTIVITY_FREEBUY_TEXT06,超值返利[c][e25a4c]275%%[-][/c]起
 ACTIVITY_FREEBUY_TEXT07,返利{1}
 TIME_CLOISTER_TEXT115,最多生效3張水晶卡的戰鬥技能
 ACTIVITY_LOTTERY_TEXT01,抽獎越多，秘寶越容易獲得
@@ -6044,4 +6044,40 @@ ACTIVITY_LOTTERY_TEXT07,抽獎
 ACTIVITY_LOTTERY_TEXT08,活動期間，累計獲得一定的VIP經驗即可獲得秘寶券，進而抽獎獲得秘寶！
 TIME_CLOISTER_TEXT116,學長只能參與2個已解鎖迴廊的時間旋渦傷害排名。現已清除學長在{1}的時間旋渦傷害數據！
 TIME_CLOISTER_TEXT117,已解鎖了更高級的時間迴廊，無法在此迴廊的時間旋渦中參與傷害排名。是否繼續挑戰？
-ACTIVITY_FREEBUY_TEXT08,購買前一檔位禮包後解鎖該禮包，是否前往購買？
+ACTIVITY_FREEBUY_TEXT08,購買之前所有檔位禮包後解鎖該禮包，是否前往購買？
+ACTIVITY_LOTTERY_HELP,1.活動期間，累計獲得VIP經驗即可獲得「秘寶券」進行抽獎。|2.首次抽取秘寶免費。|3.所有獎勵被抽中后不放回，抽獎越多獲得秘寶的機會越大。|4.活動結束後，剩餘「秘寶券」將會自動回收，每個價格為50K金幣。
+PARTNER_CHALLENGE_CHESS_TEXT10,是否確定轉換最後一個戰姬？
+ACTIVITY_CLOCK_BUTTON01,轉動
+ACTIVITY_CLOCK_TEXT01,指針
+ACTIVITY_CLOCK_AWARDS_TEXT01,消耗{1}個輪盤幣
+ACTIVITY_CLOCK_AWARDS_TEXT02,再消耗{1}個輪盤幣獲得
+ACTIVITY_CLOCK_AWARDS_TEXT03,可領取以下獎勵
+ACTIVITY_CLOCK_CHOOSE,請選擇大獎獎勵
+ACTIVITY_CLOCK_CHOOSE_TIPS,尚未選擇大獎獎勵，請優先前往選擇
+ACTIVITY_CLOCK_CHOOSE_BUTTON,前往選擇
+ACTIVITY_CLOCK_SHOW_TEXT01,固定
+ACTIVITY_CLOCK_SHOW_TEXT02,三選一
+ACTIVITY_CLOCK_SHOW_TEXT03,本輪獎勵
+ACTIVITY_CLOCK_SHOW_TEXT04,每輪大獎
+ACTIVITY_CLOCK_SHOW_TEXT05,第{1}輪
+ACTIVITY_CLOCK_AWARD_GET,已獲得本輪所有大獎，獲得本輪剩餘所有獎勵！
+ACTIVITY_CLOCK_HELP,1.活動期間，學長消耗1個「輪盤幣」便可轉動1次輪盤（在1個指針情況下），獲得輪盤內一個獎勵；若選擇了多個指針，便可獲得多個獎勵，但是需要消耗對應數量的「輪盤幣」。|2.輪盤內獎勵分為大獎和普通獎勵，普通獎勵可以重複獲得多次（輪盤中心顯示剩餘可被獲得的次數）。每個大獎僅可獲得一次。獲得本輪所有大獎後，直接獲得輪盤內剩餘所有獎勵。|3.輪盤內所有獎勵全部獲得後進入下一輪。輪盤共有5輪，第5輪的獎勵全部獲得後將會重複進行第5輪。|4.根據消耗的「輪盤幣」數量還將發放累計獎勵。|5.「輪盤幣」可以透過每日信件，超值禮包、造型禮包、特惠禮包，愚人遊戲，四月之愚，摸彩贏積分和啟月首禮獲得。|6.活動結束後，未使用的「輪盤幣」將會自動兌換為金幣，每個價格為20000。回收後獲得的金幣將透過信件發放。
+ACTIVITY_CLOCK_TASK,活動期間，完成任務便可獲得輪盤幣哦~使用輪盤幣轉動輪盤即可獲得驚喜獎勵！
+ACTIVITY_CLOCK_TITLE,驚喜愚人節
+ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,獎勵預覽
+ACTIVITY_CLOCK_TEXT02,累計獎勵
+ACTIVITY_CLOCK_GIFTBAG_HELP,1.學長可點擊禮包界面的自選按鈕選擇想要的禮包內容，確認想要獲得的禮包內容後便可進行購買。|2.禮包內容保存後若學長想進行更換，可點擊道具右上角的切換按鈕重新進行選擇。
+ACTIVITY_FREEBUY_TEXT09,購買即得
+ACTIVITY_FREEBUY_TEXT10,明日可領：
+ACTIVITY_FREEBUY_TEXT11,領取完畢：
+ACTIVITY_FREEBUY_TEXT12,購買期已結束，無法購買該禮包
+ACTIVITY_NEWBEE_FUND_TEXT03,部分獎勵總計： 
+ACTIVITY_NEWBEE_FUND_TEXT04,總價值： 
+ACTIVITY_CLOCK_TEXT03,批量轉動
+ACTIVITY_CLOCK_TEXT04,請選擇轉動次數
+ACTIVITY_CLOCKGIFTBAG_TEXT01,自選獎勵
+ACTIVITY_CLOCKGIFTBAG_TEXT02,請選擇獎勵内容
+GAME_ASSISTANT_TEXT99,抽獎2次
+ACTIVITY_FREEBUY_TEXT13,學長已領取今日獎勵，明日再來哦~
+GAME_ASSISTANT_TEXT100,商店
+ACTIVITY_CLOCK_SHOW_TEXT06,第5輪及以後

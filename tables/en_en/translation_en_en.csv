@@ -297,7 +297,7 @@ PROPHET_BRANCH_NOT_ENOUGH,Not Enough Portfolios
 DAILY_QUIZ_TIME_COUNT,Starting in:
 DAILY_QUIZ_LEFT_COUNT,Times Remaining:
 FIGHT,Battle
-AFTER_FREE,Refreshes At
+AFTER_FREE,Refreshes In
 MAINWIN_RIGHT_1,Shop
 MAINWIN_RIGHT_2,Trials
 MAINWIN_RIGHT_3,Dorm
@@ -1944,7 +1944,7 @@ ACTIVITY_CONCERT_RANK_WINDOW_TEXT02,Current highest rank
 ACTIVITY_CONCERT_INFO_WINDOW_TEXT09,Song
 ACTIVITY_MUSIC_JIGSAW_LOCK_TIPS,The song is not unlocked yet!
 ACTIVITY_MUSIC_GAME_QUIT,Leave
-LEVEL_FUND_TEXT01,"After joining Hottie's motivation program, you will receive Gems when you reach the level in the requirements. If you have already reached some of the objectives when you joined, you will receive the Gems for the completed objectives immediately."
+LEVEL_FUND_TEXT01,"1. After joining Hottie's motivation program, you will receive Gems when you reach the level in the requirements.|2. If you have already reached some of the objectives when you joined, you will receive the Gems for the completed objectives immediately."
 LEVEL_FUND_TEXT02,Reach Level {1}
 IMG_GUIDE_MUSIC_GAME_1,You will get double score after the Fever bar is full. You will [c][cc0011]lose[-][/c] if your Fever bar is empty
 IMG_GUIDE_MUSIC_GAME_2,The [c][cc0011]rank[-][/c] and [c][cc0011]accuracy[-][/c] for the play: Your rank will become higher if your accuracy is high
@@ -2056,7 +2056,7 @@ ARENA_ALL_SERVER_OPEN,The feature will be unlocked after：
 ARENA_ALL_SERVER_TEXT_31,The Finals haven't started yet!
 ARENA_ALL_SERVER_TEXT_32,Support Rate
 VOW_SWAP_TIPS,One of these Girls has Oath status with you. The process will consume the Girl and WILL NOT return her Oath Ring. Do you wish to continue?
-CANDY_COLLECT_HELP,"1. Collect Lanterns to exchange rewards with the girls.|2. Tap on a girl to view their rewards exchange page.|3. Tap the “+” icon next to the Lantern icon to view details and acquire methods.|4. You can exchange a second reward from the same girl after one reward has been exchanged from every girl.|5. Lanterns can be earned by completing the tasks below:|---Get 2 Lanterns for each 5-star girl obtained during the event|---Get 10 Lanterns for each 6-star girl obtained during the event|---Get 2 Lanterns for each 4+star internship quest completed|---Get 1 Lantern for every 3 League Tickets consumed|Note: There is a limit on how many times the tasks can be completed. Furthermore, Girls obtained from Enroll – Exchange and Girl Reverse will not count towards completing the event tasks.|6. Once event ends, remaining Lanterns will automatically be exchanged into Coins at a rate of 15K Coins each. The Coins will be sent via Mail."
+CANDY_COLLECT_HELP,"1. Collect Lanterns to exchange rewards with the girls.|2. Tap on a girl to view their rewards exchange page.|3. Tap the “+” icon next to the Lantern icon to view details and acquire methods.|4. You can exchange a second reward from the same girl after one reward has been exchanged from every girl.|5. Lanterns can be earned by completing the tasks below:|---Get 2 Lanterns for each 5-star girl obtained during the event|---Get 10 Lanterns for each 6-star girl obtained during the event|---Get 2 Lanterns for each 4+star internship quest completed|---Get 1 Lantern for every 3 League Tickets consumed|Note: There is a limit on how many times the tasks can be completed. Furthermore, Girls obtained from Enroll – Exchange and Girl Reverse will not count towards completing the event tasks.|6. Once the event ends, the remaining Lanterns will automatically be exchanged into Coins at a rate of 15K Coins each. The Coins will be sent via Mail."
 CANDY_COLLECT_TEXT_1,You can exchange another reward here after you've exchanged a reward from each girl
 CANDY_COLLECT_TEXT_2,Are you sure to exchange this reward?
 CANDY_COLLECT_TEXT_3,Exchange a reward from every girl to exchange a second reward here!
@@ -2129,7 +2129,7 @@ ACCEPT_INVITE,Accept
 REFUSE_APPLY,Reject
 ACCEPT_APPLY,Accept
 FRIEND_TEAM_BOSS_KICKOUT_TEAM,Remove
-FRIEND_TEAM_BOSS_WINDOW_HELP,"1. Assemble your team for Yume Academy! You can only invite your friends to your security squad.|2. A Chaos Lord will appear every Tuesday and Saturday(UTC/GMT 0), and they will stay for 48 hours. Rewards will be calculated after the countdown reaches 0.|3. When a Chaos Lord is present, you cannot quit your team or recruit new members. Adjust your team in between Chaos Lords. You can leave your current team by tapping the red button in the bottom right corner of your team chart. If you're the team leader, you can remove other players from your team by tapping on their avatars.|4. If the Chaos Lord has more than 50%% HP when the countdown reaches 0, your security level will decrease by 1 and you will get a Demotion Reward. If the Chaos Lord has less than (or including) 50%% HP but is not defeated, you will get a Maintenance Reward. If the Chaos Lord is defeated, your security level will increase by 1 and you will get a Promotion Reward.|5. Security level: each player has their own security level. When teaming up with other players, different Chaos Lords will spawn according to the player with the lowest security level.|6. When the Security levels of the players in the squad are different, Promotions will only be given to the player with the lowest Security level, but Demotions will affect the security level of all squad members.|7. A Chaos Lord will spawn with 2 Dark Knights. You deal 20%% damage to the Chaos Lord for killing each of them.|8. You will have 2 chances to attack the enemy after they are spawned. Each member of your team can also purchase 1 additional attack chance with Coins during each spawn. Arrange your limited chances wisely.|9. Weather: The instability of Gap World will affect the weather, and different weather will have different effects on the battlefield. Consider this when you're making your lineup.|10. Squad name and banner can only be changed once every 72 hours."
+FRIEND_TEAM_BOSS_WINDOW_HELP,"1. Assemble your team for Yume Academy! You can invite your friends in servers who had their data integrated with your server to your Security Squad. You cannot remove a player from your Friend List while they are in your Security Squad team.|2. A Chaos Lord will appear at 0:00 (UTC/GMT 0) every Tuesday and Saturday, and it will stay for 48 hours. Rewards will be calculated after the countdown reaches 0.|3. When a Chaos Lord is present, you cannot quit your team or recruit new members. Adjust your team in between Chaos Lords. You can leave your current team by tapping the red button in the bottom right corner of your team chart. If you're the team leader, you can remove other players from your team by tapping on their avatars.|4. If the Chaos Lord has more than 50%% HP when the countdown reaches 0, your security level will decrease by 1 and you will get a Demotion Reward. If the Chaos Lord has less than (or including) 50%% HP but is not defeated, you will get a Maintenance Reward. If the Chaos Lord is defeated, your security level will increase by 1 and you will get a Promotion Reward.|5. Security level: each player has their own security level. When teaming up with other players, different Chaos Lords will spawn according to the player with the lowest security level.|6. When the Security levels of the players in the squad are different, Promotions will only be given to the player with the lowest Security level, but Demotions will affect the security level of all squad members.|7. A Chaos Lord will spawn with 2 Dark Knights. You deal 20%% damage to the Chaos Lord for killing each of them.|8. You will have 2 chances to attack the enemy after they are spawned. Each member of your team can also purchase 1 additional attack chance with Coins during each spawn. Arrange your limited chances wisely.|9. Weather: The instability of Gap World will affect the weather, and different weather will have different effects on the battlefield. Consider this when you're making your lineup.|10. Squad name and banner can only be changed once every 72 hours. This also applies if only the Squad name or only the banner is changed."
 FRIEND_TEAM_BOSS_AWARD1,Current
 FRIEND_TEAM_BOSS_AWARD2,Overview
 FRIEND_TEAM_BOSS_NOW_LEVEL,Security Level：{1}
@@ -3550,7 +3550,7 @@ ACTIVITY_HALLOWEEN_TEXT3,Use 1 Pumpkin Dagger to cut 1 Pumpkin\nYou'll be able t
 ACTIVITY_HALLOWEEN_TEXT4,Get random 1 of the following rewards
 ACTIVITY_HALLOWEEN_USE,Cut
 ACTIVITY_HALLOWEEN_GET,Claim
-ACTIVITY_HALLOWEEN_AWARD,Current Reward
+ACTIVITY_HALLOWEEN_AWARD,Pack Reward
 ACTIVITY_HALLOWEEN_HELP,"1. During the event, use 1 Pumpkin Dagger to cut 1 Pumpkin and get the item hiding inside.|2. There're 4 kinds of Pumpkins, tap on the Pumpkins to check out the possible rewards and the exact rate to acquire them.|3. You'll be able to acquire the reward of your current round and enter the next round.|4. Methods to acquire Pumpkin Daggers:|- Complete Enroll Exam|- Daily Mail|- Mega Value Pack|- Special Skin Pack|- Special Gift Pack|- Purchase with Gem at the event page (Limit: 30)|5. The unused Pumpkin Daggers will be automatically exchanged into Coins at the rate of 300K Coins each after the event is over. The Coins will be sent via Mail."
 TREASURE_RESERVE_EMPTY,Confirm to copy the current Crystal to your Backup Crystal slot?
 TREASURE_SAME_HELP,"You already have a Crystal with the same attribute boost in the Backup slot, confirm to continue?"
@@ -5049,7 +5049,7 @@ ACTIVITY_MONTHLY_TEXT003,Preview
 TIME_CLOISTER_HELP01,"1. You can get rewards by Observing in Echoes of Time.|2. 1 World of Time will be available by default, where you can send your Girls to start Observing in the World of Time.|3. The total power of the Girls you send will be transferred into “Courage”, “Charisma” and “Knowledge” attributes in this Observation.|4. In the World of Time, your Observation Length will depend on the number of “Clockwork of Memory”. When Observation begins you will obtain the maximum “Clockwork of Memory” where 1 “Clockwork of Memory” will be consumed every 6 minutes.|5. You can speed up reading by consuming “Time Essence”, however, the time sped up will still consume the corresponding number of “Clockwork of Memory”. You are able to obtain “Time Essence” by passing the Stages or completing the achievements in Echoes of Time.|6. You can increase the Observation progress by completing the Achievements in the World of time. Once the Observation progress of a World of Time reaches 85%%, you will be able to unlock the next World of Time.|7. There're multiple stages available in each World of Time, you can unlock the stages by upgrading corresponding technologies in the Planetarium when Observing in the corresponding World of Time."
 TIME_CLOISTER_HELP02,"1. During your Observation in Echoes of Time, every 5 minutes of reading will trigger a random card. Supply Cards, Challenge Cards, or Encounter Cards can be triggered, each type of card has a different effect.|2. When a Supply Card is triggered, you will be able to receive corresponding rewards mentioned on the card after the reading is over.|3. When a Challenge Card is triggered, you will enter a special battle. Your power in the battle is related to your “Courage”, “Charisma”, and “Knowledge” attributes. The 3 attributes mentioned provided by your own Outfit and Planetarium upgrades will be displayed in black, the attribute boost provided by the Girls you dispatch will be displayed in green.|4. You will be awarded randomly according to the battle results in Challenge Cards, a losing reward will be less than a winning reward.|5. When an Encounter Card is triggered, there will be no instant effect, but you will be able to complete some corresponding achievements by triggering Encounter Cards.|6. The Observation will end once you run out of “Clockwork of Memory” or can be ended manually. You will therefore also need to manually end your progress and claim your rewards of this Observation.|7. During the ending phase, you will be able to claim the Observation rewards and the system will conclude your achievement progress. You will also be graded according to the Cards you triggered during this Observation and earn a certain amount of ""Time Shards"" to upgrade technologies of the corresponding World of Time in Planetarium."
 TIME_CLOISTER_HELP03,"1. You will get ""Time Shards"" for this World of Time after completing Observations in this World of Time.|2. There're 2 types of technologies for this World of Time, but both of them would need you to consume ""Time Shards"" to upgrade, some of the technologies will need to be unlocked by meeting certain requirements before you can upgrade them.|3. If you upgrade technology during an Observation, it will take effect starting from the next Observation."
-TIME_CLOISTER_HELP04,"1. There're 11 Stages in each World of Time. The first 10 Stages are normal Stages, the 11th Stages are special Stages. You will consume 1 ""Temporal Chip"" for each challenge attempt.|2. The enemy in each Stage has  “Courage”, “Charisma” and “Knowledge” attribute, your corresponding attributes are provided by your Outfits and Planetarium technologies.|3. The detailed effect of the 3 attributes mentioned in rule no.2 can be seen in the help text of Outfit feature.|4. After passing first each normal Stage, you will get a Stage Pass reward.|5. The enemy in special Stages cannot be actually defeated. Your damage dealt in each challenge attempt will be recorded, and the highest damage you deal in a challenge attempt will be used to compete with other players on a ranking board that will conclude a result and issue you rewards according to your position in the ranking board at 0:00 (UTC/GMT 0) every Friday."
+TIME_CLOISTER_HELP04,"1. There're 11 Stages in each World of Time. The first 10 Stages are normal Stages, the 11th Stages are special Stages. You will consume 1 ""Temporal Chip"" for each challenge attempt.|2. The enemy in each Stage has  “Courage”, “Charisma” and “Knowledge” attributes, your corresponding attributes are provided by your Outfits and Planetarium technologies.|3. The detailed effect of the 3 attributes mentioned in rule no.2 can be seen in the help text of Outfit feature.|4. After passing first each normal Stage, you will get a Stage Pass reward.|5. The enemy in special Stages cannot be actually defeated. Your damage dealt in each challenge attempt will be recorded, and the highest damage you deal in a challenge attempt will be used to compete with other players on a ranking board that will conclude a result and issue you rewards according to your position in the ranking board at 0:00 (UTC/GMT 0) every Friday.|6. You can only participate the ranking of 2 World of Times that are unlocked the most recently."
 TIME_CLOISTER_TEXT01,Achievements
 TIME_CLOISTER_TEXT02,Stages
 TIME_CLOISTER_TEXT03,Observe
@@ -5908,7 +5908,7 @@ TIME_CLOISTER_TEXT103,Obtain Method:
 TIME_CLOISTER_TEXT104,Card details
 TIME_CLOISTER_TEXT105,Battle Skill
 TIME_CLOISTER_TEXT106,Purchase Card to get points
-TIME_CLOISTER_TEXT107,"1. When Observing in this World of Time, you might obtain Red, Yellow, and Blue Crystals that can be used to purchase the Crystal Cards.|2. You can set bonuses for getting the 3 Crystals. Types and effects of the bonuses can be upgraded in Planetarium - Technology · Crystals.|3. There are multiple types of Crystal Cards, the price for each type of Crystal Card is different. You will be able to upgrade card level and get points upon purchasing the cards.|4. According to your total points, you will get boosts in Courage, Charm, and Knowledge in this World of Time.|5. Each type of Crystal Card provides a unique Battle Skill and you can activate 3 Battle Skills at a time in this World of Time to aid you in Skirmish Battles and Stage Battles."
+TIME_CLOISTER_TEXT107,"1. When Observing in this World of Time, you might obtain Red, Yellow, and Blue Crystals that can be used to purchase the Crystal Cards.|2. You can set bonuses for getting the 3 Crystals. Types and effects of the bonuses can be upgraded in Planetarium - Technology · Crystals.|3. There are multiple types of Crystal Cards, the price for each type of Crystal Card is different. You will be able to upgrade card level and get points upon purchasing the cards. The purchase list will also be refreshed after purchase.|4. According to your total points, you will get boosts in Courage, Charm, and Knowledge in this World of Time.|5. Each type of Crystal Card provides a unique Battle Skill and you can activate 3 Battle Skills at a time in this World of Time to aid you in Skirmish Battles and Stage Battles."
 TIME_CLOISTER_TEXT108,Points:
 ACTIVITY_LAFULI_CASTLE_TEXT14,Confirm to get {2} Girl(s) from House {1}?
 SHRINE_HURDLE_SHOP_TAB1,Purchase
@@ -5941,11 +5941,11 @@ GAME_ASSISTANT_TEXT19,Regular Capsule
 GAME_ASSISTANT_TEXT20,Claim & Send Hearts
 GAME_ASSISTANT_TEXT21,Junior Varsity
 GAME_ASSISTANT_TEXT22,Complete 3 Battles
-GAME_ASSISTANT_TEXT23,Complete 2 Internship Quests
-GAME_ASSISTANT_TEXT24,Select Level
+GAME_ASSISTANT_TEXT23,Internship
+GAME_ASSISTANT_TEXT24,Claim 2 Internship Rewards
 GAME_ASSISTANT_TEXT25,Quantity Selection
-GAME_ASSISTANT_TEXT26,Pull Slot Machine 2 times
-GAME_ASSISTANT_TEXT27,Market Purchase
+GAME_ASSISTANT_TEXT26,Slot Machine
+GAME_ASSISTANT_TEXT27,Market
 GAME_ASSISTANT_TEXT28,No merchandise is selected for purchase yet
 GAME_ASSISTANT_TEXT29,Select Item
 GAME_ASSISTANT_TEXT30,Claim Outfit Showcase Reward
@@ -5996,7 +5996,7 @@ GAME_ASSISTANT_TEXT74,Intern Reward
 GAME_ASSISTANT_TEXT75,Pull Slot Machine ({1} time(s))
 GAME_ASSISTANT_TEXT76,Patrol Raid Reward ({1} time(s))
 GAME_ASSISTANT_TEXT77,House Exam Raid Reward ({1} time(s))
-GAME_ASSISTANT_TEXT78,Servant Course Reward
+GAME_ASSISTANT_TEXT78,Servant - Course Reward
 GAME_ASSISTANT_TEXT79,Servant - Start New Course
 GAME_ASSISTANT_TEXT80,Servant - Stamina Purcahse
 GAME_ASSISTANT_TEXT81,Servant - Training Reward
@@ -6006,7 +6006,7 @@ GAME_ASSISTANT_TEXT84,Guild - Sign in
 GAME_ASSISTANT_TEXT85,Cafeteria - Get Order
 GAME_ASSISTANT_TEXT86,Cafeteria - Upgrade Order ({1} time(s))
 GAME_ASSISTANT_TEXT87,Cafeteria - Start Order
-GAME_ASSISTANT_TEXT88,Gym - Challenge Stage 61 ({1} time(s))
+GAME_ASSISTANT_TEXT88,Gym - Challenge Stage 61 (attempt {1})
 GAME_ASSISTANT_TEXT89,Gym - Challenge Chance purchase ({1} time(s))
 GAME_ASSISTANT_TEXT90,Completed
 GAME_ASSISTANT_TIPS01,"Higher level of Daily Quiz available to be challenged, do you want to check it out? (Choose ""No"" and get the current collectible Quiz rewards.)"
@@ -6018,7 +6018,7 @@ GAME_ASSISTANT_TIPS06,Unlock after reaching Servant Training level {1} or Explor
 GAME_ASSISTANT_TIPS07,Unlock after your Guild reaches level {1}
 GAME_ASSISTANT_TIPS08,Corresponding feature available after Cafeteria reaches level {1}
 GAME_ASSISTANT_TIPS09,Corresponding feature available after Stage 61 in Guild - Gym is unlocked.
-GAME_ASSISTANT_HELP01,"[c][0069cc]Daily[-][/c]|1. If “Yes” is selected in the Capsule-related settings, then the Free Chances will be used first if any are available;|2. Only the Slot Machine will be drawn from. The Game Assistant will not draw from the Super Slot Machine;|3. The Game Assistant will claim rewards from the highest Daily Quiz Level that you can claim from;|4. In the opponents that you are paired with, the Game Assistant will challenge the team with the lowest Battle Power;|[c][0069cc]Challenges[-][/c]|1. The Patrol Team lineup needs to be set up before the Raid Rewards can be claimed by the Game Assistant;|2. After choosing the House of the House Exams, if you have already cleared several stages, the Game Assistant can use Certificates to Raid the cleared stages.;|[c][0069cc]Growth[-][/c]|1. Excursion Resources can be claimed once per hour;|2. After claiming course rewards, the Game Assistant will automatically start the same courses with the same Servants;|3. When challenging the Training Dummy, the Game Assistant will use Servants that are stronger than others to challenge;|[c][0069cc]Guild[-][/c]|1. Before getting new Orders, the Game Assistant will claim rewards from completed Orders. If there are orders waiting to be started, it will automatically start them;|2. When calculating the Gems needed to upgrade the orders, all the orders you get will be counted as Lv.1 orders. Therefore, fewer Gems might be consumed than predicted when upgrading orders in Cafeteria;|3. If you choose to  challenge the 61st boss in Gym, all challenge chances of the day will be used."
+GAME_ASSISTANT_HELP01,"[c][0069cc]Daily[-][/c]|1. If “Yes” is selected in the Capsule-related settings, then the Free Chances will be used first if any are available;|2. Only the Slot Machine will be drawn from. The Game Assistant will not draw from the Super Slot Machine;|3. The Game Assistant will claim rewards from the highest Daily Quiz Level that you can claim from;|4. In the opponents that you are paired with, the Game Assistant will challenge the team with the lowest Battle Power;|5. You can select multiple star ranks in Internship, the system will automatically complete the Internship Quests with lower star rank first according to your setup.|[c][0069cc]Challenges[-][/c]|1. The Patrol Team lineup needs to be set up before the Raid Rewards can be claimed by the Game Assistant;|2. After choosing the House of the House Exams, if you have already cleared several stages, the Game Assistant can use Certificates to Raid the cleared stages.;|[c][0069cc]Growth[-][/c]|1. Excursion Resources can be claimed once per hour;|2. After claiming course rewards, the Game Assistant will automatically start the same courses with the same Servants;|3. When challenging the Training Dummy, the Game Assistant will use Servants that are stronger than others to challenge;|[c][0069cc]Guild[-][/c]|1. If you're not able to get orders when using the feature, the part that assists you with the Guild-Cafeteria will not be available. |2. Before getting new Orders, the Game Assistant will claim rewards from completed Orders. If there are orders waiting to be started, it will automatically start them;|3. When calculating the Gems needed to upgrade the orders, all the orders you get will be counted as Lv.1 orders. (You might actually get Lv.1-3 orders, the orders that are Lv. 2-3 will actually consume you less Gems to be upgraded to Lv.6) Therefore, fewer Gems might be actually consumed than the system predicted when upgrading orders in Cafeteria;|4. If you choose to  challenge the 61st boss in Gym, all challenge chances of the day will be used."
 ACTIVITY_PROMOTION_TEST_TEXT06,Pull Adv. Capsules to get Promotion Certificates
 ACTIVITY_LASSO_BUTTON,Toss
 ACTIVITY_LASSO_TEXT01,Please select quantity
@@ -6049,7 +6049,7 @@ ACTIVITY_FREEBUY_TEXT02,Purchase to get:
 ACTIVITY_FREEBUY_TEXT04,Obtainable Today:
 ACTIVITY_FREEBUY_HELP,"1. The packs here can be purchased with Gems. Only the first pack is unlocked by default, the following packs will be unlocked after all their previous packs are purchased. You can claim 1 reward instantly upon purchasing a pack, you will also be able to claim a reward each day in the following 7 days.|2. The unclaimed daily rewards will be saved and remain claimable on the next day.|3. The unclaimed rewards will be issued via Mail after the event ends."
 ACTIVITY_FREEBUY_TEXT05,Get Gems and many other rewards in the next 7 days!
-ACTIVITY_FREEBUY_TEXT06,Over 250%% worth of rewards!
+ACTIVITY_FREEBUY_TEXT06,Over [c][e25a4c]275%%[-][/c] worth of rewards
 ACTIVITY_FREEBUY_TEXT07,Value x{1}
 TIME_CLOISTER_TEXT115,3 Battle Skills from Crystal Cards can take effect at the same time at most
 ACTIVITY_LOTTERY_TEXT01,The chance for you to get collector's collections will increase as you draw more times.
@@ -6063,3 +6063,38 @@ ACTIVITY_LOTTERY_TEXT08,By obtaining VIP Exp to get Treasure Tickets during the 
 TIME_CLOISTER_TEXT116,You can only compete your damage record with other players in 2 Worlds of Time at the same time. Your damage record in {1} is thus been erased.
 TIME_CLOISTER_TEXT117,"A new World of Time is unlocked, you cannot participate in the damage ranking of this World of Time, confirm to continue?"
 ACTIVITY_FREEBUY_TEXT08,"You can unlock this pack by purchasing the previous pack, do you want to go and check it out?"
+ACTIVITY_LOTTERY_HELP,"1. You can obtain Treasure Tickets to draw rewards by acquiring VIP Exp during the event.|2. The first draw during the event is for free.|3. After a reward is obtained, you won't get it again from the following draws, so you will have a higher chance to get Legendary Collection and Secret Collection as you draw more times in the event.|4. Once the event ends, the remaining Treasure Tickets will automatically be exchanged into Coins at a rate of 50K Coins each. The Coins will be sent via Mail."
+PARTNER_CHALLENGE_CHESS_TEXT10,"This is your last Girl, confirm to continue?"
+ACTIVITY_CLOCK_BUTTON01,Spin
+ACTIVITY_CLOCK_TEXT01,Pointer
+ACTIVITY_CLOCK_AWARDS_TEXT01,Use {1} Clockwork Coins
+ACTIVITY_CLOCK_AWARDS_TEXT02,Obtain after {1} more Coin(s) used
+ACTIVITY_CLOCK_AWARDS_TEXT03,Obtainable Reward
+ACTIVITY_CLOCK_CHOOSE,Choose the Grand Reward
+ACTIVITY_CLOCK_CHOOSE_TIPS,"You haven't chosen the Grand Reward, please choose your Grand Reward first"
+ACTIVITY_CLOCK_CHOOSE_BUTTON,Go
+ACTIVITY_CLOCK_SHOW_TEXT01,Fixed
+ACTIVITY_CLOCK_SHOW_TEXT02,Choose 1 of 3
+ACTIVITY_CLOCK_SHOW_TEXT03,Current Reward
+ACTIVITY_CLOCK_SHOW_TEXT04,Round Rewards
+ACTIVITY_CLOCK_SHOW_TEXT05,Round {1}
+ACTIVITY_CLOCK_AWARD_GET,You obtained all Grand Rewards of this round. The remaining rewards this round are also obtained!
+ACTIVITY_CLOCK_HELP,"1. During the event, 1 Clockwork Coin can be consumed to spin the one-pointer spinner once and obtain its reward. If multiple pointers are used for the spinner, you will get multiple rewards for the spin, but the Clockwork Coins required will also thus be increased.|2. There are Grand Rewards and Regular Rewards displayed on the spinner, Regular Rewards can be obtained multiple times (the number of rewards that haven't been claimed in this round yet are displayed in the center of the spinner). Each Grand Reward can be obtained only once. After obtaining all the Grand Rewards in a round, the remaining rewards on the spinner will be automatically obtained without consuming additional Clockwork Coins.|3. After obtaining all rewards displayed on the spinner, you will enter the next round. Rewards will be different in the first 5 rounds, whereas starting from the 6th round, the rewards will be the same as in the 5th round.|4. You will get additional rewards according to the number of Clockwork Coins you've consumed.|5. Clockwork Coins can be obtained from Daily Mail, by participating in the Prank War, Slot Points event, or by purchasing Mega Value Pack, Special Gift Pack, Special Skin Pack, April Fools Pack, or Monthly Kickoff.|6. After this event ends, any remaining Clockwork Coins will be automatically exchanged into 20K Coins each. The Coins will be sent via Mail."
+ACTIVITY_CLOCK_TASK,"You can obtain Clockwork Coins by completing the tasks! Clockwork Coins can be used in event: ""Spin the Wheel!"" and get rewards!"
+ACTIVITY_CLOCK_TITLE,April Fools'\nDay
+ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Preview
+ACTIVITY_CLOCK_TEXT02,Rewards
+ACTIVITY_CLOCK_GIFTBAG_HELP,"1. Tap the ""+"" sign to choose your ideal content for the packs and purchase them.|2. If you want to change your selections after saving, you can tap the button on the top right the item icons to re-select."
+ACTIVITY_FREEBUY_TEXT09,Instant Reward:
+ACTIVITY_FREEBUY_TEXT10,Available tomorrow:
+ACTIVITY_FREEBUY_TEXT11,Claimed:
+ACTIVITY_FREEBUY_TEXT12,The purchase period of this pack is over.
+ACTIVITY_NEWBEE_FUND_TEXT03,Partial Reward: 
+ACTIVITY_NEWBEE_FUND_TEXT04,Total Value: 
+ACTIVITY_CLOCK_TEXT03,Spin in Bulk
+ACTIVITY_CLOCK_TEXT04,Select quantity
+ACTIVITY_CLOCKGIFTBAG_TEXT01,Rewards
+ACTIVITY_CLOCKGIFTBAG_TEXT02,Please choose your reward
+GAME_ASSISTANT_TEXT99,Draw 2 times
+GAME_ASSISTANT_TEXT100,Shop
+ACTIVITY_CLOCK_SHOW_TEXT06,From the 5th round

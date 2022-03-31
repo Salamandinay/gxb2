@@ -1944,7 +1944,7 @@ ACTIVITY_CONCERT_RANK_WINDOW_TEXT02,Derzeit der höchste Rang
 ACTIVITY_CONCERT_INFO_WINDOW_TEXT09,Lied
 ACTIVITY_MUSIC_JIGSAW_LOCK_TIPS,Das Lied ist noch nicht entsperrt!
 ACTIVITY_MUSIC_GAME_QUIT,Ende
-LEVEL_FUND_TEXT01,"Wenn du an Hotties Studiumplan teilnimmst, erhältst du Dias, sobald du die Anforderungen erfüllst. Wenn du zum Zeitpunkt des Beitritts bereits einige der Ziele erreicht hast, erhältst du die dafür vorgesehenen Dias sofort."
+LEVEL_FUND_TEXT01,"1. Nachdem du an Hotties Programm teilgenommen hast, erhälst du Dias, sobald du das Anforderungsniveau erreicht hast.|2. Wenn du bei deinem Beitritt einige der Ziele bereits erreicht hast, erhälst du sofort Dias für die abgeschlossenen Ziele."
 LEVEL_FUND_TEXT02,Erreiche Lv.{1}
 IMG_GUIDE_MUSIC_GAME_1,"Wenn das FEVER voll ist, erhältst du doppelte Punkte\nAber wenn es leer ist, [c][cc0011]ist das Spiel vorbei[-][/c]"
 IMG_GUIDE_MUSIC_GAME_2,Die [c][cc0011]Auswertungund[-][/c] und die [c][cc0011]Genauigkeit[-][/c] dieses Spiels.\nJe höher die Genauigkeit</font> desto höher die Auswertung
@@ -2105,7 +2105,7 @@ TIP_ACTIVE,Aktiv
 TIP_FORMATION,Flexibel
 FRIEND_TEAM_BOSS_BUY_TIPS,"Willst du sicher 1000k Münzen ausgeben, um eine Kampf-Chance zu kaufen?"
 FRIEND_TEAM_BOSS_ATTACK_LIMIT,Herausforderungsmale nicht ausreichend
-LEFT_TIMES,Chancen: {1}
+LEFT_TIMES,Chance(n): {1}
 FRIEND_TEAM_BOSS_BUY_LIMIT,Während jeder Sicherheitstour kannst du eine Herausforderungs-Chance kaufen
 FRIEND_TEAM_BOSS_FLAG_WINDOW,Flagge modifizieren
 FRIEND_TEAM_BOSS_AWARD_WINDOW,Belohnung
@@ -3547,7 +3547,7 @@ ACTIVITY_HALLOWEEN_TEXT3,"Verwende 1 Kürbisdolch, um 1 Kürbis zu öffnen.\nÖf
 ACTIVITY_HALLOWEEN_TEXT4,Erhalte zufällig eine der folgenden Belohnungen
 ACTIVITY_HALLOWEEN_USE,Schneiden
 ACTIVITY_HALLOWEEN_GET,Sammeln
-ACTIVITY_HALLOWEEN_AWARD,Ultimative Belohnung
+ACTIVITY_HALLOWEEN_AWARD,Paketbelohnung
 ACTIVITY_HALLOWEEN_HELP,"1. Verwende 1 Kürbisdolch um einen zufälligen Kürbis zu öffnen und die Belohnungen darin zu erhalten.|2. Es gibt insgesamt 4 Belohnungsstufen. Tippe auf die Kürbisse, um die möglicherweise erhältlichen Belohnungen und deren Wahrscheinlichkeiten zu prüfen.|3. Nachdem alle Kürbisse dieser Runde fertig geöffnet wurden, bekommst du die Belohnungen dieser Runde. Dann werden alle Kürbisse aktualisiert und die nächste Runde wird geöffnet. Belohnungen für die 27. Runde und die folgenden Runden sind immer die ""exklusiven orangenen Antiquitäten"". |4. Erhalten der Kürbisdolche: - Mit Dias kaufen (maximal 30 Mal kaufbar)| - Einschreiben in Events| - Superpakete| - Glückspakete| - Kostümpakete| - Tägliche Mail|5. Nach dem Ende des Events werden die noch nicht verwendeten Kürbisdolche automatisch gegen Münzen umgetauscht. Jeder Kürbisdolch entspricht 300K Münzen. Die Münzen werden per Mail gesendet."
 TREASURE_RESERVE_EMPTY,Willst du den aktivierten Kristall als Reserve-Kristall {1} speichern?
 TREASURE_SAME_HELP,Du hast bereits einen Kristall mit dem gleichen Attribut. Willst du es dennnoch speichern?
@@ -4208,7 +4208,7 @@ GUILD_ROAM_TEXT10,Gilden-EXP:
 GUILD_ROAM_TEXT11,Für alle Mitglieder:
 GUILD_ROAM_HELP,"1. Nachdem das Gildenlevel Lv.4 erreicht hat, wird die fliegende Händlerin wöchentlich am Montag, Mittwoch, Freitag und Samstag auftauchen. Sie bleibt von 00:00 Uhr am selben Tag bis 00:00 Uhr am nächsten Tag (UTC/GMT0) erreichbar.|2. Durch Kauf der limitierten Pakete für Mitglieder und Gilde erhalten alle Mitglieder eine Belohnung.|3. Bei den limitierten Paketen für die Gilde gibt es nicht nur ein Kauflimit für jedes Mitglied, sondern auch ein Limit an kaufbaren Paketen.|4. Jedes Mal, wenn die fliegende Händlerin auftaucht, wird das Kauflimit aller Waren zurückgesetzt.|5. Je höher das Gildenlevel ist, desto mehr Belohnungen stecken in den Paketen.|6. Die neuen Gildenmitglieder können die gratis Pakete und die limitierten Pakete der Gilde weder einsammeln noch kaufen. Wenn noch limitierte Pakete für Mitglieder zum Kauf zur Verfügung stehen, können die neuen Gildenmitglieder diese Pakete kaufen.|7. Die neuen Gildenmitglieder können Belohnungen per Mail erhalten, wenn andere Mitglieder nach ihrem Beitritt limitierte Pakete bei der fliegenden Händlerin gekauft haben.|8. Wenn das Gildenlevel erhöht wird, während die fliegende Händlerin vor Ort ist, werden sich die Paketinhalte etc. nicht ändern, bis sie das nächste Mal auftaucht."
 GUILD_ROAM_TEXT12,Fliegende Händlerin
-GUILD_WINDOW_HELP_U3,"1. Das Grundlevel der Gilde ist 1. Du kannst die Gilde aufleveln, indem du die Gilden-EXP, die du durch das tägliche Anmelden der Gildenmitglieder erhältst, einsammelst. Die maximale Gilden-EXP, die durch das tägliche Anmelden erhalten werden kann, ist an die Anzahl der Gildenmitglieder gebunden. |2. Die Grundkapazität für Mitglieder beträgt 15. Du kannst das Limit erhöhen, indem du das Level der Gilde erhöhst. Das max. Level ist 30.|3. Die Stellvertreter haben folgende Berechtigungen: Gildennamen, Gildeninformationen, Gildensymbol ändern; Gilden-Mails an Mitglieder senden; Einstellungen verwalten; Mitglieder entfernen.|4. Ein Gildenleiter hat ebenso alle oben genannten Befugnisse und kann zusätzlich Stellvertreter hinzufügen oder aus der Gilde entfernen und die Gilde auflösen.|5. Eine Gilde kann höchstens 3 Stellvertreter haben.|6. Wenn der Gildenleiter länger als 7 Tage abwesend ist, wird die Führung automatisch an einen Stellvertreter übertragen. StellvertreterWenn der Stellvertreter ebenfalls in den letzten 7 Tagen nicht online war, überträgt das System die Führung automatisch an den Spieler mit dem höchsten Level, der in den letzten 7 Tagen online war. |7. Deine Gildenmünzen bleiben erhalten, wenn du aus einer Gilde entfernt wurdest oder diese verlassen hast.|8. Nachdem das Gildenlevel Lv.4 erreicht hat, wird die fliegende Händlerin wöchentlich am Montag, Mittwoch, Freitag und Samstag auftauchen, um euch limitierte wertvolle Pakete anzubieten!"
+GUILD_WINDOW_HELP_U3,"1. Das Grundlevel der Gilde ist 1. Du kannst die Gilde aufleveln, indem du die Gilden-EXP, die du durch das tägliche Anmelden der Gildenmitglieder erhältst, einsammelst. Die maximale Gilden-EXP, die durch das tägliche Anmelden erhalten werden kann, ist an die Anzahl der Gildenmitglieder gebunden. |2. Die Grundkapazität für Mitglieder beträgt 15. Du kannst das Limit erhöhen, indem du das Level der Gilde erhöhst. Das max. Level ist 30.|3. Die Stellvertreter haben folgende Berechtigungen: Gildennamen, Gildeninformationen, Gildensymbol ändern; Gilden-Mails an Mitglieder senden; Einstellungen verwalten; Mitglieder entfernen.|4. Ein Gildenleiter hat ebenso alle oben genannten Befugnisse und kann zusätzlich Stellvertreter hinzufügen oder aus der Gilde entfernen und die Gilde auflösen.|5. Eine Gilde kann höchstens 3 Stellvertreter haben.|6. Wenn der Gildenleiter länger als 7 Tage abwesend ist, wird die Führung automatisch an einen Stellvertreter übertragen. Wenn der Stellvertreter ebenfalls in den letzten 7 Tagen nicht online war, überträgt das System die Führung automatisch an den Spieler mit dem höchsten Level, der in den letzten 7 Tagen online war. |7. Deine Gildenmünzen bleiben erhalten, wenn du aus einer Gilde entfernt wurdest oder diese verlassen hast.|8. Nachdem das Gildenlevel Lv.4 erreicht hat, wird die fliegende Händlerin wöchentlich am Montag, Mittwoch, Freitag und Samstag auftauchen, um euch limitierte wertvolle Pakete anzubieten!"
 GUILD_LAB_WINDOW_HELP_U3,"1. Level die Professionsfertigkeiten, um die Attribute deiner Mädchen zu verstärken.|2. Das Leveln der Professionsfertigkeiten wirkt sich nur auf deine Mädchen aus. Nachdem du die Gilde verlassen hast, werden die gelevelten Professionsfertigkeiten aufbewahrt.|3. Sobald alle Fertigkeiten auf der 1. Seite jeder Profession auf max. Level gelevelt werden, werden die Fertigkeiten auf der 2. Seite entsperrt.|4. Du kannst Dias ausgeben, um die Fertigkeiten auf der entsprechenden Seite zurücksetzen und alle vorher verwendeten Ressourcen zurückbekommen. Das erste Zurücksetzen ist gratis.|5. Wenn die Fertigkeiten auf der 2. Seite einer Profession entsperrt werden, wirkt sich das Zurücksetzen immer nur auf eine Seite aus."
 TRAVEL_EXPLORE_HELP_U3,"1. Beim Abenteuer werden zufällige Ereignisse ausgelöst. Jedes Abenteuer verbraucht 10 schmackhafte Brote.|2. Das schmackhafte Brot ist in der Bäckerei erhältlich oder kann direkt mit Dias gekauft werden.|3. Zufällige Ereignisse im Abenteuer: Gefährlich, Glücksschatzbox, Hilfesuchende, Bäckerei, Laden.|Gegner: Ein Kampf wird gestartet. Besiege die Gegner, um Schatzboxen zu bekommen. Alle 5 Siege bekommst du Elite-Gegner als Feinde. Nachdem du die Elite-Gegner besiegt hast, wirst du mit noch wertvolleren Schatzboxen belohnt.|Glücksschatzbox: Damit erhältst du sofort eine Schatzbox.|Hilfesuchende: Gib der Hilfesuchenden die von ihr gewollten Items, um eine Schatzbox zu bekommen.|Bäckerei: Erhalte einige Brote.|Laden: Nutze deine Münzen, um Schatzboxen von hoher Qualität zu kaufen.|4. Die gerade erhaltenen Schatzboxen werden als entsperrt angezeigt. Erst nach einer Weile können sie allerdings geöffnet werden. Du kannst auch Dias ausgeben, um die Belohnungen sofort zu erhalten.|5. Nachdem alle Slots der Schatzboxen voll sind, bekommst du keine neuen Schatzboxen mehr.|6. Durch Aufleveln des Abenteuerlevels kannst du die zu erhaltenden Schatzboxen verbessern und mehr Slots freischalten. Die Schatzbox kann maximal auf Lv.10 gelevelt werden. Gleichzeitig werden auch die Feinde stärker.|7. Nachdem das Abenteuer-Level Lv.3 erreicht hat, wird eine ""Automatisch-Öffnen-Funktion"" für die Kisten und eine ""Auto-Abenteuer-Funktion"" freigeschaltet und wenn man auf Gegner trifft, so gibt es eine ""Skip-Funktion"" für den Kampf."
 GUILD_BOSS_CANT_FIGHT,"Du kannst diesen Boss heute leider nicht herausfordern, weil du heute bereits einen anderen Gildenboss herausgefordert hast."
@@ -5054,7 +5054,7 @@ ACTIVITY_MONTHLY_TEXT003,Fertigkeitsvorschau
 TIME_CLOISTER_HELP01,"1. Durchs Ansehen der Erinnerungen im Korridor der Zeit erhältst du reichhaltige Belohnungen.|2. Zu Beginn wird nur 1 Korridor der Zeit entsperrt. Du kannst deine Mädchen zum entsperrten Korridor entsenden, um die Erinnerungen dieses Korridors anzusehen.|3. Entsprechend der Gesamtkampfkraft deiner aufgestellten Mädchen werden die 3 Attribute ""Mut"", ""Charme"" und ""Wissen"" für das Ansehen aktiviert.|4. Die Dauer des Ansehens richtet sich nach der Anzahl der ""Taschenuhren"" in diesem Korridor. Vor jedem Ansehen werden deine verfügbaren ""Taschenuhren"" wieder aufgefüllt, so weit, bis die oben genannte Anzahl erreicht ist. D.h. du startest immer mit der maximalen Anzahl an ""Taschenuhren"". Während des Ansehens wird alle 6 Minuten 1 ""Taschenuhr"" verwendet. D.h. je höher die Anzahl der Taschenuhren in diesem Korridor ist, desto länger dauert das Ansehen und desto mehr Chancen auf Belohnungen hast du.|5. Verwende den ""Zeitstaub"", um das Ansehen zu beschleunigen. Für das Ansehen wird allerdings trotzdem die entsprechende Menge an ""Taschenuhren"" benötigt. Erhalten des Zeitstaubs: Stufenherausforderung und Erreichen bestimmter Erfolge im Korridor der Zeit.|6. Während des Ansehens kannst du außerdem bestimmte Erfolge abschließen. Schließe die Erfolge im Korridor der Zeit ab, um den Gesamtfortschritt dieses Korridors voranzutreiben. Sobald der Fortschritt 85%% erreicht hat, wird der nächste Korridor entsperrt.|7. In jedem Korridor der Zeit wird es mehrere Stufen geben. Level während des Ansehens die Zweige im Sternkreisel auf, um die Stufen herausfordern zu können."
 TIME_CLOISTER_HELP02,"1. Während des Ansehens wird alle 5 Minuten 1 Karte ausgelöst. Es gibt 3 Kartentypen mit unterschiedlichen Karteneffekten. Sie sind Versorgungskarte, Herausforderungskarten und Ereigniskarte.|2. Löst du während des Ansehens die Versorgungskarten aus, erhältst du bei der Abrechnung die entsprechenden Ressourcen, die deinen ausgelösten Versorgungskarten entsprechen.|3. Löst du während des Ansehens die Herausforderungskarten , wird ein spezieller Kampf gestartet, bei welchem deine Kampfkraft durch die 3 Outfit-Attribute ""Mut"", ""Charme"" und ""Wissen"" bestimmt wird. Je stärker die 3 Attribute sind, desto höher ist deine Kampfkraft. Die 3 Outfit-Attribute und die 3 Attribute des Sternkreisels in diesem Korridor werden schwarz angezeigt und die temporären Attribute, die durch die aufgestellten Mädchen bereitgestellt werden, grün.|4. Entsprechend des Ergebnisses in einem Kampf/Krieg unter ""Herausf.-Karten"" erhältst du zufällige Belohnungen. Die Belohnungen für eine Niederlage sind geringer als für einen Sieg.|5. Die Ereigniskarten werden keine besonderen Effekte auslösen und dienen nur für den Abschluss der entsprechenden Erfolge, die nach dem Ende des Ansehens abgerechnet werden.|6. Ohne genug ""Taschenuhren"" im Besitz wird das Ansehen automatisch beendet. Außerdem kann das Ansehen auch manuell beendet werden. Nach dem Ende des Ansehens musst du manuell abrechnen.|7. Bei der Abrechnung erhältst du alle Belohnungen, die du durch das Ansehens gewonnen hast und gleichzeitig werden auch die Erfolge abgerechnet. Entsprechend der ausgelösten Karten während des Ansehens wird das Ansehen bewertet und dir eine bestimmte Menge von ""Sternfragmenten"" gesendet, die nützlich fürs Leveln der Zweige im Sternkreisel in diesem Korridor sind."
 TIME_CLOISTER_HELP03,"1. Sehe die Erinnerungen in diesem Korridor an, um bei der Abrechnung spezielle ""Sternfragmente"" für diesen Korridor zu erhalten.|2. Die Zweige in diesem Korridor werden in 2 Gruppen aufgeteilt. Zum Leveln der Zweige werden ""Sternfragmente"" benötigt. Außer den zu Beginn schon entsperrten Zweigen werden zum Entsperren der anderen Zweige entsprechende Bedingungen eingestellt.|3. Die während eines Ansehens gelevelten Zweige werden sich erst auf das nächste Ansehen auswirken."
-TIME_CLOISTER_HELP04,"1. In jedem Korridor gibt es insgesamt 11 Stufen. Die ersten 10 sind normale Stufen und die 11. ist eine spezielle Stufe. Jedes Mal, wenn du eine Stufe herausforderst, wird 1 ""Korridor-Wertmarke"" verwendet, unabhängig davon, ob du den Kampf gewinnst oder nicht. Alle 30 Minuten erhältst du eine ""Korridor-Wertmarke"" (max. 10).|2. Die Gegner in jeder Stufe werden mit den 3 Attributen ""Mut"", ""Charme"" und ""Wissen"" ausgestattet. Bei dir hängen diese 3 Attribute von deinem Outfit und den Zweigen im Sternkreisel dieses Korridors ab.|3. Details zu diesen 3 Attributen findest du unter der Funktion ""Outfit"". Im Vergleich mit den anderen Kämpfen werden diese Boni im Kampf unter ""Korridore der Zeit"" auf das 5-Fache erhöht.|4. Schließt du die normalen Stufen ab, erhältst du die einmaligen Stufenbelohnungen, die weder zurückgesetzt noch wiederholt gesammelt werden können.|5. Der Boss in der speziellen Stufe kann sich wiederbeleben. Nach dem Ende jedes Kampfes wird der verursachte Schaden notiert und dein neuester Rang richtet sich nach dem höchsten verursachten Schaden in einem Kampf. Wöchentlich um 0 Uhr (UTC/GMT 0) am Freitag werden Belohnungen entsprechend der Rangliste abgerechnet."
+TIME_CLOISTER_HELP04,"1. In jedem Korridor gibt es insgesamt 11 Stufen. Die ersten 10 sind normale Stufen und die 11. ist eine spezielle Stufe. Jedes Mal, wenn du eine Stufe herausforderst, wird 1 ""Korridor-Wertmarke"" verwendet, unabhängig davon, ob du den Kampf gewinnst oder nicht. Alle 30 Minuten erhältst du eine ""Korridor-Wertmarke"" (max. 10).|2. Die Gegner in jeder Stufe werden mit den 3 Attributen ""Mut"", ""Charme"" und ""Wissen"" ausgestattet. Bei dir hängen diese 3 Attribute von deinem Outfit und den Zweigen im Sternkreisel dieses Korridors ab.|3. Details zu diesen 3 Attributen findest du unter der Funktion ""Outfit"". Im Vergleich mit den anderen Kämpfen werden diese Boni im Kampf unter ""Korridore der Zeit"" auf das 5-Fache erhöht.|4. Schließt du die normalen Stufen ab, erhältst du die einmaligen Stufenbelohnungen, die weder zurückgesetzt noch wiederholt gesammelt werden können.|5. Der Boss in der speziellen Stufe kann sich wiederbeleben. Nach dem Ende jedes Kampfes wird der verursachte Schaden notiert und dein neuester Rang richtet sich nach dem höchsten verursachten Schaden in einem Kampf. Wöchentlich um 0 Uhr (UTC/GMT 0) am Freitag werden Belohnungen entsprechend der Rangliste abgerechnet.|6. Nur die Stufenranglisten der 2 neuesten Korridore stehen zur Verfügung. (Beispiel: Nachdem du die Sonderstufe im 3. Korridor entsperrt hast, wird dein Rang auf der Rangliste im 1. Korridor entfernt.)"
 TIME_CLOISTER_TEXT01,Erfolg
 TIME_CLOISTER_TEXT02,Stufe
 TIME_CLOISTER_TEXT03,Ansehen
@@ -5909,7 +5909,7 @@ TIME_CLOISTER_TEXT103,Erhalten:
 TIME_CLOISTER_TEXT104,Kartendetail
 TIME_CLOISTER_TEXT105,Kampfskill
 TIME_CLOISTER_TEXT106,Kaufe für die Punkte die Karten
-TIME_CLOISTER_TEXT107,"1. Beim Ansehen in diesem Korridor erhältst du rote, gelbe und blaue Kristalle, die zum Kauf der Kristallkarten verwendet werden können.|2. Du kannst Boni zum Erhalten der 3 Kristalle einstellen. Typen und Effekte der Boni können unter Gruppenzweige · Kristalle gelevelt werden.|3. Es gibt allerlei Kristallkarten, deren Preise voneinander abweichen. Nach dem Kaufen erhältst du die entsprechenden Punkte und das Kartenlevel wird erhöht.|4. Der Menge deiner Gesamtpunkte entsprechend werden die Attribute Mut, Charme und Wissen erhöht.|5. Jeder Typ der Kristallkarte verleiht dir einen besonderen Kampfskill und maximal kannst du 3 Kampfskills einstellen, die sich auf ""Krieg"" und Stufenherausforderung in diesem Korridor auswirken."
+TIME_CLOISTER_TEXT107,"1. Beim Ansehen in diesem Korridor erhältst du rote, gelbe und blaue Kristalle, die zum Kauf der Kristallkarten verwendet werden können.|2. Du kannst Boni zum Erhalten der 3 Kristalle einstellen. Typen und Effekte der Boni können unter Gruppenzweige · Kristalle gelevelt werden.|3. Es gibt allerlei Kristallkarten, deren Preise voneinander abweichen. Nach dem Kaufen erhältst du die entsprechenden Punkte und das Kartenlevel wird erhöht und die angebotenen Karten werden erneuert.|4. Der Menge deiner Gesamtpunkte entsprechend werden die Attribute Mut, Charme und Wissen erhöht.|5. Jeder Typ der Kristallkarte verleiht dir einen besonderen Kampfskill und maximal kannst du 3 Kampfskills einstellen, die sich auf ""Krieg"" und Stufenherausforderung in diesem Korridor auswirken."
 TIME_CLOISTER_TEXT108,Punkte:
 ACTIVITY_LAFULI_CASTLE_TEXT14,Willst du sicher {2} Mädchen aus dem Haus der {1} bekommen?
 SHRINE_HURDLE_SHOP_TAB1,Kaufen
@@ -5941,12 +5941,12 @@ GAME_ASSISTANT_TEXT18,Super Kapsel
 GAME_ASSISTANT_TEXT19,Normale Kapsel
 GAME_ASSISTANT_TEXT20,Herzen senden/erhalten
 GAME_ASSISTANT_TEXT21,Arena
-GAME_ASSISTANT_TEXT22,Schließe 3 Kämpfe ab
-GAME_ASSISTANT_TEXT23,Schließe 2 Jobaufgaben ab
-GAME_ASSISTANT_TEXT24,Sternlevel wählen
+GAME_ASSISTANT_TEXT22,3 Kämpfe abschließen
+GAME_ASSISTANT_TEXT23,Jobaufgaben
+GAME_ASSISTANT_TEXT24,2 Jobaufgaben abschließen
 GAME_ASSISTANT_TEXT25,Menge wählen
-GAME_ASSISTANT_TEXT26,2 Züge am Glücksautomaten
-GAME_ASSISTANT_TEXT27,Waren kaufen
+GAME_ASSISTANT_TEXT26,Normaler Glücksautomat
+GAME_ASSISTANT_TEXT27,Markt
 GAME_ASSISTANT_TEXT28,Keine Waren gewählt
 GAME_ASSISTANT_TEXT29,Waren wählen
 GAME_ASSISTANT_TEXT30,Beloh. im Schaufenster sammeln
@@ -5963,7 +5963,7 @@ GAME_ASSISTANT_TEXT40,Grund
 GAME_ASSISTANT_TEXT41,Mittel
 GAME_ASSISTANT_TEXT42,Super
 GAME_ASSISTANT_TEXT43,Diener
-GAME_ASSISTANT_TEXT44,Trainings-Beloh. sammeln
+GAME_ASSISTANT_TEXT44,Trainings-Belohnung sammeln
 GAME_ASSISTANT_TEXT45,Training wählen
 GAME_ASSISTANT_TEXT46,Holzpuppe herausfordern
 GAME_ASSISTANT_TEXT47,Energie kaufen
@@ -6007,19 +6007,19 @@ GAME_ASSISTANT_TEXT84,Gilde - Anmelden
 GAME_ASSISTANT_TEXT85,Cafeteria - Bestellungen erhalten
 GAME_ASSISTANT_TEXT86,Cafeteria - Bestellungen leveln ({1} Mal)
 GAME_ASSISTANT_TEXT87,Cafeteria - Bestellungen starten
-GAME_ASSISTANT_TEXT88,Gym - Den 61. Boss herausfordern ({1} Mal)
+GAME_ASSISTANT_TEXT88,Gym - Den 61. Boss herausfordern ({1}. Mal)
 GAME_ASSISTANT_TEXT89,Gym - Kampfchancen kaufen ({1} Mal)
 GAME_ASSISTANT_TEXT90,Abgeschlossen
 GAME_ASSISTANT_TIPS01,"Du kannst höhere Stufen im Quiz herausfordern. Willst du zum Quiz gehen? (Wähle ""Nein"" und erhalte die aktuell sammelbaren Quiz-Belohnungen.)"
 GAME_ASSISTANT_TIPS02,Keine abzuschließenden Aufgaben
-GAME_ASSISTANT_TIPS03,Es werden {1} Dias ausgegeben (Zum Starten gelevelter Bestellungen werden wahrscheinlich weniger Dias benötigt). Fortfahren?
+GAME_ASSISTANT_TIPS03,"Es werden {1} Dias ausgegeben (Hast du ""Bestellungen leveln"" abgehakt, dann werden wahrscheinlich weniger Dias benötigt). Fortfahren?"
 GAME_ASSISTANT_TIPS04,Die betroffenen Funktionen werden ab Ausbildungslager Lv.{1} entsperrt.
 GAME_ASSISTANT_TIPS05,Die betroffenen Funktionen werden ab Abenteuer Lv.{1} entsperrt.
 GAME_ASSISTANT_TIPS06,Entsperrt ab Ausbildungslager Lv.{1} unter Diener oder Abenteuer Lv.{1} unter Campusausflug
 GAME_ASSISTANT_TIPS07,Entsperrt nach dem Eintreten einer Gilde mit mind. Lv.{1}
 GAME_ASSISTANT_TIPS08,Die betroffenen Funktionen werden ab Cafeteria Lv.{1} entsperrt.
 GAME_ASSISTANT_TIPS09,"Die betroffenen Funktionen werden entsperrt, sobald du bis zur 61. Stufe im Gym gekämpft hast."
-GAME_ASSISTANT_HELP01,"[c][0069cc]Täglich[-][/c]|1. Kapseln: Hast du ""Ja"" gewählt, wird die Gratischance bevorzugt verwendet und dann deine Kapselmünzen. (Es wird nur einmal gezogen)|2. Am Glücksautomaten wird nur der normale Glücksautomat verwendet.|3. Beim Quiz werden nur die Belohnungen der verfügbaren höchsten Stufe gesammelt.|4. In der Arena wird immer der Gegner mit der niedrigsten Kampfkraft gewählt.|[c][0069cc]Herausfordern[-][/c]|1. Unter Patrouille musst du zunächst ein Team aufstellen, um die Raid-Belohnungen zu erhalten.|2. Hast du eine Fraktion in der Prüfung ausgewählt, können die bereits abgeschlossenen Stufen mit Prüfungszertifikaten schnell abgeschlossen werden.|[c][0069cc]Wachstum[-][/c]|1. Jede Stunde können die Belohnungen im Campusausflug einmal eingesammelt werden.|2. Wurden die Trainingskurse unter Weiterbilden beendet, werden sie mit derselben Einstellung erneut gestartet.|3. Im Kampf gegen eine Holzpuppe wird der stärkere Diener bevorzugt als Angreifer gewählt.|[c][0069cc]Gilde[-][/c]|1. Bevor du neue Bestellungen erhalten wirst, werden die Belohnungen der bereits abgeschlossenen Bestellungen automatisch gesammelt. Hast du bereits einige zu startende Bestellungen, werden sie direkt gestartet.|2. Beim Berechnen der benötigten Dias zum Leveln der Bestellungen werden alle Bestellungen als Bestellungen auf Lv.1 angesehen. Deswegen kann die letztendlich Menge an benötigten Dias geringer sein, als die vorher berechnete Menge.|3. Hast du die Herausforderung gegen den 61. Boss gewählt, werden alle Chancen des Tages verwendet.T"
+GAME_ASSISTANT_HELP01,"[c][0069cc]Täglich[-][/c]|1. Kapseln: Hast du ""Ja"" gewählt, wird die Gratischance bevorzugt verwendet und dann deine Kapselmünzen. (Es wird nur einmal gezogen)|2. Am Glücksautomaten wird nur der normale Glücksautomat verwendet.|3. Beim Quiz werden nur die Belohnungen der verfügbaren höchsten Stufe gesammelt.|4. In der Arena wird immer der Gegner mit der niedrigsten Kampfkraft gewählt.|5. Es können mehrere Sternlevel der Jobaufgaben abgehakt werden und unter diesen Umständen werden Belohnungen der Jobaufgabe auf einem relativ niedrigeren Sternlevel bevorzugt gesammelt.|[c][0069cc]Herausfordern[-][/c]|1. Unter Patrouille musst du zunächst ein Team aufstellen, um die Raid-Belohnungen zu erhalten.|2. Hast du eine Fraktion in der Prüfung ausgewählt, können die bereits abgeschlossenen Stufen mit Prüfungszertifikaten schnell abgeschlossen werden.|[c][0069cc]Wachstum[-][/c]|1. Jede Stunde können die Belohnungen im Campusausflug einmal eingesammelt werden.|2. Wurden die Trainingskurse unter Weiterbilden beendet, werden sie mit derselben Einstellung erneut gestartet.|3. Im Kampf gegen eine Holzpuppe wird der stärkere Diener bevorzugt als Angreifer gewählt.|[c][0069cc]Gilde[-][/c]|1. Wenn neue Bestellungen noch nicht erhalten werden können, werden die entsprechenden Funktionen nicht aktiviert.|2. Bevor du neue Bestellungen erhalten wirst, werden die Belohnungen der bereits abgeschlossenen Bestellungen automatisch gesammelt. Hast du bereits einige zu startende Bestellungen, werden sie direkt gestartet.|3. Beim Berechnen der benötigten Dias zum Leveln der Bestellungen werden alle Bestellungen als Bestellungen auf Lv.1 angesehen. Deswegen kann die letztendlich Menge an benötigten Dias geringer sein, als die vorher berechnete Menge.|4. Hast du die Herausforderung gegen den 61. Boss gewählt, werden alle Chancen des Tages verwendet."
 ACTIVITY_PROMOTION_TEST_TEXT06,Ziehe an der Super Kapselmaschine und erhalte die Aufstiegszertifikate!
 ACTIVITY_LASSO_BUTTON,Werfen
 ACTIVITY_LASSO_TEXT01,Gib die Anzahl der Ringe ein
@@ -6045,12 +6045,12 @@ GAME_ASSISTANT_TEXT98,Keine Waren
 ACTIVITY_LASSO_TITLE,Ringe werfen
 TIME_CLOISTER_TEXT113,Entsperre zunächste den Zweig {1}
 TIME_CLOISTER_TEXT114,Erfolgreich eingestellt
-ACTIVITY_FREEBUY_TEXT01,"Tippe auf das Icon oben auf dem Paket, um die erhältlichen Belohnungen zu prüfen.|Alle zum Kauf ausgegebenen Dias werden nach dem Kaufen zurückgesendet."
+ACTIVITY_FREEBUY_TEXT01,"Tippe auf das Icon oben auf dem Paket, um die erhältlichen Belohnungen zu prüfen.\nAlle zum Kauf ausgegebenen Dias werden nach dem Kaufen zurückgesendet."
 ACTIVITY_FREEBUY_TEXT02,Insgesamt erhältlich:
 ACTIVITY_FREEBUY_TEXT04,Heute sammelbar:
 ACTIVITY_FREEBUY_HELP,"1. Alle Pakete werden für Dias verkauft. Erst wenn du das vorherige Paket gekauft hast, wird das nächste Paket zum Kaufen entsperrt. (Das erste Paket steht zu Beginn des Events zum Kauf.) Nach dem Kauf erhältst du am selben Tag eine Belohnung und an den folgenden 7 Tagen erhältst du täglich eine Belohnung.|2. Die während der 7 Tage nach dem Kauf nicht gesammelten Belohnungen werden bis zum nächsten Tag aufbewahrt.|3. Nach dem Ende des Events werden die noch nicht gesammelten Belohnungen per Mail gesendet."
 ACTIVITY_FREEBUY_TEXT05,Dias und noch mehr Gratisressourcen in 7 Tagen!
-ACTIVITY_FREEBUY_TEXT06,250%%iger Bonus!
+ACTIVITY_FREEBUY_TEXT06,[c][e25a4c]275%%iger[-][/c] Bonus
 ACTIVITY_FREEBUY_TEXT07,{1} als Bonus
 TIME_CLOISTER_TEXT115,Auswirken können sich die Kampfskills von maximal 3 Kristallkarten.
 ACTIVITY_LOTTERY_TEXT01,"Je öfter du gezogen hast, desto wahrscheinlicher erhältst du die Schätze!"
@@ -6063,4 +6063,39 @@ ACTIVITY_LOTTERY_TEXT07,Ziehen
 ACTIVITY_LOTTERY_TEXT08,"Erhalte während des Events eine bestimmte Menge an VIP-EXP, um Schatztickets zu sammeln und die Schätze ziehen zu können!"
 TIME_CLOISTER_TEXT116,"Deine Daten werden auf maximal 2 Ranglisten im Zeitstrudel unter entsperrten Korridoren aufbewahrt. Dein Rang auf der Schadensrangliste im Zeitstrudel unter dem Korridor ""{1}"" wurde entfernt!"
 TIME_CLOISTER_TEXT117,"Du hast Korridor(e) höherer Stufe entsperrt und dein Schaden, der im Zeitstrudel dieses Korridors verursacht wird, wird nicht auf der Rangliste gezählt. Fortfahren?"
-ACTIVITY_FREEBUY_TEXT08,"Kaufe zunächst das vorherige Paket, um dieses Paket zu entsperren. Willst du zum Kauf gehen?"
+ACTIVITY_FREEBUY_TEXT08,"Kaufe zunächst alle vorherigen Pakete, um dieses Paket zu entsperren. Willst du zum Kauf gehen?"
+ACTIVITY_LOTTERY_HELP,"1. Entsprechend der Menge an VIP-EXP, die du während des Events erhalten hast, erhältst du die Schatztickets, die zum Ziehen der Schätze verwendet werden können.|2. Beim ersten Ziehen wird kein Schatzticket verwendet.|3. Die gezogenen Schätze können nicht mehr gezogen werden. Je öfter du gezogen hast, desto wahrscheinlicher erhältst du die geheimen/legendären Schätze.|4. Nach dem Ende des Events werden die noch nicht verwendeten Schatztickets per Mail recycelt. Jeder Schatzticket entspricht 50K Münzen."
+PARTNER_CHALLENGE_CHESS_TEXT10,Willst du sicher das letzte Mädchen umwandeln?
+ACTIVITY_CLOCK_BUTTON01,Drehen
+ACTIVITY_CLOCK_TEXT01,Zeiger
+ACTIVITY_CLOCK_AWARDS_TEXT01,Verwende {1}x Kleemünzen
+ACTIVITY_CLOCK_AWARDS_TEXT02,Noch {1}x Drehen
+ACTIVITY_CLOCK_AWARDS_TEXT03,Sammelbar:
+ACTIVITY_CLOCK_CHOOSE,Wähle die ult. Belohnung aus
+ACTIVITY_CLOCK_CHOOSE_TIPS,Bitte wähle zunächst die ultimativen Belohnungen aus!
+ACTIVITY_CLOCK_CHOOSE_BUTTON,Wählen
+ACTIVITY_CLOCK_SHOW_TEXT01,Fixiert
+ACTIVITY_CLOCK_SHOW_TEXT02,Auswählbar
+ACTIVITY_CLOCK_SHOW_TEXT03,Beloh. dieser Runde
+ACTIVITY_CLOCK_SHOW_TEXT04,Ultimative Beloh.
+ACTIVITY_CLOCK_SHOW_TEXT05,Runde {1}
+ACTIVITY_CLOCK_AWARD_GET,Du hast alle ultimativen Belohnungen dieser Runde erhalten. Alle restlichen Belohnungen dieser Runde erhältst du auch!
+ACTIVITY_CLOCK_HELP,"1. Verwende deine ""Kleemünzen"", um das Glücksrad drehen zu können und die Belohnungen zu erhalten. Wird nur ein Zeiger aktiviert, dann wird für jedes Drehen 1 Kleemünze verwendet. Werden mehrere Zeiger aktiviert, dann kannst du auch mehrere Belohungen erhalten. Dementsprechend werden auch weitere Kleemünzen verwendet.|2. Auf dem Glücksrad gibt es normale und ultimativen Belohnungen. Die normalen Belohnungen können wiederholt erhalten werden. (In der Mitte des Glücksrads wird gezeigt, wievielmal die jeweiligen normalen Belohnungen noch erhalten werden können.) Jede ultimative Belohnung kann nur einmal erhalten werden. Sobald du alle ultiamtiven Belohnungen einer Runde erhalten hast, erhältst du direkt die restlichen normalen Belohnungen.|3. Sobald du alle Belohnungen erhalten hast, wird die nächste Runde entsperrt. Es gibt insgesamt 5 Runden und ab der 5. Runde werden die selben Belohnungen eingestellt.|4. Entsprechend der Menge an verwendeten Kleemünzen werden noch weitere Belohnungen gegeben.|5. Erhalten der Kleemünzen: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Aprilaufgaben, Aprilscherz, Lottoevent und Geschenk zum Monatsanfang.|6. Nach dem Ende des Events werden die noch nicht verwendeten Kleemünzen automatisch per Mail recycelt. Jede Kleemünze entspricht 20K Münzen."
+ACTIVITY_CLOCK_TASK,"Schließe die Aufgaben ab, um Kleemünzen zum Glücksrad zu erhalten!"
+ACTIVITY_CLOCK_TITLE,Der erste\nApril
+ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Belohnungsvorschau
+ACTIVITY_CLOCK_TEXT02,Belohnung
+ACTIVITY_CLOCK_GIFTBAG_HELP,"1. Tippe auf das Zeichen ""+"", um gewünschte Ressourcen im Paket einzusetzen und das Paket zu kaufen.|2. Willst du nach dem Speichern die Ressourcen im Paket zu wechseln, kannst du auf den Knopf oben rechts auf dem Item tippen, um Ressourcen erneut zu wählen."
+ACTIVITY_FREEBUY_TEXT09,Sofort erhältlich\nnach dem Kauf:
+ACTIVITY_FREEBUY_TEXT10,Morgen sammelbar:
+ACTIVITY_FREEBUY_TEXT11,Gesammelt:
+ACTIVITY_FREEBUY_TEXT12,Kaufzeit beendet. Das Paket kann nicht mehr gekauft werden.
+ACTIVITY_NEWBEE_FUND_TEXT03,Belohnungswert (teilweise):
+ACTIVITY_NEWBEE_FUND_TEXT04,Gesamtwert:
+ACTIVITY_CLOCK_TEXT03,Schnell drehen
+ACTIVITY_CLOCK_TEXT04,Gib die Anzahl der zu verwendenden Kleemünzen ein
+ACTIVITY_CLOCKGIFTBAG_TEXT01,Belohnungen zur Auswahl
+ACTIVITY_CLOCKGIFTBAG_TEXT02,Wähle eine Belohnung aus
+GAME_ASSISTANT_TEXT99,Ziehe 2 Mal
+GAME_ASSISTANT_TEXT100,Händler
+ACTIVITY_CLOCK_SHOW_TEXT06,Ab der 5. Runde
