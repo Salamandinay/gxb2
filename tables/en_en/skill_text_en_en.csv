@@ -11917,3 +11917,390 @@ When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 10% less BP."
 632418,時間迴廊,-1,"At the start of the battle, all Ally Girls gain 1 stack of [c][e28002]Magick Barrier[-][/c] that has (9% of self Maximum HP) BP for every Ally Angel Girl in the team."
 632419,時間迴廊,-1,"At the start of the battle, all Ally Girls gain 1 stack of [c][e28002]Magick Barrier[-][/c] that has (9.5% of self Maximum HP) BP for every Ally Angel Girl in the team."
 632420,時間迴廊,-1,"At the start of the battle, all Ally Girls gain 1 stack of [c][e28002]Magick Barrier[-][/c] that has (10% of self Maximum HP) BP for every Ally Angel Girl in the team."
+5101800,Chizuko,Basic Attack,Basic Attack
+65102500,Chizuko,Basic Attack,Basic Attack
+75101800,Chizuko,Basic Attack,Basic Attack
+5101801,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (100% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (5% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 20% and lowers the owner’s Attack by 10%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65102501,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (200% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (7.5% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 40% and lowers the owner’s Attack by 15%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75101801,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (400% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+5101802,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 20%, Attack by 20%, Heal Amount by 15%, and Damage Reduction by 10%."
+65102502,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 25%, Attack by 25%, Heal Amount by 20%, and Damage Reduction by 20%."
+65102512,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 25%, and Damage Reduction by 30%."
+75101802,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 25%, and Damage Reduction by 30%."
+5101803,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (5% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65102503,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (7.5% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65102513,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (10% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75101803,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (10% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+5101804,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (5% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 5% and all damage they deal increased by 5% for 3 rounds. They will also gain 10 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 20% and lowers the owner’s Attack by 10%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65102504,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (7.5% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 7.5% and all damage they deal increased by 7.5% for 3 rounds. They will also gain 25 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 40% and lowers the owner’s Attack by 15%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65102514,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 10% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75101804,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 10% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018011,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (408% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 61% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018012,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (416% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 62% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018013,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (424% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (12% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 63% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018014,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (432% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (12% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 64% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018015,Chizuko,Crane's Flight,"
+The crane spreads its wings and brings forth clouds and winds in the sky.
+
+Chizuko deals (440% of Attack) damage to 2 enemies with the highest Attack attribute and covers them in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+She heals 2 allies with the lowest HP for (15% of target’s Maximum HP), grants a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to the both of them, and casts [c][e28002]Luminosity[-][/c] to them.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked.
+Increases all damage the owner of this Skill Effect takes by 65% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Luminosity[-][/c]:
+ A Skill Effect that cannot be stacked. 
+The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
+ This Skill Effect will disappear after the owner takes damage twice. 
+ If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018021,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 26%, and Damage Reduction by 30%."
+751018022,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 27%, and Damage Reduction by 30%."
+751018023,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 28%, and Damage Reduction by 30%."
+751018024,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 30%, Attack by 30%, Heal Amount by 29%, and Damage Reduction by 30%."
+751018025,Chizuko,Vivid Sunshine,"The bright, burning sun watches over us.\n\nIncreases Chizuko's HP by 33%, Attack by 33%, Heal Amount by 30%, and Damage Reduction by 30%."
+751018031,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (11% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018032,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (12% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018033,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (13% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018034,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (14% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018035,Chizuko,Kagura Dance,"
+Dance to your heart\'s content in this divine melody.
+
+Chizuko’s Basic Attacks will heal the ally with lowest HP for (15% of target’s Maximum HP), grant a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP to them, and remove 1 random Debuff (Damage Over Time, Attribute Reduction, Control Effect, or Marks) from them.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018041,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 10% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 61% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018042,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 10% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 62% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018043,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 12% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 63% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018044,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (10% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 12% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 64% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+751018045,Chizuko,Crane's Blessing,"
+The Cranes will eventually return by God\'s will, bringing with them God\'s Revelation.
+
+At the start of each round, Chizuko heals all allies for (12% of target’s Maximum HP) and grants them a [c][e28002]Magick Barrier[-][/c] with (amount of HP healed) BP.
+2 Allies with highest Attack attributes will have their Damage Depletion increased by 10% and all damage they deal increased by 15% for 3 rounds. They will also gain 50 extra Energy.
+Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Crane\'s Plume[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Crane\'s Plume[-][/c]:
+A Skill Effect that cannot be stacked. 
+Increases all damage the owner of this Skill Effect takes by 65% and lowers the owner’s Attack by 20%.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."

@@ -22,7 +22,7 @@ id,name,from,content
 21,Daily Rewards,System Message,"Login every day during the event and you will receive Elemental Orb x 100, Advance Internship Scroll x 1, and Clockwork Coin x 2. Your rewards are attached."
 22,Internship Rewards,System Message,Congratulations! You've completed {1} star internship quest during the Internship Event! Here are your rewards.
 23,Reload Notice,System Message,Thank you for purchasing {1}. Your items are available in Bag. Have a look~!
-24,Daily Rewards,System Message,Login daily during the event to get Rudder x 4 and Gem x 150. Your rewards are attached.
+24,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Fishing Rod x 5. Your rewards are attached."
 25,League Battle Rewards,System Message,Congratulations! You reached a goal during the League event. Here are your rewards~!
 26,Subscription,Subscription,Congratulations! You are a Weekly Pass holder. Your Coin Loot will increase by 100% for the next 168 hours. This benefit is combined with VIP benefits.
 27,Weekly Pass will expire,Weekly Pass,Your Weekly Pass expires today. Please renew your Weekly Pass to continue enjoying the benefits. Looting Coin is increased 100% while the pass is active~!
@@ -150,7 +150,7 @@ id,name,from,content
 149,Newbie Benefit Reward,System Message,"Senpai, congratulations for completing the task. Here's the reward you forgot to claim at the event page!"
 150,Newbie Benefit Progress,System Message,"Senpai, congratulations for getting {1} points in Newbie Benefit! Here's the reward you forgot to claim in the event page!"
 151,Luvly's Reward,Event Mail,"Senpai, congratulations for collecting {1} Coral Branch(es), here's your reward!"
-152,Daily Rewards,System Message,Login daily during the event to get Rudder x 4 and Gem x 150. Your rewards are attached.
+152,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Fishing Rod x 5. Your rewards are attached."
 153,Event Item Retrieve,System Message,"Dear Senpai, event: {1} is ended, {2} x {3} of yours have been retrieved."
 154,Exploration Ranking Reward,System Message,"Congratulations, Senpai! You're No. {1} in this season of Old Campus Exploration, here's your reward!"
 155,Exploration Reward,System Message,"Dear Senpai, the event: Old Campus Exploration has ended, here's your unclaimed reward!"
@@ -231,3 +231,5 @@ Yuki apologizes for the inconvenience, for any further queries, please don’t h
 224,Promotion Exam Reward,Event Mail,"Congratulations, you've pulled {1} Adv. Capsules during the event, here's your reward!"
 225,Promotion Exam A+ Reward,Event Mail,"Congratulations, you've pulled {1} Adv. Capsules during the event, here's your extra reward!"
 226,Investment Reward,Event Mail,"Dear Senpai, the unclaimed rewards for event: ""Beginner Investment"" is attached in the mail, please check it out!"
+227,Capsule Simulator,Event Mail,"Dear Senpai, the event: Capsule Simulator will end in 24 hours. After the event is over, your remaining Simulation Coins will automatically be exchanged for the Capsule Simulation Results you have saved in Slots (based on the order of Slots), the Girls will be sent to you via Mail. If no simulation results have been saved, your remaining Simulation Tokens will automatically be removed from your account."
+228,Simulation Item Retrieve,Event Mail,"Dear Senpai, the event: ""Capsule Simulator"" is over. Your remaining Simulation Coins are automatically used to exchange the Capsule Simulation Record you saved in Slots during the event (based on the order of Slots). Here are the Girls you get, please check it out."

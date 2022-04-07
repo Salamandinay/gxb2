@@ -22,7 +22,7 @@ id,name,from,content
 21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Elementarkugel *100, Super Job-Pergament *1 und Kleemünze *2 zu erhalten. Hier sind deine Belohnungen."
 22,Belohnungen - Jobaufgaben,Systembenachrichtigung,Herzlichen Glückwünsche! Du hast während des Jobaufgaben-Events die {1}-Sterne Jobaufgaben abgeschlossen! Hier sind deine Belohnungen!
 23,Auflade-Nachricht,Systembenachrichtigung,"Vielen Dank, dass du dich für {1} entschieden hast. Deine Items sind im Rucksack erhältlich. Schau nach~"
-24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4 und Dias *150 zu erhalten. Hier sind deine Belohnungen!"
+24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150 und Angelrute *5 zu erhalten. Hier sind deine Belohnungen."
 25,Belohnungen - Arena-Kampf,Systembenachrichtigung,Herzlichen Glückwunsch! Du hast während des Events Arena-Kampf ein bestimmtes Ziel erreicht. Hier sind die entsprechenden Belohnungen!
 26,Abonnement,Abonnement,Herzliche Glückwünsche! Du bist der glückliche Inhaber einer Wochenkarte. Deine Münzenausbeute wird für die nächsten 168 Stunden um 100% erhöht. Dieser Vorteil wird auf die Vip-Vorteile draufgerechnet.
 27,Erinnerung: Abonnement läuft aus,Abonnement,"Deine Wochenkarte läuft heute ab. Bitte verlängere deine Wochenkarte, um die Vorteile weiterhin nutzen zu können. Die Münzenausbeute wird um 100% erhöht, solange die Karte aktiv ist!"
@@ -155,7 +155,7 @@ Komm und tritt der FB-Fangruppe bei!
 149,Belohnungen des Neulingsevents,Systembenachrichtigung,"Gratuliere, Senpai! Du hast die 7-tägigen Aufgaben erfolgreich abgeschlossen. Die noch nicht gesammelten Belohnungen sind beigefügt!"
 150,Fortschrittsbelohnung des Neulingsevents,Systembenachrichtigung,"Gratuliere, Senpai! Du hast während des Neulingsevents {1} Punkte erreicht. Die noch nicht gesammelten Belohnungen sind beigefügt!"
 151,Belohnung von Luvlys Inselreise,Event Mail,"Gratuliere, dass du während des Events Luvlys Inselreise {1} Korallenzweige gesammelt hast. Hier sind deine Belohnungen!"
-152,Tägliche Belohnung,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4 und Dias *150 zu erhalten. Hier sind deine Belohnungen!"
+152,Tägliche Belohnung,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150 und Angelrute *5 zu erhalten. Hier sind deine Belohnungen."
 153,Umwandlung der Eventitems,Systembenachrichtigung,"Lieber Senpai, das Event {1} ist zu Ende. Deine {2}x {3} wurden automatisch recycelt."
 154,Rangbelohnung für Schulerkundung,Systembenachrichtigung,"Gratuliere, du hast in diesmaliger Schulerkundung den {1}. Platz beleget! Hier sind deine Belohnungen!"
 155,Belohnungen für Schulerkundung,Systembenachrichtigung,"Lieber Senpai, die Schulerkundung ist zu Ende. Hier sind die noch nicht eingesammelten Belohnungen!"
@@ -241,7 +241,7 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 219,Bonus zum Feuerwerksspektakel,Systembenachrichtigung,"Lieber Senpai, hast du heute schon am Event ""Feuerwerksspektakel"" teilgenommen? Hier, ich schick dir noch ein Streichholz als Bonus!"
 220,Belohnungen zum Feuerwerksspektakel,Systembenachrichtigung,"Gratuliere, du hast während des Events ""Feuerwerksspektakel"" insgesamt {1} Feuerwerksshow(s) abgeschlossen und folgende Belohnungen erhalten!"
 221,Rangbelohnung - Prüfung der Götter,Systembenachrichtigung,"Gratuliere, du hast während der Prüfung der Götter den {1}. Platz (im Gesamtrang) belegt und folgende Belohnungen erhalten!"
-222,Rangbelohnung - Prüfung der Götter,Systembenachrichtigung,"Gratuliere, du hast in der ""{2}"" unter Prüfung der Götter den {1}. Platz belegt und folgende Belohnungen erhalten!"
+222,Rangbelohnung - Prüfung der Götter,Systembenachrichtigung,"Gratuliere, du hast in der ""{1}"" unter Prüfung der Götter den {2}. Platz belegt und folgende Belohnungen erhalten!"
 223,Baue Luvly ein Traumschloss auf!,Systembenachrichtigung,"
 Liebe(r) Senpai,
 
@@ -250,3 +250,10 @@ Du hast bereits {1} 5-Sterne Mädchen, {2} 6-Sterne Mädchen und {3} 10-Sterne M
 224,Belohnungen zur Aufstiegsprüfung,Event-Mail,"Gratuliere, du hast an der Super Kapselmaschine {1} Mal gezogen und folgende Belohnungen im Event ""Aufstiegsprüfung"" erhalten."
 225,Premium Belohnungen zur Aufstiegsprüfung,Event-Mail,"Gratuliere, du hast an der Super Kapselmaschine {1} Mal gezogen und die Premium Belohnungen im Event ""Aufstiegsprüfung"" entsperrt und folgende Belohnungen erhalten!"
 226,Belohnungen - 0€-Investment,Event-Mail,"Liebe(r) Senpai,\n\ndie Belohnungen, die du im Event ""0€-Investment"" noch nicht gesammelt hast, werden hierzu per Mail gesendet! Bitte sammle sie ein!"
+227,Hinweis auf Eventende (Kapselsimulator),Event-Mail,"
+Liebe(r) Senpai,
+
+das Event ""Kapselsimulator"" wird in knapp 24 Stunden beendet. Nach dem Ende des Events werden deine restlichen Tauschmünzen automatisch nach der Reihe gegen die gespeicherte Mädchen (Reserve) eingetauscht, bis alle Tauschmünzen verwendet werden. Die Mädchen-Fragmente werden per Mail gesendet.
+
+Gibt es nach dem Tauschen aller Reserven noch verfügbare Tauschmünzen, werden sie entfernt. Ziehe schnell die Kapseln und tausche die gewünschten Mädchen!"
+228,Tauschmünzen autom. verwendet,Event-Mail,"Liebe(r) Senpai,\n\ndas Event ""Kapselsimulator"" wurde beendet. Die noch nicht verwendeten Tauschmünzen werden automatisch nach der Reihe die Mädchen (Reserve), die du im Event gezogen und gespeichert hast, eingetauscht. Die Mädchen-Fragmente werden hierzu per Mail gesendet. Bitte sammle sie ein."

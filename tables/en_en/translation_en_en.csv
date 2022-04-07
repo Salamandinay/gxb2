@@ -4909,7 +4909,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
 WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: |After reaching Division {1}:|{2}|After reaching Division {3}:|{4}|After reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
-WARMUP_ARENA_TASK_INFO_2,Cygmar · A Born Hacker
+WARMUP_ARENA_TASK_INFO_2,Chizuko · Beliefs that Guide
 WARMUP_ARENA_TASK_INFO_3,Mission Rewards
 WARMUP_ARENA_TASK_INFO_4,Extra Rewards
 WARMUP_ARENA_TASK_INFO_5,Unlock after completing star-marked missions
@@ -6018,7 +6018,7 @@ GAME_ASSISTANT_TIPS06,Unlock after reaching Servant Training level {1} or Explor
 GAME_ASSISTANT_TIPS07,Unlock after your Guild reaches level {1}
 GAME_ASSISTANT_TIPS08,Corresponding feature available after Cafeteria reaches level {1}
 GAME_ASSISTANT_TIPS09,Corresponding feature available after Stage 61 in Guild - Gym is unlocked.
-GAME_ASSISTANT_HELP01,"[c][0069cc]Daily[-][/c]|1. If “Yes” is selected in the Capsule-related settings, then the Free Chances will be used first if any are available;|2. Only the Slot Machine will be drawn from. The Game Assistant will not draw from the Super Slot Machine;|3. The Game Assistant will claim rewards from the highest Daily Quiz Level that you can claim from;|4. In the opponents that you are paired with, the Game Assistant will challenge the team with the lowest Battle Power;|5. You can select multiple star ranks in Internship, the system will automatically complete the Internship Quests with lower star rank first according to your setup.|[c][0069cc]Challenges[-][/c]|1. The Patrol Team lineup needs to be set up before the Raid Rewards can be claimed by the Game Assistant;|2. After choosing the House of the House Exams, if you have already cleared several stages, the Game Assistant can use Certificates to Raid the cleared stages.;|[c][0069cc]Growth[-][/c]|1. Excursion Resources can be claimed once per hour;|2. After claiming course rewards, the Game Assistant will automatically start the same courses with the same Servants;|3. When challenging the Training Dummy, the Game Assistant will use Servants that are stronger than others to challenge;|[c][0069cc]Guild[-][/c]|1. If you're not able to get orders when using the feature, the part that assists you with the Guild-Cafeteria will not be available. |2. Before getting new Orders, the Game Assistant will claim rewards from completed Orders. If there are orders waiting to be started, it will automatically start them;|3. When calculating the Gems needed to upgrade the orders, all the orders you get will be counted as Lv.1 orders. (You might actually get Lv.1-3 orders, the orders that are Lv. 2-3 will actually consume you less Gems to be upgraded to Lv.6) Therefore, fewer Gems might be actually consumed than the system predicted when upgrading orders in Cafeteria;|4. If you choose to  challenge the 61st boss in Gym, all challenge chances of the day will be used."
+GAME_ASSISTANT_HELP01,"[c][0069cc]Requirement:[-][/c]|Pass Stage {1} in Campaign.|[c][0069cc]Daily[-][/c]|1. If “Yes” is selected in the Capsule-related settings, then the Free Chances will be used first if any are available;|2. Only the Slot Machine will be drawn from. The Game Assistant will not draw from the Super Slot Machine;|3. The Game Assistant will claim rewards from the highest Daily Quiz Level that you can claim from;|4. In the opponents that you are paired with, the Game Assistant will challenge the team with the lowest Battle Power;|5. You can select multiple star ranks in Internship, the system will automatically complete the Internship Quests with lower star rank first according to your setup.|6. In Daily page, you can initiate the operations only once. (your purchases from Market and claiming loot/rewards in Campaign or Dorm are excluded)|[c][0069cc]Challenges[-][/c]|1. The Patrol Team lineup needs to be set up before the Raid Rewards can be claimed by the Game Assistant;|2. After choosing the House of the House Exams, if you have already cleared several stages, the Game Assistant can use Certificates to Raid the cleared stages.;|[c][0069cc]Growth[-][/c]|1. Excursion Resources can be claimed once per hour;|2. After claiming course rewards, the Game Assistant will automatically start the same courses with the same Servants;|3. When challenging the Training Dummy, the Game Assistant will use Servants according to the order they are listed in Servant Training page;|[c][0069cc]Guild[-][/c]|1. If you're not able to get orders when using the feature, the part that assists you with the Guild-Cafeteria will not be available. |2. Before getting new Orders, the Game Assistant will claim rewards from completed Orders. If there are orders waiting to be started, it will automatically start them;|3. When calculating the Gems needed to upgrade the orders, all the orders you get will be counted as Lv.1 orders. (You might actually get Lv.1-3 orders, the orders that are Lv. 2-3 will actually consume you less Gems to be upgraded to Lv.6) Therefore, fewer Gems might be actually consumed than the system predicted when upgrading orders in Cafeteria;|4. If you choose to challenge the 61st boss in Gym, all challenge chances of the day will be used."
 ACTIVITY_PROMOTION_TEST_TEXT06,Pull Adv. Capsules to get Promotion Certificates
 ACTIVITY_LASSO_BUTTON,Toss
 ACTIVITY_LASSO_TEXT01,Please select quantity
@@ -6059,7 +6059,7 @@ ACTIVITY_LOTTERY_TEXT04,Free
 ACTIVITY_LOTTERY_TEXT05,Obtain {1} VIP Exp during the event
 ACTIVITY_LOTTERY_TEXT06,Insufficient Treasure Ticket
 ACTIVITY_LOTTERY_TEXT07,Draw
-ACTIVITY_LOTTERY_TEXT08,By obtaining VIP Exp to get Treasure Tickets during the event. You can use the Treasure Tickets to draw rewards!
+ACTIVITY_LOTTERY_TEXT08,Obtain VIP EXP to get Treasure Tickets during the event. You can use the Treasure Tickets to draw rewards!
 TIME_CLOISTER_TEXT116,You can only compete your damage record with other players in 2 Worlds of Time at the same time. Your damage record in {1} is thus been erased.
 TIME_CLOISTER_TEXT117,"A new World of Time is unlocked, you cannot participate in the damage ranking of this World of Time, confirm to continue?"
 ACTIVITY_FREEBUY_TEXT08,"You can unlock this pack by purchasing the previous pack, do you want to go and check it out?"
@@ -6085,7 +6085,7 @@ ACTIVITY_CLOCK_TITLE,April Fools'\nDay
 ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Preview
 ACTIVITY_CLOCK_TEXT02,Rewards
 ACTIVITY_CLOCK_GIFTBAG_HELP,"1. Tap the ""+"" sign to choose your ideal content for the packs and purchase them.|2. If you want to change your selections after saving, you can tap the button on the top right the item icons to re-select."
-ACTIVITY_FREEBUY_TEXT09,Instant Reward:
+ACTIVITY_FREEBUY_TEXT09,Claim after Purchase
 ACTIVITY_FREEBUY_TEXT10,Available tomorrow:
 ACTIVITY_FREEBUY_TEXT11,Claimed:
 ACTIVITY_FREEBUY_TEXT12,The purchase period of this pack is over.
@@ -6096,5 +6096,76 @@ ACTIVITY_CLOCK_TEXT04,Select quantity
 ACTIVITY_CLOCKGIFTBAG_TEXT01,Rewards
 ACTIVITY_CLOCKGIFTBAG_TEXT02,Please choose your reward
 GAME_ASSISTANT_TEXT99,Draw 2 times
-GAME_ASSISTANT_TEXT100,Shop
+ACTIVITY_FREEBUY_TEXT13,"You have claimed today's reward, please come back tomorrow~"
+GAME_ASSISTANT_TEXT100,Store
 ACTIVITY_CLOCK_SHOW_TEXT06,From the 5th round
+ACTIVITY_SIMULATION_GACHA_TEXT01,[c][de5764]{1}[-][/c] simulations completed
+ACTIVITY_SIMULATION_GACHA_TEXT02,Save the result
+ACTIVITY_SIMULATION_GACHA_GIFTBAG,Capsule Simulator Pack
+ACTIVITY_SIMULATION_GACHA_HELP1,"1. During the event, you can simulate 10x draw results in this page for unlimited times, but you cannot get the Girls in the results directly. You will need to exchange the Girls in the results with Simulation Coins.|2. After completing a simulation, you can save the result you think is an ideal pull.|3. You can save 5 simulation results at most at the same time.|4. You can obtain Simulation Coins by purchasing Capsule Simulator Pack, the pack will be available for 7 days.|5. For each Simulation Coin consumed, you can exchange all the Girls in a Simulation result.|6. After the event ends, your remaining Simulation Coins will be automatically used to exchange the Capsule Simulation Records you saved during the event (according to the order of Slot numbers), the Girls you get will be sent via Mail; if there's no simulation result left to exchange, the remaining Simulation Coins will be removed from your account."
+ACTIVITY_SIMULATION_GACHA_TEXT03,[c][size=30]10x[-][/c] Simulation
+ACTIVITY_SIMULATION_GACHA_TEXT04,Save the result
+ACTIVITY_SIMULATION_GACHA_TEXT05,10x Simulation Result
+ACTIVITY_SIMULATION_GACHA_TEXT06,You can save the result by tapping the record list below
+ACTIVITY_SIMULATION_GACHA_TEXT07,"1. Result Slots are used to save your Simulation results.|2. You can save your Simulation result by tapping on an empty Slot, or replacing a saved result in an occupied Slot. (the replaced results will be deleted)|3. Slot 1 and Slot 2 are available for free.|4. Slot 3-5 requires Gems to unlock."
+ACTIVITY_SIMULATION_GACHA_TEXT08,Slot\n[size=28]1
+ACTIVITY_SIMULATION_GACHA_TEXT09,Slot\n[size=28]2
+ACTIVITY_SIMULATION_GACHA_TEXT10,Slot\n[size=28]3
+ACTIVITY_SIMULATION_GACHA_TEXT11,Slot\n[size=28]4
+ACTIVITY_SIMULATION_GACHA_TEXT12,Slot\n[size=28]5
+ACTIVITY_SIMULATION_GACHA_TEXT13,No Simulation Result is saved in this slot
+ACTIVITY_SIMULATION_GACHA_TEXT14,Exchange
+ACTIVITY_SIMULATION_GACHA_TEXT15,"The old result will be removed to save the new result, confirm to continue?"
+ACTIVITY_SIMULATION_GACHA_TEXT16,Confirm to save the result?
+ACTIVITY_SIMULATION_GACHA_TEXT17,Confirm to unlock {2} with {1} Gems?
+ACTIVITY_SIMULATION_GACHA_TEXT18,1. You can exchange the Girls in a result by consuming 1 Simulation Coin.|2. Slot 1 and Slot 2 are available for free.|3. Slot 3.-5 requires Gems to unlock.|4. Simulation Coins can be obtained by purchasing Capsule Simulation Pack.
+ACTIVITY_SIMULATION_GACHA_TEXT19,No simulation result is saved in this slot
+ACTIVITY_SIMULATION_GACHA_TEXT20,Please select a saved result
+ACTIVITY_SIMULATION_GACHA_TEXT21,Insufficient Simulation Coins
+ACTIVITY_SIMULATION_GACHA_TEXT22,Slot 1
+ACTIVITY_SIMULATION_GACHA_TEXT23,Slot 2
+ACTIVITY_SIMULATION_GACHA_TEXT24,Slot 3
+ACTIVITY_SIMULATION_GACHA_TEXT25,Slot 4
+ACTIVITY_SIMULATION_GACHA_TEXT26,Slot 5
+NEW_TRIAL_RESET_TEXT01,Sanctuary is updating
+NEW_TRIAL_RESET_TEXT02,"Sanctuary updating, available in: [c][b1ff00]{1}[-][/c]"
+NEW_TRIAL_VOLCAN_SECRET,Volcano Sanctum
+NEW_TRIAL_SEA_SECRET,Abyss Sanctum
+NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} is available
+NEW_TRIAL_MAIN_WINDOW_TEXT02,Sanctuary Pass
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,Please choose your reward
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Please select the main reward plan for this season's Sanctuary Pass. (Only 1 reward plan can be selected each season)
+NEW_TRIAL_BATTLEPASS_TEXT01,Optional Rewards
+NEW_TRIAL_BATTLEPASS_TEXT02,Sanctuary Point
+NEW_TRIAL_BATTLEPASS_TEXT03,Buy Pass
+NEW_TRIAL_BATTLEPASS_TEXT04,Level
+NEW_TRIAL_BATTLEPASS_TEXT05,Normal
+NEW_TRIAL_BATTLEPASS_TEXT06,Pass
+NEW_TRIAL_BATTLEPASS_TEXT07,Claim
+NEW_TRIAL_BATTLEPASS_TEXT08,Challenge
+NEW_TRIAL_BATTLEPASS_TEXT09,Claim All
+NEW_TRIAL_BATTLEPASS_TEXT10,More Rewards
+NEW_TRIAL_BATTLEPASS_HELP,幫助文本
+NEW_TRIAL_BATTLEPASS_TEXT11,Please select the main reward plan for this season's Sanctuary Pass
+NEW_TRIAL_BATTLEPASS_TEXT12,Purchase limit reached
+NEW_TRIAL_BATTLEPASS_TEXT13,Confirm to select {1} for the season's main reward plan? You will not be able to adjust your selection after you claim any reward here.
+NEW_TRIAL_BATTLEPASS_TEXT14,Instant reward after purchasing Sanctuary Pass
+NEW_TRIAL_BATTLEPASS_TEXT15,Purchase Sanctuary Pass and collect Sanctuary Points to get the following rewards.
+ARENA_HELP_TIPS_ITEM_TEXT1,Junior Varsity updated! Prepare for fiercer competitions!
+ARENA_HELP_TIPS_ITEM_TEXT2,Fight against players from different servers in each season.
+ARENA_HELP_TIPS_ITEM_TEXT3,The top one player from each server will be displayed
+ARENA_HELP_TIPS_ITEM_TEXT4,Better Rewards
+GAME_ASSISTANT_TEXT101,Campaign Loot
+GAME_ASSISTANT_TEXT102,Dorm Resource
+ARENA_NEW_SEASON_SERVER_RANK_WINDOW,Servers
+ACTIVITY_SIMULATION_GACHA_TEXT27,10x Simulation
+ACTIVITY_SIMULATION_GACHA_TEXT28,Confirm to the Girls in the result saved in {1} with 1 Simulation Coin?
+ACTIVITY_SIMULATION_GACHA_TEXT29,Current result saved
+ARENA_NEW_SEASON_SERVER_MY_SERVER,(My server)
+ARENA_NEW_SEASON_SERVER_TIME_TEXT,Cross-server Junior Varsity starts in:
+SHRINE_HURDLE_TEXT40,Trial hasn't begun
+ACTIVITY_SIMULATION_GACHA_TEXT30,Result Exchange
+ACTIVITY_SIMULATION_GACHA_TEXT31,Result Records
+ACTIVITY_SIMULATION_GACHA_TEXT32,Leave
+ACTIVITY_SIMULATION_GACHA_TEXT33,Capsule\nSimulator
+ACTIVITY_SIMULATION_GACHA_TEXT34,Gift Pack
