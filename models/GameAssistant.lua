@@ -129,6 +129,7 @@ end
 function GameAssistant:onRegister()
 	self:registerEvent(xyd.event.MIDAS_BUY_2, handler(self, self.onGetMidasMsg))
 	self:registerEvent(xyd.event.GET_HANG_ITEM, handler(self, self.onGetHangItems))
+	self:registerEvent(xyd.event.HOUSE_GET_AWARDS, handler(self, self.onGetHouseItems))
 	self:registerEvent(xyd.event.PET_TRAINING_COMPLETE_MISSION, handler(self, self.onGetPetMissionAwardMsg))
 	self:registerEvent(xyd.event.BUY_SHOP_ITEM_BATCH, handler(self, self.onGetBuyMarketMsg))
 	self:registerEvent(xyd.event.EXPLORE_BUILDING_GET_OUT, handler(self, self.onGetExploreAwardMsg))
@@ -263,12 +264,18 @@ end
 function GameAssistant:reqCampaignAward()
 	self.mapInfo = xyd.models.map:getMapInfo(xyd.MapType.CAMPAIGN)
 	local dropItems = self.mapInfo.drop_items
+	local msg = messages_pb.get_hang_item_req()
 	local num = 1
+	msg.item_type = 1
+	msg.count = 5
 
-	xyd.models.map:getHangItem(1)
+	xyd.Backend.get():request(xyd.mid.GET_HANG_ITEM, msg)
 
 	if dropItems and #dropItems > 0 then
-		xyd.models.map:getHangItem(2)
+		local msg2 = messages_pb.get_hang_item_req()
+		msg2.item_type = 2
+
+		xyd.Backend.get():request(xyd.mid.GET_HANG_ITEM, msg2)
 
 		num = num + 1
 	end
@@ -285,6 +292,15 @@ end
 
 function GameAssistant:reqHouseAward()
 	xyd.models.house:reqGetAwards()
+end
+
+function GameAssistant:onGetHouseItems(event)
+	xyd.db.misc:setValue({
+		key = "gameAssistant_house_timeStamp",
+		value = xyd.getServerTime()
+	})
+	xyd.models.redMark:setMark(xyd.RedMarkType.HOUSE, false)
+	xyd.models.house:setHangRedPoint(false)
 end
 
 function GameAssistant:reqDailyQuizAward()
@@ -917,6 +933,22 @@ end
 
 function GameAssistant:buyChallengeTiliPet()
 	local ids = xyd.models.petSlot:getPetIDs()
+
+	table.sort(ids, function (a, b)
+		local petA = xyd.models.petSlot:getPetByID(a)
+		local scoreA = petA:getScore()
+		local IDA = petA:getPetID()
+		local petB = xyd.models.petSlot:getPetByID(b)
+		local scoreB = petB:getScore()
+		local IDB = petB:getPetID()
+
+		if scoreA ~= scoreB then
+			return scoreB < scoreA
+		else
+			return IDA < IDB
+		end
+	end)
+
 	local petID = 0
 	local limitLev = xyd.tables.miscTable:getNumber("pet_training_boss_level", "value")
 
@@ -1092,12 +1124,14 @@ function GameAssistant:jungeIfCanDoTab1()
 
 	local timeStamp_campaign = xyd.db.misc:getValue("gameAssistant_campaign_timeStamp") or 0
 
-	if xyd.getServerTime() - tonumber(timeStamp_campaign) > xyd.SECOND * 5 and self.presetData.campaign == true and self.todayHaveDoneData.campaign == false then
+	if xyd.getServerTime() - tonumber(timeStamp_campaign) > xyd.SECOND * 5 and self.presetData.campaign == true then
 		self.ifCanDo.campaign = true
 		flag = true
 	end
 
-	if self.presetData.house == true and self.todayHaveDoneData.house == false then
+	local timeStamp_house = xyd.db.misc:getValue("gameAssistant_house_timeStamp") or 0
+
+	if xyd.getServerTime() - tonumber(timeStamp_house) > xyd.SECOND * 5 and self.presetData.house == true then
 		self.ifCanDo.house = true
 		flag = true
 	end
