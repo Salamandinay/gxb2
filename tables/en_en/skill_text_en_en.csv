@@ -11929,13 +11929,13 @@ She heals 2 allies with the lowest HP for (5% of target’s Maximum HP), grants 
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 20% and lowers the owner’s Attack by 10%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
  This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11950,13 +11950,13 @@ She heals 2 allies with the lowest HP for (7.5% of target’s Maximum HP), grant
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 40% and lowers the owner’s Attack by 15%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
  This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11971,13 +11971,13 @@ She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12029,7 +12029,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 20% and lowers the owner’s Attack by 10%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12044,7 +12044,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 40% and lowers the owner’s Attack by 15%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12059,7 +12059,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12074,7 +12074,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 60% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12088,13 +12088,13 @@ She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 61% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12109,13 +12109,13 @@ She heals 2 allies with the lowest HP for (10% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 62% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12130,13 +12130,13 @@ She heals 2 allies with the lowest HP for (12% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 63% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12151,13 +12151,13 @@ She heals 2 allies with the lowest HP for (12% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 64% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12172,13 +12172,13 @@ She heals 2 allies with the lowest HP for (15% of target’s Maximum HP), grants
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked.
 Increases all damage the owner of this Skill Effect takes by 65% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Luminosity[-][/c]:
- A Skill Effect that cannot be stacked. 
+A Skill Effect that cannot be stacked. 
 The owner of this Skill Effect becomes immune to the next 2 instances of damage dealt to her. 
- This Skill Effect will disappear after the owner takes damage twice. 
- If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
+This Skill Effect will disappear after the owner takes damage twice. 
+If this Skill Effect is cast on a Girl who already has this Skill Effect, it will be reset to its default state. 
 When this Skill Effect disappears or is reset, the owner of this Skill Effect gains a [c][e28002]Magick Barrier[-][/c] with (damage that this Skill Effect immuned) BP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -12239,7 +12239,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 61% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12254,7 +12254,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 62% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12269,7 +12269,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 63% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12284,7 +12284,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 64% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -12299,7 +12299,7 @@ Chizuko will also cover the enemy with highest Attack attribute in [c][e28002]Cr
 [c][e28002]Crane\'s Plume[-][/c]:
 A Skill Effect that cannot be stacked. 
 Increases all damage the owner of this Skill Effect takes by 65% and lowers the owner’s Attack by 20%.
-When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed.
+When the owner is healed, the ally of the caster of this Skill Effect that has the lowest HP will recover HP equivalent to the amount that is healed, and the ally of the owner that has the lowest HP will take damage equivalent to the amount that is healed. This effect can only be triggered for at most 10 times in a round.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.

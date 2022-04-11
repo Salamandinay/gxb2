@@ -1822,7 +1822,7 @@ TOWER_PRACTICE_WIN_TIPS,今回の編成
 HERO_CHALLENGE_TITLE,戦姫試練
 HERO_CHALLENGE_TIPS1,リセット必要無し
 HERO_CHALLENGE_TIPS2,挑戦チケットが足りません、{1}枚が必要です
-HERO_CHALLENGE_TIPS3,今回の戦姫試練をリセットしますか？（今回挑戦中で獲得した戦姫、バフと使い魔は失われます）
+HERO_CHALLENGE_TIPS3,今回の戦姫試練をリセットしますか？\n（今回挑戦中で獲得した戦姫、\nバフと使い魔は失われます）
 HERO_CHALLENGE_TEAM_TITLE,詳細
 HERO_CHALLENGE_TIPS4,報酬を選択してください
 HERO_CHALLENGE_TIPS5,{1}を入手します
@@ -3332,7 +3332,7 @@ CHESS_HPLABEL,SAN値
 CHESS_COIN_NOT_ENOUGH,チェスチケット不足
 CHESS_EXCHANGE_PARTNER,戦姫変換
 CHESS_EXCHANGE_TIPS,選択した戦姫はチェスチケットに変換されます
-CHESS_HP_NOT_ENOUGH,SAN値が不足しています。挑戦をリセットしてください。
+CHESS_HP_NOT_ENOUGH,SAN値が不足しています。\n挑戦をリセットしてください。
 CHESS_FREE_TIMES,無料更新回数：
 CHESS_ALREADY_HAVE,所持：
 CHESS_TEXT01,チェスチケットを消費して戦姫を獲得
@@ -3448,7 +3448,7 @@ NOW_SCORE,現在のPt：
 NOW_AWARD_ACCORDING_TO_SCORE,現Ptのボーナス内容：
 ACADEMY_ASSESSMENT_FIRST_PASS_AWARD,初回クリアボーナス： 
 ACTIVITY_RED_RIDING_HOOD_HELP,1、異なるランクの赤ずきんのプレゼントを購入でき、購入後7日間毎日1回プレゼント内のボーナスを受け取ることができます。|2、購入後、当日のボーナスをすぐに獲得します。ボーナスはメールで送信します。
-ACTIVITY_RED_RIDING_HOOD_TIP,購入しました。メールからお受け取りください。
+ACTIVITY_RED_RIDING_HOOD_TIP,購入しました。\nメールからお受け取りください。
 FAIRY_TALE_MISSION_TIPS1,現在のマップにはチャレンジ可能なマスがありません。他のマップをお試しください。
 FAIRY_TALE_MISSION_TIPS2,現在のマップから退出して、最終マップ「幻境の渦」でミッションをクリアしてください。
 ACTIVITY_FAIRY_TALE_HELP_TITL,支援戦姫を選択
@@ -4870,7 +4870,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,魂石の獲得上限に達しています。本
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,使用中の装備です。このまま選択しますか？
 DAILY_QUIZ_TEXT04,回数がもっと必要な場合は購入数を入力：
 PUB_MISSION_AUTO_TEXT1,一括受取
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,一部の魂器は無条件で使用できます。その他の魂器は、実際に獲得するとアンロックされます。
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,一部の魂器は無条件で使用できます。\nその他の魂器は、実際に獲得するとアンロックされます。
 ENTRANCE_TEST_PARTNER_NOT_READY,チーム内に設定未完了の戦姫がいます。\nこのチームで出撃しますか？
 ENTRANCE_TEST_BATTLE_JUMP_SET,戦姫配置
 ENTRANCE_TEST_PET_EXSKILL,入学テストでは、プレイヤーごとの使い魔の特性コアレベルが反映されます。
@@ -5231,8 +5231,8 @@ FAIR_ARENA_OPEN_BACK_PACK_TIPS2,本イベントでは再表示しない
 PARTNER_CHALLENGE_CHESS_TEXT01,試練
 PARTNER_CHALLENGE_CHESS_TEXT02,試練挑戦
 PARTNER_CHALLENGE_CHESS_TEXT03,強化効果
-PARTNER_CHALLENGE_CHESS_TEXT04,ステージ4-9の試練をクリアすると、本ステージのボスの強化効果を解除できます。
-PARTNER_CHALLENGE_CHESS_TEXT05,試練挑戦をクリアすると、ステージ10のボスの1つの強化効果を解除できます。
+PARTNER_CHALLENGE_CHESS_TEXT04,ステージ4-9の試練をクリアすると、\n本ステージのボスの強化効果を解除できます。
+PARTNER_CHALLENGE_CHESS_TEXT05,試練挑戦をクリアすると、\nステージ10のボスの1つの強化効果を解除できます。
 PARTNER_CHALLENGE_CHESS_TEXT06,{1}個の試練クリア後に解除
 FAIR_ARENA_GET_HOE_TIME_EXPLAIN,カウントダウン終了後に金の鍬を{1}本無料で獲得：
 FAIR_ARENA_GET_HOE_EXPLAIN,探索のたびに、金の鍬が1本消費されます！
@@ -5778,7 +5778,7 @@ SHRINE_HURDLE_TEXT03,難易度因子
 SHRINE_HURDLE_TEXT04,挑戦
 SHRINE_HURDLE_TEXT05,招待状を1枚消費して挑戦しますか？\n試練開始後、戦姫は開始時のステータスと\n状態を維持します。
 SHRINE_HURDLE_TEXT06,おすすめ難易度因子 : {1}
-SHRINE_HURDLE_TEXT07,選択した難易度が少し高いです。続けますか？
+SHRINE_HURDLE_TEXT07,選択した難易度が少し高いです。\n続けますか？
 SHRINE_HURDLE_TEXT08,試練詳細
 SHRINE_HURDLE_TEXT09,ステージ
 SHRINE_HURDLE_TEXT10,スコア :{1}
@@ -6122,8 +6122,8 @@ ACTIVITY_SIMULATION_GACHA_TEXT12,保存\n[size=28]5
 ACTIVITY_SIMULATION_GACHA_TEXT13,ガチャシミュの記録が保存されていません。
 ACTIVITY_SIMULATION_GACHA_TEXT14,交換
 ACTIVITY_SIMULATION_GACHA_TEXT15,保存記録を上書きしますか？上書き後、前の記録は削除されます。
-ACTIVITY_SIMULATION_GACHA_TEXT16,今回のガチャシミュ10連記録を保存しますか？
-ACTIVITY_SIMULATION_GACHA_TEXT17,{1}ダイヤを消費して、{2}を開放しますか？
+ACTIVITY_SIMULATION_GACHA_TEXT16,今回のガチャシミュ10連記録を\n保存しますか？
+ACTIVITY_SIMULATION_GACHA_TEXT17,{1}ダイヤを消費して、\n{2}を開放しますか？
 ACTIVITY_SIMULATION_GACHA_TEXT18,1.1枚の交換コインを消費することで、保存されているガチャシミュ記録1個と交換できます。|2.保存1と保存2は、無料でアンロックされます。|3.保存3、保存4、保存5のスロットは、ダイヤを消費することでアンロックできます。|4.「交換コイン」は、ガチャシミュパックを購入すると獲得できます。
 ACTIVITY_SIMULATION_GACHA_TEXT19,ガチャシミュの記録が保存されていません。
 ACTIVITY_SIMULATION_GACHA_TEXT20,保存記録を選択してください。
@@ -6170,8 +6170,17 @@ ACTIVITY_SIMULATION_GACHA_TEXT29,現在のガチャシミュ10連の結果を保
 ARENA_NEW_SEASON_SERVER_MY_SERVER,（現在のサーバー）
 ARENA_NEW_SEASON_SERVER_TIME_TEXT,クロスサーバー学園リーグ開放カウントダウン：
 SHRINE_HURDLE_TEXT40,試練未開放
+ACTIVITY_EASTER2022_TEXT01,あと{1}個のエッグを割る必要があります。
+ACTIVITY_EASTER2022_TEXT02,ボーナスを受け取ってください。
+ACTIVITY_EASTER2022_TEXT03,全ボーナスを獲得しました。
+ACTIVITY_EASTER2022_TEXT04,スリングショットを使用
+ACTIVITY_EASTER2022_TEXT05,数を入力
+ACTIVITY_EASTER2022_TEXT06,レーザーガンを使用
+ACTIVITY_EASTER2022_TEXT07,エッグ（スペシャル）
+ACTIVITY_EASTER2022_TEXT08,ゴールデンエッグ（ノーマル）
 ACTIVITY_SIMULATION_GACHA_TEXT30,保存リスト
 ACTIVITY_SIMULATION_GACHA_TEXT31,記録を保存
 ACTIVITY_SIMULATION_GACHA_TEXT32,結果を閉じる
 ACTIVITY_SIMULATION_GACHA_TEXT33,ガチャシミュ
 ACTIVITY_SIMULATION_GACHA_TEXT34,ガチャ\nシミュ\nパック
+ACTIVITY_EASTER2022_HELP,1.イベント期間中、1個の「スリングショット」を使用すると、ランダムで1個のエッグを割ることができます。1個の「レーザーガン」を使用すると、ランダムで1列のエッグを割ることができます。エッグを割る度に、左側から同じ数同じ種類のエッグが補充されます。|2.ゴールデンエッグ（ノーマル）を割ると、ランダムでボーナスを獲得します。エッグ（スペシャル）を割ると、エッグの中のボーナスを獲得します。詳細は、画面左側にある虫眼鏡をタップすると確認できます。|3.割ったエッグの数によって、累計ボーナスを貰えます。|4.タスクを完了すると、豪華なボーナスを獲得します。詳細は右上のタスクボタンをタップすると確認できます。|5.イベント終了後、未使用の「スリングショット」と「レーザーガン」は1つあたり20Kと100Kゴールドに自動変換され、メールで配布されます。
