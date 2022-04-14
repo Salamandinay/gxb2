@@ -2082,7 +2082,7 @@ MATCH_NUM5,5ème bataille
 ARENA_ALL_SERVER_MISC,Devenez\nle Champion
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Vous pouvez choisir de soutenir un autre joueur après le début de la manche de qualification. Si le joueur gagne, vous gagnerez le pari, et vice versa.|2. Les joueurs ne peuvent seulement parier sur eux qu’en Finale.|3. Le système décidera automatiquement de la bataille qui est mise sur ce tour. Les batailles avec des joueurs de la même Guilde, du même serveur ou de la même région linguistique seront choisies en premier.|4. Les pièces pouvant être placées dans un pari dépendent du progrès que vous avez atteint dans la Campagne. Le montant correspondra au nombre de pièces que vous pouvez obtenir dans l'Auto-Bataille à l’étape la plus élevée que vous avez atteint dans la campagne en une journée. (Sans compter les bonus VIP et d’abonnement).|5. Si le joueur que vous avez choisi gagne, vous obtiendrez le double du nombre de pièces que vous avez placé dans le pari. Les récompenses seront envoyées par courrier."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,"1. Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché."
-ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison：
+ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison dans：
 IMG_GUIDE_JUMP_GAME_1,"Valeera [c][cc0011]récupérera[-][/c] 1 PV en arrivant sur une plate-forme, lorsqu'elle atteint 0 PV le jeu sera fini."
 IMG_GUIDE_JUMP_GAME_2,Valeera perdra beaucoup de PV si elle touche aux [c][cc0011]pics[-][/c]
 IMG_GUIDE_JUMP_GAME_3,Donne des points [c][cc0011]supplémentaires[-][/c]
@@ -2101,7 +2101,7 @@ DEFFORMATION_2,Défense
 JUMP_GAME_TARGET_EXTRA_POINT,Points requis：{1}
 JUMP_GAME_TARGET_GOLD,Acquis：
 LIBRARY_WATCHER_TEXT08,Débloqué dans {1}
-ARENA_ALL_SERVER_CLOSE_COUNTDOWN,La Saison finira dans ：
+ARENA_ALL_SERVER_CLOSE_COUNTDOWN,Fin de Saison dans :
 ARENA_ALL_SERVER_OPEN,Cette fonctionnalité sera disponible dans：
 ARENA_ALL_SERVER_TEXT_31,La phase - Finalistes n'a pas encore commencé !
 ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
@@ -6251,8 +6251,8 @@ ACTIVITY_RELAY_GIFT_TEXT01,"Afin de débloquer la possibilité d'achat de ce pac
 ACTIVITY_RELAY_GIFT_TEXT02,"Durant l'événement, afin de débloquer la possibilité d'achat du palier suivant, vous devrez faire l'achat du précédent."
 ARENA_NEW_HLEP,"Règles de la Bataille|1. Les récompenses seront envoyées par courrier tous les jours à 21 heures (GMT 0).|2. Chaque Bataille dans l'Arène consommera un Ticket, les Tickets peuvent être achetés avec des Gemmes.|3. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|4. Après la fin de la Bataille, les points des joueurs changeront, le gagnant obtiendra des points et le perdant perdra des points, tous les joueurs sont classés avec ces points.|5. Les points que vous obtiendrez sont basés sur la différence entre vos points actuels et les points de votre ennemi (Attention : Vous obtiendriez 0 point si vos points actuels sont beaucoup plus élevés que ceux de votre ennemi)|6. Vous pouvez consulter les 10 dernières Batailles dans l'historique des Batailles.|7. L'Arène Interserveur est composé d'un certain nombre de Serveurs dépendant du nombre de joueurs participants.|8. La première heure de chaque saison est la période de Trêve.||Récompenses|Les récompenses seront envoyées par rapport à votre classement.|Pour plus de détails regardez【Récompense Quotidienne】."
 ARENA_SETTLEMENT_TIPS,Résultat en cours de calcul...
-ARENA_OPEN_TIPS_TEXT,Fin de Trêve dans :
-ARENA_END_TIPS_TEXT,Fin de Saison dans :
+ARENA_OPEN_TIPS_TEXT,Fin de Trêve dans ：
+ARENA_END_TIPS_TEXT,Fin de Saison dans ：
 ACTIVITY_EASTER2022_TITLE,L'Atelier\nde Pâques
 ARENA_NO_FIGHT,Impossible à combattre pour le moment !
 NEW_TRIAL_BATTLEPASS_TEXT21,Acheter le Pass du Sanctuaire
