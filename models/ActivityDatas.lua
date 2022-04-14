@@ -270,7 +270,9 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_CLOCK] = require("app.models.datas.ActivityClockData"),
 	[xyd.ActivityID.ACTIVITY_RECHARGE_LOTTERY] = require("app.models.datas.ActivityRechargeLotteryData"),
 	[xyd.ActivityID.ACTIVITY_FOOL_CLOCK_GIFTBAG] = require("app.models.datas.ActivityFoolClockGiftbagData"),
-	[xyd.ActivityID.ACTIVITY_SIMULATION_GACHA] = require("app.models.datas.ActivitySimulationGachaData")
+	[xyd.ActivityID.ACTIVITY_EASTER2022] = require("app.models.datas.ActivityEaster2022Data"),
+	[xyd.ActivityID.ACTIVITY_SIMULATION_GACHA] = require("app.models.datas.ActivitySimulationGachaData"),
+	[xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS] = require("app.models.datas.NewTrialBattlepassData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

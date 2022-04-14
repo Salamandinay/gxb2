@@ -393,7 +393,7 @@ NEED_LEV,Nécessite le Niv. {1}
 HANG_TEAM_EMPTY,La formation de l'Auto-Bataille ne peut pas être vide
 REFRESH_GAME,Voulez-vous rafraîchir le jeu ?
 TAVERN_WINDOW,Jobs
-GROUP_BUFF_DES,L'équipe bénéficie de l'aura suivant
+GROUP_BUFF_DES,Bonus de combat
 SETTING_UP_TAP_1,Paramètre
 SETTING_UP_TAP_2,Information
 SETTING_UP_TAP_3,Serveur
@@ -719,7 +719,7 @@ GAMBLE_NO_RECORDS,Vide
 PUB_MISSION_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois, finissez les Jobs requis afin de récupérer les récompenses."
 PUB_MISSION_WITH_STAR,Job {1} étoiles
 CHAT_RECORD_NUM,{1} messages
-TRIAL_ENTER_WINDOW_HELP,"1. Le Sanctuaire sera ouvert pendant 24 heures, après cette période vous devrez attendre 24 heures avant sa réouverture.|2. Les Filles supérieures au niveau 40 peuvent rejoindre le Sanctuaire Secret. Les Filles ne récupèrent pas leurs PV après chaque Bataille.|3. La puissance de l'ennemi sera modifiée en fonction de la puissance de vos 6 Filles les plus puissantes.|4. Les Filles n'ayant plus de PV ne peuvent plus continuer le Sanctuaire Secret.|5. Il y a 9 étapes dans le Sanctuaire Secret. Après avoir terminé l'étape 2, l'étape 4 et l'étape 7, vous pourrez choisir des bénédictions. À l'étape 8, toutes vos Filles pourront récupérer leurs PV. |6. Jusqu'à l'étape 7, vous pouvez combattre autant de fois que vous le pouvez pour compléter les étapes. À l'étape 9, vous n'aurez qu'une seule tentative, les récompenses d'étape 9 vous seront envoyées selon les dégâts que vous aurez infligés. |7. Les Livres Sacrés pourront être échangés contre les objets dans la Boutique du Sanctuaire."
+TRIAL_ENTER_WINDOW_HELP,"1. Le Sanctuaire sera ouvert pendant 47 heures, après cette période vous devrez attendre 1 heure avant sa réouverture.|2. Il y a 2 Sanctuaires : Portail Volcanique et Portail Abyssal sera alternativement ouvert.|3. Les Filles (Niv. 40+) peuvent rejoindre le Sanctuaire (les Filles ne récupèrent pas leurs PV après chaque combat).|4. La puissance de l'ennemi sera modifiée en fonction de la puissance de vos 6 Filles les plus puissantes.|5. Les Filles n'ayant plus de PV ne peuvent plus continuer à combattre dans le Sanctuaire.|6. Il y a 9 étapes dans le Sanctuaire. Après avoir terminé l'étape 1, l'étape 2, l'étape 3, l'étape 5, l'étape 6 et l'étape 7, vous pourrez choisir 1 Bonus de combat. À l'étpa 4, vous pouvez choisir 1 Effet de Guérison. À l'étape 8, toutes vos Filles pourront récupérer 100%% de leurs PV. |7. Jusqu'à l'étape 7, vous pouvez combattre autant de fois que vous le pouvez pour compléter les étapes. À l'étape 9, vous n'aurez qu'une seule chance à défier le Boss, les récompenses d'étape 9 vous seront envoyées selon vos dégâts infligés. |8. Les Livres Sacrés pourront être échangés contre les objets dans la Boutique du Sanctuaire."
 TRIAL_AWARD_WINDOW,Récompense d'étage
 EMOTION_LIMIT_TIME,Attendez {1} secondes pour envoyer un emoji
 TRIAL_TEXT01,Restant :
@@ -1860,8 +1860,8 @@ HERO_CHALLENGE_TIPS1,Réinitialisation non nécessaire
 HERO_CHALLENGE_TIPS2,"Coupon de Défi insuffisant, vous avez besoin de {1} Coupons de Défi"
 HERO_CHALLENGE_TIPS3,"Êtes-vous sûr de vouloir réinitialiser le défi de ce personnage ? (Vous perdrez les Filles, les Bénédictions et les Serviteurs obtenus dans ce défi)"
 HERO_CHALLENGE_TEAM_TITLE,Voir
-HERO_CHALLENGE_TIPS4,Choisissez une des récompenses
-HERO_CHALLENGE_TIPS5,Vous avez obtenu la bénédiction {1} pendant ce défi
+HERO_CHALLENGE_TIPS4,Choisissez une de ces récompenses
+HERO_CHALLENGE_TIPS5,Le Bonus {1} sera déclenché dans les étapes suivantes
 HERO_CHALLENGE_MISC,Découvrez \nleurs secrets
 OTHER_BATTLE,Arène
 HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu’utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d’au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l’étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n’obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l’étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leur Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si leur nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
@@ -1895,7 +1895,7 @@ IMG_GUIDE_CHALLENGE_3,Le [c][cc0011]symbole de la bataille[-][/c]\nmarque l'éta
 IMG_GUIDE_CHALLENGE_4,L'étape suivante sera [c][cc0011]débloquée[-][/c]\naprès avoir passé l'étape actuelle.
 IMG_GUIDE_CHALLENGE_5,Touchez les différents titres afin\nd'entrer dans l'[c][cc0011]Interface d'étape[-][/c]
 IMG_GUIDE_CHALLENGE_6,"Vous obtiendrez des [c][cc0011]Filles[-][/c],\ndes [c][cc0011]Bénédictions[-][/c] ou des [c][cc0011]Serviteurs[-][/c]"
-IMG_GUIDE_CHALLENGE_7,Pour ce défi\nvous avez obtenu\n[c][cc0011]bénédictions[-][/c]
+IMG_GUIDE_CHALLENGE_7,[c][cc0011]Bonus[-][/c] obtenu
 IMG_GUIDE_CHALLENGE_8,Les [c][cc0011]Filles utilisées[-][/c] dans une bataille\nperdu ne seront plus utilisable
 IMG_GUIDE_CHALLENGE_9,Vous ne pouvez qu'utiliser\nles Filles et les Serviteurs\nobtenus dans le [c][cc0011]Défi actuel[-][/c]
 WISHING_POOL_GIFTBAG_TEXT02,Terminé ({1}/{2})
@@ -2690,12 +2690,12 @@ ACTIVITY_NEW_TRIAL_SHOP_WINDOW,Objet Acquis
 NEW_TRIAL_RESET_TIPS,"Tous les jours à 00 : 00 (UTC/GMT 0) vous obtiendrez 1 chance de réinitialisation. Après réinitialisation, la progression de l'Événement sera réinitialisée à l'étape 1. Vous pouvez recommencer les étapes pour obtenir à nouveaux des récompenses. La chance de réinitialisation ne peut pas être accumulée."
 NEW_TRIAL_RESET_TIMES,Chance de reset：{1}
 NEW_TRIAL_CAN_NOT_RESET,Ne peut être réinitialisé
-ACTIVITY_NEW_TRIAL_BLESS_WINDOW,Bénédiction
-NEW_TRIAL_BLESS_TIPS,Bénédiction obtenue de cette bataille
+ACTIVITY_NEW_TRIAL_BLESS_WINDOW,Bonus de combat
+NEW_TRIAL_BLESS_TIPS,Bonus obtenu(s)
 NEW_TRIAL_LEVEL_TITLE,Étape-{1}
 NEW_TRIAL_START,Commencer
 GO_AWAY,Quitter
-NEW_TRIAL_NO_BLESS_TIPS,Aucune bénédiction
+NEW_TRIAL_NO_BLESS_TIPS,Aucun Bonus
 ACTIVITY_FACTORY_CHOOSE_PRODUCT,Sélectionner
 ACTIVITY_FACTORY_HELP,"Durant l'Événement Incroyables Desserts, vous pouvez confectionner différentes variétés de desserts en utilisant de la farine magique et obtenir les récompenses correspondantes. |2. Après avoir sélectionné le dessert, choisissez la récompense que vous souhaitez obtenir et commencez la confection. |3. Après la fin de l'Événement, la farine magique non utilisée sera automatiquement convertie en Pièces d'or et envoyées par courrier."
 ACTIVITY_FACTORY_CONFIRM,Confirmer la Confection
@@ -3987,7 +3987,7 @@ GAMBLE_BUY_POINTS_TEXT01,Aller au Bonus de Distributeur
 GAMBLE_BUY_POINTS_TEXT02,Êtes-vous sûr de lancer 20 fois le Distributeur en utilisant Ticket du Distributeur *16 ?
 GAMBLE_BUY_POINTS_TEXT03,Êtes-vous sûr de lancer 50 fois le Distributeur en utilisant Ticket du Distributeur *40 ?
 GAMBLE_BUY_POINTS_TEXT04,Fois
-NEW_TRIAL_BUFF_TIPS,Veuillez choisir une Bénédiction !
+NEW_TRIAL_BUFF_TIPS,Veuillez choisir un Bonus~
 DUNGEON_SHOP_TIPS_TEXT01,Voulez-vous dépenser {1} Gemmes pour acheter {3}*{2}?
 DUNGEON_SHOP_TIPS_TEXT02,Voulez-vous dépenser {1} Pièce d'Or pour acheter {3}*{2}?
 MAIL_WEDDING_TITLE,Courrier de {1}
@@ -5949,7 +5949,7 @@ SHRINE_HURDLE_TEXT38,PV actuels de vos Filles
 ACTIVITY_LAFULI_CASTLE_TEXT13,La limite a été atteinte !
 ACTIVITY_PROMOTION_LADDER_TEXT01,"1. Durant cet événement, échangez une des Filles Matérielles proposées contre la nouvelle Fille de la semaine en utilisant des Certificats de Promotion.|2. Pour vos premiers échanges, utilisez 10 Certificats de Promotion pour échanger 1 copie d'une Fille 5 étoiles. Après chaque 9 échanges de copie de Fille 5 étoiles complétés, le nombre de Certificat de Promotion nécessaire pour le prochain échange sera augmenté de 5.|3. Les Étoiles, le Niveau, le Grade, les Équipements, le Cristal, l'Antiquité et le Niveau de Libération de votre Fille Matérielle seront transférés sur la Fille obtenue via l'échange de cet événement (Attention : la Faveur, le Serment ne seront pas transférés).|4. Condition d'échange|Si vous échangez une Fille 6/7/8 étoiles, cet échange sera considéré comme 2 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 9 étoiles, cet échange sera considéré comme 3 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 10 étoiles, cet échange sera considéré comme 5 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 11 étoiles, cet échange sera considéré comme 6 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 12/13 étoiles, cet échange sera considéré comme 7 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 14 étoiles, cet échange sera considéré comme 8 copies de Fille 5 étoiles échangées. |Si vous échangez une Fille 15 étoiles, cet échange sera considéré comme 9 copies de Fille 5 étoiles échangées.|5. À chaque nouvelle saison, les Filles Matérielles à échanger seront différentes, et seront généralement les 5 dernières Filles sorties.|6. Les Filles obtenues via l'échange de cet événement ne seront pas comptabilisées dans l'événement - Capsule de Nouvelle Fille.|7. Moyen d'obtention de Certificat de Promotion : Promotion Anticipée.|8. Les Certificats de Promotion non-utilisés seront conservés jusqu'à la prochaine saison."
 ACTIVITY_PROMOTION_LADDER_TEXT02,Détails
-ACTIVITY_PROMOTION_LADDER_TEXT03,Filles Matérielles à échanger
+ACTIVITY_PROMOTION_LADDER_TEXT03,Filles Matérielles
 ACTIVITY_PROMOTION_LADDER_TEXT04,Nombre de Certificat Promotion nécessaire
 ACTIVITY_PROMOTION_LADDER_TEXT05,Le nombre de Certificat de Promotion nécessaire passera\nà {2} après avoir échangé {1} copie(s) de Fille 5 étoiles.
 ACTIVITY_PROMOTION_LADDER_TEXT06,Veuillez choisir une Fille Matérielle à échanger
@@ -6192,43 +6192,67 @@ ACTIVITY_SIMULATION_GACHA_TEXT25,Résultat IV
 ACTIVITY_SIMULATION_GACHA_TEXT26,Résultat V
 NEW_TRIAL_RESET_TEXT01,Sanctuaire en rénovation...
 NEW_TRIAL_RESET_TEXT02,"Sanctuaire en rénovation, accessible dans：[c][b1ff00]{1}[-][/c]"
-NEW_TRIAL_VOLCAN_SECRET,火山秘境
-NEW_TRIAL_SEA_SECRET,深海秘境
-NEW_TRIAL_MAIN_WINDOW_TEXT01,{1}開啟中
-NEW_TRIAL_MAIN_WINDOW_TEXT02,秘境通行證
-NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,請選擇獎勵
-NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,請選擇本期通行證的獎勵主題，每期通行證只能選擇領取1個獎勵主題。
-NEW_TRIAL_BATTLEPASS_TEXT01,可選獎勵
-NEW_TRIAL_BATTLEPASS_TEXT02,秘境挑戰點
-NEW_TRIAL_BATTLEPASS_TEXT03,購買通行證
-NEW_TRIAL_BATTLEPASS_TEXT04,等級
-NEW_TRIAL_BATTLEPASS_TEXT05,普通
-NEW_TRIAL_BATTLEPASS_TEXT06,通行證
-NEW_TRIAL_BATTLEPASS_TEXT07,領取
-NEW_TRIAL_BATTLEPASS_TEXT08,前往挑戰
-NEW_TRIAL_BATTLEPASS_TEXT09,一鍵領取
-NEW_TRIAL_BATTLEPASS_TEXT10,繼續領取
-NEW_TRIAL_BATTLEPASS_HELP,幫助文本
-NEW_TRIAL_BATTLEPASS_TEXT11,请選擇本期獎勵主題
-NEW_TRIAL_BATTLEPASS_TEXT12,可購買的秘境挑戰點已達上線
-NEW_TRIAL_BATTLEPASS_TEXT13,是否確認領取{1}作為當期獎勵主題，領取後，本期通行證將無法更換獎勵主題。
-NEW_TRIAL_BATTLEPASS_TEXT14,解鎖通行證後，可立即領取的獎勵
-NEW_TRIAL_BATTLEPASS_TEXT15,解鎖通行證後，在活動時間內獲取秘境挑戰點，可累積獲得以下獎勵
-ARENA_HELP_TIPS_ITEM_TEXT1,新版校園聯賽開啟！更加刺激的對抗襲來
-ARENA_HELP_TIPS_ITEM_TEXT2,跨服對抗，每一期的對抗對手都不同
-ARENA_HELP_TIPS_ITEM_TEXT3,每個服第一名的玩家會得到展示
-ARENA_HELP_TIPS_ITEM_TEXT4,獎勵更加豐富
+NEW_TRIAL_VOLCAN_SECRET,Portail Volcanique
+NEW_TRIAL_SEA_SECRET,Portail Abyssal
+NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} est ouvert !
+NEW_TRIAL_MAIN_WINDOW_TEXT02,Pass\ndu Sanctuaire
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,Récompense Principale
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Sélectionnez votre Récompense Principale de cette saison. (La seule et même récompense pour la saison actuelle)
+NEW_TRIAL_BATTLEPASS_TEXT01,Choisissez une de ces récompenses
+NEW_TRIAL_BATTLEPASS_TEXT02,Point du Sanctuaire
+NEW_TRIAL_BATTLEPASS_TEXT03,Acheter
+NEW_TRIAL_BATTLEPASS_TEXT04,Points
+NEW_TRIAL_BATTLEPASS_TEXT05,Récompense\nBasique
+NEW_TRIAL_BATTLEPASS_TEXT06,Récompense\ndu Pass
+NEW_TRIAL_BATTLEPASS_TEXT07,Collecter
+NEW_TRIAL_BATTLEPASS_TEXT08,Aller à\nSancutaire
+NEW_TRIAL_BATTLEPASS_TEXT09,Collecter
+NEW_TRIAL_BATTLEPASS_TEXT10,Plus de\nrécompenses !
+NEW_TRIAL_BATTLEPASS_HELP,"1. Le Pass du Sanctuaire sera disponible pendant 30 jours et sera réinitialisé tous les mois.|2. Durant la saison actuelle, obtenez un maximum de Points du Sanctuaire pour collecter un maximum de récompenses.|3. En passant les Étapes 1, 2, 5 et 6 du Sanctuaire, vous obtiendrez 25 Points du Sanctuaire. En passant les Étapes 3 et 7 vous obtiendrez 50 Points du Sanctuaire. À la dernière Étape du Sanctuaire, chaque fois que vous recevez une récompense, vous obtiendrez 10 Points du Sanctuaire.|4. Durant la saison actuelle, vous pourrez choisir votre Récompense Principale parmi 5 récompenses différentes.|5. Veuillez noter que vous ne pourrez plus changer votre récompense principale choisie après avoir collecté les récompenses."
+NEW_TRIAL_BATTLEPASS_TEXT11,Sélectionnez une Récompense Principale à obtenir durant cette saison
+NEW_TRIAL_BATTLEPASS_TEXT12,Limite d'achat atteinte !
+NEW_TRIAL_BATTLEPASS_TEXT13,"Voulez-vous obtenir {1} comme Récompense Principale de cette saison ? (après avoir obtenu cette récompense, vous ne pourrez plus changer la Récompense Principale.)"
+NEW_TRIAL_BATTLEPASS_TEXT14,Obtention Immédiate après l'achat :
+NEW_TRIAL_BATTLEPASS_TEXT15,Achetez le Pass du Sanctuaire et collectez des Points pour obtenir les récompenses suivantes :
+ARENA_HELP_TIPS_ITEM_TEXT1,L'Arène Interserveur est disponible !
+ARENA_HELP_TIPS_ITEM_TEXT2,Affrontez des joueurs de différents serveurs.
+ARENA_HELP_TIPS_ITEM_TEXT3,Le Champion de chaque Serveur s'affichera ici~
+ARENA_HELP_TIPS_ITEM_TEXT4,Plein de récompenses à obtenir~
 GAME_ASSISTANT_TEXT101,Butin de Campagne
 GAME_ASSISTANT_TEXT102,Ressources du Dortoir
-ARENA_NEW_SEASON_SERVER_RANK_WINDOW,伺服器範圍
+ARENA_NEW_SEASON_SERVER_RANK_WINDOW,Champions des Serveurs
 ACTIVITY_SIMULATION_GACHA_TEXT27,Simulation x10
 ACTIVITY_SIMULATION_GACHA_TEXT28,Voulez-vous utiliser 1 Jeton de Simulation pour échanger les Filles du {1} ?
 ACTIVITY_SIMULATION_GACHA_TEXT29,Résultat actuel sauvegardé !
-ARENA_NEW_SEASON_SERVER_MY_SERVER,(所在服)
-ARENA_NEW_SEASON_SERVER_TIME_TEXT,跨服校園聯賽開啟倒計時：
+ARENA_NEW_SEASON_SERVER_MY_SERVER,(Mon Serveur)
+ARENA_NEW_SEASON_SERVER_TIME_TEXT,Arène Interserveur commence dans：
 SHRINE_HURDLE_TEXT40,Le Dojo n'est pas encore ouvert
-ACTIVITY_SIMULATION_GACHA_TEXT30,Résultats de Simulation
-ACTIVITY_SIMULATION_GACHA_TEXT31,Résultats de Simulation
+ACTIVITY_EASTER2022_TEXT01,Brisez encore\n[c][82ceff]{1}[-][/c] Œuf(s)
+ACTIVITY_EASTER2022_TEXT02,Collecter
+ACTIVITY_EASTER2022_TEXT03,Collecté
+ACTIVITY_EASTER2022_TEXT04,Lance-pierre
+ACTIVITY_EASTER2022_TEXT05,Entrez la quantité que vous voulez utiliser\n(le système s'arrêtera lorsque vous briserez un Œuf Spécial)
+ACTIVITY_EASTER2022_TEXT06,Pistolet
+ACTIVITY_EASTER2022_TEXT07,Œuf Spécial
+ACTIVITY_EASTER2022_TEXT08,Œuf Normal
+ACTIVITY_SIMULATION_GACHA_TEXT30,Résultats
+ACTIVITY_SIMULATION_GACHA_TEXT31,Sauvegarder
 ACTIVITY_SIMULATION_GACHA_TEXT32,Quitter
 ACTIVITY_SIMULATION_GACHA_TEXT33,Capsu-\nSimulator
-ACTIVITY_SIMULATION_GACHA_TEXT34,Pack du\nCapsu-Simulator
+ACTIVITY_SIMULATION_GACHA_TEXT34,Pack
+ACTIVITY_EASTER2022_HELP,"1. Durant cet événement, consommez 1 Lance-pierre pour briser aléatoirement 1 Œuf. Consommez 1 Pistolet pour briser une rangée d’Œufs. Chaque fois qu’une certaine quantité Œuf est brisée, cette même quantité du même type d’Œuf sera remplacée à partir de la gauche.|2. Après avoir brisé un Œuf Normal, vous recevrez une récompense aléatoire. Après avoir brisé un Œuf Spécial, vous recevrez une récompense spéciale. Veuillez appuyer sur la loupe en haut à gauche pour en savoir plus.|3. En fonction du nombre d’Œuf brisé, vous recevrez également des récompenses supplémentaires.|4. Retrouvez des tâches à complétez en haut à droite de l’interface pour obtenir des récompenses."
+NEW_TRIAL_BATTLEPASS_TEXT16,Récompense Principale
+NEW_TRIAL_BATTLEPASS_TEXT17,Sélectionnez une Récompense Principale à obtenir durant cette saison
+NEW_TRIAL_BATTLEPASS_TEXT18,Points du Sanctuaire achetables : {1}
+NEW_TRIAL_BATTLEPASS_TEXT19,Acheter des Points du Sanctuaire
+NEW_TRIAL_BATTLEPASS_TEXT20,Pas assez de Points du Sanctuaire achetables...
+ACTIVITY_EASTER2022_TEXT09,Briser {1} Œufs
+ACTIVITY_RELAY_GIFT_TEXT01,"Afin de débloquer la possibilité d'achat de ce pack, vous devrez faire l'achat du précédent."
+ACTIVITY_RELAY_GIFT_TEXT02,"Durant l'événement, afin de débloquer la possibilité d'achat du palier suivant, vous devrez faire l'achat du précédent."
+ARENA_NEW_HLEP,"Règles de la Bataille|1. Les récompenses seront envoyées par courrier tous les jours à 21 heures (GMT 0).|2. Chaque Bataille dans l'Arène consommera un Ticket, les Tickets peuvent être achetés avec des Gemmes.|3. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|4. Après la fin de la Bataille, les points des joueurs changeront, le gagnant obtiendra des points et le perdant perdra des points, tous les joueurs sont classés avec ces points.|5. Les points que vous obtiendrez sont basés sur la différence entre vos points actuels et les points de votre ennemi (Attention : Vous obtiendriez 0 point si vos points actuels sont beaucoup plus élevés que ceux de votre ennemi)|6. Vous pouvez consulter les 10 dernières Batailles dans l'historique des Batailles.|7. L'Arène Interserveur est composé d'un certain nombre de Serveurs dépendant du nombre de joueurs participants.|8. La première heure de chaque saison est la période de Trêve.||Récompenses|Les récompenses seront envoyées par rapport à votre classement.|Pour plus de détails regardez【Récompense Quotidienne】."
+ARENA_SETTLEMENT_TIPS,Résultat en cours de calcul...
+ARENA_OPEN_TIPS_TEXT,Fin de Trêve dans :
+ARENA_END_TIPS_TEXT,Fin de Saison dans :
+ACTIVITY_EASTER2022_TITLE,L'Atelier\nde Pâques
+ARENA_NO_FIGHT,Impossible à combattre pour le moment !
+NEW_TRIAL_BATTLEPASS_TEXT21,Acheter le Pass du Sanctuaire

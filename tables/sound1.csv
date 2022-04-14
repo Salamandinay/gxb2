@@ -176,6 +176,9 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1174,battle_sound_web/sound_xigema_skill,5,1,1,0,1,,50,1,,1
 1175,battle_sound_web/sound_qianhezi_attack,1,1,1,0,1,,50,1,,1
 1176,battle_sound_web/sound_qianhezi_skill,5,1,1,0,1,,50,1,,1
+1177,battle_sound_web/sound_seaboss_attack1,1,1,1,0,1,,50,1,,1
+1178,battle_sound_web/sound_seaboss_attack2,2,1,1,0,1,,50,1,,1
+1179,battle_sound_web/sound_seaboss_skill,3,1,1,0,1,,50,1,,1
 2001,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
 2002,ui_sound/battle_bg_music_1,21,0,,0,2,-1,30,0,,
 2003,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
@@ -4997,6 +5000,3 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 530142001,partner_sound/53014_web/530142001,12,1,0,0,1,0,70,1,0.2,
 530142101,partner_sound/53014_web/530142101,6,1,0,0,1,0,70,1,0.2,
 530142201,partner_sound/53014_web/530142201,5,1,0,0,1,0,70,1,0.2,
-530142301,partner_sound/53014_web/530142301,5,1,0,0,1,0,70,1,0.2,
-530142401,partner_sound/53014_web/530142401,6,1,0,0,1,0,70,1,0.2,
-530142501,partner_sound/53014_web/530142501,5,1,0,0,1,0,70,1,0.2,

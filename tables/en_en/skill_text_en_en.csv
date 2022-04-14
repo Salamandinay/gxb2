@@ -2963,7 +2963,11 @@ allows Chaos Lord to Counterattack after taking damage, the Counterattack will B
 A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
 [c][01a310]Burn:[-][/c]
 A damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-200000504,Chaos Lord,Thermal Power,"Chaos Lord gains Attribute Boost from every Burning enemy\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+200000504,Chaos Lord,Thermal Power,"
+At the end of the Round, Chaos Lord gains Attribute Boost from every Burning enemy, and cleanses 3 Debuffs from self.
+[c][01a310]Burn:[-][/c]
+A Damage Over Time effect. 
+Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 200000505,Chaos Lord,Immortality,Chaos Lord will Revive and gains Attribute Boost once got defeated.
 5101200,Fenrir,Basic Attack,Basic Attack
 65101900,Fenrir,Basic Attack,Basic Attack
@@ -12304,3 +12308,41 @@ When the owner is healed, the ally of the caster of this Skill Effect that has t
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
 Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+2000030000,Sea Chimera,Basic Attack,"
+Sea Chimera deals damage based on Attack to 1 random enemy and afflicts them with [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds.
+
+[c][01a310]Liquid Poison[-][/c]:
+A Damage Over Time effect that can stack.
+Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round. If damage dealt is lower than 500% of the caster\'s Attack, then this effect will deal damage equivalent to 500% of the caster\'s Attack."
+574,Sea Chimera,Basic Attack,"
+Sea Chimera\'s Basic Attack changed to dealing damage based on Attack to 3 random enemies and afflicting them with [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds.
+
+[c][01a310]Liquid Poison[-][/c]:
+A Damage Over Time effect that can stack.
+Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster\'s Attack, then this effect will deal damage equivalent to 50% of the caster\'s Attack."
+2000030010,Sea Chimera,Aqua Cannon,"
+Sea Chimera deals damage based on Attack to all enemies, and has a chance to [c][e28002]Freeze[-][/c] the enemy with highest Attack for 2 Rounds.
+
+[c][e28002]Freeze[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+2000030020,Sea Chimera,Never-ending Threat,Sea Chimera will Revive and gain Attribute Boosts whenever it is defeated.
+2000030030,Sea Chimera,Gem of the Seas,"
+At the start of the battle, Sea Chimera gains a [c][e28002]Magick Barrier[-][/c] with (50% of self HP) BP.
+At the start of every Round, Sea Chimera will gain the same number of [c][e28002]Magick Barriers[-][/c] as the total number of Debuffs that the enemies have. Each [c][e28002]Magick Barrier[-][/c] has (a certain percentage of Sea Chimera\'s Maximum HP) BP.
+After dealing a Basic Attack or releasing an Active Skill, the [c][e28002]Magick Barrier[-][/c] will disappear.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+2000030040,Sea Chimera,Ancient Trident,"
+At the end of each Round, Sea Chimera afflicts [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds to 3 enemies with lowest HP and cleanses 3 random Debuffs from itself.
+If damage is dealt to enemies when Sea Chimera deals a Basic Attack, releases an Active Skill or afflicts a Damage Over Time effect, it will [c][e28002]Suffocate[-][/c] the targets for 2 Rounds.
+
+[c][e28002]Suffocate[-][/c]:
+A Skill Effect that can stack.
+The owner of this Skill Effect will have its Heal Received lowered by 50%, Energy gain lowered by 50%, and take 100% more damage from Damage Over Time effects.
+
+[c][01a310]Liquid Poison[-][/c]:
+A Damage Over Time effect that can stack.
+Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster\'s Attack, then this effect will deal damage equivalent to 50% of the caster\'s Attack."

@@ -1,16 +1,25 @@
 id,name,desc
-1,Feuermachete,Der Angriff aller Verbündete wird um 10% erhöht.
-2,Zutiefst schmerzlich,"Zu Beginn des Kampfs erleiden alle Gegner 3 Runden lang zufälligen Schaden. Die verursachten Blut-, Gift- und Brennschäden werden um 25% erhöht."
-3,Doppelklinge,Der durch Standard Angriff verursachte Schaden wird um 100% erhöht. Nach jedem Standarf Angriff gibt es eine 50%ige Chance den Standard Angriff nochmal freizusetzen.
-4,Volles Potenzial,Der Krit. und der Krit. Schaden aller Verbündete werden um 25% erhöht.
-5,Schura Arkanum,"Wenn eine Verbündete Schaden erleidet, gibt es eine 75%ige Chance zu einem Gegenangriff (100% ihres Angriffs), muss treffen."
-6,Überwachsen,Die Maximale LP aller Verbündete wird um 20% erhöht.
-7,Bewölkter Sturm,"LP-Regeneration aller Verbündete wird um 25% erhöht, LP-Regeneration aller Gegner wird um 75% verringert; Jedesmal wenn ein Mädchen geheilt wird, wird dem Gegner mit den höchsten LP ein Schaden (von 5% seiner LP, nicht höher als 80000) zugefügt, muss treffen."
-8,Verbundenheit,"Alle Verbündeten erhalten eine Schadensreduzierung von 25%; Wenn eine Verbündete Schaden erleidet, gibt es eine 50%ige Chance den Schaden auf alle Verbündeten zu verteilen."
-9,Immunität,Die Immunität gegen Kontrolle aller Verbündete wird um 40% erhöht.
-10,Furchtloser Schild,Die Blockrate aller Verbündete wird um 30% erhöht.
-11,Ansturm,Die Verbündeten der Front erhöhen ihre Rüstung um 25% und ihre Energieerholung bei Verletzung um 100%.
-12,Energiestrom,"Nachdem das Mädchen eine Fertigkeit freigesetzt hat, gibt es eine 25%ige Chance sie nochmal freizusetzen."
-13,Böse Zeremonie,Zu Beginn des Kampfs erhalten alle Verbündeten 90% LP und 200 Energie.
-14,Blutsaugen,"Wenn die Verbündeten Schaden verursachen, erhalten sie eine gewisse LP (15% des verursachten Schadens)."
-15,Heiliger Schutz,"Immun gegen tödlichen Schaden (kann während eines Kampfs nur einmal verwendet werden, kann gestapelt werden)."
+1,Zutiefst schmerzlich,"Zu Beginn des Kampfs erleiden alle Gegner 3 Runden lang zufälligen Schaden. Die kontinuierlichen Schäden (Blut-, Gift- und Brennschaden), die alle Gegner erleiden, werden um 25% erhöht."
+2,Volles Potenzial,Der Krit. und der Krit. Schaden aller Verbündete werden um 25% erhöht.
+3,Schura Arkanum,"Wenn eine Verbündete Schaden erleidet, gibt es eine 75%ige Chance zu einem Gegenangriff (100% ihres Angriffs), muss treffen."
+4,Siegesfreude,"Jedesmal wenn du einen Kampf gewonnen hast, wird der Angriff deiner Mädchen um 5% erhöht, was bis zum Ende dieser Saison des Buchheiligtums stapelbar ist."
+5,Einziger Patient,Erhöht zu Beginn jedes Kampfes die HP einer Verbündeten mit den niedrigsten HP um 40%.
+6,Geteilte Segnung,Erhöht zu Beginn jedes Kampfes die HP der 2 Verbündeten mit den niedrigsten HP um 20%.
+7,Überwachsen,Die max. HP aller Mädchen deines Teams werden um 20% erhöht.
+8,Verrückter Töter,"Jedesmal wenn ein Gegner getötet wird, wird die Energie des Angreifers um 100 erhöht und der Skill-Bonusschaden deiner Mädchen werden um 100% erhöht."
+9,Doppelklinge,"Erhöht den Schaden durch Standardangriff deiner Mädchen um 100%. Deine Mädchen haben nach jedem Standardangriff eine 50%ige Wahrscheinlichkeit, Standardangriff nochmal durchzuführen."
+10,Bewölkter Sturm,"Erhöht die erhaltene Heilung deiner Mädchen um 25% und reduziert die aller Gegner um 75%. Jedesmal wenn ein Mädchen (Gegner) geheilt wird, erleidet der Gegner mit den höchsten HP sicher einen Schaden in Höhe von 5% seiner max. HP (nicht höher als 80.000)."
+11,Volle Feuerkraft,"Erhöht zu Beginn des Kampfes den Schaden, den ein zufälliger Gegner erleidet, 4 Runden lang um 60%. Ist dieser Gegner während der 4 Runden gestorben, wird dieser Debuff von einem anderen zufälligen Gegner übernommen."
+12,Präziser Schlag,Fügt den Gegnern der schwächeren Fraktion (Fraktionsrivalität betroffen) einen zusätzlichen Schaden in Höhe von 60% des AW zu.
+13,Lebensquelle,"Erhöht die HP der 3 Mädchen, deren HP am Niedrigsten liegen, um 50% ihrer max. HP."
+14,Heilende Stimme,"Belebe eine zufällige gestorbene Verbündete wieder und erhöht ihre HP auf 100%. Gibt es keine gestorbenen Verbündeten, wird die HP der Verbündeten mit den niedrigsten HP auf 100% erhöht."
+15,Immunität,Erhöht die Kontrollimmunitätsrate deiner Mädchen um 40%.
+16,Furchtloser Schild,Erhöht die Blockade deiner Mädchen um 30%.
+17,Ansturm,"Erhöht die Rüstung deiner Mädchen der Frontline um 25%. Erhöht die Energie, die sie erhalten werden, wenn sie angegriffen werden, um 100%."
+18,Präziser Schlag,Erhöht die Präsition und den Rüstungsbruch deiner Mädchen der Backline jeweilsum 60% und 30%.
+19,Kette der Leere,Erhöht die Extra Kontrollrate deiner Mädchen um 60%.
+20,Starker Kampfwille,Erhöht die Verminderung der kontinuierlichen Schäden deiner Mädchen um 20%.
+21,Energiestrom,"Nachdem dein Mädchen Fertigkeit durchgeführt hat, hat sie eine 25%ige Wahrscheinlichkeit, die Fertigkeit nochmal durchzuführen."
+22,Böse Zeremonie,Zu Beginn des Kampfes haben deine Mädchen 200 Energie und ihre HP werden bei 90% eingestellt.
+23,Blutsaugen,"Hat dein Mädchen den Gegner Schaden zugefügt, werden ihre HP um 15% des zugefügten Schadens erhöht."
+24,Heiliger Schutz,Immun gegen tödlichen Schaden (Kann während eines Kampfes nur einmal ausgelöst werden. Kann gestapelt werden.)

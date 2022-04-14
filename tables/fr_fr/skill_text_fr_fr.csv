@@ -3007,7 +3007,7 @@ Lorsqu\'il est attaqué, il est capable de contre-attaquer, infligeant des dég�
 La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
-200000504,Seigneur du Chaos,Zèle,"À la fin de chaque tour, le Golem de Lave obtiendra des bonus d'attributs pour chaque ennemi brûlé.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+200000504,Seigneur du Chaos,Zèle,"À la fin de chaque tour, le Golem de Lave enlève ses 3 Effets Négatifs pour chaque ennemi brûlé.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 200000505,Seigneur du Chaos,Immortalité,Ressuscite immédiatement et renforce ses capacités après chaque résurrection.
 5101200,Fenrir,Attaque Basique,Attaque Basique
 65101900,Fenrir,Attaque Basique,Attaque Basique
@@ -8862,29 +8862,29 @@ Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou s
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 20%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 50% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 50% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 65501904,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 30%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 70% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 70% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 65501914,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 60%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 75500904,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 60%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 755009011,Frexie,Pénombre,"
 Mes démons, montrez-moi votre vraie puissance ! Inflige 408% d\'Attaque à 2 ennemis aléatoires, en infligeant également des dégâts supplémentaires équivalent à 20% de leurs PV Max (1500% de la valeur d\'Attaque de Frexie au maximum) et les marque avec [c][e28002]Étoile Obscure[-][/c].
 
@@ -8945,36 +8945,36 @@ Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou s
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 62%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 755009042,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour et a 30% de chance de prolonger [c][e28002]Bénédiction du Démon[-][/c] d\'un tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 64%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 755009043,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour et a 40% de chance de prolonger [c][e28002]Bénédiction du Démon[-][/c] d\'un tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 66%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 755009044,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour et a 55% de chance de prolonger [c][e28002]Bénédiction du Démon[-][/c] d\'un tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 68%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 755009045,Frexie,Tourment du Démon,"
 Je reviendrai toujours ! Chaque fois que Frexie lance sa Compétence Active ou son Attaque Basique, elle obtient [c][e28002]Bénédiction du Démon[-][/c] pendant 1 tour et a 70% de chance de prolonger [c][e28002]Bénédiction du Démon[-][/c] d\'un tour. Au début et à la fin de chaque tour, elle met l\'ennemi ayant le moins de PV en état [c][e28002]Prison Infernale[-][/c] pendant 2 tours.
 
 [c][e28002]Bénédiction du Démon (Effet de Compétence) : [-][/c]
 Augmente son Esquive de 70%.
-[c][e28002]Prison Infernale (Effet de Compétence) :[-][/c]
-Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état. (Non cumulable)"
+[c][e28002]Prison Infernale (Effet de Compétence, non-cumulable) :[-][/c]
+Réduit de 100% l\'Armure, la Résistance aux Dégâts, la Résistance Totale, le Blocage et l\'Esquive de l\'ennemi dans cet état."
 5600800,Angélina,Attaque Basique,Attaque Basique
 65601800,Angélina,Attaque Basique,Attaque Basique
 75600800,Angélina,Attaque Basique,Attaque Basique
@@ -9335,25 +9335,25 @@ Les cibles ne peuvent pas effectuer d\'Attaque Basique."
 5101604,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 10% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (10% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 65102304,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]; si ce meurtrier est vaincu, cette compétence n\'aura aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 20% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (20% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 65102314,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 30% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (30% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 75101604,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 30% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (30% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 752017011,Monica,Temps Inversé,"
@@ -9499,31 +9499,31 @@ Les cibles ne peuvent pas effectuer d\'Attaque Basique."
 751016041,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 30,5% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (30,5% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 751016042,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 31% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (31% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 751016043,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 31,5% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (31,5% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 751016044,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 32% de ses PV Max (2500% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (32% de leurs PV Max, 2500% de la valeur d\'Attaque de Diana au maximum)"
 751016045,Diana,Appel de la Démence,"
 Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-][/c]. Si ce meurtrier est vaincu, cette compétence n\'a aucun effet.
 
-[c][e28002]Cauchemar： (Effet de Compétence, non cumulable)[-][/c]
+[c][e28002]Cauchemar (Effet de Compétence, non cumulable) :[-][/c]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 33% de ses PV Max (3000% de la valeur d\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (33% de leurs PV Max, 3000% de la valeur d\'Attaque de Diana au maximum)"
 501105,Îles Célestes,Cauchemar,Diana marque son ennemi ayant l'Attaque la plus élevée avec Cauchemar tous les 4 tours.
@@ -9554,18 +9554,18 @@ Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (33% d
 5301601,Ruben,Explosion d'Éther,"
 Inflige 120% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (25% des PV Max de Ruben). Augmente de 10% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 30 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 65302301,Ruben,Explosion d'Éther,"
 Inflige 160% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (35% des PV Max de Ruben). Augmente de 20% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 50 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 75301601,Ruben,Explosion d'Éther,"
 Inflige 240% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (50% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 5301602,Ruben,Maître Mécanique,"Augmente les PV de 20%, la Résistance aux Dégâts de 10%, les Soins Reçus de 15% et la Vitesse de 20."
 65302302,Ruben,Maître Mécanique,"Augmente les PV de 30%, la Résistance aux Dégâts de 20%, les Soins Reçus de 20% et la Vitesse de 40."
 65302312,Ruben,Maître Mécanique,"Augmente les PV de 40%, la Résistance aux Dégâts de 30%, les Soins Reçus de 25% et la Vitesse de 60."
@@ -9579,62 +9579,62 @@ Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour,
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2500% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (30% des PV Max de cette alliée), augmente son Énergie de 30 et son Immunité de 20% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 30% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 10% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 30% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 10%."
 65302304,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2500% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (50% des PV Max de cette alliée), augmente son Énergie de 50 et son Immunité de 40% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 45% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 15% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 45% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 15%."
 65302314,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2500% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 75301604,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2500% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 753016011,Ruben,Explosion d'Éther,"
 Inflige 245% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (50% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 753016012,Ruben,Explosion d'Éther,"
 Inflige 250% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (50% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 753016013,Ruben,Explosion d'Éther,"
 Inflige 255% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (52% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 753016014,Ruben,Explosion d'Éther,"
 Inflige 260% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (52% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 753016015,Ruben,Explosion d'Éther,"
 Inflige 265% d\'Attaque à tous les ennemis et les marques avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours. Elle soigne l\'alliée ayant le moins de PV (55% des PV Max de Ruben). Augmente de 40% la Résistance aux Dégâts de l\'alliée la plus proche de Ruben pendant 3 tours et augmente son Énergie de 100 (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées."
 753016021,Ruben,Maître Mécanique,"Augmente les PV de 40%, la Résistance aux Dégâts de 30%, les Soins Reçus de 25% et la Vitesse de 62."
 753016022,Ruben,Maître Mécanique,"Augmente les PV de 40%, la Résistance aux Dégâts de 30%, les Soins Reçus de 25% et la Vitesse de 64."
 753016023,Ruben,Maître Mécanique,"Augmente les PV de 43%, la Résistance aux Dégâts de 30%, les Soins Reçus de 25% et la Vitesse de 66."
@@ -9650,46 +9650,46 @@ Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour,
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2600% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 753016042,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2700% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 70% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 753016043,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2800% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 72% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 72% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 753016044,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 2900% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 72% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 72% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 20%."
 753016045,Ruben,Obsession,"
 Ruben n\'arrêtera jamais sa poursuite de la vérité. Au début de chaque tour, elle se marque soi-même, l\'ennemi ayant le moins de PV et l\'ennemi ayant le plus de PV avec [c][e28002]Fuite d\'Éther[-][/c] pendant 3 tours.
 Si cet ennemi a été marqué avec [c][e28002]Fuite d\'Éther[-][/c], Ruben l\'enlèvera et marquera l\'ennemi avec [c][e28002]Épuisement d\'Éther[-][/c] pendant 3 tours en infligeant des dégâts à cet ennemi (20% des PV Max de cet ennemi, 3000% de la valeur d\'Attaque de Ruben au maximum).
 Après que Ruben soit vaincue, soigne l\'alliée étant la plus proche d\'elle (100% des PV Max de cette alliée), augmente son Énergie de 100 et son Immunité de 100% (Ruben choisira l\'alliée se trouvant devant elle en priorité).
 
-[c][e28002]Fuite d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 20% les Dégâts Directs reçus des cibles marquées (Non cumulable).
-[c][e28002]Épuisement d\'Éther (Effet de Compétence)：[-][/c]
-Augmente de 75% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 22% (Non cumulable)."
+[c][e28002]Fuite d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 20% les Dégâts Directs reçus des cibles marquées.
+[c][e28002]Épuisement d\'Éther (Effet de Compétence, non cumulable)：[-][/c]
+Augmente de 75% les Dégâts Directs reçus des cibles marquées et réduit leurs Soins Reçus de 22%."
 6730101,Faux Mortelle,Compétence de l'Antiquité,"A 100%, 66% et 33% de chance d'infliger Ralentissement pendant 1 tour à 3 ennemis dont la Vitesse est la plus élevée au début du tour 1 et à la fin de chaque tour.\nRalentissement : Effet de Compétence, réduit la Vitesse de 20."
 6730201,Faux Mortelle,Compétence de l'Antiquité,"A 100%, 66% et 33% de chance d'infliger Ralentissement pendant 1 tour à 3 ennemis dont la Vitesse est la plus élevée au début du tour 1 et à la fin de chaque tour. \nRalentissement : Effet de Compétence, réduit la Vitesse de 40."
 6730301,Faux Mortelle,Compétence de l'Antiquité,"A 100%, 66% et 33% de chance d'infliger Ralentissement pendant 1 tour à 3 ennemis dont la Vitesse est la plus élevée au début du tour 1 et à la fin de chaque tour. \nRalentissement : Effet de Compétence, réduit la Vitesse de 60."
@@ -11721,3 +11721,30 @@ Marque l\'ennemi ayant l\'Attaque la plus élevée avec [c][e28002]Plume de Grue
 Augmente de 65% les dégâts subis de la cible marquée et réduit son Attaque de 20%. Lorsque la cible marquée est soignée, son alliée ayant le moins de PV subira des dégâts équivalent à la valeur de ses Soins reçus et son ennemi ayant le moins de PV récupèrera des PV de cette même valeur (déclenchable 10 fois au maximum par tour).
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+2000030000,Chimère des Océans,Attaque Basique,"
+Inflige des dégâts à 1 ennemi aléatoires et le marque avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours.
+
+[c][01a310]Venin Hydrique (cumulable) : [-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 500% d\'Attaque de Chimère des Océans, elle inflige directement 500% d\'Attaque à la cible marquée)."
+574,Chimère des Océans,Attaque Basique,"
+Son Attaque Basique inflige des dégâts à 3 ennemis aléatoires et les marque avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours.
+
+[c][01a310]Venin Hydrique (cumulable) : [-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 50% d\'Attaque de Chimère des Océans, elle infligera directement 50% d\'Attaque à la cible marquée)."
+2000030010,Chimère des Océans,Aqua-Canon,Inflige des dégâts à tous les ennemis et a des chances de [c][01a310]geler[-][/c] l'ennemi ayant l'Attaque la plus élevée pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
+2000030020,Chimère des Océans,Menace Continue,Ressuscite immédiatement et renforce ses compétences après chaque résurrection.
+2000030030,Chimère des Océans,Joyau Marin,"
+Au début de la bataille, Chimère des Océans obtient une [c][e28002]Barrière[-][/c] équivalent à 50% de ses PV.
+Au début de chaque tour, Chimère des Océans obtient un certain nombre de couche de [c][e28002]Barrière[-][/c] en fonction du nombre des Effets Négatifs sur les ennemis.
+Après que Chimère des Océans ait lancé son attaque, toutes les couches de [c][e28002]Barrière[-][/c] disparaissent.
+
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+2000030040,Chimère des Océans,Trident,"
+À la fin de chaque tour, marque les 3 ennemis ayant le moins de PV avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours et enlève aléatoirement 3 Effets Négatifs sur Chimère des Océans.
+Elle [c][e28002]asphyxie[-][/c] les ennemis pendant 2 tours lorsqu\'elle inflige des dégats aux ennemis avec son Attaque Basique, sa Compétence Active ou ses Dégâts sur la Durée.
+
+[c][e28002]Asphyxie (Effet de Compétence) :[-][/c]
+Réduit de 50% les Soins Reçus, de 50% la Récupération d\'Énergie de la cible dans cet état et augmente de 100% ses dégâts subis.
+[c][01a310]Venin Hydrique (cumulable) : [-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 50% d\'Attaque de Chimère des Océans, elle infligera directement 50% d\'Attaque à la cible marquée)."

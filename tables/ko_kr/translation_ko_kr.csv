@@ -719,7 +719,7 @@ GAMBLE_NO_RECORDS,당첨 이력이 없습니다
 PUB_MISSION_GIFTBAG_TEXT01,이 이벤트는 매달 초기화 됩니다. 이벤트 기간 중 일정 횟수의 아르바이트 미션을 완성시키면 다음의 보상을 획득할 수 있습니다. 보상은 메일로 전송됩니다.
 PUB_MISSION_WITH_STAR,{1}성 아르바이트 미션 완성
 CHAT_RECORD_NUM,{1} 메시지
-TRIAL_ENTER_WINDOW_HELP,"1. 책의 정령 성역은 24시간 잠금 해제 후, 24시간 동안 다시 잠기는 형태로 진행됩니다.|2. 책의 정령 성역은 위험한 곳으로 레벨 40 이상의 소녀만 참가할 수 있습니다. 각 전투 후, 적과 아군 소녀의 HP는 기록되고 리셋되지 않습니다.|3. 적의 전투력은 플레이어가 소유한 최강의 소녀 6명의 전투력에 따라 변동됩니다.|4. 소녀가 모두 쓰러질 경우 전투가 종료됩니다.|5. 책의 정령 성역은 총 9개의 스테이지가 있으며 2, 4, 7단계 클리어 후 BUFF를 1개 선택할 수 있습니다. 8단계를 클리어하면 쓰러진 소녀를 부활시켜 모든 소녀를 치료합니다.|6. 7단계까지는 클리어할 때까지 여러 번 도전할 수 있으며, 클리어 시 보상을 획득할 수 있습니다. 9단계는 1회만 도전할 수 있습니다. 도전 종료 후 보스에게 가해진 대미지를 기준으로 단계 보상을 획득할 수 있습니다.|7. 전투 후 획득한 정령의 책을 사용하여 책의 정령 성역 상점에서 크리스탈 검 혹은 소녀 조각 등을 교환할 수 있습니다."
+TRIAL_ENTER_WINDOW_HELP,"1. 책의 정령 성역은 47시간 잠금 해제 후, 1시간 동안 다시 잠기는 형태로 진행됩니다.|2. 책의 정령 성역은 화산 성역, 심해 성역으로 구성되며, 2개의 성역은 교대로 개방됩니다.|3. 책의 정령 성역은 위험한 곳으로 레벨 40 이상의 소녀만 참가할 수 있습니다. 각 전투 후, 적과 아군 소녀의 HP는 기록되고 리셋되지 않습니다.|4. 적의 전투력은 플레이어가 소유한 최강의 소녀 6명의 전투력에 따라 변동됩니다.|5. 소녀가 모두 쓰러질 경우 전투가 종료됩니다.|6. 책의 정령 성역은 총 9개의 스테이지가 있으며 1, 2, 3, 5, 6, 7단계를 클리어한 후 BUFF를 1개 선택할 수 있습니다. 4단계를 클리어한 후 회복 효과를 1개 선택할 수 있습니다. 8단계를 클리어하면 쓰러진 소녀를 부활시켜 모든 소녀를 치료합니다.|7. 1, 2, 3, 5, 6, 7단계는 클리어할 때까지 여러 번 도전할 수 있으며, 클리어 시 보상을 획득할 수 있습니다. 9단계는 1회만 도전할 수 있습니다. 도전 종료 후 보스에게 가해진 대미지를 기준으로 단계 보상을 획득할 수 있습니다.|8. 전투 후 획득한 정령의 책을 사용하여 책의 정령 성역 상점에서 크리스탈 검 혹은 소녀 조각 등을 교환할 수 있습니다."
 TRIAL_AWARD_WINDOW,스테이지 보상
 EMOTION_LIMIT_TIME,{1}초 후에 이모티콘을 다시 보낼 수 있습니다.
 TRIAL_TEXT01,카운트 다운:
@@ -3310,7 +3310,7 @@ ENTRANCE_TEST_HELP_TITLE_3_3,보상
 ENTRANCE_TEST_HELP_DES_3_1,전투 조건을 만족한 후 [c][cc0011]전투[-][/c]버튼을 클릭하시면 출전하실 수 있습니다.\n이벤트 기간 동안 선배님의 현재 포인트에 따라 비슷한 상대와 매칭됩니다. 전투를 승리하면 이벤트 포인트를 획득하고 실패해도 이벤트 포인트가 줄어들지 않습니다.
 ENTRANCE_TEST_HELP_DES_3_2,각 전투에는 참가권 1장이 필요합니다.\n참가권은 매일 한국 시간 9시에 [c][cc0011]10장[-][/c]으로 리셋됩니다.\n선배는 다이아를 사용하여 추가 참가권을 구매할 수 있습니다.
 ENTRANCE_TEST_HELP_DES_3_3,"이벤트 기간 동안, 선배님이 포인트 및 랭킹을 실시간으로 확인할 수 있습니다."
-ENTRANCE_TEST_HELP_DES_3_4,[c][cc0011]보상 미리보기[-][/c] 버튼을 클릭하면 현재 미션의 보상을 확인하실 수 있습니다.\n[c][cc0011]입학 세트[-][/c]를 구매하시면 더 많은 미션 보상을 받을 수 있습니다.
+ENTRANCE_TEST_HELP_DES_3_4,이벤트 기간에 [c][cc0011]보상 미리보기[-][/c] 버튼을 클릭하면 미션 보상을 확인하실 수 있습니다.\n[c][cc0011]입학 세트[-][/c]를 구매하시면 더 많은 미션 보상을 받을 수 있습니다.
 ACTIVITY_WARMUP_PACK_TEXT04,구매 후 신입생 한정\n섬네일 바로 획득:
 ACTIVITY_WARMUP_PACK_TEXT05,슈퍼 보너스
 CHESS_EXCHANGE,교환
@@ -5882,7 +5882,7 @@ SHRINE_HURDLE_TEXT38,소녀 HP 상태
 ACTIVITY_LAFULI_CASTLE_TEXT13,수령 한도에 도달했습니다.
 ACTIVITY_PROMOTION_LADDER_TEXT01,"1. 이벤트 기간에 '진급 증서' 아이템을 소모하여 이번 이벤트 중 재료 소녀로 지정된 소녀를 목표 소녀로 교환할 수 있습니다.|2. 5성 목표 소녀 1명 교환 시 10장의 '진급 증서'를 소모하며, 5성 목표 소녀 9명 교환 시마다 소녀 1명 교환에 필요한 '진급 증서'의 수량이 5개씩 증가합니다.|3. 교환으로 획득한 목표 소녀의 레벨, 랭크, 장비, 크리스탈, 혼기는 교환에 사용한 재료 소녀와 동일합니다.(단, 호감도 및 서약은 양도 불가)|4. 6, 7, 8성 소녀 교환=5성 소녀*2 / 9성 소녀 교환=5성 소녀*3 / 10성 소녀 교환=5성 소녀*5 / 11성 소녀 교환=5성 소녀*6 / 12, 13성 소녀 교환=5성 소녀*7 / 14성 소녀 교환=5성 소녀*8 / 15성 소녀 교환=5성 소녀*9|5. 매회 이벤트 중 교환할 수 있는 재료 소녀는 각기 다릅니다.|6. 교환으로 획득한 소녀는 신입생 캡슐 뽑기 이벤트 중 소녀 획득 횟수에 집계되지 않습니다.|7. '진급 증서'는 진급 테스트 이벤트를 통해 획득할 수 있습니다.|8. 이벤트 종료 후 '진급 증서'는 회수되지 않습니다."
 ACTIVITY_PROMOTION_LADDER_TEXT02,더보기
-ACTIVITY_PROMOTION_LADDER_TEXT03,교환 가능한 소녀
+ACTIVITY_PROMOTION_LADDER_TEXT03,재료 소녀
 ACTIVITY_PROMOTION_LADDER_TEXT04,교환 진도
 ACTIVITY_PROMOTION_LADDER_TEXT05,"5성 소녀 {1}명을 교환한 후, 교환 시 필요한 진급 증서 수량이 {2}까지 증가"
 ACTIVITY_PROMOTION_LADDER_TEXT06,재료 소녀를 고르세요
@@ -6099,7 +6099,7 @@ ACTIVITY_SIMULATION_GACHA_TEXT01,뽑기 [c][de5764]{1}[-][/c]회를 시도했어
 ACTIVITY_SIMULATION_GACHA_TEXT02,실험 기록 교환
 ACTIVITY_SIMULATION_GACHA_GIFTBAG,캡슐 실험 팩
 ACTIVITY_SIMULATION_GACHA_HELP1,"1. 이벤트 기간 동안 선배님은 10회 뽑기를 무제한으로 시도할 수 있습니다. 10회 뽑기 시도 시, 소녀는 바로 획득할 수 없으며, '교환 코인'을 사용해야만 저장을 완료한 뽑기 기록을 교환할 수 있습니다.|2. '10회 뽑기 시도' 진행 후, 마음에 드는 뽑기 결과를 임시 저장할 수 있습니다.|3. 선배님은 최대 5회의 기록을 저장할 수 있습니다.|4. 선배님은 캡슐 실험 팩을 통해 '교환 코인'을 구입할 수 있습니다. 캡슐 실험 팩은 7일 동안 판매됩니다.|5. '교환 코인' 1개를 소모하여 1개의 뽑기 기록을 교환할 수 있습니다.|6. 이벤트는 7일 동안 진행되며, 이벤트 종료 후 뽑기 기록은 더 이상 교환할 수 없습니다.|7. 이벤트 종료 후 남은 '교환 코인'은 전부 소모될 때까지 선배님의 뽑기 기록 저장 순서에 따라 자동으로 뽑기 기록과 교환되며, 교환 후 획득한 보상은 메일을 통해 발송됩니다. 자동 교환 후 남은 '교환 코인'은 전부 사라집니다."
-ACTIVITY_SIMULATION_GACHA_TEXT03,[c][size=45]10[-][/c]회 뽑기 시도
+ACTIVITY_SIMULATION_GACHA_TEXT03,[c][size=35]10[-][/c]회 뽑기 시도
 ACTIVITY_SIMULATION_GACHA_TEXT04,임시 저장
 ACTIVITY_SIMULATION_GACHA_TEXT05,이번 10회 뽑기 시도의 결과
 ACTIVITY_SIMULATION_GACHA_TEXT06,아래의 실험 기록을 클릭하시면 이번의 결과를 임시 저장할 수 있습니다.
@@ -6130,25 +6130,25 @@ NEW_TRIAL_SEA_SECRET,심해 성역
 NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} 개방 중
 NEW_TRIAL_MAIN_WINDOW_TEXT02,성역 패스
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,보상을 선택하세요.
-NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,이번 시즌 패스 보상의 테마를 선택하세요. 매 시즌의 패스는 1개의 테마 보상만 선택 가능합니다.
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,목표 보상을 선택하세요. 목표 보상을 1개만 선택할 수 있습니다.
 NEW_TRIAL_BATTLEPASS_TEXT01,선택 가능한 보상
 NEW_TRIAL_BATTLEPASS_TEXT02,성역 도전 포인트
 NEW_TRIAL_BATTLEPASS_TEXT03,패스 구매
-NEW_TRIAL_BATTLEPASS_TEXT04,레벨
+NEW_TRIAL_BATTLEPASS_TEXT04,포인트
 NEW_TRIAL_BATTLEPASS_TEXT05,보통
 NEW_TRIAL_BATTLEPASS_TEXT06,패스
 NEW_TRIAL_BATTLEPASS_TEXT07,수령
 NEW_TRIAL_BATTLEPASS_TEXT08,도전하기
 NEW_TRIAL_BATTLEPASS_TEXT09,모두 받기
 NEW_TRIAL_BATTLEPASS_TEXT10,계속 수령
-NEW_TRIAL_BATTLEPASS_HELP,설명
-NEW_TRIAL_BATTLEPASS_TEXT11,이번 시즌의 테마 보상을 선택하세요.
+NEW_TRIAL_BATTLEPASS_HELP,"1. 매회 성역 패스는 30일마다 리셋됩니다.|2. 이벤트 기간에 책의 정령 성역을 도전하시면 성역 패스 업그레이드 시 필요한 성역 도전 포인트를 획득할 수 있습니다.|3. 1, 2, 5, 6 스테이지 1회 도전 성공 시 25 성역 도전 포인트를 획득할 수 있으며, 3, 7 스테이지 1회 도전 성공 시 50 성역 도전 포인트를 획득할 수 있습니다. 9 스테이지에서 단계 보상 획득 시마다 10 성역 도전 포인트를 획득할 수 있습니다.|4. 매회 성역 패스 중 5종류의 보상이 존재하며, 선배님께서는 1종류의 보상을 해당 회 성역의 목표 보상으로 선택할 수 있습니다.|5. 보상 수령 후 목표 보상은 변경할 수 없으므로, 신중히 선택하시길 바랍니다."
+NEW_TRIAL_BATTLEPASS_TEXT11,본 기의 목표 보상을 선택하세요.
 NEW_TRIAL_BATTLEPASS_TEXT12,구매 가능한 성역 도전 포인트가 상한에 도달하였습니다.
-NEW_TRIAL_BATTLEPASS_TEXT13,是否確認領取{1}作為當期獎勵主題，領取後，本期通行證將無法更換獎勵主題。
-NEW_TRIAL_BATTLEPASS_TEXT14,패스를 해제 후 즉시 수령 가능한 보상
-NEW_TRIAL_BATTLEPASS_TEXT15,解鎖通行證後，在活動時間內獲取秘境挑戰點，可累積獲得以下獎勵
+NEW_TRIAL_BATTLEPASS_TEXT13,"{1}를(을) 목표 보상으로 선택하시겠습니까? 보상 수령 후 목표 보상은 변경할 수 없으므로, 신중히 선택하시길 바랍니다."
+NEW_TRIAL_BATTLEPASS_TEXT14,패스를 해제하신 후 즉시 수령 가능한 보상
+NEW_TRIAL_BATTLEPASS_TEXT15,"패스를 해제하신 후, 이벤트 기간에 성역 도전 포인트를 획득하시면 아래의 보상을 획득하실 수 있습니다."
 ARENA_HELP_TIPS_ITEM_TEXT1,새로운 학원 리그가 오픈되었습니다! 더 짜릿한 대결에 참여해보세요!
-ARENA_HELP_TIPS_ITEM_TEXT2,"서버 간의 대결, 매 회 전투의 상대가 달릅니다!"
+ARENA_HELP_TIPS_ITEM_TEXT2,서버 간의 대결! 매 회 전투의 상대가 다릅니다!
 ARENA_HELP_TIPS_ITEM_TEXT3,각 서버 1등을 따신 플레이어가 전시될 예정이에요!
 ARENA_HELP_TIPS_ITEM_TEXT4,더 풍부한 보상
 GAME_ASSISTANT_TEXT101,자동 모드 보상
@@ -6158,10 +6158,34 @@ ACTIVITY_SIMULATION_GACHA_TEXT27,10회 뽑기 시도
 ACTIVITY_SIMULATION_GACHA_TEXT28,교환 코인 1개를 사용해여 {1}을(를) 교환하시겠습니까?
 ACTIVITY_SIMULATION_GACHA_TEXT29,이번의 10회 뽑기 시도 결과가 임시 저장되었습니다.
 ARENA_NEW_SEASON_SERVER_MY_SERVER,(현재 서버)
-ARENA_NEW_SEASON_SERVER_TIME_TEXT,서버 간의 학원 리그 오픈까지:
+ARENA_NEW_SEASON_SERVER_TIME_TEXT,크로스 서버 학원 리그 오픈까지：
 SHRINE_HURDLE_TEXT40,시련이 오픈되지 않았어요.
+ACTIVITY_EASTER2022_TEXT01,에그를 [c][82ceff]{1}[-][/c]개 부순 후 획득
+ACTIVITY_EASTER2022_TEXT02,보상을 수령하세요.
+ACTIVITY_EASTER2022_TEXT03,모든 보상을 획득하셨습니다.
+ACTIVITY_EASTER2022_TEXT04,새총 사용하기
+ACTIVITY_EASTER2022_TEXT05,수량을 입력하세요.(특별 에그를 부순 후 자동 중지)
+ACTIVITY_EASTER2022_TEXT06,레이저 건을 사용하기
+ACTIVITY_EASTER2022_TEXT07,특별 에그
+ACTIVITY_EASTER2022_TEXT08,일반 에그
 ACTIVITY_SIMULATION_GACHA_TEXT30,실험 기록 교환
 ACTIVITY_SIMULATION_GACHA_TEXT31,실험 기록
-ACTIVITY_SIMULATION_GACHA_TEXT32,포기
+ACTIVITY_SIMULATION_GACHA_TEXT32,닫기
 ACTIVITY_SIMULATION_GACHA_TEXT33,캡슐 실험실
 ACTIVITY_SIMULATION_GACHA_TEXT34,캡슐 실험 팩
+ACTIVITY_EASTER2022_HELP,"1. 이벤트 기간에 1개의 '나무 새총'을 사용하여 에그 1개를 부술 수 있으며, 1개의 '레이저 건'을 사용하여 에그 1줄을 부술 수 있습니다. 에그가 부서질 때마다 동일 수량 및 종류의 에그가 자동으로 보충됩니다.|2. 일반 에그를 부순 후에는 랜덤 보상을, 특별 에그를 부순 후에는 해당 에그 안의 보상을 획득할 수 있으며, 자세한 보상 내용은 돋보기 아이콘을 클릭하여 확인할 수 있습니다.|3. 부서진 에그 수량에 따라 누적 보상이 발송됩니다.|4. 미션 완성 시 푸짐한 보상을 획득할 수 있습니다. 우측 상단의 미션 버튼을 클릭하여 자세한 내용을 확인하실 수 있습니다."
+NEW_TRIAL_BATTLEPASS_TEXT16,목표 보상
+NEW_TRIAL_BATTLEPASS_TEXT17,목표 보상을 선택하세요.
+NEW_TRIAL_BATTLEPASS_TEXT18,구매 가능한 성역 도전 포인트: {1}
+NEW_TRIAL_BATTLEPASS_TEXT19,성역 도전 포인트 구입
+NEW_TRIAL_BATTLEPASS_TEXT20,성역 도전 포인트 부족
+ACTIVITY_EASTER2022_TEXT09,에그 누적 {1}개 부수기
+ACTIVITY_RELAY_GIFT_TEXT01,이전 단계의 팩을 구입 혹은 수령하신 후 해제 가능.
+ACTIVITY_RELAY_GIFT_TEXT02,이벤트 기간에 팩을 구입 혹은 수령하신 후 다음 단계의 팩을 해제하실 수 있답니다! 가성비 가득한 팩을 받으러 오세요!
+ARENA_NEW_HLEP,"전투 규칙|1. 매일 21시에(한국 시간 6시) 메일로 보상이 지급됩니다.|2. 토너먼트의 참여에 필요한 입장권은 다이아로 구입 가능합니다.|3. 토너먼트의 전투는 라운드 제한이 없습니다. 전투가 15라운드를 넘기면, 승패가 판정될 때까지 매 라운드마다 적과 아군의 공격력을 증가하고 받은 치료 효과를 감소한다.|4. 전투 종료 후, 포인트가 계산됩니다. 전투에 승리하면 포인트를 획득할 수 있고, 패배하면 포인트가 감소합니다. 플레이어의 포인트에 따라 순위가 정해집니다.|5. 전투 기록에서 최근 10번의 전투 기록을 볼 수 있습니다.|6. 포인트 집계 시 적이 획득한 포인트가 아군이 획득한 포인트보다 높을수록 승리 시 획득한 포인트가 늘어나고 낮을수록 승리 시 획득한 포인트가 줄어듭니다. 포인트 차이가 너무 클 경우 포인트를 획득하지 못할 수도 있습니다.|7. 매 시즌의 크로스 서버 학원 리그는 여러 개의 서버 간에 진행되며, 매칭 서버 수량은 각 서버의 플레이어 수에 따라 다릅니다.|8. 크로스 서버 학원 리그 중, 매 시즌 시작 후 1시간의 휴전 기간이 존재합니다.||보너스 룰|매일 집계 후 랭킹에 따른 보상이 지급됩니다.|자세한 내용은 '일일 보상'에서 확인할 수 있습니다."
+ARENA_SETTLEMENT_TIPS,결산하고 있습니다. 잠간만 기다려주세요.
+ARENA_OPEN_TIPS_TEXT,휴전 기간 종료까지：
+ARENA_END_TIPS_TEXT,시즌 종료까지：
+ACTIVITY_EASTER2022_TITLE,에그 공방
+ARENA_NO_FIGHT,전투할 수 없습니다.
+NEW_TRIAL_BATTLEPASS_TEXT21,계속 수령

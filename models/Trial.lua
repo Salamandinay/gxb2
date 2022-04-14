@@ -8,6 +8,8 @@ function Trial:ctor()
 	self.skipReport = false
 	self.status = {}
 	self.enemies_ = {}
+	self.rankDataLis_ = {}
+	self.rankReqTime_ = {}
 	self.defaultRedPoint_ = true
 	self.skipReport = xyd.db.misc:getValue("trial_skip_report")
 
@@ -68,6 +70,7 @@ function Trial:onRegister()
 	self:registerEvent(xyd.event.TRIAL_START, handler(self, self.onTrialStart))
 	self:registerEvent(xyd.event.NEW_TRIAL_FIGHT, handler(self, self.onTrialFight))
 	self:registerEvent(xyd.event.TRIAL_AWARD, handler(self, self.onTrialAward))
+	self:registerEvent(xyd.event.TRIAL_GET_RANK_LIST, handler(self, self.onTrialRankData))
 	self:registerEvent(xyd.event.SYSTEM_REFRESH, handler(self, self.systemRefresh))
 	self:registerEvent(xyd.event.FUNCTION_OPEN, function (event)
 		local funID = event.data.functionID
@@ -76,6 +79,33 @@ function Trial:onRegister()
 			self:reqTrialInfo()
 		end
 	end)
+end
+
+function Trial:onTrialRankData(event)
+	if self.tempReqBoss_ then
+		self.rankDataLis_[self.tempReqBoss_] = xyd.decodeProtoBuf(event.data)
+		self.tempReqBoss_ = nil
+	end
+end
+
+function Trial:getRankData(boss_id)
+	return self.rankDataLis_[boss_id]
+end
+
+function Trial:reqRankInfo(boss_id)
+	if not self.rankReqTime_[boss_id] or xyd.getServerTime() - self.rankReqTime_[boss_id] > 180 then
+		local msg = messages_pb.trial_get_rank_list_req()
+		msg.boss_id = boss_id
+
+		xyd.Backend:get():request(xyd.mid.TRIAL_GET_RANK_LIST, msg)
+
+		self.tempReqBoss_ = boss_id
+		self.rankReqTime_[boss_id] = xyd.getServerTime()
+
+		return true
+	else
+		return false
+	end
 end
 
 function Trial:reqTrialInfo()
@@ -101,14 +131,16 @@ function Trial.getBossRewardLev()
 end
 
 function Trial:updateData(data)
+	dump(data, "data")
 	self:onTrialInfo({
 		data = data
 	})
 end
 
 function Trial:onTrialInfo(event)
+	__TRACE("===========onTrialInfo=============")
+
 	local data = event.data
-	self.data_ = {}
 	local infos = {
 		current_stage = data.current_stage,
 		start_time = data.start_time,
@@ -119,9 +151,15 @@ function Trial:onTrialInfo(event)
 		partner_status = data.partner_status,
 		enemies = data.enemies,
 		buff_rewards = data.buff_rewards,
-		buff_ids = data.buff_ids,
-		boss_id = data.boss_id
+		buff_ids = data.buff_ids
 	}
+
+	if data.boss_id and data.boss_id > 0 then
+		infos.boss_id = data.boss_id
+	else
+		infos.boss_id = self.data_.boss_id
+	end
+
 	self.data_ = infos
 	self.current_stage = infos.current_stage
 	self.enemy_ = infos.enemy
@@ -129,20 +167,29 @@ function Trial:onTrialInfo(event)
 	self.status = {}
 	local partner_status = infos.partner_status
 
-	if not partner_status then
-		return
-	end
-
+	dump(infos, "infos")
 	XYDCo.StopWait("new_trial_req_info")
 
-	if self.data_.is_open == 1 then
-		XYDCo.WaitForTime(self.data_.end_time - xyd.getServerTime(), function ()
+	if self.data_.is_open == 1 and xyd.getServerTime() - self.data_.start_time < 169200 then
+		if self.data_.end_time - xyd.getServerTime() > 0 then
+			XYDCo.WaitForTime(self.data_.end_time - xyd.getServerTime(), function ()
+				local win = xyd.WindowManager.get():getWindow("trial_window")
+
+				if win then
+					win:close()
+				end
+
+				self:reqTrialInfo()
+			end, "new_trial_req_info")
+		end
+	elseif self.data_.end_time + 3600 - xyd.getServerTime() > 0 then
+		XYDCo.WaitForTime(self.data_.end_time + 3600 - xyd.getServerTime(), function ()
 			self:reqTrialInfo()
 		end, "new_trial_req_info")
-	else
-		XYDCo.WaitForTime(self.data_.start_time - xyd.getServerTime(), function ()
-			self:reqTrialInfo()
-		end, "new_trial_req_info")
+	end
+
+	if not partner_status then
+		return
 	end
 
 	for i = 1, #partner_status do
@@ -199,7 +246,16 @@ function Trial:onTrialFight(event)
 		end
 	end
 
+	self.needUpdateBattlePassPoint_ = true
 	self.enemy_ = event.data.info.enemy
+end
+
+function Trial:checkUpdateBattlePass()
+	if self.needUpdateBattlePassPoint_ then
+		self.needUpdateBattlePassPoint_ = nil
+
+		xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS)
+	end
 end
 
 function Trial:onTrialAward(event)
@@ -224,7 +280,7 @@ function Trial:reqFight(partners, petID)
 end
 
 function Trial:getBossId()
-	return self.data_.boss_id or 1
+	return self.data_.boss_id
 end
 
 function Trial:startReq()

@@ -219,7 +219,7 @@ function GameAssistant:buyMidas(Index)
 		msg.times = self.presetData.midas.paid - xyd.models.midas.buy_times
 	end
 
-	if Index == 2 and xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL) < self:buyMidasTotalCost(self.presetData.midas.paid - xyd.models.midas.buy_times) then
+	if Index == 2 and xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL) < self:buyMidasTotalCost(self.presetData.midas.paid) then
 		return false
 	end
 
@@ -231,18 +231,12 @@ end
 function GameAssistant:buyMidasTotalCost(num)
 	local costNum = 0
 
-	for i = 1, num do
-		costNum = costNum + xyd.tables.midasBuyCoinTable:getCost(xyd.models.midas.buy_times + i)[2]
+	if num <= xyd.models.midas.buy_times then
+		return 0
 	end
 
-	return costNum
-end
-
-function GameAssistant:buyMidasTotalCost2(num)
-	local costNum = 0
-
-	for i = 1, num do
-		costNum = costNum + xyd.tables.midasBuyCoinTable:getCost(i)[2]
+	for i = 1, num - xyd.models.midas.buy_times do
+		costNum = costNum + xyd.tables.midasBuyCoinTable:getCost(i + xyd.models.midas.buy_times)[2]
 	end
 
 	return costNum
@@ -1119,7 +1113,7 @@ function GameAssistant:jungeIfCanDoTab1()
 	if self.presetData.midas.paid > 0 and self.todayHaveDoneData.midas.paid < self.presetData.midas.paid and xyd.models.midas.buy_times < self.presetData.midas.paid then
 		self.ifCanDo.midas.paid = true
 		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:buyMidasTotalCost(self.presetData.midas.paid - self:getMidasData().buy_time)
+		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:buyMidasTotalCost(self.presetData.midas.paid)
 	end
 
 	local timeStamp_campaign = xyd.db.misc:getValue("gameAssistant_campaign_timeStamp") or 0

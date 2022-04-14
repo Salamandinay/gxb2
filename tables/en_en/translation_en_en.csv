@@ -715,7 +715,7 @@ GAMBLE_NO_RECORDS,No Records...
 PUB_MISSION_GIFTBAG_TEXT01,"The event will be refreshed every 30 days, complete Internship quests the tasks suggested. Rewards will be sent to your account via Mail~"
 PUB_MISSION_WITH_STAR,Completed {1} Star Internship Quest!
 CHAT_RECORD_NUM,{1} messages
-TRIAL_ENTER_WINDOW_HELP,"1. Each Illusion the Book Spirit creates in Sanctuary will last for 24 hours, after that, the Book Spirit will need 24 hours to stabilize itself before it creates the next Illusion.|2. There's still danger in the Illusion, only Girls above Lv. 40 are allowed to enter. The Girls will not be healed to 100%% HP after each battle.|3. Enemies’ power will change according to the 6 strongest Girls that you have.|4. If all Girls you have cannot fight anymore, you will not be able to push further in the current Illusion.|5. Each Illusion has 9 Stages, you will be able to choose a buff for your team after passing Stage 2, 4 and 7. After passing Stage 8, all girls who have lost HP or were defeated will be fully recovered.|6. The first 7 Stages can be challenged for unlimited times until you pass and get rewards from the Stage. However, Stage 9 can only be challenged once in each Illusion. The rewards you can get from the Stage is different according to the damage you have actually dealt to the Boss|7. The Sacred Pages you get through battle can be used to exchange rare resources, such as Crystal Chisels and Girls Shards."
+TRIAL_ENTER_WINDOW_HELP,"1. Each Illusion the Book Spirit creates in Sanctuary will last for 47 hours, after that, the Book Spirit will need 1 hour to stabilize itself before it creates the next Illusion.|2. Volcano Sanctum and Deep Sea Sanctum will appear in turns.|3. There's still danger in the Illusion, only Girls above Lv. 40 are allowed to enter. The Girls will not be healed to 100%% HP after each battle.|4. Enemies’ power will change according to the 6 strongest Girls that you have.|5. If all Girls you have cannot fight anymore, you will not be able to push further in the current Illusion.|6. Each Illusion has 9 Stages, you will be able to choose a buff for your team after passing Stage 1, 2, 3, 5, 6, and 7, you are also be able to choose a recovery effect after pass Stage 4. After passing Stage 8, all girls who have lost HP or were defeated will be fully recovered.|8. Stage 1, 2, 3, 5, and 6 can be challenged for unlimited times until you pass and get rewards from the Stage. However, Stage 9 can only be challenged once in each Illusion. The rewards you can get from the Stage are different according to the damage you have actually dealt to the Boss.|8. The Sacred Pages you get through battle can be used to exchange rare resources, such as Crystal Chisels and Girls Shards."
 TRIAL_AWARD_WINDOW,Stage Rewards
 EMOTION_LIMIT_TIME,Please wait {1}s to send an emoji
 TRIAL_TEXT01,Starting in:
@@ -5886,7 +5886,7 @@ SHRINE_HURDLE_TEXT38,HP Status
 ACTIVITY_LAFULI_CASTLE_TEXT13,Obtain Limit Reached
 ACTIVITY_PROMOTION_LADDER_TEXT01,"1. You can exchange the Girls you have for the updated Girl by consuming Promotion Certificates during the event.|2. 10 Promotion Certificates will be required for each 5-star Girl copy you obtain from the exchange. The number of Promotion Certificates required in the exchange of each copy of the new updated Girl will be increased by 5 after every 9 copies exchanged during the event.|3. After the exchange, the new updated Girl you get will have the same level, star rank, Gear status, Crystal status, and Antique status as the Girl you use to exchange, however, the exchange will not let the Girl you get inherit the intimacy or the Oath status of the Girl you used for the exchange.|4. The system will see the exchange of the Girls of higher star rank as multiple copies exchanged: 6-8 star = 2 copies exchanged, 9 star = 3 copies exchanged, 10 star = 5 copies exchanged, 11 star = 6 copies exchanged, 12-13 star = 7 copies exchanged, 14 star = 8 copies exchanged, 15 star = 9 copies exchanged.|5. The Girls available for you to use for the exchange will be different during each event. You can check out the Girls available by tapping the ""!"" button in the top right corner of the event page.|6. The new updated Girl(s) you obtain via exchanging in this event won't advance the progress of the ""New Girls"" Task in the event: ""Girls X Capsule Points"".|8. Promotion Certificates won't be removed from your account after the event ends."
 ACTIVITY_PROMOTION_LADDER_TEXT02,Details
-ACTIVITY_PROMOTION_LADDER_TEXT03,Girls available for exchange
+ACTIVITY_PROMOTION_LADDER_TEXT03,Girls available
 ACTIVITY_PROMOTION_LADDER_TEXT04,Exchange Progress
 ACTIVITY_PROMOTION_LADDER_TEXT05,The Promotion Certificate needed for each exchange\nwill increase to {2} after {1} more exchange(s)
 ACTIVITY_PROMOTION_LADDER_TEXT06,Please choose the Girl for exchange
@@ -6100,7 +6100,7 @@ ACTIVITY_FREEBUY_TEXT13,"You have claimed today's reward, please come back tomor
 GAME_ASSISTANT_TEXT100,Store
 ACTIVITY_CLOCK_SHOW_TEXT06,From the 5th round
 ACTIVITY_SIMULATION_GACHA_TEXT01,[c][de5764]{1}[-][/c] simulations completed
-ACTIVITY_SIMULATION_GACHA_TEXT02,Save the result
+ACTIVITY_SIMULATION_GACHA_TEXT02,Results
 ACTIVITY_SIMULATION_GACHA_GIFTBAG,Capsule Simulator Pack
 ACTIVITY_SIMULATION_GACHA_HELP1,"1. During the event, you can simulate 10x draw results in this page for unlimited times, but you cannot get the Girls in the results directly. You will need to exchange the Girls in the results with Simulation Coins.|2. After completing a simulation, you can save the result you think is an ideal pull.|3. You can save 5 simulation results at most at the same time.|4. You can obtain Simulation Coins by purchasing Capsule Simulator Pack, the pack will be available for 7 days.|5. For each Simulation Coin consumed, you can exchange all the Girls in a Simulation result.|6. After the event ends, your remaining Simulation Coins will be automatically used to exchange the Capsule Simulation Records you saved during the event (according to the order of Slot numbers), the Girls you get will be sent via Mail; if there's no simulation result left to exchange, the remaining Simulation Coins will be removed from your account."
 ACTIVITY_SIMULATION_GACHA_TEXT03,[c][size=30]10x[-][/c] Simulation
@@ -6132,20 +6132,20 @@ NEW_TRIAL_RESET_TEXT02,"Sanctuary updating, available in: [c][b1ff00]{1}[-][/c]"
 NEW_TRIAL_VOLCAN_SECRET,Volcano Sanctum
 NEW_TRIAL_SEA_SECRET,Deep Sea Sanctum
 NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} is available
-NEW_TRIAL_MAIN_WINDOW_TEXT02,Sanctuary Pass
+NEW_TRIAL_MAIN_WINDOW_TEXT02,Sanctuary\nPass
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,Please choose your reward
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Please select the main reward plan for this season's Sanctuary Pass. (Only 1 reward plan can be selected each season)
 NEW_TRIAL_BATTLEPASS_TEXT01,Optional Rewards
 NEW_TRIAL_BATTLEPASS_TEXT02,Sanctuary Point
-NEW_TRIAL_BATTLEPASS_TEXT03,Buy Pass
-NEW_TRIAL_BATTLEPASS_TEXT04,Level
+NEW_TRIAL_BATTLEPASS_TEXT03,Purchase
+NEW_TRIAL_BATTLEPASS_TEXT04,Points
 NEW_TRIAL_BATTLEPASS_TEXT05,Normal
-NEW_TRIAL_BATTLEPASS_TEXT06,Pass
+NEW_TRIAL_BATTLEPASS_TEXT06,Additional Reward
 NEW_TRIAL_BATTLEPASS_TEXT07,Claim
 NEW_TRIAL_BATTLEPASS_TEXT08,Challenge
 NEW_TRIAL_BATTLEPASS_TEXT09,Claim All
 NEW_TRIAL_BATTLEPASS_TEXT10,More Rewards
-NEW_TRIAL_BATTLEPASS_HELP,幫助文本
+NEW_TRIAL_BATTLEPASS_HELP,"1. Sanctuary Pass will refresh its progress every 30 days. The exact refresh time is based on when a player creates their account.|2. You can obtain Sanctuary Points to upgrade your Sanctuary Pass and get more rewards by challenging Sanctuary Stages.|3. You can win 25 Sanctuary Points for passing Stage 1, 2, 5, and 6, 50 Sanctuary Points for passing Stage 3 and 7, and 10 Sanctuary Points for each bar of HP cleared in Boss Stage.|4. There will be 5 reward plans to choose from in each season of Sanctuary Pass, you can choose 1 reward plan for a season's rewards.|5. The selection of reward plan cannot be adjusted again in a season after you collect any reward."
 NEW_TRIAL_BATTLEPASS_TEXT11,Please select the main reward plan for this season's Sanctuary Pass
 NEW_TRIAL_BATTLEPASS_TEXT12,Purchase limit reached
 NEW_TRIAL_BATTLEPASS_TEXT13,Confirm to select {1} for the season's main reward plan? You will not be able to adjust your selection after you claim any reward here.
@@ -6164,17 +6164,32 @@ ACTIVITY_SIMULATION_GACHA_TEXT29,Current result saved
 ARENA_NEW_SEASON_SERVER_MY_SERVER,(My server)
 ARENA_NEW_SEASON_SERVER_TIME_TEXT,Cross-server Junior Varsity starts in:
 SHRINE_HURDLE_TEXT40,Trial hasn't begun
-ACTIVITY_EASTER2022_TEXT01,Need to break {1} more Easter Egg(s)
+ACTIVITY_EASTER2022_TEXT01,Break [c][82ceff]{1}[-][/c] more eggs
 ACTIVITY_EASTER2022_TEXT02,Please claim your Rewards
 ACTIVITY_EASTER2022_TEXT03,You have obtained all Rewards
 ACTIVITY_EASTER2022_TEXT04,Use Easter Slingshot
-ACTIVITY_EASTER2022_TEXT05,Select Quantity
+ACTIVITY_EASTER2022_TEXT05,Select Quantity (will stop after a Special Easter Egg is hit)
 ACTIVITY_EASTER2022_TEXT06,Use Laser Gun
 ACTIVITY_EASTER2022_TEXT07,Special Easter Egg
-ACTIVITY_EASTER2022_TEXT08,普通金蛋
+ACTIVITY_EASTER2022_TEXT08,Golden Easter Egg
 ACTIVITY_SIMULATION_GACHA_TEXT30,Result Exchange
 ACTIVITY_SIMULATION_GACHA_TEXT31,Result Records
 ACTIVITY_SIMULATION_GACHA_TEXT32,Leave
 ACTIVITY_SIMULATION_GACHA_TEXT33,Capsule\nSimulator
 ACTIVITY_SIMULATION_GACHA_TEXT34,Capsule Simulator Pack
-ACTIVITY_EASTER2022_HELP,1.活動期間，學長消耗1個「彈弓」可隨機擊碎1個蛋，消耗1個「激光槍」可隨機擊碎1行蛋。每次擊碎蛋後，都將從左側補充同樣數量和類型的蛋。|2.普通金蛋被擊碎後可隨機獲得獎勵，特殊彩蛋被擊碎時可獲得其中的獎勵，詳情可點擊界面左上角的放大鏡進行查看。|3.根據擊碎蛋的數量還將發放累計獎勵。|4.完成任務可獲得豐厚獎勵，詳情點擊界面右上角任務按鈕可查看。|5.活動結束後，未使用的「彈弓」和「激光槍」將會自動兌換為金幣，價格分別為20K和100K。回收後獲得的金幣將透過信件發放。
+ACTIVITY_EASTER2022_HELP,"1. During the event, you can break a random egg by consuming 1 Easter Slingshot, or break a random line of eggs by consuming 1 Laser Gun. (You can use multiple Easter Slingshots at a time, but once a Special Easter Egg is hit by an Easter Slingshot, the system will stop consuming Easter Slingshots and return the remaining to you.) After each egg is broken, an egg that is of the same type will be supplied to the same line from the left side.|2. You can obtain rewards inside the Golden Easter Eggs and Special Easter Eggs (The rewards inside each Special Easter Egg can be seen) by breaking them. The possible reward for the Easter Eggs can be checked by tapping the magnifying glass button on the top left corner.|3. You can obtain additional rewards according to the number of eggs you have broken.|4. You will also be able to get rewards by completing the tasks. Details of the tasks can be checked by tapping the task button on the top right corner."
+NEW_TRIAL_BATTLEPASS_TEXT16,Current Reward Plan
+NEW_TRIAL_BATTLEPASS_TEXT17,Please select the main reward plan for this season's Sanctuary Pass
+NEW_TRIAL_BATTLEPASS_TEXT18,Purchasable Sanctuary Point: {1}
+NEW_TRIAL_BATTLEPASS_TEXT19,Purchase Sanctuary Point
+NEW_TRIAL_BATTLEPASS_TEXT20,Not enough purchasable Sanctuary Points
+ACTIVITY_EASTER2022_TEXT09,Break {1} Easter Eggs
+ACTIVITY_RELAY_GIFT_TEXT01,Unlock after claiming or purchasing the previous pack
+ACTIVITY_RELAY_GIFT_TEXT02,You will be able to unlock the following packs by claiming or purchasing their previous packs!
+ARENA_NEW_HLEP,"Battle Rules|1. League Rank rewards are sent to players daily at 21:00 (UTC/GMT 0).|2. Each League battle costs 1 League Ticket (available for Gems).|3. Each League battle lasts 15 rounds. If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over.|4. Each battle awards points that count towards your League Rank. Points are gained for winning and lost for being defeated.|5. You can check out the 10 most recent battle replays in Battle Log.||Reward Rules|Rewards will be sent to the highest ranking players every day.|For details, please check 「Daily Reward」.|6. The point reward you get is based on the difference between your current points and your enemy's current points. (However, the point reward can be 0 if your current points is too high in comparison to your enemy's.)|7. In Cross-Server Junior Varsity, players from several servers will compete together. The number of servers to form a Cross-Server Junior Varsity will be different according to the number of players in each server.|8. The first hour in each season of Cross-Server Junior Varsity is the preparation phase, you cannot challenge other players during the phase."
+ARENA_SETTLEMENT_TIPS,Concluding the result
+ARENA_OPEN_TIPS_TEXT,Preparation phase ends in:
+ARENA_END_TIPS_TEXT,The season will end in：
+ACTIVITY_EASTER2022_TITLE,Easter\nEgg Factory
+ARENA_NO_FIGHT,Cannot fight now
+NEW_TRIAL_BATTLEPASS_TEXT21,More Rewards

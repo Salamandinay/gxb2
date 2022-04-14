@@ -1576,7 +1576,7 @@ id,name,brief,desc
 64,Ticket d'Admission,Ticket de défi pour l'Examen des Maisons,À utiliser pour défier une nouvelle étape de l'Examen des Maisons
 65,Badge Lunaire,Devise de la Boutique de l'Examen des Maisons,"Matériel Spécial, à utiliser pour obtenir des objets"
 66,Badge Solaire,Devise de la Boutique de l'Examen des Maisons,"Matériel Spécial, à utiliser pour obtenir des objets"
-8020,Souvenir de Turin,Cadre d'Avatar,Obtenu dans le défi de Turin
+8020,Souvenir de Turin,Cadre d'Avatar,Obtenable dans le Défi de Personnage - Turin
 1030001,Papier Peint,Meuble,"Il est très facilement abîmable, mettez votre doigt dessus pour voir."
 1030002,Tatami,Meuble,Il est plus large que la taille normale.
 1030003,Table Noire,Meuble,"Plus d'espace, plus de fun !"
@@ -1687,7 +1687,7 @@ id,name,brief,desc
 27075,Conte des Neiges,Skin,Skin d'Annie - Conte des Neiges
 20001033,Avatar Exclusif de 2020,Avatar Spécial,Avatar Exclusif de 2020
 20001034,Avatar de Noël 2019,Avatar Spécial,Avatar de l'événement de Noël 2019 sur Facebook
-8022,Splendide,Cadre d'Avatar,Obtenu dans l'événement de Noël 2019 sur Facebook
+8022,Splendide,Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement de Noël 2019 sur Facebook
 83,Bonhomme de Neige,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 84,Gants d'Hiver,Matériel d'Événement,"Matériel Spécial, à utiliser pour obtenir des objets"
 7076,Lame de Glace,Skin,Skin de Fencer - Lame de Glace
@@ -2228,7 +2228,7 @@ Humain/Monstre/Fée.
 7107,Marraine,Skin,Skin de Kratos-Marraine
 27107,Marraine,Skin,Skin de Kratos-Marraine
 2000043,Doux Souvenir,Image de fond,Peut être défini comme image de chargement pour les batailles
-8037,Cadre d'Avatar SP de FB (2nd Anniversaire),Cadre d'Avatar,Obtenu dans l'événement de 2nd Anniversaire sur Facebook FR
+8037,Cadre d'Avatar SP de FB (2nd Anniversaire),Cadre d'Avatar,Cadre d'Avatar Exclusif de l'événement de 2nd Anniversaire sur Facebook
 154,Soda,Matériel d'Événement,"Matériel d'Événement, utilisable lors de l'événement Chaleur d'été."
 8038,Chaleur d'été,Cadre d'Avatar,"Le cadre exclusif de Chaleur d'été, obtenable dans l'événement exclusif"
 7108,Repos Balnéaire,Skin,Skin de Chevalir - Repos Balnéaire
@@ -2903,7 +2903,7 @@ Humain/Monstre/Fée.
 7145,Chant de Geisha,Skin,Skin de Geisha - Chant de Geisha
 27145,Chant de Geisha,Skin,Skin de Geisha - Chant de Geisha
 4203001,Boîte de Ressources,Coffre à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *4M, Jus d'EXP *4M, Plateau Repas *3000, Ciseau de Cristal *3000"
-8050,Exploration du Vieux Campus,Cadre d'Avatar,Les TOP 10 de l'événement d'Exploration du Vieux Campus (14 Jours)
+8050,Exploration du Vieux Campus,Cadre d'Avatar,Top 10 de l'événement d'Exploration du Vieux Campus (14 Jours)
 4101012,Boîte de Fille (2ème période du Périple de Lavli),Boîte à choix,"
 À utiliser pour choisir d\'une Fille
 5 étoiles de la Maison Fantôme/
@@ -4119,10 +4119,10 @@ Humain/Monstre/Fée.
 Humain/Monstre/Fée.
 (Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
 284,Coupon de tirage x10,Coupon Spécial,"À utiliser pour tirer 10 fois la Capsule Avancée durant l'événement - Capsules de Nouvelle Fille (du 29/10 au 05/11).\nAttention : Cet objet disparaîtra après la fin de cet événement, veuillez l'utiliser à temps."
-8064,Arène Ultime Top 64,Cadre d'Avatar,Pour les Top 64 de l'Arène Ultime (28 Jours)
-8065,Arène Ultime Top 8,Cadre d'Avatar,Pour les Top 8 de l'Arène Ultime (28 Jours)
-8066,Arène Ultime Top 4,Cadre d'Avatar,Pour les Top 4 de l'Arène Ultime (28 Jours)
-8067,Champion de l'Arène Ultime,Cadre d'Avatar,Pour le Champion de l'Arène Ultime (28 Jours)
+8064,Arène Ultime Top 64,Cadre d'Avatar,Top 64 de l'Arène Ultime (28 Jours)
+8065,Arène Ultime Top 8,Cadre d'Avatar,Top 8 de l'Arène Ultime (28 Jours)
+8066,Arène Ultime Top 4,Cadre d'Avatar,Top 4 de l'Arène Ultime (28 Jours)
+8067,Champion de l'Arène Ultime,Cadre d'Avatar,Champion de l'Arène Ultime (28 Jours)
 3100511,Tête (Cyberguerrier),Tête,Tête de la Tenue - Cyberguerrier
 3100512,Tête (Cyberguerrier),Tête,Tête de la Tenue - Cyberguerrier
 3100513,Tête (Cyberguerrier),Tête,Tête de la Tenue - Cyberguerrier
@@ -5201,3 +5201,16 @@ Humain/Monstre/Fée.
 4601031,Boîte de Tenue Orange (Accessoire),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément (Accessoire) de Tenue Orange (Touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4201024,Boîte de Ressources,Boîte à choix,"L'utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *4500K, Jus d'EXP *4500K, Plateau Repas *3500, Ciseau de Cristal *3500, Biscuit de Serviteur *2000, Biscuit Spiritueux *250"
 20001076,Avatar Exclusif de Chizuko,Avatar Spécial,Avatar Exclusif de Chizuko
+347,Lance-pierre,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - L'Atelier de Pâques"
+348,Pistolet,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - L'Atelier de Pâques"
+20001077,Avatar de Pâques 2022,Avatar Spécial,Avatar Exclusif de Pâques 2022
+7258,Œuf Surprise,Skin,Skin de Lys - Œuf Surprise
+27258,Œuf Surprise,Skin,Skin de Lys - Œuf Surprise
+8073,Top3 de l'Arène interserveur,Cadre d'Avatar,Pour le Top 3 de l'Arène interserveur (14 Jours)
+8074,Top2 de l'Arène interserveur,Cadre d'Avatar,Top 2 de l'Arène interserveur (14 Jours)
+8075,Champion de l'Arène Ultime,Cadre d'Avatar,Champion de l'Arène interserveur (14 Jours)
+4101046,Boîte de Filles 5 étoiles,Boîte à choix,"
+À utiliser pour choisir d\'une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(Le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"

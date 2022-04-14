@@ -714,7 +714,7 @@ GAMBLE_NO_RECORDS,Kein Record
 PUB_MISSION_GIFTBAG_TEXT01,Das Event wird alle 30 Tage aktualisiert. Die Belohnungen werden per Mail gesendet~
 PUB_MISSION_WITH_STAR,Schließe die {1}-Sterne Jobaufgabe ab
 CHAT_RECORD_NUM,{1} Nachr.
-TRIAL_ENTER_WINDOW_HELP,"1. Das Buchheiligtum ist 24 Stunden lang zugänglich. Nach dieser Zeit musst du 24 Stunden warten, bis es wieder geöffnet wird.|2. Mädchen über Stufe 40 können dem Buchheiligtum beitreten. Mädchen stellen ihre HP nach jedem Kampf nicht wieder her.|3. Die Kampfkraft der Gegner wird der Kampfkraft deiner 6 stärksten Mädchen angepasst.|4. Mädchen ohne HP können nicht weiter kämpfen.|5. Es gibt 9 Stufen im Buchheiligtum. Nachdem du Stufe 2, Stufe 4 und Stufe 7 abgeschlossen hast, kannst du jeweils einen Segen auswählen. Auf Stufe 8 werden die HP aller deiner Mädchen wieder vollständig hergestellt.|6. Bis Stufe 7 kannst du so oft du willst kämpfen, um die Stufen abzuschließen. Wenn du erfolgreich gekämpft hast, erhältst du Belohnungen. Auf Stufe 9 kannst du nur einmal kämpfen. Stufe 9-Belohnungen werden dir entsprechend dem von dir verursachten Schaden berechnet und zugesandt.|7. Die heiligen Bücher können im Heiligtümerladen gegen Gegenstände wie Mädchen-Fragmente und Kristallmeißel eingetauscht werden."
+TRIAL_ENTER_WINDOW_HELP,"1. Das Buchheiligtum ist 47 Stunden lang zugänglich. Nach dieser Zeit musst du 1 Stunde warten, bis es wieder geöffnet wird.|2. Es gibt 2 Heiligtümer: Vulkanheiligtum und Meeresheiligtum. Die beiden werden abwechselnd geöffnet.|3. Mädchen über Stufe 40 können dem Buchheiligtum beitreten. Mädchen stellen ihre HP nach jedem Kampf nicht wieder her.|4. Die Kampfkraft der Gegner wird der Kampfkraft deiner 6 stärksten Mädchen angepasst.|5. Mädchen ohne HP können nicht weiter kämpfen.|6. Es gibt 9 Stufen im Buchheiligtum. Nachdem du Stufe 1, 2, 3, 5, 6 und 7 abgeschlossen hast, kannst du jeweils einen Segen auswählen. Nach dem Bestehen der Stufe 4 kannst du einen Segen für Heilung wählen und erhalten. Auf Stufe 8 werden die HP aller deiner Mädchen wieder vollständig hergestellt.|7. Bis Stufe 7 (Stufe 4 nicht eingeschlossen) kannst du so oft du willst kämpfen, um die Stufen abzuschließen. Wenn du erfolgreich gekämpft hast, erhältst du Belohnungen. Auf Stufe 9 kannst du nur einmal kämpfen. Stufe 9-Belohnungen werden dir entsprechend dem von dir verursachten Schaden berechnet und zugesandt.|8. Die heiligen Bücher können im Heiligtümerladen gegen Gegenstände wie Mädchen-Fragmente und Kristallmeißel eingetauscht werden."
 TRIAL_AWARD_WINDOW,Stufenbelohnung
 EMOTION_LIMIT_TIME,Bitte warte {1} Sekunden um einen Emoji zu senden
 TRIAL_TEXT01,Beginnt in:
@@ -3317,7 +3317,7 @@ ENTRANCE_TEST_HELP_TITLE_3_3,Belohnungen
 ENTRANCE_TEST_HELP_DES_3_1,"Erfüllst du die Voraussetzungen, dann kannst du auf [c][cc0011]Kampf[-][/c] drücken, um den Kampf zu starten.\nSpieler werden einander anhand ihrer Punktzahl zugeordnet. Bei einem Sieg erhältst du Punkte, bei einer Niederlage verlierst du keine Punkte."
 ENTRANCE_TEST_HELP_DES_3_2,Jeder Kampf benötigt 1 Prüfungszertifikat.\nDie Menge an Prüfungszertifikaten wird täglich um 00:00 Uhr (UTC/GMT 0) auf [c][cc0011]10[-][/c] zurückgesetzt/aufgefüllt.\nDu kannst auch zusätzliche Prüfungszertifikate mit Dias kaufen.
 ENTRANCE_TEST_HELP_DES_3_3,Während des Events kannst du die aktuellen Punkte und Rangliste prüfen.
-ENTRANCE_TEST_HELP_DES_3_4,"Tippe auf [c][cc0011]Belohnung[-][/c], um die aktuellen Aufgaben und deren Belohnungen zu prüfen.\nDurch Kauf des [c][cc0011]Einschulungspakets[-][/c] entsperrst du noch mehr Belohnungen!"
+ENTRANCE_TEST_HELP_DES_3_4,"Tippe auf [c][cc0011]Belohnung[-][/c], um die aktuellen Aufgaben und deren Belohnungen zu prüfen. Bitte sammle deine Belohnungen rechtzeitig ein.\nDurch Kauf des [c][cc0011]Einschulungspakets[-][/c] entsperrst du noch mehr Belohnungen!"
 ACTIVITY_WARMUP_PACK_TEXT04,Avatar des neuen\nMädchens gratis dazu:
 ACTIVITY_WARMUP_PACK_TEXT05,Premium
 CHESS_EXCHANGE,Umwandeln
@@ -5887,7 +5887,7 @@ SHRINE_HURDLE_TEXT38,HP
 ACTIVITY_LAFULI_CASTLE_TEXT13,Limit erreicht
 ACTIVITY_PROMOTION_LADDER_TEXT01,"1. Verwende die ""Aufstiegszertifikate"", um bestimmte Mädchen als Tauschmaterial gegen das neueste Mädchen einzutauschen.|2. Zum Tausch einer 5-Sterne Kopie des Zielmädchens werden 10 ""Aufstiegszertifikate"" benötigt. Alle 9 getauschten 5-Sterne Kopien wird die Menge der benötigten ""Aufstiegszertifikate"" zum Tausch einer weiteren Kopie um 5 erhöht.|3. Level, Sternlevel, Ausrüstungen, Kristalle und Antiquitäten des Mädchens als Tauschmaterial werden von dem getauschten Zielmädchen übernommen. Nur die Intimität und der Eid nicht.|4. Details zum Tauschverhältnis: 6-, 7- und 8-Sterne Mädchen als Tauschmaterial entsprechen 2x 5-Sterne Kopien, 9-Sterne 3x, 10-Sterne 5x, 11-Sterne 6x, 12-, 13-Sterne 7x, 14-Sterne 8x und 15-Sterne 9x.|5. Jedes Mal, wenn das Event erneut veranstaltet wird, werden die Mädchen, die als Tauschmaterial dienen, angepasst. Tippe auf das Ausrufezeichen oben rechts, um die Mädchen zu prüfen.|6. Die in diesem Event erhaltenen Mädchen-Kopien werden nicht im Event ""Willkommenskapseln"" mitgezählt.|7. ""Aufstiegszertifikate"" können im Event ""Aufstiegsprüfung"" erhalten werden.|8. Nach dem Ende des Events werden die ""Aufstiegszertifikate"" NICHT recycelt."
 ACTIVITY_PROMOTION_LADDER_TEXT02,Details
-ACTIVITY_PROMOTION_LADDER_TEXT03,Mädchen als Tauschmaterial
+ACTIVITY_PROMOTION_LADDER_TEXT03,Mädchen als Tauschmaterialien
 ACTIVITY_PROMOTION_LADDER_TEXT04,Tauschfortschritt
 ACTIVITY_PROMOTION_LADDER_TEXT05,Tausche noch {1} Kopie(n) und die Menge der Aufstiegs-\nzertifikate zum Tauschen einer Kopie wird auf {2} erhöht.
 ACTIVITY_PROMOTION_LADDER_TEXT06,Wähle das Mädchenmaterial zum Tausch aus
@@ -6133,29 +6133,29 @@ NEW_TRIAL_RESET_TEXT02,Neues Buchheiligtum beginnt in: [c][b1ff00]{1}[-][/c]
 NEW_TRIAL_VOLCAN_SECRET,Vulkanheiligtum
 NEW_TRIAL_SEA_SECRET,Meeresheiligtum
 NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} verfügbar
-NEW_TRIAL_MAIN_WINDOW_TEXT02,Pass zum Buchheiligtum
+NEW_TRIAL_MAIN_WINDOW_TEXT02,Pass zum\nBuchheiligtum
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,Bitte wähle deine Belohnung
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Bitte wähle eine Hauptbelohnung für das Buchheiligtum dieser Saison. Jede Saison kann nur eine Hauptbelohnung gewählt werden.
 NEW_TRIAL_BATTLEPASS_TEXT01,Optionale Belohnungen
-NEW_TRIAL_BATTLEPASS_TEXT02,Punkt des Heiligtums
+NEW_TRIAL_BATTLEPASS_TEXT02,Heiligtumspunkt
 NEW_TRIAL_BATTLEPASS_TEXT03,Pass kaufen
-NEW_TRIAL_BATTLEPASS_TEXT04,Level
+NEW_TRIAL_BATTLEPASS_TEXT04,Punkte
 NEW_TRIAL_BATTLEPASS_TEXT05,Normal
 NEW_TRIAL_BATTLEPASS_TEXT06,Pass
 NEW_TRIAL_BATTLEPASS_TEXT07,Sammeln
 NEW_TRIAL_BATTLEPASS_TEXT08,Herausfordern
 NEW_TRIAL_BATTLEPASS_TEXT09,Alle sammeln
 NEW_TRIAL_BATTLEPASS_TEXT10,Weiter sammeln
-NEW_TRIAL_BATTLEPASS_HELP,幫助文本
+NEW_TRIAL_BATTLEPASS_HELP,"1. Das Pass-Event dauert 30 Tage und wird monatlich zurückgesetzt (gleich mit Monatsthema).|2. Schließe die Herausforderung im Buchheiligtum ab, um Heiligtumspunkte zu erhalten und das Pass-Level zu erhöhen und die Belohnungen zu sammeln.|3. Bestehe einmal die 1., 2., 5. und 6. Stufe, um jeweils 25 Heiligtumspunkte zu erhalten. Bestehe einmal die 3. und 7. Stufe, um jeweils 50 Heiligtumspunkte zu erhalten. Immer wenn du in der 9. Stufe eine Stufe der Belohnungen erhalten hast, erhältst du 10 Heiligtumspunkte.|4. Während des Events stehen immer 5 Belohnungsitems zur Wahl. Du kannst eine der 5 als Hauptbelohnung der aktuellen Saison des Passes aussuchen.|5. Nachdem du die Belohnungen gesammelt hast, kann die Hauptbelohnung dieser Saison nicht mehr gewechselt werden. Bitte wähle mit Vorsicht."
 NEW_TRIAL_BATTLEPASS_TEXT11,Wähle die Hauptbelohnung dieser Saison aus
 NEW_TRIAL_BATTLEPASS_TEXT12,Kauflimit erreicht
 NEW_TRIAL_BATTLEPASS_TEXT13,Willst du sicher {1} zur Hauptbelohnung dieser Saison wählen? Nach dem Bestätigen kann das während dieser Saison nicht mehr gewechselt werden.
 NEW_TRIAL_BATTLEPASS_TEXT14,Sofort erhältlich nach dem Kauf des Passes
-NEW_TRIAL_BATTLEPASS_TEXT15,"Entsperre den Pass und sammle die Punkte des Heiligtums, um folgende Belohnungen zu erhalten."
+NEW_TRIAL_BATTLEPASS_TEXT15,"Entsperre den Pass und sammle die Heiligtumspunkte, um folgende Belohnungen zu erhalten."
 ARENA_HELP_TIPS_ITEM_TEXT1,Neue Arena mit noch schärferer Konkurrenz!
 ARENA_HELP_TIPS_ITEM_TEXT2,Verschiedene Gegner aus mehreren Servern
 ARENA_HELP_TIPS_ITEM_TEXT3,Die TOP1 Spieler auf jedem Server werden bekanntgemacht
-ARENA_HELP_TIPS_ITEM_TEXT4,Es werden reichhaltigere Belohnungen vorbereitet.
+ARENA_HELP_TIPS_ITEM_TEXT4,Bessere Belohnungen sind vorbereitet
 GAME_ASSISTANT_TEXT101,Kampfausbeute
 GAME_ASSISTANT_TEXT102,Belohnung im Wohnheim
 ARENA_NEW_SEASON_SERVER_RANK_WINDOW,Servern
@@ -6165,12 +6165,12 @@ ACTIVITY_SIMULATION_GACHA_TEXT29,Die neuesten 10 Züge wurden erfolgreich gespei
 ARENA_NEW_SEASON_SERVER_MY_SERVER,(Mein Server)
 ARENA_NEW_SEASON_SERVER_TIME_TEXT,Überserver-Arena startet in:
 SHRINE_HURDLE_TEXT40,Prüfung wird noch nicht gestartet
-ACTIVITY_EASTER2022_TEXT01,Zerschlage weiter {1} Ei(er)
+ACTIVITY_EASTER2022_TEXT01,Zerschlage dafür noch [c][82ceff]{1}[-][/c] Ei(er)
 ACTIVITY_EASTER2022_TEXT02,Bitte sammle die Belohnungen ein
 ACTIVITY_EASTER2022_TEXT03,Du hast alle Belohnungen eingesammelt
-ACTIVITY_EASTER2022_TEXT04,Schleuder\nverwenden
-ACTIVITY_EASTER2022_TEXT05,Bitte gib die Anzahl ein
-ACTIVITY_EASTER2022_TEXT06,Laserpistole\nverwenden
+ACTIVITY_EASTER2022_TEXT04,Holzschleuder verwenden
+ACTIVITY_EASTER2022_TEXT05,Gib die Anzahl ein (Wird durch Zerschlagen eines bunten Eis gestoppt)
+ACTIVITY_EASTER2022_TEXT06,Laserpistole verwenden
 ACTIVITY_EASTER2022_TEXT07,Buntes Ei
 ACTIVITY_EASTER2022_TEXT08,Goldenes Ei
 ACTIVITY_SIMULATION_GACHA_TEXT30,Gespeicherte Züge zum Tausch
@@ -6178,4 +6178,19 @@ ACTIVITY_SIMULATION_GACHA_TEXT31,Gespeicherte Züge
 ACTIVITY_SIMULATION_GACHA_TEXT32,Zurück
 ACTIVITY_SIMULATION_GACHA_TEXT33,Kapsel-\nsimulator
 ACTIVITY_SIMULATION_GACHA_TEXT34,Pakete
-ACTIVITY_EASTER2022_HELP,"1. Verwende 1 Schleuder, um 1 zufälliges Osterei zu zerschlagen. Verwende 1 Laserpistole, um die Eier in einer Reihe zu zerschlagen. Hast du ein Ei oder mehrere Eier zerschlagen, wird eine gleiche Menge an Eiern desselben Typs von links ergänzt hinzugefügt.|2. Das goldene Ei verleiht dir eine zufällige Belohnung und das bunte Ei die bestimmte Belohnung drin. Tippe auf die Lupe oben links auf der Eventseite, um Details zu prüfen.|3. Je nachdem, wie viele Eier du zerschlagen hast, werden noch weitere Belohnungen gegeben.|4. Schließe die bestimmten Aufgaben ab, um die entsprechenden Belohnungen zu erhalten. Tippe auf den Knopf oben rechts auf der Eventseite, um Details zu prüfen.|5. Nach dem Ende des Events werden die noch nicht verwendeten Schleudern und Laserpistolen werden automatisch per Mail recycelt. Jede Schleuder entspricht 20K Münzen und jede Laserpistole 100K."
+ACTIVITY_EASTER2022_HELP,"1. Verwende 1 Holzschleuder, um 1 zufälliges Osterei zu zerschlagen. Verwende 1 Laserpistole, um die Eier in einer Reihe zu zerschlagen. Hast du ein Ei oder mehrere Eier zerschlagen, wird eine gleiche Menge an Eiern desselben Typs von links ergänzt hinzugefügt.|2. Das goldene Ei verleiht dir eine zufällige Belohnung und das bunte Ei die bestimmte Belohnung drin. Tippe auf die Lupe oben links auf der Eventseite, um Details zu prüfen.|3. Je nachdem, wie viele Eier du zerschlagen hast, werden noch weitere Belohnungen gegeben.|4. Schließe die bestimmten Aufgaben ab, um die entsprechenden Belohnungen zu erhalten. Tippe auf den Knopf oben rechts auf der Eventseite, um Details zu prüfen."
+NEW_TRIAL_BATTLEPASS_TEXT16,Akt. Hauptbelohnung
+NEW_TRIAL_BATTLEPASS_TEXT17,Wähle die Hauptbelohnung dieser Saison aus
+NEW_TRIAL_BATTLEPASS_TEXT18,Kaufbare Heiligtumspunkte: {1}
+NEW_TRIAL_BATTLEPASS_TEXT19,Heiligtumspunkte kaufen
+NEW_TRIAL_BATTLEPASS_TEXT20,Kaufbare Heiligtumspunkte nicht ausreichend
+ACTIVITY_EASTER2022_TEXT09,Zerschlage insgesamt {1} Eier
+ACTIVITY_RELAY_GIFT_TEXT01,Kaufe oder sammle zunächst das vorherige Paket
+ACTIVITY_RELAY_GIFT_TEXT02,"Kaufe oder sammle das bereits entsperrte Paket, um das nächste Paket zu entsperren!"
+ARENA_NEW_HLEP,"Kampfregeln|1. Die Belohnungen werden täglich um 21:00 Uhr (UTC / GMT 0) an den Spieler gesendet.|2. Jeder Kampf kostet 1 Arenaticket, das mit Dias gekauft werden kann.|3. Es gibt kein Rundenlimit für den Kampf in der Arena. Wenn der Kampf länger als 15 Runden dauert, wird der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung vermindert, bis eine Seite den Kampf gewinnt.|4. Bei jedem Kampf werden Punkte vergeben. Für das Gewinnen erhältst du Punkte und für eine Niederlage verlierst du Punkte.|5. Du kannst dir die 10 letzten Kampfwiederholungen unter ""Kampfverlauf"" ansehen.|6. Je mehr Punkte der Gegner mehr hat als du, desto mehr Punkte bekommst du, wenn du den Kampf gewinnst. Je mehr Punkte du mehr als der Gegner hast, desto weniger Punkte bekommst du, wenn du den Kampf gewinnst. Wenn die Punktdifferenz zu groß ist, kann es sogar sein, dass du keine Punkte erhältst.|7. Unter Überserver-Modus werden sich mehrere Servern am Kampf in der Arena beteiligen. Die Menge an betroffenen Servern wird nach der Menge an Spielern auf demjenigen Server bestimmt.|8. Unter Überserver-Modus ist in der 1 Stunde zu Beginn jeder Saison die Ruhezeit und währenddessen kann kein Kampf gestartet werden.|Belohnungsregeln|Belohnungen werden jeden Tag an die Spieler entsprechend ihres Rangs gesendet.|Weitere Informationen findest du unter ""Belohnung - Täglich""."
+ARENA_SETTLEMENT_TIPS,Wird abgerechnet...
+ARENA_OPEN_TIPS_TEXT,Ruhezeit endet in:
+ARENA_END_TIPS_TEXT,Die Saison endet in:
+ACTIVITY_EASTER2022_TITLE,Ostereier-\nFabrik
+ARENA_NO_FIGHT,Es kann zurzeit kein Kampf gestartet werden.
+NEW_TRIAL_BATTLEPASS_TEXT21,Weiter sammeln

@@ -22,13 +22,21 @@ function ImgGuide:onWindowOpen(event)
 		ids = json.decode(value)
 	end
 
-	if (value == nil or xyd.arrayIndexOf(ids, id) < 0) and WindowTable:getImgGuide(name) == 1 and not xyd.GuideController.get():isPlayGuide() then
-		self:savaWindowId(id)
-		XYDCo.WaitForTime(0.5, function ()
-			xyd.WindowManager.get():openWindow("img_guide_window", {
-				wndname = name
-			})
-		end, "")
+	if WindowTable:getImgGuide(name) == 1 and not xyd.GuideController.get():isPlayGuide() then
+		local isBack = self:checkArenaWindow(name)
+
+		if isBack then
+			return true
+		end
+
+		if value == nil or xyd.arrayIndexOf(ids, id) < 0 then
+			self:savaWindowId(id)
+			XYDCo.WaitForTime(0.5, function ()
+				xyd.WindowManager.get():openWindow("img_guide_window", {
+					wndname = name
+				})
+			end, "")
+		end
 	end
 end
 
@@ -49,6 +57,32 @@ end
 
 function ImgGuide:removeEvents()
 	BaseModel:removeEvents()
+end
+
+function ImgGuide:checkArenaWindow(name)
+	if name == "arena_window" and xyd.models.arena:getIsOld() ~= nil then
+		local value = xyd.db.misc:getValue("new_arena_window_tips")
+
+		if not value then
+			local ArenaHelpTipsItems = import("app.components.ArenaHelpTipsItems")
+			self.arenaHelpTipsItems = ArenaHelpTipsItems.new()
+
+			xyd.WindowManager.get():openWindow("img_guide_window", {
+				totalPage = 1,
+				items = {
+					self.arenaHelpTipsItems.ArenaHelpTipsItem1
+				}
+			})
+			xyd.db.misc:setValue({
+				value = 1,
+				key = "new_arena_window_tips"
+			})
+		end
+
+		return true
+	end
+
+	return false
 end
 
 return ImgGuide

@@ -9,7 +9,7 @@ id,name,from,content
 8,Mini Monatskarten Belohnung,Mini Monatskarte,"Lieber Senpai, bitte sammle die folgenden Belohnungen rechtzeitig. Deine Mini-Monatskarte läuft in {1} Tag(en) ab."
 9,Mini Monatskarte abgelaufen,Mini Monatskarte,"Sehr geehrter Senpai, deine Mini-Monatskarte ist abgelaufen. Unter Aufladen kannst du deine Mini-Monatskarte verlängern. Zur Erinnerung: Die Mini-Monatskarte ist zehnmal billiger als der Einzelkauf der Dias!"
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
-11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Spielcoupon *2 zu erhalten. Hier sind deine Belohnungen."
+11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Holzschleuder *2 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
 13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
@@ -59,7 +59,7 @@ id,name,from,content
 58,Gildenkampf Finale Runde,Systembenachrichtigung,Herzlichen Glückwunsch! Deine Gilde belegte in der Endrunde des Gildenkriegs Platz {1}. Hier sind deine Belohnungen!
 59,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Zweitplatzierte in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
 60,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Champion in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
-61,Karte zum Frühlingsfest,Systembenachrichtigung,Du bist ein Lv.{1} Spieler und heute erhältst du die folgenden Belohnungen. Deine Karte zum Frühlingsfest läuft in {3} Tag(en) ab.
+61,Oster-Karte,Systembenachrichtigung,Als Lv.{1} Spieler bekommst du heute die folgenden Belohnungen. Deine Oster-Karte läuft in {3} Tag(en) ab!
 62,Monatskarten-Verlängerung erfolgreich,Monatskarte,"Vielen Dank, dass du deine Monatskarte verlängert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 63,Mini Monatskarten-Verländerung erfolgreich,Mini Monatskarte,"Vielen Dank, dass du deine Mini Monatskarte erneuert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 64,Puzzleevent,Event Mail,Herzliche Glückwünsche! Du hast {1} Puzzles abgeschlossen. Du hast die folgenden Belohnungen verdient!
@@ -124,7 +124,7 @@ Komm und tritt der FB-Fangruppe bei!
 118,Yume Sportfest-Belohnungen,Systembenachrichtigung,Herzlichen Glückwunsch Senpai. Du hast beim Sportfest den {1}. Platz erreicht. Hier sind deine Belohnungen!
 119,Einschulungspaket-Belohnungen,Event Mail,Herzlichen Glückwunsch Senpai. Die Gesamtzahl der Einschulung hat {1} erreicht und hat die vorgeschriebene Anzahl erreicht. Hier sind deine Belohnungen.
 120,Belohnungen (Assist bei Freundesboss),Systembenachrichtigung,"Lieber Senpai. Das Mädchen, das du als Unterstützerin eingesetzt hast, hat erfolgreich geholfen {1} Mal einen Freundesboss zu besiegen. Hier sind deine Belohnungen!"
-121,Monatsthema,Systembenachrichtigung,"Herzlichen Glückwunsch Senpai. Du hast das monatliche Event ""Erkunde das Buchheiligtum"" erfolgreich beendet. Hier sind deine Belohnungen."
+121,Monatsthema,Systembenachrichtigung,"Herzlichen Glückwunsch Senpai. Du hast das monatliche Event ""Pass zum Buchheiligtum"" erfolgreich beendet. Hier sind deine Belohnungen."
 122,Deluxe Bonus,Systembenachrichtigung,"Herzlichen Glückwunsch Senpai. Du hast das monatliche Event ""Erkunde das Buchheiligtum"" erfolgreich beendet. Hier sind deine Deluxe Belohnungen."
 123,Buchheiligtum-Belohnungen,Systembenachrichtigung,"Herzlichen Glückwunsch Senpai. Du hast im ""Erkunde das Buchheiligtum""-Event die Aufgaben abgeschlossen. Hier sind deine Belohnungen."
 124,Belohnungen (Aufnahmeprüfung),Systembenachrichtigung,"Herzlichen Glückwunsch, Senpai! Du hast bei der Aufnahmeprüfung den {1}. Platz erreicht. Hier sind deine Belohnungen!"
@@ -257,3 +257,6 @@ das Event ""Kapselsimulator"" wird in knapp 24 Stunden beendet. Nach dem Ende de
 
 Gibt es nach dem Tauschen aller Reserven noch verfügbare Tauschmünzen, werden sie entfernt. Ziehe schnell die Kapseln und tausche die gewünschten Mädchen!"
 228,Tauschmünzen autom. verwendet,Event-Mail,"Liebe(r) Senpai,\n\ndas Event ""Kapselsimulator"" wurde beendet. Die noch nicht verwendeten Tauschmünzen werden automatisch nach der Reihe die Mädchen (Reserve), die du im Event gezogen und gespeichert hast, eingetauscht. Die Mädchen-Fragmente werden hierzu per Mail gesendet. Bitte sammle sie ein."
+229,Rangbelohnung (Arena),Systembenachrichtigung,"Gratuliere, du hast Top {1} in der Arena erreicht und erhältst einen limitierten Avatarbildrahmen! Der Rahmen ist gültig für 14 Tage und kann unter ""Persönliche Info"" geprüft werden."
+230,Überserver-Arena beginnt,Systembenachrichtigung,"Lieber Senpai, die Überserver-Arena hat begonnen. Spiele schnell die neueste Version und erober die Überserver-Arena!"
+231,Arena wird upgegradet,Systembenachrichtigung,"Lieber Senpai, die aktuelle Saison in der Arena auf deinem Server wird {1} Tage dauern und nach dem Ende dieser Saison wird die Überserver-Arena eingeführt, in der auch die Spieler anderer Servern gegen dich kämpfen werden. Bereite dich vor!"

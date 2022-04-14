@@ -721,7 +721,7 @@ GAMBLE_NO_RECORDS,暫無中獎紀錄
 PUB_MISSION_GIFTBAG_TEXT01,該活動每月重置，活動期間，完成對應數量的打工任務即可獲得以下獎勵，獎勵會透過信件直接發放給您喔~
 PUB_MISSION_WITH_STAR,完成{1}星打工任務
 CHAT_RECORD_NUM,{1}條新消息
-TRIAL_ENTER_WINDOW_HELP,1.書靈秘境開啟持續時間為24小時，之後間隔24小時再次開放。|2.書靈秘境比較危險，需要40級以上的戰姬才可以參加書靈秘境，每次戰鬥後敵我雙方戰姬的血量會保留不重置。|3.敵人的戰力會根據學長最強6名戰姬的戰力進行變化。|4.戰姬全部陣亡則無法繼續戰鬥。|5.書靈秘境關卡共9關：通關第2、4、7關後可以分別選取一次祝福；通關第8關後可以復活陣亡的戰姬並治愈受傷的戰姬；|6.前7關挑戰次數不限，直至成功通關，挑戰成功後會獲得獎勵；第9關僅可以挑戰一次，挑戰結束後會根據學長戰姬對BOSS造成的總傷害來劃分檔次獲得獎勵|7.戰鬥獲得的秘境幣可以在秘境商店兌換水晶刻刀和戰姬碎片等珍貴物品。
+TRIAL_ENTER_WINDOW_HELP,1.書靈秘境開啟持續時間為47小時，之後間隔1小時再次開放。|2.書靈秘境一共有2個秘境：火山秘境和深海秘境，2個秘境輪流開啟。|3.書靈秘境比較危險，需要40級以上的戰姬才可以參加書靈秘境，每次戰鬥後敵我雙方戰姬的血量會保留不重置。|4.敵人的戰力會根據學長最強6名戰姬的戰力進行變化。|5.戰姬全部陣亡則無法繼續戰鬥。|6.書靈秘境關卡共9關：通關第1、2、3、5、6、7關後可以分別選取一次祝福；通關第4關可以選擇1個恢復效果；通關第8關後可以復活陣亡的戰姬並治愈受傷的戰姬；|7.第1、2、3、5、6、7關挑戰次數不限，直至成功通關，挑戰成功後會獲得獎勵；第9關僅可以挑戰一次，挑戰結束後會根據學長戰姬對BOSS造成的總傷害來劃分檔次獲得獎勵|8.戰鬥獲得的秘境幣可以在秘境商店兌換水晶刻刀和戰姬碎片等珍貴物品。
 TRIAL_AWARD_WINDOW,關卡獎勵
 EMOTION_LIMIT_TIME,請在{1}秒後發送表情
 TRIAL_TEXT01,倒數計時:
@@ -3311,7 +3311,7 @@ ENTRANCE_TEST_HELP_TITLE_3_3,獎勵
 ENTRANCE_TEST_HELP_DES_3_1,滿足戰鬥條件後，點擊[c][cc0011]戰鬥[-][/c]按鈕，即可出戰。\n活動開放時間內，將根據學長當前積分匹配相近的對手，若勝利則獲得活動積分，失敗不會減少活動積分。
 ENTRANCE_TEST_HELP_DES_3_2,每次戰鬥需消耗一枚測驗憑證。\n測驗憑證將在每日0時(UTC/GMT 0)重置到[c][cc0011]10枚[-][/c]。\n學長可點擊購買按鈕透過花費鑽石購買額外憑證。
 ENTRANCE_TEST_HELP_DES_3_3,活動開放期間，學長可實時查看當前積分及排名。
-ENTRANCE_TEST_HELP_DES_3_4,可點擊[c][cc0011]查看獎勵[-][/c]按鈕查看當前的任務與獎勵。\n透過購買[c][cc0011]入學福袋[-][/c]，還可以解鎖更多任務獎勵。
+ENTRANCE_TEST_HELP_DES_3_4,活動開放期間，點擊[c][cc0011]查看獎勵[-][/c]按鈕可查看任務獎勵，請注意及時領取。\n透過購買[c][cc0011]入學福袋[-][/c]，還可以解鎖更多任務獎勵。
 ACTIVITY_WARMUP_PACK_TEXT04,購買後附贈\n新學妹的限定頭像：
 ACTIVITY_WARMUP_PACK_TEXT05,超值
 CHESS_EXCHANGE,轉換
@@ -5868,7 +5868,7 @@ SHRINE_HURDLE_TEXT38,戰姬生命狀態
 ACTIVITY_LAFULI_CASTLE_TEXT13,已達到領取上限
 ACTIVITY_PROMOTION_LADDER_TEXT01,1.活動期間，玩家可以透過消耗道具「晉升證書」，將當期活動指定的材料戰姬置換為當期的目標戰姬。|2.置換一個目標戰姬本體（5星）會消耗10個「晉升證書」，每置換9個目標戰姬本體（5星），置換單個目標戰姬本體所消耗的「晉升證書」數量+5。|3.置換所獲得的目標戰姬的等級、階級、裝備、水晶、魂器，和用於置換的材料戰姬相同，好感度等級和誓約狀態無法繼承。|4.置換6、7、8星的戰姬相當於兩個5星本體，9星為3個5星本體，10星為5個本體，11星為6個本體，12星、13星為7個本體，14星為8個本體，15星為9個本體。|5.每一期可用於置換的材料戰姬都會有所不同，可在詳情處查看。|6.置換獲得的戰姬不計入扭蛋迎新活動中的戰姬獲得次數|7.「晉升證書」可以透過晉升考核活動獲得。|8.活動結束後，「晉升證書」不會回收。
 ACTIVITY_PROMOTION_LADDER_TEXT02,詳情
-ACTIVITY_PROMOTION_LADDER_TEXT03,本期可交換戰姬
+ACTIVITY_PROMOTION_LADDER_TEXT03,本期材料戰姬
 ACTIVITY_PROMOTION_LADDER_TEXT04,交換進度
 ACTIVITY_PROMOTION_LADDER_TEXT05,再交換{1}個本體後，每交換一個本體所需的晉升證書增長為{2}
 ACTIVITY_PROMOTION_LADDER_TEXT06,請選擇材料戰姬
@@ -6120,14 +6120,14 @@ NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,請選擇本期通行證的獎勵主題，每
 NEW_TRIAL_BATTLEPASS_TEXT01,可選獎勵
 NEW_TRIAL_BATTLEPASS_TEXT02,秘境挑戰點
 NEW_TRIAL_BATTLEPASS_TEXT03,購買通行證
-NEW_TRIAL_BATTLEPASS_TEXT04,等級
+NEW_TRIAL_BATTLEPASS_TEXT04,點數
 NEW_TRIAL_BATTLEPASS_TEXT05,普通
 NEW_TRIAL_BATTLEPASS_TEXT06,通行證
 NEW_TRIAL_BATTLEPASS_TEXT07,領取
 NEW_TRIAL_BATTLEPASS_TEXT08,前往挑戰
 NEW_TRIAL_BATTLEPASS_TEXT09,一鍵領取
 NEW_TRIAL_BATTLEPASS_TEXT10,繼續領取
-NEW_TRIAL_BATTLEPASS_HELP,幫助文本
+NEW_TRIAL_BATTLEPASS_HELP,1.每期秘境通行證持續30天，每月重置。|2.活動期間，挑戰書靈秘境可以獲得秘境挑戰點，提升秘境通行證等級，領取獎勵。|3.成功挑戰1次書靈秘境第1、2、5和6關，可獲得25秘境挑戰點；成功挑戰1次書靈秘境第3和7關，可獲得50秘境挑戰點；第9關每獲得1檔獎勵，就可以獲得10秘境挑戰點。|4.秘境通行證每期都有5種可選獎勵道具，學長可以自由選擇1種作為當期秘境獎勵主題。|5.領取獎勵後，當期秘境獎勵主題不可更換，請學長慎重選擇。
 NEW_TRIAL_BATTLEPASS_TEXT11,请選擇本期獎勵主題
 NEW_TRIAL_BATTLEPASS_TEXT12,可購買的秘境挑戰點已達上線
 NEW_TRIAL_BATTLEPASS_TEXT13,是否確認領取{1}作為當期獎勵主題，領取後，本期通行證將無法更換獎勵主題。
@@ -6146,12 +6146,12 @@ ACTIVITY_SIMULATION_GACHA_TEXT29,當前模擬10連結果已暫存
 ARENA_NEW_SEASON_SERVER_MY_SERVER,(所在服)
 ARENA_NEW_SEASON_SERVER_TIME_TEXT,跨服校園聯賽開啟倒計時：
 SHRINE_HURDLE_TEXT40,試煉尚未開啟
-ACTIVITY_EASTER2022_TEXT01,還需擊碎{1}個蛋
+ACTIVITY_EASTER2022_TEXT01,還需擊碎[c][82ceff]{1}[-][/c]個蛋
 ACTIVITY_EASTER2022_TEXT02,請領取獎勵
 ACTIVITY_EASTER2022_TEXT03,已獲得所有獎勵
 ACTIVITY_EASTER2022_TEXT04,使用彈弓
-ACTIVITY_EASTER2022_TEXT05,請輸入數量
-ACTIVITY_EASTER2022_TEXT06,使用激光槍
+ACTIVITY_EASTER2022_TEXT05,請輸入數量(擊碎特殊彩蛋將停止)
+ACTIVITY_EASTER2022_TEXT06,使用雷射槍
 ACTIVITY_EASTER2022_TEXT07,特殊彩蛋
 ACTIVITY_EASTER2022_TEXT08,普通金蛋
 ACTIVITY_SIMULATION_GACHA_TEXT30,暫存兌換
@@ -6159,3 +6159,19 @@ ACTIVITY_SIMULATION_GACHA_TEXT31,暫存記錄
 ACTIVITY_SIMULATION_GACHA_TEXT32,關閉結果
 ACTIVITY_SIMULATION_GACHA_TEXT33,模擬扭蛋
 ACTIVITY_SIMULATION_GACHA_TEXT34,模擬扭蛋禮包
+ACTIVITY_EASTER2022_HELP,1.活動期間，學長消耗1個「木質彈弓」可隨機擊碎1個蛋，消耗1個「雷射槍」可隨機擊碎1行蛋。每次擊碎蛋後，都將從左側補充同樣數量和類型的蛋。|2.普通金蛋被擊碎後可隨機獲得獎勵，特殊彩蛋被擊碎時可獲得其中的獎勵，詳情可點擊介面左上角的放大鏡進行查看。|3.根據擊碎蛋的數量還將發放累計獎勵。|4.完成任務可獲得豐厚獎勵，詳情點擊介面右上角任務按鈕可查看。
+NEW_TRIAL_BATTLEPASS_TEXT16,當期獎勵主題
+NEW_TRIAL_BATTLEPASS_TEXT17,請選擇當期獎勵主題
+NEW_TRIAL_BATTLEPASS_TEXT18,剩餘可購買的秘境挑戰點：{1}
+NEW_TRIAL_BATTLEPASS_TEXT19,購買秘境挑戰點
+NEW_TRIAL_BATTLEPASS_TEXT20,可購買秘境挑戰點不足
+ACTIVITY_EASTER2022_TEXT09,累計擊碎{1}個蛋
+ACTIVITY_RELAY_GIFT_TEXT01,購買或領取上一檔禮包後解鎖
+ACTIVITY_RELAY_GIFT_TEXT02,活動期間，每購買或領取一檔禮包後解鎖下一檔，更多超值禮包等你來獲取！
+ARENA_NEW_HLEP,戰鬥規則|1.每天21點(UTC/GMT 0)發放獎勵，透過信件發放|2.參與競技場戰鬥會消耗門票，門票可透過鑽石購買|3.競技場戰鬥不限定回合數，若戰鬥超過15回合，則雙方戰姬每回合都會提升攻擊力並降低受治療量，直到分出勝負。|4.戰鬥後會有積分結算，勝利獲得積分，失敗扣除積分，所有學長按照積分進行排名|5.戰鬥記錄中可以查看最近10場戰鬥的錄影|6.戰鬥後積分結算時，如果敵方分數高於己方，則分數差距越大，勝利時獲得的積分越多。如果敵方分數低於己方，則分數差距越大，獲勝利時得的積分越少，甚至分差過大也可能無法獲得積分。|7.跨服模式下，每一期都會匹配數個伺服器，組成跨服校園聯賽，匹配的伺服器數量會根據各個服務器的人數而有所不同。|8.跨服模式下，每個賽季剛開始的一小時為休賽期。||獎勵規則|根據每天結算時的排名發放獎勵|具體請看【每日獎勵】
+ARENA_SETTLEMENT_TIPS,結算中，請稍等
+ARENA_OPEN_TIPS_TEXT,休賽期結束倒計時：
+ARENA_END_TIPS_TEXT,賽季結束倒計時：
+ACTIVITY_EASTER2022_TITLE,彩蛋工坊
+ARENA_NO_FIGHT,暫時無法戰鬥
+NEW_TRIAL_BATTLEPASS_TEXT21,繼續領取

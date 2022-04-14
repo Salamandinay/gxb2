@@ -9,7 +9,7 @@ id,name,from,content
 8,Mini Pass Rewards,Mini Pass,"Dear Senpai, please collect the following rewards in time. Your Mini Pass will expire in {1} day(s)."
 9,Mini Pass Expired,Mini Pass,"Dear Senpai, your Mini Pass has expired. Please visit the Homework section to renew your Mini Pass. As a reminder, the Mini pass is 10 times cheaper than buying Gems individually!"
 10,Summon Girl Rewards,Summon Rewards,Congratulations on summoning {1} during the event. Your rewards are available in Mail on the FrontPage.
-11,Daily Rewards,System Message,"Login every day during the event and you will receive Adv. Capsule Coin x 3, Ring Toss Ticket x 2. Your rewards are attached."
+11,Daily Rewards,System Message,Login every day during event and you can collect Adv. Capsule Coin x 3 and Easter Slingshot x 2.
 12,Capsule Reward,System Message,"Congratulations, you've completed {1} Adv. Capsule Draws during event Girls X Capsule Points, here's your reward."
 13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Lucky Coin x 2. Your rewards are attached."
 14,Enroll Rewards,System Message,Congratulations on reaching {1} points during the Enroll event. Here are your rewards~!
@@ -59,7 +59,7 @@ id,name,from,content
 58,Guild War Final Round,System Message,Congratulations! Your guild is ranked in Top {1} in the Final Round of the Guild War. Here are your rewards!
 59,Guild War Final Round,System Message,"Congratulations! Your guild was the runner up in the Guild War Final Round! To reward your skill and valor, here is your prize!"
 60,Guild War Final Round,System Message,"Congratulations! Your guild was the champion in the Guild War Final Round! To reward your skill and valor, here is your prize!"
-61,Spring Festival Card,System Message,You are a level {1} user. Here's your reward today. Your Spring Festival Card will expire in {3} days!
+61,Easter Surprise,System Message,You are a level {1} user. Here's your reward today. Your Easter Surprise card will expire in {3} days!
 62,Monthly Pass just renewed,Monthly Pass,Thank you for renewing your Monthly Pass. Your current subscription expires in {1} days.
 63,Mini Pass just renewed,Mini Pass,Thank you for renewing your Mini Pass. Your current subscription expires in {1} days.
 64,Jigsaw Puzzle Event,Event Mail,Congratulations! You completed {1} Jigsaw Puzzles. You've earned the following rewards!
@@ -119,7 +119,7 @@ id,name,from,content
 118,Sports Meeting Reward,System Message,"Congratulations, Senpai! Your House has become No.{1} in Yume Sports Meeting, your rewards are attached!"
 119,Admission Reward,Event Mail,"Senpai, currently {1} Battles are completed, here's your reward."
 120,Friend Boss Support,System Message,"Dear Senpai, the Girl you set On Duty helped your friends to defeat {1} Friend Bosses, your rewards are attached!"
-121,Monthly Events,System Message,"Congratulations for completing Secret Santuary in Monthly Event, your reward is attached."
+121,Monthly Events,System Message,"Congratulations for completing Sanctuary Pass in Monthly Event, your reward is attached."
 122,Deluxe Bonus,System Message,"Congratulations for completing Secret Sanctuary in Monthly Event, your Deluxe Bonus is attached."
 123,Secret Sanctuary,System Message,"Congratulations for completing a task in Secret Sanctuary, your reward is attached."
 124,Entrance Exam reward,System Message,"Congratulations on being No. {1} in Entrance Exam, your rewards are attached!"
@@ -233,3 +233,6 @@ Yuki apologizes for the inconvenience, for any further queries, please don’t h
 226,Investment Reward,Event Mail,"Dear Senpai, the unclaimed rewards for event: ""Beginner Investment"" is attached in the mail, please check it out!"
 227,Capsule Simulator,Event Mail,"Dear Senpai, the event: Capsule Simulator will end in 24 hours. After the event is over, your remaining Simulation Coins will automatically be exchanged for the Capsule Simulation Results you have saved in Slots (based on the order of Slots), the Girls will be sent to you via Mail. If no simulation results have been saved, your remaining Simulation Tokens will automatically be removed from your account."
 228,Simulation Item Retrieve,Event Mail,"Dear Senpai, the event: ""Capsule Simulator"" is over. Your remaining Simulation Coins are automatically used to exchange the Capsule Simulation Record you saved in Slots during the event (based on the order of Slots). Here are the Girls you get, please check it out."
+229,Junior Varsity Rank Reward,System Message,"Dear Senpai, congratulations on reaching top {1} of the current season of Junior Varsity! Congratulations! Here is your limited Frame for your efforts! It will be available for 14 days, try it on now!"
+230,Cross-Server Junior Varsity,System Message,"Dear Senpai, Cross-Server Junior Varsity has begun! Let's go and check it out!"
+231,Junior Varsity Hint,System Message,"Dear Senpai, your current season of Junior Varsity will last for {1} days, a new Cross-Server Junior Varsity will be updated after this season ends. Please get ready for the new challenges!"

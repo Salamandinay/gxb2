@@ -37,11 +37,12 @@ function Arena:reset()
 end
 
 function Arena:onRegister()
-	self:registerEvent(xyd.event.GET_ARENA_INFO, handler(self, self.onGetArenaInfo))
+	self:registerEvent(xyd.event.GET_ARENA_INFO, handler(self, self.onGetArenaBaseInfo))
 	self:registerEvent(xyd.event.SET_PARTNERS, handler(self, self.onGetArenaInfo))
 	self:registerEvent(xyd.event.GET_MATCH_INFOS, handler(self, self.onGetEnemyList))
 	self:registerEvent(xyd.event.GET_RANK_LIST, handler(self, self.onGetRankList))
 	self:registerEvent(xyd.event.ARENA_FIGHT, handler(self, self.onFight))
+	self:registerEvent(xyd.event.GET_ARENA_NEW_RANK_LIST, handler(self, self.onGetArenaNewRankListBack))
 	self:registerEvent(xyd.event.FUNCTION_OPEN, function (event)
 		local funID = event.data.functionID
 
@@ -64,6 +65,52 @@ function Arena:reqArenaInfo()
 	xyd.Backend:get():request(xyd.mid.GET_ARENA_INFO, msg)
 end
 
+function Arena:onGetArenaBaseInfo(event)
+	self:onGetArenaInfo(event)
+
+	local data = xyd.decodeProtoBuf(event.data)
+	self.is_last = data.is_last
+	self.is_old = data.is_old
+	self.slave_ids = data.slave_ids
+	local battleChooseWd = xyd.WindowManager.get():getWindow("battle_choose_window")
+
+	if battleChooseWd then
+		battleChooseWd:updateArenaShow()
+	end
+
+	if self:getIsSettlementing() then
+		print("testtestsend==========================test" .. xyd.getServerTime())
+
+		local arenaWd = xyd.WindowManager.get():getWindow("arena_window")
+
+		if arenaWd then
+			xyd.WindowManager.get():closeWindow("arena_window")
+		end
+
+		xyd.addGlobalTimer(function ()
+			xyd.models.arena:reqArenaInfo()
+			xyd.models.arena:reqRankList()
+		end, 30, 1)
+	end
+
+	local arenaEndTime = self:getDDL() - xyd.getServerTime()
+
+	if arenaEndTime > 0 and (not self.globalEndTime or self.globalEndTime and self.globalEndTime < self:getDDL()) then
+		self.globalEndTime = self:getDDL()
+
+		xyd.addGlobalTimer(function ()
+			local arenaWd = xyd.WindowManager.get():getWindow("arena_window")
+
+			if arenaWd then
+				xyd.WindowManager.get():closeWindow("arena_window")
+			end
+
+			xyd.models.arena:reqArenaInfo()
+			xyd.models.arena:reqRankList()
+		end, arenaEndTime + 1, 1)
+	end
+end
+
 function Arena:onGetArenaInfo(event)
 	local data = xyd.decodeProtoBuf(event.data)
 
@@ -82,6 +129,8 @@ function Arena:onGetArenaInfo(event)
 	else
 		self.pet = nil
 	end
+
+	self.start_time = data.start_time and data.start_time or self.start_time
 
 	xyd.models.advertiseComplete:onArenaScore()
 end
@@ -196,8 +245,6 @@ function Arena:reqRankList()
 end
 
 function Arena:onGetRankList(event)
-	print("1=====================")
-
 	self.rankList = {}
 
 	for _, info in ipairs(event.data.list) do
@@ -308,6 +355,56 @@ end
 
 function Arena:onFight(event)
 	xyd.models.advertiseComplete:achieve(xyd.ACHIEVEMENT_TYPE.ARENA_TIMES, 1)
+end
+
+function Arena:getArenaNewRankList()
+	local msg = messages_pb:get_arena_new_rank_list_req()
+
+	xyd.Backend.get():request(xyd.mid.GET_ARENA_NEW_RANK_LIST, msg)
+end
+
+function Arena:onGetArenaNewRankListBack(event)
+	local arenaNewSeasonServerRankWd = xyd.WindowManager.get():getWindow("arena_new_season_server_rank_window")
+
+	if not arenaNewSeasonServerRankWd then
+		xyd.WindowManager.get():openWindow("arena_new_season_server_rank_window", {
+			infos = xyd.decodeProtoBuf(event.data).player_infos
+		})
+	end
+end
+
+function Arena:getArenaNewRankList()
+	local msg = messages_pb:get_arena_new_rank_list_req()
+
+	xyd.Backend.get():request(xyd.mid.GET_ARENA_NEW_RANK_LIST, msg)
+end
+
+function Arena:getIsLast()
+	return self.is_last
+end
+
+function Arena:getIsOld()
+	return self.is_old
+end
+
+function Arena:getStartTime()
+	return self.start_time or 0
+end
+
+function Arena:getSlaveIds()
+	return self.slave_ids
+end
+
+function Arena:getIsSettlementing()
+	if self:getDDL() and self:getDDL() <= xyd.getServerTime() then
+		return true
+	end
+
+	return false
+end
+
+function Arena:getNewSeasonOpenTime()
+	return 3600
 end
 
 Arena.INSTANCE = nil

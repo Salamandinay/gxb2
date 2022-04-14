@@ -2979,7 +2979,7 @@ Wenn angegriffen, kann er einen Gegenangriff ausüben der dem Feind einen zusät
 Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen.
 [c][01a310]Brennschaden:[-][/c]
 Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
-200000504,Chaoslord,Leidenschaftlicher Kampfwille,"Nach jeder Runde, erhält er Booster durch jeden [c][01a310]brennenden[-][/c] Feind.\n[c][01a310]Brennschaden:[-][/c]\nKontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+200000504,Chaoslord,Leidenschaftlicher Kampfwille,Zu Beginn jeder Runde wird jeder [c][01a310]brennende[-][/c] Gegner ihm Verstärkungen verleihen und er entfernt 3 zufällige Debuffs auf sich selber.\n[c][01a310]Brennschaden:[-][/c]\nKontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
 200000505,Chaoslord,Unsterblich,Jedes Mal wenn er stirbt wird er sofort wiederbelebt und erhält zur gleichen Zeit Booster.
 5101200,Fenrir,Standard Angriff,Standardangriff
 65101900,Fenrir,Standard Angriff,Standardangriff
@@ -11109,3 +11109,23 @@ Der Kranich, der weit zum Himmel fliegt, wird heimkehren und Gottes Anweisungen 
 Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht allen erlittenen Schäden um 65% und reduziert den Angriff um 20%. Werden die HP der Besitzerin um einen bestimmten Wert geheilt, erhält Chizukos Verbündete mit den niedrigsten HP dieselbe HP-Regeneration und Besitzerins Verbündete mit den niedrigsten HP erleidet einen gleichwertigen Schaden. Kann jede Runde maximal 10 Mal ausgelöst werden.
 [c][e28002]Schutzwall[-][/c]
 Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+2000030000,Meereslord,Standardangriff,"
+Fügt einem zufälligen Gegner Schaden un [c][01a310]Salzigkeit[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Salzigkeit:[-][/c]
+Kontinuierlicher Schaden, kann gestapelt werden. Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 500% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 500% des AW des Angreifers zugefügt."
+574,Meereslord,Standardangriff,"
+Standardangriff fügt 3 zufälligen Gegnern Schaden und [c][01a310]Salzigkeit[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Salzigkeit:[-][/c]
+Kontinuierlicher Schaden, kann gestapelt werden. Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 50% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 50% des AW des Angreifers zugefügt."
+2000030010,Meereslord,Wasserstrahl,"Fügt allen Gegnern Schaden zu und hat eine bestimmte Wahrscheinlichkeit, den Gegner mit dem höchsten AW 2 Runden lang [c][01a310]einzufrieren[-][/c].\n[c][01a310]Einfrieren:[-][/c]\nKontrolleffekt. Eingefrorene Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+2000030020,Meereslord,Reißende Strömung,"Jedes Mal wenn er stirbt, wird er sofort wiederbelebt und verstärkt."
+2000030030,Meereslord,Stein des Meeresgottes,"Zu Beginn des Kampfes verleiht er sich einen [c][e28002]Schuzwall[-][/c] in Höhe von 50% seiner HP. Zu Beginn jeder Runde erhält er nach der Menge an Debuffs auf allen Gegnern einen [c][e28002]Schuzwall[-][/c] in Höhe von (""Menge an Debuffs"" x Schutzwallwert basierend auf seiner max. HP). Nachdem Meereslord angegriffen hat, verschwindet der [c][e28002]Schuzwall[-][/c].\n[c][e28002]Schutzwall[-][/c]\nFertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+2000030040,Meereslord,Dreizack,"
+Zu Beginn der Runde fügt er den 3 Gegnern mit niedrigsten HP die [c][01a310]Salzigkeit[-][/c] zu, die 2 Runden lang anhält. Entfernt 3 zufällige Debuffs auf sich selber. Hat er durch Standardangriff, aktive Fertigkeit und Zufügen des kontinuierlichen Schadens die HP des Gegners reduziert, wird er diesem Gegner die [c][e28002]Atemlosigkeit[-][/c] 2 Runden lang zufügen.
+
+[c][e28002]Atemlosigkeit:[-][/c]
+Fertigkeitseffekt. Reduziert die erhaltene Heilung des Ziels um 50% und die Energie, die das Ziel bei der Verletzung erhält, um 50%. Erhöht den kontinuierlichen Schaden, den das Ziel erleidet, um 100%.
+[c][01a310]Salzigkeit:[-][/c]
+Kontinuierlicher Schaden, kann gestapelt werden. Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 50% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 50% des AW des Angreifers zugefügt."
