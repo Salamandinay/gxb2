@@ -1379,8 +1379,10 @@ function GameAssistant:jungeIfCanDoTab4()
 	local leftTime = xyd.models.guild:getFinalBossLeftCount()
 
 	if self.presetData.guild.gym == true and self.todayHaveDoneData.guild.gym == false and xyd.models.guild.guildID > 0 and leftTime > 0 then
-		self.ifCanDo.guild.gym = true
-		flag = true
+		if os.date("!*t", xyd.getServerTime()).wday ~= 6 or os.date("!*t", xyd.getServerTime()).hour ~= 0 then
+			self.ifCanDo.guild.gym = true
+			flag = true
+		end
 	end
 
 	return flag
