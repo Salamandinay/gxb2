@@ -25,7 +25,11 @@ end
 function NewTrialBattlepassData:getRestCanBuy()
 	local max_can = tonumber(xyd.tables.miscTable:getVal("new_trial_battlepass_point_paid_limit"))
 
-	return max_can - self.detail_.buy_times
+	if self:checkBuy() and self:getUpdateTime() - xyd.getServerTime() < 24 * xyd.HOUR then
+		max_can = max_can + tonumber(xyd.tables.miscTable:getVal("new_trial_battlepass_point_paid_limit2")) + tonumber(xyd.tables.miscTable:getVal("new_trial_battlepass_point_paid_limit3"))
+	end
+
+	return math.min(3000 - self.detail_.point, max_can - self.detail_.buy_times)
 end
 
 function NewTrialBattlepassData:reqAward(ids)

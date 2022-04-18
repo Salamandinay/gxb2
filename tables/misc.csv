@@ -58,7 +58,7 @@ gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,51018#651025#751018,-1
 gacha_ensure_partner_handbook,51018#651025#751018,-1
 daily_mail_awards_gacha,2|49,-1
-daily_mail_awards_tree,3|43,-1
+daily_mail_awards_tree,3|42,-1
 daily_mail_awards_gamble,18|37|48,-1
 daily_mail_awards_drift,30|6|39,-1
 daily_mail_awards_week,18|22,-1
@@ -228,7 +228,7 @@ activity_jackpot_energy_initial,57#15,-1
 activity_jackpot_energy_cd,14400,-1
 activity_jackpot_energy_add,1,-1
 activity_jackpot_energy_limit,20,-1
-activity_jackpot_energy_bet_num,1|2|5|10,-1
+activity_jackpot_energy_bet_num,1|2|5|10|20|40,-1
 activity_jackpot_exchange_item,58,-1
 govern_team_kick_limit,6,-1
 govern_team_join_limit,3,-1
@@ -666,7 +666,7 @@ fair_arena_explore_play_time,1,-1
 fair_arena_explore_replay_price,2#150,-1
 fair_arena_simu_chance,5,-1
 fair_arena_records_amount,10,-1
-fair_arena_partners_amount_origin,6,-1
+fair_arena_partners_amount_origin,5,-1
 fair_arena_collection_sort_type_show_list,2|9|4|5|6|7,-1
 activity_pet_giftbag_limit,2,-1
 activity_pet_giftbag_cost,2#2000@26#3600|27#720|216#360,-1
@@ -1055,6 +1055,10 @@ new_trial_restart_open_time,1649980800,-1
 new_trial_restart_close_time2,1649721600,-1
 new_trial_battlepass_point_paid_cost,2#1,-1
 new_trial_battlepass_point_paid_limit,1000,-1
+new_trial_battlepass_point_paid_cost2,2#3,-1
+new_trial_battlepass_point_paid_limit2,1000,-1
+new_trial_battlepass_point_paid_cost3,2#5,-1
+new_trial_battlepass_point_paid_limit3,1000,-1
 new_trial_battlepass_point_all,3000,-1
 activity_lottery_limit,62,-1
 activity_easter2022_cost1,347#1,-1
@@ -1064,3 +1068,4 @@ activity_easter2022_dropbox1,32014,-1
 activity_easter2022_dropbox2,32015,-1
 pet_training_hangup_awards2_coefficient,0#1|200#1.05|400#1.10|600#1.15|800#1.20|1000#1.25|1350#1.35|1450#1.40|1550#1.45|1620#1.50,-1
 pet_training_hangup_cycle,600,-1
+fair_arena_explore_revive_buff,3,-1

@@ -6102,7 +6102,7 @@ ACTIVITY_CLOCK_SHOW_TEXT06,From the 5th round
 ACTIVITY_SIMULATION_GACHA_TEXT01,[c][de5764]{1}[-][/c] simulations completed
 ACTIVITY_SIMULATION_GACHA_TEXT02,Results
 ACTIVITY_SIMULATION_GACHA_GIFTBAG,Capsule Simulator Pack
-ACTIVITY_SIMULATION_GACHA_HELP1,"1. During the event, you can simulate 10x draw results in this page for unlimited times, but you cannot get the Girls in the results directly. You will need to exchange the Girls in the results with Simulation Coins.|2. After completing a simulation, you can save the result you think is an ideal pull.|3. You can save 5 simulation results at most at the same time.|4. You can obtain Simulation Coins by purchasing Capsule Simulator Pack, the pack will be available for 7 days.|5. For each Simulation Coin consumed, you can exchange all the Girls in a Simulation result.|6. After the event ends, your remaining Simulation Coins will be automatically used to exchange the Capsule Simulation Records you saved during the event (according to the order of Slot numbers), the Girls you get will be sent via Mail; if there's no simulation result left to exchange, the remaining Simulation Coins will be removed from your account."
+ACTIVITY_SIMULATION_GACHA_HELP1,"1. During the event, you can simulate 10x draw results in this page for unlimited times, but you cannot get the Girls in the results directly. You will need to exchange the Girls in the results with Simulation Coins.|2. After completing a simulation, you can save the result you think is an ideal pull.|3. You can save 5 simulation results at most at the same time.|4. You can obtain Simulation Coins by purchasing Capsule Simulator Pack, the pack will be available for 7 days.|5. For each Simulation Coin consumed, you can exchange all the Girls in a Simulation result.|6. After the event ends, your remaining Simulation Coins will be automatically used to exchange the Capsule Simulation Records you saved during the event (according to the order of Slot numbers), the Girls you get will be sent via Mail."
 ACTIVITY_SIMULATION_GACHA_TEXT03,[c][size=30]10x[-][/c] Simulation
 ACTIVITY_SIMULATION_GACHA_TEXT04,Save the result
 ACTIVITY_SIMULATION_GACHA_TEXT05,10x Simulation Result
@@ -6145,7 +6145,7 @@ NEW_TRIAL_BATTLEPASS_TEXT07,Claim
 NEW_TRIAL_BATTLEPASS_TEXT08,Challenge
 NEW_TRIAL_BATTLEPASS_TEXT09,Claim All
 NEW_TRIAL_BATTLEPASS_TEXT10,More Rewards
-NEW_TRIAL_BATTLEPASS_HELP,"1. Sanctuary Pass will refresh its progress every 30 days. The exact refresh time is based on when a player creates their account.|2. You can obtain Sanctuary Points to upgrade your Sanctuary Pass and get more rewards by challenging Sanctuary Stages.|3. You can win 25 Sanctuary Points for passing Stage 1, 2, 5, and 6, 50 Sanctuary Points for passing Stage 3 and 7, and 10 Sanctuary Points for each bar of HP cleared in Boss Stage.|4. There will be 5 reward plans to choose from in each season of Sanctuary Pass, you can choose 1 reward plan for a season's rewards.|5. The selection of reward plan cannot be adjusted again in a season after you collect any reward."
+NEW_TRIAL_BATTLEPASS_HELP,"1. Sanctuary Pass will refresh its progress every 30 days. The exact refresh time is based on when a player creates their account.|2. You can obtain Sanctuary Points to upgrade your Sanctuary Pass and get more rewards by challenging Sanctuary Stages.|3. You can win 25 Sanctuary Points for passing Stage 1, 2, 5, and 6, 50 Sanctuary Points for passing Stage 3 and 7, and 10 Sanctuary Points for each bar of HP cleared in Boss Stage.|4. There will be 5 reward plans to choose from in each season of Sanctuary Pass, you can choose 1 reward plan for a season's rewards.|5. The selection of reward plan cannot be adjusted again in a season after you collect any reward.|6. You are able to purchase 1000 additional Sanctuary Points with Gems in each season. If you have purchased access to the additional rewards of the season's Sanctuary Pass, you will be able to purchase another 2000 Sanctuary Points in the last day of the season."
 NEW_TRIAL_BATTLEPASS_TEXT11,Please select the main reward plan for this season's Sanctuary Pass
 NEW_TRIAL_BATTLEPASS_TEXT12,Purchase limit reached
 NEW_TRIAL_BATTLEPASS_TEXT13,Confirm to select {1} for the season's main reward plan? You will not be able to adjust your selection after you claim any reward here.
@@ -6177,7 +6177,7 @@ ACTIVITY_SIMULATION_GACHA_TEXT31,Result Records
 ACTIVITY_SIMULATION_GACHA_TEXT32,Leave
 ACTIVITY_SIMULATION_GACHA_TEXT33,Capsule\nSimulator
 ACTIVITY_SIMULATION_GACHA_TEXT34,Capsule Simulator Pack
-ACTIVITY_EASTER2022_HELP,"1. During the event, you can break a random egg by consuming 1 Easter Slingshot, or break a random line of eggs by consuming 1 Laser Gun. (You can use multiple Easter Slingshots at a time, but once a Special Easter Egg is hit by an Easter Slingshot, the system will stop consuming Easter Slingshots and return the remaining to you.) After each egg is broken, an egg that is of the same type will be supplied to the same line from the left side.|2. You can obtain rewards inside the Regular Easter Eggs and Special Easter Eggs (The rewards inside each Special Easter Egg can be seen) by breaking them. The possible reward for the Easter Eggs can be checked by tapping the magnifying glass button on the top left corner.|3. You can obtain additional rewards according to the number of eggs you have broken.|4. You will also be able to get rewards by completing the tasks. Details of the tasks can be checked by tapping the task button on the top right corner. (PS: the tasks about graduating Chizuko to 6 star or Awakening Chizuko to 9-10 star cannot be completed by Exchange)"
+ACTIVITY_EASTER2022_HELP,"1. During the event, you can break a random egg by consuming 1 Easter Slingshot, or break a random line of eggs by consuming 1 Laser Gun. (You can use multiple Easter Slingshots at a time, but once a Special Easter Egg is hit by an Easter Slingshot, the system will stop consuming Easter Slingshots and return the remaining to you.) After each egg is broken, an egg that is of the same type will be supplied to the same line from the left side.|2. You can obtain rewards inside the Regular Easter Eggs and Special Easter Eggs (The rewards inside each Special Easter Egg can be seen) by breaking them. The possible reward for the Easter Eggs can be checked by tapping the magnifying glass button on the top left corner.|3. You can obtain additional rewards according to the number of eggs you have broken.|4. You will also be able to get rewards by completing the tasks. Details of the tasks can be checked by tapping the task button on the top right corner."
 NEW_TRIAL_BATTLEPASS_TEXT16,Current Reward Plan
 NEW_TRIAL_BATTLEPASS_TEXT17,Please select the main reward plan for this season's Sanctuary Pass
 NEW_TRIAL_BATTLEPASS_TEXT18,Purchasable Sanctuary Point: {1}
@@ -6200,5 +6200,12 @@ PEW_TRAINNG_HANGUP_TEXT04,Training Reward Bonus
 PEW_TRAINNG_HANGUP_TEXT05,Training Room Level
 PEW_TRAINNG_HANGUP_TEXT06,Level
 PEW_TRAINNG_HANGUP_TEXT07,/10 min
-PEW_TRAINNG_HANGUP_TEXT08,最大鍛煉時長/h
-ACTIVITY_RELAY_GIFT_TEXT03,接力禮包第{1}棒
+PEW_TRAINNG_HANGUP_TEXT08,Maximum Training Duration
+ACTIVITY_RELAY_GIFT_TEXT03,Gift Pack Relay - Part {1}
+ACTIVITY_EASTER2022_TEXT10,Don't show again today
+PEW_TRAINNG_HANGUP_TEXT09,Total Servant Level
+NEW_TRIAL_BATTLEPASS_TEXT22,Purchasable only in the last day of this season
+NEW_TRIAL_BATTLEPASS_TEXT23,Confirm to purchase {2} Sancutary Point(s) with {1} Gem(s)?
+NEW_TRIAL_BATTLEPASS_TEXT24,Your have obtained all Sanctuary Points needed
+ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TITLE,Bulk Purchase
+ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TEXT,Select purchase quantity

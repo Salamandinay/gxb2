@@ -514,8 +514,8 @@ infligera 180% d\'Attaque après 1 tour. (Marque cumulable)"
 5600201,Gabriel,Explosion Divine,"
 Inflige 75% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c]. Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires (100% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 5600301,Michael,Épée du Jugement,"Inflige 138% d'Attaque à 3 ennemis aléatoires, a 35% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours et soigne l'allié ayant le moins de PV de 180% de sa valeur d'Attaque.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis."
 5600401,Phénix,Assaut d'Épée,"Inflige 165% d'Attaque à 1 ennemi aléatoire, a 50% de chance de l'[c][01a310]étourdir[-][/c] pendant 2 tours si l'ennemi a plus de PV. Si l'ennemi a moins de PV, inflige 60% d'Attaque supplémentaires.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis."
 11100101,Skarivine-BOSS,Active,Active
@@ -654,8 +654,8 @@ infligera 250% d\'Attaque après 1 tour. (Marque cumulable)"
 65601101,Gabriel,Explosion Divine,"
 Inflige 84% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c]. Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires (120% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 65601201,Selene,Lumière de la Croix,Inflige 121% d'Attaque à 4 ennemis aléatoires et a 30% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 65601301,Michael,Épée du Jugement,Inflige 146% d'Attaque à 3 ennemis aléatoires et a 40% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours. Soigne l'allié ayant le moins de PV de 240% de sa valeur d'Attaque.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 65601401,Phénix,Assaut d'Épée,"Inflige 210% d'Attaque à 2 ennemis aléatoires, a 75% de chance de l'[c][01a310]étourdir[-][/c] pendant 2 tours si l'ennemi a plus de PV. Si l'ennemi a moins de PV, inflige 110% d'Attaque supplémentaires.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis."
@@ -767,8 +767,8 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 75600201,Gabriel,Explosion Divine,"
 Inflige 115% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 200% d\'Attaque. A 30% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 75600301,Michael,Épée du Jugement,"Inflige 198% d'Attaque à 4 ennemis aléatoires, a 40% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours, soigne l'allié ayant le moins de PV de 1000% de sa valeur d'Attaque et augmente ses Critiques de 20% pendant 3 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis."
 75600401,Phénix,Assaut d'Épée,Inflige 300% d'Attaque à 2 ennemis aléatoires et 112% d'Attaque supplémentaires en ignorant leur Armure. A 100% de chance d'[c][01a310]étourdir[-][/c] les cibles pendant 2 tours si elles ont plus de PV.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 100000101,Gargouille,aa,aa
@@ -1173,8 +1173,8 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 5600203,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 8% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (45% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 5600303,Michael,Rédemption,"Après sa mort, a 100% de chance de ressusciter avec 60% des PV (déclenchable qu'une seule fois durant la bataille)."
 5600403,Phénix,Indestructible,"Lorsqu'un ennemi est vaincu, elle récupérera 35 Énergies et ses Dégâts Divins seront augmentés de 10% pendant 3 tours."
 54100103,Zombia,Vie,Augmente les PV de 40%.
@@ -1296,8 +1296,8 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 65601103,Gabriel,Marque Divine II,"
 Augmente ses propres Critiques de 10% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (53% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 65601203,Selene,Suivre la Lumière II,"Quand attaqué (contre-attaque non comprise), augmente les Dégâts des Compétences de 30% et les Dégâts Divins de 5% pendant 3 tours."
 65601303,Michael,Rédemption II,"Après sa mort, a 80% de chance de ressusciter avec 100% des PV (déclenchable qu'une seule fois durant la bataille)."
 65601403,Phénix,Indestruction,"Lorsqu'un ennemi est vaincu, elle récupérera 70 Énergies et ses Dégâts Divins seront augmentés de 15% pendant 3 tours."
@@ -1361,8 +1361,8 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 75600203,Gabriel,Marque Divine III,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (90% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 75600303,Michael,Rédemption III,"Après sa mort, a 100% de chance de ressusciter avec 100% des PV (déclenchable qu'une seule fois durant la bataille)."
 75600403,Phénix,Indestruction,"Lorsqu'un ennemi est vaincu, elle récupérera 100 Énergies et ses Dégâts Divins seront augmentés de 30% pendant 3 tours."
 100000103,Gargouille,aa,aa
@@ -1739,8 +1739,8 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 65601113,Gabriel,Marque Divine III,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (90% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 65601213,Selene,Suivre la Lumière III,"Quand attaqué (contre-attaque non comprise), augmente les Dégâts des Compétences de 35% et les Dégâts Divins de 6% pendant 3 tours."
 65601313,Michael,Rédemption III,"Après sa mort, a 100% de chance de ressusciter avec 100% des PV (déclenchable qu'une seule fois durant la bataille)."
 65601413,Phénix,Indestructible,"Lorsqu'un ennemi est vaincu, elle récupérera 100 Énergies et ses Dégâts Divins seront augmentés de 30% pendant 3 tours."
@@ -2726,10 +2726,10 @@ La cible sera temporairement incapable de lancer sa Compétence Active ou d\'att
 65501502,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 30%, leurs Résistance aux Dégâts de 20%, la Vitesse de 40, et l'Immunité de 75%."
 65501512,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 40%, leurs Résistance aux Dégâts de 30%, la Vitesse de 60, et l'Immunité de 100%."
 75500502,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 40%, leurs Résistance aux Dégâts de 30%, la Vitesse de 60, et l'Immunité de 100%."
-5500603,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 110% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 20.
-65501503,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 120% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 40.
-65501513,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 140% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
-75500503,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 140% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
+5500603,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 110% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 20.
+65501503,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 120% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 40.
+65501513,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 140% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
+75500503,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 140% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
 5500604,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Quand une Fille est vaincue, inflige 120% d'Attaque à tous les ennemis pendant 2 tours."
 65501504,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Quand une Fille est vaincue, inflige 150% d'Attaque à tous les ennemis pendant 2 tours."
 65501514,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Quand une Fille est vaincue, inflige 200% d'Attaque à tous les ennemis pendant 2 tours."
@@ -3490,50 +3490,50 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 L\'Attaque Basique inflige 120% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 10% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'attaquant."
 65202103,Rina,Jetons Supplémentaires,"
 L\'Attaque Basique inflige 120% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 10% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'attaquant."
 65202113,Rina,Jetons Supplémentaires,"
 L\'Attaque Basique inflige 180% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 40% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 75201403,Rina,Jetons Supplémentaires,"
 L\'Attaque Basique inflige 180% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 40% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 5201404,Rina,Quinte Royale,"
 Les coups Critiques infligent 30% de dégâts supplémentaires à tous les ennemis, obtient 1 couche d\'[c][e28002]Audace[-][/c] et 1 couche de [c][e28002]Manque de Respect[-][/c]. 
 
 [c][e28002]Manque de Respect (Effet de Compétence)：[-][/c]
 Lorsqu\'elle est sous l\'effet d\'un contrôle, utilise 1 Manque de Respect pour neutraliser l\'Effet de Contrôle.
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 20% des dégâts et les renvoyer à l\'attaquant."
 65202104,Rina,Quinte Royale,"
 Les coups Critiques infligent 60% de dégâts supplémentaires à tous les ennemis, obtient 1 couche d\'[c][e28002]Audace[-][/c] et 1 couche de [c][e28002]Manque de Respect[-][/c]. 
 
 [c][e28002]Manque de Respect (Effet de Compétence)：[-][/c]
 Lorsqu\'elle est sous l\'effet d\'un contrôle, utilise 1 Manque de Respect pour neutraliser l\'Effet de Contrôle.
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 30% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 30% des dégâts et les renvoyer à l\'attaquant."
 65202114,Rina,Quinte Royale,"
 Les coups Critiques infligent 100% de dégâts supplémentaires à tous les ennemis, obtient 1 couche d\'[c][e28002]Audace[-][/c] et 1 couche de [c][e28002]Manque de Respect[-][/c]. 
 
 [c][e28002]Manque de Respect (Effet de Compétence)：[-][/c]
 Lorsqu\'elle est sous l\'effet d\'un contrôle, utilise 1 Manque de Respect pour neutraliser l\'Effet de Contrôle.
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 75201404,Rina,Quinte Royale,"
 Les coups Critiques infligent 100% de dégâts supplémentaires à tous les ennemis, obtient 1 couche d\'[c][e28002]Audace[-][/c] et 1 couche de [c][e28002]Manque de Respect[-][/c]. 
 
 [c][e28002]Manque de Respect (Effet de Compétence)：[-][/c]
 Lorsqu\'elle est sous l\'effet d\'un contrôle, utilise 1 Manque de Respect pour neutraliser l\'Effet de Contrôle.
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 670701,Fiole Sacrée 1,Compétence de l'Antiquité,Réduit les Dégâts sur la Durée de 20%
 670801,Fiole Sacrée 2,Compétence de l'Antiquité,Réduit les Dégâts sur la Durée de 30%
 670901,Fiole Sacrée 3,Compétence de l'Antiquité,Réduit les Dégâts sur la Durée de 40%
@@ -4888,7 +4888,7 @@ Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Au
 L\'Attaque Basique inflige 190% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 40% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 752014034,Rina,Jetons Supplémentaires,"
 L\'Attaque Basique inflige 196% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 40% pendant 2 tours. 
 
@@ -4898,7 +4898,7 @@ Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Au
 L\'Attaque Basique inflige 198% d\'Attaque aux ennemis de la ligne avant, obtient 1 couche d\'[c][e28002]Audace[-][/c] et augmente ses Dégâts Critiques de 44% pendant 2 tours. 
 
 [c][e28002]Audace (Marque)：[-][/c]
-Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'opposant."
+Lorsqu\'elle subit une Compétence Active ou une Attaque Basique, 1 couche d\'Audace est utilisée pour neutraliser 50% des dégâts et les renvoyer à l\'attaquant."
 752014041,Rina,Quinte Royale,"
 Les Coups Critiques infligent 102% de dégâts supplémentaires à tous les ennemis, obtient 1 couche d\'[c][e28002]Audace[-][/c] et 1 couche de [c][e28002]Manque de Respect[-][/c]. 
 
@@ -6061,11 +6061,11 @@ infligera l\'Attaque après 1 tour. (Marque cumulable)"
 755005023,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 42,5%, leurs Résistance aux Dégâts de 30%, la Vitesse de 60, et l'Immunité de 100%."
 755005024,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 42,5%, leurs Résistance aux Dégâts de 30%, la Vitesse de 70, et l'Immunité de 100%."
 755005025,Jumelles,Bénédiction,"Ésaü bénit les jumelles avec ses pouvoirs angéliques, augmentant leurs PV de 43%, leurs Résistance aux Dégâts de 30%, la Vitesse de 70, et l'Immunité de 100%."
-755005031,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 142% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
-755005032,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 145% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
-755005033,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 148% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
-755005034,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 152% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 60.
-755005035,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 154% d'Attaque à l'ennemi ayant le moins de PV ; réduit également l'Énergie de la cible de 65.
+755005031,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 142% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
+755005032,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 145% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
+755005033,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 148% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
+755005034,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 152% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 60.
+755005035,Jumelles,Fléau,Jacob utilise ses pouvoirs démoniaques et maudit les ennemis. L'Attaque Basique inflige 154% d'Attaque à l'ennemi ayant le moins de PV  et réduit son Énergie de 65.
 755005041,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Chaque fois qu'une Fille est vaincue, elle inflige 204% d'Attaque à tous les ennemis pendant 2 tours et enlève également tous les Effets de Contrôle et toutes les Marques de la Fille alliée ayant l'Attaque la plus élevée, l'Énergie de cette Fille alliée sera augmenté de 10."
 755005042,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Chaque fois qu'une Fille est vaincue, elle inflige 208% d'Attaque à tous les ennemis pendant 2 tours et enlève également tous les Effets de Contrôle et toutes les Marques de la Fille alliée ayant l'Attaque la plus élevée, l'Énergie de cette Fille alliée sera augmenté de 20."
 755005043,Jumelles,Porteuses de Destinée,"Les jumelles se déchaînent et causent des catastrophes incroyables. Chaque fois qu'une Fille est vaincue, elle inflige 212% d'Attaque à tous les ennemis pendant 2 tours et enlève également tous les Effets de Contrôle et toutes les Marques de la Fille alliée ayant l'Attaque la plus élevée, l'Énergie de cette Fille alliée sera augmenté de 30."
@@ -6274,28 +6274,28 @@ Neutralise le prochain effet de Soin et convertit 100% des Soins que la cible de
 756002011,Gabriel,Explosion Divine,"
 Inflige 117% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 204% d\'Attaque. A 30% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002012,Gabriel,Explosion Divine,"
 Inflige 119% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 208% d\'Attaque. A 30% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002013,Gabriel,Explosion Divine,"
 Inflige 121% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 212% d\'Attaque. A 30% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002014,Gabriel,Explosion Divine,"
 Inflige 123% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 216% d\'Attaque. A 30% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002015,Gabriel,Explosion Divine,"
 Inflige 127% d\'Attaque à tous les ennemis et les marque avec [c][e28002]Coup Critique[-][/c] qui inflige 220% d\'Attaque. A 35% de chance de les marquer une seconde fois (140% d\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002021,Gabriel,Chant Divin,"Augmente l'Attaque de 37%, les PV de 40%, les Dégâts Divins de 50%, les Critiques de 35%, la Résistance aux Dégâts de 15% et l'Immunité de 30%."
 756002022,Gabriel,Chant Divin,"Augmente l'Attaque de 37%, les PV de 42%, les Dégâts Divins de 50%, les Critiques de 35%, la Résistance aux Dégâts de 15% et l'Immunité de 30%."
 756002023,Gabriel,Chant Divin,"Augmente l'Attaque de 37,5%, les PV de 42%, les Dégâts Divins de 50%, les Critiques de 35%, la Résistance aux Dégâts de 15% et l'Immunité de 30%."
@@ -6304,28 +6304,28 @@ Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires.
 756002031,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (92% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002032,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (94% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002033,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (96% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002034,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 12% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (98% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002035,Gabriel,Marque Divine,"
 Augmente ses propres Critiques de 14% pendant 3 tours. L\'Attaque a 100% de chance de marquer l\'ennemi avec [c][e28002]Coup Critique[-][/c]. Lorsqu\'un un ennemi marqué reçoit un Coup Critique, la marque inflige des dégâts supplémentaires (100% de l\'Attaque).
 
-[c][e28002]Coup Critique (Marque)：[-][/c]
-Si la cible reçoit un Coup Critique, elle subira des dégâts supplémentaires. (Ne se déclenche qu\'une seule fois, Marque cumulable)"
+[c][e28002]Coup Critique (Marque, cumulable)：[-][/c]
+la cible marquée subira des dégâts lorsqu\'elle reçoit un Coup Critique (ne se déclenche qu\'une seule fois)."
 756002041,Gabriel,Lumière du Chaos,"
 Quand attaqué (contre-attaque non comprise), a 100% de chance de marquer tous les ennemis avec [c][e28002]Coup Critique[-][/c], et augmente sa Résistance aux Dégâts de 20% pendant 1 tour. 
 
@@ -8292,19 +8292,19 @@ L\'Amour ne peut être exprimé par des paroles !
 Inflige 140% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 5% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 65102201,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 220% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 7% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 75101501,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 440% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 5101502,Éléanor,Solitaire,"Augmente l'Attaque de 15%, les Critiques de 15%, les Dégâts Critiques de 15%, la Vitesse de 20 et l'Immunité de 10%."
 65102202,Éléanor,Solitaire,"Augmente l'Attaque de 25%, les Critiques de 25%, les Dégâts Critiques de 25%, la Vitesse de 40 et l'Immunité de 20%."
 65102212,Éléanor,Solitaire,"Augmente l'Attaque de 35%, les Critiques de 35%, les Dégâts Critiques de 50%, la Vitesse de 60 et l'Immunité de 30%."
@@ -8313,7 +8313,7 @@ Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqu
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (20% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (20% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 30% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8322,7 +8322,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (30% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (30% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 50% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8331,7 +8331,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (50% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (50% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8340,7 +8340,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (50% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (50% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8350,25 +8350,25 @@ L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 120% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 30% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 65102204,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 140% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 50% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 65102214,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 180% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 75101504,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 180% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 100% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 5401500,Lys,Attaque Basique,Attaque Basique
 65402200,Lys,Attaque Basique,Attaque Basique
 75401500,Lys,Attaque Basique,Attaque Basique
@@ -8420,53 +8420,53 @@ Réduit de 12% l\'Attaque et les Soins Reçus de la cible marquée. (3 couches d
 5401504,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 1% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 1% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 65402204,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 2% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 2% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 65402214,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 75401504,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 751015011,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 448% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015012,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 456% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015013,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 465% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015014,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 472% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015015,Éléanor,Plume d'Amour,"
 L\'Amour ne peut être exprimé par des paroles !
 Inflige 480% d\'Attaque à l\'ennemi ayant le moins de PV et lui inflige également des dégâts supplémentaires équivalent à 10% des PV Max de cette cible (1500% de la valeur de l\'Attaque d\'Éléanor au maximum). Marque cette cible avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015021,Éléanor,Solitaire,"Augmente l'Attaque de 37%, les Critiques de 35%, les Dégâts Critiques de 50%, la Vitesse de 60 et l'Immunité de 30%."
 751015022,Éléanor,Solitaire,"Augmente l'Attaque de 37%, les Critiques de 37%, les Dégâts Critiques de 50%, la Vitesse de 60 et l'Immunité de 30%."
 751015023,Éléanor,Solitaire,"Augmente l'Attaque de 37,5%, les Critiques de 37%, les Dégâts Critiques de 50%, la Vitesse de 60 et l'Immunité de 30%."
@@ -8476,7 +8476,7 @@ Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqu
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (51% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (51% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8485,7 +8485,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (52% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (52% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8494,7 +8494,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (53% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (53% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8503,7 +8503,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (54% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (54% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8512,7 +8512,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 Détruire ! Je vais faire brûler tous vos péchés ! Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, elle inflige des dégâts supplémentaires d\'[c][01a310]Empoisonnement[-][/c] pendant 2 tours (55% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsque sa Compétence Active ou son Attaque Basique inflige un Coup Critique, elle inflige des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (55% de ces dégâts infligés par Compétence Active ou Attaque Basique); Lorsqu\'elle vainc un ennemi, elle marque un autre ennemi aléatoire avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours (si l\'ennemi vaincu n\'a pas été vaincu par [c][e28002]Poussière Lunaire[-][/c], alors un effet de [c][e28002]Poussière Lunaire[-][/c] sera immédiatement déclenché) et augmente sa Pénétration d\'Armure de 100% pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée).
 [c][01a310]Empoisonnement：[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][01a310]Saignement：[-][/c]
@@ -8522,31 +8522,31 @@ L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 184% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 102% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015042,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 188% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 104% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015043,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 192% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 106% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015044,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 196% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 108% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 751015045,Éléanor,Poussière de Rêve,"
 L\'assassinat comme l\'amour, nécessite d\'avoir des compétences !
 L\'Attaque Basique inflige 200% d\'Attaque à l\'ennemi ayant le moins de PV et le marque avec [c][e28002]Poussière Lunaire[-][/c] pendant 3 tours.
 
 [c][e28002]Poussière Lunaire (Effet de Compétence, non cumulable) : [-][/c]
-Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué par [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
+Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, l\'ennemi marqué avec [c][e28002]Poussière Lunaire[-][/c] subira 2 fois les dégâts, et Éléanor se soignera de 110% de la valeur de ces dégâts infligés (n\'inclut pas les Dégâts sur la Durée)."
 754015011,Lys,Union des Fées,"
 Les amis ! Partagez-moi votre force ! Inflige 408% d\'Attaque à 4 ennemis aléatoires, et leur inflige également des dégâts supplémentaires de [c][01a310]Saignement[-][/c] pendant 2 tours (204% de l\'Attaque de Lys); Ces 4 cibles seront marquées avec 1 couche de [c][e28002]Parasite[-][/c] pendant 3 tours.
 
@@ -8615,28 +8615,28 @@ Réduit de 15% l\'Attaque et les Soins Reçus de la cible marquée. (3 couches d
 754015041,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours. Lorsque Lys subit des dégâts (Attaque Basique, Compétence Active, Marque), ces dégâts seront réduits et ne pourront pas dépasser 50% de ses PV.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 754015042,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours. Lorsque Lys subit des dégâts (Attaque Basique, Compétence Active, Marque), ces dégâts seront réduits et ne pourront pas dépasser 45% de ses PV.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4,5% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 4,5% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 754015043,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours. Lorsque Lys subit des dégâts (Attaque Basique, Compétence Active, Marque), ces dégâts seront réduits et ne pourront pas dépasser 40% de ses PV.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 5% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 5% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 754015044,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours. Lorsque Lys subit des dégâts (Attaque Basique, Compétence Active, Marque), ces dégâts seront réduits et ne pourront pas dépasser 30% de ses PV.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 5,5% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 5,5% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 754015045,Lys,Malédiction de la Forêt,"
 La forêt peut aussi se mettre en colère. Au début de la bataille, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 4 tours; Lorsque le nombre de fois que les Filles (de la bataille, toutes équipes confondues) utilisent leur Compétence Active ou Attaque Basique atteint 10, Lys obtient le [c][e28002]Grondement de la Nature[-][/c] pendant 2 tours. Lorsque Lys subit des dégâts (Attaque Basique, Compétence Active, Marque), ces dégâts seront réduits et ne pourront pas dépasser 20% de ses PV.
 
-[c][e28002]Grondement de la Nature (Effet de Compétence)：[-][/c]
-Lorsque l\'ennemi lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de l\'ennemi marqué avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 6% de ses PV Max. Lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus. (Grondement de la Nautre non cumulable)"
+[c][e28002]Grondement de la Nature (Effet de Compétence, non cumulable)：[-][/c]
+Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basique ou déclenche ses Compétences Passives qui affectent l\'ennemi, si la cible est sélectionnée aléatoirement, Lys sera la première cible. Si Lys subit des dégâts venant de la cible marquée avec [c][e28002]Parasite[-][/c], elle récupérera des PV équivalent à 6% de ses PV Max (lorsque 8 effets (ou +) de Soins sont déclenchés en 1 tour, et qu\'elle a récupéré 100% de ses PV alors qu\'elle n\'en récupérera pas plus)."
 5201600,Térèsa,Attaque Basique,Attaque Basique
 65202300,Térèsa,Attaque Basique,Attaque Basique
 75201600,Térèsa,Attaque Basique,Attaque Basique
@@ -9148,18 +9148,18 @@ Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche 
 5401601,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 90% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 10% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (20% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (10% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 10% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (10% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 10% des dégâts infligés."
 65402301,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 180% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 20% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (30% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (15% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 20% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (15% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 20% des dégâts infligés."
 75401601,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 300% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 30% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (50% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés."
 5401602,Cassie,Œil-de-Chat,"Augmente l'Attaque de 10%, les PV de 15%, les Dégâts Critiques de 20%, la Résistance aux Dégâts de 10% et la Vitesse de 20."
 65402302,Cassie,Œil-de-Chat,"Augmente l'Attaque de 20%, les PV de 20%, les Dégâts Critiques de 30%, la Résistance aux Dégâts de 20% et la Vitesse de 40."
 65402312,Cassie,Œil-de-Chat,"Augmente l'Attaque de 30%, les PV de 25%, les Dégâts Critiques de 40%, la Résistance aux Dégâts de 30% et la Vitesse de 60."
@@ -9175,28 +9175,28 @@ Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée ma
 754016011,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 306% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 30% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (50% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés."
 754016012,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 312% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 30% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (50% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés."
 754016013,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 318% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 30% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (50% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés."
 754016014,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 324% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 30% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (50% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (20% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 30% des dégâts infligés."
 754016015,Cassie,Ombre de la Jungle,"
 Ma silhouette sera votre dernier souvenir au monde ! Inflige 330% d\'Attaque 2 fois à l\'ennemi ayant le moins de PV (lorsque les PV de la cible sont inférieurs à 50%, ces dégâts peuvent être un Coup Critique), lui Infligeant des dégâts supplémentaires équivalent à 33% des PV perdus de cette cible (1500% de la valeur d\'Attaque de Cassie au maximum), et récupère des PV (55% des dégâts infligés). Cassie peut également marquer les 2 alliées avec [c][e28002]Œil-de-Chat[-][/c] pendant 3 tours.
 
-[c][e28002]Œil-de-Chat (Effet de Compétence) : [-][/c]
-Après avoir lancé une Compétence Active ou une Attaque Basique, l\'alliée marquée inflige des dégâts supplémentaires (22% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 35% des dégâts infligés. (Non cumulable)"
+[c][e28002]Œil-de-Chat (Effet de Compétence, non cumulable) : [-][/c]
+Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Basique, elle infligera des dégâts supplémentaires (22% des PV perdus de/des l\'ennemi(s)) à l\'/aux ennemi(s) (1500% de la valeur d\'Attaque de cette alliée au maximum) et récupérera des PV équivalent à 35% des dégâts infligés."
 754016021,Cassie,Œil-de-Chat,"Augmente l'Attaque de 32%, les PV de 25%, les Dégâts Critiques de 40%, la Résistance aux Dégâts de 30% et la Vitesse de 60."
 754016022,Cassie,Œil-de-Chat,"Augmente l'Attaque de 32%, les PV de 27%, les Dégâts Critiques de 40%, la Résistance aux Dégâts de 30% et la Vitesse de 65."
 754016023,Cassie,Œil-de-Chat,"Augmente l'Attaque de 32,5%, les PV de 27%, les Dégâts Critiques de 40%, la Résistance aux Dégâts de 30% et la Vitesse de 65."
@@ -10020,7 +10020,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (300% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10032,7 +10032,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (600% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10044,7 +10044,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1200% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10058,52 +10058,52 @@ L\'Attaque Basique inflige 100% d\'Attaque à 3 ayant le moins de PV. Si ces 3 e
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 65601903,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 140% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (140% de l\'Attaque de Carmen & Bianca) et auront 70% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 65601913,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 300% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (300% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 75600903,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 300% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (300% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 5600904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 50% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 30% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 65601904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 150% de l\'Attaque de Carmen & Bianca et la Vitesse de Carmen & Bianca sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 50% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 65601914,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 300% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 75600904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 300% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009011,Carmen & Bianca,Ailes Mortelles,"
 Ô papillons, battez des ailes ! Inflige 510% d\'Attaque à 3 ennemis aléatoires (Carmen & Bianca cibleront les ennemis avec le plus de couches de [c][e28002]Papillon Venimeux[-][/c] en priorité).
 Inflige 510% d\'Attaque à tous les ennemis marqués avec [c][e28002]Papillon Venimeux[-][/c].
@@ -10112,7 +10112,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1260% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10124,7 +10124,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1320% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10136,7 +10136,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1380% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10148,7 +10148,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1440% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10160,7 +10160,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1500% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10175,65 +10175,65 @@ L\'Attaque Basique inflige 306% d\'Attaque à 3 ayant le moins de PV. Si ces 3 e
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009032,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 312% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (312% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009033,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 318% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (318% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009034,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 324% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (324% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009035,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 2 couches de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 330% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (330% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 2 couches de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009041,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 306% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009042,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 312% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009043,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 318% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009044,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 324% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 756009045,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 330% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 75% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaque leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (S\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
 5501100,Maïa,Attaque Basique,Attaque Basique
 65502000,Maïa,Attaque Basique,Attaque Basique
 75501000,Maïa,Attaque Basique,Attaque Basique
@@ -10753,7 +10753,7 @@ Si Lord Dracula réussit à bloquer cette attaque, elle infligera 864% d\'Attaqu
 Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (6% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
 751017045,Lord Dracula,Toile Sanglante,"
 Votre sort est entre mes mains. Lorsque Lord Dracula est attaquée (Compétence Active ou Attaque Basique), elle infligera 440% d\'Attaque à l\'attaquant.
-Si Lord Dracula réussit à bloquer cette attaque, elle infligera 832% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
+Si Lord Dracula réussit à bloquer cette attaque, elle infligera 880% d\'Attaque à 2 ennemis aléatoires et le marquera avec [c][01a310]Veine Pourpre[-][/c] pendant 2 tours.
 
 [c][01a310]Veine Pourpre：[-][/c]
 Dégâts sur la Durée. Lorsqu\'un ennemi est marqué avec Veine Pourpre, Lord Dracula lui infligera immédiatement des dégâts (7% des PV perdus de cet ennemi) et lui infligera encore une fois ces dégâts à la fin de chaque tour jusqu\'à ce que toutes les couches de Veine Pourpre disparaissent (les dégâts infligés à chaque tour ne peuvent pas dépasser 2500% d\'Attaque de Lord Dracula). Lord Dracula récupèrera ensuite des PV équivalent à 25% de tous les dégâts infligés par Veine Pourpre."
@@ -11725,13 +11725,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 Inflige des dégâts à 1 ennemi aléatoires et le marque avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours.
 
 [c][01a310]Venin Hydrique (cumulable) : [-][/c]
-Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 500% d\'Attaque de Chimère des Océans, elle inflige directement 500% d\'Attaque à la cible marquée)."
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 50% d\'Attaque de Chimère des Océans, elle inflige directement 50% d\'Attaque à la cible marquée)."
 574,Chimère des Océans,Attaque Basique,"
 Son Attaque Basique inflige des dégâts à 3 ennemis aléatoires et les marque avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours.
 
 [c][01a310]Venin Hydrique (cumulable) : [-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 50% d\'Attaque de Chimère des Océans, elle infligera directement 50% d\'Attaque à la cible marquée)."
-2000030010,Chimère des Océans,Aqua-Canon,Inflige des dégâts à tous les ennemis et a des chances de [c][01a310]geler[-][/c] l'ennemi ayant l'Attaque la plus élevée pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
+2000030010,Chimère des Océans,Aqua-Canon,Inflige des dégâts à tous les ennemis et a des chances de les [c][01a310]geler[-][/c] pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 2000030020,Chimère des Océans,Menace Continue,Ressuscite immédiatement et renforce ses compétences après chaque résurrection.
 2000030030,Chimère des Océans,Joyau Marin,"
 Au début de la bataille, Chimère des Océans obtient une [c][e28002]Barrière[-][/c] équivalent à 50% de ses PV.

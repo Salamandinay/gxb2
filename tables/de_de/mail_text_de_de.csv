@@ -11,7 +11,7 @@ id,name,from,content
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
 11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Holzschleuder *2 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
-13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
+13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1 und Spielenergie *10 zu erhalten. Hier sind deine Belohnungen."
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
 15,Tötungsbelohnungen,Systembenachrichtigung,Herzlichen Glückwunsch! Der Freundesboss wurde von dir getötet. Du erhältst die folgenden Belohnungen!
 16,Belohnungen (Freundesboss),Systembenachrichtigung,Der Freund BOSS wurde erfolgreich besiegt. Herzlichen Glückwunsch zu den folgenden Belohnungen!
@@ -250,13 +250,17 @@ Du hast bereits {1} 5-Sterne Mädchen, {2} 6-Sterne Mädchen und {3} 10-Sterne M
 224,Belohnungen zur Aufstiegsprüfung,Event-Mail,"Gratuliere, du hast an der Super Kapselmaschine {1} Mal gezogen und folgende Belohnungen im Event ""Aufstiegsprüfung"" erhalten."
 225,Premium Belohnungen zur Aufstiegsprüfung,Event-Mail,"Gratuliere, du hast an der Super Kapselmaschine {1} Mal gezogen und die Premium Belohnungen im Event ""Aufstiegsprüfung"" entsperrt und folgende Belohnungen erhalten!"
 226,Belohnungen - 0€-Investment,Event-Mail,"Liebe(r) Senpai,\n\ndie Belohnungen, die du im Event ""0€-Investment"" noch nicht gesammelt hast, werden hierzu per Mail gesendet! Bitte sammle sie ein!"
-227,Hinweis auf Eventende (Kapselsimulator),Event-Mail,"
-Liebe(r) Senpai,
-
-das Event ""Kapselsimulator"" wird in knapp 24 Stunden beendet. Nach dem Ende des Events werden deine restlichen Tauschmünzen automatisch nach der Reihe gegen die gespeicherte Mädchen (Reserve) eingetauscht, bis alle Tauschmünzen verwendet werden. Die Mädchen-Fragmente werden per Mail gesendet.
-
-Gibt es nach dem Tauschen aller Reserven noch verfügbare Tauschmünzen, werden sie entfernt. Ziehe schnell die Kapseln und tausche die gewünschten Mädchen!"
+227,Hinweis auf Eventende (Kapselsimulator),Event-Mail,"Liebe(r) Senpai,\n\ndas Event ""Kapselsimulator"" wird in knapp 24 Stunden beendet. Nach dem Ende des Events werden deine restlichen Tauschmünzen automatisch nach der Reihe gegen die gespeicherte Mädchen (Reserve) eingetauscht, bis alle Tauschmünzen verwendet werden. Die Mädchen-Fragmente werden per Mail gesendet. Ziehe schnell die Kapseln und tausche die gewünschten Mädchen!"
 228,Tauschmünzen autom. verwendet,Event-Mail,"Liebe(r) Senpai,\n\ndas Event ""Kapselsimulator"" wurde beendet. Die noch nicht verwendeten Tauschmünzen werden automatisch nach der Reihe die Mädchen (Reserve), die du im Event gezogen und gespeichert hast, eingetauscht. Die Mädchen-Fragmente werden hierzu per Mail gesendet. Bitte sammle sie ein."
 229,Rangbelohnung (Arena),Systembenachrichtigung,"Gratuliere, du hast Top {1} in der Arena erreicht und erhältst einen limitierten Avatarbildrahmen! Der Rahmen ist gültig für 14 Tage und kann unter ""Persönliche Info"" geprüft werden."
 230,Überserver-Arena beginnt,Systembenachrichtigung,"Lieber Senpai, die Überserver-Arena hat begonnen. Spiele schnell die neueste Version und erober die Überserver-Arena!"
 231,Arena wird upgegradet,Systembenachrichtigung,"Lieber Senpai, die aktuelle Saison in der Arena auf deinem Server wird {1} Tage dauern und nach dem Ende dieser Saison wird die Überserver-Arena eingeführt, in der auch die Spieler anderer Servern gegen dich kämpfen werden. Bereite dich vor!"
+232,Belohnungen zum Trainingskurs,Systembenachrichtigung,"Lieber Senpai, um dir ein besseres Spielerlebnis zu ermöglichen, hat das Entwicklungsteam die Funktion ""Trainingskurs"" optimiert. Alle Trainingskurse wurden bereits abgerechnet und die Belohnungen werden hierzu per Mail gesendet. Bitte sammle sie ein."
+233,Belohnungen (Pass zum Buchheiligtum),Systembenachrichtigung,"
+Liebe(r) Senpai,
+
+aufgrund vom Zurücksetzen der monatlichen Events wurde die Dauer des Events „Pass zum Buchheuligtum“ gewissermaßen verkürzt, sodass nicht alle Punktaufgaben richtig vor dem Ende des Passes fertig abgeschlossen werden können
+
+Hierzu werden die Belohnungen, die allen noch nicht abgeschlossenen Punktaufgaben entsprechen, per Mail gesendet. Bitte sammle sie ein.
+
+Wir entschuldigen uns für alle dadurch entstandenen Unannehmlichkeiten. Solltest du weitere Fragen haben, wende dich bitte gerne an uns."

@@ -12309,11 +12309,11 @@ When the owner is healed, the ally of the caster of this Skill Effect that has t
 A Skill Effect that can stack.
 Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 2000030000,Sea Chimera,Basic Attack,"
-Sea Chimera deals damage based on Attack to 1 random enemy and afflicts them with [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds.
+Sea Chimera\'s Basic Attack changed to dealing damage based on Attack to 1 random enemy and afflicting the target with [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds.
 
 [c][01a310]Liquid Poison[-][/c]:
 A Damage Over Time effect that can stack.
-Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round. If damage dealt is lower than 500% of the caster\'s Attack, then this effect will deal damage equivalent to 500% of the caster\'s Attack."
+Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster\'s Attack, then this effect will deal damage equivalent to 50% of the caster\'s Attack."
 574,Sea Chimera,Basic Attack,"
 Sea Chimera\'s Basic Attack changed to dealing damage based on Attack to 3 random enemies and afflicting them with [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds.
 
@@ -12321,7 +12321,7 @@ Sea Chimera\'s Basic Attack changed to dealing damage based on Attack to 3 rando
 A Damage Over Time effect that can stack.
 Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster\'s Attack, then this effect will deal damage equivalent to 50% of the caster\'s Attack."
 2000030010,Sea Chimera,Aqua Cannon,"
-Sea Chimera deals damage based on Attack to all enemies, and has a chance to [c][e28002]Freeze[-][/c] the enemy with highest Attack for 2 Rounds.
+Sea Chimera deals damage based on Attack to all enemies, and has a chance to [c][e28002]Freeze[-][/c] the targets for 2 Rounds.
 
 [c][e28002]Freeze[-][/c]:
 A Control Effect.

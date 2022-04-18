@@ -11,7 +11,7 @@ id,name,from,content
 10,Summon Girl Rewards,Summon Rewards,Congratulations on summoning {1} during the event. Your rewards are available in Mail on the FrontPage.
 11,Daily Rewards,System Message,Login every day during event and you can collect Adv. Capsule Coin x 3 and Easter Slingshot x 2.
 12,Capsule Reward,System Message,"Congratulations, you've completed {1} Adv. Capsule Draws during event Girls X Capsule Points, here's your reward."
-13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Lucky Coin x 2. Your rewards are attached."
+13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Jackpot Energy x 10. Your rewards are attached."
 14,Enroll Rewards,System Message,Congratulations on reaching {1} points during the Enroll event. Here are your rewards~!
 15,Boss Fight Rewards,System Message,Congratulations on defeating your friend's Boss. You have received the following rewards for your service!
 16,Boss Fight Rewards,System Message,The friend BOSS you found has been defeated. You have received the following rewards for your help!
@@ -231,8 +231,20 @@ Yuki apologizes for the inconvenience, for any further queries, please don’t h
 224,Promotion Exam Reward,Event Mail,"Congratulations, you've pulled {1} Adv. Capsules during the event, here's your reward!"
 225,Promotion Exam A+ Reward,Event Mail,"Congratulations, you've pulled {1} Adv. Capsules during the event, here's your extra reward!"
 226,Investment Reward,Event Mail,"Dear Senpai, the unclaimed rewards for event: ""Beginner Investment"" is attached in the mail, please check it out!"
-227,Capsule Simulator,Event Mail,"Dear Senpai, the event: Capsule Simulator will end in 24 hours. After the event is over, your remaining Simulation Coins will automatically be exchanged for the Capsule Simulation Results you have saved in Slots (based on the order of Slots), the Girls will be sent to you via Mail. If no simulation results have been saved, your remaining Simulation Tokens will automatically be removed from your account."
+227,Capsule Simulator,Event Mail,"Dear Senpai, the event: Capsule Simulator will end in 24 hours. After the event is over, your remaining Simulation Coins will automatically be exchanged for the Capsule Simulation Results you have saved in Slots (based on the order of Slots), the Girls will be sent to you via Mail. Please remember to exchange your ideal results in time!"
 228,Simulation Item Retrieve,Event Mail,"Dear Senpai, the event: ""Capsule Simulator"" is over. Your remaining Simulation Coins are automatically used to exchange the Capsule Simulation Record you saved in Slots during the event (based on the order of Slots). Here are the Girls you get, please check it out."
 229,Junior Varsity Rank Reward,System Message,"Dear Senpai, congratulations on reaching top {1} of the current season of Junior Varsity! Congratulations! Here is your limited Frame for your efforts! It will be available for 14 days, try it on now!"
 230,Cross-Server Junior Varsity,System Message,"Dear Senpai, Cross-Server Junior Varsity has begun! Let's go and check it out!"
 231,Junior Varsity Hint,System Message,"Dear Senpai, your current season of Junior Varsity will last for {1} days, a new Cross-Server Junior Varsity will be updated after this season ends. Please get ready for the new challenges!"
+232,Servant Training Reward,System Message,"Dear Senpai, in order to improve your game experience. The Dev Team has optimized the Servant Training Feature. Your current Servant Training Courses are all completed and we have included the rewards for finishing the courses in this Mail, please check it out!"
+233,Sanctuary Pass Reward,System Message,"
+Dear Senpai, due to the reset rule of Monthly events, the remaining duration of this month\'s Sanctuary Pass event is insufficient for you to obtain enough Sanctuary Points to claim all the rewards before the end of this season.
+
+In response to this issue, we\'ve included the Sanctuary Pass Rewards you were unable to get in this Mail.
+
+We would like to apologize for any inconvenience and confusion caused and thank you for your patience and understanding.
+
+If you have any more doubts or questions, please do not hesitate to contact GM Yuki via the in-game GM channel.
+
+Regards,
+GXB2 Admin Team"
