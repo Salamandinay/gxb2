@@ -1,0 +1,102 @@
+id,buff_id,plus_minus,name,sec
+1,atk|atkP|siphonAtk|vanity,1,Attack Buff,Increases a Girl's Attack.
+2,hp|hpP|addHpLimit,1,HP Buff,Increases a Girl's HP.
+3,arm|armP|siphonArm,1,Armor Buff,Increases a Girl's Armor.
+4,spd|spdSteal,1,Speed Boost,Increases a Girl's Speed.
+5,sklP,1,Skill Damage Boost,Increases a Girl's Skill Damage.
+6,hit,1,Precision Boost,Increases a Girl's Precision.
+7,miss|missLimit2,1,Block Boost,Increases a Girl's Block.
+8,crit,1,Crit Chance Buff,Increases a Girl's Crit.
+9,critTime|critTimeBlood,1,Crit Damage Buff,Increases a Girl's Crit Damage.
+10,brk,1,Armor Break Buff,Increases a Girl's Armor Break.
+11,free,1,Control Immunity Boost,Increases a Girl's Control Immunity.
+12,trueAtk,1,Holy Damage Buff,Increases a Girl's Holy Damage.
+13,decDmg|decDmgBlood|decDmgNadd|allHarmDec,1,Damage Reduction Buff,Increases a Girl's Damage Reduction.
+14,healB,1,Heal Received Boost,Increases a Girl's Heal Received.
+15,healI,1,Heal Amount Boost,Increases a Girl's Heal Amount.
+16,atk|atkP|siphonAtk|vanity,2,Attack Debuff,Reduces a Girl's Attack.
+17,hp|hpP,2,HP Debuff,Reduces a Girl's HP.
+18,arm|armP|siphonArm,2,Armor Debuff,Reduces a Girl's Armor.
+19,spd|spdSteal,2,Speed Debuff,Reduces a Girl's Speed.
+20,sklP,2,Skill Damage Debuff,Reduces a Girl's Skill Damage.
+21,hit,2,Precision Debuff,Reduces a Girl's Precision.
+22,miss|missLimit2,2,Block Debuff,Reduces a Girl's Block.
+23,crit,2,Crit Chance Debuff,Reduces a Girl's Crit.
+24,critTime|critTimeBlood,2,Crit Damage Debuff,Reduces a Girl's Crit Damage.
+25,brk,2,Armor Break Debuff,Reduces a Girl's Armor Break.
+26,free,2,Control Immunity Debuff,Reduces a Girl's Control Immunity.
+27,trueAtk,2,Holy Damage Debuff,Reduces a Girl's Holy Damage.
+28,decDmg|decDmgBlood|decDmgNadd,2,Damage Reduction Debuff,Reduces a Girl's Damage Reduction.
+29,healB,2,Heal Received Debuff,Reduces a Girl's Heal Received.
+30,healI,2,Heal Amount Debuff,Reduces a Girl's Heal Amount.
+31,weak,,Weaken Mark,"A Mark Effect. Girls with ""Weaken"" status will take extra damage. This status cannot be stacked."
+32,stun,,Stun,"A Control Effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+33,ice,,Freeze,"A Control Effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+34,stone,,Petrify,"A Control Effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+35,forbid,,Silence,"A Control Effect. During this effect, girls affected will not be able to release their Active Skills."
+36,hot|healP,,HP Regeneration,"Girls with ""HP Regeneration"" effects will regenerate her HP at the beginning of a round."
+37,dotPoison,,Poison,"A Damage Over Time effect. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+38,dotBlood,,Bleed,"A Damage Over Time effect. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+39,dotFire,,Burn,"A Damage Over Time effect. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+40,rImpress,,Round Mark,A Mark Effect. The Round Mark will be removed 1 round after it is applied and deal damage at the same time. This effect can stack.
+41,cImpress,,Critical Strike Mark,A Mark Effect. The Critical Strike Mark will be removed and deal damage if the owner takes crit damage. This effect can stack.
+42,fImpress,,Yinyang Mark,A Mark Effect. Girls tagged with the Yinyang Mark takes more damage from Priestess. This effect can stack.
+43,oImpress,,Hornet Mark,A Mark Effect. Girls tagged with the Hornet Mark takes more damage. Can be stacked up to 300% extra damage.
+44,dotTwins,,Bringers of Fate,"Girls targeted with this effect will take damage when this effect is applied, and at the start of the next round."
+45,aggression,,Pursue,"A Skill effect. When a Girl who has stacks of Pursue triggers her Active Skill, all stacks of Pursue will be consumed. Each stack of Pursue deals damage against the enemy with the lowest HP and Bleeds them."
+47,frighten,,Terrorize,"A Control Effect. During this effect, girls affected will not be able to perform Basic Attacks."
+48,decDmgShieldLimit5,,Shield of Darkness,A Skill Effect. Provides Control Immunity and Damage Reduction to the owner. This effect can be stacked up to 5 stacks.
+49,balanceImpressLimit30,,Equilibrium Mark,A Mark Effect. Girls take damage based on their Maximum HP when using their Active Skills. Damage taken will not surpass 3000% of Nephilim's Attack. This effect cannot stack.
+50,tearLimit2,,Disintegration,A Mark Effect. Reduces the owner's Block and increases damage taken from Damage Over Time Effects.
+51,getImmenu,,Disrespect,"A Skill Effect. When Rogue is afflicted by a Control Effect, allows her to remove 1 stack of Disrespect to negate it."
+52,getReflect,,Dauntless,A Mark Effect. Rogue removes 1 stack of Dauntless to reduce and reflect a part of damage taken from Active Skills and Basic Attacks aimed at her.
+53,moonShadow,,Moonlight Shadow,"A Skill Effect. When allies are hit with Active Skills or Basic Attacks, has a chance to cleanse 2 debuffs from the attacked ally. This effect can only be triggered for a limited number of times per round. At the end of each round, heals the ally with the lowest HP. Effect discontinues if the caster of this effect is defeated."
+54,starMoon,,Galaxy,"A Skill Effect. When Vivian takes damage or Debuff, the enemy Vivian tags Galaxy on will also take some of the damage and have a chance to take the same Debuff."
+55,fragranceGet,,Remnant,A Skill Effect. The owner can gain additional Damage Reduction from each stack of Remnant she has.
+56,getAbsorbShield,,Lily Shield,"This buff effect neutralizes damage of next Basic Attack or Active Skill Damage received and transforms the neutralized damage into healing (damage dealt by Servants, Passive skill and Marks not included)."
+57,getHealCurse,,Healing Curse,A Skill Effect. Converts the next Healing effect the target receives into Damage (The healing dealt by Servants will not be affected by Healing Curse).
+59,getLeaf,,Diminish,"A Skill Effect. The owner of this effect takes more damage and deals less damage. When the owner deals a Basic Attack or releases an Active Skill, takes damage based on their Maximum HP. This effect cannot stack."
+60,getThorns,,Lullaby,A Skill Effect. The owner of this effect will be able to deal damage that ignores armor to the attacker and heal herself (based on the owner's Attack) when taking damage from an Active Skill or Basic Attack.
+62,apateRevive,,Volos,A Skill Effect. The owner of this effect deals damage based on the amount of HP the target has lost on the enemy with the lowest HP.
+63,ReduceSpd,,Anoxia,A Mark Effect. Every stack of this effect reduces the owner's Speed. This effect can stacked up to 5 stacks.
+64,absorbDamage,,Wind Shield,A Skill Effect. Reduces all damage taken by the owner of this effect. This effect can only trigger once.
+65,xifengSpd,,Wind Rush,A Skill Effect. Increases Speed of the owner of this effect in battle until Skye is defeated.
+67,ridicule,,Taunt,"A Control Effect. The owner of this effect will compulsively target the caster of this effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+68,outBreak,,Berserk,A Skill Effect. Active Skills and Basic Attacks dealt by the owner of this effect will be Critical Strikes and cannot be blocked.
+69,atkImpressBonus,,Hunter's Mark,"A Mark Effect. When the caster of this effect attacks the owner of this effect, each Hunter's Mark stacked will increase Attack Damage and Crit Damage dealt. If the owner of this effect is defeated, the Girl with the highest Attack attribute in the owner's team will take damage from Von Helsing."
+70,suckRealBloodGet,,Blood Thirst,"A Skill Effect. When the owner of this effect releases her Active Skill, all stacks will be released, dealing damage to the target of the Active Skill and healing the owner of this effect for the equivalent amount of HP as damage dealt."
+71,trueVampire,,Feast Mode,"A Skill Effect. The owner of this effect gains extra Crit, Control Immunity, Precision, and becomes immune to Bleed."
+72,sameAtk,,Moon Dust,"A Skill Effect. When the caster of this effect deals a Basic Attack or releases an Active Skill, she will additionally deal the same attack once to the owner of this effect and heal herself based on the damage dealt."
+73,mistletoe,,Parasite,A Skill Effect. Reduces Attack and Heal Received of the enemies inflicted with Parasite. This effect can be stacked up to 3 stacks.
+74,teleishaRecoverCost,,Righteous Might,"A Skill Effect. Used to trigger Teresa's Passive skill: ""Righteous Protection""."
+75,sunArrow,,Sun Slayer,A Skill Effect. Angelica will Hunt the enemy with the lowest HP percentage the same number of times as the stacks of Sun Slayer that she has when she triggers Active Skills and Basic Attacks.
+76,feisinaExplode,,Dark Star Mark,"A Mark Effect. Detonates at the end of the round dealing damage according to the damage the mark carrier takes from Active Skills and Basic Attacks in the round. If the target is already tagged with a Dark Star Mark when a second one is tagged, deals damage according to the target's maximum HP."
+77,feisinaWeak,,Blood Prison,"A Skill Effect. Reduces the owner's Armor, Damage Reduction, Damage Depletion, Block and chance to Dodge, cannot be stacked."
+78,feisinaMiss,,Blood Ring,A Skill Effect. Increases the owner's chance of Dodging enemies' Active Skills and Basic Attacks.
+79,kaixiHurtDmg,,Cat Eyes,"A Skill Effect. When the owner of this effect releases an Active Skill or deals a Basic Attack, deals extra damage based on the target's total lost HP and heals the owner based on total damage dealt by the owner."
+80,mistletoeNew,,Parasite,A Skill Effect. Reduces Attack and Heal Received of the owner of this effect. This effect can be stacked up to 3 stacks.
+81,naturalLaw,,Natural Order,"A Skill Effect. When enemies release their Active Skills, deals a Basic Attack, or trigger Passive Skills that affect random enemies, they will target the owner of this effect first. When the owner of this effect takes damage from any source, if the attacker is afflicted with Parasite, she will be healed for a percentage of her Maximum HP."
+82,futureObserve,,Future Observation,"A Skill Effect. Consumed to trigger Monica's passive skill ""Rewind""."
+83,fateWheel,,Wheel of Fate,"A Skill Effect. Resets the trigger limit of ""Rewind"" of the owner of this effect, grants the owner Attack and Extra Control Rate boosts, and heals the owner when the caster of this effect is healed."
+84,timeRule,,Laws of Time,A Skill Effect. Reduces the owner's Heal Received and Control Immunity.
+85,magicShoot,,Grievous Wound,A Skill Effect. Reduce the owner's Heal Received and Damage Depletion.
+86,dianaDie,,Nightmare,"A Skill Effect. Deals damage to the owner at the end of each Round. When the owner is defeated, deals damage to all enemies."
+87,lubanHurtB,,Aether Leakage,A Skill Effect. Increases direct damage taken by the owner of this effect.
+88,lubanHurtC,,Aether Exhaustion,A Skill Effect. Increases direct damage taken and reduces Heal Received of the owner of this effect.
+89,deathSpd,,Premonition,A Skill Effect. Reduce the target's Speed.
+90,luobiMark,,Laser Charge,"A Skill Effect. Each stack grants Energy Removal Resist and can be stacked up to 5 stacks. When releasing her Active Skill, the owner of this effect will release all stacks of Laser Charge, and deal the same attack as the Active Skill and afflict the same effects once to 1 random Backline enemy for each stack."
+91,kawenMark,,Gilded Butterflies,"A Skill Effect. Increases the chance for the owner of this effect to take Critical Strikes from the caster of this effect and Crit Damage of Critical Strikes dealt by the caster. When the caster is attacked by the owner, her Frontline allies will help take some damage for her and split damage taken between themselves."
+92,mayaBuffResist,,Malediction,"A Mark Effect. This Mark will be triggered when the owner of the Mark gains an Attribute Increase Buff. Every stack of Malediction will remove 1 stack of Attribute Increase Buff and deal damage based on the caster's Attack to the owner, and the stacks will be removed after being triggered."
+93,mayaHpLoseSeal,,Chaos Scar,A Skill Effect. Every stack of this effect lowers the Maximum HP and Heal Received of the owner of this effect. Maximum HP lowered by this effect cannot be recovered through healing effects.
+94,snowWindMix,,Blessings of Snow,"A Skill Effect. Increases the owner's Energy when she is Attacked, as well as her Heal Received and Damage Depletion."
+95,hpShield,,Magick Barrier,"A Skill Effect. Nullifies all incoming damage for the owner. The Magick Barrier's durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier's BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner's maximum HP) BP."
+96,degulaDebuff,,Sanguine Snare,"A Damage Over Time effect. Girls with ""Sanguine Snare"" will take damage according to their maximum HP at the end of each round. The same amount of damage will also be dealt when the effect is inflicted. When Sanguine Snare deals damage, it will heal the caster of this effect."
+97,degulaCount,,Blood Bats,A Skill Effect. Used to boost the damage of Sanguine Snare.
+98,hpShieldFromHeal,,Cubic Stronghold,A Skill Effect. Grants additional Magick Barrier according to the healing received.
+99,xigemaPower,,Matric Reinforcement,A Skill Effect. Grants the owner additional Control Immunity and Precision.
+100,hpShieldRecover,,Zephyr's Blessing,"A Skill Effect. At the end of every round, the owner of this effect recovers HP and gains a Magick Barrier with BP equivalent to the amount of HP healed. Reduces the amount of BP lost when the Magick Barrier nullifies damage for the owner."
+101,getLight|addGetLight,,Scars of Belinus,"A Skill Effect. When a Girl holds 2 stacks of this effect, all stacks of this effect will be removed and triggers Trial of Belinus that lasts for 2 rounds."
+102,wulieerSeal,,Trial of Belinus,"A Control Effect. During this effect, girls affected will not be able to trigger their Passive Skills. When the owner of this effect loses this effect, they will take damage that doesn't surpass 1500% of the caster's Attack."
+103,fullEnergyHurt,,Resonant Mark,"A Mark Effect. Triggers when the owner of this mark has 100 or more Energy, deals damage to the owner for every 1 Energy that the owner has, and removes all Energy from the owner. This mark will be removed after it is triggered."
+104,qianheziHeal,,Crane's Plume,"A Skill Effect. The owner of this effect takes more damage from all sources and has their Attack lowered. When the owner is healed, the Girl that has the lowest HP on the caster's side will recover the same amount of HP as the owner, and the Girl that has the lowest HP on the owner's side will take damage equivalent to the amount of HP healed. This effect can only be triggered up to 10 times per round."
+105,qianheziDec,,Luminosity,"A Skill Effect. The owner of this effect becomes immune to the next two instances of damage dealt to them. This effect will be removed after the owner takes damage twice. When the owner gains this effect again, this effect will be reset to its default state. The owner gains a Magick Barrier with BP equivalent to the amount of damage this effect nullified when this effect is removed or reset."
