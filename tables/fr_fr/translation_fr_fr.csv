@@ -482,7 +482,7 @@ VIP_TEXT06,Total
 MONTH_CARD,Carte\nMensuelle
 MINI_MONTH_CARD,Petite Carte Mensuelle
 RETAIN,Restant :
-ARENA_BATTLE_TIPS,Mettez les Filles défensives en première ligne
+ARENA_BATTLE_TIPS,Mettez les Filles défensives en ligne avant
 HEAD_POS,Avant
 BACK_POS,Arrière
 DEF_PARTNER,Fille défensive
@@ -1062,7 +1062,7 @@ ARENA_TEAM_NO_TEAM_TIPS,"Senpai, assemblez votre équipe !"
 ARENA_TEAM_FORCE_LIMIT,Le puissance doit être entre 1~999999
 ARENA_TEAM_NAME_LIMIT,Choisissez le nom de l'équipe entre 4~12 caractères.
 RESET_TEAM,Ajustement
-ARENA_TEAM_HELP,"Règles de la Bataille|1. L'Arène 3v3 est ouverte du Jeudi 00:00 au Vendredi 00:00 (UTC/GMT 0).|2. Après être entré dans l'Arène 3v3, vous pouvez choisir une équipe à rejoindre ou créer votre propre équipe et invitez des joueurs.|3. Vous ne pouvez rejoindre qu'une équipe de votre serveur.|4. Seul le Chef de l'équipe peut arranger les Combats et choisir l'équipe adverse. Les membres ne peuvent que voir l'historique de bataille.|5. Chaque équipe n'a que 6 d'endurance au début. Chaque heure vous récupérez 1 point d'endurance, et ne pouvez en avoir que 12 en tout. Chaque bataille consume 1 d'endurance.|6. Vous devez au moins mettre une Fille dans votre équipe et vous pouvez ajuster votre équipe à tout moment.|7. Chaque match est divisé en 3 Batailles. L'équipe ayant gagné 2 batailles sera déclarée victorieuse.|8. Vainquez toutes les Filles de l'équipe adverse pour gagner la Bataille.|9. Si les batailles durent plus de 15 tours, le pourcentage d'Attaque de toutes les Filles ( incluant les Filles ennemies ) sera augmenté à chaque tour, ainsi le pourcentage de Soin Reçu sera également baissé. Vous gagnez la bataille à condition que toutes les Filles ennemis soient éliminées.|10. Après chaque bataille, l'équipe gagnante gagne des points et l'équipe perdante perd des points.|11. Vous pouvez voir vos 10 dernières batailles dans l'Historique de Bataille.||Règles de Récompenses|Quand l'événement sera terminé, vous recevrez des récompenses de classement."
+ARENA_TEAM_HELP,"Règles de la Bataille|1. L'Arène 3v3 est ouverte du Jeudi 00:00 au Vendredi 00:00 (UTC/GMT 0).|2. Après être entré dans l'Arène 3v3, vous pouvez choisir une équipe à rejoindre ou créer votre propre équipe et invitez des joueurs.|3. Vous ne pouvez rejoindre qu'une équipe de votre serveur.|4. Seul le Chef de l'équipe peut arranger les Combats et choisir l'équipe adverse. Les membres ne peuvent que voir l'historique de bataille.|5. Chaque équipe n'a que 6 d'endurance au début. Chaque heure vous récupérez 1 point d'endurance, et ne pouvez en avoir que 12 en tout. Chaque bataille consume 1 d'endurance.|6. Vous devez au moins mettre une Fille dans votre équipe et vous pouvez ajuster votre équipe à tout moment.|7. Chaque match est divisé en 3 Batailles. L'équipe ayant gagné 2 batailles sera déclarée victorieuse.|8. Vainquez toutes les Filles de l'équipe adverse pour gagner la Bataille.|9. Si les batailles durent plus de 15 tours, le pourcentage d'Attaque de toutes les Filles ( incluant les Filles ennemies ) sera augmenté à chaque tour, ainsi le pourcentage de Soin Reçu sera également baissé. Vous gagnez la bataille à condition que toutes les Filles ennemis soient éliminées.|10. Après chaque bataille, l'équipe gagnante gagne des points et l'équipe perdante perd des points.|11. Vous pouvez voir vos 10 dernières batailles dans l'Historique de Bataille.|12. Après avoir soumis les équipes de Guilde et avoir participé à une bataille, les équipes de Guilde ne pourront plus être modifiées.||Règles de Récompenses|Quand l'événement sera terminé, vous recevrez des récompenses de classement."
 NEXT_RECOVER_TIME,Prochain point d'endurance
 ARENA_TEAM_AWARDS_NO_TEAM_TIPS,Vous n'avez pas encore d'équipe et donc pas de classement !
 ARENA_TEAM_RECORD_NO_TEAM_TIPS,Rejoignez tout d'abord l'Arène 3v3 !
@@ -4484,7 +4484,7 @@ PET_TRAINING_TEXT14,Salle d'Entraînement
 PET_TRAINING_TEXT15,Les récompenses d'amélioration vous seront envoyées par courrier.
 PET_TRAINING_TEXT16,Débloquer\nSalle d'Entr. Niv.{1}
 PET_TRAINING_TEXT17,Récompenses Bonus : {1}
-PET_TRAINING_HELP,"Salle d'Entraînement du Serviteur|1. Entraînez votre Serviteur et défiez les Épouvantails pour obtenir de l'EXP de la Salle d'Entraînement du Serviteur et des Cristaux du Serviteur.|2. Après avoir cumulés assez d'EXP de la Salle d'Entraînement du Serviteur, vous pourrez améliorer le niveau de votre Salle et ainsi débloquer différents types d'Entraînements et différents niveaux d'Épouvantails.||Entraînement du Serviteur|1. Chaque Entraînement nécessite 1 à 3 Serviteurs, les récompenses dues peuvent être collectées une fois l'Entraînement complété.|2. Des récompenses bonus sont obtenables en fonction du total de la somme des niveaux des Serviteurs sélectionnés pour l'Entraînement.|3. Trois Entraînements au maximum peuvent être effectués en même temps.||Défi de l'Épouvantail|1. Seuls les Serviteurs de niveau 120 (et +) peuvent défier l'Épouvantail.|2.Vous possédez 3 Chances de Défis, et chacun de vos Serviteurs possèdent 2 Énergies par jour. Votre Serviteur a besoin d'1 Énergie pour pouvoir défier l'Épouvantail.|3. Vous utiliserez 1 Chance de Défi et 1 Énergie chaque fois que vous défierez l'Épouvantail. Vous pouvez utiliser des Gemmes pour obtenir de l'Énergie du Serviteur supplémentaire, deux fois par jour. Chaque Énergie supplémentaire achetée vous donne une chance de défi supplémentaire.|4. Les dégâts infligés à l'Épouvantail dépendent du niveau du Serviteur, de son Aura et de son Noyau Précieux.|5. Les PV de l'Épouvantail seront restaurés uniquement une fois ce dernier vaincu.|6. Vous pouvez changer le niveau de l'Épouvantail à tout moment, ses PV seront cependant réinitialisés.|7. Vous recevrez des récompenses uniques chaque fois que vous défierez l'Épouvantail. Vous recevrez également des récompenses supplémentaires lorsque ce dernier sera vaincu, ces récompenses dépendent du niveau de l'Épouvantail vaincu."
+PET_TRAINING_HELP,"Salle d'Entraînement du Serviteur|1. Entraînez votre Serviteur et défiez les Épouvantails pour obtenir de l'EXP de la Salle d'Entraînement du Serviteur et des Cristaux du Serviteur.|2. Après avoir cumulés assez d'EXP de la Salle d'Entraînement du Serviteur, vous pourrez améliorer le niveau de votre Salle et ainsi prolonger la durée maximale d'Entraînement et différents niveaux d'Épouvantails.||Entraînement du Serviteur|1. Chaque Serviteur s'entraîne automatiquement, les récompenses dues peuvent être collectées une fois l'Entraînement complété.|2. Des récompenses bonus sont obtenables en fonction du total de niveau des Serviteurs.|3. La durée maximale de l'Entraînement est liée au niveau de la Salle d'Entraînement, plus le niveau de la Salle d'Entraînement est élevé, plus la durée maximale de l'Entraînement est longue.||Défi de l'Épouvantail|1. Seuls les Serviteurs de niveau 120 (et +) peuvent défier l'Épouvantail.|2. Vous possédez 3 Chances de Défis, et chacun de vos Serviteurs possèdent 2 Énergies par jour. Votre Serviteur a besoin d'1 Énergie pour pouvoir défier l'Épouvantail.|3. Vous utiliserez 1 Chance de Défi et 1 Énergie chaque fois que vous défierez l'Épouvantail. Vous pouvez utiliser des Gemmes pour obtenir de l'Énergie du Serviteur supplémentaire, deux fois par jour. Chaque Énergie supplémentaire achetée vous donne une chance de défi supplémentaire.|4. Les dégâts infligés à l'Épouvantail dépendent du niveau du Serviteur, de son Aura et de son Noyau Précieux.|5. Les PV de l'Épouvantail seront restaurés uniquement une fois ce dernier vaincu.|6. Vous pouvez changer le niveau de l'Épouvantail à tout moment, ses PV seront cependant réinitialisés.|7. Vous recevrez des récompenses uniques chaque fois que vous défierez l'Épouvantail. Vous recevrez également des récompenses supplémentaires lorsque ce dernier sera vaincu, ces récompenses dépendent du niveau de l'Épouvantail vaincu."
 GUILD_BOSS_MAIL_TITLE,Membre(s) de la Guilde sélectionné(s)
 PET_TRAINING_TEXT18,Achetable {1} fois par jour
 PET_TRAINING_TEXT19,Confirmez-vous l'achat de d'1 Énergie (incluant une chance de défi supplémentaire) valant {1} Gemmes ?
@@ -6025,7 +6025,7 @@ GAME_ASSISTANT_TEXT40,Ordinaire
 GAME_ASSISTANT_TEXT41,Moderne
 GAME_ASSISTANT_TEXT42,Deluxe
 GAME_ASSISTANT_TEXT43,Serviteur
-GAME_ASSISTANT_TEXT44,Récompense d'Entraînement
+GAME_ASSISTANT_TEXT44,Collecter des récompenses
 GAME_ASSISTANT_TEXT45,Entraînement à choisir
 GAME_ASSISTANT_TEXT46,Défier l'Épouvantail
 GAME_ASSISTANT_TEXT47,Achat d'Énergie
@@ -6256,7 +6256,7 @@ ARENA_END_TIPS_TEXT,Fin de Saison dans :
 ACTIVITY_EASTER2022_TITLE,L'Atelier\nde Pâques
 ARENA_NO_FIGHT,Impossible à combattre pour le moment !
 NEW_TRIAL_BATTLEPASS_TEXT21,Acheter le Pass du Sanctuaire
-PEW_TRAINNG_HANGUP_TEXT01,Entraînement en cours ({1})
+PEW_TRAINNG_HANGUP_TEXT01,Entraînement en cours ([c][00b200]{1}[-][/c])
 PEW_TRAINNG_HANGUP_TEXT02,Entraînement terminé
 PEW_TRAINNG_HANGUP_TEXT03,Niveau Total
 PEW_TRAINNG_HANGUP_TEXT04,Récompense
@@ -6272,3 +6272,8 @@ NEW_TRIAL_BATTLEPASS_TEXT23,Voulez-vous utiliser {1} Gemmes pour acheter {2} Poi
 NEW_TRIAL_BATTLEPASS_TEXT24,Vous ne pouvez qu'obtenir 3000 Points du Sanctuaire au maximum !
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TITLE,Achat en masse
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TEXT,Entrez la quantité que vous voulez acheter
+BATTLE_BUFF_SEC,Appuyez sur l'avatar de la Fille pour savoir plus de détails~
+ACTIVITY_JACKPOT_MACHINE_TITLE,Jouer en masse
+ACTIVITY_JACKPOT_MACHINE_TEXT,Entrez le nombre d'Énergie que vous souhaitez utiliser
+BATTLE_BUFF_TITTLE,Détails
+PEW_TRAINNG_HANGUP_TEXT10,"La durée de l'Entraînement est inférieure à 10 minutes, impossible à récupérer des récompenses."

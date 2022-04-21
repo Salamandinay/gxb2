@@ -228,7 +228,7 @@ activity_jackpot_energy_initial,57#15,-1
 activity_jackpot_energy_cd,14400,-1
 activity_jackpot_energy_add,1,-1
 activity_jackpot_energy_limit,20,-1
-activity_jackpot_energy_bet_num,1|2|5|10|20|40,-1
+activity_jackpot_energy_bet_num,1|2|5|10,-1
 activity_jackpot_exchange_item,58,-1
 govern_team_kick_limit,6,-1
 govern_team_join_limit,3,-1
@@ -454,7 +454,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,maya_pifu03_lihui01|365|-1487|0.7|5501104|7253,-1
+activity_45_hero_model,kaixi_pifu03_lihui01|354|-2225|0.63|5401604|7260,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -1066,6 +1066,10 @@ activity_easter2022_cost2,348#1,-1
 activity_easter2022_weight,10000|100|100,-1
 activity_easter2022_dropbox1,32014,-1
 activity_easter2022_dropbox2,32015,-1
-pet_training_hangup_awards2_coefficient,0#1|200#1.05|400#1.10|600#1.15|800#1.20|1000#1.25|1350#1.35|1450#1.40|1550#1.45|1620#1.50,-1
+pet_training_hangup_awards2_coefficient,0#1|200#1.05|400#1.10|600#1.15|800#1.20|1000#1.25|1200#1.30|1350#1.35|1450#1.40|1550#1.45|1620#1.50,-1
 pet_training_hangup_cycle,600,-1
 fair_arena_explore_revive_buff,3,-1
+activity_lost_space_item_cost,349#1,-1
+activity_lost_space_energy_get,350#1,-1
+activity_lost_space_supply1,2,-1
+activity_lost_space_supply2,3,-1

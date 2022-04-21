@@ -71,6 +71,17 @@ function ActivityJackpotMachineData:onJackpotAward(event)
 		end
 
 		xyd.itemFloat(detail.items)
+
+		for i, item in pairs(detail.items) do
+			if xyd.tables.itemTable:getType(item.item_id) == xyd.ItemType.SKIN then
+				xyd.onGetNewPartnersOrSkins({
+					destory_res = false,
+					skins = {
+						item.item_id
+					}
+				})
+			end
+		end
 	else
 		self.detail = detail.act_info
 

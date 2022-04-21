@@ -30,6 +30,7 @@ function PetTraining:onRegister()
 	self:registerEvent(xyd.event.PET_TRAINING_CANCEL_MISSION, handler(self, self.onCancelMission))
 	self:registerEvent(xyd.event.PET_TRAINING_COMPLETE_MISSION, handler(self, self.onCompleteMission))
 	self:registerEvent(xyd.event.PET_LEV_UP, handler(self, self.onPetLevUp))
+	self:registerEvent(xyd.event.PET_TRAINING_GET_AWARD, handler(self, self.onGetTrainingAward))
 end
 
 function PetTraining:onGetPetTrainingInfo(event)
@@ -46,6 +47,7 @@ function PetTraining:onGetPetTrainingInfo(event)
 	self.buyTimeTimes = infos.buy_times
 	self.bossID = infos.boss_id
 	self.bossHp = infos.boss_hp
+	self.hangTime = infos.hang_time
 	self.isInit = true
 
 	self:setRedMark()
@@ -137,6 +139,10 @@ function PetTraining:getMissionNum()
 	end
 
 	return allNum, completeNum
+end
+
+function PetTraining:getHangTime()
+	return self.hangTime
 end
 
 function PetTraining:getBattleTimes()
@@ -268,6 +274,10 @@ function PetTraining:onPetLevUp(event)
 	end
 end
 
+function PetTraining:onGetTrainingAward(event)
+	self.hangTime = event.data.hang_time
+end
+
 function PetTraining:isTrainOpen()
 	if self.isInit then
 		return true
@@ -356,6 +366,12 @@ function PetTraining:reqTrainingInfo()
 	local msg = messages_pb.pet_training_get_info_req()
 
 	xyd.Backend.get():request(xyd.mid.PET_TRAINING_GET_INFO, msg)
+end
+
+function PetTraining:reqTrainingAward()
+	local msg = messages_pb.pet_training_get_award_req()
+
+	xyd.Backend.get():request(xyd.mid.PET_TRAINING_GET_AWARD, msg)
 end
 
 return PetTraining

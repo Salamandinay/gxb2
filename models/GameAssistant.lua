@@ -130,7 +130,6 @@ function GameAssistant:onRegister()
 	self:registerEvent(xyd.event.MIDAS_BUY_2, handler(self, self.onGetMidasMsg))
 	self:registerEvent(xyd.event.GET_HANG_ITEM, handler(self, self.onGetHangItems))
 	self:registerEvent(xyd.event.HOUSE_GET_AWARDS, handler(self, self.onGetHouseItems))
-	self:registerEvent(xyd.event.PET_TRAINING_COMPLETE_MISSION, handler(self, self.onGetPetMissionAwardMsg))
 	self:registerEvent(xyd.event.BUY_SHOP_ITEM_BATCH, handler(self, self.onGetBuyMarketMsg))
 	self:registerEvent(xyd.event.EXPLORE_BUILDING_GET_OUT, handler(self, self.onGetExploreAwardMsg))
 end
@@ -831,42 +830,25 @@ function GameAssistant:onGetExploreAwardMsg(event)
 	})
 end
 
-function GameAssistant:completeAllMissionPet()
-	local flag = false
-	self.petMissionInfos = {}
+function GameAssistant:getPetHangAward()
+	if self:getPetlastHangRound() == 0 then
+		return false
+	else
+		xyd.models.petTraining:reqTrainingAward()
 
-	for i = 1, 3 do
-		local info = xyd.models.petTraining:getMissionInfo(i)
-		self.petMissionInfos[i] = nil
-
-		if info.startTime then
-			local missionTime = xyd.tables.petTrainingLessonTable:getTime(info.missionId)
-			local nowTime = xyd.getServerTime()
-			local duration = nowTime - info.startTime
-
-			if missionTime < duration then
-				self.petMissionInfos[i] = info
-
-				xyd.models.petTraining:completeMission(info.pos)
-
-				flag = true
-			end
-		end
+		return true
 	end
-
-	return flag
 end
 
-function GameAssistant:onGetPetMissionAwardMsg()
-	for i = 1, 3 do
-		if self.petMissionInfos and self.petMissionInfos[i] then
-			local info = self.petMissionInfos[i]
+function GameAssistant:getPetlastHangRound()
+	local level = xyd.models.petTraining:getTrainingLevel()
+	local cycleTime = xyd.tables.miscTable:getVal("pet_training_hangup_cycle")
+	local maxHangTime = xyd.tables.petTrainingNewAwardsTable:getTime(level)
+	local hangStartTime = xyd.models.petTraining:getHangTime()
+	local nowTime = xyd.getServerTime(true)
+	local hangTime = math.min(nowTime - hangStartTime, maxHangTime)
 
-			if info and info.missionId then
-				xyd.models.petTraining:startMission(info.missionId, info.pos, info.pets)
-			end
-		end
-	end
+	return math.floor(hangTime / cycleTime)
 end
 
 function GameAssistant:completeAllChallengePet()
@@ -1280,23 +1262,9 @@ function GameAssistant:jungeIfCanDoTab3()
 		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNumExplore(self.presetData.explore.bread - self:getBuyTimeBreadExplore())
 	end
 
-	if self.presetData.pet.award == true then
-		for i = 1, 3 do
-			local info = xyd.models.petTraining:getMissionInfo(i)
-
-			if info.startTime then
-				local missionTime = xyd.tables.petTrainingLessonTable:getTime(info.missionId)
-				local nowTime = xyd.getServerTime()
-				local duration = nowTime - info.startTime
-
-				if missionTime < duration then
-					self.ifCanDo.pet.award = true
-					flag = true
-
-					break
-				end
-			end
-		end
+	if self.presetData.pet.award == true and self:getPetlastHangRound() ~= 0 then
+		self.ifCanDo.pet.award = true
+		flag = true
 	end
 
 	if self.todayHaveDoneData.pet.paid < self.presetData.pet.paid and self.presetData.pet.paid > (xyd.models.petTraining:getBuyTimeTimes() or 0) then

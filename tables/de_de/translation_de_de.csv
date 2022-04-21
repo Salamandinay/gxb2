@@ -1056,7 +1056,7 @@ ARENA_TEAM_NO_TEAM_TIPS,Senpai bitte versammle dein Team~
 ARENA_TEAM_FORCE_LIMIT,Die Macht muss zwischen 1-1999999 liegen~
 ARENA_TEAM_NAME_LIMIT,Bitte gebe einen 4~12 Zeichen langen Teamnamen ein
 RESET_TEAM,Anpassen
-ARENA_TEAM_HELP,"Kampfregeln |1. Die Elite Liga ist dienstags ab 0:00 Uhr (UTC / GMT 0) bis freitags 0:00 Uhr (UTC / GMT 0) geöffnet. |2. Nach dem Beitritt zur Elite Liga kannst du ein Team auswählen, dem du beitreten möchtest, oder ein eigenes Team gründen und andere Spieler einladen. |3. Du musst dich einem Team auf deinem Server anschließen. |4. Nur die Teamführer können Kämpfe veranstalten und die Gegner auswählen. Andere Teammitglieder können nur die Kampfaufzeichnungen einsehen. |5. Jedes Team hat zu Beginn 6 Ausdauerpunkte. Jede Stunde erhält man 1 Ausdauerpunkt und die Teams können bis zu 12 Ausdauerpunkte speichern. Jeder Kampf verbraucht 1 Ausdauerpunkt. |6. Es muss mindestens 1 Mädchen in einer Aufstellung sein. Du kannst die Aufstellungen jederzeit anpassen. |7. Jedes Match besteht aus 3 Kämpfen. Das Team, das als erstes 2 Kämpfe gewinnt, erzielt den Endsieg (Best-of-three). |8. Besiege alle Mädchen des gegnerischen Teams, um den Kampf zu gewinnen. |9. Wenn der Kampf länger als 15 Runden dauert, wird der Angriff beider Seiten pro Runde erhöht und die erhaltene Heilung reduziert, bis eine Seite den Kampf gewinnt.|10. Nach jedem Kampf erhält das siegreiche Team Arenapunkte und das besiegte Team verliert Arenapunkte. Die Teams werden nach ihrer Gesamtpunktzahl im Ranking aufgelistet. |11. Du kannst immer die letzten 10 Schlachten unter ""Verlauf"" einsehen. ||Belohnungsregeln|Wenn das Event vorbei ist, werden die Belohnungen basierend auf der endgültigen Rangfolge gesendet."
+ARENA_TEAM_HELP,"Kampfregeln |1. Die Elite Liga ist dienstags ab 0:00 Uhr (UTC / GMT 0) bis freitags 0:00 Uhr (UTC / GMT 0) geöffnet.|2. Nach dem Beitritt zur Elite Liga kannst du ein Team auswählen, dem du beitreten möchtest, oder ein eigenes Team gründen und andere Spieler einladen.|3. Du musst dich einem Team auf deinem Server anschließen.|4. Nur die Teamführer können Kämpfe veranstalten und die Gegner auswählen. Andere Teammitglieder können nur die Kampfaufzeichnungen einsehen.|5. Jedes Team hat zu Beginn 6 Ausdauerpunkte. Jede Stunde erhält man 1 Ausdauerpunkt und die Teams können bis zu 12 Ausdauerpunkte speichern. Jeder Kampf verbraucht 1 Ausdauerpunkt.|6. Es muss mindestens 1 Mädchen in einer Aufstellung sein. Du kannst die Aufstellungen jederzeit anpassen.|7. Jedes Match besteht aus 3 Kämpfen. Das Team, das als erstes 2 Kämpfe gewinnt, erzielt den Endsieg (Best-of-three).|8. Besiege alle Mädchen des gegnerischen Teams, um den Kampf zu gewinnen.|9. Wenn der Kampf länger als 15 Runden dauert, wird der Angriff beider Seiten pro Runde erhöht und die erhaltene Heilung reduziert, bis eine Seite den Kampf gewinnt.|10. Nach jedem Kampf erhält das siegreiche Team Arenapunkte und das besiegte Team verliert Arenapunkte. Die Teams werden nach ihrer Gesamtpunktzahl im Ranking aufgelistet.|11. Du kannst immer die letzten 10 Schlachten unter ""Verlauf"" einsehen.|12. Die Teammitglieder können nicht mehr gewechselt werden, sobald das Team gegründet und zum Kampf gesendet wird.||Belohnungsregeln|Wenn das Event vorbei ist, werden die Belohnungen basierend auf der endgültigen Rangfolge gesendet."
 NEXT_RECOVER_TIME,Körperliche Erholung:
 ARENA_TEAM_AWARDS_NO_TEAM_TIPS,"Du hast noch kein Team! Schließe dich einem Team an, um wenigstens folgende Belohnungen zu verdienen!"
 ARENA_TEAM_RECORD_NO_TEAM_TIPS,Bitte starte erst einen Elite Liga Kampf!
@@ -4433,7 +4433,7 @@ PET_TRAINING_TEXT14,Ausbildungslager
 PET_TRAINING_TEXT15,Die Belohnungen fürs Aufleveln werden per Mail gesendet
 PET_TRAINING_TEXT16,Ab Lager-Lv. {1} entsperrt
 PET_TRAINING_TEXT17,Bonus: {1}
-PET_TRAINING_HELP,"Diener weiterbilden|1. Du kannst die Trainingskurse im Ausbildungslager aufnehmen und gegen die Holzpuppen kämpfen, um EXP fürs Ausbildungslager und Diener-Kristalle zu erhalten.|2. Mit einer bestimmten Menge an EXP kannst du das Ausbildungslager aufleveln, wodurch mehr Trainingskurse und stärkere Holzpuppen entsperrt werden.||Trainingskurs|1. Um an einem Trainingskurs teilzunehmen, musst du 1-3 Diener entsenden. Nach dem Ende des Kurses kannst du die entsprechenden Belohnungen einsammeln.|2. Entsprechend der Summe der Level der entsendeten Diener wird ein Belohnungsbonus gewährt.|3. Maximal kannst du 3 Trainingskurse gleichzeitig durchführen.||Holzpuppe (Boss)|1. Nur Diener ab Lv.120 können zum Kampf gegen die Holzpuppen entsendet werden.|2. Tägliche kannst du die Holzpuppe dreimal herausfordern. Jeder Diener hat täglich 2 Energiepunkte. Der Diener, den du entsenden willst, muss mindestens 1 Energie haben.|3. Zum Herausfordern werden jedesmal 1 Chance und 1 Energie benötigt. Täglich kannst du Dias ausgeben, um maximal 2 Mal Energie zu kaufen, wobei du jeweils 1 Chance zum Herausfordern bekommst.|4. Beim Herausfordern musst du 1 Diener als Schadensverteiler auswählen. Der verursachte Schaden wird durch das Level, Aura und Kernlevel des Dieners beeinflusst.|5. Die HP der Holzpuppe werden nach dem Kampf nicht zurückgesetzt. Die Holzpuppe wird sich dauerhaft wiederbeleben, damit du sie sofort weiter herausfordern kannst.|6. Das Level der Holzpuppe kannst du zu jeder Zeit wechseln, aber dadurch werden die HP auf 100%% zurückgesetzt.|7. Jede Herausforderung gegen die Holzpuppe gewährt dir feste Belohnungen. Nachdem die Holzpuppe getötet wurde, bekommst du zusätzliche Belohnungen, die sich nach dem Level der Holzpuppe richten."
+PET_TRAINING_HELP,"Diener weiterbilden|1. Du kannst die Trainingskurse im Ausbildungslager aufnehmen und gegen die Holzpuppen kämpfen, um EXP fürs Ausbildungslager und Diener-Kristalle zu erhalten.|2. Mit einer bestimmten Menge an EXP kannst du das Ausbildungslager aufleveln, wodurch längere max. Trainingsdauer und stärkere Holzpuppen entsperrt werden können.||Diener-Training|1. Das Training wird automatisch durchgeführt und EXP zum Ausbildungslager und Diener-Kristall werden als Belohnungen gegeben.|2. Nach dem Gesamtlevel deiner Diener werden zusätzliche Boni zur Trainingsbelohnung gegeben.|3. Die max. Trainingsdauer hängt von dem Level des Ausbildungslagers ab. Je höher das Level deines Ausbidungslager liegt, desto längere ist die verfügbare max. Trainingsdauer.||Holzpuppe (Boss)|1. Nur Diener ab Lv.120 können zum Kampf gegen die Holzpuppen entsendet werden.|2. Tägliche kannst du die Holzpuppe dreimal herausfordern. Jeder Diener hat täglich 2 Energiepunkte. Der Diener, den du entsenden willst, muss mindestens 1 Energie haben.|3. Zum Herausfordern werden jedesmal 1 Chance und 1 Energie benötigt. Täglich kannst du Dias ausgeben, um maximal 2 Mal Energie zu kaufen, wobei du jeweils 1 Chance zum Herausfordern bekommst.|4. Beim Herausfordern musst du 1 Diener als Schadensverteiler auswählen. Der verursachte Schaden wird durch das Level, Aura und Kernlevel des Dieners beeinflusst.|5. Die HP der Holzpuppe werden nach dem Kampf nicht zurückgesetzt. Die Holzpuppe wird sich dauerhaft wiederbeleben, damit du sie sofort weiter herausfordern kannst.|6. Das Level der Holzpuppe kannst du zu jeder Zeit wechseln, aber dadurch werden die HP auf 100%% zurückgesetzt.|7. Jede Herausforderung gegen die Holzpuppe gewährt dir feste Belohnungen. Nachdem die Holzpuppe getötet wurde, bekommst du zusätzliche Belohnungen, die sich nach dem Level der Holzpuppe richten."
 GUILD_BOSS_MAIL_TITLE,Gewählte Mitglieder
 PET_TRAINING_TEXT18,Täglich kannst du {1} Mal Energie kaufen
 PET_TRAINING_TEXT19,"Willst du {1} Dias ausgeben, um 1 Energie zu kaufen? (Nach dem Kauf erhältst du 1 Chance zum Herausfordern.)"
@@ -5963,7 +5963,7 @@ GAME_ASSISTANT_TEXT40,Grund
 GAME_ASSISTANT_TEXT41,Mittel
 GAME_ASSISTANT_TEXT42,Super
 GAME_ASSISTANT_TEXT43,Diener
-GAME_ASSISTANT_TEXT44,Trainings-Belohnung sammeln
+GAME_ASSISTANT_TEXT44,Trainingsbelohnungen sammeln
 GAME_ASSISTANT_TEXT45,Training wählen
 GAME_ASSISTANT_TEXT46,Holzpuppe herausfordern
 GAME_ASSISTANT_TEXT47,Energie kaufen
@@ -5997,8 +5997,8 @@ GAME_ASSISTANT_TEXT74,Belohnung der Jobaufgabe
 GAME_ASSISTANT_TEXT75,Züge am Glücksautomaten ({1} Mal)
 GAME_ASSISTANT_TEXT76,Raid-Beloh. in Patrouille ({1} Mal)
 GAME_ASSISTANT_TEXT77,Raid-Beloh. in Prüfung ({1} Mal)
-GAME_ASSISTANT_TEXT78,Diener - Training-Belohnung
-GAME_ASSISTANT_TEXT79,Diener - Neuer Trainingkurs
+GAME_ASSISTANT_TEXT78,Diener - Trainingsbelohnung
+GAME_ASSISTANT_TEXT79,Diener - Neues Training
 GAME_ASSISTANT_TEXT80,Diener - Energie kaufen
 GAME_ASSISTANT_TEXT81,Diener - Kampfbelohnung (Holzpuppe)
 GAME_ASSISTANT_TEXT82,Campusausflug - Belohnung sammeln
@@ -6194,8 +6194,8 @@ ARENA_END_TIPS_TEXT,Die Saison endet in:
 ACTIVITY_EASTER2022_TITLE,Ostereier-\nFabrik
 ARENA_NO_FIGHT,Es kann zurzeit kein Kampf gestartet werden.
 NEW_TRIAL_BATTLEPASS_TEXT21,Weiter sammeln
-PEW_TRAINNG_HANGUP_TEXT01,Training im Gange ({1})
-PEW_TRAINNG_HANGUP_TEXT02,Trainingskurs(e) beendet
+PEW_TRAINNG_HANGUP_TEXT01,Training im Gange ([c][00b200]{1}[-][/c])
+PEW_TRAINNG_HANGUP_TEXT02,Training beendet
 PEW_TRAINNG_HANGUP_TEXT03,Gesamtlevel der Diener
 PEW_TRAINNG_HANGUP_TEXT04,Belohnungsbonus
 PEW_TRAINNG_HANGUP_TEXT05,Ausbildungslager-Lv.
@@ -6210,3 +6210,8 @@ NEW_TRIAL_BATTLEPASS_TEXT23,"Willst du sicher {1} Dias ausgeben, um {2} Heiligtu
 NEW_TRIAL_BATTLEPASS_TEXT24,Alle Heiligtumspunkte erworben
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TITLE,Schnell kaufen
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TEXT,Gib die Anzahl der Pakete ein
+BATTLE_BUFF_SEC,Tippe auf die Mädchen-Icons für mehr Details der Buffs
+ACTIVITY_JACKPOT_MACHINE_TITLE,Autom. Drehen
+ACTIVITY_JACKPOT_MACHINE_TEXT,Gib die Anzahl des Drehens ein
+BATTLE_BUFF_TITTLE,Buff-Details
+PEW_TRAINNG_HANGUP_TEXT10,"Das Training muss mindestens 10 Minuten dauern, um Belohnungen zu geben."

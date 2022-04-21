@@ -232,4 +232,17 @@ function PetSlot:onUpgradePetExlevel(event)
 	end
 end
 
+function PetSlot:getAllPetLev()
+	local allLev = 0
+
+	for petId, pet in pairs(self.list_) do
+		if pet then
+			local lev = pet:getLevel()
+			allLev = allLev + lev
+		end
+	end
+
+	return allLev
+end
+
 return PetSlot

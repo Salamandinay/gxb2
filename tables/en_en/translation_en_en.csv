@@ -1056,7 +1056,7 @@ ARENA_TEAM_NO_TEAM_TIPS,"Senpai, please assemble your team~"
 ARENA_TEAM_FORCE_LIMIT,Power must be between 1-1999999~
 ARENA_TEAM_NAME_LIMIT,Please choose a team name between 4~12 characters long
 RESET_TEAM,Adjustment
-ARENA_TEAM_HELP,"Battle Rules|1. Elite League runs from Tuesday 0:00 to Friday 0:00 (UTC/GMT 0). |2. After entering Elite League, players can join a team or create their own team to invite other players. |3. Players must join a team on the same server. |4. Only team leaders can arrange fights and choose opponents. Other members can only check the battle records.|5. Each team has 6 Stamina at the beginning. Stamina is recovered once per hour (teams can store up to 12 Stamina). Each battle consumes 1 point of Stamina. |6. At least 1 Girl should be deployed to your team's lineup and players can adjust it any time. |7. Each match consists of 3 Battles. The first team to win 2 Battles will win the match. |8. Defeat all Girls on the other team to win the Battle. |9. If a battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over. |10. After each battle, the winning team gains Arena points while the losing team loses Arena points. Teams will be ranked based on their total Arena points. |11. Players can watch their last 10 battles in Battle Records. ||Rewards|When the event is over, rewards will be sent based on final ranking."
+ARENA_TEAM_HELP,"Battle Rules|1. Elite League runs from Tuesday 0:00 to Friday 0:00 (UTC/GMT 0). |2. After entering Elite League, players can join a team or create their own team to invite other players. |3. Players must join a team on the same server. |4. Only team leaders can arrange fights and choose opponents. Other members can only check the battle records.|5. Each team has 6 Stamina at the beginning. Stamina is recovered once per hour (teams can store up to 12 Stamina). Each battle consumes 1 point of Stamina. |6. At least 1 Girl should be deployed to your team's lineup and players can adjust it any time. |7. Each match consists of 3 Battles. The first team to win 2 Battles will win the match. |8. Defeat all Girls on the other team to win the Battle. |9. If a battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over. |10. After each battle, the winning team gains Arena points while the losing team loses Arena points. Teams will be ranked based on their total Arena points. |11. Players can watch their last 10 battles in Battle Records.|12. After your team is formed to engage in the battles, the team member cannot be adjusted during the season.||Rewards|When the event is over, rewards will be sent based on final ranking."
 NEXT_RECOVER_TIME,Stamina Recovery:
 ARENA_TEAM_AWARDS_NO_TEAM_TIPS,You don't have a team yet! Join a team to climb the ranks and earn the following rewards!
 ARENA_TEAM_RECORD_NO_TEAM_TIPS,Please start an Elite League battle first!
@@ -4431,7 +4431,7 @@ PET_TRAINING_TEXT14,Training Room
 PET_TRAINING_TEXT15,Upgrade rewards will be sent via Mail
 PET_TRAINING_TEXT16,Unlock after Training Room reaches Lv.{1}
 PET_TRAINING_TEXT17,Reward Bonus: {1}
-PET_TRAINING_HELP,"Servant Training|1. You can take Training Courses and challenge Training Dummies to acquire Servant Training Exp and Servant Crystals|2. You can use Servant Training Exp to upgrade your training room and unlock more Training Courses and stronger Training Dummies||Training Course|1. Each course requires 1-3 Servant(s) to participate, you can collect corresponding rewards after a Training Course is over.|2. The rewards for Training Courses will be better if the level of participating Servant(s) is/are higher.|3. You can take 3 Training Courses at a time at most.||Training Dummy|1. Only Servants over Lv. 120 can challenge the Training Dummies.|2. You have 3 free chances to challenge Training Dummies each day, each of your Servants has 2 points of Stamina each day, they can only challenge a Training Dummy when they have more than 1 Stamina point.|3. You will consume 1 challenge chance and 1 Stamina of your Servant when you challenge a Training Dummy. You can purchase additional Servant Stamina with Gems twice a day and you will get 1 additional challenge chance each time of purchase.|4. When challenging a Training Dummy, you will need to choose 1 Servant to deal damage to the dummy. The damage dealt is based on the Servant's Level, Aura Level and Ulticore Level.|5. The HP of Training Dummies won’t reset to 100%% after each challenge, but they will revive and will be available to be challenged again once they are defeated.|6. You can switch the level of a Training Dummy as you wish anytime, but the HP of the Training Dummy will reset to 100%% after that.|7. You will be awarded after each time you challenge the Training Dummy and will get an additional reward for defeating a Training Dummy, this reward will be different according to the level of the defeated Training Dummy."
+PET_TRAINING_HELP,"Servant Training|1. You can take Training Courses and challenge Training Dummies to acquire Servant Training Exp and Servant Crystals|2. You can use Servant Training Exp to upgrade your training room to extend your training duration and unlock stronger Training Dummies||Servant Training|1. Your Servants will train automatically, you can get Training Exp and Servant Crystals as reward for their training.|2. Your reward will increase as your Servants' total level becomes higher.|3. You can extend the maximum duration of each training by upgrading your Training Room.||Training Dummy|1. Only Servants over Lv. 120 can challenge the Training Dummies.|2. You have 3 free chances to challenge Training Dummies each day, each of your Servants has 2 points of Stamina each day, they can only challenge a Training Dummy when they have more than 1 Stamina point.|3. You will consume 1 challenge chance and 1 Stamina of your Servant when you challenge a Training Dummy. You can purchase additional Servant Stamina with Gems twice a day and you will get 1 additional challenge chance each time of purchase.|4. When challenging a Training Dummy, you will need to choose 1 Servant to deal damage to the dummy. The damage dealt is based on the Servant's Level, Aura Level and Ulticore Level.|5. The HP of Training Dummies won’t reset to 100%% after each challenge, but they will revive and will be available to be challenged again once they are defeated.|6. You can switch the level of a Training Dummy as you wish anytime, but the HP of the Training Dummy will reset to 100%% after that.|7. You will be awarded after each time you challenge the Training Dummy and will get an additional reward for defeating a Training Dummy, this reward will be different according to the level of the defeated Training Dummy."
 GUILD_BOSS_MAIL_TITLE,Guild Member selected
 PET_TRAINING_TEXT18,You can purchase {1} times in a day
 PET_TRAINING_TEXT19,Confirm to purchase 1 additional Stamina (and an additional challenge chance) with {1} Gems?
@@ -5962,7 +5962,7 @@ GAME_ASSISTANT_TEXT40,Primary
 GAME_ASSISTANT_TEXT41,Medium
 GAME_ASSISTANT_TEXT42,Senior
 GAME_ASSISTANT_TEXT43,Servant
-GAME_ASSISTANT_TEXT44,Claim Course Rewards
+GAME_ASSISTANT_TEXT44,Claim Training Rewards
 GAME_ASSISTANT_TEXT45,Course Selection
 GAME_ASSISTANT_TEXT46,Challenge Training Dummy
 GAME_ASSISTANT_TEXT47,Purchase Stamina
@@ -5996,7 +5996,7 @@ GAME_ASSISTANT_TEXT74,Intern Reward
 GAME_ASSISTANT_TEXT75,Pull Slot Machine ({1} time(s))
 GAME_ASSISTANT_TEXT76,Patrol Raid Reward ({1} time(s))
 GAME_ASSISTANT_TEXT77,House Exam Raid Reward ({1} time(s))
-GAME_ASSISTANT_TEXT78,Servant - Course Reward
+GAME_ASSISTANT_TEXT78,Servant - Training Reward
 GAME_ASSISTANT_TEXT79,Servant - Start New Course
 GAME_ASSISTANT_TEXT80,Servant - Stamina Purcahse
 GAME_ASSISTANT_TEXT81,Servant - Training Reward
@@ -6193,7 +6193,7 @@ ARENA_END_TIPS_TEXT,The season will end in：
 ACTIVITY_EASTER2022_TITLE,Easter\nEgg Factory
 ARENA_NO_FIGHT,Cannot fight now
 NEW_TRIAL_BATTLEPASS_TEXT21,More Rewards
-PEW_TRAINNG_HANGUP_TEXT01,Servant Training in progress ({1})
+PEW_TRAINNG_HANGUP_TEXT01,Servants are training ([c][00b200]{1}[-][/c])
 PEW_TRAINNG_HANGUP_TEXT02,Servant Training Complete
 PEW_TRAINNG_HANGUP_TEXT03,Total Level
 PEW_TRAINNG_HANGUP_TEXT04,Training Reward Bonus
@@ -6209,3 +6209,8 @@ NEW_TRIAL_BATTLEPASS_TEXT23,Confirm to purchase {2} Sancutary Point(s) with {1} 
 NEW_TRIAL_BATTLEPASS_TEXT24,Your have obtained all Sanctuary Points needed
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TITLE,Bulk Purchase
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TEXT,Select purchase quantity
+BATTLE_BUFF_SEC,Tap the Girl's Avatar to check Buff details
+ACTIVITY_JACKPOT_MACHINE_TITLE,Auto Pull
+ACTIVITY_JACKPOT_MACHINE_TEXT,Select Quantity
+BATTLE_BUFF_TITTLE,Details
+PEW_TRAINNG_HANGUP_TEXT10,Your Servants need to train for at least 10 minutes to provide rewards.
