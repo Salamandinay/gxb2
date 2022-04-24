@@ -43,8 +43,8 @@ qa_content_length,500,-1
 tower_top,1000,-1
 dungeon_top,600,-1
 activity_gacha_partner_awards,53012#20002,-1
-activity_gacha_partners,51018,-1
-activity_gacha_partner_show,51018,-1
+activity_gacha_partners,54018,-1
+activity_gacha_partner_show,54018,-1
 gacha_ensure_dropbox_id,10006,-1
 gacha_ensure_weight_ini_total,1000000,-1
 gacha_ensure_weight_ini_get,180,-1
@@ -55,12 +55,13 @@ gacha_ensure_weight_wish_get,100,-1
 gacha_ensure_weight_wish_add,100,-1
 gacha_ensure_add_num,100,-1
 gacha_ensure_guarantee,500,-1
-gacha_ensure_partner,51018#651025#751018,-1
-gacha_ensure_partner_handbook,51018#651025#751018,-1
-daily_mail_awards_gacha,2|49,-1
+gacha_ensure_partner,54018#654025#754018,-1
+gacha_ensure_partner_handbook,54018#654025#754018,-1
+daily_mail_awards_gacha,2,-1
 daily_mail_awards_tree,3|42,-1
 daily_mail_awards_gamble,18|37|48,-1
 daily_mail_awards_drift,30|6|39,-1
+daily_mail_awards_lost_space,50,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
@@ -376,7 +377,7 @@ scratch_card_awards_identical_5,93#1,-1
 scratch_card_unmask_r,25,-1
 main_window_icon_position,-80#990|-80#1110|-80#1230|-200#990|-320#990|-200#1110|-320#1110|-200#1230|-320#1230|-440#990|-440#1110|-440#1230,-1
 show_in_game,1579212000,-1
-warmup_no_partner,1649980800,-1
+warmup_no_partner,1651795200,-1
 direct_partner_appear_full_new,157,-1
 dorm_comfort_version,2,-1
 activity_making_coffee_speedup,7200,-1
@@ -547,7 +548,7 @@ activity_red_riding_hood_awards_1,940004#50|73#15,-1
 school_practise_effect_pos,1#-45#-45|1#-130#-10|1#-60#-5|1#0#0|-1#470#-70|-1#540#-90,-1
 treasure_reserve_unlock,2#0|2#1000|2#2000,-1
 altar_6up_day_limit,5,-1
-activity_tower_fund_bonus,4200|5000|5000|5000,-1
+activity_tower_fund_bonus,4200|5000|5000|5000|5000,-1
 slot_sort_type_show_list,10|9|4|5|6|7|0|1|8,-1
 partner_challenge_chess_cost1,3,-1
 partner_challenge_chess_cost2,1,-1
@@ -588,6 +589,7 @@ tower_giftbag_floors1,20|80|140|200,-1
 tower_giftbag_floors2,220|280|340|400,-1
 tower_giftbag_floors3,420|480|540|600,-1
 tower_giftbag_floors4,620|680|740|800,-1
+tower_giftbag_floors5,820|880|940|900,-1
 level_fund_window_lvl,40|50|60,-1
 battle_pass_time,7|3|1,-1
 battle_pass_level,10,-1
@@ -734,7 +736,7 @@ activity_time_giftbag_cost,2#2500@235#9|940014#50|9#3000000,-1
 partner_signature_length_limit,3,-1
 activity_fair_arena_battle_time,6|1,-1
 monthly_card_offer_giftbag,282|283,-1
-battlepass_106_hero_model,monika_pifu03_lihui01|-170|-600|0.6,-1
+battlepass_106_hero_model,maya_pifu04_lihui01|-150|-685|0.6,-1
 battlepass_124_hero_model,spdegula_pifu01_lihui01|-260|-750|0.5,-1
 questionnaire_other_limit,200|12,-1
 space_explore_dropbox,40004,-1
@@ -824,10 +826,10 @@ activity_warmup_arena_awards,8063#1,-1
 activity_warmup_arena_energy_start,15,-1
 activity_warmup_arena_energy_reset,10,-1
 activity_warmup_arena_buy_costs,2#10|2#15|2#20|2#25|2#30|2#35|2#40|2#45|2#50|2#50|2#50|2#50|2#50|2#50|2#50|2#50|2#50|2#50|2#50|2#50,-1
-activity_warmup_arena_partners,751018,-1
+activity_warmup_arena_partners,754018,-1
 activity_warmup_arena_revenge,1,-1
 guild_quick_order_open,5,-1
-gacha_10drawcard_endtime,1650585600,-1
+gacha_10drawcard_endtime,1652400000,-1
 dress_gacha_activity_show,34,-1
 activity_equip_exchange_cost,268#3|268#6|268#9|268#12,-1
 activity_equip_exchange_6,1166|2166|3166|4166#1266|2266|3266|4266#1366|2366|3366|4366#1466|2466|3466|4466#1566|2566|3566|4566,-1
@@ -852,7 +854,7 @@ activity_pray_buy_get,269#1,-1
 activity_tea_point,1,-1
 space_explore_auto_level,31,-1
 custom_skin_summer_houyi_or_feisina,2#300,-1
-entrance_test_help_show,751018,-1
+entrance_test_help_show,754018,-1
 activity_lafuli_get,283#1,-1
 house_senpai_sit,-20|-30,-1
 house_senpai_lie,15|-40,-1
@@ -937,10 +939,10 @@ activity_jackpot_transfer,58#1|305#1,-1
 activity_jackpot_unlock,40,-1
 activity_jackpot_normal,58#5,-1
 activity_jackpot_updated,305#5,-1
-activity_growth_plan_partner,51016|52017|53016|54016,-1
+activity_growth_plan_partner,51017|52017|53016|54016,-1
 activity_jackpot_draw,57#5,-1
-activity_growth_plan_picture,-7#-196#0.65#0.65|-54#-260#0.6#0.6|-71#-295#0.6#0.6|-68#-300#0.65#0.65,-1
-activity_growth_plan_cut,985#383#700#600|1088#100#750#700|1145#100#265#0|1145#222#282#0,-1
+activity_growth_plan_picture,-41#-247#0.65#0.65|-54#-260#0.6#0.6|-71#-295#0.6#0.6|-68#-300#0.65#0.65,-1
+activity_growth_plan_cut,1065#304#750#600|1088#100#750#700|1145#100#265#0|1145#222#282#0,-1
 time_cloister_card_cd7,21600,-1
 time_cloister_card_cd10,21600,-1
 activity_luckyboxes_pointmax,100,-1
@@ -981,9 +983,9 @@ activity_276_hero_model,kaixi_pifu02_lihui01|439|-1555|0.7|5401603|7240,-1
 new_pingfen_stage_id,12|22|42|52|62|72|82|92|102|112|122|132|142,-1
 new_pingfen_level_limit,35,-1
 defense_team_save,1.5,-1
-activity_vampire_unlock,330#1,-1
+activity_vampire_unlock,354#1,-1
 activity_vampire_giftbag,403,-1
-activity_vampire_awake,328#1|1,-1
+activity_vampire_awake,351#1|1,-1
 shrine_open_limit,500,-1
 shrine_time_start,1646956800,-1
 shrine_time_interval,12|2,-1
@@ -993,7 +995,7 @@ shrine_hurdle_ticket_buy_limit,5,-1
 shrine_hurdle_buff_giveup,324#180,-1
 shrine_hurdle_difficulty_count,return %d/%d/10/(%d/10+1.5)+%d+5,-1
 shrine_hurdle_difficulty_float,5,-1
-activity_vampire_battlepass_item,327,-1
+activity_vampire_battlepass_item,353,-1
 senpai_dress_guide_point,300,-1
 arena_corss_match_people_num,1000,-1
 arena_corss_match_base_people_num,700,-1
@@ -1011,13 +1013,13 @@ activity_lflcastle_dropbox,1300001|1300002|1300003|1300004,-1
 activity_lflcastle_energy,20,-1
 activity_lflcastle_task_award,1|336#1,-1
 activity_lflcastle_task_award_limit,100,-1
-activity_promotion_ladder_material,56009|55011|52018|51017|53018,-1
-activity_promotion_ladder_target,51018,-1
+activity_promotion_ladder_material,52018|51017|53018|51018,-1
+activity_promotion_ladder_target,54018,-1
 activity_promotion_ladder_star,5#1|6#2|7#2|8#2|9#3|10#5|11#6|12#7|13#7|14#8|15#9,-1
 activity_promotion_ladder_basenum,341#10,-1
 activity_promotion_ladder_interval,9,-1
 activity_promotion_ladder_increasenum,341#5,-1
-activity_promotion_test_picture,3|686|654|-26|140|140,-1
+activity_promotion_test_picture,2|488|604|-117|135|135,-1
 activity_promotion_test_giftbag,407|408,-1
 crystal_card_box_refresh,15,-1
 activity_lasso_end,26,-1
@@ -1028,7 +1030,7 @@ activity_lasso_dropbox_weight,1|2|100,-1
 time_cloister_crystal_card_item,338|339|340,-1
 activity_lasso_cost,343#1,-1
 assistant_open_limit,3|3|8|5,-1
-activity_promotion_ladder_picture,partner_picture_51018|0.7|-214|-401,-1
+activity_promotion_ladder_picture,partner_picture_54018|0.7|-214|-401,-1
 activity_lottery_vip_exp,50|250|500|750|1000|1500|2000|2500|2500|3500|3500,-1
 time_cloister_crystal_card_buy_tips,500|500|500,-1
 activity_clock_cost,345#1,-1
@@ -1073,3 +1075,5 @@ activity_lost_space_item_cost,349#1,-1
 activity_lost_space_energy_get,350#1,-1
 activity_lost_space_supply1,2,-1
 activity_lost_space_supply2,3,-1
+activity_lost_space_buy_cost,2#100,-1
+activity_lost_space_buy_limit,40,-1
