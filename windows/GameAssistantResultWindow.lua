@@ -818,8 +818,10 @@ end
 
 function GameAssistantResultWindow:doPetBuyTicket()
 	local flag = false
+	local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
+	local buyTimes = xyd.models.petTraining:getBuyTimeTimes() or 0
 
-	if self.ifCanDo.pet.paid then
+	if self.ifCanDo.pet.fight and self.presetData.pet.fight - buyTimes - baseTime > 0 then
 		self.hasBuyPetTicketNum = 0
 		self.oldPetBuyTime = xyd.models.petTraining:getBuyTimeTimes()
 		self.buyPetTicket = self.model:buyChallengeTiliPet()
@@ -834,10 +836,9 @@ end
 function GameAssistantResultWindow:onGetPetBuyTicketMsg(event)
 	local data = event.data
 	self.hasBuyPetTicketNum = self.hasBuyPetTicketNum + 1
+	local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
 
-	if self.hasBuyPetTicketNum >= self.presetData.pet.paid - self.oldPetBuyTime then
-		self.todayHaveDoneData.pet.paid = self.todayHaveDoneData.pet.paid + self.hasBuyPetTicketNum
-
+	if self.presetData.pet.fight <= self.hasBuyPetTicketNum + self.oldPetBuyTime + baseTime then
 		self:createItem({}, __("GAME_ASSISTANT_TEXT80", self.hasBuyPetTicketNum))
 		self:doPetChallenge()
 	end
@@ -846,10 +847,16 @@ end
 function GameAssistantResultWindow:doPetChallenge()
 	local flag = false
 
-	if self.ifCanDo.pet.challenge then
+	if self.ifCanDo.pet.fight then
 		self.lastHp = xyd.models.petTraining:getBossHp()
-		flag = self.model:completeAllChallengePet()
-		self.todayHaveDoneData.pet.challenge = true
+		local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
+		local buyTimes = xyd.models.petTraining:getBuyTimeTimes() or 0
+		local battleTimes = xyd.models.petTraining:getBattleTimes() or 0
+		local leftChallengTime = baseTime - battleTimes
+		local allChallengTime = baseTime + buyTimes
+		local haveDoneChallengTime = allChallengTime - leftChallengTime
+		flag = self.model:completeAllChallengePet(self.presetData.pet.fight - haveDoneChallengTime)
+		self.todayHaveDoneData.pet.fight = self.presetData.pet.fight
 	end
 
 	if self.chooseTab == 3 and not flag then
@@ -957,9 +964,6 @@ function GameAssistantResultWindow:doGuildDinnerGetAward()
 	self.guildDinnerAward = {}
 	local ids = {}
 
-	dump(self.ifCanDo.guild.order)
-	dump(orderList)
-
 	if self.ifCanDo.guild.order then
 		for key, order in pairs(orderList) do
 			local endTime = order.start_time + xyd.tables.guildOrderTable:getTime(order.order_lv)
@@ -973,14 +977,21 @@ function GameAssistantResultWindow:doGuildDinnerGetAward()
 			end
 		end
 
-		dump(ids)
-
 		for i = 1, #ids do
 			xyd.models.guild:reqDiningHallCompleteOrder(ids[i])
 		end
 	end
 
 	if not flag then
+		if self.model.orderAwards then
+			local params = {
+				items = self.model.orderAwards
+			}
+
+			self:createItem(params, __("GAME_ASSISTANT_TEXT103"))
+			self.model:setOrderAwards(nil)
+		end
+
 		self:doGuildDinnerBeginOrderBefore()
 	end
 end
@@ -995,11 +1006,9 @@ function GameAssistantResultWindow:onGetGuildDinnerGetAwardMsg(event)
 	end
 
 	if self.needGetGuildDinnerAward == 0 then
-		dump(self.guildDinnerAward)
-
 		params.items = self.guildDinnerAward
 
-		self:createItem(params, __("訂單獎勵（沒配）"))
+		self:createItem(params, __("GAME_ASSISTANT_TEXT103"))
 		self:waitForTime(0.2, function ()
 			self:doGuildDinnerBeginOrderBefore()
 		end)

@@ -18,6 +18,7 @@ function GambleRewardsWindow:ctor(name, params)
 	self.curWndType_ = params.wnd_type or self.WindowType.GAMBLE
 	self.sureCallback_ = params.sureCallback
 	self.afterAnimationCallback = params.afterAnimationCallback
+	self.closeCallBackFun = params.closeCallBackFun
 	self.progressRoundText = params.progressRoundText
 	self.progressText = params.progressText
 	self.progressValue = params.progressValue
@@ -864,6 +865,10 @@ function GambleRewardsWindow:willClose()
 
 	if self.optionalBoxCallBack then
 		self.optionalBoxCallBack(self.optionalBoxValue)
+	end
+
+	if self.closeCallBackFun then
+		self.closeCallBackFun()
 	end
 end
 

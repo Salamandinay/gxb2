@@ -179,6 +179,8 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1177,battle_sound_web/sound_seaboss_attack1,1.0,1,1.0,0.0,1,,50,1.0,,1.0
 1178,battle_sound_web/sound_seaboss_attack2,2.0,1,1.0,0.0,1,,50,1.0,,1.0
 1179,battle_sound_web/sound_seaboss_skill,3.0,1,1.0,0.0,1,,50,1.0,,1.0
+1180,battle_sound_web/sound_spzhugeliang_attack,3.0,1,1.0,0.0,1,,50,1.0,,1.0
+1181,battle_sound_web/sound_spzhugeliang_skill,3.0,1,1.0,0.0,1,,50,1.0,,1.0
 2001,ui_sound_web/campaign_bg_music,30.0,0,,0.0,2,-1.0,100,0.0,,
 2002,ui_sound/battle_bg_music_1,21.0,0,,0.0,2,-1.0,30,0.0,,
 2003,ui_sound_web/campaign_bg_music,30.0,0,,0.0,2,-1.0,100,0.0,,
@@ -313,6 +315,10 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 2168,ui_sound/ui_board,1.0,1,,0.0,1,-1.0,100,0.0,,1.0
 2169,ui_sound/ui_temple,1.0,1,,0.0,1,-1.0,100,0.0,,1.0
 2170,ui_sound/ui_temple_battle,1.0,1,,0.0,1,-1.0,100,0.0,,1.0
+2171,ui_sound/ui_station_unbox,3.0,1,,0.0,1,-1.0,100,0.0,,1.0
+2172,ui_sound/ui_station_laser,2.0,1,,0.0,1,-1.0,100,0.0,,1.0
+2173,ui_sound/ui_station_radar,1.0,1,,0.0,1,-1.0,100,0.0,,1.0
+2174,ui_sound/ui_station_object,2.0,1,,0.0,1,-1.0,100,0.0,,1.0
 3001,ui_sound_web/team_unlock,1.0,1,,0.0,1,-1.0,100,1.0,,
 3002,summon_draw_card_mp3,,1,,0.0,1,-1.0,100,1.0,,
 3003,game_start_bgm_mp3,,1,,0.0,1,-1.0,100,1.0,,

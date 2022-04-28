@@ -111,6 +111,10 @@ function LoginWindow:layout()
 		self:initAfterLoginGroup()
 	end
 
+	self:resizePosY(self.ziEffectGroup_.gameObject, -495, -634)
+	self:resizePosY(self.topButtonGroup.gameObject, 597, 686)
+	self:resizePosY(self.versionLabel_.gameObject, 630, 719)
+
 	self.versionLabel_.text = xyd.res_version
 end
 
@@ -316,9 +320,9 @@ function LoginWindow:initEffect()
 
 	local sp2 = xyd.Spine.new(self.effectGroup_)
 
-	sp2:setInfo("kawenbodi_pifu02_lihui01", function ()
-		sp2:SetLocalPosition(10, -460, 0)
-		sp2:SetLocalScale(0.45, 0.45, 1)
+	sp2:setInfo("loading1", function ()
+		sp2:SetLocalPosition(0, -775, 0)
+		sp2:SetLocalScale(1, 1, 1)
 		sp2:play("animation", 0, 1)
 	end)
 end

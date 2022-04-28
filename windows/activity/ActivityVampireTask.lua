@@ -84,10 +84,10 @@ end
 function ActivityVampireTask:initNav()
 	local labelStates = {
 		chosen = {
-			color = Color.New2(1010253567)
+			color = Color.New2(1347109631)
 		},
 		unchosen = {
-			color = Color.New2(3907117055.0)
+			color = Color.New2(1347109631)
 		}
 	}
 	self.tabBar = CommonTabBar.new(self.nav, 2, function (index)
@@ -111,7 +111,7 @@ function ActivityVampireTask:updateIndex(index)
 
 	for i = 1, 2 do
 		if index == i then
-			self["label" .. i].gameObject:Y(8.3)
+			self["tab_" .. i]:Y(-348.5)
 			self["scrollerCon" .. i].gameObject:SetActive(true)
 
 			if index == 1 then
@@ -120,7 +120,7 @@ function ActivityVampireTask:updateIndex(index)
 				self:updateSecondScroller()
 			end
 		else
-			self["label" .. i].gameObject:Y(2.2)
+			self["tab_" .. i]:Y(-358)
 			self["scrollerCon" .. i].gameObject:SetActive(false)
 		end
 	end
@@ -245,6 +245,8 @@ function ActivityVampireTask:updateLev()
 
 	if xyd.Global.lang == "fr_fr" then
 		self.progressLevelLabel.text = "Niv." .. lev
+
+		self.progressLevelLabel:X(-10)
 	end
 
 	if lev == 0 then
@@ -318,11 +320,13 @@ function ActivityVampireTask:updateFirstScroller()
 		end
 
 		if jumpToId ~= -1 then
+			local initialValue = self.scroller1.transform.localPosition.y
+
 			self:waitForFrame(2, function ()
 				local sp = self.scroller1UIScrollView.gameObject:GetComponent(typeof(SpringPanel))
 				sp = sp or self.scroller1UIScrollView.gameObject:AddComponent(typeof(SpringPanel))
 
-				sp.Begin(sp.gameObject, Vector3(0, self:GetJumpToInfoDis(arr[jumpToId]), 0), 8)
+				sp.Begin(sp.gameObject, Vector3(0, initialValue + self:GetJumpToInfoDis(arr[jumpToId]), 0), 8)
 			end)
 		end
 
@@ -590,12 +594,12 @@ function AwardItem:update(index, data)
 	if self:isLock() then
 		xyd.setUISpriteAsync(self.bg, nil, "activity_vampire_task_item_bg2")
 
-		self.scoreLabel.color = Color.New2(1330007295)
-		self.scoreLabel.effectColor = Color.New2(2559809791.0)
+		self.scoreLabel.color = Color.New2(1513101823)
+		self.scoreLabel.effectColor = Color.New2(3096804607.0)
 	else
 		xyd.setUISpriteAsync(self.bg, nil, "activity_vampire_task_item_bg1")
 
-		self.scoreLabel.color = Color.New2(1195196671)
+		self.scoreLabel.color = Color.New2(2067734271)
 		self.scoreLabel.effectColor = Color.New2(4294967295.0)
 	end
 end
@@ -655,11 +659,11 @@ function TaskItem:update(index, data)
 	local curCompleteValue = self.parent:getActivityData().detail.completes[self.id]
 
 	if limit <= curLimitNum then
-		self.completeNum.text = __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. ": " .. "[c][5d9201]" .. limit .. "/" .. limit .. "[-][/c]"
+		self.completeNum.text = xyd.Global.lang == "fr_fr" and __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. " : " .. "[c][5d9201]" .. limit .. "/" .. limit .. "[-][/c]" or __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. ": " .. "[c][5d9201]" .. limit .. "/" .. limit .. "[-][/c]"
 		self.progressBarUIProgressBar.value = 1
 		self.progressLabel.text = completeValue .. "/" .. completeValue
 	else
-		self.completeNum.text = __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. ": " .. "[c][ac3824]" .. curLimitNum .. "/" .. limit .. "[-][/c]"
+		self.completeNum.text = xyd.Global.lang == "fr_fr" and __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. " : " .. "[c][ac3824]" .. curLimitNum .. "/" .. limit .. "[-][/c]" or __("ACTIVITY_VAMPIRE_TASK_TEXT01") .. ": " .. "[c][5d9201]" .. curLimitNum .. "/" .. limit .. "[-][/c]"
 		local value = curCompleteValue / completeValue
 
 		if value > 1 then

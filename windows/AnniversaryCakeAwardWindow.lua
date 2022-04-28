@@ -7,6 +7,8 @@ function AnniversaryCakeAwardWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
 	self.currentRound = params.currentRound
+	self.awardList = params.awardList
+	self.titleText = params.titleText
 end
 
 function AnniversaryCakeAwardWindow:initWindow()
@@ -32,16 +34,24 @@ function AnniversaryCakeAwardWindow:getUIComponent()
 end
 
 function AnniversaryCakeAwardWindow:layout()
-	self.labelWinTitle_.text = __("ANNIVERSARY_CAKE_END_AWARD")
+	if self.titleText then
+		self.labelWinTitle_.text = self.titleText
+	else
+		self.labelWinTitle_.text = __("ANNIVERSARY_CAKE_END_AWARD")
+	end
+
 	UIEventListener.Get(self.closeBtn.gameObject).onClick = handler(self, function ()
 		xyd.WindowManager.get():closeWindow(self.name_)
 	end)
 end
 
 function AnniversaryCakeAwardWindow:initItemGroupAll()
-	local awardsList = self:getAwardList()
+	if not self.awardList then
+		self.awardList = self:getAwardList()
+	end
 
-	self.wrapContent:setInfos(awardsList, {})
+	self.wrapContent:setInfos(self.awardList, {})
+	self.awardScroller:ResetPosition()
 end
 
 function AnniversaryCakeAwardWindow:getAwardList()
@@ -88,6 +98,7 @@ function AnniversaryCakeEndAwardItem:updateInfo()
 	self.itemIcon = xyd.getItemIcon({
 		show_has_num = true,
 		noClickSelected = true,
+		notShowGetWayBtn = true,
 		uiRoot = self.itemGroup.gameObject,
 		itemID = self.data.itemId,
 		num = self.data.itemNum,
@@ -98,7 +109,10 @@ function AnniversaryCakeEndAwardItem:updateInfo()
 	self.itemIcon:AddUIDragScrollView()
 	self.itemIcon:setScale(0.9)
 
-	if self.data.turn == self.parent.currentRound then
+	if self.data.isShowMark ~= nil then
+		xyd.setUISpriteAsync(self.currentMark, nil, "anniversary_cake_current_turn_" .. tostring(xyd.Global.lang), nil, )
+		self.currentMark:SetActive(self.data.isShowMark)
+	elseif self.data.turn == self.parent.currentRound then
 		xyd.setUISpriteAsync(self.currentMark, nil, "anniversary_cake_current_turn_" .. tostring(xyd.Global.lang), nil, )
 		self.currentMark:SetActive(true)
 	else
@@ -113,10 +127,14 @@ function AnniversaryCakeEndAwardItem:updateInfo()
 		self.selectedMark:SetActive(false)
 	end
 
-	if self.turn ~= self.parent.maxRound then
-		self.turnsLabel.text = __("ROUNDS", self.data.turn)
+	if not self.data.text then
+		if self.turn ~= self.parent.maxRound then
+			self.turnsLabel.text = __("ROUNDS", self.data.turn)
+		else
+			self.turnsLabel.text = __("MAX_ROUNDS", self.data.turn)
+		end
 	else
-		self.turnsLabel.text = __("MAX_ROUNDS", self.data.turn)
+		self.turnsLabel.text = self.data.text
 	end
 end
 

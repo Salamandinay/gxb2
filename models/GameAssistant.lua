@@ -53,7 +53,8 @@ function GameAssistant:ctor()
 		pet = {
 			paid = 0,
 			challenge = false,
-			award = false
+			award = false,
+			fight = 0
 		},
 		guild = {
 			signIn = false,
@@ -110,7 +111,8 @@ function GameAssistant:ctor()
 		pet = {
 			paid = 0,
 			challenge = false,
-			award = false
+			award = false,
+			fight = 0
 		},
 		guild = {
 			signIn = false,
@@ -132,6 +134,7 @@ function GameAssistant:onRegister()
 	self:registerEvent(xyd.event.HOUSE_GET_AWARDS, handler(self, self.onGetHouseItems))
 	self:registerEvent(xyd.event.BUY_SHOP_ITEM_BATCH, handler(self, self.onGetBuyMarketMsg))
 	self:registerEvent(xyd.event.EXPLORE_BUILDING_GET_OUT, handler(self, self.onGetExploreAwardMsg))
+	self:registerEvent(xyd.event.ARENA_FIGHT_BATCH, handler(self, self.onGetArenaMsg))
 end
 
 function GameAssistant:initData()
@@ -179,6 +182,11 @@ function GameAssistant:initData()
 		value = 0,
 		key = "gameAssistant_req_DungeonData"
 	})
+
+	if not self.presetData.pet.fight then
+		self.presetData.pet.fight = 0
+		self.todayHaveDoneData.pet.fight = 0
+	end
 end
 
 function GameAssistant:saveData()
@@ -500,6 +508,22 @@ function GameAssistant:reqArenaBattle()
 	xyd.Backend.get():request(xyd.mid.ARENA_FIGHT_BATCH, msg)
 
 	return true
+end
+
+function GameAssistant:onGetArenaMsg(event)
+	local arena = xyd.models.arena
+	local data = xyd.decodeProtoBuf(event.data)
+	local results = data.battle_results
+	local oldRank = arena:getRank()
+
+	arena:updateRank(results[#results].rank)
+	arena:updateScore(results[#results].score)
+
+	if results[#results].rank <= xyd.TOP_ARENA_NUM then
+		arena:reqRankList()
+	elseif oldRank and oldRank <= xyd.TOP_ARENA_NUM then
+		arena:reqRankList()
+	end
 end
 
 function GameAssistant:reqTavernInfo()
@@ -851,7 +875,7 @@ function GameAssistant:getPetlastHangRound()
 	return math.floor(hangTime / cycleTime)
 end
 
-function GameAssistant:completeAllChallengePet()
+function GameAssistant:completeAllChallengePet(limitTime)
 	local msg = messages_pb.pet_training_fight_req()
 	msg.pet_id = 0
 	local battleTimes = xyd.models.petTraining:getBattleTimes() or 0
@@ -859,6 +883,7 @@ function GameAssistant:completeAllChallengePet()
 	local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
 	local petBaseEnergy = xyd.tables.miscTable:getNumber("pet_training_pet_energy", "value")
 	self.petChallengeTime = 0
+	limitTime = limitTime or 9999
 	local ids = xyd.models.petSlot:getPetIDs()
 
 	table.sort(ids, function (a, b)
@@ -888,11 +913,13 @@ function GameAssistant:completeAllChallengePet()
 			local leftTili = petBaseEnergy - battleTime
 			local leftChallengTime = baseTime - battleTimes - self.petChallengeTime
 
-			if limitLev <= lev and leftTili > 0 and leftChallengTime > 0 then
+			if limitLev <= lev and leftTili > 0 and leftChallengTime > 0 and self.petChallengeTime < limitTime then
 				for i = 1, math.min(leftTili, leftChallengTime) do
-					table.insert(msg.pet_ids, id)
+					if self.petChallengeTime < limitTime then
+						table.insert(msg.pet_ids, id)
 
-					self.petChallengeTime = self.petChallengeTime + 1
+						self.petChallengeTime = self.petChallengeTime + 1
+					end
 				end
 			end
 		end
@@ -939,13 +966,15 @@ function GameAssistant:buyChallengeTiliPet()
 		end
 	end
 
-	local costNum = self:getCostNumPet(self.presetData.pet.paid - xyd.models.petTraining:getBuyTimeTimes())
+	local costNum = self:getCostNumPet(self.presetData.pet.fight - xyd.models.petTraining:getBuyTimeTimes())
 
 	if xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL) < costNum then
 		return false
 	end
 
-	for i = 1, self.presetData.pet.paid - xyd.models.petTraining:getBuyTimeTimes() do
+	local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
+
+	for i = 1, self.presetData.pet.fight - xyd.models.petTraining:getBuyTimeTimes() - baseTime do
 		xyd.models.petTraining:buyTimes(petID)
 	end
 
@@ -976,6 +1005,10 @@ end
 
 function GameAssistant:reqCheckInGuild()
 	xyd.models.guild:checkIn()
+end
+
+function GameAssistant:setOrderAwards(awards)
+	self.orderAwards = awards
 end
 
 function GameAssistant:getLevelUpOrderCost()
@@ -1073,7 +1106,8 @@ function GameAssistant:resetCanDo()
 		pet = {
 			paid = false,
 			challenge = false,
-			award = false
+			award = false,
+			fight = false
 		},
 		guild = {
 			signIn = false,
@@ -1214,6 +1248,24 @@ end
 
 function GameAssistant:jungeIfCanDoTab2()
 	local flag = false
+	local isOpen = xyd.models.academyAssessment:checkFunctionOpen(xyd.FunctionID.ACADEMY_ASSESSMENT, true)
+	local startTime = xyd.models.academyAssessment.startTime or 0
+	local allTime = xyd.tables.miscTable:getNumber("school_practise_season_duration", "value")
+	local showTime = xyd.tables.miscTable:getNumber("school_practise_display_duration", "value")
+	local isInShowTime = false
+
+	if xyd.getServerTime() < startTime + allTime - showTime and startTime <= xyd.getServerTime() then
+		-- Nothing
+	elseif xyd.getServerTime() < startTime + allTime and xyd.getServerTime() >= startTime + allTime - showTime then
+		isInShowTime = true
+	else
+		isOpen = false
+	end
+
+	if not isOpen or isInShowTime then
+		self.presetData.academyAssessment.fort = 0
+	end
+
 	local fort = self.presetData.academyAssessment.fort
 
 	if fort > 0 then
@@ -1230,8 +1282,6 @@ function GameAssistant:jungeIfCanDoTab2()
 			return flag
 		end
 	end
-
-	print(self.todayHaveDoneData.academyAssessment.paid)
 
 	if fort > 0 and self.presetData.academyAssessment.paid > 0 and self.todayHaveDoneData.academyAssessment.paid < self.presetData.academyAssessment.paid and self:getMaxBuyTicketAcademyAssessment() > 0 then
 		self.ifCanDo.academyAssessment.paid = true
@@ -1267,48 +1317,17 @@ function GameAssistant:jungeIfCanDoTab3()
 		flag = true
 	end
 
-	if self.todayHaveDoneData.pet.paid < self.presetData.pet.paid and self.presetData.pet.paid > (xyd.models.petTraining:getBuyTimeTimes() or 0) then
-		self.ifCanDo.pet.paid = true
+	local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
+	local buyTimes = xyd.models.petTraining:getBuyTimeTimes() or 0
+	local battleTimes = xyd.models.petTraining:getBattleTimes() or 0
+	local leftChallengTime = baseTime - battleTimes
+	local allChallengTime = baseTime + buyTimes
+	local haveDoneChallengTime = allChallengTime - leftChallengTime
+
+	if haveDoneChallengTime < self.presetData.pet.fight then
+		self.ifCanDo.pet.fight = true
 		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNumPet(self.presetData.pet.paid - xyd.models.petTraining:getBuyTimeTimes())
-	end
-
-	if self.ifCanDo.pet.paid or self.presetData.pet.challenge == true then
-		if self.ifCanDo.pet.paid then
-			self.ifCanDo.pet.challenge = true
-			flag = true
-		else
-			local pet_ids = {}
-			local battleTimes = xyd.models.petTraining:getBattleTimes() or 0
-			local buyTimes = xyd.models.petTraining:getBuyTimeTimes() or 0
-			local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
-			local petBaseEnergy = xyd.tables.miscTable:getNumber("pet_training_pet_energy", "value")
-			self.petChallengeTime = 0
-			local ids = xyd.models.petSlot:getPetIDs()
-			local limitLev = xyd.tables.miscTable:getNumber("pet_training_boss_level", "value")
-
-			for key, id in pairs(ids) do
-				if tonumber(id) ~= 0 then
-					local battleTime = xyd.models.petTraining:getPetBattleTimes()[math.floor(id / 100)] or 0
-					local lev = xyd.models.petSlot:getPetByID(id).lev
-					local leftTili = petBaseEnergy - battleTime
-					local leftChallengTime = baseTime - battleTimes - self.petChallengeTime
-
-					if limitLev <= lev and leftTili > 0 and leftChallengTime > 0 then
-						for i = 1, math.min(leftTili, leftChallengTime) do
-							table.insert(pet_ids, id)
-
-							self.petChallengeTime = self.petChallengeTime + 1
-						end
-					end
-				end
-			end
-
-			if #pet_ids > 0 then
-				self.ifCanDo.pet.challenge = true
-				flag = true
-			end
-		end
+		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNumPet(self.presetData.pet.fight - buyTimes - baseTime)
 	end
 
 	return flag

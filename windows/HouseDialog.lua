@@ -806,7 +806,7 @@ function HouseDialog:checkCondition4(id, values, items)
 		if info and info.parent and info.parent.class and info.parent.class.__cname and info.parent.class.__cname == "HouseItem" and info.parent.itemID_ then
 			local interact = xyd.tables.houseFurnitureTable:interact(info.parent.itemID_)
 
-			if interact == xyd.HouseFurnitureInteractType.INTERACT then
+			if interact == xyd.HouseItemInteractType.INTERACT or interact == xyd.HouseItemInteractType.IDLE then
 				return false
 			end
 		end

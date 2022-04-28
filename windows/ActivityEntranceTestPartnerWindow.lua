@@ -56,6 +56,7 @@ function ActivityEntranceTestPartnerWindow:ctor(name, params)
 	self.is_guest = params.is_guest
 	self.sort_type = params.sort_type
 	self.current_group = params.current_group or 0
+	self.partnerParams = params.partnerParams
 
 	if self.sort_key == "0_0" or not self.sort_key then
 		self.sort_key = "0_0_0"
@@ -247,6 +248,12 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 	self.closeBtnNew_sprite.depth = 100
 
 	self.closeBtnNew_sprite.gameObject:SetLocalPosition(295, 366, 0)
+
+	local tipsText = self.content_1:ComponentByName("labelTips", typeof(UILabel))
+	tipsText.text = __("ENTRANCE_TEST_SKILL_UNSURE")
+
+	tipsText:Y(-185)
+	tipsText:X(-320)
 	self.content_2:Y(-51)
 	self.page_guide.gameObject:SetActive(false)
 	self.groupBg.gameObject:SetActive(false)
@@ -341,7 +348,8 @@ function ActivityEntranceTestPartnerWindow:playOpenAnimation(callback)
 			onClickPartner = handler(self, self.onclickArrow),
 			tableID = self.partner_.tableID,
 			current_group = self.current_group,
-			sort_type = self.sort_type
+			sort_type = self.sort_type,
+			partnerParams = self.partnerParams
 		})
 
 		self.chooseGroup:setPanelDepth()
@@ -506,6 +514,12 @@ function ActivityEntranceTestPartnerWindow:updateAttr()
 	}
 
 	self.upConItem:setInfo(params)
+
+	if self.navChosen == 1 and self.partner_.tableID == xyd.tables.miscTable:getNumber("entrance_test_help_show", "value") then
+		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(true)
+	else
+		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(false)
+	end
 end
 
 function ActivityEntranceTestPartnerWindow:updateLoveIcon()
@@ -729,6 +743,16 @@ end
 
 function ActivityEntranceTestPartnerWindow:checkBtnCommentShow()
 	self.btnComment:SetActive(false)
+end
+
+function ActivityEntranceTestPartnerWindow:onClickNav(index)
+	ActivityEntranceTestPartnerWindow.super.onClickNav(self, index)
+
+	if index == 1 and self.partner_.tableID == xyd.tables.miscTable:getNumber("entrance_test_help_show", "value") then
+		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(true)
+	else
+		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(false)
+	end
 end
 
 function ActivityEntranceTestPartnerWindow:onClickSuitIcon()

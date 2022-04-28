@@ -1142,7 +1142,7 @@ L\'Attaque Basique marque l\'ennemi avec [c][e28002]YinYang[-][/c]
 
 [c][e28002]YinYang (Marque)：[-][/c]
 Prêtresse inflige 15% de dégâts supplémentaires aux cibles marquées par [c][e28002]YinYang[-][/c]. (Marque cumulable)"
-5300203,Alice,Vétéran,Augmente son Attaque de 8% après chaque Attaque pendant 6 tours.
+5300203,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 8% pendant 6 tours."
 5300303,Nia,Armure de Jouet,"Après sa mort, [c][01a310]empoisonne[-][/c] tous les ennemis, infligeant 55% d'Attaque pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 5300403,Muppy,Bouclier de Muppy,"Augmente les PV de 20%, l'Attaque de 15% et l'Armure de 20%."
 5300503,Nobunaga,Vol de Force,"Augmente l'Attaque de 30%, les PV de 15% et les Dégâts Critiques de 10%."
@@ -1267,7 +1267,7 @@ La cible sera temporairement incapable de déclencher sa Compétence Active."
 65300403,Pandaria,Tir Empoisonné II,"Les Critiques ont 100% de chance d'[c][01a310]empoisonner[-][/c] la cible, l'Empoisonnement inflige 66% d'Attaque pendant 2 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65300503,Amelia,Trou Noir II,"Augmente les Dégâts des Compétences de 87,5%, les PV de 45% et la Vitesse de 50%."
 65300603,Angel,Pouvoir d'Ange II,"Augmente les Dégâts Divins de 48%, l'Attaque de 20%, les PV de 20% et les Critiques de 15%."
-65301103,Alice,Vétéran II,Augmente son Attaque de 14% après chaque Attaque pendant 6 tours.
+65301103,Alice,Vétéran II,"Après chaque Attaque Basique, augmente l'Attaque de 14% pendant 6 tours."
 65301203,Lightin,Foudre II,Inflige 30% d'Attaque supplémentaires contre les Assassins.
 65301303,Diva,Surchauffe II,Inflige 35% d'Attaque supplémentaires aux ennemis [c][01a310]brûlés[-][/c].\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet.
 65301403,Iron Fist,Auto Guérison II,"Quand attaqué (contre-attaque non comprise), a 100% de chance de se soigner pour 50% de la valeur de l'Attaque."
@@ -1331,7 +1331,7 @@ La cible sera temporairement incapable de lancer sa Compétence Active ou d\'att
 75300403,Toyo,Fureur III,"L'Attaque a 75% de chance de faire [c][01a310]brûler[-][/c] la cible, la [c][01a310]Brûlure[-][/c] inflige 110% d'Attaque pendant 2 tours.\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 75300503,Masamune,Contre-Attaque III,"Quand attaqué par un Coup Critique (contre-attaque non comprise), elle a 100% de chance de faire une contre-attaque, infligeant 320% d'Attaque."
 75300603,Hexa,Chasseur d'Assassin III,"Lorsqu'un ennemi est vaincu, son Attaque sera augmentée de 30%."
-75300703,Alice,Vétéran III,"Après chaque Attaque, augmente l'Attaque de 20% et la Résistance aux Dégâts de 3% pendant 6 tours."
+75300703,Alice,Vétéran III,"Après chaque Attaque Basique, augmente l'Attaque de 20% et la Résistance aux Dégâts de 3% pendant 6 tours."
 75300803,Muppy,Bouclier de Muppy III,"Augmente les PV de 40%, l'Attaque de 35% et l'Armure de 40%."
 75300903,Prêtresse,Créateur de Marque,"
 L\'Attaque Basique marque l\'ennemi avec [c][e28002]YinYang[-][/c] et vole 10% de l\'Attaque de la cible pendant 2 tours.
@@ -1710,7 +1710,7 @@ La cible sera temporairement incapable de lancer sa Compétence Active ou d\'att
 65300413,Pandaria,Tir Empoisonné III,"Les Critiques ont 100% de chance d'[c][01a310]empoisonner[-][/c]la cible, l'Empoisonnement inflige 78% d'Attaque pendant 2 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 65300513,Amelia,Trou Noir III,"Augmente les Dégâts des Compétences de 100%, les PV de 55% et la Vitesse de 60."
 65300613,Angel,Pouvoir d'Ange III,"Augmente les Dégâts Divins de 60%, l'Attaque de 25%, les PV de 20% et les Critiques de 20%."
-65301113,Alice,Vétéran III,"Après chaque Attaque, augmente l'Attaque de 20% et la Résistance aux Dégâts de 3% pendant 6 tours."
+65301113,Alice,Vétéran III,"Après chaque Attaque Basique, augmente l'Attaque de 20% et la Résistance aux Dégâts de 3% pendant 6 tours."
 65301213,Lightin,Foudre III,Inflige 40% d'Attaque supplémentaires contre les Assassins.
 65301313,Diva,Surchauffe III,Inflige 45% d'Attaque supplémentaires aux ennemis [c][01a310]brûlés[-][/c].\n[c][01a310]Brûlure :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet.
 65301413,Iron Fist,Auto-Guérison III,"Quand attaqué (contre-attaque non comprise), a 100% de chance de se soigner pour 56% de la valeur de l'Attaque."
@@ -5174,11 +5174,11 @@ infligera 275% d\'Attaque après 2 tours. ( Marque Cumulable )"
 753007023,Alice,Armure de Plasma,"Augmente l'Armure de 40%, l'Attaque de 27,5%, les PV de 42% et les dégâts infligés aux Guerriers de 70%."
 753007024,Alice,Armure de Plasma,"Augmente l'Armure de 40%, l'Attaque de 27,5%, les PV de 42,5% et les dégâts infligés aux Guerriers de 70%."
 753007025,Alice,Armure de Plasma,"Augmente l'Armure de 40%, l'Attaque de 28%, les PV de 43% et les dégâts infligés aux Guerriers de 70%."
-753007031,Alice,Vétéran,"Après chaque attaque, augmente l'Attaque de 21% et la Résistance aux Dégâts de 3% pendant 6 tours."
-753007032,Alice,Vétéran,"Après chaque attaque, augmente l'Attaque de 21,5% et la Résistance aux Dégâts de 3% pendant 6 tours."
-753007033,Alice,Vétéran,"Après chaque attaque, augmente l'Attaque de 22% et la Résistance aux Dégâts de 3% pendant 6 tours."
-753007034,Alice,Vétéran,"Après chaque attaque, augmente l'Attaque de 22,5% et la Résistance aux Dégâts de 3% pendant 6 tours."
-753007035,Alice,Vétéran,"Après chaque attaque, augmente l'Attaque de 23% et la Résistance aux Dégâts de 4% pendant 6 tours."
+753007031,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 21% et la Résistance aux Dégâts de 3% pendant 6 tours."
+753007032,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 21,5% et la Résistance aux Dégâts de 3% pendant 6 tours."
+753007033,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 22% et la Résistance aux Dégâts de 3% pendant 6 tours."
+753007034,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 22,5% et la Résistance aux Dégâts de 3% pendant 6 tours."
+753007035,Alice,Vétéran,"Après chaque Attaque Basique, augmente l'Attaque de 23% et la Résistance aux Dégâts de 4% pendant 6 tours."
 753007041,Alice,Auto Guérison,"Quand attaqué (contre-attaque non comprise), a 100% de chance de se soigner pour 102% de la valeur de l'Attaque."
 753007042,Alice,Auto Guérison,"Quand attaqué (contre-attaque non comprise), a 100% de chance de se soigner pour 104% de la valeur de l'Attaque."
 753007043,Alice,Auto Guérison,"Quand attaqué (contre-attaque non comprise), a 100% de chance de se soigner pour 106% de la valeur de l'Attaque."
@@ -11118,17 +11118,17 @@ Augmente l\'Immunité de la cible 10% et sa Précision de 5% (5 couches au maxim
 Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se marque avec [c][e28002]Bénédiction du Vent[-][/c].
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]
 La porteuse récupère 5% de ses PV Max à la fin de chaque tour et obtient également une Barrière de la même valeur.
-L\'effet de la Barrière absorbant les dégâts est augmenté de 2%."
+L\'effet de la Barrière absorbant les dégâts est augmenté de 5%."
 6760201,Cri du Vent,Compétence de l'Antiquité,"
 Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se marque avec [c][e28002]Bénédiction du Vent[-][/c].
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]
 La porteuse récupère 5% de ses PV Max à la fin de chaque tour et obtient également une Barrière de la même valeur.
-L\'effet de la Barrière absorbant les dégâts est augmenté de 4%."
+L\'effet de la Barrière absorbant les dégâts est augmenté de 10%."
 6760301,Cri du Vent,Compétence de l'Antiquité,"
 Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se marque avec [c][e28002]Bénédiction du Vent[-][/c].
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]
 La porteuse récupère 5% de ses PV Max à la fin de chaque tour et obtient également une Barrière de la même valeur.
-L\'effet de la Barrière absorbant les dégâts est augmenté de 10%."
+L\'effet de la Barrière absorbant les dégâts est augmenté de 20%."
 630101,時間迴廊,-1,"Au début de la bataille, augmente de 2% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
 630102,時間迴廊,-1,"Au début de la bataille, augmente de 4% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
 630103,時間迴廊,-1,"Au début de la bataille, augmente de 6% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
@@ -11880,3 +11880,267 @@ Elle [c][e28002]asphyxie[-][/c] les ennemis pendant 2 tours lorsqu\'elle inflige
 Réduit de 50% les Soins Reçus, de 50% la Récupération d\'Énergie de la cible dans cet état et augmente de 100% ses dégâts subis.
 [c][01a310]Venin Hydrique (cumulable) : [-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet (si la valeur de ces dégâts est inférieure à 50% de l\'Attaque deChimère des Océans, elle infligera directement 50% d\'Attaque à la cible marquée)."
+5401800,K.M Érudite,Attaque Basique,Attaque Basique
+65402500,K.M Érudite,Attaque Basique,Attaque Basique
+75401800,K.M Érudite,Attaque Basique,Attaque Basique
+5401801,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 100% d\'Attaque à 4 ennemis, réduit leurs Attaques de 5% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (250% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+65402501,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 200% d\'Attaque à 4 ennemis, réduit leurs Attaques de 10% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (500% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+75401801,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 600% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1200% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+5401802,K.M Érudite,Mental Fort,"Augmente les PV de 20%, l'Attaque de 10%, l'Immunité de 10% et la Vitesse de 20."
+65402502,K.M Érudite,Mental Fort,"Augmente les PV de 30%, l'Attaque de 15%, l'Immunité de 20% et la Vitesse de 30."
+65402512,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 40."
+75401802,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 40."
+5401803,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 120% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 10% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 30% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+65402503,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 180% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 15% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 60% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+65402513,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 360% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+75401803,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 360% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+5401804,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (75% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+65402504,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (150% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+65402514,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (340% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+75401804,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (340% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018011,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 612% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1224% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018012,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 624% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1248% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018013,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 636% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1272% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018014,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 648% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1296% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018015,K.M Érudite,Prédiction Divine,"
+Je dois regarder au-delà de ce qui me fait face et anticiper le prochain coup de mon adversaire.
+Inflige 660% d\'Attaque à 4 ennemis, réduit leurs Attaques de 15% pendant 3 tours, et les marque avec une couche de [c][01a310]Vent Contraire[-][/c] (1320% de l\'Attaque de K.M Érudite).
+
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018021,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 42."
+754018022,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 44."
+754018023,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 46."
+754018024,K.M Érudite,Mental Fort,"Augmente les PV de 40%, l'Attaque de 20%, l'Immunité de 30% et la Vitesse de 48."
+754018025,K.M Érudite,Mental Fort,"Augmente les PV de 43%, l'Attaque de 23%, l'Immunité de 30% et la Vitesse de 50."
+754018031,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 368% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+754018032,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 376% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+754018033,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 384% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+754018034,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 392% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 3% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+754018035,K.M Érudite,Intuition Innée,"
+Écoute ce que cette lègère brise te souffle à l\'oreille et place ta prochaine pierre.
+L\'Attaque Basique inflige 400% d\'Attaque à l\'ennemi ayant les Critiques les plus élevées et réduit ses Critiques de 20% pendant 2 tours.
+Marque les 3 alliées ayant les Attaques les plus élevées avec une couche de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée marquée avec [c][e28002]Vent Arrière[-][/c] inflige des dégâts aux ennemis en lançant sa Compétence Active ou son Attaque Basique, elle a 100% de chance de leur infliger des dégâts équivalent à 5% de leurs PV Max (2500% de la valeur de l\'Attaque de cette alliée au maximum).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède."
+754018041,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (347% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018042,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (354% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018043,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (361% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018044,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (368% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
+754018045,K.M Érudite,Théorie du Go,"
+Change le cours des événéments et mène-les à ton avantage !
+Au début de la bataille, K.M Érudite et les 2 alliées ayant les Attaques les plus élevées obtiennent 2 couches de [c][e28002]Vent Arrière[-][/c] pendant 3 tours.
+Lorsqu\'une alliée subit une Compétence Active ou une Attaque Basique, K.M Érudite marque les 3 ennemis aléatoires avec une couche de [c][01a310]Vent Contraire[-][/c] (375% de l\'Attaque de K.M Érudite).
+
+[c][e28002]Vent Arrière (Effet de Compétence, 4 couches au maximum) :[-][/c]
+Augmente de 0,05% les dégâts infligés (150% au maximum) pour chaque 1000 d\'Attaque que la cible marquée possède.
+[c][01a310]Vent Contraire (Marque, cumulable) :[-][/c]
+Lorsque la cible marquée subit une Attaque Basique ou une Compétence Active, cette Marque sera consommée pour lui infliger des dégâts et aura 25% de chance de l\'[c][01a310]étourdir[-][/c] pendant 2 tours.
+Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne pourra pas être étourdie.
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."

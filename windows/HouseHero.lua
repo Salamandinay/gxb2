@@ -646,6 +646,13 @@ function HouseHero:interact(item)
 
 		self:sleep()
 		self:changeTouchNodePos(xyd.HouseItemInteractType.SLEEP)
+	elseif itemInfo.interact == xyd.HouseItemInteractType.IDLE then
+		info.is_flip = itemInfo.is_flip
+		local idleOffset = HousePartnerTable:idlePosOffset(modelID)
+		offsetPos.x = idleOffset[1]
+		offsetPos.y = idleOffset[2]
+
+		self:interactIdle()
 	else
 		self:interactIdle()
 	end

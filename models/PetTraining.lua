@@ -58,18 +58,22 @@ function PetTraining:setRedMark()
 end
 
 function PetTraining:getRedMarkStatus()
-	local allNum, completeNum = self:getMissionNum()
-	local show = true
+	local level = self:getTrainingLevel()
+	local maxHangTime = xyd.tables.petTrainingNewAwardsTable:getTime(level)
+	local hangStartTime = self:getHangTime()
 
-	if allNum == 0 then
-		show = false
-	elseif completeNum > 0 then
-		show = true
-	else
-		show = false
+	if hangStartTime == 0 then
+		return false
 	end
 
-	return show or not xyd.db.misc:getValue("pet_training_first")
+	local nowTime = xyd.getServerTime(true)
+	local show = false
+
+	if maxHangTime <= nowTime - hangStartTime then
+		show = true
+	end
+
+	return show
 end
 
 function PetTraining:onFight(event)
@@ -142,7 +146,7 @@ function PetTraining:getMissionNum()
 end
 
 function PetTraining:getHangTime()
-	return self.hangTime
+	return self.hangTime or 0
 end
 
 function PetTraining:getBattleTimes()
@@ -276,6 +280,8 @@ end
 
 function PetTraining:onGetTrainingAward(event)
 	self.hangTime = event.data.hang_time
+
+	self:setRedMark()
 end
 
 function PetTraining:isTrainOpen()

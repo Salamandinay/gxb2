@@ -1136,7 +1136,7 @@ Basic Attack tags the target with a [c][e28002]Yinyang Mark[-][/c].
 
 [c][e28002]Yinyang Mark:[-][/c]
 Mark effect, increases Priestess\'s damage against her enemies by 15%, can stack."
-5300203,Alice,Veteran,Each Basic Attack increases self 8% Attack for 6 rounds
+5300203,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 8% for 6 rounds.
 5300303,Nia,Toy Armor,"After death, [c][01a310]Poisons[-][/c] all enemies, dealing (55% of Attack) damage each round for 3 rounds.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5300403,Muppet,Muppet Shield,"Increases HP by 20%, Attack by 15% and Armor by 20%."
 5300503,Nobunaga,Power Boost,"Increases Attack by 30%, HP by 15%, and Crit Damage by 10%. "
@@ -1249,7 +1249,7 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65300403,Pandaria,Poison Shot II,"Each Crit has a 100% chance to [c][01a310]Poison[-][/c] the target, dealing (66% of Attack) damage each round for 2 rounds.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65300503,Amelia,Black Hole II,"Increases Skill Damage by 87.5%, HP by 45% and Speed by 50."
 65300603,Angel,Angel Power II,"Increases Holy Damage by 48%, Attack by 20%, HP by 20% and Crit by 15%."
-65301103,Alice,VeteranII,Each Basic Attack increases self Attack by 14% for 6 rounds.
+65301103,Alice,VeteranII,Every Basic Attack of Alice increases her Attack by 14% for 6 rounds.
 65301203,Lightin,Lightning II,Deals extra 30% damage against Assassins.
 65301303,Diva,Overheat II,"Deals extra 35% damage to [c][01a310]Burning[-][/c] enemies.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65301403,Iron Fist,Heal II,"When attacked (Counterattack not included), has 100% chance to heal self for (50% of Attack) HP."
@@ -1309,7 +1309,7 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 75300403,Toyo,Sword Soul III,"Attack has a 75% chance to [c][01a310]Burn[-][/c] the target, dealing (110% of Attack) damage each round for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75300503,Masamune,Counterstrike III,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (320% of Attack) damage."
 75300603,Hexa,Assassin's Code III,"Whenever an enemy Girl dies, gains Attack by 30%."
-75300703,Alice,VeteranIII,Each Basic Attack increases own Attack by 20% and Damage Reduction by 3% for 6 rounds.
+75300703,Alice,VeteranIII,Every Basic Attack of Alice increases her Attack by 20% and her Damage Reduction by 3% for 6 rounds.
 75300803,Muppet,Muppet Shield III,"Increases HP by 40%, Attack by 35% and Armor by 40%."
 75300903,Priestess,Mark Maker,"
 Basic Attack tags the target with the [c][e28002]Yinyang Mark[-][/c]. Steals target\'s Attack by 10% for 2 rounds. 
@@ -1676,7 +1676,7 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 65300413,Pandaria,Poison Shot III,"Each Crit has a 100% chance to [c][01a310]Poison[-][/c] the target, dealing (78% of Attack) damage each round for 2 rounds.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65300513,Amelia,Black Hole III,"Increases Skill Damage by 100%, HP by 55% and Speed by 60."
 65300613,Angel,Angel Power III,"Increases Holy Damage by 60%, Attack by 25%, HP by 20% and Crit by 20%."
-65301113,Alice,VeteranIII,Each Basic Attack increases own Attack by 20% and Damage Reduction by 3% for 6 rounds.
+65301113,Alice,VeteranIII,Every Basic Attack of Alice increases her Attack by 20% and her Damage Reduction by 3% for 6 rounds.
 65301213,Lightin,Lightning III,Deals extra 40% damage against Assassins.
 65301313,Diva,Overheat III,"Deals extra 45% damage to [c][01a310]Burning[-][/c] enemies.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65301413,Iron Fist,Heal III,"When attacked (Counterattack not included), has 100% chance to heal self for (56% of Attack) HP."
@@ -4920,11 +4920,11 @@ Mark effect, the Round Mark will be removed 1 round later and deals (275% of Att
 753007023,Alice,Plasma Shield,"Increases Armor by 40%, Attack by 27.5% and HP by 42%, deals extra 70% damage against Warrior class enemies."
 753007024,Alice,Plasma Shield,"Increases Armor by 40%, Attack by 27.5% and HP by 42.5%, deals extra 70% damage against Warrior class enemies."
 753007025,Alice,Plasma Shield,"Increases Armor by 40%, Attack by 28% and HP by 43%, deals extra 70% damage against Warrior class enemies."
-753007031,Alice,Veteran,Each Basic Attack increases own Attack by 21% and Damage Reduction by 3% for 6 rounds.
-753007032,Alice,Veteran,Each Basic Attack increases own Attack by 21.5% and Damage Reduction by 3% for 6 rounds.
-753007033,Alice,Veteran,Each Basic Attack increases own Attack by 22% and Damage Reduction by 3% for 6 rounds.
-753007034,Alice,Veteran,Each Basic Attack increases own Attack by 22.5% and Damage Reduction by 3% for 6 rounds.
-753007035,Alice,Veteran,Each Basic Attack increases own Attack by 23% and Damage Reduction by 4% for 6 rounds.
+753007031,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 21% and her Damage Reduction by 3% for 6 rounds.
+753007032,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 21.5% and her Damage Reduction by 3% for 6 rounds.
+753007033,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 22% and her Damage Reduction by 3% for 6 rounds.
+753007034,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 22.5% and her Damage Reduction by 3% for 6 rounds.
+753007035,Alice,Veteran,Every Basic Attack of Alice increases her Attack by 23% and her Damage Reduction by 4% for 6 rounds.
 753007041,Alice,Heal,"When attacked (Counterattack not included), heals self for (102% of Attack) HP."
 753007042,Alice,Heal,"When attacked (Counterattack not included), heals self for (104% of Attack) HP."
 753007043,Alice,Heal,"When attacked (Counterattack not included), heals self for (106% of Attack) HP."
@@ -11426,21 +11426,21 @@ At the start of the battle, the owner of this Antique loses 50% of self HP, gain
 [c][e28002]Zephyr\'s Blessing:[-][/c]
 A Skill Effect.
 Recovers (5% of self Maximum HP) HP and gains a [c][e28002]Magick Barrier[-][/c] with BP equivalent to the amount of HP healed at the end of every round.
-When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 2% less BP."
+When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 5% less BP."
 6760201,Windbringer,Antique Skill,"
 At the start of the battle, the owner of this Antique loses 50% of self HP, gains a [c][e28002]Magick Barrier[-][/c] with (50% of self HP) BP, and casts [c][e28002]Zephyr\'s Blessing[-][/c] to self.
 
 [c][e28002]Zephyr\'s Blessing:[-][/c]
 A Skill Effect.
 Recovers (5% of self Maximum HP) HP and gains a [c][e28002]Magick Barrier[-][/c] with BP equivalent to the amount of HP healed at the end of every round.
-When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 4% less BP."
+When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 10% less BP."
 6760301,Windbringer,Antique Skill,"
 At the start of the battle, the owner of this Antique loses 50% of self HP, gains a [c][e28002]Magick Barrier[-][/c] with (50% of self HP) BP, and casts [c][e28002]Zephyr\'s Blessing[-][/c] to self.
 
 [c][e28002]Zephyr\'s Blessing:[-][/c]
 A Skill Effect.
 Recovers (5% of self Maximum HP) HP and gains a [c][e28002]Magick Barrier[-][/c] with BP equivalent to the amount of HP healed at the end of every round.
-When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 10% less BP."
+When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 20% less BP."
 630101,時間迴廊,-1,"When the battle starts, all Ally Ghost and Monster Girls gain 2% extra Attack."
 630102,時間迴廊,-1,"When the battle starts, all Ally Ghost and Monster Girls gain 4% extra Attack."
 630103,時間迴廊,-1,"When the battle starts, all Ally Ghost and Monster Girls gain 6% extra Attack."
@@ -12346,3 +12346,379 @@ The owner of this Skill Effect will have its Heal Received lowered by 50%, Energ
 [c][01a310]Liquid Poison[-][/c]:
 A Damage Over Time effect that can stack.
 Deals damage based on the owner\'s Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster\'s Attack, then this effect will deal damage equivalent to 50% of the caster\'s Attack."
+5401800,K.M. Enlightened,Basic Attack,Basic Attack
+65402500,K.M. Enlightened,Basic Attack,Basic Attack
+75401800,K.M. Enlightened,Basic Attack,Basic Attack
+5401801,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (100% of Attack) damage to 4 random enemies, reduces their Attack by 5% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (250% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+65402501,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (200% of Attack) damage to 4 random enemies, reduces their Attack by 10% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (500% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+75401801,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (600% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1200% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+5401802,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 20%, Attack by 10%, Control Immunity by 10%, and Speed by 20."
+65402502,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 30%, Attack by 15%, Control Immunity by 20%, and Speed by 30."
+65402512,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 40."
+75401802,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 40."
+5401803,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (120% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 10% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has a 30% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+65402503,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (180% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 15% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has a 60% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+65402513,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (360% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+75401803,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (360% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+5401804,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (75% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+65402504,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (150% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+65402514,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (340% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+75401804,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (340% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018011,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (612% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1224% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018012,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (624% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1248% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018013,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (636% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1272% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018014,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (648% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1296% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018015,K.M. Enlightened,Divine Move,"
+At the final battle, I shall look upon the threads of fate and foretell every move of my opponents.
+
+K.M. Enlightened deals (660% of Attack) damage to 4 random enemies, reduces their Attack by 15% for 3 rounds, and casts 1 stack of [c][01a310]Headwinds[-][/c] that deals (1320% of self Attack) damage to them.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018021,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 42."
+754018022,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 44."
+754018023,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 46."
+754018024,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 40%, Attack by 20%, Control Immunity by 30%, and Speed by 48."
+754018025,K.M. Enlightened,A Match of Wits,"The game becomes more interesting when I meet my rival.\n\nIncreases K.M. Enlightened's HP by 43%, Attack by 23%, Control Immunity by 30%, and Speed by 50."
+754018031,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (368% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+754018032,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (376% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+754018033,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (384% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+754018034,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (392% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (3% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+754018035,K.M. Enlightened,Direction of Play,"
+Listen to the gentle breeze that whispers in your ear and place the crucial stone.
+
+K.M. Enlightened\'s Basic Attack will deal (400% of Attack) damage to the enemy with highest Crit attribute, reduce its Crit by 20% for 2 rounds, and cast 1 stack of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds to 3 allies with the highest Attack attributes.
+When an ally with [c][e28002]Tailwinds[-][/c] deals damage to enemies with a Basic Attack or an Active Skill, she has 100% chance to deal (5% of target\'s Maximum HP) extra damage to the target(s) (damage dealt will not surpass 2500% of the ally\'s Attack).
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect."
+754018041,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (347% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018042,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (354% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018043,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (361% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018044,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (368% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+754018045,K.M. Enlightened,Reading Ahead,"
+Turn the tides by utilizing the movements of your enemies to your advantage.
+
+At the start of the battle, K.M. Enlightened and the ally with the highest Attack attribute each gains 2 stacks of [c][e28002]Tailwinds[-][/c] that lasts for 3 rounds.
+When an ally takes damage from Basic Attacks or Active Skills, K.M. Enlightened afflicts [c][01a310]Headwinds[-][/c] that deal (375% of Attack) damage to 3 random enemies.
+
+[c][e28002]Tailwinds[-][/c]:
+A Skill Effect that can stack up to 4 stacks.
+All damage dealt by the owner of this Effect increases by 0.05% for every 1000 Attack she has. All damage dealt can be increased up to 150% max from this Effect.
+
+[c][01a310]Headwinds[-][/c]:
+A Mark Effect that can stack.
+This Mark triggers when the owner of this Mark takes damage from Basic Attacks or Active Skills. When triggered, it deals damage to the owner and has a 25% chance to [c][01a310]Stun[-][/c] the owner for 2 rounds.
+If the caster of this Mark is already defeated when this Mark is triggered, then this Mark will not [c][01a310]Stun[-][/c] its owner.
+This Mark disappears after it is triggered.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."

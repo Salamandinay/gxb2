@@ -75,7 +75,7 @@ function HeroAttr:attr(hero, params)
 					chimeArr[k] = tonumber(v)
 				end
 			end
-		else
+		elseif not params.isHeroBook then
 			for k, v in pairs(xyd.models.shrine:getChimeAttr(hero)) do
 				chimeArr[k] = tonumber(v)
 			end

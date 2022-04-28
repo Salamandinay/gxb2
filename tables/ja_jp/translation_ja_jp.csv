@@ -1612,7 +1612,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,BGM
 NORMAL_SLOT_MACHINE,普通販売機
 HIGH_SLOT_MACHINE,高級販売機
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,1.各プレゼントは毎日補充されます。毎日ログイン後、アンロックしたプレゼントを受け取れます。|2.未解禁のプレゼントはアイテムを全て保留し、アンロック後、一度に全てのアイテムを獲得できます。|3.プレゼントをタップすると、内容を確認できます。|4.四つ目のプレゼントは、超お得パックの第二段階を購入すると、アンロックされます。
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,1.各プレゼントは毎日補充されます。毎日ログイン後、アンロックしたプレゼントを受け取れます。|2.未解禁のプレゼントはアイテムを全て保留し、アンロック後に獲得できます。|3.プレゼントをタップすると、内容を確認できます。|4.3つ目のプレゼントは、超お得パックの第二段階を購入するとアンロックされます。|5.イベント終了後、初夏クーポンは1つにつき20Kゴールドに変換されます。
 CHAPTER_COUNT,第{1}章
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,ロック中
@@ -2042,7 +2042,7 @@ ARENA_ALL_SERVER_ROUND_TEXT_6,決勝
 MATCH_NUM4,第四試合
 MATCH_NUM5,第五試合
 ARENA_ALL_SERVER_MISC,無限の栄光は\n果たして誰の手に
-ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,1.インフィニティリーグの一回戦開始後、プレイヤーは試合中に支持したい参加者にベットすることが出来ます。参加者が勝利した場合は当たりになり、失敗した場合ははずれになります。|2.決勝の場合、参加者は自身しか支持できません。|3.毎回ベットの試合はシステムにより決定されます。同じサークル・サーバー・所属言語の参加者は優先的に選択されます。|4.ベット可能なゴールド数は、メインクエストのクリア進捗によって決定されます：ゴールド数はクリア済みの最新ステージの一日オートモードのゴールド産出数（VIP及び定期購入による増加効果は計算されません）|5.支持した参加者が勝利した場合、ベットゴールド数の2倍のゴールドはメールにて配布されます。
+ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,1.インフィニティリーグの一回戦開始後、プレイヤーは試合中に支持したい参加者にベットすることが出来ます。参加者が勝利した場合は当たりになり、失敗した場合ははずれになります。|2.決勝の場合、参加者は自身しか支持できません。|3.毎回ベットの試合はシステムにより決定されます。開始後、5つのグループからランダムで1つのグループが選択され、そのグループの同じサークル・サーバー・所属言語の参加者は優先的に選択されます。|4.ベット可能なゴールド数は、メインクエストのクリア進捗によって決定されます：ゴールド数はクリア済みの最新ステージの一日オートモードのゴールド産出数（VIP及び定期購入による増加効果は計算されません）|5.支持した参加者が勝利した場合、ベットゴールド数の2倍のゴールドはメールにて配布されます。
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1.プレイヤーの優勝回数の履歴には、旧インフィニティリーグの優勝回数も含まれます。
 ARENA_ALL_SERVER_NEW_COUNTDOWN,新シーズン開催まで：
 IMG_GUIDE_JUMP_GAME_1,階段を下りた際に1理性が[c][cc0011]回復[-][/c]されます、理性が0の場合はゲームオーバーになります
@@ -4904,7 +4904,7 @@ ACADEMY_EXAM_TEXT1,連続挑戦の設定
 ACADEMY_EXAM_TEXT2,より高レベルのステージに連続で挑戦します。失敗すると止まります。
 ACADEMY_EXAM_TEXT3,より高レベルのステージに連続で挑戦します。失敗後も、テスト参加証を使い切るまで挑戦を続けます。
 PUB_MISSION_AUTO_TEXT2,完了済のミッションはありません
-PUB_MISSION_AUTO_TEXT3,星6または星7のミッションが含まれています。操作を続けますか？
+PUB_MISSION_AUTO_TEXT3,星6または星7のミッションが\n含まれています。操作を続けますか？
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_1,精算後、期間限定外観アイコンを獲得
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_2,上位{1}が\nランクUP
 ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_3,最高ランクに到達済みです
@@ -4916,7 +4916,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,ランクUP条件
 WARMUP_ARENA_REACH_RANK_HELP,1.本イベントは、B、A、S、S+の4つのランクがあります。自分と同じランクの他のプレイヤーにのみ挑戦できます。イベント開始時、全てのプレイヤーはBランクからスタートします。|2.毎日日本時間朝9時に、所属しているランクでの順位割合がランクUP条件に満たしている場合は、ランクが1つ上がります。満たしていない場合は、所属しているランクに留まります。|3.各ランク紹介：|ランク{1}に達したあと：|{2}|ランク{3}に達したあと：|{4}|ランク{5}に達したあと：|{6}|4.イベント中に表示される順位は、先輩が所属しているランクでの順位となります（ランクUPシステムは、毎日日本時間朝9時に精算を行い、各ランクのプレイヤー数が変化する可能性があります。もし先輩がランクUPできていない場合、2日目のスタート順位割合が前日の割合より多くなっている可能性があります）。
 ENTRANCE_TEST_LEVEL_UP_ING,ランク確定中……
 WARMUP_ARENA_TASK_INFO_1,新入生チャレンジ
-WARMUP_ARENA_TASK_INFO_2,千鶴子-神様と道
+WARMUP_ARENA_TASK_INFO_2,諸葛亮（天眼）・目覚め
 WARMUP_ARENA_TASK_INFO_3,チャレンジミッション
 WARMUP_ARENA_TASK_INFO_4,追加ボーナス
 WARMUP_ARENA_TASK_INFO_5,星マークのミッション完了でアンロック
@@ -5701,42 +5701,42 @@ ACTIVITY_FIREWORK,花火祭り
 FIREWORK_EXPLAIN_TEXT10,「マッチ棒」
 HOUSE_TEXT_64,未所持
 POTENTIALITY_BACK_TEXT04,戦姫所持上限に達しました。
-ACTIVITY_VAMPIRE_GAMBLE_HELP,1.イベント期間中、背景を選択後「思い出の砂時計」を消費することで回想できます。回想することで「秘密のカギ」（次の背景をアンロック可能）、もしくはその背景の回想ボーナスを獲得できます。背景により「思い出の砂時計」の消費量が異なります。|2.各背景で回想する際、「秘密のカギ」を獲得しなかった場合、次の回想では「秘密のカギ」の出現率がアップし、ランダムで回想ボーナスを獲得できます（回想ボーナス獲得後、重複して獲得することはできません）。|3.回想時、デフォルトで第1背景を開放します。第1背景から第4背景まで、それぞれ「秘密のカギ」があり、「秘密のカギ」を獲得することで次の背景をアンロックできます。第5背景には「秘密のカギ」がなく、背景内の回想ボーナスを全て獲得することで第6背景をアンロックできます。第6背景の回想ボーナスを全て獲得すると、その背景のボーナスはリセットされます。|4.アンロック済みの背景の中で未獲得の回想ボーナスがある場合、背景を選び直し再度回想することができます。|5. 原初覚醒画面で「原初の羽」を消費するとドラキュラ（原初）を覚醒することができます。覚醒値が最大値までたまると「星5ドラキュラ（原初）の欠片」を獲得できます。|6. 「原初の羽」は、原初の依頼により獲得できます。「思い出の砂時計」は、原初の依頼、新戦姫ガチャ、お得パック、超お得パック、超お得衣装パックにより獲得できます。|7. イベント終了後、未使用の「原初の羽」、「思い出の砂時計」、「秘密のカギ」は自動で回収されます。「原初の羽」は1つ20Kゴールド、「思い出の砂時計」は1つ50Kゴールド、「秘密のカギ」は1つ100Kゴールドとなります。
-ACTIVITY_VAMPIRE_TASK_HELP,1.イベント期間中、指定の任務をクリアし「血の契約書」を集めると、依頼完了ランクをアップでき（1ページは1ptとなる）、無料でノーマルボーナスを受け取れます。|2.「原初の依頼」を購入することで、追加ボーナスをアンロックできます。購入時間にかかわらず、購入すると現在のランク前の追加ボーナスをすぐに受け取れます。
+ACTIVITY_VAMPIRE_GAMBLE_HELP,1.イベント期間中、地図を選択後「スタミナポーション」を消費することで冒険できます。冒険することで「冒険の地図」（次の地図をアンロック可能）、もしくはその地図の冒険ボーナスを獲得できます。地図により「スタミナポーション」の消費量は異なります。|2.各地図で冒険する際、「冒険の地図」を獲得しなかった場合、次の冒険では「冒険の地図」の出現率がアップし、ランダムで冒険ボーナスを獲得できます（冒険ボーナス獲得後、重複して獲得することはできません）。|3.冒険時、デフォルトで第1地図を開放します。第1地図から第4地図までそれぞれ「冒険の地図」があり、「冒険の地図」を獲得することで次の地図をアンロックできます。第5地図には「冒険の地図」がなく、地図内の冒険ボーナスを全て獲得することで第6地図をアンロックできます。第6地図の冒険ボーナスを全て獲得すると、その地図のボーナスはリセットされます。|4.アンロック済みの地図の中で未獲得の冒険ボーナスがある場合、地図を選び直し再度冒険することができます。|5. 冒険の祝福画面で「祝福のジュエル」を消費すると諸葛亮（天眼）を召喚し、一緒に冒険することができます。祝福値が最大値までたまると「星5諸葛亮（天眼）の欠片」を獲得できます。|6. 「祝福のジュエル」は、光輝の依頼により獲得できます。「スタミナポーション」は、光輝の依頼、新戦姫ガチャ、お得パック、超お得パック、超お得衣装パックにより獲得できます。|7. イベント終了後、未使用の「スタミナポーション」、「祝福のジュエル」、「冒険の地図」は自動で回収されます。「祝福のジュエル」は1つ20Kゴールド、「スタミナポーション」は1つ50Kゴールド、「冒険の地図」は1つ100Kゴールドとなります。
+ACTIVITY_VAMPIRE_TASK_HELP,1.イベント期間中、指定の任務をクリアし「光輝の契約書」を集めると、依頼完了ランクをアップでき（1ページにつき1pt）、無料でノーマルボーナスを受け取れます。|2.「光輝の依頼」を購入することで、追加ボーナスをアンロックできます。購入時間にかかわらず、購入すると現在のランク以前の追加ボーナスをすぐに受け取れます。|3.諸葛亮（天眼）を星6、星9、星10にレベルアップするミッションは、交換では完了できません。星5の諸葛亮（天眼）を1体獲得するミッションは、セレモニーイベントの交換で完了することができます。
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,購入後即獲得
 ACTIVITY_VAMPIRE_TASK_LABEL01,ボーナス
 ACTIVITY_VAMPIRE_TASK_LABEL02,ミッション
 ACTIVITY_VAMPIRE_TASK_TEXT01,完了上限
 ACTIVITY_VAMPIRE_TASK_AWARD01,ノーマルボーナス
 ACTIVITY_VAMPIRE_TASK_AWARD02,追加ボーナス
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,原初覚醒
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,回想
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,冒険の祝福
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,冒険
 GACHA_AUTOTRANSFER_TEXT01,獲得した星3戦姫を自動転校する
 GACHA_50TIMES_TEXT01,×1
 GACHA_50TIMES_TEXT02,×50
 GACHA_50TIMES_TEXT03,50回
 GACHA_50TIMES_TEXT04,50回
-ACTIVITY_VAMPIRE_GAMBLE_TEXT01,秘密のカギを獲得しました。\n{1} をアンロックし、回想しますか？
-ACTIVITY_VAMPIRE_GAMBLE_TEXT02,{1}へ移動し回想する
+ACTIVITY_VAMPIRE_GAMBLE_TEXT01,冒険の地図を獲得しました。\n{1} をアンロックし、冒険しますか？
+ACTIVITY_VAMPIRE_GAMBLE_TEXT02,{1}へ移動し冒険する
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,しばらく止まる
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,移動する
-ACTIVITY_VAMPIRE_GAMBLE_TEXT03,現在の覚醒値
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,闇に佇む城
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,夏祭り
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,過去の学園
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,連絡橋の下
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,賑わう屋台
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,原初の世界
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,覚醒
-ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,当該背景はロック中のため、回想できません。
-ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,当該背景内の全てのボーナスを獲得済みのため\n再度回想できません。
-ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,{1}での回想を選択済
-ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,背景ハガキをタップすると回想の目的地を直接切り替えることができます。
-ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,この背景のボーナスは全て獲得済みです。\n自動で目的地を切り替えます。
-ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,この背景の全てのボーナスを獲得しました。\n{1} をアンロックし、回想します。
-ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,この背景の全てのボーナスを獲得しました。\n原初の世界の回想はリセットされます。
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,ドラキュラ（原初）は覚醒済みです。\nこれ以上覚醒できません。
-ACTIVITY_VAMPIRE_GAMBLE_TEXT05,再度回想
+ACTIVITY_VAMPIRE_GAMBLE_TEXT03,現在の祝福値
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,火山の道
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,静かな湖畔
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,キャンプ場
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,暗闇の林
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,公園の片隅
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,光輝の殿堂
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,召喚
+ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,当該地図はロック中のため、冒険できません。
+ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,当該地図内の全てのボーナスを獲得済みのため\n再度冒険することができません。
+ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,{1}での冒険を選択済
+ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,地図をタップすると冒険地を切り替えられます。
+ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,この地図のボーナスは全て獲得済みです。\n自動で冒険地を切り替えます。
+ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,この地図の全てのボーナスを獲得しました。\n{1} をアンロックし、冒険します。
+ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,この地図の全てのボーナスを獲得しました。\n光輝の殿堂の冒険はリセットされます。
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,諸葛亮（天眼）は召喚済みです。\nこれ以上召喚できません。
+ACTIVITY_VAMPIRE_GAMBLE_TEXT05,続ける
 SHRINE_HURDLE,神域の狭間
 SHRINE_TREE,御神木
 SHRINE_NOTICE,掲示板
@@ -5807,7 +5807,7 @@ PERSON_DRESS_BUFFS_TIPS_5,現在アバター（赤色）による特殊バフ効
 PERSON_DRESS_BUFFS_TIPS_6,現在アバター（オレンジ色）による特殊バフ効果はありません。
 PERSON_DRESS_BUFFS_TIPS_7,現在アバター（ピンク色）による特殊バフ効果はありません。
 PERSON_DRESS_RELATED_DRESS,関連アバター
-ACTIVITY_VAMPIRE_GAMBLE_AWARD01,回想ボーナス
+ACTIVITY_VAMPIRE_GAMBLE_AWARD01,冒険ボーナス
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,アンロックアイテム
 CHIME_HELP,"
 1.御神木に「風鈴」を飾ると、全ての戦姫にバフ効果を与え、全ての戦闘でバフが永久に有効となります（一部除く）。|2.一定数の欠片を集めると風鈴をアンロックでき、「夢の塵埃」と「夢のお守り」を消費すると、風鈴を育成することができます。
@@ -6134,7 +6134,7 @@ ACTIVITY_SIMULATION_GACHA_TEXT24,保存3
 ACTIVITY_SIMULATION_GACHA_TEXT25,保存4
 ACTIVITY_SIMULATION_GACHA_TEXT26,保存5
 NEW_TRIAL_RESET_TEXT01,精霊幻境はただ今リニューアル中。乞うご期待。
-NEW_TRIAL_RESET_TEXT02,精霊幻境リニューアル中、開放まであと：[c][b1ff00]{1}[-][/c]
+NEW_TRIAL_RESET_TEXT02,精霊幻境リセット中、開放まであと：[c][b1ff00]{1}[-][/c]
 NEW_TRIAL_VOLCAN_SECRET,火山幻境
 NEW_TRIAL_SEA_SECRET,深海幻境
 NEW_TRIAL_MAIN_WINDOW_TEXT01,{1}開放中
@@ -6220,3 +6220,35 @@ ACTIVITY_JACKPOT_MACHINE_TITLE,オート
 ACTIVITY_JACKPOT_MACHINE_TEXT,自動で回す回数を入力してください。
 BATTLE_BUFF_TITTLE,バフ詳細
 PEW_TRAINNG_HANGUP_TEXT10,特訓時間が10分未満のため、ボーナスを受け取れません。
+ACTIVITY_LOST_SPACE_MOVE_ENERGY_NO,探知機不足
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_NO,ビームエネルギー不足
+ACTIVITY_LOST_SPACE_NO_UNOPEN_GRID,現在、探知可能の探索マスがありません。
+ACTIVITY_LOST_SPACE_AUTO_GET,一括受取
+ACTIVITY_LOST_SPACE_AUTO_GET_NO,一括受取可能なボーナスがありません
+ACTIVITY_LOST_SPACE_EXIT_TIPS1,次の層に行きますか？
+ACTIVITY_LOST_SPACE_EXIT_TIPS2,この層には未受取のボーナスがあります。ボーナスを受け取ってから次の層に進んでください。
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,消費エネルギー：{1}
+ACTIVITY_LOST_SPACE_SKILL_CHANGE,スキルを切り替えると、ビームエネルギーは0にリセットされます。本当に切り替えてもよろしいですか？
+ACTIVITY_LOST_SPACE_NAV1,特殊イベント
+ACTIVITY_LOST_SPACE_NAV2,ヘルプ
+ACTIVITY_LOST_SPACE_HELP_TEXT,1.イベント期間中、探知機を使ってロストスペースの迷宮を検出できます。「探索マス」を1つ探知すると、ボーナスを獲得できます。同時に「探索マス」の上下左右にある隠れマスを探知すると、探索可能な状態になります。|2.各迷宮には「ジャンプポイント」が1つあります。その層のボーナスを全て受け取り、「ジャンプポイント」をタップすると、その層の「スペースボーナス」を獲得でき、新しい迷宮にジャンプします。|3.特定の層の迷宮では、「補給座標」が出現します。「補給座標」を3つ集めると、「補給マス」が出現します。「補給マス」をタップすると補給層に入り、大量のボーナスを獲得できます。|4.探知の補助スキルとして、スキルを1つ選ぶことができます。探知機を消費して迷宮を1回探索するごとに、「ビームエネルギー」を獲得できます。「ビームエネルギー」が満タンになるとスキルを発動でき、特定範囲の「探索マス」を探知できます。|5.スキルはいつでも切り替え可能ですが、スキルを切り替えると所持している「ビームエネルギー」は0にリセットされます。「ビームエネルギー」が満タンになった場合も、引き続き「ビームエネルギー」を獲得することはできませんので、ご注意ください。|6.探知で獲得したボーナスはタップして受け取る必要がありますが、「一括受取」をタップすると、一気に全てのボーナスを受け取れます（特殊イベント除く）。|7.探知機は、デイリーメール、お得パック、超お得衣装パック、超お得パック、初夏ギフト、スペース補給パックにより獲得できます。|8.イベント終了後、探知機は回収されます（各1000Kゴールド）。
+GAME_ASSISTANT_TEXT103,食堂-メニューボーナス
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,ビームエネルギーが満タンになりました。本当にスキルを使用しませんか？
+ACTIVITY_LOST_SPACE_SKILL_NO_USE,探索可能なマスが現在のスキル範囲にありません
+ACTIVITY_LOST_SPACE_SKILL_MASK_EXIT_SHOW,ジャンプポイント出現
+ACTIVITY_LOST_SPACE_SKILL_MASK_GET_AWARD,この層でのスペースボーナスを獲得
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW,補給座標出現
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_SHOW,補給マス出現
+ACTIVITY_LOST_SPACE_SKILL_PASS_TIPS,全ステージの探索を完了しました。
+ACTIVITY_LOST_SPACE_SKILL_START,探索開始
+ACTIVITY_LOST_SPACE_SKILL_NO_CLICK,隠れた探索マスを探知できません。
+ACTIVITY_LOST_SPACE_AWARD_TITLE,スペースボーナス一覧
+ACTIVITY_LOST_SPACE_AWARD_NUM,第{1}層
+ACTIVITY_VAMPIRE_GAMBLE_CONTINUE,冒険開始
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW_ENTER,この層には補給座標があります。
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS1,この層には未発見の補給座標があります。次の層に進みますか？\n[c][e28002]（この層の補給座標を逃すと補給座標を獲得できず、補給マスに進むチャンスを失う恐れがあります）。[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS2,この層には未発見の補給座標があります。次の層に進みますか？\n[c][e28002]（この層の補給座標を逃すと補給座標を獲得できず、補給マスに進むチャンスを失う恐れがあります）。[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,この層には未進入の補給マスがあります。次の層に進みますか？\n[c][e28002]（この層のマスを逃すと豪華ボーナスを獲得できません）。[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_CHOOSE,スキル選択
+ENTRANCE_TEST_SKILL_UNSURE,該当戦姫は未実装です。スキル効果は調整される場合があります。
+ACTIVITY_VAMPIRE_GAMBLE_RETURN,戻る

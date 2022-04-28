@@ -1601,7 +1601,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,음악
 NORMAL_SLOT_MACHINE,일반 슬롯 머신
 HIGH_SLOT_MACHINE,프리미엄 슬롯 머신
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. 각 선물은 매일 보충됩니다. 매일 로그인 후, 이미 해제된 선물을 받을 수 있습니다.|2. 아직 해제되지 않은 선물 상자는 선물을 저장하며, 잠금 해제 후 모든 선물을 한 번에 받게 됩니다.|3. 선물을 클릭하여 내용을 확인할 수 있습니다.|4. 4단계 선물은 스페셜 팩의 2단계 구입 후 해제됩니다."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. 각 선물은 매일 보충됩니다. 매일 로그인 후, 이미 해제된 선물을 받을 수 있습니다.|2. 아직 해제되지 않은 선물 상자는 선물을 저장하며, 잠금 해제 후 모든 선물을 한 번에 받게 됩니다.|3. 선물을 클릭하여 내용을 확인할 수 있습니다.|4. 3단계 선물은 스페셜 팩의 2단계 구입 후 해제됩니다.|5. 이벤트 종료 후 미사용한 초여름 선물 점수 재료는 자동으로 한 개당 20k 골드로 반환됩니다. 반환된 골드는 메일을 통해 발송됩니다."
 CHAPTER_COUNT,챕터 {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,잠금중
@@ -2030,7 +2030,7 @@ ARENA_ALL_SERVER_ROUND_TEXT_6,결승전
 MATCH_NUM4,4회차
 MATCH_NUM5,5회차
 ARENA_ALL_SERVER_MISC,무한한 영광의 주인공은\n과연 누구.
-ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. 인피니트 리그의 64강 후, 플레이어는 경기 중 응원하고 싶은 선수를 응원할 수 있습니다. 응원한 선수가 승리할 경우 성공이지만, 패배할 경우 실패입니다.|2. 결승전의 경우, 선수는 자신 밖에 지지할 수 없습니다.|3. 예측 라운드는 시스템에 의해 결정됩니다. 같은 동아리·서버·소속 언어의 참가자가 우선적으로 선택됩니다.|4. 예측 성공 골드는 메인 퀘스트의 클리어 진도에 의해서 결정됩니다：금액은 클리어 후 최신 스테이지의 일일 자동 모드의 골드 산출(VIP및 정기 구독에 따른 증가는 계산되지 않습니다)|5. 응원한 선수가 승리할 경우, 예측 성공 골드의 2배에 해당하는 골드가 메일로 발송됩니다."
+ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. 인피니트 리그의 64강 후, 플레이어는 경기 중 응원하고 싶은 선수를 응원할 수 있습니다. 응원한 선수가 승리할 경우 성공이지만, 패배할 경우 실패입니다.|2. 결승전의 경우, 선수는 자신 밖에 지지할 수 없습니다.|3. 예측 라운드는 시스템에 의해 결정됩니다. 프리시즌 시작 뒤, 5개 그룹 중 랜덤으로 1개가 선택되며 해당 그룹 중 같은 동아리·서버·소속 언어의 참가자가 우선적으로 선택됩니다.|4. 예측 성공 골드는 메인 퀘스트의 클리어 진도에 의해서 결정됩니다：금액은 클리어 후 최신 스테이지의 일일 자동 모드의 골드 산출(VIP및 정기 구독에 따른 증가는 계산되지 않습니다)|5. 응원한 선수가 승리할 경우, 예측 성공 골드의 2배에 해당하는 골드가 메일로 발송됩니다."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. 플레이어 우승 횟수 내역에는 이전 인피니트 리그 우승 횟수도 포함됩니다.
 ARENA_ALL_SERVER_NEW_COUNTDOWN,다음 시즌까지：
 IMG_GUIDE_JUMP_GAME_1,계단을 내려갔을 때 지성 1점이 [c][cc0011]회복[-][/c]됩니다. 지성이 0이 될 경우 게임이 끝납니다.
@@ -4909,7 +4909,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,진급 조건
 WARMUP_ARENA_REACH_RANK_HELP,"1. 본 이벤트에는 각각 'B', 'A', 'S', 'S+', 총 4가지 계급이 있으며, 선배님은 자신과 같은 계급인 플레이어에게 도전할 수 있습니다. 모든 플레이어는 B 계급으로 이벤트를 시작합니다.|2. 매일 9시(한국 시간)에, 랭킹이 진급 기준에 도달한 선배님은 다음 계급으로 진급됩니다.|3. 각 계급 소개: |{1} 계급 도달 후:|{2}|{3} 계급 도달 후:|{4}|{5} 계급 도달 후:|{6}|4. 이벤트 중 전시된 랭킹은 선배님이 현재 소속된 계급 내 랭킹입니다.(진급 규칙으로 인해 매일 9시(한국 시간)에 각 계급 내의 플레이어 인원수가 변화합니다. 선배님이 다음 계급으로 진급하지 못하였을 경우 랭킹이 전날보다 떨어지는 상황이 발생할 수 있습니다.)"
 ENTRANCE_TEST_LEVEL_UP_ING,단계 확인 중...
 WARMUP_ARENA_TASK_INFO_1,신입생 챌린지
-WARMUP_ARENA_TASK_INFO_2,시즈코·신과 함께
+WARMUP_ARENA_TASK_INFO_2,천기•제갈량•바둑 속의 진리
 WARMUP_ARENA_TASK_INFO_3,챌린지 미션
 WARMUP_ARENA_TASK_INFO_4,입학 세트 보상
 WARMUP_ARENA_TASK_INFO_5,별 미션 완료 후 해제
@@ -5690,42 +5690,42 @@ ACTIVITY_FIREWORK,불꽃축제
 FIREWORK_EXPLAIN_TEXT10,'성냥'
 HOUSE_TEXT_64,미보유
 POTENTIALITY_BACK_TEXT04,소녀 칸이 가득 찼습니다~!
-ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. 이벤트 기간에 '역류 모래시계'를 사용하여 선택한 추억을 회상할 수 있으며, 추억 회상 후 '시간 열쇠' 혹은 추억 보상을 획득할 수 있습니다. 회상하는 추억에 따라 소모되는 '역류 모래시계'의 수량은 각기 다릅니다.|2. 추억 회상 후 '시간 열쇠'를 획득하지 못하였을 경우, 다음 회상 시 '시간 열쇠'의 획득 확률이 증가하며, 랜덤으로 1개의 추억 보상을 획득합니다(획득한 추억 보상은 중복 획득 불가). '시간 열쇠'를 획득할 경우 바로 다음 추억을 해제할 수 있으며, 추억 보상은 획득하지 않습니다.|3. 이벤트 초기에는 1호 추억만 오픈됩니다. 1~4호 추억 중, 추억마다 각각 1개의 '시간 열쇠'가 존재하며, '시간 열쇠'를 획득해야만 다음 추억을 해제할 수 있습니다. 단, 5호 추억에는 '시간 열쇠'가 존재하지 않으며, 5호 추억 중 모든 추억 보상을 획득해야만 6호 추억을 해제할 수 있습니다. 6호 추억의 모든 추억 보상을 획득할 경우, 해당 추억의 추억 보상이 리셋됩니다.|4. 이미 해제한 추억 중 획득하지 못한 추억 보상이 있을 경우, 해당 추억을 다시 선택하여 회상할 수 있습니다.|5. 원초 각성 화면 중 '수상한 깃털'을 소모하여 원초•드라큘라를 각성할 수 있습니다. 각성치가 가득 찰 경우 5성 원초•드라큘라 1장을 획득할 수 있습니다.|6.'수상한 깃털'은 드라큘라의 의뢰를 통해 획득할 수 있으며, '역류 모래시계'는 신입생 캡슐 뽑기, 드라큘라의 의뢰, 슈퍼 팩, 스페셜 팩, 스페셜 스킨 팩을 통해 획득할 수 있습니다.|7. 이벤트 종료 후, 사용하지 않은 '수상한 깃털', '역류 모래시계', '시간 열쇠'는 자동으로 회수될 예정입니다. ( '수상한 깃털'*1=골드*20k/'역류 모래시계'*1=골드*50k/'시간 열쇠'*1=골드*100k)"
-ACTIVITY_VAMPIRE_TASK_HELP,"1. 이벤트 기간에 미션을 완성하고 '박쥐 포스터'를 수집하여 의뢰 완수 레벨을 업그레이드할 수 있으며, 업그레이드 후 무료로 일반 보상을 획득할 수 있습니다.|2. 드라큘라의 답례 구매 시 추가 보상을 획득할 수 있으며, 구매 즉시 현재 레벨까지의 모든 추가 보상을 수령 할 수 있습니다."
+ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. 이벤트 기간에 '모험 체력'를 사용하여 선택한 지도를 탐험할 수 있으며, 모험 후 '모험 지도' 혹은 모험 보상을 획득할 수 있습니다. 선택하는 지도에 따라 소모되는 '모험 체력'의 수량은 각기 다릅니다.|2. 모험 후 '모험 지도'를 획득하지 못하였을 경우, 다음 모험 시 '모험 지도'의 획득 확률이 증가하며, 랜덤으로 1개의 모험 보상을 획득합니다(획득한 모험 보상은 중복 획득 불가). '모험 지도'를 획득할 경우 바로 다음 모험을 해제할 수 있으며, 모험 보상은 획득하지 않습니다.|3. 이벤트 초기에는 1호 모험만 오픈됩니다. 1~4호 모험 중, 모험마다 각각 1개의 '모험 지도'가 존재하며, '모험 지도'를 획득해야만 다음 지도를 해제할 수 있습니다. 단, 5호 모험에는 '모험 지도'가 존재하지 않으며, 5호 모험 중 모든 모험 보상을 획득해야만 6호 모험을 해제할 수 있습니다. 6호 모험의 모든 모험 보상을 획득할 경우, 해당 모험의 모험 보상이 리셋됩니다.|4. 이미 해제한 모험 중 획득하지 못한 모험 보상이 있을 경우, 해당 모험을 다시 선택하여 모험할 수 있습니다.|5. 모험 축복 화면 중 '모험 보석'을 소모하여 천기·제갈량을 소환할 수 있습니다. 축복치가 가득 찰 경우 5성 천기·제갈량 1장을 획득할 수 있습니다.|6.'축복 보석'은 명예의 의뢰를 통해 획득할 수 있으며, '모험 체역'은 신입생 캡슐 뽑기, 명예의 의뢰, 슈퍼 팩, 스페셜 팩, 스페셜 스킨 팩을 통해 획득할 수 있습니다.|7. 이벤트 종료 후, 사용하지 않은 '모험 체력', '축복 보석', '모험 지도'는 자동으로 회수될 예정입니다. ('축복 보석'*1=골드*20k/'모험 체력'*1=골드*50k/'모험 지도'*1=골드*100k)"
+ACTIVITY_VAMPIRE_TASK_HELP,"1. 이벤트 기간에 미션을 완성하고 '명예 포스터'를 수집하여 의뢰 완수 레벨을 업그레이드할 수 있으며, 업그레이드 후 무료로 일반 보상을 획득할 수 있습니다.|2. 명예의 답례 구매 시 추가 보상을 획득할 수 있으며, 구매 즉시 현재 레벨까지의 모든 추가 보상을 수령 할 수 있습니다.|3. 6성, 9성, 10성 천기·제갈량 1명 획득 미션은 교환으로 완성할 수 없습니다. 5성 천기·제갈량 1명 획득 미션은 진급의 계단 이벤트에서 교환을 통해 완성 가능합니다."
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,구입 후 즉시 획득
 ACTIVITY_VAMPIRE_TASK_LABEL01,보상
 ACTIVITY_VAMPIRE_TASK_LABEL02,미션
 ACTIVITY_VAMPIRE_TASK_TEXT01,한도 도달
 ACTIVITY_VAMPIRE_TASK_AWARD01,일반 보상
 ACTIVITY_VAMPIRE_TASK_AWARD02,보상 해제
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,원초 각성
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,되찾기
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,모험 축복
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,모험
 GACHA_AUTOTRANSFER_TEXT01,3성 소녀 자동 전학
 GACHA_50TIMES_TEXT01,×1
 GACHA_50TIMES_TEXT02,×50
 GACHA_50TIMES_TEXT03,50회
 GACHA_50TIMES_TEXT04,50회
-ACTIVITY_VAMPIRE_GAMBLE_TEXT01,시간 열쇠를 획득하셨어요! {1}의 추억을 해제되었으니 해당 추억을 회상하겠습니다.
-ACTIVITY_VAMPIRE_GAMBLE_TEXT02,{1}의 추억을 회상하시겠습니까?
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,잠시 후 회상하기
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,바로 회상하기
-ACTIVITY_VAMPIRE_GAMBLE_TEXT03,각성치
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,으슥한 성
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,여름의 밤
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,옛날 학원
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,연락 다리 밑
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,떠들썩한 야시장
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,원초 세계
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,각성
-ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,해당 추억을 해제하지 않으셨으니 회상할 수 없습니다.
-ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,해당 추억의 모든 보상을 획득하셨으니 중복 회상할 수 없습니다.
-ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,{1}의 추억을 회상합니다.
-ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,추억의 파편을 클릭하여 회상할 추억을 바꿀 수 있습니다.
-ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,해당 추억의 모든 보상을 획득하셨어요! 다른 추억을 회상해보세요!
-ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,모든 보상을 획득하셨습니다! {1}의 추억이 해제되었어요!
-ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,모든 보상을 획득하셨어요! 원초 세계의 추억 보상이 리셋됩니다.
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,원초·드라큘라가 각성되었어요~
-ACTIVITY_VAMPIRE_GAMBLE_TEXT05,계속 회상하기
+ACTIVITY_VAMPIRE_GAMBLE_TEXT01,모험 지도를 획득하셨어요! {1}의 지도가 해제되었으니 해당 모험지로 이동하겠습니다.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT02,{1}의 모험을 진행하시겠습니까?
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,잠시 후 가기
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,바로 가기
+ACTIVITY_VAMPIRE_GAMBLE_TEXT03,현재 축복치
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,화산의 길
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,조용한 호수
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,모닥불
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,깊은 숲
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,사람없는 도로
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,명예의 전당
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,소환
+ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,해당 지도를 해제하지 않으셨으니 모험 진행할 수 없습니다.
+ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,해당 지도의 모든 보상을 획득하셨으니 중복 모험 진행할 수 없습니다.
+ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,{1}의 모험을 진행합니다.
+ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,지도를 클릭하여 모험을 바꿀 수 있습니다.
+ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,모든 보상을 획득하셨어요! 자동으로 다른 모험지로 이동합니다.
+ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,모든 보상을 획득하셨어요! {1}의 지도가 해제되었으니 해당 모험지로 이동하겠습니다.
+ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,모든 보상을 획득하셨어요! 명예의 전당의 모험이 리셋됩니다.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,천기•제갈량을 이미 소환하셨으니 다시 소환할 필요 없습니다.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT05,모험 다시 진행하기
 SHRINE_HURDLE,시공의 틈
 SHRINE_TREE,풍경 나무
 SHRINE_NOTICE,게시판
@@ -5797,7 +5797,7 @@ PERSON_DRESS_BUFFS_TIPS_5,빨간색 디자인이 제공한 특수 버프 효과�
 PERSON_DRESS_BUFFS_TIPS_6,주황색 디자인이 제공한 특수 버프 효과가 없습니다.
 PERSON_DRESS_BUFFS_TIPS_7,분홍색 디자인이 제공한 특수 버프 효과가 없습니다.
 PERSON_DRESS_RELATED_DRESS,디자인 정보
-ACTIVITY_VAMPIRE_GAMBLE_AWARD01,추억 보상
+ACTIVITY_VAMPIRE_GAMBLE_AWARD01,모험 보상
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,해제 아이템
 CHIME_HELP,"
 1. 풍경 나무에 \'풍경\'이 걸려 있으며, 각 풍경은 소녀에게 거의 모든 전투 중 활성화되는 버프를 제공합니다.|2. 일정 수량의 조각 수집 후 풍경을 활성화할 수 있으며, \'꿈의 투영\'과 \'부적꽃\'을 사용하여 풍경을 강화할 수 있습니다.
@@ -5916,7 +5916,7 @@ SHRINE_HURDLE_SELECT4,회복 스테이지에 진입하시겠습니까?
 TIME_CLOISTER_TEXT109,"남은 시간 부족, 관측 일찍 완료됩니다. (시간 먼지 소모되지 않음)"
 TIME_CLOISTER_TEXT110,무효 관측 시간이 있습니다. 해당 부분의 시간을 가속화하지 않아도 됩니다.
 GAME_ASSISTANT_TEXT01,학원 조수
-GAME_ASSISTANT_TEXT02,일상
+GAME_ASSISTANT_TEXT02,기숙사 수익
 GAME_ASSISTANT_TEXT03,챌린지
 GAME_ASSISTANT_TEXT04,성장
 GAME_ASSISTANT_TEXT05,동아리
@@ -6152,7 +6152,6 @@ ARENA_HELP_TIPS_ITEM_TEXT2,서버 간의 대결! 매 회 전투의 상대가 다
 ARENA_HELP_TIPS_ITEM_TEXT3,각 서버 1등을 따신 플레이어가 전시될 예정이에요!
 ARENA_HELP_TIPS_ITEM_TEXT4,더 풍부한 보상
 GAME_ASSISTANT_TEXT101,자동 모드 보상
-GAME_ASSISTANT_TEXT102,기숙사 수익
 ARENA_NEW_SEASON_SERVER_RANK_WINDOW,서버
 ACTIVITY_SIMULATION_GACHA_TEXT27,10회 뽑기 시도
 ACTIVITY_SIMULATION_GACHA_TEXT28,교환 코인 1개를 사용해여 {1}을(를) 교환하시겠습니까?
@@ -6210,3 +6209,35 @@ ACTIVITY_JACKPOT_MACHINE_TITLE,자동 돌리기
 ACTIVITY_JACKPOT_MACHINE_TEXT,횟수를 입력하세요.
 BATTLE_BUFF_TITTLE,버프 정보
 PEW_TRAINNG_HANGUP_TEXT10,단련 시간이 10분 미만
+ACTIVITY_LOST_SPACE_MOVE_ENERGY_NO,탐사기 부족
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_NO,레이저 에너지 부족
+ACTIVITY_LOST_SPACE_NO_UNOPEN_GRID,탐사 가능할 탐사 지점이 없습니다.
+ACTIVITY_LOST_SPACE_AUTO_GET,모두 받기
+ACTIVITY_LOST_SPACE_AUTO_GET_NO,수령 가능한 보상이 없습니다.
+ACTIVITY_LOST_SPACE_EXIT_TIPS1,다음 스테이지에 들어가시겠습니까?
+ACTIVITY_LOST_SPACE_EXIT_TIPS2,본 스테이지에 아직 수령하지 않은 보상이 있습니다. 보상을 수령 후 다음 스테이지로 도약하세요!
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,에너지 소비：{1}
+ACTIVITY_LOST_SPACE_SKILL_CHANGE,스킬을 바꾸면 레이저 에너지가 리셋됩니다. 그래도 바꾸시겠습니까?
+ACTIVITY_LOST_SPACE_NAV1,특별 사건
+ACTIVITY_LOST_SPACE_NAV2,설명
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. 이벤트 기간 동안, 선배님께서 탐사기를 사용해 우주 정거장의 미궁을 탐사할 수 있습니다. 탐사 지점을 1개 탐사할 때마다 1개의 보상을 획득할 수 있으며, 해당 탐사 지점을 기준으로 상하좌우에 위치한 지점이 탐사 가능 상태로 전환됩니다.|2. 미궁의 스테이지마다 1개의 도약점이 존재하며, 도약점을 클릭할 경우 해당 스테이지의 우주 정거장 보물 상자를 획득하고 새로운 스테이지의 미궁으로 도약합니다.|3. 특정 스테이지의 미궁에서 보급 좌표가 나타나며, 보급 좌표를 3개 획득할 경우 보급처가 나타납니다. 보급처 클릭 시 보급 스테이지에 들어가 대량의 보상을 획득할 수 있습니다.|4. 선배님은 1개의 스킬을 선택하여 탐사 시 보조 스킬로써 사용할 수 있습니다. 탐사기를 소모하여 미궁을 1회 탐사할 때마다 1 레이저 에너지를 획득할 수 있으며, 레이저 에너지가 가득 찬 뒤 스킬을 사용하여 특정 구역의 탐사 지점을 탐사할 수 있습니다.|5. 스킬은 언제나 변경할 수 있지만, 변경 시 보유한 레이저 에너지는 모두 리셋됩니다. 또한, 레이저 에너지가 가득 찰 경우 더 이상 레이저 에너지를 획득할 수 없습니다.|6. 탐사를 통해 획득하는 보상을 직접 수령하셔야 합니다. '모두 받기'를 클릭하시면 보상을 일괄 수령 가능하지만 특수 사건을 수령하지 않습니다. 특수 사건을 직접 수령하셔야 합니다.  |7. '탐사기'는 일일 보상, 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩, 초여름 선물, 우주 화물선을 통해 획득할 수 있습니다.|8. 이벤트 종료 후 남은 '탐사기'는 자동으로 회수될 예정입니다. \n(탐사기*1=골드*1000k)"
+GAME_ASSISTANT_TEXT103,동아리 식당_주문 보상
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,레이저 에너지가 이미 가득 찼습니다! 스킬을 사용해보실래요?
+ACTIVITY_LOST_SPACE_SKILL_NO_USE,리드해줄 수 있는 탐지점이 없습니다.
+ACTIVITY_LOST_SPACE_SKILL_MASK_EXIT_SHOW,도약점이 나타났습니다.
+ACTIVITY_LOST_SPACE_SKILL_MASK_GET_AWARD,본 스테이지의 보물 상자를 획득했습니다.
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW,보급 좌표가 나타났습니다.
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_SHOW,보급처가 나타났습니다.
+ACTIVITY_LOST_SPACE_SKILL_PASS_TIPS,선배님께서 이미 모든 스테이지를 클리어하셨습니다!
+ACTIVITY_LOST_SPACE_SKILL_START,시작하기
+ACTIVITY_LOST_SPACE_SKILL_NO_CLICK,탐사 불가 지역이므로 탐사할 수 없습니다.
+ACTIVITY_LOST_SPACE_AWARD_TITLE,보상 미리보기
+ACTIVITY_LOST_SPACE_AWARD_NUM,제{1}스테이지
+ACTIVITY_VAMPIRE_GAMBLE_CONTINUE,계속하기
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW_ENTER,본 스테이지에 보급 좌표가 있습니다.
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS1,본 스테이지에 발견되지 않은 보급 좌표가 있습니다. 다음 스테이지로 도약하시겠습니다?\n[c][e28002](본 스테이지의 보급 좌표를 놓치면 다시 획득할 수 없으므로 보급처로 가는 기회를 잃을 수도 있습니다.[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS2,본 스테이지에 획득하지 않은 보급 좌표가 있습니다. 다음 스테이지로 도약하시겠습니다?\n[c][e28002](본 스테이지의 보급 좌표를 놓치면 다시 획득할 수 없으므로 보급처로 가는 기회를 잃을 수도 있습니다.)[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,본 스테이지에 들어가지 않은 보급처가 있습니다. 다음 스테이지로 도약하시겠습니까?\n[c][e28002](본 스테이지의 보급처를 놓치면 푸짐한 보상을 놓칠 수도 있습니다.)[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_CHOOSE,선택하기
+ENTRANCE_TEST_SKILL_UNSURE,해당 소녀는 아직 출시되지 않았습니다
+ACTIVITY_VAMPIRE_GAMBLE_RETURN,돌아가기

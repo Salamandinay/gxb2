@@ -1636,6 +1636,15 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_RELAY_GIFT] = function ()
 		return require("app.windows.activity.ActivityRelayGift")
+	end,
+	[xyd.ActivityID.ACTIVITY_LOST_SPACE] = function ()
+		return require("app.windows.activity.ActivityLostSpace")
+	end,
+	[xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG] = function ()
+		return require("app.windows.activity.ActivityLostSpaceGiftBag")
+	end,
+	[xyd.ActivityID.SPRING_GIFTBAG] = function ()
+		return require("app.windows.activity.SpringGiftBag")
 	end
 }
 

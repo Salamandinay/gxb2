@@ -587,8 +587,6 @@ function ShrineHurdleModel:getFloorInfo()
 		return 5, 1, 5
 	end
 
-	print("self.floor_id_  ", self.floor_id_)
-
 	local floorTypes = xyd.tables.shrineHurdleTable:getHurdle(self.floor_id_)
 	local floorType = nil
 
@@ -698,16 +696,16 @@ function ShrineHurdleModel:endHurdle()
 end
 
 function ShrineHurdleModel:onEndHurdle()
-	if self.overChallengeDiff[self.route_id_] and self.overChallengeDiff[self.route_id_] < self.diff_id_ then
-		self.overChallengeDiff[self.route_id_] = self.diff_id_
-	elseif not self.overChallengeDiff[self.route_id_] then
-		self.overChallengeDiff[self.route_id_] = self.diff_id_
-	end
-
 	local historyscore = self.historyScores_[self.route_id_]
 
 	if not historyscore or historyscore < self.score_ then
 		self.historyScores_[self.route_id_] = self.score_
+
+		if self.overChallengeDiff[self.route_id_] and self.overChallengeDiff[self.route_id_] < self.diff_id_ then
+			self.overChallengeDiff[self.route_id_] = self.diff_id_
+		elseif not self.overChallengeDiff[self.route_id_] then
+			self.overChallengeDiff[self.route_id_] = self.diff_id_
+		end
 	end
 
 	if not self.diff_ids then

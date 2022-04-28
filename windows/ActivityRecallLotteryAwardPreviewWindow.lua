@@ -1,9 +1,14 @@
 local BaseWindow = import(".BaseWindow")
 local ActivityRecallLotteryAwardPreviewWindow = class("ActivityRecallLotteryAwardPreviewWindow", BaseWindow)
+local WINDOW_TYPE = {
+	DRAW_CONFIRM = 2,
+	AWARD_PREVIEW = 1
+}
 
 function ActivityRecallLotteryAwardPreviewWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
+	self.windowTpye = params.windowTpye or WINDOW_TYPE.AWARD_PREVIEW
 	self.winTitleText = params.winTitleText
 	self.groupTitleText1 = params.groupTitleText1
 	self.groupTitleText2 = params.groupTitleText2
@@ -11,6 +16,7 @@ function ActivityRecallLotteryAwardPreviewWindow:ctor(name, params)
 	self.awardData2 = params.awardData2 or {}
 	self.setChoose1 = params.setChoose1 or {}
 	self.setChoose2 = params.setChoose2 or {}
+	self.confirmCallback = params.confirmCallback
 end
 
 function ActivityRecallLotteryAwardPreviewWindow:initWindow()
@@ -25,8 +31,8 @@ function ActivityRecallLotteryAwardPreviewWindow:getUIComponent()
 	self.groupAction = winTrans:ComponentByName("groupAction", typeof(UIWidget))
 	self.labelTitle = self.groupAction:ComponentByName("labelTitle", typeof(UILabel))
 	self.closeBtn = self.groupAction:NodeByName("closeBtn").gameObject
-	local mainGroup = self.groupAction:NodeByName("mainGroup").gameObject
-	self.scrollView = mainGroup:ComponentByName("scroller", typeof(UIScrollView))
+	self.mainGroup = self.groupAction:NodeByName("mainGroup").gameObject
+	self.scrollView = self.mainGroup:ComponentByName("scroller", typeof(UIScrollView))
 	self.mainLayout = self.scrollView:ComponentByName("layout", typeof(UILayout))
 	self.awardGroup1 = self.mainLayout:NodeByName("awardGroup1").gameObject
 	self.titleLabel1 = self.awardGroup1:ComponentByName("label1", typeof(UILabel))
@@ -34,6 +40,13 @@ function ActivityRecallLotteryAwardPreviewWindow:getUIComponent()
 	self.awardGroup2 = self.mainLayout:NodeByName("awardGroup2").gameObject
 	self.titleLabel2 = self.awardGroup2:ComponentByName("label2", typeof(UILabel))
 	self.itemGroup2 = self.awardGroup2:NodeByName("itemGroup2").gameObject
+	self.groupConfirm = self.groupAction:NodeByName("groupConfirm").gameObject
+	self.btnConfirm = self.groupConfirm:NodeByName("btnConfirm").gameObject
+	self.labelConfirm = self.btnConfirm:ComponentByName("labelConfirm", typeof(UILabel))
+	self.groupSkip = self.groupConfirm:NodeByName("groupSkip").gameObject
+	self.btnSkip = self.groupSkip:NodeByName("btnSkip").gameObject
+	self.imgChoose = self.btnSkip:ComponentByName("imgChoose", typeof(UISprite))
+	self.labelSkip = self.groupSkip:ComponentByName("labelSkip", typeof(UILabel))
 end
 
 function ActivityRecallLotteryAwardPreviewWindow:initUIComponent()
@@ -97,10 +110,48 @@ function ActivityRecallLotteryAwardPreviewWindow:initUIComponent()
 	self.itemGroup1:GetComponent(typeof(UIGrid)):Reposition()
 	self.itemGroup2:GetComponent(typeof(UIGrid)):Reposition()
 	self.mainLayout:Reposition()
+
+	if self.windowTpye == WINDOW_TYPE.DRAW_CONFIRM then
+		self.groupAction.height = self.groupAction.height + 90
+
+		self.labelTitle:Y(self.labelTitle.transform.localPosition.y + 45)
+		self.closeBtn:Y(self.closeBtn.transform.localPosition.y + 45)
+		self.awardGroup1:Y(self.awardGroup1.transform.localPosition.y + 45)
+		self.awardGroup2:Y(self.awardGroup2.transform.localPosition.y + 45)
+		self.groupConfirm:SetActive(true)
+
+		if #self.awardData2 == 0 then
+			self.groupConfirm:Y(-147.5)
+		end
+
+		self.labelConfirm.text = __("ACTIVITY_VAMPIRE_GAMBLE_CONTINUE")
+		self.labelSkip.text = __("GAMBLE_REFRESH_NOT_SHOW_TODAY")
+
+		self.groupSkip:GetComponent(typeof(UILayout)):Reposition()
+		self.groupSkip:X(-(self.btnSkip.transform.localPosition.x + (self.labelSkip.width + self.groupSkip:GetComponent(typeof(UILayout)).gap.x) / 2))
+	end
 end
 
 function ActivityRecallLotteryAwardPreviewWindow:register()
 	ActivityRecallLotteryAwardPreviewWindow.super.register(self)
+
+	UIEventListener.Get(self.btnConfirm).onClick = function ()
+		if self.confirmCallback then
+			self.confirmCallback(self.isSkip)
+		end
+
+		self:close()
+	end
+
+	UIEventListener.Get(self.btnSkip).onClick = function ()
+		if self.isSkip == nil then
+			self.isSkip = false
+		end
+
+		self.isSkip = not self.isSkip
+
+		self.imgChoose:SetActive(self.isSkip)
+	end
 end
 
 return ActivityRecallLotteryAwardPreviewWindow

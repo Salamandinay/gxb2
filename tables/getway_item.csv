@@ -79,3 +79,7 @@ id,name,item_id,get_limit,show_activity,lv_limit,function_id,go_window,go_params
 79,-1,,,286,0,,activity_window,"select:286,large_series:1"
 80,-1,,,159,0,,activity_window,"select:159,activity_type2:1"
 81,-1,,,290,0,,,
+82,-1,349,40,292,0,,item_buy_window,
+83,-1,,,293,0,,activity_window,"select:293,activity_type2:1"
+84,-1,,,294,0,,activity_window,"select:294,activity_type2:1"
+85,-1,,,292,0,,,

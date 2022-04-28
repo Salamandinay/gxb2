@@ -182,7 +182,7 @@ function ActivityFirework:initUI()
 		end, function (progress)
 			local loading_win = xyd.WindowManager.get():getWindow("res_loading_window")
 
-			if progress == 1 and not loading_win then
+			if progress >= 1 and not loading_win then
 				return
 			end
 

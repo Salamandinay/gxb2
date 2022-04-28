@@ -3024,6 +3024,9 @@ function BattleFormationWindow:showPartnerDetail(partnerInfo)
 		params.sort_type = tostring(xyd.partnerSortEntranceTestType.FINISH)
 		params.current_group = self.currentGroup_
 		params.battleData.current_group = self.currentGroup_
+		local formationData = self:getFormationData()
+		local partnerParams = formationData.partnerParams
+		params.partnerParams = partnerParams
 		wndName = "activity_entrance_test_partner_window"
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		wndName = "partner_detail_window"

@@ -115,6 +115,14 @@ end
 
 function GameAssistantWindow:register()
 	self.eventProxy_:addEventListener(xyd.event.DUNGEON_START, handler(self, self.onDungeonStart))
+	self.eventProxy_:addEventListener(xyd.event.GUILD_DININGHALL_ORDER_LIST, function (event)
+		local data = event.data
+		local awards = data.awards
+
+		if awards and awards[1] then
+			self.model:setOrderAwards(awards)
+		end
+	end)
 
 	UIEventListener.Get(self.trans:NodeByName("WINDOWBG").gameObject).onClick = function ()
 		local wnd = xyd.getWindow("main_window")
@@ -1184,19 +1192,20 @@ function GameAssistantWindow:updatePetPart()
 			xyd.alertTips(__("GAME_ASSISTANT_TIPS04", self.model.limitLevs[1]))
 		end
 
-		self.petPart:ComponentByName("paidGroup/labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT47")
+		self.petPart:ComponentByName("paidGroup/labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT46")
 		local labelCost = self.petPart:ComponentByName("paidGroup/content/ResGroup/label", typeof(UILabel))
 		labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. "0"
 		local buyTime = 0
 		local numPos = self.petPart:NodeByName("paidGroup/content/numPos").gameObject
 		local maxNum = 0
 		local curNum = 0
+		local baseTime = xyd.tables.miscTable:getNumber("pet_training_boss_limit", "value")
 
 		if self.model.limitLevs[1] <= trainLevel then
 			buyTime = xyd.models.petTraining:getBuyTimeTimes() or 0
-			maxNum = self.model:getMaxCanBuyTimePet() + buyTime
-			curNum = math.max(self.presetData.pet.paid, buyTime)
-			labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:getCostNumPet(curNum - buyTime))
+			maxNum = self.model:getMaxCanBuyTimePet() + buyTime + baseTime
+			curNum = self.presetData.pet.fight
+			labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:getCostNumPet(curNum - buyTime - baseTime))
 		end
 
 		self.petPaidSelectNum = SelectNum.new(numPos, "minmax", {})
@@ -1215,8 +1224,8 @@ function GameAssistantWindow:updatePetPart()
 					return
 				end
 
-				self.presetData.pet.paid = num
-				labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:getCostNumPet(self.presetData.pet.paid - (xyd.models.petTraining:getBuyTimeTimes() or 0)))
+				self.presetData.pet.fight = num
+				labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:getCostNumPet(self.presetData.pet.fight - (xyd.models.petTraining:getBuyTimeTimes() or 0) - baseTime))
 			end
 		})
 		self.petPaidSelectNum:setFontSize(24, 24)

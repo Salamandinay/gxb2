@@ -691,11 +691,7 @@ function StoryWindow:cancelEffect()
 
 		self.textEffectTimeoutId = nil
 		local cur_name = self.storyTable_:getName(self.storyID_)
-
-		if cur_name == "*" then
-			cur_name = xyd.Global.playerName
-		end
-
+		cur_name = string.gsub(cur_name, "*", xyd.Global.playerName)
 		local utf8len = xyd.utf8len(cur_name)
 		local minUtf8len = 14
 
@@ -804,11 +800,7 @@ function StoryWindow:setCompletedTextEffect(id)
 
 	self.labelDialog_.text = curStr
 	local name_ = self.storyTable_:getName(id)
-
-	if name_ == "*" then
-		name_ = xyd.Global.playerName
-	end
-
+	name_ = string.gsub(name_, "*", xyd.Global.playerName)
 	local utf8len = xyd.utf8len(name_)
 	local minUtf8len = 14
 
@@ -1504,11 +1496,7 @@ function StoryWindow:playDialogAction(storyID)
 	self:initPlayTextEffect(storyID)
 
 	local name_ = self.storyTable_:getName(storyID)
-
-	if name_ == "*" then
-		name_ = xyd.Global.playerName
-	end
-
+	name_ = string.gsub(name_, "*", xyd.Global.playerName)
 	local utf8len = xyd.utf8len(name_)
 	local minUtf8len = 14
 

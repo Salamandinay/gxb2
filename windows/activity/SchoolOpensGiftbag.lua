@@ -17,15 +17,21 @@ function SchoolOpensGiftbag:initUI()
 	self:initUIComponent()
 	self:initItems()
 	self:onRegister()
+	self:updateExchageBtnRedPoint()
 end
 
 function SchoolOpensGiftbag:resizeToParent()
 	SchoolOpensGiftbag.super.resizeToParent(self)
-	self:resizePosY(self.item1, -348, -394)
-	self:resizePosY(self.item2, -348, -394)
-	self:resizePosY(self.item3, -652, -776)
-	self:resizePosY(self.item4, -652, -776)
-	self:resizePosY(self.textImg, -17, -34)
+	self:resizePosY(self.exchangeBtn, -785, -962)
+
+	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
+		self:resizePosY(self.item1, -357, -360)
+	else
+		self:resizePosY(self.item1, -309, -360)
+	end
+
+	self:resizePosY(self.item2, -466, -550)
+	self:resizePosY(self.item3, -671, -768)
 end
 
 function SchoolOpensGiftbag:getUIComponent()
@@ -33,9 +39,12 @@ function SchoolOpensGiftbag:getUIComponent()
 	self.imgBottom = go:NodeByName("imgBottom").gameObject
 	self.textImg = go:ComponentByName("textImg", typeof(UISprite))
 	self.helpBtn = go:ComponentByName("helpBtn", typeof(UISprite))
+	self.exchangeBtn = go:ComponentByName("exchangeBtn", typeof(UISprite))
+	self.exchangeBtnLabel = go:ComponentByName("exchangeBtn/button_label", typeof(UILabel))
+	self.exchangeBtnRedPoint = go:NodeByName("exchangeBtn/redPoint").gameObject
 	self.itemGroup = go:NodeByName("itemGroup").gameObject
 
-	for i = 1, 4 do
+	for i = 1, 3 do
 		self["item" .. i] = self.itemGroup:NodeByName("item" .. i).gameObject
 	end
 
@@ -44,6 +53,15 @@ end
 
 function SchoolOpensGiftbag:initUIComponent()
 	xyd.setUISpriteAsync(self.textImg, nil, "school_opens_giftbag2_" .. xyd.Global.lang, nil, , true)
+
+	self.exchangeBtnLabel.text = __("SCHOOL_GIFTBAG_EXCHANGE_TEXT01")
+	local effect = xyd.Spine.new(self.effect)
+
+	effect:setInfo("simazhao_lihui01", function ()
+		effect:SetLocalPosition(-255, -350, 0)
+		effect:SetLocalScale(1, 1, 1)
+		effect:play("texiao01", 0)
+	end)
 
 	local ids = xyd.tables.activitySchoolGiftTable:getIDs()
 
@@ -59,12 +77,21 @@ function SchoolOpensGiftbag:initUIComponent()
 			buttonLabel.width = 100
 		end
 	end
+
+	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "de_de" or xyd.Global.lang == "en_en" then
+		self.exchangeBtnLabel.width = 130
+	end
+
+	if xyd.Global.lang == "de_de" then
+		self.textImg:Y(41)
+	end
 end
 
 function SchoolOpensGiftbag:initItems()
 	local ids = xyd.tables.activitySchoolGiftTable:getIDs()
 
 	for i = 1, #ids do
+		local aItemId = ids[i]
 		local params = {
 			id = tonumber(ids[i]),
 			status = self.activityData.detail.box_lock_status[tonumber(ids[i])],
@@ -88,8 +115,10 @@ function SchoolOpensGiftbag:initItems()
 
 		UIEventListener.Get(imgBg.gameObject).onClick = function ()
 			local items = {}
-			local awards = xyd.tables.activitySchoolGiftTable:getDailyAwards(params.id)
-			local ratio = math.max(1, params.counts)
+			local awards = xyd.tables.activitySchoolGiftTable:getDailyAwards(aItemId)
+			local status = self.activityData.detail.box_lock_status[tonumber(aItemId)]
+			local counts = self.activityData.detail.award_counts[tonumber(aItemId)]
+			local ratio = math.max(1, counts)
 
 			for i = 1, #awards do
 				local data = awards[i]
@@ -100,7 +129,7 @@ function SchoolOpensGiftbag:initItems()
 				})
 			end
 
-			local flag = params.status == 1 and params.counts == 0
+			local flag = status == 1 and counts == 0
 			local title = nil
 
 			if ratio <= 1 then
@@ -296,7 +325,7 @@ function SchoolOpensGiftbag:touchType3(id)
 	xyd.WindowManager.get():closeWindow("activity_window", function ()
 		xyd.openWindow("activity_window", {
 			activity_type = xyd.EventType.COOL,
-			select = xyd.ActivityID.BENEFIT_GIFTBAG03
+			select = xyd.ActivityID.BENEFIT_GIFTBAG06
 		})
 	end)
 end
@@ -316,8 +345,36 @@ function SchoolOpensGiftbag:onRegister()
 		})
 	end
 
+	UIEventListener.Get(self.exchangeBtn.gameObject).onClick = function ()
+		local params = {
+			exchange_status = self.activityData.detail.exchange_status
+		}
+
+		xyd.WindowManager.get():openWindow("school_giftbag_exchange_window", params)
+	end
+
+	self:registerEvent(xyd.event.ITEM_CHANGE, handler(self, self.updateExchageBtnRedPoint))
 	self:registerEvent(xyd.event.UNLOCK_SCHOOL_GIFT_BOX, handler(self, self.updateItems))
 	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.updateItems))
+end
+
+function SchoolOpensGiftbag:updateExchageBtnRedPoint()
+	local status = false
+	local ids = xyd.tables.activitySchoolGiftExchangeTable:getIDs()
+
+	for i = 1, #ids do
+		if self.activityData.detail.exchange_status[ids[i]] ~= 1 then
+			local cost = xyd.tables.activitySchoolGiftExchangeTable:getCost(ids[i])
+
+			if cost[2] <= xyd.models.backpack:getItemNumByID(tonumber(cost[1])) then
+				status = true
+
+				break
+			end
+		end
+	end
+
+	self.exchangeBtnRedPoint:SetActive(status)
 end
 
 return SchoolOpensGiftbag

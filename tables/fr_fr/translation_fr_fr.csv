@@ -482,7 +482,7 @@ VIP_TEXT06,Total
 MONTH_CARD,Carte\nMensuelle
 MINI_MONTH_CARD,Petite Carte Mensuelle
 RETAIN,Restant :
-ARENA_BATTLE_TIPS,Mettez les Filles défensives en ligne avant
+ARENA_BATTLE_TIPS,Placez les Filles défensives sur la ligne avant
 HEAD_POS,Avant
 BACK_POS,Arrière
 DEF_PARTNER,Fille défensive
@@ -1648,7 +1648,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musique
 NORMAL_SLOT_MACHINE,Distributeur Normal
 HIGH_SLOT_MACHINE,Distributeur Avancé
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,1. Connectez-vous quotidiennement et collectez les cadeaux déverrouillés.|2. Les récompenses des cadeaux verrouillés sont cumulables et pourront être collectés une fois le cadeau déverrouillé.|3. Touchez le cadeau pour voir les récompenses.|4. Le 4ème Cadeau sera débloqué après avoir fait l'achat du 2ème Pack Surprise.
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Connectez-vous quotidiennement et collectez les cadeaux déverrouillés.|2. Les récompenses des cadeaux verrouillés sont cumulables et pourront être collectés une fois le cadeau déverrouillé.|3. Touchez le cadeau pour voir les récompenses.|4. Le 3ème Cadeau sera débloqué après avoir fait l'achat du 2ème Pack Surprise.|5. Après la fin de l'événement, les Tickets d'Été non utilisés seront convertis en Pièce d'Or, 1 Ticket d'Été = 20k Pièce d'Or."
 CHAPTER_COUNT,Chapitre {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,Ce Chapitre n'est pas encore débloqué
@@ -1664,7 +1664,7 @@ EVERY_DAY_AWARD,Récompense Quotidienne
 FIT_UP_DORM_HELP,"1.Utilisez les Budgets de Décoration pour aider les Filles à décorer leurs dortoirs !|2. Durant l’événement, vous pouvez obtenir 10 Budgets de Décoration pour chaque Fille 5 étoiles obtenues dans les Capsules, Graduations, et les Fragments. Vous pouvez au maximum obtenir 250 Budget de Décoration de cette façon. Les Budgets de Décoration seront directement envoyés dans votre sac.|3. Vous pouvez recevoir des Budgets de Décoration en achetant Pack Spécial, en acquérant des Filles 5 étoiles, dans les récompenses de l’Evénement de Points de Capsule et en vous connectant chaque jour.|4. Vous pouvez commencer à décorer en cliquant sur l’avatar d’une des Filles dans l’interface de l’événement.|5. Vous pouvez obtenir des récompenses chaque fois que vous complétez une des tâches de l’événement. Vous recevrez des récompenses supplémentaires en finissant toutes les tâches qu’une Fille vous donne.|6. Vous pouvez obtenir la récompense du dortoir parfait si toutes les tâches sont finies.|7. Les tâches ne peuvent être accomplies qu’une seule fois."
 ACTIVITY_VOTE_COUNT,Nombre de Vote：{1}
 ACTIVITY_VOTE_DETAIL,Voir les Détails
-ACTIVITY_VOTE_RETURN,Retour
+ACTIVITY_VOTE_RETURN,Retourner
 PERSON_BTN_8,Système
 PERSON_BTN_9,Musique de fond
 7DAY_ALL_AWARD,Récompense totale pour 7 jours
@@ -1930,7 +1930,7 @@ MUSIC_GAME_TEXT7,Continuer
 MUSIC_GAME_TEXT8,Reposez-vous
 MUSIC_GAME_TEXT9,"Il semblerait qu'il y ait eu un problème durant le show, voulez-vous réessayer ?"
 MUSIC_GAME_TEXT10,Terminer
-RETURN,Retour
+RETURN,Retourner
 PERSON_SIGNATURE_TEXT_1,Touchez pour entrer vos informations
 PERSON_SIGNATURE_TEXT_2,La signature ne peut pas dépasser 100 caractères ni dépasser 3 lignes
 PERSON_SIGNATURE_TEXT_3,Êtes-vous sûr de vouloir signaler cette Signature ?
@@ -2302,7 +2302,7 @@ LIBRARY_WATCHER2_TEXT05,Récompenses
 LIBRARY_WATCHER2_TEXT06,Les récompenses seront envoyées par courrier
 LIBRARY_WATCHER2_TEXT07,Passer l'Étape {1}
 LIBRARY_WATCHER2_TEXT08,Débloqué dans {1}
-LIBRARY_WATCHER2_BACK,Retour
+LIBRARY_WATCHER2_BACK,Retourner
 LIBRARY_WATCHER2_HELP,"1. Il y a en tout 3 chapitres, chaque chapitre comporte 10 étapes.|2. Les étapes sont divisées entre les batailles du scénario et les mini-jeux, vous devrez atteindre le nombre de points nécessaire pour finir l’étape.|3. Finir une étape vous donnera des récompenses. Finissez toutes les étapes du chapitre pour obtenir des récompenses supplémentaires par courrier.|4.Vous pourrez voir les histoires passées dans Souvenir. |5. Le scénario des étages déjà fini peut être revu dans Mémoire-Histoire Principale. Les deux premiers chapitre sont débloqués par défaut, les chapitres suivants seront débloqués avec le temps."
 POTENTIALITY_LOCK,Débloqué à\nLibération {1}
 POTENTIALITY_UNLOCK_TEXT1,Débloqué à\nLibération {1}
@@ -3614,7 +3614,7 @@ EQUIP_LEVELUP_TITLE_1,Choisir
 EQUIP_LEVELUP_TITLE_2,Préavis
 SHOP_SKIN_TEXT09,Skin Introuvable
 EQUIP_LEVELUP_TEXT_12,Êtes-vous sûr d'améliorer la classe de l'Ensemble ?
-SUIT_SKILL_DETAIL_WINDOW_TITLE,Choisir la compétence
+SUIT_SKILL_DETAIL_WINDOW_TITLE,Compétence
 SUIT_SKILL_DETAIL_WINDOW_BTN,Changer
 EQUIP_LEVELUP_HELP,"1. Durant l'événement vous pouvez améliorer vos équipements oranges 4/5/6 étoiles en utilisant des Pièces d'Or et des Gemmes. Chaque amélioration est limitée à une seule fois. |2. En utilisant les ""Fragments de Météorite"", vous pourrez améliorer vos ensembles d'équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre. Plus le niveau des équipements que vous souhaitez améliorer est élevé, plus vous devez utiliser de ""Fragments de Météorite"". Cette opération peut être effectuée plusieurs fois. |3. En utilisant les ""Engrenages de Conversion"", vous pourrez également convertir vos ensembles d'équipement d'une classe contre une autre classe.|4. Complétez les tâches de l'événement - Examen d'Admission pour obtenir les ""Roulements Coniques"". |5. Vous pouvez échangez des ""Roulements Coniques"" contre des ""Fragments de Météorite"", des équipements de Guerrier/Mage/Éclaireur/Assassin/Prêtre ou des ""Engrenages de Conversion"" dans le Magasin. |6. Vous ne pouvez qu'améliorer/utiliser/changer les équipements se trouvrant dans votre Sac. |7. Les ""Roulements Coniques"", les ""Fragments de Météorite"" et les ""Engrenages de conversion"" obtenus seront conservés après la fin de cet événement et pourront être utilisés lors du suivant."
 EQUIP_LEVELUP_TEXT_13,Matériel
@@ -4365,7 +4365,7 @@ FAIR_ARENA_DESC_END,Coffre trouvé !
 FAIR_ARENA_TIPS_REVIVE,"Cette Pioche Dorée sera consommée après l'échec d'une bataille. Si vous ne voulez pas continuer à combattre, vous recevrez des récompenses du Coffre de niveau actuel."
 FAIR_ARENA_TIPS_END,"Êtes-vous sûr de renoncer à cette Exploration ?\nAprès confirmation, le résultat de cette Exploration sera calculé en fonction du nombre de victoires actuelles."
 FAIR_ARENA_TIPS_REVIVE_UNLOCK1,"Êtes-vous sûr de vouloir utiliser Gemmes*{1} pour vous ressusciter ? Après la résurrection, vous pourrez déterrer un Coffre de niveau supérieur et choisir une nouvelle Fille pour votre équipe."
-FAIR_ARENA_TIPS_REVIVE_UNLOCK2,"Êtes-vous sûr de vouloir débloquer cette Pioche Argentée ? Après l'avoir débloquée, vous pourrez vous ressusciter et déterrer un Coffre de niveau supérieur. (vous n'avez pas besoin d'utiliser des Gemmes pour débloquer des Picohes Argentées dans le modo Démo)"
+FAIR_ARENA_TIPS_REVIVE_UNLOCK2,"Êtes-vous sûr de vouloir débloquer cette Pioche Argentée ? Après l'avoir débloquée, vous pourrez vous ressusciter et déterrer un Coffre de niveau supérieur. (vous n'avez pas besoin d'utiliser des Gemmes pour débloquer des Pioches Argentées dans le modo Démo)"
 FAIR_ARENA_NOTES_REVIVE,Achetez des Pioches Argentées pour se ressusciter !
 FAIR_ARENA_TIPS_REVIVE_LIMIT,Pioche épuisée !
 FAIR_ARENA_DEMO_ABBR,Démo
@@ -4975,7 +4975,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Les Croyances\nde Chacun
+WARMUP_ARENA_TASK_INFO_2,K.M Érudite\nLa Théorie du Go
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5754,41 +5754,41 @@ ACTIVITY_FIREWORK,Fête du\nPrintemps
 FIREWORK_EXPLAIN_TEXT10,「Allumette」
 HOUSE_TEXT_64,Pas encore obtenu
 POTENTIALITY_BACK_TEXT04,La Capacité de votre liste de Filles a atteint sa limite !
-ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. Durant cet événement, utilisez des Sabliers Souvenirs pour vous remémorer des souvenirs enfouis de Lord Dracula. Le nombre de Sabliers Souvenirs requis peut différer en fonction de la Scène que vous avez sélectionnée.|2. En vous remémorant un souvenir, vous aurez des chances de trouver une Clef du Passé (objet obtenable uniquement dans les Scènes 1 à 4). Si vous ne trouvez pas de Clef du Passé, vous obtiendrez une Récompense Mémorable (chaque Récompense Mémorable est obtenable uniquement une fois par Scène) et vous augmenterez vos chances d'obtenir une Clef du Passé la prochaine fois que vous utiliserez des Sabliers Souvenirs. Lorsque vous trouvez une Clef du Passé dans une Scène, vous débloquerez la scène suivante.|3. La première Scène est débloquée par défaut. Pour les Scènes 1 à 4, vous aurez besoin d'une Clef du Passé pour débloquer la suivante. Pour la Scène 5, vous aurez besoin de collecter toutes les Récompenses Mémorables afin de débloquer la suivante. Pour la Scène 6, les Récompenses Mémorables seront réactualisées après les avoir toutes collectées une fois.|4. Si vous souhaitez collecter les Récompenses Mémorables non-obtenues d'une des Scènes précédentes, vous pourrez retourner à cette dernière pour les collecter.|5. Offrez des Plumes de Corbeau à Lord Dracula et obtenez Fragment de Lord Dracula 5 étoiles*50 une fois que l'avancée aura atteint 100%%.|6. Collectez des Plumes de Corbeau en complétant les quêtes dans l'événement - Le Contrat de Lord Dracula et dans Capsule de Nouvelle Fille, et via le Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|7. Après la fin de l'événement, vos Plumes de Corbeau, Sabliers Souvenirs et Clef du Passé seront convertis en Pièce d'Or, respectivement 20k, 50k et 100k chacun, et envoyées par courrier."
-ACTIVITY_VAMPIRE_TASK_HELP,"1. Durant cet événement, complétez les quêtes et collectez des Pages Volantes afin d'augmenter le niveau de votre Contrat (1 Page Volante équivalant à 1 point d'Avancée). Obtenez des récompenses en augmentant le niveau de votre Contrat.|2. En obtenant le Pack de Dracula, débloquez les récompenses supplémentaires (jusqu'au niveau de Contrat que vous aurez atteint)."
+ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. Durant cet événement, utilisez des Fioles d’Endurance pour vous rendre à votre Destination. Après avoir complété la tâche de votre Destination actuelle, vous obtiendrez soit un Itinéraire pour débloquer la Destination suivante, soit une Récompense de Destination. Le nombre de Fiole d’Endurance requis peut différer en fonction de la Destination que vous avez sélectionnée.|2. En complétant la tâche de votre Destination actuelle, vous aurez des chances d’obtenir un Itinéraire. Si vous ne trouvez pas d'Itinéraire, vous obtiendrez une Récompense de Destination (chaque Récompense de Destination est obtenable uniquement une fois par Destination) et vous augmenterez vos chances d'obtenir un Itinéraire la prochaine fois que vous utiliserez des Fioles d’Endurance. Une fois que vous aurez obtenu un Itinéraire, vous débloquerez la Destination suivante.|3. La première Destination est débloquée par défaut. Pour les Destinations 2 à 4, vous aurez besoin d'un Itinéraire pour les débloquer. Pour débloquer la Destination 6, vous aurez besoin de collecter toutes les Récompenses de Destination 5. Une fois avoir atteint la Destination 6, les Récompenses de Destination seront réactualisées une fois les avoir toutes collectées.|4. Si vous souhaitez collecter les Récompenses de Destination non-obtenues d'une des Destinations précédentes, vous pourrez retourner à cette dernière pour les collecter.|5. Offrez des Boussoles de Voyage à K.M Érudite et obtenez des Fragments de K.M Érudite 5 étoiles*50 une fois que l'avancée aura atteint 100%%.|6. Moyen d’obtention des Boussoles de Voyage : les quêtes dans l'événement - Mission d'Honneur et dans Capsule de Nouvelle Fille, Pack de Grande Valeur, Pack Surprise et Pack Surprise de Skin.|7. Après la fin de l'événement, vos Fioles d’Endurance, Boussoles de Voyage et Itinéraires seront convertis en Pièce d'Or, respectivement 50k, 20k et 100k chacun, et envoyées par courrier."
+ACTIVITY_VAMPIRE_TASK_HELP,"1. Durant cet événement, complétez les quêtes et collectez des Pages d'Honneur afin d'augmenter le niveau de Mission d'Honneur (1 Page d'Honneur équivalant à 1 point d'Avancée). Obtenez des récompenses en augmentant le niveau de Mission d'Honneur.|2. En obtenant le Pack de Mission d'Honneur, débloquez les récompenses supplémentaires (jusqu'au niveau de Mission d'Honneur que vous aurez atteint).|3. Si vous obtenez une K.M Érudite 5 étoiles via l'Échange de l'événement - Cérémonie de Promotion, la quête correspondante sera également considérée comme complétée.|4. Si vous obtenez une K.M Érudite 6/9/10 étoiles via l'Échange, la quête correspondante ne sera pas considérée comme complétée."
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,Obtention immédiate après l'achat
 ACTIVITY_VAMPIRE_TASK_LABEL01,Récompenses
 ACTIVITY_VAMPIRE_TASK_LABEL02,Quêtes
 ACTIVITY_VAMPIRE_TASK_TEXT01,Limite
 ACTIVITY_VAMPIRE_TASK_AWARD01,Normale
 ACTIVITY_VAMPIRE_TASK_AWARD02,Avancée
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Lord Dracula
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Boussole de Voyage
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,Utiliser
 GACHA_AUTOTRANSFER_TEXT01,Auto-Transfert des Filles 3 étoiles obtenues
 GACHA_50TIMES_TEXT01,×1
 GACHA_50TIMES_TEXT02,×50
 GACHA_50TIMES_TEXT03,Tirer 50 fois
 GACHA_50TIMES_TEXT04,Tirer 50 fois
-ACTIVITY_VAMPIRE_GAMBLE_TEXT01,"Vous avez trouvé une Clef du Passé, la Scène - {1} est désormais débloquée. Voulez-vous vous y rendre ?"
-ACTIVITY_VAMPIRE_GAMBLE_TEXT02,Aller à la Scène - {1}
+ACTIVITY_VAMPIRE_GAMBLE_TEXT01,"Vous avez trouvé un Itinéraire, la Destination - {1} est désormais débloquée. Voulez-vous vous y rendre ?"
+ACTIVITY_VAMPIRE_GAMBLE_TEXT02,Aller à la Destination - {1}
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,Plus tard
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,Aller à
-ACTIVITY_VAMPIRE_GAMBLE_TEXT03,Avancée actuelle
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,Le Château de Lord Dracula
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,Promenade Tardive
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,Soirée au Campus
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,Sous le Pont Illuminé
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,Festival d'Été
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,L'Aube des Temps
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,Offrir
-ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,Vous n'avez pas encore débloqué cette scène
-ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,Vous n'avez plus accès à cette scène car vous avez déjà collecté toutes les récompenses disponibles
-ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,Vous êtes actuellement dans la Scène - {1}
-ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,Changez pour une Scène déjà débloquée en appuyant sur une image
-ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,"Toutes les Récompenses Mémorables de cette Scène ont été collectées, veuillez vous rendre dans une autre Scène"
-ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Toutes les Récompenses Mémorables ont été collectées, la Scène - {1} est débloquée. Voulez-vous vous y rendre ?"
-ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Toutes les Récompenses Mémorables ont été collectées, les récompenses de la Scène - L'Aube des Temps ont été réactualisées"
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,"Votre avancée a atteint 100%%, vous n'avez plus besoin d'offrir de Plume de Corbeau à Lord Dracula"
+ACTIVITY_VAMPIRE_GAMBLE_TEXT03,Avancée
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,Les Montagnes Perdues
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,Le Lac de la Paix
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,Lieu de Campement
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,La Forêt Maudite
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,Le Parc Naturel
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,Temple d'Honneur
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,Invoquer
+ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,Vous n'avez pas encore débloqué cette Destination...
+ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,Vous n'avez plus accès à cette Destination car vous avez déjà collecté toutes les récompenses disponibles.
+ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,Vous êtes actuellement dans la Destination - {1}
+ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,Vous pouvez appuyer sur une autre Destination afin d'obtenir des récompenses à plus tard.
+ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,"Toutes les récompenses de cette Destination ont été collectées, le système vous aidera à changer la Destination."
+ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Toutes les récompenses de cette Destination ont été collectées, la Destination - {1} est débloquée. Voulez-vous vous y rendre ?"
+ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Vous avez obtenu toutes les récompenses de cette Destination, les récompenses de la Destination - Temple d'Honneur ont été rafraîchies."
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Vous avez déjà invoqué une K.M Érudite...
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Utiliser
 SHRINE_HURDLE,Dojo
 SHRINE_TREE,Arbre Divin
@@ -5861,8 +5861,8 @@ PERSON_DRESS_BUFFS_TIPS_5,Aucun Bonus en Tenue Rouge
 PERSON_DRESS_BUFFS_TIPS_6,Aucun Bonus en Tenue Orange
 PERSON_DRESS_BUFFS_TIPS_7,Aucun Bonus en Tenue Rosée
 PERSON_DRESS_RELATED_DRESS,Tenue(s)
-ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Récompenses Mémorables
-ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Clef du Passé
+ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Récompenses
+ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Objet Requis
 CHIME_HELP,"
 1. Les Clochettes suspendues aux branches de l\'Arbre Divin sont enchantées et peuvent fournir des bonus à vos Filles. (Utilisable dans presque toutes les batailles)|2. Collectez un certain nombre de Fragments de Clochette pour en débloquer une. Une fois une Clochette débloquée, utilisez de la Poudre Mystique et des Talismans Mystiques pour l\'améliorer.
 
@@ -6025,7 +6025,7 @@ GAME_ASSISTANT_TEXT40,Ordinaire
 GAME_ASSISTANT_TEXT41,Moderne
 GAME_ASSISTANT_TEXT42,Deluxe
 GAME_ASSISTANT_TEXT43,Serviteur
-GAME_ASSISTANT_TEXT44,Collecter des récompenses
+GAME_ASSISTANT_TEXT44,Collecter les récompenses
 GAME_ASSISTANT_TEXT45,Entraînement à choisir
 GAME_ASSISTANT_TEXT46,Défier l'Épouvantail
 GAME_ASSISTANT_TEXT47,Achat d'Énergie
@@ -6272,8 +6272,40 @@ NEW_TRIAL_BATTLEPASS_TEXT23,Voulez-vous utiliser {1} Gemmes pour acheter {2} Poi
 NEW_TRIAL_BATTLEPASS_TEXT24,Vous ne pouvez qu'obtenir 3000 Points du Sanctuaire au maximum !
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TITLE,Achat en masse
 ACTIVITY_JACKPOT_MACHINE_GIFTBAG_BUY_TEXT,Entrez la quantité que vous voulez acheter
-BATTLE_BUFF_SEC,Appuyez sur l'avatar de la Fille pour savoir plus de détails~
+BATTLE_BUFF_SEC,Appuyez sur l'avatar de la Fille pour plus de détails~
 ACTIVITY_JACKPOT_MACHINE_TITLE,Jouer en masse
 ACTIVITY_JACKPOT_MACHINE_TEXT,Entrez le nombre d'Énergie que vous souhaitez utiliser
 BATTLE_BUFF_TITTLE,Détails
-PEW_TRAINNG_HANGUP_TEXT10,"La durée de l'Entraînement est inférieure à 10 minutes, impossible à récupérer des récompenses."
+PEW_TRAINNG_HANGUP_TEXT10,"La durée de l'Entraînement est inférieure à 10 minutes, impossible de récupérer les récompenses."
+ACTIVITY_LOST_SPACE_MOVE_ENERGY_NO,Détecteur Spatial Insuffisant !
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_NO,Énergie Laser Insuffisante !
+ACTIVITY_LOST_SPACE_NO_UNOPEN_GRID,Aucune case détectable à explorer.
+ACTIVITY_LOST_SPACE_AUTO_GET,Tout\nCollecter
+ACTIVITY_LOST_SPACE_AUTO_GET_NO,Aucune récompense à collecter.
+ACTIVITY_LOST_SPACE_EXIT_TIPS1,Voulez-vous entrer dans l'étape suivante ?
+ACTIVITY_LOST_SPACE_EXIT_TIPS2,Veuillez d'abord collecter les récompenses pour entrer dans l'étape suivante.
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Énergie nécessaire : {1}
+ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Après avoir changé la Compétence Spatiale, toutes les Énergies Laser seront retirées. Voulez-vous continuer à changer ?"
+ACTIVITY_LOST_SPACE_NAV1,Objets
+ACTIVITY_LOST_SPACE_NAV2,Aide
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Durant cet événement, explorez les cases de la Station Spatiale Égarée en utilisant des Détecteurs Spatiaux. Après avoir détecté une case, vous obtiendrez une récompense aléatoire et les cases adjacentes seront visibles.|2. Chaque étape comprend un Site de Téléportation. Après avoir touché son icône, vous obtiendrez une Boîte d'approvisionnement de l'étape actuelle et entrerez dans l'étape suivante.|3. Les Coordonnées de Ravitaillement sont dispersées sur plusieurs étapes. Après avoir repéré 3 Coordonnées de Ravitaillement, s'affichera un Site de Ravitaillement qui vous permettra d'obtenir d'énormes récompenses après avoir y être entré. |4. Choisissez une Compétence Spatiale pour vous aider à mieux d'explorer les mystères de la Station Spatiale Égarée. Vous obtiendrez 1 Énergie Laser pour chaque utilisation de Détecteur Spatial. Après avoir collecté un certain nombre d'Énergie Laser, vous pourrez déclencher la Compétence Spatiale de votre choix.|5. La Compétence Spatiale peut être changée à tout moment. Cependant une fois changée, toutes les Énergies Laser obtenues seront retirées.|6. Collectez les récompenses en touchant l'icône - Tout collecter (n'inclut pas les objets spatiaux).|7. Moyen d'obtention de Détecteur Spatial : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace et Cadeau d'Été Anticipé. |8. Après la fin de l'événement, les Détecteurs Spatiaux non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Détecteur Spatial = 1000k Pièce d'Or."
+GAME_ASSISTANT_TEXT103,Cafétéria - Récompense des Commandes
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Le nombre d'Énergies Laser a atteint sa limite, confirmez-vous ne pas vouloir déclencher la Compétence Spatiale ?"
+ACTIVITY_LOST_SPACE_SKILL_NO_USE,Aucune case disponible pour lancer la Compétence Spatiale de votre choix.
+ACTIVITY_LOST_SPACE_SKILL_MASK_EXIT_SHOW,Site de Téléportation détecté !
+ACTIVITY_LOST_SPACE_SKILL_MASK_GET_AWARD,Boîte d'approvisionnement obtenue !
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW,Coordonnées de Ravitaillement détectées !
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_SHOW,Site de Ravitaillement détecté !
+ACTIVITY_LOST_SPACE_SKILL_PASS_TIPS,"Félicitations, toutes les cases ont été explorées !"
+ACTIVITY_LOST_SPACE_SKILL_START,Explorer
+ACTIVITY_LOST_SPACE_SKILL_NO_CLICK,Impossible à explorer pour le moment.
+ACTIVITY_LOST_SPACE_AWARD_TITLE,Boîte d'approvisionnement
+ACTIVITY_LOST_SPACE_AWARD_NUM,{1}e Étape
+ACTIVITY_VAMPIRE_GAMBLE_CONTINUE,Continuer
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW_ENTER,Des Coordonnées de Ravitaillement sont cachées dans cette étape !
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS1,"Il existe des Coordonnées de Ravitaillement non détectées dans l'étape actuelle, voulez-vous tout de même passer à l'étape suivante ?\n[c][e28002]Ne manquez pas les Coordonnées de Ravitaillement, autrement vous ne pourrez pas entrer dans le Site de Ravitaillement ![-][/c]"
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS2,"Il existe des Coordonnées de Ravitaillement non collectées dans l'étape actuelle, voulez-vous tout de même passer à l'étape suivante ?\n[c][e28002]Ne manquez pas les Coordonnées de Ravitaillement, autrement vous ne pourrez pas entrer dans le Site de Ravitaillement ![-][/c]"
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,"Il vous reste encore un Site de Ravitaillement dans l'étape actuelle. Voulez-vous tout de même passer à l'étape suivante ?\n[c][e28002]Ne le manquez pas, c'est une grosse source de récompenses ![-][/c]"
+ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Choisir
+ENTRANCE_TEST_SKILL_UNSURE,Ses compétences sont sujettes à des modifications.
+ACTIVITY_VAMPIRE_GAMBLE_RETURN,Quitter

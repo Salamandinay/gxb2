@@ -1,0 +1,4 @@
+id,name,energy,icon,desc
+1,掃射ビーム,32,activity_lost_space_icon_skill2,ガイドビーム。前回探知したマスの横一列の探索マスをすべて探知する。
+2,クロスビーム,42,activity_lost_space_icon_skill1,ガイドビーム。前回探知したマスの上下左右それぞれ2マスずつの探索マスを探知する。
+3,チャージビーム,52,activity_lost_space_icon_skill3,ガイドビーム。前回探知したマスの上下それぞれ3マスずつの探索マスを探知。スキルを使用するたびにビームエネルギーは6pt減少し、最多で3回減少する。（{1}回減少済み）

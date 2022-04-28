@@ -358,6 +358,7 @@ function NewNoticeWindow:initWindow()
 	self:getUIComponent()
 	self:initList()
 	self:register()
+	self:touchPoint()
 end
 
 function NewNoticeWindow:getUIComponent()
@@ -376,12 +377,31 @@ function NewNoticeWindow:register()
 	end
 end
 
+function NewNoticeWindow:touchPoint()
+	local msg = messages_pb.log_partner_data_touch_req()
+	msg.touch_id = xyd.DaDian.NEW_NOTICE_TOUCH
+
+	xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+end
+
 function NewNoticeWindow:initList()
 	local game_notice_data = xyd.models.settingUp:getGameNotices()
 	self.lineNum_ = 0
+	local readList = xyd.models.settingUp:getGameNoticeReadList()
 
 	table.sort(game_notice_data, function (a, b)
-		return a.order < b.order
+		local valueA = a.order
+		local valueB = b.order
+
+		if xyd.arrayIndexOf(readList, a.id) > 0 then
+			valueA = valueA + 10000
+		end
+
+		if xyd.arrayIndexOf(readList, b.id) > 0 then
+			valueB = valueB + 10000
+		end
+
+		return valueA < valueB
 	end)
 
 	for index, data in ipairs(game_notice_data) do

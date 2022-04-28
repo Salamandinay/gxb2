@@ -1,0 +1,4 @@
+id,name,energy,icon,desc
+1,Rayon de Laser,32,activity_lost_space_icon_skill2,Explorer toutes les cases de la même ligne que la dernière case détectée.
+2,Laser en Croix,42,activity_lost_space_icon_skill1,"Explorer 8 cases avoisinant la dernière case détectée (2 cases en haut, en bas, à gauche et à droite)."
+3,Laser Chargé,52,activity_lost_space_icon_skill3,"Explorer 6 cases perpendiculaires à la dernière case détectée (3 en haut et 3 en bas). Chaque fois que vous déclenchez cette Compétence Spatiale, les Énergies Laser nécessaires pour déclencher cette Compétence Spatiale seront réduites de 6 (ne peut être réduit 3 fois au maximum, déjà réduit : {1} fois)."

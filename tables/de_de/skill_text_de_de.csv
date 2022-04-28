@@ -10434,9 +10434,9 @@ Fertigkeitseffekt. Kann maximal auf 5 Schichten gestapelt werden. Erhöht die Ko
 675801,Stimme des Windes,Antiquitätenfertigkeit,Erhöht die erhaltene Heilung um 19%
 675901,Stimme des Windes,Antiquitätenfertigkeit,Erhöht die erhaltene Heilung um 22%
 676001,Stimme des Windes,Antiquitätenfertigkeit,Erhöht die erhaltene Heilung um 25%
-6760101,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 2%."
-6760201,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 4%."
-6760301,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 10%."
+6760101,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 5%."
+6760201,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 10%."
+6760301,Stimme des Windes,Antiquitätenfertigkeit,"Zu Beginn des Kampfes verliert die Trägerin 50% ihrer HP, erhält dafür aber einen Schutzwall in Höhe ihrer verlorenen HP. Gleichzeitig erhält sie den Effekt [c][e28002]Macht der Winde[-][/c].\n[c][e28002]Macht der Winde:[-][/c]\nFertigkeitseffekt. Am Ende jeder Runde regeneriert sie HP in Höhe von 5% ihrer max. HP und der Wert ihres Schutzwalls erhöht sich um denselben Wert. Jedes Mal, wenn der Schutzwall einen Schaden abfängt, erhöht sich sein Wert um 20%."
 630101,時間迴廊,-1,Erhöht zu Beginn des Kampfes den Angriff deiner Geister- und Monster-Mädchen um 2%
 630102,時間迴廊,-1,Erhöht zu Beginn des Kampfes den Angriff deiner Geister- und Monster-Mädchen um 4%
 630103,時間迴廊,-1,Erhöht zu Beginn des Kampfes den Angriff deiner Geister- und Monster-Mädchen um 6%
@@ -11129,3 +11129,197 @@ Zu Beginn der Runde fügt er den 3 Gegnern mit niedrigsten HP die [c][01a310]Sal
 Fertigkeitseffekt. Reduziert die erhaltene Heilung des Ziels um 50% und die Energie, die das Ziel bei der Verletzung erhält, um 50%. Erhöht den kontinuierlichen Schaden, den das Ziel erleidet, um 100%.
 [c][01a310]Salzigkeit:[-][/c]
 Kontinuierlicher Schaden, kann gestapelt werden. Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 50% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 50% des AW des Angreifers zugefügt."
+5401800,K.M. Erleuchterin,Standardangriff,Standardangriff
+65402500,K.M. Erleuchterin,Standardangriff,Standardangriff
+75401800,K.M. Erleuchterin,Standardangriff,Standardangriff
+5401801,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 100% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 5% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 250% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+65402501,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 200% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 10% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 500% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+75401801,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 600% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1200% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+5401802,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 20%,  den Angriff um 10%, die Kontrollimmunitätsrate um 10% und den Speed um 20."
+65402502,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 30%,  den Angriff um 15%, die Kontrollimmunitätsrate um 20% und den Speed um 30."
+65402512,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 40."
+75401802,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 40."
+5401803,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 120% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 10%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 30%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+65402503,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 180% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 15%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 60%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+65402513,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 360% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+75401803,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 360% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+5401804,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 75% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+65402504,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 150% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+65402514,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 340% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+75401804,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 340% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018011,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 612% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1224% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018012,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 624% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1248% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018013,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 636% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1272% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018014,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 648% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1296% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018015,K.M. Erleuchterin,Schleier des Geheimnisses,"
+Lüfte in der Partie beim Go ein wenig den Schleier des Geheimnisses. Fügt 4 zufälligen Gegnern Schaden in Höhe von 660% des AW zu. Reduziert 3 Runden lang den Angriff der Ziele um 15% und fügt ihnen eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 1320% des eigenen AW zu.
+
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018021,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 42."
+754018022,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 44."
+754018023,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 46."
+754018024,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 40%,  den Angriff um 20%, die Kontrollimmunitätsrate um 30% und den Speed um 48."
+754018025,K.M. Erleuchterin,Guter Rivale,"Nur wenn man einen guten Gegner hat, macht so eine Partie Spaß. Erhöht die HP um 43%,  den Angriff um 23%, die Kontrollimmunitätsrate um 30% und den Speed um 50."
+754018031,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 368% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+754018032,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 376% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+754018033,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 384% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+754018034,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 392% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 3% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+754018035,K.M. Erleuchterin,Inspiration des Windes,"
+Dreh dich im Wind der Partie und lass den Speistein richtig fallen. Standardangriff fügt dem Gegner mit der höchsten Krit. Rate einen Schaden in Höhe von 400% des AW zu und reduziert 2 Runden lang seine Krit. Rate um 20%. Verleiht 3 Verbündeten mit dem höchsten AW eine Schicht [c][e28002]Vorhand[-][/c], die 3 Runden lang anhält. Wenn die Träger durch Standardangriff oder aktive Fertigkeit den Gegnern Schaden zugefügt haben, haben sie eine 100%ige Wahrscheinlichkeit, dem Ziel einen zusätzlichen Schaden in Höhe von 5% seiner max. HP (maximal von 2500% deren eigenen AW) zuzufügen.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0,05% (maximal auf 150%)."
+754018041,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 347% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018042,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 354% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018043,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 361% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018044,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 368% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+754018045,K.M. Erleuchterin,Kausalzusammenhang,"
+Durchdenk die Situation, um die Gegner auszunutzen und den Rückstand aufzuholen. Zu Beginn des Kampfes erhalten K.M. Erleuchterin und die Verbündete mit dem höchsten AW jeweils 2 Schichten [c][e28002]Vorhand[-][/c], der 3 Runden lang anhält. Erleiden deine Mädchen einen Schaden durch Standardangriffe oder aktive Fertigkeiten, wird 3 zufälligen Gegnern eine [c][01a310]Gefangenschaft[-][/c] in Höhe von 375% des AW zugefügt.
+
+[c][e28002]Vorhand[-][/c]
+Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW des Trägers erhöhen all seine verursachten Schäden um 0.05% (maximal auf 150%).
+[c][01a310]Gefangenschaft[-][/c]
+Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
+[c][01a310]Betäuben[-][/c]
+Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."

@@ -1,18 +1,18 @@
 local resizePosYShort = {
-	0,
-	-19,
-	-208,
-	-225,
-	-410,
-	-435
+	-257,
+	-257,
+	-458,
+	-460,
+	-655,
+	-650
 }
 local resizePosYLong = {
-	0,
-	-19,
-	-228,
-	-245,
-	-458,
-	-478
+	-385,
+	-385,
+	-586,
+	-588,
+	-792,
+	-787
 }
 local ActivityRecallLottery = class("ActivityRecallLottery", import(".ActivityContent"))
 local CountDown = import("app.components.CountDown")
@@ -28,12 +28,16 @@ end
 
 function ActivityRecallLottery:resizeToParent()
 	ActivityRecallLottery.super.resizeToParent(self)
-	self:resizePosY(self.imgBg, 70, 0)
-	self:resizePosY(self.imgText, 21, -49)
-	self:resizePosY(self.groupStage, -211, -301)
-	self:resizePosY(self.btnAwake, -805.5, -965.5)
-	self:resizePosY(self.btnRecall, -808, -966)
-	self:resizePosY(self.recallEffectNode, -437.5, -530.5)
+	self:resizePosY(self.imgBg2, -75, -169)
+	self:resizePosY(self.imgBg3, -82, -176)
+	self:resizePosY(self.imgText, 57, 11)
+	self:resizePosY(self.resItem, -40, -43)
+	self:resizePosY(self.btnHelp, -39, -42)
+	self:resizePosY(self.btnAwake, -803, -956)
+	self:resizePosY(self.btnRecall, -803, -956)
+	self:resizePosY(self.recallEffectNode, -487.5, -575.5)
+	self:resizePosY(self.labelAwake, -58, -65)
+	self:resizePosY(self.labelRecall, -58, -65)
 
 	for i = 1, 6 do
 		self:resizePosY(self["stage" .. i], resizePosYShort[i], resizePosYLong[i])
@@ -51,11 +55,12 @@ end
 
 function ActivityRecallLottery:getUIComponent()
 	local go = self.go
-	self.imgBg = go:NodeByName("imgBg").gameObject
+	self.imgBg2 = go:NodeByName("imgBg2").gameObject
+	self.imgBg3 = go:NodeByName("imgBg3").gameObject
 	self.imgText = go:ComponentByName("imgText", typeof(UISprite))
-	local resItem = go:NodeByName("resItem").gameObject
-	self.resNum = resItem:ComponentByName("num", typeof(UILabel))
-	self.resPlus = resItem:NodeByName("btnPlus").gameObject
+	self.resItem = go:NodeByName("resItem").gameObject
+	self.resNum = self.resItem:ComponentByName("num", typeof(UILabel))
+	self.resPlus = self.resItem:NodeByName("btnPlus").gameObject
 	self.btnHelp = go:NodeByName("btnHelp").gameObject
 	self.btnAwake = go:NodeByName("btnAwake").gameObject
 	self.labelAwake = self.btnAwake:ComponentByName("labelAwake", typeof(UILabel))
@@ -65,7 +70,7 @@ function ActivityRecallLottery:getUIComponent()
 	self.labelRecallCost = self.btnRecall:ComponentByName("labelCost", typeof(UILabel))
 	self.recallRedPoint = self.btnRecall:NodeByName("redPoint").gameObject
 	self.groupStage = go:NodeByName("groupStage").gameObject
-	self.unlockEffectNode = self.groupStage:NodeByName("effect").gameObject
+	self.unlockEffectNode = self.groupStage:NodeByName("unlockEffect").gameObject
 
 	for i = 1, 6 do
 		self["stage" .. i] = self.groupStage:ComponentByName("stage" .. i, typeof(UISprite))
@@ -81,11 +86,17 @@ function ActivityRecallLottery:getUIComponent()
 end
 
 function ActivityRecallLottery:initUIComponent()
-	xyd.setUISpriteAsync(self.imgText, nil, "activity_recall_lottery_text_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.imgText, nil, "activity_recall_lottery_text_" .. xyd.Global.lang, function ()
+		self.imgText:SetLocalScale(0.92, 0.92, 1)
+	end, nil, true)
 
 	self.resNum.text = xyd.models.backpack:getItemNumByID(xyd.ItemID.RECALL_HOURGLASS)
 	self.labelAwake.text = __("ACTIVITY_VAMPIRE_GAMBLE_BUTTON01")
 	self.labelRecall.text = __("ACTIVITY_VAMPIRE_GAMBLE_BUTTON02")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.labelRecall:X(10)
+	end
 
 	self.mask:SetActive(false)
 
@@ -100,7 +111,7 @@ function ActivityRecallLottery:initUIComponent()
 		for j = 1, bigAwardNum do
 			local award = awards[j]
 			local item = xyd.getItemIcon({
-				scale = 0.4166666666666667,
+				scale = 0.4351851851851852,
 				labelNumScale = 1.1,
 				show_has_num = true,
 				noClick = true,
@@ -125,17 +136,10 @@ function ActivityRecallLottery:initUIComponent()
 
 	self:updateStage()
 	self:updateAwakeBtn()
-
-	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "de_de" or xyd.Global.lang == "en_en" then
-		self:resizePosY(self.btnAwake, -795, -955)
-	end
 end
 
 function ActivityRecallLottery:updateStage()
 	for i = 1, 6 do
-		local stageUrl = "activity_recall_lottery_stage" .. i .. "_unlock"
-
-		xyd.setUISpriteAsync(self["stage" .. i], nil, stageUrl, nil, , true)
 		self["stageMask" .. i]:SetActive(false)
 		self["stageFinishSign" .. i]:SetActive(false)
 		self["stageLockSign" .. i]:SetActive(false)
@@ -162,9 +166,8 @@ function ActivityRecallLottery:updateStage()
 			else
 				self.cardEffect[i] = xyd.Spine.new(self["stage" .. i].gameObject)
 
-				self.cardEffect[i]:setInfo("vampire_card", function ()
-					self.cardEffect[i]:play("light", 0)
-					self.cardEffect[i]:SetLocalPosition(-5, 5, 0)
+				self.cardEffect[i]:setInfo("exercise_card", function ()
+					self.cardEffect[i]:play("texioa01", 0)
 				end)
 			end
 		elseif self.cardEffect[i] then
@@ -247,27 +250,44 @@ function ActivityRecallLottery:register()
 				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(cost[1])))
 			end
 		else
+			local unlockItem = xyd.tables.miscTable:split2Cost("activity_vampire_unlock", "value", "|#")[1]
+			local unlockProb = xyd.tables.activityVampireGambleTable:getUnlockProb(self.curStage)
+			local awards = xyd.tables.activityVampireGambleTable:getAward(self.curStage)
 			local params = {
-				winTitleText = __("TIPS"),
-				labelTipText = __("ACTIVITY_VAMPIRE_GAMBLE_TEXT02", __("ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT0" .. self.curStage)),
-				labelCancelText = __("ACTIVITY_VAMPIRE_GAMBLE_BUTTON03"),
-				labelSureText = __("ACTIVITY_VAMPIRE_GAMBLE_BUTTON04"),
-				imgUrl = "activity_recall_lottery_stage" .. self.curStage,
-				sureCallback = function ()
+				windowTpye = 2,
+				winTitleText = __("TIME_CLOISTER_TEXT29"),
+				groupTitleText1 = unlockProb == 0 and __("ACTIVITY_VAMPIRE_GAMBLE_AWARD01") or __("ACTIVITY_VAMPIRE_GAMBLE_AWARD02"),
+				groupTitleText2 = __("ACTIVITY_VAMPIRE_GAMBLE_AWARD01"),
+				awardData1 = unlockProb == 0 and awards or {
+					{
+						unlockItem[1],
+						unlockItem[2]
+					}
+				},
+				awardData2 = unlockProb ~= 0 and awards or {},
+				setChoose1 = unlockProb == 0 and self.awardState[self.curStage] or {
+					self.activityData.detail.probs[self.curStage] == -1 and 1 or 0
+				},
+				setChoose2 = unlockProb ~= 0 and self.awardState[self.curStage] or {},
+				confirmCallback = function (isSkip)
 					local cost = xyd.tables.activityVampireGambleTable:getCost(self.curStage)
 
 					if cost[2] <= xyd.models.backpack:getItemNumByID(cost[1]) then
 						self:sendReq()
+
+						if isSkip then
+							xyd.db.misc:setValue({
+								key = "activity_recall_lottery_last_recall_time" .. self.curStage,
+								value = xyd.getServerTime()
+							})
+						end
 					else
 						xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(cost[1])))
 					end
-				end,
-				cancelCallback = function ()
-					xyd.alertTips(__("ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS"))
 				end
 			}
 
-			xyd.WindowManager:get():openWindow("activity_recall_lottery_tip_window", params)
+			xyd.WindowManager:get():openWindow("activity_recall_lottery_award_preview_window", params)
 		end
 	end
 
@@ -337,7 +357,7 @@ function ActivityRecallLottery:register()
 				local unlockProb = xyd.tables.activityVampireGambleTable:getUnlockProb(self.curStage)
 
 				if self.activityData:getBigAwardJudge() then
-					local btnSureText = "RETURN"
+					local btnSureText = "ACTIVITY_VAMPIRE_GAMBLE_RETURN"
 					local btnLabelText = "ACTIVITY_VAMPIRE_GAMBLE_TEXT05"
 					local isNeedCostBtn = true
 
@@ -482,53 +502,28 @@ end
 function ActivityRecallLottery:playUnlockEffect()
 	self.mask:SetActive(true)
 
-	local startTran = self["stage" .. self.curStage].transform.localPosition
-	local endTran = self["stage" .. self.curStage + 1].transform.localPosition
+	local cardTran = self["stage" .. self.curStage + 1].transform.localPosition
+	local lockTran = self["stageLockSign" .. self.curStage + 1].transform.localPosition
 
-	self.unlockEffectNode:SetLocalPosition(startTran.x, startTran.y, startTran.z)
+	self.unlockEffectNode:SetLocalPosition(cardTran.x + lockTran.x, cardTran.y + lockTran.y, cardTran.z + lockTran.z)
 
-	if self.curStage % 2 == 1 then
-		self.unlockEffectNode.transform.localScale = Vector3(1, 1, 1)
-	else
-		self.unlockEffectNode.transform.localScale = Vector3(-1, 1, 1)
-	end
-
-	local function effectEnd()
+	local function callback()
 		self.curStage = self.curStage + 1
 
 		self:updateStage()
 		self.mask:SetActive(false)
 	end
 
-	local function disappearCallback()
-		self.unlockEffect:play("liefeng", 1, nil, effectEnd)
-	end
-
-	local function unlockCallback()
-		self.unlockEffect:play("disappear", 1, nil, disappearCallback)
-	end
-
-	local function appearCallback()
-		self.unlockEffect:play("unlock", 1, nil, unlockCallback)
-	end
-
-	local function liefengCallback()
-		self.unlockEffect:play("appear", 1, nil, appearCallback)
-	end
-
 	if not self.unlockEffect then
 		self.unlockEffect = xyd.Spine.new(self.unlockEffectNode.gameObject)
 
-		self.unlockEffect:setInfo("vampire_bat", function ()
-			self.unlockEffect:play("liefeng", 1, nil, liefengCallback)
+		self.unlockEffect:setInfo("exercise_lock", function ()
+			self["stageLockSign" .. self.curStage + 1]:SetActive(false)
+			self.unlockEffect:play("unlock", 1, nil, callback)
 		end)
 	else
-		self.unlockEffect:play("liefeng", 1, nil, liefengCallback)
+		self.unlockEffect:play("unlock", 1, nil, callback)
 	end
-
-	local seq = self:getSequence()
-
-	seq:Insert(1, self.unlockEffectNode.transform:DOLocalMove(Vector3(endTran.x, endTran.y, endTran.z), 1.5))
 end
 
 function ActivityRecallLottery:sendReq()
@@ -537,10 +532,6 @@ function ActivityRecallLottery:sendReq()
 			type = 1,
 			level = self.curStage
 		}))
-		xyd.db.misc:setValue({
-			key = "activity_recall_lottery_last_recall_time" .. self.curStage,
-			value = xyd.getServerTime()
-		})
 		self.activityData:setCurStage(self.curStage)
 		self.mask:SetActive(false)
 		self.recallEffect:destroy()
@@ -552,8 +543,8 @@ function ActivityRecallLottery:sendReq()
 
 	self.recallEffect = xyd.Spine.new(self.recallEffectNode.gameObject)
 
-	self.recallEffect:setInfo("vampire", function ()
-		self.recallEffect:play("gamble", 1, 2, effectCallback)
+	self.recallEffect:setInfo("exercise_senpai", function ()
+		self.recallEffect:play("hit", 1, nil, effectCallback)
 		self.recallEffect:startAtFrame(0)
 	end)
 end

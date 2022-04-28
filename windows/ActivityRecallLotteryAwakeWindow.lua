@@ -60,6 +60,16 @@ function ActivityRecallLotteryAwakeWindow:initUIComponent()
 	local windowBG = self.window_.transform:NodeByName("WINDOWBG"):GetComponent(typeof(UISprite))
 	windowBG.color = Color.New2(204)
 
+	self.award3:NodeByName("imgIcon").gameObject:SetActive(false)
+
+	self.award3Icon = xyd.getItemIcon({
+		scale = 0.5185185185185185,
+		itemID = 930219,
+		num = 50,
+		noClick = true,
+		uiRoot = self.award3.gameObject
+	})
+
 	self:updateAwards()
 	self:initModel()
 end
@@ -74,7 +84,9 @@ function ActivityRecallLotteryAwakeWindow:updateAwards()
 			self["imgMask" .. i]:SetActive(true)
 			self["imgChoose" .. i]:SetActive(true)
 
-			if self.awardEffect[i] then
+			if i == 3 then
+				self.award3Icon:setEffect(false)
+			elseif self.awardEffect[i] then
 				self.awardEffect[i]:SetActive(false)
 			end
 		else
@@ -82,7 +94,9 @@ function ActivityRecallLotteryAwakeWindow:updateAwards()
 			self["imgChoose" .. i]:SetActive(false)
 
 			if xyd.tables.activityVampireGrowTable:getPoint(i) <= self.activityData.detail.point then
-				if not self.awardEffect[i] then
+				if i == 3 then
+					self.award3Icon:setEffect(true, "fx_ui_bp_available", {})
+				elseif not self.awardEffect[i] then
 					self.awardEffect[i] = xyd.Spine.new(self["award" .. i].gameObject)
 
 					self.awardEffect[i]:setInfo("fx_ui_bp_available", function ()
@@ -100,7 +114,7 @@ function ActivityRecallLotteryAwakeWindow:updateAwards()
 end
 
 function ActivityRecallLotteryAwakeWindow:initModel()
-	local partnerIDs = xyd.tables.miscTable:split2Cost("gacha_ensure_partner", "value", "|#")[1]
+	local partnerIDs = (xyd.tables.miscTable:split2Cost("recall_lottery_awake_partner", "value", "|#") or xyd.tables.miscTable:split2Cost("gacha_ensure_partner", "value", "|#"))[1]
 
 	for i = 1, 3 do
 		local modelID = xyd.tables.partnerTable:getModelID(partnerIDs[i])

@@ -1605,7 +1605,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musik
 NORMAL_SLOT_MACHINE,Normaler Glücksautomat
 HIGH_SLOT_MACHINE,Super Glücksautomat
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenk enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die Geschenke erhalten. |2. Nicht entsperrte Geschenkeboxen speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf die Geschenkebox tippst, kannst du die Geschenke im Inneren prüfen. |4. Die vierte Geschenkbox wird entsperrt, nachdem das zweite Glückspaket gekauft wurde."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenkpaket enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die bereits entsperrten Geschenke erhalten.|2. Nicht entsperrte Geschenkpakete speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf das Geschenkpaket tippst, kannst du die Geschenke im Inneren prüfen. |4. Das 3. Geschenkpaket wird entsperrt, nachdem das zweite Glückspaket gekauft wurde."
 CHAPTER_COUNT,Kapitel {1}
 CHAPTER_TITLE,{1}-{2}   {3}
 LOCK_STORY_LIST,Dieses Kapitel ist noch nicht entsperrt
@@ -2034,7 +2034,7 @@ Werde Champion
 beim server-
 übergreifenden
 Wettbewerb!"
-ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Du kannst festlegen, dass nach Beginn der Qualifikationsrunde ein anderer Spieler unterstützt wird. Wenn der Spieler gewinnt, ist die Wette gewonnen, ansonsten ist sie verloren. |2. Spieler können sich nur im Finale selber unterstützen. |3. Das System entscheidet automatisch über den Kampf, auf den in dieser Runde gewettet wird. Kämpfe mit Spielern in derselben Gilde, auf demselben Server oder in demselben Sprachraum werden zuerst ausgewählt. |4. Die Münzen, die in eine Wette gesetzt werden können, hängen vom Fortschritt ab, den du beim Abenteuer erreicht hast: Die Menge der Münzen bestimmt sich danach, wie viel du an einem Tag im Auto-Kampf, bei deiner weitesten Stufe, erhalten kannst (VIP und Abonnementenbonus sind nicht enthalten). |5. Wenn der Spieler, den du ausgewählt hast, gewonnen hat, erhältst du die doppelte Anzahl am Münzen, die du gesetzt hast. Die Belohnungen werden per Mail verschickt."
+ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Du kannst festlegen, dass nach Beginn der Qualifikationsrunde ein anderer Spieler unterstützt wird. Wenn der Spieler gewinnt, ist die Wette gewonnen, ansonsten ist sie verloren. |2. Spieler können sich nur im Finale selber unterstützen. |3. Das System entscheidet automatisch über den Kampf, auf den in dieser Runde gewettet wird. Zu Beginn der Qualitifikatinosrunde wird zufällig eine der 5 Gruppen ausgewählt und die Kämpfe der Spieler in dieser Gruppe, die mit dir in derselben Gilde oder auf demselben Server oder in derselben sprachlichen Region sind, werden bevorzugt angezeigt.|4. Die Münzen, die in eine Wette gesetzt werden können, hängen vom Fortschritt ab, den du beim Abenteuer erreicht hast: Die Menge der Münzen bestimmt sich danach, wie viel du an einem Tag im Auto-Kampf, bei deiner weitesten Stufe, erhalten kannst (VIP und Abonnementenbonus sind nicht enthalten). |5. Wenn der Spieler, den du ausgewählt hast, gewonnen hat, erhältst du die doppelte Anzahl am Münzen, die du gesetzt hast. Die Belohnungen werden per Mail verschickt."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,1. Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.
 ARENA_ALL_SERVER_NEW_COUNTDOWN,Nächste Saison:
 IMG_GUIDE_JUMP_GAME_1,"Fenek stellt jedes Mal[c][cc0011]wenn sie auf einer Plattform landet 1 Punkt Verstand[-][/c]wieder her. Wenn der Verstand 0 ist, ist das Spiel vorbei."
@@ -4914,7 +4914,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,Chizuko ·\nGott und Tao
+WARMUP_ARENA_TASK_INFO_2,K.M. Erleuchterin ·\nDas Spiel Go
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -5695,42 +5695,42 @@ ACTIVITY_FIREWORK,Feuerwerks-\nspektakel
 FIREWORK_EXPLAIN_TEXT10,[Streichholz]
 HOUSE_TEXT_64,Nicht im Besitz
 POTENTIALITY_BACK_TEXT04,Die Kapazität deiner Mädchenliste ist nicht ausreichend
-ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. Verwende deine ""Sanduhren der Vergangenheit"" in der entsprechenden Szene, um die Rückblende abzuschließen. Nach der Rückblende erhältst du eine Szenebelohnung oder einen ""Schlüssel zur Vergangenheit"", mit dem die nächste Szene entsperrt werden kann. In verschiedenen Szenen werden verschiedene Mengen an ""Sanduhren der Vergangenheit"" benötigt.|2. Hast du während der Rückblende in einer Szene keinen ""Schlüssel zur Vergangenheit"" erhalten, wird bei der nächsten Rückblende die Wahrscheinlichkeit fürs Erscheinen des Schlüssels erhöht und du erhältst außerdem eine zufällige Szenenbelohnung (eine Szenenbelohnung kann nicht wiederholt erhalten werden), ansonsten wird die nächste Szene entsperrt und du erhältst auch keine Szenenbelohnungen.|3. Die 1. Szene wird zu Beginn automatisch entsperrt. In den ersten 4 Szenen erhältst du jeweils 1 ""Schlüssel zur Vergangenheit"", mit dem die nächste Szene entsperrt werden kann. In der 5. Szene gibt es keinen ""Schlüssel zur Vergangenheit"". Sobald du alle Szenenbelohnungen in den ersten 5 Szenen erhalten hast, wird die 6. Szene entsperrt. Hast du alle Szenenbelohnungen in der 6. Szene erhalten, wird diese Szene sowie deren Belohnungen zurückgesetzt.|4. Gibt es in den entsperrten Szenen noch nicht erhaltene Szenenbelohnungen, kannst du die Szene erneut auswählen, um dort die Rückblenden nochmal abzuschließen und die Belohnungen zu erhalten.|5. Unter ""Lord · Erwachen"" kannst du die ""Uralte Feder"" manuell verwenden (auf ""Erwecken"" tippen) , um Lord Dracula zu erwecken. Bei vollem Erwachen-Fortschritt erhältst du 50 Lord Dracula-Fragmente.|6. Erhalten der ""Uralten Feder"": Lord Draculas Aufträge. Erhalten der ""Sanduhren der Vergangenheit"": Lord Draculas Aufträge, Willkommenskapseln, Superpakete, Glückspakete, Kostümpakete.|7. Nach dem Ende des Events werden die noch nicht verwendeten ""Uralten Federn"", ""Sanduhren der Vergangenheit"" und ""Schlüssel zur Vergangenheit"" automatisch per Mail recycelt. Jede ""Uralte Feder"" entspricht 20k Münzen, jede ""Sanduhr der Vergangenheit"" 50k und jeder ""Schlüssel zur Vergangenheit"" 100k."
-ACTIVITY_VAMPIRE_TASK_HELP,"1. Schließe während des Events die Aufgaben ab und sammle die ""blutigen Seiten"", um dein Level zu erhöhen (1 blutige Seite gibt 1 Punkt) und die entsprechenden normalen Belohnungen zu sammeln.|2. Durch Kauf des Pakets ""Lord Draculas Geschenk"" kannst du die exklusiven Belohnungen entsperren. Egal wann du das Paket kaufst, können alle sammelbaren exklusiven Belohnungen sofort nach dem Kauf erhalten werden."
+ACTIVITY_VAMPIRE_GAMBLE_HELP,"1. Verwende deine ""Reise-Energie"" am entsprechenden Ort, um auf Reise zu diesem Reiseziel zu gehen. Nach der Reise erhältst du eine Reisebelohnung oder eine ""Reise-Landkarte"", mit der das nächste Reiseziel entsperrt werden kann. An verschiedenen Orten werden verschiedene Mengen an ""Reise-Energien"" benötigt.|2. Hast du während der Reise an einem Ort keine ""Reise-Landkarte"" erhalten, wird bei der nächsten Reise die Wahrscheinlichkeit fürs Erscheinen der ""Reise-Landkarte"" erhöht und du erhältst außerdem eine zufällige Reiseblohnung (eine Reisebelohnung kann nicht wiederholt erhalten werden), ansonsten wird das nächste Reiseziel entsperrt und du erhältst auch keine Reisebelohnungen.|3. Das 1. Reiseziel wird zu Beginn automatisch entsperrt. An den ersten 5 Orten erhältst du jeweils 1 ""Reise-Landkarte"", mit der das nächste Reiseziel entsperrt werden kann. Am 5. Ort gibt es keine ""Reise-Landkarte"". Sobald du alle Reisebelohnungen am 5. Ort erhalten hast, wird das 6. Reiseziel entsperrt. Hast du alle Reisebelohnungen am 6. Ort erhalten, wird dieses Reiseziel sowie deren Belohnungen zurückgesetzt.|4. Gibt es an den entsperrten Orten noch nicht erhaltene Reisebelohnungen, kannst du das Reiseziel auswählen, um dort eine Reise nochmal zu starten und die Belohnungen zu erhalten.|5. Unter ""Reisebegleiterin"" kannst du die ""Glücksedeksteine"" manuell verwenden (auf ""Herbeirufen"" tippen) , um K.M. Erleuchterin dich bei der Reise begleiten zu lassen. Bei vollem Glücks-Fortschritt erhältst du 50 K.M. Erleuchterin-Fragmente.|6. Erhalten der ""Glücksedelstene"": Ehrenaufträge. Erhalten der ""Reise-Energie"": Ehrenaufträge, Willkommenskapseln, Superpakete, Glückspakete, Kostümpakete.|7. Nach dem Ende des Events werden die noch nicht verwendeten ""Reise-Energien"", ""Glücksedelsteine"" und ""Reise-Karte"" automatisch per Mail recycelt. Jeder ""Glücksedelsten"" entspricht 20k Münzen, jede ""Reise-Energie"" 50k und jeder ""Reise-Landkarte"" 100k."
+ACTIVITY_VAMPIRE_TASK_HELP,"1. Schließe während des Events die Aufgaben ab und sammle die ""Ehrenseiten"", um dein Level zu erhöhen (1 Ehrenseite gibt 1 Punkt) und die entsprechenden normalen Belohnungen zu sammeln.|2. Durch Kauf des Pakets ""Ehrengeschenk"" kannst du die exklusiven Belohnungen entsperren. Egal wann du das Paket kaufst, können alle sammelbaren exklusiven Belohnungen sofort nach dem Kauf erhalten werden.|3. Die Aufgaben ""Level K.M. Erleuchterin auf 6-, 9- und 10-Sterne"" können nicht durch Umtausch unter ""Weiterentwickeln"" abgeschlossen werden. Die Aufgabe ""Erhalte 1 5-Sterne K.M. Erleuchterin"" kann durch Tausch im Event ""Aufstiegszeremonie"" abgeschlossen werden."
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,Sofort erhältlich nach dem Kauf
 ACTIVITY_VAMPIRE_TASK_LABEL01,Belohnungen
 ACTIVITY_VAMPIRE_TASK_LABEL02,Aufträge
 ACTIVITY_VAMPIRE_TASK_TEXT01,Limit
 ACTIVITY_VAMPIRE_TASK_AWARD01,Normale Belohnungen
 ACTIVITY_VAMPIRE_TASK_AWARD02,Exklusive Belohnungen
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Lord · Erwachen
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,Rückblende
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Reisebegleiterin
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON02,Reisen
 GACHA_AUTOTRANSFER_TEXT01,Erhaltene 3-Sterne autom. übertragen
 GACHA_50TIMES_TEXT01,×1
 GACHA_50TIMES_TEXT02,×50
 GACHA_50TIMES_TEXT03,Ziehe 50 mal
 GACHA_50TIMES_TEXT04,50 X
-ACTIVITY_VAMPIRE_GAMBLE_TEXT01,"Schlüssel erhalten und ""{1}"" entsperrt. Rückblende nächster Szene beginnt..."
-ACTIVITY_VAMPIRE_GAMBLE_TEXT02,"Rückblende zu ""{1}"" beginnt..."
+ACTIVITY_VAMPIRE_GAMBLE_TEXT01,"Reise-Karte erhalten und ""{1}"" entsperrt. Reise zum nächsten Ziel beginnt..."
+ACTIVITY_VAMPIRE_GAMBLE_TEXT02,"Reise zu ""{1}"" beginnt..."
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON03,Nicht jetzt
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON04,Los
-ACTIVITY_VAMPIRE_GAMBLE_TEXT03,Akt. Fortschritt
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,Uralte Burg
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,Sommerfest
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,Alter Campus
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,Unter der Brücke
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,Nachtmarkt
-ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,Kosmos und Chaos
-ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,Erwecken
-ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,Gesperrte Szene (Schlüssel zur Vergangenheit benötigt). Rückblende kann nicht gestartet werden.
-ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,Alle Szenenbelohnungen erhalten. Rückblende kann nicht nochmal abgeschlossen werden.
-ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,"Rückblende in ""{1}"" gewählt"
-ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,"Tippe auf das Bild der Szene, um Ort der Rückblende zu wechseln."
-ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,Alle Szenenbelohnungen erhalten. Der Ort der Rückblende wird automatisch geändert.
-ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Alle Szenenbelohnungen erhalten und ""{1}"" entsperrt. Rückblende nächster Szene beginnen?"
-ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Alle Szenenbelohnungen erhalten. Die Szene ""Kosmos und Chaos"" wurde zurückgesetzt."
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Lord Dracula bereits erweckt!
-ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Nochmal
+ACTIVITY_VAMPIRE_GAMBLE_TEXT03,Akt. Glückswert
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT01,Lavapfad
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT02,Ruhiger Seeufer
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT03,Zeltplatz
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT04,Dunkelwald
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT05,Waldpark
+ACTIVITY_VAMPIRE_GAMBLE_PIC_TEXT06,Ehrenschloss
+ACTIVITY_VAMPIRE_GAMBLE_BUTTON05,Herbeirufen
+ACTIVITY_VAMPIRE_GAMBLE_UNLOCK_TIPS,Gesperrtes Reiseziel (Reise-Landkarte benötigt). Reise kann nicht gestartet werden.
+ACTIVITY_VAMPIRE_GAMBLE_ALL_TIPS,Alle Reisebelohnungen erhalten. Reise kann nicht nochmal abgeschlossen werden.
+ACTIVITY_VAMPIRE_GAMBLE_PICK_TIPS,"Reise zu ""{1}"" gewählt"
+ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,"Tippe auf die Bilder, um das Reiseziel zu wechseln."
+ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,Alle Reisebelohnungen an diesem Ort erhalten. Das Reiseziel wird automatisch gewechselt.
+ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,Alle Reisebelohnungen an diesem Ort erhalten und {1} entsperrt. Reise zum nächste Ziel beginnen?
+ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,Alle Reisebelohnungen an diesem Ort erhalten. Die Reise zum Ehrenschloss wird zurückgesetzt.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,K.M. Erleuchterin bereits herbeigerufen. Sie muss nicht nochmal herbeigerufen werden.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Reisen
 SHRINE_HURDLE,Prüfung der Götter
 SHRINE_TREE,Baum der Ahnen
 SHRINE_NOTICE,Schwarzes Brett
@@ -5802,7 +5802,7 @@ PERSON_DRESS_BUFFS_TIPS_5,Keine Boni durch rote Outfits
 PERSON_DRESS_BUFFS_TIPS_6,Keine Boni durch orangene Outfits
 PERSON_DRESS_BUFFS_TIPS_7,Keine Boni durch rosa Outfits
 PERSON_DRESS_RELATED_DRESS,Betroffene Outfits
-ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Szenebelohnungen
+ACTIVITY_VAMPIRE_GAMBLE_AWARD01,Reisebelohnung
 ACTIVITY_VAMPIRE_GAMBLE_AWARD02,Item zum Entsperren
 CHIME_HELP,"
 1. Am Baum der Ahnen hängen verschiedenste Glocken, die deinen Mädchen die unterschiedlichsten Buffs verleihen können und diese Buffs gelten permanent für nahezu alle Kämpfe.|2. Sammle die Glockenfragmente, um die entsprechenden Glocken zu entsperren. Verwende den mystischen Staub und die mystischen Talismane, um die Glocken zu verbessern.
@@ -6215,3 +6215,35 @@ ACTIVITY_JACKPOT_MACHINE_TITLE,Autom. Drehen
 ACTIVITY_JACKPOT_MACHINE_TEXT,Gib die Anzahl des Drehens ein
 BATTLE_BUFF_TITTLE,Buff-Details
 PEW_TRAINNG_HANGUP_TEXT10,"Das Training muss mindestens 10 Minuten dauern, um Belohnungen zu geben."
+ACTIVITY_LOST_SPACE_MOVE_ENERGY_NO,Detektor nicht ausreichend
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_NO,Laserenergien nicht ausreichend
+ACTIVITY_LOST_SPACE_NO_UNOPEN_GRID,Kein erkundbares Gebiet
+ACTIVITY_LOST_SPACE_AUTO_GET,Alles sammeln
+ACTIVITY_LOST_SPACE_AUTO_GET_NO,Keine sammelbaren Belohnungen
+ACTIVITY_LOST_SPACE_EXIT_TIPS1,Willst du sicher zur nächsten Raumstation gehen?
+ACTIVITY_LOST_SPACE_EXIT_TIPS2,"Sammle zunächst die sammelbaren Belohnungen in dieser Raumstation, um zur nächsten Raumstation gehen zu können."
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Benötigte Energie: {1}
+ACTIVITY_LOST_SPACE_SKILL_CHANGE,Nach dem Wechseln der Fertigkeiten werden deine Laserenergien auf 0 zurückgesetzt. Willst du sicher die Fertigkeit wechseln?
+ACTIVITY_LOST_SPACE_NAV1,Spezialereignisse
+ACTIVITY_LOST_SPACE_NAV2,Hilfe
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Sommeranfang, Raumstation-Versorgung.|8. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
+GAME_ASSISTANT_TEXT103,Cafeteria - Belohnungen der Bestellungen
+ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,Volle Laserenergien gespeichert. Willst du sicher keine Fertigkeit durchführen?
+ACTIVITY_LOST_SPACE_SKILL_NO_USE,Keine verfügbaren Gebiete
+ACTIVITY_LOST_SPACE_SKILL_MASK_EXIT_SHOW,Sprungpunkt erscheint!
+ACTIVITY_LOST_SPACE_SKILL_MASK_GET_AWARD,Schatzbox dieser Raumstation erhalten!
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW,Versorgungskoordinate erscheint!
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_SHOW,Versorgungsdepot erscheint!
+ACTIVITY_LOST_SPACE_SKILL_PASS_TIPS,Du hast alle Gebiete erkundet!
+ACTIVITY_LOST_SPACE_SKILL_START,Erkunden
+ACTIVITY_LOST_SPACE_SKILL_NO_CLICK,Das versteckte Gebiet kann nicht erkundet werden
+ACTIVITY_LOST_SPACE_AWARD_TITLE,Vorschau der Boxbelohnungen
+ACTIVITY_LOST_SPACE_AWARD_NUM,{1}. Raumstation
+ACTIVITY_VAMPIRE_GAMBLE_CONTINUE,Weiter reisen
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_PART_SHOW_ENTER,Vorhandene Versorgungskoordinate in dieser Raumstation!
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS1,Vorhandene Versorgungskoordinate in dieser Raumstation noch nicht erkundet. Fortfahren?\n[c][e28002](Danach ist die Koordinate in dieser Raumstation nicht mehr zu erhalten und das Versorgungsdepot kann wahrscheinlich nicht entdeckt werden.)[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS2,Erkundete Versorgungskoordinate in dieser Raumstation noch nicht gesammelt. Fortfahren?\n[c][e28002](Danach ist diese erkundete Koordinate nicht mehr zu erhalten und das Versorgungsdepot kann wahrscheinlich nicht entdeckt werden.)[-][/c]
+ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,Verfügbares Versorgungsdepot in dieser Raumstation noch nicht besucht. Fortfahren?\n$font color=0xe28002>Danach verpasst du die reichhaltigen Belohnungen im Versorgungsdepot!</font>
+ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Auswählen
+ENTRANCE_TEST_SKILL_UNSURE,*Ihre Fertigkeiten können noch angepasst werden.
+ACTIVITY_VAMPIRE_GAMBLE_RETURN,Zurück

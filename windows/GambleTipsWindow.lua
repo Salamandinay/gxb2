@@ -28,6 +28,7 @@ function GambleTipsWindow:ctor(name, params)
 	self.tipsSpacingY = params.tipsSpacingY
 	self.selectCallback = params.selectCallback
 	self.groupChooseY = params.groupChooseY
+	self.isHideNoBtn = params.isHideNoBtn
 end
 
 function GambleTipsWindow:initWindow()
@@ -102,6 +103,11 @@ function GambleTipsWindow:layout()
 		self.selectMask_.gameObject:Y(-31)
 	else
 		self.labelDesc_.text = self.text
+	end
+
+	if self.isHideNoBtn then
+		self.btnNo_.gameObject:SetActive(false)
+		self.btnYes_.gameObject:X(0)
 	end
 
 	if self.groupChooseY then

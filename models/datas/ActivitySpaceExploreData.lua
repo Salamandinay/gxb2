@@ -60,10 +60,6 @@ end
 
 function ActivitySpaceExploreData:openGridBack(event)
 	local data = xyd.decodeProtoBuf(event.data)
-
-	dump(data, "格子返回======")
-	dump(self.detail.map, "格子返回======aasdasd")
-
 	self.detail.map_content[data.id] = data.content
 
 	if self.detail.map[data.id] == 0 then

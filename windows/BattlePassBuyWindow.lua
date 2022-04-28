@@ -264,7 +264,7 @@ function BattlePassBuyWindow:updateLayout()
 	local battlePassTable = xyd.models.activity:getBattlePassTable(xyd.BATTLE_PASS_TABLE.MAIN)
 	local awards2 = battlePassTable:getCoreAward(3)
 	local scales = {
-		0.7543859649122807,
+		0.65,
 		0.7962962962962963
 	}
 

@@ -13,6 +13,7 @@ function ActivityItemGetwayWindow:ctor(name, params)
 	self.openItemBuyWnd = params.openItemBuyWnd
 	self.callback = params.callback
 	self.wayItems = {}
+	self.openDepthTypeWindowCallBack = params.openDepthTypeWindowCallBack
 end
 
 function ActivityItemGetwayWindow:initWindow()
@@ -80,6 +81,7 @@ function ActivityItemGetwayWindow:GoWnd(index)
 	local windows = GetWayTable:getGoWindow(id)
 	local params = GetWayTable:getGoParam(id)
 	local close = false
+	local openWindowDepthTypes = {}
 
 	for i in pairs(windows) do
 		close = true
@@ -158,10 +160,27 @@ function ActivityItemGetwayWindow:GoWnd(index)
 
 			xyd.WindowManager.get():openWindow(windowName, params[i])
 		end
+
+		if close then
+			local layerType = xyd.tables.windowTable:getLayerType(windowName)
+
+			if layerType and layerType > 0 then
+				table.insert(openWindowDepthTypes, {
+					layerType = layerType,
+					windowName = windowName
+				})
+			end
+		end
 	end
 
 	if close then
 		xyd.WindowManager.get():closeWindow(self.window_.name)
+
+		if self.openDepthTypeWindowCallBack then
+			for i in pairs(openWindowDepthTypes) do
+				self.openDepthTypeWindowCallBack(openWindowDepthTypes[i])
+			end
+		end
 	end
 end
 

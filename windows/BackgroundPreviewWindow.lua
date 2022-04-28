@@ -120,7 +120,7 @@ function BackgroundPreviewWindow:layout()
 				effect:setInfo(spineName, function ()
 					local animation = xyd.tables.customBackgroundTable:getAnimation(self.id_)
 					local height = self:getScreenHeight()
-					local effect_scale = height / self.bgImg.height * 0.656
+					local effect_scale = height / self.bgImg.height * 0.656 * 1.0517241379310345
 
 					effect:SetLocalScale(effect_scale, effect_scale, 1)
 

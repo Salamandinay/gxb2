@@ -273,7 +273,10 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_EASTER2022] = require("app.models.datas.ActivityEaster2022Data"),
 	[xyd.ActivityID.ACTIVITY_SIMULATION_GACHA] = require("app.models.datas.ActivitySimulationGachaData"),
 	[xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS] = require("app.models.datas.NewTrialBattlepassData"),
-	[xyd.ActivityID.ACTIVITY_RELAY_GIFT] = require("app.models.datas.ActivityRelayGiftData")
+	[xyd.ActivityID.ACTIVITY_RELAY_GIFT] = require("app.models.datas.ActivityRelayGiftData"),
+	[xyd.ActivityID.ACTIVITY_LOST_SPACE] = require("app.models.datas.ActivityLostSpaceData"),
+	[xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG] = require("app.models.datas.ActivityLostSpaceGiftData"),
+	[xyd.ActivityID.SPRING_GIFTBAG] = require("app.models.datas.SpringGiftbagData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()
