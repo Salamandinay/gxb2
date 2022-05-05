@@ -28,7 +28,7 @@ function SpaceSkillItem:setInfo(id, is_use)
 
 	xyd.setUISpriteAsync(self.skillIcon_, nil, iconName)
 
-	local change_num = xyd.tables.activityLostSpaceSkillTable:getLevelUpLimit(self.id_)
+	local change_num = xyd.tables.activityLostSpaceSkillTable:getLevelUpCost(self.id_)
 	local level = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE):getLevel(self.id_)
 	self.skillName_.text = xyd.tables.activityLostSpaceSkillTable:getName(self.id_)
 	self.skillDesc_.text = xyd.tables.activityLostSpaceSkillTable:getDesc(self.id_, level)

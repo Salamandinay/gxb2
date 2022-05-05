@@ -1881,7 +1881,7 @@ BACKGROUND_NAV_TEXT1,背景画像
 BACKGROUND_NAV_TEXT2,ギャラリー
 BACKGROUND_GALLERY_TITLE,入手した画像：
 BACKGROUND_HELP,1、ギャラリーの画像は戦闘移行時のローディング画面に設定できます。|2、ロード中、毎回チェックを入れた画像がランダムに表示されます。|3、一部の画像にはエフェクトがあり、今後も追加される予定です。|4、エフェクトを使用できる場合は、エフェクト画像を設定するか否か選択できます。
-BACKGROUND_CONFIRM,こちらの画像を購入してもよろしいでしょうか？
+BACKGROUND_CONFIRM,こちらの画像を購入しますか？
 MUSIC_GAME_TEXT1,点数：{1}
 MUSIC_GAME_TEXT2,評価：{1}
 MUSIC_GAME_TEXT3,得点
@@ -3491,8 +3491,8 @@ WISH_GACHA_NUM6,x2
 WISH_GACHA_NUM7,x3
 WISH_GACHA_NUM8,x4
 WISH_GACHA_NUM9,x5
-PARTNER_LOCK_TIP_1,この戦姫はロックされているため、素材にできません。
-PARTNER_LOCK_TIP_2,この戦姫はアンロックされたため、素材にできます。
+PARTNER_LOCK_TIP_1,この戦姫はロックされているため、\n素材にできません。
+PARTNER_LOCK_TIP_2,この戦姫はアンロックされたため、\n素材にできます。
 ACTIVITY_CRYSTAL_GIFT_TEXT,水晶レベルの上限開放！限定パックで星雲水晶をレベルアップしましょう！
 ALTAR_6UP_LIMIT,本日はもう星6以上の戦姫を転校させられません。
 TREASURE_HELP,1.メインの水晶を変換した時、変換でできた水晶を予備水晶に設定できます。|2.設定すると、いつでも水晶の切り替えが可能です。|3.各戦姫は二つの予備水晶スロットがあり、ダイヤでアンロックできます。|4.予備水晶はレベルアップ、及び変換することができません。
@@ -6150,13 +6150,13 @@ NEW_TRIAL_BATTLEPASS_TEXT06,パス
 NEW_TRIAL_BATTLEPASS_TEXT07,受取
 NEW_TRIAL_BATTLEPASS_TEXT08,挑戦へ
 NEW_TRIAL_BATTLEPASS_TEXT09,一括受取
-NEW_TRIAL_BATTLEPASS_TEXT10,継続して受取る
+NEW_TRIAL_BATTLEPASS_TEXT10,追加ボーナス
 NEW_TRIAL_BATTLEPASS_HELP,1.毎シーズン幻境パスの期間は30日間で、毎月リセットされます。|2.イベント期間中、精霊幻境に挑戦すると幻境挑戦ptを獲得でき、幻境パスをランクアップさせてボーナスを受け取ることができます。|3.精霊幻境の第1、2、5、6ステージに1回成功すると25幻境挑戦pt獲得、第3、7ステージに1回成功すると50幻境挑戦pt獲得できます。第9ステージでは、ボーナスを1つ獲得するごとに10幻境挑戦pt獲得できます。|4.幻境パスは、毎シーズン5種類のボーナスアイテムから任意のボーナスを1種類選択できます。|5.ボーナス受取後は、そのシーズンのボーナスを変更できませんのでご注意ください。|6.毎シーズンの幻境パスでは、ダイヤで幻境挑戦ptを購入できます。幻境パス未購入時は、1000幻境挑戦ptを購入できます。幻境パス購入後、イベント残り24時間の時に、追加で2000幻境挑戦ptを購入できます。
 NEW_TRIAL_BATTLEPASS_TEXT11,今シーズンのボーナスを選択してください。
 NEW_TRIAL_BATTLEPASS_TEXT12,購入可能な幻境挑戦ptが上限に達しました。
 NEW_TRIAL_BATTLEPASS_TEXT13,{1}を今シーズンのボーナスにしますか？受け取り後、今シーズンの幻境パスのボーナスは変更できなくなります。
-NEW_TRIAL_BATTLEPASS_TEXT14,パスアンロック後、直ちにボーナスを受け取れます。
-NEW_TRIAL_BATTLEPASS_TEXT15,パスアンロック後、イベント期間中に幻境挑戦ptを累計で獲得すると、以下のボーナスを獲得できます。
+NEW_TRIAL_BATTLEPASS_TEXT14,パスアンロック後、ボーナスを即受取可能。
+NEW_TRIAL_BATTLEPASS_TEXT15,パスアンロック後、イベント期間中の幻境挑戦ptの累計獲得数に応じて、以下のボーナスを獲得可能。
 ARENA_HELP_TIPS_ITEM_TEXT1,新・学園リーグがアンロック！更に、激しい対抗の幕開け！
 ARENA_HELP_TIPS_ITEM_TEXT2,クロスサーバー対抗。シーズンごとの相手が異なる！
 ARENA_HELP_TIPS_ITEM_TEXT3,サーバーごとに、1位のプレイヤーは展示されます。
@@ -6198,7 +6198,7 @@ ARENA_OPEN_TIPS_TEXT,休息期間終了まで：
 ARENA_END_TIPS_TEXT,シーズン終了まで：
 ACTIVITY_EASTER2022_TITLE,エッグ工場
 ARENA_NO_FIGHT,暫く戦闘できません
-NEW_TRIAL_BATTLEPASS_TEXT21,継続して受取る
+NEW_TRIAL_BATTLEPASS_TEXT21,追加ボーナス
 PEW_TRAINNG_HANGUP_TEXT01,使い魔特訓中（[c][00b200]{1}[-][/c]）
 PEW_TRAINNG_HANGUP_TEXT02,使い魔の特訓が完了しました。
 PEW_TRAINNG_HANGUP_TEXT03,使い魔合計レベル
@@ -6228,7 +6228,7 @@ ACTIVITY_LOST_SPACE_AUTO_GET_NO,一括受取可能なボーナスがありませ
 ACTIVITY_LOST_SPACE_EXIT_TIPS1,次の層に行きますか？
 ACTIVITY_LOST_SPACE_EXIT_TIPS2,この層には未受取のボーナスがあります。ボーナスを受け取ってから次の層に進んでください。
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,消費エネルギー：{1}
-ACTIVITY_LOST_SPACE_SKILL_CHANGE,スキルを切り替えると、ビームエネルギーは0にリセットされます。本当に切り替えてもよろしいですか？
+ACTIVITY_LOST_SPACE_SKILL_CHANGE,スキルを切り替えると、\nビームエネルギーは0にリセットされます。\n本当に切り替えてもよろしいですか？
 ACTIVITY_LOST_SPACE_NAV1,特殊イベント
 ACTIVITY_LOST_SPACE_NAV2,ヘルプ
 ACTIVITY_LOST_SPACE_HELP_TEXT,1.イベント期間中、探知機を使ってロストスペースの迷宮を検出できます。「探索マス」を1つ探知すると、ボーナスを獲得できます。同時に「探索マス」の上下左右にある隠れマスを探知すると、探索可能な状態になります。|2.各迷宮には「ジャンプポイント」が1つあります。その層のボーナスを全て受け取り、「ジャンプポイント」をタップすると、その層の「スペースボーナス」を獲得でき、新しい迷宮にジャンプします。|3.特定の層の迷宮では、「補給座標」が出現します。「補給座標」を3つ集めると、「補給マス」が出現します。「補給マス」をタップすると補給層に入り、大量のボーナスを獲得できます。|4.探知の補助スキルとして、スキルを1つ選ぶことができます。探知機を消費して迷宮を1回探索するごとに、「ビームエネルギー」を獲得できます。「ビームエネルギー」が満タンになるとスキルを発動でき、特定範囲の「探索マス」を探知できます。|5.スキルはいつでも切り替え可能ですが、スキルを切り替えると所持している「ビームエネルギー」は0にリセットされます。「ビームエネルギー」が満タンになった場合も、引き続き「ビームエネルギー」を獲得することはできませんので、ご注意ください。|6.探知で獲得したボーナスはタップして受け取る必要がありますが、「一括受取」をタップすると、一気に全てのボーナスを受け取れます（特殊イベント除く）。|7.探知機は、デイリーメール、お得パック、超お得衣装パック、超お得パック、初夏ギフト、スペース補給パックにより獲得できます。|8.イベント終了後、探知機は回収されます（各1000Kゴールド）。
@@ -6252,3 +6252,11 @@ ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,この層には未進入の�
 ACTIVITY_LOST_SPACE_SKILL_CHOOSE,スキル選択
 ENTRANCE_TEST_SKILL_UNSURE,該当戦姫は未実装です。スキル効果は調整される場合があります。
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,戻る
+PARTNER_WARMUP_HELP,1.イベント期間中、毎日ストーリーが1章アンロックされ、初回閲覧後に即ボーナスを獲得します。
+PARTNER_WARMUP_TEXT01,ボーナス一覧
+PARTNER_WARMUP_TEXT02,第{1}章のストーリーを閲覧
+PARTNER_WARMUP_TEXT03,まず前のストーリーを閲覧してください。
+PARTNER_WARMUP_TEXT04,ストーリーを見返しますか？
+ACTIVITY_STAR_ALTAR_MISSION_HELP,1.イベント期間中にミッションを完了すると、「星の欠片」と「限定スターコイン」などのボーナスを獲得できます！
+ACTIVITY_STAR_ALTAR_MISSION_TITLE01,ミッション
+ACTIVITY_STAR_ALTAR_MISSION_TITLE02,交換

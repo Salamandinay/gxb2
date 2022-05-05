@@ -1343,6 +1343,8 @@ function GameAssistantResultWindow:finishAllTask()
 	self.btnStop:SetActive(false)
 
 	self.labelDoingState.text = __("GAME_ASSISTANT_TEXT65")
+
+	xyd.models.gameAssistant:saveData()
 end
 
 function GameAssistantResultWindow:createItem(data, title)

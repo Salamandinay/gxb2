@@ -8562,9 +8562,9 @@ id,type,buff,num,round,prob
 1225001,1225,tearLimit2,0.25,2.0,1.0
 1225002,1225,tearLimit2,0.35,2.0,1.0
 1225003,1225,tearLimit2,0.5,2.0,1.0
-1226001,1226,missLimit2,0.15,2.0,1.0
-1226002,1226,missLimit2,0.2,2.0,1.0
-1226003,1226,missLimit2,0.25,2.0,1.0
+1226001,1226,missLimit2,-0.15,2.0,1.0
+1226002,1226,missLimit2,-0.2,2.0,1.0
+1226003,1226,missLimit2,-0.25,2.0,1.0
 1227001,1227,hurtmaxHLimit15Blood,0.1,0.0,1.0
 1227002,1227,hurtmaxHLimit15Blood,0.15,0.0,1.0
 1227003,1227,hurtmaxHLimit15Blood,0.2,0.0,1.0

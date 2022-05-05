@@ -102,3 +102,5 @@ id,buff_id,plus_minus,name,sec
 105,qianheziDec,,Himmelslicht,"2 Mal immun gegen jeglichen Schaden. Ist die Besitzerin 2 Mal jeglichen Schaden ausgewichen, wird der Effekt entfernt oder durch denselben Effekt ersetzt und dabei erhält die Besitzerin einen Schutzwall, dessen Wert gleich wie die ausgewichenen Schäden ist."
 106,spzglHitted,,Gefangenschaft,"Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm ein weiter Schaden zugefügt und er wird betäubt und danach verschwindet es."
 107,spzglAllHarm,,Vorhand,Basierend auf dem Angriffswert werden alle von dem Träger zugefügten Schäden erhöht.
+108,dotMaxHp,,Salzigkeit,"Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 50% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 50% des AW des Angreifers zugefügt."
+109,hypoxia,,Atemlosigkeit,"Reduziert die erhaltene Heilung des Ziels um 50% und die Energie, die das Ziel bei der Verletzung erhält, um 50%. Erhöht den kontinuierlichen Schaden, den das Ziel erleidet, um 100%."
