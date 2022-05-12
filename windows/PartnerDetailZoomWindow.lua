@@ -1,6 +1,7 @@
 local BaseWindow = import(".BaseWindow")
 local PartnerDetailZoomWindow = class("PartnerDetailZoomWindow", BaseWindow)
 local PartnerImg = import("app.components.PartnerImg")
+local PartnerGravityController = import("app.components.PartnerGravityController")
 
 function PartnerDetailZoomWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -39,6 +40,14 @@ function PartnerDetailZoomWindow:getUIComponent()
 	self.eventProxy_:addEventListener(xyd.event.HANDLE_MAP_ZOOM, handler(self, self.updateScale))
 
 	self.mainPanel.alpha = 0.02
+
+	if (UNITY_EDITOR or UNITY_STANDALONE or XYDUtils.IsTest()) and (UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+		if not self.partnerGravity then
+			self.partnerGravity = PartnerGravityController.new(self.bgImg.gameObject, 3)
+		else
+			self.partnerGravity:SetActive(true)
+		end
+	end
 end
 
 function PartnerDetailZoomWindow:initWindow()

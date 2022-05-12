@@ -41,11 +41,11 @@ function VipWindow:getUIComponent()
 	self.closeBtn = go:NodeByName("main/closeBtn").gameObject
 	self.vipGroup = go:NodeByName("main/vipGroup").gameObject
 	self.imgTitle = go:ComponentByName("main/imgTitle", typeof(UISprite))
-	self.labelText01 = go:ComponentByName("main/labelText01", typeof(UILabel))
-	self.labelText02 = go:ComponentByName("main/labelText02", typeof(UILabel))
-	self.labelText03 = go:ComponentByName("main/vipGroup/labelText03", typeof(UILabel))
-	self.imgCrystal = go:ComponentByName("main/imgCrystal", typeof(UISprite))
-	self.vipGroup1 = go:NodeByName("main/vipGroup/vipGroup1").gameObject
+	self.labelText01 = go:ComponentByName("main/titleGroup/labelText01", typeof(UILabel))
+	self.labelText02 = go:ComponentByName("main/titleGroup/labelText02", typeof(UILabel))
+	self.labelText03 = go:ComponentByName("main/titleGroup/labelText03", typeof(UILabel))
+	self.imgCrystal = go:ComponentByName("main/titleGroup/imgCrystal", typeof(UISprite))
+	self.vipGroup1 = go:NodeByName("main/titleGroup/vipGroup1").gameObject
 	self.benefitBtn = go:ComponentByName("main/benefitBtn", typeof(UISprite))
 	self.benefitBtn_redIcon = go:ComponentByName("main/benefitBtn/redIcon", typeof(UISprite))
 	self.purchaseBtn = go:ComponentByName("main/purchaseBtn", typeof(UISprite))
@@ -60,7 +60,7 @@ function VipWindow:getUIComponent()
 	self.rightArrow = go:NodeByName("main/groupBenefit/Panel1/rightArrow").gameObject
 	self.progressVip = go:ComponentByName("main/progressVip", typeof(UIProgressBar))
 	self.progressVip_label = go:ComponentByName("main/progressVip/label", typeof(UILabel))
-	local vipNum1 = go:NodeByName("main/vipGroup/vipGroup1/vipNum1").gameObject
+	local vipNum1 = go:NodeByName("main/titleGroup/vipGroup1/vipNum1").gameObject
 	local vipNum0 = go:NodeByName("main/vipGroup0/vipNum0").gameObject
 	self.itemFloatRoot_ = go:NodeByName("main/itemFloat").gameObject
 	self.vipNum0 = PngNum.new(vipNum0)

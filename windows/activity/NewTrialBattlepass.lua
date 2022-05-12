@@ -603,6 +603,10 @@ function NewTrialBattlepass:register()
 			xyd.alertTips(__("NEW_TRIAL_BATTLEPASS_TEXT20"))
 
 			return
+		elseif self.activityData:getRestCanBuy() <= 0 then
+			xyd.alertTips(__("NEW_TRIAL_BATTLEPASS_TEXT20"))
+
+			return
 		end
 
 		xyd.WindowManager.get():openWindow("new_trial_battlepass_buy_point_window", {})

@@ -122,9 +122,6 @@ function TimeCloisterMainWindow:updateBottom()
 	self.progressLabel:SetActive(true)
 
 	local info = self.cloisterInfo[self.curCloister]
-
-	self:checkGetNextInfo(info)
-
 	self.progressLabel.text = __("TIME_CLOISTER_TEXT04") .. math.floor(info.progress * 100) .. " %"
 
 	if info.state == xyd.CloisterState.UN_OPEN then
@@ -206,11 +203,16 @@ function TimeCloisterMainWindow:initContent()
 			end
 		end
 
-		local default = self.chosenCloister == 0 and 1 or self.chosenCloister
+		local defaultNum = self.curCloister == 0 and 1 or self.curCloister
+		local default = self.chosenCloister == 0 and defaultNum or self.chosenCloister
 		self.turnTable.transform.localEulerAngles = Vector3(0, 0, -60 * (default - 1))
 
 		self:changeCloister(default)
 	end
+
+	local battleRed = timeCloister:getBattleRedState()
+
+	self.btnBattleRedPoint:SetActive(battleRed[self.curCloister])
 end
 
 function TimeCloisterMainWindow:updateRedPoint()
@@ -423,7 +425,14 @@ end
 
 function TimeCloisterMainWindow:checkGetNextInfo(info)
 	local proNum = xyd.tables.miscTable:getNumber("time_cloister_clear", "value")
-	local checkMaxNum = 2
+	local checkMaxNum = 0
+
+	for i, id in pairs(xyd.tables.timeCloisterTable:getIDs()) do
+		if xyd.tables.timeCloisterTable:getLockType(id) ~= -1 then
+			checkMaxNum = checkMaxNum + 1
+		end
+	end
+
 	local checkNextId = self.curCloister + 1
 
 	if checkMaxNum >= checkNextId and proNum <= info.progress and self.cloisterInfo[self.curCloister + 1] and self.cloisterInfo[self.curCloister + 1].state == xyd.CloisterState.LOCK then

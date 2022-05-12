@@ -474,7 +474,7 @@ CHOOSE_OPPONENT_TIPS,Sélectionnez l'adversaire que vous voulez affronter：
 MY_POWER,Puissance：
 SCORE2,Score
 VIP_TEXT01,Acheter
-VIP_TEXT02,Pour
+VIP_TEXT02,pour
 VIP_TEXT03,Recharge
 VIP_TEXT04,Avantage
 VIP_TEXT05,offre
@@ -2082,7 +2082,7 @@ MATCH_NUM5,5ème bataille
 ARENA_ALL_SERVER_MISC,Devenez\nle Champion
 ARENA_ALL_SERVER_QUIZ_WINDOW_HELP,"1. Vous pouvez choisir de soutenir un autre joueur après le début de la manche de qualification. Si le joueur gagne, vous gagnerez le pari, et vice versa.|2. Les joueurs ne peuvent seulement parier sur eux qu’en Finale.|3. Le système décidera automatiquement de la bataille qui est mise sur ce tour. Les batailles avec des joueurs de la même Guilde, du même serveur ou de la même région linguistique seront choisies en premier.|4. Les pièces pouvant être placées dans un pari dépendent du progrès que vous avez atteint dans la Campagne. Le montant correspondra au nombre de pièces que vous pouvez obtenir dans l'Auto-Bataille à l’étape la plus élevée que vous avez atteint dans la campagne en une journée. (Sans compter les bonus VIP et d’abonnement).|5. Si le joueur que vous avez choisi gagne, vous obtiendrez le double du nombre de pièces que vous avez placé dans le pari. Les récompenses seront envoyées par courrier."
 ARENA_ALL_SERVER_PRE_CHAMPION_WINDOW_HELP,"1. Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché."
-ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison dans：
+ARENA_ALL_SERVER_NEW_COUNTDOWN,Nouvelle Saison dans ：
 IMG_GUIDE_JUMP_GAME_1,"Valeera [c][cc0011]récupérera[-][/c] 1 PV en arrivant sur une plate-forme, lorsqu'elle atteint 0 PV le jeu sera fini."
 IMG_GUIDE_JUMP_GAME_2,Valeera perdra beaucoup de PV si elle touche aux [c][cc0011]pics[-][/c]
 IMG_GUIDE_JUMP_GAME_3,Donne des points [c][cc0011]supplémentaires[-][/c]
@@ -2101,7 +2101,7 @@ DEFFORMATION_2,Défense
 JUMP_GAME_TARGET_EXTRA_POINT,Points requis：{1}
 JUMP_GAME_TARGET_GOLD,Acquis：
 LIBRARY_WATCHER_TEXT08,Débloqué dans {1}
-ARENA_ALL_SERVER_CLOSE_COUNTDOWN,Fin de Saison dans :
+ARENA_ALL_SERVER_CLOSE_COUNTDOWN,Fin de Saison dans ：
 ARENA_ALL_SERVER_OPEN,Cette fonctionnalité sera disponible dans：
 ARENA_ALL_SERVER_TEXT_31,La phase - Finalistes n'a pas encore commencé !
 ARENA_ALL_SERVER_TEXT_32,Taux de Soutien
@@ -2323,7 +2323,7 @@ HOUSE_TEXT_38,"
 
 6. Vous pouvez également visiter le Dortoir des autres joueurs et toucher ""J\'aime"". Vous ne pouvez toucher ""J\'aime"" qu\'une seule fois par dortoir. 
 
-8. Détails selon votre Confort (24h)：<t>150#Confort|150#Pièces d\'Or|150#Gemmes|190#Ciseaux de Cristal $150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
+7. Détails selon votre Confort (24h)：<t>150#Confort|150#Pièces d\'Or|150#Gemmes|190#Ciseaux de Cristal $150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
 "
 HOUSE_LOCK_FAIL,"Cette Fille est dans le dortoir, elle n'est pas déverouillable."
 WARRIOR_SUIT,Ensemble de Guerrière
@@ -3760,7 +3760,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Choisissez le nombre de case souhaité
 ACTIVITY_LAFULI_DRIFT_CARD,Choisissez une carte
 ACTIVITY_LAFULI_DRIFT_AWARD,Collectez les récompenses
 ACTIVITY_LAFULI_DRIFT_ROUND,Tours terminés：{1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Pack Surprise de Skin| - Pack de la Saint-Valentin| - Récompenses Quotidiennes (via Courrier)"
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Pack Surprise de Skin| -Boutique Limitée de Tenue| - Récompenses Quotidiennes (via Courrier)"
 ONE_KEY_COMPOSE,Tout synthétiser
 ONE_KEY_COMPOSE_TEXT,Vous avez assez de ressources pour synthétiser les équipements suivants. Voulez-vous les synthétiser ?
 ONE_KEY_COMPOSE_TEXT2,Aucun équipement du type actuel ne peut être synthétisé.
@@ -4190,7 +4190,7 @@ SMASH_EGG_HELP,"1. Durant cet événement, vous devez briser les œufs afin de r
 LIMITED_TASK_TEXT_01,Complétez les Quêtes suivantes et recevez les récompenses par courrier\nPS : Filles obtenues par Échange non inclus
 LIMITED_TASK_HELP,"1. Complétez les Quêtes pour pouvoir obtenir les récompenses correspondantes. Les récompenses de chaque palier ne peuvent être collectées qu'une seule fois. |2. Certaines Quêtes requièrent plusieurs conditions, vous devez toutes les remplir afin de pouvoir collecter les récompenses. |3. Cet événement n'inclut pas les Filles obtenues par Échange ou par Inverse."
 SMASH_EGG_TEXT_06,Briser {2}*{1}
-LARGE_ACTIVITY_EGG_TEXT,Maître\nChocolatier
+LARGE_ACTIVITY_EGG_TEXT,Bouteille\nà la mer
 BP_LOTTERY_CONFIRM,Vous voulez utiliser Autocollant*{1} pour échanger des récompenses ?
 SMASH_EGG_TEXT_07,Briser X{1}
 SMASH_EGG_TEXT_08,Touchez les œufs pour voir les récompenses
@@ -4854,7 +4854,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Vote du Skin de Miss Yume
 DRESS_SUMMON_LABEL_2,Défilez pour voir les Tenues obtenables
 DRESS_SUMMON_LABEL_4,Tenue Orange garantie après avoir tiré [c][e96516]{1}[-][/c] fois
 DRESS_SUMMON_LABEL_1,Chance Gratuite : {1} fois
-DRESS_SUMMON_LABEL_3,Taux d'obtention de\nl'ensemble - Cerf-volant Printanier
+DRESS_SUMMON_LABEL_3,Taux d'Obtention de\nla Tenue - Visiteur de la Nuit
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
@@ -5018,7 +5018,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
 EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'Ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
-DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Cerf-volant Printanier est actuellement augmenté !
+DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Visiteur de la Nuit est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
@@ -5231,13 +5231,13 @@ NEW_ARENA_ALL_SERVER_TEXT_18,Nombre de fois\nChampion
 DRIFT_BOTTLE_AWARD_WINDOW,Récompenses
 DRIFT_BOTTLE_TEXT_01,Récompenses
 DRIFT_BOTTLE_TEXT_02,Ouvrir
-DRIFT_BOTTLE_TEXT_03,Boîte Classique
-DRIFT_BOTTLE_TEXT_04,Boîte Gourmande
-DRIFT_BOTTLE_TEXT_05,Boîte du Chocolatier
-DRIFT_BOTTLE_HELP,"1. Durant cet événement, vous pourrez obtenir des récompenses en ouvrant 3 types de Boîtes.|2. Vous devez posséder une Boîte avant de pouvoir l'ouvrir.|3. Après avoir ouvert un certain nombre de Boîte, vous recevrez des récompenses de palier par courrier.|4. En ouvrant une Boîte Gourmande ou une Boîte du Chocolatier, vous ne pourrez pas obtenir les Skins que vous possédez déjà. (À moins que vous possédiez déjà tous ces Skins)|5. Moyen d'obtention de Boîte Classique : Récompenses Quotidiennes, Achat avec des Gemmes (30 fois au maximum), Tâches des Filles, Collecter des Branches de Corail, Pack de la Saint-Valentin, Pack de Grande Valeur, Pack Surprise de Skin et Pack Surprise.|Moyen d'obtention de Boîte Gourmande : Boîte Classique, Pack de la Saint-Valentin, Pack de Grande Valeur, Pack Surprise de Skin, Pack du Chocolatier et Offres de Lavli.|Moyen d'obtention de Boîte du Chocolatier : Boîte Gourmande, Pack de Grande Valeur, Pack Surprise et Pack du Chocolatier.|6. Après la fin de l'événement, les Boîtes Classiques, les Boîtes Gourmandes et les Boîtes du Chocolatier non-utilisées seront converties en Pièce d'Or, 1 Boîte Classique = 200K Pièce d'Or, 1 Boîte Gourmande = 1500K Pièce d'Or, 1 Boîte du Chocolatier = 10M Pièce d'Or."
+DRIFT_BOTTLE_TEXT_03,Bouteille Usée
+DRIFT_BOTTLE_TEXT_04,Bouteille Ordinaire
+DRIFT_BOTTLE_TEXT_05,Bouteille Précieuse
+DRIFT_BOTTLE_HELP,"1. Durant cet événement, vous pourrez obtenir des récompenses en ouvrant 3 types de Bouteilles.|2. Vous devez posséder une Bouteille à la mer avant de pouvoir l'ouvrir.|3. Après avoir ouvert un certain nombre de Bouteille à la mer, vous recevrez des récompenses de palier par courrier.|4. En ouvrant une Bouteille Normale ou une Bouteille Précieuse, vous ne pourrez pas obtenir les Skins que vous possédez déjà. (À moins que vous possédiez déjà tous ces Skins)|5. Moyen d'obtention de Bouteille Usée : Récompenses Quotidiennes, Achat avec des Gemmes (30 fois au maximum), Tâches des Filles, Collecter des Branches de Corail, Pack de Grande Valeur, Pack Surprise de Skin et Pack Surprise.|Moyen d'obtention de Bouteille Normale : Bouteille Usée, Pack de Grande Valeur, Pack Surprise de Skin et Pack de Bouteille à la mer.|Moyen d'obtention de Bouteille Précieuse : Bouteille Normale, Pack de Grande Valeur, Pack de Bouteille à la mer et Pack Surprise.|6. Après la fin de l'événement, les Bouteilles Usées, les Bouteilles Normales et les Bouteilles Précieuses non-utilisées seront converties en Pièce d'or, 1 Bouteille Usée = 200K Pièce d'Or, 1 Bouteille Normale = 1500K Pièce d'Or, 1 Bouteille Précieuse = 10M Pièce d'Or."
 DRIFT_BOTTLE_TEXT_06,Ouvrir {2}*{1}
 DRIFT_BOTTLE_TEXT_07,Ouvrir X{1}
-DRIFT_BOTTLE_TEXT_08,"Touchez la Boîte pour voir les récompenses, Senpai~"
+DRIFT_BOTTLE_TEXT_08,Touchez les Bouteilles pour voir les récompenses.
 NEW_ARENA_ALL_SERVER_TEXT_19,TOP {1}
 DRIFT_BOTTLE_TEXT_09,Ouvrez les Bouteilles et obtenez des récompenses !
 WARM_UP_GIFT_TEXT_01,Obtenable dans le Test d'Admission
@@ -5933,7 +5933,7 @@ ACTIVITY_LAFULI_CASTLE_TEXT05,Récompense de Fille
 ACTIVITY_LAFULI_CASTLE_TEXT06,Tâches
 ACTIVITY_LAFULI_CASTLE_TEXT07,Pour chaque
 ACTIVITY_LAFULI_CASTLE_TEXT08,"obtenu, vous obtiendrez 1 Sable Céleste|({1} Sables Célestes au maximum)"
-ACTIVITY_LAFULI_CASTLE_TEXT09,Limite :
+ACTIVITY_LAFULI_CASTLE_TEXT09,Obtenable au maximum
 ACTIVITY_LAFULI_CASTLE_TEXT10,Les récompenses seront envoyées directement à votre Sac
 ACTIVITY_LAFULI_CASTLE_TEXT11,Limite
 TIME_CLOISTER_TEXT97,Détails de Carte de Cristal
@@ -6158,7 +6158,7 @@ ACTIVITY_CLOCK_TEXT03,Tourner en masse
 ACTIVITY_CLOCK_TEXT04,Choisissez une quantité de Pièce Mystère à utiliser pour faire tourner la Roue
 ACTIVITY_CLOCKGIFTBAG_TEXT01,Récompenses
 ACTIVITY_CLOCKGIFTBAG_TEXT02,Sélectionnez une récompense
-GAME_ASSISTANT_TEXT99,Tirer 2 fois dans Distributeur Normal
+GAME_ASSISTANT_TEXT99,Tirer 2 fois dans le Distributeur Normal
 ACTIVITY_FREEBUY_TEXT13,"Vous avez collecté les récompenses d'aujourd'hui, veuillez revenir demain."
 GAME_ASSISTANT_TEXT100,Boutique
 ACTIVITY_CLOCK_SHOW_TEXT06,Après le Tour 5
@@ -6252,7 +6252,7 @@ ACTIVITY_RELAY_GIFT_TEXT02,"Durant l'événement, afin de débloquer la possibil
 ARENA_NEW_HLEP,"Règles de la Bataille|1. Les récompenses seront envoyées par courrier tous les jours à 21 heures (GMT 0).|2. Chaque Bataille dans l'Arène consommera un Ticket, les Tickets peuvent être achetés avec des Gemmes.|3. La Bataille peut avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour, jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|4. Après la fin de la Bataille, les points des joueurs changeront, le gagnant obtiendra des points et le perdant perdra des points, tous les joueurs sont classés avec ces points.|5. Les points que vous obtiendrez sont basés sur la différence entre vos points actuels et les points de votre ennemi (Attention : Vous obtiendriez 0 point si vos points actuels sont beaucoup plus élevés que ceux de votre ennemi)|6. Vous pouvez consulter les 10 dernières Batailles dans l'historique des Batailles.|7. L'Arène Interserveur est composé d'un certain nombre de Serveurs dépendant du nombre de joueurs participants.|8. La première heure de chaque saison est la période de Trêve.||Récompenses|Les récompenses seront envoyées par rapport à votre classement.|Pour plus de détails regardez【Récompense Quotidienne】."
 ARENA_SETTLEMENT_TIPS,Résultat en cours de calcul...
 ARENA_OPEN_TIPS_TEXT,Fin de Trêve dans :
-ARENA_END_TIPS_TEXT,Fin de Saison dans :
+ARENA_END_TIPS_TEXT,Fin de Saison dans ：
 ACTIVITY_EASTER2022_TITLE,L'Atelier\nde Pâques
 ARENA_NO_FIGHT,Impossible à combattre pour le moment !
 NEW_TRIAL_BATTLEPASS_TEXT21,Acheter le Pass du Sanctuaire
@@ -6309,3 +6309,55 @@ ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,"Il vous reste encore un Site
 ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Choisir
 ENTRANCE_TEST_SKILL_UNSURE,Ses compétences sont sujettes à des modifications.
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,Quitter
+PARTNER_WARMUP_HELP,"1. Durant cet événement, un épisode de l'histoire sera débloqué chaque jour. Après l'avoir visionné, vous obtiendrez des récompenses."
+PARTNER_WARMUP_TEXT01,Récompenses
+PARTNER_WARMUP_TEXT02,Voir Épisode {1}
+PARTNER_WARMUP_TEXT03,Veuillez visionner l'histoire précédente.
+PARTNER_WARMUP_TEXT04,Voulez-vous revisionner l'histoire ?
+ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Durant cet événement, vous pouvez obtenir des Fragments Astraux et des Jetons de Capsule Cosmique en complétant des tâches !"
+ACTIVITY_STAR_ALTAR_MISSION_TITLE01,Tâche
+ACTIVITY_STAR_ALTAR_MISSION_TITLE02,Échange
+PUB_MISSION_NOT_USE,Vous n'avez pas encore choisi le Parchemin de Jobs !
+GUILD_TEXT71,ID invalide
+GUILD_TEXT72,Nom invalide
+GUILD_TEXT73,Entrez l'ID de la Guilde ou le Nom de la Guilde
+GUILD_TEXT74,La Guilde que vous choisissez se trouve sur un Serveur qui n'a pas fusionné avec votre Serveur.
+GAME_ASSISTANT_TEXT104,Distributeur Normal
+GAME_ASSISTANT_TEXT105,Tirer 2 fois dans le Distributeur Normal
+GAME_ASSISTANT_TEXT106,Tirer 10 fois dans le Distributeur Normal
+GAME_ASSISTANT_TEXT107,"Il y a eu des modifications dans la composition de votre équipe d’Arène, voulez-vous faire des ajustements ?"
+GAME_ASSISTANT_TEXT108,"Il y a eu des modifications dans la composition de votre équipe de Gymnase, voulez-vous faire des ajustements ?"
+GUILD_TEXT75,Guilde invalide
+STAR_ALTAR_TITLE,Descendante\ndu Ciel
+GROUP_7,Cosmos
+BATTLE_TIPS_DESC3,Cette Maison n'est sur l'influence d'aucune rivalité de Maison.
+SKILL_RESONATE_HELP,1.技能共鳴為天異學院戰姬專屬的功能。|2.消耗「璀璨共鳴石」和「幽邃共鳴石」可提升戰姬技能等級，戰姬4個技能的等級之和為共鳴等級。|3.當1個技能升至一定等級後，需要將其他3個技能均升至要求等級後才能繼續升級。|4.根據戰姬的共鳴等級，可獲得大量屬性加成。|5.若戰姬已升級技能共鳴，可消耗一定數量的鑽石，將共鳴等級重置，已消耗的升級材料全額返還。
+SKILL_RESONATE_TEXT01,技能共鳴
+SKILL_RESONATE_TEXT02,共鳴等級
+SKILL_RESONATE_TEXT03,Amélioration d'Attribut：
+SKILL_RESONATE_TEXT04,Améliorer
+SKILL_RESONATE_TEXT05,其他技能均達到{1}級後可繼續升級
+SKILL_RESONATE_TEXT06,Niv. MAX !
+SKILL_RESONATE_TEXT07,沒有可以重置的技能共鳴等級
+SKILL_RESONATE_TEXT08,重置當前戰姬的技能共鳴等級將花費一定數額鑽石，並返還已消耗的「璀璨共鳴石」和「幽邃共鳴石」。
+STAR_ORIGIN_HELP,1.戰姬升星至15星後解鎖星源功能，從各個星源節點中汲取能量，獲得屬性加成。|2.消耗「璀璨共鳴石」和「幽邃共鳴石」可提升戰姬的星源節點等級。|3.星源節點提供的攻擊、生命屬性不受百分比加成。|4.若戰姬已升級任意星源節點，可消耗一定數量的鑽石，將星源等級重置，已消耗的升級材料全額返還。
+STAR_ORIGIN_TEXT01,星源
+STAR_ORIGIN_TEXT02,星源汲取
+STAR_ORIGIN_TEXT03,星源節點升級
+STAR_ORIGIN_TEXT04,需要上個星源節點達到{1}級
+STAR_ORIGIN_TEXT05,Améliorer
+STAR_ORIGIN_TEXT06,沒有可以重置的星源節點
+STAR_ORIGIN_TEXT07,重置當前戰姬的星源等級將花費一定數額鑽石，並返還已消耗的「璀璨共鳴石」和「幽邃共鳴石」。
+STARRY_ALTAR_HELP_1,"1. Consommez un Jeton de Capsule Cosmique ou Jeton de Capsule Cosmique Temporaire pour tirer une récompense une fois dans l’Autel Stellaire.|2. À chaque tirage, vous recevrez aléatoirement une Récompense Basique et vous aurez une chance de recevoir une Récompense Supplémentaire ou une Récompense Optionnelle.|3. La Récompense Supplémentaire est un Fragment du Cosmos 10 étoiles, et la Récompense Optionnelle est une Fille Cosmos 10 étoile (La liste sera mise à jour dès la sortie des nouvelles Filles de la Maison Cosmos)."
+STARRY_ALTAR_HELP_2,1. Les résultats de vos 50 derniers tirages de l'Autel Stellaire s'affichent dans l'Historique de Tirage.|2. L'Historique de Tirage peut être supprimé après une certaine période sans connexion au jeu.
+STARRY_ALTAR_TEXT01,Tirer 1 fois
+STARRY_ALTAR_TEXT02,Tirer 10 fois
+STARRY_ALTAR_TEXT03,L'Événement Limité {1} a commencé. Tirez encore {1} fois pour obtenir des récompenses supplémentaires.
+STARRY_ALTAR_TEXT04,Historique de Tirage
+STARRY_ALTAR_TEXT05,Aucun historique
+STARRY_ALTAR_TEXT06,Taux
+STARRY_ALTAR_TEXT07,Récompense Optionnelle
+STARRY_ALTAR_TEXT08,"Chaque fois que vous tirez une récompense dans l'Autel Stellaire, vous avez une chance d'obtenir une Récompense Optionnelle en plus de la Récompense Basique."
+STARRY_ALTAR_TEXT09,Récompense Supplémentaire
+STARRY_ALTAR_TEXT10,"Chaque fois que vous tirez une récompense dans l'Autel Stellaire, vous avez une chance d'obtenir une Récompense Supplémentaire en plus de la Récompense Basique."
+STARRY_ALTAR_TEXT11,Récompense Basique

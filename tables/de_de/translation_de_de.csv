@@ -2277,9 +2277,7 @@ HOUSE_TEXT_38,"
 
 6. Du kannst auch zu den Wohnheimzimmern anderer Spieler gehen und sie ""liken"", allerdings jedes nur ein Mal pro Tag. 
 
-7. Jedes Möbelstück trägt zur Berechnung des Komforts bei, egal ob es im Zimmer platziert ist oder nicht. 
-
-8. Output bei 24 Stunden Laufzeit:<t>150#Komfort|150#Münzen|150#Dias|190#Kristallmeißel$150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
+7. Output bei 24 Stunden Laufzeit:<t>150#Komfort|150#Münzen|150#Dias|190#Kristallmeißel$150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
 "
 HOUSE_LOCK_FAIL,Das Mädchen ist im Wohnheim und kann nicht entsperrt werden
 WARRIOR_SUIT,Krieger Set
@@ -3718,7 +3716,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Bitte bestätige die Zahl
 ACTIVITY_LAFULI_DRIFT_CARD,Wähle eine Karte aus um sie aufzudecken
 ACTIVITY_LAFULI_DRIFT_AWARD,Belohnungen sammeln
 ACTIVITY_LAFULI_DRIFT_ROUND,Erledigte Runde: {1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Tippe auf das ""Steuer"", um zu drehen. Luvly wird entsprechend der Zahl nach vorne gehen. Durch die Verwendung der ""Fernsteuerung"" kannst du selbst eine Zahl wählen.|2. Wenn Luvly am Korallenbaum vorbeigeht oder unter dem Korallenbaum stehen bleibt, bekommt sie Korallenzweige. Jedes Mal wenn sich Luvly beim Korallenbaum aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden. (Das weitere Vorbeigehen ermöglicht keine Erhöhung des Levels.)|3. Wenn Luvly auf ein Ressourcengebiet kommt, bekommt sie die entsprechenden Items. Jedes Mal wenn Luvly sich auf einem Ressourcengebiet aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden.|4. Wenn Luvly auf ein Perlengebiet kommt, bekommst du blaue Perlen, die im Shop gegen verschiedene Belohnungen eingetauscht werden können. Nach dem Ende des Events werden die noch nicht verwendeten blauen Perlen automatisch gegen Münzen umgetauscht. Jede Perle entspricht 100K Münzen.|5. Wenn Luvly sich im Muschelhaus aufhält, werden 3 mystische Karten ausgegeben. Wähle eine aus und decke sie auf~|6. Wenn Luvly sich im Seestrudel aufhält, wird die nächste durch Drehen des Steuers erhaltene Zahl halbiert.|7. Sammle eine gewisse Summe von Korallenzweigen, um Belohnungen zu erhalten. Tippe auf die Geschenkbox oben rechts auf der Seite für mehr Detail.|8. Nachdem eine Runde der Sammlung von Korallenzweigen abgeschlossen wurde, wird der Fortschritt zurückgesetzt. Alles kann ein weiteres Mal erhalten werden.|9. Tippe auf ""Auto-Drehen"" unten rechts, um deine Steuer automatisch zu benutzen. (Die Fernsteuer werden nicht verwendet.) Beim Aufenthalt im Muschelhaus wird eine zufällige Karte automatisch aufgedeckt. Tippe auf ""Beenden"" oder verlasse die Event-Seite, um das Auto-Drehen zu beenden.|10. Nach dem Ende des Events werden die noch nicht verwendeten Steuer (einschließlich der Fernsteuerung) gegen Korallenzweige umgetauscht. Jedes Steuer entspricht 2 Korallenzweigen. Die entsprechenden Belohnungen können ebenfalls erhalten werden.|11. Erhalten der Steuer:| - Mit Dias kaufen (maximal 30 Mal)| - Mädchen-Spezialmissionen| - Reiseversorgung| - Superpakete| - Glückspakete| - Kostümpaket| - Pakete zum Valentinstag| - Tägliche Mail"
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Tippe auf das ""Steuer"", um zu drehen. Luvly wird entsprechend der Zahl nach vorne gehen. Durch die Verwendung der ""Fernsteuerung"" kannst du selbst eine Zahl wählen.|2. Wenn Luvly am Korallenbaum vorbeigeht oder unter dem Korallenbaum stehen bleibt, bekommt sie Korallenzweige. Jedes Mal wenn sich Luvly beim Korallenbaum aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden. (Das weitere Vorbeigehen ermöglicht keine Erhöhung des Levels.)|3. Wenn Luvly auf ein Ressourcengebiet kommt, bekommt sie die entsprechenden Items. Jedes Mal wenn Luvly sich auf einem Ressourcengebiet aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden.|4. Wenn Luvly auf ein Perlengebiet kommt, bekommst du blaue Perlen, die im Shop gegen verschiedene Belohnungen eingetauscht werden können. Nach dem Ende des Events werden die noch nicht verwendeten blauen Perlen automatisch gegen Münzen umgetauscht. Jede Perle entspricht 100K Münzen.|5. Wenn Luvly sich im Muschelhaus aufhält, werden 3 mystische Karten ausgegeben. Wähle eine aus und decke sie auf~|6. Wenn Luvly sich im Seestrudel aufhält, wird die nächste durch Drehen des Steuers erhaltene Zahl halbiert.|7. Sammle eine gewisse Summe von Korallenzweigen, um Belohnungen zu erhalten. Tippe auf die Geschenkbox oben rechts auf der Seite für mehr Detail.|8. Nachdem eine Runde der Sammlung von Korallenzweigen abgeschlossen wurde, wird der Fortschritt zurückgesetzt. Alles kann ein weiteres Mal erhalten werden.|9. Tippe auf ""Auto-Drehen"" unten rechts, um deine Steuer automatisch zu benutzen. (Die Fernsteuer werden nicht verwendet.) Beim Aufenthalt im Muschelhaus wird eine zufällige Karte automatisch aufgedeckt. Tippe auf ""Beenden"" oder verlasse die Event-Seite, um das Auto-Drehen zu beenden.|10. Nach dem Ende des Events werden die noch nicht verwendeten Steuer (einschließlich der Fernsteuerung) gegen Korallenzweige umgetauscht. Jedes Steuer entspricht 2 Korallenzweigen. Die entsprechenden Belohnungen können ebenfalls erhalten werden.|11. Erhalten der Steuer:| - Mit Dias kaufen (maximal 30 Mal)| - Mädchen-Spezialmissionen| - Reiseversorgung| - Superpakete| - Glückspakete| - Kostümpaket| - Limitierter Outfit-Shop| - Outfit Shopping-Festival| - Tägliche Mail"
 ONE_KEY_COMPOSE,Ein-Klick Synth.
 ONE_KEY_COMPOSE_TEXT,Deine Ressourcen reichen aus. Willst du die entsprechenden Ressourcen verbrauchen um die folgenden Ausrüstungen schnell zu synthetisieren?
 ONE_KEY_COMPOSE_TEXT2,Keine synthetisierbare Ausrüstungen von diesem Typ
@@ -4143,7 +4141,7 @@ SMASH_EGG_HELP,"1. Während des Events kannst du Eier von 3 Typen zerbrechen, um
 LIMITED_TASK_TEXT_01,"Schließe die folgenden Aufgaben ab, um die entsprechenden Belohnungen per Mail zu erhalten!\nP.S.: Durch Austauschen erhaltene Mädchen zählen nicht."
 LIMITED_TASK_HELP,"1. Schließe die Aufgaben ab, um die entsprechenden Belohnungen zu erhalten. Die Belohnungen jeder Stufe können nur einmal erhalten werden und werden per Mail gesendet.|2. Bei einigen Aufgaben gibt es 2 Bedingungen. Du musst beide Bedingungen erfüllen, um die Belohnungen zu erhalten.|3. Bei den Aufgaben zählen die durch Austausch oder Umkehren erhaltenen Mädchen nicht."
 SMASH_EGG_TEXT_06,Zerbreche {1}x {2}(er)
-LARGE_ACTIVITY_EGG_TEXT,Süße Herzen
+LARGE_ACTIVITY_EGG_TEXT,Flaschenpost
 BP_LOTTERY_CONFIRM,"Willst du {1} Mädchensticker verwenden, um Belohnungen zu ziehen?"
 SMASH_EGG_TEXT_07,{1}x zerbr.
 SMASH_EGG_TEXT_08,Tippe auf die Eier für mehr Details
@@ -4795,7 +4793,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume - Kostümabstimmung
 DRESS_SUMMON_LABEL_2,"Tippe, um die erhältlichen Outfit-Teile zu überprüfen"
 DRESS_SUMMON_LABEL_4,Garantiertes orangenes Outfit-Teil in [c][e96516]{1}[-][/c] Zügen (Zug)
 DRESS_SUMMON_LABEL_1,Gratischance(n): {1}
-DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Papierdrachen"""
+DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Nachtalb"""
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Kostüm-\nabstimmung
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,Danke für deine Stimme! Wir wünschen dir noch viel Spaß an der Yume Akademie!
 ONE_KEY_UPLEVEL_TITLE,Schnell aufleveln
@@ -4957,7 +4955,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Zum Shop
 QUICK_STARS_TEXT05,Beim Absolvieren...
 EQUIP_LEVELUP_TEXT_19,"Bitte wähle das Professions-Set, bei dem du die Profession ändern möchtest"
 EQUIP_LEVELUP_TEXT_20,Wähle dein gewünschtes Set
-DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Papierdrachen""."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Nachtalb""."
 HOUSE_TEXT_60,Willst du das Mädchen auf diesen Stock umziehen lassen?
 HOUSE_TEXT_61,Auf diesem Stock gibt es keine freien Plätze mehr
 HOUSE_TEXT_62,Selber auch auf diesem Stockwerk einziehen
@@ -5168,13 +5166,13 @@ NEW_ARENA_ALL_SERVER_TEXT_18,Als Champion gewonnen
 DRIFT_BOTTLE_AWARD_WINDOW,Belohnungsvorschau
 DRIFT_BOTTLE_TEXT_01,Belohnung
 DRIFT_BOTTLE_TEXT_02,Öffnen
-DRIFT_BOTTLE_TEXT_03,Handgemachtes Schokoherz
-DRIFT_BOTTLE_TEXT_04,Feines Schokoherz
-DRIFT_BOTTLE_TEXT_05,Exquisites Schokoherz
-DRIFT_BOTTLE_HELP,"1. Öffne die 3 Schokoherzen, um reichhaltige Belohnungen zu erhalten!|2. Jedes Mal, wenn du 1 Schokoherz öffnest, erhältst du zufällige Belohnungen.|3. Entsprechend der Anzahl der geöffneten Schokoherzen werden Öffnungsbelohnungen per Mail gesendet. Jede Öffnungsbelohnung kann nur einmal erhalten werden.|4. Beim Öffnen der feinen und exquisiten Schokoherzen erhältst du keine Kostüme, die du schon besitzt. (Außer du hast schon alle in dem Pool erhältlichen Kostüme erhalten.)|5. Erhalten der Schokoherzen:|Handgemachtes Schokoherz: Tägliche Mail, mit Dias kaufen (maximal 30 Mal kaufbar), Mädchen-Spezialmissionen, Sammlung der Korallenzweige, Pakete zum Valentinstag, Superpakete, Kostümpakete, Glückspakete.|Feines Schokoherz: Öffnung der handgemachten Schokoherzen, Superpakete, Kostümpakete, Pakete zum Valentinstag, Extra süß, Reiseversorgung.|Exquisites Schokoherz: Öffnung der feinen Schokoherzen, Superpakete, Extra süß, Glückspakete.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Handgemachten Schokoherzen"", ""Feinen Schokoherzen"" und ""Exquisiten Schokoherzen"" automatisch recycelt. Jedes handgemachte Schokoherz entspricht 200k Münzen, jedes feine Schokoherz 1500k und jedes exquisite Schokoherz 10M. Die Münzen werden per Mail gesendet."
+DRIFT_BOTTLE_TEXT_03,Alte Flaschenpost
+DRIFT_BOTTLE_TEXT_04,Normale Flaschenpost
+DRIFT_BOTTLE_TEXT_05,Mystische Flaschenpost
+DRIFT_BOTTLE_HELP,"1. Öffne die 3 Flaschenposten, um reichhaltige Belohnungen zu erhalten!|2. Verwende 1 Flaschenpost, um die entsprechende Flaschenpost zu öffnen und zufällige Belohnungen zu erhalten.|3. Entsprechend der Anzahl der geöffneten Flaschenposten werden Öffnungsbelohnungen per Mail gesendet. Jede Öffnungsbelohnung kann nur einmal erhalten werden.|4. Beim Öffnen der normalen und mystischen Flaschenposten erhältst du keine Kostüme, die du schon besitzt. (Außer du hast schon alle in dem Pool erhältlichen Kostüme erhalten.)|5. Erhalten der Flaschenposten:|Alte Flaschenpost: Tägliche Mail, mit Dias kaufen (maximal 30 Mal kaufbar), Mädchen-Spezialmissionen, Sammlung der Korallenzweige, Superpakete, Kostümpakete, Glückspakete.|Normale Flaschenpost: Öffnung der alten Flaschenposten, Superpakete, Kostümpakete, Pakete zur Flaschenpost, Reiseversorgung.|Mystische Flaschepost: Öffnung der normalen Flaschenposten, Superpakete, Pakete zur Flaschenpost, Glückspakete.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Alten Flaschenposten"", ""Normalen Flaschenposten"" und ""Mystischen Flascheposten"" automatisch recycelt. Jede alte Flaschenpost entspricht 200k Münzen, jede normale Flaschenpost 1500k und jede mystische Flaschepost 10M. Die Münzen werden per Mail gesendet."
 DRIFT_BOTTLE_TEXT_06,"Öffne {1}x ""{2}"""
 DRIFT_BOTTLE_TEXT_07,{1} X
-DRIFT_BOTTLE_TEXT_08,"Tippe auf das Schokoherz, um die verfügbaren Belohnungen zu prüfen"
+DRIFT_BOTTLE_TEXT_08,"Tippe auf die Flaschenposten, um die Belohnungen zu prüfen."
 NEW_ARENA_ALL_SERVER_TEXT_19,Top {1}
 DRIFT_BOTTLE_TEXT_09,Nimm am Event teil und hol dir das neue Kostüm~
 WARM_UP_GIFT_TEXT_01,Neulings-Herausford.
@@ -5871,7 +5869,7 @@ ACTIVITY_LAFULI_CASTLE_TEXT05,Mädchenbelohnung
 ACTIVITY_LAFULI_CASTLE_TEXT06,Aufgaben
 ACTIVITY_LAFULI_CASTLE_TEXT07,Pro
 ACTIVITY_LAFULI_CASTLE_TEXT08,"erhältst du 1 extra ""Himmelssand"", max. {1}x."
-ACTIVITY_LAFULI_CASTLE_TEXT09,Limit
+ACTIVITY_LAFULI_CASTLE_TEXT09,Max. erhältlich:
 ACTIVITY_LAFULI_CASTLE_TEXT10,Die Belohnungen werden direkt in deinen Rucksack gesendet.
 ACTIVITY_LAFULI_CASTLE_TEXT11,Limit
 TIME_CLOISTER_TEXT97,Details zu Kristallkarten
@@ -6247,3 +6245,55 @@ ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,Verfügbares Versorgungsdepot
 ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Auswählen
 ENTRANCE_TEST_SKILL_UNSURE,*Ihre Fertigkeiten können noch angepasst werden.
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,Zurück
+PARTNER_WARMUP_HELP,"1. Während des Events wird jeden Tag ein Kapitel der Geschichte entsperrt. Lies die entsperrten Kapitel durch, um die entsprechenden Belohnungen zu erhalten."
+PARTNER_WARMUP_TEXT01,Vorschau
+PARTNER_WARMUP_TEXT02,Lies das {1}. Kapitel durch
+PARTNER_WARMUP_TEXT03,Lies zunächst das vorherige Kapitel durch
+PARTNER_WARMUP_TEXT04,Willst du das Kapitel nochmal lesen?
+ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Schließe während des Events die Aufgaben ab, um Sternfragmente, limitierte Sternmünzen und andere Belohnungen zu erhalten!"
+ACTIVITY_STAR_ALTAR_MISSION_TITLE01,Aufgaben
+ACTIVITY_STAR_ALTAR_MISSION_TITLE02,Tauschen
+PUB_MISSION_NOT_USE,Noch keine Job-Pergamente gewählt!
+GUILD_TEXT71,Gilden-ID nicht gefunden
+GUILD_TEXT72,Gildennamen nicht gefunden
+GUILD_TEXT73,Gib den Gildennamen oder die\nGilden-ID ein
+GUILD_TEXT74,"Die Gilde befindet sich auf einem Server, der mit deinem Server nicht zusammengelegt wird. Bewerben fehlgeschlagen."
+GAME_ASSISTANT_TEXT104,Tägliches Ziehen
+GAME_ASSISTANT_TEXT105,Ziehe 2 Mal
+GAME_ASSISTANT_TEXT106,Ziehe 10 Mal
+GAME_ASSISTANT_TEXT107,Mädchen als Kämpfer in der Arena angepasst. Willst du deine Aufstellung anpassen?
+GAME_ASSISTANT_TEXT108,Mädchen als Kämpfer im Gym angepasst. Willst du deine Aufstellung anpassen?
+GUILD_TEXT75,Passende Gilden nicht gefunden
+STAR_ALTAR_TITLE,Der erste\nSternfall
+GROUP_7,Meteore
+BATTLE_TIPS_DESC3,Es besteht kein Rivalitätsverhältnis zwischen Meteoren und den anderen Fraktionen.
+SKILL_RESONATE_HELP,"1. Die Funktion ""Skill-Resonanz"" ist nur für die Mädchen der Meteore-Fraktion verfügbar.|2. Verwende die Items ""Kugel des Glanzes"" und ""Kugel der Finsternis"", um die Fertigkeiten der Meteore-Mädchen zu leveln. Das Gesamtlevel der 4 Fertigkeiten eines Meteore-Mädchens ist genau das Resonanzlevel dieses Mädchens.|3. Wird eine Fertigkeit auf einem bestimmten Level gelevelt , müssen die anderen 3 Fertigkeiten jeweils auf einem geforderten Level gelevelt werden, damit diese Fertigkeit weiter gelevelt werden kann.|4. Dem Resonanzlevel des Mädchens entsprechend werden dem Mädchen allerlei Attributsboni verliehen.|5. Die gelevelte Resonanz kann zurückgesetzt werden, indem du eine bestimmte Menge an Dias ausgibst. Nach dem Zurücksetzen werden alle dafür verwendeten Ressourcen zurückgesendet."
+SKILL_RESONATE_TEXT01,Skill-Resonanz
+SKILL_RESONATE_TEXT02,Resonanzlevel
+SKILL_RESONATE_TEXT03,Attributsboni:
+SKILL_RESONATE_TEXT04,Leveln
+SKILL_RESONATE_TEXT05,Level zunächst die anderen Fertigkeiten auf Lv.{1}
+SKILL_RESONATE_TEXT06,Max. Level erreicht
+SKILL_RESONATE_TEXT07,Keine zurücksetzbare Resonanz
+SKILL_RESONATE_TEXT08,"Zum Zurücksetzen des Resonanzlevels dieses Mädchen wird eine bestimmte Menge an Dias benötigt und alle zum Leveln verwendeten ""Kugeln des Glanzes"" und ""Kugeln der Finsternis"" werden zurückgesendet."
+STAR_ORIGIN_HELP,"1. Sobald das Mädchen auf 15-Sterne gelevelt wird, wird die Funktion ""Sternkerne"" entsperrt. Die Sternkerne verfügen über unerschöpfliche Energie und können deinen Meteore-Mädchen starke Attributsboni verleihen.|2. Verwende die ""Kugeln des Glanzes"" und die ""Kugeln der Finsternis"", um die Sternkerne des Mädchens zu leveln.|3. Die durch Sternkerne erhaltenen Angriffs- und HP-Boni werden nicht beim Auswirken der Buffs, die den Angriff oder die HP um eine bestimmte Prozentzahl erhöhen, mitgezählt.|4. Der gelevelte Sternkern kann zurückgesetzt werden, indem du eine bestimmte Menge an Dias ausgibst. Nach dem Zurücksetzen werden alle dafür verwendeten Ressourcen zurückgesendet."
+STAR_ORIGIN_TEXT01,Sternkerne
+STAR_ORIGIN_TEXT02,Schöpfen
+STAR_ORIGIN_TEXT03,Sternkerne leveln
+STAR_ORIGIN_TEXT04,Level zunächst den letzten Sternkern auf Lv.{1}
+STAR_ORIGIN_TEXT05,Leveln
+STAR_ORIGIN_TEXT06,Kein zurücksetzbarer Sternkern
+STAR_ORIGIN_TEXT07,"Zum Zurücksetzen der Sternkerne dieses Mädchen wird eine bestimmte Menge an Dias benötigt und alle zum Leveln verwendeten ""Kugeln des Glanzes"" und ""Kugeln der Finsternis"" werden zurückgesendet."
+STARRY_ALTAR_HELP_1,"1. Verwende 1 ""Sternmünze"" oder 1 ""Limitierte Sternmünze"", um am Altar unter Sternen einmal zu ziehen.|2. Jedes Mal, wenn du gezogen hast, erhältst du sicher eine zufällige Grundbelohnung und es besteht immer eine bestimmte Wahrscheinlichkeit, dass du eine Zusatzbelohnung oder eine auswählbare Ult. Belohnung erhältst.|3. Die Zusatzbelohnung ist ""10-Sterne Fragment zur Auswahl des Meteore-Mädchens"". Als Ult. Belohnungen stehen die 10-Sterne Mädchen der Meteore-Fraktion zur Wahl. (Die neuesten Meteore-Mädchen werden planmäßig in die Liste hinzugefügt.)"
+STARRY_ALTAR_HELP_2,"1. Unter Verlauf werden die letzten 50 Belohnungen, die am Altar unter Sternen gezogen wurden, angezeigt.|2. Hast du dich für eine bestimmte Zeit nicht angemeldet, kann die Inhalte unter Verlauf entfernt werden."
+STARRY_ALTAR_TEXT01,1 Mal
+STARRY_ALTAR_TEXT02,10 Mal
+STARRY_ALTAR_TEXT03,"Das limitierte Event {1} läuft bereits. Ziehe noch {1} Mal, um Belohnungen zu erhalten."
+STARRY_ALTAR_TEXT04,Verlauff
+STARRY_ALTAR_TEXT05,Kein Verlauf
+STARRY_ALTAR_TEXT06,Wahrscheinlichkeit
+STARRY_ALTAR_TEXT07,Ult. Belohnungenen zur Auswahl
+STARRY_ALTAR_TEXT08,Bei jedem Ziehen am Altar gibt es neben der Grundbelohnung eine Wahrscheinlichkeit fürs Erhalten einer Ult. Belohnung!
+STARRY_ALTAR_TEXT09,Zusatzbelohnungen
+STARRY_ALTAR_TEXT10,Bei jedem Ziehen am Altar gibt es neben der Grundbelohnung eine Wahrscheinlichkeit fürs Erhalten einer Zusatzbelohnung!
+STARRY_ALTAR_TEXT11,Grundbelohnungen

@@ -112,7 +112,13 @@ function GuildJoinWindow:onGuildSearch(event)
 	local list = event.data.guilds
 
 	if not list or #list == 0 then
-		xyd.alertTips(__("GUILD_TEXT16"))
+		local tmpName = xyd.models.guild:getTmpName()
+
+		if tmpName and tonumber(tmpName) and #tostring(tmpName) == 6 then
+			xyd.alertTips(__("GUILD_TEXT71"))
+		else
+			xyd.alertTips(__("GUILD_TEXT72"))
+		end
 
 		return
 	end
@@ -189,8 +195,8 @@ function GuildSearch:setLayout(guildsList)
 end
 
 function GuildSearch:searchItems()
-	if not self.textInput.text or self.textInput.text == "" then
-		xyd.alertTips(__("GUILD_TEXT19"))
+	if not self.textInput.text or self.textInput.text == "" or self.textInput.text == __("GUILD_TEXT19") then
+		xyd.alertTips(__("GUILD_TEXT73"))
 
 		return
 	end

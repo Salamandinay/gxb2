@@ -44,7 +44,7 @@ function Dress:ctor()
 
 	self:initBuffTypeAttr()
 
-	self.tipsFifhgtMid = {
+	self.tipsFifhgtBuffMid = {
 		xyd.mid.QUIZ_FIGHT,
 		xyd.mid.NEW_TRIAL_FIGHT,
 		xyd.mid.FRIEND_BOSS_FIGHT
@@ -922,7 +922,7 @@ function Dress:dressSpecialBuffBack(event)
 
 	local mid = data.mid
 
-	if mid and xyd.arrayIndexOf(self.tipsFifhgtMid, mid) > -1 and data.buff_id then
+	if mid and xyd.arrayIndexOf(self.tipsFifhgtBuffMid, mid) > -1 and data.buff_id then
 		self.showNextFightTipsId = data.buff_id
 	elseif data.buff_id then
 		local time = xyd.tables.senpaiDressSkillBuffTable:getShowTime(data.buff_id)

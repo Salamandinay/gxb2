@@ -453,8 +453,6 @@ function ActivityDressSummonLimit:layout()
 	if #self.suitList <= 1 then
 		self.pointGroup_.gameObject:SetActive(false)
 	end
-
-	self:turnToIndex(1)
 end
 
 function ActivityDressSummonLimit:initNav()
@@ -463,9 +461,19 @@ function ActivityDressSummonLimit:initNav()
 		""
 	}
 	self.tab_ = CommonTabBar.new(self.pageGroup, 2, function (index)
+		self.curTabIndex = index
+
 		if index == 2 then
 			self.giftBagGroup_:SetActive(false)
 			self.allCon_:SetActive(true)
+
+			if not self.initTab2 then
+				self.chooseIndex_ = 0
+
+				self:turnToIndex(1)
+
+				self.initTab2 = true
+			end
 		else
 			self.giftBagGroup_:SetActive(true)
 			self.allCon_:SetActive(false)
@@ -498,6 +506,9 @@ function ActivityDressSummonLimit:onRegister()
 end
 
 function ActivityDressSummonLimit:turnToIndex(index)
+	print(self.chooseIndex_)
+	print(index)
+
 	if self.chooseIndex_ == index then
 		return
 	end
@@ -548,19 +559,31 @@ function ActivityDressSummonLimit:turnToIndex(index)
 	end
 
 	if self.useScroll_ then
-		if not self.effectList_[self.chooseIndex_] then
-			self.effectList_[self.chooseIndex_] = import("app.components.SenpaiModel").new(self.effectRootList_[self.chooseIndex_])
-		end
+		if not self.effectList_[self.chooseIndex_] and self.curTabIndex == 2 then
+			self:waitForFrame(1, function ()
+				self.effectList_[self.chooseIndex_] = import("app.components.SenpaiModel").new(self.effectRootList_[self.chooseIndex_])
 
-		self.effectList_[self.chooseIndex_]:setModelInfo({
-			isNewClipShader = true,
-			ids = self.effect_arr
-		})
-	else
-		if not self.personEffect_ then
+				self.effectList_[self.chooseIndex_]:setModelInfo({
+					isNewClipShader = true,
+					ids = self.effect_arr
+				})
+			end)
+		elseif self.effectList_[self.chooseIndex_] then
+			self.effectList_[self.chooseIndex_]:setModelInfo({
+				isNewClipShader = true,
+				ids = self.effect_arr
+			})
+		end
+	elseif not self.personEffect_ and self.curTabIndex == 2 then
+		self:waitForFrame(1, function ()
 			self.personEffect_ = import("app.components.SenpaiModel").new(self.personEffectRoot)
-		end
 
+			self.personEffect_:setModelInfo({
+				isNewClipShader = false,
+				ids = self.effect_arr
+			})
+		end)
+	elseif self.personEffect_ then
 		self.personEffect_:setModelInfo({
 			isNewClipShader = false,
 			ids = self.effect_arr

@@ -48,7 +48,10 @@ function GameAssistantWindow:ctor(name, params)
 	end
 
 	if xyd.models.guild.guildID > 0 and #xyd.models.guild:getDiningHallOrderList() == 0 then
-		xyd.models.guild:reqDiningHallOrderList()
+		local msg = messages_pb:guild_dininghall_order_list_req()
+		msg.no_award = 1
+
+		xyd.Backend.get():request(xyd.mid.GUILD_DININGHALL_ORDER_LIST, msg)
 	end
 
 	if params then
@@ -187,10 +190,12 @@ function GameAssistantWindow:register()
 					xyd.WindowManager.get():openWindow("gamble_tips_window", {
 						type = "game_assistant_crystal",
 						callback = function ()
-							xyd.openWindow("game_assistant_result_window", {
-								inWitchTab = self.curTabIndex
-							})
-							xyd.WindowManager.get():closeWindow(self.name_)
+							self:checkArenaFormation(function ()
+								xyd.openWindow("game_assistant_result_window", {
+									inWitchTab = self.curTabIndex
+								})
+								xyd.WindowManager.get():closeWindow(self.name_)
+							end)
 						end,
 						closeCallback = function ()
 						end,
@@ -204,10 +209,12 @@ function GameAssistantWindow:register()
 
 					return
 				else
-					xyd.openWindow("game_assistant_result_window", {
-						inWitchTab = self.curTabIndex
-					})
-					xyd.WindowManager.get():closeWindow(self.name_)
+					self:checkArenaFormation(function ()
+						xyd.openWindow("game_assistant_result_window", {
+							inWitchTab = self.curTabIndex
+						})
+						xyd.WindowManager.get():closeWindow(self.name_)
+					end)
 
 					return
 				end
@@ -276,11 +283,13 @@ function GameAssistantWindow:register()
 					xyd.WindowManager.get():openWindow("gamble_tips_window", {
 						type = "game_assistant_crystal",
 						callback = function ()
-							xyd.openWindow("game_assistant_result_window", {
-								curTab = self.curTabIndex,
-								inWitchTab = self.curTabIndex
-							})
-							xyd.WindowManager.get():closeWindow(self.name_)
+							self:checkArenaFormation(function ()
+								xyd.openWindow("game_assistant_result_window", {
+									curTab = self.curTabIndex,
+									inWitchTab = self.curTabIndex
+								})
+								xyd.WindowManager.get():closeWindow(self.name_)
+							end)
 						end,
 						closeCallback = function ()
 						end,
@@ -294,11 +303,13 @@ function GameAssistantWindow:register()
 
 					return
 				else
-					xyd.openWindow("game_assistant_result_window", {
-						curTab = self.curTabIndex,
-						inWitchTab = self.curTabIndex
-					})
-					xyd.WindowManager.get():closeWindow(self.name_)
+					self:checkArenaFormation(function ()
+						xyd.openWindow("game_assistant_result_window", {
+							curTab = self.curTabIndex,
+							inWitchTab = self.curTabIndex
+						})
+						xyd.WindowManager.get():closeWindow(self.name_)
+					end)
 
 					return
 				end
@@ -1605,6 +1616,95 @@ function GameAssistantWindow:onDungeonStart(event)
 	end
 
 	xyd.alertTips(__("GAME_ASSISTANT_TEXT94"))
+end
+
+function GameAssistantWindow:checkArenaFormation(callbalck)
+	if self.model.ifCanDo.arena and self.model:checkIfNeedResetFormation(self.presetData.arenaBattleFormationInfo.partners) then
+		xyd.WindowManager.get():closeWindow("gamble_tips_window", function ()
+			xyd.WindowManager.get():openWindow("gamble_tips_window", {
+				type = "game_assistant_arena",
+				callback = function ()
+					xyd.WindowManager.get():openWindow("battle_formation_window", {
+						alpha = 0.01,
+						battleType = xyd.BattleType.GAME_ASSISTANT_ARENA,
+						pet = xyd.models.arena:getPet(),
+						callback = function ()
+							local arenaBattleFormationInfo = self.presetData.arenaBattleFormationInfo
+							local root = self.arenaPart:NodeByName("battleGroup/content").gameObject
+
+							if not arenaBattleFormationInfo.partners or #arenaBattleFormationInfo.partners == 0 then
+								xyd.models.gameAssistant.presetData.arena = false
+
+								xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan1")
+								xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan2")
+							else
+								xyd.models.gameAssistant.presetData.arena = true
+
+								xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan2")
+								xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan1")
+							end
+						end
+					})
+				end,
+				closeCallback = function ()
+					self:checkGuildFormation(callbalck)
+				end,
+				text = __("GAME_ASSISTANT_TEXT107"),
+				btnYesText_ = __("YES"),
+				btnNoText_ = __("NO")
+			})
+		end)
+	else
+		self:checkGuildFormation(callbalck)
+	end
+end
+
+function GameAssistantWindow:checkGuildFormation(callbalck)
+	if self.model.ifCanDo.guild.gym and self.model:checkIfNeedResetFormation(self.presetData.guildBattleFormationInfo.partners) then
+		xyd.WindowManager.get():closeWindow("gamble_tips_window", function ()
+			xyd.WindowManager.get():openWindow("gamble_tips_window", {
+				type = "game_assistant_gym",
+				callback = function ()
+					xyd.WindowManager.get():openWindow("battle_formation_window", {
+						forceConfirm = 1,
+						alpha = 0.7,
+						no_close = true,
+						mapType = xyd.MapType.GUILD_BOSS,
+						battleType = xyd.BattleType.GAME_ASSISTANT_GUILD,
+						bossId = xyd.GUILD_FINAL_BOSS_ID,
+						callback = function ()
+							local root = self.guildGymPart:NodeByName("bossGroup/content").gameObject
+							local guildBattleFormationInfo = self.presetData.guildBattleFormationInfo
+
+							if not guildBattleFormationInfo.partners or #guildBattleFormationInfo.partners == 0 then
+								xyd.models.gameAssistant.presetData.guild.gym = false
+
+								xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan1")
+								xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan2")
+							else
+								xyd.models.gameAssistant.presetData.guild.gym = true
+
+								xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan2")
+								xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan1")
+							end
+						end
+					})
+				end,
+				closeCallback = function ()
+					callbalck()
+				end,
+				text = __("GAME_ASSISTANT_TEXT108"),
+				btnNoText_ = __("NO"),
+				btnYesText_ = __("YES")
+			})
+		end)
+
+		return true
+	else
+		callbalck()
+
+		return false
+	end
 end
 
 function GameAssistantWindow:willClose()

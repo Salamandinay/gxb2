@@ -48,13 +48,13 @@ function ExploreMarketWindow:updateOutAndStay()
 		for i = 1, 2 do
 			local lev = self.data.level + i - 1
 			self.groupLabelMiddle[i][1].text = __("TRAVEL_MAIN_TEXT13", lev)
-			self.groupLabelMiddle[i][3].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getOutput(lev)[2] * (1 + self.outFactor / 100)))
+			self.groupLabelMiddle[i][3].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getOutput(lev)[2] * (1 + self.outFactor / 100 + xyd.models.dress:getBuffTypeAttr(xyd.DressBuffAttrType.TRIAL_COIN_DAY))))
 			self.groupLabelMiddle[i][5].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getStayMax(lev) * (1 + self.stayFactor / 100)))
 		end
 	else
 		local lev = self.data.level
 		self.groupLabelMiddle[1][1].text = __("TRAVEL_MAIN_TEXT13", lev)
-		self.groupLabelMiddle[1][3].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getOutput(lev)[2] * (1 + self.outFactor / 100)))
+		self.groupLabelMiddle[1][3].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getOutput(lev)[2] * (1 + self.outFactor / 100 + xyd.models.dress:getBuffTypeAttr(xyd.DressBuffAttrType.TRIAL_COIN_DAY))))
 		self.groupLabelMiddle[1][5].text = xyd.getRoughDisplayNumber(math.floor(exploreTable:getStayMax(lev) * (1 + self.stayFactor / 100)))
 		self.groupLabelMiddle[2][1].text = __("TRAVEL_MAIN_TEXT44")
 		self.groupLabelMiddle[2][3].text = "--"

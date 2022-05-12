@@ -104,3 +104,5 @@ id,buff_id,plus_minus,name,sec
 107,spzglAllHarm,,Vorhand,Basierend auf dem Angriffswert werden alle von dem Träger zugefügten Schäden erhöht.
 108,dotMaxHp,,Salzigkeit,"Beim Zufügen und zum Ende der Runde wird dem Ziel ein Schaden basierend auf seinen max. HP zugefügt. Liegt dieser Schaden niedriger als 50% des AW des Angreifers, wird dem Ziel direkt ein Schaden in Höhe von 50% des AW des Angreifers zugefügt."
 109,hypoxia,,Atemlosigkeit,"Reduziert die erhaltene Heilung des Ziels um 50% und die Energie, die das Ziel bei der Verletzung erhält, um 50%. Erhöht den kontinuierlichen Schaden, den das Ziel erleidet, um 100%."
+110,xierkediDot,,Nebel,-1
+111,xierkediPower,,Sternbooster,-1

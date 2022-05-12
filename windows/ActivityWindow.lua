@@ -1197,6 +1197,9 @@ ActivityWindow.ContentClass = {
 	[xyd.ActivityID.PRIVILEGE_CARD] = function ()
 		return require("app.windows.activity.PrivilegeCard")
 	end,
+	[xyd.ActivityID.NEW_PARTNER_WARMUP] = function ()
+		return require("app.windows.activity.NewPartnerWarmup")
+	end,
 	[xyd.ActivityID.WARMUP_GIFT] = function ()
 		return require("app.windows.activity.WarmUpGift")
 	end,

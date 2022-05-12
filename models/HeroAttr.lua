@@ -9,6 +9,7 @@ function HeroAttr:ctor()
 	self.monsterTable = xyd.tables.monsterTable
 	self.guildSkillTable = xyd.tables.guildSkillTable
 	self.appointmentTable = xyd.tables.datesTable
+	self.skillResonateEffectTable = xyd.tables.skillResonateEffectTable
 	self.isPercent = nil
 
 	self:init()
@@ -98,6 +99,14 @@ function HeroAttr:attr(hero, params)
 			table.insert(extra[name], value)
 		else
 			extra[name] = (extra[name] or 0) + value
+		end
+	end
+
+	if hero:getGroup() == 7 then
+		local effects = self.skillResonateEffectTable:getEffectByLevel(hero:getHeroTableID(), hero:getTotalExLev())
+
+		for k, v in ipairs(effects) do
+			addAttr(v[1], v[2])
 		end
 	end
 

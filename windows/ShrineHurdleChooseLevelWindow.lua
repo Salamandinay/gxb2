@@ -140,13 +140,21 @@ function ShrineHurdleChooseLevelWindow:setLevelNum(num)
 end
 
 function ShrineHurdleChooseLevelWindow:levUpLongTouchUp(isPressed, num)
+	local waitTime = 0.1
+	local totalAddNum = 0
 	local longTouchFunc = nil
 
 	function longTouchFunc()
+		totalAddNum = totalAddNum + 1
+
+		if totalAddNum >= 20 then
+			waitTime = 0.05
+		end
+
 		self:changeDiff(num)
 
 		if self.upLongTouchFlag == true then
-			XYDCo.WaitForTime(0.1, function ()
+			XYDCo.WaitForTime(waitTime, function ()
 				if not self or not self.window_ or self.window_.activeSelf == false then
 					return
 				end

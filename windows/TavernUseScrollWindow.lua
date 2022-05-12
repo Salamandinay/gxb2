@@ -60,7 +60,7 @@ function TavernUseScrollWindow:layout()
 		})
 
 		self[str .. "UsedTotal"] = 0
-		self[str .. "CurNum"] = num > 0 and 1 or 0
+		self[str .. "CurNum"] = 0
 		self[str .. "SelectNum"] = require("app.components.SelectNum").new(self[str .. "SelectNumNode"], "tavern")
 
 		self[str .. "SelectNum"]:setInfo({
@@ -75,10 +75,11 @@ function TavernUseScrollWindow:layout()
 
 		UIEventListener.Get(self.BtnUse).onClick = function ()
 			local ticketEnoughFlag = false
+			local ticketChooseFlag = false
 
 			for str, data in pairs(list) do
 				if self[str .. "CurNum"] > 0 then
-					ticketEnoughFlag = true
+					ticketChooseFlag = true
 
 					if self.onceUseMax <= self[str .. "CurNum"] then
 						self.loadingText.text = __("PUB_MISSION_AUTO_TEXT04", xyd.tables.itemTextTable:getName(data[1]))
@@ -105,10 +106,18 @@ function TavernUseScrollWindow:layout()
 
 					break
 				end
+
+				if xyd.models.backpack:getItemNumByID(tonumber(data[1])) > 0 then
+					ticketEnoughFlag = true
+				end
 			end
 
-			if ticketEnoughFlag == false then
-				xyd.alert(xyd.AlertType.TIPS, __("PUB_MISSION_AUTO_TEXT001"))
+			if ticketChooseFlag == false then
+				if ticketEnoughFlag then
+					xyd.alert(xyd.AlertType.TIPS, __("PUB_MISSION_NOT_USE"))
+				else
+					xyd.alert(xyd.AlertType.TIPS, __("PUB_MISSION_AUTO_TEXT001"))
+				end
 			end
 		end
 	end

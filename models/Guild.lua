@@ -779,8 +779,13 @@ end
 function Guild:reqGuildSearch(name)
 	local msg = messages_pb:guild_search_req()
 	msg.msg = name
+	self.tmpName = name
 
 	xyd.Backend.get():request(xyd.mid.GUILD_SEARCH, msg)
+end
+
+function Guild:getTmpName()
+	return self.tmpName
 end
 
 function Guild:guildRecruitTime()

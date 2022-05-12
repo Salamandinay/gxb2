@@ -10532,9 +10532,9 @@ Avalanchee crumbles the glaciers under its huge claw when it deals a Basic Attac
 
 [c][01a310]Freeze:[-][/c]
 A control effect. During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
-125600301,Research Station Bonus,Research Station Buff 1,This block is located at a distance of 1 block from the Research Station. All allies deal 50% more damage in battle.
-125600302,Research Station Bonus,Research Station Buff 2,This block is located at a distance of 2 blocks from the Research Station. All allies deal 30% more damage in battle.
-125600303,Research Station Bonus,Research Station Buff 3,This block is located at a distance of 3 blocks from the Research Station. All allies deal 10% more damage in battle.
+125600301,Research Station Bonus,Research Station Bonus 1,This block is located at a distance of 1 block from the Research Station. All allies deal 50% more damage in battle.
+125600302,Research Station Bonus,Research Station Bonus 2,This block is located at a distance of 2 blocks from the Research Station. All allies deal 30% more damage in battle.
+125600303,Research Station Bonus,Research Station Bonus 3,This block is located at a distance of 3 blocks from the Research Station. All allies deal 10% more damage in battle.
 125600401,Main Base Bonus,Main Base Bonus 1,"This block is located at a distance of 1 block from the Main Base. All allies gain 180,000 HP, 30% extra HP, 12,000 Attack, and 30% extra Attack in battle."
 125600402,Main Base Bonus,Main Base Bonus 2,"This block is located at a distance of 2 blocks from the Main Base. All allies gain 120,000 HP, 20% extra HP, 8,000 Attack, and 20% extra Attack in battle."
 125600403,Main Base Bonus,Main Base Bonus 3,"This block is located at a distance of 3 blocks from the Main Base. All allies gain 60,000 HP, 10% extra HP, 4,000 Attack, and 10% extra Attack in battle."
@@ -11432,7 +11432,7 @@ At the start of the battle, the owner of this Antique loses 50% of self HP, gain
 
 [c][e28002]Zephyr\'s Blessing:[-][/c]
 A Skill Effect.
-Recovers (5% of self Maximum HP) HP and gains a [c][e28002]Magick Barrier[-][/c] with BP equivalent to the amount of HP healed at the end of every round.
+Recovers (5% of self Maximum HP) HP and gains a [c][e28002]Magick Barrier[-][/c] with (5% of self Maximum HP) at the end of every round.
 When nullifying damage, the [c][e28002]Magick Barrier[-][/c] loses 10% less BP."
 6760301,Windbringer,Antique Skill,"
 At the start of the battle, the owner of this Antique loses 50% of self HP, gains a [c][e28002]Magick Barrier[-][/c] with (50% of self HP) BP, and casts [c][e28002]Zephyr\'s Blessing[-][/c] to self.
@@ -12722,3 +12722,354 @@ This Mark disappears after it is triggered.
 [c][01a310]Stun[-][/c]:
 A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack."
+75700100,Syrcotte,Basic Attack,Basic Attack
+757001101,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (800% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1600% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3200% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 300% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20% less damage to the caster of this Effect, and will take (30% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001102,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (816% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1632% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3264% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 306% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20.4% less damage to the caster of this Effect, and will take (30.6% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001103,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (832% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1664% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3328% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 312% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20.8% less damage to the caster of this Effect, and will take (31.2% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001104,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (848% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1696% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3392% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 318% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 21.2% less damage to the caster of this Effect, and will take (31.8% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001105,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (864% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1728% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3456% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 324% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 21.6% less damage to the caster of this Effect, and will take (32.4% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001106,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (880% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1760% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3520% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 330% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22% less damage to the caster of this Effect, and will take (33% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001107,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (896% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1792% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3584% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 336% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22.4% less damage to the caster of this Effect, and will take (33.6% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001108,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (912% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1824% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3648% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 342% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22.8% less damage to the caster of this Effect, and will take (34.2% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001109,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (928% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1856% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3712% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 348% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 23.2% less damage to the caster of this Effect, and will take (34.8% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001110,Syrcotte,Scorpion's Kiss,"
+Love requires more devotion and dedication than crushes, doesn\'t it?
+
+Syrcotte deals (960% of Attack) damage that ignores Armor to 3 enemies with lowest HP.
+(If there are only 2 enemies left on the field, damage dealt to each enemy will be increased to 1920% of Attack.
+If there is only 1 enemy left on the field, damage dealt to the enemy will be increased to 3840% of Attack.)
+She will also cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to the aforementioned enemies.
+If the target is not protected by [c][e28002]Magick Barrier[-][/c] when it takes damage from this Active Skill, Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 360% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 24% less damage to the caster of this Effect, and will take (36% of owner’s lost HP) damage at the end of each round.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+757001201,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1600% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 150% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20% less damage to the caster of this Effect, and will take (30% of owner’s lost HP) damage at the end of each round."
+757001202,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1632% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 153% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20.4% less damage to the caster of this Effect, and will take (30.6% of owner’s lost HP) damage at the end of each round."
+757001203,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1664% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 156% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 20.8% less damage to the caster of this Effect, and will take (31.2% of owner’s lost HP) damage at the end of each round."
+757001204,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1696% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 159% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 21.2% less damage to the caster of this Effect, and will take (31.8% of owner’s lost HP) damage at the end of each round."
+757001205,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1728% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 162% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 21.6% less damage to the caster of this Effect, and will take (32.4% of owner’s lost HP) damage at the end of each round."
+757001206,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1760% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 165% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22% less damage to the caster of this Effect, and will take (33% of owner’s lost HP) damage at the end of each round."
+757001207,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1792% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 168% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22.4% less damage to the caster of this Effect, and will take (33.6% of owner’s lost HP) damage at the end of each round."
+757001208,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1824% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 171% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 22.8% less damage to the caster of this Effect, and will take (34.2% of owner’s lost HP) damage at the end of each round."
+757001209,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1856% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 174% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 23.2% less damage to the caster of this Effect, and will take (34.8% of owner’s lost HP) damage at the end of each round."
+757001210,Syrcotte,Power from Beyond,"
+Shall we explore the secrets of the cosmic powers together?
+
+Syrcotte’s Basic Attacks will deal (1920% of Attack) damage that ignores Armor to the enemy with the lowest HP.
+If the target is afflicted by [c][01a310]Miasma[-][/c], Syrcotte will deliver 5 extra attacks to the target, each dealing fixed damage equivalent to 180% of Syrcotte’s Attack. (This damage will not be affected by Effects or Attributes that amplifies or reduces damage dealt, nor will it Crit.).
+If the target is not afflicted by [c][01a310]Miasma[-][/c], Syrcotte will cast [c][01a310]Miasma[-][/c] that lasts for 3 rounds to it.
+
+[c][01a310]Miasma[-][/c]:
+A Skill Effect that cannot stack. This effect can affect up to 3 enemies at the same time.
+The owner of this Effect will deal 24% less damage to the caster of this Effect, and will take (36% of owner’s lost HP) damage at the end of each round."
+757001301,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (10% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (70% of damage dealt) HP."
+757001302,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (10.2% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (71.4% of damage dealt) HP."
+757001303,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (10.4% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (72.8% of damage dealt) HP."
+757001304,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (10.6% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (74.2% of damage dealt) HP."
+757001305,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (10.8% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (75.6% of damage dealt) HP."
+757001306,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (11% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (77% of damage dealt) HP."
+757001307,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (11.2% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (78.4% of damage dealt) HP."
+757001308,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (11.4% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (79.8% of damage dealt) HP."
+757001309,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (11.6% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (81.2% of damage dealt) HP."
+757001310,Syrcotte,Scorpion's Tail,"Scorpion’s tails are poisonous.\n\nWhen Syrcotte takes damage from Basic Attacks or Active Skills of the enemy with lowest HP, she will deal (12% of the enemy’s lost HP) damage to the enemy (damage dealt will not surpass 2500% of Syrcotte’s Attack), and will recover (84% of damage dealt) HP."
+757001401,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 20%, Crit by 20%, Precision by 20%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001402,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 20.4%, Crit by 20.4%, Precision by 20.4%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001403,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 20.8%, Crit by 20.8%, Precision by 20.8%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001404,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 21.2%, Crit by 21.2%, Precision by 21.2%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001405,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 21.6%, Crit by 21.6%, Precision by 21.6%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001406,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 22%, Crit by 22%, Precision by 22%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001407,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 22.4%, Crit by 22.4%, Precision by 22.4%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001408,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 22.8%, Crit by 22.8%, Precision by 22.8%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001409,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 23.2%, Crit by 23.2%, Precision by 23.2%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."
+757001410,Syrcotte,Heart of Scorpius,"
+When everything is revealed to you, I will be standing by your side.
+
+Whenever Syrcotte’s Energy reaches 100 or more, she will remove all Control Effects, Mark Effects and Damage Over Time Effects from herself, and gains [c][e28002]Starburst[-][/c] that lasts for 2 rounds.
+
+[c][e28002]Starburst[-][/c]:
+A Skill Effect that cannot stack.
+Increases the owner’s Attack by 24%, Crit by 24%, Precision by 24%, and prevents the owner from being targeted by enemies’ Skills and Attacks that target random enemies."

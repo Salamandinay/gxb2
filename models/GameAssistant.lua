@@ -526,6 +526,31 @@ function GameAssistant:onGetArenaMsg(event)
 	end
 end
 
+function GameAssistant:checkIfNeedResetFormation(partners)
+	local newPartners = {}
+	local flag = false
+
+	for i = 1, #partners do
+		if partners[i] and partners[i].partner_id and xyd.models.slot:getPartner(partners[i].partner_id) then
+			table.insert(newPartners, partners[i])
+		else
+			flag = true
+		end
+	end
+
+	if flag then
+		for i = 1, #partners do
+			if i <= #newPartners then
+				partners[i] = newPartners[i]
+			else
+				partners[i] = nil
+			end
+		end
+	end
+
+	return flag
+end
+
 function GameAssistant:reqTavernInfo()
 	xyd.models.tavern:reqPubInfo()
 end

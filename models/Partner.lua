@@ -105,6 +105,16 @@ function Partner:getExSkills()
 	return self.ex_skills
 end
 
+function Partner:getTotalExLev()
+	local result = 0
+
+	for k, v in ipairs(self:getExSkills()) do
+		result = result + v
+	end
+
+	return result
+end
+
 function Partner:getIsVoewed()
 	return self.is_vowed
 end
@@ -485,6 +495,10 @@ function Partner:getGroup()
 end
 
 function Partner:getTableID()
+	return self.tableID
+end
+
+function Partner:getHeroTableID()
 	return self.tableID
 end
 

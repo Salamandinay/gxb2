@@ -1,5 +1,6 @@
 local BaseWindow = import(".BaseWindow")
 local GuildAnnouncementWindow = class("GuildAnnouncementWindow", BaseWindow)
+local CopyAndPaste = import("app.components.CopyAndPaste")
 
 function GuildAnnouncementWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -29,9 +30,14 @@ function GuildAnnouncementWindow:getUIComponent()
 	self.titleLabel = go:ComponentByName("titleLabel", typeof(UILabel))
 	self.editScroll = go:ComponentByName("inputScroll", typeof(UIScrollView))
 	self.editableText = go:ComponentByName("inputScroll/editableText", typeof(UIInput))
-	self.editLabel = go:ComponentByName("inputScroll/editableText", typeof(UILabel))
+	self.editLabel = go:ComponentByName("inputScroll/label", typeof(UILabel))
 	self.confirmBtn = go:NodeByName("confirmBtn").gameObject
+	self.groupPaste = go:NodeByName("groupPaste").gameObject
 	self.confirmBtn_label = self.confirmBtn:ComponentByName("button_label", typeof(UILabel))
+
+	if UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.4.30") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.2.94") >= 0 then
+		self.CopyAndPaste_ = CopyAndPaste.new(self.editLabel, self.editableText, self.editableText.gameObject, self.editableText:GetComponent(typeof(UIDragScrollView)), self.groupPaste)
+	end
 end
 
 function GuildAnnouncementWindow:initUIComponent()
@@ -97,6 +103,11 @@ function GuildAnnouncementWindow:changeWndY(flag)
 	else
 		self.groupMain.y = 0
 	end
+end
+
+function GuildAnnouncementWindow:willClose()
+	self.editableText:Deselect()
+	GuildAnnouncementWindow.super.willClose(self)
 end
 
 return GuildAnnouncementWindow

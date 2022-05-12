@@ -1002,13 +1002,16 @@ function GameAssistantResultWindow:onGetGuildDinnerGetAwardMsg(event)
 	self.needGetGuildDinnerAward = self.needGetGuildDinnerAward - 1
 
 	for key, item in pairs(data.awards) do
-		table.insert(self.guildDinnerAward, item)
+		if item and item.item_id then
+			table.insert(self.guildDinnerAward, item)
+		end
 	end
 
 	if self.needGetGuildDinnerAward == 0 then
 		params.items = self.guildDinnerAward
 
 		self:createItem(params, __("GAME_ASSISTANT_TEXT103"))
+		self.model:setOrderAwards(nil)
 		self:waitForTime(0.2, function ()
 			self:doGuildDinnerBeginOrderBefore()
 		end)

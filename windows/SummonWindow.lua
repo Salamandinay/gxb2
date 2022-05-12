@@ -72,18 +72,6 @@ function SummonWindow:initWindow()
 	self:onRefresh()
 	self:registerEvent()
 	self:initEntryBtn()
-
-	local has_open_warmup = xyd.db.misc:getValue("has_open_warmup_0409")
-
-	if not has_open_warmup and self:checkEntryOpen() then
-		self:waitForTime(0.2, function ()
-			xyd.openWindow("new_partner_warming_up_entry_window")
-			xyd.db.misc:setValue({
-				value = 1,
-				key = "has_open_warmup_0409"
-			})
-		end)
-	end
 end
 
 function SummonWindow:getUIComponent()
@@ -265,12 +253,6 @@ end
 function SummonWindow:checkEntryOpen()
 	if not xyd.GuideController.get():isGuideComplete() then
 		return false
-	end
-
-	local data = xyd.models.activity:getActivity(xyd.ActivityID.NEW_PARTNER_WARMUP)
-
-	if data then
-		return true
 	end
 
 	return false

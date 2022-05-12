@@ -20,8 +20,6 @@ end
 function ActivitySmashEgg:getUIComponent()
 	local goTrans = self.go.transform
 	self.Bg_ = goTrans:NodeByName("Bg_")
-	self.Mb_ = goTrans:NodeByName("Mb_")
-	self.model_ = goTrans:NodeByName("model_")
 	self.titleImg_ = goTrans:ComponentByName("titleImg_", typeof(UISprite))
 	self.timeGroup = goTrans:NodeByName("timeGroup").gameObject
 	self.timeLabel_ = self.timeGroup:ComponentByName("timeLabel_", typeof(UILabel))
@@ -74,20 +72,11 @@ function ActivitySmashEgg:initUIComponent()
 		self["useLabel" .. i].text = __("DRIFT_BOTTLE_TEXT_02")
 		self["effect" .. i] = xyd.Spine.new(self["img" .. i].gameObject)
 
-		self["effect" .. i]:setInfo("valentine_box0" .. i, function ()
+		self["effect" .. i]:setInfo("drift_bottle0" .. i, function ()
 			self["effect" .. i]:play("idle", 0)
-			self["effect" .. i]:SetLocalScale(0.5, 0.5, 1)
-			self["effect" .. i]:SetLocalPosition(0, 0, 0)
+			self["effect" .. i]:SetLocalPosition(0, -100, 0)
 		end)
 	end
-
-	self.modelEffect_ = xyd.Spine.new(self.model_.gameObject)
-
-	self.modelEffect_:setInfo("monika_pifu03_lihui01", function ()
-		self.modelEffect_:play("animation", -1, 1)
-		self.modelEffect_:SetLocalScale(0.6, 0.6, 1)
-		self.modelEffect_:SetLocalPosition(0, -515, 0)
-	end)
 end
 
 function ActivitySmashEgg:onRegister()
@@ -243,11 +232,11 @@ function ActivitySmashEgg:onAward(event)
 			self.itemIDs[self.index],
 			1
 		},
-		cost2 = self.index == 1 and {
+		cost2 = (self.index == 1 or self.index == 2) and {
 			self.itemIDs[self.index],
-			5
+			math.min(5, xyd.models.backpack:getItemNumByID(self.itemIDs[self.index]))
 		} or nil,
-		btnLabelText = self.index == 1 and "DRIFT_BOTTLE_TEXT_07" or "DRIFT_BOTTLE_TEXT_10",
+		btnLabelText = (self.index == 1 or self.index == 2) and "DRIFT_BOTTLE_TEXT_07" or "DRIFT_BOTTLE_TEXT_10",
 		buyCallback = function (cost, cost2, isCost2)
 			local itemID = cost[1]
 			local num = cost[2]
@@ -274,6 +263,13 @@ function ActivitySmashEgg:onAward(event)
 		end
 	}
 
+	if xyd.models.backpack:getItemNumByID(self.itemIDs[self.index]) == 0 then
+		params.isNeedCostBtn = false
+	elseif xyd.models.backpack:getItemNumByID(self.itemIDs[self.index]) == 1 then
+		params.cost2 = nil
+		params.btnLabelText = "DRIFT_BOTTLE_TEXT_10"
+	end
+
 	if #skinIds > 0 then
 		xyd.onGetNewPartnersOrSkins({
 			destory_res = false,
@@ -291,12 +287,11 @@ end
 
 function ActivitySmashEgg:resizeToParent()
 	ActivitySmashEgg.super.resizeToParent(self)
-	self:resizePosY(self.bottomGroup, -661, -833)
-	self:resizePosY(self.titleImg_, -197, -251)
-	self:resizePosY(self.timeGroup, -384.5, -438.5)
-	self:resizePosY(self.awardBtn_, 274.5, 282)
+	self:resizePosY(self.bottomGroup, -662, -834)
+	self:resizePosY(self.titleImg_, -169, -265)
+	self:resizePosY(self.timeGroup, -294, -390)
+	self:resizePosY(self.awardBtn_, 284, 300)
 	self:resizePosY(self.tipLabel_, -300, -396)
-	self:resizePosY(self.Mb_, -639.5, -791.5)
 
 	if xyd.Global.lang == "en_en" or xyd.Global.lang == "fr_fr" or xyd.Global.lang == "ko_kr" then
 		self.useLabel1:X(15)

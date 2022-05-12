@@ -150,7 +150,7 @@ function TimeCloisterModel:onGetRedInfo(event)
 	self:updateAchRedState()
 
 	for cloister, curStage in ipairs(data.stages) do
-		if curStage == 11 then
+		if curStage ~= nil and curStage % 11 == 0 then
 			local last = xyd.db.misc:getValue("time_cloister_endless_battle_" .. cloister)
 
 			if not last then
@@ -160,6 +160,8 @@ function TimeCloisterModel:onGetRedInfo(event)
 				local weekStart2 = xyd.getGMTWeekStartTime(tonumber(last))
 				self.battleRedState[cloister] = weekStart1 ~= weekStart2
 			end
+
+			self:checkBattleRedStateAfterTwo(cloister)
 		end
 	end
 
@@ -367,6 +369,14 @@ function TimeCloisterModel:onGetTimeCloisterInfo(event)
 	end
 
 	self.cloisterInfo = cloisterInfo
+
+	for i = 1, 6 do
+		if self.battleRedState[i] then
+			self:checkBattleRedStateAfterTwo(i)
+		end
+	end
+
+	self:updateBattleRedState()
 end
 
 function TimeCloisterModel:onStartHang(event)
@@ -494,6 +504,8 @@ function TimeCloisterModel:onGetBattleResult(event)
 	if typeNow == 2 then
 		if typeOld == 1 then
 			self.battleRedState[cloister] = true
+
+			self:checkBattleRedStateAfterTwo(cloister)
 		else
 			self.battleRedState[cloister] = false
 
@@ -1284,6 +1296,24 @@ function TimeCloisterModel:changeCommonCardUI(obj)
 
 	if descLabel then
 		descLabel.color = Color.New2("0x" .. xyd.tables.timeCloisterTable:getCardTextColor(cloisterId) .. "ff")
+	end
+end
+
+function TimeCloisterModel:checkBattleRedStateAfterTwo(cloister)
+	local cloisterInfo = self:getCloisterInfo()
+
+	if not cloisterInfo then
+		return
+	end
+
+	local afterTwoCloister = cloister + 2
+
+	if cloisterInfo[afterTwoCloister] ~= nil and xyd.tables.timeCloisterTable:getLockType(afterTwoCloister) ~= -1 then
+		if cloisterInfo[afterTwoCloister].state == xyd.CloisterState.UN_OPEN then
+			-- Nothing
+		elseif cloisterInfo[afterTwoCloister].state ~= xyd.CloisterState.LOCK then
+			self.battleRedState[cloister] = false
+		end
 	end
 end
 

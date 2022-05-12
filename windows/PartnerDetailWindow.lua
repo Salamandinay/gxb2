@@ -612,7 +612,7 @@ function PartnerDetailWindow:setAttrChange()
 end
 
 function PartnerDetailWindow:initTopGroup()
-	self.windowTop = WindowTop.new(self.window_, self.name_, 11, true, handler(self, self.closeSelf))
+	self.windowTop = WindowTop.new(self.window_, self.name_, 25, true, handler(self, self.closeSelf))
 
 	if self.isLongTouch then
 		local function callback()

@@ -11,9 +11,9 @@ end
 
 function EasterEggGiftbag:resizeToParent()
 	EasterEggGiftbag.super.resizeToParent(self)
-	self:resizePosY(self.textLogo, 41, -32)
-	self:resizePosY(self.timeGroup, -160.5, -233.5)
-	self:resizePosY(self.groupItems, -538.5, -677.5)
+	self:resizePosY(self.textLogo, -108, -162)
+	self:resizePosY(self.timeGroup, -172, -227)
+	self:resizePosY(self.groupItems, -531, -698)
 end
 
 function EasterEggGiftbag:initUI()
@@ -36,7 +36,7 @@ function EasterEggGiftbag:getUIComponent()
 end
 
 function EasterEggGiftbag:layout()
-	xyd.setUISpriteAsync(self.textLogo, nil, "easter_egg_giftbag_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.textLogo, nil, "easter_egg_giftbag_" .. xyd.Global.lang)
 
 	self.labelEnd.text = __("END")
 	local duration = self.activityData:getEndTime() - xyd.getServerTime()
@@ -92,7 +92,7 @@ end
 function GiftBagItem:setInfo(info)
 	self.id = info.giftBagId
 
-	xyd.setUISpriteAsync(self.giftBagImg, nil, "easter_egg_giftbag_icon_" .. info.giftBagId, nil, , true)
+	xyd.setUISpriteAsync(self.giftBagImg, nil, "easter_egg_giftbag_icon_" .. info.giftBagId)
 
 	self.labelLimits.text = __("BUY_GIFTBAG_LIMIT", info.leftTimes)
 	self.labelExp.text = "+" .. xyd.tables.giftBagTable:getVipExp(info.giftBagId) .. " VIP EXP"

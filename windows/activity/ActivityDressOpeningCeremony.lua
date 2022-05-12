@@ -63,9 +63,8 @@ function ActivityDressOpeningCeremony:onRegisterEvent()
 	end))
 
 	UIEventListener.Get(self.goBtn.gameObject).onClick = handler(self, function ()
-		xyd.goWay(xyd.GoWayId.ACTIVITY_DRESS_OPENING_CEREMONY, function ()
-			xyd.WindowManager.get():closeWindow("activity_window")
-		end, nil, )
+		xyd.WindowManager.get():openWindow("dress_summon_window", {})
+		xyd.WindowManager.get():closeWindow("activity_window")
 	end)
 end
 

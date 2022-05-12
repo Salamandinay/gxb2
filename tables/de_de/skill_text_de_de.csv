@@ -10019,9 +10019,9 @@ Beim Standardangriff fährt die Eisklaue ihre scharfen Krallen aus und zerschmet
 
 [c][e28002]Einfrieren:[-][/c]
 Kontrolleffekt. Während das Ziel eingefroren ist, kann es seine aktive Fertigkeit nicht einsetzen, keinen Standardangriff, Folgeangriff oder Gegenangriff durchführen."
-125600301,Buff (Polarstation),Buff 1 (Polarstation) ,Dieses Feld ist ein Feld von der Polarstation entfernt. Alle Mädchen deines Teams machen 50% mehr Schaden.
-125600302,Buff (Polarstation),Buff 2 (Polarstation) ,Dieses Feld ist zwei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 30% mehr Schaden.
-125600303,Buff (Polarstation),Buff 3 (Polarstation) ,Dieses Feld ist drei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 10% mehr Schaden.
+125600301,Buff (Polarstation),Buff 1 (Polarstation),Dieses Feld ist ein Feld von der Polarstation entfernt. Alle Mädchen deines Teams machen 50% mehr Schaden.
+125600302,Buff (Polarstation),Buff 2 (Polarstation),Dieses Feld ist zwei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 30% mehr Schaden.
+125600303,Buff (Polarstation),Buff 3 (Polarstation),Dieses Feld ist drei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 10% mehr Schaden.
 125600401,Buff (Basis),Buff 1 (Basis),"Dieses Feld ist ein Feld von der Basis entfernt. Alle Mädchen deines Teams erhalten +180 000 HP, +30% extra HP, +12 000 Angriff und +30% Angriff."
 125600402,Buff (Basis),Buff 2 (Basis),"Dieses Feld ist zwei Felder von der Basis entfernt. Alle Mädchen deines Teams erhalten +120 000 HP, +20% extra HP, +8 000 Angriff und +20% Angriff."
 125600403,Buff (Basis),Buff 3 (Basis),"Dieses Feld ist drei Felder von der Basis entfernt. Alle Mädchen deines Teams erhalten +60 000 HP, +10% extra HP, +4 000 Angriff und +10% Angriff."
@@ -11323,3 +11323,184 @@ Fertigkeitseffekt. Kann maximal auf 4 Schichten gestapelt werden. Alle 1000 AW d
 Zeichen. Kann gestapelt werden. Erleidet der Träger einen Schaden durch Standardangriff oder aktive Fertigkeiten, wird ihm die [c][01a310]Gefangenschaft[-][/c] einen weiteren Schaden zufügen und sie hat eine 25%ige Wahrscheinlichkeit, dem Träger 2 Runden lang zu [c][01a310]betäuben[-][/c]. Ist K.M. Erleichterin beim Auslösen der [c][01a310]Gefangenschaft[-][/c] bereits gestorben, dann wird der Träger nicht mehr durch die [c][01a310]Gefangenschaft[-][/c] [c][01a310]betäubt[-][/c]. Nach dem Auslösen der [c][01a310]Gefangenschaft[-][/c] wird sie entfernt.
 [c][01a310]Betäuben[-][/c]
 Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch einen Standardangriff, Folgeangriff oder Konterangriff durchführen."
+75700100,Silcotti,Standardangriff,Standardangriff
+757001101,Silcotti,Kuss des Skorpions,"
+Bei einer Person die du magst kannst du ""Du selbst"" sein, aber bei einer Person die du liebst wirst du leicht schüchtern. Fügt den 3 Gegnern mit den niedrigsten HP einen Schaden in Höhe von 800% des AW zu, der nicht durch ihre Rüstung abgewehrt werden kann. (Gibt es nur 2 oder 1 Gegner, wird der zugefügte Schaden jeweils auf 1600% und 3200% des AW erhöht.) Fügt ihnen dazu den [c][01a310]Nebel[-][/c] zu, der 3 Runden lang anhält. Hat das Ziel keinen [c][e28002]Schutzwall[-][/c] auf sich, bevor es diesen Schaden erleidet, wird ihm ein fixierter Schaden in Höhe von 300% des AW fünfmal zugefügt (wird nicht von Buffs oder Debuffs angepasst und sorgt für keine Krit.).
+
+[c][01a310]Nebel[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Gleichzeitig kann dieser Effekt maximal 3 Gegnern zugefügt werden. Reduziert alle Schäden, die der Träger dieser Silcotti zufügt, um 20%. Zum Ende jeder Runde erleidet der Träger einen Schaden in Höhe von 30% seiner verlorenen HP.
+[c][e28002]Schutzwall[-][/c]
+Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers."
+757001102,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成816%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1632%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3264%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次306%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.4%，並且在每回合結束時會受到自身30.6%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001103,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成832%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1664%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3328%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次312%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.8%，並且在每回合結束時會受到自身31.2%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001104,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成848%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1696%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3392%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次318%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.2%，並且在每回合結束時會受到自身31.8%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001105,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成864%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1728%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3456%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次324%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.6%，並且在每回合結束時會受到自身32.4%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001106,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成880%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1760%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3520%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次330%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22%，並且在每回合結束時會受到自身33%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001107,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成896%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1792%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3584%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次336%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.4%，並且在每回合結束時會受到自身33.6%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001108,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成912%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1824%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3648%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次342%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.8%，並且在每回合結束時會受到自身34.2%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001109,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成928%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1856%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3712%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次348%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低23.2%，並且在每回合結束時會受到自身34.8%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001110,Silcotti,Kuss des Skorpions,"
+喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成960%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1920%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3840%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次360%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低24%，並且在每回合結束時會受到自身36%已損失生命值的傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+757001201,Silcotti,Vom Kosmos,"
+Wollen wir zusammen die Geheimnisse der Kraft vom Kosmos erforschen? Standardangriff fügt dem Gegner mit den niedrigsten HP einen Schaden in Höhe von 1600% des AW zu, der nicht durch seine Rüstung abgewehrt werden kann. Hat das Ziel den Effekt [c][01a310]Nebel[-][/c] auf sich, wird ihm weiter ein fixierter Schaden in Höhe von 150% des AW fünfmal zugefügt (wird nicht von Buffs oder Debuffs angepasst und sorgt für keine Krit.), ansonsten wird ihm der Effekt [c][01a310]Nebel[-][/c] zugefügt, der 3 Runden lang anhält.
+
+[c][01a310]Nebel[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Gleichzeitig kann dieser Effekt maximal 3 Gegnern zugefügt werden. Reduziert alle Schäden, die der Träger dieser Silcotti zufügt, um 20%. Zum Ende jeder Runde erleidet der Träger einen Schaden in Höhe von 30% seiner verlorenen HP."
+757001202,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1632%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次153%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.4%，並且在每回合結束時會受到自身30.6%已損失生命的傷害。"
+757001203,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1664%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次156%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.8%，並且在每回合結束時會受到自身31.2%已損失生命的傷害。"
+757001204,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1696%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次159%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.2%，並且在每回合結束時會受到自身31.8%已損失生命的傷害。"
+757001205,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1728%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次162%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.6%，並且在每回合結束時會受到自身32.4%已損失生命的傷害。"
+757001206,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1760%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次165%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22%，並且在每回合結束時會受到自身33%已損失生命的傷害。"
+757001207,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1792%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次168%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.4%，並且在每回合結束時會受到自身33.6%已損失生命的傷害。"
+757001208,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1824%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次171%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.8%，並且在每回合結束時會受到自身34.2%已損失生命的傷害。"
+757001209,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1856%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次174%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低23.2%，並且在每回合結束時會受到自身34.8%已損失生命的傷害。"
+757001210,Silcotti,Vom Kosmos,"
+來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1920%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次180%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+
+[c][01a310]彌霧[-][/c]
+技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低24%，並且在每回合結束時會受到自身36%已損失生命的傷害。"
+757001301,Silcotti,Schwanzende,"Der Schwanz eines Skorpions ist giftig. Wird Silcotti von dem Gegner mit den niedrigsten HP angegriffen, fügt sie ihm einen Schaden in Höhe von 10% seiner verlorenen HP (maximal von 2500% ihres eigenen AW) zu und erhöht eigene HP um 70% dieses von sich zugefügten Schadens."
+757001302,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.2%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量71.4%的生命值。
+757001303,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.4%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量72.8%的生命值。
+757001304,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.6%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量74.2%的生命值。
+757001305,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.8%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量75.6%的生命值。
+757001306,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量77%的生命值。
+757001307,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.2%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量78.4%的生命值。
+757001308,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.4%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量79.8%的生命值。
+757001309,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.6%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量81.2%的生命值。
+757001310,Silcotti,Schwanzende,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其12%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量84%的生命值。
+757001401,Silcotti,Skorpions Herz,"
+Wenn du alles verstanden hast, werde ich schon neben dir stehen. Immer wenn Silcottis Energie 100 oder höher erreicht hat, werden alle Kontrolleffekte, Zeichen und kontinuierlichen Schäden auf sich entfernt und Silcotti verleiht sich den Effekt [c][e28002]Sternbooster[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternbooster[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den Angriff um 20%, die Krit. Rate um 20% und die Präzision um 20%. Der Träger kann nicht als zufälliges Ziel von dem Gegner angegriffen werden."
+757001402,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加20.4%，暴擊增加20.4%，精準增加20.4%，不可被敵方隨機目標技能选中。"
+757001403,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加20.8%，暴擊增加20.8%，精準增加20.8%，不可被敵方隨機目標技能选中。"
+757001404,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加21.2%，暴擊增加21.2%，精準增加21.2%，不可被敵方隨機目標技能选中。"
+757001405,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加21.6%，暴擊增加21.6%，精準增加21.6%，不可被敵方隨機目標技能选中。"
+757001406,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加22%，暴擊增加22%，精準增加22%，不可被敵方隨機目標技能选中。"
+757001407,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加22.4%，暴擊增加22.4%，精準增加22.4%，不可被敵方隨機目標技能选中。"
+757001408,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加22.8%，暴擊增加22.8%，精準增加22.8%，不可被敵方隨機目標技能选中。"
+757001409,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加23.2%，暴擊增加23.2%，精準增加23.2%，不可被敵方隨機目標技能选中。"
+757001410,Silcotti,Skorpions Herz,"
+當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+
+[c][e28002]星邃[-][/c]
+技能特效，不可叠加。攻擊增加24%，暴擊增加24%，精準增加24%，不可被敵方隨機目標技能选中。"

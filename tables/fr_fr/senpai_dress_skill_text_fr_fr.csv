@@ -157,17 +157,17 @@ id,desc
 1002209,A 1% de chance d'obtenir 20% des récompenses de ressources supplémentaires lors du calcul de l'Exploration dans les Échos du Temps. (Ce bonus est cumulable)
 1002210,A 1% de chance d'obtenir 20% des récompenses de ressources supplémentaires lors du calcul de l'Exploration dans les Échos du Temps. (Ce bonus est cumulable)
 1002211,A 1% de chance d'obtenir 20% des récompenses de ressources supplémentaires lors du calcul de l'Exploration dans les Échos du Temps. (Ce bonus est cumulable)
-1002301,A 6% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002302,A 8% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002303,A 10% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002304,A 12% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002305,A 15% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002306,A 20% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002307,A 1% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002308,A 1% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002309,A 1% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002310,A 1% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
-1002311,A 1% de chance d'obtenir 10% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002301,A 4% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002302,A 8% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002303,A 12% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002304,A 16% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002305,A 20% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002306,A 25% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002307,A 1% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002308,A 1% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002309,A 1% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002310,A 1% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
+1002311,A 1% de chance d'obtenir 20% de Livre Sacré supplémentaire en passant les Étapes du Sanctuaire. (Ce bonus est cumulable)
 1002401,A 2% de chance de rendre 5% des Pièces ou Gemmes utilisées de vos achats dans la Boutique de Patrouille. (Ce bonus est cumulable)
 1002402,A 3% de chance de rendre 5% des Pièces ou Gemmes utilisées de vos achats dans la Boutique de Patrouille. (Ce bonus est cumulable)
 1002403,A 4% de chance de rendre 5% des Pièces ou Gemmes utilisées de vos achats dans la Boutique de Patrouille. (Ce bonus est cumulable)
@@ -256,19 +256,41 @@ id,desc
 1003504,A 10% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
 1003505,A 12% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
 1003506,A 18% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003507,A 0.4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003508,A 0.4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003509,A 0.4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003510,A 0.4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003511,A 0.4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)
-1003601,A 1% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée.(Ce bonus est cumulable)
+1003507,"A 0,4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)"
+1003508,"A 0,4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)"
+1003509,"A 0,4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)"
+1003510,"A 0,4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)"
+1003511,"A 0,4% de chance d'obtenir 20% de Dossiers supplémentaires à chaque Sceau consommé. (Ce bonus est cumulable)"
+1003601,A 1% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
 1003602,A 2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
 1003603,A 3% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
 1003604,A 4% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
 1003605,A 5% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
 1003606,A 7% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
-1003607,A 0.2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
-1003608,A 0.2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
-1003609,A 0.2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
-1003610,A 0.2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
-1003611,A 0.2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)
+1003607,"A 0,2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)"
+1003608,"A 0,2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)"
+1003609,"A 0,2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)"
+1003610,"A 0,2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)"
+1003611,"A 0,2% de chance d'obtenir de l'énergie d'Œuf d'Or doublée après chaque Capsule Avancée tirée. (Ce bonus est cumulable)"
+1003701,A 2% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal.
+1003702,A 3% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal.
+1003703,A 4% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal.
+1003704,"A 5,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003705,A 7% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal.
+1003706,A 10% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal.
+1003707,"A 0,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003708,"A 0,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003709,"A 0,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003710,"A 0,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003711,"A 0,5% de chance d'obtenir 1 Ticket Avancé du Distributeur après avoir tiré 10 fois dans le Distributeur Normal."
+1003801,Augmente de 1% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003802,Augmente de 2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003803,Augmente de 3% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003804,Augmente de 4% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003805,Augmente de 5% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003806,Augmente de 7% la vitesse de production des Pièces d'Or du Marché dans l'Excursion.
+1003807,"Augmente de 0,2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion."
+1003808,"Augmente de 0,2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion."
+1003809,"Augmente de 0,2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion."
+1003810,"Augmente de 0,2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion."
+1003811,"Augmente de 0,2% la vitesse de production des Pièces d'Or du Marché dans l'Excursion."
