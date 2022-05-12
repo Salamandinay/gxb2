@@ -473,8 +473,8 @@ CHOOSE_OPPONENT,Select Opponent
 CHOOSE_OPPONENT_TIPS,Select the opponent you want to challenge:
 MY_POWER,Power:
 SCORE2,Score
-VIP_TEXT01,Rebuy
-VIP_TEXT02,To
+VIP_TEXT01,Obtain
+VIP_TEXT02,[c][FFF59F]VIP EXP[-][/c] to reach
 VIP_TEXT03,Reload
 VIP_TEXT04,Benefit
 VIP_TEXT05,plus
@@ -608,7 +608,7 @@ FRIEND_MAX_FRIENDS,Their Friends List is full
 PLAYER_NOT_EXIST,Player not found
 SELF_MAX_FRIENDS,Your Friends List is full
 FRIEND_NOT_SELF,Can't add yourself as a friend
-PLAYER_IS_FRIEND,This player is your already your friend
+PLAYER_IS_FRIEND,This player is already your friend
 FRIEND_APPLY_SUCCESS,Request Successful
 RECEIVE_TIME_1,1 min ago
 RECEIVE_TIME_2,{1} mins ago
@@ -2273,9 +2273,7 @@ HOUSE_TEXT_38,"
 
 6. Players can click the button in these messages mentioned in Rule 5 to visit the Dorm of other players and ""Like"" their Dorms.
 
-7.All furniture pieces you have will provide Comfort for your Dorm, no matter whether they are actually placed in your Dorm
-
-8. Output details(per 24 hours)：<t>150#Comfort|150#Coins|150#Gems|190#Crystal Chisels$150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
+7. Output details(per 24 hours)：<t>150#Comfort|150#Coins|150#Gems|190#Crystal Chisels$150#0|150#100K|150#20|190#120$150#100|150#300K|150#40|190#160$150#200|150#700K|150#60|190#220$150#300|150#1300K|150#80|190#300$150#400|150#2000K|150#100|190#400$150#600|150#3000K|150#125|190#600$150#800|150#4000K|150#150|190#800</t>
 "
 HOUSE_LOCK_FAIL,This Girl is in the Dorm and can't be unlocked
 WARRIOR_SUIT,Warrior Suit
@@ -3721,7 +3719,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Please choose how many blocks you want to advance
 ACTIVITY_LAFULI_DRIFT_CARD,Please flip a card
 ACTIVITY_LAFULI_DRIFT_AWARD,Collect
 ACTIVITY_LAFULI_DRIFT_ROUND,Round completed: {1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Tap the “Rudder” to rotate, the points that the rotation stops on will be the distance in which Luvly proceeds forward. When “Advanced Rudder” is used, you can select the number of blocks to proceed.|2. While moving past or landing at a Coral Tree, Luvly will pick up Coral Branches. Each stop at a Coral Tree will increase 1 level for a maximum amount of 3 levels (however, your level will not increase when passing a Coral Tree.)|3. When Luvly lands on a resource block, the corresponding resource can be obtained. Each stop on a resource block will increase 1 level (resource reward increases as the block level increases) for a maximum amount of 3 levels.|4. When Luvly lands on a Shining Pearl, the corresponding number of Shining Pearls can be obtained. Shining Pearls can be used to exchange rewards in the event store. The unused Shining Pearl will be automatically exchanged into Coins at a rate of 100K Coins each once the event is over. The Coins will be sent via Mail. |5. When Luvly lands at a Conch, select one of 3 mystery cards with various effects that will appear.|6. When Luvly lands on a Whirlpool, the next time the (Advanced) Rudder is rotated, Luvly will only move half the distance.|7. Once the Coral Branch collection amount has been reached, rewards can be obtained. See details in the Gift Box on the upper right corner of the page.|8. Once the Coral Branch collection amount has been reached, the counter will reset (can be completed multiple times).|9. Tap the ""Auto-Navigate"" button to use Rudders automatically (Advanced Rudder excluded). If Luvly lands on a Conch in this mode, a random card will be flipped automatically. You can end the ""Auto-Navigate"" mode by tapping the ""End"" button or leaving the event page.|10. Once the event ends, unused Rudders (Advanced Rudder included) will be converted to 2 Coral Branches each and thereafter, corresponding rewards may be obtained.|11. Methods to acquire Rudders:|- Purchase with Gem (30 times max)|- Exclusive Task|-Luvly’s Elite Supply|- Value Pack|- Special Gift Pack|- Special Skin Pack|- Valentine's Special|- Daily Mail"
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Tap the “Rudder” to rotate, the points that the rotation stops on will be the distance in which Luvly proceeds forward. When “Advanced Rudder” is used, you can select the number of blocks to proceed.|2. While moving past or landing at a Coral Tree, Luvly will pick up Coral Branches. Each stop at a Coral Tree will increase 1 level for a maximum amount of 3 levels (however, your level will not increase when passing a Coral Tree.)|3. When Luvly lands on a resource block, the corresponding resource can be obtained. Each stop on a resource block will increase 1 level (resource reward increases as the block level increases) for a maximum amount of 3 levels.|4. When Luvly lands on a Shining Pearl, the corresponding number of Shining Pearls can be obtained. Shining Pearls can be used to exchange rewards in the event store. The unused Shining Pearl will be automatically exchanged into Coins at a rate of 100K Coins each once the event is over. The Coins will be sent via Mail. |5. When Luvly lands at a Conch, select one of 3 mystery cards with various effects that will appear.|6. When Luvly lands on a Whirlpool, the next time the (Advanced) Rudder is rotated, Luvly will only move half the distance.|7. Once the Coral Branch collection amount has been reached, rewards can be obtained. See details in the Gift Box on the upper right corner of the page.|8. Once the Coral Branch collection amount has been reached, the counter will reset (can be completed multiple times).|9. Tap the ""Auto-Navigate"" button to use Rudders automatically (Advanced Rudder excluded). If Luvly lands on a Conch in this mode, a random card will be flipped automatically. You can end the ""Auto-Navigate"" mode by tapping the ""End"" button or leaving the event page.|10. Once the event ends, unused Rudders (Advanced Rudder included) will be converted to 2 Coral Branches each and thereafter, corresponding rewards may be obtained.|11. Methods to acquire Rudders:|- Purchase with Gem (30 times max)|- Exclusive Task|-Luvly’s Elite Supply|- Value Pack|- Special Gift Pack|- Special Skin Pack|- Outfit Sale|- Outfit Shopping Spree|- Daily Mail"
 ONE_KEY_COMPOSE,Forge All
 ONE_KEY_COMPOSE_TEXT,"You have enough resource to forge all the Gears below, confirm to continue?"
 ONE_KEY_COMPOSE_TEXT2,No Gear available to be forged
@@ -4146,7 +4144,7 @@ SMASH_EGG_HELP,"1. During the event, rewards can be obtained by cracking 3 types
 LIMITED_TASK_TEXT_01,"During the event, complete the tasks below to obtain its reward. Rewards will be sent via Mail!\nPS: Girls Exchange not included!"
 LIMITED_TASK_HELP,"1. During the event, complete the tasks to obtain their rewards. Each section of rewards can only be acquired once. Rewards sent via Mail.|2. Certain tasks have 2 requirements that will need to be completed in order to obtain the rewards.|3. Girls exchanged from Enroll Exchange or Reverse will not be included."
 SMASH_EGG_TEXT_06,Crack {1} {2}
-LARGE_ACTIVITY_EGG_TEXT,A Taste of Love
+LARGE_ACTIVITY_EGG_TEXT,Adrift Message
 BP_LOTTERY_CONFIRM,Use {1} Floral Stamp to claim reward?
 SMASH_EGG_TEXT_07,{1}x
 SMASH_EGG_TEXT_08,Tap the eggs to check the rewards.
@@ -4789,7 +4787,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume Skin Election
 DRESS_SUMMON_LABEL_2,Tap to check available Outfits
 DRESS_SUMMON_LABEL_4,Orange Outfit piece in [c][e96516]{1}[-][/c] Draw(s)
 DRESS_SUMMON_LABEL_1,Free Chance available: {1}
-DRESS_SUMMON_LABEL_3,"Rates of acquiring ""Traditional Game"" set"
+DRESS_SUMMON_LABEL_3,"Rates of acquiring\n""Graceful Demon"" set"
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Miss Yume\nSkin Election
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Senpai, thank you for your support! Hope you enjoy a wonderful time on campus!"
 ONE_KEY_UPLEVEL_TITLE,Quick Upgrade
@@ -4952,7 +4950,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Go
 QUICK_STARS_TEXT05,Graduating
 EQUIP_LEVELUP_TEXT_19,Select the Class Set you want to exchange
 EQUIP_LEVELUP_TEXT_20,Select the Class Set you want to receive
-DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire ""Traditional Game"" Outfit set is increased in this Outfit Sale event."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire pieces from the ""Graceful Demon"" Outfit set is increased in this Outfit Sale event."
 HOUSE_TEXT_60,Confirm to move the Girl to the current floor?
 HOUSE_TEXT_61,No more girls can stay on this floor!
 HOUSE_TEXT_62,Set yourself in this floor
@@ -5163,13 +5161,13 @@ NEW_ARENA_ALL_SERVER_TEXT_18,Won as Champion
 DRIFT_BOTTLE_AWARD_WINDOW,Preview
 DRIFT_BOTTLE_TEXT_01,Reward
 DRIFT_BOTTLE_TEXT_02,Open
-DRIFT_BOTTLE_TEXT_03,Normal Chocolate Box
-DRIFT_BOTTLE_TEXT_04,Decorated Chocolate Box
-DRIFT_BOTTLE_TEXT_05,Luxury Chocolate Box
-DRIFT_BOTTLE_HELP,"1. During the event, rewards can be obtained by opening 3 types of chocolate boxes.|2. 1 corresponding chocolate box will be consumed in order to open it. Random rewards will be obtained by chance.|3. Additional rewards will be sent once a certain amount of corresponding chocolate boxes have been opened. Rewards will be sent via Mail.|4. Upon opening Decorated Chocolate Boxes and Luxury Chocolate Boxes, you will acquire skins that you don't own first (unless a copy of each kind of the skins offered within has already been owned).|5. ""Normal Chocolate Boxes"" can be obtained by collecting Daily Mail, purchasing with Gems (can purchase 30 Normal Chocolate Boxes with Gems at most), purchasing Mega Value Pack, Valentine's Special, Special Skin Pack, Special Gift Pack, completing Coral Branch Collection, and Exclusive Task. ""Decorated Chocolate Boxes"" can be obtained by opening ""Normal Chocolate Boxes"", purchasing Mega Value Pack, Special Skin Pack, Sugary Sweets Pack, Luvly's Elite Supply, and Valentine's Special. ""Luxury Chocolate Boxes"" can be obtained by opening ""Decorated Chocolate Boxes"", purchasing Mega Value Pack, Sugary Sweets Pack, and Special Gift Pack.|6. After the event ends, any remaining ""Normal Chocolate Boxes"", ""Decorated Chocolate Boxes"", and ""Luxury Chocolate Boxes"" will be removed from your account and changed into Coins. ""Normal Chocolate Box"" will be transformed into 200K Coins each, ""Decorated Chocolate Box"" will be transformed into 1500K Coins each, and ""Luxury Chocolate Box"" will be transformed into 10M Coins each. The Coins will be sent via Mail."
+DRIFT_BOTTLE_TEXT_03,Ragged Bottle
+DRIFT_BOTTLE_TEXT_04,Plain Bottle
+DRIFT_BOTTLE_TEXT_05,Decorated Bottle
+DRIFT_BOTTLE_HELP,"1. During the event, rewards can be obtained by opening 3 types of bottles.|2. 1 corresponding bottle will be consumed in order to open it. Random rewards will be obtained by chance.|3. Additional rewards will be sent once a certain amount of corresponding bottles have been opened. Rewards will be sent via Mail.|4. Upon opening Plain Bottles and Decorated Bottles, you will acquire skins that you don't own first (unless a copy of each kind of the skins offered within has already been owned).|5. ""Ragged Bottles"" can be obtained by collecting Daily Mail, purchasing with Gems (can purchase 30 Ragged Bottles with Gems at most), purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, completing Exclusive Tasks and Coral Branch Collection. ""Plain Bottles"" can be obtained by opening ""Ragged Bottles"", purchasing Mega Value Pack, Special Skin Pack, Luvly's Elite Supply, and Bottles Adrift Pack. ""Decorated Bottles"" can be obtained by opening ""Plain Bottles"", purchasing Mega Value Pack, Special Gift Pack, and Bottles Adrift Pack.|6. After the event ends, any remaining ""Ragged Bottles"", ""Plain Bottles"", and ""Decorated Bottles"" will be removed from your account and changed into Coins. ""Ragged Bottle"" will be transformed into 200K Coins each, ""Plain Bottle"" will be transformed into 1500K Coins each, and ""Decorated Bottle"" will be transformed into 10M Coins each. The Coins will be sent via Mail."
 DRIFT_BOTTLE_TEXT_06,Open {1} {2}(s)
 DRIFT_BOTTLE_TEXT_07,{1}x
-DRIFT_BOTTLE_TEXT_08,Tap on the chocolate boxes to preview the rewards.
+DRIFT_BOTTLE_TEXT_08,Tap the Bottles to check the rewards
 NEW_ARENA_ALL_SERVER_TEXT_19,Top {1}
 DRIFT_BOTTLE_TEXT_09,Join to get new skin!
 WARM_UP_GIFT_TEXT_01,Obtainable in New Girl Missions
@@ -5870,7 +5868,7 @@ ACTIVITY_LAFULI_CASTLE_TEXT05,Girl Reward
 ACTIVITY_LAFULI_CASTLE_TEXT06,Challenge Tasks
 ACTIVITY_LAFULI_CASTLE_TEXT07,"Get 1 additional ""Rainbow Sand"" for each"
 ACTIVITY_LAFULI_CASTLE_TEXT08,obtained|(can obtain {1} this way)
-ACTIVITY_LAFULI_CASTLE_TEXT09,Limit
+ACTIVITY_LAFULI_CASTLE_TEXT09,Max Obtain
 ACTIVITY_LAFULI_CASTLE_TEXT10,Task Reward will be issued directly to Bag
 ACTIVITY_LAFULI_CASTLE_TEXT11,Complete Limit
 TIME_CLOISTER_TEXT97,Crystal Card Details
@@ -6246,3 +6244,55 @@ ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,"You haven't entered the Supp
 ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Select
 ENTRANCE_TEST_SKILL_UNSURE,The character's skill is still under adjustment.
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,Return
+PARTNER_WARMUP_HELP,"1. An episode of story will be unlocked each day, you will be able to claim rewards after viewing the episodes for the first time."
+PARTNER_WARMUP_TEXT01,Preview
+PARTNER_WARMUP_TEXT02,View Episode {1}
+PARTNER_WARMUP_TEXT03,Please view the previous episode first
+PARTNER_WARMUP_TEXT04,Review the story?
+ACTIVITY_STAR_ALTAR_MISSION_HELP,1. Complete the tasks during the event to get Stellar Shards and Limited Star Tokens as rewards!
+ACTIVITY_STAR_ALTAR_MISSION_TITLE01,Tasks
+ACTIVITY_STAR_ALTAR_MISSION_TITLE02,Exchange
+PUB_MISSION_NOT_USE,Haven't chosen Internship Scroll yet!
+GUILD_TEXT71,Invalid ID
+GUILD_TEXT72,Invalid Name
+GUILD_TEXT73,Please enter Guild ID or Guild name
+GUILD_TEXT74,The guild you choose is on a server that has not merged with your server.
+GAME_ASSISTANT_TEXT104,Daily Slot Machine Pull
+GAME_ASSISTANT_TEXT105,Draw 2 times
+GAME_ASSISTANT_TEXT106,Draw 10 Times
+GAME_ASSISTANT_TEXT107,"Lineup change in Junior Varsity detected, do you want to go and adjust your lineup?"
+GAME_ASSISTANT_TEXT108,"Lineup change in Gym detected, do you want to go and adjust your lineup?"
+GUILD_TEXT75,Guild not found
+STAR_ALTAR_TITLE,Visitor\nFrom Beyond
+GROUP_7,Cosmos
+BATTLE_TIPS_DESC3,Won't be affected by Faction Rivalry
+SKILL_RESONATE_HELP,"1. Skill-Synchronize is exclusive for Girls from House Cosmos.|2. You can upgrade the Girls' skill level by consuming Brilliant Spheres and Tarnished Spheres. The Synchronize Level of a Girl will be the total level of her skills.|3. When a skill is upgraded to a certain level, it will require the other 3 skills to reach a certain level to become available to upgrade again.|4. Cosmos Girls will also gain additional Attribute bonuses as their Synchronize Level goes up.|5. You can reset the Synchronize Level and retrieve all the material that was used to upgrade the Synchronize Level with Gems."
+SKILL_RESONATE_TEXT01,Skill-Synchronize
+SKILL_RESONATE_TEXT02,Synchronize Level
+SKILL_RESONATE_TEXT03,Attribute increase:
+SKILL_RESONATE_TEXT04,Upgrade
+SKILL_RESONATE_TEXT05,Upgradable after the Synchronize Level of the other 3 skills reaches {1}
+SKILL_RESONATE_TEXT06,Max level reached!
+SKILL_RESONATE_TEXT07,Cannot reset the Synchronize Level
+SKILL_RESONATE_TEXT08,"You will consume some Gems for resetting the Girl's Synchronize Level, all the Brilliant Spheres and Tarnished Spheres consumed for the Girl's upgrade will be returned after the reset is completed."
+STAR_ORIGIN_HELP,1. Astral Core will become available for a Girl after she reaches 15-star. The feature will help your Girls to gain additional Attribute bonuses from the stars.|2. You can upgrade the level of Astral Core Nodes by consuming Brilliant Spheres and Tarnished Spheres.|3. The Attack and HP attribute bonus provided by Astral Core Nodes will not be affected by the attribute increase effects based on the percentages.|4. You are able to reset the Astral Core Nodes' levels and retrieve all the materials consumed with Gems.
+STAR_ORIGIN_TEXT01,Astral Core
+STAR_ORIGIN_TEXT02,Empower
+STAR_ORIGIN_TEXT03,Node Upgrade
+STAR_ORIGIN_TEXT04,Your previous Astral Core Node needs to reach Lv. {1}
+STAR_ORIGIN_TEXT05,Upgrade
+STAR_ORIGIN_TEXT06,No resettable Astral Core Node
+STAR_ORIGIN_TEXT07,"You will consume some Gems for resetting the Girl's Astral Core Node Level, all the Brilliant Spheres and Tarnished Spheres consumed for the Girl's upgrade will be returned after the reset is completed."
+STARRY_ALTAR_HELP_1,"1. You can draw rewards once for each Star Token or Limited Star Token consumed.|2. You will get 1 basic random reward for each draw; you will also have a chance to get an additional reward or the grand reward during each draw.|3. The above-mentioned additional reward is Customized 10-star Cosmos Girls Shards, and the grand reward will be a 10-star Girl from House Cosmos (can be chosen), the options available will be updated when each new Cosmos Girl is updated."
+STARRY_ALTAR_HELP_2,"1. The record will show the result of the 50 most recent draws in Stellar Altar.|2. If you don’t login for a period of time, your record may be erased."
+STARRY_ALTAR_TEXT01,Draw 1 Time
+STARRY_ALTAR_TEXT02,Draw 10 Times
+STARRY_ALTAR_TEXT03,Exclusive Event: {1} has begun. You will get additional rewards after {1} more draws.
+STARRY_ALTAR_TEXT04,Record
+STARRY_ALTAR_TEXT05,No record yet
+STARRY_ALTAR_TEXT06,Rate
+STARRY_ALTAR_TEXT07,Grand Reward
+STARRY_ALTAR_TEXT08,You have a chance to get the grand reward during each draw.
+STARRY_ALTAR_TEXT09,Additional Reward
+STARRY_ALTAR_TEXT10,you have a chance to get an additional reward during each draw.
+STARRY_ALTAR_TEXT11,Basic Reward
