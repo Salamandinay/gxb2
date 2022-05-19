@@ -3,6 +3,7 @@ local Partner = import("app.models.Partner")
 local WindowTop = import("app.components.WindowTop")
 local PartnerNameTag = import("app.components.PartnerNameTag")
 local ParnterImg = import("app.components.PartnerImg")
+local PartnerGravityController = import("app.components.PartnerGravityController")
 
 function CollectionSkinDetailWindow:ctor(name, params)
 	CollectionSkinDetailWindow.super.ctor(self, name, params)
@@ -90,7 +91,7 @@ function CollectionSkinDetailWindow:getUIComponent()
 end
 
 function CollectionSkinDetailWindow:initTopGroup()
-	self.windowTop = WindowTop.new(self.window_, self.name_, 11, true, handler(self, self.onClickCloseButton))
+	self.windowTop = WindowTop.new(self.window_, self.name_, 25, true, handler(self, self.onClickCloseButton))
 	local items = {
 		{
 			hide_plus = true,
@@ -164,6 +165,16 @@ function CollectionSkinDetailWindow:initVars()
 end
 
 function CollectionSkinDetailWindow:updateBg()
+	if self.partner_:getGroup() == 7 and (UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+		if not self.partnerGravity then
+			self.partnerGravity = PartnerGravityController.new(self.groupBg_.gameObject, 5)
+		else
+			self.partnerGravity:SetActive(true)
+		end
+	elseif self.partnerGravity then
+		self.partnerGravity:SetActive(false)
+	end
+
 	local res = "Textures/scenes_web/college_scene" .. tostring(self.partner_:getGroup())
 
 	if self.groupBg_.mainTexture ~= res then
@@ -456,7 +467,8 @@ function CollectionSkinDetailWindow:onclickZoom()
 
 	xyd.WindowManager.get():openWindow("partner_detail_zoom_window", {
 		item_id = showID,
-		bg_source = res
+		bg_source = res,
+		group = self.partner_:getGroup()
 	})
 end
 

@@ -356,42 +356,28 @@ function TavernDetailWindow:initGropSortHero()
 	self.heroGroupSelectList_ = {}
 	local gridSortGroup = self.window_.transform:ComponentByName("heroGroup/topSeletPart/grid", typeof(UIGrid))
 	local tempItem = self.window_.transform:ComponentByName("heroGroup/topSeletPart/itemSelet", typeof(UISprite))
+	local itemSeletCon = self.window_.transform:NodeByName("heroGroup/topSeletPart/itemSeletCon").gameObject
 
 	tempItem.gameObject:SetActive(false)
 
-	for i = 1, 6 do
-		local itemGroup = NGUITools.AddChild(gridSortGroup.gameObject, tempItem.gameObject)
-
-		itemGroup:SetActive(true)
-
-		local iconGroup = itemGroup.transform:ComponentByName("groupIcon", typeof(UISprite))
-
-		xyd.setUISpriteAsync(iconGroup, nil, "img_group" .. i, nil, )
-
-		local selectBg = itemGroup.transform:ComponentByName("groupChosen", typeof(UISprite))
-
-		selectBg.gameObject:SetActive(false)
-
-		UIEventListener.Get(iconGroup.gameObject).onClick = function ()
-			if self.selectGroup_ ~= i then
-				self.selectGroup_ = i
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			if self.selectGroup_ ~= group then
+				self.selectGroup_ = group
 			else
 				self.selectGroup_ = 0
 			end
 
-			for idx, selectBg in ipairs(self.heroGroupSelectList_) do
-				if idx == self.selectGroup_ then
-					selectBg.gameObject:SetActive(true)
-				else
-					selectBg.gameObject:SetActive(false)
-				end
-			end
-
-			self:refreshHeroList()
-		end
-
-		table.insert(self.heroGroupSelectList_, selectBg)
-	end
+			self:refreshHeroList(group)
+		end),
+		width = itemSeletCon:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.selectGroup_
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(itemSeletCon.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function TavernDetailWindow:refreshHeroList()

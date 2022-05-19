@@ -641,6 +641,10 @@ function ItemTips:initActivityBtn()
 			self.btnBox_:SetActive(true)
 		else
 			self.btnBox_:SetActive(false)
+
+			if self.type_ == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.itemID) == xyd.PartnerGroup.TIANYI then
+				self.btnBox_:SetActive(true)
+			end
 		end
 	end
 end
@@ -664,6 +668,10 @@ function ItemTips:initBackpackBtn()
 		self.btnBox_:SetActive(true)
 	else
 		self.btnBox_:SetActive(false)
+
+		if self.type_ == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.itemID) == xyd.PartnerGroup.TIANYI then
+			self.btnBox_:SetActive(true)
+		end
 	end
 
 	local canSummon_ = self:canSummon()
@@ -736,6 +744,21 @@ function ItemTips:initBackpackBtn()
 		local function goFunc()
 			if self:checkSpecilGetWayNotShow(getWayID) then
 				return
+			end
+
+			local serverId = xyd.models.selfPlayer:getServerID()
+
+			if serverId > 2 and (self.itemID == xyd.ItemID.STARRY_ALTAR_COIN or self.itemID == xyd.ItemID.STAR_ALTER_MISSION_COIN or self.itemID == xyd.ItemID.SKILL_RESONATE_LIGHT_STONE or self.itemID == xyd.ItemID.SKILL_RESONATE_DARK_STONE) then
+				local openTime = tonumber(xyd.tables.miscTable:getVal("starry_altar_open_time"))
+				local nowTime = xyd.getServerTime()
+
+				if nowTime < openTime then
+					local leftTime = xyd.getRoughDisplayTime(openTime - nowTime)
+
+					xyd.alertTips(__("OPEN_AFTER_TIME", leftTime))
+
+					return
+				end
 			end
 
 			xyd.goWay(getWayID, function ()
@@ -1583,7 +1606,7 @@ function ItemTips:skinDetailTouch()
 				}
 
 				xyd.WindowManager.get():openWindow("item_tips_window", params, function ()
-					xyd.openWindow("drop_probability_window", {
+					self:openDropProbabilityWindow({
 						isShowProbalitity = false,
 						itemId = self.parent_item_
 					})
@@ -1651,6 +1674,51 @@ function ItemTips:summonTouch()
 			partnerCost = xyd.tables.summonDressTable:getCost(dress_summon_id)
 		else
 			partnerCost = ItemTable:treasureCost(self.itemID)
+		end
+
+		if type == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.itemID) == xyd.PartnerGroup.TIANYI and math.floor(self.itemNum / partnerCost[2]) >= 1 then
+			local sommum_group7_ids = xyd.tables.miscTable:split2num("partner_group7_summon", "value", "|")
+			local items = {}
+
+			for i, summon_id in pairs(sommum_group7_ids) do
+				local dropbox_id = xyd.tables.summonTable:getDropboxId(summon_id)
+				local showAwards = xyd.tables.dropboxShowTable:getIdsByBoxId(dropbox_id)
+
+				if showAwards.list then
+					for k, id in pairs(showAwards.list) do
+						local item = xyd.tables.dropboxShowTable:getItem(id)
+
+						table.insert(items, {
+							itemID = item[1],
+							itemNum = item[2],
+							summonID = summon_id
+						})
+					end
+				end
+			end
+
+			local tempParams = {
+				selectMinNum = 1
+			}
+
+			function tempParams.sureCallback(itemID, num)
+				for i, item in pairs(items) do
+					if item.itemID == itemID then
+						Summon:summonPartner(item.summonID, num)
+						xyd.WindowManager.get():closeWindow("award_select_window")
+						xyd.WindowManager.get():closeWindow("item_tips_window")
+
+						break
+					end
+				end
+			end
+
+			tempParams.itemsInfo = items
+			tempParams.itemNum = math.floor(self.itemNum / partnerCost[2])
+
+			xyd.WindowManager.get():openWindow("award_select_window", tempParams)
+
+			return true
 		end
 
 		if math.floor(self.itemNum / partnerCost[2]) > 1 then
@@ -2089,7 +2157,7 @@ function ItemTips:createWays()
 end
 
 function ItemTips:onBoxBtnOptionalTreasureChest()
-	xyd.openWindow("drop_probability_window", {
+	self:openDropProbabilityWindow({
 		isShowProbalitity = false,
 		itemId = self.itemID
 	})
@@ -2105,11 +2173,11 @@ function ItemTips:onBoxBtnNormal()
 
 		xyd.WindowManager.get():closeWindow("drop_probability_window")
 		xyd.WindowManager.get():closeWindow("item_tips_window")
-		xyd.openWindow("drop_probability_window", {
+		self:openDropProbabilityWindow({
 			box_id = ItemTable:getDropBoxShow(self.itemID),
 			closeCallBack = function ()
 				if dropProWndParams then
-					xyd.WindowManager.get():openWindow("drop_probability_window", dropProWndParams)
+					self:openDropProbabilityWindow(dropProWndParams)
 				end
 
 				if itemTipsWndParams then
@@ -2121,7 +2189,7 @@ function ItemTips:onBoxBtnNormal()
 		return
 	end
 
-	xyd.openWindow("drop_probability_window", {
+	self:openDropProbabilityWindow({
 		box_id = ItemTable:getDropBoxShow(self.itemID)
 	})
 end
@@ -2137,6 +2205,19 @@ end
 function ItemTips:setMultilingualText()
 	if (self.itemID == xyd.ItemID.NEWYEAR_WELFARE_GIFTBAG2022 or xyd.ItemID.NEWYEAR_SUPER_GIFTBAG2022) and xyd.Global.lang == "fr_fr" then
 		self.labelName_.fontSize = 21
+	end
+end
+
+function ItemTips:openDropProbabilityWindow(params)
+	local type = ItemTable:getType(self.itemID)
+
+	if type == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.itemID) == xyd.PartnerGroup.TIANYI then
+		xyd.openWindow("drop_probability_window", {
+			isShowProbalitity = false,
+			itemId = self.itemID
+		})
+	else
+		xyd.openWindow("drop_probability_window", params)
 	end
 end
 

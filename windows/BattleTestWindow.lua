@@ -519,6 +519,7 @@ function BattleTestWindow:getTeamInfoById(testTeamID)
 			potentials = info.potentials,
 			skin_id = info.skin_id,
 			ex_skills = info.ex_skills,
+			star_origin = info.star_origin,
 			travel = info.travel,
 			skill_index = info.skill_index
 		})

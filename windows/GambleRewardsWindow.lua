@@ -84,7 +84,7 @@ function GambleRewardsWindow:initWindow()
 end
 
 function GambleRewardsWindow:layout()
-	if self.curWndType_ == self.WindowType.GAMBLE and #self.data_ == 1 or self.curWndType_ == self.WindowType.PROPHET and #self.data_ <= 2 or self.curWndType_ == self.WindowType.NORMAL and #self.data_ <= 5 or self.curWndType_ == self.WindowType.ACTIVITY and #self.data_ <= 5 or self.curWndType_ == self.WindowType.DRESS and #self.data_ <= 2 then
+	if self.curWndType_ == self.WindowType.GAMBLE and #self.data_ == 1 or self.curWndType_ == self.WindowType.PROPHET and #self.data_ <= 2 or self.curWndType_ == self.WindowType.NORMAL and #self.data_ <= 5 or self.curWndType_ == self.WindowType.ACTIVITY and #self.data_ <= 5 or self.curWndType_ == self.WindowType.DRESS and #self.data_ <= 2 or self.curWndType_ == self.WindowType.STARRY_ALTAR and #self.data_ < 10 then
 		self.curBuyType_ = self.buyType.ONE
 
 		self.gridOfItems_.gameObject:SetActive(false)
@@ -354,6 +354,26 @@ function GambleRewardsWindow:initCost()
 		self.btnSure_.transform.localPosition = Vector3(-150, 0, 0)
 
 		self.btnBuy_.gameObject:SetActive(true)
+	elseif self.curWndType_ == self.WindowType.STARRY_ALTAR then
+		local cost = xyd.tables.starryAltarTable:getCost(self.type_)
+		local btnLabel = ""
+
+		if self.curBuyType_ == self.buyType.ONE then
+			btnLabel = "GAMBLE_BUY_ONE"
+		else
+			cost[2] = cost[2] * 10
+			btnLabel = "GAMBLE_BUY_TEN"
+		end
+
+		self.buyCost_ = cost
+		self.btnBuyNumLable_.text = self.buyCost_[2]
+
+		xyd.setUISpriteAsync(self.btnBuyIcon_, nil, xyd.tables.itemTable:getIcon(self.buyCost_[1]), nil, )
+
+		self.btnBuyLable_.text = __(btnLabel)
+		self.btnSure_.transform.localPosition = Vector3(-150, 0, 0)
+
+		self.btnBuy_.gameObject:SetActive(true)
 	else
 		self.btnSure_:X(0)
 		self.btnBuy_:SetActive(false)
@@ -586,6 +606,12 @@ function GambleRewardsWindow:buyTouch(isCost2)
 			else
 				win:reqSummonLimitDress(times)
 			end
+		end
+
+		xyd.closeWindow("gamble_rewards_window")
+	elseif self.curWndType_ == self.WindowType.STARRY_ALTAR then
+		if self.buyCallback then
+			self.buyCallback()
 		end
 
 		xyd.closeWindow("gamble_rewards_window")
@@ -889,6 +915,7 @@ GambleRewardsWindow.WindowType = {
 	ACTIVITY = 4,
 	PROPHET = 3,
 	DRESS = 5,
+	STARRY_ALTAR = 6,
 	NORMAL = 2
 }
 

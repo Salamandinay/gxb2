@@ -240,6 +240,8 @@ function SmartAltarWindow:onClickBtnDetail()
 		baseItems[xyd.ItemID.PARTNER_EXP] = (baseItems[xyd.ItemID.PARTNER_EXP] or 0) + (res[1][xyd.ItemID.PARTNER_EXP] or 0)
 		baseItems[xyd.ItemID.GRADE_STONE] = (baseItems[xyd.ItemID.GRADE_STONE] or 0) + (res[1][xyd.ItemID.GRADE_STONE] or 0)
 		baseItems[xyd.ItemID.SOUL_STONE] = (baseItems[xyd.ItemID.SOUL_STONE] or 0) + (res[1][xyd.ItemID.SOUL_STONE] or 0)
+		baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] = (baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] or 0) + (res[1][xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] or 0)
+		baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] = (baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] or 0) + (res[1][xyd.ItemID.SKILL_RESONATE_DARK_STONE] or 0)
 	end
 
 	for _, v in ipairs(treasureItems) do
@@ -264,6 +266,20 @@ function SmartAltarWindow:onClickBtnDetail()
 		table.insert(decomposeItems, {
 			item_id = xyd.ItemID.SOUL_STONE,
 			item_num = baseItems[xyd.ItemID.SOUL_STONE]
+		})
+	end
+
+	if baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] and baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] > 0 then
+		table.insert(decomposeItems, {
+			item_id = xyd.ItemID.SKILL_RESONATE_LIGHT_STONE,
+			item_num = baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE]
+		})
+	end
+
+	if baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] and baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] > 0 then
+		table.insert(decomposeItems, {
+			item_id = xyd.ItemID.SKILL_RESONATE_DARK_STONE,
+			item_num = baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE]
 		})
 	end
 

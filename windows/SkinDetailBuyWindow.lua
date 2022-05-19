@@ -25,13 +25,13 @@ function SkinDetailBuyWindow:ctor(name, params)
 	self.view_state_ = 1
 	self.skinByGroup = {}
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		self.skinByGroup[i] = {}
 	end
 
 	self.datas = {}
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		self.datas[i] = {}
 	end
 
@@ -72,6 +72,19 @@ function SkinDetailBuyWindow:initWindow()
 	end
 
 	self:registerEvent()
+
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:updateSelectGroup(group)
+		end),
+		width = self.schoolGroupCommon:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.cur_index_
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.schoolGroupCommon.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function SkinDetailBuyWindow:updateSelect()
@@ -130,11 +143,7 @@ function SkinDetailBuyWindow:getComponent()
 	self.partnerImg = PartnerImg.new(self.partnerImgRoot.gameObject)
 	self.wrapContent_ = require("app.common.ui.FixedMultiWrapContent").new(self.scrollView, self.dataContent, itemRoot, SkinDetailBuyItem, self)
 	self.schoolGroup = self.groupInfo:NodeByName("schoolGroup").gameObject
-
-	for i = 1, 6 do
-		self["group" .. i] = self.schoolGroup:NodeByName("group" .. i).gameObject
-		self["group" .. i .. "_chosen"] = self["group" .. i]:NodeByName("group" .. i .. "_chosen").gameObject
-	end
+	self.schoolGroupCommon = self.groupInfo:NodeByName("schoolGroupCommon").gameObject
 end
 
 function SkinDetailBuyWindow:playOpenAnimation(callback)
@@ -441,14 +450,6 @@ end
 function SkinDetailBuyWindow:updateSelectGroup(index)
 	self.cur_index_ = index
 
-	for i = 1, 6 do
-		if index == i then
-			self["group" .. i .. "_chosen"]:SetActive(true)
-		else
-			self["group" .. i .. "_chosen"]:SetActive(false)
-		end
-	end
-
 	self:updatePartnerSkin(false, self.cur_index_)
 end
 
@@ -690,18 +691,6 @@ function SkinDetailBuyWindow:registerEvent()
 		self.skinEffectGroup:SetActive(false)
 	end
 
-	for i = 1, 6 do
-		UIEventListener.Get(self["group" .. i]).onClick = function ()
-			local index = i
-
-			if i == self.cur_index_ then
-				index = 0
-			end
-
-			self:updateSelectGroup(index)
-		end
-	end
-
 	UIEventListener.Get(self.groupFilter).onClick = function ()
 		self.isFilter = not self.isFilter
 
@@ -908,9 +897,12 @@ function SkinDetailBuyWindow:onclickZoom()
 		res = "college_scene" .. group
 	end
 
+	local group = xyd.tables.partnerTable:getGroup(self.table_id_)
+
 	xyd.WindowManager.get():openWindow("partner_detail_zoom_window", {
 		item_id = self.current_skin_,
-		bg_source = res
+		bg_source = res,
+		group = group
 	})
 end
 

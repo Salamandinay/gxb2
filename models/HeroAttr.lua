@@ -10,6 +10,8 @@ function HeroAttr:ctor()
 	self.guildSkillTable = xyd.tables.guildSkillTable
 	self.appointmentTable = xyd.tables.datesTable
 	self.skillResonateEffectTable = xyd.tables.skillResonateEffectTable
+	self.starOriginListTable = xyd.tables.starOriginListTable
+	self.starOriginTable = xyd.tables.starOriginTable
 	self.isPercent = nil
 
 	self:init()
@@ -85,6 +87,18 @@ function HeroAttr:attr(hero, params)
 
 	calChime()
 
+	local starOrigin = {}
+
+	local function calStarOrigin()
+		if not params.isHeroBook and hero:getStarOrigin() then
+			for k, v in pairs(self:getStarOrigin(hero)) do
+				starOrigin[k] = tonumber(v)
+			end
+		end
+	end
+
+	calStarOrigin()
+
 	local extra = {}
 	local isPercent = self.isPercent
 
@@ -102,8 +116,8 @@ function HeroAttr:attr(hero, params)
 		end
 	end
 
-	if hero:getGroup() == 7 then
-		local effects = self.skillResonateEffectTable:getEffectByLevel(hero:getHeroTableID(), hero:getTotalExLev())
+	if hero:getGroup() == xyd.PartnerGroup.TIANYI then
+		local effects = self.skillResonateEffectTable:getEffectByLevel(hero:getHeroTableID(), hero:getTotalExLev() + 4)
 
 		for k, v in ipairs(effects) do
 			addAttr(v[1], v[2])
@@ -211,6 +225,18 @@ function HeroAttr:attr(hero, params)
 
 		if chimeArr and chimeArr[name] then
 			n = n + chimeArr[name]
+		end
+
+		if starOrigin then
+			if starOrigin[name] then
+				n = n + starOrigin[name]
+			elseif starOrigin[nameP] then
+				if n == 0 then
+					n = 1
+				end
+
+				n = n + starOrigin[nameP]
+			end
 		end
 
 		return n
@@ -328,6 +354,7 @@ function HeroAttr:attr(hero, params)
 			resist_ms = calculateOne(nil, "resist_ms"),
 			resist_ck = calculateOne(nil, "resist_ck"),
 			resist_yx = calculateOne(nil, "resist_yx"),
+			allDmgRate = calculateOne(xyd.BUFF_ALL_DMG_RATE),
 			power = power
 		}
 
@@ -380,6 +407,7 @@ function HeroAttr:attr(hero, params)
 				resist_ms = calculateOne(nil, "resist_ms"),
 				resist_ck = calculateOne(nil, "resist_ck"),
 				resist_yx = calculateOne(nil, "resist_yx"),
+				allDmgRate = attribs.allDmgRate,
 				power = attribs.power
 			}
 
@@ -563,6 +591,37 @@ function HeroAttr:getChimeAttr(hero, chimeInfo)
 				end
 
 				result[arr[1]] = result[arr[1]] + math.floor((arr[2] * (v.lev + 1) + arr[3] * v.lev * (v.lev + 1) / 2 + arr[2] * math.floor(v.lev / 10)) * pValue * heroGroupP)
+			end
+		end
+	end
+
+	return result
+end
+
+function HeroAttr:getStarOrigin(hero)
+	local result = {}
+	local tableID = hero:getTableID()
+
+	if hero:isMonster() then
+		return result
+	end
+
+	local levs = hero:getStarOrigin()
+	local starListId = self.heroTable:getStarOrigin(tableID)
+	local startIDs = self.starOriginListTable:getStarIDs(starListId)
+
+	for k, v in pairs(levs) do
+		if v >= 0 and startIDs[k] then
+			local levId = startIDs[k] + v
+			local baseArrs = self.starOriginTable:getEffect(levId)
+			local buffP = {}
+
+			for _, arr in ipairs(baseArrs) do
+				if not result[arr[1]] then
+					result[arr[1]] = 0
+				end
+
+				result[arr[1]] = result[arr[1]] + arr[2]
 			end
 		end
 	end

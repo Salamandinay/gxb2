@@ -43,7 +43,7 @@ function EditStationPartnerWindow:getUIComponent()
 	self.labelTitle_ = groupAction:ComponentByName("labelTitle_", typeof(UILabel))
 	self.btns = groupAction:NodeByName("btns").gameObject
 
-	for i = 1, 6 do
+	for i = 1, xyd.GROUP_NUM do
 		self["group" .. i] = self.btns:NodeByName("group" .. i).gameObject
 		self["group" .. i .. "_chosen"] = self["group" .. i]:NodeByName("group" .. i .. "_chosen").gameObject
 	end
@@ -115,7 +115,7 @@ function EditStationPartnerWindow:layout()
 
 	local pos = self.btns.transform.localPosition
 
-	self.btns:SetLocalPosition(-260, pos.y, pos.z)
+	self.btns:SetLocalPosition(0, pos.y, pos.z)
 end
 
 function EditStationPartnerWindow:willClose()
@@ -282,7 +282,7 @@ end
 function EditStationPartnerWindow:registerEvent()
 	self:register()
 
-	for i = 1, 6 do
+	for i = 1, xyd.GROUP_NUM do
 		UIEventListener.Get(self["group" .. i]).onClick = function ()
 			self:changeGroup(i)
 		end
@@ -333,7 +333,7 @@ function EditStationPartnerWindow:changeGroup(index)
 		self.selectIndex = index
 	end
 
-	for i = 1, 6 do
+	for i = 1, xyd.GROUP_NUM do
 		if self.selectIndex == i then
 			self["group" .. tostring(i) .. "_chosen"]:SetActive(true)
 		else

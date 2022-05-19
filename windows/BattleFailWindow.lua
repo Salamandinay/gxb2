@@ -1453,6 +1453,10 @@ function BattleFailWindow:updateShrineHurdlePart()
 
 		local partners = self.data.battleParams.battle_report.teamA
 
+		table.sort(partners, function (a, b)
+			return a.pos < b.pos
+		end)
+
 		for _, partner_info in ipairs(partners) do
 			local paramsA = {
 				noClick = true,

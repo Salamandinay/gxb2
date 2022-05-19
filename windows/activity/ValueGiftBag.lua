@@ -138,6 +138,9 @@ end
 function ValueGiftBag:onRecharge(event)
 	local giftBagID = event.data.giftbag_id
 	local t = self:getItemInfos()
+
+	print("giftBagID ", giftBagID)
+
 	local isGoOn = false
 
 	for i in pairs(t) do

@@ -210,18 +210,8 @@ function PersonAvatarsWindow:getUIComponent()
 	self.btnHero_img = self.groupAvatarSelect:ComponentByName("btnHero_", typeof(UISprite))
 	self.btnSpecial_label = self.groupAvatarSelect:NodeByName("btnSpecial_"):ComponentByName("button_label", typeof(UILabel))
 	self.btnSpecial_img = self.groupAvatarSelect:ComponentByName("btnSpecial_", typeof(UISprite))
-	self.filter = {}
-	self.filterChosen = {}
 	self.chosenGroup = 0
-	self.filterGroup = self.groupAvatarSelect:NodeByName("filterGroup").gameObject
-
-	for i = 1, 6 do
-		self.filter[i] = self.filterGroup:NodeByName("group" .. i).gameObject
-		self.filterChosen[i] = self.filter[i]:NodeByName("chosen").gameObject
-		UIEventListener.Get(self.filter[i]).onClick = handler(self, function ()
-			self:changeFilter(i)
-		end)
-	end
+	self.filterGroup = self.groupAvatarSelect:NodeByName("commonFilterGroup").gameObject
 end
 
 function PersonAvatarsWindow:layout()
@@ -234,6 +224,22 @@ function PersonAvatarsWindow:layout()
 	local tempAvatarID = xyd.models.selfPlayer:getAvatarID()
 
 	self:changeSelectItem(tempAvatarID)
+	self:initFilter()
+end
+
+function PersonAvatarsWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 8,
+		callback = handler(self, function (self, group)
+			self:changeFilter(group)
+		end),
+		width = self.filterGroup:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.chosenGroup
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.filterGroup.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function PersonAvatarsWindow:registerEvent()
@@ -514,14 +520,6 @@ function PersonAvatarsWindow:changeFilter(chosenGroup)
 		self.chosenGroup = chosenGroup
 	end
 
-	for k, v in ipairs(self.filterChosen) do
-		if k == self.chosenGroup then
-			v:SetActive(true)
-		else
-			v:SetActive(false)
-		end
-	end
-
 	self:updateLayout()
 end
 
@@ -607,11 +605,21 @@ function PersonAvatarsWindow:filterAvatars(avatars)
 	for i = 1, table.getn(avatars) do
 		local type = xyd.tables.itemTable:getType(avatars[i])
 
-		if type == xyd.ItemType.HERO and self.curSubSelect == 1 then
-			table.insert(tmpAvatars, avatars[i])
+		if (type == xyd.ItemType.HERO or type == xyd.ItemType.FAKE_PARTNER_SKIN) and self.curSubSelect == 1 then
+			if type == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(avatars[i])
+
+				if tianyiIndex == 2 then
+					table.insert(tmpAvatars, avatars[i])
+				elseif tianyiIndex == -2 then
+					table.insert(tmpAvatars, avatars[i])
+				end
+			else
+				table.insert(tmpAvatars, avatars[i])
+			end
 		end
 
-		if type ~= xyd.ItemType.HERO and self.curSubSelect ~= 1 then
+		if type ~= xyd.ItemType.HERO and type ~= xyd.ItemType.FAKE_PARTNER_SKIN and self.curSubSelect ~= 1 then
 			table.insert(tmpAvatars, avatars[i])
 		end
 	end
@@ -629,6 +637,11 @@ function PersonAvatarsWindow:filterAvatarsByGroup(avatars)
 	for i = 1, table.getn(avatars) do
 		local group = xyd.tables.partnerTable:getGroup(avatars[i])
 
+		if xyd.tables.itemTable:getType(avatars[i]) == xyd.ItemType.FAKE_PARTNER_SKIN then
+			local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(avatars[i])[1]
+			group = xyd.tables.partnerTable:getGroup(partnerTableID)
+		end
+
 		if group == self.chosenGroup then
 			table.insert(tmpAvatars, avatars[i])
 		end
@@ -641,6 +654,17 @@ function PersonAvatarsWindow:sortAvatars(avatars)
 	local newAvatars = self.backpack:getNewAvatars()
 
 	if self.curSelect == 1 then
+		local function checkFakeFun(id)
+			local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(id)
+			local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(id)[1]
+
+			if tianyiIndex > 0 then
+				return partnerTableID + tianyiIndex - 1
+			end
+
+			return id
+		end
+
 		table.sort(avatars, function (a, b)
 			local index = -1
 
@@ -680,17 +704,30 @@ function PersonAvatarsWindow:sortAvatars(avatars)
 				bVal = bVal - 100
 			end
 
-			if b < a then
+			local tempA = a
+			local tempB = b
+
+			if aType_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+				tempA = checkFakeFun(a)
+			end
+
+			if bType_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+				tempB = checkFakeFun(b)
+			end
+
+			if tempB < tempA then
 				aVal = aVal + 10
-			elseif a < b then
+			elseif tempA < tempB then
 				bVal = bVal + 10
 			end
 
 			return aVal > bVal
 		end)
-	else
-		return table.sort(avatars)
+
+		return
 	end
+
+	return table.sort(avatars)
 end
 
 return PersonAvatarsWindow

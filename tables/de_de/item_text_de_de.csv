@@ -5091,7 +5091,7 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 20001078,K.M. Erleuchterins limitierter Avatar,Spezieller Avatar,Ihre Strategie kann den Sieg einer Schlacht Tausende von Kilometern entfernt bestimmen.
 357,Gutschein zum Sommeranfang,Eventmaterial,"Eventmaterial. Kann im Event ""Sommeranfang"" verwendet werden."
 361,Sternfragment - ♏,Eventmaterial,"Eventmaterial. Kann im Event ""Sternschnuppennacht"" verwendet werden, um Items zu tauschen."
-362,Limitierte Sternmünze,Mädchen beschwören,"Kann fürs Event ""Sternschnuppennacht"" ([c][d76500]20.05.[-][/c] bis [c][d76500]26.05.[-][/c]) verwendet werden, um Mädchen am Altar unter Sternen zu ziehen. Nach dem Ende des Events wird der Gutschein recycelt. Bitte denk daran, ihn rechtzeitig zu verwenden."
+362,Limitierte Sternmünze,Items & Mädchen ziehen,"Kann fürs Event ""Sternschnuppennacht"" ([c][d76500]20.05.[-][/c] bis [c][d76500]26.05.[-][/c]) verwendet werden, um Belohnungen am Altar unter Sternen zu ziehen. Nach dem Ende des Events wird das Item recycelt. Bitte denk daran, ihn rechtzeitig zu verwenden."
 7263,Schlafmodus,Kostüm,"Robbies Kostüm ""Schlafmodus"""
 27263,Schlafmodus,Kostüm,"Robbies Kostüm ""Schlafmodus"""
 7264,Vertragsschlüssel,Kostüm,"Van Helsings Kostüm ""Vertragskostüm"""
@@ -5201,21 +5201,39 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 3201153,Fondant-Torte (unten) (Fragment),Fragment vom Outfit-Teil,"Fragment vom Unterkörper des Sets ""Fondant-Torte"""
 3201159,Kopfschmuck (Fondant-Torte) (Fragment),Fragment vom Outfit-Teil,"Fragment vom Kopfschmuck des Sets ""Fondant-Torte"""
 3201165,Extra-Utensil (Fondant-Torte) (Fragment),Fragment vom Outfit-Teil,"Fragment vom Extra-Utensil des Sets ""Fondant-Torte"""
-358,Sternmünze,Mädchen beschwören,"Kann am Altar unter Sternen verwendet werden, um Mädchen der Meteore-Fraktion zu beschwören."
+358,Sternmünze,Items & Mädchen ziehen,"Kann am Altar unter Sternen verwendet werden, um Mädchen der Meteore-Fraktion zu beschwören."
 359,Kugel des Glanzes,Material zum Leveln,Kann zum Leveln der Sternkerne aller Mädchen verwendet werden. Kann zum Leveln der Mädchen der Meteore-Fraktion oder deren Skill-Resonanz verwendet werden.
 360,Kugel der Finsternis,Material zum Leveln,Kann zum Leveln der Sternkerne aller Mädchen verwendet werden. Kann zum Leveln der Skill-Resonanz von Mädchen der Meteore-Fraktion verwendet werden.
 7265,Mitternachtsspiel,Kostüm,"Carmen & Bonnies Kostüm ""Mitternachtsspiel"""
-27268,Mitternachtsspiel,Kostüm,"Carmen & Bonnies Kostüm ""Mitternachtsspiel"""
+27265,Mitternachtsspiel,Kostüm,"Carmen & Bonnies Kostüm ""Mitternachtsspiel"""
 930220,10-Sterne Silcotti,Mädchen beschwören,"Sammle 100 Fragmente, um das Mädchen zu beschwören."
-757001,Silcotti,,
-940059,10-Sterne Fragment zur Auswahl des Meteore-Mädchens,Mädchen beschwören,"Sammle 100 Fragmente, um ein gewünschtes 10-Sterne Mädchen der Meteore-Fraktion zu beschwören."
+757001,Silcotti,Mädchen,10-Sterne Silcotti (Meteore-Fraktion)
+940059,10-Sterne Fragment der Meteore-Mädchen,Mädchen beschwören,"Sammle 100 Fragmente, um ein gewünschtes 10-Sterne Mädchen der Meteore-Fraktion zu beschwören."
 4101050,5-Sterne Auswahlbox,Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 4302025,Premium Kostümauswahlbox (19. Luvlys Inselreise),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts, um die Kostüme anzuschauen. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
-4302026,Premium Kostümauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4302026,Premium Kostümauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts, um die Kostüme anzuschauen. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 4102037,5-Sterne Auswahlbox (19. Luvlys Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 4101049,5-Sterne Auswahlbox (19. Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 4601034,Auswahlbox vom orangenen Outfit (Extra-Utensil),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir ein Extra-Utensil von einem orangenen Outfit-Set aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich deren Inhalte nicht mehr ändern.)"
-4104003,5-Sterne Auswahlbox (6 Fraktionen),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster, Feen, Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern)"
+4104003,5-Sterne Auswahlbox (6 Fraktionen),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster, Feen, Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
 4201027,Normale Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Münze *1000000, EXP-Saft *1000000, Brotdose *750, Kristallmeißel *750."
 4204013,Diener-Truhe,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Diener-Keks *300, Spirit-Keks *36, Diener-Kristall *18."
-4205009,Ressourcenauswahlbox (Elite-Fertigkeit),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Leitfadenmaterial *750, Geheimmaterial *150"
+4205009,Ressourcenauswahlbox (Elite-Fertigkeit),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Leitfadenmaterial *750, Geheimmaterial *150."
+4104004,5-Sterne Auswahlbox (6 Fraktionen),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster, Feen, Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+7267,Warmer Frühling,Kostüm,"Lumis Kostüm ""Warmer Frühling"""
+27267,Warmer Frühling,Kostüm,"Lumis Kostüm ""Warmer Frühling"""
+4101051,5-Sterne Auswahlbox,Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+800001,Silcotti,,Silcottis 13-Sterne Kostüm
+900001,Silcotti,,Silcottis 15-Sterne Kostüm
+20001079,Silcottis limitierter Avatar,Spezieller Avatar,Silcottis limitierter Avatar. Das ist was sie sehr schätzt.
+6761,星耀旋鏢,魂器,
+6762,星耀旋鏢,魂器,
+6763,星耀旋鏢,魂器,
+6764,星耀旋鏢,魂器,
+6765,星耀旋鏢,魂器,
+6766,星耀旋鏢,魂器,
+67661,星耀旋鏢,魂器,
+67662,星耀旋鏢,魂器,
+67663,星耀旋鏢,魂器,
+9002,Silcotti,,
+9003,Silcotti,,

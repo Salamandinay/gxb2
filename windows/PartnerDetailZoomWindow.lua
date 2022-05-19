@@ -14,6 +14,7 @@ function PartnerDetailZoomWindow:ctor(name, params)
 	self.itemID = params.item_id
 	self.bgSource = params.bg_source
 	self.curScale_ = 100
+	self.group_ = params.group
 
 	xyd.CameraManager.get():setEnabled(true)
 end
@@ -41,7 +42,7 @@ function PartnerDetailZoomWindow:getUIComponent()
 
 	self.mainPanel.alpha = 0.02
 
-	if (UNITY_EDITOR or UNITY_STANDALONE or XYDUtils.IsTest()) and (UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+	if self.group_ == 7 and (UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
 		if not self.partnerGravity then
 			self.partnerGravity = PartnerGravityController.new(self.bgImg.gameObject, 3)
 		else

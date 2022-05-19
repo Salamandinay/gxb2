@@ -67,7 +67,7 @@ function GameAssistant:ctor()
 	}
 	self.presetData = {
 		friend = false,
-		gamble = false,
+		gamble = 2,
 		marketHasBuy = false,
 		house = false,
 		campaign = false,
@@ -135,6 +135,7 @@ function GameAssistant:onRegister()
 	self:registerEvent(xyd.event.BUY_SHOP_ITEM_BATCH, handler(self, self.onGetBuyMarketMsg))
 	self:registerEvent(xyd.event.EXPLORE_BUILDING_GET_OUT, handler(self, self.onGetExploreAwardMsg))
 	self:registerEvent(xyd.event.ARENA_FIGHT_BATCH, handler(self, self.onGetArenaMsg))
+	self:registerEvent(xyd.event.SYSTEM_REFRESH, handler(self, self.onSystemUpdate))
 end
 
 function GameAssistant:initData()
@@ -187,6 +188,10 @@ function GameAssistant:initData()
 		self.presetData.pet.fight = 0
 		self.todayHaveDoneData.pet.fight = 0
 	end
+
+	if self.presetData.gamble == false or self.presetData.gamble == true then
+		self.presetData.gamble = 2
+	end
 end
 
 function GameAssistant:saveData()
@@ -210,6 +215,117 @@ end
 
 function GameAssistant:getTodayHaveDoneData()
 	return self.todayHaveDoneData
+end
+
+function GameAssistant:onSystemUpdate()
+	self.todayHaveDoneData = {
+		friend = false,
+		gamble = false,
+		tavern = false,
+		marketHasBuy = false,
+		house = false,
+		campaign = false,
+		dressShow = false,
+		arena = false,
+		dungeon = false,
+		midas = {
+			free = false,
+			paid = 0
+		},
+		dailyQuiz = {
+			free = false,
+			paid = {
+				0,
+				0,
+				0
+			}
+		},
+		summon = {
+			senior = false,
+			normal = false
+		},
+		academyAssessment = {
+			free = 0,
+			paid = 0,
+			fort = 0
+		},
+		explore = {
+			award = false,
+			bread = 0
+		},
+		pet = {
+			paid = 0,
+			challenge = false,
+			award = false,
+			fight = 0
+		},
+		guild = {
+			signIn = false,
+			gym = false,
+			level = 0,
+			order = false
+		},
+		market = {},
+		arenaBattleFormationInfo = {}
+	}
+
+	self:saveData()
+	xyd.models.shop:refreshShopInfo(xyd.ShopType.SHOP_BLACK_NEW)
+end
+
+function GameAssistant:checkMarketNeedClear()
+	local shopInfo_ = xyd.models.shop:getShopInfo(xyd.ShopType.SHOP_BLACK_NEW)
+	local nowShopItems = shopInfo_.items
+	local lastShopItemsData = xyd.db.misc:getValue("gameAssistant_last_market_items")
+
+	if not lastShopItemsData then
+		self.presetData.market = {}
+		local copyData = {}
+
+		for i = 1, #nowShopItems do
+			table.insert(copyData, nowShopItems[i].item[1])
+		end
+
+		xyd.db.misc:setValue({
+			key = "gameAssistant_last_market_items",
+			value = cjson2.encode(copyData)
+		})
+		self:saveData()
+
+		return true
+	else
+		local lastShopItems = cjson2.decode(lastShopItemsData)
+		local needClear = false
+
+		if #lastShopItems ~= #nowShopItems then
+			needClear = true
+		end
+
+		if not needClear then
+			for i = 1, #lastShopItems do
+				if tonumber(lastShopItems[i]) ~= tonumber(nowShopItems[i].item[1]) then
+					needClear = true
+				end
+			end
+		end
+
+		if needClear then
+			self.presetData.market = {}
+			local copyData = {}
+
+			for i = 1, #nowShopItems do
+				table.insert(copyData, nowShopItems[i].item[1])
+			end
+
+			xyd.db.misc:setValue({
+				key = "gameAssistant_last_market_items",
+				value = cjson2.encode(copyData)
+			})
+			self:saveData()
+		end
+
+		return needClear
+	end
 end
 
 function GameAssistant:reqMidasData()
@@ -584,12 +700,17 @@ function GameAssistant:reqComplteTavern(choosenStars)
 	end
 end
 
-function GameAssistant:reqGamble()
-	if xyd.models.backpack:getItemNumByID(xyd.ItemID.GAMBLE_NORMAL) < 2 then
+function GameAssistant:reqGamble(time)
+	if xyd.models.backpack:getItemNumByID(xyd.ItemID.GAMBLE_NORMAL) < time then
 		return false
 	else
-		xyd.models.gamble:reqGetAward(1, 1)
-		xyd.models.gamble:reqGetAward(1, 1)
+		if time == 2 then
+			for i = 1, time do
+				xyd.models.gamble:reqGetAward(1, 1)
+			end
+		elseif time == 1 then
+			xyd.models.gamble:reqGetAward(1, 2)
+		end
 
 		return true
 	end
@@ -650,16 +771,18 @@ end
 function GameAssistant:onGetBuyMarketMsg(event)
 	local params = event.data
 	local shopType = params.shop_type
+	local shopInfo = xyd.models.shop:getShopInfo(shopType)
 
-	if not xyd.models.shop.shopList_[shopType] then
+	if not shopInfo then
 		xyd.models.shop.shopList_[shopType] = {}
+		shopInfo = xyd.models.shop:getShopInfo(shopType)
 	end
 
-	xyd.models.shop.shopList_[shopType].items = params.items
-	xyd.models.shop.shopList_[shopType].refreshTime = params.refresh_time
+	shopInfo.items = params.items
+	shopInfo.refreshTime = params.refresh_time
 
 	if params.end_time then
-		xyd.models.shop.shopList_[shopType].end_time = params.end_time
+		shopInfo.end_time = params.end_time
 	end
 
 	xyd.models.shop.requestTimeList_[shopType] = xyd.getServerTime()
@@ -873,10 +996,14 @@ function GameAssistant:reqBuyBreadExplore(num)
 end
 
 function GameAssistant:onGetExploreAwardMsg(event)
-	xyd.db.misc:setValue({
-		key = "gameAssistant_explore_award_timeStamp",
-		value = xyd.getServerTime()
-	})
+	local wnd = xyd.getWindow("game_assistant_result_window")
+
+	if wnd then
+		xyd.db.misc:setValue({
+			key = "gameAssistant_explore_award_timeStamp",
+			value = xyd.getServerTime()
+		})
+	end
 end
 
 function GameAssistant:getPetHangAward()
@@ -1226,9 +1353,19 @@ function GameAssistant:jungeIfCanDoTab1()
 		end
 	end
 
-	if self.presetData.gamble == true and self.todayHaveDoneData.gamble == false then
-		self.ifCanDo.gamble = true
-		flag = true
+	if self.presetData.gamble < 2 and self.todayHaveDoneData.gamble == false then
+		local time = 0
+
+		if self.presetData.gamble == 0 then
+			time = 10
+		elseif self.presetData.gamble == 1 then
+			time = 2
+		end
+
+		if time <= xyd.models.backpack:getItemNumByID(xyd.ItemID.GAMBLE_NORMAL) then
+			self.ifCanDo.gamble = true
+			flag = true
+		end
 	end
 
 	if self.presetData.market then
@@ -1327,8 +1464,47 @@ function GameAssistant:jungeIfCanDoTab3()
 	local timeStamp_explore = xyd.db.misc:getValue("gameAssistant_explore_award_timeStamp") or 0
 
 	if xyd.getServerTime() - tonumber(timeStamp_explore) > xyd.SECOND * 3600 and self.presetData.explore.award == true then
-		self.ifCanDo.explore.award = true
-		flag = true
+		local facCD = xyd.split(xyd.tables.miscTable:getVal("travel_facility_cd"), "|", true)
+		local buildingsInfo = xyd.models.exploreModel:getBuildsInfo()
+		local buildingTables = {
+			xyd.tables.exploreMarketTable,
+			xyd.tables.exploreWishingTreeTable,
+			xyd.tables.exploreBreadHomeTable
+		}
+
+		for i = 1, 3 do
+			local info = buildingsInfo[i]
+			local bTable = buildingTables[i]
+			local outPut = bTable:getOutput(info.level)
+			local outPutNum = tonumber(outPut[2])
+			local stayNum = bTable:getStayMax(info.level)
+
+			for j in ipairs(info.partners) do
+				local partnerID = info.partners[j]
+
+				if partnerID and partnerID ~= 0 then
+					local star = xyd.models.slot:getPartner(partnerID).star
+
+					if j % 2 ~= 0 then
+						outPutNum = outPutNum * (1 + xyd.tables.exploreFacilityAddTable:getOutAdd(i, star) / 100)
+					else
+						stayNum = stayNum * (1 + xyd.tables.exploreFacilityAddTable:getStayAdd(i, star) / 100)
+					end
+				end
+			end
+
+			local cd = facCD[i]
+			local duration = xyd.getServerTime() - info.updateTime
+			local count = math.floor(duration / cd)
+			local hasNum = math.floor(count * outPutNum / (86400 / cd) + info.stock)
+
+			if hasNum > 0 then
+				self.ifCanDo.explore.award = true
+				flag = true
+
+				break
+			end
+		end
 	end
 
 	if self:getBuyTimeBreadExplore() < self.presetData.explore.bread then

@@ -96,17 +96,28 @@ function HouseSelectHerosWindow:initWindow()
 	self:changeFloor(self.curFloor_)
 	self:changeGroup(0)
 	self:registerEvent()
+	self:initFilter()
+end
+
+function HouseSelectHerosWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 0.95,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:changeGroup(group)
+		end),
+		width = self.groupBtns:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.selectIndex
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.groupBtns.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function HouseSelectHerosWindow:getUIComponent()
 	local winTrans = self.window_.transform
 	self.groupHeros_ = winTrans:NodeByName("groupHeros_").gameObject
-
-	for i = 1, 6 do
-		self["groupBtn" .. i] = self.groupHeros_:NodeByName("groupBtns/groupBtn" .. i).gameObject
-		self["imgChosen" .. i] = self.groupHeros_:NodeByName("groupBtns/groupBtn" .. i .. "/imgChosen" .. i).gameObject
-	end
-
+	self.groupBtns = self.groupHeros_:NodeByName("groupBtns").gameObject
 	local scrollView = self.groupHeros_:ComponentByName("scroller_", typeof(UIScrollView))
 	self.scrollView_ = scrollView
 	local wrapContent = scrollView:ComponentByName("itemList_", typeof(MultiRowWrapContent))
@@ -263,7 +274,7 @@ end
 function HouseSelectHerosWindow:initData()
 	local sortPartners = self.slot:getSortedPartners()
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		local collection = {}
 		self.items_[i] = collection
 		local partners = sortPartners[tostring(xyd.partnerSortType.LEV) .. "_" .. i]
@@ -310,12 +321,6 @@ function HouseSelectHerosWindow:registerEvent()
 		UIEventListener.Get(self["tab_" .. i]).onClick = function ()
 			xyd.SoundManager.get():playSound(xyd.SoundID.SWITCH_PAGE)
 			self:changeFloor(i)
-		end
-	end
-
-	for i = 1, 6 do
-		UIEventListener.Get(self["groupBtn" .. tostring(i)]).onClick = function ()
-			self:changeGroup(i)
 		end
 	end
 
@@ -388,14 +393,6 @@ function HouseSelectHerosWindow:changeGroup(index)
 		self.selectIndex = 0
 	else
 		self.selectIndex = index
-	end
-
-	for i = 1, 6 do
-		if self.selectIndex == i then
-			self["imgChosen" .. tostring(i)]:SetActive(true)
-		else
-			self["imgChosen" .. tostring(i)]:SetActive(false)
-		end
 	end
 
 	self:changeDataGroup()

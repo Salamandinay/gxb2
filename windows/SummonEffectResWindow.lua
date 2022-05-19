@@ -266,6 +266,17 @@ function SummonEffectResWindow:playPartner(ind)
 
 					local animation1 = partnerAnimationName1[star]
 					local animation2 = partnerAnimationName2[star]
+					local group = PartnerTable:getGroup(self.partners_[ind])
+
+					if group == xyd.PartnerGroup.TIANYI then
+						if star == 10 then
+							animation1 = "texiao15"
+							animation2 = "texiao16"
+						elseif star > 10 then
+							animation1 = "texiao17"
+							animation2 = "texiao18"
+						end
+					end
 
 					self.effectComponemt:play(animation1, 1, function ()
 						if animation2 then

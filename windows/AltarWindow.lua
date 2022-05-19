@@ -72,6 +72,10 @@ function AltarItem:update(index, realIndex, info)
 				xyd.showToast(__("POTENTIALITY_BACK_ALTAR_TIP"))
 
 				return
+			elseif self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+				xyd.showToast(__("GROUP_ALTAR_NO_TIPS", __("GROUP_" .. xyd.PartnerGroup.TIANYI)))
+
+				return
 			end
 
 			self.parent_:selectHero(info, flag, self.heroIcon_)
@@ -82,7 +86,7 @@ function AltarItem:update(index, realIndex, info)
 
 	self.heroIcon_.choose = self.parent_:isSelect(self.partnerId_)
 
-	if self.partner_:isLockFlag() or xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) then
+	if self.partner_:isLockFlag() or xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) or self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
 		self.heroIcon_:setLock(true)
 	else
 		self.heroIcon_:setLockImgVisible(false)
@@ -173,6 +177,10 @@ function BackItem:update(index, realIndex, info)
 				xyd.showToast(__("ALTAR_INFO_3"))
 
 				return
+			elseif self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+				xyd.showToast(__("GROUP_ALTAR_BACK_NO_TIPS", __("GROUP_" .. xyd.PartnerGroup.TIANYI)))
+
+				return
 			end
 
 			self.parent_:selectHero_back(info, self.heroIcon_)
@@ -187,7 +195,7 @@ function BackItem:update(index, realIndex, info)
 		self.heroIcon_.choose = false
 	end
 
-	if self.partner_:isLockFlag() or xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) then
+	if self.partner_:isLockFlag() or xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) or self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
 		self.heroIcon_:setLock(true)
 	else
 		self.heroIcon_:setLockImgVisible(false)
@@ -1285,6 +1293,8 @@ function AltarWindow:onClickBtnDatail()
 		baseItems[xyd.ItemID.PARTNER_EXP] = (baseItems[xyd.ItemID.PARTNER_EXP] or 0) + (res[1][xyd.ItemID.PARTNER_EXP] or 0)
 		baseItems[xyd.ItemID.GRADE_STONE] = (baseItems[xyd.ItemID.GRADE_STONE] or 0) + (res[1][xyd.ItemID.GRADE_STONE] or 0)
 		baseItems[xyd.ItemID.SOUL_STONE] = (baseItems[xyd.ItemID.SOUL_STONE] or 0) + (res[1][xyd.ItemID.SOUL_STONE] or 0)
+		baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] = (baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] or 0) + (res[1][xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] or 0)
+		baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] = (baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] or 0) + (res[1][xyd.ItemID.SKILL_RESONATE_DARK_STONE] or 0)
 	end
 
 	for _, v in ipairs(treasureItems) do
@@ -1309,6 +1319,20 @@ function AltarWindow:onClickBtnDatail()
 		table.insert(decomposeItems, {
 			item_id = xyd.ItemID.SOUL_STONE,
 			item_num = baseItems[xyd.ItemID.SOUL_STONE]
+		})
+	end
+
+	if baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] and baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE] > 0 then
+		table.insert(decomposeItems, {
+			item_id = xyd.ItemID.SKILL_RESONATE_LIGHT_STONE,
+			item_num = baseItems[xyd.ItemID.SKILL_RESONATE_LIGHT_STONE]
+		})
+	end
+
+	if baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] and baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE] > 0 then
+		table.insert(decomposeItems, {
+			item_id = xyd.ItemID.SKILL_RESONATE_DARK_STONE,
+			item_num = baseItems[xyd.ItemID.SKILL_RESONATE_DARK_STONE]
 		})
 	end
 

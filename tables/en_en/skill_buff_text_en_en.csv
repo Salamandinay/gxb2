@@ -104,5 +104,5 @@ id,buff_id,plus_minus,name,sec
 107,spzglAllHarm,,Tailwinds,A Skill Effect. Increases all damage dealt by the owner of this Effect based on her Attack attribute.
 108,dotMaxHp,,Liquid Poison,"A Damage Over Time Effect. Deals damage based on the owner's Maximum HP to the owner of this effect when afflicted and at the end of each Round in the duration of this effect. If damage dealt is lower than 50% of the caster's Attack, then this effect will deal damage equivalent to 50% of the caster's Attack."
 109,hypoxia,,Suffocate,"A Skill Effect. The owner of this Skill Effect will have its Heal Received reduced by 50%, Energy gain reduced by 50%, and take 100% more damage from Damage Over Time effects."
-110,xierkediDot,,Miasma,-1
-111,xierkediPower,,Starburst,-1
+110,xierkediDot,,Miasma,"A Skill Effect. Reduces damage dealt by the owner of this Effect to the caster of this Effect, and deals damage to the owner at the end of every round."
+111,xierkediPower,,Starburst,"A Skill Effect. Increases Attack, Crit, and Precision of the owner of this Effect. The owner of this Effect will Dodge damage and effects of enemies' Attacks and Skills that target random enemies."

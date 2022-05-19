@@ -55,7 +55,7 @@ function GameAssistantDungeonShopWindow:getUIComponent()
 end
 
 function GameAssistantDungeonShopWindow:initUIComponent()
-	self.labelTitle.text = __("GAME_ASSISTANT_TEXT27")
+	self.labelTitle.text = __("GAME_ASSISTANT_TEXT35")
 	self.labelTab1.text = __("GAME_ASSISTANT_TEXT40")
 	self.labelTab2.text = __("GAME_ASSISTANT_TEXT41")
 	self.labelTab3.text = __("GAME_ASSISTANT_TEXT42")
@@ -82,6 +82,10 @@ end
 
 function GameAssistantDungeonShopWindow:Register()
 	self.eventProxy_:addEventListener(xyd.event.DUNGEON_BUY_ITEM, handler(self, self.onBuyItem))
+	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, function ()
+		self.labelGold.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.MANA))
+		self.labelCrystal.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL))
+	end)
 
 	UIEventListener.Get(self.btnClose).onClick = function ()
 		xyd.closeWindow(self.name_)

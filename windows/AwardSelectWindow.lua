@@ -27,6 +27,7 @@ function AwardSelectWindow:ctor(name, params)
 	self.itemID = self.params_.itemID or 0
 	self.itemType = self.params_.itemType or xyd.ItemType.NORMAL
 	self.curNum_ = 1
+	self.selectMinNum = params.selectMinNum
 end
 
 function AwardSelectWindow:getUIComponent()
@@ -58,11 +59,17 @@ function AwardSelectWindow:layout()
 		self.curNum_ = num
 	end
 
-	self.selectNum_:setInfo({
+	local param = {
 		maxNum = self.itemNum,
 		curNum = math.min(self.itemNum, self.useMaxNum),
 		callback = callback
-	})
+	}
+
+	if self.selectMinNum then
+		param.minNum = self.selectMinNum
+	end
+
+	self.selectNum_:setInfo(param)
 	self.selectNum_:setFontSize(26, 26)
 	self.selectNum_:setKeyboardPos(0, -180)
 
@@ -175,7 +182,7 @@ end
 function AwardSelectWindow:onSureBtn()
 	if self.selectedItemId ~= nil then
 		if self.sureCallback then
-			self.sureCallback(self.selectedItemId)
+			self.sureCallback(self.selectedItemId, self.curNum_)
 		else
 			local chooseItemID = self.selectedItemId
 			local itemType = xyd.tables.itemTable:getType(chooseItemID)

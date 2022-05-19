@@ -52,7 +52,23 @@ function DatesListWindow:initWindow()
 	self:initTopGroup()
 	self:initLayout()
 	self:registerEvent()
+	self:initFilter()
 	self:initData()
+end
+
+function DatesListWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:changeFilter(group)
+		end),
+		width = self.filterGroup:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.chosenGroup
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.filterGroup.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function DatesListWindow:getUIComponent()
@@ -60,12 +76,7 @@ function DatesListWindow:getUIComponent()
 	local bottom = winTrans:NodeByName("bottom").gameObject
 	local main = winTrans:NodeByName("main").gameObject
 	local filter = bottom:NodeByName("filter").gameObject
-
-	for i = 1, 6 do
-		self["group" .. i] = filter:NodeByName("e:Group/group" .. i).gameObject
-		self["group" .. i .. "_chosen"] = self["group" .. i]:NodeByName("group" .. i .. "_chosen").gameObject
-	end
-
+	self.filterGroup = filter:NodeByName("filterGroup").gameObject
 	self.sortBtn = filter:NodeByName("sortBtn").gameObject
 	self.sortPop = filter:NodeByName("sortPop").gameObject
 	self.starSort = self.sortPop:NodeByName("starSort").gameObject
@@ -102,12 +113,6 @@ function DatesListWindow:getUIComponent()
 end
 
 function DatesListWindow:registerEvent()
-	for i = 1, 6 do
-		UIEventListener.Get(self["group" .. i]).onClick = function ()
-			self:changeFilter(i)
-		end
-	end
-
 	UIEventListener.Get(self.sortBtn).onClick = handler(self, self.onClickSortBtn)
 end
 
@@ -156,17 +161,6 @@ end
 
 function DatesListWindow:initLayout()
 	self.sortPop:SetActive(false)
-
-	local groupIds = xyd.tables.groupTable:getGroupIds()
-
-	for _, id in ipairs(groupIds) do
-		self["group" .. tostring(id) .. "_chosen"]:SetActive(false)
-	end
-
-	if self.chosenGroup > 0 then
-		self["group" .. tostring(self.chosenGroup) .. "_chosen"]:SetActive(true)
-	end
-
 	xyd.setBtnLabel(self.sortBtn, {
 		text = __("SORT")
 	})
@@ -224,16 +218,6 @@ function DatesListWindow:changeFilter(chosenGroup)
 		self.chosenGroup = 0
 	else
 		self.chosenGroup = chosenGroup
-	end
-
-	local groupIds = xyd.tables.groupTable:getGroupIds()
-
-	for _, id in ipairs(groupIds) do
-		if id == self.chosenGroup then
-			self["group" .. tostring(id) .. "_chosen"]:SetActive(true)
-		else
-			self["group" .. tostring(id) .. "_chosen"]:SetActive(false)
-		end
 	end
 
 	self:updateDataGroup()

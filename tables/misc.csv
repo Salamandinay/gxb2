@@ -58,7 +58,7 @@ gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,54018#654025#754018,-1
 gacha_ensure_partner_handbook,54018#654025#754018,-1
 daily_mail_awards_gacha,2,-1
-daily_mail_awards_tree,3|42,-1
+daily_mail_awards_tree,3|18|37,-1
 daily_mail_awards_gamble,18|37|48,-1
 daily_mail_awards_drift,30|6|40|43,-1
 daily_mail_awards_lost_space,50,-1
@@ -113,7 +113,7 @@ activity_boss_fight_cost,28#1,-1
 activity_boss_open_award,9,-1
 activity_cv_share_award,2#100,-1
 stage_activity_dropbox,74,-1
-stage_activity_dropbox2,20,-1
+stage_activity_dropbox2,16,-1
 stage_activity_dropbox3,74,-1
 stage_activity_dropbox4,74,-1
 guild_transfer_cd,604800,-1
@@ -456,7 +456,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,kaixi_pifu03_lihui01|354|-2225|0.63|5401604|7260,-1
+activity_45_hero_model,nuolisi_pifu03_lihui01|470|-1156|0.63|5401704|7267,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -817,7 +817,7 @@ activity_popularity_vote_open,60,-1
 dress_gacha_dropbox4,50001,-1
 dress_gacha_dropbox5,50003,-1
 dress_common_fragment_qlt_item_ids,3999991|3999992|3999993|3999994|3999995|3999996,-1
-dress_gacha_show,3201081|3201087|3201093|3201099|3201105,-1
+dress_gacha_show,3101081|3101087|3101093|3101099|3101105,-1
 dress_gacha_free1,86400|1,-1
 dress_gacha_free2,43200|1,-1
 activity_equip_decompose,262|60000|6000,-1
@@ -1083,4 +1083,5 @@ skill_resonate_reset_cost,2#500,-1
 star_origin_reset_cost,2#500,-1
 partner_group7_summon,10270,-1
 star_origin_drawcard_endtime,1653609600,-1
-skill_resonate_level_limit,0|0|0|2|2|4|4|6|6|8,-1
+skill_resonate_level_limit,0|0|1|1|3|3|5|5|7|-1,-1
+starry_altar_open_time,1653004800,-1

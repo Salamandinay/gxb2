@@ -592,6 +592,10 @@ function AcademyAssessmentWindow:initWindow()
 		})
 	end
 
+	xyd.db.misc:setValue({
+		key = "academy_assessment_daily_redpoint",
+		value = xyd.getServerTime()
+	})
 	self:getUIComponent()
 	self:registerEvent()
 	print("LOAD ===========")

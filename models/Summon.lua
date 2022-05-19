@@ -28,6 +28,8 @@ function Summon:onRegister()
 	self:registerEvent(xyd.event.SUMMON_WISH, handler(self, self.onUpdateData))
 	self:registerEvent(xyd.event.GET_DRESS_SUMMON_INFO, handler(self, self.onDressData))
 	self:registerEvent(xyd.event.SUMMON_DRESS, handler(self, self.updateDressData))
+	self:registerEvent(xyd.event.GET_STARRY_SUMMON_INFO, handler(self, self.onGetStarrySummonInfo))
+	self:registerEvent(xyd.event.SET_STARRY_SUMMON_AWARD, handler(self, self.onSetStarrySummonAward))
 	self:updateRedPoint()
 end
 
@@ -191,6 +193,20 @@ function Summon:updateDressData(event)
 	end
 end
 
+function Summon:onGetStarrySummonInfo(event)
+	local data = event.data
+	self.starrySelects = data.selects
+end
+
+function Summon:onSetStarrySummonAward(event)
+	local data = event.data
+	self.starrySelects = data.selects
+end
+
+function Summon:getStarrySelects()
+	return self.starrySelects
+end
+
 function Summon:getData()
 	local msg = {}
 
@@ -323,6 +339,40 @@ function Summon:reqSummonDress(summon_id, num)
 	msg.times = num
 
 	xyd.Backend:get():request(xyd.mid.SUMMON_DRESS, msg)
+end
+
+function Summon:reqStarrySummonInfo()
+	local msg = messages_pb.get_starry_summon_info_req()
+
+	xyd.Backend:get():request(xyd.mid.GET_STARRY_SUMMON_INFO, msg)
+end
+
+function Summon:setStarrySummonAward(summonIds, indexs)
+	local msg = messages_pb.set_starry_summon_award_req()
+
+	for i in pairs(summonIds) do
+		table.insert(msg.summon_ids, summonIds[i])
+	end
+
+	for i in pairs(indexs) do
+		table.insert(msg.indexs, indexs[i])
+	end
+
+	xyd.Backend:get():request(xyd.mid.SET_STARRY_SUMMON_AWARD, msg)
+end
+
+function Summon:starrySummon(summonId, times)
+	local msg = messages_pb.starry_summon_req()
+	msg.summon_id = summonId
+	msg.times = times
+
+	xyd.Backend:get():request(xyd.mid.STARRY_SUMMON, msg)
+end
+
+function Summon:reqStarrySummonLog()
+	local msg = messages_pb.get_starry_summon_log_res()
+
+	xyd.Backend:get():request(xyd.mid.GET_STARRY_SUMMON_LOG, msg)
 end
 
 function Summon:changeDressSkipAnimation()

@@ -8,6 +8,8 @@ function SkinTipWindow:ctor(name, params)
 
 	self.skinID = params.skin_id
 	self.tableID = params.tableID
+
+	dump(params, "test")
 end
 
 function SkinTipWindow:getUIComponent()
@@ -39,7 +41,21 @@ function SkinTipWindow:setLayout()
 		return
 	end
 
-	if xyd.tables.itemTable:getType(self.skinID) == xyd.ItemType.SKIN then
+	local type = xyd.tables.itemTable:getType(self.skinID)
+
+	if type == xyd.ItemType.SKIN then
+		local itemType = xyd.tables.itemTable:getType(self.tableID)
+
+		if itemType == xyd.ItemType.HERO and xyd.tables.partnerTable:getGroup(self.tableID) == xyd.PartnerGroup.TIANYI then
+			local partnerShowIds = xyd.tables.partnerTable:getShowIdsWithNum(self.tableID)
+
+			if xyd.arrayIndexOf(partnerShowIds, self.skinID) > 1 then
+				type = xyd.ItemType.HERO
+			end
+		end
+	end
+
+	if type == xyd.ItemType.SKIN then
 		self.labelName.text = xyd.tables.equipTextTable:getName(self.skinID)
 
 		xyd.labelQulityColor(self.labelName, self.skinID)
@@ -94,6 +110,21 @@ function SkinTipWindow:setLayout()
 		avatar:setScale(self.groupAvatarWidget.width / avatar.go:GetComponent(typeof(UIWidget)).width)
 
 		self.labelOwn.text = ""
+
+		if self.skinID then
+			local itemType = xyd.tables.itemTable:getType(self.tableID)
+
+			if itemType == xyd.ItemType.HERO and xyd.tables.partnerTable:getGroup(self.tableID) == xyd.PartnerGroup.TIANYI then
+				local partnerShowIds = xyd.tables.partnerTable:getShowIdsWithNum(self.tableID)
+				local index = xyd.arrayIndexOf(partnerShowIds, self.skinID)
+
+				if index == 1 then
+					self.labelAttr.text = __("SKIN_TEXT06", name)
+				elseif index > 1 then
+					self.labelAttr.text = xyd.tables.itemTable:getDesc(self.skinID)
+				end
+			end
+		end
 	end
 end
 

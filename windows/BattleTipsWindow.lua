@@ -35,11 +35,45 @@ function BattleTipsWindow:getUIComponent()
 	self.labelDesc = self.groupAction:ComponentByName("labelDesc", typeof(UILabel))
 	self.handNode_ = self.groupAction:NodeByName("handNode_").gameObject
 	self.closeBtn = self.groupAction:NodeByName("closeBtn").gameObject
+
+	for i = 1, 4 do
+		self["label" .. i] = self.groupAction:ComponentByName("group1/group" .. i .. "/label" .. i, typeof(UILabel))
+	end
+
+	for i = 5, 6 do
+		self["label" .. i] = self.groupAction:ComponentByName("group2/group" .. i .. "/label" .. i, typeof(UILabel))
+	end
+
+	for i = 7, 7 do
+		self["label" .. i] = self.groupAction:ComponentByName("group3/group" .. i .. "/label" .. i, typeof(UILabel))
+	end
+
+	self.group7 = self.groupAction:NodeByName("group3/group7").gameObject
+	self.group7Desc = self.groupAction:ComponentByName("group3/group7Desc", typeof(UILabel))
 end
 
 function BattleTipsWindow:layout()
 	self.labelTitle_.text = __("BATTLE_TIPS_TITLE")
 	self.labelDesc.text = __("BATTLE_TIPS_DESC2")
+
+	for i = 1, xyd.GROUP_NUM do
+		self["label" .. i].text = __("GROUP_" .. i)
+	end
+
+	self.group7Desc.text = __("BATTLE_TIPS_DESC3")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.group7Desc.width = 216
+
+		self.group7Desc.gameObject:X(50)
+		self.group7Desc.gameObject:Y(-7)
+		self.group7:X(-124)
+	elseif xyd.Global.lang == "de_de" then
+		self.group7Desc.width = 280
+
+		self.group7Desc.gameObject:X(57)
+		self.group7:X(-140)
+	end
 end
 
 function BattleTipsWindow:showGuideHand()
@@ -64,63 +98,6 @@ function BattleTipsWindow:initHand()
 end
 
 function BattleTipsWindow:iosTestChangeUI()
-	local allSprites = self.window_:GetComponentsInChildren(typeof(UISprite), true)
-
-	for i = 0, allSprites.Length - 1 do
-		local sprite = allSprites[i]
-
-		xyd.setUISprite(sprite, nil, sprite.spriteName .. "_ios_test")
-	end
-
-	self.closeBtn:GetComponent(typeof(UISprite)).height = 18
-	self.closeBtn:GetComponent(typeof(UISprite)).width = 18
-	self.labelTitle_.color = Color.New2(4294967295.0)
-	self.labelTitle_.effectStyle = UILabel.Effect.None
-	self.labelDesc.color = Color.New2(4294967295.0)
-	local groupChildren = self.groupAction:NodeByName("group1").gameObject:GetComponentsInChildren(typeof(UISprite), true)
-	local xyz = {
-		{
-			-174,
-			-66
-		},
-		{
-			-65,
-			39
-		},
-		{
-			-174,
-			44
-		},
-		{
-			-65,
-			-70
-		},
-		{
-			-38,
-			-16
-		},
-		{
-			-122,
-			-93
-		},
-		{
-			-204,
-			-16
-		},
-		{
-			-122,
-			66
-		}
-	}
-
-	for i = 0, 3 do
-		groupChildren[i].height = 58
-		groupChildren[i].width = 58
-	end
-
-	for i = 0, groupChildren.Length - 1 do
-		groupChildren[i]:SetLocalPosition(xyz[i + 1][1], xyz[i + 1][2], 0)
-	end
 end
 
 return BattleTipsWindow

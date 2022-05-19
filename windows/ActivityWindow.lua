@@ -1648,6 +1648,15 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.SPRING_GIFTBAG] = function ()
 		return require("app.windows.activity.SpringGiftBag")
+	end,
+	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_MISSION] = function ()
+		return require("app.windows.activity.ActivityStarAltarMission")
+	end,
+	[xyd.ActivityID.NEW_PARTNER_WARMUP_GIFTBAG] = function ()
+		return require("app.windows.activity.NewPartnerWarmupGiftbag")
+	end,
+	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = function ()
+		return require("app.windows.activity.StarAltarGiftBag")
 	end
 }
 

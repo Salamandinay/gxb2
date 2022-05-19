@@ -12,6 +12,7 @@ function GroupBuffDetailWindow:ctor(name, params)
 	self.DBuffTable = xyd.tables.dBuffTable
 	self.skinName = "GroupBuffDetailWindowSkin"
 	self.buffID_ = params.buffID
+	self.group7Num = params.group7Num or 0
 	self.type_ = params.type or xyd.GroupBuffIconType.GROUP_BUFF
 
 	if params.contenty then
@@ -57,12 +58,8 @@ function GroupBuffDetailWindow:getUIComponents()
 	self.content = content:GetComponent(typeof(UIWidget))
 	local bottom = content:NodeByName("bottom").gameObject
 	self.labelDes = bottom:ComponentByName("labelDes", typeof(UILabel))
-	local attrGroup = bottom:NodeByName("attrGroup").gameObject
-	self.attrGroupTable = attrGroup:GetComponent(typeof(UITable))
-	self.labelAttr1 = attrGroup:ComponentByName("labelAttr1", typeof(UILabel))
-	self.labelAttr2 = attrGroup:ComponentByName("labelAttr2", typeof(UILabel))
-	self.labelAttrNum1 = attrGroup:ComponentByName("labelAttrNum1", typeof(UILabel))
-	self.labelAttrNum2 = attrGroup:ComponentByName("labelAttrNum2", typeof(UILabel))
+	self.attrGroup = bottom:NodeByName("attrGroup").gameObject
+	self.attrGroupTable = self.attrGroup:GetComponent(typeof(UITable))
 	self.initHeight = self.labelDes.height
 	self.baseConHeight = self.content.height
 end
@@ -81,7 +78,9 @@ function GroupBuffDetailWindow:initLayOut()
 	buffIcon:SetLocalScale(0.85, 0.85, 1)
 
 	self.labelLine1.text = __("GROUP_BUFF_DES")
-	local desc, name_, effectShowData = nil
+	local desc, name_ = nil
+	local addStr = "+ "
+	local effectShowData = nil
 
 	if self.type_ == xyd.GroupBuffIconType.HERO_CHALLENGE then
 		desc = xyd.tables.partnerChallengeBuffTable:getDesc(self.buffID_)
@@ -104,6 +103,12 @@ function GroupBuffDetailWindow:initLayOut()
 		desc = xyd.tables.activityFairArenaBoxBuffTable:getDesc(self.buffID_)
 		name_ = xyd.tables.activityFairArenaBoxBuffTable:getName(self.buffID_)
 		effectShowData = {}
+	elseif self.buffID_ == xyd.GROUP_7_BUFF then
+		addStr = "+"
+		self.attrGroupTable.enabled = false
+		desc = self.GroupBuffTextTable:getDesc(self.buffID_)
+		name_ = self.GroupBuffTextTable:getName(self.buffID_)
+		effectShowData = xyd.split(self.GroupBuffTable:getEffectShow(self.buffID_), "@")
 	else
 		desc = self.GroupBuffTextTable:getDesc(self.buffID_)
 		name_ = self.GroupBuffTextTable:getName(self.buffID_)
@@ -116,6 +121,9 @@ function GroupBuffDetailWindow:initLayOut()
 	local poses = xyd.tables.groupBuffTable:getEffectStands(self.buffID_)
 
 	for i = 1, #effectShowData do
+		local labelAttr = self.attrGroup:ComponentByName("labelAttr" .. i, typeof(UILabel))
+		local labelAttrNum = self.attrGroup:ComponentByName("labelAttrNum" .. i, typeof(UILabel))
+
 		if effectShowData[i] then
 			local effectData = xyd.split(effectShowData[i], "#")
 			local effectName = effectData[1]
@@ -123,24 +131,46 @@ function GroupBuffDetailWindow:initLayOut()
 			local pos_label = self:getPosDesc(poses[i])
 
 			if pos_label ~= "" then
-				self["labelAttr" .. i].text = __("POSITION_DESC", pos_label, xyd.tables.dBuffTable:getDesc(effectName))
+				labelAttr.text = __("POSITION_DESC", pos_label, xyd.tables.dBuffTable:getDesc(effectName))
 			else
-				self["labelAttr" .. i].text = xyd.tables.dBuffTable:getDesc(effectName)
+				labelAttr.text = xyd.tables.dBuffTable:getDesc(effectName)
 			end
 
 			local factor = tonumber(self.DBuffTable:getFactor(effectName) or 1)
 
+			if factor <= 0 then
+				factor = 1
+			end
+
 			if self.DBuffTable:isShowPercent(effectName) then
-				self["labelAttrNum" .. tostring(i)].text = "+ " .. tostring(effectNum / factor * 100) .. "%"
+				labelAttrNum.text = addStr .. tostring(effectNum / factor * 100) .. "%"
 			else
-				self["labelAttrNum" .. tostring(i)].text = "+ " .. tostring(effectNum)
+				labelAttrNum.text = addStr .. tostring(effectNum)
+			end
+
+			if self.buffID_ == xyd.GROUP_7_BUFF then
+				labelAttrNum.text = labelAttr.text .. labelAttrNum.text
+				labelAttr.text = __("GROUP_7_BUFF_TIP", i)
+
+				labelAttr.gameObject:X(19)
+				labelAttrNum.gameObject:X(430 - labelAttrNum.width)
+
+				if self.group7Num < i then
+					labelAttr.color = Color.New2(2829955839.0)
+					labelAttrNum.color = Color.New2(2829955839.0)
+				else
+					labelAttr.color = Color.New2(11731199)
+					labelAttrNum.color = Color.New2(472325119)
+				end
 			end
 
 			height = height + 30
 		end
 	end
 
-	self.attrGroupTable:Reposition()
+	if self.buffID_ ~= xyd.GROUP_7_BUFF then
+		self.attrGroupTable:Reposition()
+	end
 
 	self.content.height = self.baseConHeight + height
 end

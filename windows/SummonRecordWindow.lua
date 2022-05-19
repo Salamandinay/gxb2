@@ -4,6 +4,7 @@ local SummonRecordWindowItem = class("SummonRecordWindowItem", import("app.commo
 local SummonRecordWindowIconItem = class("SummonRecordWindowIconItem", import("app.common.ui.FixedWrapContentItem"))
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
 local HeroIcon = import("app.components.HeroIcon")
+local ItemIcon = import("app.components.ItemIcon")
 local cjson = require("cjson")
 local SUMMON_TYPE = {
 	GUARANTEE = 5,
@@ -35,9 +36,13 @@ function SummonRecordWindow:initWindow()
 	self:register()
 	self:hide()
 
-	local msg = messages_pb:get_summon_log_req()
+	if self.params_.isStarry then
+		xyd.models.summon:reqStarrySummonLog()
+	else
+		local msg = messages_pb:get_summon_log_req()
 
-	xyd.Backend.get():request(xyd.mid.GET_SUMMON_LOG)
+		xyd.Backend.get():request(xyd.mid.GET_SUMMON_LOG)
+	end
 end
 
 function SummonRecordWindow:getUIComponent()
@@ -73,8 +78,10 @@ function SummonRecordWindow:onDragFinished()
 		self.checkFinish = true
 
 		for i = 1, #itemScrollerList do
-			itemScrollerList[i].enabled = false
-			itemScrollerList[i].enabled = true
+			if itemScrollerList[i] then
+				itemScrollerList[i].enabled = false
+				itemScrollerList[i].enabled = true
+			end
 		end
 
 		itemScrollerList = {}
@@ -85,7 +92,9 @@ function SummonRecordWindow:onDragMoving()
 	if self.scrollView then
 		if itemScrollerLock and not self.checkFinish then
 			for i = 1, #itemScrollerList do
-				itemScrollerList[i].enabled = false
+				if itemScrollerList[i] then
+					itemScrollerList[i].enabled = false
+				end
 			end
 		end
 
@@ -96,24 +105,85 @@ function SummonRecordWindow:onDragMoving()
 end
 
 function SummonRecordWindow:initUIComponent()
-	self.labelTitle.text = __("GACHA_RECORD_TITLE")
-	self.labelNoneTips.text = __("GACHA_RECORD_EMPTY")
+	if self.params_.isStarry then
+		self.labelTitle.text = __("STARRY_ALTAR_TEXT04")
+		self.labelNoneTips.text = __("STARRY_ALTAR_TEXT05")
+	else
+		self.labelTitle.text = __("GACHA_RECORD_TITLE")
+		self.labelNoneTips.text = __("GACHA_RECORD_EMPTY")
+	end
 end
 
 function SummonRecordWindow:register()
 	BaseWindow.register(self)
 
 	UIEventListener.Get(self.helpBtn).onClick = handler(self, function ()
-		xyd.WindowManager:get():openWindow("help_window", {
-			key = "GACHA_RECORD_HELP"
-		})
+		if self.params_.isStarry then
+			xyd.WindowManager:get():openWindow("help_window", {
+				key = "STARRY_ALTAR_HELP_2"
+			})
+		else
+			xyd.WindowManager:get():openWindow("help_window", {
+				key = "GACHA_RECORD_HELP"
+			})
+		end
 	end)
 
 	self.eventProxy_:addEventListener(xyd.event.GET_SUMMON_LOG, self.onSummonLog, self)
+	self.eventProxy_:addEventListener(xyd.event.GET_STARRY_SUMMON_LOG, self.onStarrySummonLog, self)
 
 	self.scrollView.onDragMoving = handler(self, self.onDragMoving)
 	self.scrollView.onDragStarted = handler(self, self.onDragStarted)
 	self.scrollView.onDragFinished = handler(self, self.onDragFinished)
+end
+
+function SummonRecordWindow:onStarrySummonLog(event)
+	self:show()
+
+	local list = event.data.list
+
+	if #list == 0 then
+		self.groupNone:SetActive(true)
+	else
+		self.groupNone:SetActive(false)
+	end
+
+	local collection = {}
+
+	for i = 1, #list do
+		local datas = xyd.split(list[i], "|")
+		local summonId = tonumber(datas[1])
+
+		if summonId > 2 then
+			summonId = 1
+		end
+
+		local summonRes = {}
+
+		for i = #datas, 2, -1 do
+			local summonData = xyd.split(datas[i], "#")
+			local params = {
+				isStarry = true,
+				itemId = summonData[1],
+				num = summonData[2] or 1
+			}
+
+			if not summonData[2] then
+				params.isPartner = true
+			end
+
+			table.insert(summonRes, params)
+		end
+
+		table.insert(collection, {
+			isStarry = true,
+			summonRes = summonRes,
+			summonId = summonId
+		})
+	end
+
+	self.wrapContent:setInfos(collection, {})
+	self.scrollView:ResetPosition()
 end
 
 function SummonRecordWindow:onSummonLog(event)
@@ -227,52 +297,69 @@ function SummonRecordWindowItem:onDragMoving()
 end
 
 function SummonRecordWindowItem:updateInfo()
-	local type = self.data.type
-	local times = self.data.times
-	local partners = self.data.partners
-
-	if type == SUMMON_TYPE.NORMAL then
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_normal_icon", nil, , true)
-	elseif type == SUMMON_TYPE.HIGH then
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_high_icon", nil, , true)
-	elseif type == SUMMON_TYPE.WISH then
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_wish_icon")
-	elseif type == SUMMON_TYPE.FRIENDSHIP then
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_friendship_icon", nil, , true)
-	elseif type == SUMMON_TYPE.GUARANTEE then
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_guarantee_icon", nil, , true)
-	else
-		xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_ticket_icon", nil, , true)
-	end
-
-	xyd.setUISpriteAsync(self.devideLine, nil, "summon_record_item_line")
-	xyd.setUISpriteAsync(self.bg, nil, "9gongge17")
-
+	local isStarry = self.data.isStarry
 	local collection = {}
-	local exist5Star = false
 
-	for i = 1, #partners do
-		table.insert(collection, {
-			partnerID = partners[i]
-		})
+	if isStarry then
+		local summonId = self.data.summonId
+		local summonRes = self.data.summonRes
+		local cost = xyd.tables.starryAltarTable:getCost(summonId)
+		local costIcon = xyd.getItemIconName(cost[1], true)
 
-		if xyd.tables.partnerTable:getStar(partners[i]) >= 5 then
-			exist5Star = true
-		end
-	end
+		xyd.setUISpriteAsync(self.summonTypeIcon, nil, costIcon, nil, , true)
+		xyd.setUISpriteAsync(self.devideLine, nil, "summon_record_item_line")
+		xyd.setUISpriteAsync(self.bg, nil, "9gongge17")
 
-	if exist5Star and #partners == 1 then
-		self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 92)
+		collection = summonRes
 
-		self.scroller.padding = Vector3(10, 0)
-	elseif exist5Star then
-		self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 107)
-
-		self.scroller.padding = Vector3(-5, 0)
+		self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 87)
 	else
-		self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 107)
+		local type = self.data.type
+		local times = self.data.times
+		local partners = self.data.partners
 
-		self.scroller.padding = Vector3(10, 0)
+		if type == SUMMON_TYPE.NORMAL then
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_normal_icon", nil, , true)
+		elseif type == SUMMON_TYPE.HIGH then
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_high_icon", nil, , true)
+		elseif type == SUMMON_TYPE.WISH then
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_wish_icon")
+		elseif type == SUMMON_TYPE.FRIENDSHIP then
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_friendship_icon", nil, , true)
+		elseif type == SUMMON_TYPE.GUARANTEE then
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_guarantee_icon", nil, , true)
+		else
+			xyd.setUISpriteAsync(self.summonTypeIcon, nil, "summon_record_ticket_icon", nil, , true)
+		end
+
+		xyd.setUISpriteAsync(self.devideLine, nil, "summon_record_item_line")
+		xyd.setUISpriteAsync(self.bg, nil, "9gongge17")
+
+		local exist5Star = false
+
+		for i = 1, #partners do
+			table.insert(collection, {
+				partnerID = partners[i]
+			})
+
+			if xyd.tables.partnerTable:getStar(partners[i]) >= 5 then
+				exist5Star = true
+			end
+		end
+
+		if exist5Star and #partners == 1 then
+			self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 92)
+
+			self.scroller.padding = Vector3(10, 0)
+		elseif exist5Star then
+			self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 107)
+
+			self.scroller.padding = Vector3(-5, 0)
+		else
+			self.scrollPanel:SetLeftAnchor(self.bg.gameObject, 0, 107)
+
+			self.scroller.padding = Vector3(10, 0)
+		end
 	end
 
 	self.wrapContent:setInfos(collection, {})
@@ -291,17 +378,77 @@ function SummonRecordWindowIconItem:initUI()
 end
 
 function SummonRecordWindowIconItem:updateInfo()
-	local partnerID = self.data.partnerID
+	local isStarry = self.data.isStarry
+
+	if isStarry then
+		local itemId = self.data.itemId
+		local num = self.data.num
+		local isPartner = self.data.isPartner
+
+		if isPartner then
+			self:updatePartnerIcon(itemId, true)
+		else
+			local type_ = xyd.tables.itemTable:getType(itemId)
+
+			if type_ ~= xyd.ItemType.HERO_DEBRIS and type_ ~= xyd.ItemType.HERO and type_ ~= xyd.ItemType.HERO_RANDOM_DEBRIS and type_ ~= xyd.ItemType.SKIN then
+				self:updateItemIcon(itemId, num)
+			else
+				self:updatePartnerIcon(itemId, false, num)
+			end
+		end
+	else
+		local partnerID = self.data.partnerID
+
+		self:updatePartnerIcon(partnerID, true)
+	end
+end
+
+function SummonRecordWindowIconItem:updateItemIcon(itemId, num)
+	if self.heroIcon then
+		self.heroIcon:SetActive(false)
+	end
+
+	if self.itemIcon then
+		self.itemIcon:setInfo({
+			scale = 0.7962962962962963,
+			noClick = true,
+			itemID = itemId,
+			num = num
+		})
+	else
+		self.itemIcon = ItemIcon.new(self.icon)
+
+		self.itemIcon:setInfo({
+			scale = 0.7962962962962963,
+			noClick = true,
+			itemID = itemId,
+			num = num
+		})
+	end
+
+	self.itemIcon:SetActive(true)
+	self.iconBg:SetActive(false)
+end
+
+function SummonRecordWindowIconItem:updatePartnerIcon(partnerID, isPartner, num)
+	if self.itemIcon then
+		self.itemIcon:SetActive(false)
+	end
 
 	if self.heroIcon then
 		self.heroIcon:setInfo({
-			noClick = true,
 			scale = 0.7962962962962963,
-			itemID = partnerID
+			noClick = true,
+			itemID = partnerID,
+			num = num
 		})
 
-		if xyd.tables.partnerTable:getStar(partnerID) >= 5 then
-			self.iconBg:SetActive(true)
+		if isPartner then
+			if xyd.tables.partnerTable:getStar(partnerID) >= 5 then
+				self.iconBg:SetActive(true)
+			else
+				self.iconBg:SetActive(false)
+			end
 		else
 			self.iconBg:SetActive(false)
 		end
@@ -309,17 +456,24 @@ function SummonRecordWindowIconItem:updateInfo()
 		self.heroIcon = HeroIcon.new(self.icon)
 
 		self.heroIcon:setInfo({
-			noClick = true,
 			scale = 0.7962962962962963,
-			itemID = partnerID
+			noClick = true,
+			itemID = partnerID,
+			num = num
 		})
 
-		if xyd.tables.partnerTable:getStar(partnerID) >= 5 then
-			self.iconBg:SetActive(true)
+		if isPartner then
+			if xyd.tables.partnerTable:getStar(partnerID) >= 5 then
+				self.iconBg:SetActive(true)
+			else
+				self.iconBg:SetActive(false)
+			end
 		else
 			self.iconBg:SetActive(false)
 		end
 	end
+
+	self.heroIcon:SetActive(true)
 end
 
 return SummonRecordWindow

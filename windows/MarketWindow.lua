@@ -286,7 +286,29 @@ end
 
 function MarketWindow:layOutUI()
 	self.shopInfo_ = self.shopModel_:getShopInfo(self.shopType_)
+
+	if self.shopType_ == xyd.ShopType.SHOP_BLACK_NEW then
+		local items = self.shopInfo_.items
+		local timestamp = xyd.tables.miscTable:getNumber("starry_altar_open_time", "value")
+
+		if xyd.getServerTime() < tonumber(timestamp) then
+			for i = 1, #items do
+				if tonumber(items[i].item[1]) == 358 then
+					self.donnotShowIndex = i
+				end
+			end
+		else
+			self.donnotShowIndex = nil
+		end
+	else
+		self.donnotShowIndex = nil
+	end
+
 	self.pageNum_ = math.ceil(#self.shopInfo_.items / MAXSLOT)
+
+	if self.donnotShowIndex then
+		self.pageNum_ = math.ceil((#self.shopInfo_.items - 1) / MAXSLOT)
+	end
 
 	self:initTimePart()
 	self:initDotState()
@@ -372,6 +394,10 @@ function MarketWindow:initItemsOnpage(pageNum)
 
 	for idx = 1, MAXSLOT do
 		local realIndex = MAXSLOT * (pageNum - 1) + idx
+
+		if self.donnotShowIndex and self.donnotShowIndex <= realIndex then
+			realIndex = realIndex + 1
+		end
 
 		if not self.itemList_[idx] then
 			local itemTemp = NGUITools.AddChild(tempGrid.gameObject, itemPrefab)
@@ -488,6 +514,11 @@ end
 function MarketWindow:refreshItemList(pageNum)
 	for idx = 1, MAXSLOT do
 		local realIndex = ((pageNum or self.page_) - 1) * MAXSLOT + idx
+
+		if self.donnotShowIndex and self.donnotShowIndex <= realIndex then
+			realIndex = realIndex + 1
+		end
+
 		local itemInfo = self.shopInfo_.items[realIndex]
 		local marketItem = self.itemList_[idx]
 

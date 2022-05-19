@@ -112,8 +112,32 @@ function GameAssistantWindow:initWindow()
 	self.labelTitle.text = __("GAME_ASSISTANT_TEXT01")
 	self.groupAction:ComponentByName("btnDoAllTab/label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT07")
 	self.groupAction:ComponentByName("btnCurTab/label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT06")
+	local timeStamp = xyd.db.misc:getValue("gameAssistant_todayHaveDoneData_timeStamp")
+
+	if not xyd.isSameDay(tonumber(timeStamp), xyd.getServerTime()) then
+		self.model:onSystemUpdate()
+	end
+
+	local flag = self.model:checkMarketNeedClear()
 
 	self:chooseTab(self.curTabIndex)
+
+	if flag then
+		xyd.WindowManager.get():openWindow("gamble_tips_window", {
+			hideGroupChoose = true,
+			type = "game_assistant_market_clear",
+			callback = function ()
+				xyd.openWindow("game_assistant_market_window", {
+					shopType = xyd.ShopType.SHOP_BLACK_NEW
+				})
+			end,
+			closeCallback = function ()
+			end,
+			text = __("GAME_ASSISTANT_TEXT109"),
+			btnYesText_ = __("YES"),
+			btnNoText_ = __("NO")
+		})
+	end
 end
 
 function GameAssistantWindow:register()
@@ -573,6 +597,7 @@ function GameAssistantWindow:updateArenaPart()
 		self.initArenaPart = true
 		self.arenaPart:ComponentByName("labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT21")
 		self.arenaPart:ComponentByName("battleGroup/labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT22")
+		self.arenaPart:ComponentByName("btnBattleFormation/label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT61")
 		local root = self.arenaPart:NodeByName("battleGroup/content").gameObject
 		root:ComponentByName("btnYes/label", typeof(UILabel)).text = __("YES")
 		root:ComponentByName("btnNo/label", typeof(UILabel)).text = __("NO")
@@ -584,6 +609,56 @@ function GameAssistantWindow:updateArenaPart()
 		end
 
 		UIEventListener.Get(root:NodeByName("btnYes").gameObject).onClick = function ()
+			if self.presetData.arena == true then
+				return
+			end
+
+			local arenaBattleFormationInfo = self.presetData.arenaBattleFormationInfo
+
+			if not arenaBattleFormationInfo.partners or #arenaBattleFormationInfo.partners == 0 then
+				xyd.alertTips(__("GAME_ASSISTANT_TIPS10"))
+				xyd.WindowManager.get():openWindow("battle_formation_window", {
+					alpha = 0.01,
+					battleType = xyd.BattleType.GAME_ASSISTANT_ARENA,
+					pet = xyd.models.arena:getPet(),
+					callback = function ()
+						arenaBattleFormationInfo = self.presetData.arenaBattleFormationInfo
+
+						if not arenaBattleFormationInfo.partners or #arenaBattleFormationInfo.partners == 0 then
+							xyd.models.gameAssistant.presetData.arena = false
+
+							xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan1")
+							xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan2")
+						else
+							xyd.models.gameAssistant.presetData.arena = true
+
+							xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan2")
+							xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan1")
+						end
+					end
+				})
+
+				return
+			end
+
+			xyd.models.gameAssistant.presetData.arena = true
+
+			xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan2")
+			xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan1")
+		end
+
+		UIEventListener.Get(root:NodeByName("btnNo").gameObject).onClick = function ()
+			if self.presetData.arena == false then
+				return
+			end
+
+			self.presetData.arena = false
+
+			xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan1")
+			xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan2")
+		end
+
+		UIEventListener.Get(self.arenaPart:NodeByName("btnBattleFormation").gameObject).onClick = function ()
 			local arenaBattleFormationInfo = self.presetData.arenaBattleFormationInfo
 
 			xyd.WindowManager.get():openWindow("battle_formation_window", {
@@ -606,17 +681,6 @@ function GameAssistantWindow:updateArenaPart()
 					end
 				end
 			})
-		end
-
-		UIEventListener.Get(root:NodeByName("btnNo").gameObject).onClick = function ()
-			if self.presetData.arena == false then
-				return
-			end
-
-			self.presetData.arena = false
-
-			xyd.setUISpriteAsync(root:ComponentByName("btnYes", typeof(UISprite)), nil, "setting_up_lan1")
-			xyd.setUISpriteAsync(root:ComponentByName("btnNo", typeof(UISprite)), nil, "setting_up_lan2")
 		end
 	end
 end
@@ -645,9 +709,21 @@ function GameAssistantWindow:updateGamblePart()
 	if not self.initGamblePart then
 		self.initGamblePart = true
 		self.gamblePart:ComponentByName("labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT26")
-		self.gamblePart:ComponentByName("content/labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT99")
+		self.gamblePart:ComponentByName("content/labelTiltle", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT104")
 
-		self:initGroup1(self.gamblePart:NodeByName("content").gameObject, self.presetData, "gamble")
+		self:initGroup2(self.gamblePart:NodeByName("content").gameObject, self.presetData, "gamble")
+
+		self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnYes/label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT105")
+		self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnFree/label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT106")
+
+		if xyd.Global.lang == "en_en" or xyd.Global.lang == "de_de" or xyd.Global.lang == "fr_fr" then
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnYes/label", typeof(UILabel)).width = 100
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnYes/label", typeof(UILabel)).height = 60
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnYes/label", typeof(UILabel)).pivot = UIWidget.Pivot.Center
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnFree/label", typeof(UILabel)).width = 100
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnFree/label", typeof(UILabel)).height = 60
+			self.gamblePart:NodeByName("content").gameObject:ComponentByName("btnFree/label", typeof(UILabel)).pivot = UIWidget.Pivot.Center
+		end
 	end
 end
 
@@ -731,7 +807,7 @@ function GameAssistantWindow:updateMarketPart()
 
 		contentBg.height = 575
 
-		self.dressShowPart:Y(-2629)
+		self.dressShowPart:Y(-2709)
 	else
 		self.marketPart:NodeByName("content/Res1Group").gameObject:Y(-325)
 		self.marketPart:NodeByName("content/Res2Group").gameObject:Y(-325)
@@ -740,7 +816,7 @@ function GameAssistantWindow:updateMarketPart()
 
 		contentBg.height = 446
 
-		self.dressShowPart:Y(-2499)
+		self.dressShowPart:Y(-2579)
 	end
 end
 

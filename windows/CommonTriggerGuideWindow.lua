@@ -312,10 +312,15 @@ function CommonTriggerGuideWindow:getWnd(index)
 	if self.table_ and self.table_.getWindowName then
 		local winName = self.table_:getWindowName(index)
 
+		print(index)
+		print(winName)
+
 		if winName then
 			local win = xyd.getWindow(winName)
 
 			if win then
+				print("winName")
+
 				return win
 			end
 		end

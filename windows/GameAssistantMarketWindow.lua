@@ -66,6 +66,26 @@ end
 
 function GameAssistantMarketWindow:layOutUI()
 	self.shopInfo_ = self.shopModel_:getShopInfo(self.shopType_)
+	local timestamp = xyd.tables.miscTable:getNumber("starry_altar_open_time", "value")
+
+	if xyd.getServerTime() < tonumber(timestamp) then
+		local items = self.shopInfo_.items
+
+		for i = 1, #items do
+			if tonumber(items[i].item[1]) == 358 then
+				self.donnotShowIndex = i
+			end
+		end
+	else
+		self.donnotShowIndex = nil
+	end
+
+	self.pageNum_ = math.ceil(#self.shopInfo_.items / MAXSLOT)
+
+	if self.donnotShowIndex then
+		self.pageNum_ = math.ceil((#self.shopInfo_.items - 1) / MAXSLOT)
+	end
+
 	self.pageNum_ = math.ceil(#self.shopInfo_.items / MAXSLOT)
 	self.btnSure:ComponentByName("label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT32")
 	self.btnReset:ComponentByName("label", typeof(UILabel)).text = __("GAME_ASSISTANT_TEXT31")
@@ -155,6 +175,10 @@ function GameAssistantMarketWindow:initItemsOnpage(pageNum)
 
 	for idx = 1, MAXSLOT do
 		local realIndex = MAXSLOT * (pageNum - 1) + idx
+
+		if self.donnotShowIndex and self.donnotShowIndex <= realIndex then
+			realIndex = realIndex + 1
+		end
 
 		if not self.itemList_[idx] then
 			local itemTemp = NGUITools.AddChild(tempGrid.gameObject, itemPrefab)

@@ -40,6 +40,7 @@ function CollectionSkinWindow:getComponent()
 	local partnerCardRoot = winTrans:NodeByName("partnerCardRoot").gameObject
 	self.labelWinTitle_ = winTrans:ComponentByName("topGroup/labelWinTitle", typeof(UILabel))
 	self.filterGroup_ = winTrans:NodeByName("filter/filterGroup")
+	self.filterGroupCommon = winTrans:NodeByName("filter/filterGroupCommon").gameObject
 	self.sortBtn = winTrans:NodeByName("filter/sortBtn").gameObject
 	self.sortBtnArrow = self.sortBtn:NodeByName("arrow")
 	self.sortBtnLable = self.sortBtn:ComponentByName("label", typeof(UILabel))
@@ -49,6 +50,8 @@ function CollectionSkinWindow:getComponent()
 	self.scrollView_ = winTrans:ComponentByName("content", typeof(UIScrollView))
 	self.grid_ = winTrans:ComponentByName("content/grid", typeof(MultiRowWrapContent))
 	self.wrapContent_ = require("app.common.ui.FixedMultiWrapContent").new(self.scrollView_, self.grid_, partnerCardRoot, PartnerCardRender, self)
+	self.partnerNone = winTrans:NodeByName("partnerNone").gameObject
+	self.labelNoneTips = self.partnerNone:ComponentByName("labelNoneTips", typeof(UILabel))
 end
 
 function CollectionSkinWindow:playOpenAnimation(callback)
@@ -93,24 +96,28 @@ function CollectionSkinWindow:initLayout()
 	self.sortBtnLable.text = __("HOUSE_TEXT_13")
 	self.filterList_ = {}
 
-	for i = 1, 6 do
-		local filterItem = self.filterGroup_:NodeByName("guide" .. i)
-		local chosenImg = filterItem:NodeByName("chosen").gameObject
+	self:initFilter()
 
-		chosenImg:SetActive(i == self.chosenGroup_)
-		table.insert(self.filterList_, {
-			item = filterItem.gameObject,
-			chosenImg = chosenImg
-		})
+	self.labelNoneTips.text = __("NO_SKINS_TIPS")
+end
 
-		UIEventListener.Get(filterItem.gameObject).onClick = function ()
-			self:changeFilter(i)
-		end
-	end
+function CollectionSkinWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:changeFilter(group)
+		end),
+		width = self.filterGroupCommon:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.chosenGroup_
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.filterGroupCommon.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function CollectionSkinWindow:initData()
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		local res = {}
 		local sortedPartners = self:getSkinsByGroup(i)
 
@@ -199,15 +206,17 @@ function CollectionSkinWindow:changeFilter(chosenGroup)
 		self.chosenGroup_ = chosenGroup
 	end
 
-	for i = 1, 6 do
-		self.filterList_[i].chosenImg:SetActive(i == self.chosenGroup_)
-	end
-
 	self:updateDataGroup()
 end
 
 function CollectionSkinWindow:updateDataGroup()
 	local collection = self:getNowSortedSkins()
+
+	if next(collection) == nil then
+		self.partnerNone:SetActive(true)
+	else
+		self.partnerNone:SetActive(false)
+	end
 
 	self.wrapContent_:setInfos(collection, {})
 end

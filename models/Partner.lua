@@ -82,6 +82,12 @@ function Partner:populate(params)
 		table.insert(self.ex_skills, v)
 	end
 
+	self.star_origin = {}
+
+	for _, v in ipairs(params.star_origin or {}) do
+		table.insert(self.star_origin, v)
+	end
+
 	self.treasures = xyd.checkCondition(params.treasures and params.treasures[1], params.treasures, {})
 	self.select_treasure = params.select_treasure or 1
 	self.isCollected_ = self:isCollected()
@@ -105,11 +111,17 @@ function Partner:getExSkills()
 	return self.ex_skills
 end
 
+function Partner:getStarOrigin()
+	return self.star_origin
+end
+
 function Partner:getTotalExLev()
 	local result = 0
 
-	for k, v in ipairs(self:getExSkills()) do
-		result = result + v
+	if self:getExSkills() ~= nil then
+		for k, v in ipairs(self:getExSkills()) do
+			result = result + v
+		end
 	end
 
 	return result
@@ -128,6 +140,14 @@ function Partner:updateExSkills(ex_skills)
 
 	for _, v in ipairs(ex_skills or {}) do
 		table.insert(self.ex_skills, v)
+	end
+end
+
+function Partner:updateStarOrigin(s)
+	self.star_origin = {}
+
+	for _, v in ipairs(s or {}) do
+		table.insert(self.star_origin, v)
 	end
 end
 
@@ -314,6 +334,38 @@ function Partner:getDecompose()
 		end
 	end
 
+	if self.star >= 15 then
+		local flag = false
+
+		for i = 1, #self.star_origin do
+			if self.star_origin[i] > 0 then
+				flag = true
+
+				break
+			end
+		end
+
+		if flag then
+			local partnerTableID = self.tableID
+			local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
+			local startIDs = xyd.tables.starOriginListTable:getStarIDs(listTableID)
+
+			for i = 1, #startIDs do
+				local beginID = startIDs[i]
+				local lev = self.star_origin[i]
+
+				if lev and lev > 0 then
+					local starOriginTableID = xyd.tables.starOriginTable:getIdByBeginIDAndLev(beginID, lev)
+					local totalCost = xyd.tables.starOriginTable:getCostTotal(starOriginTableID)
+
+					for _, cost in ipairs(totalCost) do
+						baseItems[cost[1]] = (baseItems[cost[1]] or 0) + cost[2]
+					end
+				end
+			end
+		end
+	end
+
 	local exp = math.floor(xyd.tables.miscTable:getVal("decompose_partner_exp_return_ratio", true) * xyd.tables.expPartnerTable:getAllExp(self.lev))
 	baseItems[xyd.ItemID.PARTNER_EXP] = (baseItems[xyd.ItemID.PARTNER_EXP] or 0) + exp
 
@@ -379,8 +431,15 @@ function Partner:getAwakeItemCost()
 		else
 			return nil
 		end
-	else
+	elseif self:getGroup() ~= xyd.PartnerGroup.TIANYI then
 		return xyd.tables.partnerTable:getAwakeItemCost(self.tableID, self.awake)
+	elseif self:getGroup() == xyd.PartnerGroup.TIANYI then
+		local cost = {}
+
+		table.insert(cost, xyd.tables.partnerTable:getAwakeItemCost(self.tableID, self.awake))
+		table.insert(cost, xyd.tables.partnerGroup7Table:getExMaterial(self.tableID, self.awake))
+
+		return cost
 	end
 end
 
@@ -700,7 +759,7 @@ end
 function Partner:changeShowID(showID)
 	local msg = messages_pb:set_show_id_req()
 	msg.partner_id = self.partnerID
-	msg.show_id = showID
+	msg.show_id = tonumber(showID)
 
 	xyd.Backend.get():request(xyd.mid.SET_SHOW_ID, msg)
 end
@@ -851,7 +910,8 @@ function Partner:getInfo()
 		wedding_date = self.wedding_date,
 		travel = self.travel,
 		potentials_bak = self.potentials_bak,
-		treasures = self.treasures
+		treasures = self.treasures,
+		star_origin = self.star_origin
 	}
 end
 

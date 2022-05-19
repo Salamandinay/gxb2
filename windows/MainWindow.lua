@@ -153,21 +153,24 @@ function MainTopRightBtn:ctor(goItem, id)
 			"BP_TITLE",
 			"QUIZ",
 			"PET",
-			"TRAVEL_TITLE"
+			"TRAVEL_TITLE",
+			"STARRY_ALTAR"
 		},
 		img = {
 			"right_friend_icon_v3",
 			"right_battlepass_icon_v4",
 			"right_quiz_icon_v3",
 			"left_pet_icon",
-			"right_explore_icon"
+			"right_explore_icon",
+			"right_starry_altar_icon"
 		},
 		funcId = {
 			xyd.FunctionID.FRIEND,
 			xyd.FunctionID.MISSION,
 			xyd.FunctionID.QUIZ,
 			xyd.FunctionID.PET,
-			xyd.FunctionID.EXPLORE
+			xyd.FunctionID.EXPLORE,
+			xyd.FunctionID.STARRY_ALTAR
 		}
 	}
 	self.id = id
@@ -995,10 +998,24 @@ function MainWindow:initTopBtnGroup()
 			if xyd.models.exploreModel:getTrainRoomsInfo() then
 				xyd.WindowManager.get():openWindow("explore_window")
 			end
+		end,
+		function ()
+			if not xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR) then
+				return
+			end
+
+			xyd.WindowManager.get():openWindow("starry_altar_window")
+			MainMap:stopSound()
 		end
 	}
+	local beforeOpen = false
+	local maxRBId = 5
 
-	for i = 1, 5 do
+	if xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR) then
+		maxRBId = 6
+	end
+
+	for i = 1, maxRBId do
 		local go = NGUITools.AddChild(self.transTopR.gameObject, self.topRightBtn.gameObject)
 
 		go:SetActive(true)
@@ -1063,6 +1080,7 @@ function MainWindow:showProperTopBtn()
 	end
 
 	self.transTopR:GetComponent(typeof(UIGrid)):Reposition()
+	self:initGameAssistantBtn()
 end
 
 function MainWindow:resetRightBtnGroup()

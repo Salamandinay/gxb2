@@ -215,6 +215,9 @@ end
 function SettingUpInfoItem:layout()
 	self.labelTitle_.text = xyd.tables.settingTable:getTitle(self.id_)
 	self.dialogImg_.transform.localScale = Vector3(1, 0, 1)
+end
+
+function SettingUpInfoItem:createDialog()
 	local type_ = xyd.tables.settingTable:getType(self.id_)
 	local text_ = xyd.tables.settingTable:getText(self.id_)
 
@@ -227,6 +230,10 @@ function SettingUpInfoItem:layout()
 	end
 
 	self.dialogImg_.transform.localScale = Vector3(1, 0, 1)
+end
+
+function SettingUpInfoItem:destroyDialog()
+	NGUITools.DestroyChildren(self.dialogGrid_.transform)
 end
 
 function SettingUpInfoItem:initGroupBuffLayer()
@@ -242,7 +249,7 @@ function SettingUpInfoItem:initGroupBuffLayer()
 		})
 		item:SetLocalPosition(0, -totalHeight - 58, 0)
 
-		totalHeight = totalHeight + 135 + item.desLabel_.height
+		totalHeight = totalHeight + 135 + item.desLabel_.height + item.additionHight
 
 		table.insert(self.buffItems, item)
 	end
@@ -417,6 +424,7 @@ function SettingUpInfoItem:onClick()
 		self:playHide()
 	else
 		self.obj_:playHideItem()
+		self:createDialog()
 
 		self.isShow_ = true
 
@@ -457,6 +465,8 @@ function SettingUpInfoItem:playHide(noAction, callback)
 		return
 	end
 
+	self:destroyDialog()
+
 	self.imgArr_.transform.localEulerAngles = Vector3(0, 0, 90)
 
 	if noAction then
@@ -493,10 +503,8 @@ function SettingUpGroupBuffItem:ctor(parentGo)
 	self.bottomGroup = go:NodeByName("bottomGroup").gameObject
 	self.desLabel_ = self.bottomGroup:ComponentByName("desLabel_", typeof(UILabel))
 	self.attrGroup = self.bottomGroup:NodeByName("attrGroup").gameObject
-	self.labelAttr1 = self.attrGroup:ComponentByName("labelAttr1", typeof(UILabel))
-	self.labelAttr2 = self.attrGroup:ComponentByName("labelAttr2", typeof(UILabel))
-	self.labelAttrNum1 = self.attrGroup:ComponentByName("labelAttrNum1", typeof(UILabel))
-	self.labelAttrNum2 = self.attrGroup:ComponentByName("labelAttrNum2", typeof(UILabel))
+	self.attrGroupTable = self.attrGroup:GetComponent(typeof(UITable))
+	self.additionHight = 0
 end
 
 function SettingUpGroupBuffItem:getPrefabPath()
@@ -516,10 +524,22 @@ function SettingUpGroupBuffItem:layout()
 
 	buffIcon:setInfo(self.id_, true)
 
+	local addStr = "+ "
 	local effectShowData = xyd.split(xyd.tables.groupBuffTable:getEffectShow(self.id_), "|")
+
+	if self.id_ == xyd.GROUP_7_BUFF then
+		effectShowData = xyd.split(xyd.tables.groupBuffTable:getEffectShow(self.id_), "@")
+		addStr = "+"
+		self.attrGroupTable.enabled = false
+		self.additionHight = 120
+	end
+
 	local poses = xyd.tables.groupBuffTable:getEffectStands(self.id_)
 
 	for i = 1, #effectShowData do
+		local labelAttr = self.attrGroup:ComponentByName("labelAttr" .. i, typeof(UILabel))
+		local labelAttrNum = self.attrGroup:ComponentByName("labelAttrNum" .. i, typeof(UILabel))
+
 		if effectShowData[i] then
 			local effectData = xyd.split(effectShowData[i], "#")
 			local effectName = effectData[1]
@@ -527,17 +547,32 @@ function SettingUpGroupBuffItem:layout()
 			local pos_label = self:getPosDesc(poses[i])
 
 			if pos_label ~= "" then
-				self["labelAttr" .. i].text = __("POSITION_DESC", pos_label, xyd.tables.dBuffTable:getDesc(effectName))
+				labelAttr.text = __("POSITION_DESC", pos_label, xyd.tables.dBuffTable:getDesc(effectName))
 			else
-				self["labelAttr" .. i].text = xyd.tables.dBuffTable:getDesc(effectName)
+				labelAttr.text = xyd.tables.dBuffTable:getDesc(effectName)
 			end
 
 			local factor = tonumber(xyd.tables.dBuffTable:getFactor(effectName) or 1)
 
+			if factor <= 0 then
+				factor = 1
+			end
+
 			if xyd.tables.dBuffTable:isShowPercent(effectName) then
-				self["labelAttrNum" .. i].text = "+ " .. effectNum / factor * 100 .. "%"
+				labelAttrNum.text = addStr .. effectNum / factor * 100 .. "%"
 			else
-				self["labelAttrNum" .. i].text = "+ " .. effectNum
+				labelAttrNum.text = addStr .. effectNum
+			end
+
+			if self.id_ == xyd.GROUP_7_BUFF then
+				labelAttrNum.text = labelAttr.text .. labelAttrNum.text
+				labelAttr.text = __("GROUP_7_BUFF_TIP", i)
+
+				labelAttr.gameObject:X(19)
+				labelAttrNum.gameObject:X(610 - labelAttrNum.width)
+
+				labelAttr.color = Color.New2(11731199)
+				labelAttrNum.color = Color.New2(472325119)
 			end
 		end
 	end
@@ -564,7 +599,10 @@ end
 
 function SettingUpGroupBuffItem:reposition()
 	self:waitForFrame(1, function ()
-		self.attrGroup:GetComponent(typeof(UITable)):Reposition()
+		if self.id_ ~= xyd.GROUP_7_BUFF then
+			self.attrGroup:GetComponent(typeof(UITable)):Reposition()
+		end
+
 		self.bottomGroup:GetComponent(typeof(UILayout)):Reposition()
 	end)
 end

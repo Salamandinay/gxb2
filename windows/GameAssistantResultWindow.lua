@@ -557,9 +557,17 @@ function GameAssistantResultWindow:doGamble()
 	local flag = false
 
 	if self.ifCanDo.gamble then
-		self.todayHaveDoneData.gamble = self.presetData.gamble
-		flag = self.model:reqGamble()
-		self.gamebleTime = 2
+		self.todayHaveDoneData.gamble = true
+		local time = 0
+
+		if self.presetData.gamble == 0 then
+			time = 1
+		elseif self.presetData.gamble == 1 then
+			time = 2
+		end
+
+		flag = self.model:reqGamble(time)
+		self.gamebleTime = time
 	end
 
 	if not flag then
@@ -583,7 +591,7 @@ function GameAssistantResultWindow:onGetGambleMsg(event)
 	if self.gamebleTime == 0 then
 		params.items = self.tempItems
 
-		self:createItem(params, __("GAME_ASSISTANT_TEXT26"))
+		self:createItem(params, __("GAME_ASSISTANT_TEXT104"))
 		self:waitForTime(0.2, function ()
 			self.tempItems = {}
 

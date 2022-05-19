@@ -1,9 +1,8 @@
 id,name,pr_table_id,level,effect_show,effect
-1,111,757001,5,,hp#523|atk#38
-2,111,757001,10,hp#523|atk#39,hp#1046|atk#77
-3,111,757001,15,hp#523|atk#39,hp#1570|atk#115
-4,111,757001,20,hp#523|atk#39,hp#2093|atk#154
-5,111,757001,25,hp#523|atk#39,hp#2616|atk#192
-6,111,757001,30,hp#523|atk#39,hp#3139|atk#230
-7,111,757001,35,hp#523|atk#39,hp#3663|atk#269
-8,111,757001,40,hp#523|atk#39,hp#4186|atk#307
+1,111,757001,0,,crit#0|critTime#0|hit#0
+2,111,757001,10,crit#360,crit#360|critTime#0|hit#0
+3,111,757001,20,critTime#500,crit#360|critTime#500|hit#0
+4,111,757001,25,hit#400,crit#360|critTime#500|hit#400
+5,111,757001,30,crit#360,crit#720|critTime#500|hit#400
+6,111,757001,35,critTime#500,crit#720|critTime#1000|hit#400
+7,111,757001,40,hit#400,crit#720|critTime#1000|hit#800

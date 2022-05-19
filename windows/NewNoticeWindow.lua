@@ -328,13 +328,13 @@ function SettingUpInfoItem:playHide(noAction, callback)
 	else
 		local action = DG.Tweening.DOTween.Sequence()
 
+		self.jumpBtn_:SetActive(false)
 		action:Insert(0, self.dialogImg_.transform:DOScale(Vector3(1, 0, 1), 0.1))
 		action:AppendCallback(function ()
 			self.dialogImg_:SetActive(false)
 
 			self.isShow_ = false
 
-			self.jumpBtn_:SetActive(false)
 			XYDCo.WaitForFrame(1, function ()
 				self.parent_.grid_:Reposition()
 

@@ -369,7 +369,7 @@ id,unknown_2,name,desc
 2100401,Nono,Fracasse,Inflige 90% d'Attaque à 1 ennemi et a 100% de chance de l'[c][01a310]étourdir[-][/c] pendant 2 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 2200101,Roselle,Attaque Furtive,Inflige 133% d'Attaque aux ennemis de la ligne avant et réduit leur Vitesse de 20 pendant 2 tours.
 2200201,Hynel,Fracasse,Inflige 90% d'Attaque à 1 ennemi et a 100% de chance de l'[c][01a310]étourdir[-][/c] pendant 2 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
-2200301,Fleur,Vengeance,Inflige 100% d'Attaque à 1 ennemi et lui inflige des dégats supplémentaires (54% de l'Attaque) pendant 2 tours.
+2200301,Fleur,Vengeance,Inflige 100% d'Attaque à 1 ennemi et lui inflige des dégâts supplémentaires (54% de l'Attaque) pendant 2 tours.
 2200401,Meimi,Fracasse,Inflige 190% d'Attaque à 1 ennemi aléatoire.
 2300101,Boro,Fracasse,Inflige 171% d'Attaque à l'ennemi ayant le moins de PV.
 2300201,Lana,Attaque en Force,Inflige 65% d'Attaque aux ennemis de la ligne arrière et leur inflige des dégâts supplémentaires (18% de l'Attaque) pendant 2 tours.
@@ -378,7 +378,7 @@ id,unknown_2,name,desc
 2400101,Pyra,Feinte,Inflige 100% d'Attaque à 1 ennemi et lui inflige des dégâts supplémentaires (54% de l'Attaque) pendant 2 tours.
 2400201,Octagirl,Frappe Précise,Inflige 130% d'Attaque à 1 ennemi et a 100% de chance de le rendre au [c][01a310]silence[-][/c] pendant 2 tours.\n[c][01a310]Silence (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de déclencher sa Compétence Active.
 2400301,Aeris,Fracasse,Inflige 90% d'Attaque à 1 ennemi et a 100% de chance de l'[c][01a310]étourdir[-][/c] pendant 2 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
-2400401,Puny,Attaque Furtive,Inflige 100% d'Attaque à 1 ennemi et lui inflige des dégats supplémentaires (54% de l'Attaque) pendant 2 tours.
+2400401,Puny,Attaque Furtive,Inflige 100% d'Attaque à 1 ennemi et lui inflige des dégâts supplémentaires (54% de l'Attaque) pendant 2 tours.
 3100101,Poppi,Enroulement,Inflige 77% d'Attaque aux ennemis de la ligne avant et a 35% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours.\n[c][01a310]Étourdissement (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
 3100201,Jade,Lame de Requin,Inflige 170% d'Attaque à 1 ennemi et réduit son Armure de 24% pendant 2 tours.
 3100301,Ursula,Force Brute,Inflige 110% d'Attaque à 1 ennemi aléatoire de la ligne arrière et a 100% de chance de la [c][01a310]geler[-][/c] pendant 2 tours.\n[c][01a310]Geler (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis.
@@ -3232,10 +3232,10 @@ Chaque Attaque Basique a 100% de chance de poser une [c][e28002]Marque de Crista
 Retarde le déclenchement de la Cristallisation. 
 [c][e28002]Cristallisation (Effet de Contrôle) : [-][/c]
 La cible cristallisée ne peut effectuer aucune action pendant 2 tours (cumulable)."
-5401204,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 5% pendant 7 tours, se soigne d'une valeur équivalant à 50% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (100% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-65401904,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 10% pendant 7 tours, se soigne d'une valeur équivalant à 100% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (150% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-65401914,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 180% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-75401204,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 180% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+5401204,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 5% pendant 7 tours, se soigne d'une valeur équivalant à 50% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (100% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+65401904,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 10% pendant 7 tours, se soigne d'une valeur équivalant à 100% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (150% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+65401914,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 180% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+75401204,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 180% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 8010001,Ryuko,Explosion Magique,"Inflige 1367 de dégâts à 2 ennemis aléatoires, a 7% de chance de déclencher des Effets de Contrôle aléatoires pendant 2 tours."
 8010002,Ryuko,Explosion Magique,"Inflige 1746 de dégâts à 2 ennemis aléatoires, a 7% de chance de déclencher des Effets de Contrôle aléatoires pendant 2 tours."
 8010003,Ryuko,Explosion Magique,"Inflige 2125 de dégâts à 2 ennemis aléatoires, a 7% de chance de déclencher des Effets de Contrôle aléatoires pendant 2 tours."
@@ -5926,11 +5926,11 @@ Chaque Attaque Basique inflige 110% d\'Attaque et a 100% de chance de poser une 
 Retarde le déclenchement de la Cristallisation. 
 [c][e28002]Cristallisation (Effet de Contrôle)：[-][/c]
 La cible cristallisée ne peut effectuer aucune action pendant 2 tours (cumulable)."
-754012041,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 184% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-754012042,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 188% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-754012043,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 190% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-754012044,Chris3,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 194% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
-754012045,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 22% pendant 7 tours, se soigne d'une valeur équivalant à 198% de son Attaque et inflige à 3 ennemis aléatoires des dégats supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+754012041,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 184% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+754012042,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 188% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+754012043,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 190% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+754012044,Chris3,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 20% pendant 7 tours, se soigne d'une valeur équivalant à 194% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
+754012045,Chris,Pouvoir Miraculeux,"Lorsqu'un ennemi est cristallisé, l'Attaque de Chris augmente de 22% pendant 7 tours, se soigne d'une valeur équivalant à 198% de son Attaque et inflige à 3 ennemis aléatoires des dégâts supplémentaires d'[c][01a310]Empoisonnement[-][/c] (240% d'Attaque) pendant 3 tours.\n[c][01a310]Empoisonnement :[-][/c]\nDégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu'à la fin de cet effet."
 754013011,Joan,Pétales Tranchantes,"
 Inflige 490% d\'Attaque à 3 ennemis aléatoires et utilise toutes les [c][e28002]Effluves de Pêcher[-][/c]. 
 
@@ -10100,7 +10100,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (300% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10112,7 +10112,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (600% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10124,7 +10124,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1200% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10138,52 +10138,52 @@ L\'Attaque Basique inflige 100% d\'Attaque à 3 ayant le moins de PV. Si ces 3 e
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 65601903,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 140% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (140% de l\'Attaque de Carmen & Bianca) et auront 70% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 65601913,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 300% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (300% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 75600903,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 300% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (300% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 5600904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 50% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 30% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 1% et les Dégâts Critiques de 1% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 10% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 65601904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 150% de l\'Attaque de Carmen & Bianca et la Vitesse de Carmen & Bianca sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 50% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 3% et les Dégâts Critiques de 3% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 20% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 65601914,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 300% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 75600904,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 300% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009011,Carmen & Bianca,Ailes Mortelles,"
 Ô papillons, battez des ailes ! Inflige 510% d\'Attaque à 3 ennemis aléatoires (Carmen & Bianca cibleront les ennemis avec le plus de couches de [c][e28002]Papillon Venimeux[-][/c] en priorité).
 Inflige 510% d\'Attaque à tous les ennemis marqués avec [c][e28002]Papillon Venimeux[-][/c].
@@ -10192,7 +10192,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1260% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10204,7 +10204,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1320% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10216,7 +10216,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1380% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10228,7 +10228,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1440% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10240,7 +10240,7 @@ Si un ennemi est marqué avec 5 couches (ou plus) de [c][e28002]Papillon Venimeu
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)
 [c][e28002]Châtiment du Papillon (Effet de Compétence, non cumulable)：[-][/c]
 Inflige des dégâts fixes (1500% de l\'Attaque de Carmen & Bianca) à l\'ennemi marqué (ces dégâts ne peuvent pas être un Coup Critique et ne seront affectés par aucun Bonus ou Réduction de dégât).
 Si l\'ennemi marqué n\'est pas vaincu après avoir subi ces dégâts, Carmen & Bianca lui lanceront leur Attaque Basique une fois."
@@ -10255,65 +10255,65 @@ L\'Attaque Basique inflige 306% d\'Attaque à 3 ayant le moins de PV. Si ces 3 e
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009032,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 312% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (312% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009033,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 318% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (318% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009034,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 324% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (324% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 1 couche de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009035,Carmen & Bianca,Cage de Camouflage,"
 Bianca : ""Cette cage est parfaite pour y cacher notre butin !"" Au début de la bataille, marque tous les ennemis avec 2 couches de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 L\'Attaque Basique inflige 330% d\'Attaque à 3 ayant le moins de PV. Si ces 3 ennemis sont marqués avec [c][e28002]Papillon Venimeux[-][/c], Carmen & Bianca leur infligeront des dégâts supplémentaires (330% de l\'Attaque de Carmen & Bianca) et auront 100% de chance de les marquer avec 2 couches de [c][e28002]Papillon Venimeux[-][/c].
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009041,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 306% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009042,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 312% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009043,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 318% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009044,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 324% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 70% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 756009045,Carmen & Bianca,Bénédiction du Papillon,"
 Carmen : ""La richesse doit être partagée à ceux dans le besoin."" Lorsqu\'une de ses alliées inflige un Coup Critique, cette alliée récupèrera des PV équivalent à 330% de l\'Attaque de Carmen & Bianca et sa Vitesse sera augmentée de 10 pendant 2 tours. Lorsqu\'une de ses alliées lance sa Compétence Active ou son Attaque Basique, Carmen & Bianca ont 75% de chance de marquer les 3 ennemis ayant le moins de PV avec 1 couche de [c][e28002]Papillon Venimeux[-][/c] pendant 4 tours.
 
 [c][e28002]Papillon Venimeux (Effet de Compétence, cumulable)：[-][/c]
 Pour chaque couche de Papillon Venimeux, augmente les chances d\'un Coup Critique de 5% et les Dégâts Critiques de 5% au marqueur (valable uniquement sur l\'ennemi marqué).
-Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégats qui leur seront infligés respectivement.)"
+Si les ennemis marqués avec Papillon Venimeux attaquent leur marqueur, les alliées de la ligne avant du marqueur l\'aideront à subir 30% de dégâts infligés. (s\'il n\'y a aucune alliée sur la ligne avant, cet effet ne sera pas déclenché. La Résistance Totale de chacune des alliées de la ligne avant influera sur les dégâts qui leur seront infligés respectivement.)"
 5501100,Maïa,Attaque Basique,Attaque Basique
 65502000,Maïa,Attaque Basique,Attaque Basique
 75501000,Maïa,Attaque Basique,Attaque Basique
@@ -11108,12 +11108,12 @@ La première fois que ses PV seront inférieurs à 30%, elle récupérera imméd
 
 [c][e28002]Amplification Matricielle (Effet de Compétence, cumulable) : [-][/c]
 Augmente l\'Immunité de la cible 10% et sa Précision de 5% (5 couches au maximum)."
-675501,Cri du Vent,Compétence de l'Antiquité,+ 10% Soins Reçus
-675601,Cri du Vent,Compétence de l'Antiquité,+ 13% Soins Reçus
-675701,Cri du Vent,Compétence de l'Antiquité,+ 16% Soins Reçus
-675801,Cri du Vent,Compétence de l'Antiquité,+ 19% Soins Reçus
-675901,Cri du Vent,Compétence de l'Antiquité,+ 22% Soins Reçus
-676001,Cri du Vent,Compétence de l'Antiquité,+ 25% Soins Reçus
+675501,Cri du Vent,Compétence de l'Antiquité,+10% Soins Reçus
+675601,Cri du Vent,Compétence de l'Antiquité,+13% Soins Reçus
+675701,Cri du Vent,Compétence de l'Antiquité,+16% Soins Reçus
+675801,Cri du Vent,Compétence de l'Antiquité,+19% Soins Reçus
+675901,Cri du Vent,Compétence de l'Antiquité,+22% Soins Reçus
+676001,Cri du Vent,Compétence de l'Antiquité,+25% Soins Reçus
 6760101,Cri du Vent,Compétence de l'Antiquité,"
 Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se marque avec [c][e28002]Bénédiction du Vent[-][/c].
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]
@@ -11129,7 +11129,7 @@ Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]
 La porteuse récupère 5% de ses PV Max à la fin de chaque tour et obtient également une Barrière de la même valeur.
 L\'effet de la Barrière absorbant les dégâts est augmenté de 20%."
-630101,時間迴廊,-1,"Au début de la bataille, augmente de 2% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
+630101,Les Échos du Temps,-1,"Au début de la bataille, augmente de 2% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
 630102,時間迴廊,-1,"Au début de la bataille, augmente de 4% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
 630103,時間迴廊,-1,"Au début de la bataille, augmente de 6% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
 630104,時間迴廊,-1,"Au début de la bataille, augmente de 8% l'Attaque de vos Filles de la Maison Fantôme et de la Maison Monstre."
@@ -11874,7 +11874,7 @@ Après que Chimère des Océans ait lancé son attaque, toutes les couches de [c
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 2000030040,Chimère des Océans,Trident,"
 À la fin de chaque tour, marque les 3 ennemis ayant le moins de PV avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours et enlève aléatoirement 3 Effets Négatifs sur Chimère des Océans.
-Elle [c][e28002]asphyxie[-][/c] les ennemis pendant 2 tours lorsqu\'elle inflige des dégats aux ennemis avec son Attaque Basique, sa Compétence Active ou ses Dégâts sur la Durée.
+Elle [c][e28002]asphyxie[-][/c] les ennemis pendant 2 tours lorsqu\'elle inflige des dégâts aux ennemis avec son Attaque Basique, sa Compétence Active ou ses Dégâts sur la Durée.
 
 [c][e28002]Asphyxie (Effet de Compétence) :[-][/c]
 Réduit de 50% les Soins Reçus, de 50% la Récupération d\'Énergie de la cible dans cet état et augmente de 100% ses dégâts subis.
@@ -12145,183 +12145,244 @@ Si la cible marquée est vaincue lorsque cette Marque est déclenchée, elle ne 
 [c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
 75700100,Selkis,Attaque Basique,Attaque Basique
-757001101,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成800%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1600%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3200%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次300%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+757001101,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1200% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2400% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3600% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 5 attaques supplémentaires, chaque attaque infligeant 500% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20%，並且在每回合結束時會受到自身30%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001102,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成816%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1632%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3264%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次306%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 30% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001102,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1224% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2448% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3672% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 5 attaques supplémentaires, chaque attaque infligeant 510% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.4%，並且在每回合結束時會受到自身30.6%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001103,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成832%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1664%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3328%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次312%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20.4% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 30.6% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001103,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1248% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2496% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3744% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 5 attaques supplémentaires, chaque attaque infligeant 520% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.8%，並且在每回合結束時會受到自身31.2%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001104,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成848%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1696%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3392%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次318%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20.8% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 31.2% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001104,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1272% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2544% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3816% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 6 attaques supplémentaires, chaque attaque infligeant 530% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.2%，並且在每回合結束時會受到自身31.8%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001105,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成864%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1728%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3456%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次324%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 21.2% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 31.8% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001105,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1296% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2592% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3888% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 6 attaques supplémentaires, chaque attaque infligeant 540% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.6%，並且在每回合結束時會受到自身32.4%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001106,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成880%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1760%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3520%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次330%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 21.6% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 32.4% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001106,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1320% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2640% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 3960% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 6 attaques supplémentaires, chaque attaque infligeant 550% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22%，並且在每回合結束時會受到自身33%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001107,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成896%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1792%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3584%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次336%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 33% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001107,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1344% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2688% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 4032% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 6 attaques supplémentaires, chaque attaque infligeant 560% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.4%，並且在每回合結束時會受到自身33.6%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001108,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成912%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1824%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3648%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次342%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22.4% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 33.6% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001108,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1368% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2736% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 4104% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 7 attaques supplémentaires, chaque attaque infligeant 570% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.8%，並且在每回合結束時會受到自身34.2%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001109,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成928%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1856%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3712%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次348%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22.8% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 34.2% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001109,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1392% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2784% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 4176% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 7 attaques supplémentaires, chaque attaque infligeant 580% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低23.2%，並且在每回合結束時會受到自身34.8%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001110,希爾柯蒂,星蠍之吻,"
-喜歡是放縱，愛是克制，你贊同嗎？對生命最少的3名敵人造成960%無視護甲的攻擊傷害（剩餘敵人數量為2名時，造成無視護甲的攻擊傷害提升為1920%；剩餘敵人數量為1名時，造成無視護甲的攻擊傷害提升為3840%），並且附加[c][01a310]彌霧[-][/c]，持續3回合。若目標受到攻擊傷害前沒有[c][e28002]屏障[-][/c]，則額外造成5次360%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊）。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 23.2% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 34.8% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001110,Selkis,Baiser du Scorpion,"
+Le vrai amour demande plus de dévouement qu\'une simple amourette, n\'est-ce pas ? Inflige 1440% d\'Attaque aux 3 ennemis ayant le moins de PV tout en ignorant leur Armure, et les marque avec [c][01a310]Miasme[-][/c] pendant 3 tours (S\'il ne reste que 2 ennemis, ces dégâts augmenteront à 2880% de l\'Attaque de Selkis. S\'il ne reste qu\'1 ennemi, ces dégâts augmenteront à 4320% de l\'Attaque de Selkis).
+Si la cible n\'est pas sous la protection d\'une [c][e28002]Barrière[-][/c], Selkis lui lancera 8 attaques supplémentaires, chaque attaque infligeant 600% de l\'Attaque de Selkis (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低24%，並且在每回合結束時會受到自身36%已損失生命值的傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-757001201,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1600%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次150%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 24% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 36% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum, 2500% de la valeur de l\'Attaque de Selkis au maximum).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+757001201,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2000% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 5 attaques supplémentaires à cette cible, chaque attaque lui infligeant 300% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20%，並且在每回合結束時會受到自身30%已損失生命的傷害。"
-757001202,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1632%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次153%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 30% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001202,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2040% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 5 attaques supplémentaires à cette cible, chaque attaque lui infligeant 306% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.4%，並且在每回合結束時會受到自身30.6%已損失生命的傷害。"
-757001203,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1664%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次156%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20,4% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 30,6% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001203,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2080% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 5 attaques supplémentaires à cette cible, chaque attaque lui infligeant 312% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低20.8%，並且在每回合結束時會受到自身31.2%已損失生命的傷害。"
-757001204,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1696%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次159%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20,8% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 31,2% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001204,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2120% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 6 attaques supplémentaires à cette cible, chaque attaque lui infligeant 318% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.2%，並且在每回合結束時會受到自身31.8%已損失生命的傷害。"
-757001205,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1728%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次162%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 21,2% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 31,8% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001205,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2160% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 6 attaques supplémentaires à cette cible, chaque attaque lui infligeant 324% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低21.6%，並且在每回合結束時會受到自身32.4%已損失生命的傷害。"
-757001206,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1760%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次165%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 21,6% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 32,4% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001206,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2200% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 6 attaques supplémentaires à cette cible, chaque attaque lui infligeant 330% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22%，並且在每回合結束時會受到自身33%已損失生命的傷害。"
-757001207,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1792%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次168%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 33% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001207,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2240% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 6 attaques supplémentaires à cette cible, chaque attaque lui infligeant 336% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.4%，並且在每回合結束時會受到自身33.6%已損失生命的傷害。"
-757001208,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1824%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次171%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22,4% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 33,6% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001208,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2280% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 7 attaques supplémentaires à cette cible, chaque attaque lui infligeant 342% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低22.8%，並且在每回合結束時會受到自身34.2%已損失生命的傷害。"
-757001209,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1856%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次174%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 22,8% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 34,2% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001209,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2320% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 7 attaques supplémentaires à cette cible, chaque attaque lui infligeant 348% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低23.2%，並且在每回合結束時會受到自身34.8%已損失生命的傷害。"
-757001210,希爾柯蒂,異源之力,"
-來源於宇宙的力量，你會和我一起探索它的奧秘嗎？普通攻擊變為對生命最低的1名敵人造成1920%無視護甲的攻擊傷害，如果目標持有[c][01a310]彌霧[-][/c]，則額外對其造成5次180%攻擊的固定傷害（不會受到任何傷害的加成和減免，不會暴擊），如果目標未持有[c][01a310]彌霧[-][/c]，則對其施加[c][01a310]彌霧[-][/c]，持續3回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 23,2% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 34,8% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001210,Selkis,Pouvoir Astral,"
+Découvrons les pouvoirs du Cosmos ensemble ! L\'Attaque Basique inflige 2400% d\'Attaque à l\'ennemi ayant le moins de PV tout en ignorant son Armure.
+Si l\'ennemi ayant le moins de PV a été marqué avec [c][01a310]Miasme[-][/c], Selkis lancera 8 attaques supplémentaires à cette cible, chaque attaque lui infligeant 360% de l\'Attaque de Seliks (cette attaque n\'est pas affectée par les bonus ou les malus, et ne peut pas être un Coup Critique).
+Si l\'ennemi ayant le moins de PV n\'est pas marqué avec [c][01a310]Miasme[-][/c], Selkis le marquera avec [c][01a310]Miasme[-][/c] pendant 3 tours.
 
-[c][01a310]彌霧[-][/c]
-技能特效，不可疊加，最多只能有3個敵人同時持有該效果（持有人數已滿時，希爾柯蒂不再施加彌霧效果）。[c][01a310]彌霧[-][/c]持有者對施加者造成的所有傷害降低24%，並且在每回合結束時會受到自身36%已損失生命的傷害。"
-757001301,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量70%的生命值。
-757001302,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.2%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量71.4%的生命值。
-757001303,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.4%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量72.8%的生命值。
-757001304,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.6%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量74.2%的生命值。
-757001305,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其10.8%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量75.6%的生命值。
-757001306,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量77%的生命值。
-757001307,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.2%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量78.4%的生命值。
-757001308,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.4%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量79.8%的生命值。
-757001309,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其11.6%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量81.2%的生命值。
-757001310,希爾柯蒂,尾椎之骨,蠍子尾巴是有劇毒的。受到生命最低的敵人攻擊時，對該敵人造成其12%已損失生命值的傷害(不超過自身攻擊的2500%），並為自身恢復該次傷害量84%的生命值。
-757001401,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][01a310]Miasme (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 24% les dégâts que Selkis subit, infligés par sa cible marquée, puis cette dernière subira des dégâts équivalent à 36% de ses PV perdus à la fin de chaque tour (seuls 3 ennemis peuvent être marqués avec Miasme simultanément, 2500% de la valeur de l\'Attaque de Selkis au maximum)."
+757001301,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (20% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 70% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001302,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (20,4% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 71,4% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001303,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (20,8% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 72,8% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001304,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (21,2% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 74,2% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001305,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (21,6% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 75,6% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001306,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (22% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 77% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001307,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (22,4% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 78,4% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001308,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (22,8% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 79,8% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001309,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (23,2% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 81,2% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001310,Selkis,Queue de Scorpion,"Au bout de la queue du scorpion se trouve un dard rempli de venin. Si Selkis subit des dégâts infligés par l'ennemi ayant le moins de PV, elle lui infligera des dégâts (24% des PV perdus de cet ennemi, 2500% de la valeur de l'Attaque de Selkis au maximum), en réduisant de 50% les Soins Reçus de cet ennemi pendant 2 tours, et récupèrera des PV équivalent à 84% de ces dégâts infligés.\nÀ la fin de chaque tour, réduit de 50% les Soins des ennemis Prêtre pendant 2 tours."
+757001401,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 30% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加20%，暴擊增加20%，精準增加20%，不可被敵方隨機目標技能选中。"
-757001402,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 20% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001402,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 30,6% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加20.4%，暴擊增加20.4%，精準增加20.4%，不可被敵方隨機目標技能选中。"
-757001403,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 20,4% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001403,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 31% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加20.8%，暴擊增加20.8%，精準增加20.8%，不可被敵方隨機目標技能选中。"
-757001404,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 20,8% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001404,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 31,8% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加21.2%，暴擊增加21.2%，精準增加21.2%，不可被敵方隨機目標技能选中。"
-757001405,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 21,2% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001405,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 32,4% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加21.6%，暴擊增加21.6%，精準增加21.6%，不可被敵方隨機目標技能选中。"
-757001406,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 21,6% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001406,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 33% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加22%，暴擊增加22%，精準增加22%，不可被敵方隨機目標技能选中。"
-757001407,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 22% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001407,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 33,6% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加22.4%，暴擊增加22.4%，精準增加22.4%，不可被敵方隨機目標技能选中。"
-757001408,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 22,4% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001408,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 34,2% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加22.8%，暴擊增加22.8%，精準增加22.8%，不可被敵方隨機目標技能选中。"
-757001409,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 22,8% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001409,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 34,8% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加23.2%，暴擊增加23.2%，精準增加23.2%，不可被敵方隨機目標技能选中。"
-757001410,希爾柯蒂,天蠍之心,"
-當你明白一切的時候，我已經站在你身邊了。每當自身能量達到100及以上時，移除自身所有控制、印記和持續傷害，同時給自己附加[c][e28002]星邃[-][/c]，持續2回合。
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 23,2% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+757001410,Selkis,Cœur de Scorpion,"
+Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tour, elle enlèvera tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle et ses dégâts infligés seront augmentés de 36% pendant 2 tours.
+À chaque fois que son Énergie atteindra 100, elle obtiendra une [c][e28002]Barrière[-][/c] (20% de ses PV Max), enlevant tous les Effets de Contrôle, les Marques et les Dégâts sur la Durée sur elle, et se marquera avec [c][e28002]Bénédiction du Scorpion[-][/c] pendant 2 tours.
 
-[c][e28002]星邃[-][/c]
-技能特效，不可叠加。攻擊增加24%，暴擊增加24%，精準增加24%，不可被敵方隨機目標技能选中。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
+[c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
+Augmente respectivement de 24% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
+,,,-1

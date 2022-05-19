@@ -9,6 +9,7 @@ local MiscTable = xyd.tables.miscTable
 local PartnerAchievementTable = xyd.tables.partnerAchievementTable
 local SoundManager = xyd.SoundManager.get()
 local DatesTable = xyd.tables.datesTable
+local PartnerGravityController = import("app.components.PartnerGravityController")
 
 function DatesWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -283,7 +284,7 @@ function DatesWindow:updateTap(index)
 end
 
 function DatesWindow:initTopGroup()
-	self.windowTop = require("app.components.WindowTop").new(self.window_, self.name_, 11, true, function ()
+	self.windowTop = require("app.components.WindowTop").new(self.window_, self.name_, 25, true, function ()
 		if self.isNoBack then
 			xyd.closeWindow(self.name_)
 
@@ -733,6 +734,16 @@ end
 function DatesWindow:updateBg(voice)
 	if voice == nil then
 		voice = true
+	end
+
+	if self.partner:getGroup() == 7 and (UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+		if not self.partnerGravity then
+			self.partnerGravity = PartnerGravityController.new(self.groupBg.gameObject, 5)
+		else
+			self.partnerGravity:SetActive(true)
+		end
+	elseif self.partnerGravity then
+		self.partnerGravity:SetActive(false)
 	end
 
 	local res = "college_scene" .. self.partner:getGroup()

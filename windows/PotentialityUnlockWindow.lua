@@ -26,7 +26,7 @@ function PotentialityUnlockWindow:getComponent()
 	self.titleLabel_ = winTrans:ComponentByName("titleLabel", typeof(UILabel))
 	self.potentialityBtn_ = winTrans:NodeByName("potentialityBtn").gameObject
 	self.potentialityBtnLabel_ = winTrans:ComponentByName("potentialityBtn/label", typeof(UILabel))
-	self.starImg_ = winTrans:NodeByName("starImg").gameObject
+	self.starImg_ = winTrans:ComponentByName("starImg", typeof(UISprite))
 	self.starLabel_ = winTrans:ComponentByName("starLabel", typeof(UILabel))
 	self.levLimitDescLabel_ = winTrans:ComponentByName("groupArr/groupArr1/levLimitDescLabel", typeof(UILabel))
 	self.levLimitLabel_ = winTrans:ComponentByName("groupArr/groupArr1/levLimitLabel", typeof(UILabel))
@@ -36,9 +36,15 @@ function PotentialityUnlockWindow:getComponent()
 	self.attLabel_ = winTrans:ComponentByName("groupArr/groupArr3/attLabel", typeof(UILabel))
 	self.feedIcons_ = winTrans:NodeByName("feedIcons").gameObject
 	self.feedIconGroup_ = winTrans:NodeByName("feedIconGroup").gameObject
-	self.hasLabel_ = winTrans:ComponentByName("costGroup/hasLabel", typeof(UILabel))
-	self.costLabel_ = winTrans:ComponentByName("costGroup/costLabel", typeof(UILabel))
 	self.potentialityGroup_ = winTrans:NodeByName("potentialityGroup").gameObject
+	self.costGroup = winTrans:NodeByName("costGroup").gameObject
+	self.costGroupBg = self.costGroup:ComponentByName("costGroupBg", typeof(UISprite))
+	self.item1 = self.costGroup:NodeByName("item1").gameObject
+	self.hasLabel1 = self.item1:ComponentByName("hasLabel", typeof(UILabel))
+	self.icon1 = self.item1:ComponentByName("icon", typeof(UISprite))
+	self.item2 = self.costGroup:NodeByName("item2").gameObject
+	self.hasLabel2 = self.item2:ComponentByName("hasLabel", typeof(UILabel))
+	self.icon2 = self.item2:ComponentByName("icon", typeof(UISprite))
 
 	for i = 1, 4 do
 		self["line" .. i] = self.potentialityGroup_:ComponentByName("line" .. i, typeof(UISprite))
@@ -59,6 +65,14 @@ function PotentialityUnlockWindow:layoutUI()
 	self.hpLabel_.text = "+" .. math.floor(hp_att[1] * 100) .. "%"
 	self.attLabel_.text = "+" .. math.floor(hp_att[2] * 100) .. "%"
 	self.starLabel_.text = tostring(star - 9)
+	local str = "potentiality_star_icon"
+	local group = self.partner_:getGroup()
+
+	if group and group > 0 then
+		str = xyd.checkPartnerGroupImgStr(group, str)
+	end
+
+	xyd.setUISpriteAsync(self.starImg_, nil, str, nil, , true)
 end
 
 function PotentialityUnlockWindow:register()
@@ -74,7 +88,7 @@ function PotentialityUnlockWindow:register()
 		xyd.WindowManager.get():closeWindow(self.name_)
 	end)
 
-	UIEventListener.Get(self.potentialityBtn_).onClick = handler(self, self.onclickAwake)
+	UIEventListener.Get(self.potentialityBtn_).onClick = handler(self, self.onclickAwakeCheck)
 
 	UIEventListener.Get(self.closeBtn_).onClick = function ()
 		xyd.WindowManager.get():closeWindow(self.name_)
@@ -121,14 +135,41 @@ end
 
 function PotentialityUnlockWindow:updateCostLabel()
 	local cost = self.partner_:getAwakeItemCost()
-	local resNum = xyd.models.backpack:getItemNumByID(cost[1])
-	self.costLabel_.text = cost[2] .. "/"
-	self.hasLabel_.text = tostring(resNum)
+	local cost1 = cost
 
-	if resNum < cost[2] then
-		self.hasLabel_.color = Color.New2(3422556671.0)
+	if self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI then
+		self.item2:SetActive(false)
+		self.item1:X(0)
+
+		self.costGroupBg.width = 231
+	elseif self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		self.item2:SetActive(true)
+		self.item1:X(-112.7)
+		self.item2:X(124.6)
+
+		self.costGroupBg.width = 476
+		cost1 = cost[1]
+		local cost2 = cost[2]
+
+		xyd.setUISpriteAsync(self.icon2, nil, xyd.tables.itemTable:getIcon(cost2[1]), function ()
+			self.icon2.gameObject:SetLocalScale(0.4, 0.4, 1)
+		end, nil, true)
+
+		local resNum = xyd.models.backpack:getItemNumByID(cost2[1])
+
+		if resNum < cost2[2] then
+			self.hasLabel2.text = cost2[2] .. "/" .. "[c][cc0011]" .. tostring(resNum) .. "[-][/c]"
+		else
+			self.hasLabel2.text = cost2[2] .. "/" .. "[c][5566a2]" .. tostring(resNum) .. "[-][/c]"
+		end
+	end
+
+	local resNum = xyd.models.backpack:getItemNumByID(cost1[1])
+
+	if resNum < cost1[2] then
+		self.hasLabel1.text = cost1[2] .. "/" .. "[c][cc0011]" .. tostring(resNum) .. "[-][/c]"
 	else
-		self.hasLabel_.color = Color.New2(1432789759)
+		self.hasLabel1.text = cost1[2] .. "/" .. "[c][5566a2]" .. tostring(resNum) .. "[-][/c]"
 	end
 end
 
@@ -291,8 +332,20 @@ function PotentialityUnlockWindow:awakeAddPartnersById(tableID, array)
 	local partners = xyd.models.slot:getPartners()
 
 	for key in pairs(partners) do
-		if partners[key]:getTableID() == tableID and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 then
-			table.insert(array, partners[key])
+		if partners[key]:getTableID() == tableID and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() then
+			local group = partners[key]:getGroup()
+
+			if group == xyd.PartnerGroup.TIANYI then
+				local star = partners[key]:getStar()
+
+				if star == 10 then
+					table.insert(array, partners[key])
+				elseif star >= 11 and star <= 14 and self.partner_:getStar() < star then
+					self.hasOtherTianYiHighSelf = true
+				end
+			else
+				table.insert(array, partners[key])
+			end
 		end
 	end
 
@@ -310,7 +363,7 @@ function PotentialityUnlockWindow:awakeAddPartnersByParams(params, array)
 	local partners = xyd.models.slot:getPartners()
 
 	for key in pairs(partners) do
-		if (partners[key]:getGroup() == params.group or params.group == 0) and partners[key]:getStar() == params.star and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() then
+		if (partners[key]:getGroup() == params.group or params.group == 0) and partners[key]:getStar() == params.star and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() and partners[key]:getGroup() ~= xyd.PartnerGroup.TIANYI then
 			table.insert(array, partners[key])
 		end
 	end
@@ -325,20 +378,43 @@ function PotentialityUnlockWindow:awakeAddPartnersByParams(params, array)
 	return array
 end
 
+function PotentialityUnlockWindow:onclickAwakeCheck()
+	if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI and self.hasOtherTianYiHighSelf then
+		xyd.alert(xyd.AlertType.YES_NO, __("POTENTIALITY_UNLOCK_GROUP_7_TIPS"), function (yes_no)
+			if yes_no then
+				self:onclickAwake()
+			end
+		end)
+	else
+		self:onclickAwake()
+	end
+end
+
 function PotentialityUnlockWindow:onclickAwake()
 	local can_awake = true
 	local materials = {}
 	local cost = self.partner_:getAwakeItemCost()
-	cost = cost and cost or {
-		xyd.ItemID.GRADE_STONE,
-		0
-	}
-	local resNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.GRADE_STONE)
 
-	if resNum < cost[2] then
-		xyd.alert(xyd.AlertType.TIPS, __("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.GRADE_STONE)))
+	if self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI then
+		cost = cost and cost or {
+			xyd.ItemID.GRADE_STONE,
+			0
+		}
+		local resNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.GRADE_STONE)
 
-		return
+		if resNum < cost[2] then
+			xyd.alert(xyd.AlertType.TIPS, __("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.GRADE_STONE)))
+
+			return
+		end
+	elseif self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		for i in pairs(cost) do
+			if xyd.models.backpack:getItemNumByID(cost[i][1]) < cost[i][2] then
+				xyd.alert(xyd.AlertType.TIPS, __("NOT_ENOUGH", xyd.tables.itemTable:getName(cost[i][1])))
+
+				return
+			end
+		end
 	end
 
 	for _, heroIcon in ipairs(self.awakeHeroIcons) do

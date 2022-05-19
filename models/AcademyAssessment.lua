@@ -232,17 +232,19 @@ function AcademyAssessment:checkRedMark()
 		return true
 	end
 
-	if self.sweepTimes <= 0 then
-		return false
-	end
-
 	local infos = self.data.map_list
 
 	for i = 1, #infos do
 		local info = infos[i]
 		local firstStage = self:getAcademyAssessMentTable():getFirstId(info.fort_id)
 
-		if info.current_stage - firstStage >= 1 or info.current_stage == -1 then
+		if (info.current_stage - firstStage >= 1 or info.current_stage == -1) and self.sweepTimes > 0 then
+			return true
+		end
+
+		local timeStamp = xyd.db.misc:getValue("academy_assessment_daily_redpoint")
+
+		if (not timeStamp or not xyd.isSameDay(tonumber(timeStamp), xyd.getServerTime())) and info.current_stage < info.max_stage - 30 and self.data.map_info.challenge_times > 0 then
 			return true
 		end
 	end

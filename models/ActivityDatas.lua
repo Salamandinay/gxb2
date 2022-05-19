@@ -276,7 +276,10 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_RELAY_GIFT] = require("app.models.datas.ActivityRelayGiftData"),
 	[xyd.ActivityID.ACTIVITY_LOST_SPACE] = require("app.models.datas.ActivityLostSpaceData"),
 	[xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG] = require("app.models.datas.ActivityLostSpaceGiftData"),
-	[xyd.ActivityID.SPRING_GIFTBAG] = require("app.models.datas.SpringGiftbagData")
+	[xyd.ActivityID.SPRING_GIFTBAG] = require("app.models.datas.SpringGiftbagData"),
+	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_MISSION] = require("app.models.datas.ActivityStarAltarMissionData"),
+	[xyd.ActivityID.NEW_PARTNER_WARMUP_GIFTBAG] = require("app.models.datas.NewPartnerWarmupGiftbagData"),
+	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = require("app.models.datas.StarAltarGiftBagData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

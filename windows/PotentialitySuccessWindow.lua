@@ -75,7 +75,7 @@ function PotentialitySuccessWindow:getComponent()
 	self.effectGroup_ = winTrans:NodeByName("effectGroup").gameObject
 	self.titleLabel_ = winTrans:ComponentByName("titleLabel", typeof(UILabel))
 	self.clickLabel_ = winTrans:ComponentByName("clickLabel", typeof(UILabel))
-	self.starImg_ = winTrans:NodeByName("group/starImg").gameObject
+	self.starImg_ = winTrans:ComponentByName("group/starImg", typeof(UISprite))
 	self.starLabel_ = winTrans:ComponentByName("group/starLabel", typeof(UILabel))
 	self.attrChange_ = winTrans:NodeByName("group/attrChange").gameObject
 	self.groupSlot_ = winTrans:NodeByName("groupSlot").gameObject
@@ -103,6 +103,17 @@ function PotentialitySuccessWindow:layoutUI()
 			xyd.WindowManager.get():closeWindow(self.name_)
 		end
 	end
+
+	local str = "potentiality_star_icon"
+	local group = self.partner_:getGroup()
+
+	if group and group > 0 then
+		str = xyd.checkPartnerGroupImgStr(group, str)
+	end
+
+	xyd.setUISpriteAsync(self.starImg_, nil, str, function ()
+		self.starImg_:MakePixelPerfect()
+	end)
 end
 
 function PotentialitySuccessWindow:initEffect()
@@ -112,12 +123,6 @@ function PotentialitySuccessWindow:initEffect()
 		effect:play("texiao01", 1, 1, function ()
 			effect:play("texiao02", 0, 1)
 		end)
-	end)
-
-	local starEffect = xyd.Spine.new(self.starImg_)
-
-	starEffect:setInfo("fx_ui_13xingxing", function ()
-		starEffect:play("texiao01", 0)
 	end)
 end
 

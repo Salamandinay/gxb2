@@ -109,13 +109,27 @@ function TenStarExchangeWindow:initData()
 	local star = self.tenStarPartner_:getStar()
 
 	if star == 10 then
-		xyd.setUISpriteAsync(self.starImg_, nil, "star_orange_2", function ()
+		local str = "star_orange_2"
+		local group = self.tenStarPartner_:getGroup()
+
+		if group and group > 0 then
+			str = xyd.checkPartnerGroupImgStr(group, str)
+		end
+
+		xyd.setUISpriteAsync(self.starImg_, nil, str, function ()
 			self.starImg_:MakePixelPerfect()
 		end)
 
 		self.starLabel_.text = ""
 	else
-		xyd.setUISpriteAsync(self.starImg_, nil, "potentiality_avatar_star", function ()
+		local str = "potentiality_avatar_star"
+		local group = self.tenStarPartner_:getGroup()
+
+		if group and group > 0 then
+			str = xyd.checkPartnerGroupImgStr(group, str)
+		end
+
+		xyd.setUISpriteAsync(self.starImg_, nil, str, function ()
 			self.starImg_:MakePixelPerfect()
 		end)
 

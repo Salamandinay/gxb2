@@ -1851,39 +1851,150 @@ Amount of Maximum HP that each stack of [c][e28002]Chaos Scar[-][/c] lowers incr
 754018043,天機.諸葛亮,因果博弈,Damage dealt by [c][01a310]Headwinds[-][/c] increases to {1} of Attack.
 754018044,天機.諸葛亮,因果博弈,Damage dealt by [c][01a310]Headwinds[-][/c] increases to {1} of Attack.
 754018045,天機.諸葛亮,因果博弈,Damage dealt by [c][01a310]Headwinds[-][/c] increases to {1} of Attack.
-757001102,希爾柯蒂,星蠍之吻,-1
-757001103,希爾柯蒂,星蠍之吻,-1
-757001104,希爾柯蒂,星蠍之吻,-1
-757001105,希爾柯蒂,星蠍之吻,-1
-757001106,希爾柯蒂,星蠍之吻,-1
-757001107,希爾柯蒂,星蠍之吻,-1
-757001108,希爾柯蒂,星蠍之吻,-1
-757001109,希爾柯蒂,星蠍之吻,-1
-757001110,希爾柯蒂,星蠍之吻,-1
-757001202,希爾柯蒂,異源之力,-1
-757001203,希爾柯蒂,異源之力,-1
-757001204,希爾柯蒂,異源之力,-1
-757001205,希爾柯蒂,異源之力,-1
-757001206,希爾柯蒂,異源之力,-1
-757001207,希爾柯蒂,異源之力,-1
-757001208,希爾柯蒂,異源之力,-1
-757001209,希爾柯蒂,異源之力,-1
-757001210,希爾柯蒂,異源之力,-1
-757001302,希爾柯蒂,尾椎之骨,-1
-757001303,希爾柯蒂,尾椎之骨,-1
-757001304,希爾柯蒂,尾椎之骨,-1
-757001305,希爾柯蒂,尾椎之骨,-1
-757001306,希爾柯蒂,尾椎之骨,-1
-757001307,希爾柯蒂,尾椎之骨,-1
-757001308,希爾柯蒂,尾椎之骨,-1
-757001309,希爾柯蒂,尾椎之骨,-1
-757001310,希爾柯蒂,尾椎之骨,-1
-757001402,希爾柯蒂,天蠍之心,-1
-757001403,希爾柯蒂,天蠍之心,-1
-757001404,希爾柯蒂,天蠍之心,-1
-757001405,希爾柯蒂,天蠍之心,-1
-757001406,希爾柯蒂,天蠍之心,-1
-757001407,希爾柯蒂,天蠍之心,-1
-757001408,希爾柯蒂,天蠍之心,-1
-757001409,希爾柯蒂,天蠍之心,-1
-757001410,希爾柯蒂,天蠍之心,-1
+757001102,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001103,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001104,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Number of extra Attacks dealt increases to {4} Attacks.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001105,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001106,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001107,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001108,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Number of extra Attacks dealt increases to {4} Attacks.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001109,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001110,希爾柯蒂,星蠍之吻,"
+Damage dealt to 3 enemies with lowest HP that ignores armor increases to {1} of Attack; when only 2 enemies remain, damage dealt increases to {2} of Attack; when only 1 enemy remains, damage dealt increases to {3} of Attack.
+Number of extra Attacks dealt increases to {4} Attacks.
+Fixed damage dealt to targets not protected by [c][e28002]Magick Barrier[-][/c] increases to {5} of Attack.
+Damage lowered for enemies affected by [c][01a310]Miasma[-][/c] increased to {6}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({7} of owner\'s lost HP)."
+757001202,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001203,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001204,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Number of Attacks dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {2} Attacks, each Attack dealing ({3} of Attack) fixed damage.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001205,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001206,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001207,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001208,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Number of Attacks dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {2} Attacks, each Attack dealing ({3} of Attack) fixed damage.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001209,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Fixed damage dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {3} of Attack.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001210,希爾柯蒂,異源之力,"
+Damage dealt increases to {1} of Attack.
+Number of Attacks dealt to targets affected by [c][01a310]Miasma[-][/c] increased to {2} Attacks, each Attack dealing ({3} of Attack) fixed damage.
+If targets are not affected by [c][01a310]Miasma[-][/c], afflicts them with [c][01a310]Miasma[-][/c] that reduces all damage dealt by them to the caster for {4}.
+Damage dealt by [c][01a310]Miasma[-][/c] at the end of each round increases to ({5} of owner\'s lost HP)."
+757001302,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001303,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001304,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001305,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001306,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001307,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001308,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001309,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001310,希爾柯蒂,尾椎之骨,Damage dealt increases to {1} of target's lost HP.\nHP recovered increases to {2} of damage dealt.
+757001402,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001403,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001404,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001405,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001406,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001407,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001408,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001409,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+757001410,希爾柯蒂,天蠍之心,"
+At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
+Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
+Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
+Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."

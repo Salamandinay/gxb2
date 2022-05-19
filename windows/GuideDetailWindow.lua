@@ -4,6 +4,7 @@ local MiscTable = xyd.tables.miscTable
 local PartnerTable = xyd.tables.partnerTable
 local SkillIcon = import("app.components.SkillIcon")
 local Partner = import("app.models.Partner")
+local PartnerGravityController = import("app.components.PartnerGravityController")
 
 function GuideDetailWindow:ctor(name, params)
 	GuideDetailWindow.super.ctor(self, name, params)
@@ -20,7 +21,19 @@ function GuideDetailWindow:initCurIndex(params)
 
 	for idx = 1, #self.currentSortedPartners_ do
 		if self.currentSortedPartners_[idx].table_id == params.table_id then
-			self.currentIdx_ = tonumber(idx)
+			local group = xyd.tables.partnerTable:getGroup(params.table_id)
+
+			if group == xyd.PartnerGroup.TIANYI then
+				if params.is_group7_ex_gallery == nil and self.currentSortedPartners_[idx].is_group7_ex_gallery == nil or params.is_group7_ex_gallery == true and self.currentSortedPartners_[idx].is_group7_ex_gallery == true then
+					self.currentIdx_ = tonumber(idx)
+
+					break
+				end
+			else
+				self.currentIdx_ = tonumber(idx)
+
+				break
+			end
 		end
 	end
 end
@@ -56,12 +69,21 @@ function GuideDetailWindow:registerEvent()
 	PartnerDetailWindow.registerEvent(self)
 
 	UIEventListener.Get(self.btnExSkill).onClick = handler(self, function ()
-		if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
-			xyd.WindowManager.get():openWindow("exskill_preview_window", {
+		local group = xyd.tables.partnerTable:getGroup(self.partner_:getTableID())
+
+		if group and group ~= xyd.PartnerGroup.TIANYI then
+			if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
+				xyd.WindowManager.get():openWindow("exskill_preview_window", {
+					partner = self.partner_
+				})
+			else
+				xyd.showToast(__("EX_SKILL_TIPS_TEXT"))
+			end
+		elseif group and group == xyd.PartnerGroup.TIANYI then
+			xyd.WindowManager.get():openWindow("skill_resonate_window", {
+				isGuide = true,
 				partner = self.partner_
 			})
-		else
-			xyd.showToast(__("EX_SKILL_TIPS_TEXT"))
 		end
 	end)
 
@@ -101,6 +123,21 @@ function GuideDetailWindow:updateSkill()
 			5,
 			5
 		}
+	end
+
+	local item = self.currentSortedPartners_[self.currentIdx_]
+	local group = xyd.tables.partnerTable:getGroup(item.table_id)
+
+	if group == xyd.PartnerGroup.TIANYI then
+		skill_ids = self.partner_:getSkillIDs()
+
+		if hasExSkill == 1 then
+			if item.is_group7_ex_gallery == nil then
+				exSkills = xyd.models.slot:getGroup7ShowGuideInfo().low_ex_skills
+			elseif item.is_group7_ex_gallery == true then
+				exSkills = xyd.models.slot:getGroup7ShowGuideInfo().max_ex_skills
+			end
+		end
 	end
 
 	for key in pairs(skill_ids) do
@@ -191,7 +228,7 @@ function GuideDetailWindow:initVars()
 		}
 	end
 
-	partner:populate({
+	local param = {
 		isHeroBook = true,
 		table_id = tableID,
 		lev = max_lev,
@@ -200,7 +237,28 @@ function GuideDetailWindow:initVars()
 		equips = equipments,
 		show_id = show_id,
 		ex_skills = ex_skills
-	})
+	}
+	local hasExSkill = xyd.tables.partnerTable:getExSkill(tableID)
+	local group = xyd.tables.partnerTable:getGroup(tableID)
+
+	if group == xyd.PartnerGroup.TIANYI then
+		if hasExSkill == 1 then
+			if item.is_group7_ex_gallery == nil then
+				param.ex_skills = xyd.models.slot:getGroup7ShowGuideInfo().low_ex_skills
+			elseif item.is_group7_ex_gallery == true then
+				param.ex_skills = xyd.models.slot:getGroup7ShowGuideInfo().max_ex_skills
+			end
+		end
+
+		if item.is_group7_ex_gallery == nil then
+			-- Nothing
+		elseif item.is_group7_ex_gallery == true then
+			param.awake = xyd.models.slot:getGroup7ShowGuideInfo().max_awake
+			param.lev = xyd.models.slot:getGroup7ShowGuideInfo().max_lev
+		end
+	end
+
+	partner:populate(param)
 
 	self.isMonster = item.isMonster
 	self.monster_id = item.monster_id
@@ -388,6 +446,74 @@ end
 function GuideDetailWindow:onclickArrow(delta)
 	GuideDetailWindow.super.onclickArrow(self, delta)
 	self.btnPartnerBack:SetActive(false)
+end
+
+function GuideDetailWindow:checkExSkillBtn()
+	GuideDetailWindow.super.checkExSkillBtn(self)
+
+	local item = self.currentSortedPartners_[self.currentIdx_]
+	local group = xyd.tables.partnerTable:getGroup(item.table_id)
+
+	if group == xyd.PartnerGroup.TIANYI then
+		self.btnExSkill:SetActive(false)
+
+		if item.is_group7_ex_gallery then
+			self.btnExSkill:SetActive(true)
+		end
+	end
+end
+
+function GuideDetailWindow:updateBg()
+	if self.partner_:getGroup() == 7 and (UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+		if not self.partnerGravity then
+			self.partnerGravity = PartnerGravityController.new(self.groupBg.gameObject, 5)
+		else
+			self.partnerGravity:SetActive(true)
+		end
+	elseif self.partnerGravity then
+		self.partnerGravity:SetActive(false)
+	end
+
+	local res = "college_scene" .. tostring(self.partner_:getGroup())
+
+	if self.groupBg.mainTexture ~= res then
+		local miniBgPath = "college_scene" .. tostring(self.partner_:getGroup()) .. "_mini"
+
+		xyd.setUISprite(self.groupBgMini, nil, miniBgPath)
+		xyd.setUITextureByNameAsync(self.groupBg, res, false)
+	end
+
+	local showID = self.partner_:getShowID()
+	showID = showID or self.partner_:getTableID()
+
+	if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		local item = self.currentSortedPartners_[self.currentIdx_]
+
+		if item.is_group7_ex_gallery then
+			local showIds = xyd.tables.partnerTable:getShowIds(self.partner_:getTableID())
+			showID = tonumber(showIds[xyd.models.slot:getGroup7ShowGuideInfo().max_show_guide_index])
+		end
+	end
+
+	if self.partnerImg:getItemID() == showID then
+		return
+	end
+
+	self.partnerImg:setImg()
+	self.partnerImg:setImg({
+		showResLoading = true,
+		windowName = self.name_,
+		itemID = showID
+	})
+
+	local dragonBoneID = xyd.tables.partnerPictureTable:getDragonBone(showID)
+	local xy = xyd.tables.partnerPictureTable:getPartnerPicXY(showID)
+	local scale = xyd.tables.partnerPictureTable:getPartnerPicScale(showID)
+
+	if xy and scale then
+		self.partnerImg.go.transform:SetLocalPosition(xy.x, -xy.y, 0)
+		self.partnerImg.go.transform:SetLocalScale(scale, scale, scale)
+	end
 end
 
 return GuideDetailWindow

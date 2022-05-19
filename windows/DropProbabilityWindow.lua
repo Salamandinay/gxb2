@@ -79,6 +79,33 @@ function DropProbabilityWindow:layoutOptionalTreasureChest()
 end
 
 function DropProbabilityWindow:initItemGroupOptionalTreasureChest()
+	local type = xyd.tables.itemTable:getType(self.params_.itemId)
+
+	if type == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.params_.itemId) == xyd.PartnerGroup.TIANYI then
+		local sommum_group7_ids = xyd.tables.miscTable:split2num("partner_group7_summon", "value", "|")
+		local items = {}
+
+		for i, summon_id in pairs(sommum_group7_ids) do
+			local dropbox_id = xyd.tables.summonTable:getDropboxId(summon_id)
+			local showAwards = xyd.tables.dropboxShowTable:getIdsByBoxId(dropbox_id)
+
+			if showAwards.list then
+				for k, id in pairs(showAwards.list) do
+					local item = xyd.tables.dropboxShowTable:getItem(id)
+
+					table.insert(items, {
+						itemID = item[1],
+						itemNum = item[2]
+					})
+				end
+			end
+		end
+
+		self.wrapContent:setInfos(items, {})
+
+		return
+	end
+
 	local itemsList = xyd.tables.giftBoxOptionalTable:getItems(self.params_.itemId)
 
 	if jobGiftBoxID[self.params_.itemId] then

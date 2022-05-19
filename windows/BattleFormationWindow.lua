@@ -22,7 +22,8 @@ function GroupBuffIconItem:ctor(go, parent)
 						local params = {
 							buffID = self.info_.buffId,
 							type = self.info_.type_,
-							contenty = self.info_.contenty
+							contenty = self.info_.contenty,
+							group7Num = self.info_.group7Num
 						}
 
 						xyd.WindowManager.get():openWindow("group_buff_detail_window", params)
@@ -32,7 +33,8 @@ function GroupBuffIconItem:ctor(go, parent)
 				local params = {
 					buffID = self.info_.buffId,
 					type = self.info_.type_,
-					contenty = self.info_.contenty
+					contenty = self.info_.contenty,
+					group7Num = self.info_.group7Num
 				}
 
 				xyd.WindowManager.get():openWindow("group_buff_detail_window", params)
@@ -3284,16 +3286,24 @@ function BattleFormationWindow:updateBuff()
 		end
 	end
 
-	for i = 1, 6 do
+	for i = 1, xyd.GROUP_NUM do
 		if not groupNum[i] then
 			groupNum[i] = 0
 		end
+	end
+
+	local showBuffIds = self.groupBuffTable:getBuffIds(groupNum)
+	local showBuffIds_ = {}
+
+	for k, v in ipairs(showBuffIds) do
+		showBuffIds_[v.id] = v.group7Num or 0
 	end
 
 	local buffIds = self.groupBuffTable:getIds()
 	local maxWidth = #self.buffDataList * 76
 	local maxNum = 8
 	local scrollWidth = 632
+	local firstJump = nil
 
 	for i = 1, #self.buffDataList do
 		local buffId = self.buffDataList[i].buffId
@@ -3303,69 +3313,27 @@ function BattleFormationWindow:updateBuff()
 		if type_ ~= xyd.GroupBuffIconType.HERO_CHALLENGE and type_ ~= xyd.GroupBuffIconType.NEW_TRIAL then
 			local groupDataList = xyd.split(self.groupBuffTable:getGroupConfig(buffId), "|")
 			local isNewAct = true
+			local type = self.groupBuffTable:getType(self.buffDataList[i].buffId)
 
-			if tNum < 6 then
+			if not showBuffIds_[buffId] then
 				isNewAct = false
-			else
-				local type = self.groupBuffTable:getType(self.buffDataList[i].buffId)
-
-				if tonumber(type) == 1 then
-					for _, gi in ipairs(groupDataList) do
-						local giList = xyd.split(gi, "#")
-
-						if tonumber(groupNum[tonumber(giList[1])]) ~= tonumber(giList[2]) then
-							isNewAct = false
-
-							break
-						end
-					end
-				elseif tonumber(type) == 2 then
-					local numCount = {}
-
-					for num, _ in ipairs(groupNum) do
-						if not numCount[groupNum[num]] then
-							numCount[groupNum[num]] = 0
-						end
-
-						if tonumber(num) < 5 then
-							numCount[groupNum[num]] = numCount[groupNum[num]] + 1
-						end
-					end
-
-					if groupNum[5] + groupNum[6] == 3 and numCount[1] == 3 then
-						isNewAct = true
-					else
-						isNewAct = false
-					end
-				end
-			end
-
-			self.actBuffID = 0
-
-			if isNewAct then
-				self.actBuffID = buffId
+			elseif showBuffIds_[buffId] > 0 then
+				self.buffDataList[i].group7Num = showBuffIds_[buffId]
 			end
 
 			if isNewAct ~= isAct then
 				self.buffDataList[i].isAct = isNewAct
-
-				self:waitForFrame(1, function ()
-					self.buffWrapContent:setInfos(self.buffDataList)
-					self.buffWrapContent:jumpToInfo(self.buffDataList[i])
-					self.buffWrapContent.wrapContent_:WrapContent()
-				end)
-
-				break
+				firstJump = firstJump or self.buffDataList[i]
 			end
 		end
 	end
-end
 
-function BattleFormationWindow:isBuffAct(buffID)
-	if tonumber(self.actBuffID) == tonumber(buffID) then
-		return true
-	else
-		return false
+	if firstJump then
+		self:waitForFrame(1, function ()
+			self.buffWrapContent:setInfos(self.buffDataList)
+			self.buffWrapContent:jumpToInfo(firstJump)
+			self.buffWrapContent.wrapContent_:WrapContent()
+		end)
 	end
 end
 

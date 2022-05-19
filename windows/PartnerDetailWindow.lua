@@ -11,6 +11,8 @@ local WindowTop = import("app.components.WindowTop")
 local AttrTipsItem = import("app.components.AttrTipsItem")
 local HeroIcon = import("app.components.HeroIcon")
 local PartnerCard = import("app.components.PartnerCard")
+local StarOriginNodeItem = import("app.components.StarOriginNodeItem")
+local PartnerGravityController = import("app.components.PartnerGravityController")
 
 function PartnerDetailWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -69,6 +71,7 @@ function PartnerDetailWindow:ctor(name, params)
 	end
 
 	self.needExSkillGuide = false
+	self.needStarOriginGuide = false
 
 	self:initCurIndex(params)
 	self:checkEnterType()
@@ -152,7 +155,7 @@ function PartnerDetailWindow:getUIComponent()
 	local nav = self.groupInfo:NodeByName("nav").gameObject
 	self.defaultTabGroup = nav:NodeByName("default").gameObject
 	self.guideTabGroup = nav:NodeByName("guide").gameObject
-	self.defaultTab = CommonTabBar.new(self.defaultTabGroup, 4, handler(self, self.onClickNav))
+	self.defaultTab = CommonTabBar.new(self.defaultTabGroup, 5, handler(self, self.onClickNav))
 
 	self.defaultTab:setBrforeChangeFuc(function (index, currentIndex)
 		if xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) and (index == 3 or index == 4) then
@@ -173,12 +176,14 @@ function PartnerDetailWindow:getUIComponent()
 	self.labelEquip = self.defaultTabGroup:ComponentByName("tab_2/label", typeof(UILabel))
 	self.labelSkin = self.defaultTabGroup:ComponentByName("tab_3/label", typeof(UILabel))
 	self.labelAwake = self.defaultTabGroup:ComponentByName("tab_4/label", typeof(UILabel))
+	self.labelStarOrigin = self.defaultTabGroup:ComponentByName("tab_5/label", typeof(UILabel))
 	self.groupAllAttrShow = self.groupInfo:NodeByName("groupAllAttrShow").gameObject
 	self.attrClickBg = self.groupAllAttrShow:NodeByName("attrClickBg").gameObject
 	self.groupAllAttr = self.groupAllAttrShow:NodeByName("e:Group/groupAllAttr").gameObject
 	self.groupAllAttrTable = self.groupAllAttr:GetComponent(typeof(UITable))
 	self.nav2_redPoint = self.defaultTabGroup:NodeByName("tab_2/redPoint")
 	self.nav4_redPoint = self.defaultTabGroup:NodeByName("tab_4/redPoint")
+	self.tab_5 = self.defaultTabGroup:NodeByName("tab_5").gameObject
 	local content = self.groupInfo:NodeByName("content").gameObject
 	self.content_1 = content:NodeByName("content_1").gameObject
 	self.content_1_battleIcon = self.content_1:ComponentByName("content1BattleIcon", typeof(UISprite))
@@ -351,7 +356,16 @@ function PartnerDetailWindow:getUIComponent()
 		self.labelEquip.fontSize = 18
 		self.labelSkin.fontSize = 18
 		self.labelAwake.fontSize = 18
+		self.labelStarOrigin.fontSize = 18
 	end
+
+	self.content_6 = content:NodeByName("content_6").gameObject
+	self.btnStarOriginDetail = self.content_6:NodeByName("btnStarOriginDetail").gameObject
+	self.labelStarOriginDetail = self.btnStarOriginDetail:ComponentByName("label", typeof(UILabel))
+	self.bgStarOrigin = self.content_6:ComponentByName("bg", typeof(UITexture))
+	self.imgStarOriginGroup = self.content_6:ComponentByName("imgGroup", typeof(UISprite))
+	self.starOriginItem = self.content_6:NodeByName("starOriginItem").gameObject
+	self.starOriginGroup = self.content_6:NodeByName("starGroup").gameObject
 end
 
 function PartnerDetailWindow:initWindow()
@@ -394,6 +408,7 @@ function PartnerDetailWindow:firstInit()
 	self:updateSkill()
 	self:updateAwakePanel()
 	self:updatePuppetNav()
+	self:checkStarOriginTab()
 	self:updateShenxue()
 	self:registerEvent()
 	self:initPartnerSkin()
@@ -403,6 +418,7 @@ function PartnerDetailWindow:firstInit()
 	self:initFullOrderGradeUp()
 	self:initFullOrderLevelUp()
 	self:checkBtnCommentShow()
+	self:checkStarOriginGuide()
 
 	if self.enterType == xyd.PARTNER_DETAIL_ENTER_TYPE.STAR10 then
 		self:changeInitNav(4)
@@ -451,10 +467,36 @@ function PartnerDetailWindow:initMarkedBtn()
 end
 
 function PartnerDetailWindow:checkExSkillBtn()
-	if self.partner_:getStar() >= 10 and not xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) then
-		self.btnExSkill:SetActive(true)
+	local group = xyd.tables.partnerTable:getGroup(self.partner_:getTableID())
 
-		self.btnExSkill:ComponentByName("label", typeof(UILabel)).text = __("EX_SKILL2")
+	if not self.btnExSkillUISprite then
+		self.btnExSkillUISprite = self.midBtns:ComponentByName("btnExSkill", typeof(UISprite))
+	end
+
+	if not self.btnExSkillUILabel then
+		self.btnExSkillUILabel = self.btnExSkill:ComponentByName("label", typeof(UILabel))
+	end
+
+	if group and group == xyd.PartnerGroup.TIANYI then
+		if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
+			self.btnExSkill:SetActive(true)
+
+			if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
+				self.btnExSkill:X(-595)
+			end
+
+			xyd.setUISpriteAsync(self.btnExSkillUISprite, nil, "skill_resonate_icon", nil, , true)
+			xyd.applyChildrenOrigin(self.btnExSkill)
+
+			self.btnExSkillUILabel.text = __("SKILL_RESONATE_TEXT01")
+
+			return
+		end
+	elseif self.partner_:getStar() >= 10 and not xyd.tables.partnerTable:checkPuppetPartner(self.partner_:getTableID()) then
+		self.btnExSkill:SetActive(true)
+		xyd.setUISpriteAsync(self.btnExSkillUISprite, nil, "advanced_skill", nil, , true)
+
+		self.btnExSkillUILabel.text = __("EX_SKILL2")
 
 		if xyd.Global.lang == "fr_fr" then
 			self.btnExSkill:X(-595)
@@ -515,6 +557,7 @@ function PartnerDetailWindow:updateMiscObj()
 		self.labelAwake.text = __("AWAKE")
 	end
 
+	self.labelStarOrigin.text = __("STAR_ORIGIN_TEXT01")
 	self.labelSkin.text = __("SKIN_TEXT01")
 	self.labelGrade.text = __("GRADE")
 
@@ -561,6 +604,8 @@ function PartnerDetailWindow:updateData()
 	self:updatePartnerSkin()
 	self:updatePuppetNav()
 	self:updateShenxue()
+	self:checkStarOriginTab()
+	self:checkStarOriginGuide()
 end
 
 function PartnerDetailWindow:closeSelf()
@@ -666,7 +711,17 @@ function PartnerDetailWindow:fixTop()
 	end
 end
 
-function PartnerDetailWindow:updateBg()
+function PartnerDetailWindow:updateBg(isGuide)
+	if self.partner_:getGroup() == 7 and (UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, "1.5.374") >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, "71.3.444") >= 0) then
+		if not self.partnerGravity then
+			self.partnerGravity = PartnerGravityController.new(self.groupBg.gameObject, 5)
+		else
+			self.partnerGravity:SetActive(true)
+		end
+	elseif self.partnerGravity then
+		self.partnerGravity:SetActive(false)
+	end
+
 	local res = "college_scene" .. tostring(self.partner_:getGroup())
 
 	if self.groupBg.mainTexture ~= res then
@@ -678,6 +733,11 @@ function PartnerDetailWindow:updateBg()
 
 	local showID = self.partner_:getShowID()
 	showID = showID or self.partner_:getTableID()
+
+	if isGuide and self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		local showIds = xyd.tables.partnerTable:getShowIds(self.partner_:getTableID())
+		showID = tonumber(showIds[self.currentSkin])
+	end
 
 	if self.partnerImg:getItemID() == showID then
 		return
@@ -702,7 +762,15 @@ end
 
 function PartnerDetailWindow:updateNameTag()
 	self.partnerNameTag:setInfo(self.partner_)
-	self.partnerNameTag:setCardStarImg("potentiality_nametag_star")
+
+	local str = "potentiality_nametag_star"
+	local group = self.partner_:getGroup()
+
+	if group and group > 0 then
+		str = xyd.checkPartnerGroupImgStr(group, str)
+	end
+
+	self.partnerNameTag:setCardStarImg(str)
 	self.partnerNameTag:enableGroupTipsPart(self.partner_:getGroup(), 97, -59)
 end
 
@@ -852,7 +920,13 @@ function PartnerDetailWindow:registerEvent()
 			return
 		end
 
-		if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
+		local group = xyd.tables.partnerTable:getGroup(self.partner_:getTableID())
+
+		if group and group == xyd.PartnerGroup.TIANYI then
+			xyd.WindowManager.get():openWindow("skill_resonate_window", {
+				partner = self.partner_
+			})
+		elseif xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
 			xyd.WindowManager.get():openWindow("exskill_grade_up_window", {
 				partner = self.partner_
 			})
@@ -1063,6 +1137,8 @@ function PartnerDetailWindow:registerEvent()
 		self:checkPartnerBackBtn()
 		self:onAwakePartner(event)
 		self:updateData()
+
+		self.needStarOriginGuide = true
 	end, self)
 	self.eventProxy_:addEventListener(xyd.event.CHOOSE_PARTNER_POTENTIAL, function (self, event)
 		self:updateData()
@@ -1170,6 +1246,27 @@ function PartnerDetailWindow:registerEvent()
 		self:setAttrChange()
 		self:updateData()
 	end)
+	self.eventProxy_:addEventListener(xyd.event.UPGRADE_STAR_ORIGIN, function (event)
+		if self.name_ ~= "partner_detail_window" then
+			return
+		end
+
+		self:updateStarOriginGroup()
+		self.partner_:updateAttrs()
+		self:setAttrChange()
+		self:updateData()
+	end)
+	self.eventProxy_:addEventListener(xyd.event.RESET_STAR_ORIGIN, function (event)
+		if self.name_ ~= "partner_detail_window" then
+			return
+		end
+
+		self.partner_:updateStarOrigin()
+		self:updateStarOriginGroup()
+		self.partner_:updateAttrs()
+		self:setAttrChange()
+		self:updateData()
+	end)
 
 	UIEventListener.Get(self.btnShowSkin).onClick = function ()
 		self.skinEffectGroup:SetActive(not self.skinEffectGroup.activeSelf)
@@ -1199,6 +1296,14 @@ function PartnerDetailWindow:registerEvent()
 		self:onclickPartnerImg(not self.isPartnerImgClick)
 	end
 
+	UIEventListener.Get(self.btnStarOriginDetail).onClick = function (go)
+		self:onClickStarOriginBtn()
+	end
+
+	UIEventListener.Get(self.bgStarOrigin.gameObject).onClick = function (go)
+		self:onClickStarOriginBtn()
+	end
+
 	UIEventListener.Get(self.btnMarkPartner).onClick = handler(self, self.onMarked)
 	UIEventListener.Get(self.suitSkillIcon_.gameObject).onClick = handler(self, self.onClickSuitIcon)
 
@@ -1225,6 +1330,20 @@ function PartnerDetailWindow:onWindowWillClose(event)
 		self.needExSkillGuide = false
 
 		xyd.models.slot:setExskillGuide()
+
+		return
+	end
+
+	if (windowName == "alert_award_window" or windowName == "potentiality_success_window" or windowName == "alert_item_window") and self.needStarOriginGuide then
+		local wnd1 = xyd.getWindow("alert_award_window")
+		local wnd2 = xyd.getWindow("potentiality_success_window")
+		local wnd3 = xyd.getWindow("alert_item_window")
+
+		if not wnd1 and not wnd2 and not wnd3 then
+			self:checkStarOriginGuide()
+
+			self.needStarOriginGuide = false
+		end
 	end
 end
 
@@ -1291,14 +1410,31 @@ function PartnerDetailWindow:onClickNav(index)
 				self:updateTenStarExchange()
 			end
 
-			self["content_" .. tostring(old_index)]:SetActive(false)
+			if old_index == 5 then
+				self.content_6:SetActive(false)
+			else
+				self["content_" .. tostring(old_index)]:SetActive(false)
+			end
+
 			self["content_" .. tostring(index)]:SetActive(true)
 		else
 			self.content_5:SetActive(true)
 			self.shenxueFeedGroup:Reposition()
 			self.shenxueStarsAfterLayout:Reposition()
 			self.shenxueStarsBeforeLayout:Reposition()
-			self["content_" .. tostring(old_index)]:SetActive(false)
+
+			if old_index == 5 then
+				self.content_6:SetActive(false)
+			else
+				self["content_" .. tostring(old_index)]:SetActive(false)
+			end
+		end
+	elseif index == 5 then
+		self["content_" .. tostring(old_index)]:SetActive(false)
+		self["content_" .. tostring(index + 1)]:SetActive(true)
+
+		if old_index == 4 then
+			self.content_5:SetActive(false)
 		end
 	else
 		self["content_" .. tostring(old_index)]:SetActive(false)
@@ -1306,6 +1442,10 @@ function PartnerDetailWindow:onClickNav(index)
 
 		if old_index == 4 then
 			self.content_5:SetActive(false)
+		end
+
+		if old_index == 5 then
+			self.content_6:SetActive(false)
 		end
 	end
 
@@ -1318,6 +1458,10 @@ function PartnerDetailWindow:onClickNav(index)
 	else
 		if index == 2 and xyd.tables.miscTable:getNumber("treasure_open_level", "value") <= self.partner_:getLevel() then
 			local flag = tonumber(xyd.db.misc:getValue("treasure_img_guide_open"))
+		end
+
+		if index == 5 then
+			self:updateStarOriginGroup()
 		end
 
 		self:stopSkinEffect()
@@ -2670,7 +2814,15 @@ end
 
 function PartnerDetailWindow:updatePartnerSkin()
 	local tableID = self.partner_:getTableID()
-	local showIDs = xyd.tables.partnerTable:getShowIds(tableID)
+	local showIDsBase = xyd.tables.partnerTable:getShowIds(tableID)
+	local showIDs = showIDsBase
+
+	if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		showIDs = {
+			tonumber(showIDsBase[1])
+		}
+	end
+
 	local showID = self.partner_:getShowID()
 	self.skinIDs = {}
 	self.skinCards = {}
@@ -2698,7 +2850,22 @@ function PartnerDetailWindow:updatePartnerSkin()
 	end
 
 	self.skinState = -1
-	local skinIDs = xyd.tables.partnerTable:getSkins(tostring(tableID))
+	local skinIDs = {}
+
+	if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		table.insert(skinIDs, tonumber(showIDsBase[2]))
+		table.insert(skinIDs, tonumber(showIDsBase[3]))
+	end
+
+	local tempSkinIDs = xyd.tables.partnerTable:getSkins(tostring(tableID))
+
+	if next(skinIDs) == nil then
+		skinIDs = tempSkinIDs
+	else
+		for i, id in pairs(tempSkinIDs) do
+			table.insert(skinIDs, id)
+		end
+	end
 
 	if xyd.Global.isReview == 1 then
 		skinIDs = {}
@@ -2731,6 +2898,17 @@ function PartnerDetailWindow:updatePartnerSkin()
 
 			card:setDisplay()
 			card:showSkinNum()
+
+			if group == xyd.PartnerGroup.TIANYI then
+				card:setOnlySkin()
+
+				if i == 1 then
+					card:setSkinName(__("SKIN_TEXT27"))
+				elseif i == 2 then
+					card:setSkinName(__("SKIN_TEXT28"))
+				end
+			end
+
 			table.insert(self.skinCards, card)
 			table.insert(self.skinIDs, skinID)
 		end
@@ -2740,7 +2918,11 @@ function PartnerDetailWindow:updatePartnerSkin()
 
 	if dressSkinID == 0 or dressSkinID ~= showID then
 		if showID and showID ~= self.partner_:getTableID() then
-			self.currentSkin = xyd.arrayIndexOf(self.skinIDs, showID)
+			if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+				self.currentSkin = xyd.arrayIndexOf(self.skinIDs, showID)
+			else
+				self.currentSkin = xyd.arrayIndexOf(self.skinIDs, showID)
+			end
 		else
 			local star = self.partner_:getStar()
 
@@ -2750,6 +2932,18 @@ function PartnerDetailWindow:updatePartnerSkin()
 				self.currentSkin = 2
 			else
 				self.currentSkin = 3
+			end
+
+			local group = self.partner_:getGroup()
+
+			if group == xyd.PartnerGroup.TIANYI then
+				if star <= 12 then
+					self.currentSkin = 1
+				elseif star < 15 then
+					self.currentSkin = 2
+				else
+					self.currentSkin = 3
+				end
 			end
 		end
 	else
@@ -2920,7 +3114,7 @@ function PartnerDetailWindow:onSkinOn()
 
 	local currentSkinID = self.skinIDs[self.currentSkin]
 
-	if currentSkinID > 0 and xyd.models.backpack:getItemNumByID(currentSkinID) <= 0 then
+	if self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI and currentSkinID > 0 and xyd.models.backpack:getItemNumByID(currentSkinID) <= 0 then
 		return
 	end
 
@@ -2969,13 +3163,31 @@ function PartnerDetailWindow:setSkinBtn()
 	local skinID = self.partner_:getSkinID()
 	local currentSkinID = self.skinIDs[self.currentSkin]
 	local card = self.skinCards[self.currentSkin]
+	local group = self.partner_:getGroup()
+	local star = self.partner_:getStar()
 
 	card:showSkinNum()
 
 	for i = 1, #self.skinIDs do
 		local card0 = self.skinCards[i]
 
-		card0:setSkinCollect(self.skinIDs[i] == skinID or skinID == 0 and self.skinIDs[i] == self.partner_:getTableID())
+		if group ~= xyd.PartnerGroup.TIANYI then
+			card0:setSkinCollect(self.skinIDs[i] == skinID or skinID == 0 and self.skinIDs[i] == self.partner_:getTableID())
+		elseif group == xyd.PartnerGroup.TIANYI then
+			card0:setSkinCollect(false)
+
+			if self.skinIDs[i] == skinID then
+				card0:setSkinCollect(true)
+			elseif skinID == 0 then
+				if star >= 15 then
+					card0:setSkinCollect(i == 3)
+				elseif star >= 13 then
+					card0:setSkinCollect(i == 2)
+				elseif star >= 10 then
+					card0:setSkinCollect(i == 1)
+				end
+			end
+		end
 	end
 
 	if self.skinState == skinID then
@@ -2993,17 +3205,18 @@ function PartnerDetailWindow:setSkinBtn()
 	end
 
 	self.showBtnBuy_ = false
+	local group = self.partner_:getGroup()
 
-	if max_star >= 10 and self.currentSkin <= 3 or max_star <= 9 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1 then
+	if group ~= xyd.PartnerGroup.TIANYI and max_star >= 10 and self.currentSkin <= 3 or max_star <= 9 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1 or group == xyd.PartnerGroup.TIANYI then
 		self.btnSkinUnlock:SetActive(false)
 
-		if curStar >= 10 and self.currentSkin <= 3 or curStar >= 6 and self.currentSkin <= 2 or curStar <= 5 and self.currentSkin <= 1 then
+		if group ~= xyd.PartnerGroup.TIANYI and (curStar >= 10 and self.currentSkin <= 3 or curStar >= 6 and self.currentSkin <= 2 or curStar <= 5 and self.currentSkin <= 1) or group == xyd.PartnerGroup.TIANYI and (curStar >= 15 and self.currentSkin <= 3 or curStar >= 13 and self.currentSkin <= 2 or curStar < 13 and self.currentSkin <= 1) then
 			local showID = self.partner_:getShowID() or self.partner_:getTableID()
 
 			if showID == self.skinIDs[self.currentSkin] then
 				self.btnSelectPictureLabel.text = __("PARTNER_CANCEL_PICTURE")
 
-				if self.partner_:getSkinID() == 0 and (curStar >= 10 and self.currentSkin == 3 or curStar < 10 and self.currentSkin == 2 or curStar <= 5 and self.currentSkin == 1) then
+				if self.partner_:getSkinID() == 0 and (group ~= xyd.PartnerGroup.TIANYI and (curStar >= 10 and self.currentSkin == 3 or curStar < 10 and self.currentSkin == 2 or curStar <= 5 and self.currentSkin == 1) or group == xyd.PartnerGroup.TIANYI and (curStar >= 15 and self.currentSkin == 3 or curStar <= 13 and self.currentSkin == 2 or curStar < 13 and self.currentSkin == 1)) then
 					xyd.setEnabled(self.btnSelectPicture, false)
 				else
 					xyd.setEnabled(self.btnSelectPicture, true)
@@ -3034,10 +3247,16 @@ function PartnerDetailWindow:setSkinBtn()
 
 			self.wayDescLabel.text = __("SKIN_TEXT18")
 
-			if self.currentSkin == 3 then
-				self.wayLabel.text = __("SKIN_TEXT20")
+			if group ~= xyd.PartnerGroup.TIANYI then
+				if self.currentSkin == 2 then
+					self.wayLabel.text = __("SKIN_TEXT19")
+				elseif self.currentSkin == 3 then
+					self.wayLabel.text = __("SKIN_TEXT20")
+				end
 			elseif self.currentSkin == 2 then
-				self.wayLabel.text = __("SKIN_TEXT19")
+				self.wayLabel.text = __("PARTNER_GROUP_7_SKIN_TEXT", 13)
+			elseif self.currentSkin == 3 then
+				self.wayLabel.text = __("PARTNER_GROUP_7_SKIN_TEXT", 15)
 			end
 		end
 	else
@@ -3095,11 +3314,9 @@ function PartnerDetailWindow:setSkinBtn()
 		end
 
 		self.btnSetSkinVisible:SetActive(skinID > 0 and skinID == currentSkinID)
-
-		local showIDs = xyd.tables.partnerTable:getShowIds(self.partner_:getTableID())
 	end
 
-	if max_star >= 10 and self.currentSkin <= 3 or max_star >= 6 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1 then
+	if group ~= xyd.PartnerGroup.TIANYI and (max_star >= 10 and self.currentSkin <= 3 or max_star >= 6 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1) or group == xyd.PartnerGroup.TIANYI then
 		local sufix = ""
 
 		if self.currentSkin == 1 then
@@ -3111,6 +3328,16 @@ function PartnerDetailWindow:setSkinBtn()
 		end
 
 		self.labelSkinDesc.text = __("SKIN_TEXT" .. tostring(sufix), self.partner_:getName())
+
+		if group == xyd.PartnerGroup.TIANYI then
+			if self.currentSkin == 1 then
+				self.labelSkinDesc.text = __("SKIN_TEXT06", self.partner_:getName())
+			elseif self.currentSkin == 2 then
+				self.labelSkinDesc.text = __("PARTNER_GROUP_7_SKIN_TEXT2", self.partner_:getName(), 13)
+			else
+				self.labelSkinDesc.text = __("PARTNER_GROUP_7_SKIN_TEXT2", self.partner_:getName(), 15)
+			end
+		end
 	else
 		print("self.labelSkinDesc.text", self.labelSkinDesc.text)
 
@@ -3228,8 +3455,9 @@ function PartnerDetailWindow:onSetPicture()
 	local currentSkinID = self.skinIDs[self.currentSkin]
 	local showID = self.partner_:getShowID()
 	local skin = self.partner_:getSkinID()
+	local group = self.partner_:getGroup()
 
-	if xyd.tables.itemTable:getType(currentSkinID) ~= xyd.ItemType.SKIN then
+	if group == xyd.PartnerGroup.TIANYI or xyd.tables.itemTable:getType(currentSkinID) ~= xyd.ItemType.SKIN then
 		if showID == currentSkinID then
 			local id = nil
 
@@ -3237,6 +3465,18 @@ function PartnerDetailWindow:onSetPicture()
 				id = skin
 			else
 				id = self.partner_:getTableID()
+
+				if self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+					local curStar = self.partner_:getStar()
+
+					if curStar >= 15 then
+						id = self.skinIDs[3]
+					elseif curStar <= 13 then
+						id = self.skinIDs[2]
+					elseif curStar <= 10 then
+						id = self.skinIDs[1]
+					end
+				end
 			end
 
 			self.partner_:changeShowID(id)
@@ -4080,7 +4320,7 @@ function PartnerDetailWindow:awakeAddPartnersById(tableID, array)
 	local partners = xyd.models.slot:getPartners()
 
 	for key in pairs(partners) do
-		if partners[key]:getTableID() == tableID and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 then
+		if partners[key]:getTableID() == tableID and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() then
 			table.insert(array, partners[key])
 		end
 	end
@@ -4117,7 +4357,7 @@ function PartnerDetailWindow:awakeAddPartnersByParams(params, array)
 	local partners = xyd.models.slot:getPartners()
 
 	for key in pairs(partners) do
-		if (partners[key]:getGroup() == params.group or params.group == 0) and partners[key]:getStar() == params.star and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() then
+		if (partners[key]:getGroup() == params.group or params.group == 0) and partners[key]:getStar() == params.star and self.awakeSelectedPartners[partners[key]:getPartnerID()] ~= 1 and partners[key]:getPartnerID() ~= self.partner_:getPartnerID() and partners[key]:getGroup() ~= xyd.PartnerGroup.TIANYI then
 			table.insert(array, partners[key])
 		end
 	end
@@ -4369,7 +4609,7 @@ function PartnerDetailWindow:onAwake(event)
 	win_params.skillOldList = skillOldList
 	win_params.skillNewList = skillNewList
 
-	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
+	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI then
 		self.needExSkillGuide = true
 	end
 
@@ -4461,6 +4701,166 @@ function PartnerDetailWindow:updateTenStarExchange()
 	self.exchangeItem.isShrineHurdle_ = self.isShrineHurdle_
 end
 
+function PartnerDetailWindow:updateStarOriginGroup()
+	self.labelStarOriginDetail.text = __("STAR_ORIGIN_TEXT02")
+	local group = self.partner_:getGroup()
+	local partnerTableID = self.partner_:getTableID()
+	local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
+	local starIDs = xyd.tables.starOriginListTable:getNode(listTableID)
+	local xy = xyd.tables.starOriginListTable:getXY(listTableID)
+	local nodeType = xyd.tables.starOriginListTable:getNodeType(listTableID)
+
+	if group == 7 then
+		xyd.setUISpriteAsync(self.imgStarOriginGroup, nil, xyd.tables.partnerGroup7Table:getStarOriginImg1(partnerTableID), nil, , true)
+	else
+		xyd.setUISpriteAsync(self.imgStarOriginGroup, nil, xyd.tables.groupTable:getStarOriginImg1(group), nil, , true)
+	end
+
+	self.starOriginGroup:X(xy[1])
+	self.starOriginGroup:Y(xy[2])
+
+	for i = 1, #starIDs do
+		local nodeTableID = starIDs[i]
+		local state = 0
+		local lev = self:getStarOriginNodeLev(nodeTableID)
+		local nodeGroup = xyd.tables.starOriginNodeTable:getOriginGroup(nodeTableID)
+		local preNodeTableID = xyd.tables.starOriginNodeTable:getPreId(nodeTableID)
+		local preNodeNeedLev = xyd.tables.starOriginNodeTable:getPreLv(nodeTableID)
+
+		if preNodeTableID and preNodeTableID > 0 then
+			local preNodeLev = self:getStarOriginNodeLev(preNodeTableID)
+
+			if preNodeNeedLev <= preNodeLev then
+				if lev > 0 then
+					local beginID = xyd.tables.starOriginListTable:getStarIDs(listTableID)[i]
+					local starOriginTableID = xyd.tables.starOriginTable:getIdByBeginIDAndLev(beginID, lev)
+					local nextID = xyd.tables.starOriginTable:getNextId(starOriginTableID)
+
+					if not nextID or nextID < 1 then
+						state = 3
+					else
+						state = 2
+					end
+				else
+					state = 2
+				end
+			else
+				state = 1
+			end
+		elseif lev > 0 then
+			local beginID = xyd.tables.starOriginListTable:getStarIDs(listTableID)[i]
+			local starOriginTableID = xyd.tables.starOriginTable:getIdByBeginIDAndLev(beginID, lev)
+			local nextID = xyd.tables.starOriginTable:getNextId(starOriginTableID)
+
+			if not nextID or nextID < 1 then
+				state = 3
+			else
+				state = 2
+			end
+		else
+			state = 2
+		end
+
+		if not self.starOriginNodeItems then
+			self.starOriginNodeItems = {}
+		end
+
+		if not self.starOriginNodeItems[i] then
+			local tmp = NGUITools.AddChild(self.starOriginGroup.gameObject, self.starOriginItem)
+			local item = StarOriginNodeItem.new(tmp, self)
+			self.starOriginNodeItems[i] = item
+		end
+
+		self.starOriginNodeItems[i]:setInfo({
+			nodeTableID = nodeTableID,
+			lev = lev,
+			state = state
+		})
+	end
+
+	if nodeType == 2 then
+		local allUnlock = true
+
+		for i = 1, #starIDs do
+			if self.starOriginNodeItems[i].state <= 1 then
+				allUnlock = false
+			end
+		end
+
+		if allUnlock then
+			local state = 2
+
+			if self.starOriginNodeItems[#starIDs].lev > 0 then
+				state = 3
+			end
+
+			self.starOriginNodeItems[1]:setLineByPreNodeID(starIDs[#starIDs], state)
+		end
+	end
+end
+
+function PartnerDetailWindow:getStarOriginNodeLev(nodeTableID)
+	local partnerTableID = self.partner_:getTableID()
+	local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
+	local starIDs = xyd.tables.starOriginListTable:getNode(listTableID)
+
+	for i = 1, #starIDs do
+		if starIDs[i] == nodeTableID then
+			return self.partner_:getStarOrigin()[i] or 0
+		end
+	end
+
+	return 0
+end
+
+function PartnerDetailWindow:checkStarOriginUpdate()
+	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
+	if self.navChosen ~= 5 then
+		return
+	end
+
+	self:updateStarOriginGroup()
+end
+
+function PartnerDetailWindow:checkStarOriginGuide()
+	local wnd1 = xyd.getWindow("alert_award_window")
+	local wnd2 = xyd.getWindow("potentiality_success_window")
+	local wnd3 = xyd.getWindow("alert_item_window")
+
+	if wnd1 or wnd2 or wnd3 then
+		return
+	end
+
+	if self.needExSkillGuide then
+		return
+	end
+
+	local isHasGoStarOriginGuide = xyd.db.misc:getValue("is_has_go_star_origin_guide")
+
+	if isHasGoStarOriginGuide and tonumber(isHasGoStarOriginGuide) == 1 then
+		return
+	elseif self.showStarOriginTab == true then
+		self.needStarOriginGuide = false
+
+		xyd.WindowManager:get():openWindow("common_trigger_guide_window", {
+			guide_type = xyd.CommonTriggerGuideType.STAR_ORIGIN
+		})
+		xyd.db.misc:setValue({
+			value = 1,
+			key = "is_has_go_star_origin_guide"
+		})
+	end
+end
+
+function PartnerDetailWindow:onClickStarOriginBtn()
+	xyd.openWindow("star_origin_detail_window", {
+		partnerID = self.partner_:getPartnerID()
+	})
+end
+
 function PartnerDetailWindow:onclickArrow(delta)
 	if self:checkLongTouch() then
 		return
@@ -4482,6 +4882,7 @@ function PartnerDetailWindow:onclickArrow(delta)
 
 	self.needExSkillGuide = false
 	self.ExSkillGuideInAward = false
+	self.needStarOriginGuide = false
 
 	self:initFullOrderGradeUp()
 	self:initFullOrderLevelUp()
@@ -4497,6 +4898,7 @@ function PartnerDetailWindow:onclickArrow(delta)
 	self:updateRedPointShow()
 	self:initMarkedBtn()
 	self:checkContentState()
+	self:checkStarOriginUpdate()
 	self:checkBtnCommentShow()
 end
 
@@ -4614,7 +5016,8 @@ function PartnerDetailWindow:onclickZoom()
 
 	xyd.WindowManager.get():openWindow("partner_detail_zoom_window", {
 		item_id = showID,
-		bg_source = res
+		bg_source = res,
+		group = self.partner_:getGroup()
 	})
 end
 
@@ -4808,6 +5211,69 @@ function PartnerDetailWindow:updateNavState()
 		self.status_ = "SHENXUE"
 	else
 		self.status_ = "AWAKE"
+	end
+end
+
+function PartnerDetailWindow:checkStarOriginTab()
+	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
+	self.showStarOriginTab = false
+
+	if self.partner_:getStar() >= 15 and xyd.tables.partnerTable:getStarOrigin(self.partner_:getTableID()) > 0 then
+		self.showStarOriginTab = true
+	end
+
+	local tabWidth = 177
+	local tabLabelWidth = 160
+	local tabImgName1 = "nav_btn_blue_right"
+	local tabImgName2 = "nav_btn_white_right"
+	local tabImgName3 = "nav_btn_grey_right"
+
+	if self.showStarOriginTab then
+		tabWidth = 141
+		tabLabelWidth = 123
+		tabImgName1 = "nav_btn_blue_mid"
+		tabImgName2 = "nav_btn_white_mid"
+		tabImgName3 = "nav_btn_grey_mid"
+	end
+
+	for i = 1, 4 do
+		self.defaultTabGroup:ComponentByName("tab_" .. i .. "/chosen", typeof(UISprite)).width = tabWidth
+		self.defaultTabGroup:ComponentByName("tab_" .. i .. "/unchosen", typeof(UISprite)).width = tabWidth
+
+		if i < 3 then
+			self.defaultTabGroup:ComponentByName("tab_" .. i .. "/label", typeof(UILabel)).width = tabLabelWidth
+		end
+
+		if i > 2 then
+			local none = self.defaultTabGroup:ComponentByName("tab_" .. i .. "/none", typeof(UISprite))
+			none.width = tabWidth
+		end
+
+		if self.showStarOriginTab then
+			self.defaultTabGroup:NodeByName("tab_" .. i).gameObject:X(-282 + (i - 1) * tabWidth)
+		else
+			self.defaultTabGroup:NodeByName("tab_" .. i).gameObject:X(-265 + (i - 1) * tabWidth)
+		end
+	end
+
+	self.defaultTabGroup:NodeByName("tab_5").gameObject:SetActive(self.showStarOriginTab)
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/chosen", typeof(UISprite)), nil, tabImgName1)
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/unchosen", typeof(UISprite)), nil, tabImgName2)
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/none", typeof(UISprite)), nil, tabImgName3)
+
+	if not self.showStarOriginTab then
+		self.content_6:SetActive(false)
+
+		self.defaultTabGroup:ComponentByName("tab_4/label", typeof(UILabel)).fontSize = 26
+
+		if xyd.Global.lang == "de_de" then
+			self.defaultTabGroup:ComponentByName("tab_4/label", typeof(UILabel)).fontSize = 18
+		end
+	elseif xyd.Global.lang == "en_en" then
+		self.defaultTabGroup:ComponentByName("tab_4/label", typeof(UILabel)).fontSize = 22
 	end
 end
 
@@ -5084,7 +5550,15 @@ function PartnerDetailWindow:getShenxueMaterial(mTableID)
 		partnerList = self.model_:getListByTableID(tonumber(mTableID), partner_id)
 	end
 
-	return partnerList
+	local tempPartnerList = {}
+
+	for i, partnerInfo in pairs(partnerList) do
+		if partnerInfo:getGroup() ~= xyd.PartnerGroup.TIANYI then
+			table.insert(tempPartnerList, partnerInfo)
+		end
+	end
+
+	return tempPartnerList
 end
 
 function PartnerDetailWindow:onSelectContainer(id)
@@ -5488,6 +5962,13 @@ function PartnerDetailWindow:updatePuppetNav()
 			if self.partner_:getGrade() < maxGrade and self.navChosen == 4 then
 				self.defaultTab:setTabActive(1, true)
 			end
+		end
+
+		if self.navChosen == 5 and (self.partner_:getStar() < 15 or xyd.tables.partnerTable:getStarOrigin(self.partner_:getTableID()) <= 0) then
+			self.defaultTab:setTabActive(self.navChosen, false)
+			self.defaultTab:setTabActive(1, true)
+		else
+			self.defaultTab:setTabActive(self.navChosen, true)
 		end
 	end
 end

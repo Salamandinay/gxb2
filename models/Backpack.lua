@@ -59,6 +59,7 @@ end
 
 function Backpack:onBackpackInfo(event)
 	if event.data then
+		dump(xyd.decodeProtoBuf(event.data))
 		self:resetInfo()
 
 		self.items_ = event.data.items
@@ -524,7 +525,7 @@ function Backpack:getAvatars()
 	for _, item in ipairs(items) do
 		local type_ = ItemTable:getType(item.item_id)
 
-		if type_ == xyd.ItemType.AVATAR or type_ == xyd.ItemType.HERO then
+		if type_ == xyd.ItemType.AVATAR or type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
 			table.insert(ids, item.item_id)
 		elseif type_ == xyd.ItemType.SKIN_PICTURE then
 			local id = ItemTable:getSkinID(item.item_id)
@@ -549,7 +550,7 @@ function Backpack:getPictures()
 	for _, item in ipairs(items) do
 		local type_ = ItemTable:getType(item.item_id)
 
-		if type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.KANBAN then
+		if type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.KANBAN or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
 			table.insert(ids, item.item_id)
 		elseif type_ == xyd.ItemType.SKIN_PICTURE then
 			local id = ItemTable:getSkinID(item.item_id)
@@ -597,6 +598,10 @@ function Backpack:checkAvatar(id)
 		type_ = xyd.ItemType.SKIN
 	end
 
+	if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+		type_ = xyd.ItemType.HERO
+	end
+
 	if type_ == xyd.ItemType.AVATAR or type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN then
 		if #self.avatars_ <= 0 or #self.pictures_ <= 0 then
 			self:getAvatars()
@@ -604,7 +609,20 @@ function Backpack:checkAvatar(id)
 		end
 
 		if table.indexof(self.avatars_, itemID) == false and type_ ~= xyd.ItemType.KANBAN then
-			table.insert(self.newAvatars_, itemID)
+			local isInsetNewAvatars = true
+
+			if ItemTable:getType(itemID) == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(itemID)
+
+				if tianyiIndex == 3 then
+					isInsetNewAvatars = false
+				end
+			end
+
+			if isInsetNewAvatars then
+				table.insert(self.newAvatars_, itemID)
+			end
+
 			table.insert(self.avatars_, itemID)
 		end
 
@@ -928,6 +946,21 @@ function Backpack:checkIsHide(itemID)
 			res = true
 		else
 			local end_time = xyd.tables.miscTable:getNumber("gacha_10drawcard_endtime", "value")
+			local nowTime = xyd.getServerTime()
+
+			if end_time < nowTime then
+				res = true
+			end
+		end
+	end
+
+	if itemType == xyd.ItemType.LIMIT_STARRY then
+		local costData = xyd.tables.starryAltarTable:getCost(2)
+
+		if costData[1] ~= itemID then
+			res = true
+		else
+			local end_time = xyd.tables.miscTable:getNumber("star_origin_drawcard_endtime", "value")
 			local nowTime = xyd.getServerTime()
 
 			if end_time < nowTime then

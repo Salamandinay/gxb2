@@ -93,6 +93,7 @@ function Slot:onGetData(event)
 	local partners = event.data.partners or {}
 	local details = event.data.details
 	local collection = event.data.gallery
+	self.exGallery = xyd.decodeProtoBuf(event.data).ex_gallery
 
 	if tonumber(details.decompose) then
 		self.decomposeTimes = details.decompose
@@ -113,31 +114,30 @@ function Slot:onGetData(event)
 	self.sortedPartners_[tostring(xyd.partnerSortType.SHENXUE) .. "_0"] = {}
 	self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_0"] = {}
 	self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_0"] = {}
-	local groupIds = xyd.tables.groupTable:getGroupIds()
 
-	for i = 1, #groupIds do
-		self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.SHENXUE) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. tostring(groupIds[i])] = {}
-		self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. tostring(groupIds[i])] = {}
+	for i = 1, xyd.GROUP_NUM do
+		self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.SHENXUE) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. i] = {}
+		self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. i] = {}
 
 		for j = 1, #jobIds do
-			self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.SHENXUE) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
-			self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.SHENXUE) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
+			self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. i .. "_" .. tostring(jobIds[j])] = {}
 		end
 	end
 
@@ -543,27 +543,27 @@ function Slot:sortPartners()
 	table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_0"], powerSort)
 	table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_0"], isCollectSort)
 
-	for i = 1, #groupIds do
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. tostring(groupIds[i])], levSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. tostring(groupIds[i])], starSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. tostring(groupIds[i])], lovePointSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. tostring(groupIds[i])], atkSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. tostring(groupIds[i])], hpSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. tostring(groupIds[i])], armSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. tostring(groupIds[i])], spdSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. tostring(groupIds[i])], powerSort)
-		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. tostring(groupIds[i])], isCollectSort)
+	for i = 1, xyd.GROUP_NUM do
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. i], levSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. i], starSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. i], lovePointSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. i], atkSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. i], hpSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. i], armSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. i], spdSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. i], powerSort)
+		table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. i], isCollectSort)
 
 		for j = 1, #jobIds do
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], levSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], starSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], lovePointSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], atkSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], hpSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], armSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], spdSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], powerSort)
-			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. tostring(groupIds[i]) .. "_" .. tostring(jobIds[j])], isCollectSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LEV) .. "_" .. i .. "_" .. tostring(jobIds[j])], levSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. i .. "_" .. tostring(jobIds[j])], starSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.LOVE_POINT) .. "_" .. i .. "_" .. tostring(jobIds[j])], lovePointSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ATK) .. "_" .. i .. "_" .. tostring(jobIds[j])], atkSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.HP) .. "_" .. i .. "_" .. tostring(jobIds[j])], hpSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.ARM) .. "_" .. i .. "_" .. tostring(jobIds[j])], armSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.SPD) .. "_" .. i .. "_" .. tostring(jobIds[j])], spdSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.POWER) .. "_" .. i .. "_" .. tostring(jobIds[j])], powerSort)
+			table.sort(self.sortedPartners_[tostring(xyd.partnerSortType.isCollected) .. "_" .. i .. "_" .. tostring(jobIds[j])], isCollectSort)
 		end
 	end
 
@@ -601,8 +601,8 @@ function Slot:sortPartners()
 	for k = 0, xyd.MAX_PARTNER_STAR_NUM do
 		self.partnersByStar_[tostring(k) .. "_0"] = {}
 
-		for i = 1, #groupIds do
-			self.partnersByStar_[tostring(k) .. "_" .. tostring(groupIds[i])] = {}
+		for i = 1, xyd.GROUP_NUM do
+			self.partnersByStar_[tostring(k) .. "_" .. i] = {}
 		end
 	end
 
@@ -656,6 +656,7 @@ function Slot:onRegister()
 	self:registerEvent(xyd.event.SUMMON, handler(self, self.onUpdateSummonPartners))
 	self:registerEvent(xyd.event.SUMMON_WISH, handler(self, self.onUpdateSummonPartners))
 	self:registerEvent(xyd.event.NEWBEE_SUMMON, handler(self, self.onUpdateSummonPartners))
+	self:registerEvent(xyd.event.STARRY_SUMMON, handler(self, self.onStarrySummonPartners))
 	self:registerEvent(xyd.event.BUY_SLOT, handler(self, self.onUpdateSlot))
 	self:registerEvent(xyd.event.VIP_CHANGE, handler(self, self.onUpdateSlot))
 	self:registerEvent(xyd.event.GET_SLOT_INFO, handler(self, self.onGetData))
@@ -681,6 +682,25 @@ function Slot:onRegister()
 		self:onPartnerUpdate(event)
 		self:onAwakePartner(event)
 		self:checkPromotablePartner()
+
+		local partnerID = event.data.partner_info.partner_id
+
+		if not partnerID then
+			return
+		end
+
+		local p = self:getPartner(partnerID)
+
+		if p:getGroup() == xyd.PartnerGroup.TIANYI and p:getSkinID() and p:getSkinID() == 0 then
+			local star = p:getStar()
+			local showIDs = xyd.tables.partnerTable:getShowIds(p:getTableID())
+
+			if star == 15 then
+				p:changeShowID(showIDs[3])
+			elseif star == 13 then
+				p:changeShowID(showIDs[2])
+			end
+		end
 	end))
 	self:registerEvent(xyd.event.ROB_PARTNER_EQUIP, handler(self, function (self, event)
 		local function callback(table_id, changed_attr_show, partner_id)
@@ -811,6 +831,7 @@ function Slot:onRegister()
 	end))
 	self:registerEvent(xyd.event.VOW, handler(self, self.onPartnerVow))
 	self:registerEvent(xyd.event.CHOOSE_PARTNER_POTENTIAL, handler(self, self.onChoosePotential))
+	self:registerEvent(xyd.event.UPGRADE_STAR_ORIGIN, handler(self, self.onGetMsgLevelUpStarOrigin))
 end
 
 function Slot:onUpdateSummonPartners(event)
@@ -824,6 +845,21 @@ function Slot:onUpdateSummonPartners(event)
 
 	local star4 = 0
 	local star5 = 0
+
+	self:addPartners(partners)
+	self:initAwakMatStatus()
+	self:checkPromotablePartner()
+
+	self.puppetPartner_ = nil
+end
+
+function Slot:onStarrySummonPartners(event)
+	local partners = {}
+	local data = event.data
+	local summonResult = data.summon_result
+	local items = summonResult.items
+	local itemsExtra = summonResult.items_extra
+	local partners = summonResult.partners
 
 	self:addPartners(partners)
 	self:initAwakMatStatus()
@@ -1210,6 +1246,7 @@ function Slot:onTenStarReplace(event)
 		0,
 		0
 	}
+	oldPinfo.star_origin = {}
 
 	self:addPartners({
 		oldPinfo
@@ -1842,6 +1879,13 @@ function Slot:onChoosePotential(event)
 	end
 end
 
+function Slot:onGetMsgLevelUpStarOrigin(event)
+	local data = event.data
+	local partner = self:getPartner(data.partner_info.partner_id)
+
+	partner:updateStarOrigin(data.partner_info.star_origin)
+end
+
 function Slot:onChoosePartnerPotential(partner_info)
 	local partnerInfo = xyd.getPartnerInfo(partner_info)
 
@@ -1983,7 +2027,7 @@ function Slot:initShenxueSort()
 	local pShenxueList = {}
 	local pNormalList = {}
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		pShenxueList[xyd.partnerSortType.SHENXUE .. "_" .. i] = {}
 		pNormalList[xyd.partnerSortType.SHENXUE .. "_" .. i] = {}
 	end
@@ -2005,7 +2049,7 @@ function Slot:initShenxueSort()
 		end
 	end
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		table.sort(pShenxueList[xyd.partnerSortType.SHENXUE .. "_" .. i], starSort)
 		table.sort(pNormalList[xyd.partnerSortType.SHENXUE .. "_" .. i], starSort)
 
@@ -2066,14 +2110,29 @@ function Slot:checkAwake(partnerId)
 	end
 
 	local cost = np:getAwakeItemCost()
-	cost = xyd.checkCondition(cost ~= nil and #cost > 0, cost, {
-		10,
-		0
-	})
-	local resNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.GRADE_STONE)
 
-	if resNum < cost[2] then
-		return false
+	if np:getGroup() ~= xyd.PartnerGroup.TIANYI then
+		cost = xyd.checkCondition(cost ~= nil and #cost > 0, cost, {
+			10,
+			0
+		})
+		local resNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.GRADE_STONE)
+
+		if resNum < cost[2] then
+			return false
+		end
+	elseif np:getGroup() == xyd.PartnerGroup.TIANYI then
+		if cost == nil then
+			return false
+		end
+
+		for i in pairs(cost) do
+			local resNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.GRADE_STONE)
+
+			if xyd.models.backpack:getItemNumByID(cost[i][1]) < cost[i][2] then
+				return false
+			end
+		end
 	end
 
 	local star = np:getStar()
@@ -2154,7 +2213,7 @@ function Slot:checkHasAwakeMaterials(partnerId, awakeMaterials)
 
 				break
 			end
-		elseif not self:splicePartnerFromListByTableID(tonumber(mTableID), needNum, tempPartnerList) then
+		elseif not self:splicePartnerFromListByTableID(tonumber(mTableID), needNum, tempPartnerList, partnerId) then
 			isHasMat = false
 
 			break
@@ -2173,7 +2232,7 @@ function Slot:splicePartnerFromListByGroupAndStar(selfPartnerId, group, star, ne
 	while groupPartnerList[index] and count < needNum do
 		local partner = self.partners_[groupPartnerList[index]]
 
-		if groupPartnerList[index] ~= selfPartnerId and partner:getStar() == star and (group == 0 or partner:getGroup() == group) then
+		if groupPartnerList[index] ~= selfPartnerId and partner:getStar() == star and (group == 0 or partner:getGroup() == group) and partner:getGroup() ~= xyd.PartnerGroup.TIANYI then
 			count = count + 1
 
 			table.remove(partnerList, index)
@@ -2189,7 +2248,7 @@ function Slot:splicePartnerFromListByGroupAndStar(selfPartnerId, group, star, ne
 	end
 end
 
-function Slot:splicePartnerFromListByTableID(tableID, num, partnerList)
+function Slot:splicePartnerFromListByTableID(tableID, num, partnerList, selfPartnerId)
 	local group = xyd.tables.partnerTable:getGroup(tableID)
 	local leftNum = num
 	local groupPartnerList = {}
@@ -2204,7 +2263,7 @@ function Slot:splicePartnerFromListByTableID(tableID, num, partnerList)
 		local partner = self.partners_[groupPartnerList[index]]
 		local isAddNum = true
 
-		if partner:getTableID() == tableID then
+		if partner:getTableID() == tableID and groupPartnerList[index] ~= selfPartnerId then
 			table.remove(partnerList, index)
 
 			leftNum = leftNum - 1
@@ -2535,6 +2594,52 @@ function Slot:addAltarPartner(partner)
 				table.insert(sortList, 1, partner:getPartnerID())
 			end
 		end
+	end
+end
+
+function Slot:getExGallery()
+	if not self.exGallery then
+		return {}
+	end
+
+	return self.exGallery
+end
+
+function Slot:getGroup7ShowGuideInfo()
+	local param = {
+		max_star = 15,
+		max_show_guide_index = 3,
+		max_lev = 330,
+		max_awake = 5,
+		low_ex_skills = {
+			0,
+			0,
+			0,
+			0
+		},
+		max_ex_skills = {
+			9,
+			9,
+			9,
+			9
+		}
+	}
+
+	return param
+end
+
+function Slot:getCheckTianYiFakePartnerSkin(itemID)
+	local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(itemID)[1]
+	local group = xyd.tables.partnerTable:getGroup(partnerTableID)
+
+	if group == xyd.PartnerGroup.TIANYI then
+		local skin_id = xyd.tables.itemTable:getSkinID(itemID)
+		local showIDs = xyd.tables.partnerTable:getShowIdsWithNum(partnerTableID)
+		local index = xyd.arrayIndexOf(showIDs, skin_id)
+
+		return index
+	else
+		return -2
 	end
 end
 

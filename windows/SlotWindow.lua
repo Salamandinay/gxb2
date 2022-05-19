@@ -39,7 +39,8 @@ function SlotPartnerCard:init()
 		local params = {
 			partner_id = self.data.partner_id,
 			sort_key = self.data.key,
-			table_id = self.data.table_id
+			table_id = self.data.table_id,
+			is_group7_ex_gallery = self.data.is_group7_ex_gallery
 		}
 
 		if not is_guide then
@@ -84,6 +85,7 @@ function SlotPartnerCard:update(index, realIndex, info)
 	end
 
 	self.data = info
+	self.is_group7_ex_gallery = info.is_group7_ex_gallery
 
 	self:updateInfo(info.partner_id, info.sort_key, info.red_point, info.table_id)
 	self.go:SetActive(true)
@@ -98,14 +100,31 @@ function SlotPartnerCard:updateInfo(partner_id, sort_key, red_point, table_id, p
 			playOpenAnimation = self.win_.isPlayOpenAnimation
 		}
 
+		if self.is_group7_ex_gallery then
+			info.star = xyd.models.slot:getGroup7ShowGuideInfo().max_star
+			info.lev = xyd.models.slot:getGroup7ShowGuideInfo().max_lev
+			local showIds = xyd.tables.partnerTable:getShowIds(table_id)
+			info.show_id = showIds[xyd.models.slot:getGroup7ShowGuideInfo().max_show_guide_index]
+		end
+
 		self.partnerCard:setInfo(info)
 
 		local collection = xyd.models.slot:getCollection()
 
-		if not collection[table_id] then
-			self.partnerCard:applyGrey()
-		else
-			self.partnerCard:applyOrigin()
+		if self.is_group7_ex_gallery == nil then
+			if not collection[table_id] then
+				self.partnerCard:applyGrey()
+			else
+				self.partnerCard:applyOrigin()
+			end
+		elseif self.is_group7_ex_gallery then
+			local exGallery = xyd.models.slot:getExGallery()
+
+			if xyd.arrayIndexOf(exGallery, table_id) == -1 then
+				self.partnerCard:applyGrey()
+			else
+				self.partnerCard:applyOrigin()
+			end
 		end
 
 		self.partnerCard:setRedPoint(false)
@@ -165,6 +184,8 @@ function SlotWindow:ctor(name, params)
 			self.currentJobId = params.jobId
 		end
 	end
+
+	print(self.sortType, "測試asjdkasj")
 end
 
 function SlotWindow:initWindow()
@@ -224,7 +245,7 @@ function SlotWindow:getUIComponent()
 	local filterGroup = self.filterNode:NodeByName("filterGroup")
 	local guideFilterGroup = self.guideFilterNode:NodeByName("filterGroup")
 
-	for i = 1, 6 do
+	for i = 1, xyd.GROUP_NUM do
 		self.filter[i] = filterGroup:NodeByName("group" .. i).gameObject
 		UIEventListener.Get(self.filter[i]).onClick = handler(self, function ()
 			self:changeFilter(i)
@@ -444,11 +465,11 @@ function SlotWindow:initData()
 	local groupIds = xyd.tables.groupTable:getGroupIds()
 	guidePartners[0] = {}
 
-	for i = 1, #groupIds do
-		guidePartners[groupIds[i]] = {}
+	for i = 1, xyd.GROUP_NUM do
+		guidePartners[i] = {}
 
 		for j = 1, #jobIds do
-			guidePartners[jobIds[j] * 10 + groupIds[i]] = {}
+			guidePartners[jobIds[j] * 10 + i] = {}
 		end
 	end
 
@@ -461,22 +482,35 @@ function SlotWindow:initData()
 		if xyd.Global.isReview ~= 1 and showInGuide >= 1 and showInGuide < xyd.getServerTime() then
 			local group = heroConf:getGroup(id)
 			local job = heroConf:getJob(id)
+			local key1 = group
+			local param1 = {
+				table_id = id,
+				key = key1,
+				parent = self
+			}
 
-			table.insert(guidePartners[group], {
+			table.insert(guidePartners[key1], param1)
+			self:checkGroup7GuidePartners(group, id, key1, guidePartners[key1])
+
+			local key2 = job * 10 + group
+			local param2 = {
 				table_id = id,
-				key = group,
+				key = key2,
 				parent = self
-			})
-			table.insert(guidePartners[job * 10 + group], {
+			}
+
+			table.insert(guidePartners[key2], param2)
+			self:checkGroup7GuidePartners(group, id, key2, guidePartners[key2])
+
+			local key3 = 0
+			local param3 = {
 				table_id = id,
-				key = job * 10 + group,
+				key = tostring(key3),
 				parent = self
-			})
-			table.insert(guidePartners[0], {
-				key = "0",
-				table_id = id,
-				parent = self
-			})
+			}
+
+			table.insert(guidePartners[key3], param3)
+			self:checkGroup7GuidePartners(group, id, key3, guidePartners[key3])
 		elseif xyd.Global.isReview == 1 and heroConf:getShowInReviewGuide(id) == 1 then
 			local group = heroConf:getGroup(id)
 			local job = heroConf:getJob(id)
@@ -499,15 +533,28 @@ function SlotWindow:initData()
 		end
 	end
 
-	for i = 1, #groupIds do
-		guidePartners[groupIds[i]] = xyd.tableReverse(guidePartners[groupIds[i]])
+	for i = 1, xyd.GROUP_NUM do
+		guidePartners[i] = xyd.tableReverse(guidePartners[i])
 
 		for j = 1, #jobIds do
-			guidePartners[jobIds[j] * 10 + groupIds[i]] = xyd.tableReverse(guidePartners[jobIds[j] * 10 + groupIds[i]])
+			guidePartners[jobIds[j] * 10 + i] = xyd.tableReverse(guidePartners[jobIds[j] * 10 + i])
 		end
 	end
 
 	self.guidePartners = guidePartners
+end
+
+function SlotWindow:checkGroup7GuidePartners(group, id, key, arr)
+	if group == xyd.PartnerGroup.TIANYI then
+		local parmTemp = {
+			is_group7_ex_gallery = true,
+			table_id = id,
+			key = key,
+			parent = self
+		}
+
+		table.insert(arr, parmTemp)
+	end
 end
 
 function SlotWindow:initLayout()
@@ -745,10 +792,13 @@ function SlotWindow:updateDataGroup(isGuide, isEvent)
 	if isGuide then
 		local guidePartners = self.guidePartners[self.currentGuideJobId * 10 + self.guideChosenGroup]
 		local collection = xyd.models.slot:getCollection()
+		local exGallery = xyd.models.slot:getExGallery()
 		local guideNum = 0
 
 		for i = 1, #guidePartners do
-			if collection[guidePartners[i].table_id] then
+			if guidePartners[i].is_group7_ex_gallery == nil and collection[guidePartners[i].table_id] then
+				guideNum = guideNum + 1
+			elseif guidePartners[i].is_group7_ex_gallery == true and xyd.arrayIndexOf(exGallery, guidePartners[i].table_id) > 0 then
 				guideNum = guideNum + 1
 			end
 		end
@@ -757,6 +807,11 @@ function SlotWindow:updateDataGroup(isGuide, isEvent)
 
 		self.multiWrap_:setInfos(guidePartners, {})
 		self.partnerNone:SetActive(false)
+
+		if #guidePartners <= 0 then
+			self.partnerNone:SetActive(true)
+		end
+
 		self.guideNum:SetActive(true)
 		self.guideNumLabel:SetActive(true)
 	else

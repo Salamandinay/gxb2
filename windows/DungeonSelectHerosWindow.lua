@@ -90,17 +90,28 @@ function DungeonSelectHerosWindow:initWindow()
 	self:initGroupSelects()
 	self:changePower()
 	self:registerEvent()
+	self:initFilter()
+end
+
+function DungeonSelectHerosWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 0.95,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:changeGroup(group)
+		end),
+		width = self.groupBtns:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.selectIndex
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.groupBtns.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function DungeonSelectHerosWindow:getUIComponent()
 	local winTrans = self.window_.transform
 	self.groupHeros_ = winTrans:NodeByName("groupHeros_").gameObject
-
-	for i = 1, 6 do
-		self["imgChosen" .. i] = self.groupHeros_:NodeByName("groupBtns/groupBtn" .. i .. "/imgChosen" .. i).gameObject
-		self["imgTouch" .. i] = self.groupHeros_:NodeByName("groupBtns/groupBtn" .. i .. "/imgTouch" .. i).gameObject
-	end
-
+	self.groupBtns = self.groupHeros_:NodeByName("groupBtns").gameObject
 	local scrollView = self.groupHeros_:ComponentByName("scroller_", typeof(UIScrollView))
 	local wrapContent = scrollView:ComponentByName("itemList_", typeof(MultiRowWrapContent))
 	local scrolltem = scrollView:NodeByName("item").gameObject
@@ -124,7 +135,7 @@ end
 function DungeonSelectHerosWindow:initData()
 	local sortPartners = self.slot:getSortedPartners()
 
-	for i = 0, 6 do
+	for i = 0, xyd.GROUP_NUM do
 		local collection = {}
 		self.items_[i] = collection
 		local partners = sortPartners[tostring(xyd.partnerSortType.LEV) .. "_" .. i]
@@ -157,12 +168,6 @@ function DungeonSelectHerosWindow:initGroupSelects()
 end
 
 function DungeonSelectHerosWindow:registerEvent()
-	for i = 1, 6 do
-		UIEventListener.Get(self["imgTouch" .. tostring(i)]).onClick = function ()
-			self:changeGroup(i)
-		end
-	end
-
 	UIEventListener.Get(self.btnSure_).onClick = handler(self, self.sureTouch)
 	UIEventListener.Get(self.btnClose_).onClick = handler(self, self.closeTouch)
 end
@@ -194,14 +199,6 @@ function DungeonSelectHerosWindow:changeGroup(index)
 		self.selectIndex = 0
 	else
 		self.selectIndex = index
-	end
-
-	for i = 1, 6 do
-		if self.selectIndex == i then
-			self["imgChosen" .. tostring(i)]:SetActive(true)
-		else
-			self["imgChosen" .. tostring(i)]:SetActive(false)
-		end
 	end
 
 	self:changeDataGroup()
