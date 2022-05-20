@@ -194,8 +194,6 @@ end
 function EditPictureWindow:initData(type)
 	local pictures = self.backpack:getPictures()
 
-	dump(pictures, "測試111")
-
 	if type == nil then
 		self:sortPictures(pictures, self.sortType)
 	else
@@ -315,7 +313,7 @@ function EditPictureWindow:jobFilter()
 		local job = 0
 		local type_ = ItemTable:getType(item.id)
 
-		if type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN then
+		if type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
 			local tableID = PartnerPictureTable:getSkinPartner(item.id)[1]
 			job = PartnerTable:getJob(tableID)
 		else

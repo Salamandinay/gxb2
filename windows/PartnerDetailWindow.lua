@@ -4990,7 +4990,7 @@ function PartnerDetailWindow:onclickShare()
 	xyd.alert(xyd.AlertType.TIPS, tips)
 end
 
-function PartnerDetailWindow:onclickZoom()
+function PartnerDetailWindow:onclickZoom(isGuide)
 	local showID = nil
 
 	if self.navChosen == 3 then
@@ -5010,6 +5010,11 @@ function PartnerDetailWindow:onclickZoom()
 		if not showID or showID == 0 then
 			showID = self.partner_:getTableID()
 		end
+	end
+
+	if isGuide and self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
+		local showIds = xyd.tables.partnerTable:getShowIds(self.partner_:getTableID())
+		showID = tonumber(showIds[self.currentSkin])
 	end
 
 	local res = "college_scene" .. self.partner_:getGroup()

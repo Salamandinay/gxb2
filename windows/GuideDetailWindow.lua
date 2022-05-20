@@ -516,4 +516,8 @@ function GuideDetailWindow:updateBg()
 	end
 end
 
+function GuideDetailWindow:onclickZoom()
+	GuideDetailWindow.super.onclickZoom(self, true)
+end
+
 return GuideDetailWindow

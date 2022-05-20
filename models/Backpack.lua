@@ -526,7 +526,19 @@ function Backpack:getAvatars()
 		local type_ = ItemTable:getType(item.item_id)
 
 		if type_ == xyd.ItemType.AVATAR or type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
-			table.insert(ids, item.item_id)
+			local isInsetNewAvatars = true
+
+			if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(item.item_id)
+
+				if tianyiIndex == 3 then
+					isInsetNewAvatars = false
+				end
+			end
+
+			if isInsetNewAvatars then
+				table.insert(ids, item.item_id)
+			end
 		elseif type_ == xyd.ItemType.SKIN_PICTURE then
 			local id = ItemTable:getSkinID(item.item_id)
 
@@ -575,8 +587,20 @@ function Backpack:getExplorePictures()
 	for _, item in ipairs(items) do
 		local type_ = ItemTable:getType(item.item_id)
 
-		if type_ == xyd.ItemType.HERO then
-			table.insert(ids, item.item_id)
+		if type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+			local isInsetNewExplore = true
+
+			if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(item.item_id)
+
+				if tianyiIndex == 3 then
+					isInsetNewExplore = false
+				end
+			end
+
+			if isInsetNewExplore then
+				table.insert(ids, item.item_id)
+			end
 		elseif type_ == xyd.ItemType.SKIN_PICTURE then
 			local id = ItemTable:getSkinID(item.item_id)
 
@@ -636,7 +660,19 @@ function Backpack:checkAvatar(id)
 		end
 
 		if (type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.SKIN) and table.indexof(self.pictures_, itemID) == false then
-			table.insert(self.pictures_explore, itemID)
+			local isInsetNewExplore = true
+
+			if ItemTable:getType(itemID) == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(itemID)
+
+				if tianyiIndex == 3 then
+					isInsetNewExplore = false
+				end
+			end
+
+			if isInsetNewExplore then
+				table.insert(self.pictures_explore, itemID)
+			end
 		end
 	end
 end

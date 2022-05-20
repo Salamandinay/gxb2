@@ -23,7 +23,7 @@ function ExploreChangeModelWindow:ctor(name, params)
 	self.chosenPartnerArray = {}
 	self.selectJobIndex = 0
 	self.jobSortIsShow = false
-	self.selectElementIndex = 7
+	self.selectElementIndex = 0
 end
 
 function ExploreChangeModelWindow:initWindow()
@@ -43,12 +43,7 @@ function ExploreChangeModelWindow:getUIComponent()
 	self.labelTitle_ = groupAction:ComponentByName("labelTitle_", typeof(UILabel))
 	self.sortGroup = groupAction:NodeByName("sortGroup").gameObject
 	self.schoolGroup = self.sortGroup:NodeByName("schoolGroup").gameObject
-
-	for i = 1, 6 do
-		self["group" .. i] = self.schoolGroup:NodeByName("group" .. i).gameObject
-		self["group" .. i .. "_chosen"] = self["group" .. i]:NodeByName("group" .. i .. "_chosen").gameObject
-	end
-
+	self.commonSchoolGroup = self.sortGroup:NodeByName("commonSchoolGroup").gameObject
 	self.jobGroup = self.sortGroup:NodeByName("jobGroup").gameObject
 	self.btnGroup = self.sortGroup:NodeByName("jobGroup/btnGroup").gameObject
 
@@ -113,16 +108,6 @@ function ExploreChangeModelWindow:layout()
 
 	self.groupSort_:SetActive(false)
 
-	local groupIds = xyd.tables.groupTable:getGroupIds()
-
-	for _, id in ipairs(groupIds) do
-		self["group" .. tostring(id) .. "_chosen"]:SetActive(false)
-	end
-
-	if self.selectElementIndex < 7 and self.selectElementIndex > 0 then
-		self["group" .. tostring(self.selectElementIndex) .. "_chosen"]:SetActive(true)
-	end
-
 	for i = 1, 5 do
 		self["jobGroup" .. tostring(i) .. "_chosen"]:SetActive(false)
 	end
@@ -158,6 +143,23 @@ function ExploreChangeModelWindow:layout()
 	else
 		xyd.setUISpriteAsync(self.jobBtn:GetComponent(typeof(UISprite)), nil, "btn_zk")
 	end
+
+	self:initFilter()
+end
+
+function ExploreChangeModelWindow:initFilter()
+	local params = {
+		isCanUnSelected = 1,
+		scale = 1,
+		gap = 13,
+		callback = handler(self, function (self, group)
+			self:changeGroup(group)
+		end),
+		width = self.commonSchoolGroup:GetComponent(typeof(UIWidget)).width,
+		chosenGroup = self.chosenGroup_
+	}
+	local partnerFilter = import("app.components.PartnerFilter").new(self.commonSchoolGroup.gameObject, params)
+	self.partnerFilter = partnerFilter
 end
 
 function ExploreChangeModelWindow:willClose()
@@ -186,7 +188,7 @@ function ExploreChangeModelWindow:initData(type)
 
 	self.items_ = {}
 
-	for i = 1, 7 do
+	for i = 0, xyd.GROUP_NUM do
 		self.items_[i] = {}
 	end
 
@@ -196,10 +198,19 @@ function ExploreChangeModelWindow:initData(type)
 		if not PartnerTable:checkPuppetPartner(id) then
 			local group_ = 0
 			local type_ = ItemTable:getType(id)
+			local tianyiSortId = nil
 
 			if type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN then
 				local tableID = PartnerPictureTable:getSkinPartner(id)[1]
 				group_ = PartnerTable:getGroup(tableID)
+			elseif type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(id)
+				local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(id)[1]
+				group_ = PartnerTable:getGroup(partnerTableID)
+
+				if tianyiIndex > 0 then
+					tianyiSortId = partnerTableID
+				end
 			else
 				group_ = PartnerTable:getGroup(id)
 			end
@@ -217,21 +228,37 @@ function ExploreChangeModelWindow:initData(type)
 					return self:onItemClick(id, isSelect)
 				end,
 				id = id,
-				isSelect = isSelect
+				isSelect = isSelect,
+				sortId = id
 			}
 
+			if tianyiSortId then
+				item.sortId = tianyiSortId
+			end
+
 			table.insert(self.items_[tonumber(group_)], item)
-			table.insert(self.items_[7], item)
+			table.insert(self.items_[0], item)
 		end
 	end
 
-	for i = 1, 7 do
+	for i = 0, xyd.GROUP_NUM do
 		table.sort(self.items_[i], function (a, b)
-			if ItemTable:getType(a.id) ~= ItemTable:getType(b.id) then
-				return ItemTable:getType(a.id) == xyd.ItemType.SKIN
+			local a_id = a.sortId
+			local b_id = b.sortId
+
+			if ItemTable:getType(a_id) ~= ItemTable:getType(b_id) then
+				return ItemTable:getType(a_id) == xyd.ItemType.SKIN
 			end
 
-			return b.id < a.id
+			if a_id == b_id and xyd.tables.itemTable:getType(a_id) == xyd.ItemType.HERO and xyd.tables.partnerTable:getGroup(a_id) == xyd.PartnerGroup.TIANYI then
+				local skin_id_a = xyd.tables.itemTable:getSkinID(a.id)
+				local skin_id_b = xyd.tables.itemTable:getSkinID(b.id)
+				local showIDs = xyd.tables.partnerTable:getShowIdsWithNum(a_id)
+
+				return xyd.arrayIndexOf(showIDs, skin_id_b) < xyd.arrayIndexOf(showIDs, skin_id_a)
+			end
+
+			return b_id < a_id
 		end)
 	end
 
@@ -260,7 +287,7 @@ function ExploreChangeModelWindow:jobFilter()
 		local job = 0
 		local type_ = ItemTable:getType(item.id)
 
-		if type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN then
+		if type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
 			local tableID = PartnerPictureTable:getSkinPartner(item.id)[1]
 			job = PartnerTable:getJob(tableID)
 		else
@@ -313,10 +340,39 @@ function ExploreChangeModelWindow:sortPictures(pictures, type_)
 		local bTmpType = itemTable:getType(b)
 		local aType = (aTmpType == xyd.ItemType.SKIN or aTmpType == xyd.ItemType.KANBAN) and 1 or 0
 		local bType = (bTmpType == xyd.ItemType.SKIN or bTmpType == xyd.ItemType.KANBAN) and 1 or 0
-		local aStar = partnerTable:getStar(a)
-		local bStar = partnerTable:getStar(b)
-		local aGroup = partnerTable:getGroup(a)
-		local bGroup = partnerTable:getGroup(b)
+
+		local function checkGroup(id)
+			local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(id)[1]
+			local group = xyd.tables.partnerTable:getGroup(partnerTableID)
+
+			return group
+		end
+
+		local function checkStar(id)
+			local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(id)
+
+			if tianyiIndex > 0 then
+				return xyd.checkCondition(tianyiIndex == 3, 15, 13)
+			end
+		end
+
+		local aStar, bStar, aGroup, bGroup = nil
+
+		if aTmpType == xyd.ItemType.FAKE_PARTNER_SKIN then
+			aStar = checkStar(a)
+			aGroup = checkGroup(a)
+		else
+			aStar = partnerTable:getStar(a)
+			aGroup = partnerTable:getGroup(a)
+		end
+
+		if bTmpType == xyd.ItemType.FAKE_PARTNER_SKIN then
+			bStar = checkStar(b)
+			bGroup = checkGroup(b)
+		else
+			bStar = partnerTable:getStar(b)
+			bGroup = partnerTable:getGroup(b)
+		end
 
 		if type_ == xyd.pictureSortType.DEFAULT then
 			if aType ~= bType then
@@ -356,12 +412,6 @@ end
 
 function ExploreChangeModelWindow:registerEvent()
 	self:register()
-
-	for i = 1, 6 do
-		UIEventListener.Get(self["group" .. i]).onClick = function ()
-			self:changeGroup(i)
-		end
-	end
 
 	for i = 1, 5 do
 		UIEventListener.Get(self["jobGroup" .. i]).onClick = function ()
@@ -502,17 +552,9 @@ end
 
 function ExploreChangeModelWindow:changeGroup(index)
 	if self.selectElementIndex == index then
-		self.selectElementIndex = 7
+		self.selectElementIndex = 0
 	else
 		self.selectElementIndex = index
-	end
-
-	for i = 1, 6 do
-		if self.selectElementIndex == i then
-			self["group" .. tostring(i) .. "_chosen"]:SetActive(true)
-		else
-			self["group" .. tostring(i) .. "_chosen"]:SetActive(false)
-		end
 	end
 
 	self:changeDataGroup(false)
@@ -614,10 +656,29 @@ function PersonPictureItem:updateInfo()
 		self.partnerCard_:resetData()
 		self.partnerCard_:setSkinCard(info)
 	else
-		local info = {
-			tableID = itemID,
-			star = PartnerTable:getStar(itemID)
-		}
+		local info = {}
+		local isHasInfo = false
+
+		if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+			local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(itemID)
+			local partnerTableID = xyd.tables.partnerPictureTable:getSkinPartner(itemID)[1]
+
+			if tianyiIndex > 0 then
+				info = {
+					skin_id = itemID,
+					tableID = partnerTableID,
+					star = xyd.checkCondition(tianyiIndex == 3, 15, 13)
+				}
+				isHasInfo = true
+			end
+		end
+
+		if not isHasInfo then
+			info = {
+				tableID = itemID,
+				star = PartnerTable:getStar(itemID)
+			}
+		end
 
 		self.partnerCard_:resetData()
 		self.partnerCard_:setInfo(info)
@@ -688,7 +749,7 @@ function ChosenPartnerItem:layout()
 		local type = ItemTable:getType(self.itemID)
 		local tableID, group = nil
 
-		if type == xyd.ItemType.SKIN or type == xyd.ItemType.KANBAN then
+		if type == xyd.ItemType.SKIN or type == xyd.ItemType.KANBAN or type == xyd.ItemType.FAKE_PARTNER_SKIN then
 			tableID = PartnerPictureTable:getSkinPartner(self.itemID)[1]
 			group = PartnerTable:getGroup(tableID)
 		else

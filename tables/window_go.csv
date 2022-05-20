@@ -115,7 +115,7 @@ id,name,params,activity_id,function_id,desc
 114,activity_window,"{'select':283,'activity_type2':2}",283,,-1
 115,activity_window,"{'select':282,'activity_type2':2}",282,,-1
 116,activity_window,"{'select':73,'activity_type2':2}",73,,-1
-117,activity_window,"{'select':285,'activity_type2':2}",285,,-1
+117,activity_recharge_lottery_window,,285,,-1
 118,activity_window,"{'select':286,'activity_type2':2}",286,,-1
 119,activity_window,"{'select':287,'activity_type2':2}",287,,-1
 120,activity_window,"{'select':245,'activity_type2':2}",245,,-1
@@ -128,6 +128,6 @@ id,name,params,activity_id,function_id,desc
 127,activity_window,"{'select':292,'activity_type2':2}",292,,
 128,activity_window,"{'select':294,'activity_type2':2}",294,,
 129,activity_window,"{'select':242,'activity_type2':2}",242,,
-130,activity_window,"{'select':295,'activity_ids':[295,296], 'activity_type':7}",295,,
-131,activity_window,"{'select':296,'activity_ids':[295,296], 'activity_type':7}",296,,
-132,activity_window,"{'select':297,'activity_type2':2}",297,,
+130,activity_window,"{'select':295,'activity_ids':[295,296], 'activity_type':7}",295,,-1
+131,activity_window,"{'select':296,'activity_ids':[295,296], 'activity_type':7}",296,,-1
+132,activity_window,"{'select':297,'activity_type2':2}",297,,-1

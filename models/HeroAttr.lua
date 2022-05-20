@@ -611,7 +611,7 @@ function HeroAttr:getStarOrigin(hero)
 	local startIDs = self.starOriginListTable:getStarIDs(starListId)
 
 	for k, v in pairs(levs) do
-		if v >= 0 and startIDs[k] then
+		if tonumber(v) and v >= 0 and startIDs[k] then
 			local levId = startIDs[k] + v
 			local baseArrs = self.starOriginTable:getEffect(levId)
 			local buffP = {}

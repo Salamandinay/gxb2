@@ -307,7 +307,9 @@ function ExploreAdventureWindow:getMainModelID()
 		itemID = self.eventModelList[1]
 	end
 
-	if xyd.tables.itemTable:getType(itemID) == xyd.ItemType.SKIN then
+	local type = xyd.tables.itemTable:getType(itemID)
+
+	if type == xyd.ItemType.SKIN or type == xyd.ItemType.FAKE_PARTNER_SKIN then
 		modelID = xyd.tables.equipTable:getSkinModel(itemID)
 	else
 		modelID = xyd.tables.partnerTable:getModelID(itemID)
@@ -754,8 +756,9 @@ function ExploreAdventureWindow:registerEvent()
 		xyd.WindowManager.get():openWindow("explore_change_model_window", {
 			confirmCallback = function (itemID)
 				local modelID = nil
+				local type = xyd.tables.itemTable:getType(itemID)
 
-				if xyd.tables.itemTable:getType(itemID) == xyd.ItemType.SKIN then
+				if type == xyd.ItemType.SKIN or type == xyd.ItemType.FAKE_PARTNER_SKIN then
 					modelID = xyd.tables.equipTable:getSkinModel(itemID)
 				else
 					modelID = xyd.tables.partnerTable:getModelID(itemID)

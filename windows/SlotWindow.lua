@@ -810,6 +810,8 @@ function SlotWindow:updateDataGroup(isGuide, isEvent)
 
 		if #guidePartners <= 0 then
 			self.partnerNone:SetActive(true)
+
+			self.labelNoneTips.text = __("NO_PARTNER_2")
 		end
 
 		self.guideNum:SetActive(true)
