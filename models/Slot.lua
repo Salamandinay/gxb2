@@ -701,6 +701,8 @@ function Slot:onRegister()
 				p:changeShowID(showIDs[2])
 			end
 		end
+
+		self:checkExGallery(p)
 	end))
 	self:registerEvent(xyd.event.ROB_PARTNER_EQUIP, handler(self, function (self, event)
 		local function callback(table_id, changed_attr_show, partner_id)
@@ -1012,6 +1014,8 @@ function Slot:addPartner(partnerInfo)
 			xyd.models.redMark:setMark(xyd.RedMarkType.NEW_FIVE_STAR, true, redParams)
 		end
 	end
+
+	self:checkExGallery(np)
 
 	local eventObj = {
 		name = xyd.event.PARTNER_ADD,
@@ -2640,6 +2644,24 @@ function Slot:getCheckTianYiFakePartnerSkin(itemID)
 		return index
 	else
 		return -2
+	end
+end
+
+function Slot:checkExGallery(partner_)
+	local group = partner_:getGroup()
+
+	if group and group == xyd.PartnerGroup.TIANYI then
+		local star = partner_:getStar()
+
+		if star == 15 then
+			if not self.exGallery then
+				self.exGallery = {}
+			end
+
+			if xyd.arrayIndexOf(self.exGallery, tonumber(partner_:getTableID())) < 0 then
+				table.insert(self.exGallery, tonumber(partner_:getTableID()))
+			end
+		end
 	end
 end
 

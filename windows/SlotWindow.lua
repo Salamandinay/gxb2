@@ -184,8 +184,6 @@ function SlotWindow:ctor(name, params)
 			self.currentJobId = params.jobId
 		end
 	end
-
-	print(self.sortType, "測試asjdkasj")
 end
 
 function SlotWindow:initWindow()

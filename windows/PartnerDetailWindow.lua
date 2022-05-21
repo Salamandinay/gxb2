@@ -1341,8 +1341,6 @@ function PartnerDetailWindow:onWindowWillClose(event)
 
 		if not wnd1 and not wnd2 and not wnd3 then
 			self:checkStarOriginGuide()
-
-			self.needStarOriginGuide = false
 		end
 	end
 end
@@ -4838,6 +4836,14 @@ function PartnerDetailWindow:checkStarOriginGuide()
 		return
 	end
 
+	if not self:isWndComplete() then
+		return
+	end
+
+	if self.isPlayingSwitchAnimation then
+		return
+	end
+
 	local isHasGoStarOriginGuide = xyd.db.misc:getValue("is_has_go_star_origin_guide")
 
 	if isHasGoStarOriginGuide and tonumber(isHasGoStarOriginGuide) == 1 then
@@ -4883,6 +4889,7 @@ function PartnerDetailWindow:onclickArrow(delta)
 	self.needExSkillGuide = false
 	self.ExSkillGuideInAward = false
 	self.needStarOriginGuide = false
+	self.isPlayingSwitchAnimation = true
 
 	self:initFullOrderGradeUp()
 	self:initFullOrderLevelUp()
@@ -5083,6 +5090,11 @@ function PartnerDetailWindow:playSwitchAnimation()
 	sequence:Insert(0.2, self.groupInfo.transform:DOLocalMoveY(originY, 0.2))
 	sequence:Insert(0, DG.Tweening.DOTween.ToAlpha(getter, setter, 0.01, 0.1))
 	sequence:Insert(0.1, DG.Tweening.DOTween.ToAlpha(getter, setter, 1, 0.1))
+	sequence:AppendCallback(function ()
+		self.isPlayingSwitchAnimation = false
+
+		self:checkStarOriginGuide()
+	end)
 end
 
 function PartnerDetailWindow:playOpenAnimation(callback)
@@ -5134,6 +5146,7 @@ function PartnerDetailWindow:playOpenAnimation(callback)
 			end
 
 			self:setWndComplete()
+			self:checkStarOriginGuide()
 		end)
 	end, nil)
 	callback()
