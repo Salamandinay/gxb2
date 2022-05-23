@@ -59,9 +59,9 @@ gacha_ensure_partner,54018#654025#754018,-1
 gacha_ensure_partner_handbook,54018#654025#754018,-1
 daily_mail_awards_gacha,2,-1
 daily_mail_awards_tree,3|18|37,-1
-daily_mail_awards_gamble,18|37|48,-1
+daily_mail_awards_gamble,,-1
 daily_mail_awards_drift,30|6|40|43,-1
-daily_mail_awards_lost_space,50,-1
+daily_mail_awards_lost_space,18|50|51,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
@@ -518,7 +518,7 @@ house_furniture_type_num,10,-1
 activity_fairytale_energy_init,166#10,-1
 activity_fairytale_energy_cd,7200,-1
 activity_fairytale_energy_max,10,-1
-wish_gacha_partners,51016|51015|51014|51013|52017|52016|52015|52014|53016|53015|53014|53013|54017|54016|54015|54013|55010|55009|55008|55007|56008|56007|56006|56005,-1
+wish_gacha_partners,51018|51017|51016|51015|52018|52017|52016|52015|53018|53017|53016|53015|54018|54017|54016|54015|55011|55010|55009|55008|56009|56008|56007|56006,-1
 wish_gacha_dropbox_id,10009,-1
 wish_gacha_weight_ini_total,1000000,-1
 wish_gacha_weight_ini_get,100,-1
@@ -557,7 +557,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,kawenbodi_pifu04_lihui01|572|-1172|0.65|5600905|7265,-1
+activity_147_hero_model,xigema_pifu01_lihui01|547|-1588|0.65|5301802|7268,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -1085,3 +1085,10 @@ partner_group7_summon,10270,-1
 star_origin_drawcard_endtime,1653609600,-1
 skill_resonate_level_limit,0|0|1|1|3|3|5|5|7|-1,-1
 starry_altar_open_time,1653004800,-1
+activity_children_gamble_cost,364#1,-1
+activity_children_gamble_award,363#1,-1
+activity_children_gamble_weight,30,-1
+activity_children_buy_cost,2#500,-1
+activity_children_buy_limit,50,-1
+activity_children_gamble_dropbox,32016,-1
+activity_lost_space_skill,4|5|6,-1
