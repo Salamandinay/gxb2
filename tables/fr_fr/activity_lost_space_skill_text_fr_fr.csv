@@ -3,5 +3,5 @@ id,name,energy,icon,desc
 2,Laser en Croix,42,activity_lost_space_icon_skill1,"Explorer 8 cases avoisinant la dernière case détectée (2 cases en haut, en bas, à gauche et à droite)."
 3,Laser Chargé,52,activity_lost_space_icon_skill3,"Explorer 6 cases perpendiculaires à la dernière case détectée (3 en haut et 3 en bas). Chaque fois que vous déclenchez cette Compétence Spatiale, les Énergies Laser nécessaires pour déclencher cette Compétence Spatiale seront réduites de 6 (ne peut être réduit 3 fois au maximum, déjà réduit : {1} fois)."
 4,Laser Circulaire,43,activity_lost_space_icon_skill4,Explorer les cases avoisinant la dernière case détectée.
-5,Laser Instable,38,activity_lost_space_icon_skill5,Explorer 5 cases aléatoires (priorité aux cases non explorées).
+5,Laser Instable,35,activity_lost_space_icon_skill5,Explorer 5 cases aléatoires (priorité aux cases non explorées).
 6,Laser Extensif,34,activity_lost_space_icon_skill6,"Explorer les 2 cases à la verticale de la dernière case détectée (1 en haut, puis 1 en bas). Chaque fois que vous déclenchez cette Compétence Spatiale, la portée d'exploration sera augmentée de 1 case, commençant à partir de celle d’en haut, 4 cases au maximum. ({1} case(s) augmentée(s))"
