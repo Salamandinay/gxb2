@@ -279,7 +279,9 @@ local ModelClass = {
 	[xyd.ActivityID.SPRING_GIFTBAG] = require("app.models.datas.SpringGiftbagData"),
 	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_MISSION] = require("app.models.datas.ActivityStarAltarMissionData"),
 	[xyd.ActivityID.NEW_PARTNER_WARMUP_GIFTBAG] = require("app.models.datas.NewPartnerWarmupGiftbagData"),
-	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = require("app.models.datas.StarAltarGiftBagData")
+	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = require("app.models.datas.StarAltarGiftBagData"),
+	[xyd.ActivityID.ACTIVITY_CHILDHOOD_SHOP] = require("app.models.datas.ActivityChildhoodShopData"),
+	[xyd.ActivityID.ACTIVITY_CHILDREN_TASK] = require("app.models.datas.ActivityChildrenTaskData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

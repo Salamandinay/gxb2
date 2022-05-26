@@ -1011,7 +1011,7 @@ function MainWindow:initTopBtnGroup()
 	local beforeOpen = false
 	local maxRBId = 5
 
-	if xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR) then
+	if xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR, true) then
 		maxRBId = 6
 	end
 

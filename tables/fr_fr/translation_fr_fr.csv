@@ -3326,7 +3326,7 @@ WISH_GACHA_TEXT_2,Tirer Capsule à Souhait {1} fois
 WISH_GACHA_GOTOGACHA,Aller à Capsule
 WISH_GACHA_TIPS_1,"Durant l'événement, vous obtiendrez les récompenses correspondantes en utilisant les Capusles à Souhait."
 WISH_GACHA_TIPS_2,Touchez ici pour choisir votre Fille Souhaitée
-WISH_GACHA_TIPS_3,"Choisissez votre Fille Souhaitée et changez la à tout moment ! Plus vous tirerez de Capsule, plus vos chances d'obtenir la Fille Souhaitée seront élevées. (Changer de Fille Souhaitée ne réinitialisera PAS votre progression actuelle.)"
+WISH_GACHA_TIPS_3,"Choisissez votre Fille Souhaitée et changez-la à tout moment ! Plus vous tirerez de Capsule, plus vos chances d'obtenir la Fille Souhaitée seront élevées (Changer de Fille Souhaitée ne réinitialisera PAS votre progression actuelle)."
 WISH_GACHA_SELECT_PARTNER_WINDOW,Choisissez votre Fille Souhaitée
 WISH_GACHA_SELECT_PARTNER_TIPS_1,Choisissez votre Fille Souhaitée
 WISH_GACHA_SELECT_PARTNER_TIPS_2,Êtes -vous sûr de vouloir changer votre Fille à Souhait ?
@@ -4482,11 +4482,11 @@ PET_TRAINING_TEXT12,Passer
 PET_TRAINING_TEXT13,Chance(s) restante(s) : {1}
 PET_TRAINING_TEXT14,Salle d'Entraînement
 PET_TRAINING_TEXT15,Les récompenses d'amélioration vous seront envoyées par courrier.
-PET_TRAINING_TEXT16,Débloquer\nSalle d'Entr. Niv.{1}
+PET_TRAINING_TEXT16,Débloqué après avoir atteint Salle d'Entraînement Niv.{1}
 PET_TRAINING_TEXT17,Récompenses Bonus : {1}
 PET_TRAINING_HELP,"Salle d'Entraînement du Serviteur|1. Entraînez votre Serviteur et défiez les Épouvantails pour obtenir de l'EXP de la Salle d'Entraînement du Serviteur et des Cristaux du Serviteur.|2. Après avoir cumulés assez d'EXP de la Salle d'Entraînement du Serviteur, vous pourrez améliorer le niveau de votre Salle et ainsi prolonger la durée maximale d'Entraînement et différents niveaux d'Épouvantails.||Entraînement du Serviteur|1. Chaque Serviteur s'entraîne automatiquement, les récompenses dues peuvent être collectées une fois l'Entraînement complété.|2. Des récompenses bonus sont obtenables en fonction du total de niveau des Serviteurs.|3. La durée maximale de l'Entraînement est liée au niveau de la Salle d'Entraînement, plus le niveau de la Salle d'Entraînement est élevé, plus la durée maximale de l'Entraînement est longue.||Défi de l'Épouvantail|1. Seuls les Serviteurs de niveau 120 (et +) peuvent défier l'Épouvantail.|2. Vous possédez 3 Chances de Défis, et chacun de vos Serviteurs possèdent 2 Énergies par jour. Votre Serviteur a besoin d'1 Énergie pour pouvoir défier l'Épouvantail.|3. Vous utiliserez 1 Chance de Défi et 1 Énergie chaque fois que vous défierez l'Épouvantail. Vous pouvez utiliser des Gemmes pour obtenir de l'Énergie du Serviteur supplémentaire, deux fois par jour. Chaque Énergie supplémentaire achetée vous donne une chance de défi supplémentaire.|4. Les dégâts infligés à l'Épouvantail dépendent du niveau du Serviteur, de son Aura et de son Noyau Précieux.|5. Les PV de l'Épouvantail seront restaurés uniquement une fois ce dernier vaincu.|6. Vous pouvez changer le niveau de l'Épouvantail à tout moment, ses PV seront cependant réinitialisés.|7. Vous recevrez des récompenses uniques chaque fois que vous défierez l'Épouvantail. Vous recevrez également des récompenses supplémentaires lorsque ce dernier sera vaincu, ces récompenses dépendent du niveau de l'Épouvantail vaincu."
 GUILD_BOSS_MAIL_TITLE,Membre(s) de la Guilde sélectionné(s)
-PET_TRAINING_TEXT18,Achetable {1} fois par jour
+PET_TRAINING_TEXT18,Achetable {1} fois par jour au maximum
 PET_TRAINING_TEXT19,Confirmez-vous l'achat de d'1 Énergie (incluant une chance de défi supplémentaire) valant {1} Gemmes ?
 PET_TRAINING_TEXT20,Confirmer pour changer le Niveau d'Épouvantail ? Ses PV seront réinitialisés.
 PET_TRAINING_TEXT21,Achetez de l'Énergie de Serviteur pour avoir des Chances supplémentaires.
@@ -5199,7 +5199,7 @@ Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 F
 (6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l\'Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l\'Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s\'il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l\'Élimination.
 (2) Pendant cette phase, vous ne ferez qu\'un combat par jour (vous ne pouvez pas modifier votre Équipe durant les 2 heures précédant le combat) et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
 (3) Règles de Combat (Élimination&Finalistes)
-Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
+Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux et des Clochettes seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
 Durant le combat, les PV et l\'Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
 (2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
 Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
@@ -6288,7 +6288,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Énergie nécessaire : {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Après avoir changé la Compétence Spatiale, toutes les Énergies Laser seront retirées. Voulez-vous continuer à changer ?"
 ACTIVITY_LOST_SPACE_NAV1,Objets Spatiaux
 ACTIVITY_LOST_SPACE_NAV2,Aide
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Durant cet événement, explorez les cases de la Station Spatiale Égarée en utilisant des Détecteurs Spatiaux. Après avoir détecté une case, vous obtiendrez une récompense aléatoire et les cases adjacentes seront visibles.|2. Chaque étape comprend un Site de Téléportation. Après avoir touché son icône, vous obtiendrez une Boîte d'approvisionnement de l'étape actuelle et entrerez dans l'étape suivante.|3. Les Coordonnées de Ravitaillement sont dispersées sur plusieurs étapes. Après avoir repéré 3 Coordonnées de Ravitaillement, s'affichera un Site de Ravitaillement qui vous permettra d'obtenir d'énormes récompenses après avoir y être entré. |4. Choisissez une Compétence Spatiale pour vous aider à mieux d'explorer les mystères de la Station Spatiale Égarée. Vous obtiendrez 1 Énergie Laser pour chaque utilisation de Détecteur Spatial. Après avoir collecté un certain nombre d'Énergie Laser, vous pourrez déclencher la Compétence Spatiale de votre choix.|5. La Compétence Spatiale peut être changée à tout moment. Cependant une fois changée, toutes les Énergies Laser obtenues seront retirées.|6. Collectez les récompenses en touchant l'icône - Tout collecter (n'inclut pas les objets spatiaux).|7. Moyen d'obtention de Détecteur Spatial : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace et Cadeau d'Été Anticipé. |8. Après la fin de l'événement, les Détecteurs Spatiaux non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Détecteur Spatial = 1000k Pièce d'Or."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Durant cet événement, explorez les cases de la Station Spatiale Égarée en utilisant des Détecteurs Spatiaux. Après avoir détecté une case, vous obtiendrez une récompense aléatoire et les cases adjacentes seront visibles.|2. Chaque étape comprend un Site de Téléportation. Après avoir touché son icône, vous obtiendrez une Boîte d'approvisionnement de l'étape actuelle et entrerez dans l'étape suivante.|3. Les Coordonnées de Ravitaillement sont dispersées sur plusieurs étapes. Après avoir repéré 3 Coordonnées de Ravitaillement, s'affichera un Site de Ravitaillement qui vous permettra d'obtenir d'énormes récompenses après avoir y être entré. |4. Choisissez une Compétence Spatiale pour vous aider à mieux d'explorer les mystères de la Station Spatiale Égarée. Vous obtiendrez 1 Énergie Laser pour chaque utilisation de Détecteur Spatial. Après avoir collecté un certain nombre d'Énergie Laser, vous pourrez déclencher la Compétence Spatiale de votre choix.|5. La Compétence Spatiale peut être changée à tout moment. Cependant une fois changée, toutes les Énergies Laser obtenues seront retirées.|6. Collectez les récompenses en touchant l'icône - Tout collecter (n'inclut pas les objets spatiaux).|7. Moyen d'obtention de Détecteur Spatial : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace, Célébration du Mois, Pack des Bambins, Cadeau Mystérieux et Bonus de Distributeur. |8. Après la fin de l'événement, les Détecteurs Spatiaux non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Détecteur Spatial = 1000k Pièce d'Or."
 GAME_ASSISTANT_TEXT103,Cafétéria - Récompense des Commandes
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Le nombre d'Énergies Laser a atteint sa limite, confirmez-vous ne pas vouloir déclencher la Compétence Spatiale ?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,Aucune case disponible pour lancer la Compétence Spatiale de votre choix.
@@ -6376,3 +6376,40 @@ SKIN_TEXT28,Skin 15 étoiles
 STARRY_ALTAR_TEXT12,Chaque tirage vous garantit une Récompense Basique.
 STARRY_ALTAR_TEXT13,"Veuillez d'abord appuyer sur ""+"" pour choisir la Récompense Optionnelle."
 KANBAN_NONE_TIPS,Aucune Fille
+ACTIVITY_CHILDREN_TASK_HELP,1. Complétez les tâches pour obtenir des Pièces d'Enfance. Obtenez des récompenses après avoir collecté un certain nombre de Pièces d'Enfance.
+ACTIVITY_CHILDREN_SHOP_BUTTON01,Échanger
+ACTIVITY_CHILDREN_SHOP_HELP,"1. Le Comptoir des Enfants vous présente la collection d'enfance de 4 Filles. Utilisez des Sucettes pour les échanger contre des récompenses.|2. La première récompense de chaque collection sera débloquée par défaut. Pour échanger la récompense de palier suivant, il vous faut d'abord échanger la récompense de palier précédent.|3. Après avoir obtenu toutes les récompenses de collection de ces 4 Filles, la Récompense Finale sera disponible à l'échanger et vous pourrez accéder à la Boutique d'Enfance.|4. Moyen d'obtention de Sucette : Retour en Enfance, en utilisant des Ballons de Baudruche, Bonus de Distributeur, Pack des Bambins, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace.|5. Après la fin de l'événement, les Sucettes non-utilisées seront automatiquement converties en Pièce d'Or, 1 Sucette = 100K Pièce d'Or."
+ACTIVITY_CHILDREN_SHOP_TEXT01,Débloqué après avoir échangé toutes les récompenses
+ACTIVITY_CHILDREN_SHOP_TEXT02,Collection de {1}
+ACTIVITY_CHILDREN_SHOP_TEXT03,Carmen & Bianca
+ACTIVITY_CHILDREN_SHOP_TEXT04,Frexie
+ACTIVITY_CHILDREN_SHOP_TEXT05,Estelle
+ACTIVITY_CHILDREN_SHOP_TEXT06,Vera
+ACTIVITY_CHILDREN_SHOP_BUTTON02,Retourner
+ACTIVITY_CHILDREN_SHOP_TIPS01,Débloqué après avoir échangé toutes les récompenses
+ACTIVITY_CHILDREN_SHOP_TIPS02,Récompense obtenue !
+ACTIVITY_CHILDREN_SHOP_TIPS03,"Récompense obtenue, impossible à échanger."
+ACTIVITY_CHILDREN_SHOP_TIPS04,Veuillez d'abord échanger la récompense précédente pour continuer.
+ACTIVITY_CHILDREN_SHOP_TIPS05,"Vous avez obtenu toutes les récompenses, la Boutique d'Enfance est à présent ouverte. Voulez-vous vous y rendre ?"
+ACTIVITY_CHILDREN_SHOP_BUTTON03,Boutique
+ACTIVITY_CHILDREN_GAMBLE_BUTTON01,1 fois
+ACTIVITY_CHILDREN_GAMBLE_BUTTON02,10 fois
+ACTIVITY_CHILDREN_GAMBLE_HELP,"1. Utilisez des Ballons de Baudruche pour les échanger contre des récompenses avec Chris. Pour chaque échange, vous obtiendrez une Récompense Basique (vous pouvez choisir une des 3 récompenses proposées) et vous aurez également une chance d'obtenir une Récompense Supplémentaire - Sucette.|2. Moyen d'obtention de Ballon de Baudruche : Courrier Quotidien, Achat avec des Gemmes (50 Ballons de Baudruche achetables au maximum), Bonus de Distributeur.|3. Après la fin de l'événement, les Ballons de Baudruche non-utilisés seront automatiquement convertis en Pièce d'or, 1 Ballon de Baudruche = 50K Pièce d'Or."
+ACTIVITY_CHILDREN_GAMBLE_TEXT01,Récompense\nSupplémentaire
+ACTIVITY_CHILDREN_GAMBLE_TEXT02,Récompense\nBasique
+ACTIVITY_CHILDREN_GAMBLE_TEXT03,Choisissez une récompense
+GO_DRESS_SHOW_SHOP_TIPS,Voulez-vous aller à la boutique pour acheter des bonus de combat ?
+ACTIVITY_CHILDREN_TITLE,Les Bambins\nde Yume
+ACTIVITY_SPFARM_TEXT01,開闢異界莊園，追尋足以守護學院的力量......
+ACTIVITY_SPFARM_TEXT02,莊園總等級
+ACTIVITY_SPFARM_TEXT03,進入莊園
+ACTIVITY_SPFARM_HELP1,主界面幫助
+ACTIVITY_SPFARM_HELP2,地圖界面幫助
+ACTIVITY_SPFARM_TEXT04,知名度：{1}
+ACTIVITY_SPFARM_TEXT05,外出掠奪
+ACTIVITY_SPFARM_TEXT06,知名度獎勵
+ACTIVITY_SPFARM_TEXT07,掠奪中
+ACTIVITY_SPFARM_TEXT08,背包容量
+NOT_EQUIPPED,Disponible
+CHOOSE_EQUIP,Choisissez un équipement :
+ACTIVITY_CHILDREN_SHOP_BUTTON04,Boutique

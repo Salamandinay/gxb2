@@ -10484,9 +10484,9 @@ Avalanche a également 50% de chance de [c][01a310]geler[-][/c] les ennemis sur 
 
 [c][01a310]Geler : [-][/c]
 Effet de Contrôle. La Fille sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis."
-125600301,Bonus (Station de Recherche),Bonus (Station de Recherche) I,"Située à 1 case de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 50% en combat."
-125600302,Bonus (Station de Recherche),Bonus (Station de Recherche) II,"Située à 2 cases de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 30% en combat."
-125600303,Bonus (Station de Recherche),Bonus (Station de Recherche) III,"Située à 3 cases de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 10% en combat."
+125600301,Bonus (Station de Recherche),Bonus I (Station de Recherche),"Située à 1 case de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 50% en combat."
+125600302,Bonus (Station de Recherche),Bonus II (Station de Recherche),"Située à 2 cases de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 30% en combat."
+125600303,Bonus (Station de Recherche),Bonus III (Station de Recherche),"Située à 3 cases de la Station de Recherche, augmente les dégâts infligés par toutes les Filles alliées de 10% en combat."
 125600401,Bonus (Camp),Bonus I (Camp),"Située à 1 case du Camp de base de votre Faction, augmente les PV de 30% et +180 000 supplémentaires, et l'Attaque de 30% et +12 000 supplémentaires pour toutes les Filles alliées en combat."
 125600402,Bonus (Camp),Bonus II (Camp),"Située à 2 cases du Camp de base de votre Faction, augmente les PV de 20% et +180 000 supplémentaires, et l'Attaque de 20% et +8 000 supplémentaires pour toutes les Filles alliées en combat."
 125600403,Bonus (Camp),Bonus III (Camp),"Située à 3 cases du Camp de base de votre Faction, augmente les PV de 10% et +60 000 supplémentaires, et l'Attaque de 10% et +4 000 supplémentaires pour toutes les Filles alliées en combat."
@@ -12385,4 +12385,62 @@ Lorsque tout prendra son sens, je serais à tes côtés. À la fin de chaque tou
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Bénédiction du Scorpion (Effet de Compétence, non cumulable) :[-][/c]
 Augmente respectivement de 24% l\'Attaque, les Critiques, la Précision de Selkis. Lorsque Selkis est sous la Bénédiciton du Scorpion, elle a 100% de chance d\'esquiver les dégâts et les effets infligés par les ennemis dont les attaques ciblent les ennemis aléatoires."
-,,,-1
+676101,Boomerang Galactique,Compétence de l'Antiquité,+10% Dégâts Divins
+676201,Boomerang Galactique,Compétence de l'Antiquité,+13% Dégâts Divins
+676301,Boomerang Galactique,Compétence de l'Antiquité,+16% Dégâts Divins
+676401,Boomerang Galactique,Compétence de l'Antiquité,+19% Dégâts Divins
+676501,Boomerang Galactique,Compétence de l'Antiquité,+22% Dégâts Divins
+676601,Boomerang Galactique,Compétence de l'Antiquité,+25% Dégâts Divins
+6766101,Boomerang Galactique,Compétence de l'Antiquité,"
+Durant la bataille, tous les dégâts infligés par la porteuse seront augmentés de 0,4% pour chaque 1% de Précision qu\'elle possède.
+Chaque fois que la porteuse enlève un Effet Négatif (Contrôle, Marque, les Dégâts sur la Durée) sur elle, elle obtiendra une couche de [c][e28002]Murmure Astral[-][/c] pendant 2 tours.
+[c][e28002]Murmure Astral (Effet de Compétence, 10 couches au maximum) :[-][/c]
+Augmente de 2% l\'Attaque, de 2% la Précision et de 2% les Dégâts Divins."
+6766201,Boomerang Galactique,Compétence de l'Antiquité,"
+Durant la bataille, tous les dégâts infligés par la porteuse seront augmentés de 0,6% pour chaque 1% de Précision qu\'elle possède.
+Chaque fois que la porteuse enlève un Effet Négatif (Contrôle, Marque, les Dégâts sur la Durée) sur elle, elle obtiendra une couche de [c][e28002]Murmure Astral[-][/c] pendant 2 tours.
+[c][e28002]Murmure Astral (Effet de Compétence, 10 couches au maximum) :[-][/c]
+Augmente de 2,5% l\'Attaque, de 4% la Précision et de 2,5% les Dégâts Divins."
+6766301,Boomerang Galactique,Compétence de l'Antiquité,"
+Durant la bataille, tous les dégâts infligés par la porteuse seront augmentés de 0,8% pour chaque 1% de Précision qu\'elle possède.
+Chaque fois que la porteuse enlève un Effet Négatif (Contrôle, Marque, les Dégâts sur la Durée) sur elle, elle obtiendra une couche de [c][e28002]Murmure Astral[-][/c] pendant 2 tours.
+[c][e28002]Murmure Astral (Effet de Compétence, 10 couches au maximum) :[-][/c]
+Augmente de 3% l\'Attaque, de 6% la Précision et de 3% les Dégâts Divins."
+5201900,伊芙,普攻,Attaque Basique
+65202600,伊芙,普攻,Attaque Basique
+75201900,伊芙,普攻,Attaque Basique
+5201901,伊芙,犬吠如嘯,
+65202601,伊芙,犬吠如嘯,
+75201901,伊芙,犬吠如嘯,
+5201902,伊芙,犬覺如風,
+65202602,伊芙,犬覺如風,
+65202612,伊芙,犬覺如風,
+75201902,伊芙,犬覺如風,
+5201903,伊芙,犬忠如一,
+65202603,伊芙,犬忠如一,
+65202613,伊芙,犬忠如一,
+75201903,伊芙,犬忠如一,
+5201904,伊芙,犬心如守,
+65202604,伊芙,犬心如守,
+65202614,伊芙,犬心如守,
+75201904,伊芙,犬心如守,
+752019011,伊芙,犬吠如嘯,
+752019012,伊芙,犬吠如嘯,
+752019013,伊芙,犬吠如嘯,
+752019014,伊芙,犬吠如嘯,
+752019015,伊芙,犬吠如嘯,
+752019021,伊芙,犬覺如風,
+752019022,伊芙,犬覺如風,
+752019023,伊芙,犬覺如風,
+752019024,伊芙,犬覺如風,
+752019025,伊芙,犬覺如風,
+752019031,伊芙,犬忠如一,
+752019032,伊芙,犬忠如一,
+752019033,伊芙,犬忠如一,
+752019034,伊芙,犬忠如一,
+752019035,伊芙,犬忠如一,
+752019041,伊芙,犬心如守,
+752019042,伊芙,犬心如守,
+752019043,伊芙,犬心如守,
+752019044,伊芙,犬心如守,
+752019045,伊芙,犬心如守,

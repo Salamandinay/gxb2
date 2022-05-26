@@ -37,6 +37,7 @@ function ChooseEquipWindow:ctor(name, params)
 	self.now_equip = params.now_equip
 	self.equipedOn = params.equipedOn
 	self.equipedPartner = params.equipedPartner
+	self.isAll = true
 
 	self:sortEquips()
 end
@@ -46,6 +47,15 @@ function ChooseEquipWindow:getUIComponent()
 	local content = winTrans:NodeByName("content").gameObject
 	self.backBtn = content:NodeByName("backBtn").gameObject
 	self.labelTitle = content:ComponentByName("labelTitle", typeof(UILabel))
+	self.chooseLabel = content:ComponentByName("chooseLabel", typeof(UILabel))
+	self.selelctBtn = content:NodeByName("selelctBtn").gameObject
+	self.selelctImg = self.selelctBtn:ComponentByName("select_img", typeof(UISprite))
+	self.unSelelctImg = self.selelctBtn:ComponentByName("unselect_img", typeof(UISprite))
+	self.selectLabel = self.selelctBtn:ComponentByName("select_Label", typeof(UILabel))
+
+	self.selelctImg:SetActive(false)
+	self.unSelelctImg:SetActive(true)
+
 	local middle = content:NodeByName("middle").gameObject
 	self.noEquip = middle:NodeByName("noEquip").gameObject
 	self.noEquipLabel = self.noEquip:ComponentByName("noEquipLabel", typeof(UILabel))
@@ -65,6 +75,9 @@ function ChooseEquipWindow:initWindow()
 	BaseWindow.initWindow(self)
 	self:getUIComponent()
 
+	self.unUsedInfos = {}
+	self.allInfos = {}
+
 	if #self.equips == 0 then
 		self.noEquip:SetActive(true)
 
@@ -79,18 +92,24 @@ function ChooseEquipWindow:initWindow()
 			local partner_id = self.equips[key].partner_id
 
 			if not partner_id or partner_id ~= self.equipedPartner:getPartnerID() then
-				table.insert(infos, {
+				local info = {
 					itemID = itemID,
 					num = tonumber(self.equips[key].itemNum),
 					partner_id = partner_id,
 					callback = function ()
 						self:onclickIcon(itemID, partner_id)
 					end
-				})
+				}
+
+				table.insert(self.allInfos, info)
+
+				if not partner_id then
+					table.insert(self.unUsedInfos, info)
+				end
 			end
 		end
 
-		self.multiWrap_:setInfos(infos, {})
+		self.multiWrap_:setInfos(self.allInfos, {})
 	end
 
 	UIEventListener.Get(self.backBtn).onClick = function ()
@@ -103,7 +122,29 @@ function ChooseEquipWindow:initWindow()
 		self.equipDiff:SetActive(false)
 	end
 
+	UIEventListener.Get(self.selelctBtn).onClick = function ()
+		if #self.equips > 0 then
+			self:onClickSelectBtn()
+		end
+	end
+
 	self.labelTitle.text = __("ChooseEquipWindow")
+	self.chooseLabel.text = __("CHOOSE_EQUIP")
+	self.selectLabel.text = __("NOT_EQUIPPED")
+end
+
+function ChooseEquipWindow:onClickSelectBtn()
+	self.isAll = not self.isAll
+
+	if self.isAll then
+		self.multiWrap_:setInfos(self.allInfos, {})
+		self.selelctImg:SetActive(false)
+		self.unSelelctImg:SetActive(true)
+	else
+		self.multiWrap_:setInfos(self.unUsedInfos, {})
+		self.selelctImg:SetActive(true)
+		self.unSelelctImg:SetActive(false)
+	end
 end
 
 function ChooseEquipWindow:sortEquips()
@@ -125,6 +166,7 @@ function ChooseEquipWindow:onclickIcon(itemID, partner_id)
 	if self.now_equip and self.now_equip > 0 then
 		local params = {
 			btnLayout = 0,
+			choose_equip = true,
 			equipedOn = self.equipedOn,
 			equipedPartner = self.equipedPartner,
 			itemID = self.now_equip
@@ -135,6 +177,7 @@ function ChooseEquipWindow:onclickIcon(itemID, partner_id)
 
 	local params = {
 		btnLayout = 1,
+		choose_equip = true,
 		itemID = itemID,
 		midColor = xyd.ButtonBgColorType.blue_btn_65_65,
 		midCallback = function ()

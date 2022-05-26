@@ -44,11 +44,12 @@ function ItemTipsWindow:addTips(params)
 	end
 
 	local parentGO = self.window_:NodeByName("groupAction").gameObject
+	local windowDepth = self.window_:GetComponent(typeof(UIPanel)).depth
 	local tableComponent = parentGO:AddComponent(typeof(UITable))
 	tableComponent.columns = 1
 	tableComponent.pivot = UIWidget.Pivot.Center
 	tableComponent.cellAlignment = UIWidget.Pivot.Center
-	self.diffItemTips = ItemTips.new(parentGO, params)
+	self.diffItemTips = ItemTips.new(parentGO, params, windowDepth)
 
 	tableComponent:Reposition()
 end

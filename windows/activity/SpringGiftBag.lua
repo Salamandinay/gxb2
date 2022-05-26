@@ -2,7 +2,7 @@ local SpringGiftBag = class("SpringGiftBag", import(".ActivityContent"))
 local SpringGiftBagItem = class("SpringGiftBagItem", import("app.components.CopyComponent"))
 local CountDown = import("app.components.CountDown")
 local json = require("cjson")
-local ITEM_HEIGHT = 306
+local ITEM_HEIGHT = 343
 
 function SpringGiftBag:ctor(parentGO, params)
 	SpringGiftBag.super.ctor(self, parentGO, params)
@@ -14,12 +14,8 @@ end
 
 function SpringGiftBag:resizeToParent()
 	SpringGiftBag.super.resizeToParent(self)
-	self:resizePosY(self.panelLogo, -108, -141)
 	self:resizePosY(self.timeBg, -85, -111)
-	self:resizePosY(self.timeGroup, -85, -111)
-	self:resizePosY(self.arrowUp, -241.5, -341.5)
-	self:resizePosY(self.arrowDown, -848.5, -1034.5)
-	self.scrollPanel:SetTopAnchor(self.go.gameObject, 1, -219 - 100 * self.scale_num_contrary)
+	self:resizePosY(self.arrowDown, -830, -1000)
 end
 
 function SpringGiftBag:initUI()
@@ -43,10 +39,11 @@ function SpringGiftBag:getUIComponent()
 	self.arrowUp = self.groupArrow:ComponentByName("arrowUp", typeof(UISprite))
 	self.arrowDown = self.groupArrow:ComponentByName("arrowDown", typeof(UISprite))
 	self.giftbagItem = go:NodeByName("giftbag_item").gameObject
+	self.partnerRoot = go:NodeByName("partnerRoot").gameObject
 end
 
 function SpringGiftBag:initUIComponent()
-	xyd.setUISpriteAsync(self.textImg, nil, "spring_gfitbag_text_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.textImg, nil, "activity_children_giftbag_logo_" .. xyd.Global.lang, nil, , true)
 	CountDown.new(self.timeLabel, {
 		duration = self.activityData:getUpdateTime() - xyd.getServerTime()
 	})
@@ -97,10 +94,17 @@ function SpringGiftBag:initUIComponent()
 	self:waitForTime(0.3, function ()
 		self:updateArrow()
 	end)
+
+	self.spine_ = xyd.Spine.new(self.partnerRoot)
+
+	self.spine_:setInfo("fenlier_pifu04_lihui01", function ()
+		self.spine_:play("animation", 0, 1)
+		self.spine_:SetLocalPosition(176, -940, 0)
+	end)
 end
 
 function SpringGiftBag:updateArrow()
-	local topDelta = 98 - -100 * self.scale_num_contrary - self.scrollPanel.clipOffset.y
+	local topDelta = -175 - self.scrollPanel.clipOffset.y
 	local topNum = math.floor(topDelta / ITEM_HEIGHT + 0.6)
 	local arrowUp = false
 
@@ -111,7 +115,7 @@ function SpringGiftBag:updateArrow()
 	self.arrowUp:SetActive(arrowUp)
 
 	local nums = #self.items
-	local botDelta = nums * ITEM_HEIGHT + (nums - 1) * 8 - self.scrollPanel.height - topDelta
+	local botDelta = nums * ITEM_HEIGHT + (nums - 1) * 10 - self.scrollPanel.height - topDelta
 	local botNum = math.floor(botDelta / ITEM_HEIGHT + 0.6)
 	local arrowDown = false
 
@@ -131,7 +135,7 @@ function SpringGiftBag:onRegister()
 	UIEventListener.Get(self.arrowUp.gameObject).onClick = function ()
 		local sp = self.scrollView.gameObject:GetComponent(typeof(SpringPanel))
 
-		sp.Begin(sp.gameObject, Vector3(-147.5, -690 - 100 * self.scale_num_contrary, 0), 16)
+		sp.Begin(sp.gameObject, Vector3(116, -416, 0), 16)
 		self:waitForTime(0.3, function ()
 			self:updateArrow()
 		end)
@@ -140,7 +144,7 @@ function SpringGiftBag:onRegister()
 	UIEventListener.Get(self.arrowDown.gameObject).onClick = function ()
 		local sp = self.scrollView.gameObject:GetComponent(typeof(SpringPanel))
 
-		sp.Begin(sp.gameObject, Vector3(-147.5, -403 - 178 * self.scale_num_contrary, 0), 16)
+		sp.Begin(sp.gameObject, Vector3(116, -19 - 177 * self.scale_num_contrary, 0), 16)
 		self:waitForTime(0.3, function ()
 			self:updateArrow()
 		end)
@@ -165,6 +169,7 @@ function SpringGiftBagItem:ctor(go, parent)
 
 	self.parent = parent
 	self.itemGroup = self.go:NodeByName("itemGroup").gameObject
+	self.itemGroup2 = self.go:NodeByName("itemGroup2").gameObject
 	self.vipLabel = self.go:ComponentByName("vipLabel", typeof(UILabel))
 	self.limitLabel = self.go:ComponentByName("limitLabel", typeof(UILabel))
 	self.purchaseBtn = self.go:NodeByName("purchaseBtn").gameObject
@@ -222,7 +227,7 @@ function SpringGiftBagItem:update(params)
 						titleText = __("ACTIVITY_CLOCKGIFTBAG_TEXT01"),
 						sureBtnText = __("SURE"),
 						cancelBtnText = __("CANCEL"),
-						tipsText = __(""),
+						tipsText = __("ACTIVITY_ICE_SECRET_ITEM_TIPS"),
 						selectedIndex = self.chooseIndex[i] or 0
 					})
 				end
@@ -272,7 +277,7 @@ function SpringGiftBagItem:setInfo(params)
 	local indexs = self.parent.activityData:getChooseIndex(self.giftbagId)
 
 	for i = 1, self.chooseNum do
-		self["defaultIcon" .. i] = NGUITools.AddChild(self.itemGroup.gameObject, self.defaultIcon.gameObject)
+		self["defaultIcon" .. i] = NGUITools.AddChild(self.itemGroup2.gameObject, self.defaultIcon.gameObject)
 
 		xyd.setDragScrollView(self["defaultIcon" .. i], self.parent.scrollView)
 
@@ -297,7 +302,7 @@ function SpringGiftBagItem:setInfo(params)
 				titleText = __("ACTIVITY_CLOCKGIFTBAG_TEXT01"),
 				sureBtnText = __("SURE"),
 				cancelBtnText = __("CANCEL"),
-				tipsText = __(""),
+				tipsText = __("ACTIVITY_ICE_SECRET_ITEM_TIPS"),
 				selectedIndex = self.chooseIndex[i] or 0
 			})
 		end)
@@ -309,7 +314,7 @@ function SpringGiftBagItem:setInfo(params)
 				notShowGetWayBtn = true,
 				switch = true,
 				show_has_num = true,
-				scale = 0.6018518518518519,
+				scale = 0.7129629629629629,
 				uiRoot = self["defaultIcon" .. i].gameObject,
 				itemID = award[1],
 				num = award[2],
@@ -336,7 +341,7 @@ function SpringGiftBagItem:setInfo(params)
 						titleText = __("ACTIVITY_CLOCKGIFTBAG_TEXT01"),
 						sureBtnText = __("SURE"),
 						cancelBtnText = __("CANCEL"),
-						tipsText = __(""),
+						tipsText = __("ACTIVITY_ICE_SECRET_ITEM_TIPS"),
 						selectedIndex = self.chooseIndex[i] or 0
 					})
 				end

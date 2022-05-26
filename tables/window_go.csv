@@ -125,9 +125,12 @@ id,name,params,activity_id,function_id,desc
 124,fair_arena_entry_window,,198,,-1
 125,activity_window,"{'select':291,'activity_type2':2}",291,,-1
 126,activity_window,"{'select':278,'activity_type2':2}",278,,
-127,activity_window,"{'select':292,'activity_type2':2}",292,,
-128,activity_window,"{'select':294,'activity_type2':2}",294,,
+127,activity_window,"{'select':292,'activity_type2':2}",292,,-1
+128,activity_window,"{'select':294,'activity_ids':[294,298,299], 'activity_type':7}",294,,-1
 129,activity_window,"{'select':242,'activity_type2':2}",242,,
 130,activity_window,"{'select':295,'activity_ids':[295,296], 'activity_type':7}",295,,-1
 131,activity_window,"{'select':296,'activity_ids':[295,296], 'activity_type':7}",296,,-1
 132,activity_window,"{'select':297,'activity_type2':2}",297,,-1
+133,activity_window,"{'select':293,'activity_type2':2}",293,,-1
+134,activity_window,"{'select':298,'activity_ids':[294,298,299], 'activity_type':7}",298,,-1
+135,activity_window,"{'select':299,'activity_ids':[294,298,299], 'activity_type':7}",299,,-1

@@ -5129,7 +5129,7 @@ Diamond: 8 Frontline backup, 16 Backline backup, 5 Servants
 (5) When challenging other players, the number of slots available in your backup lineup will be adjusted according to your opponent\'s Division.
 (6) If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Heal received each round until the battle is over.|5. Single Elimination & Finals|(1) After Points Race is over, the 320 players in Grandmaster Division will be randomly separated into 5 groups (64 players per group) and enter Single Elimination Phase. If there are less than 320 players but more than 64 players in Grandmaster Division, players from Grandmaster Division will be picked according to their position in the ranking list until the remaining players in Grandmaster Division cannot form a complete group. In this case, they will not enter Single Elimination Phase. If there are less than 64 players in Grandmaster Division, players from other Divisions will be picked according to their position on the ranking list (until there\'re 64 players for the Single Elimination Phase).
 (2) 1 race will be held each day.0:00 to 2:00 (UTC/GMT 0) is the ending period. The players cannot set or adjust their lineups within 2 hours before each round of battle and during the ending period.
-(3) Only Girls that can be awakened to 10-star can be deployed in Single Elimination and Finals. During battles, all Girls will have the attributes of their 15-Star form at level 330 and their Elite Skill upgrade progress will be kept. They will also be equipped with a full Angel Set (Girls equipped with Class Set Gears will still equip their original Gears), and have their Crystals set at the highest grade. The Servant deployed will be at level 180, the Servant\'s Aura level will be at level 50, and the Servant\'s Ulticore level will be kept. Guild Lab skills will be fully upgraded. Attributes from Main Center in Excursion, Skins, Antiques originally held by the Girl, the Girl\'s current intimacy boost, and the Girl\'s potential status will be kept. If the girl hasn\'t chosen her potential boost in a slot it will be considered empty. The buff of the Chimes in Tsuruga Grand Shrine will not be calculated in battles of Single Elimination and Finals.
+(3) Only Girls that can be awakened to 10-star can be deployed in Single Elimination and Finals. During battles, all Girls will have the attributes of their 15-Star form at level 330 and their Elite Skill upgrade progress will be kept. They will also be equipped with a full Angel Set (Girls equipped with Class Set Gears will still equip their original Gears), and have their Crystals set at the highest grade. The Servant deployed will be at level 180, the Servant\'s Aura level will be at level 50, and the Servant\'s Ulticore level will be kept. Guild Lab skills will be fully upgraded. Attributes from Chimes, Main Center in Excursion, Skins, Antiques originally held by the Girl, the Girl\'s current intimacy boost, and the Girl\'s potential status will be kept. If the girl hasn\'t chosen her potential boost in a slot it will be considered empty. The buff of the Chimes in Tsuruga Grand Shrine will not be calculated in battles of Single Elimination and Finals.
 During battles, the HP and Attack of every Girl will be multiplied based on their star-grade:|5-Star-50%%, 6-Star-51%%, 7-Star-53%%|8-Star-55%%, 9-Star-60%%, 10-Star-65%%|11-Star-70%%, 12-Star-75%%, 13-Star-80%%|14-Star-90%%, 15-Star-100%%|6. Exhibition|(1) Exhibition will last for 2 days after Finals end.|7. Hall of Fame|(1) The top 8 players from each Single Elimination Group of each season will be recorded in the Hall of Fame.
 (2) Records of players who have won in Ultimate League before the feature is updated will still be taken into account in Rankings.|8. Ultimate League Task|(1) During the Points Race period, players can get rewards by completing Tasks in Ultimate League every day.|9. Seasonal Rewards|(1) After Points Race period is over, players will be awarded according to their current Division.
 Notice: Players will need to start 10 or more battles to receive Seasonal Rewards.
@@ -5697,7 +5697,7 @@ ACTIVITY_VAMPIRE_TASK_HELP,"1. Collect ""Honor Pages"" by completing tasks in Ho
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,Instantly obtainable after purchase
 ACTIVITY_VAMPIRE_TASK_LABEL01,Reward
 ACTIVITY_VAMPIRE_TASK_LABEL02,Tasks
-ACTIVITY_VAMPIRE_TASK_TEXT01,Complete Limit
+ACTIVITY_VAMPIRE_TASK_TEXT01,Limit
 ACTIVITY_VAMPIRE_TASK_AWARD01,Normal Reward
 ACTIVITY_VAMPIRE_TASK_AWARD02,Unlock Reward
 ACTIVITY_VAMPIRE_GAMBLE_BUTTON01,Journey Blessing
@@ -6223,7 +6223,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Energy Cost: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Laser Energy will be reset to 0 after switching the skill, confirm to continue?"
 ACTIVITY_LOST_SPACE_NAV1,Special Event
 ACTIVITY_LOST_SPACE_NAV2,Help
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Early Summer Gift, and Space Station Supply.|8. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, Lucky Bonus, purchasing Monthly Kickoff, Sweet Childhood Pack, Count's Mystery Gift, Mega Value Pack, Special Skin Pack, Special Gift Pack,and Space Station Supply.|8. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
 GAME_ASSISTANT_TEXT103,Cafeteria - Order Rewards
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Laser Energy is full, confirm not to trigger the skill?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,No explorable area is in your current skill range
@@ -6311,3 +6311,40 @@ SKIN_TEXT28,15-Star
 STARRY_ALTAR_TEXT12,Each draw guarantees a Basic Reward
 STARRY_ALTAR_TEXT13,"Please tap the ""+"" button on the right side to set your grand reward"
 KANBAN_NONE_TIPS,No Wallpaper Girl available
+ACTIVITY_CHILDREN_TASK_HELP,1. Complete Estel's Tasks to get Rabbit Badges. You can get rewards after obtaining a certain number of Rabbit Badges.
+ACTIVITY_CHILDREN_SHOP_BUTTON01,Candy Exchange
+ACTIVITY_CHILDREN_SHOP_HELP,"1. Kid's Store provides you the Childhood Collection of 4 Girls on campus, you can exchange the rewards with Childhood Delights.|2. The first Childhood Collection of each Girl is unlocked by default. The rest part of the collection will be unlocked once you exchange the previous ones.|3. Once all the Childhood Collections of the 4 Girls are exchanged, the final reward will become available for exchange, and the Regular Store will become available.|4. Childhood Delights can be obtained from Childhood Memories, Candy Exchange, Lucky Bonus, Sweet Childhood, or by purchasing Value pack, Special Skin Pack, Special Gift Pack, and Spaceship Supplies.|5. The unused Childhood Delights can be sold at the price of 100k Coins each after the event ends."
+ACTIVITY_CHILDREN_SHOP_TEXT01,Unlock after all rewards are exchanged
+ACTIVITY_CHILDREN_SHOP_TEXT02,Collection of {1}
+ACTIVITY_CHILDREN_SHOP_TEXT03,Gwen & Brigit
+ACTIVITY_CHILDREN_SHOP_TEXT04,Frexie
+ACTIVITY_CHILDREN_SHOP_TEXT05,Estel
+ACTIVITY_CHILDREN_SHOP_TEXT06,Vera
+ACTIVITY_CHILDREN_SHOP_BUTTON02,Back
+ACTIVITY_CHILDREN_SHOP_TIPS01,Unlock after all rewards are exchanged
+ACTIVITY_CHILDREN_SHOP_TIPS02,Exchanged
+ACTIVITY_CHILDREN_SHOP_TIPS03,This reward is already exchanged
+ACTIVITY_CHILDREN_SHOP_TIPS04,Unlock after the previous reward is exchanged
+ACTIVITY_CHILDREN_SHOP_TIPS05,"Congratulations! All rewards are exchanged and the Regular Store is unlocked, do you want to check it out?"
+ACTIVITY_CHILDREN_SHOP_BUTTON03,Regular\nStore
+ACTIVITY_CHILDREN_GAMBLE_BUTTON01,1x Exchange
+ACTIVITY_CHILDREN_GAMBLE_BUTTON02,10x Exchange
+ACTIVITY_CHILDREN_GAMBLE_HELP,"1. You can exchange rewards with Krystal by consuming Rabbit Balloons. You are able to obtain 1 basic reward for each exchange (there will be 3 random options, and you can choose one from them). You will also have a chance to obtain an additional reward for each exchange (Childhood Delight).|2. Rabbit Balloons can be obtained from Daily Mail, Lucky Bonus, or be purchased with Gems (you can purchase 50 Rabbit Balloons with Gems in total).|3. After this event ends, any remaining Rabbit Balloons will be automatically exchanged into 50K Coins each. The Coins will be sent via Mail."
+ACTIVITY_CHILDREN_GAMBLE_TEXT01,Additional Reward
+ACTIVITY_CHILDREN_GAMBLE_TEXT02,Basic Reward
+ACTIVITY_CHILDREN_GAMBLE_TEXT03,Please select a reward
+GO_DRESS_SHOW_SHOP_TIPS,Do you want to go to the store for combat buffs?
+ACTIVITY_CHILDREN_TITLE,Sweet Childhood
+ACTIVITY_SPFARM_TEXT01,Enter the mansion and seek the power that could help...
+ACTIVITY_SPFARM_TEXT02,Total Level
+ACTIVITY_SPFARM_TEXT03,Enter
+ACTIVITY_SPFARM_HELP1,Mainpage Help
+ACTIVITY_SPFARM_HELP2,Map Help
+ACTIVITY_SPFARM_TEXT04,Standing: {1}
+ACTIVITY_SPFARM_TEXT05,Raid
+ACTIVITY_SPFARM_TEXT06,Standing Reward
+ACTIVITY_SPFARM_TEXT07,Raiding
+ACTIVITY_SPFARM_TEXT08,Capacity
+NOT_EQUIPPED,Not Active
+CHOOSE_EQUIP,Select the Gear to equip:
+ACTIVITY_CHILDREN_SHOP_BUTTON04,Go

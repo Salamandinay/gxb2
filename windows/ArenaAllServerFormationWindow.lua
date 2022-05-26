@@ -19,8 +19,6 @@ function ArenaAllServerFormationWindow:ctor(name, params)
 	elseif params.model then
 		self.model_ = params.model
 		self.zone_id_ = params.zone_id
-
-		print("self.zone_id_", self.zone_id_)
 	end
 
 	self.player_id = params.player_id

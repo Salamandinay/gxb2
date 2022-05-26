@@ -10019,9 +10019,9 @@ Beim Standardangriff fährt die Eisklaue ihre scharfen Krallen aus und zerschmet
 
 [c][e28002]Einfrieren:[-][/c]
 Kontrolleffekt. Während das Ziel eingefroren ist, kann es seine aktive Fertigkeit nicht einsetzen, keinen Standardangriff, Folgeangriff oder Gegenangriff durchführen."
-125600301,Buff (Polarstation),Buff 1 (Polarstation),Dieses Feld ist ein Feld von der Polarstation entfernt. Alle Mädchen deines Teams machen 50% mehr Schaden.
-125600302,Buff (Polarstation),Buff 2 (Polarstation),Dieses Feld ist zwei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 30% mehr Schaden.
-125600303,Buff (Polarstation),Buff 3 (Polarstation),Dieses Feld ist drei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 10% mehr Schaden.
+125600301,Buff (Polarstation),Buff 1 (Polarstation) ,Dieses Feld ist ein Feld von der Polarstation entfernt. Alle Mädchen deines Teams machen 50% mehr Schaden.
+125600302,Buff (Polarstation),Buff 2 (Polarstation) ,Dieses Feld ist zwei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 30% mehr Schaden.
+125600303,Buff (Polarstation),Buff 3 (Polarstation) ,Dieses Feld ist drei Felder von der Polarstation entfernt. Alle Mädchen deines Teams machen 10% mehr Schaden.
 125600401,Buff (Basis),Buff 1 (Basis),"Dieses Feld ist ein Feld von der Basis entfernt. Alle Mädchen deines Teams erhalten +180 000 HP, +30% extra HP, +12 000 Angriff und +30% Angriff."
 125600402,Buff (Basis),Buff 2 (Basis),"Dieses Feld ist zwei Felder von der Basis entfernt. Alle Mädchen deines Teams erhalten +120 000 HP, +20% extra HP, +8 000 Angriff und +20% Angriff."
 125600403,Buff (Basis),Buff 3 (Basis),"Dieses Feld ist drei Felder von der Basis entfernt. Alle Mädchen deines Teams erhalten +60 000 HP, +10% extra HP, +4 000 Angriff und +10% Angriff."
@@ -11524,4 +11524,50 @@ Wenn du alles verstanden hast, werde ich schon neben dir stehen. Am Ende der Run
 Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers.
 [c][e28002]Sternbooster[-][/c]
 Fertigkeitseffekt. Kann nicht gestapelt werden. Erhöht den Angriff um 24%, die Krit. Rate um 24% und die Präzision um 24%. Der Träger als zufälliges Ziel des Gegners erleidet keinen Schaden und Debuffs."
-,,,-1
+676101,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 10%
+676201,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 13%
+676301,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 16%
+676401,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 19%
+676501,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 22%
+676601,Sternbumerang,Antiquitätenfertigkeit,Erhöht den heiligen Schaden um 25%
+6766101,Sternbumerang,Antiquitätenfertigkeit,"Jede 1%ige Präzision erhöht alle Schäden der Besitzerin im Kampf um 0,4%. Immer wenn die Besitzerin einen Debuff (Kontrolleffekte, Zeichen oder kontinuierliche Schäden) auf sich entfernt, erhält sie 1 Schicht [c][e28002]Sternflüsterstimme[-][/c], die 2 Runden lang anhält.\n[c][e28002]Sternflüsterstimme:[-][/c]\nFertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Erhöht den Angriff um 2%, die Präzision um 2% und den heiligen Schaden um 2%."
+6766201,Sternbumerang,Antiquitätenfertigkeit,"Jede 1%ige Präzision erhöht alle Schäden der Besitzerin im Kampf um 0,6%. Immer wenn die Besitzerin einen Debuff (Kontrolleffekte, Zeichen oder kontinuierliche Schäden) auf sich entfernt, erhält sie 1 Schicht [c][e28002]Sternflüsterstimme[-][/c], die 2 Runden lang anhält.\n[c][e28002]Sternflüsterstimme:[-][/c]\nFertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Erhöht den Angriff um 2,5%, die Präzision um 4% und den heiligen Schaden um 2,5%."
+6766301,Sternbumerang,Antiquitätenfertigkeit,"Jede 1%ige Präzision erhöht alle Schäden der Besitzerin im Kampf um 0,8%. Immer wenn die Besitzerin einen Debuff (Kontrolleffekte, Zeichen oder kontinuierliche Schäden) auf sich entfernt, erhält sie 1 Schicht [c][e28002]Sternflüsterstimme[-][/c], die 2 Runden lang anhält.\n[c][e28002]Sternflüsterstimme:[-][/c]\nFertigkeitseffekt. Kann maximal auf 10 Schichten gestapelt werden. Erhöht den Angriff um 3%, die Präzision um 6% und den heiligen Schaden um 3%."
+5201900,伊芙,普攻,Standardangriff
+65202600,伊芙,普攻,Standardangriff
+75201900,伊芙,普攻,Standardangriff
+5201901,伊芙,犬吠如嘯,
+65202601,伊芙,犬吠如嘯,
+75201901,伊芙,犬吠如嘯,
+5201902,伊芙,犬覺如風,
+65202602,伊芙,犬覺如風,
+65202612,伊芙,犬覺如風,
+75201902,伊芙,犬覺如風,
+5201903,伊芙,犬忠如一,
+65202603,伊芙,犬忠如一,
+65202613,伊芙,犬忠如一,
+75201903,伊芙,犬忠如一,
+5201904,伊芙,犬心如守,
+65202604,伊芙,犬心如守,
+65202614,伊芙,犬心如守,
+75201904,伊芙,犬心如守,
+752019011,伊芙,犬吠如嘯,
+752019012,伊芙,犬吠如嘯,
+752019013,伊芙,犬吠如嘯,
+752019014,伊芙,犬吠如嘯,
+752019015,伊芙,犬吠如嘯,
+752019021,伊芙,犬覺如風,
+752019022,伊芙,犬覺如風,
+752019023,伊芙,犬覺如風,
+752019024,伊芙,犬覺如風,
+752019025,伊芙,犬覺如風,
+752019031,伊芙,犬忠如一,
+752019032,伊芙,犬忠如一,
+752019033,伊芙,犬忠如一,
+752019034,伊芙,犬忠如一,
+752019035,伊芙,犬忠如一,
+752019041,伊芙,犬心如守,
+752019042,伊芙,犬心如守,
+752019043,伊芙,犬心如守,
+752019044,伊芙,犬心如守,
+752019045,伊芙,犬心如守,

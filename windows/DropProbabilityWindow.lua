@@ -3,24 +3,27 @@ local DropProbabilityWindow = class("AwardSelectWindow", BaseWindow)
 local DropItem = class("DropItem", import("app.common.ui.FixedMultiWrapContentItem"))
 local FixedMultiWrapContent = import("app.common.ui.FixedMultiWrapContent")
 local jobGiftBoxID = {
-	[4601009.0] = 1,
-	[152.0] = 1,
-	[4601008.0] = 1,
-	[151.0] = 1,
 	[4601006.0] = 1,
+	[152.0] = 1,
 	[4601005.0] = 1,
+	[149.0] = 1,
+	[4601009.0] = 1,
+	[4601010.0] = 1,
 	[285.0] = 1,
+	[368.0] = 1,
+	[4601013.0] = 1,
 	[4601014.0] = 1,
-	[4601015.0] = 1,
-	[4601016.0] = 1,
 	[4601007.0] = 1,
 	[243.0] = 1,
-	[4601023.0] = 1,
+	[4601015.0] = 1,
 	[242.0] = 1,
-	[149.0] = 1,
+	[4601016.0] = 1,
+	[4601023.0] = 1,
+	[366.0] = 1,
+	[367.0] = 1,
 	[150.0] = 1,
-	[4601013.0] = 1,
-	[4601010.0] = 1,
+	[151.0] = 1,
+	[4601008.0] = 1,
 	[244.0] = 1,
 	[153.0] = 1,
 	[4601033.0] = 1
@@ -283,13 +286,27 @@ function DropItem:updateInfo()
 			end
 		else
 			UIEventListener.Get(self.icon_:getGameObject()).onClick = function ()
-				xyd.WindowManager.get():openWindow("award_item_tips_window", {
-					show_has_num = true,
-					itemID = self.itemID,
-					parent_item = self.parent_.params_.itemId,
-					wndType = xyd.checkCondition(xyd.tables.itemTable:getType(self.itemID) == xyd.ItemType.SKIN, xyd.ItemTipsWndType.OPTIONAL_CHEST, nil),
-					collectionInfo = self.parent_.collectionInfo
-				})
+				local win = xyd.WindowManager.get():getWindow("award_item_tips_window")
+
+				if win then
+					xyd.WindowManager.get():closeWindow("award_item_tips_window", function ()
+						xyd.WindowManager.get():openWindow("award_item_tips_window", {
+							show_has_num = true,
+							itemID = self.itemID,
+							parent_item = self.parent_.params_.itemId,
+							wndType = xyd.checkCondition(xyd.tables.itemTable:getType(self.itemID) == xyd.ItemType.SKIN, xyd.ItemTipsWndType.OPTIONAL_CHEST, nil),
+							collectionInfo = self.parent_.collectionInfo
+						})
+					end)
+				else
+					xyd.WindowManager.get():openWindow("award_item_tips_window", {
+						show_has_num = true,
+						itemID = self.itemID,
+						parent_item = self.parent_.params_.itemId,
+						wndType = xyd.checkCondition(xyd.tables.itemTable:getType(self.itemID) == xyd.ItemType.SKIN, xyd.ItemTipsWndType.OPTIONAL_CHEST, nil),
+						collectionInfo = self.parent_.collectionInfo
+					})
+				end
 			end
 		end
 	end

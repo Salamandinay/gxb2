@@ -27,31 +27,36 @@ local BtnType = {
 	BOT_LEFT = 2
 }
 local jobGiftBoxID = {
-	[285.0] = 1,
+	[4601006.0] = 1,
+	[152.0] = 1,
 	[4601005.0] = 1,
 	[149.0] = 1,
-	[4601006.0] = 1,
-	[150.0] = 1,
+	[4601009.0] = 1,
+	[4601010.0] = 1,
+	[285.0] = 1,
+	[368.0] = 1,
 	[4601007.0] = 1,
+	[243.0] = 1,
+	[242.0] = 1,
+	[366.0] = 1,
+	[367.0] = 1,
+	[150.0] = 1,
 	[151.0] = 1,
 	[4601008.0] = 1,
-	[152.0] = 1,
 	[244.0] = 1,
 	[153.0] = 1,
-	[243.0] = 1,
-	[4601033.0] = 1,
-	[242.0] = 1,
-	[4601010.0] = 1,
-	[4601009.0] = 1
+	[4601033.0] = 1
 }
 local ItemTips = class("ItemTips", import("app.components.BaseComponent"))
 
-function ItemTips:ctor(parentGO, params)
+function ItemTips:ctor(parentGO, params, windowDepth)
+	self.itemID = params.itemID or 0
+	self.type_ = ItemTable:getType(self.itemID)
+	self.data = params
+
 	ItemTips.super.ctor(self, parentGO)
 
 	self.btnCallback = {}
-	self.data = params
-	self.itemID = params.itemID or 0
 	self.itemNum = params.itemNum or 0
 	self.smallTips_ = params.smallTips or ""
 	self.hideText = params.hideText or false
@@ -67,17 +72,27 @@ function ItemTips:ctor(parentGO, params)
 	self.descOffY = 0
 	self.ways_val = params.ways_val
 	self.showBagType_ = ItemTable:showInBagType(self.itemID)
-	self.type_ = ItemTable:getType(self.itemID)
 	self.ways = {}
 	self.show_has_num = params.show_has_num or false
 	self.is_spare_crystal = params.is_spare_crystal
 	self.collectionInfo_ = params.collectionInfo
+	self.windowDepth_ = windowDepth
 
 	self:initLayout()
 end
 
 function ItemTips:getPrefabPath()
-	return "Prefabs/Windows/item_tips"
+	if self.type_ == xyd.ItemType.ARTIFACT and self.data.choose_equip then
+		local exSkill = EquipTable:exSkillId(self.itemID)[1]
+
+		if exSkill and exSkill > 0 then
+			return "Prefabs/Windows/item_tips_artifact"
+		else
+			return "Prefabs/Windows/item_tips"
+		end
+	else
+		return "Prefabs/Windows/item_tips"
+	end
 end
 
 function ItemTips:initLayout()
@@ -228,7 +243,26 @@ function ItemTips:getUIComponent()
 	self.groupIcon_ = go:ComponentByName("groupMain_/groupIcon_", typeof(UISprite))
 	self.groupIcon2_ = go:ComponentByName("groupMain_/groupIcon2_", typeof(UISprite))
 	self.upArrow_ = go:ComponentByName("groupMain_/upArrow_", typeof(UISprite))
-	self.groupDesc_ = go:NodeByName("groupMain_/groupDesc_").gameObject
+
+	if self.type_ == xyd.ItemType.ARTIFACT and self.data.choose_equip then
+		local exSkill = EquipTable:exSkillId(self.itemID)[1]
+
+		if exSkill and exSkill > 0 then
+			self.groupDesc_ = go:NodeByName("groupMain_/descScroll/groupDesc_").gameObject
+			self.groupDescWidght_ = self.groupDesc_:GetComponent(typeof(UIWidget))
+			self.descScroll_ = go:ComponentByName("groupMain_/descScroll", typeof(UIScrollView))
+			self.descScroll_panel = self.descScroll_.transform:GetComponent(typeof(UIPanel))
+
+			if self.windowDepth_ then
+				self.descScroll_panel.depth = self.windowDepth_ + 1
+			end
+		else
+			self.groupDesc_ = go:NodeByName("groupMain_/groupDesc_").gameObject
+		end
+	else
+		self.groupDesc_ = go:NodeByName("groupMain_/groupDesc_").gameObject
+	end
+
 	self.btnTop_ = go:NodeByName("groupMain_/btnTop_").gameObject
 	self.btnBotMid_ = go:NodeByName("groupMain_/bottom_left/btnBotMid_").gameObject
 	self.btnBotMid_Widget = self.btnBotMid_:GetComponent(typeof(UIWidget))
@@ -563,6 +597,14 @@ function ItemTips:initNormalBtn()
 
 	if self.resetBtn and self.data.resetCallBack then
 		self.resetBtn.gameObject:SetActive(true)
+	end
+
+	local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
+
+	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or jobGiftBoxID[self.itemID] then
+		self.btnBox_:SetActive(true)
+	else
+		self.btnBox_:SetActive(false)
 	end
 end
 
@@ -1508,9 +1550,42 @@ function ItemTips:showDressDesc()
 end
 
 function ItemTips:changeMainSize()
-	self.groupMain_.height = self.groupMain_.height + self.changeY + self.descOffY - 13
+	local exSkill = EquipTable:exSkillId(self.itemID)
+	local showArtifactDesc = false
 
-	self.groupMain_:SetLocalPosition(0, self.groupMain_.height / 2, 0)
+	if exSkill and exSkill[1] and exSkill[1] > 0 then
+		showArtifactDesc = true
+	end
+
+	if not self.data.choose_equip or self.type_ ~= xyd.ItemType.ARTIFACT or not showArtifactDesc then
+		self.groupMain_.height = self.groupMain_.height + self.changeY + self.descOffY - 13
+
+		self.groupMain_:SetLocalPosition(0, self.groupMain_.height / 2, 0)
+	elseif self.data.choose_equip and showArtifactDesc then
+		if self.descOffY > 250 then
+			self.groupMain_.height = 530 + self.changeY
+			self.groupDescWidght_.height = self.descOffY
+
+			self.groupMain_:SetLocalPosition(0, self.groupMain_.height / 2, 0)
+			self.descScroll_panel:SetAnchor(self.groupMain_.gameObject, 0, 4, 1, -483, 1, -4, 1, -183)
+		elseif self.descOffY > 200 then
+			self.groupMain_.height = 480 + self.changeY
+			self.groupDescWidght_.height = self.descOffY
+
+			self.groupMain_:SetLocalPosition(0, self.groupMain_.height / 2, 0)
+			self.descScroll_panel:SetAnchor(self.groupMain_.gameObject, 0, 4, 1, -433, 1, -4, 1, -183)
+		else
+			self.groupMain_.height = 430 + self.changeY
+			self.groupDescWidght_.height = self.descOffY
+
+			self.groupMain_:SetLocalPosition(0, self.groupMain_.height / 2, 0)
+			self.descScroll_panel:SetAnchor(self.groupMain_.gameObject, 0, 4, 1, -383, 1, -4, 1, -183)
+		end
+
+		self:waitForFrame(1, function ()
+			self.descScroll_:ResetPosition()
+		end)
+	end
 end
 
 function ItemTips:btnBottomTouch()
@@ -2157,6 +2232,7 @@ function ItemTips:createWays()
 end
 
 function ItemTips:onBoxBtnOptionalTreasureChest()
+	xyd.WindowManager.get():closeWindow("drop_probability_window")
 	self:openDropProbabilityWindow({
 		isShowProbalitity = false,
 		itemId = self.itemID
@@ -2173,15 +2249,16 @@ function ItemTips:onBoxBtnNormal()
 
 		xyd.WindowManager.get():closeWindow("drop_probability_window")
 		xyd.WindowManager.get():closeWindow("item_tips_window")
+		xyd.WindowManager.get():closeWindow("award_item_tips_window")
 		self:openDropProbabilityWindow({
 			box_id = ItemTable:getDropBoxShow(self.itemID),
 			closeCallBack = function ()
-				if dropProWndParams then
-					self:openDropProbabilityWindow(dropProWndParams)
-				end
-
 				if itemTipsWndParams then
 					xyd.WindowManager.get():openWindow("item_tips_window", itemTipsWndParams)
+				end
+
+				if dropProWndParams then
+					self:openDropProbabilityWindow(dropProWndParams)
 				end
 			end
 		})

@@ -686,7 +686,7 @@ function ShrineHurdleNoticeWindow:updateSelfAwards(type)
 		for i = 1, #ids do
 			needId = i
 
-			if rankList.rank < xyd.tables.shrineHurdleRankTable:getRank(ids[i]) then
+			if rankList.rank <= xyd.tables.shrineHurdleRankTable:getRank(ids[i]) then
 				break
 			end
 		end

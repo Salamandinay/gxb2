@@ -1003,7 +1003,7 @@ ARTIFACT_UP_TITLE,Antiquität aufleveln
 TREASURE_CHANGE_TITLE,Kristall austauschen
 WORLD_BOSS_SWEEP_WARNING,Maximal 50 Raids auf einmal möglich!
 ZHONGQIU_FESTIVAL_TEXT,"1. Nutze ""Elementarkugeln"" während des Events, um Belohnungen auf der Eventseite zu erhalten. |2. ""Elementarkugeln"" können durch den Auto-Kampf, Superpakete, Kostümpakete, Glückspakete oder im Austausch gegen Phantome durch tippen auf das + Zeichen erhalten werden! |3. In den letzten 24 Stunden des Events kann man keine Elementarkugeln mehr erhalten, sondern sie nur noch gegen Belohnungen eintauschen.|4. Die Pakete für Elementarkugeln werden vor dem letzten Tag des Events entfernt. Bitte kaufe die Pakete vor der Zeit ein!|5. Nachdem das Event vorbei ist verwandeln sich die nicht verwendeten Elementarkugeln automatisch in Gold um. Jede Elementarkugel entspricht 15K. Das Gold wird per Mail verschickt."
-MID_AUTUMN_ACTIVITY_EXCHANGE_TITLE,Event Tausch
+MID_AUTUMN_ACTIVITY_EXCHANGE_TITLE,Tausch
 MID_AUTUMN_NOT_ENOUGH_WARNING,Elementarkugeln nicht ausreichend
 COMIC_ALREADY_LAST,Letzte Episode
 COMIC,Manga
@@ -3067,7 +3067,7 @@ ACTIVITY_DATE_MAP_ENTRANCE_4,Shoppen
 ACTIVITY_DATE_MAP_ENTRANCE_5,Park
 ACTIVITY_DATE_BUYDICE_TIPS,"Bist du sicher, dass du {1} Dias ausgeben willst, um 3 Herzkristalle und 1 Liebesdiamant kaufen willst."
 BATTLE_PASS_SEASON_NUMBER_2,6. Saison
-ACTIVITY_DUANWU_SHUOMING,"Bitte wähle die Items,\ndie du haben möchtest"
+ACTIVITY_DUANWU_SHUOMING,"Bitte wähle das Item, das du haben möchtest."
 ACTIVITY_CANTMOVE_TIPS,"Bitte beende zuerst die nächsten Sachen (tippe auf die Person), bevor du weiter gehst"
 ACTIVITY_DATE_HELP_1,"Das Event dauert 14 Tage. Du kannst Herzkristalle und Liebesdiamanten verwenden, um eine Aktivität auszulösen. Du kannst Rosen erhalten, nachdem du bestimmte Entscheidungen getroffen hast und diese im Laden gegen Belohnungen eintauschen."
 ACTIVITY_DATE_HELP_CELLTITLE,Typ der Aktivitäten
@@ -5134,7 +5134,7 @@ Diamant: 8x Backup-Mädchen der Frontline, 16x Backup-Mädchen der Backline, 5x 
 (5) Entsprechend der Stufe des gewählten Gegners wird die Anzahl von deinen verfügbaren Backup-Mädchen in diesem Kampf festgelegt.
 (6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, dann werden entsprechend der Reihenfolge in dieser Stufe (Großmeister) so lange Gruppen aus 64 Spielern gebildet, bis die Anzahl der Spieler nicht mehr ausreicht, um eine Gruppe zu erstellen (<64). Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
 (2) Täglich findet 1 Kampf der KO-Phase statt. In den letzten 2 Stunden vor dem Beginn jedes Kampfes können die Aufstellungen nicht mehr angepasst werden. Jeden Tag von 0 Uhr bis 2 Uhr (UTC/GMT 0) ist die Abrechnungsphase, während der die Aufstellungen nicht konfiguriert oder gespeichert werden können.
-(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch den Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt. Die Buffs durch die Glocken unter ""Tsuruga Schrein"" wirken sich nicht in KO-Phase und Finale aus.
+(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch Glocken (Tsuruga Schrein), Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
 (4) HP und Angriffswert der Mädchen werden nach ihrem jeweiligen Sternlevel, auf das sie der Spieler gelevelt hat, mit einem bestimmten Wert multipliziert. Details wie folgt:|  5-Sterne: 50%%, 6-Sterne: 51%%, 7-Sterne: 53%%|  8-Sterne: 55%%, 9-Sterne: 60%%, 10-Sterne: 65%%|  11-Sterne: 70%%, 12-Sterne: 75%%, 13-Sterne: 80%%|  14-Sterne: 90%%, 15-Sterne: 100%%.|6. Ruhezeit|(1) Die 2 Tage nach dem Ende des Finales sind die Ruhezeit.|7. Ehrenschloss|(1) Die TOP8 Spieler aus jeder Kampfgruppe jeder Saison werden einen Platz im Ehrenschloss erhalten.
 (2) Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.|8. Tägliche Aufgabe|(1) Während der Qualifikationsphase können die Spieler die täglichen Aufgaben in der Qualifikationsphase abschließen, um Belohnungen zu erhalten.|9. Abrechnungsbelohnungen|(1) Nach dem Ende der Qualifikationsphase erhältst du entsprechend deines Rangs in der Stufe Belohnungen.
 Tipp: Du musst während der Qualifikationsrunde 10 oder mehr Kämpfe abgeschlossen haben,  um diese Abrechnungsbelohnungen erhalten zu können.
@@ -6224,7 +6224,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Benötigte Energie: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,Nach dem Wechseln der Fertigkeiten werden deine Laserenergien auf 0 zurückgesetzt. Willst du sicher die Fertigkeit wechseln?
 ACTIVITY_LOST_SPACE_NAV1,Spezialereignisse
 ACTIVITY_LOST_SPACE_NAV2,Hilfe
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Sommeranfang, Raumstation-Versorgung.|8. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Geschenk zum Monatsanfang, Süße Kindheit, Geschenke des Grafen, Lotto Glücksboni, Raumstation-Versorgung.|8. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
 GAME_ASSISTANT_TEXT103,Cafeteria - Belohnungen der Bestellungen
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,Volle Laserenergien gespeichert. Willst du sicher keine Fertigkeit durchführen?
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,Keine verfügbaren Gebiete
@@ -6312,3 +6312,40 @@ SKIN_TEXT28,15-Sterne
 STARRY_ALTAR_TEXT12,Erhalte bei jedem Ziehen sicher eine Grundbelohnung
 STARRY_ALTAR_TEXT13,"Tippe auf das Pluszeichen rechts, um eine Ult. Belohnung auszuwählen."
 KANBAN_NONE_TIPS,Keine Mädchen verfügbar
+ACTIVITY_CHILDREN_TASK_HELP,"1. Schließe die Aufgaben von Pippi, um Hasenembleme zu sammeln. Der Menge der gesammelten Hasenemblemen entsprechend erhältst du reichhaltige Belohnungen."
+ACTIVITY_CHILDREN_SHOP_BUTTON01,Ballonmarkt
+ACTIVITY_CHILDREN_SHOP_HELP,"1. Auf dem Kindermarkt werden Sammlungen, die 4 Mädchen in der Kindheit gesammelt haben, angeboten. Die Lutscher können zum Tausch gegen die Sammlungen verwendet werden.|2. Under den Sammlungen jedes Mädchens wird zu Beginn die 1. Belohnung automatisch entsperrt. Willst du die nächsten Belohnungen entsperren, musst du zunächst die vorherigen Belohnungen eintauschen.|3. Sobald du alle Sammlungen der 4 Mädchen fertig eingetauscht hast, werden die ultimativen Belohnungen entsperrt und der Standardmarkt steht zur Verfügung.|4. Erhalten der Lutscher: Spuren der Kindheit, Ballonmarkt, Lotto Glücksboni, Süße Kindheit, Superpakete, Kostümpakete, Glückspakete und Raumstation-Versorgung.|5. Nach dem Ende des Events werden die noch nicht verwendeten Lutscher automatisch per Mail recycelt. Jeder Lutscher entspricht 100K Münzen."
+ACTIVITY_CHILDREN_SHOP_TEXT01,"Tausche alle Belohnungen fertig ein, um sie zu entsperren."
+ACTIVITY_CHILDREN_SHOP_TEXT02,Sammlung von {1}
+ACTIVITY_CHILDREN_SHOP_TEXT03,Carmen & Bonnie
+ACTIVITY_CHILDREN_SHOP_TEXT04,Fiona
+ACTIVITY_CHILDREN_SHOP_TEXT05,Pippi
+ACTIVITY_CHILDREN_SHOP_TEXT06,Vera
+ACTIVITY_CHILDREN_SHOP_BUTTON02,Zurück
+ACTIVITY_CHILDREN_SHOP_TIPS01,"Tausche alle Belohnungen fertig ein, um sie zu entsperren."
+ACTIVITY_CHILDREN_SHOP_TIPS02,Eingetauscht
+ACTIVITY_CHILDREN_SHOP_TIPS03,Eingetauschte Belohnungen können nicht wiederholt getauscht werden!
+ACTIVITY_CHILDREN_SHOP_TIPS04,Tausche zunächst die vorherige Belohnung ein
+ACTIVITY_CHILDREN_SHOP_TIPS05,Alle Belohnungen fertig eingetauscht! Der Standardmarkt ist jetzt verfügbar. Fortfahren?
+ACTIVITY_CHILDREN_SHOP_BUTTON03,Standard-\nmarkt
+ACTIVITY_CHILDREN_GAMBLE_BUTTON01,1 Mal
+ACTIVITY_CHILDREN_GAMBLE_BUTTON02,10 Mal
+ACTIVITY_CHILDREN_GAMBLE_HELP,"1. Verwende die Luftballons, um Belohnungen bei Krystal einzutauschen. Bei jedem Tausch erhältst du eine Grundbelohnung (Such dir eine der 3 gezogenen Grundbelohnungen aus) und wahrscheinlich noch eine Zusatzbelohnung, nämlich die Lutscher.|2. Erhalten der Luftballons: Tägliche Mail, Mit Dias kaufen (maximal 50 Luftballons kaufbar), Lottoevent.|3. Nach dem Ende des Events werden die noch nicht verwendeten Luftballons automatisch per Mail recycelt. Jeder Luftballon entspricht 50K Münzen."
+ACTIVITY_CHILDREN_GAMBLE_TEXT01,Zusatzbelohnung
+ACTIVITY_CHILDREN_GAMBLE_TEXT02,Grundbelohnungen
+ACTIVITY_CHILDREN_GAMBLE_TEXT03,Wähle eine Grundbelohnung aus
+GO_DRESS_SHOW_SHOP_TIPS,"Willst du zum Shop zum Schaufenster gehen, um Kampf-Buffs zu kaufen?"
+ACTIVITY_CHILDREN_TITLE,Süße\nKindheit
+ACTIVITY_SPFARM_TEXT01,開闢異界莊園，追尋足以守護學院的力量......
+ACTIVITY_SPFARM_TEXT02,莊園總等級
+ACTIVITY_SPFARM_TEXT03,進入莊園
+ACTIVITY_SPFARM_HELP1,主界面幫助
+ACTIVITY_SPFARM_HELP2,地圖界面幫助
+ACTIVITY_SPFARM_TEXT04,知名度：{1}
+ACTIVITY_SPFARM_TEXT05,外出掠奪
+ACTIVITY_SPFARM_TEXT06,知名度獎勵
+ACTIVITY_SPFARM_TEXT07,掠奪中
+ACTIVITY_SPFARM_TEXT08,背包容量
+NOT_EQUIPPED,Verfügbar
+CHOOSE_EQUIP,Wähle eine Ausrüstung aus
+ACTIVITY_CHILDREN_SHOP_BUTTON04,Ja

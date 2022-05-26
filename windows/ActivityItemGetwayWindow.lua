@@ -108,6 +108,10 @@ function ActivityItemGetwayWindow:GoWnd(index)
 				else
 					xyd.WindowManager.get():openWindow(windowName, params[i])
 				end
+
+				if xyd.WindowManager.get():getWindow("activity_childhood_shop_gacha_window") then
+					xyd.WindowManager.get():closeWindow("activity_childhood_shop_gacha_window")
+				end
 			end
 		elseif windowName == "item_buy_window" then
 			local maxNumCanBuy = 0

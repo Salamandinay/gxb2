@@ -527,14 +527,7 @@ function Backpack:getAvatars()
 
 		if type_ == xyd.ItemType.AVATAR or type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
 			local isInsetNewAvatars = true
-
-			if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
-				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(item.item_id)
-
-				if tianyiIndex == 3 then
-					isInsetNewAvatars = false
-				end
-			end
+			isInsetNewAvatars = self:checkAvatarExtra(item.item_id, ids)
 
 			if isInsetNewAvatars then
 				table.insert(ids, item.item_id)
@@ -634,20 +627,12 @@ function Backpack:checkAvatar(id)
 
 		if table.indexof(self.avatars_, itemID) == false and type_ ~= xyd.ItemType.KANBAN then
 			local isInsetNewAvatars = true
-
-			if ItemTable:getType(itemID) == xyd.ItemType.FAKE_PARTNER_SKIN then
-				local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(itemID)
-
-				if tianyiIndex == 3 then
-					isInsetNewAvatars = false
-				end
-			end
+			isInsetNewAvatars = self:checkAvatarExtra(itemID, self.avatars_)
 
 			if isInsetNewAvatars then
 				table.insert(self.newAvatars_, itemID)
+				table.insert(self.avatars_, itemID)
 			end
-
-			table.insert(self.avatars_, itemID)
 		end
 
 		if (type_ == xyd.ItemType.HERO or type_ == xyd.ItemType.SKIN or type_ == xyd.ItemType.KANBAN) and table.indexof(self.pictures_, itemID) == false then
@@ -1224,6 +1209,47 @@ function Backpack:editorPrintStr(event, tempStr, hasColor)
 	end
 
 	return tempStr
+end
+
+function Backpack:checkAvatarExtra(itemID, arr)
+	local type_ = ItemTable:getType(itemID)
+
+	if type_ == xyd.ItemType.FAKE_PARTNER_SKIN then
+		local tianyiIndex = xyd.models.slot:getCheckTianYiFakePartnerSkin(itemID)
+
+		if tianyiIndex == 3 then
+			return false
+		end
+	end
+
+	if type_ == xyd.ItemType.HERO then
+		local myAvtarID = xyd.models.selfPlayer:getAvatarID()
+		local anotherFourId = xyd.tables.partner4up5Table:getId4(itemID)
+
+		if anotherFourId and anotherFourId > 0 then
+			if table.indexof(arr, anotherFourId) == false then
+				if anotherFourId == myAvtarID then
+					return false
+				end
+			else
+				return false
+			end
+		end
+
+		local anotherFiveId = xyd.tables.partner4up5Table:getId5(itemID)
+
+		if anotherFiveId and anotherFiveId > 0 then
+			if table.indexof(arr, anotherFiveId) == false then
+				if anotherFiveId == myAvtarID then
+					return false
+				end
+			else
+				return false
+			end
+		end
+	end
+
+	return true
 end
 
 return Backpack

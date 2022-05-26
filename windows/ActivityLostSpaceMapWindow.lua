@@ -738,6 +738,68 @@ function ActivityLostSpaceMapWindow:getSkillIds(skillId)
 				end
 			end
 		end
+	elseif skillId == xyd.ActivityLostSpaceSkillId.FOUR then
+		if colNum == 0 then
+			colNum = 6
+		end
+
+		for i in pairs(self.gridArr) do
+			if self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.NO_OPEN or self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.KNOW_POS then
+				local checkId = self.gridArr[i]:getGridId()
+				local checkRowNum = math.ceil(checkId / 6)
+				local checkColNum = checkId % 6
+
+				if checkColNum == 0 then
+					checkColNum = 6
+				end
+
+				if (checkColNum == colNum or checkColNum - 1 == colNum or checkColNum + 1 == colNum) and (checkId == lastId - 7 or checkId == lastId - 6 or checkId == lastId - 5 or checkId == lastId - 1 or checkId == lastId + 1 or checkId == lastId + 5 or checkId == lastId + 6 or checkId == lastId + 7) then
+					table.insert(ids, checkId)
+				end
+			end
+		end
+	elseif skillId == xyd.ActivityLostSpaceSkillId.FIVE then
+		for i in pairs(self.gridArr) do
+			if self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.NO_OPEN or self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.KNOW_POS then
+				local checkId = self.gridArr[i]:getGridId()
+
+				table.insert(ids, checkId)
+
+				break
+			end
+		end
+	elseif skillId == xyd.ActivityLostSpaceSkillId.SIX then
+		local lv = self.activityData:getLevel(skillId)
+
+		for i in pairs(self.gridArr) do
+			if self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.NO_OPEN or self.activityData:getMapArr()[self.gridArr[i]:getGridId()] == xyd.ActivityLostSpaceGridState.KNOW_POS then
+				local checkId = self.gridArr[i]:getGridId()
+				local checkRowNum = math.ceil(checkId / 6)
+				local checkColNum = checkId % 6
+
+				if checkColNum == colNum then
+					if checkId == lastId - 6 or checkId == lastId + 6 then
+						table.insert(ids, checkId)
+					end
+
+					if lv >= 1 and checkId == lastId - 12 then
+						table.insert(ids, checkId)
+					end
+
+					if lv >= 2 and checkId == lastId + 12 then
+						table.insert(ids, checkId)
+					end
+
+					if lv >= 3 and checkId == lastId - 18 then
+						table.insert(ids, checkId)
+					end
+
+					if lv >= 4 and checkId == lastId + 18 then
+						table.insert(ids, checkId)
+					end
+				end
+			end
+		end
 	end
 
 	return ids

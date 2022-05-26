@@ -29,6 +29,7 @@ function ActivityLostSpaceGiftBag:getUIComponent()
 	self.buyBtn = self.mainGroup:NodeByName("buyBtn").gameObject
 	self.buyBtnLabel = self.buyBtn:ComponentByName("button_label", typeof(UILabel))
 	self.itemGroup = self.mainGroup:NodeByName("itemGroup").gameObject
+	self.itemGroup2 = self.mainGroup:NodeByName("itemGroup2").gameObject
 	self.expLabel = self.mainGroup:ComponentByName("expLabel", typeof(UILabel))
 	self.limitLabel = self.mainGroup:ComponentByName("limitLabel", typeof(UILabel))
 end
@@ -61,8 +62,14 @@ function ActivityLostSpaceGiftBag:setIcon()
 	for i = 1, #awards do
 		local scale = 0.7962962962962963
 
-		if countAward >= 1 then
+		if countAward ~= 1 then
 			scale = 0.6018518518518519
+		end
+
+		local itemRoot = self.itemGroup
+
+		if countAward >= 3 then
+			itemRoot = self.itemGroup2
 		end
 
 		local award = awards[i]
@@ -70,7 +77,7 @@ function ActivityLostSpaceGiftBag:setIcon()
 		if award[1] ~= xyd.ItemID.VIP_EXP then
 			xyd.getItemIcon({
 				show_has_num = true,
-				uiRoot = self.itemGroup,
+				uiRoot = itemRoot,
 				itemID = award[1],
 				num = award[2],
 				scale = scale

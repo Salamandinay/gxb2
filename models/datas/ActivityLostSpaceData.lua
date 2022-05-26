@@ -175,6 +175,16 @@ function ActivityLostSpaceData:onAward(data)
 			ids = activityLostSpaceMapWd:getSkillIds(self:getChooseSkill())
 		end
 
+		if self:getChooseSkill() == xyd.ActivityLostSpaceSkillId.FIVE then
+			ids = {}
+
+			for i, state in pairs(self:getMapArr()) do
+				if (state == xyd.ActivityLostSpaceGridState.NO_OPEN or state == xyd.ActivityLostSpaceGridState.KNOW_POS) and info.info.map[i] == xyd.ActivityLostSpaceGridState.CAN_GET then
+					table.insert(ids, i)
+				end
+			end
+		end
+
 		self.detail = info.info
 
 		if activityLostSpaceMapWd then

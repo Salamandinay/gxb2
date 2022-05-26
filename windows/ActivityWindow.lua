@@ -326,6 +326,8 @@ function ActivityWindow:setPushActivityDisplay()
 		local id = activityList[i]
 		local activityData = xyd.models.activity:getActivity(id)
 
+		print("id    ====", id, "isShow   ", activityData:isShow())
+
 		if ActivityWindow.ContentClass[id] and activityData:isShow() and not self:hasSubTitles(activityData) then
 			local title = ActivityTitleItem.new(self.titleGroup, {
 				type = 1,
@@ -388,7 +390,7 @@ function ActivityWindow:setNormalDisplay()
 	for i = 1, #sortedIDs do
 		local id = sortedIDs[i]
 
-		if id == 273 then
+		if id == 298 then
 			dump("111111111111")
 		end
 
@@ -1657,6 +1659,12 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = function ()
 		return require("app.windows.activity.StarAltarGiftBag")
+	end,
+	[xyd.ActivityID.ACTIVITY_CHILDHOOD_SHOP] = function ()
+		return require("app.windows.activity.ActivityChildhoodShop")
+	end,
+	[xyd.ActivityID.ACTIVITY_CHILDREN_TASK] = function ()
+		return require("app.windows.activity.ActivityChildrenTask")
 	end
 }
 

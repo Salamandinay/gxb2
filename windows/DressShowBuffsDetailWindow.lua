@@ -157,9 +157,41 @@ function DressShowBuffItem:getUIComponent()
 	self.labelLeftTips = self.go:ComponentByName("labelLeftTips", typeof(UILabel))
 	self.icon = self.go:ComponentByName("icon", typeof(UISprite))
 	self.labelNoAwakeTime = self.go:ComponentByName("labelNoAwakeTime", typeof(UILabel))
+	self.bg = self.go:ComponentByName("bg", typeof(UISprite))
 end
 
 function DressShowBuffItem:register()
+	UIEventListener.Get(self.bg.gameObject).onClick = function ()
+		if not xyd.checkFunctionOpen(xyd.FunctionID.DRESS_SHOW) then
+			return
+		end
+
+		xyd.WindowManager.get():openWindow("gamble_tips_window", {
+			hideGroupChoose = true,
+			type = "go_dress_shop",
+			callback = function ()
+				xyd.WindowManager.get():closeAllWindows({
+					main_window = true,
+					loading_window = true
+				})
+				xyd.WindowManager.get():openWindow("school_choose_window", nil, function ()
+					xyd.WindowManager.get():openWindow("dress_show_entrance_window", nil, function ()
+						xyd.db.misc:setValue({
+							key = "dress_show_shop_time",
+							value = xyd.getServerTime()
+						})
+						xyd.models.dressShow:updateRedMark()
+						xyd.openWindow("dress_show_shop_window")
+					end)
+				end)
+			end,
+			closeCallback = function ()
+			end,
+			text = __("GO_DRESS_SHOW_SHOP_TIPS"),
+			btnNoText_ = __("NO"),
+			btnYesText_ = __("YES")
+		})
+	end
 end
 
 function DressShowBuffItem:setInfo(params)

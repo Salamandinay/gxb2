@@ -45,6 +45,8 @@ function TrialWindow:getUIComponent()
 	self.btnAward = self.groupBtn:NodeByName("btnAward").gameObject
 	self.bgEffect_ = self.window_:NodeByName("bgEffect").gameObject
 	self.effectChris1_ = xyd.WindowManager.get():setChristmasEffect(self.bgEffect_, true)
+	self.battlePassBtn = self.window_:NodeByName("battlePassBtn").gameObject
+	self.battlePassBtnLabel = self.battlePassBtn:ComponentByName("battlePassLabel", typeof(UILabel))
 
 	if xyd.models.trial:getBossId() == 2 then
 		self.imgBgTexture.transform:Y(0)
@@ -126,6 +128,19 @@ function TrialWindow:register()
 		end
 	end
 
+	UIEventListener.Get(self.battlePassBtn).onClick = function ()
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS)
+
+		if activityData then
+			xyd.openWindow("activity_window", {
+				activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS),
+				activity_type2 = xyd.tables.activityTable:getType2(xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS),
+				select = xyd.ActivityID.ACTIVITY_NEWTRIAL_BATTLE_PASS,
+				self:close()
+			})
+		end
+	end
+
 	self.eventProxy_:addEventListener(xyd.event.TRIAL_START, handler(self, self.updatePoint))
 	self.eventProxy_:addEventListener(xyd.event.GET_TRIAL_INFO, handler(self, self.updatePoint))
 	self.eventProxy_:addEventListener(xyd.event.NEW_TRIAL_FIGHT, handler(self, self.onFinishSpring))
@@ -197,6 +212,7 @@ function TrialWindow:setLayout()
 	self:setClockEffect()
 
 	local data = xyd.models.trial:getData()
+	self.battlePassBtnLabel.text = __("NEW_TRIAL_MAIN_WINDOW_TEXT02")
 	self.labelDisplay.text = __("TRIAL_TEXT03")
 
 	self.labelTime:setInfo({

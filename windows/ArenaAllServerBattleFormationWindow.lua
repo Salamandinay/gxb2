@@ -87,6 +87,13 @@ function ArenaAllServerBattleFormationWindow:ctor(name, params)
 	self.SlotModel = xyd.models.slot
 	self.isShowGuide_ = false
 	self.ifMove = false
+	self.teamIndex = {
+		1,
+		2,
+		3,
+		4,
+		5
+	}
 	self.copyIconList_ = {}
 	self.localPartnerList = {}
 	self.nowPartnerList = {}
@@ -313,6 +320,16 @@ function ArenaAllServerBattleFormationWindow:updateLockImg()
 	local subsitLevel = self.params_.enemy_level or self.allServer_level
 	local subsitNum = xyd.tables.arenaAllServerRankTable:getSubsitNum(subsitLevel)
 
+	for i = subsitNum + 2, 5 do
+		self["teamBtn" .. i]:SetActive(false)
+	end
+
+	if subsitNum > 0 then
+		for i = 1, subsitNum + 1 do
+			self["teamBtn" .. i]:SetActive(true)
+		end
+	end
+
 	for i = (subsitNum + 1) * 6 + 1, 30 do
 		self["container_lock_" .. tostring(i)]:SetActive(true)
 
@@ -371,7 +388,23 @@ function ArenaAllServerBattleFormationWindow:getUIComponents()
 			self["container_lock_" .. tostring(j + (i - 1) * 6)] = top:NodeByName("container_" .. tostring(j) .. "/lockImg").gameObject
 		end
 
+		for j = 1, 2 do
+			self["maskImg" .. tostring(j + (i - 1) * 6)] = top:NodeByName("container_" .. tostring(j) .. "/maskImg").gameObject
+
+			self["maskImg" .. tostring(j + (i - 1) * 6)]:SetActive(false)
+		end
+
+		for j = 3, 6 do
+			self["maskImg" .. tostring(j + (i - 1) * 6)] = bottom:NodeByName("container_" .. tostring(j) .. "/maskImg").gameObject
+
+			self["maskImg" .. tostring(j + (i - 1) * 6)]:SetActive(false)
+		end
+
+		self["teamBtn" .. i] = tmp:NodeByName("teamBtn").gameObject
+		self["teamBtnIcon" .. i] = self["teamBtn" .. i]:ComponentByName("icon", typeof(UISprite))
 		self.btnCurState[i] = "unchosen"
+
+		xyd.setUISpriteAsync(self["teamBtnIcon" .. i]:GetComponent(typeof(UISprite)), nil, "arena_3v3_exchange_team")
 	end
 
 	self.setBtn = self.teamGroup:NodeByName("setBtn").gameObject
@@ -405,6 +438,12 @@ function ArenaAllServerBattleFormationWindow:registerEvent()
 	UIEventListener.Get(self.tipBtn).onClick = handler(self, function ()
 		xyd.WindowManager.get():openWindow("battle_tips_window", {})
 	end)
+
+	for i = 1, 5 do
+		UIEventListener.Get(self["teamBtn" .. i]).onClick = function ()
+			self:onClickTeamBtn(i)
+		end
+	end
 end
 
 function ArenaAllServerBattleFormationWindow:onclickBoard()
@@ -412,6 +451,14 @@ function ArenaAllServerBattleFormationWindow:onclickBoard()
 
 	action:Insert(0, self.teamGroup.transform:DOLocalMove(Vector3(0, 0, 0), 0.2))
 	action:Insert(0, self.chooseGroup.transform:DOLocalMove(Vector3(0, -self.curHeight / 2, 0), 0.2))
+
+	for i = 1, 5 do
+		if self.btnCurState[i] == "chosen" then
+			self:onClickTeamBtn(i)
+		end
+
+		xyd.setTouchEnable(self["teamBtn" .. i], true)
+	end
 end
 
 function ArenaAllServerBattleFormationWindow:onclickSet()
@@ -424,19 +471,19 @@ end
 function ArenaAllServerBattleFormationWindow:onClickBattleBtn()
 	local partnerParams = {}
 	local formationIds = {}
-	local indexMap = {
-		0,
-		1,
-		2,
-		3,
-		4,
-		5
-	}
+	local indexMap = {}
+
+	for i = 0, #self.teamIndex - 1 do
+		indexMap[self.teamIndex[i + 1]] = i
+	end
+
 	local canFight = false
 	local subsitLevel = self.params_.enemy_level or self.allServer_level
 	local subsitNum = xyd.tables.arenaAllServerRankTable:getSubsitNum(subsitLevel)
 
 	for posId, _ in pairs(self.copyIconList_) do
+		local index = math.floor(tonumber(posId - 1) / 6) + 1
+		local id = indexMap[index] * 6 + tonumber(posId - 1) % 6 + 1
 		local partnerIcon = self.copyIconList_[posId]
 
 		if partnerIcon then
@@ -445,10 +492,10 @@ function ArenaAllServerBattleFormationWindow:onClickBattleBtn()
 				partner_id = tonumber(partnerInfo.partnerID),
 				pos = tonumber(partnerInfo.posId - 1) % 6 + 1
 			}
-			partnerParams[posId] = pInfo
-			formationIds[tostring(posId)] = partnerInfo.partnerID
+			partnerParams[id] = pInfo
+			formationIds[tostring(id)] = partnerInfo.partnerID
 		else
-			formationIds[tostring(posId)] = nil
+			formationIds[tostring(id)] = nil
 		end
 	end
 
@@ -1113,8 +1160,6 @@ function ArenaAllServerBattleFormationWindow:showPartnerDetail(partnerInfo)
 		local partnerIcon = self.copyIconList_[posId]
 
 		if partnerIcon then
-			print(posId)
-
 			local partnerInfo = partnerIcon:getPartnerInfo()
 			local pInfo = {
 				partner_id = tonumber(partnerInfo.partnerID),
@@ -1430,6 +1475,139 @@ function ArenaAllServerBattleFormationWindow:getPet()
 	end
 
 	return petId
+end
+
+function ArenaAllServerBattleFormationWindow:onClickTeamBtn(index)
+	local choseFlag = self.btnCurState[index] == "chosen"
+	local switchFlag = self.btnCurState[index] == "switch"
+	local subsitLevel = self.params_.enemy_level or self.allServer_level
+	local subsitNum = xyd.tables.arenaAllServerRankTable:getSubsitNum(subsitLevel)
+
+	if not switchFlag then
+		for i = 1, subsitNum + 1 do
+			if self.teamIndex[i] == index then
+				local state = "chosen"
+				local src = "arena_3v3_cancle"
+
+				if choseFlag then
+					state = "unchosen"
+					src = "arena_3v3_exchange_team"
+
+					self:removeMask()
+				else
+					self:setMask(index)
+				end
+
+				self.btnCurState[index] = state
+
+				xyd.setUISpriteAsync(self["teamBtnIcon" .. index]:GetComponent(typeof(UISprite)), nil, src)
+				xyd.setUISpriteAsync(self["teamBtn" .. index]:GetComponent(typeof(UISprite)), nil, "white_btn_65_65")
+			else
+				local state = "switch"
+				local src = "arena_3v3_move_team"
+				local btnSrc = "blue_btn_65_65"
+
+				if choseFlag then
+					state = "unchosen"
+					src = "arena_3v3_exchange_team"
+					btnSrc = "white_btn_65_65"
+				end
+
+				self.btnCurState[self.teamIndex[i]] = state
+
+				xyd.setUISpriteAsync(self["teamBtnIcon" .. self.teamIndex[i]]:GetComponent(typeof(UISprite)), nil, src)
+				xyd.setUISpriteAsync(self["teamBtn" .. self.teamIndex[i]]:GetComponent(typeof(UISprite)), nil, btnSrc)
+			end
+		end
+	else
+		local chosenIndex = 0
+
+		for i = 1, 5 do
+			if self.btnCurState[i] == "chosen" then
+				chosenIndex = i
+
+				break
+			end
+		end
+
+		if chosenIndex == 0 then
+			for i = 1, 5 do
+				self.btnCurState[i] = "unchosen"
+
+				xyd.setUISpriteAsync(self["teamBtnIcon" .. i]:GetComponent(typeof(UISprite)), nil, "arena_3v3_exchange_team")
+				xyd.setUISpriteAsync(self["teamBtn" .. i]:GetComponent(typeof(UISprite)), nil, "white_btn_65_65")
+			end
+
+			return
+		end
+
+		self:switchTeam(index, chosenIndex)
+
+		for i = 1, 5 do
+			self.btnCurState[i] = "unchosen"
+
+			xyd.setUISpriteAsync(self["teamBtnIcon" .. i]:GetComponent(typeof(UISprite)), nil, "arena_3v3_exchange_team")
+			xyd.setUISpriteAsync(self["teamBtn" .. i]:GetComponent(typeof(UISprite)), nil, "white_btn_65_65")
+		end
+
+		self:removeMask()
+	end
+end
+
+function ArenaAllServerBattleFormationWindow:setMask(index)
+	for i = 1, 30 do
+		if i > (index - 1) * 6 and i <= index * 6 then
+			self["maskImg" .. i]:SetActive(false)
+		else
+			self["maskImg" .. i]:SetActive(true)
+		end
+	end
+
+	xyd.setTouchEnable(self.setBtn, false)
+	xyd.setTouchEnable(self.battleBtn, false)
+	xyd.setTouchEnable(self.btnSkip, false)
+
+	self.isMaskOn = true
+end
+
+function ArenaAllServerBattleFormationWindow:removeMask()
+	for i = 1, 30 do
+		self["maskImg" .. i]:SetActive(false)
+	end
+
+	xyd.setTouchEnable(self.setBtn, true)
+	xyd.setTouchEnable(self.battleBtn, true)
+	xyd.setTouchEnable(self.btnSkip, true)
+
+	self.isMaskOn = false
+end
+
+function ArenaAllServerBattleFormationWindow:switchTeam(index1, index2)
+	local teamGroup1 = self["selectedFormationGroup_" .. index1]
+	local teamGroup2 = self["selectedFormationGroup_" .. index2]
+	local pos1 = teamGroup1.transform.localPosition
+	teamGroup1.transform.localPosition = teamGroup2.transform.localPosition
+	teamGroup2.transform.localPosition = pos1
+	local arrID1 = -1
+	local arrID2 = -1
+
+	for i = 1, #self.teamIndex do
+		if self.teamIndex[i] == index1 then
+			arrID1 = i
+		end
+
+		if self.teamIndex[i] == index2 then
+			arrID2 = i
+		end
+	end
+
+	if arrID1 >= 0 and arrID2 >= 0 then
+		self.teamIndex[arrID1] = index2
+		self.teamIndex[arrID2] = index1
+		local petID = self.pets[arrID1 + 1]
+		self.pets[arrID1 + 1] = self.pets[arrID2 + 1]
+		self.pets[arrID2 + 1] = petID
+	end
 end
 
 return ArenaAllServerBattleFormationWindow
