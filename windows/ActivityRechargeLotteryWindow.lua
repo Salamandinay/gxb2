@@ -23,13 +23,12 @@ function ActivityRechargeLotteryWindow:ctor(name, params)
 		msg.touch_id = xyd.DaDian.RECHARGE_LOTTERY
 
 		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
-	else
-		xyd.db.misc:setValue({
-			key = "activity_recharge_lottery_view_time",
-			value = xyd.getServerTime()
-		})
 	end
 
+	xyd.db.misc:setValue({
+		key = "activity_recharge_lottery_view_time",
+		value = xyd.getServerTime()
+	})
 	self.activityData:updateRedMark()
 
 	self.isFirst = true

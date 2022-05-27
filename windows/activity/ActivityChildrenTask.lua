@@ -132,7 +132,7 @@ function ActivityChildrenTask:getUIComponent()
 end
 
 function ActivityChildrenTask:updateTime()
-	local countdownTime = xyd.getServerTime() - self.activityData:startTime() + 7 * xyd.DAY_TIME
+	local countdownTime = self.activityData:getUpdateTime() - xyd.getServerTime()
 
 	if not self.time_ then
 		self.time_ = CountDown.new(self.timeLabel_, {
