@@ -132,7 +132,7 @@ function ActivityEntranceTestWindow:playOpenAnimation(callback)
 		end)
 	end))
 	self.bg:Y(-77 + 90 * self.scale_num_contrary)
-	self.leftBg:Y(-106 + -100 * self.scale_num_contrary)
+	self.leftBg:Y(-106 + 298 * self.scale_num_contrary)
 	self.rightBg:Y(-212 + -54.5 * self.scale_num_contrary)
 	self.groupDown:Y(-398 + -83 * self.scale_num_contrary)
 

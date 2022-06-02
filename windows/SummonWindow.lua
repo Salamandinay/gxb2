@@ -1396,6 +1396,12 @@ function SummonWindow:playWishHeroEffect()
 	local name = xyd.tables.modelTable:getModelName(modelID)
 	local scale = xyd.tables.modelTable:getScale(modelID)
 
+	if modelID == 5501101 then
+		self.wishHeroEffectCon:X(60)
+	else
+		self.wishHeroEffectCon:X(0)
+	end
+
 	if self.wishHeroeffect then
 		self.wishHeroeffect:destroy()
 	end

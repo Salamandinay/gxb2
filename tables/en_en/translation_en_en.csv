@@ -3301,7 +3301,7 @@ LOCK_COUNT_DOWN,Will be locked in:
 ARENA_ALL_SERVER_QUIZ_CHANGE,Change Bet
 ARENA_ALL_SERVER_QUIZ_SUCCESS,Bet changed successfully!
 ARENA_ALL_SERVER_GROUP_LIMIT,You can only have 2 identical Girls in 1 team!
-ENTRANCE_TEST_HELP_DES_1_1,"Senpai, welcome to the Entrance Exam Exam.\nYou're able to test the girls who are going to enter Yume Academy in advance here."
+ENTRANCE_TEST_HELP_DES_1_1,"Senpai, welcome to the Entrance Exam.\nYou're able to test the girls who are going to enter Yume Academy in advance here."
 ENTRANCE_TEST_HELP_DES_1_2,Please tap [c][cc0011]Setup[-][/c] button to set up the girls.
 ENTRANCE_TEST_HELP_DES_1_3,Tap one of the girls to check her details and start to equip her with suitable gear.
 ENTRANCE_TEST_HELP_DES_1_4,Tap the empty Crystal slot to select a suitable [c][cc0011]Crystal[-][/c] for your girl.
@@ -4880,7 +4880,8 @@ WARMUP_ARENA_RANK_INFO_3,"
 - Elite Skills of Girls increased to Elite Level 5
 Some of the Antiques available will be upgraded to Pink 3-star (corresponding Pink Antiques will need to be unlocked first in Bag-Antiques-Collection).
 - Servant Ulticore unlocked (Servant\'s Ulticore Level in the event shares the same Ulticore Level of your Servants)
-- Aura of Servants shares the same Aura Level as your Servants. The Servant Aura of Servants in the event will not be lower than Lv. 30."
+- Aura of Servants shares the same Aura Level as your Servants. The Servant Aura of Servants in the event will not be lower than Lv. 30.
+Astral Core unlocked, the Astral Core Nodes of all Girls increased to max level."
 WARMUP_ARENA_RANK_INFO_4,·You have reached the highest Division\n·You will receive a Special Limited Frame as reward after the rankings are calculated.
 ENTRANCE_TEST_LEVEL_UP_DESC_1,Adjust Lineup
 SELECT,Select
@@ -4907,7 +4908,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
 WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: |After reaching Division {1}:|{2}|After reaching Division {3}:|{4}|After reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
-WARMUP_ARENA_TASK_INFO_2,K.M. Enlightened · Lessons Learnt
+WARMUP_ARENA_TASK_INFO_2,Eve · Mysterious Howls
 WARMUP_ARENA_TASK_INFO_3,Mission Rewards
 WARMUP_ARENA_TASK_INFO_4,Extra Rewards
 WARMUP_ARENA_TASK_INFO_5,Unlock after completing star-marked missions
@@ -5109,7 +5110,7 @@ ARENA_TEAM_RANK_DESC_NEW,Current Rank： {1} Maintain this rank until the end of
 ACTIVITY_MONTHLY_TEXT008,Remaining Point(s):
 ACTIVITY_MONTHLY_TEXT009,{1} Gems required. Continue?
 ALTAR_INFO_4,Preview
-ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. After each fight in Entrance Exam, your points will be increased or deducted according to the current points of you and your opponent. The more points the defeated opponent has than you, the more points you will receive after a victory.|2. If you challenge an opponent and lose the fight, no points will be deducted.|3. If you are challenged by a player, the points given for a win or the points deducted for a defeat will be halved."
+ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. After each fight in Entrance Exam, your points will be increased or deducted according to the current points of you and your opponent. The more points the defeated opponent has than you, the more points you will receive after a victory.|2. If you challenge an opponent and lose the fight, no points will be deducted.|3. If you are challenged by a player, the points given for a win or the points deducted for a defeat will be halved.|4. If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Healing received each round until the battle is over.|5. If the battle exceeds 25 rounds, Girls remaining will not be affected by any buff (Marks and Skill Effects included)"
 NEW_ARENA_ALL_SERVER_HELP,"
 Ultimate League is a league for all players in the game to compete together.
 Each Season of Ultimate League lasts for 28 days and is divided into 5 phases: Preparation Phase, Points Race, Single Elimination, Finals, and Exhibition Period.|1. Preparation Phase|The first day of each season is the Preparation Phase: players can set up their defense lineup during this period, but they cannot engage in battles.|2. Points Race|(1) During the 2nd – 20th day of each season, players will be able to compete in Points Race.
@@ -5805,7 +5806,7 @@ CHIME_HELP,"
 1. On the branches of this enormous tree hang countless Chimes, artifacts that provide boosts to Girls.|2. Collect the required amount of Chime Shards to activate a Chime, and use Fantasy Dust and Fantasy Talisman to upgrade it.
 You can increase the base attributes of a Chime by charging the Chimelight in it. Chimelight can be charged to 100%% maximum.
 Additional effects of the Chimes will be available to be Enchanted after Chimelight reaches certain requirements.
-After the Chimelight of a Chime reaches 100%% and all its effects are Enchanted, it will be able to be Ascended.|3. The shards of Chimes and the resources to upgrade your Chimes can be obtained from Message Board and Pond of Prayers in Tsuruga Grand Shrine."
+After the Chimelight of a Chime reaches 100%% and all its effects are Enchanted, it will be able to be Ascended.|3. The shards of Chimes and the resources to upgrade your Chimes can be obtained from Message Board and Pond of Prayers in Tsuruga Grand Shrine.|4. The spare shards of Chimes (after you have enough shards to fully upgrade a Chime, the surplus shards will be considered as spare shards) can be transferred into Chime Chips, which can be used to exchange rewards in Pond of Prayers."
 CHIME_ATLAS,Gallery
 CHIME_BAG,Shards
 CHIME_TAB1,Status
@@ -6304,7 +6305,7 @@ PARTNER_GROUP_7_SKIN_TEXT2,{2}-star skin of {1}
 POTENTIALITY_UNLOCK_GROUP_7_TIPS,You have a Girl with the same name and at a higher star rank (but haven't reached the highest star rank). Girls from House Cosmos cannot be Exchanged or Reversed. Confirm to continue?
 GROUP_7_BUFF_TIP,{1} deployed
 NO_SKINS_TIPS,No skins
-STARRY_ALTAR,Stella Altar
+STARRY_ALTAR,Stellar Altar
 GAME_ASSISTANT_TEXT109,"The merchandise available in Market has changed, do you want to adjust your setting now?"
 SKIN_TEXT27,13-Star
 SKIN_TEXT28,15-Star
@@ -6348,3 +6349,44 @@ ACTIVITY_SPFARM_TEXT08,Capacity
 NOT_EQUIPPED,Not Active
 CHOOSE_EQUIP,Select the Gear to equip:
 ACTIVITY_CHILDREN_SHOP_BUTTON04,Go
+SHRINE_POOL_TEXT04,Shards
+ACTIVITY_SPFARM_TEXT09,Plant
+ACTIVITY_SPFARM_TEXT10,Switch
+ACTIVITY_SPFARM_TEXT11,Common
+ACTIVITY_SPFARM_TEXT12,Advanced
+ACTIVITY_SPFARM_TEXT13,Special
+ACTIVITY_SPFARM_TEXT14,Construction Limit has been reached
+ACTIVITY_SPFARM_TEXT15,The level capacity of this construction is lower than the one you're going to replace
+ACTIVITY_SPFARM_TEXT16,Provides [c][10F520]{1}[-][/c] [c][10F510]{2}s[-][/c] at 0:00 (UTC/GMT 0) each day
+ACTIVITY_SPFARM_TEXT17,Reduce the loss by [c][10F520]{1}[-][/c] for the 4 neighboring blocks when being invaded.
+ENTRANCE_TEST_STAR_ORIGIN_LOCK,Unlocked after reaching Division S
+OLD_SCHOOL_TIPS01,Confirm to select all Exploration plans?
+ACTIVITY_SPFARM_TEXT18,Confirm to consume {1} {2}s to complete the construction?
+ACTIVITY_SPFARM_TEXT19,Confirm to consume {1} {2}s to replace the construction?
+ACTIVITY_DRAGONBOAT2022_BUTTON01,Eat
+ACTIVITY_DRAGONBOAT2022_BUTTON02,Mugwort\nPrayers
+ACTIVITY_DRAGONBOAT2022_HELP,"1. The Chinese Dragon Boat Festival is coming. It's a good chance to try out the Mugwort Cakes with Scythe! Your Satisfaction will increase by 1 point after every 2 Mugwort Cakes eaten, a random basic reward will also be issued at the same time. In addition, you have a chance to get a Mugwort Customized Chest as a surprise reward for every 2 Mugwort Cakes consumed.|2. You can set up your progress reward in advance in Mugwort Prayers before you start consuming Mugwort Cakes in the event. You will be able to obtain the rewards you set after your Satisfaction reaches a certain amount.|3. You will also be able to obtain Satisfaction progress rewards for increasing your Satisfaction to a certain amount.|4. Mugwort Cakes can be obtained from Daily Mail, each Rudder or Advanced Rudder used (in Luvly's Journey), by completing Exclusive Task, or by purchasing Value Pack, Luvly's Elite Supply, Special Gift Pack, or the Special Skin Pack.|5. After this event ends, any remaining Mugwort Cakes will automatically be exchanged into 50K Coins each. The Coins will be sent via Mail."
+ACTIVITY_DRAGONBOAT2022_TEXT01,Progress
+ACTIVITY_DRAGONBOAT2022_TEXT02,Surprise Reward
+ACTIVITY_DRAGONBOAT2022_TEXT03,Basic Reward
+ACTIVITY_DRAGONBOAT2022_TEXT04,"Set your Prayer Rewards in advance, you will be able to obtain the rewards after your Satisfaction reaches the requirement!"
+ACTIVITY_DRAGONBOAT2022_TEXT05,Please select your Prayer Reward
+ACTIVITY_DRAGONBOAT2022_TEXT06,Obtainable after Satisfaction reaches {1} points
+ACTIVITY_DRAGONBOAT2022_TEXT07,How many points of Satisfaction do you want to increase?
+ACTIVITY_DRAGONBOAT2022_TIPS01,Please select your Prayer Reward first
+PARTNER_CHALLENGE_CHESS_TEXT11,Get an Elite Girl by spending your Chess Tickets
+PARTNER_CHALLENGE_CHESS_TEXT12,Will be refreshed automatically after you obtain one of the Elite Girls
+ACTIVITY_DRAGONBOAT2022_TEXT08,No reward is obtained yet
+ACTIVITY_SPFARM_TEXT20,Details
+ACTIVITY_SPFARM_TEXT21,Daily Production
+ACTIVITY_SPFARM_TEXT22,Loss Reduction
+ACTIVITY_SPFARM_TEXT23,Defender
+ACTIVITY_SPFARM_TEXT24,Introduction
+ACTIVITY_SPFARM_TEXT25,Lv. Max
+ACTIVITY_SPFARM_TEXT26,The level of the construction has reached the limit. You can extend the level limit by carrying out corresponding order!
+ACTIVITY_SPFARM_TEXT27,Switch
+ACTIVITY_SPFARM_TEXT28,Move
+CHIME_TEXT17,Transfer
+ACTIVITY_SPFARM_TEXT29,Unable to switch the construction
+ACTIVITY_SPFARM_TEXT30,Don't remind again (during this event)!
+CHIME_TEXT18,Only Spare Shards can be used for the transfer

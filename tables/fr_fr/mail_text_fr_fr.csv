@@ -22,7 +22,7 @@ id,name,from,content
 21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Orbe Élémentaire *100, Parchemin de Jobs Avancé *1 et Pièce Mystère *2, voici vos récompenses, veuillez les récupérer~"
 22,Récompense de Jobs,Courrier du Système,"Félicitations ! Vous avez fini un Job {1} étoiles durant l'événement, voici vos récompenses."
 23,Avis de Recharge,Courrier du Système,"Merci d'avoir acheté {1}, vos récompenses ont été envoyés dans votre sac."
-24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail *4, Gemme *150, Bouteille Usée *5 et Pièce de Fortune *2.\nVoici vos récompenses, veuillez les récupérer !"
+24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail *4, Gemme *150 et Gâteau à l'Armoise *2, voici vos récompenses, veuillez les récupérer~"
 25,Bataille dans l'Arène,Courrier du Système,Félicitations ! Vous avez atteint un objectif durant l'événement. Voici vos récompenses.
 26,Abonnement,Pass de Pièces Hebdomadaire,Félicitations ! Vous avez désormais un Pass de Pièces Hebdomadaire. Votre butin de Pièces augmentera de 100% pour les prochaines 168 heures. Ce bonus peut-être combiné avec celui des bénéfices VIP
 27,L'abonnement se termine,Pass de Pièces Hebdomadaire,Votre Pass de Pièces Hebdomadaire se termine aujourd'hui. Veuillez renouveler votre abonnement pour continuer à profiter des bénéfices. Les Pièces du butin sont augmentés de 100% lorsque l'abonnement est actif !
@@ -154,7 +154,7 @@ Veuillez récupérer vos récompenses, Senpai~"
 149,Récompense de Débutant (1),Courrier du Système,"Senpai ! Félicitations ! Vous avez terminé les Tâches de 7 jours, voici les récompenses non collectées, n'oubliez pas de les récupérer !"
 150,Récompense de Débutant (2),Courrier du Système,"Félicitations Senpai ! Vous avez obtenu {1} point(s) dans l'événement de Tâches de 7 jours, voici vos récompenses non collectées, n'oubliez pas de les récupérer !"
 151,Récompense du Périple de Lavli,Courrier d'Événement,"Félicitations ! Vous avez collecté {1} Corails dans Le Périple de Lavli. Voici vos récompenses, veuillez les récupérer~"
-152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail *4, Gemme *150, Bouteille Usée *5 et Pièce de Fortune *2.\nVoici vos récompenses, veuillez les récupérer~"
+152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail *4, Gemme *150 et Gâteau à l'Armoise *2, voici vos récompenses, veuillez les récupérer~"
 153,Récupération d'objet d'événement,Courrier du Système,"
 Bonjour Senpai,
 L\'événement - {1} est à présent terminé.
@@ -278,7 +278,7 @@ Bonjour Senpai,
 Dans le but d\'améliorer votre expérience en jeu, la fonctionnalité - Entraînement du Serviteur a été améliorée.
 Tous les entraînements en cours ont été terminés d\'avance.
 Voici les récompenses, veuillez les récupérer~"
-233,Pass du Sancutaire,Courrier du Système,"Chers Senpai,\nEn raison de la réinitialisation de l'événement mensuel, vous ne pouvez pas améliorer le niveau du Pass du Sanctuaire au maximum pendant la durée restante de l'événement après son achat.\nVoici vos récompenses dues, veuillez les récupérer~"
+233,Pass du Sancutaire,Courrier du Système,"Cher Senpai,\nEn raison de la réinitialisation de l'événement mensuel, vous ne pouvez pas améliorer le niveau du Pass du Sanctuaire au maximum pendant la durée restante de l'événement après son achat.\nVoici vos récompenses dues, veuillez les récupérer~"
 234,Rappel de la fin de Cité aux Trésors,Courrier du Système,"Cher Senpai,\nl'événement - Cité aux Trésors va prendre fin dans 24 heures ! Alllez vite pour trouver des trésors !"
 235,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour recevoir Ticket Avancé du Distributeur *1, Détecteur Spatial *15 et Ballon de Baudruche *1.\nVoici vos récompenses, veuillez les récupérer~"
 236,Rappel de la fin de Reconstitution du Livre,Courrier du Système,"
@@ -288,10 +288,8 @@ Les Autocollants que vous avez obtenus durant la saison actuelle disparaîtront 
 Allez vite les échanger avant qu\'ils ne soient perdus !"
 240,Cérémonie de Rentrée,Courrier du Système,"
 Cher Senpai,
-
-L\'événement - Cérémonie de Rentrée est à présent terminé. Voici vos récompenses dues en fonction du nombre de Jeton de Capsule Cosmisque que vous avez utilisé dans l\'Autel Stellaire.
-
+L\'événement - Cérémonie de Rentrée est à présent terminé.
+Voici vos récompenses dues en fonction du nombre de Jeton de Capsule Cosmisque que vous avez utilisé dans l\'Autel Stellaire.
 Nous vous remercions pour votre soutien sur le GXB2.
-Si vous avez des questions n\'hésitez pas à contacter Yuki.
-
-L\'équipe GXB2"
+Si vous avez des questions n\'hésitez pas à contacter Yuki."
+239,Senteur d'Armoise,Courrier du Système,"Bonjour Senpai,\nVotre Avancée de l'événement - Senteur d'Armoise a atteint {1}, voici vos récompenses, veuillez les récupérer~"

@@ -1643,7 +1643,7 @@ id,name,skill_name,ex_skill_desc
 754017012,諾麗絲,寒冰煉獄,Erhöht den Angriffsschaden auf {1} des AW.
 754017013,諾麗絲,寒冰煉獄,"Erhöht den Angriffsschaden auf {1} des AW, die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, auf {2} und die Schadenssteigerung zwischen jedem Aufprall auf {3} des AW."
 754017014,諾麗絲,寒冰煉獄,"Erhöht den Angriffsschaden auf {1} des AW, die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, auf {2} und die Schadenssteigerung zwischen jedem Aufprall auf {3} des AW."
-754017015,諾麗絲,寒冰煉獄,"Erhöht den Angriffsschaden auf {1} des AW, die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, auf {2} und die Schadenssteigerung zwischen jedem Aufprall auf {3} des AW."
+754017015,諾麗絲,寒冰煉獄,"Erhöht den Angriffsschaden auf {1} des AW, die Wahrscheinlichkeit, dass der Gegner [c][e28002]kristallisiert[-][/c] wird, auf {2}. Erhöht die max. Anzahl des Aufprall-Angriffs auf {3} und die Schadenssteigerung zwischen jedem Aufprall auf {4} des AW."
 754017021,諾麗絲,榮光之冠,Erhöht den Speed um {1}.
 754017022,諾麗絲,榮光之冠,Erhöht den Speed um {1}.
 754017023,諾麗絲,榮光之冠,Erhöht den Speed um {1} und die HP um {2}.
@@ -1654,10 +1654,10 @@ id,name,skill_name,ex_skill_desc
 754017033,諾麗絲,雪魄冰種,Erhöht den Angriffsschaden auf {1} des AW.
 754017034,諾麗絲,雪魄冰種,Erhöht den Angriffsschaden auf {1} des AW.
 754017035,諾麗絲,雪魄冰種,"Erhöht den Angriffsschaden auf {1} des AW, den Giftschaden auf {2} des AW und den Heilungseffekt auf {3}."
-754017041,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW.
-754017042,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW.
-754017043,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW.
-754017044,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW.
+754017041,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW und den Angriff um {2}.
+754017042,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW und den Angriff um {2}.
+754017043,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW und den Angriff um {2}.
+754017044,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW und den Angriff um {2}.
 754017045,諾麗絲,北風加佑,Erhöht den Angriffsschaden auf {1} des AW und den Angriff um {2}.
 753017011,羅比,協議1：艾琳出擊,Erhöht den Angriffsschaden auf {1} des AW und den [c][01a310]Brennschaden[-][/c] auf {2} des AW.
 753017012,羅比,協議1：艾琳出擊,Erhöht den Angriffsschaden auf {1} des AW und den [c][01a310]Brennschaden[-][/c] auf {2} des AW.
@@ -1694,11 +1694,11 @@ id,name,skill_name,ex_skill_desc
 756009033,卡雯&伯荻,匿蹤金籠,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden gegen Ziele, die mindestens 1 Schicht [c][e28002]Schmetterlingsgift[-][/c] haben, auf {2} des AW."
 756009034,卡雯&伯荻,匿蹤金籠,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden gegen Ziele, die mindestens 1 Schicht [c][e28002]Schmetterlingsgift[-][/c] haben, auf {2} des AW."
 756009035,卡雯&伯荻,匿蹤金籠,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden gegen Ziele, die mindestens 1 Schicht [c][e28002]Schmetterlingsgift[-][/c] haben, auf {2} des AW. Fügt zu Beginn des Kampfes allen Gegner {3} Schichten [c][e28002]Schmetterlingsgift[-][/c] zu. Der Standardangriff fügt den Gegnern {4} Schichten [c][e28002]Schmetterlingsgift[-][/c] zu."
-756009041,卡雯&伯荻,振貧濟乏,Erhöht den Heilungseffekt auf {1} des AW.
-756009042,卡雯&伯荻,振貧濟乏,Erhöht den Heilungseffekt auf {1} des AW.
-756009043,卡雯&伯荻,振貧濟乏,Erhöht den Heilungseffekt auf {1} des AW.
-756009044,卡雯&伯荻,振貧濟乏,Erhöht den Heilungseffekt auf {1} des AW.
-756009045,卡雯&伯荻,振貧濟乏,"Erhöht den Heilungseffekt auf {1} des AW. Erhöht die Wahrscheinlichkeit, [c][e28002]Schmetterlingsgift[-][/c] zuzufügen, auf {2}."
+756009041,卡雯&伯荻,振貧濟乏,Erhöht den Wert des Schutzwalls um {1} des AW.
+756009042,卡雯&伯荻,振貧濟乏,Erhöht den Wert des Schutzwalls um {1} des AW.
+756009043,卡雯&伯荻,振貧濟乏,"Erhöht den Wert des Schutzwalls um {1} des AW und die Wahrscheinlichkeit, [c][e28002]Schmetterlingsgift[-][/c] zuzufügen, auf {2}."
+756009044,卡雯&伯荻,振貧濟乏,Erhöht den Wert des Schutzwalls um {1} des AW.
+756009045,卡雯&伯荻,振貧濟乏,"Erhöht den Wert des Schutzwalls um {1} des AW und die Wahrscheinlichkeit, [c][e28002]Schmetterlingsgift[-][/c] zuzufügen, auf {2}."
 755010011,瑪雅,災厄,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden, der nach dem Auslösen jeder Schicht [c][e28002]Unheil[-][/c] zugefügt wird, auf {2} des AW."
 755010012,瑪雅,災厄,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden, der nach dem Auslösen jeder Schicht [c][e28002]Unheil[-][/c] zugefügt wird, auf {2} des AW."
 755010013,瑪雅,災厄,"Erhöht den Schaden auf {1} des AW. Erhöht den Schaden, der nach dem Auslösen jeder Schicht [c][e28002]Unheil[-][/c] zugefügt wird, auf {2} des AW."
@@ -1855,3 +1855,23 @@ id,name,skill_name,ex_skill_desc
 757001408,希爾柯蒂,天蠍之心,"Erhöht alle Schäden durch Silcottis Angriffe um {1}. Der Effekt [c][e28002]Sternbooster[-][/c] erhöht den Angriff um {2}, die Krit. Rate um {3} und die Präzision um {4}."
 757001409,希爾柯蒂,天蠍之心,"Erhöht alle Schäden durch Silcottis Angriffe um {1}. Der Effekt [c][e28002]Sternbooster[-][/c] erhöht den Angriff um {2}, die Krit. Rate um {3} und die Präzision um {4}."
 757001410,希爾柯蒂,天蠍之心,"Erhöht alle Schäden durch Silcottis Angriffe um {1}. Der Effekt [c][e28002]Sternbooster[-][/c] erhöht den Angriff um {2}, die Krit. Rate um {3} und die Präzision um {4}."
+752019011,伊芙,犬吠如嘯,Erhöht den erhaltenen Schutzwall um {1} von Eves AW.
+752019012,伊芙,犬吠如嘯,Erhöht den erhaltenen Schutzwall um {1} von Eves AW.
+752019013,伊芙,犬吠如嘯,Erhöht den erhaltenen Schutzwall um {1} von Eves AW.
+752019014,伊芙,犬吠如嘯,Erhöht den erhaltenen Schutzwall um {1} von Eves AW.
+752019015,伊芙,犬吠如嘯,Erhöht den Schaden auf {1} der max. HP des Ziels und den erhaltenen Schutzwall um {2} von Eves AW.
+752019021,伊芙,犬覺如風,Erhöht die Präzision um {1}.
+752019022,伊芙,犬覺如風,Erhöht die Präzision um {1}.
+752019023,伊芙,犬覺如風,Erhöht die Präzision um {1}.
+752019024,伊芙,犬覺如風,Erhöht die Präzision um {1}.
+752019025,伊芙,犬覺如風,"Erhöht den Angriff um {1}, die HP um {2} und die Präzision um {3}."
+752019031,伊芙,犬忠如一,Erhöht den Angriffsschaden auf {1} des AW.
+752019032,伊芙,犬忠如一,Erhöht den Angriffsschaden auf {1} des AW.
+752019033,伊芙,犬忠如一,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, einen Kontrolleffekt zu entfernen, auf {2}."
+752019034,伊芙,犬忠如一,Erhöht den Angriffsschaden auf {1} des AW.
+752019035,伊芙,犬忠如一,"Erhöht den Angriffsschaden auf {1} des AW, die Wahrscheinlichkeit, einen Kontrolleffekt zu entfernen, auf {2} und den einem zufälligen Gegner zugefügten Schaden auf {3} der max. HP des Ziels."
+752019041,伊芙,犬心如守,Erhöht den zu Beginn des Kampfes erhaltenen Schutzwall auf {1} von Eves AW.
+752019042,伊芙,犬心如守,Erhöht den zu Beginn des Kampfes erhaltenen Schutzwall auf {1} von Eves AW.
+752019043,伊芙,犬心如守,Erhöht den zu Beginn des Kampfes erhaltenen Schutzwall auf {1} von Eves AW und den zum Ende der Runde  erhaltenen Schutzwall auf {2} von Eves AW.
+752019044,伊芙,犬心如守,Erhöht den zu Beginn des Kampfes erhaltenen Schutzwall auf {1} von Eves AW.
+752019045,伊芙,犬心如守,Erhöht zu Beginn des Kampfes und zum Ende der Runde den Wert des Schutzwalls jeweils um {1} und {2} des AW

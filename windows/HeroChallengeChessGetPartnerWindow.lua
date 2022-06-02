@@ -113,14 +113,17 @@ end
 function HeroChallengeChessGetPartnerWindow:refreshFreeState()
 	local time = xyd.models.heroChallenge:getFreeTime(self.fortId)
 
+	self.btnRefreshCostLabel_.gameObject:SetActive(false)
+
 	if not time or time == 0 then
 		self.labelFreeCoin_.gameObject:SetActive(false)
-		self.btnRefreshCostLabel_.gameObject:SetActive(true)
+
+		self.winTitle_.text = __("CHESS_TEXT01")
 	else
 		self.labelFreeCoin_.gameObject:SetActive(true)
-		self.btnRefreshCostLabel_.gameObject:SetActive(false)
 
-		self.labelFreeCoin_.text = __("CHESS_FREE_TIMES") .. time
+		self.labelFreeCoin_.text = __("PARTNER_CHALLENGE_CHESS_TEXT12")
+		self.winTitle_.text = __("PARTNER_CHALLENGE_CHESS_TEXT11")
 	end
 end
 

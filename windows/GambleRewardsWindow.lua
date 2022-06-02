@@ -755,6 +755,12 @@ function GambleRewardsWindow:playAnimation()
 							playScroll(264)
 						end, obj, 100)
 					end
+
+					if self.curWndType_ == self.WindowType.DRAGONBOAT2022 and i > 10 and i % 10 == 1 then
+						self:setTimeout(function ()
+							playScroll(264)
+						end, obj, 100)
+					end
 				end, obj, (100 * i + 300) / delay)
 			else
 				local function callback()
@@ -779,6 +785,12 @@ function GambleRewardsWindow:playAnimation()
 					end
 
 					if self.curWndType_ == self.WindowType.GAMBLE and i > 10 and i % 10 == 1 then
+						self:setTimeout(function ()
+							playScroll(264)
+						end, obj, 100)
+					end
+
+					if self.curWndType_ == self.WindowType.DRAGONBOAT2022 and i > 10 and i % 10 == 1 then
 						self:setTimeout(function ()
 							playScroll(264)
 						end, obj, 100)
@@ -915,6 +927,7 @@ GambleRewardsWindow.WindowType = {
 	ACTIVITY = 4,
 	PROPHET = 3,
 	DRESS = 5,
+	DRAGONBOAT2022 = 7,
 	STARRY_ALTAR = 6,
 	NORMAL = 2
 }

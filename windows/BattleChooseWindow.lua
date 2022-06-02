@@ -1191,9 +1191,14 @@ function BattleChooseWindow:registerEvent()
 				return
 			end
 
+			local towerStage = xyd.models.towerMap.stage
 			local needTowerStage = tonumber(xyd.tables.miscTable:getVal("shrine_open_limit", "value"))
 
-			xyd.alertTips(__("OLD_SCHOOL_OPEN_FLOOR", needTowerStage))
+			if towerStage < needTowerStage + 1 then
+				xyd.alertTips(__("OLD_SCHOOL_OPEN_FLOOR", needTowerStage))
+			else
+				xyd.alertTips(__("OLD_SCHOOL_OPEN_STAR"))
+			end
 
 			return
 		end

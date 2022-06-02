@@ -75,17 +75,29 @@ function Shrine:getShopData(type)
 	if modeInfo.items then
 		for i = 1, #ids do
 			local limitTime = theTable:getBuyTime(i)
-			local buyTime = modeInfo.items[i].buy_times or 0
-			local data = {
-				index = i,
-				limitTime = limitTime,
-				leftTime = limitTime - buyTime,
-				cost = theTable:getCost(i),
-				item = theTable:getItem(i),
-				shopType = shopType
-			}
+			local flag = true
 
-			table.insert(items, data)
+			if type == 1 or type == 3 then
+				local itemType = theTable:getType(i)
+
+				if type == 1 and itemType == 2 or type == 3 and itemType == 1 then
+					flag = false
+				end
+			end
+
+			if flag then
+				local buyTime = modeInfo.items[i].buy_times or 0
+				local data = {
+					index = i,
+					limitTime = limitTime,
+					leftTime = limitTime - buyTime,
+					cost = theTable:getCost(i),
+					item = theTable:getItem(i),
+					shopType = shopType
+				}
+
+				table.insert(items, data)
+			end
 		end
 	end
 

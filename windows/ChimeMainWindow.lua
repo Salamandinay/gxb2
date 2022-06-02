@@ -68,6 +68,37 @@ function ChimeMainWindow:getUIComponent()
 	self.btnBackpack = self.btnsGroup:NodeByName("btnBackpack").gameObject
 	self.label_btnBackpack = self.btnBackpack:ComponentByName("label", typeof(UILabel))
 	self.drag = self.content:NodeByName("drag").gameObject
+	self.effectNode1 = self.scroller:NodeByName("effectNode1").gameObject
+end
+
+function ChimeMainWindow:playOpenAnimation(callback)
+	self.btnHelp:SetActive(false)
+	self.expandBtnGroup:SetActive(false)
+
+	local effect = xyd.Spine.new(self.effectNode1)
+
+	effect:setInfo("yushenmu_main", function ()
+		local ids = chimeTable:getIDs()
+
+		effect:setRenderTarget(self.effectNode1.gameObject:GetComponent(typeof(UITexture)), #ids + 1)
+		effect:play("texiao01", 1)
+	end)
+
+	local sequence = self:getSequence(function ()
+		self:setWndComplete()
+		callback()
+	end)
+
+	self.content:SetLocalScale(1.5, 1.5, 1.5)
+	sequence:Append(self.content.transform:DOScale(1, 1))
+	sequence:AppendCallback(function ()
+		sequence:Kill(false)
+
+		sequence = nil
+
+		self.expandBtnGroup:SetActive(true)
+		self.btnHelp:SetActive(true)
+	end)
 end
 
 function ChimeMainWindow:initWindow()
@@ -85,6 +116,8 @@ function ChimeMainWindow:initWindow()
 
 	if xyd.Global.lang == "fr_fr" then
 		self.label_btnPokedex.fontSize = 20
+
+		self.label_btnBackpack:X(-5)
 	end
 
 	self:initResItem()

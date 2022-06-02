@@ -26,6 +26,7 @@ function PetTrainingWindow:getUIComponent()
 	self.progressLabel = self.progressBar:ComponentByName("progressLabel", typeof(UILabel))
 	self.petIconBtn = self.topActionGroup:NodeByName("petIconBtn").gameObject
 	self.awardBtn = self.topActionGroup:NodeByName("awardBtn").gameObject
+	self.awardRedPoint = self.topActionGroup:ComponentByName("awardBtn/redPoint", typeof(UISprite))
 	self.hangLabel = self.topActionGroup:ComponentByName("hang_label", typeof(UILabel))
 	self.awardGroup1 = self.topActionGroup:NodeByName("award_group_1").gameObject
 	self.awardGroup2 = self.topActionGroup:NodeByName("award_group_2").gameObject
@@ -420,11 +421,15 @@ function PetTrainingWindow:refreshTrainingAward()
 			self.hangCountDown = CountDown.new(self.hangLabel)
 		end
 
+		self.awardRedPoint:SetActive(false)
+
 		local params = {
 			key = "PEW_TRAINNG_HANGUP_TEXT01",
 			duration = duration,
 			callback = function ()
 				self.hangLabel.text = __("PEW_TRAINNG_HANGUP_TEXT02")
+
+				self.awardRedPoint:SetActive(true)
 			end,
 			doOnTime = function ()
 				self.hangTime = self.hangTime + 1
@@ -442,6 +447,8 @@ function PetTrainingWindow:refreshTrainingAward()
 		self.hangCountDown:setInfo(params)
 	else
 		self.hangLabel.text = __("PEW_TRAINNG_HANGUP_TEXT02")
+
+		self.awardRedPoint:SetActive(true)
 	end
 
 	self.awardIcon1 = self:initHangAward(1, self.hangTime, extraNum, cycleTime)

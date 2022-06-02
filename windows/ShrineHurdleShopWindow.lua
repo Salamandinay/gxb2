@@ -93,7 +93,7 @@ function ShrineShopItem:layout()
 		})
 	end
 
-	xyd.setUISpriteAsync(self.res_icon_, nil, "icon_" .. self.cost_[1])
+	xyd.setUISpriteAsync(self.res_icon_, nil, xyd.tables.itemTable:getIcon(self.cost_[1]))
 
 	self.res_text_.text = xyd.getRoughDisplayNumber(self.cost_[2])
 	self.name_text_.text = __("BUY_GIFTBAG_LIMIT", self.leftTime)
@@ -112,12 +112,15 @@ function ShrineHurdleShopWindow:ctor(name, params)
 	ShrineHurdleShopWindow.super.ctor(self, name, params)
 
 	self.curNav_ = 1
+	self.curTabIndex = 1
 	self.canClickTab = true
 	self.itemList_ = {
+		{},
 		{},
 		{}
 	}
 	self.groupList_ = {
+		{},
 		{},
 		{}
 	}
@@ -147,6 +150,9 @@ function ShrineHurdleShopWindow:getComponent()
 	self.scrollView2_ = winTrans:ComponentByName("scrollView_2", typeof(UIScrollView))
 	self.dragScroll2_ = winTrans:ComponentByName("drag_2", typeof(UIDragScrollView))
 	self.gridList2_ = winTrans:ComponentByName("scrollView_2/gridList", typeof(UIGrid))
+	self.scrollView3_ = winTrans:ComponentByName("scrollView_3", typeof(UIScrollView))
+	self.dragScroll3_ = winTrans:ComponentByName("drag_3", typeof(UIDragScrollView))
+	self.gridList3_ = winTrans:ComponentByName("scrollView_3/gridList", typeof(UIGrid))
 	local chosen = {
 		color = Color.New2(4160223231.0),
 		effectColor = Color.New2(1012112383)
@@ -159,12 +165,13 @@ function ShrineHurdleShopWindow:getComponent()
 		chosen = chosen,
 		unchosen = unchosen
 	}
-	self.tab = import("app.common.ui.CommonTabBar").new(self.navRoot_, 2, function (index)
+	self.tab = import("app.common.ui.CommonTabBar").new(self.navRoot_, 3, function (index)
 		self:touchForRefresh(index)
 	end, nil, colorParams)
 	local tabText = {
 		__("SHRINE_POOL_TEXT01"),
-		__("SHRINE_POOL_TEXT02")
+		__("SHRINE_POOL_TEXT02"),
+		__("SHRINE_POOL_TEXT04")
 	}
 
 	self.tab:setTexts(tabText)
@@ -181,8 +188,11 @@ function ShrineHurdleShopWindow:touchForRefresh(index)
 		xyd.models.shop:refreshShopInfo(xyd.ShopType.SHRINE2)
 	elseif index == 2 then
 		xyd.models.shop:refreshShopInfo(xyd.ShopType.SHRINE1)
+	elseif index == 3 then
+		xyd.models.shop:refreshShopInfo(xyd.ShopType.SHRINE2)
 	end
 
+	self.curTabIndex = index
 	self.canClickTab = false
 
 	self:waitForFrame(0.5, function ()
@@ -214,6 +224,10 @@ function ShrineHurdleShopWindow:register()
 		if self.resItem1_ then
 			self.resItem1_:refresh()
 		end
+
+		if self.resItem2_ then
+			self.resItem2_:refresh()
+		end
 	end)
 	self.eventProxy_:addEventListener(xyd.event.GET_SHOP_INFO, handler(self, self.onGetShopInfo))
 	self.eventProxy_:addEventListener(xyd.event.BUY_SHOP_ITEM, handler(self, self.buyItemRes))
@@ -226,11 +240,14 @@ function ShrineHurdleShopWindow:onGetShopInfo(evt)
 		index = 1
 	elseif evt.data.shop_type == xyd.ShopType.SHRINE1 then
 		index = 2
+		self.curTabIndex = 2
 	end
+
+	dump(xyd.decodeProtoBuf(evt.data))
 
 	if index > 0 then
 		self:waitForFrame(0.1, function ()
-			self:onTouchNav(index)
+			self:onTouchNav(self.curTabIndex)
 		end)
 	end
 end
@@ -246,6 +263,19 @@ function ShrineHurdleShopWindow:layout()
 		tableId = xyd.ItemID.SHRINE_COIN
 	})
 	self.resItem1_:showBothLine(true)
+	self.resItem1_:SetActive(true)
+	self.resNode1_:SetActive(self.curNav_ ~= 3)
+
+	self.resItem2_ = ResItem.new(self.resNode2_)
+
+	self.resItem2_:setInfo({
+		hideBg = true,
+		hidePlus = true,
+		tableId = 373
+	})
+	self.resItem2_:showBothLine(true)
+	self.resItem2_:SetActive(true)
+	self.resNode2_:SetActive(self.curNav_ == 3)
 	self.tab:setTabActive(self.curNav_, true)
 end
 
@@ -260,8 +290,12 @@ end
 function ShrineHurdleShopWindow:onTouchNav(index)
 	self.scrollView1_.gameObject:SetActive(index == 1)
 	self.scrollView2_.gameObject:SetActive(index == 2)
+	self.scrollView3_.gameObject:SetActive(index == 3)
 	self.dragScroll1_:SetActive(index == 1)
 	self.dragScroll2_:SetActive(index == 2)
+	self.dragScroll3_:SetActive(index == 3)
+	self.resNode1_:SetActive(index ~= 3)
+	self.resNode2_:SetActive(index == 3)
 
 	self.curNav_ = index
 
@@ -269,7 +303,7 @@ function ShrineHurdleShopWindow:onTouchNav(index)
 
 	local shopType = nil
 
-	if index == 1 then
+	if index == 1 or index == 3 then
 		shopType = xyd.ShopType.SHRINE2
 
 		self.timeLabel_.gameObject:SetActive(true)
@@ -302,7 +336,7 @@ function ShrineHurdleShopWindow:onTouchNav(index)
 				end
 			})
 		end
-	else
+	elseif index == 2 then
 		shopType = xyd.ShopType.SHRINE1
 
 		self.timeLabel_.gameObject:SetActive(false)

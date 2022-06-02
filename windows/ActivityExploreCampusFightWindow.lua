@@ -308,15 +308,27 @@ function ActivityExploreCampusFightWindow:register()
 		end
 	end)
 	UIEventListener.Get(self.resetBtn.gameObject).onClick = handler(self, function ()
-		xyd.alertYesNo(__("OLD_SCHOOL_DELETE_ALL_BUFFS"), function (yes_no)
-			if not yes_no then
-				return
-			end
+		if #self.choiceBuffArr > 0 then
+			xyd.alertYesNo(__("OLD_SCHOOL_DELETE_ALL_BUFFS"), function (yes_no)
+				if not yes_no then
+					return
+				end
 
-			for i in pairs(self.itemArr) do
-				self.itemArr[i]:removeAllClick()
-			end
-		end)
+				for i in pairs(self.itemArr) do
+					self.itemArr[i]:removeAllClick()
+				end
+			end)
+		else
+			xyd.alertYesNo(__("OLD_SCHOOL_TIPS01"), function (yes_no)
+				if not yes_no then
+					return
+				end
+
+				for i in pairs(self.itemArr) do
+					self.itemArr[i]:selectAllClick()
+				end
+			end)
+		end
 	end)
 	UIEventListener.Get(self.setting_btn.gameObject).onClick = handler(self, function ()
 		local floorId = xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId)
@@ -792,6 +804,14 @@ end
 function BuffsItem:removeAllClick()
 	for i, value in pairs(self.buffsItemArr) do
 		if xyd.arrayIndexOf(self.parent.choiceBuffArr, self.buffsItemArr[i].id) > 0 then
+			self.buffsItemArr[i].icon:tipsOnClick()
+		end
+	end
+end
+
+function BuffsItem:selectAllClick()
+	for i, value in pairs(self.buffsItemArr) do
+		if xyd.arrayIndexOf(self.parent.choiceBuffArr, self.buffsItemArr[i].id) <= 0 and not self.buffsItemArr[i].icon.isLock then
 			self.buffsItemArr[i].icon:tipsOnClick()
 		end
 	end

@@ -44,7 +44,7 @@ function ChimeDebrisBackpackWindow:initWindow()
 	self:register()
 
 	self.labelTitle.text = __("CHIME_BAG")
-	self.button_label.text = __("SPIRIT_RESOLVE")
+	self.button_label.text = __("CHIME_TEXT17")
 	self.labelNone.text = __("NO_ITEM")
 	local wrapContent = self.itemGroup:GetComponent(typeof(MultiRowWrapContent))
 
@@ -140,7 +140,7 @@ function ChimeDebrisBackpackWindow:initBackpack()
 		self.groupNone:SetActive(false)
 		self.bg2:SetActive(true)
 		self.scroller:SetActive(true)
-		self.btnDecompose:SetActive(false)
+		self.btnDecompose:SetActive(true)
 		self.wrapContent:setInfos(datas, {})
 	else
 		self.groupNone:SetActive(true)
@@ -160,6 +160,7 @@ function ChimeDebrisBackpackWindow:onClickBtnDecompose()
 
 	self.chooseID = nil
 	self.chooseItem = nil
+	self.labelResNum.text = 0
 	local wrapcontentItems = self.wrapContent:getItems()
 
 	for key, value in pairs(wrapcontentItems) do
@@ -213,9 +214,9 @@ function ChimeDebrisBackpackWindow:updateDecomposeGroup()
 
 		self.selectNum_:setMaxNum(maxNum)
 	else
-		self.iconRes:SetActive(false)
-		self.labelResNum:SetActive(false)
+		self.iconRes:SetActive(true)
 
+		self.labelResNum.text = 0
 		local maxNum = 1000
 
 		self.selectNum_:setMaxNum(maxNum)
@@ -325,9 +326,9 @@ function ChimeDebrisItem:initUI()
 			return
 		end
 
-		print(self.parent:getMaxCanDecomposeNum(self.itemID))
-
 		if self.parent:getMaxCanDecomposeNum(self.itemID) <= 0 then
+			xyd.alertTips(__("CHIME_TEXT18"))
+
 			return
 		end
 

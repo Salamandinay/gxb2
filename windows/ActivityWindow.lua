@@ -60,6 +60,10 @@ function ActivityWindow:ctor(name, params)
 	self:afRecordWnd(params.activity_type)
 end
 
+function ActivityWindow:getSelect()
+	return self.select
+end
+
 function ActivityWindow:afRecordWnd(activityType)
 	if activityType and (activityType == xyd.EventType.COOL or activityType == xyd.EventType.PUSH) then
 		xyd.models.advertiseComplete:afActivity(activityType)
@@ -1665,6 +1669,12 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_CHILDREN_TASK] = function ()
 		return require("app.windows.activity.ActivityChildrenTask")
+	end,
+	[xyd.ActivityID.ACTIVITY_SPFARM] = function ()
+		return require("app.windows.activity.ActivitySpfarm")
+	end,
+	[xyd.ActivityID.ACTIVITY_DRAGONBOAT2022] = function ()
+		return require("app.windows.activity.ActivityDragonboat2022")
 	end
 }
 

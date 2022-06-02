@@ -4948,7 +4948,8 @@ WARMUP_ARENA_RANK_INFO_3,"
 - Les Compétences d\'Élite des Filles sont maxées au niveau 5.
 - Certaines Antiquités sont maxées niveau Rose 3 étoiles (ces Antiquités Roses correspondantes devront d\'abord être déverrouillées dans votre Sac-Antiquité-Collection afin de pouvoir être utilisées).
 - Le Noyau Précieux des Serviteurs est débloqué (le Noyau Précieux du Serviteur durant l\'événement sera au même niveau que celui de votre Serviteur correspondant).
-- L\'Aura des Serviteurs de l\'événement sera au même niveau que votre Serviteur correspondant, mais ne sera pas inférieur au niveau 30."
+- L\'Aura des Serviteurs de l\'événement sera au même niveau que votre Serviteur correspondant, mais ne sera pas inférieur au niveau 30.
+- Le Noyau Astral est débloqué (le niveau du Noyau Astral de toutes les Filles est amélioré au niveau maximum)."
 WARMUP_ARENA_RANK_INFO_4,"- Vous avez atteint le Rang le plus haut.\n- Après le calcul de résultat, vous obtiendrez un Cadre d'Avatar Spécial."
 ENTRANCE_TEST_LEVEL_UP_DESC_1,Ajuster votre Équipe
 SELECT,Choisir
@@ -4975,7 +4976,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,K.M Érudite\nLa Théorie du Go
+WARMUP_ARENA_TASK_INFO_2,Éva · Dobermans Mystérieux
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5177,7 +5178,7 @@ ARENA_TEAM_RANK_DESC_NEW,Classement Actuel：{1} Maintenez jusqu'à la fin de la
 ACTIVITY_MONTHLY_TEXT008,Point(s) Restant(s)：
 ACTIVITY_MONTHLY_TEXT009,Voulez-vous dépenser {1} Gemmes pour acheter ?
 ALTAR_INFO_4,Aperçu
-ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Durant cet événement, vous obtiendrez et perdrez des points en fonction de la différence entre vos points actuels et ceux de votre adversaire. Si vous gagnez une bataille (Attaque), plus votre adversaire a de point, plus vous obtiendrez de point.|2. Si vous perdez une Attaque contre un adversaire, vous ne perdrez pas de point.|3. En Défense, les points obtenus pour une victoire et les points perdus pour une défaite seront réduit de moitié."
+ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Durant cet événement, vous obtiendrez et perdrez des points en fonction de la différence entre vos points actuels et ceux de votre adversaire. Si vous gagnez une bataille, plus votre adversaire a de point, plus vous obtiendrez de point.|2. Si vous lancez une bataille et la perdez, vous ne perdrez pas de point.|3. En Défense (un joueur lance une bataille contre vous), les points obtenus pour une victoire et les points perdus pour une défaite seront réduits de moitié.|4. les batailles dans le Test d'Admission peuvent avoir un délai qui dépasse 15 tours. Cependant, les Soins Reçus seront réduits et l'Attaque augmentera à chaque tour (à partir du 15ème tour), jusqu'à ce que toutes les Filles d'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Si la bataille dépasse 25 tours, les Filles restantes ne seront plus affectées par aucun bonus (Marques, Effet de Compétence etc.)."
 NEW_ARENA_ALL_SERVER_HELP,"
 L\'Arène Ultime est une Arène interserveur permettant la participation à tous les joueurs.
 La durée de chaque saison est de 28 jours. Chaque saison se divise en 5 phases : Préparation au Combat, Ruée de Point, Élimination, Finalistes et Trêve.|1. Préparation au Combat|(1) Durée : 1ère journée de chaque saison.
@@ -5870,7 +5871,7 @@ Recharge d\'une Clochette : rechargez la Clochette pour augmenter sa Valeur et s
 
 Valeur d\'une Clochette (valeur maximale 100%%) : après avoir augmenté la Valeur à certain pourcentage, les Enchantements de la Clochette s\'activeront.
 
-Éveil d\'une Clochette : après avoir augmenté la Valeur d\'une Clochette à 100%% et activé tous ses Enchantements, vous pourrez éveiller cette Clochette.|3. Moyen d\'obtention des matériaux de Clochette : Panneau d\'Affichage, Bassin aux Vœux, Pack Hebdo. et Pack Mensuel."
+Éveil d\'une Clochette : après avoir augmenté la Valeur d\'une Clochette à 100%% et activé tous ses Enchantements, vous pourrez éveiller cette Clochette.|3. Moyen d\'obtention des matériaux de Clochette : Panneau d\'Affichage, Bassin aux Vœux, Pack Hebdo. et Pack Mensuel.|4. Le surplus de Fragments de Clochette peut être converti en Éclats de Clochette, utilisable pour les échanger contre des récompenses dans le Bassin aux Vœux."
 CHIME_ATLAS,Galerie
 CHIME_BAG,Fragment
 CHIME_TAB1,Infos
@@ -6413,3 +6414,44 @@ ACTIVITY_SPFARM_TEXT08,背包容量
 NOT_EQUIPPED,Disponible
 CHOOSE_EQUIP,Choisissez un équipement :
 ACTIVITY_CHILDREN_SHOP_BUTTON04,Boutique
+SHRINE_POOL_TEXT04,Fragment
+ACTIVITY_SPFARM_TEXT09,種植
+ACTIVITY_SPFARM_TEXT10,更換
+ACTIVITY_SPFARM_TEXT11,通用
+ACTIVITY_SPFARM_TEXT12,進階
+ACTIVITY_SPFARM_TEXT13,特殊
+ACTIVITY_SPFARM_TEXT14,建築數量達到上限
+ACTIVITY_SPFARM_TEXT15,建築等級上限低於被更換的建築
+ACTIVITY_SPFARM_TEXT16,每日0點(UTC/GMT 0)產出[c][10F520]{1}[-][/c]個[c][10F510]{2}[-][/c]。
+ACTIVITY_SPFARM_TEXT17,周圍4格建築在受到入侵時，遭受的損失降低[c][10F520]{1}[-][/c]。
+ENTRANCE_TEST_STAR_ORIGIN_LOCK,Débloqué après avoir atteint le Rang S
+OLD_SCHOOL_TIPS01,Voulez-vous choisir tous les Bonus ?
+ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該建築?
+ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換建築?
+ACTIVITY_DRAGONBOAT2022_BUTTON01,Savourer
+ACTIVITY_DRAGONBOAT2022_BUTTON02,Vertus de\nl'Armoise
+ACTIVITY_DRAGONBOAT2022_HELP,"1. La fête des Bateaux-Dragon est arrivée ! Venez savourer des Gâteaux à l’Armoise avec Scythe ! Chaque fois que vous consommez 2 Gâteaux à l’Armoise, votre Avancée augmentera de 1 et vous obtiendrez une Récompense Basique, vous aurez également une chance d’obtenir une Récompense Supplémentaire - Boîte de la fête des Bateaux-Dragon. |2. Avant de savourer des Gâteaux à l’Armoise avec Scythe, veuillez d’abord toucher « Vertus de l'Armoise » pour choisir les récompenses que vous voulez obtenir. Après avoir savouré un certain nombre de Gâteau à l’Armoise, vous obtiendrez les récompenses de votre choix. |3. Après avoir savouré un certain nombre du Gâteau à l’Armoise, vous obtiendrez également des récompenses de palier.|4. Moyen d’obtention de Gâteau à l’Armoise : Courrier Quotidien, Utiliser 1 Gouvernail ou Gouvernail Avancé dans l’événement - Le Périple de Lavli, Offres de Lavli, Tâche des Filles, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin. |5. Après la fin de l’événement, les Gâteaux à l’Armoise non utilisés seront automatiquement convertis en Pièce d’Or, 1 Gâteau à l’Armoise = 50K Pièces d’Or."
+ACTIVITY_DRAGONBOAT2022_TEXT01,Avancée
+ACTIVITY_DRAGONBOAT2022_TEXT02,Récompense Supplémentaire
+ACTIVITY_DRAGONBOAT2022_TEXT03,Récompense Basique
+ACTIVITY_DRAGONBOAT2022_TEXT04,Savourez un certain nombre de Gâteaux à l'Armoise pour obtenir les récompenses de votre choix~
+ACTIVITY_DRAGONBOAT2022_TEXT05,Choisissez votre récompense
+ACTIVITY_DRAGONBOAT2022_TEXT06,Obtenable après que votre Avancée ait atteint {1}
+ACTIVITY_DRAGONBOAT2022_TEXT07,De combien voulez-vous augmenter votre Avancée ?
+ACTIVITY_DRAGONBOAT2022_TIPS01,"Veuillez toucher ""+"" pour choisir les récompenses que vous voulez obtenir~"
+PARTNER_CHALLENGE_CHESS_TEXT11,Filles Élites proposées :
+PARTNER_CHALLENGE_CHESS_TEXT12,La liste sera actualisée une fois que vous aurez obtenu une Fille Élite.
+ACTIVITY_DRAGONBOAT2022_TEXT08,Aucune récompense obtenue
+ACTIVITY_SPFARM_TEXT20,建築詳情
+ACTIVITY_SPFARM_TEXT21,每日產出
+ACTIVITY_SPFARM_TEXT22,減少損失
+ACTIVITY_SPFARM_TEXT23,守軍
+ACTIVITY_SPFARM_TEXT24,介紹
+ACTIVITY_SPFARM_TEXT25,已满级
+ACTIVITY_SPFARM_TEXT26,建筑等级已经到达当前上限。推行对应政策可以提高等级上限！
+ACTIVITY_SPFARM_TEXT27,更換
+ACTIVITY_SPFARM_TEXT28,移動
+CHIME_TEXT17,Désintégrer
+ACTIVITY_SPFARM_TEXT29,無法更換本體建築
+ACTIVITY_SPFARM_TEXT30,本次活動不再提示
+CHIME_TEXT18,Seul le surplus de Fragment de Clochette peut être converti.

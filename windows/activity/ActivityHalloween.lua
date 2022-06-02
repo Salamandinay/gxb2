@@ -763,6 +763,7 @@ function ActivityHalloween:register()
 	for i = 1, 6 do
 		UIEventListener.Get(self["stagePlace" .. i]).onClick = function ()
 			xyd.WindowManager:get():openWindow("activity_halloween_trick_preview_window", {
+				windowTpye = 1,
 				boxID = i
 			})
 		end

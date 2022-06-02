@@ -10,6 +10,7 @@ local fakeGuideData = {
 function ShrineHurdleModel:ctor()
 	ShrineHurdleModel.super.ctor(self)
 
+	self.isAchievment_Open = false
 	self.skipReport = xyd.db.misc:getValue("trial_skip_report")
 
 	if tonumber(self.skipReport) == 1 then
@@ -67,6 +68,28 @@ function ShrineHurdleModel:onRegister()
 	self:registerEvent(xyd.event.SHRINE_HURDLE_SET_MAX_DIFF, handler(self, self.onSetHarm))
 	self:registerEvent(xyd.event.SYSTEM_REFRESH, handler(self, self.onSystemUpdate))
 	self:registerEvent(xyd.event.EXCHANGE_SHRINE_CARD, handler(self, self.onBuyTickt))
+	self:registerEvent(xyd.event.PARTNER_ADD, function (event)
+		if self.isAchievment_Open == false then
+			local partnerInfo = xyd.models.slot:getPartner(event.data.partnerID)
+
+			if partnerInfo:getStar() >= 10 then
+				self:reqShineHurdleInfo()
+
+				self.isAchievment_Open = true
+			end
+		end
+	end)
+	self:registerEventInner(xyd.event.PARTNER_ATTR_CHANGE, function (event)
+		if self.isAchievment_Open == false then
+			local partnerInfo = xyd.models.slot:getPartner(event.data.partnerID)
+
+			if partnerInfo:getStar() >= 10 then
+				self:reqShineHurdleInfo()
+
+				self.isAchievment_Open = true
+			end
+		end
+	end)
 end
 
 function ShrineHurdleModel:reqShineHurdleRecords()
@@ -85,6 +108,8 @@ function ShrineHurdleModel:reqShineHurdleReport(record_id, floor_id)
 end
 
 function ShrineHurdleModel:reqShineHurdleInfo()
+	print("=============================reqShineHurdleInfo===================")
+
 	if not self.reqInfo_ then
 		local msg = messages_pb.shrine_hurdle_get_info_req()
 
@@ -119,6 +144,7 @@ function ShrineHurdleModel:onGetInfo(event)
 	self.last_route_id_ = data.last_route_id
 	self.overChallengeDiff = data.diff_ids or {}
 	self.buyTimes_ = data.buy_times or 0
+	self.isAchievment_Open = true
 
 	if data.skills and tostring(data.skills) ~= "" then
 		self.skills_ = json.decode(data.skills)
@@ -451,7 +477,7 @@ function ShrineHurdleModel:getEndTime(isTotal)
 	return self:getStartTime() + lastTime
 end
 
-function ShrineHurdleModel:checkFuctionOpen()
+function ShrineHurdleModel:checkFuctionOpen(need_tips)
 	local towerStage = xyd.models.towerMap.stage
 	local functionOpenTime = xyd.tables.miscTable:getVal("shrine_time_start")
 	local needTowerStage = tonumber(xyd.tables.miscTable:getVal("shrine_open_limit", "value"))
@@ -460,7 +486,7 @@ function ShrineHurdleModel:checkFuctionOpen()
 		return false
 	end
 
-	if towerStage >= needTowerStage + 1 and xyd.checkFunctionOpen(xyd.FunctionID.SHRINE_HURDLE, true) then
+	if towerStage >= needTowerStage + 1 and xyd.checkFunctionOpen(xyd.FunctionID.SHRINE_HURDLE, true) and self.isAchievment_Open then
 		return true
 	else
 		return false

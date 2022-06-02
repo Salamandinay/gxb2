@@ -5982,7 +5982,7 @@ function PartnerDetailWindow:updatePuppetNav()
 			end
 		end
 
-		if self.navChosen == 5 and (self.partner_:getStar() < 15 or xyd.tables.partnerTable:getStarOrigin(self.partner_:getTableID()) <= 0) then
+		if self.navChosen == 5 and (self.partner_:getStar() < 15 or xyd.tables.partnerTable:getStarOrigin(self.partner_:getTableID()) <= 0) and self.name_ ~= "activity_entrance_test_partner_window" then
 			self.defaultTab:setTabActive(self.navChosen, false)
 			self.defaultTab:setTabActive(1, true)
 		else

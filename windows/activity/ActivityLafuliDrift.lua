@@ -1273,6 +1273,19 @@ function ActivityLafuliDrift:registEvent()
 				}
 			})
 		end
+
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_DRAGONBOAT2022)
+
+		if activityData and xyd.getServerTime() < activityData:getEndTime() and activityData:isOpen() then
+			local award = xyd.tables.miscTable:split2Cost("activity_lafuli_get", "value", "|#")[1]
+
+			xyd.models.itemFloatModel:pushNewItems({
+				{
+					item_id = award[1],
+					item_num = award[2]
+				}
+			})
+		end
 	end)
 	self:registerEvent(xyd.event.LAFULI_ACTIVITY_SELECT_BUFF, function (event)
 		local detail = cjson.decode(event.data.detail)

@@ -1008,14 +1008,8 @@ function MainWindow:initTopBtnGroup()
 			MainMap:stopSound()
 		end
 	}
-	local beforeOpen = false
-	local maxRBId = 5
 
-	if xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR, true) then
-		maxRBId = 6
-	end
-
-	for i = 1, maxRBId do
+	for i = 1, 6 do
 		local go = NGUITools.AddChild(self.transTopR.gameObject, self.topRightBtn.gameObject)
 
 		go:SetActive(true)

@@ -174,6 +174,11 @@ function Dungeon:onFight(event)
 	local oldData = self:getData()
 	oldData.battle_id = data.battle_id or oldData.battle_id
 	oldData.current_stage = data.current_stage or oldData.current_stage
+
+	if not oldData.max_stage or oldData.max_stage < data.current_stage then
+		oldData.max_stage = data.current_stage
+	end
+
 	oldData.enemies = data.enemies
 	oldData.partners = self:getNewPartners(data.partners)
 

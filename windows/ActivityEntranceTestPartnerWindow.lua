@@ -99,30 +99,50 @@ end
 function ActivityEntranceTestPartnerWindow:getUIComponent()
 	PartnerDetailWindow.getUIComponent(self)
 
-	for i = 1, 4 do
+	for i = 1, 5 do
 		self["tab_cur_" .. tostring(i)] = self.defaultTabGroup:NodeByName("tab_" .. tostring(i)).gameObject
 		self["tab_cur_box" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i), typeof(UnityEngine.BoxCollider))
 
 		if i ~= 3 then
 			self["tab_cur_chosen" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/chosen", typeof(UIWidget))
 			self["tab_cur_unchosen" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/unchosen", typeof(UIWidget))
-			self["tab_cur_chosen" .. tostring(i)].width = 210
-			self["tab_cur_unchosen" .. tostring(i)].width = 210
-			self["tab_cur_box" .. tostring(i)].size = Vector3(210, 50, 0)
+			self["tab_cur_chosen" .. tostring(i)].width = 156
+			self["tab_cur_unchosen" .. tostring(i)].width = 156
+			self["tab_cur_box" .. tostring(i)].size = Vector3(156, 50, 0)
 
 			if i == 4 then
 				local tab4none_UIWidget = self.tab4none:GetComponent(typeof(UIWidget))
-				tab4none_UIWidget.width = 210
+				tab4none_UIWidget.width = 156
 				local tab4none_BoxCollider = tab4none_UIWidget.gameObject:AddComponent(typeof(UnityEngine.BoxCollider))
 				tab4none_UIWidget.autoResizeBoxCollider = true
-				tab4none_BoxCollider.size = Vector3(210, 50, 0)
+				tab4none_BoxCollider.size = Vector3(156, 50, 0)
 				self.tab4awakeLock.gameObject:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 				self["tab_cur_label" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/label", typeof(UILabel))
 
 				if self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 then
 					self["tab_cur_unchosen" .. tostring(i)].gameObject:SetActive(false)
 				end
+			elseif i == 5 then
+				self.tab5none = self.defaultTabGroup:NodeByName("tab_5/none").gameObject
+				local tab5none_UIWidget = self.tab5none:GetComponent(typeof(UIWidget))
+				tab5none_UIWidget.width = 156
+				local tab5none_BoxCollider = tab5none_UIWidget.gameObject:AddComponent(typeof(UnityEngine.BoxCollider))
+				tab5none_UIWidget.autoResizeBoxCollider = true
+				tab5none_BoxCollider.size = Vector3(156, 50, 0)
+				self.tab5StarOriginLock = self.defaultTabGroup:NodeByName("tab_5/starOringinLock").gameObject
+				self.tab5StarOriginLock.gameObject:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
+				self.tab5StarOriginLock:SetActive(true)
+
+				self["tab_cur_label" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/label", typeof(UILabel))
+
+				if self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 and self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R2 then
+					self["tab_cur_unchosen" .. tostring(i)].gameObject:SetActive(false)
+					self.tab5StarOriginLock:SetActive(false)
+				end
 			end
+
+			self["tab_cur_" .. tostring(i)]:SetActive(true)
 		else
 			self["tab_cur_" .. tostring(i)]:SetActive(false)
 		end
@@ -139,10 +159,11 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 
 	self.bottom:GetComponent(typeof(UIRect)):SetTopAnchor(nil, 0, 0)
 	self.bottom:GetComponent(typeof(UIRect)):SetBottomAnchor(nil, 0, 0)
-	self.tab_cur_1:SetLocalPosition(-237, 0, 0)
-	self.tab_cur_2:SetLocalPosition(0, 0, 0)
-	self.tab_cur_4:SetLocalPosition(237, 0, 0)
-	self.nav2_redPoint:SetLocalPosition(104, 20.5, 0)
+	self.tab_cur_1:SetLocalPosition(-234, 0, 0)
+	self.tab_cur_2:SetLocalPosition(-78, 0, 0)
+	self.tab_cur_4:SetLocalPosition(78, 0, 0)
+	self.tab_cur_5:SetLocalPosition(234, 0, 0)
+	self.nav2_redPoint:SetLocalPosition(67, 20.5, 0)
 	self.btnUnequipAll:SetActive(false)
 	self.btnEquipAll:SetActive(false)
 	self.content_2:SetLocalPosition(0, -30, 0)
@@ -156,18 +177,19 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 	self.nav1 = self.defaultTabGroup:NodeByName("tab_1").gameObject
 	self.nav2 = self.defaultTabGroup:NodeByName("tab_2").gameObject
 	self.nav4 = self.defaultTabGroup:NodeByName("tab_4").gameObject
+	self.nav5 = self.defaultTabGroup:NodeByName("tab_5").gameObject
 
 	for i = 1, 4 do
 		if i ~= 3 then
 			local chosen = self["nav" .. i]:ComponentByName("chosen", typeof(UIWidget))
 			local unchosen = self["nav" .. i]:ComponentByName("unchosen", typeof(UIWidget))
-			chosen.width = 210
-			unchosen.width = 210
+			chosen.width = 156
+			unchosen.width = 156
 		end
 	end
 
-	self.nav1:X(-210)
-	self.nav4:X(210)
+	self.nav1:X(-234)
+	self.nav4:X(78)
 
 	self.equip_tips = TipsItem.new(self.nav2, {
 		depth = 61,
@@ -178,8 +200,8 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 		tipsText = __("ENTRANCE_TEST_UNEQUIP_TIP")
 	})
 
-	self.equip_tips:getGo():SetLocalPosition(87, 20, 0)
-	self.break_tips:getGo():SetLocalPosition(87, 20, 0)
+	self.equip_tips:getGo():SetLocalPosition(67, 20, 0)
+	self.break_tips:getGo():SetLocalPosition(67, 20, 0)
 	self.midBtns:Y(640)
 	self.equip_tips:SetActive(false)
 	self.break_tips:SetActive(false)
@@ -255,6 +277,7 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 	tipsText:Y(-185)
 	tipsText:X(-320)
 	self.content_2:Y(-51)
+	self.content_6:Y(-57)
 	self.page_guide.gameObject:SetActive(false)
 	self.groupBg.gameObject:SetActive(false)
 	self.groupBgMini.gameObject:SetActive(false)
@@ -267,6 +290,7 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 	self.ns1_MultiLabel.gameObject:SetActive(false)
 	self.labelLev.gameObject:SetActive(false)
 	self.labelMaxAwake.gameObject:SetActive(false)
+	self.btnStarOriginDetail:SetActive(false)
 	self:changeCommonUI()
 end
 
@@ -280,7 +304,7 @@ function ActivityEntranceTestPartnerWindow:changeCommonUI()
 	self.upConItem = EntranceTestPartnerWindowUpCon.new(self.content, {})
 
 	self.upConItem:getGo():SetLocalPosition(0, 317, 0)
-	self.upConItem:setEffectConDepth(20)
+	self.upConItem:setEffectConDepth(31)
 	self.nav.gameObject:Y(164)
 end
 
@@ -319,6 +343,7 @@ function ActivityEntranceTestPartnerWindow:onclickArrow(partnerInfo)
 	self:updateRedPointShow()
 	self:initMarkedBtn()
 	self:checkContentState()
+	self:checkStarOriginUpdate()
 	self:checkBtnCommentShow()
 end
 
@@ -401,6 +426,10 @@ function ActivityEntranceTestPartnerWindow:registerEvent()
 
 	UIEventListener.Get(self.tab4none.gameObject).onClick = function ()
 		xyd.alert(xyd.AlertType.TIPS, __("ENTRANCE_TEST_PARTNER_LOCK"))
+	end
+
+	UIEventListener.Get(self.tab5none.gameObject).onClick = function ()
+		xyd.alert(xyd.AlertType.TIPS, __("ENTRANCE_TEST_STAR_ORIGIN_LOCK"))
 	end
 end
 
@@ -502,8 +531,11 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 end
 
 function ActivityEntranceTestPartnerWindow:updateAttr()
+	local fullStarOrigin = self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 and self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R2
+
 	self.partner_:updateAttrs({
-		isEntrance = true
+		isEntrance = true,
+		fullStarOrigin = fullStarOrigin
 	})
 	PartnerDetailWindow.updateAttr(self)
 	self.upConItem:setPowerLabel(tostring(self.partner_:getPower()))
@@ -827,18 +859,100 @@ function ActivityEntranceTestPartnerWindow:updateTab4(state)
 	if self.activityData:getLevel() == xyd.EntranceTestLevelType.R1 then
 		self.tab4none:SetActive(true)
 		self.tab4awakeLock:SetActive(true)
-		self.tab_cur_label4.gameObject:SetLocalPosition(15, 2, 0)
+		self.tab_cur_label4.gameObject:SetLocalPosition(15, 0, 0)
 
 		local tab4awakeLock_UISprite = self.tab4awakeLock.gameObject:GetComponent(typeof(UISprite))
 
-		self.tab4awakeLock.gameObject:X(15 - self.tab_cur_label4.width / 2 - 11 - tab4awakeLock_UISprite.width / 2)
+		self.tab4awakeLock.gameObject:X(-46)
+
+		if xyd.Global.lang == "en_en" then
+			self.tab4awakeLock.gameObject:X(-60)
+
+			self.tab_cur_label4.fontSize = 19
+		elseif xyd.Global.lang == "fr_fr" or xyd.Global.lang == "ko_kr" then
+			self.tab_cur_label4.gameObject:SetLocalPosition(18, 0, 0)
+
+			self.tab_cur_label4.fontSize = 24
+		elseif xyd.Global.lang == "ja_jp" then
+			self.tab4awakeLock.gameObject:X(-50)
+
+			self.tab_cur_label4.fontSize = 24
+		elseif xyd.Global.lang == "de_de" then
+			self.tab4awakeLock.gameObject:X(-60)
+		end
 	else
+		if xyd.Global.lang == "en_en" or xyd.Global.lang == "ja_jp" then
+			self.tab_cur_label4.fontSize = 24
+		elseif xyd.Global.lang == "fr_fr" or xyd.Global.lang == "ko_kr" then
+			self.tab_cur_label4.fontSize = 26
+		end
+
 		self.tab4none:SetActive(false)
 		self.tab4awakeLock:SetActive(false)
 	end
 
 	self.defaultTab.tabs[4].label:SetActive(true)
 	self.nav4_redPoint:SetActive(false)
+end
+
+function ActivityEntranceTestPartnerWindow:updateStarOriginGroup()
+	ActivityEntranceTestPartnerWindow.super.updateStarOriginGroup(self)
+end
+
+function ActivityEntranceTestPartnerWindow:checkStarOriginUpdate()
+	if self.navChosen ~= 5 then
+		return
+	end
+
+	self:updateStarOriginGroup()
+end
+
+function ActivityEntranceTestPartnerWindow:onClickStarOriginBtn()
+end
+
+function ActivityEntranceTestPartnerWindow:getStarOriginNodeLev(nodeTableID)
+	local partnerTableID = self.partner_:getTableID()
+	local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
+	local starIDs = xyd.tables.starOriginListTable:getNode(listTableID)
+	local startIDs = xyd.tables.starOriginListTable:getStartIDs(listTableID)
+	local endIDs = xyd.tables.starOriginListTable:getEndIDs(listTableID)
+
+	for i = 1, #starIDs do
+		if starIDs[i] == nodeTableID then
+			return endIDs[i] - startIDs[i]
+		end
+	end
+
+	return 0
+end
+
+function ActivityEntranceTestPartnerWindow:checkStarOriginTab()
+	if self.activityData:getLevel() == xyd.EntranceTestLevelType.R1 or self.activityData:getLevel() == xyd.EntranceTestLevelType.R2 then
+		self.tab5none:SetActive(true)
+		self.tab5StarOriginLock:SetActive(true)
+		self.tab_cur_label5.gameObject:SetLocalPosition(15, 0, 0)
+
+		if xyd.Global.lang == "ja_jp" then
+			self.tab_cur_label5.gameObject:SetLocalPosition(18, 0, 0)
+			self.tab5StarOriginLock:X(-50)
+		elseif xyd.Global.lang == "de_de" or xyd.Global.lang == "en_en" then
+			self.tab5StarOriginLock.gameObject:X(-60)
+		end
+
+		local tab5starOriginLock_UISprite = self.tab5StarOriginLock.gameObject:GetComponent(typeof(UISprite))
+	else
+		self.labelStarOrigin:X(0)
+		self.tab5none:SetActive(false)
+		self.tab5StarOriginLock:SetActive(false)
+	end
+
+	local tabImgName1 = "nav_btn_blue_mid"
+	local tabImgName2 = "nav_btn_white_mid"
+	local tabImgName3 = "nav_btn_grey_mid"
+
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/chosen", typeof(UISprite)), nil, tabImgName1)
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/unchosen", typeof(UISprite)), nil, tabImgName2)
+	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/none", typeof(UISprite)), nil, tabImgName3)
 end
 
 return ActivityEntranceTestPartnerWindow

@@ -1643,7 +1643,11 @@ id,name,skill_name,ex_skill_desc
 754017012,諾麗絲,寒冰煉獄,Damage increases to {1} of Attack.
 754017013,諾麗絲,寒冰煉獄,"Damage increases to {1} of Attack, chance to [c][01a310]Crystallize[-][/c] increases to {2}, ricochet damage increases to {3} of Attack."
 754017014,諾麗絲,寒冰煉獄,"Damage increases to {1} of Attack, chance to [c][01a310]Crystallize[-][/c] increases to {2}, ricochet damage increases to {3} of Attack."
-754017015,諾麗絲,寒冰煉獄,"Damage increases to {1} of Attack, chance to [c][01a310]Crystallize[-][/c] increases to {2}, ricochet damage increases to {3} of Attack."
+754017015,諾麗絲,寒冰煉獄,"
+Damage increases to {1} of Attack.
+Chance to [c][01a310]Crystallize[-][/c] increases to {2}.
+ Ricochet attacks increases to {3} attacks.
+Ricochet damage increases to {4} of Attack."
 754017021,諾麗絲,榮光之冠,Speed increase increases to {1}.
 754017022,諾麗絲,榮光之冠,Speed increase increases to {1}.
 754017023,諾麗絲,榮光之冠,"Speed increase increases to {1}, HP increase increases to {2}."
@@ -1654,10 +1658,10 @@ id,name,skill_name,ex_skill_desc
 754017033,諾麗絲,雪魄冰種,Damage increases to {1} of Attack.
 754017034,諾麗絲,雪魄冰種,Damage increases to {1} of Attack.
 754017035,諾麗絲,雪魄冰種,"Damage increases to {1} of Attack, Poison damage increases to {2} of Attack, HP Restoration increases to {3} of Aurora's maximum HP."
-754017041,諾麗絲,北風加佑,Damage increases to {1} of Attack.
-754017042,諾麗絲,北風加佑,Damage increases to {1} of Attack.
-754017043,諾麗絲,北風加佑,Damage increases to {1} of Attack.
-754017044,諾麗絲,北風加佑,Damage increases to {1} of Attack.
+754017041,諾麗絲,北風加佑,Damage increases to {1} of Attack.\nAttack increase increases to {2}.
+754017042,諾麗絲,北風加佑,Damage increases to {1} of Attack.\nAttack increase increases to {2}.
+754017043,諾麗絲,北風加佑,Damage increases to {1} of Attack.\nAttack increase increases to {2}.
+754017044,諾麗絲,北風加佑,Damage increases to {1} of Attack.\nAttack increase increases to {2}.
 754017045,諾麗絲,北風加佑,"Damage increases to {1} of Attack, Attack increase increases to {2}."
 753017011,羅比,協議1：艾琳出擊,"Damage increases to {1} of Attack, [c][01a310]Burn[-][/c] damage increases to {2}."
 753017012,羅比,協議1：艾琳出擊,"Damage increases to {1} of Attack, [c][01a310]Burn[-][/c] damage increases to {2}."
@@ -1718,11 +1722,11 @@ Damage dealt increases to {1} of Attack.
 Damage dealt to enemies with at least 1 stack of [c][e28002]Gilded Butterflies[-][/c] increases to {2} of Attack.
 Number of [c][e28002]Gilded Butterflies[-][/c] stacks afflicted to all enemies at the start of the battle increases to {3} stacks. 
 Number of [c][e28002]Gilded Butterflies[-][/c] stacks afflicted by dealing a Basic Attack increases to {4} stacks."
-756009041,卡雯&伯荻,振貧濟乏,Amount of recovered HP increases to {1} of Attack.
-756009042,卡雯&伯荻,振貧濟乏,Amount of recovered HP increases to {1} of Attack.
-756009043,卡雯&伯荻,振貧濟乏,Amount of recovered HP increases to {1} of Attack.
-756009044,卡雯&伯荻,振貧濟乏,Amount of recovered HP increases to {1} of Attack.
-756009045,卡雯&伯荻,振貧濟乏,Amount of recovered HP increases to {1} of Attack.\nChance to afflict [c][e28002]Gilded Butterflies[-][/c] increases to {2}.
+756009041,卡雯&伯荻,振貧濟乏,BP of [c][e28002]Magick Barrier[-][/c] granted to the ally that dealt a Critical Strike increases to {1} of Gwen & Brigit's Attack.
+756009042,卡雯&伯荻,振貧濟乏,BP of [c][e28002]Magick Barrier[-][/c] granted to the ally that dealt a Critical Strike increases to {1} of Gwen & Brigit's Attack.
+756009043,卡雯&伯荻,振貧濟乏,BP of [c][e28002]Magick Barrier[-][/c] granted to the ally that dealt a Critical Strike increases to {1} of Gwen & Brigit's Attack.\nChance to afflict [c][e28002]Gilded Butterflies[-][/c] increases to {2}.
+756009044,卡雯&伯荻,振貧濟乏,BP of [c][e28002]Magick Barrier[-][/c] granted to the ally that dealt a Critical Strike increases to {1} of Gwen & Brigit's Attack.
+756009045,卡雯&伯荻,振貧濟乏,BP of [c][e28002]Magick Barrier[-][/c] granted to the ally that dealt a Critical Strike increases to {1} of Gwen & Brigit's Attack.\nChance to afflict [c][e28002]Gilded Butterflies[-][/c] increases to {2}.
 755010011,瑪雅,災厄,Damage increases to {1} of Attack.\nDamage dealt by 1 stack of [c][e28002]Malediction[-][/c] when it removes 1 Attribute Increase Buff increased to {2} of Attack.
 755010012,瑪雅,災厄,Damage increases to {1} of Attack.\nDamage dealt by 1 stack of [c][e28002]Malediction[-][/c] when it removes 1 Attribute Increase Buff increased to {2} of Attack.
 755010013,瑪雅,災厄,Damage increases to {1} of Attack.\nDamage dealt by 1 stack of [c][e28002]Malediction[-][/c] when it removes 1 Attribute Increase Buff increased to {2} of Attack.
@@ -1998,3 +2002,23 @@ At the end of each round, Syrcotte will deal {1} more damage for 2 rounds.
 Increases Attack provided by [c][e28002]Starburst[-][/c] to {2}.
 Increases Crit provided by [c][e28002]Starburst[-][/c] to {3}.
 Increases Precision provided by [c][e28002]Starburst[-][/c] to {4}."
+752019011,伊芙,犬吠如嘯,BP of [c][e28002]Magick Barrier[-][/c] granted to 3 allies with lowest HP increases to {1} of Eve's Attack.
+752019012,伊芙,犬吠如嘯,BP of [c][e28002]Magick Barrier[-][/c] granted to 3 allies with lowest HP increases to {1} of Eve's Attack.
+752019013,伊芙,犬吠如嘯,BP of [c][e28002]Magick Barrier[-][/c] granted to 3 allies with lowest HP increases to {1} of Eve's Attack.
+752019014,伊芙,犬吠如嘯,BP of [c][e28002]Magick Barrier[-][/c] granted to 3 allies with lowest HP increases to {1} of Eve's Attack.
+752019015,伊芙,犬吠如嘯,Damage dealt increased to {1} of target's Maximum HP.\nBP of [c][e28002]Magick Barrier[-][/c] granted to 3 allies with lowest HP increases to {2} of Eve's Attack.
+752019021,伊芙,犬覺如風,Precision increase increases to {1}.
+752019022,伊芙,犬覺如風,Precision increase increases to {1}.
+752019023,伊芙,犬覺如風,Precision increase increases to {1}.
+752019024,伊芙,犬覺如風,Precision increase increases to {1}.
+752019025,伊芙,犬覺如風,Attack increase increases to {1}.\nHP increase increases to {2}.\nPrecision increase increases to {3}.
+752019031,伊芙,犬忠如一,Damage increases to {1} of Attack.
+752019032,伊芙,犬忠如一,Damage increases to {1} of Attack.
+752019033,伊芙,犬忠如一,Damage increases to {1} of Attack.\nChance to remove 1 Control effect increases to {2}.
+752019034,伊芙,犬忠如一,Damage increases to {1} of Attack.
+752019035,伊芙,犬忠如一,Damage increases to {1} of Attack.\nChance to remove 1 Control effect increases to {2}.\nExtra damage dealt to 1 random enemy increases to {3} of target's Maximum HP.
+752019041,伊芙,犬心如守,BP of [c][e28002]Magick Barrier[-][/c] granted at the start of the battle increases to {1} of Eve's Attack.
+752019042,伊芙,犬心如守,BP of [c][e28002]Magick Barrier[-][/c] granted at the start of the battle increases to {1} of Eve's Attack.
+752019043,伊芙,犬心如守,BP of [c][e28002]Magick Barrier[-][/c] granted at the start of the battle increases to {1} of Eve's Attack.\nBP of [c][e28002]Magick Barrier[-][/c] granted at the end of every round increased to {2} of Eve's Attack.
+752019044,伊芙,犬心如守,BP of [c][e28002]Magick Barrier[-][/c] granted at the start of the battle increases to {1} of Eve's Attack.
+752019045,伊芙,犬心如守,BP of [c][e28002]Magick Barrier[-][/c] granted at the start of the battle increases to {1} of Eve's Attack.\nBP of [c][e28002]Magick Barrier[-][/c] granted at the end of every round increased to {2} of Eve's Attack.

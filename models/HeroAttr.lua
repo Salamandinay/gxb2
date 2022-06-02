@@ -90,8 +90,8 @@ function HeroAttr:attr(hero, params)
 	local starOrigin = {}
 
 	local function calStarOrigin()
-		if not params.isHeroBook and hero:getStarOrigin() then
-			for k, v in pairs(self:getStarOrigin(hero)) do
+		if not params.isHeroBook and (hero:getStarOrigin() or params.fullStarOrigin) then
+			for k, v in pairs(self:getStarOrigin(hero, params.fullStarOrigin)) do
 				starOrigin[k] = tonumber(v)
 			end
 		end
@@ -598,7 +598,7 @@ function HeroAttr:getChimeAttr(hero, chimeInfo)
 	return result
 end
 
-function HeroAttr:getStarOrigin(hero)
+function HeroAttr:getStarOrigin(hero, fullStarOrigin)
 	local result = {}
 	local tableID = hero:getTableID()
 
@@ -609,6 +609,14 @@ function HeroAttr:getStarOrigin(hero)
 	local levs = hero:getStarOrigin()
 	local starListId = self.heroTable:getStarOrigin(tableID)
 	local startIDs = self.starOriginListTable:getStarIDs(starListId)
+
+	if fullStarOrigin and not hero.isReportHero then
+		local endIDs = xyd.tables.starOriginListTable:getEndIDs(starListId)
+
+		for i = 1, #startIDs do
+			levs[i] = endIDs[i] - startIDs[i]
+		end
+	end
 
 	for k, v in pairs(levs) do
 		if tonumber(v) and v >= 0 and startIDs[k] then

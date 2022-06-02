@@ -184,6 +184,9 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1182,battle_sound_web/sound_xierkedi_attack,2,1,1,0,1,,80,1,,1
 1183,battle_sound_web/sound_xierkedi_skill,4,1,1,0,1,,80,1,,1
 1184,battle_sound_web/sound_xierkedi_passive,3,1,1,0,1,,80,1,,1
+1185,battle_sound_web/sound_yifu_attack,2,1,1,0,1,,50,1,,1
+1186,battle_sound_web/sound_yifu_skill,2,1,1,0,1,,50,1,,1
+1187,battle_sound_web/sound_yifu_hurt03,2,1,1,0,1,,50,1,,1
 2001,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
 2002,ui_sound/battle_bg_music_1,21,0,,0,2,-1,30,0,,
 2003,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
@@ -4997,6 +5000,3 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 530141101,partner_sound/53014_web/530141101,7,1,0,0,1,0,70,1,0.2,
 530141102,partner_sound/53014_web/530141102,6,1,0,0,1,0,70,1,0.2,
 530141301,partner_sound/53014_web/530141301,4,1,0,0,1,0,70,1,0.2,
-530141401,partner_sound/53014_web/530141401,5,1,0,0,1,0,70,1,0.2,
-530141501,partner_sound/53014_web/530141501,12,1,0,0,1,0,70,1,0.2,
-530141502,partner_sound/53014_web/530141502,15,1,0,0,1,0,70,1,0.2,

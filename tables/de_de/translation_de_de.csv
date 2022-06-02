@@ -4885,7 +4885,8 @@ WARMUP_ARENA_RANK_INFO_3,"
 - Elite-Fertigkeiten der Mädchen auf Lv.5
 - Einige verfügbare Antiquitäten auf pink und 3-Sterne aufgewertet (Entspricht den von dir freigeschalteten pinken Antiquitäten)
 - Kostbarer Kern der Diener entsperrt (=Lv. deines Kontos)
-- Fertigkeitslv. der Diener=Lv. deines Kontos (≥Lv.30)."
+- Fertigkeitslv. der Diener=Lv. deines Kontos (≥Lv.30).
+- Sternkerne entsperrt. Sternkerne aller Mädchen auf Max. Level erhöht"
 WARMUP_ARENA_RANK_INFO_4,·Bereits die höchste Stufe erreicht\n·Erhältlich nach der Abrechnung
 ENTRANCE_TEST_LEVEL_UP_DESC_1,Team bearbeiten
 SELECT,Wählen
@@ -4912,7 +4913,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,K.M. Erleuchterin ·\nDas Spiel Go
+WARMUP_ARENA_TASK_INFO_2,"Eve · Vorsicht,\nbellende Hunde!"
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -5114,7 +5115,7 @@ ARENA_TEAM_RANK_DESC_NEW,Akt. Rang:{1}. Halte den Rang bis zum Ende der Saison u
 ACTIVITY_MONTHLY_TEXT008,Verbleibend:
 ACTIVITY_MONTHLY_TEXT009,Dieser Kauf benötigt {1} Dias. Fortfahren?
 ALTAR_INFO_4,Rückgabe
-ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Nach dem Kampf in der Aufnahmeprüfung werden entsprechend den aktuellen Punkten der beiden Seiten Punkte gegeben oder abgezogen. Je mehr Punkte der besiegte Gegner als du hat, desto mehr Punkte erhältst du nach dem Sieg.|2. Forderst du einen Gegner heraus und verlierst du diesen Kampf, werden keine Punkte abgezogen.|3. Wirst du von einem Spieler herausgefordert, werden die für einen Sieg  gegebenen oder die wegen einer Niederlage abgezogenen Punkte halbiert."
+ACTIVITY_ENTRANCE_TEST_RECORD_HELP,"1. Nach dem Kampf in der Aufnahmeprüfung werden entsprechend den aktuellen Punkten der beiden Seiten Punkte gegeben oder abgezogen. Je mehr Punkte der besiegte Gegner als du hat, desto mehr Punkte erhältst du nach dem Sieg.|2. Forderst du einen Gegner heraus und verlierst du diesen Kampf, werden keine Punkte abgezogen.|3. Wirst du von einem Spieler herausgefordert, werden die für einen Sieg  gegebenen oder die wegen einer Niederlage abgezogenen Punkte halbiert.|4. Die Kämpfe können länger als 15 Runden dauern und ab der 16. Runde wird jede Runde der Angriff beider Seiten erhöht und die erhaltene Heilung reduziert, bis eine Seite den Kampf gewinnt.|5. Ist der Kampf länger als 25 Runden, werden ab der 26. Runde alle verliehenen Buffs(Zeichen, Fertigkeitseffekte usw.)  beider Seiten nicht mehr wirken."
 NEW_ARENA_ALL_SERVER_HELP,"
 Die ultimative Arena ist ein Wettbewerb, an dem die SpielerInnen aller Server teilnehmen.
 Jede Saison dauert 28 Tage und wird in 5 Phasen unterteilet: Vorbereitungsphase, Qualifikationsphase, KO-Phase, Finale und Ruhezeit.|1. Vorbereitungsphase|Die Vorbereitungsphase findet am 1. Tag statt und dauert 1 Tag. Während der Vorbereitungsphase können die Spieler ihre Verteidigungsteams aufstellen, aber sie können keinen Kampf starten.|2. Qualifikationsphase|(1) Die Qualifikationsphase findet am 2. Tag statt und dauert bis zum 20. Tag der Saison.
@@ -5806,7 +5807,7 @@ CHIME_HELP,"
 1. Am Baum der Ahnen hängen verschiedenste Glocken, die deinen Mädchen die unterschiedlichsten Buffs verleihen können und diese Buffs gelten permanent für nahezu alle Kämpfe.|2. Sammle die Glockenfragmente, um die entsprechenden Glocken zu entsperren. Verwende den mystischen Staub und die mystischen Talismane, um die Glocken zu verbessern.
 Durchs Verbessern kann der Glockenwert der Glocken und dadurch deren Grundattribute erhöht werden. Maximal kann der Glockenwert auf 100%% erhöht werden.
 Hat der Glockenwert einen bestimmten Wert erreicht, werden weitere Effekte der Glocke aktiviert.
-Hat der Glockenwert 100%% erreicht und wurden alle Effekt aktiviert, können die Glocken erweckt werden.|3. Die Glockenfragmente und Ressourcen zum Leveln der Glocken können unter ""Schwarzes Brett"" und ""Teich der Wünsche"" (beides unter ""Tsuruga Schrein"") erhalten werden."
+Hat der Glockenwert 100%% erreicht und wurden alle Effekt aktiviert, können die Glocken erweckt werden.|3. Die Glockenfragmente und Ressourcen zum Leveln der Glocken können unter ""Schwarzes Brett"" und ""Teich der Wünsche"" (beides unter ""Tsuruga Schrein"") erhalten werden.|4. Die nutzlosen Glockenfragmente können in ""Glockenprismen"" zersetzt werden, die im Teich der Wünsche gegen Ressourcen eingetauscht werden können."
 CHIME_ATLAS,Galerie
 CHIME_BAG,Fragment
 CHIME_TAB1,Details
@@ -6349,3 +6350,44 @@ ACTIVITY_SPFARM_TEXT08,背包容量
 NOT_EQUIPPED,Verfügbar
 CHOOSE_EQUIP,Wähle eine Ausrüstung aus
 ACTIVITY_CHILDREN_SHOP_BUTTON04,Ja
+SHRINE_POOL_TEXT04,Fragmente
+ACTIVITY_SPFARM_TEXT09,種植
+ACTIVITY_SPFARM_TEXT10,更換
+ACTIVITY_SPFARM_TEXT11,通用
+ACTIVITY_SPFARM_TEXT12,進階
+ACTIVITY_SPFARM_TEXT13,特殊
+ACTIVITY_SPFARM_TEXT14,建築數量達到上限
+ACTIVITY_SPFARM_TEXT15,建築等級上限低於被更換的建築
+ACTIVITY_SPFARM_TEXT16,每日0點(UTC/GMT 0)產出[c][10F520]{1}[-][/c]個[c][10F510]{2}[-][/c]。
+ACTIVITY_SPFARM_TEXT17,周圍4格建築在受到入侵時，遭受的損失降低[c][10F520]{1}[-][/c]。
+ENTRANCE_TEST_STAR_ORIGIN_LOCK,Wird ab Stufe S entsperrt
+OLD_SCHOOL_TIPS01,Willst du alle Projekte wählen?
+ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該建築?
+ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換建築?
+ACTIVITY_DRAGONBOAT2022_BUTTON01,Genießen
+ACTIVITY_DRAGONBOAT2022_BUTTON02,Beten
+ACTIVITY_DRAGONBOAT2022_HELP,"1. Das chinesische Drachenbootfest steht vor der Tür. Genieß mit Sensina die leckeren Reiskuchen! Zum Genießen werden jedesmal 2x Reiskuchen benötigt und das Sättigungsgefühl wird danach um einen bestimmten Wert erhöht. Bei jedem Genießen erhältst du eine zufällige Grundbelohnung und wahrscheinlich noch eine Überraschungsbelohnung, nämlich die Auswahlbox zum Drachenbootfest.|2. Vor dem Genießen kannst du dir einige Belohnungen zum Beten aussuchen, die erhalten werden können, sobald dein Sättigunsgefühl einen bestimmten Wert erreicht.|3. Dem Wert deines Sättigungsgefühls entsprechend erhältst du einige Belohnungen, die per Mail gesendet werden.|4. Erhalten der Reiskuchen: Tägliche Mail, Luvlys Inselreise, Mädchen-Spezialmissionen, Reiseversorgung, Superpakete, Glückspakete, Kostümpakete.|5. Nach dem Ende des Events werden die noch nicht verwendeten Reiskuchen automatisch per Mail recycelt. Jeder Reiskuchen entspricht 50K Münzen."
+ACTIVITY_DRAGONBOAT2022_TEXT01,Sättigungs-\ngefühl
+ACTIVITY_DRAGONBOAT2022_TEXT02,Überraschungsbeloh.
+ACTIVITY_DRAGONBOAT2022_TEXT03,Grundbelohnungen
+ACTIVITY_DRAGONBOAT2022_TEXT04,"Stelle einige Belohnungen zum Beten ein und sammle sie ein, sobald dein Sättigungsgefühl einen bestimmten Wert erreicht."
+ACTIVITY_DRAGONBOAT2022_TEXT05,Wähle Belohnungen zum Beten aus
+ACTIVITY_DRAGONBOAT2022_TEXT06,Sättigungsgefühl erreicht {1}
+ACTIVITY_DRAGONBOAT2022_TEXT07,"Gib den Wert ein, um den du das Sättigungsgefühl erhöhen willst."
+ACTIVITY_DRAGONBOAT2022_TIPS01,Wähle zunächst die Belohnungen zum Beten aus
+PARTNER_CHALLENGE_CHESS_TEXT11,Elite-Mädchen erhalten
+PARTNER_CHALLENGE_CHESS_TEXT12,Du hast 1 Elite-Mädchen erhalten und sie werden einmal gratis erneuert.
+ACTIVITY_DRAGONBOAT2022_TEXT08,Noch keine Belohnungen erhalten
+ACTIVITY_SPFARM_TEXT20,建築詳情
+ACTIVITY_SPFARM_TEXT21,每日產出
+ACTIVITY_SPFARM_TEXT22,減少損失
+ACTIVITY_SPFARM_TEXT23,守軍
+ACTIVITY_SPFARM_TEXT24,介紹
+ACTIVITY_SPFARM_TEXT25,已满级
+ACTIVITY_SPFARM_TEXT26,建筑等级已经到达当前上限。推行对应政策可以提高等级上限！
+ACTIVITY_SPFARM_TEXT27,更換
+ACTIVITY_SPFARM_TEXT28,移動
+CHIME_TEXT17,Aufbrechen
+ACTIVITY_SPFARM_TEXT29,無法更換本體建築
+ACTIVITY_SPFARM_TEXT30,本次活動不再提示
+CHIME_TEXT18,Nur die nutzlosen Fragmente können zum Aufbrechen verwendet werden.

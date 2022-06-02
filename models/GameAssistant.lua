@@ -1322,12 +1322,22 @@ function GameAssistant:jungeIfCanDoTab1()
 		end
 	end
 
-	if self.presetData.summon.normal < 2 and self.todayHaveDoneData.summon.normal == false then
+	local nowTime = xyd.getServerTime()
+	local baseFreeTime = xyd.models.summon:getBaseSummonFreeTime()
+	local seniorFreeTime = xyd.models.summon:getSeniorSummonFreeTime()
+
+	if self.presetData.summon.normal == 0 and xyd.tables.summonTable:getFreeTimeInterval(xyd.SummonType.BASE_FREE) <= nowTime - baseFreeTime then
+		self.ifCanDo.summon.normal = true
+		flag = true
+	elseif self.presetData.summon.normal == 1 and self.todayHaveDoneData.summon.normal == false then
 		self.ifCanDo.summon.normal = true
 		flag = true
 	end
 
-	if self.presetData.summon.senior < 2 and self.todayHaveDoneData.summon.senior == false then
+	if self.presetData.summon.senior == 0 and xyd.tables.summonTable:getFreeTimeInterval(xyd.SummonType.SENIOR_FREE) <= nowTime - seniorFreeTime then
+		self.ifCanDo.summon.senior = true
+		flag = true
+	elseif self.presetData.summon.senior == 1 and self.todayHaveDoneData.summon.senior == false then
 		self.ifCanDo.summon.senior = true
 		flag = true
 	end

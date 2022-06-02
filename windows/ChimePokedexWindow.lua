@@ -46,6 +46,10 @@ local chimeSize = {
 	[50002] = {
 		102,
 		289
+	},
+	[50003] = {
+		139,
+		294
 	}
 }
 
@@ -98,14 +102,10 @@ function ChimePokedexWindow:initPokedex()
 	local datas = chimeTable:getIDs()
 
 	local function sort_func(a, b)
-		local qlt_A = chimeTable:getQlt(a)
-		local qlt_B = chimeTable:getQlt(b)
+		local sort_A = chimeTable:getSort(a)
+		local sort_B = chimeTable:getSort(b)
 
-		if qlt_A ~= qlt_B then
-			return qlt_B < qlt_A
-		else
-			return a < b
-		end
+		return sort_A < sort_B
 	end
 
 	table.sort(datas, sort_func)
@@ -193,8 +193,11 @@ function ChimePokedexItem:setInfo(params)
 	local ID = self.tableID
 	local spriteName = chimeTable:getIcon(ID)
 	local qlt = chimeTable:getQlt(ID)
-	self.img.width = chimeSize[tonumber(self.tableID)][1]
-	self.img.height = chimeSize[tonumber(self.tableID)][2]
+
+	if chimeSize[tonumber(self.tableID)] then
+		self.img.width = chimeSize[tonumber(self.tableID)][1]
+		self.img.height = chimeSize[tonumber(self.tableID)][2]
+	end
 
 	xyd.setUISpriteAsync(self.img, nil, spriteName)
 

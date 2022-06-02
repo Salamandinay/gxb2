@@ -19,10 +19,10 @@ function ActivityRechargeLotteryWindow:ctor(name, params)
 	local lastViewTime = xyd.db.misc:getValue("activity_recharge_lottery_view_time")
 
 	if not lastViewTime or not xyd.isSameDay(tonumber(lastViewTime), xyd.getServerTime()) then
-		local msg = messages_pb.log_partner_data_touch_req()
-		msg.touch_id = xyd.DaDian.RECHARGE_LOTTERY
+		local msg = messages_pb.record_activity_req()
+		msg.activity_id = xyd.ActivityID.ACTIVITY_RECHARGE_LOTTERY
 
-		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+		xyd.Backend.get():request(xyd.mid.RECORD_ACTIVITY, msg)
 	end
 
 	xyd.db.misc:setValue({
