@@ -175,7 +175,7 @@ function Dungeon:onFight(event)
 	oldData.battle_id = data.battle_id or oldData.battle_id
 	oldData.current_stage = data.current_stage or oldData.current_stage
 
-	if not oldData.max_stage or oldData.max_stage < data.current_stage then
+	if not oldData.max_stage or data.current_stage and oldData.max_stage < data.current_stage then
 		oldData.max_stage = data.current_stage
 	end
 
