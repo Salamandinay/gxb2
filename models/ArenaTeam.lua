@@ -413,7 +413,7 @@ end
 
 function ArenaTeam:createTeam(teamName, needForce)
 	local msg = messages_pb:arena_team_create_team_req()
-	msg.team_name = teamName
+	msg.team_name = xyd.escapesLuaString(teamName)
 	msg.need_power = needForce
 
 	xyd.Backend.get():request(xyd.mid.ARENA_TEAM_CREATE_TEAM, msg)

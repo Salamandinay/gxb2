@@ -298,7 +298,14 @@ function ActivitySpfarmMapWindow:layout()
 	end
 
 	self.backNameLabel.text = __("ACTIVITY_SPFARM_TEXT08")
+
+	if xyd.Global.lang == "ja_jp" then
+		self.recordBtnLabel.fontSize = 18
+	end
+
 	self.recordBtnLabel.text = __("ACTIVITY_SPFARM_TEXT06")
+
+	self.recordLayoutConUILayout:Reposition()
 
 	if xyd.Global.lang == "en_en" then
 		self.recordUpBtnLabel.fontSize = 18

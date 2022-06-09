@@ -300,6 +300,7 @@ function ActivitySpfarmBuildUpWindow:updateDown()
 
 	if xyd.Global.lang == "fr_fr" then
 		self.descLabel.width = 500
+		self.descLabel.fontSize = 19
 	end
 
 	if defense and defense > 0 then
