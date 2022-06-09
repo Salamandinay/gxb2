@@ -24,6 +24,7 @@ function HeroChallengeChessGetPartnerWindow:getUIComponent()
 		self["effectGroup" .. i] = winTrans:NodeByName("groupEffect" .. i).gameObject
 	end
 
+	self.windowIds = {}
 	self.winTitle_ = winTrans:ComponentByName("labelTitle", typeof(UILabel))
 	self.btnRefresh_ = winTrans:NodeByName("btnRefresh").gameObject
 	self.btnRefreshCostLabel_ = winTrans:ComponentByName("btnRefresh/costNum", typeof(UILabel))
@@ -93,7 +94,7 @@ function HeroChallengeChessGetPartnerWindow:register()
 
 	UIEventListener.Get(self.btnRefresh_).onClick = handler(self, self.onBtnRefreshTouch)
 
-	self.eventProxy_:addEventListener(xyd.event.BUY_PARTNER, handler(self, self.refreshWindow))
+	self.eventProxy_:addEventListener(xyd.event.BUY_PARTNER, handler(self, self.buyRefreshWindow))
 	self.eventProxy_:addEventListener(xyd.event.REFRESH_CHESS_SHOP, handler(self, self.refreshWindow))
 end
 
@@ -104,6 +105,8 @@ function HeroChallengeChessGetPartnerWindow:initItems()
 	if not rewards or not next(rewards) then
 		xyd.models.heroChallenge:reqRefreshChessShop(self.fortId)
 	else
+		self.windowIds = rewards[1].partner_ids
+
 		self:refreshParnters(rewards[1].partner_ids)
 	end
 
@@ -127,12 +130,39 @@ function HeroChallengeChessGetPartnerWindow:refreshFreeState()
 	end
 end
 
+function HeroChallengeChessGetPartnerWindow:buyRefreshWindow()
+	local rewards = xyd.models.heroChallenge:getBuyChessReward(self.fortId) or {}
+	local ids = {}
+
+	if rewards and next(rewards) then
+		ids = rewards[1].partner_ids
+	end
+
+	for k, v in ipairs(self.windowIds) do
+		if xyd.arrayIndexOf(ids, v) == -1 then
+			self.windowIds[k] = "0"
+		end
+	end
+
+	if #ids == 3 then
+		self.windowIds = ids
+	end
+
+	self.groupMain_:SetActive(true)
+	self:refreshParnters(self.windowIds)
+	self:refreshFreeState()
+	self:updateBookLabel()
+end
+
 function HeroChallengeChessGetPartnerWindow:refreshWindow()
 	local rewards = xyd.models.heroChallenge:getBuyChessReward(self.fortId)
+	self.windowIds = {}
 
 	self.groupMain_:SetActive(true)
 
 	if rewards and next(rewards) then
+		self.windowIds = rewards[1].partner_ids
+
 		self:refreshParnters(rewards[1].partner_ids)
 	else
 		self:refreshParnters({})
@@ -164,7 +194,7 @@ function HeroChallengeChessGetPartnerWindow:onBtnRefreshTouch()
 	xyd.models.heroChallenge:reqRefreshChessShop(self.fortId)
 end
 
-function HeroChallengeChessGetPartnerWindow:onConfirmTouch(heronum, index)
+function HeroChallengeChessGetPartnerWindow:onConfirmTouch(heronum, index, index2)
 	local select = index or self.curSelect_
 	local heroChallenge = xyd.models.heroChallenge
 	local f1 = heroChallenge:getCoin(self.fortId) < 3
@@ -194,11 +224,11 @@ function HeroChallengeChessGetPartnerWindow:onConfirmTouch(heronum, index)
 		self.blockImg_:SetActive(true)
 
 		if not self.partnerTreeEffect_ then
-			self.partnerTreeEffect_ = xyd.Spine.new(self["effectGroup" .. index])
+			self.partnerTreeEffect_ = xyd.Spine.new(self["effectGroup" .. index2])
 		else
 			self.partnerTreeEffect_:destroy()
 
-			self.partnerTreeEffect_ = xyd.Spine.new(self["effectGroup" .. index])
+			self.partnerTreeEffect_ = xyd.Spine.new(self["effectGroup" .. index2])
 		end
 
 		self.partnerTreeEffect_:setInfo("partner_challenge_chess_lvlup", function ()
@@ -268,8 +298,6 @@ function HeroChallengeChessAwardItem1:getComponent()
 end
 
 function HeroChallengeChessAwardItem1:registerEvent()
-	local ids = self.ids_
-
 	for i = 1, 3 do
 		UIEventListener.Get(self["btnGetPartner" .. i]).onClick = function ()
 			self:onItemTouch(i)
@@ -287,22 +315,24 @@ function HeroChallengeChessAwardItem1:setInfo(fortId, ids)
 	self.nums_ = {}
 
 	for i = 1, #self.ids_ do
-		local descLabel = self["labelHasDesc" .. i]
-		local numLabel = self["labelHasNum" .. i]
+		if tonumber(self.ids_[i]) > 0 then
+			local descLabel = self["labelHasDesc" .. i]
+			local numLabel = self["labelHasNum" .. i]
 
-		descLabel.gameObject:SetActive(true)
+			descLabel.gameObject:SetActive(true)
 
-		local desc = __("CHESS_ALREADY_HAVE")
-		descLabel.text = __("CHESS_ALREADY_HAVE")
-		local num = xyd.models.heroChallenge:getHeroNum(self.fortId_, tonumber(self.ids_[i]))
+			local desc = __("CHESS_ALREADY_HAVE")
+			descLabel.text = __("CHESS_ALREADY_HAVE")
+			local num = xyd.models.heroChallenge:getHeroNum(self.fortId_, tonumber(self.ids_[i]))
 
-		if num and num > 0 then
-			self.nums_[i] = num
-		else
-			self.nums_[i] = 0
+			if num and num > 0 then
+				self.nums_[i] = num
+			else
+				self.nums_[i] = 0
+			end
+
+			descLabel.text = desc .. self.nums_[i]
 		end
-
-		descLabel.text = desc .. self.nums_[i]
 	end
 
 	self:updatePartners()
@@ -325,35 +355,37 @@ end
 
 function HeroChallengeChessAwardItem1:updatePartners()
 	for i = 1, #self.ids_ do
-		self["partnerGroup" .. i]:SetActive(true)
+		if tonumber(self.ids_[i]) > 0 then
+			self["partnerGroup" .. i]:SetActive(true)
 
-		local id = tonumber(self.ids_[i])
-		local params = self:getInfoByID(id)
+			local id = tonumber(self.ids_[i])
+			local params = self:getInfoByID(id)
 
-		if not self.cardItemList_[i] then
-			self.cardItemList_[i] = PartnerCard.new(self["partnerRoot" .. i])
-		end
-
-		if self.nums_[i] and self.nums_[i] == 2 then
-			if not self.effectList_[i] then
-				self.effectList_[i] = xyd.Spine.new(self["effectGroup" .. i])
-
-				self.effectList_[i]:setInfo("partner_challenge_chess_tips", function ()
-					self.effectList_[i]:play("texiao01", 0)
-				end)
-			else
-				self.effectList_[i]:SetActive(true)
-				self.effectList_[i]:play("texiao01", 0)
+			if not self.cardItemList_[i] then
+				self.cardItemList_[i] = PartnerCard.new(self["partnerRoot" .. i])
 			end
-		elseif self.effectList_[i] then
-			self.effectList_[i]:SetActive(false)
-		end
 
-		self.cardItemList_[i]:setInfo(params)
+			if self.nums_[i] and self.nums_[i] == 2 then
+				if not self.effectList_[i] then
+					self.effectList_[i] = xyd.Spine.new(self["effectGroup" .. i])
+
+					self.effectList_[i]:setInfo("partner_challenge_chess_tips", function ()
+						self.effectList_[i]:play("texiao01", 0)
+					end)
+				else
+					self.effectList_[i]:SetActive(true)
+					self.effectList_[i]:play("texiao01", 0)
+				end
+			elseif self.effectList_[i] then
+				self.effectList_[i]:SetActive(false)
+			end
+
+			self.cardItemList_[i]:setInfo(params)
+		end
 	end
 
 	for i = 1, 3 do
-		if not self.ids_[i] then
+		if not self.ids_[i] or tonumber(self.ids_[i]) == 0 then
 			self["partnerGroup" .. i]:SetActive(false)
 		end
 	end
@@ -363,14 +395,16 @@ function HeroChallengeChessAwardItem1:updateBtnState()
 	local ff = xyd.models.heroChallenge:getFirst(self.fortId_)
 
 	for i = 1, #self.ids_ do
-		self["btnGetPartner" .. i]:SetActive(true)
+		if tonumber(self.ids_[i]) > 0 then
+			self["btnGetPartner" .. i]:SetActive(true)
 
-		self["btnGetPartnerLabel" .. i].text = __("GET")
+			self["btnGetPartnerLabel" .. i].text = __("GET")
 
-		if ff and ff == 1 then
-			self["btnGetPartnerCostLabel" .. i].text = "0"
-		else
-			self["btnGetPartnerCostLabel" .. i].text = "3"
+			if ff and ff == 1 then
+				self["btnGetPartnerCostLabel" .. i].text = "0"
+			else
+				self["btnGetPartnerCostLabel" .. i].text = "3"
+			end
 		end
 	end
 end
@@ -388,9 +422,16 @@ end
 
 function HeroChallengeChessAwardItem1:onItemTouch(index)
 	local win = xyd.WindowManager.get():getWindow("hero_challenge_chess_get_partner_window")
+	local id_ = index
+
+	for i = 1, index do
+		if not self.ids_[i] or tonumber(self.ids_[i]) <= 0 then
+			id_ = id_ - 1
+		end
+	end
 
 	if win then
-		win:onConfirmTouch(self.nums_[index], index)
+		win:onConfirmTouch(self.nums_[index], id_, index)
 	end
 end
 

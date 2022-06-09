@@ -69,6 +69,29 @@ function BattleFailWindow:ctor(name, params)
 					end
 				end
 
+				local group = xyd.tables.partnerTable:getGroup(self.tableId_)
+				local showIds = xyd.tables.partnerTable:getShowIds(self.tableId_)
+
+				if group == 7 and xyd.tables.partnerTable:getStar(self.tableId_) == 10 and tonumber(self.skinId_) == 0 then
+					local awake = tonumber(teamData.awake)
+
+					if awake < 3 then
+						self.skinId_ = showIds[1]
+
+						break
+					end
+				end
+
+				if awake < 5 then
+					self.skinId_ = showIds[2]
+
+					break
+				end
+
+				if awake >= 5 then
+					self.skinId_ = showIds[3]
+				end
+
 				break
 			end
 		end
@@ -375,6 +398,11 @@ function BattleFailWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onShrineHurdleReport(data, data.isBoss)
+		elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onSpfarmBattle(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -403,7 +431,7 @@ function BattleFailWindow:initLayout()
 		elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
 			self.battleDetailBtn:X(240)
 			self.battleReviewBtn:X(290)
-		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
+		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			self.battleDetailBtn.transform:X(260)
 			self.battleReviewBtn.transform:X(320)
 		else
@@ -600,6 +628,10 @@ function BattleFailWindow:initLayout()
 		self:updateShrineHurdlePart()
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
 		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		self.battleReviewBtn:SetActive(true)
+		self:initSpfarm()
+		pvpFun()
 	else
 		pvpFun()
 	end
@@ -1465,7 +1497,8 @@ function BattleFailWindow:updateShrineHurdlePart()
 				show_skin = partner_info.show_skin,
 				awake = partner_info.awake,
 				equips = partner_info.equips,
-				uiRoot = self.shrinePartnerGroup_.gameObject
+				uiRoot = self.shrinePartnerGroup_.gameObject,
+				is_vowed = partner_info.is_vowed
 			}
 			local icon = xyd.getHeroIcon(paramsA)
 
@@ -1484,6 +1517,37 @@ function BattleFailWindow:willClose()
 	if self.callback then
 		self.callback(self.isOpenCampaign)
 	end
+end
+
+function BattleFailWindow:initSpfarm()
+	self.labelLeftPlayerName.text = xyd.Global.playerName
+	self.labelRightPlayerName.text = __("ACTIVITY_SPFARM_TEXT23")
+	local battleReport = self.battleParams.battle_report
+	local teamB = battleReport.teamB
+	local index = 1
+	local paramsB = {
+		noClick = true,
+		tableID = teamB[index].table_id,
+		lev = teamB[index].level,
+		isMonster = teamB[index].isMonster,
+		awake = teamB[index].awake,
+		uiRoot = self.groupRightIcon_
+	}
+	local iconB = xyd.getHeroIcon(paramsB)
+	local paramsA = {
+		avatarID = xyd.models.selfPlayer:getAvatarID(),
+		lev = xyd.models.backpack:getLev(),
+		avatar_frame_id = xyd.models.selfPlayer:getAvatarFrameID()
+	}
+	local iconA = PlayerIcon.new(self.groupLeftIcon_)
+
+	iconA:setInfo(paramsA)
+	self.labelLeftScoreText:SetActive(false)
+	self.labelRightScoreText:SetActive(false)
+	self.labelLeftScore:SetActive(false)
+	self.labelRightScore:SetActive(false)
+	self.labelLeftScoreChange:SetActive(false)
+	self.labelRightScoreChange:SetActive(false)
 end
 
 return BattleFailWindow

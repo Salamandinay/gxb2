@@ -337,6 +337,11 @@ function ChoosePartnerWindow:clearChoose()
 	for i in pairs(self.infos) do
 		if self.choosePartners[self.infos[i].partnerID] then
 			self.choosePartners[self.infos[i].partnerID] = false
+		end
+	end
+
+	for i in pairs(self.multiWrap_.items_) do
+		if self.multiWrap_.items_[i].heroIcon then
 			self.multiWrap_.items_[i].heroIcon.choose = false
 		end
 	end

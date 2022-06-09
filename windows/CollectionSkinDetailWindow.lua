@@ -454,7 +454,7 @@ function CollectionSkinDetailWindow:playSwitchAnimation()
 	sequence:Insert(0.1, DG.Tweening.DOTween.ToAlpha(getter, setter, 1, 0.1))
 end
 
-function CollectionSkinDetailWindow:onclickZoom()
+function CollectionSkinDetailWindow:onclickZoom(event)
 	local showID = self.partner_:getShowID()
 	showID = showID or self.partner_:getTableID()
 	local res = nil

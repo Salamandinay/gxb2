@@ -1,6 +1,5 @@
 local json = require("cjson")
 local ActivitySpfarmSelectPartnerWindow = class("ActivitySpfarmSelectPartnerWindow", import(".BaseWindow"))
-local MAX_NUM = 10
 local PartnerFilter = import("app.components.PartnerFilter")
 local HeroIconWithHP = class("HeroIconWithHP", import("app.components.HeroIcon"))
 local FormationItem = class("FormationItem")
@@ -37,6 +36,7 @@ function FormationItem:update(index, realIndex, info)
 		self.heroIcon_ = import("app.components.HeroIcon").new(self.uiRoot_, self.parent_.partnerRenderPanel)
 	end
 
+	self.lock_ = info.lock
 	self.partner_ = info.partnerInfo
 	self.partnerId_ = self.partner_.partner_id or self.partner_.partnerID
 	self.partner_.noClickSelected = true
@@ -50,14 +50,27 @@ function FormationItem:update(index, realIndex, info)
 end
 
 function FormationItem:updateSelectState()
-	if self.partnerId_ and self.partnerId_ > 0 then
-		local isSelect = self.parent_:isSelected(self.partnerId_)
+	if self.lock_ then
+		self.heroIcon_:setChoose(false)
+		self.heroIcon_:setLock(true)
+	else
+		self.heroIcon_:setLock(false)
 
-		self:setIsChoose(isSelect)
+		if self.partnerId_ and self.partnerId_ > 0 then
+			local isSelect = self.parent_:isSelected(self.partnerId_)
+
+			self:setIsChoose(isSelect)
+		end
 	end
 end
 
 function FormationItem:onClick()
+	if self.lock_ then
+		xyd.alertTips(__("ACTIVITY_SPFARM_TEXT77"))
+
+		return
+	end
+
 	self.parent_:onClickheroIcon(self.partner_, self.isSelected)
 end
 
@@ -109,6 +122,7 @@ function FormationItemWithHP:update(index, realIndex, info)
 	end
 
 	self.partner_ = info.partnerInfo
+	self.lock_ = info.lock
 	self.partnerId_ = self.partner_.partner_id or self.partner_.partnerID
 	self.partner_.noClickSelected = true
 	self.partner_.callback = handler(self, self.onClick)
@@ -134,25 +148,53 @@ end
 function ActivitySpfarmSelectPartnerWindow:ctor(name, params)
 	ActivitySpfarmSelectPartnerWindow.super.ctor(self, name, params)
 
+	self.playerID_ = params.player_id
 	self.SlotModel = xyd.models.slot
+	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
 
 	self:readStorageFormation()
 end
 
 function ActivitySpfarmSelectPartnerWindow:readStorageFormation()
-	if self.defPartners and #self.defPartners > 0 then
+	local partnerUseList = self.activityData:getPartnerUse()
+	local maxNum = self.activityData:getTypeBuildLimitNum(xyd.ActivitySpfarmPlicyType.SELECT_PARTNER_NUM)
+
+	if partnerUseList and #partnerUseList > 0 then
+		self.partnerListInfo = {}
+
+		for _, partnerInfo in ipairs(partnerUseList) do
+			local hp = self.activityData:getHp(partnerInfo.partner_id)
+
+			table.insert(self.partnerListInfo, {
+				lock = true,
+				partnerInfo = partnerInfo,
+				hp = hp
+			})
+		end
+
 		return
 	end
 
 	local dbVal = xyd.db.formation:getValue("spfram_select_partner_list")
+	self.partnerListInfo = {}
 
 	if not dbVal then
-		self.defPartners = {}
-
 		return
-	end
+	else
+		local partnerList = json.decode(dbVal)
 
-	self.defPartners = json.decode(dbVal)
+		for _, partnerId in ipairs(partnerList) do
+			local partnerInfo = self.SlotModel:getPartner(tonumber(partnerId))
+			local hp = self.activityData:getHp(partnerInfo.partner_id)
+
+			if maxNum > #self.partnerListInfo then
+				table.insert(self.partnerListInfo, {
+					partnerInfo = partnerInfo,
+					hp = hp
+				})
+			end
+		end
+	end
 end
 
 function ActivitySpfarmSelectPartnerWindow:initWindow()
@@ -167,7 +209,22 @@ end
 
 function ActivitySpfarmSelectPartnerWindow:register()
 	UIEventListener.Get(self.sureBtn_).onClick = function ()
-		self:saveLocalformation()
+		if not self.playerID_ then
+			xyd.alertTips(__("ACTIVITY_SPFARM_TEXT77"))
+			self:close()
+
+			return
+		end
+
+		if self.partnerListInfo and #self.partnerListInfo > 0 then
+			self.activityData:startRob(self.playerID_, self.partnerListInfo)
+			self:saveLocalformation()
+		else
+			xyd.alert(xyd.AlertType.TIPS, __("AT_LEAST_ONE_HERO"))
+
+			return
+		end
+
 		xyd.WindowManager.get():closeWindow(self.name_)
 	end
 
@@ -177,9 +234,13 @@ function ActivitySpfarmSelectPartnerWindow:register()
 end
 
 function ActivitySpfarmSelectPartnerWindow:updateTopList(keepPosition)
-	self.partnerMultiWrap_:setInfos(self.defPartners, {
+	self.partnerMultiWrap_:setInfos(self.partnerListInfo, {
 		keepPosition = keepPosition
 	})
+
+	if not keepPosition then
+		self.selectScrollView:ResetPosition()
+	end
 end
 
 function ActivitySpfarmSelectPartnerWindow:getUIComponent()
@@ -204,10 +265,6 @@ function ActivitySpfarmSelectPartnerWindow:getUIComponent()
 	self.partnerRenderPanel = self.chooseGroup:ComponentByName("partner_scroller", typeof(UIPanel))
 	self.partnerScroller_uiPanel = self.chooseGroup:ComponentByName("partner_scroller", typeof(UIPanel))
 	self.partnerListWarpContent_ = self.chooseGroup:ComponentByName("partner_scroller/partner_container", typeof(MultiRowWrapContent))
-
-	self:waitForFrame(1, function ()
-		self.selectScrollView:ResetPosition()
-	end)
 end
 
 function ActivitySpfarmSelectPartnerWindow:initPartnerList()
@@ -274,6 +331,10 @@ function ActivitySpfarmSelectPartnerWindow:initNormalPartnerData(groupID)
 				isSelected = isS
 			}
 
+			if not self.playerID_ and not isS then
+				data.lock = true
+			end
+
 			if isS then
 				table.insert(partnerDataList, data)
 			elseif groupID == 0 or pGroupID == groupID then
@@ -286,8 +347,8 @@ function ActivitySpfarmSelectPartnerWindow:initNormalPartnerData(groupID)
 end
 
 function ActivitySpfarmSelectPartnerWindow:isSelected(partnerId)
-	for _, info in ipairs(self.defPartners) do
-		if partnerId == info.partnerInfo.partnerID then
+	for _, info in ipairs(self.partnerListInfo) do
+		if partnerId == info.partnerInfo.partnerID or partnerId == info.partnerInfo.partner_id then
 			return true
 		end
 	end
@@ -299,9 +360,15 @@ function ActivitySpfarmSelectPartnerWindow:onClickheroIcon(partnerInfo, isChoose
 	xyd.SoundManager.get():playSound("2037")
 
 	if isChoose then
-		for index, info in ipairs(self.defPartners) do
+		if not self.playerID_ then
+			xyd.alertTips(__("ACTIVITY_SPFARM_TEXT77"))
+
+			return
+		end
+
+		for index, info in ipairs(self.partnerListInfo) do
 			if partnerInfo.partnerID == info.partnerInfo.partnerID then
-				table.remove(self.defPartners, index)
+				table.remove(self.partnerListInfo, index)
 
 				break
 			end
@@ -309,7 +376,15 @@ function ActivitySpfarmSelectPartnerWindow:onClickheroIcon(partnerInfo, isChoose
 
 		self:updateTopList(true)
 	else
-		local hp = 100
+		local maxNum = self.activityData:getTypeBuildLimitNum(xyd.ActivitySpfarmPlicyType.SELECT_PARTNER_NUM)
+
+		if maxNum <= #self.partnerListInfo then
+			xyd.alertTips(__("ACTIVITY_SPFARM_TEXT57"))
+
+			return
+		end
+
+		local hp = self.activityData:getHp(partnerInfo.partner_id)
 		local params = {
 			hp = hp,
 			partnerInfo = partnerInfo
@@ -317,7 +392,7 @@ function ActivitySpfarmSelectPartnerWindow:onClickheroIcon(partnerInfo, isChoose
 		local deadList = {}
 		local liveList = {}
 
-		for _, info in ipairs(self.defPartners) do
+		for _, info in ipairs(self.partnerListInfo) do
 			if info.hp > 0 then
 				table.insert(liveList, info)
 			else
@@ -331,7 +406,7 @@ function ActivitySpfarmSelectPartnerWindow:onClickheroIcon(partnerInfo, isChoose
 			table.insert(deadList, params)
 		end
 
-		self.defPartners = xyd.arrayMerge(liveList, deadList)
+		self.partnerListInfo = xyd.arrayMerge(liveList, deadList)
 
 		self:updateTopList(true)
 	end
@@ -350,11 +425,12 @@ function ActivitySpfarmSelectPartnerWindow:onClickheroIcon(partnerInfo, isChoose
 end
 
 function ActivitySpfarmSelectPartnerWindow:updateForceNum()
-	self.labelTips_.text = "出战战姬" .. #self.defPartners .. "/" .. MAX_NUM
+	local maxNum = self.activityData:getTypeBuildLimitNum(xyd.ActivitySpfarmPlicyType.SELECT_PARTNER_NUM)
+	self.labelTips_.text = __("ACTIVITY_SPFARM_TEXT53") .. " " .. #self.partnerListInfo .. "/" .. maxNum
 end
 
 function ActivitySpfarmSelectPartnerWindow:setLabel()
-	self.titleLabel_.text = "战姬选择"
+	self.titleLabel_.text = __("ACTIVITY_SPFARM_TEXT53")
 	self.sureBtnLabel_.text = __("SURE")
 end
 
@@ -399,9 +475,19 @@ function ActivitySpfarmSelectPartnerWindow:showPartnerDetail(partnerInfo)
 end
 
 function ActivitySpfarmSelectPartnerWindow:saveLocalformation()
+	for _, info in ipairs(self.partnerListInfo) do
+		info.lock = false
+	end
+
+	local partnerList = {}
+
+	for _, info in ipairs(self.partnerListInfo) do
+		table.insert(partnerList, info.partnerInfo.partnerID)
+	end
+
 	local dbParams = {
 		key = "spfram_select_partner_list",
-		value = json.encode(self.defPartners)
+		value = json.encode(partnerList)
 	}
 
 	xyd.db.formation:addOrUpdate(dbParams)

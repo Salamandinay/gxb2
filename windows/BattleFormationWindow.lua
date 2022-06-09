@@ -264,9 +264,12 @@ function FormationItemWithHP:update(index, realIndex, info)
 
 	self.partner_ = info.partnerInfo
 	self.callbackFunc = info.callbackFunc
+	self.isBeenLock = false
 
+	self:getHeroIcon():setLock(false)
 	self:setIsChoose(info.isSelected)
 
+	self.model_ = info.model
 	self.partnerId_ = self.partner_.partnerID
 	self.partner_.noClickSelected = true
 	self.partner_.callback = handler(self, self.onClick)
@@ -276,7 +279,12 @@ function FormationItemWithHP:update(index, realIndex, info)
 
 	self.heroIcon_:setInfo(self.partner_)
 
-	self.hp = xyd.models.trial:getHp(info.partnerInfo.partnerID) / 100
+	if self.model_ then
+		self.hp = self.model_:getHp(info.partnerInfo.partnerID) / 100
+	else
+		self.hp = xyd.models.trial:getHp(info.partnerInfo.partnerID) / 100
+	end
+
 	self.heroIcon_.progress.value = self.hp
 
 	if self.hp <= 0 then
@@ -284,9 +292,38 @@ function FormationItemWithHP:update(index, realIndex, info)
 	else
 		xyd.applyChildrenOrigin(self.uiRoot_)
 	end
+
+	local parentParams = self.parent_:getParams()
+
+	if self.parent_:getBattleType() == xyd.BattleType.ACTIVITY_SPFARM and parentParams.spfarm_type == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
+		local gridId = parentParams.gridId
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+		local id = activityData:getBuildBaseInfo(gridId).id
+		local buildInfos = activityData:getMyBuildInfos()
+
+		for i, buildInfo in pairs(buildInfos) do
+			if buildInfo.id ~= id and buildInfo.partners and #buildInfo.partners > 0 then
+				for k, buildPartnerInfo in pairs(buildInfo.partners) do
+					if buildPartnerInfo.partner_id == self.partnerId_ then
+						self:getHeroIcon():setLock(true)
+
+						self.isBeenLock = true
+					end
+				end
+			end
+		end
+	end
 end
 
 function FormationItemWithHP:onClick()
+	local parentParams = self.parent_:getParams()
+
+	if self.parent_:getBattleType() == xyd.BattleType.ACTIVITY_SPFARM and parentParams.spfarm_type == xyd.ActivitySpfarmOpenBattleFormationType.DEF and self.isBeenLock then
+		xyd.alertTips(__("ACTIVITY_SPFARM_TEXT39"))
+
+		return
+	end
+
 	if self.hp <= 0 then
 		xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
 		xyd.showToast(__("TRIAL_TEXT10"))
@@ -528,11 +565,17 @@ function BattleFormationWindow:ctor(name, params)
 	self.battleType = params.battleType or xyd.BattleType.CAMPAIGN
 	self.stageId = params.stageId
 	self.cellId_ = params.cell_id
+	self.spFarmType = params.spfarm_type
 	self.pet = params.pet or 0
 	self.currentGroup_ = params.current_group or 0
+	self.gridId_ = params.gridId
 
 	if self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
 		self.selectGroup_ = params.current_group or 0
+	end
+
+	if self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		self.defaultMaxNum = 3
 	end
 
 	if self.battleType ~= xyd.BattleType.ACADEMY_ASSESSMENT then
@@ -610,6 +653,34 @@ function BattleFormationWindow:ctor(name, params)
 				for i = 1, #partners do
 					self.nowPartnerList[tonumber(partners[i].pos)] = partners[i].partner_id
 				end
+			end
+		end
+
+		if self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+			if self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
+				self.nowPartnerList = {}
+				local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+				local buildInfo = activityData:getBuildBaseInfo(self.params_.gridId)
+
+				if buildInfo.partners and #buildInfo.partners > 0 then
+					for i, partnerInfo in pairs(buildInfo.partners) do
+						local index = nil
+
+						if partnerInfo.pos == 1 then
+							index = 1
+						elseif partnerInfo.pos == 3 then
+							index = 2
+						elseif partnerInfo.pos == 5 then
+							index = 3
+						end
+
+						self.nowPartnerList[index] = partnerInfo.partner_id
+					end
+				else
+					self.nowPartnerList = {}
+				end
+			else
+				self.nowPartnerList = {}
 			end
 		end
 	else
@@ -702,12 +773,23 @@ function BattleFormationWindow:getUIComponent()
 	self.frontGroup = self.selectedGroup:Find("front_group")
 	self.labelFront = self.frontGroup:ComponentByName("front_label", typeof(UILabel))
 	self.labelBack = self.backGroup:ComponentByName("back_label", typeof(UILabel))
-	self.container1 = self.frontGroup:Find("container_1")
-	self.container2 = self.frontGroup:Find("container_2")
-	self.container3 = self.backGroup:Find("container_3")
-	self.container4 = self.backGroup:Find("container_4")
-	self.container5 = self.backGroup:Find("container_5")
-	self.container6 = self.backGroup:Find("container_6")
+
+	if self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		self.container1 = self.frontGroup:Find("container_1")
+		self.container2 = self.backGroup:Find("container_2")
+		self.container3 = self.backGroup:Find("container_3")
+		self.container4 = self.frontGroup:Find("container_4")
+		self.container5 = self.backGroup:Find("container_5")
+		self.container6 = self.backGroup:Find("container_6")
+	else
+		self.container1 = self.frontGroup:Find("container_1")
+		self.container2 = self.frontGroup:Find("container_2")
+		self.container3 = self.backGroup:Find("container_3")
+		self.container4 = self.backGroup:Find("container_4")
+		self.container5 = self.backGroup:Find("container_5")
+		self.container6 = self.backGroup:Find("container_6")
+	end
+
 	self.fGroup = self.chooseGroup:Find("f_group")
 	self.partnerScrollView = self.chooseGroup:ComponentByName("partner_scroller", typeof(UIScrollView))
 	self.partnerRenderPanel = self.chooseGroup:ComponentByName("partner_scroller", typeof(UIPanel))
@@ -715,7 +797,7 @@ function BattleFormationWindow:getUIComponent()
 	self.partnerListWarpContent_ = self.chooseGroup:ComponentByName("partner_scroller/partner_container", typeof(MultiRowWrapContent))
 	self.heroRoot = self.chooseGroup:Find("hero_root").gameObject
 
-	if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE then
+	if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 		self.progress1 = self.container1:ComponentByName("progress1", typeof(UIProgressBar))
 		self.progress2 = self.container2:ComponentByName("progress2", typeof(UIProgressBar))
 		self.progress3 = self.container3:ComponentByName("progress3", typeof(UIProgressBar))
@@ -787,7 +869,7 @@ function BattleFormationWindow:getUIComponent()
 		self:initAcademyAssessmentGuide()
 	end
 
-	if self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.TIME_CLOISTER_PROBE then
+	if self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.TIME_CLOISTER_PROBE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 		self.petBtn:SetActive(false)
 
 		ifShowPetBtn = false
@@ -798,7 +880,7 @@ function BattleFormationWindow:getUIComponent()
 
 		local y = 137
 
-		if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE then
+		if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			y = 170
 		end
 
@@ -1009,6 +1091,15 @@ function BattleFormationWindow:playOpenAnimation(callback)
 		callback()
 	end
 
+	local addPos = 0
+
+	print("self.battleType   ", self.battleType)
+
+	if self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		addPos = 183
+	end
+
+	print("addPos  ", addPos)
 	self.topGroup:SetLocalPosition(0, 810, 0)
 	self.chooseGroup:SetLocalPosition(0, -858, 0)
 
@@ -1031,7 +1122,7 @@ function BattleFormationWindow:playOpenAnimation(callback)
 
 	self.down_tween = self:getSequence()
 
-	self.down_tween:Append(self.chooseGroup.transform:DOLocalMoveY(-78, 0.5))
+	self.down_tween:Append(self.chooseGroup.transform:DOLocalMoveY(-78 + addPos, 0.5))
 	self.down_tween:AppendCallback(function ()
 		if self.down_tween then
 			self.down_tween:Kill(true)
@@ -1110,7 +1201,7 @@ function BattleFormationWindow:onClickBattleBtn()
 	local partnerParams = formationData.partnerParams
 	local formationIds = formationData.formationIds
 
-	if #partnerParams <= 0 then
+	if #partnerParams <= 0 and self.battleType ~= xyd.BattleType.ACTIVITY_SPFARM or #partnerParams <= 0 and self.battleType == xyd.BattleType.ACTIVITY_SPFARM and self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.BATTLE then
 		xyd.alert(xyd.AlertType.TIPS, __("AT_LEAST_ONE_HERO"))
 
 		return
@@ -1161,7 +1252,8 @@ function BattleFormationWindow:onClickBattleBtn()
 		[xyd.BattleType.TIME_CLOISTER_EXTRA] = self.timeCloisterEncounter,
 		[xyd.BattleType.SHRINE_HURDLE] = self.shrineHurdleBattle,
 		[xyd.BattleType.GAME_ASSISTANT_ARENA] = self.gameAssistantArenaBattle,
-		[xyd.BattleType.GAME_ASSISTANT_GUILD] = self.gameAssistantGuildBattle
+		[xyd.BattleType.GAME_ASSISTANT_GUILD] = self.gameAssistantGuildBattle,
+		[xyd.BattleType.ACTIVITY_SPFARM] = self.spfarmFight
 	}
 
 	if battleFunc[self.battleType] then
@@ -1625,6 +1717,61 @@ function BattleFormationWindow:newTrialBattle(partnerParams)
 	xyd.WindowManager.get():closeWindow("new_trial_boss_info_window2")
 end
 
+function BattleFormationWindow:spfarmFight(partnerParams)
+	if self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
+		local partners = {}
+
+		for _, info in ipairs(partnerParams) do
+			local fightPatner = {
+				partner_id = info.partner_id,
+				pos = info.pos * 2 - 1
+			}
+
+			table.insert(partners, fightPatner)
+		end
+
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+
+		xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_SPFARM, json.encode({
+			type = xyd.ActivitySpfarmType.SET_DEF,
+			id = activityData:getBuildBaseInfo(self.params_.gridId).id,
+			partners = partners
+		}))
+		self:close()
+	else
+		local partners = {}
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+		local partnerUseList = activityData:getPartnerUse()
+
+		for _, info in ipairs(partnerParams) do
+			local fightPatner = {}
+			local index = 0
+
+			for idx, partnerData in ipairs(partnerUseList) do
+				if info.partner_id == partnerData.partner_id or info.partner_id == partnerData.partnerID then
+					index = idx
+
+					break
+				end
+			end
+
+			if index > 0 then
+				fightPatner.partner_id = index
+				fightPatner.pos = info.pos * 2 - 1
+
+				table.insert(partners, fightPatner)
+			end
+		end
+
+		xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_SPFARM, json.encode({
+			type = xyd.ActivitySpfarmType.FIGHT,
+			pos = self.params_.gridId,
+			partners = partners
+		}))
+		self:close()
+	end
+end
+
 function BattleFormationWindow:shrineHurdleBattle(partnerParams)
 	local guideIndex = xyd.models.shrineHurdleModel:checkInGuide()
 
@@ -1663,9 +1810,6 @@ function BattleFormationWindow:gameAssistantArenaBattle(partnerParams)
 	end
 
 	local presetData = xyd.models.gameAssistant.presetData
-
-	dump(presetData.arenaBattleFormationInfo)
-
 	presetData.arenaBattleFormationInfo = {
 		pet_id = self.pet,
 		partners = partnerParams,
@@ -1988,7 +2132,7 @@ function BattleFormationWindow:getPartners()
 		list = activityData:getSortedPartners()
 	end
 
-	if xyd.BattleType.TRIAL ~= self.battleType then
+	if xyd.BattleType.TRIAL ~= self.battleType and xyd.BattleType.ACTIVITY_SPFARM ~= self.battleType then
 		return list
 	end
 
@@ -1996,25 +2140,39 @@ function BattleFormationWindow:getPartners()
 		return self.partners
 	end
 
-	local filterList = {}
+	if xyd.BattleType.TRIAL == self.battleType then
+		local filterList = {}
 
-	for i, _ in pairs(list) do
-		local partners = list[i]
-		filterList[i] = {}
+		for i, _ in pairs(list) do
+			local partners = list[i]
+			filterList[i] = {}
 
-		for j = 1, #partners do
-			local partnerID = partners[j]
-			local partner = self.SlotModel:getPartner(partnerID)
+			for j = 1, #partners do
+				local partnerID = partners[j]
+				local partner = self.SlotModel:getPartner(partnerID)
 
-			if partner and partner:getLevel() >= 40 then
-				table.insert(filterList[i], partnerID)
+				if partner and partner:getLevel() >= 40 then
+					table.insert(filterList[i], partnerID)
+				end
+			end
+		end
+
+		self.partners = filterList
+
+		return self.partners
+	elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+		if self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
+			return list
+		else
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+
+			if not activityData then
+				return {}
+			else
+				return activityData:getPartnerUse()
 			end
 		end
 	end
-
-	self.partners = filterList
-
-	return self.partners
 end
 
 function BattleFormationWindow:initPartnerList()
@@ -2051,7 +2209,7 @@ function BattleFormationWindow:initPartnerList()
 		self.partnerFilter:updateChooseGroup(self.currentGroup_)
 	end
 
-	if self.battleType == xyd.BattleType.TRIAL then
+	if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItemWithHP, self)
 	elseif self.battleType == xyd.BattleType.ARCTIC_EXPEDITION then
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItemWithStateIcon, self)
@@ -2183,6 +2341,17 @@ function BattleFormationWindow:initNormalPartnerData(groupID, needUpdateTop)
 
 			if self.battleType == xyd.BattleType.ENTRANCE_TEST or self.battleType == xyd.BattleType.ENTRANCE_TEST_DEF then
 				isS = self:isSelected(partnerInfo.partnerID or partnerId, self.nowPartnerList, false)
+				local activityData = nil
+				activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+				local flag = activityData:getLevel() == xyd.EntranceTestLevelType.R1 or activityData:getLevel() == xyd.EntranceTestLevelType.R2
+				flag = not flag
+
+				if flag then
+					partnerInfo:updateAttrs({
+						isEntrance = true,
+						fullStarOrigin = true
+					})
+				end
 			end
 
 			local data = {
@@ -2312,6 +2481,73 @@ function BattleFormationWindow:initSHPartnerData(groupID, needUpdateTop)
 						heroIcon.scale = 1
 					end
 
+					self:onClickheroIcon(heroIcon, false, false, false, partnerInfo.posId)
+				end
+			end
+		end
+	end
+
+	self.labelForceNum.text = tostring(self.power)
+
+	return partnerDataList
+end
+
+function BattleFormationWindow:initSpfarmFightData(groupID, needUpdateTop)
+	local partnerList = self:getPartners()
+	local partnerDataList = {}
+	self.power = 0
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+
+	for index, partnerInfo in ipairs(partnerList) do
+		if partnerInfo and partnerInfo.partner_id ~= 0 then
+			local partnerId = partnerInfo.partner_id or partnerInfo.partnerID
+			local partnerInfo = self:getPartnerByPartnerId(tonumber(partnerId))
+			partnerInfo.noClick = true
+			local pGroupID = xyd.tables.partnerTable:getGroup(partnerInfo.tableID)
+			local isS = self:isSelected(partnerId, self.nowPartnerList, false)
+			local isArcticFine = xyd.models.activity:getArcticPartnerValue(partnerId) >= 12
+			local data = {
+				callbackFunc = handler(self, function (a, callbackPInfo, callbackIsChoose)
+					self:onClickheroIcon(callbackPInfo, callbackIsChoose)
+				end),
+				partnerInfo = partnerInfo,
+				isSelected = isS.isSelected,
+				model = activityData
+			}
+
+			if isS.isSelected then
+				table.insert(partnerDataList, data)
+
+				if needUpdateTop == true then
+					self:onClickheroIcon(partnerInfo, false, isS.posId)
+				end
+			elseif groupID == 0 or pGroupID == groupID or groupID == 7 and isArcticFine then
+				table.insert(partnerDataList, data)
+			end
+		end
+	end
+
+	__TRACE("測試一次")
+
+	for i, _ in pairs(self.nowPartnerList) do
+		local partnerId = self.nowPartnerList[i]
+
+		if partnerId ~= nil and partnerId ~= 0 then
+			local partnerInfo = self:getPartnerByPartnerId(tonumber(partnerId))
+
+			if partnerInfo then
+				partnerInfo.noClick = true
+				partnerInfo.posId = i
+				local isS = true
+				self.power = self.power + partnerInfo:getPower()
+				local cParams = self:isPartnerSelected(partnerInfo.partnerID)
+				local isChoose = cParams.isSelected
+
+				if not isChoose then
+					local HeroIcon = import("app.components.HeroIcon")
+					local heroIcon = HeroIcon.new()
+
+					heroIcon:setInfo(partnerInfo, self.pet)
 					self:onClickheroIcon(heroIcon, false, false, false, partnerInfo.posId)
 				end
 			end
@@ -2500,7 +2736,7 @@ end
 function BattleFormationWindow:isDeath(partnerID)
 	local flag = false
 
-	if (self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS) and xyd.models.heroChallenge:isDead(partnerID, self.params_.fortID) then
+	if (self.battleType == xyd.BattleType.HERO_CHALLENGE or self.bttleType == xyd.BattleType.HERO_CHALLENGE_CHESS) and xyd.models.heroChallenge:isDead(partnerID, self.params_.fortID) then
 		flag = true
 	end
 
@@ -2557,6 +2793,12 @@ function BattleFormationWindow:iniPartnerData(groupID, needUpdateTop)
 		partnerDataList = self:initPartnerDataWithLev(groupID, needUpdateTop, 100)
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		partnerDataList = self:initSHPartnerData(groupID, needUpdateTop)
+	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		if self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
+			partnerDataList = self:initNormalPartnerData(groupID, needUpdateTop)
+		else
+			partnerDataList = self:initSpfarmFightData(groupID, needUpdateTop)
+		end
 	else
 		partnerDataList = self:initNormalPartnerData(groupID, needUpdateTop)
 	end
@@ -2720,6 +2962,15 @@ function BattleFormationWindow:onClickheroIcon(partnerInfo, isChoose, pos, needA
 		if xyd.BattleType.TRIAL == self.battleType then
 			local hp = xyd.models.trial:getHp(partnerInfo.partnerID)
 			self["progress" .. tostring(tostring(posId))].value = hp / 100
+		elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+			local hp = 100
+
+			if activityData then
+				hp = activityData:getHp(partnerInfo.partnerID)
+			end
+
+			self["progress" .. tostring(tostring(posId))].value = hp / 100
 		elseif xyd.BattleType.SHRINE_HURDLE == self.battleType then
 			local hp = partnerInfo.status.hp
 			self["progress" .. tostring(tostring(posId))].value = hp / 100
@@ -2857,6 +3108,10 @@ function BattleFormationWindow:endDrag(copyIcon)
 				if xyd.BattleType.TRIAL == self.battleType then
 					self["progress" .. cPosId].value = xyd.models.trial:getHp(partnerInfo.partnerID) / 100
 					self["progress" .. posId].value = xyd.models.trial:getHp(cInfo.partnerID) / 100
+				elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+					local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+					self["progress" .. cPosId].value = activityData:getHp(partnerInfo.partnerID) / 100
+					self["progress" .. posId].value = activityData:getHp(cInfo.partnerID) / 100
 				else
 					local cpartnerID = partnerInfo.partnerID
 					local posPartnerID = cInfo.partnerID
@@ -2887,6 +3142,9 @@ function BattleFormationWindow:endDrag(copyIcon)
 		if self["progress" .. cPosId] then
 			if self.battleType == xyd.BattleType.TRIAL then
 				self["progress" .. cPosId].value = xyd.models.trial:getHp(partnerInfo.partnerID) / 100
+			elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+				local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+				self["progress" .. cPosId].value = activityData:getHp(partnerInfo.partnerID) / 100
 			else
 				local cpartnerID = partnerInfo.partnerID
 				self["progress" .. cPosId].value = xyd.models.shrineHurdleModel:getPartner(cpartnerID).status.hp / 100
@@ -2907,6 +3165,9 @@ function BattleFormationWindow:endDrag(copyIcon)
 			self["progress" .. posId].value = 0
 		elseif self.battleType == xyd.BattleType.TRIAL then
 			self["progress" .. posId].value = xyd.models.trial:getHp(partnerInfo.partnerID) / 100
+		elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+			self["progress" .. posId].value = activityData:getHp(partnerInfo.partnerID) / 100
 		else
 			local cpartnerID = partnerInfo.partnerID
 			self["progress" .. posId].value = xyd.models.shrineHurdleModel:getPartner(cpartnerID).status.hp / 100
@@ -3041,6 +3302,10 @@ function BattleFormationWindow:showPartnerDetail(partnerInfo)
 		wndName = "partner_detail_window"
 		closeBefore = true
 		params.isTrial = true
+	elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+		wndName = "partner_detail_window"
+		closeBefore = true
+		params.isSpfarm = true
 	elseif self.battleType == xyd.BattleType.ARCTIC_EXPEDITION then
 		wndName = "partner_detail_window"
 		closeBefore = true
@@ -3164,7 +3429,7 @@ function BattleFormationWindow:iconTapHandler(copyPartnerInfo, isFriendPartner)
 	self:updateForceNum()
 	self:updateBuff()
 
-	if xyd.BattleType.TRIAL == self.battleType or xyd.BattleType.SHRINE_HURDLE == self.battleType then
+	if xyd.BattleType.TRIAL == self.battleType or xyd.BattleType.SHRINE_HURDLE == self.battleType or xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
 		local copyIconInfo = copyPartnerInfo
 		local posId = copyIconInfo.posId
 
@@ -3330,9 +3595,11 @@ function BattleFormationWindow:updateBuff()
 
 	if firstJump then
 		self:waitForFrame(1, function ()
-			self.buffWrapContent:setInfos(self.buffDataList)
-			self.buffWrapContent:jumpToInfo(firstJump)
-			self.buffWrapContent.wrapContent_:WrapContent()
+			if self.buffRoot.gameObject.activeSelf then
+				self.buffWrapContent:setInfos(self.buffDataList)
+				self.buffWrapContent:jumpToInfo(firstJump)
+				self.buffWrapContent.wrapContent_:WrapContent()
+			end
 		end)
 	end
 end
@@ -3518,6 +3785,14 @@ function BattleFormationWindow:readStorageFormation()
 			end
 		elseif self.battleType == xyd.BattleType.TRIAL then
 			local hp = xyd.models.trial:getHp(sPartnerID) / 100
+
+			if hp <= 0 then
+				tmpPartnerList[i] = nil
+				self.nowPartnerList[i] = nil
+			end
+		elseif xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
+			local hp = activityData:getHp(sPartnerID) / 100
 
 			if hp <= 0 then
 				tmpPartnerList[i] = nil

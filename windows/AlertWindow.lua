@@ -35,15 +35,15 @@ function xyd.alert(alertType, message, callback, confirmText, noClose, cost, tit
 end
 
 function xyd.alertTips(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
-	xyd.alert(xyd.AlertType.TIPS, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+	return xyd.alert(xyd.AlertType.TIPS, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
 function xyd.alertYesNo(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
-	xyd.alert(xyd.AlertType.YES_NO, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+	return xyd.alert(xyd.AlertType.YES_NO, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
 function xyd.alertConfirm(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
-	xyd.alert(xyd.AlertType.CONFIRM, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+	return xyd.alert(xyd.AlertType.CONFIRM, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
 local AlertWindow = class("AlertWindow", import(".BaseWindow"))
@@ -288,6 +288,7 @@ function AlertWindow:setupButtons()
 
 		local label2 = self.btnCancel_:ComponentByName("button_label", typeof(UILabel))
 		label2.text = __("NO")
+		self.cancelBtnUILabel = label2
 		costBtn = self.btnSure_
 	end
 
@@ -373,6 +374,12 @@ end
 
 function AlertWindow:setDescWidth(width)
 	self.labelDesc_.width = width
+end
+
+function AlertWindow:setCancelBtnLabel(str)
+	if self.cancelBtnUILabel then
+		self.cancelBtnUILabel.text = str
+	end
 end
 
 return AlertWindow

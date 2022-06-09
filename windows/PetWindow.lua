@@ -219,13 +219,16 @@ function PetListItem:getUIComponent()
 	self.button_num = self.button_mix:ComponentByName("button_num", typeof(UILabel))
 	self.button_label_2 = self.button_mix:ComponentByName("button_label_2", typeof(UILabel))
 	self.labelLevel = self.go:ComponentByName("labelLevel", typeof(UILabel))
-	self.btnCheck = self.go:NodeByName("btnCheck").gameObject
+	self.btnCore = self.go:NodeByName("btnCore").gameObject
+	self.btnCoreSprite = self.btnCore:GetComponent(typeof(UISprite))
+	self.btnCoreLabel = self.btnCore:ComponentByName("btnCoreLabel", typeof(UILabel))
 	self.border0 = self.go:ComponentByName("border0", typeof(UISprite))
 	self.border1 = self.go:ComponentByName("border1", typeof(UISprite))
 end
 
 function PetListItem:register()
-	UIEventListener.Get(self.btnCheck).onClick = handler(self, self.onDisplay)
+	UIEventListener.Get(self.go.gameObject).onClick = handler(self, self.onDisplay)
+	UIEventListener.Get(self.btnCore).onClick = handler(self, self.onTouch)
 
 	xyd.setDarkenBtnBehavior(self.btn, self, self.onTouch)
 end
@@ -334,6 +337,15 @@ function PetListItem:update(index, realIndex, info)
 	end
 
 	self:effectClip()
+
+	if pet:getExLv() > 0 then
+		self.btnCore:SetActive(true)
+		xyd.setUISpriteAsync(self.btnCoreSprite, nil, "pet_exskill_" .. self.id)
+
+		self.btnCoreLabel.text = __("PET_EXSKILL_TEXT_01", pet:getExLv())
+	else
+		self.btnCore:SetActive(false)
+	end
 end
 
 function PetListItem:initModel(modelName, pos)

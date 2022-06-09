@@ -1321,6 +1321,23 @@ function Slot:onEquip(event)
 	local p = self:getPartner(partnerID)
 
 	p:displayChange()
+
+	if p:getGroup() == xyd.PartnerGroup.TIANYI and p:getIsMoveOffSevenSkinState() then
+		local partnerDetailWd = xyd.WindowManager.get():getWindow("partner_detail_window")
+
+		if partnerDetailWd then
+			local star = p:getStar()
+			local showIDs = xyd.tables.partnerTable:getShowIds(p:getTableID())
+
+			if star >= 15 then
+				p:changeShowID(showIDs[3])
+			elseif star >= 13 then
+				p:changeShowID(showIDs[2])
+			end
+
+			p:setMoveOffSevenSkinState(nil)
+		end
+	end
 end
 
 function Slot:delPartners(partnerIDs)

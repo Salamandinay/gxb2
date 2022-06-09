@@ -1121,8 +1121,10 @@ function MainWindow:initBottomGroup()
 		table.insert(self.bottomBtnList_, btn)
 
 		UIEventListener.Get(go).onClick = handler(self, function ()
-			self:playButtonSound(i)
-			self:onBottomBtnValueChange(i)
+			if not self.stopClickBottomBtn then
+				self:playButtonSound(i)
+				self:onBottomBtnValueChange(i)
+			end
 		end)
 		self["MainwinBottomBtn_" .. i] = go
 		self["MainwinBottomBtn_red_img_" .. i] = btn
@@ -2904,6 +2906,10 @@ function MainWindow:backToMainWindowUpdatePartner()
 	MainMap.get():stopSound()
 	MainMap.get():updateImg()
 	MainMap.get():resetPlayDialog()
+end
+
+function MainWindow:setStopClickBottomBtn(flag)
+	self.stopClickBottomBtn = flag
 end
 
 return MainWindow

@@ -191,4 +191,38 @@ function ShrineHurdleChooseWayWindow:onClickChooseBtn(index)
 	end)
 end
 
+function ShrineHurdleChooseWayWindow:onClickCloseButton()
+	if self.inAnimation_ then
+		return
+	end
+
+	ShrineHurdleChooseWayWindow.super.onClickCloseButton(self)
+end
+
+function ShrineHurdleChooseWayWindow:playOpenAnimation(callback)
+	ShrineHurdleChooseWayWindow.super.playOpenAnimation(self, function ()
+		if callback then
+			callback()
+		end
+
+		self.way_item_1.transform:X(1200)
+		self.way_item_2.transform:X(-1200)
+		self.way_item_3.transform:X(1200)
+
+		self.top_tween = self:getSequence()
+		self.inAnimation_ = true
+
+		self.top_tween:Insert(0, self.way_item_1.transform:DOLocalMoveX(0, 0.25))
+		self.top_tween:Insert(0, self.way_item_2.transform:DOLocalMoveX(0, 0.25))
+		self.top_tween:Insert(0, self.way_item_3.transform:DOLocalMoveX(0, 0.25))
+		self.top_tween:AppendCallback(function ()
+			self.inAnimation_ = false
+
+			if self.top_tween then
+				self.top_tween:Kill(true)
+			end
+		end)
+	end)
+end
+
 return ShrineHurdleChooseWayWindow

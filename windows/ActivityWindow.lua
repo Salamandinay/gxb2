@@ -1675,6 +1675,12 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_DRAGONBOAT2022] = function ()
 		return require("app.windows.activity.ActivityDragonboat2022")
+	end,
+	[xyd.ActivityID.ACTIVITY_SPFARM_SUPPLY] = function ()
+		return require("app.windows.activity.ActivitySpfarmSupply")
+	end,
+	[xyd.ActivityID.ACTIVITY_SPFARM_MISSION] = function ()
+		return require("app.windows.activity.ActivitySpfarmMission")
 	end
 }
 

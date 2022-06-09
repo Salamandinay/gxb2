@@ -54,6 +54,7 @@ function PartnerDetailWindow:ctor(name, params)
 	self.if3v3 = params.if3v3 and params.if3v3 or false
 	self.isFairyTale_ = params.isFairyTale
 	self.isTrial_ = params.isTrial
+	self.isSpfarm_ = params.isSpfarm
 	self.isShrineHurdle_ = params.isShrineHurdle
 	self.isLongTouch = params.isLongTouch
 	self.skillIcons = {}
@@ -3205,7 +3206,7 @@ function PartnerDetailWindow:setSkinBtn()
 	self.showBtnBuy_ = false
 	local group = self.partner_:getGroup()
 
-	if group ~= xyd.PartnerGroup.TIANYI and max_star >= 10 and self.currentSkin <= 3 or max_star <= 9 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1 or group == xyd.PartnerGroup.TIANYI then
+	if group ~= xyd.PartnerGroup.TIANYI and max_star >= 10 and self.currentSkin <= 3 or max_star <= 9 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1 or group == xyd.PartnerGroup.TIANYI and curStar <= 15 and self.currentSkin <= 3 then
 		self.btnSkinUnlock:SetActive(false)
 
 		if group ~= xyd.PartnerGroup.TIANYI and (curStar >= 10 and self.currentSkin <= 3 or curStar >= 6 and self.currentSkin <= 2 or curStar <= 5 and self.currentSkin <= 1) or group == xyd.PartnerGroup.TIANYI and (curStar >= 15 and self.currentSkin <= 3 or curStar >= 13 and self.currentSkin <= 2 or curStar < 13 and self.currentSkin <= 1) then
@@ -3314,7 +3315,7 @@ function PartnerDetailWindow:setSkinBtn()
 		self.btnSetSkinVisible:SetActive(skinID > 0 and skinID == currentSkinID)
 	end
 
-	if group ~= xyd.PartnerGroup.TIANYI and (max_star >= 10 and self.currentSkin <= 3 or max_star >= 6 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1) or group == xyd.PartnerGroup.TIANYI then
+	if group ~= xyd.PartnerGroup.TIANYI and (max_star >= 10 and self.currentSkin <= 3 or max_star >= 6 and self.currentSkin <= 2 or max_star <= 5 and self.currentSkin <= 1) or group == xyd.PartnerGroup.TIANYI and curStar <= 15 and self.currentSkin <= 3 then
 		local sufix = ""
 
 		if self.currentSkin == 1 then
@@ -4832,6 +4833,10 @@ function PartnerDetailWindow:checkStarOriginGuide()
 		return
 	end
 
+	if self.isShrineHurdle_ then
+		return
+	end
+
 	if self.needExSkillGuide then
 		return
 	end
@@ -4862,6 +4867,12 @@ function PartnerDetailWindow:checkStarOriginGuide()
 end
 
 function PartnerDetailWindow:onClickStarOriginBtn()
+	if self.isShrineHurdle_ then
+		xyd.showToast(__("IS_IN_SHRINE_FORMATION"))
+
+		return
+	end
+
 	xyd.openWindow("star_origin_detail_window", {
 		partnerID = self.partner_:getPartnerID()
 	})
@@ -4997,7 +5008,7 @@ function PartnerDetailWindow:onclickShare()
 	xyd.alert(xyd.AlertType.TIPS, tips)
 end
 
-function PartnerDetailWindow:onclickZoom(isGuide)
+function PartnerDetailWindow:onclickZoom(event, isGuide)
 	local showID = nil
 
 	if self.navChosen == 3 then
@@ -5021,7 +5032,10 @@ function PartnerDetailWindow:onclickZoom(isGuide)
 
 	if isGuide and self.partner_:getGroup() == xyd.PartnerGroup.TIANYI then
 		local showIds = xyd.tables.partnerTable:getShowIds(self.partner_:getTableID())
-		showID = tonumber(showIds[self.currentSkin])
+
+		if self.currentSkin <= #showIds then
+			showID = tonumber(showIds[self.currentSkin])
+		end
 	end
 
 	local res = "college_scene" .. self.partner_:getGroup()
@@ -5184,6 +5198,10 @@ function PartnerDetailWindow:willClose()
 
 		if self.isTrial_ then
 			wndName = "battle_formation_trial_window"
+		end
+
+		if self.isSpfarm_ then
+			wndName = "battle_formation_spfarm_window"
 		end
 
 		if self.battleData.battleType ~= xyd.BattleType.EXPLORE_ADVENTURE and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER_DEF and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER_DEF_2 then

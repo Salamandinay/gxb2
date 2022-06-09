@@ -1773,7 +1773,7 @@ DAILY_QUIZ_DESC,Hier kannst du höhere Belohnungsstufen freischalten. Tippe hier
 DAILY_QUIZ_FIGHT_FIRST,Tippe auf das Bild links um das Quiz-Level zu wechseln
 SENIOR_SCROLL_IF_BUY,プレミアムガチャコインが足りません、購入しますか？
 TOWER_LEVEL,Stufe {1}
-MAKE_CAKE_HELP,"1. Das Item ""{1}"" kann auf der Event-Seite gegen Belohnungen eingetauscht werden. |2. Die Belohnungen teilen sich in 5 Stufen. Die erste wird automatisch geöffnet. Alle weiteren müssen nacheinander freigeschaltet werden, indem man eine Belohnung der letzten Stufe eintauscht. |3. Für jeden Tausch können zusätzliche Belohnungen erhalten werden. Die zusätzlichen Belohnungen jeder Stufe sind unterschiedlich und werden auf den Austauschseiten angegeben. |4. Auf der Austauschseite kann man für 15 Tage tauschen.|5. {1} erhält man durch: Auto-Kämpfe, Superpakete, Glückspakete, Kostümpakete, Reiseversorgung, Luvlys Inselreise (14. Januar bis 20. Januar), Willkommenskapseln (21. Januar bis 27. Januar).|6. Nach dem Ende des Events werden die noch nicht verwendeten Items ({1}) automatisch gegen Münzen umgetauscht. Jedes entspricht 20K Münzen und die Münzen werden per Mail gesendet."
+MAKE_CAKE_HELP,"1. {1} kann auf der Event-Seite gegen Belohnungen eingetauscht werden. |2. Die Belohnungen teilen sich in 5 Stufen. Die erste wird automatisch geöffnet. Alle weiteren müssen nacheinander freigeschaltet werden, indem man eine Belohnung der letzten Stufe eintauscht. |3. Für jeden Tausch können zusätzliche Belohnungen erhalten werden. Die zusätzlichen Belohnungen jeder Stufe sind unterschiedlich und werden auf den Austauschseiten angegeben. |4. Auf der Austauschseite kann man für 15 Tage tauschen. Am 15. Tagen kann man keine Tauschmaterialien mehr erhalten und kann nur die Belohnungen tauschen.|5. {1} erhält man durch: Auto-Kampf, Superpakete, Glückspakete, Kostümpakete, Willkommenskapseln (10.06. - 16.06.), Einschreibe-Aufgaben (17.06. - 23.06.).|6. Nach dem Ende des Events werden die noch nicht verwendeten {1}s automatisch gegen Münzen umgetauscht. Jedes entspricht 20k Münzen und die Münzen werden per Mail gesendet."
 MAKE_CAKE_ITEM_TEXT1,1ter
 MAKE_CAKE_ITEM_TEXT2,2ter
 MAKE_CAKE_ITEM_TEXT3,3ter
@@ -2443,7 +2443,7 @@ GUILD_BOSS_TEXT01,Restliche Herausforderungsmale: {1}
 GUILD_BOSS_TEXT02,Herausforderungsmale nicht ausreichend!
 GUILD_FINAL_BOSS_WINDOW_HELP,"1. Jedes Gildenmitglied hat jeden Tag zwei Chancen, den Gildenboss herauszufordern. Du erhältst am Ende jeder Schlacht Kampfbelohnungen. Je mehr Schaden du zufügst, desto größer sind die Belohnungen. |2. Jeden Freitag von 00:00 Uhr bis 01:00 Uhr (UTC / GMT 0) werden die Belohnungen gemäß der Schadensrangliste per Mail verschickt. Auch der verursachte Schaden wird zurückgesetzt. In der Zwischenzeit können die Mitglieder den Boss nicht herausfordern.|3. Schäden durch Diener werden nicht berücksichtigt. |4. Du erhältst nur die Bestenlistenbelohnungen für deine aktuelle Gilde.|5. Nachdem man die Gilde verlassen hat, kann man den Boss 24 Stunden lang nicht herausfordern."
 GUILD_BOSS_TEXT03,Wöchentliche Belohnung:
-ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Level {1}
+ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Lv.{1}
 SUMMON_CONFIRM,"Um {1} Male zu ziehen, musst du {2} Dias ausgeben. Willst du fortfahren?"
 TURING_TASK_LIMIT,Limit
 TURING_TASK_TEXT01,"Schließe die bestimmten Aufgaben ab, um Einkaufsgutscheine zu erhalten. Die Belohnungen werden direkt in deinem Rucksack gesendet."
@@ -3716,7 +3716,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Bitte bestätige die Zahl
 ACTIVITY_LAFULI_DRIFT_CARD,Wähle eine Karte aus um sie aufzudecken
 ACTIVITY_LAFULI_DRIFT_AWARD,Belohnungen sammeln
 ACTIVITY_LAFULI_DRIFT_ROUND,Erledigte Runde: {1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Tippe auf das ""Steuer"", um zu drehen. Luvly wird entsprechend der Zahl nach vorne gehen. Durch die Verwendung der ""Fernsteuerung"" kannst du selbst eine Zahl wählen.|2. Wenn Luvly am Korallenbaum vorbeigeht oder unter dem Korallenbaum stehen bleibt, bekommt sie Korallenzweige. Jedes Mal wenn sich Luvly beim Korallenbaum aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden. (Das weitere Vorbeigehen ermöglicht keine Erhöhung des Levels.)|3. Wenn Luvly auf ein Ressourcengebiet kommt, bekommt sie die entsprechenden Items. Jedes Mal wenn Luvly sich auf einem Ressourcengebiet aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden.|4. Wenn Luvly auf ein Perlengebiet kommt, bekommst du blaue Perlen, die im Shop gegen verschiedene Belohnungen eingetauscht werden können. Nach dem Ende des Events werden die noch nicht verwendeten blauen Perlen automatisch gegen Münzen umgetauscht. Jede Perle entspricht 100K Münzen.|5. Wenn Luvly sich im Muschelhaus aufhält, werden 3 mystische Karten ausgegeben. Wähle eine aus und decke sie auf~|6. Wenn Luvly sich im Seestrudel aufhält, wird die nächste durch Drehen des Steuers erhaltene Zahl halbiert.|7. Sammle eine gewisse Summe von Korallenzweigen, um Belohnungen zu erhalten. Tippe auf die Geschenkbox oben rechts auf der Seite für mehr Detail.|8. Nachdem eine Runde der Sammlung von Korallenzweigen abgeschlossen wurde, wird der Fortschritt zurückgesetzt. Alles kann ein weiteres Mal erhalten werden.|9. Tippe auf ""Auto-Drehen"" unten rechts, um deine Steuer automatisch zu benutzen. (Die Fernsteuer werden nicht verwendet.) Beim Aufenthalt im Muschelhaus wird eine zufällige Karte automatisch aufgedeckt. Tippe auf ""Beenden"" oder verlasse die Event-Seite, um das Auto-Drehen zu beenden.|10. Nach dem Ende des Events werden die noch nicht verwendeten Steuer (einschließlich der Fernsteuerung) gegen Korallenzweige umgetauscht. Jedes Steuer entspricht 2 Korallenzweigen. Die entsprechenden Belohnungen können ebenfalls erhalten werden.|11. Erhalten der Steuer:| - Mit Dias kaufen (maximal 30 Mal)| - Mädchen-Spezialmissionen| - Reiseversorgung| - Superpakete| - Glückspakete| - Kostümpaket| - Limitierter Outfit-Shop| - Outfit Shopping-Festival| - Tägliche Mail"
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Tippe auf das ""Steuer"", um zu drehen. Luvly wird entsprechend der Zahl nach vorne gehen. Durch die Verwendung der ""Fernsteuerung"" kannst du selbst eine Zahl wählen.|2. Wenn Luvly am Korallenbaum vorbeigeht oder unter dem Korallenbaum stehen bleibt, bekommt sie Korallenzweige. Jedes Mal wenn sich Luvly beim Korallenbaum aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden. (Das weitere Vorbeigehen ermöglicht keine Erhöhung des Levels.)|3. Wenn Luvly auf ein Ressourcengebiet kommt, bekommt sie die entsprechenden Items. Jedes Mal wenn Luvly sich auf einem Ressourcengebiet aufhält, wird das Level um 1 erhöht (damit die nächsten Belohnungen vermehrt werden können.). Maximal kann das Level auf 3 erhöht werden.|4. Wenn Luvly auf ein Perlengebiet kommt, bekommst du blaue Perlen, die im Shop gegen verschiedene Belohnungen eingetauscht werden können. Nach dem Ende des Events werden die noch nicht verwendeten blauen Perlen automatisch gegen Münzen umgetauscht. Jede Perle entspricht 100K Münzen.|5. Wenn Luvly sich im Muschelhaus aufhält, werden 3 mystische Karten ausgegeben. Wähle eine aus und decke sie auf~|6. Wenn Luvly sich im Seestrudel aufhält, wird die nächste durch Drehen des Steuers erhaltene Zahl halbiert.|7. Sammle eine gewisse Summe von Korallenzweigen, um Belohnungen zu erhalten. Tippe auf die Geschenkbox oben rechts auf der Seite für mehr Detail.|8. Nachdem eine Runde der Sammlung von Korallenzweigen abgeschlossen wurde, wird der Fortschritt zurückgesetzt. Alles kann ein weiteres Mal erhalten werden.|9. Tippe auf ""Auto-Drehen"" unten rechts, um deine Steuer automatisch zu benutzen. (Die Fernsteuer werden nicht verwendet.) Beim Aufenthalt im Muschelhaus wird eine zufällige Karte automatisch aufgedeckt. Tippe auf ""Beenden"" oder verlasse die Event-Seite, um das Auto-Drehen zu beenden.|10. Nach dem Ende des Events werden die noch nicht verwendeten Steuer (einschließlich der Fernsteuerung) gegen Korallenzweige umgetauscht. Jedes Steuer entspricht 2 Korallenzweigen. Die entsprechenden Belohnungen können ebenfalls erhalten werden.|11. Erhalten der Steuer:| - Mit Dias kaufen (maximal 30 Mal)| - Mädchen-Spezialmissionen| - Reiseversorgung| - Superpakete| - Glückspakete| - Kostümpaket| - Tägliche Mail"
 ONE_KEY_COMPOSE,Ein-Klick Synth.
 ONE_KEY_COMPOSE_TEXT,Deine Ressourcen reichen aus. Willst du die entsprechenden Ressourcen verbrauchen um die folgenden Ausrüstungen schnell zu synthetisieren?
 ONE_KEY_COMPOSE_TEXT2,Keine synthetisierbare Ausrüstungen von diesem Typ
@@ -5135,7 +5135,7 @@ Diamant: 8x Backup-Mädchen der Frontline, 16x Backup-Mädchen der Backline, 5x 
 (5) Entsprechend der Stufe des gewählten Gegners wird die Anzahl von deinen verfügbaren Backup-Mädchen in diesem Kampf festgelegt.
 (6) Dauert der Kampf länger als 15 Runden, wird jede Runde der Angriff der Mädchen beider Seiten erhöht und die erhaltene Heilung verringert, bis eine Seite den Kampf gewinnt.|5. KO-Phase & Finale|(1) Nach dem Ende der Qualifikationsphase werden die Spieler, die sich für die Stufe „Großmeister“ qualifiziert haben, in 5 Gruppen geteilt. In jeder Gruppe gibt es 64 Spieler. Haben sich weniger als 320 Spieler als „Großmeister“ qualifiziert, dann werden entsprechend der Reihenfolge in dieser Stufe (Großmeister) so lange Gruppen aus 64 Spielern gebildet, bis die Anzahl der Spieler nicht mehr ausreicht, um eine Gruppe zu erstellen (<64). Haben sich weniger als 64 Spieler als „Großmeister“ qualifiziert, qualifizieren sich einfach die TOP64 Spieler auf der Gesamtrangliste direkt für die KO-Phase.
 (2) Täglich findet 1 Kampf der KO-Phase statt. In den letzten 2 Stunden vor dem Beginn jedes Kampfes können die Aufstellungen nicht mehr angepasst werden. Jeden Tag von 0 Uhr bis 2 Uhr (UTC/GMT 0) ist die Abrechnungsphase, während der die Aufstellungen nicht konfiguriert oder gespeichert werden können.
-(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch Glocken (Tsuruga Schrein), Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
+(3) In der ultimativen Arena können nur die Mädchen, die auf 10-Sterne gelevelt werden können, aufgestellt werden. Die aufgestellten Mädchen werden automatisch auf 15-Sterne (Lv.330) gelevelt. Die gelevelten Elite-Fertigkeiten und Rüstungssets bleiben aktiviert. Alle anderen Ausrüstungen werden auf 6-Sterne und Orange gelevelt. Der Kristall wird mit den aktuellen Attributen auf das höchste Level gelevelt. Die Sternkerne werden sich auf seinen aktuellen Leveln normal auswirken. Die aufgestellten Diener werden auf Lv.180 gelevelt und deren Auren auf Lv.50. Die gelevelten kostbaren Kerne bleiben aktiviert. Die Attribute im Gildenlabor werden auf ihr max. Level gelevelt. Die Attributsboni durch Glocken (Tsuruga Schrein), Campusausflug, Kostüme, Antiquitäten, Intimität und Potenziale bleiben aktiviert. Hat das Mädchen keine Potenziale aktiviert, werden für sie auch keine Potenziale eingestellt.
 (4) HP und Angriffswert der Mädchen werden nach ihrem jeweiligen Sternlevel, auf das sie der Spieler gelevelt hat, mit einem bestimmten Wert multipliziert. Details wie folgt:|  5-Sterne: 50%%, 6-Sterne: 51%%, 7-Sterne: 53%%|  8-Sterne: 55%%, 9-Sterne: 60%%, 10-Sterne: 65%%|  11-Sterne: 70%%, 12-Sterne: 75%%, 13-Sterne: 80%%|  14-Sterne: 90%%, 15-Sterne: 100%%.|6. Ruhezeit|(1) Die 2 Tage nach dem Ende des Finales sind die Ruhezeit.|7. Ehrenschloss|(1) Die TOP8 Spieler aus jeder Kampfgruppe jeder Saison werden einen Platz im Ehrenschloss erhalten.
 (2) Beim Auflisten der Champion-Titel eines Spielers werden die Daten der „alten“ ultimativen Arena ebenfalls berücksichtigt.|8. Tägliche Aufgabe|(1) Während der Qualifikationsphase können die Spieler die täglichen Aufgaben in der Qualifikationsphase abschließen, um Belohnungen zu erhalten.|9. Abrechnungsbelohnungen|(1) Nach dem Ende der Qualifikationsphase erhältst du entsprechend deines Rangs in der Stufe Belohnungen.
 Tipp: Du musst während der Qualifikationsrunde 10 oder mehr Kämpfe abgeschlossen haben,  um diese Abrechnungsbelohnungen erhalten zu können.
@@ -6018,7 +6018,7 @@ GAME_ASSISTANT_TIPS06,Entsperrt ab Ausbildungslager Lv.{1} unter Diener oder Abe
 GAME_ASSISTANT_TIPS07,Entsperrt nach dem Eintreten einer Gilde mit mind. Lv.{1}
 GAME_ASSISTANT_TIPS08,Die betroffenen Funktionen werden ab Cafeteria Lv.{1} entsperrt.
 GAME_ASSISTANT_TIPS09,"Die betroffenen Funktionen werden entsperrt, sobald du bis zur 61. Stufe im Gym gekämpft hast."
-GAME_ASSISTANT_HELP01,"[c][0069cc]Bedingung zum Entsperren der Funktion[-][/c]|Schließe die Runde {1} ab, um diese Funktion zu entsperren.|[c][0069cc]Täglich[-][/c]|1. Kapseln: Hast du ""Ja"" gewählt, wird die Gratischance bevorzugt verwendet und dann deine Kapselmünzen. (Es wird nur einmal gezogen)|2. Am Glücksautomaten wird nur der normale Glücksautomat verwendet.|3. Beim Quiz werden nur die Belohnungen der verfügbaren höchsten Stufe gesammelt.|4. In der Arena wird immer der Gegner mit der niedrigsten Kampfkraft gewählt.|5. Es können mehrere Sternlevel der Jobaufgaben abgehakt werden und unter diesen Umständen werden Belohnungen der Jobaufgabe auf einem relativ niedrigeren Sternlevel bevorzugt gesammelt.|6. Außer Sammlungen der Kampfausbeute und Belohnungen im Wohnhein und den Käufen werden alle anderen Aufgaben unter ""Täglich"" täglich nur einmal abgeschlossen.|[c][0069cc]Herausfordern[-][/c]|1. Unter Patrouille musst du zunächst ein Team aufstellen, um die Raid-Belohnungen zu erhalten.|2. Hast du eine Fraktion in der Prüfung ausgewählt, können die bereits abgeschlossenen Stufen mit Prüfungszertifikaten schnell abgeschlossen werden.|[c][0069cc]Wachstum[-][/c]|1. Jede Stunde können die Belohnungen im Campusausflug einmal eingesammelt werden.|2. Wurden die Trainingskurse unter Weiterbilden beendet, werden sie mit derselben Einstellung erneut gestartet.|3. Im Kampf gegen eine Holzpuppe werden die Diener im Lager nacheinander als Angreifer gewählt.|[c][0069cc]Gilde[-][/c]|1. Wenn neue Bestellungen noch nicht erhalten werden können, werden die entsprechenden Funktionen nicht aktiviert.|2. Bevor du neue Bestellungen erhalten wirst, werden die Belohnungen der bereits abgeschlossenen Bestellungen automatisch gesammelt. Hast du bereits einige zu startende Bestellungen, werden sie direkt gestartet.|3. Beim Berechnen der benötigten Dias zum Leveln der Bestellungen werden alle Bestellungen als Bestellungen auf Lv.1 angesehen. Deswegen kann die letztendlich Menge an benötigten Dias geringer sein, als die vorher berechnete Menge.|4. Hast du die Herausforderung gegen den 61. Boss gewählt, werden alle Chancen des Tages verwendet."
+GAME_ASSISTANT_HELP01,"[c][0069cc]Bedingung zum Entsperren der Funktion[-][/c]|Schließe die Runde {1} ab, um diese Funktion zu entsperren.|[c][0069cc]Täglich[-][/c]|1. Kapseln: Hast du ""Ja"" gewählt, wird die Gratischance bevorzugt verwendet und dann deine Kapselmünzen. (Es wird nur einmal gezogen)|2. Am Glücksautomaten wird nur der normale Glücksautomat verwendet.|3. Beim Quiz werden nur die Belohnungen der verfügbaren höchsten Stufe gesammelt.|4. In der Arena wird immer der Gegner mit der niedrigsten Kampfkraft gewählt.|5. Es können mehrere Sternlevel der Jobaufgaben abgehakt werden und unter diesen Umständen werden Belohnungen der Jobaufgabe auf einem relativ niedrigeren Sternlevel bevorzugt gesammelt.|6. Außer Sammlungen der Kampfausbeute und Belohnungen im Wohnhein und den Käufen werden alle anderen Aufgaben unter ""Täglich"" täglich nur einmal abgeschlossen.|[c][0069cc]Herausfordern[-][/c]|1. Unter Patrouille musst du zunächst ein Team aufstellen, um die Raid-Belohnungen zu erhalten.|2. Hast du eine Fraktion in der Prüfung ausgewählt, können die bereits abgeschlossenen Stufen mit Prüfungszertifikaten schnell abgeschlossen werden.|[c][0069cc]Wachstum[-][/c]|1. Jede Stunde können die Belohnungen im Campusausflug einmal eingesammelt werden.|2. Wurden die Trainings unter Weiterbilden beendet, werden sie automatisch erneut gestartet.|3. Im Kampf gegen eine Holzpuppe werden die Diener im Lager nacheinander als Angreifer gewählt.|[c][0069cc]Gilde[-][/c]|1. Wenn neue Bestellungen noch nicht erhalten werden können, werden die entsprechenden Funktionen nicht aktiviert.|2. Bevor du neue Bestellungen erhalten wirst, werden die Belohnungen der bereits abgeschlossenen Bestellungen automatisch gesammelt. Hast du bereits einige zu startende Bestellungen, werden sie direkt gestartet.|3. Beim Berechnen der benötigten Dias zum Leveln der Bestellungen werden alle Bestellungen als Bestellungen auf Lv.1 angesehen. Deswegen kann die letztendlich Menge an benötigten Dias geringer sein, als die vorher berechnete Menge.|4. Hast du die Herausforderung gegen den 61. Boss gewählt, werden alle Chancen des Tages verwendet."
 ACTIVITY_PROMOTION_TEST_TEXT06,Ziehe an der Super Kapselmaschine und erhalte die Aufstiegszertifikate!
 ACTIVITY_LASSO_BUTTON,Werfen
 ACTIVITY_LASSO_TEXT01,Gib die Anzahl der Ringe ein
@@ -6337,33 +6337,33 @@ ACTIVITY_CHILDREN_GAMBLE_TEXT02,Grundbelohnungen
 ACTIVITY_CHILDREN_GAMBLE_TEXT03,Wähle eine Grundbelohnung aus
 GO_DRESS_SHOW_SHOP_TIPS,"Willst du zum Shop zum Schaufenster gehen, um Kampf-Buffs zu kaufen?"
 ACTIVITY_CHILDREN_TITLE,Süße\nKindheit
-ACTIVITY_SPFARM_TEXT01,開闢異界莊園，追尋足以守護學院的力量......
-ACTIVITY_SPFARM_TEXT02,莊園總等級
-ACTIVITY_SPFARM_TEXT03,進入莊園
-ACTIVITY_SPFARM_HELP1,主界面幫助
-ACTIVITY_SPFARM_HELP2,地圖界面幫助
-ACTIVITY_SPFARM_TEXT04,知名度：{1}
-ACTIVITY_SPFARM_TEXT05,外出掠奪
-ACTIVITY_SPFARM_TEXT06,知名度獎勵
-ACTIVITY_SPFARM_TEXT07,掠奪中
-ACTIVITY_SPFARM_TEXT08,背包容量
+ACTIVITY_SPFARM_TEXT01,"Betrete das Manor und suche die Kraft, die die Akademie schützen kann..."
+ACTIVITY_SPFARM_TEXT02,Manor-Level
+ACTIVITY_SPFARM_TEXT03,Betreten
+ACTIVITY_SPFARM_HELP1,"1. Das Event dauert insgesamt 15 Tage. An den ersten 14 Tagen kannst du Blumen pflanzen, Ernte erhalten und die Manors der anderen Spieler plündern. Am 15. Tag gilt das Event nur für die Besichtigung. Mittlerweile können keine Plünderungen durchgeführt werden. Ticket zum Plündern kann auch nicht mehr gekauft werden. Aber du kannst in deinem Manor die verpasste Ernte der vorherigen Tagen nachträglich sammeln.|2. Auf dem fruchtbaren Boden wachsen allerlei Blumen, die dir reichhaltige Ressourcen als Ernte gewähren können. Tippe auf ein Gelände, um Blumen darauf zu pflanzen. Deren Belohnungen können um 0 Uhr (UTC/GMT 0) am nächsten Tag gesammelt werden.|3. Zum Pflanzen oder Leveln der Blumen werden jeweils 100 mystische Saaten benötigt. Zum Wechseln des Typs der pflanzten Blumen werden【Akt. Blumenlevel * 50】mystische Saaten benötigt. Drücke lange auf den Blumen, um sie gratis auf einem anderen Gelände zu verpflanzen.|4. Am Tor im Manor-Zentrum kannst du die Lautsprecher verwenden, um bestimmte Politiken zu treiben.|5. Alle 3 getriebenen Politiken erhöhen das Ruhm-Level deines Manors um 1 und darüberhinaus erhältst du noch reichhaltige Belohnungen.|6. Du kannst Manors der anderen Spieler plündern, um ihre Ressourcen zu rauben. Jede Plünderung benötigt 1 ""Ticket zum Plündern"". Zu Beginn erhältst du 3 Tickets und täglich um 0 Uhr (UTC/GMT 0) erhältst du 3 weitere Tickets. Du kannst auch Tickets mit Dias kaufen (maximal 15x kaufbar). Am 15. Tag werden keine weiteren Tickets gegeben.|7. Je höher dein Manor-Level (Summe der Level aller gepflanzten Blumen) ist, desto reichere Ziele findest du zum Plündern!|8. Stelle Schutztruppen für deine Blumen ein, um sie vor der Plünderung zu schützen.|8. Nach dem Ende des Events werden die noch nicht verwendeten magischen Saaten, Lautsprecher und Tickets zum Plündern automatisch per Mail recycelt. Jede magische Saat entspricht 1K Münzen, jeder Lautsprecher 50K und jedes Ticket zum Plündern 20K."
+ACTIVITY_SPFARM_HELP2,"1. Startest du eine Plünderung, wirst du zunächst zum Manor-Zentrum eines anderen Spielers geschickt.|2. Zu Beginn der Plünderung sind außer Manor-Zentrum alle Gelände gesperrt. Tippe zunächst auf die Gelände neben dem Manor-Zentrum, um sie zu entsperren.|3. Sobald die Gelände entsperrt werden, kannst du die angrenzenden Gelände weiter erkunden.|4. Wirst du beim Erkunden von einer Schutztruppe überfallen, werden die nicht erkundeten Gelände ringsum gesperrt. Du musst die Schutztruppe besiegen, um weiter erkunden zu können.|5. Hast du beim Erkunden Blumen entdeckt, kannst du auf sie tippen, um 20%% deren heutigen Ernte zu plündern, die einige Plätze in deinem Rucksack belegen wird.|6. Tippe auf das Manor-Zentrum des geplünderten Spielers, um die aktuelle Plünderung zu beenden. Erst danach erhältst du die geplünderten Beuten in deinem Rucksack."
+ACTIVITY_SPFARM_TEXT04,Ruhm-Level: Lv.[c][10F520]{1}[-][/c]
+ACTIVITY_SPFARM_TEXT05,Plündern
+ACTIVITY_SPFARM_TEXT06,Ruhm-Belohnungen
+ACTIVITY_SPFARM_TEXT07,Beim Plündern...
+ACTIVITY_SPFARM_TEXT08,Rucksack-Plätze
 NOT_EQUIPPED,Verfügbar
 CHOOSE_EQUIP,Wähle eine Ausrüstung aus
 ACTIVITY_CHILDREN_SHOP_BUTTON04,Ja
 SHRINE_POOL_TEXT04,Fragmente
-ACTIVITY_SPFARM_TEXT09,種植
-ACTIVITY_SPFARM_TEXT10,更換
-ACTIVITY_SPFARM_TEXT11,通用
-ACTIVITY_SPFARM_TEXT12,進階
-ACTIVITY_SPFARM_TEXT13,特殊
-ACTIVITY_SPFARM_TEXT14,建築數量達到上限
-ACTIVITY_SPFARM_TEXT15,建築等級上限低於被更換的建築
-ACTIVITY_SPFARM_TEXT16,每日0點(UTC/GMT 0)產出[c][10F520]{1}[-][/c]個[c][10F510]{2}[-][/c]。
-ACTIVITY_SPFARM_TEXT17,周圍4格建築在受到入侵時，遭受的損失降低[c][10F520]{1}[-][/c]。
+ACTIVITY_SPFARM_TEXT09,Pflanzen
+ACTIVITY_SPFARM_TEXT10,Wechseln
+ACTIVITY_SPFARM_TEXT11,Allgemein
+ACTIVITY_SPFARM_TEXT12,Selten
+ACTIVITY_SPFARM_TEXT13,Spezial
+ACTIVITY_SPFARM_TEXT14,Erhältliche max. Anzahl dieser Blume erreicht
+ACTIVITY_SPFARM_TEXT15,Max. Level dieser Blume ist niedriger als das der zu wechselnden Blume
+ACTIVITY_SPFARM_TEXT16,Tägliche Ernte: [c][00B550]{2}[-][/c] x[c][00B550]{1}[-][/c]. Sammelbar um 0 Uhr (UTC/GMT 0) am nächsten Tag.
+ACTIVITY_SPFARM_TEXT17,"Reduziert den Verlust um [c][00B550]{1}[-][/c], wenn die 4 angrenzenden Blumen geplündert werden. Eine Blume, die wie eine Vogelscheuche aussieht..."
 ENTRANCE_TEST_STAR_ORIGIN_LOCK,Wird ab Stufe S entsperrt
 OLD_SCHOOL_TIPS01,Willst du alle Projekte wählen?
-ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該建築?
-ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換建築?
+ACTIVITY_SPFARM_TEXT18,"Willst du sicher {1}x ""{2}"" verwenden, um die Blume zu pflanzen?"
+ACTIVITY_SPFARM_TEXT19,"Willst du sicher {1}x ""{2}"" verwenden, um diese Blume auf dem aktuellen Gelände zu pflanzen?"
 ACTIVITY_DRAGONBOAT2022_BUTTON01,Genießen
 ACTIVITY_DRAGONBOAT2022_BUTTON02,Beten
 ACTIVITY_DRAGONBOAT2022_HELP,"1. Das chinesische Drachenbootfest steht vor der Tür. Genieß mit Sensina die leckeren Reiskuchen! Zum Genießen werden jedesmal 2x Reiskuchen benötigt und das Sättigungsgefühl wird danach um einen bestimmten Wert erhöht. Bei jedem Genießen erhältst du eine zufällige Grundbelohnung und wahrscheinlich noch eine Überraschungsbelohnung, nämlich die Auswahlbox zum Drachenbootfest.|2. Vor dem Genießen kannst du dir einige Belohnungen zum Beten aussuchen, die erhalten werden können, sobald dein Sättigunsgefühl einen bestimmten Wert erreicht.|3. Dem Wert deines Sättigungsgefühls entsprechend erhältst du einige Belohnungen, die per Mail gesendet werden.|4. Erhalten der Reiskuchen: Tägliche Mail, Luvlys Inselreise, Mädchen-Spezialmissionen, Reiseversorgung, Superpakete, Glückspakete, Kostümpakete.|5. Nach dem Ende des Events werden die noch nicht verwendeten Reiskuchen automatisch per Mail recycelt. Jeder Reiskuchen entspricht 50K Münzen."
@@ -6378,16 +6378,101 @@ ACTIVITY_DRAGONBOAT2022_TIPS01,Wähle zunächst die Belohnungen zum Beten aus
 PARTNER_CHALLENGE_CHESS_TEXT11,Elite-Mädchen erhalten
 PARTNER_CHALLENGE_CHESS_TEXT12,Du hast 1 Elite-Mädchen erhalten und sie werden einmal gratis erneuert.
 ACTIVITY_DRAGONBOAT2022_TEXT08,Noch keine Belohnungen erhalten
-ACTIVITY_SPFARM_TEXT20,建築詳情
-ACTIVITY_SPFARM_TEXT21,每日產出
-ACTIVITY_SPFARM_TEXT22,減少損失
-ACTIVITY_SPFARM_TEXT23,守軍
-ACTIVITY_SPFARM_TEXT24,介紹
-ACTIVITY_SPFARM_TEXT25,已满级
-ACTIVITY_SPFARM_TEXT26,建筑等级已经到达当前上限。推行对应政策可以提高等级上限！
-ACTIVITY_SPFARM_TEXT27,更換
-ACTIVITY_SPFARM_TEXT28,移動
+ACTIVITY_SPFARM_TEXT20,Details
+ACTIVITY_SPFARM_TEXT21,Tägliche Ernte
+ACTIVITY_SPFARM_TEXT22,Red. Verlust
+ACTIVITY_SPFARM_TEXT23,Schutztruppe
+ACTIVITY_SPFARM_TEXT24,Info
+ACTIVITY_SPFARM_TEXT25,Max. Level
+ACTIVITY_SPFARM_TEXT26,"Die Blume hat das max. Level erreicht. Treibe bestimmte Politiken, um das max. Level zu erhöhen!"
+ACTIVITY_SPFARM_TEXT27,Wechseln
+ACTIVITY_SPFARM_TEXT28,Verpflanzen
 CHIME_TEXT17,Aufbrechen
-ACTIVITY_SPFARM_TEXT29,無法更換本體建築
-ACTIVITY_SPFARM_TEXT30,本次活動不再提示
+ACTIVITY_SPFARM_TEXT29,Dieselbe Blume kann nicht zum Ersetzen verwendet werden.
+ACTIVITY_SPFARM_TEXT30,Nicht mehr erinnern
 CHIME_TEXT18,Nur die nutzlosen Fragmente können zum Aufbrechen verwendet werden.
+ACTIVITY_SPFARM_TEXT31,"Tippe auf ein anderes Gelände, um die Blume dorthin zu verpflanzen."
+ACTIVITY_SPFARM_TEXT32,Willst du sicher die Positionen der beiden Gelände wechseln? (Die darauf gepflanzten Blumen werden damit auf dem gewechselten Gelände verpflanzt.)
+ACTIVITY_SPFARM_TEXT33,Kann nicht auf dem Manor-Zentrum verpflanzt werden
+ACTIVITY_SPFARM_TEXT34,Auf den 4 Geländen neben dem Manor-Zentrum kann keine Schutztruppe eingestellt werden. Durchs Verpflanzen wird die aktuelle Schutztruppe abgezogen. Fortfahren?
+ACTIVITY_SPFARM_TEXT35,Ziele auswählen
+ACTIVITY_SPFARM_TEXT36,Wähle ein Ziel aus
+ACTIVITY_SPFARM_TEXT37,Auf den 4 Geländen neben dem Manor-Zentrum kann keine Schutztruppe eingestellt werden!
+ACTIVITY_SPFARM_TEXT38,Max. Anzahl an verfügbaren Schutztruppen erreicht. Weitere Schutztruppen sind nicht mehr einzustellen!
+ACTIVITY_SPFARM_TEXT39,Das Mädchen schützt gerade eine andere Blume!
+ACTIVITY_SPFARM_TEXT40,Plündern
+ACTIVITY_SPFARM_TEXT41,Akt. Ruhm-Level
+ACTIVITY_SPFARM_TEXT42,"Treibe die 3 Politiken oben, um das Ruhm-\nLevel deines Manors um 1 zu erhöhen."
+ACTIVITY_SPFARM_TEXT43,Getriebene Politiken
+ACTIVITY_SPFARM_TEXT44,allgemeinen Blumen
+ACTIVITY_SPFARM_TEXT45,seltenen Blumen
+ACTIVITY_SPFARM_TEXT46,Magische Saat
+ACTIVITY_SPFARM_TEXT47,Vogelscheuche
+ACTIVITY_SPFARM_TEXT48,Treiben
+ACTIVITY_SPFARM_TEXT49,"Willst du sicher {1} Lautsprecher verwenden, um diese Politik zu treiben?"
+ACTIVITY_SPFARM_TEXT50,Vorschau der Politiken
+ACTIVITY_SPFARM_TEXT51,Ruhm-Lv.
+ACTIVITY_SPFARM_TEXT52,Mädchen zum Kampf
+ACTIVITY_SPFARM_TEXT53,Wähle die Mädchen aus
+ACTIVITY_SPFARM_TEXT54,Erkundet können nur die erleuchteten Gelände!
+ACTIVITY_SPFARM_TEXT55,"Besiege zunächst die Schutztruppe(n) ringsum, um das Gelände erkunden zu können!"
+ACTIVITY_SPFARM_TEXT56,Bei {1} gibt es keine Ernte und es kann nichts geplündert werden.
+ACTIVITY_SPFARM_TEXT57,Max. Anzahl an verfügbaren Mädchen erreicht
+ACTIVITY_SPFARM_TEXT58,Willst du sicher diese Plünderung beenden und die geplünderten Ressourcen in deinem Rucksack sammeln?
+ACTIVITY_SPFARM_TEXT59,Willst du sicher auf die Ressourcen verzichten?
+ACTIVITY_SPFARM_TEXT60,In deinem Rucksack gibt es noch freie Plätze. Willst du sicher verlassen und die geplünderten Ressourcen sammeln?
+ACTIVITY_SPFARM_TEXT61,"Durch diese Plünderung erhältst du {2} x{1}, die aber 1 Platz in deinem Rucksack belegen wird. Willst du sicher diese Plünderung abschließen?"
+ACTIVITY_SPFARM_TEXT62,Voller Rucksack!
+ACTIVITY_SPFARM_TEXT63,Ruhm-Level
+ACTIVITY_SPFARM_TEXT64,"Treibe im Manor-Zentrum die Politiken, um das Ruhm-Level zu erhöhen!"
+ACTIVITY_SPFARM_TEXT65,Die Ressourcen werden in deinen Rucksack reingesteckt. Bitte warte...
+ACTIVITY_SPFARM_TEXT66,"1. Die Kapazität deines Rucksacks ist beschränkt. Jede geplünderte Blume belegt einen Platz in deinem Rucksack.|2. Während der Plünderung kannst du zu jeder Zeit auf eine geplünderte Beute verzichten, um mehr freie Plätze zu erhalten.|3. Treibe in deinem eigenen Manor-Zentrum die bestimmte Politik, um die Kapazität deines Rucksacks zu erhöhen."
+ACTIVITY_SPFARM_TEXT67,Hier wächst die letzte magische Frucht in deinem Manor. Willst du sicher andere Blume auf diesem Gelände pflanzen?
+ACTIVITY_SPFARM_TEXT68,"Treibe im Manor-Zentrum bestimmte Politiken, um die max. Anzahl der Schutztruppen zu erhöhen."
+ACTIVITY_SPFARM_TEXT69,Max. Anzahl an verfügbaren Schutztruppen schon auf Max. erhöht. Die Obergrenze kann nicht weiter erhöht werden.
+ACTIVITY_SPFARM_TEXT74,Mein Manor
+ACTIVITY_SPFARM_TEXT75,Beute
+ACTIVITY_SPFARM_TEXT76,Verlust
+ACTIVITY_SPFARM_TEXT70,Kein Verlust
+ACTIVITY_SPFARM_TEXT71,"Nachdem dein Manor an einem Tag 3 Mal geplündert wurde, verlierst du an diesem Tag durch weitere Plünderungen keine Ressourcen mehr."
+ACTIVITY_SPFARM_TEXT72,Plünderbericht
+ACTIVITY_SPFARM_TEXT73,Schutzbericht
+ACTIVITY_SPFARM_TEXT77,Während der Plünderung können die aufgestellten Mädchen nicht gewechselt werden.
+ACTIVITY_SPFARM_TEXT78,Freunden
+ACTIVITY_SPFARM_TEXT79,Servern
+ACTIVITY_SPFARM_TEXT80,Keine Ziele gefunden
+ACTIVITY_SPFARM_TEXT81,Beim Besichtigen
+ACTIVITY_SPFARM_TEXT82,Weiter plündern
+ACTIVITY_SPFARM_TEXT83,Das Manor wird morgen um 0 Uhr (UTC/GMT 0) geschlossen. Bitte sammle deine Ernte rechtzeitig ein!
+ACTIVITY_SPFARM_TEXT84,"[c][726560]——Nachricht von Maya——[-][/c]\nWillst du ein reiches Manor plündern? Mach das Manor noch [c][76b030]ordentlicher[-][/c], dann würde ich dir gerne einige Koordinaten verraten."
+ACTIVITY_SPFARM_TEXT85,"Während der Besichtigungsphase kann ""{1}"" nicht erhalten werden."
+ACTIVITY_SPFARM_TEXT86,"Das Event geht bald zu Ende. Schließe schnellstmöglich die aktuelle Plünderung ab, um möglichen Verlust zu vermeiden."
+ACTIVITY_SPFARM_TEXT87,Besichtigungsphase beginnt. Beute durch diese Plünderung wurden bereits in deinen Rucksack gesendet.
+ACTIVITY_SPFARM_TEXT88,Weiter plündern
+ACTIVITY_SPFARM_TEXT89,Im Manor bleiben
+ACTIVITY_SPFARM_TEXT90,Tägliche\nBeloh.
+ACTIVITY_SPFARM_TEXT91,Sofort\nerhältlich
+ACTIVITY_SPFARM_TEXT92,Extra
+ACTIVITY_SPFARM_TEXT93,Ausreifen
+ACTIVITY_SPFARM_TEXT94,"Ab Ruhm-Level {1} wird die Funktion ""Ausreifen"" entsperrt"
+ACTIVITY_SPFARM_TEXT95,"Willst du sicher {1}  {2}en verwenden, um die Ernte dieser Blume innerhalb eines Tages sofort zu erhalten? (Die heutige Ernte dieser Blume wird nicht davon beeinflusst.)"
+ACTIVITY_SPFARM_TEXT96,Ausgereift!
+ACTIVITY_SPFARM_TEXT97,Ruhm-Belohnungen
+ACTIVITY_SPFARM_TEXT98,"Treibe im Manor-Zentrum die Politiken, um das Ruhm-Level zu erhöhen!"
+ACTIVITY_SPFARM_TEXT99,Exklusives Paket:
+ACTIVITY_SPFARM_TEXT100,"1. Beim Sondernachschub wird ein exklusives Paket angeboten, das während des Events nur einmal gekauft werden kann. Durch den Kauf des exklusiven Pakets werden täglich 3 Tickets zum Plündern geschenkt. Solange du während des Events das exklusive Paket gekauft hast, werden alle Belohnungen der vorherigen Tagen nachträglich gesendet.|2. Tickets zum Plündern im exklusiven Paket können im Event ""Einsatz ins Manor"" verwendet werden, um Manors der anderen Spieler zu plündern.|3. Abgesehen von dem exklusiven Paket wird das Kauflimit der anderen Pakete in der 2. Woche des Events zurückgesetzt. Die restlichen Kaufchancen aus der ersten Woche werden zu denen in der 2. Woche addiert."
+ACTIVITY_SPFARM_TEXT101,"Schließe die Aufgaben ab, um reichhaltige Belohnungen zu erhalten. Die täglichen Aufgaben werden täglich um 0 Uhr (UTC/GMT 0) erneuert, während die Herausforderungen nicht."
+ACTIVITY_SPFARM_TEXT102,Herausforderung
+ACTIVITY_SPFARM_TEXT103,Manor-Lv.
+ACTIVITY_SPFARM_TEXT104,Einsatz\nins Manor
+ACTIVITY_SPFARM_TEXT105,"Max. Anzahl der Blume erreicht. Treibe bestimmte Politiken, um die max. Anzahl der zu pflanzenden Blume zu erhöhen!"
+ACTIVITY_SPFARM_TEXT106,Rangliste (Manor-Level)
+ACTIVITY_SPFARM_TEXT107,Max. Ruhm-Level erreicht!
+ACTIVITY_SPFARM_TEXT108,Kein Bericht
+ACTIVITY_SPFARM_TEXT109,Verlust-Lv.
+ACTIVITY_SPFARM_TEXT110,Beute-Lv.
+ACTIVITY_SPFARM_TEXT111,Erfolgreich verpflanzt!
+ACTIVITY_SPFARM_TEXT112,Erfolgreich gewechselt!
+ACTIVITY_SPFARM_TEXT113,"1. Hier kannst du alle Plünder- und Schutzberichte in der letzten Zeit prüfen.|2. Beute-Lv. im Plünderbericht ist die Summe der Level aller Blumen, die du geplündert hast.|3. Verlust-Lv. im Schutzbericht ist die Summe der Level aller Blumen, die von dem Plünderer geplündert wurden."
+ACTIVITY_SPFARM_TEXT114,Prima! Während dieser Verteidigung wurden\nkeine Ressourcen geplündert!
+ACTIVITY_SPFARM_TEXT115,Während dieser Plünderung hast du keine\nBeute erhalten...

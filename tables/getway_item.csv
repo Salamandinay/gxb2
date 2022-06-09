@@ -88,3 +88,7 @@ id,name,item_id,get_limit,show_activity,lv_limit,function_id,go_window,go_params
 88,-1,,,299,0,,activity_childhood_shop_gacha_window,
 89,-1,,,299,0,,activity_window,"select:299,large_series:1"
 90,-1,,,210,0,,activity_window,"select:210,large_series:1"
+91,-1,,,302,0,,activity_window,select:302
+92,-1,,,301,0,,activity_window,select:301
+93,-1,,,300,0,,,
+94,-1,271,15,300,0,,item_buy_window,

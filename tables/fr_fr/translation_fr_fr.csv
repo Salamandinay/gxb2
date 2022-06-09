@@ -464,7 +464,7 @@ NOW_AWARD,Récompenses Actuelles :
 ARENA_RANK_DESC1,Envoyées tous les jours à 21h (GMT 0)
 ARENA_RANK_DESC2,Les récompenses seront envoyées par courrier
 BATTLE_RECORD,Historique
-DAY_BEFORE,Il y a {1} jours
+DAY_BEFORE,Il y a {1} jour(s)
 HOUR_BEFORE,Il y a {1} heure(s)
 MIN_BEFORE,Il y a {1} minute(s)
 SECOND_BEFORE,Il y a quelques secondes
@@ -533,7 +533,7 @@ NOTICE_WINDOW,Notification
 ACCOUNT_BIND_SUC,Compte lié avec succès
 ANONY_GUEST,Visiteur
 SEND,Envoyer
-CHAT_WINDOW,Discuter
+CHAT_WINDOW,Tchat
 CHAT_NO_NULL,Vous ne pouvez pas envoyer de message vide
 CHAT_LIMIT_LEV,Vous devez être Niv.{1} pour parler
 CHAT_LIMIT_TIME,Attendez {1}s pour envoyer un autre message
@@ -1018,7 +1018,7 @@ MID_AUTUMN_ACTIVITY_CONFIRM,Êtes-vous sûr de vouloir échanger ?
 COMMIC_CHAPTER,Épisode {1}
 DAILY_QUIZ_BUY_WINDOW,Nombre d'Achats
 DAILY_QUIZ_BUY_DETAILS,Combien voulez-vous en acheter ?
-TRIAL_TEXT10,La Fille a été vaincue
+TRIAL_TEXT10,Cette Fille a été vaincue.
 CHAT_TRANSLATEING,Traduction en cours...
 DARK_GUARD_HELP_TITLE,Aide
 DARK_GUARD_HELP,"1. En utilisant un 【Biscuit en forme d'Os】, vous augmenterez l'intimité du Serviteur Mystique de 10 points.|2. Vous pouvez obtenir 【Biscuit en forme d'Os】 dans la Bataille Auto|3. Augmentez l'intimité du Serviteur Mystique au maximum pour obtenir des récompenses spéciales et des récompenses aléatoires supplémentaires|4. Récompenses (2 Récompenses principales et 1 Récompense aléatoire)：|Récompenses Principales：Pièces et Gemmes|Récompense Aléatoire：|Sceau (25%%), Fragments de Fille 5 étoiles*20 (40%%), Paquet Cadeau*20 (35%%)"
@@ -1816,7 +1816,7 @@ DAILY_QUIZ_DESC,Touchez ici pour défier un niveau supérieur et obtenir plus de
 DAILY_QUIZ_FIGHT_FIRST,Veuillez cliquer sur l'image à gauche pour changer le niveau du Quiz
 SENIOR_SCROLL_IF_BUY,プレミアムガチャコインが足りません、購入しますか？
 TOWER_LEVEL,Étape {1}
-MAKE_CAKE_HELP,"1. Vous pouvez utiliser {1} afin d'échanger des récompenses dans l'interface de l'événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l'interface de l'événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Lors du 15ème jour, vous ne pourrez plus obtenir {1}, cependant vous pourrez toujours échanger vos récompenses. |5. Moyen d'obtention de {1}：Butin de Campagne, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin, Offres de Lavli, Le périple du Lavli (du 14/01 au 20/01), et Capsules de Nouvelle Fille (du 21/01 au 27/01). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en Pièces d'Or, 1 {1} contre 20k, et distribuées par courrier."
+MAKE_CAKE_HELP,"1. Utilisez {1} afin d'échanger des récompenses dans l’interface de l’événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l’interface de l’événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Vous ne pourrez échanger les récompenses qu'au 15ème jour.|5. Moyen d'obtention de {1}：Butin de la Bataille Automatique, achat de Pack de Grande Valeur, de Pack Surprise et de Pack Surprise de Skin, événement de Capsules de Nouvelle Fille (du 10/06 au 16/06) et Examen d'admission (du 17/06 au 23/06). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en pièces d'or, 1 {1} contre 20k, et distribuées par courrier."
 MAKE_CAKE_ITEM_TEXT1,1er
 MAKE_CAKE_ITEM_TEXT2,2ème
 MAKE_CAKE_ITEM_TEXT3,3ème
@@ -1865,7 +1865,7 @@ HERO_CHALLENGE_TIPS5,Le Bonus {1} sera déclenché dans les étapes suivantes
 HERO_CHALLENGE_MISC,Découvrez \nleurs secrets
 OTHER_BATTLE,Arène
 HERO_CHALLENGE_DETAIL_WINDOW_HELP,"Les Défis des Personnages sont divisés en Mode Normal, Mode d'Échecs, Mode Casse-Tête et Mode Vitesse：||Mode Normal|1. Dans le mode normal vous ne pouvez qu'utiliser les Filles obtenues dans le Défi du Personnage, les attributs des Filles sont fixes.|2. Chaque Défi du Personnage comporte 10 étapes, vous pourrez obtenir beaucoup de récompenses en réussissant le défi.|3. Vous avez besoin d'au moins 1 Coupon de Défi pour combattre dans une étape, vous obtiendrez 1 Coupons de Défi toutes les 30 minutes. Vous êtes limité à 10 Coupons maximum.|4. Vous obtiendrez des Filles, des bénédictions ou des Serviteurs pour vous aider dans la bataille et débloquer l'étape suivante. Si vous perdez la bataille, vous perdrez 1 Coupon de Défi et les Filles ne seront plus utilisables dans ce Défi.|5. Vous pouvez refaire une des étapes déjà finie, mais n'obtiendrez aucune récompense ou malus.|6. Vous pouvez utiliser 1 Coupon de Défi pour réinitialiser le défi. Vous perdrez les Filles, les bénédictions et les Serviteurs que vous avez débloqué durant ce défi et recommencerez depuis l'étape 1.||Mode d'Échecs|1. Dans le Mode d'Échecs, vous pouvez utiliser des Tickets d'Échecs pour obtenir et améliorer des Filles. Vous ne pouvez utiliser que ces Filles pour combattre.|2. Obtenez 3 Filles identiques pour les fusionner et la faire passer au niveau supérieur et pouvoir actualiser les Filles à choisir 1 fois gratuitement. Les 3 Filles qui vous seront proposées après l'actualisation gratuite seront des Filles Élites. Une fois que vous en choisissez une, les 2 autres seront actualisées automatiquement.|3. Moyens d'obtention des Tickets d'Échecs：Terminer l'étape actuelle, Échanger vos Filles.|4. Dans ce mode, la bataille sera accessible tant que vous avez de l'Énergie. L'Énergie est déduite après une défaite en fonction des ennemis restants. Une fois votre Énergie à 0, vous ne pourrez plus vous battre.||Casse-tête|1. Dans le casse-tête, à chaque étape vous pourrez choisir votre formation avec les Filles proposées afin de vous battre.|2. Pendant les étapes des casse-tête, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi, vous ne perdrez pas la possibilité d'utiliser les Filles obtenues.|3. Vous ne pouvez pas réinitialiser le défi d'un casse-tête.|Mode de Vitesse|1. Ce mode est limité dans le temps. Il s'ouvre de temps en temps.|2. Chaque étape de Mode de Vitesse est correspondante à celle de Mode Normal. Vous devez tout d'abord terminer l'étape correspondante dans le Mode Normal pour débloquer celle du Mode de Vitesse. Les ennemis sont plus puissants que ceux du Mode Normal.|3. Vous ne pouvez qu'utiliser vos propres Filles afin de vous battre, si vous perdez la bataille vous ne perdrez qu'un Coupon de Défi. |4. Nombre de Tours：Chaque étape enregistrera le nombre minimum de tours utilisés dans ce Mode, et vous pouvez défier à plusieurs reprises les étapes terminées pour réduire le nombre de tours. |5. Nombre de Défis：Lorsque un défi d'une étape est en cours, quelque soit le résultat du défi, le nombre de défis augmente. Lorsque l'étape contestée est passée, si le défi est réussi et que le meilleur Nombre de tours est rafraîchi, le nombre de défis augmente aussi.|6. Les joueurs qui réussissent les 10 étapes peuvent participer au Classement et obtenir des récompenses. Les joueurs ayant le moins de Nombre de Tours seront classés plus haut ; si leur Nombre de Tours sont identiques, celui ayant le moins de défis sera classé plus haut ; si leur nombre de défis sont également identiques, il peut y avoir jusqu'à trois joueurs avec le même Classement."
-ALREADY_DIE,La Fille a été vaincue
+ALREADY_DIE,Cette Fille a été vaincue.
 QUESTIONNAIRE_TEXT1,"
 Cela fait maintenant un bout de temps que vous êtes à l\'Académie Yume, Senpai ! Nous espérons que vous appréciez le temps passé ici~
 Yuki serait ravie que vous remplissiez ce questionnaire afin qu\'elle puisse mieux vous assister tout au long de votre aventure sur le campus !
@@ -3760,7 +3760,7 @@ ACTIVITY_LAFULI_DRIFT_GO,Choisissez le nombre de case souhaité
 ACTIVITY_LAFULI_DRIFT_CARD,Choisissez une carte
 ACTIVITY_LAFULI_DRIFT_AWARD,Collectez les récompenses
 ACTIVITY_LAFULI_DRIFT_ROUND,Tours terminés：{1}
-ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Pack Surprise de Skin| -Boutique Limitée de Tenue| - Récompenses Quotidiennes (via Courrier)"
+ACTIVITY_LAFULI_DRIFT_HELP,"1. Appuyez sur le ""Gouvernail"" pour le faire tourner et Lavli avancera en fonction du nombre de points affiché. Si vous utilisez un ""Gouvernail Avancé"", vous pouvez choisir le nombre de points que vous souhaitez. |2. Lorsque Lavli avance, si elle passe/s'arrête sur une case d'un Arbre de Corail, elle ramasse des Branches de Corail. À chaque fois que Lavli s'arrête sur une case ""Arbre de Corail"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |3. Lorsque Lavli s'arrête sur une case de ressources, elle obtiendra les ressources correspondantes. À chaque fois que Lavli s'arrête sur une case ""Ressources"", le niveau de la case augmentera d'1 niveau (+1), chaque case peut aller jusqu'au niveau 3 maximum. |4. Lorsque Lavli s'arrête sur une case de Perle, elle obtiendra les Perles correspondantes qui sont échangeables dans la Boutique. À la fin de l'événement, les Perles non utilisées seront automatiquement converties en Pièces d'or, chaque Perle équivalant à 100k Pièces d'or. |5. Lorsque Lavli s'arrête sur la case ""Maison en Conque"", 3 cartes avec des effets différents apparaîtront. Choisissez en une pour l'activer. |6. Lorsque Lavli s'arrête sur la case ""Vortex Marin"", la prochaine fois que vous utiliserez un Gouvernail, Lavli n'avancera que de la moitié de ce qu'elle devrait avancer. |7. Collectez les Branches de Corail nécessaires pour les échanger contre des récompense. |8. Les récompenses que vous pouvez obtenir grâce aux Branches de Corail seront rafraîchies une fois que vous les avez toutes obtenues et peuvent être obtenues plusieurs fois.|9. Vous pouvez appuyer sur ""Navigation Auto"" pour faire marcher Lavli automatiquement en utilisant les Gouvernails (Gouvernails Avancés n'incluent pas). Si Lavli reste sur la case de ""Maison en Conque"", une carte sera aléatoirement choisie. Vous pouvez également appuyer sur ""Arrêter"" ou quitter l'interface de cet événement pour stopper la ""Navigation Auto"".|10. À la fin de l'événement, les ""Gouvernails"" et ""Gouvernails Avancés"" non utilisés seront convertis contre 2 Branches de Corail. |11. Moyens d'obtention de Gouvernail：| -En utilisant des Gemmes (Limite: 30 fois)| -Tâches des Filles| -Offres de Lavli| -Pack de Grande Valeur| -Pack Surprise| -Pack Surprise de Skin| -Connexion Quotidienne (via Courrier)"
 ONE_KEY_COMPOSE,Tout synthétiser
 ONE_KEY_COMPOSE_TEXT,Vous avez assez de ressources pour synthétiser les équipements suivants. Voulez-vous les synthétiser ?
 ONE_KEY_COMPOSE_TEXT2,Aucun équipement du type actuel ne peut être synthétisé.
@@ -5200,7 +5200,7 @@ Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 F
 (6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l\'Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l\'Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s\'il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l\'Élimination.
 (2) Pendant cette phase, vous ne ferez qu\'un combat par jour (vous ne pouvez pas modifier votre Équipe durant les 2 heures précédant le combat) et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
 (3) Règles de Combat (Élimination&Finalistes)
-Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux et des Clochettes seront conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
+Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Les niveaux des Noyaux Astraux et des Clochettes seront également conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
 Durant le combat, les PV et l\'Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
 (2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
 Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
@@ -6401,33 +6401,33 @@ ACTIVITY_CHILDREN_GAMBLE_TEXT02,Récompense\nBasique
 ACTIVITY_CHILDREN_GAMBLE_TEXT03,Choisissez une récompense
 GO_DRESS_SHOW_SHOP_TIPS,Voulez-vous aller à la boutique pour acheter des bonus de combat ?
 ACTIVITY_CHILDREN_TITLE,Les Bambins\nde Yume
-ACTIVITY_SPFARM_TEXT01,開闢異界莊園，追尋足以守護學院的力量......
-ACTIVITY_SPFARM_TEXT02,莊園總等級
-ACTIVITY_SPFARM_TEXT03,進入莊園
-ACTIVITY_SPFARM_HELP1,主界面幫助
-ACTIVITY_SPFARM_HELP2,地圖界面幫助
-ACTIVITY_SPFARM_TEXT04,知名度：{1}
-ACTIVITY_SPFARM_TEXT05,外出掠奪
-ACTIVITY_SPFARM_TEXT06,知名度獎勵
-ACTIVITY_SPFARM_TEXT07,掠奪中
-ACTIVITY_SPFARM_TEXT08,背包容量
+ACTIVITY_SPFARM_TEXT01,"Je t'en prie, entre dans mon manoir et trouves-y ce dont tu as besoin..."
+ACTIVITY_SPFARM_TEXT02,Niv. du Jardin
+ACTIVITY_SPFARM_TEXT03,Entrer
+ACTIVITY_SPFARM_HELP1,"1. Cet événement dure 15 jours. Lors des 14 permiers jours, plantez des Fleurs et pillez le manoir des autres joueurs pour obtenir des ressources. Le 15e jour de cet événement est le jour d’affichage, durant lequel vous ne pourrez plus piller les ressources des autres joueurs.|2. Touchez une case pour planter vos Fleurs. Vous pourrez collecter les ressources correspondantes chaque jour à 00 : 00 (UTC/GMT 0). |3. Utilisez 100 Graines Paranormales pour planter une Fleur ou augmenter son niveau de 1. Vous pouvez également changer le type de vos Fleurs en utilisant des Graines Paranormales (50 x niveau actuel de la Fleur que vous avez choisie). |4. Déplacez vos Fleurs en appuyant longtemps dessus. Déployez-y une Armée Défensive afin de protéger vos Fleurs des pillages.|5. Utilisez des Mégaphones pour appliquer une Stratégie.|6. Une fois avoir appliqué 3 Stratégies, votre Manoir gagnera 1 de Prestige et vous obtiendrez également des récompenses.|7. Utilisez 1 Ticket de Pillage pour piller 1 fois les ressources d’un autre joueur. 3 Tickets de Pillage vous seront envoyés chaque jour au cours des 14 premiers jours de cet événement. Vous pouvez également acheter des Tickets de Pillage en utilisant des Gemmes (15 Tickets de Pillage achetables au maximum).|8. Plus le niveau de votre Jardin sera haut, plus la quantité de ressources pillables chez un autre joueur sera élevée.|9. Après l'événement, les Fruits Paranormaux, les Mégaphones et les Tickets de Pillage seront automatiquement convertis en Pièce d'Or, 1 Fruit Paranormal = 1K Pièce d'Or, 1 Mégaphone = 50K Pièce d'Or, 1 Ticket de Pillage = 20K Pièce d'Or."
+ACTIVITY_SPFARM_HELP2,"1. À chaque pillage, vous serez transporté au Manoir d’un autre joueur (se trouvant au centre de la carte).|2. Au début du pillage, toutes les cases seront face cachée à l’exception de la case du Manoir. Vous commencerez par retourner les cases une des 4 cases perpendiculairement adjacentes au Manoir (↑↓←→).|3. Toutes les cases étant face cachée, vous devrez les retourner pour découvrir ce qu’il se trouve en dessous.|4. En retournant une case - Armée Défensive, vous devrez vaincre cette dernière avant de pouvoir retourner les cases avoisinantes.|5. Si vous retournez une case - Fleur, vous pourrez piller 20%% de la Production/Jour de cette Fleur et les mettre dans votre Sac.|6. Cliquez sur le Manoir du joueur que vous pillez pour mettre fin au pillage et vous recevrez les récompenses que vous avez pillées à l’intérieur votre sac."
+ACTIVITY_SPFARM_TEXT04,Prestige：[c][10F520]{1}[-][/c]
+ACTIVITY_SPFARM_TEXT05,Piller
+ACTIVITY_SPFARM_TEXT06,Récompense de Prestige
+ACTIVITY_SPFARM_TEXT07,En cours de pillage...
+ACTIVITY_SPFARM_TEXT08,Capacité
 NOT_EQUIPPED,Disponible
 CHOOSE_EQUIP,Choisissez un équipement :
 ACTIVITY_CHILDREN_SHOP_BUTTON04,Boutique
 SHRINE_POOL_TEXT04,Fragment
-ACTIVITY_SPFARM_TEXT09,種植
-ACTIVITY_SPFARM_TEXT10,更換
-ACTIVITY_SPFARM_TEXT11,通用
-ACTIVITY_SPFARM_TEXT12,進階
-ACTIVITY_SPFARM_TEXT13,特殊
-ACTIVITY_SPFARM_TEXT14,建築數量達到上限
-ACTIVITY_SPFARM_TEXT15,建築等級上限低於被更換的建築
-ACTIVITY_SPFARM_TEXT16,每日0點(UTC/GMT 0)產出[c][10F520]{1}[-][/c]個[c][10F510]{2}[-][/c]。
-ACTIVITY_SPFARM_TEXT17,周圍4格建築在受到入侵時，遭受的損失降低[c][10F520]{1}[-][/c]。
+ACTIVITY_SPFARM_TEXT09,Planter
+ACTIVITY_SPFARM_TEXT10,Changer
+ACTIVITY_SPFARM_TEXT11,Ordinaire
+ACTIVITY_SPFARM_TEXT12,Rare
+ACTIVITY_SPFARM_TEXT13,Spécial
+ACTIVITY_SPFARM_TEXT14,La limite de cette espèce de plante est atteinte !
+ACTIVITY_SPFARM_TEXT15,La limite du niveau max de cette Fleur est inférieure à ce que vous avez choisi.
+ACTIVITY_SPFARM_TEXT16,"Vous obtiendrez [c][00B550]{2}[-][/c]*[c][00B550]{1}[-][/c] par jour, collectables à 00:00 (UTC/GMT 0) le lendemain."
+ACTIVITY_SPFARM_TEXT17,Réduit de [c][00B550]{1}[-][/c] la perte lorsque les 4 Fleurs à proximité sont pillées.
 ENTRANCE_TEST_STAR_ORIGIN_LOCK,Débloqué après avoir atteint le Rang S
 OLD_SCHOOL_TIPS01,Voulez-vous choisir tous les Bonus ?
-ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該建築?
-ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換建築?
+ACTIVITY_SPFARM_TEXT18,Voulez-vous utiliser {2}*{1} pour planter cette Fleur ?
+ACTIVITY_SPFARM_TEXT19,Voulez-vous utiliser {2}*{1} pour changer la Fleur actuelle ?
 ACTIVITY_DRAGONBOAT2022_BUTTON01,Savourer
 ACTIVITY_DRAGONBOAT2022_BUTTON02,Vertus de\nl'Armoise
 ACTIVITY_DRAGONBOAT2022_HELP,"1. La fête des Bateaux-Dragon est arrivée ! Venez savourer des Gâteaux à l’Armoise avec Scythe ! Chaque fois que vous consommez 2 Gâteaux à l’Armoise, votre Avancée augmentera de 1 et vous obtiendrez une Récompense Basique, vous aurez également une chance d’obtenir une Récompense Supplémentaire - Boîte de la fête des Bateaux-Dragon. |2. Avant de savourer des Gâteaux à l’Armoise avec Scythe, veuillez d’abord toucher « Vertus de l'Armoise » pour choisir les récompenses que vous voulez obtenir. Après avoir savouré un certain nombre de Gâteau à l’Armoise, vous obtiendrez les récompenses de votre choix. |3. Après avoir savouré un certain nombre du Gâteau à l’Armoise, vous obtiendrez également des récompenses de palier.|4. Moyen d’obtention de Gâteau à l’Armoise : Courrier Quotidien, Utiliser 1 Gouvernail ou Gouvernail Avancé dans l’événement - Le Périple de Lavli, Offres de Lavli, Tâche des Filles, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin. |5. Après la fin de l’événement, les Gâteaux à l’Armoise non utilisés seront automatiquement convertis en Pièce d’Or, 1 Gâteau à l’Armoise = 50K Pièces d’Or."
@@ -6442,16 +6442,101 @@ ACTIVITY_DRAGONBOAT2022_TIPS01,"Veuillez toucher ""+"" pour choisir les récompe
 PARTNER_CHALLENGE_CHESS_TEXT11,Filles Élites proposées :
 PARTNER_CHALLENGE_CHESS_TEXT12,La liste sera actualisée une fois que vous aurez obtenu une Fille Élite.
 ACTIVITY_DRAGONBOAT2022_TEXT08,Aucune récompense obtenue
-ACTIVITY_SPFARM_TEXT20,建築詳情
-ACTIVITY_SPFARM_TEXT21,每日產出
-ACTIVITY_SPFARM_TEXT22,減少損失
-ACTIVITY_SPFARM_TEXT23,守軍
-ACTIVITY_SPFARM_TEXT24,介紹
-ACTIVITY_SPFARM_TEXT25,已满级
-ACTIVITY_SPFARM_TEXT26,建筑等级已经到达当前上限。推行对应政策可以提高等级上限！
-ACTIVITY_SPFARM_TEXT27,更換
-ACTIVITY_SPFARM_TEXT28,移動
+ACTIVITY_SPFARM_TEXT20,Plante
+ACTIVITY_SPFARM_TEXT21,Production/Jour
+ACTIVITY_SPFARM_TEXT22,Réduction de perte
+ACTIVITY_SPFARM_TEXT23,Armée\nDéfensive
+ACTIVITY_SPFARM_TEXT24,Détails
+ACTIVITY_SPFARM_TEXT25,Niv. Max
+ACTIVITY_SPFARM_TEXT26,Le niveau de cette Fleur a atteint sa limite ! Appliquez des Stratégies au Manoir pour augmenter la limite de son niveau max.
+ACTIVITY_SPFARM_TEXT27,Changer
+ACTIVITY_SPFARM_TEXT28,Déplacer
 CHIME_TEXT17,Désintégrer
-ACTIVITY_SPFARM_TEXT29,無法更換本體建築
-ACTIVITY_SPFARM_TEXT30,本次活動不再提示
+ACTIVITY_SPFARM_TEXT29,Impossible de changer cette Fleur !
+ACTIVITY_SPFARM_TEXT30,Ne plus rappeler durant cet événement
 CHIME_TEXT18,Seul le surplus de Fragment de Clochette peut être converti.
+ACTIVITY_SPFARM_TEXT31,Touchez une autre case pour échanger leurs places.
+ACTIVITY_SPFARM_TEXT32,Voulez-vous changer cette case de place ?
+ACTIVITY_SPFARM_TEXT33,Impossible de changer la place avec Manoir !
+ACTIVITY_SPFARM_TEXT34,"Impossible de déployer une Armée Défensive dans les 4 cases à côté du Manoir ! L'Armée Défensive sera retirée si vous changez la place, voulez-vous continuer ?"
+ACTIVITY_SPFARM_TEXT35,Liste des joueurs
+ACTIVITY_SPFARM_TEXT36,Choisissez un joueur à piller
+ACTIVITY_SPFARM_TEXT37,Impossible de déployer une Armée Défensive dans les 4 cases à côté du Manoir !
+ACTIVITY_SPFARM_TEXT38,Limite d'Armée Défensive déployable atteinte !
+ACTIVITY_SPFARM_TEXT39,Cette Fille a été déployée dans une Armée Défensive pour protéger une autre plante !
+ACTIVITY_SPFARM_TEXT40,Piller
+ACTIVITY_SPFARM_TEXT41,Prestige actuel
+ACTIVITY_SPFARM_TEXT42,"Une fois avoir appliqué ces 3 Stratégies, votre Manoir gagnera 1 de Prestige."
+ACTIVITY_SPFARM_TEXT43,Stratégie(s) Actuelle(s)
+ACTIVITY_SPFARM_TEXT44,Fleur Ordinaire
+ACTIVITY_SPFARM_TEXT45,Fleur Rare
+ACTIVITY_SPFARM_TEXT46,Fruit Paranormal
+ACTIVITY_SPFARM_TEXT47,Épouvantail
+ACTIVITY_SPFARM_TEXT48,Appliquer
+ACTIVITY_SPFARM_TEXT49,Voulez-vous utiliser {1} Mégaphone(s) pour appliquer cette Stratégie ?
+ACTIVITY_SPFARM_TEXT50,Aperçu des Stratégies
+ACTIVITY_SPFARM_TEXT51,Prestige：
+ACTIVITY_SPFARM_TEXT52,Choisissez vos Filles
+ACTIVITY_SPFARM_TEXT53,Choisissez vos Filles
+ACTIVITY_SPFARM_TEXT54,Vous ne pouvez qu'explorer les cases adjacentes !
+ACTIVITY_SPFARM_TEXT55,Vainquez les Armées Défensives à proximité pour continuer à explorer.
+ACTIVITY_SPFARM_TEXT56,Impossible de piller l'{1}.
+ACTIVITY_SPFARM_TEXT57,Limite de Fille déployable atteinte !
+ACTIVITY_SPFARM_TEXT58,Voulez-vous terminer votre pillage et rentrer au Manoir ?
+ACTIVITY_SPFARM_TEXT59,Voulez-vous jeter cette ressource ?
+ACTIVITY_SPFARM_TEXT60,"Vous n'avez pas encore rempli votre sac, voulez-vous terminer votre pillage et rentrer au Manoir ?"
+ACTIVITY_SPFARM_TEXT61,"Vous obtiendrez {2}*{1} et cette ressource occupera 1 d'emplacement dans votre sac, voulez-vous continuer ?"
+ACTIVITY_SPFARM_TEXT62,Votre sac est rempli !
+ACTIVITY_SPFARM_TEXT63,Prestige
+ACTIVITY_SPFARM_TEXT64,Appliquez des Stratégies au Manoir pour augmenter le Prestige de votre Manoir.
+ACTIVITY_SPFARM_TEXT65,"En cours de pillage, veuillez patienter..."
+ACTIVITY_SPFARM_TEXT66,"1. Vous porterez un sac avec vous à chaque pillage. Les Ressources que vous pillerez occuperont 1 d'emplacement dans votre sac. |2. Durant un pillage, vous pouvez renoncer à certaines ressources pour faire de la place à d'autres ressources.|3. La capacité de votre sac sera augmentée après avoir appliqué les Stratégies correspondantes."
+ACTIVITY_SPFARM_TEXT67,"C'est le dernier Fruit Paranormal restant dans votre Manoir, voulez-vous le remplacer par une autre Fleur ?"
+ACTIVITY_SPFARM_TEXT68,Appliquez des Stratégies au Manoir pour augmenter le nombre des Armées Défensives.
+ACTIVITY_SPFARM_TEXT69,Limite max d'Armées Défensives déployables atteinte !
+ACTIVITY_SPFARM_TEXT74,Historique
+ACTIVITY_SPFARM_TEXT75,Gain
+ACTIVITY_SPFARM_TEXT76,Perte
+ACTIVITY_SPFARM_TEXT70,Aucune perte
+ACTIVITY_SPFARM_TEXT71,"Après avoir été pillé 3 fois en une journée, vous ne subirez plus de pertes lors des pillages suivants durant cette même journée."
+ACTIVITY_SPFARM_TEXT72,Historique\nde Pillage
+ACTIVITY_SPFARM_TEXT73,Historique\nde Défense
+ACTIVITY_SPFARM_TEXT77,Impossible de changer vos Filles au cours d'un pillage.
+ACTIVITY_SPFARM_TEXT78,Amis
+ACTIVITY_SPFARM_TEXT79,Serveurs
+ACTIVITY_SPFARM_TEXT80,Aucun adversaire trouvé
+ACTIVITY_SPFARM_TEXT81,Période d'affichage
+ACTIVITY_SPFARM_TEXT82,Continuer
+ACTIVITY_SPFARM_TEXT83,"Cet événement va prendre fin à 00 : 00 (UTC/GMT 0), n'oubliez pas de récupérer vos ressources à temps~"
+ACTIVITY_SPFARM_TEXT84,[c][726560]——Message de Maïa——[-][/c]\nEmbellis davantage le jardin de mon manoir et je pourrais te trouver [c][76b030]un meilleur endroit[-][/c] à piller !
+ACTIVITY_SPFARM_TEXT85,Impossible d'obtenir {1} durant la période d'affichage.
+ACTIVITY_SPFARM_TEXT86,"L'événement va bientôt prendre fin, terminez ce pillage à temps et rentrez au manoir !"
+ACTIVITY_SPFARM_TEXT87,"L'événement est terminé, les récompenses de ce pillage vous ont été envoyées dans votre sac."
+ACTIVITY_SPFARM_TEXT88,Piller
+ACTIVITY_SPFARM_TEXT89,Retour
+ACTIVITY_SPFARM_TEXT90,Obtention\nQuotidienne
+ACTIVITY_SPFARM_TEXT91,Obtention\nImmédiate
+ACTIVITY_SPFARM_TEXT92,Cumulé
+ACTIVITY_SPFARM_TEXT93,Accélérer
+ACTIVITY_SPFARM_TEXT94,La fonction d'Accélération sera débloquée après que le Prestige de votre Manoir ait atteint {1}.
+ACTIVITY_SPFARM_TEXT95,Voulez-vous utiliser {2}*{1} pour obtenir immédiatement les ressources de cette Fleur ? (cela n'influencera pas la production quotidienne)
+ACTIVITY_SPFARM_TEXT96,Accéléré
+ACTIVITY_SPFARM_TEXT97,Récompense de Prestige
+ACTIVITY_SPFARM_TEXT98,Appliquez des Stratégies au Manoir pour augmenter le Prestige de votre Manoir.
+ACTIVITY_SPFARM_TEXT99,Offre Unique：
+ACTIVITY_SPFARM_TEXT100,"1. Maïa vous propose une Offre Unique que vous ne pourrez acheter qu'une seule fois durant l'événement.|2. Les Tickets de Pillage obtenables dans cette Offre Limitée sont utilisés pour piller le manoir des autres joueurs.|3. Si vous achetez cette Offre Unique dans les jours suivants sa sortie, les récompenses des jours précédents votre achat vous seront également envoyées.|4. Les autres offres seront réinitialisées une semaine après le début de l'événement."
+ACTIVITY_SPFARM_TEXT101,"Les Tâches Journalières seront rafraîchies tous les jours à 0:00 (UTC/GMT 0), cependant les Tâches de Défi ne seront pas rafraîchies."
+ACTIVITY_SPFARM_TEXT102,Défi
+ACTIVITY_SPFARM_TEXT103,Niveau
+ACTIVITY_SPFARM_TEXT104,Manoir
+ACTIVITY_SPFARM_TEXT105,La quantité max de cette Fleur a atteint sa limite ! Appliquez des Stratégies au Manoir pour l'augmenter.
+ACTIVITY_SPFARM_TEXT106,Classement (Niveau du Jardin)
+ACTIVITY_SPFARM_TEXT107,Prestige Max !
+ACTIVITY_SPFARM_TEXT108,Aucun Historique
+ACTIVITY_SPFARM_TEXT109,Niv. de Perte
+ACTIVITY_SPFARM_TEXT110,Niv. de Gain
+ACTIVITY_SPFARM_TEXT111,Déplacé !
+ACTIVITY_SPFARM_TEXT112,Changé !
+ACTIVITY_SPFARM_TEXT113,1. Vous pouvez voir les historiques de pillage et les historiques de Défense dans cette interface.|2. Le Niveau de Gain correspond aux niveaux totaux des Plantes que vous avez pillées.|3. Le Niveau de Perte correspond aux niveaux totaux des Plantes qu'on vous a pillées.
+ACTIVITY_SPFARM_TEXT114,Vous n'avez rien perdu lors de ce pillage...
+ACTIVITY_SPFARM_TEXT115,Vous n'avez rien obtenu lors de ce pillage...

@@ -282,7 +282,10 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_STAR_ALTAR_GIFTBAG] = require("app.models.datas.StarAltarGiftBagData"),
 	[xyd.ActivityID.ACTIVITY_CHILDHOOD_SHOP] = require("app.models.datas.ActivityChildhoodShopData"),
 	[xyd.ActivityID.ACTIVITY_CHILDREN_TASK] = require("app.models.datas.ActivityChildrenTaskData"),
-	[xyd.ActivityID.ACTIVITY_DRAGONBOAT2022] = require("app.models.datas.ActivityDragonboat2022Data")
+	[xyd.ActivityID.ACTIVITY_SPFARM] = require("app.models.datas.ActivitySpfarmData"),
+	[xyd.ActivityID.ACTIVITY_DRAGONBOAT2022] = require("app.models.datas.ActivityDragonboat2022Data"),
+	[xyd.ActivityID.ACTIVITY_SPFARM_SUPPLY] = require("app.models.datas.ActivitySpfarmSupplyData"),
+	[xyd.ActivityID.ACTIVITY_SPFARM_MISSION] = require("app.models.datas.ActivitySpfarmMissionData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

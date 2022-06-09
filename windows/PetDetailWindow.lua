@@ -348,6 +348,9 @@ function PetDetailWindow:registerEvent()
 		end
 	end
 
+	self.eventProxy_:addEventListener(xyd.event.RESET_PET_EXLEVEL, function (event)
+		self:updateContent()
+	end)
 	self.eventProxy_:addEventListener(xyd.event.PET_GRADE_UP, function (event)
 		self:onPetGradeUp(event)
 	end)

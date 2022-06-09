@@ -755,6 +755,16 @@ function Partner:gradeUp()
 end
 
 function Partner:equip(equipments)
+	dump(self:getEquipment(), "走的這裡")
+
+	if self:getGroup() == xyd.PartnerGroup.TIANYI and self:getStar() >= 13 then
+		local partnerDetailWd = xyd.WindowManager.get():getWindow("partner_detail_window")
+
+		if partnerDetailWd and equipments[7] and equipments[7] == 0 and self:getEquipment()[7] and self:getEquipment()[7] ~= 0 then
+			self:setMoveOffSevenSkinState(true)
+		end
+	end
+
 	local msg = messages_pb.equip_req()
 	msg.partner_id = self.partnerID
 
@@ -1101,6 +1111,14 @@ function Partner:hasExSkill()
 	else
 		return false
 	end
+end
+
+function Partner:setMoveOffSevenSkinState(state)
+	self.isMoveOffSevenSkinState = state
+end
+
+function Partner:getIsMoveOffSevenSkinState()
+	return self.isMoveOffSevenSkinState
 end
 
 return Partner

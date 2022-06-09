@@ -503,8 +503,9 @@ Mark effect, increases the target\'s damage taken by 15%. Hornet Marks can stack
 5500401,Scythe,Enchant Mark,"
 Deals (80% of Attack) Damage against Back-line enemies and tags them with a [c][e28002]Round Mark[-][/c]. Increases self Damage Reduction by 5% for 3 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (180% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 5500501,Lucifer,Infernal Cut,"Deals (54% of Attack) damage against all enemies, dealing extra (20% of Attack) [c][01a310]Bleed[-][/c] damage each round for 3 rounds, extra 48% damage on Ranger each round for 3 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5600101,Angel,Holy Laser,Deals (80% of Attack) damage against 4 random enemies and heals 3 random allies for (75% of Attack) HP.
 5600201,Gabriel,Holy Blast,"
@@ -638,8 +639,9 @@ Mark effect, increases the target\'s damage taken by 25%. Hornet Marks can stack
 65501101,Scythe,Enchant Mark,"
 Deals (90% of Attack) Damage against Back-line enemies and tags them with a [c][e28002]Round Mark[-][/c]. Increases self Damage Reduction by 10% for 3 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (250% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 65501201,Annie,Devil Crash,Deals (105% of Attack) damage against 4 random enemies and reduces them 35 Energy.
 65501301,Lucifer,Infernal Cut,"Deals (75% of Attack) damage against all enemies, dealing extra (42% of Attack) [c][01a310]Bleed[-][/c] damage each round for 3 rounds. Deals extra 64% damage to enemy Rangers each round for 3 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65501401,Wraith,Six Mind,"Deals (210% of Attack) damage against 2 random enemies, if the enemy's HP is higher than self, deals (18% of enemy's total HP) extra damage (no more than 1500% of Attack). Gains 22.5% Crit for 3 rounds."
@@ -703,10 +705,13 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 75300501,Masamune,War Dance,"
 Deals (150% of Attack) damage against Back-line enemies and (32% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (250% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75300601,Hexa,Justice Rains,"Deals (190% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
 75300701,Alice,Dragon Fight,"Deals (146% of Attack) damage against all enemies, dealing extra 140% damage to Warrior class enemies. Gains 12% Damage Reduction."
 75300801,Muppet,Muppet String,"Deals (200% of Attack) damage against Front-line enemies, if the enemy has lower HP than self, deals extra (18% of the enemy's MAXIMUM health) damage, increases self Attack by 15% and Armor Break by 15%."
@@ -745,10 +750,11 @@ Deals (255% of Attack) damage against 2 random enemies, reduces 25% of their Att
 Mark effect, increases the target\'s damage taken by 45%. Hornet Marks can stack. (Maximum damage that Hornet Mark can stack is 300%)"
 75500101,Amelia,Magic Array,"Deals (98% of Attack) damage against all enemies and has 30% chance to [c][01a310]Petrify[-][/c] them for 2 rounds, increases self Damage Reduction by 40% for 2 rounds, has (30% chance) to steal 30 Energy.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75500201,Scythe,Enchant Mark,"
-Deals (124% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (280% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (124% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (280% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
-[c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 75500301,Lucifer,Infernal Cut,"Deals (115% of Attack) damage against all enemies, dealing extra (56% of Attack) [c][01a310]Bleed[-][/c] damage each round for 3 rounds. Deals extra 105% damage to enemy Rangers each round for 3 rounds. Increases Skill Damage by 50%.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75500401,Wraith,Six Mind,"Deals (300% of Attack) damage against 2 random enemies, (21% of enemy’s total HP) extra damage (no more than 1500% of Attack) to targets, and extra (180% of Attack) damage to Priest class enemies. The effects of healing the targets receive will also be lowered by 30% for 2 rounds. Grants 40% Crit to self for 3 rounds."
 75600101,Angel,Holy Laser,Deals (188% of Attack) damage against 4 random enemies and heals 3 random allies for (265% of Attack) while increasing their Holy Damage by 25%.
@@ -888,10 +894,13 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 5500402,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 20% chance to [c][01a310]Petrify[-][/c] the target for 1 round.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (95% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (95% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5500502,Lucifer,Devil's Descent,"Increases Skill Damage by 37.5%, Attack by 20% and HP by 20%."
 5600102,Angel,Holy Light,Each Attack heals self for (45% of Attack) HP and increases Holy Damage by 10% for 4 rounds.
 5600202,Gabriel,Holy Song,"Increases Attack by 15%, Hp by 20%, Holy Damage by 25%, Crit by 20%, Damage Reduction by 5% and Control Immunity by 10%."
@@ -992,10 +1001,13 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 65501102,Scythe,Petrify Mark II,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 30% chance to [c][01a310]Petrify[-][/c] the target for 1 round.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (120% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (120% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65501202,Annie,Charge II,Increases Attack by 20%.
 65501302,Lucifer,Devil's Descent II,"Increases Skill Damage by 50%, Attack by 25% and HP by 25%."
 65501402,Wraith,Power Black Hole,Gains 20 Energy and heals self for (70% of Attack) HP whenever an ally releases Active Skill.
@@ -1047,10 +1059,13 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 75500202,Scythe,Petrify Mark III,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (190% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (190% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75500302,Lucifer,Devil's Descent III,"Increases Skill Damage by 62.5%, Attack by 30%, and HP by 40%."
 75500402,Wraith,Power Black Hole,Gains 30 Energy and heals self for (100% of Attack) HP whenever an ally releases Active Skill.
 75600102,Angel,Holy Light III,Each Attack heals self for (195% of Attack) HP and increases Holy Damage by 20% for 4 rounds.
@@ -1160,8 +1175,9 @@ Mark effect, increases Priestess\'s damage against her enemies by 15%, can stack
 5500403,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 5% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (80% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (80% of Attack) damage at the same time."
 5500503,Lucifer,Shadow Strike,Attack has a 100% chance to increase self Attack by 6% and Speed by 5 for 3 rounds.
 5600103,Angel,Angel Power,"Increases Holy Damage by 36%, Attack by 15%, HP by 15% and Crit by 10%."
 5600203,Gabriel,Holy Mark,"
@@ -1270,8 +1286,9 @@ Mark effect, increases Priestess\'s damage against her enemies by 25%, can stack
 65501103,Scythe,Dark Strike II,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 7% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (150% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (150% of Attack) damage at the same time."
 65501203,Annie,Breaking Void II,"When attacked (Counterattack not included), increases Skill Damage by 6% and Energy by 30 for 3 rounds."
 65501303,Lucifer,Shadow Strike II,Attack has a 100% chance to increase self Attack by 10% and Speed by 10 for 3 rounds.
 65501403,Wraith,Soul Trip,"Increases HP by 25%, Speed by 40 and Armor Break by 30%, immune to [c][01a310]Silence[-][/c].\n[c][01a310]Silence:[-][/c]\nA control effect. During this effect, girls affected will not be able to release their Active Skills."
@@ -1331,8 +1348,9 @@ Mark effect, increases Priestess\'s damage against her enemies by 35%, can stack
 75500203,Scythe,Dark Strike III,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (185% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (185% of Attack) damage at the same time."
 75500303,Lucifer,Shadow Strike III,Attack has a 100% chance to increase self Attack by 20% and Speed by 15 for 3 rounds.
 75500403,Wraith,Soul Trip,"Increases HP by 30%, Speed by 60 and Armor Break by 40%, immune to [c][01a310]Silence[-][/c].\n[c][01a310]Silence:[-][/c]\nA control effect. During this effect, girls affected will not be able to release their Active Skills."
 75600103,Angel,Angel Power III,"Increases Holy Damage by 60%, Attack by 25%, HP by 20% and Crit by 20%."
@@ -1370,7 +1388,7 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 5200504,Javelin,Freezing Weakness,"Deals extra 37.5% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5200704,Sonya,Flame Counterstrike,"After being attacked by enemy whose Armor is lower than self, has 100% chance to Counterattack, dealing (100% of Attack) damage."
 5200904,Guan Yin,Quick Attack,Basic Attack targets 1 random enemy.
-5201004,Librarian,Lost Shield,Attack has a 30% chance to reduce targets' Crit by 10% and increase self Attack by 20% for 2 rounds.
+5201004,Librarian,Lost Shield,"Attack has a 30% chance to reduce targets' Crit by 10% and increase self Attack by 20% for 2 rounds, can stack."
 5300104,Priestess,Family Mark,"
 Tags the targets with a [c][e28002]Yinyang Mark[-][/c] and increase self Crit Damage by 9% for 3 rounds when attacked (Counterattack not included).
 
@@ -1524,10 +1542,11 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 75300304,Silvia,Ghost Shield III,"While below 30% health, increases Armor by 120% for 4 rounds. (Can only trigger once)"
 75300404,Toyo,Conquest III,"When attacked (Counterattack not included), has 90% chance to [c][01a310]Burn[-][/c] the target, dealing (120% of Attack) damage each round for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75300504,Masamune,Vision Shield III,"
-While below 50% health, increases Damage Reduction to self by 45% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 45% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (250% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deal (250% of Attack) damage at the same time. "
 75300604,Hexa,Ion Blade,"Basic Attack targets the enemy with the lowest HP, dealing (130% of Attack) damage, heals self for (45% of Damage) HP."
 75300704,Alice,Heal III,"When attacked (Counterattack not included), heals self for (100% of Attack) HP."
 75300804,Muppet,Muppet Awaken III,"After round 3, increases Crit by 60% and Crit Damage by 100%."
@@ -1625,10 +1644,13 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65501112,Scythe,Petrify Mark III,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (190% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deal (190% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65501212,Annie,Charge III,Increases Attack by 30%.
 65501312,Lucifer,Devil's Descent III,"Increases Skill Damage by 62.5%, Attack by 30%, and HP by 40%."
 65501412,Wraith,Power Black Hole,Gains 30 Energy and heals self for (100% of Attack) HP whenever an ally releases Active Skill.
@@ -1697,8 +1719,9 @@ Mark effect, increases Priestess\'s damage against her enemies by 35%, can stack
 65501113,Scythe,Dark Strike III,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (185% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (185% of Attack) damage at the same time, can stack."
 65501213,Annie,Breaking Void III,"When attacked (Counterattack not included), increases Energy by 30 and Skill Damage by 11% for 3 rounds."
 65501313,Lucifer,Shadow Strike III,Attack has a 100% chance to increase self Attack by 20% and Speed by 15 for 3 rounds.
 65501413,Wraith,Soul Trip,"Increases HP by 30%, Speed by 60 and Armor Break by 40%, immune to [c][01a310]Silence[-][/c].\n[c][01a310]Silence:[-][/c]\nA control effect. During this effect, girls affected will not be able to release their Active Skills."
@@ -1733,16 +1756,17 @@ Basic Attack changed to deal (95% of Attack) damage against front-line enemies a
 A damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round.
 [c][01a310]Poison:[-][/c]
 A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65200214,Librarian,Lost Shield III,Attack has a 80% chance to reduce targets' Crit by 15% and increase self Attack by 25% for 3 rounds.
+65200214,Librarian,Lost Shield III,"Attack has a 80% chance to reduce targets' Crit by 15% and increase self Attack by 25% for 3 rounds, can stack"
 65200314,Nia,Poison Body III,"When attacked (Counterattack not included), has a 60% chance to [c][01a310]Poison[-][/c] the attacker, dealing (72% of Attack) each round for 3 rounds.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65200414,Nobunaga,Counterstrike III,"When attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (200% of Attack) damage."
 65200514,Silvia,Ghost Shield III,"While below 30% health, increases Armor by 120% for 4 rounds. (Can only trigger once)"
 65200614,Toyo,Conquest III,"When attacked (Counterattack not included), has 90% chance to [c][01a310]Burn[-][/c] the target, dealing (120% of Attack) damage each round for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65200714,Masamune,Vision Shield III,"
-While below 50% health, increases Damage Reduction to self by 45% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 45% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (250% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (250% of Attack) damage at the same time."
 65200814,Hexa,Ion Blade,"Basic Attack targets the enemy with the lowest HP, dealing (130% of Attack) damage, heals self for (45% of Damage) HP."
 65200914,Amazon,Solar Arrow III,"
 Basic Attack has a 75% chance to [c][01a310]Poison[-][/c] the target and deal (200% of Attack) damage for 1 round and has a 15% chance to [c][01a310]Silence[-][/c] the target for 2 rounds
@@ -3677,7 +3701,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 5600702,Uriel,God’s Descent,"HP increases by 20%, Holy Damage increases by 20%, Immune Control increases by 10%, Damage Reduction increases by 10%."
 65601702,Uriel,God’s Descent,"HP increases by 30%, Holy Damage increases by 40%, Immune Control increases by 20%, Damage Reduction increases by 20%."
 65601712,Uriel,God’s Descent,"HP increases by 40%, Holy Damage increases by 70%, Immune Control increases by 30%, Damage Reduction increases by 30%."
@@ -3717,7 +3741,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 75600703,Uriel,God’s Gaze,"
 The chosen one is blessed by the God!
 
@@ -3729,7 +3753,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 5600704,Uriel,God’s Punishment,"
 Those who blaspheme God will be punished severely!
 
@@ -3765,7 +3789,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 75600704,Uriel,God’s Punishment,"
 Those who blaspheme God will be punished severely!
 
@@ -3777,7 +3801,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 5500800,Izanami,Basic Attack,Basic Attack
 65501700,Izanami,Basic Attack,Basic Attack
 75500700,Izanami,Basic Attack,Basic Attack
@@ -4878,38 +4902,53 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 753005011,Masamune,War Dance,"
 Deals (152% of Attack) damage against Back-line enemies and (32% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (255% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (255% of Attack) damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753005012,Masamune,War Dance,"
 Deals (154% of Attack) damage against Back-line enemies and (32% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (260% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (260% of Attack) damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753005013,Masamune,War Dance,"
 Deals (156% of Attack) damage against Back-line enemies and (32% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (265% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (265% of Attack) damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753005014,Masamune,War Dance,"
 Deals (158% of Attack) damage against Back-line enemies and (32% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (270% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (270% of Attack) damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753005015,Masamune,War Dance,"
 Deals (160% of Attack) damage against Back-line enemies and (37% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Has (20% chance) to tag enemies with [c][e28002]Round Mark[-][/c].
 
-[c][e28002]Round Mark:[-][/c]
-Mark effct, the Round Mark will be removed 2 round later and deals (275% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (275% of Attack) damage at the same time.
+
 [c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753005021,Masamune,One Eye Dragon,Increases Armor by 42% and HP by 40%.
 753005022,Masamune,One Eye Dragon,Increases Armor by 42% and HP by 42%.
 753005023,Masamune,One Eye Dragon,Increases Armor by 42.5% and HP by 42%.
@@ -4921,30 +4960,35 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 753005034,Masamune,Counterstrike,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (344% of Attack) damage."
 753005035,Masamune,Counterstrike,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (350% of Attack) damage."
 753005041,Masamune,Vision Shield,"
-While below 50% health, increases Damage Reduction to self by 46% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 46% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (255% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (255% of Attack) damage at the same time."
 753005042,Masamune,Vision Shield,"
-While below 50% health, increases Damage Reduction to self by 47% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 47% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (260% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (260% of Attack) damage at the same time."
 753005043,Masamune,Vision Shield,"
-While below 50% health, increases Damage Reduction to self by 48% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 48% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (265% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (265% of Attack) damage at the same time."
 753005044,Masamune,Vision Shield,"
-While below 50% health, increases Damage Reduction to self by 49% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 49% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (270% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (270% of Attack) damage at the same time."
 753005045,Masamune,Vision Shield,"
-While below 50% health, increases Damage Reduction to self by 50% for 3 rounds and tags them with a [c][e28002]Round Mark[-][/c].
+While below 50% health, increases Damage Reduction to self by 50% for 3 rounds and tags the enemy with the highest HP with a [c][e28002]Round Mark[-][/c]. (This skill can only trigger once)
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (275% of Attack) damage at the same time, can stack. (Can only trigger once)"
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 2 rounds later and deals (275% of Attack) damage at the same time."
 753006011,Hexa,Justice Rains,"Deals (193% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
 753006012,Hexa,Justice Rains,"Deals (196% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
 753006013,Hexa,Justice Rains,"Deals (199% of Attack) damage against 2 random backline enemies, steals 30% Attack from target for 3 rounds, gains Crit Damage by 40% for 3 rounds and self-heals (35% of Damage) HP."
@@ -5786,90 +5830,115 @@ Skill effect, when owned, additional Damage Reduction increases by 4% per Remnan
 755001044,Amelia,Dark Debt,"While below 50% health, increases Attack by 195% and reduces own Armor by 40% for 3 rounds. (Can only trigger once)"
 755001045,Amelia,Dark Debt,"While below 50% health, increases Attack by 198% and reduces own Armor by 40% for 3 rounds. (Can only trigger once)"
 755002011,Scythe,Enchant Mark,"
-Deals (126.5% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (285% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (126.5% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (285% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
-[c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 755002012,Scythe,Enchant Mark,"
-Deals (129% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (290% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (129% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (290% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
 [c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 755002013,Scythe,Enchant Mark,"
-Deals (132% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (295% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (132% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (295% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
-[c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 755002014,Scythe,Enchant Mark,"
-Deals (134% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (300% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (134% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (300% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (210% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
-[c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 755002015,Scythe,Enchant Mark,"
-Deals (136% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (305% of Attack) damage, It also has a 45% chance to tag another Round mark that can deal (215% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
+Deals (136% of Attack) Damage against all enemies and tags them with a [c][e28002]Round Mark[-][/c] that can deal (305% of Attack) damage, It also has a 45% chance to tag another [c][e28002]Round Mark[-][/c] that can deal (215% of Attack) damage at the same time. Increases self Damage Reduction by 15% for 3 rounds.
 
-[c][e28002]Round Mark[-][/c]
-Mark Effect, the Round Mark will be removed 1 round later and deals damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals damage at the same time."
 755002021,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (194% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (194% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 755002022,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (198% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (198% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 755002023,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (202% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (202% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 755002024,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 45% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (205% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (205% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 755002025,Scythe,Petrify Mark,"
 Attack has a 100% chance to tag the enemy with a [c][e28002]Round Mark[-][/c] and has a 50% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (209% of Attack) damage at the same time, can stack.
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (209% of Attack) damage at the same time.
+
 [c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 755002031,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (189% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (189% of Attack) damage at the same time."
 755002032,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (193% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (193% of Attack) damage at the same time."
 755002033,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (197% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (197% of Attack) damage at the same time."
 755002034,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 10.5% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (200% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (200% of Attack) damage at the same time."
 755002035,Scythe,Dark Strike,"
 Tag the attacker with a [c][e28002]Round Mark[-][/c], has a 30% chance to regenerate 11% of total HP.
 
-[c][e28002]Round Mark:[-][/c]
-Mark effect, the Round Mark will be removed 1 round later and deals (204% of Attack) damage at the same time, can stack."
+[c][e28002]Round Mark[-][/c]:
+A Mark Effect that can stack.
+The Round Mark will be removed 1 round later and deals (204% of Attack) damage at the same time."
 755002041,Scythe,Back from Hell,Has a 100% chance to resurrect with 100% HP after death and increases own Attack by 2% for 3 rounds. Skill can be triggered only once.
 755002042,Scythe,Back from Hell,Has a 100% chance to resurrect with 100% HP after death and increases own Attack by 4% for 3 rounds. Skill can be triggered only once.
 755002043,Scythe,Back from Hell,Has a 100% chance to resurrect with 100% HP after death and increases own Attack by 6% for 3 rounds. Skill can be triggered only once.
@@ -6326,7 +6395,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007012,Uriel,God's Judgement,"
 May God forgive you.
 
@@ -6338,7 +6407,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007013,Uriel,God's Judgement,"
 May God forgive you.
 
@@ -6350,7 +6419,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007014,Uriel,God's Judgement,"
 May God forgive you.
 
@@ -6362,14 +6431,19 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007015,Uriel,God's Judgement,"
-May God forgive you. Exerts 1 stack of [c][e28002]Scars of Belinus[-][/c] to 2 random enemies, dealing 2-4(random) attacks, each attack deals (330% of Attack) damage. Increases own Holy Damage by 55%. Has a 80% chance to stack 1 more [c][e28002]Scars of Belinus[-][/c] to the enemies with [c][e28002]Scars of Belinus[-][/c].
+May God forgive you.
 
-[c][e28002]Scars of Belinus:[-][/c]
-Skill effect, when 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be triggered for 2 rounds and remove Scars of Belinus stacked.
-[c][e28002]Trial of Belinus:[-][/c]
-Control effect, stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Exerts 1 stack of [c][e28002]Scars of Belinus[-][/c] to 2 random enemies, dealing 2-4 (random) attacks, each attack deals (330% of Attack) damage. Increases own Holy Damage by 55%. Has a 80% chance to stack 1 more [c][e28002]Scars of Belinus[-][/c] to the enemies with [c][e28002]Scars of Belinus[-][/c].
+
+[c][e28002]Scars of Belinus[-][/c]:
+A Skill effect.
+When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be triggered for 2 rounds and remove Scars of Belinus stacked.
+
+[c][e28002]Trial of Belinus[-][/c]:
+A Control effect.
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007021,Uriel,God’s Descent,"HP increases by 42%, Holy Damage increases by 70%, Immune Control increases by 30%, Damage Reduction increases by 30%."
 756007022,Uriel,God’s Descent,"HP increases by 42%, Holy Damage increases by 74%, Immune Control increases by 30%, Damage Reduction increases by 30%."
 756007023,Uriel,God’s Descent,"HP increases by 42.5%, Holy Damage increases by 74%, Immune Control increases by 30%, Damage Reduction increases by 30%."
@@ -6386,7 +6460,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007032,Uriel,God’s Gaze,"
 The chosen one is blessed by the God!
 
@@ -6398,7 +6472,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007033,Uriel,God’s Gaze,"
 The chosen one is blessed by the God!
 
@@ -6410,7 +6484,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007034,Uriel,God’s Gaze,"
 The chosen one is blessed by the God!
 
@@ -6422,7 +6496,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007035,Uriel,God’s Gaze,"
 The chosen one is blessed by the God!
 
@@ -6434,7 +6508,7 @@ When 2 Scars of Belinus are stacked, [c][e28002]Trial of Belinus[-][/c] will be 
 
 [c][e28002]Trial of Belinus[-][/c]:
 A Control effect.
-Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (5% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
+Stops the targets from triggering their Passive skill. When this effect is removed or expires, the owner will take (10% of maximum HP) damage (no more than 1500% of Uriel\'s Attack)."
 756007041,Uriel,God’s Punishment,"
 Those who blaspheme God will be punished severely!
 

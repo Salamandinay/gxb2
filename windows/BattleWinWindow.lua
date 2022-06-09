@@ -76,6 +76,29 @@ function BattleWinWindow:ctor(name, params)
 					end
 				end
 
+				local group = xyd.tables.partnerTable:getGroup(self.tableId_)
+				local showIds = xyd.tables.partnerTable:getShowIds(self.tableId_)
+
+				if group == 7 and xyd.tables.partnerTable:getStar(self.tableId_) == 10 and tonumber(self.skinId_) == 0 then
+					local awake = tonumber(teamData.awake)
+
+					if awake < 3 then
+						self.skinId_ = showIds[1]
+
+						break
+					end
+				end
+
+				if awake < 5 then
+					self.skinId_ = showIds[2]
+
+					break
+				end
+
+				if awake >= 5 then
+					self.skinId_ = showIds[3]
+				end
+
 				break
 			end
 		end
@@ -480,6 +503,11 @@ function BattleWinWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onShrineHurdleReport(data, data.isBoss)
+		elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onSpfarmBattle(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -499,7 +527,7 @@ function BattleWinWindow:initLayout()
 			self.battleReviewBtn:SetActive(true)
 		elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
 			self.battleDetailBtn:X(230)
-		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
+		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			self.battleDetailBtn.transform:X(260)
 		else
 			self.battleDetailBtn:X(290)
@@ -635,7 +663,6 @@ function BattleWinWindow:initLayout()
 		self:initGuildWar()
 		pvpFun()
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
-		print("self.battleType", self.battleType)
 		self:initHeroChallenge()
 		pveFun()
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT then
@@ -798,6 +825,10 @@ function BattleWinWindow:initLayout()
 
 			self.damageGroup:SetActive(true)
 		end
+	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		self.battleReviewBtn:SetActive(true)
+		self:initSpfarm()
+		pvpFun()
 	end
 
 	UIEventListener.Get(self.battleDetailBtn).onClick = function ()
@@ -942,7 +973,6 @@ function BattleWinWindow:updateShrineHurdlePart()
 		table.sort(partners, function (a, b)
 			return a.pos < b.pos
 		end)
-		dump(partners, "partners")
 
 		for _, partner_info in ipairs(partners) do
 			local paramsA = {
@@ -952,7 +982,8 @@ function BattleWinWindow:updateShrineHurdlePart()
 				show_skin = partner_info.show_skin,
 				awake = partner_info.awake,
 				equips = partner_info.equips,
-				uiRoot = self.shrinePartnerGroup_.gameObject
+				uiRoot = self.shrinePartnerGroup_.gameObject,
+				is_vowed = partner_info.is_vowed
 			}
 			local icon = xyd.getHeroIcon(paramsA)
 
@@ -1018,6 +1049,37 @@ function BattleWinWindow:initArenaTeam()
 		self.confirmBtnLabel.text = __("NEXT_BATTLE")
 	end
 
+	self.labelLeftScoreText:SetActive(false)
+	self.labelRightScoreText:SetActive(false)
+	self.labelLeftScore:SetActive(false)
+	self.labelRightScore:SetActive(false)
+	self.labelLeftScoreChange:SetActive(false)
+	self.labelRightScoreChange:SetActive(false)
+end
+
+function BattleWinWindow:initSpfarm()
+	self.labelLeftPlayerName.text = xyd.Global.playerName
+	self.labelRightPlayerName.text = __("ACTIVITY_SPFARM_TEXT23")
+	local battleReport = self.battleParams.battle_report
+	local teamB = battleReport.teamB
+	local index = 1
+	local paramsB = {
+		noClick = true,
+		tableID = teamB[index].table_id,
+		lev = teamB[index].level,
+		isMonster = teamB[index].isMonster,
+		awake = teamB[index].awake,
+		uiRoot = self.groupRightIcon_
+	}
+	local iconB = xyd.getHeroIcon(paramsB)
+	local paramsA = {
+		avatarID = xyd.models.selfPlayer:getAvatarID(),
+		lev = xyd.models.backpack:getLev(),
+		avatar_frame_id = xyd.models.selfPlayer:getAvatarFrameID()
+	}
+	local iconA = PlayerIcon.new(self.groupLeftIcon_)
+
+	iconA:setInfo(paramsA)
 	self.labelLeftScoreText:SetActive(false)
 	self.labelRightScoreText:SetActive(false)
 	self.labelLeftScore:SetActive(false)

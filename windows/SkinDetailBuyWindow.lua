@@ -887,7 +887,7 @@ function SkinDetailBuyWindow:onclickPartnerImg()
 	self.current_dialog_ = dialogInfo
 end
 
-function SkinDetailBuyWindow:onclickZoom()
+function SkinDetailBuyWindow:onclickZoom(event)
 	local group = xyd.tables.partnerTable:getGroup(self.table_id_)
 	local res = nil
 

@@ -184,6 +184,14 @@ function ChimeDebrisBackpackWindow:onClickBtnCancel()
 
 		self:updateDecomposeGroup()
 	end
+
+	local wrapcontentItems = self.wrapContent:getItems()
+
+	for key, value in pairs(wrapcontentItems) do
+		if value.data then
+			value:updateDecomposeState()
+		end
+	end
 end
 
 function ChimeDebrisBackpackWindow:onClickBtnSure()

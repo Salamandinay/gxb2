@@ -139,6 +139,7 @@ function SummonWindow:getUIComponent()
 	self.friend_summon_one = go:NodeByName("funcGroup/groupFriend/friend_summon_one").gameObject
 	self.friend_summon_ten = go:NodeByName("funcGroup/groupFriend/friend_summon_ten").gameObject
 	self.bgBottom_ = go:ComponentByName("bgBottom_", typeof(UIWidget))
+	self.windowMask = go:NodeByName("windowMask").gameObject
 end
 
 function SummonWindow:initUIComponent()
@@ -174,6 +175,7 @@ function SummonWindow:initUIComponent()
 	self.groupNormal:SetLocalPosition(-width, 301, 0)
 	self.groupSenior:SetLocalPosition(width, 0, 0)
 	self.groupFriend:SetLocalPosition(-width, -464, 0)
+	self.windowMask:SetActive(false)
 end
 
 function SummonWindow:initTop()
@@ -586,6 +588,8 @@ function SummonWindow:onSummon(event)
 				win:setHasEvaluateWindow(true, xyd.EvaluateFromType.FIVE_STAR)
 			end
 		end
+
+		self:allowClick()
 	end
 
 	if xyd.isIosTest() then
@@ -740,7 +744,7 @@ function SummonWindow:onFriendSummon(num)
 		local cost = SummonTable:getCost(xyd.SummonType.FRIEND)
 
 		if cost[2] <= heartNum then
-			Summon:summonPartner(xyd.SummonType.FRIEND)
+			self:summonPartner(xyd.SummonType.FRIEND)
 		else
 			xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.FRIEND_LOVE)))
 
@@ -750,7 +754,7 @@ function SummonWindow:onFriendSummon(num)
 		local cost = SummonTable:getCost(xyd.SummonType.FRIEND_TEN)
 
 		if cost[2] <= heartNum then
-			Summon:summonPartner(xyd.SummonType.FRIEND_TEN)
+			self:summonPartner(xyd.SummonType.FRIEND_TEN)
 		else
 			xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.FRIEND_LOVE)))
 
@@ -779,16 +783,16 @@ function SummonWindow:onBaseSummon(num)
 
 	if num == 1 then
 		if self.is_base_free then
-			Summon:summonPartner(summonType.BASE_FREE)
+			self:summonPartner(summonType.BASE_FREE)
 		elseif num <= baseScrollNum then
-			Summon:summonPartner(summonType.BASE)
+			self:summonPartner(summonType.BASE)
 		else
 			xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.BASE_SUMMON_SCROLL)))
 
 			return false
 		end
 	elseif num == 10 and num <= baseScrollNum then
-		Summon:summonPartner(summonType.BASE_TEN)
+		self:summonPartner(summonType.BASE_TEN)
 	else
 		xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.BASE_SUMMON_SCROLL)))
 
@@ -845,13 +849,13 @@ function SummonWindow:onSeniorSummon(num, costType)
 						wndType = self.curWindowType_,
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.SENIOR_CRYSTAL)
+							self:summonPartner(summonType.SENIOR_CRYSTAL)
 						end
 					})
 
 					return
 				else
-					Summon:summonPartner(summonType.SENIOR_CRYSTAL)
+					self:summonPartner(summonType.SENIOR_CRYSTAL)
 
 					return true
 				end
@@ -872,13 +876,13 @@ function SummonWindow:onSeniorSummon(num, costType)
 						wndType = self.curWindowType_,
 						text = __("SUMMON_CONFIRM", 10 * val, cost[2] * val),
 						callback = function ()
-							Summon:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
+							self:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
 						end
 					})
 
 					return
 				else
-					Summon:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
+					self:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
 
 					return true
 				end
@@ -889,7 +893,7 @@ function SummonWindow:onSeniorSummon(num, costType)
 			end
 		elseif costType == summonType.SENIOR_SCROLL then
 			if num <= seniorScrollNum then
-				Summon:summonPartner(summonType.SENIOR_SCROLL)
+				self:summonPartner(summonType.SENIOR_SCROLL)
 
 				return true
 			else
@@ -911,7 +915,7 @@ function SummonWindow:onSeniorSummon(num, costType)
 			end
 		elseif costType == summonType.SENIOR_SCROLL_TEN then
 			if seniorScrollNum >= num * val then
-				Summon:summonPartner(summonType.SENIOR_SCROLL_TEN, nil, index)
+				self:summonPartner(summonType.SENIOR_SCROLL_TEN, nil, index)
 
 				return true
 			else
@@ -936,9 +940,9 @@ function SummonWindow:onSeniorSummon(num, costType)
 
 	if num == 1 then
 		if self.is_senior_free then
-			Summon:summonPartner(summonType.SENIOR_FREE)
+			self:summonPartner(summonType.SENIOR_FREE)
 		elseif num <= seniorScrollNum then
-			Summon:summonPartner(summonType.SENIOR_SCROLL)
+			self:summonPartner(summonType.SENIOR_SCROLL)
 		elseif xyd.Global.lang ~= "ja_jp" then
 			local crystalNum = Summon:getCrystalNum()
 			local SummonTable = SummonTable
@@ -953,11 +957,11 @@ function SummonWindow:onSeniorSummon(num, costType)
 						wndType = self.curWindowType_,
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.SENIOR_CRYSTAL)
+							self:summonPartner(summonType.SENIOR_CRYSTAL)
 						end
 					})
 				else
-					Summon:summonPartner(summonType.SENIOR_CRYSTAL)
+					self:summonPartner(summonType.SENIOR_CRYSTAL)
 				end
 			else
 				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.CRYSTAL)))
@@ -973,7 +977,7 @@ function SummonWindow:onSeniorSummon(num, costType)
 		end
 	elseif num == 10 then
 		if seniorScrollNum >= num * val then
-			Summon:summonPartner(summonType.SENIOR_SCROLL_TEN, nil, index)
+			self:summonPartner(summonType.SENIOR_SCROLL_TEN, nil, index)
 		elseif xyd.Global.lang ~= "ja_jp" then
 			local crystalNum = Summon:getCrystalNum()
 			local SummonTable = SummonTable
@@ -988,11 +992,11 @@ function SummonWindow:onSeniorSummon(num, costType)
 						wndType = self.curWindowType_,
 						text = __("SUMMON_CONFIRM", 10 * val, cost[2] * val),
 						callback = function ()
-							Summon:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
+							self:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
 						end
 					})
 				else
-					Summon:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
+					self:summonPartner(summonType.SENIOR_CRYSTAL_TEN, nil, index)
 				end
 			else
 				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.CRYSTAL)))
@@ -1030,7 +1034,7 @@ function SummonWindow:onLimitSummonTen()
 	local cost = SummonTable:getCost(xyd.SummonType.ACT_LIMIT_TEN)
 
 	if cost[2] <= limitTenScrollNum then
-		Summon:summonPartner(summonType.ACT_LIMIT_TEN)
+		self:summonPartner(summonType.ACT_LIMIT_TEN)
 
 		self.lastSummonType = 8
 
@@ -1060,7 +1064,7 @@ function SummonWindow:onBaodiSummon()
 
 	local summonType = xyd.SummonType
 
-	Summon:summonPartner(summonType.BAODI)
+	self:summonPartner(summonType.BAODI)
 
 	self.lastSummonType = 3
 
@@ -1629,13 +1633,13 @@ function SummonWindow:onWishSummon(num, constType)
 						type = "wish_summon",
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.WISH_CRYSTAL)
+							self:summonPartner(summonType.WISH_CRYSTAL)
 						end
 					})
 
 					return
 				else
-					Summon:summonPartner(summonType.WISH_CRYSTAL)
+					self:summonPartner(summonType.WISH_CRYSTAL)
 
 					return true
 				end
@@ -1655,13 +1659,13 @@ function SummonWindow:onWishSummon(num, constType)
 						type = "wish_summon",
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.WISH_CRYSTAL_TEN)
+							self:summonPartner(summonType.WISH_CRYSTAL_TEN)
 						end
 					})
 
 					return
 				else
-					Summon:summonPartner(summonType.WISH_CRYSTAL_TEN)
+					self:summonPartner(summonType.WISH_CRYSTAL_TEN)
 
 					return true
 				end
@@ -1672,7 +1676,7 @@ function SummonWindow:onWishSummon(num, constType)
 			end
 		elseif constType == summonType.WISH_SCROLL then
 			if num <= seniorScrollNum then
-				Summon:summonPartner(summonType.WISH_SCROLL)
+				self:summonPartner(summonType.WISH_SCROLL)
 
 				return true
 			else
@@ -1694,7 +1698,7 @@ function SummonWindow:onWishSummon(num, constType)
 			end
 		elseif constType == summonType.WISH_SCROLL_TEN then
 			if num <= seniorScrollNum then
-				Summon:summonPartner(summonType.WISH_SCROLL_TEN)
+				self:summonPartner(summonType.WISH_SCROLL_TEN)
 
 				return true
 			else
@@ -1719,9 +1723,9 @@ function SummonWindow:onWishSummon(num, constType)
 
 	if num == 1 then
 		if self.is_wish_free then
-			Summon:summonPartner(summonType.WISH_FREE)
+			self:summonPartner(summonType.WISH_FREE)
 		elseif num <= seniorScrollNum then
-			Summon:summonPartner(summonType.WISH_SCROLL)
+			self:summonPartner(summonType.WISH_SCROLL)
 		elseif xyd.Global.lang ~= "ja_jp" then
 			local crystalNum = Summon:getCrystalNum()
 			local SummonTable = SummonTable
@@ -1735,11 +1739,11 @@ function SummonWindow:onWishSummon(num, constType)
 						type = "wish_summon",
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.WISH_CRYSTAL)
+							self:summonPartner(summonType.WISH_CRYSTAL)
 						end
 					})
 				else
-					Summon:summonPartner(summonType.WISH_CRYSTAL)
+					self:summonPartner(summonType.WISH_CRYSTAL)
 				end
 			else
 				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.CRYSTAL)))
@@ -1755,7 +1759,7 @@ function SummonWindow:onWishSummon(num, constType)
 		end
 	elseif num == 10 then
 		if num <= seniorScrollNum then
-			Summon:summonPartner(summonType.WISH_SCROLL_TEN)
+			self:summonPartner(summonType.WISH_SCROLL_TEN)
 		elseif xyd.Global.lang ~= "ja_jp" then
 			local crystalNum = Summon:getCrystalNum()
 			local SummonTable = SummonTable
@@ -1769,11 +1773,11 @@ function SummonWindow:onWishSummon(num, constType)
 						type = "wish_summon",
 						text = __("SUMMON_CONFIRM", 1, cost[2]),
 						callback = function ()
-							Summon:summonPartner(summonType.WISH_CRYSTAL_TEN)
+							self:summonPartner(summonType.WISH_CRYSTAL_TEN)
 						end
 					})
 				else
-					Summon:summonPartner(summonType.WISH_CRYSTAL_TEN)
+					self:summonPartner(summonType.WISH_CRYSTAL_TEN)
 				end
 			else
 				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(xyd.ItemID.CRYSTAL)))
@@ -2209,6 +2213,33 @@ function SummonWindow:isPartnerFullAndBuyLimit(num, canSummonNum)
 	end
 
 	return false
+end
+
+function SummonWindow:summonPartner(id, times, index)
+	self:stopClick()
+	Summon:summonPartner(id, times, index)
+end
+
+function SummonWindow:stopClick()
+	xyd.MainController.get():removeEscListener()
+	self.windowMask:SetActive(true)
+
+	local win = xyd.WindowManager.get():getWindow("main_window")
+
+	if win then
+		win:setStopClickBottomBtn(true)
+	end
+end
+
+function SummonWindow:allowClick()
+	xyd.MainController.get():addEscListener()
+	self.windowMask:SetActive(false)
+
+	local win = xyd.WindowManager.get():getWindow("main_window")
+
+	if win then
+		win:setStopClickBottomBtn(false)
+	end
 end
 
 return SummonWindow

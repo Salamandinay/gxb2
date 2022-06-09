@@ -138,11 +138,20 @@ function ArenaFormationWindow:initWindow()
 
 		bg:Y(43)
 	end
+
+	self:updateBgHeight()
+end
+
+function ArenaFormationWindow:updateBgHeight()
+	if not self.btnShield.activeSelf and not self.btnSendMail_.activeSelf and not self.btnChatPrivate.activeSelf and not self.btnKick.activeSelf and not self.btnVisit.activeSelf then
+		self.bgWidght.height = 460
+	end
 end
 
 function ArenaFormationWindow:getUIComponent()
 	local trans = self.window_.transform
 	local content = trans:NodeByName("groupAction").gameObject
+	self.bgWidght = content:ComponentByName("e:Image", typeof(UIWidget))
 	self.btnBack = content:NodeByName("btnBack").gameObject
 	local pIconContainer = content:NodeByName("pIcon").gameObject
 	self.pIcon = PlayerIcon.new(pIconContainer)

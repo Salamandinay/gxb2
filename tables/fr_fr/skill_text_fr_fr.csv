@@ -757,7 +757,7 @@ Inflige 255% d\'Attaque à 2 ennemis aléatoires, réduit leur Attaque de 25% pe
 Les ennemis marqués par [c][e28002]Frelon[-][/c] subissent 45% de dégâts supplémentaires quand attaqués (cumulable jusqu\'à 300%)."
 75500101,Amelia,Tableau Magique,"Inflige 98% d'Attaque à tous les ennemis, augmente de 40% la Résistance aux Dégâts pendant 2 tours, a 30% de chance de les [c][01a310]pétrifier[-][/c] pendant 2 tours et a 30% de chance de réduire l'Énergie des cibles de 30 !\n[c][01a310]Pétrifier (Effet de Contrôle) :[-][/c]\nLa cible sera temporairement incapable de lancer sa Compétence Active ou d'attaquer les ennemis."
 75500201,Scythe,Marque d'Enchantement,"
-Inflige 124% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retardement[-][/c] qui inflige 280% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquer avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
+Inflige 124% d\'Attaque à tous les ennemis, les marques avec [c][e28002]Retardement[-][/c] qui inflige 280% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquesr avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
 
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
@@ -3776,7 +3776,7 @@ Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c]
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 5600702,Uriel,Avènement Céleste,"Augmente les PV de 20%, les Dégâts Divins de 20%, l'Immunité de 10% et la Résistance aux Dégâts de 10%."
 65601702,Uriel,Avènement Céleste,"Augmente les PV de 30%, les Dégâts Divins de 40%, l'Immunité de 20% et la Résistance aux Dégâts de 20%."
 65601712,Uriel,Avènement Céleste,"Augmente les PV de 40%, les Dégâts Divins de 70%, l'Immunité de 30% et la Résistance aux Dégâts de 30%."
@@ -3801,14 +3801,14 @@ Dieu nous regarde constamment ! L\'Attaque Basique inflige 300% d\'Attaque à 2 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 75600703,Uriel,Vision Céleste,"
 Dieu nous regarde constamment ! L\'Attaque Basique inflige 300% d\'Attaque à 2 ennemis aléatoires, ainsi ces 2 cibles recevront 1 couche de[c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 5600704,Uriel,Punition Céleste,"
 Ne blasphémez pas aussi facilement, sinon vous serez punis ! En utilisant sa Compétence Active ou son Attaque Basique, déclenche une autre attaque touchant tous les ennemis 1 fois et infligeant 100% d\'Attaque en ignorant leur Armure. Les cibles ont 10% de chance de recevoir 1 couche de [c][e28002]Lumière Céleste[-][/c].
 
@@ -3829,14 +3829,14 @@ Ne blasphémez pas aussi facilement, sinon vous serez punis ! En utilisant sa Co
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 75600704,Uriel,Punition Céleste,"
 Ne blasphémez pas aussi facilement, sinon vous serez punis ! En utilisant sa Compétence Active ou son Attaque Basique, déclenche une autre attaque touchant tous les ennemis 1 fois et infligeant 400% d\'Attaque en ignorant leur Armure. Les cibles ont 30% de chance de recevoir 1 couche de [c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 5500800,Izanami,Attaque Basique,Attaque Basique
 65501700,Izanami,Attaque Basique,Attaque Basique
 75500700,Izanami,Attaque Basique,Attaque Basique
@@ -6037,22 +6037,22 @@ Inflige 126,5% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retard
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
 755002012,Scythe,Marque d'Enchantement,"
-Inflige 129% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retardement[-][/c] qui inflige 290% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquer avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
+Inflige 129% d\'Attaque à tous les ennemis, les marques avec [c][e28002]Retardement[-][/c] qui inflige 290% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquesr avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
 
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
 755002013,Scythe,Marque d'Enchantement,"
-Inflige 132% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retardement[-][/c] qui inflige 295% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquer avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
+Inflige 132% d\'Attaque à tous les ennemis, les marques avec [c][e28002]Retardement[-][/c] qui inflige 295% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquesr avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
 
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
 755002014,Scythe,Marque d'Enchantement,"
-Inflige 134% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retardement[-][/c] qui inflige 300% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquer avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
+Inflige 134% d\'Attaque à tous les ennemis, les marques avec [c][e28002]Retardement[-][/c] qui inflige 300% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquesr avec un autre [c][e28002]Retardement[-][/c] qui infligera 210% d\'Attaque. 
 
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
 755002015,Scythe,Marque d'Enchantement,"
-Inflige 136% d\'Attaque à tous les ennemis, les marque avec [c][e28002]Retardement[-][/c] qui inflige 305% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquer avec un autre [c][e28002]Retardement[-][/c] qui infligera 215% d\'Attaque. 
+Inflige 136% d\'Attaque à tous les ennemis, les marques avec [c][e28002]Retardement[-][/c] qui inflige 305% d\'Attaque, augmente sa propre Résistance aux Dégâts de 15% pendant 3 tours et a également 45% de chance de les marquesr avec un autre [c][e28002]Retardement[-][/c] qui infligera 215% d\'Attaque. 
 
 [c][e28002]Retardement (Marque)：[-][/c]
 infligera l\'Attaque après 1 tour. (Marque cumulable)"
@@ -6537,35 +6537,35 @@ Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c]
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007012,Uriel,Jugement Céleste,"
 Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c] à 2 ennemis aléatoires et les attaque 2 à 4 fois. Chaque attaque portée inflige 312% de l\'Attaque; augmente ses Dégâts Divins de 50%. Les ennemis ayant reçu [c][e28002]Lumière Céleste[-][/c] ont 68% de chance de recevoir 1 autre couche de [c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007013,Uriel,Jugement Céleste,"
 Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c] à 2 ennemis aléatoires et les attaque 2 à 4 fois. Chaque attaque portée inflige 318% de l\'Attaque; augmente ses Dégâts Divins de 50%. Les ennemis ayant reçu [c][e28002]Lumière Céleste[-][/c] ont 72% de chance de recevoir 1 autre couche de [c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007014,Uriel,Jugement Céleste,"
 Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c] à 2 ennemis aléatoires et les attaque 2 à 4 fois. Chaque attaque portée inflige 324% de l\'Attaque; augmente ses Dégâts Divins de 50%. Les ennemis ayant reçu [c][e28002]Lumière Céleste[-][/c] ont 76% de chance de recevoir 1 autre couche de [c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007015,Uriel,Jugement Céleste,"
 Que Dieu vous pardonne. Applique 1 couche de [c][e28002]Lumière Céleste[-][/c] à 2 ennemis aléatoires et les attaque 2 à 4 fois. Chaque attaque portée inflige 330% de l\'Attaque; augmente ses Dégâts Divins de 55%. Les ennemis ayant reçu [c][e28002]Lumière Céleste[-][/c] ont 80% de chance de recevoir 1 autre couche de [c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) ：[-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007021,Uriel,Avènement Céleste,"Augmente les PV de 42%, les Dégâts Divins de 70%, l'Immunité de 30% et la Résistance aux Dégâts de 30%."
 756007022,Uriel,Avènement Céleste,"Augmente les PV de 42%, les Dégâts Divins de 74%, l'Immunité de 30% et la Résistance aux Dégâts de 30%."
 756007023,Uriel,Avènement Céleste,"Augmente les PV de 42,5%, les Dégâts Divins de 74%, l'Immunité de 30% et la Résistance aux Dégâts de 30%."
@@ -6577,35 +6577,35 @@ Dieu nous regarde constamment ! L\'Attaque Basique inflige 306% d\'Attaque à 2 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007032,Uriel,Vision Céleste,"
 Dieu nous regarde constamment ! L\'Attaque Basique inflige 312% d\'Attaque à 2 ennemis aléatoires, ainsi ces 2 cibles recevront 1 couche de[c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007033,Uriel,Vision Céleste,"
 Dieu nous regarde constamment ! L\'Attaque Basique inflige 318% d\'Attaque à 2 ennemis aléatoires, ainsi ces 2 cibles recevront 1 couche de[c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007034,Uriel,Vision Céleste,"
 Dieu nous regarde constamment ! L\'Attaque Basique inflige 324% d\'Attaque à 2 ennemis aléatoires, ainsi ces 2 cibles recevront 1 couche de[c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007035,Uriel,Vision Céleste,"
 Dieu nous regarde constamment ! L\'Attaque Basique inflige 330% d\'Attaque à 2 ennemis aléatoires, ainsi ces 2 cibles recevront 1 couche de[c][e28002]Lumière Céleste[-][/c].
 
 [c][e28002]Lumière Céleste (Effet de Compétence)：[-][/c]
 Lorsqu\'un ennemi a reçu 2 couches de [c][e28002]Lumière Céleste[-][/c], ces 2 couches sont consommées pour déclencher [c][e28002]Sceau de Lumière[-][/c] pendant 2 tours.
 [c][e28002]Sceau de Lumière (Effet de Contrôle) : [-][/c]
-La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 5% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
+La cible scellée ne peut déclencher aucune Compétence Passive. Lorsque la cible scellée se débarrasse de ce contrôle, elle subira des dégâts équivalent à 10% de ses PV Max. (1500% de la valeur de l\'Attaque d\'Uriel au maximum)"
 756007041,Uriel,Punition Céleste,"
 Ne blasphémez pas aussi facilement, sinon vous serez punis ! En utilisant sa Compétence Active ou son Attaque Basique, déclenche une autre attaque touchant tous les ennemis 1 fois et infligeant 408% d\'Attaque en ignorant leur Armure. Les cibles ont 36% de chance de recevoir 1 couche de [c][e28002]Lumière Céleste[-][/c].
 
@@ -8721,21 +8721,21 @@ Lorsque la cible marquée lance sa Compétence Active, effectue son Attaque Basi
 65202300,Térèsa,Attaque Basique,Attaque Basique
 75201600,Térèsa,Attaque Basique,Attaque Basique
 5201601,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 160% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et a 70% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 160% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et a 70% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
 La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passives). Après avoir subi 3 fois Compétences Actives ou Attaques Basiques, la Fille marquée se débarrasse de ce Contrôle. (N\'inclut pas les Compétences Passives ni Compétences du Serviteur)
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 65202301,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 220% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 220% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
 La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passives). Après avoir subi 3 fois Compétences Actives ou Attaques Basiques, la Fille marquée se débarrasse de ce Contrôle. (N\'inclut pas les Compétences Passives ni Compétences du Serviteur)
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 75201601,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 300% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 300% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -8791,7 +8791,7 @@ Lorsque Térèsa est marquée, elle consomme 1 couche de [c][e28002]Marque Divin
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 752016011,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 306% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 306% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -8799,7 +8799,7 @@ La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passi
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 752016012,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 312% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 312% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -8807,7 +8807,7 @@ La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passi
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 752016013,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 318% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 318% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -8815,7 +8815,7 @@ La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passi
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 752016014,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 324% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 324% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 65% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -8823,7 +8823,7 @@ La Fille marquée ne peut effectuer aucune action (inclut les Compétences Passi
 [c][e28002]Marque Divine (Effet de Compétence)：[-][/c]
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 752016015,Térèsa,Jugement Dernier,"
-C\'est à moi de juger qui est coupable ! Inflige 330% d\'Attaque à 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 70% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
+C\'est à moi de juger qui est coupable ! Inflige 330% d\'Attaque aux 2 ennemis ayant les Attaques les plus éleves, elle a 100% de chance de marquer l\'un de ces 2 ennemis avec [c][e28002]Prison Épée[-][/c] pendant 15 tours et a également 70% de chance de marquer un autre ennemi avec [c][e28002]Prison Épée[-][/c] pendant 15 tours.
 Elle obtient 2 couches de [c][e28002]Marque Divine[-][/c].
 
 [c][e28002]Prison Épée (Effet de Contrôle)：[-][/c]
@@ -9104,24 +9104,24 @@ Certains font d\'une pierre deux coups, moi il me suffit d\'un coup pour détrui
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 300% d\'Attaque à l\'ennemi ayant le moins de PV."
 5600804,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 50% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle a également 50% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à l\'ennemi ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 50% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle a également 50% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à l\'ennemi ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)"
 65601804,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 70% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle a également 70% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à l\'ennemi ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 70% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle a également 70% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à l\'ennemi ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)"
 65601814,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 400% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 400% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 300% d\'Attaque à l\'ennemi ayant le moins de PV."
 75600804,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 400% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 400% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
@@ -9183,35 +9183,35 @@ Certains font d\'une pierre deux coups, moi il me suffit d\'un coup pour détrui
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 330% d\'Attaque (possibilité d\'être un Coup Critique) à l\'ennemi ayant le moins de PV."
 756008041,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 408% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 408% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 306% d\'Attaque à l\'ennemi ayant le moins de PV."
 756008042,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 416% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 416% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 312% d\'Attaque à l\'ennemi ayant le moins de PV."
 756008043,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 424% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 424% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 318% d\'Attaque à l\'ennemi ayant le moins de PV."
 756008044,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 432% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 432% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
 [c][e28002]Flèche Dorée (Effet de Compétence)：[-][/c]
 Lorsqu\'elle lance sa Compétence Active ou son Attaque Basique, chaque Flèche Dorée infligera 324% d\'Attaque à l\'ennemi ayant le moins de PV."
 756008045,Angélina,Pointe Enflammée,"
-Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 440% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] à 2 ennemis ayant le moins de PV pendant 1 tour.
+Le soleil finira par tous nous détruire ! Au début de la bataille, Angélina a 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour. À la fin du tour, elle récupérera des PV équivalent à 440% de son Attaque, obtiendra 2 [c][e28002]Flèches Dorées[-][/c] pendant 4 tours, et aura également 100% de chance de donner un [c][e28002]Coup de Soleil[-][/c] aux 2 ennemis ayant le moins de PV pendant 1 tour.
 
 [c][e28002]Coup de Soleil (Effet de Contrôle)：[-][/c]
 En lançant une Compétence Active, une Attaque Basique ou une Compétence Passive (Attaquant les ennemis), les cibles touchés par [c][e28002]Coup de Soleil[-][/c] cibleront un ennemi aléatoirement. (Cet effet n\'influence pas l\'effet de Provocation)
@@ -9317,17 +9317,17 @@ Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Bas
 65202400,Monica,Attaque Basique,Attaque Basique
 75201700,Monica,Attaque Basique,Attaque Basique
 5201701,Monica,Temps Inversé,"
-Inflige 200% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 10% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 200% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 10% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 10% et les Chances de Contrôle de 10% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 65202401,Monica,Temps Inversé,"
-Inflige 300% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 15% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 300% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 15% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 20% et les Chances de Contrôle de 15% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 75201701,Monica,Temps Inversé,"
-Inflige 400% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 400% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 30% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
@@ -9443,27 +9443,27 @@ Lorsque Diana est vaincue, elle marque le meurtrier avec [c][e28002]Cauchemar[-]
 À la fin du tour, la cible marquée subira des dégâts équivalent à 30% de ses PV Max (2500% de la valeur de l\'Attaque de Diana au maximum).
 Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (30% de leurs PV Max, 2500% de la valeur de l\'Attaque de Diana au maximum)"
 752017011,Monica,Temps Inversé,"
-Inflige 408% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 408% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 30% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 752017012,Monica,Temps Inversé,"
-Inflige 416% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 416% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 20% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 30% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 752017013,Monica,Temps Inversé,"
-Inflige 424% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 23% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 424% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 23% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 33% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 752017014,Monica,Temps Inversé,"
-Inflige 432% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 23% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 432% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 23% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 33% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
 752017015,Monica,Temps Inversé,"
-Inflige 440% d\'Attaque à 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 25% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
+Inflige 440% d\'Attaque aux 2 ennemis ayant le moins de PV et réduit leurs Soins Reçus de 25% pendant 2 tours. Monica marque 1 alliée étant proche d\'elle (Monica choisira l\'alliée se trouvant derrière elle en priorité) avec [c][e28002]Roue de la Fortune[-][/c] pendant 3 tours.
 
 [c][e28002]Roue de la Fortune (Effet de Compétence, non cumulable)：[-][/c]
 Lorsque Monica marque une cible avec [c][e28002]Roue de la Fortune[-][/c], la limite de déclenchement de la Compétence - Voyage Temporel sera réinitialisée pour cette cible; augmente l\'Attaque de 35% et les Chances de Contrôle de 20% de la cible marquée; lorsque Monica se soigne, la cible marquée avec [c][e28002]Roue de la Fortune[-][/c] par cette Monica récupère des PV équivalent à ceux de cette Monica."
@@ -10361,45 +10361,45 @@ Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction
 65502012,Maïa,Déesse du Chaos,"Augmente les PV de 30%, l'Attaque de 40%, les Soins Reçus de 30%, l'Immunité de 30% et la Vitesse de 80."
 75501002,Maïa,Déesse du Chaos,"Augmente les PV de 30%, l'Attaque de 40%, les Soins Reçus de 30%, l'Immunité de 30% et la Vitesse de 80."
 5501103,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 200% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 10% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 200% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 10% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 300% d\'Attaque."
 65502003,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 300% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 15% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 300% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 15% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 500% d\'Attaque."
 65502013,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 600% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 600% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1500% d\'Attaque."
 75501003,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 600% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 600% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1500% d\'Attaque."
 5501104,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (4% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (10% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (4% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (10% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 4% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 2% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 65502004,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (6% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (20% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (6% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (20% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 6% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 3% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 65502014,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (30% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (30% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 8% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 75501004,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (30% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos sera marqué à jamais ! À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (30% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
@@ -10435,56 +10435,56 @@ Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction
 755010024,Maïa,Déesse du Chaos,"Augmente les PV de 30%, l'Attaque de 40%, les Soins Reçus de 30%, l'Immunité de 30% et la Vitesse de 88."
 755010025,Maïa,Déesse du Chaos,"Augmente les PV de 33%, l'Attaque de 43%, les Soins Reçus de 30%, l'Immunité de 30% et la Vitesse de 90."
 755010031,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 660% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 660% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1600% d\'Attaque."
 755010032,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 720% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 720% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1700% d\'Attaque."
 755010033,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 780% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 780% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1800% d\'Attaque."
 755010034,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 840% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés. L\'Attaque Basique inflige 840% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 20% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 5% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 1900% d\'Attaque."
 755010035,Maïa,Disciples Fêlés,"
-Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 900% d\'Attaque à 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 22% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 8% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
+Ses disciples exécutent ses ordres avant même qu\'ils ne soient prononcés ! L\'Attaque Basique inflige 900% d\'Attaque aux 2 ennemis ayant les Attaque les plus élevées, les marque avec 1 couche de [c][e28002]Malédiction Infâme[-][/c] pendant 3 tours, et réduit leurs dégâts infligés de 22% (40% au maximum). Lorsqu\'elle est attaquée, vole 10 d\'Énergies à l\'ennemi attaquant et se soigne 8% de ses PV Max (déclenchable 6 fois au maximum à chaque tour).
 
 [c][e28002]Malédiction Infâme (Marque, cumulable)：[-][/c]
 Lorsque l\'ennemi marqué reçoit un Bonus d\'Attribut, 1 couche de Malédiction Infâme sera consommée pour neutraliser 1 couche de Bonus d\'Attribut et lui infligera 2000% d\'Attaque."
 755010041,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (32% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (32% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 8% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 755010042,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (34% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (34% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 20% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 8% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 755010043,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (36% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (36% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 23% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 8% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 755010044,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (38% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (8% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (38% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 23% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
 Chaque couche de Cicatrice du Chaos consomme 8% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés)."
 755010045,Maïa,Malédiction du Chaos,"
-Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (10% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts à 2 ennemis ayant les Attaque les plus élevées (40% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
+Quiconque désire le pouvoir du Chaos, sera marqué à jamais. À la fin de chaque tour, inflige des dégâts à tous les ennemis (10% de leurs propres PV, 2500% de la valeur de l\'Attaque de Maïa au maximum), les marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours, et inflige également des dégâts aux 2 ennemis ayant les Attaque les plus élevées (40% de leurs PV perdus, 2500% de la valeur de l\'Attaque de Maïa au maximum).
 Lorsque Maïa reçoit un Coup Mortel, elle sera immunisée contre tous les dégâts du tour actuel, et récupérera 25% de ses PV Max à la fin du tour actuel et pendant les 2 tours suivants (déclenchable qu\'une seule fois durant la bataille).
 
 [c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
@@ -11638,7 +11638,7 @@ L\'effet de la Barrière absorbant les dégâts est augmenté de 20%."
 75101800,Chizuko,Attaque Basique,Attaque Basique
 5101801,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 100% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 100% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 5% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11649,7 +11649,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65102501,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 200% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 200% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 7,5% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11660,7 +11660,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75101801,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 400% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 400% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 10% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11739,7 +11739,7 @@ Augmente de 60% les dégâts subis de la cible marquée et réduit son Attaque d
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 751018011,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 408% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 408% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 10% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11750,7 +11750,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 751018012,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 416% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 416% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 10% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11761,7 +11761,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 751018013,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 424% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 424% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 12% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11772,7 +11772,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 751018014,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 432% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 432% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 12% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -11783,7 +11783,7 @@ La cible marquée sera immunisée contre les 2 prochaines attaques (la Protectio
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 751018015,Chizuko,Grue Protectrice,"
 Les grues invoquent la protection des cieux en déployant leurs ailes.
-Inflige 440% d\'Attaque à 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
+Inflige 440% d\'Attaque aux 2 ennemis ayant les Attaques les plus élevées et les marque avec [c][e28002]Plume de Grue[-][/c] pendant 3 tours.
 Soigne 15% des PV Max des 2 alliées ayant le moins de PV, leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur et les marque avec [c][e28002]Protection Céleste[-][/c].
 
 [c][e28002]Plume de Grue (Effet de Compétence, non cumuable) :[-][/c]
@@ -12436,7 +12436,7 @@ Augmente de 3% l\'Attaque, de 6% la Précision et de 3% les Dégâts Divins."
 5201901,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (1% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (1% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (200% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (200% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12447,7 +12447,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 65202601,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (1% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (1% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (500% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (500% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12458,7 +12458,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 75201901,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (3% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (3% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1200% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1200% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12495,7 +12495,7 @@ Elle a 90% de chance d\'enlever 1 Effet de Contrôle d\'une de ses alliées (Év
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible)."
 5201904,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (200% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (200% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (100% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12503,7 +12503,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 65202604,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (400% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (400% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (200% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12511,7 +12511,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 65202614,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (500% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12519,7 +12519,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 75201904,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (500% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12529,7 +12529,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 752019011,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (3% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (3% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1224% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1224% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12540,7 +12540,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 752019012,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (3% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (3% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1248% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1248% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12551,7 +12551,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 752019013,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (3% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (3% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1272% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1272% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12562,7 +12562,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 752019014,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (3% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (3% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1296% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1296% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12573,7 +12573,7 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 752019015,Éva,Hurlement du Chien,"
 Les mauvaises personnes seront poursuivies et punies par mes chiens. Inflige des dégâts à 1 ennemi aléatoire (4% des PV Max de cet ennemi, 1500% de la valeur de l\'Attaque d\'Éva au maximum, Éva choisira la cible marquée avec [c][e28002]Flair[-][/c] en priorité).
 Pour chaque couche de [c][e28002]Flair[-][/c] que cet ennemi possède, Éva lui lancera une attaque supplémentaire (4% des PV Max de cet ennemi, 8 attaques au maximum) et le marque avec 1 couche supplémentaire de [c][e28002]Flair[-][/c].
-Elle fournit une [c][e28002]Barrière$/font> (1320% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous un <font color=0xe28002>Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
+Elle fournit une [c][e28002]Barrière[-][/c] (1320% de l\'Attaque d\'Éva) aux 3 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui les soignera de 15% de leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible).
@@ -12617,7 +12617,7 @@ Elle a 100% de chance d\'enlever 1 Effet de Contrôle d\'une de ses alliées (É
 [c][e28002]Flair (Effet de Compétence, cumulable) :[-][/c]
 Utilisé pour renforcer la Compétence Active d\'Éva (une fois que la cible est marquée avec Flair, ce dernier est inamovible)."
 752019041,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1020% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1020% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (500% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12625,7 +12625,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 752019042,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1040% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1040% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (500% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12633,7 +12633,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 752019043,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1060% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1060% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (520% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12641,7 +12641,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 752019044,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1080% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1080% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (520% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
@@ -12649,7 +12649,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
 752019045,Éva,L'Amour du Gardien,"
-La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1100% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inlcut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
+La volonté d\'un chien à vouloir protéger son maître peut être étonnante. Au début de la bataille, Éva fournit une [c][e28002]Barrière[-][/c] (1100% de l\'Attaque d\'Éva) à toutes ses alliées (Éva inclut) et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 À la fin de chaque tour, Éva fournit une Barrière (550% de l\'Attaque d\'Éva) aux 2 alliées ayant le moins de PV et les protège sous une [c][e28002]Protection Canine[-][/c] qui soignera 15% des leurs PV Max après que la Barrière soit brisée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
