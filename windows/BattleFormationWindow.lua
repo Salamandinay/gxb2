@@ -2326,6 +2326,7 @@ function BattleFormationWindow:initNormalPartnerData(groupID, needUpdateTop)
 	local chooseDataList = {}
 	local tmpHangList = xyd.deepCopy(self.nowPartnerList)
 	self.power = 0
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM)
 
 	for _, partnerId in ipairs(lvSortedList) do
 		if partnerId ~= 0 then
@@ -2361,6 +2362,10 @@ function BattleFormationWindow:initNormalPartnerData(groupID, needUpdateTop)
 				partnerInfo = partnerInfo,
 				isSelected = isS.isSelected
 			}
+
+			if self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+				data.model = activityData
+			end
 
 			if isS.isSelected then
 				table.insert(partnerDataList, data)
@@ -3595,7 +3600,7 @@ function BattleFormationWindow:updateBuff()
 
 	if firstJump then
 		self:waitForFrame(1, function ()
-			if self.buffRoot.gameObject.activeSelf then
+			if self.buffScrollView.gameObject.activeInHierarchy then
 				self.buffWrapContent:setInfos(self.buffDataList)
 				self.buffWrapContent:jumpToInfo(firstJump)
 				self.buffWrapContent.wrapContent_:WrapContent()

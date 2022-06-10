@@ -201,7 +201,13 @@ function ActivitySpfarmRankWindow:updateThree()
 			end
 
 			self["personEffect" .. i]:setModelInfo({
-				ids = self.rank_info.list[i].dress_style
+				ids = self.rank_info.list[i].dress_style or {
+					1000101,
+					1000201,
+					1000301,
+					0,
+					0
+				}
 			})
 
 			UIEventListener.Get(self["showCon" .. i].gameObject).onClick = handler(self, function ()
@@ -286,7 +292,7 @@ function ActivitySpfarmRankWindow:updateSelf()
 		lev = xyd.models.backpack:getLev(),
 		player_id = xyd.Global.playerID,
 		player_name = xyd.models.selfPlayer:getPlayerName(),
-		score = self.rank_info.self_score or 0,
+		score = self.rank_info.self_score or self.activityData:getAllBuildTotalLev(),
 		server_id = xyd.models.selfPlayer:getServerID()
 	}
 
@@ -294,34 +300,6 @@ function ActivitySpfarmRankWindow:updateSelf()
 		info.rank = self.rank_info.self_rank + 1
 	else
 		info.rank = 0
-	end
-
-	if info.rank > 50 then
-		local percentArr = {
-			0.01,
-			0.05,
-			0.1,
-			0.2,
-			0.4,
-			0.6,
-			0.8,
-			1
-		}
-		local num = tonumber(self.rank_info.num)
-		local rank = tonumber(info.rank)
-		local percent = rank / num
-
-		if num < rank then
-			info.percentStr = "100%"
-		else
-			for i in pairs(percentArr) do
-				if percent <= percentArr[i] then
-					info.percentStr = percentArr[i] * 100 .. "%"
-
-					break
-				end
-			end
-		end
 	end
 
 	self.itemSelf:update(999, info)
@@ -371,7 +349,7 @@ function RankItem:update(index, info)
 
 	self.go:SetActive(true)
 
-	if self.player_id and info.player_id and info.player_id == self.player_id and xyd.Global.playerID ~= info.player_id == self.player_id then
+	if self.player_id and info.player_id and info.player_id == self.player_id and xyd.Global.playerID ~= info.player_id then
 		return
 	end
 
@@ -417,12 +395,6 @@ function RankItem:update(index, info)
 	end
 
 	if self.info.score then
-		local ids = xyd.tables.activitySpaceExploreMapTable:getIds()
-
-		if tonumber(self.info.score) > #ids then
-			self.info.score = #ids
-		end
-
 		self.labelCurrentNum.text = tostring(self.info.score)
 	end
 

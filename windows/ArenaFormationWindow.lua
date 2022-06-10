@@ -7,6 +7,7 @@ local ReportBtn = import("app.components.ReportBtn")
 
 function ArenaFormationWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
+	dump(params, "params")
 
 	self.data = params
 	self.skinName = "ArenaFormationSkin"
@@ -132,14 +133,13 @@ function ArenaFormationWindow:initWindow()
 		self.guildCheckBtn_:SetActive(false)
 	end
 
-	if self.show_short_bg == true then
-		local bg = self.window_.transform:ComponentByName("groupAction/e:Image", typeof(UISprite))
-		bg.height = 464
-
-		bg:Y(43)
-	end
-
 	self:updateBgHeight()
+
+	if self.show_short_bg == true then
+		self.bgWidght.height = 464
+
+		self.bgWidght:Y(270)
+	end
 end
 
 function ArenaFormationWindow:updateBgHeight()
