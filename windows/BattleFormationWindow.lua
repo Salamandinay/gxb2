@@ -1388,7 +1388,7 @@ function BattleFormationWindow:arenaBattle(partnerParams)
 		local numSave = xyd.tables.miscTable:getVal("defense_team_save")
 
 		if self.power and tonumber(numSave) < self.power / power then
-			xyd.models.arena:checkDefFormation()
+			xyd.models.arena.needCheck = true
 		end
 
 		xyd.models.arena.hasCheck = true

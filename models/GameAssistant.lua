@@ -605,7 +605,7 @@ function GameAssistant:reqArenaBattle()
 		local numSave = xyd.tables.miscTable:getVal("defense_team_save")
 
 		if battleInfo.power and tonumber(numSave) < battleInfo.power / power then
-			xyd.models.arena:checkDefFormation()
+			xyd.models.arena.needCheck = true
 		end
 
 		xyd.models.arena.hasCheck = true

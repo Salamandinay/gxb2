@@ -185,13 +185,16 @@ function ActivitySpfarmSelectPartnerWindow:readStorageFormation()
 
 		for _, partnerId in ipairs(partnerList) do
 			local partnerInfo = self.SlotModel:getPartner(tonumber(partnerId))
-			local hp = self.activityData:getHp(partnerInfo.partner_id)
 
-			if maxNum > #self.partnerListInfo then
-				table.insert(self.partnerListInfo, {
-					partnerInfo = partnerInfo,
-					hp = hp
-				})
+			if partnerInfo then
+				local hp = self.activityData:getHp(partnerInfo.partner_id)
+
+				if maxNum > #self.partnerListInfo then
+					table.insert(self.partnerListInfo, {
+						partnerInfo = partnerInfo,
+						hp = hp
+					})
+				end
 			end
 		end
 	end
