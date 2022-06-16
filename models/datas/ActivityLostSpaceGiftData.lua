@@ -14,6 +14,10 @@ function ActivityLostSpaceGiftData:onAward()
 	self.detail.charges[1].buy_times = self.detail.charges[1].buy_times + 1
 end
 
+function ActivityLostSpaceGiftData:checkBuy()
+	return self.detail.charges[1].buy_times >= 1
+end
+
 function ActivityLostSpaceGiftData:getRedMarkState()
 	if not self:isFunctionOnOpen() then
 		self.defRedMark = false

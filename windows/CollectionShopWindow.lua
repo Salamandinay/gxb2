@@ -284,7 +284,7 @@ function CollectionShopGroupItem:setInfo(params)
 	self.index = params.index
 	local pointArr = xyd.tables.miscTable:split2num("collection_point_level", "value", "|")
 	local point = pointArr[self.index]
-	local isLock = xyd.models.backpack:getItemNumByID(xyd.ItemID.COLLECT_COIN) < point
+	local isLock = xyd.models.collection:getNowCollectionPoint() < point
 
 	self.lockImg_:SetActive(isLock)
 	self.okImg_:SetActive(not isLock)
@@ -418,7 +418,7 @@ function CollectionShopItem:layout()
 end
 
 function CollectionShopItem:updateShaddow()
-	local hideBg = xyd.models.backpack:getItemNumByID(xyd.ItemID.COLLECT_COIN) < self.needPoint_
+	local hideBg = xyd.models.collection:getNowCollectionPoint() < self.needPoint_
 	local limit = xyd.tables.shopConfigTable:getSlotBuyTimes(self.shopType_, self.index_)
 
 	self.shadow_:SetActive(limit <= self.buyTimes_ or hideBg)

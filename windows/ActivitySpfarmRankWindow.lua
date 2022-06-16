@@ -177,11 +177,6 @@ function ActivitySpfarmRankWindow:updateThree()
 			self["upLabelLevel" .. i].text = tostring(self.rank_info.list[i].lev)
 			self["labelPlayerName" .. i].text = tostring(self.rank_info.list[i].player_name)
 			self["serverId" .. i].text = xyd.getServerNumber(self.rank_info.list[i].server_id)
-
-			if tonumber(self.rank_info.list[i].score) > #ids then
-				self.rank_info.list[i].score = #ids
-			end
-
 			self["labelCurrentNum" .. i].text = tostring(self.rank_info.list[i].score)
 
 			if i == 2 or i == 3 then

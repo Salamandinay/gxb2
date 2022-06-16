@@ -418,6 +418,7 @@ function PartnerDetailWindow:firstInit()
 	self:initMarkedBtn()
 	self:initFullOrderGradeUp()
 	self:initFullOrderLevelUp()
+	self:checkExSkillGuide()
 	self:checkBtnCommentShow()
 	self:checkStarOriginGuide()
 
@@ -605,6 +606,7 @@ function PartnerDetailWindow:updateData()
 	self:updatePartnerSkin()
 	self:updatePuppetNav()
 	self:updateShenxue()
+	self:checkExSkillGuide()
 	self:checkStarOriginTab()
 	self:checkStarOriginGuide()
 end
@@ -1316,23 +1318,8 @@ end
 function PartnerDetailWindow:onWindowWillClose(event)
 	local windowName = event.params.windowName
 
-	if (windowName == "alert_item_window" or not self.ExSkillGuideInAward and windowName == "awake_ok_window") and self.needExSkillGuide and xyd.models.slot:needExskillGuide() then
-		if self.windowTop then
-			self.windowTop:setCloseBtnState(false)
-		end
-
-		xyd.WindowManager:get():openWindow("exskill_guide_window", {
-			wnd = self,
-			table = xyd.tables.partnerExskillGuideTable,
-			guide_type = xyd.GuideType.PARTNER_EXSKILL
-		})
-
-		self.ExSkillGuideInAward = false
-		self.needExSkillGuide = false
-
-		xyd.models.slot:setExskillGuide()
-
-		return
+	if self.needExSkillGuide then
+		self:checkExSkillGuide()
 	end
 
 	if (windowName == "alert_award_window" or windowName == "potentiality_success_window" or windowName == "alert_item_window") and self.needStarOriginGuide then
@@ -2838,12 +2825,19 @@ function PartnerDetailWindow:updatePartnerSkin()
 		end)
 
 		local tmpPartner = Partner.new(self.groupSkinCards)
+		local collectionID = xyd.tables.itemTable:getCollectionId(skinID)
+		local qlt = nil
+
+		if collectionID and collectionID > 0 then
+			qlt = xyd.tables.collectionTable:getQlt(collectionID)
+		end
 
 		tmpPartner:populate({
 			tableID = skinID,
 			star = xyd.tables.partnerTable:getStar(skinID)
 		})
-		card:setDefaultSkinCard(tmpPartner)
+		card:setDefaultSkinCard(tmpPartner, qlt)
+		card:setQltLowerThanPartnerName()
 		table.insert(self.skinCards, card)
 		table.insert(self.skinIDs, tonumber(skinID))
 	end
@@ -2882,11 +2876,19 @@ function PartnerDetailWindow:updatePartnerSkin()
 			end)
 
 			local group = self.partner_:getGroup()
+			local collectionID = xyd.tables.itemTable:getCollectionId(skinID)
+			local qlt = nil
+
+			if collectionID and collectionID > 0 then
+				qlt = xyd.tables.collectionTable:getQlt(collectionID)
+			end
+
 			local data = {
 				is_equip = false,
 				tableID = tableID,
 				group = group,
-				skin_id = skinID
+				skin_id = skinID,
+				qlt = qlt
 			}
 
 			card:setSkinCard(data)
@@ -2897,13 +2899,14 @@ function PartnerDetailWindow:updatePartnerSkin()
 
 			card:setDisplay()
 			card:showSkinNum()
+			card:setQltLowerThanPartnerName()
 
 			if group == xyd.PartnerGroup.TIANYI then
-				card:setOnlySkin()
-
 				if i == 1 then
+					card:setOnlySkin()
 					card:setSkinName(__("SKIN_TEXT27"))
 				elseif i == 2 then
+					card:setOnlySkin()
 					card:setSkinName(__("SKIN_TEXT28"))
 				end
 			end
@@ -4898,7 +4901,6 @@ function PartnerDetailWindow:onclickArrow(delta)
 	end
 
 	self.needExSkillGuide = false
-	self.ExSkillGuideInAward = false
 	self.needStarOriginGuide = false
 	self.isPlayingSwitchAnimation = true
 
@@ -5107,6 +5109,7 @@ function PartnerDetailWindow:playSwitchAnimation()
 	sequence:AppendCallback(function ()
 		self.isPlayingSwitchAnimation = false
 
+		self:checkExSkillGuide()
 		self:checkStarOriginGuide()
 	end)
 end
@@ -5160,6 +5163,7 @@ function PartnerDetailWindow:playOpenAnimation(callback)
 			end
 
 			self:setWndComplete()
+			self:checkExSkillGuide()
 			self:checkStarOriginGuide()
 		end)
 	end, nil)
@@ -6178,6 +6182,38 @@ function PartnerDetailWindow:checkOpenPartnerBackWindow(event)
 				partner = self.partner_
 			})
 		end
+	end
+end
+
+function PartnerDetailWindow:checkExSkillGuide()
+	local wnd1 = xyd.getWindow("alert_award_window")
+	local wnd2 = xyd.getWindow("potentiality_success_window")
+	local wnd3 = xyd.getWindow("alert_item_window")
+	local wnd4 = xyd.getWindow("awake_ok_window")
+
+	if wnd1 or wnd2 or wnd3 or wnd4 then
+		return
+	end
+
+	if self.isShrineHurdle_ then
+		return
+	end
+
+	if not self:isWndComplete() then
+		return
+	end
+
+	if self.isPlayingSwitchAnimation then
+		return
+	end
+
+	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI and xyd.models.slot:needExskillGuide() then
+		xyd.WindowManager:get():openWindow("exskill_guide_window", {
+			wnd = self,
+			table = xyd.tables.partnerExskillGuideTable,
+			guide_type = xyd.GuideType.PARTNER_EXSKILL
+		})
+		xyd.models.slot:setExskillGuide()
 	end
 end
 

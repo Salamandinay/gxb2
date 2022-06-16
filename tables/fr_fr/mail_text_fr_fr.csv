@@ -11,7 +11,7 @@ id,name,from,content
 10,Recruter une Fille,Recrutement,Félicitations vous avez recruté {1} Filles durant l'événement. Voici vos récompenses.
 11,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Jeton de Capsule Avancée *3.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 12,Récompenses de Capsules utilisées,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement Capsule de Nouvelle Fille, veuillez collecter vos récompenses !"
-13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau *1, Orbe Élémentaire *100 et Parchemin de Jobs Avancée *1, voici vos récompenses, veuillez les récupérer !"
+13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau *1, Orbe Élémentaire *100 et Parchemin de Jobs Avancée *1 et Pièce de Fortune *2, voici vos récompenses, veuillez les récupérer~"
 14,Recrutement,Courrier du Système,"Félicitations vous avez obtenu {1} points pendant l'événement - Examen d'admission, voici vos récompenses, veuillez les récupérer~"
 15,Combat de BOSS,Courrier du Système,"Félicitations pour avoir tué l'Ami BOSS, voici vos récompenses"
 16,Ami BOSS,Courrier du Système,"L'Ami BOSS a été vaincu, félicitations vous avez obtenus les récompenses suivantes"
@@ -138,9 +138,9 @@ Veuillez récupérer vos récompenses, Senpai~"
 133,Aventure Fantastique,Courrier du Système,"Félicitations ! Vous avez atteint Niveau.{1} dans l'Aventure Fantastique, voici vos récompenses, veuillez les collecter !"
 134,Nouveau Chef,Courrier de la Guilde,"Puisque {1} ne s'est pas connecté depuis 7 jours, le poste de chef a été automatiquement transféré par le système. {2} est maintenant le nouveau chef de la Guilde {3}."
 135,Rappel de la fin d'Arène,Courrier de l'Arène,"Cher Senpai,\nl'Arène se terminera dans 24 heures ! Rends-toi vite dans l'Arène pour prouver ta valeur !"
-136,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack III vont expirer dans {1} jour(s).
-137,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack - Gemmes vont expirer dans {1} jour(s).
-138,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack - Gemmes vont expirer dans {1} jour(s).
+136,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.
+137,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.
+138,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.
 139,Récompenses de points d'Examen des Maisons,Courrier du Système,"Félicitations Senpai, tu as obtenu {1} points à l'Examen des Maisons cette saison et tu obtiens donc les récompenses suivantes !"
 140,Récompenses de classement d'Examen des Maisons,Courrier du Système,Félicitations Senpai ! Vous avez atteint la 1ère place dans l'Examen de Maison {1} ! Veuillez toucher votre profil pour vérifier si vous avez reçu la récompense {2} !
 141,Investissement de Test,Courrier du Système,"Félicitations Senpai, tu as déjà atteint Étape-{1}, voici les récompenses d'Investissement de Test correspondantes, n'oublie pas de les récupérer !"
@@ -205,20 +205,20 @@ Nous nous excusons pour la gêne occasionnée~"
 188,Cadeaux des Étoiles,Courrier du Système,"Cher Senpai,\n veuillez récupérer les Cadeaux des Étoiles préparés par Viviane ! Yuki vous souhaite une bonne journée à l'Académie !"
 190,Test d'Admission,Courrier du Système,Félicitations Senpai ! Vous êtes passé au Rang supérieur dans Test d'Admission ! Allez vite jeter un œil aux nouveautés de ce Rang !
 191,Boutique Limitée\nde Tenue,Courrier du Système,"Félicitations ! Vous avez terminé une tâche de l'événement - Boutique Limitée de Tenue, voici vos récompenses, veuillez les récupérer~"
-192,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack I vont expirer dans {1} jour(s).
-193,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVos provisions du Pack II vont expirer dans {1} jour(s).
+192,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.
+193,Récompenses du Chaperon Rouge,Courrier du Système,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.
 194,Ajustement de Skin,Courrier du Système,"Cher Senpai,\nle design de fond du skin - Championne Balnéaire a été ajusté durant la dernière mise à jour : l'image en arrière-plan de ce skin a été supprimée et est désormais disponible en tant que Fond dans Menu-Fond. Voici la compensation de cet ajustement - Gemme *300, veuillez les récupérer~"
 195,Ajustement de Skin,Courrier du Système,"Cher Senpai,\nle design de fond du skin - 1,2,3 Ouistiti ! a été ajusté durant la dernière mise à jour : l'image en arrière-plan de ce skin a été supprimée et est désormais disponible en tant que Fond dans Menu-Fond. Voici la compensation de cet ajustement - Gemme *300, veuillez les récupérer~"
 196,Étudiant Élite,Courrier d'Événement,"Félicitations Senpai !\nVous avez atteint le Rang le plus haut dans l'événement - Test d'Admission, voici le Cadre d'Avatar - Étudiant Élite qui dure 28 jours, veuillez le récupérer !"
 197,Festival Sportif,Courrier d'Événement,"Félicitations ! Vous vous êtes classé au Top 100 de votre Maison ! La Compétition d'Élite vous attend, préparez-vous !"
 198,Pratique Extra-Scolaire - Récompenses,Courrier du Système,"Félicitations, Senpai ! Vous avez fini un projet dans la Pratique Extra-Scolaire. Voici vos récompenses !"
-199,Investissement de Débutant - Compensation,Courrier du Système,"Cher Senpai,\n en raison de la modification du contenu de l'Investissement de Débutant, nous vous envoyons le reste de vos récompenses dues pour avoir fait l'achat de ce pack récemment. Veuillez collecter vos récompenses."
+199,Investissement de Débutant - Compensation,Courrier du Système,"Cher Senpai,\nEn raison de la modification du contenu de l'Investissement de Débutant, nous vous envoyons le reste de vos récompenses dues pour avoir fait l'achat de ce pack récemment. Veuillez collecter vos récompenses."
 200,Les Échos du Temps,Courrier du Système,"Félicitations, vous vous êtes classé {2}e du Classement de dégâts dans Les Échos du Temps - {1}, voici vos récompenses, veuillez les récupérer~"
 201,Événement Mensuel,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses, veuillez les récupérer~"
 202,Bonus de Luxe,Courrier du Système,"Félicitations ! Vous avez terminé les tâches de la Pratique Extra-Scolaire (Événement Mensuel), voici vos récompenses de Luxe, veuillez les récupérer~"
 203,Pratique Extra-Scolaire,Courrier du Système,"Félicitations Senpai ! Vous avez réussi à vaincre le Boss d'un Étape dans la Pratique Extra-Scolaire, voici vos récompenses, veuillez les récupérer~"
 204,Les Échos du Temps,Courrier du Système,"Félicitations ! Vous vous êtes classé {2}e du Classement de dégâts dans Les Échos du Temps - {1}, voici vos récompenses, veuillez les récupérer~"
-205,Rappel de la fin de phase - Ruée de Point,Courrier du Système,"Cher Senpai,\nla phase - Ruée de Point va prendre fin dans moins de 24 heures. N'oubliez pas d'y participer pour gagner un maximum de points !"
+205,Rappel de la fin de phase - Ruée de Point,Courrier du Système,"Cher Senpai,\nLa phase - Ruée de Point va prendre fin dans moins de 24 heures. N'oubliez pas d'y participer pour gagner un maximum de points !"
 206,Calcul de Ruée de Point,Courrier du Système,"Félicitations Senpai !\nVous avez atteint le Rang {1}, voici vos récompenses, veuillez les récupérer~"
 207,Champion de l'Arène Ultime,Courrier du Système,"
 Félicitations !
@@ -235,16 +235,16 @@ Senpai, Iron Fist tient à vous offrir 1 Pioche Dorée !
 Venez vite explorer la Cité aux Trésors avec elle !
 
 *(2 Pioches vous seront offertes lors du premier jour de l\'événement)"
-210,Récompenses Individuelles (Expédition Polaire),Courrier du Système,"Cher Senpai,\n merci pour votre contribution dans l'Expédition Polaire.\nVoici vos récompenses, veuillez les récupérer~"
+210,Récompenses Individuelles (Expédition Polaire),Courrier du Système,"Cher Senpai,\nMerci pour votre contribution dans l'Expédition Polaire.\nVoici vos récompenses, veuillez les récupérer~"
 211,Récompenses de Faction (Expédition Polaire),Courrier du Système,"Félicitations, Senpai ! Votre Faction s'est classée Top {1} parmi les 3 Factions.\nVoici vos récompenses, veuillez les récupérer~"
 212,Équipe de Sécurité,Courrier du Système,"
 Cher Senpai,
- vous avez été vaincu par le Seigneur du Chaos.
-Obtenez ces provisions et réessayer !
+Vous avez été vaincu par le Seigneur du Chaos.
+Prenez ces provisions et réessayez !
 (Bonus Spécial de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
 213,Équipe de Sécurité,Courrier du Système,"
 Cher Senpai,
- vous avez infligé beaucoup de dégâts au Seigneur du Chaos, il est en train de battre en retraite.
+Vous avez infligé beaucoup de dégâts au Seigneur du Chaos, il est en train de battre en retraite.
 Prenez vos récompenses et poursuivez-le !
 (Bonus Spécial de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
 214,Équipe de Sécurité,Courrier du Système,"
@@ -252,9 +252,9 @@ Cher Senpai,
  vous avez réussi à purifier le Seigneur du Chaos et êtes entré dans une zone encore plus dangereuse.
 Voici vos récompenses, veuillez les récupérer~
 (Bonus Spécial de Tenue déclenché, vous avez obtenu des Ciseaux de Cristal supplémentaires)"
-215,Échange de Noël,Courrier d'Événement,"Cher Senpai,\nl'événement - Échange de Noël va bientôt prendre fin, n'oubliez pas d'échanger des cadeaux !"
+215,Échange de Noël,Courrier d'Événement,"Cher Senpai,\nL'événement - Échange de Noël va bientôt prendre fin, n'oubliez pas d'échanger des cadeaux !"
 216,Près de la Cheminée,Courrier du Système,"Félicitations Senpai ! Vous avez accroché {1} Chaussettes de Noël, voici vos récompenses, veuillez les récupérer~"
-217,Rappel de la fin d'Exploration du Vieux Campus,Courrier du Système,"Cher Senpai,\nl'Exploration du Vieux Campus va prendre fin dans 24 heures ! Alllez vite dans le Vieux Campus pour prouver votre valeur !"
+217,Rappel de la fin d'Exploration du Vieux Campus,Courrier du Système,"Cher Senpai,\nL'Exploration du Vieux Campus va prendre fin dans 24 heures ! Alllez vite dans le Vieux Campus pour prouver votre valeur !"
 218,Rappel de la fin de Pack limité,Courrier du Système,"Cher Senpai,\n {1} expirera dans moins de 24 heures, ne ratez pas cette occasion !"
 219,Les Pétards du Printemps,Courrier du Système,"Cher Senpai,\nAvez-vous participé à l'événement - Les Pétards du Printemps ? Voici quelques Allumettes afin que vous puissiez réaliser des Spectacles de Feux d'artifice !"
 220,Les Pétards du Printemps,Courrier du Système,"Félicitations, Senpai !\nVous avez réalisé {1} Spectacle(s) de Feux d'artifice, voici vos récompenses, veuillez les récupérer~"
@@ -262,7 +262,7 @@ Voici vos récompenses, veuillez les récupérer~
 222,Récompenses du Dojo,Courrier du Système,"Félicitations Senpai~ Vous vous êtes classé {1}e au Classement de {2}, veuillez récupérer vos récompenses !"
 223,Le Château des Rêves de Lavli,Courrier du Système,"
 Cher Senpai,
-l\'événement - Le Château des Rêves de Lavli a commencé. Collectez du Sable Fin et du Sable Céleste et aidez Lavli à construire le château de ses rêves.
+L\'événement - Le Château des Rêves de Lavli a commencé. Collectez du Sable Fin et du Sable Céleste et aidez Lavli à construire le château de ses rêves.
 Vous avez déjà débloqué {1} Fille(s) 5 étoiles, {2} Fille(s) 6 étoiles et {3} Fille(s) 10 étoiles dans la Galerie.
 Les récompenses correspondantes vous ont directement été envoyées dans votre Sac."
 224,Promotion Anticipée,Courrier d'Événement,"Félicitations, Senpai !\nDurant cet événément, vous avez tiré Capsule Avancée {1} fois.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
@@ -279,11 +279,11 @@ Dans le but d\'améliorer votre expérience en jeu, la fonctionnalité - Entraî
 Tous les entraînements en cours ont été terminés d\'avance.
 Voici les récompenses, veuillez les récupérer~"
 233,Pass du Sancutaire,Courrier du Système,"Cher Senpai,\nEn raison de la réinitialisation de l'événement mensuel, vous ne pouvez pas améliorer le niveau du Pass du Sanctuaire au maximum pendant la durée restante de l'événement après son achat.\nVoici vos récompenses dues, veuillez les récupérer~"
-234,Rappel de la fin de Cité aux Trésors,Courrier du Système,"Cher Senpai,\nl'événement - Cité aux Trésors va prendre fin dans 24 heures ! Alllez vite pour trouver des trésors !"
+234,Rappel de la fin de Cité aux Trésors,Courrier du Système,"Cher Senpai,\nL'événement - Cité aux Trésors va prendre fin dans 24 heures ! Alllez vite pour trouver des trésors !"
 235,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour recevoir Ticket Avancé du Distributeur *1, Détecteur Spatial *15 et Ballon de Baudruche *1.\nVoici vos récompenses, veuillez les récupérer~"
 236,Rappel de la fin de Reconstitution du Livre,Courrier du Système,"
 Cher Senpai,
-la saison actuelle - Reconstitution du Livre va prendre fin dans 24 heures.
+La saison actuelle - Reconstitution du Livre va prendre fin dans 24 heures.
 Les Autocollants que vous avez obtenus durant la saison actuelle disparaîtront après la fin de la saison.
 Allez vite les échanger avant qu\'ils ne soient perdus !"
 240,Cérémonie de Rentrée,Courrier du Système,"
@@ -295,4 +295,5 @@ Si vous avez des questions n\'hésitez pas à contacter Yuki."
 239,Senteur d'Armoise,Courrier du Système,"Bonjour Senpai,\nVotre Avancée de l'événement - Senteur d'Armoise a atteint {1}, voici vos récompenses, veuillez les récupérer~"
 237,Pack Inter-dimensionnel,Courrier du Système,"Cher Senpai,\nSuite à votre achat, vos {1} ont directement été envoyés !\nRendez-vous dans votre Manoir pour embellir votre jardin et piller celui des autres joueurs !"
 238,Manoir Inter-dimensionnel,Courrier du Système,"Cher Senpai,\nL'événement - Manoir Inter-dimensionnel est terminé ! Nous espérons que vous avez fait le plein de ressources et vous remercions d'y avoir participé !"
-241,Station Spatiale Égarée,Courrier du Système,"Félicitations, Senpai ! Vous avez débloqué les récompenses supplémentaires, voici vos récompenses, veuillez les récupérer~"
+241,Station Spatiale Égarée,Courrier d'Événement,"Félicitations, Senpai ! Vous avez débloqué les récompenses supplémentaires, voici vos récompenses, veuillez les récupérer~"
+242,Récompenses du Chaperon Rouge,Courrier d'Événement,Pandaria vous apporte vos provisions quotidiennes et vous remercie d'avoir acheté le Panier du Chaperon Rouge !\nVous obtiendrez encore ces récompenses pendant les {1} jour(s) qui suivent.

@@ -54,8 +54,13 @@ local textConfig = {
 		window = "dress_show_entrance_window",
 		funID = xyd.FunctionID.DRESS_SHOW
 	},
-	btnWait2 = {
-		icon = "wait_text"
+	btnSkinCollection = {
+		icon = "zhaoxing_text",
+		window = "collection_skin_window",
+		params = {
+			fromSchoolChoose = true
+		},
+		funID = xyd.FunctionID.SKIN_COLLECTION
 	}
 }
 
@@ -70,6 +75,7 @@ end
 
 function SchoolChooseWindow:initWindow()
 	SchoolChooseWindow.super.initWindow(self)
+	xyd.models.collection:reqCollectionInfo()
 	self:getUIComponent()
 	self:layout()
 	self:register()
@@ -86,6 +92,7 @@ function SchoolChooseWindow:getUIComponent()
 	self.btnDress = self.content2:NodeByName("contentOfPage1/btnDress/pageIcon").gameObject
 	self.btnDressBuy = self.content2:NodeByName("contentOfPage2/btnDressBuy/pageIcon").gameObject
 	self.btnDressShow = self.content2:NodeByName("contentOfPage1/btnDressShow/pageIcon").gameObject
+	self.btnSkinCollection = self.content2:NodeByName("contentOfPage2/btnSkinCollection/pageIcon").gameObject
 	self.shushiBtn_ = self.content2:NodeByName("contentOfPage2/btnHouse/shushiBtn").gameObject
 	self.shushiBtnLabel_ = self.shushiBtn_:ComponentByName("label", typeof(UILabel))
 	self.nav = winTrans:NodeByName("nav").gameObject
@@ -370,6 +377,12 @@ function SchoolChooseWindow:initContent2()
 	self.btnDressShow_red = self.window_.transform:NodeByName("content_2/contentOfPage1/btnDressShow/redPoint").gameObject
 
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.DRESS_SHOW, self.btnDressShow_red)
+
+	self.btnDress_red = self.window_.transform:NodeByName("content_2/contentOfPage1/btnDress/redPoint").gameObject
+
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.DRESS_ITEM_CAN_UP
+	}, self.btnDress_red)
 end
 
 function SchoolChooseWindow:initContent3()
@@ -429,13 +442,19 @@ function SchoolChooseWindow:initContent4()
 
 	local navRed = self.nav:NodeByName("tab_2/redPoint")
 	local houseRed = self.contentPart4_:NodeByName("btnHouse/redPoint").gameObject
+	local skinRed = self.contentPart4_:NodeByName("btnSkinCollection/redPoint").gameObject
 
 	xyd.models.redMark:setJointMarkImg({
-		xyd.RedMarkType.HOUSE
+		xyd.RedMarkType.HOUSE,
+		xyd.RedMarkType.DRESS_ITEM_CAN_UP,
+		xyd.RedMarkType.SKIN_LEVEL_CAN_UP
 	}, navRed)
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.HOUSE
 	}, houseRed)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.SKIN_LEVEL_CAN_UP
+	}, skinRed)
 end
 
 function SchoolChooseWindow:updateUpIcon()
@@ -460,6 +479,24 @@ function SchoolChooseWindow:checkAndOpen(targetName)
 			xyd.showToast(__("NEW_FUNCTION_TIP"))
 
 			return
+		end
+
+		if funID == xyd.FunctionID.DRESS_BUY and not xyd.models.dress:isfunctionOpen() then
+			xyd.showToast(__("NEW_FUNCTION_TIP"))
+
+			return
+		end
+
+		if funID == xyd.FunctionID.SKIN_COLLECTION then
+			local ids = xyd.models.collection:getIdsByType(xyd.CollectionType.SKIN)
+
+			dump(ids)
+
+			if ids and #ids < 3 then
+				xyd.showToast(__("COLLECTION_SKIN_UNLOCK_TEXT", 3 - #ids))
+
+				return
+			end
 		end
 
 		if not xyd.checkFunctionOpen(funID) then
@@ -487,6 +524,7 @@ function SchoolChooseWindow:iosTestChangeUI()
 
 	xyd.setUITexture(winTrans:ComponentByName("bg", typeof(UITexture)), "Textures/texture_ios/bg_ios_test")
 	xyd.setUISprite(winTrans:ComponentByName("content/contentOfPage2/btnTransfer/pageIcon", typeof(UISprite)), nil, "btn_transfer_ios_test")
+	xyd.setUISprite(winTrans:ComponentByName("content/contentOfPage2/btnSkinCollection/pageIcon", typeof(UISprite)), nil, "btn_transfer_ios_test")
 	xyd.setUISprite(winTrans:ComponentByName("content/contentOfPage2/btnGraduate/pageIcon", typeof(UISprite)), nil, "btn_graduate_ios_test")
 	xyd.setUISprite(winTrans:ComponentByName("content/contentOfPage2/btnEnroll/pageIcon", typeof(UISprite)), nil, "btn_enroll_ios_test")
 	xyd.setUISprite(winTrans:ComponentByName("content/contentOfPage1/btnMarket/pageIcon", typeof(UISprite)), nil, "btn_market_ios_test")

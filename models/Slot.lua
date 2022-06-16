@@ -1609,6 +1609,10 @@ function Slot:getListByTableID(tableID, exceptPartnerId)
 end
 
 function Slot:getListByGroupAndStar(group, star, exceptPartnerId)
+	if group == 9 then
+		group = 0
+	end
+
 	local groupPartnerList = self.sortedPartners_[tostring(xyd.partnerSortType.STAR) .. "_" .. tostring(group)]
 	local res = {}
 	exceptPartnerId = tonumber(exceptPartnerId) or -1
@@ -2007,6 +2011,10 @@ function Slot:refreshShenxueGroup(groupId)
 						needNum = needNum + 2
 					elseif star == 5 then
 						needNum = needNum + 2
+					elseif star == 6 then
+						needNum = needNum + 2
+					elseif star == 10 then
+						needNum = needNum + 2
 					end
 				else
 					pList = self:getListByTableID(tonumber(mTableID))
@@ -2021,6 +2029,9 @@ function Slot:refreshShenxueGroup(groupId)
 
 					break
 				end
+
+				dump(materialIds_)
+				dump(tableID)
 			end
 
 			self.forgeStatus[tostring(groupId)][tostring(tableID)] = isCanForge

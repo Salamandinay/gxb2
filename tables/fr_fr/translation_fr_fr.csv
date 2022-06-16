@@ -442,7 +442,7 @@ POINT_TO_START,Touchez pour jouer
 EDGE_OUT_NOTIFY,"Ce compte a été connecté sur un autre appareil, voulez-vous actualiser ?"
 FORGET_PASSWORD,Mot de passe\noublié
 CANCEL,Annuler
-SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée."
+SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée.|6. Sélectionnez les Filles matérielles nécessaires pour graduer votre Fille."
 TOWER_WINDOW_HELP,"1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport à l'Étape du Test qu'ils ont atteint. |5. Atteignez l'Étape 200 pour débloquer la fonction ""Passer le combat""."
 DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit choisir au minimum 1 Fille dans son équipe de Patrouille (5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochaine ouverture (les attributs, équipements et potentiels ne seront pas mis à jour non plus).|3. Touchez pour voir les informations de l'ennemi et choisissez une Fille manuellement pour combattre les ennemis.|4. Cochez ""passer"" le combat et voir directement le résultat, ou décochez ""passer"" pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV restants des Filles de votre équipe et des Filles ennemis seront gardés. Les Filles qui n'ont plus de PV ne peuvent plus participer aux combats.|6. Chaque combat dure 15 tours. L'équipe qui tue l'ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un objet.|8. Coffre：Obtienez des récompenses aléatoires telles que Pièces d'Or, Gemmes ou bien d'autres.|9. Marchand：Cliquez sur le Marchand pour acheter des objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Boulette. Cliquez sur la Boulette pour obtenir l'effet correspondant et cliquez sur une des Papeteries pour recevoir un bonus, l'utilisation des Papeteries est limitée pour chaque Fille.|11. Les Boulettes ne peuvent pas être préservées jusque la prochaine Patrouille.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème Étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 Étages d'un niveau (disponible pour chaque niveau), vous pouvez choisir le mode Auto la prochaine fois que la Patrouille sera disponible."
 GET_WAY_EQUIP,Aller à {1}-{2}
@@ -787,7 +787,7 @@ GUILD_ANNOUNCEMENT_SETTING_UP_TITLE,Changer l'Annonce
 GUILD_NAME_EMPTY,Le Nom de la Guilde ne peut pas être vide
 GUILD_NAME_LIMIT_LENGTH,Le Nom de la Guilde est trop long
 GUILD_NAME_REPEATED,Ce nom est déjà utilisé
-SHENXUE_CAN_NOT_FORGE,Matériaux Insuffisants
+SHENXUE_CAN_NOT_FORGE,Filles Matérielles Insuffisantes !
 SHENXUE_NOT_SELECT_YET,Choisissez vos Filles
 GUILD_LOG_TITLE,Journal
 GUILD_JOB1,Membre
@@ -1672,7 +1672,7 @@ SKIN_OPEN_TIPS,Nécessite que vous ayez atteint le Niv.{1} ou avoir obtenu un Sk
 ACTIVITY_VOTE_END_TEXT,Temps Restant：
 NO_PRIVATE_MESSAGE,Aucun message privé
 DORM_EXCHANGE,Échange
-LIMIT_ACTIVITY,Activités
+LIMIT_ACTIVITY,Événements
 LOG,Journal
 SETTING_UP_AWARD_1,Code
 SETTING_UP_AWARD_2,"Le Code Cadeau n'existe pas, veuillez vérifier et réessayer"
@@ -2342,7 +2342,7 @@ SHOP_SKIN_TEXT06,Tous les Skins
 SHOP_SKIN_TEXT07,Skins Achetables
 SHOP_STREET_TEXT01,"Ce magasin n'a pas encore ouvert, veuillez patienter~"
 SHOP_STREET_TEXT02,Ouvre bientôt
-ACTIVITY_NAV_TEXT0,Exclusif
+ACTIVITY_NAV_TEXT0,Événement Exclusif
 ACTIVITY_NAV_TEXT1,Événement Mensuel
 VIEW_DATES_SKIN,Skins de Serment
 VIEW_DATES_SKIN_TITLE,Liste des Skins de Serment
@@ -2974,9 +2974,9 @@ HOUSE_ITEM_TYPE_0,Tous
 BATTLE_PASS_SHOP_OFFSHELF,Restant
 COLLECTION_SHOP_HELP,"1. Vous pourrez débloquer les étapes après avoir obtenu le montant de Points de Collection correspondant. Vous pourrez échanger les Pièces ou les Gemmes contre les objets. |2. Chaque objet de Collection et d'Épicerie n'est échangeable qu'une seule fois. |3. Les objets de Collection ne se renouvellent pas, néanmoins, les objets d'Épicerie se renouvellent tous les lundis à 00:00 (UTC/GMT 0). |4. Plus d'objets seront ajoutés dans le futur, merci de votre patience."
 COLLECTION_SHOP_TAGS,Collection|Épicerie
-ACTIVITY_NAV_TEXT_1_1,Durée Limitée
+ACTIVITY_NAV_TEXT_1_1,Pack Limité
 ACTIVITY_NAV_TEXT_1_2,Pack Périodique
-ACTIVITY_NAV_TEXT_2_1,Exclusif
+ACTIVITY_NAV_TEXT_2_1,Événement Exclusif
 ACTIVITY_NAV_TEXT_2_3,Événement Mensuel
 COLLECTION_SHOP_TITLES,Étape 1|Étape 2|Étape 3
 COLLECTION_SHOP_TITLE_LOCK,Débloqué lorsque le Point de Collection atteint {1}
@@ -3581,7 +3581,7 @@ ACTIVITY_SPORTS_HELP_DES_12,"À la fin de la [c][cc0011]Compétition Normale[-][
 ACTIVITY_SPORTS_HELP_DES_13,"À la fin de la [c][cc0011]Compétition d'Élite[-][/c], vous recevrez des récompenses en fonction du nombre des [c][cc0011]Médailles[-][/c] obtenues par votre Maison."
 ACTIVITY_SPORTS_FIGHT_BUFF_TITLE,Esprit Sportif
 ACTIVITY_SPORTS_FIGHT_BUFF_SUM,Les batailles peuvent dépasser 15 tours
-GAMBLE_AUTO_4_STAR,Sélection automatique de Filles matérielles 4 étoiles
+GAMBLE_AUTO_4_STAR,Sélection auto. de Filles matérielles 4 étoiles
 ACTIVITY_HALLOWEEN_GO,Champ de Citrouilles
 ACTIVITY_HALLOWEEN_TEXT1,"Pendant l'événement, coupez les citrouilles pour collecter les récompenses !"
 ACTIVITY_HALLOWEEN_TEXT2,Coupez 10 citrouilles pendant 1 tour pour\ncollecter la Récompense Finale
@@ -5200,7 +5200,7 @@ Diamant, Maître, Grand Maître：8 Filles suppléantes sur la ligne avant, 16 F
 (6) Les batailles dans l\'Arène Ultime peuvent dépasser 15 tours. Cependant, les Soins Reçus seront réduits et l\'Attaque augmentera à chaque tour, jusqu\'à ce que toutes les Filles d\'une équipe soient vaincues, celle-ci sera considérée comme Défaite.|5. Élimination&Finalistes|(1) Après la fin de la phase – Ruée de Point, les joueurs du Rang Grand Maître seront divisés aléatoirement en 5 groupes de 64 joueurs pour procéder à l\'Élimination. Dans le cas où il y a moins de 320 joueurs au Rang Grand Maître, les joueurs qui participeront à l\'Élimination seront désignés en fonction de leur Classement, de sorte à former des groupes de 64 (par exemple, s\'il y a 300 joueurs au Rang Grand Maître, les 256 premiers y participeront et les 44 autres ne pourront pas y participer). Dans le cas où il y a moins de 64 joueurs au Rang Grand Maître, les joueurs du Top 64 du Classement Général participeront à l\'Élimination.
 (2) Pendant cette phase, vous ne ferez qu\'un combat par jour (vous ne pouvez pas modifier votre Équipe durant les 2 heures précédant le combat) et la période de calcul est de 00 :00 (UTC/GMT 0) à 02 :00(UTC/GMT 0) chaque jour. Pendant la période de calcul, vous ne pourrez pas former votre Équipe.
 (3) Règles de Combat (Élimination&Finalistes)
-Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Les niveaux des Noyaux Astraux et des Clochettes seront également conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités et des potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut. Le bonus de Clochette (Grand Sanctuaire de Tsuruga) ne prendra actuellement pas effet dans les phases Élimination et Finalistes.
+Pendant ces 2 phases, vous pouvez uniquement déployer des Filles pouvant atteindre la forme 10 étoiles minimum. Durant le combat, les Filles auront toutes les statistiques de leurs formes 15 étoiles (niveau 330), leurs niveaux de Compétences d\'Élites seront conservés. Si vos Filles sont équipées d\'un ensemble d\'équipement de classe, elles le conserveront. Les Filles qui sont équipées d\'équipement plus bas obtiendront toutes un ensemble d\'équipement Angélique. Leurs Attributs actuels de Cristaux seront améliorés au niveau maximum (Rose). Les Serviteurs déployés seront au niveau 180, les Auras seront au niveau 50 et les niveaux des Noyaux Précieux seront conservés. Les niveaux des Noyaux Astraux et des Clochettes seront également conservés. Toutes les statistiques de votre Laboratoire de la Guilde seront au maximum. Vous garderez les statistiques des Skins, des bonus de Faveur, des Antiquités, de la Galerie de Skins et des Potentiels que vous possédez. Si aucun potentiel n\'est sélectionné, aucun potentiel ne sera conservé par défaut.
 Durant le combat, les PV et l\'Attaque des Filles seront multipliés selon leurs étoiles：| 5 étoiles-50%%, 6 étoiles-51%%, 7 étoiles-53%%| 8 étoiles-55%%, 9 étoiles-60%%, 10 étoiles-65%%| 11 étoiles-70%%, 12 étoiles-75%%, 13 étoiles-80%%, 14 étoiles-90%% et 15 étoiles-100%%.|6. Trêve|(1) Durée : 2 jours après la fin de la phase – Finalistes.|7. Temple de la Gloire|(1) Les joueurs du Top 8 de chaque Groupe de chaque Saison seront affichés dans le Temple de la Gloire.
 (2) Le classement des meilleurs Champions, incluant le nombre de fois ayant été Champion (y comprit durant la version précédente de Arène Ultime) y sera également affiché.|8. Quête Journalière|(1) Pendant la phase – Ruée de Point, complétez les Quêtes Journalières de Ruée de Point pour recevoir des récompenses.|9. Récompenses de Calcul|(1) Après la fin de la phase - Ruée de Point, les récompenses vous seront envoyées en fonction de votre Rang actuel.
 Condition de récupération：avoir lancé 10 combats ou plus dans l\'Arène Ultime.
@@ -5516,7 +5516,7 @@ TIME_CLOISTER_HELP05,"1. Une Fille Suppléante est disponible dans les Défis de
 TIME_CLOISTER_TEXT65,Technique · Fille Suppléante
 TIME_CLOISTER_TEXT66,Utilisez les Points de Cauchemar pour améliorer le niveau et les Compétences Avancées de la Fille Suppléante.
 TIME_CLOISTER_TEXT67,Montrer
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d'obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d'Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune(20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 1 Gouvernail = 1 Pièce de Fortune(80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune(100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d’obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d’Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune (20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune (20 fois au maximum)|——Utiliser 1 Sceau = 1 Pièce de Fortune (80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune (100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
 ACTIVITY_LUCKYBOXES_TEXT15,"Après la fin de l'événement, vos Pièces de Fortune, les points de Fortune et la progression des Récompenses Finales seront conservés jusqu'au prochain événement."
 TIME_CLOISTER_TEXT68,Veuillez montrer une {1} pour compléter cette tâche.
 TIME_CLOISTER_TEXT69,Veuillez choisir la Tenue requise à montrer.
@@ -6065,7 +6065,7 @@ GAME_ASSISTANT_TEXT79,Nouvel Entraînement commencé
 GAME_ASSISTANT_TEXT80,Serviteur - Achat de l'Énergie
 GAME_ASSISTANT_TEXT81,Serviteur - Récompense d'Épouvantail
 GAME_ASSISTANT_TEXT82,Excursion Scolaire - Ressource à collecter
-GAME_ASSISTANT_TEXT83,Excursion Scolaire - Achat du Pain Délicieux
+GAME_ASSISTANT_TEXT83,Excursion Scolaire - Achat de Pain Délicieux
 GAME_ASSISTANT_TEXT84,Guilde - Connexion
 GAME_ASSISTANT_TEXT85,Cafétéria - Obtenir la commande
 GAME_ASSISTANT_TEXT86,Cafétéria - Améliorer en masse : {1} fois
@@ -6404,7 +6404,7 @@ ACTIVITY_CHILDREN_TITLE,Les Bambins\nde Yume
 ACTIVITY_SPFARM_TEXT01,"Je t'en prie, entre dans mon manoir et trouves-y ce dont tu as besoin..."
 ACTIVITY_SPFARM_TEXT02,Niv. du Jardin
 ACTIVITY_SPFARM_TEXT03,Entrer
-ACTIVITY_SPFARM_HELP1,"1. Cet événement dure 15 jours. Lors des 14 permiers jours, plantez des Fleurs et pillez le manoir des autres joueurs pour obtenir des ressources. Le 15e jour de cet événement est le jour d’affichage, durant lequel vous ne pourrez plus piller les ressources des autres joueurs.|2. Touchez une case pour planter vos Fleurs. Vous pourrez collecter les ressources correspondantes chaque jour à 00 : 00 (UTC/GMT 0). |3. Utilisez 100 Graines Paranormales pour planter une Fleur ou augmenter son niveau de 1. Vous pouvez également changer le type de vos Fleurs en utilisant des Graines Paranormales (50 x niveau actuel de la Fleur que vous avez choisie). |4. Déplacez vos Fleurs en appuyant longtemps dessus. Déployez-y une Armée Défensive afin de protéger vos Fleurs des pillages.|5. Utilisez des Mégaphones pour appliquer une Stratégie.|6. Une fois avoir appliqué 3 Stratégies, votre Manoir gagnera 1 de Prestige et vous obtiendrez également des récompenses.|7. Utilisez 1 Ticket de Pillage pour piller 1 fois les ressources d’un autre joueur. 3 Tickets de Pillage vous seront envoyés chaque jour au cours des 14 premiers jours de cet événement. Vous pouvez également acheter des Tickets de Pillage en utilisant des Gemmes (15 Tickets de Pillage achetables au maximum).|8. Plus le niveau de votre Jardin sera haut, plus la quantité de ressources pillables chez un autre joueur sera élevée.|9. Après l'événement, les Fruits Paranormaux, les Mégaphones et les Tickets de Pillage seront automatiquement convertis en Pièce d'Or, 1 Fruit Paranormal = 1K Pièce d'Or, 1 Mégaphone = 50K Pièce d'Or, 1 Ticket de Pillage = 20K Pièce d'Or."
+ACTIVITY_SPFARM_HELP1,"1. Cet événement dure 15 jours. Lors des 14 permiers jours, plantez des Fleurs et pillez le manoir des autres joueurs pour obtenir des ressources. Le 15e jour de cet événement est le jour d’affichage, durant lequel vous ne pourrez plus piller les ressources des autres joueurs et les Fleurs ne produiront plus de ressources (n'inclut pas la fonction - accélération).|2. Touchez une case pour planter vos Fleurs. Vous pourrez collecter les ressources correspondantes chaque jour à 00 : 00 (UTC/GMT 0). |3. Utilisez 100 Graines Paranormales pour planter une Fleur ou augmenter son niveau de 1. Vous pouvez également changer le type de vos Fleurs en utilisant des Graines Paranormales (50 x niveau actuel de la Fleur que vous avez choisie). |4. Déplacez vos Fleurs en appuyant longtemps dessus. Déployez-y une Armée Défensive afin de protéger vos Fleurs des pillages.|5. Utilisez des Mégaphones pour appliquer une Stratégie.|6. Une fois avoir appliqué 3 Stratégies, votre Manoir gagnera 1 de Prestige et vous obtiendrez également des récompenses.|7. Utilisez 1 Ticket de Pillage pour piller 1 fois les ressources d’un autre joueur. 3 Tickets de Pillage vous seront envoyés chaque jour au cours des 14 premiers jours de cet événement. Vous pouvez également acheter des Tickets de Pillage en utilisant des Gemmes (15 Tickets de Pillage achetables au maximum).|8. Plus le niveau de votre Jardin sera haut, plus la quantité de ressources pillables chez un autre joueur sera élevée.|9. Lorsque le Prestige de votre manoir atteint 10, la fonction - accélération sera débloquée. Utilisez 1000 Graines Paranoramles pour obtenir immédiatement les ressources quotidiennes de Fleur (cela n'influencera pas la production quotidienne).|10. Après l'événement, les Fruits Paranormaux, les Mégaphones et les Tickets de Pillage seront automatiquement convertis en Pièce d'Or, 1 Fruit Paranormal = 1K Pièce d'Or, 1 Mégaphone = 50K Pièce d'Or, 1 Ticket de Pillage = 20K Pièce d'Or."
 ACTIVITY_SPFARM_HELP2,"1. À chaque pillage, vous serez transporté au Manoir d’un autre joueur (se trouvant au centre de la carte).|2. Au début du pillage, toutes les cases seront face cachée à l’exception de la case du Manoir. Vous commencerez par retourner les cases une des 4 cases perpendiculairement adjacentes au Manoir (↑↓←→).|3. Toutes les cases étant face cachée, vous devrez les retourner pour découvrir ce qu’il se trouve en dessous.|4. En retournant une case - Armée Défensive, vous devrez vaincre cette dernière avant de pouvoir retourner les cases avoisinantes.|5. Si vous retournez une case - Fleur, vous pourrez piller 20%% de la Production/Jour de cette Fleur et les mettre dans votre Sac.|6. Cliquez sur le Manoir du joueur que vous pillez pour mettre fin au pillage et vous recevrez les récompenses que vous avez pillées à l’intérieur votre sac."
 ACTIVITY_SPFARM_TEXT04,Prestige：[c][10F520]{1}[-][/c]
 ACTIVITY_SPFARM_TEXT05,Piller
@@ -6541,3 +6541,52 @@ ACTIVITY_SPFARM_TEXT113,1. Vous pouvez voir les historiques de pillage et les hi
 ACTIVITY_SPFARM_TEXT114,Vous n'avez rien perdu lors de ce pillage...
 ACTIVITY_SPFARM_TEXT115,Vous n'avez rien obtenu lors de ce pillage...
 ACTIVITY_SPFARM_TEXT116,"Vous ne pourrez pas collecter les récompenses des Fleurs pendant la période d'affichage (la fonction - ""Accélération"" est toujours disponible), voulez-vous continuer ?"
+COLLECTION_SENPAI_DRESS,Tenue
+SENPAI_DRESS,Tenue
+COLLECTION_SKIN_UNLOCK_TEXT,Débloqué après avoir obtenu {1} Skins.
+COLLECTION_SKIN_HELP,"1. La Galerie de Skins recueille tous les Skins que vous possédez.|2. Les Skins sont classés en 4 cactégories de rareté : Commun, Rare, Épique et Légendaire. Plus votre Skin sera d’une grande rareté, plus vous obtiendrez de Points de Skin.|3. Chaque Skin que vous débloquerez pour la première fois vous fournira des Points de Skin.|4. Tous les Skins seront filtrés par Thème. Obtenez des Points de Skin supplémentaires en possédant plusieurs Skins d'un même Thème.|5. Améliorez votre niveau de Fashion en obtenant un maximum de Points de Skin. Un niveau de Fashion élevé fournira de meilleurs Attributs à vos Filles équipées d’un Skin."
+COLLECTION_SKIN_TEXT01,Niveau de Fashion
+COLLECTION_SKIN_TEXT02,Niveau de Fashion amélioré !
+COLLECTION_SKIN_TEXT03,Bonus d'Attribut：
+COLLECTION_SKIN_TEXT04,Voir mes Skins
+COLLECTION_SKIN_TEXT05,Saisissez un mot-clé
+COLLECTION_SKIN_TEXT06,Thème
+COLLECTION_SKIN_TEXT07,Festivité
+COLLECTION_SKIN_TEXT08,Serment
+COLLECTION_SKIN_TEXT09,Été
+COLLECTION_SKIN_TEXT10,Autres
+COLLECTION_SKIN_TEXT11,Récent
+COLLECTION_SKIN_TEXT12,Rareté
+COLLECTION_SKIN_TEXT13,Commun
+COLLECTION_SKIN_TEXT14,Rare
+COLLECTION_SKIN_TEXT15,Épique
+COLLECTION_SKIN_TEXT16,Légendaire
+COLLECTION_SKIN_TEXT17,Détails
+COLLECTION_SKIN_TEXT18,Points de Skin
+COLLECTION_SKIN_TEXT19,Skin Commun
+COLLECTION_SKIN_TEXT20,Skin Rare
+COLLECTION_SKIN_TEXT21,Skin Épique
+COLLECTION_SKIN_TEXT22,Skin Légendaire
+COLLECTION_SKIN_TEXT23,Points de Thème
+COLLECTION_SKIN_TEXT24,Bonus de Thème
+COLLECTION_SKIN_TEXT25,Bonus de Points
+COLLECTION_SKIN_TEXT26,Obtenir {1} Skin(s)
+COLLECTION_SKIN_TEXT27,Skins
+COLLECTION_SKIN_TEXT28,Thème：{1}
+ACTIVITY_LOST_SPACE_TEXT01,Étape
+ACTIVITY_LOST_SPACE_TEXT02,Basique
+ACTIVITY_LOST_SPACE_TEXT03,Supplémentaire
+ACTIVITY_LOST_SPACE_TEXT04,Débloquer
+ACTIVITY_LOST_SPACE_TEXT05,Aller à\nl'événement
+ACTIVITY_LOST_SPACE_TEXT06,Achetez le pack pour\nobtenir plus de récompenses !
+ACTIVITY_LOST_SPACE_TEXT07,Récompenses
+ACTIVITY_LOST_SPACE_TEXT08,Récompenses
+ACTIVITY_LOST_SPACE_TEXT09,Inactif
+SHENXUE_TEXT01,Veuillez sélectionner le niveau d'étoile des Filles que vous voulez graduer en masse.
+SHENXUE_TEXT02,Graduer les Filles à {1} étoiles en masse
+SHENXUE_TEXT03,Éveiller les Filles à {1} étoiles en masse
+SHENXUE_TEXT04,Sélectionnez les Filles Matérielles
+LOGIN_TIPS_ERROR_1,Votre compte a été banni
+LOGIN_TIPS_ERROR_2,"Votre compte actuel a été banni, veuillez changer de Serveur."
+SHENXUE_TEXT05,Éveiller
+SHENXUE_TEXT06,En cours d'éveil

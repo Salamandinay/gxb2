@@ -135,8 +135,18 @@ function ActivityLostSpaceMaskWindow:close(callback, skipAnimation)
 					item_id = award[1],
 					item_num = award[2]
 				}
-			}
+			},
+			wnd_type = xyd.GambleWindowType.ACTIVITY
 		}
+
+		if xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG):checkBuy() then
+			local highAwards = xyd.tables.activityLostSpaceAwardsTable:getExtraAward(stage_id)
+
+			table.insert(param.data, {
+				item_id = highAwards[1],
+				item_num = highAwards[2]
+			})
+		end
 
 		if self.anotherType then
 			function param.closeCallBackFun()

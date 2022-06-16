@@ -77,8 +77,6 @@ function DressChoiceFragmentWindow:layout()
 		local qlt = self.item_id
 		self.arr = xyd.models.dress:getCommonQltFragmentArr(qlt, self.self_item_fragment_id)
 
-		dump(self.arr, "全部碎片")
-
 		if #self.arr > 0 then
 			self.fragmentScroller.gameObject:SetActive(true)
 			self.fragmentNone.gameObject:SetActive(false)

@@ -36,6 +36,7 @@ function DressMainWindow:getUIComponent()
 	self.imgBg = self.groupAction:ComponentByName("imgBg", typeof(UISprite))
 	self.nav = self.groupAction:NodeByName("nav").gameObject
 	self.tab_2 = self.nav:NodeByName("tab_2").gameObject
+	self.tab_2_redMark = self.nav:NodeByName("tab_2/redMark").gameObject
 	self.page1 = self.groupAction:NodeByName("page1").gameObject
 	self.upConWid = self.page1:ComponentByName("upCon", typeof(UIWidget))
 	self.upCon = self.page1:NodeByName("upCon").gameObject
@@ -163,6 +164,9 @@ end
 function DressMainWindow:layout()
 	self:initTop()
 	self:initNav()
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.DRESS_ITEM_CAN_UP
+	}, self.tab_2_redMark)
 end
 
 function DressMainWindow:initNav()
@@ -383,6 +387,7 @@ function DressMainWindow:updatePage(index)
 		self.page1.gameObject:SetActive(false)
 		self.page2.gameObject:SetActive(true)
 		self.page3.gameObject:SetActive(false)
+		xyd.models.dress:checkAllItemCanUpTodayClick()
 	elseif index == 3 then
 		if not self.firstInitPageThree then
 			self:initPageThree()

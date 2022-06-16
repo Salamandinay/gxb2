@@ -3,7 +3,7 @@ local WindowTop = import("app.components.WindowTop")
 local MapGridItem = class("MapGridItem", import("app.components.CopyComponent"))
 local BackContentItem = class("BackContentItem")
 local json = require("cjson")
-PLACE_STATE = {
+local PLACE_STATE = {
 	EMPTY = 0,
 	COMMON = 2,
 	DOOR = 3,
@@ -922,7 +922,13 @@ function ActivitySpfarmMapWindow:closeMove(succ)
 		end
 	end
 
-	self.openMoveBuildInfoId = nil
+	self.openMoveBuildIInfoId = nil
+
+	if self.moveAlertTipsWindow then
+		self.moveAlertTipsWindow:close()
+
+		self.moveAlertTipsWindow = nil
+	end
 
 	self.allMaskPanel.gameObject:SetActive(false)
 end
@@ -1339,7 +1345,7 @@ function MapGridItem:onTouch()
 				tipsStr = __("ACTIVITY_SPFARM_TEXT32")
 			end
 
-			xyd.alertYesNo(tipsStr, function (yes_no)
+			self.parent.moveAlertTipsWindow = xyd.alertYesNo(tipsStr, function (yes_no)
 				if yes_no then
 					sendFun(self.parent:getMoving(), self.gridId)
 				end
@@ -1363,7 +1369,7 @@ function MapGridItem:onTouch()
 				tipsStr = __("ACTIVITY_SPFARM_TEXT32")
 			end
 
-			xyd.alertYesNo(tipsStr, function (yes_no)
+			self.parent.moveAlertTipsWindow = xyd.alertYesNo(tipsStr, function (yes_no)
 				if yes_no then
 					sendFun(self.parent:getMoving(), self.gridId)
 				end
@@ -1525,6 +1531,8 @@ function MapGridItem:updateState(state)
 		self.cardItemMask.gameObject:SetActive(false)
 		self:setNoClickConVisible(false)
 	end
+
+	print("Test:", state)
 
 	if state ~= PLACE_STATE.EMPTY then
 		self.cardItemBg.gameObject:SetActive(true)

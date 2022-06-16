@@ -1,5 +1,6 @@
 local HeroIcon = import("app.components.HeroIcon")
 local PartnerIcon = class("PartnerIcon")
+local Partner = import("app.models.Partner")
 
 function PartnerIcon:ctor(go, parent)
 	self.go = go
@@ -103,7 +104,7 @@ function ShenXueWindow:getUIComponent()
 	self.wrapContent = FixedWrapContent.new(scrollView, wrapContent, iconContainer, PartnerIcon, self)
 	self.midShowGroup = groupMain:NodeByName("midShowGroup").gameObject
 
-	for i = 1, 4 do
+	for i = 1, 5 do
 		local selectGroup = self.midShowGroup:NodeByName("selectGroup" .. i).gameObject
 		self["selectGroup" .. i] = selectGroup
 		self["effectGroup" .. i] = selectGroup:NodeByName("effectGroup").gameObject
@@ -111,6 +112,20 @@ function ShenXueWindow:getUIComponent()
 		self["redPointImg" .. i] = selectGroup:NodeByName("redPointImg" .. i).gameObject
 		self["plusIcon" .. i] = selectGroup:ComponentByName("plusIcon" .. i, typeof(UISprite))
 		self["labelNum" .. i] = selectGroup:ComponentByName("labelNum" .. i, typeof(UILabel))
+	end
+
+	self.filterGroup = groupMain:NodeByName("filterGroup").gameObject
+
+	for i = 1, 5 do
+		self["btnFilter" .. i] = self.filterGroup:NodeByName("filter" .. i).gameObject
+		self["btnFilterChosen" .. i] = self["btnFilter" .. i]:NodeByName("chosen").gameObject
+	end
+
+	self.resGroup = groupMain:NodeByName("resGroup").gameObject
+
+	for i = 1, 3 do
+		self["res" .. i] = self.resGroup:ComponentByName("res" .. i, typeof(UISprite))
+		self["labelResNum" .. i] = self["res" .. i]:ComponentByName("label", typeof(UILabel))
 	end
 
 	self.shenXueBtn = groupMain:NodeByName("shenXueBtn").gameObject
@@ -128,6 +143,8 @@ end
 function ShenXueWindow:initWindow()
 	BaseWindow.initWindow(self)
 	self:getUIComponent()
+	xyd.models.shenxue:clearShenXueRedPoint()
+	self:updateMaterialPartnerhelpArr()
 	self:initLayOut()
 	self:register()
 	self:updateAutoBtn()
@@ -153,7 +170,7 @@ function ShenXueWindow:updateAutoBtn()
 
 	local stateStar5 = xyd.db.misc:getValue("shenxue_auto_5_star")
 
-	if star == 6 then
+	if star >= 6 then
 		self.autoStar5Btn:SetActive(true)
 	else
 		self.autoStar5Btn:SetActive(false)
@@ -278,7 +295,7 @@ function ShenXueWindow:updateBatchShenXueBtn()
 	end
 
 	if self.batchShenXueRedState == true then
-		self.batchShenXueRedPoint:SetActive(true)
+		self.batchShenXueRedPoint:SetActive(false)
 	else
 		self.batchShenXueRedPoint:SetActive(false)
 	end
@@ -316,6 +333,10 @@ function ShenXueWindow:initLayOut()
 		self.autoStar5Label.fontSize = 16
 	end
 
+	if xyd.Global.lang == "en_en" or xyd.Global.lang == "de_de" then
+		self.autoStar5Label.fontSize = 20
+	end
+
 	self.autoBtn:GetComponent(typeof(UISprite)).width = self.autoLabel.width + 80
 	self.autoStar5Btn:GetComponent(typeof(UISprite)).width = self.autoStar5Label.width + 80
 
@@ -334,29 +355,47 @@ function ShenXueWindow:initLayOut()
 
 	local itemList = self.wrapContent:getItems()
 	self.selectedIndex = 1
+	self.selectedStar = 0
 
+	self:updateSelectFilterBtn(1)
 	self:chooseIconByIndex(1)
 	self:updateSelectBtn(1)
 end
 
-function ShenXueWindow:initVSGroup()
+function ShenXueWindow:initVSGroup(chooseGroup)
 	local groupIds = xyd.tables.groupTable:getGroupIds()
 	self.infos = {}
 
 	for _, group in ipairs(groupIds) do
 		self.infos[group] = {}
+		local helpArr = {}
 
 		for _, id in pairs(self.forgetList[tostring(group)]) do
+			local star = xyd.tables.partnerTable:getStar(id)
 			local partnerInfo = {
 				noClickSelected = true,
 				tableID = id,
-				needRedPoint = self.ShenXueModel:getStatusByTableID(id),
+				needRedPoint = self.ShenXueModel:getStatusByTableIDAndStar(id, star),
 				callback = function (icon)
 					self:onClickheroIcon(icon)
-				end
+				end,
+				star = star
 			}
 
-			table.insert(self.infos[group], partnerInfo)
+			if not helpArr[id] then
+				helpArr[id] = 1
+			else
+				helpArr[id] = helpArr[id] + 1
+				partnerInfo.isNineStar = true
+				partnerInfo.star = 9
+				partnerInfo.needRedPoint = self.ShenXueModel:getStatusByTableIDAndStar(id, partnerInfo.star)
+			end
+
+			if not self.selectedStar or self.selectedStar == 0 then
+				table.insert(self.infos[group], partnerInfo)
+			elseif partnerInfo.star == self.selectedStar then
+				table.insert(self.infos[group], partnerInfo)
+			end
 		end
 	end
 
@@ -364,7 +403,11 @@ function ShenXueWindow:initVSGroup()
 		self:sortPartner(i)
 	end
 
-	self.wrapContent:setInfos(self.infos[1], {})
+	if not chooseGroup then
+		self.wrapContent:setInfos(self.infos[1], {})
+	else
+		self.wrapContent:setInfos(self.infos[chooseGroup], {})
+	end
 end
 
 function ShenXueWindow:chooseIconByIndex(index)
@@ -372,12 +415,12 @@ function ShenXueWindow:chooseIconByIndex(index)
 	local items = self.wrapContent:getItems()
 
 	for _, item in pairs(items) do
-		if item.data and item.data.tableID == info.tableID then
+		if item.data and item.data.tableID == info.tableID and info.isNineStar == item.data.isNineStar then
 			item.heroIcon.choose = false
 
 			self:onClickheroIcon(item.heroIcon)
-
-			break
+		else
+			item.heroIcon.choose = false
 		end
 	end
 end
@@ -390,11 +433,23 @@ function ShenXueWindow:sortPartner(index)
 		local redB = b.needRedPoint == true and 1 or 0
 		local idA = a.tableID
 		local idB = b.tableID
+		local starA = xyd.tables.partnerTable:getStar(idA)
+		local starB = xyd.tables.partnerTable:getStar(idB)
+
+		if a.isNineStar and starA == 6 then
+			starA = 9
+		end
+
+		if b.isNineStar and starB == 6 then
+			starB = 9
+		end
 
 		if redA ~= redB then
 			return redB < redA
-		else
+		elseif starA == starB then
 			return idB < idA
+		else
+			return starB < starA
 		end
 	end)
 end
@@ -420,11 +475,23 @@ function ShenXueWindow:register()
 
 	UIEventListener.Get(self.detailBtn).onClick = function ()
 		if self.lastSelectId_ then
-			xyd.WindowManager.get():openWindow("partner_info", {
+			local params = {
 				grade = 0,
 				lev = 1,
 				table_id = self.lastSelectId_
-			})
+			}
+
+			if self.partnerInfo_.star == 9 then
+				params.star = 9
+				params.grade = 6
+				params.lev = 100
+			elseif self.partnerInfo_.star == 10 then
+				params.star = 10
+				params.grade = 6
+				params.lev = 100
+			end
+
+			xyd.WindowManager.get():openWindow("partner_info", params)
 		end
 	end
 
@@ -434,6 +501,7 @@ function ShenXueWindow:register()
 	UIEventListener.Get(self.batchShenXueBtn).onClick = handler(self, self.onClickBatchShenXueBtn)
 
 	self.eventProxy_:addEventListener(xyd.event.COMPOSE_PARTNER, self.onComposePartner, self)
+	self.eventProxy_:addEventListener(xyd.event.AWAKE_PARTNER, self.onAwakePartner, self)
 	self.eventProxy_:addEventListener(xyd.event.SUMMON, self.updateBatchShenXueBtn, self)
 	self.partnerImg:setTouchListener(function ()
 		self:onTouchImg()
@@ -457,6 +525,30 @@ function ShenXueWindow:register()
 			self:updateSelectBtn(i)
 		end
 	end
+
+	local helpArr = {
+		0,
+		5,
+		6,
+		9,
+		10
+	}
+
+	for i = 1, 5 do
+		UIEventListener.Get(self["btnFilter" .. i]).onClick = function ()
+			if self.selectedStar == helpArr[i] then
+				return
+			end
+
+			xyd.SoundManager.get():playSound(xyd.SoundID.TAB)
+
+			self.selectedStar = helpArr[i]
+
+			self:initVSGroup(self.selectedIndex)
+			self:chooseIconByIndex(1)
+			self:updateSelectFilterBtn(i)
+		end
+	end
 end
 
 function ShenXueWindow:updateSelectBtn(index)
@@ -470,6 +562,12 @@ function ShenXueWindow:updateSelectBtn(index)
 			self["label" .. i].color = Color.New2(960513791)
 			self["label" .. i].effectColor = Color.New2(4294967295.0)
 		end
+	end
+end
+
+function ShenXueWindow:updateSelectFilterBtn(index)
+	for i = 1, 5 do
+		self["btnFilterChosen" .. i]:SetActive(i == index)
 	end
 end
 
@@ -503,29 +601,165 @@ function ShenXueWindow:onComposePartner(event)
 		})
 	end
 
-	self:playEffect(function ()
-		local params = {
-			items = {
-				{
-					item_num = 1,
-					item_id = self.lastTableId,
-					partnerID = self.lastPartnerId
-				}
-			},
-			callback = function ()
-				xyd.models.itemFloatModel:pushNewItems(items)
-				self:onClickheroIcon(self.lastSelected_)
-			end
-		}
+	if xyd.tables.partnerTable:getStar(pInfo.table_id) <= 5 then
+		self:playEffect(function ()
+			local params = {
+				items = {
+					{
+						item_num = 1,
+						item_id = self.lastTableId,
+						partnerID = self.lastPartnerId
+					}
+				},
+				callback = function ()
+					xyd.models.itemFloatModel:pushNewItems(items)
+					self:onClickheroIcon(self.lastSelected_)
+				end
+			}
 
-		xyd.WindowManager.get():openWindow("alert_award_partner_window", params)
+			xyd.WindowManager.get():openWindow("alert_award_partner_window", params)
+			self:clearSelect()
+
+			local groupId = xyd.tables.partnerTable:getGroup(self.lastTableId)
+
+			self:refreshRedPoint(groupId)
+			self:onClickheroIcon(self.lastSelected_)
+			self:updateBatchShenXueBtn()
+		end)
+	else
+		local win_params = {}
+		local newPartner = xyd.models.slot:getPartner(pInfo.partner_id)
+		win_params.partner = newPartner
+		win_params.formerPartner = self.formerPartner
+		win_params.attrParams = {}
+		win_params.items = items
+		local maxLev = self.formerPartner:getMaxLev(self.formerPartner:getGrade(), self.formerPartner:getAwake())
+		local newMaxLev = newPartner:getMaxLev(newPartner:getGrade(), newPartner:getAwake())
+
+		table.insert(win_params.attrParams, {
+			"TOP_LEV_UP",
+			maxLev,
+			newMaxLev
+		})
+
+		local attr_enums = {
+			"hp",
+			"atk",
+			"spd",
+			"arm"
+		}
+		local attrs = self.formerPartner:getBattleAttrs()
+		local new_attrs = newPartner:getBattleAttrs()
+
+		for i = 1, #attr_enums do
+			local v = attr_enums[i]
+			local params = {
+				v,
+				attrs[v],
+				new_attrs[v]
+			}
+
+			table.insert(win_params.attrParams, params)
+		end
+
+		win_params.isShenxue = 1
+
+		xyd.WindowManager:get():openWindow("awake_ok_window", win_params)
+		xyd.models.itemFloatModel:pushNewItems(items)
 		self:clearSelect()
 
 		local groupId = xyd.tables.partnerTable:getGroup(self.lastTableId)
 
 		self:refreshRedPoint(groupId)
+		self:onClickheroIcon(self.lastSelected_)
 		self:updateBatchShenXueBtn()
-	end)
+	end
+end
+
+function ShenXueWindow:onAwakePartner(event)
+	if not self.singleAwake or self.singleAwake == false then
+		return
+	end
+
+	if xyd.models.shenxue:getIsDoingReq() then
+		return
+	end
+
+	self.singleAwake = false
+	local params = event.data
+	local pInfo = params.partner_info
+	self.lastTableId = pInfo.table_id
+	self.lastPartnerId = pInfo.partner_id
+	local items = xyd.models.shenxue:getTempItems()
+	local win_params = {}
+	local newPartner = xyd.models.slot:getPartner(pInfo.partner_id)
+	win_params.partner = newPartner
+	win_params.formerPartner = self.formerPartner
+	win_params.attrParams = {}
+	win_params.items = items
+	local maxLev = self.formerPartner:getMaxLev(self.formerPartner:getGrade(), self.formerPartner:getAwake())
+	local newMaxLev = newPartner:getMaxLev(newPartner:getGrade(), newPartner:getAwake())
+
+	table.insert(win_params.attrParams, {
+		"TOP_LEV_UP",
+		maxLev,
+		newMaxLev
+	})
+
+	local attr_enums = {
+		"hp",
+		"atk"
+	}
+	local attrs = self.formerPartner:getBattleAttrs()
+	local new_attrs = newPartner:getBattleAttrs()
+
+	for i = 1, #attr_enums do
+		local v = attr_enums[i]
+		local params = {
+			v,
+			attrs[v],
+			new_attrs[v]
+		}
+
+		table.insert(win_params.attrParams, params)
+	end
+
+	local skills_old, skills_new = nil
+
+	if self.formerPartner:getStar() <= 6 then
+		skills_old = {
+			self.formerPartner:getSkillIDs()[1]
+		}
+	else
+		skills_old = self.formerPartner:getAwakeSkill(self.formerPartner:getAwake())
+	end
+
+	skills_new = newPartner:getAwakeSkill(math.max(1, newPartner:getAwake()))
+	local skillOldList = {}
+	local skillNewList = {}
+
+	for i = 2, #skills_new do
+		if tonumber(skills_old[i]) ~= tonumber(skills_new[i]) then
+			table.insert(skillNewList, skills_new[i])
+		end
+	end
+
+	if skills_old and skills_old[1] and tonumber(skills_old[1]) ~= tonumber(skills_new[1]) then
+		table.insert(skillOldList, skills_old[1])
+		table.insert(skillNewList, skills_new[1])
+	end
+
+	win_params.skillOldList = skillOldList
+	win_params.skillNewList = skillNewList
+
+	xyd.WindowManager:get():openWindow("awake_ok_window", win_params)
+	self:clearSelect()
+
+	local groupId = xyd.tables.partnerTable:getGroup(self.lastTableId)
+
+	self:refreshRedPoint(groupId)
+	self:onClickheroIcon(self.lastSelected_)
+	self:updateBatchShenXueBtn()
 end
 
 function ShenXueWindow:playEffect(callback)
@@ -668,7 +902,17 @@ function ShenXueWindow:onClickAutoStar5Btn()
 end
 
 function ShenXueWindow:onClickBatchShenXueBtn()
-	xyd.WindowManager.get():openWindow("batch_shen_xue_window")
+	if self.selectedStar == 5 or self.selectedStar == 6 then
+		xyd.WindowManager.get():openWindow("batch_shen_xue_window", {
+			hostStar = self.selectedStar - 1
+		})
+	elseif self.selectedStar == 9 or self.selectedStar == 10 then
+		xyd.WindowManager.get():openWindow("batch_awake_window", {
+			destStar = self.selectedStar
+		})
+	else
+		xyd.alertTips(__("SHENXUE_TEXT01"))
+	end
 end
 
 function ShenXueWindow:onClickShenXueBtn()
@@ -680,6 +924,27 @@ function ShenXueWindow:onClickShenXueBtn()
 
 	if not isCanForge or not self.isCanForge then
 		xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+
+		return
+	end
+
+	if not self.resEnough then
+		local helpArr = {
+			xyd.ItemID.MANA,
+			xyd.ItemID.PARTNER_EXP,
+			xyd.ItemID.GRADE_STONE
+		}
+
+		for i = 1, 3 do
+			local costNum = self.resCost[helpArr[i]]
+			local resNum = xyd.models.backpack:getItemNumByID(helpArr[i])
+
+			if resNum < costNum then
+				xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(helpArr[i])))
+
+				return
+			end
+		end
 
 		return
 	end
@@ -706,6 +971,10 @@ function ShenXueWindow:onClickShenXueBtn()
 		return
 	end
 
+	self.formerPartner = Partner.new()
+
+	self.formerPartner:populate(self.hostPartner_:getInfo())
+
 	local params = {
 		table_id = tonumber(self.selectTableID_),
 		material_ids = partnerList
@@ -719,17 +988,25 @@ function ShenXueWindow:onClickShenXueBtn()
 	end
 
 	xyd.checkHasMarriedAndNotice(partners, function ()
-		local msg = messages_pb:compose_partner_req()
-		msg.table_id = tonumber(self.selectTableID_)
+		if self.partnerInfo_.star > 6 then
+			xyd.models.shenxue:reqAwakeOfShenXue(self.hostPartner_, self.materialIdList_, self.partnerInfo_)
+		else
+			local msg = messages_pb:compose_partner_req()
+			msg.table_id = tonumber(self.selectTableID_)
 
-		for i = 1, #partnerList do
-			table.insert(msg.material_ids, partnerList[i])
+			for i = 1, #partnerList do
+				table.insert(msg.material_ids, partnerList[i])
+			end
+
+			xyd.Backend:get():request(xyd.mid.COMPOSE_PARTNER, msg)
 		end
-
-		xyd.Backend:get():request(xyd.mid.COMPOSE_PARTNER, msg)
 	end)
 
-	self.singleShenXue = true
+	if self.partnerInfo_.star <= 6 then
+		self.singleShenXue = true
+	else
+		self.singleAwake = true
+	end
 end
 
 function ShenXueWindow:onSelectContainer(id)
@@ -747,6 +1024,8 @@ function ShenXueWindow:onSelectContainer(id)
 	self.tmpAllOptionalList_ = self.allOptionalList_
 	self.tmpSelectedList_ = self.selectedList_
 	local params = {
+		hideDetail = true,
+		showBtnDebris = true,
 		alpha = 0.7,
 		optionalList = optionalList or {},
 		materialList = materialList or {},
@@ -773,6 +1052,14 @@ function ShenXueWindow:confirmSelectList(id, selectList, hostPartner)
 			self.hostPartner_ = hostPartner or nil
 		else
 			self.hostPartner_ = nil
+		end
+
+		if self.partnerInfo_.star > 6 then
+			self:initResGroup(hostPartner, self.partnerInfo_.star)
+
+			self.shenXueBtnLabel.text = __("AWAKE")
+		else
+			self.shenXueBtnLabel.text = __("SHENXUE")
 		end
 	else
 		local mTableID = self.materialKeyList_[id - 1]
@@ -925,12 +1212,23 @@ function ShenXueWindow:onClickheroIcon(heroIcon)
 	self.materialKeyList_ = {}
 	self.materialIds_ = {}
 	self.selectTableID_ = partnerInfo.tableID
-	partnerInfo.star = xyd.tables.partnerTable:getStar(self.selectTableID_)
 
-	self:initMidGroup(partnerInfo)
+	if partnerInfo.star == 9 then
+		self.selectedIsNineStar = true
+	else
+		self.selectedIsNineStar = nil
+	end
 
 	self.partnerInfo_ = partnerInfo
 
+	if self.partnerInfo_.star > 6 then
+		self.shenXueBtnLabel.text = __("AWAKE")
+	else
+		self.shenXueBtnLabel.text = __("SHENXUE")
+	end
+
+	self:initResGroup()
+	self:initMidGroup(partnerInfo)
 	self:initPic(partnerInfo)
 end
 
@@ -961,6 +1259,57 @@ function ShenXueWindow:initPic(partnerInfo)
 			self:bigPicMove()
 		end
 	})
+end
+
+function ShenXueWindow:initResGroup(partnerInfo, desStar)
+	local helpArr = {
+		xyd.ItemID.MANA,
+		xyd.ItemID.PARTNER_EXP,
+		xyd.ItemID.GRADE_STONE
+	}
+	self.resEnough = true
+	self.resCost = nil
+
+	if not partnerInfo then
+		for i = 1, 3 do
+			xyd.setUISpriteAsync(self["res" .. i], nil, xyd.tables.itemTable:getIcon(helpArr[i]))
+
+			self["labelResNum" .. i].text = "---"
+			self["labelResNum" .. i].color = Color.New2(1432789759)
+			self["labelResNum" .. i].alignment = NGUIText.Alignment.Center
+		end
+
+		return
+	end
+
+	local tableID = partnerInfo.tableID
+	local cost = xyd.models.shenxue:getResCost(partnerInfo, desStar)
+	self.resCost = cost
+
+	for i = 1, 3 do
+		xyd.setUISpriteAsync(self["res" .. i], nil, xyd.tables.itemTable:getIcon(helpArr[i]))
+
+		self["labelResNum" .. i].alignment = NGUIText.Alignment.Left
+		local costNum = cost[helpArr[i]]
+		local resNum = xyd.models.backpack:getItemNumByID(helpArr[i])
+
+		if i == 1 then
+			self["labelResNum" .. i].text = xyd.getRoughDisplayNumber(costNum)
+		else
+			self["labelResNum" .. i].text = xyd.getRoughDisplayNumber(resNum) .. "/" .. xyd.getRoughDisplayNumber(costNum)
+		end
+
+		if costNum == 0 then
+			self["labelResNum" .. i].text = "---"
+		end
+
+		if resNum < costNum then
+			self["labelResNum" .. i].color = Color.New2(3422556671.0)
+			self.resEnough = false
+		else
+			self["labelResNum" .. i].color = Color.New2(1432789759)
+		end
+	end
 end
 
 function ShenXueWindow:setPartnerImg(imgSource)
@@ -1112,7 +1461,7 @@ end
 function ShenXueWindow:initMidGroup(partnerInfo)
 	local tableID = partnerInfo.tableID
 	local hostID_ = xyd.tables.partnerTable:getHost(tableID)
-	local material = xyd.split(xyd.tables.partnerTable:getMaterial(tableID), "|")
+	local material = xyd.models.shenxue:getMaterial(partnerInfo)
 	local hPList = self.SlotModel:getListByTableID(hostID_)
 	local hRedFlag = false
 
@@ -1128,8 +1477,9 @@ function ShenXueWindow:initMidGroup(partnerInfo)
 	}
 	local showParams = {
 		selectGroup2 = false,
-		selectGroup4 = false,
+		selectGroup5 = false,
 		selectGroup3 = false,
+		selectGroup4 = false,
 		selectGroup1 = false
 	}
 	local lastTableID = nil
@@ -1160,6 +1510,11 @@ function ShenXueWindow:initMidGroup(partnerInfo)
 		if tonumber(mTableID) % 1000 == 999 then
 			local group = math.floor(tonumber(mTableID) % 10000 / 1000)
 			local star = math.floor(tonumber(mTableID) / 10000)
+
+			if group == 9 then
+				group = 0
+			end
+
 			pList = self.SlotModel:getListByGroupAndStar(group, star)
 		else
 			pList = self.SlotModel:getListByTableID(tonumber(mTableID))
@@ -1202,6 +1557,10 @@ function ShenXueWindow:initMidGroup(partnerInfo)
 				star = math.floor(tonumber(mTableID) / 10000),
 				heroIcon = xyd.tables.partnerIDRuleTable:getIcon(tostring(mTableID))
 			}
+
+			if pInfo.group == 9 then
+				pInfo.group = 0
+			end
 		else
 			pInfo = {
 				needRedPoint = false,
@@ -1287,14 +1646,40 @@ function ShenXueWindow:initMidGroup(partnerInfo)
 			y = 6
 		}
 	}
+	local pos5 = {
+		{
+			x = -196,
+			y = 8
+		},
+		{
+			x = -80,
+			y = 6
+		},
+		{
+			x = 16,
+			y = 6
+		},
+		{
+			x = 112,
+			y = 6
+		},
+		{
+			x = 208,
+			y = 6
+		}
+	}
 
 	if self.totalShenxueMatNum == 3 then
 		for i = 1, 4 do
 			self["selectGroup" .. i].transform:SetLocalPosition(pos3[i].x, pos3[i].y, 0)
 		end
-	else
+	elseif self.totalShenxueMatNum == 4 then
 		for i = 1, 4 do
 			self["selectGroup" .. i].transform:SetLocalPosition(pos4[i].x, pos4[i].y, 0)
+		end
+	elseif self.totalShenxueMatNum == 5 then
+		for i = 1, 5 do
+			self["selectGroup" .. i].transform:SetLocalPosition(pos5[i].x, pos5[i].y, 0)
 		end
 	end
 
@@ -1378,17 +1763,24 @@ function ShenXueWindow:autoSelect4StarHero()
 	self:confirmSelectList(self.totalShenxueMatNum, pushList, {})
 end
 
-function ShenXueWindow:autoSelect5StarHero()
+function ShenXueWindow:autoSelect5StarHero(index)
 	local state = xyd.db.misc:getValue("shenxue_auto_5_star")
 
 	if not state or state == "0" then
 		return
 	end
 
-	local mTableID = self.materialKeyList_[self.totalShenxueMatNum - 1]
+	local realIndex = index or self.totalShenxueMatNum - 1
+	local mTableID = self.materialKeyList_[realIndex]
 	local star = math.floor(tonumber(mTableID) / 10000)
 
-	if star ~= 5 then
+	if star < 5 then
+		return
+	elseif star > 5 then
+		if realIndex > 1 then
+			self:autoSelect5StarHero(realIndex - 1)
+		end
+
 		return
 	end
 
@@ -1398,7 +1790,7 @@ function ShenXueWindow:autoSelect5StarHero()
 	local tableList = {}
 
 	for j = 1, #partnerList do
-		if not partnerList[j]:isLockFlag() and partnerList[j].lev == 1 and partnerList[j].love_point <= 0 and (not xyd.tables.partnerTable:getStar10(partnerList[j]:getTableID()) or xyd.tables.partnerTable:getStar10(partnerList[j]:getTableID()) == 0) then
+		if not partnerList[j]:isLockFlag() and partnerList[j].lev == 1 and partnerList[j].love_point <= 0 and (self.materialPartnerhelpArr[partnerList[j]:getTableID()] or xyd.tables.partnerTable:checkPuppetPartner(partnerList[j]:getTableID())) then
 			if not tableList[partnerList[j].tableID] then
 				tableList[partnerList[j].tableID] = {}
 			end
@@ -1441,7 +1833,7 @@ function ShenXueWindow:autoSelect5StarHero()
 
 		while #tableList[tableIdLength[i].partnerID] > 0 do
 			table.insert(pushList, tableList[tableIdLength[i].partnerID][1])
-			self:setSelectList(self.totalShenxueMatNum, tableList[tableIdLength[i].partnerID][1], true)
+			self:setSelectList(realIndex + 1, tableList[tableIdLength[i].partnerID][1], true)
 			table.remove(tableList[tableIdLength[i].partnerID], 1)
 
 			if optionalList.needNum <= #pushList then
@@ -1450,7 +1842,7 @@ function ShenXueWindow:autoSelect5StarHero()
 		end
 	end
 
-	self:confirmSelectList(self.totalShenxueMatNum, pushList, {})
+	self:confirmSelectList(realIndex + 1, pushList, {})
 end
 
 function ShenXueWindow:autoPutMaterial()
@@ -1460,6 +1852,17 @@ function ShenXueWindow:autoPutMaterial()
 
 	for i = 1, self.totalShenxueMatNum - 2 do
 		local mTableID = self.materialKeyList_[i]
+		local flag = false
+		local heroList = xyd.tables.partnerTable:getHeroList(mTableID)
+
+		if heroList and #heroList > 0 then
+			for i = 1, #heroList do
+				if tonumber(self.lastSelectTableID) == heroList[i] then
+					flag = true
+				end
+			end
+		end
+
 		local optionalList = self.mateOptionalList_[tostring(mTableID)]
 		local pushList = {}
 		local partnerList = optionalList.pList
@@ -1469,7 +1872,7 @@ function ShenXueWindow:autoPutMaterial()
 				break
 			end
 
-			if partnerList[j]:isLockFlag() == false and partnerList[j].lev == 1 and partnerList[j]:getLovePoint() <= 0 then
+			if partnerList[j]:isLockFlag() == false and partnerList[j].lev == 1 and partnerList[j]:getLovePoint() <= 0 and (partnerList[j].star < 5 or partnerList[j].star >= 5 and flag) then
 				table.insert(pushList, partnerList[j])
 				self:setSelectList(i, partnerList[j], true)
 			end
@@ -1517,12 +1920,14 @@ function ShenXueWindow:autoChooseFirstMaterial()
 end
 
 function ShenXueWindow:refreshRedPoint(groupId)
+	xyd.models.shenxue:clearShenXueRedPoint()
+
 	local infos = self.infos[groupId]
 
 	for i = 1, #infos do
 		local pInfo = infos[i]
 		local tableID = pInfo.tableID
-		local status = xyd.models.shenxue:getStatusByTableID(tableID)
+		local status = xyd.models.shenxue:getStatusByTableIDAndStar(tableID, pInfo.star)
 		pInfo.needRedPoint = status
 	end
 
@@ -1537,6 +1942,15 @@ end
 
 function ShenXueWindow:clearEffect()
 	BaseWindow.clearEffect(self, true)
+end
+
+function ShenXueWindow:updateMaterialPartnerhelpArr()
+	local materialPartnerRecordTableIDs = xyd.models.shenxue:getMaterialPartnerRecordTableIDs()
+	self.materialPartnerhelpArr = {}
+
+	for i = 1, #materialPartnerRecordTableIDs do
+		self.materialPartnerhelpArr[materialPartnerRecordTableIDs[i]] = 1
+	end
 end
 
 function ShenXueWindow:willClose()

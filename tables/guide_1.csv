@@ -148,3 +148,7 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 147,game_assistant,1,48,,,main_window,,gameAssistantBtn,,,,1,50,2,buttoncrop_37,0|0,,,1,,,,,,2,,0.42,,,,,
 148,starry_altar,1,49,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
 149,starry_altar,1,49,,,main_window,1,transTopR|tr_btn_6,,,,1,51,2,buttoncrop_26,0|0,,,1,,,,,,2,,0.42,,,,,
+150,collection_skin,1,50,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
+151,collection_skin,1,50,,,main_window,,schoolBtn,,,,,,2,buttoncrop_8,-1|-1,1.2|1.2,,1,,,,,,,,0.2,,,,,
+152,collection_skin,1,50,,,school_choose_window,,tab2,,,,,,,,,,,,,,,,,,,,,,,,
+153,collection_skin,1,50,,,school_choose_window,,btnSkinCollection,,,,1,52,,,,,,,,,,,,,,,,,,,

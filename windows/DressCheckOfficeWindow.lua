@@ -4,6 +4,7 @@ function DressCheckOfficeWindow:ctor(name, params)
 	DressCheckOfficeWindow.super.ctor(self, name, params)
 
 	self.office_id = params.office_id
+	self.showALL = params.showALL
 end
 
 function DressCheckOfficeWindow:initWindow()
@@ -157,7 +158,7 @@ function DressCheckOfficeWindow:initEquipItem()
 		local item_ids = xyd.tables.senpaiDressTable:getItems(equip_dress_ids[i])
 
 		for j in pairs(item_ids) do
-			if xyd.models.backpack:getItemNumByID(item_ids[j]) > 0 then
+			if xyd.models.backpack:getItemNumByID(item_ids[j]) > 0 or self.showALL then
 				table.insert(has_item_ids, item_ids[j])
 
 				break

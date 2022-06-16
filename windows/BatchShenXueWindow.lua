@@ -2,6 +2,7 @@ local BaseWindow = import(".BaseWindow")
 local BatchShenXueWindow = class("BatchShenXueWindow", BaseWindow)
 local BatchShenXueWindowItem = class("BatchShenXueWindowItem")
 local HeroIcon = import("app.components.HeroIcon")
+local Partner = import("app.models.Partner")
 
 function BatchShenXueWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -13,6 +14,14 @@ function BatchShenXueWindow:ctor(name, params)
 	self.shenXueFinish = true
 	self.shenXueNum = 0
 	self.items = {}
+	self.canChooseMaterialPartnerTableIDs = xyd.models.shenxue:getMaterialPartnerRecordTableIDs()
+	self.helpCanChooseArr = {}
+
+	for i = 1, #self.canChooseMaterialPartnerTableIDs do
+		self.helpCanChooseArr[self.canChooseMaterialPartnerTableIDs[i]] = 1
+	end
+
+	self.hostStar = params.hostStar or 4
 end
 
 function BatchShenXueWindow:initWindow()
@@ -32,7 +41,28 @@ function BatchShenXueWindow:sortByTableID()
 	end
 
 	table.sort(partnerIDs, function (a, b)
-		return partners[b]:getTableID() < partners[a]:getTableID()
+		local aIsFeiTai5 = false
+		local bIsFeiTai5 = false
+		local aTableID = partners[a]:getTableID()
+		local bTableID = partners[b]:getTableID()
+		local aStar = xyd.tables.partnerTable:getStar(aTableID)
+		local aTenStarTableID = xyd.tables.partnerTable:getTenStarTableID(aTableID)
+		local bStar = xyd.tables.partnerTable:getStar(bTableID)
+		local bTenStarTableID = xyd.tables.partnerTable:getTenStarTableID(bTableID)
+
+		if aStar == 5 and (not aTenStarTableID or aTenStarTableID <= 0) then
+			aIsFeiTai5 = true
+		end
+
+		if bStar == 5 and (not bTenStarTableID or bTenStarTableID <= 0) then
+			bIsFeiTai5 = true
+		end
+
+		if aIsFeiTai5 ~= bIsFeiTai5 then
+			return aIsFeiTai5
+		else
+			return aTableID < bTableID
+		end
 	end)
 
 	return partnerIDs
@@ -43,174 +73,207 @@ function BatchShenXueWindow:updateData()
 	local partnerIDSortByTableID = self:sortByTableID()
 
 	for i, key in ipairs(partnerIDSortByTableID) do
-		if partners[key]:getStar() == 4 and not self.selectedPartners[partners[key]:getPartnerID()] and not partners[key]:isLockFlag() then
+		if partners[key]:getStar() == self.hostStar then
 			local tableID = partners[key]:getTableID()
-			local star5TableID = xyd.tables.partnerTable:getShenxueTableId(tableID)
-			local material = xyd.split(xyd.tables.partnerTable:getMaterial(star5TableID), "|", true)
-			local material_detail = {}
+			local sameListFlag = false
+			local tempHeroList = xyd.tables.partnerTable:getHeroList(tableID)
 
-			for keyid, mTableID in pairs(material) do
-				if not material_detail[mTableID] then
-					material_detail[mTableID] = {}
-				end
-
-				if mTableID % 1000 == 999 then
-					local star = xyd.tables.partnerIDRuleTable:getStar(mTableID)
-					local group = xyd.tables.partnerIDRuleTable:getGroup(mTableID)
-					local heroIcon = xyd.tables.partnerIDRuleTable:getIcon(mTableID)
-					local num = (material_detail[mTableID].needNum or 0) + 1
-					material_detail[mTableID] = {
-						star = star,
-						group = group,
-						needNum = num,
-						heroIcon = heroIcon,
-						partners = {},
-						mTableID = mTableID
-					}
-				else
-					material_detail[mTableID].needNum = (material_detail[mTableID].needNum or 0) + 1
-					material_detail[mTableID].tableID = material_detail[mTableID].tableID or mTableID
-					material_detail[mTableID].partners = {}
-					material_detail[mTableID].mTableID = mTableID
-				end
-
-				material_detail[mTableID].noClickSelected = true
-				material_detail[mTableID].notPlaySaoguang = true
-			end
-
-			material_detail[tableID].needNum = material_detail[tableID].needNum + 1
-
-			table.insert(material_detail[tableID].partners, partners[key]:getPartnerID())
-
-			local selectedPartners = {
-				[partners[key]:getPartnerID()] = true
-			}
-			local isCanForge = true
-			local materialIds = {}
-
-			for i = 1, #material do
-				if #materialIds == 0 or materialIds[#materialIds] ~= material[i] then
-					materialIds[#materialIds + 1] = material[i]
-				end
-			end
-
-			for i = 1, #materialIds do
-				local mTableID = materialIds[i]
-
-				if material_detail[mTableID].tableID then
-					for keyid in pairs(partners) do
-						if partners[keyid]:getTableID() == material_detail[mTableID].tableID then
-							if not self.selectedPartners[partners[keyid]:getPartnerID()] and not selectedPartners[partners[keyid]:getPartnerID()] and not partners[keyid]:isLockFlag() then
-								selectedPartners[partners[keyid]:getPartnerID()] = true
-
-								table.insert(material_detail[mTableID].partners, partners[keyid]:getPartnerID())
-							end
-
-							if material_detail[mTableID].needNum <= #material_detail[mTableID].partners then
-								break
-							end
-						end
-					end
-
-					if material_detail[mTableID].needNum > #material_detail[mTableID].partners then
-						isCanForge = false
-
-						break
-					end
-				else
-					for keyid in pairs(partners) do
-						if partners[keyid]:getGroup() == material_detail[mTableID].group and partners[keyid]:getStar() == material_detail[mTableID].star then
-							if not self.selectedPartners[partners[keyid]:getPartnerID()] and not selectedPartners[partners[keyid]:getPartnerID()] and not partners[keyid]:isLockFlag() then
-								selectedPartners[partners[keyid]:getPartnerID()] = true
-
-								table.insert(material_detail[mTableID].partners, partners[keyid]:getPartnerID())
-							end
-
-							if material_detail[mTableID].needNum <= #material_detail[mTableID].partners then
-								break
-							end
-						end
-					end
-
-					if material_detail[mTableID].needNum > #material_detail[mTableID].partners then
-						isCanForge = false
-
-						break
+			if tempHeroList and #tempHeroList > 0 then
+				for i = 1, #tempHeroList do
+					if tonumber(tableID) == tempHeroList[i] then
+						sameListFlag = true
 					end
 				end
 			end
 
-			if isCanForge then
-				self.selectedPartners[partners[key]:getPartnerID()] = true
+			local destTableID = xyd.tables.partnerTable:getShenxueTableId(tableID)
+			local tempFlag = self.hostStar <= 4 or self.hostStar > 4 and self.helpCanChooseArr[tableID]
 
-				for keyid in pairs(selectedPartners) do
-					self.selectedPartners[keyid] = true
+			if not self.selectedPartners[partners[key]:getPartnerID()] and not partners[key]:isLockFlag() and not xyd.tables.partnerTable:checkPuppetPartner(partners[key]:getTableID()) and destTableID > 0 and (tempFlag or sameListFlag) then
+				local material = xyd.split(xyd.tables.partnerTable:getMaterial(destTableID), "|", true)
+				local material_detail = {}
+
+				for keyid, mTableID in pairs(material) do
+					if not material_detail[mTableID] then
+						material_detail[mTableID] = {}
+					end
+
+					if mTableID % 1000 == 999 then
+						local star = xyd.tables.partnerIDRuleTable:getStar(mTableID)
+						local group = xyd.tables.partnerIDRuleTable:getGroup(mTableID)
+						local heroIcon = xyd.tables.partnerIDRuleTable:getIcon(mTableID)
+						local num = (material_detail[mTableID].needNum or 0) + 1
+						material_detail[mTableID] = {
+							star = star,
+							group = group,
+							needNum = num,
+							heroIcon = heroIcon,
+							partners = {},
+							mTableID = mTableID
+						}
+					else
+						material_detail[mTableID].needNum = (material_detail[mTableID].needNum or 0) + 1
+						material_detail[mTableID].tableID = material_detail[mTableID].tableID or mTableID
+						material_detail[mTableID].partners = {}
+						material_detail[mTableID].mTableID = mTableID
+					end
+
+					material_detail[mTableID].noClickSelected = true
+					material_detail[mTableID].notPlaySaoguang = true
 				end
 
-				local info = {
-					isSelected = false,
-					hostID = partners[key]:getPartnerID(),
-					hostTableID = partners[key]:getTableID(),
-					star5TableID = star5TableID,
-					material_detail = material_detail,
-					dragScrollView = self.scrollView,
-					confirmCallback = function (oriPartners, curPartners, mTableID)
-						for _, partnerID in pairs(oriPartners) do
-							self.selectedPartners[partnerID] = nil
-						end
+				material_detail[tableID].needNum = (material_detail[tableID].needNum or 0) + 1
 
-						for _, partnerID in pairs(curPartners) do
-							self.selectedPartners[partnerID] = true
-						end
+				table.insert(material_detail[tableID].partners, partners[key]:getPartnerID())
 
-						for _, m_info in pairs(self.infos[0]) do
-							if partners[key]:getPartnerID() == m_info.hostID then
-								m_info.material_detail[mTableID].partners = curPartners
-
-								break
-							end
-						end
-
-						for _, m_info in pairs(self.infos[partners[key]:getGroup()]) do
-							if partners[key]:getPartnerID() == m_info.hostID then
-								m_info.material_detail[mTableID].partners = curPartners
-
-								break
-							end
-						end
-
-						self:updateBenchPartners()
-					end,
-					selectCallback = function (flag)
-						for _, m_info in pairs(self.infos[0]) do
-							if partners[key]:getPartnerID() == m_info.hostID then
-								m_info.isSelected = flag
-
-								break
-							end
-						end
-
-						for _, m_info in pairs(self.infos[partners[key]:getGroup()]) do
-							if partners[key]:getPartnerID() == m_info.hostID then
-								m_info.isSelected = flag
-
-								break
-							end
-						end
-					end
+				local selectedPartners = {
+					[partners[key]:getPartnerID()] = true
 				}
-				local group = partners[key]:getGroup()
+				local isCanForge = true
+				local materialIds = {}
 
-				if not self.infos[0] then
-					self.infos[0] = {}
+				for i = 1, #material do
+					if #materialIds == 0 or materialIds[#materialIds] ~= material[i] then
+						materialIds[#materialIds + 1] = material[i]
+					end
 				end
 
-				if not self.infos[group] then
-					self.infos[group] = {}
+				for i = 1, #materialIds do
+					local mTableID = materialIds[i]
+
+					if material_detail[mTableID].tableID then
+						for keyid in pairs(partners) do
+							local curTableId = partners[keyid]:getTableID()
+							local sameListFlag = false
+							local tempHeroList = xyd.tables.partnerTable:getHeroList(curTableId)
+
+							if tempHeroList and #tempHeroList > 0 then
+								for i = 1, #tempHeroList do
+									if tonumber(curTableId) == tempHeroList[i] then
+										sameListFlag = true
+									end
+								end
+							end
+
+							local tempFlag = self.hostStar <= 4 or self.hostStar > 4 and self.helpCanChooseArr[curTableId]
+
+							if partners[keyid]:getTableID() == material_detail[mTableID].tableID and (tempFlag or sameListFlag) then
+								if not self.selectedPartners[partners[keyid]:getPartnerID()] and not selectedPartners[partners[keyid]:getPartnerID()] and not partners[keyid]:isLockFlag() then
+									selectedPartners[partners[keyid]:getPartnerID()] = true
+
+									table.insert(material_detail[mTableID].partners, partners[keyid]:getPartnerID())
+								end
+
+								if material_detail[mTableID].needNum <= #material_detail[mTableID].partners then
+									break
+								end
+							end
+						end
+
+						if material_detail[mTableID].needNum > #material_detail[mTableID].partners then
+							isCanForge = false
+
+							break
+						end
+					else
+						for keyid in pairs(partners) do
+							local curTableId = partners[keyid]:getTableID()
+							local sameListFlag = false
+							local tempFlag = self.hostStar <= 4 or self.hostStar > 4 and not xyd.tables.partnerTable:checkPuppetPartner(partners[keyid]:getTableID()) and self.helpCanChooseArr[curTableId]
+
+							if partners[keyid]:getGroup() == material_detail[mTableID].group and partners[keyid]:getStar() == material_detail[mTableID].star and (tempFlag or sameListFlag) then
+								if not self.selectedPartners[partners[keyid]:getPartnerID()] and not selectedPartners[partners[keyid]:getPartnerID()] and not partners[keyid]:isLockFlag() then
+									selectedPartners[partners[keyid]:getPartnerID()] = true
+
+									table.insert(material_detail[mTableID].partners, partners[keyid]:getPartnerID())
+								end
+
+								if material_detail[mTableID].needNum <= #material_detail[mTableID].partners then
+									break
+								end
+							end
+						end
+
+						if material_detail[mTableID].needNum > #material_detail[mTableID].partners then
+							isCanForge = false
+
+							break
+						end
+					end
 				end
 
-				table.insert(self.infos[0], info)
-				table.insert(self.infos[group], info)
+				if isCanForge then
+					self.selectedPartners[partners[key]:getPartnerID()] = true
+
+					for keyid in pairs(selectedPartners) do
+						self.selectedPartners[keyid] = true
+					end
+
+					local info = {
+						isSelected = false,
+						hostID = partners[key]:getPartnerID(),
+						hostTableID = partners[key]:getTableID(),
+						destTableID = destTableID,
+						material_detail = material_detail,
+						dragScrollView = self.scrollView,
+						confirmCallback = function (oriPartners, curPartners, mTableID)
+							for _, partnerID in pairs(oriPartners) do
+								self.selectedPartners[partnerID] = nil
+							end
+
+							for _, partnerID in pairs(curPartners) do
+								self.selectedPartners[partnerID] = true
+							end
+
+							for _, m_info in pairs(self.infos[0]) do
+								if partners[key]:getPartnerID() == m_info.hostID then
+									m_info.material_detail[mTableID].partners = curPartners
+
+									break
+								end
+							end
+
+							for _, m_info in pairs(self.infos[partners[key]:getGroup()]) do
+								if partners[key]:getPartnerID() == m_info.hostID then
+									m_info.material_detail[mTableID].partners = curPartners
+
+									break
+								end
+							end
+
+							self:updateBenchPartners()
+						end,
+						selectCallback = function (flag)
+							for _, m_info in pairs(self.infos[0]) do
+								if partners[key]:getPartnerID() == m_info.hostID then
+									m_info.isSelected = flag
+
+									break
+								end
+							end
+
+							for _, m_info in pairs(self.infos[partners[key]:getGroup()]) do
+								if partners[key]:getPartnerID() == m_info.hostID then
+									m_info.isSelected = flag
+
+									break
+								end
+							end
+						end
+					}
+					local group = partners[key]:getGroup()
+
+					if not self.infos[0] then
+						self.infos[0] = {}
+					end
+
+					if not self.infos[group] then
+						self.infos[group] = {}
+					end
+
+					table.insert(self.infos[0], info)
+					table.insert(self.infos[group], info)
+				end
 			end
 		end
 	end
@@ -253,12 +316,16 @@ function BatchShenXueWindow:updateScroller()
 		self.groupNone:SetActive(false)
 		self.scrollView:SetActive(true)
 
-		local infos = self.infos[self.filterIndex]
+		local infos = {}
+
+		for i = #self.infos[self.filterIndex], 1, -1 do
+			table.insert(infos, self.infos[self.filterIndex][i])
+		end
 
 		for i = 1, #infos do
 			if not self.items[i] then
 				local tmp = NGUITools.AddChild(self.groupItem.gameObject, self.item.gameObject)
-				local item = BatchShenXueWindowItem.new(tmp)
+				local item = BatchShenXueWindowItem.new(tmp, self)
 
 				item:setInfo(infos[i])
 
@@ -346,8 +413,8 @@ function BatchShenXueWindow:onClickBatchShenXue()
 				local materialList = {}
 				local hostPartner = xyd.models.slot:getPartner(info.hostID)
 				local hostTableID = hostPartner:getTableID()
-				local star5TableID = xyd.tables.partnerTable:getShenxueTableId(hostTableID)
-				local material = xyd.split(xyd.tables.partnerTable:getMaterial(star5TableID), "|", true)
+				local destTableID = xyd.tables.partnerTable:getShenxueTableId(hostTableID)
+				local material = xyd.split(xyd.tables.partnerTable:getMaterial(destTableID), "|", true)
 				local materialPlace = {}
 
 				table.insert(materialPlace, hostTableID)
@@ -356,30 +423,29 @@ function BatchShenXueWindow:onClickBatchShenXue()
 					table.insert(materialPlace, material[i])
 				end
 
+				local partners = {}
+
 				for mTableID, m_detail in pairs(info.material_detail) do
 					for i = 1, #m_detail.partners do
-						local partner = xyd.models.slot:getPartner(m_detail.partners[i])
-						local tableID = partner:getTableID()
-
-						for j = 1, #materialPlace do
-							if materialPlace[j] % 1000 ~= 999 and materialPlace[j] == tableID then
-								materialList[j] = m_detail.partners[i]
-								materialPlace[j] = 1
-
-								break
-							end
-
-							if materialPlace[j] % 1000 == 999 and materialPlace[j] - materialPlace[j] % 1000 == tableID - tableID % 1000 then
-								materialList[j] = m_detail.partners[i]
-								materialPlace[j] = 1
-
-								break
-							end
-						end
+						table.insert(partners, xyd.models.slot:getPartner(m_detail.partners[i]))
 					end
 				end
 
-				msg.table_id = info.star5TableID
+				local helpArr = {}
+
+				for i = 1, #materialPlace do
+					local tableID = materialPlace[i]
+
+					if not helpArr[tableID] then
+						helpArr[tableID] = 1
+					end
+
+					table.insert(materialList, info.material_detail[tableID].partners[helpArr[tableID]])
+
+					helpArr[tableID] = helpArr[tableID] + 1
+				end
+
+				msg.table_id = info.destTableID
 
 				for i = 1, #materialList do
 					table.insert(msg.material_ids, materialList[i])
@@ -465,6 +531,8 @@ function BatchShenXueWindow:getUIComponent()
 	local groupAction = winTrans:NodeByName("groupAction").gameObject
 	self.labelTitle = groupAction:ComponentByName("labelTitle", typeof(UILabel))
 	self.closeBtn = groupAction:NodeByName("closeBtn").gameObject
+	self.materialBtn = groupAction:NodeByName("materialBtn").gameObject
+	self.redPointImg = self.materialBtn:ComponentByName("redPointImg", typeof(UISprite))
 	self.scrollView = groupAction:ComponentByName("scroller", typeof(UIScrollView))
 	self.groupItem = self.scrollView:NodeByName("groupItem").gameObject
 	self.grid = self.scrollView:ComponentByName("groupItem", typeof(UIGrid))
@@ -488,7 +556,7 @@ function BatchShenXueWindow:getUIComponent()
 end
 
 function BatchShenXueWindow:initUIComponent()
-	self.labelTitle.text = __("QUICK_STARS_TEXT02")
+	self.labelTitle.text = __("SHENXUE_TEXT02", self.hostStar + 1)
 	self.batchShenXueBtnLabel.text = __("QUICK_STARS_TEXT03")
 	self.labelNoneTips.text = __("QUICK_STARS_TEXT04")
 	self.loadingText.text = __("QUICK_STARS_TEXT05")
@@ -509,6 +577,19 @@ function BatchShenXueWindow:initUIComponent()
 	end)
 
 	self.effect = effect
+
+	self.materialBtn:SetActive(self.hostStar > 4)
+
+	if self.hostStar <= 4 then
+		self.allSelectBtn:X(-150)
+		self.batchShenXueBtn:X(150)
+	elseif not xyd.db.misc:getValue("shenxue_first_set_material") then
+		self.redPointImg:SetActive(true)
+		xyd.db.misc:setValue({
+			value = 1,
+			key = "shenxue_first_set_material"
+		})
+	end
 end
 
 function BatchShenXueWindow:updateSelectAllBtn()
@@ -521,6 +602,58 @@ function BatchShenXueWindow:updateSelectAllBtn()
 
 		xyd.setBgColorType(self.allSelectBtn, xyd.ButtonBgColorType.white_btn_60_60)
 	end
+end
+
+function BatchShenXueWindow:onClickMaterialBtn()
+	local materialPartnerRecordTableIDs = xyd.models.shenxue:getMaterialPartnerRecordTableIDs()
+	local helpArr = {}
+
+	for i = 1, #materialPartnerRecordTableIDs do
+		helpArr[materialPartnerRecordTableIDs[i]] = 1
+	end
+
+	local ids = xyd.models.shenxue:getAllFiveStarPartnerTableIDs()
+	local benchPartners = {}
+	local selectedPartners = {}
+
+	for i = 1, #ids do
+		local partner = Partner.new()
+
+		partner:populate({
+			star = 5,
+			tableID = ids[i],
+			partnerID = ids[i]
+		})
+		table.insert(benchPartners, partner)
+
+		if helpArr[ids[i]] then
+			table.insert(selectedPartners, ids[i])
+		end
+	end
+
+	local params = {
+		isShowLovePoint = false,
+		benchPartners = benchPartners,
+		partners = selectedPartners,
+		confirmCallback = function ()
+			local win = xyd.WindowManager:get():getWindow("choose_partner_with_filter_window")
+			local selectPartnerIDs = win:getSelected() or {}
+
+			xyd.models.shenxue:setMaterialPartnerRecordTableIDs(selectPartnerIDs)
+			xyd.openWindow("batch_shen_xue_window", {
+				hostStar = self.hostStar
+			})
+
+			local win = xyd.WindowManager:get():getWindow("shenxue_window")
+
+			if win then
+				win:updateMaterialPartnerhelpArr()
+			end
+		end
+	}
+
+	xyd.openWindow("choose_partner_with_filter_window", params)
+	self:close()
 end
 
 function BatchShenXueWindow:onClickSelectAllBtn()
@@ -557,6 +690,10 @@ function BatchShenXueWindow:register()
 		self:onClickSelectAllBtn()
 	end
 
+	UIEventListener.Get(self.materialBtn).onClick = function ()
+		self:onClickMaterialBtn()
+	end
+
 	self.eventProxy_:addEventListener(xyd.event.COMPOSE_PARTNER, self.onComposePartner, self)
 end
 
@@ -575,8 +712,9 @@ function BatchShenXueWindow:hideEffect(callback)
 	action:AppendCallback(callback)
 end
 
-function BatchShenXueWindowItem:ctor(go)
+function BatchShenXueWindowItem:ctor(go, parent)
 	self.go = go
+	self.parent = parent
 	self.icons = {}
 	self.groupIcons = {}
 
@@ -598,7 +736,7 @@ end
 
 function BatchShenXueWindowItem:setInfo(data)
 	self.data = data
-	self.star5TableID = self.data.star5TableID
+	self.destTableID = self.data.destTableID
 	self.material_detail = {}
 	self.isSelected = self.data.isSelected
 
@@ -651,6 +789,20 @@ function BatchShenXueWindowItem:setInfo(data)
 
 		function m_detail.callback()
 			local params = m_detail
+
+			table.sort(params.benchPartners, function (a, b)
+				local selectA = self.parent.selectedPartners[a:getPartnerID()]
+				local selectB = self.parent.selectedPartners[b:getPartnerID()]
+
+				if selectA ~= selectB then
+					return selectA == true
+				elseif a:getTableID() == b:getTableID() then
+					return a:getPartnerID() < b:getPartnerID()
+				else
+					return a:getTableID() < b:getTableID()
+				end
+			end)
+
 			params.mTableID = key
 			params.this_icon = icon
 			params.this_label = label
@@ -744,7 +896,7 @@ function BatchShenXueWindowItem:setInfo(data)
 
 	partnerAfter:setInfo({
 		noClick = true,
-		tableID = self.star5TableID
+		tableID = self.destTableID
 	})
 	partnerAfter:setScale(0.8703703703703703)
 	self.selectImg:SetActive(self.isSelected)

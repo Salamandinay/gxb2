@@ -725,13 +725,8 @@ function ShrineHurdleModel:onEndHurdle()
 	local historyscore = self.historyScores_[self.route_id_]
 
 	if not historyscore or historyscore < self.score_ then
+		self.overChallengeDiff[self.route_id_] = self.diff_id_
 		self.historyScores_[self.route_id_] = self.score_
-
-		if self.overChallengeDiff[self.route_id_] and self.overChallengeDiff[self.route_id_] < self.diff_id_ then
-			self.overChallengeDiff[self.route_id_] = self.diff_id_
-		elseif not self.overChallengeDiff[self.route_id_] then
-			self.overChallengeDiff[self.route_id_] = self.diff_id_
-		end
 	end
 
 	if not self.diff_ids then

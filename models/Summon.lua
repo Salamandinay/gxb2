@@ -191,6 +191,8 @@ function Summon:updateDressData(event)
 			xyd.alertItems(params, nil, __("SUMMON"))
 		end
 	end
+
+	xyd.models.dress:checkAllItemCanUpEveryDay()
 end
 
 function Summon:onGetStarrySummonInfo(event)

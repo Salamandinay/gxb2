@@ -11,6 +11,7 @@ function HeroAttr:ctor()
 	self.appointmentTable = xyd.tables.datesTable
 	self.skillResonateEffectTable = xyd.tables.skillResonateEffectTable
 	self.starOriginListTable = xyd.tables.starOriginListTable
+	self.collectionSkinEffectTable = xyd.tables.collectionSkinEffectTable
 	self.starOriginTable = xyd.tables.starOriginTable
 	self.isPercent = nil
 
@@ -98,6 +99,29 @@ function HeroAttr:attr(hero, params)
 	end
 
 	calStarOrigin()
+
+	local skinEffects = {}
+	local skinLev = 0
+
+	if hero:getSkinID() > 0 then
+		if hero.isReportHero then
+			skinLev = hero.skinBonus or 0
+		else
+			skinLev = xyd.models.collection:getSkinCollectionLevel()
+		end
+	end
+
+	local function calSkinEffect()
+		if not params.isHeroBook and skinLev and skinLev > 0 then
+			local effects = self:getSkinEffect(hero, skinLev)
+
+			for k, v in pairs(effects) do
+				skinEffects[k] = tonumber(v)
+			end
+		end
+	end
+
+	calSkinEffect()
 
 	local extra = {}
 	local isPercent = self.isPercent
@@ -237,6 +261,10 @@ function HeroAttr:attr(hero, params)
 
 				n = n + starOrigin[nameP]
 			end
+		end
+
+		if skinEffects and skinEffects[name] then
+			n = n + skinEffects[name]
 		end
 
 		return n
@@ -551,7 +579,7 @@ function HeroAttr:getChimeAttr(hero, chimeInfo)
 		if v.lev and v.lev >= 0 then
 			local baseArrs = chimeTable:getBase(v.chime_id)
 			local buffP = {}
-			local heroGroupP = 1
+			local heroGroupP = 0
 
 			for _, arr in ipairs(v.buffs) do
 				if arr and arr == 1 then
@@ -590,7 +618,7 @@ function HeroAttr:getChimeAttr(hero, chimeInfo)
 					pValue = buffP[arr[1] .. "P"] + 1
 				end
 
-				result[arr[1]] = result[arr[1]] + math.floor((arr[2] * (v.lev + 1) + arr[3] * v.lev * (v.lev + 1) / 2 + arr[2] * math.floor(v.lev / 10)) * pValue * heroGroupP)
+				result[arr[1]] = result[arr[1]] + math.floor((arr[2] * (v.lev + 1) + arr[3] * v.lev * (v.lev + 1) / 2 + arr[2] * math.floor(v.lev / 10)) * pValue) + math.floor((arr[2] * (v.lev + 1) + arr[3] * v.lev * (v.lev + 1) / 2 + arr[2] * math.floor(v.lev / 10)) * pValue * heroGroupP)
 			end
 		end
 	end
@@ -632,6 +660,27 @@ function HeroAttr:getStarOrigin(hero, fullStarOrigin)
 				result[arr[1]] = result[arr[1]] + arr[2]
 			end
 		end
+	end
+
+	return result
+end
+
+function HeroAttr:getSkinEffect(hero, lev)
+	local result = {}
+	local tableID = hero:getTableID()
+
+	if hero:isMonster() then
+		return result
+	end
+
+	local baseArrs = self.collectionSkinEffectTable:getEffect(lev)
+
+	for _, arr in ipairs(baseArrs) do
+		if not result[arr[1]] then
+			result[arr[1]] = 0
+		end
+
+		result[arr[1]] = result[arr[1]] + arr[2]
 	end
 
 	return result

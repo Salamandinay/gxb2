@@ -20,11 +20,21 @@ end
 
 function ActivityLostSpaceGiftBag:resizeToParent()
 	ActivityLostSpaceGiftBag.super.resizeToParent(self)
+	self:resizePosY(self.imgText.gameObject, 80, -8)
+	self:resizePosY(self.imgBg2, -488, -558)
+	self:resizePosY(self.mainGroup, -725, -795)
+	self:resizePosY(self.imgBg3_, -297, -368)
 end
 
 function ActivityLostSpaceGiftBag:getUIComponent()
 	local go = self.go
+	self.imgBg2 = go:NodeByName("imgBg2_").gameObject
+	self.imgBg3_ = go:NodeByName("imgBg3_").gameObject
 	self.imgText = go:ComponentByName("imgText_", typeof(UISprite))
+	self.giftbagIcon = go:NodeByName("imgBg3_/giftbagIcon").gameObject
+	self.effectRoot_ = self.giftbagIcon:NodeByName("effectRoot").gameObject
+	self.tipsLabel_ = go:ComponentByName("imgBg3_/giftLabel", typeof(UILabel))
+	self.labelTips_ = go:ComponentByName("imgBg3_/labelTips", typeof(UILabel))
 	self.mainGroup = go:NodeByName("contentGroup").gameObject
 	self.buyBtn = self.mainGroup:NodeByName("buyBtn").gameObject
 	self.buyBtnLabel = self.buyBtn:ComponentByName("button_label", typeof(UILabel))
@@ -45,12 +55,20 @@ function ActivityLostSpaceGiftBag:updateState()
 	local buyTimes = self.activityData.detail.charges[1].buy_times
 	local leftTimes = xyd.tables.giftBagTable:getBuyLimit(giftbagID) - buyTimes
 	self.limitLabel.text = __("BUY_GIFTBAG_LIMIT", leftTimes)
+	self.tipsLabel_.text = __("ACTIVITY_LOST_SPACE_TEXT07")
+	self.labelTips_.text = __("ACTIVITY_LOST_SPACE_TEXT06")
 
 	if leftTimes > 0 then
 		xyd.setEnabled(self.buyBtn, true)
 	else
 		xyd.setEnabled(self.buyBtn, false)
 	end
+
+	self.effect = xyd.Spine.new(self.effectRoot_)
+
+	self.effect:setInfo("fx_act_icon_2", function ()
+		self.effect:play("texiao01", 0, 1)
+	end)
 end
 
 function ActivityLostSpaceGiftBag:setIcon()
@@ -96,6 +114,12 @@ function ActivityLostSpaceGiftBag:onRegister()
 	end
 
 	self:registerEvent(xyd.event.RECHARGE, handler(self, self.onRecharge))
+
+	UIEventListener.Get(self.giftbagIcon).onClick = function ()
+		xyd.WindowManager.get():openWindow("activity_lost_space_award_new_window", {
+			activityID = xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG
+		})
+	end
 end
 
 function ActivityLostSpaceGiftBag:onRecharge(evt)

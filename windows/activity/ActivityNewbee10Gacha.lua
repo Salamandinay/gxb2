@@ -52,7 +52,12 @@ function ActivityNewbee10Gacha:updatePos()
 	end
 
 	self.tipsImg_.transform:Y(-637 - (p_height - 869) * 121 / 178)
-	self.bgImg2_.transform:Y(-394 - (p_height - 869) * 43 / 178)
+	self:resizePosY(self.bgImg_, 62, 0)
+	self:resizePosY(self.bgImg2_, -560, -740)
+	self:resizePosY(self.preViewGroup1, -450, -512)
+	self:resizePosY(self.preViewGroup2, -280, -342)
+	self:resizePosY(self.preViewGroup3, -355, -417)
+	self:resizePosY(self.preViewGroup4, -605, -667)
 end
 
 function ActivityNewbee10Gacha:getUIComponent()
@@ -63,9 +68,11 @@ function ActivityNewbee10Gacha:getUIComponent()
 	self.timeLabel_ = goTrans:ComponentByName("timeGroup/timeLabel", typeof(UILabel))
 	self.endLabel_ = goTrans:ComponentByName("timeGroup/endLabel", typeof(UILabel))
 	self.bgImg2_ = goTrans:NodeByName("bgImg2")
+	self.bgImg_ = goTrans:NodeByName("e:image")
 	self.labelVipExp_ = goTrans:ComponentByName("bottomGroup/labelVipExp", typeof(UILabel))
 
 	for i = 1, 4 do
+		self["preViewGroup" .. i] = goTrans:NodeByName("previewGroup/preViewGroup" .. i).gameObject
 		self["preViewBtn" .. i] = goTrans:NodeByName("previewGroup/preViewGroup" .. i .. "/preViewBtn").gameObject
 		self["prePartnerName" .. i] = goTrans:ComponentByName("previewGroup/preViewGroup" .. i .. "/labelName", typeof(UILabel))
 	end

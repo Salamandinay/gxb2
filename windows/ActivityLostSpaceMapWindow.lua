@@ -4,7 +4,7 @@ local MapGridItem = class("MapGridItem", import("app.components.CopyComponent"))
 local json = require("cjson")
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
 local rewardItem = class("rewardItem", require("app.components.CopyComponent"))
-PLACE_STATE = {
+local PLACE_STATE = {
 	EMPTY = 0,
 	COMMON = 2,
 	AWARD = 3,
@@ -82,6 +82,10 @@ function ActivityLostSpaceMapWindow:getUIComponent()
 	self.wrapContent = FixedWrapContent.new(self.awardScrollerUIScrollView, self.itemGroupAllUIWrapContent, self.scrollerItem, rewardItem, self)
 	self.leftArrow = self.scrollerCon:NodeByName("leftArrow").gameObject
 	self.rightArrow = self.scrollerCon:NodeByName("rightArrow").gameObject
+	self.newAwardBtn = self.upCon:NodeByName("newAwardBtn").gameObject
+	self.newAwardBtnUISprite = self.upCon:ComponentByName("newAwardBtn", typeof(UISprite))
+	self.newAwardBtnLabel = self.newAwardBtn:ComponentByName("newAwardBtnLabel", typeof(UILabel))
+	self.newAwardBtnUpIcon = self.newAwardBtn:NodeByName("newAwardBtnUpIcon").gameObject
 	self.skillAllMask = self.groupAction:NodeByName("skillAllMask").gameObject
 end
 
@@ -244,6 +248,11 @@ function ActivityLostSpaceMapWindow:registerEvent()
 
 		self:updateAutoClickDoorShow()
 	end)
+	UIEventListener.Get(self.newAwardBtn.gameObject).onClick = handler(self, function ()
+		xyd.WindowManager.get():openWindow("activity_lost_space_award_new_window", {
+			activityID = xyd.ActivityID.ACTIVITY_LOST_SPACE
+		})
+	end)
 end
 
 function ActivityLostSpaceMapWindow:getSkillEnergy(skillId)
@@ -325,6 +334,21 @@ function ActivityLostSpaceMapWindow:layout()
 
 	self:updateAutoBtnShow()
 	self:updateAutoClickDoorShow()
+
+	if xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG):checkBuy() then
+		xyd.setUISpriteAsync(self.newAwardBtnUISprite, nil, "activity_lost_space_icon_djb2x90")
+
+		self.newAwardBtnLabel.text = __("ACTIVITY_LOST_SPACE_TEXT08")
+
+		self.newAwardBtnUpIcon.gameObject:SetActive(false)
+	else
+		xyd.setUISpriteAsync(self.newAwardBtnUISprite, nil, "activity_lost_space_icon_djbx90_2")
+
+		self.newAwardBtnLabel.text = __("ACTIVITY_LOST_SPACE_TEXT09")
+
+		self.newAwardBtnUpIcon.gameObject:SetActive(true)
+	end
+
 	xyd.setUITextureByNameAsync(self.Bg_, "activity_lost_space_bg_banner")
 	self:initTop()
 
@@ -1108,6 +1132,8 @@ function MapGridItem:updateState(state)
 		self.awardImg.gameObject:Y(0)
 	end
 
+	self.cardItemUp.gameObject:Y(12)
+
 	if state == PLACE_STATE.EMPTY or state == PLACE_STATE.AWARD or state == PLACE_STATE.EVENT then
 		self.cardItemBgBoxCollider.center = Vector3(0, 8, 0)
 
@@ -1196,6 +1222,7 @@ function MapGridItem:updateStateSecondFloorGrid(state)
 	xyd.setUISpriteAsync(self.cardItemBg, nil, "activity_lost_space_gz_pt", nil, , true)
 
 	if state == PLACE_STATE.GREY then
+		self.cardItemUp.gameObject:Y(11)
 		xyd.setUISpriteAsync(self.cardItemUp, nil, "activity_lost_space_gz_yc", nil, , true)
 
 		if self.parent.activityData:getMapArr()[self.gridId] == xyd.ActivityLostSpaceGridState.KNOW_POS then
@@ -1218,10 +1245,16 @@ function MapGridItem:updateStateSecondFloorGrid(state)
 
 				if eventId == xyd.ActivityLostSpaceEventType.EXIT then
 					xyd.setUISpriteAsync(self.cardItemUp, nil, "activity_lost_space_gz_xyg", nil, , true)
+					xyd.setUISpriteAsync(self.cardItemBg, nil, "activity_lost_space_gz_dian", nil, , true)
+					self.cardItemUp.gameObject:Y(19)
 				elseif eventId == xyd.ActivityLostSpaceEventType.TREASURE_ENTER then
 					xyd.setUISpriteAsync(self.cardItemUp, nil, "activity_lost_space_gz_bjd", nil, , true)
+					xyd.setUISpriteAsync(self.cardItemBg, nil, "activity_lost_space_gz_dian", nil, , true)
+					self.cardItemUp.gameObject:Y(19)
 				elseif eventId == xyd.ActivityLostSpaceEventType.TREASURE_PART then
 					xyd.setUISpriteAsync(self.cardItemUp, nil, "activity_lost_space_gz_bjzb", nil, , true)
+					xyd.setUISpriteAsync(self.cardItemBg, nil, "activity_lost_space_gz_dian", nil, , true)
+					self.cardItemUp.gameObject:Y(19)
 				end
 			end
 		end

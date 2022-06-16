@@ -2364,8 +2364,11 @@ function MainWindow:initRedMark()
 		xyd.RedMarkType.COFFEE_SHOP,
 		xyd.RedMarkType.SKIN_SHOP,
 		xyd.RedMarkType.ARENA_SHOP,
-		xyd.RedMarkType.HOUSE
+		xyd.RedMarkType.HOUSE,
+		xyd.RedMarkType.DRESS_ITEM_CAN_UP,
+		xyd.RedMarkType.SKIN_LEVEL_CAN_UP
 	}, self.redPointSchool)
+	xyd.models.dress:checkAllItemCanUpEveryDay()
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.TRIAL,
 		xyd.RedMarkType.DUNGEON,

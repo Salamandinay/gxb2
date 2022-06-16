@@ -50,6 +50,7 @@ local jobGiftBoxID = {
 local ItemTips = class("ItemTips", import("app.components.BaseComponent"))
 
 function ItemTips:ctor(parentGO, params, windowDepth)
+	self.params = params
 	self.itemID = params.itemID or 0
 	self.type_ = ItemTable:getType(self.itemID)
 	self.data = params
@@ -276,6 +277,14 @@ function ItemTips:getUIComponent()
 	self.btnDesc_ = go:NodeByName("groupMain_/btnDesc").gameObject
 	self.btnArtifactUp_ = go:NodeByName("groupMain_/btnArtifactUp")
 	self.resetBtn = self.groupMain_.gameObject:NodeByName("resetBtn")
+
+	if self.wndType_ == xyd.ItemTipsWndType.DRESS_COLLECTION then
+		self.btnDressSuit_ = go:NodeByName("groupMain_/btnDressSuit_").gameObject
+		self.groupColletion = self.groupMain_:NodeByName("groupColletion").gameObject
+		self.gotImg = self.groupColletion:ComponentByName("gotImg", typeof(UISprite))
+		self.resItem = self.groupColletion:NodeByName("resItem").gameObject
+		self.labelResNum = self.resItem:ComponentByName("labelResNum", typeof(UILabel))
+	end
 end
 
 function ItemTips:initUIComponent()
@@ -382,6 +391,25 @@ function ItemTips:initUIComponent()
 
 	if self.data.showGetWays then
 		self:showWaysNoAction()
+	end
+
+	if self.wndType_ == xyd.ItemTipsWndType.DRESS_COLLECTION then
+		self:showCollectionGroup()
+
+		UIEventListener.Get(self.btnDressSuit_.gameObject).onClick = handler(self, function ()
+			local office_id = xyd.tables.senpaiDressItemTable:getGroup(self.itemID)
+
+			xyd.WindowManager.get():openWindow("dress_check_office_window", {
+				showALL = true,
+				office_id = office_id,
+				closeCallBack = function ()
+					xyd.WindowManager.get():openWindow("item_tips_window", self.params)
+				end
+			})
+			xyd.closeWindow("item_tips_window")
+		end)
+
+		self.btnDressSuit_:SetActive(true)
 	end
 end
 
@@ -1663,7 +1691,11 @@ function ItemTips:skinDetailTouch()
 	local params = {
 		skin_id = self.itemID,
 		closeCallBack = function ()
-			xyd.WindowManager.get():closeWindow("collection_skin_window")
+			local win = xyd.WindowManager.get():getWindow("collection_skin_window")
+
+			if not win:getFromSchoolChoose() then
+				xyd.WindowManager.get():closeWindow("collection_skin_window")
+			end
 		end
 	}
 	local win = xyd.WindowManager.get():getWindow("item_tips_window")
@@ -2296,6 +2328,35 @@ function ItemTips:openDropProbabilityWindow(params)
 	else
 		xyd.openWindow("drop_probability_window", params)
 	end
+end
+
+function ItemTips:showCollectionGroup()
+	self.groupColletion:SetActive(true)
+
+	local collectionid = xyd.tables.itemTable:getCollectionId(self.itemID)
+	local gotStr = "collection_got_" .. tostring(xyd.Global.lang)
+	local noGotStr = "collection_no_get_" .. tostring(xyd.Global.lang)
+	self.labelResNum.text = xyd.tables.collectionTable:getCoin(collectionid)
+	local isGot = false
+	local str = noGotStr
+
+	if xyd.models.collection:isGot(collectionid) then
+		isGot = true
+		str = gotStr
+	end
+
+	xyd.setUISpriteAsync(self.gotImg, nil, str)
+
+	self.groupMain_.height = self.groupMain_.height + 70
+
+	self.groupDesc_:Y(self.groupDesc_.gameObject.transform.localPosition.y - 70)
+	self.groupIcon_:Y(self.groupIcon_.gameObject.transform.localPosition.y - 70)
+
+	local top_left = self.groupMain_:NodeByName("top_left").gameObject
+
+	self:waitForFrame(1, function ()
+		top_left:Y(top_left.gameObject.transform.localPosition.y - 70)
+	end)
 end
 
 return ItemTips

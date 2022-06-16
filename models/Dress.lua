@@ -703,6 +703,7 @@ function Dress:dressUpgradeDressBack(event)
 	end
 
 	self:updateBuff2Attr()
+	self:checkAllItemCanUpEveryDay()
 end
 
 function Dress:getThreeMaxValue()
@@ -1134,7 +1135,7 @@ function Dress:updateSkillsActiveVlue(isOnlyAdd, skill_id)
 	end
 end
 
-function Dress:getCommonQltFragmentArr(qlt, isNeedRemoveID)
+function Dress:getCommonQltFragmentArr(qlt, isNeedRemoveID, isNotSort)
 	local all_fragment = xyd.models.dress:getFragmentArr(tonumber(qlt))
 	local arr = {}
 
@@ -1164,13 +1165,15 @@ function Dress:getCommonQltFragmentArr(qlt, isNeedRemoveID)
 		end
 	end
 
-	table.sort(arr, function (a, b)
-		if a.is_can_use ~= b.is_can_use then
-			return b.is_can_use < a.is_can_use
-		else
-			return a.item_id < b.item_id
-		end
-	end)
+	if not isNotSort then
+		table.sort(arr, function (a, b)
+			if a.is_can_use ~= b.is_can_use then
+				return b.is_can_use < a.is_can_use
+			else
+				return a.item_id < b.item_id
+			end
+		end)
+	end
 
 	return arr
 end
@@ -1210,6 +1213,99 @@ function Dress:showCollideTips(callFun)
 	else
 		callFun()
 	end
+end
+
+function Dress:checkAllItemCanUpTodayClick()
+	if xyd.models.redMark:getRedState(xyd.RedMarkType.DRESS_ITEM_CAN_UP) then
+		xyd.db.misc:setValue({
+			key = "dress_item_can_up_red_today",
+			value = xyd.getServerTime()
+		})
+		xyd.models.redMark:setMark(xyd.RedMarkType.DRESS_ITEM_CAN_UP, false)
+	end
+end
+
+function Dress:checkAllItemCanUpEveryDay()
+	local localLastShowDay = xyd.db.misc:getValue("dress_item_can_up_red_today")
+
+	if not localLastShowDay or not xyd.isSameDay(tonumber(localLastShowDay), xyd.getServerTime(), true) then
+		if self:checkAllItemCanUp() then
+			xyd.models.redMark:setMark(xyd.RedMarkType.DRESS_ITEM_CAN_UP, true)
+		else
+			xyd.models.redMark:setMark(xyd.RedMarkType.DRESS_ITEM_CAN_UP, false)
+		end
+	end
+end
+
+function Dress:checkAllItemCanUp()
+	local items_arr = self:getDressItems()[0]
+
+	for i, info in pairs(items_arr) do
+		if self:checkItemCanUp(info.itemID) == true then
+			return true
+		end
+	end
+
+	return false
+end
+
+function Dress:checkItemCanUp(dressItemId)
+	local next_item_id = xyd.tables.senpaiDressItemTable:getNextId(dressItemId)
+
+	if not next_item_id or next_item_id == 0 then
+		return false
+	end
+
+	local cost_all_items = xyd.tables.senpaiDressItemTable:getUpgradeCost(dressItemId)
+	local general_cost_arr = {}
+	local fragment_cost_arr = {}
+
+	for i in pairs(cost_all_items) do
+		if xyd.tables.itemTable:getType(cost_all_items[i][1]) == xyd.ItemType.DRESS_FRAGMENT then
+			table.insert(fragment_cost_arr, cost_all_items[i])
+		else
+			table.insert(general_cost_arr, cost_all_items[i])
+		end
+	end
+
+	for i, info in pairs(general_cost_arr) do
+		if xyd.models.backpack:getItemNumByID(info[1]) < info[2] then
+			return false
+		end
+	end
+
+	for i, info in pairs(fragment_cost_arr) do
+		if xyd.models.backpack:getItemNumByID(info[1]) < info[2] then
+			return false
+		end
+	end
+
+	if #fragment_cost_arr > 0 then
+		local self_item_fragment_id = fragment_cost_arr[1][1]
+		local common_cost_arr = {}
+		local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
+
+		for i in pairs(cost_all_items_2) do
+			table.insert(common_cost_arr, cost_all_items_2[i])
+		end
+
+		for i, info in pairs(common_cost_arr) do
+			local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
+			local coutNum = 0
+
+			for k in pairs(arr) do
+				if arr[k].is_can_use == 1 then
+					coutNum = coutNum + arr[k].item_num
+				end
+			end
+
+			if coutNum < info[2] then
+				return false
+			end
+		end
+	end
+
+	return true
 end
 
 return Dress

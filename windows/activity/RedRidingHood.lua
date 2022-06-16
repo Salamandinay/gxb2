@@ -274,8 +274,10 @@ function RedRidingHoodItem:setInfo(data)
 			awards = xyd.tables.miscTable:split2Cost("activity_red_riding_hood_awards_1", "value", "|#")
 		elseif self.table_id == 317 then
 			awards = xyd.tables.miscTable:split2Cost("activity_red_riding_hood_awards_2", "value", "|#")
-		else
+		elseif self.table_id == 318 then
 			awards = xyd.tables.miscTable:split2Cost("activity_red_riding_hood_awards_3", "value", "|#")
+		elseif self.table_id == 443 then
+			awards = xyd.tables.miscTable:split2Cost("activity_red_riding_hood_awards_4", "value", "|#")
 		end
 
 		for i = 1, #awards do

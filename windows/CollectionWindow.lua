@@ -115,6 +115,8 @@ function CollectionWindow:layout()
 		self[tostring(keyName) .. "NodeLabel"].text = xyd.split(__("SEVEN_COLLECTION_TITLES"), "|")[i]
 	end
 
+	self.skinNodeLabel.text = __("SENPAI_DRESS")
+
 	for i = 1, #self.NODES_LIST do
 		local bar = self[tostring(self.NODES_LIST[i]) .. "NodeBar"]
 		local barText = self[tostring(self.NODES_LIST[i]) .. "Nodepersent"]
@@ -142,13 +144,25 @@ function CollectionWindow:updateBars()
 		local barText = self[tostring(self.NODES_LIST[i]) .. "Nodepersent"]
 		bar.value = xyd.models.collection:getPercentByType(i) / 100
 		barText.text = math.floor(xyd.models.collection:getPercentByType(i)) .. "%"
+
+		if i == 1 then
+			bar.value = xyd.models.collection:getPercentByType(9) / 100
+			barText.text = math.floor(xyd.models.collection:getPercentByType(9)) .. "%"
+		end
 	end
 end
 
 function CollectionWindow:updatePointList()
 	for i = 1, #self.NODES_LIST do
 		self["pointDes" .. tostring(i)].text = xyd.split(__("SEVEN_COLLECTION_TITLES"), "|")[i]
-		local ids = xyd.models.collection:getIdsByType(i)
+		local ids = nil
+
+		if i == 1 then
+			ids = xyd.models.collection:getIdsByType(9)
+		else
+			ids = xyd.models.collection:getIdsByType(i)
+		end
+
 		local pointNum = 0
 
 		if ids then
@@ -159,6 +173,8 @@ function CollectionWindow:updatePointList()
 
 		self["point" .. tostring(i)].text = pointNum
 	end
+
+	self.pointDes1.text = __("SENPAI_DRESS")
 end
 
 function CollectionWindow:registerEvent()
@@ -211,7 +227,7 @@ function CollectionWindow:registerEvent()
 					isCollection = true
 				}, xyd.FunctionID.BACKGROUND)
 			elseif i == xyd.CollectionType.SKIN then
-				xyd.WindowManager.get():openWindow("collection_skin_window")
+				xyd.WindowManager.get():openWindow("dress_collection_window")
 			elseif i == xyd.CollectionType.FACE then
 				xyd.WindowManager.get():openWindow("collection_face_window")
 			elseif i == xyd.CollectionType.FURNITURE then

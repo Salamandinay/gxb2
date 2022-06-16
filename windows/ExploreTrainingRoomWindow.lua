@@ -549,6 +549,7 @@ function ExploreTrainingRoomWindow:initPartnerList()
 			scale = 0.83,
 			gap = 20,
 			callback = function (group)
+				self:setPartner()
 				self:onSelectGroup(group)
 			end,
 			width = self.fGroup:GetComponent(typeof(UIWidget)).width
@@ -605,7 +606,7 @@ function ExploreTrainingRoomWindow:getPartnerList(group)
 				partnerInfo.slotIndex = sIndex
 				partnerInfo.dragScrollView = self.partnerScrollView
 
-				if not xyd.GuideController.get():isPlayGuide() and group == 0 then
+				if not xyd.GuideController.get():isPlayGuide() and (partnerInfo.group == group or group == 0) then
 					table.insert(list, partnerInfo)
 				end
 			end

@@ -59,6 +59,7 @@ function ShenXueSelectWindow:ctor(name, params)
 	self.hideDetailBtn = params.hideDetail
 	self.id_ = params.id
 	self.mTableID_ = params.mTableID
+	self.showBtnDebris = params.showBtnDebris
 
 	self:sortOptionallist()
 
@@ -122,7 +123,7 @@ function ShenXueSelectWindow:initDebrisBtn()
 		star = 10
 	end
 
-	if star > 5 then
+	if star > 5 and not self.showBtnDebris then
 		showBtnDebris = false
 	end
 
@@ -478,13 +479,45 @@ end
 function ShenXueSelectWindow:checkHasDebris()
 	local debrisDatas = xyd.models.backpack:getCanComposeDebris()
 	local itemList = {}
+	local star9HelpArr = {
+		[940044.0] = 1,
+		[940045.0] = 1,
+		[940046.0] = 1,
+		[940043.0] = 1,
+		[940041.0] = 1,
+		[940042.0] = 1
+	}
 
 	if tonumber(self.mTableID_) % 1000 == 999 then
 		local group = math.floor(tonumber(self.mTableID_) % 10000 / 1000)
 		local star = math.floor(tonumber(self.mTableID_) / 10000)
+		local is9Star = false
 
-		if debrisDatas and debrisDatas[group] and debrisDatas[group][star] then
-			itemList = debrisDatas[group][star]
+		if star == 9 then
+			star = 6
+			is9Star = true
+		end
+
+		if group == 9 then
+			for i = 1, xyd.GROUP_NUM do
+				if debrisDatas and debrisDatas[i] and debrisDatas[i][star] then
+					for key, value in pairs(debrisDatas[i][star]) do
+						if is9Star and star9HelpArr[value.itemID] then
+							table.insert(itemList, value)
+						elseif not is9Star and not star9HelpArr[value.itemID] then
+							table.insert(itemList, value)
+						end
+					end
+				end
+			end
+		elseif debrisDatas and debrisDatas[group] and debrisDatas[group][star] then
+			for key, value in pairs(debrisDatas[group][star]) do
+				if is9Star and star9HelpArr[value.itemID] then
+					table.insert(itemList, value)
+				elseif not is9Star and not star9HelpArr[value.itemID] then
+					table.insert(itemList, value)
+				end
+			end
 		end
 	else
 		local itemID = xyd.tables.partnerTable:getPartnerShard(self.mTableID_)

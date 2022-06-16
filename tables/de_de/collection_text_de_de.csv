@@ -224,14 +224,14 @@ id,name,desc
 32009,Pool Party,"Limitierte Events, Arena-Shop"
 32010,Konzertauftritt,"Limitierte Events, Arena-Shop"
 32011,Erfahrener Wissenschaftler,"Limitierte Events, Arena-Shop"
-32012,Ultimative Arena Besten 64,Werde Besten 64 in der Ultimativen Arena
-32013,Ultimative Arena Besten 8,Werde Besten 8 in der Ultimativen Arena
-32014,Ultimative Arena Besten 4,Werde Besten 4 in der Ultimativen Arena
-32015,Ultimative Arena Champion,Werde 1 Mal der Champion der Ultimativen Arena
-32016,Ultimative Arena Champion,Werde 2 Mal der Champion der Ultimativen Arena
-32017,Ultimative Arena Champion,Werde 3 Mal der Champion der Ultimativen Arena
-32018,Ultimative Arena Champion,Werde 4 Mal der Champion der Ultimativen Arena
-32019,Ultimative Arena Champion,Werde 5 Mal der Champion der Ultimativen Arena
+32012,Ultimative Arena Top 64,Werde Top 64 in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32013,Ultimative Arena Top 8,Werde Top 8 in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32014,Ultimative Arena Top 4,Werde Top 4 in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32015,Ultimative Arena - Champion,Werde 1 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32016,Ultimative Arena - Champion,Werde 2 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32017,Ultimative Arena - Champion,Werde 3 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32018,Ultimative Arena - Champion,Werde 4 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32019,Ultimative Arena - Champion,Werde 5 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
 32020,Turins Souvenir,Mädchen Aufgaben·Turin
 32021,Liebeskugel,"Limitierte Events, Arena-Shop"
 32022,Herrlich,Community-Events
@@ -466,11 +466,11 @@ id,name,desc
 72017,Schockiert,Erfolge
 72018,Unangenehm,Erfolge
 10098,Musketier,Limitierte Events
-32027,Ultimative Arena Champion,Werde 6 Mal der Champion der Ultimativen Arena
-32028,Ultimative Arena Champion,Werde 7 Mal der Champion der Ultimativen Arena
-32029,Ultimative Arena Champion,Werde 8 Mal der Champion der Ultimativen Arena
-32030,Ultimative Arena Champion,Werde 9 Mal der Champion der Ultimativen Arena
-32031,Ultimative Arena Champion,Werde 10 Mal der Champion der Ultimativen Arena
+32027,Ultimative Arena - Champion,Werde 6 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32028,Ultimative Arena - Champion,Werde 7 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32029,Ultimative Arena - Champion,Werde 8 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32030,Ultimative Arena - Champion,Werde 9 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
+32031,Ultimative Arena - Champion,Werde 10 Mal Champion in der Ultimativen Arena (Kann nicht mehr erhalten werden)
 32032,Anfänger Sammler,Sammlungsladen
 32033,Normaler Sammler,Sammlungsladen
 32034,Legendärer Sammler,Sammlungsladen
@@ -1009,3 +1009,198 @@ id,name,desc
 32077,Schwimmspaß,Buch der Illusion
 40294,Fischteich,Buch der Illusion
 10273,Maiglöckchen,Limitierte Events
+80001,Kopf (Schuluniform),Standard-Item
+80002,Schuluniform (oben),Standard-Item
+80003,Schuluniform (unten),Standard-Item
+80004,Brille (Schuluniform),Standard-Item
+80005,Kopf (Arztkleidung),Outfit-Shop
+80006,Arztkleidung (oben),Outfit-Shop
+80007,Arztkleidung (unten),Outfit-Shop
+80008,Arzthaube (Arztkleidung),Outfit-Shop
+80009,Namensschild (Arztkleidung),Outfit-Shop
+80010,Kopf (Tea Time),Outfit-Shop
+80011,Tea Time (oben),Outfit-Shop
+80012,Tea Time (unten),Outfit-Shop
+80013,Kopfschmuck (Tea Time),Outfit-Shop
+80014,Taschenuhr (Tea Time),Outfit-Shop
+80015,Kopf (Britisch),Outfit-Shop
+80016,Regenmantel (Britisch),Outfit-Shop
+80017,Britisch (unten),Outfit-Shop
+80018,Hut (Britisch),Outfit-Shop
+80019,Brosche (Britisch),Outfit-Shop
+80020,Kopf (Holy Moly),Outfit-Shop
+80021,Holy Moly (oben),Outfit-Shop
+80022,Holy Moly (unten),Outfit-Shop
+80023,Heiligenschein (Holy Moly),Outfit-Shop
+80024,Kopf (Côte d’Azur),Outfit-Shop
+80025,Côte d’Azur (oben),Outfit-Shop
+80026,Côte d’Azur (unten),Outfit-Shop
+80027,Kopfschmuck (Côte d’Azur),Outfit-Shop
+80028,Surfbrett (Côte d’Azur),Outfit-Shop
+80029,Kopf (Kissenschlacht),Outfit-Shop
+80030,Kissenschlacht (oben),Outfit-Shop
+80031,Kissenschlacht (unten),Outfit-Shop
+80032,Kopfschmuck (Kissenschlacht),Outfit-Shop
+80033,Extra-Utensil (Kissenschlacht),Outfit-Shop
+80034,Kopf (Shoppingtour),Outfit-Shop
+80035,Shoppingtour (oben),Outfit-Shop
+80036,Shoppingtour (unten),Outfit-Shop
+80037,Kopfschmuck (Shoppingtour),Outfit-Shop
+80038,Extra-Utensil (Shoppingtour),Outfit-Shop
+80039,Kopf (Rote Uniform),Outfit-Shop
+80040,Rote Uniform (oben),Outfit-Shop
+80041,Rote Uniform (unten),Outfit-Shop
+80042,Brille (Rote Uniform),Outfit-Shop
+80043,Brosche (Rote Uniform),Outfit-Shop
+80044,Kopf (Kuschelkätzchen),Outfit-Shop
+80045,Kuschelkätzchen (oben),Outfit-Shop
+80046,Kuschelkätzchen (unten),Outfit-Shop
+80047,Katzenohren (Kuschelkätzchen),Outfit-Shop
+80048,Glocke (Kuschelkätzchen),Outfit-Shop
+80049,Kopf (Engelsklänge),Outfit-Shop
+80050,Engelsklänge (oben),Outfit-Shop
+80051,Engelsklänge (unten),Outfit-Shop
+80052,Kopfschmuck (Engelsklänge),Outfit-Shop
+80053,Engelsflügel (Engelsklänge),Outfit-Shop
+80054,Kopf (Städtetour),Outfit-Shop
+80055,Städtetour (oben),Outfit-Shop
+80056,Städtetour (unten),Outfit-Shop
+80057,Kopfschmuck (Städtetour),Outfit-Shop
+80058,Extra-Utensil (Städtetour),Outfit-Shop
+80059,Kopf (Spritztour),Outfit-Shop
+80060,Spritztour (oben),Outfit-Shop
+80061,Spritztour (unten),Outfit-Shop
+80062,Kopfschmuck (Spritztour),Outfit-Shop
+80063,Extra-Utensil (Spritztour),Outfit-Shop
+80064,Kopf (Pyjama-Party),Outfit-Shop
+80065,Pyjama-Party (oben),Outfit-Shop
+80066,Pyjama-Party (unten),Outfit-Shop
+80067,Kopfschmuck (Pyjama-Party),Outfit-Shop
+80068,Extra-Utensil (Pyjama-Party),Outfit-Shop
+80069,Kopf (Traumland),Outfit-Shop
+80070,Traumland (oben),Outfit-Shop
+80071,Traumland (unten),Outfit-Shop
+80072,Kopfschmuck (Traumland),Outfit-Shop
+80073,Extra-Utensil (Traumland),Outfit-Shop
+80074,Kopf (Blaue Uniform),Outfit-Shop
+80075,Blaue Uniform (oben),Outfit-Shop
+80076,Blaue Uniform (unten),Outfit-Shop
+80077,Brille (Blaue Uniform),Outfit-Shop
+80078,"Extra-Utensil vom Set ""Blaue Uniform""",Outfit-Shop
+80079,Kopf (Schwertmeister),Outfit-Shop
+80080,Schwertmeister (oben),Outfit-Shop
+80081,Schwertmeister (unten),Outfit-Shop
+80082,Kopfschmuck (Schwertmeister),Outfit-Shop
+80083,Samuraischwert (Schwertmeister),Outfit-Shop
+80084,Extra-Utensil (Holy Moly),Outfit-Shop
+80085,Kopf (Kampfanzug),Outfit-Shop
+80086,Kampfanzug (oben),Outfit-Shop
+80087,Kampfanzug (unten),Outfit-Shop
+80088,Kopfschmuck (Kampfanzug),Outfit-Shop
+80089,Extra-Utensil (Kampfanzug),Outfit-Shop
+80090,Kopf (Halloween),Outfit-Shop
+80091,Halloween (oben),Outfit-Shop
+80092,Halloween (unten),Outfit-Shop
+80093,Kopfschmuck (Halloween),Outfit-Shop
+80094,Extra-Utensil (Halloween),Outfit-Shop
+80095,Kopf (Himmels-Kimono),Outfit-Shop
+80096,Himmels-Kimono (oben),Outfit-Shop
+80097,Himmels-Kimono (unten),Outfit-Shop
+80098,Kopfschmuck (Himmels-Kimono),Outfit-Shop
+80099,Extra-Utensil (Himmels-Kimono),Outfit-Shop
+80100,Kopf (Blüten-Kimono),Outfit-Shop
+80101,Blüten-Kimono (oben),Outfit-Shop
+80102,Blüten-Kimono (unten),Outfit-Shop
+80103,Kopfschmuck (Blüten-Kimono),Outfit-Shop
+80104,Extra-Utensil (Blüten-Kimono),Outfit-Shop
+80105,Kopf (Flieder-Kimono),Outfit-Shop
+80106,Flieder-Kimono (oben),Outfit-Shop
+80107,Flieder-Kimono (unten),Outfit-Shop
+80108,Kopfschmuck (Flieder-Kimono),Outfit-Shop
+80109,Extra-Utensil (Flieder-Kimono),Outfit-Shop
+80110,Kopf (Grünes Cheongsam),Outfit-Shop
+80111,Grünes Cheongsam (oben),Outfit-Shop
+80112,Grünes Cheongsam (unten),Outfit-Shop
+80113,Kopfschmuck (Grünes Cheongsam),Outfit-Shop
+80114,Extra-Utensil (Grünes Cheongsam),Outfit-Shop
+80115,Kopf (Zahnradmechanik),Outfit-Shop
+80116,Zahnradmechanik (oben),Outfit-Shop
+80117,Zahnradmechanik (unten),Outfit-Shop
+80118,Kopfschmuck (Zahnradmechanik),Outfit-Shop
+80119,Extra-Utensil (Zahnradmechanik),Outfit-Shop
+80120,Kopf (Amarantrot),Outfit-Shop
+80121,Amarantrot (oben),Outfit-Shop
+80122,Amarantrot (unten),Outfit-Shop
+80123,Kopfschmuck (Amarantrot),Outfit-Shop
+80124,Extra-Utensil (Amarantrot),Outfit-Shop
+80125,Kopf (Kastanienbraun),Outfit-Shop
+80126,Kastanienbraun (oben),Outfit-Shop
+80127,Kastanienbraun (unten),Outfit-Shop
+80128,Kopfschmuck (Kastanienbraun),Outfit-Shop
+80129,Extra-Utensil (Kastanienbraun),Outfit-Shop
+80130,Kopf (Himmelblau),Outfit-Shop
+80131,Himmelblau (oben),Outfit-Shop
+80132,Himmelblau (unten),Outfit-Shop
+80133,Kopfschmuck (Himmelblau),Outfit-Shop
+80134,Extra-Utensil (Himmelblau),Outfit-Shop
+80135,Kopf (Abenteurer),Outfit-Shop
+80136,Abenteurer (oben),Outfit-Shop
+80137,Abenteurer (unten),Outfit-Shop
+80138,Kopfschmuck (Abenteurer),Outfit-Shop
+80139,Extra-Utensil (Abenteurer),Outfit-Shop
+80140,Kopf (Höllenteufel),Outfit-Shop
+80141,Höllenteufel (oben),Outfit-Shop
+80142,Höllenteufel (unten),Outfit-Shop
+80143,Kopfschmuck (Höllenteufel),Outfit-Shop
+80144,Extra-Utensil (Höllenteufel),Outfit-Shop
+80145,Kopf (Himmel ohne Grenzen),Outfit-Shop
+80146,Himmel ohne Grenzen (oben),Outfit-Shop
+80147,Himmel ohne Grenzen (unten),Outfit-Shop
+80148,Kopfschmuck (Himmel ohne Grenzen),Outfit-Shop
+80149,Extra-Utensil (Himmel ohne Grenzen),Outfit-Shop
+80150,Kopf (Silbernes Cheongsam),Outfit-Shop
+80151,Silbernes Cheongsam (oben),Outfit-Shop
+80152,Silbernes Cheongsam (unten),Outfit-Shop
+80153,Kopfschmuck (Silbernes Cheongsam),Outfit-Shop
+80154,Extra-Utensil (Silbernes Cheongsam),Outfit-Shop
+80155,Kopf (Schwarzes Cheongsam),Outfit-Shop
+80156,Schwarzes Cheongsam (oben),Outfit-Shop
+80157,Schwarzes Cheongsam (unten),Outfit-Shop
+80158,Kopfschmuck (Schwarzes Cheongsam),Outfit-Shop
+80159,Extra-Utensil (Schwarzes Cheongsam),Outfit-Shop
+80160,Kopf (Weihnachtself),Outfit-Shop
+80161,Weihnachtself (oben),Outfit-Shop
+80162,Weihnachtself (unten),Outfit-Shop
+80163,Kopfschmuck (Weihnachtself),Outfit-Shop
+80164,Extra-Utensil (Weihnachtself),Outfit-Shop
+80165,Kopf (Papierdrachen),Outfit-Shop
+80166,Papierdrachen (oben),Outfit-Shop
+80167,Papierdrachen (unten),Outfit-Shop
+80168,Kopfschmuck (Papierdrachen),Outfit-Shop
+80169,Extra-Utensil (Papierdrachen),Outfit-Shop
+80170,Kopf (Nachtlichter),Outfit-Shop
+80171,Nachtlichter (oben),Outfit-Shop
+80172,Nachtlichter (unten),Outfit-Shop
+80173,Kopfschmuck (Nachtlichter),Outfit-Shop
+80174,Extra-Utensil (Nachtlichter),Outfit-Shop
+80175,Kopf (Adelshaus),Outfit-Shop
+80176,Adelshaus (oben),Outfit-Shop
+80177,Adelshaus (unten),Outfit-Shop
+80178,Kopfschmuck (Adelshaus),Outfit-Shop
+80179,Extra-Utensil (Adelshaus),Outfit-Shop
+80180,Kopf (Nachtalb),Outfit-Shop
+80181,Nachtalb (oben),Outfit-Shop
+80182,Nachtalb (unten),Outfit-Shop
+80183,Kopfschmuck (Nachtalb),Outfit-Shop
+80184,Extra-Utensil (Nachtalb),Outfit-Shop
+80185,Kopf (Märchenland),Outfit-Shop
+80186,Märchenland (oben),Outfit-Shop
+80187,Märchenland (unten),Outfit-Shop
+80188,Kopfschmuck (Märchenland),Outfit-Shop
+80189,Extra-Utensil (Märchenland),Outfit-Shop
+80190,Kopf (Fondant-Torte),Outfit-Shop
+80191,Fondant-Torte (oben),Outfit-Shop
+80192,Fondant-Torte (unten),Outfit-Shop
+80193,Kopfschmuck (Fondant-Torte),Outfit-Shop
+80194,Extra-Utensil (Fondant-Torte),Outfit-Shop
+10274,Lord Rowdy,Limitierte Events

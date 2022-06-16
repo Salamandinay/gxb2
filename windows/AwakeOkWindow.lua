@@ -119,6 +119,8 @@ function AwakeOkWindow:initWindow()
 			})
 		end
 
+		skillNum = #self.params.skillNewList
+
 		for i = 1, math.min(2, skillNum) do
 			local skillItem = NGUITools.AddChild(self.skillAfterLine1, self.skillItem)
 			skillItem:GetComponent(typeof(UIWidget)).depth = 250 + i * 10
@@ -188,7 +190,13 @@ function AwakeOkWindow:registerSkillDesc()
 				self:cancelSkillTips()
 			end
 		end
+	end
 
+	if self.params.skillNewList then
+		skillNum = #self.params.skillNewList
+	end
+
+	for i = 1, skillNum do
 		UIEventListener.Get(self["newSkill" .. i].go).onSelect = function (go, isSelect)
 			if isSelect == false then
 				self:cancelSkillTips()
@@ -198,6 +206,8 @@ function AwakeOkWindow:registerSkillDesc()
 end
 
 function AwakeOkWindow:showSkillTips(icon)
+	self:cancelSkillTips()
+
 	if not icon then
 		return
 	end

@@ -248,7 +248,7 @@ function DressShow:getLevelByScore(score)
 	local list = xyd.tables.miscTable:split2Cost("show_window_point_rank", "value", "|")
 
 	for i = #list, 1, -1 do
-		if list[i] < score then
+		if list[i] <= score then
 			return i
 		end
 	end

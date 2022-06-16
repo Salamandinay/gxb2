@@ -442,7 +442,7 @@ POINT_TO_START,Tap to Play
 EDGE_OUT_NOTIFY,This account was logged into another device. Continue refresh?
 FORGET_PASSWORD,Forgot PW
 CANCEL,Cancel
-SHENXUE_WINDOW_HELP,"1. Chose one Girl to increase the Star Level of and Girls to use as materials.|2. The chosen Girl will maintain her original level and Gear.|3. Sacrificed Girls will be converted into EXP Juice and Lunch Boxes. Equipped Gear will also be sent automatically to your Bag. |4. After increasing Star Level, the chosen Girl will have better stats and skill effects.|5. When a girl whose Intimacy is higher than 0 when Graduated, she will inherit the Intimacy."
+SHENXUE_WINDOW_HELP,"1. Chose one Girl to increase the Star Level of and Girls to use as materials.|2. The chosen Girl will maintain her original level and Gear.|3. Sacrificed Girls will be converted into EXP Juice and Lunch Boxes. Equipped Gear will also be sent automatically to your Bag. |4. After increasing Star Level, the chosen Girl will have better stats and skill effects.|5. When a girl whose Intimacy is higher than 0 when Graduated, she will inherit the Intimacy.|6. You can set the ideal material Girls in Bulk Graduate feature."
 TOWER_WINDOW_HELP,"1. You must hold at least one Permit to be allowed to enter a Test. Defeat will consume a single Permit. |2. You will get a new Permit every 30 minutes, and you can only hold 10 Permits at a time.|3. Difficulty increases at each floor. Defeating a Test Guardian awards more rewards. |4. Players will be ranked according to the Test level they reach.|5. You will be able to skip battles in Tests after you pass Stage 200."
 DUNGEON_WINDOW_HELP,"1. Patrol will open for 48 hours and reopen again after 48 hours.|2. Player can choose up to 5 Girls to join the Patrol Team. The lineup can't be changed until the next Challenge round. (The Level, Gear setup, and Potential Selection of the Girls selected will also NOT be updated until the next Chellenge round)|3. Tap to check the enemies' information and manually choose 1 Girl to fight against the enemies.|4. Choose Quick Combat to skip the fight and directly view results. or choose Normal Combat to watch the fight and view results when the fight is over.|5. After the fight is over, Girl HP for both sides will be retained. Girls who run out of HP can't participate in fights any more.|6. Each fight lasts 15 rounds. The team who kills the enemy within 15 rounds will win. Fights that last more than 15 rounds count as losses.|7. Victory will lead to 1 of 3 results: gaining a Chest, meeting a Merchant, or gaining an item. Results are randomly generated after each fight.|8. Chest: contains Coins or Gems.|9. Merchant: a chance to buy items (tap “Skip” continue to the next fight). The merchandise they might provide is at random.|10. Items: divided into two categories -- Stationery and Rice Balls. Rice Balls can be used to heal your girls and Stationery can provide additional buffs. Each type of Stationery will no longer be obtained once you've acquired 20 of them.|11. Rice Balls can be saved (until the current Patrol ends). Tap the Rice Ball icon to use.|12. The Challenge ends after all Girls from the attack team run out of HP.|13. Patrol has 6 phases: Easy, Normal, Hard, Extreme, Fantasy and Nightmare. There are 100 stages for each phase. Passing the 100th stage will unlock the next phase challenge.|14. After you have passed 50 stages of each phase, you can Auto Smash past phases when Patrol opens the next time."
 GET_WAY_EQUIP,Go {1}-{2}
@@ -781,7 +781,7 @@ GUILD_ANNOUNCEMENT_SETTING_UP_TITLE,Change Notice
 GUILD_NAME_EMPTY,Guild Name cannot be empty
 GUILD_NAME_LIMIT_LENGTH,Guild name is too long
 GUILD_NAME_REPEATED,This name is in use
-SHENXUE_CAN_NOT_FORGE,Not enough Material
+SHENXUE_CAN_NOT_FORGE,Insufficient Material
 SHENXUE_NOT_SELECT_YET,Select Girls
 GUILD_LOG_TITLE,Log
 GUILD_JOB1,Members
@@ -4858,7 +4858,7 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT12,Confirm to Disassemble?
 ACTIVITY_ANTIQUE_LEVELUP_TEXT13,Disassemble
 ACTIVITY_ANTIQUE_LEVELUP_TEXT14,Preview
 SAME_TRAINING_MISSION_AGAIN,Do you want to let your servants repeat their last Training Course(s)?
-QUICK_STARS_TEXT01,Auto-select non-Elite 5-star Materials
+QUICK_STARS_TEXT01,Auto-select 5-star Materials
 QUICK_STARS_TEXT02,4-star Graduate
 QUICK_STARS_TEXT03,Bulk Graduate
 QUICK_STARS_TEXT04,No Girl material
@@ -5130,7 +5130,7 @@ Diamond: 8 Frontline backup, 16 Backline backup, 5 Servants
 (5) When challenging other players, the number of slots available in your backup lineup will be adjusted according to your opponent\'s Division.
 (6) If the battle exceeds 15 rounds, Girls remaining will increase their Attack and lower their Heal received each round until the battle is over.|5. Single Elimination & Finals|(1) After Points Race is over, the 320 players in Grandmaster Division will be randomly separated into 5 groups (64 players per group) and enter Single Elimination Phase. If there are less than 320 players but more than 64 players in Grandmaster Division, players from Grandmaster Division will be picked according to their position in the ranking list until the remaining players in Grandmaster Division cannot form a complete group. In this case, they will not enter Single Elimination Phase. If there are less than 64 players in Grandmaster Division, players from other Divisions will be picked according to their position on the ranking list (until there\'re 64 players for the Single Elimination Phase).
 (2) 1 race will be held each day.0:00 to 2:00 (UTC/GMT 0) is the ending period. The players cannot set or adjust their lineups within 2 hours before each round of battle and during the ending period.
-(3) Only Girls that can be awakened to 10-star can be deployed in Single Elimination and Finals. During battles, all Girls will have the attributes of their 15-Star form at level 330 and their Elite Skill upgrade progress will be kept. They will also be equipped with a full Angel Set (Girls equipped with Class Set Gears will still equip their original Gears), and have their Crystals set at the highest grade, the upgrades of Astral Core Nodes will be kept. The Servant deployed will be at level 180, the Servant\'s Aura level will be at level 50, and the Servant\'s Ulticore level will be kept. Guild Lab skills will be fully upgraded. Attributes from Chimes, Main Center in Excursion, Skins, Antiques originally held by the Girl, the Girl\'s current intimacy boost, and the Girl\'s potential status will be kept. If the girl hasn\'t chosen her potential boost in a slot it will be considered empty.
+(3) Only Girls that can be awakened to 10-star can be deployed in Single Elimination and Finals. During battles, all Girls will have the attributes of their 15-Star form at level 330 and their Elite Skill upgrade progress will be kept. They will also be equipped with a full Angel Set (Girls equipped with Class Set Gears will still equip their original Gears), and have their Crystals set at the highest grade, the upgrades of Astral Core Nodes will be kept. The Servant deployed will be at level 180, the Servant\'s Aura level will be at level 50, and the Servant\'s Ulticore level will be kept. Guild Lab skills will be fully upgraded. Attributes from Costume Wardrobe, Chimes, Main Center in Excursion, Skins, Antiques originally held by the Girl, the Girl\'s current intimacy boost, and the Girl\'s potential status will be kept. If the girl hasn\'t chosen her potential boost in a slot it will be considered empty.
 During battles, the HP and Attack of every Girl will be multiplied based on their star-grade:|5-Star-50%%, 6-Star-51%%, 7-Star-53%%|8-Star-55%%, 9-Star-60%%, 10-Star-65%%|11-Star-70%%, 12-Star-75%%, 13-Star-80%%|14-Star-90%%, 15-Star-100%%|6. Exhibition|(1) Exhibition will last for 2 days after Finals end.|7. Hall of Fame|(1) The top 8 players from each Single Elimination Group of each season will be recorded in the Hall of Fame.
 (2) Records of players who have won in Ultimate League before the feature is updated will still be taken into account in Rankings.|8. Ultimate League Task|(1) During the Points Race period, players can get rewards by completing Tasks in Ultimate League every day.|9. Seasonal Rewards|(1) After Points Race period is over, players will be awarded according to their current Division.
 Notice: Players will need to start 10 or more battles to receive Seasonal Rewards.
@@ -5454,7 +5454,7 @@ TIME_CLOISTER_HELP05,"1. A Support Girl can be available in Stage battles and Sk
 TIME_CLOISTER_TEXT65,Technology · Support
 TIME_CLOISTER_TEXT66,"Upgrade your Support Girl or promote her Advanced Skills with ""Nightmare Points"""
 TIME_CLOISTER_TEXT67,Display
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Lucky Coins can be used to draw from the Lucky Dips machine and get rewards during the event. Normal rewards or Ultimate Prizes can be obtained from the machine. The Ultimate Prize will need to be manually selected.|2. 2 Lucky points can be obtained from each draw. When 100 Lucky Points are reached, there is a 100%% chance to obtain an Ultimate Prize in the next draw, once an Ultimate Prize is claimed, your Lucky Points will reset to 0.|3. There are 3 Ultimate Prizes in each round. Once all 3 Ultimate Prizes are obtained, you will enter the next round and the selection for Ultimate Prizes will be updated. After you've completed 6 rounds, the Ultimate Prize selection will be refreshed back to the 1st round.|4. Lucky Coins can be obtained from Daily Mails, by purchasing Lucky Dips Pack, or completing the tasks below:|---Get 1 Lucky Coin for every 3 League Tickets consumed (10 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Gems consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for each 3-star or above Internship Quest completed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Crystal Chisels consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every Rudder used (80 Lucky Coins can be obtained in this way)|---Get 2 Lucky Coins for every 250 VIP EXP obtained during the event (200 Lucky Coins can be obtained in this way)|5. Once the event ends, your Lucky Coins, Lucky Points, and Reward Progress will be kept till the next event."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Lucky Coins can be used to draw from the Lucky Dips machine and get rewards during the event. Normal rewards or Ultimate Prizes can be obtained from the machine. The Ultimate Prize will need to be manually selected.|2. 2 Lucky points can be obtained from each draw. When 100 Lucky Points are reached, there is a 100%% chance to obtain an Ultimate Prize in the next draw, once an Ultimate Prize is claimed, your Lucky Points will reset to 0.|3. There are 3 Ultimate Prizes in each round. Once all 3 Ultimate Prizes are obtained, you will enter the next round and the selection for Ultimate Prizes will be updated. After you've completed 6 rounds, the Ultimate Prize selection will be refreshed back to the 1st round.|4. Lucky Coins can be obtained from Daily Mails, by purchasing Lucky Dips Pack, or completing the tasks below:|---Get 1 Lucky Coin for every 3 League Tickets consumed (10 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Gems consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for each 3-star or above Internship Quest completed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Crystal Chisels consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every Seal used (80 Lucky Coins can be obtained in this way)|---Get 2 Lucky Coins for every 250 VIP EXP obtained during the event (100 Lucky Coins can be obtained in this way)|5. Once the event ends, your Lucky Coins, Lucky Points, and Reward Progress will be kept till the next event."
 ACTIVITY_LUCKYBOXES_TEXT15,"After the end of the event, your Lucky Coins, Lucky Points, and the Reward Progress will be kept until the next event."
 TIME_CLOISTER_TEXT68,Please display an {1} to complete the request.
 TIME_CLOISTER_TEXT69,Please display an Outfit piece that reaches the requirement
@@ -6339,7 +6339,7 @@ ACTIVITY_CHILDREN_TITLE,Sweet Childhood
 ACTIVITY_SPFARM_TEXT01,Enter the manor and seek the power that could help...
 ACTIVITY_SPFARM_TEXT02,Total Level
 ACTIVITY_SPFARM_TEXT03,Enter
-ACTIVITY_SPFARM_HELP1,"1. The event lasts for 15 days. You can grow Flowers to obtain rewards and Raid the Manor of other players during the first 14 days. The 15th day of the event will be the display period. You will not be able to Raid during the display period.|2. By tapping on an unoccupied Block, you can grow Flowers. These Flowers can produce various types of resources that can be collected at 0:00 (UTC/GMT 0) every day.|3. You will need to consume 100 Marvelous Seeds each time you plant or upgrade a Flower. You can also switch the type of Flower by consuming (50 * the current level of the Flower you wish to switch) Marvelous Seeds. In addition, you can adjust the location of your Flowers freely by tapping and holding on them.|4. New policies can be approved by consuming Loud Speakers at your Manor Center.|5. You can increase the Fame of your Manor by 1 and get additional rewards for every 3 policies approved.|6. You can also Raid the Manors of other players and get their resources. 1 Raid Ticket needs to be consumed to begin a Raid. You will get 3 Raid Tickets each day in the first 14 days of the event. You can also purchase more Raid Tickets with Gems, you are able to purchase 15 Raid Tickets at most in this way.|7. The resource hiding in the Manors you can Raid will be richer as the Total Level of Flowers in your Manor becomes higher.|8. You can deploy defenders for your Flower. The defenders will try their best to stop the invaders.|9. Once the event ends, the remaining Marvelous Seeds, Loud Speakers, and Raid Tickets will automatically be exchanged into Coins at a rate of 1K Coins per Marvelous Seed, 50K Coins per Loud Speaker, and 20K Coins per Raid Ticket. The Coins will be sent via Mail."
+ACTIVITY_SPFARM_HELP1,"1. The event lasts for 15 days. You can grow Flowers to obtain rewards and Raid the Manor of other players during the first 14 days. The 15th day of the event will be the display period. You will not be able to Raid during the display period. The Flowers will also not produce more resources during display period.|2. By tapping on an unoccupied Block, you can grow Flowers. These Flowers can produce various types of resources that can be collected at 0:00 (UTC/GMT 0) every day.|3. You will need to consume 100 Marvelous Seeds each time you plant or upgrade a Flower. You can also switch the type of Flower by consuming (50 * the current level of the Flower you wish to switch) Marvelous Seeds. In addition, you can adjust the location of your Flowers freely by tapping and holding on them.|4. New policies can be approved by consuming Loud Speakers at your Manor Center.|5. You can increase the Fame of your Manor by 1 and get additional rewards for every 3 policies approved.|6. You can also Raid the Manors of other players and get their resources. 1 Raid Ticket needs to be consumed to begin a Raid. You will get 3 Raid Tickets each day in the first 14 days of the event. You can also purchase more Raid Tickets with Gems, you are able to purchase 15 Raid Tickets at most in this way.|7. The resource hiding in the Manors you can Raid will be richer as the Total Level of Flowers in your Manor becomes higher.|8. You can deploy defenders for your Flower. The defenders will try their best to stop the invaders.|9. Once the event ends, the remaining Marvelous Seeds, Loud Speakers, and Raid Tickets will automatically be exchanged into Coins at a rate of 1K Coins per Marvelous Seed, 50K Coins per Loud Speaker, and 20K Coins per Raid Ticket. The Coins will be sent via Mail.|10. Ripen will be available after reaching Fame Level 10. You will be able to consume 1000 Marvelous Seed to get an additional day's resource from a Level 10 Flower instantly. Ripen will still be available during display period."
 ACTIVITY_SPFARM_HELP2,"1. You will be teleported to the Manor Center of another player's Manor at the beginning of each Raid.|2. Only the Manor Center is revealed at the beginning of each Raid, you can flip over the 4 Blocks (↑↓←→) beside the starting point or beside the Blocks that have been flipped over.|3. When there is a defender revealed on a flipped Block, the Blocks around the defender can't be flipped over until the defender is defeated.|4. If there is a Flower revealed on a flipped Block, you can raid 20%% of the Flower's daily production and put the loot in your Bag by tapping on the Flower.|5. You can end a Raid by tapping on the Manor Center. You will be able to obtain the loot you collected in your Bag after you end this Raid."
 ACTIVITY_SPFARM_TEXT04,Fame: [c][10F520]{1}[-][/c]
 ACTIVITY_SPFARM_TEXT05,Raid
@@ -6476,3 +6476,52 @@ ACTIVITY_SPFARM_TEXT113,1. You are able to check your Raid records and the defen
 ACTIVITY_SPFARM_TEXT114,No resource is lost during this Raid~
 ACTIVITY_SPFARM_TEXT115,Failed to get any resources in this Raid...
 ACTIVITY_SPFARM_TEXT116,"Flowers won't produce resources during Display period (But you can still Ripen your Flowers to get more resources), confirm to continue?"
+COLLECTION_SENPAI_DRESS,Outfit Gallery
+SENPAI_DRESS,Outfit
+COLLECTION_SKIN_UNLOCK_TEXT,Available after obtaining {1} Skins
+COLLECTION_SKIN_HELP,"1. Costume Wardrobe records your Skin collection.|2. The Skins are divided into 4 rarities: Common, Rare, Epic, and Legendary. Higher Rarity Skins will provide more Fashion Points.|3. Each type of skin will be unlocked in Costume Wardrobe and provide Fashion Points the first time you obtain it.|4. All Skins will be filtered by themes, you will get additional Fashion Points after unlocking a certain number of Skins from the same theme, and can get additional Fashion Points.|5. Your Fashion Level will be promoted as you obtain more Fashion Points. Higher Fashion Levels will provide higher attribute boosts for the Girls equipped with a Skin."
+COLLECTION_SKIN_TEXT01,Fashion Level
+COLLECTION_SKIN_TEXT02,Fashion Level promoted
+COLLECTION_SKIN_TEXT03,Attribute Boost:
+COLLECTION_SKIN_TEXT04,Hide locked Skins
+COLLECTION_SKIN_TEXT05,Enter Keyword
+COLLECTION_SKIN_TEXT06,Theme
+COLLECTION_SKIN_TEXT07,Festival
+COLLECTION_SKIN_TEXT08,Oath
+COLLECTION_SKIN_TEXT09,Swimsuit
+COLLECTION_SKIN_TEXT10,Other
+COLLECTION_SKIN_TEXT11,Release
+COLLECTION_SKIN_TEXT12,Rarity
+COLLECTION_SKIN_TEXT13,Common
+COLLECTION_SKIN_TEXT14,Rare
+COLLECTION_SKIN_TEXT15,Epic
+COLLECTION_SKIN_TEXT16,Legendary
+COLLECTION_SKIN_TEXT17,Buff Details
+COLLECTION_SKIN_TEXT18,Skin Points
+COLLECTION_SKIN_TEXT19,Common Skins
+COLLECTION_SKIN_TEXT20,Rare Skins
+COLLECTION_SKIN_TEXT21,Epic Skins
+COLLECTION_SKIN_TEXT22,Legendary Skins
+COLLECTION_SKIN_TEXT23,Theme Points
+COLLECTION_SKIN_TEXT24,Theme Boost
+COLLECTION_SKIN_TEXT25,Bonus Points
+COLLECTION_SKIN_TEXT26,Unlock {1} Skin(s)
+COLLECTION_SKIN_TEXT27,Skins of the Theme
+COLLECTION_SKIN_TEXT28,Theme: {1}
+ACTIVITY_LOST_SPACE_TEXT01,Zone
+ACTIVITY_LOST_SPACE_TEXT02,Basic Reward
+ACTIVITY_LOST_SPACE_TEXT03,Additional Reward
+ACTIVITY_LOST_SPACE_TEXT04,Unlock
+ACTIVITY_LOST_SPACE_TEXT05,Go to Event
+ACTIVITY_LOST_SPACE_TEXT06,The reward chests for Lost Space Zone will be upgraded after purchasing the pack.
+ACTIVITY_LOST_SPACE_TEXT07,Upgrade Rewards
+ACTIVITY_LOST_SPACE_TEXT08,Rewards
+ACTIVITY_LOST_SPACE_TEXT09,Locked
+SHENXUE_TEXT01,Please select star-rank
+SHENXUE_TEXT02,Bulk Graduate {1}-star Girls
+SHENXUE_TEXT03,Bulk Awake {1}-star Girls
+SHENXUE_TEXT04,Material Girl Setting
+LOGIN_TIPS_ERROR_1,Account Banned
+LOGIN_TIPS_ERROR_2,"The current account is banned, please choose another server to login."
+SHENXUE_TEXT05,Awake in Bulk
+SHENXUE_TEXT06,Awakening…

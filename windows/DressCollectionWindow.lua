@@ -11,16 +11,18 @@ function DressCollectionWindow:initWindow()
 	self:getUIComponent()
 	DressCollectionWindow.super.initWindow()
 	self:initData()
+	self:initTopGroup()
 	self:layout()
 	self:registerEvent()
 end
 
 function DressCollectionWindow:getUIComponent()
-	self.groupAction = self.window_:NodeByName("groupAction")
-	self.labelTitle = self.groupAction:ComponentByName("labelTitle", typeof(UILabel))
-	self.closeBtn = self.groupAction:NodeByName("closeBtn").gameObject
-	self.groupContent = self.groupAction:NodeByName("groupContent").gameObject
-	self.btnCircles = self.groupAction:NodeByName("btnCircles").gameObject
+	local winTrans = self.window_:NodeByName("group")
+	self.midGroup_ = winTrans
+	self.labelWinTitle_ = winTrans:ComponentByName("topGroup/labelWinTitle", typeof(UILabel))
+	self.filterRoot = winTrans:NodeByName("filter")
+	self.groupContent = self.midGroup_:NodeByName("groupContent").gameObject
+	self.btnCircles = self.filterRoot:NodeByName("btnCircles").gameObject
 	self.btnQualityChosen = self.btnCircles:NodeByName("btnQualityChosen").gameObject
 
 	for i = 0, 5 do
@@ -32,24 +34,52 @@ function DressCollectionWindow:getUIComponent()
 	self.scroll_view_UIScrollView = self.groupContent:ComponentByName("scroll_view", typeof(UIScrollView))
 	self.wrap_content = self.scroll_view:NodeByName("wrap_content").gameObject
 	self.wrap_content_UIWrapContent = self.scroll_view:ComponentByName("wrap_content", typeof(UIWrapContent))
-	self.groupNone = self.groupContent:NodeByName("groupNone").gameObject
-	self.imgNoneShow = self.groupNone:ComponentByName("imgNoneShow", typeof(UISprite))
-	self.labelNoneTips = self.groupNone:ComponentByName("labelNoneTips", typeof(UILabel))
 	self.dressItemEg = self.groupContent:NodeByName("dressItemEg").gameObject
+	self.groupNone = winTrans:NodeByName("groupNone").gameObject
+	self.labelNoneTips = self.groupNone:ComponentByName("labelNoneTips", typeof(UILabel))
 	self.wrapContent_ = FixedMultiWrapContent.new(self.scroll_view_UIScrollView, self.wrap_content_UIWrapContent, self.dressItemEg, DressItem, self)
 end
 
+function DressCollectionWindow:playOpenAnimation(callback)
+	DressCollectionWindow.super.playOpenAnimation(self, function ()
+		local y = self.midGroup_.localPosition.y
+		self.playOpenAnimation_ = true
+		local action1 = self:getSequence()
+		self.midGroup_.localPosition.x = -720
+
+		action1:Insert(0.2, self.midGroup_:DOLocalMove(Vector3(50, y, 0), 0.3))
+		action1:Insert(0.5, self.midGroup_:DOLocalMove(Vector3(0, y, 0), 0.27))
+		action1:AppendCallback(function ()
+			self.playOpenAnimation_ = false
+		end)
+
+		if callback then
+			callback()
+		end
+	end)
+end
+
 function DressCollectionWindow:layout()
-	self.labelTitle.text = __("DRESS_COLLECTION_WINDOW_1")
+	self.labelWinTitle_.text = __("COLLECTION_SENPAI_DRESS")
 
 	self:onQualityBtn(-1)
 end
 
-function DressCollectionWindow:registerEvent()
-	UIEventListener.Get(self.closeBtn).onClick = function ()
-		self:close()
-	end
+function DressCollectionWindow:initTopGroup()
+	local items = {
+		{
+			id = xyd.ItemID.CRYSTAL
+		},
+		{
+			id = xyd.ItemID.MANA
+		}
+	}
+	self.windowTop_ = import("app.components.WindowTop").new(self.window_, self.name_)
 
+	self.windowTop_:setItem(items)
+end
+
+function DressCollectionWindow:registerEvent()
 	for k = 0, 5 do
 		UIEventListener.Get(self["btnCircle" .. k]).onClick = function ()
 			self:onQualityBtn(k)

@@ -357,6 +357,12 @@ function SkinDetailBuyWindow:initData()
 		local id = xyd.tables.shopSkinTable:idByItemID(skinID)
 		local hasNew = false
 		local endTime = xyd.tables.shopSkinTable:getShopNew(id)
+		local collectionID = xyd.tables.itemTable:getCollectionId(skinID)
+		local qlt = nil
+
+		if collectionID and collectionID > 0 then
+			qlt = xyd.tables.collectionTable:getQlt(collectionID)
+		end
 
 		if self.isShowNew and nowTime < endTime then
 			hasNew = true
@@ -369,7 +375,8 @@ function SkinDetailBuyWindow:initData()
 				tableID = tableID,
 				group = group,
 				skin_id = skinID,
-				hasNew = hasNew
+				hasNew = hasNew,
+				qlt = qlt
 			}
 
 			if skinID == self.current_skin_ then
@@ -1055,6 +1062,7 @@ function SkinDetailBuyItem:update(index, realindex, info)
 		self.partnerCard:setSkinCollect(self.info_.collect)
 		self.partnerCard:setDisplay()
 		self.partnerCard:showRealSkinNum()
+		self.partnerCard:setQltLowerThanPartnerName()
 
 		local cost = xyd.tables.shopSkinTable:costByItemID(self.info_.skin_id)
 		self.buyBtnLabel.text = cost[2]

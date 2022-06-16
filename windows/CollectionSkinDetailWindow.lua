@@ -8,10 +8,32 @@ local PartnerGravityController = import("app.components.PartnerGravityController
 function CollectionSkinDetailWindow:ctor(name, params)
 	CollectionSkinDetailWindow.super.ctor(self, name, params)
 
+	self.themeID = params.themeID
+
+	dump(params)
+
 	local win = xyd.WindowManager.get():getWindow("collection_skin_window")
 
 	if win then
-		self.currentSortedPartners_ = win:getNowSortedSkins()
+		if params.themeID then
+			self.currentSortedPartners_ = {}
+			self.skinIDs = xyd.tables.collectionSkinGroupTable:getSkins(params.themeID)
+
+			for i = 1, #self.skinIDs do
+				local skinID = self.skinIDs[i]
+				local collectionID = xyd.tables.itemTable:getCollectionId(skinID)
+
+				if win:canShow(collectionID) then
+					table.insert(self.currentSortedPartners_, {
+						skin_id = skinID,
+						collectionID = collectionID,
+						tableID = xyd.tables.partnerTable:getPartnerIdBySkinId(tonumber(skinID))[1]
+					})
+				end
+			end
+		else
+			self.currentSortedPartners_ = win:getDatas()
+		end
 	end
 
 	if xyd.getServerTime() - xyd.models.collection:getGetCollectionTime() > 60 then
@@ -19,6 +41,10 @@ function CollectionSkinDetailWindow:ctor(name, params)
 	end
 
 	self.model_ = xyd.models.slot
+
+	if not self.currentSortedPartners_ then
+		self.currentSortedPartners_ = {}
+	end
 
 	for idx = 1, #self.currentSortedPartners_ do
 		if self.currentSortedPartners_[idx].skin_id == params.skin_id then
@@ -31,6 +57,7 @@ function CollectionSkinDetailWindow:ctor(name, params)
 		self.currentSortedPartners_ = {
 			{
 				skin_id = params.skin_id,
+				collectionID = params.collectionID,
 				tableID = xyd.tables.partnerTable:getPartnerIdBySkinId(tonumber(params.skin_id))[1]
 			}
 		}
@@ -83,6 +110,9 @@ function CollectionSkinDetailWindow:getUIComponent()
 	self.groupEffect2_ = self.groupInfo_:NodeByName("skinEffectGroup/groupEffect2").gameObject
 	self.groupEffect1_ = self.groupInfo_:NodeByName("skinEffectGroup/groupEffect1").gameObject
 	self.groupModel_ = self.groupInfo_:NodeByName("skinEffectGroup/groupModel").gameObject
+	self.qltGroup = self.groupInfo_:ComponentByName("qltGroup", typeof(UISprite))
+	self.labelQlt = self.qltGroup:ComponentByName("labelQlt", typeof(UILabel))
+	self.labelTheme = self.groupInfo_:ComponentByName("labelTheme", typeof(UILabel))
 
 	self.bubbleRoot_:SetActive(false)
 
@@ -259,6 +289,36 @@ function CollectionSkinDetailWindow:updatePartnerSkin()
 	local skinItem = self.currentSortedPartners_[self.currentIdx_]
 	self.labelAttr_.text = xyd.tables.equipTable:getDesc(skinItem.skin_id)
 	self.labelSkinDesc_.text = xyd.tables.equipTextTable:getSkinDesc(skinItem.skin_id)
+
+	self.qltGroup:SetActive(false)
+	self.labelTheme:SetActive(false)
+
+	if skinItem.skin_id and skinItem.skin_id then
+		local collectionID = xyd.tables.itemTable:getCollectionId(skinItem.skin_id)
+		local qlt = xyd.tables.collectionTable:getQlt(collectionID)
+		local TextArr = {
+			__("COLLECTION_SKIN_TEXT13"),
+			__("COLLECTION_SKIN_TEXT14"),
+			__("COLLECTION_SKIN_TEXT15"),
+			__("COLLECTION_SKIN_TEXT16")
+		}
+
+		if qlt and qlt > 0 then
+			self.qltGroup:SetActive(true)
+
+			self.labelQlt.text = TextArr[qlt]
+
+			xyd.setUISpriteAsync(self.qltGroup, nil, "collection_dress_new_bg_" .. qlt)
+		end
+
+		self.themeID = xyd.tables.collectionTable:getGroup(collectionID)
+
+		if self.themeID then
+			self.labelTheme.text = __("COLLECTION_SKIN_TEXT28", xyd.tables.collectionSkinGroupTextTable:getName(self.themeID))
+
+			self.labelTheme:SetActive(true)
+		end
+	end
 
 	self:loadSkinModel()
 end

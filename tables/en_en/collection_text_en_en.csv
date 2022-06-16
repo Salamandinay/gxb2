@@ -224,14 +224,14 @@ id,name,desc
 32009,Pool Party,"Exclusives, League Store"
 32010,Band Performance,"Exclusives, League Store"
 32011,Senior Scholar,"Exclusives, League Store"
-32012,Ultimate League Top 64,Reach Top 64 in Ultimate League
-32013,Ultimate League Top 8,Reach Top 8 in Ultimate League
-32014,Ultimate League Top 4,Reach Top 4 in Ultimate League
-32015,Ultimate League Champion,Become the Champion in Ultimate League once
-32016,Ultimate League Champion,Become the Champion in Ultimate League twice
-32017,Ultimate League Champion,Become the Champion in Ultimate League for 3 times
-32018,Ultimate League Champion,Become the Champion in Ultimate League for 4 times
-32019,Ultimate League Champion,Become the Champion in Ultimate League for 5 times
+32012,Ultimate League Top 64,Reach Top 64 in Ultimate League (cannot be obtained anymore)
+32013,Ultimate League Top 8,Reach Top 8 in Ultimate League (cannot be obtained anymore)
+32014,Ultimate League Top 4,Reach Top 4 in Ultimate League (cannot be obtained anymore)
+32015,Ultimate League Champion,Become the champion in Ultimate League for 1 time (cannot be obtained anymore)
+32016,Ultimate League Champion,Become the champion in Ultimate League for 2 times (cannot be obtained anymore)
+32017,Ultimate League Champion,Become the champion in Ultimate League for 3 times (cannot be obtained anymore)
+32018,Ultimate League Champion,Become the champion in Ultimate League for 4 times (cannot be obtained anymore)
+32019,Ultimate League Champion,Become the champion in Ultimate League for 5 times (cannot be obtained anymore)
 32020,Turin's Keepsake,Turin's Character Challenge
 32021,Love Bubble,"Exclusives, League Store"
 32022,Splendid,FB Event
@@ -466,11 +466,11 @@ id,name,desc
 72017,Shocked,Trophies
 72018,Unpleasant,Trophies
 10098,King's Musketeer,Exclusives
-32027,Ultimate League Champion,Become the Champion in Ultimate League for 6 times
-32028,Ultimate League Champion,Become the Champion in Ultimate League for 7 times
-32029,Ultimate League Champion,Become the Champion in Ultimate League for 8 times
-32030,Ultimate League Champion,Become the Champion in Ultimate League for 9 times
-32031,Ultimate League Champion,Become the Champion in Ultimate League for 10 times
+32027,Ultimate League Champion,Become the champion in Ultimate League for 6 times (cannot be obtained anymore)
+32028,Ultimate League Champion,Become the champion in Ultimate League for 7 times (cannot be obtained anymore)
+32029,Ultimate League Champion,Become the champion in Ultimate League for 8 times (cannot be obtained anymore)
+32030,Ultimate League Champion,Become the champion in Ultimate League for 9 times (cannot be obtained anymore)
+32031,Ultimate League Champion,Become the champion in Ultimate League for 10 times (cannot be obtained anymore)
 32032,Beginner Collector,Collection Store
 32033,Normal Collector,Collection Store
 32034,Legendary Collector,Collection Store
@@ -1009,3 +1009,198 @@ id,name,desc
 32077,Fish of Prosperity,Fantasy Book
 40294,Stylish Fish Tank,Fantasy Book
 10273,Lily of the Valley,Exclusives
+80001,Head (Standard Uniform),Default
+80002,Uniform (Standard Uniform),Default
+80003,Legs (Standard Uniform),Default
+80004,Black Frame Glasses (Standard Uniform),Default
+80005,Head (Private Clinic),Outfit Store
+80006,Body (Private Clinic),Outfit Store
+80007,Legs (Private Clinic),Outfit Store
+80008,Headwear (Private Clinic),Outfit Store
+80009,Work Card (Private Clinic),Outfit Store
+80010,Head (Afternoon Tea),Outfit Store
+80011,Body (Afternoon Tea),Outfit Store
+80012,Legs (Afternoon Tea),Outfit Store
+80013,Headwear (Afternoon Tea),Outfit Store
+80014,Pocket Watch (Afternoon Tea),Outfit Store
+80015,Head (Victorian Grace),Outfit Store
+80016,Trench Coat (Victorian Grace),Outfit Store
+80017,Legs (Victorian Grace),Outfit Store
+80018,Hat (Victorian Grace),Outfit Store
+80019,Noble Badge (Victorian Grace),Outfit Store
+80020,Head (Holy Spirit),Outfit Store
+80021,Body (Holy Spirit),Outfit Store
+80022,Legs (Holy Spirit),Outfit Store
+80023,Sacred Halo (Holy Spirit),Outfit Store
+80024,Head (Beach Blue),Outfit Store
+80025,Body (Beach Blue),Outfit Store
+80026,Legs (Beach Blue),Outfit Store
+80027,Headwear (Beach Blue),Outfit Store
+80028,Surfing Board (Beach Blue),Outfit Store
+80029,Head (Pillow Fight),Outfit Store
+80030,Body (Pillow Fight),Outfit Store
+80031,Legs (Pillow Fight),Outfit Store
+80032,Headwear (Pillow Fight),Outfit Store
+80033,Accessories (Pillow Fight),Outfit Store
+80034,Head (Shopping Mania),Outfit Store
+80035,Body (Shopping Mania),Outfit Store
+80036,Legs (Shopping Mania),Outfit Store
+80037,Headwear (Shopping Mania),Outfit Store
+80038,Accessories (Shopping Mania),Outfit Store
+80039,Head (School Enthusiast),Outfit Store
+80040,Body (School Enthusiast),Outfit Store
+80041,Legs (School Enthusiast),Outfit Store
+80042,Glasses (School Enthusiast),Outfit Store
+80043,School Badge (School Enthusiast),Outfit Store
+80044,Head (Fluffy Animals),Outfit Store
+80045,Body (Fluffy Animals),Outfit Store
+80046,Legs (Fluffy Animals),Outfit Store
+80047,Animal Headband (Fluffy Animals),Outfit Store
+80048,Bell (Fluffy Animals),Outfit Store
+80049,Head (Celestial),Outfit Store
+80050,Body (Celestial),Outfit Store
+80051,Legs (Celestial),Outfit Store
+80052,Headwear (Celestial),Outfit Store
+80053,Angel Wings (Celestial),Outfit Store
+80054,Head (Casual Moments),Outfit Store
+80055,Body (Casual Moments),Outfit Store
+80056,Legs (Casual Moments),Outfit Store
+80057,Headwear (Casual Moments),Outfit Store
+80058,Accessories (Casual Moments),Outfit Store
+80059,Head (Wild Experience),Outfit Store
+80060,Body (Wild Experience),Outfit Store
+80061,Legs (Wild Experience),Outfit Store
+80062,Headwear (Wild Experience),Outfit Store
+80063,Accessories (Wild Experience),Outfit Store
+80064,Head (Sleep in Style),Outfit Store
+80065,Body (Sleep in Style),Outfit Store
+80066,Legs (Sleep in Style),Outfit Store
+80067,Headwear (Sleep in Style),Outfit Store
+80068,Accessories (Sleep in Style),Outfit Store
+80069,Head (Sleepy Magic),Outfit Store
+80070,Body (Sleepy Magic),Outfit Store
+80071,Legs (Sleepy Magic),Outfit Store
+80072,Headwear (Sleepy Magic),Outfit Store
+80073,Accessories (Sleepy Magic),Outfit Store
+80074,Head (Exchange Student),Outfit Store
+80075,Body (Exchange Student),Outfit Store
+80076,Legs (Exchange Student),Outfit Store
+80077,Glasses (Exchange Student),Outfit Store
+80078,School Badge (Exchange Student),Outfit Store
+80079,Head (Sword and Soul),Outfit Store
+80080,Body (Sword and Soul),Outfit Store
+80081,Legs (Sword and Soul),Outfit Store
+80082,Headwear (Sword and Soul),Outfit Store
+80083,Uchigatana (Sword and Soul),Outfit Store
+80084,Accessories (Holy Spirit),Outfit Store
+80085,Head (Tactical Suit),Outfit Store
+80086,Body (Tactical Suit),Outfit Store
+80087,Legs (Tactical Suit),Outfit Store
+80088,Headwear (Tactical Suit),Outfit Store
+80089,Accessories (Tactical Suit),Outfit Store
+80090,Head (Halloween Carnival),Outfit Store
+80091,Body (Halloween Carnival),Outfit Store
+80092,Legs (Halloween Carnival),Outfit Store
+80093,Headwear (Halloween Carnival),Outfit Store
+80094,Accessories (Halloween Carnival),Outfit Store
+80095,Head (Indigo Clouds),Outfit Store
+80096,Body (Indigo Clouds),Outfit Store
+80097,Legs (Indigo Clouds),Outfit Store
+80098,Headwear (Indigo Clouds),Outfit Store
+80099,Accessories (Indigo Clouds),Outfit Store
+80100,Head (Cherry Blossoms),Outfit Store
+80101,Body (Cherry Blossoms),Outfit Store
+80102,Legs (Cherry Blossoms),Outfit Store
+80103,Headwear (Cherry Blossoms),Outfit Store
+80104,Accessories (Cherry Blossoms),Outfit Store
+80105,Head (Violet Charm),Outfit Store
+80106,Body (Violet Charm),Outfit Store
+80107,Legs (Violet Charm),Outfit Store
+80108,Headwear (Violet Charm),Outfit Store
+80109,Accessories (Violet Charm),Outfit Store
+80110,Head (Martial Artist),Outfit Store
+80111,Body (Martial Artist),Outfit Store
+80112,Legs (Martial Artist),Outfit Store
+80113,Headwear (Martial Artist),Outfit Store
+80114,Accessories (Martial Artist),Outfit Store
+80115,Head (Steampunk),Outfit Store
+80116,Body (Steampunk),Outfit Store
+80117,Legs (Steampunk),Outfit Store
+80118,Headwear (Steampunk),Outfit Store
+80119,Accessories (Steampunk),Outfit Store
+80120,Head (Scarlet Edelweiss),Outfit Store
+80121,Body (Scarlet Edelweiss),Outfit Store
+80122,Legs (Scarlet Edelweiss),Outfit Store
+80123,Headwear (Scarlet Edelweiss),Outfit Store
+80124,Accessories (Scarlet Edelweiss),Outfit Store
+80125,Head (Warm Coffee),Outfit Store
+80126,Body (Warm Coffee),Outfit Store
+80127,Legs (Warm Coffee),Outfit Store
+80128,Headwear (Warm Coffee),Outfit Store
+80129,Accessories (Warm Coffee),Outfit Store
+80130,Head (Wool Hoo),Outfit Store
+80131,Body (Wool Hoo),Outfit Store
+80132,Legs (Wool Hoo),Outfit Store
+80133,Headwear (Wool Hoo),Outfit Store
+80134,Accessories (Wool Hoo),Outfit Store
+80135,Head (Voyager),Outfit Store
+80136,Body (Voyager),Outfit Store
+80137,Legs (Voyager),Outfit Store
+80138,Headwear (Voyager),Outfit Store
+80139,Accessories (Voyager),Outfit Store
+80140,Head (Dragon Breath),Outfit Store
+80141,Body (Dragon Breath),Outfit Store
+80142,Legs (Dragon Breath),Outfit Store
+80143,Headwear (Dragon Breath),Outfit Store
+80144,Accessories (Dragon Breath),Outfit Store
+80145,Head (Extreme Sports),Outfit Store
+80146,Body (Extreme Sports),Outfit Store
+80147,Legs (Extreme Sports),Outfit Store
+80148,Headwear (Extreme Sports),Outfit Store
+80149,Accessories (Extreme Sports),Outfit Store
+80150,Head (Porcelain Snow),Outfit Store
+80151,Body (Porcelain Snow),Outfit Store
+80152,Legs (Porcelain Snow),Outfit Store
+80153,Headwear (Porcelain Snow),Outfit Store
+80154,Accessories (Porcelain Snow),Outfit Store
+80155,Head (Ink Wash),Outfit Store
+80156,Body (Ink Wash),Outfit Store
+80157,Legs (Ink Wash),Outfit Store
+80158,Headwear (Ink Wash),Outfit Store
+80159,Accessories (Ink Wash),Outfit Store
+80160,Head (Santa Claus),Outfit Store
+80161,Body (Santa Claus),Outfit Store
+80162,Legs (Santa Claus),Outfit Store
+80163,Headwear (Santa Claus),Outfit Store
+80164,Accessories (Santa Claus),Outfit Store
+80165,Head (Traditional Game),Outfit Store
+80166,Body (Traditional Game),Outfit Store
+80167,Legs (Traditional Game),Outfit Store
+80168,Headwear (Traditional Game),Outfit Store
+80169,Accessories (Traditional Game),Outfit Store
+80170,Head (Mystic),Outfit Store
+80171,Body (Mystic),Outfit Store
+80172,Legs (Mystic),Outfit Store
+80173,Headwear (Mystic),Outfit Store
+80174,Accessories (Mystic),Outfit Store
+80175,Head (Noble Class),Outfit Store
+80176,Body (Noble Class),Outfit Store
+80177,Legs (Noble Class),Outfit Store
+80178,Headwear (Noble Class),Outfit Store
+80179,Accessories (Noble Class),Outfit Store
+80180,Head (Graceful Demon),Outfit Store
+80181,Body (Graceful Demon),Outfit Store
+80182,Legs (Graceful Demon),Outfit Store
+80183,Headwear (Graceful Demon),Outfit Store
+80184,Accessories (Graceful Demon),Outfit Store
+80185,Head (Wonderland Tour),Outfit Store
+80186,Body (Wonderland Tour),Outfit Store
+80187,Legs (Wonderland Tour),Outfit Store
+80188,Headwear (Wonderland Tour),Outfit Store
+80189,Accessories (Wonderland Tour),Outfit Store
+80190,Head (Sweet Morning),Outfit Store
+80191,Body (Sweet Morning),Outfit Store
+80192,Legs (Sweet Morning),Outfit Store
+80193,Headwear (Sweet Morning),Outfit Store
+80194,Accessories (Sweet Morning),Outfit Store
+10274,Substitute Teacher,Exclusives

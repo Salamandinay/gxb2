@@ -287,6 +287,8 @@ function BattleTestWindow:selfFight()
 		petB = petB,
 		guildSkillsA = xyd.models.guild:getGuildSkills(),
 		guildSkillsB = xyd.models.guild:getGuildSkills(),
+		skinBonusA = xyd.models.collection:getSkinCollectionLevel(),
+		skinBonusB = xyd.models.collection:getSkinCollectionLevel(),
 		god_skills = {},
 		random_seed = math.random(1, 10000),
 		maxRound = tonumber(xyd.db.misc:getValue("test_battle_round", -1)) or 99
@@ -306,13 +308,30 @@ function BattleTestWindow:selfFight()
 	}
 	params2.event_data.battle_report = reporter:getReport()
 
-	xyd.BattleController.get():startBattle(params2)
 	xyd.db.misc:setValue({
 		key = "god_skills",
 		playerId = -1,
 		value = self.godInput.value
 	})
-	self:close()
+
+	if xyd.db.misc:getValue("test_index", -1) ~= "1" then
+		local rp = params2.event_data.battle_report
+		rp.battle_type = xyd.BattleType.TEST
+		rp.maxRound = tonumber(xyd.db.misc:getValue("test_battle_round", -1)) or 99
+		rp.frames = {}
+		rp.random_log = nil
+
+		if not rp.random_seed then
+			rp.random_seed = rp.random_seed_2
+		end
+
+		local gmStr = cjson.encode(rp)
+
+		xyd.models.gMcommand:request("json_fight " .. gmStr)
+	else
+		xyd.BattleController.get():startBattle(params2)
+		self:close()
+	end
 end
 
 function BattleTestWindow:onGmResponse(event)

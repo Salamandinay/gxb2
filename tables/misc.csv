@@ -58,7 +58,7 @@ gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,52019#652026#752019,-1
 gacha_ensure_partner_handbook,52019#652026#752019,-1
 daily_mail_awards_gacha,2,-1
-daily_mail_awards_tree,3|18|37,-1
+daily_mail_awards_tree,3|18|37|43,-1
 daily_mail_awards_gamble,,-1
 daily_mail_awards_drift,30|6|52,-1
 daily_mail_awards_lost_space,4|50|51,-1
@@ -113,7 +113,7 @@ activity_boss_fight_cost,28#1,-1
 activity_boss_open_award,9,-1
 activity_cv_share_award,2#100,-1
 stage_activity_dropbox,74,-1
-stage_activity_dropbox2,74,-1
+stage_activity_dropbox2,16,-1
 stage_activity_dropbox3,74,-1
 stage_activity_dropbox4,168|16,-1
 guild_transfer_cd,604800,-1
@@ -456,7 +456,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,nuolisi_pifu03_lihui01|470|-1156|0.63|5401704|7267,-1
+activity_45_hero_model,spdegula_pifu03_lihui01|580|-1757|0.55|5101704|7274,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -542,7 +542,7 @@ activity_fairytale_main_cell,1.25,-1
 school_practise_season1_start_time,1600387200,-1
 school_practise_season_duration,1209600,-1
 school_practise_display_duration,86400,-1
-activity_red_riding_hood_mail,193|192|138|137|136,-1
+activity_red_riding_hood_mail,193|192|138|137|136|242,-1
 activity_fairytale_boss_skill,12701|12703|12704|12705,-1
 activity_fairytale_first_plot,4455,-1
 activity_red_riding_hood_awards_1,940004#50|73#15,-1
@@ -638,12 +638,13 @@ activity_newbee_fund_sell_time,7,-1
 activity_newbee_fund_get_time,30,-1
 newbee_10gacha_time,604800,-1
 newbee_10gacha,1#3#6|2#4#4|2#8#0|4#6#0|8#2#0,-1
-newbee_10gacha2,1#4#5|1#7#2|2#8#0|3#7#0,-1
-newbee_10gacha_dropbox,900002|900003|900004,-1
+newbee_10gacha2,1#3#6|2#4#4|2#8#0|4#6#0|8#2#0,-1
+newbee_10gacha_dropbox,900009|900010|900011,-1
+newbee_10gacha_dropbox2,900002|900003|900004,-1
 activity_newbee_fund_level_limit,25,-1
 activity_63_hero_model,guojia_pifu03_lihui01|-340|-1178|0.864|1,-1
 activity_newbee_total_value,20000,-1
-newbee_10gacha_partner_jump,51012|52014|53011|54011,-1
+newbee_10gacha_partner_jump,51017|53017|54017|52018,-1
 activity_mission_time,7|14,-1
 activity_newbee_gacha_security_time,20|5,-1
 activity_newbee_gacha_dropbox,900005,-1
@@ -1114,3 +1115,4 @@ activity_spfarm_fight_lvl,3,-1
 activity_spfarm_time,14|1,-1
 activity_spfarm_dress,1027401,-1
 activity_lost_space_extra_award,427,-1
+activity_red_riding_hood_awards_4,358#5|4206001#10,-1
