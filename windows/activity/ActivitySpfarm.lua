@@ -164,6 +164,7 @@ function ActivitySpfarm:initChat()
 		end
 	end
 
+	showId = showId or 1
 	self.chatLabel.text = xyd.tables.activitySpfarmDialogTextTable:getContent(showId)
 
 	xyd.db.misc:setValue({

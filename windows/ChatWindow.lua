@@ -492,6 +492,26 @@ function ChatWindow:onTopTouch(index)
 end
 
 function ChatWindow:updateRect(index)
+	if index ~= xyd.MsgType.PRIVATE then
+		self.groupNone_:SetActive(false)
+
+		self.imgListBg.height = 693
+
+		self.imgListBg:SetLocalPosition(0, -15, 0)
+	end
+
+	if index == xyd.MsgType.PRIVATE then
+		self:updatePlayerList()
+
+		if self.isDetail == true then
+			self.chat_:getPlayerMessages(self.toPlayerId)
+		end
+
+		self.imgListBg.height = 764
+
+		self.imgListBg:SetLocalPosition(0, -51, 0)
+	end
+
 	local w = self:getScrollerUiPanel():GetComponent(typeof(UIRect))
 
 	if index == xyd.MsgType.RECRUIT and self.guildModel_.guildID <= 0 then
@@ -518,26 +538,6 @@ function ChatWindow:updateRect(index)
 	else
 		self.guildOnlineGroup:SetActive(false)
 		w:SetTopAnchor(self.imgListBg.gameObject, 1, -4)
-	end
-
-	if index ~= xyd.MsgType.PRIVATE then
-		self.groupNone_:SetActive(false)
-
-		self.imgListBg.height = 693
-
-		self.imgListBg:SetLocalPosition(0, -15, 0)
-	end
-
-	if index == xyd.MsgType.PRIVATE then
-		self:updatePlayerList()
-
-		if self.isDetail == true then
-			self.chat_:getPlayerMessages(self.toPlayerId)
-		end
-
-		self.imgListBg.height = 764
-
-		self.imgListBg:SetLocalPosition(0, -51, 0)
 	end
 end
 

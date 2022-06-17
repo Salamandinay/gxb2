@@ -2,7 +2,7 @@ local CollectionSkinWindow = class("CollectionSkinWindow", import(".BaseWindow")
 local PartnerCardRender = class("PartnerCardRender", import("app.common.ui.FixedMultiWrapContentItem"))
 local PartnerCard = import("app.components.PartnerCard")
 local CommonTabBar = import("app.common.ui.CommonTabBar")
-local ThemeItem = class("ThemeItem", import("app.common.ui.FixedWrapContentItem"))
+local ThemeItem = class("ThemeItem", import("app.common.ui.FlexibleWrapContentItem"))
 local LuaFlexibleWrapContent = import("app.common.ui.FlexibleWrapContent")
 
 function CollectionSkinWindow:ctor(name, params)
@@ -43,6 +43,8 @@ function CollectionSkinWindow:initWindow()
 	self:initLayout()
 
 	if self.canInit then
+		self.canInit = false
+
 		self:initData()
 		self:updateRankGroup()
 		self:updateContent()
@@ -340,9 +342,13 @@ function CollectionSkinWindow:register()
 		end
 	end)
 	self.eventProxy_:addEventListener(xyd.event.GET_COLLECTION_INFO, function ()
-		self:initData()
-		self:updateRankGroup()
-		self:updateContent()
+		if not self.canInit then
+			self.canInit = true
+
+			self:initData()
+			self:updateRankGroup()
+			self:updateContent()
+		end
 	end)
 	self.eventProxy_:addEventListener(xyd.event.UPDATE_SKIN_BONUS, function ()
 		self.effectPos:SetActive(true)
@@ -823,22 +829,6 @@ function ThemeItem:onTouchAward()
 	self.parent:getAward()
 end
 
-function ThemeItem:getRealIndex()
-	return self.realIndex
-end
-
-function ThemeItem:setRealIndex(index)
-	self.realIndex = index
-end
-
-function ThemeItem:fixPos(pos)
-	self.go.transform.localPosition = Vector3(pos.x, pos.y, pos.z)
-end
-
-function ThemeItem:getPos()
-	return self.go.transform.localPosition
-end
-
 function ThemeItem:getHeight()
 	local data = self.parent.collectionDatasByTheme[-self.realIndex]
 
@@ -847,10 +837,6 @@ function ThemeItem:getHeight()
 	end
 
 	return 315
-end
-
-function ThemeItem:getGo()
-	return self.go
 end
 
 return CollectionSkinWindow

@@ -337,6 +337,10 @@ function ShenXueWindow:initLayOut()
 		self.autoStar5Label.fontSize = 20
 	end
 
+	if xyd.Global.lang == "de_de" then
+		self.autoLabel.fontSize = 20
+	end
+
 	self.autoBtn:GetComponent(typeof(UISprite)).width = self.autoLabel.width + 80
 	self.autoStar5Btn:GetComponent(typeof(UISprite)).width = self.autoStar5Label.width + 80
 

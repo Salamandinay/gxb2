@@ -617,17 +617,21 @@ function BatchShenXueWindow:onClickMaterialBtn()
 	local selectedPartners = {}
 
 	for i = 1, #ids do
-		local partner = Partner.new()
+		local tenStarTableID = xyd.tables.partnerTable:getTenStarTableID(ids[i])
 
-		partner:populate({
-			star = 5,
-			tableID = ids[i],
-			partnerID = ids[i]
-		})
-		table.insert(benchPartners, partner)
+		if tenStarTableID then
+			local partner = Partner.new()
 
-		if helpArr[ids[i]] then
-			table.insert(selectedPartners, ids[i])
+			partner:populate({
+				star = 5,
+				tableID = ids[i],
+				partnerID = ids[i]
+			})
+			table.insert(benchPartners, partner)
+
+			if helpArr[ids[i]] then
+				table.insert(selectedPartners, ids[i])
+			end
 		end
 	end
 
@@ -638,8 +642,21 @@ function BatchShenXueWindow:onClickMaterialBtn()
 		confirmCallback = function ()
 			local win = xyd.WindowManager:get():getWindow("choose_partner_with_filter_window")
 			local selectPartnerIDs = win:getSelected() or {}
+			local result = {}
 
-			xyd.models.shenxue:setMaterialPartnerRecordTableIDs(selectPartnerIDs)
+			for key, value in ipairs(selectPartnerIDs) do
+				table.insert(result, value)
+			end
+
+			for key, value in ipairs(ids) do
+				local tenStarTableID = xyd.tables.partnerTable:getTenStarTableID(value)
+
+				if not tenStarTableID then
+					table.insert(result, value)
+				end
+			end
+
+			xyd.models.shenxue:setMaterialPartnerRecordTableIDs(result)
 			xyd.openWindow("batch_shen_xue_window", {
 				hostStar = self.hostStar
 			})

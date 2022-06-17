@@ -85,6 +85,7 @@ function ChoosePartnerWithFilterWindow:updateData()
 	end
 
 	self.multiWrap_:setInfos(self.infos, {})
+	self.multiWrap_:resetPosition()
 	self.scrollView:ResetPosition()
 end
 
@@ -194,15 +195,12 @@ function ChoosePartnerWithFilterWindow:register()
 	end
 
 	UIEventListener.Get(self.sureBtn).onClick = function ()
+		self.confirmCallback()
 		self:close()
 	end
 end
 
 function ChoosePartnerWithFilterWindow:willClose()
-	if self.confirmCallback then
-		self.confirmCallback()
-	end
-
 	BaseWindow.willClose(self)
 end
 

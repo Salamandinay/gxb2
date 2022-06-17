@@ -6207,7 +6207,12 @@ function PartnerDetailWindow:checkExSkillGuide()
 		return
 	end
 
+	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
 	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI and xyd.models.slot:needExskillGuide() then
+		print("test:=============11111111111")
 		xyd.WindowManager:get():openWindow("exskill_guide_window", {
 			wnd = self,
 			table = xyd.tables.partnerExskillGuideTable,

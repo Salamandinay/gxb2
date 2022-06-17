@@ -344,7 +344,7 @@ function ShenXueModel:onOneClickLevelUp(event)
 	end
 
 	local fiveStarTableID = self.hostPartner:getTableID()
-	local SixStarTableID = tonumber(xyd.tables.partnerTable:getHeroList(fiveStarTableID)[2])
+	local SixStarTableID = xyd.tables.partnerTable:getSixStarTableID(fiveStarTableID)
 	local msg = messages_pb.compose_partner_req()
 	msg.table_id = SixStarTableID
 
@@ -356,6 +356,8 @@ function ShenXueModel:onOneClickLevelUp(event)
 		if not self.useArr[tableID] then
 			self.useArr[tableID] = 1
 		end
+
+		dump(self.material_list)
 
 		local index = self.useArr[tableID]
 
@@ -398,8 +400,8 @@ function ShenXueModel:awakePartner(event)
 		return
 	end
 
-	local fiveStarTableID = tonumber(xyd.tables.partnerTable:getHeroList(self.hostPartner:getTableID())[1])
-	local SixStarTableID = tonumber(xyd.tables.partnerTable:getHeroList(fiveStarTableID)[2])
+	local fiveStarTableID = tonumber(xyd.tables.partnerTable:getFiveStarTableID(self.hostPartner:getTableID()))
+	local SixStarTableID = tonumber(xyd.tables.partnerTable:getSixStarTableID(fiveStarTableID))
 	local material_ids = {}
 	local material = xyd.split(xyd.tables.partnerTable:getAwakeMaterial(SixStarTableID), "|")[self.hostPartner:getAwake() + 1]
 	material = xyd.split(material, "#")
