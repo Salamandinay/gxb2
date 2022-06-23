@@ -335,7 +335,14 @@ function ActivityLostSpaceMapWindow:layout()
 	self:updateAutoBtnShow()
 	self:updateAutoClickDoorShow()
 
-	if xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG):checkBuy() then
+	local checkData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG)
+	local isCheckBuy = nil
+
+	if checkData then
+		isCheckBuy = checkData:checkBuy()
+	end
+
+	if isCheckBuy then
 		xyd.setUISpriteAsync(self.newAwardBtnUISprite, nil, "activity_lost_space_icon_djb2x90")
 
 		self.newAwardBtnLabel.text = __("ACTIVITY_LOST_SPACE_TEXT08")
@@ -1579,8 +1586,8 @@ function MapGridItem:getTipsCon()
 		self.tipsImg = self.tipsCon:ComponentByName("tipsImg", typeof(UITexture))
 		self.tipsImg.depth = self.depthNum + 37 + 50
 
-		self.tipsImg.gameObject:Y(18)
-		self.tipsImg.gameObject:SetLocalScale(1, 0.88, 1)
+		self.tipsImg.gameObject:Y(14.1)
+		self.tipsImg.gameObject:SetLocalScale(1, 1, 1)
 		self.tipsCon.gameObject:Y(-13)
 
 		self.tipsEffect = xyd.Spine.new(self.tipsImg.gameObject)

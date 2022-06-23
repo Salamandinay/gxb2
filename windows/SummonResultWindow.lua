@@ -1193,6 +1193,10 @@ function HeroAltarItem:getUIComponent()
 	self.itemGroup = self.go:NodeByName("item_group").gameObject
 
 	self.itemGroup:SetActive(false)
+
+	self.commonedIcon = self.go:NodeByName("commoned_icon").gameObject
+
+	self.commonedIcon:SetActive(false)
 end
 
 function HeroAltarItem:setInfo(params)
@@ -1213,7 +1217,16 @@ function HeroAltarItem:setInfo(params)
 			noWays = params.noWays
 		}
 
+		if self.parentWin.params_.type == TypeEnum.SIMULATION_GACHA and xyd.tables.partnerRecommendSimulationTable:checkIsRecommend(params.itemID) then
+			cParams.showRecommoned = true
+			cParams.recommonedText = __("PARTNER_RECOMMEND_TIPS")
+		end
+
 		xyd.WindowManager.get():openWindow("partner_info", cParams)
+	end
+
+	if self.parentWin.params_.type == TypeEnum.SIMULATION_GACHA and xyd.tables.partnerRecommendSimulationTable:checkIsRecommend(params.itemID) then
+		self.commonedIcon:SetActive(true)
 	end
 
 	self.heroIcon:setInfo(params)

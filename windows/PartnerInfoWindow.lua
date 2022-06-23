@@ -32,6 +32,8 @@ function PartnerInfoWindow:ctor(name, params)
 	self.isHideForce = params.isHideAttr
 	self.isHideWays = params.noWays
 	self.isEntrance = params.isEntrance
+	self.showRecommoned = params.showRecommoned or false
+	self.recommonedText = params.recommonedText
 
 	if self.partnerid ~= 0 then
 		local slot = xyd.models.slot
@@ -129,6 +131,10 @@ function PartnerInfoWindow:getUIComponent()
 	self.groupWays_ = self.wayGroup:NodeByName("groupWays_").gameObject
 	self.groupWaysGrid = self.groupWays_:GetComponent(typeof(UIGrid))
 	self.wayBg = self.wayGroup:ComponentByName("wayBg", typeof(UIWidget))
+	self.groupAdvertise_ = content:NodeByName("groupAdvertise_").gameObject
+	self.groupRecommoned = self.groupAdvertise_:NodeByName("groupRecommoned").gameObject
+	self.layoutRecommoned = self.groupRecommoned:NodeByName("layout").gameObject
+	self.labelRecommoned = self.layoutRecommoned:ComponentByName("labelRecommoned", typeof(UILabel))
 end
 
 function PartnerInfoWindow:initWindow()
@@ -180,6 +186,14 @@ function PartnerInfoWindow:setLayout()
 
 	if self.isHideWays then
 		self.btnWays_:SetActive(false)
+	end
+
+	if self.showRecommoned then
+		self.groupRecommoned:SetActive(true)
+
+		self.labelRecommoned.text = self.recommonedText
+
+		self.layoutRecommoned:GetComponent(typeof(UILayout)):Reposition()
 	end
 
 	self:createWays()

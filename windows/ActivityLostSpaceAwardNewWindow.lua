@@ -1,6 +1,7 @@
 local ActivityLostSpaceAwardNewWindow = class("ActivityLostSpaceAwardNewWindow", import(".BaseWindow"))
 local LittleItem = class("LittleItem", import("app.components.CopyComponent"))
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
+local baseCommonAwardNum = xyd.tables.miscTable:getNumber("activity_lost_space_repeat_award", "value")
 
 function ActivityLostSpaceAwardNewWindow:ctor(name, params)
 	ActivityLostSpaceAwardNewWindow.super.ctor(self, name, params)
@@ -21,6 +22,7 @@ function ActivityLostSpaceAwardNewWindow:getUIComponent()
 	self.groupAction = self.window_:NodeByName("groupAction").gameObject
 	self.titleLabel = self.groupAction:ComponentByName("titleLabel", typeof(UILabel))
 	self.closeBtn = self.groupAction:NodeByName("closeBtn").gameObject
+	self.tipsBtn = self.groupAction:NodeByName("tipsBtn").gameObject
 	self.groupContent = self.groupAction:ComponentByName("groupContent", typeof(UISprite))
 	self.textCol1 = self.groupContent:ComponentByName("textCol1", typeof(UILabel))
 	self.textCol2 = self.groupContent:ComponentByName("textCol2", typeof(UILabel))
@@ -44,6 +46,11 @@ end
 function ActivityLostSpaceAwardNewWindow:registerEvent()
 	UIEventListener.Get(self.closeBtn.gameObject).onClick = handler(self, function ()
 		self:close()
+	end)
+	UIEventListener.Get(self.tipsBtn.gameObject).onClick = handler(self, function ()
+		xyd.WindowManager.get():openWindow("help_window", {
+			key = "ACTIVITY_LOST_SPACE_TEXT10"
+		})
 	end)
 	UIEventListener.Get(self.btnGoUnLock.gameObject).onClick = handler(self, function ()
 		local lostSpaceMapWd = xyd.WindowManager.get():getWindow("activity_lost_space_map_window")
@@ -75,7 +82,7 @@ function ActivityLostSpaceAwardNewWindow:layout()
 	if self.activityID == xyd.ActivityID.ACTIVITY_LOST_SPACE then
 		self.btnGoActivity.gameObject:SetActive(false)
 
-		if self.activityLostSpaceGiftData:checkBuy() then
+		if self.activityLostSpaceGiftData and self.activityLostSpaceGiftData:checkBuy() then
 			self.btnGoUnLock.gameObject:SetActive(false)
 		else
 			self.btnGoUnLock.gameObject:SetActive(true)
@@ -88,7 +95,7 @@ function ActivityLostSpaceAwardNewWindow:layout()
 	local arr = {}
 	local jumpToId = -1
 
-	for i = 1, 30 do
+	for i = 1, baseCommonAwardNum do
 		local temp = {
 			index = i
 		}
@@ -96,10 +103,10 @@ function ActivityLostSpaceAwardNewWindow:layout()
 		table.insert(arr, temp)
 	end
 
-	if self.activityData.detail.stage_id <= 30 then
+	if self.activityData.detail.stage_id <= baseCommonAwardNum then
 		jumpToId = self.activityData.detail.stage_id
 	else
-		jumpToId = 30
+		jumpToId = baseCommonAwardNum
 	end
 
 	self.wrapContentList:setInfos(arr, {})
@@ -199,7 +206,7 @@ function LittleItem:update(index, info)
 
 	self.baseIcon:setScale(0.7037037037037037)
 
-	if self.index < 30 then
+	if self.index < baseCommonAwardNum then
 		if self.index < self.parent.activityData.detail.stage_id then
 			self.baseIcon:setChoose(true)
 		else
@@ -211,7 +218,22 @@ function LittleItem:update(index, info)
 		self.baseIcon:setChoose(true)
 	end
 
+	if self.index == baseCommonAwardNum then
+		self.name.text = __("ACTIVITY_LOST_SPACE_AWARD_NUM", baseCommonAwardNum .. " - " .. allLength)
+	else
+		self.name.text = __("ACTIVITY_LOST_SPACE_AWARD_NUM", tostring(self.index))
+	end
+
 	local highAwards = xyd.tables.activityLostSpaceAwardsTable:getExtraAward(self.index)
+
+	if highAwards and #highAwards > 0 then
+		-- Nothing
+	elseif self.highIcon then
+		self.highIcon:SetActive(false)
+
+		return
+	end
+
 	local highParams = {
 		isAddUIDragScrollView = true,
 		isShowSelected = false,
@@ -229,14 +251,8 @@ function LittleItem:update(index, info)
 
 	self.highIcon:setScale(0.7037037037037037)
 
-	if self.index == 30 then
-		self.name.text = __("ACTIVITY_LOST_SPACE_AWARD_NUM", "30 - " .. allLength)
-	else
-		self.name.text = __("ACTIVITY_LOST_SPACE_AWARD_NUM", tostring(self.index))
-	end
-
-	if self.parent.activityLostSpaceGiftData:checkBuy() then
-		if self.index < 30 then
+	if self.parent.activityLostSpaceGiftData and self.parent.activityLostSpaceGiftData:checkBuy() then
+		if self.index < baseCommonAwardNum then
 			if self.index < self.parent.activityData.detail.stage_id then
 				self.highIcon:setChoose(true)
 			else

@@ -36,11 +36,13 @@ function BattleTestWindow:getUIComponent()
 	local teamIdGroup = content:NodeByName("teamIdGroup").gameObject
 	local timesGroup = content:NodeByName("timesGroup").gameObject
 	local godGroup = content:NodeByName("godGroup").gameObject
+	local insertSkillGroup = content:NodeByName("insertSkillGroup").gameObject
 	self.closeBtn = content:NodeByName("closeBtn").gameObject
 	self.battleIdInput = battleIdGroup:ComponentByName("input", typeof(UIInput))
 	self.teamIdInput = teamIdGroup:ComponentByName("input", typeof(UIInput))
 	self.timesInput = timesGroup:ComponentByName("input", typeof(UIInput))
 	self.godInput = godGroup:ComponentByName("input", typeof(UIInput))
+	self.insertSkillInput = insertSkillGroup:ComponentByName("input", typeof(UIInput))
 	self.msgNode = trans:NodeByName("msgNode").gameObject
 	self.msgText = self.msgNode:ComponentByName("msgText", typeof(UILabel))
 	self.select99Btn = content:ComponentByName("select99Btn", typeof(UIToggle))
@@ -48,7 +50,7 @@ function BattleTestWindow:getUIComponent()
 	self.teamABtn = content:NodeByName("teamABtn").gameObject
 	self.teamBBtn = content:NodeByName("teamBBtn").gameObject
 	self.fightSelfBtn = content:NodeByName("fightSelfBtn").gameObject
-	self.sureBtn = content:NodeByName("sureBtn").gameObject
+	self.tableBtn = content:NodeByName("tableBtn").gameObject
 	self.jsonBtn = content:NodeByName("jsonBtn").gameObject
 	self.realJsonBtn = content:NodeByName("realJsonBtn").gameObject
 	self.testBtn = content:NodeByName("testBtn").gameObject
@@ -64,6 +66,8 @@ function BattleTestWindow:layout()
 	self.timesInput.defaultText = "times"
 	self.godInput.value = ""
 	self.godInput.defaultText = "god skills"
+	self.insertSkillInput.value = ""
+	self.insertSkillInput.defaultText = "add skill to pos(1;6748301)"
 
 	if xyd.db.misc:getValue("test_table_fight", -1) then
 		local values = xyd.split(xyd.db.misc:getValue("test_table_fight", -1), ";")
@@ -73,6 +77,11 @@ function BattleTestWindow:layout()
 			self.teamIdInput.value = values[2]
 			self.timesInput.value = values[3]
 		end
+	end
+
+	if xyd.db.misc:getValue("insert_skills", -1) then
+		local str = xyd.db.misc:getValue("insert_skills", -1) or ""
+		self.insertSkillInput.value = str
 	end
 
 	if xyd.db.misc:getValue("god_skills", -1) then
@@ -116,7 +125,7 @@ function BattleTestWindow:register()
 	BattleTestWindow.super.register(self)
 	self.eventProxy_:addEventListener(xyd.event.GM_COMMOND, handler(self, self.onGmResponse))
 
-	UIEventListener.Get(self.sureBtn).onClick = function ()
+	UIEventListener.Get(self.tableBtn).onClick = function ()
 		self:startBattle()
 	end
 
@@ -290,12 +299,17 @@ function BattleTestWindow:selfFight()
 		skinBonusA = xyd.models.collection:getSkinCollectionLevel(),
 		skinBonusB = xyd.models.collection:getSkinCollectionLevel(),
 		god_skills = {},
+		insertPosSkills = {},
 		random_seed = math.random(1, 10000),
 		maxRound = tonumber(xyd.db.misc:getValue("test_battle_round", -1)) or 99
 	}
 
 	if self.godInput.value ~= "" then
 		params.god_skills = xyd.splitToNumber(self.godInput.value, ";")
+	end
+
+	if self.insertSkillInput.value ~= "" then
+		params.insertPosSkills = xyd.splitToNumber(self.insertSkillInput.value, ";")
 	end
 
 	local reporter = BattleCreateReport.new(params)
@@ -312,6 +326,11 @@ function BattleTestWindow:selfFight()
 		key = "god_skills",
 		playerId = -1,
 		value = self.godInput.value
+	})
+	xyd.db.misc:setValue({
+		key = "insert_skills",
+		playerId = -1,
+		value = self.insertSkillInput.value
 	})
 
 	if xyd.db.misc:getValue("test_index", -1) ~= "1" then
@@ -603,6 +622,11 @@ function BattleTestWindow:createTestReport(battleID, testTeamID)
 		playerId = -1,
 		value = self.godInput.value
 	})
+	xyd.db.misc:setValue({
+		key = "insert_skills",
+		playerId = -1,
+		value = self.insertSkillInput.value
+	})
 
 	if testTeamID == -1 then
 		local dbValA = xyd.db.formation:getValue(xyd.BattleType.TEST_A)
@@ -660,6 +684,7 @@ function BattleTestWindow:createTestReport(battleID, testTeamID)
 		guildSkillsB = {},
 		battleID = battleID,
 		god_skills = godSkill,
+		insertPosSkills = {},
 		random_seed = math.random(1, 10000),
 		maxRound = tonumber(xyd.db.misc:getValue("test_battle_round", -1)) or 99
 	}
@@ -669,6 +694,14 @@ function BattleTestWindow:createTestReport(battleID, testTeamID)
 
 		for k, v in ipairs(addGodSkills) do
 			table.insert(params.god_skills, v)
+		end
+	end
+
+	if self.insertSkillInput.value ~= "" then
+		local addGodSkills = xyd.splitToNumber(self.insertSkillInput.value, ";")
+
+		for k, v in ipairs(addGodSkills) do
+			table.insert(params.insertPosSkills, v)
 		end
 	end
 

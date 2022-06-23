@@ -726,10 +726,10 @@ function PartnerDirectionComponent:initText()
 		end
 	end
 
-	self.labelPartnerDungeon1.text = str[1]
-	self.labelPartnerArena1.text = str[2]
-	self.labelPartnerTower1.text = str[3]
-	self.labelPartnerGuildBoss1.text = str[4]
+	self.labelPartnerDungeon1.text = str[4]
+	self.labelPartnerArena1.text = str[3]
+	self.labelPartnerTower1.text = str[1]
+	self.labelPartnerGuildBoss1.text = str[2]
 
 	for i = 1, self.skill_num_ do
 		if tables:getSkillId(self.table_id_, i) then

@@ -404,6 +404,10 @@ function TimeCloisterModel:onStartHang(event)
 
 	redMark:setMark(xyd.RedMarkType.TIME_CLOISTER_CAN_PROBE, false)
 	self:reqCardInfo(true)
+
+	local time = xyd.getServerTime() + xyd.tables.deviceNotifyTable:getDelayTime(xyd.DEVICE_NOTIFY.TIME_CLOISTER)
+
+	xyd.models.deviceNotify:setNotifyTime(xyd.DEVICE_NOTIFY.TIME_CLOISTER, time)
 end
 
 function TimeCloisterModel:onStopHang(event)
@@ -411,6 +415,10 @@ function TimeCloisterModel:onStopHang(event)
 	self.leftProbeTime = 0
 
 	redMark:setMark(xyd.RedMarkType.TIME_CLOISTER_PROBE_COMPLETED, true)
+
+	local time = 0
+
+	xyd.models.deviceNotify:setNotifyTime(xyd.DEVICE_NOTIFY.TIME_CLOISTER, time)
 end
 
 function TimeCloisterModel:onGetHang(event)

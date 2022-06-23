@@ -747,15 +747,17 @@ function BatchAwakeWindow:onClickMaterialBtn()
 			end
 
 			xyd.models.shenxue:setMaterialPartnerRecordTableIDs(result)
-			xyd.openWindow("batch_awake_window", {
-				destStar = self.destStar
-			})
 
 			local win = xyd.WindowManager:get():getWindow("shenxue_window")
 
 			if win then
 				win:updateMaterialPartnerhelpArr()
 			end
+		end,
+		closeCallback = function ()
+			xyd.openWindow("batch_shen_xue_window", {
+				hostStar = self.hostStar
+			})
 		end
 	}
 

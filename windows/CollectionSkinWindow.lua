@@ -66,6 +66,7 @@ function CollectionSkinWindow:getComponent()
 	self.progressLabel_ = self.progressGroup:ComponentByName("progressLabel_", typeof(UILabel))
 	self.btnHelp = self.topGroup:NodeByName("btnHelp").gameObject
 	self.btnLevelUp = self.topGroup:NodeByName("btnLevelUp").gameObject
+	self.dianjiEffectPos = self.btnLevelUp:NodeByName("dianjiEffectPos").gameObject
 	self.effectPos = self.progressGroup:ComponentByName("effectPos", typeof(UITexture))
 	self.editGroup = self.midGroup_:NodeByName("editGroup").gameObject
 	self.textEdit = self.editGroup:ComponentByName("textEdit_", typeof(UILabel))
@@ -97,6 +98,7 @@ function CollectionSkinWindow:getComponent()
 	self.labelByTime = self.sortPop:ComponentByName("tab_1/label", typeof(UILabel))
 	self.labelByTheme = self.sortPop:ComponentByName("tab_2/label", typeof(UILabel))
 	self.labelByRank = self.sortPop:ComponentByName("tab_3/label", typeof(UILabel))
+	self.labelByPartner = self.sortPop:ComponentByName("tab_4/label", typeof(UILabel))
 	self.scrollView_ = winTrans:ComponentByName("content", typeof(UIScrollView))
 	self.grid_ = winTrans:ComponentByName("content/grid", typeof(MultiRowWrapContent))
 	self.wrapContent_ = require("app.common.ui.FixedMultiWrapContent").new(self.scrollView_, self.grid_, partnerCardRoot, PartnerCardRender, self)
@@ -164,7 +166,8 @@ function CollectionSkinWindow:updateData()
 			if #showIDs > 0 then
 				table.insert(self.collectionDatasByTheme, {
 					themeID = themeID,
-					showIDs = showIDs
+					showIDs = showIDs,
+					skinNums = #skinIDs
 				})
 			end
 		end
@@ -174,6 +177,50 @@ function CollectionSkinWindow:updateData()
 			local rankB = xyd.tables.collectionSkinGroupTable:getRank(b.themeID)
 
 			return rankA < rankB
+		end)
+	elseif self.sortType == 4 then
+		self.collectionDatasByPartner = {}
+		local skinNumsHelpArr = {}
+		local collectionIDs = xyd.tables.collectionTable:getIdsListByType(xyd.CollectionTableType.SKIN)
+
+		for _, collectionID in ipairs(collectionIDs) do
+			local skin_id = xyd.tables.collectionTable:getItemId(collectionID)
+			local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
+			local partnerTableID = tonumber(tableList[1])
+
+			if not skinNumsHelpArr[partnerTableID] then
+				skinNumsHelpArr[partnerTableID] = 0
+			end
+
+			if self:canShow(collectionID) then
+				if not self.collectionDatasByPartner[partnerTableID] then
+					self.collectionDatasByPartner[partnerTableID] = {
+						partnerTableID = partnerTableID,
+						showIDs = {},
+						skinNums = skinNumsHelpArr[partnerTableID]
+					}
+				end
+
+				table.insert(self.collectionDatasByPartner[partnerTableID].showIDs, collectionID)
+
+				self.collectionDatasByPartner[partnerTableID].skinNums = self.collectionDatasByPartner[partnerTableID].skinNums + 1
+			end
+
+			skinNumsHelpArr[partnerTableID] = skinNumsHelpArr[partnerTableID] + 1
+		end
+
+		local tempArr = self.collectionDatasByPartner
+		self.collectionDatasByPartner = {}
+
+		for key, value in pairs(tempArr) do
+			table.insert(self.collectionDatasByPartner, value)
+		end
+
+		table.sort(self.collectionDatasByPartner, function (a, b)
+			local partnerTableIDA = a.partnerTableID
+			local partnerTableIDB = b.partnerTableID
+
+			return partnerTableIDB < partnerTableIDA
 		end)
 	else
 		self.collectionDatas = {}
@@ -231,6 +278,7 @@ function CollectionSkinWindow:initLayout()
 	self.labelByRank.text = __("COLLECTION_SKIN_TEXT12")
 	self.labelByTheme.text = __("COLLECTION_SKIN_TEXT06")
 	self.labelByTime.text = __("COLLECTION_SKIN_TEXT11")
+	self.labelByPartner.text = __("COLLECTION_SKIN_TEXT29")
 	self.sortBtnLable.text = __("COLLECTION_SKIN_TEXT06")
 	self.labelNoneTips.text = __("NO_SKINS_TIPS")
 	self.tabLabel1.text = __("COLLECTION_SKIN_TEXT07")
@@ -257,7 +305,13 @@ function CollectionSkinWindow:initLayout()
 
 	self.curContentIndex = 2
 	self.showFindGroup = false
-	self.checkHave = true
+	local rec = tonumber(xyd.db.misc:getValue("collection_skin_check_have1"))
+
+	if rec and rec == 1 then
+		self.checkHave = true
+	else
+		self.checkHave = false
+	end
 
 	self.imgHaveGot:SetActive(self.checkHave)
 	self.groupChoose:SetActive(not self.showFindGroup)
@@ -315,6 +369,15 @@ function CollectionSkinWindow:updateRankGroup()
 		self.levelUpEffect:setInfo("fx_shengxing", function ()
 			self.levelUpEffect:play("texiao01", 0, 1)
 		end, true)
+
+		if not self.dianjiffect then
+			self.dianjiffect = xyd.Spine.new(self.dianjiEffectPos)
+
+			self.dianjiffect:setInfo("fx_ui_dianji", function ()
+				self.dianjiffect:play("texiao01", 0, 1, function ()
+				end)
+			end)
+		end
 	end
 end
 
@@ -399,6 +462,10 @@ function CollectionSkinWindow:register()
 		end
 
 		self.imgHaveGot:SetActive(self.checkHave)
+		xyd.db.misc:setValue({
+			key = "collection_skin_check_have1",
+			value = self.checkHave
+		})
 		self:updateContent()
 	end
 
@@ -435,7 +502,7 @@ function CollectionSkinWindow:register()
 		end
 	end
 
-	self.sortTab = CommonTabBar.new(self.sortPop, 3, function (index)
+	self.sortTab = CommonTabBar.new(self.sortPop, 4, function (index)
 		self:changeSortType(index)
 	end)
 end
@@ -447,6 +514,8 @@ function CollectionSkinWindow:updateContent()
 
 	if self.sortType == 2 then
 		collection = self.collectionDatasByTheme
+	elseif self.sortType == 4 then
+		collection = self.collectionDatasByPartner
 	end
 
 	if next(collection) == nil then
@@ -455,11 +524,7 @@ function CollectionSkinWindow:updateContent()
 		self.partnerNone:SetActive(false)
 	end
 
-	if self.sortType ~= 2 then
-		self.scrollView_.gameObject:SetActive(true)
-		self.themeScrollView.gameObject:SetActive(false)
-		self.wrapContent_:setInfos(collection, {})
-	elseif self.sortType == 2 then
+	if self.sortType == 2 then
 		self.themeScrollView.gameObject:SetActive(true)
 		self.scrollView_.gameObject:SetActive(false)
 
@@ -471,6 +536,20 @@ function CollectionSkinWindow:updateContent()
 
 		self.themeWrapContent:update()
 		self.themeWrapContent:setDataNum(#self.themeDatas)
+	elseif self.sortType == 4 then
+		self.themeScrollView.gameObject:SetActive(true)
+		self.scrollView_.gameObject:SetActive(false)
+
+		if not self.themeWrapContent then
+			self.themeWrapContent = LuaFlexibleWrapContent.new(self.themeScrollView.gameObject, ThemeItem, self.theme_item, self.themeItemContent, self.themeScrollView, nil, self)
+		end
+
+		self.themeWrapContent:update()
+		self.themeWrapContent:setDataNum(#collection)
+	else
+		self.scrollView_.gameObject:SetActive(true)
+		self.themeScrollView.gameObject:SetActive(false)
+		self.wrapContent_:setInfos(collection, {})
 	end
 end
 
@@ -572,6 +651,8 @@ end
 function CollectionSkinWindow:getDatas()
 	if self.sortType == 2 then
 		return self.collectionDatasByTheme
+	elseif self.sortType == 4 then
+		return self.collectionDatasByPartner
 	else
 		return self.collectionDatas
 	end
@@ -626,7 +707,7 @@ function CollectionSkinWindow:changeSortType(index)
 
 		self.sortType = index
 
-		for i = 1, 3 do
+		for i = 1, 4 do
 			self.sortTab:setTabEnable(i, false)
 		end
 
@@ -681,12 +762,13 @@ function CollectionSkinWindow:changeSortType(index)
 		local textArr = {
 			__("COLLECTION_SKIN_TEXT11"),
 			__("COLLECTION_SKIN_TEXT06"),
-			__("COLLECTION_SKIN_TEXT12")
+			__("COLLECTION_SKIN_TEXT12"),
+			__("COLLECTION_SKIN_TEXT29")
 		}
 		self.sortBtnLable.text = textArr[self.sortType]
 	end
 
-	for i = 1, 3 do
+	for i = 1, 4 do
 		self.sortTab:setTabEnable(i, true)
 	end
 end
@@ -711,6 +793,13 @@ function PartnerCardRender:initUI()
 
 		if self.parent_.parent and self.parent_.parent.sortType and self.parent_.parent.sortType == 2 then
 			params.themeID = xyd.tables.collectionTable:getGroup(self.collectionID)
+		end
+
+		if self.parent_.parent and self.parent_.parent.sortType and self.parent_.parent.sortType == 4 then
+			local skin_id = xyd.tables.collectionTable:getItemId(self.collectionID)
+			local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
+			local partnerTableID = tonumber(tableList[1])
+			params.partnerTableID = partnerTableID
 		end
 
 		xyd.WindowManager.get():openWindow("collection_skin_detail_window", params)
@@ -761,7 +850,11 @@ function ThemeItem:initUI()
 end
 
 function ThemeItem:refresh()
-	self.data = self.parent.collectionDatasByTheme[-self.realIndex]
+	if self.parent.sortType == 2 then
+		self.data = self.parent.collectionDatasByTheme[-self.realIndex]
+	elseif self.parent.sortType == 4 then
+		self.data = self.parent.collectionDatasByPartner[-self.realIndex]
+	end
 
 	if not self.data then
 		self.go.gameObject:SetActive(false)
@@ -771,55 +864,113 @@ function ThemeItem:refresh()
 		self.go.gameObject:SetActive(true)
 	end
 
+	self.partnerTableID = self.data.partnerTableID
 	self.themeID = self.data.themeID
-	self.skinIDs = xyd.tables.collectionSkinGroupTable:getSkins(self.themeID)
-	self.gotNum = 0
+	self.showIDs = self.data.showIDs
+	self.skinNums = self.data.skinNums
 
-	for i = 1, #self.items do
-		self.items[i]:SetActive(false)
-	end
+	if self.data.themeID then
+		self.btndetail:SetActive(true)
 
-	local count = 1
+		self.skinIDs = xyd.tables.collectionSkinGroupTable:getSkins(self.themeID)
+		self.gotNum = 0
 
-	for i = 1, #self.skinIDs do
-		local skin_id = self.skinIDs[i]
-		local collectionID = xyd.tables.itemTable:getCollectionId(skin_id)
-
-		if xyd.models.collection:isGot(collectionID) then
-			self.gotNum = self.gotNum + 1
+		for i = 1, #self.items do
+			self.items[i]:SetActive(false)
 		end
 
-		local flag = false
-		flag = self.parent:canShow(collectionID)
+		local count = 1
 
-		if flag then
-			if not self.items[count] then
-				local tmp = NGUITools.AddChild(self.contentGroup, self.parent.partnerCardRoot)
-				local item = PartnerCardRender.new(tmp, self, self.panel)
-				self.items[count] = item
-			else
-				self.items[count]:SetActive(true)
+		for i = 1, #self.skinIDs do
+			local skin_id = self.skinIDs[i]
+			local collectionID = xyd.tables.itemTable:getCollectionId(skin_id)
+
+			if xyd.models.collection:isGot(collectionID) then
+				self.gotNum = self.gotNum + 1
 			end
 
-			local skin_id = xyd.tables.collectionTable:getItemId(collectionID)
-			local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
-			local params = {
-				tableID = xyd.checkCondition(tableList and #tableList > 0, tableList[1], 0),
-				group = xyd.tables.itemTable:getGroup(collectionID),
-				skin_id = skin_id,
-				themeID = self.themeID,
-				group = xyd.tables.partnerTable:getGroup(tableList[1]),
-				qlt = xyd.tables.collectionTable:getQlt(collectionID)
-			}
+			local flag = false
+			flag = self.parent:canShow(collectionID)
 
-			self.items[count]:update(nil, , params)
+			if flag then
+				if not self.items[count] then
+					local tmp = NGUITools.AddChild(self.contentGroup, self.parent.partnerCardRoot)
+					local item = PartnerCardRender.new(tmp, self, self.panel)
+					self.items[count] = item
+				else
+					self.items[count]:SetActive(true)
+				end
 
-			count = count + 1
+				local skin_id = xyd.tables.collectionTable:getItemId(collectionID)
+				local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
+				local params = {
+					tableID = xyd.checkCondition(tableList and #tableList > 0, tableList[1], 0),
+					group = xyd.tables.itemTable:getGroup(collectionID),
+					skin_id = skin_id,
+					themeID = self.themeID,
+					group = xyd.tables.partnerTable:getGroup(tableList[1]),
+					qlt = xyd.tables.collectionTable:getQlt(collectionID)
+				}
+
+				self.items[count]:update(nil, , params)
+
+				count = count + 1
+			end
 		end
+
+		self.labelTheme.text = xyd.tables.collectionSkinGroupTextTable:getName(self.themeID)
+		self.labelNum.text = self.gotNum .. "/" .. self.skinNums
+	elseif self.data.partnerTableID then
+		self.btndetail:SetActive(false)
+
+		self.gotNum = 0
+
+		for i = 1, #self.items do
+			self.items[i]:SetActive(false)
+		end
+
+		local count = 1
+
+		for i = 1, #self.showIDs do
+			local collectionID = self.showIDs[i]
+
+			if xyd.models.collection:isGot(collectionID) then
+				self.gotNum = self.gotNum + 1
+			end
+
+			local flag = false
+			flag = self.parent:canShow(collectionID)
+
+			if flag then
+				if not self.items[count] then
+					local tmp = NGUITools.AddChild(self.contentGroup, self.parent.partnerCardRoot)
+					local item = PartnerCardRender.new(tmp, self, self.panel)
+					self.items[count] = item
+				else
+					self.items[count]:SetActive(true)
+				end
+
+				local skin_id = xyd.tables.collectionTable:getItemId(collectionID)
+				local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
+				local params = {
+					tableID = xyd.checkCondition(tableList and #tableList > 0, tableList[1], 0),
+					group = xyd.tables.itemTable:getGroup(collectionID),
+					skin_id = skin_id,
+					themeID = xyd.tables.collectionTable:getGroup(collectionID),
+					group = xyd.tables.partnerTable:getGroup(tableList[1]),
+					qlt = xyd.tables.collectionTable:getQlt(collectionID)
+				}
+
+				self.items[count]:update(nil, , params)
+
+				count = count + 1
+			end
+		end
+
+		self.labelTheme.text = xyd.tables.partnerTable:getName(self.partnerTableID)
+		self.labelNum.text = self.gotNum .. "/" .. self.skinNums
 	end
 
-	self.labelTheme.text = xyd.tables.collectionSkinGroupTextTable:getName(self.themeID)
-	self.labelNum.text = self.gotNum .. "/" .. #self.skinIDs
 	self.go:ComponentByName("", typeof(UIWidget)).height = self:getHeight()
 
 	self.contentGroup_Layout:Reposition()
@@ -830,10 +981,18 @@ function ThemeItem:onTouchAward()
 end
 
 function ThemeItem:getHeight()
-	local data = self.parent.collectionDatasByTheme[-self.realIndex]
+	if self.parent.sortType == 4 then
+		local data = self.parent.collectionDatasByPartner[-self.realIndex]
 
-	if data and data.themeID then
-		return math.ceil(math.max(#data.showIDs - 4, 0) / 4) * 265 + 315
+		if data and data.partnerTableID then
+			return math.ceil(math.max(#data.showIDs - 4, 0) / 4) * 265 + 315
+		end
+	else
+		local data = self.parent.collectionDatasByTheme[-self.realIndex]
+
+		if data and data.themeID then
+			return math.ceil(math.max(#data.showIDs - 4, 0) / 4) * 265 + 315
+		end
 	end
 
 	return 315

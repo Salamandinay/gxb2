@@ -61,7 +61,7 @@ daily_mail_awards_gacha,2,-1
 daily_mail_awards_tree,3|18|37|43,-1
 daily_mail_awards_gamble,,-1
 daily_mail_awards_drift,30|6|52,-1
-daily_mail_awards_lost_space,4|50|51,-1
+daily_mail_awards_lost_space,4|50|45,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
@@ -557,7 +557,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,xierkedi_pifu01_lihui01|386|-1509|0.8|75700102|7273,-1
+activity_147_hero_model,apate_pifu05_lihui01|360|-1335|0.9|5500906|7275,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -693,8 +693,8 @@ pet_exlevel_unlock_cost,1#1000000|27#5|216#10,-1
 guild_competition_time,3|7|1,-1
 guild_competition_boss_limit,30,-1
 guild_competition_personal_limit,3,-1
-guild_competition_boss_model,752015|755008|754018,-1
-guild_competition_frame_time,1655683200,-1
+guild_competition_boss_model,757001|752019|751018,-1
+guild_competition_frame_time,1659312000,-1
 activity_puppet_item,217,-1
 pet_exskill_open_level,120,-1
 bp_lottery_cost,221#50,-1
@@ -1049,6 +1049,7 @@ activity_simulation_gacha_10_entrepot_pay,2#50|2#100|2#200,-1
 activity_simulation_gacha_10_time,7,-1
 activity_simulation_gacha_10_open,7|6,-1
 activity_simulation_gacha_10_entrepot_cost,346#1,-1
+activity_simulation_gacha_10_guarantee_time,4,-1
 tower_giftbag_nopay_redmark,20|100|200|300|360|420|480|540|600|660|720|760|800,-1
 activity_freebuy_time,9,-1
 activity_simulation_gacha_10_giftbag_diamonds,346#1|36#2|4201024#1,-1
@@ -1116,3 +1117,7 @@ activity_spfarm_time,14|1,-1
 activity_spfarm_dress,1027401,-1
 activity_lost_space_extra_award,427,-1
 activity_red_riding_hood_awards_4,358#5|4206001#10,-1
+activity_lost_space_random_skill_group1,3|6,-1
+activity_lost_space_random_skill_group2,1|2|4|5,-1
+team_preset_cost,50|150,-1
+activity_lost_space_repeat_award,31,-1

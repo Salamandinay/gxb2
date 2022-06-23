@@ -10372,8 +10372,8 @@ This protocol will only be activated in the direst situations, when there is no 
 The more HP Robbie loses in battle, the more Damage Depletion and Damage Boost she will gain. She can gain at most 130% Damage Boost and 44% Damage Depletion from this skill. (The cap will be reached when she has 40% of her maximum HP remaining)
 When Robbie\'s current HP drops below 30% of her maximum HP for the first time in the battle, she will recover (70% of Maximum HP) HP."
 501108,Sky Island,Energy Conversion,"Before Angelica attacks, she removes all Energy from herself and deals 10% more damage with her Basic Attack."
-501109,Sky Island,Double Tap I,There is a 50% chance for Angelica to deal her Basic Attack twice.
-501110,Sky Island,Double Tap II,There is a 100% chance for Angelica to deal her Basic Attack twice.
+501109,Sky Island,Double Tap I,"The Enemy Syrcotte has a 50% chance to repeat her Basic Attack, but her Attack will be reduced by 5%."
+501110,Sky Island,Double Tap II,"The Enemy Syrcotte has 100% chance to repeat her Basic Attack, but her Attack will be reduced by 10%."
 502108,Sky Island,Crystallize - Attack Absorption,"When an ally is [c][e28002]Crystallized[-][/c], her Attack will be lowered by 20%, and all enemies will gain 5% Attack. Both effects last for 3 Rounds."
 502109,Sky Island,Crystallize - Energy Absorption,"When an ally is Crystallized, she will lose 100 Energy, and all enemies will gain 50 Energy."
 503112,Sky Island,Damage Denial,"When a DoT Effect is afflicted to an ally or an enemy, all enemies will gain 5% Damage Reduction for 3 Rounds."
@@ -14042,3 +14042,46 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 [c][e28002]Canine Protection[-][/c]:
 A Skill Effect that cannot be stacked.
 When the [c][e28002]Magick Barrier[-][/c] protecting the owner of this Effect disappears, this Effect will be triggered and heal the owner. This Effect will disappear after triggered."
+501114,Sky Island,Heart of Scorpius,Sky Island Syrcotte's Heart of Scorpius skill will increase her Damage Depletion by 10% for 1 round instead of granting her a [c][e28002]Magick Barrier[-][/c].
+502113,Sky Island,Canine Protection,Sky Island Eve's [c][e28002]Canine Protection[-][/c] will increase Attack by 10% for 2 rounds instead of recovering HP.
+503117,Sky Island,Thousand Cranes,"Sky Island Chizuko's skills (except for [c][e28002]Luminosity[-][/c]) will not grant [c][e28002]Magick Barrier[-][/c].\nHer Skill ""Kagura Dance"" will remove 3 random Debuffs instead of 1."
+502114,Sky Island,Heavy Strike I,"If a Sky Island Enemy is protected by a [c][e28002]Magick Barrier[-][/c] or will gain a [c][e28002]Magick Barrier[-][/c] after attacking, their Basic Attacks and Active Skills have a 50% chance to stun their opponents for 2 rounds."
+502116,Sky Island,Heavy Strike II,"If a Sky Island Enemy is protected by a [c][e28002]Magick Barrier[-][/c] or will gain a [c][e28002]Magick Barrier[-][/c] after attacking, their Basic Attacks and Active Skills have 100% chance to stun their opponents for 2 rounds."
+5601000,Project A,Basic Attack,
+65602000,Project A,Basic Attack,
+75601000,Project A,Basic Attack,
+5601001,Project A,Active Skill,
+65602001,Project A,Active Skill,
+75601001,Project A,Active Skill,
+5601002,Project A,Passive Skill 1,
+65602002,Project A,Passive Skill 1,
+65602012,Project A,Passive Skill 1,
+75601002,Project A,Passive Skill 1,
+5601003,Project A,Passive Skill 2,
+65602003,Project A,Passive Skill 2,
+65602013,Project A,Passive Skill 2,
+75601003,Project A,Passive Skill 2,
+5601004,Project A,Passive Skill 3,
+65602004,Project A,Passive Skill 3,
+65602014,Project A,Passive Skill 3,
+75601004,Project A,Passive Skill 3,
+756010011,Project A,Elite Skill,
+756010012,Project A,Elite Skill,
+756010013,Project A,Elite Skill,
+756010014,Project A,Elite Skill,
+756010015,Project A,Elite Skill,
+756010021,Project A,Elite Skill,
+756010022,Project A,Elite Skill,
+756010023,Project A,Elite Skill,
+756010024,Project A,Elite Skill,
+756010025,Project A,Elite Skill,
+756010031,Project A,Elite Skill,
+756010032,Project A,Elite Skill,
+756010033,Project A,Elite Skill,
+756010034,Project A,Elite Skill,
+756010035,Project A,Elite Skill,
+756010041,Project A,Elite Skill,
+756010042,Project A,Elite Skill,
+756010043,Project A,Elite Skill,
+756010044,Project A,Elite Skill,
+756010045,Project A,Elite Skill,

@@ -163,7 +163,17 @@ function ServiceWindow:initWindow()
 	ServiceWindow.super.register(self)
 	self:registerEvent()
 	self:layout()
-	xyd.models.settingUp:reqGetServerList()
+
+	if xyd.Global.isHasBeenBanServer then
+		local function serverCallBack(payload)
+			dump(payload, "获得的服务器")
+			self:onUpdate()
+		end
+
+		local serverInfo = xyd.models.settingUp:reqGetServerList(serverCallBack)
+	else
+		xyd.models.settingUp:reqGetServerList()
+	end
 end
 
 function ServiceWindow:layout()

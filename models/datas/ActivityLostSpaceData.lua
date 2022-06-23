@@ -264,4 +264,12 @@ function ActivityLostSpaceData:getLevel(skill_id)
 	return self.detail.lvs[skill_id] or 0
 end
 
+function ActivityLostSpaceData:getBackendSkillIds()
+	local ids = xyd.cloneTable(self.detail.skill_ids)
+
+	table.sort(ids)
+
+	return ids
+end
+
 return ActivityLostSpaceData

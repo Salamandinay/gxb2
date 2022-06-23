@@ -881,9 +881,14 @@ function GuildWarMatchOther:layout()
 
 	if not self.myTeam_ then
 		self.myTeam_ = GuildWarAllFormationSmall.new(self.groupMyTeam_, self.parentPanel_)
+
+		self.myTeam_:setInfo(params)
+	else
+		local rank = xyd.models.guildWar:getRank()
+
+		self.myTeam_:updateRank(rank)
 	end
 
-	self.myTeam_:setInfo(params)
 	self:updateEnergy()
 
 	self.btnMatchLabel_.text = __("MATCH")
@@ -1349,6 +1354,18 @@ function GuildWarAllFormationSmall:setInfo(params)
 	end
 
 	self.serverID_.text = xyd.getServerNumber(self.data_.guild_info.server_id)
+end
+
+function GuildWarAllFormationSmall:updateRank(rank)
+	self.data_.rank = rank
+
+	if self.data_.noHide or self.data_.rank < 50 then
+		self.guildRank_.text = __("RANK") .. ":" .. tostring(self.data_.rank)
+	else
+		local n = math.floor(self.data_.rank / 50)
+		local str = tonumber(n * 50 + 1) .. "~" .. tonumber(n * 50 + 50)
+		self.guildRank_.text = __("RANK") .. ":" .. tostring(str)
+	end
 end
 
 function GuildWarFormationFive:ctor(go, parent)

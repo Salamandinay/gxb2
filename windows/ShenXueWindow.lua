@@ -138,6 +138,7 @@ function ShenXueWindow:getUIComponent()
 	self.autoStar5Label = self.autoStar5Btn:ComponentByName("label", typeof(UILabel))
 	self.batchShenXueBtn = groupMain:NodeByName("batchShenXueBtn").gameObject
 	self.batchShenXueRedPoint = self.batchShenXueBtn:ComponentByName("redPoint", typeof(UISprite))
+	self.clickMask = groupMain:NodeByName("clickMask").gameObject
 end
 
 function ShenXueWindow:initWindow()
@@ -592,6 +593,9 @@ function ShenXueWindow:onComposePartner(event)
 	end
 
 	self.singleShenXue = false
+
+	self:setClickMask(false)
+
 	local params = event.data
 	local pInfo = params.partner_info
 	self.lastTableId = pInfo.table_id
@@ -690,6 +694,9 @@ function ShenXueWindow:onAwakePartner(event)
 	end
 
 	self.singleAwake = false
+
+	self:setClickMask(false)
+
 	local params = event.data
 	local pInfo = params.partner_info
 	self.lastTableId = pInfo.table_id
@@ -920,6 +927,10 @@ function ShenXueWindow:onClickBatchShenXueBtn()
 end
 
 function ShenXueWindow:onClickShenXueBtn()
+	if xyd.models.shenxue:getIsDoingReq() or self.singleShenXue or self.singleAwake then
+		return
+	end
+
 	local isCanForge = true
 
 	if not self.hostPartner_ or self.hostPartner_.tableID ~= self.hostOptionalList_.mTableID then
@@ -1005,6 +1016,7 @@ function ShenXueWindow:onClickShenXueBtn()
 			xyd.Backend:get():request(xyd.mid.COMPOSE_PARTNER, msg)
 		end
 	end)
+	self:setClickMask(true)
 
 	if self.partnerInfo_.star <= 6 then
 		self.singleShenXue = true
@@ -1955,6 +1967,10 @@ function ShenXueWindow:updateMaterialPartnerhelpArr()
 	for i = 1, #materialPartnerRecordTableIDs do
 		self.materialPartnerhelpArr[materialPartnerRecordTableIDs[i]] = 1
 	end
+end
+
+function ShenXueWindow:setClickMask(flag)
+	self.clickMask:SetActive(flag)
 end
 
 function ShenXueWindow:willClose()

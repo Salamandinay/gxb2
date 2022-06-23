@@ -1191,6 +1191,12 @@ function ActivitySpfarmMapWindow:buyTickets()
 					itemID = xyd.ItemID.ACTIVITY_SPFARM_ROB_TICKET
 				},
 				buyCallback = function (num)
+					if self.activityData:isViewing() then
+						xyd.alertTips(__("ACTIVITY_SPFARM_TEXT81"))
+
+						return
+					end
+
 					if maxNumCanBuy <= 0 then
 						xyd.showToast(__("FULL_BUY_SLOT_TIME"))
 
@@ -1478,6 +1484,12 @@ function MapGridItem:onTouch()
 			if maxBackNum > #slotsRob and not self.activityData:isGridAllEmpty() then
 				xyd.alertYesNo(__("ACTIVITY_SPFARM_TEXT60"), function (yes_no)
 					if yes_no then
+						if self.activityData:isViewing() and self.parent:getIsMySelf() then
+							xyd.alertTips(__("ACTIVITY_SPFARM_TEXT81"))
+
+							return
+						end
+
 						self.activityData:endRob()
 					end
 				end)
@@ -1494,6 +1506,12 @@ function MapGridItem:onTouch()
 					wndType = self.curWindowType_,
 					text = __("ACTIVITY_SPFARM_TEXT58"),
 					callback = function ()
+						if self.activityData:isViewing() and self.parent:getIsMySelf() then
+							xyd.alertTips(__("ACTIVITY_SPFARM_TEXT81"))
+
+							return
+						end
+
 						self.activityData:endRob()
 					end,
 					labelNeverText = __("ACTIVITY_SPFARM_TEXT30")
@@ -1501,6 +1519,12 @@ function MapGridItem:onTouch()
 
 				return
 			else
+				if self.activityData:isViewing() and self.parent:getIsMySelf() then
+					xyd.alertTips(__("ACTIVITY_SPFARM_TEXT81"))
+
+					return
+				end
+
 				self.activityData:endRob()
 			end
 		end
@@ -1922,6 +1946,12 @@ function BackContentItem:ctor(go, parent)
 
 		xyd.alertYesNo(__("ACTIVITY_SPFARM_TEXT59"), function (yes_no)
 			if yes_no then
+				if self.activityData:isViewing() and self.parent:getIsMySelf() then
+					xyd.alertTips(__("ACTIVITY_SPFARM_TEXT81"))
+
+					return
+				end
+
 				local slotsRob = self.activityData:getSlotsRob()
 				local index = nil
 
@@ -1931,6 +1961,10 @@ function BackContentItem:ctor(go, parent)
 
 						break
 					end
+				end
+
+				if index == nil then
+					return
 				end
 
 				xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_SPFARM, json.encode({

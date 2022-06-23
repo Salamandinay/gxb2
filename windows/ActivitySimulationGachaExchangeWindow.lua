@@ -17,6 +17,7 @@ function HeroIconItem:ctor(go, parent)
 	self.parent = parent
 	self.icon = self.go:NodeByName("icon").gameObject
 	self.iconBg = self.go:ComponentByName("iconBg", typeof(UISprite))
+	self.iconRecommoned = self.go:NodeByName("iconRecommoned").gameObject
 end
 
 function HeroIconItem:setInfo(params)
@@ -28,6 +29,12 @@ function HeroIconItem:setInfo(params)
 		self.iconBg:SetActive(true)
 	else
 		self.iconBg:SetActive(false)
+	end
+
+	if xyd.tables.partnerRecommendSimulationTable:checkIsRecommend(params.itemID) then
+		self.iconRecommoned:SetActive(true)
+	else
+		self.iconRecommoned:SetActive(false)
 	end
 end
 

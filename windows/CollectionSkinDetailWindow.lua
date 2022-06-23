@@ -9,9 +9,6 @@ function CollectionSkinDetailWindow:ctor(name, params)
 	CollectionSkinDetailWindow.super.ctor(self, name, params)
 
 	self.themeID = params.themeID
-
-	dump(params)
-
 	local win = xyd.WindowManager.get():getWindow("collection_skin_window")
 
 	if win then
@@ -28,6 +25,23 @@ function CollectionSkinDetailWindow:ctor(name, params)
 						skin_id = skinID,
 						collectionID = collectionID,
 						tableID = xyd.tables.partnerTable:getPartnerIdBySkinId(tonumber(skinID))[1]
+					})
+				end
+			end
+		elseif params.partnerTableID then
+			self.currentSortedPartners_ = {}
+			local collectionIDs = xyd.tables.collectionTable:getIdsListByType(xyd.CollectionTableType.SKIN)
+
+			for _, collectionID in ipairs(collectionIDs) do
+				local skin_id = xyd.tables.collectionTable:getItemId(collectionID)
+				local tableList = xyd.tables.partnerPictureTable:getSkinPartner(skin_id)
+				local partnerTableID = tonumber(tableList[1])
+
+				if partnerTableID == params.partnerTableID and win:canShow(collectionID) then
+					table.insert(self.currentSortedPartners_, {
+						skin_id = skin_id,
+						collectionID = collectionID,
+						tableID = partnerTableID
 					})
 				end
 			end

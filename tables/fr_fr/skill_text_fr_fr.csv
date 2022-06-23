@@ -10080,8 +10080,8 @@ Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énerg
 753017044,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 40%, elle pourra augmenter ses dégâts infligés de 125% au maximum et sa Résistance Totale de 40% au maximum.\nLa première fois que ses PV seront inférieurs à 30%, elle récupérera 66% de ses PV Max."
 753017045,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 40%, elle pourra augmenter ses dégâts infligés de 130% au maximum et sa Résistance Totale de 44% au maximum.\nLa première fois que ses PV seront inférieurs à 30%, elle récupérera 70% de ses PV Max."
 501108,Îles Célestes,Conversion d'Énergie,"Avant qu'Angélique n'attaque, toutes ses Énergies seront réduites et les dégâts infligés par son Attaque Basique seront augmentés de 10%."
-501109,Îles Célestes,Double Attaque I,Angélina a 50% de chance de lancer son Attaque Basique 2 fois.
-501110,Îles Célestes,Double Attaque II,Angélina a 100% de chance de lancer son Attaque Basique 2 fois.
+501109,Îles Célestes,Double Attaque I,"L'ennemie Selkis a 50% de chance de lancer son Attaque Basique une seconde fois, mais son Attaque sera réduite de 5%."
+501110,Îles Célestes,Double Attaque II,"L'ennemie Selkis a 100% de chance de lancer son Attaque Basique une seconde fois, mais son Attaque sera réduite de 10%."
 502108,Îles Célestes,Cristallisation - Absorption d'Attaque,"Lorsqu'une alliée est cristallisée, son Attaque sera réduite de 20% et l'Attaque de tous les ennemis sera augmentée de 5% pendant 3 tours."
 502109,Îles Célestes,Cristallisation - Absorption d'Énergie,"Lorsqu'une alliée est cristallisée, ses Énergies seront réduites de 100 et tous les ennemis récupéreront 50 Énergies."
 503112,Îles Célestes,Résistance aux Dégâts,"Lorsqu'une alliée ou un ennemi subit des Dégâts sur la Durée, la Résistance aux Dégâts de tous les ennemis sera augmentée de 5% pendant 3 tours."
@@ -12656,3 +12656,46 @@ La volonté d\'un chien à vouloir protéger son maître peut être étonnante. 
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Protection Canine (Effet de Compétence, non cumulable) :[-][/c]
 Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu\'il ait été déclenché)."
+501114,Îles Célestes,Cœur de Scorpion,"La compétence de Selkis - Cœur de Scorpion ne lui fournit pas de Barrière, cependant sa Résistance Totale sera augmentée de 10% pendant 1 tour."
+502113,Îles Célestes,Protection Canine,"La Protection Canine d'ennemie Éva ne soigne pas des PV, cependant elle augmente de 10% l'Attaque de la cible marquée pendant 2 tours."
+503117,Îles Célestes,Mille Grues,"Les Compétences d'ennemie Chizuko (n'inclut pas Protection Céleste) ne peuvent pas fournir des Barrières, cependant sa compétence - Clochette de Kagura sera renforcée : ennemie Chizuko enlèvera aléatoirement 3 Effets Négatifs sur l'ennemi ayant le moins de PV."
+502114,Îles Célestes,Frappe Violente I,"Si un ennemi est sou la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 50% de chance d'étourdir vos Filles pendant 2 tours."
+502116,Îles Célestes,Frappe Violente II,"Si un ennemi est sou la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 100% de chance d'étourdir vos Filles pendant 2 tours."
+5601000,A,Attaque Basique,
+65602000,A,Attaque Basique,
+75601000,A,Attaque Basique,
+5601001,A,Compétence Active,
+65602001,A,Compétence Active,
+75601001,A,Compétence Active,
+5601002,A,Compétence Passive 1,
+65602002,A,Compétence Passive 1,
+65602012,A,Compétence Passive 1,
+75601002,A,Compétence Passive 1,
+5601003,A,Compétence Passive 2,
+65602003,A,Compétence Passive 2,
+65602013,A,Compétence Passive 2,
+75601003,A,Compétence Passive 2,
+5601004,A,Compétence Passive 3,
+65602004,A,Compétence Passive 3,
+65602014,A,Compétence Passive 3,
+75601004,A,Compétence Passive 3,
+756010011,A,Compétences d'Élite - Active,
+756010012,A,Compétences d'Élite - Active,
+756010013,A,Compétences d'Élite - Active,
+756010014,A,Compétences d'Élite - Active,
+756010015,A,Compétences d'Élite - Active,
+756010021,A,Compétences d'Élite - Passive 1,
+756010022,A,Compétences d'Élite - Passive 1,
+756010023,A,Compétences d'Élite - Passive 1,
+756010024,A,Compétences d'Élite - Passive 1,
+756010025,A,Compétences d'Élite - Passive 1,
+756010031,A,Compétences d'Élite - Passive 2,
+756010032,A,Compétences d'Élite - Passive 2,
+756010033,A,Compétences d'Élite - Passive 2,
+756010034,A,Compétences d'Élite - Passive 2,
+756010035,A,Compétences d'Élite - Passive 2,
+756010041,A,Compétences d'Élite - Passive 3,
+756010042,A,Compétences d'Élite - Passive 3,
+756010043,A,Compétences d'Élite - Passive 3,
+756010044,A,Compétences d'Élite - Passive 3,
+756010045,A,Compétences d'Élite - Passive 3,

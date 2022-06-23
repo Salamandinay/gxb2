@@ -97,7 +97,7 @@ function LoginWindow:initWindow()
 end
 
 function LoginWindow:layout()
-	if not self.isLoginFinish_ then
+	if not self.isLoginFinish_ and not xyd.Global.isHasBeenBanServer then
 		self.loginGroup:SetActive(true)
 		self.loginStart:SetActive(false)
 		self.groupWel:SetActive(false)
@@ -108,7 +108,13 @@ function LoginWindow:layout()
 		self.loginStart:SetActive(true)
 		self.groupWel:SetActive(true)
 		self.backImg2:SetActive(true)
-		self:initAfterLoginGroup()
+
+		if not xyd.Global.isHasBeenBanServer then
+			self:initAfterLoginGroup()
+		else
+			self.topButtonGroup.gameObject:SetActive(false)
+			self:initChoiceOtherServer()
+		end
 	end
 
 	self:resizePosY(self.ziEffectGroup_.gameObject, -495, -634)
@@ -396,6 +402,20 @@ end
 function LoginWindow:setLoginSuccState()
 	self.loginStart:SetActive(false)
 	self.ziEffectGroup_:SetActive(false)
+end
+
+function LoginWindow:initChoiceOtherServer()
+	UnityEngine.PlayerPrefs.SetString("is_change_server_to_enter_game_" .. xyd.Global.uid, "false")
+
+	self.serverId.text = __("LOGIN_TIPS_ERROR_1")
+
+	UIEventListener.Get(self.backImg2).onClick = function ()
+		xyd.alertTips(__("LOGIN_TIPS_ERROR_2"))
+	end
+
+	UIEventListener.Get(self.serverChangeBtn).onClick = function ()
+		xyd.WindowManager.get():openWindow("service_window", {})
+	end
 end
 
 return LoginWindow

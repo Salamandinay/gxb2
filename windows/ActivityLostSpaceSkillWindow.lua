@@ -98,11 +98,12 @@ end
 function ActivityLostSpaceSkillWindow:layout()
 	self.titleLabel_.text = __("SUIT_SKILL_DETAIL_WINDOW_TITLE")
 	local ids = xyd.tables.activityLostSpaceSkillTable:getIds()
-	local choose_id = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE):getChooseSkill()
-	local show_ids = xyd.split(xyd.tables.miscTable:getVal("activity_lost_space_skill"), "|")
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE)
+	local choose_id = activityData:getChooseSkill()
+	local show_ids = activityData:getBackendSkillIds()
 
 	for index, id in ipairs(ids) do
-		if xyd.arrayIndexOf(show_ids, tostring(id)) > 0 then
+		if xyd.arrayIndexOf(show_ids, id) > 0 then
 			if not self.itemList_[index] then
 				local newItemRoot = NGUITools.AddChild(self.grid_.gameObject, self.itemNode_)
 				self.itemList_[index] = SpaceSkillItem.new(newItemRoot, self)

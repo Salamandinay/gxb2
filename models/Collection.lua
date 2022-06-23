@@ -282,6 +282,10 @@ function Collection:getNowCollectionPoint()
 end
 
 function Collection:checkLevelUpRedPoint()
+	if not xyd.checkFunctionOpen(xyd.FunctionID.SKIN_COLLECTION) then
+		xyd.models.redMark:setMark(xyd.RedMarkType.SKIN_LEVEL_CAN_UP, false)
+	end
+
 	local flag = false
 	local point = xyd.models.backpack:getItemNumByID(377)
 	local maxLev = #xyd.tables.collectionSkinEffectTable:getIDs()

@@ -118,12 +118,27 @@ function ActivityLafuliCastleTaskWindow:updateState()
 
 	if self.activityData.detail.m_point > 0 then
 		icon:setEffect(true, "fx_ui_bp_available")
+		icon:setCallBack(handler(self, self.reqAward))
 		xyd.setEnabled(self.btnAward.gameObject, true)
 	else
 		icon:setMask(true)
 		icon:setAlpha(0.5)
+		icon:setCallBack(false)
 		xyd.setEnabled(self.btnAward.gameObject, false)
 	end
+end
+
+function ActivityLafuliCastleTaskWindow:reqAward()
+	if self.activityData.detail.m_point <= 0 then
+		return
+	end
+
+	local params = {
+		type = 3,
+		num = self.activityData.detail.m_point
+	}
+
+	self.activityData:sendReq(params)
 end
 
 function ActivityLafuliCastleTaskWindow:register()
@@ -135,18 +150,7 @@ function ActivityLafuliCastleTaskWindow:register()
 		})
 	end
 
-	UIEventListener.Get(self.btnAward.gameObject).onClick = function ()
-		if self.activityData.detail.m_point <= 0 then
-			return
-		end
-
-		local params = {
-			type = 3,
-			num = self.activityData.detail.m_point
-		}
-
-		self.activityData:sendReq(params)
-	end
+	UIEventListener.Get(self.btnAward.gameObject).onClick = handler(self, self.reqAward)
 
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.updateState))
 end

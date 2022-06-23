@@ -50,6 +50,8 @@ function DressItemUpWindow:getUIComponent()
 	self.afterAttrCon = self.afterCon:NodeByName("afterAttrCon").gameObject
 	self.afterAttrCon_UILayout = self.afterCon:ComponentByName("afterAttrCon", typeof(UILayout))
 	self.afterAttrLabel = self.afterCon:ComponentByName("afterAttrLabel", typeof(UILabel))
+	self.leftArrowImg = self.afterCon:NodeByName("leftArrowImg").gameObject
+	self.rightArrowImg = self.afterCon:NodeByName("rightArrowImg").gameObject
 	self.costGroup = self.groupAction:NodeByName("costGroup").gameObject
 	self.levupBg = self.costGroup:ComponentByName("levupBg", typeof(UISprite))
 	self.costIcon1 = self.costGroup:ComponentByName("costIcon1", typeof(UISprite))
@@ -77,6 +79,20 @@ function DressItemUpWindow:registerEvent()
 		})
 	end)
 	UIEventListener.Get(self.btnUp.gameObject).onClick = handler(self, self.onTouchBtn)
+	UIEventListener.Get(self.rightArrowImg.gameObject).onClick = handler(self, function ()
+		local curRightIndex = xyd.arrayIndexOf(self.allItems, self.curShowRightItemId)
+		self.showRightChangeItemId = self.allItems[curRightIndex + 1]
+		self.isFirstSetCommonNum = false
+
+		self:updateCostInfo()
+	end)
+	UIEventListener.Get(self.leftArrowImg.gameObject).onClick = handler(self, function ()
+		local curRightIndex = xyd.arrayIndexOf(self.allItems, self.curShowRightItemId)
+		self.showRightChangeItemId = self.allItems[curRightIndex - 1]
+		self.isFirstSetCommonNum = false
+
+		self:updateCostInfo()
+	end)
 
 	self.eventProxy_:addEventListener(xyd.event.DRESS_UPGRADE_DRESS, handler(self, self.dressUpgradeDressBack))
 end
@@ -85,6 +101,8 @@ function DressItemUpWindow:layout()
 	self.labelTitle.text = __("DRESS_ITEM_UP_WINDOW_1")
 	self.button_label.text = __("LEV_UP")
 	self.noneText.text = __("DRESS_ITEM_UP_TIPS")
+	local dressId = xyd.tables.senpaiDressItemTable:getDressId(self.item_id)
+	self.allItems = xyd.tables.senpaiDressTable:getItems(dressId)
 
 	self:updateCostInfo()
 end
@@ -93,26 +111,128 @@ function DressItemUpWindow:updateCostInfo()
 	self.common_cost_arr = {}
 	self.fragment_cost_arr = {}
 	self.general_cost_arr = {}
-	local cost_all_items = xyd.tables.senpaiDressItemTable:getUpgradeCost(self.item_id)
+	local nextItemId = xyd.tables.senpaiDressItemTable:getNextId(self.item_id)
+
+	self:setShowMaxIntemIndex(xyd.arrayIndexOf(self.allItems, nextItemId))
+
+	self.curShowRightItemId = nextItemId
+	self.checkItemArrs = {}
+
+	self:addNeedCost(self.item_id)
+	self:checkNext(self.item_id)
+	dump(self.common_cost_arr, "testtests")
+end
+
+function DressItemUpWindow:setShowMaxIntemIndex(idIndex)
+	if not self.showMaxItemInex or self.showMaxItemInex and self.showMaxItemInex < idIndex then
+		self.showMaxItemInex = idIndex
+	end
+end
+
+function DressItemUpWindow:addNeedCost(item_id)
+	local cost_all_items = xyd.tables.senpaiDressItemTable:getUpgradeCost(item_id)
 
 	for i in pairs(cost_all_items) do
 		if xyd.tables.itemTable:getType(cost_all_items[i][1]) == xyd.ItemType.DRESS_FRAGMENT then
-			table.insert(self.fragment_cost_arr, cost_all_items[i])
+			local isSearch = false
+
+			for _, cost in pairs(self.fragment_cost_arr) do
+				if cost[1] == cost_all_items[i][1] then
+					cost[2] = cost[2] + cost_all_items[i][2]
+					isSearch = true
+
+					break
+				end
+			end
+
+			if not isSearch then
+				table.insert(self.fragment_cost_arr, cost_all_items[i])
+			end
 		else
-			table.insert(self.general_cost_arr, cost_all_items[i])
+			local isSearch = false
+
+			for _, cost in pairs(self.general_cost_arr) do
+				if cost[1] == cost_all_items[i][1] then
+					cost[2] = cost[2] + cost_all_items[i][2]
+					isSearch = true
+
+					break
+				end
+			end
+
+			if not isSearch then
+				table.insert(self.general_cost_arr, cost_all_items[i])
+			end
 		end
 	end
 
-	local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(self.item_id)
+	local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(item_id)
 
 	for i in pairs(cost_all_items_2) do
-		table.insert(self.common_cost_arr, cost_all_items_2[i])
+		local isSearch = false
+
+		for _, cost in pairs(self.common_cost_arr) do
+			if cost[1] == cost_all_items_2[i][1] then
+				cost[2] = cost[2] + cost_all_items_2[i][2]
+				isSearch = true
+
+				break
+			end
+		end
+
+		if not isSearch then
+			table.insert(self.common_cost_arr, cost_all_items_2[i])
+		end
+	end
+end
+
+function DressItemUpWindow:checkNext(item_id)
+	if xyd.arrayIndexOf(self.checkItemArrs, item_id) < 0 then
+		table.insert(self.checkItemArrs, item_id)
 	end
 
-	dump(self.common_cost_arr, "创建出的")
-	self:updateCost()
-	self:updateShowItem()
-	self:updateFragment()
+	local function updateFun()
+		self:updateCost()
+		self:updateShowItem()
+		self:updateFragment()
+	end
+
+	local nextItemId = xyd.tables.senpaiDressItemTable:getNextId(item_id)
+
+	if xyd.models.dress:checkMoreItemCanUp(self.checkItemArrs) and nextItemId and nextItemId > 0 then
+		local tempTable = xyd.cloneTable(self.checkItemArrs)
+
+		if xyd.arrayIndexOf(tempTable, nextItemId) < 0 then
+			table.insert(tempTable, nextItemId)
+		end
+
+		if xyd.models.dress:checkMoreItemCanUp(tempTable) then
+			if xyd.arrayIndexOf(self.checkItemArrs, nextItemId) < 0 then
+				table.insert(self.checkItemArrs, nextItemId)
+			end
+
+			self:setShowMaxIntemIndex(xyd.arrayIndexOf(self.allItems, nextItemId))
+
+			self.curShowRightItemId = nextItemId
+
+			if self.showRightChangeItemId and self.showRightChangeItemId == self.curShowRightItemId then
+				updateFun()
+
+				return
+			end
+
+			self:addNeedCost(nextItemId)
+			self:checkNext(nextItemId)
+		else
+			self:setShowMaxIntemIndex(xyd.arrayIndexOf(self.allItems, nextItemId))
+
+			self.curShowRightItemId = nextItemId
+
+			updateFun()
+		end
+	else
+		updateFun()
+	end
 end
 
 function DressItemUpWindow:updateCost()
@@ -191,37 +311,47 @@ function DressItemUpWindow:updateShowItem()
 	end
 
 	self.beforeName.text = xyd.tables.itemTable:getName(self.item_id)
-
-	NGUITools.DestroyChildren(self.beforeAttrCon.transform)
-
 	local text_all_height = 0
 	local gap = self.beforeAttrCon_UILayout.gap.y
+
+	if not self.beforeShowTextArr then
+		self.beforeShowTextArr = {}
+	end
 
 	for i = 1, 3 do
 		local attr = xyd.tables.senpaiDressItemTable["getBase" .. i](xyd.tables.senpaiDressItemTable, self.item_id)
 
+		if not self.beforeShowTextArr[i] then
+			self.beforeShowTextArr[i] = NGUITools.AddChild(self.beforeAttrCon.gameObject, self.beforeAttrLabel.gameObject)
+		end
+
 		if attr and attr ~= 0 then
-			local attr_obj = NGUITools.AddChild(self.beforeAttrCon.gameObject, self.beforeAttrLabel.gameObject)
+			self.beforeShowTextArr[i]:SetActive(true)
 
-			attr_obj:SetActive(true)
-
-			local attr_text = attr_obj:GetComponent(typeof(UILabel))
+			local attr_text = self.beforeShowTextArr[i]:GetComponent(typeof(UILabel))
 			attr_text.text = "+" .. attr .. " " .. __("PERSON_DRESS_ATTR_" .. i)
 			text_all_height = text_all_height + attr_text.height + gap
+		else
+			self.beforeShowTextArr[i]:SetActive(false)
 		end
 	end
 
 	local before_skillIds = xyd.tables.senpaiDressItemTable:getSkillIds(self.item_id)
 
+	if not self.before_skill_attr_obj then
+		self.before_skill_attr_obj = NGUITools.AddChild(self.beforeAttrCon.gameObject, self.beforeAttrLabel.gameObject)
+	end
+
 	if before_skillIds and #before_skillIds > 0 then
 		local before_skill_desc = xyd.tables.senpaiDressSkillTextTable:getDesc(before_skillIds[#before_skillIds])
-		local before_skill_attr_obj = NGUITools.AddChild(self.beforeAttrCon.gameObject, self.beforeAttrLabel.gameObject)
 
-		before_skill_attr_obj:SetActive(true)
+		self.before_skill_attr_obj:SetActive(true)
 
-		local before_skill_attr_text = before_skill_attr_obj:GetComponent(typeof(UILabel))
+		local before_skill_attr_text = self.before_skill_attr_obj:GetComponent(typeof(UILabel))
 		before_skill_attr_text.text = before_skill_desc
 		text_all_height = text_all_height + before_skill_attr_text.height + gap
+	else
+		self.before_skill_attr_obj:SetActive(false)
 	end
 
 	self.beforeAttrCon:GetComponent(typeof(UIWidget)).height = text_all_height
@@ -229,55 +359,78 @@ function DressItemUpWindow:updateShowItem()
 	self.beforeAttrCon_UILayout:Reposition()
 	self.beforeScroller_UIScrollView:ResetPosition()
 
-	local next_item_id = xyd.tables.senpaiDressItemTable:getNextId(self.item_id)
+	local curRgihtIndex = xyd.arrayIndexOf(self.allItems, self.curShowRightItemId)
+	local curLeftIndex = xyd.arrayIndexOf(self.allItems, self.item_id)
 
-	if next_item_id and next_item_id ~= 0 then
+	if self.showMaxItemInex <= curRgihtIndex then
+		self.rightArrowImg.gameObject:SetActive(false)
+	elseif curRgihtIndex < self.showMaxItemInex then
+		self.rightArrowImg.gameObject:SetActive(true)
+	end
+
+	if curRgihtIndex - curLeftIndex >= 2 then
+		self.leftArrowImg.gameObject:SetActive(true)
+	else
+		self.leftArrowImg.gameObject:SetActive(false)
+	end
+
+	if self.curShowRightItemId and self.curShowRightItemId ~= 0 then
 		if not self.after_icon then
 			local item = {
 				isAddUIDragScrollView = true,
-				itemID = next_item_id,
+				itemID = self.curShowRightItemId,
 				scale = Vector3(0.5, 0.5, 1),
 				uiRoot = self.afterIcon.gameObject
 			}
 			self.after_icon = xyd.getItemIcon(item)
 		else
 			self.after_icon:setInfo({
-				itemID = next_item_id
+				itemID = self.curShowRightItemId
 			})
 		end
 
-		self.afterName.text = xyd.tables.itemTable:getName(next_item_id)
-
-		NGUITools.DestroyChildren(self.afterAttrCon.transform)
-
+		self.afterName.text = xyd.tables.itemTable:getName(self.curShowRightItemId)
 		local text_all_height = 0
 		local gap = self.afterAttrCon_UILayout.gap.y
 
+		if not self.afterShowTextArr then
+			self.afterShowTextArr = {}
+		end
+
 		for i = 1, 3 do
-			local attr = xyd.tables.senpaiDressItemTable["getBase" .. i](xyd.tables.senpaiDressItemTable, next_item_id)
+			local attr = xyd.tables.senpaiDressItemTable["getBase" .. i](xyd.tables.senpaiDressItemTable, self.curShowRightItemId)
+
+			if not self.afterShowTextArr[i] then
+				self.afterShowTextArr[i] = NGUITools.AddChild(self.afterAttrCon.gameObject, self.afterAttrLabel.gameObject)
+			end
 
 			if attr and attr ~= 0 then
-				local attr_obj = NGUITools.AddChild(self.afterAttrCon.gameObject, self.afterAttrLabel.gameObject)
+				self.afterShowTextArr[i]:SetActive(true)
 
-				attr_obj:SetActive(true)
-
-				local attr_text = attr_obj:GetComponent(typeof(UILabel))
+				local attr_text = self.afterShowTextArr[i]:GetComponent(typeof(UILabel))
 				attr_text.text = "+" .. attr .. " " .. __("PERSON_DRESS_ATTR_" .. i)
 				text_all_height = text_all_height + attr_text.height + gap
+			else
+				self.afterShowTextArr[i]:SetActive(false)
 			end
 		end
 
-		local after_skillIds = xyd.tables.senpaiDressItemTable:getSkillIds(next_item_id)
+		local after_skillIds = xyd.tables.senpaiDressItemTable:getSkillIds(self.curShowRightItemId)
+
+		if not self.after_skill_attr_obj then
+			self.after_skill_attr_obj = NGUITools.AddChild(self.afterAttrCon.gameObject, self.afterAttrLabel.gameObject)
+		end
 
 		if after_skillIds and #after_skillIds > 0 then
 			local after_skill_desc = xyd.tables.senpaiDressSkillTextTable:getDesc(after_skillIds[#after_skillIds])
-			local after_skill_attr_obj = NGUITools.AddChild(self.afterAttrCon.gameObject, self.afterAttrLabel.gameObject)
 
-			after_skill_attr_obj:SetActive(true)
+			self.after_skill_attr_obj:SetActive(true)
 
-			local after_skill_attr_text = after_skill_attr_obj:GetComponent(typeof(UILabel))
+			local after_skill_attr_text = self.after_skill_attr_obj:GetComponent(typeof(UILabel))
 			after_skill_attr_text.text = after_skill_desc
 			text_all_height = text_all_height + after_skill_attr_text.height + gap
+		else
+			self.after_skill_attr_obj:SetActive(false)
 		end
 
 		self.afterAttrCon:GetComponent(typeof(UIWidget)).height = text_all_height
@@ -418,7 +571,7 @@ function DressItemUpWindow:onTouchBtn()
 
 	for i in pairs(cost_items) do
 		if xyd.models.backpack:getItemNumByID(cost_items[i][1]) < cost_items[i][2] then
-			if i ~= 1 then
+			if i ~= 1 and text ~= "" then
 				text = text .. "\n"
 			end
 
@@ -434,7 +587,7 @@ function DressItemUpWindow:onTouchBtn()
 
 	local msg = messages_pb:dress_upgrade_dress_req()
 	msg.item_id = self.item_id
-	msg.item_num = 1
+	msg.item_num = xyd.arrayIndexOf(self.allItems, self.curShowRightItemId) - xyd.arrayIndexOf(self.allItems, self.item_id)
 
 	if self.common_cost_arr and #self.common_cost_arr > 0 then
 		for i in pairs(self.itemFrees) do
@@ -457,17 +610,17 @@ end
 
 function DressItemUpWindow:dressUpgradeDressBack()
 	local items = {}
-	local next_item_id = xyd.tables.senpaiDressItemTable:getNextId(self.item_id)
+	local curRightId = self.curShowRightItemId
 
 	table.insert(items, {
 		item_num = 1,
-		item_id = next_item_id
+		item_id = self.curShowRightItemId
 	})
 
-	local next_next_item_id = xyd.tables.senpaiDressItemTable:getNextId(next_item_id)
+	local next_next_item_id = xyd.tables.senpaiDressItemTable:getNextId(self.curShowRightItemId)
 
 	xyd.alertItems(items, function ()
-		next_next_item_id = xyd.tables.senpaiDressItemTable:getNextId(next_item_id)
+		next_next_item_id = xyd.tables.senpaiDressItemTable:getNextId(curRightId)
 
 		if not next_next_item_id or next_next_item_id and next_next_item_id == 0 then
 			self:close()
@@ -475,16 +628,16 @@ function DressItemUpWindow:dressUpgradeDressBack()
 	end)
 
 	if next_next_item_id and next_next_item_id ~= 0 then
-		self.item_id = next_item_id
+		self.item_id = self.curShowRightItemId
 		self.isFirstSetCommonNum = false
 
 		self:updateCostInfo()
 	end
 
-	if next_item_id and next_item_id > 0 then
-		local dress_id = xyd.tables.senpaiDressItemTable:getDressId(next_item_id)
+	if self.curShowRightItemId and self.curShowRightItemId > 0 then
+		local dress_id = xyd.tables.senpaiDressItemTable:getDressId(self.curShowRightItemId)
 
-		xyd.models.dress:updateGroupItems(next_item_id, dress_id, true)
+		xyd.models.dress:updateGroupItems(self.curShowRightItemId, dress_id, true)
 	end
 end
 

@@ -22,8 +22,21 @@ end
 function SettingUp:reqSettingUpInfo()
 end
 
-function SettingUp:reqGetServerList()
+function SettingUp:reqGetServerList(callback)
 	if self.serverDatas_ then
+		return
+	end
+
+	if xyd.Global.isHasBeenBanServer then
+		local function serverInfocallBack(event)
+			if callback then
+				self:onServerListWithHttp(event.payload)
+				callback(event.payload)
+			end
+		end
+
+		xyd.Backend:get():getServerInfo(serverInfocallBack)
+
 		return
 	end
 
@@ -36,6 +49,30 @@ end
 
 function SettingUp:onServerList(event)
 	self.serverDatas_ = event.data
+	local serverInfos = self:getServerInfos()
+
+	table.sort(serverInfos, function (a, b)
+		return tonumber(a.server_id) < tonumber(b.server_id)
+	end)
+
+	local i = #serverInfos
+
+	while i >= 1 and i >= #serverInfos - 1 do
+		serverInfos[i] = {
+			is_new = true,
+			name = serverInfos[i].name,
+			is_hide = serverInfos[i].is_hide,
+			create_time = serverInfos[i].create_time,
+			server_id = serverInfos[i].server_id
+		}
+		i = i - 1
+	end
+
+	self:sortServerInfo()
+end
+
+function SettingUp:onServerListWithHttp(payload)
+	self.serverDatas_ = payload
 	local serverInfos = self:getServerInfos()
 
 	table.sort(serverInfos, function (a, b)

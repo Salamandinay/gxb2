@@ -2575,6 +2575,7 @@ ACTIVITY_PRAY_HELP,"
      Purchase with Gems (at most 200 can be obtained this way)
      Lucky Bonus
      Mega Value Packs
+     Spaceship Supplies
      Special Skin Packs
      Special Gift Packs
      Slot Points event|11. After this event ends, any remaining House Shards will be automatically exchanged into 20K Coins each, any remaining Rainbow Shards will be exchanged into 30K Coins each, and any remaining Prayer Coins will be exchanged into 25K Coins each. The Coins will be sent via Mail."
@@ -6224,7 +6225,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Energy Cost: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Laser Energy will be reset to 0 after switching the skill, confirm to continue?"
 ACTIVITY_LOST_SPACE_NAV1,Special Event
 ACTIVITY_LOST_SPACE_NAV2,Help
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, Lucky Bonus, purchasing Monthly Kickoff, Sweet Childhood Pack, Count's Mystery Gift, Mega Value Pack, Special Skin Pack, Special Gift Pack, Customization Pack, and Space Station Supply.|8. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Lucky Bonus, Wishing Fountain Supply, and Space Station Supply.|8. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
 GAME_ASSISTANT_TEXT103,Cafeteria - Order Rewards
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Laser Energy is full, confirm not to trigger the skill?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,No explorable area is in your current skill range
@@ -6509,14 +6510,14 @@ COLLECTION_SKIN_TEXT26,Unlock {1} Skin(s)
 COLLECTION_SKIN_TEXT27,Skins of the Theme
 COLLECTION_SKIN_TEXT28,Theme: {1}
 ACTIVITY_LOST_SPACE_TEXT01,Zone
-ACTIVITY_LOST_SPACE_TEXT02,Basic Reward
-ACTIVITY_LOST_SPACE_TEXT03,Additional Reward
+ACTIVITY_LOST_SPACE_TEXT02,Basic
+ACTIVITY_LOST_SPACE_TEXT03,Extra
 ACTIVITY_LOST_SPACE_TEXT04,Unlock
-ACTIVITY_LOST_SPACE_TEXT05,Go to Event
-ACTIVITY_LOST_SPACE_TEXT06,The reward chests for Lost Space Zone will be upgraded after purchasing the pack.
-ACTIVITY_LOST_SPACE_TEXT07,Upgrade Rewards
+ACTIVITY_LOST_SPACE_TEXT05,Event
+ACTIVITY_LOST_SPACE_TEXT06,The reward for passing each Space Zone will be upgraded after purchasing the pack
+ACTIVITY_LOST_SPACE_TEXT07,Check Rewards
 ACTIVITY_LOST_SPACE_TEXT08,Rewards
-ACTIVITY_LOST_SPACE_TEXT09,Locked
+ACTIVITY_LOST_SPACE_TEXT09,Upgradeable
 SHENXUE_TEXT01,Please select star-rank
 SHENXUE_TEXT02,Bulk Graduate {1}-star Girls
 SHENXUE_TEXT03,Bulk Awake {1}-star Girls
@@ -6525,3 +6526,21 @@ LOGIN_TIPS_ERROR_1,Account Banned
 LOGIN_TIPS_ERROR_2,"The current account is banned, please choose another server to login."
 SHENXUE_TEXT05,Awake in Bulk
 SHENXUE_TEXT06,Awakening…
+ACTIVITY_LOST_SPACE_TEXT10,"1. After purchasing Spaceship Supplies, you will get another additional reward for passing each Space Zone.|2. If you have passed at least 1 Space Zone before purchasing Spaceship Supplies, the additional rewards for passing the previous Space Zone(s) will also be issued via Mail."
+PARTNER_RECOMMEND_TIPS,Recent Popular Girls
+ACTIVITY_LAFULI_CASTLE_TEXT15,Consume {1} units of Beach Sand in total to complete this area.
+ACTIVITY_LAFULI_CASTLE_TEXT16,Consume {1} units of Rainbow Sand in total to decorate this area.
+COLLECTION_SKIN_TEXT29,Girl
+QUICK_FORMATION_TEXT05,Lineup
+DELETE_ACCOUNT_TEXT01,Privacy Policy
+DELETE_ACCOUNT_TEXT02,Delete Account
+DELETE_ACCOUNT_TEXT03,Attention
+DELETE_ACCOUNT_TEXT04,"Dear Senpai, the account cannot be recovered after being deleted, confirm to continue?"
+DELETE_ACCOUNT_TEXT05,Continue
+DELETE_ACCOUNT_TEXT06,Cancel
+DELETE_ACCOUNT_TEXT07,"Once we receive your request to delete your account and all related user data, the process will take 30 working days and you will be notified once the process begins."
+DELETE_ACCOUNT_TEXT08,隱私協議的具體文本（此條暫不翻譯）
+DELETE_ACCOUNT_TEXT09,Warning
+DELETE_ACCOUNT_TEXT10,"You have requested to delete this account, the deletion will be irreversible! You still got {1} days {2} hours {3} minutes {4} seconds to cancel the request!"
+DELETE_ACCOUNT_TEXT11,"Your account deletion request is in process. The account will be deleted once the process is complete. If you have changed your mind, please tap the button below to cancel your request!"
+DELETE_ACCOUNT_TEXT12,Cancel

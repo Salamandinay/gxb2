@@ -18,6 +18,7 @@ function ChoosePartnerWithFilterWindow:ctor(name, params)
 
 	self.confirmCallback = params.confirmCallback
 	self.needNum = params.needNum or #self.params.benchPartners
+	self.closeCallback = params.closeCallback
 end
 
 function ChoosePartnerWithFilterWindow:initWindow()
@@ -201,6 +202,7 @@ function ChoosePartnerWithFilterWindow:register()
 end
 
 function ChoosePartnerWithFilterWindow:willClose()
+	self:closeCallback()
 	BaseWindow.willClose(self)
 end
 

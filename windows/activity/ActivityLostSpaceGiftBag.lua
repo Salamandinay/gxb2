@@ -69,6 +69,10 @@ function ActivityLostSpaceGiftBag:updateState()
 	self.effect:setInfo("fx_act_icon_2", function ()
 		self.effect:play("texiao01", 0, 1)
 	end)
+
+	if xyd.Global.lang == "fr_fr" then
+		self.tipsLabel_.transform:Y(-160)
+	end
 end
 
 function ActivityLostSpaceGiftBag:setIcon()

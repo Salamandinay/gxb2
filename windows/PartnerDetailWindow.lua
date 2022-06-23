@@ -4852,6 +4852,12 @@ function PartnerDetailWindow:checkStarOriginGuide()
 		return
 	end
 
+	local slotWd = xyd.WindowManager.get():getWindow("slot_window")
+
+	if not slotWd then
+		return
+	end
+
 	local isHasGoStarOriginGuide = xyd.db.misc:getValue("is_has_go_star_origin_guide")
 
 	if isHasGoStarOriginGuide and tonumber(isHasGoStarOriginGuide) == 1 then
@@ -6211,8 +6217,13 @@ function PartnerDetailWindow:checkExSkillGuide()
 		return
 	end
 
+	local slotWd = xyd.WindowManager.get():getWindow("slot_window")
+
+	if not slotWd then
+		return
+	end
+
 	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI and xyd.models.slot:needExskillGuide() then
-		print("test:=============11111111111")
 		xyd.WindowManager:get():openWindow("exskill_guide_window", {
 			wnd = self,
 			table = xyd.tables.partnerExskillGuideTable,

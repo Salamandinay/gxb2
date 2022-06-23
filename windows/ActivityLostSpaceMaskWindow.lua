@@ -58,7 +58,20 @@ function ActivityLostSpaceMaskWindow:show(index)
 	elseif type == xyd.ActivityLostSpaceMaskType.GET_FINIAL_AWARD then
 		self.effecCon.gameObject:Y(-183)
 		self.label.gameObject:Y(-193)
-		self.effects[index]:setInfo("fx_lost_space_box", function ()
+
+		local spineName = "fx_lost_space_box"
+		local checkData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG)
+		local isCheckBuy = nil
+
+		if checkData then
+			isCheckBuy = checkData:checkBuy()
+		end
+
+		if isCheckBuy then
+			spineName = "fx_lost_space_newbox"
+		end
+
+		self.effects[index]:setInfo(spineName, function ()
 			self.effects[index]:play("texiao01", 1, 1)
 		end)
 
@@ -138,14 +151,22 @@ function ActivityLostSpaceMaskWindow:close(callback, skipAnimation)
 			},
 			wnd_type = xyd.GambleWindowType.ACTIVITY
 		}
+		local checkData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG)
+		local isCheckBuy = nil
 
-		if xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG):checkBuy() then
+		if checkData then
+			isCheckBuy = checkData:checkBuy()
+		end
+
+		if isCheckBuy then
 			local highAwards = xyd.tables.activityLostSpaceAwardsTable:getExtraAward(stage_id)
 
-			table.insert(param.data, {
-				item_id = highAwards[1],
-				item_num = highAwards[2]
-			})
+			if highAwards and #highAwards > 0 then
+				table.insert(param.data, {
+					item_id = highAwards[1],
+					item_num = highAwards[2]
+				})
+			end
 		end
 
 		if self.anotherType then

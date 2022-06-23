@@ -2029,9 +2029,6 @@ function Slot:refreshShenxueGroup(groupId)
 
 					break
 				end
-
-				dump(materialIds_)
-				dump(tableID)
 			end
 
 			self.forgeStatus[tostring(groupId)][tostring(tableID)] = isCanForge

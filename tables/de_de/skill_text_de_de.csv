@@ -9688,8 +9688,8 @@ Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminde
 753017044,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 125% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 40% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 125% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 66% ihrer max. HP erhöhen."
 753017045,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 130% gesteigert und ihre erlittenen Schäden um max. 44% gesenkt (sind nur noch 40% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 130% bzw. 44%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 70% ihrer max. HP erhöhen."
 501108,Himmelsinsel,Energieumwandlung,"Bevor Angie ihre Fertigkeiten einsetzen wird, verwendet sie ihre alle Energie und erhöht den Schaden eigenes Standardangriffs um 10%."
-501109,Himmelsinsel,Zweiter Angriff I,"Angie hat eine 50%ige Wahrscheinlichkeit, Standardangriff 2 Mal freizusetzen."
-501110,Himmelsinsel,Zweiter Angriff II,"Angie hat eine 100%ige Wahrscheinlichkeit, Standardangriff 2 Mal freizusetzen."
+501109,Himmelsinsel,Zweiter Angriff I,"Die gegnerische Silcotti hat eine 50%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen, aber ihr Angriff wird um 5% reduziert."
+501110,Himmelsinsel,Zweiter Angriff II,"Die gegnerische Silcotti hat eine 100%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen, aber ihr Angriff wird um 10% reduziert."
 502108,Himmelsinsel,Kristallisieren - Angriffsraub,"Wird eines deiner Mädchen kristallisiert, wird ihr Angriff 3 Runden lang um 20% verringert und der Angriff aller Gegner 3 Runden lang um 5% erhöht."
 502109,Himmelsinsel,Kristallisieren - Energieraub,"Wird eines deiner Mädchen kristallisiert, wird ihre Energie um 100 verringert und die Energie aller Gegner um 50 erhöht."
 503112,Himmelsinsel,Schadensreduzierung,"Erleidet ein Mädchen auf dem Schlachtfeld (Gegner eingeschlossen) kontinuierlichen Schaden, wird die Schadensreduzierungsrate aller Gegner 3 Runden lang um 5% erhöht."
@@ -11743,3 +11743,46 @@ Ein Hund wird seinen Herrn bis zum Ende seines Lebens beschützen. Zu Beginn des
 Fertigkeitseffekt. Kann gestapelt werden. Senkt jeglichen erlittenen Schaden. Sobald der Abwehrwert des Schutzwalls 0 beträgt, verschwindet der Wall. Der max. Abwehrwert des Schutzwalls entspricht 100% der max. HP des Trägers.
 [c][e28002]Hundeliebe[-][/c]
 Fertigkeitseffekt. Kann nicht gestapelt werden. Ist der Schutzwall auf sich verschwunden, werden die HP des Trägers um einen bestimmten Wert erhöht und dann die Hundeliebe entfernt."
+501114,Himmelsinsel,Skorpions Herz,Die gegnerische Silcotti erhält durch ihre Fertigkeit keinen Schutzwall und stattdessen wird ihre Schadensreduzierung aller Schäden 1 Runde lang um 10% erhöht.
+502113,Himmelsinsel,Hundeliebe,"Die gegnerische Eve erhält durch ihren Fertigkeiteffekt ""Hundeliebe"" keine HP und stattdessen wird ihr Angriff 2 Runden lang um 10% erhöht."
+503117,Himmelsinsel,Schrei des Kranichs,"Die gegnerische Chizuko (Boss) verleiht durch ihre Fertigkeiten (außer Fertigkeitseffekt ""Himmelslicht"") keinen Schutzwall mehr. Ihre Fertigkeit ""Göttliche Melodie"" kann nun 3 zufällige Debuffs der betroffenen Verbündeten entfernen (2 Debuffs mehr als zuvor)."
+502114,Himmelsinsel,Heftiger Schlag I,"Hat der Gegner (Boss) einen Schutzwall auf sich oder durch diesen Angriff einen Schutzwall erhalten, haben sein Standardangriff und seine aktive Fertigkeit eine 50%ige Wahrscheinlichkeit, deine Mädchen 2 Runden lang zu betäuben."
+502116,Himmelsinsel,Heftiger Schlag II,"Hat der Gegner (Boss) einen Schutzwall auf sich oder durch diesen Angriff einen Schutzwall erhalten, haben sein Standardangriff und seine aktive Fertigkeit eine 100%ige Wahrscheinlichkeit, deine Mädchen 2 Runden lang zu betäuben."
+5601000,代號A,普攻,
+65602000,代號A,普攻,
+75601000,代號A,普攻,
+5601001,代號A,主動技能,
+65602001,代號A,主動技能,
+75601001,代號A,主動技能,
+5601002,代號A,被動技能1,
+65602002,代號A,被動技能1,
+65602012,代號A,被動技能1,
+75601002,代號A,被動技能1,
+5601003,代號A,被動技能2,
+65602003,代號A,被動技能2,
+65602013,代號A,被動技能2,
+75601003,代號A,被動技能2,
+5601004,代號A,被動技能3,
+65602004,代號A,被動技能3,
+65602014,代號A,被動技能3,
+75601004,代號A,被動技能3,
+756010011,代號A,精英技能-主动,
+756010012,代號A,精英技能-主动,
+756010013,代號A,精英技能-主动,
+756010014,代號A,精英技能-主动,
+756010015,代號A,精英技能-主动,
+756010021,代號A,精英技能-被动1,
+756010022,代號A,精英技能-被动1,
+756010023,代號A,精英技能-被动1,
+756010024,代號A,精英技能-被动1,
+756010025,代號A,精英技能-被动1,
+756010031,代號A,精英技能-被动2,
+756010032,代號A,精英技能-被动2,
+756010033,代號A,精英技能-被动2,
+756010034,代號A,精英技能-被动2,
+756010035,代號A,精英技能-被动2,
+756010041,代號A,精英技能-被动3,
+756010042,代號A,精英技能-被动3,
+756010043,代號A,精英技能-被动3,
+756010044,代號A,精英技能-被动3,
+756010045,代號A,精英技能-被动3,

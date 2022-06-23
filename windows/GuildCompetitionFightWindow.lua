@@ -285,7 +285,7 @@ function GuildCompetitionFightWindow:layout()
 	end
 
 	self.effect_:setInfo(effectName, function ()
-		self.effect_:SetLocalScale(scale_x, effectScale, effectScale)
+		self.effect_:SetLocalScale(scale_x * 0.92, effectScale * 0.92, effectScale * 0.92)
 		self.effect_:play("idle", 0)
 	end)
 

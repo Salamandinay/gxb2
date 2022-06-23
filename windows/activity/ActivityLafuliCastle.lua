@@ -56,6 +56,12 @@ function ActivityLafuliCastle:getUIComponent()
 	end
 
 	self.showEffectNode = self.groupSence:NodeByName("showEffect").gameObject
+	self.boxColliders = self.groupSence:NodeByName("boxColliders").gameObject
+
+	for i = 1, 11 do
+		self["collider" .. i] = self.boxColliders:NodeByName("collider" .. i).gameObject
+	end
+
 	self.groupLeftTask = go:ComponentByName("groupLeftTask", typeof(UISprite))
 	self.leftLabelProgress = self.groupLeftTask:ComponentByName("labelProgress", typeof(UILabel))
 	self.leftLabelPoint = self.groupLeftTask:ComponentByName("labelPoint", typeof(UILabel))
@@ -179,7 +185,7 @@ function ActivityLafuliCastle:updateBackground()
 
 		if self.activityData.detail.points[type] < point then
 			self[object]:SetActive(false)
-		elseif not self.firstInit then
+		elseif not self.notFirstInit then
 			self[object]:SetActive(true)
 
 			self["curStage" .. type] = i
@@ -225,17 +231,14 @@ end
 function ActivityLafuliCastle:updateTasks()
 	self.leftLabelPoint.text = self.activityData.detail.points[1] .. "/" .. leftTaskPointMax
 	self.rightLabelPoint.text = self.activityData.detail.points[2] .. "/" .. rightTaskPointMax
-	local countFinish1 = 0
-	local countFinish2 = 0
+	self.taskNumofType2 = 0
+	self.taskNumofType1 = 0
+	self.curTaskIDofType2 = 0
+	self.curTaskIDofType1 = 0
 
 	for i = 1, #self.awardIcons do
 		local type = xyd.tables.activityLflcastleAwardTable:getType(i)
-
-		if type == 1 then
-			countFinish1 = countFinish1 + 1
-		else
-			countFinish2 = countFinish2 + 1
-		end
+		self["taskNumofType" .. type] = self["taskNumofType" .. type] + 1
 
 		if self.activityData.detail.awards[i] == 1 then
 			self.awardIcons[i]:setChoose(true)
@@ -269,31 +272,33 @@ function ActivityLafuliCastle:updateTasks()
 				else
 					self.awardIcons[i]:setEffect(true, "fx_ui_bp_available")
 				end
+			end
 
-				if not self.firstInit and not self["curAwardID" .. type] then
-					if type == 1 then
-						self["curAwardID" .. type] = countFinish1
-					else
-						self["curAwardID" .. type] = countFinish2
-					end
-				end
+			if self["curTaskIDofType" .. type] == 0 then
+				self["curTaskIDofType" .. type] = self["taskNumofType" .. type]
 			end
 		end
 	end
 
-	if not self.firstInit then
-		if self.curAwardID1 then
-			local value = math.min(83 + 106 * self.curAwardID1, 83 + 106 * countFinish1 - 379)
-			self.leftScrollView.transform.localPosition = Vector3(0, value, 0)
-		end
+	self.curTaskIDofType1 = math.max(self.curTaskIDofType1, 1)
+	self.curTaskIDofType2 = math.max(self.curTaskIDofType2, 1)
+	local dis1 = math.min(83 + 106 * self.curTaskIDofType1, 83 + 106 * self.taskNumofType1 - 379)
+	local dis2 = math.min(83 + 106 * self.curTaskIDofType2, 83 + 106 * self.taskNumofType2 - 379)
 
-		if self.curAwardID2 then
-			local value = math.min(83 + 106 * self.curAwardID2, 83 + 106 * countFinish2 - 379)
-			self.rightScrollView.transform.localPosition = Vector3(0, value, 0)
-		end
+	if self.notFirstInit then
+		self.leftScrollView.transform.localPosition = Vector3(0, dis1, 0)
+		self.rightScrollView.transform.localPosition = Vector3(0, dis2, 0)
+	else
+		local sp1 = self.leftScrollView:GetComponent(typeof(SpringPanel))
+
+		sp1.Begin(sp1.gameObject, Vector3(0, dis1, 0), 16)
+
+		local sp2 = self.rightScrollView:GetComponent(typeof(SpringPanel))
+
+		sp2.Begin(sp2.gameObject, Vector3(0, dis2, 0), 16)
 	end
 
-	self.firstInit = true
+	self.notFirstInit = true
 end
 
 function ActivityLafuliCastle:updatePartnerAward()
@@ -443,6 +448,57 @@ function ActivityLafuliCastle:register()
 	self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, function ()
 		self:updateAll()
 	end)
+
+	for i = 1, 11 do
+		UIEventListener.Get(self["collider" .. i].gameObject).onClick = function ()
+			if i == 11 then
+				self:backgroundShakeSequence()
+
+				return
+			end
+
+			local point = xyd.tables.activityLflcastleProgressTable:getCount(i)
+			local type = xyd.tables.activityLflcastleProgressTable:getType(i)
+
+			if self.activityData.detail.points[type] < point then
+				xyd.alertTips(__("ACTIVITY_LAFULI_CASTLE_TEXT" .. 14 + type, point - self.activityData.detail.points[type]))
+			end
+
+			self:backgroundShakeSequence()
+		end
+	end
+end
+
+function ActivityLafuliCastle:backgroundShakeSequence()
+	if self.isShaking then
+		return
+	end
+
+	self.isShaking = true
+	local position = self.groupSence.transform.localPosition
+	local sequence = self:getSequence()
+
+	sequence:Insert(0, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y - 5, 0), 0.2):SetEase(DG.Tweening.Ease.InOutSine))
+	sequence:Insert(0.2, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y + 3, 0), 0.2):SetEase(DG.Tweening.Ease.InOutSine))
+	sequence:Insert(0.4, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y, 0), 0.1):SetEase(DG.Tweening.Ease.InOutSine))
+
+	self.isShaking = false
+end
+
+function ActivityLafuliCastle:getSequence(complete)
+	local sequence = DG.Tweening.DOTween.Sequence():OnComplete(function ()
+		if complete then
+			complete()
+		end
+	end)
+
+	if not self.sequence_ then
+		self.sequence_ = {}
+	end
+
+	table.insert(self.sequence_, sequence)
+
+	return sequence
 end
 
 return ActivityLafuliCastle

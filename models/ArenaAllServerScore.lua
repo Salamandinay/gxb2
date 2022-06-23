@@ -585,7 +585,7 @@ function ArenaAllServerScore:checkMissionValue()
 
 	local arena_all_server_score_mission_time_show = xyd.db.misc:getValue("arena_all_server_score_mission_time_show")
 
-	if not arena_all_server_score_mission_time_show or arena_all_server_score_mission_time_show and tonumber(arena_all_server_score_mission_time_show) < xyd.getServerTime() - xyd.DAY_TIME then
+	if not arena_all_server_score_mission_time_show or arena_all_server_score_mission_time_show and not xyd.isSameDay(tonumber(xyd.getServerTime()), tonumber(arena_all_server_score_mission_time_show)) then
 		xyd.models.redMark:setMark(xyd.RedMarkType.ARENA_ALL_SERVER_SCORE_MISSION, true)
 
 		return
@@ -610,9 +610,9 @@ function ArenaAllServerScore:checkMissionValue()
 
 		return
 	end
-end
 
-xyd.models.redMark:setMark(xyd.RedMarkType.ARENA_ALL_SERVER_SCORE_MISSION, false)
+	xyd.models.redMark:setMark(xyd.RedMarkType.ARENA_ALL_SERVER_SCORE_MISSION, false)
+end
 
 function ArenaAllServerScore:updateDefendRed()
 	local redState = false

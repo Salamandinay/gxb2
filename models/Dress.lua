@@ -1308,4 +1308,102 @@ function Dress:checkItemCanUp(dressItemId)
 	return true
 end
 
+function Dress:checkMoreItemCanUp(dressItems)
+	local general_cost_arr = {}
+	local fragment_cost_arr = {}
+
+	for k, dressItemId in pairs(dressItems) do
+		local cost_all_items = xyd.tables.senpaiDressItemTable:getUpgradeCost(dressItemId)
+
+		for i in pairs(cost_all_items) do
+			if xyd.tables.itemTable:getType(cost_all_items[i][1]) == xyd.ItemType.DRESS_FRAGMENT then
+				local isSearch = false
+
+				for _, cost in pairs(fragment_cost_arr) do
+					if cost[1] == cost_all_items[i][1] then
+						cost[2] = cost[2] + cost_all_items[i][2]
+						isSearch = true
+
+						break
+					end
+				end
+
+				if not isSearch then
+					table.insert(fragment_cost_arr, cost_all_items[i])
+				end
+			else
+				local isSearch = false
+
+				for _, cost in pairs(general_cost_arr) do
+					if cost[1] == cost_all_items[i][1] then
+						cost[2] = cost[2] + cost_all_items[i][2]
+						isSearch = true
+
+						break
+					end
+				end
+
+				if not isSearch then
+					table.insert(general_cost_arr, cost_all_items[i])
+				end
+			end
+		end
+
+		for i, info in pairs(general_cost_arr) do
+			if xyd.models.backpack:getItemNumByID(info[1]) < info[2] then
+				return false
+			end
+		end
+
+		for i, info in pairs(fragment_cost_arr) do
+			if xyd.models.backpack:getItemNumByID(info[1]) < info[2] then
+				return false
+			end
+		end
+	end
+
+	if #fragment_cost_arr > 0 then
+		local common_cost_arr = {}
+		local self_item_fragment_id = fragment_cost_arr[1][1]
+
+		for k, dressItemId in pairs(dressItems) do
+			local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
+
+			for i in pairs(cost_all_items_2) do
+				local isSearch = false
+
+				for _, cost in pairs(common_cost_arr) do
+					if cost[1] == cost_all_items_2[i][1] then
+						cost[2] = cost[2] + cost_all_items_2[i][2]
+						isSearch = true
+
+						break
+					end
+				end
+
+				if not isSearch then
+					table.insert(common_cost_arr, cost_all_items_2[i])
+				end
+			end
+		end
+
+		for i, info in pairs(common_cost_arr) do
+			local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
+			local coutNum = 0
+
+			for k in pairs(arr) do
+				if arr[k].is_can_use == 1 then
+					coutNum = coutNum + arr[k].item_num
+				end
+			end
+
+			if coutNum < info[2] then
+				return false
+			end
+		end
+	end
+
+	return true
+end
+
 return Dress
