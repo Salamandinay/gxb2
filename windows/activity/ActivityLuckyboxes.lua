@@ -304,6 +304,10 @@ function ActivityLuckyboxes:updateSpecialAwardGroup()
 			self.specialAwardIcon:setInfo(params)
 		end
 
+		if self.specialAwardIcon then
+			self.specialAwardIcon:SetActive(true)
+		end
+
 		if type ~= xyd.ItemType.HERO_DEBRIS and type ~= xyd.ItemType.HERO and type ~= xyd.ItemType.HERO_RANDOM_DEBRIS then
 			if type ~= xyd.ItemType.SKIN then
 				self.specialAwardIcon:showBorderBg(false)

@@ -285,13 +285,15 @@ function GameAssistantResultWindow:doDailyQuizBuy()
 	for i = 1, 3 do
 		if self.ifCanDo.dailyQuiz.paid[i] then
 			local data = xyd.models.dailyQuiz:getDataByType(i)
+			flag = self.model:buyDailyQuizTime(i, self.presetData.dailyQuiz.paid[i] - data.limit_times)
+			self.haveBuyDailyQuiz = true
+			self.todayHaveDoneData.dailyQuiz.paid[i] = self.presetData.dailyQuiz.paid[i]
 
-			self.model:buyDailyQuizTime(i, self.presetData.dailyQuiz.paid[i] - data.limit_times)
+			if not flag then
+				break
+			end
 
 			self.haveBuyDailyQuizNum = self.haveBuyDailyQuizNum + 1
-			self.haveBuyDailyQuiz = true
-			flag = true
-			self.todayHaveDoneData.dailyQuiz.paid[i] = self.presetData.dailyQuiz.paid[i]
 		end
 	end
 

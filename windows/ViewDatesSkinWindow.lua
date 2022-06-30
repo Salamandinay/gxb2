@@ -47,9 +47,10 @@ function ViewDatesItem:onClick()
 			partner_id = self.data.partner_id,
 			sort_key = self.data.group,
 			table_id = self.data.tableID,
-			skin_id = self.data.skin_id,
-			partners = self.parent.guidePartners[7]
+			skin_id = self.data.skin_id
 		}
+		local groupIds = xyd.tables.groupTable:getGroupIds()
+		params.partners = self.parent.guidePartners[#groupIds + 1]
 
 		xyd.WindowManager.get():openWindow("skin_detail_window", params)
 	end)

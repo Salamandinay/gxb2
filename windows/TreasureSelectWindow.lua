@@ -309,6 +309,10 @@ function TreasureSelectItem:onSelect()
 			self.parent.selectedItem = self
 		end
 	elseif self.type == 1 and self.itemID <= 0 then
+		if not self.isUnlock then
+			return
+		end
+
 		xyd.alert(xyd.AlertType.YES_NO, __("TREASURE_RESERVE_EMPTY", self.index - 1), function (yes)
 			if yes then
 				self.waitingForBackUp = true

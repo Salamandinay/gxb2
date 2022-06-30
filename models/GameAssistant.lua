@@ -426,10 +426,18 @@ function GameAssistant:reqDailyQuizAward()
 	for i = 1, 3 do
 		local data = xyd.models.dailyQuiz:getDataByType(i)
 
-		if data and data.cur_quiz_id and data.cur_quiz_id > 0 and xyd.models.dailyQuiz:checkCanFight(data.cur_quiz_id) and data.fight_times < self.presetData.dailyQuiz.paid[i] and self.presetData.dailyQuiz.paid[i] <= data.limit_times then
-			xyd.models.dailyQuiz:reqSweep(data.cur_quiz_id, self.presetData.dailyQuiz.paid[i] - data.fight_times)
+		if data and data.cur_quiz_id and data.cur_quiz_id > 0 and xyd.models.dailyQuiz:checkCanFight(data.cur_quiz_id) then
+			local leftTimes = data.limit_times - data.fight_times
 
-			awardTime = awardTime + 1
+			if data.fight_times < self.presetData.dailyQuiz.paid[i] and self.presetData.dailyQuiz.paid[i] <= data.limit_times then
+				xyd.models.dailyQuiz:reqSweep(data.cur_quiz_id, self.presetData.dailyQuiz.paid[i] - data.fight_times)
+
+				awardTime = awardTime + 1
+			elseif leftTimes > 0 then
+				xyd.models.dailyQuiz:reqSweep(data.cur_quiz_id, leftTimes)
+
+				awardTime = awardTime + 1
+			end
 		end
 	end
 
@@ -456,7 +464,7 @@ function GameAssistant:buyDailyQuizTime(index, buyTime)
 	local costItemID = costs[1]
 	local costNum = costs[2]
 
-	if xyd.isItemAbsence(costItemID, costNum * buyTime) then
+	if xyd.isItemAbsence(costItemID, costNum * buyTime, false) then
 		return false
 	end
 
@@ -1279,9 +1287,13 @@ function GameAssistant:jungeIfCanDoTab1()
 	end
 
 	if self.presetData.midas.paid > 0 and self.todayHaveDoneData.midas.paid < self.presetData.midas.paid and xyd.models.midas.buy_times < self.presetData.midas.paid then
-		self.ifCanDo.midas.paid = true
-		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:buyMidasTotalCost(self.presetData.midas.paid)
+		local costNum = self:buyMidasTotalCost(self.presetData.midas.paid)
+
+		if not xyd.isItemAbsence(xyd.ItemID.CRYSTAL, costNum, false) then
+			self.ifCanDo.midas.paid = true
+			flag = true
+			self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + costNum
+		end
 	end
 
 	local timeStamp_campaign = xyd.db.misc:getValue("gameAssistant_campaign_timeStamp") or 0
@@ -1303,9 +1315,13 @@ function GameAssistant:jungeIfCanDoTab1()
 		local cur_quiz_id = data.cur_quiz_id
 
 		if self.presetData.dailyQuiz.paid[i] > 0 and cur_quiz_id and cur_quiz_id > 0 and data.limit_times < self.presetData.dailyQuiz.paid[i] then
-			self.ifCanDo.dailyQuiz.paid[i] = true
-			flag = true
-			self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNum(self.presetData.dailyQuiz.paid[i] - data.limit_times)
+			local costNum = self:getCostNum(self.presetData.dailyQuiz.paid[i] - data.limit_times)
+
+			if not xyd.isItemAbsence(xyd.ItemID.CRYSTAL, costNum, false) then
+				self.ifCanDo.dailyQuiz.paid[i] = true
+				flag = true
+				self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + costNum
+			end
 		end
 	end
 
@@ -1315,7 +1331,7 @@ function GameAssistant:jungeIfCanDoTab1()
 		if data and data.cur_quiz_id and data.cur_quiz_id > 0 and xyd.models.dailyQuiz:checkCanFight(data.cur_quiz_id) then
 			local leftTimes = data.limit_times - data.fight_times
 
-			if data.fight_times < self.presetData.dailyQuiz.paid[i] then
+			if data.fight_times < self.presetData.dailyQuiz.paid[i] and (self.ifCanDo.dailyQuiz.paid[1] or self.ifCanDo.dailyQuiz.paid[2] or self.ifCanDo.dailyQuiz.paid[3] or leftTimes > 0) then
 				self.ifCanDo.dailyQuiz.free = true
 				flag = true
 			end
@@ -1393,17 +1409,20 @@ function GameAssistant:jungeIfCanDoTab1()
 				end
 
 				if buy_times < left_times then
-					self.ifCanDo.market = true
-					flag = true
 					local item = shopInfo.items[index].item
 					local cost = shopInfo.items[index].cost
 
-					if cost[1] == 1 then
-						self.totalCost[xyd.ItemID.MANA] = self.totalCost[xyd.ItemID.MANA] + cost[2]
-					end
+					if not xyd.isItemAbsence(cost[1], cost[2], false) then
+						if cost[1] == 1 then
+							self.totalCost[xyd.ItemID.MANA] = self.totalCost[xyd.ItemID.MANA] + cost[2]
+						end
 
-					if cost[1] == 2 then
-						self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + cost[2]
+						if cost[1] == 2 then
+							self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + cost[2]
+						end
+
+						self.ifCanDo.market = true
+						flag = true
 					end
 				end
 			end
@@ -1518,9 +1537,13 @@ function GameAssistant:jungeIfCanDoTab3()
 	end
 
 	if self:getBuyTimeBreadExplore() < self.presetData.explore.bread then
-		self.ifCanDo.explore.bread = true
-		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNumExplore(self.presetData.explore.bread - self:getBuyTimeBreadExplore())
+		local costNum = self:getCostNumExplore(self.presetData.explore.bread - self:getBuyTimeBreadExplore())
+
+		if not xyd.isItemAbsence(xyd.ItemID.CRYSTAL, costNum, false) then
+			self.ifCanDo.explore.bread = true
+			flag = true
+			self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + costNum
+		end
 	end
 
 	if self.presetData.pet.award == true and self:getPetlastHangRound() ~= 0 then
@@ -1536,9 +1559,13 @@ function GameAssistant:jungeIfCanDoTab3()
 	local haveDoneChallengTime = allChallengTime - leftChallengTime
 
 	if haveDoneChallengTime < self.presetData.pet.fight then
-		self.ifCanDo.pet.fight = true
-		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getCostNumPet(self.presetData.pet.fight - buyTimes - baseTime)
+		local costNum = self:getCostNumPet(self.presetData.pet.fight - buyTimes - baseTime)
+
+		if not xyd.isItemAbsence(xyd.ItemID.CRYSTAL, costNum, false) then
+			self.ifCanDo.pet.fight = true
+			flag = true
+			self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + costNum
+		end
 	end
 
 	return flag
@@ -1569,9 +1596,13 @@ function GameAssistant:jungeIfCanDoTab4()
 	end
 
 	if self.ifCanDo.guild.order == true and xyd.models.guild.guildID > 0 and self.presetData.guild.level > 0 then
-		self.ifCanDo.guild.level = true
-		flag = true
-		self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + self:getLevelUpOrderCost()
+		local costNum = self:getLevelUpOrderCost()
+
+		if not xyd.isItemAbsence(xyd.ItemID.CRYSTAL, costNum, false) then
+			self.totalCost[xyd.ItemID.CRYSTAL] = self.totalCost[xyd.ItemID.CRYSTAL] + costNum
+			self.ifCanDo.guild.level = true
+			flag = true
+		end
 	end
 
 	local leftTime = xyd.models.guild:getFinalBossLeftCount()

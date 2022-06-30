@@ -1980,7 +1980,7 @@ function ArenaAllServerScore:registerEvent()
 
 		local arena_all_server_score_mission_time_show = xyd.db.misc:getValue("arena_all_server_score_mission_time_show")
 
-		if not arena_all_server_score_mission_time_show or arena_all_server_score_mission_time_show and tonumber(arena_all_server_score_mission_time_show) <= xyd.getServerTime() - xyd.DAY_TIME then
+		if not arena_all_server_score_mission_time_show or arena_all_server_score_mission_time_show and not xyd.isSameDay(tonumber(xyd.getServerTime()), tonumber(arena_all_server_score_mission_time_show)) then
 			xyd.db.misc:setValue({
 				key = "arena_all_server_score_mission_time_show",
 				value = xyd.getServerTime()
