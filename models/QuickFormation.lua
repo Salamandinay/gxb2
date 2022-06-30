@@ -305,7 +305,7 @@ function QuickFormation:updateRedStatus()
 					local partnerInfo = xyd.models.slot:getPartner(partnerInfo:getPartnerID())
 					local treasures = partnerInfo.treasures or {}
 
-					if #treasures > 0 and xyd.arrayIndexOf(treasures, itemID) <= -1 or partnerInfo.equipments[5] and partnerInfo.equipments[5] ~= itemID then
+					if #treasures > 0 and xyd.arrayIndexOf(treasures, itemID) <= -1 or #treasures <= 0 and partnerInfo.equipments[5] and partnerInfo.equipments[5] ~= itemID then
 						self.redStatus_[i] = 1
 
 						if not self.redStatusPos_[i] then
