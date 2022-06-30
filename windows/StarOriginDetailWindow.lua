@@ -11,6 +11,7 @@ function StarOriginDetailWindow:ctor(name, params)
 	StarOriginDetailWindow.super.ctor(self, name, params)
 
 	self.partnerID = params.partnerID
+	self.isQuickFormation = params.isQuickFormation
 	self.starImgNameByState = {
 		"star_origin_bg_xy_sj_zh",
 		"star_origin_bg_xy_sj_kq",
@@ -90,6 +91,12 @@ function StarOriginDetailWindow:registerEvent()
 	end
 
 	UIEventListener.Get(self.btnReset).onClick = function ()
+		if self.isQuickFormation then
+			xyd.alertTips(__("QUICK_FORMATION_TEXT02"))
+
+			return
+		end
+
 		self:reset()
 	end
 
@@ -367,6 +374,12 @@ function StarOriginDetailWindow:onclickBtnLevelUp()
 		return
 	end
 
+	if self.isQuickFormation then
+		xyd.alertTips(__("QUICK_FORMATION_TEXT02"))
+
+		return
+	end
+
 	local state = self.curSelectNodeItem.state
 
 	if state == 1 then
@@ -426,6 +439,10 @@ function StarOriginDetailWindow:onclickBtnLevelUp()
 end
 
 function StarOriginDetailWindow:onLongTouchBtnLevleUp(go, isPressed)
+	if self.isQuickFormation then
+		return
+	end
+
 	local longTouchFunc = nil
 
 	function longTouchFunc()

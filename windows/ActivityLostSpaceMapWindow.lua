@@ -1517,7 +1517,7 @@ function MapGridItem:getAwardCon()
 		self.awardItemCon = self.awardCon:NodeByName("awardItemCon").gameObject
 		self.awardItemCon:GetComponent(typeof(UIWidget)).depth = self.depthNum + 2
 		self.awardImg.depth = self.depthNum + 2
-		self.awardDoubleIcon.depth = self.depthNum + 3
+		self.awardDoubleIcon.depth = self.depthNum + 53
 		self.awardNumLabel.depth = self.depthNum + 3
 
 		self.awardCon.gameObject:Y(8)

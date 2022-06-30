@@ -537,6 +537,8 @@ function PartnerDetailWindow:initVars()
 		local partners = self.model_:getPartners()
 		self.partner_ = partners[partner_id]
 	end
+
+	dump(self.partner_, "self.partner_")
 end
 
 function PartnerDetailWindow:updateMiscObj()
@@ -1001,30 +1003,7 @@ function PartnerDetailWindow:registerEvent()
 	end)
 	UIEventListener.Get(self.btnEquipAll).onClick = handler(self, self.onclickBtnEquipAll)
 	UIEventListener.Get(self.btnUnequipAll).onClick = handler(self, function ()
-		if self.isShrineHurdle_ then
-			xyd.showToast(__("IS_IN_SHRINE_FORMATION"))
-
-			return
-		end
-
-		local equips = self.partner_:getEquipment()
-
-		if equips[1] + equips[2] + equips[3] + equips[4] + equips[6] == 0 then
-			return
-		end
-
-		local now_equips = {
-			0,
-			0,
-			0,
-			0,
-			equips[5],
-			0,
-			equips[7]
-		}
-
-		xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_OFF)
-		self.partner_:equip(now_equips)
+		self:onClickUnEquipAll()
 	end)
 	UIEventListener.Get(self.btnAwake).onClick = handler(self, self.onclickAwake)
 	UIEventListener.Get(self.awakeArrowLeft).onClick = handler(self, function ()
@@ -5809,6 +5788,8 @@ function PartnerDetailWindow:onClickShenXueBtn()
 			xyd.showToast(__("UNLOCK_FAILED"))
 		elseif xyd.checkDateLock(hostPartner) then
 			xyd.showToast(__("DATE_LOCK_FAIL"))
+		elseif xyd.checkQuickFormation(hostPartner) then
+			xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 		else
 			local str = __("IF_UNLOCK_HERO_2")
 
@@ -6231,6 +6212,33 @@ function PartnerDetailWindow:checkExSkillGuide()
 		})
 		xyd.models.slot:setExskillGuide()
 	end
+end
+
+function PartnerDetailWindow:onClickUnEquipAll()
+	if self.isShrineHurdle_ then
+		xyd.showToast(__("IS_IN_SHRINE_FORMATION"))
+
+		return
+	end
+
+	local equips = self.partner_:getEquipment()
+
+	if equips[1] + equips[2] + equips[3] + equips[4] + equips[6] == 0 then
+		return
+	end
+
+	local now_equips = {
+		0,
+		0,
+		0,
+		0,
+		equips[5],
+		0,
+		equips[7]
+	}
+
+	xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_OFF)
+	self.partner_:equip(now_equips)
 end
 
 return PartnerDetailWindow

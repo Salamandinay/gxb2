@@ -5231,7 +5231,7 @@ Humain/Monstre/Fée.
 5 étoiles de la Maison Fantôme/
 Humain/Monstre/Fée/Ange/Démon.
 (le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
-4102036,Boîte de Fille Ange/Démon (Station Spatiale Égarée-S1),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4102036,Boîte de Fille Ange/Démon (Station Spatiale Égarée-S2),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 4101048,Boîte de Fille 5 étoiles (Station Spatiale Égarée-S1),Boîte à choix,"
 À utiliser pour choisir une Fille
 5 étoiles de la Maison Fantôme/
@@ -5498,10 +5498,10 @@ Humain/Monstre/Fée.
 27273,Muguet Harmonieux,Skin,Skin de Selkis - Muguet Harmonieux
 7274,Prof' Remplaçante,Skin,Skin de Lord Dracula - Prof' Remplaçante
 27274,Prof' Remplaçante,Skin,Skin de Lord Dracula - Prof' Remplaçante
-930223,Fille A,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
-56010,A,,
-656020,A,,
-756010,A,,
+930223,Cupidon 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
+56010,Cupidon,,
+656020,Cupidon,,
+756010,Cupidon,,
 4206001,Boîte de Sphères,Boîte à choix,"Boîte précieuse de Document Préparatoire, vous pouvez choisir l'une des récompenses suivantes après son ouverture：Sphère Terne *1000 et Sphère Luisante *100"
 4104007,Boîte de Fille 5 étoiles (Station Spatiale Égarée-S3),Boîte à choix,"
 À utiliser pour choisir une Fille
@@ -5517,7 +5517,277 @@ Humain/Monstre/Fée.
 4102040,Boîte de Fille Ange/Démon (Station Spatiale Égarée-S3),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
 7275,Concert d'Enfer,Skin,Skin d'Azumi - Concert d'Enfer
 27275,Concert d'Enfer,Skin,Skin d'Azumi - Concert d'Enfer
-930224,Fille B,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
-55012,Fille B,,
-655021,Fille B,,
-755011,Fille B,,
+930224,Prométhéa 5 étoiles,Invoquer une Fille,Collectez 50 Fragments pour invoquer cette Fille
+55012,Prométhéa,,
+655021,Prométhéa,,
+755011,Prométhéa,,
+3101171,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101172,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101173,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101174,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101175,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101176,Tête (Cupcake Chantilly),Tête,Tête de la Tenue - Cupcake Chantilly
+3101177,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101178,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101179,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101180,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101181,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101182,Haut (Cupcake Chantilly),Haut,Haut de la Tenue - Cupcake Chantilly
+3101183,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101184,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101185,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101186,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101187,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101188,Bas (Cupcake Chantilly),Bas,Bas de la Tenue - Cupcake Chantilly
+3101189,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101190,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101191,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101192,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101193,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101194,Accessoire (Cupcake Chantilly),Accessoire,Accessoire de la Tenue - Cupcake Chantilly
+3101195,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101196,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101197,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101198,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101199,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101200,Objet (Cupcake Chantilly),Objet,Objet de la Tenue - Cupcake Chantilly
+3101201,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101202,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101203,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101204,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101205,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101206,Tête (Bal d'Anniversaire),Tête,Tête de la Tenue - Bal d'Anniversaire
+3101207,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101208,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101209,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101210,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101211,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101212,Haut (Bal d'Anniversaire),Haut,Haut de la Tenue - Bal d'Anniversaire
+3101213,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101214,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101215,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101216,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101217,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101218,Bas (Bal d'Anniversaire),Bas,Bas de la Tenue - Bal d'Anniversaire
+3101219,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101220,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101221,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101222,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101223,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101224,Accessoire (Bal d'Anniversaire),Accessoire,Accessoire de la Tenue - Bal d'Anniversaire
+3101225,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101226,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101227,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101228,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101229,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101230,Objet (Bal d'Anniversaire),Objet,Objet de la Tenue - Bal d'Anniversaire
+3101231,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101232,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101233,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101234,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101235,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101236,Tête (Fanfare Magique),Tête,Tête de la Tenue - Fanfare Magique
+3101237,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101238,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101239,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101240,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101241,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101242,Haut (Fanfare Magique),Haut,Haut de la Tenue - Fanfare Magique
+3101243,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101244,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101245,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101246,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101247,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101248,Bas (Fanfare Magique),Bas,Bas de la Tenue - Fanfare Magique
+3101249,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101250,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101251,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101252,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101253,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101254,Accessoire (Fanfare Magique),Accessoire,Accessoire de la Tenue - Fanfare Magique
+3101255,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101256,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101257,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101258,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101259,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101260,Objet (Fanfare Magique),Objet,Objet de la Tenue - Fanfare Magique
+3101261,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101262,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101263,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101264,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101265,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101266,Tête (Aéro-Spationaute),Tête,Tête de la Tenue - Aéro-Spationaute
+3101267,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101268,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101269,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101270,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101271,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101272,Haut (Aéro-Spationaute),Haut,Haut de la Tenue - Aéro-Spationaute
+3101273,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101274,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101275,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101276,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101277,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101278,Bas (Aéro-Spationaute),Bas,Bas de la Tenue - Aéro-Spationaute
+3101279,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101280,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101281,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101282,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101283,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101284,Accessoire (Aéro-Spationaute),Accessoire,Accessoire de la Tenue - Aéro-Spationaute
+3101285,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101286,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101287,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101288,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101289,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101290,Objet (Aéro-Spationaute),Objet,Objet de la Tenue - Aéro-Spationaute
+3101291,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101292,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101293,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101294,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101295,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101296,Tête (Yakuza de l'Ombre),Tête,Tête de la Tenue - Yakuza de l'Ombre
+3101297,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101298,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101299,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101300,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101301,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101302,Haut (Yakuza de l'Ombre),Haut,Haut de la Tenue - Yakuza de l'Ombre
+3101303,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101304,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101305,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101306,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101307,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101308,Bas (Yakuza de l'Ombre),Bas,Bas de la Tenue - Yakuza de l'Ombre
+3101309,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101310,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101311,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101312,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101313,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101314,Accessoire (Yakuza de l'Ombre),Accessoire,Accessoire de la Tenue - Yakuza de l'Ombre
+3101315,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101316,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101317,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101318,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101319,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101320,Objet (Yakuza de l'Ombre),Objet,Objet de la Tenue - Yakuza de l'Ombre
+3101321,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101322,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101323,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101324,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101325,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101326,Tête (Yakuza Rebelle),Tête,Tête de la Tenue - Yakuza Rebelle
+3101327,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101328,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101329,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101330,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101331,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101332,Haut (Yakuza Rebelle),Haut,Haut de la Tenue - Yakuza Rebelle
+3101333,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101334,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101335,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101336,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101337,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101338,Bas (Yakuza Rebelle),Bas,Bas de la Tenue - Yakuza Rebelle
+3101339,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101340,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101341,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101342,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101343,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101344,Accessoire (Yakuza Rebelle),Accessoire,Accessoire de la Tenue - Yakuza Rebelle
+3101345,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101346,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101347,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101348,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101349,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101350,Objet (Yakuza Rebelle),Objet,Objet de la Tenue - Yakuza Rebelle
+3101351,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101352,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101353,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101354,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101355,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101356,Tête (Yakuza Élite),Tête,Tête de la Tenue - Yakuza Élite
+3101357,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101358,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101359,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101360,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101361,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101362,Haut (Yakuza Élite),Haut,Haut de la Tenue - Yakuza Élite
+3101363,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101364,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101365,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101366,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101367,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101368,Bas (Yakuza Élite),Bas,Bas de la Tenue - Yakuza Élite
+3101369,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101370,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101371,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101372,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101373,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101374,Accessoire (Yakuza Élite),Accessoire,Accessoire de la Tenue - Yakuza Élite
+3101375,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3101376,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3101377,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3101378,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3101379,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3101380,Objet (Yakuza Élite),Objet,Objet de la Tenue - Yakuza Élite
+3201171,Fragment de la Tête (Cupcake Chantilly),Fragment de Tenue,Fragment de la Tête (Cupcake Chantilly)
+3201177,Fragment du Haut (Cupcake Chantilly),Fragment de Tenue,Fragment du Haut (Cupcake Chantilly)
+3201183,Fragment du Bas (Cupcake Chantilly),Fragment de Tenue,Fragment du Bas (Cupcake Chantilly)
+3201189,Fragment de l'Accessoire (Cupcake Chantilly),Fragment de Tenue,Fragment de l'Accessoire (Cupcake Chantilly)
+3201195,Fragment de l'Objet (Cupcake Chantilly),Fragment de Tenue,Fragment de l'Objet (Cupcake Chantilly)
+3201201,Fragment de la Tête (Bal d'Anniversaire),Fragment de Tenue,Fragment de la Tête (Bal d'Anniversaire)
+3201207,Fragment du Haut (Bal d'Anniversaire),Fragment de Tenue,Fragment du Haut (Bal d'Anniversaire)
+3201213,Fragment du Bas (Bal d'Anniversaire),Fragment de Tenue,Fragment du Bas (Bal d'Anniversaire)
+3201219,Fragment de l'Accessoire (Bal d'Anniversaire),Fragment de Tenue,Fragment de l'Accessoire (Bal d'Anniversaire)
+3201225,Fragment de l'Objet (Bal d'Anniversaire),Fragment de Tenue,Fragment de l'Objet (Bal d'Anniversaire)
+3201231,Fragment de la Tête (Fanfare Magique),Fragment de Tenue,Fragment de la Tête (Fanfare Magique)
+3201237,Fragment du Haut (Fanfare Magique),Fragment de Tenue,Fragment du Haut (Fanfare Magique)
+3201243,Fragment du Bas (Fanfare Magique),Fragment de Tenue,Fragment du Bas (Fanfare Magique)
+3201249,Fragment de l'Accessoire (Fanfare Magique),Fragment de Tenue,Fragment de l'Accessoire (Fanfare Magique)
+3201255,Fragment de l'Objet (Fanfare Magique),Fragment de Tenue,Fragment de l'Objet (Fanfare Magique)
+3201261,Fragment de la Tête (Aéro-Spationaute),Fragment de Tenue,Fragment de la Tête (Aéro-Spationaute)
+3201267,Fragment du Haut (Aéro-Spationaute),Fragment de Tenue,Fragment du Haut (Aéro-Spationaute)
+3201273,Fragment du Bas (Aéro-Spationaute),Fragment de Tenue,Fragment du Bas (Aéro-Spationaute)
+3201279,Fragment de l'Accessoire (Aéro-Spationaute),Fragment de Tenue,Fragment de l'Accessoire (Aéro-Spationaute)
+3201285,Fragment de l'Objet (Aéro-Spationaute),Fragment de Tenue,Fragment de l'Objet (Aéro-Spationaute)
+3201291,Fragment de la Tête (Yakuza de l'Ombre),Fragment de Tenue,Fragment de la Tête (Yakuza de l'Ombre)
+3201297,Fragment du Haut (Yakuza de l'Ombre),Fragment de Tenue,Fragment du Haut (Yakuza de l'Ombre)
+3201303,Fragment du Bas (Yakuza de l'Ombre),Fragment de Tenue,Fragment du Bas (Yakuza de l'Ombre)
+3201309,Fragment de l'Accessoire (Yakuza de l'Ombre),Fragment de Tenue,Fragment de l'Accessoire (Yakuza de l'Ombre)
+3201315,Fragment de l'Objet (Yakuza de l'Ombre),Fragment de Tenue,Fragment de l'Objet (Yakuza de l'Ombre)
+3201321,Fragment de la Tête (Yakuza Rebelle),Fragment de Tenue,Fragment de la Tête (Yakuza Rebelle)
+3201327,Fragment du Haut (Yakuza Rebelle),Fragment de Tenue,Fragment du Haut (Yakuza Rebelle)
+3201333,Fragment du Bas (Yakuza Rebelle),Fragment de Tenue,Fragment du Bas (Yakuza Rebelle)
+3201339,Fragment de l'Accessoire (Yakuza Rebelle),Fragment de Tenue,Fragment de l'Accessoire (Yakuza Rebelle)
+3201345,Fragment de l'Objet (Yakuza Rebelle),Fragment de Tenue,Fragment de l'Objet (Yakuza Rebelle)
+3201351,Fragment de la Tête (Yakuza Élite),Fragment de Tenue,Fragment de la Tête (Yakuza Élite)
+3201357,Fragment du Haut (Yakuza Élite),Fragment de Tenue,Fragment du Haut (Yakuza Élite)
+3201363,Fragment du Bas (Yakuza Élite),Fragment de Tenue,Fragment du Bas (Yakuza Élite)
+3201369,Fragment de l'Accessoire (Yakuza Élite),Fragment de Tenue,Fragment de l'Accessoire (Yakuza Élite)
+3201375,Fragment de l'Objet (Yakuza Élite),Fragment de Tenue,Fragment de l'Objet (Yakuza Élite)
+4302030,Boîte de Skin Avancé (Le Périple de Lavli-S21),Boîte à choix,"À utiliser pour choisir d'obtenir un Skin. (touchez la loupe pour en savoir plus, le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)"
+4102041,Boîte de Fille Ange/Démon (Le Périple de Lavli-S21),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4101055,Boîte de Fille (Le Périple de Lavli-S21),Boîte à choix,"
+À utiliser pour choisir une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
+4601036,Boîte de Tenue Orange (Haut),Boîte à choix,À utiliser pour choisir d'obtenir 1 élément (Haut) de Tenue Orange (touchez la loupe pour en savoir plus; le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4101056,Boîte de Filles 5 étoiles,Boîte à choix,"
+À utiliser pour choisir une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
+7276,Concert Révoltant,Skin,Skin de Térèsa - Concert Révoltant
+27276,Concert Révoltant,Skin,Skin de Térèsa - Concert Révoltant
+383,Coupon de tirage x10,Coupon Spécial,"À utiliser pour tirer 10 fois la Capsule Avancée durant l'événement - Capsules de Nouvelle Fille (du 08/07 au 14/07).\nAttention : Cet objet disparaîtra après la fin de cet événement, veuillez l'utiliser à temps."
+7277,Promesse Lunaire,Skin,Skin de Diana - Promesse Lunaire
+27277,Promesse Lunaire,Skin,Skin de Diana - Promesse Lunaire
+9128,Je veux !,Émoji,Émoji de Cupidon - Je veux !
+9129,COURS !,Émoji,Émoji de Cupidon & Prométhéa - COURS !
+9130,Libère-moi !,Émoji,Émoji de Prométhéa - Libère-moi !
+9131,Je m'ennuie,Émoji,Émoji de Selkis - Je m'ennuie
+4203011,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Pièce d'Or *400K, Jus d'EXP *400K, Plateau Repas *3000, Ciseau de Cristal *3000, Essence *200"
+4205010,Boîte de Document Préparatoire,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Document Préparatoire *500, Document Préparatoire Avancé *100"
+20001081,Avatar Exclusif de Cupidon & Prométhéa,Avatar Spécial,Avatar Exclusif de Cupidon & Prométhéa

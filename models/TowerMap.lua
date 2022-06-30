@@ -290,11 +290,18 @@ local function addFightPartnerMsg(protoMsg, partnerParams)
 end
 
 function TowerMap:TowerBattle(stage_id)
-	local partnerParams = self:readStorageFormation()
 	local msg = messages_pb.tower_fight_req()
 	msg.pet_id = self.pet or 0
+	local formation_id = xyd.db.misc:getValue("tower_battle_formation")
 
-	addFightPartnerMsg(msg, partnerParams)
+	if formation_id and tonumber(formation_id) > 0 then
+		msg.formation_id = tonumber(formation_id)
+	else
+		local partnerParams = self:readStorageFormation()
+
+		addFightPartnerMsg(msg, partnerParams)
+	end
+
 	xyd.Backend.get():request(xyd.mid.TOWER_FIGHT, msg)
 end
 

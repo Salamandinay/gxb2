@@ -96,6 +96,7 @@ function ModelManager:ctor()
 	metatable.arenaAllServerNew = "app.models.ArenaAllServerNew"
 	metatable.shrineHurdleModel = "app.models.ShrineHurdleModel"
 	metatable.gameAssistant = "app.models.GameAssistant"
+	metatable.quickFormation = "app.models.QuickFormation"
 end
 
 function ModelManager:reset()

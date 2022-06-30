@@ -162,7 +162,7 @@ function AcademyAssessment:reqSweep(id, times)
 	xyd.Backend.get():request(xyd.mid.SCHOOL_PRACTICE_SWEEP, msg)
 end
 
-function AcademyAssessment:reqFight(stageId, partners, petId)
+function AcademyAssessment:reqFight(stageId, partners, petId, team_index)
 	if self:checkTimeEnd() == false then
 		xyd.showToast(__("ACADEMY_ASSESSMENT_END_TIPS"))
 
@@ -172,12 +172,10 @@ function AcademyAssessment:reqFight(stageId, partners, petId)
 	local msg = messages_pb.school_practice_fight_req()
 	msg.stage_id = stageId
 
-	for _, p in pairs(partners) do
-		local fightPartnerMsg = messages_pb.fight_partner()
-		fightPartnerMsg.partner_id = p.partner_id
-		fightPartnerMsg.pos = p.pos
-
-		table.insert(msg.partners, fightPartnerMsg)
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		xyd.getFightPartnerMsg(msg.partners, partners)
 	end
 
 	msg.pet_id = petId

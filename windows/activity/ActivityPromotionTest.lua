@@ -133,14 +133,44 @@ function ActivityPromotionTest:initUIComponent()
 		self.labelTip2:X(-325.5)
 	end
 
-	local partnerImgParams = xyd.tables.miscTable:split2Cost("activity_promotion_test_picture", "value", "|")
-	self.partnerImg_.width = partnerImgParams[2]
-	self.partnerImg_.height = partnerImgParams[3]
+	local helpArr = {
+		{
+			-115,
+			138,
+			138
+		},
+		{
+			-104,
+			160,
+			160
+		},
+		{
+			0,
+			163,
+			163
+		},
+		{
+			-31,
+			160,
+			160
+		},
+		{
+			-123,
+			140,
+			140
+		},
+		{
+			-88,
+			162,
+			162
+		}
+	}
+	local partnerIndex = xyd.tables.miscTable:getNumber("activity_promotion_test_picture", "value")
 
-	xyd.setUISpriteAsync(self.partnerImg_, nil, "activity_promotion_test_zj_" .. partnerImgParams[1])
+	xyd.setUISpriteAsync(self.partnerImg_, nil, "activity_promotion_test_zj_" .. partnerIndex, nil, , true)
 	xyd.setUISpriteAsync(self.imgTitle, nil, "activity_promotion_test_logo_" .. xyd.Global.lang)
-	self.partnerImg_:X(partnerImgParams[4])
-	self:resizePosY(self.partnerImg_, partnerImgParams[5], partnerImgParams[6])
+	self.partnerImg_:X(helpArr[partnerIndex][1])
+	self:resizePosY(self.partnerImg_, helpArr[partnerIndex][2], helpArr[partnerIndex][3])
 	self:updateProgressGroup()
 	self:updateAwardGroup()
 end

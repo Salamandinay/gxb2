@@ -66,7 +66,7 @@ function Partner:populate(params)
 	self.love_point = params.love_point or params.lovePoint or 0
 	self.last_love_point_time = params.last_love_point_time or 0
 	self.guaji_love_point = params.guaji_love_point or 0
-	self.is_vowed = params.is_vowed or 0
+	self.is_vowed = params.is_vowed or params.isVowed or 0
 	self.wedding_date = params.wedding_date or 0
 	self.potentials = params.potentials or {
 		0,
@@ -258,6 +258,14 @@ end
 
 function Partner:getPotential()
 	return self.potentials
+end
+
+function Partner:updatePotential(potentials)
+	self.potentials = potentials or {
+		0,
+		0,
+		0
+	}
 end
 
 function Partner:getPartnerCard()

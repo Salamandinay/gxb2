@@ -10,6 +10,7 @@ function PotentialityChooseWindow:ctor(name, params)
 	self.awake_index_ = params.awake_index
 	self.isEntrance_ = params.isEntrance
 	self.type = params.type or "default"
+	self.quickItem_ = params.quickItem
 
 	if params.callBack then
 		self.callBack = params.callBack
@@ -127,6 +128,16 @@ function PotentialityChooseWindow:onClickConfirmBtn()
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = xyd.event.CHOOSE_PARTNER_POTENTIAL
 			})
+		elseif self.quickItem_ then
+			self.partner_.potentials[self.awake_index_] = index
+
+			self.quickItem_:updatePotentials(self.awake_index_, index)
+
+			local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+			if win then
+				win:updateWindowShow()
+			end
 		else
 			local msg = messages_pb.choose_partner_potential_req()
 			msg.awake_index = self.awake_index_
@@ -143,7 +154,7 @@ function PotentialityChooseWindow:onClickConfirmBtn()
 		xyd.WindowManager.get():closeWindow(self.name_)
 	elseif self.type == "potentials_bak" then
 		if self.callBack then
-			self.callBack(self.index_)
+			self.callBack(self.index_, self.awake_index_)
 		end
 
 		xyd.WindowManager.get():closeWindow(self.name_)

@@ -50,6 +50,8 @@ function AltarItem:update(index, realIndex, info)
 					xyd.showToast(__("UNLOCK_FAILED"))
 				elseif xyd.checkDateLock(self.partner_) then
 					xyd.showToast(__("DATE_LOCK_FAIL"))
+				elseif xyd.checkQuickFormation(self.partner_) then
+					xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 				else
 					local str = __("IF_UNLOCK_HERO_3")
 
@@ -155,6 +157,8 @@ function BackItem:update(index, realIndex, info)
 					xyd.showToast(__("UNLOCK_FAILED"))
 				elseif xyd.checkDateLock(self.partner_) then
 					xyd.showToast(__("DATE_LOCK_FAIL"))
+				elseif xyd.checkQuickFormation(self.partner_) then
+					xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 				else
 					local str = __("IF_UNLOCK_HERO_3")
 
@@ -672,6 +676,8 @@ function AltarWindow:onClickBack()
 				xyd.showToast(__("DATE_LOCK_FAIL"))
 			elseif xyd.checkHouseLock(partner) then
 				xyd.showToast(__("HOUSE_LOCK_FAIL"))
+			elseif xyd.checkQuickFormation(partner) then
+				xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 			else
 				local timeStamp = xyd.db.misc:getValue("back_partner_time_stamp")
 
@@ -719,6 +725,8 @@ function AltarWindow:onClickBack()
 			xyd.showToast(__("DATE_LOCK_FAIL"))
 		elseif xyd.checkHouseLock(partner) then
 			xyd.showToast(__("HOUSE_LOCK_FAIL"))
+		elseif xyd.checkQuickFormation(partner) then
+			xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 		else
 			local str = nil
 			str = __("IF_UNLOCK_HERO_3")

@@ -397,6 +397,10 @@ end
 
 function Arena:getIsSettlementing()
 	if self:getDDL() and self:getDDL() <= xyd.getServerTime() then
+		if UNITY_EDITOR then
+			return false
+		end
+
 		return true
 	end
 

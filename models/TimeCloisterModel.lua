@@ -233,24 +233,28 @@ function TimeCloisterModel:reqCloisterInfo(cloister)
 	xyd.Backend.get():request(xyd.mid.GET_CLOISTER_INFO, msg)
 end
 
-function TimeCloisterModel:reqTimeCloisterBattle(cloister, stage, teamFormation, pet_id)
+function TimeCloisterModel:reqTimeCloisterBattle(cloister, stage, teamFormation, pet_id, team_index)
 	local msg = messages_pb.time_cloister_fight_req()
 	msg.cloister_id = cloister
 	msg.stage = stage
 	msg.pet_id = pet_id
 
-	for _, teamInfo in pairs(teamFormation) do
-		local teamMsg = messages_pb.time_cloister_encounter_team_formation()
-		teamMsg.partner_id = teamInfo.partner_id
-		teamMsg.pos = teamInfo.pos
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		for _, teamInfo in pairs(teamFormation) do
+			local teamMsg = messages_pb.time_cloister_encounter_team_formation()
+			teamMsg.partner_id = teamInfo.partner_id
+			teamMsg.pos = teamInfo.pos
 
-		if tonumber(teamInfo.partner_id) < 0 then
-			teamMsg.is_extra = true
-		else
-			teamMsg.is_extra = false
+			if tonumber(teamInfo.partner_id) < 0 then
+				teamMsg.is_extra = true
+			else
+				teamMsg.is_extra = false
+			end
+
+			table.insert(msg.partners, teamMsg)
 		end
-
-		table.insert(msg.partners, teamMsg)
 	end
 
 	xyd.Backend.get():request(xyd.mid.TIME_CLOISTER_FIGHT, msg)
@@ -752,23 +756,27 @@ function TimeCloisterModel:getCloisterImg(str)
 	return bgImg
 end
 
-function TimeCloisterModel:reqTimeCloisterEncounter(cardId, teamFormation, pet_id)
+function TimeCloisterModel:reqTimeCloisterEncounter(cardId, teamFormation, pet_id, team_index)
 	local msg = messages_pb.time_cloister_extra_req()
 	msg.event_id = tostring(cardId)
 	msg.pet_id = pet_id
 
-	for _, teamInfo in pairs(teamFormation) do
-		local teamMsg = messages_pb.time_cloister_encounter_team_formation()
-		teamMsg.partner_id = teamInfo.partner_id
-		teamMsg.pos = teamInfo.pos
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		for _, teamInfo in pairs(teamFormation) do
+			local teamMsg = messages_pb.time_cloister_encounter_team_formation()
+			teamMsg.partner_id = teamInfo.partner_id
+			teamMsg.pos = teamInfo.pos
 
-		if tonumber(teamInfo.partner_id) < 0 then
-			teamMsg.is_extra = true
-		else
-			teamMsg.is_extra = false
+			if tonumber(teamInfo.partner_id) < 0 then
+				teamMsg.is_extra = true
+			else
+				teamMsg.is_extra = false
+			end
+
+			table.insert(msg.partners, teamMsg)
 		end
-
-		table.insert(msg.partners, teamMsg)
 	end
 
 	xyd.Backend.get():request(xyd.mid.TIME_CLOISTER_EXTRA, msg)

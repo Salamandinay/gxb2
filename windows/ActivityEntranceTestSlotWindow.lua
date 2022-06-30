@@ -3,6 +3,7 @@ local ActivityEntranceTestSlotWindow = class("ActivityEntranceTestSlotWindow", S
 local EntranceTestSlotPartnerCard = class("EntranceTestSlotPartnerCard", import("app.components.BaseComponent"))
 local EntranceTestClipContent = class("EntranceTestClipContent", import("app.components.BaseComponent"))
 local PartnerCard = import("app.components.PartnerCard")
+local WindowTop = import("app.components.WindowTop")
 
 function ActivityEntranceTestSlotWindow:ctor(name, params)
 	ActivityEntranceTestSlotWindow.super.ctor(self, name, params)
@@ -14,6 +15,20 @@ function ActivityEntranceTestSlotWindow:ctor(name, params)
 	if params then
 		self.fromTask = params.fromTask
 	end
+end
+
+function ActivityEntranceTestSlotWindow:initTopGroup()
+	self.windowTop = WindowTop.new(self.top, self.name_, 5)
+	local items = {
+		{
+			id = xyd.ItemID.CRYSTAL
+		},
+		{
+			id = xyd.ItemID.MANA
+		}
+	}
+
+	self.windowTop:setItem(items)
 end
 
 function ActivityEntranceTestSlotWindow:getUIComponent()
@@ -300,11 +315,7 @@ function EntranceTestSlotPartnerCard:init(partner, sort_key, red_point)
 		local np = self.data.partner
 		local table_id = np.tableID
 
-		print(self.parent.fromTask)
-		print(tonumber(table_id) == tonumber(xyd.tables.miscTable:getNumber("entrance_test_help_show", "value")))
-		print(self.parent.fromTask and tonumber(table_id) == tonumber(xyd.tables.miscTable:getNumber("entrance_test_help_show", "value")))
-
-		if not self.flag and self.parent.fromTask and tonumber(table_id) == tonumber(xyd.tables.miscTable:getNumber("entrance_test_help_show", "value")) then
+		if not self.flag and self.parent.fromTask and tonumber(table_id) == tonumber(xyd.tables.miscTable:split2num("entrance_test_help_show", "value", "|")[1]) then
 			print("=-----------------------------------------")
 
 			self.effect = xyd.Spine.new(self.card_node.gameObject)

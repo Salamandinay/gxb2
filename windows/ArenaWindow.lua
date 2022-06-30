@@ -297,9 +297,11 @@ function ArenaWindow:updateDDL()
 	elseif ddl <= 0 then
 		self.labelDDL.text = "00:00:00"
 
-		self:close()
+		if not UNITY_EDITOR then
+			self:close()
 
-		return
+			return
+		end
 	end
 
 	self.labelGroupUITable:Reposition()

@@ -656,6 +656,8 @@ function SelfPlayer:onLoginInfo_(event)
 			data = params.cloister_red_info
 		})
 	end
+
+	xyd.models.quickFormation:reqTeamsInfo()
 end
 
 function SelfPlayer:setOpenedFunc(ids)

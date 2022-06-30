@@ -1157,9 +1157,9 @@ function BattleChooseWindow:registerEvent()
 			self.timeCloister:GetComponent(typeof(UIDragScrollView)).enabled = true
 		end
 
-		xyd.models.timeCloisterModel:tryGetTimeCloisterInfo()
-
 		if not xyd.db.misc:getValue("time_cloister_story") then
+			xyd.models.timeCloisterModel:tryGetTimeCloisterInfo()
+
 			local storyId = 5216
 
 			xyd.WindowManager.get():openWindow("story_window", {

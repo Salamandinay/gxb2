@@ -501,10 +501,14 @@ function FriendTeamBoss:getTime2TeamEnd()
 	return endTime - tonumber(xyd.tables.miscTable:getVal("govern_team_time"))
 end
 
-function FriendTeamBoss:reqFight(partners, pet, index)
+function FriendTeamBoss:reqFight(partners, pet, index, team_index)
 	local msg = messages_pb.friend_team_boss_fight_req()
 
-	xyd.getFightPartnerMsg(msg.partners, partners)
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		xyd.getFightPartnerMsg(msg.partners, partners)
+	end
 
 	msg.pet_id = pet
 	msg.boss_index = index

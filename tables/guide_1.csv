@@ -152,3 +152,6 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 151,collection_skin,1,50,,,main_window,,schoolBtn,,,,,,2,buttoncrop_8,-1|-1,1.2|1.2,,1,,,,,,,,0.2,,,,,
 152,collection_skin,1,50,,,school_choose_window,,tab2,,,,,,,,,,,,,,,,,,,,,,,,
 153,collection_skin,1,50,,,school_choose_window,,btnSkinCollection,,,,1,52,,,,,,,,,,,,,,,,,,,
+154,quick_formation,1,51,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
+155,quick_formation,1,51,,,main_window,,MainwinBottomBtn_2,,,,,,0,,0|0,1|1.5,,1,,1,,450|-50,1,,,,,,,,
+156,quick_formation,1,51,,,slot_window,,quickFormationBtn,,,,1,53,0,,0|0,,,1,,1,-1,640|422,1,,,,,,,,

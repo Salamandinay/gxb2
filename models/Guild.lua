@@ -562,7 +562,7 @@ function Guild:reqDiningHallCompleteOrder(id)
 	xyd.Backend.get():request(xyd.mid.GUILD_DININGHALL_COMPLETE_ORDER, msg)
 end
 
-function Guild:fightBoss(bossId, partners, petID)
+function Guild:fightBoss(bossId, partners, petID, team_index)
 	if not partners then
 		return
 	end
@@ -571,12 +571,16 @@ function Guild:fightBoss(bossId, partners, petID)
 	msg.boss_id = bossId
 	msg.pet_id = petID
 
-	for _, p in pairs(partners) do
-		local fightPartnerMsg = messages_pb.fight_partner()
-		fightPartnerMsg.partner_id = p.partner_id
-		fightPartnerMsg.pos = p.pos
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		for _, p in pairs(partners) do
+			local fightPartnerMsg = messages_pb.fight_partner()
+			fightPartnerMsg.partner_id = p.partner_id
+			fightPartnerMsg.pos = p.pos
 
-		table.insert(msg.partners, fightPartnerMsg)
+			table.insert(msg.partners, fightPartnerMsg)
+		end
 	end
 
 	xyd.Backend.get():request(xyd.mid.GUILD_BOSS_FIGHT, msg)

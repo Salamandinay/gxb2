@@ -11,6 +11,8 @@ function PotentialitySwitchWindow:ctor(name, params)
 
 	self.partner_ = params.partner
 	self.isEntrance_ = params.isEntrance
+	self.callback_ = params.callback
+	self.quickItem_ = params.quickItem
 end
 
 function PotentialitySwitchWindow:initWindow()
@@ -45,7 +47,7 @@ function PotentialitySwitchWindow:getComponent()
 	self.effectGroup_ = groupTrans:NodeByName("effectGroup").gameObject
 	self.itemGroup_ = groupTrans:ComponentByName("itemGroup", typeof(UIGrid))
 
-	if self.isEntrance_ then
+	if self.isEntrance_ or self.quickItem_ then
 		self.switchBtn:SetActive(false)
 		self.switchBtnLabel_.gameObject:SetActive(false)
 	end
@@ -73,6 +75,33 @@ function PotentialitySwitchWindow:register()
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = xyd.event.CHOOSE_PARTNER_POTENTIAL
 			})
+		elseif self.quickItem_ then
+			self.quickItem_:updatePotentials(self.select_row_, self.select_col_)
+
+			local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+			if win then
+				win:updateWindowShow()
+			end
+
+			self:waitForFrame(1, function ()
+				self:initSkills()
+
+				if not self.effect_ then
+					self.effect_ = xyd.Spine.new(self.effectGroup_)
+
+					self.effect_:setInfo("fx_ui_13xing_switch_skill", function ()
+						self.effect_:play("texiao01", 1, 1, function ()
+							self.effect_:SetActive(false)
+						end)
+					end)
+				else
+					self.effect_:SetActive(true)
+					self.effect_:play("texiao01", 1, 1, function ()
+						self.effect_:SetActive(false)
+					end)
+				end
+			end)
 		else
 			local msg = messages_pb.choose_partner_potential_req()
 			msg.awake_index = self.select_row_

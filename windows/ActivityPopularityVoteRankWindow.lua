@@ -7,6 +7,8 @@ function ActivityPopularityVoteRankWindow:ctor(name, params)
 end
 
 function ActivityPopularityVoteRankWindow:initWindow()
+	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE)
+
 	self:getUIComponent()
 	self:layout()
 	self:registerEvent()
@@ -26,7 +28,12 @@ end
 
 function ActivityPopularityVoteRankWindow:layout()
 	self.labelTitle.text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT8")
-	local player_list = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE).detail_.player_list
+
+	dump(self.activityData.history[9][1][1].table_id)
+
+	local player_list = self.activityData:getRankListByParner(self.activityData.history[9][1][1].table_id)
+
+	dump(player_list)
 
 	for i = 1, #player_list do
 		player_list[i].rank = i

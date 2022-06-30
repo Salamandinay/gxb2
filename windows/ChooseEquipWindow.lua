@@ -38,6 +38,7 @@ function ChooseEquipWindow:ctor(name, params)
 	self.equipedOn = params.equipedOn
 	self.equipedPartner = params.equipedPartner
 	self.isAll = true
+	self.quickItem = params.quickItem
 
 	self:sortEquips()
 end
@@ -103,7 +104,7 @@ function ChooseEquipWindow:initWindow()
 
 				table.insert(self.allInfos, info)
 
-				if not partner_id then
+				if not partner_id or partner_id <= 0 then
 					table.insert(self.unUsedInfos, info)
 				end
 			end
@@ -181,24 +182,50 @@ function ChooseEquipWindow:onclickIcon(itemID, partner_id)
 		itemID = itemID,
 		midColor = xyd.ButtonBgColorType.blue_btn_65_65,
 		midCallback = function ()
-			local now_equip = self.equipedPartner:getEquipment()
-
-			if partner_id then
+			if partner_id and partner_id > 0 then
 				local timeStamp = xyd.db.misc:getValue("rob_equip_confirm")
 
 				if timeStamp and xyd.isSameDay(xyd.getServerTime(), timeStamp, true) then
-					self.equipedPartner:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+					if not self.quickItem then
+						self.equipedPartner:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+					else
+						self.quickItem:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+
+						local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+						if win then
+							win:updateWindowShow()
+						end
+					end
 				else
 					xyd.WindowManager.get():openWindow("rob_equip_confirm_window", {
 						item_id = itemID,
 						partner_id = partner_id,
 						callback = function ()
-							self.equipedPartner:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+							if not self.quickItem then
+								self.equipedPartner:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+							else
+								self.quickItem:equipRob(itemID, partner_id, self.equipedPartner:getPartnerID())
+
+								local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+								if win then
+									win:updateWindowShow()
+								end
+							end
 						end
 					})
 				end
-			else
+			elseif not self.quickItem then
 				self.equipedPartner:equipSingle(itemID)
+			else
+				self.quickItem:equipSingle(itemID)
+
+				local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+				if win then
+					win:updateWindowShow()
+				end
 			end
 
 			self:close()
@@ -207,7 +234,7 @@ function ChooseEquipWindow:onclickIcon(itemID, partner_id)
 		midLabel = self.equipedOn and __("REPLACE") or __("EQUIP_ON")
 	}
 
-	if partner_id then
+	if partner_id and partner_id > 0 then
 		params.equipedOn = xyd.models.slot:getPartner(partner_id)
 	end
 

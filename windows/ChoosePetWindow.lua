@@ -489,6 +489,12 @@ function ChoosePetWindow:willClose(params)
 	if wndPetTrainLessionDetail then
 		wndPetTrainLessionDetail:onChoosePet(self.selectIDs)
 	end
+
+	local quickFormationWindow = xyd.WindowManager.get():getWindow("quick_formation_window")
+
+	if quickFormationWindow then
+		quickFormationWindow:onChoosePet(self.selectIDs)
+	end
 end
 
 function ChoosePetWindow:updateInfo(fakeLevel, id)

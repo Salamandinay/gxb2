@@ -11,6 +11,7 @@ function SuitSkillDetailWindow:ctor(name, params)
 	self.justShow = params.justShow
 	self.partner_ = params.partner
 	self.isFake_ = params.fakeSkill
+	self.quickItem_ = params.quickItem
 end
 
 function SuitSkillDetailWindow:initWindow()
@@ -116,6 +117,10 @@ function SuitSkillDetailWindow:onClickConfirmBtn()
 		activityData.dataHasChange = true
 
 		activityData:setSkillIndex(self.partner_:getTableID(), self.index_)
+	elseif self.quickItem_ then
+		self.partner_.skill_index = self.index_
+
+		self.quickItem_:updateSuitStatus()
 	else
 		xyd.models.slot:changeSuitSkill(self.partner_id, self.index_)
 	end

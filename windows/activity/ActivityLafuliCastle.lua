@@ -1,11 +1,11 @@
 local ActivityLafuliCastle = class("ActivityLafuliCastle", import(".ActivityContent"))
 local CountDown = import("app.components.CountDown")
 local cjson = require("cjson")
-local leftTaskPointMax = xyd.tables.miscTable:split2Cost("activity_lflcastle_score_max", "value", "|")[1]
-local rightTaskPointMax = xyd.tables.miscTable:split2Cost("activity_lflcastle_score_max", "value", "|")[2]
-local leftTaskResID = xyd.tables.miscTable:split2Cost("activity_lflcastle_score", "value", "|")[1]
-local rightTaskResID = xyd.tables.miscTable:split2Cost("activity_lflcastle_score", "value", "|")[2]
-local partnerAwardEnergyNeed = xyd.tables.miscTable:getNumber("activity_lflcastle_energy", "value")
+local progress1MaxPoint = xyd.tables.miscTable:split2Cost("activity_lflcastle_score_max", "value", "|")[1]
+local progress2MaxPoint = xyd.tables.miscTable:split2Cost("activity_lflcastle_score_max", "value", "|")[2]
+local resItemID1 = xyd.tables.miscTable:split2Cost("activity_lflcastle_score", "value", "|")[1]
+local resItemID2 = xyd.tables.miscTable:split2Cost("activity_lflcastle_score", "value", "|")[2]
+local partnerAwardEnergy = xyd.tables.miscTable:getNumber("activity_lflcastle_energy", "value")
 
 function ActivityLafuliCastle:ctor(parentGO, params)
 	ActivityLafuliCastle.super.ctor(self, parentGO, params)
@@ -18,14 +18,14 @@ end
 
 function ActivityLafuliCastle:resizeToParent()
 	ActivityLafuliCastle.super.resizeToParent(self)
-	self:resizePosY(self.groupSence, -468.5, -517.5)
+	self:resizePosY(self.castle, -468.5, -517.5)
 	self:resizePosY(self.imgText, -2, -14)
 	self:resizePosY(self.timeGroup, -164, -170)
-	self:resizePosY(self.groupLeftTask, -420, -482)
-	self:resizePosY(self.groupRightTask, -420, -482)
+	self:resizePosY(self.groupProgress1, -420, -482)
+	self:resizePosY(self.groupProgress2, -420, -482)
 	self:resizePosY(self.groupPartnerAward, -805, -950)
-	self:resizePosY(self.leftResItem, -676, -803)
-	self:resizePosY(self.rightResItem, -676, -803)
+	self:resizePosY(self.resItem1, -676, -803)
+	self:resizePosY(self.resItem2, -676, -803)
 	self:resizePosY(self.btnTask, -823, -968)
 end
 
@@ -42,50 +42,50 @@ function ActivityLafuliCastle:getUIComponent()
 	self.timeGroup = go:NodeByName("timeGroup").gameObject
 	self.timeLabel = self.timeGroup:ComponentByName("timeLabel", typeof(UILabel))
 	self.endLabel = self.timeGroup:ComponentByName("endLabel", typeof(UILabel))
-	self.groupSence = go:NodeByName("groupSence").gameObject
-	self.groupCastle = self.groupSence:NodeByName("groupCastle").gameObject
+	self.castle = go:NodeByName("castle").gameObject
+	self.groupCastle = self.castle:NodeByName("groupCastle").gameObject
 
 	for i = 1, 5 do
 		self["castle" .. i] = self.groupCastle:NodeByName("castle" .. i).gameObject
 	end
 
-	self.groupFigure = self.groupSence:NodeByName("groupFigure").gameObject
+	self.groupFigure = self.castle:NodeByName("groupFigure").gameObject
 
 	for i = 1, 5 do
 		self["figure" .. i] = self.groupFigure:NodeByName("figure" .. i).gameObject
 	end
 
-	self.showEffectNode = self.groupSence:NodeByName("showEffect").gameObject
-	self.boxColliders = self.groupSence:NodeByName("boxColliders").gameObject
+	self.showEffectNode = self.castle:NodeByName("showEffect").gameObject
+	self.boxColliders = self.castle:NodeByName("boxColliders").gameObject
 
 	for i = 1, 11 do
 		self["collider" .. i] = self.boxColliders:NodeByName("collider" .. i).gameObject
 	end
 
-	self.groupLeftTask = go:ComponentByName("groupLeftTask", typeof(UISprite))
-	self.leftLabelProgress = self.groupLeftTask:ComponentByName("labelProgress", typeof(UILabel))
-	self.leftLabelPoint = self.groupLeftTask:ComponentByName("labelPoint", typeof(UILabel))
-	self.leftScrollView = self.groupLeftTask:ComponentByName("scrollView", typeof(UIScrollView))
-	self.leftItemGroup = self.leftScrollView:NodeByName("itemGroup").gameObject
-	self.groupRightTask = go:ComponentByName("groupRightTask", typeof(UISprite))
-	self.rightLabelProgress = self.groupRightTask:ComponentByName("labelProgress", typeof(UILabel))
-	self.rightLabelPoint = self.groupRightTask:ComponentByName("labelPoint", typeof(UILabel))
-	self.rightScrollView = self.groupRightTask:ComponentByName("scrollView", typeof(UIScrollView))
-	self.rightItemGroup = self.rightScrollView:NodeByName("itemGroup").gameObject
+	self.groupProgress1 = go:ComponentByName("groupProgress1", typeof(UISprite))
+	self.labelProgress1 = self.groupProgress1:ComponentByName("labelProgress", typeof(UILabel))
+	self.labelPoint1 = self.groupProgress1:ComponentByName("labelPoint", typeof(UILabel))
+	self.progress1ScrollView = self.groupProgress1:ComponentByName("scrollView", typeof(UIScrollView))
+	self.progress1ItemGroup = self.progress1ScrollView:NodeByName("itemGroup").gameObject
+	self.groupProgress2 = go:ComponentByName("groupProgress2", typeof(UISprite))
+	self.labelProgress2 = self.groupProgress2:ComponentByName("labelProgress", typeof(UILabel))
+	self.labelPoint2 = self.groupProgress2:ComponentByName("labelPoint", typeof(UILabel))
+	self.progress2ScrollView = self.groupProgress2:ComponentByName("scrollView", typeof(UIScrollView))
+	self.progress2ItemGroup = self.progress2ScrollView:NodeByName("itemGroup").gameObject
 	self.groupPartnerAward = go:ComponentByName("groupPartnerAward", typeof(UISprite))
 	self.progressBar = self.groupPartnerAward:ComponentByName("progressBar", typeof(UIProgressBar))
 	self.progressImg = self.progressBar:ComponentByName("progressImg", typeof(UISprite))
 	self.progressNum = self.progressBar:ComponentByName("progressNum", typeof(UILabel))
 	self.labelTip = self.groupPartnerAward:ComponentByName("labelTip", typeof(UILabel))
 	self.parnterAwardEffectNode = self.groupPartnerAward:NodeByName("effect").gameObject
-	self.leftResItem = go:ComponentByName("leftResItem", typeof(UISprite))
-	self.leftResNum = self.leftResItem:ComponentByName("resNum", typeof(UILabel))
-	self.leftResPlus = self.leftResItem:NodeByName("resPlus").gameObject
-	self.leftResEffectNode = self.leftResItem:NodeByName("effect").gameObject
-	self.rightResItem = go:ComponentByName("rightResItem", typeof(UISprite))
-	self.rightResNum = self.rightResItem:ComponentByName("resNum", typeof(UILabel))
-	self.rightResPlus = self.rightResItem:NodeByName("resPlus").gameObject
-	self.rightResEffectNode = self.rightResItem:NodeByName("effect").gameObject
+	self.resItem1 = go:ComponentByName("resItem1", typeof(UISprite))
+	self.resNum1 = self.resItem1:ComponentByName("resNum", typeof(UILabel))
+	self.resPlus1 = self.resItem1:NodeByName("resPlus").gameObject
+	self.resEffectNode1 = self.resItem1:NodeByName("effect").gameObject
+	self.resItem2 = go:ComponentByName("resItem2", typeof(UISprite))
+	self.resNum2 = self.resItem2:ComponentByName("resNum", typeof(UILabel))
+	self.resPlus2 = self.resItem2:NodeByName("resPlus").gameObject
+	self.resEffectNode2 = self.resItem2:NodeByName("effect").gameObject
 	self.btnHelp = go:NodeByName("btnHelp").gameObject
 	self.btnTask = go:NodeByName("btnTask").gameObject
 	self.labelTask = self.btnTask:ComponentByName("labelTask", typeof(UILabel))
@@ -112,10 +112,10 @@ function ActivityLafuliCastle:initText()
 		self.endLabel.transform:SetSiblingIndex(0)
 	end
 
-	self.leftLabelProgress.text = __("ACTIVITY_LAFULI_CASTLE_TEXT01")
-	self.rightLabelProgress.text = __("ACTIVITY_LAFULI_CASTLE_TEXT01")
+	self.labelProgress1.text = __("ACTIVITY_LAFULI_CASTLE_TEXT01")
+	self.labelProgress2.text = __("ACTIVITY_LAFULI_CASTLE_TEXT01")
 	self.labelTask.text = __("ACTIVITY_LAFULI_CASTLE_TEXT02")
-	self.labelTip.text = __("ACTIVITY_LAFULI_CASTLE_TEXT03", partnerAwardEnergyNeed)
+	self.labelTip.text = __("ACTIVITY_LAFULI_CASTLE_TEXT03", partnerAwardEnergy)
 
 	if xyd.Global.lang == "zh_tw" then
 		self.progressBar:Y(21)
@@ -141,8 +141,8 @@ function ActivityLafuliCastle:initTasks()
 		local type = xyd.tables.activityLflcastleAwardTable:getType(i)
 		local award = xyd.tables.activityLflcastleAwardTable:getAward(i)
 		local point = xyd.tables.activityLflcastleAwardTable:getCount(i)
-		local parentGO = type == 1 and self.leftItemGroup.gameObject or self.rightItemGroup.gameObject
-		local scrollView = type == 1 and self.leftScrollView or self.rightScrollView
+		local parentGO = type == 1 and self.progress1ItemGroup.gameObject or self.progress2ItemGroup.gameObject
+		local scrollView = type == 1 and self.progress1ScrollView or self.progress2ScrollView
 		local item = NGUITools.AddChild(parentGO, self.itemCell)
 		local labelPoint = item:ComponentByName("labelPoint", typeof(UILabel))
 		local iconNode = item:NodeByName("icon").gameObject
@@ -161,10 +161,10 @@ function ActivityLafuliCastle:initTasks()
 		self.awardIcons[i] = icon
 	end
 
-	self.leftItemGroup:GetComponent(typeof(UIGrid)):Reposition()
-	self.rightItemGroup:GetComponent(typeof(UIGrid)):Reposition()
-	self.leftScrollView:ResetPosition()
-	self.rightScrollView:ResetPosition()
+	self.progress1ItemGroup:GetComponent(typeof(UIGrid)):Reposition()
+	self.progress2ItemGroup:GetComponent(typeof(UIGrid)):Reposition()
+	self.progress1ScrollView:ResetPosition()
+	self.progress2ScrollView:ResetPosition()
 end
 
 function ActivityLafuliCastle:updateAll()
@@ -200,13 +200,13 @@ function ActivityLafuliCastle:updateBackground()
 end
 
 function ActivityLafuliCastle:initEffect()
-	self.leftResUseEffect = xyd.Spine.new(self.leftResEffectNode)
+	self.resUseEffect1 = xyd.Spine.new(self.resEffectNode1)
 
-	self.leftResUseEffect:setInfo("fx_lflcastle_click")
+	self.resUseEffect1:setInfo("fx_lflcastle_click")
 
-	self.rightResUseEffect = xyd.Spine.new(self.rightResEffectNode)
+	self.resUseEffect2 = xyd.Spine.new(self.resEffectNode2)
 
-	self.rightResUseEffect:setInfo("fx_lflcastle_click")
+	self.resUseEffect2:setInfo("fx_lflcastle_click")
 
 	self.showEffect = xyd.Spine.new(self.showEffectNode)
 
@@ -229,8 +229,8 @@ function ActivityLafuliCastle:playShowEffect(i)
 end
 
 function ActivityLafuliCastle:updateTasks()
-	self.leftLabelPoint.text = self.activityData.detail.points[1] .. "/" .. leftTaskPointMax
-	self.rightLabelPoint.text = self.activityData.detail.points[2] .. "/" .. rightTaskPointMax
+	self.labelPoint1.text = self.activityData.detail.points[1] .. "/" .. progress1MaxPoint
+	self.labelPoint2.text = self.activityData.detail.points[2] .. "/" .. progress2MaxPoint
 	self.taskNumofType2 = 0
 	self.taskNumofType1 = 0
 	self.curTaskIDofType2 = 0
@@ -286,14 +286,14 @@ function ActivityLafuliCastle:updateTasks()
 	local dis2 = math.min(83 + 106 * self.curTaskIDofType2, 83 + 106 * self.taskNumofType2 - 379)
 
 	if self.notFirstInit then
-		self.leftScrollView.transform.localPosition = Vector3(0, dis1, 0)
-		self.rightScrollView.transform.localPosition = Vector3(0, dis2, 0)
+		self.progress1ScrollView.transform.localPosition = Vector3(0, dis1, 0)
+		self.progress2ScrollView.transform.localPosition = Vector3(0, dis2, 0)
 	else
-		local sp1 = self.leftScrollView:GetComponent(typeof(SpringPanel))
+		local sp1 = self.progress1ScrollView:GetComponent(typeof(SpringPanel))
 
 		sp1.Begin(sp1.gameObject, Vector3(0, dis1, 0), 16)
 
-		local sp2 = self.rightScrollView:GetComponent(typeof(SpringPanel))
+		local sp2 = self.progress2ScrollView:GetComponent(typeof(SpringPanel))
 
 		sp2.Begin(sp2.gameObject, Vector3(0, dis2, 0), 16)
 	end
@@ -302,10 +302,10 @@ function ActivityLafuliCastle:updateTasks()
 end
 
 function ActivityLafuliCastle:updatePartnerAward()
-	self.progressNum.text = self.activityData.detail.energy .. "/" .. partnerAwardEnergyNeed
-	self.progressBar.value = math.min(self.activityData.detail.energy, partnerAwardEnergyNeed) / partnerAwardEnergyNeed
+	self.progressNum.text = self.activityData.detail.energy .. "/" .. partnerAwardEnergy
+	self.progressBar.value = math.min(self.activityData.detail.energy, partnerAwardEnergy) / partnerAwardEnergy
 
-	if partnerAwardEnergyNeed <= self.activityData.detail.energy then
+	if partnerAwardEnergy <= self.activityData.detail.energy then
 		xyd.setUISpriteAsync(self.progressImg, nil, "activity_lafuli_castle_jdt4")
 
 		if not self.parnterAwardEffect then
@@ -345,28 +345,28 @@ function ActivityLafuliCastle:updatePartnerAward()
 end
 
 function ActivityLafuliCastle:updateResItem()
-	self.leftResNum.text = xyd.models.backpack:getItemNumByID(leftTaskResID)
+	self.resNum1.text = xyd.models.backpack:getItemNumByID(resItemID1)
 
-	if xyd.models.backpack:getItemNumByID(leftTaskResID) <= 0 then
-		xyd.setUISpriteAsync(self.leftResItem, nil, "activity_lafuli_castle_bubble2")
-		self.leftResPlus:SetActive(true)
-		self.leftResNum:SetActive(false)
+	if xyd.models.backpack:getItemNumByID(resItemID1) <= 0 then
+		xyd.setUISpriteAsync(self.resItem1, nil, "activity_lafuli_castle_bubble2")
+		self.resPlus1:SetActive(true)
+		self.resNum1:SetActive(false)
 	else
-		xyd.setUISpriteAsync(self.leftResItem, nil, "activity_lafuli_castle_bubble4")
-		self.leftResPlus:SetActive(false)
-		self.leftResNum:SetActive(true)
+		xyd.setUISpriteAsync(self.resItem1, nil, "activity_lafuli_castle_bubble4")
+		self.resPlus1:SetActive(false)
+		self.resNum1:SetActive(true)
 	end
 
-	self.rightResNum.text = xyd.models.backpack:getItemNumByID(rightTaskResID)
+	self.resNum2.text = xyd.models.backpack:getItemNumByID(resItemID2)
 
-	if xyd.models.backpack:getItemNumByID(rightTaskResID) <= 0 then
-		xyd.setUISpriteAsync(self.rightResItem, nil, "activity_lafuli_castle_bubble3")
-		self.rightResPlus:SetActive(true)
-		self.rightResNum:SetActive(false)
+	if xyd.models.backpack:getItemNumByID(resItemID2) <= 0 then
+		xyd.setUISpriteAsync(self.resItem2, nil, "activity_lafuli_castle_bubble3")
+		self.resPlus2:SetActive(true)
+		self.resNum2:SetActive(false)
 	else
-		xyd.setUISpriteAsync(self.rightResItem, nil, "activity_lafuli_castle_bubble5")
-		self.rightResPlus:SetActive(false)
-		self.rightResNum:SetActive(true)
+		xyd.setUISpriteAsync(self.resItem2, nil, "activity_lafuli_castle_bubble5")
+		self.resPlus2:SetActive(false)
+		self.resNum2:SetActive(true)
 	end
 end
 
@@ -397,45 +397,45 @@ function ActivityLafuliCastle:register()
 		xyd.WindowManager:get():openWindow("activity_lafuli_castle_partner_award_window")
 	end
 
-	UIEventListener.Get(self.leftResItem.gameObject).onClick = function ()
-		if xyd.models.backpack:getItemNumByID(leftTaskResID) <= 0 then
+	UIEventListener.Get(self.resItem1.gameObject).onClick = function ()
+		if xyd.models.backpack:getItemNumByID(resItemID1) <= 0 then
 			return
 		end
 
 		local params = {
 			index = 1,
 			type = 1,
-			num = xyd.models.backpack:getItemNumByID(leftTaskResID)
+			num = xyd.models.backpack:getItemNumByID(resItemID1)
 		}
 
 		self.activityData:sendReq(params)
-		self.leftResUseEffect:play("texiao01", 1)
+		self.resUseEffect1:play("texiao01", 1)
 	end
 
-	UIEventListener.Get(self.rightResItem.gameObject).onClick = function ()
-		if xyd.models.backpack:getItemNumByID(rightTaskResID) <= 0 then
+	UIEventListener.Get(self.resItem2.gameObject).onClick = function ()
+		if xyd.models.backpack:getItemNumByID(resItemID2) <= 0 then
 			return
 		end
 
 		local params = {
 			index = 2,
 			type = 1,
-			num = xyd.models.backpack:getItemNumByID(rightTaskResID)
+			num = xyd.models.backpack:getItemNumByID(resItemID2)
 		}
 
 		self.activityData:sendReq(params)
-		self.rightResUseEffect:play("texiao02", 1)
+		self.resUseEffect2:play("texiao02", 1)
 	end
 
-	UIEventListener.Get(self.leftResPlus.gameObject).onClick = function ()
+	UIEventListener.Get(self.resPlus1.gameObject).onClick = function ()
 		xyd.WindowManager:get():openWindow("activity_item_getway_window", {
-			itemID = leftTaskResID
+			itemID = resItemID1
 		})
 	end
 
-	UIEventListener.Get(self.rightResPlus.gameObject).onClick = function ()
+	UIEventListener.Get(self.resPlus2.gameObject).onClick = function ()
 		xyd.WindowManager:get():openWindow("activity_item_getway_window", {
-			itemID = rightTaskResID
+			itemID = resItemID2
 		})
 	end
 
@@ -451,38 +451,30 @@ function ActivityLafuliCastle:register()
 
 	for i = 1, 11 do
 		UIEventListener.Get(self["collider" .. i].gameObject).onClick = function ()
-			if i == 11 then
-				self:backgroundShakeSequence()
+			if i ~= 11 then
+				local point = xyd.tables.activityLflcastleProgressTable:getCount(i)
+				local type = xyd.tables.activityLflcastleProgressTable:getType(i)
 
+				if self.activityData.detail.points[type] < point then
+					xyd.alertTips(__("ACTIVITY_LAFULI_CASTLE_TEXT" .. 14 + type, point - self.activityData.detail.points[type]))
+				end
+			end
+
+			if self.onSequence then
 				return
 			end
 
-			local point = xyd.tables.activityLflcastleProgressTable:getCount(i)
-			local type = xyd.tables.activityLflcastleProgressTable:getType(i)
+			self.onSequence = true
+			local position = self.castle.transform.localPosition
+			local sequence = self:getSequence()
 
-			if self.activityData.detail.points[type] < point then
-				xyd.alertTips(__("ACTIVITY_LAFULI_CASTLE_TEXT" .. 14 + type, point - self.activityData.detail.points[type]))
-			end
+			sequence:Insert(0, self.castle.transform:DOLocalMove(Vector3(position.x, position.y - 4, 0), 0.06666666666666667):SetEase(DG.Tweening.Ease.InOutSine))
+			sequence:Insert(0.06666666666666667, self.castle.transform:DOLocalMove(Vector3(position.x, position.y + 2, 0), 0.1):SetEase(DG.Tweening.Ease.InOutSine))
+			sequence:Insert(0.16666666666666666, self.castle.transform:DOLocalMove(Vector3(position.x, position.y, 0), 0.06666666666666667):SetEase(DG.Tweening.Ease.InOutSine))
 
-			self:backgroundShakeSequence()
+			self.onSequence = false
 		end
 	end
-end
-
-function ActivityLafuliCastle:backgroundShakeSequence()
-	if self.isShaking then
-		return
-	end
-
-	self.isShaking = true
-	local position = self.groupSence.transform.localPosition
-	local sequence = self:getSequence()
-
-	sequence:Insert(0, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y - 5, 0), 0.2):SetEase(DG.Tweening.Ease.InOutSine))
-	sequence:Insert(0.2, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y + 3, 0), 0.2):SetEase(DG.Tweening.Ease.InOutSine))
-	sequence:Insert(0.4, self.groupSence.transform:DOLocalMove(Vector3(position.x, position.y, 0), 0.1):SetEase(DG.Tweening.Ease.InOutSine))
-
-	self.isShaking = false
 end
 
 function ActivityLafuliCastle:getSequence(complete)

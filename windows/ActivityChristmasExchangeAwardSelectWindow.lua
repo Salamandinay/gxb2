@@ -254,6 +254,8 @@ function ActivityChristmasExchangeAwardSelectItem:onSelectItem()
 				xyd.showToast(__("UNLOCK_FAILED"))
 			elseif xyd.checkDateLock(partner) then
 				xyd.showToast(__("DATE_LOCK_FAIL"))
+			elseif xyd.checkQuickFormation(partner) then
+				xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 			else
 				local str = __("IF_UNLOCK_HERO_3")
 

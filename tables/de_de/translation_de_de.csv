@@ -153,7 +153,7 @@ HELP_WINDOW,Hilfe
 PERSON_AVATAR_LIST,Auswählen
 CLOSE_WINDOW_GUIDE,"Tippe auf eine beliebige Stelle auf dem Bildschirm oder auf das Schließsymbol, um fortzufahren"
 PERSON_EDIT_NAME,Namen ändern
-PERSON_EDIT_TIPS1,Bitte gebe deinen neuen Namen ein
+PERSON_EDIT_TIPS1,Bitte gebe einen neuen Namen ein
 PERSON_EDIT_TIPS2,4 - 12 Zeichen
 SURE,OK
 PERSON_NO_CRYSTAL,Dias nicht ausreichend!
@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Super Spielautomat Gespräch 4
 GAMBLE_UP_WOMAN_TALK_5,Super Spielautomat Gespräch 5
 OPEN_SLOT_TIPS,Mit {1} Dias zusätzliche {2}\nMädchenkapazität erwerben?
 NOT_ENOUGH,{1} nicht ausreichend!
-LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert||Das Mädchen wurde in der Ultimativen Arena aufgestellt
+LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert||Das Mädchen wurde in der Ultimativen Arena aufgestellt||Das Mädchen wurde im vorher aufgestellten Team aufgestellt
 ALTAR_DECOMPOSE_TIP,Der Sterne-Rang dieses Mädchens ist höher als 3. Möchtest du sie wirklich übertragen?
 ALTAR_HERO_NUM_TEXT,Verbleibend：
 ALTAR_SMART_TEXT,Schnell-Wahl
@@ -1031,7 +1031,7 @@ ARENA_TEAM_NEED_FORCE,Benötigte Kraft
 ARENA_TEAM_CREATE_WINDOW,Erstellen
 ARENA_TEAM_NAME,Truppenname
 ARENA_TEAM_NEED_FORCE_2,Kraft Voraussetzung
-ARENA_TEAM_INPUT_NAME,Gebe den Teamname ein
+ARENA_TEAM_INPUT_NAME,Gebe den Teamnamen ein
 SUBMIT,Senden
 DISSOLVE,Auflösen
 ARENA_TEAM_MY_TEAM_WINDOW,Mein Team
@@ -1051,7 +1051,7 @@ HAS_APPLY,Beworben
 ARENA_TEAM_NO_INVITATION,Keine Einladungen bisher
 ARENA_TEAM_NO_APPLY,Keine Anfrage bisher~
 ARENA_TEAM_NO_TEAM,Derzeit sind kein Team verfügbar...
-AT_LEAST_ONE_HERO,Mindestens ein Mädchen wählen
+AT_LEAST_ONE_HERO,Mindestens ein Mädchen aufstellen
 ARENA_TEAM_NO_TEAM_TIPS,Senpai bitte versammle dein Team~
 ARENA_TEAM_FORCE_LIMIT,Die Macht muss zwischen 1-1999999 liegen~
 ARENA_TEAM_NAME_LIMIT,Bitte gebe einen 4~12 Zeichen langen Teamnamen ein
@@ -1071,8 +1071,8 @@ ALREADY_SUBSCRIBE,Abonniert
 ANONYMOUS_MODIFY_ACCOUNT,"Warnung! Dein Konto ist ein GÄSTEKONTO! Das Wechseln des Kontos kann zu einem aktuellen Fortschritt Verlust führen! Tippe auf Einstellungen - Schnelle Verbindung, um dein Gastkonto zu registrieren."
 TERMS_SERVICE,Nutzungsbedingungen
 PRIVACY_POLICY,Datenschutzerklärung
-TERMS_SERVICE_URL,https://www.carolgames.com/de/article/terms_of_use
-PRIVACY_POLICY_URL,https://www.carolgames.com/de/article/privacy_policy
+TERMS_SERVICE_URL,https://girlsh5.carolgames.com/article/terms_of_use?language=zh
+PRIVACY_POLICY_URL,https://mhome.carolgames.com/de/article/privacy_policy
 MANA_WEEK_CARD_HELP_IOS,"Abohinweis: |1. Alle 7 Tage wird dein Abonnement(Abo) automatisch verlängert und die Abogebühr abgezogen, sofern du es nicht abbestellst.|2.Deine Abogebühr wird von deinem Apple iTunes-Konto ausgezahlt.|3.Wenn du dich vom Abo abmelden möchtest, breche die automatische Verlängerung 24 Stunden vor der Verlängerung deines Abos ab.|4. Kündigungsschritte: Tippe auf deinem iPhone oder iPad auf „Einstellungen“ -> Tippe auf „iTunes Store & App Store“ -> Tippe auf „Apple ID“, wähle „Apple ID anzeigen“ -> „Abonnements“ und klicke auf „Abonnement kündigen“."
 WEEKCARD_BTN_LABEL,Abonnieren
 DAY_HOUR,{1}d {2}h
@@ -1356,7 +1356,7 @@ DATES_TEXT12,Erfolgreich geschenkt
 COMPOSE_DATES_GIFTS_TEXT01,Erfolgreich hergestellt
 COMPOSE_DATES_GIFTS_TEXT02,Material nicht ausreichend
 IF_UNLOCK_HERO,"Möchtest du das Mädchen wirklich freischalten? Wenn das Mädchen in einer deiner Verteidigungsaufstellungen unter ""Arenen"" ist, wird es nach dem Freischalten dort entfernt."
-UNLOCK_FAILED,"Dieses Mädchen ist das letzte Mädchen in einer deiner Verteidigungsaufstellungen unter ""Arenen"" und ist deshalb gesperrt."
+UNLOCK_FAILED,Dieses Mädchen ist das letzte Mädchen in einer deiner aufgestellten Teams und ist deshalb gesperrt.
 DATES_TEXT13,Derzeit kein Bonus
 SHELTER_TIPS,Nächste Seite
 DATES_TEXT14,Wird nach Beendigung der\nletzten Aufgabe entsperrt
@@ -1483,7 +1483,7 @@ Wähle zunächst aus, um welche Art von Problem es sich bei deiner Frage handelt
 [url=""event:GM_RECALL_5""][c][f95e6a]5. Fehlerberichte und Vorschläge[-][/c][/url]
 
 [url=""event:GM_RECALL_6""][c][f95e6a]6.Sonstige Probleme[-][/c][/url]"
-GM_RECALL_1,"Bitte beschreibe dein Problem detailliert, wie z. B. Verbindung nicht erfolgreich, Wechsel nicht möglich, Kontodaten vergessen oder entwendet usw. Unser Kundendienst wird sich dann darum kümmern!"
+GM_RECALL_1,"Bitte stelle dein Kontoproblem ausführlich dar, wie zum Beispiel Verbindung fehlschlagen, Wechseln unmöglich, Kontodaten vergessen usw., damit wir das Problem bestätigen und dir dabei weiter helfen können.\n\n1. Konto löschen[url=""delete_account_window""][c][f95e6a][-][/c][/url]"
 GM_RECALL_2,"Bitte beschreibe dein Problem beim Aufladen genauer, wie z. B. Kauf nicht möglich, kein Artikel nach Kauf erhalten, falsches Pakets gekauft, Hilfe bei der Aufladung usw. Unser Kundendienst wird anhand deiner Beschreibung dein Problem überprüfen."
 GM_RECALL_3,"Bitte beschreibe dein Problem genauer, wie z. B. Fragen zu den Spielregeln oder Events usw. Unser Kundendienst wird sich dann um deine Fragen und Probleme kümmern!"
 GM_RECALL_4,"Beschreibe die aufgetretene Störung im Detail, z. B. Fehler beim Empfang von Belohnungen, Gegenständen, Ressourcen oder Problemen mit Mitgliedern usw. Gebe uns auch einen ungefähren Zeitrahmen an, an dem das Problem aufgetreten ist. Der Kundenservice wird dir bestätigen, auf welches Problem du laut deiner Beschreibung gestoßen bist."
@@ -2088,7 +2088,7 @@ SKIN_TEXT23,Erhalte durch Erledigung\nunter Anleitung
 SKIN_TEXT24,Eid mit dem Mädchen leisten
 SKIN_TEXT25,Erhalte durch Abschließen von Hotties Mädchen Aufgaben
 MAGICIAN_SUIT,Magiers Set
-FRIEND_TEAM_BOSS_TEAM_NAME,Trupp {1}
+FRIEND_TEAM_BOSS_TEAM_NAME,Team {1}
 COUNT_DOWN,Wird abgerechnet in:
 INVITE,Team
 MSG,Nachricht
@@ -2259,7 +2259,7 @@ LIBRARY_WATCHER2_TEXT08,Wird in {1} entsperrt
 LIBRARY_WATCHER2_BACK,Zurück
 LIBRARY_WATCHER2_HELP,"1. Es gibt insgesamt 3 Kapitel, und jedes Kapitel besteht aus 10 Etappen. |2. Die Etappen sind in Kämpfe und Minispiele unterteilt. Du musst die Punkteanforderung erfüllen, um diese Phase zu beenden. |3. Nach dem Beenden jeder Etappe, erhältst du Belohnungen. Die Belohnungen für eine bestimmte Stufe können durch Tippen auf die Schaltflächen ""Belohnungen"" überprüft werden.|4. Durch das Löschen aller Abschnitte in einem Kapitel werden zusätzliche Belohnungen gewährt, die per E- Mail geschickt werden. |5. Die Geschichte in der abgeschlossenen Phase kann in der Hauptgeschichte erneut gelesen werden. Die ersten beiden Kapitel sind freigegeben. Die folgenden Kapitel benötigen Zeit um diese zu Entsperren."
 POTENTIALITY_LOCK,Wird bei Weiterentwicklung auf {1} entsperrt
-POTENTIALITY_UNLOCK_TEXT1,Entsperrt auf\nWeiterentwicklung {1}
+POTENTIALITY_UNLOCK_TEXT1,Entsperrt auf\nWeiterentw. {1}
 SCHOOL_PRACTICE_NOT_OPEN_YET,Kommt demnächst
 HOUSE_TEXT_35,Willst du das Möbelset {1} löschen?
 HOUSE_TEXT_36,Willst du das Möbelset {1} verwenden?
@@ -3272,7 +3272,7 @@ ACTIVITY_RETURN_MISSION_REPEAT_FINISH,Fortschritt: {1}/{2}
 ACTIVITY_RETURN_MISSION_NO_BIND,noch nicht\nverbunden
 ACTIVITY_RETURN_IS_BINDING,Beim verbinden...
 ACTIVITY_RETURN_WAITING_FOR_FINISH,Im Gang
-IF_UNLOCK_HERO_3,"Willst du das Mädchen sicher entsperren? Wenn sie in einer deiner Verteidigungsaufstellungen unter ""Arenen"" ist, wird sie direkt nach dem Entsperren aus dieser entfernt. Wenn sie im Wohnheim ausruht wird sie nach dem Entsperren von dort verschwinden."
+IF_UNLOCK_HERO_3,"Willst du das Mädchen sicher entsperren? Wenn sie in einer deiner Verteidigungsaufstellungen unter ""Arenen"" oder voraufgestellten Teams ist, wird sie direkt nach dem Entsperren aus dieser entfernt. Wenn sie im Wohnheim ausruht wird sie nach dem Entsperren von dort verschwinden."
 ACTIVITY_PLAYER_RETURN_EXPLAIN,Belohnungen für\nQuiz und Abenteuer
 ACTIVITY_RETURN_SHOP_LIMIT,Limitiert
 ACTIVITY_RETURN_APPLY_LIST_TIPS_3,Keine Anfrage
@@ -3316,7 +3316,7 @@ ENTRANCE_TEST_HELP_DES_3_1,"Erfüllst du die Voraussetzungen, dann kannst du auf
 ENTRANCE_TEST_HELP_DES_3_2,Jeder Kampf benötigt 1 Prüfungszertifikat.\nDie Menge an Prüfungszertifikaten wird täglich um 00:00 Uhr (UTC/GMT 0) auf [c][cc0011]10[-][/c] zurückgesetzt/aufgefüllt.\nDu kannst auch zusätzliche Prüfungszertifikate mit Dias kaufen.
 ENTRANCE_TEST_HELP_DES_3_3,Während des Events kannst du die aktuellen Punkte und Rangliste prüfen.
 ENTRANCE_TEST_HELP_DES_3_4,"Tippe auf [c][cc0011]Belohnung[-][/c], um die aktuellen Aufgaben und deren Belohnungen zu prüfen. Bitte sammle deine Belohnungen rechtzeitig ein.\nDurch Kauf des [c][cc0011]Einschulungspakets[-][/c] entsperrst du noch mehr Belohnungen!"
-ACTIVITY_WARMUP_PACK_TEXT04,Avatar des neuen\nMädchens gratis dazu:
+ACTIVITY_WARMUP_PACK_TEXT04,Avatar der neuen\nMädchen gratis dazu:
 ACTIVITY_WARMUP_PACK_TEXT05,Premium
 CHESS_EXCHANGE,Umwandeln
 CHESS_GET_PARTNER,Erhalten
@@ -4509,7 +4509,7 @@ ACTIVITY_3BIRTHDAY_TEXT05,Erhalte zufällig eine der folgenden Belohnungen beim 
 ACTIVITY_3BIRTHDAY_TEXT06,Schenke {1} Mal Wein
 ACTIVITY_3BIRTHDAY_HELP,"1. Schenke während des Events Wein, um Belohnungen zu erhalten.|2. Um einmal Wein zu schenken, benötigst du 10 Flaschen. Dafür bekommst du 6 Rosenbroschen und es besteht außerdem eine Wahrscheinlichkeit, dass du einen Glückstreffer landest (1,5-fache Menge). Bei verschiedenen Mädchen erhältst du verschiedene Effekte beim Schenken. Wenn du Kratos Wein schenkst, wird die Wahrscheinlichkeit für einen ""Glückstreffer"" verdoppelt. Wenn du Teresa Wein schenkst, wird der Output eines möglichen ""Glückstreffers"" auf das 2-Fache der normalen Menge erhöht (12 Rosenbroschen). Du kannst frei wählen, welchem Mädchen du Wein schenken willst.|3. Nachdem du eine bestimmte Menge an Wein geschenkt hast, bekommst du reichhaltige Belohnungen.|4. Die Rosenbroschen, die du durch das Schenken bekommst, kannst du fürs Event ""Geheimer Weinkeller"" verwenden.|5. Nach dem Ende des Events werden der übrige Wein und die Broschen in Münzen umgewandelt. Ein Wein gibt 50k und eine Brosche 100k Münzen."
 ACTIVITY_3BIRTHDAY_GAMBLE_HELP,"1. Verwende während des Events die Rosenbroschen, um Belohnungen im ""Weinkeller"" zu ziehen.|2. Beim Premium-Keller und normalen Keller werden verschiedene Mengen an Rosenbroschen benötigt und beide gewähren dir auch unterschiedliche Belohnungen. Die Belohnungen kannst du nachschauen, indem du auf die Lupe tippst."
-ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. Während des Eventzeitraums kannst du durch Abschließen der täglichen Aufgaben Stimmzettel erhalten.|2. Es gibt 2 verschiedene Stimmzettel: Einmal die ""normalen Stimmzettel"" und einmal die ""Spezial-Stimmzettel"". Die ""normalen Stimmzettel"" können nur am selben Tag verwendet werden und sind am darauffolgenden Tag ungültig. Verwende sie also rechtzeitig! Die ""Spezial-Stimmzettel"" bleiben während des ganzen Events gültig.|3. Das Abstimmungsevent wird in 3 Phasen eingeteilt: Vorauswahlphase, K.O.-Phase und Auswertungsphase. Alle Mädchen werden per Zufall in vier Gruppen eingeteilt und treten dort gegeneinander an. Die ersten vier Mädchen einer Gruppe kommen in die K.O.-Phase. Während der K.O.-Phase treten die Mädchen immer einzeln gegeneinander an. Während der Auswertungsphase wird die Siegerin bekanntgegeben und darf sich präsentieren. In der letzten Phase kann man nicht mehr abstimmen und auch keine Stimmzettel mehr erhalten.|4. Unter ""Zeitplan"" kannst du die detaillierten Zeitpläne und die Ergebnisse der vorherigen Runden sowie die Stimmenverteilung einsehen. Außerdem kannst du dort einsehen, für wen du bisher gestimmt hast.|5. Nachdem du eine bestimmte Menge an Stimmzetteln abgegeben hast, bekommst du reichhaltige Belohnungen.|6. Nach dem Ende des Events wird für die Gewinnerin ein neues, exklusives Kostüm entworfen!|7. Nach dem Ende des Events werden alle Abstimmungszettel automatisch recycelt."
+ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. Während des Eventzeitraums kannst du durch Abschließen der täglichen Aufgaben Stimmzettel erhalten.|2. Es gibt 2 verschiedene Stimmzettel: Einmal die ""normalen Stimmzettel"" und einmal die ""Spezial-Stimmzettel"". Die ""normalen Stimmzettel"" können nur am selben Tag verwendet werden und sind am darauffolgenden Tag ungültig. Verwende sie also rechtzeitig! Die ""Spezial-Stimmzettel"" bleiben während des ganzen Events gültig.|3. Das Abstimmungsevent wird in 3 Phasen eingeteilt: Vorauswahlphase, K.O.-Phase und Auswertungsphase. Alle Mädchen werden per Zufall in vier Gruppen eingeteilt und treten dort gegeneinander an. Die ersten vier Mädchen einer Gruppe kommen in die K.O.-Phase. Während der K.O.-Phase treten die Mädchen immer einzeln gegeneinander an. Während der Auswertungsphase wird die Siegerin bekanntgegeben und darf sich präsentieren. In der letzten Phase kann man nicht mehr abstimmen und auch keine Stimmzettel mehr erhalten.|4. Unter ""Zeitplan"" kannst du die detaillierten Zeitpläne und die Ergebnisse der vorherigen Runden sowie die Stimmenverteilung einsehen. Außerdem kannst du dort einsehen, für wen du bisher gestimmt hast.|5. Die beiden Stimmzettel können durch Abschließen der täglichen Aufgaben erhalten werden.|6. Jedesmal wenn du während des Events 250 VIP-EXP erhalten hast, werden dir 20 Spezial-Stimmzettel per Mail gesendet. Diese Mail wird täglich nur einmal gesendet (dadurch maximal 380 (20x19) Spezial-Stimmzettel erhältlich). Hast du zum Beispiel am 3. Tag des Events 1000 VIP-EXP erhalten, dann kannst du an diesem Tag 1 Mail mit insgesamt 60 (20x3) Spezial-Stimmzettel erhalten und die überflüssigen erhältlichen Spezial-Stimmzettel (20x in 1 Mail) werden (der Menge an während des Event erhaltenen VIP-EXP entsprechend) an folgenden Tagen weiter gesendet.|7. Nachdem du eine bestimmte Menge an Stimmzetteln abgegeben hast, bekommst du reichhaltige Belohnungen.|8. Nach dem Ende des Events wird für die Gewinnerin ein neues, exklusives Kostüm entworfen!|9. Nach dem Ende des Events werden alle Abstimmungszettel automatisch recycelt."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT02,"Auf der Unterstützer-Rangliste werden die TOP100 Spieler angezeigt, die während ""Miss Yume"" der Gewinnerin die meisten Stimmzettel gegeben haben."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT03,"1. Auf der Historie-Seite kannst du die Ergebnisse der vorherigen Runden und die Stimmenverteilungen einsehen. Außerdem kannst du dort einsehen, für wen du bisher gestimmt hast.|2. Auf dieser Seite kannst du weder abstimmen noch Belohnungen erhalten. Tippe auf ""Zurück"", um zur Hauptseite zu gelangen."
 ACTIVITY_POPULARITY_VOTE_TIMETEXT01,Vorauswahl\n(Gruppe A)
@@ -4793,7 +4793,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume - Kostümabstimmung
 DRESS_SUMMON_LABEL_2,"Tippe, um die erhältlichen Outfit-Teile zu überprüfen"
 DRESS_SUMMON_LABEL_4,Garantiertes orangenes Outfit-Teil in [c][e96516]{1}[-][/c] Zügen (Zug)
 DRESS_SUMMON_LABEL_1,Gratischance(n): {1}
-DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Nachtalb"""
+DRESS_SUMMON_LABEL_3,"Wahrscheinlichkeit\nfürs Set ""Creme Party"""
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Kostüm-\nabstimmung
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,Danke für deine Stimme! Wir wünschen dir noch viel Spaß an der Yume Akademie!
 ONE_KEY_UPLEVEL_TITLE,Schnell aufleveln
@@ -4913,7 +4913,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,"Eve · Vorsicht,\nbellende Hunde!"
+WARMUP_ARENA_TASK_INFO_2,Cupid und der Neuling
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -4956,7 +4956,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Zum Shop
 QUICK_STARS_TEXT05,Beim Absolvieren...
 EQUIP_LEVELUP_TEXT_19,"Bitte wähle das Professions-Set, bei dem du die Profession ändern möchtest"
 EQUIP_LEVELUP_TEXT_20,Wähle dein gewünschtes Set
-DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Nachtalb""."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Verwende die Knöpfe, um Outfit-Teile zu ziehen! Im limitierten Outfit-Shop gibt es eine höhere Wahrscheinlichkeit fürs Set ""Creme Party""."
 HOUSE_TEXT_60,Willst du das Mädchen auf diesen Stock umziehen lassen?
 HOUSE_TEXT_61,Auf diesem Stock gibt es keine freien Plätze mehr
 HOUSE_TEXT_62,Selber auch auf diesem Stockwerk einziehen
@@ -6528,19 +6528,173 @@ SHENXUE_TEXT05,Erwecken
 SHENXUE_TEXT06,Wird erweckt...
 ACTIVITY_LOST_SPACE_TEXT10,"1. Nach dem Kauf des Pakets erhältst du zusätzliche Belohnungen, sobald du eine Raumstation abgeschlossen hast.|2. Nach dem Kauf des Pakets werden die zusätzlichen Belohnungen der bereits abgeschlossenen Raumstationen per Mail gesendet."
 PARTNER_RECOMMEND_TIPS,Beliebtes Mädchen
-ACTIVITY_LAFULI_CASTLE_TEXT15,"Verwende insgesamt {1} Strandsand, um die Mauer bis zu diesem Teil aufzubauen."
-ACTIVITY_LAFULI_CASTLE_TEXT16,"Verwende insgesamt {1}x Himmelssand, um den Schloss bis zu diesem Teil zu dekorieren."
+ACTIVITY_LAFULI_CASTLE_TEXT15,"Verwende weiterhin {1}x Strandsand, um die Mauer bis zu diesem Teil aufzubauen."
+ACTIVITY_LAFULI_CASTLE_TEXT16,"Verwende weiterhin {1}x Himmelssand, um das Schloss bis zu diesem Teil zu dekorieren."
 COLLECTION_SKIN_TEXT29,Mädchen
-QUICK_FORMATION_TEXT05,Formation
+QUICK_FORMATION_TEXT05,Teams
 DELETE_ACCOUNT_TEXT01,Datenschutzerklärung
-DELETE_ACCOUNT_TEXT02,Account löschen
+DELETE_ACCOUNT_TEXT02,Konto löschen
 DELETE_ACCOUNT_TEXT03,Warnung
 DELETE_ACCOUNT_TEXT04,"Liebe(r) Senpai, diese Aktion kann nicht rückgängig gemacht werden! Möchtest du deinen Account wirklich löschen?"
 DELETE_ACCOUNT_TEXT05,Löschen
 DELETE_ACCOUNT_TEXT06,Abbrechen
-DELETE_ACCOUNT_TEXT07,Deine Forderung nach Löschen deines Accounts und aller betroffenen Benutzerdaten wurde bereits vorgelegt. Es sollte in 30 Werktagen fertig behandelt werden und danach werden wir dich das neueste Ergebnis mitteilen.
-DELETE_ACCOUNT_TEXT08,隱私協議的具體文本（此條暫不翻譯）
-DELETE_ACCOUNT_TEXT09,Warnung
-DELETE_ACCOUNT_TEXT10,Du hast deine Forderung nach Löschen dieses Accounts vorgelegt. Diese Aktion (Löschen des Accounts) kann nicht rückgängig gemacht werden! Countdown zum Abbrechen der Aktion: {1} Tag(e) {2} St. {4} Sek.
-DELETE_ACCOUNT_TEXT11,"Deine Forderung nach der Löschung des Accounts wird bearbeitet. Dieser Account wird bald unerreichbar sein. Hast du deine Meinung geändert, tippe bitte auf den Knopf unten, um das Löschen abzubrechen!"
+DELETE_ACCOUNT_TEXT07,Deine Forderung nach Löschen des Kontos und aller betroffenen Benutzerdaten werden wir in 30 Werktagen behandeln und wir werden dich den neuesten Fortschritt rechtzeitig mitteilen.
+DELETE_ACCOUNT_TEXT08,"
+Diese Datenschutzrichtlinie gilt für Spiele, Websites und zugehörige Dienste von Carolgames of WESTLAKE TECHNOLOGIES CO., PTE. LTD. Limited (Carolgames of WESTLAKE TECHNOLOGIES CO., PTE. LTD.) (im folgenden Text als Carolgames kurz geschrieben), die wir hier mit dem Sammelbegriff ""Dienste"" bezeichnen. Diese Datenschutzrichtlinie kann regelmäßig von uns aktualisiert werden, indem wir eine neue Version auf carolgames.com veröffentlichen. Bei wesentlichen Änderungen dieser Richtlinie werden wir Sie durch einen Hinweis innerhalb des Dienstes davon in Kenntnis setzen, bevor diese Änderungen wirksam werden. Ihre weitere Nutzung des Dienstes nach dem Datum des Inkrafttretens unterliegt der neuen Datenschutzrichtlinie.
+
+KONTAKTAUFNAHME
+Wenn Sie Fragen zum Datenschutz oder Wünsche hinsichtlich der Lösung von Problemen mit Ihren personenbezogenen Daten haben, bitten wir Sie, uns in erster Linie über das Spiel zu kontaktieren, damit wir Ihnen schneller antworten können.
+
+DATEN, DIE VON UNS ERHOBEN WERDEN
+Daten, die Sie uns zur Verfügung stellen:
+Kontaktinformationen (wie Ihren Name und Ihre E-Mail-Adresse)
+Spielername und Passwort
+Profilinformationen (wie z.B. Chat-Protokolle und Supportanfragen des Spielers)
+Inre Nachrichten an die Dienste (wie z.B. Daten zur Identifizierung eines verlorenen Kontos)
+Weitere Daten, die Sie uns wissentlich übermitteln (wie z.B. Daten zur Identifizierung eines verloren Kontos)
+
+Automatisch von uns erhobene Daten:
+
+Daten über Ihr Konto und Ihren Spielforschritt
+Ihre IP-Adresse und Mobilgeräte-IDs (z.B. Ihre Geräte-ID, Werbe-ID, MAC-Adresse, IMEI)
+Daten über Ihr Gerät, z.B Gerätebezeichnung und Betriebssystem, Browsertyp und Sprache
+Daten, die anhand von Cookies und ähnliche Technologien (siehe nachstehende Zusatzinformationen) erfasst werden
+Allgemeine Standortdaten
+Daten über Ihre Nutzung des Dienstes, wie z.B. Spieldaten und Ihre interaktionen mit anderen Spielern innerhalb des Dienstes
+
+In den meisten Fällen erstellen wir auch eine spezifische ID für Sie, wenn Sie den Dienst nutzen.
+
+Daten, die wir von unseren Partnern sammeln:
+Daten, die wir erhalten, wenn Sie ein Drittanbieter-Tool mit dem Dienst verknüpfen (z.B Facebook, WeChat oder Google)
+Demografische Daten (z.B. zur Bestimmung des ungefähren Standorts Ihrer IP-Addresse)
+Daten zur Betrugsbekämpfung (z.B. Missbrauch von Rückerstattung in Spielen oder Klickbetrug in der Werbung)
+Daten von Plattformen, auf denen die Spiele ausgeführt werden (z.B zur Überprüfung der Zahlung)
+Daten für Werbe- und Analysezwecke, um Ihnen einen besseren Dienst anbieten zu können
+
+WARUM ERFASSEN WIR IHRE DATEN
+Damit der Dienst funktioniert:
+Zur Erfüllung des Vertrages verarbeiten wir die notwendigen Daten zur:
+
+Erstellung von Konten, um Ihnen das Spielen unserer Spiele und die Nutzung unserer Dienste zu ermöglichen
+Ausführung des Dienstes
+Überprüfung und Bestätigung von Zahlungen
+Bereitstellung und Erbringung der von Ihnen angeforderten Produkte und Dienste
+Zusendung von Korrespondenz bezüglich des Dienstes
+Anpassung des Dienstes an die Bedürfnisse unserer Spieler
+Für die Bereitstellung von außergewöhnlichen Diensten für unsere Spieler, haben wir ein berechtigtes Interesse daran, Daten zu erfassen und zu verarbeiten, zur:
+
+Aktualisierung und Entwicklung von Spielerprofilen
+Entwicklung und Verbesserung des Dienstes und des Spielerlebnisses
+Verwaltung der Beziehung zu Ihnen
+Bereitstellung sozialer Funktionen als Teil des Dienstes
+Anpassung Ihrer Dienstfahrung
+Beantwortung Ihrer Kommentare und Fragen sowie zur Bereitstellung von Support für den Spieler
+Bereitstellung von Angeboten von CAROL GAMES innerhalb des Dienstes sowie auf anderen Websites und Diensten sowie per E-Mail
+Zusendung von damit verbundenen Informationen wie Aktualisierungen, Sicherheitsmeldungen und Nachrichten des Kundensupports
+Ermöglichung von Kommunikation mit anderen Spielern
+Anzeige von personalisierter Werbung
+
+Um Ihnen personalisierte Werbung innerhalb des Dienstes sowie in anderen Websites und Diensten (einschließlich E-Mail) anzuzeigen, haben wir ein berechtigtes Interesse an der Verarbeitung der notwendigen Daten zur:
+
+Nachverfolgung der Inhalte, auf die Sie in Verbindung mit dem Dienst zugreifen, sowie Ihr Online-Verhalten
+Erbringung, Abstimmung und Verbesserung unserer Werbung und des Dienstes
+Informationen darüber, wie Sie sich von personalisierten Werbungen abmelden können, finden Sie im nachstehenden Abschnitt ‚Ihre Rechte und Möglichkeiten\'.
+Aufrechterhaltung eines sicheren und fairen Dienstes.
+
+Die Gewährleistung gleicher Wettbewerbsbedingungen innerhalb des Dienstes hat für uns oberste Priorität. Weitere Informationen zu unseren Nutzungsrichtlinien finden Sie in den Nutzungsbedingungen von CAROL GAMES.
+
+Aufrechterhaltung eines sicheren und fairen Dienstes
+Um den Dienst und seine sozialen Funktionen sicher und fair zu halten, Betrug zu bekämpfen und eine akzeptable Nutzung anderweitig sicherzustellen, haben wir ein berechtigtes Interesse an der Verarbeitung der notwendigen Daten zur:
+
+Analyse und Überwachung der Nutzung des Dienstes und seiner sozialen Funktionen
+Automatischen oder manuellen Moderation von Chats
+Maßnahmenergreifung im Falle von betrügerischen oder sich unangemessen verhaltenden Spielern
+Analyse, Profilierung und Segmentierung.
+In allen oben genannten Fällen und Zwecken können wir alle erfassten Daten analysieren, profilieren und segmentieren.
+
+Mit Ihrer Zustimmung
+Mit Ihrer Zustimmung können wir Ihre Daten für zusätzliche Zwecke verarbeiten, z. B. die Verwendung Ihres GPS-Standorts, um lokale Veranstaltungen anzuzeigen.
+
+WER IHRE DATEN EINSEHEN KANN
+Abgesehen von CAROL GAMES können Ihre Daten in folgenden Situationen von anderen genutzt werden:
+
+Andere Spiele und Nutzer
+Soziale Funktionen sind ein zentraler Bestandteil unserer Spiele. Andere Spieler und Nutzer sehen beispielsweise Ihre Profildaten, In-Game-Aktivitäten und lesen die Nachrichten, die Sie gepostet haben.
+
+Partner von CAROL GAMES
+CAROL GAMES hat Partner, die Dienstleistungen für uns erbringen. Diese Partner verarbeiten Ihre Daten nur nach den Anweisungen von CAROL GAMES zur Bereitstellung des Dienstes, wie z. B. Hosting, Spielersupport, Werbung, Analyse und Betrugsprävention.
+
+Andere Unternehmen und Behörden
+Um Betrug und illegale Aktivitäten zu bekämpfen, können wir Daten mit anderen Unternehmen und Organisationen austauschen und sie Behörden als Antwort auf rechtmäßige Anfragen zur Verfügung stellen.
+Wir können Ihre Daten auch auf der Grundlage Ihrer Einwilligung, zur Einhaltung der Gesetze oder zum Schutz der Rechte, des Eigentums oder der Sicherheit von uns, unseren Spielern oder anderen Personen offenlegen.
+
+Werbe- und Social-Madia-Partner
+Der Dienst umfasst Funktionen unserer Partner, z. B. Interaktionstools für soziale Medien und In-Game-Werbung. Eine Liste dieser Partner finden Sie unter carolgames.com/de/partner-opt-out. Diese Partner können auf Ihre Daten zugreifen und gemäß deren eigenen Datenschutzrichtlinien arbeiten. Wir empfehlen Ihnen, deren Datenschutzrichtlinien zu lesen, um mehr über ihre Datenverarbeitungspraktiken zu erfahren.
+
+Internationale Datenübertragung
+Unser Dienst ist naturgemäß global, daher können Ihre Daten weltweit übertragen werden. Da in verschiedenen Ländern möglicherweise andere Datenschutzgesetze gelten als in Ihrem eigenen Land, ergreifen wir Maßnahmen, um sicherzustellen, dass angemessene Sicherheitsvorkehrungen zum Schutz Ihrer Daten, wie in dieser Richtlinie erläutert, getroffen werden. Angemessene Schutzmaßnahmen, die unsere Partner verwenden können, sind unter anderem von der EU-Kommission zugelassene Standardvertragsklauseln sowie die Privacy Shield-Zertifizierung im Falle von Übertragungen in die USA.
+
+IHRE RECHTE UND MÖGLICHKEITEN
+
+Verzicht auf Marketing-E-Mails und andere Direktmarketing-Aktivitäten.
+Sie können den Erhalt von Werbemitteilungen, wie z. B. Marketing-E-Mails von uns ablehnen, indem Sie die Anweisungen in diesen Mitteilungen befolgen.
+
+Verzicht auf gezielte Werbung
+Sie können die interessenbezogene Werbung in mobilen Apps ablehnen, indem Sie die Datenschutzeinstellungen Ihres Android- oder iOS-Geräts prüfen und die Option ""Kein Ad-Tracking"" aktivieren (Apple iOS) oder ""interessenbezogene Werbung deaktivieren"" (Android) auswählen.
+
+Ihre zusätzlichen Rechte
+Sie haben auch das Recht, Ihre Daten zu korrigieren, Ihre Daten zu löschen, Einspruch gegen die Art zu erheben, wie wir Ihre Daten verwenden oder weitergeben und Einschränkungen festzulegen, wie wir Ihre Daten verwenden oder weitergeben. Sie können Ihre Zustimmung jederzeit widerrufen, indem Sie beispielsweise die GPS-Standortfreigabe in Ihren Mobilgeräteeinstellungen deaktivieren.
+Wir werden alle Anfragen innerhalb einer angemessenen Zeitspanne bearbeiten. Wenn Sie weiterhin Bedenken bezüglich des Datenschutzes oder der Datennutzung haben oder der Meinung sind, dass wir dies nicht angemessen bearbeitet haben, wenden Sie sich bitte an Ihre lokale Datenschutzbehörde im Europäischen Wirtschaftsraum wenden.
+
+COOKIES UND ÄHNLICHE TECHNOLOGIEN
+Wie die meisten Online-Dienste verwenden auch wir und unsere Partner Cookies und ähnliche Technologien, um den Dienst bereitzustellen und zu personalisieren, den Gebrauch zu analysieren, Anzeigen zu schalten und Betrug vorzubeugen. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, möglicherweise funktionieren einige Teile des Dienstes jedoch danach nicht richtig.
+
+WIE WIR IHRE DATEN SCHÜTZEN
+
+Sicherheitsmaßnahmen
+Um ein sicheres Spielerlebnis zu gewährleisten, entwickeln und implementieren wir kontinuierlich administrative, technische und physische Sicherheitsmaßnahmen, um Ihre Daten vor unbefugtem Zugriff oder vor Verlust, Missbrauch oder Veränderung zu schützen.
+
+Datenaufbewahrung
+Wir speichern Ihre Daten so lange, wie Ihr Konto aktiv ist oder solange dies zur Erbringung unseres Dienstes erforderlich ist. Wir machen beispielsweise ungenutzte Spielkonten regelmäßig unkenntlich und prüfen unnötige Daten von Zeit zu Zeit und machen diese ebenfalls unkenntlich.
+Wenn Sie uns auffordern, Ihre personenbezogenen Daten zu löschen, werden wir Ihre Daten so speichern, wie dies für unsere legitimen Geschäftsinteressen erforderlich ist, z. B. zur Erfüllung unserer gesetzlichen Verpflichtungen, zur Beilegung von Streitigkeiten und zur Durchsetzung unserer Vereinbarungen.
+
+ALTERSBESCHRÄNKUNGEN
+Wir erheben oder erfragen wissentlich keine personenbezogenen Daten von und richten keine interessensbezogene Werbung an Kinder und Jugendliche unter 13 Jahren, bzw. gestatten solchen Personen nicht die Nutzung unserer Dienste. Wenn Sie noch nicht 13 Jahre alt sind, schicken Sie uns bitte keine Daten über sich selbst, einschließlich Ihres Namens, Ihrer Adresse, Telefonnummer oder E-Mail-Adresse. Niemand unter 13 Jahren darf uns personenbezogene Daten angeben. Sollten wir davon Kenntnis erhalten, dass wir personenbezogene Daten eines Kindes oder Jugendlichen unter 13 Jahren erhoben haben, werden wir diese Daten schnellstmöglich löschen. Wenn Sie der Ansicht sind, dass wir Daten von oder über ein Kind unter 13 Jahren besitzen, wenden Sie sich bitte an uns."
+DELETE_ACCOUNT_TEXT09,Warnung zur Kontolöschung
+DELETE_ACCOUNT_TEXT10,Deine Forderung nach Löschen des Kontos wurde bereits vorgelegt. Diese Aktion (Konto löschen) kann nicht rückgängig gemacht werden! Countdown zum Abbrechen der Löschung: [c][00B550]{1}[-][/c] Tag(e) [c][00B550]{2}[-][/c]St. [c][00B550]{3}[-][/c]Min. [c][00B550]{4}[-][/c]Sek.
+DELETE_ACCOUNT_TEXT11,"Deine Forderung nach der Löschung des Kontos wird bearbeitet. Dieses Konto wird bald unerreichbar sein. Hast du deine Meinung geändert, tippe bitte auf den Knopf unten, um das Löschen abzubrechen!"
 DELETE_ACCOUNT_TEXT12,Löschen abbrechen
+QUICK_FORMATION_TEXT06,Abbrechen
+QUICK_FORMATION_TEXT07,Ein voraufgestelltes Team aufgerufen. Aufstellen unmöglich.
+GM_RECALL_7,"Liebe(r) Senpai, diese Aktion kann nicht rückgängig gemacht werden. Bitte denke mit Vorsicht."
+QUICK_FORMATION_TEXT01,Gesperrt
+QUICK_FORMATION_TEXT02,Im voraufgestellten Team kann das nicht gemacht werden.
+QUICK_FORMATION_TEXT03,Aufstellen
+QUICK_FORMATION_TEXT04,Erfolgreich gespeichert
+QUICK_FORMATION_TEXT08,Team erfolgreich umbenannt!
+DELETE_ACCOUNT_TEXT13,"Legst du weitere Forderungen vor, werden wir sie so schnell wie möglich behandeln!"
+ACTIVITY_POPULARITY_VOTE_TEXT01,"1. Wie viele Stimmen jedes Mädchen erhalten hat und 10 Spieler, die einem Mädchen die meisten Stimmen gegeben haben, werden hier angezeigt.|2. Die Kommentare werden nach dem Ende der laufenden Phase entfernt. In der neuen Phase kannst du bei deinen Lieblingsmädchen neue Kommentare hinterlassen!"
+ACTIVITY_POPULARITY_VOTE_TEXT02,Aktuelle Phase
+ACTIVITY_POPULARITY_VOTE_TEXT03,Mädchen unterstützen
+ACTIVITY_POPULARITY_VOTE_TEXT04,Unterstützen
+ACTIVITY_POPULARITY_VOTE_TEXT05,Unterstützer-Rangliste
+ACTIVITY_POPULARITY_VOTE_TEXT06,Unterstützt
+ACTIVITY_POPULARITY_VOTE_TEXT07,Während der aktuellen Phase kannst du jedes Mädchen nur einmal unterstützen!
+ACTIVITY_POPULARITY_VOTE_TEXT08,Erhaltene Stimmen
+ACTIVITY_POPULARITY_VOTE_TEXT09,Stimmen
+LOGIN_TIPS_ERROR_3,Dein Konto auf diesem Server ist gesperrt. Willst du sicher den Server wechseln?
+QUICK_FORMATION_TEXT09,Das Team wird noch nicht aufgestellt.
+QUICK_FORMATION_TEXT10,Das Team genügt der Fraktionsanforderung nicht und ist unverfügbar.
+QUICK_FORMATION_TEXT11,Team angepasst. Bitte stelle es erneut auf.
+QUICK_FORMATION_TEXT12,Team {1}
+QUICK_FORMATION_TEXT13,Zum Aufstellen eines neuen Teams werden {1} Dias benötigt. Fortfahren?
+QUICK_FORMATION_TEXT14,Maximal 6 Zeichen
+QUICK_FORMATION_TEXT15,Wird nach dem Abschluss von Runde {1} entsperrt
+QUICK_FORMATION_TEXT16,Willst du dieses Team speichern?
+QUICK_FORMATION_TEXT17,編隊中的戰姬無法進行回退等操作
+QUICK_FORMATION_TEXT18,"1. Nachdem du die Runde 8-5 abgeschlossen hast, wird die Funktion ""Team voraufstellen"" entsperrt.|2. Die Mädchen können in verschiedenen Teams wiederholt aufgestellt werden und die woanders außerhalb dieser Funktion eingestellten Teams werden nicht davon beeinflusst.|3. Hier kannst du die Ausrüstungen, Kristalle, Antiquitäten und Potenziale der Mädchen erneut anpassen, um verschiedene Gegner zu bekämpfen.|4. Die voraufgestellten Teams können nur bei einigen der Funktionen, wo nur eine Aufstellung zum Kampf entsendet werden, aufgerufen werden. Auf der Aufstellungsseite kannst du deine Teams aufrufen, um passende Kämpferinnen schnell zum Kampf zu entsenden.|5. Zu Beginn stehen 3 Teams zur Verfügung. Du kannst auch weitere Teams aufstellen, indem du Dias ausgibst.|6. Drücke lange auf den Namen des Teams, um das Team zu umbenennen."
+QUICK_FORMATION_TEXT19,Team umbenennen
+QUICK_FORMATION_TEXT20,Gib einen neuen Teamnamen ein
+QUICK_FORMATION_TEXT21,Das Mädchen wurde in einem Reserve-Team aufgestellt.
+QUICK_FORMATION_TEXT22,Speichern fehlgeschlagen. Bitte stelle die Mädchen mit einem roten Punkt erneut auf.
+QUICK_FORMATION_TEXT23,Das Mädchen soll erneut aufgestellt werden.

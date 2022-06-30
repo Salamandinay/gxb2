@@ -225,7 +225,7 @@ function ActivityAllStarsPray:euiComplete()
 	self.fountainEffect = xyd.Spine.new(self.selectedGroup.gameObject)
 
 	self.fountainEffect:setInfo("garden_fountain", function ()
-		self.fountainEffect:setRenderTarget(self.fragmentIcon, 1)
+		self.fountainEffect:setRenderTarget(self.selectedGroup, 1)
 		self.fountainEffect:play("animation", 0)
 	end)
 end
@@ -697,6 +697,15 @@ function ActivityAllStarsPray:initBtns()
 		xyd.WindowManager.get():openWindow("item_tips_window", params)
 	end)
 	UIEventListener.Get(self.prayAwardMask.gameObject).onClick = handler(self, function ()
+		if self.activityData.detail.benches[self.nowSelectGroup] and self.activityData.detail.benches[self.nowSelectGroup].awards and #self.activityData.detail.benches[self.nowSelectGroup].awards ~= 5 then
+			xyd.WindowManager.get():openWindow("alert_window", {
+				alertType = xyd.AlertType.TIPS,
+				message = __("ACTIVITY_PRAY_TIPS02")
+			})
+
+			return
+		end
+
 		local msg = messages_pb.use_pray_item_req()
 		msg.activity_id = xyd.ActivityID.ALL_STARS_PRAY
 		msg.bench_id = self.nowSelectGroup
@@ -823,6 +832,21 @@ function ActivityAllStarsPray:getAddCallbackOfGem()
 			end)
 		end),
 		sure_callback = function (num)
+			if self.activityData.detail.benches[self.nowSelectGroup] and self.activityData.detail.benches[self.nowSelectGroup].awards and #self.activityData.detail.benches[self.nowSelectGroup].awards ~= 5 then
+				xyd.WindowManager.get():openWindow("alert_window", {
+					alertType = xyd.AlertType.TIPS,
+					message = __("ACTIVITY_PRAY_TIPS02")
+				})
+
+				local common_use_cost_window_wd = xyd.WindowManager.get():getWindow("common_use_cost_window")
+
+				if common_use_cost_window_wd then
+					xyd.WindowManager.get():closeWindow("common_use_cost_window")
+				end
+
+				return
+			end
+
 			self:useWishCoin(num)
 
 			local common_use_cost_window_wd = xyd.WindowManager.get():getWindow("common_use_cost_window")

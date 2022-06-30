@@ -25,6 +25,10 @@ function AccountWindow:registerEvent()
 	UIEventListener.Get(self.btnRegister_).onClick = handler(self, self.onRegisterTouch)
 	UIEventListener.Get(self.btnChangeAccount_).onClick = handler(self, self.onChangeAccountTouch)
 	UIEventListener.Get(self.helpBtn).onClick = handler(self, self.onHelpTouch)
+
+	UIEventListener.Get(self.labelDelete_.gameObject).onClick = function ()
+		xyd.WindowManager.get():openWindow("delete_account_window", {})
+	end
 end
 
 function AccountWindow:getUIComponent()
@@ -33,6 +37,7 @@ function AccountWindow:getUIComponent()
 	self.labelTitle_ = winTrans:ComponentByName("groupAction/labelTitle", typeof(UILabel))
 	self.btnRegister_ = winTrans:NodeByName("groupAction/btnRegister").gameObject
 	self.btnChangeAccount_ = winTrans:NodeByName("groupAction/btnChangeAccount").gameObject
+	self.labelDelete_ = winTrans:ComponentByName("groupAction/labelDelete", typeof(UILabel))
 	self.labelChangeAccount_ = winTrans:ComponentByName("groupAction/btnChangeAccount/button_label", typeof(UILabel))
 	self.labelRegister_ = winTrans:ComponentByName("groupAction/btnRegister/button_label", typeof(UILabel))
 	self.closeBtn = winTrans:NodeByName("groupAction/closeBtn").gameObject
@@ -47,12 +52,19 @@ function AccountWindow:initUIComponent()
 	self.labelTitle_.text = __("PERSON_BTN_1")
 	self.labelRegister_.text = __("REGISTER_WINDOW_LABEL_1")
 	self.labelChangeAccount_.text = __("CHANGE_ACCOUNT")
+	self.labelDelete_.text = __("DELETE_ACCOUNT_TEXT02")
 	self.labelRegister_.fontSize = 25
 
 	if self.windowType == "register" then
 		self:updateLayout()
 	else
 		self:updatePlayerInfo()
+	end
+
+	if xyd.DELETE_WAY == 3 then
+		self.labelDelete_.gameObject:SetActive(true)
+	else
+		self.labelDelete_.gameObject:SetActive(false)
 	end
 end
 

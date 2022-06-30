@@ -152,6 +152,7 @@ end
 
 function AwardItem:onClickAward()
 	local params = cjson.encode({
+		type = 1,
 		mission_id = self.data.id
 	})
 

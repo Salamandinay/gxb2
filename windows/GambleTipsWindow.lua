@@ -61,6 +61,10 @@ function GambleTipsWindow:initWindow()
 
 	self:layout()
 	self:register()
+
+	if self.params_.isNoESC then
+		self.btnClose_:SetActive(false)
+	end
 end
 
 function GambleTipsWindow:register()

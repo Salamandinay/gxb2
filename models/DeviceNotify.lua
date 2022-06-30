@@ -281,6 +281,28 @@ function DeviceNotify:onAppPause(pause, fromLogin)
 			self.lastIntentMsg_ = nil
 		end
 
+		if self.isDeleteOrdering_ then
+			self.isDeleteOrdering_ = false
+			local win = xyd.WindowManager.get():getWindow("delete_account_window")
+			local win2 = xyd.WindowManager.get():getWindow("delete_warning_window")
+
+			if win then
+				win:setGrey()
+			end
+
+			if win2 then
+				win2:close()
+			end
+
+			xyd.alertTips(__("DELETE_ACCOUNT_TEXT07"))
+		end
+
+		if self.isDeleteOrdering2_ then
+			self.isDeleteOrdering2_ = false
+
+			xyd.alertTips(__("DELETE_ACCOUNT_TEXT13"))
+		end
+
 		__TRACE("NotifyManager receive intentMsg", intentMsg)
 		XYDCo.WaitForFrame(10, function ()
 			if intentMsg ~= nil and #intentMsg > 0 then
@@ -441,6 +463,14 @@ function DeviceNotify:checkOpenMsg(intentMsg)
 	end, nil)
 	LocalNotification.CancelAllNotifications()
 	xyd.SdkManager.get():clearAllNotify()
+end
+
+function DeviceNotify:setDeleteMark()
+	self.isDeleteOrdering_ = true
+end
+
+function DeviceNotify:setDeleteMark2()
+	self.isDeleteOrdering2_ = true
 end
 
 return DeviceNotify

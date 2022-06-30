@@ -132,8 +132,8 @@ function ActivityEntranceTestWindow:playOpenAnimation(callback)
 		end)
 	end))
 	self.bg:Y(-77 + 90 * self.scale_num_contrary)
-	self.leftBg:Y(-106 + 298 * self.scale_num_contrary)
-	self.rightBg:Y(-212 + -54.5 * self.scale_num_contrary)
+	self.leftBg:Y(-8 + 80 * self.scale_num_contrary)
+	self.rightBg:Y(-95 + 76 * self.scale_num_contrary)
 	self.groupDown:Y(-398 + -83 * self.scale_num_contrary)
 
 	self.groupDetailY = self.groupDetail.transform.localPosition.y
@@ -255,7 +255,7 @@ function ActivityEntranceTestWindow:layout()
 	end
 
 	if xyd.Global.lang == "ja_jp" then
-		self.nameText1.width = 92
+		self.nameText1.width = 110
 
 		self.nameText1:X(20)
 	end

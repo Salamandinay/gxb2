@@ -12,6 +12,7 @@ function TreasureSelectWindow:ctor(name, params)
 	self.afterItemID = params.afterItemID
 	self.initSelectIndex = self.equipedPartner.select_treasure
 	self.selectedIndex = self.equipedPartner.select_treasure
+	self.quickItem_ = params.quickItem
 end
 
 function TreasureSelectWindow:initWindow()
@@ -138,6 +139,23 @@ end
 function TreasureSelectWindow:willClose()
 	BaseWindow.willClose(self)
 
+	if self.quickItem_ then
+		if self.type == 1 and self.selectedIndex and self.selectedIndex ~= self.initSelectIndex then
+			self.equipedPartner.select_treasure = self.selectedIndex
+			self.equipedPartner.equipments[xyd.EquipPos.TREASURE] = self.equipedPartner.treasures[self.selectedIndex]
+
+			self.quickItem_:updateEquips()
+
+			local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+			if win then
+				win:updateWindowShow()
+			end
+		end
+
+		return
+	end
+
 	if self.type == 1 and self.selectedIndex and self.selectedIndex ~= self.initSelectIndex then
 		local msg = messages_pb.treasure_select_req()
 		msg.partner_id = self.equipedPartnerID
@@ -253,7 +271,6 @@ function TreasureSelectItem:updateLockState(itemID)
 
 		unlockBtn:SetActive(false)
 		unlockLabel:SetActive(false)
-		self.selectItem:SetActive(true)
 	else
 		unlockLabel.text = __("TREASURE_NOT_UNLOCK")
 		unlockBtn:ComponentByName("button_label", typeof(UILabel)).text = __("TREASURE_UNLOCK")
@@ -268,6 +285,11 @@ function TreasureSelectItem:updateLockState(itemID)
 
 		unlockBtn:SetActive(true)
 		unlockLabel:SetActive(true)
+		self.deleteBtn:SetActive(false)
+	end
+
+	if self.parent.quickItem_ then
+		unlockBtn:SetActive(false)
 		self.deleteBtn:SetActive(false)
 	end
 end
@@ -299,7 +321,7 @@ function TreasureSelectItem:onSelect()
 			self.parent.selectedIndex = self.index
 
 			if self.parent.selectedItem ~= nil then
-				if self.parent.selectedItem.index ~= 1 then
+				if self.parent.selectedItem.index ~= 1 and not self.parent.quickItem_ then
 					self.parent.selectedItem.deleteBtn:SetActive(true)
 				end
 
@@ -310,6 +332,12 @@ function TreasureSelectItem:onSelect()
 		end
 	elseif self.type == 1 and self.itemID <= 0 then
 		if not self.isUnlock then
+			return
+		end
+
+		if self.parent.quickItem_ then
+			xyd.alertTips(__("QUICK_FORMATION_TEXT02"))
+
 			return
 		end
 

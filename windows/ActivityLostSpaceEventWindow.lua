@@ -102,12 +102,16 @@ function ActivityLostSpaceEventWindow:layout()
 		local labelDesc = newItemRoot:ComponentByName("desc", typeof(UILabel))
 		local icon = newItemRoot:ComponentByName("icon", typeof(UISprite))
 		local bg = newItemRoot:ComponentByName("bg", typeof(UIWidget))
+		local line = newItemRoot:ComponentByName("line", typeof(UIWidget))
 		labelName.text = xyd.tables.activityLostSpaceEventTable:getName(id)
 		labelDesc.text = xyd.tables.activityLostSpaceEventTable:getDesc(id)
 		local iconName = xyd.tables.activityLostSpaceEventTable:getIcon(id)
 		bg.height = labelDesc.height - 24 + 81
 
 		icon.transform:Y(-(bg.height - 121) / 2 - 60.5)
+
+		line.width = bg.height - 81 + 60
+
 		xyd.setUISpriteAsync(icon, nil, iconName)
 	end
 

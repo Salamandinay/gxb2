@@ -49,6 +49,7 @@ function Dress:ctor()
 		xyd.mid.NEW_TRIAL_FIGHT,
 		xyd.mid.FRIEND_BOSS_FIGHT
 	}
+	self.buffFromOtherTriggerArr = {}
 end
 
 function Dress:initBuffTypeAttr()
@@ -924,6 +925,10 @@ function Dress:dressSpecialBuffBack(event)
 	local mid = data.mid
 
 	if mid and xyd.arrayIndexOf(self.tipsFifhgtBuffMid, mid) > -1 and data.buff_id then
+		if data.buff_id == xyd.DressBuffAttrType.FRIENT_BOSS_FIGHT_ANOTHER_HEART and self.showNextFightTipsId and self.showNextFightTipsId == xyd.DressBuffAttrType.FRIENT_BOSS_FIGHT then
+			return
+		end
+
 		self.showNextFightTipsId = data.buff_id
 	elseif data.buff_id then
 		local time = xyd.tables.senpaiDressSkillBuffTable:getShowTime(data.buff_id)
@@ -933,28 +938,7 @@ function Dress:dressSpecialBuffBack(event)
 		end
 
 		if data.buff_id == xyd.DressBuffAttrType.TIME_CLOISTR_TEC or data.buff_id == xyd.DressBuffAttrType.TIME_CLOISTR_TEC_2 then
-			if not self.waitStrTime then
-				self.waitStrTime = 0
-			end
-
-			if time then
-				self.waitStrTime = self.waitStrTime + time
-			end
-
-			if not self.waitStr then
-				self.waitStr = xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			else
-				self.waitStr = self.waitStr .. "\n" .. xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			end
-
-			XYDCo.WaitForTime(0.5, function ()
-				if self.waitStr then
-					self:showBuffTips(data.buff_id, self.waitStr, self.waitStrTime)
-
-					self.waitStr = nil
-					self.waitStrTime = nil
-				end
-			end, nil)
+			self:waitBuffsMerge(1, data.buff_id, time)
 
 			if data.buff_id == xyd.DressBuffAttrType.TIME_CLOISTR_TEC_2 then
 				local time_cloister_award_wd = xyd.WindowManager.get():getWindow("time_cloister_award_window")
@@ -964,66 +948,174 @@ function Dress:dressSpecialBuffBack(event)
 				end
 			end
 		elseif data.buff_id == xyd.DressBuffAttrType.BUFF_STUDENTS_TEN or data.buff_id == xyd.DressBuffAttrType.BUFF_STUDENTS_EVERY_TIMES then
-			if not self.waitStrBuffStudentsTime then
-				self.waitStrBuffStudentsTime = 0
-			end
+			self:waitBuffsMerge(2, data.buff_id, time)
+		elseif data.buff_id == xyd.DressBuffAttrType.BUFF_SUMMON_TEN or data.buff_id == xyd.DressBuffAttrType.BUFF_SUMMON_EVERY_TIMES or data.buff_id == xyd.DressBuffAttrType.SUMMON_ANOTHER_GET_5_PARTENR_PARTS then
+			local triggerFun = nil
 
-			if time then
-				self.waitStrBuffStudentsTime = self.waitStrBuffStudentsTime + time
-			end
+			function triggerFun(idsWithNum)
+				for key, num in pairs(idsWithNum) do
+					if key == xyd.DressBuffAttrType.SUMMON_ANOTHER_GET_5_PARTENR_PARTS and num and num > 0 then
+						local award = xyd.tables.senpaiDressSkillBuffTable:getAwards(key)
 
-			if not self.waitStrBuffStudents then
-				self.waitStrBuffStudents = xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			elseif data.buff_id == xyd.DressBuffAttrType.BUFF_STUDENTS_TEN then
-				self.waitStrBuffStudents = xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id) .. "\n" .. self.waitStrBuffStudents
-			else
-				self.waitStrBuffStudents = self.waitStrBuffStudents .. "\n" .. xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			end
-
-			XYDCo.WaitForTime(0.5, function ()
-				if self.waitStrBuffStudents then
-					self:showBuffTips(data.buff_id, self.waitStrBuffStudents, self.waitStrBuffStudentsTime)
-
-					self.waitStrBuffStudents = nil
-					self.waitStrBuffStudentsTime = nil
+						xyd.models.itemFloatModel:pushNewItems({
+							{
+								item_id = award[1],
+								item_num = award[2] * num
+							}
+						})
+					end
 				end
-			end, nil)
-		elseif data.buff_id == xyd.DressBuffAttrType.BUFF_SUMMON_TEN or data.buff_id == xyd.DressBuffAttrType.BUFF_SUMMON_EVERY_TIMES then
-			if not self.waitStrBuffSummonTime then
-				self.waitStrBuffSummonTime = 0
 			end
 
-			if time then
-				self.waitStrBuffSummonTime = self.waitStrBuffSummonTime + time
-			end
+			self:waitBuffsMerge(3, data.buff_id, time, triggerFun)
+		elseif data.buff_id == xyd.DressBuffAttrType.PET_BOSS_FIGHT then
+			local triggerFun = nil
 
-			if not self.waitStrBuffSummon then
-				self.waitStrBuffSummon = xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			elseif data.buff_id == xyd.DressBuffAttrType.BUFF_SUMMON_TEN then
-				self.waitStrBuffSummon = xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id) .. "\n" .. self.waitStrBuffSummon
-			else
-				self.waitStrBuffSummon = self.waitStrBuffSummon .. "\n" .. xyd.tables.senpaiDressSkillBuffTextTable:getTips(data.buff_id)
-			end
+			function triggerFun(idsWithNum)
+				for key, num in pairs(idsWithNum) do
+					if key == xyd.DressBuffAttrType.PET_BOSS_FIGHT and num and num > 0 then
+						local award = xyd.tables.senpaiDressSkillBuffTable:getAwards(key)
 
-			XYDCo.WaitForTime(0.5, function ()
-				if self.waitStrBuffSummon then
-					self:showBuffTips(data.buff_id, self.waitStrBuffSummon, self.waitStrBuffSummonTime)
-
-					self.waitStrBuffSummon = nil
-					self.waitStrBuffSummonTime = nil
+						xyd.models.itemFloatModel:pushNewItems({
+							{
+								item_id = award[1],
+								item_num = award[2] * num
+							}
+						})
+					end
 				end
-			end, nil)
+			end
+
+			self:waitBuffsMerge(4, data.buff_id, time, triggerFun)
+		elseif data.buff_id == xyd.DressBuffAttrType.QUIZ_FIGHT_COIN or data.buff_id == xyd.DressBuffAttrType.QUIZ_FIGHT_EXP or data.buff_id == xyd.DressBuffAttrType.QUIZ_FIGHT_PARTNER or data.buff_id == xyd.DressBuffAttrType.QUIZ_FIGHT_PARTNER_ANOTHER_PART then
+			local triggerFun = nil
+
+			function triggerFun(idsWithNum)
+				for key, num in pairs(idsWithNum) do
+					if key == xyd.DressBuffAttrType.QUIZ_FIGHT_PARTNER_ANOTHER_PART and num and num > 0 then
+						local award = xyd.tables.senpaiDressSkillBuffTable:getAwards(key)
+
+						xyd.models.itemFloatModel:pushNewItems({
+							{
+								item_id = award[1],
+								item_num = award[2] * num
+							}
+						})
+					end
+				end
+			end
+
+			self:waitBuffsMerge(5, data.buff_id, time, triggerFun, true)
+		elseif data.buff_id == xyd.DressBuffAttrType.GUILD_CANTEEN_BUFF then
+			self:waitBuffsMerge(6, data.buff_id, time, nil)
+		elseif data.buff_id == xyd.DressBuffAttrType.GAMBLE_COMMON_GET or data.buff_id == xyd.DressBuffAttrType.GAMBLE_COMMON then
+			self:waitBuffsMerge(7, data.buff_id, time)
 		else
-			local delayTime = xyd.tables.senpaiDressSkillBuffTable:getDelay(data.buff_id)
+			print("显示了日志:", data.buff_id)
+			self:checkDelayShowBuffTips(data.buff_id)
+		end
+	end
+end
 
-			if delayTime and delayTime > 0 then
-				XYDCo.WaitForTime(delayTime, function ()
-					self:showBuffTips(data.buff_id)
-				end, nil)
+function Dress:waitBuffsMerge(index, buffId, time, triggerCallback, isMergeStrOne)
+	if not self.waitBuffsIds then
+		self.waitBuffsIds = {}
+	end
+
+	if not self.waitBuffsIds[index] then
+		self.waitBuffsIds[index] = {}
+	end
+
+	local searchIndex = xyd.arrayIndexOf(self.waitBuffsIds[index], buffId)
+
+	if searchIndex < 0 then
+		local isAddStr = true
+
+		if isMergeStrOne and self.waitBuffsIds[index] and #self.waitBuffsIds[index] > 0 then
+			isAddStr = false
+		end
+
+		if isAddStr then
+			if not self.waitStrBuffArr then
+				self.waitStrBuffArr = {}
+			end
+
+			if not self.waitStrBuffArr[index] then
+				self.waitStrBuffArr[index] = xyd.tables.senpaiDressSkillBuffTextTable:getTips(buffId)
 			else
-				self:showBuffTips(data.buff_id)
+				self.waitStrBuffArr[index] = self.waitStrBuffArr[index] .. "\n" .. xyd.tables.senpaiDressSkillBuffTextTable:getTips(buffId)
+			end
+
+			if not self.waitStrBuffTimeArr then
+				self.waitStrBuffTimeArr = {}
+			end
+
+			if not self.waitStrBuffTimeArr[index] then
+				self.waitStrBuffTimeArr[index] = 0
+			end
+
+			if time then
+				self.waitStrBuffTimeArr[index] = self.waitStrBuffTimeArr[index] + time
 			end
 		end
+
+		table.insert(self.waitBuffsIds[index], buffId)
+	end
+
+	if not self.waitBuffsWithIdTriigerTimesArr then
+		self.waitBuffsWithIdTriigerTimesArr = {}
+	end
+
+	if not self.waitBuffsWithIdTriigerTimesArr[index] then
+		self.waitBuffsWithIdTriigerTimesArr[index] = {}
+	end
+
+	if not self.waitBuffsWithIdTriigerTimesArr[index][buffId] then
+		self.waitBuffsWithIdTriigerTimesArr[index][buffId] = 1
+	else
+		self.waitBuffsWithIdTriigerTimesArr[index][buffId] = self.waitBuffsWithIdTriigerTimesArr[index][buffId] + 1
+	end
+
+	if not self.waitBuffsTriigerFun then
+		self.waitBuffsTriigerFun = {}
+	end
+
+	if not self.waitBuffsTriigerFun[index] then
+		self.waitBuffsTriigerFun[index] = triggerCallback
+	end
+
+	XYDCo.WaitForTime(0.5, function ()
+		if self.waitStrBuffArr[index] then
+			self:showBuffTips(nil, self.waitStrBuffArr[index], self.waitStrBuffTimeArr[index])
+
+			self.waitStrBuffArr[index] = nil
+			self.waitStrBuffTimeArr[index] = nil
+			self.waitBuffsIds[index] = nil
+
+			if self.waitBuffsTriigerFun[index] then
+				if self.waitBuffsWithIdTriigerTimesArr[index] then
+					self.waitBuffsTriigerFun[index](xyd.cloneTable(self.waitBuffsWithIdTriigerTimesArr[index]))
+
+					self.waitBuffsWithIdTriigerTimesArr[index] = nil
+				else
+					self.waitBuffsTriigerFun[index]()
+				end
+			end
+
+			self.waitBuffsTriigerFun[index] = nil
+		end
+	end, nil)
+end
+
+function Dress:checkDelayShowBuffTips(buffId)
+	local delayTime = xyd.tables.senpaiDressSkillBuffTable:getDelay(buffId)
+
+	if delayTime and delayTime > 0 then
+		XYDCo.WaitForTime(delayTime, function ()
+			self:showBuffTips(buffId)
+		end, nil)
+	else
+		self:showBuffTips(buffId)
 	end
 end
 
@@ -1062,6 +1154,19 @@ function Dress:dressSpecialBuffTips(buffId)
 
 	if buffId then
 		self:showBuffTips(buffId)
+	end
+end
+
+function Dress:checkBuffFromOtherTrigger(buffId, triggerCallback)
+	local index = xyd.arrayIndexOf(self.buffFromOtherTriggerArr, buffId)
+
+	if index > 0 and triggerCallback then
+		triggerCallback()
+	end
+
+	if index > 0 then
+		self:checkDelayShowBuffTips(buffId)
+		table.remove(self.buffFromOtherTriggerArr, index)
 	end
 end
 
@@ -1280,28 +1385,26 @@ function Dress:checkItemCanUp(dressItemId)
 		end
 	end
 
-	if #fragment_cost_arr > 0 then
-		local self_item_fragment_id = fragment_cost_arr[1][1]
-		local common_cost_arr = {}
-		local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
+	local self_item_fragment_id = xyd.tables.senpaiDressItemTable:getDressShard(dressItemId)[1]
+	local common_cost_arr = {}
+	local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
 
-		for i in pairs(cost_all_items_2) do
-			table.insert(common_cost_arr, cost_all_items_2[i])
+	for i in pairs(cost_all_items_2) do
+		table.insert(common_cost_arr, cost_all_items_2[i])
+	end
+
+	for i, info in pairs(common_cost_arr) do
+		local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
+		local coutNum = 0
+
+		for k in pairs(arr) do
+			if arr[k].is_can_use == 1 then
+				coutNum = coutNum + arr[k].item_num
+			end
 		end
 
-		for i, info in pairs(common_cost_arr) do
-			local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
-			local coutNum = 0
-
-			for k in pairs(arr) do
-				if arr[k].is_can_use == 1 then
-					coutNum = coutNum + arr[k].item_num
-				end
-			end
-
-			if coutNum < info[2] then
-				return false
-			end
+		if coutNum < info[2] then
+			return false
 		end
 	end
 
@@ -1362,44 +1465,42 @@ function Dress:checkMoreItemCanUp(dressItems)
 		end
 	end
 
-	if #fragment_cost_arr > 0 then
-		local common_cost_arr = {}
-		local self_item_fragment_id = fragment_cost_arr[1][1]
+	local common_cost_arr = {}
+	local self_item_fragment_id = xyd.tables.senpaiDressItemTable:getDressShard(dressItems[1])[1]
 
-		for k, dressItemId in pairs(dressItems) do
-			local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
+	for k, dressItemId in pairs(dressItems) do
+		local cost_all_items_2 = xyd.tables.senpaiDressItemTable:getUpgradeCost2(dressItemId)
 
-			for i in pairs(cost_all_items_2) do
-				local isSearch = false
+		for i in pairs(cost_all_items_2) do
+			local isSearch = false
 
-				for _, cost in pairs(common_cost_arr) do
-					if cost[1] == cost_all_items_2[i][1] then
-						cost[2] = cost[2] + cost_all_items_2[i][2]
-						isSearch = true
+			for _, cost in pairs(common_cost_arr) do
+				if cost[1] == cost_all_items_2[i][1] then
+					cost[2] = cost[2] + cost_all_items_2[i][2]
+					isSearch = true
 
-						break
-					end
+					break
 				end
+			end
 
-				if not isSearch then
-					table.insert(common_cost_arr, cost_all_items_2[i])
-				end
+			if not isSearch then
+				table.insert(common_cost_arr, cost_all_items_2[i])
+			end
+		end
+	end
+
+	for i, info in pairs(common_cost_arr) do
+		local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
+		local coutNum = 0
+
+		for k in pairs(arr) do
+			if arr[k].is_can_use == 1 then
+				coutNum = coutNum + arr[k].item_num
 			end
 		end
 
-		for i, info in pairs(common_cost_arr) do
-			local arr = xyd.models.dress:getCommonQltFragmentArr(info[1], self_item_fragment_id, true)
-			local coutNum = 0
-
-			for k in pairs(arr) do
-				if arr[k].is_can_use == 1 then
-					coutNum = coutNum + arr[k].item_num
-				end
-			end
-
-			if coutNum < info[2] then
-				return false
-			end
+		if coutNum < info[2] then
+			return false
 		end
 	end
 

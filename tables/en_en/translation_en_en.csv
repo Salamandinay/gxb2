@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Super Slot Machine talks 4
 GAMBLE_UP_WOMAN_TALK_5,Super Slot Machine talks 5
 OPEN_SLOT_TIPS,Spend {1} Gems to add {2} Girl capacity?
 NOT_ENOUGH,Not enough {1}
-LOCK_PARTNER_TIPS,The Girl is locked|The Girl is in Junior Varsity Lineup|The Girl is in Varsity Lineup|The Girl is in Elite League Lineup|The Girl is set as Wallpaper Girl|The Girl is in Dorm|The Girl is in the Main Center of School Excursion|The Girl is assigned to a School Excursion Facility||The Girl is in Ultimate League Lineup
+LOCK_PARTNER_TIPS,The Girl is locked|The Girl is in Junior Varsity Lineup|The Girl is in Varsity Lineup|The Girl is in Elite League Lineup|The Girl is set as Wallpaper Girl|The Girl is in Dorm|The Girl is in the Main Center of School Excursion|The Girl is assigned to a School Excursion Facility||The Girl is in Ultimate League Lineup|The Girl is in a preset Lineup
 ALTAR_DECOMPOSE_TIP,This Girl's Star Rank is higher than 3. Are you sure you want to transfer her?
 ALTAR_HERO_NUM_TEXT,Remaining:
 ALTAR_SMART_TEXT,Auto Select
@@ -1356,7 +1356,7 @@ DATES_TEXT12,Success
 COMPOSE_DATES_GIFTS_TEXT01,Success
 COMPOSE_DATES_GIFTS_TEXT02,Insufficient materials
 IF_UNLOCK_HERO,"Are you sure you want to unlock this Girl? If the girl is defending in League, she'll be removed after being unlocked."
-UNLOCK_FAILED,This Girl is the last Girl remaining in League Defense and cannot be removed.
+UNLOCK_FAILED,This Girl is the last Girl remaining in the Lineup and cannot be removed.
 DATES_TEXT13,No Bonus
 SHELTER_TIPS,Next page
 DATES_TEXT14,Unlock by finishing the story
@@ -1482,7 +1482,7 @@ First, please select what type of issue your question is about. It will greatly 
 [url=""event:GM_RECALL_5""][c][f95e6a]5. Bug Reports and Suggestions  [-][/c][/url]
 
 [url=""event:GM_RECALL_6""][c][f95e6a]6. Other Issues          [-][/c][/url]"
-GM_RECALL_1,"Please describe the account issue you've encountered in detail (connection failure, failure to switch accounts, lost account, or account hacked, etc.). Customer service will confirm the problem you've encountered based on your description."
+GM_RECALL_1,"Please describe your account issue in detail, for example, account linking failure, unable to switch accounts, forgotten account/password, account hacked, etc. so that we may confirm and help resolve the issue.\n\n1. Account Delete[url=""delete_account_window""][c][f95e6a][-][/c][/url]"
 GM_RECALL_2,"Please describe the recharge issue you've encountered in detail (failure to complete purchase, paying for items and not receiving them in game, purchasing the wrong pack, needing assistance in recharging, etc.). Customer service will then confirm the problem you've encountered based on your description."
 GM_RECALL_3,"Please describe the issue you've encountered in detail (having doubts about our game rules, current events, etc.) Customer service will confirm the problem you've encountered based on your description."
 GM_RECALL_4,"Please describe the malfunction you've encountered in detail (failure to receive rewards, items, resource, or member issues, etc.) Also, please provide us a rough time frame for when the problem occured. Customer service will confirm the problem you've encountered based on your description."
@@ -3276,7 +3276,7 @@ ACTIVITY_RETURN_MISSION_REPEAT_FINISH,Completed: {1}/{2}
 ACTIVITY_RETURN_MISSION_NO_BIND,Not Binded
 ACTIVITY_RETURN_IS_BINDING,Binding
 ACTIVITY_RETURN_WAITING_FOR_FINISH,Unfinished
-IF_UNLOCK_HERO_3,"Are you sure to unlock the girl? If she's in a Defense Lineup in League, she will be removed from your lineup once unlocked. If she's in your Dorm, she will be removed from Dorm."
+IF_UNLOCK_HERO_3,"Are you sure to unlock the girl? If she's in a Defense Lineup in League or a preset Lineup, she will be removed from your lineup once unlocked. If she's in your Dorm, she will be removed from Dorm."
 ACTIVITY_PLAYER_RETURN_EXPLAIN,Reward & Loot for Daily Quiz and Campaign
 ACTIVITY_RETURN_SHOP_LIMIT,Limited
 ACTIVITY_RETURN_APPLY_LIST_TIPS_3,No application
@@ -4508,7 +4508,7 @@ ACTIVITY_3BIRTHDAY_TEXT05,Get random one of the rewards every time you give away
 ACTIVITY_3BIRTHDAY_TEXT06,Give out {1} Times
 ACTIVITY_3BIRTHDAY_HELP,"1. During the event, you can get rewards by giving away Fine Liquors.|2. You will get 6 Rose Pins every time you give away 10 Fine Liquors, there's a chance for you to trigger Crit and get 150%% reward. Girls will react differently when you give Fine Liquors to them. Kratos provides a doubled Crit chance and Teresa increases the Crit reward to 200%%.|3. Once you’ve given out Fine Liquor and have reached a certain amount, additional rewards can be obtained.|4. Rose Pins you acquired by giving away Fine Liquors can be used in event: Hidden Cellar.|5. Once the event ends, the remaining Fine Liquors and Rose Pins will automatically be recycled into Coins at a rate of 50k per Fine Liquor and 100k per Rose Pin."
 ACTIVITY_3BIRTHDAY_GAMBLE_HELP,"1. During the event, you can use Rose Pins to draw rewards from Cabinets.|2. Luxury Cabinet will cost you more Rose Pins than Normal Cabinets but can provide better rewards. You can tap on the maginfying glass button to check out the reward details."
-ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. During the event, you vote for your favorite Girl with vote tickets that can be obtained by completing Daily Tasks.|2. There are 2 types of vote tickets, Popular Vote Tickets can only be used on the day you get them. Support Vote Tickets have a longer expiration date and can be used anytime during the event.|3. This event has Group Matches, Knockout Stage and Results Phase. The Top 4 Girls in each group can get to the Knockout Stage. After the final winner is concluded, the event will enter a Results Phase and display the final champion. You will not be able to vote for Girls or get more vote tickets during this period.|4. You can out the detailed schedule in Schedule.|5. You can get additional rewards by voting for the Girls.|6. An exclusive NEW SKIN will be designed for the champion Girl of this event.|7. All vote tickets will be removed after the event is over."
+ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. During the event, you vote for your favorite Girl with vote tickets that can be obtained by completing Daily Tasks.|2. There are 2 types of vote tickets, Popular Vote Tickets can only be used on the day you get them. Support Vote Tickets have a longer expiration date and can be used anytime during the event.|3. This event has Group Matches, Knockout Stage and Results Phase. The Top 4 Girls in each group can get to the Knockout Stage. After the final winner is concluded, the event will enter a Results Phase and display the final champion. You will not be able to vote for Girls or get more vote tickets during this period.|4. You can find out the detailed schedule in Schedule.|5. Popular Vote Tickets and Support Vote Tickets can be obtained by completing Daily Tasks of the event.|6. The event will provide 20 additional Support Vote Tickets that can be obtained daily via Mail. The aforementioned additional Support Vote Tickets will accumulate onto the next day if they are not claimed on the day they were given. You will be able to obtain 20 additional Support Vote Tickets for every 250 VIP Exp you get during the event. If the Support Vote Tickets given from VIP Exp exceeds the ticket storage limit, you will then receive the corresponding 20 additional Support Vote Tickets the next day and days to follow (depending on the amount) unless the event ends. (You are able to get at most 380 additional Support Vote Tickets in this way during this event.)|7. You can get additional rewards by voting for the Girls.|8. An exclusive NEW SKIN will be designed for the champion Girl of this event.|9. All vote tickets will be removed after the event is over."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT02,"The TOP100 players who vote the most for the winner during ""Miss Yume Pageant"" are displayed on the supporter ranking list."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT03,1. The previous winners and the votes they received are displayed on History page.|2. You cannot vote or claim rewards on this page. Tap the return button in top right corner of this page to return to the main page.
 ACTIVITY_POPULARITY_VOTE_TIMETEXT01,Group Match (Group A)
@@ -4788,7 +4788,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Miss Yume Skin Election
 DRESS_SUMMON_LABEL_2,Tap to check available Outfits
 DRESS_SUMMON_LABEL_4,Orange Outfit piece in [c][e96516]{1}[-][/c] Draw(s)
 DRESS_SUMMON_LABEL_1,Free Chance available: {1}
-DRESS_SUMMON_LABEL_3,"Rates of acquiring\n""Graceful Demon"" set"
+DRESS_SUMMON_LABEL_3,"Rates of acquiring ""Sugar Rush"" set"
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Miss Yume\nSkin Election
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Senpai, thank you for your support! Hope you enjoy a wonderful time on campus!"
 ONE_KEY_UPLEVEL_TITLE,Quick Upgrade
@@ -4909,7 +4909,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
 WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: |After reaching Division {1}:|{2}|After reaching Division {3}:|{4}|After reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
-WARMUP_ARENA_TASK_INFO_2,Eve · Mysterious Howls
+WARMUP_ARENA_TASK_INFO_2,A Frightful Encounter
 WARMUP_ARENA_TASK_INFO_3,Mission Rewards
 WARMUP_ARENA_TASK_INFO_4,Extra Rewards
 WARMUP_ARENA_TASK_INFO_5,Unlock after completing star-marked missions
@@ -4952,7 +4952,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Go
 QUICK_STARS_TEXT05,Graduating
 EQUIP_LEVELUP_TEXT_19,Select the Class Set you want to exchange
 EQUIP_LEVELUP_TEXT_20,Select the Class Set you want to receive
-DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire pieces from the ""Graceful Demon"" Outfit set is increased in this Outfit Sale event."
+DRESS_SUMMON_LIMIT_ACT_DESC,"Use Plain Buttons and Fancy Buttons to obtain Outfit pieces in the event. The chance to acquire ""Sugar Rush"" Outfit set is increased in this Outfit Sale event."
 HOUSE_TEXT_60,Confirm to move the Girl to the current floor?
 HOUSE_TEXT_61,No more girls can stay on this floor!
 HOUSE_TEXT_62,Set yourself in this floor
@@ -6528,8 +6528,8 @@ SHENXUE_TEXT05,Awake in Bulk
 SHENXUE_TEXT06,Awakening…
 ACTIVITY_LOST_SPACE_TEXT10,"1. After purchasing Spaceship Supplies, you will get another additional reward for passing each Space Zone.|2. If you have passed at least 1 Space Zone before purchasing Spaceship Supplies, the additional rewards for passing the previous Space Zone(s) will also be issued via Mail."
 PARTNER_RECOMMEND_TIPS,Recent Popular Girls
-ACTIVITY_LAFULI_CASTLE_TEXT15,Consume {1} units of Beach Sand in total to complete this area.
-ACTIVITY_LAFULI_CASTLE_TEXT16,Consume {1} units of Rainbow Sand in total to decorate this area.
+ACTIVITY_LAFULI_CASTLE_TEXT15,Consume more {1} units of Beach Sand in total to complete this area.
+ACTIVITY_LAFULI_CASTLE_TEXT16,Consume more {1} units of Rainbow Sand in total to decorate this area.
 COLLECTION_SKIN_TEXT29,Girl
 QUICK_FORMATION_TEXT05,Lineup
 DELETE_ACCOUNT_TEXT01,Privacy Policy
@@ -6538,9 +6538,174 @@ DELETE_ACCOUNT_TEXT03,Attention
 DELETE_ACCOUNT_TEXT04,"Dear Senpai, the account cannot be recovered after being deleted, confirm to continue?"
 DELETE_ACCOUNT_TEXT05,Continue
 DELETE_ACCOUNT_TEXT06,Cancel
-DELETE_ACCOUNT_TEXT07,"Once we receive your request to delete your account and all related user data, the process will take 30 working days and you will be notified once the process begins."
-DELETE_ACCOUNT_TEXT08,隱私協議的具體文本（此條暫不翻譯）
+DELETE_ACCOUNT_TEXT07,"If you demand to delete your account and all related user data, the process will take 30 working days and you will be notified once the process begins."
+DELETE_ACCOUNT_TEXT08,"
+This Privacy Policy applies to YOTTA GAMES PTE. LTD. (Yottagames), websites and related services, which is collectively called the Service. We may periodically update this Privacy Policy by posting a new version on YOTTA GAMES PTE. LTD. (Yottagames). If we make any material changes, we will notify you by posting a notice in the Service prior to the change becoming effective. Your continued use of the Service after the effective date will be subject to the new Privacy Policy.
+
+
+THE DATA WE COLLECT
+Data you provide us.
+1. Contact information (such as name and email address)
+2. Player name and password
+3. Profile information (such as profile photo)
+4. Your messages to the Service (such as chat logs and player support tickets)
+5. Other data you choose to give us (such as data to identify a lost account)
+
+
+Data we collect automatically.
+1. Data about your account and game progress
+2. Your IP address and mobile device identifiers (such as your device ID, advertising ID, MAC address, IMEI)
+3. Data about your device, such as device name and operating system, browser type and language
+4. Data we collect with cookies and similar technologies
+5. General location data
+6. Data about your use of the Service (such as gameplay data and your interactions with other players inside the Service)
+
+
+In most cases, we also create a YOTTA GAMES PTE. LTD. (Yottagames).-specific ID for you when you use the Service.
+Data we collect from our partners.
+1. Data we receive if you bind to a third party tool with the Service (such as Facebook, Game Center or Google)
+2. Demographic data (such as to determine the coarse location of your IP address)
+3. Data to fight fraud (such as refund abuse in games or click fraud in advertising)
+4. Data from platforms that the games run on (such as to verify payment)
+5. Data for advertising and analytics purposes, so we can provide you with better Service
+
+
+WHY DO WE COLLECT YOUR DATA
+To make the Service work.
+To perform the contract, we process data necessary to:
+1. Create accounts and allow you to play our games and use our Service
+2. Operate the Service
+3. Verify and confirm payments
+4. Provide and deliver products and services you request
+5. Send you Service-related communications
+
+
+To make the Service more suitable for our players.
+To provide greater Service to our players, we have a legitimate interest to collect and process necessary data to:
+1. Update and develop player profiles
+2. Develop and improve the Service and player experience
+3. Manage our relationship with you
+4. Provide social features as part of the Service
+5. Customize your Service experience
+6. Respond to your comments and questions and provide player support
+7. Provide you YOTTA GAMES PTE. LTD. (Yottagames) offers in the Service as well as in other websites and services, and by email
+8. Send you related information, such as updates, security alerts, and support messages
+9. Enable you to communicate with other players
+10. Display personalized advertisement
+
+
+To display personalized advertisements.
+To show you personalized advertisements in the Service as well as in other websites and services (including email) we have a legitimate interest to process necessary data to:
+1. Track the content you access in connection with the Service and your online behavior；
+2. Deliver, target and improve our advertising and the Service
+3. For information on how to opt-out from personalized advertisements, see section \'Your rights and options\' below:
+To keep the Service safe and fair Ensuring a level playing field in the Service is a top priority for us. For more information on our acceptable use policy, see the YOTTA GAMES PTE. LTD. (Yottagames) Terms of Service.
+
+
+To keep the Service safe and fair.
+In order to keep the Service and its social features safe and fair, to fight fraud and ensure acceptable use otherwise, we have a legitimate interest to process necessary data to:
+1. Analyze and monitor use of the Service and its social features
+2. Moderate chats either automatically or manually
+3. Take action against fraudulent or misbehaving players
+4. To analyze, profile, and segment.
+In all of the above cases and purposes, we may analyze, profile and segment all collected data.
+With your consent, we may process your data for additional purposes, such as using your GPS location to show you local events.
+
+
+WHO CAN SEE YOUR DATA
+Apart from YOTTA GAMES PTE. LTD. (Yottagames), your data can be accessed by others in the following situations:
+OTHER PLAYERS AND USERS.
+Social features are a core component of our games. Other players and users may, for example, see your profile data, in-game activities and read the messages you have posted.
+PARTNERS WORKING With YOTTA GAMES PTE. LTD. (Yottagames).
+YOTTA GAMES PTE. LTD. (Yottagames) has partners to perform services for us. These partners process your data only at and according to YOTTA GAMES PTE. LTD. (Yottagames).´s instructions to provide the Service, such as hosting, player support, advertising, analytics and fraud prevention.
+Other companies and public authorities.
+In order to combat fraud and illegal activity, we may exchange data with other companies and organizations and provide it to public authorities in response to lawful requests.
+We may also disclose your data based on your consent, to comply with the law or to protect the rights, property or safety of us, our players or others.
+Advertising and Social Media partners.
+The Service includes features from our partners, such as social media interaction tools and in-game advertising. These partners may access your data and operate under their own privacy policies. We encourage you to check their privacy policies to learn more about their data processing practices.
+
+
+INTERNATIONAL DATA TRANSFERS
+Our Service is global by nature and your data can therefore be transferred to anywhere in the world. Because different countries may have different data protection laws than your own country, we take steps to ensure adequate safeguards are in place to protect your data as explained in this Policy. Adequate safeguards that our partners may use include standard contractual clauses approved by EU Commission and the Privacy Shield certification in case of transfers to the US
+
+
+YOUR RIGHTS AND OPTIONS
+Opt-out of marketing emails and other direct marketing.
+You may opt-out of receiving promotional communications, such as marketing emails from us by following the instructions in such communications.
+Opt-out of targeted advertising.
+You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your Android or iOS device and selecting ""limit ad tracking"" (Apple iOS) or ""opt-out of interest based ads"" (Android).
+For personalized in-game offers opt-out, you can use the options provided in the game settings.
+
+
+Your other rights.
+You also have the right to correct your data, have your data deleted, object how we use or share your data, and restrict how we use or share your data. You can always withdraw your consent, for example by turning off GPS location sharing in your mobile device settings.
+We will respond to all requests within a reasonable timeframe. If you have an unresolved privacy or data use concern that we have not addressed satisfactorily, please contact our U.S.-based third-party dispute resolution provider (free of charge). You may also contact your local data protection authority within the European Economic Area for unresolved complaints.
+
+
+COOKIES AND SIMILAR TECHNOLOGIES
+Like most online services, we and our partners use cookies and similar technologies to provide and personalize the Service, analyze use, target advertisements and prevent fraud. You can disable cookies in your browser settings, but some parts of the Service may then not function properly.
+
+
+HOW DO WE PROTECT YOUR DATA
+Security Safeguards
+In order to help ensure a secure and safe player experience, we are continuously developing and implementing administrative, technical and physical security measures to protect your data from unauthorized access or against loss, misuse or alteration.
+Data retention.
+We retain your data for as long as your account is active or as needed to provide you the Service. We will for example periodically de-identify unused game accounts and we regularly review and de-identify unnecessary data.
+Note that if you ask us to remove your personal data, we will retain your data as necessary for our legitimate business interests, such as to comply with our legal obligations, resolve disputes, and enforce our agreements.
+
+
+AGE LIMITS
+We do not knowingly collect or solicit personal data about or direct or target interest-based advertising to anyone under the age of 15 or knowingly allow such persons to use our Services. If you are under 15, please do not send any data about yourself to us, including your name, address, telephone number, or email address. No one under the age of 15 may provide any personal data. If we learn that we have collected personal data about a child under age 15, we will delete that data as quickly as possible. If you believe that we might have any data from or about a child under the age of 15, please contact us.
+
+
+YOUR CHOICES AND CONTROLS
+We seek to provide you with meaningful choices about the personal information we collect. The specific choices available to you often vary depending on the exact nature of our relationship with you, such as the Carolgames Services you use. Common examples include:
+You can request that we provide access to, or that we correct or delete, personal information we’ve collected from you. Please submit requests to access, update, or delete personal information associated with your Carolgames account by reaching out to us via in-game Customer Service channel or as described in “Contact Us” below. Note that we may ask you for additional information to help us verify who you are before completing your request.
+You can change your email marketing preferences at any time, such as by using the unsubscribe link provided in our marketing emails or contacting us with your request (see “Contact Us” below).
+You may be able to change your privacy settings on other parties’ websites (such as Facebook) to limit the information they may share with us.
+You can change your browser or mobile device settings to block, manage, delete, or limit tracking technologies like cookies. In some cases, blocking or disabling cookies may cause the Carolgames Services not to work as intended and some features may not be available.
+Some parts of the world provide individuals with specific choices related to their personal information by right under local law.
+
+
+CONTACT US
+If you have questions, concerns, or requests related to this policy, you may contact our game customer service E-mail as below:
+
+girls2@carolgames.com (Girls X Battle 2)"
 DELETE_ACCOUNT_TEXT09,Warning
-DELETE_ACCOUNT_TEXT10,"You have requested to delete this account, the deletion will be irreversible! You still got {1} days {2} hours {3} minutes {4} seconds to cancel the request!"
+DELETE_ACCOUNT_TEXT10,Your account deletion request is in process. The delete is irreversible!!! You can still cancel the request in [c][00B550]{1}[-][/c]D[c][00B550]{2}[-][/c]Hr[c][00B550]{3}[-][/c]Sec[c][00B550]{4}[-][/c]
 DELETE_ACCOUNT_TEXT11,"Your account deletion request is in process. The account will be deleted once the process is complete. If you have changed your mind, please tap the button below to cancel your request!"
 DELETE_ACCOUNT_TEXT12,Cancel
+QUICK_FORMATION_TEXT06,Quit
+QUICK_FORMATION_TEXT07,Cannot adjust the preset Lineup
+GM_RECALL_7,"Dear Senpai, the account cannot be recovered after being deleted. Please think twice before you proceed."
+QUICK_FORMATION_TEXT01,Locked
+QUICK_FORMATION_TEXT02,Cannot do this in Lineup preset
+QUICK_FORMATION_TEXT03,Set
+QUICK_FORMATION_TEXT04,Saved successfully
+QUICK_FORMATION_TEXT08,Name Changed
+DELETE_ACCOUNT_TEXT13,"If you have any further requests, we will process them ASAP!"
+ACTIVITY_POPULARITY_VOTE_TEXT01,"The TOP10 players who vote the most for the winner during ""Miss Yume Pageant"" are displayed on the supporter ranking list.|2. The support text for Girls will be refreshed at the start of each phase, don't forget to update your support text!"
+ACTIVITY_POPULARITY_VOTE_TEXT02,Current Phase
+ACTIVITY_POPULARITY_VOTE_TEXT03,Girl Support
+ACTIVITY_POPULARITY_VOTE_TEXT04,Supporter Ranking List
+ACTIVITY_POPULARITY_VOTE_TEXT05,Supporter Ranking List
+ACTIVITY_POPULARITY_VOTE_TEXT06,Voted
+ACTIVITY_POPULARITY_VOTE_TEXT07,You can only support once during the current phase!
+ACTIVITY_POPULARITY_VOTE_TEXT08,Total Votes
+ACTIVITY_POPULARITY_VOTE_TEXT09,Votes
+LOGIN_TIPS_ERROR_3,"Your account in this server is banned, do you want to switch to another server?"
+QUICK_FORMATION_TEXT09,You need to preset this lineup first
+QUICK_FORMATION_TEXT10,This lineup doesn't fit the faction requirement
+QUICK_FORMATION_TEXT11,"Lineup change detected, please update your preset lineup"
+QUICK_FORMATION_TEXT12,Lineup {1}
+QUICK_FORMATION_TEXT13,"{1} Gems will be consumed, confirm to proceed?"
+QUICK_FORMATION_TEXT14,6 characters at most
+QUICK_FORMATION_TEXT15,Available after passing Stage {1} in Campaign
+QUICK_FORMATION_TEXT16,Save the current lineup?
+QUICK_FORMATION_TEXT17,"Girls in a preset lineup cannot be Upgraded, Reversed, Consumed, or Exchanged"
+QUICK_FORMATION_TEXT18,"1. Lineup Presets will be unlocked after passing Stage 8-5 in Campaign.|2. You can preset multiple preset lineups at the same time without affecting your current lineup in game.|3. You are able to set the Gears, Crystals, Antiques, Potentials to face different situations in Lineup Presets.|4. The preset lineups can be used in some of the features that only require players to use 1 lineup at the same time.|5. There are 3 preset lineups unlocked for free, but you can unlock more with Gems.|6. You are able to adjust the name of the preset lineups by tapping and holding on the current name of the preset lineups."
+QUICK_FORMATION_TEXT19,Name Adjust
+QUICK_FORMATION_TEXT20,Please enter a new name for this lineup
+QUICK_FORMATION_TEXT21,The Girl is in a preset lineup
+QUICK_FORMATION_TEXT22,"Save failed, please set the Girl with a red-dot hint again"
+QUICK_FORMATION_TEXT23,Please set this Girl again

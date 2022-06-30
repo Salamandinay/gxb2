@@ -1220,7 +1220,7 @@ function MainWindow:initBottomGroup()
 
 	local dressActivityData = xyd.models.activity:getActivity(xyd.ActivityID.DRESS_SUMMON_LIMIT)
 
-	if not dressActivityData or dressActivityData:getEndTime() <= xyd.getServerTime() then
+	if not dressActivityData or dressActivityData:getEndTime() <= xyd.getServerTime() or not xyd.checkFunctionOpen(xyd.FunctionID.DRESS, true) then
 		self.btnLimitDress:SetActive(false)
 	else
 		self.btnLimitDress:SetActive(true)

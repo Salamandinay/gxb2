@@ -295,6 +295,10 @@ function ItemTips:initUIComponent()
 	local name = ItemTable:getName(self.itemID)
 	self.labelName_.text = name
 
+	if self.itemID == 20001081 then
+		self.labelName_.width = 450
+	end
+
 	xyd.labelQulityColor(self.labelName_, self.itemID)
 	self.labelType_:SetActive(true)
 

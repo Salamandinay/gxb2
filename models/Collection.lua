@@ -284,6 +284,8 @@ end
 function Collection:checkLevelUpRedPoint()
 	if not xyd.checkFunctionOpen(xyd.FunctionID.SKIN_COLLECTION) then
 		xyd.models.redMark:setMark(xyd.RedMarkType.SKIN_LEVEL_CAN_UP, false)
+
+		return
 	end
 
 	local flag = false

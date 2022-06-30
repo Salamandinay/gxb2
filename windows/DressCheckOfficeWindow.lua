@@ -107,6 +107,7 @@ end
 
 function DressCheckOfficeWindow:addItem(i, styleId)
 	local params = {
+		showUpMax = true,
 		uiRoot = self["dressPosIcon" .. i].gameObject,
 		styleID = styleId
 	}
@@ -181,6 +182,7 @@ function DressCheckOfficeWindow:updateStyleOnly(styleId)
 	local pos = xyd.tables.senpaiDressStyleTable:getPos(styleId)
 
 	self["item_" .. pos]:setInfo({
+		showUpMax = true,
 		styleID = styleId
 	})
 

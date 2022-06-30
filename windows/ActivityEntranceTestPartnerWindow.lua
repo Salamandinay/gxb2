@@ -547,7 +547,16 @@ function ActivityEntranceTestPartnerWindow:updateAttr()
 
 	self.upConItem:setInfo(params)
 
-	if self.navChosen == 1 and self.partner_.tableID == xyd.tables.miscTable:getNumber("entrance_test_help_show", "value") then
+	local isNew = false
+	local tableIDs = xyd.tables.miscTable:split2num("entrance_test_help_show", "value", "|")
+
+	for i = 1, #tableIDs do
+		if tableIDs[i] == self.partner_.tableID then
+			isNew = true
+		end
+	end
+
+	if self.navChosen == 1 and isNew then
 		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(true)
 	else
 		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(false)
@@ -780,7 +789,16 @@ end
 function ActivityEntranceTestPartnerWindow:onClickNav(index)
 	ActivityEntranceTestPartnerWindow.super.onClickNav(self, index)
 
-	if index == 1 and self.partner_.tableID == xyd.tables.miscTable:getNumber("entrance_test_help_show", "value") then
+	local isNew = false
+	local tableIDs = xyd.tables.miscTable:split2num("entrance_test_help_show", "value", "|")
+
+	for i = 1, #tableIDs do
+		if tableIDs[i] == self.partner_.tableID then
+			isNew = true
+		end
+	end
+
+	if index == 1 and isNew then
 		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(true)
 	else
 		self.content_1:ComponentByName("labelTips", typeof(UILabel)):SetActive(false)

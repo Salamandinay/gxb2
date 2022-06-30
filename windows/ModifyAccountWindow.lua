@@ -19,6 +19,7 @@ function ModifyAccountWindow:getUIComponent()
 	self.labelTitle_ = self.main_:ComponentByName("top/labelTitle_", typeof(UILabel))
 	self.closeBtn = self.main_:NodeByName("top/closeBtn").gameObject
 	self.helpBtn = self.main_:NodeByName("top/helpBtn").gameObject
+	self.deleteBtn = self.main_:NodeByName("top/deleteBtn").gameObject
 	self.mid = self.main_:NodeByName("mid").gameObject
 	self.btnFacebook_ = self.mid:NodeByName("btnFacebook_").gameObject
 	self.btnGoogle_ = self.mid:NodeByName("btnGoogle_").gameObject
@@ -41,6 +42,8 @@ function ModifyAccountWindow:layout()
 		btnLinelabel = __("LINE_LOGING")
 		btnGameCenterlabel = __("GAMECENTER_LOGING")
 		btnApplelabel = "Sign in with Apple"
+
+		self.deleteBtn:SetActive(true)
 	elseif self.curType_ == xyd.ModifyAccountWindowType.LOGIN then
 		btnOtherlabel = __("FAST_LOGING_1")
 		labelTitletext = __("CHANGE_ACCOUNT_1")
@@ -49,6 +52,8 @@ function ModifyAccountWindow:layout()
 		btnLinelabel = __("LINE_LOGING")
 		btnGameCenterlabel = __("GAMECENTER_LOGING")
 		btnApplelabel = "Sign in with Apple"
+
+		self.deleteBtn:SetActive(false)
 	else
 		btnOtherlabel = __("REGISTER_ACCOUNT")
 		labelTitletext = __("REGISTER_WINDOW")
@@ -101,6 +106,10 @@ function ModifyAccountWindow:registerEvent()
 	UIEventListener.Get(self.btnGameCenter_).onClick = handler(self, self.onGameCenterTouch)
 	UIEventListener.Get(self.btnApple_).onClick = handler(self, self.onAppleTouch)
 	UIEventListener.Get(self.helpBtn).onClick = handler(self, self.onHelpTouch)
+
+	UIEventListener.Get(self.deleteBtn).onClick = function ()
+		xyd.WindowManager.get():openWindow("delete_account_window", {})
+	end
 end
 
 function ModifyAccountWindow:onFacebookTouch()

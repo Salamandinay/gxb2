@@ -178,11 +178,7 @@ function ScheduleItem:addChileScheduleItem(childPeriodsList, periodList)
 				if activityData.history and activityData.history[childPeriod] then
 					hasData = true
 				else
-					local msg = messages_pb.activity_popularity_vote_get_vote_list_req()
-					msg.activity_id = xyd.ActivityID.ACTIVITY_POPULARITY_VOTE
-					msg.period = childPeriod
-
-					xyd.Backend.get():request(xyd.mid.ACTIVITY_POPULARITY_VOTE_GET_VOTE_LIST, msg)
+					self.activityData:reqVoteRankList(childPeriod)
 				end
 
 				xyd.WindowManager.get():closeWindow("activity_popularity_vote_schedule_window")

@@ -772,6 +772,9 @@ function ArenaAllServerBattleFormationWindow:iniPartnerData(groupID)
 					partnerInfo.noClick = true
 					partnerInfo.posId = i
 					local isS = true
+
+					partner:updateAttrs()
+
 					self.power = self.power + partner:getPower()
 					local cParams = self:isPartnerSelected(partnerInfo.partnerID)
 					local isChoose = cParams.isSelected

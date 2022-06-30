@@ -32,6 +32,7 @@ function SettingServiceItem:getUIComponent()
 	self.imgNew_ = go:ComponentByName("imgNew_", typeof(UISprite))
 	self.playerIcon_ = go:NodeByName("playerIcon_").gameObject
 	self.bg1 = go:NodeByName("bg1").gameObject
+	self.bg1UISprite = go:ComponentByName("bg1", typeof(UISprite))
 	self.bg2 = go:NodeByName("bg2").gameObject
 	self.pIcon = PlayerIcon.new(self.playerIcon_)
 end
@@ -45,6 +46,15 @@ function SettingServiceItem:layout()
 
 	self.labelRegion_.text = showServer
 	local info = xyd.models.settingUp:checkHasRole(self.data_.server_id)
+	self.is_banned_game = false
+
+	xyd.setUISpriteAsync(self.bg1UISprite, nil, "9gongge17")
+
+	if info ~= nil and info.is_banned_game then
+		self.is_banned_game = true
+
+		xyd.setUISpriteAsync(self.bg1UISprite, nil, "9gongge25")
+	end
 
 	if info ~= nil then
 		self.playerIcon_:SetActive(true)
@@ -87,6 +97,16 @@ function SettingServiceItem:register()
 	UIEventListener.Get(self.go).onClick = function ()
 		if self.parent.isClickToChange then
 			if self.data_.server_id == self.parent.default_server_id then
+				return
+			end
+
+			if self.is_banned_game then
+				xyd.alert(xyd.AlertType.YES_NO, __("LOGIN_TIPS_ERROR_3"), function (yes_no)
+					if yes_no then
+						self:changeServer(self.data_.server_id)
+					end
+				end)
+
 				return
 			end
 

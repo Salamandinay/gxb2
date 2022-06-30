@@ -421,6 +421,12 @@ function SlotWindow:initTopGroup()
 	}
 
 	self.windowTop:setItem(items)
+
+	if self.name_ == "slot_window" then
+		self.windowTop:showQuickFormationBtn()
+
+		self.quickFormationBtn = self.windowTop.quickFormationBtn
+	end
 end
 
 function SlotWindow:addSortedPartners(sortedPartners, keyValue)

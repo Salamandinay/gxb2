@@ -293,6 +293,8 @@ function ActivityShelterMissionSelectWindow:onClickHeroIcon(heroIcon)
 				xyd.alert(xyd.AlertType.TIPS, __("DATE_LOCK_FAIL"))
 			elseif xyd.checkHouseLock(partner) then
 				xyd.alert(xyd.AlertType.TIPS, __("HOUSE_LOCK_FAIL"))
+			elseif xyd.checkQuickFormation(partner) then
+				xyd.showToast(__("QUICK_FORMATION_TEXT21"))
 			else
 				local str = nil
 				str = __("IF_UNLOCK_HERO_3")

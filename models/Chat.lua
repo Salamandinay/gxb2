@@ -1434,6 +1434,7 @@ function Chat:createAutoGMReplyDetail(GMMsgType)
 		is_talk_over = 1,
 		talker_name = "GM",
 		id = 1,
+		msg_format = "gm_recall",
 		talker_id = xyd.GM_TALK_ID,
 		player_id = xyd.Global.playerID,
 		content = __("GM_RECALL_" .. tostring(GMMsgType)),

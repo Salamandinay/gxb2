@@ -190,15 +190,19 @@ function GuildWar:getIsSigned()
 	end
 end
 
-function GuildWar:setDefFormation(partners, petID)
+function GuildWar:setDefFormation(partners, petID, team_index)
 	local msg = messages_pb.guild_war_set_partners_req()
 
-	for _, partner in ipairs(partners) do
-		local item = messages_pb.fight_partner()
-		item.partner_id = partner.partner_id
-		item.pos = partner.pos
+	if team_index then
+		msg.formation_id = team_index
+	else
+		for _, partner in ipairs(partners) do
+			local item = messages_pb.fight_partner()
+			item.partner_id = partner.partner_id
+			item.pos = partner.pos
 
-		table.insert(msg.partners, item)
+			table.insert(msg.partners, item)
+		end
 	end
 
 	msg.pet_id = petID

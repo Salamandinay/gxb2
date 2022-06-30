@@ -110,3 +110,7 @@ id,buff_id,plus_minus,name,sec
 113,lockTarget,,Viser,Effet de Compétence : l'Attaque Basique et la Compétence Active de Vanessa viseront la cible marquée.
 114,yifuMark,,Flair,Effet de Compétence : utilisé pour renforcer la Compétence Active d'Éva.
 115,hpShieldEndToHeal,,Protection Canine,"Effet de Compétence : lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce dernier soignera la cible marquée (Protection Canine disparaîtra après qu'il ait été déclenché)."
+116,qiubiteMark,,Magie d'Amour,"Effet de Compétence : lorsque Cupidon consomme toutes ses couches de Magie d'Amour, toutes vos Filles obtiendront une Barrière."
+117,qiubitePower,,Bénédiction de l'Amour,"Effet de Compétence : si les PV d'une cible marquée dépassent ses PV Max après avoir reçu les Soins des compétences de Cupidon, le surplus des Soins seront converti en Barrière de la même valeur. Lorsque la cible marquée est sous la protection d'une Barrière, ses dégâts infligés, sa Résistance Totale et son Attaque seront augmentés."
+118,plmxsThorns,,Pentacle Protecteur,Effet de Compétence : réduit les dégâts subis de la cible marquée et renvoie des dégâts subis de la cible marquée à l'attaquant (n'inclut pas les dégâts fixes).
+119,plmxsDebuff,,Flamme des Enfers,"Effet de Compétence : réduit les Soins Reçus, la récupération d'Énergie et le Blocage de la cible marquée."

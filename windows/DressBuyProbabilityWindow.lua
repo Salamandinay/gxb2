@@ -330,7 +330,7 @@ function InfoItem:setInfo(info)
 		local itemRoot = item:NodeByName("itemRoot").gameObject
 		local label = item:ComponentByName("probLabel", typeof(UILabel))
 		local prob = data.weight * 100 / self.parent.allWeight
-		label.text = prob - prob % 0.01 .. "%"
+		label.text = string.format("%0.4f", prob) .. "%"
 
 		xyd.getItemIcon({
 			uiRoot = itemRoot,

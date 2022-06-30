@@ -50,9 +50,13 @@ function ActivityPopularityVoteWindow:ctor(name, params)
 	ActivityPopularityVoteWindow.super.ctor(self, name, params)
 
 	self.showMission = true
+	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE)
+
+	self.activityData:checkPeriodData()
 end
 
 function ActivityPopularityVoteWindow:initWindow()
+	xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE)
 	self:getUIComponent()
 	self:layout()
 	self:registerEvent()
@@ -69,6 +73,8 @@ function ActivityPopularityVoteWindow:getUIComponent()
 	self.taskRedPoint = self.taskBtn:NodeByName("red_point").gameObject
 	self.scheduleBtn = groupMain:NodeByName("scheduleBtn").gameObject
 	self.scheduleLabel = self.scheduleBtn:ComponentByName("scheduleLabel", typeof(UILabel))
+	self.supportBtn = groupMain:NodeByName("supportBtn").gameObject
+	self.supportLabel = self.supportBtn:ComponentByName("supportLabel", typeof(UILabel))
 	self.periodLabel = groupMain:ComponentByName("periodLabel", typeof(UILabel))
 	self.timeGroup = groupMain:ComponentByName("timeGroup", typeof(UILayout))
 	self.labelTime = self.timeGroup:ComponentByName("labelTime", typeof(UILabel))
@@ -110,6 +116,7 @@ function ActivityPopularityVoteWindow:testShow(partner_id)
 	self.championGroup:SetActive(true)
 	self.championGirl:SetActive(true)
 	self.rankBtn:SetActive(true)
+	self.supportBtn:SetActive(false)
 	self.scheduleBtn:Y(-56)
 	self.championGroup:Y(-1068 + self.scale_num_ * 110)
 
@@ -135,6 +142,7 @@ function ActivityPopularityVoteWindow:layout()
 
 	self.taskLabel.text = __("MISSION")
 	self.scheduleLabel.text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT5")
+	self.supportLabel.text = __("ACTIVITY_POPULARITY_VOTE_TEXT04")
 
 	if xyd.Global.lang == "ja_jp" then
 		self.taskLabel.fontSize = 20
@@ -144,6 +152,16 @@ function ActivityPopularityVoteWindow:layout()
 		self.scheduleLabel.fontSize = 20
 
 		self.scheduleLabel:X(20)
+	elseif xyd.Global.lang == "fr_fr" then
+		self.scheduleLabel:X(10)
+
+		self.supportLabel.width = 120
+
+		self.supportBtn:X(290)
+	elseif xyd.Global.lang == "de_de" then
+		self.supportLabel.width = 120
+
+		self.supportBtn:X(290)
 	end
 
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.ACTIVITY_POPULARITY_VOTE_AWARD, self.taskRedPoint)
@@ -212,33 +230,51 @@ function ActivityPopularityVoteWindow:checkPeriod()
 		end,
 		duration = duration
 	})
+
+	if xyd.Global.lang == "fr_fr" then
+		self.labelEnd.transform:SetSiblingIndex(0)
+	end
+
 	self.timeGroup:Reposition()
 
 	if self.curPeriod <= 4 then
 		self.championGroup:SetActive(false)
 		self.championGirl:SetActive(false)
 		self.rankBtn:SetActive(false)
+		self.supportBtn:SetActive(true)
 
 		self.refreshContent = self.refreshContent1
 
 		self:qualifiers()
-		self:refreshContent()
+
+		if self.activityData.history[self.curPeriod] then
+			self:refreshContent()
+		end
 	elseif self.curPeriod <= 9 then
 		self.championGroup:SetActive(false)
 		self.championGirl:SetActive(false)
 		self.rankBtn:SetActive(false)
+		self.supportBtn:SetActive(true)
 
 		self.refreshContent = self.refreshContent2
 
 		self:championships()
-		self:refreshContent()
+		dump(self.activityData.history[self.curPeriod])
+
+		if self.activityData.history[self.curPeriod] then
+			self:refreshContent()
+		end
 	else
 		self.showMission = false
 
 		self.championGroup:SetActive(true)
 		self.championGirl:SetActive(true)
 		self.rankBtn:SetActive(true)
-		self:showPeriod()
+		self.supportBtn:SetActive(false)
+
+		if self.activityData.history[9] then
+			self:showPeriod()
+		end
 	end
 end
 
@@ -267,8 +303,10 @@ function ActivityPopularityVoteWindow:championships()
 end
 
 function ActivityPopularityVoteWindow:showPeriod()
-	local partner_id = self.activityData.detail_.partner_id
+	local nowdata = self.activityData.history[9]
+	local partner_id = nowdata[1][1].table_id
 
+	self.activityData:reqRankListByParner(partner_id)
 	self.parterCard:SetActive(false)
 	self.champItem:SetActive(false)
 	self.taskBtn:SetActive(false)
@@ -277,7 +315,7 @@ function ActivityPopularityVoteWindow:showPeriod()
 
 	self.championGroup:ComponentByName("rankLabel", typeof(UILabel)).text = "1"
 	self.championGroup:ComponentByName("partnerName", typeof(UILabel)).text = xyd.tables.partnerTable:getName(partner_id)
-	self.championGroup:ComponentByName("voteNumLabel", typeof(UILabel)).text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT1") .. " :\n" .. self.activityData.detail_.score
+	self.championGroup:ComponentByName("voteNumLabel", typeof(UILabel)).text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT1") .. " :\n" .. nowdata[1][1].score
 	local res = xyd.tables.partnerPictureTable:getPartnerPic(partner_id)
 
 	xyd.setUITextureByNameAsync(self.championGirl, res)
@@ -312,11 +350,14 @@ end
 function ActivityPopularityVoteWindow:refreshContent1()
 	local partnerList = {}
 
-	for _, item in ipairs(self.activityData.detail_.rank_list[1]) do
+	for _, item in ipairs(self.activityData.history[self.curPeriod][1]) do
 		table.insert(partnerList, item)
 	end
 
 	if partnerList[1].score == 0 then
+		table.sort(partnerList, function (a, b)
+			return b.table_id < a.table_id
+		end)
 		self:shuffle(partnerList)
 	else
 		partnerList[1].rank = 1
@@ -340,6 +381,11 @@ function ActivityPopularityVoteWindow:refreshContent1()
 				break
 			end
 		end
+
+		table.sort(partnerList, function (a, b)
+			return b.table_id < a.table_id
+		end)
+		self:shuffle(partnerList)
 	end
 
 	self.wrapContent:setInfos(partnerList, {})
@@ -350,7 +396,9 @@ function ActivityPopularityVoteWindow:refreshContent2(keepPosition)
 	local tmpList = {}
 	local startPos = xyd.Global.playerID % 4 + 1
 
-	for _, list in ipairs(self.activityData.detail_.rank_list) do
+	dump(self.activityData.history[self.curPeriod])
+
+	for _, list in ipairs(self.activityData.history[self.curPeriod]) do
 		table.insert(tmpList, list)
 	end
 
@@ -370,21 +418,6 @@ function ActivityPopularityVoteWindow:refreshContent2(keepPosition)
 end
 
 function ActivityPopularityVoteWindow:onVote(event)
-	self.activityData.detail_.rank_list = cjson.decode(event.data.rank_list)
-	local lastVote = self.activityData.lastVote or {
-		0,
-		0
-	}
-	self.activityData.detail_.vote_num = self.activityData.detail_.vote_num + lastVote[2]
-
-	if lastVote[1] == xyd.ItemID.POPULARITY_TICKET then
-		local lastNum = self.activityData.detail_.mission_count[4]
-		self.activityData.detail_.mission_count[4] = math.min(self.activityData.detail_.mission_count[4] + lastVote[2], 10)
-
-		if lastNum < 10 and lastNum + lastVote[2] >= 10 then
-			xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_POPULARITY_VOTE_AWARD, true)
-		end
-	end
 end
 
 function ActivityPopularityVoteWindow:onAward(event)
@@ -392,7 +425,13 @@ function ActivityPopularityVoteWindow:onAward(event)
 		return
 	end
 
-	local mission_id = cjson.decode(event.data.detail).mission_id
+	local detail = cjson.decode(event.data.detail)
+
+	if detail.type ~= 1 then
+		return
+	end
+
+	local mission_id = detail.mission_id
 	self.activityData.detail_.mission_awarded[mission_id] = 1
 
 	self.activityData:getRedMarkState()
@@ -421,7 +460,22 @@ end
 function ActivityPopularityVoteWindow:onActivityInfo()
 	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE)
 
+	if self.needOpenTaskWindow then
+		self.needOpenTaskWindow = false
+
+		xyd.WindowManager.get():openWindow("activity_task_get_award_window", {
+			hasNav = false,
+			titleText = __("MISSION"),
+			tipsText = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT9"),
+			taskList = self:getDailyTaskList(),
+			activity_id = xyd.ActivityID.ACTIVITY_POPULARITY_VOTE
+		})
+
+		return
+	end
+
 	self:checkPeriod()
+	self.activityData:reqVoteRankList(math.min(9, self.curPeriod))
 	self:initTop(true)
 end
 
@@ -430,6 +484,19 @@ function ActivityPopularityVoteWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.onAward))
 	self.eventProxy_:addEventListener(xyd.event.ACTIVITY_POPULARITY_VOTE_VOTE_MISSION_INFO, handler(self, self.onMissionInfo))
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.onActivityInfo))
+	self.eventProxy_:addEventListener(xyd.event.ACTIVITY_POPULARITY_VOTE_GET_VOTE_LIST, handler(self, function ()
+		if not self.curPeriod then
+			return
+		end
+
+		if self.curPeriod <= 9 then
+			if self.refreshContent and self.activityData.history[self.curPeriod] then
+				self:refreshContent()
+			end
+		elseif self.activityData.history[9] then
+			self:showPeriod()
+		end
+	end))
 
 	UIEventListener.Get(self.helpBtn).onClick = function ()
 		xyd.WindowManager.get():openWindow("help_window", {
@@ -455,6 +522,10 @@ function ActivityPopularityVoteWindow:registerEvent()
 
 	UIEventListener.Get(self.scheduleBtn).onClick = function ()
 		xyd.WindowManager.get():openWindow("activity_popularity_vote_schedule_window")
+	end
+
+	UIEventListener.Get(self.supportBtn).onClick = function ()
+		xyd.WindowManager.get():openWindow("activity_popularity_vote_support_window")
 	end
 end
 
@@ -491,13 +562,12 @@ function ActivityPopularityVoteWindow:getDailyTaskList()
 			activity_id = xyd.ActivityID.ACTIVITY_POPULARITY_VOTE,
 			goWayList = t:getGoWay(i),
 			closeCallback = function ()
-				xyd.WindowManager.get():openWindow("activity_task_get_award_window", {
-					hasNav = false,
-					titleText = __("MISSION"),
-					tipsText = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT9"),
-					taskList = self:getDailyTaskList(),
-					activity_id = xyd.ActivityID.ACTIVITY_POPULARITY_VOTE
-				})
+				local msg = messages_pb:get_activity_info_by_id_req()
+				msg.activity_id = xyd.ActivityID.ACTIVITY_POPULARITY_VOTE
+
+				xyd.Backend.get():request(xyd.mid.GET_ACTIVITY_INFO_BY_ID, msg)
+
+				self.needOpenTaskWindow = true
 			end
 		})
 	end
@@ -580,6 +650,8 @@ function PartnerCardItem:initUI()
 end
 
 function PartnerCardItem:updateInfo()
+	dump(self.data.table_id)
+	dump(xyd.tables.partnerPictureTable:getPartnerCard(self.data.table_id))
 	xyd.setUISpriteAsync(self.partnerImg, nil, xyd.tables.partnerPictureTable:getPartnerCard(self.data.table_id))
 	self.winImg:SetActive(false)
 
@@ -621,7 +693,7 @@ function PartnerCardItem:registerEvent()
 
 				local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_POPULARITY_VOTE)
 
-				activityData:setVote(itemID, num)
+				activityData:setVote(itemID, num, self.data.table_id)
 			end,
 			eventID = xyd.event.ACTIVITY_POPULARITY_VOTE_SUPPORT,
 			closeCallBack = function ()
@@ -633,6 +705,15 @@ function PartnerCardItem:registerEvent()
 					width = 470
 				}
 			}
+		})
+	end
+
+	UIEventListener.Get(self.go).onClick = function ()
+		dump(self.data)
+		dump(self.data.table_id)
+		xyd.openWindow("activity_popularity_vote_support_message_window", {
+			tableID = self.data.table_id,
+			curPeriod = self.parent.curPeriod
 		})
 	end
 

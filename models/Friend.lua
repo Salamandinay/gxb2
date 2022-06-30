@@ -548,7 +548,7 @@ function Friend:fightBoss(id, partners, petID)
 	xyd.Backend.get():request(xyd.mid.FRIEND_FIGHT_BOSS, msg)
 end
 
-function Friend:fightFriend(id, partners, petID)
+function Friend:fightFriend(id, partners, petID, team_index)
 	partners = partners or self.friendFight_[id]
 
 	if not partners then
@@ -560,16 +560,20 @@ function Friend:fightFriend(id, partners, petID)
 	self.friendPet_[id] = petID
 	local msg = messages_pb.friend_fight_friend_req()
 
-	for _, partner in ipairs(partners) do
-		local fightPartner = messages_pb.fight_partner()
-		fightPartner.partner_id = partner.partner_id
-		fightPartner.pos = partner.pos
+	if team_index then
+		msg.formation_id = team_index
+	else
+		for _, partner in ipairs(partners) do
+			local fightPartner = messages_pb.fight_partner()
+			fightPartner.partner_id = partner.partner_id
+			fightPartner.pos = partner.pos
 
-		table.insert(msg.partners, fightPartner)
+			table.insert(msg.partners, fightPartner)
+		end
 	end
 
-	msg.friend_id = id
 	msg.pet_id = petID
+	msg.friend_id = id
 
 	if UNITY_EDITOR and xyd.db.misc:getValue("test_index", -1) == "1" then
 		msg.has_random = 1

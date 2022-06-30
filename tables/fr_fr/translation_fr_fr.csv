@@ -170,8 +170,8 @@ RIGHT_BLUE_BUTTON_8,Transférer
 RIGHT_BLUE_BUTTON_9,Recruter
 RIGHT_BLUE_BUTTON_10,Randonnée
 Niv,Niv :
-PERSON_NAME_SHORT,Pseudo trop court !
-PERSON_NAME_LONG,Pseudo trop long !
+PERSON_NAME_SHORT,Trop court !
+PERSON_NAME_LONG,Trop long !
 PERSON_NAME_SUCCEED,Nom changé !
 PERSON_NAME_FAIL,Nom déjà existant !
 GET_ITEMS,Objet Acquis
@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Distributeur Avancé Parole 4
 GAMBLE_UP_WOMAN_TALK_5,Distributeur Avancé Parole 5
 OPEN_SLOT_TIPS,Voulez-vous utiliser {1} Gemmes pour augmenter la Capacité Max de Fille de {2} ?
 NOT_ENOUGH,{1} insuffisant(e)
-LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans l'équipe de l'Arène Ultime|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans le Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire
+LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans l'équipe de l'Arène Ultime|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans le Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire|Cette Fille est dans l'équipe configurée.
 ALTAR_DECOMPOSE_TIP,Êtes-vous sûr de vouloir transférer une Fille supérieure à 3 étoiles ?
 ALTAR_HERO_NUM_TEXT,Restant：
 ALTAR_SMART_TEXT,Auto
@@ -1529,7 +1529,7 @@ Choisissez tout d\'abord quel est le type de problème que vous avez afin que no
 [url=""event:GM_RECALL_5""][c][f95e6a]5. Rapport de Bug et Suggestions[-][/c][/url]
 
 [url=""event:GM_RECALL_6""][c][f95e6a]6. Autres[-][/c][/url]"
-GM_RECALL_1,"Veuillez décrire le problème de compte que vous avez rencontré ; par exemple, l'échec de liaison, l'échec de changement de compte, le compte oublié, volé etc. Notre service client confirmera votre problème selon la description."
+GM_RECALL_1,"Veuillez préciser le problème que vous rencontrez sur votre compte : échec de liaison de compte, compte/mot de passe oublié, compte piraté ou autre, afin que nous puissions vous venir en aide.\n\n1. Suppression de compte[url=""delete_account_window""][c][f95e6a][-][/c][/url]"
 GM_RECALL_2,"Veuillez décrire en détail le problème de recharge que vous rencontré dans le jeu ; par exemple vous ne pouvez pas compléter l'achat, vous avez acheté un pack mais n'avez pas reçu d'objets etc. Notre Service Client confirmera votre problème selon la description."
 GM_RECALL_3,Veuillez décrire en détail le problème que vous avez rencontré dans le jeu. Si vous ne comprenez pas ou avez des questions sur certaines règles du jeu etc. Notre service client confirmera votre problème selon la description.
 GM_RECALL_4,"Veuillez décrire en détail le problème que vous avez rencontré dans le jeu ; par exemple problème de non-réception des récompenses, objets, ressources ou problème d'affichage etc. Envoyez nous également la période de temps à laquelle vous avez eu ce problème. Notre service client confirmera votre problème selon la description."
@@ -2382,7 +2382,7 @@ GUILD_LANGUAGE_UNSET,Langue principale non-choisie
 GUILD_CHANGE_LANGUAGE_WINDOW,Langue principale de la Guilde
 GUILD_LANGUAGE_CHANGED_TIP,La langue principale de la Guilde a été changée
 GUILD_ID,ID:[size=20]{1}[-]
-NEW_PARTNER_WARMUP_NO_PARTNER_TIPS,Cette Fille n'est pas encore disponible
+NEW_PARTNER_WARMUP_NO_PARTNER_TIPS,Ces Filles ne sont pas encore disponibles
 GAIN_PARTNER_CV,Voix : {1}
 REPAIR_RESOURCES_BY_FORCE,"Les données du jeu sont endommagés, le client va vider le cache et redémarrer après 3 secondes."
 SCHOOL_GIFTBAG_EXCHANGE_TEXT05,La 4ème récompense du Cadeau de Noël sera débloqué après l'achat de celui-ci.
@@ -3316,7 +3316,7 @@ ACTIVITY_RETURN_MISSION_REPEAT_FINISH,Terminé：{1}/{2}
 ACTIVITY_RETURN_MISSION_NO_BIND,Non lié
 ACTIVITY_RETURN_IS_BINDING,Liaison en cours…
 ACTIVITY_RETURN_WAITING_FOR_FINISH,À finir
-IF_UNLOCK_HERO_3,"Êtes-vous sûr de déverrouiller cette Fille ? Si elle est dans l'équipe de Défense de l'Arène ou se repose dans le Dortoir, elle sera retirée immédiatement après le déverrouillage."
+IF_UNLOCK_HERO_3,"Êtes-vous sûr de déverrouiller cette Fille ? Si elle est dans l'équipe de Défense de l'Arène, dans l'équipe configurée ou se repose dans le Dortoir, elle sera retirée immédiatement après le déverrouillage."
 ACTIVITY_PLAYER_RETURN_EXPLAIN,Récompense de Quiz & Butin d'Auto-bataille
 ACTIVITY_RETURN_SHOP_LIMIT,Limite
 ACTIVITY_RETURN_APPLY_LIST_TIPS_3,Aucune demande reçue
@@ -4562,7 +4562,7 @@ ACTIVITY_3BIRTHDAY_TEXT05,Obtenez aléatoirement une de ces récompenses chaque 
 ACTIVITY_3BIRTHDAY_TEXT06,Offrir {1} fois Liqueur Royale
 ACTIVITY_3BIRTHDAY_HELP,"1. Durant cet événement, vous recevrez des récompenses en offrant des Liqueurs Royales.|2. Chaque fois que vous offrez 10 Liqueurs Royales, vous obtiendrez obligatoirement 6 Broches Roses. Vous avez également la possibilité de faire Critique et ainsi obtenir la récompense x1,5. |3. Chaque Fille à qui vous pouvez offrir des Liqueurs Royales possède une compétence cachée ! Kratos vous double vos possibilités de faire Critique et Térèsa double les Broches Roses obtenues (12 Broches Roses).|4. Après avoir offert un certain nombre de Liqueur Royale, vous obtiendrez des récompenses supplémentaires.|5. Les Broches Roses peuvent être utilisées dans l'événement : Chambre Forte.|6. Après la fin de l'événement, les Liqueurs Royales et les Broches Roses inutilisées seront respectivement converties en 50k et 100k pièces d'or."
 ACTIVITY_3BIRTHDAY_GAMBLE_HELP,"1. Durant cet événement, vous pouvez utiliser les Broches Roses pour obtenir des récompenses dans la Chambre Forte.|2. La Chambre Forte de Luxe requiert une plus grande quantité de Broche Rose à échanger que dans la Chambre Forte Normale, mais vous permet d'obtenir de meilleures récompenses. Appuyez sur le loupe pour en savoir plus sur les récompenses."
-ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. Durant cet événement, votez pour la Fille que vous soutenez en utilisant les Bulletins de vote, obtenables en terminant les Tâches Électorales .|2. Deux types de Bulletins sont disponibles. Le Bulletin Temporaire ne peut être utilisé uniquement le jour-même de son obtention. Le Bulletin Populaire en revanche, est cumulable et peut être utilisé jusqu'à la fin de l'événement.|3. Cet événement débutera par une Pré-sélection, puis suivra avec le Premier Tour, Second Tour, Troisième Tour et enfin viendra le Tour Final. À la fin de la période de l'Élection, le nom de la Miss Yume sera indiqué tout au long de la Période d'affichage. Aucun Bulletin de vote ne sera accepté durant la Période d'affichage.|4. Retrouvez plus de détails concernant les dates exactes dans Calendrier.|5. Après avoir utilisé un certain nombre de Bulletin, vous obtiendrez des récompenses de palier.|6. L'heureuse élue aura l'honneur de se faire confectionner un Skin exclusif.|7. À la fin de l'événement, vos Bulletins de vote non-utilisés disparaîtront."
+ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. Durant cet événement, votez pour la Fille que vous soutenez en utilisant les Bulletins de vote, obtenables en terminant les Tâches Électorales.|2. Deux types de Bulletins sont disponibles. Le Bulletin Temporaire ne peut être utilisé uniquement le jour-même de son obtention. Le Bulletin Populaire en revanche, est cumulable et peut être utilisé jusqu'à la fin de l'événement.|3. Cet événement débutera par une Pré-sélection, puis suivra avec le Premier Tour, Second Tour, Troisième Tour et enfin viendra le Tour Final. À la fin de la période de l'Élection, le nom de la Miss Yume sera indiqué tout au long de la Période d'affichage. Aucun Bulletin de vote ne sera accepté durant la Période d'affichage.|4. Retrouvez plus de détails concernant les dates exactes dans Calendrier.|5. Après avoir utilisé un certain nombre de Bulletin, vous obtiendrez des récompenses de palier.|6. Durant cet événement, pour chaque 250 VIP EXP obtenu, vous obtiendrez 20 Bulletins Populaires via Courrier (vous ne pouvez qu'obtenir 380 Bulletins Populaires au maximum par VIP EXP). Le courrier de Bulletin Populaire ne vous sera envoyé qu'une seule fois par jour, le reste des Bulletins Populaires vous seront envoyé au jour suivant.|7. L'heureuse élue aura l'honneur de se faire confectionner un Skin exclusif.|8. À la fin de l'événement, vos Bulletins de vote non-utilisés disparaîtront."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT02,La liste du TOP100 des joueurs qui ont le plus voté pour la gagnante de l'Élection de Miss Yume 2021 est affichée dans le Classement des votes.
 ACTIVITY_POPULARITY_VOTE_HELPTEXT03,"1. Le nom des Filles précédemment sélectionnées et leur résultat de vote seront affichés sur cette interface.|2. Il vous est impossible de voter ou de récupérer des récompenses sur cette interface. Veuillez appuyer sur l'icône de ""Retour"" pour revenir sur l'interface principale de l'événement."
 ACTIVITY_POPULARITY_VOTE_TIMETEXT01,Pré-sélection (Groupe A)
@@ -4655,7 +4655,7 @@ ACTIVITY_POPULARITY_VOTE_WARNTEXT1,Êtes-vous sûr d'utiliser le/les Bulletin(s)
 ACTIVITY_3BIRTHDAY_TEXT12,{1} fois
 ANNUAL3_REVIEW_4_6_1,Mais n'oubliez pas que...\nIl y a encore [c][size=30][fa9563]{1}[-][/c] Fille(s) qui\nattend(ent) une bague de Serment de votre part...
 ANNUAL3_REVIEW_4_7_1,"Selon une étude que nous avons menée,\nIl y a encore [c][size=30][fa9563]{1}[-][/c] Fille(s) qui \nattend(ent) une bague de Serment de votre part."
-ACTIVITY_POPULARITY_VOTE_TITLETEXT15,Voté !
+ACTIVITY_POPULARITY_VOTE_TITLETEXT15,A voté !
 ACTIVITY_POPULARITY_VOTE_TITLETEXT16,Voté
 ACTIVITY_POPULARITY_VOTE_TITLETEXT17,Nul
 ACTIVITY_POPULARITY_VOTE_TITLETEXT18,Pré-sélection (Groupe A)
@@ -4854,7 +4854,7 @@ ACTIVITY_POPULARITY_VOTE_SURVEYTEXT13,Vote du Skin de Miss Yume
 DRESS_SUMMON_LABEL_2,Défilez pour voir les Tenues obtenables
 DRESS_SUMMON_LABEL_4,Tenue Orange garantie après avoir tiré [c][e96516]{1}[-][/c] fois
 DRESS_SUMMON_LABEL_1,Chance Gratuite : {1} fois
-DRESS_SUMMON_LABEL_3,Taux d'Obtention de\nla Tenue - Visiteur de la Nuit
+DRESS_SUMMON_LABEL_3,Taux d'obtention de\nla Tenue - Cupcake Chantilly
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT10,Vote du Skin de Miss Yume
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT11,"Nous vous remercions pour votre contribution au sondage, Senpai !"
 ONE_KEY_UPLEVEL_TITLE,Améliorer
@@ -4976,7 +4976,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Éva · Dobermans Mystérieux
+WARMUP_ARENA_TASK_INFO_2,Une Rencontre Effrayante
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5019,7 +5019,7 @@ ACTIVITY_DRESS_GACHA_AWARD_JUMP,Aller à
 QUICK_STARS_TEXT05,En cours de graduation...
 EQUIP_LEVELUP_TEXT_19,Veuillez choisir l'Ensemble d'équipement que vous souhaitez convertir
 EQUIP_LEVELUP_TEXT_20,Veuillez choisir l'ensemble d'équipement que vous souhaitez obtenir
-DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Visiteur de la Nuit est actuellement augmenté !
+DRESS_SUMMON_LIMIT_ACT_DESC,Utilisez des Boutons Bois ou des Boutons Chics pour tirer des Tenues.\nLe taux d'obtention de l'ensemble Cupcake Chantilly est actuellement augmenté !
 HOUSE_TEXT_60,Voulez-vous déplacer cette Fille à cet étage ?
 HOUSE_TEXT_61,Vous avez atteint nombre limite de Fille pour cet étage
 HOUSE_TEXT_62,Me placer à cet étage
@@ -5934,7 +5934,7 @@ ACTIVITY_LAFULI_CASTLE_TEXT05,Récompense de Fille
 ACTIVITY_LAFULI_CASTLE_TEXT06,Tâches
 ACTIVITY_LAFULI_CASTLE_TEXT07,Pour chaque
 ACTIVITY_LAFULI_CASTLE_TEXT08,"obtenu, vous obtiendrez 1 Sable Céleste|({1} Sables Célestes au maximum)"
-ACTIVITY_LAFULI_CASTLE_TEXT09,Obtenable au maximum
+ACTIVITY_LAFULI_CASTLE_TEXT09,Limite :
 ACTIVITY_LAFULI_CASTLE_TEXT10,Les récompenses seront envoyées directement à votre Sac
 ACTIVITY_LAFULI_CASTLE_TEXT11,Limite
 TIME_CLOISTER_TEXT97,Détails de Carte de Cristal
@@ -6592,19 +6592,149 @@ SHENXUE_TEXT05,Éveiller
 SHENXUE_TEXT06,En cours d'éveil...
 ACTIVITY_LOST_SPACE_TEXT10,"1. Après avoir acheté le Pack de l’Espace, vous obtiendrez une récompense supplémentaire en passant chaque étape.|2. Si vous avez passé des étapes avant d'avoir acheté ce pack, les récompenses manquantes vous seront envoyées par courrier."
 PARTNER_RECOMMEND_TIPS,Fille Recommandée
-ACTIVITY_LAFULI_CASTLE_TEXT15,Utilisez {1} Sables Fins au total pour colorer cette surface~
-ACTIVITY_LAFULI_CASTLE_TEXT16,Utilisez {1} Sables Célestes au total pour colorer cette surface~
+ACTIVITY_LAFULI_CASTLE_TEXT15,Utilisez encore {1} Sables Fins au total pour colorer cette surface~
+ACTIVITY_LAFULI_CASTLE_TEXT16,Utilisez encore {1} Sables Célestes au total pour colorer cette surface~
 COLLECTION_SKIN_TEXT29,Fille
-QUICK_FORMATION_TEXT05,Formation
+QUICK_FORMATION_TEXT05,Équipe
 DELETE_ACCOUNT_TEXT01,Politique de Confidentialité
-DELETE_ACCOUNT_TEXT02,Supprimer le compte
+DELETE_ACCOUNT_TEXT02,Suppression de compte
 DELETE_ACCOUNT_TEXT03,Attention
 DELETE_ACCOUNT_TEXT04,"Cher Senpai, après avoir supprimé ce compte vous ne pourrez plus le récupérer. Voules-vous continuer ?"
 DELETE_ACCOUNT_TEXT05,Continuer
 DELETE_ACCOUNT_TEXT06,Annuler
-DELETE_ACCOUNT_TEXT07,"Nous avons bel et bien reçu votre demande de suppression de compte, et la traiterons dans les 30 jours qui suivent, vous serez informé d'ici là."
-DELETE_ACCOUNT_TEXT08,隱私協議的具體文本（此條暫不翻譯）
+DELETE_ACCOUNT_TEXT07,"Nous avons bel et bien reçu votre demande de suppression de compte, et la traiterons dans les 30 jours qui suivent, vous serez informé(e) d'ici là."
+DELETE_ACCOUNT_TEXT08,"
+Yottagames Technology Co., Ltd. («Yottagames») considère qu\'il est de notre responsabilité de donner des exemples et d\'aider à établir les normes de confidentialité sur Internet. Lors de l\'enregistrement, chaque service demande à l\'utilisateur de fournir différents types et quantités d\'informations personnelles. Yottagames a l\'intention d\'utiliser ces informations de bonne foi pour fournir de meilleurs services.
+Yottagames est dédié à la protection des droits de la vie privée de ses utilisateurs en ligne (""utilisateurs"" ou ""utilisateur""). Cette politique de confidentialité en ligne («Politique de confidentialité») a été conçue pour informer les utilisateurs sur la manière dont Yottagames recueille, stocke, utilise et gère les informations fournies par les utilisateurs lors de l\'utilisation de tout jeu ou application Yottagames. Veuillez noter que la portée de cette politique de confidentialité s\'applique uniquement aux informations collectées auprès de Yottagames via l\'utilisation du service.
+En utilisant le Service, les utilisateurs acceptent la collecte et l\'utilisation de leurs informations personnelles comme indiqué dans la présente Politique de confidentialité. Yottagames peut modifier la Politique de confidentialité de temps en temps; en tant que tel, Yottagames encourage les utilisateurs à consulter régulièrement la Politique de confidentialité pour les changements.
+Yottagames et ses filiales savent que vous vous souciez de la façon dont les informations vous concernant sont utilisées et partagées, et nous apprécions votre confiance et que nous le ferons avec soin et prudence. Nous respectons le droit à la vie privée des consommateurs et reconnaissons l\'importance de protéger les informations recueillies à votre sujet. Dans le contenu, nous pouvons nous référer à Yottagames comme ""nous"" ou ""on"".
+1. Informations personnelles et son utilisation
+Yottagames recueille deux types d\'informations sur les utilisateurs: (1) des informations non personnellement identifiables (2) des informations personnellement identifiables. Yottagames recueille ces informations personnelles principalement pour rendre l\'utilisation du site Web de Yottagames plus facile et plus satisfaisante pour ses utilisateurs. Le but de Yottagames est de fournir à tous les internautes une expérience en ligne passionnante et divertissante.
+1.1 Informations que nous collectons
+Lorsque vous utilisez un jeu Yottagames sur un SNS tel que Facebook, où nos jeux peuvent également être appelés «applications», vous autorisez Yottagames à accéder à certaines informations de votre profil pour ce site. Les informations auxquelles vous autorisez Yottagames varient selon le jeu et le SNS, et elles sont affectées par les paramètres de confidentialité que vous et vos amis établissez sur le SNS. Vous pouvez contrôler et en savoir plus sur ces paramètres sur le SNS où vous jouez à nos jeux. Par exemple, Yottagames peut accéder et stocker une partie ou la totalité des informations suivantes, comme vous le permettez, le SNS et vos préférences:
+•votre prénom et votre nom
+• votre photo de profil ou son URL
+• votre numéro d\'identification d\'utilisateur, qui est lié à des informations publiquement disponibles telles que le nom et la photo de profil
+• les numéros d\'identification de l\'utilisateur et d\'autres données publiques de vos amis
+• le journal de connexion que vous avez fourni à ce SNS lorsque vous vous êtes inscrit
+• votre emplacement physique et celui de vos périphériques d\'accès
+• votre sexe
+• votre anniversaire
+En jouant à un jeu Yottagames via un SNS, vous autorisez Yottagames à collecter, stocker et utiliser conformément à cette politique de confidentialité toute information que vous avez accepté que le SNS puisse fournir à Yottagames via l\'interface de programmation d\'application SNS (""API""). Votre accord a lieu lorsque vous ""acceptez"" ou ""autorisez"" (ou des termes similaires) l\'une de nos applications sur un SNS.
+Si vous jouez à des jeux Yottagames sur votre téléphone portable ou sur un autre appareil mobile, y compris des iPads et des tablettes, nous collectons les identifiants des appareils mobiles, y compris l\'adresse MAC et l\'adresse IP. Dans certains jeux, nous allons créer et affecter à votre appareil un identifiant similaire à un numéro de compte. Nous pouvons collecter le nom associé à votre appareil, votre type d\'appareil, votre numéro de téléphone, votre pays et toutes autres informations que vous choisissez de fournir, comme le nom d\'utilisateur, le nom du personnage, la géolocalisation ou l\'adresse e-mail. Nous pouvons également accéder à vos contacts pour vous permettre d\'inviter des amis à vous rejoindre dans le Service.
+Si vous achetez une licence pour utiliser la monnaie virtuelle dans le jeu ou des objets virtuels directement auprès de Yottagames, nous collecterons les informations financières et de facturation nécessaires au traitement de vos frais, qui peuvent inclure vos adresses postales et électroniques. Yottagames peut également recevoir les informations de facturation et de paiement que vous fournissez lorsque votre achat est traité par une autre partie, comme Facebook (pour Facebook Credits) ou Apple (pour les achats sur des appareils iOS). Veuillez noter que les achats de crédits de tiers ou de devises comme les crédits Facebook peuvent également faire l\'objet de politiques supplémentaires.
+Lorsque vous demandez l\'assistance de notre équipe de support client, nous collectons et stockons les informations de contact que vous fournissez (généralement votre nom et votre adresse e-mail), votre jeu ou votre activité sur le Service et votre numéro d\'utilisateur. Nous allons également stocker la correspondance et toutes les informations contenues dedans.
+Nous recevons et stockons les informations que vous fournissez, y compris votre numéro de téléphone, lorsque vous vous inscrivez pour recevoir des notifications par SMS directement sur votre téléphone mobile. Ces messages vous informent de l\'activité du jeu et peuvent vous permettre de jouer au jeu depuis votre téléphone. Vous pouvez ajuster les types de notifications que vous recevez et quand vous les recevez en modifiant les paramètres de notification SMS; Connectez-vous simplement à votre compte de jeu et choisissez SMS Mobile dans le menu Aide.
+Avec votre consentement, nous pouvons envoyer des notifications push sur votre appareil mobile pour fournir des mises à jour de jeu et d\'autres messages pertinents. Vous pouvez gérer les notifications push sur la page ""options"" ou ""paramètres"" du jeu concerné. Vous pouvez également les gérer à partir de la page des paramètres de votre appareil pour le jeu concerné.
+Nous pouvons envoyer des notifications locales à votre appareil mobile pour fournir des mises à jour de jeu et d\'autres informations pertinentes. Vous pouvez gérer les notifications locales à partir de la page ""options"" ou ""paramètres"" du jeu concerné.
+Lorsque vous accédez à nos sites Web ou jouez à nos jeux, nous collectons également les éléments suivants:
+1) Certaines informations techniques concernant votre appareil mobile ou votre système informatique, y compris l\'adresse MAC, l\'adresse IP et l\'identifiant de l\'appareil mobile
+2) Des statistiques d\'utilisation sur vos interactions avec le Service. Ces informations sont généralement collectées à l\'aide de fichiers journaux serveur ou de fichiers journaux Web («Fichiers journaux»), de kits de développement de logiciels mobiles et de technologies de suivi telles que les cookies de navigateur pour collecter et analyser certains types d\'informations techniques. Certains des cookies que le Service place sur votre ordinateur sont liés à votre (vos) numéro (s) d\'identification.
+Pour plus d\'informations sur la façon dont nous utilisons les cookies et autres technologies de suivi, veuillez consulter la partie «Cookies et Collection d’Information Automatique» de la section 3 («Comment nous collectons les informations vous concernant»).
+1.2 Comment nous recueillons des informations sur vous
+Nous pouvons collecter des informations vous concernant de l\'une ou plusieurs des façons suivantes: Lorsque vous jouez à l\'un de nos jeux, Yottagames collecte et stocke certaines informations que vous fournissez directement ou via le SNS ou un autre site Web tiers proposant notre jeu. Pour offrir un jeu et une expérience sociale plus riches, nous recueillons également des informations sur votre jeu et votre interaction avec les autres joueurs et le service. La majeure partie de ces informations est collectée et stockée grâce à l\'utilisation de fichiers journaux, qui sont des fichiers sur nos serveurs Web qui enregistrent les actions prises sur nos jeux et sites Web.
+Vous pouvez participer à certaines activités sur nos sites Web ou à des jeux qui vous permettent de communiquer ou de partager des informations non seulement avec Yottagames, mais aussi avec d\'autres utilisateurs de notre service. Ceux-ci inclus:
+• participer à des forums de joueurs et des forums de discussion
+• publier des commentaires publics sur les profils ou les plateaux de jeu d\'autres utilisateurs
+• envoi de messages privés ou d\'invitations à d\'autres utilisateurs, directement sur nos sites Internet ou sur leurs comptes de messagerie
+• discuter avec d\'autres utilisateurs
+• publier des photos
+Nous pouvons enregistrer et stocker des archives de ces communications sur les serveurs de Yottagames pour protéger la sécurité et le bien-être de nos utilisateurs et les droits à la propriété de Yottagames en relation avec le service. Vous reconnaissez et consentez à l\'enregistrement et au stockage de telles communications à ces fins.
+Nous pouvons collecter ou recevoir des informations provenant d\'autres sources, y compris (i) d\'autres utilisateurs Yottagames qui choisissent de télécharger leurs contacts e-mail; et (ii) les fournisseurs d\'informations tiers. Ces informations seront utilisées pour compléter votre profil - principalement pour vous aider, vous et vos amis, à vous connecter. Il sera combiné avec d\'autres informations que nous recueillons.
+1.3 Comment nous utilisons les informations que nous collectons
+En général, nous collectons, stockons et utilisons vos informations pour vous fournir une expérience sûre, fluide, efficace et personnalisée. Par exemple, nous pouvons utiliser les informations collectées auprès de vous de l\'une ou l\'autre des façons suivantes:
+• Créer vos comptes de jeu et autoriser de jouer à nos jeux
+• Identifier et suggérer des connexions avec d\'autres utilisateurs de Yottagames
+• Pour activer les communications d\'utilisateur à utilisateur
+• Fournir un soutien technique et répondre aux demandes des utilisateurs
+• Pour prévenir la fraude ou des activités potentiellement illégales
+• Livrer et cibler la publicité
+• Pour informer les utilisateurs des mises à jour en jeu
+• Fournir des tableaux de classement dans le jeu et promouvoir les réalisations des joueurs en jeu
+• Solliciter des commentaires et des suggestions pour améliorer les produits et services Yottagames et personnaliser votre expérience utilisateur
+• Informer les utilisateurs des nouveaux produits ou des offres promotionnelles
+• S\'engager dans des pratiques communément acceptées, telles que vous contacter à l\'adresse e-mail que nous avons dans le dossier si vous êtes un gagnant potentiel dans un tirage au sort
+Une utilisation importante de vos informations est la communication. Si vous avez fourni votre adresse e-mail à Yottagames, nous l\'utiliserons pour répondre (i) aux demandes d\'assistance client et (ii) vous tenir informé de votre activité dans le jeu, y compris les commentaires de vos amis, les notifications concernant l\'état du jeu tel que ""Récoltes prêtes"" ainsi que les notifications de demandes de cadeaux et de voisins. Certains messages tels que les invitations à des amis à vous rejoindre dans un jeu peuvent inclure votre nom et votre photo de profil. Nous pouvons également envoyer des courriels promotionnels et des messages promotionnels par SMS («Communications promotionnelles») directement ou en partenariat avec des parties autres que Yottagames. Chaque communication promotionnelle offrira généralement aux destinataires des choix quant à la réception de messages supplémentaires.
+Tous les utilisateurs doivent être conscients que, lorsqu\'ils divulguent des informations personnellement identifiables sur un forum ou un autre forum, les informations peuvent être collectées et utilisées par d\'autres personnes pour envoyer des courriels non sollicités provenant d\'autres parties en dehors de Yottagames. Dans le cas où vous rencontrez un utilisateur de Yottagames qui recueille ou utilise de manière inappropriée des informations sur vous ou d\'autres utilisateurs, veuillez contacter gxb@Yottagames.com.
+2. Divulgation d\'information
+Yottagames ne divulguera pas vos informations personnelles, sauf:
+a) Avec votre autorisation ou votre consentement préalable;
+b) En cas d\'urgence pour protéger les droits et intérêts de Yottagames et de ses utilisateurs, la sécurité publique et les intérêts publics;
+c) Conformément à la loi ou à une ordonnance valide d\'un tribunal ou d\'un autre organisme gouvernemental;
+d) Pour appliquer les conditions applicables des services Yottagames ou toute déclaration de Yottagames, ou dans toute autre situation que Yottagames peut juger nécessaire.
+1) Collecte d\'informations en coopération avec des tiers
+Les informations qu\'un utilisateur partage avec Yottagames sont collectées, stockées et gérées avec soin par Yottagames. Toutefois, Yottagames peut partager ces informations en coopération avec des tiers pour offrir certains de ses services en collaboration avec ces tiers. Yottagames exhortera ces tierces parties à traiter ces informations conformément à cette politique de confidentialité.
+Grâce à une bonne coopération ou même une alliance avec d\'autres organisations réputées de bonne volonté, Yottagames s\'est engagée à fournir le meilleur service Internet à ses utilisateurs. Nous pouvons partager
+(i) des informations agrégées (informations sur vous et les autres utilisateurs collectivement, mais pas spécifiquement identifiables à vous)
+(ii) informations anonymes
+(iii) certaines informations techniques (notamment les adresses IP, les adresses MAC pour les appareils mobiles et les identifiants d\'appareils mobiles) pour élaborer et diffuser des publicités ciblées dans le service et sur les sites Web de tiers
+Nous pouvons également permettre aux annonceurs de collecter ces types d\'informations au sein du Service et ils peuvent les partager avec nous. Les annonceurs peuvent collecter ces informations à l\'aide de technologies de suivi telles que les cookies de navigateur et les balises Web. Les informations collectées peuvent être utilisées pour vous proposer une sélection et une diffusion ciblées afin de personnaliser votre expérience utilisateur en vous assurant que les publicités pour les produits et services que vous consultez vous intéressent, pratique connue sous le nom de publicité comportementale et d\'analyse Web ( c\'est-à-dire pour analyser le trafic et l\'activité des autres utilisateurs finaux afin d\'améliorer votre expérience).
+2) Protection, Sécurité et Conformité à la loi
+Vos informations et le contenu de toutes vos communications en ligne, y compris
+(i) la limitation du texte du chat, des communications vocales, des adresses IP et de vos informations personnelles) peut être consultée et surveillée si nécessaire pour fournir le Service et peut être divulguée:
+Lorsque nous croyons de bonne foi que nous sommes tenus de divulguer l\'information en réponse à une procédure judiciaire (par exemple, une ordonnance d\'un tribunal, un mandat de perquisition ou une citation à comparaître)
+(ii) pour satisfaire aux lois ou règlements applicables
+(iii) Lorsque nous croyons que le Service est utilisé dans la perpétration d\'un crime, y compris pour signaler une telle activité criminelle ou pour échanger des informations avec d\'autres sociétés et organisations à des fins de protection contre la fraude et de réduction du risque de crédit
+(iv) lorsque nous croyons de bonne foi qu\'il existe une situation d\'urgence qui menace votre santé et/ou votre sécurité, une autre personne ou le public en général
+(v) afin de protéger les droits ou la propriété de Yottagames.
+Information des mineurs et son utilisation
+Yottagames suggère que les mineurs ne doivent pas accéder à Internet sans le consentement écrit préalable de leurs parents ou d\'autres tuteurs légaux. Yottagames protégera les informations pertinentes des mineurs comme requis par les lois et règlements.
+3. Cookies
+Un cookie est un petit fichier de données que Yottagames transfère sur le disque dur de l\'utilisateur, généralement pour identifier rapidement l\'ordinateur d\'un utilisateur et se souvenir de la visite de l\'utilisateur, comme les préférences de l\'utilisateur ou son nom et mot de passe. Le service envoie des cookies aux ordinateurs des utilisateurs lorsque les utilisateurs accèdent ou consultent le contenu d\'un jeu de Yottagames. Les informations contenues dans un cookie peuvent être liées aux informations personnelles des utilisateurs à des fins telles que l\'amélioration de la qualité de notre service, l\'adaptation des recommandations aux intérêts des utilisateurs, et rendre le service plus facile à utiliser. Les utilisateurs peuvent désactiver les cookies à tout moment, bien que les utilisateurs puissent ne pas être en mesure d\'accéder ou d\'utiliser les fonctionnalités du Service.
+4. Disposition d\'informations
+Les utilisateurs de Yottagames ont toujours le choix de divulguer ou non des informations. Certaines informations sont requises pour l\'enregistrement de nos services, mais la plupart des autres informations demandées sont facultatives. C\'est une priorité absolue chez Yottagames de faire en sorte que son utilisateur se sente à l\'aise et contrôle ses informations.
+Yottagames offre à ses utilisateurs de nombreuses activités interactives en ligne. Pour faciliter la participation de l\'utilisateur aux activités interactives et la délivrance des prix de ces activités, Yottagames exige généralement que le demandeur remplisse des formulaires relatifs à ses intérêts personnels en plus des informations de contact (adresse postale et numéro de téléphone). Cette information est utilisée par Yottagames pour compiler des données agrégées sur ses utilisateurs. Si l\'utilisateur ne veut pas fournir les informations demandées et participer aux activités interactives, il est entièrement à la discrétion de l\'utilisateur.
+1. Méthodes d\'accès et de contrôle de vos informations
+Si vous ne souhaitez plus que Yottagames utilise vos informations, vous pouvez envoyer un e-mail à gxb@Yottagames.com. Placez ""Supprimer mon compte"" dans la ligne d\'objet et incluez votre prénom, votre nom, votre adresse e-mail et votre numéro d\'utilisateur pour le SNS à partir duquel vous accédez à nos jeux (le cas échéant) dans le corps de l\'e-mail. Nous répondrons à votre demande dans les trente (30) jours. Veuillez noter que certains dossiers, par exemple ceux relatifs aux paiements ou au service à la clientèle, seront conservés à des fins légaux et comptables. Si vous avez envoyé ou publié du contenu sur le Service, il est possible que nous ne puissions pas le supprimer. Si vous souhaitez revoir ou modifier les informations que Yottagames a sur vous, envoyez-nous un courrier électronique à l\'adresse fournie. Vous pouvez désactiver les notifications push en accédant à la page ""options"" ou ""paramètres"" du jeu concerné. Vous pouvez désactiver les notifications locales en accédant à la page ""options"" ou ""paramètres"" du jeu concerné.
+5. Mise à jour et publicité de l\'information
+Yottagames encourage fortement ses utilisateurs à mettre à jour et à modifier leurs informations personnelles et à les tenir à jour. Un utilisateur de la communauté Yottagames peut facilement accéder et corriger ses informations personnelles à tout moment. Les utilisateurs peuvent modifier et supprimer leurs informations personnelles à leur discrétion.
+Gardez à l\'esprit que chaque fois que vous divulguez volontairement des informations personnelles en ligne via certains canaux (par exemple sur les forums, par e-mail ou dans les zones de discussion), ces informations peuvent être collectées et utilisées par d\'autres. Yottagames n\'assumera aucune responsabilité pour les raisons mentionnées ci-dessus. Puisque la divulgation de renseignements personnels par certains canaux peut mener à la divulgation de vos renseignements personnels, nous vous rappelons de faire preuve de prudence avant de divulguer ces renseignements.
+En fin de compte, vous êtes seul responsable du maintien de la confidentialité de vos mots de passe et / ou des informations de votre compte. Soyez prudent et responsable chaque fois que vous êtes en ligne.
+1. Sécurité de vos informations
+Nous comprenons l\'importance de garder vos informations en toute sécurité. Nous déploierons des efforts commercialement raisonnables pour protéger vos informations personnelles et assurer la sécurité de nos systèmes. Malheureusement, la transmission d\'informations sur Internet n\'est pas totalement sécurisée. Bien que nous nous efforcions de protéger vos données personnelles, nous ne pouvons garantir la sécurité de vos données pendant leur transmission sur notre site; toute transmission est à vos risques et périls. Une fois que nous avons reçu vos informations, nous avons mis en place des procédures et des fonctions de sécurité pour tenter d\'empêcher tout accès non autorisé.
+6. Liens
+Le site Web Yottagames contient des liens vers d\'autres sites Web. Yottagames n\'est pas responsable du contenu ou de la politique de confidentialité ou des pratiques de tous les autres sites Web ou des actions des entreprises responsables de ces sites Web. Veuillez consulter les politiques de confidentialité de ces sites Web avant de leur fournir des informations personnelles.
+7. Politique de copyright
+Yottagames respecte la propriété intellectuelle des autres, et nous demandons à nos utilisateurs de faire de même. Yottagames peut, dans des circonstances appropriées et à sa discrétion, mettre fin aux comptes des utilisateurs qui enfreignent les droits de propriété intellectuelle d\'autrui.
+Yottagames possède ou a le droit d\'utiliser tous les droits de propriété intellectuelle en ce qui concerne le contenu et les services développés ou développés conjointement par Yottagames. Ce contenu et ces services sont protégés par les lois sur la propriété intellectuelle, les droits d\'auteur, les marques de commerce, les marques de service, les brevets ou d\'autres droits de propriété et lois applicables.
+8. Contact
+Nous pouvons réviser notre Politique de confidentialité de temps en temps. Lorsque nous le faisons, ces changements seront reflétés dans cette Politique de confidentialité. Tous changements que nous apporterons seront toujours fait avec votre vie privée et la satisfaction comme priorités. Nous vous encourageons à consulter notre politique de confidentialité chaque fois que vous visitez le site Web de Yottagames.
+Si vous avez des questions, des commentaires ou des préoccupations concernant notre politique de confidentialité et/ou pratiques, s\'il vous plaît envoyez un e-mail à girls@Yottagames.com."
 DELETE_ACCOUNT_TEXT09,Attention
-DELETE_ACCOUNT_TEXT10,Vous avez fait une demande de suppression de compte. Veuillez noter que la suppression de compte est irréversible ! Il vous reste {1} jour(s) {2} heure(s) {3} minute(s) {4} seconde(s) pour annuler votre demande de suppression de compte !
+DELETE_ACCOUNT_TEXT10,Votre demande de suppression de compte est en cours. La suppression est irréversible !!!\nVous avez encore [c][00B550]{1}[-][/c] jour(s) [c][00B550]{2}[-][/c] h [c][00B550]{3}[-][/c] min [c][00B550]{4}[-][/c] sec pour annuler votre demande.
 DELETE_ACCOUNT_TEXT11,"Votre demande de suppression de compte a été prise en compte. Votre compte sera supprimé sous peu. Si vous souhaitez annuler la procédure, veuillez nous contacter au plus vite !"
 DELETE_ACCOUNT_TEXT12,Annuler la procédure
+QUICK_FORMATION_TEXT06,Quitter
+QUICK_FORMATION_TEXT07,Impossible de changer les Filles déployées dans l'équipe configurée !
+GM_RECALL_7,"Cher Senpai, après avoir supprimé ce compte vous ne pourrez plus le récupérer. Voulez-vous continuer ?"
+QUICK_FORMATION_TEXT01,Indisponible
+QUICK_FORMATION_TEXT02,Impossible durant la configuration de votre équipe !
+QUICK_FORMATION_TEXT03,Configurer
+QUICK_FORMATION_TEXT04,Sauvegardé !
+QUICK_FORMATION_TEXT08,Nom modifié !
+DELETE_ACCOUNT_TEXT13,"Si vous avez d'autres demandes, nous les traiterons dès que possible !"
+ACTIVITY_POPULARITY_VOTE_TEXT01,"1. Durant cet événement, le Classement des Votes indique le nombre total de votes pour chaque Fille et les 10 joueurs ayant le plus voté pour la Fille.|2. Les messages de soutien ne seront pas conservés après la fin de la période actuelle, vous pourrez continuer à soutenir le Fille que vous souhaitez lors de la nouvelle période."
+ACTIVITY_POPULARITY_VOTE_TEXT02,Période actuelle
+ACTIVITY_POPULARITY_VOTE_TEXT03,Soutenez-moi !
+ACTIVITY_POPULARITY_VOTE_TEXT04,Classement
+ACTIVITY_POPULARITY_VOTE_TEXT05,Classement
+ACTIVITY_POPULARITY_VOTE_TEXT06,Message de soutien envoyé !
+ACTIVITY_POPULARITY_VOTE_TEXT07,Vous ne pouvez laisser un message de soutien qu'une seule fois durant cette période
+ACTIVITY_POPULARITY_VOTE_TEXT08,Votes
+ACTIVITY_POPULARITY_VOTE_TEXT09,Votes
+LOGIN_TIPS_ERROR_3,"Votre compte sur ce serveur est banni, voulez-vous changer un autre serveur ?"
+QUICK_FORMATION_TEXT09,Vous n'avez pas encore configuré votre équipe.
+QUICK_FORMATION_TEXT10,"Cette Équipe ne correspond pas aux exigences de Maison requise, impossible de combattre."
+QUICK_FORMATION_TEXT11,"Des modifications dans votre équipe actuelle ont été détectées, veuillez d'abord la mettre à jour."
+QUICK_FORMATION_TEXT12,Équipe {1}
+QUICK_FORMATION_TEXT13,Voulez-vous utiliser {1} Gemmes pour ajouter une Équipe Configurée ?
+QUICK_FORMATION_TEXT14,6 caractères au maximum !
+QUICK_FORMATION_TEXT15,Débloqué après avoir passé {1} dans Campagne
+QUICK_FORMATION_TEXT16,Voulez-vous sauvegarder cette configuration ?
+QUICK_FORMATION_TEXT17,"Impossible de modifier les Filles présentes dans les équipes configurées, veuillez d'abord la retirer."
+QUICK_FORMATION_TEXT18,"1. Passez l'étape 8-5 dans Campagne pour débloquer la fonctionnalité - Configuration d'Équipe.|2. La configuration de chaque équipe est indépendante l'une de l'autre, elle n'affecte pas le équipes déjà configurées.|3. Ajoutez l'équipement, le Cristal, l'Antiquité, le Potentiel que vous souhaitez en fonction des ennemis que vous combattez.|4. La Configuration d'Équipe est uniquement disponible dans les modes de jeu qui demandent au joueur qu'une seule équipe à la fois pour combattre.|5. Vous pouvez configurer 3 équipes par défaut, cependant vous pouvez utiliser des Gemmes pour ajouter des équipes.|6. Vous pouvez également appuyez longtemps sur le nom d'équipe pour modifier."
+QUICK_FORMATION_TEXT19,Nom d'équipe
+QUICK_FORMATION_TEXT20,Entrez le nom d'équipe
+QUICK_FORMATION_TEXT21,Cette Fille est dans votre équipe configurée !
+QUICK_FORMATION_TEXT22,"Échec de sauvegarde, veuillez configurer à nouveau les Filles au point rouge."
+QUICK_FORMATION_TEXT23,Veuillez configurer à nouveau cette Fille.

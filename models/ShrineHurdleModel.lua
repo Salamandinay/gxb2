@@ -457,7 +457,7 @@ end
 function ShrineHurdleModel:checkInBattleTime()
 	local timeSet = xyd.tables.miscTable:split2num("shrine_time_interval", "value", "|")
 	local serverTime = xyd.getServerTime()
-	local timePass = math.fmod(serverTime - self.start_time_, (timeSet[1] + timeSet[2]) * xyd.DAY_TIME)
+	local timePass = math.fmod(serverTime - self:getStartTime(), (timeSet[1] + timeSet[2]) * xyd.DAY_TIME)
 
 	if not timePass or timePass < 0 or timePass > timeSet[1] * xyd.DAY_TIME then
 		return false
@@ -494,7 +494,7 @@ function ShrineHurdleModel:checkFuctionOpen(need_tips)
 end
 
 function ShrineHurdleModel:getStartTime()
-	return self.start_time_
+	return self.start_time_ or 0
 end
 
 function ShrineHurdleModel:getRouteID()
