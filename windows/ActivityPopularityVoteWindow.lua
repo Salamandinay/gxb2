@@ -259,7 +259,6 @@ function ActivityPopularityVoteWindow:checkPeriod()
 		self.refreshContent = self.refreshContent2
 
 		self:championships()
-		dump(self.activityData.history[self.curPeriod])
 
 		if self.activityData.history[self.curPeriod] then
 			self:refreshContent()
@@ -395,8 +394,6 @@ function ActivityPopularityVoteWindow:refreshContent2(keepPosition)
 	local chamList = {}
 	local tmpList = {}
 	local startPos = xyd.Global.playerID % 4 + 1
-
-	dump(self.activityData.history[self.curPeriod])
 
 	for _, list in ipairs(self.activityData.history[self.curPeriod]) do
 		table.insert(tmpList, list)
@@ -650,8 +647,6 @@ function PartnerCardItem:initUI()
 end
 
 function PartnerCardItem:updateInfo()
-	dump(self.data.table_id)
-	dump(xyd.tables.partnerPictureTable:getPartnerCard(self.data.table_id))
 	xyd.setUISpriteAsync(self.partnerImg, nil, xyd.tables.partnerPictureTable:getPartnerCard(self.data.table_id))
 	self.winImg:SetActive(false)
 
@@ -709,8 +704,6 @@ function PartnerCardItem:registerEvent()
 	end
 
 	UIEventListener.Get(self.go).onClick = function ()
-		dump(self.data)
-		dump(self.data.table_id)
 		xyd.openWindow("activity_popularity_vote_support_message_window", {
 			tableID = self.data.table_id,
 			curPeriod = self.parent.curPeriod

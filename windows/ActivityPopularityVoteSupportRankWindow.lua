@@ -33,6 +33,9 @@ function ActivityPopularityVoteSupportRankWindow:getUIComponent()
 	local wrapContent = self.scrollView:ComponentByName("wrapContent", typeof(UIWrapContent))
 	self.rank_item = self.scrollView:NodeByName("rank_item").gameObject
 	self.wrapContent = require("app.common.ui.FixedWrapContent").new(self.scrollView, wrapContent, self.rank_item, RankItem, self)
+
+	self.wrapContent:hideItems()
+
 	self.leftGroup = self.groupAction:NodeByName("leftGroup").gameObject
 	self.partnerInfoPart = self.leftGroup:NodeByName("partnerInfoPart").gameObject
 	self.partnerImg = self.partnerInfoPart:ComponentByName("partnerImg", typeof(UISprite))

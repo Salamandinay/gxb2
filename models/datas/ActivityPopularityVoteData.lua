@@ -207,9 +207,6 @@ end
 
 function ActivityPopularityVoteData:getCommentListByParner(partnerTableID)
 	local selfComment = self:getSelfComment(partnerTableID)
-
-	dump(selfComment)
-
 	local list = {}
 
 	if selfComment then
@@ -233,8 +230,6 @@ function ActivityPopularityVoteData:getCommentListByParner(partnerTableID)
 			vote = self:getSelfTicketByPartner(partnerTableID)
 		})
 	end
-
-	dump(self.supportCommentList[partnerTableID])
 
 	for key, value in pairs(self.supportCommentList[partnerTableID]) do
 		if value.player_id ~= xyd.Global.playerID then
@@ -268,8 +263,6 @@ end
 
 function ActivityPopularityVoteData:getSelfTicketByPeriodAndPartner(partnerTableID, period)
 	if self.history[period] then
-		dump(self.history[period])
-
 		for _, list in ipairs(self.history[period]) do
 			for _, item in ipairs(list) do
 				if tonumber(item.table_id) == tonumber(partnerTableID) then

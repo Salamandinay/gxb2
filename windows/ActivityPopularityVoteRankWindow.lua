@@ -28,12 +28,7 @@ end
 
 function ActivityPopularityVoteRankWindow:layout()
 	self.labelTitle.text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT8")
-
-	dump(self.activityData.history[9][1][1].table_id)
-
 	local player_list = self.activityData:getRankListByParner(self.activityData.history[9][1][1].table_id)
-
-	dump(player_list)
 
 	for i = 1, #player_list do
 		player_list[i].rank = i

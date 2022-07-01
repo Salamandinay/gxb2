@@ -490,7 +490,7 @@ function ShenXueModel:getAllFiveStarPartnerTableIDs()
 		local ids = xyd.tables.partnerTable:getIds()
 
 		for _, id in ipairs(ids) do
-			if xyd.tables.partnerTable:getStar(id) == 5 and xyd.tables.partnerTable:getShowInGuide(id) >= 1 then
+			if xyd.tables.partnerTable:getStar(id) == 5 and xyd.tables.partnerTable:getShowInGuide(id) >= 1 and tonumber(xyd.tables.partnerTable:getShowInGuide(id)) <= xyd.getServerTime() then
 				table.insert(self.allFiveStarPartnerTableIDs, tonumber(id))
 			end
 		end

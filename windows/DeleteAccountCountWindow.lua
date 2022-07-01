@@ -58,7 +58,7 @@ function DeleteAccountCountWindow:onClickBack()
 	if XYDUtils.IsTest() then
 		url = "https://testyotmhome.game168.com.tw"
 	else
-		url = "https://yottagames.com"
+		url = "https://carolgames.com"
 	end
 
 	local langue = string.sub(xyd.Global.lang, 1, 2)

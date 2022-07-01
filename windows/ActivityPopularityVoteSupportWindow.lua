@@ -54,12 +54,7 @@ function ActivityPopularityVoteSupportWindow:updateData()
 	self.tempInfos = {}
 	local curPeriod = self.activityData:getCurPeriod()
 
-	dump(curPeriod)
-
 	for i = 1, curPeriod do
-		dump(i)
-		dump(self.activityData.history)
-
 		for _, list in ipairs(self.activityData.history[i]) do
 			for _, item in ipairs(list) do
 				local tableID = tonumber(item.table_id)
@@ -106,7 +101,6 @@ function ActivityPopularityVoteSupportWindow:updateData()
 		self.groupNone:SetActive(false)
 	end
 
-	dump(self.infos)
 	self.multiWrap_:setInfos(self.infos, {})
 	self.multiWrap_:resetPosition()
 	self.scrollView:ResetPosition()

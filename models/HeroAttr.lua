@@ -86,7 +86,9 @@ function HeroAttr:attr(hero, params)
 		end
 	end
 
-	calChime()
+	if not params.isEntrance then
+		calChime()
+	end
 
 	local starOrigin = {}
 

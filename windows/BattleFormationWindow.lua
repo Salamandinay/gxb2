@@ -4265,9 +4265,10 @@ end
 
 function BattleFormationWindow:initQuickFormationTeam()
 	if self.battleType and xyd.arrayIndexOf(self.showFormationTeamTypeArr, self.battleType) > 0 and xyd.checkFunctionOpen(xyd.FunctionID.QUICK_FORMATION, true) then
-		self.redStatus_ = xyd.models.quickFormation:getRedStatus()
-
 		xyd.models.quickFormation:updatePartnerInfo()
+		xyd.models.quickFormation:updateRedStatus()
+
+		self.redStatus_ = xyd.models.quickFormation:getRedStatus()
 
 		if not self.battleFormationTeamBtn then
 			local obj = ResCache.AddGameObject(self.selectedGroup.gameObject, "Prefabs/Components/formation_team_con")
@@ -4424,6 +4425,8 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index)
 	end
 
 	if index == 0 then
+		self.chooseQuickTeam_ = index
+
 		self:clearPartners()
 		self:onChoosePet({
 			0
@@ -4431,6 +4434,7 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index)
 	else
 		self:clearPartners()
 
+		self.chooseQuickTeam_ = index
 		local partner_list = xyd.models.quickFormation:getPartnerList(index)
 		self.selectedNum = 0
 
@@ -4472,8 +4476,6 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index)
 			xyd.models.quickFormation:getPet(index)
 		})
 	end
-
-	self.chooseQuickTeam_ = index
 end
 
 function BattleFormationWindow:onQuickFormationTeamQuit()
@@ -4495,6 +4497,8 @@ function BattleFormationWindow:clearPartners()
 	end
 
 	self.copyIconList = {}
+	self.selectedNum = 0
+	self.chooseQuickTeam_ = nil
 
 	self:iniPartnerData(self.currentGroup_, true)
 end

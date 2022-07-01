@@ -143,8 +143,6 @@ function ActivityPopularityVoteSupportMessageWindow:updateData()
 end
 
 function ActivityPopularityVoteSupportMessageWindow:updateCommentGroup()
-	dump(self.commentInfos)
-
 	if not self.commentInfos or #self.commentInfos <= 0 then
 		return
 	end
@@ -327,13 +325,9 @@ function ActivityPopularityVoteSupportMessageWindow:onClickBtnSend()
 
 	local msg = self.textInputLabel.text
 
-	dump(msg)
-
 	if not self.isFirstOpenText then
 		msg = ""
 	end
-
-	dump(msg)
 
 	if not self:checkMsg(msg) then
 		return
