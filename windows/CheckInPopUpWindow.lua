@@ -52,6 +52,9 @@ function CheckInPopUpWindow:getUIComponent()
 
 	self.checkInLocationGroup = self.mainGroup:NodeByName("checkInLocationGroup").gameObject
 	self.checkInLocationText = self.checkInLocationGroup:ComponentByName("checkInLocationText", typeof(UILabel))
+	self.vipGroup = self.blackboardGroup:NodeByName("vipGroup").gameObject
+	self.levelGroup = self.vipGroup:NodeByName("levelGroup").gameObject
+	self.levelImg = self.vipGroup:ComponentByName("levelImg", typeof(UISprite))
 end
 
 function CheckInPopUpWindow:initWindow()
@@ -65,6 +68,7 @@ function CheckInPopUpWindow:initWindow()
 	self.blackboardGroup:Y(-322 + -89 * self.scale_num_contrary)
 	self:setItem()
 	self:setEffect()
+	self:setVip()
 	self:register()
 end
 
@@ -97,6 +101,34 @@ function CheckInPopUpWindow:removefinishEffect()
 	if self.finishCallback then
 		self.finishCallback()
 		self.itemBigFinishMask:SetActive(false)
+	end
+end
+
+function CheckInPopUpWindow:setVip()
+	local vip = xyd.models.backpack:getVipLev()
+	local nums = {}
+
+	if xyd.tables.vipTable:judgeLoginDouble(vip) then
+		self.vipGroup:SetActive(true)
+		NGUITools.DestroyChildren(self.levelGroup.transform)
+
+		while vip > 0 do
+			table.insert(nums, vip % 10)
+
+			vip = math.floor(vip / 10)
+		end
+
+		while #nums > 0 do
+			local num = nums[#nums]
+
+			table.remove(nums)
+
+			local sprite = NGUITools.AddChild(self.levelGroup.gameObject, self.levelImg.gameObject):GetComponent(typeof(UISprite))
+
+			xyd.setUISpriteAsync(sprite, nil, "player_vip_num_" .. num, nil, , true)
+		end
+	else
+		self.vipGroup:SetActive(false)
 	end
 end
 
@@ -186,6 +218,10 @@ function CheckInPopUpWindow:setItem()
 					item_num = cItem.num,
 					posId = posId
 				}
+
+				if xyd.tables.checkInTable:judgeDoubleAward(cItem.showId) and xyd.tables.vipTable:judgeLoginDouble(xyd.models.backpack:getVipLev()) then
+					rewardItem.item_num = rewardItem.item_num * 2
+				end
 
 				table.insert(self.rewardFloatItems, rewardItem)
 			end

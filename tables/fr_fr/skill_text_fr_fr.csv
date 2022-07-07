@@ -11891,13 +11891,13 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 2000030020,Chimère des Océans,Menace Continue,Ressuscite immédiatement et renforce ses compétences après chaque résurrection.
 2000030030,Chimère des Océans,Joyau Marin,"
 Au début de la bataille, Chimère des Océans obtient une [c][e28002]Barrière[-][/c] équivalent à 50% de ses PV.
-Au début de chaque tour, Chimère des Océans obtient un certain nombre de couche de [c][e28002]Barrière[-][/c] en fonction du nombre des Effets Négatifs sur les ennemis.
+Au début de chaque tour, Chimère des Océans obtient un certain nombre de couche de [c][e28002]Barrière[-][/c] en fonction du nombre des Effets Négatifs (Contrôle, Marque ou Dégâts sur la Durée) sur les ennemis.
 Après que Chimère des Océans ait lancé son attaque, toutes les couches de [c][e28002]Barrière[-][/c] disparaissent.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 2000030040,Chimère des Océans,Trident,"
-À la fin de chaque tour, marque les 3 ennemis ayant le moins de PV avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours et enlève aléatoirement 3 Effets Négatifs sur Chimère des Océans.
+À la fin de chaque tour, marque les 3 ennemis ayant le moins de PV avec [c][01a310]Venin Hydrique[-][/c] pendant 2 tours et enlève aléatoirement 3 Effets Négatifs (Contrôle, Marque ou Dégâts sur la Durée) sur Chimère des Océans.
 Elle [c][e28002]asphyxie[-][/c] les ennemis pendant 2 tours lorsqu\'elle inflige des dégâts aux ennemis avec son Attaque Basique, sa Compétence Active ou ses Dégâts sur la Durée.
 
 [c][e28002]Asphyxie (Effet de Compétence) :[-][/c]
@@ -12665,54 +12665,61 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 65602000,Cupidon,Attaque Basique,
 75601000,Cupidon,Attaque Basique,
 5601001,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 100% d\'Attaque aux ennemis de la ligne avant, réduit de 5% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 10% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (10% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 100% d\'Attaque aux ennemis de la ligne avant, réduit de 5% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 10% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (300% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (200% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (1% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 1% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (1% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 1% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65602001,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 200% d\'Attaque aux ennemis de la ligne avant, réduit de 10% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 15% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (20% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 200% d\'Attaque aux ennemis de la ligne avant, réduit de 10% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 15% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (600% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (400% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (2% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 2% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (2% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 2% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75601001,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 400% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 400% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (800% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 5601002,Cupidon,Déesse de l'Amour,"Augmente les PV de 20%, l'Attaque de 20%, la Résistance aux Dégâts de 10%, l'Immunité de 10% et les Soins de 20%."
 65602002,Cupidon,Déesse de l'Amour,"Augmente les PV de 30%, l'Attaque de 25%, la Résistance aux Dégâts de 20%, l'Immunité de 15% et les Soins de 30%."
 65602012,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 40%."
 75601002,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 40%."
 5601003,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 30% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 5% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (10% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 30% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 5% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (300% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (1% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 1% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (1% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 1% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65602003,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 50% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 10% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (20% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 50% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 10% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (600% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (2% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 2% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (2% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 2% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65602013,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 80% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 80% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75601003,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 80% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 80% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 5601004,Cupidon,Coup de Foudre,"
 Je vais t\'aider une dernière fois, mais ne rate pas ta chance cette fois, compris ? Au début de la bataille, toutes vos Filles sont sous la [c][e28002]Bénédiction de l\'Amour[-][/c], obtiennent une [c][e28002]Barrière[-][/c] (200% de l\'Attaque de Cupidon) et Cupidon obtient 1 couche de [c][e28002]Magie d\'Amour[-][/c].
 À la fin du tour, Cupidon obtiendra également 1 couche de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (200% de l\'Attaque de Cupidon), les dégâts subis de toutes vos Filles seront réduits de 10% (60% au maximum) pendant 2 tours et l\'alliée dont les PV sont inférieures à 50% obtiendra une [c][e28002]Barrière[-][/c]  (200% de l\'Attaque de Cupidon).
@@ -12758,75 +12765,85 @@ Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c],
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010011,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 408% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 408% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (880% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010012,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 416% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 416% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (960% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010013,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 424% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
-Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (1040% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
+Tu veux goûter à la magie de l\'amour ? Inflige 424% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1040% de l\'Attaque de Cupidon).
+Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (800% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010014,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 432% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 432% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (1120% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010015,Cupidon,Flèche d'Amour,"
-Tu veux goûter à la magie de l\'amour ? Inflige 440% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, et réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Tu veux goûter à la magie de l\'amour ? Inflige 440% d\'Attaque aux ennemis de la ligne avant, réduit de 20% l\'Attaque des 2 ennemis ayant les Attaques les plus élevées pendant 2 tours, réduit de 20% (60% au maximum) les dégâts subis de toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1040% de l\'Attaque de Cupidon).
 Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c] et l\'alliée ayant le moins de PV récupérera des PV (1200% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] consommée.
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (5% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 5% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (5% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 5% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010021,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 41%."
 756010022,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 42%."
 756010023,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 43%."
 756010024,Cupidon,Déesse de l'Amour,"Augmente les PV de 40%, l'Attaque de 30%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 44%."
 756010025,Cupidon,Déesse de l'Amour,"Augmente les PV de 43%, l'Attaque de 33%, la Résistance aux Dégâts de 30%, l'Immunité de 20% et les Soins de 45%."
 756010031,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 84% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 84% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010032,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 88% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 88% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010033,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 92% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 92% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010034,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 96% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 96% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (4% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 4% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010035,Cupidon,Rafale de Tendresse,"
-Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 100% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], et augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours.
-Avant que Cupidon consomme ses couches de [c][e28002]Magie d\'Amour[-][/c], l\'alliée ayant l\'Attaque la plus élevée récupère des PV (30% de l\'Attaque de Cupidon) par couche de [c][e28002]Magie d\'Amour[-][/c] que Cupidon possède.
+Sont-ils réellement en train de me supplier de sauver leur amour ? Écoutez-moi, l\'amour n\'est qu\'une plaisanterie. Lorsque Cupidon lance son Attaque Basique, elle obtient 2 couches de [c][e28002]Magie d\'Amour[-][/c], a 100% de chance d\'obtenir 1 autre couche de [c][e28002]Magie d\'Amour[-][/c], augmente de 20% les dégâts infligés par toutes vos Filles pendant 2 tours et l\'alliée ayant l\'Attaque la plus élevée obtient une [c][e28002]Barrière[-][/c] (1000% de l\'Attaque de Cupidon).
 
 [c][e28002]Magie d\'Amour (Effet de Compétence, cumulable) :[-][/c]
-Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (5% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 5% des PV Max de Cupidon)."
+Lorsque Cupidon consomme toutes ses couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (5% des PV Max de Cupidon) pour chaque couche de [c][e28002]Magie d\'Amour[-][/c] consommée (l\'alliée dont les PV sont inférieures à 50% obtiendra une autre Barrière équivalent à 5% des PV Max de Cupidon).
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 756010041,Cupidon,Coup de Foudre,"
 Je vais t\'aider une dernière fois, mais ne rate pas ta chance cette fois, compris ? Au début de la bataille, toutes vos Filles sont sous la [c][e28002]Bénédiction de l\'Amour[-][/c], obtiennent une [c][e28002]Barrière[-][/c] (880% de l\'Attaque de Cupidon) et Cupidon obtient 3 couches de [c][e28002]Magie d\'Amour[-][/c].
 À la fin du tour, Cupidon obtiendra également 3 couches de [c][e28002]Magie d\'Amour[-][/c], toutes vos Filles obtiendront une [c][e28002]Barrière[-][/c] (880% de l\'Attaque de Cupidon), les dégâts subis de toutes vos Filles seront réduits de 20% (60% au maximum) pendant 2 tours et l\'alliée dont les PV sont inférieures à 50% obtiendra une [c][e28002]Barrière[-][/c]  (880% de l\'Attaque de Cupidon).
@@ -12885,40 +12902,40 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 5501200,Prométhéa,Attaque Basique,
 65502100,Prométhéa,Attaque Basique,
 75501100,Prométhéa,Attaque Basique,
-5501201,Prométhéa,Flambeau de l'Espoir,"
+5501201,Prométhéa,Flambeau de Disgrâce,"
 Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (100% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 20 et a 20% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 10% les dégâts subis de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-65502101,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (200% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 40 et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 10% la Résistance Totale de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+65502101,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (300% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 40 et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 15% les dégâts subis de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-75501101,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (400% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 15% la Résistance Totale de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+75501101,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (600% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 5501202,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 20%, l'Attaque de 20%, le Blocage de 10%, les Soins Reçus de 10% et la Résistance aux Critiques de 10%."
 65502102,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 30%, l'Attaque de 25%, le Blocage de 20%, les Soins Reçus de 15% et la Résistance aux Critiques de 20%."
 65502112,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 30%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 75501102,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 30%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 5501203,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 20% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 10% les dégâts subis de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 10% la Résistance Totale de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -12926,11 +12943,11 @@ Réduit de 10% les Soins Reçus, de 10% la récupération d\'Énergie et de 10% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 65502103,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 15% les dégâts subis de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 15% la Résistance Totale de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -12938,11 +12955,11 @@ Réduit de 20% les Soins Reçus, de 25% la récupération d\'Énergie et de 25% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 65502113,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -12950,11 +12967,11 @@ Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 75501103,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -12964,7 +12981,7 @@ Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et
 5501204,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 20% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (100% de l\'Attaque de la cible, 500% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (100% de l\'Attaque de la cible, 500% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -12974,13 +12991,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 10% les dégâts subis de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 10% la Résistance Totale de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 10% les Soins Reçus, de 10% la récupération d\'Énergie et de 10% le Blocage de la cible marquée."
 65502104,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 40% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (200% de l\'Attaque de la cible, 1000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (300% de l\'Attaque de la cible, 5100% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -12990,13 +13007,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 15% les dégâts subis de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 15% la Résistance Totale de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 20% les Soins Reçus, de 25% la récupération d\'Énergie et de 25% le Blocage de la cible marquée."
 65502114,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (400% de l\'Attaque de la cible, 2000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13006,13 +13023,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
 75501104,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (400% de l\'Attaque de la cible, 2000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13022,60 +13039,60 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
-755011011,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (408% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+755011011,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (640% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-755011012,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (416% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+755011012,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (680% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-755011013,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (424% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+755011013,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (720% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-755011014,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (432% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+755011014,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (760% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-755011015,Prométhéa,Flambeau de l'Espoir,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (440% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+755011015,Prométhéa,Flambeau de Disgrâce,"
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (800% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20 % des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 755011021,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 31%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 755011022,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 32%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 755011023,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 33%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 755011024,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 34%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 755011025,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 43%, l'Attaque de 33%, le Blocage de 35%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
 755011031,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (22% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -13083,11 +13100,11 @@ Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 755011032,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (24% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -13095,11 +13112,11 @@ Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 755011033,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (26% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -13107,11 +13124,11 @@ Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 755011034,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (28% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -13119,11 +13136,11 @@ Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et Compétences sur la provocatrice (Attaques multi-ciblées inclues)."
 755011035,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (30% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
@@ -13133,7 +13150,7 @@ Les Filles [c][e28002]Provoquées[-][/c] retourneront leurs Attaques Basiques et
 755011041,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (408% de l\'Attaque de la cible, 2040% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (640% de l\'Attaque de la cible, 3200% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13143,13 +13160,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
 755011042,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (416% de l\'Attaque de la cible, 2080% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (680% de l\'Attaque de la cible, 3400% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13159,13 +13176,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
 755011043,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (424% de l\'Attaque de la cible, 2120% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (720% de l\'Attaque de la cible, 3600% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13175,13 +13192,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
 755011044,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (432% de l\'Attaque de la cible, 2160% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (760% de l\'Attaque de la cible, 3800% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
@@ -13191,13 +13208,13 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
 755011045,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Saignement[-][/c] (440% de l\'Attaque de la cible, 2200% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (800% de l\'Attaque de la cible, 4000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
 3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 50%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
 5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 30% les dégâts subis de la cible marquée.
@@ -13207,6 +13224,27 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Augmente de 20% la Résistance Totale de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+676701,Flambeau de Disgrâce,Compétence de l'Antiquité,+8% Résistance aux Critiques
+676801,Flambeau de Disgrâce,Compétence de l'Antiquité,"+8,8% Résistance aux Critiques"
+676901,Flambeau de Disgrâce,Compétence de l'Antiquité,"+9,6% Résistance aux Critiques"
+677001,Flambeau de Disgrâce,Compétence de l'Antiquité,"+10,4% Résistance aux Critiques"
+677101,Flambeau de Disgrâce,Compétence de l'Antiquité,"+11,2% Résistance aux Critiques"
+677201,Flambeau de Disgrâce,Compétence de l'Antiquité,+12% Résistance aux Critiques
+6772101,Flambeau de Disgrâce,Compétence de l'Antiquité,"
+Lorsque la porteuse est attaquée, elle marque l\'attaquant avec [c][e28002]Chaîne Maudite[-][/c] pendant 2 tours et sa Résistance Totale sera augmentée de 2% pendant 2 tours (ne peut être déclenché qu\'une seule fois par tour).
+Lorsque la porteuse est attaquée par l\'ennemi provoqué, elle obtient une [c][e28002]Barrière[-][/c] (3% des PV Max de la porteuse, cet effet ne peut être déclenché que 3 fois par tour).
+[c][e28002]Chaîne Maudite (Marque, non cumulable) :[-][/c]
+Lorsque la cible marquée reçoit un Coup Mortel et déclenche un effet qui l\'empêche d\'être vaincue par ces dégâts mortels, il ne reste que 1 PV sur lui."
+6772201,Flambeau de Disgrâce,Compétence de l'Antiquité,"
+Lorsque la porteuse est attaquée, elle marque l\'attaquant avec [c][e28002]Chaîne Maudite[-][/c] pendant 2 tours et sa Résistance Totale sera augmentée de 5% pendant 2 tours (ne peut être déclenché qu\'une seule fois par tour).
+Lorsque la porteuse est attaquée par l\'ennemi provoqué, elle obtient une [c][e28002]Barrière[-][/c] (6% des PV Max de la porteuse, cet effet ne peut être déclenché que 4 fois par tour).
+[c][e28002]Chaîne Maudite (Marque, non cumulable) :[-][/c]
+Lorsque la cible marquée reçoit un Coup Mortel et déclenche un effet qui l\'empêche d\'être vaincue par ces dégâts mortels, il ne reste que 1 PV sur lui."
+6772301,Flambeau de Disgrâce,Compétence de l'Antiquité,"
+Lorsque la porteuse est attaquée, elle marque l\'attaquant avec [c][e28002]Chaîne Maudite[-][/c] pendant 2 tours et sa Résistance Totale sera augmentée de 10% pendant 2 tours (ne peut être déclenché qu\'une seule fois par tour).
+Lorsque la porteuse est attaquée par l\'ennemi provoqué, elle obtient une [c][e28002]Barrière[-][/c] (10% des PV Max de la porteuse, cet effet ne peut être déclenché que 5 fois par tour).
+[c][e28002]Chaîne Maudite (Marque, non cumulable) :[-][/c]
+Lorsque la cible marquée reçoit un Coup Mortel et déclenche un effet qui l\'empêche d\'être vaincue par ces dégâts mortels, il ne reste que 1 PV sur lui."

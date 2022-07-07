@@ -464,6 +464,11 @@ function BattleTestWindow:createJsonBattle(isReal, noBattle)
 
 	rp.battle_type = xyd.BattleType.TEST
 	rp.maxRound = tonumber(xyd.db.misc:getValue("test_battle_round", -1)) or 99
+
+	if not rp.random_seed then
+		rp.random_seed = rp.random_seed_2
+	end
+
 	rp.random_log = nil
 	local gmStr = cjson.encode(rp)
 

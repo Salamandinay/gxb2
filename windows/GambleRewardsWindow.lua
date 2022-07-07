@@ -19,6 +19,7 @@ function GambleRewardsWindow:ctor(name, params)
 	self.sureCallback_ = params.sureCallback
 	self.afterAnimationCallback = params.afterAnimationCallback
 	self.closeCallBackFun = params.closeCallBackFun
+	self.layoutCenter = params.layoutCenter
 	self.progressRoundText = params.progressRoundText
 	self.progressText = params.progressText
 	self.progressValue = params.progressValue
@@ -104,6 +105,12 @@ function GambleRewardsWindow:layout()
 
 		self.gridOfItems_.gameObject:SetActive(true)
 		self.itemRoot_.gameObject:SetActive(false)
+	end
+
+	if self.layoutCenter then
+		self.gridOfItems_.pivot = UIWidget.Pivot.Top
+
+		self.gridOfItems_:X(0)
 	end
 
 	self.btnSureLable_.text = __(self.btnSureText)

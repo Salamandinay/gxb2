@@ -41,19 +41,32 @@ function ActivityPromotionLadderData:onSlot()
 				newPartner
 			},
 			callback = function ()
-				local datas = {
-					{
-						noWays = true,
-						item_num = 1,
-						item_id = newPartner:getTableID(),
-						star = newPartner:getStar(),
-						lev = newPartner:getLevel()
+				local params = {
+					items = {
+						{
+							noWays = true,
+							item_num = 1,
+							item_id = newPartner:getTableID(),
+							star = newPartner:getStar(),
+							lev = newPartner:getLevel()
+						}
 					}
 				}
 
-				xyd.WindowManager.get():openWindow("alert_award_window", {
-					items = datas
-				})
+				function params.callback()
+					if #self.originStarMaterial == 0 then
+						return
+					end
+
+					local params = {
+						items = self.originStarMaterial
+					}
+
+					dump(self.originStarMaterial)
+					xyd.WindowManager.get():openWindow("alert_item_window", params)
+				end
+
+				xyd.WindowManager.get():openWindow("alert_award_window", params)
 			end
 		})
 	end
@@ -87,6 +100,22 @@ end
 
 function ActivityPromotionLadderData:recordPromoteTimes(times)
 	self.promoteTimes = times
+end
+
+function ActivityPromotionLadderData:countOriginStarMaterial(partner)
+	self.originStarMaterial = {}
+	local info = partner:getDecompose()
+
+	if info[1] then
+		for item_id, item_num in pairs(info[1]) do
+			if item_id == 359 or item_id == 360 then
+				table.insert(self.originStarMaterial, {
+					item_id = item_id,
+					item_num = item_num
+				})
+			end
+		end
+	end
 end
 
 return ActivityPromotionLadderData

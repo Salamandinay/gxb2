@@ -1174,7 +1174,7 @@ function VipBenefitContent:setContnent(id)
 				id = self.vip
 			})
 		end
-	elseif title == "gacha_box" or title == "gamble" or title == "battle_speed" or title == "gamble_up" or title == "gacha_50times" or title == "auto_transfer" then
+	elseif title == "gacha_box" or title == "gamble" or title == "battle_speed" or title == "gamble_up" or title == "gacha_50times" or title == "auto_transfer" or title == "login_double" then
 		value = xyd.tables.vipTable:getNumber(vip, title)
 
 		if value and value ~= 0 then

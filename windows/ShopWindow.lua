@@ -159,6 +159,8 @@ function MarketItem:ctor(go, parent)
 end
 
 function MarketItem:setInfo(params)
+	self:forceSetState(true)
+
 	if not params then
 		self.go_:SetActive(false)
 

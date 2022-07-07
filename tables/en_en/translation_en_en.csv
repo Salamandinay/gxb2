@@ -3136,7 +3136,7 @@ ACTIVITY_SCHOOL_EXPLORE_EVENT_TITLE,Exploration event
 GO_TO_PROPHET,Enroll
 GO_TO_WISHING_POOL,Slot Machine
 ACTIVITY_SCHOOL_EXPLORE_FINISH_TITLE,Explore Reward
-ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,The first purchase of each Gem Pack during the event provides [c][c1003d]triple the amount of Gems[-][/c]
+ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,The first purchase of each Gem Pack during the event provides [c][c1003d]quadruple the amount of Gems[-][/c]
 ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,"Tips: After the event ends, this benefit on Gem packs will reduce to providing doubled Gems (No matter your first-time double chances for Gem Packs are used or not)"
 GOTO_RECHARGE,Go
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME,Explore time plus {1} seconds
@@ -4508,7 +4508,7 @@ ACTIVITY_3BIRTHDAY_TEXT05,Get random one of the rewards every time you give away
 ACTIVITY_3BIRTHDAY_TEXT06,Give out {1} Times
 ACTIVITY_3BIRTHDAY_HELP,"1. During the event, you can get rewards by giving away Fine Liquors.|2. You will get 6 Rose Pins every time you give away 10 Fine Liquors, there's a chance for you to trigger Crit and get 150%% reward. Girls will react differently when you give Fine Liquors to them. Kratos provides a doubled Crit chance and Teresa increases the Crit reward to 200%%.|3. Once you’ve given out Fine Liquor and have reached a certain amount, additional rewards can be obtained.|4. Rose Pins you acquired by giving away Fine Liquors can be used in event: Hidden Cellar.|5. Once the event ends, the remaining Fine Liquors and Rose Pins will automatically be recycled into Coins at a rate of 50k per Fine Liquor and 100k per Rose Pin."
 ACTIVITY_3BIRTHDAY_GAMBLE_HELP,"1. During the event, you can use Rose Pins to draw rewards from Cabinets.|2. Luxury Cabinet will cost you more Rose Pins than Normal Cabinets but can provide better rewards. You can tap on the maginfying glass button to check out the reward details."
-ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. During the event, you vote for your favorite Girl with vote tickets that can be obtained by completing Daily Tasks.|2. There are 2 types of vote tickets, Popular Vote Tickets can only be used on the day you get them. Support Vote Tickets have a longer expiration date and can be used anytime during the event.|3. This event has Group Matches, Knockout Stage and Results Phase. The Top 4 Girls in each group can get to the Knockout Stage. After the final winner is concluded, the event will enter a Results Phase and display the final champion. You will not be able to vote for Girls or get more vote tickets during this period.|4. You can find out the detailed schedule in Schedule.|5. Popular Vote Tickets and Support Vote Tickets can be obtained by completing Daily Tasks of the event.|6. The event will provide 20 additional Support Vote Tickets that can be obtained daily via Mail. The aforementioned additional Support Vote Tickets will accumulate onto the next day if they are not claimed on the day they were given. You will be able to obtain 20 additional Support Vote Tickets for every 250 VIP Exp you get during the event. If the Support Vote Tickets given from VIP Exp exceeds the ticket storage limit, you will then receive the corresponding 20 additional Support Vote Tickets the next day and days to follow (depending on the amount) unless the event ends. (You are able to get at most 380 additional Support Vote Tickets in this way during this event.)|7. You can get additional rewards by voting for the Girls.|8. An exclusive NEW SKIN will be designed for the champion Girl of this event.|9. All vote tickets will be removed after the event is over."
+ACTIVITY_POPULARITY_VOTE_HELPTEXT01,"1. During the event, you vote for your favorite Girl with vote tickets that can be obtained by completing Daily Tasks.|2. There are 2 types of vote tickets, Popular Vote Tickets can only be used on the day you get them. Support Vote Tickets have a longer expiration date and can be used anytime during the event.|3. This event has Group Matches, Knockout Stage and Results Phase. The Top 4 Girls in each group can get to the Knockout Stage. After the final winner is concluded, the event will enter a Results Phase and display the final champion. You will not be able to vote for Girls or get more vote tickets during this period.|4. You can find out the detailed schedule in Schedule.|5. Popular Vote Tickets and Support Vote Tickets can be obtained by completing Daily Tasks of the event.|6. The event will provide 20 additional Support Vote Tickets obtainable via getting VIP Exp during the event (will be issued via Mail). The aforementioned additional Support Vote Tickets will accumulate onto the next day if they are not claimed on the day they were given. You will be able to obtain 20 additional Support Vote Tickets for every 250 VIP Exp you get during the event. If the Support Vote Tickets given from VIP Exp exceeds the ticket storage limit, you will then receive the corresponding 20 additional Support Vote Tickets the next day and days to follow (depending on the amount) unless the event ends. (You are able to get at most 380 additional Support Vote Tickets in this way during this event.)|7. You can get additional rewards by voting for the Girls.|8. An exclusive NEW SKIN will be designed for the champion Girl of this event.|9. All vote tickets will be removed after the event is over."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT02,"The TOP100 players who vote the most for the winner during ""Miss Yume Pageant"" are displayed on the supporter ranking list."
 ACTIVITY_POPULARITY_VOTE_HELPTEXT03,1. The previous winners and the votes they received are displayed on History page.|2. You cannot vote or claim rewards on this page. Tap the return button in top right corner of this page to return to the main page.
 ACTIVITY_POPULARITY_VOTE_TIMETEXT01,Group Match (Group A)
@@ -6673,7 +6673,7 @@ If you have questions, concerns, or requests related to this policy, you may con
 girls2@carolgames.com (Girls X Battle 2)"
 DELETE_ACCOUNT_TEXT09,Warning
 DELETE_ACCOUNT_TEXT10,Your account deletion request is in process. The delete is irreversible!!! You can still cancel the request in [c][00B550]{1}[-][/c]D[c][00B550]{2}[-][/c]Hr[c][00B550]{3}[-][/c]Sec[c][00B550]{4}[-][/c]
-DELETE_ACCOUNT_TEXT11,"Your account deletion request is in process. The account will be deleted once the process is complete. If you have changed your mind, please tap the button below to cancel your request!"
+DELETE_ACCOUNT_TEXT11,"Your request is being processed, your account will be deactivated shortly."
 DELETE_ACCOUNT_TEXT12,Cancel
 QUICK_FORMATION_TEXT06,Quit
 QUICK_FORMATION_TEXT07,Cannot adjust the preset Lineup
@@ -6709,3 +6709,102 @@ QUICK_FORMATION_TEXT20,Please enter a new name for this lineup
 QUICK_FORMATION_TEXT21,The Girl is in a preset lineup
 QUICK_FORMATION_TEXT22,"Save failed, please set the Girl with a red-dot hint again"
 QUICK_FORMATION_TEXT23,Please set this Girl again
+ACTIVITY_4ANIVERSARY_SIGN_TEXT01,Sign up for rewards and unlock [c][f2af86]Exclusive Packs[-][/c]!
+ACTIVITY_4ANIVERSARY_SIGN_TEXT02,Day {1}
+ACTIVITY_4ANIVERSARY_SIGN_TEXT03,Claimable
+ACTIVITY_4ANIVERSARY_SIGN_TEXT04,Claim
+ACTIVITY_4ANIVERSARY_SIGN_TEXT05,{1} Day(s)
+ACTIVITY_4ANIVERSARY_SIGN_TEXT06,([c][fa7c93]{1}[-][/c]/{2}) Day(s)
+ACTIVITY_4ANIVERSARY_SIGN_TEXT07,Special Discount
+ACTIVITY_4ANIVERSARY_SIGN_TEXT08,$ 4.99
+ACTIVITY_4ANIVERSARY_SIGN_TEXT09,$ 29.99
+ACTIVITY_4ANIVERSARY_SIGN_TEXT10,$ 19.99
+ACTIVITY_4ANIVERSARY_SIGN_TEXT11,$ 49.99
+ACTIVITY_4BIRTHDAY_HELP,"1. The Celebration Party has begun, let's go and check it out!|2. You can invite Promethea or Syrcotte for a dance by consuming 1 Party Drink. You can obtain 1 random reward, 1 Festive Note and increase the Excitement by 1 point for each dance.|3. You can receive additional rewards from Promethea and Syrcotte as the Excitement of the party goes up.|4. After the Excitement reaches the maximum, you will obtain the grand reward. The event will also enter the Finale. You can exchange various rewards with Party Drinks (during this phase, the random reward and Festive Note can no longer be obtained.)|5. You can find the Girls sharing their stories of the past year in ""Party Talks"", a new part of the story will be unlocked each day.|6. Once the event ends, any remaining Party Drinks will automatically be exchanged to 50K Coins each. The Coins will be sent via Mail."
+ACTIVITY_4BIRTHDAY_TASK_HELP,"1. You can obtain Pastry Bags by completing the tasks. You can pipe cream flowers on the anniversary cake by consuming Pastry Bags. You will get a reward for completing each cream flower.|2. By completing a row or column of cream flowers, you will be able to unlock a reward.|3. After all cream flowers are completed, you can obtain a customized grand reward.|4. Once the event ends, any remaining Pastry Bags will automatically be exchanged to 20K Coins each. The Coins will be sent via Mail."
+ACTIVITY_4BIRTHDAY_GAMBLE_HELP,"1. Gwen and Brigit are preparing a concert for the anniversary, let's check it out!|2. For each music piece, there will be an Intro, Interlude, and Ending. You can select several rewards in advance for the piece. After selecting your rewards, you can consume Festive Notes to get a random reward from which you selected.|3. After obtaining all rewards you selected, Gwen and Brigit will start a new piece and you will be able to reselect the rewards.|4. Once the event ends, any remaining Festive Notes will automatically be exchanged to 30K Coins each. The Coins will be sent via Mail."
+ACTIVITY_4BIRTHDAY_TASK_TEXT01,Party Cake
+ACTIVITY_4BIRTHDAY_TASK_TEXT02,Obtain Materials
+ACTIVITY_4BIRTHDAY_TASK_TIPS01,You need more Pastry Bags. You can get more by completing the tasks!
+ACTIVITY_4BIRTHDAY_TASK_AWARD,"You will obtain the reward below for piping this cream flower, confirm to continue?"
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT01,Later
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT02,Confirm
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD01,Intro
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD02,Interlude
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD03,Ending
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE01,Skins
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE02,Girls
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE03,Materials
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE04,Antiques
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS01,You haven't select the rewards to obtain yet.
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS02,"All rewards for the current round are obtained, do you wish to re-select the rewards for the next song"
+ACTIVITY_4BIRTHDAY_TEXT01,Progress:
+ACTIVITY_4BIRTHDAY_BUTTON01,Dance
+ACTIVITY_4BIRTHDAY_BUTTON02,Party Talks
+ACTIVITY_4BIRTHDAY_BUTTON03,Melodic Notes
+ACTIVITY_4BIRTHDAY_TEXT02,Excitement:
+ACTIVITY_4BIRTHDAY_TEXT03,Dance
+ACTIVITY_4BIRTHDAY_TEXT04,How many times do you wish to dance with {1}?
+ACTIVITY_4BIRTHDAY_TEXT05,Syrcotte
+ACTIVITY_4BIRTHDAY_TEXT06,Promethea
+ACTIVITY_4BIRTHDAY_BUTTON04,Finale
+ACTIVITY_4BIRTHDAY_BUTTON05,Story Review
+ACTIVITY_4BIRTHDAY_PLOT_TIPS01,Story will unlock in {1}
+ACTIVITY_4BIRTHDAY_PLOT_TEXT01,"This part of story is completed, do you wish to review the story?"
+ACTIVITY_4BIRTHDAY_TIPS01,"The Excitement hasn't reached the maximum, the grand reward is still locked."
+ACTIVITY_4BIRTHDAY_TIPS02,"Grand reward unlocked, you have entered Finale phase of the event"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS03,You have selected enough rewards for the current piece
+ACTIVITY_4ANIVERSARY_SIGN_TEXT12,You need to sign in more days to unlock {1}!
+ACTIVITY_4BIRTHDAY_TEXT07,You can obtain one of the following rewards by random for completing each dance
+ACTIVITY_4BIRTHDAY_TIPS03,"The event has entered the Finale, please go check it out!"
+ACTIVITY_4BIRTHDAY_TEXT08,"The number of times to dance with {1} has reached the limit, please invite the other Girl"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,Don't have enough remaining rewards
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,"Gwen and Brigit are playing music, please hold on."
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,You cannot switch an obtained reward
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,All slots need to be filled with rewards. The previously selected rewards have been placed in the free slots.
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][6f6693]Obtain [-][/c] [c][ffb629] 1 [-][/c] [c][6f6693]Reward[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][ba6e7b]Obtain [-][/c][c][ffb629] 5 [-][/c][c][ba6e7b]Rewards[-][/c]
+ANNUAL4_REVIEW_MAIL_TITLE,4th Anniversary - Exclusive for you
+ANNUAL4_REVIEW_SKIP,Tap to move to the next page
+ANNUAL4_REVIEW_1_1,Your own game story
+ANNUAL4_REVIEW_1_2,And
+ANNUAL4_REVIEW_1_3,4th Anniversary
+ANNUAL4_REVIEW_1_4,Check
+ANNUAL4_REVIEW_1_5,Data by 2022/07/08 0:00 (UTC/GMT 0)
+ANNUAL4_REVIEW_2_1,"[c][size=30][ff7fd6]{1}[-][/c] On that day,\nYou first met the Girls in Yume Academy."
+ANNUAL4_REVIEW_2_2,"So far, you have already obtained\n[c][size=30][ff7fd6]{1}[-][/c] Elite Girl(s)."
+ANNUAL4_REVIEW_2_3,Including [c][size=30][ff7fd6]{1}[-][/c] Star's Descent fight for you as a Girl from House Cosmos
+ANNUAL4_REVIEW_3_1,"In Yume Academy,\nYou've made [c][size=30][ff7fd6]{1}[-][/c] friend(s)."
+ANNUAL4_REVIEW_3_2,In the Yume Academy\nyou made friends with [c][size=30][ff7fd6]{1}[-][/c] players.\nYou have grown even closer together through your shared adventures.
+ANNUAL4_REVIEW_3_3,"In Yume Academy,\nYou're still looking for a true friend."
+ANNUAL4_REVIEW_3_4,"As the {2} of Guild [c][size=30][ff7fd6]{1}[-][/c],\nyou share the same ambition\nwith [c][size=30][ff7fd6]{3}[-][/c] Guild Member(s)."
+ANNUAL4_REVIEW_3_5,"As the {2} of Guild [c][size=30][ff7fd6]{1}[-][/c],\nyou are looking for more members for your Guild"
+ANNUAL4_REVIEW_3_6,"You haven't joined a Guild yet.\nBut someday, you will find a suitable one."
+ANNUAL4_REVIEW_4_1,As the only Senpai in Yume Academy.\nYou've unlocked [c][size=30][ff7fd6]{1}[-][/c] 5-star Girl(s) in Gallery\nYou collection progress has reached [c][size=30][ff7fd6]{2}[-][/c].
+ANNUAL4_REVIEW_4_2,Many Girls in Yume Academy are still looking for a chance to meet you.
+ANNUAL4_REVIEW_4_3,Tales of your stories are told all over the campus.
+ANNUAL4_REVIEW_4_4,"You've also unlocked [c][size=30][ff7fd6]{1}[-][/c] 10-star Girl(s) in Gallery, the collection progress has reached [c][size=30][ff7fd6]{2}[-][/c]."
+ANNUAL4_REVIEW_4_5,"In the church of Yume Academy,\nyou've formed an oath with [c][size=30][ff7fd6]{1}[-][/c] Girl(s)."
+ANNUAL4_REVIEW_4_6,"Please also remember,\nthere're still [c][size=30][ff7fd6]{1}[-][/c] Girls waiting for you to offer them your Oath Ring(s)..."
+ANNUAL4_REVIEW_4_7,"According to a survey,\nthere're [c][size=30][ff7fd6]{1}[-][/c] Girls waiting for you to offer them your Oath Ring(s)..."
+ANNUAL4_REVIEW_4_8,You haven't formed an Oath with any one of the Girls yet\nWhich girl do you want to invite on a date?
+ANNUAL4_REVIEW_5_1,"Under your command,\nthe Girls' total power has reached:"
+ANNUAL4_REVIEW_5_2,"In order to protect the Academy and maintain peace,\nyou have fought in these locations:"
+ANNUAL4_REVIEW_5_3,Tests Progress:\nStage [c][size=30][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_4,Patrol Progress:\nStage [c][size=30][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_5,Character Challenge Progress:\n[c][size=30][ff7fd6]{1}[-][/c] stories completed
+ANNUAL4_REVIEW_5_6,{1} players exceeded
+ANNUAL4_REVIEW_5_7,Progress: {1}/{2}
+ANNUAL4_REVIEW_5_8,Volcano Sanctum Damage Record:\n[c][size=30][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_9,Deep Sea Sanctum Damage Record:\n[c][size=30][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_10,Echoes of Time Progress:\n{1}-[c][size=30][ff7fd6]{2}[-][/c]
+ANNUAL4_REVIEW_5_11,Tsuruga Shrine Score Record:\n[c][size=30][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_6_1,"So far,[size=30][-]\nYou've obtained [c][size=30][ff7fd6]{1}[-][/c] Collection Points."
+ANNUAL4_REVIEW_6_2,Almost nobody knows exactly how valuable your collections are.
+ANNUAL4_REVIEW_6_3,And you have collected\n[c][size=30][ff7fd6]{1}[-][/c] Outfit pieces
+ANNUAL4_REVIEW_6_4,You've collected\n[c][size=30][ff7fd6]{1}[-][/c] skin(s) for your Girls.
+ANNUAL4_REVIEW_7_1,"For everything we've been through|Whether it's the Excursions we've gone on|Or the Trials we’ve faced together in the Shrine|And even the stars that bear witness|Here is the evidence of your unbreakable tie with Yume Academy|We believe, this is not the end|It is not even the beginning of the end|But it is, perhaps, the end of the beginning"
+ANNUAL4_REVIEW_7_2,Best Regards
+ANNUAL4_REVIEW_4_6_1,"Please also remember,\nthere're still [c][size=30][ff7fd6]{1}[-][/c] Girls waiting for you to offer them your Oath Ring(s)..."
+ANNUAL4_REVIEW_4_7_1,"According to a survey,\nthere're [c][size=30][ff7fd6]{1}[-][/c] Girl waiting for you to offer them your Oath Ring..."
+ACTIVITY_4BIRTHDAY_TITLE,Celebration\nParty

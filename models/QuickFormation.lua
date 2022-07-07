@@ -119,6 +119,8 @@ function QuickFormation:updatePartnerInfo()
 					partner_info.star_origin = partnerInfo.star_origin
 					partner_info.treasures = partnerInfo.treasures
 				end
+
+				partner_info:updateAttrs()
 			end
 		end
 	end
@@ -145,7 +147,7 @@ function QuickFormation:getTeamNum()
 		return 5
 	end
 
-	return self.slotNum_
+	return self.slotNum_ or 0
 end
 
 function QuickFormation:isTeamPartnersHas(index)

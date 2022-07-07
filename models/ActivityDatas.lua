@@ -285,7 +285,11 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_SPFARM] = require("app.models.datas.ActivitySpfarmData"),
 	[xyd.ActivityID.ACTIVITY_DRAGONBOAT2022] = require("app.models.datas.ActivityDragonboat2022Data"),
 	[xyd.ActivityID.ACTIVITY_SPFARM_SUPPLY] = require("app.models.datas.ActivitySpfarmSupplyData"),
-	[xyd.ActivityID.ACTIVITY_SPFARM_MISSION] = require("app.models.datas.ActivitySpfarmMissionData")
+	[xyd.ActivityID.ACTIVITY_SPFARM_MISSION] = require("app.models.datas.ActivitySpfarmMissionData"),
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MUSIC] = require("app.models.datas.Activity4BirthdayMusicData"),
+	[xyd.ActivityID.ACTIVITY_4ANNIVERSARY_SIGN] = require("app.models.datas.Activity4AnniversarySignData"),
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MISSION] = require("app.models.datas.Activity4BirthdayMission"),
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_PARTY] = require("app.models.datas.Activity4BirthdayPartyData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

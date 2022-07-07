@@ -6,7 +6,7 @@ function ActivityYearsSummary:setData(params)
 end
 
 function ActivityYearsSummary:checkReadState()
-	local isReadData = xyd.db.misc:getValue("years_summary_mail_read")
+	local isReadData = xyd.db.misc:getValue("years_summary_mail_read2")
 
 	if not isReadData or tonumber(isReadData) ~= 1 then
 		xyd.models.redMark:setMark(xyd.RedMarkType.MAIL, true)

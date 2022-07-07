@@ -25,12 +25,14 @@ end
 function AnniversaryGiftbag3:getUIComponent()
 	local go = self.go
 	self.all_go = self.go:NodeByName("allCon").gameObject
+	self.buyNode = self.all_go:NodeByName("buyNode").gameObject
 	self.buyBtn = self.all_go:NodeByName("buyNode/btnPurchase").gameObject
 	self.curPrice = self.buyBtn:ComponentByName("curPrice", typeof(UILabel))
 	self.labelVipExp = self.all_go:ComponentByName("buyNode/labelVipExp", typeof(UILabel))
 	self.limitBuyText = self.all_go:ComponentByName("buyNode/limitBuyText", typeof(UILabel))
 	self.showNode = self.all_go:NodeByName("showNode").gameObject
 	self.modelNode = self.all_go:ComponentByName("modelNode", typeof(UITexture))
+	self.modelImg = self.all_go:NodeByName("modelImg")
 	self.titleImg = self.all_go:ComponentByName("titleImg", typeof(UISprite))
 	self.MAX_ITEM_NUM = 6
 	self.giftId = xyd.tables.activityTable:getGiftBag(self.id)[1]
@@ -75,19 +77,11 @@ end
 
 function AnniversaryGiftbag3:resizeToParent()
 	AnniversaryGiftbag3.super.resizeToParent(self)
-
-	local theScale = 1 - self.scale_num_contrary
-
-	self.showNode:Y(-1051 + 119 * theScale)
-	self.showNode:NodeByName("floorImg1").gameObject:Y(536 + -71 * theScale)
-	self.showNode:NodeByName("floorImg2").gameObject:Y(368 + -35 * theScale)
-	self.timerGroup:Y(-262 + 26 * theScale)
-	self.titleImg.gameObject:Y(-170 + 26 * theScale)
-	self.all_go:NodeByName("buyNode").gameObject:Y(-925 + 130 * theScale)
-	self.actNode:NodeByName("item1").gameObject:Y(668 + -71 * theScale)
-	self.actNode:NodeByName("item2").gameObject:Y(482 + -35 * theScale)
-	self.actNode:NodeByName("item2_2").gameObject:Y(481 + -35 * theScale)
-	self.actNode:NodeByName("item3").gameObject:Y(482 + -35 * theScale)
+	self:resizePosY(self.showNode, -960, -1055)
+	self:resizePosY(self.titleImg, -69, -89)
+	self:resizePosY(self.timerGroup, -134, -154)
+	self:resizePosY(self.buyNode, -800, -925)
+	self:resizePosY(self.modelImg, -590, -628)
 end
 
 function AnniversaryGiftbag3:setBtnState()

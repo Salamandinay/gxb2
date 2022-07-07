@@ -336,6 +336,8 @@ function StoryWindow:initTable()
 		self.storyTable_ = xyd.tables.activityCrystalBallPlotTable
 	elseif self.storyType_ == xyd.StoryType.SHRINE_HURDLE then
 		self.storyTable_ = xyd.tables.activityShrinePlotTable
+	elseif self.storyType_ == xyd.StoryType.ACTIVITY_4BIRTHDAY_PARTY then
+		self.storyTable_ = xyd.tables.activity4birthdayPlotTable
 	end
 end
 
@@ -1832,6 +1834,15 @@ function StoryWindow:disappearStory(skip)
 		else
 			self:closeSwitch()
 		end
+	elseif self.storyType_ == xyd.StoryType.ACTIVITY_4BIRTHDAY_PARTY then
+		if not skip then
+			local msg = messages_pb.record_activity_req()
+			msg.activity_id = xyd.ActivityID.ACTIVITY_4BIRTHDAY_PARTY * 1000 + self.endId
+
+			xyd.Backend.get():request(xyd.mid.RECORD_ACTIVITY, msg)
+		end
+
+		self:closeSwitch()
 	elseif self.storyType_ == xyd.StoryType.ACTIVITY_VALENTINE then
 		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_VALENTINE)
 

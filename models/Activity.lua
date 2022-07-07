@@ -157,8 +157,9 @@ function Activity:onActivityList(event)
 		dump(a, "查看全部活动数据。。。。。。。。")
 
 		for i, v in pairs(a.activity_list) do
-			if tonumber(v.activity_id) == 292 then
-				dump(v, "292===========================")
+			if tonumber(v.activity_id) == 305 then
+				print("getServerTime:", xyd.getServerTime())
+				dump(v, "305===========================")
 			end
 		end
 
@@ -824,7 +825,13 @@ end
 
 function Activity:onRedPoint(evt)
 	if evt.data.function_id == xyd.ActivityID.ACTIVITY_LAFULI_CASTLE then
-		xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_LAFULI_CASTLE)
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LAFULI_CASTLE)
+
+		if not activityData:getRedMarkState() then
+			xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_LAFULI_CASTLE)
+		end
+
+		return
 	end
 
 	if evt.data.function_id ~= xyd.FunctionID.ACTIVITY then

@@ -74,6 +74,8 @@ function FriendBossBattleFormationWindow:initFriendPartner()
 					awake = partner.awake,
 					group = partner:getGroup(),
 					grade = partner:getGrade(),
+					skin_id = partner:getSkinId(),
+					is_vowed = partner.is_vowed,
 					partnerID = tonumber(friendSharedPartnerInfo.playerId or friendSharedPartnerInfo.player_id),
 					partner_id = tonumber(friendSharedPartnerInfo.playerId or friendSharedPartnerInfo.player_id),
 					power = partner:getPower(),

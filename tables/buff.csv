@@ -571,8 +571,8 @@ plmxsThorns,-1,,1,1,,1,,,,,,,,,,,,,buff_plmxsThorns,,1,1953|1954,,,1,2,
 plmxsDebuff,-1,,1,2,,1,,,,,,,,,,,,,buff_plmxsDebuff,,1,1957|1958,,,1,2,
 plmxsTrans,-1,,0,1,,1,1,,,,,,,,,,,,,,,,,,1,0,
 hpShieldByMaxHpTimes,-1,,1,,,,,,,,,,,,,1,,,,,,,,,,,
-freeHarmLeft1,-1,,0,2,,,,,,,,,,,,,,,,,,,,,,,
-allHarmDec1,-1,,1,,,,,,,,,allHarmDec,,,,,,,,,,,,,,,1
+freeHarmLeft1,-1,,0,2,,,,,,,,,,,,,,,buff_freeHarmLeft1,,,,,,1,1,
+allHarmDec1,-1,,1,,,,,,,,,allHarmDec,,,1000,,,,,,,,,,,,1
 costMaxHp,-1,,1,,,,,1,,,,,,,,,,,,,,,,,,,
 targetADFire,-1,,1,2,4,,,1,,,,dotFire,,,,,,,,,,,,,,,
 plmxsThornsHurt,-1,,0,,,,,1,,,,,,,,,,,,,1,1955|1956,,,,,

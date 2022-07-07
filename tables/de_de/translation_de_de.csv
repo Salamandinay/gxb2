@@ -1365,7 +1365,7 @@ COMPOSE_DATES_GIFTS_TEXT03,Die Anzahl der Geschenke darf nicht 0 sein
 MEMORIES,Erinnerung
 QUIZ,Quiz
 DATES_STORY_WINDOW,Geschichten-Charakter
-DATES_GIFTS_SEND_WINDOW,Geschenk Senden
+DATES_GIFTS_SEND_WINDOW,Geschenke senden
 IF_MANUAL_UNLOCK_HERO,Dieses Mädchen ist gesperrt. Willst du sie entsperren?
 DATES_TEXT16,"Du musst mit den Mädchen interagieren, um ihre Geschichte zu entsperren~"
 DATES_TEXT17,Dieses Mädchen hat derzeit keine Geschichte
@@ -3132,8 +3132,8 @@ ACTIVITY_SCHOOL_EXPLORE_EVENT_TITLE,Erkundungsevent
 GO_TO_PROPHET,Einschreiben
 GO_TO_WISHING_POOL,Glücksautomat
 ACTIVITY_SCHOOL_EXPLORE_FINISH_TITLE,Belohnungen erkunden
-ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,"Wenn du während des Events zum ersten Mal auflädst, kannst du [c][c1003d]3-fache Dias[-][/c] erhalten"
-ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,Tipp:\nWenn die dreifachen Menge für die erste Einzahlung während des Events nicht genutzt wurde wird sie nach dem Event zur zweifachen Menge. Bitte benutze es schnell~
+ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,"Wenn du während des Events zum ersten Mal auflädst, kannst du [c][c1003d]4-fache Dias[-][/c] erhalten!"
+ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,"Tipp:\nWenn die vierfachen Menge für die erste Einzahlung während des Events nicht genutzt wurde, wird sie nach dem Event zur zweifachen Menge. Bitte benutze es schnell~"
 GOTO_RECHARGE,Zum Aufladen
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME,Erkundungszeit steig um {1} Sekunden
 ANNIVERSARY_CAKE_END_AWARD,Vorschau
@@ -3470,7 +3470,7 @@ WISH_GACHA_NUM,Mal(e)
 WISH_GACHA_CHANCE,Chance
 WISH_GACHA_TEXT7,{1}/{2}
 WISH_GACHA_TEXT8,x{1}
-MONTH_CARD_VIP,+{1} VIP EXP
+MONTH_CARD_VIP,+{1} VIP-EXP
 MONTH_CARD_TIP_1,Kaufe um {1} Dias sofort zu erhalten
 MONTH_CARD_TIP_2,Erhatle 30 Tage täglich {1} Dias
 ACADEMY_ASSESSMENT_WINDOW_HELP_NEW,"1. Lieber Senpai, die aktuelle Prüfung findet nun in Saisonform statt. Eine Saison dauert 14 Tage. Davon sind 13 Tage Prüfungsphase und 1 Tag Anzeigephase der Ergebnisse.|2. Die 6 Häuser werden für die Prüfung geöffnet. Du kannst du nur Mädchen des entsprechenden Hauses einsetzen. Am Eröffnungstag wird der Herausforderungseingang geschlossen, der Herausforderungsfortschritt der Senpais zurückgesetzt und die entsprechenden Belohnungen geschickt. |3. Jede Hausprüfung hat 60 Stufen. Die Feinde in der Prüfung ändern sich mit jeder Saison. Die feindliche Aufstellung kann über die Detaill-Taste am Eingang der Stufe geprüft werden.|4. Jede Herausforderung kostet 1 Zulassungsticket. Jeden Tag erhälst du 10 Zulassungstickets. Bitte achte darauf sie besonnen einzusetzen. Natürlich kannst du aber auch mit Dias weitere Zulassungstickets kaufen.|5. In jeder Stufe sind Belohnungen für das zusätzliche Belohnungen für das erstmalige Absolvieren der Stufe erhältlich. Diese Belohnungen kann man nur das erste Mal erhalten.|6. Wenn die Herausforderung erfolgreich war, kannst du Belohnungen für das Bestehen der Stufe erhalten. Gleichzeitig können Prüfungszertifikate eingesetzt werden, um Säuberungsbelohnungen zu erhalten. Säuberungen sind immer erfolgreich. |7. Jeden Tag erhälst du 2 Prüfungszertifikate. Wenn du zum ersten Mal die 9./18./30. Stufe bestehst, wird am nächsten Tag jeweils 1 Zertifikat hinzugefügt. Maximal können 3 Zertifikate hinzugefügt werden. Unterschiedliche Häuser werden nicht zurückgesetzt. (Beispiel: Wenn du zum ersten Mal die 9. Stufe bestehst, erhälst du ab dem nächsten Tag täglich 3 Prüfungszertifikate für die Säuberung). |8. Du kannst mit Dias weitere Prüfungszertifikate kaufen. Der Preis steigt mit der Anzahl der gekauften Male. Jeden Tag kannst du maximal 10 Prüfungszertifikate kaufen. (Die Prüfungszertifikate, die nicht verwendet werden, werden zurückgesetzt). |9. Zulassungstickets und Prüfungszertifikate werden jeden Tag um 00:00 (UTC/GMT 0) zurückgesetzt. |10. Nach dem Ende der Herausforderung (bezieht sich nicht auf die Säuberung), kannst du Prüfungspunkte erhalten. In jedem Haus erhälst du von Stufe 1-20 1 Punkt, Stufe 21-40 2 Punkte und Stufe 41-60 4 Punkte. Am Abrechnungstag werden deine Belohnungen entsprechend deine gesamten Stufenpunkte per Mail an dich geschickt und diese Stufenpunkte werden zurückgesetzt.|11. Der Spieler, der die meisten Punkte bei der jeweiligen Hausprüfung erreicht hat, erhält als zusätzliche Belohnung einen auf 14 Tage limitierten Avatarbildrahmen. Wenn es mehrere Spieler (bis zu 10) gibt, die die gleiche Punktzahl haben und den ersten Platz einnehmen, werden sie in der Reihenfolge, in der sie die Punktzahl erreicht haben, mit den Avatarbildrahmen belohnt."
@@ -3753,9 +3753,9 @@ ACTIVITY_YEAR_FUND_PRICE,"€21,99"
 ACTIVITY_DOLL_BUY_UNLIMIT,Unbegrenzt
 ACTIVITY_CHRISTMAS_SALE_HELP,"1. Verwende die Einkaufsgutscheine, um die Belohnungen einzutauschen. Die Belohnungen der ersten 3 Stufen können direkt eingetauscht werden. Um die nächsten Stufen zu entsperren, musst du zuerst eine bestimme Menge von Einkaufsgutscheinen verwenden.|2. Die Belohnungen enthalten feste Belohnungen und Auswahlbelohnungen.|3. Die Chancen für Belohnungen jeder Stufe und jede Auswahlbelohnung sind begrenzt. Fallen die Chancen für eine Stufe auf 0, können Belohnungen dieser Stufe nicht mehr gekauft werden. Fallen die Chancen für eine Auswahlbelohnung auf 0, kann diese Auswahlbelohnung nicht mehr gewählt werden.|4. Erhalten des Einkaufsgutscheins: Einkaufsvorbereitung, Black Friday Sonderangebote, Superpakete, Kostümpakete, Glückspakete, Entdecker-Pakete.|5. Nach dem Ende des Events werden die noch nicht verwendeten ""Einkaufsgutscheine"" recycelt. Jeder Einkaufsgutschein entspricht 50k Münzen und die Münzen werden per Mail gesendet."
 RE_CHECKIN,Nachträglich\nanmelden
-RE_CHECKIN_TIPS,Sicher {1} Dias für nachträgliches Anmelden ausgeben?
+RE_CHECKIN_TIPS,Willst du sicher {1} Dias für nachträgliches Anmelden ausgeben?
 SUMMON_GIFTBAG_MENU01,Kapseln ziehen ({1}/{2})
-SUMMON_GIFTBAG_MENU02,Neues Mädchen
+SUMMON_GIFTBAG_MENU02,Neue Mädchen
 SUMMON_GIFTBAG_HELP,"1. Um die neuen Mädchen an der Schule willkommen zu heißen, hat Babel euch einen Spezialbonus vorbereitet: Während des Events kannst du durch Ziehen der Kapseln zusätzliche Belohnungen erhalten. Wenn die gezogenen Super Kapseln oder neuen Mädchen eine bestimmte Zahl erreicht haben, bekommst du zusätzliche Belohnungen.|2. Die durch das Event ""Aufstiegszeremonie"" erhaltenen neuen Mädchen werden nicht in diesem Event mitgezählt.|3. Wann dieses Event das nächste Mal stattfindet, wird auf unserer offiziellen Facebookseite vorher bekanntgegeben. Folg uns doch, um keine News mehr zu verpassen!"
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,"Verwende {1}x ""{2}"", um es zu entsperren."
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Vorschau
@@ -4052,7 +4052,7 @@ ACTIVITY_SPROUTS_NEW_HELP,"1. Beim 10. Gießen bekommst du sicher 10 Blüten.|2.
 ACTIVITY_NEWBEE_FUND_HELP,"1. Das Event gliedert sich in Kaufphase und Sammlungsphase.|2. Nach dem Ende der Kaufphase verschwindet das Event. Bitte kaufe es rechtzeitig.|3. Nach dem Kauf erhältst du sofort die Dias. Ab dem Kauftag kannst du in 20 Tagen täglich auf der Eventseite reiche Belohnungen für deine gesamte Login-Tage sammeln.|4. Die Belohnungen, die du nach dem täglichen Login am selben Tag nicht rechtzeitig gesammelt hast, kannst du nachträglich sammeln, indem du Dias ausgibst."
 ACTIVITY_NEWBEE_FUND_TEXT01,"Kaufe den Neulingsfonds, um an folgenden 20 Tagen täglich reichhaltige Belohnungen zu erhalten!"
 ACTIVITY_NEWBEE_FUND_TEXT02,Kaufe für tägliche reichhaltige\nBelohnungen den Neulingsfonds!
-HOUSE_SETTING,Nutzen
+HOUSE_SETTING,Einstellen
 TRAVEL_MAIN_TEXT54,Als
 TRAVEL_MAIN_TEXT55,Limit: {1}
 TRAVEL_MAIN_TEXT56,Dias nicht ausreichend. Kaufen fehlgeschlagen!
@@ -6662,7 +6662,7 @@ ALTERSBESCHRÄNKUNGEN
 Wir erheben oder erfragen wissentlich keine personenbezogenen Daten von und richten keine interessensbezogene Werbung an Kinder und Jugendliche unter 13 Jahren, bzw. gestatten solchen Personen nicht die Nutzung unserer Dienste. Wenn Sie noch nicht 13 Jahre alt sind, schicken Sie uns bitte keine Daten über sich selbst, einschließlich Ihres Namens, Ihrer Adresse, Telefonnummer oder E-Mail-Adresse. Niemand unter 13 Jahren darf uns personenbezogene Daten angeben. Sollten wir davon Kenntnis erhalten, dass wir personenbezogene Daten eines Kindes oder Jugendlichen unter 13 Jahren erhoben haben, werden wir diese Daten schnellstmöglich löschen. Wenn Sie der Ansicht sind, dass wir Daten von oder über ein Kind unter 13 Jahren besitzen, wenden Sie sich bitte an uns."
 DELETE_ACCOUNT_TEXT09,Warnung zur Kontolöschung
 DELETE_ACCOUNT_TEXT10,Deine Forderung nach Löschen des Kontos wurde bereits vorgelegt. Diese Aktion (Konto löschen) kann nicht rückgängig gemacht werden! Countdown zum Abbrechen der Löschung: [c][00B550]{1}[-][/c] Tag(e) [c][00B550]{2}[-][/c]St. [c][00B550]{3}[-][/c]Min. [c][00B550]{4}[-][/c]Sek.
-DELETE_ACCOUNT_TEXT11,"Deine Forderung nach der Löschung des Kontos wird bearbeitet. Dieses Konto wird bald unerreichbar sein. Hast du deine Meinung geändert, tippe bitte auf den Knopf unten, um das Löschen abzubrechen!"
+DELETE_ACCOUNT_TEXT11,Deine Anforderung wird behandelt und dieses Konto wird bald unerreichbar sein!
 DELETE_ACCOUNT_TEXT12,Löschen abbrechen
 QUICK_FORMATION_TEXT06,Abbrechen
 QUICK_FORMATION_TEXT07,Ein voraufgestelltes Team aufgerufen. Aufstellen unmöglich.
@@ -6691,10 +6691,117 @@ QUICK_FORMATION_TEXT13,Zum Aufstellen eines neuen Teams werden {1} Dias benötig
 QUICK_FORMATION_TEXT14,Maximal 6 Zeichen
 QUICK_FORMATION_TEXT15,Wird nach dem Abschluss von Runde {1} entsperrt
 QUICK_FORMATION_TEXT16,Willst du dieses Team speichern?
-QUICK_FORMATION_TEXT17,編隊中的戰姬無法進行回退等操作
+QUICK_FORMATION_TEXT17,"Mädchen im Reserve-Team kann nicht durch Absolvieren, Umkehren, Erwecken usw. angepasst werden."
 QUICK_FORMATION_TEXT18,"1. Nachdem du die Runde 8-5 abgeschlossen hast, wird die Funktion ""Team voraufstellen"" entsperrt.|2. Die Mädchen können in verschiedenen Teams wiederholt aufgestellt werden und die woanders außerhalb dieser Funktion eingestellten Teams werden nicht davon beeinflusst.|3. Hier kannst du die Ausrüstungen, Kristalle, Antiquitäten und Potenziale der Mädchen erneut anpassen, um verschiedene Gegner zu bekämpfen.|4. Die voraufgestellten Teams können nur bei einigen der Funktionen, wo nur eine Aufstellung zum Kampf entsendet werden, aufgerufen werden. Auf der Aufstellungsseite kannst du deine Teams aufrufen, um passende Kämpferinnen schnell zum Kampf zu entsenden.|5. Zu Beginn stehen 3 Teams zur Verfügung. Du kannst auch weitere Teams aufstellen, indem du Dias ausgibst.|6. Drücke lange auf den Namen des Teams, um das Team zu umbenennen."
 QUICK_FORMATION_TEXT19,Team umbenennen
 QUICK_FORMATION_TEXT20,Gib einen neuen Teamnamen ein
 QUICK_FORMATION_TEXT21,Das Mädchen wurde in einem Reserve-Team aufgestellt.
 QUICK_FORMATION_TEXT22,Speichern fehlgeschlagen. Bitte stelle die Mädchen mit einem roten Punkt erneut auf.
-QUICK_FORMATION_TEXT23,Das Mädchen soll erneut aufgestellt werden.
+QUICK_FORMATION_TEXT23,Das Mädchen soll erneut aufgestellt/angepasst werden.
+ACTIVITY_4ANIVERSARY_SIGN_TEXT01,Melde dich für tägliche Belohnungen und [c][f2af86]Login-Pakete[-][/c] an!
+ACTIVITY_4ANIVERSARY_SIGN_TEXT02,{1}. Tag
+ACTIVITY_4ANIVERSARY_SIGN_TEXT03,Sammelbar
+ACTIVITY_4ANIVERSARY_SIGN_TEXT04,Anmelden
+ACTIVITY_4ANIVERSARY_SIGN_TEXT05,{1} Tage
+ACTIVITY_4ANIVERSARY_SIGN_TEXT06,([c][fa7c93]{1}[-][/c]/{2}) Tage
+ACTIVITY_4ANIVERSARY_SIGN_TEXT07,SALE
+ACTIVITY_4ANIVERSARY_SIGN_TEXT08,"€5,49"
+ACTIVITY_4ANIVERSARY_SIGN_TEXT09,"€32,99"
+ACTIVITY_4ANIVERSARY_SIGN_TEXT10,"€21,99"
+ACTIVITY_4ANIVERSARY_SIGN_TEXT11,"€54,99"
+ACTIVITY_4BIRTHDAY_HELP,"1. Die Jubiläums-Tanzparty hat begonnen und lade schnell deine Mädchen dazu ein!|2. Verwende 1 ""Party Getränk"", um Promethea oder Silcotti einmal zum Tanz einzuladen. Nach einem Tanz erhältst du eine zufällige Belohnung une eine ""Tanzende Note"". Auch das Heat-Level wird um 1 erhöht.|3. Dem Heat-Level entsprechend werden die beiden Mädchen dir verschiedene Belohnungen schenken.|4. Sobald das Heat-Level das max. Level erreicht hat, erhältst du automatisch die ultimativ Belohnung der Tanzparty und die Highlights der Party werden entsperrt, wo du deine ""Party Getränke"" gegen unterschiedliche Belohnungen eintauschen kannst. (Dadurch erhältst du keine zufälligen Belohnungen oder ""Tanzende Note"" mehr.)|5. Bei ""Plauderei"" unterhalten sich die Mädchen über alles, was im letzten Jahr an der Akademie passiert ist. Jeden Tag wird ein Kapitel zum Lesen entsperrt.|6. Bei ""Klänge der Freude"" kannst du ""Tanzende Note"" verwenden, um reichhaltige Belohnungen zu ziehen.|7. Nach dem Ende des Events werden die noch nicht verwendeten ""Party Getränke"" automatisch per Mail recycelt. Jedes entspricht 50K Münzen."
+ACTIVITY_4BIRTHDAY_TASK_HELP,"1. Schließe die bestimmten Aufgaben ab, um ""Spritzbeutel"" zu erhalten. Die Spritzbeutel können zum Herstellen eines Tortenstücks verwendet werden und dadurch erhältst du eine Belohnung (3x Party Getränke und 50 Dias).|2. Jedes Mal wenn du die Stücke einer Reihe oder einer Spalte fertig hergestellt hast, erhältst du die entsprechenden Reihen- oder Spaltebelohnungen.|3. Hast du alle Stücke auf der Torte fertig hergestellt, erhältst du die Tortenbelohnungen!|4. Nach dem Ende des Events werden die noch nicht verwendeten ""Spritzbeutel"" automatisch per Mail recycelt. Jeder entspricht 20K Münzen."
+ACTIVITY_4BIRTHDAY_GAMBLE_HELP,"1. Carmen und Bonnie sind bereit fürs Spielen der festlichen Melodie. Das können wir nicht verpassen!|2. Die Melodie ist aus 3 Teilen zusammengesetzt: Vorspiel, Zwischenspiel und Nachspiel. In jedem Teil kannst du zuerst die gewünschten Belohnungen auswählen und dann die ""Tanzende Note"" verwenden, um eine der ausgewählten Belohnungen zufällig zu erhalten.|3. Hast du alle ausgewählten Belohnungen erhalten, wird die Melodie zurückgesetzt und erneut abgespielt.|4. Nach dem Ende des Events werden die noch nicht verwendeten ""Tanzenden Noten"" automatisch per Mail recycelt. Jede entspricht 30K Münzen."
+ACTIVITY_4BIRTHDAY_TASK_TEXT01,Party Torte
+ACTIVITY_4BIRTHDAY_TASK_TEXT02,Spritzbeutel erhalten
+ACTIVITY_4BIRTHDAY_TASK_TIPS01,"Spritzbeutel nicht ausreichend. Schließe die Aufgaben ab, um Spritzbeutel zu erhalten!"
+ACTIVITY_4BIRTHDAY_TASK_AWARD,Willst du sicher dieses Tortenstück für folgende Belohnungen herstellen?
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT01,Nicht jetzt
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT02,Herstellen
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD01,Vorspiel
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD02,Zwischenspiel
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD03,Nachspiel
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE01,Kostüme
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE02,Mädchen
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE03,Ressourcen
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE04,Antiquitäten
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS01,Die Belohnungen werden noch nicht fertig ausgewählt.
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS02,Alle Belohnungen erhalten. Willst du die Belohnungen erneut auswählen?
+ACTIVITY_4BIRTHDAY_TEXT01,Fortschritt:
+ACTIVITY_4BIRTHDAY_BUTTON01,Einladen
+ACTIVITY_4BIRTHDAY_BUTTON02,Plauderei
+ACTIVITY_4BIRTHDAY_BUTTON03,Klänge der\nFreude
+ACTIVITY_4BIRTHDAY_TEXT02,Heat-Level:
+ACTIVITY_4BIRTHDAY_TEXT03,Tanzen
+ACTIVITY_4BIRTHDAY_TEXT04,"Gib ein, wievielmal du mit {1} tanzen willst"
+ACTIVITY_4BIRTHDAY_TEXT05,Silcotti
+ACTIVITY_4BIRTHDAY_TEXT06,Promethea
+ACTIVITY_4BIRTHDAY_BUTTON04,Highlights
+ACTIVITY_4BIRTHDAY_BUTTON05,Meine Tänze
+ACTIVITY_4BIRTHDAY_PLOT_TIPS01,Das Kapitel wird in {1} entsperrt
+ACTIVITY_4BIRTHDAY_PLOT_TEXT01,Bereits gelesen. Willst du dieses Kapitel nochmal lesen?
+ACTIVITY_4BIRTHDAY_TIPS01,Max. Heat-Level noch nicht erreicht. Ult. Belohnungen der Party sind noch gesperrt.
+ACTIVITY_4BIRTHDAY_TIPS02,Ult. Belohnung der Tanzparty erhalten. Tausch unter Highlights entsperrt!
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS03,Weitere Belohnungen in diesem Melodie-Teil können nicht mehr ausgewählt werden.
+ACTIVITY_4ANIVERSARY_SIGN_TEXT12,Gesamte Login-Tage weniger als benötigte Anzahl. {1} ist noch gesperrt!
+ACTIVITY_4BIRTHDAY_TEXT07,Erhalte bei jedem Tanz zufällig eine der\nfolgenden Belohnungen.
+ACTIVITY_4BIRTHDAY_TIPS03,Highlights der Party entsperrt! Schau dir schnell mal nach!
+ACTIVITY_4BIRTHDAY_TEXT08,"Keine Chance mehr für Tanz mit {1}. Versuch mal, das andere Mädchen zum Tanz einzuladen~"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,Restliche Belohnungen nicht ausreichend
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,Die Melodie wird abgespielt. Warte einen Moment bitte.
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,Diese Belohnung hast du bereits erhalten. Wechseln fehlgeschlagen.
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,Alle Slots müssen mit Belohnungen gefüllt werden. In den freien Slots werden die früher ausgewählte Belohnungen eingesetzt.
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][ffb629] 1 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][ffb629] 5 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
+ANNUAL4_REVIEW_MAIL_TITLE,4. Jubiläum - Extra für dich
+ANNUAL4_REVIEW_SKIP,"Tippe auf das Bild, um zur nächsten Seite zu gelangen"
+ANNUAL4_REVIEW_1_1,Deine eigene Spielgeschichte
+ANNUAL4_REVIEW_1_2,und
+ANNUAL4_REVIEW_1_3,4. Jubiläum
+ANNUAL4_REVIEW_1_4,Prüfen
+ANNUAL4_REVIEW_1_5,"*Stand: 08.07.2022, 00:00 Uhr (UTC/GMT 0)"
+ANNUAL4_REVIEW_2_1,"[c][size=30][ff7fd6]{1}[-][/c] ist der Tag, \nan dem du den Mädchen in der Yume Akademie zum 1. Mal begegnet bist."
+ANNUAL4_REVIEW_2_2,Bisher hast du bereits\n[c][size=30][ff7fd6]{1}[-][/c] Elite Mädchen ausgebildet.
+ANNUAL4_REVIEW_2_3,"Darunter gibt es [c][size=30][ff7fd6]{1}[-][/c] Mädchen der mystischen Meteore-Fraktion, das dich zum weiteren Abenteuer begleiten wird..."
+ANNUAL4_REVIEW_3_1,In der Yume Akademie\nhast du dich mit [c][size=30][ff7fd6]{1}[-][/c] Spieler(n) angefreundet.
+ANNUAL4_REVIEW_3_2,In der Yume Akademie hast du dich mit [c][size=30][ff7fd6]{1}[-][/c] Spieler(n) angefreundet.\nIhr seid durch eure gemeinsamen Abenteuer noch enger zusammengewachsen.
+ANNUAL4_REVIEW_3_3,In der Yume Akademie\nbist du weiterhin auf der Suche nach einem wirklich guten Freund.
+ANNUAL4_REVIEW_3_4,"Als {2} der Gilde ""[c][size=30][ff7fd6]{1}[-][/c]""\nhast du zusammen mit [c][size=30][ff7fd6]{3}[-][/c] Mitglied(ern)\neure Gilde weiterentwickelt."
+ANNUAL4_REVIEW_3_5,"
+Als {2} der Gilde ""[c][size=30][ff7fd6]{1}[-][/c]""
+bist du weiter auf der Suche nach
+Gleichgesinnten, die beim Weiterentwicklung
+der Gilde helfen."
+ANNUAL4_REVIEW_3_6,Du bist noch keiner Gilde beigetreten.\nAber eines Tages findest auch du sicher\ndeinen Platz in einer Gilde.
+ANNUAL4_REVIEW_4_1,Du bist der einzige Senpai auf dem Campus und konntest in deiner Rolle bereits [c][size=25][ff7fd6]{1}[-][/c] 5-Sterne Mädchen beschwören. Dein Sammlungsfortschritt hat [c][size=25][ff7fd6]{2}[-][/c] erreicht.
+ANNUAL4_REVIEW_4_2,"Es gibt noch viele Mädchen, die dich noch nicht kennengelernt haben."
+ANNUAL4_REVIEW_4_3,Überall in der Akademie sprechen die Leute über dich.
+ANNUAL4_REVIEW_4_4,Du hast außerdem [c][size=25][ff7fd6]{1}[-][/c] verschiedene Mädchen auf 10-Sterne gelevelt. Dein Sammlungsfortschritt der 10-Sterne-Bilder hat [c][size=25][ff7fd6]{2}[-][/c] erreicht.
+ANNUAL4_REVIEW_4_5,"In der romantischen Kirche hast du mit [c][size=25][ff7fd6]{1}[-][/c] Mädchen einen Eid geleistet, der bis zur Ewigkeit anhält."
+ANNUAL4_REVIEW_4_6,"Außerdem gibt es noch [c][size=25][ff7fd6]{1}[-][/c] Mädchen, die darauf warten, dass du ihr Herz eroberst..."
+ANNUAL4_REVIEW_4_7,Hast du das gesehen? [c][size=25][ff7fd6]{1}[-][/c] Mädchen warten auf deine Liebe...
+ANNUAL4_REVIEW_4_8,Bisher hast du noch keine Mädchen geheiratet.\nWelches Mädchen willst du auf ein Date einladen?
+ANNUAL4_REVIEW_5_1,Unter deiner Leitung\nerreichte die Gesamtkraft deiner Mädchen:
+ANNUAL4_REVIEW_5_2,"Um die Mädchen und die Akademie zu schützen, hast du an folgenden Orten gekämpft:"
+ANNUAL4_REVIEW_5_3,Test:\n[c][size=20][ff7fd6]{1}[-][/c] Stufen\nabgeschlossen
+ANNUAL4_REVIEW_5_4,Patrouille:\n[c][size=20][ff7fd6]{1}[-][/c] Stufen\nabgeschlossen
+ANNUAL4_REVIEW_5_5,Mädchen-Aufgaben:\n[c][size=20][ff7fd6]{1}[-][/c] Aufgaben\nabgeschlossen
+ANNUAL4_REVIEW_5_6,Du hast {1} der\nSpieler übertroffen
+ANNUAL4_REVIEW_5_7,Fortschritt: {1}/{2}
+ANNUAL4_REVIEW_5_8,Höchstschaden\nim Vulkanheiligtum:\n[c][size=20][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_9,Höchstschaden\nim Meeresheiligtum:\n[c][size=20][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_10,"
+Fortschritt im
+Korridor der Zeit:
+{1}
+[c][size=20][ff7fd6]{2}[-][/c]"
+ANNUAL4_REVIEW_5_11,Gesamtpunkte im\nTsuruga Schrein:\n[c][size=20][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_6_1,Bisher hast du schon\n[c][size=30][ff7fd6]{1}[-][/c] Sammlerpunkte erhalten
+ANNUAL4_REVIEW_6_2,"Kaum einer kann genau berechnen, wie wertvoll deine Sammlungen sind."
+ANNUAL4_REVIEW_6_3,Du hast [c][size=30][ff7fd6]{1}[-][/c] Outfit-Teile gesammelt
+ANNUAL4_REVIEW_6_4,Deinen Mädchen hast du \n[c][size=30][ff7fd6]{1}[-][/c] Kostüme zugelegt
+ANNUAL4_REVIEW_7_1,"Im Rückblick auf die vergangenen 4 Jahre|mit Senpai tauchen viele schöne Erinnerungen auf:|In der flackernden Flamme auf dem Zeltplatz spiegelt sich die Ernte des Campusausflugs.|Vor dem Tsuruga Schrein klingt noch|das fromme Beten nach.|Und der ferne Himmel ist wegen deiner Einladung|errötend, so dass alles auf der Welt|wie rot gefärbt sind.|Die Party hat begonnen und|die Geschichte mit Senpai geht weiter..."
+ANNUAL4_REVIEW_7_2,Mit freundlichen Grüßen
+ANNUAL4_REVIEW_4_6_1,"Außerdem gibt es noch [c][size=25][ff7fd6]{1}[-][/c] Mädchen, die darauf warten, dass du ihr Herz eroberst..."
+ANNUAL4_REVIEW_4_7_1,Hast du schon gehört?\n[c][size=30][ff7fd6]{1}[-][/c] Mädchen erwarten sehnsüchtig einen Ring von dir...
+ACTIVITY_4BIRTHDAY_TITLE,Jubiläums-\nTanzparty

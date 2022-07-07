@@ -2740,7 +2740,7 @@ HOUSE_TEXT_55,Étage
 HERO_CHALLENGE_TIPS40,"Ce Chapitre n'est pas encore débloqué, aller au Défi du Personnage?"
 EASTER_GIFTBAG_DES,Pack exclusif pour Pâque ! Juste disponible aujourd'hui !
 ROB_EQUIP_CONFIRM,"Cet équipement est déjà utilisé,\nvoulez-vous le remplacer ?"
-BUY_GIFTBAG_LIMIT_2,Limite d'achat :
+BUY_GIFTBAG_LIMIT_2,Limite d'Achat：
 EASTER_EGG_AWARD_WINDOW,Récompenses
 ACTIVITY_EASTER_EGG_EXCHANGE_TITLE,Soumettre des matériaux
 ENTER_SUBMIT_NUM,Nombre
@@ -3176,8 +3176,8 @@ ACTIVITY_SCHOOL_EXPLORE_EVENT_TITLE,Événement d'Exploration
 GO_TO_PROPHET,Aller à Recruter
 GO_TO_WISHING_POOL,Distributeur
 ACTIVITY_SCHOOL_EXPLORE_FINISH_TITLE,Récompense d'Exploration
-ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,"Pendant l'événement, [c][c1003d]Tripler[-][/c] le nombre de Gemmes !"
-ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,Remarque: cette première recharge de Gemmes X3 n'est disponible que pendant l'événement. Cette offre prendra fin avec la fin de l'événement.
+ACTIVITY_TRIPLE_FIRST_RECHARGE_DESC,Première Recharge\nde Gemmes\n[c][c1003d]QUADRUPLÉE[-][/c] !
+ACTIVITY_TRIPLE_FIRST_RECHARGE_TIPS,Remarque :\nCette première recharge de Gemmes X4 n'est disponible que pendant l'événement.\nCette offre prendra fin avec la fin de l'événement.
 GOTO_RECHARGE,Recharger
 ACTIVITY_SCHOOL_EXPLORE_SUB_TIME,Augmenter de {1} sec.
 ANNIVERSARY_CAKE_END_AWARD,Préavis
@@ -3774,7 +3774,7 @@ ALTAR_AUTO_TEXT04,Êtes-vous sûr de vouloir transférer ces {1} Filles 3 étoil
 ALTAR_AUTO_TEXT05,Transfert en cours...
 ALTAR_AUTO_TEXT01,Aucune Fille à transférer
 ACTIVITY_YEAR_FUND_HELP,"1. Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2. Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3. Après l'avoir acheté, vous pouvez obtenir des Gemmes immédiatement et collecter les récompenses pendant les 30 jours suivants.|4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes après l'avoir acheté."
-ACTIVITY_YEAR_FUND_NOTICE_TEXT01,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
+ACTIVITY_YEAR_FUND_NOTICE_TEXT01,Voulez-vous dépenser {1} Gemmes pour collecter la récompense manquée ?
 ACTIVITY_DOLL_BUY,Échange de Poupées
 ACTIVITY_DOLL_EXCHANGE_TITLE,Fragmentation de Poupées
 ACTIVITY_DOLL_EXCHANGE_BUTTON,Fragmenter
@@ -3797,7 +3797,7 @@ ACTIVITY_YEAR_FUND_PRICE,"€21,99"
 ACTIVITY_DOLL_BUY_UNLIMIT,Illimité
 ACTIVITY_CHRISTMAS_SALE_HELP,"1. Pendant l'événement, vous pouvez échanger des ""Tickets du Black Friday"" contre diverses récompenses. Les 3 premières récompenses peuvent être échangées directement. Les récompenses suivantes ne peuvent être échangées qu'après avoir dépensé un nombre spécifique de Tickets du Black Friday au préalable. |2. Tous les paliers sont divisés en Récompenses Fixes et Récompenses Optionnelles. |3. Chaque palier et chaque récompense Optionnelle ont un nombre limité d'achat : une fois que la limite est à 0, les récompenses de ce palier ne peuvent plus être obtenues. |4. Les Tickets du Black Friday peuvent être obtenus via l'événement Coupon du Black Friday, Boutique du Black Friday, Packs de Grande Valeur, Packs Surprise de Skin, Packs Surprise et Sac d'Aventurier. |5. À la fin de l'événement, les Tickets du Black Friday non utilisés seront automatiquement échangés contre des Pièces d'Or, 1 Ticket du Black Friday = 50k Pièces d'Or, qui seront distribuées par courrier."
 RE_CHECKIN,Recollecter
-RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour recollecter la récompense actuelle ?
+RE_CHECKIN_TIPS,Voulez-vous dépenser {1} Gemmes pour collecter la récompense manquée ?
 SUMMON_GIFTBAG_MENU01,Capsules utilisées ({1}/{2})
 SUMMON_GIFTBAG_MENU02,Capsules de Filles
 SUMMON_GIFTBAG_HELP,"Capsula vous a préparé des récompenses spéciales à l'occasion de la nouvelle recrue de l'Académie Yume !|1. Durant cet événement, tirez des Capsules Avancées et obtenez diverses récompenses. À chaque palier de Capsules Avancées utilisées ou de nouvelle Fille obtenue, vous obtiendrez une abondance de récompenses variées !|2. Les Filles obtenues via l'échange de l'événement - Promotion Anticipée ne seront pas comptabilisées dans l'événement - Capsule de Nouvelle Fille.|3. Retrouvez plus d'informations concernant les détails de la prochaine saison de l'événement sur notre page officielle Facebook Girls X Battle 2-FR."
@@ -6738,3 +6738,110 @@ QUICK_FORMATION_TEXT20,Entrez le nom d'équipe
 QUICK_FORMATION_TEXT21,Cette Fille est dans votre équipe configurée !
 QUICK_FORMATION_TEXT22,"Échec de sauvegarde, veuillez configurer à nouveau les Filles au point rouge."
 QUICK_FORMATION_TEXT23,Veuillez configurer à nouveau cette Fille.
+ACTIVITY_4ANIVERSARY_SIGN_TEXT01,Connectez-vous chaque jour et débloquez des [c][f2af86]Packs Limités[-][/c] !
+ACTIVITY_4ANIVERSARY_SIGN_TEXT02,Jour {1}
+ACTIVITY_4ANIVERSARY_SIGN_TEXT03,Collectable
+ACTIVITY_4ANIVERSARY_SIGN_TEXT04,Collecter
+ACTIVITY_4ANIVERSARY_SIGN_TEXT05,Jour {1}
+ACTIVITY_4ANIVERSARY_SIGN_TEXT06,Jour ([c][fa7c93]{1}[-][/c]/{2})
+ACTIVITY_4ANIVERSARY_SIGN_TEXT07,En soldes !
+ACTIVITY_4ANIVERSARY_SIGN_TEXT08,"€5,49"
+ACTIVITY_4ANIVERSARY_SIGN_TEXT09,€ 32.99
+ACTIVITY_4ANIVERSARY_SIGN_TEXT10,€ 21.99
+ACTIVITY_4ANIVERSARY_SIGN_TEXT11,€ 54.99
+ACTIVITY_4BIRTHDAY_HELP,"1. Rejoignez-nous pour une danse au bal d’anniversaire, Senpai~|2. Offrez 1 Mocktail à Prométhéa ou Selkis pour les inviter à danser. Pour chaque Mocktail offert, l’avancée de la Fille correspondante augmentera de 1 et vous obtiendrez une récompense aléatoire ajoutée d’1 Clef Rythmique utilisable dans l’événement - Cadence Harmonique.|3. Vous obtiendrez les récompenses correspondantes en fonction de l’avancée des 2 Filles.|4. Lorsque l’avancée totale aura atteint 1400, vous obtiendrez la récompense finale et vous accéderez à la Boutique du Bal où vous pourrez échanger les Mocktails contre d’autres objets (vous n’obtiendrez pas de récompense aléatoire ni Clef Rythmique via l’échange).|5. Touchez « Histoire du Bal » pour lire à propos de cette soirée au bal du 4ème anniversaire (un épisode sera débloqué chaque jour).|6. Après la fin de l’événement, les Mocktails non-utilisés seront automatiquement convertis en Pièce d’Or, 1 Mocktail = 50K Pièce d’Or."
+ACTIVITY_4BIRTHDAY_TASK_HELP,"1. Complétez les tâches pour obtenir de la Crème Pâtissière, et décorer le gâteau d’anniversaire. |2. Pour chaque rangée ou colonne du gâteau complétée, vous obtiendrez la récompense correspondante. |3. Après avoir entièrement décoré le gâteau (12 cases), vous obtiendrez la récompense finale. |4. Après la fin de l’événement, les Crèmes Pâtissières non-utilisées seront automatiquement converties en Pièce d’Or, 1 Crème Pâtissière = 20K Pièce d’Or."
+ACTIVITY_4BIRTHDAY_GAMBLE_HELP,"1. Carmen et Bianca sont en train de préparer un concert symphonique pour l'anniversaire, allons y jeter un coup d'œil, Senpai !|2. Leur concert symphonique se joue en 3 parties : Prélude, Interlude et Finale. Pour chaque partie, sélectionnez les récompenses que vous souhaitez à l'avance et utilisez les Clefs Rythmiques pour les obtenir (vous obtiendrez pour chaque Clef Rythmique utilisée, une des récompenses sélectionnées).|3. Une fois que vous aurez obtenu toutes les récompenses sélectionnées des 3 parties, la pièce musicale suivante sera débloquée.|4. Après la fin de l’événement, les Clefs Rythmique non-utilisées seront automatiquement converties en Pièce d’Or, 1 Clef Rythmique = 30K Pièce d’Or."
+ACTIVITY_4BIRTHDAY_TASK_TEXT01,Gâteau
+ACTIVITY_4BIRTHDAY_TASK_TEXT02,Tâche
+ACTIVITY_4BIRTHDAY_TASK_TIPS01,Crème Pâtissière Insuffisante ! Complétez les tâches pour en obtenir plus !
+ACTIVITY_4BIRTHDAY_TASK_AWARD,Voulez-vous utiliser de la Crème Pâtissière pour obtenir ces récompenses ?
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT01,Retour
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT02,Confirmer
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD01,Prélude
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD02,Interlude
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD03,Finale
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE01,Skin
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE02,Fille
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE03,Matériel
+ACTIVITY_4BIRTHDAY_GAMBLE_AWARD_TYPE04,Antiquité
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS01,Vous n'avez pas encore sélectionné les récompenses que vous voulez obtenir.
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS02,"Vous avez obtenu toutes les récompenses, voulez-vous aller sélectionner les récompenses de la pièce musicale suivante ?"
+ACTIVITY_4BIRTHDAY_TEXT01,Avancée :
+ACTIVITY_4BIRTHDAY_BUTTON01,Offrir
+ACTIVITY_4BIRTHDAY_BUTTON02,Histoire\ndu Bal
+ACTIVITY_4BIRTHDAY_BUTTON03,Cadence\nHarmonique
+ACTIVITY_4BIRTHDAY_TEXT02,Avancée Totale：
+ACTIVITY_4BIRTHDAY_TEXT03,Inviter à danser
+ACTIVITY_4BIRTHDAY_TEXT04,Combien de Mocktail voulez-vous offrir à {1} ?
+ACTIVITY_4BIRTHDAY_TEXT05,Selkis
+ACTIVITY_4BIRTHDAY_TEXT06,Prométhéa
+ACTIVITY_4BIRTHDAY_BUTTON04,Accès à la Boutique
+ACTIVITY_4BIRTHDAY_BUTTON05,Retour
+ACTIVITY_4BIRTHDAY_PLOT_TIPS01,Débloqué dans {1}
+ACTIVITY_4BIRTHDAY_PLOT_TEXT01,"Vous avez déjà lu cette partie, voulez-vous revoir ?"
+ACTIVITY_4BIRTHDAY_TIPS01,Impossible d'obtenir la récompense finale si votre avancée totale n'a pas atteint son maximum.
+ACTIVITY_4BIRTHDAY_TIPS02,"Récompense finale débloquée, vous pourrez accéder à la boutique de bal."
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS03,Vous avez sélectionné toutes les récompenses de cette pièce musicale.
+ACTIVITY_4ANIVERSARY_SIGN_TEXT12,Connectez-vous encore quelques jours pour pouvoir débloquer {1} !
+ACTIVITY_4BIRTHDAY_TEXT07,"Pour chaque Mocktail offert,\nvous obtiendrez une des récompenses suivantes :"
+ACTIVITY_4BIRTHDAY_TIPS03,Vous pouvez dès maintenant accéder à la Boutique du bal où vous pourrez échanger les Mocktails contre d’autres objets !
+ACTIVITY_4BIRTHDAY_TEXT08,"Vous ne pouvez plus offrir des Mocktails à {1}, veuillez inviter une autre Fille pour essayer~"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,"Impossible, plus que 5 récompenses restantes !"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,"La musique est en train de jouer, veuillez patienter~"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,"Vous avez obtenu cette récompense, impossible de changer."
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,Veuillez ajouter des récompenses dans les cases vides. Les récompenses précédemment sélectionnées ont déjà été ajoutées.
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][6f6693]Jouer[-][/c][c][ffb629] 1 [-][/c][c][6f6693]fois[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][ba6e7b]Jouer[-][/c][c][ffb629] 5 [-][/c][c][ba6e7b]fois[-][/c]
+ANNUAL4_REVIEW_MAIL_TITLE,4 ans - Rétrospective
+ANNUAL4_REVIEW_SKIP,Appuyez sur l'écran pour passer à la page suivante
+ANNUAL4_REVIEW_1_1,Le récit de votre voyage à l'Académie Yume
+ANNUAL4_REVIEW_1_2,et
+ANNUAL4_REVIEW_1_3,4ème Anniversaire
+ANNUAL4_REVIEW_1_4,Voir
+ANNUAL4_REVIEW_1_5,Données du 08/07/2022 0:00 (GMT 0)
+ANNUAL4_REVIEW_2_1,"Le [c][size=30][ff7fd6]{1}[-][/c],\nvous avez rencontré les Filles de l'Académie pour la première fois."
+ANNUAL4_REVIEW_2_2,Vous avez obtenu\n[c][size=30][ff7fd6]{1}[-][/c] Fille(s) Élite(s).
+ANNUAL4_REVIEW_2_3,Incluant [c][size=30][ff7fd6]{1}[-][/c] Fille de la Maison Cosmos qui se bat à tes côtés.
+ANNUAL4_REVIEW_3_1,"Depuis que vous êtes à l'Académie Yume,\nvous vous êtes fait [c][size=30][ff7fd6]{1}[-][/c] ami(s)."
+ANNUAL4_REVIEW_3_2,"Depuis que vous êtes à l'Académie Yume,\nvous vous êtes fait [c][size=30][ff7fd6]{1}[-][/c] ami(s). Ensemble, vous avez appris à devenir plus puissants en partageant vos aventures."
+ANNUAL4_REVIEW_3_3,"Jusqu'à présent,\nvous êtes toujours à la recherche d'un véritable ami à l'Académie Yume..."
+ANNUAL4_REVIEW_3_4,"
+En tant que {2} de la Guilde [c][size=30][ff7fd6]{1}[-][/c],
+vous partagez cette ambition d\'atteindre
+les plus hauts sommets
+avec [c][size=30][ff7fd6]{3}[-][/c] autre(s) membre(s)."
+ANNUAL4_REVIEW_3_5,"En tant que {2} de la Guilde [c][size=30][ff7fd6]{1}[-][/c],\nvous êtes toujours à la recherche de\nplus de membres pour votre Guilde."
+ANNUAL4_REVIEW_3_6,"Vous n'avez pas encore rejoint de Guilde.\nMais nous sommes certains qu'un jour,\nvous trouverez la Guilde qui vous convient."
+ANNUAL4_REVIEW_4_1,\nVous avez débloqué [c][size=25][ff7fd6]{1}[-][/c] Fille(s) 5 étoiles dans votre Galerie.\nVous avez atteint [c][size=25][ff7fd6]{2}[-][/c] de progrès dans votre Collection.
+ANNUAL4_REVIEW_4_2,Encore beaucoup de Filles à l'Académie Yume\nattendent de vous rencontrer !
+ANNUAL4_REVIEW_4_3,Chaque ligne de votre histoire\nse cache dans un recoin de cette Académie.
+ANNUAL4_REVIEW_4_4,"Vous avez, dans votre Galerie, débloqué [c][size=25][ff7fd6]{1}[-][/c] Fille(s) 10 étoiles et avez ainsi atteint [c][size=25][ff7fd6]{2}[-][/c] de progression."
+ANNUAL4_REVIEW_4_5,Vous avez fait un Serment avec [c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nde l'Académie Yume.
+ANNUAL4_REVIEW_4_6,Mais n'oubliez pas...\nIl y a encore [c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nqui attend(ent) une bague de Serment de votre part...
+ANNUAL4_REVIEW_4_7,"Selon une étude menée au sein de l'Académie,\nencore[c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nattend(ent) une bague de Serment de votre part."
+ANNUAL4_REVIEW_4_8,"
+Jusqu\'à présent,
+vous n\'avez encore fait de Serment
+à aucune Fille de l\'Académie.
+Avec qui voudriez-vous aller en rendez-vous ?"
+ANNUAL4_REVIEW_5_1,"Sous votre direction,\nla puissance totale de vos Filles est de："
+ANNUAL4_REVIEW_5_2,"Dans le but de protéger l'Académie du Chaos,\nvous avez combattu à ces endroits："
+ANNUAL4_REVIEW_5_3,Progression\ndans Test：\n[c][size=20][ff7fd6]{1}e[-][/c] Étape.
+ANNUAL4_REVIEW_5_4,Progression\ndans Patrouille：\n[c][size=20][ff7fd6]{1}e[-][/c] Étape.
+ANNUAL4_REVIEW_5_5,Progression dans\nDéfi du Personnage：\n[c][size=20][ff7fd6]{1}[-][/c] histoire(s) complétée(s).
+ANNUAL4_REVIEW_5_6,Vous avez surpassé\n{1} des joueurs.
+ANNUAL4_REVIEW_5_7,Progression：{1}/{2}
+ANNUAL4_REVIEW_5_8,Record des dégâts\ndans Portail Volcanique：\n[c][size=20][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_9,Record des dégâts\ndans Portail Abyssal：\n[c][size=20][ff7fd6]{1}[-][/c]
+ANNUAL4_REVIEW_5_10,Progression dans\nles Échos du Temps：\n{1}-[c][size=20][ff7fd6]{2}[-][/c]
+ANNUAL4_REVIEW_5_11,Record dans\nGrand Sanctuaire de Tsuruga：\n[c][size=20][ff7fd6]{1}[-][/c] point(s)
+ANNUAL4_REVIEW_6_1,"Jusqu'à présent,\nvous avez obtenu [c][size=30][ff7fd6]{1}[-][/c] point(s) de collection."
+ANNUAL4_REVIEW_6_2,Personne ne sait combien votre Collection a de la valeur.
+ANNUAL4_REVIEW_6_3,Vous avez collecté \n[c][size=30][ff7fd6]{1}[-][/c] élément(s) de\nTenue
+ANNUAL4_REVIEW_6_4,Vous avez collecté \n[c][size=30][ff7fd6]{1}[-][/c] Skin(s)\npour votre/vos Fille(s).
+ANNUAL4_REVIEW_7_1,"Nous avons vécu tant de bons moments ensembles ces quatre dernières années.|À y repenser, ensemble nous avons fait de nombreuses Excursions.|Nous avons donné corps et âme dans les épreuves du Dojo du Grand Sanctuaire de Tsuruga.|Même les étoiles du Cosmos en sont témoins.|C'est une preuve d'amitié imparable entre les Senpais et l'Académie Yume.|Cette célébration ne signifie en aucun cas la fin de cette belle amitié.|Mais plutôt le début d'une longue histoire..."
+ANNUAL4_REVIEW_7_2,Sincèrement
+ANNUAL4_REVIEW_4_6_1,Mais n'oubliez pas...\nIl y a encore [c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nqui attend(ent) une bague de Serment de votre part...
+ANNUAL4_REVIEW_4_7_1,"Selon une étude menée au sein de l'Académie,\nencore[c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nattend(ent) une bague de Serment de votre part."
+ACTIVITY_4BIRTHDAY_TITLE,Bal d'Anniversaire

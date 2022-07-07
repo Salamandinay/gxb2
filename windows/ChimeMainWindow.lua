@@ -51,7 +51,6 @@ end
 function ChimeMainWindow:getUIComponent()
 	self.trans = self.window_.transform
 	self.content = self.trans:NodeByName("content").gameObject
-	self.bg = self.content:ComponentByName("bg", typeof(UITexture))
 	self.scroller = self.content:NodeByName("scroller").gameObject
 	self.scrollView = self.content:ComponentByName("scroller", typeof(UIScrollView))
 	self.itemGroup = self.scroller:NodeByName("itemGroup").gameObject

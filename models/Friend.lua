@@ -13,6 +13,7 @@ function Friend:ctor()
 	self.timeCount_ = nil
 	self.friendFight_ = {}
 	self.friendPet_ = {}
+	self.friendTeam = {}
 	self.requestList_ = {}
 	self.lastApplyID_ = -1
 	self.mySharedPartnerInfo = nil
@@ -556,8 +557,10 @@ function Friend:fightFriend(id, partners, petID, team_index)
 	end
 
 	petID = petID or self.friendPet_[id]
+	team_index = team_index or self.friendTeam[id]
 	self.friendFight_[id] = partners
 	self.friendPet_[id] = petID
+	self.friendTeam[id] = team_index
 	local msg = messages_pb.friend_fight_friend_req()
 
 	if team_index then

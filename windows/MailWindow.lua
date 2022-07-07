@@ -485,7 +485,7 @@ function MailItem:setInfo(info)
 
 		self.label_name:SetActive(false)
 
-		self.label_title.text = __("ANNUAL3_REVIEW_MAIL_TITLE")
+		self.label_title.text = __("ANNUAL4_REVIEW_MAIL_TITLE")
 
 		self.label_title.transform:Y(28)
 	elseif self.mail_.mail_type == xyd.MailType.SYSTEM then
@@ -515,7 +515,7 @@ function MailItem:setInfo(info)
 			xyd.WindowManager:get():openWindow("activity_year_summary_window")
 			xyd.db.misc:setValue({
 				value = 1,
-				key = "years_summary_mail_read"
+				key = "years_summary_mail_read2"
 			})
 			xyd.models.mail:onMailRead({
 				data = {
@@ -614,10 +614,6 @@ function MailItem:setCommonState()
 		self.label_name.effectColor = Color.New2(4294967295.0)
 	elseif self.mail_.mail_id == 99999 and self.mail_.is_read == 1 then
 		self.currentState = "gray_mail"
-		self.label_title.color = Color.New2(1819045119)
-		self.label_title.effectColor = Color.New2(3991793151.0)
-		self.label_name.color = Color.New2(1819045119)
-		self.label_name.effectColor = Color.New2(3991793151.0)
 
 		xyd.setUISpriteAsync(self.imgLine, nil, "mail_line_grey")
 		xyd.setUISpriteAsync(self.mail_icon, nil, "mail_icon09")
@@ -646,6 +642,13 @@ function MailItem:setCommonState()
 			xyd.applyOrigin(self.mail_icon_gift)
 			xyd.setUISpriteAsync(self.mail_icon_gift, nil, "mail_icon01")
 		end
+	end
+
+	if self.mail_.mail_id == 99999 then
+		self.label_title.color = Color.New2(3983902463.0)
+		self.label_title.effectColor = Color.New2(4294967295.0)
+		self.label_data.color = Color.New2(2155905279.0)
+		self.label_data.effectColor = Color.New2(4294967295.0)
 	end
 end
 

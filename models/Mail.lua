@@ -150,7 +150,7 @@ function Mail:onMailList(event)
 	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.YEARS_SUMMARY)
 
 	if activityData and activityData:isOpen() then
-		local isReadData = xyd.db.misc:getValue("years_summary_mail_read")
+		local isReadData = xyd.db.misc:getValue("years_summary_mail_read2")
 		local is_read = 0
 
 		if isReadData and tonumber(isReadData) == 1 then

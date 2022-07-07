@@ -174,8 +174,8 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1172.0,battle_sound_web/sound_spdegula_skill,5.0,1,1.0,0.0,1,,50,1.0,,1.0
 1173.0,battle_sound_web/sound_xigema_attack,2.0,1,1.0,0.0,1,,50,1.0,,1.0
 1174.0,battle_sound_web/sound_xigema_skill,5.0,1,1.0,0.0,1,,50,1.0,,1.0
-1175.0,battle_sound_web/sound_qianhezi_attack,1.0,1,1.0,0.0,1,,50,1.0,,1.0
-1176.0,battle_sound_web/sound_qianhezi_skill,5.0,1,1.0,0.0,1,,50,1.0,,1.0
+1175.0,battle_sound_web/sound_qianhezi_attack,1.0,1,1.0,0.0,1,,75,1.0,,1.0
+1176.0,battle_sound_web/sound_qianhezi_skill,5.0,1,1.0,0.0,1,,75,1.0,,1.0
 1177.0,battle_sound_web/sound_seaboss_attack1,1.0,1,1.0,0.0,1,,50,1.0,,1.0
 1178.0,battle_sound_web/sound_seaboss_attack2,2.0,1,1.0,0.0,1,,50,1.0,,1.0
 1179.0,battle_sound_web/sound_seaboss_skill,3.0,1,1.0,0.0,1,,50,1.0,,1.0
@@ -6568,9 +6568,9 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 560092801.0,partner_sound/56009_web/560092801,3.0,1,0.0,0.0,1,0.0,70,1.0,0.2,
 560100201.0,partner_sound/56010_web/560100201,8.0,1,0.0,0.0,1,0.0,70,,,
 560100202.0,partner_sound/56010_web/560100202,8.0,1,0.0,0.0,1,0.0,70,,,
-560100203.0,partner_sound/56010_web/560100203,3.0,1,0.0,0.0,1,0.0,70,,,
-560100301.0,partner_sound/56010_web/560100301,10.0,1,0.0,0.0,1,0.0,70,,,
-560100401.0,partner_sound/56010_web/560100401,4.0,1,0.0,0.0,1,0.0,70,,,
+560100203.0,partner_sound/56010_web/560100203,8.0,1,0.0,0.0,1,0.0,70,,,
+560100301.0,partner_sound/56010_web/560100301,3.0,1,0.0,0.0,1,0.0,70,,,
+560100401.0,partner_sound/56010_web/560100401,10.0,1,0.0,0.0,1,0.0,70,,,
 560100601.0,partner_sound/56010_web/560100601,4.0,1,0.0,0.0,1,0.0,70,,,
 560100701.0,partner_sound/56010_web/560100701,7.0,1,0.0,0.0,1,0.0,70,,,
 560101101.0,partner_sound/56010_web/560101101,5.0,1,0.0,0.0,1,0.0,70,,,

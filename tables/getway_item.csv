@@ -92,3 +92,7 @@ id,name,item_id,get_limit,show_activity,lv_limit,function_id,go_window,go_params
 92,-1,,,301,0,,activity_window,select:301
 93,-1,,,300,0,,,
 94,-1,271,15,300,0,,item_buy_window,
+95,-1,,,304,0,,activity_window,"select:304,large_series:1"
+96,-1,,,305,0,,activity_window,"select:305,large_series:1"
+97,-1,,,306,0,,activity_window,"select:306,large_series:1"
+98,-1,,,304,0,,,

@@ -12827,14 +12827,14 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 2000030020,Sea Chimera,Never-ending Threat,Sea Chimera will Revive and gain Attribute Boosts whenever it is defeated.
 2000030030,Sea Chimera,Gem of the Seas,"
 At the start of the battle, Sea Chimera gains a [c][e28002]Magick Barrier[-][/c] with (50% of self HP) BP.
-At the start of every Round, Sea Chimera will gain the same number of [c][e28002]Magick Barriers[-][/c] as the total number of Debuffs that the enemies have. Each [c][e28002]Magick Barrier[-][/c] has (a certain percentage of Sea Chimera\'s Maximum HP) BP.
+At the start of every Round, Sea Chimera will gain the same number of [c][e28002]Magick Barriers[-][/c] as the total number of Debuffs (Control Effects, Mark Effects, or Damage Over Time Effects) that the enemies have. Each [c][e28002]Magick Barrier[-][/c] has (a certain percentage of Sea Chimera\'s Maximum HP) BP.
 After dealing a Basic Attack or releasing an Active Skill, the [c][e28002]Magick Barrier[-][/c] will disappear.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
 Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 2000030040,Sea Chimera,Ancient Trident,"
-At the end of each Round, Sea Chimera afflicts [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds to 3 enemies with lowest HP and cleanses 3 random Debuffs from itself.
+At the end of each Round, Sea Chimera afflicts [c][01a310]Liquid Poison[-][/c] that lasts for 2 Rounds to 3 enemies with lowest HP and cleanses 3 random Debuffs (Control Effects, Mark Effects, or Damage Over Time Effects) from itself.
 If damage is dealt to enemies when Sea Chimera deals a Basic Attack, releases an Active Skill or afflicts a Damage Over Time effect, it will [c][e28002]Suffocate[-][/c] the targets for 2 Rounds.
 
 [c][e28002]Suffocate[-][/c]:
@@ -14053,30 +14053,42 @@ When the [c][e28002]Magick Barrier[-][/c] protecting the owner of this Effect di
 5601001,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (100% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 5% for 2 rounds, reduces damage taken by all allies by 10% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (10% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (100% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 5% for 2 rounds, reduces damage taken by all allies by 10% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (300% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (200% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 65602001,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (200% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 10% for 2 rounds, reduces damage taken by all allies by 15% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (20% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (200% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 10% for 2 rounds, reduces damage taken by all allies by 15% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (600% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (400% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 75601001,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (400% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (400% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (800% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 5601002,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 20%, Attack by 20%, Damage Reduction by 10%, Control Immunity by 10%, and Heal Amount by 20%."
 65602002,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 30%, Attack by 25%, Damage Reduction by 20%, Control Immunity by 15%, and Heal Amount by 30%."
 65602012,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 40%, Attack by 30%, Damage Reduction by 30%, Control Immunity by 20%, and Heal Amount by 40%."
@@ -14085,38 +14097,54 @@ When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 30% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 5% for 2 rounds, and heals the ally with the highest Attack attribute for (10% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 5% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (300% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (1% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 65602003,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 50% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 10% for 2 rounds, and heals the ally with the highest Attack attribute for (20% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 10% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (600% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (2% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 65602013,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 80% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 75601003,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 80% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 5601004,Cupid,Overflowing Love,"
 I\'ll help you one more time. Don\'t miss this chance, eh?
 
@@ -14188,48 +14216,68 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 756010011,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (408% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (408% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (880% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010012,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (416% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (416% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (960% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010013,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (424% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (424% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (1040% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010014,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (432% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (432% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (1120% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010015,Cupid,Cupid's Bow,"
 Wanna try some love magic?
 
-Cupid deals (440% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+Cupid deals (440% of Attack) damage to Frontline enemies, reduces the Attack of 2 enemies with highest Attack attribute by 20% for 2 rounds, reduces damage taken by all allies by 20% for 2 rounds (Cupid can reduce at most 60% of damage taken with this effect), and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 She then removes all stacks of [c][e28002]Heartbeat[-][/c] from herself, each stack heals the ally with lowest HP for (1200% of Cupid’s Attack) HP.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010021,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 40%, Attack by 30%, Damage Reduction by 30%, Control Immunity by 20%, and Heal Amount by 41%."
 756010022,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 40%, Attack by 30%, Damage Reduction by 30%, Control Immunity by 20%, and Heal Amount by 42%."
 756010023,Cupid,Love's Blessing,"I did my part, so it will be all your fault if you fail!\n\nIncreases Cupid's HP by 40%, Attack by 30%, Damage Reduction by 30%, Control Immunity by 20%, and Heal Amount by 43%."
@@ -14239,47 +14287,67 @@ When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 84% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010032,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 88% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010033,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 92% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010034,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has a 96% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (4% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010035,Cupid,Cherub of Love,"
 They\'re asking me to watch over their love? Seriously? When will they realize that love is a farce?
 
 When Cupid deals a Basic Attack, she gains 2 stacks of [c][e28002]Heartbeat[-][/c] and has 100% chance to gain 1 extra stack of [c][e28002]Heartbeat[-][/c].
-She increases the damage all allies deal by 20% for 2 rounds, and heals the ally with the highest Attack attribute for (30% of Cupid’s Attack) HP for multiple times. (The ally will be healed for the same number of times as the number of [c][e28002]Heartbeat[-][/c] stacks that Cupid has).
+She increases the damage all allies deal by 20% for 2 rounds, and grants a [c][e28002]Magick Barrier[-][/c] with (1000% of Cupid\'s Attack) BP to the ally with the highest Attack attribute.
 
 [c][e28002]Heartbeat[-][/c]:
 A Skill Effect that can stack.
-When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP from each removed stack."
+When [c][e28002]Heartbeat[-][/c] is removed, each stack of [c][e28002]Heartbeat[-][/c] will grant all allies a [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP. Allies with less than 50% HP will gain an additional [c][e28002]Magick Barrier[-][/c] with (5% of Cupid’s Maximum HP) BP from each removed stack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
 756010041,Cupid,Overflowing Love,"
 I\'ll help you one more time. Don\'t miss this chance, eh?
 
@@ -14380,11 +14448,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 10%, and this effect will reflect 10% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 65502101,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (200% of target’s Attack) damage to 3 random enemies, reduces their Energy by 40, and has a 30% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (300% of target’s Attack) damage to 3 random enemies, reduces their Energy by 40, and has a 30% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14393,11 +14461,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 15%, and this effect will reflect 15% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 75501101,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (400% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (600% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14406,7 +14474,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 5501202,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 20%, Attack by 20%, Block by 10%, Heal Received by 10%, and Crit Resist by 10%."
 65502102,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 30%, Attack by 25%, Block by 20%, Heal Received by 15%, and Crit Resist by 20%."
 65502112,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 30%, Heal Received by 20%, and Crit Resist by 30%."
@@ -14414,13 +14482,13 @@ Whenever the owner of this Effect takes damage, damage taken will be reduced by 
 5501203,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 20% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 10%, and this effect will reflect 10% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14436,13 +14504,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 65502103,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 30% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 15%, and this effect will reflect 15% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14450,7 +14518,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 20%, their Block reduced by 20%, and gain 25% less Energy.
+The owner of this Effect will have their Heal Received reduced by 20%, their Block reduced by 25%, and gain 25% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -14458,13 +14526,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 65502113,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14480,13 +14548,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 75501103,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14505,7 +14573,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (20% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (100% of target’s Attack) damage every round (damage dealt will not surpass 500% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14514,7 +14582,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 10%, and this effect will reflect 10% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14524,8 +14592,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (40% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (200% of target’s Attack) damage every round (damage dealt will not surpass 1000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (300% of target’s Attack) damage every round (damage dealt will not surpass 1500% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14534,7 +14602,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 15%, and this effect will reflect 15% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14544,8 +14612,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (400% of target’s Attack) damage every round (damage dealt will not surpass 2000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14554,7 +14622,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14564,8 +14632,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (400% of target’s Attack) damage every round (damage dealt will not surpass 2000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14574,7 +14642,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14582,7 +14650,7 @@ The owner of this Effect will have their Heal Received reduced by 30%, their Blo
 755011011,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (408% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (640% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14591,11 +14659,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011012,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (416% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (680% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14604,11 +14672,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011013,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (424% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (720% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14617,11 +14685,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011014,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (432% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (760% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14630,11 +14698,11 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011015,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (440% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+Promethea deals (800% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
@@ -14643,7 +14711,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)"
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011021,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 31%, Heal Received by 20%, and Crit Resist by 30%."
 755011022,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 32%, Heal Received by 20%, and Crit Resist by 30%."
 755011023,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 33%, Heal Received by 20%, and Crit Resist by 30%."
@@ -14652,13 +14720,13 @@ Whenever the owner of this Effect takes damage, damage taken will be reduced by 
 755011031,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (22% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14674,13 +14742,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011032,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (24% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14696,13 +14764,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011033,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (26% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14718,13 +14786,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011034,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (28% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14740,13 +14808,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011035,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (30% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14764,8 +14832,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (408% of target’s Attack) damage every round (damage dealt will not surpass 2040% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (640% of target’s Attack) damage every round (damage dealt will not surpass 3200% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14774,7 +14842,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14784,8 +14852,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (416% of target’s Attack) damage every round (damage dealt will not surpass 2080% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (680% of target’s Attack) damage every round (damage dealt will not surpass 3400% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14794,7 +14862,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14804,8 +14872,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (424% of target’s Attack) damage every round (damage dealt will not surpass 2120% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (720% of target’s Attack) damage every round (damage dealt will not surpass 3600% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14814,7 +14882,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14824,8 +14892,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (432% of target’s Attack) damage every round (damage dealt will not surpass 2160% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 20% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 40% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (760% of target’s Attack) damage every round (damage dealt will not surpass 3800% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14834,7 +14902,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14844,8 +14912,8 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (440% of target’s Attack) damage every round (damage dealt will not surpass 2200% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], it will provide an extra 25% Damage Depletion to the owner of the Effect. If she gains [c][e28002]Starflare[-][/c], it will provide 50% Damage Depletion for her. If she is in the Frontline, she will gain [c][e28002]Starflare[-][/c] as well.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (800% of target’s Attack) damage every round (damage dealt will not surpass 4000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 30% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14854,8 +14922,35 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Whenever the owner of this Effect takes damage, damage taken will be reduced by 20%, and this effect will reflect 20% of damage taken to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reduced or reflected)
+Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
 The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+676701,Torch of Despair,Antique Skill,Increases Crit Resist by 8%.
+676801,Torch of Despair,Antique Skill,Increases Crit Resist by 8.8%.
+676901,Torch of Despair,Antique Skill,Increases Crit Resist by 9.6%.
+677001,Torch of Despair,Antique Skill,Increases Crit Resist by 10.4%.
+677101,Torch of Despair,Antique Skill,Increases Crit Resist by 11.2%.
+677201,Torch of Despair,Antique Skill,Increases Crit Resist by 12%.
+6772101,Torch of Despair,Antique Skill,"
+When the owner of this Antique takes damage from Basic Attacks or Active Skills, the owner will gain 2% Damage Depletion for 2 rounds (can only trigger once per round), and afflict [c][e28002]Chains of Woe[-][/c] that last for 2 rounds to the Attacker.
+If the Attacker is [c][e28002]Taunted[-][/c] by the owner, the owner will gain a [c][e28002]Magick Barrier[-][/c] with (3% of the owner\'s Maximum HP) BP (The owner can gain at most 3 [c][e28002]Magick Barriers[-][/c] in a round from this effect).
+
+<font color=0xe28002>Chains of Woe$/font>:
+A Mark Effect that cannot stack.
+When the owner of this Effect takes lethal damage and triggers any effect that prevents them from being defeated by this lethal damage, only 1 HP will remain on them."
+6772201,Torch of Despair,Antique Skill,"
+When the owner of this Antique takes damage from Basic Attacks or Active Skills, the owner will gain 5% Damage Depletion for 2 rounds (can only trigger once per round), and afflict [c][e28002]Chains of Woe[-][/c] that last for 2 rounds to the Attacker.
+If the Attacker is [c][e28002]Taunted[-][/c] by the owner, the owner will gain a [c][e28002]Magick Barrier[-][/c] with (6% of the owner\'s Maximum HP) BP (The owner can gain at most 4 [c][e28002]Magick Barriers[-][/c] in a round from this effect).
+
+<font color=0xe28002>Chains of Woe$/font>:
+A Mark Effect that cannot stack.
+When the owner of this Effect takes lethal damage and triggers any effect that prevents them from being defeated by this lethal damage, only 1 HP will remain on them."
+6772301,Torch of Despair,Antique Skill,"
+When the owner of this Antique takes damage from Basic Attacks or Active Skills, the owner will gain 10% Damage Depletion for 2 rounds (can only trigger once per round), and afflict [c][e28002]Chains of Woe[-][/c] that last for 2 rounds to the Attacker.
+If the Attacker is [c][e28002]Taunted[-][/c] by the owner, the owner will gain a [c][e28002]Magick Barrier[-][/c] with (10% of the owner\'s Maximum HP) BP (The owner can gain at most 5 [c][e28002]Magick Barriers[-][/c] in a round from this effect).
+
+<font color=0xe28002>Chains of Woe$/font>:
+A Mark Effect that cannot stack.
+When the owner of this Effect takes lethal damage and triggers any effect that prevents them from being defeated by this lethal damage, only 1 HP will remain on them."

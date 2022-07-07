@@ -49,11 +49,15 @@ function CheckIn:getUIComponent()
 
 	self.checkInLocationGroup = self.mainGroup:NodeByName("checkInLocationGroup").gameObject
 	self.checkInLocationText = self.checkInLocationGroup:ComponentByName("checkInLocationText", typeof(UILabel))
+	self.vipGroup = self.blackboardGroup:NodeByName("vipGroup").gameObject
+	self.levelGroup = self.vipGroup:NodeByName("levelGroup").gameObject
+	self.levelImg = self.vipGroup:ComponentByName("levelImg", typeof(UISprite))
 end
 
 function CheckIn:initUIComponent()
 	self:initItem()
 	self:setEffect()
+	self:setVip()
 	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.onActivityAward))
 
 	if xyd.isIosTest() then
@@ -89,6 +93,34 @@ function CheckIn:setEffect()
 			effect:SetLocalPosition(0, -974 + 6 * self.scale_num_contrary, 0)
 			effect:play("animation", 0)
 		end)
+	end
+end
+
+function CheckIn:setVip()
+	local vip = xyd.models.backpack:getVipLev()
+	local nums = {}
+
+	if xyd.tables.vipTable:judgeLoginDouble(vip) then
+		self.vipGroup:SetActive(true)
+		NGUITools.DestroyChildren(self.levelGroup.transform)
+
+		while vip > 0 do
+			table.insert(nums, vip % 10)
+
+			vip = math.floor(vip / 10)
+		end
+
+		while #nums > 0 do
+			local num = nums[#nums]
+
+			table.remove(nums)
+
+			local sprite = NGUITools.AddChild(self.levelGroup.gameObject, self.levelImg.gameObject):GetComponent(typeof(UISprite))
+
+			xyd.setUISpriteAsync(sprite, nil, "player_vip_num_" .. num, nil, , true)
+		end
+	else
+		self.vipGroup:SetActive(false)
 	end
 end
 
@@ -152,6 +184,10 @@ function CheckIn:initItem()
 					item_num = cItem.num,
 					posId = posId
 				}
+
+				if xyd.tables.checkInTable:judgeDoubleAward(cItem.showId) and xyd.tables.vipTable:judgeLoginDouble(xyd.models.backpack:getVipLev()) then
+					rewardItem.item_num = rewardItem.item_num * 2
+				end
 
 				table.insert(self.rewardFloatItems, rewardItem)
 			end
@@ -304,6 +340,7 @@ function CheckInPopUpItem:getUIComponent()
 	self.backgroundImg = self.mainGroup:ComponentByName("backgroundImg", typeof(UITexture))
 	self.numImg = self.mainGroup:ComponentByName("numImg", typeof(UITexture))
 	self.effectGroup = self.mainGroup:NodeByName("effectGroup").gameObject
+	self.doubleMark = self.mainGroup:NodeByName("doubleMark").gameObject
 	self.contentGroup = self.mainGroup:NodeByName("contentGroup").gameObject
 	self.iconGroup = self.contentGroup:NodeByName("iconGroup").gameObject
 	self.maskImg = self.contentGroup:NodeByName("maskImg").gameObject
@@ -365,6 +402,12 @@ function CheckInPopUpItem:setIcon()
 end
 
 function CheckInPopUpItem:setLayout()
+	if xyd.tables.checkInTable:judgeDoubleAward(self.showId) and xyd.tables.vipTable:judgeLoginDouble(xyd.models.backpack:getVipLev()) then
+		self.doubleMark:SetActive(true)
+	else
+		self.doubleMark:SetActive(false)
+	end
+
 	if xyd.isIosTest() then
 		if self.canGet and not self.hasGotten then
 			xyd.setUITextureByNameAsync(self.numImg, "check_in__sz_" .. self.id .. "_1_ios_test", true)

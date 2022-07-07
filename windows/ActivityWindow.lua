@@ -372,6 +372,14 @@ function ActivityWindow:setNormalDisplay()
 
 	local activityList = xyd.models.activity:getActivityList()
 	local sortedIDs = table.sortedKeys(activityList, function (a, b)
+		if a == 307 and self:isComplete(a) then
+			return false
+		end
+
+		if b == 307 and self:isComplete(b) then
+			return true
+		end
+
 		if self:isComplete(a) then
 			return false
 		end
@@ -583,6 +591,26 @@ function ActivityWindow:isComplete(id)
 			else
 				return true
 			end
+		else
+			return false
+		end
+	end
+
+	if id == xyd.ActivityID.ACTIVITY_4ANNIVERSARY_SIGN then
+		local data = xyd.models.activity:getActivity(id)
+
+		if data.detail.awarded[math.min(data:getDay(), 12)] == 1 then
+			return true
+		else
+			return false
+		end
+	end
+
+	if id == xyd.ActivityID.BLACK_CARD then
+		local data = xyd.models.activity:getActivity(id)
+
+		if math.ceil((xyd.getServerTime() - data.start_time) / 86400) >= 4 then
+			return true
 		else
 			return false
 		end
@@ -1499,6 +1527,9 @@ ActivityWindow.ContentClass = {
 	[xyd.ActivityID.ACTIVITY_WINE] = function ()
 		return require("app.windows.activity.ActivityWine")
 	end,
+	[xyd.ActivityID.TRIPLE_FIRST_CHARGE] = function ()
+		return require("app.windows.activity.ActivityTripleFirstCharge")
+	end,
 	[xyd.ActivityID.ACTIVITY_TREASURE] = function ()
 		return require("app.windows.activity.ActivityTreasure")
 	end,
@@ -1681,6 +1712,18 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_SPFARM_MISSION] = function ()
 		return require("app.windows.activity.ActivitySpfarmMission")
+	end,
+	[xyd.ActivityID.ACTIVITY_4ANNIVERSARY_SIGN] = function ()
+		return require("app.windows.activity.Activity4AnniversarySign")
+	end,
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_PARTY] = function ()
+		return require("app.windows.activity.Activity4BirthdayParty")
+	end,
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MUSIC] = function ()
+		return require("app.windows.activity.Activity4BirthdayMusic")
+	end,
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MISSION] = function ()
+		return require("app.windows.activity.Activity4BirthdayMission")
 	end
 }
 

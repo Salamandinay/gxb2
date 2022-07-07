@@ -443,10 +443,10 @@ function SummonResultWindow:playPartnerAction(isUpdate, params, aniCallback)
 			else
 				local speedNum = 2
 
-				sequence:AppendInterval(0.1 * i / speedNum)
-				sequence:Append(DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter), 0, 1, 0.13 / speedNum))
-				self:fiveStarEffect(partners[i].item_id, heroIcon, sequence, 0.1 * i / speedNum)
-				sequence:AppendInterval(0.1 * (#partners - i) / speedNum)
+				sequence:AppendInterval(0.1 * math.ceil(i / 5) * 2 / speedNum)
+				sequence:Append(DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter), 0, 1, 0.4 / speedNum))
+				self:fiveStarEffect(partners[i].item_id, heroIcon, sequence, 0.1 * math.ceil(i / 5) * 5 / speedNum)
+				sequence:AppendInterval(0.1 * (#partners - math.ceil(i / 5) * 0.5) / speedNum)
 
 				if summonIndex == 5 then
 					sequence:AppendCallback(xyd.scb(self.window_, function ()
@@ -1106,6 +1106,8 @@ end
 
 function SummonResultWindow:getSeniorSummonUIComponent()
 	self.partnerUpGroup = self.bottomGroup:NodeByName("partner_up_group").gameObject
+	self.upOnlyImgShow = self.partnerUpGroup:NodeByName("upOnlyImgShow").gameObject
+	self.partnerUpGroupImgIcon = self.upOnlyImgShow:ComponentByName("imgIcon", typeof(UISprite))
 	self.wishTextGroup = self.bottomGroup:NodeByName("describe_group/wish_text_group").gameObject
 	self.probIcon = self.wishTextGroup:ComponentByName("prob_icon", typeof(UISprite))
 	self.probIcon2 = self.wishTextGroup:ComponentByName("prob_icon2", typeof(UISprite))
@@ -1142,26 +1144,33 @@ function SummonResultWindow:refreshSeniorSummonTimes(event)
 	end
 
 	self.probLabel.text = temp_text
-	local upTableId = xyd.tables.miscTable:getVal("activity_gacha_partners")
-	local heroIcon = HeroIcon.new(self.partnerUpGroup)
+	local upTableIdArr = xyd.tables.miscTable:split2num("activity_gacha_partners", "value", "|")
+	local upTableId = upTableIdArr[1]
 
-	heroIcon:setInfo({
-		itemID = upTableId,
-		callback = function ()
-			heroIcon.selected = false
+	if #upTableIdArr > 1 then
+		self.upOnlyImgShow.gameObject:SetActive(true)
+		xyd.setUISpriteAsync(self.partnerUpGroupImgIcon, nil, xyd.tables.miscTable:getVal("gacha_guarantee_double_partner"))
+	else
+		local heroIcon = HeroIcon.new(self.partnerUpGroup)
 
-			if self.isPlayAni == true then
-				return
+		heroIcon:setInfo({
+			itemID = upTableId,
+			callback = function ()
+				heroIcon.selected = false
+
+				if self.isPlayAni == true then
+					return
+				end
+
+				local params = {
+					lev = 1,
+					table_id = upTableId
+				}
+
+				xyd.WindowManager.get():openWindow("partner_info", params)
 			end
-
-			local params = {
-				lev = 1,
-				table_id = upTableId
-			}
-
-			xyd.WindowManager.get():openWindow("partner_info", params)
-		end
-	})
+		})
+	end
 end
 
 function SummonResultWindow:onDecomposePartner(event)

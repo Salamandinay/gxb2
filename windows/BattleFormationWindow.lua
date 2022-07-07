@@ -594,8 +594,6 @@ function BattleFormationWindow:ctor(name, params)
 	if self.battleType ~= xyd.BattleType.ACADEMY_ASSESSMENT then
 		local loadFlag = self:readStorageFormation()
 
-		print("loadFlag  ", loadFlag)
-
 		if self.mapType == xyd.MapType.CAMPAIGN then
 			self.mapInfo = self.mapsModel:getMapInfo(xyd.MapType.CAMPAIGN)
 			self.maxStage = self.mapInfo.max_stage
@@ -1606,6 +1604,10 @@ function BattleFormationWindow:towerBattle(partnerParams)
 			value = self.chooseQuickTeam_
 		})
 	else
+		xyd.db.misc:setValue({
+			value = 0,
+			key = "tower_battle_formation"
+		})
 		addFightPartnerMsg(msg, partnerParams)
 	end
 
@@ -1669,6 +1671,16 @@ function BattleFormationWindow:academyAssessmentBattle(partnerParams)
 
 			return
 		end
+
+		xyd.db.misc:setValue({
+			key = "academy_battle_formation",
+			value = self.chooseQuickTeam_
+		})
+	else
+		xyd.db.misc:setValue({
+			value = 0,
+			key = "academy_battle_formation"
+		})
 	end
 
 	xyd.models.academyAssessment:reqFight(self.stageId, partnerParams, self.pet, self.chooseQuickTeam_)
@@ -1937,6 +1949,11 @@ function BattleFormationWindow:friendBattle(partnerParams)
 
 			return
 		end
+
+		xyd.db.misc:setValue({
+			key = "friend_battle_formation",
+			value = self.chooseQuickTeam_
+		})
 	end
 
 	xyd.models.friend:fightFriend(self.params_.friend_id, partnerParams, self.pet, self.chooseQuickTeam_)

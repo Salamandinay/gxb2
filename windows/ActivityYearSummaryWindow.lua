@@ -7,6 +7,7 @@ local ActivityYearSummaryPage4 = class("ActivityYearSummaryPage4", copyComponent
 local ActivityYearSummaryPage5 = class("ActivityYearSummaryPage5", copyComponent)
 local ActivityYearSummaryPage6 = class("ActivityYearSummaryPage6", copyComponent)
 local ActivityYearSummaryPage7 = class("ActivityYearSummaryPage7", copyComponent)
+local ActivityYearSummaryPage8 = class("ActivityYearSummaryPage8", copyComponent)
 local PlayerIcon = import("app.components.PlayerIcon")
 local pageClassList = {
 	ActivityYearSummaryPage1,
@@ -14,8 +15,19 @@ local pageClassList = {
 	ActivityYearSummaryPage3,
 	ActivityYearSummaryPage4,
 	ActivityYearSummaryPage5,
+	ActivityYearSummaryPage8,
 	ActivityYearSummaryPage6,
 	ActivityYearSummaryPage7
+}
+local pageIndexs = {
+	1,
+	2,
+	3,
+	4,
+	5,
+	8,
+	6,
+	7
 }
 
 function ActivityYearSummaryWindow:ctor(name, params)
@@ -35,8 +47,10 @@ end
 function ActivityYearSummaryWindow:getComponent()
 	local winTrans = self.window_:NodeByName("groupAction").gameObject
 
-	for i = 1, 7 do
+	for i = 1, #pageIndexs do
 		self["pageRoot" .. i] = winTrans:NodeByName("page" .. i).gameObject
+
+		self["pageRoot" .. i]:SetActive(false)
 	end
 
 	self.boxGroup = winTrans:NodeByName("nextClickBox").gameObject
@@ -48,7 +62,7 @@ function ActivityYearSummaryWindow:getComponent()
 end
 
 function ActivityYearSummaryWindow:layout()
-	self.tipsLabel.text = __("ANNUAL3_REVIEW_SKIP")
+	self.tipsLabel.text = __("ANNUAL4_REVIEW_SKIP")
 
 	self.pageRoot1:SetActive(true)
 
@@ -63,11 +77,11 @@ function ActivityYearSummaryWindow:register()
 end
 
 function ActivityYearSummaryWindow:toNextPage(toNext)
-	if self.pageNum_ == 7 and not self.isInAni then
+	if self.pageNum_ == #pageIndexs and not self.isInAni then
 		self:onClickCloseButton()
 
 		return
-	elseif self.pageNum_ == 7 and self.isInAni then
+	elseif self.pageNum_ == #pageIndexs and self.isInAni then
 		if self.page7 then
 			self.page7:showFinalText()
 		end
@@ -77,8 +91,8 @@ function ActivityYearSummaryWindow:toNextPage(toNext)
 		return
 	end
 
-	if self.isOpenAni and self["page" .. self.pageNum_]:canJumpAni() then
-		self["page" .. self.pageNum_]:finishAni()
+	if self.isOpenAni and self["page" .. pageIndexs[self.pageNum_]]:canJumpAni() then
+		self["page" .. pageIndexs[self.pageNum_]]:finishAni()
 
 		self.isOpenAni = false
 
@@ -87,7 +101,7 @@ function ActivityYearSummaryWindow:toNextPage(toNext)
 		return
 	end
 
-	if self.pageNum_ == 1 and (not tonumber(toNext) or tonumber(toNext) ~= 1) then
+	if pageIndexs[self.pageNum_] == 1 and (not tonumber(toNext) or tonumber(toNext) ~= 1) then
 		xyd.WindowManager.get():closeWindow("activity_year_summary_window")
 
 		return
@@ -95,31 +109,37 @@ function ActivityYearSummaryWindow:toNextPage(toNext)
 
 	self.tipsLabel.gameObject:SetActive(true)
 
-	local nextPage = self.pageNum_ + 1
+	local nextPageIndex = self.pageNum_ + 1
 
-	if nextPage == 5 and tonumber(self.detail.tower_stage) == 0 and tonumber(self.detail.pr_challenge_win_count) == 0 and tonumber(self.detail.dungeon_stage) == 0 then
-		nextPage = nextPage + 1
+	if pageIndexs[nextPageIndex] == 5 and tonumber(self.detail.tower_stage) == 0 and tonumber(self.detail.pr_challenge_win_count) == 0 and tonumber(self.detail.dungeon_stage) == 0 then
+		nextPageIndex = self.pageNum_ + 2
 	end
+
+	if pageIndexs[nextPageIndex] == 8 and tonumber(self.detail.trial_1_dmg) == 0 and tonumber(self.detail.trial_2_dmg) == 0 and tonumber(self.detail.cloister_score) == 0 and tonumber(self.detail.shrine_score) == 0 then
+		nextPageIndex = self.pageNum_ + 2
+	end
+
+	local nextPage = pageIndexs[nextPageIndex]
 
 	if not self["page" .. nextPage] then
 		self["pageRoot" .. nextPage]:SetActive(true)
 
-		self["page" .. nextPage] = pageClassList[nextPage].new(self["pageRoot" .. nextPage], self)
+		self["page" .. nextPage] = pageClassList[nextPageIndex].new(self["pageRoot" .. nextPage], self)
 
 		self["page" .. nextPage]:layout()
 	end
 
-	self["page" .. self.pageNum_]:playMoveAni(function ()
+	self["page" .. pageIndexs[self.pageNum_]]:playMoveAni(function ()
 		self["page" .. nextPage]:openAnimation()
 	end)
 
-	if self.pageNum_ <= 6 then
-		self.pageNum_ = nextPage
+	if self.pageNum_ <= #pageIndexs - 1 then
+		self.pageNum_ = nextPageIndex
 	end
 end
 
 function ActivityYearSummaryWindow:willClose()
-	for i = 1, 7 do
+	for i = 1, #pageIndexs do
 		if self["page" .. i] then
 			self["page" .. i]:dispose()
 		end
@@ -139,7 +159,6 @@ function ActivityYearSummaryPage1:initUI()
 	self.animRoot1 = goTrans:ComponentByName("animRoot1", typeof(UIWidget))
 	self.playerIconRoot = goTrans:NodeByName("animRoot1/playerIconRoot").gameObject
 	self.playerIconWidgt = self.playerIconRoot:GetComponent(typeof(UIWidget))
-	self.eImage_ = goTrans:ComponentByName("e:image", typeof(UIWidget))
 	self.playerName = goTrans:ComponentByName("animRoot1/playerIconRoot/playerName", typeof(UILabel))
 	self.title1 = goTrans:ComponentByName("title1", typeof(UILabel))
 	self.title2 = goTrans:ComponentByName("animRoot1/title2", typeof(UILabel))
@@ -152,26 +171,25 @@ function ActivityYearSummaryPage1:initUI()
 	self.btnNextLabel = goTrans:ComponentByName("btnNext/label", typeof(UILabel))
 	self.labelTips = goTrans:ComponentByName("labelTips", typeof(UILabel))
 	self.bg = goTrans:ComponentByName("bg", typeof(UIWidget))
-	self.bg2 = goTrans:ComponentByName("bg2", typeof(UIWidget))
 end
 
 function ActivityYearSummaryPage1:layout()
-	self.title1.text = __("ANNUAL3_REVIEW_1_1")
-	self.title2.text = __("ANNUAL3_REVIEW_1_2")
-	self.title3.text = __("ANNUAL3_REVIEW_1_3")
-	self.btnNextLabel.text = __("ANNUAL3_REVIEW_1_4")
-	self.labelTips.text = __("ANNUAL3_REVIEW_1_5")
+	self.title1.text = __("ANNUAL4_REVIEW_1_1")
+	self.title2.text = __("ANNUAL4_REVIEW_1_2")
+	self.title3.text = __("ANNUAL4_REVIEW_1_3")
+	self.btnNextLabel.text = __("ANNUAL4_REVIEW_1_4")
+	self.labelTips.text = __("ANNUAL4_REVIEW_1_5")
 
 	if not self.logoEffect then
 		self.logoEffect = xyd.Spine.new(self.logoRoot)
 
 		self.logoEffect:setInfo("loading1_zi", function ()
-			self.logoEffect:SetLocalScale(0.7, 0.7, 0)
+			self.logoEffect:SetLocalScale(0.65, 0.65, 0)
 
 			if xyd.Global.lang == "ko_kr" or xyd.Global.lang == "ja_jp" then
-				self.logoEffect:SetLocalPosition(-330, -200, 0)
+				self.logoEffect:SetLocalPosition(-310, -200, 0)
 			else
-				self.logoEffect:SetLocalPosition(-360, -200, 0)
+				self.logoEffect:SetLocalPosition(-340, -200, 0)
 			end
 
 			local aniName = "title_" .. xyd.Global.lang
@@ -205,16 +223,8 @@ function ActivityYearSummaryPage1:openAnimation()
 		self.parent_.isOpenAni = false
 	end)
 
-	local function setter1(value)
-		self.bg2.alpha = value
-	end
-
 	local function setter2(value)
 		self.bg.alpha = value
-	end
-
-	local function setter3(value)
-		self.eImage_.alpha = value
 	end
 
 	local function setter4(value)
@@ -245,14 +255,8 @@ function ActivityYearSummaryPage1:openAnimation()
 		self.labelTips.alpha = value
 	end
 
-	self.seq_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 1, 0.2))
 	self.seq_:Insert(0.06666666666666667, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter2), 0, 1, 0.2))
 	self.seq_:Insert(0.06666666666666667, self.bg.transform:DOLocalMove(Vector3(0, 0, 0), 0.26666666666666666))
-	self.seq_:Insert(0.06666666666666667, self.eImage_.transform:DOLocalMove(Vector3(301, 185, 0), 0.26666666666666666))
-	self.seq_:Insert(0.16666666666666666, self.eImage_.transform:DOLocalRotate(Vector3(0, 0, 5), 0.23333333333333334))
-	self.seq_:Insert(0.4, self.eImage_.transform:DOLocalRotate(Vector3(0, 0, -3), 0.26666666666666666))
-	self.seq_:Insert(0.6666666666666666, self.eImage_.transform:DOLocalRotate(Vector3(0, 0, 0), 0.3333333333333333))
-	self.seq_:Insert(0.16666666666666666, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter3), 0, 1, 0.23333333333333334))
 	self.seq_:Insert(0.3333333333333333, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter4), 0, 1, 0.13333333333333333))
 	self.seq_:Insert(0.36666666666666664, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter5), 0, 1, 0.16666666666666666))
 	self.seq_:Insert(0.36666666666666664, self.playerIconWidgt.transform:DOScale(Vector3(1.1, 1.1, 1.1), 0.16666666666666666))
@@ -267,7 +271,7 @@ function ActivityYearSummaryPage1:openAnimation()
 	self.seq_:Insert(0.6666666666666666, self.logoRootWidgt.transform:DOScale(Vector3(0.98, 0.98, 1), 0.16666666666666666))
 	self.seq_:Insert(0.8333333333333334, self.logoRootWidgt.transform:DOScale(Vector3(1, 1, 1), 0.23333333333333334))
 	self.seq_:Insert(1.1, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter8), 0, 1, 0.2))
-	self.seq_:Insert(1.1, self.title3.transform:DOLocalMove(Vector3(0, -209, 0), 0.26666666666666666))
+	self.seq_:Insert(1.1, self.title3.transform:DOLocalMove(Vector3(0, -28, 0), 0.26666666666666666))
 	self.seq_:Insert(1.6666666666666667, self.btnNext.transform:DOScale(Vector3(1.05, 1.05, 1.05), 0.23333333333333334))
 	self.seq_:Insert(1.9, self.btnNext.transform:DOScale(Vector3(1, 1, 1), 0.16666666666666666))
 	self.seq_:Insert(1.6666666666666667, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter9), 0, 1, 0.23333333333333334))
@@ -278,9 +282,7 @@ function ActivityYearSummaryPage1:finishAni()
 	self.seq_:Pause()
 	self.seq_:Kill(false)
 
-	self.bg2.alpha = 1
 	self.bg.alpha = 1
-	self.eImage_.alpha = 1
 	self.title1.alpha = 1
 	self.playerIconWidgt.alpha = 1
 	self.title2.alpha = 1
@@ -289,12 +291,10 @@ function ActivityYearSummaryPage1:finishAni()
 	self.btnNextWidgt.alpha = 1
 	self.labelTips.alpha = 1
 	self.bg.transform.localPosition = Vector3(0, 0, 0)
-	self.eImage_.transform.localPosition = Vector3(301, 185, 0)
-	self.eImage_.transform.localRotation = Vector3(0, 0, 0)
 	self.playerIconWidgt.transform.localScale = Vector3(1, 1, 1)
 	self.title2.transform.localScale = Vector3(1, 1, 1)
 	self.logoRoot.transform.localScale = Vector3(1, 1, 1)
-	self.title3.transform.localPosition = Vector3(0, -209, 0)
+	self.title3.transform.localPosition = Vector3(0, -28, 0)
 	self.btnNext.transform.localScale = Vector3(1, 1, 1)
 	self.parent_.isOpenAni = false
 end
@@ -335,8 +335,21 @@ end
 
 function ActivityYearSummaryPage2:layout()
 	local ctrTime = self.parent_.detail.created_time
-	self.title1.text = __("ANNUAL3_REVIEW_2_1", xyd.getDisplayTime2(ctrTime, xyd.TimestampStrType.DATE))
-	self.title2.text = __("ANNUAL3_REVIEW_2_2", self.parent_.detail.star_5_num)
+	self.title1.text = __("ANNUAL4_REVIEW_2_1", xyd.getDisplayTime2(ctrTime, xyd.TimestampStrType.DATE))
+	self.title2.text = __("ANNUAL4_REVIEW_2_2", self.parent_.detail.star_5_num)
+	local group7PartnerNum = 0
+	local collection = xyd.models.slot:getCollection()
+
+	for k, v in pairs(collection) do
+		if v and xyd.tables.partnerTable:getGroup(k) == 7 then
+			group7PartnerNum = group7PartnerNum + 1
+		end
+	end
+
+	if group7PartnerNum ~= 0 then
+		self.title2.text = self.title2.text .. "\n" .. __("ANNUAL4_REVIEW_2_3", group7PartnerNum)
+	end
+
 	self.playerName.text = xyd.Global.playerName
 	self.playerIcon = PlayerIcon.new(self.playerIconRoot)
 
@@ -422,34 +435,30 @@ function ActivityYearSummaryPage3:layout()
 		self.guildIcon.gameObject:SetActive(false)
 		self.title2.transform:Y(self.title2.transform.localPosition.y + 48)
 
-		self.title2.text = __("ANNUAL3_REVIEW_3_6")
+		self.title2.text = __("ANNUAL4_REVIEW_3_6")
 	elseif tonumber(guildFriendNum) == 1 then
 		local flagName = xyd.tables.guildIconTable:getIcon(baseGuildInfo.flag)
 
 		xyd.setUISpriteAsync(self.guildIcon, nil, flagName)
 
-		self.title2.text = __("ANNUAL3_REVIEW_3_5", baseGuildInfo.name, __("GUILD_JOB" .. tostring(xyd.models.guild.guildJob)))
+		self.title2.text = __("ANNUAL4_REVIEW_3_5", baseGuildInfo.name, __("GUILD_JOB" .. tostring(xyd.models.guild.guildJob)))
 	else
 		local flagName = xyd.tables.guildIconTable:getIcon(baseGuildInfo.flag)
 
 		xyd.setUISpriteAsync(self.guildIcon, nil, flagName)
 
-		self.title2.text = __("ANNUAL3_REVIEW_3_4", baseGuildInfo.name, __("GUILD_JOB" .. tostring(xyd.models.guild.guildJob)), guildFriendNum)
+		self.title2.text = __("ANNUAL4_REVIEW_3_4", baseGuildInfo.name, __("GUILD_JOB" .. tostring(xyd.models.guild.guildJob)), guildFriendNum)
 	end
 
 	if not friendNum or tonumber(friendNum) == 0 then
-		self.title1.text = __("ANNUAL3_REVIEW_3_3")
+		self.title1.text = __("ANNUAL4_REVIEW_3_3")
 	elseif tonumber(friendNum) <= 3 then
-		self.title1.text = __("ANNUAL3_REVIEW_3_1", friendNum)
+		self.title1.text = __("ANNUAL4_REVIEW_3_1", friendNum)
 	else
-		self.title1.text = __("ANNUAL3_REVIEW_3_2", friendNum)
+		self.title1.text = __("ANNUAL4_REVIEW_3_2", friendNum)
 	end
 
-	if xyd.Global.lang == "de_de" then
-		self.title1.transform:Y(185)
-	elseif xyd.Global.lang == "fr_fr" then
-		self.title1.transform:Y(155)
-
+	if xyd.Global.lang == "fr_fr" then
 		self.title2.spacingY = 8
 	end
 end
@@ -514,11 +523,8 @@ function ActivityYearSummaryPage4:initUI()
 	self.title1 = goTrans:ComponentByName("label1", typeof(UILabel))
 	self.title2 = goTrans:ComponentByName("label2", typeof(UILabel))
 	self.img1 = goTrans:ComponentByName("e:image1", typeof(UIWidget))
-	self.img2 = goTrans:ComponentByName("e:image2", typeof(UIWidget))
 	self.img3 = goTrans:ComponentByName("e:image", typeof(UIWidget))
-	self.img4 = goTrans:ComponentByName("e:image (1)", typeof(UIWidget))
 	self.img1.alpha = 0
-	self.img2.alpha = 0
 	self.title1.alpha = 0
 	self.title2.alpha = 0
 end
@@ -531,33 +537,33 @@ function ActivityYearSummaryPage4:layout()
 	local percent = math.floor(1000 * tonumber(self.parent_.detail.gallery_5) / totalNum) / 10
 
 	if percent < 30 then
-		self.title1.text = __("ANNUAL3_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%") .. "\\n" .. __("ANNUAL3_REVIEW_4_2")
+		self.title1.text = __("ANNUAL4_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%") .. "\\n" .. __("ANNUAL4_REVIEW_4_2")
 	elseif percent > 90 then
-		self.title1.text = __("ANNUAL3_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%") .. "\\n" .. __("ANNUAL3_REVIEW_4_3")
+		self.title1.text = __("ANNUAL4_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%") .. "\\n" .. __("ANNUAL4_REVIEW_4_3")
 	else
-		self.title1.text = __("ANNUAL3_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%")
+		self.title1.text = __("ANNUAL4_REVIEW_4_1", self.parent_.detail.gallery_5, percent .. "%")
 	end
 
 	if self.parent_.detail.gallery_10 and tonumber(self.parent_.detail.gallery_10) > 0 then
-		self.title1.text = self.title1.text .. "\\n" .. __("ANNUAL3_REVIEW_4_4", self.parent_.detail.gallery_10, math.floor(1000 * tonumber(self.parent_.detail.gallery_10) / 10 / totalNum10) .. "%")
+		self.title1.text = self.title1.text .. "\\n" .. __("ANNUAL4_REVIEW_4_4", self.parent_.detail.gallery_10, math.floor(1000 * tonumber(self.parent_.detail.gallery_10) / 10 / totalNum10) .. "%")
 	end
 
 	if wed_count == 0 and can_wed_count == 0 then
-		self.title2.text = __("ANNUAL3_REVIEW_4_8")
+		self.title2.text = __("ANNUAL4_REVIEW_4_8")
 	elseif wed_count == 0 then
 		if can_wed_count == 1 then
-			self.title2.text = __("ANNUAL3_REVIEW_4_7_1", can_wed_count)
+			self.title2.text = __("ANNUAL4_REVIEW_4_7_1", can_wed_count)
 		else
-			self.title2.text = __("ANNUAL3_REVIEW_4_7", can_wed_count)
+			self.title2.text = __("ANNUAL4_REVIEW_4_7", can_wed_count)
 		end
 	else
-		self.title2.text = __("ANNUAL3_REVIEW_4_5", wed_count)
+		self.title2.text = __("ANNUAL4_REVIEW_4_5", wed_count)
 
 		if can_wed_count > 0 then
 			if can_wed_count == 1 then
-				self.title2.text = self.title2.text .. "\\n" .. __("ANNUAL3_REVIEW_4_6_1", can_wed_count)
+				self.title2.text = self.title2.text .. "\\n" .. __("ANNUAL4_REVIEW_4_6_1", can_wed_count)
 			else
-				self.title2.text = self.title2.text .. "\\n" .. __("ANNUAL3_REVIEW_4_6", can_wed_count)
+				self.title2.text = self.title2.text .. "\\n" .. __("ANNUAL4_REVIEW_4_6", can_wed_count)
 			end
 		end
 	end
@@ -569,14 +575,10 @@ function ActivityYearSummaryPage4:layout()
 		self.title2.spacingY = 6
 
 		self.img1.transform:Y(-110)
-		self.img2.transform:Y(-110)
 		self.img3.transform:Y(-45)
-		self.img4.transform:Y(-45)
 	elseif xyd.Global.lang == "en_en" then
 		self.img3.transform:Y(-25)
-		self.img4.transform:Y(-25)
 		self.img1.transform:Y(-90)
-		self.img2.transform:Y(-90)
 		self.title2.transform:Y(-150)
 	end
 end
@@ -604,7 +606,6 @@ end
 function ActivityYearSummaryPage4:finishAni()
 	self.parent_.isOpenAni = false
 	self.img1.alpha = 1
-	self.img2.alpha = 1
 	self.title1.alpha = 1
 	self.title2.alpha = 1
 
@@ -624,7 +625,6 @@ function ActivityYearSummaryPage4:openAnimation()
 
 	local function setter3(value)
 		self.img1.alpha = value
-		self.img2.alpha = value
 	end
 
 	local function setter2(value)
@@ -638,6 +638,7 @@ end
 
 function ActivityYearSummaryPage5:ctor(gameObject, parent)
 	self.parent_ = parent
+	self.itemsNum = 3
 
 	ActivityYearSummaryPage5.super.ctor(self, gameObject)
 end
@@ -647,20 +648,15 @@ function ActivityYearSummaryPage5:initUI()
 	self.title1 = goTrans:ComponentByName("label1", typeof(UILabel))
 	self.title2 = goTrans:ComponentByName("label2", typeof(UILabel))
 	self.title3 = goTrans:ComponentByName("label3", typeof(UILabel))
-	self.layout_ = goTrans:ComponentByName("layout", typeof(UILayout))
-	self.layoutWidgt = self.layout_:GetComponent(typeof(UIWidget))
+	self.layoutWidgt = goTrans:ComponentByName("layout", typeof(UIWidget))
 	self.part1_ = goTrans:NodeByName("layout/part1").gameObject
 	self.part2_ = goTrans:NodeByName("layout/part2").gameObject
 	self.part3_ = goTrans:NodeByName("layout/part3").gameObject
 	self.title1_2 = goTrans:ComponentByName("layout/part1/label1-2", typeof(UILabel))
 	self.title2_2 = goTrans:ComponentByName("layout/part2/label2-2", typeof(UILabel))
-	self.bgDown1 = goTrans:NodeByName("layout/part1/bgDown").gameObject
 	self.title3_2 = goTrans:ComponentByName("layout/part3/label3-2", typeof(UILabel))
 	self.title1_1 = goTrans:ComponentByName("layout/part1/label1-1", typeof(UILabel))
 	self.title2_1 = goTrans:ComponentByName("layout/part2/label2-1", typeof(UILabel))
-	self.bgDown2 = goTrans:NodeByName("layout/part2/bgDown").gameObject
-	self.bgUp2 = goTrans:NodeByName("layout/part2/bgUp").gameObject
-	self.bgUp3 = goTrans:NodeByName("layout/part3/bgUp").gameObject
 	self.title3_1 = goTrans:ComponentByName("layout/part3/label3-1", typeof(UILabel))
 	self.layoutWidgt.alpha = 0
 	self.title1.alpha = 0
@@ -669,66 +665,76 @@ function ActivityYearSummaryPage5:initUI()
 end
 
 function ActivityYearSummaryPage5:layout()
-	self.title1.text = __("ANNUAL3_REVIEW_5_1")
+	self.title1.text = __("ANNUAL4_REVIEW_5_1")
 	self.title2.text = self.parent_.detail.total_power
-	self.title3.text = __("ANNUAL3_REVIEW_5_2")
-	self.title1_1.text = __("ANNUAL3_REVIEW_5_3", self.parent_.detail.tower_stage)
+	self.title3.text = __("ANNUAL4_REVIEW_5_2")
+	self.title1_1.text = __("ANNUAL4_REVIEW_5_3", self.parent_.detail.tower_stage)
 
 	if tonumber(self.parent_.detail.tower_percent) > 0.5 then
-		self.title1_2.text = __("ANNUAL3_REVIEW_5_6", self.parent_.detail.tower_percent * 100 .. "%")
+		self.title1_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.tower_percent * 100 .. "%")
+	else
+		self.title1_1.transform:Y(self.title1_1.transform.localPosition.y - 20)
 	end
 
 	if tonumber(self.parent_.detail.dungeon_percent) > 0.5 then
-		self.title2_2.text = __("ANNUAL3_REVIEW_5_6", self.parent_.detail.dungeon_percent * 100 .. "%")
+		self.title2_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.dungeon_percent * 100 .. "%")
+	else
+		self.title2_1.transform:Y(self.title2_1.transform.localPosition.y - 20)
 	end
 
-	self.title2_1.text = __("ANNUAL3_REVIEW_5_4", self.parent_.detail.dungeon_stage)
-	self.title3_1.text = __("ANNUAL3_REVIEW_5_5", self.parent_.detail.pr_challenge_win_count)
-	self.title3_2.text = __("ANNUAL3_REVIEW_5_7", self.parent_.detail.pr_challenge_win_count, xyd.getPrChallengeNum())
-	local canShowList = {
-		true,
-		true,
-		true
-	}
-
-	if tonumber(self.parent_.detail.tower_stage) == 0 then
-		canShowList[1] = false
-
-		self.part1_:SetActive(false)
-	end
-
-	if tonumber(self.parent_.detail.dungeon_stage) == 0 then
-		canShowList[2] = false
-
-		self.part2_:SetActive(false)
-	end
+	self.title2_1.text = __("ANNUAL4_REVIEW_5_4", self.parent_.detail.dungeon_stage)
+	self.title3_1.text = __("ANNUAL4_REVIEW_5_5", self.parent_.detail.pr_challenge_win_count)
+	self.title3_2.text = __("ANNUAL4_REVIEW_5_7", self.parent_.detail.pr_challenge_win_count, xyd.getPrChallengeNum())
 
 	if tonumber(self.parent_.detail.pr_challenge_win_count) == 0 then
-		canShowList[3] = false
-
 		self.part3_:SetActive(false)
-	end
 
-	self.layout_:Reposition()
+		self.itemsNum = self.itemsNum - 1
 
-	for i = 2, 1, -1 do
-		if canShowList[i] and not canShowList[3] then
-			self["bgDown" .. i]:SetActive(true)
+		if tonumber(self.parent_.detail.dungeon_stage) == 0 then
+			self.part2_:SetActive(false)
 
-			break
-		end
-	end
-
-	for i = 2, 3 do
-		if canShowList[i] and not canShowList[1] then
-			self["bgUp" .. i]:SetActive(true)
-
-			break
+			self.itemsNum = self.itemsNum - 1
 		end
 	end
 
 	if xyd.Global.lang == "de_de" or xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
-		self.title1.transform:Y(250)
+		self.title1.transform:Y(300)
+	end
+
+	if xyd.Global.lang == "de_de" then
+		self.title1_1.spacingY = 0
+		self.title2_1.spacingY = 0
+		self.title3_1.spacingY = 0
+		self.title1_1.fontSize = 15
+		self.title2_1.fontSize = 15
+		self.title3_1.fontSize = 15
+	end
+
+	if xyd.Global.lang == "fr_fr" then
+		self.title1_1.spacingY = 6
+		self.title2_1.spacingY = 6
+		self.title3_1.spacingY = 6
+		self.title1_1.fontSize = 15
+		self.title2_1.fontSize = 15
+		self.title3_1.fontSize = 15
+	end
+
+	self:updateItemsPos()
+end
+
+function ActivityYearSummaryPage5:updateItemsPos()
+	if self.itemsNum == 2 then
+		self.part1_:NodeByName("bg"):SetActive(false)
+		self.part2_:NodeByName("bg"):SetActive(false)
+		self.part1_:NodeByName("bg2"):SetActive(true)
+		self.part2_:NodeByName("bg2"):SetActive(true)
+		self.part1_.transform:Y(200)
+		self.part2_.transform:Y(-45)
+	elseif self.itemsNum == 1 then
+		self.part1_:NodeByName("bg"):SetActive(false)
+		self.part1_:NodeByName("bg1"):SetActive(true)
+		self.part1_.transform:Y(150)
 	end
 end
 
@@ -800,6 +806,8 @@ function ActivityYearSummaryPage6:initUI()
 	self.title3 = goTrans:ComponentByName("label3", typeof(UILabel))
 	self.title3_1 = goTrans:ComponentByName("label3-1", typeof(UILabel))
 	self.title2_1 = goTrans:ComponentByName("label2-1", typeof(UILabel))
+	self.attrNode = goTrans:NodeByName("attrNode/node").gameObject
+	self.heroNode = goTrans:NodeByName("heroNode/node").gameObject
 	self.title1.alpha = 0
 	self.title2.alpha = 0
 	self.title2_1.alpha = 0
@@ -808,25 +816,41 @@ function ActivityYearSummaryPage6:initUI()
 end
 
 function ActivityYearSummaryPage6:layout()
-	self.title1.text = __("ANNUAL3_REVIEW_6_1", self.parent_.detail.collect_point) .. "\\n" .. __("ANNUAL3_REVIEW_6_2")
-	self.title2.text = __("ANNUAL3_REVIEW_6_3", self.parent_.detail.comfort)
+	self.title1.text = __("ANNUAL4_REVIEW_6_1", self.parent_.detail.collect_point) .. "\\n" .. __("ANNUAL4_REVIEW_6_2")
+	self.title2.text = __("ANNUAL4_REVIEW_6_3", self.parent_.detail.dress_score)
+	self.title2_1.text = " "
+	self.title3.text = __("ANNUAL4_REVIEW_6_4", self.parent_.detail.skin_num)
+	self.title3_1.text = " "
 
-	if self.parent_.detail.comfort_percent and tonumber(self.parent_.detail.comfort_percent) > 0.5 then
-		self.title2_1.text = __("ANNUAL3_REVIEW_5_6", tonumber(self.parent_.detail.comfort_percent) * 100 .. "%")
-	else
-		self.title2_1.text = " "
-	end
+	self:initDress()
+end
 
-	self.title3.text = __("ANNUAL3_REVIEW_6_4", self.parent_.detail.skin_num)
+function ActivityYearSummaryPage6:initDress()
+	local iconClass = require("app.components.ThreeAttrComponent")
+	self.attr_map = iconClass.new(self.attrNode)
+	local params = {
+		max_value = xyd.models.dress:getThreeMaxValue(),
+		value_arr = xyd.models.dress:getAttrs(),
+		text_arr = {
+			__("PERSON_DRESS_ATTR_1"),
+			__("PERSON_DRESS_ATTR_2"),
+			__("PERSON_DRESS_ATTR_3")
+		}
+	}
 
-	if self.parent_.detail.skin_percent and tonumber(self.parent_.detail.skin_percent) > 0.5 then
-		self.title3_1.text = __("ANNUAL3_REVIEW_5_6", tonumber(self.parent_.detail.skin_percent) * 100 .. "%")
-	else
-		self.title3_1.text = " "
-	end
+	self.attr_map:setInfo(params)
+	self.attr_map:SetLocalPosition(0, 0, 0)
 
-	if xyd.Global.lang ~= "de_de" and xyd.Global.lang ~= "en_en" then
-		self.title1.transform:Y(235)
+	self.normalModel_ = import("app.components.SenpaiModel").new(self.heroNode)
+
+	self.normalModel_:setModelInfo({
+		isNewClipShader = true,
+		ids = xyd.models.dress:getEffectEquipedStyles()
+	})
+
+	if not xyd.checkFunctionOpen(xyd.FunctionID.DRESS, true) then
+		self.attrNode.gameObject:SetActive(false)
+		self.heroNode.gameObject:SetActive(false)
 	end
 end
 
@@ -906,7 +930,7 @@ function ActivityYearSummaryPage7:initUI()
 	elseif xyd.Global.lang == "en_en" then
 		self.title1.spacingY = 2
 	elseif xyd.Global.lang == "fr_fr" then
-		self.title1.spacingY = 4
+		self.title1.spacingY = 2
 	end
 end
 
@@ -925,12 +949,12 @@ function ActivityYearSummaryPage7:layout()
 		self.logoEffect = xyd.Spine.new(self.logoRoot)
 
 		self.logoEffect:setInfo("loading1_zi", function ()
-			self.logoEffect:SetLocalScale(0.55, 0.55, 0)
+			self.logoEffect:SetLocalScale(0.6, 0.6, 0)
 
 			if xyd.Global.lang == "ko_kr" or xyd.Global.lang == "ja_jp" then
-				self.logoEffect:SetLocalPosition(-260, -475, 0)
+				self.logoEffect:SetLocalPosition(-310, -440, 0)
 			else
-				self.logoEffect:SetLocalPosition(-290, -475, 0)
+				self.logoEffect:SetLocalPosition(-310, -440, 0)
 			end
 
 			local aniName = "title_" .. xyd.Global.lang
@@ -939,8 +963,8 @@ function ActivityYearSummaryPage7:layout()
 		end)
 	end
 
-	self.title2.text = __("ANNUAL3_REVIEW_7_2")
-	local texts = xyd.split(__("ANNUAL3_REVIEW_7_1"), "|")
+	self.title2.text = __("ANNUAL4_REVIEW_7_2")
+	local texts = xyd.split(__("ANNUAL4_REVIEW_7_1"), "|")
 
 	for i, text in ipairs(texts) do
 		if not self.curStr then
@@ -1036,6 +1060,246 @@ function ActivityYearSummaryPage7:finishAni()
 end
 
 function ActivityYearSummaryPage7:openAnimation()
+end
+
+function ActivityYearSummaryPage8:ctor(gameObject, parent)
+	self.parent_ = parent
+	self.itemsNum = 3
+
+	ActivityYearSummaryPage8.super.ctor(self, gameObject)
+end
+
+function ActivityYearSummaryPage8:initUI()
+	local goTrans = self.go.transform
+	self.title1 = goTrans:ComponentByName("label1", typeof(UILabel))
+	self.title2 = goTrans:ComponentByName("label2", typeof(UILabel))
+	self.title3 = goTrans:ComponentByName("label3", typeof(UILabel))
+	self.layoutWidgt = goTrans:ComponentByName("layout", typeof(UIWidget))
+	self.part1_ = goTrans:NodeByName("layout/part1").gameObject
+	self.part2_ = goTrans:NodeByName("layout/part2").gameObject
+	self.part3_ = goTrans:NodeByName("layout/part3").gameObject
+	self.title1_2 = goTrans:ComponentByName("layout/part1/label1-2", typeof(UILabel))
+	self.title2_2 = goTrans:ComponentByName("layout/part2/label2-2", typeof(UILabel))
+	self.title3_2 = goTrans:ComponentByName("layout/part3/label3-2", typeof(UILabel))
+	self.title1_1 = goTrans:ComponentByName("layout/part1/label1-1", typeof(UILabel))
+	self.title2_1 = goTrans:ComponentByName("layout/part2/label2-1", typeof(UILabel))
+	self.title3_1 = goTrans:ComponentByName("layout/part3/label3-1", typeof(UILabel))
+	self.layoutWidgt.alpha = 0
+	self.title1.alpha = 0
+	self.title2.alpha = 0
+	self.title3.alpha = 0
+	self.bookNode = self.part1_:NodeByName("bookNode").gameObject
+	self.bookImg1 = self.bookNode:NodeByName("img1").gameObject
+	self.bookImg2 = self.bookNode:NodeByName("img2").gameObject
+	self.exchangeBtn = self.bookNode:NodeByName("btn").gameObject
+end
+
+function ActivityYearSummaryPage8:getCloisterNum(num)
+	local result = {}
+	local ids = xyd.tables.timeCloisterAchTypeTable:getIDs()
+	local types = {
+		61,
+		77,
+		73
+	}
+	local maxIndex = 1
+	local needProgress = num
+
+	if num > 9999 then
+		maxIndex = 3
+		needProgress = math.floor(num / 10000)
+	elseif num > 99 then
+		maxIndex = 2
+		needProgress = math.floor(num / 100)
+	end
+
+	result.name = xyd.tables.timeCloisterTextTable:getName(maxIndex)
+	result.percent = math.floor(needProgress / types[maxIndex] * 1000) / 10 .. "%"
+
+	return result
+end
+
+function ActivityYearSummaryPage8:layout()
+	self.selectBook = 1
+	local onlyOne = false
+	self.title1.text = __("ANNUAL4_REVIEW_5_1")
+	self.title2.text = self.parent_.detail.total_power
+	self.title3.text = __("ANNUAL4_REVIEW_5_2")
+
+	if tonumber(self.parent_.detail.cloister_percent) > 0.5 then
+		self.title2_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.cloister_percent * 100 .. "%")
+	else
+		self.title2_1.transform:Y(self.title2_1.transform.localPosition.y - 20)
+	end
+
+	if tonumber(self.parent_.detail.shrine_percent) > 0.5 then
+		self.title3_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.shrine_percent * 100 .. "%")
+	else
+		self.title3_1.transform:Y(self.title3_1.transform.localPosition.y - 20)
+	end
+
+	local cloisterResult = self:getCloisterNum(tonumber(self.parent_.detail.cloister_score))
+	self.title2_1.text = ""
+
+	if cloisterResult.name then
+		self.title2_1.text = __("ANNUAL4_REVIEW_5_10", cloisterResult.name, cloisterResult.percent)
+	end
+
+	self.title3_1.text = __("ANNUAL4_REVIEW_5_11", self.parent_.detail.shrine_score)
+
+	if self.parent_.detail.trial_1_dmg == 0 and self.parent_.detail.trial_2_dmg > 0 then
+		self.selectBook = 2
+		onlyOne = true
+	elseif self.parent_.detail.trial_2_dmg == 0 and self.parent_.detail.trial_1_dmg > 0 then
+		onlyOne = true
+	end
+
+	if onlyOne then
+		self.exchangeBtn:SetActive(false)
+	end
+
+	if tonumber(self.parent_.detail.shrine_score) == 0 then
+		self.part3_:SetActive(false)
+
+		self.itemsNum = self.itemsNum - 1
+
+		if tonumber(self.parent_.detail.cloister_score) == 0 then
+			self.part2_:SetActive(false)
+
+			self.itemsNum = self.itemsNum - 1
+		end
+	end
+
+	if xyd.Global.lang == "de_de" or xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
+		self.title1.transform:Y(300)
+	end
+
+	if xyd.Global.lang == "fr_fr" then
+		self.title2_2.transform:Y(-30)
+
+		self.title1_1.spacingY = 6
+		self.title2_1.spacingY = 6
+		self.title3_1.spacingY = 6
+		self.title1_1.fontSize = 15
+		self.title2_1.fontSize = 15
+		self.title3_1.fontSize = 15
+	end
+
+	if xyd.Global.lang == "de_de" then
+		self.title1_1.spacingY = 0
+		self.title2_1.spacingY = 0
+		self.title3_1.spacingY = 0
+		self.title1_1.fontSize = 15
+		self.title2_1.fontSize = 15
+		self.title3_1.fontSize = 15
+	end
+
+	UIEventListener.Get(self.exchangeBtn).onClick = function ()
+		if self.selectBook == 1 then
+			self.selectBook = 2
+		else
+			self.selectBook = 1
+		end
+
+		self:updateBookItem()
+	end
+
+	self:updateBookItem()
+	self:updateItemsPos()
+end
+
+function ActivityYearSummaryPage8:updateBookItem()
+	self.bookImg1:SetActive(false)
+	self.bookImg2:SetActive(false)
+	self.bookNode:NodeByName("img" .. self.selectBook).gameObject:SetActive(true)
+
+	if self.selectBook == 1 then
+		self.title1_1.text = __("ANNUAL4_REVIEW_5_8", self.parent_.detail.trial_1_dmg)
+
+		if tonumber(self.parent_.detail.trial_1_percent) > 0.5 then
+			self.title1_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.trial_1_percent * 100 .. "%")
+		else
+			self.title1_1.transform:Y(0)
+		end
+	else
+		self.title1_1.text = __("ANNUAL4_REVIEW_5_9", self.parent_.detail.trial_2_dmg)
+
+		if tonumber(self.parent_.detail.trial_2_percent) > 0.5 then
+			self.title1_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.trial_2_percent * 100 .. "%")
+		else
+			self.title1_1.transform:Y(0)
+		end
+	end
+end
+
+function ActivityYearSummaryPage8:updateItemsPos()
+	if self.itemsNum == 2 then
+		self.part1_:NodeByName("bg"):SetActive(false)
+		self.part2_:NodeByName("bg"):SetActive(false)
+		self.part1_:NodeByName("bg2"):SetActive(true)
+		self.part2_:NodeByName("bg2"):SetActive(true)
+		self.part1_.transform:Y(185)
+		self.part2_.transform:Y(-35)
+	elseif self.itemsNum == 1 then
+		self.part1_:NodeByName("bg"):SetActive(false)
+		self.part1_:NodeByName("bg1"):SetActive(true)
+		self.part1_.transform:Y(150)
+	end
+end
+
+function ActivityYearSummaryPage8:playMoveAni(callback)
+	self.parent_.isInAni = true
+	local goTrans = self.go.transform
+	local seq = self:getSequence()
+
+	seq:Insert(0, goTrans:DOLocalMove(Vector3(-1000, -1000, 0), 0.6))
+	seq:Insert(0, goTrans:DOLocalRotate(Vector3(0, 0, -60), 0.6))
+	seq:InsertCallback(0.4, function ()
+		self.parent_.isInAni = false
+
+		if callback then
+			callback()
+		end
+	end)
+end
+
+function ActivityYearSummaryPage8:canJumpAni()
+	return true
+end
+
+function ActivityYearSummaryPage8:finishAni()
+	self.parent_.isOpenAni = false
+	self.layoutWidgt.alpha = 1
+	self.title1.alpha = 1
+	self.title2.alpha = 1
+	self.title3.alpha = 1
+
+	self.seq_:Pause()
+	self.seq_:Kill(false)
+end
+
+function ActivityYearSummaryPage8:openAnimation()
+	self.parent_.isOpenAni = true
+	self.seq_ = self:getSequence(function ()
+		self.parent_.isOpenAni = false
+	end)
+
+	local function setter1(value)
+		self.title1.alpha = value
+		self.title2.alpha = value
+	end
+
+	local function setter3(value)
+		self.layoutWidgt.alpha = value
+	end
+
+	local function setter2(value)
+		self.title3.alpha = value
+	end
+
+	self.seq_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 1, 0.26666666666666666))
+	self.seq_:Insert(0.4, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter2), 0, 1, 0.26666666666666666))
+	self.seq_:Insert(0.7333333333333333, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter3), 0, 1, 0.2))
 end
 
 return ActivityYearSummaryWindow

@@ -40,7 +40,7 @@ function ErrorModel:onError(event)
 		return
 	end
 
-	if UNITY_EDITOR and tonumber(errorCode) == xyd.ErrorCode.UNENABLED_LOGIN_SERVER then
+	if tonumber(errorCode) == xyd.ErrorCode.UNENABLED_LOGIN_SERVER then
 		local loginWd = xyd.WindowManager.get():getWindow("login_window")
 		xyd.Global.isHasBeenBanServer = true
 

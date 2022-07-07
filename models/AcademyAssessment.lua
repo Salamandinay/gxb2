@@ -171,14 +171,18 @@ function AcademyAssessment:reqFight(stageId, partners, petId, team_index)
 
 	local msg = messages_pb.school_practice_fight_req()
 	msg.stage_id = stageId
+	team_index = team_index or tonumber(xyd.db.misc:getValue("academy_battle_formation"))
 
 	if team_index and team_index > 0 then
 		msg.formation_id = team_index
+		self.formation_pet = petId
 	else
+		self.formation_pet = 0
+
 		xyd.getFightPartnerMsg(msg.partners, partners)
 	end
 
-	msg.pet_id = petId
+	msg.pet_id = petId or self.formation_pet or 0
 
 	xyd.Backend.get():request(xyd.mid.SCHOOL_PRACTICE_FIGHT, msg)
 	xyd.db.misc:setValue({
@@ -314,7 +318,7 @@ function AcademyAssessment:readStorageFormation(fortId)
 		local sPartnerID = tonumber(tmpPartnerList[i])
 
 		if xyd.models.slot:getPartner(sPartnerID) then
-			nowPartnerList[i] = {
+			nowPartnerList[#nowPartnerList + 1] = {
 				partner_id = sPartnerID,
 				pos = i
 			}

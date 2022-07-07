@@ -73,7 +73,7 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,rank,charge,curre
 67,-1,Growth Pack,Pack de Croissance,-1,-1,육성 팩,Wachstumspaket,57,0,9.99,,0,,,500,500,10067,20,-1,,,com.carolgames.moemoegirls.grow_up_gift1,9.99,,,25,,,2592000,2,,0,0,0,
 70,-1,Unlock Special Rewards,Débloquer Récompenses Spéciales,-1,アップグレートボーナス,활성화 특별 보상,Entsperre Deluxe Bonus,62,0,19.99,,0,,,1000,1000,10070,21,-1,,,com.carolgames.moemoegirls.beach_spe_rewards,19.99,,,,,,,1,,1,0,0,
 71,-1,Special Skin Pack 2 ,Pack Surprise de Skin 2,-1,-1,스페셜 스킨 팩 2,Glückspaket 2,44,0,49.99,,0,,,2500,2500,10071,16,-1,,,com.carolgames.moemoegirls.skin_pack_a2,49.99,,,,,,604800,1,,1,0,0,
-72,-1,Easter Surprise,Carte de Pâques,-1,イースターパス,이스터 패스,Oster-Karte,36,0,19.99,,0,,,1000,1000,10072,12,-1,,10,com.carolgames.moemoegirls.blackcard1,19.99,,,,,,,1,,1,0,0,
+72,-1,4th Anniversary Card,Carte des 4 ans,-1,-1,4주년 기념 패스,Grußkarte zum 4. Jubiläum,36,0,19.99,,0,,,1000,1000,10072,12,-1,,10,com.carolgames.moemoegirls.blackcard1,19.99,,,,,,,1,,1,0,0,
 73,-1,Jingle Bell Pack 1,Pack Exclusif de Noël 1,-1,-1,크리스마스 한정 팩 1,Limitierte Pakete zu Weihnachten 1,66,0,49.99,,0,,,2500,2500,10073,22,-1,,,com.carolgames.moemoegirls.korea_pack1,49.99,,,,,,172800,2,,1,0,0,
 74,-1,Motivation Program,Programme de Motivation,-1,-1,스터디 프로그램,Studiumplan,69,0,9.99,,0,,,500,500,10074,23,-1,,,com.carolgames.moemoegirls.level_up,9.99,,,,,,,1,,1,0,0,
 75,-1,Oath Pack,Pack de Serment,-1,-1,서약 팩,Eid Paket,72,0,29.99,,0,,,1500,1500,10075,24,-1,,7,com.carolgames.moemoegirls.oath_pack,29.99,,,,,,604800,1,,1,0,1,
@@ -132,7 +132,7 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,rank,charge,curre
 141,-1,Test Fund 1,Investissement de Test 1,-1,-1,옥상 정복 펀드1,Testfonds 1,146,0,9.99,,0,,,500,500,10141,56,-1,,,com.carolgames.moemoegirls.tower_fund,9.99,,,,,,,1,,1,0,0,
 142,-1,Test Fund 2,Investissement de Test 2,-1,-1,옥상 정복 펀드2,Testfonds 2,146,0,19.99,,0,,,1000,1000,10142,56,-1,,,com.carolgames.moemoegirls.tower_fund2,19.99,,,141,,,,1,,1,0,0,
 143,-1,Test Fund 3,Investissement de Test 3,-1,-1,옥상 정복 펀드3,Testfonds 3,146,0,29.99,,0,,,1500,1500,10143,56,-1,,,com.carolgames.moemoegirls.tower_fund3,29.99,,,142,,,,1,,1,0,0,
-144,-1,Special Skin Pack 1,Pack Surprise de Skin 1,-1,-1,스페셜 스킨 팩 1,Glückspaket 1,147,0,4.99,,0,,,250,250,10144,57,-1,,,com.carolgames.moemoegirls.skin_pack_e1,4.99,,,,,,604800,2,,1,0,0,
+144,-1,Special Skin Pack 1,Pack Surprise de Skin 1,-1,-1,스페셜 스킨 팩 1,Glückspaket 1,147,0,4.99,,0,,,250,250,10144,57,-1,,,com.carolgames.moemoegirls.skin_pack_e1,4.99,,,,,,604800,1,,1,0,0,
 145,-1,Special Skin Pack 2 ,Pack Surprise de Skin 2,-1,-1,스페셜 스킨 팩 2,Glückspaket 2,147,0,49.99,,0,,,2500,2500,10145,57,-1,,,com.carolgames.moemoegirls.skin_pack_e2,49.99,,,,,,604800,1,,1,0,0,
 146,-1,Special Gift Pack 1,Pack Surprise 1,-1,-1,스페셜 팩 1,Glückspaket 1,148,0,4.99,,0,,,250,250,10146,58,-1,,,com.carolgames.moemoegirls.skin_pack_f1,4.99,,,,,,604800,2,,1,0,0,
 147,-1,Special Gift Pack 2,Pack Surprise 2,-1,-1,스페셜 팩 2,Glückspaket 2,148,0,69.99,,0,,,3500,3500,10147,58,-1,,,com.carolgames.moemoegirls.skin_pack_f2,69.99,,,,,,604800,1,,1,0,0,
@@ -278,8 +278,8 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,rank,charge,curre
 301,-1,Return Support,Retour à l'Académie,-1,-1,컴백 축제,Paket zur Rückkehrer-Hilfe,219,0,29.99,,0,,,1500,1500,10301,94,-1,,,com.carolgames.moemoegirls.tower_fund,29.99,,,,,,,1,,1,0,0,
 302,-1,Monthly Pass - Return,Carte Mensuelle (Retour),-1,-1,월간 패스-컴백,Rückkehrer-Monatskarte,222,1,4.99,,900,,,,750,10302,95,-1,2#370,30,com.carolgames.moemoegirls.30day,4.99,vip_icon07_png,,,,,,1,,1,0,0,
 303,-1,Monthly Event Deluxe Pass - Return,Passe de Luxe (Retour),-1,-1,월간 과제-컴백,Rückkehrer-Monatsthema,222,0,1.99,,0,,,500,500,10303,95,-1,,30,com.carolgames.moemoegirls.monthly_quest,1.99,,,,,,,1,,1,0,0,
-304,-1,3rd Anniversary Special Pack 1,Pack du 3ème Anniversaire 1,-1,-1,3주년 기념 팩,Paket zum 3. Jubiläum 1,224,0,9.99,,0,,,500,500,10304,96,-1,,,com.carolgames.moemoegirls.anniversary_giftbag3_1,9.99,,,,,,,1,,1,0,0,
-305,-1,3rd Anniversary Special Pack 2,Pack du 3ème Anniversaire 2,-1,-1,3주년 기념 팩,Paket zum 3. Jubiläum 2,225,0,19.99,,0,,,1000,1000,10305,97,-1,,,com.carolgames.moemoegirls.anniversary_giftbag3_2,19.99,,,,,,,1,,1,0,0,
+304,-1,4rd Anniversary Special Pack 1,Pack Spécial 4ème Anniversaire 1,-1,-1,4주년 기념 팩,Pakete zum 4. Jubiläum 1,224,0,9.99,,0,,,500,500,10304,96,-1,,,com.carolgames.moemoegirls.anniversary_giftbag3_1,9.99,,,,,,,1,,1,0,0,
+305,-1,4rd Anniversary Special Pack 2,Pack Spécial 4ème Anniversaire 2,-1,-1,4주년 기념 팩,Pakete zum 4. Jubiläum 2,225,0,19.99,,0,,,1000,1000,10305,97,-1,,,com.carolgames.moemoegirls.anniversary_giftbag3_2,19.99,,,,,,,1,,1,0,0,
 306,-1,Summer Pack 1,Pack d'Été 1,-1,サマーパック1,핫 썸머 팩1,Sommerpaket 1,233,0,14.99,,0,,,750,750,10306,98,-1,,,com.carolgames.moemoegirls.beach.giftbag1,14.99,,,,,,,2,,1,0,0,1|1|604800
 307,-1,Summer Pack 2,Pack d'Été 2,-1,サマーパック2,핫 썸머 팩2,Sommerpaket 2,233,0,99.99,,0,,,5000,5000,10307,98,-1,,,com.carolgames.moemoegirls.beach.giftbag1,99.99,,,,,,,14,,1,0,0,7|7|604800
 308,-1,Summer Pack 3,Pack d'Été 3,-1,サマーパック3,핫 썸머 팩3,Sommerpaket 3,233,0,49.99,,0,,,2500,2500,10308,98,-1,,,com.carolgames.moemoegirls.beach.giftbag1,49.99,,,,,,,12,,1,0,0,6|6|604800
@@ -415,6 +415,10 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,rank,charge,curre
 441,-1,Dimensional Supply 3,Pack Inter-dimensionnel 3,-1,グリードパック3,이계 보급3,Sondernachschub 3,302,0,49.99,,0,,,2500,2500,10441,132,-1,,,com.carolgames.moemoegirls.spfarm.gift3,49.99,,,,,,1209600,4,,1,0,1,2|2|604800
 442,-1,Dimensional Supply 4,Pack Inter-dimensionnel 4,-1,グリードパック4,이계 보급4,Sondernachschub 4,302,0,99.99,,0,,,5000,5000,10442,132,-1,,,com.carolgames.moemoegirls.spfarm.gift4,99.99,,,,,,1209600,8,,1,0,1,4|4|604800
 443,-1,Red Riding Hood's Gift,Panier Du Petit Chaperon Rouge,-1,-1,빨간 모자의 선물,Rotkäppchen-Paket,144,3,49.99,,0,,,2500,2500,10443,54,-1,,7,com.carolgames.moemoegirls.red_gift,49.99,,,,,,,1,,1,0,0,
+444,-1,,,-1,,,,307,0,0.99,,0,,,50,50,10444,133,-1,,,com.carolgames.moemoegirls.4anniversary_sign_gift1,0.99,,,,,,,1,,1,0,0,
+445,-1,,,-1,,,,307,0,9.99,,0,,,500,500,10445,133,-1,,,com.carolgames.moemoegirls.4anniversary_sign_gift2,9.99,,,,,,,1,,1,0,0,
+446,-1,,,-1,,,,307,0,4.99,,0,,,250,250,10446,133,-1,,,com.carolgames.moemoegirls.4anniversary_sign_gift3,4.99,,,,,,,1,,1,0,0,
+447,-1,,,-1,,,,307,0,14.99,,0,,,750,750,10447,133,-1,,,com.carolgames.moemoegirls.4anniversary_sign_gift4,14.99,,,,,,,1,,1,0,0,
 1010101,-1,LV 24 Package,Pack de Niv.24,-1,レベル24パック,레벨 24 팩,Lv.24 Paket,80,0,1.99,NT$,0,,,100,100,1010101,26,-1,,,com.carolgames.moemoegirls.24levelv0,1.99,,,24|31,0,,7200,1,,1,0,0,
 1010201,-1,LV 32 Package,Pack de Niv.32,-1,レベル32パック,레벨 32 팩,Lv.32 Paket,80,0,4.99,NT$,0,,,250,250,1010201,26,-1,,,com.carolgames.moemoegirls.32levelv0,4.99,,,32|47,0,,7200,2,,1,0,0,
 1010301,-1,LV 48 Package,Pack de Niv.48,-1,レベル48パック,레벨 48 팩,Lv.48 Paket,80,0,9.99,NT$,0,,,500,500,1010301,26,-1,,,com.carolgames.moemoegirls.48levelv0,9.99,,,48|57,0,,14400,2,,1,0,0,

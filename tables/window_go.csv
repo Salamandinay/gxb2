@@ -8,7 +8,7 @@ id,name,params,activity_id,function_id,desc
 7,activity_window,"{'select':16,'activity_type2':1}",16,,-1
 8,activity_window,"{'select':20,'activity_type2':1}",20,,-1
 9,activity_window,"{'select':33,'activity_type2':1}",33,,-1
-10,activity_window,"{'select':36,'activity_ids':[226,227,86,36,224,225,229], 'activity_type':7}",36,,-1
+10,activity_window,"{'select':36,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",36,,-1
 11,activity_window,"{'select':44,'activity_type2':1}",44,,-1
 12,activity_window,"{'select':45,'activity_type2':1}",45,,-1
 13,activity_window,"{'select':56,'activity_ids':[169,171,86,36,56], 'activity_type':7}",56,,-1
@@ -92,8 +92,8 @@ id,name,params,activity_id,function_id,desc
 91,activity_window,"{'select':212,'activity_ids':[214,211,212,213], 'activity_type':7}",212,,-1
 92,activity_window,"{'select':213,'activity_ids':[214,211,212,213], 'activity_type':7}",213,,-1
 93,activity_window,"{'select':214,'activity_ids':[214,211,212,213], 'activity_type':7}",214,,-1
-94,activity_window,"{'select':224,'activity_ids':[226,227,86,36,224,225,229], 'activity_type':7}",224,,-1
-95,activity_window,"{'select':225,'activity_ids':[226,227,86,36,224,225,229], 'activity_type':7}",225,,-1
+94,activity_window,"{'select':224,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",224,,-1
+95,activity_window,"{'select':224,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",225,,-1
 96,activity_window,"{'select':230,'activity_ids':[230,231,232,233], 'activity_type':7}",230,,-1
 97,activity_window,"{'select':231,'activity_ids':[230,231,232,233], 'activity_type':7}",231,,-1
 98,activity_window,"{'select':232,'activity_ids':[230,231,232,233], 'activity_type':7}",232,,-1
@@ -140,3 +140,7 @@ id,name,params,activity_id,function_id,desc
 139,activity_window,"{'select':302,'activity_ids':[300,301,302], 'activity_type':7}",302,,-1
 140,activity_window,"{'select':260,'activity_type2':1}",260,,-1
 141,activity_popularity_vote_window,,228,,-1
+142,activity_window,"{'select':304,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",304,,-1
+143,activity_window,"{'select':305,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",305,,-1
+144,activity_window,"{'select':306,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",306,,-1
+145,activity_window,"{'select':307,'activity_ids':[304,305,306,36,224,225,307], 'activity_type':7}",307,,-1

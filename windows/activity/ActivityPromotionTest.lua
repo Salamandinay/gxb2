@@ -24,6 +24,7 @@ function ActivityPromotionTest:resizeToParent()
 end
 
 function ActivityPromotionTest:initUI()
+	self.partnerIndexArr = xyd.tables.miscTable:split2num("activity_promotion_test_picture", "value", "|")
 	self.ResItemID = 342
 	self.items = {}
 	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_PROMOTION_TEST)
@@ -38,7 +39,8 @@ function ActivityPromotionTest:getUIComponent()
 	local go = self.go
 	self.groupAction = self.go:NodeByName("groupAction").gameObject
 	self.imgTitle = self.groupAction:ComponentByName("imgTitle", typeof(UISprite))
-	self.partnerImg_ = self.groupAction:ComponentByName("partnerImg_", typeof(UISprite))
+	self.partnerImg1 = self.groupAction:ComponentByName("partnerImg1", typeof(UISprite))
+	self.partnerImg2 = self.groupAction:ComponentByName("partnerImg2", typeof(UISprite))
 	self.Bg_ = self.groupAction:ComponentByName("Bg_", typeof(UITexture))
 	self.Bg1_ = self.groupAction:ComponentByName("Bg1_", typeof(UISprite))
 	self.btnHelp = self.groupAction:NodeByName("btnHelp").gameObject
@@ -133,6 +135,8 @@ function ActivityPromotionTest:initUIComponent()
 		self.labelTip2:X(-325.5)
 	end
 
+	xyd.setUISpriteAsync(self.imgTitle, nil, "activity_promotion_test_logo_" .. xyd.Global.lang)
+
 	local helpArr = {
 		{
 			-115,
@@ -165,12 +169,22 @@ function ActivityPromotionTest:initUIComponent()
 			162
 		}
 	}
-	local partnerIndex = xyd.tables.miscTable:getNumber("activity_promotion_test_picture", "value")
 
-	xyd.setUISpriteAsync(self.partnerImg_, nil, "activity_promotion_test_zj_" .. partnerIndex, nil, , true)
-	xyd.setUISpriteAsync(self.imgTitle, nil, "activity_promotion_test_logo_" .. xyd.Global.lang)
-	self.partnerImg_:X(helpArr[partnerIndex][1])
-	self:resizePosY(self.partnerImg_, helpArr[partnerIndex][2], helpArr[partnerIndex][3])
+	for i = 1, #self.partnerIndexArr do
+		local partnerIndex = self.partnerIndexArr[i]
+
+		xyd.setUISpriteAsync(self["partnerImg" .. i], nil, "activity_promotion_test_zj_" .. partnerIndex, nil, , true)
+		self["partnerImg" .. i]:X(helpArr[partnerIndex][1])
+		self:resizePosY(self["partnerImg" .. i], helpArr[partnerIndex][2], helpArr[partnerIndex][3])
+	end
+
+	if #self.partnerIndexArr > 1 then
+		self.sequence1 = self:getSequence()
+
+		self.sequence1:Insert(5, xyd.getTweenAlpha(self.partnerImg1, 0.01, 1)):Insert(5.75, xyd.getTweenAlpha(self.partnerImg2, 1, 1)):Insert(10, xyd.getTweenAlpha(self.partnerImg2, 0.01, 1)):Insert(10.75, xyd.getTweenAlpha(self.partnerImg1, 1, 1))
+		self.sequence1:SetLoops(-1)
+	end
+
 	self:updateProgressGroup()
 	self:updateAwardGroup()
 end

@@ -332,8 +332,6 @@ function QuickFormationPartner:showPartnerDetail()
 end
 
 function QuickFormationPartner:updateEquips()
-	__TRACE("========== updateEquips =========")
-
 	local equips = self.partner_:getEquipment()
 
 	for key in pairs(equips) do
@@ -1397,7 +1395,7 @@ function QuickFormationWindow:updateCanEquipList()
 			end
 		end
 
-		local equipsOfPartners = self:getEquipsOfPartners()
+		local equipsOfPartners = xyd.models.slot:getEquipsOfPartners()
 
 		for key, _ in pairs(equipsOfPartners) do
 			local itemID = tonumber(key)
@@ -1436,65 +1434,13 @@ function QuickFormationWindow:updateCanEquipList()
 							self:deleteEquip(back_pack_equips[i], partnerID)
 						end
 
-						if equips[i] and equips[i] > 0 and i ~= 5 then
+						if equips[i] and tonumber(equips[i]) > 0 and i ~= 5 then
 							self:addEquip(equips[i], partnerID, -1)
 						end
 					end
 				end
 			end
 		end
-	end
-end
-
-function QuickFormationWindow:getEquipsOfPartners()
-	if not self.equipsOfPartner then
-		local partnersList = self.partnerInfos_[self.selectTeam] or {}
-		local partners = xyd.models.slot:getPartners()
-		local equipsOfPartner = {}
-
-		for id in pairs(partners) do
-			local partnerInfo = nil
-
-			for _, Info in pairs(partnersList) do
-				if Info:getPartnerID() == id then
-					partnerInfo = Info
-
-					break
-				end
-			end
-
-			if not partnerInfo then
-				for key, equip in pairs(partners[id].equipments) do
-					if equip then
-						if not equipsOfPartner[equip] then
-							equipsOfPartner[equip] = {}
-						end
-
-						table.insert(equipsOfPartner[equip], partners[id].partnerID)
-					end
-				end
-			else
-				for key, equip in pairs(partners[id].equipments) do
-					local equip_ = partnerInfo.equipments[key]
-
-					if not equipsOfPartner[equip] then
-						equipsOfPartner[equip] = {}
-					end
-
-					if equip == equip_ then
-						table.insert(equipsOfPartner[equip], partners[id].partnerID)
-					else
-						table.insert(equipsOfPartner[equip], 0)
-					end
-				end
-			end
-		end
-
-		self.equipsOfPartner = equipsOfPartner
-
-		return equipsOfPartner
-	else
-		return self.equipsOfPartner
 	end
 end
 

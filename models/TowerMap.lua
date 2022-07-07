@@ -291,7 +291,6 @@ end
 
 function TowerMap:TowerBattle(stage_id)
 	local msg = messages_pb.tower_fight_req()
-	msg.pet_id = self.pet or 0
 	local formation_id = xyd.db.misc:getValue("tower_battle_formation")
 
 	if formation_id and tonumber(formation_id) > 0 then
@@ -301,6 +300,8 @@ function TowerMap:TowerBattle(stage_id)
 
 		addFightPartnerMsg(msg, partnerParams)
 	end
+
+	msg.pet_id = self.pet or 0
 
 	xyd.Backend.get():request(xyd.mid.TOWER_FIGHT, msg)
 end

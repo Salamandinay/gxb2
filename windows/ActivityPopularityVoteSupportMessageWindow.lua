@@ -568,7 +568,7 @@ function MessageItem:onTranslate()
 		self.contentLabel.text = self.data.msg
 		self.labelHide.text = self.data.msg
 
-		self:updateContent()
+		self:refresh()
 
 		local win = xyd.getWindow("activity_popularity_vote_support_message_window")
 

@@ -97,12 +97,19 @@ function LoginWindow:initWindow()
 end
 
 function LoginWindow:layout()
-	if not self.isLoginFinish_ and not xyd.Global.isHasBeenBanServer then
+	if not self.isLoginFinish_ and not xyd.Global.isHasBeenBanServer and not xyd.Global.isDueData then
 		self.loginGroup:SetActive(true)
 		self.loginStart:SetActive(false)
 		self.groupWel:SetActive(false)
 		self.backImg2:SetActive(false)
 		self:initLoginGroup()
+	elseif xyd.Global.isDueData then
+		self.loginGroup:SetActive(false)
+		self.loginStart:SetActive(true)
+		self.groupWel:SetActive(true)
+		self.backImg2:SetActive(true)
+		self.topButtonGroup.gameObject:SetActive(false)
+		self.serverCon:SetActive(false)
 	else
 		self.loginGroup:SetActive(false)
 		self.loginStart:SetActive(true)

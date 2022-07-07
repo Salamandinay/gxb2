@@ -28,13 +28,15 @@ local BtnType = {
 }
 local jobGiftBoxID = {
 	[4601006.0] = 1,
-	[152.0] = 1,
 	[4601005.0] = 1,
+	[384.0] = 1,
 	[149.0] = 1,
+	[4601008.0] = 1,
 	[4601009.0] = 1,
-	[4601010.0] = 1,
 	[285.0] = 1,
 	[368.0] = 1,
+	[4601010.0] = 1,
+	[4601037.0] = 1,
 	[4601007.0] = 1,
 	[243.0] = 1,
 	[242.0] = 1,
@@ -42,7 +44,7 @@ local jobGiftBoxID = {
 	[367.0] = 1,
 	[150.0] = 1,
 	[151.0] = 1,
-	[4601008.0] = 1,
+	[152.0] = 1,
 	[244.0] = 1,
 	[153.0] = 1,
 	[4601033.0] = 1
@@ -625,6 +627,10 @@ function ItemTips:initNormalBtn()
 		end)
 	elseif self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or self.type_ == xyd.ItemType.HERO_RANDOM_DEBRIS or self.type_ == xyd.ItemType.ARTIFACT_DEBRIS or self.type_ == xyd.ItemType.DRESS_DEBRIS then
 		self.btnBox_:SetActive(true)
+	elseif self.type_ == xyd.ItemType.CHIME_DEBRIS then
+		self.labelMid.text = __("ITEM_DETAIL")
+		self.btnLayoutIndex_ = BtnLayoutType.MID
+		self.btnCallback[BtnType.BOT_MID + 1] = self.chimeDetailTouch
 	end
 
 	if self.resetBtn and self.data.resetCallBack then
@@ -681,6 +687,9 @@ function ItemTips:initActivityBtn()
 	end
 
 	local btnLayout_ = BtnLayoutType.NONE
+
+	print("self.type_   ", self.type_)
+	print("self.itemID  ", self.itemID)
 
 	if #ways > 0 and not self.notShowGetWayBtn then
 		self.btnTop_:SetActive(true)
@@ -1682,6 +1691,37 @@ function ItemTips:detailTouch()
 	xyd.WindowManager.get():openWindow("guide_detail_window", params, function ()
 		xyd.WindowManager.get():closeWindowsOnLayer(6)
 	end)
+end
+
+function ItemTips:chimeDetailTouch()
+	if not xyd.checkFunctionOpen(xyd.FunctionID.SHRINE_HURDLE) then
+		return
+	end
+
+	if not xyd.models.shrineHurdleModel:checkFuctionOpen() then
+		local functionOpenTime = xyd.tables.miscTable:getVal("shrine_time_start")
+
+		if xyd.getServerTime() < tonumber(functionOpenTime) then
+			xyd.alertTips(__("DRESS_GACHA_OPEN_TIME", xyd.getRoughDisplayTime(tonumber(functionOpenTime) - xyd.getServerTime())))
+
+			return
+		end
+
+		local towerStage = xyd.models.towerMap.stage
+		local needTowerStage = tonumber(xyd.tables.miscTable:getVal("shrine_open_limit", "value"))
+
+		if towerStage < needTowerStage + 1 then
+			xyd.alertTips(__("OLD_SCHOOL_OPEN_FLOOR", needTowerStage))
+		else
+			xyd.alertTips(__("OLD_SCHOOL_OPEN_STAR"))
+		end
+
+		return
+	end
+
+	xyd.WindowManager.get():openWindow("chime_main_window", {})
+	xyd.WindowManager.get():closeWindowsOnLayer(6)
+	xyd.WindowManager.get():closeWindowsOnLayer(4)
 end
 
 function ItemTips:skinDetailTouch()
