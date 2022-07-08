@@ -53,10 +53,10 @@ function HeroAttr:attr(hero, params)
 	if awake and awake > 0 and awake < 6 then
 		local awakeGrow = self.heroTable:awakeGrow(tableID)
 		local curAwakeGrow = xyd.split(awakeGrow[awake], "#", true)
-		growAtk = curAwakeGrow[1]
-		growHp = curAwakeGrow[2]
-		growArm = curAwakeGrow[3]
-		growSpd = curAwakeGrow[4]
+		growAtk = curAwakeGrow[1] or 0
+		growHp = curAwakeGrow[2] or 0
+		growArm = curAwakeGrow[3] or 0
+		growSpd = curAwakeGrow[4] or 0
 	end
 
 	local base = {

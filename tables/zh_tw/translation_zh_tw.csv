@@ -6664,7 +6664,7 @@ ACTIVITY_4ANIVERSARY_SIGN_TEXT08,NT$ 170
 ACTIVITY_4ANIVERSARY_SIGN_TEXT09,NT$ 990
 ACTIVITY_4ANIVERSARY_SIGN_TEXT10,NT$ 670
 ACTIVITY_4ANIVERSARY_SIGN_TEXT11,NT$ 1690
-ACTIVITY_4BIRTHDAY_HELP,1.慶典舞會正在舉行，學長快去參加吧~|2.消耗1杯「舞會飲料」即可邀請普羅米修斯或希爾柯蒂一同共舞。每次共舞可以獲得一份隨機獎勵和一點「舞會節奏」，並累積一點舞會熱度。|3.根據累計的舞會熱度數量，兩個學妹都會獻上不同的獎勵。|4.舞會熱度滿後，將自動獲得舞會大獎。同時，舞會進入狂歡階段，消耗「舞會飲料」可以兌換不同獎勵（每次消耗，不會額外獲得隨機獎勵和「舞會節奏」）。|5.活動期間，在「杯光斛影」介面，學妹們正在討論這一年學園發生的趣事，每日將解鎖一段劇情。|6.活動結束後，未使用的「舞會飲料」將會自動兌換為金幣，每個價格為50000，回收獲得的金幣將透過信件發放。
+ACTIVITY_4BIRTHDAY_HELP,1.慶典舞會正在舉行，學長快去參加吧~|2.消耗1杯「舞會飲料」即可邀請普羅米修斯或希爾柯蒂一同共舞。每次共舞可以獲得一份隨機獎勵和一點「舞會節奏」，並累積一點宴會熱度。|3.根據累計的宴會熱度數量，兩個學妹都會獻上不同的獎勵。|4.宴會熱度滿後，將自動獲得舞會大獎。同時，舞會進入狂歡階段，消耗「舞會飲料」可以兌換不同獎勵（每次消耗，不會額外獲得隨機獎勵和「舞會節奏」）。|5.活動期間，在「杯光斛影」介面，學妹們正在討論這一年學園發生的趣事，每日將解鎖一段劇情。|6.活動結束後，未使用的「舞會飲料」將會自動兌換為金幣，每個價格為50000，回收獲得的金幣將透過信件發放。
 ACTIVITY_4BIRTHDAY_TASK_HELP,1.完成任務即可獲得「擠花袋」。使用「擠花袋」即可定製週年蛋糕上的一塊雕花，並獲得一份雕花獎勵。|2.每定製完一列或一行雕花，可獲得該列/行對應的獎勵。|3.定製完所有蛋糕雕花後，即可獲得定製大獎。|4.活動結束後，未使用的「擠花袋」將會自動兌換為金幣，每個價格為20000，回收獲得的金幣將透過信件發放。
 ACTIVITY_4BIRTHDAY_GAMBLE_HELP,1.卡雯和伯荻正準備奏響慶典樂章，學長也來看看吧~|2.樂章分為前奏，間奏和尾奏，在每個樂章裡，學長可以提前選定若干獎勵。選定完獎勵後，消耗「舞會節奏」即可進行一次抽獎，獲得已選獎勵中的任意一個。|3.獲得完已選所有獎勵後，樂章將重置，開始新一輪的奏樂。|4.活動結束後，未使用的「舞會節奏」將會自動兌換為金幣，每個價格為30000，回收獲得的金幣將透過信件發放。
 ACTIVITY_4BIRTHDAY_TASK_TEXT01,宴會蛋糕
@@ -6695,7 +6695,7 @@ ACTIVITY_4BIRTHDAY_BUTTON04,舞會狂歡
 ACTIVITY_4BIRTHDAY_BUTTON05,邀舞回顧
 ACTIVITY_4BIRTHDAY_PLOT_TIPS01,該劇情在{1}後解鎖
 ACTIVITY_4BIRTHDAY_PLOT_TEXT01,已閱讀該段劇情，是否再次回顧？
-ACTIVITY_4BIRTHDAY_TIPS01,舞會熱度未達到最高潮，尚未解鎖舞會大獎哦~
+ACTIVITY_4BIRTHDAY_TIPS01,宴會熱度未達到最高潮，尚未解鎖舞會大獎哦~
 ACTIVITY_4BIRTHDAY_TIPS02,已解鎖舞會大獎，舞會進入狂歡階段
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS03,已選滿該檔位獎勵
 ACTIVITY_4ANIVERSARY_SIGN_TEXT12,累計簽到天數不足，{1}未開啟！
@@ -6752,3 +6752,29 @@ ANNUAL4_REVIEW_7_2,此致
 ANNUAL4_REVIEW_4_6_1,除此之外，\n還有 [c][size=30][ff7fd6]{1}[-][/c] 位學妹看向學長的眼神中飽含著愛意……
 ANNUAL4_REVIEW_4_7_1,放眼望去，\n有[c][size=30][ff7fd6]{1}[-][/c] 位學妹看向學長的眼神中飽含著愛意……
 ACTIVITY_4BIRTHDAY_TITLE,慶典舞會
+OLD_SCHOOL_FLOOR_11_TIPS,通關前10層的所有關卡後解鎖該樓層
+OLD_SCHOOL_FLOOR_11_TEXT01,最佳傷害:{1}
+OLD_SCHOOL_FLOOR_11_TEXT02,當前傷害:{1}
+OLD_SCHOOL_FLOOR_11_TEXT03,排名
+OLD_SCHOOL_FLOOR_11_TEXT04,積分
+OLD_SCHOOL_FLOOR_11_TEXT05,獎勵
+OLD_SCHOOL_FLOOR_11_TEXT06,[size=28][c][b9723e]額外{1}分[-]
+OLD_SCHOOL_FLOOR_11_TEXT07,賽季結束時分數獎勵計入總分
+OLD_SCHOOL_FLOOR_11_TEXT08,特級方案
+OLD_SCHOOL_FLOOR_11_TEXT09,*在第9/10/11層的關卡中解鎖
+OLD_SCHOOL_FLOOR_11_TEXT10,當前關卡的探索方案不可修改
+OLD_SCHOOL_FLOOR_11_TEXT11,連續挑戰設置
+OLD_SCHOOL_FLOOR_11_TEXT12,關卡選擇
+OLD_SCHOOL_FLOOR_11_TEXT13,終止條件
+OLD_SCHOOL_FLOOR_11_TEXT14,依次挑戰所選關卡，失敗後停止
+OLD_SCHOOL_FLOOR_11_TEXT15,依次挑戰所選關卡，失敗後繼續挑戰，連續失敗50次後停止
+ACTIVITY_CHIME_HELP,1.活動期間
+ACTIVITY_CHIME_TEXT01,任務
+ACTIVITY_CHIME_TEXT02,幸運御守
+ACTIVITY_CHIME_TEXT03,再投入{1}枚鎏金玉振必得水月之玉振碎片
+ACTIVITY_CHIME_TEXT04,每投入20枚鎏金玉振必然獲得
+ACTIVITY_CHIME_TEXT05,鎏金鶴玉獎勵
+ACTIVITY_CHIME_TEXT06,翡翠鶴玉獎勵
+ACTIVITY_CHIME_TEXT07,活動期間每日獲得
+ACTIVITY_CHIME_TEXT08,當前購買立即獲得
+SETING_GROUP_BUFF_RANK,上陣天異陣營時，陣營光環生效優先級

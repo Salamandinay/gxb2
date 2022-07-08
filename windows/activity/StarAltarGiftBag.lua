@@ -30,36 +30,9 @@ end
 function StarAltarGiftBag:onRegisterEvent()
 	StarAltarGiftBag.super.onRegisterEvent(self)
 	self:registerEvent(xyd.event.DAILY_GIFTBAG_FREE, handler(self, self.onFree))
-	self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.onActivityData))
 end
 
-function StarAltarGiftBag:onActivityData()
-	local giftBagID = self.activityData:getGiftBagID()
-	local giftBagIDAfter = giftBagID
-
-	if xyd.tables.giftBagTable:getParams(giftBagID) and xyd.tables.giftBagTable:getParams(giftBagID)[1] then
-		giftBagIDAfter = xyd.tables.giftBagTable:getParams(giftBagID)[1]
-	end
-
-	local t = self:getItemInfos()
-	local isGoOn = false
-
-	for i in pairs(t) do
-		for j in pairs(self.firstItemArr) do
-			if giftBagIDAfter == t[i].giftBagID and giftBagID == self.firstItemArr[j].giftBagID then
-				self.firstItemArr[j] = t[i]
-				isGoOn = true
-
-				break
-			end
-		end
-
-		if isGoOn then
-			break
-		end
-	end
-
-	self.wrapContent:setInfos(self.firstItemArr, {})
+function StarAltarGiftBag:onActivityData(event)
 end
 
 function StarAltarGiftBag:setTextures()

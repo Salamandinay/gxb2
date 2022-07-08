@@ -492,10 +492,12 @@ end
 
 function ShowIconItem:getUIComponent()
 	self.itemCon = self.go:NodeByName("itemCon").gameObject
+	self.isHasImg = self.itemCon:ComponentByName("isHasImg", typeof(UISprite))
 end
 
 function ShowIconItem:initUI()
 	self:getUIComponent()
+	xyd.setUISpriteAsync(self.isHasImg, nil, "activity_4birthday_musci_bg_yhd_" .. xyd.Global.lang, nil, , true)
 end
 
 function ShowIconItem:update(index, realIndex, info)
@@ -530,6 +532,11 @@ function ShowIconItem:update(index, realIndex, info)
 	end
 
 	self:checkChoose()
+	self.isHasImg:SetActive(false)
+
+	if self.sort == xyd.Activity4BirthdayMusicSortType.SKIN and xyd.models.slot:getSkinTotalNum(self.itemId) > 0 then
+		self.isHasImg:SetActive(true)
+	end
 end
 
 function ShowIconItem:onTouch()

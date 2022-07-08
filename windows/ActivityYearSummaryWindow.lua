@@ -34,6 +34,9 @@ function ActivityYearSummaryWindow:ctor(name, params)
 	ActivityYearSummaryWindow.super.ctor(self, name, params)
 
 	self.detail = xyd.models.activity:getActivity(xyd.ActivityID.YEARS_SUMMARY).detail
+
+	dump3(self.detail)
+
 	self.pageNum_ = 1
 end
 
@@ -819,8 +822,17 @@ function ActivityYearSummaryPage6:layout()
 	self.title1.text = __("ANNUAL4_REVIEW_6_1", self.parent_.detail.collect_point) .. "\\n" .. __("ANNUAL4_REVIEW_6_2")
 	self.title2.text = __("ANNUAL4_REVIEW_6_3", self.parent_.detail.dress_score)
 	self.title2_1.text = " "
+
+	if tonumber(self.parent_.detail.dress_percent) > 0.5 then
+		self.title2_1.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.dress_percent * 100 .. "%")
+	end
+
 	self.title3.text = __("ANNUAL4_REVIEW_6_4", self.parent_.detail.skin_num)
 	self.title3_1.text = " "
+
+	if tonumber(self.parent_.detail.skin_percent) > 0.5 then
+		self.title3_1.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.skin_percent * 100 .. "%")
+	end
 
 	self:initDress()
 end
@@ -1218,7 +1230,11 @@ function ActivityYearSummaryPage8:updateBookItem()
 
 		if tonumber(self.parent_.detail.trial_1_percent) > 0.5 then
 			self.title1_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.trial_1_percent * 100 .. "%")
+
+			self.title1_1.transform:Y(20)
 		else
+			self.title1_2.text = ""
+
 			self.title1_1.transform:Y(0)
 		end
 	else
@@ -1226,7 +1242,11 @@ function ActivityYearSummaryPage8:updateBookItem()
 
 		if tonumber(self.parent_.detail.trial_2_percent) > 0.5 then
 			self.title1_2.text = __("ANNUAL4_REVIEW_5_6", self.parent_.detail.trial_2_percent * 100 .. "%")
+
+			self.title1_1.transform:Y(20)
 		else
+			self.title1_2.text = ""
+
 			self.title1_1.transform:Y(0)
 		end
 	end

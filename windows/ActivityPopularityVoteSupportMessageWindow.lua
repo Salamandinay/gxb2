@@ -539,7 +539,8 @@ function MessageItem:onTranslate()
 					self.data.inTransl = false
 					self.contentLabel.text = msg.translate
 					self.labelHide.text = msg.translate
-					self.data.msg = xyd.checkCondition(self.data.originalContent, self.data.originalContent, self.data.msg)
+					self.data.msg = msg.translate
+					self.data.msg = xyd.checkCondition(self.data.msg, self.data.msg, self.data.originalContent)
 
 					self:refresh()
 
@@ -564,7 +565,7 @@ function MessageItem:onTranslate()
 			end
 		end
 	else
-		self.data.msg = xyd.checkCondition(self.data.originalContent, self.data.originalContent, self.data.msg)
+		self.data.msg = xyd.checkCondition(self.data.msg, self.data.msg, self.data.originalContent)
 		self.contentLabel.text = self.data.msg
 		self.labelHide.text = self.data.msg
 

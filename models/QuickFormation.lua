@@ -73,6 +73,10 @@ function QuickFormation:setFomationInfo(id, info)
 				local info = partnerInfo:getInfo()
 
 				if partner_info.table_id and partner_info.table_id > 0 then
+					if info.tableID ~= partner_info.table_id then
+						np.awakeTableChange = true
+					end
+
 					info.tableID = partner_info.table_id
 				end
 
@@ -118,6 +122,14 @@ function QuickFormation:updatePartnerInfo()
 					partner_info.ex_skills = partnerInfo.ex_skills
 					partner_info.star_origin = partnerInfo.star_origin
 					partner_info.treasures = partnerInfo.treasures
+
+					if partnerInfo.tableID and partnerInfo.tableID > 0 then
+						if partner_info.tableID ~= partnerInfo.tableID then
+							partner_info.awakeTableChange = true
+						end
+
+						partner_info.tableID = partnerInfo.tableID
+					end
 				end
 
 				partner_info:updateAttrs()
@@ -288,35 +300,45 @@ function QuickFormation:updateRedStatus()
 		for pos, partnerInfo in pairs(partners) do
 			local Equips = partnerInfo:getEquipment()
 
-			for key, itemID in ipairs(Equips) do
-				if itemID and itemID > 0 and key ~= 5 and key ~= 7 then
-					local partner_id = self:getFromPartnerID(itemID, bpEquips)
+			if partnerInfo.awakeTableChange then
+				self.redStatus_[i] = 1
 
-					if partner_id < 0 then
-						self.redStatus_[i] = 1
+				if not self.redStatusPos_[i] then
+					self.redStatusPos_[i] = {}
+				end
 
-						if not self.redStatusPos_[i] then
-							self.redStatusPos_[i] = {}
+				self.redStatusPos_[i][pos] = 1
+			else
+				for key, itemID in ipairs(Equips) do
+					if itemID and itemID > 0 and key ~= 5 and key ~= 7 then
+						local partner_id = self:getFromPartnerID(itemID, bpEquips)
+
+						if partner_id < 0 then
+							self.redStatus_[i] = 1
+
+							if not self.redStatusPos_[i] then
+								self.redStatusPos_[i] = {}
+							end
+
+							self.redStatusPos_[i][pos] = 1
+
+							break
 						end
+					elseif key == 5 then
+						local partnerInfo = xyd.models.slot:getPartner(partnerInfo:getPartnerID())
+						local treasures = partnerInfo.treasures or {}
 
-						self.redStatusPos_[i][pos] = 1
+						if #treasures > 0 and xyd.arrayIndexOf(treasures, itemID) <= -1 or #treasures <= 0 and partnerInfo.equipments[5] and partnerInfo.equipments[5] ~= itemID then
+							self.redStatus_[i] = 1
 
-						break
-					end
-				elseif key == 5 then
-					local partnerInfo = xyd.models.slot:getPartner(partnerInfo:getPartnerID())
-					local treasures = partnerInfo.treasures or {}
+							if not self.redStatusPos_[i] then
+								self.redStatusPos_[i] = {}
+							end
 
-					if #treasures > 0 and xyd.arrayIndexOf(treasures, itemID) <= -1 or #treasures <= 0 and partnerInfo.equipments[5] and partnerInfo.equipments[5] ~= itemID then
-						self.redStatus_[i] = 1
+							self.redStatusPos_[i][pos] = 1
 
-						if not self.redStatusPos_[i] then
-							self.redStatusPos_[i] = {}
+							break
 						end
-
-						self.redStatusPos_[i][pos] = 1
-
-						break
 					end
 				end
 			end
