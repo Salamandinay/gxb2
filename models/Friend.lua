@@ -585,6 +585,10 @@ function Friend:fightFriend(id, partners, petID, team_index)
 	xyd.Backend.get():request(xyd.mid.FRIEND_FIGHT_FRIEND, msg)
 end
 
+function Friend:clearQuickTeamInfo()
+	self.friendTeam = {}
+end
+
 function Friend:onSearchBoss(event)
 	local data = event.data
 

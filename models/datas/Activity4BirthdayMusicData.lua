@@ -79,6 +79,13 @@ function Activity4BirthdayMusicData:onAward(data)
 		self.detail.awards = info.awards
 
 		self:updateInfoWithData()
+
+		if self.dataGetChoiceYesAwards then
+			xyd.db.misc:setValue({
+				key = "activity_4birthday_get_choice_award",
+				value = json.encode(self.dataGetChoiceYesAwards)
+			})
+		end
 	elseif type == xyd.Activity4BirthdayMusicReqType.GET_AWARD then
 		local function setSearchInfoGetFun(index)
 			local countIndex = 0
@@ -110,7 +117,7 @@ function Activity4BirthdayMusicData:onAward(data)
 			end
 		end
 
-		if allGetNum == 10 then
+		if allGetNum >= 10 then
 			self.detail.awards = {}
 
 			self:updateEmptyData()
@@ -152,6 +159,24 @@ function Activity4BirthdayMusicData:getChoiceAwards()
 
 		if dataGetChoiceYesAwards and (not dataGetChoiceYesAwards.choiceIds or #dataGetChoiceYesAwards.choiceIds == 0) then
 			dataGetChoiceYesAwards = nil
+		end
+
+		if dataGetChoiceYesAwards and dataGetChoiceYesAwards.choiceIds then
+			local num = 0
+
+			for i, info in pairs(dataGetChoiceYesAwards.choiceIds) do
+				for j, littleInfo in pairs(info) do
+					if littleInfo.sort > 0 and littleInfo.index > 0 then
+						num = num + 1
+					end
+				end
+			end
+
+			if num >= 10 then
+				if not self.detail.awards or #self.detail.awards == 0 then
+					dataGetChoiceYesAwards = nil
+				end
+			end
 		end
 	end
 
@@ -214,26 +239,44 @@ function Activity4BirthdayMusicData:updateInfoWithData()
 	end
 end
 
+function Activity4BirthdayMusicData:checkSpecialSaveChoiceAwards(infos)
+	if not self.detail.awards or #self.detail.awards <= 0 then
+		self:saveChoiceAwards(infos)
+	end
+end
+
 function Activity4BirthdayMusicData:saveChoiceAwards(infos)
 	dump(infos, "test")
 
 	self.dataGetChoiceYesAwards.choiceIds = infos
 	self.dataGetChoiceYesAwards.saveTime = xyd.getServerTime()
+	local num = 0
 
-	xyd.db.misc:setValue({
-		key = "activity_4birthday_get_choice_award",
-		value = json.encode(self.dataGetChoiceYesAwards)
-	})
+	for i, info in pairs(self.dataGetChoiceYesAwards.choiceIds) do
+		for j, littleInfo in pairs(info) do
+			if littleInfo.sort > 0 and littleInfo.index > 0 then
+				num = num + 1
+			end
+		end
+	end
+
+	if num < 10 then
+		xyd.db.misc:setValue({
+			key = "activity_4birthday_get_choice_award",
+			value = json.encode(self.dataGetChoiceYesAwards)
+		})
+	end
+
 	self:sendChoiceAwardsReq()
 end
 
 function Activity4BirthdayMusicData:sendChoiceAwardsReq()
-	local num = 10
+	local num = 0
 
 	for i, info in pairs(self.dataGetChoiceYesAwards.choiceIds) do
 		for j, littleInfo in pairs(info) do
-			if littleInfo.sort == 0 or littleInfo.index == 0 then
-				num = 0
+			if littleInfo.sort > 0 and littleInfo.index > 0 then
+				num = num + 1
 			end
 		end
 	end

@@ -1949,11 +1949,8 @@ function BattleFormationWindow:friendBattle(partnerParams)
 
 			return
 		end
-
-		xyd.db.misc:setValue({
-			key = "friend_battle_formation",
-			value = self.chooseQuickTeam_
-		})
+	else
+		xyd.models.friend:clearQuickTeamInfo()
 	end
 
 	xyd.models.friend:fightFriend(self.params_.friend_id, partnerParams, self.pet, self.chooseQuickTeam_)

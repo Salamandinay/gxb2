@@ -466,18 +466,32 @@ function Activity4BirthdayChoiceAwardWindow:willClose()
 
 	print("isSame:", isSame)
 
+	local num = 0
+
+	for i, info in pairs(self.choicesInfos) do
+		for j, littleInfo in pairs(info) do
+			if littleInfo.sort > 0 and littleInfo.index > 0 then
+				num = num + 1
+			end
+		end
+	end
+
 	if not isSame then
 		self.activityData:saveChoiceAwards(self.choicesInfos)
 
-		local activityWd = xyd.WindowManager.get():getWindow("activity_window")
+		if num < 10 then
+			local activityWd = xyd.WindowManager.get():getWindow("activity_window")
 
-		if activityWd then
-			local curContent = activityWd:getCurContent()
+			if activityWd then
+				local curContent = activityWd:getCurContent()
 
-			if curContent:getActivityContentID() == xyd.ActivityID.ACTIVITY_4BIRTHDAY_MUSIC then
-				curContent:updateAllShow()
+				if curContent:getActivityContentID() == xyd.ActivityID.ACTIVITY_4BIRTHDAY_MUSIC then
+					curContent:updateAllShow()
+				end
 			end
 		end
+	elseif num >= 10 then
+		self.activityData:checkSpecialSaveChoiceAwards(self.choicesInfos)
 	end
 
 	Activity4BirthdayChoiceAwardWindow.super.willClose(self)

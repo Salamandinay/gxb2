@@ -17,6 +17,7 @@ function DelectAccountWindow:getUIComponent()
 	self.titleLabel_ = winTrans:ComponentByName("titleLabel", typeof(UILabel))
 	self.scrollView_ = winTrans:ComponentByName("scrollView", typeof(UIScrollView))
 	self.descLabel_ = winTrans:ComponentByName("scrollView/label", typeof(UILabel))
+	self.descLabel2_ = winTrans:ComponentByName("scrollView/label2", typeof(UILabel))
 	self.btnDelete_ = winTrans:NodeByName("btnDelete").gameObject
 	self.btnDeleteLabel_ = winTrans:ComponentByName("btnDelete/label", typeof(UILabel))
 end
@@ -25,6 +26,12 @@ function DelectAccountWindow:layout()
 	self.titleLabel_.text = __("DELETE_ACCOUNT_TEXT01")
 	self.btnDeleteLabel_.text = __("DELETE_ACCOUNT_TEXT02")
 	self.descLabel_.text = __("DELETE_ACCOUNT_TEXT08")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.descLabel2_.gameObject:SetActive(true)
+
+		self.descLabel_.text = __("DELETE_ACCOUNT_TEXT14")
+	end
 
 	self.scrollView_:ResetPosition()
 end

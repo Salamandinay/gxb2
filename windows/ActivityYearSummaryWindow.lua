@@ -34,9 +34,6 @@ function ActivityYearSummaryWindow:ctor(name, params)
 	ActivityYearSummaryWindow.super.ctor(self, name, params)
 
 	self.detail = xyd.models.activity:getActivity(xyd.ActivityID.YEARS_SUMMARY).detail
-
-	dump3(self.detail)
-
 	self.pageNum_ = 1
 end
 

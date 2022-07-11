@@ -4542,7 +4542,7 @@ ANNUAL3_REVIEW_1_2,と
 ANNUAL3_REVIEW_1_3,3周年
 ANNUAL3_REVIEW_1_4,確認
 ANNUAL3_REVIEW_1_5,※ランキングは、2021年7月9日の日本時間朝9時のデータに準拠。
-ANNUAL3_REVIEW_2_1,[c][size=30][fa9563]{1}[-][/c]、\n先輩は幽夢学園の後輩たちと出会いました。
+ANNUAL3_REVIEW_2_1,[c][size=30][fa9563]{1}[-][/c]、\n先輩は幽夢学園の後輩たちと\n出会いました。
 ANNUAL3_REVIEW_2_2,現時点で、先輩のそばには\n[c][size=30][fa9563]{1}[-][/c]名のレア戦姫がいます。
 ANNUAL3_REVIEW_3_1,学園内で、\n先輩は[c][size=30][fa9563]{1}[-][/c]名のフレンドと親交を結びました。
 ANNUAL3_REVIEW_3_2,学園内で、\n先輩は[c][size=30][fa9563]{1}[-][/c]名のフレンドと親交を結び、\n毎日ハートを送り合ってきました。
@@ -6551,7 +6551,7 @@ DELETE_ACCOUNT_TEXT05,続ける
 DELETE_ACCOUNT_TEXT06,キャンセル
 DELETE_ACCOUNT_TEXT07,アカウント及び関連データの削除をリクエストした場合、30日以内に処理し、通知いたします。
 DELETE_ACCOUNT_TEXT08,"
-本利用規約（以下「本規約」といいます。）には、Carolgames Platform ゲームプラットフォーム：Carolgames （以下「当社」といいます。）が提供するアプリケーション（以下「本アプリ」といいます。）に関するサービス（以下「本サービス」といいます。）のご利用にあたり、本アプリの登録ユーザーの皆様（以下「お客様」といいます。）に遵守していただかなければならない事項および当社とお客様との間の権利義務関係が定められております
+本利用規約（以下「本規約」といいます。）には、Carolgames Platform ゲームプラットフォーム：Carolgames （以下「当社」といいます。）が提供するアプリケーション（以下「本アプリ」といいます。）に関するサービス（以下「本サービス」といいます。）のご利用にあたり、本アプリの登録ユーザーの皆様（以下「お客様」といいます。）に遵守していただかなければならない事項および当社とお客様との間の権利義務関係が定められております。
 
 本サービスをご利用になる方は、本規約に同意する前に、必ず全文お読み下さいますようお願い致します。
 
@@ -6642,6 +6642,7 @@ xvi. その他当社が不適当と判断した行為。
 1. 当社は、当社が必要と判断する場合、事前にお客様に通知することなく、いつでも、本規約および個別利用規約を変更できるものとします。
 2. 変更後の本規約および個別利用規約は、本アプリ内または本ウェブサイト内の適宜の場所に掲示された時点からその効力を生じるものとし、お客様は本規約および個別利用規約の変更後も本サービスを使い続けることにより、変更後の本規約および適用のある個別利用規約に対する有効かつ取消不能な同意をしたものとみなされます。
 3. 当社は、前2項に基づく変更の内容をお客様に個別に通知することはしません。
+
 
 
 第１１条　本サービスの提供の中止・中断
@@ -6743,10 +6744,10 @@ ACTIVITY_4BIRTHDAY_TASK_HELP,1.ミッションをクリアすると、「絞り�
 ACTIVITY_4BIRTHDAY_GAMBLE_HELP,1.カーヴェとバルディが4周年を記念して音楽を奏でるそうです～。|2.楽曲は前奏、間奏、後奏の3部に分かれていて、1つの楽曲から予め数個のボーナスを選択できます。選択完了後、「パーティーの旋律」を使用すると抽選を1回行うことができ、選択したボーナスから任意でボーナスを1個獲得します。|3.選択済のボーナスを全て獲得すると、楽曲はリセットされ、また新たなラウンドが始まります。|4.イベント終了後、余った「パーティーの旋律」は1個30000ゴールドに変換され、メールで配布されます。
 ACTIVITY_4BIRTHDAY_TASK_TEXT01,パーティーケーキ
 ACTIVITY_4BIRTHDAY_TASK_TEXT02,材料獲得
-ACTIVITY_4BIRTHDAY_TASK_TIPS01,絞り袋が足りません！ミッションをクリアして獲得しましょう～。
-ACTIVITY_4BIRTHDAY_TASK_AWARD,絞り袋を消費すると、以下のボーナスを獲得します。続けますか？
+ACTIVITY_4BIRTHDAY_TASK_TIPS01,絞り袋が足りません！\nミッションをクリアして獲得しましょう～。
+ACTIVITY_4BIRTHDAY_TASK_AWARD,絞り袋を消費すると、以下のボーナスを\n獲得します。続けますか？
 ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT01,少々お待ちください
-ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT02,作成完了
+ACTIVITY_4BIRTHDAY_TASK_AWARD_TEXT02,確定
 ACTIVITY_4BIRTHDAY_GAMBLE_AWARD01,前奏
 ACTIVITY_4BIRTHDAY_GAMBLE_AWARD02,間奏
 ACTIVITY_4BIRTHDAY_GAMBLE_AWARD03,後奏
@@ -6780,8 +6781,8 @@ ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,ボーナスが足りません。
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,演奏中ですので、しばらくお待ちください～。
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,このボーナスは獲得済です。本ラウンドでは交換できません。
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,ボーナス未選択の空欄がありますが、本ラウンドの楽曲を演奏中のため、前回のボーナスを設定しました。
-ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][ffb629] 1 [-][/c][c][6f6693]回[-][/c][c][6f6693]演奏[-][/c]
-ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][ffb629] 5 [-][/c][c][ba6e7b]回[-][/c][c][ba6e7b]演奏[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][f0981b] 1 [-][/c][c][6f6693]回[-][/c][c][6f6693]演奏[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][f0981b] 5 [-][/c][c][ba6e7b]回[-][/c][c][ba6e7b]演奏[-][/c]
 ANNUAL4_REVIEW_MAIL_TITLE,4周年 - 先輩への特別な贈り物
 ANNUAL4_REVIEW_SKIP,画面をタップして、次のページにスキップ。
 ANNUAL4_REVIEW_1_1,先輩のあゆみ
@@ -6789,9 +6790,9 @@ ANNUAL4_REVIEW_1_2,と
 ANNUAL4_REVIEW_1_3,4周年
 ANNUAL4_REVIEW_1_4,確認
 ANNUAL4_REVIEW_1_5,※ランキングは、2022年7月8日の日本時間朝9時のデータに準拠。
-ANNUAL4_REVIEW_2_1,[c][size=30][ff7fd6]{1}[-][/c]、\n先輩は幽夢学園の後輩たちと出会いました。
+ANNUAL4_REVIEW_2_1,[c][size=30][ff7fd6]{1}[-][/c]、\n先輩は幽夢学園の後輩たちと\n出会いました。
 ANNUAL4_REVIEW_2_2,現時点で、先輩のそばには\n[c][size=30][ff7fd6]{1}[-][/c]名のレア戦姫がいます。
-ANNUAL4_REVIEW_2_3,そして、[c][size=30][ff7fd6]{1}[-][/c] 名の天星学部所属の伝説の共鳴者である戦姫が、先輩と共にいます……
+ANNUAL4_REVIEW_2_3,そして、[c][size=30][ff7fd6]{1}[-][/c] 名の天星学部所属の伝説の\n共鳴者である戦姫が、先輩と共にいます……
 ANNUAL4_REVIEW_3_1,学園内で、\n先輩は[c][size=30][ff7fd6]{1}[-][/c]名のフレンドと親交を結びました。
 ANNUAL4_REVIEW_3_2,学園内で、\n先輩は[c][size=30][ff7fd6]{1}[-][/c]名のフレンドと親交を結び、\n毎日ハートを送り合ってきました。
 ANNUAL4_REVIEW_3_3,学園内で、\n先輩は今も友情を分かち合える者を探し求めています。
@@ -6801,13 +6802,13 @@ ANNUAL4_REVIEW_3_6,現在は、サークルに未加入の状態です。\nで�
 ANNUAL4_REVIEW_4_1,幽夢学園ただ一人の先輩として、\n[c][size=30][ff7fd6]{1}[-][/c]名の星5戦姫の図鑑をアンロックされました。\n完成度は[c][size=30][ff7fd6]{2}[-][/c]に到達しています。
 ANNUAL4_REVIEW_4_2,学園内には、まだ見ぬ戦姫がたくさんいます。
 ANNUAL4_REVIEW_4_3,先輩の偉業は、もはや学園中の噂の的です。
-ANNUAL4_REVIEW_4_4,先輩は更に[c][size=30][ff7fd6]{1}[-][/c]名の星10戦姫の図鑑もアンロックされており、完成度は[c][size=30][ff7fd6]{2}[-][/c]に到達しています。
-ANNUAL4_REVIEW_4_5,それだけではありません。\n先輩は何と[c][size=30][ff7fd6]{1}[-][/c]名の後輩と誓約を交わし、将来を誓い合いました。
+ANNUAL4_REVIEW_4_4,先輩は更に[c][size=30][ff7fd6]{1}[-][/c]名の星10戦姫の図鑑もアンロック\nされており、完成度は[c][size=30][ff7fd6]{2}[-][/c]に到達しています。
+ANNUAL4_REVIEW_4_5,それだけではありません。\n先輩はなんと[c][size=30][ff7fd6]{1}[-][/c]名の後輩と誓約を交わし、\n将来を誓い合いました。
 ANNUAL4_REVIEW_4_6,そのうえ、\nあと[c][size=30][ff7fd6]{1}[-][/c]名の後輩も、先輩に熱い眼差しを向けています。
 ANNUAL4_REVIEW_4_7,それだけではありません。\n[c][size=30][ff7fd6]{1}[-][/c]名の後輩が、今も先輩に熱い眼差しを向けています。
 ANNUAL4_REVIEW_4_8,現時点で、\n先輩は誰とも誓約を交わしていません。\n後輩とのデートが楽しみですね。
 ANNUAL4_REVIEW_5_1,先輩の指揮の下で鍛えられた後輩たちの総戦力：
-ANNUAL4_REVIEW_5_2,学園と後輩たちの日常を守るために、\n先輩が潜り抜けてきた修羅場：
+ANNUAL4_REVIEW_5_2,学園と後輩たちの日常を守るために、\n先輩が潜り抜けてきた修羅場
 ANNUAL4_REVIEW_5_3,最上階クリア数：\n[c][size=30][ff7fd6]{1}[-][/c]階
 ANNUAL4_REVIEW_5_4,風紀検査クリア数：\n[c][size=30][ff7fd6]{1}[-][/c]ステージ
 ANNUAL4_REVIEW_5_5,戦姫試練クリア数：\n[c][size=30][ff7fd6]{1}[-][/c]ステージ
@@ -6826,3 +6827,41 @@ ANNUAL4_REVIEW_7_2,敬具
 ANNUAL4_REVIEW_4_6_1,そのうえ、\nあと[c][size=30][ff7fd6]{1}[-][/c]名の後輩も、先輩に熱い眼差しを向けています。
 ANNUAL4_REVIEW_4_7_1,それだけではありません。\n[c][size=30][ff7fd6]{1}[-][/c]名の後輩が、今も先輩に熱い眼差しを向けています。
 ACTIVITY_4BIRTHDAY_TITLE,記念\nパーティー
+OLD_SCHOOL_FLOOR_11_TIPS,前10層の全てのステージをクリアすると、当階層がアンロックされます。
+OLD_SCHOOL_FLOOR_11_TEXT01,最大与ダメージ:{1}
+OLD_SCHOOL_FLOOR_11_TEXT02,現在の与ダメージ:{1}
+OLD_SCHOOL_FLOOR_11_TEXT03,ランキング
+OLD_SCHOOL_FLOOR_11_TEXT04,pt
+OLD_SCHOOL_FLOOR_11_TEXT05,ボーナス
+OLD_SCHOOL_FLOOR_11_TEXT06,[size=28][c][b9723e]{1}pt追加[-]
+OLD_SCHOOL_FLOOR_11_TEXT07,シーズン終了時ポイントボーナスは合計ポイントに加算されます。
+OLD_SCHOOL_FLOOR_11_TEXT08,特級プラン
+OLD_SCHOOL_FLOOR_11_TEXT09,*ステージ9、10、11でアンロック
+OLD_SCHOOL_FLOOR_11_TEXT10,現在のステージのプランは変更できません。
+OLD_SCHOOL_FLOOR_11_TEXT11,連続挑戦の設定
+OLD_SCHOOL_FLOOR_11_TEXT12,ステージ選択
+OLD_SCHOOL_FLOOR_11_TEXT13,終了条件
+OLD_SCHOOL_FLOOR_11_TEXT14,より高レベルのステージに連続で挑戦します。失敗すると止まります。
+OLD_SCHOOL_FLOOR_11_TEXT15,より高レベルのステージに連続で挑戦します。失敗しても挑戦し続けます（50回連続失敗で止まる）。
+ACTIVITY_CHIME_HELP,1.イベント期間
+ACTIVITY_CHIME_TEXT01,ミッション
+ACTIVITY_CHIME_TEXT02,幸運お守り
+ACTIVITY_CHIME_TEXT03,再投入{1}枚鎏金玉振必得水月之玉振碎片
+ACTIVITY_CHIME_TEXT04,每投入20枚鎏金玉振必然獲得
+ACTIVITY_CHIME_TEXT05,鎏金鶴玉獎勵
+ACTIVITY_CHIME_TEXT06,翡翠鶴玉獎勵
+ACTIVITY_CHIME_TEXT07,イベント期間毎日獲得
+ACTIVITY_CHIME_TEXT08,購入すると即獲得
+SETING_GROUP_BUFF_RANK,天星学部出撃時、学部オーラ発動優先レベル
+ACTIVITY_CUPID_GIFT_HELP,1.イベント期間
+ACTIVITY_CUPID_GIFT_TEXT1,1回祈願
+ACTIVITY_CUPID_GIFT_TEXT2,{1}回祈願
+ACTIVITY_CUPID_GIFT_TEXT3,未開放
+ACTIVITY_CUPID_GIFT_TEXT4,あと23ラウンド
+ACTIVITY_CUPID_GIFT_TEXT5,即入手
+ACTIVITY_CUPID_GIFT_TEXT6,毎週合計{1}回祈願できます\n1回100-1500
+ACTIVITY_CUPID_GIFT_TEXT7,祈願回数：{1}/{2}
+ACTIVITY_CUPID_GIFT_TEXT8,毎週金曜日 日本時間9時に回数がリセットされます。
+ACTIVITY_CUPID_GIFT_TEXT9,残り{1}ラウンド
+ACTIVITY_CUPID_GIFT_TEXT10,現在選択されたボーナスはありません。
+ACTIVITY_CUPID_GIFT_TEXT11,祈願回数が足りません
