@@ -434,24 +434,6 @@ function Activity4BirthdayChoiceAwardWindow:showTweenFun(info, isShow, position,
 end
 
 function Activity4BirthdayChoiceAwardWindow:willClose()
-	if self.activityData:getIsLocalRoundStart() then
-		local isTipsEmptyToBefor = false
-
-		for i, infos in pairs(self.choicesInfos) do
-			for j in pairs(infos) do
-				if infos[j].sort == 0 or infos[j].index == 0 then
-					isTipsEmptyToBefor = true
-					infos[j].sort = self.activityData:getChoiceAwards()[i][j].sort
-					infos[j].index = self.activityData:getChoiceAwards()[i][j].index
-				end
-			end
-		end
-
-		if isTipsEmptyToBefor then
-			xyd.alertTips(__("ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07"))
-		end
-	end
-
 	local isSame = true
 
 	for i, infos in pairs(self.choicesInfos) do

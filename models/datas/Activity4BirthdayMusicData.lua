@@ -236,6 +236,33 @@ function Activity4BirthdayMusicData:updateInfoWithData()
 				self.dataGetChoiceYesAwards.choiceIds[order][setIndex].isGet = infoArr[3]
 			end
 		end
+
+		local checkIsSame = {}
+
+		for i, infos in pairs(self.dataGetChoiceYesAwards.choiceIds) do
+			for j, info in pairs(infos) do
+				if info.sort > 0 and info.index > 0 and info.isGet and info.isGet == 1 then
+					if checkIsSame[tostring(i) .. info.sort .. info.index] ~= 1 then
+						checkIsSame[tostring(i) .. info.sort .. info.index] = 1
+					end
+				end
+			end
+		end
+
+		for i, infos in pairs(self.dataGetChoiceYesAwards.choiceIds) do
+			for j, info in pairs(infos) do
+				if info.sort > 0 and info.index > 0 then
+					if checkIsSame[tostring(i) .. info.sort .. info.index] == 1 then
+						if not info.isGet or info.isGet ~= 1 then
+							info.sort = 0
+							info.index = 0
+						end
+					else
+						checkIsSame[tostring(i) .. info.sort .. info.index] = 1
+					end
+				end
+			end
+		end
 	end
 end
 
