@@ -345,6 +345,12 @@ function ChoosePartnerWindow:clearChoose()
 	for i in pairs(self.multiWrap_.items_) do
 		if self.multiWrap_.items_[i].heroIcon then
 			self.multiWrap_.items_[i].heroIcon.choose = false
+
+			if self.multiWrap_.items_[i].data.lockType ~= 0 then
+				self.multiWrap_.items_[i].heroIcon.lock = true
+			else
+				self.multiWrap_.items_[i].heroIcon:setLockImgVisible(false)
+			end
 		end
 	end
 end
