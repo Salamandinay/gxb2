@@ -461,6 +461,7 @@ function NormalSummon:reqSummonDress(times)
 		free_times = activityData.detail.can_summon_times
 	end
 
+	self.summonTen_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 	local type_ = 1
 
 	if times <= free_times then
@@ -552,7 +553,9 @@ function NormalSummon:onSummonResult(event)
 			wnd_type = 5,
 			type = 1,
 			data = params
-		})
+		}, function ()
+			self.summonTen_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+		end)
 		self:updateBreakNum()
 		self:updateFreeTimes()
 	end
@@ -946,6 +949,7 @@ function LimitSummon:reqSummonLimitDress(times)
 		end
 	end
 
+	self.summonTen_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 	local msg = messages_pb.summon_req()
 	msg.summon_id = type_
 	msg.times = times
@@ -1044,7 +1048,9 @@ function LimitSummon:onSummonResult(event)
 			wnd_type = 5,
 			type = 2,
 			data = params
-		})
+		}, function ()
+			self.summonTen_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+		end)
 		self:updateBreakNum()
 		self:updateFreeTimes()
 	end

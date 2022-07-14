@@ -157,9 +157,8 @@ function Activity:onActivityList(event)
 		dump(a, "查看全部活动数据。。。。。。。。")
 
 		for i, v in pairs(a.activity_list) do
-			if tonumber(v.activity_id) == 305 then
-				print("getServerTime:", xyd.getServerTime())
-				dump(v, "305===========================")
+			if tonumber(v.activity_id) == 308 then
+				dump(v, "308===========================")
 			end
 		end
 
@@ -207,6 +206,19 @@ function Activity:onActivityList(event)
 				end
 			elseif id == xyd.ActivityID.HOT_POINT_PARTNER or id == xyd.ActivityID.DISCOUNT_MONTHLY then
 				if isReturnBack == true then
+					self:setActivityData(data)
+				end
+			elseif id == xyd.ActivityID.ACTIVITY_CUPID_GIFT then
+				local detail = json.decode(data.detail)
+				local index = 0
+
+				for i = 1, #detail.charges do
+					if detail.charges[i].buy_times > 0 then
+						index = i
+					end
+				end
+
+				if index > 0 or xyd.getServerTime() <= tonumber(data.start_time) + 604800 then
 					self:setActivityData(data)
 				end
 			else
@@ -574,8 +586,18 @@ function Activity:onRecharge(event)
 		flag = false
 	end
 
+	dump(event.data.items)
+
 	if flag then
-		xyd.showRechargeAward(event.data.giftbag_id, event.data.items)
+		local activityID = xyd.tables.giftBagTable:getActivityID(giftBagID)
+
+		if activityID == xyd.ActivityID.ACTIVITY_CUPID_GIFT then
+			local activityData = self:getActivity(activityID)
+
+			activityData:showRechargeAward(event.data.giftbag_id, event.data.items)
+		else
+			xyd.showRechargeAward(event.data.giftbag_id, event.data.items)
+		end
 	end
 
 	local activityID = xyd.tables.giftBagTable:getActivityID(giftBagID)

@@ -1182,24 +1182,7 @@ function BattleChooseWindow:registerEvent()
 	UIEventListener.Get(self.shrineHurdle).onClick = function ()
 		xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
 
-		if not xyd.models.shrineHurdleModel:checkFuctionOpen() then
-			local functionOpenTime = xyd.tables.miscTable:getVal("shrine_time_start")
-
-			if xyd.getServerTime() < tonumber(functionOpenTime) then
-				xyd.alertTips(__("DRESS_GACHA_OPEN_TIME", xyd.getRoughDisplayTime(tonumber(functionOpenTime) - xyd.getServerTime())))
-
-				return
-			end
-
-			local towerStage = xyd.models.towerMap.stage
-			local needTowerStage = tonumber(xyd.tables.miscTable:getVal("shrine_open_limit", "value"))
-
-			if towerStage < needTowerStage + 1 then
-				xyd.alertTips(__("OLD_SCHOOL_OPEN_FLOOR", needTowerStage))
-			else
-				xyd.alertTips(__("OLD_SCHOOL_OPEN_STAR"))
-			end
-
+		if not xyd.models.shrineHurdleModel:checkIsCanOpen() then
 			return
 		end
 
@@ -1579,7 +1562,7 @@ function BattleChooseWindow:updateArenaShow()
 							self.groupArenaTime:SetActive(false)
 							self:updateArenaLabel(false)
 							xyd.setUISpriteAsync(self.arenaImage, nil, "btn_arena_new")
-							self.arenaBtnBate.gameObject:SetActive(true)
+							self.arenaBtnBate.gameObject:SetActive(false)
 						end)
 					end
 				}
@@ -1652,7 +1635,7 @@ function BattleChooseWindow:updateArenaShow()
 
 	if xyd.models.arena:getIsOld() ~= nil then
 		xyd.setUISpriteAsync(self.arenaImage, nil, "btn_arena_new")
-		self.arenaBtnBate.gameObject:SetActive(true)
+		self.arenaBtnBate.gameObject:SetActive(false)
 	else
 		xyd.setUISpriteAsync(self.arenaImage, nil, "btn_arena")
 		self.arenaBtnBate.gameObject:SetActive(false)

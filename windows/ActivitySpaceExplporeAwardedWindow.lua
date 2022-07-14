@@ -51,11 +51,16 @@ function ActivitySpaceExplporeAwardedWindow:initUIComponent()
 		})
 	end
 
+	table.sort(collection, function (a, b)
+		return tonumber(a.item_id) < tonumber(b.item_id)
+	end)
 	self.wrapContent:setInfos(collection, {})
 
 	if #collection == 0 then
 		self.noneGroup.gameObject:SetActive(true)
 	end
+
+	self.scrollView:ResetPosition()
 end
 
 function ActivitySpaceExplporeAwardedWindow:register()

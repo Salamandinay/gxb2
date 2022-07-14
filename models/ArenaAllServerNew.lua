@@ -17,6 +17,7 @@ function ArenaAllServerNew:ctor()
 	self.nextUpdateSelfInfoTime_ = 0
 	self.nextUpdateBattleInfoTime_ = 0
 	self.lastChangeTime = 0
+	self.reqHistoryRecord = {}
 end
 
 function ArenaAllServerNew:onRegister()
@@ -29,7 +30,7 @@ function ArenaAllServerNew:onRegister()
 	self:registerEvent(xyd.event.ARENA_ALL_SERVER_GET_HISTORY_RANK_NEW, handler(self, self.onGetRank))
 	self:registerEvent(xyd.event.ARENA_ALL_SERVER_SET_TEAMS_NEW, handler(self, self.onSetTeams))
 	self:registerEvent(xyd.event.ARENA_ALL_SERVER_GET_HALL_RANK_NEW, handler(self, self.onGetHallRank))
-	self:registerEvent(xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW, handler(self, self.onGetReport))
+	self:registerEvent(xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW2, handler(self, self.onGetReport))
 	self:registerEvent(xyd.event.FUNCTION_OPEN, function (event)
 		local funID = event.data.functionID
 
@@ -356,42 +357,31 @@ end
 
 function ArenaAllServerNew:onGetRank(event)
 	local data = xyd.decodeProtoBuf(event.data)
-	self.historyRank_ = data.list
-	local isEmpty = true
-
-	if self.historyRank_ then
-		if #self.historyRank_ == 0 then
-			self.historyRank_ = nil
-
-			return
-		else
-			for i = 1, #self.historyRank_ do
-				if self.historyRank_[i].area_list and #self.historyRank_[i].area_list ~= 0 then
-					isEmpty = false
-				end
-			end
-		end
-	end
-
-	if isEmpty == true then
-		self.historyRank_ = nil
-	end
 
 	if not self.historyRank_ then
-		return
+		self.historyRank_ = {}
 	end
 
-	self.seasons_ = {}
+	local season = self.tempHead
+	self.reqHistoryRecord[season] = true
 
-	for key, value in pairs(self.historyRank_[1].area_list) do
-		table.insert(self.seasons_, value.index)
+	for index, value in ipairs(data.list) do
+		if not self.historyRank_[index] then
+			self.historyRank_[index] = {}
+		end
+
+		if not self.historyRank_[index].area_list then
+			self.historyRank_[index].area_list = {}
+		end
+
+		local arenaListData = {}
+
+		if value.area_list and value.area_list[1] then
+			arenaListData = value.area_list[1]
+		end
+
+		self.historyRank_[index].area_list[season] = arenaListData
 	end
-
-	local function sort_func(a, b)
-		return a < b
-	end
-
-	table.sort(self.seasons_, sort_func)
 end
 
 function ArenaAllServerNew:onSetTeams(event)
@@ -466,10 +456,28 @@ function ArenaAllServerNew:onGetHallRank(event)
 	self.hallRank_ = data.list
 end
 
-function ArenaAllServerNew:reqGetHistoryRank()
+function ArenaAllServerNew:reqGetHistoryRank(head, tail)
+	if self.reqHistoryRecord[head] then
+		return
+	end
+
 	local msg = messages_pb.arena_all_server_get_history_rank_new_req()
 
+	if head then
+		msg.head = head
+		self.tempHead = head
+	end
+
+	if tail then
+		msg.tail = tail
+		self.tempTail = tail
+	end
+
 	xyd.Backend:get():request(xyd.mid.ARENA_ALL_SERVER_GET_HISTORY_RANK_NEW, msg)
+end
+
+function ArenaAllServerNew:hasReqHistory(season)
+	return self.reqHistoryRecord[season]
 end
 
 function ArenaAllServerNew:getHistoryRank()
@@ -477,12 +485,24 @@ function ArenaAllServerNew:getHistoryRank()
 end
 
 function ArenaAllServerNew:getSeasons()
+	if not self.seasons_ then
+		self.seasons_ = {}
+
+		for i = 1, self:getMaxHistorySeason() do
+			self.seasons_[i] = i
+		end
+	end
+
 	return self.seasons_ or {}
+end
+
+function ArenaAllServerNew:getMaxHistorySeason()
+	return self:getCurMatchNum() - 1
 end
 
 function ArenaAllServerNew:reqReport(ids)
 	local curStr = ""
-	local msg = messages_pb.arena_all_server_get_record_new_req()
+	local msg = messages_pb.arena_all_server_get_record_new2_req()
 
 	for _, id in ipairs(ids) do
 		curStr = tostring(curStr) .. tostring(id) .. "_"
@@ -501,7 +521,7 @@ function ArenaAllServerNew:reqReport(ids)
 
 	self.curReqReport_ = curStr
 
-	xyd.Backend:get():request(xyd.mid.ARENA_ALL_SERVER_GET_RECORD_NEW, msg)
+	xyd.Backend:get():request(xyd.mid.ARENA_ALL_SERVER_GET_RECORD_NEW2, msg)
 end
 
 function ArenaAllServerNew:onGetReport(event)

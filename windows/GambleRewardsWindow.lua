@@ -80,7 +80,6 @@ function GambleRewardsWindow:initWindow()
 
 	xyd.setUITextureByNameAsync(self.textImg, "huodewupin_" .. xyd.Global.lang, true)
 	self:layout()
-	self:loadEffects(true)
 	self:register()
 end
 
@@ -161,6 +160,21 @@ function GambleRewardsWindow:loadEffects(flag)
 
 	self:initData()
 	self:playAnimation()
+end
+
+function GambleRewardsWindow:playOpenAnimation(callback)
+	GambleRewardsWindow.super.playCloseAnimation(self, function ()
+		if self.isNeedCostBtn then
+			self:initCost()
+		else
+			self.btnBuy_.gameObject:SetActive(false)
+			self.btnBuy2_.gameObject:SetActive(false)
+			self.btnSure_.gameObject:X(0)
+		end
+
+		self:initData()
+		self:playAnimation(callback)
+	end)
 end
 
 function GambleRewardsWindow:ResetScrollPos()
@@ -648,7 +662,7 @@ function GambleRewardsWindow:onGetAward(event)
 	end
 end
 
-function GambleRewardsWindow:playAnimation()
+function GambleRewardsWindow:playAnimation(callback)
 	local function playNormal(obj, callback, delay)
 		if not obj or tolua.isnull(obj) then
 			return
@@ -841,6 +855,11 @@ function GambleRewardsWindow:playAnimation()
 	self:waitForTime(0.1 * #actions + 1, function ()
 		if self.progressValue then
 			self:playProgressEffect()
+		end
+	end)
+	self:waitForTime(1, function ()
+		if callback then
+			callback()
 		end
 	end)
 end

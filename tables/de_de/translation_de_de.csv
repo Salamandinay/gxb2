@@ -1483,7 +1483,7 @@ Wähle zunächst aus, um welche Art von Problem es sich bei deiner Frage handelt
 [url=""event:GM_RECALL_5""][c][f95e6a]5. Fehlerberichte und Vorschläge[-][/c][/url]
 
 [url=""event:GM_RECALL_6""][c][f95e6a]6.Sonstige Probleme[-][/c][/url]"
-GM_RECALL_1,"Bitte stelle dein Kontoproblem ausführlich dar, wie zum Beispiel Verbindung fehlschlagen, Wechseln unmöglich, Kontodaten vergessen usw., damit wir das Problem bestätigen und dir dabei weiter helfen können.\n\n1. Konto löschen[url=""delete_account_window""][c][f95e6a][-][/c][/url]"
+GM_RECALL_1,"Bitte stelle dein Kontoproblem ausführlich dar, wie zum Beispiel Verbindung fehlschlagen, Wechseln unmöglich, Kontodaten vergessen usw., damit wir das Problem bestätigen und dir dabei weiter helfen können.\n\n[url=""delete_account_window""][c][f95e6a]1. Konto löschen[-][/c][/url]"
 GM_RECALL_2,"Bitte beschreibe dein Problem beim Aufladen genauer, wie z. B. Kauf nicht möglich, kein Artikel nach Kauf erhalten, falsches Pakets gekauft, Hilfe bei der Aufladung usw. Unser Kundendienst wird anhand deiner Beschreibung dein Problem überprüfen."
 GM_RECALL_3,"Bitte beschreibe dein Problem genauer, wie z. B. Fragen zu den Spielregeln oder Events usw. Unser Kundendienst wird sich dann um deine Fragen und Probleme kümmern!"
 GM_RECALL_4,"Beschreibe die aufgetretene Störung im Detail, z. B. Fehler beim Empfang von Belohnungen, Gegenständen, Ressourcen oder Problemen mit Mitgliedern usw. Gebe uns auch einen ungefähren Zeitrahmen an, an dem das Problem aufgetreten ist. Der Kundenservice wird dir bestätigen, auf welches Problem du laut deiner Beschreibung gestoßen bist."
@@ -3293,7 +3293,7 @@ ACTIVITY_ENTRANCE_TEST_TIME_TIPS,Wird auf 10x zurückgesetzt in:
 ACTIVITY_ENTRANCE_TEST_TILI_HELP,"1. Maximal kann man 15 Prüfungszertifikate im Besitz haben und die Zertifikate werden täglich um 00:00 Uhr (UTC/GMT 0) um [c][cc0011]10[-][/c] vermehrt.|2. Du kannst mit Dias zusätzliche Prüfungszertigikate kaufen aber täglich kannst du maximal [c][cc0011]20[-][/c] kaufen. Je mehr Prüfungszertifikate du gekauft hast, desto mehr Dias kostet 1 Prüfungszertifikat."
 ACTIVITY_ENTRANCE_TEST_TILI_FULL,Max. Anzahl an Prüfungszertifikaten erreicht
 ENTRANCE_TEST_UNEQUIP_TIP,Nicht konfiguriert
-ENTRANCE_TEST_NEW_HERO_TIPS,Die neuen Mädchen sind da!
+ENTRANCE_TEST_NEW_HERO_TIPS,Das neue Mädchen ist da!
 LOCK_COUNT_DOWN,Wird gesperrt in:
 ARENA_ALL_SERVER_QUIZ_CHANGE,Wette\nbearbeiten
 ARENA_ALL_SERVER_QUIZ_SUCCESS,Wette erfolgreich geändert!
@@ -3755,7 +3755,7 @@ ACTIVITY_CHRISTMAS_SALE_HELP,"1. Verwende die Einkaufsgutscheine, um die Belohnu
 RE_CHECKIN,Nachträglich\nanmelden
 RE_CHECKIN_TIPS,Willst du sicher {1} Dias für nachträgliches Anmelden ausgeben?
 SUMMON_GIFTBAG_MENU01,Kapseln ziehen ({1}/{2})
-SUMMON_GIFTBAG_MENU02,Neue Mädchen
+SUMMON_GIFTBAG_MENU02,Neues Mädchen
 SUMMON_GIFTBAG_HELP,"1. Um die neuen Mädchen an der Schule willkommen zu heißen, hat Babel euch einen Spezialbonus vorbereitet: Während des Events kannst du durch Ziehen der Kapseln zusätzliche Belohnungen erhalten. Wenn die gezogenen Super Kapseln oder neuen Mädchen eine bestimmte Zahl erreicht haben, bekommst du zusätzliche Belohnungen.|2. Die durch das Event ""Aufstiegszeremonie"" erhaltenen neuen Mädchen werden nicht in diesem Event mitgezählt.|3. Wann dieses Event das nächste Mal stattfindet, wird auf unserer offiziellen Facebookseite vorher bekanntgegeben. Folg uns doch, um keine News mehr zu verpassen!"
 ACTIVITY_CHRISTMAS_SALE_NEED_COST,"Verwende {1}x ""{2}"", um es zu entsperren."
 ACTIVITY_CHRISTMAS_SALE_AWARD_PREVIEW,Vorschau
@@ -5740,7 +5740,7 @@ SHRINE_NOTICE_TAB1,Aufgaben
 SHRINE_NOTICE_TAB2,Rangliste
 SHRINE_NOTICE_TAB3,Belohnungen
 SHRINE_NOTICE_TAB4,Erfolge
-SHRINE_NOTICE_TEXT01,Restliche Zeit
+SHRINE_NOTICE_TEXT01,Restliche Zeit:
 SHRINE_NOTICE_TEXT02,Gesamtpunkte
 SHRINE_NOTICE_TEXT03,Rang: [c][0069cc]{1}[-][/c]
 SHRINE_NOTICE_TEXT04,Akt. Belohnungen:
@@ -6070,7 +6070,7 @@ ACTIVITY_CLOCK_TEXT01,Zeiger
 ACTIVITY_CLOCK_AWARDS_TEXT01,Verwende {1}x Kleemünzen
 ACTIVITY_CLOCK_AWARDS_TEXT02,Noch {1}x Drehen
 ACTIVITY_CLOCK_AWARDS_TEXT03,Sammelbar:
-ACTIVITY_CLOCK_CHOOSE,Wähle die ult. Belohnung aus
+ACTIVITY_CLOCK_CHOOSE,Wähle eine Belohnung aus
 ACTIVITY_CLOCK_CHOOSE_TIPS,Bitte wähle zunächst die ultimativen Belohnungen aus!
 ACTIVITY_CLOCK_CHOOSE_BUTTON,Wählen
 ACTIVITY_CLOCK_SHOW_TEXT01,Fixiert
@@ -6751,8 +6751,8 @@ ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,Restliche Belohnungen nicht ausreichend
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,Die Melodie wird abgespielt. Warte einen Moment bitte.
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,Diese Belohnung hast du bereits erhalten. Wechseln fehlgeschlagen.
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,Alle Slots müssen mit Belohnungen gefüllt werden. In den freien Slots werden die früher ausgewählte Belohnungen eingesetzt.
-ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][ffb629] 1 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
-ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][ffb629] 5 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON01,[c][f0981b] 1 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
+ACTIVITY_4BIRTHDAY_GAMBLE_BUTTON02,[c][f0981b] 5 [-][/c][c][6f6693]Mal[-][/c] [c][6f6693]abspielen[-][/c]
 ANNUAL4_REVIEW_MAIL_TITLE,4. Jubiläum - Extra für dich
 ANNUAL4_REVIEW_SKIP,"Tippe auf das Bild, um zur nächsten Seite zu gelangen"
 ANNUAL4_REVIEW_1_1,Deine eigene Spielgeschichte
@@ -6805,3 +6805,46 @@ ANNUAL4_REVIEW_7_2,Mit freundlichen Grüßen
 ANNUAL4_REVIEW_4_6_1,"Außerdem gibt es noch [c][size=25][ff7fd6]{1}[-][/c] Mädchen, die darauf warten, dass du ihr Herz eroberst..."
 ANNUAL4_REVIEW_4_7_1,Hast du schon gehört?\n[c][size=30][ff7fd6]{1}[-][/c] Mädchen erwarten sehnsüchtig einen Ring von dir...
 ACTIVITY_4BIRTHDAY_TITLE,Jubiläums-\nTanzparty
+OLD_SCHOOL_FLOOR_11_TIPS,"Schließ die ersten 10 Etagen ab, um diese Etage zu entsperren"
+OLD_SCHOOL_FLOOR_11_TEXT01,Höchstschaden: {1}
+OLD_SCHOOL_FLOOR_11_TEXT02,Akt. Schaden: {1}
+OLD_SCHOOL_FLOOR_11_TEXT03,Rang
+OLD_SCHOOL_FLOOR_11_TEXT04,Punkte
+OLD_SCHOOL_FLOOR_11_TEXT05,Belohnung
+OLD_SCHOOL_FLOOR_11_TEXT06,[size=28][c][b9723e]Zusätzlich {1} Punkte[-]
+OLD_SCHOOL_FLOOR_11_TEXT07,Wird zum Ende der Saison in den Gesamtpunkten mitgezählt
+OLD_SCHOOL_FLOOR_11_TEXT08,Sonderprojekt
+OLD_SCHOOL_FLOOR_11_TEXT09,Entsperrt in 9./10./11. Etagen
+OLD_SCHOOL_FLOOR_11_TEXT10,Projekte für diese Stufe können nicht geändert werden.
+OLD_SCHOOL_FLOOR_11_TEXT11,Auto. herausfordern
+OLD_SCHOOL_FLOOR_11_TEXT12,Stufen wählen
+OLD_SCHOOL_FLOOR_11_TEXT13,Stoppen
+OLD_SCHOOL_FLOOR_11_TEXT14,"Fordert autom. die gewählten Stufen heraus, bis das Team verliert"
+OLD_SCHOOL_FLOOR_11_TEXT15,"Fordert autom. die gewählten Stufen heraus, bis das Team 50 aufeinanderfolgende Kämpfe verliert."
+ACTIVITY_CHIME_HELP,"1. Wirf deine Jaden in den Teich ein, um zufällige Belohnungen zu ziehen. Alle 20 goldenen Jades erhältst du sicher das Fragment der Mondglocke.|2. Schließe die bestimmten Aufgaben ab, um grüne und goldene Jaden usw. zu erhalten.|3. Nach dem Kauf der Glücksbringer-Pakete werden dir tägliche Belohnungen per Mail gesendet.|4. Nach dem Ende des Events werden die nicht verwendeten Jaden per Mail recycelt. Jede grüne Jade entspricht 50K Münzen und jede goldene Jade 100K."
+ACTIVITY_CHIME_TEXT01,Aufgaben
+ACTIVITY_CHIME_TEXT02,Glücksbringer
+ACTIVITY_CHIME_TEXT03,"Wirf noch [c][6fff80][sc][0f4e48]{1}[/sc][-][/c] goldene Jade(n) ein, um 1 [c][fd8214][sc][0f4e48]Fragment der Mondglocke[/sc][-][/c] sicher zu erhalten!"
+ACTIVITY_CHIME_TEXT04,Sichere Belohnung mit allen 20 goldenen Jaden
+ACTIVITY_CHIME_TEXT05,Belohnungen der goldenen Jaden
+ACTIVITY_CHIME_TEXT06,Belohnungen der grünen Jaden
+ACTIVITY_CHIME_TEXT07,Tägliche Belohnungen während des Events:
+ACTIVITY_CHIME_TEXT08,Sofort erhältlich nach dem Kauf:
+SETING_GROUP_BUFF_RANK,"Wird ein Meteore-Mädchen aufgestellt, werden die Auren nach folgender Reihenfolge aktiviert."
+ACTIVITY_CUPID_GIFT_HELP,"1. Cupid segnet dich. Zeit zum Beten!|2. Nach dem Kauf der Pakete ""Segen von Cupid"" erhälst du sofort reichhaltige Dias, Stempel und Ressourcenauswahlboxen. Während des Events (24 Wochen lang) erhältst du wöchentlich eine bestimmte Anzahl an Chancen fürs Beten. Bei jedem Beten erhältst du zufällig 100 bis 1500 Dias.|3. In der ersten Woche erhältst du nach dem Kauf des Pakets sofort die Chancen fürs Beten. In den folgenden 23 Wochen werden die Chancen um 2 Uhr (GMT plus 2) am jeden Freitag erneuert. Die nicht verwendeten Chancen der letzten Woche werden per Mail recycelt und jede Chance entspricht 100 Dias.|4. Es gibt insgesamt 3 Pakete. Erst wenn das vorherige Paket gekauft ist, wird das nächste Paket entpserrt.|5. Hast du mehrere Pakete (""Segen von Cupid"") gekauft, werden die wöchentlichen Chancen jeweiliges Pakets addiert.|6. Die Pakete werden nur während der 1. Woche des Events verkauft. Hast du inzwischen keine Pakete gekauft, wird das Event nach dem Ende der 1. Woche geschlossen."
+ACTIVITY_CUPID_GIFT_TEXT1,1 Mal beten
+ACTIVITY_CUPID_GIFT_TEXT2,{1} Mal beten
+ACTIVITY_CUPID_GIFT_TEXT3,Inaktiviert
+ACTIVITY_CUPID_GIFT_TEXT4,In folgenden 23 Wochen
+ACTIVITY_CUPID_GIFT_TEXT5,Sofort erhältlich
+ACTIVITY_CUPID_GIFT_TEXT6,Wöchentlich:\n{1} Beten-Chancen
+ACTIVITY_CUPID_GIFT_TEXT7,Beten-Chancen: {1}/{2}
+ACTIVITY_CUPID_GIFT_TEXT8,Erneuert um 2 Uhr am jeden Freitag
+ACTIVITY_CUPID_GIFT_TEXT9,Verbleibend:\n{1} Woche(n)
+ACTIVITY_CUPID_GIFT_TEXT10,Belohnungen noch nicht ausgewählt
+ACTIVITY_CUPID_GIFT_TEXT11,Chance fürs Beten nicht ausreichend
+DELETE_ACCOUNT_TEXT14,賬號隱私協議2（法語專用，其他語言不翻譯）
+ACTIVITY_CHIME_TEXT10,{1} verwenden
+ACTIVITY_CHIME_TEXT11,Gib die Menge ein
+ACTIVITY_CUPID_GIFT_TEXT12,5 Mal beten
+ACTIVITY_CHIME_TEXT13,Beten

@@ -632,6 +632,8 @@ function SummonResultWindow:addEnergyEffect()
 				end
 			end)
 		end
+
+		self:updateProgressBar()
 	end, self, 1000)
 end
 

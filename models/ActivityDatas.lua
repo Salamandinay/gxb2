@@ -289,7 +289,9 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MUSIC] = require("app.models.datas.Activity4BirthdayMusicData"),
 	[xyd.ActivityID.ACTIVITY_4ANNIVERSARY_SIGN] = require("app.models.datas.Activity4AnniversarySignData"),
 	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MISSION] = require("app.models.datas.Activity4BirthdayMission"),
-	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_PARTY] = require("app.models.datas.Activity4BirthdayPartyData")
+	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_PARTY] = require("app.models.datas.Activity4BirthdayPartyData"),
+	[xyd.ActivityID.ACTIVITY_CHIME] = require("app.models.datas.ActivityChimeData"),
+	[xyd.ActivityID.ACTIVITY_CUPID_GIFT] = require("app.models.datas.ActivityCupidGiftData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

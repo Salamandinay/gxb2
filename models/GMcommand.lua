@@ -1,5 +1,6 @@
 local BaseModel = import(".BaseModel")
 local GMcommand = class("GMcommand", BaseModel)
+local BattleTest = import("app.common.BattleTest")
 local cjson = require("cjson")
 local CommandEnums = {
 	"partner table_id",
@@ -131,6 +132,8 @@ function GMcommand:checkTestGm(texts)
 		xyd.WindowManager.get():openWindow("battle_test_window")
 
 		return true
+	elseif texts[1] == "plan_click" then
+		BattleTest.get():startClick(tonumber(texts[2]))
 	elseif texts[1] == "fight_test_close" then
 		xyd.closeWindow("battle_window")
 		xyd.closeWindow("battle_win_window")

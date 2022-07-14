@@ -6,8 +6,9 @@ local HeroIcon = import("app.components.HeroIcon")
 local Partner = import("app.models.Partner")
 local Monster = import("app.models.Monster")
 
-function Arena3v3RecordDetailItem:ctor(go, params)
+function Arena3v3RecordDetailItem:ctor(go, params, parent)
 	self.go = go
+	self.parent_ = parent
 	self.info = params.info
 	self.recordId = params.recordId
 	self.isHideDie = params.isHideDie
@@ -218,11 +219,18 @@ function Arena3v3RecordDetailItem:onClickVideo()
 		return
 	end
 
-	if self.isAllServer or self.isAsAfter then
+	if self.isAllServer then
 		xyd.BattleController:onArenaScoreBattle({
 			data = self.info,
 			record_id = self.recordId
 		}, true)
+	elseif self.isAsAfter then
+		local msg = messages_pb.arena_all_server_get_record_new_req()
+
+		table.insert(msg.record_ids, self.recordId)
+		xyd.Backend:get():request(xyd.mid.ARENA_ALL_SERVER_GET_RECORD_NEW, msg)
+
+		self.parent_.tmpRecordId_ = self.recordId
 	else
 		xyd.BattleController:onArena3v3Battle({
 			data = self.info,
@@ -298,7 +306,8 @@ function Arena3v3RecordDetailWindow:registerEvent()
 	self:register()
 	self.eventProxy_:addEventListener(xyd.event.ARENA_3v3_GET_REPORT, handler(self, self.onGetReport))
 	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_RECORD, handler(self, self.onGetReport))
-	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW, handler(self, self.onGetAllServerReport))
+	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW2, handler(self, self.onGetAllServerReport))
+	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW, handler(self, self.onRecordDetail))
 	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_REPORT, handler(self, self.onGetAllServerReport))
 end
 
@@ -324,10 +333,22 @@ function Arena3v3RecordDetailWindow:onGetReport(event)
 			matchNum = i,
 			if3v3 = self.if3v3,
 			recordId = self.params_.report_ids[i]
-		})
+		}, self)
 	end
 
 	self.gContainer:GetComponent(typeof(UILayout)):Reposition()
+end
+
+function Arena3v3RecordDetailWindow:onRecordDetail(event)
+	local data = event.data
+	local report = data.reports[1]
+
+	xyd.BattleController:onArenaScoreBattle({
+		data = report,
+		record_id = self.tmpRecordId_
+	}, true)
+
+	self.tmpRecordId_ = nil
 end
 
 function Arena3v3RecordDetailWindow:onGetAllServerReport(event)
@@ -353,7 +374,7 @@ function Arena3v3RecordDetailWindow:onGetAllServerReport(event)
 			isAllServer = self.isAllServer,
 			isAsAfter = self.isAsAfter,
 			recordId = self.params_.report_ids[i]
-		})
+		}, self)
 	end
 
 	self.gContainer:GetComponent(typeof(UILayout)):Reposition()

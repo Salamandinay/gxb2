@@ -2831,8 +2831,9 @@ function MainWindow:onWindowClose(event)
 
 		if win_name ~= "edit_picture_window" then
 			local showRandom = tonumber(xyd.db.misc:getValue("kbn_show_random")) == 1 and true or false
+			local windowType = xyd.tables.windowTable:getLayerType(win_name)
 
-			if showRandom then
+			if showRandom and windowType == xyd.UILayerType.FULL_SCREEN_UI then
 				self:backToMainWindowUpdatePartner()
 			end
 		end
@@ -2851,7 +2852,7 @@ function MainWindow:onWindowClose(event)
 		end
 	end
 
-	if self.win_list_[1] == "main_window" and windowNum == 1 and win_name ~= "func_open_window" and win_name ~= "guide_window" and not self.isJumping and self.hasEvaluateWindow then
+	if self.win_list_[1] == "main_window" and windowNum == 1 and win_name ~= "func_open_window" and win_name ~= "guide_window" and not self.isJumping and xyd.GuideController.get():isGuideComplete() and self.hasEvaluateWindow then
 		xyd.openWindow("evaluate_window", {
 			evaluationWhereFrom = self.evaluationWhereFrom
 		})

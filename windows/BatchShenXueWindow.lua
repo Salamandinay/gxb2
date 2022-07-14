@@ -385,18 +385,16 @@ function BatchShenXueWindow:onClickBatchShenXue()
 		return
 	end
 
-	self.shenXueFinish = false
-	self.shenXueNum = 0
-
 	if not self.infos[0] or #self.infos[0] == 0 then
 		self:close()
 
 		return
 	end
 
+	local tempPartners = {}
+
 	for _, info in pairs(self.infos[0]) do
 		if info.isSelected == true then
-			self.selectFlag = true
 			local isCanForge = true
 
 			for mTableID in pairs(info.material_detail) do
@@ -408,67 +406,99 @@ function BatchShenXueWindow:onClickBatchShenXue()
 			end
 
 			if isCanForge then
-				self.shenXueNum = self.shenXueNum + 1
-				local msg = messages_pb:compose_partner_req()
-				local materialList = {}
 				local hostPartner = xyd.models.slot:getPartner(info.hostID)
-				local hostTableID = hostPartner:getTableID()
-				local destTableID = xyd.tables.partnerTable:getShenxueTableId(hostTableID)
-				local material = xyd.split(xyd.tables.partnerTable:getMaterial(destTableID), "|", true)
-				local materialPlace = {}
 
-				table.insert(materialPlace, hostTableID)
-
-				for i = 1, #material do
-					table.insert(materialPlace, material[i])
-				end
-
-				local partners = {}
+				table.insert(tempPartners, hostPartner)
 
 				for mTableID, m_detail in pairs(info.material_detail) do
 					for i = 1, #m_detail.partners do
-						table.insert(partners, xyd.models.slot:getPartner(m_detail.partners[i]))
+						table.insert(tempPartners, xyd.models.slot:getPartner(m_detail.partners[i]))
 					end
 				end
-
-				local helpArr = {}
-
-				for i = 1, #materialPlace do
-					local tableID = materialPlace[i]
-
-					if not helpArr[tableID] then
-						helpArr[tableID] = 1
-					end
-
-					table.insert(materialList, info.material_detail[tableID].partners[helpArr[tableID]])
-
-					helpArr[tableID] = helpArr[tableID] + 1
-				end
-
-				msg.table_id = info.destTableID
-
-				for i = 1, #materialList do
-					table.insert(msg.material_ids, materialList[i])
-				end
-
-				xyd.Backend:get():request(xyd.mid.COMPOSE_PARTNER, msg)
-
-				self.sendMsg = true
 			end
 		end
 	end
 
-	if not self.sendMsg then
-		if self.selectFlag then
-			xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+	xyd.checkHasMarriedAndNotice(tempPartners, function ()
+		self.shenXueFinish = false
+		self.shenXueNum = 0
+
+		for _, info in pairs(self.infos[0]) do
+			if info.isSelected == true then
+				self.selectFlag = true
+				local isCanForge = true
+
+				for mTableID in pairs(info.material_detail) do
+					if info.material_detail[mTableID].needNum > #info.material_detail[mTableID].partners then
+						isCanForge = false
+
+						break
+					end
+				end
+
+				if isCanForge then
+					self.shenXueNum = self.shenXueNum + 1
+					local msg = messages_pb:compose_partner_req()
+					local materialList = {}
+					local hostPartner = xyd.models.slot:getPartner(info.hostID)
+					local hostTableID = hostPartner:getTableID()
+					local destTableID = xyd.tables.partnerTable:getShenxueTableId(hostTableID)
+					local material = xyd.split(xyd.tables.partnerTable:getMaterial(destTableID), "|", true)
+					local materialPlace = {}
+
+					table.insert(materialPlace, hostTableID)
+
+					for i = 1, #material do
+						table.insert(materialPlace, material[i])
+					end
+
+					local partners = {}
+
+					for mTableID, m_detail in pairs(info.material_detail) do
+						for i = 1, #m_detail.partners do
+							table.insert(partners, xyd.models.slot:getPartner(m_detail.partners[i]))
+						end
+					end
+
+					local helpArr = {}
+
+					for i = 1, #materialPlace do
+						local tableID = materialPlace[i]
+
+						if not helpArr[tableID] then
+							helpArr[tableID] = 1
+						end
+
+						table.insert(materialList, info.material_detail[tableID].partners[helpArr[tableID]])
+
+						helpArr[tableID] = helpArr[tableID] + 1
+					end
+
+					msg.table_id = info.destTableID
+
+					for i = 1, #materialList do
+						table.insert(msg.material_ids, materialList[i])
+					end
+
+					xyd.Backend:get():request(xyd.mid.COMPOSE_PARTNER, msg)
+
+					self.sendMsg = true
+				end
+			end
 		end
 
-		self:close()
-	else
-		self.shenXueFinish = true
+		if not self.sendMsg then
+			if self.selectFlag then
+				xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+			end
 
-		self.loadingComponent:SetActive(true)
-	end
+			self:close()
+		else
+			self.shenXueFinish = true
+
+			self.loadingComponent:SetActive(true)
+		end
+	end)
 end
 
 function BatchShenXueWindow:onComposePartner(event)

@@ -121,6 +121,12 @@ function SuitSkillDetailWindow:onClickConfirmBtn()
 		self.partner_.skill_index = self.index_
 
 		self.quickItem_:updateSuitStatus()
+
+		local win = xyd.WindowManager.get():getWindow("quick_formation_partner_detail_window")
+
+		if win then
+			win:updateWindowShow()
+		end
 	else
 		xyd.models.slot:changeSuitSkill(self.partner_id, self.index_)
 	end

@@ -109,7 +109,6 @@ end
 
 function HonorHallSeasonItem:updateInfo()
 	self.label.text = __("NEW_ARENA_ALL_SERVER_TEXT_27", self.data)
-	local list = ArenaAllServer:getHistoryRank()
 
 	if self.data == self.parent.maxSeason then
 		self.go:ComponentByName("line", typeof(UISprite)).gameObject:SetActive(false)
@@ -254,14 +253,23 @@ function HonorHalls:onChooseSeasonTouch()
 end
 
 function HonorHalls:initRankList()
+	self.maxSeason = ArenaAllServer:getMaxHistorySeason()
+
+	if not self.chooseSeasonID then
+		self.chooseSeasonID = self.maxSeason
+	end
+
+	self.btnChooseSeason:ComponentByName("labelSeason", typeof(UILabel)).text = __("NEW_ARENA_ALL_SERVER_TEXT_27", self.chooseSeasonID)
 	local list = ArenaAllServer:getHistoryRank()
 
-	if list == nil or #list == 0 or not list[1] or #list[1].area_list == 0 then
-		self.groupNone_:SetActive(true)
-		self.group3_:SetActive(false)
-		self.btnChooseSeason:SetActive(false)
-
-		self.btnChooseSeason:ComponentByName("labelSeason", typeof(UILabel)).text = "????"
+	if list == nil or #list == 0 or not list[1] or not list[1].area_list or not list[1].area_list[self.chooseSeasonID] or not list[1].area_list[self.chooseSeasonID].player_infos or #list[1].area_list[self.chooseSeasonID].player_infos == 0 then
+		if not ArenaAllServer:hasReqHistory(self.chooseSeasonID) then
+			ArenaAllServer:reqGetHistoryRank(self.chooseSeasonID, self.chooseSeasonID)
+		else
+			self.groupNone_:SetActive(true)
+			self.btnChooseSeason:SetActive(true)
+			self.group3_:SetActive(false)
+		end
 
 		return
 	else
@@ -275,22 +283,10 @@ function HonorHalls:initRankList()
 	local top4Infos = {}
 	local top8Infos = {}
 
-	if not self.chooseSeasonID then
-		if #list[1].area_list ~= 0 and list[1].area_list[#list[1].area_list] and list[1].area_list[#list[1].area_list].index then
-			self.chooseSeasonID = list[1].area_list[#list[1].area_list].index
-			self.maxSeason = self.chooseSeasonID
-			self.btnChooseSeason:ComponentByName("labelSeason", typeof(UILabel)).text = __("NEW_ARENA_ALL_SERVER_TEXT_27", self.chooseSeasonID)
-		else
-			self.btnChooseSeason:ComponentByName("labelSeason", typeof(UILabel)).text = "????"
-		end
-	end
-
 	for j = 1, #list do
-		for i = 1, #list[j].area_list do
-			if list[j].area_list[i].index == self.chooseSeasonID then
-				for k = 1, #list[j].area_list[i].player_infos do
-					table.insert(playerInfos, list[j].area_list[i].player_infos[k])
-				end
+		if list[j].area_list and list[j].area_list[self.chooseSeasonID] and list[j].area_list[self.chooseSeasonID].player_infos then
+			for k = 1, #list[j].area_list[self.chooseSeasonID].player_infos do
+				table.insert(playerInfos, list[j].area_list[self.chooseSeasonID].player_infos[k])
 			end
 		end
 	end
@@ -2050,7 +2046,7 @@ function ArenaAllServerWindow:initWindow()
 	self:initLayout()
 	self:registerEvent()
 	ArenaAllServer:reqBattleInfo()
-	ArenaAllServer:reqGetHistoryRank()
+	ArenaAllServer:reqGetHistoryRank(ArenaAllServer:getMaxHistorySeason(), ArenaAllServer:getMaxHistorySeason())
 
 	local needLoadRes = {}
 

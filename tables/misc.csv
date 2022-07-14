@@ -58,7 +58,7 @@ gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,55012#655021#755011|56010#656020#756010,-1
 gacha_ensure_partner_handbook,55012#655021#755011|56010#656020#756010,-1
 daily_mail_awards_gacha,2|53,-1
-daily_mail_awards_tree,3|18|37|43,-1
+daily_mail_awards_tree,3|18|54|55|53,-1
 daily_mail_awards_gamble,,-1
 daily_mail_awards_drift,30|6,-1
 daily_mail_awards_lost_space,4|50|45,-1
@@ -456,7 +456,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,spdegula_pifu03_lihui01|580|-1757|0.55|5101704|7274,-1
+activity_45_hero_model,xierkedi_pifu02_lihui01|489|-1507|0.8|75700103|7280,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -660,9 +660,11 @@ plot_unlock_item_limit,10,-1
 plot_unlock_item_recover,10800#1,-1
 potential_plan_num,11#1|13#2|15#3,-1
 old_building_buff_num,0|20|40,-1
+old_building_buff_num_2,0|0|0|9,-1
 old_building_buff_lock_1,3|3|2|1|1,-1
 old_building_buff_lock_2,3|3|3|3|2,-1
 old_building_buff_lock_3,3|3|3|3|6,-1
+old_building_buff_lock_4,3|3|3|3|7,-1
 fair_arena_explore_chance_once,6,-1
 fair_arena_explore_chance_day,2,-1
 fair_arena_explore_chance_price,2#100|2#200|2#300|2#400|2#400|2#400|2#400|2#400|2#400|2#400|2#400|2#400,-1
@@ -1146,3 +1148,9 @@ activity_4birthday_plot_fr_fr,120|162|162|162|167|339|339,-1
 activity_4birthday_plot_de_de,162|162|103|103|162|339|339,-1
 activity_4birthday_plot_ja_jp,162|162|162|162|162|339|339,-1
 activity_4birthday_plot_ko_kr,162|162|162|162|162|339|339,-1
+activity_chime_cost1,385#1,-1
+activity_chime_cost2,386#1,-1
+activity_chime_get,20,-1
+activity_cupid_gift_award,32019,-1
+activity_cupid_gift_draw,387#1,-1
+activity_cupid_gift_mail_award,2#100,-1

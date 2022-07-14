@@ -398,18 +398,16 @@ function BatchAwakeWindow:onClickBatchShenXue()
 		return
 	end
 
-	self.shenXueFinish = false
-	self.shenXueNum = 0
-
 	if not self.infos[0] or #self.infos[0] == 0 then
 		self:close()
 
 		return
 	end
 
+	local tempPartners = {}
+
 	for _, info in pairs(self.infos[0]) do
 		if info.isSelected == true then
-			self.selectFlag = true
 			local isCanForge = true
 
 			for mTableID in pairs(info.material_detail) do
@@ -421,89 +419,121 @@ function BatchAwakeWindow:onClickBatchShenXue()
 			end
 
 			if isCanForge then
-				self.shenXueNum = self.shenXueNum + 1
 				local hostPartner = xyd.models.slot:getPartner(info.hostID)
-				local hostTableID = hostPartner:getTableID()
-				local materialIdList_ = {}
-				local destPartnerInfo = {
-					star = self.destStar
-				}
+
+				table.insert(tempPartners, hostPartner)
 
 				for mTableID, m_detail in pairs(info.material_detail) do
-					mTableID = tostring(mTableID)
-
 					for i = 1, #m_detail.partners do
-						if not materialIdList_[mTableID] then
-							materialIdList_[mTableID] = {}
-						end
-
-						if hostPartner:getPartnerID() ~= m_detail.partners[i] then
-							table.insert(materialIdList_[mTableID], {
-								partnerID = m_detail.partners[i]
-							})
-						end
+						table.insert(tempPartners, xyd.models.slot:getPartner(m_detail.partners[i]))
 					end
 				end
-
-				if not xyd.models.shenxue:getIsDoingReq() and #self.sendMsgDataList == 0 then
-					local resCost = xyd.models.shenxue:getResCost(hostPartner, self.destStar)
-					local canAwake = true
-					local helpArr = {
-						xyd.ItemID.MANA,
-						xyd.ItemID.PARTNER_EXP,
-						xyd.ItemID.GRADE_STONE
-					}
-
-					for i = 1, 3 do
-						xyd.setUISpriteAsync(self["res" .. i], nil, xyd.tables.itemTable:getIcon(helpArr[i]))
-
-						local costNum = resCost[helpArr[i]]
-						local resNum = xyd.models.backpack:getItemNumByID(helpArr[i])
-
-						if resNum < costNum then
-							canAwake = false
-							self.shenXueNum = 0
-							self.shenXueFinish = true
-							self.sendMsgDataList = {}
-							self.sendMsg = false
-
-							xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(helpArr[i])))
-
-							return
-						end
-					end
-
-					if canAwake then
-						xyd.models.shenxue:reqAwakeOfShenXue(hostPartner, materialIdList_, destPartnerInfo)
-					else
-						xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
-
-						return
-					end
-				else
-					table.insert(self.sendMsgDataList, {
-						hostPartner = hostPartner,
-						materialIdList_ = materialIdList_,
-						destPartnerInfo = destPartnerInfo
-					})
-				end
-
-				self.sendMsg = true
 			end
 		end
 	end
 
-	if not self.sendMsg then
-		if self.selectFlag then
-			xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+	xyd.checkHasMarriedAndNotice(tempPartners, function ()
+		self.shenXueFinish = false
+		self.shenXueNum = 0
+
+		for _, info in pairs(self.infos[0]) do
+			if info.isSelected == true then
+				self.selectFlag = true
+				local isCanForge = true
+
+				for mTableID in pairs(info.material_detail) do
+					if info.material_detail[mTableID].needNum > #info.material_detail[mTableID].partners then
+						isCanForge = false
+
+						break
+					end
+				end
+
+				if isCanForge then
+					self.shenXueNum = self.shenXueNum + 1
+					local hostPartner = xyd.models.slot:getPartner(info.hostID)
+					local hostTableID = hostPartner:getTableID()
+					local materialIdList_ = {}
+					local destPartnerInfo = {
+						star = self.destStar
+					}
+
+					for mTableID, m_detail in pairs(info.material_detail) do
+						mTableID = tostring(mTableID)
+
+						for i = 1, #m_detail.partners do
+							if not materialIdList_[mTableID] then
+								materialIdList_[mTableID] = {}
+							end
+
+							if hostPartner:getPartnerID() ~= m_detail.partners[i] then
+								table.insert(materialIdList_[mTableID], {
+									partnerID = m_detail.partners[i]
+								})
+							end
+						end
+					end
+
+					if not xyd.models.shenxue:getIsDoingReq() and #self.sendMsgDataList == 0 then
+						local resCost = xyd.models.shenxue:getResCost(hostPartner, self.destStar)
+						local canAwake = true
+						local helpArr = {
+							xyd.ItemID.MANA,
+							xyd.ItemID.PARTNER_EXP,
+							xyd.ItemID.GRADE_STONE
+						}
+
+						for i = 1, 3 do
+							xyd.setUISpriteAsync(self["res" .. i], nil, xyd.tables.itemTable:getIcon(helpArr[i]))
+
+							local costNum = resCost[helpArr[i]]
+							local resNum = xyd.models.backpack:getItemNumByID(helpArr[i])
+
+							if resNum < costNum then
+								canAwake = false
+								self.shenXueNum = 0
+								self.shenXueFinish = true
+								self.sendMsgDataList = {}
+								self.sendMsg = false
+
+								xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(helpArr[i])))
+
+								return
+							end
+						end
+
+						if canAwake then
+							xyd.models.shenxue:reqAwakeOfShenXue(hostPartner, materialIdList_, destPartnerInfo)
+						else
+							xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+
+							return
+						end
+					else
+						table.insert(self.sendMsgDataList, {
+							hostPartner = hostPartner,
+							materialIdList_ = materialIdList_,
+							destPartnerInfo = destPartnerInfo
+						})
+					end
+
+					self.sendMsg = true
+				end
+			end
 		end
 
-		self:close()
-	else
-		self.shenXueFinish = true
+		if not self.sendMsg then
+			if self.selectFlag then
+				xyd.alert(xyd.AlertType.TIPS, __("SHENXUE_CAN_NOT_FORGE"))
+			end
 
-		self.loadingComponent:SetActive(true)
-	end
+			self:close()
+		else
+			self.shenXueFinish = true
+
+			self.loadingComponent:SetActive(true)
+		end
+	end)
 end
 
 function BatchAwakeWindow:onAwakePartner(event)

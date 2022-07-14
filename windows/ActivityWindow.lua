@@ -1724,6 +1724,12 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_4BIRTHDAY_MISSION] = function ()
 		return require("app.windows.activity.Activity4BirthdayMission")
+	end,
+	[xyd.ActivityID.ACTIVITY_CHIME] = function ()
+		return require("app.windows.activity.ActivityChime")
+	end,
+	[xyd.ActivityID.ACTIVITY_CUPID_GIFT] = function ()
+		return require("app.windows.activity.ActivityCupidGift")
 	end
 }
 

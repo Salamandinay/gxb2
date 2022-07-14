@@ -972,4 +972,29 @@ function ShrineHurdleModel:getReportPetById(id)
 	return pet
 end
 
+function ShrineHurdleModel:checkIsCanOpen()
+	if not xyd.models.shrineHurdleModel:checkFuctionOpen() then
+		local functionOpenTime = xyd.tables.miscTable:getVal("shrine_time_start")
+
+		if xyd.getServerTime() < tonumber(functionOpenTime) then
+			xyd.alertTips(__("DRESS_GACHA_OPEN_TIME", xyd.getRoughDisplayTime(tonumber(functionOpenTime) - xyd.getServerTime())))
+
+			return false
+		end
+
+		local towerStage = xyd.models.towerMap.stage
+		local needTowerStage = tonumber(xyd.tables.miscTable:getVal("shrine_open_limit", "value"))
+
+		if towerStage < needTowerStage + 1 then
+			xyd.alertTips(__("OLD_SCHOOL_OPEN_FLOOR", needTowerStage))
+		else
+			xyd.alertTips(__("OLD_SCHOOL_OPEN_STAR"))
+		end
+
+		return false
+	end
+
+	return true
+end
+
 return ShrineHurdleModel

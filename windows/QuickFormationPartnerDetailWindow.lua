@@ -35,6 +35,29 @@ function QuickFormationPartnerDetailWindow:checkLongTouch()
 	return true
 end
 
+function QuickFormationPartnerDetailWindow:onClickSuitIcon()
+	local skillIndex = self.partner_.skill_index
+	local skill_list = self:getSuitSkill()
+
+	if skillIndex and skillIndex > 0 then
+		xyd.WindowManager.get():openWindow("suit_skill_detail_window", {
+			enough = true,
+			partner_id = self.partner_:getPartnerID(),
+			skill_list = skill_list,
+			skillIndex = skillIndex,
+			quickItem = self.quickItem_,
+			partner = self.partner_
+		})
+	elseif self.hasSuit_ then
+		xyd.WindowManager.get():openWindow("suit_skill_detail_window", {
+			enough = true,
+			partner_id = self.partner_:getPartnerID(),
+			skill_list = skill_list,
+			quickItem = self.quickItem_
+		})
+	end
+end
+
 function QuickFormationPartnerDetailWindow:onclickTreasure(itemID)
 	local cost = xyd.tables.equipTable:getTreasureUpCost(itemID)
 	local btnLayout = cost and 4 or 1

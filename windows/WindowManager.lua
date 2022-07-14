@@ -102,6 +102,7 @@ function WindowManager:initClick()
 		local hasClickEvent = UIEventListener.Get(gameObject).onClick ~= nil
 		local mousePos = xyd.mouseWorldPos()
 
+		reportLog2("x:" .. mousePos.x * 1000 .. " y:" .. (mousePos.y - 1000) * 1000)
 		self:playClickAction(mousePos, hasClickEvent)
 
 		if self:getWindow("main_window") then

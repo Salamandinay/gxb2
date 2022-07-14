@@ -4,45 +4,45 @@ local PartnerCardItem = class("PartnerCardItem", import("app.common.ui.FixedMult
 local ChampItem = class("ChampItem", import("app.common.ui.FixedMultiWrapContentItem"))
 local cjson = require("cjson")
 local showPosition = {
-	[756006] = {
-		scale = 0.85,
-		x = 36,
-		y = -589
-	},
-	[756008] = {
-		scale = 0.85,
+	[751017] = {
+		scale = 0.8,
 		x = 0,
-		y = -750
+		y = -687
 	},
-	[755006] = {
-		scale = 0.85,
-		x = 60,
-		y = -650
+	[751018] = {
+		scale = 0.9,
+		x = 66,
+		y = -577
+	},
+	[752017] = {
+		scale = 0.8,
+		x = 39,
+		y = -792
+	},
+	[753016] = {
+		scale = 0.78,
+		x = 44,
+		y = -868
 	},
 	[755007] = {
 		scale = 0.85,
 		x = 0,
 		y = -720
 	},
-	[755008] = {
+	[751014] = {
 		scale = 0.8,
-		x = 50,
-		y = -740
-	},
-	[751013] = {
-		scale = 0.85,
-		x = -40,
-		y = -790
-	},
-	[752016] = {
-		scale = 0.85,
-		x = 50,
+		x = 37,
 		y = -750
 	},
-	[752014] = {
-		scale = 0.85,
-		x = 20,
-		y = -600
+	[756009] = {
+		scale = 0.8,
+		x = 23,
+		y = -769
+	},
+	[757001] = {
+		scale = 0.8,
+		x = 81,
+		y = -747
 	}
 }
 
