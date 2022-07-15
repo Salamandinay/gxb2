@@ -464,12 +464,12 @@ function ArenaAllServerNew:reqGetHistoryRank(head, tail)
 	local msg = messages_pb.arena_all_server_get_history_rank_new_req()
 
 	if head then
-		msg.head = head
+		msg.head = head - 1
 		self.tempHead = head
 	end
 
 	if tail then
-		msg.tail = tail
+		msg.tail = tail - 1
 		self.tempTail = tail
 	end
 

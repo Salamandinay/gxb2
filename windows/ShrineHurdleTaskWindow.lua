@@ -232,7 +232,7 @@ function ShrineHurdleNoticeWindow:register()
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, function (event)
 		if type(event) == "number" then
 			-- Nothing
-		elseif event.activity_id ~= xyd.ActivityID.ACTIVITY_CHIME then
+		elseif event.data.activity_id == xyd.ActivityID.ACTIVITY_CHIME then
 			local data = event.data
 			local info = require("cjson").decode(data.detail)
 			local type = info.type

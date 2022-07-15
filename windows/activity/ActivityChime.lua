@@ -74,8 +74,12 @@ function ActivityChime:getUIComponent()
 	self.timeOtherImg1 = self.upCon:ComponentByName("timeOtherImg1", typeof(UISprite))
 	self.timeOtherImg2 = self.upCon:ComponentByName("timeOtherImg2", typeof(UISprite))
 
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.ACTIVITY_CHIME_TASK, self.taskBtnRedPoint)
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.ACTIVITY_CHIME_DEFENSE, self.defenseBtnRedPoint)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.ACTIVITY_CHIME_TASK
+	}, self.taskBtnRedPoint)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.ACTIVITY_CHIME_DEFENSE
+	}, self.defenseBtnRedPoint)
 end
 
 function ActivityChime:initUIComponent()
