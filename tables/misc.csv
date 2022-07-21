@@ -60,7 +60,7 @@ gacha_ensure_partner_handbook,55012#655021#755011|56010#656020#756010,-1
 daily_mail_awards_gacha,2|53,-1
 daily_mail_awards_tree,3|18|54|55|53,-1
 daily_mail_awards_gamble,,-1
-daily_mail_awards_drift,30|6,-1
+daily_mail_awards_drift,30|6|39|43|54|55,-1
 daily_mail_awards_lost_space,4|50|45,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
@@ -490,7 +490,7 @@ activity_privileged_card_trial_rewards,1*2000|15*2000,-1
 activity_privileged_card_dungeon_rewards,1*1000|2*1000|10*1000|26*1000|27*1000,-1
 activity_privileged_card_dungeon_drugs,2,-1
 activity_birthday_colour_progress_bit,0.1,-1
-merge_server_now_next,506|522|1699999999,-1
+merge_server_now_next,506|522|1658732400,-1
 activity_privileged_card_ui_type,0#0|1#0,-1
 arena_revenge_cd,300,-1
 activity_swimsuit_cost,154#1,-1
@@ -557,7 +557,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,puluomixiusi_pifu01_lihui01|380|-1491|0.9|5501202|7278,-1
+activity_147_hero_model,heermosi_pifu03_lihui01|586|-1850|0.7|5201804|7281,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -740,7 +740,7 @@ activity_time_giftbag_cost,2#2500@235#9|940014#50|9#3000000,-1
 partner_signature_length_limit,3,-1
 activity_fair_arena_battle_time,6|1,-1
 monthly_card_offer_giftbag,282|283,-1
-battlepass_106_hero_model,maya_pifu04_lihui01|-150|-685|0.6,-1
+battlepass_106_hero_model,kawenbodi_pifu05_lihui01|-125|-850|-0.5,-1
 battlepass_124_hero_model,spzhugeliang_pifu01_lihui01|-120|-600|0.5,-1
 questionnaire_other_limit,200|12,-1
 space_explore_dropbox,40004,-1
@@ -859,7 +859,7 @@ activity_tea_point,1,-1
 space_explore_auto_level,31,-1
 custom_skin_summer_houyi_or_feisina,2#300,-1
 entrance_test_help_show,756010|755011,-1
-activity_lafuli_get,375#0,-1
+activity_lafuli_get,283#1,-1
 house_senpai_sit,-20|-30,-1
 house_senpai_lie,15|-40,-1
 time_cloister_energy_time,360,-1
@@ -936,17 +936,17 @@ expedition_state_battle,3600,-1
 expedition_win_enemyBuff,125600201|125600202|125600203|125600204,-1
 expedition_hpLoseSeal,125600001,-1
 expedition_boss_partner,2000011,-1
-activity_growth_plan_cost,2#4,-1
+activity_growth_plan_cost,2#2,-1
 activity_growth_plan_score,5,-1
 activity_jackpot_gift,347,-1
 activity_jackpot_transfer,58#1|305#1,-1
 activity_jackpot_unlock,40,-1
 activity_jackpot_normal,58#5,-1
 activity_jackpot_updated,305#5,-1
-activity_growth_plan_partner,51016|52017|53016|54016,-1
+activity_growth_plan_partner,51017|52017|53016|54017,-1
 activity_jackpot_draw,57#5,-1
-activity_growth_plan_picture,-7#-196#0.65#0.65|-54#-260#0.6#0.6|-71#-295#0.6#0.6|-68#-300#0.65#0.65,-1
-activity_growth_plan_cut,985#383#700#600|1088#100#750#700|1145#100#265#0|1145#222#282#0,-1
+activity_growth_plan_picture,-44#-231#0.65#0.65|-54#-260#0.6#0.6|-71#-295#0.6#0.6|-47#-352#0.65#0.65,-1
+activity_growth_plan_cut,1035#330#757#600|1088#100#750#700|1145#100#265#0|1225#0#760#0,-1
 time_cloister_card_cd7,21600,-1
 time_cloister_card_cd10,21600,-1
 activity_luckyboxes_pointmax,100,-1
@@ -1154,3 +1154,7 @@ activity_chime_get,20,-1
 activity_cupid_gift_award,32019,-1
 activity_cupid_gift_draw,387#1,-1
 activity_cupid_gift_mail_award,2#100,-1
+activity_warmup_arena_scores,6666666666|777777777|8888888888,-1
+activity_warmup_arena_boss_model,757001|752019|751018,-1
+old_building_floor11_point,1000,-1
+activity_sand_gift,456,-1

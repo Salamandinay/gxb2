@@ -430,19 +430,13 @@ function QuickFormationPartnerDetailWindow:onClickUnEquipAll()
 		return
 	end
 
-	local now_equips = {
-		0,
-		0,
-		0,
-		0,
-		equips[5],
-		0,
-		equips[7]
-	}
+	for i = 1, 6 do
+		if i ~= 5 and equips[i] > 0 then
+			self.quickItem_:unEquipSingle(equips[i])
+		end
+	end
 
 	xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_OFF)
-	self.partner_:setEquip(now_equips)
-	self.quickItem_:updateEquips()
 	self:updateWindowShow()
 end
 
@@ -483,14 +477,12 @@ function QuickFormationPartnerDetailWindow:onclickBtnEquipAll()
 		end
 
 		if old_i_lv < max_lv then
-			now_equips[index] = bestItemID
+			self.quickItem_:equipSingle(bestItemID)
+
 			flag_changed = true
 		elseif max_lv == old_i_lv and self.partner_:getJob() == xyd.tables.equipTable:getJob(bestItemID) and self.partner_:getJob() ~= xyd.tables.equipTable:getJob(equips[index]) then
 			xyd.models.slot:deleteEquip(now_equips[index], self.partner_:getPartnerID())
-
-			now_equips[index] = bestItemID
-
-			xyd.models.slot:addEquip(bestItemID, self.partner_:getPartnerID())
+			self.quickItem_:equipSingle(bestItemID)
 
 			flag_changed = true
 		else
@@ -500,8 +492,6 @@ function QuickFormationPartnerDetailWindow:onclickBtnEquipAll()
 
 	if flag_changed then
 		xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_ON)
-		self.partner_:setEquip(now_equips)
-		self.quickItem_:updateEquips()
 		self:updateWindowShow()
 	end
 end

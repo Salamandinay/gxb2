@@ -23,20 +23,14 @@ end
 function SchoolOpensGiftbag:resizeToParent()
 	SchoolOpensGiftbag.super.resizeToParent(self)
 	self:resizePosY(self.exchangeBtn, -785, -962)
-
-	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
-		self:resizePosY(self.item1, -357, -360)
-	else
-		self:resizePosY(self.item1, -309, -360)
-	end
-
-	self:resizePosY(self.item2, -466, -550)
-	self:resizePosY(self.item3, -671, -768)
+	self:resizePosY(self.item1, -556, -726)
+	self:resizePosY(self.item2, -684, -855)
+	self:resizePosY(self.item3, -567, -738)
+	self:resizePosY(self.effect, -795, -826)
 end
 
 function SchoolOpensGiftbag:getUIComponent()
 	local go = self.go
-	self.imgBottom = go:NodeByName("imgBottom").gameObject
 	self.textImg = go:ComponentByName("textImg", typeof(UISprite))
 	self.helpBtn = go:ComponentByName("helpBtn", typeof(UISprite))
 	self.exchangeBtn = go:ComponentByName("exchangeBtn", typeof(UISprite))
@@ -52,15 +46,18 @@ function SchoolOpensGiftbag:getUIComponent()
 end
 
 function SchoolOpensGiftbag:initUIComponent()
-	xyd.setUISpriteAsync(self.textImg, nil, "school_opens_giftbag2_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.textImg, nil, "activity_opens_giftbag3_logo_" .. xyd.Global.lang, nil, , true)
 
 	self.exchangeBtnLabel.text = __("SCHOOL_GIFTBAG_EXCHANGE_TEXT01")
+
+	if xyd.Global.lang == "ja_jp" then
+		self.exchangeBtnLabel.fontSize = 22
+	end
+
 	local effect = xyd.Spine.new(self.effect)
 
-	effect:setInfo("simazhao_lihui01", function ()
-		effect:SetLocalPosition(-255, -350, 0)
-		effect:SetLocalScale(1, 1, 1)
-		effect:play("texiao01", 0)
+	effect:setInfo("zuoci_pifu05_lihui01", function ()
+		effect:play("animation", 0)
 	end)
 
 	local ids = xyd.tables.activitySchoolGiftTable:getIDs()
@@ -83,7 +80,7 @@ function SchoolOpensGiftbag:initUIComponent()
 	end
 
 	if xyd.Global.lang == "de_de" then
-		self.textImg:Y(41)
+		self.textImg:Y(60)
 	end
 end
 
@@ -108,9 +105,9 @@ function SchoolOpensGiftbag:initItems()
 		self:updateInfo(params.id)
 
 		if params.status == 1 and params.counts ~= 0 then
-			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag2_icon" .. tostring(params.id) .. "_" .. 1, nil, , true)
+			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
 		else
-			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag2_icon" .. tostring(params.id) .. "_" .. 0, nil, , true)
+			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
 		end
 
 		UIEventListener.Get(imgBg.gameObject).onClick = function ()
@@ -177,9 +174,9 @@ function SchoolOpensGiftbag:updateInfo(id)
 	end
 
 	if params.status == 1 and params.counts ~= 0 then
-		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag2_icon" .. tostring(params.id) .. "_" .. 1, nil, , true)
+		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
 	else
-		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag2_icon" .. tostring(params.id) .. "_" .. 0, nil, , true)
+		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
 	end
 end
 

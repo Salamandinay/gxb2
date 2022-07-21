@@ -2,34 +2,6 @@ local BaseWindow = import(".BaseWindow")
 local DropProbabilityWindow = class("AwardSelectWindow", BaseWindow)
 local DropItem = class("DropItem", import("app.common.ui.FixedMultiWrapContentItem"))
 local FixedMultiWrapContent = import("app.common.ui.FixedMultiWrapContent")
-local jobGiftBoxID = {
-	[4601006.0] = 1,
-	[4601005.0] = 1,
-	[384.0] = 1,
-	[149.0] = 1,
-	[4601008.0] = 1,
-	[4601009.0] = 1,
-	[285.0] = 1,
-	[368.0] = 1,
-	[4601010.0] = 1,
-	[4601013.0] = 1,
-	[4601007.0] = 1,
-	[243.0] = 1,
-	[4601014.0] = 1,
-	[242.0] = 1,
-	[4601015.0] = 1,
-	[4601016.0] = 1,
-	[4601023.0] = 1,
-	[366.0] = 1,
-	[367.0] = 1,
-	[4601037.0] = 1,
-	[150.0] = 1,
-	[151.0] = 1,
-	[152.0] = 1,
-	[244.0] = 1,
-	[153.0] = 1,
-	[4601033.0] = 1
-}
 
 function DropProbabilityWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -76,7 +48,7 @@ function DropProbabilityWindow:initNoShowProbility()
 end
 
 function DropProbabilityWindow:layoutOptionalTreasureChest()
-	if jobGiftBoxID[self.params_.itemId] then
+	if xyd.tables.itemTable:checkJobBoxID(self.params_.itemId) then
 		self.labelTitle.text = __("CHEST_ALl_AWARD")
 	else
 		self.labelTitle.text = __("OPTIONAL_AWARD")
@@ -113,7 +85,7 @@ function DropProbabilityWindow:initItemGroupOptionalTreasureChest()
 
 	local itemsList = xyd.tables.giftBoxOptionalTable:getItems(self.params_.itemId)
 
-	if jobGiftBoxID[self.params_.itemId] then
+	if xyd.tables.itemTable:checkJobBoxID(self.params_.itemId) then
 		local giftID = xyd.tables.itemTable:getGiftID(self.params_.itemId)
 		local awards = xyd.tables.giftTable:getAwards(giftID)
 
@@ -257,10 +229,16 @@ function DropItem:updateInfo()
 	end
 
 	if not self.showType then
-		if jobGiftBoxID[self.itemID] then
+		if xyd.tables.itemTable:checkJobBoxID(self.itemID) then
 			if not self.parent.jobGiftBoxItemList then
 				self.parent.jobGiftBoxItemList = {}
+
+				print("self.itemID  ", self.itemID)
+
 				local giftID = xyd.tables.itemTable:getGiftID(self.itemID)
+
+				print("giftID   ", giftID)
+
 				local awards = xyd.tables.giftTable:getAwards(giftID)
 
 				for i = 1, #awards do

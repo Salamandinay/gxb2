@@ -118,12 +118,6 @@ function ShowItem:update(index, realIndex, info)
 	else
 		self.icon:setInfo(params)
 	end
-
-	if self.itemId == 381 or self.itemId == 382 then
-		local qlt = xyd.tables.itemTable:getQuality(self.itemId)
-
-		self.icon:setQuality(qlt)
-	end
 end
 
 return Activity4birthdayMusicAwardViewWindow

@@ -11043,7 +11043,7 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 674701,Snow Chime,Antique Skill,The owner receives 90% more Energy when she is attacked.
 674801,Snow Chime,Antique Skill,The owner receives 100% more Energy when she is attacked.
 6748101,Snow Chime,Antique Skill,"
-When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (if the owner is positioned in the Frontline, then the boosts the owner receive will be doubled).
+When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (The boosts that Frontline Girls receive will be doubled).
 When the ally with the lowest HP takes damage based on Attack from any source for the first time in a round, the owner of this Antique will take the damage for the aforementioned ally. This effect activates once per round.
 After the owner of this Antique releases their Active Skill, heals the owner and the ally with lowest HP for (10% of the target\'s Maximum HP) HP respectively.
 
@@ -11051,17 +11051,17 @@ After the owner of this Antique releases their Active Skill, heals the owner and
 A Skill Effect, cannot be stacked. 
 Increases Heal Received by 10%, Damage Depletion by 10%, and Energy when attacked by 10%."
 6748201,Snow Chime,Antique Skill,"
-When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (if the owner is positioned in the Frontline, then the boosts the owner receive will be doubled).
+When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (The boosts that Frontline Girls receive will be doubled).
 When the ally with the lowest HP takes damage based on Attack from any source for the first time in a round, the owner of this Antique will take the damage for the aforementioned ally. This effect activates once per round.
-After the owner of this Antique releases their Active Skill, heals the owner and the ally with lowest HP for (15% of the target\'s Maximum HP) HP respectively.
+After the owner of this Antique releases their Active Skill, heals the owner and the ally with lowest HP for (10% of the target\'s Maximum HP) HP respectively.
 
 [c][e28002]Blessings of Snow: [-][/c]
 A Skill Effect, cannot be stacked. 
-Increases Heal Received by 15%, Damage Depletion by 15%, and Energy when attacked by 10%."
+Increases Heal Received by 15%, Damage Depletion by 15%, and Energy when attacked by 15%."
 6748301,Snow Chime,Antique Skill,"
-When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (if the owner is positioned in the Frontline, then the boosts the owner receive will be doubled).
+When the battle starts, casts [c][e28002]Blessings of Snow[-][/c] to the owner and Frontline allies (The boosts that Frontline Girls receive will be doubled).
 When the ally with the lowest HP takes damage based on Attack from any source for the first time in a round, the owner of this Antique will take the damage for the aforementioned ally. This effect activates once per round.
-After the owner of this Antique releases their Active Skill, heals the owner and the ally with lowest HP for (20% of the target\'s Maximum HP) HP respectively.
+After the owner of this Antique releases their Active Skill, heals the owner and the ally with lowest HP for (10% of the target\'s Maximum HP) HP respectively.
 
 [c][e28002]Blessings of Snow: [-][/c]
 A Skill Effect, cannot be stacked. 
@@ -14448,7 +14448,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 65502101,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14461,7 +14461,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 75501101,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14474,7 +14474,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 5501202,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 20%, Attack by 20%, Block by 10%, Heal Received by 10%, and Crit Resist by 10%."
 65502102,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 30%, Attack by 25%, Block by 20%, Heal Received by 15%, and Crit Resist by 20%."
 65502112,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 30%, Heal Received by 20%, and Crit Resist by 30%."
@@ -14488,7 +14488,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 20% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14510,7 +14510,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 30% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14532,7 +14532,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14554,7 +14554,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14573,7 +14573,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (20% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (100% of target’s Attack) damage every round (damage dealt will not surpass 500% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14582,7 +14582,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 10%, and reflect 10% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14593,7 +14593,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (40% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (300% of target’s Attack) damage every round (damage dealt will not surpass 1500% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14602,7 +14602,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 15%, and reflect 15% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14613,7 +14613,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14622,7 +14622,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14633,7 +14633,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14642,7 +14642,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14659,7 +14659,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011012,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14672,7 +14672,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011013,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14685,7 +14685,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011014,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14698,7 +14698,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011015,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
@@ -14711,7 +14711,7 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011021,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 31%, Heal Received by 20%, and Crit Resist by 30%."
 755011022,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 32%, Heal Received by 20%, and Crit Resist by 30%."
 755011023,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 33%, Heal Received by 20%, and Crit Resist by 30%."
@@ -14726,7 +14726,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 68% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14748,7 +14748,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 76% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14770,7 +14770,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 84% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14792,7 +14792,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 92% c
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14814,7 +14814,7 @@ She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has 100% ch
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -14833,7 +14833,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (640% of target’s Attack) damage every round (damage dealt will not surpass 3200% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14842,7 +14842,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14853,7 +14853,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (680% of target’s Attack) damage every round (damage dealt will not surpass 3400% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14862,7 +14862,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14873,7 +14873,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (720% of target’s Attack) damage every round (damage dealt will not surpass 3600% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14882,7 +14882,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14893,7 +14893,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (760% of target’s Attack) damage every round (damage dealt will not surpass 3800% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14902,7 +14902,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
@@ -14913,7 +14913,7 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (800% of target’s Attack) damage every round (damage dealt will not surpass 4000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and the Damage Depletion provided by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
 When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 30% more damage.
 
 [c][01a310]Burn[-][/c]:
@@ -14922,7 +14922,7 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Increases Damage Depletion by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.

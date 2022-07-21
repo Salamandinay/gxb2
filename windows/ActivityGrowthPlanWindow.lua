@@ -127,7 +127,76 @@ function ActivityGrowthPlanWindow:register()
 
 	UIEventListener.Get(self.awardBtn_).onClick = function ()
 		if self.activityData:getSelectedPartnerID() then
-			xyd.openWindow("activity_growth_plan_award_window")
+			local ids = activityGrowthPlanTable:getIDs()
+			local awards1 = {}
+			local awards2 = {}
+
+			for i = 1, #ids do
+				local extraAwards = activityGrowthPlanTable:getPaidAward(i, self.activityData:getCurPartnerIndex())
+
+				for j = 1, #extraAwards do
+					local itemID = extraAwards[j][1]
+					local num = extraAwards[j][2]
+
+					if not awards1[itemID] then
+						awards1[itemID] = 0
+					end
+
+					awards1[itemID] = awards1[itemID] + num
+				end
+
+				local baseAwards = activityGrowthPlanTable:getFreeAward(i, self.activityData:getCurPartnerIndex())
+
+				for j = 1, #baseAwards do
+					local itemID = baseAwards[j][1]
+					local num = baseAwards[j][2]
+
+					if not awards2[itemID] then
+						awards2[itemID] = 0
+					end
+
+					awards2[itemID] = awards2[itemID] + num
+				end
+			end
+
+			local index = 1
+			local awards_1 = {}
+
+			for id, num in pairs(awards1) do
+				awards_1[index] = {
+					id,
+					num
+				}
+				index = index + 1
+			end
+
+			local index = 1
+			local awards_2 = {}
+
+			for id, num in pairs(awards2) do
+				awards_2[index] = {
+					id,
+					num
+				}
+				index = index + 1
+			end
+
+			table.sort(awards_1, function (a, b)
+				return a[1] < b[1]
+			end)
+			table.sort(awards_2, function (a, b)
+				return a[1] < b[1]
+			end)
+
+			local params = {
+				groupTitleText1 = __("ACTIVITY_GROWTH_PLAN_TEXT10"),
+				awardData1 = awards_1,
+				groupTitleText2 = __("ACTIVITY_GROWTH_PLAN_TEXT09"),
+				awardData2 = awards_2,
+				winTitleText = __("ACTIVITY_MISSION_POINT_TEXT09")
+			}
+
+			xyd.openWindow("common_activity_award_preview1_window", params)
 		else
 			xyd.alertTips(__("ACTIVITY_GROWTH_PLAN_TEXT17"))
 		end
@@ -642,6 +711,10 @@ function ActivityGrowthPlanItem:updateInfo()
 		self.baseIcons[i]:setEffectState(false)
 		self.baseIcons[i]:setInfo(params)
 
+		if type == xyd.ItemType.HERO_DEBRIS or type == xyd.ItemType.HERO_RANDOM_DEBRIS then
+			self.baseIcons[i]:showDebris(true)
+		end
+
 		if params.effect then
 			self.baseIcons[i]:setPartExampleVisible("gEffect", true)
 		end
@@ -752,6 +825,10 @@ function ActivityGrowthPlanItem:updateInfo()
 		self.extraIcons[i]:setEffectState(false)
 		self.extraIcons[i]:setBackEffect(false)
 		self.extraIcons[i]:setInfo(params)
+
+		if type == xyd.ItemType.HERO_DEBRIS or type == xyd.ItemType.HERO_RANDOM_DEBRIS then
+			self.extraIcons[i]:showDebris(true)
+		end
 
 		if effect == "bp_item" then
 			self.extraIcons[i]:setBackEffect(true, effect, "texiao01", {

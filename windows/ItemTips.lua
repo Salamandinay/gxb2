@@ -26,29 +26,6 @@ local BtnType = {
 	BOT_MID = 3,
 	BOT_LEFT = 2
 }
-local jobGiftBoxID = {
-	[4601006.0] = 1,
-	[4601005.0] = 1,
-	[384.0] = 1,
-	[149.0] = 1,
-	[4601008.0] = 1,
-	[4601009.0] = 1,
-	[285.0] = 1,
-	[368.0] = 1,
-	[4601010.0] = 1,
-	[4601037.0] = 1,
-	[4601007.0] = 1,
-	[243.0] = 1,
-	[242.0] = 1,
-	[366.0] = 1,
-	[367.0] = 1,
-	[150.0] = 1,
-	[151.0] = 1,
-	[152.0] = 1,
-	[244.0] = 1,
-	[153.0] = 1,
-	[4601033.0] = 1
-}
 local ItemTips = class("ItemTips", import("app.components.BaseComponent"))
 
 function ItemTips:ctor(parentGO, params, windowDepth)
@@ -137,7 +114,7 @@ function ItemTips:registerEvent()
 		self.btnBox_:SetLocalPosition(205, -105, 0)
 	end
 
-	if self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or jobGiftBoxID[self.itemID] then
+	if self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or xyd.tables.itemTable:checkJobBoxID(self.itemID) then
 		xyd.setDarkenBtnBehavior(self.btnBox_, self, self.onBoxBtnOptionalTreasureChest)
 	else
 		xyd.setDarkenBtnBehavior(self.btnBox_, self, self.onBoxBtnNormal)
@@ -639,7 +616,7 @@ function ItemTips:initNormalBtn()
 
 	local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
 
-	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or jobGiftBoxID[self.itemID] then
+	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or xyd.tables.itemTable:checkJobBoxID(self.itemID) then
 		self.btnBox_:SetActive(true)
 	else
 		self.btnBox_:SetActive(false)
@@ -720,7 +697,7 @@ function ItemTips:initActivityBtn()
 	elseif self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or self.type_ == xyd.ItemType.HERO_RANDOM_DEBRIS or self.type_ == xyd.ItemType.ARTIFACT_DEBRIS or self.type_ == xyd.ItemType.DRESS_DEBRIS or self.type_ == xyd.ItemType.BOX then
 		local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
 
-		if box_id and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or jobGiftBoxID[self.itemID] then
+		if box_id and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or xyd.tables.itemTable:checkJobBoxID(self.itemID) then
 			self.btnBox_:SetActive(true)
 		else
 			self.btnBox_:SetActive(false)
@@ -747,7 +724,7 @@ function ItemTips:initBackpackBtn()
 
 	local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
 
-	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or jobGiftBoxID[self.itemID] then
+	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or xyd.tables.itemTable:checkJobBoxID(self.itemID) then
 		self.btnBox_:SetActive(true)
 	else
 		self.btnBox_:SetActive(false)

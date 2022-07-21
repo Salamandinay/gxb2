@@ -10,6 +10,7 @@ function BattleBuffListWindow:ctor(name, params)
 
 	self.fighter = params.fighter
 	self.showIcons = params.showIcons
+	self.callback = params.callback
 end
 
 function BattleBuffListWindow:initWindow()
@@ -18,6 +19,14 @@ function BattleBuffListWindow:initWindow()
 	self:layout()
 	self:initItems()
 	self:register()
+end
+
+function BattleBuffListWindow:willClose()
+	BattleBuffListWindow.super.willClose(self)
+
+	if self.callback ~= nil then
+		self:callback()
+	end
 end
 
 function BattleBuffListWindow:getUIComponent()

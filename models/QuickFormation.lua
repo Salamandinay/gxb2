@@ -339,6 +339,19 @@ function QuickFormation:updateRedStatus()
 
 							break
 						end
+					elseif key == 7 then
+						local partnerInfo = xyd.models.slot:getPartner(partnerInfo:getPartnerID())
+						local skin_id = partnerInfo:getSkinID()
+
+						if skin_id ~= itemID and itemID > 0 then
+							self.redStatus_[i] = 1
+
+							if not self.redStatusPos_[i] then
+								self.redStatusPos_[i] = {}
+							end
+
+							self.redStatusPos_[i][pos] = 1
+						end
 					end
 				end
 			end

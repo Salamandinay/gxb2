@@ -1605,7 +1605,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musik
 NORMAL_SLOT_MACHINE,Normaler Glücksautomat
 HIGH_SLOT_MACHINE,Super Glücksautomat
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenkpaket enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die bereits entsperrten Geschenke erhalten.|2. Nicht entsperrte Geschenkpakete speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf das Geschenkpaket tippst, kannst du die Geschenke im Inneren prüfen. |4. Das 3. Geschenkpaket wird entsperrt, nachdem das zweite Glückspaket gekauft wurde."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenkpaket enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die bereits entsperrten Geschenke erhalten.|2. Nicht entsperrte Geschenkpakete speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf das Geschenkpaket tippst, kannst du die Geschenke im Inneren prüfen. |4. Das 3. Geschenkpaket wird entsperrt, nachdem das zweite Glückspaket gekauft wurde.|5. Nach dem Ende des Events werden die noch nicht verwendeten Gutscheine zum Strand automatisch per Mail recycelt. Jeder entspricht 20K Münzen."
 CHAPTER_COUNT,Kapitel {1}
 CHAPTER_TITLE,{1}-{2}   {3}
 LOCK_STORY_LIST,Dieses Kapitel ist noch nicht entsperrt
@@ -5005,7 +5005,7 @@ ACTIVITY_TEA_TEXT2,Preiswertes Bonuspaket mit reichhaltigen Belohnungen und eine
 ACTIVITY_TEA_TEXT3,Schließe zuerst das vorherige Kapitel ab
 ACTIVITY_TEA_TEXT4,Teehaus-Fortschritt
 ACTIVITY_TEA_TEXT5,"Schließe die entsprechenden Kapitel ab, um Belohnungen zu bekommen."
-ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events ""Luvlys Inselreise"" und ""Mädchen-Spezialmissionen"", den Kauf der Superpakete, Kostümpakete und Glückspakete erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Du benötigst 5 Angelruten, um 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Menge der gefangenen Fische werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
+ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events Luvlys Inselreise, Mädchen-Spezialmissionen und Geschenke am Strand, den Kauf der Superpakete, Kostümpakete, Glückspakete, Reiseversorgung und Paket-Staffellauf erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Du benötigst 5 Angelruten, um 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Menge der gefangenen Fische werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
 ACTIVITY_FISH_BUTTON01,Galerie
 ACTIVITY_FISH_BUTTON02,Belohnung
 ACTIVITY_FISH_SKIP,Skip
@@ -5455,7 +5455,7 @@ TIME_CLOISTER_HELP05,"1. Forderst du in diesem Korridor eine Stufe heraus oder l
 TIME_CLOISTER_TEXT65,Gruppenzweige · Unterstützung
 TIME_CLOISTER_TEXT66,"Verwende die ""Alptraumpunkte"", um die Unterstützungsmädchen und deren Extraskills aufzuleveln."
 TIME_CLOISTER_TEXT67,Zeigen
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Verwende die Glücksmünzen, um Belohnungen der Glückslotterie zu ziehen. Im Belohnungspool gibt es normale Belohnungen und ultimative Belohnungen. Die ultimativen Belohnungen müssen manuell eingestellt werden.|2. Jedes Mal, wenn du einmal gezogen hast, wird der Glückswert um 2 erhöht. Sobald du die ultimative Belohnung gezogen hast, wird der Glückswert auf 0 zurückgesetzt. Erreicht der Glückswert 100, erhältst du beim nächsten Ziehen sicher die ultimative Belohnung.|2. Jeder Runde gibt es 3 ultimative Belohnungen. Werden die 3 ultimative Belohnungen einer Runde fertig gezogen, werden sie zu neuen ultimativen Belohnungen nächster Runde geändert. (Hast du die ultimativen Belohnungen aller 6 Runden gezogen, werden die ultimativen Belohnungen zu denen der 1 Runde geändert und alles Weitere folgt.)|4. Erhalten der Glücksmünzen: Tägliche Mail, Pakete zu Glückslotterie, Abschließen der folgenden Aufgaben:|--- Verwende 3 Arenatickets (1 Glücksmünze als Belohnung, Limit: 10 Mal)|--- Gib 200 Dias aus (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Schließe eine 3/4/5/6/7-Sterne Jobaufgabe (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 200 Kristallmeißel (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 1 Stempel (1 Glücksmünze als Belohnung, Limit: 80 Mal)|--- Erhalte während des Events 250 VIP-EXP (2 Glücksmünzen als Belohnung, Limit: 100 Mal)|5. Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsforschritt bis zum nächsten Event aufbewahrt."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Verwende die Glücksmünzen, um Belohnungen der Glückslotterie zu ziehen. Im Belohnungspool gibt es normale Belohnungen und ultimative Belohnungen. Die ultimativen Belohnungen müssen manuell eingestellt werden.|2. Jedes Mal, wenn du einmal gezogen hast, wird der Glückswert um 2 erhöht. Sobald du die ultimative Belohnung gezogen hast, wird der Glückswert auf 0 zurückgesetzt. Erreicht der Glückswert 100, erhältst du beim nächsten Ziehen sicher die ultimative Belohnung.|2. Jeder Runde gibt es 3 ultimative Belohnungen. Werden die 3 ultimative Belohnungen einer Runde fertig gezogen, werden sie zu neuen ultimativen Belohnungen nächster Runde geändert. (Hast du die ultimativen Belohnungen aller 6 Runden gezogen, werden die ultimativen Belohnungen zu denen der 1 Runde geändert und alles Weitere folgt.)|4. Erhalten der Glücksmünzen: Tägliche Mail, Pakete zu Glückslotterie, Abschließen der folgenden Aufgaben:|--- Verwende 3 Arenatickets (1 Glücksmünze als Belohnung, Limit: 10 Mal)|--- Gib 200 Dias aus (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Schließe eine 3/4/5/6/7-Sterne Jobaufgabe (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 200 Kristallmeißel (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 1 Steuer (1 Glücksmünze als Belohnung, Limit: 80 Mal)|--- Erhalte während des Events 250 VIP-EXP (2 Glücksmünzen als Belohnung, Limit: 100 Mal)|5. Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsforschritt bis zum nächsten Event aufbewahrt."
 ACTIVITY_LUCKYBOXES_TEXT15,"Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsfortschritt bis zum nächsten Event aufbewahrt."
 TIME_CLOISTER_TEXT68,"Bitte zeige 1 {1}, um die Kartenaufgabe abzuschließen"
 TIME_CLOISTER_TEXT69,Bitte wähle ein passendes Outfit-Teil
@@ -6805,7 +6805,7 @@ ANNUAL4_REVIEW_7_2,Mit freundlichen Grüßen
 ANNUAL4_REVIEW_4_6_1,"Außerdem gibt es noch [c][size=25][ff7fd6]{1}[-][/c] Mädchen, die darauf warten, dass du ihr Herz eroberst..."
 ANNUAL4_REVIEW_4_7_1,Hast du schon gehört?\n[c][size=30][ff7fd6]{1}[-][/c] Mädchen erwarten sehnsüchtig einen Ring von dir...
 ACTIVITY_4BIRTHDAY_TITLE,Jubiläums-\nTanzparty
-OLD_SCHOOL_FLOOR_11_TIPS,"Schließ die ersten 10 Etagen ab, um diese Etage zu entsperren"
+OLD_SCHOOL_FLOOR_11_TIPS,"Schließe alle Stufen der ersten 10 Etagen ab und erhalte in dieser Saison {1} Punkte, um diese Etage zu entsperren."
 OLD_SCHOOL_FLOOR_11_TEXT01,Höchstschaden: {1}
 OLD_SCHOOL_FLOOR_11_TEXT02,Akt. Schaden: {1}
 OLD_SCHOOL_FLOOR_11_TEXT03,Rang
@@ -6830,14 +6830,14 @@ ACTIVITY_CHIME_TEXT05,Belohnungen der goldenen Jaden
 ACTIVITY_CHIME_TEXT06,Belohnungen der grünen Jaden
 ACTIVITY_CHIME_TEXT07,Tägliche Belohnungen während des Events:
 ACTIVITY_CHIME_TEXT08,Sofort erhältlich nach dem Kauf:
-SETING_GROUP_BUFF_RANK,"Wird ein Meteore-Mädchen aufgestellt, werden die Auren nach folgender Reihenfolge aktiviert."
+SETING_GROUP_BUFF_RANK,"Wird ein [c][5b51e8]Meteore-Mädchen[-][/c] aufgestellt, werden die Auren nach folgender Reihenfolge aktiviert."
 ACTIVITY_CUPID_GIFT_HELP,"1. Cupid segnet dich. Zeit zum Beten!|2. Nach dem Kauf der Pakete ""Segen von Cupid"" erhälst du sofort reichhaltige Dias, Stempel und Ressourcenauswahlboxen. Während des Events (24 Wochen lang) erhältst du wöchentlich eine bestimmte Anzahl an Chancen fürs Beten. Bei jedem Beten erhältst du zufällig 100 bis 1500 Dias.|3. In der ersten Woche erhältst du nach dem Kauf des Pakets sofort die Chancen fürs Beten. In den folgenden 23 Wochen werden die Chancen um 2 Uhr (GMT plus 2) am jeden Freitag erneuert. Die nicht verwendeten Chancen der letzten Woche werden per Mail recycelt und jede Chance entspricht 100 Dias.|4. Es gibt insgesamt 3 Pakete. Erst wenn das vorherige Paket gekauft ist, wird das nächste Paket entsperrt.|5. Hast du mehrere Pakete (""Segen von Cupid"") gekauft, werden die wöchentlichen Chancen jeweiliges Pakets addiert.|6. Die Pakete werden nur während der 1. Woche des Events verkauft. Hast du inzwischen keine Pakete gekauft, wird das Event nach dem Ende der 1. Woche geschlossen."
 ACTIVITY_CUPID_GIFT_TEXT1,1 Mal beten
 ACTIVITY_CUPID_GIFT_TEXT2,{1} Mal beten
 ACTIVITY_CUPID_GIFT_TEXT3,Inaktiviert
 ACTIVITY_CUPID_GIFT_TEXT4,In folgenden 23 Wochen
 ACTIVITY_CUPID_GIFT_TEXT5,Sofort erhältlich
-ACTIVITY_CUPID_GIFT_TEXT6,Wöchentlich:\n{1} Beten-Chancen
+ACTIVITY_CUPID_GIFT_TEXT6,Nach dem Kauf: Wöchentliche Beten-Chancen + {1}
 ACTIVITY_CUPID_GIFT_TEXT7,Beten-Chancen: {1}/{2}
 ACTIVITY_CUPID_GIFT_TEXT8,Erneuert um 2 Uhr am jeden Freitag
 ACTIVITY_CUPID_GIFT_TEXT9,Verbleibend:\n{1} Woche(n)
@@ -6848,3 +6848,60 @@ ACTIVITY_CHIME_TEXT10,{1} verwenden
 ACTIVITY_CHIME_TEXT11,Gib die Menge ein
 ACTIVITY_CUPID_GIFT_TEXT12,5 Mal beten
 ACTIVITY_CHIME_TEXT13,Beten
+ACTIVITY_ENTRANCE_TEST_TEXT01,Wetten
+ACTIVITY_NEW_WARMUP_HELP1,測驗競猜幫助文本1
+ACTIVITY_NEW_WARMUP_TEXT1,Wetten
+ACTIVITY_NEW_WARMUP_TEXT2,Das Wetten hat noch nicht begonnen.
+ACTIVITY_NEW_WARMUP_TEXT4,Test der Stärke
+ACTIVITY_NEW_WARMUP_TEXT5,Test der Ausdauer
+ACTIVITY_NEW_WARMUP_TEXT6,Test der Weisheit
+ACTIVITY_NEW_WARMUP_TEXT7,"Schließe den {1} ab, um das Mädchen zu entsperren."
+ACTIVITY_NEW_WARMUP_TEXT9,Wette auf Test
+ACTIVITY_NEW_WARMUP_TEXT10,Wette gewonnen:
+ACTIVITY_NEW_WARMUP_TEXT11,3-fache
+ACTIVITY_NEW_WARMUP_TEXT12,Rückgabe
+ACTIVITY_NEW_WARMUP_TEXT13,Gewonnen
+ACTIVITY_NEW_WARMUP_TEXT14,Fehlgeschlagen
+ACTIVITY_NEW_WARMUP_TEXT15,Noch nicht gewettet
+ACTIVITY_NEW_WARMUP_TEXT16,Schaden
+ACTIVITY_NEW_WARMUP_TEXT17,Abschlussbelohnung
+ACTIVITY_NEW_WARMUP_TEXT18,*Das Mädchen ist nur in der Aufnahmeprüfung verfügbar
+ACTIVITY_NEW_WARMUP_TEXT19,Restliche Chance(n)
+ACTIVITY_NEW_WARMUP_TEXT20,Simulation
+ACTIVITY_NEW_WARMUP_TEXT21,Realkampf
+ACTIVITY_NEW_WARMUP_TEXT22,Super Kapselmünze nicht ausreichend!
+ACTIVITY_NEW_WARMUP_TEXT23,Münzen nicht ausreichend!
+ACTIVITY_NEW_WARMUP_TEXT24,Gewettet
+OLD_SCHOOL_FLOOR_11_TEXT16,Stufenschaden:
+OLD_SCHOOL_FLOOR_11_TEXT17,Höchstschaden der Etage erhöht
+ACTIVITY_SAND_HELP01,使用鏟子挖開沙堡，收集貝殼獲得積分
+ACTIVITY_SAND_HELP02,積分達到指定目標可獲得獎勵\n獲得本輪所有獎勵後，進入下一輪
+ACTIVITY_SAND_HELP03,沙堡中可能會出現奇怪的東西哦，學長自行探索吧~
+ACTIVITY_SAND_TEXT01,自動
+ACTIVITY_SAND_TEXT02,請選擇使用鏟子的數量
+ACTIVITY_SAND_TEXT03,第5輪後可開啟自動尋寶
+ACTIVITY_SAND_TEXT04,自動尋寶將隨機挖開沙堡，是否繼續？
+ACTIVITY_SAND_TEXT05,獎勵預覽
+ACTIVITY_SAND_TEXT06,Round
+ACTIVITY_SAND_TEXT07,獎勵
+ACTIVITY_SAND_TEXT08,獲取盛夏新裝~
+ACTIVITY_SAND_MISSION_TAB01,每日任務
+ACTIVITY_SAND_MISSION_TAB02,活動任務
+ACTIVITY_SAND_GIFTBAG_HELP,購買盛夏邀請函後，完成所有每日任務獲得的鏟子數量翻倍！活動期間任意時間購買，均會補發已完成任務可額外獲得的鏟子。
+ACTIVITY_SAND_GIFTBAG_TEXT01,盛夏邀請函
+ACTIVITY_SAND_GIFTBAG_TEXT02,未激活
+ACTIVITY_SAND_GIFTBAG_TEXT03,已激活
+ACTIVITY_SAND_GIFTBAG_TEXT04,立即獲得
+ACTIVITY_SAND_GIFTBAG_TEXT05,盛夏之約每日任務獲得「鏟子」數量翻倍！
+ACTIVITY_SAND_SHOP_TAB01,盛夏新裝
+ACTIVITY_SAND_SHOP_TAB02,往期返場
+ACTIVITY_SAND_SHOP_TAB03,道具兌換
+ACTIVITY_SAND_SHOP_TEXT01,完成{1}輪沙灘尋寶後解鎖
+ACTIVITY_LOST_SPACE_TEXT11,自主探索
+ACTIVITY_LOST_SPACE_TEXT12,探測儀為5以下時無法自主探索
+ACTIVITY_LOST_SPACE_TEXT13,自主探索結果
+ACTIVITY_LOST_SPACE_TEXT14,消耗探測儀
+ACTIVITY_LOST_SPACE_TEXT15,獲得獎勵
+ACTIVITY_LOST_SPACE_TEXT16,已找到跳躍點，無法自主探索
+ACTIVITY_LOST_SPACE_TEXT17,是否確認自主探索？
+ACTIVITY_NEW_WARMUP_TEXT25,競猜己結束

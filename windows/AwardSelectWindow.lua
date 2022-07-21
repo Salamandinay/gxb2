@@ -3,13 +3,6 @@ local AwardSelectWindow = class("AwardSelectWindow", BaseWindow)
 local AwardSelectItem = class("AwardSelectItem", import("app.common.ui.FixedMultiWrapContentItem"))
 local FixedMultiWrapContent = import("app.common.ui.FixedMultiWrapContent")
 local SelectNum = import("app.components.SelectNum")
-local jobGiftBoxID = {
-	[152.0] = 1,
-	[153.0] = 1,
-	[149.0] = 1,
-	[150.0] = 1,
-	[151.0] = 1
-}
 
 function AwardSelectWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -323,7 +316,7 @@ function AwardSelectItem:onSelectItem()
 		self.parent.selectedItemId = nil
 		self.parent.selectedItemIcon = nil
 
-		if jobGiftBoxID[self.data.itemID] then
+		if xyd.tables.itemTable:checkJobBoxID(self.data.itemID) then
 			self.parent.jobGiftBoxDes:SetActive(false)
 			self.parent.jobGiftBoxArrow:SetActive(false)
 		end
@@ -338,7 +331,7 @@ function AwardSelectItem:onSelectItem()
 
 		self.parent.selectedItemIcon = self.itemIcon
 
-		if jobGiftBoxID[self.data.itemID] then
+		if xyd.tables.itemTable:checkJobBoxID(self.data.itemID) then
 			if not self.parent.jobGiftBoxItemList then
 				self.parent.jobGiftBoxItemList = {}
 
@@ -357,8 +350,11 @@ function AwardSelectItem:onSelectItem()
 
 			local itemGroupX = self.parent.itemGroup.transform.localPosition.x
 			local offsetX = self.go.transform.localPosition.x
+			local offsetY = self.go.transform.localPosition.y
 
 			self.parent.jobGiftBoxArrow:X(itemGroupX + offsetX)
+			self.parent.jobGiftBoxDes:Y(-140 + offsetY)
+			self.parent.jobGiftBoxArrow:Y(-77 + offsetY)
 
 			local x = itemGroupX + offsetX + 165 < 90 and itemGroupX + offsetX + 165 or 90
 

@@ -27,7 +27,7 @@ end
 
 function SchoolGiftbagExchangeWindow:initUIComponent()
 	self.titleLabel.text = __("SCHOOL_GIFTBAG_EXCHANGE_TEXT01")
-	self.numLabel.text = Backpack:getItemNumByID(xyd.ItemID.SUMMER_COIN)
+	self.numLabel.text = Backpack:getItemNumByID(xyd.ItemID.BEACH_COIN)
 end
 
 function SchoolGiftbagExchangeWindow:register()
@@ -50,7 +50,7 @@ function SchoolGiftbagExchangeWindow:register()
 		end
 	end)
 	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, function ()
-		self.numLabel.text = tostring(Backpack:getItemNumByID(xyd.ItemID.SUMMER_COIN))
+		self.numLabel.text = tostring(Backpack:getItemNumByID(xyd.ItemID.BEACH_COIN))
 	end)
 end
 

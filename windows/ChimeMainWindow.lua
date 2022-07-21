@@ -71,6 +71,12 @@ function ChimeMainWindow:getUIComponent()
 end
 
 function ChimeMainWindow:playOpenAnimation(callback)
+	local soundID = xyd.tables.windowTable:openSound(self.name_)
+
+	if soundID and soundID ~= "" then
+		xyd.SoundManager.get():playSound(soundID)
+	end
+
 	self.btnHelp:SetActive(false)
 	self.expandBtnGroup:SetActive(false)
 

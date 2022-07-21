@@ -90,7 +90,15 @@ function ActivityPopularityVoteData:getRedMarkState()
 		return false
 	end
 
-	if self.detail_.partner_id then
+	dump("111111111111")
+
+	if not self.curPeriod then
+		self:getCurPeriod()
+	end
+
+	dump(self.curPeriod)
+
+	if self.curPeriod >= 10 then
 		xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_POPULARITY_VOTE_AWARD, false)
 
 		return false

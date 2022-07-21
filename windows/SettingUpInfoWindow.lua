@@ -1,6 +1,8 @@
 local SettingUpInfoWindow = class("SettingUpInfoWindow", import(".BaseWindow"))
 local SettingUpInfoItem = class("SettingUpInfoItem", import("app.components.BaseComponent"))
 local SettingUpGroupBuffItem = class("SettingUpGroupBuffItem", import("app.components.BaseComponent"))
+local SettingUpGroupBuffSortItem = class("SettingUpGroupBuffSortItem", import("app.components.BaseComponent"))
+local SettingUpGroupBuffSortIconItem = class("SettingUpGroupBuffSortIconItem", import("app.components.CopyComponent"))
 local GroupBuffIcon = import("app.components.GroupBuffIcon")
 
 function SettingUpInfoWindow:ctor(name, params)
@@ -254,7 +256,13 @@ function SettingUpInfoItem:initGroupBuffLayer()
 		table.insert(self.buffItems, item)
 	end
 
-	self.dialogImg_.height = totalHeight + 10
+	self.sortItem = SettingUpGroupBuffSortItem.new(self.dialogGrid_.gameObject)
+
+	self.sortItem:setInfos()
+	self.sortItem:SetLocalPosition(0, -totalHeight - 30, 0)
+
+	totalHeight = totalHeight + self.sortItem:getHeight()
+	self.dialogImg_.height = totalHeight - 40
 	self.all = self.long_ * 92 + totalHeight + 40 - 622
 end
 
@@ -450,6 +458,7 @@ function SettingUpInfoItem:onClick()
 		action:AppendCallback(function ()
 			self.table_:Reposition()
 			XYDCo.WaitForFrame(1, function ()
+				self.table_:Reposition()
 				self.scrollView_:SetDragAmount(0, math.min(1, (self.index_ - 1) * 92 / self.all), false)
 			end, nil)
 		end)
@@ -605,6 +614,112 @@ function SettingUpGroupBuffItem:reposition()
 
 		self.bottomGroup:GetComponent(typeof(UILayout)):Reposition()
 	end)
+end
+
+function SettingUpGroupBuffSortItem:ctor(parentGo)
+	SettingUpGroupBuffSortItem.super.ctor(self, parentGo)
+
+	local go = self.go
+	self.nameLabel_ = go:ComponentByName("groupTitle_/nameLabel_", typeof(UILabel))
+	self.bottomGroup = go:NodeByName("bottomGroup").gameObject
+	self.buffGroup = self.bottomGroup:NodeByName("buffGroup").gameObject
+	self.buffGroupGrid = self.buffGroup:GetComponent(typeof(UIGrid))
+	self.item = self.bottomGroup:NodeByName("item").gameObject
+	self.additionHight = 0
+	self.items = {}
+end
+
+function SettingUpGroupBuffSortItem:getPrefabPath()
+	return "Prefabs/Components/setting_up_group_buff_sort_item"
+end
+
+function SettingUpGroupBuffSortItem:setInfos()
+	self:layout()
+end
+
+function SettingUpGroupBuffSortItem:layout()
+	self.nameLabel_.text = __("SETING_GROUP_BUFF_RANK")
+
+	self.buffGroup:Y(-16 - (self.nameLabel_.height - self.nameLabel_.fontSize))
+
+	local buffIds = xyd.tables.groupBuffTable:getIds()
+	local datas = {}
+
+	for i = 1, #buffIds do
+		local rank = xyd.tables.groupBuffTable:getRank(i)
+
+		if rank and rank > 0 then
+			table.insert(datas, {
+				id = i,
+				rank = rank
+			})
+		end
+	end
+
+	dump(datas)
+	table.sort(datas, function (a, b)
+		if a.rank ~= b.rank then
+			return a.rank < b.rank
+		else
+			return a.id < b.id
+		end
+	end)
+
+	for i = 1, #datas do
+		if not self.items[i] then
+			local tmp = NGUITools.AddChild(self.buffGroupGrid.gameObject, self.item.gameObject)
+			local item = SettingUpGroupBuffSortIconItem.new(tmp, self)
+			self.items[i] = item
+		end
+
+		datas[i].index = i
+
+		self.items[i]:setInfo(datas[i])
+	end
+
+	self.buffGroupGrid:Reposition()
+end
+
+function SettingUpGroupBuffSortItem:reposition()
+	self:waitForFrame(1, function ()
+		self.buffGroupGrid:Reposition()
+	end)
+end
+
+function SettingUpGroupBuffSortItem:getHeight()
+	return self.go:GetComponent(typeof(UIWidget)).height + 74 * math.ceil(#self.items / 2) - 74 + self.nameLabel_.height - self.nameLabel_.fontSize
+end
+
+function SettingUpGroupBuffSortIconItem:ctor(go, parent)
+	SettingUpGroupBuffSortIconItem.super.ctor(self, go, parent)
+
+	self.parent = parent
+
+	self:initUI()
+end
+
+function SettingUpGroupBuffSortIconItem:initUI()
+	self.icon = self.go:ComponentByName("icon", typeof(UISprite))
+	self.labelName = self.go:ComponentByName("labelName", typeof(UILabel))
+	self.labelIndex = self.go:ComponentByName("labelIndex", typeof(UILabel))
+end
+
+function SettingUpGroupBuffSortIconItem:setInfo(data)
+	self.data = data
+	self.id = self.data.id
+	self.rank = self.data.rank
+	self.labelIndex.text = self.data.index
+	self.labelName.text = xyd.tables.groupBuffTextTable:getName(self.id)
+
+	if not self.buffIcon then
+		self.buffIcon = GroupBuffIcon.new(self.icon.gameObject)
+	end
+
+	self.buffIcon:setInfo(self.id, true)
+end
+
+function SettingUpGroupBuffSortIconItem:getGameObject()
+	return self.go
 end
 
 return SettingUpInfoWindow

@@ -785,8 +785,8 @@ function BatchAwakeWindow:onClickMaterialBtn()
 			end
 		end,
 		closeCallback = function ()
-			xyd.openWindow("batch_shen_xue_window", {
-				hostStar = self.hostStar
+			xyd.openWindow("batch_awake_window", {
+				destStar = self.destStar
 			})
 		end
 	}
