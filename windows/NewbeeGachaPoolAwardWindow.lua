@@ -37,6 +37,11 @@ end
 
 function NewbeeGachaPoolAwardWindow:initUIComponent()
 	self.titleLabel.text = __("ACTIVITY_NEWBEE_GACHA_TEXT02")
+
+	self:updateSetInfo()
+end
+
+function NewbeeGachaPoolAwardWindow:updateSetInfo(isKeepPosition)
 	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.NEWBEE_GACHA_POOL)
 	local ids = NewbeeGachaTable:getIds()
 	local collection = {}
@@ -56,7 +61,13 @@ function NewbeeGachaPoolAwardWindow:initUIComponent()
 			return a.id < b.id
 		end
 	end)
-	self.wrapContent:setInfos(collection, {})
+	self.wrapContent:setInfos(collection, {
+		keepPosition = isKeepPosition
+	})
+
+	if not isKeepPosition then
+		self.scrollView:ResetPosition()
+	end
 end
 
 function NewbeeGachaPoolAwardWindow:register()
@@ -65,17 +76,15 @@ function NewbeeGachaPoolAwardWindow:register()
 end
 
 function NewbeeGachaPoolAwardWindow:onAward(event)
+	if event.data.activity_id ~= xyd.ActivityID.NEWBEE_GACHA_POOL then
+		return
+	end
+
 	xyd.models.itemFloatModel:pushNewItems(json.decode(event.data.detail).items)
 
 	local items = self.wrapContent:getItems()
 
-	if self.awardItem then
-		self.awardItem:update(nil, {
-			isCompleted = 1,
-			id = self.awardID,
-			point = NewbeeGachaTable:getLimit(self.awardID)
-		})
-	end
+	self:updateSetInfo(true)
 end
 
 function GachaAwardItem:ctor(go, parent)
@@ -127,6 +136,7 @@ function GachaAwardItem:updateInfo()
 	end
 
 	self.itemGroup:GetComponent(typeof(UILayout)):Reposition()
+	self.awardImg_:SetActive(false)
 
 	if self.point < self.limit then
 		self.awardBtn_:SetActive(true)
@@ -146,9 +156,6 @@ function GachaAwardItem:reqAward()
 		xyd.models.activity:reqAwardWithParams(xyd.ActivityID.NEWBEE_GACHA_POOL, json.encode({
 			table_id = self.id
 		}))
-
-		self.parent.awardItem = self
-		self.parent.awardID = self.id
 	end
 end
 

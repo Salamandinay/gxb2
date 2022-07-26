@@ -759,7 +759,11 @@ function GambleRewardsWindow:playAnimation(callback)
 			local item = data.item
 			local obj = data.obj
 
-			obj:SetActive(false)
+			if obj then
+				if not tolua.isnull(obj) then
+					obj:SetActive(false)
+				end
+			end
 
 			local isCool = itemData.cool == 1
 
