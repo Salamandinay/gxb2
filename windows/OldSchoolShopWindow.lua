@@ -261,7 +261,7 @@ function OldSchoolShopGroupItem:setInfo(params)
 	if params.group == 1 then
 		local pointArr = xyd.tables.oldBuildingShop1Table:getPointsArr()
 		local point = pointArr[self.index] % 10000
-		isLock = xyd.models.oldSchool:getAllInfo().score < point
+		isLock = tonumber(xyd.models.oldSchool:getAllInfo().score) < point
 
 		if isLock then
 			self.textLabel_.text = __("OLD_SCHOOL_SHOP_TEXT3", point)
@@ -269,8 +269,8 @@ function OldSchoolShopGroupItem:setInfo(params)
 			self.textLabel_.text = xyd.split(__("OLD_SCHOOL_SHOP_TEXT5"), "|")[self.index]
 		end
 	else
-		local hisScores = xyd.models.oldSchool:getAllInfo().history_scores
-		local curScores = xyd.models.oldSchool:getAllInfo().score
+		local hisScores = tonumber(xyd.models.oldSchool:getAllInfo().history_scores)
+		local curScores = tonumber(xyd.models.oldSchool:getAllInfo().score)
 		local hasNum = 0
 
 		if hisScores then
@@ -472,10 +472,10 @@ function OldSchoolShopItem:updateShaddow()
 	local hideBg = nil
 
 	if self.group == 1 then
-		hideBg = xyd.models.oldSchool:getAllInfo().score < self.needPoint_
+		hideBg = tonumber(xyd.models.oldSchool:getAllInfo().score) < self.needPoint_
 	else
-		local hisScores = xyd.models.oldSchool:getAllInfo().history_scores
-		local curScores = xyd.models.oldSchool:getAllInfo().score
+		local hisScores = tonumber(xyd.models.oldSchool:getAllInfo().history_scores)
+		local curScores = tonumber(xyd.models.oldSchool:getAllInfo().score)
 		local hasNum = 0
 
 		if hisScores then

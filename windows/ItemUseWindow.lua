@@ -15,6 +15,7 @@ function ItemUseWindow:ctor(name, params)
 	self.showGetWay = params.showGetWay or false
 	self.isShowWays = false
 	self.curNum_ = math.min(self.itemNum, 1000)
+	self.itemCallback = params.useCallback
 	self.useMaxNum = 1000
 	self.usedTotalNum = 0
 	self.curUsedNum = 0
@@ -150,7 +151,12 @@ function ItemUseWindow:useTouch()
 	end
 
 	if self.curNum_ > 0 and self.curNum_ <= self.itemNum then
-		xyd.models.backpack:useItem(tonumber(self.itemID), self.curNum_)
+		if self.itemCallback then
+			self.itemCallback(self.curNum_)
+			self:close()
+		else
+			xyd.models.backpack:useItem(tonumber(self.itemID), self.curNum_)
+		end
 	end
 end
 

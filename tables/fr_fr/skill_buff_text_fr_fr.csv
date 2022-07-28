@@ -115,3 +115,5 @@ id,buff_id,plus_minus,name,sec
 118,plmxsThorns,,Pentacle Protecteur,Effet de Compétence : réduit les dégâts subis de la cible marquée et renvoie des dégâts subis de la cible marquée à l'attaquant (n'inclut pas les dégâts fixes).
 119,plmxsDebuff,,Flamme des Enfers,"Effet de Compétence : réduit les Soins Reçus, la récupération d'Énergie et le Blocage de la cible marquée."
 120,freeHarmLeft1,,Chaîne Maudite,"Marque, non cumulable : lorsque la cible marquée reçoit un Coup Mortel et déclenche un effet qui l'empêche d'être vaincue par ces dégâts mortels, il ne reste que 1 PV sur lui."
+121,lianhuaHittedHeal,,Pureté,"Effet de Compétence : lorsqu'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l'Attaque de cette cible marquée sera augmentée et elle récupèrera des PV."
+122,lianhuaBloodHurt,,Lotus Sanglant,"Effet de Compétence : lorsqu'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires."

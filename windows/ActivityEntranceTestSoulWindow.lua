@@ -24,55 +24,12 @@ end
 function ActivityEntranceTestSoulWindow:sortEquips()
 	self.equips = {}
 	self.itemHas = {}
-	local artifactList = xyd.tables.collectionTable:getIdsListByType(xyd.CollectionTableType.SOUL)
-
-	for i, id in pairs(artifactList) do
-		local item_id = xyd.tables.collectionTable:getItemId(id)
-		local rank = xyd.tables.collectionTable:getRank(id)
-		local hasGot = xyd.models.collection:isGot(xyd.tables.itemTable:getCollectionId(item_id))
-
-		if hasGot then
-			local itemLev = xyd.tables.activityEntranceTestRankTable:getArtifactLev(self.rank)
-			local lev1 = xyd.tables.equipTable:getItemLev(item_id)
-
-			if lev1 == 36 then
-				local pinkItemID = xyd.tables.equipTable:getSoulByIdAndLev(item_id, 39)
-				local hasGotPink = xyd.models.collection:isGot(xyd.tables.itemTable:getCollectionId(pinkItemID))
-
-				if hasGotPink and xyd.tables.equipTable:getItemLev(pinkItemID) == 39 then
-					lev1 = 39
-					rank = xyd.tables.collectionTable:getRank(pinkItemID)
-				end
-			end
-
-			itemLev = math.min(itemLev, lev1)
-			local itemID = xyd.tables.equipTable:getSoulByIdAndLev(item_id, itemLev)
-			local lev = xyd.tables.equipTable:getItemLev(itemID)
-
-			if lev >= 31 then
-				local item = {
-					itemID = itemID,
-					rank = rank
-				}
-
-				if tonumber(self.equipedPartner.equipments[6]) == tonumber(itemID) then
-					item.partner_id = self.equipedPartner.partnerID
-				end
-
-				if not self.itemHas[itemID] then
-					table.insert(self.equips, item)
-
-					self.itemHas[itemID] = true
-				end
-			end
-		end
-	end
 
 	for key, id in pairs(xyd.tables.activityWarmupArenaEquipTable:getIdsByType(xyd.WarmupItemType.SOUL)) do
 		local item = nil
 		local itemId = xyd.tables.activityWarmupArenaEquipTable:getEquipId(id)
 		local itemLev = xyd.tables.activityEntranceTestRankTable:getArtifactLev(self.rank)
-		local itemID = xyd.tables.equipTable:getSoulByIdAndLev(itemId, itemLev)
+		local itemID = itemId
 		local rank = xyd.tables.activityWarmupArenaEquipTable:getRank(id)
 		item = {
 			itemID = itemID,

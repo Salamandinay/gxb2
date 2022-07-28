@@ -115,3 +115,5 @@ id,buff_id,plus_minus,name,sec
 118,plmxsThorns,,Feuerstern,eduziert den erlittenen Schaden und fügt dem Angreifer basierend auf erlittenem Schaden einen Schaden Rückschlag zu (fixierter Schaden nicht eingeschlossen).
 119,plmxsDebuff,,Kaltes Feuer,"Reduziert die erhaltene Heilung, die beim Verletzen erhaltene Energie und die Blockade."
 120,freeHarmLeft1,,Feuerkette,"Zeichen. Kann nicht gestapelt werden. Hat der Träger einen tödlichen Schaden erlitten und dann den Effekt der Todesimmunität aktiviert hat, erhält er schließlich nur 1 HP."
+121,lianhuaHittedHeal,,Lotusblatt,"Wird der Träger von blutenden Gegnern angegriffen, werden seine HP und Angriff um einen bestimmten Wert erhöht."
+122,lianhuaBloodHurt,,Heiliger Lotus,"Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden basierend auf seinen max. HP zugefügt."

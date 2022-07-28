@@ -71,8 +71,10 @@ function ShrineHurdleModel:onRegister()
 	self:registerEvent(xyd.event.PARTNER_ADD, function (event)
 		if self.isAchievment_Open == false then
 			local partnerInfo = xyd.models.slot:getPartner(event.data.partnerID)
+			local tableID = partnerInfo:getTableID()
+			local puppet_list = xyd.tables.miscTable:split2num("return_10star_puppet_id", "value", "|")
 
-			if partnerInfo:getStar() >= 10 then
+			if partnerInfo:getStar() >= 10 and xyd.arrayIndexOf(puppet_list, tableID) < 0 then
 				self:reqShineHurdleInfo()
 
 				self.isAchievment_Open = true

@@ -60,6 +60,120 @@ function OldSchool:onRegister()
 			end
 		end
 	end)
+	self:registerEvent(xyd.event.OLD_BUILDING_HARM_LIST, handler(self, self.onGetHarmList))
+	self:registerEvent(xyd.event.OLD_BUILDING_RANK_LIST, handler(self, self.onGetRankList))
+end
+
+function OldSchool:onGetRankList(event)
+	self.rankData_ = xyd.decodeProtoBuf(event.data)
+
+	self:updateRankList()
+end
+
+function OldSchool:reqRankList(battle)
+	if not self.reqRankTime_ or xyd.getServerTime() - self.reqRankTime_ > 30 or battle then
+		self.rankData_ = nil
+		self.harmData_ = nil
+		self.extraRank_ = nil
+		local msg = messages_pb:old_building_rank_list_req()
+
+		xyd.Backend.get():request(xyd.mid.OLD_BUILDING_RANK_LIST, msg)
+
+		if xyd.getServerTime() < self:getChallengeEndTime() then
+			local msg = messages_pb:old_building_harm_list_req()
+
+			xyd.Backend.get():request(xyd.mid.OLD_BUILDING_HARM_LIST, msg)
+		end
+
+		self.reqRankTime_ = xyd.getServerTime()
+
+		return true
+	else
+		return false
+	end
+end
+
+function OldSchool:onGetHarmList(event)
+	self.harmData_ = xyd.decodeProtoBuf(event.data)
+
+	self:updateRankList()
+end
+
+function OldSchool:updateRankList()
+	if not self.rankData_ or not self.harmData_ then
+		return false
+	end
+
+	self.extraRank_ = {}
+	local harmList = self.harmData_.list or {}
+
+	for rank, data in ipairs(harmList) do
+		local player_id = data.player_id
+		local rank_data = self:getPlayerInfo(player_id)
+		local addPoint = xyd.tables.oldBuildingHarmAwardPointTable:getPoint(rank)
+		rank_data.score = rank_data.score + addPoint
+	end
+
+	local list = self.rankData_.list or {}
+	local ex_list = self.rankData_.extra_list or {}
+
+	for rank, data in ipairs(list) do
+		table.insert(self.extraRank_, data)
+	end
+
+	for index, data in ipairs(ex_list) do
+		table.insert(self.extraRank_, data)
+	end
+
+	table.sort(self.extraRank_, function (a, b)
+		return tonumber(b.score) < tonumber(a.score)
+	end)
+end
+
+function OldSchool:getSelfScore()
+	local score = tonumber(self:getAllInfo().score)
+	local fight_rank = self:getAllInfo().fight_rank
+
+	if self.harmData_ then
+		fight_rank = self.harmData_.self_rank
+	end
+
+	if not fight_rank then
+		fight_rank = 0
+	else
+		fight_rank = fight_rank + 1
+	end
+
+	return score + (xyd.tables.oldBuildingHarmAwardPointTable:getPoint(fight_rank) or 0)
+end
+
+function OldSchool:getHarmData()
+	return self.harmData_
+end
+
+function OldSchool:getExtraRankList()
+	return self.extraRank_ or self.rankData_.list
+end
+
+function OldSchool:getRankData()
+	return self.rankData_
+end
+
+function OldSchool:getPlayerInfo(player_id)
+	local list = self.rankData_.list
+	local ex_list = self.rankData_.extra_list
+
+	for rank, data in ipairs(list) do
+		if data.player_id == player_id then
+			return data
+		end
+	end
+
+	for index, data in ipairs(ex_list) do
+		if data.player_id == player_id then
+			return data
+		end
+	end
 end
 
 function OldSchool:startTimeSend()
@@ -259,7 +373,7 @@ function OldSchool:mustGetScoreGetAward()
 	elseif self.allInfo then
 		for i in pairs(self.allInfo.awards) do
 			if self.allInfo.awards[i] == 0 then
-				local score = self.allInfo.score
+				local score = tonumber(self.allInfo.score)
 
 				if self:getOldBuildingAward1Table():getPoint(i) <= score then
 					self.allInfo.awards[i] = 1
@@ -358,7 +472,7 @@ function OldSchool:isCheckScoreCanGetAward()
 	if xyd.getServerTime() < self:getChallengeEndTime() and self:getStartTime() < xyd.getServerTime() then
 		for i in pairs(self.allInfo.awards) do
 			if self.allInfo.awards[i] == 0 then
-				local score = self.allInfo.score
+				local score = tonumber(self.allInfo.score)
 
 				if self:getOldBuildingAward1Table():getPoint(i) <= score then
 					return true
@@ -523,9 +637,9 @@ function OldSchool:checkScoreChange(stage_id, floor_info)
 	local floorIndex = xyd.tables.oldBuildingStageTable:getFloor(stage_id)
 	local beforeFloorInfo = self.allInfo.floor_infos[floorIndex]
 	local isChange = false
-	local beforeScore = beforeFloorInfo.score
+	local beforeScore = tonumber(beforeFloorInfo.score)
 
-	if beforeFloorInfo.score < changeInfo.score then
+	if beforeScore < tonumber(changeInfo.score) then
 		isChange = true
 
 		self:updateFloorInfo(floorIndex, floor_info)
@@ -555,7 +669,7 @@ function OldSchool:updateFloorInfo(floorIndex, floor_info)
 		return
 	end
 
-	self.allInfo.floor_infos[floorIndex].score = floor_info.score
+	self.allInfo.floor_infos[floorIndex].score = tonumber(floor_info.score)
 	self.allInfo.floor_infos[floorIndex].complete_num = floor_info.complete_num
 	self.allInfo.floor_infos[floorIndex].cur_scores = floor_info.cur_scores
 	self.allInfo.floor_infos[floorIndex].completeds = floor_info.completeds
@@ -646,6 +760,107 @@ function OldSchool:setSaveLocalBuffsCount(value)
 
 		self.saveLocalBuffsCount = value
 	end
+end
+
+function OldSchool:getNextStage(stage_id)
+	if not self.historyStage_ then
+		self.historyStage_ = {}
+	end
+
+	local selectInfo = xyd.db.misc:getValue("old_building_setting")
+
+	if selectInfo and type(selectInfo) == "string" then
+		selectInfo = json.decode(selectInfo)
+	else
+		return -1
+	end
+
+	local floor_id = xyd.tables.oldBuildingStageTable:getFloor(stage_id)
+	local stageArr = xyd.models.oldSchool:getOldBuildingTableTable():getStage(floor_id)
+	local floor_index = xyd.arrayIndexOf(stageArr, stage_id)
+	local next_stage = -1
+
+	table.insert(self.historyStage_, stage_id)
+
+	if floor_index and floor_index > 0 then
+		for index = 1, 3 do
+			if tonumber(selectInfo.floor[index]) and index and index ~= floor_index and stageArr[index] and stageArr[index] > 0 and tonumber(selectInfo.floor[index]) > 0 and xyd.arrayIndexOf(self.historyStage_, stageArr[index]) < 0 then
+				next_stage = stageArr[index]
+
+				break
+			end
+		end
+	end
+
+	return next_stage
+end
+
+function OldSchool:clearFloorHistory()
+	self.historyStage_ = {}
+	self.failNum_ = 0
+end
+
+function OldSchool:autoBattle(stage_id, is_fail)
+	local cjson = require("cjson")
+	local detail = xyd.db.misc:getValue("old_building_buffs_choice_common")
+
+	if detail and type(detail) == "string" then
+		detail = cjson.decode(detail)
+	else
+		detail = {}
+	end
+
+	if xyd.models.oldSchool:getChallengeEndTime() <= xyd.getServerTime() then
+		xyd.alertTips(__("ACTIVITY_END_YET"))
+
+		return
+	end
+
+	if xyd.models.activity:getExploreOldCampusIsFight() == false then
+		xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_LIMIT_TIME", 1))
+
+		return
+	end
+
+	local msg = messages_pb:old_building_fight_req()
+	msg.stage_id = stage_id
+
+	for i in pairs(detail) do
+		if detail[i] > 0 then
+			table.insert(msg.buff_ids, detail[i])
+		end
+	end
+
+	if is_fail then
+		self.failNum_ = self.failNum_ + 1
+	end
+
+	xyd.Backend.get():request(xyd.mid.OLD_BUILDING_FIGHT, msg)
+end
+
+function OldSchool:checkUnlock11Floor()
+	local floor_infos = self:getAllInfo().floor_infos
+	local isAllComplete = true
+
+	for index, floor_info in ipairs(floor_infos) do
+		if index < 11 and floor_info and floor_info.complete_num < #floor_info.completeds then
+			isAllComplete = false
+
+			break
+		end
+	end
+
+	if not isAllComplete then
+		return -1
+	end
+
+	local point = xyd.tables.miscTable:getVal("old_building_floor11_point")
+
+	if self:getSelfScore() < tonumber(point) then
+		return -2
+	end
+
+	return 1
 end
 
 return OldSchool

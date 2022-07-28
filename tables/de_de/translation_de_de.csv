@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Super Spielautomat Gespräch 4
 GAMBLE_UP_WOMAN_TALK_5,Super Spielautomat Gespräch 5
 OPEN_SLOT_TIPS,Mit {1} Dias zusätzliche {2}\nMädchenkapazität erwerben?
 NOT_ENOUGH,{1} nicht ausreichend!
-LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert||Das Mädchen wurde in der Ultimativen Arena aufgestellt||Das Mädchen wurde im vorher aufgestellten Team aufgestellt
+LOCK_PARTNER_TIPS,Das Mädchen wurde gesperrt|Das Mädchen wurde in der Arena aufgestellt|Das Mädchen wurde in der Elitearena aufgestellt.|Das Mädchen wurde in der Eliteliga aufgestellt|Das Mädchen wurde als Hintergrund-Mädchen eingestellt|Das Mädchen erholt sich im Wohnheim|Das Mädchen ist in der Basis im Campusausflug stationiert|Das Mädchen ist in einem Gebäude im Campusausflug stationiert||Das Mädchen wurde in der Ultimativen Arena aufgestellt||Das Mädchen wurde in einem Reserve-Team aufgestellt
 ALTAR_DECOMPOSE_TIP,Der Sterne-Rang dieses Mädchens ist höher als 3. Möchtest du sie wirklich übertragen?
 ALTAR_HERO_NUM_TEXT,Verbleibend：
 ALTAR_SMART_TEXT,Schnell-Wahl
@@ -2924,7 +2924,7 @@ SPIRIT_EQUIP_HELP,"1. Seelenattribute gelten für alle Mädchen und werden aktiv
 SPIRIT_UPGRADE_HELP,"1. Seelen können durch Seelenenergie verstärkt werden. Je höher das Level, je stärker die Attribute. |2. Seelenenergie kann durch Seelenmaterial oder Seelen erhalten werden. |3. Eine verbesserte Seele bleibt in ihrem Hafen und wird wirksam, wenn sie getragen wird. |4. Die Obergrenze der Verstärkung wird durch die Seele bestimmt. |5. Wenn das maximale Verstärkungslevel unter dem Verstärkungslevel des Hafens liegt, wird nur das Seelenverstärkungslevel aktiviert."
 GET_WAYS_TOP_WORDS,[c][121211]Erhältlich durch: [-][/c]{1}
 COLLECTION_SKIN_TIP_1,Bonus
-COLLECTION_SKIN_TIP_2,Methode
+COLLECTION_SKIN_TIP_2,Erhalten
 HOUSE_ITEM_TIPS_4,Komfort
 HOUSE_ITEM_TYPE_0,Alles
 BATTLE_PASS_SHOP_OFFSHELF,Verbleibend
@@ -3185,7 +3185,7 @@ ACTIVITY_EQUIP_LEVEL_UP_CONFIRM_BUY,"Willst du sicher {1} Münzen und {2} Dias a
 ACTIVITY_ENERGY_SUMMON_BUY_CARD,"Erst nachdem du die SP Energiekarte gekauft hast, kannst du BeschwörenS"
 GIFT_LOCKED_CHECK,Du kannst die Superpakete kaufen um die bestimmten Materialien zum Geschenk freischalten zu holen!
 ACTIVITY_PRIVILEGE_CARD_PRIVILEGE_TIME,Aktiviert
-ACTIVITY_PRIVILEGE_CARD_NOT_ACTIVE,Inaktiv
+ACTIVITY_PRIVILEGE_CARD_NOT_ACTIVE,Nicht aktiviert
 ACTIVITY_PRIVILEGE_CARD_NOT_COMING_SOON,Kommt bald…
 SETTING_UP_OTHER,Weiteres
 SETTING_UP_BATTLE_RESULT,Kampfergebnis
@@ -3272,7 +3272,7 @@ ACTIVITY_RETURN_MISSION_REPEAT_FINISH,Fortschritt: {1}/{2}
 ACTIVITY_RETURN_MISSION_NO_BIND,noch nicht\nverbunden
 ACTIVITY_RETURN_IS_BINDING,Beim verbinden...
 ACTIVITY_RETURN_WAITING_FOR_FINISH,Im Gang
-IF_UNLOCK_HERO_3,"Willst du das Mädchen sicher entsperren? Wenn sie in einer deiner Verteidigungsaufstellungen unter ""Arenen"" oder voraufgestellten Teams ist, wird sie direkt nach dem Entsperren aus dieser entfernt. Wenn sie im Wohnheim ausruht wird sie nach dem Entsperren von dort verschwinden."
+IF_UNLOCK_HERO_3,"Willst du das Mädchen sicher entsperren? Wenn sie in einer deiner Verteidigungsaufstellungen unter ""Arenen"" oder Reserve-Teams ist, wird sie direkt nach dem Entsperren aus dieser entfernt. Wenn sie im Wohnheim ausruht wird sie nach dem Entsperren von dort verschwinden."
 ACTIVITY_PLAYER_RETURN_EXPLAIN,Belohnungen für\nQuiz und Abenteuer
 ACTIVITY_RETURN_SHOP_LIMIT,Limitiert
 ACTIVITY_RETURN_APPLY_LIST_TIPS_3,Keine Anfrage
@@ -3305,16 +3305,16 @@ ENTRANCE_TEST_HELP_DES_1_4,Tippe und wähle einen passenden [c][cc0011]Kristall[
 ENTRANCE_TEST_HELP_DES_1_5,Tippe und wähle eine passende [c][cc0011]Antiquität[-][/c] für sie.
 ENTRANCE_TEST_HELP_TITLE_1_1,Konfigurieren
 ENTRANCE_TEST_HELP_TITLE_2_1,Konfigurieren
-ENTRANCE_TEST_HELP_TITLE_2_2,Verteidigung
-ENTRANCE_TEST_HELP_DES_2_1,Auf Stufe A werden die Mädchen auf 15-Sterne levelt und du kannst passende [c][cc0011]Potenziale[-][/c] für sie wählen.
+ENTRANCE_TEST_HELP_TITLE_2_2,Test
+ENTRANCE_TEST_HELP_DES_2_1,Tippe und wähle die passenden [c][cc0011]Potenziale[-][/c] für sie.
 ENTRANCE_TEST_HELP_DES_2_2,"Nachdem die Konfiguration beendet wurde, wird die Karte mit einem「Fertig」-Zeichen markiert."
-ENTRANCE_TEST_HELP_DES_2_3,"Bitte stelle zuerst dein [c][cc0011]Verteidigungsteam[-][/c] mit deinen konfigurierten Mädchen auf. Wenn dein Verteidigungsteam einen Kampf gewinnt, bekommst du Punkte, ansonsten verlierst du Punkte. Bitte stelle das Team mit Bedacht auf."
-ENTRANCE_TEST_HELP_TITLE_3_1,Kampf
-ENTRANCE_TEST_HELP_TITLE_3_2,Punkte & Rang
+ENTRANCE_TEST_HELP_DES_2_3,"Es gibt insgesamt 3 Teste unter der Aufnahmeprüfung. Zu jeder Herausforderung wird 1 Prüfungszertifikat benötigt. Täglich werden 3 Prüfungszertifikate gesendet und am 5. Tag des Events kannst du die Prüfungszertifikate kaufen. Erreiche den geforderten [c][cc0011]Gesamtschaden[-][/c], um den entsprechenden Test abzuschließen und die bestimmten Mädchen entsperren zu können."
+ENTRANCE_TEST_HELP_TITLE_3_1,Wetten
+ENTRANCE_TEST_HELP_TITLE_3_2,Schaden & Rang
 ENTRANCE_TEST_HELP_TITLE_3_3,Belohnungen
-ENTRANCE_TEST_HELP_DES_3_1,"Erfüllst du die Voraussetzungen, dann kannst du auf [c][cc0011]Kampf[-][/c] drücken, um den Kampf zu starten.\nSpieler werden einander anhand ihrer Punktzahl zugeordnet. Bei einem Sieg erhältst du Punkte, bei einer Niederlage verlierst du keine Punkte."
-ENTRANCE_TEST_HELP_DES_3_2,Jeder Kampf benötigt 1 Prüfungszertifikat.\nDie Menge an Prüfungszertifikaten wird täglich um 00:00 Uhr (UTC/GMT 0) auf [c][cc0011]10[-][/c] zurückgesetzt/aufgefüllt.\nDu kannst auch zusätzliche Prüfungszertifikate mit Dias kaufen.
-ENTRANCE_TEST_HELP_DES_3_3,Während des Events kannst du die aktuellen Punkte und Rangliste prüfen.
+ENTRANCE_TEST_HELP_DES_3_1,Das Wetten ist am [c][cc0011]4.[-][/c] Tag des Events verfügbar.\nDas Wetten dauert [c][cc0011]3 Tage[-][/c]. Jeden Tag kannst du einmal wetten und am nächsten Tag wird das Ergebnis der Wette verkündet.
+ENTRANCE_TEST_HELP_DES_3_2,"Zum Wetten werden [c][cc0011]Super Kapselmünzen[-][/c] oder [c][cc0011]Münzen[-][/c] benötigt.\nHast du die Wette gewonnen, wird der Wetteinsatz verdreifacht und dann dir per Mail gesendet."
+ENTRANCE_TEST_HELP_DES_3_3,Deine Höchstschäden und -ränge der 3 Teste können in Echtzeit geprüft werden.
 ENTRANCE_TEST_HELP_DES_3_4,"Tippe auf [c][cc0011]Belohnung[-][/c], um die aktuellen Aufgaben und deren Belohnungen zu prüfen. Bitte sammle deine Belohnungen rechtzeitig ein.\nDurch Kauf des [c][cc0011]Einschulungspakets[-][/c] entsperrst du noch mehr Belohnungen!"
 ACTIVITY_WARMUP_PACK_TEXT04,Avatar der neuen\nMädchen gratis dazu:
 ACTIVITY_WARMUP_PACK_TEXT05,Premium
@@ -3690,7 +3690,7 @@ BATTLE_PASS_BUY_LAST_DAY,{1} Tag(e) übrig
 BATTLE_PASS_BUY_LAST_HOUR,{1} St. übrig
 PRIVILEGE_CARD_ACTIVE_AND_LEFT_TIME,Aktiviert. Verbleibende Zeit:
 PRIVILEGE_CARD_ACTIVE,Aktiviert
-PRIVILEGE_CARD_IN_ACTIVE,Inaktiviert
+PRIVILEGE_CARD_IN_ACTIVE,Nicht aktiviert
 NEW_RECHARGE_TEXT01,"Lade eine [c][dd7324]beliebige Summe[-][/c]\nauf, um eine [c][dd7324]5-Sterne[-][/c] Hexa und weitere Belohnungen für 3 aufeinanderfolgende Tage zu erhalten!"
 NEW_RECHARGE_TEXT02,Lange Kampfdauer und immer stärkerer Kampfwille
 NEW_RECHARGE_TEXT03,Vorschau
@@ -3821,7 +3821,7 @@ OLD_SCHOOL_FLOOR_NAME,Etage {1}
 OLD_SCHOLL_BUFF_NAME1,Grundprojekt
 OLD_SCHOLL_BUFF_NAME2,Mittelprojekt
 OLD_SCHOOL_FIGHT_NAME,Etage {1} - Stufe {2}
-OLD_SCHOOL_HELP1,"Regeln zu ""Alter Campus""|1. Das Event ""Alter Campus"" findet in Saisonform statt. Jede Saison dauert 14 Tage und besteht aus der Herausforderungsphase (13 Tage) und Anzeigephase (1 Tag).|2. Es gibt insgesamt 10 Etagen auf dem alten Campus und auf jeder Etage gibt es maximal 3 Stufen. Die 1. Etage wird zu Beginn der Saison automatisch eröffnet. Schließe eine beliebige Stufe einer Etage ab, um die nächste Etage zu entsperren.||Stufenherausforderung|1. Stelle ein Team für alle Stufen dieser Etage auf, bevor du die Herausforderung beginnst.|2. In den verschiedenen Stufen kannst du verschiedene ""Projekte"" wählen, durch welche die Gegner verstärkt werden. Verschiedene ""Projekte"" gewähren dir unterschiedliche Mengen an Punkten, wenn du den Kampf gewinnst. Wähle basierend auf deinen Stärken ein passendes ""Projekt"".|3. Derzeitige Stufenpunkte: Die höchsten Punkte, die du nach einem Sieg bekommen hast, ohne dein aufgestelltes Team anzupassen, werden als derzeitige Stufenpunkte angezeigt. Nachdem du dein Team angepasst hast, werden diese Punkte zurückgesetzt.|4. Höchste Etagenpunkte: Die höchsten Stufenpunkte werden addiert und diese Summe wird als ""höchste Etagenpunkte"" angezeigt. Sie wird bei einer Anpassung deines Teams nicht zurückgesetzt.|5. Gesamtpunkte: Die höchsten Etagenpunkte auf 10 Etagen werden addiert. Diese Summe wird als Gesamtpunkte angezeigt und entsprechend dieser Punkte wird eine Rangliste zur aktuellen Saison erstellt.||Saisonbelohnung|1. Etagenbelohnung: Schließe eine bestimmte Menge von Stufen auf einer Etage ab, ohne das aufgestellte Team anzupassen, um die entsprechenden Etagenbelohnungen zu sammeln. Diese Belohnungen müssen manuell gesammelt werden.|2. Punktbelohnung: Deinen Gesamtpunkten entsprechend kannst du Punktbelohnungen sammeln. Diese Belohnungen müssen manuell gesammelt werden.|3. Rangbelohnung: Für alle Server wird eine gemeinsame Rangliste anhand der Gesamtpunkte aller Spieler erstellt. (Wenn die Gesamtpunkte einiger Spielern gleich sind, belegt der Spieler, der diese Gesamtpunkte früher erreicht hat, einen höheren Platz.) Zum Ende der Herausforderungsphase werden die Rangbelohnungen per Mail gesendet. Spieler ohne Punkte bekommen keine Rangbelohnungen.|4. Belohnungen im Laden: Wenn du in einer Saison eine bestimmte Menge von Punkten erreicht hast, werden saisonale Waren entsperrt, die du kaufen kannst. Wenn du an mehreren Saisons von ""Alter Campus"" teilgenommen und jedes Mal eine bestimmte Menge von Punkten erreicht hast, werden ""permanente Waren"" entsperrt, die du kaufen kannst. Die Waren im Laden dienen als Material fürs Leveln der Elitefertigkeiten."
+OLD_SCHOOL_HELP1,"Regeln zu ""Alter Campus""|1. Das Event ""Alter Campus"" findet in Saisonform statt. Jede Saison dauert 14 Tage und besteht aus der Herausforderungsphase (13 Tage) und Anzeigephase (1 Tag).|2. Es gibt insgesamt 11 Etagen auf dem alten Campus und auf jeder Etage gibt es maximal 3 Stufen. Die 1. Etage wird zu Beginn der Saison automatisch eröffnet. Schließe eine beliebige Stufe einer Etage ab, um die nächste Etage zu entsperren. Sobald du die ersten 10 Etagen abgeschlossen und 1000 Punkte erhalten hast, wird die 11. Stufe entsperrt.||Stufenherausforderung|1. Stelle ein Team für alle Stufen dieser Etage auf, bevor du die Herausforderung beginnst.|2. In den verschiedenen Stufen kannst du verschiedene ""Projekte"" wählen, durch welche die Gegner verstärkt werden. Verschiedene ""Projekte"" gewähren dir unterschiedliche Mengen an Punkten, wenn du den Kampf gewinnst. Wähle basierend auf deinen Stärken ein passendes ""Projekt"".|3. Derzeitige Stufenpunkte: Die höchsten Punkte, die du nach einem Sieg bekommen hast, ohne dein aufgestelltes Team anzupassen, werden als derzeitige Stufenpunkte angezeigt. Nachdem du dein Team angepasst hast, werden diese Punkte zurückgesetzt.|4. Höchste Etagenpunkte: Die höchsten Stufenpunkte werden addiert und diese Summe wird als ""höchste Etagenpunkte"" angezeigt. Sie wird bei einer Anpassung deines Teams nicht zurückgesetzt.|5. Auf der 11. Etage werden alle Projekte gezwungen gewählt und eurem Schaden auf dieser Etage gemäß wird eine Rangliste erstellt. Die TOP50 Spieler erhalten zusätzliche Punkte.|6. Gesamtpunkte: Die höchsten Etagenpunkte auf 10 Etagen und deine zusätzlichen Punkte auf der 11. Etage werden addiert. Diese Summe wird als Gesamtpunkte angezeigt und entsprechend dieser Punkte wird eine Rangliste zur aktuellen Saison erstellt.||Saisonbelohnung|1. Etagenbelohnung: Schließe eine bestimmte Menge von Stufen auf einer Etage ab, ohne das aufgestellte Team anzupassen, um die entsprechenden Etagenbelohnungen zu sammeln. Diese Belohnungen müssen manuell gesammelt werden.|2. Punktbelohnung: Deinen Gesamtpunkten entsprechend kannst du Punktbelohnungen sammeln. Diese Belohnungen müssen manuell gesammelt werden.|3. Rangbelohnungen der Punkte: Für alle Server wird eine gemeinsame Rangliste anhand der Gesamtpunkte aller Spieler erstellt. (Wenn die Gesamtpunkte einiger Spielern gleich sind, belegt der Spieler, der diese Gesamtpunkte früher erreicht hat, einen höheren Platz.) Zum Ende der Herausforderungsphase werden die Rangbelohnungen per Mail gesendet. Spieler ohne Punkte bekommen keine Rangbelohnungen.|4. Rangbelohnungen des Schadens: Anhand der Schäden aller Spieler auf der 11. Etage wird eine Rangliste erstellt. Zum Ende der Herausforderungsphase werden die Rangbelohnungen per Mail gesendet.|5. Belohnungen im Laden: Wenn du in einer Saison eine bestimmte Menge von Punkten erreicht hast, werden saisonale Waren entsperrt, die du kaufen kannst. Wenn du an mehreren Saisons von ""Alter Campus"" teilgenommen und jedes Mal eine bestimmte Menge von Punkten erreicht hast, werden ""permanente Waren"" entsperrt, die du kaufen kannst. Die Waren im Laden dienen als Material fürs Leveln der Elitefertigkeiten."
 OLD_SCHOOL_HELP2,"1. Zum Ende der Herausforderungsphase werden die Rangbelohnungen angerechnet. Die TOP10 Spieler bekommen einen limitierten Avatarrahmen, der für 14 Tage gültig ist.|2. Die Rangliste betrifft die Spieler auf allen Servern."
 ACTIVITY_STUDY_NEED_ENERGY3,Das erneute Vorlegen verbraucht 1 Chance. Willst du fortfahren?
 OLD_SCHOOL_SHOP_TEXT1,Saisonal
@@ -4490,11 +4490,11 @@ TRAVEL_MAIN_TEXT66,達成後，限購增加至{1}次
 ENTRANCE_TEST_CANNOT_FIGHT,Du kannst noch nicht am Kampf teilnehmen. Willst du dennoch ein Team aufstellen?
 ENTRANCE_TEST_NOT_OPEN,"Schließe Runde {1} im Abenteuer ab, um kämpfen zu können. Zurzeit ist nur die Wette verfügbar!"
 ACTIVITY_RETURN_GIFT_TEXT,Wähle selbst deine Belohnungen!
-ENTRANCE_TEST_SHOWS_TIPS,[c][0x723c1c size=34]Doppelter Gewinn[-][/c] für erfolgreiche Wette
+ENTRANCE_TEST_SHOWS_TIPS,[c][0x723c1c size=33]Verdreifachter Gewinn[-][/c] für erfolgreiche Wette
 ENTRANCE_TEST_GUESS_CHANGE,Wette ändern
 REPAIR_TO_RESET_GAME,Das Spiel wird sich nach der Reparatur automatisch neu starten. Fortfahren?
 PUB_MISSION_AUTO_HELP,"1. Du kannst deine Mädchen schneller den Jobaufgaben zuteilen und reichhaltige Belohnungen erhalten, indem du alle Aufgaben auf einmal startest.|2. Sobald die Summe von abgeschlossenen und laufenden Jobaufgaben eine bestimmte Zahl erreicht hat, können keine weiteren Mädchen den Jobs zugeteilt werden. Du musst zuerst die Belohnungen für die abgeschlossenen Aufgaben einsammeln.|3. Tippe auf das entsprechende Sternlevel unten auf der Seite, um eine Jobaufgabe des jeweiligen Sternlevels zu starten.|4. Die Jobaufgaben, die du nicht starten willst, kannst du ignorieren, indem du den Haken entfernst."
-ENTRANCE_TEST_GUESS_CHANGE_TIPS,Willst du deine Münzen lieber auf dieses Team setzen?
+ENTRANCE_TEST_GUESS_CHANGE_TIPS,Willst du auf diese Aufstellung wetten?
 ACTIVITY_RESIDENT_RETURN_RECOMMENT1,"Hey, Senpai, lange nicht gesehen!"
 ACTIVITY_RESIDENT_RETURN_RECOMMENT2,"Hier haben wir dir ein paar Spieler und Gilden, die zu dir passen könnten~"
 ACTIVITY_ENTRANCE_TEST_SHOW_WINDOW_HELP,"1. Du kannst während des Events mit Münzen auf Aufstellungen wetten.|2. Die rote Aufstellung kämpft als Angreifer und die blaue als Verteidiger. Der Kampf kann länger als 15 Runden dauern. Sobald die Aufstellung, auf die du gewettet hast, den Kampf gewonnen hat, bekommst du die Belohnungen.|3. Bei der Wette gibt es 3 Wettstufen. Je mehr Münzen für die Wette ausgegeben werden, desto reichhaltiger sind die erhältlichen Belohnungen.|4. Die Wette wird täglich um 00:00 Uhr (UTC/GMT 0) zurückgesetzt und das Kampfergebnis vom vorigen Tag wird zur gleichen Zeit bekanntgemacht. Die Belohnungen werden per Mail gesendet."
@@ -4707,7 +4707,7 @@ ACTIVITY_BEACH_PUZZLE_TEXT06,Fürs Vervollständigen
 ACTIVITY_BEACH_PUZZLE_TEXT07,Vervollständige {1} Bild(er)
 ACTIVITY_BEACH_SHOP_TEXT01,Neu!
 ACTIVITY_BEACH_SHOP_TEXT02,2020
-ACTIVITY_BEACH_SHOP_TEXT03,Willst du {1} {2} zum Eintauschen verwenden?
+ACTIVITY_BEACH_SHOP_TEXT03,Willst du {2} x{1} zum Tausch verwenden?
 ACTIVITY_BEACH_MAIN_WINDOW_TEXT01,Die Beach-Kostüme warten auf dich!
 ACTIVITY_BEACH_MAIN_WINDOW_TEXT02,Los
 ACTIVITY_BEACH_MAIN_WINDOW_TEXT03,"Tippe auf den weißen Bereich, um das Fenster zu schließen"
@@ -4871,10 +4871,10 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,Du hast die Obergrenze für Saphire bereits erre
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,Diese Antiquität wird von einem Mädchen\nbenutzt. Trotzdem fortfahren?
 DAILY_QUIZ_TEXT04,"Brauchst du noch mehr Chancen,\ndann gib bitte deine Anzahl ein:"
 PUB_MISSION_AUTO_TEXT1,Schnell\neinsammeln
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,"Einige Antiquitäten stehen dir standardmäßig zur Auswahl. Andere Antiquitäten musst du erst erhalten, damit du sie ausrüsten kannst."
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,*Die Antiquität ist nur in der Aufnahmeprüfung verfügbar
 ENTRANCE_TEST_PARTNER_NOT_READY,"Es gibt in deinem Team noch einige Mädchen, die noch nicht vollständig ausgerüstet sind. Sicher mit diesem Team kämpfen?"
 ENTRANCE_TEST_BATTLE_JUMP_SET,Zum Konfigurieren
-ENTRANCE_TEST_PET_EXSKILL,In der Aufnahmeprüfung richtet sich das Kernlevel der Diener nach dem Fortschritt deiner eigenen Dienern.
+ENTRANCE_TEST_PET_EXSKILL,Kostbare Kerne aller Diener in der Aufnahmeprüfung werden auf Lv.100 eingestellt.
 ENTRANCE_TEST_PET_CANNOT_UPGRADE,In der Aufnahmeprüfung kann das Level nicht erhöht werden!
 SNS_ACTIVITY_HTTP_BTN01,Los
 SNS_ACTIVITY_TEXT01,"Zu ""Community"""
@@ -4897,7 +4897,7 @@ GUILD_MEAL_TEXT3,Alle Bestellungen leveln
 GUILD_MEAL_TEXT4,Zielbestellung
 GUILD_MEAL_TEXT5,"Es kostet {1} Dias, um die Bestellungen zu leveln. Fortfahren?"
 GUILD_MEAL_TEXT6,Wird ab Cafeteria Lv.5 entsperrt
-ACADEMY_EXAM_TEXT1,Auto. herausfordern
+ACADEMY_EXAM_TEXT1,Autom. Herausfordern
 ACADEMY_EXAM_TEXT2,"Fordert autom. die nächste Stufe heraus, bis das Team verliert"
 ACADEMY_EXAM_TEXT3,"Fordert trotz der Niederlage autom. die nächste Stufe heraus, bis alle Zulassungstickets verwendet wurden"
 PUB_MISSION_AUTO_TEXT2,Keine abgeschlossenen Jobaufgaben
@@ -4913,7 +4913,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,Cupid und der Neuling
+WARMUP_ARENA_TASK_INFO_2,Geteilte Tränen
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -5005,7 +5005,7 @@ ACTIVITY_TEA_TEXT2,Preiswertes Bonuspaket mit reichhaltigen Belohnungen und eine
 ACTIVITY_TEA_TEXT3,Schließe zuerst das vorherige Kapitel ab
 ACTIVITY_TEA_TEXT4,Teehaus-Fortschritt
 ACTIVITY_TEA_TEXT5,"Schließe die entsprechenden Kapitel ab, um Belohnungen zu bekommen."
-ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events Luvlys Inselreise, Mädchen-Spezialmissionen und Geschenke am Strand, den Kauf der Superpakete, Kostümpakete, Glückspakete, Reiseversorgung und Paket-Staffellauf erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Du benötigst 5 Angelruten, um 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Menge der gefangenen Fische werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
+ACTIVITY_FISH_HELP,"1. Während des Events kannst du ""Angelruten"" durch die tägliche Mail, die Teilnahme an den Events Luvlys Inselreise, Mädchen-Spezialmissionen und Geschenke am Strand, den Kauf der Superpakete, Kostümpakete, Glückspakete, Reiseversorgung und Paket-Staffellauf erhalten. Jedes Mal, wenn du 1 ""Steuer"" oder 1 ""Fernsteuer"" im Event ""Luvlys Inselreise"" verwendest, erhältst du 1 ""Angelrute"".|2. Du benötigst 5 Angelruten, um 1 Mal zu angeln. Je nachdem, wie du beim Angeln abschließt, erhältst du die entsprechenden Belohnungen. Hast du den Fisch, den sich die Meerjungfrau wünscht, gefangen, erhältst du eine zusätzliche Belohnung von der Meerjungfrau!|3. Ihr gewünschter Fisch sowie auch die Belohnungen der Meerjungfrau werden erneuert, sobald der vorherige ""Zielfisch"" gefangen wird.|4. Jedes Mal, wenn du nicht ihren gewollten Fisch gefangen hast, wird die Wahrscheinlichkeit für den gewollten Fisch beim nächsten Angeln um 10%% erhöht, bis du den ""Zielfisch"" erfolgreich fängst.|5. Entsprechend der Länge der gefangenen Fische erhältst du außerdem kleine ""Goldene Kronen"" und ""Silberne Kronen"". Jedes Mal, wenn du für eine Fischart das erste Mal eine kleine goldene Krone für den längsten oder kürzesten Fisch erhältst, bekommst du eine Kronen-Belohnung. Hast du einen Fisch gefangen, den sich die Meerjungfrau wünscht und der von einer bestimmten Länge ist, erhältst du zusätzlich eine Überraschungsbelohnung.|6. Entsprechend der Angel-Male werden dir noch weitere Belohnungen gesendet.|7. Nach dem Ende des Events werden die noch nicht verwendeten Angelruten automatisch recycelt. Jede Angelrute entspricht 20k Münzen und die Münzen werden per Mail gesendet."
 ACTIVITY_FISH_BUTTON01,Galerie
 ACTIVITY_FISH_BUTTON02,Belohnung
 ACTIVITY_FISH_SKIP,Skip
@@ -6225,7 +6225,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Benötigte Energie: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,Nach dem Wechseln der Fertigkeiten werden deine Laserenergien auf 0 zurückgesetzt. Willst du sicher die Fertigkeit wechseln?
 ACTIVITY_LOST_SPACE_NAV1,Spezialereignisse
 ACTIVITY_LOST_SPACE_NAV2,Hilfe
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Lotto Glücksboni, Wunschpakete, Raumstation-Versorgung.|8. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Lotto Glücksboni, Raumstation-Versorgung, Personalisierte Pakete, Geschenk zum Monatsanfang.|8. Hast du mehr als 4 Detektoren, wird das ""Autom. Erkunden"" entsperrt. Das Autom. Erkunden wird abgebrochen, bis der Sprungpunkt der aktuellen Raumstation entdeckt wird oder deine Detektoren nicht genügen.|9. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
 GAME_ASSISTANT_TEXT103,Cafeteria - Belohnungen der Bestellungen
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,Volle Laserenergien gespeichert. Willst du sicher keine Fertigkeit durchführen?
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,Keine verfügbaren Gebiete
@@ -6665,10 +6665,10 @@ DELETE_ACCOUNT_TEXT10,Deine Forderung nach Löschen des Kontos wurde bereits vor
 DELETE_ACCOUNT_TEXT11,Deine Anforderung wird behandelt und dieses Konto wird bald unerreichbar sein!
 DELETE_ACCOUNT_TEXT12,Löschen abbrechen
 QUICK_FORMATION_TEXT06,Abbrechen
-QUICK_FORMATION_TEXT07,Ein voraufgestelltes Team aufgerufen. Aufstellen unmöglich.
+QUICK_FORMATION_TEXT07,Ein Reserve-Team aufgerufen. Aufstellen unmöglich.
 GM_RECALL_7,"Liebe(r) Senpai, diese Aktion kann nicht rückgängig gemacht werden. Bitte denke mit Vorsicht."
 QUICK_FORMATION_TEXT01,Gesperrt
-QUICK_FORMATION_TEXT02,Im voraufgestellten Team kann das nicht gemacht werden.
+QUICK_FORMATION_TEXT02,In einem Reserve-Team kann das nicht gemacht werden.
 QUICK_FORMATION_TEXT03,Aufstellen
 QUICK_FORMATION_TEXT04,Erfolgreich gespeichert
 QUICK_FORMATION_TEXT08,Team erfolgreich umbenannt!
@@ -6692,7 +6692,7 @@ QUICK_FORMATION_TEXT14,Maximal 6 Zeichen
 QUICK_FORMATION_TEXT15,Wird nach dem Abschluss von Runde {1} entsperrt
 QUICK_FORMATION_TEXT16,Willst du dieses Team speichern?
 QUICK_FORMATION_TEXT17,"Mädchen im Reserve-Team kann nicht durch Absolvieren, Umkehren, Erwecken usw. angepasst werden."
-QUICK_FORMATION_TEXT18,"1. Nachdem du die Runde 8-5 abgeschlossen hast, wird die Funktion ""Team voraufstellen"" entsperrt.|2. Die Mädchen können in verschiedenen Teams wiederholt aufgestellt werden und die woanders außerhalb dieser Funktion eingestellten Teams werden nicht davon beeinflusst.|3. Hier kannst du die Ausrüstungen, Kristalle, Antiquitäten und Potenziale der Mädchen erneut anpassen, um verschiedene Gegner zu bekämpfen.|4. Die voraufgestellten Teams können nur bei einigen der Funktionen, wo nur eine Aufstellung zum Kampf entsendet werden, aufgerufen werden. Auf der Aufstellungsseite kannst du deine Teams aufrufen, um passende Kämpferinnen schnell zum Kampf zu entsenden.|5. Zu Beginn stehen 3 Teams zur Verfügung. Du kannst auch weitere Teams aufstellen, indem du Dias ausgibst.|6. Drücke lange auf den Namen des Teams, um das Team zu umbenennen."
+QUICK_FORMATION_TEXT18,"1. Nachdem du die Runde 8-5 abgeschlossen hast, wird die Funktion ""Reserve-Team"" entsperrt.|2. Die Mädchen können in verschiedenen Teams wiederholt aufgestellt werden und die woanders außerhalb dieser Funktion aufgestellten Teams werden nicht davon beeinflusst.|3. Hier kannst du die Ausrüstungen, Kristalle, Antiquitäten und Potenziale der Mädchen erneut anpassen, um verschiedene Gegner zu bekämpfen.|4. Die Reserve-Teams können nur bei einigen der Funktionen, wo nur eine Aufstellung zum Kampf entsendet werden, aufgerufen werden. Auf der Aufstellungsseite kannst du deine Teams aufrufen, um passende Kämpferinnen schnell zum Kampf zu entsenden.|5. Zu Beginn stehen 3 Reserve-Teams zur Verfügung. Du kannst auch weitere Reserve-Teams aufstellen, indem du Dias ausgibst.|6. Drücke lange auf den Namen des Teams, um das Team zu umbenennen."
 QUICK_FORMATION_TEXT19,Team umbenennen
 QUICK_FORMATION_TEXT20,Gib einen neuen Teamnamen ein
 QUICK_FORMATION_TEXT21,Das Mädchen wurde in einem Reserve-Team aufgestellt.
@@ -6811,12 +6811,12 @@ OLD_SCHOOL_FLOOR_11_TEXT02,Akt. Schaden: {1}
 OLD_SCHOOL_FLOOR_11_TEXT03,Rang
 OLD_SCHOOL_FLOOR_11_TEXT04,Punkte
 OLD_SCHOOL_FLOOR_11_TEXT05,Belohnung
-OLD_SCHOOL_FLOOR_11_TEXT06,[size=28][c][b9723e]Zusätzlich {1} Punkte[-]
+OLD_SCHOOL_FLOOR_11_TEXT06,[size=28][c][b9723e]{1} Zusatzpunkte[-]
 OLD_SCHOOL_FLOOR_11_TEXT07,Wird zum Ende der Saison in den Gesamtpunkten mitgezählt
 OLD_SCHOOL_FLOOR_11_TEXT08,Sonderprojekt
 OLD_SCHOOL_FLOOR_11_TEXT09,Entsperrt in 9./10./11. Etagen
 OLD_SCHOOL_FLOOR_11_TEXT10,Projekte für diese Stufe können nicht geändert werden.
-OLD_SCHOOL_FLOOR_11_TEXT11,Auto. herausfordern
+OLD_SCHOOL_FLOOR_11_TEXT11,Autom. Herausfordern
 OLD_SCHOOL_FLOOR_11_TEXT12,Stufen wählen
 OLD_SCHOOL_FLOOR_11_TEXT13,Stoppen
 OLD_SCHOOL_FLOOR_11_TEXT14,"Fordert autom. die gewählten Stufen heraus, bis das Team verliert"
@@ -6849,10 +6849,10 @@ ACTIVITY_CHIME_TEXT11,Gib die Menge ein
 ACTIVITY_CUPID_GIFT_TEXT12,5 Mal beten
 ACTIVITY_CHIME_TEXT13,Beten
 ACTIVITY_ENTRANCE_TEST_TEXT01,Wetten
-ACTIVITY_NEW_WARMUP_HELP1,測驗競猜幫助文本1
+ACTIVITY_NEW_WARMUP_HELP1,"1. Am 4. Tag des Events kannst du wetten. Die Aufstellungen der TOP Spieler auf der Rangliste der 3 Teste werden zum Wetten ausgewählt.|2. Das Wetten dauert 3 Tage. Täglich kannst du einmal wetten und am nächsten Tag wird das Ergebnis verkündet.|3. Zum Wetten werden Super Kapselmünzen oder Münzen benötigt. Hast du die Wette gewonnen, wird deine Ausgabe verdreifacht und per Mail zurückgesendet."
 ACTIVITY_NEW_WARMUP_TEXT1,Wetten
 ACTIVITY_NEW_WARMUP_TEXT2,Das Wetten hat noch nicht begonnen.
-ACTIVITY_NEW_WARMUP_TEXT4,Test der Stärke
+ACTIVITY_NEW_WARMUP_TEXT4,Test der\nStärke
 ACTIVITY_NEW_WARMUP_TEXT5,Test der Ausdauer
 ACTIVITY_NEW_WARMUP_TEXT6,Test der Weisheit
 ACTIVITY_NEW_WARMUP_TEXT7,"Schließe den {1} ab, um das Mädchen zu entsperren."
@@ -6865,7 +6865,7 @@ ACTIVITY_NEW_WARMUP_TEXT14,Fehlgeschlagen
 ACTIVITY_NEW_WARMUP_TEXT15,Noch nicht gewettet
 ACTIVITY_NEW_WARMUP_TEXT16,Schaden
 ACTIVITY_NEW_WARMUP_TEXT17,Abschlussbelohnung
-ACTIVITY_NEW_WARMUP_TEXT18,*Das Mädchen ist nur in der Aufnahmeprüfung verfügbar
+ACTIVITY_NEW_WARMUP_TEXT18,*Die Mädchen sind nur in der Aufnahmeprüfung verfügbar
 ACTIVITY_NEW_WARMUP_TEXT19,Restliche Chance(n)
 ACTIVITY_NEW_WARMUP_TEXT20,Simulation
 ACTIVITY_NEW_WARMUP_TEXT21,Realkampf
@@ -6874,34 +6874,79 @@ ACTIVITY_NEW_WARMUP_TEXT23,Münzen nicht ausreichend!
 ACTIVITY_NEW_WARMUP_TEXT24,Gewettet
 OLD_SCHOOL_FLOOR_11_TEXT16,Stufenschaden:
 OLD_SCHOOL_FLOOR_11_TEXT17,Höchstschaden der Etage erhöht
-ACTIVITY_SAND_HELP01,使用鏟子挖開沙堡，收集貝殼獲得積分
-ACTIVITY_SAND_HELP02,積分達到指定目標可獲得獎勵\n獲得本輪所有獎勵後，進入下一輪
-ACTIVITY_SAND_HELP03,沙堡中可能會出現奇怪的東西哦，學長自行探索吧~
-ACTIVITY_SAND_TEXT01,自動
-ACTIVITY_SAND_TEXT02,請選擇使用鏟子的數量
-ACTIVITY_SAND_TEXT03,第5輪後可開啟自動尋寶
-ACTIVITY_SAND_TEXT04,自動尋寶將隨機挖開沙堡，是否繼續？
-ACTIVITY_SAND_TEXT05,獎勵預覽
-ACTIVITY_SAND_TEXT06,Round
-ACTIVITY_SAND_TEXT07,獎勵
-ACTIVITY_SAND_TEXT08,獲取盛夏新裝~
-ACTIVITY_SAND_MISSION_TAB01,每日任務
-ACTIVITY_SAND_MISSION_TAB02,活動任務
-ACTIVITY_SAND_GIFTBAG_HELP,購買盛夏邀請函後，完成所有每日任務獲得的鏟子數量翻倍！活動期間任意時間購買，均會補發已完成任務可額外獲得的鏟子。
-ACTIVITY_SAND_GIFTBAG_TEXT01,盛夏邀請函
-ACTIVITY_SAND_GIFTBAG_TEXT02,未激活
-ACTIVITY_SAND_GIFTBAG_TEXT03,已激活
-ACTIVITY_SAND_GIFTBAG_TEXT04,立即獲得
-ACTIVITY_SAND_GIFTBAG_TEXT05,盛夏之約每日任務獲得「鏟子」數量翻倍！
-ACTIVITY_SAND_SHOP_TAB01,盛夏新裝
-ACTIVITY_SAND_SHOP_TAB02,往期返場
-ACTIVITY_SAND_SHOP_TAB03,道具兌換
-ACTIVITY_SAND_SHOP_TEXT01,完成{1}輪沙灘尋寶後解鎖
-ACTIVITY_LOST_SPACE_TEXT11,自主探索
-ACTIVITY_LOST_SPACE_TEXT12,探測儀為5以下時無法自主探索
-ACTIVITY_LOST_SPACE_TEXT13,自主探索結果
-ACTIVITY_LOST_SPACE_TEXT14,消耗探測儀
-ACTIVITY_LOST_SPACE_TEXT15,獲得獎勵
-ACTIVITY_LOST_SPACE_TEXT16,已找到跳躍點，無法自主探索
-ACTIVITY_LOST_SPACE_TEXT17,是否確認自主探索？
-ACTIVITY_NEW_WARMUP_TEXT25,競猜己結束
+ACTIVITY_SAND_HELP01,"Grabe mit der Schaufel die Sandburg auf, um Muscheln und entsprechende Punkte zu erhalten!"
+ACTIVITY_SAND_HELP02,"
+Erhalte eine bestimmte Menge an Punkten,
+um entsprechende Belohnungen zu erhalten.
+Erhalte alle Belohnungen der aktuellen Runde,
+um die nächste Runde zu entsperren."
+ACTIVITY_SAND_HELP03,In der Sandburg versteckt sich noch etwas Überraschendes~ Grabe schnell die Schätze aus!
+ACTIVITY_SAND_TEXT01,Autom.
+ACTIVITY_SAND_TEXT02,Gibt die Menge der Schaufeln ein
+ACTIVITY_SAND_TEXT03,Autom. Suchen ist ab der 3. Runde verfügbar
+ACTIVITY_SAND_TEXT04,Beim Autom. Suchen werden zufällige Sandburgen aufgegraben. Fortfahren?
+ACTIVITY_SAND_TEXT05,Belohnung
+ACTIVITY_SAND_TEXT06,Runde
+ACTIVITY_SAND_TEXT07,Belohnung
+ACTIVITY_SAND_TEXT08,Ziehe dich was Neues für den Sommer an~
+ACTIVITY_SAND_MISSION_TAB01,Täglich
+ACTIVITY_SAND_MISSION_TAB02,Event
+ACTIVITY_SAND_GIFTBAG_HELP,"1. Kaufe das Paket ""Sommerliche Einladung"", um die erhaltenen Schaufeln in den täglichen Aufgaben zu verdoppeln. Egal wann du dieses Paket kaufst, werden die erhältlichen extra Schaufeln danach gesendet.|2. Das Paket ""Sommerliche Einladung"" ist während des Events (2 Wochen lang) nur einmal kaufbar. Abgesehen von diesem Paket wird das Kauflimit der anderen Pakete in der 2. Woche des Events zurückgesetzt. Die restlichen Kaufchancen aus der ersten Woche werden zu denen in der 2. Woche addiert."
+ACTIVITY_SAND_GIFTBAG_TEXT01,Sommerliche Einladung
+ACTIVITY_SAND_GIFTBAG_TEXT02,Nicht aktiviert
+ACTIVITY_SAND_GIFTBAG_TEXT03,Aktiviert
+ACTIVITY_SAND_GIFTBAG_TEXT04,Sofort erhältlich
+ACTIVITY_SAND_GIFTBAG_TEXT05,Verdopple die erhaltenen Schaufeln in den täglichen Sommeraufgaben!
+ACTIVITY_SAND_SHOP_TAB01,2022
+ACTIVITY_SAND_SHOP_TAB02,Frühere
+ACTIVITY_SAND_SHOP_TAB03,Items
+ACTIVITY_SAND_SHOP_TEXT01,Schließe für den Tauch {1} Runden der Schatzsuche ab
+ACTIVITY_LOST_SPACE_TEXT11,Autom. Erkunden
+ACTIVITY_LOST_SPACE_TEXT12,Mit weniger als 5 Detektoren ist Autom. Erkunden nicht verfügbar
+ACTIVITY_LOST_SPACE_TEXT13,Autom. Erkunden beendet
+ACTIVITY_LOST_SPACE_TEXT14,Verwendete Detektoren
+ACTIVITY_LOST_SPACE_TEXT15,Erhaltene Belohnungen
+ACTIVITY_LOST_SPACE_TEXT16,Sprungpunkt erkundet. Autom. Erkunden abgebrochen.
+ACTIVITY_LOST_SPACE_TEXT17,Willst du sicher das Autom. Erkunden aktivieren?
+ACTIVITY_NEW_WARMUP_TEXT25,Wetten beendet
+ACTIVITY_NEW_WARMUP_TEXT26,Schließe zunächst den Test der Stärke ab
+ACTIVITY_NEW_WARMUP_TEXT27,Schließe zunächst den Test der Ausdauer ab
+ACTIVITY_NEW_WARMUP_TEXT28,Schließe zunächst den Test der Weisheit ab
+ACTIVITY_SAND_TITLE,Schatzsuche\nam Strand
+ACTIVITY_NEW_WARMUP_TEXT29,Schaden
+ACTIVITY_NEW_WARMUP_TEXT30,Kaufbar am. {1} Tag
+ACTIVITY_NEW_WARMUP_TEXT31,Simulation verfügbar in 1 Sekunde
+ACTIVITY_NEW_WARMUP_TEXT32,Wetten beendet!
+ACTIVITY_NEW_WARMUP_TEXT33,Wetten ist am 4. Tag des Events verfügbar
+ACTIVITY_NEW_WARMUP_TEXT34,Test der Stärke
+ACTIVITY_NEW_WARMUP_TEXT35,Test der Ausdauer
+ACTIVITY_NEW_WARMUP_TEXT36,Test der Weisheit
+ACTIVITY_NEW_WARMUP_TEXT37,Event beendet. Wetten unmöglich.
+ACTIVITY_FREE_REVERT_TEXT01,Umkehren
+ACTIVITY_FREE_REVERT_TEXT02,Willst du sicher das Mädchen zurücksetzen?
+ACTIVITY_FREE_REVERT_TEXT03,"1. Während des Events kannst du die bestimmten Mädchen zurücksetzen, ohne Ressourcen ausgeben zu müssen.|2. Alle Ressourcen zum Ausbilden der Mädchen, die in diesem Event zurückgesetzt werden, werden zurückgesendet."
+ACTIVITY_FREE_REVERT_TEXT04,"1. Alle Mädchen (6-Sterne ausgeschlossen) können zurückgesetzt werden. Die Puppen können nicht erweckt, ausgetauscht, rückgängig gemacht, übertragen, beschenkt oder ins Wohnheim gebracht werden. |2. Die Ausrüstungen und Antiquitäten der zurückgesetzten Mädchen werden automatisch in deinen Rucksack zurückgeschickt. |3. Die Details des Umkehrens werden unten erläutert: |Umkehren eines 1- bis 5-Sterne Mädchens: Mädchen-Kopie desselben Sternlevels *1|Umkehren eines 7-Sterne Mädchens: 5-Sterne Puppe derselben Fraktiotn *5 +5-Sterne Kopie *2|Umkehren eines 8-Sterne Mädchens: 5-Sterne Puppe derselben Frakation *7 + 5-Sterne Kopie *2|Umkehren eines 9-Sterne Mädchens: 6-Sterne Puppe derselben Fraktion *1 +5-Sterne Puppe derselben Fraktion *8 + 5-Sterne Kopie *3|Umkehren eines 10-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *2 + 5-Sterne Kopie *5|Umkehren eines 11-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *3 + 5-Sterne Kopie *6 |Umkehren eines 12-Sterne-Mädchens: 9-Sterne-Puppe derselben Fraktion *4 + 5-Sterne Kopie *7|Umkehren eines 13-Sterne-Mädchens: 10-Sterne-Puppe *1 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *7|Umkehren eines 14-Sterne-Mädchens: 10-Sterne-Puppe *2 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *8|Umkehren des 15-Sterne Mädchens: 10-Sterne-Puppe *3 und 9-Sterne-Puppe *4 derselben Fraktion + 5-Sterne Kopie *9|4. Bei 1- bis 15-Sterne Mädchen werden nach dem Umkehren alle verwendeten Ressourcen zurückgeben. (Der Effekt vom Sonderbonus des Outfits wird bei der Rechnung der verwendeten Kristallmeißel berücksichtigt.) Bei 10- bis 15-Sterne Mädchen werden alle Ressourcen zum Leveln der Elite-Fertigkeiten zurückgegeben. Bei 15-Sterne Mädchen werden alle Ressourcen zum Leveln der Sternkerne zurückgegeben.|5. Bei 1- bis 5-Sterne Mädchen werden keine Ressourcen zum Umkehren benötigt. Bei 7/8/9-Sterne jeweils 400/600/800 Dias und bei 10- bis 15-Sterne Mädchen jeweils Diplom *5.|6. Intimität und Eid werden einem der Mädchen zurückgegeben, nachdem sie umgekehrt wurde.|7. Die 5/9/10-Sterne-Puppen, die du nach dem Umkehren erhältst, werden im monatlichen Event nicht gezählt (für das Erwecken von 5/9/10-Sterne-Mädchen)."
+GROWTH_DIARY_TITLE,Wachstumstagebuch
+GROWTH_DIARY_TEXT01,Kapitel {1}
+GROWTH_DIARY_TEXT02,Fortschritt
+GROWTH_DIARY_TEXT03,Kapitel-Belohnung
+GROWTH_DIARY_TEXT04,Sammeln
+GROWTH_DIARY_TEXT05,Wird nach dem Abschließen aller Aufgaben entsperrt
+GROWTH_DIARY_TEXT06,Wird nach dem Abschließen des letzten Kapitels entsperrt
+GROWTH_DIARY_TEXT07,Gesammelt
+GROWTH_DIARY_TEXT08,Kapitel Gesperrt
+GROWTH_DIARY_TEXT09,Mit {1} markierten Aufgaben können nur auf dieser Seite abgeschlossen werden.
+ACTIVITY_NEW_WARMUP_TEXT38,Willst du sicher auf diese Aufstellung wetten?
+GUILD_COMPETITION_ACTIVE_TEXT01,活躍度任務
+GUILD_COMPETITION_ACTIVE_TEXT02,活躍度
+GUILD_COMPETITION_ACTIVE_TEXT03,每日任務
+GUILD_COMPETITION_ACTIVE_TEXT04,社團任務
+GUILD_COMPETITION_ACTIVE_HELP,活躍度|達到指定數量全社團成員均可獲得獎勵，透過郵件發放。|每日任務|每日刷新，完成可領取獎勵並且增加社團總活躍度。|社團任務|全社團共享進度，完成后所有社團內玩家均可領取獎勵。
+GUILD_COMPETITION_PARTNER_HELP,1.天空島開啟期間，學長可將戰姬進修。（天異陣營以及無法升至15星的戰姬無法進行）|2.戰姬進修後，等級和星級將提升至自身擁有的最高等級戰姬；精英技能等級將跟隨星級變化，11-15星對應精英技能1-5級；裝備默認為粉色職業套；學長可以自行配置職業套技能、水晶、魂器和潛能。|3.實戰時，可花費50K金幣選擇進修戰姬出戰，同名戰姬每日僅可進行並實戰1次。
+GUILD_COMPETITION_PARTNER_TITLE,戰姬進修
+GUILD_COMPETITION_PARTNER_TEXT01,請選擇進行戰姬
+GUILD_COMPETITION_PARTNER_TEXT02,同名戰姬每日僅可進行並實戰1次
+GUILD_COMPETITION_PARTNER_TEXT03,是否花費50K金幣選擇進行戰姬出戰？
+GUILD_COMPETITION_SKILL_TIPS,敵人已達到更高周目\n注意查看技能變化哦~
+GUILD_COMPETITION_CHALLENGE_TEXT01,挑戰目標
+GUILD_COMPETITION_CHALLENGE_TEXT02,達成1/2/3個目標，最終得分增加10%%/20%%/30%%

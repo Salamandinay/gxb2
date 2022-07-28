@@ -157,8 +157,8 @@ function Activity:onActivityList(event)
 		dump(a, "查看全部活动数据。。。。。。。。")
 
 		for i, v in pairs(a.activity_list) do
-			if tonumber(v.activity_id) == 308 then
-				dump(v, "308===========================")
+			if tonumber(v.activity_id) == 309 then
+				dump(v, "309===========================")
 			end
 		end
 
@@ -591,7 +591,7 @@ function Activity:onRecharge(event)
 	if flag then
 		local activityID = xyd.tables.giftBagTable:getActivityID(giftBagID)
 
-		if activityID == xyd.ActivityID.ACTIVITY_CUPID_GIFT then
+		if activityID == xyd.ActivityID.ACTIVITY_CUPID_GIFT or activityID == xyd.ActivityID.ACTIVITY_SAND_GIFTBAG then
 			local activityData = self:getActivity(activityID)
 
 			activityData:showRechargeAward(event.data.giftbag_id, event.data.items)
@@ -1145,7 +1145,7 @@ function Activity:exploreOldCampusFightTime()
 
 		xyd.addGlobalTimer(function ()
 			self.exploreOldCampusIsFight = true
-		end, 3.5, 1)
+		end, 0.5, 1)
 	end
 
 	if self.exploreOldCampusIsFight == nil then

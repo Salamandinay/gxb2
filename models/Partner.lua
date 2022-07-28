@@ -107,6 +107,10 @@ function Partner:getSkillIndex()
 	return self.skill_index
 end
 
+function Partner:setSkillIndex(index)
+	self.skill_index = index
+end
+
 function Partner:getExSkills()
 	return self.ex_skills
 end

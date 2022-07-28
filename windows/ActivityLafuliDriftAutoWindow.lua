@@ -8,6 +8,11 @@ function ActivityLafuliDriftAutoWindow:ctor(name, params)
 	self.purchaseNum = 0
 	self.parent = params.parent
 	self.backpack = xyd.models.backpack
+	self.itemID = params.itemID or xyd.ItemID.LAFULI_SIMPLE_DICE
+	self.callback = params.callback
+	self.itemNum = params.itemNum or xyd.models.backpack:getItemNumByID(xyd.ItemID.LAFULI_SIMPLE_DICE)
+	self.titleLabel = params.titleLabel
+	self.desc = params.descLabel
 end
 
 function ActivityLafuliDriftAutoWindow:initWindow()
@@ -33,19 +38,19 @@ end
 
 function ActivityLafuliDriftAutoWindow:setLayout()
 	local icon = xyd.getItemIcon({
-		itemID = xyd.ItemID.LAFULI_SIMPLE_DICE,
-		num = xyd.models.backpack:getItemNumByID(xyd.ItemID.LAFULI_SIMPLE_DICE),
+		itemID = self.itemID,
+		num = self.itemNum,
 		uiRoot = self.groupItem.gameObject
 	})
-	self.labelTitle.text = __("ACTIVITY_LAFULI_DRIFT_AUTO_WINDOW")
-	self.descLabel.text = __("ACTIVITY_LAFULI_DRIFT_AUTO_TIP")
+	self.labelTitle.text = self.titleLabel or __("ACTIVITY_LAFULI_DRIFT_AUTO_WINDOW")
+	self.descLabel.text = self.desc or __("ACTIVITY_LAFULI_DRIFT_AUTO_TIP")
 	local curNum_ = 1
 	self.selectNum = SelectNum.new(self.textInputCon, "minmax", {})
 
 	self.selectNum:setKeyboardPos(0, -357)
 	self.selectNum:setInfo({
 		minNum = 1,
-		maxNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.LAFULI_SIMPLE_DICE),
+		maxNum = self.itemNum,
 		curNum = curNum_,
 		maxCallback = function ()
 		end,
@@ -63,7 +68,7 @@ function ActivityLafuliDriftAutoWindow:setLayout()
 end
 
 function ActivityLafuliDriftAutoWindow:updateLayout()
-	local limitNum = xyd.models.backpack:getItemNumByID(xyd.ItemID.LAFULI_SIMPLE_DICE)
+	local limitNum = self.itemNum
 
 	if limitNum < self.purchaseNum then
 		self.selectNum:setCurNum(limitNum)
@@ -87,7 +92,12 @@ function ActivityLafuliDriftAutoWindow:registerEvent()
 end
 
 function ActivityLafuliDriftAutoWindow:onTouch(evt)
-	self.parent:startAutoPlay(self.purchaseNum)
+	if self.callback then
+		self.callback(self.purchaseNum)
+	else
+		self.parent:startAutoPlay(self.purchaseNum)
+	end
+
 	xyd.closeWindow(self.name_)
 end
 

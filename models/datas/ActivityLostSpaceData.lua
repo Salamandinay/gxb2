@@ -205,6 +205,37 @@ function ActivityLostSpaceData:onAward(data)
 		if xyd.arrayIndexOf(self.detail.plots, plotId) < 0 then
 			table.insert(self.detail.plots, plotId)
 		end
+	elseif info.type == xyd.ActivityLostSpaceType.SWEEP then
+		for index, value in ipairs(info.content) do
+			local content = value
+
+			if type(content) == "string" and #content > 0 and content ~= self.detail.map_content[index] and info.map[index] == xyd.ActivityLostSpaceGridState.EMPTY then
+				local events = xyd.split(content, "#")
+
+				if events[1] == "e" then
+					local eventId = tonumber(events[2])
+
+					if eventId == xyd.ActivityLostSpaceEventType.TREASURE_PART then
+						self.detail.piece = self.detail.piece + 1
+
+						if self:getAutoUseTreasurePartNum() <= self.detail.piece then
+							self.detail.piece = 0
+						end
+					end
+				end
+			end
+		end
+
+		self.detail.map_content = info.content
+		self.detail.map = info.map
+
+		if info.lvs and info.lvs[1] then
+			self.detail.lvs = info.lvs
+		end
+
+		if info.is_double then
+			self.detail.is_double = info.is_double
+		end
 	end
 end
 

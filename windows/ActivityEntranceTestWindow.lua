@@ -21,8 +21,6 @@ function ActivityEntranceTestWindow:ctor(name, params)
 		self.activityData:makeHeros()
 	end
 
-	xyd.models.collection:reqCollectionInfo()
-
 	self.timeclosekey = -1
 	self.activityEntranceTestHelpItems = ActivityEntranceTestHelpItems.new()
 
@@ -37,11 +35,6 @@ function ActivityEntranceTestWindow:initWindow()
 	self:initTopGroup()
 	self:layout()
 	self:registerEvent()
-
-	local msg = messages_pb:warmup_get_rank_list_req()
-	msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
-
-	xyd.Backend.get():request(xyd.mid.WARMUP_GET_RANK_LIST, msg)
 end
 
 function ActivityEntranceTestWindow:getUIComponent()
@@ -77,9 +70,6 @@ function ActivityEntranceTestWindow:getUIComponent()
 	self.tiliNode = self.groupDetail:NodeByName("tiliNode").gameObject
 	local countDownTiliText = self.tiliNode:ComponentByName("e:Group/countDownTiliText", typeof(UILabel))
 	self.tiliTipWords = self.tiliNode:ComponentByName("e:Group/tiliTipWords", typeof(UILabel))
-	self.missionBtn = self.groupDetail:NodeByName("missionBtn").gameObject
-	self.missionBtnLabel = self.missionBtn:ComponentByName("label", typeof(UILabel))
-	self.missionBtnRed = self.groupDetail:NodeByName("missionBtn/redPoint").gameObject
 	self.scoreGroup = self.groupDetail:NodeByName("scoreGroup").gameObject
 	self.levelImg = self.groupDetail:ComponentByName("scoreGroup/levelImg", typeof(UISprite))
 	self.rankWords = self.scoreGroup:ComponentByName("rankWords", typeof(UILabel))
@@ -103,7 +93,9 @@ function ActivityEntranceTestWindow:getUIComponent()
 	self.countDownText_label = self.logoNode:ComponentByName("e:Group/countDownText", typeof(UILabel))
 	self.endLabel = self.logoNode:ComponentByName("e:Group/endLabel", typeof(UILabel))
 	self.countDownText_layout = self.logoNode:ComponentByName("e:Group", typeof(UILayout))
-	self.leftNode = trans:NodeByName("leftNode").gameObject
+	self.rankBtn0 = self.logoNode:NodeByName("e:GroupBtn/rankBtn0").gameObject
+	self.leftNodeCon = trans:NodeByName("leftNodeCon").gameObject
+	self.leftNode = self.leftNodeCon:NodeByName("leftNode").gameObject
 	self.setHeroBtn = self.leftNode:NodeByName("setHeroBtn").gameObject
 	self.setHeroBtn_button_label = self.leftNode:ComponentByName("setHeroBtn/button_label", typeof(UILabel))
 	self.setHeroRed = self.leftNode:NodeByName("setHeroBtn/redPoint").gameObject
@@ -112,41 +104,40 @@ function ActivityEntranceTestWindow:getUIComponent()
 
 	self.newTipsNode:SetActive(self.activityData:checkHasNew())
 
+	self.missionBtn = self.leftNode:NodeByName("missionBtn").gameObject
+	self.missionBtnLabel = self.missionBtn:ComponentByName("label", typeof(UILabel))
+	self.missionBtnRed = self.leftNode:NodeByName("missionBtn/redPoint").gameObject
 	self.countDownText = CountDown.new(countDownText)
 	self.bg = trans:NodeByName("e:image").gameObject
+	self.pveDownGroup = self.window_:NodeByName("pveDownGroup").gameObject
+	self.showsBtn = self.pveDownGroup:NodeByName("showsBtn").gameObject
+	self.showsBtnRed = self.showsBtn:ComponentByName("redPoint", typeof(UISprite))
+	self.showsBtnLabel = self.showsBtn:ComponentByName("label", typeof(UILabel))
+	self.showsBtnEffect = self.showsBtn:ComponentByName("showsBtnEffect", typeof(UITexture))
+
+	for i = 1, 3 do
+		self["pveBtn" .. i] = self.pveDownGroup:NodeByName("pveBtn" .. i).gameObject
+		self["pvebtnTextImg" .. i] = self["pveBtn" .. i]:ComponentByName("pvebtnTextImg", typeof(UISprite))
+		self["pveBtnRedPoint" .. i] = self["pveBtn" .. i]:ComponentByName("redPoint", typeof(UISprite)).gameObject
+	end
 end
 
 function ActivityEntranceTestWindow:playOpenAnimation(callback)
 	ActivityEntranceTestWindow.super.playOpenAnimation(self, callback)
-	self.leftNode:Y(388 + 89 * self.scale_num_contrary)
-
-	self.leftNodeX = -23
-
-	self.setHeroBtn.transform:X(self.leftNodeX - self.leftNode:GetComponent(typeof(UIWidget)).width)
+	self:resizePosY(self.leftNodeCon.gameObject, 387, 473)
+	self.leftNode.transform:X(-89)
 	self:waitForTime(0.1, handler(self, function ()
 		self.actionLeftNode = DG.Tweening.DOTween.Sequence()
 
-		self.actionLeftNode:Append(self.setHeroBtn.transform:DOLocalMoveX(self.leftNodeX, 0.2))
+		self.actionLeftNode:Append(self.leftNode.transform:DOLocalMoveX(85, 0.2))
 		self.actionLeftNode:AppendCallback(function ()
 			self.actionLeftNode:Kill(true)
 		end)
 	end))
-	self.bg:Y(-77 + 90 * self.scale_num_contrary)
-	self.leftBg:Y(-8 + 80 * self.scale_num_contrary)
+	self:resizePosY(self.bg.gameObject, -77, 13)
+	self:resizePosY(self.leftBg.gameObject, 159, 245)
+	self:resizePosY(self.pveDownGroup.gameObject, -383, -457)
 	self.rightBg:Y(-95 + 76 * self.scale_num_contrary)
-	self.groupDown:Y(-398 + -83 * self.scale_num_contrary)
-
-	self.groupDetailY = self.groupDetail.transform.localPosition.y
-
-	self.groupDetail:Y(-self.groupDetail:GetComponent(typeof(UIWidget)).height - 20)
-	self:waitForTime(0.1, handler(self, function ()
-		self.actionGroupDetail = DG.Tweening.DOTween.Sequence()
-
-		self.actionGroupDetail:Append(self.groupDetail.transform:DOLocalMoveY(self.groupDetailY, 0.2))
-		self.actionGroupDetail:AppendCallback(function ()
-			self.actionGroupDetail:Kill(true)
-		end)
-	end))
 
 	self.logoNode_widget.alpha = 0.01
 
@@ -188,37 +179,35 @@ function ActivityEntranceTestWindow:playCloseAnimation(callback)
 	end
 end
 
-function ActivityEntranceTestWindow:updateRes(event)
-	local nowNum = self.activityData.detail.free_times
-
-	if event and event.data then
-		nowNum = event.data.num
-		self.activityData.detail.free_times = nowNum
-
-		if event.data.buy_times then
-			self.activityData.detail.buy_times = event.data.buy_times
-		end
-
-		self.activityData:getRedMarkState()
-	end
-
-	self.LabelResNum.text = tostring(nowNum) .. " / " .. tostring(xyd.tables.miscTable:getNumber("activity_warmup_arena_energy_reset", "value"))
-
-	self.activityData:getRedMarkState()
-end
-
 function ActivityEntranceTestWindow:initTopGroup()
 	self.windowTop = WindowTop.new(self.window_, self.name_, 50)
 	local items = {
 		{
-			id = xyd.ItemID.CRYSTAL
+			id = xyd.ItemID.ENTRANCE_PVE_TICKET
 		},
 		{
-			id = xyd.ItemID.MANA
+			id = xyd.ItemID.CRYSTAL
 		}
 	}
 
 	self.windowTop:setItem(items)
+
+	self.firstResItem = self.windowTop:getResItems()[1]
+
+	self.firstResItem:setIsRefreshWithItemChange(false)
+	self:updateFreeTimesShow()
+
+	local plusBtn = self.firstResItem:getGameObject():NodeByName("plus_btn").gameObject
+	local plusBtnBoxCollider = plusBtn:AddComponent(typeof(UnityEngine.BoxCollider))
+	plusBtnBoxCollider.size = Vector2(60, 60)
+
+	UIEventListener.Get(plusBtn).onClick = function ()
+		self.activityData:buyTicket()
+	end
+end
+
+function ActivityEntranceTestWindow:updateFreeTimesShow()
+	self.firstResItem:setItemNum(self.activityData:getFreeTimes())
 end
 
 function ActivityEntranceTestWindow:getWindowTop()
@@ -241,6 +230,7 @@ function ActivityEntranceTestWindow:layout()
 	self.promotionLabel.text = __("ENTRANCE_TEST_LEVEL_UP_ING")
 	self.promotionEndLabel.text = __("ACTIVITY_ENTRANCE_TEST_RANK_WINDOW_4")
 	self.missionBtnLabel.text = __("WARMUP_ARENA_TASK_ENTRANCE")
+	self.showsBtnLabel.text = __("ACTIVITY_ENTRANCE_TEST_TEXT01")
 
 	xyd.setUISpriteAsync(self.logo, nil, "activity_entrance_test_logo_" .. xyd.Global.lang, nil, , true)
 
@@ -260,10 +250,9 @@ function ActivityEntranceTestWindow:layout()
 		self.nameText1:X(20)
 	end
 
-	self:updateRes()
-	self:updateRankScore()
 	self:setTimeShow()
 	self.btnFight_lock:SetActive(not xyd.checkFunctionOpen(xyd.FunctionID.ENTRANCE_TEST, true))
+	self.showsBtnRed:SetActive(self.activityData:getBetRed())
 
 	local openTime = tonumber(xyd.db.misc:getValue("warmup_set_open_time"))
 
@@ -281,26 +270,36 @@ function ActivityEntranceTestWindow:layout()
 		self.levelImg.transform.localScale = Vector3(0.746, 0.734, 1)
 	end, nil, true)
 	self:updateMissionRed()
-	self:checkUpday()
-	print(self.fromTask)
 
-	if self.fromTask then
-		if not self.effect then
-			self.effect = xyd.Spine.new(self.btnFight.gameObject)
+	for i = 1, self.activityData:getPveMaxStage() do
+		xyd.setUISpriteAsync(self["pvebtnTextImg" .. i], nil, "activity_entrance_ysz_" .. i .. "_" .. xyd.Global.lang, nil, , true)
+
+		local pveBtnRedPointClickTime = xyd.db.misc:getValue("pveBtnRedPointTime" .. i)
+
+		if not pveBtnRedPointClickTime then
+			self["pveBtnRedPoint" .. i]:SetActive(true)
 		end
 
-		self.effect:setInfo("fx_ui_dianji", function ()
-			self.effect:setRenderTarget(self.btnFight:GetComponent(typeof(UISprite)), 50)
-			self.effect:play("texiao01", 0)
-		end)
+		if pveBtnRedPointClickTime then
+			pveBtnRedPointClickTime = tonumber(pveBtnRedPointClickTime)
+
+			if pveBtnRedPointClickTime < self.activityData:startTime() or self.activityData:getEndTime() <= pveBtnRedPointClickTime then
+				self["pveBtnRedPoint" .. i]:SetActive(true)
+			end
+		end
 	end
 
-	if xyd.Global.lang == "ja_jp" then
-		self.nameText2.width = 150
-		self.rightBg:ComponentByName("e:Group/e:Image", typeof(UISprite)).width = 222
+	self.showsBtnIconEffect = xyd.Spine.new(self.showsBtnEffect.gameObject)
 
-		self.groupImage2:X(81)
-	end
+	self.showsBtnIconEffect:setInfo("fx_warmup_arena_bubble", function ()
+		self.showsBtnIconEffect:setRenderTarget(self.showsBtnEffect, 1)
+
+		if self.activityData:isCanGuess() then
+			self.showsBtnIconEffect:play("texiao01", 0)
+		else
+			self.showsBtnIconEffect:setToSetupPose()
+		end
+	end)
 end
 
 function ActivityEntranceTestWindow:updateEffect()
@@ -312,32 +311,6 @@ function ActivityEntranceTestWindow:updateEffect()
 		self.effect:setRenderTarget(self.btnFight:GetComponent(typeof(UISprite)), 50)
 		self.effect:play("texiao01", 0)
 	end)
-end
-
-function ActivityEntranceTestWindow:checkUpday()
-	local next8Time = xyd.getTomorrowTime()
-	local starTime = self.activityData:startTime()
-
-	if xyd.getServerTime() < starTime + 86400 then
-		return false
-	end
-
-	local today8Time = next8Time - 86400
-
-	if today8Time <= xyd.getServerTime() and xyd.getServerTime() < today8Time + 300 then
-		self:initLevelUpTimeGroup()
-	else
-		local level = self.activityData:getLevel()
-		local levelUpAni = tonumber(xyd.db.misc:getValue("warmup_level_up_ani_" .. level))
-
-		if (not levelUpAni or levelUpAni < xyd.getServerTime() and levelUpAni < starTime) and level >= 2 then
-			xyd.db.misc:setValue({
-				key = "warmup_level_up_ani_" .. level,
-				value = xyd.getServerTime()
-			})
-			xyd.WindowManager.get():openWindow("entrance_test_promotion_window", {})
-		end
-	end
 end
 
 function ActivityEntranceTestWindow:initLevelUpTimeGroup()
@@ -377,97 +350,12 @@ function ActivityEntranceTestWindow:updateTili()
 	self.tiliTimeIndex = self.tiliTimeIndex - 1
 end
 
-function ActivityEntranceTestWindow:updateRankScore()
-	local level = self.activityData:getLevel()
-	local score = self.activityData.detail.score
-	local hasRank = #self.activityData.detail.partners > 0
-	self.rankWords.text = ""
-	local rankdata = nil
-
-	if self.rankData then
-		rankdata = xyd.decodeProtoBuf(self.rankData)
-	end
-
-	if hasRank then
-		if self.rankData then
-			if level < xyd.EntranceTestLevelType.R4 and self.rankData.rank and self.rankData.rank > 50 then
-				local showNum = math.floor(self.rankData.rank / self.rankData.num * 1000) * 0.1
-
-				if showNum <= 0.1 then
-					self.rankWords.text = "0.1%"
-				else
-					self.rankWords.text = showNum .. "%"
-				end
-
-				self.progress.value = 1 - showNum / 100
-
-				if score == 0 then
-					self.rankWords.text = "100%"
-					self.progress.value = 0
-				end
-			else
-				self.rankWords.text = self.rankData.rank
-
-				if self.rankData.rank == 1 then
-					self.progress.value = 1
-				else
-					self.progress.value = 1 - self.rankData.rank / self.rankData.num
-				end
-			end
-		else
-			self.rankWords.text = "/"
-			self.progress.value = 0
-		end
-	else
-		self.rankWords.text = "/"
-		self.progress.value = 0
-	end
-
-	if self.activityData.detail.score then
-		self.scoreWords.text = self.activityData.detail.score
-	end
-
-	if level == xyd.EntranceTestLevelType.R4 then
-		self.levelUpicon:SetActive(false)
-
-		self.levelUPWord.text = "/"
-	else
-		self.levelUpicon:SetActive(true)
-
-		local needPrecent = xyd.tables.activityEntranceTestRankTable:getRankPercent(level)
-		self.levelUPWord.text = needPrecent * 100 .. "%"
-
-		self.levelUpicon.transform:X(184 * (1 - needPrecent) - 338)
-
-		if self.rankData and self.rankData.rank and self.rankData.rank > 0 and self.rankData.rank / self.rankData.num <= 0.7 and score > 0 then
-			if self.rankData.rank == 1 then
-				self.progressEffectNode.transform:X(59)
-			else
-				self.progressEffectNode.transform:X(184 * (1 - self.rankData.rank / self.rankData.num) - 125)
-			end
-
-			if self.rankEffect_ then
-				self.rankEffect_:SetActive(true)
-			else
-				self.rankEffect_ = xyd.Spine.new(self.progressEffectNode)
-
-				self.rankEffect_:setInfo("fx_warmup_progress_rank", function ()
-					self.rankEffect_:play("texiao01", 0, 1)
-				end)
-			end
-		elseif self.rankEffect_ then
-			self.rankEffect_:SetActive(false)
-		end
-	end
-end
-
 function ActivityEntranceTestWindow:setTimeShow()
 	if self.activityData:getEndTime() < xyd.getServerTime() then
-		self.countDownText_label:SetActive(false)
-
-		self.endLabel.text = ""
+		self.countDownText_label.text = "00:00:00"
+		self.endLabel.text = __("END_TEXT")
 	else
-		local cur_time = self.activityData:getEndTime() - xyd.getServerTime() - xyd.DAY_TIME
+		local cur_time = self.activityData:getEndTime() - xyd.getServerTime()
 
 		if cur_time > 0 then
 			self.countDownText:setInfo({
@@ -480,6 +368,11 @@ function ActivityEntranceTestWindow:setTimeShow()
 		self.endLabel.text = __("END_TEXT")
 	end
 
+	if xyd.Global.lang == "fr_fr" then
+		self.endLabel.transform:SetSiblingIndex(0)
+		self.countDownText_label.transform:SetSiblingIndex(1)
+	end
+
 	self.countDownText_layout:Reposition()
 	self:waitForFrame(1, function ()
 		if xyd.Global.lang == "zh_tw" then
@@ -489,36 +382,11 @@ function ActivityEntranceTestWindow:setTimeShow()
 end
 
 function ActivityEntranceTestWindow:onDayRefresh()
-	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
-
-	if xyd.getServerTime() > activityData:getEndTime() - xyd.DAY_TIME then
-		xyd.WindowManager.get():openWindow("activity_entrance_test_final_rank_window")
-		xyd.WindowManager.get():closeWindow(self.name_)
-	else
-		xyd.alertConfirm(__("ENTRANCE_TEST_NEXT_DAY"), function ()
-			xyd.WindowManager.get():closeAllWindows({
-				main_window = true,
-				loading_window = true,
-				guide_window = true
-			}, true)
-		end)
-	end
 end
 
 function ActivityEntranceTestWindow:registerEvent()
-	self.eventProxy_:addEventListener(xyd.event.BOSS_BUY, function (____, e)
-		local data = e.data
-		local a = xyd.decodeProtoBuf(e.data)
-		local num = data.free_times - self.activityData.detail.free_times
-		self.activityData.detail.free_times = data.free_times
-		self.activityData.detail.buy_times = data.buy_times
-
-		xyd.showToast(__("ENTRANCE_TEST_TILI_OK_TIPS", num))
-		self:updateRes()
-	end, self)
 	self.eventProxy_:addEventListener(xyd.event.SYSTEM_REFRESH, self.onDayRefresh, self)
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, self.onAward, self)
-	self.eventProxy_:addEventListener(xyd.event.UPDATE_ACTIVTY_ENTRANCE_TEST_TILI, self.updateRes, self)
 
 	UIEventListener.Get(self.helpBtn0.gameObject).onClick = handler(self, function ()
 		xyd.WindowManager.get():openWindow("img_guide_window", {
@@ -530,6 +398,12 @@ function ActivityEntranceTestWindow:registerEvent()
 			}
 		})
 	end)
+
+	UIEventListener.Get(self.rankBtn0).onClick = function ()
+		xyd.WindowManager.get():openWindow("activity_entrance_test_new_rank_window", {
+			curNavIndex = 1
+		})
+	end
 
 	UIEventListener.Get(self.missionBtn).onClick = function ()
 		xyd.WindowManager.get():openWindow("activity_entrance_test_challenge_task_window", {
@@ -608,12 +482,6 @@ function ActivityEntranceTestWindow:registerEvent()
 			xyd.WindowManager.get():openWindow("activity_entrance_test_buy_tili_window")
 		end
 	end)
-	UIEventListener.Get(self.btnAward.gameObject).onClick = handler(self, function ()
-		local msg = messages_pb:warmup_get_rank_list_req()
-		msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
-
-		xyd.Backend.get():request(xyd.mid.WARMUP_GET_RANK_LIST, msg)
-	end)
 	UIEventListener.Get(self.btnRecord.gameObject).onClick = handler(self, function ()
 		xyd.WindowManager.get():openWindow("activity_entrance_test_record_window")
 	end)
@@ -640,9 +508,6 @@ function ActivityEntranceTestWindow:registerEvent()
 			self.newTipsNode:SetActive(false)
 		end
 	end)
-
-	self.eventProxy_:addEventListener(xyd.event.WARMUP_GET_RANK_LIST, self.openRankWindow, self)
-
 	UIEventListener.Get(self.btnFormation.gameObject).onClick = handler(self, function ()
 		if not xyd.checkFunctionOpen(xyd.FunctionID.ENTRANCE_TEST, true) then
 			local openValue = xyd.tables.functionTable:getOpenValue(xyd.FunctionID.ENTRANCE_TEST)
@@ -663,6 +528,38 @@ function ActivityEntranceTestWindow:registerEvent()
 
 		xyd.WindowManager.get():openWindow("battle_formation_window", params)
 	end)
+
+	UIEventListener.Get(self.showsBtn).onClick = function ()
+		if self.activityData:isCanGuess() then
+			if self.showsBtnRed.gameObject.activeSelf then
+				self.showsBtnRed:SetActive(false)
+				xyd.db.misc:setValue({
+					key = "warmup_bet_time_new",
+					value = xyd.getServerTime()
+				})
+			end
+
+			xyd.WindowManager.get():openWindow("activity_entrance_test_show_window", {})
+		else
+			xyd.alertTips(__("ACTIVITY_NEW_WARMUP_TEXT33"))
+		end
+	end
+
+	for i = 1, self.activityData:getPveMaxStage() do
+		UIEventListener.Get(self["pveBtn" .. i]).onClick = function ()
+			xyd.WindowManager.get():openWindow("activity_entrance_test_pve_window", {
+				testType = i
+			})
+
+			if self["pveBtnRedPoint" .. i].activeSelf then
+				xyd.db.misc:setValue({
+					key = "pveBtnRedPointTime" .. i,
+					value = xyd.getServerTime()
+				})
+				self["pveBtnRedPoint" .. i]:SetActive(false)
+			end
+		end
+	end
 
 	self.eventProxy_:addEventListener(xyd.event.WARMUP_SET_PARTNER, self.updatePartnersDef, self)
 	self.eventProxy_:addEventListener(xyd.event.WARMUP_GET_MATCH_INFOS, self.matchInfos, self)
@@ -692,14 +589,10 @@ function ActivityEntranceTestWindow:onAward(event)
 	if detail.rank then
 		self.activityData.detail.rank = detail.rank
 	end
-
-	self:updateRankScore()
 end
 
 function ActivityEntranceTestWindow:openRankWindow(event)
 	self.rankData = event.data
-
-	self:updateRankScore()
 
 	if self.isEnterRank then
 		self.isEnterRank = false
@@ -707,9 +600,8 @@ function ActivityEntranceTestWindow:openRankWindow(event)
 		return
 	end
 
-	xyd.WindowManager.get():openWindow("activity_entrance_test_rank_window", {
-		rankData = event.data,
-		activityData = self.activityData
+	xyd.WindowManager.get():openWindow("activity_entrance_test_new_rank_window", {
+		curNavIndex = 1
 	})
 end
 
@@ -744,8 +636,6 @@ function ActivityEntranceTestWindow:updatePartnersDef(event)
 	if backData.rank then
 		self.rankData.rank = backData.rank
 	end
-
-	self:updateRankScore()
 end
 
 function ActivityEntranceTestWindow:battleBack(data)
@@ -768,8 +658,6 @@ function ActivityEntranceTestWindow:battleBack(data)
 			self.rankData.num = data.num
 		end
 	end
-
-	self:updateRankScore()
 end
 
 function ActivityEntranceTestWindow:willClose()

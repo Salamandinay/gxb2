@@ -887,7 +887,7 @@ function TimeCloisterProbeWindow:onItemChange(event)
 	end
 
 	for i = 1, #data do
-		if data[i].item_id == xyd.ItemID.TIME_CLOISTR_SPEED_UP then
+		if data[i].item_id == xyd.ItemID.TIME_CLOISTR_SPEED_UP and self.hangInfo then
 			self:showSpeedUpTips()
 		end
 

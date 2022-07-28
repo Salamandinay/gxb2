@@ -115,7 +115,6 @@ function ActivitySummerPreviewWindow:initWindow()
 	self:checkRoleNumber()
 	self:initLayout()
 	self:registerEvent()
-	self:waitForFrame(1, handler(self, self.playLatticeAnimation))
 end
 
 function ActivitySummerPreviewWindow:registerEvent()
@@ -124,8 +123,8 @@ function ActivitySummerPreviewWindow:registerEvent()
 	UIEventListener.Get(self.gotoBtn_).onClick = function ()
 		xyd.WindowManager.get():clearStackWindow()
 		xyd.WindowManager.get():closeThenOpenWindow("activity_summer_preview_window", "activity_window", {
-			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_BEACH_PUZZLE),
-			select = xyd.ActivityID.ACTIVITY_BEACH_PUZZLE
+			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_SAND_SEARCH),
+			select = xyd.ActivityID.ACTIVITY_SAND_SEARCH
 		})
 	end
 
@@ -152,12 +151,6 @@ function ActivitySummerPreviewWindow:getUIComponent()
 	self.gotoBtn_ = winTrans:NodeByName("groupAction/main_group/mid_group/goto_btn").gameObject
 	local puzzles_group = winTrans:NodeByName("groupAction/main_group/mid_group/puzzles_group").gameObject
 	self.BaseImg_ = puzzles_group:ComponentByName("base_img", typeof(UITexture))
-	self.frame_img_ = puzzles_group:ComponentByName("frame_img", typeof(UITexture))
-	self.lattice1 = puzzles_group:NodeByName("lattice_group/A4 (1)").gameObject
-	self.lattice2 = puzzles_group:NodeByName("lattice_group/A2 (3)").gameObject
-	self.lattice3 = puzzles_group:NodeByName("lattice_group/A4 (3)").gameObject
-	self.cItem_ = puzzles_group:NodeByName("cItem").gameObject
-	self.mask_group = puzzles_group:NodeByName("mask_group").gameObject
 	local scroll_group = winTrans:NodeByName("groupAction/main_group/mid_group/scroll_group").gameObject
 	self.scroll_img_group_ = scroll_group:NodeByName("scroll_img_group").gameObject
 	self.content_ = scroll_group:NodeByName("scroll_img_group/content").gameObject
@@ -185,7 +178,7 @@ function ActivitySummerPreviewWindow:initLayout()
 	self.sequence1 = self:getSequence()
 	self.timer_ = self:getTimer(handler(self, self.autoMove), self.intervals, -1)
 
-	xyd.setUISpriteAsync(self.titleImg_, nil, "logo_" .. xyd.Global.lang)
+	xyd.setUISpriteAsync(self.titleImg_, nil, "activity_sand_search_text_web_logo_" .. xyd.Global.lang)
 
 	self.tipLabel1_.text = __("ACTIVITY_BEACH_MAIN_WINDOW_TEXT01")
 	self.gotoBtn_:ComponentByName("goto_btn_lable", typeof(UILabel)).text = __("ACTIVITY_BEACH_MAIN_WINDOW_TEXT02")
@@ -193,11 +186,9 @@ end
 
 function ActivitySummerPreviewWindow:playOpenAnimation(callback)
 	ActivitySummerPreviewWindow.super.playOpenAnimation(self, callback)
-	self:resetLatticeAnimation()
 	self.timer_:Reset(handler(self, self.autoMove), self.intervals, -1, false)
 	self.timer_:Start()
 	self:resetRoleImgPos()
-	self:waitForFrame(1, handler(self, self.playLatticeAnimation))
 end
 
 function ActivitySummerPreviewWindow:checkRoleNumber()
@@ -232,18 +223,6 @@ function ActivitySummerPreviewWindow:checkRoleNumber()
 
 		return
 	end
-end
-
-function ActivitySummerPreviewWindow:resetLatticeAnimation()
-	for i = 1, #self.cItemList_ do
-		self.cItemList_[i].transform.parent = self.mask_group.transform
-
-		self.cItemList_[i]:SetActive(false)
-	end
-
-	self.lattice1:SetActive(true)
-	self.lattice2:SetActive(true)
-	self.lattice3:SetActive(true)
 end
 
 function ActivitySummerPreviewWindow:resetRoleImgPos()
@@ -319,17 +298,6 @@ function ActivitySummerPreviewWindow:UpdateIndexPosition()
 	local endX = self.indexPointBeginPosition_.x + (self.now_index - 1) * self.scrollBarItemWidth
 	local newPos = Vector3(endX, self.indexPoint_.transform.localPosition.y, self.indexPoint_.transform.localPosition.z)
 	self.indexPoint_.transform.localPosition = newPos
-end
-
-function ActivitySummerPreviewWindow:playLatticeAnimation()
-	self:generateCItem()
-	self:eraseLattice(1)
-	self:waitForFrame(60, function ()
-		self:eraseLattice(2)
-	end)
-	self:waitForFrame(120, function ()
-		self:eraseLattice(3)
-	end)
 end
 
 function ActivitySummerPreviewWindow:eraseLattice(lattice_index)

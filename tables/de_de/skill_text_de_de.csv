@@ -12217,3 +12217,215 @@ Kontinuierlicher Schaden. Beim Zufügen eines Brennschadens wird dem Ziel zunäc
 6772101,Kalte Fackel,Antiquitätenfertigkeit,"Wird der Träger angegriffen, wird seine Reduzierung aller Schäden 2 Runden lang um 2% erhöht (kann jede Runde einmal ausgelöst werden) und dem Angreifer wird die [c][e28002]Feuerkette[-][/c] 2 Runden lang zugefügt. Wird der Träger von einem verspotteten Gegner angegriffen, erhält er einen [c][e28002]Schutzwall[-][/c] in Höhe von 3% seiner max. HP (kann jede Runde maximal 3 Mal erhalten werden).\n[c][e28002]Feuerkette[-][/c]\nZeichen. Kann nicht gestapelt werden. Hat der Träger einen tödlichen Schaden erlitten und dann den Effekt der Todesimmunität aktiviert hat, erhält er schließlich nur 1 HP."
 6772201,Kalte Fackel,Antiquitätenfertigkeit,"Wird der Träger angegriffen, wird seine Reduzierung aller Schäden 2 Runden lang um 5% erhöht (kann jede Runde einmal ausgelöst werden) und dem Angreifer wird die [c][e28002]Feuerkette[-][/c] 2 Runden lang zugefügt. Wird der Träger von einem verspotteten Gegner angegriffen, erhält er einen [c][e28002]Schutzwall[-][/c] in Höhe von 6% seiner max. HP (kann jede Runde maximal 4 Mal erhalten werden).\n[c][e28002]Feuerkette[-][/c]\nZeichen. Kann nicht gestapelt werden. Hat der Träger einen tödlichen Schaden erlitten und dann den Effekt der Todesimmunität aktiviert hat, erhält er schließlich nur 1 HP."
 6772301,Kalte Fackel,Antiquitätenfertigkeit,"Wird der Träger angegriffen, wird seine Reduzierung aller Schäden 2 Runden lang um 10% erhöht (kann jede Runde einmal ausgelöst werden) und dem Angreifer wird die [c][e28002]Feuerkette[-][/c] 2 Runden lang zugefügt. Wird der Träger von einem verspotteten Gegner angegriffen, erhält er einen [c][e28002]Schutzwall[-][/c] in Höhe von 10% seiner max. HP (kann jede Runde maximal 5 Mal erhalten werden).\n[c][e28002]Feuerkette[-][/c]\nZeichen. Kann nicht gestapelt werden. Hat der Träger einen tödlichen Schaden erlitten und dann den Effekt der Todesimmunität aktiviert hat, erhält er schließlich nur 1 HP."
+5301900,Nymphäa,Standardangriff,
+65302600,Nymphäa,Standardangriff,
+75301900,Nymphäa,Standardangriff,
+5301901,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 200% des AW und einen zusätzlichen Schaden in höhe von 10% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 20% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 150% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 4% und seine HP um 8% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302601,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 360% des AW und einen zusätzlichen Schaden in höhe von 15% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 40% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 300% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 6% und seine HP um 12% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+75301901,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 800% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 600% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+5301902,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 15%, den Angriff um 10%, die Präzision um 20%, die Krit. Rate um 10% und die Kontrollimmunitätsrate um 10%."
+65302602,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 25%, den Angriff um 20%, die Präzision um 30%, die Krit. Rate um 20% und die Kontrollimmunitätsrate um 20%."
+65302612,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 40%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+75301902,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 40%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+5301903,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 100% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 200% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 4% und seine HP um 8% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302603,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 150% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 400% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 6% und seine HP um 12% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302613,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 300% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 800% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+75301903,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 300% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 800% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+5301904,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 150% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 2% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 4% und seine HP um 8% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302604,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 300% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 3% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 6% und seine HP um 12% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+65302614,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 600% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+75301904,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 600% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019011,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 816% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 612% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019012,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 832% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 624% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019013,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 848% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 636% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019014,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 864% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 648% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019015,Nymphäa,Lotusblase,"
+Die Lotusblase wird mit Lebenskraft und Sanftheit gefüllt. Fügt einem zufälligen Gegner Schaden in Höge von 880% des AW und einen zusätzlichen Schaden in höhe von 25% der max. HP des Ziels (maximal 1500% des AW von Nymphäa) zu. Erhöht eigene HP um 80% des zugefügten Gesamtschadens. Fügt zusätzlich allen Gegnern 3 Runden lang einen [c][01a310]Blutschaden[-][/c] in Höhe von 660% des AW zu. Verleiht 3 zufälligen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019021,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 41%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+753019022,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 42%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+753019023,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 43%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+753019024,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 35%, den Angriff um 30%, die Präzision um 44%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+753019025,Nymphäa,Blühender Lotus,"Der blühende Lotus hat seine Liebe und Gnade an die Welt verbreitet. Erhöht die HP um 38%, den Angriff um 33%, die Präzision um 45%, die Krit. Rate um 30% und die Kontrollimmunitätsrate um 30%."
+753019031,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 306% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 816% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019032,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 312% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 832% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019033,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 318% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 848% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019034,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 324% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 864% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019035,Nymphäa,Duft des Lotus,"
+Der Lotus im Mondlicht riecht nach der reinsten Heiligkeit. Standardangriff fügt 2 Runden lang 3 zufälligen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 330% des AW zu. Erhöht die HP der Mädchen deines Teams der Frontline um 880% des AW und verleiht ihnen 3 Runden lang das [c][e28002]Lotusblatt[-][/c]. 
+
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019041,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 612% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019042,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 624% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019043,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 636% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019044,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 648% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 5% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."
+753019045,Nymphäa,Lebendiges Wachstum,"
+Ein erstklassiger Lotus wird mit ewiger Lebendigkeit und Eleganz wachsen. Fügt zu Beginn des Kampfes 3 zufälligen Gegnern den [c][e28002]heiligen Lotus[-][/c] zu, der 2 Runden lang anhält. Ist Nymphäa gestorben, fügt sie allen Gegnern einen [c][01a310]Blutschaden[-][/c] in Höhe von 660% des AW für 4 Runden sowie den [c][e28002]heiligen Lotus[-][/c], der 2 Runden lang anhält, zu und verleiht allen Mädchen des eigenen Teams das [c][e28002]Lotusblatt[-][/c], das 3 Runden lang anhält.
+
+[c][e28002]Heiliger Lotus[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Erleidet der Träger den Blutschaden, wird ihm ein weiterer Schaden in Höhe von 8% seiner max. HP zugefügt (maximal 1500% des AW von Nymphäa).
+[c][e28002]Lotusblatt[-][/c]
+Fertigkeitseffekt. Kann nicht gestalpelt werden. Wird der Träger von einem blutenden Gegner angegriffen, erhöht er seinen Angriff um 12% und seine HP um 16% der verlorenen HP.
+[c][01a310]Blutschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Blutschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt."

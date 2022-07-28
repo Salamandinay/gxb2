@@ -185,6 +185,13 @@ end
 function ActivityData:doAfterPop()
 end
 
+function ActivityData:getPassedDayRound()
+	local startTime = self:startTime()
+	local passedTotalTime = xyd.getServerTime() - startTime
+
+	return math.ceil(passedTotalTime / xyd.TimePeriod.DAY_TIME)
+end
+
 function ActivityData:isFunctionOnOpen()
 	local functionOnArr = xyd.tables.activityTable:getLimit(self.activity_id)
 	local isOpen = true

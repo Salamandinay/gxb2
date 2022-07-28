@@ -361,7 +361,6 @@ function ActivityEntranceTestChallengeTaskWindow:Register()
 		end
 
 		self:initData()
-		self.activityData:makeHeros()
 	end))
 
 	UIEventListener.Get(self.helpBtn).onClick = function ()
@@ -375,11 +374,7 @@ function ActivityEntranceTestChallengeTaskWindow:Register()
 
 		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
 
-		if xyd.getServerTime() > activityData:getEndTime() - xyd.DAY_TIME then
-			xyd.WindowManager.get():openWindow("activity_entrance_test_final_rank_window")
-		else
-			xyd.WindowManager.get():openWindow("activity_entrance_test_window")
-		end
+		xyd.WindowManager.get():openWindow("activity_entrance_test_window")
 	end
 
 	UIEventListener.Get(self.closeBtn).onClick = function ()
@@ -452,25 +447,17 @@ end
 
 function ActivityEntranceTestChallengeTaskWindow:updateCharterBtns()
 	for i = 1, 3 do
-		print(self.activityData:getCharterState())
-		print(self.activityData:getCharterStar())
-
 		if self.activityData:getCharterState() < i and self.activityData:getCharterStar() < i then
-			print("未解锁" .. i)
 			xyd.setUISpriteAsync(self["charterBtn" .. i]:ComponentByName("", typeof(UISprite)), nil, "entrance_test_icon_jq2")
 			self["charterBtn" .. i]:ComponentByName("charterBtnLabel_", typeof(UILabel)):SetActive(false)
+		elseif i <= self.activityData:getCharterStar() and self.activityData:getCharterState() < i and self.activityData:getCurrentPlotID() ~= nil then
+			xyd.setUISpriteAsync(self["charterBtn" .. i]:ComponentByName("", typeof(UISprite)), nil, "entrance_test_icon_jq1")
+			self["charterBtn" .. i]:ComponentByName("charterBtnLabel_", typeof(UILabel)):SetActive(true)
+			self["charterBtn" .. i]:NodeByName("redPoint").gameObject:SetActive(true)
 		else
-			print("解锁" .. i)
-
-			if i <= self.activityData:getCharterStar() and self.activityData:getCharterState() < i and self.activityData:getCurrentPlotID() ~= nil then
-				xyd.setUISpriteAsync(self["charterBtn" .. i]:ComponentByName("", typeof(UISprite)), nil, "entrance_test_icon_jq1")
-				self["charterBtn" .. i]:ComponentByName("charterBtnLabel_", typeof(UILabel)):SetActive(true)
-				self["charterBtn" .. i]:NodeByName("redPoint").gameObject:SetActive(true)
-			else
-				xyd.setUISpriteAsync(self["charterBtn" .. i]:ComponentByName("", typeof(UISprite)), nil, "entrance_test_icon_jq1")
-				self["charterBtn" .. i]:ComponentByName("charterBtnLabel_", typeof(UILabel)):SetActive(true)
-				self["charterBtn" .. i]:NodeByName("redPoint").gameObject:SetActive(false)
-			end
+			xyd.setUISpriteAsync(self["charterBtn" .. i]:ComponentByName("", typeof(UISprite)), nil, "entrance_test_icon_jq1")
+			self["charterBtn" .. i]:ComponentByName("charterBtnLabel_", typeof(UILabel)):SetActive(true)
+			self["charterBtn" .. i]:NodeByName("redPoint").gameObject:SetActive(false)
 		end
 	end
 end
@@ -547,12 +534,6 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 	self.go:SetActive(true)
 
 	UIEventListener.Get(self.gotoBtn).onClick = function ()
-		if xyd.getServerTime() > self.parent.activityData:getEndTime() - xyd.DAY_TIME then
-			xyd.alertTips(__("ACTIVITY_END_YET"))
-
-			return
-		end
-
 		local rankString = ""
 
 		if self.data.rank == 1 then
@@ -567,18 +548,6 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 			rankString = "S"
 		end
 
-		if self.data.type == 5 and self.parent.activityData:getLevel() < 2 then
-			xyd.alertTips(__("ACTIVITY_WARMUP_ARENA_RANK_DEMAND", "A"))
-
-			return
-		end
-
-		if (self.data.type == 1 or self.data.type == 2) and self.parent.activityData:getLevel() < self.data.rank then
-			xyd.alertTips(__("ACTIVITY_WARMUP_ARENA_RANK_DEMAND", rankString))
-
-			return
-		end
-
 		if self.data.type == 4 or self.data.type == 5 then
 			if not xyd.checkFunctionOpen(xyd.FunctionID.ENTRANCE_TEST, true) then
 				xyd.alertYesNo(__("ENTRANCE_TEST_CANNOT_FIGHT"), function (yes_no)
@@ -587,18 +556,10 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 
 						if wnd then
 							xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_slot_window", {})
-							xyd.db.misc:setValue({
-								key = "warmup_set_open_time",
-								value = xyd.getServerTime()
-							})
 						else
 							xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
 								xyd.openWindow("activity_entrance_test_slot_window", {})
 							end)
-							xyd.db.misc:setValue({
-								key = "warmup_set_open_time",
-								value = xyd.getServerTime()
-							})
 						end
 					end
 				end)
@@ -607,18 +568,10 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 
 				if wnd then
 					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_slot_window", {})
-					xyd.db.misc:setValue({
-						key = "warmup_set_open_time",
-						value = xyd.getServerTime()
-					})
 				else
 					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
 						xyd.openWindow("activity_entrance_test_slot_window", {})
 					end)
-					xyd.db.misc:setValue({
-						key = "warmup_set_open_time",
-						value = xyd.getServerTime()
-					})
 				end
 			end
 		elseif self.data.type == 1 or self.data.type == 2 then
@@ -642,20 +595,12 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 							xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_slot_window", {
 								fromTask = true
 							})
-							xyd.db.misc:setValue({
-								key = "warmup_set_open_time",
-								value = xyd.getServerTime()
-							})
 						else
 							xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
 								xyd.openWindow("activity_entrance_test_slot_window", {
 									fromTask = true
 								})
 							end)
-							xyd.db.misc:setValue({
-								key = "warmup_set_open_time",
-								value = xyd.getServerTime()
-							})
 						end
 					end
 				end)
@@ -666,20 +611,58 @@ function ActivityEntranceTestChallengeTaskItem1:initUI()
 					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_slot_window", {
 						fromTask = true
 					})
-					xyd.db.misc:setValue({
-						key = "warmup_set_open_time",
-						value = xyd.getServerTime()
-					})
 				else
 					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
 						xyd.openWindow("activity_entrance_test_slot_window", {
 							fromTask = true
 						})
 					end)
-					xyd.db.misc:setValue({
-						key = "warmup_set_open_time",
-						value = xyd.getServerTime()
+				end
+			end
+		else
+			if self.data.type == 6 or self.data.type == 7 then
+				local bossID = 1
+
+				for i = 1, 3 do
+					bossID = i
+					local nowHarm = self.parent.activityData:getBossHarm(bossID)
+					local totalHarm = xyd.tables.activityWarmupArenaBossTable:getBossScore(bossID)
+
+					if nowHarm < totalHarm then
+						break
+					end
+				end
+
+				local wnd = xyd.WindowManager.get():getWindow("activity_entrance_test_window")
+
+				if wnd then
+					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_pve_window", {
+						testType = bossID
 					})
+				else
+					xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
+						xyd.openWindow("activity_entrance_test_pve_window", {
+							testType = bossID
+						})
+					end)
+				end
+
+				return
+			end
+
+			if self.data.type == 8 or self.data.type == 9 then
+				if self.parent.activityData:isCanGuess() then
+					local wnd = xyd.WindowManager.get():getWindow("activity_entrance_test_window")
+
+					if wnd then
+						xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_show_window", {})
+					else
+						xyd.WindowManager.get():closeThenOpenWindow("activity_entrance_test_challenge_task_window", "activity_entrance_test_window", {}, function ()
+							xyd.openWindow("activity_entrance_test_show_window", {})
+						end)
+					end
+				else
+					xyd.alertTips(__("ACTIVITY_NEW_WARMUP_TEXT33"))
 				end
 			end
 		end
@@ -723,7 +706,7 @@ function ActivityEntranceTestChallengeTaskItem1:updateInfo()
 		self.taskDesclabel.text = xyd.stringFormat(self.desc, rankString, text1, self.needCompleteValue, self.completeValue)
 	elseif self.type == 3 then
 		self.taskDesclabel.text = xyd.stringFormat(self.desc, text1)
-	elseif self.type == 4 or self.type == 5 then
+	else
 		self.taskDesclabel.text = xyd.stringFormat(self.desc, self.needCompleteValue)
 	end
 

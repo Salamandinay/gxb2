@@ -5,9 +5,10 @@ local skillIconSmall = import("app.components.SkillIconSmall")
 local BUFFS_TYPE = {
 	SECOND_POINT = 3,
 	FIRST_POINT = 2,
-	DEFAULT = 1
+	DEFAULT = 1,
+	THIRD_POINT = 4
 }
-local TYPE_LENGTH = 3
+local TYPE_LENGTH = 4
 
 function ActivityExploreOldCampusWaysWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -100,6 +101,7 @@ function BuffsItem:initItem()
 	local finalBuffArr = {}
 	local buffsArr = xyd.tables.oldBuildingBuffTable:getBuffBelongArr(xyd.models.oldSchool:seasonType())
 	local buffTable = xyd.tables.oldBuildingBuffTable
+	local maxIndex = xyd.models.oldSchool:getAllInfo().max_index
 
 	for i in pairs(buffsArr) do
 		if buffTable:getType(buffsArr[i]) == self.index then
@@ -116,6 +118,8 @@ function BuffsItem:initItem()
 		self.levelLabel.text = __("OLD_SCHOLL_BUFF_NAME2")
 	elseif self.index == BUFFS_TYPE.SECOND_POINT then
 		self.levelLabel.text = __("OLD_SCHOLL_BUFF_NAME3")
+	elseif self.index == BUFFS_TYPE.THIRD_POINT then
+		self.levelLabel.text = __("OLD_SCHOOL_FLOOR_11_TEXT08")
 	end
 
 	self.lineImgRight.width = 226 + (86 - self.levelLabel.width) / 2
@@ -134,8 +138,11 @@ function BuffsItem:initItem()
 		local isLock = false
 		local lockState = buffTable:needUnlock(tonumber(finalBuffArr[i].buff_id))
 		local needPoint = buffTable:getUnlockCost(tonumber(finalBuffArr[i].buff_id))[1]
+		local maxIdex = xyd.models.oldSchool:getAllInfo().max_index
 
-		if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+		if maxIdex < 8 and self.index == BUFFS_TYPE.THIRD_POINT then
+			isLock = true
+		elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
 			isLock = true
 		end
 
@@ -175,8 +182,11 @@ function BuffsItem:updateItemBuffs()
 		local buffTable = xyd.tables.oldBuildingBuffTable
 		local lockState = buffTable:needUnlock(tonumber(self.buffsItemArr[i].id))
 		local needPoint = buffTable:getUnlockCost(tonumber(self.buffsItemArr[i].id))[1]
+		local maxIdex = xyd.models.oldSchool:getAllInfo().max_index
 
-		if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+		if maxIdex < 8 and self.index == BUFFS_TYPE.THIRD_POINT then
+			isLock = true
+		elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
 			isLock = true
 		end
 

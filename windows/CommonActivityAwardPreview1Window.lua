@@ -13,6 +13,7 @@ function CommonActivityAwardPreview1Window:ctor(name, params)
 	self.setChoose2 = params.setChoose2 or {}
 	self.iconName1 = params.iconName1
 	self.iconName2 = params.iconName2
+	self.specialCenterAndShowNum = params.specialCenterAndShowNum
 end
 
 function CommonActivityAwardPreview1Window:initWindow()
@@ -34,6 +35,7 @@ function CommonActivityAwardPreview1Window:getUIComponent()
 	self.titleLabel1 = self.awardGroup1:ComponentByName("label1", typeof(UILabel))
 	self.icon1 = self.titleLabel1:ComponentByName("icon1", typeof(UISprite))
 	self.itemGroup1 = self.awardGroup1:NodeByName("itemGroup1").gameObject
+	self.specialNumLabel = self.awardGroup1:ComponentByName("specialNumLabel", typeof(UILabel))
 	self.awardGroup2 = self.mainLayout:NodeByName("awardGroup2").gameObject
 	self.titleLabel2 = self.awardGroup2:ComponentByName("label2", typeof(UILabel))
 	self.icon2 = self.titleLabel2:ComponentByName("icon2", typeof(UISprite))
@@ -47,7 +49,7 @@ function CommonActivityAwardPreview1Window:initUIComponent()
 
 	for i = 1, #self.awardData1 do
 		local award = self.awardData1[i]
-		local item = xyd.getItemIcon({
+		local params = {
 			show_has_num = true,
 			scale = 0.7962962962962963,
 			notShowGetWayBtn = true,
@@ -56,7 +58,14 @@ function CommonActivityAwardPreview1Window:initUIComponent()
 			num = award[2],
 			wndType = xyd.ItemTipsWndType.ACTIVITY,
 			dragScrollView = self.scrollView
-		})
+		}
+
+		if self.specialCenterAndShowNum then
+			params.num = nil
+			params.show_has_num = false
+		end
+
+		local item = xyd.getItemIcon(params)
 
 		item:setChoose(self.setChoose1[i] == 1 or self.setChoose1[i] == true)
 	end
@@ -81,18 +90,17 @@ function CommonActivityAwardPreview1Window:initUIComponent()
 		self.itemGroup1:X(0)
 
 		self.itemGroup1:GetComponent(typeof(UIGrid)).pivot = UIWidget.Pivot.Center
-	else
-		self.awardGroup1:GetComponent(typeof(UIWidget)).height = 100 * math.ceil(#self.awardData1 / 6) + 40
 	end
+
+	self.awardGroup1:GetComponent(typeof(UIWidget)).height = 100 * math.ceil(#self.awardData1 / 6) + 40
 
 	if #self.awardData2 < 6 then
 		self.itemGroup2:X(0)
 
 		self.itemGroup2:GetComponent(typeof(UIGrid)).pivot = UIWidget.Pivot.Center
-	else
-		self.awardGroup2:GetComponent(typeof(UIWidget)).height = 100 * math.ceil(#self.awardData2 / 6) + 40
 	end
 
+	self.awardGroup2:GetComponent(typeof(UIWidget)).height = 100 * math.ceil(#self.awardData2 / 6) + 40
 	local heightOffset = 100 * math.ceil(#self.awardData1 / 6) + 100 * math.ceil(#self.awardData2 / 6) - 300
 
 	if heightOffset > 0 then
@@ -122,7 +130,16 @@ function CommonActivityAwardPreview1Window:initUIComponent()
 		self.titleLabel2.text = "    " .. self.titleLabel2.text
 	end
 
-	self.itemGroup1:GetComponent(typeof(UIGrid)):Reposition()
+	if self.specialCenterAndShowNum then
+		self.specialNumLabel:SetActive(true)
+
+		self.specialNumLabel.text = "x" .. self.awardData1[1][2]
+
+		self.itemGroup1:X(-32)
+	else
+		self.itemGroup1:GetComponent(typeof(UIGrid)):Reposition()
+	end
+
 	self.itemGroup2:GetComponent(typeof(UIGrid)):Reposition()
 	self.scrollView:ResetPosition()
 	self.mainLayout:Reposition()

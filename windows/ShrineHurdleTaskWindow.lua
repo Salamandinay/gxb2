@@ -250,8 +250,8 @@ function ShrineHurdleNoticeWindow:register()
 					})
 				end
 
-				xyd.models.itemFloatModel:pushNewItems(items)
 				self:updateTaskGroup()
+				xyd.models.itemFloatModel:pushNewItems(items)
 			end
 		end
 	end)

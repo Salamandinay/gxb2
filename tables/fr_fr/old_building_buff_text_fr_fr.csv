@@ -7,7 +7,7 @@ id,name,desc
 6,Formation Serrée,"Lorsqu'un des ennemis subit des dégâts, les dégâts seront partagés entre tous les ennemis."
 7,Soin,Tous les ennemis récupèrent 15% de leur PV Max à la fin du tour.
 8,Bouc Émissaire,Chaque ennemi transfèrent aléatoirement 2 Effets Négatifs à une de vos Filles alliées à la fin de chaque tour (Les Effets de Contrôle seront transférés en priorité; Les Filles avec le moins d'Effet Négatif les transféreront en priorité).
-9,Sceau Ultime,"Chaque ennemi obtient 2 boucliers qui peuvent neutraliser 1 attaque mortelle le visant; en neutralisant cette attaque mortelle, une de vos Filles Filles alliées sera aléatoirement scellée (toutes les Compétences Passives qui doivent être déclenchées seront inutilisables) pendant 2 tours."
+9,Sceau Ultime,"Chaque ennemi obtient 2 boucliers qui peuvent neutraliser 1 attaque mortelle le visant; en neutralisant cette attaque mortelle, une de vos Filles alliées sera aléatoirement scellée (toutes les Compétences Passives qui doivent être déclenchées seront inutilisables) pendant 2 tours."
 10,Emprisonnement,"Au début de la bataille, 3 de vos Filles alliées seront scellées pendant 2 tours. (cet effet se déclenche 1 fois tous les 2 tours, impossible à enlever. Les Filles alliées scellées ne peuvent pas déclencher leurs Compétences Passives)"
 11,Renforcement,"Lorsqu'un ennemi subit des dégâts, ces derniers ne pourront pas être supérieurs à 10% de la valeur de leur PV Max."
 12,Aveuglement,"Au début de la bataille, 2 Filles alliées aléatoires seront aveuglées (leurs Compétences Actives cibleront 1 ennemi aléatoire pendant 1 tour, cet effet se déclenchera 1 fois à chaque tour)."
@@ -37,3 +37,7 @@ id,name,desc
 36,Compétence Scellée,"Seule une Fille alliée de votre équipe pourra déclencher sa Compétence Active à chaque tour. Une fois que cette Fille alliée aura déclenché sa Compétence Active, son Attaque sera réduite de 100% pendant 6 tours."
 37,Hallucination,"L'Attaque des Filles alliées changera avec leurs PV. (si une de vos Filles alliées perdra 1% de ses PV, son Attaque sera réduite de 1%)"
 38,Vol d'Attaque,"Au début des 4 premiers tours, les ennemis voleront 5% de l'Attaque de vos Filles alliées, respectivement en fonction de leurs positions (Cet effet ne peut pas être enlevé. Si aucune Fille alliée n'est placée en position opposée de l'ennemi, aucune Attaque ne peut être volée)"
+39,Barrière Flottante,"Au début de chaque tour, les ennemis non vaincus partageront une Barrière (1200% de l'Attaque de la Fille alliée ayant l'Attaque la plus élevée, cet effet ne peut être déclenché qu'une seule fois à chaque tour)."
+40,Pollution Méconnue,"À la fin de chaque tour, toutes les Filles alliées subiront des Dégâts sur la Durée (10% de leur PV Max) pendant 3 tours."
+41,Surtension,"Augmente de 100% l'Attaque de tous les ennemis et de 100% les dégâts infligés par tous les ennemis. À chaque fois qu'un ennemi lance son Attaque Basique ou sa Compétence Active, il a 100% de lancer une seconde fois son attaque."
+42,Repliement Urgent,"Réduit de 50% l'Attaque de toutes les Filles alliées, tandis que les ennemis récupèrent des PV (100% des dégâts subis durant ce tour) à la fin de chaque tour."

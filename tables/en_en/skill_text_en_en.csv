@@ -14954,3 +14954,380 @@ If the Attacker is [c][e28002]Taunted[-][/c] by the owner, the owner will gain a
 [c][e28002]Chains of Woe[-][/c]:
 A Mark Effect that cannot stack.
 When the owner of this Effect takes lethal damage and triggers any effect that prevents them from being defeated by this lethal damage, only 1 HP will remain on them."
+5301900,Nymphaea,Basic Attack,
+65302600,Nymphaea,Basic Attack,
+75301900,Nymphaea,Basic Attack,
+5301901,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (200% of Attack) damage and (10% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (20% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (150% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 8% of lost HP and gain 4% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+65302601,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (360% of Attack) damage and (15% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (40% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (300% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 12% of lost HP and gain 6% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+75301901,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (800% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (600% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+5301902,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 15%, Attack by 10%, Precision by 20%, Crit by 10%, and Control Immunity by 10%."
+65302602,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 25%, Attack by 20%, Precision by 30%, Crit by 20%, and Control Immunity by 20%."
+65302612,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 40%, Crit by 30%, and Control Immunity by 30%."
+75301902,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 40%, Crit by 30%, and Control Immunity by 30%."
+5301903,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (100% of Attack) damage per round, heal her Frontline allies for (200% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 8% of lost HP and gain 4% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+65302603,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (150% of Attack) damage per round, heal her Frontline allies for (400% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 12% of lost HP and gain 6% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+65302613,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (300% of Attack) damage per round, heal her Frontline allies for (800% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+75301903,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (300% of Attack) damage per round, heal her Frontline allies for (800% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+5301904,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (150% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (2% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 8% of lost HP and gain 4% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+65302604,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (300% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (3% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 12% of lost HP and gain 6% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+65302614,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (600% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+75301904,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (600% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019011,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (816% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (612% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019012,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (832% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (624% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019013,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (848% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (636% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019014,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (864% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (648% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019015,Nymphaea,Heart of Lotus,"
+Endless benevolence rests within the blossoms.
+
+Nymphaea deals (880% of Attack) damage and (25% of target’s Maximum HP) extra damage (damage dealt will not surpass 1500% of Nymphaea’s Attack) to 1 random enemy and recovers (80% of the two aforementioned damage) HP.
+She will then [c][01a310]Bleed[-][/c] all enemies for 3 rounds, dealing (660% of Attack) damage per round, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to 3 random allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019021,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 41%, Crit by 30%, and Control Immunity by 30%."
+753019022,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 42%, Crit by 30%, and Control Immunity by 30%."
+753019023,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 43%, Crit by 30%, and Control Immunity by 30%."
+753019024,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 35%, Attack by 30%, Precision by 44%, Crit by 30%, and Control Immunity by 30%."
+753019025,Nymphaea,Refreshing Aroma,"The fragrant lotus shows its compassion and love to all.\n\nIncreases Nymphaea's HP by 38%, Attack by 33%, Precision by 45%, Crit by 30%, and Control Immunity by 30%."
+753019031,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (306% of Attack) damage per round, heal her Frontline allies for (816% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019032,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (312% of Attack) damage per round, heal her Frontline allies for (832% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019033,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (318% of Attack) damage per round, heal her Frontline allies for (848% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019034,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (324% of Attack) damage per round, heal her Frontline allies for (864% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019035,Nymphaea,Moonlit Blossom,"
+Lotus flowers that bloom under the moon are sacred.
+
+Nymphaea’s Basic Attacks will [c][01a310]Bleed[-][/c] 3 random enemies for 2 rounds, dealing (330% of Attack) damage per round, heal her Frontline allies for (880% of Attack) HP, and cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to Frontline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019041,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (612% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019042,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (624% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019043,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (636% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019044,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (648% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (5% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+753019045,Nymphaea,Unwilted Elegance,"
+The gracefulness of these blossoms will never wither with time.
+
+When the battle starts, Nymphaea will cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to 3 random enemies.
+When Nymphaea is defeated, she will [c][01a310]Bleed[-][/c] all enemies for 4 rounds, dealing (660% of Attack) damage per round, and then cast [c][e28002]Full Bloom[-][/c] that lasts for 2 rounds to them. She will also cast [c][e28002]Untainted[-][/c] that lasts for 3 rounds to all allies.
+
+[c][e28002]Full Bloom[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will take (8% of the owner’s Maximum HP) extra damage (damage will not surpass 1500% of Nymphaea’s Attack) when [c][01a310]Bleed[-][/c] is inflicted to them.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Untainted[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."

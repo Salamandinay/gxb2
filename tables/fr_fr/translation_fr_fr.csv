@@ -460,7 +460,7 @@ DAILY_AWARD,Quotidienne
 SEASON_AWARD,Saisonnière
 NOW_RANK,Classement Actuel
 TOP_RANK,Meilleur Classement
-NOW_AWARD,Récompenses Actuelles :
+NOW_AWARD,Récompenses Actuelle :
 ARENA_RANK_DESC1,Envoyées tous les jours à 21h (GMT 0)
 ARENA_RANK_DESC2,Les récompenses seront envoyées par courrier
 BATTLE_RECORD,Historique
@@ -2282,7 +2282,7 @@ POTENTIALITY,Libérer
 SWITCH_POTENTIALITY,Changer
 POTENTIALITY_SWITCH_WINDOW_TITLE,Changer
 POTENTIALITY_ACTIVE,Activer
-POTENTIALITY_SWITCH_HELP,"1. Les joueurs peuvent choisir de mettre un Potentiel différent après avoir Libérer une Fille.|2. Vous pouvez voir les différents potentiels que vous n'avez pas encore débloqué, mais vous ne pouvez pas les activer.|3. Vous pouvez toucher un des potentiel afin de voir les détails, touchez ""Activer"" afin de changer de potentiel.|4. Vous ne pouvez utiliser qu'un seul potentiel à la fois pour chacune des libérations."
+POTENTIALITY_SWITCH_HELP,"1. Les joueurs peuvent choisir de mettre un Potentiel différent après avoir Libérer une fille.|2. Vous pouvez voir les différents potentiels que vous n'avez pas encore débloqué, mais vous ne pouvez pas les activer.|3. Vous pouvez toucher un des potentiel afin de voir les détails, touchez ""Activer"" afin de changer de potentiel.|4. Vous ne pouvez utiliser qu'un seul potentiel à la fois pour chacune des libérations."
 POTENTIALITY_UNLOCK_WINDOW_TITLE,Libérer
 POTENTIALITY_BREAK,Libérer
 POTENTIALITY_LEV_LIMIT_DESC_TEXT,Niveau
@@ -2537,7 +2537,7 @@ ACTIVITY_SCRATCH_CARD_HELP,"1. En utilisant une Carte à gratter, vous pouvez ob
 ACTIVITY_SCRATCH_RECORD,Historique
 HOUSE_TEXT_54,Rejoignez une Guilde pour accéder au chat de Guilde
 UNFOLD_SKIN,Liste
-FOLD_SKIN,Plier
+FOLD_SKIN,Réduire
 ARCHER_SUIT,Ensemble d'Éclaireur
 STATION_BATTLE_ENEMY_FORMATION_WINDOW,Sélectionnez votre ennemi
 TREE,Dummy
@@ -3229,7 +3229,7 @@ ACTIVITY_EQUIP_LEVEL_UP_CONFIRM_BUY,Êtes-vous sûr de dépenser {1} Pièces et 
 ACTIVITY_ENERGY_SUMMON_BUY_CARD,Continuez à invoquer après avoir obtenu la carte d'Énergie SP
 GIFT_LOCKED_CHECK,Vous pouvez débloquer cette boîte en utilisant l'objet correspondant se trouvant dans les Packs de Grande Valeur !
 ACTIVITY_PRIVILEGE_CARD_PRIVILEGE_TIME,Restant
-ACTIVITY_PRIVILEGE_CARD_NOT_ACTIVE,Pas encore activé
+ACTIVITY_PRIVILEGE_CARD_NOT_ACTIVE,Inactif
 ACTIVITY_PRIVILEGE_CARD_NOT_COMING_SOON,Contenu à venir…
 SETTING_UP_OTHER,Autre
 SETTING_UP_BATTLE_RESULT,Résultat
@@ -3349,16 +3349,16 @@ ENTRANCE_TEST_HELP_DES_1_4,Appuyez ici pour choisir son [c][cc0011]Cristal[-][/c
 ENTRANCE_TEST_HELP_DES_1_5,Appuyez ici pour choisir son [c][cc0011]Antiquité[-][/c].
 ENTRANCE_TEST_HELP_TITLE_1_1,Composition
 ENTRANCE_TEST_HELP_TITLE_2_1,Composition
-ENTRANCE_TEST_HELP_TITLE_2_2,Défense
-ENTRANCE_TEST_HELP_DES_2_1,"Après avoir atteint le Rang A, les Filles seront graduées à 15 étoiles et vous pourrez choisir leurs [c][cc0011]Potentiels[-][/c]."
-ENTRANCE_TEST_HELP_DES_2_2,"Une fois que vous avez tout choisi, l'icône ""Équipée"" apparaîtra."
-ENTRANCE_TEST_HELP_DES_2_3,"Avant de commencer la Bataille, veuillez bien former votre [c][cc0011]Équipe de Défense[-][/c].\nSi votre Équipe de Défense gagne, vous recevrez des points, si elle perd, vous en perdrez."
-ENTRANCE_TEST_HELP_TITLE_3_1,Combattre
-ENTRANCE_TEST_HELP_TITLE_3_2,Points & Classement
+ENTRANCE_TEST_HELP_TITLE_2_2,Test
+ENTRANCE_TEST_HELP_DES_2_1,Appuyez ici pour sélectionner ses [c][cc0011]Potentiels[-][/c].
+ENTRANCE_TEST_HELP_DES_2_2,"Une fois que vous aurez tout choisi, l'icône ""Équipée"" apparaîtra."
+ENTRANCE_TEST_HELP_DES_2_3,"Retrouvez 3 différents Tests d'Admission, chaque Test consommera 1 Cetificat de Test d'Admission. Vous recevrez 3 Certificats de Test d'Admission par jour, et pourrez en acheter avec des Gemmes à partir du 5ème jour. Infligez un total des [c][cc0011]dégâts[-][/c] requis dans chacun des Tests pour obtenir les Filles correspondantes."
+ENTRANCE_TEST_HELP_TITLE_3_1,Pari
+ENTRANCE_TEST_HELP_TITLE_3_2,Dégâts et Classement
 ENTRANCE_TEST_HELP_TITLE_3_3,Récompenses
-ENTRANCE_TEST_HELP_DES_3_1,"Appuyez ici pour entrer en [c][cc0011]combat[-][/c].\nPendant l'événement, vous affronterez des opposants dans la même tranche de points que vous."
-ENTRANCE_TEST_HELP_DES_3_2,"Vous aurez besoin d'un Certificat de Test d'Admission pour une bataille.\nChaque jour à 00:00 (UTC/GMT 0), votre nombre de Certificat de Test d'Admission sera réinitialisé à [c][cc0011]10[-][/c].\nDes Certificats de Test d'Admission supplémentaires sont achetables avec des Gemmes."
-ENTRANCE_TEST_HELP_DES_3_3,"Pendant l'événement, votre classement et les points que vous avez obtenus s'affichent ici."
+ENTRANCE_TEST_HELP_DES_3_1,"Vous pourrez participer aux paris à partir du [c][cc0011]4ème[-][/c] jour de l'événement.\nLes paris dureront pendant [c][cc0011]3[-][/c] jours, durant lesquels vous pourrez participer à un pari par jour. Les résultats seront affichés le lendemain de chaque pari."
+ENTRANCE_TEST_HELP_DES_3_2,"Utilisez vos [c][cc0011]Capsules Avancées[-][/c] ou vos [c][cc0011]Pièces d'Or[-][/c] pour parier.\nSi vous gagnez le Pari, vous recevrez le triple de votre mise par courrier."
+ENTRANCE_TEST_HELP_DES_3_3,Retrouvez votre record de dégâts infligés et vos classements des trois différents Tests de cet événement.
 ENTRANCE_TEST_HELP_DES_3_4,Touchez l'icône de [c][cc0011]Récompenses[-][/c] pour accéder à l'interface de Tâches de la Nouvelle Fille.\nDes récompenses supplémentaires seront débloquées si vous achetez [c][cc0011]Avis d'Admission[-][/c].
 ACTIVITY_WARMUP_PACK_TEXT04,"Après l'achat,\nvous obtiendrez："
 ACTIVITY_WARMUP_PACK_TEXT05,Valeur
@@ -3865,7 +3865,7 @@ OLD_SCHOOL_FLOOR_NAME,{1}e Étage
 OLD_SCHOLL_BUFF_NAME1,Bonus Primaire
 OLD_SCHOLL_BUFF_NAME2,Bonus Intermédiaire
 OLD_SCHOOL_FIGHT_NAME,Étage {1} Défi {2}
-OLD_SCHOOL_HELP1,"Règles de l'événement|1. Durée de l'événement : 14 jours - Période de défi (13 jours) et Journée d'affichage (1 jour). |2. Le bâtiment du Vieux Campus possède 10 étages. Chaque étage peut proposer 3 Défis au maximum. Passer un Défi de l'étage actuel permet de déverrouiller l'étage suivant. ||Défi|1. Avant de lancer un Défi, choisissez votre équipe pour tous les Défis de cet Étage.|2. Vous pouvez choisir toutes sortes de Bonus pour renforcer les ennemis. Chaque type de Bonus donne un nombre de Scores différents après votre victoire.|3. Score Basique de Défi Actuel： Après avoir terminé un Défi avec l'équipe que vous avez enregistrée, le Score obtenu sera considéré comme votre Score Basique de Défi Actuel. Ce Score changera si vous ajustez votre équipe pour ce Défi.|4. Meilleur Score d'Étage： La somme des meilleurs Scores Basiques des Défis Actuels. Ne changera pas même après avoir ajusté votre équipe dans un des Défis.|5. Score total： La somme des meilleurs Scores de chaque étage.||Récompense Saisonnière|1. Récompense d'Étage： passez les Défis de cet Étage sans ajuster votre équipe pour obtenir les récompenses correspondantes (récupérables manuellement).|2. Récompenses de Score total： en atteignant certains paliers de Score, vous obtiendrez des récompenses de palier (récupérables manuellement)|3. Récompenses de Classement： les joueurs sont classés selon leur Score total par Zone inter-serveurs. (Dans le cas de Scores identiques, le joueur qui atteint le Score le premier sera considéré comme premier). Les récompenses de Classement vous seront envoyées par courrier à la fin de chaque saison. Les joueurs n'ayant aucun Score ne recevront rien.|4. Récompenses de Boutique： la Boutique Saisonnière sera déverrouillée après avoir atteint un certain Score; la Boutique Permanente sera déverrouillée après avoir atteint un certain Score au fil des saisons. Dans ces Boutiques, vous pouvez acheter des Documents Préparatoires et des Documents Préparatoires Avancés pour améliorer les Compétences d'Élites de vos Filles."
+OLD_SCHOOL_HELP1,"Règles de l'événement|1. Durée de l'événement : 14 jours - Période de défi (13 jours) et Journée d'affichage (1 jour). |2. Le bâtiment du Vieux Campus possède 11 étages. Chaque étage peut proposer 3 Défis au maximum. Passer un Défi de l'étage actuel permet de déverrouiller l'étage suivant (passez les 10 premiers étages et obtenu 1000 Scores pour accéder à 11ème étage). ||Défi|1. Avant de lancer un Défi, choisissez votre équipe pour tous les Défis de cet Étage.|2. Vous pouvez choisir toutes sortes de Bonus pour renforcer les ennemis. Chaque type de Bonus donne un nombre de Scores différents après votre victoire.|3. Score Basique de Défi Actuel：Après avoir terminé un Défi avec l'équipe que vous avez enregistrée, le Score obtenu sera considéré comme votre Score Basique de Défi Actuel. Ce Score changera si vous ajustez votre équipe pour ce Défi.|4. Meilleur Score d'Étage：La somme des meilleurs Scores Basiques des Défis Actuels. Ne changera pas même après avoir ajusté votre équipe dans un des Défis.|5. Règle de 11ème étage : Tous les Bonus seront automatiquement sélectionnés et vous vous serez classé en fonction de vos dégâts infligé dans cet étage (les TOP 50 joueurs obtiendront des Scores supplémentaires).|6. Score total：La somme des meilleurs Scores des 10 premiers étages + les Scores obtenus (en fonction de classement) dans 11ème étage.||Récompense Saisonnière|1. Récompense d'Étage：Passez les Défis de cet Étage sans ajuster votre équipe pour obtenir les récompenses correspondantes (récupérables manuellement).|2. Récompenses de Score total：En atteignant certains paliers de Score, vous obtiendrez des récompenses de palier (récupérables manuellement)|3. Récompenses de Classement des Scores：Les joueurs sont classés selon leur Score total par Zone inter-serveurs. (Dans le cas de Scores identiques, le joueur qui atteint le Score le premier sera considéré comme premier). Les récompenses vous seront envoyées par courrier à la fin de chaque saison. Les joueurs n'ayant aucun Score ne recevront rien.|4. Récompenses de Classement des dégâts：Les joueurs sont classés selon leurs dégâts infligés dans 11ème étage. Les récompenses vous seront envoyées par courrier à la fin de chaque saison.|5. Récompenses de Boutique：La Boutique Saisonnière sera déverrouillée après avoir atteint un certain Score; la Boutique Permanente sera déverrouillée après avoir atteint un certain Score au fil des saisons. Dans ces Boutiques, vous pouvez acheter des Documents Préparatoires et des Documents Préparatoires Avancés pour améliorer les Compétences d'Élites de vos Filles."
 OLD_SCHOOL_HELP2,"1. À la fin de la Période de Défi de chaque saison de l'Exploration du Vieux Campus, les récompenses de classement seront envoyées et les dix meilleurs joueurs recevront un Cadre d'Avatar de 14 jours. |2. Classement des points par inter-serveurs."
 ACTIVITY_STUDY_NEED_ENERGY3,Voulez-vous utiliser 1 Chance pour choisir une autre réponse ?
 OLD_SCHOOL_SHOP_TEXT1,Saisonnière
@@ -4543,11 +4543,11 @@ TRAVEL_MAIN_TEXT66,達成後，限購增加至{1}次
 ENTRANCE_TEST_CANNOT_FIGHT,"Vous ne pouvez pas encore participer à la bataille pour le moment, voulez-vous tout de même former une équipe ?"
 ENTRANCE_TEST_NOT_OPEN,"Veuillez d'abord terminer l'Étape {1} de la Campagne pour accéder aux batailles de Test d'Admission. Pour le moment, vous pouvez seulement participer aux paris !"
 ACTIVITY_RETURN_GIFT_TEXT,Choisissez ce que vous voulez !
-ENTRANCE_TEST_SHOWS_TIPS,Gagnez le pari et obtenez votre mise [c][0x723c1c size=34]DOUBLÉES[-][/c]
+ENTRANCE_TEST_SHOWS_TIPS,Gagnez le Pari et obtenez le [c][0x723c1c size=34]Triple[-][/c] des récompenses !
 ENTRANCE_TEST_GUESS_CHANGE,Reparier
 REPAIR_TO_RESET_GAME,"Le jeu sera automatiquement redémarré après la réparation, voulez-vous réparer ?"
 PUB_MISSION_AUTO_HELP,"1. Les Jobs en masse vous permettent d'accomplir les missions des Filles et d'obtenir des récompenses.|2. Lorsque le nombre de Jobs en cours et le nombre de Jobs accomplis est en excès, vous ne pourrez pas utiliser la fonction Job en masse, veuillez alors collecter les récompenses de quelques Jobs manuellement en appuyant sur Finir.|3. Si vous voulez commencer un Job d'un nombre d'étoile spécifique, veuillez appuyer sur l'icône du nombre d'étoile correspondant.|4. Si vous ne souhaitez pas effectuer un Job de la liste Job en masse, vous pouvez le décocher ainsi il sera ignoré."
-ENTRANCE_TEST_GUESS_CHANGE_TIPS,Voulez-vous changer votre pari sur cette équipe ?
+ENTRANCE_TEST_GUESS_CHANGE_TIPS,Voulez-vous changer votre pari pour cette équipe ?
 ACTIVITY_RESIDENT_RETURN_RECOMMENT1,"Senpai, ça fait longtemps que je ne t'ai pas vu ~"
 ACTIVITY_RESIDENT_RETURN_RECOMMENT2,Voici quelques recommandations d'amis et de Guildes pour vous !
 ACTIVITY_ENTRANCE_TEST_SHOW_WINDOW_HELP,"1. Durant cet événement, vous pouvez utiliser vos Pièces d'Or et participer aux paris.|2. L'Équipe Rouge est l'Attaquante et l'Équipe Bleue est la Défensive. Il n'y a pas de limite de tour pour chaque combat. Vous recevrez les récompenses seulement si votre pari est gagné.|3. Pour chaque pari, vous pouvez choisir entre 3 mises différentes. Plus la mise est importante, plus votre gain sera important si vous gagnez le pari.|4. Le pari sera actualisé chaque jour à 00h00 (GMT 0), et le résultat du pari du jour précédent sera affiché."
@@ -4934,10 +4934,10 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"Votre limite de Pierre Antique obtenue a été 
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"Cette Antiquité est utilisée,\nvoulez-vous continuer à choisir ?"
 DAILY_QUIZ_TEXT04,Utilisez des Gemmes pour obtenir plus de Chances：
 PUB_MISSION_AUTO_TEXT1,Tout Collecter
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Plus vous possédez d'Antiquités Oranges dans votre collection\nplus vous aurez de choix d'Antiquités Oranges pour équiper vos Filles.
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,*Cette Antiquité est uniquement disponible dans cet événement
 ENTRANCE_TEST_PARTNER_NOT_READY,Vous avez choisi des Filles qui n'ont pas encore été entièrement équipées dans votre Équipe. Voulez-vous continuer ?
 ENTRANCE_TEST_BATTLE_JUMP_SET,Configurer
-ENTRANCE_TEST_PET_EXSKILL,Le niveau de Noyau Précieux ici est du même niveau que celui du Serviteur correspondant.
+ENTRANCE_TEST_PET_EXSKILL,"Dans les Tests d'Admission, les Serviteurs sont au Niv. 100."
 ENTRANCE_TEST_PET_CANNOT_UPGRADE,Vous ne pouvez pas monter le niveau de vos Serviteurs dans cet événement.
 SNS_ACTIVITY_HTTP_BTN01,Aller à
 SNS_ACTIVITY_TEXT01,Aller à la Communauté
@@ -4976,7 +4976,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Une Rencontre Effrayante
+WARMUP_ARENA_TASK_INFO_2,Des Larmes Partagées
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -5224,7 +5224,7 @@ NEW_ARENA_ALL_SERVER_TEXT_10,Débloqué après avoir atteint le Rang Or
 NEW_ARENA_ALL_SERVER_TEXT_11,Débloqué après avoir atteint le Rang Diamant
 NEW_ARENA_ALL_SERVER_TEXT_12,Actualiser({1})
 NEW_ARENA_ALL_SERVER_TEXT_13,Rang Actuel :
-NEW_ARENA_ALL_SERVER_TEXT_14,Récompenses Actuelles :
+NEW_ARENA_ALL_SERVER_TEXT_14,Récompense Actuelle :
 NEW_ARENA_ALL_SERVER_TEXT_15,Les récompenses seront envoyées selon votre Rang après la fin de Ruée de Point (Condition de récupération : avoir lancé 10 combats ou + )
 NEW_ARENA_ALL_SERVER_TEXT_16,Retourner les cartes automatiquement aujourd'hui
 NEW_ARENA_ALL_SERVER_TEXT_17,Groupe {1}
@@ -6289,7 +6289,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Énergie nécessaire : {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Après avoir changé la Compétence Spatiale, toutes les Énergies Laser seront retirées. Voulez-vous continuer à changer ?"
 ACTIVITY_LOST_SPACE_NAV1,Objets Spatiaux
 ACTIVITY_LOST_SPACE_NAV2,Aide
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Durant cet événement, explorez les cases de la Station Spatiale Égarée en utilisant des Détecteurs Spatiaux. Après avoir détecté une case, vous obtiendrez une récompense aléatoire et les cases adjacentes seront visibles.|2. Chaque étape comprend un Site de Téléportation. Après avoir touché son icône, vous obtiendrez une Boîte d'approvisionnement de l'étape actuelle et entrerez dans l'étape suivante.|3. Les Coordonnées de Ravitaillement sont dispersées sur plusieurs étapes. Après avoir repéré 3 Coordonnées de Ravitaillement, s'affichera un Site de Ravitaillement qui vous permettra d'obtenir d'énormes récompenses après avoir y être entré. |4. Choisissez une Compétence Spatiale pour vous aider à mieux d'explorer les mystères de la Station Spatiale Égarée. Vous obtiendrez 1 Énergie Laser pour chaque utilisation de Détecteur Spatial. Après avoir collecté un certain nombre d'Énergie Laser, vous pourrez déclencher la Compétence Spatiale de votre choix.|5. La Compétence Spatiale peut être changée à tout moment. Cependant une fois changée, toutes les Énergies Laser obtenues seront retirées.|6. Collectez les récompenses en touchant l'icône - Tout collecter (n'inclut pas les objets spatiaux).|7. Moyen d'obtention de Détecteur Spatial : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace, Distribution Chanceuse et Pack à Souhait. |8. Après la fin de l'événement, les Détecteurs Spatiaux non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Détecteur Spatial = 1000k Pièce d'Or."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Durant cet événement, explorez les cases de la Station Spatiale Égarée en utilisant des Détecteurs Spatiaux. Après avoir détecté une case, vous obtiendrez une récompense aléatoire et les cases adjacentes seront visibles.|2. Chaque étape comprend un Site de Téléportation. Après avoir touché son icône, vous obtiendrez une Boîte d'approvisionnement de l'étape actuelle et entrerez dans l'étape suivante.|3. Les Coordonnées de Ravitaillement sont dispersées sur plusieurs étapes. Après avoir repéré 3 Coordonnées de Ravitaillement, s'affichera un Site de Ravitaillement qui vous permettra d'obtenir d'énormes récompenses après avoir y être entré. |4. Choisissez une Compétence Spatiale pour vous aider à mieux d'explorer les mystères de la Station Spatiale Égarée. Vous obtiendrez 1 Énergie Laser pour chaque utilisation de Détecteur Spatial. Après avoir collecté un certain nombre d'Énergie Laser, vous pourrez déclencher la Compétence Spatiale de votre choix.|5. La Compétence Spatiale peut être changée à tout moment. Cependant une fois changée, toutes les Énergies Laser obtenues seront retirées.|6. Collectez les récompenses en touchant l'icône - Tout collecter (n'inclut pas les objets spatiaux).|7. Moyen d'obtention de Détecteur Spatial : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack de l'Espace, Pack Personnalisé, Célébration du Mois et Distribution Chanceuse.|8. L'Auto-Exploration est uniquement disponible lorsque votre nombre de Détecteur Spatial est supérieur à 5. L'Auto-Exploration ne s'arretera que lorsque vous détecterez le Site de Téléportation de l'étape actuelle ou n'aurez plus de Détecteur Spatial. Les Compétences Spatiales et Événements Spéciaux seront utilisés normalement pendant l'Auto-Exploration.|9. Après la fin de l'événement, les Détecteurs Spatiaux non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Détecteur Spatial = 1000k Pièce d'Or."
 GAME_ASSISTANT_TEXT103,Cafétéria - Récompense des Commandes
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Le nombre d'Énergies Laser a atteint sa limite, confirmez-vous ne pas vouloir déclencher la Compétence Spatiale ?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,Aucune case disponible pour lancer la Compétence Spatiale de votre choix.
@@ -6845,7 +6845,7 @@ ANNUAL4_REVIEW_7_2,Sincèrement
 ANNUAL4_REVIEW_4_6_1,Mais n'oubliez pas...\nIl y a encore [c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nqui attend(ent) une bague de Serment de votre part...
 ANNUAL4_REVIEW_4_7_1,"Selon une étude menée au sein de l'Académie,\nencore[c][size=25][ff7fd6]{1}[-][/c] Fille(s)\nattend(ent) une bague de Serment de votre part."
 ACTIVITY_4BIRTHDAY_TITLE,Bal d'Anniversaire
-OLD_SCHOOL_FLOOR_11_TIPS,Débloqué après avoir passé les 10 premiers étages et obtenu {1} Scores.
+OLD_SCHOOL_FLOOR_11_TIPS,Débloqué après avoir passé les 10 premiers Étages et obtenu {1} Scores.
 OLD_SCHOOL_FLOOR_11_TEXT01,Record des dégâts : {1}
 OLD_SCHOOL_FLOOR_11_TEXT02,Dégâts : {1}
 OLD_SCHOOL_FLOOR_11_TEXT03,Classement
@@ -6985,59 +6985,100 @@ ACTIVITY_CHIME_TEXT11,Combien de Grue Jadéite voulez-vous utiliser ?
 ACTIVITY_CUPID_GIFT_TEXT12,Ouvrir 5 fois
 ACTIVITY_CHIME_TEXT13,Utiliser
 ACTIVITY_ENTRANCE_TEST_TEXT01,Pari
-ACTIVITY_NEW_WARMUP_HELP1,測驗競猜幫助文本1
+ACTIVITY_NEW_WARMUP_HELP1,"1. Lors du quatrième jour de l'événement, vous pourrez participer au Pari.|2. Les Paris dureront sur 3 jours, vous pouvez participer au Pari une fois par jour, et les résultats seront affichés le lendemain.|3. Vous devrez consommer des Capsules Avancées ou des Pièces d'Or pour chaque Pari. Si vous gagnez un Pari, vous recevrez trois fois votre investissement du Pari par courrier."
 ACTIVITY_NEW_WARMUP_TEXT1,Pari
 ACTIVITY_NEW_WARMUP_TEXT2,Pas encore commencé !
 ACTIVITY_NEW_WARMUP_TEXT4,Test\nde Force
 ACTIVITY_NEW_WARMUP_TEXT5,Test\nde Tenacité
 ACTIVITY_NEW_WARMUP_TEXT6,Test\nde Sagesse
-ACTIVITY_NEW_WARMUP_TEXT7,通過{1}，解鎖該戰姬
-ACTIVITY_NEW_WARMUP_TEXT9,測驗競猜
-ACTIVITY_NEW_WARMUP_TEXT10,競猜成功
-ACTIVITY_NEW_WARMUP_TEXT11,三倍
-ACTIVITY_NEW_WARMUP_TEXT12,返還
-ACTIVITY_NEW_WARMUP_TEXT13,猜中
-ACTIVITY_NEW_WARMUP_TEXT14,未猜中
-ACTIVITY_NEW_WARMUP_TEXT15,未競猜
-ACTIVITY_NEW_WARMUP_TEXT16,通關傷害
-ACTIVITY_NEW_WARMUP_TEXT17,通關獎勵
-ACTIVITY_NEW_WARMUP_TEXT18,*Cette Fille est uniquement disponible dans cet événement
-ACTIVITY_NEW_WARMUP_TEXT19,剩餘挑戰次數
+ACTIVITY_NEW_WARMUP_TEXT7,Passez le {1} pour débloquer cette Fille
+ACTIVITY_NEW_WARMUP_TEXT9,Pari du Test
+ACTIVITY_NEW_WARMUP_TEXT10,Gagnez le Pari et
+ACTIVITY_NEW_WARMUP_TEXT11,triplez
+ACTIVITY_NEW_WARMUP_TEXT12,votre mise
+ACTIVITY_NEW_WARMUP_TEXT13,Gagné
+ACTIVITY_NEW_WARMUP_TEXT14,Perdu
+ACTIVITY_NEW_WARMUP_TEXT15,Non-participation
+ACTIVITY_NEW_WARMUP_TEXT16,Dégâts
+ACTIVITY_NEW_WARMUP_TEXT17,Récompenses
+ACTIVITY_NEW_WARMUP_TEXT18,*Ces Filles sont uniquement utilisables dans Test d'Admission
+ACTIVITY_NEW_WARMUP_TEXT19,Certificat(s) restant
 ACTIVITY_NEW_WARMUP_TEXT20,Bataille Démo
 ACTIVITY_NEW_WARMUP_TEXT21,Bataille Réelle
 ACTIVITY_NEW_WARMUP_TEXT22,Capsule Avancée insuffisante !
 ACTIVITY_NEW_WARMUP_TEXT23,Pièce d'Or insuffisante !
-ACTIVITY_NEW_WARMUP_TEXT24,已押注
+ACTIVITY_NEW_WARMUP_TEXT24,Pari placé !
 OLD_SCHOOL_FLOOR_11_TEXT16,Dégâts：
 OLD_SCHOOL_FLOOR_11_TEXT17,Nouveau meilleur Score de l'Étage
-ACTIVITY_SAND_HELP01,使用鏟子挖開沙堡，收集貝殼獲得積分
-ACTIVITY_SAND_HELP02,積分達到指定目標可獲得獎勵\n獲得本輪所有獎勵後，進入下一輪
-ACTIVITY_SAND_HELP03,沙堡中可能會出現奇怪的東西哦，學長自行探索吧~
-ACTIVITY_SAND_TEXT01,自動
-ACTIVITY_SAND_TEXT02,請選擇使用鏟子的數量
-ACTIVITY_SAND_TEXT03,第5輪後可開啟自動尋寶
-ACTIVITY_SAND_TEXT04,自動尋寶將隨機挖開沙堡，是否繼續？
+ACTIVITY_SAND_HELP01,"À l'aide des Pelles, creusez sous les châteaux de sable pour y trouver des Pièces de l'Océan et des points."
+ACTIVITY_SAND_HELP02,"Une fois avoir obtenu les trois récompenses du tour actuel,\nvous accéderez automatiquement au tour suivant."
+ACTIVITY_SAND_HELP03,"En creusant, vous aurez la possibilité de tomber sur des objets étranges... Mais ne vous arrêtez pas là, continuez à creuser, Senpai~"
+ACTIVITY_SAND_TEXT01,Auto
+ACTIVITY_SAND_TEXT02,Combien de Pelle voulez-vous utiliser ?
+ACTIVITY_SAND_TEXT03,La fonction Creuser Automatiquement sera disponible une fois avoir atteint le Tour 3.
+ACTIVITY_SAND_TEXT04,"En utilisant la fonction Creuser Automatiquement, les châteaux de sables seront sélectionnés aléatoirement, voulez-vous continuer ?"
 ACTIVITY_SAND_TEXT05,Récompenses
 ACTIVITY_SAND_TEXT06,Tour
 ACTIVITY_SAND_TEXT07,Récompenses
-ACTIVITY_SAND_TEXT08,獲取盛夏新裝~
-ACTIVITY_SAND_MISSION_TAB01,每日任務
-ACTIVITY_SAND_MISSION_TAB02,活動任務
-ACTIVITY_SAND_GIFTBAG_HELP,購買盛夏邀請函後，完成所有每日任務獲得的鏟子數量翻倍！活動期間任意時間購買，均會補發已完成任務可額外獲得的鏟子。
-ACTIVITY_SAND_GIFTBAG_TEXT01,盛夏邀請函
-ACTIVITY_SAND_GIFTBAG_TEXT02,未激活
-ACTIVITY_SAND_GIFTBAG_TEXT03,已激活
-ACTIVITY_SAND_GIFTBAG_TEXT04,立即獲得
-ACTIVITY_SAND_GIFTBAG_TEXT05,盛夏之約每日任務獲得「鏟子」數量翻倍！
-ACTIVITY_SAND_SHOP_TAB01,盛夏新裝
-ACTIVITY_SAND_SHOP_TAB02,往期返場
-ACTIVITY_SAND_SHOP_TAB03,道具兌換
-ACTIVITY_SAND_SHOP_TEXT01,完成{1}輪沙灘尋寶後解鎖
-ACTIVITY_LOST_SPACE_TEXT11,自主探索
-ACTIVITY_LOST_SPACE_TEXT12,探測儀為5以下時無法自主探索
-ACTIVITY_LOST_SPACE_TEXT13,自主探索結果
-ACTIVITY_LOST_SPACE_TEXT14,消耗探測儀
-ACTIVITY_LOST_SPACE_TEXT15,獲得獎勵
-ACTIVITY_LOST_SPACE_TEXT16,已找到跳躍點，無法自主探索
-ACTIVITY_LOST_SPACE_TEXT17,是否確認自主探索？
-ACTIVITY_NEW_WARMUP_TEXT25,競猜己結束
+ACTIVITY_SAND_TEXT08,Nouveaux Skins d'Été disponibles !
+ACTIVITY_SAND_MISSION_TAB01,Journalière
+ACTIVITY_SAND_MISSION_TAB02,Événement
+ACTIVITY_SAND_GIFTBAG_HELP,"1. Après avoir fait l'achat de - Invitation de l'été, vous recevrez le double de Pelles en récompenses des tâches journalières dans Tâches de l'Été ! Les Pelles que vous aurez obtenues avant d'avoir fait l'achat de l'Invitation de l'été vous seront également envoyées par courrier.|2. La limite d'achat des Packs aux Trésors (inclut Invitation de l'été) sera rafraîchie lors de la deuxième semaine des événements. Vos chances restantes d'achat s'accumuleront à celles de la deuxième semaine."
+ACTIVITY_SAND_GIFTBAG_TEXT01,Invitation de l'été
+ACTIVITY_SAND_GIFTBAG_TEXT02,Inactif
+ACTIVITY_SAND_GIFTBAG_TEXT03,Activé
+ACTIVITY_SAND_GIFTBAG_TEXT04,Obtention immédiate
+ACTIVITY_SAND_GIFTBAG_TEXT05,Recevez le double de Pelle en récompenses\ndes tâches journalières dans Tâches d'Été !
+ACTIVITY_SAND_SHOP_TAB01,Nouveau
+ACTIVITY_SAND_SHOP_TAB02,Ancien
+ACTIVITY_SAND_SHOP_TAB03,Autres
+ACTIVITY_SAND_SHOP_TEXT01,Débloqué après avoir complété le Tour {1} dans - Plage aux Trésors.
+ACTIVITY_LOST_SPACE_TEXT11,Auto
+ACTIVITY_LOST_SPACE_TEXT12,Auto-Exploration indisponible si vous avez moins de 5 Détecteurs Spatiaux.
+ACTIVITY_LOST_SPACE_TEXT13,Résultat
+ACTIVITY_LOST_SPACE_TEXT14,Utiliser Détecteur Spatial
+ACTIVITY_LOST_SPACE_TEXT15,Récompense Obtenue
+ACTIVITY_LOST_SPACE_TEXT16,Auto-Exploration indisponible lorsque le Site de Téléportation a été détecté.
+ACTIVITY_LOST_SPACE_TEXT17,Voulez-vous passer en Auto-Exploration ?
+ACTIVITY_NEW_WARMUP_TEXT25,Pari Terminé !
+ACTIVITY_NEW_WARMUP_TEXT26,Débloqué après avoir passé le Test de Force
+ACTIVITY_NEW_WARMUP_TEXT27,Débloqué après avoir passé le Test de Ténacité
+ACTIVITY_NEW_WARMUP_TEXT28,Débloqué après avoir passé le Test de Sagesse
+ACTIVITY_SAND_TITLE,Plage\naux Trésors
+ACTIVITY_NEW_WARMUP_TEXT29,Dégâts
+ACTIVITY_NEW_WARMUP_TEXT30,Achetable dès le {1} jour
+ACTIVITY_NEW_WARMUP_TEXT31,Veuillez patienter~
+ACTIVITY_NEW_WARMUP_TEXT32,Pari terminé !
+ACTIVITY_NEW_WARMUP_TEXT33,Les Paris seront ouverts à partir du 4ème jour
+ACTIVITY_NEW_WARMUP_TEXT34,Test de Force
+ACTIVITY_NEW_WARMUP_TEXT35,Test de Tenacité
+ACTIVITY_NEW_WARMUP_TEXT36,Test de Sagesse
+ACTIVITY_NEW_WARMUP_TEXT37,"Événement terminé, paris indisponibles !"
+ACTIVITY_FREE_REVERT_TEXT01,Inverser
+ACTIVITY_FREE_REVERT_TEXT02,Êtes-vous sûr de vouloir inverser cette Fille ?
+ACTIVITY_FREE_REVERT_TEXT03,"1. Durant cet événement, vous pouvez inverser les Filles proposées sans consommer aucune ressource.|2. Toutes les ressources utilisées pour améliorer cette Fille vous seront rendues."
+ACTIVITY_FREE_REVERT_TEXT04,"1. Les Filles (sauf 6 étoiles) peuvent être Inversées et les Poupées ne peuvent pas être Éveillées, Échangées, Inversées ou Transférées, elles ne peuvent pas recevoir de cadeau ou être placées dans le Dortoir.|2. Les équipements et les Antiquités des Filles ayant été inversées seront envoyés dans le Sac.|3. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupées de la même Maison 5 étoiles*5 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupées de la même Maison 5 étoiles*7 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupées de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*3|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*2 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*3 + Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*4 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Maison 9 étoiles*4 + Copie de cette Fille 5 étoiles*9|4. Après avoir inversé une Fille 1-15 étoile(s), vous recevrez toutes les ressources utilisées.|5. Vous pouvez inverser les Filles (1-5 étoiles) gratuitement, cependant il vous faut utiliser respectivement 400/600/800 Gemmes pour inverser une Fille 7/8/9 étoiles. Pour inverser une Fille (10-15 étoiles), il vous faut utiliser 5 Diplômes pour l'effectuer.|6. La Faveur et le Serment seront rendus à l'une des copies rendues de cette Fille.|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne seront pas comptabilisées dans l'Evénement Mensuel."
+GROWTH_DIARY_TITLE,成長日記
+GROWTH_DIARY_TEXT01,第{1}章
+GROWTH_DIARY_TEXT02,完成度
+GROWTH_DIARY_TEXT03,章節獎勵
+GROWTH_DIARY_TEXT04,領取獎勵
+GROWTH_DIARY_TEXT05,完成所有任務後解鎖
+GROWTH_DIARY_TEXT06,完成上一章節後解鎖當前章節
+GROWTH_DIARY_TEXT07,已領取
+GROWTH_DIARY_TEXT08,當前章節未解鎖
+GROWTH_DIARY_TEXT09,標有{1}的任務只能在當前介面完成
+ACTIVITY_NEW_WARMUP_TEXT38,Voulez-vous placer votre pari sur cette équipe ?
+GUILD_COMPETITION_ACTIVE_TEXT01,活躍度任務
+GUILD_COMPETITION_ACTIVE_TEXT02,活躍度
+GUILD_COMPETITION_ACTIVE_TEXT03,每日任務
+GUILD_COMPETITION_ACTIVE_TEXT04,社團任務
+GUILD_COMPETITION_ACTIVE_HELP,活躍度|達到指定數量全社團成員均可獲得獎勵，透過郵件發放。|每日任務|每日刷新，完成可領取獎勵並且增加社團總活躍度。|社團任務|全社團共享進度，完成后所有社團內玩家均可領取獎勵。
+GUILD_COMPETITION_PARTNER_HELP,1.天空島開啟期間，學長可將戰姬進修。（天異陣營以及無法升至15星的戰姬無法進行）|2.戰姬進修後，等級和星級將提升至自身擁有的最高等級戰姬；精英技能等級將跟隨星級變化，11-15星對應精英技能1-5級；裝備默認為粉色職業套；學長可以自行配置職業套技能、水晶、魂器和潛能。|3.實戰時，可花費50K金幣選擇進修戰姬出戰，同名戰姬每日僅可進行並實戰1次。
+GUILD_COMPETITION_PARTNER_TITLE,戰姬進修
+GUILD_COMPETITION_PARTNER_TEXT01,請選擇進行戰姬
+GUILD_COMPETITION_PARTNER_TEXT02,同名戰姬每日僅可進行並實戰1次
+GUILD_COMPETITION_PARTNER_TEXT03,是否花費50K金幣選擇進行戰姬出戰？
+GUILD_COMPETITION_SKILL_TIPS,敵人已達到更高周目\n注意查看技能變化哦~
+GUILD_COMPETITION_CHALLENGE_TEXT01,挑戰目標
+GUILD_COMPETITION_CHALLENGE_TEXT02,達成1/2/3個目標，最終得分增加10%%/20%%/30%%

@@ -87,13 +87,6 @@ function CollectionSkinDetailWindow:initWindow()
 	if xyd.GuideController.get():isGuideComplete() then
 		self.bubbleRoot_:SetActive(false)
 	end
-
-	if xyd.Global.lang == "en_en" then
-		self.getWayText_:SetLocalPosition(80, -120, 0)
-
-		self.getWayText_.width = 250
-		self.getWayText_.spacingY = 10
-	end
 end
 
 function CollectionSkinDetailWindow:getUIComponent()
@@ -127,11 +120,13 @@ function CollectionSkinDetailWindow:getUIComponent()
 	self.qltGroup = self.groupInfo_:ComponentByName("qltGroup", typeof(UISprite))
 	self.labelQlt = self.qltGroup:ComponentByName("labelQlt", typeof(UILabel))
 	self.labelTheme = self.groupInfo_:ComponentByName("labelTheme", typeof(UILabel))
+	self.themeWords = self.groupInfo_:ComponentByName("themeWords", typeof(UILabel))
 
 	self.bubbleRoot_:SetActive(false)
 
 	self.partnerImg_ = ParnterImg.new(self.partnerImgRoot_)
-	self.partnerNameTag_ = PartnerNameTag.new(self.partnerNameTagRoot_, true)
+	self.labelSkinName = self.partnerNameTagRoot_:ComponentByName("labelSkinName", typeof(UILabel))
+	self.labelParnerName = self.labelSkinName:ComponentByName("labelParnerName", typeof(UILabel))
 end
 
 function CollectionSkinDetailWindow:initTopGroup()
@@ -157,6 +152,7 @@ function CollectionSkinDetailWindow:firstInit()
 	self.attrWords_.text = __("COLLECTION_SKIN_TIP_1")
 	self.getWayWords_.text = __("COLLECTION_SKIN_TIP_2")
 	self.goShopBtnLabel_.text = __("SKIN_TEXT26")
+	self.themeWords.text = __("COLLECTION_SKIN_TEXT06")
 end
 
 function CollectionSkinDetailWindow:initSkinEffect()
@@ -283,15 +279,17 @@ function CollectionSkinDetailWindow:updateNameTag()
 	local name = xyd.tables.equipTextTable:getName(skinItem.skin_id)
 	local partnerName = xyd.tables.partnerTextTable:getName(skinItem.tableID)
 	local group = xyd.tables.partnerTable:getGroup(skinItem.tableID)
+	self.labelParnerName.text = partnerName
+	self.labelSkinName.text = name
 
-	self.partnerNameTag_:setSkinName(name, partnerName, group, skinItem.tableID)
+	self.labelParnerName:X(self.labelSkinName.width / 2)
 end
 
 function CollectionSkinDetailWindow:updateCV()
 	local name = self.partner_:getCVName()
 
 	if name ~= nil and name then
-		self.cvGroup_:SetActive(true)
+		self.cvGroup_:SetActive(false)
 
 		self.cvNameLabel_.text = __("CV") .. " " .. name
 	else
@@ -328,7 +326,7 @@ function CollectionSkinDetailWindow:updatePartnerSkin()
 		self.themeID = xyd.tables.collectionTable:getGroup(collectionID)
 
 		if self.themeID then
-			self.labelTheme.text = __("COLLECTION_SKIN_TEXT28", xyd.tables.collectionSkinGroupTextTable:getName(self.themeID))
+			self.labelTheme.text = xyd.tables.collectionSkinGroupTextTable:getName(self.themeID)
 
 			self.labelTheme:SetActive(true)
 		end

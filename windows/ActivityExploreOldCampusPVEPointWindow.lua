@@ -55,7 +55,7 @@ function ActivityExploreOldCampusPVEPointWindow:initData()
 			point = xyd.models.oldSchool:getOldBuildingAward1Table():getPoint(id)
 		}
 
-		if params.point <= xyd.models.oldSchool:getAllInfo().score then
+		if params.point <= tonumber(xyd.models.oldSchool:getAllInfo().score) then
 			if xyd.models.oldSchool:getAllInfo().awards[id] == 0 then
 				table.insert(self.canGetIds, id)
 

@@ -450,6 +450,14 @@ function StoryWindow:onSkipTouch()
 		end
 
 		if yes then
+			if self.storyType_ == xyd.StoryType.OTHER or self.storyType_ == xyd.StoryType.PARTNER or self.storyType_ == xyd.StoryType.ACTIVITY then
+				local msg = messages_pb:log_partner_data_touch_req()
+				msg.touch_id = xyd.DaDian.STORY_SKIP
+				msg.desc = self.storyID_ .. "," .. self.storyType_
+
+				xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+			end
+
 			if self.jumpToSelect then
 				if self.storyType_ == xyd.StoryType.ACTIVITY_VALENTINE then
 					while self.storyID_ > 0 do
@@ -1820,16 +1828,14 @@ function StoryWindow:disappearStory(skip)
 						xyd.WindowManager.get():closeWindow("story_window")
 					end)
 				end)
+			else
+				xyd.WindowManager.get():closeWindow("story_window")
 
-				return
-			end
+				local wnd = xyd.WindowManager.get():getWindow("battle_window")
 
-			xyd.WindowManager.get():closeWindow("story_window")
-
-			local wnd = xyd.WindowManager.get():getWindow("battle_window")
-
-			if wnd then
-				wnd:playStartAction()
+				if wnd then
+					wnd:playStartAction()
+				end
 			end
 		else
 			self:closeSwitch()
@@ -1908,6 +1914,14 @@ function StoryWindow:disappearStory(skip)
 		self:closeSwitch()
 	else
 		self:closeSwitch()
+	end
+
+	if self.endId and not self.isSkip_ and (self.storyType_ == xyd.StoryType.OTHER or self.storyType_ == xyd.StoryType.PARTNER or self.storyType_ == xyd.StoryType.ACTIVITY) then
+		local msg = messages_pb:log_partner_data_touch_req()
+		msg.touch_id = xyd.DaDian.STORY_READ_OVER
+		msg.desc = self.endId .. "," .. self.storyType_
+
+		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
 	end
 end
 

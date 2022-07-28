@@ -66,9 +66,9 @@ function ActivityEntranceShowsDetailWindow:updateGroupShow()
 	local str = nil
 
 	if self.nowGroup_ == 1 then
-		str = __("ACTIVITY_SPORTS_NOW_LOOK_GROUP", __("ACTIVITY_SPORTS_RED"))
+		str = __("ACTIVITY_SPORTS_NOW_LOOK_GROUP")
 	else
-		str = __("ACTIVITY_SPORTS_NOW_LOOK_GROUP", __("ACTIVITY_SPORTS_BLUE"))
+		str = __("ACTIVITY_SPORTS_NOW_LOOK_GROUP")
 	end
 
 	self.tipWords.text = str
@@ -77,31 +77,34 @@ end
 function ActivityEntranceShowsDetailWindow:initDataGroup()
 	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
 	local dayIndex = activityData:getDayIndex()
-	local monster1 = xyd.tables.activityEntranceTestGuessBattle:getMonster1(dayIndex)
-	local monster2 = xyd.tables.activityEntranceTestGuessBattle:getMonster2(dayIndex)
+	local partners = activityData:getGambleInfo(dayIndex)
 	self.pInfoList1_ = {}
 	self.pInfoList2_ = {}
 
-	for i = 1, #monster1 do
-		local partnerInfo = xyd.tables.activityEntranceTestMonsterTable:getPartnerData(monster1[i])
+	for i = 1, 6 do
+		if partners and partners[1] and partners[1][i] then
+			local partnerInfo = partners[1][i]
 
-		table.insert(self.pInfoList1_, partnerInfo)
-		PartnerStationBattleDetailItem.new(self.grid.gameObject, {
-			info = partnerInfo,
-			list = self.pInfoList1_,
-			index = i
-		})
+			table.insert(self.pInfoList1_, partnerInfo)
+			PartnerStationBattleDetailItem.new(self.grid.gameObject, {
+				info = partnerInfo,
+				list = self.pInfoList1_,
+				index = i
+			})
+		end
 	end
 
-	for i = 1, #monster2 do
-		local partnerInfo = xyd.tables.activityEntranceTestMonsterTable:getPartnerData(monster2[i])
+	for i = 1, 6 do
+		if partners and partners[2] and partners[2][i] then
+			local partnerInfo = partners[2][i]
 
-		table.insert(self.pInfoList2_, partnerInfo)
-		PartnerStationBattleDetailItem.new(self.grid2.gameObject, {
-			info = partnerInfo,
-			list = self.pInfoList2_,
-			index = i
-		})
+			table.insert(self.pInfoList2_, partnerInfo)
+			PartnerStationBattleDetailItem.new(self.grid2.gameObject, {
+				info = partnerInfo,
+				list = self.pInfoList2_,
+				index = i
+			})
+		end
 	end
 end
 
@@ -152,6 +155,8 @@ function PartnerStationBattleDetailItem:registerEvent()
 end
 
 function PartnerStationBattleDetailItem:layout()
+	self.btnAttrDetail:SetActive(false)
+
 	local partner = self.info
 	local info = partner:getInfo()
 	local attrs = partner:getBattleAttrs()

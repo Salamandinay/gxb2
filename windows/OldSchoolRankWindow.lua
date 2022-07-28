@@ -108,7 +108,7 @@ function RankItem:update(_, info)
 	end
 
 	if self.point_ <= 0 then
-		self.point_ = xyd.models.oldSchool:getAllInfo().score
+		self.point_ = xyd.models.oldSchool:getSelfScore()
 	end
 
 	self:initUIComponent()
@@ -118,16 +118,17 @@ function OldSchoolRankWindow:ctor(name, params)
 	OldSchoolRankWindow.super.ctor(self, name, params)
 end
 
-function OldSchoolRankWindow:initRankInfo(event)
-	self.rank_data_ = self.rankData_.list
+function OldSchoolRankWindow:initRankInfo()
+	self.rank_data_ = xyd.models.oldSchool:getExtraRankList()
 	self.self_data_ = {
 		rank = -1,
 		score = 0
 	}
+	local data = xyd.models.oldSchool:getRankData()
 
-	if event.data and event.data.self_rank then
-		self.self_data_.rank = event.data.self_rank + 1
-		self.self_data_.score = event.data.self_score
+	if data and data.self_rank then
+		self.self_data_.rank = data.self_rank + 1
+		self.self_data_.score = data.self_score
 	end
 
 	for i = 1, #self.rank_data_ do
@@ -151,19 +152,14 @@ function OldSchoolRankWindow:initWindow()
 	self:getComponent()
 	OldSchoolRankWindow.super.initWindow(self)
 	self:registerEvent()
+	self.window_:SetActive(true)
+	self.rankNode:SetActive(true)
+	self:initRankInfo()
+	self:initUI()
+	self:initRankList()
 end
 
 function OldSchoolRankWindow:registerEvent()
-	self.eventProxy_:addEventListener(xyd.event.OLD_BUILDING_RANK_LIST, function (event)
-		self.window_:SetActive(true)
-		self.rankNode:SetActive(true)
-
-		self.rankData_ = event.data
-
-		self:initRankInfo(event)
-		self:initUI()
-		self:initRankList()
-	end)
 	self.rankNode:SetActive(false)
 	self.awardNode:SetActive(false)
 	self.window_:SetActive(false)

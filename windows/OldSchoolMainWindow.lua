@@ -35,6 +35,7 @@ function OldSchoolMainWindow:initWindow()
 	self:initTopGroup()
 	self:updateInfo()
 	self:initTime()
+	xyd.models.oldSchool:reqRankList()
 
 	local redPointState = xyd.db.misc:getValue("old_school_red_point" .. xyd.models.oldSchool:getAllInfo().season_info.count)
 
@@ -103,6 +104,11 @@ function OldSchoolMainWindow:initTime()
 			duration = durationTime,
 			callback = handler(self, self.timeOver)
 		})
+		self.refreshRankTime = Timer.New(function ()
+			xyd.models.oldSchool:reqRankList()
+		end, 30, -1)
+
+		self.refreshRankTime:Start()
 	else
 		self:timeOver()
 	end
@@ -121,7 +127,7 @@ function OldSchoolMainWindow:initUIComponent()
 	xyd.setUISpriteAsync(self.titleImg, nil, "old_school_title_" .. xyd.Global.lang, nil, )
 
 	self.scoreLabelText.text = __("TOTAL_GRADE")
-	self.scoreLabel.text = xyd.models.oldSchool:getAllInfo().score
+	self.scoreLabel.text = xyd.models.oldSchool:getSelfScore()
 	self.data = self.oldBuildingFloorTable:getIDs()
 
 	UIEventListener.Get(self.helpBtn.gameObject).onClick = function ()
@@ -147,6 +153,8 @@ function OldSchoolMainWindow:initUIComponent()
 	UIEventListener.Get(self.shopBtn_).onClick = function ()
 		xyd.WindowManager.get():openWindow("old_school_shop_window", {})
 	end
+
+	dump(xyd.models.oldSchool:getAllInfo().floor_infos, "xyd.models.oldSchool:getAllInfo()")
 
 	if xyd.models.oldSchool:getAllInfo() then
 		local eventData = xyd.models.oldSchool:getAllInfo()
@@ -212,7 +220,13 @@ function OldSchoolMainWindow:initUIComponent()
 		xyd.models.oldSchool:updateUnlockBuffInfo(data)
 		xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_PURCHASE_SUCCESS"))
 	end)
+	self.eventProxy_:addEventListener(xyd.event.OLD_BUILDING_HARM_LIST, handler(self, self.updateScore))
+	self.eventProxy_:addEventListener(xyd.event.OLD_BUILDING_RANK_LIST, handler(self, self.updateScore))
 	self.eventProxy_:addEventListener(xyd.event.OLD_BUILDING_FIGHT, handler(self, self.onOldBuildingFight))
+end
+
+function OldSchoolMainWindow:updateScore()
+	self.scoreLabel.text = xyd.models.oldSchool:getSelfScore()
 end
 
 function OldSchoolMainWindow:initTopGroup()
@@ -254,7 +268,7 @@ function OldSchoolMainWindow:onOldBuildingFight(event)
 			infoItems[i]:update(nil, infoItems[i].data)
 
 			for k in pairs(data.floor_info.cur_scores) do
-				if xyd.models.oldSchool:getAllInfo().max_score < data.floor_info.cur_scores[k] then
+				if tonumber(xyd.models.oldSchool:getAllInfo().max_score) < tonumber(data.floor_info.cur_scores[k]) then
 					xyd.models.oldSchool:getAllInfo().max_score = data.floor_info.cur_scores[k]
 				end
 			end
@@ -267,6 +281,10 @@ function OldSchoolMainWindow:onOldBuildingFight(event)
 
 			self:updateAreaScoreAndAllScore(backFloorId, data.floor_info.score)
 		end
+	end
+
+	if backFloorId == 11 then
+		xyd.models.oldSchool:reqRankList(true)
 	end
 end
 
@@ -290,11 +308,13 @@ function OldSchoolMainWindow:updateAreaScoreAndAllScore(backFloorId, score)
 	local all_score = 0
 
 	for i in pairs(allInfo.floor_infos) do
-		all_score = all_score + allInfo.floor_infos[i].score
+		if i ~= 11 then
+			all_score = all_score + allInfo.floor_infos[i].score
+		end
 	end
 
 	xyd.models.oldSchool:getAllInfo().score = all_score
-	self.scoreLabel.text = xyd.models.oldSchool:getAllInfo().score
+	self.scoreLabel.text = xyd.models.oldSchool:getSelfScore()
 
 	xyd.models.oldSchool:setScore(all_score)
 	self:updateScoreGetAwardRedPoint()
@@ -390,6 +410,7 @@ function SecondBigItem:initUI()
 	self.redPoint = self.setPartnerBtn:ComponentByName("redPoint", typeof(UISprite))
 	self.setPartnerBtnLabel = self.setPartnerBtn:ComponentByName("setPartnerBtnLabel", typeof(UILabel))
 	self.name = self.go:ComponentByName("name", typeof(UILabel))
+	self.nameBg_ = self.go:ComponentByName("nameBg", typeof(UISprite))
 	self.labelDesc_ = self.go:ComponentByName("labelDesc_", typeof(UILabel))
 	self.labelDescBg_ = self.go:ComponentByName("labelDescBg_", typeof(UISprite))
 	self.showCon = self.go:ComponentByName("showCon", typeof(UILayout))
@@ -399,9 +420,6 @@ function SecondBigItem:initUI()
 	self.awardBtn = self.go:NodeByName("awardBtn").gameObject
 	self.awardBtn_uisprite = self.go:ComponentByName("awardBtn", typeof(UISprite))
 	self.awardBtnRedPoint = self.go:NodeByName("awardBtnRedPoint").gameObject
-
-	xyd.setUITextureByNameAsync(self.locakImg_, "old_school_bg_ft")
-
 	self.setPartnerBtnLabel.text = __("SET_DEF_FORMATION")
 	UIEventListener.Get(self.setPartnerBtn.gameObject).onClick = handler(self, function ()
 		if self.dataInfo then
@@ -460,14 +478,32 @@ function SecondBigItem:initUI()
 		end
 	end)
 	UIEventListener.Get(self.awardBtn.gameObject).onClick = handler(self, function ()
-		xyd.WindowManager.get():openWindow("activity_explore_old_campus_floor_award_window", {
-			floor_id = self.data.floorId,
-			completeds = self.data.dataInfo.completeds,
-			complete_num = self.data.dataInfo.complete_num
-		})
+		if self.data.floorId >= 11 and xyd.models.oldSchool:checkUnlock11Floor() > 0 then
+			xyd.WindowManager.get():openWindow("old_school_harm_rank_window", {})
+		elseif self.data.floorId >= 11 and xyd.models.oldSchool:checkUnlock11Floor() < 0 then
+			local point = xyd.tables.miscTable:getVal("old_building_floor11_point")
+
+			xyd.alertTips(__("OLD_SCHOOL_FLOOR_11_TIPS", point))
+		else
+			xyd.WindowManager.get():openWindow("activity_explore_old_campus_floor_award_window", {
+				floor_id = self.data.floorId,
+				completeds = self.data.dataInfo.completeds,
+				complete_num = self.data.dataInfo.complete_num
+			})
+		end
 	end)
 	UIEventListener.Get(self.maskBg_.gameObject).onClick = handler(self, function ()
-		xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_FLOOR_LOCK_TIPS"))
+		if self.data.floorId >= 11 then
+			local flag = xyd.models.oldSchool:checkUnlock11Floor()
+
+			if flag <= -1 then
+				local point = xyd.tables.miscTable:getVal("old_building_floor11_point")
+
+				xyd.alertTips(__("OLD_SCHOOL_FLOOR_11_TIPS", point))
+			end
+		else
+			xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_FLOOR_LOCK_TIPS"))
+		end
 	end)
 end
 
@@ -475,7 +511,7 @@ function SecondBigItem:open3V3Win()
 	local isCurFloorZero = true
 
 	for i in pairs(self.data.dataInfo.cur_scores) do
-		if self.data.dataInfo.cur_scores[i] > 0 then
+		if tonumber(self.data.dataInfo.cur_scores[i]) > 0 then
 			isCurFloorZero = false
 		end
 	end
@@ -523,10 +559,6 @@ function SecondBigItem:updateInfo()
 	self.name.text = __("OLD_SCHOOL_FLOOR_NAME", self.data.floorId)
 	local stageArr = self_oldBuildingFloorTable:getStage(self.data.floorId)
 
-	xyd.setUITextureByNameAsync(self.imgBg_, "old_school_bg" .. self.data.floorId % 2 + 1, true)
-
-	self.labelDesc_.text = __("ACTIVITY_EXPLORE_OLD_CAMPUS_BEST_SCORE", self.data.dataInfo.score)
-
 	self:setAwardImg()
 
 	self.itemArr = {}
@@ -534,9 +566,18 @@ function SecondBigItem:updateInfo()
 	NGUITools.DestroyChildren(self.showCon.gameObject.transform)
 	self.second_small_item:SetActive(true)
 
+	local type = 1
+
+	if self.data.floorId >= 11 then
+		type = 2
+		self.labelDesc_.text = __("OLD_SCHOOL_FLOOR_11_TEXT01", xyd.getRoughDisplayNumber(tonumber(self.data.dataInfo.score)))
+	else
+		self.labelDesc_.text = __("ACTIVITY_EXPLORE_OLD_CAMPUS_BEST_SCORE", tonumber(self.data.dataInfo.score))
+	end
+
 	for i in pairs(stageArr) do
 		local tmp = NGUITools.AddChild(self.showCon.gameObject, self.second_small_item.gameObject)
-		local item = SecondSmallItem.new(tmp, stageArr[i], self, self.data.dataInfo.cur_scores[i], i)
+		local item = SecondSmallItem.new(tmp, stageArr[i], self, self.data.dataInfo.cur_scores[i], i, type)
 
 		table.insert(self.itemArr, item)
 	end
@@ -562,7 +603,7 @@ function SecondBigItem:updateInfo()
 		end
 	end
 
-	if TableIndex <= maxIndex + 1 then
+	if TableIndex <= maxIndex + 1 and self.data.floorId < 11 or xyd.models.oldSchool:checkUnlock11Floor() > 0 and self.data.floorId >= 11 then
 		self.setPartnerBtn:SetActive(true)
 		self.maskBg_:SetActive(false)
 		self.locakImg_:SetActive(false)
@@ -585,35 +626,59 @@ function SecondBigItem:updateInfo()
 	else
 		self.redPoint:SetActive(false)
 	end
+
+	self:updateImg()
+end
+
+function SecondBigItem:updateImg()
+	if self.data.floorId >= 11 then
+		xyd.setUITextureByNameAsync(self.imgBg_, "old_school_bg4", true)
+		xyd.setUISpriteAsync(self.labelDescBg_, nil, "old_building_special_bg2")
+		xyd.setUISpriteAsync(self.nameBg_, nil, "old_building_special_bg3")
+		xyd.setUITextureByNameAsync(self.locakImg_, "old_school_bg_ft2")
+	else
+		xyd.setUITextureByNameAsync(self.imgBg_, "old_school_bg" .. self.data.floorId % 2 + 1, true)
+		xyd.setUISpriteAsync(self.labelDescBg_, nil, "old_building_floor_score_bg")
+		xyd.setUISpriteAsync(self.nameBg_, nil, "old_building_floor_title_bg")
+		xyd.setUITextureByNameAsync(self.locakImg_, "old_school_bg_ft")
+	end
 end
 
 function SecondBigItem:setAwardImg()
-	local isGetAllAward = false
-	local getAwardNum = 0
-
-	for i in pairs(self.data.dataInfo.awards) do
-		if self.data.dataInfo.awards[i] == 1 then
-			getAwardNum = getAwardNum + 1
-		end
-	end
-
-	if getAwardNum >= #self.data.dataInfo.awards then
-		isGetAllAward = true
-	end
-
-	if isGetAllAward then
-		xyd.setUISpriteAsync(self.awardBtn_uisprite, nil, "award_icon_open", function ()
-			self.awardBtn_uisprite:MakePixelPerfect()
-			self.awardBtn_uisprite:SetLocalScale(0.7, 0.7, 0.7)
+	if self.data.floorId >= 11 then
+		xyd.setUISpriteAsync(self.awardBtn_uisprite, nil, "btn_rank_2", function ()
+			self.awardBtn_uisprite.width = 49
+			self.awardBtn_uisprite.height = 49
 		end, nil)
+		self.awardBtnRedPoint:SetActive(false)
 	else
-		xyd.setUISpriteAsync(self.awardBtn_uisprite, nil, "guild_war_award", function ()
-			self.awardBtn_uisprite:MakePixelPerfect()
-			self.awardBtn_uisprite:SetLocalScale(0.7, 0.7, 0.7)
-		end, nil)
-	end
+		local isGetAllAward = false
+		local getAwardNum = 0
 
-	self:isCheckFloorCanGetAward()
+		for i in pairs(self.data.dataInfo.awards) do
+			if self.data.dataInfo.awards[i] == 1 then
+				getAwardNum = getAwardNum + 1
+			end
+		end
+
+		if getAwardNum >= #self.data.dataInfo.awards then
+			isGetAllAward = true
+		end
+
+		if isGetAllAward then
+			xyd.setUISpriteAsync(self.awardBtn_uisprite, nil, "award_icon_open", function ()
+				self.awardBtn_uisprite.width = 49
+				self.awardBtn_uisprite.height = 49
+			end, nil)
+		else
+			xyd.setUISpriteAsync(self.awardBtn_uisprite, nil, "guild_war_award", function ()
+				self.awardBtn_uisprite.width = 49
+				self.awardBtn_uisprite.height = 49
+			end, nil)
+		end
+
+		self:isCheckFloorCanGetAward()
+	end
 end
 
 function SecondBigItem:isCheckFloorCanGetAward()
@@ -640,12 +705,13 @@ function SecondBigItem:setAlphaAll()
 	NGUITools.DestroyChildren(self.showCon.gameObject.transform)
 end
 
-function SecondSmallItem:ctor(goItem, levelId, parent, cur_score, levelIndex)
+function SecondSmallItem:ctor(goItem, levelId, parent, cur_score, levelIndex, type)
 	self.goItem_ = goItem
 	self.levelId = levelId
 	self.cur_score = cur_score
 	self.levelIndex = levelIndex
 	self.parent = parent
+	self.type_ = type
 	self.imgBg = self.goItem_:ComponentByName("imgBg", typeof(UISprite))
 	self.labelDesc = self.goItem_:ComponentByName("labelDesc", typeof(UILabel))
 	self.groupModel = self.goItem_:NodeByName("effectCon").gameObject
@@ -654,8 +720,18 @@ function SecondSmallItem:ctor(goItem, levelId, parent, cur_score, levelIndex)
 	self.goItem_widget = self.goItem_:GetComponent(typeof(UIWidget))
 	self.labelIndex = self.goItem_:ComponentByName("labelIndex", typeof(UILabel))
 	self.fightbtnLabel = self.fightbtn:ComponentByName("fightbtnLabel", typeof(UILabel))
+	self.effectConDis = self.goItem_:ComponentByName("effectConDis", typeof(UISprite))
 
 	xyd.setUISpriteAsync(self.imgBg, nil, "9gongge16", nil, )
+
+	self.waitForTimeKeys_ = {}
+	local widget = self.groupModel:GetComponent(typeof(UIWidget))
+
+	print("levelId  ", levelId)
+
+	widget.depth = 5 + self.levelIndex * 2 + xyd.tables.oldBuildingStageTable:getFloor(levelId) * 3
+	self.effectConDis.depth = widget.depth + 1
+
 	self:initItem(levelId)
 	self:initEvent(levelId)
 end
@@ -740,7 +816,7 @@ function SecondSmallItem:initEvent(levelId)
 		local isCurFloorZero = true
 
 		for i in pairs(self.parent.data.dataInfo.cur_scores) do
-			if self.parent.data.dataInfo.cur_scores[i] > 0 then
+			if tonumber(self.parent.data.dataInfo.cur_scores[i]) > 0 then
 				isCurFloorZero = false
 			end
 		end
@@ -754,8 +830,6 @@ function SecondSmallItem:initEvent(levelId)
 		})
 	end)
 	UIEventListener.Get(self.goItem_.gameObject).onClick = handler(self, function ()
-		print("点进来了============")
-
 		local battleId = xyd.tables.oldBuildingStageTable:getBattleId(levelId)
 		local enemies = xyd.tables.battleTable:getMonsters(battleId)
 
@@ -784,7 +858,12 @@ function SecondSmallItem:getItemObj()
 end
 
 function SecondSmallItem:initItem(levelId)
-	self.labelDesc.text = __("ACTIVITY_EXPLORE_OLD_CAMPUS_NOW_SCORE", self.cur_score)
+	if self.type_ == 1 then
+		self.labelDesc.text = __("ACTIVITY_EXPLORE_OLD_CAMPUS_NOW_SCORE", xyd.getRoughDisplayNumber(tonumber(self.cur_score)))
+	else
+		self.labelDesc.text = __("OLD_SCHOOL_FLOOR_11_TEXT02", xyd.getRoughDisplayNumber(tonumber(self.cur_score)))
+	end
+
 	self.labelIndex.text = self.levelIndex
 	self.fightbtnLabel.text = __("FIGHT")
 	local heroTableID = xyd.tables.oldBuildingStageTable:getPartnerId(levelId)
@@ -798,18 +877,23 @@ function SecondSmallItem:initItem(levelId)
 			self.heroModel_ = nil
 		end
 
-		local widget = self.groupModel:GetComponent(typeof(UIWidget))
 		local scale = xyd.tables.modelTable:getScale(modelID)
 		local node = xyd.Spine.new(self.groupModel)
 
 		node:setInfo(name, function ()
 			node:SetLocalScale(-scale, scale, scale)
-			node:setRenderTarget(self.groupModel:GetComponent(typeof(UIWidget)), 1)
+			node:setRenderTarget(self.groupModel:GetComponent(typeof(UITexture)), 1)
 			node:play("idle", 0)
 			node:setAlpha(1)
 		end)
 
 		self.heroModel_ = node
+	end
+
+	if self.parent.data.floorId >= 11 then
+		xyd.setUISpriteAsync(self.labelBg, nil, "old_building_special_bg1")
+	else
+		xyd.setUISpriteAsync(self.labelBg, nil, "old_building_level_score_bg")
 	end
 end
 
@@ -817,6 +901,14 @@ function SecondSmallItem:setLockState(isLock)
 	self.fightbtn:SetActive(isLock)
 	self.labelDesc:SetActive(isLock)
 	self.labelIndex:SetActive(isLock)
+end
+
+function OldSchoolMainWindow:willClose(callback)
+	if self.refreshRankTime then
+		self.refreshRankTime:Stop()
+	end
+
+	OldSchoolMainWindow.super.willClose(self, callback)
 end
 
 return OldSchoolMainWindow

@@ -7,6 +7,9 @@ function ActivityEntranceTestData:ctor(params)
 	self.canUsePartners = {}
 	self.sortedPartners_ = {}
 	self.settedHeros = {}
+	self.rankDataList_ = {}
+	self.recordRankSelfScoreArr = {}
+	self.recordGamblePartners = {}
 	self.dataHasChange = false
 	self.matchEnemyList = {}
 	self.matchIndex = 1
@@ -23,6 +26,11 @@ function ActivityEntranceTestData:ctor(params)
 		xyd.partnerSortType.isCollected,
 		xyd.partnerSortEntranceTestType.FINISH
 	}
+	self.isCanUpdatePveArr = {}
+
+	for i = 1, self:getPveMaxStage() do
+		self.isCanUpdatePveArr[i] = true
+	end
 
 	ActivityData.ctor(self, params)
 
@@ -31,48 +39,46 @@ function ActivityEntranceTestData:ctor(params)
 	xyd.models.collection:reqCollectionInfo()
 	self:registerEvent(xyd.event.WARMUP_BET, self.onSportsBet, self)
 	self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, self.onActivityIfon, self)
+	self:registerEvent(xyd.event.WARMUP_GET_REPORT, self.onGetGambleInfo, self)
+	self:registerEvent(xyd.event.WARMUP_GET_RANK_LIST, self.onGetRankInfo, self)
+	self:registerEvent(xyd.event.WARMUP_UPDATE_PARTNER_LIST, self.onWarmupUpdatePartnerListBack, self)
+	self:registerEvent(xyd.event.BOSS_BUY, self.onBossBuyBack, self)
 	self:registerEvent(xyd.event.GET_COLLECTION_INFO, function ()
-		local partnerSettingsBefore = xyd.db.misc:getValue("activity_entrance_test_partner_list")
+	end)
+end
 
-		if partnerSettingsBefore and self.firstTime then
-			self.firstTime = false
-			partnerSettingsBefore = json.decode(partnerSettingsBefore)
+function ActivityEntranceTestData:onWarmupUpdatePartnerListBack(event)
+	for key, p in pairs(self.canUsePartners) do
+		for k, info in pairs(self.detail.partner_list) do
+			if p:getTableID() == info.table_id then
+				for i in pairs(p:getPotential()) do
+					if info.potentials[i] ~= p:getPotential()[i] then
+						info.potentials = xyd.cloneTable(p:getPotential())
+					end
+				end
 
-			for keyBefore, valueBefore in pairs(partnerSettingsBefore) do
-				for key, value in pairs(self.detail.partner_list) do
-					if value.table_id == valueBefore.table_id then
-						self.detail.partner_list[key] = partnerSettingsBefore[keyBefore]
-						local artifactID = self.detail.partner_list[key].equips[6]
+				if info.skill_index ~= p:getSkillIndex() then
+					info.skill_index = p:getSkillIndex()
+				end
 
-						if artifactID and artifactID ~= 0 then
-							local artifactLev = xyd.tables.activityEntranceTestRankTable:getArtifactLev(self:getLevel())
-							local collectionID = xyd.tables.itemTable:getCollectionId(artifactID)
-							local collectionItemID = xyd.tables.collectionTable:getItemId(collectionID)
-							local lev1 = xyd.tables.equipTable:getItemLev(collectionItemID)
+				for i in pairs(p:getEquipment()) do
+					if info.equips[i] ~= p:getEquipment()[i] then
+						info.equips = xyd.cloneTable(p:getEquipment())
+					end
+				end
 
-							if lev1 == 36 then
-								local pinkItemID = xyd.tables.equipTable:getSoulByIdAndLev(collectionItemID, 39)
-								local hasGotPink = xyd.models.collection:isGot(xyd.tables.itemTable:getCollectionId(pinkItemID))
-
-								if hasGotPink and xyd.tables.equipTable:getItemLev(pinkItemID) == 39 then
-									lev1 = 39
-								end
-							end
-
-							if artifactLev ~= lev1 then
-								self.dataHasChange = true
-							end
-
-							artifactLev = math.min(artifactLev, lev1)
-							self.detail.partner_list[key].equips[6] = xyd.tables.equipTable:getSoulByIdAndLev(artifactID, artifactLev)
-						end
+				for i in pairs(info.equips) do
+					if info.equips[i] ~= p:getEquipment()[i] then
+						info.equips = xyd.cloneTable(p:getEquipment())
 					end
 				end
 			end
-
-			self:sendSettedPartnerReq()
 		end
-	end)
+	end
+
+	self.canUsePartners = {}
+
+	self:makeHeros()
 end
 
 function ActivityEntranceTestData:onSportsBet(event)
@@ -381,39 +387,6 @@ function ActivityEntranceTestData:onSportsBet(event)
 	self.detail.bet_records = event.data.bet_records
 end
 
-function ActivityEntranceTestData:addNewPartner(partner)
-	local partnerId = 1
-
-	for i in pairs(self.canUsePartners) do
-		if self.canUsePartners[i].partnerID then
-			partnerId = partnerId + 1
-		end
-	end
-
-	partner.partnerID = partnerId
-	partner.equipments = self.getInitEquip()
-	partner.potentials = {
-		0,
-		0,
-		0
-	}
-
-	if not self.detail.partner_list then
-		self.detail.partner_list = {}
-	end
-
-	local params = {
-		table_id = partner.tableID,
-		equips = partner.equipments,
-		potentials = partner.potentials,
-		tableIndex = partner.tableIndex
-	}
-
-	table.insert(self.detail.partner_list, params)
-
-	self.dataHasChange = true
-end
-
 function ActivityEntranceTestData:getPartnerByIndex(tableIndex)
 	for key, p in pairs(self.canUsePartners) do
 		if tableIndex == p.tableIndex then
@@ -430,36 +403,10 @@ function ActivityEntranceTestData:getPartnerByPartnerId(partner_id)
 	end
 end
 
-function ActivityEntranceTestData:deletePartner(partner)
-	for i in pairs(self.detail.partner_list) do
-		if partner.tableIndex == self.detail.partner_list[i].tableIndex then
-			table.remove(self.detail.partner_list, i)
-
-			break
-		end
-	end
-
-	partner.equipments = self.getInitEquip()
-	partner.potentials = {
-		0,
-		0,
-		0
-	}
-
-	for key, p in pairs(self.canUsePartners) do
-		if partner.partnerID < p.partnerID then
-			p.partnerID = p.partnerID - 1
-		end
-	end
-
-	partner.partnerID = 0
-	self.dataHasChange = true
-end
-
 function ActivityEntranceTestData:setSkillIndex(partner_id, index)
-	for key, p in pairs(self.detail.partner_list) do
-		if tonumber(p.table_id) == tonumber(partner_id) and index and tonumber(index) > 0 then
-			p.skill_index = index
+	for key, p in pairs(self.canUsePartners) do
+		if tonumber(p:getTableID()) == tonumber(partner_id) and index and tonumber(index) > 0 then
+			p:setSkillIndex(index)
 		end
 	end
 end
@@ -470,30 +417,88 @@ function ActivityEntranceTestData:sendSettedPartnerReq()
 	end
 
 	local partnerList = {}
+	local isSend = false
 
-	for key, p in pairs(self.detail.partner_list) do
-		local param = messages_pb:warmup_partner_info()
-		param.table_id = p.table_id
+	for key, p in pairs(self.canUsePartners) do
+		local isSame = true
 
-		if self:getLevel() ~= xyd.EntranceTestLevelType.R1 then
-			for i in pairs(p.potentials) do
-				table.insert(param.potentials, p.potentials[i])
+		for k, info in pairs(self.detail.partner_list) do
+			if p:getTableID() == info.table_id then
+				for i in pairs(p:getPotential()) do
+					if info.potentials[i] ~= p:getPotential()[i] then
+						isSame = false
+
+						break
+					end
+				end
+
+				if isSame == false then
+					break
+				end
+
+				if info.skill_index ~= p:getSkillIndex() then
+					isSame = false
+				end
+
+				if isSame == false then
+					break
+				end
+
+				for i in pairs(p:getEquipment()) do
+					if info.equips[i] ~= p:getEquipment()[i] then
+						isSame = false
+
+						break
+					end
+				end
+
+				if isSame == false then
+					break
+				end
+
+				for i in pairs(info.equips) do
+					if info.equips[i] ~= p:getEquipment()[i] then
+						isSame = false
+
+						break
+					end
+				end
+
+				if isSame == false then
+					break
+				end
 			end
 		end
 
-		for i in pairs(p.equips) do
-			table.insert(param.equips, p.equips[i])
-		end
+		if isSame == false then
+			isSend = true
+			local param = messages_pb:warmup_partner_info()
+			param.table_id = p:getTableID()
 
-		if p.time ~= nil then
-			param.time = p.time
-		end
+			for i in pairs(p:getPotential()) do
+				table.insert(param.potentials, p:getPotential()[i])
+			end
 
-		if p.skill_index and tonumber(p.skill_index) > 0 then
-			param.skill_index = p.skill_index
-		end
+			for i in pairs(p:getEquipment()) do
+				table.insert(param.equips, p:getEquipment()[i])
+			end
 
-		table.insert(partnerList, param)
+			if p.time ~= nil then
+				param.time = p.time
+			end
+
+			if p:getSkillIndex() and tonumber(p:getSkillIndex()) > 0 then
+				param.skill_index = p:getSkillIndex()
+			end
+
+			param.id = p.tableIndex
+
+			table.insert(partnerList, param)
+		end
+	end
+
+	if isSend == false then
+		return
 	end
 
 	local msg = messages_pb:warmup_update_partner_list_req()
@@ -515,7 +520,7 @@ function ActivityEntranceTestData:sendSettedPartnerReq()
 end
 
 function ActivityEntranceTestData:setPartnerTime(partner)
-	for key, p in pairs(self.detail.partner_list) do
+	for key, p in pairs(self.canUsePartners) do
 		if p.tableIndex == partner.tableIndex then
 			p.time = xyd.getServerTime()
 			partner.last_love_point_time = xyd.getServerTime()
@@ -552,8 +557,6 @@ function ActivityEntranceTestData:checkHasNextNew()
 end
 
 function ActivityEntranceTestData:makeHeros()
-	print("========makeHeros======")
-
 	if not self.detail.partners or self.detail.partners and #self.detail.partners == 0 then
 		self.detail.partners = {}
 		self.dataHasChange = true
@@ -570,65 +573,90 @@ function ActivityEntranceTestData:makeHeros()
 	end
 
 	local settedHeros = self.detail.partner_list
+	settedHeros = settedHeros or {}
 
-	if not #settedHeros then
-		settedHeros = {}
-	end
-
-	self.canUsePartners = {}
-
-	for key, id in pairs(xyd.tables.activityWarmupArenaPartnerTable:getIds()) do
+	for i, id in pairs(xyd.tables.activityWarmupArenaPartnerTable:getIds()) do
+		local isSearch = false
 		local tableId = xyd.tables.activityWarmupArenaPartnerTable:getPartnerId(id)
-		local PartnerNew = import("app.models.Partner")
-		local partner = PartnerNew.new()
 
-		partner:populate({
-			partner_id = 0,
-			isUpdateAttrs = false,
-			table_id = tableId,
-			star = xyd.tables.activityEntranceTestRankTable:getPartnerStar(self:getLevel()),
-			lev = xyd.tables.activityEntranceTestRankTable:getPartnerLev(self:getLevel()),
-			grade = xyd.tables.partnerTable:getMaxGrade(tableId),
-			awake = xyd.tables.activityEntranceTestRankTable:getPartnerAwake(self:getLevel()),
-			equips = xyd.tables.activityWarmupArenaPartnerTable:getEquips(id),
-			potentials = xyd.tables.activityEntranceTestRankTable:getPotential(self:getLevel()),
-			ex_skills = xyd.tables.activityEntranceTestRankTable:getPartnerExSkill(self:getLevel())
-		})
-
-		partner.tableIndex = id
-		partner.lev = partner:getMaxLev(partner:getGrade(), partner:getAwake())
-
-		partner:updateAttrs({
-			isEntrance = true
-		})
-		table.insert(self.canUsePartners, partner)
-	end
-
-	local tableIndexs = {}
-
-	for i in pairs(settedHeros) do
-		for key, p in pairs(self.canUsePartners) do
-			if tableIndexs[p.tableIndex] then
-				-- Nothing
-			elseif p.tableID == settedHeros[i].table_id then
-				p.partnerID = i
-				p.equipments = settedHeros[i].equips
-
-				if settedHeros[i].potentials == nil or #settedHeros[i].potentials == 0 then
-					settedHeros[i].potentials = xyd.tables.activityEntranceTestRankTable:getPotential(self:getLevel())
-				end
-
-				p.potentials = settedHeros[i].potentials
-				p.last_love_point_time = settedHeros[i].time or 0
-				settedHeros[i].tableIndex = p.tableIndex
-				p.skill_index = settedHeros[i].skill_index
-				tableIndexs[p.tableIndex] = true
-
-				self.canUsePartners[key]:updateAttrs({
-					isEntrance = true
-				})
+		for k in pairs(settedHeros) do
+			if settedHeros[k].table_id == tableId then
+				isSearch = true
 
 				break
+			end
+		end
+
+		if isSearch == false then
+			local param = {
+				table_id = tableId,
+				equips = xyd.tables.activityWarmupArenaPartnerTable:getEquips(id),
+				potentials = xyd.tables.activityEntranceTestRankTable:getPotential(self:getLevel()),
+				skill_index = xyd.tables.activityWarmupArenaPartnerTable:getEquipSkill(id)
+			}
+			settedHeros[i] = param
+		end
+	end
+
+	self.detail.partner_list = settedHeros
+
+	if not self.canUsePartners or #self.canUsePartners == 0 then
+		self.canUsePartners = {}
+
+		for key, id in pairs(xyd.tables.activityWarmupArenaPartnerTable:getIds()) do
+			local tableId = xyd.tables.activityWarmupArenaPartnerTable:getPartnerId(id)
+			local PartnerNew = import("app.models.Partner")
+			local partner = PartnerNew.new()
+
+			partner:populate({
+				isUpdateAttrs = false,
+				table_id = tableId,
+				star = xyd.tables.activityEntranceTestRankTable:getPartnerStar(self:getLevel()),
+				lev = xyd.tables.activityEntranceTestRankTable:getPartnerLev(self:getLevel()),
+				grade = xyd.tables.partnerTable:getMaxGrade(tableId),
+				awake = xyd.tables.activityEntranceTestRankTable:getPartnerAwake(self:getLevel()),
+				equips = xyd.tables.activityWarmupArenaPartnerTable:getEquips(id),
+				partner_id = key,
+				potentials = xyd.tables.activityEntranceTestRankTable:getPotential(self:getLevel()),
+				ex_skills = xyd.tables.activityEntranceTestRankTable:getPartnerExSkill(self:getLevel()),
+				skill_index = xyd.tables.activityWarmupArenaPartnerTable:getEquipSkill(id)
+			})
+
+			partner.tableIndex = id
+			partner.lev = partner:getMaxLev(partner:getGrade(), partner:getAwake())
+
+			partner:updateAttrs({
+				isEntrance = true
+			})
+			table.insert(self.canUsePartners, partner)
+		end
+
+		local tableIndexs = {}
+
+		for i in pairs(xyd.tables.activityWarmupArenaPartnerTable:getIds()) do
+			for key, p in pairs(self.canUsePartners) do
+				if tableIndexs[p.tableIndex] then
+					-- Nothing
+				elseif settedHeros[i] and p.tableID == settedHeros[i].table_id then
+					p.partnerID = i
+					p.equipments = xyd.cloneTable(settedHeros[i].equips)
+
+					if settedHeros[i].potentials == nil or #settedHeros[i].potentials == 0 then
+						settedHeros[i].potentials = xyd.cloneTable(xyd.tables.activityEntranceTestRankTable:getPotential(self:getLevel()))
+					end
+
+					p.potentials = xyd.cloneTable(settedHeros[i].potentials)
+					p.last_love_point_time = settedHeros[i].time or 0
+					settedHeros[i].tableIndex = p.tableIndex
+					p.skill_index = settedHeros[i].skill_index
+					tableIndexs[p.tableIndex] = true
+
+					self.canUsePartners[key]:updateAttrs({
+						isEntrance = true
+					})
+
+					break
+				end
 			end
 		end
 	end
@@ -647,7 +675,7 @@ function ActivityEntranceTestData:makeHeros()
 		end
 	end
 
-	for i in ipairs(self.canUsePartners) do
+	for i in pairs(self.canUsePartners) do
 		local group = self.canUsePartners[i]:getGroup()
 
 		if group then
@@ -705,119 +733,6 @@ function ActivityEntranceTestData:getSortedPartnersBySort(sortType, groupId, job
 	return partnersArr
 end
 
-function ActivityEntranceTestData:settingSort(a, b)
-	local finishNumA = 10000
-	local finishNumB = 10000
-
-	if not self:checkIsFinish(a) then
-		finishNumA = 0
-	end
-
-	if not self:checkIsFinish(b) then
-		finishNumB = 0
-	end
-
-	local key_a = finishNumA
-	local key_b = finishNumB
-
-	if key_a ~= 0 and key_b ~= 0 then
-		key_a = -a.tableID
-		key_b = -b.tableID
-
-		if self.isNewArr[a.tableID] == 1 then
-			key_a = key_a * 2
-		end
-
-		if self.isNewArr[b.tableID] == 1 then
-			key_b = key_b * 2
-		end
-	end
-
-	if key_a == 0 and key_b == 0 then
-		key_a = -a.tableID
-		key_b = -b.tableID
-
-		if self.isNewArr[a.tableID] == 1 then
-			key_a = key_a * 2
-		end
-
-		if self.isNewArr[b.tableID] == 1 then
-			key_b = key_b * 2
-		end
-	end
-
-	return key_a < key_b
-end
-
-function ActivityEntranceTestData:finishSort(a, b)
-	local finishNumA = 10000
-	local finishNumB = 10000
-
-	if not self:checkIsFinish(a) then
-		finishNumA = 0
-	end
-
-	if not self:checkIsFinish(b) then
-		finishNumB = 0
-	end
-
-	local key_a = finishNumA
-	local key_b = finishNumB
-
-	if key_a ~= 0 and key_b ~= 0 then
-		key_a = -a.tableID
-		key_b = -b.tableID
-
-		if self.isNewArr[a.tableID] == 1 then
-			key_a = -key_a * 2
-		end
-
-		if self.isNewArr[b.tableID] == 1 then
-			key_b = -key_b * 2
-		end
-	end
-
-	if key_a == 0 and key_b == 0 then
-		key_a = -a.tableID
-		key_b = -b.tableID
-
-		if self.isNewArr[a.tableID] == 1 then
-			key_a = -key_a * 2
-		end
-
-		if self.isNewArr[b.tableID] == 1 then
-			key_b = -key_b * 2
-		end
-	end
-
-	return key_a > key_b
-end
-
-function ActivityEntranceTestData:starSort(a, b)
-	local finishNumA = -100000
-	local finishNumB = -100000
-	local check_A = self:checkIsFinish(a)
-
-	if not check_A then
-		finishNumA = 0
-	end
-
-	local check_B = self:checkIsFinish(b)
-
-	if not check_B then
-		finishNumB = 0
-	end
-
-	local weight_a = a:getStar() * 10000 + a.lev * 10 + a:getGroup() + finishNumA
-	local weight_b = b:getStar() * 10000 + b.lev * 10 + b:getGroup() + finishNumB
-
-	if weight_a - weight_b ~= 0 then
-		return weight_b < weight_a
-	else
-		return b:getTableID() < a:getTableID()
-	end
-end
-
 function ActivityEntranceTestData:checkIsFinish(p)
 	local partner_id = p.partnerID
 	partner_id = partner_id or p:getPartnerID()
@@ -832,16 +747,14 @@ function ActivityEntranceTestData:checkIsFinish(p)
 		return false
 	end
 
-	if self:getLevel() ~= xyd.EntranceTestLevelType.R1 then
-		if #pInfo.potentials >= 3 then
-			for key, id in pairs(pInfo.potentials) do
-				if id == 0 then
-					return false
-				end
+	if #pInfo.potentials >= 3 then
+		for key, id in pairs(pInfo.potentials) do
+			if id == 0 then
+				return false
 			end
-		else
-			return false
 		end
+	else
+		return false
 	end
 
 	return true
@@ -972,9 +885,9 @@ function ActivityEntranceTestData:getRedMarkState()
 		return false
 	end
 
-	local red = tonumber(self.detail_.free_times) > 0
+	local red = tonumber(self:getFreeTimes()) > 0
 
-	if xyd.getServerTime() > self:getEndTime() - xyd.DAY_TIME then
+	if self:getEndTime() < xyd.getServerTime() then
 		red = false
 	end
 
@@ -984,23 +897,29 @@ function ActivityEntranceTestData:getRedMarkState()
 end
 
 function ActivityEntranceTestData:getBetRed()
-	if self:getDayIndex() >= 8 then
+	if not self:isCanGuess() then
 		return false
 	end
 
-	local betTime = tonumber(xyd.db.misc:getValue("warmup_bet_time"))
+	local betTime = xyd.db.misc:getValue("warmup_bet_time_new")
 
-	if betTime and xyd.isSameDay(betTime, xyd.getServerTime()) then
-		return false
-	elseif not betTime or betTime < xyd.getServerTime() then
+	if not betTime then
 		return true
 	else
-		return false
+		betTime = tonumber(betTime)
+
+		if self:startTime() <= betTime and betTime < self:getEndTime() then
+			return false
+		else
+			return true
+		end
 	end
+
+	return false
 end
 
 function ActivityEntranceTestData:getLevel()
-	return self.detail.level
+	return 1
 end
 
 function ActivityEntranceTestData:getPetIDs()
@@ -1044,6 +963,504 @@ function ActivityEntranceTestData:getPetByID(id)
 	})
 
 	return petInfo
+end
+
+function ActivityEntranceTestData:getPveMaxStage()
+	return 3
+end
+
+function ActivityEntranceTestData:getPvePartnerIsLock(type)
+	if type > 0 and not self.detail.total_harms[type] then
+		return true
+	end
+
+	if type > 0 and self.detail.total_harms[type] and self.detail.total_harms[type] < xyd.tables.activityWarmupArenaBossTable:getBossScore(type) then
+		return true
+	end
+
+	return false
+end
+
+function ActivityEntranceTestData:getPvePartnerIsLockByTableId(tableId)
+	local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriodByPartnerId(tableId)
+
+	return self:getPvePartnerIsLock(period)
+end
+
+function ActivityEntranceTestData:getFreeTimes()
+	return self.detail.free_times
+end
+
+function ActivityEntranceTestData:subFreeTimes()
+	self.detail.free_times = self.detail.free_times - 1
+
+	if self.detail.free_times < 0 then
+		self.detail.free_times = 0
+	end
+
+	self:updateFreeTimesShow()
+end
+
+function ActivityEntranceTestData:getBossHarm(bossId)
+	for i = 1, self:getPveMaxStage() do
+		if not self.detail.total_harms[i] then
+			self.detail.total_harms[i] = 0
+		end
+	end
+
+	return self.detail.total_harms[bossId]
+end
+
+function ActivityEntranceTestData:addBossHarm(bossId, harm)
+	for i = 1, self:getPveMaxStage() do
+		if not self.detail.total_harms[i] then
+			self.detail.total_harms[i] = 0
+		end
+	end
+
+	for i = 1, self:getPveMaxStage() do
+		if not self.detail.harms[i] then
+			self.detail.harms[i] = 0
+		end
+	end
+
+	if self.detail.harms[bossId] < harm then
+		self.detail.harms[bossId] = harm
+	end
+
+	local isFirstPass = false
+
+	if self.detail.total_harms[bossId] then
+		local bossTotalScore = xyd.tables.activityWarmupArenaBossTable:getBossScore(bossId)
+
+		if self.detail.total_harms[bossId] < bossTotalScore and bossTotalScore <= self.detail.total_harms[bossId] + harm then
+			isFirstPass = true
+		end
+
+		if self.detail.total_harms[bossId] < bossTotalScore then
+			self.detail.total_harms[bossId] = self.detail.total_harms[bossId] + harm
+		end
+	end
+
+	if isFirstPass then
+		self:makeHeros()
+	end
+
+	return isFirstPass
+end
+
+function ActivityEntranceTestData:getMyHightHarm(bossId)
+	for i = 1, self:getPveMaxStage() do
+		if not self.detail.harms[i] then
+			self.detail.harms[i] = 0
+		end
+	end
+
+	return self.detail.harms[bossId]
+end
+
+function ActivityEntranceTestData:updateFreeTimesShow()
+	local activity_entrance_test_wd = xyd.WindowManager.get():getWindow("activity_entrance_test_window")
+
+	if activity_entrance_test_wd then
+		activity_entrance_test_wd:updateFreeTimesShow()
+	end
+
+	local activity_entrance_test_wd = xyd.WindowManager.get():getWindow("activity_entrance_test_pve_window")
+
+	if activity_entrance_test_wd then
+		activity_entrance_test_wd:updateFreeTimesShow()
+	end
+
+	self:getRedMarkState()
+end
+
+function ActivityEntranceTestData:onBossBuyBack(event)
+	local data = event.data
+
+	if data.activity_id and data.activity_id == xyd.ActivityID.ENTRANCE_TEST then
+		local num = data.free_times - self.detail.free_times
+		self.detail.free_times = data.free_times
+		self.detail.buy_times = data.buy_times
+
+		xyd.showToast(__("ENTRANCE_TEST_TILI_OK_TIPS", num))
+		self:updateFreeTimesShow()
+	end
+end
+
+function ActivityEntranceTestData:buyTicket()
+	local canBuyDay = xyd.tables.miscTable:getNumber("activity_warmup_arena_ticket_day", "value")
+	local nowDisDay = math.ceil((xyd.getServerTime() - self:startTime()) / xyd.DAY_TIME)
+
+	if canBuyDay <= nowDisDay then
+		local cost = xyd.tables.miscTable:split2Cost("activity_warmup_arena_buy_costs", "value", "#")
+		local maxNumCanBuy = xyd.tables.miscTable:getNumber("activity_warmup_arena_ticket_limit", "value")
+		local myCanBuy = math.floor(xyd.models.backpack:getItemNumByID(cost[1]) / cost[2])
+
+		if myCanBuy < maxNumCanBuy then
+			maxNumCanBuy = myCanBuy
+		end
+
+		xyd.WindowManager.get():openWindow("item_buy_window", {
+			hide_min_max = false,
+			item_no_click = false,
+			cost = cost,
+			max_num = xyd.checkCondition(maxNumCanBuy == 0, 1, maxNumCanBuy),
+			itemParams = {
+				num = 1,
+				itemID = xyd.ItemID.ENTRANCE_PVE_TICKET
+			},
+			buyCallback = function (num)
+				if maxNumCanBuy <= 0 then
+					xyd.showToast(__("FULL_BUY_SLOT_TIME"))
+
+					xyd.WindowManager.get():getWindow("item_buy_window").skipClose = true
+
+					return
+				end
+
+				local msg = messages_pb:boss_buy_req()
+				msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
+				msg.num = num
+
+				xyd.Backend.get():request(xyd.mid.BOSS_BUY, msg)
+			end
+		})
+
+		return
+	end
+
+	xyd.alertTips(__("ACTIVITY_NEW_WARMUP_TEXT30", canBuyDay))
+end
+
+function ActivityEntranceTestData:getIsCanFake()
+	if self.isCanFake == nil then
+		self.isCanFake = true
+	end
+
+	return self.isCanFake
+end
+
+function ActivityEntranceTestData:fakeToFight()
+	if self.isCanFake == nil then
+		self.isCanFake = true
+	end
+
+	if self.isCanFake then
+		self.isCanFake = false
+
+		xyd.addGlobalTimer(function ()
+			self.isCanFake = true
+		end, 1.5, 1)
+	end
+end
+
+function ActivityEntranceTestData:isCanGuess()
+	if math.floor((xyd.getServerTime() - self:startTime()) / xyd.DAY_TIME) < 3 then
+		return false
+	end
+
+	return true
+end
+
+function ActivityEntranceTestData:getIsUpdateRankState(boss_id)
+	return self.isCanUpdatePveArr[boss_id]
+end
+
+function ActivityEntranceTestData:setUpdateRankState(boss_id, state)
+	self.isCanUpdatePveArr[boss_id] = state
+
+	if state == false then
+		self["rankTimeKeyId" .. boss_id] = xyd.addGlobalTimer(function ()
+			self.isCanUpdatePveArr[boss_id] = true
+			self["rankTimeKeyId" .. boss_id] = nil
+		end, 60, 1)
+	elseif state == true and self["rankTimeKeyId" .. boss_id] then
+		xyd.removeGlobalTimer(self["rankTimeKeyId" .. boss_id])
+
+		self["rankTimeKeyId" .. boss_id] = nil
+	end
+end
+
+function ActivityEntranceTestData:reqRankInfo(index)
+	if self:getIsUpdateRankState(index) then
+		local msg = messages_pb:warmup_get_rank_list_req()
+		msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
+		msg.boss_id = index
+
+		xyd.Backend.get():request(xyd.mid.WARMUP_GET_RANK_LIST, msg)
+
+		self.RecordRankBossID = index
+
+		self:setUpdateRankState(index, false)
+
+		return true
+	else
+		return false
+	end
+end
+
+function ActivityEntranceTestData:getRankData(index)
+	for i = 1, #self.rankDataList_[index] do
+		self.rankDataList_[index][i].rank = i
+	end
+
+	local socre = 0
+
+	if self.recordRankSelfScoreArr[index] and self.recordRankSelfScoreArr[index][1] then
+		socre = self.recordRankSelfScoreArr[index][1]
+	end
+
+	local rank = -1
+
+	if self.recordRankSelfScoreArr[index] and self.recordRankSelfScoreArr[index][2] then
+		rank = self.recordRankSelfScoreArr[index][2]
+	end
+
+	local data = {
+		list = self.rankDataList_[index],
+		score = socre,
+		rank = rank + 1
+	}
+
+	return data
+end
+
+function ActivityEntranceTestData:onGetRankInfo(event)
+	local data = event.data
+	local list = {}
+
+	for index, value in ipairs(data.list) do
+		table.insert(list, {
+			player_id = value.player_id,
+			player_name = value.player_name,
+			avatar_frame = value.avatar_frame_id,
+			avatar_id = value.avatar_id,
+			server_id = value.server_id,
+			dress_style = value.dress_style or {},
+			lev = value.lev,
+			score = value.score,
+			rank = tonumber(index),
+			avatarID = value.avatar_id,
+			avatar_frame_id = value.avatar_frame_id
+		})
+	end
+
+	self.rankDataList_[self.RecordRankBossID] = list
+	self.recordRankSelfScoreArr[self.RecordRankBossID] = {
+		data.score,
+		data.rank
+	}
+end
+
+function ActivityEntranceTestData:reqGambleInfo()
+	for i = 4, math.min(self:getDayIndex(), 6) do
+		if not self.recordGamblePartners[i] then
+			local msg = messages_pb.warmup_get_report_req()
+			self.recordGambleDay = i
+			msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
+			msg.id = i
+
+			xyd.Backend.get():request(xyd.mid.WARMUP_GET_REPORT, msg)
+
+			return true
+		end
+	end
+
+	return false
+end
+
+function ActivityEntranceTestData:getGambleInfo(dayIndex)
+	return self.recordGamblePartners[dayIndex] or {}
+end
+
+function ActivityEntranceTestData:onGetGambleInfo(event)
+	local data = event.data
+	local report = data.battle_report
+	local result = {
+		{},
+		{}
+	}
+
+	if self.recordGambleDay then
+		for i, p in ipairs(report.teamA) do
+			local PartnerNew = import("app.models.Partner")
+			local partner = PartnerNew.new()
+
+			partner:populate({
+				isUpdateAttrs = false,
+				tableID = tonumber(p.table_id),
+				star = tonumber(p.star),
+				lev = tonumber(p.level),
+				grade = tonumber(p.grade),
+				awake = tonumber(p.awake),
+				equips = tonumber(p.equips),
+				partner_id = tonumber(p.partner_id),
+				potentials = tonumber(p.potentials),
+				ex_skills = p.ex_skills,
+				skill_index = tonumber(p.skill_index),
+				pos = tonumber(p.pos)
+			})
+
+			result[1][tonumber(p.pos)] = partner
+		end
+
+		for i, p in ipairs(report.teamB) do
+			local PartnerNew = import("app.models.Partner")
+			local partner = PartnerNew.new()
+
+			partner:populate({
+				isUpdateAttrs = false,
+				tableID = tonumber(p.table_id),
+				star = tonumber(p.star),
+				lev = tonumber(p.level),
+				grade = tonumber(p.grade),
+				awake = tonumber(p.awake),
+				equips = tonumber(p.equips),
+				partner_id = tonumber(p.partner_id),
+				potentials = tonumber(p.potentials),
+				ex_skills = p.ex_skills,
+				skill_index = tonumber(p.skill_index),
+				pos = tonumber(p.pos)
+			})
+
+			result[2][tonumber(p.pos)] = partner
+		end
+
+		self.recordGamblePartners[self.recordGambleDay] = result
+		self.recordGambleDay = nil
+
+		self:reqGambleInfo()
+	end
+end
+
+function ActivityEntranceTestData:settingSort(a, b)
+	local finishNumA = 10000
+	local finishNumB = 10000
+
+	if not self:checkIsFinish(a) then
+		finishNumA = 0
+	end
+
+	if not self:checkIsFinish(b) then
+		finishNumB = 0
+	end
+
+	local key_a = finishNumA
+	local key_b = finishNumB
+
+	if key_a ~= 0 and key_b ~= 0 then
+		key_a = -a.tableID
+		key_b = -b.tableID
+
+		if self.isNewArr[a.tableID] == 1 then
+			key_a = key_a * 2
+		elseif self:getPvePartnerIsLockByTableId(a.tableID) then
+			key_a = key_a * 1.5
+		end
+
+		if self.isNewArr[b.tableID] == 1 then
+			key_b = key_b * 2
+		elseif self:getPvePartnerIsLockByTableId(b.tableID) then
+			key_b = key_b * 1.5
+		end
+	end
+
+	if key_a == 0 and key_b == 0 then
+		key_a = -a.tableID
+		key_b = -b.tableID
+
+		if self.isNewArr[a.tableID] == 1 then
+			key_a = key_a * 2
+		elseif self:getPvePartnerIsLockByTableId(a.tableID) then
+			key_a = key_a * 1.5
+		end
+
+		if self.isNewArr[b.tableID] == 1 then
+			key_b = key_b * 2
+		elseif self:getPvePartnerIsLockByTableId(b.tableID) then
+			key_b = key_b * 1.5
+		end
+	end
+
+	return key_a < key_b
+end
+
+function ActivityEntranceTestData:finishSort(a, b)
+	local finishNumA = 10000
+	local finishNumB = 10000
+
+	if not self:checkIsFinish(a) then
+		finishNumA = 0
+	end
+
+	if not self:checkIsFinish(b) then
+		finishNumB = 0
+	end
+
+	local key_a = finishNumA
+	local key_b = finishNumB
+
+	if key_a ~= 0 and key_b ~= 0 then
+		key_a = -a.tableID
+		key_b = -b.tableID
+
+		if self.isNewArr[a.tableID] == 1 then
+			key_a = -key_a * 2
+		elseif self:getPvePartnerIsLockByTableId(a.tableID) then
+			key_a = key_a * 2
+		end
+
+		if self.isNewArr[b.tableID] == 1 then
+			key_b = -key_b * 2
+		elseif self:getPvePartnerIsLockByTableId(b.tableID) then
+			key_b = key_b * 2
+		end
+	end
+
+	if key_a == 0 and key_b == 0 then
+		key_a = -a.tableID
+		key_b = -b.tableID
+
+		if self.isNewArr[a.tableID] == 1 then
+			key_a = -key_a * 2
+		elseif self:getPvePartnerIsLockByTableId(a.tableID) then
+			key_a = key_a * 2
+		end
+
+		if self.isNewArr[b.tableID] == 1 then
+			key_b = -key_b * 2
+		elseif self:getPvePartnerIsLockByTableId(b.tableID) then
+			key_b = key_b * 2
+		end
+	end
+
+	return key_a > key_b
+end
+
+function ActivityEntranceTestData:starSort(a, b)
+	local finishNumA = -100000
+	local finishNumB = -100000
+	local check_A = self:checkIsFinish(a)
+
+	if not check_A then
+		finishNumA = 0
+	end
+
+	local check_B = self:checkIsFinish(b)
+
+	if not check_B then
+		finishNumB = 0
+	end
+
+	local weight_a = a:getStar() * 10000 + a.lev * 10 + a:getGroup() + finishNumA
+	local weight_b = b:getStar() * 10000 + b.lev * 10 + b:getGroup() + finishNumB
+
+	if weight_a - weight_b ~= 0 then
+		return weight_b < weight_a
+	else
+		return b:getTableID() < a:getTableID()
+	end
 end
 
 return ActivityEntranceTestData

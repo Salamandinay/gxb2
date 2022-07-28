@@ -2232,7 +2232,7 @@ POTENTIALITY,한계 돌파
 SWITCH_POTENTIALITY,잠재능력 변경
 POTENTIALITY_SWITCH_WINDOW_TITLE,잠재능력 변경
 POTENTIALITY_ACTIVE,적용
-POTENTIALITY_SWITCH_HELP,"1. 다른 잠재 능력을 적용함으로써 소녀를 강화할 수 있습니다.|2. 잠겨있는 잠재능력은 세부 내용을 확인할 수 있으나 적용할 수는 없습니다.|3. 잠재능력을 선택해 세부 특성을 볼 수 있으며, '적용' 버튼을 눌러 현재 잠재능력으로 전환 할 수 있습니다.|4. 각 단계의 잠재능력은 1개만 적용할 수 있습니다."
+POTENTIALITY_SWITCH_HELP,"1) 다른 잠재 능력을 적용함으로써 소녀를 강화할 수 있습니다.| 2. 잠겨있는 잠재 능력은 세부 내용을 확인할 수 있으나 적용할 수는 없습니다.| 3. 잠재 능력을 선택해 세부 특성을 볼 수 있으며, ""적용"" 버튼을 눌러 현재 잠재 능력으로 전환 할 수 있습니다.| 4. 각 단계의 잠재 능력은 1개만 적용할 수 있습니다."
 POTENTIALITY_UNLOCK_WINDOW_TITLE,한계 돌파
 POTENTIALITY_BREAK,한계 돌파
 POTENTIALITY_LEV_LIMIT_DESC_TEXT,최대 레벨
@@ -2784,7 +2784,7 @@ ACTIVITY_SPORTS_FIGHT_SCORE,진영전 포인트
 ACTIVITY_SPORTS_TEXT02,{1}학부의 팀으로 배정 되었습니다. 즉시 진영전 방어 팀을 설정하세요~
 ACTIVITY_TOUR_PREPAIR_TITLE,출발 준비
 FB_SHARE_SUMMON_TEN_DES,운명적 만남의 기운이 UP! 걸스 X 배틀 2에서 최고의 후배들을 만나다!
-FB_HOUSE_SHARE_DESC,귀여운 후배들이 걸스 X 배틀 2에서 기다리고 있습니다!
+FB_HOUSE_SHARE_DESC,귀여운 후배들이 Girls×Battle 2에서 기다리고 있습니다!
 FB_SHARE_SUMMON_DES,함께 싸워줄 선배를 기다리고 있어요!
 FB_SHARE_SKIN_DES,귀여운 후배한테 예쁜 옷을 선물해요!
 FB_HOUSE_SHARE_TITLE,Girls × Battle 2
@@ -3298,16 +3298,16 @@ ENTRANCE_TEST_HELP_DES_1_4,크리스탈 슬롯을 클릭하여 소녀의 [c][cc0
 ENTRANCE_TEST_HELP_DES_1_5,혼기 슬롯을 클릭하여 소녀의 [c][cc0011]혼기[-][/c]를 설정하세요!
 ENTRANCE_TEST_HELP_TITLE_1_1,소녀 설정
 ENTRANCE_TEST_HELP_TITLE_2_1,소녀 설정
-ENTRANCE_TEST_HELP_TITLE_2_2,수비 진영
-ENTRANCE_TEST_HELP_DES_2_1,A단계 도달하여 소녀를 15성까지 업그레이드 진행 후 소녀에게 어울리는 [c][cc0011]잠재 능력[-][/c]을 선택하실 수 있습니다!
+ENTRANCE_TEST_HELP_TITLE_2_2,퀴즈 도전
+ENTRANCE_TEST_HELP_DES_2_1,잠재능력 슬롯을 클릭하여 소녀의 [c][cc0011]잠재능력[-][/c]을 설정하세요!
 ENTRANCE_TEST_HELP_DES_2_2,설정이 완료되면 해당 소녀의 카드에 '완료'가 표시됩니다.
-ENTRANCE_TEST_HELP_DES_2_3,"출전 전, 먼저 [c][cc0011]수비 진영[-][/c]을 설정하세요. 방어쪽일 때 방어 성공 시 포인트를 획득하며, 방어 실패 시 포인트가 소실되니 방어팀을 완벽히 설정해야 합니다."
-ENTRANCE_TEST_HELP_TITLE_3_1,전투
-ENTRANCE_TEST_HELP_TITLE_3_2,포인트 및 랭킹
+ENTRANCE_TEST_HELP_DES_2_3,"이벤트에 총 3개의 퀴즈 도전이 있습니다. 매번 전투 진행 시 입학 퀴즈 참가권 1장 필요하며 매일 오전 9시(한국 시간)에 참가권 3장 발송되고 5일차부터 참가권 구매 가능합니다. [c][cc0011]누적 대미지[-][/c]가 일정 수치 도달 후, 대응하는 퀴즈 도전이 통과되고 소녀가 해제됩니다."
+ENTRANCE_TEST_HELP_TITLE_3_1,배팅
+ENTRANCE_TEST_HELP_TITLE_3_2,대미지 & 랭킹
 ENTRANCE_TEST_HELP_TITLE_3_3,보상
-ENTRANCE_TEST_HELP_DES_3_1,전투 조건을 만족한 후 [c][cc0011]전투[-][/c]버튼을 클릭하시면 출전하실 수 있습니다.\n이벤트 기간 동안 선배님의 현재 포인트에 따라 비슷한 상대와 매칭됩니다. 전투를 승리하면 이벤트 포인트를 획득하고 실패해도 이벤트 포인트가 줄어들지 않습니다.
-ENTRANCE_TEST_HELP_DES_3_2,각 전투에는 참가권 1장이 필요합니다.\n참가권은 매일 한국 시간 9시에 [c][cc0011]10장[-][/c]으로 리셋됩니다.\n선배는 다이아를 사용하여 추가 참가권을 구매할 수 있습니다.
-ENTRANCE_TEST_HELP_DES_3_3,"이벤트 기간 동안, 선배님이 포인트 및 랭킹을 실시간으로 확인할 수 있습니다."
+ENTRANCE_TEST_HELP_DES_3_1,이벤트 [c][cc0011]4일차[-][/c] 부터 배팅에 참여 가능합니다. 배팅 가능한 팀 3개는 퀴즈 랭킹 상위권에 속하는 선배들의 팀입니다.\n배팅이 [c][cc0011]3일[-][/c] 동안 지속되고 매일 배팅 1번 참여할 수 있으며 다음날에 배팅 결과가 공개됩니다.
+ENTRANCE_TEST_HELP_DES_3_2,"배팅할 때마다 [c][cc0011]프리미엄 캡슐 뽑기 코인[-][/c] 또는 [c][cc0011]골드[-][/c] 필요합니다.\n배팅 성공 시, 메일로 배팅 시 소모된 아이템의 3배로 반환됩니다."
+ENTRANCE_TEST_HELP_DES_3_3,"이벤트 기간 동안, 퀴즈 3개의 최대 대미지 랭킹 및 그에 대응하는 수치를 실시간으로 확인할 있습니다."
 ENTRANCE_TEST_HELP_DES_3_4,이벤트 기간에 [c][cc0011]보상 미리보기[-][/c] 버튼을 클릭하면 미션 보상을 확인하실 수 있습니다.\n[c][cc0011]입학 세트[-][/c]를 구매하시면 더 많은 미션 보상을 받을 수 있습니다.
 ACTIVITY_WARMUP_PACK_TEXT04,구매 후 신입생 한정\n섬네일 바로 획득:
 ACTIVITY_WARMUP_PACK_TEXT05,슈퍼 보너스
@@ -3705,7 +3705,7 @@ NEW_RECHARGE_TEXT05,원가: ₩79000
 NEW_RECHARGE_TEXT06,6400%%
 NEW_RECHARGE_TEXT07,"초선 선생님의 스터디 프로그램에 참여 후, 선배님이 일정 레벨을 도달할 경우, 다이아를 획득할 수 있습니다."
 NEW_RECHARGE_TEXT08,구매하기
-NEW_RECHARGE_TEXT09,옥상 정복 펀드를 구매하여 많은 보상을 획득하세요
+NEW_RECHARGE_TEXT09,옥상 정복 펀드를 구매하여 많은 보상을 획득하세요!
 NEW_RECHARGE_TEXT10,보상 합계:
 NEW_RECHARGE_TEXT11,총 20000 다이아 획득 가능!
 NEW_RECHARGE_TEXT12,내일 다음 단계의 보상을 받을 수 있습니다.
@@ -3827,7 +3827,7 @@ OLD_SCHOOL_FLOOR_NAME,제{1}층
 OLD_SCHOLL_BUFF_NAME1,초급 플랜
 OLD_SCHOLL_BUFF_NAME2,중급 플랜
 OLD_SCHOOL_FIGHT_NAME,{1} 층-스테이지 {2}
-OLD_SCHOOL_HELP1,"기숙사 탐구 규칙|1. 기숙사 탐구는 시즌 형식으로 진행됩니다. 전투 기간(13일)과 전시 기간(1일)으로 나누어 총 14일이 한 시즌이 됩니다.|2. 기숙사 탐구는 10개의 층이 있으며 각 층은 최대 3개의 스테이지가 있습니다. 각 시즌의 1층은 기본적으로 잠금 해제되어 있습니다. 현재 층의 스테이지 중 임의의 하나를 통과하면 다음 층으로 이동할 수 있습니다.||스테이지 챌린지|1. 스테이지에 도전하기 전에 먼저 모든 스테이지의 라인업을 설정하셔야 합니다.|2. 스테이지 도전 시 임의의 탐구 플랜을 선택하여 적을 강화할 수 있습니다. 선택한 플랜에 따라 전투 후 얻을 수 있는 포인트가 달라집니다. 자신에게 적합한 플랜을 선택해 주세요.|3. 현재 스테이지 포인트: 소녀 라인업을 변경하지 않고 스테이지를 클리어할 경우 각 스테이지의 최고 포인트가 현재 스테이지의 포인트가 됩니다. 소녀 라인업을 변경하면 포인트가 리셋되오니 유의하시기 바랍니다.|4. 각 층 최고 포인트: 선배님이 획득하신 최고 스테이지 포인트를 합산해 현재 스테이지의 포인트가 되며 소녀 라인업을 변경해도 리셋되지 않습니다.|5.총 포인트: 10개 층의 총 포인트의 합계를 나타내며 시즌 랭킹에 영향을 줍니다.||시즌 보상|1. 층 클리어 보상: 소녀 라인업을 변경하지 않고 현재 층의 스테이지를 모두 클리어하면 대응하는 층 보상을 획득할 수 있습니다. 보상은 수동으로 획득하셔야 합니다.|2. 포인트 보상: 일정 포인트 도달 시, 대응하는 포인트 보상을 획득할 수 있습니다. 보상은 수동으로 획득하셔야 합니다.|3. 랭킹 보상: 각 플레이어의 총 포인트에 따라 랭킹이 결정됩니다.(포인트가 같을 경우 먼저 해당 포인트에 도달한 플레이어의 순위가 더 높습니다.) 이벤트 종료 후 랭킹 결과에 따른 보상은 메일로 발송됩니다. 0 포인트인 경우 보상을 획득할 수 없습니다.|4. 상점 보상: 현재 시즌에 참여하여 일정 포인트에 도달하면 시즌 판매 상품을 잠금 해제할 수 있습니다. 여러 시즌을 누적 참여하여 일정 포인트 달성 시 상시 판매 상품의 구매 자격이 주어집니다(각 시즌의 목표 포인트에 도달해야 함). 상점에서 구매한 아이템은 엘리트 스킬 업그레이드에 사용할 수 있습니다."
+OLD_SCHOOL_HELP1,"기숙사 탐구 규칙|1. 기숙사 탐구는 시즌 형식으로 진행됩니다. 전투 기간(13일)과 전시 기간(1일)으로 나누어 총 14일이 한 시즌이 됩니다.|2. 기숙사 탐구는 11개의 층이 있으며 각 층은 최대 3개의 스테이지가 있습니다. 각 시즌의 1층은 기본적으로 잠금 해제되어 있습니다. 전 10층의 스테이지 중 임의의 하나를 통과하면 다음 층으로 이동할 수 있습니다.전 10층의 모든 스테이지 통화 및 이번 시즌 총 포인트가 1000 도달 후 11층 잠금 해제됩니다.||스테이지 챌린지|1. 스테이지에 도전하기 전에 먼저 모든 스테이지의 라인업을 설정하셔야 합니다.|2. 스테이지 도전 시 임의의 탐구 플랜을 선택하여 적을 강화할 수 있습니다. 선택한 플랜에 따라 전투 후 얻을 수 있는 포인트가 달라집니다. 자신에게 적합한 플랜을 선택해 주세요.|3. 현재 스테이지 포인트: 소녀 라인업을 변경하지 않고 스테이지를 클리어할 경우 각 스테이지의 최고 포인트가 현재 스테이지의 포인트가 됩니다. 소녀 라인업을 변경하면 포인트가 리셋되오니 유의하시기 바랍니다.|4. 각 층 최고 포인트: 선배님이 획득하신 최고 스테이지 포인트를 합산해 현재 스테이지의 포인트가 되며 소녀 라인업을 변경해도 리셋되지 않습니다.|5. 제11층의 탐구 플랜은 강제로 모든 플랜이 선택된 것으로 정해집니다. 제11층 스테이지 3개의 총 대미지에 따라 랭크가 계산됩니다. 50위원의 선배는 추가 포인트를 획득합니다.|6.총 포인트: 10개 층의 총 포인트의 합계 더하기 제11층의 랭킹 대미지에 의해 추가로 획득한 포인트의 합계를 나타내며 시즌 랭킹에 영향을 줍니다.||시즌 보상|1. 층 클리어 보상: 소녀 라인업을 변경하지 않고 현재 층의 스테이지를 모두 클리어하면 대응하는 층 보상을 획득할 수 있습니다. 보상은 수동으로 획득하셔야 합니다.|2. 포인트 보상: 일정 포인트 도달 시, 대응하는 포인트 보상을 획득할 수 있습니다. 보상은 수동으로 획득하셔야 합니다.|3. 포인트 랭킹 보상: 각 플레이어의 총 포인트에 따라 랭킹이 결정됩니다.(포인트가 같을 경우 먼저 해당 포인트에 도달한 플레이어의 순위가 더 높습니다.) 이벤트 종료 후 랭킹 결과에 따른 보상은 메일로 발송됩니다. 0 포인트인 경우 보상을 획득할 수 없습니다.|4.대미지 랭킹 보상: 제11층의 대미지 랭킹 보상입니다. 이번 시즌 종료 시, 메일로 랭킹에 따라 대응하는 보상이 발송됩니다.|5. 상점 보상: 현재 시즌에 참여하여 일정 포인트에 도달하면 시즌 판매 상품을 잠금 해제할 수 있습니다. 여러 시즌을 누적 참여하여 일정 포인트 달성 시 상시 판매 상품의 구매 자격이 주어집니다(각 시즌의 목표 포인트에 도달해야 함). 상점에서 구매한 아이템은 엘리트 스킬 업그레이드에 사용할 수 있습니다."
 OLD_SCHOOL_HELP2,1. 전투 기간이 종료 시 랭킹 결과가 발표됩니다. 랭킹 상위 10 위 플레이어는 각각 14 일의 한정 프레임 보상을 받게됩니다.|2. 포인트 랭킹은 전 서버 랭킹입니다.
 ACTIVITY_STUDY_NEED_ENERGY3,문제가 틀릴 경우 재응답 시 1회의 응답 기회가 소모됩니다. 제출하시겠습니까?
 OLD_SCHOOL_SHOP_TEXT1,시즌 판매
@@ -4491,11 +4491,11 @@ TRAVEL_MAIN_TEXT66,에 도달하면 {1}회 구매 가능
 ENTRANCE_TEST_CANNOT_FIGHT,현재 전투에 참가할 수 없습니다. 그래도 소녀를 배치하시겠습니까?
 ENTRANCE_TEST_NOT_OPEN,메인 스토리 {1} 클리어 후 전투에 참가할 수 있으며 현재 예측 이벤트에만 참여할 수 있습니다!
 ACTIVITY_RETURN_GIFT_TEXT,팩 내용 선택
-ENTRANCE_TEST_SHOWS_TIPS,예측 성공! [c][0x723c1c size=34]2배[-][/c]의 골드 획득!
+ENTRANCE_TEST_SHOWS_TIPS,배팅 성공 시 [c][0x723c1c size=34]3배[-][/c]의 아이템 반환!
 ENTRANCE_TEST_GUESS_CHANGE,예측 변경
 REPAIR_TO_RESET_GAME,복구 완료 후 자동으로 게임이 재게 됩니다. 확인하시겠습니까?
 PUB_MISSION_AUTO_HELP,1. 아르바이트 일괄 시작은 선배님이 소녀를 보다 빠르게 배치해 풍부한 보상을 받을 수 있도록 도와줍니다.|2. 완성 및 수행 중인 미션이 일정 수에 도달하면 소녀를 아르바이트에 배치할 수 없게 되기 때문에 선배님께서 완성된 아르바이트의 보상을 수시로 수령하시기 바랍니다.|3. 일괄 선택 화면 하단에 있는 적절한 아르바이트 성급을 탭 하여 특정 성급의 미션을 시작할 수 있습니다.|4. 아르바이트 중 시작하고 싶지 않은 미션은 대응하는 미션의 체크 표시를 취소하시면 됩니다.
-ENTRANCE_TEST_GUESS_CHANGE_TIPS,같은 단계 해당 팀의 배팅으로 변경하시겠습니까?
+ENTRANCE_TEST_GUESS_CHANGE_TIPS,배팅 변경하시겠습니까?
 ACTIVITY_RESIDENT_RETURN_RECOMMENT1,"선배님, 오랜만이에요~"
 ACTIVITY_RESIDENT_RETURN_RECOMMENT2,선배님을 위해 친구와 동아리 후보를 준비했어요~
 ACTIVITY_ENTRANCE_TEST_SHOW_WINDOW_HELP,"1. 이벤트 기간 동안 선배님은 골드를 사용하여 예측에 참여할 수 있습니다.|2. 홍팀은 공격팀, 청팀은 수비팀으로 전투에는 라운드 제한이 없으며 선배님께서 배팅한 라인업이 승리하면 보상을 획득할 수 있습니다.|3. 매번 3단계 중 하나를 선택할 수 있으며 단계의 소모가 높을수록 획득할 수 있는 보상도 높아집니다.|4. 매일 9시에 리셋되는 동시에 전날의 전투 결과를 함께 발표하며 예측 보상은 메일을 통해 발송됩니다."
@@ -4866,10 +4866,10 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,획득 가능한 맑은 미네랄이 한도에 �
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,현재 장작 중인 혼기입니다.\n선택을 계속 진행하시겠습니까?
 DAILY_QUIZ_TEXT04,추가 구입 횟수를 입력하세요:
 PUB_MISSION_AUTO_TEXT1,모두 받기
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,일부 혼기는 기본적으로 사용이 가능하며 기타 혼기는 획득 후 해제할 수 있습니다
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,*해당 혼기는 입학 퀴즈에서만 사용됩니다.
 ENTRANCE_TEST_PARTNER_NOT_READY,팀 내에 설정이 완료되지 않은 소녀가 있습니다. 해당 라인업으로 출전하시겠습니까?
 ENTRANCE_TEST_BATTLE_JUMP_SET,설정 바로 가기
-ENTRANCE_TEST_PET_EXSKILL,입학 테스트 중 사역마 전속 장비는 선배님의 강화 상태의 따라 그대로 반영됩니다.
+ENTRANCE_TEST_PET_EXSKILL,입학 퀴즈에 모든 사역마의 전속 장비 레벨은 Lv.100입니다.
 ENTRANCE_TEST_PET_CANNOT_UPGRADE,해당 모드에서 업그레이드 진행 불가!
 SNS_ACTIVITY_HTTP_BTN01,바로 가기
 SNS_ACTIVITY_TEXT01,공식 카페 가기
@@ -4908,7 +4908,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,진급 조건
 WARMUP_ARENA_REACH_RANK_HELP,"1. 본 이벤트에는 각각 'B', 'A', 'S', 'S+', 총 4가지 계급이 있으며, 선배님은 자신과 같은 계급인 플레이어에게 도전할 수 있습니다. 모든 플레이어는 B 계급으로 이벤트를 시작합니다.|2. 매일 9시(한국 시간)에, 랭킹이 진급 기준에 도달한 선배님은 다음 계급으로 진급됩니다.|3. 각 계급 소개: |{1} 계급 도달 후:|{2}|{3} 계급 도달 후:|{4}|{5} 계급 도달 후:|{6}|4. 이벤트 중 전시된 랭킹은 선배님이 현재 소속된 계급 내 랭킹입니다.(진급 규칙으로 인해 매일 9시(한국 시간)에 각 계급 내의 플레이어 인원수가 변화합니다. 선배님이 다음 계급으로 진급하지 못하였을 경우 랭킹이 전날보다 떨어지는 상황이 발생할 수 있습니다.)"
 ENTRANCE_TEST_LEVEL_UP_ING,단계 확인 중...
 WARMUP_ARENA_TASK_INFO_1,신입생 챌린지
-WARMUP_ARENA_TASK_INFO_2,신입생 큐피드
+WARMUP_ARENA_TASK_INFO_2,두 사람의 눈물
 WARMUP_ARENA_TASK_INFO_3,챌린지 미션
 WARMUP_ARENA_TASK_INFO_4,입학 세트 보상
 WARMUP_ARENA_TASK_INFO_5,별 미션 완료 후 해제
@@ -5000,7 +5000,7 @@ ACTIVITY_TEA_TEXT2,인기 소녀 루시퍼엘의 우승 스페셜 스킨 팩. �
 ACTIVITY_TEA_TEXT3,이전 스토리 완료 후 잠금 해제
 ACTIVITY_TEA_TEXT4,티타임 진도
 ACTIVITY_TEA_TEXT5,대응 스토리 완료 후 보상 수령 가능
-ACTIVITY_FISH_HELP,"1. 이벤트 기간 동안 일일 메일과 러블리 표류기, 표류기 보급, 소녀 전속 미션, 해변의 선물, 릴레이 팩, 슈퍼 팩, 스페셜 팩, 스페셜 스킨 팩을 통해 '낚싯대'를 획득할 수 있습니다. 러블리 표류기에서 '배 키' 또는 '조종 키'를 1개 사용할 때마다 '낚싯대' 1개를 획득할 수 있습니다.|2. 낚싯대 5개를 사용하여 낚시를 1회 진행할 수 있으며 낚시 결과에 따라 보상을 받을 수 있습니다. 낚은 물고기가 인어 공주가 필요한 물고기일 경우 추가로 선물이 주어집니다.|3. 인어 공주가 필요한 물고기를 낚으면 해당 물고기와 선물은 리셋됩니다.|4. 낚은 물고기가 인어 공주가 필요한 물고기 이외의 경우, 낚시를 할 때마다 필요한 물고기를 얻을 때까지 해당 물고기의 확률이 10%% 증가합니다.|5. 낚은 물고기의 길이에 따라 작은 금관과 은관을 획득할 수 있습니다. 금관을 획득하거나 일정한 길이의 인어 공주가 필요한 물고기를 획득하면 추가 보상을 획득하실 수도 있습니다.|6. 본 이벤트에서 획득한 물고기 수량에 따라 누적 보상을 받을 수 있습니다.|7. 이벤트 종료 시, 사용하지 않은 '낚싯대'는 자동으로 회수되며 개당 20K 골드로 반환됩니다. 반환된 골드는 메일을 통해 발송됩니다."
+ACTIVITY_FISH_HELP,"1. 이벤트 기간 동안 일일 메일과 러블리 표류기, 표류기 보급, 소녀 전속 미션, 해변의 선물, 릴레이 팩, 슈퍼 팩, 스페셜 팩, 스페셜 스킨 팩을 통해 '낚싯대'를 획득할 수 있습니다. 러블리 표류기에서 '배 키' 또는 '조종 키'를 1개 사용할 때마다 '낚싯대' 1개를 획득할 수 있습니다.|2. 낚싯대 5개를 사용하여 낚시를 1회 진행할 수 있으며 낚시 결과에 따라 보상을 받을 수 있습니다. 낚은 물고기가 인어 공주가 필요한 물고기일 경우 추가로 선물이 주어집니다.|3. 인어 공주가 필요한 물고기를 낚으면 해당 물고기와 선물은 리셋됩니다.|4. 낚은 물고기가 인어 공주가 필요한 물고기 이외의 경우, 낚시를 할 때마다 필요한 물고기를 얻을 때까지 해당 물고기의 확률이 10%% 증가합니다.|5. 낚은 물고기의 길이에 따라 작은 금관과 은관을 획득할 수 있습니다. 금관을 획득하거나 일정한 길이의 인어 공주가 필요한 물고기를 획득하면 추가 보상을 획득하실 수도 있습니다.|6. 본 이벤트에서 낚시했던 횟수에 따라 누적 보상을 받을 수 있습니다.|7. 이벤트 종료 시, 사용하지 않은 '낚싯대'는 자동으로 회수되며 개당 20K 골드로 반환됩니다. 반환된 골드는 메일을 통해 발송됩니다."
 ACTIVITY_FISH_BUTTON01,도감
 ACTIVITY_FISH_BUTTON02,누적 보상
 ACTIVITY_FISH_SKIP,스킵
@@ -5935,7 +5935,7 @@ GAME_ASSISTANT_TEXT18,프리미엄 캡슐 뽑기
 GAME_ASSISTANT_TEXT19,일반 캡슐 뽑기
 GAME_ASSISTANT_TEXT20,하트 수발신
 GAME_ASSISTANT_TEXT21,학원 리그
-GAME_ASSISTANT_TEXT22,전투 회 완성
+GAME_ASSISTANT_TEXT22,전투 3회 완성
 GAME_ASSISTANT_TEXT23,아르바이트
 GAME_ASSISTANT_TEXT24,미션 보상 2개 수령
 GAME_ASSISTANT_TEXT25,수량 입력
@@ -6220,7 +6220,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,에너지 소비：{1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,스킬을 바꾸면 레이저 에너지가 리셋됩니다. 그래도 바꾸시겠습니까?
 ACTIVITY_LOST_SPACE_NAV1,특별 사건
 ACTIVITY_LOST_SPACE_NAV2,설명
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. 이벤트 기간 동안, 선배님께서 탐사기를 사용해 우주 정거장의 미궁을 탐사할 수 있습니다. 탐사 지점을 1개 탐사할 때마다 1개의 보상을 획득할 수 있으며, 해당 탐사 지점을 기준으로 상하좌우에 위치한 지점이 탐사 가능 상태로 전환됩니다.|2. 미궁의 스테이지마다 1개의 도약점이 존재합니다. 해당 스테이지의 보상을 수령 후, 도약점을 클릭할 경우 해당 스테이지의 우주 정거장 보물 상자를 획득하고 새로운 스테이지의 미궁으로 도약합니다.|3. 특정 스테이지의 미궁에서 보급 좌표가 나타나며, 보급 좌표를 3개 획득할 경우 보급처가 나타납니다. 보급처 클릭 시 보급 스테이지에 들어가 대량의 보상을 획득할 수 있습니다.|4. 선배님은 1개의 스킬을 선택하여 탐사 시 보조 스킬로써 사용할 수 있습니다. 탐사기를 소모하여 미궁을 1회 탐사할 때마다 1 레이저 에너지를 획득할 수 있으며, 레이저 에너지가 가득 찬 뒤 스킬을 사용하여 특정 구역의 탐사 지점을 탐사할 수 있습니다.|5. 스킬은 언제나 변경할 수 있지만, 변경 시 보유한 레이저 에너지는 모두 리셋됩니다. 또한, 레이저 에너지가 가득 찰 경우 더 이상 레이저 에너지를 획득할 수 없습니다.|6. 탐사를 통해 획득한 보상은 직접 수령하셔야 합니다. '모두 받기' 버튼을 클릭하시면 보상을 일괄 수령 가능합니다만 특별 사건이 여기에 포함되지 않습니다. 특별 사건의 보상을 직집 수령하셔야 합니다. |7. '탐사기'는 일일 보상, 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩, 럭키 보너스, 소원성취 팩, 우주 화물선을 통해 획득할 수 있습니다.|8. 이벤트 종료 후 남은 '탐사기'는 자동으로 회수될 예정입니다.\n(탐사기*1=골드*1000k)"
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. 이벤트 기간 동안, 선배님께서 탐사기를 사용해 우주 정거장의 미궁을 탐사할 수 있습니다. 탐사 지점을 1개 탐사할 때마다 1개의 보상을 획득할 수 있으며, 해당 탐사 지점을 기준으로 상하좌우에 위치한 지점이 탐사 가능 상태로 전환됩니다.|2. 미궁의 스테이지마다 1개의 도약점이 존재합니다. 해당 스테이지의 보상을 수령 후, 도약점을 클릭할 경우 해당 스테이지의 우주 정거장 보물 상자를 획득하고 새로운 스테이지의 미궁으로 도약합니다.|3. 특정 스테이지의 미궁에서 보급 좌표가 나타나며, 보급 좌표를 3개 획득할 경우 보급처가 나타납니다. 보급처 클릭 시 보급 스테이지에 들어가 대량의 보상을 획득할 수 있습니다.|4. 선배님은 1개의 스킬을 선택하여 탐사 시 보조 스킬로써 사용할 수 있습니다. 탐사기를 소모하여 미궁을 1회 탐사할 때마다 1 레이저 에너지를 획득할 수 있으며, 레이저 에너지가 가득 찬 뒤 스킬을 사용하여 특정 구역의 탐사 지점을 탐사할 수 있습니다.|5. 스킬은 언제나 변경할 수 있지만, 변경 시 보유한 레이저 에너지는 모두 리셋됩니다. 또한, 레이저 에너지가 가득 찰 경우 더 이상 레이저 에너지를 획득할 수 없습니다.|6. 탐사를 통해 획득한 보상은 직접 수령하셔야 합니다. '모두 받기' 버튼을 클릭하시면 보상을 일괄 수령 가능합니다만 특별 사건이 여기에 포함되지 않습니다. 특별 사건의 보상을 직집 수령하셔야 합니다. |7. '탐사기'는 일일 보상, 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩, 럭키 보너스, 우주 화물선, 커스텀 팩, 월초 선물을 통해 획득할 수 있습니다.|8. 보유하고 계신 탐사기가 5개 이상일 경우(5개 포함), 자동 탐색 기능 사용 가능합니다. 해당 스테이지의 도약점을 찾을 시 혹은 탐사기가 다 소모될 시 자동 탐색이 종료됩니다. 자동 탐색 시 스킬 사용 및 특별 사건 만남이 정상적으로 진행됩니다.|9. 이벤트 종료 후 남은 '탐사기'는 자동으로 회수될 예정입니다.\n(탐사기*1=골드*1000k)"
 GAME_ASSISTANT_TEXT103,동아리 식당_주문 보상
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,레이저 에너지가 이미 가득 찼습니다! 스킬을 사용해보실래요?
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,리드해줄 수 있는 탐지점이 없습니다.
@@ -6342,7 +6342,7 @@ ACTIVITY_SPFARM_TEXT05,약탈
 ACTIVITY_SPFARM_TEXT06,인지도 보상
 ACTIVITY_SPFARM_TEXT07,약탈 중
 ACTIVITY_SPFARM_TEXT08,배낭 수용량
-NOT_EQUIPPED,미활성화
+NOT_EQUIPPED,미장착
 CHOOSE_EQUIP,장착할 장비를 선택하세요:
 ACTIVITY_CHILDREN_SHOP_BUTTON04,바로가기
 SHRINE_POOL_TEXT04,조각
@@ -6824,7 +6824,7 @@ ACTIVITY_CHIME_TEXT11,수량을 선택하세요.
 ACTIVITY_CUPID_GIFT_TEXT12,기원 5회
 ACTIVITY_CHIME_TEXT13,기원
 ACTIVITY_ENTRANCE_TEST_TEXT01,배팅
-ACTIVITY_NEW_WARMUP_HELP1,測驗競猜幫助文本1
+ACTIVITY_NEW_WARMUP_HELP1,"1. 이벤트 4일차 부터 배팅에 참여 가능합니다. 배팅 가능한 팀 3개는 퀴즈 랭킹 상위권에 속하는 선배들의 팀입니다.|2. 배팅이 3일 동안 지속되고 매일 배팅 1번 참여할 수 있으며 다음날에 배팅 결과가 공개됩니다.|3. 매번 배팅 시 프리미엄 캡슐 뽑기 코인 또는 골드가 소모됩니다. 배팅 성공 시, 메일로 배팅 시 소모된 아이템의 3배로 반환됩니다."
 ACTIVITY_NEW_WARMUP_TEXT1,배팅
 ACTIVITY_NEW_WARMUP_TEXT2,배팅이 아직 시작하지 않습니다.
 ACTIVITY_NEW_WARMUP_TEXT4,검의 퀴즈
@@ -6835,8 +6835,8 @@ ACTIVITY_NEW_WARMUP_TEXT9,퀴즈 배팅
 ACTIVITY_NEW_WARMUP_TEXT10,배팅 성공
 ACTIVITY_NEW_WARMUP_TEXT11,3배
 ACTIVITY_NEW_WARMUP_TEXT12,반환
-ACTIVITY_NEW_WARMUP_TEXT13,예측 성공
-ACTIVITY_NEW_WARMUP_TEXT14,예측 실패
+ACTIVITY_NEW_WARMUP_TEXT13,배팅 성공
+ACTIVITY_NEW_WARMUP_TEXT14,배팅 실패
 ACTIVITY_NEW_WARMUP_TEXT15,미참여
 ACTIVITY_NEW_WARMUP_TEXT16,대미지
 ACTIVITY_NEW_WARMUP_TEXT17,클리어 보상
@@ -6846,37 +6846,78 @@ ACTIVITY_NEW_WARMUP_TEXT20,모의전
 ACTIVITY_NEW_WARMUP_TEXT21,실전
 ACTIVITY_NEW_WARMUP_TEXT22,프리미엄 캡슐 뽑기 코인이 부족합니다!
 ACTIVITY_NEW_WARMUP_TEXT23,골드가 부족합니다!
-ACTIVITY_NEW_WARMUP_TEXT24,배팅됨
+ACTIVITY_NEW_WARMUP_TEXT24,선택 중
 OLD_SCHOOL_FLOOR_11_TEXT16,스테이지 대미지：
 OLD_SCHOOL_FLOOR_11_TEXT17,최고 대미지 업그레이드
-ACTIVITY_SAND_HELP01,使用鏟子挖開沙堡，收集貝殼獲得積分
-ACTIVITY_SAND_HELP02,積分達到指定目標可獲得獎勵\n獲得本輪所有獎勵後，進入下一輪
-ACTIVITY_SAND_HELP03,沙堡中可能會出現奇怪的東西哦，學長自行探索吧~
-ACTIVITY_SAND_TEXT01,自動
-ACTIVITY_SAND_TEXT02,請選擇使用鏟子的數量
-ACTIVITY_SAND_TEXT03,第5輪後可開啟自動尋寶
-ACTIVITY_SAND_TEXT04,自動尋寶將隨機挖開沙堡，是否繼續？
-ACTIVITY_SAND_TEXT05,獎勵預覽
-ACTIVITY_SAND_TEXT06,Round
-ACTIVITY_SAND_TEXT07,獎勵
-ACTIVITY_SAND_TEXT08,獲取盛夏新裝~
-ACTIVITY_SAND_MISSION_TAB01,每日任務
-ACTIVITY_SAND_MISSION_TAB02,活動任務
-ACTIVITY_SAND_GIFTBAG_HELP,購買盛夏邀請函後，完成所有每日任務獲得的鏟子數量翻倍！活動期間任意時間購買，均會補發已完成任務可額外獲得的鏟子。
-ACTIVITY_SAND_GIFTBAG_TEXT01,盛夏邀請函
-ACTIVITY_SAND_GIFTBAG_TEXT02,未激活
-ACTIVITY_SAND_GIFTBAG_TEXT03,已激活
-ACTIVITY_SAND_GIFTBAG_TEXT04,立即獲得
-ACTIVITY_SAND_GIFTBAG_TEXT05,盛夏之約每日任務獲得「鏟子」數量翻倍！
-ACTIVITY_SAND_SHOP_TAB01,盛夏新裝
-ACTIVITY_SAND_SHOP_TAB02,往期返場
-ACTIVITY_SAND_SHOP_TAB03,道具兌換
-ACTIVITY_SAND_SHOP_TEXT01,完成{1}輪沙灘尋寶後解鎖
-ACTIVITY_LOST_SPACE_TEXT11,自主探索
-ACTIVITY_LOST_SPACE_TEXT12,探測儀為5以下時無法自主探索
-ACTIVITY_LOST_SPACE_TEXT13,自主探索結果
-ACTIVITY_LOST_SPACE_TEXT14,消耗探測儀
-ACTIVITY_LOST_SPACE_TEXT15,獲得獎勵
-ACTIVITY_LOST_SPACE_TEXT16,已找到跳躍點，無法自主探索
-ACTIVITY_LOST_SPACE_TEXT17,是否確認自主探索？
-ACTIVITY_NEW_WARMUP_TEXT25,競猜己結束
+ACTIVITY_SAND_HELP01,삽을 사용해 탐색하세요~ 조개를 수집하여 포인트를 획득해보세요!
+ACTIVITY_SAND_HELP02,일정 포인트 도달 시 보상 획득 가능\n한 라운드의 모든 보상 획득 후 다음 라운드 시작
+ACTIVITY_SAND_HELP03,모래 캐슬에서 이상한 물건도 나올 수 있으니 조심히 탐색하세요~
+ACTIVITY_SAND_TEXT01,자동
+ACTIVITY_SAND_TEXT02,수량을 선택하세요.
+ACTIVITY_SAND_TEXT03,제3라운드 부터 자동 찾기 가능
+ACTIVITY_SAND_TEXT04,자동 찾기 시작하면 랜덤으로 탐색합니다. 계속 진행하시겠습니까?
+ACTIVITY_SAND_TEXT05,보상 미리 보기
+ACTIVITY_SAND_TEXT06,라운드
+ACTIVITY_SAND_TEXT07,보상
+ACTIVITY_SAND_TEXT08,여름 수영복 획득하세요~
+ACTIVITY_SAND_MISSION_TAB01,일일 미션
+ACTIVITY_SAND_MISSION_TAB02,이벤트 미션
+ACTIVITY_SAND_GIFTBAG_HELP,여름 초대장 구입 후 모래속 모래 찾기 일일 미션 완성 후 획득한 삽 수량이 2배가 됩니다! 이벤트 기간 동안 언제든지 구입해도 구입 전 수령 못한 삽을 모충 수령 가능합니다.|여름 초대장 팩은 1번 구매 가능. 다른 팩이 한 주에 남은 한정 구매 횟수는 리셋 시 다음 주 해당 팩이 대응하는 한정 구매 횟수에 추가됩니다.
+ACTIVITY_SAND_GIFTBAG_TEXT01,여름 초대장
+ACTIVITY_SAND_GIFTBAG_TEXT02,미활성화
+ACTIVITY_SAND_GIFTBAG_TEXT03,활성화
+ACTIVITY_SAND_GIFTBAG_TEXT04,즉시 획득
+ACTIVITY_SAND_GIFTBAG_TEXT05,여름의 약속 일일 미션\n삽 2배 획득!
+ACTIVITY_SAND_SHOP_TAB01,여름 수영복
+ACTIVITY_SAND_SHOP_TAB02,복귀 수영복
+ACTIVITY_SAND_SHOP_TAB03,아이템 교환
+ACTIVITY_SAND_SHOP_TEXT01,{1}라운드 완성 후 해제 가능
+ACTIVITY_LOST_SPACE_TEXT11,자동 탐색
+ACTIVITY_LOST_SPACE_TEXT12,탐사기 수량이 5개 미만일 경우 자동 탐색 불가합니다.
+ACTIVITY_LOST_SPACE_TEXT13,자동 탐색 결과
+ACTIVITY_LOST_SPACE_TEXT14,탐사기 사용
+ACTIVITY_LOST_SPACE_TEXT15,보상 획득
+ACTIVITY_LOST_SPACE_TEXT16,도약점을 이미 찾았으니 자동 탐색을 진행할 수 없습니다.
+ACTIVITY_LOST_SPACE_TEXT17,자동 탐색을 진행하시겠습니까?
+ACTIVITY_NEW_WARMUP_TEXT25,배팅이 종료되었습니다.
+ACTIVITY_NEW_WARMUP_TEXT26,검의 퀴즈 클리어 후 해제
+ACTIVITY_NEW_WARMUP_TEXT27,방패의 퀴즈 클리어 후 해제
+ACTIVITY_NEW_WARMUP_TEXT28,지팡이의 퀴즈 클리어 후 해제
+ACTIVITY_SAND_TITLE,모래속 보물찾기
+ACTIVITY_NEW_WARMUP_TEXT29,대미지
+ACTIVITY_NEW_WARMUP_TEXT30,{1}일차 구매 가능
+ACTIVITY_NEW_WARMUP_TEXT31,1초 후에 다시 모의전 진행하세요~
+ACTIVITY_NEW_WARMUP_TEXT32,배팅 종료!
+ACTIVITY_NEW_WARMUP_TEXT33,4일차 부터 배팅 오픈
+ACTIVITY_NEW_WARMUP_TEXT34,검의 퀴즈
+ACTIVITY_NEW_WARMUP_TEXT35,방패의 퀴즈
+ACTIVITY_NEW_WARMUP_TEXT36,지팡이의 퀴즈
+ACTIVITY_NEW_WARMUP_TEXT37,이벤트가 종료되어 배팅할 수 없습니다!
+ACTIVITY_FREE_REVERT_TEXT01,재입학
+ACTIVITY_FREE_REVERT_TEXT02,해당 소녀를 재입학시키겠습니까?
+ACTIVITY_FREE_REVERT_TEXT03,1. 이벤트 기간 동안 자원 소비 없이 지정된 소녀를 재입학할 수 있습니다.|2. 소녀 무료 재입학 이벤트로 재입학한 소녀는 육성에 사용한 모든 자원도 반환됩니다.
+ACTIVITY_FREE_REVERT_TEXT04,"1. 1-5성, 7-15성 소녀는 재입학을 할 수 있습니다. 인형은 각성, 교환, 재입학, 호감도 상승, 기숙사 배치를 할 수 없습니다.|2. 재입학한 소녀의 장비와 혼기는 가방으로 반환됩니다.|3. 소녀 재입학 룰은 다음과 같습니다:|1-5성 소녀 재입학: 해당 성급의 소녀 본체 x1|7성 소녀 재입학: 해당 학부의 5성 인형 x5+5성 소녀 본체 x2|8성 소녀 재입학: 해당 학부의 5성 인형 x7+5성 소녀 본체 x2|9성 소녀 재입학: 해당 학부의 6성 인형 x1+해당 학부의 5성 인형 x8+5성 소녀 본체 x3|10성 소녀 재입학: 해당 학부의 9성 인형 x2+5성 소녀 본체 x5|돌파 1단계 소녀 재입학: 해당 학부의 9성 인형 x3+5성 소녀 본체 x6|돌파 2단계 소녀 재입학: 해당 학부의 9성 인형 x4+5성 소녀 본체 x7|돌파 3단계 소녀 재입학: 해당 학부의 10성 인형 x1+해당 학부의 9성 인형 x4+5성 소녀 본체 x7|돌파 4단계 소녀 재입학: 해당 학부의 10성 인형 x2+해당 학부의 9성 인형 x4+5성 소녀 본체 x8|돌파 5단계 소녀 재입학: 해당 학부의 10성 인형 x3+해당 학부의 9성 인형 x4+5성 소녀 본체 x9|4. 1-15성 소녀 재입학 시 사용하신 모든 자원은 반환되며 또한 10-15성 소녀의 엘리트 스킬 레벨업에 사용한 모든 재료가 반환됩니다. 15성 소녀의 성원 레벨업에 사용된 모든 재료가 반환됩니다.|5. 1-5성 소녀 재입학은 무료이며 7성, 8성, 9성 소녀 재입학 시 각각400/600/800 다이아가 소모됩니다. 10-15성 소녀 재입학 시 졸업 증서*5개가 소모됩니다.|6. 재입학 후, 호감도와 서약 상태는 재입학한 소녀 중 1명 본체 소녀에게 반영됩니다.|7. 재입학에서 획득한 5성, 9성, 10성 소녀는 매달 월간 과제의 미션에 가산되지 않습니다."
+GROWTH_DIARY_TITLE,성정 일기
+GROWTH_DIARY_TEXT01,챕터 {1}
+GROWTH_DIARY_TEXT02,진도
+GROWTH_DIARY_TEXT03,챕터 보상
+GROWTH_DIARY_TEXT04,보상받기
+GROWTH_DIARY_TEXT05,모든 미션 완료 시 해제
+GROWTH_DIARY_TEXT06,앞의 챕터를 먼저 완성해야 해당 챕터를 해제 가능합니다.
+GROWTH_DIARY_TEXT07,수령완료
+GROWTH_DIARY_TEXT08,해당 챕터는 해제되지 않았습니다.
+GROWTH_DIARY_TEXT09,{1}로 기재되어 있는 미션은 현재 화면에서만 클리어 가능합니다.
+ACTIVITY_NEW_WARMUP_TEXT38,해당 팀을 선택하시겠습니까?
+GUILD_COMPETITION_ACTIVE_TEXT01,活躍度任務
+GUILD_COMPETITION_ACTIVE_TEXT02,活躍度
+GUILD_COMPETITION_ACTIVE_TEXT03,每日任務
+GUILD_COMPETITION_ACTIVE_TEXT04,社團任務
+GUILD_COMPETITION_ACTIVE_HELP,活躍度|達到指定數量全社團成員均可獲得獎勵，透過郵件發放。|每日任務|每日刷新，完成可領取獎勵並且增加社團總活躍度。|社團任務|全社團共享進度，完成后所有社團內玩家均可領取獎勵。
+GUILD_COMPETITION_PARTNER_HELP,1.天空島開啟期間，學長可將戰姬進修。（天異陣營以及無法升至15星的戰姬無法進行）|2.戰姬進修後，等級和星級將提升至自身擁有的最高等級戰姬；精英技能等級將跟隨星級變化，11-15星對應精英技能1-5級；裝備默認為粉色職業套；學長可以自行配置職業套技能、水晶、魂器和潛能。|3.實戰時，可花費50K金幣選擇進修戰姬出戰，同名戰姬每日僅可進行並實戰1次。
+GUILD_COMPETITION_PARTNER_TITLE,戰姬進修
+GUILD_COMPETITION_PARTNER_TEXT01,請選擇進行戰姬
+GUILD_COMPETITION_PARTNER_TEXT02,同名戰姬每日僅可進行並實戰1次
+GUILD_COMPETITION_PARTNER_TEXT03,是否花費50K金幣選擇進行戰姬出戰？
+GUILD_COMPETITION_SKILL_TIPS,敵人已達到更高周目\n注意查看技能變化哦~
+GUILD_COMPETITION_CHALLENGE_TEXT01,挑戰目標
+GUILD_COMPETITION_CHALLENGE_TEXT02,達成1/2/3個目標，最終得分增加10%%/20%%/30%%

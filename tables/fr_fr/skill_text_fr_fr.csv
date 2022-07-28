@@ -13248,3 +13248,232 @@ Lorsque la porteuse est attaquée, elle marque l\'attaquant avec [c][e28002]Cha�
 Lorsque la porteuse est attaquée par l\'ennemi provoqué, elle obtient une [c][e28002]Barrière[-][/c] (10% des PV Max de la porteuse, cet effet ne peut être déclenché que 5 fois par tour).
 [c][e28002]Chaîne Maudite (Marque, non cumulable) :[-][/c]
 Lorsque la cible marquée reçoit un Coup Mortel et déclenche un effet qui l\'empêche d\'être vaincue par ces dégâts mortels, il ne reste que 1 PV sur lui."
+5301900,Nymphéa,Attaque Basique,
+65302600,Nymphéa,Attaque Basique,
+75301900,Nymphéa,Attaque Basique,
+5301901,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 200% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (10% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (20% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (150% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 4% et elle récupèrera des PV (8% de ses PV perdus)."
+65302601,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 360% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (15% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (40% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (300% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 6% et elle récupèrera des PV (12% de ses PV perdus)."
+75301901,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 800% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (600% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+5301902,Nymphéa,Senteur de Lotus,"Augmente les PV de 15%, l'Attaque de 10%, la Précision de 20%, les Critiques de 10%, l'Immunité de 10%."
+65302602,Nymphéa,Senteur de Lotus,"Augmente les PV de 25%, l'Attaque de 20%, la Précision de 30%, les Critiques de 20%, l'Immunité de 20%."
+65302612,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 40%, les Critiques de 30%, l'Immunité de 30%."
+75301902,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 40%, les Critiques de 30%, l'Immunité de 30%."
+5301903,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (100% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (200% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 4% et elle récupèrera des PV (8% de ses PV perdus)."
+65302603,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (150% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (400% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 6% et elle récupèrera des PV (12% de ses PV perdus)."
+65302613,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (300% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (800% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+75301903,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (300% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (800% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+5301904,Nymphéa,Élégance Intemporelle,"
+Le temps ne pourra jamais estomper l\'élégance des fleurs de lotus. Au début de la bataille, Nymphéa marque 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (150% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (2% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 4% et elle récupèrera des PV (8% de ses PV perdus)."
+65302604,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (300% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (3% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 6% et elle récupèrera des PV (12% de ses PV perdus)."
+65302614,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (600% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+75301904,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (600% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019011,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 816% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (612% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019012,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 832% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (624% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019013,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 848% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (636% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019014,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 864% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (648% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019015,Nymphéa,Cœur de Lotus,"
+La pure bienveillance repose au cœur de la fleur de lotus. Inflige 880% d\'Attaque à 1 ennemi aléatoire, et lui inflige des dégâts supplémentaires (25% des PV Max de la cible, 1500% de la valeur de l\'Attaque de Nymphéa au maximum), puis récupère des PV (80% de ses dégâts infligés).
+Inflige des dégâts de [c][01a310]Saignement[-][/c] (660% de l\'Attaque de Nymphéa) à tous les ennemis pendant 3 tours et marque 3 de ses alliées aléatoires avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019021,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 41%, les Critiques de 30%, l'Immunité de 30%."
+753019022,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 42%, les Critiques de 30%, l'Immunité de 30%."
+753019023,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 43%, les Critiques de 30%, l'Immunité de 30%."
+753019024,Nymphéa,Senteur de Lotus,"Augmente les PV de 35%, l'Attaque de 30%, la Précision de 44%, les Critiques de 30%, l'Immunité de 30%."
+753019025,Nymphéa,Senteur de Lotus,"Augmente les PV de 38%, l'Attaque de 33%, la Précision de 45%, les Critiques de 30%, l'Immunité de 30%."
+753019031,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (306% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (816% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019032,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (312% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (832% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019033,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (318% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (848% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019034,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (324% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (864% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019035,Nymphéa,Fragrance sous la Lune,"
+Les fleurs de lotus qui éclosent sous le clair de lune sont sacrées. Lorsque Nymphéa lance son Attaque Basique, elle inflige des dégâts de [c][01a310]Saignement[-][/c] (330% de l\'Attaque de Nymphéa) à 3 ennemis aléatoires pendant 2 tours, soigne les alliées de la ligne avant (880% de l\'Attaque de Nymphéa) et les marque avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019041,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (612% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019042,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (624% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019043,Nymphéa,Élégance Intemporelle,"
+Au début de la bataille, Nymphéa marque les 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (636% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au débtu de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019044,Nymphéa,Élégance Intemporelle,"
+Le temps ne pourra jamais estomper l\'élégance des fleurs de lotus. Au début de la bataille, Nymphéa marque 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (648% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (5% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."
+753019045,Nymphéa,Élégance Intemporelle,"
+Le temps ne pourra jamais estomper l\'élégance des fleurs de lotus. Au début de la bataille, Nymphéa marque 3 ennemis aléatoires avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours et marque toutes ses alliées (inclut Nymphéa) avec [c][e28002]Pureté[-][/c] pendant 3 tours.
+Lorsqu\'elle est vaincue, elle infligera des dégâts de [c][01a310]Saignement[-][/c] (660% de l\'Attaque de Nymphéa) à tous les ennemis pendant 4 tours et les marque avec [c][e28002]Lotus Sanglant[-][/c] pendant 2 tours.
+
+[c][e28002]Lotus Sanglant (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'un effet de Saignement est infligé à la cible marquée, elle subira des dégâts supplémentaires (8% des PV Max de la cible marquée, 1500% de la valeur de l\'Attaque de Nymphéa au maximum).
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Pureté (Effet de Compétence, non cumulable) :[-][/c]
+Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en état de Saignement, l\'Attaque de cette cible marquée sera augmentée de 12% et elle récupèrera des PV (16% de ses PV perdus)."

@@ -151,10 +151,6 @@ function ActivityEntranceTestSlotWindow:updateDataGroup(isUpdateArr)
 	end
 
 	SlotWindow.updateDataGroup(self)
-
-	local num = #self.activityData.detail.partner_list or 0
-	self.slotNum.text = tostring(num) .. "/" .. tostring(xyd.tables.miscTable:getNumber("activity_warmup_arena_partner_limit", "value"))
-
 	self:waitForFrame(2, function ()
 		self.scrollView_:ResetPosition()
 	end)
@@ -194,19 +190,6 @@ function ActivityEntranceTestSlotWindow:addSortedPartners(sortedPartners, keyVal
 			self.sortedPartners[key] = res
 		end
 	end
-end
-
-function ActivityEntranceTestSlotWindow:addNewPartner(partner)
-	local num = #self.activityData.detail.partner_list or 0
-	self.slotNum.text = tostring(num) .. "/" .. tostring(xyd.tables.miscTable:getNumber("activity_warmup_arena_partner_limit", "value"))
-	local key = tostring(self.sortType) .. "_" .. tostring(self.chosenGroup)
-
-	table.insert(self.sortedPartners[key], 2, {
-		partner = partner,
-		key = key,
-		red_point = self:checkRedMark(partner.partnerID)
-	})
-	self:updateDataGroup(false)
 end
 
 function ActivityEntranceTestSlotWindow:checkRedMark(partner)

@@ -3309,16 +3309,16 @@ ENTRANCE_TEST_HELP_DES_1_4,Tap the empty Crystal slot to select a suitable [c][c
 ENTRANCE_TEST_HELP_DES_1_5,Tap the empty Antique slot to select a suitable [c][cc0011]Antique[-][/c] for your girl.
 ENTRANCE_TEST_HELP_TITLE_1_1,Setup
 ENTRANCE_TEST_HELP_TITLE_2_1,Setup
-ENTRANCE_TEST_HELP_TITLE_2_2,Defense Team
-ENTRANCE_TEST_HELP_DES_2_1,"After reaching Division A, the Girls available will be at Limit Break Stage 5, and you will be able to adjust their [c][cc0011]Potentials[-][/c]."
+ENTRANCE_TEST_HELP_TITLE_2_2,Ability Exam
+ENTRANCE_TEST_HELP_DES_2_1,Tap the empty Potential slot to select a suitable [c][cc0011]Potential[-][/c] for your girl.
 ENTRANCE_TEST_HELP_DES_2_2,"After the girl is fully prepared, she will be tagged with a ""Done"" mark."
-ENTRANCE_TEST_HELP_DES_2_3,"Before you engage, please set a [c][cc0011]Defense Team[-][/c] for yourself. Only the girls who are fully prepared can be added in your Defense Team. If your Defense Team wins a battle, you will win some points. But you will also lose some points if your Defense Team loses a battle. So please set up your Defense Team carefully."
-ENTRANCE_TEST_HELP_TITLE_3_1,Fight
-ENTRANCE_TEST_HELP_TITLE_3_2,Ranking
+ENTRANCE_TEST_HELP_DES_2_3,There are 3 Ability Exams available for the event. You need to consume 1 Test Certificate for each challenge. 3 free Test Certificates will be issued to your account at 0:00 (UTC/GMT 0) each day. You can purchase additional Test Certificates with Gems starting from the 5th day of the event. You can pass an Exam and unlock new Girls after your [c][cc0011]Total Damage[-][/c] reaches the requirement of the Exam.
+ENTRANCE_TEST_HELP_TITLE_3_1,Bet
+ENTRANCE_TEST_HELP_TITLE_3_2,Damage & Ranking
 ENTRANCE_TEST_HELP_TITLE_3_3,Reward
-ENTRANCE_TEST_HELP_DES_3_1,"Tap [c][cc0011]Fight[-][/c] button to battle with other players after you've met the requirement.\nYou will get random opponents according to your current event points. You will get event points for each victory, but you will not lose event points even if you lose."
-ENTRANCE_TEST_HELP_DES_3_2,Starting a battle will consume 1 Test Certificate.\nThe number of Test Certificates you own will be reset to 10 Test Certificates at 0:00(UTC/GMT 0) every day.\nExtra Test Certificates can be purchased with Gems.
-ENTRANCE_TEST_HELP_DES_3_3,You can check your current event score and position in the ranking list during the event.
+ENTRANCE_TEST_HELP_DES_3_1,The players’ lineups with the best performance in the Exams will be chosen for battles you can bet on starting from [c][cc0011]Day 4[-][/c] of the event\nThe Bet will be available for [c][cc0011]3 days[-][/c]. You are able to bet once each day. The result for each bet will be concluded on the next day.
+ENTRANCE_TEST_HELP_DES_3_2,You can place your bet with [c][cc0011]Adv. Capsule Coins[-][/c] or [c][cc0011]Coins[-][/c].\nYou can get triple the bet you placed if you win.
+ENTRANCE_TEST_HELP_DES_3_3,You can check out your highest damage and rankings of the 3 Exams during the event.
 ENTRANCE_TEST_HELP_DES_3_4,Tap on [c][cc0011]Rewards[-][/c] button to check the missions and rewards available.\nExtra rewards are unlocked after purchasing the [c][cc0011]Admission Prep Package[-][/c].
 ACTIVITY_WARMUP_PACK_TEXT04,After purchasing\nYou will get:
 ACTIVITY_WARMUP_PACK_TEXT05,Value
@@ -3825,7 +3825,7 @@ OLD_SCHOOL_FLOOR_NAME,Area {1}
 OLD_SCHOLL_BUFF_NAME1,Primary Plan
 OLD_SCHOLL_BUFF_NAME2,Standard Plan
 OLD_SCHOOL_FIGHT_NAME,"Area {1}, Stage {2}"
-OLD_SCHOOL_HELP1,"Old Campus Exploration Rules|1. Old Campus Exploration will occur in seasons, consisting of a battle period (13 days) and a result phase (1 day).|2. There are a total of 10 levels, each level consists of 3 stages. Level 1 is unlocked by default per season. Clear any one of the stages in a level to unlock the next level.||Stage Challenge|1. Players need to set up their full lineup for all 3 stages prior to entering a stage.|2. Choose to activate Exploration Plans to boost the power of your enemies. Exploration Plans selected will affect your final score of the stage.|3. Current Stage Score: After passing a stage with the same team, your recorded highest score will be the score of the stage. This score will reset if you adjust your lineup to challenge the stage.|4. Best Level Score: Your highest score for all 3 stages of a level will not be reset to 0 for adjustments on lineup made.|5. Total Score: The total score consists of all 10 Best Level Scores.|| Seasonal Rewards|1. Level Reward: Pass stages without adjusting your lineup to get corresponding rewards, rewards need to be claimed manually.|2. Score Reward: Once a target score is reached, corresponding rewards can be claimed manually.|3. Ranking Reward: You will be ranked according to your total score (players with the same scores will be ranked according to the player that reached the score first). Once the season ends, your ranking rewards will be sent via mail. Players with a total score of 0 will not be qualified for this reward.|4. Shop Reward: Reach a certain score by participating in the current season to unlock the benefit to purchase seasonal items. Accumulate participation of multiple seasons (with each season reaching the score amount to purchase) in order to unlock the benefit to purchase from the regular store. These purchase items can be used to upgrade elite skills."
+OLD_SCHOOL_HELP1,"Old Campus Exploration Rules|1. Old Campus Exploration will occur in seasons, consisting of a battle period (13 days) and a result phase (1 day).|2. There are a total of 10 levels, each level consists of 3 stages. Level 1 is unlocked by default per season. For the first 10 levels, clear any one of the stages in a level to unlock the next level. The 11th level will be unlocked after all stages in the previous 10 levels are passed and your total score exceeds 1000.||Stage Challenge|1. Players need to set up their full lineup for all 3 stages prior to entering a stage.|2. Choose to activate Exploration Plans to boost the power of your enemies. Exploration Plans selected will affect your final score of the stage.|3. Current Stage Score: After passing a stage with the same team, your recorded highest score will be the score of the stage. This score will reset if you adjust your lineup to challenge the stage.|4. Best Level Score: Your highest score for all 3 stages of a level will not be reset to 0 for adjustments on lineups made.|5. All Exploration Plans will be applied in level 11. Players will be ranked according to the damage dealt in the level. The top 50 players in the damage ranking will be awarded with additional scores.|6. Total Score: The total score consists of all 10 Best Level Scores.|| Seasonal Rewards|1. Level Reward: Pass stages without adjusting your lineup to get corresponding rewards, rewards need to be claimed manually.|2. Score Reward: Once a target score is reached, corresponding rewards can be claimed manually.|3. Score Ranking Reward: You will be ranked according to your total score (players with the same scores will be ranked according to the player that reached the score first). Once the season ends, your ranking rewards will be sent via Mail. Players with a total score of 0 will not be qualified for this reward.|4. Damage Ranking Reward: Players will be ranked according to the damages they deal in level 11. Rewards will be issued to players on the ranking list via Mail according to their positions at the end of each season.|5. Shop Reward: Reach a certain score by participating in the current season to unlock the benefit to purchase seasonal items. Accumulate participation of multiple seasons (with each season reaching the score amount to purchase) in order to unlock the benefit to purchase from the regular store. These purchase items can be used to upgrade elite skills."
 OLD_SCHOOL_HELP2,"1. Once the battle period ends, a ranking results will be displayed. Top ten players will each receive a limited 14 days frame reward.|2. Total scores will be ranked across servers."
 ACTIVITY_STUDY_NEED_ENERGY3,"You will consume 1 chance to re-submit a new answer, proceed?"
 OLD_SCHOOL_SHOP_TEXT1,Seasonal
@@ -4489,11 +4489,11 @@ TRAVEL_MAIN_TEXT66,limit increases to {1} after
 ENTRANCE_TEST_CANNOT_FIGHT,"You cannot join the battle yet, do you still set up a team?"
 ENTRANCE_TEST_NOT_OPEN,Complete Stage {1} in Campaign to join battles. Currently only the bet is available!
 ACTIVITY_RETURN_GIFT_TEXT,Customize your own pack!
-ENTRANCE_TEST_SHOWS_TIPS,Win the Bet for [c][0x723c1c size=34]DOUBLE[-][/c] Coins.
+ENTRANCE_TEST_SHOWS_TIPS,Win the Bet for [c][0x723c1c size=34]Triple[-][/c] Reward
 ENTRANCE_TEST_GUESS_CHANGE,Change Bet
 REPAIR_TO_RESET_GAME,"The game will be restarted automatically after the repair, continue?"
 PUB_MISSION_AUTO_HELP,"1. Multi-Intern can help you to start Internship Quests easier.|2. When the number of ongoing Internship Quests and the number of completed Internship Quests reach the limit, you will not be able to use the Multi-Intern feature. Please collect the rewards first before you use the feature again.|3. You can select the star rank of the Internship Quests you want to start in Multi-Intern feature.|4. If there's an Internship Quest you don't want to start, please tap the ""√"" again to cancel it."
-ENTRANCE_TEST_GUESS_CHANGE_TIPS,Do you want to change your bet on this team?
+ENTRANCE_TEST_GUESS_CHANGE_TIPS,Confirm to edit your bet?
 ACTIVITY_RESIDENT_RETURN_RECOMMENT1,"Senpai, it's been a long time since we last met!"
 ACTIVITY_RESIDENT_RETURN_RECOMMENT2,We've listed some suitable friends and Guilds for you~
 ACTIVITY_ENTRANCE_TEST_SHOW_WINDOW_HELP,"1. You can spend Coins during the event to bet on the players.|2. The red player will be the attacker and the blue as the defender. The fight can last over 15 rounds. Once the player you bet on wins the battle, you will receive rewards.|3. There are 3 betting levels in the bet. The more Coins you spend on the bet, the better the reward you will receive after winning the bet.|4. The bet is updated daily at 00:00 (UTC / GMT 0) and the match result of the previous day will also be announced at the same time. The rewards will be sent by Mail."
@@ -4867,10 +4867,10 @@ ACTIVITY_ANTIQUE_LEVELUP_TEXT15,"You have reached the limit of 60,000 Antique Ex
 ACTIVITY_ANTIQUE_LEVELUP_TEXT16,"The chosen Antique is currently\nequipped by another Girl, continue?"
 DAILY_QUIZ_TEXT04,"If you need extra Quiz Chances, please enter\nthe number of Chances you would like to purchase:"
 PUB_MISSION_AUTO_TEXT1,Claim in Bulk
-ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,Some Antiques are available by default. Others will be unlocked once you acquire them in the game.
+ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,*The Antique is currently only available in Entrance Exam
 ENTRANCE_TEST_PARTNER_NOT_READY,You have chosen Girls that haven't been fully equipped yet in your Team. Would you still like to continue?
 ENTRANCE_TEST_BATTLE_JUMP_SET,Adjust
-ENTRANCE_TEST_PET_EXSKILL,The Ulticore Level of the Servants chosen here will have the same Level as your Servants.
+ENTRANCE_TEST_PET_EXSKILL,The Ulticore Level of the Servants in Entrance Exam will be set to 100.
 ENTRANCE_TEST_PET_CANNOT_UPGRADE,You cannot upgrade your Servants in Entrance Exam.
 SNS_ACTIVITY_HTTP_BTN01,Go!
 SNS_ACTIVITY_TEXT01,Check it out in our communities!
@@ -4909,7 +4909,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
 WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: |After reaching Division {1}:|{2}|After reaching Division {3}:|{4}|After reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
-WARMUP_ARENA_TASK_INFO_2,A Frightful Encounter
+WARMUP_ARENA_TASK_INFO_2,Tears for Two
 WARMUP_ARENA_TASK_INFO_3,Mission Rewards
 WARMUP_ARENA_TASK_INFO_4,Extra Rewards
 WARMUP_ARENA_TASK_INFO_5,Unlock after completing star-marked missions
@@ -6225,7 +6225,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Energy Cost: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Laser Energy will be reset to 0 after switching the skill, confirm to continue?"
 ACTIVITY_LOST_SPACE_NAV1,Special Event
 ACTIVITY_LOST_SPACE_NAV2,Help
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Lucky Bonus, Wishing Fountain Supply, and Space Station Supply.|8. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Lucky Bonus, Customization Pack, Monthly Kick Off and Space Station Supply.|8. Auto Explore will be available when you have 5 or more Space Radars. During Auto Explore the system will automatically trigger the special events and your skill. Auto Explore will be stopped if your Space Radars are all consumed or a Portal is found.|9. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
 GAME_ASSISTANT_TEXT103,Cafeteria - Order Rewards
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Laser Energy is full, confirm not to trigger the skill?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,No explorable area is in your current skill range
@@ -6852,7 +6852,7 @@ ACTIVITY_CHIME_TEXT11,Select Quantity
 ACTIVITY_CUPID_GIFT_TEXT12,Pray x5
 ACTIVITY_CHIME_TEXT13,Pray
 ACTIVITY_ENTRANCE_TEST_TEXT01,Bet
-ACTIVITY_NEW_WARMUP_HELP1,測驗競猜幫助文本1
+ACTIVITY_NEW_WARMUP_HELP1,1. The players’ lineups with the best performance in the Exams will be chosen for battles you can bet on starting from Day 4 of the event.|2. You can bet once each day. The result for each bet will be concluded the next day.|3. You can place your bet with Adv. Capsule Coins or Coins. You can get triple the bet you placed if you win the bet.
 ACTIVITY_NEW_WARMUP_TEXT1,Bet
 ACTIVITY_NEW_WARMUP_TEXT2,The bet hasn't begun
 ACTIVITY_NEW_WARMUP_TEXT4,Exam of Strength
@@ -6877,34 +6877,75 @@ ACTIVITY_NEW_WARMUP_TEXT23,Not Enough Coins!
 ACTIVITY_NEW_WARMUP_TEXT24,Bet Placed
 OLD_SCHOOL_FLOOR_11_TEXT16,Stage Damage:
 OLD_SCHOOL_FLOOR_11_TEXT17,Level Highest Damage increase
-ACTIVITY_SAND_HELP01,使用鏟子挖開沙堡，收集貝殼獲得積分
-ACTIVITY_SAND_HELP02,積分達到指定目標可獲得獎勵\n獲得本輪所有獎勵後，進入下一輪
-ACTIVITY_SAND_HELP03,沙堡中可能會出現奇怪的東西哦，學長自行探索吧~
-ACTIVITY_SAND_TEXT01,自動
-ACTIVITY_SAND_TEXT02,請選擇使用鏟子的數量
-ACTIVITY_SAND_TEXT03,第5輪後可開啟自動尋寶
-ACTIVITY_SAND_TEXT04,自動尋寶將隨機挖開沙堡，是否繼續？
-ACTIVITY_SAND_TEXT05,獎勵預覽
+ACTIVITY_SAND_HELP01,Dig up the sandcastle with Sand Shovel to get seashells and corresponding points
+ACTIVITY_SAND_HELP02,Get rewards by earning points\nGet all rewards in the current round to enter the next round
+ACTIVITY_SAND_HELP03,Many secrets are hiding inside the sandcastle. Let's check it out!
+ACTIVITY_SAND_TEXT01,Auto
+ACTIVITY_SAND_TEXT02,Select Quantity
+ACTIVITY_SAND_TEXT03,Auto dig available after entering Round 3
+ACTIVITY_SAND_TEXT04,"Random castle parts will be selected to dig if Auto Dig is applied, confirm to continue?"
+ACTIVITY_SAND_TEXT05,Rewards
 ACTIVITY_SAND_TEXT06,Round
-ACTIVITY_SAND_TEXT07,獎勵
-ACTIVITY_SAND_TEXT08,獲取盛夏新裝~
-ACTIVITY_SAND_MISSION_TAB01,每日任務
-ACTIVITY_SAND_MISSION_TAB02,活動任務
-ACTIVITY_SAND_GIFTBAG_HELP,購買盛夏邀請函後，完成所有每日任務獲得的鏟子數量翻倍！活動期間任意時間購買，均會補發已完成任務可額外獲得的鏟子。
-ACTIVITY_SAND_GIFTBAG_TEXT01,盛夏邀請函
-ACTIVITY_SAND_GIFTBAG_TEXT02,未激活
-ACTIVITY_SAND_GIFTBAG_TEXT03,已激活
-ACTIVITY_SAND_GIFTBAG_TEXT04,立即獲得
-ACTIVITY_SAND_GIFTBAG_TEXT05,盛夏之約每日任務獲得「鏟子」數量翻倍！
-ACTIVITY_SAND_SHOP_TAB01,盛夏新裝
-ACTIVITY_SAND_SHOP_TAB02,往期返場
-ACTIVITY_SAND_SHOP_TAB03,道具兌換
-ACTIVITY_SAND_SHOP_TEXT01,完成{1}輪沙灘尋寶後解鎖
-ACTIVITY_LOST_SPACE_TEXT11,自主探索
-ACTIVITY_LOST_SPACE_TEXT12,探測儀為5以下時無法自主探索
-ACTIVITY_LOST_SPACE_TEXT13,自主探索結果
-ACTIVITY_LOST_SPACE_TEXT14,消耗探測儀
-ACTIVITY_LOST_SPACE_TEXT15,獲得獎勵
-ACTIVITY_LOST_SPACE_TEXT16,已找到跳躍點，無法自主探索
-ACTIVITY_LOST_SPACE_TEXT17,是否確認自主探索？
-ACTIVITY_NEW_WARMUP_TEXT25,競猜己結束
+ACTIVITY_SAND_TEXT07,Rewards
+ACTIVITY_SAND_TEXT08,Obtain new Beach Themed skins!
+ACTIVITY_SAND_MISSION_TAB01,Daily
+ACTIVITY_SAND_MISSION_TAB02,Event
+ACTIVITY_SAND_GIFTBAG_HELP,"After purchasing the Midsummer Invitation, you can receive double Sand Shovel rewards for completing Daily Tasks! The extra Sand Shovels for the tasks that were completed before will also be issued even if you purchase the Midsummer Invitation in the middle of the event.|The purchase chances of the Gift Packs (Midsummer Invitation excluded) on this page will be reset in the second week of the event. Any remaining purchase chances in the first week will be added to those in the second week."
+ACTIVITY_SAND_GIFTBAG_TEXT01,Midsummer Invitation
+ACTIVITY_SAND_GIFTBAG_TEXT02,Inactive
+ACTIVITY_SAND_GIFTBAG_TEXT03,Activated
+ACTIVITY_SAND_GIFTBAG_TEXT04,Instant Reward
+ACTIVITY_SAND_GIFTBAG_TEXT05,Double Sand Shovel reward\nFor Daily Midsummer Task
+ACTIVITY_SAND_SHOP_TAB01,New Skins
+ACTIVITY_SAND_SHOP_TAB02,Previous
+ACTIVITY_SAND_SHOP_TAB03,Exchange
+ACTIVITY_SAND_SHOP_TEXT01,Unlock after completing Round {1} in Beach Treasure Hunt
+ACTIVITY_LOST_SPACE_TEXT11,Auto Explore
+ACTIVITY_LOST_SPACE_TEXT12,Auto Explore is only available when you have 5 or more Space Radars
+ACTIVITY_LOST_SPACE_TEXT13,Result
+ACTIVITY_LOST_SPACE_TEXT14,Space Rader Used
+ACTIVITY_LOST_SPACE_TEXT15,Reward Obtained
+ACTIVITY_LOST_SPACE_TEXT16,Cannot Auto Explore when Portal is detected
+ACTIVITY_LOST_SPACE_TEXT17,Confirm to Auto Explore?
+ACTIVITY_NEW_WARMUP_TEXT25,The Bet has ended.
+ACTIVITY_NEW_WARMUP_TEXT26,Unlock after passing Exam of Strength
+ACTIVITY_NEW_WARMUP_TEXT27,Unlock after passing Exam of Endurance
+ACTIVITY_NEW_WARMUP_TEXT28,Unlock after passing Exam of Wisdom
+ACTIVITY_SAND_TITLE,Beach\nTreasure Hunt
+ACTIVITY_NEW_WARMUP_TEXT29,Damage
+ACTIVITY_NEW_WARMUP_TEXT30,Purchase available from Day {1}
+ACTIVITY_NEW_WARMUP_TEXT31,Please start the simulation 1 second later
+ACTIVITY_NEW_WARMUP_TEXT32,Bet is closed!
+ACTIVITY_NEW_WARMUP_TEXT33,Bet will be available on Day 4
+ACTIVITY_NEW_WARMUP_TEXT34,Exam of Strength
+ACTIVITY_NEW_WARMUP_TEXT35,Exam of Endurance
+ACTIVITY_NEW_WARMUP_TEXT36,Exam of Wisdom
+ACTIVITY_NEW_WARMUP_TEXT37,The event is over. You cannot bet
+ACTIVITY_FREE_REVERT_TEXT01,Reverse
+ACTIVITY_FREE_REVERT_TEXT02,Confirm to Reverse the Girl?
+ACTIVITY_FREE_REVERT_TEXT03,1. You are able to Reverse some Specific Girls that are mentioned in the event without consuming any resources.|2. All resources you spent on the Girls reversed this way will be fully returned.
+ACTIVITY_FREE_REVERT_TEXT04,"1. Girls from 1-Star to 5-Star and 7-Star to 10-Star can be Reversed (including those who have Limit-Break status). 6-Star Girls cannot be reversed for now. Dolls are not able to be Awakened, Exchanged, Reversed, Transferred, given Gifts or placed in a Dorm.|2. Gear and Antiques of a Girl who is Reversed will automatically be sent back to Bag.|3. Results of Reversal: |1-Star to 5-Star: the namesake Girl at their original star rank|7-Star Girl Reversal: five 5-Star Dolls of the Reversed Girl's Faction + 2 namesake 5-Star Girls|8-Star Girl Reversal: seven 5-Star Dolls of the Reversed Girl's Faction + 2 namesake 5-Star Girls|9-Star Girl Reversal: one 6-Star Doll of the Reversed Girl's Faction + eight 5-Star Dolls of the Reversed Girl's Faction + 3 namesake 5-Star Girls|10-Star Girl Reversal: two 9-Star Dolls of the Girl's Faction + 5 namesake 5-Star Girls|Limit-Break Stage 1 Girl Reversal: three 9-Star Dolls of the Reversed Girl's Faction + 6 namesake 5-Star Girls|Limit-Break Stage 2 Girl Reversal: four 9-Star Dolls of the Reversed Girl's Faction + 7 namesake 5-Star Girls|Limit-Break Stage 3 Girl Reversal: one 10-Star Doll + four 9-Star Dolls of the Reversed Girl's Faction + 7 namesake 5-Star Girls|Limit-Break Stage 4 Girl Reversal: two 10-Star Dolls of the Reversed Girl's Faction + four 9-Star Dolls of the Reversed Girl's Faction + 8 namesake 5-Star Girls|Limit-Break Stage 5 Girl Reversal: three 10-Star Dolls of the Reversed Girl's Faction + four 9-Star Dolls of the Reversed Girl's Faction + 9 namesake 5-Star Girls|4. Reversing 1-Star to 15-Star Girls will return all resources used on the Girl. (If Outfit bonuses were triggered when upgrading the Girls' Crystal, this will also be considered in the calculation) When a Girl at 10-Star or above is reversed, ALL resources used to upgrade her Elite Skills will be returned. For 15-star Girls, resources used to upgrade their Astral Core will also be returned.|5. Reversing 1-5-Star Girls is free. Reversing 7/8/9-Star Girls will cost 400/600/800 Gems respectively. Reversing Girls at 10-Star or above will cost 5 Diplomas for each Reversal.|6. Intimacy and Oath will be returned to one of the namesake Girls after being reversed.|7. 5/9/10 Star Dolls received from a Reverse won't be counted for the Monthly Event ""Graduate and Awake""."
+GROWTH_DIARY_TITLE,Growth Diary
+GROWTH_DIARY_TEXT01,Chapter {1}
+GROWTH_DIARY_TEXT02,Progress
+GROWTH_DIARY_TEXT03,Chapter Reward
+GROWTH_DIARY_TEXT04,Claim
+GROWTH_DIARY_TEXT05,Unlock after completing all tasks
+GROWTH_DIARY_TEXT06,Unlock after the previous chapter is completed
+GROWTH_DIARY_TEXT07,Claimed
+GROWTH_DIARY_TEXT08,This Chapter is locked!
+GROWTH_DIARY_TEXT09,The Tasks marked with {1} can only be completed on the current page
+ACTIVITY_NEW_WARMUP_TEXT38,Confirm to place your bet on this team?
+GUILD_COMPETITION_ACTIVE_TEXT01,活躍度任務
+GUILD_COMPETITION_ACTIVE_TEXT02,活躍度
+GUILD_COMPETITION_ACTIVE_TEXT03,每日任務
+GUILD_COMPETITION_ACTIVE_TEXT04,社團任務
+GUILD_COMPETITION_ACTIVE_HELP,活躍度|達到指定數量全社團成員均可獲得獎勵，透過郵件發放。|每日任務|每日刷新，完成可領取獎勵並且增加社團總活躍度。|社團任務|全社團共享進度，完成后所有社團內玩家均可領取獎勵。
+GUILD_COMPETITION_PARTNER_HELP,1.天空島開啟期間，學長可將戰姬進修。（天異陣營以及無法升至15星的戰姬無法進行）|2.戰姬進修後，等級和星級將提升至自身擁有的最高等級戰姬；精英技能等級將跟隨星級變化，11-15星對應精英技能1-5級；裝備默認為粉色職業套；學長可以自行配置職業套技能、水晶、魂器和潛能。|3.實戰時，可花費50K金幣選擇進修戰姬出戰，同名戰姬每日僅可進行並實戰1次。
+GUILD_COMPETITION_PARTNER_TITLE,戰姬進修
+GUILD_COMPETITION_PARTNER_TEXT01,請選擇進行戰姬
+GUILD_COMPETITION_PARTNER_TEXT02,同名戰姬每日僅可進行並實戰1次
+GUILD_COMPETITION_PARTNER_TEXT03,是否花費50K金幣選擇進行戰姬出戰？
+GUILD_COMPETITION_SKILL_TIPS,敵人已達到更高周目\n注意查看技能變化哦~
+GUILD_COMPETITION_CHALLENGE_TEXT01,挑戰目標
+GUILD_COMPETITION_CHALLENGE_TEXT02,達成1/2/3個目標，最終得分增加10%%/20%%/30%%

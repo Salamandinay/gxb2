@@ -381,11 +381,7 @@ function MainUIActivityItem:updateInfo(itemdata)
 						xyd.WindowManager.get():openWindow("activity_return_active_window", {})
 					end
 				elseif self.id == xyd.ActivityID.ENTRANCE_TEST then
-					if xyd.getServerTime() > actData:getEndTime() - xyd.DAY_TIME then
-						xyd.WindowManager.get():openWindow("activity_entrance_test_final_rank_window")
-					else
-						xyd.WindowManager.get():openWindow(win_name)
-					end
+					xyd.WindowManager.get():openWindow(win_name)
 				else
 					xyd.WindowManager.get():openWindow(win_name)
 				end

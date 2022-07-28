@@ -35,7 +35,7 @@ function TipsItem:layout()
 	if self.params and self.params.depth then
 		self.go:GetComponent(typeof(UIWidget)).depth = self.params.depth
 		self.newTipsNode:GetComponent(typeof(UIWidget)).depth = self.params.depth + 1
-		self.redPoint:GetComponent(typeof(UIWidget)).depth = self.params.depth + 3
+		self.redPoint:GetComponent(typeof(UIWidget)).depth = self.params.depth + 10
 	end
 end
 
@@ -110,7 +110,19 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 			self["tab_cur_unchosen" .. tostring(i)].width = 156
 			self["tab_cur_box" .. tostring(i)].size = Vector3(156, 50, 0)
 
-			if i == 4 then
+			if i == 2 then
+				local tab2none_UIWidget = self.tab2none:GetComponent(typeof(UIWidget))
+				tab2none_UIWidget.width = 156
+				local tab2none_BoxCollider = tab2none_UIWidget.gameObject:AddComponent(typeof(UnityEngine.BoxCollider))
+				tab2none_UIWidget.autoResizeBoxCollider = true
+				tab2none_BoxCollider.size = Vector3(156, 50, 0)
+				self.tab2equipLock.gameObject:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+				self["tab_cur_label" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/label", typeof(UILabel))
+
+				if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
+					self["tab_cur_unchosen" .. tostring(i)].gameObject:SetActive(false)
+				end
+			elseif i == 4 then
 				local tab4none_UIWidget = self.tab4none:GetComponent(typeof(UIWidget))
 				tab4none_UIWidget.width = 156
 				local tab4none_BoxCollider = tab4none_UIWidget.gameObject:AddComponent(typeof(UnityEngine.BoxCollider))
@@ -119,7 +131,7 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 				self.tab4awakeLock.gameObject:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 				self["tab_cur_label" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/label", typeof(UILabel))
 
-				if self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 then
+				if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 					self["tab_cur_unchosen" .. tostring(i)].gameObject:SetActive(false)
 				end
 			elseif i == 5 then
@@ -136,7 +148,7 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 
 				self["tab_cur_label" .. tostring(i)] = self.defaultTabGroup:ComponentByName("tab_" .. tostring(i) .. "/label", typeof(UILabel))
 
-				if self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 and self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R2 then
+				if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 					self["tab_cur_unchosen" .. tostring(i)].gameObject:SetActive(false)
 					self.tab5StarOriginLock:SetActive(false)
 				end
@@ -294,6 +306,9 @@ function ActivityEntranceTestPartnerWindow:getUIComponent()
 	self:changeCommonUI()
 end
 
+function ActivityEntranceTestPartnerWindow:updateNavShow()
+end
+
 function ActivityEntranceTestPartnerWindow:changeCommonUI()
 	self.detailBg_UIWidget.width = 680
 	self.detailBg_UIWidget.height = 618
@@ -424,12 +439,22 @@ function ActivityEntranceTestPartnerWindow:registerEvent()
 		self:closeSelf()
 	end
 
+	UIEventListener.Get(self.tab2none.gameObject).onClick = function ()
+		local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriodByPartnerId(self.partner_.tableID)
+
+		xyd.alert(xyd.AlertType.TIPS, __("ACTIVITY_NEW_WARMUP_TEXT" .. period + 25))
+	end
+
 	UIEventListener.Get(self.tab4none.gameObject).onClick = function ()
-		xyd.alert(xyd.AlertType.TIPS, __("ENTRANCE_TEST_PARTNER_LOCK"))
+		local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriodByPartnerId(self.partner_.tableID)
+
+		xyd.alert(xyd.AlertType.TIPS, __("ACTIVITY_NEW_WARMUP_TEXT" .. period + 25))
 	end
 
 	UIEventListener.Get(self.tab5none.gameObject).onClick = function ()
-		xyd.alert(xyd.AlertType.TIPS, __("ENTRANCE_TEST_STAR_ORIGIN_LOCK"))
+		local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriodByPartnerId(self.partner_.tableID)
+
+		xyd.alert(xyd.AlertType.TIPS, __("ACTIVITY_NEW_WARMUP_TEXT" .. period + 25))
 	end
 end
 
@@ -531,7 +556,7 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 end
 
 function ActivityEntranceTestPartnerWindow:updateAttr()
-	local fullStarOrigin = self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 and self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R2
+	local fullStarOrigin = not self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID)
 
 	self.partner_:updateAttrs({
 		isEntrance = true,
@@ -723,7 +748,11 @@ function ActivityEntranceTestPartnerWindow:updateEquipRed()
 
 	self.equip_tips:getGo():SetActive(hasRed)
 
-	if self.activityData:getLevel() ~= xyd.EntranceTestLevelType.R1 then
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
+		self.equip_tips:getGo():SetActive(false)
+	end
+
+	if not self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 		local hasPotentRed = false
 
 		if #self.partner_.potentials >= 5 then
@@ -874,8 +903,9 @@ function ActivityEntranceTestPartnerWindow:updateTenStarExchange()
 end
 
 function ActivityEntranceTestPartnerWindow:updateTab4(state)
-	if self.activityData:getLevel() == xyd.EntranceTestLevelType.R1 then
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 		self.tab4none:SetActive(true)
+		self:updateNavAlpha(4, false)
 		self.tab4awakeLock:SetActive(true)
 		self.tab_cur_label4.gameObject:SetLocalPosition(15, 0, 0)
 
@@ -906,7 +936,9 @@ function ActivityEntranceTestPartnerWindow:updateTab4(state)
 		end
 
 		self.tab4none:SetActive(false)
+		self:updateNavAlpha(4, true)
 		self.tab4awakeLock:SetActive(false)
+		self.labelAwake:X(0)
 	end
 
 	self.defaultTab.tabs[4].label:SetActive(true)
@@ -945,8 +977,9 @@ function ActivityEntranceTestPartnerWindow:getStarOriginNodeLev(nodeTableID)
 end
 
 function ActivityEntranceTestPartnerWindow:checkStarOriginTab()
-	if self.activityData:getLevel() == xyd.EntranceTestLevelType.R1 or self.activityData:getLevel() == xyd.EntranceTestLevelType.R2 then
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 		self.tab5none:SetActive(true)
+		self:updateNavAlpha(5, false)
 		self.tab5StarOriginLock:SetActive(true)
 		self.tab_cur_label5.gameObject:SetLocalPosition(15, 0, 0)
 
@@ -961,6 +994,7 @@ function ActivityEntranceTestPartnerWindow:checkStarOriginTab()
 	else
 		self.labelStarOrigin:X(0)
 		self.tab5none:SetActive(false)
+		self:updateNavAlpha(5, true)
 		self.tab5StarOriginLock:SetActive(false)
 	end
 
@@ -971,6 +1005,66 @@ function ActivityEntranceTestPartnerWindow:checkStarOriginTab()
 	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/chosen", typeof(UISprite)), nil, tabImgName1)
 	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/unchosen", typeof(UISprite)), nil, tabImgName2)
 	xyd.setUISpriteAsync(self.defaultTabGroup:ComponentByName("tab_4/none", typeof(UISprite)), nil, tabImgName3)
+end
+
+function ActivityEntranceTestPartnerWindow:checkEquipTab()
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
+		self.tab2none:SetActive(true)
+		self.tab2equipLock.gameObject:SetActive(true)
+		self:updateNavAlpha(2, false)
+		self.labelEquip:X(15)
+
+		if xyd.Global.lang == "fr_fr" then
+			self.tab2equipLock.gameObject:X(-59)
+			self.labelEquip:X(17)
+
+			self.labelEquip.fontSize = 18
+		elseif xyd.Global.lang == "de_de" then
+			self.tab2equipLock.gameObject:X(-62)
+			self.labelEquip:X(13)
+
+			self.labelEquip.fontSize = 17
+		end
+	else
+		self.tab2none:SetActive(false)
+		self.tab2equipLock.gameObject:SetActive(false)
+		self:updateNavAlpha(2, true)
+		self.labelEquip:X(0)
+
+		self.labelEquip.fontSize = 26
+
+		if xyd.Global.lang == "fr_fr" then
+			self.labelEquip.fontSize = 18
+		elseif xyd.Global.lang == "de_de" then
+			self.labelEquip.fontSize = 18
+		end
+	end
+end
+
+function ActivityEntranceTestPartnerWindow:updateNavAlpha(navIndex, visible)
+	if not self["alphaNavChosen" .. navIndex] then
+		self["alphaNavChosen" .. navIndex] = self.defaultTabGroup:ComponentByName("tab_" .. navIndex .. "/chosen", typeof(UISprite))
+	end
+
+	if not self["alphaNavUnchosen" .. navIndex] then
+		self["alphaNavUnchosen" .. navIndex] = self.defaultTabGroup:ComponentByName("tab_" .. navIndex .. "/unchosen", typeof(UISprite))
+	end
+end
+
+function ActivityEntranceTestPartnerWindow:firstInit()
+	ActivityEntranceTestPartnerWindow.super.firstInit(self)
+
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
+		self.defaultTab:setTabActive(1, true)
+	end
+end
+
+function ActivityEntranceTestPartnerWindow:updateData()
+	ActivityEntranceTestPartnerWindow.super.updateData(self)
+
+	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
+		self.defaultTab:setTabActive(1, true)
+	end
 end
 
 return ActivityEntranceTestPartnerWindow

@@ -26,13 +26,7 @@ function ActivityEntranceTestFinalRankWindow:initWindow()
 	self:getUIComponent()
 	BaseWindow.initWindow(self)
 	self:initTopGroup()
-	self.eventProxy_:addEventListener(xyd.event.WARMUP_GET_RANK_LIST, self.openRankWindow, self)
 	self.eventProxy_:addEventListener(xyd.event.WARMUP_GET_OTHER_INFO, self.openDetailWindow, self)
-
-	local msg = messages_pb:warmup_get_rank_list_req()
-	msg.activity_id = xyd.ActivityID.ENTRANCE_TEST
-
-	xyd.Backend.get():request(xyd.mid.WARMUP_GET_RANK_LIST, msg)
 	self:layoutBgInfo()
 end
 

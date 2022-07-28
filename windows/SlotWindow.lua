@@ -267,6 +267,7 @@ function SlotWindow:getUIComponent()
 	self:changeSortBtnNewLabel()
 
 	UIEventListener.Get(self.sortBtnNew).onClick = handler(self, function ()
+		print("sortType", self.sortType)
 		xyd.WindowManager.get():openWindow("slot_sort_window", {
 			sortType = self.sortType
 		})

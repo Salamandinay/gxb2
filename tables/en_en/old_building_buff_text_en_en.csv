@@ -37,3 +37,7 @@ id,name,desc
 36,Bad Call,"Only 1 Girl in your team is able to trigger her Active skill each round. After a Girl in your team triggers an Active skill, reduce her Attack by 100% for 6 rounds."
 37,Phantom Pain,"Your Girls' Attack attributes will change according to their HP. (For example: when a Girl has 100% HP, her Attack will be at 100%, but if a Girl has 0% HP, her Attack will thus be reduced by 100%)"
 38,Attack Steal,"In the first 4 rounds of the battle, the enemies will steal 5% Attack from your Girls at the beginning of each round, this effect cannot be removed. (Each enemy will steal the Attack of the Girl in the same position as itself, if there is no Girl in the position, no Attack can be stolen.)"
+39,Floating Shield,Provides Magick Barriers with a total of 1200% of Attack (of the Girl with the highest Attack on YOUR team) BP for the enemy team at the start of each round. The BP Attack percentage will be divided evenly amongst the remaining enemies on the battlefield. This effect will trigger once in each round.
+40,Unknown Pollution,"Deals (10% of the target's maximum HP) random DoT damage (Bleed, Burn, or Poison) to all your Girls at the end of each round for 3 rounds."
+41,Power Surge,Increases the Attack and Damage dealt by all enemies by 100%. The enemies have a 100% chance to repeat their Active Skills and Basic Attacks once when triggering them.
+42,Fail to Penetrate,Lowers the Attack of your Girls by 50%. Heals the enemies by 100% of the damage received in the round at the end of each round.

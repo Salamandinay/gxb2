@@ -270,6 +270,7 @@ function BattleDetailDataWindow:ctor(name, params)
 		self.callback = params.listener
 	end
 
+	self.battleType = params.battleType
 	self.battleParams = params.battle_params
 	self.showType = 1
 end

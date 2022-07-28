@@ -1,6 +1,7 @@
 local BattleFailWindow = class("BattleFailWindow", import(".BaseWindow"))
 local PlayerIcon = import("app.components.PlayerIcon")
 local Partner = import("app.models.Partner")
+local json = require("cjson")
 
 function BattleFailWindow:ctor(name, params)
 	BattleFailWindow.super.ctor(self, name, params)
@@ -45,7 +46,8 @@ function BattleFailWindow:ctor(name, params)
 		xyd.BattleType.HERO_CHALLENGE_CHESS,
 		xyd.BattleType.FAIR_ARENA,
 		xyd.BattleType.NEW_PARTNER_WARMUP,
-		xyd.BattleType.ACADEMY_ASSESSMENT
+		xyd.BattleType.ACADEMY_ASSESSMENT,
+		[13] = xyd.BattleType.ENTRANCE_TEST_REPORT
 	}
 	self.isReportType = false
 	local battleReportData = params.real_battle_report
@@ -356,7 +358,7 @@ function BattleFailWindow:playDialog()
 end
 
 function BattleFailWindow:checkShowBoard()
-	if self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
+	if self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
 		return false
 	end
 
@@ -371,7 +373,7 @@ function BattleFailWindow:initReviewBtn()
 		eventName = xyd.event.NEW_TRIAL_FIGHT
 	elseif self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE then
 		eventName = xyd.event.TOWER_SELF_REPORT
-	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.HERO_CHALLENGE_SPEED or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
+	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.HERO_CHALLENGE_SPEED or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT then
 		eventName = xyd.event.PARTNER_CHALLENGE_GET_REPORT
 	elseif self.battleType == xyd.BattleType.FRIEND then
 		eventName = xyd.event.FRIEND_FIGHT_FRIEND
@@ -431,6 +433,11 @@ function BattleFailWindow:initLayout()
 		elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
 			self.battleDetailBtn:X(240)
 			self.battleReviewBtn:X(290)
+
+			if self.initNext_ then
+				self.battleDetailBtn.transform:X(255)
+				self.battleReviewBtn.transform:X(320)
+			end
 		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			self.battleDetailBtn.transform:X(260)
 			self.battleReviewBtn.transform:X(320)
@@ -480,7 +487,7 @@ function BattleFailWindow:initLayout()
 		end
 	end
 
-	if self.battleType == xyd.BattleType.CAMPAIGN or self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT or self.battleType == xyd.BattleType.DAILY_QUIZ or self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE or self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.EXPLORE_ADVENTURE or self.battleType == xyd.BattleType.TIME_CLOISTER_BATTLE or self.battleType == xyd.BattleType.TIME_CLOISTER_EXTRA then
+	if self.battleType == xyd.BattleType.CAMPAIGN or self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT or self.battleType == xyd.BattleType.DAILY_QUIZ or self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE or self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.EXPLORE_ADVENTURE or self.battleType == xyd.BattleType.TIME_CLOISTER_BATTLE or self.battleType == xyd.BattleType.TIME_CLOISTER_EXTRA or self.battleType == xyd.BattleType.ENTRANCE_TEST then
 		self:initImproveGroup()
 		pveFun()
 	elseif self.battleType == xyd.BattleType.SPORTS_PVP then
@@ -489,7 +496,7 @@ function BattleFailWindow:initLayout()
 	elseif self.battleType == xyd.BattleType.DUNGEON then
 		self:initDungeon()
 		pvpFun()
-	elseif self.battleType == xyd.BattleType.ARENA or self.battleType == xyd.BattleType.ENTRANCE_TEST then
+	elseif self.battleType == xyd.BattleType.ARENA then
 		self:initArena()
 		pvpFun()
 	elseif self.battleType == xyd.BattleType.ARENA_3v3 then
@@ -535,6 +542,7 @@ function BattleFailWindow:initLayout()
 	elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
 		self.battleCheckBuffBtn:SetActive(true)
 		self.battleReviewBtn:SetActive(true)
+		self:initOldCampus()
 	elseif self.battleType == xyd.BattleType.NEW_PARTNER_WARMUP then
 		local rewardList = xyd.tables.newPartnerWarmUpStageTable:getReward(self.stageId)
 
@@ -626,7 +634,7 @@ function BattleFailWindow:initLayout()
 		self.battleReviewBtn:SetActive(true)
 		self.battleDetailBtn.transform:X(260)
 		self:updateShrineHurdlePart()
-	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
+	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
 		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
 	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 		self.battleReviewBtn:SetActive(true)
@@ -678,8 +686,6 @@ end
 
 function BattleFailWindow:closeSelf()
 	if self.battleType == xyd.BattleType.TIME_CLOISTER_EXTRA then
-		dump(self.battleParams, "测试战斗的数据")
-
 		local time_cloister_probe_wd = xyd.WindowManager.get():getWindow("time_cloister_probe_window")
 
 		if time_cloister_probe_wd then
@@ -780,6 +786,92 @@ function BattleFailWindow:initGuildWar()
 	self.labelRightScore:SetActive(false)
 	self.labelLeftScoreChange:SetActive(false)
 	self.labelRightScoreChange:SetActive(false)
+end
+
+function BattleFailWindow:initOldCampus()
+	local nextId = self.battleParams.stage_id
+	local selectInfo = xyd.db.misc:getValue("old_building_setting")
+
+	if selectInfo then
+		selectInfo = json.decode(selectInfo)
+	else
+		selectInfo = {}
+	end
+
+	if nextId > 0 and selectInfo.select and tonumber(selectInfo.select) >= 2 and xyd.models.oldSchool.failNum_ <= 50 then
+		local function callback()
+			local win = xyd.WindowManager.get():getWindow(self.name_)
+
+			if not win then
+				return
+			end
+
+			if self.autoBattle and self.stopAutoBattle then
+				self.autoBattle = false
+
+				return
+			end
+
+			self:close()
+			xyd.models.oldSchool:autoBattle(nextId, true)
+		end
+
+		self:initNextBtn("NEXT_BATTLE", callback)
+		self.nextBtn_.transform:X(120)
+
+		self.nextBtn_:GetComponent(typeof(UIWidget)).width = 192
+
+		self.confirmBtn.transform:X(-120)
+
+		self.confirmBtn:GetComponent(typeof(UIWidget)).width = 192
+		self.initNext_ = true
+
+		if not self.labelTime then
+			self.labelTime = NGUITools.AddChild(self.winGroup.gameObject, self.nextBtn_button_label.gameObject):GetComponent(typeof(UILabel))
+			self.labelTime.transform.name = "labelTime"
+		end
+
+		self.labelTime:SetActive(true)
+
+		self.labelTime.color = Color.New2(4292346111.0)
+		self.labelTime.fontSize = 28
+
+		if self.isNewVer then
+			self.labelTime:SetLocalPosition(120, -622, 0)
+		else
+			self.labelTime:SetLocalPosition(120, -309, 0)
+		end
+
+		local countdown = 3
+		local setTime = nil
+
+		function setTime()
+			self.labelTime.text = tostring(countdown) .. "s"
+
+			self:waitForTime(1, setTime)
+
+			if countdown <= 0 then
+				self.labelTime:SetActive(false)
+
+				return
+			end
+
+			countdown = countdown - 1
+		end
+
+		setTime()
+
+		self.nextBtn_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
+		self:waitForTime(1, function ()
+			self.nextBtn_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+		end)
+		self:waitForTime(3, function ()
+			self.autoBattle = true
+
+			callback()
+		end)
+	end
 end
 
 function BattleFailWindow:initArenaTeam()
@@ -1318,7 +1410,7 @@ function BattleFailWindow:initNextBtn(str, callback)
 
 	if self.isNewVer then
 		self.confirmBtn:SetLocalPosition(-140, -569 - self.bottomNode.transform.localPosition.y, 0)
-		self.nextBtn_:SetLocalPosition(140, -567, 0)
+		self.nextBtn_:SetLocalPosition(140, -569, 0)
 	else
 		self.confirmBtn:SetLocalPosition(-140, -254, 0)
 		self.nextBtn_:SetLocalPosition(140, -254, 0)

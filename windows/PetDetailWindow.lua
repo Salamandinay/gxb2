@@ -118,6 +118,13 @@ function PetDetailWindow:updatePet()
 		xyd.applyOrigin(self.btnExSkill)
 	end
 
+	if self.petType == xyd.PetFormationType.ENTRANCE_TEST then
+		local entranceActivityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+		self.labelExSkill.text = __("PET_EXSKILL_TEXT_01", xyd.tables.activityEntranceTestRankTable:getPetExskill(entranceActivityData:getLevel()))
+
+		xyd.applyOrigin(self.btnExSkill)
+	end
+
 	self:updateContent()
 	self:updatePetImg()
 	self:updateTop()
@@ -285,13 +292,7 @@ function PetDetailWindow:registerEvent()
 		end
 
 		if self.petType == xyd.PetFormationType.ENTRANCE_TEST then
-			local level = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST):getLevel()
-
-			if xyd.tables.activityEntranceTestRankTable:getPetExSkillInherit(level) ~= 1 then
-				xyd.alertTips(__("ENTRANCE_TEST_PETCORE_LOCK"))
-
-				return
-			end
+			-- Nothing
 		end
 
 		local petLv = self.pet_:getLevel()
@@ -303,11 +304,13 @@ function PetDetailWindow:registerEvent()
 			petAttr:reqLevUp()
 		end
 
-		xyd.WindowManager.get():openWindow("pet_evolution_window", {
+		local params = {
 			petID = self.pet_:getPetID(),
 			petLv = petLv,
 			petType = self.petType
-		})
+		}
+
+		xyd.WindowManager.get():openWindow("pet_evolution_window", params)
 	end
 
 	UIEventListener.Get(self.arrowLeft.gameObject).onClick = function ()

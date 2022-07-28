@@ -117,6 +117,8 @@ function FormationItem:update(index, realIndex, info)
 	self.partner_ = info.partnerInfo
 	self.callbackFunc = info.callbackFunc
 
+	self:setIsChoose(false)
+	self.heroIcon_:setLock(false)
 	self:setIsChoose(info.isSelected)
 
 	self.partnerId_ = self.partner_.partnerID
@@ -149,6 +151,18 @@ function FormationItem:update(index, realIndex, info)
 
 	if battleType == xyd.BattleType.ENTRANCE_TEST or battleType == xyd.BattleType.ENTRANCE_TEST_DEF then
 		self.heroIcon_:setEntranceTestFinish()
+
+		local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriod(self.partnerId_)
+
+		if period and period > 0 then
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+
+			if activityData:getPvePartnerIsLock(period) then
+				self.heroIcon_:setLock(true)
+			else
+				self.heroIcon_:setLock(false)
+			end
+		end
 	end
 
 	local friendHelpBattleType = self.parent_.battleType
@@ -181,6 +195,27 @@ function FormationItem:onClick()
 		xyd.alert(xyd.AlertType.TIPS, __("ALREADY_DIE"))
 
 		return
+	end
+
+	local battleWin = xyd.WindowManager.get():getWindow("battle_formation_window")
+	local battleType = -1
+
+	if battleWin then
+		battleType = battleWin.battleType
+	end
+
+	if battleType == xyd.BattleType.ENTRANCE_TEST or battleType == xyd.BattleType.ENTRANCE_TEST_DEF then
+		local period = xyd.tables.activityWarmupArenaPartnerTable:getPeriod(self.partnerId_)
+
+		if period and period > 0 then
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+
+			if activityData:getPvePartnerIsLock(period) then
+				xyd.alert(xyd.AlertType.TIPS, __("ACTIVITY_NEW_WARMUP_TEXT" .. period + 25))
+
+				return
+			end
+		end
 	end
 
 	local isItemChoose = true
@@ -630,6 +665,20 @@ function BattleFormationWindow:ctor(name, params)
 
 				if params.formation[i] and thePartnerId then
 					self.nowPartnerList[tonumber(params.formation[i].pos)] = thePartnerId
+				end
+			end
+		end
+
+		if self.battleType == xyd.BattleType.ENTRANCE_TEST then
+			local entranceTestSaveFormationTime = xyd.db.misc:getValue("entrance_test_save_formation_save_time" .. self.data.enemy_id)
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+
+			if entranceTestSaveFormationTime then
+				entranceTestSaveFormationTime = tonumber(entranceTestSaveFormationTime)
+
+				if entranceTestSaveFormationTime < activityData:startTime() or activityData:getEndTime() <= entranceTestSaveFormationTime then
+					self.localPartnerList = {}
+					self.nowPartnerList = {}
 				end
 			end
 		end
@@ -1828,32 +1877,29 @@ end
 function BattleFormationWindow:entranceTestBattle(partnerParams)
 	local function battlefunc()
 		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
-		local times = activityData.detail.free_times
 
-		if times <= 0 then
-			xyd.showToast(__("ENTRANCE_TEST_FIGHT_TIP"))
+		if self.data.entrance_is_fake and self.data.entrance_is_fake == 1 then
+			-- Nothing
+		else
+			local times = activityData:getFreeTimes()
 
-			return
+			if times <= 0 then
+				xyd.showToast(__("ENTRANCE_TEST_FIGHT_TIP"))
+
+				return
+			end
 		end
 
-		local data = {
-			name = xyd.event.UPDATE_ACTIVTY_ENTRANCE_TEST_TILI,
-			data = {
-				num = times - 1
-			}
-		}
-
-		xyd.EventDispatcher.inner():dispatchEvent(data)
-
 		local params = {
-			enemy_id = self.data.enemy_id,
+			boss_id = self.data.enemy_id,
 			partners = partnerParams,
 			pet_id = self.pet
 		}
 
-		if self.data.is_revenge then
-			params.is_revenge = self.data.is_revenge
-			params.index = self.data.index
+		if self.data.entrance_is_fake and self.data.entrance_is_fake == 1 then
+			params.is_fake = 1
+
+			activityData:fakeToFight()
 		end
 
 		xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ENTRANCE_TEST, require("cjson").encode(params))
@@ -2680,15 +2726,11 @@ function BattleFormationWindow:initNormalPartnerData(groupID, needUpdateTop)
 				isS = self:isSelected(partnerInfo.partnerID or partnerId, self.nowPartnerList, false)
 				local activityData = nil
 				activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
-				local flag = activityData:getLevel() == xyd.EntranceTestLevelType.R1 or activityData:getLevel() == xyd.EntranceTestLevelType.R2
-				flag = not flag
 
-				if flag then
-					partnerInfo:updateAttrs({
-						isEntrance = true,
-						fullStarOrigin = true
-					})
-				end
+				partnerInfo:updateAttrs({
+					isEntrance = true,
+					fullStarOrigin = true
+				})
 			end
 
 			local data = {
@@ -3711,12 +3753,18 @@ function BattleFormationWindow:saveLocalformation(formation)
 
 	if self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
 		dbParams.key = self.battleType .. "_" .. self.selectGroup_
-	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST or self.battleType == xyd.BattleType.ENTRANCE_TEST_DEF then
-		dbParams.key = self.battleType
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
 		dbParams.key = self.battleType .. "_" .. self.params_.fortID
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		dbParams.key = self.battleType .. "_1"
+	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
+		dbParams.key = self.battleType .. "_" .. self.data.enemy_id
+		local entranceTestActivityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+
+		xyd.db.misc:setValue({
+			key = "entrance_test_save_formation_save_time" .. self.data.enemy_id,
+			value = xyd.getServerTime()
+		})
 	elseif not self.ifChooseEnemy then
 		dbParams.key = self.battleType
 	else
@@ -4075,14 +4123,14 @@ end
 function BattleFormationWindow:readStorageFormation()
 	local dbVal = xyd.db.formation:getValue(self.battleType)
 
-	dump(dbVal, "dbVal")
-
 	if self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_" .. self.selectGroup_)
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_" .. self.params_.fortID)
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_1")
+	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
+		dbVal = xyd.db.formation:getValue(self.battleType .. "_" .. self.data.enemy_id)
 	end
 
 	if self.ifChooseEnemy then

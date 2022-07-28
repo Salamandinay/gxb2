@@ -452,6 +452,18 @@ function ActivityWindow:setNormalDisplay()
 	end
 
 	for i = 1, #self.idsList do
+		if self.idsList[i] == xyd.ActivitySandMissionEnum.TEST_DUMMY_SAND_MAIN_PAGE_ID then
+			local targetActID = xyd.ActivityID.ACTIVITY_SAND_MISSION
+			local activityData = xyd.models.activity:getActivity(targetActID)
+
+			if xyd.ActivitySandMissionEnum.TEST_FLAG_DUMMY_GIFTBAG_PAGE and activityData:isOpen() and UNITY_EDITOR then
+				table.insert(self.idsList, targetActID)
+				table.insert(self.idsList, xyd.ActivityID.ACTIVITY_SAND_GIFTBAG)
+			end
+		end
+	end
+
+	for i = 1, #self.idsList do
 		local id = self.idsList[i]
 		local title = ActivityTitleItem.new(self.titleGroup, {
 			type = 1,
@@ -1730,6 +1742,18 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_CUPID_GIFT] = function ()
 		return require("app.windows.activity.ActivityCupidGift")
+	end,
+	[xyd.ActivityID.ACTIVITY_SAND_SEARCH] = function ()
+		return require("app.windows.activity.ActivitySandSearch")
+	end,
+	[xyd.ActivityID.ACTIVITY_SAND_GIFTBAG] = function ()
+		return require("app.windows.activity.ActivitySandGiftbag")
+	end,
+	[xyd.ActivityID.ACTIVITY_SAND_SHOP] = function ()
+		return require("app.windows.activity.ActivitySandShop")
+	end,
+	[xyd.ActivityID.ACTIVITY_SAND_MISSION] = function ()
+		return require("app.windows.activity.ActivitySandMission")
 	end
 }
 

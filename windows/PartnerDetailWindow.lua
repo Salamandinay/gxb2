@@ -171,8 +171,10 @@ function PartnerDetailWindow:getUIComponent()
 	self.attrChangeGroup = bottom:NodeByName("attrChangeGroup").gameObject
 	self.attrChangeGroupTable = self.attrChangeGroup:GetComponent(typeof(UITable))
 	self.tab4awakeLock = self.defaultTabGroup:NodeByName("tab_4/awakeLock").gameObject
+	self.tab2equipLock = self.defaultTabGroup:NodeByName("tab_2/equipLock").gameObject
 	self.tab4none = self.defaultTabGroup:NodeByName("tab_4/none").gameObject
 	self.tab3none = self.defaultTabGroup:NodeByName("tab_3/none").gameObject
+	self.tab2none = self.defaultTabGroup:NodeByName("tab_2/none").gameObject
 	self.labelAttr = self.defaultTabGroup:ComponentByName("tab_1/label", typeof(UILabel))
 	self.labelEquip = self.defaultTabGroup:ComponentByName("tab_2/label", typeof(UILabel))
 	self.labelSkin = self.defaultTabGroup:ComponentByName("tab_3/label", typeof(UILabel))
@@ -410,6 +412,7 @@ function PartnerDetailWindow:firstInit()
 	self:updateAwakePanel()
 	self:updatePuppetNav()
 	self:checkStarOriginTab()
+	self:checkEquipTab()
 	self:updateShenxue()
 	self:registerEvent()
 	self:initPartnerSkin()
@@ -610,6 +613,7 @@ function PartnerDetailWindow:updateData()
 	self:updateShenxue()
 	self:checkExSkillGuide()
 	self:checkStarOriginTab()
+	self:checkEquipTab()
 	self:checkStarOriginGuide()
 end
 
@@ -6239,6 +6243,9 @@ function PartnerDetailWindow:onClickUnEquipAll()
 
 	xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_OFF)
 	self.partner_:equip(now_equips)
+end
+
+function PartnerDetailWindow:checkEquipTab()
 end
 
 return PartnerDetailWindow

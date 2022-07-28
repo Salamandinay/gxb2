@@ -67,6 +67,8 @@ function ActivityLostSpaceMapWindow:getUIComponent()
 	self.skillChangeBtn = self.skillCon:NodeByName("skillChangeBtn").gameObject
 	self.skillBtnEffecCon = self.skillBtn:NodeByName("skillBtnEffecCon").gameObject
 	self.skillBtnEffecTexture = self.skillBtnEffecCon:NodeByName("skillBtnEffecTexture").gameObject
+	self.sweepBtn = self.downCon:NodeByName("sweepBtn").gameObject
+	self.sweepLabel = self.sweepBtn:ComponentByName("sweepLabel", typeof(UILabel))
 	self.xianCon = self.groupAction:NodeByName("xianCon").gameObject
 	self.upCon = self.groupAction:NodeByName("upCon").gameObject
 	self.tipsBtn = self.upCon:NodeByName("tipsBtn").gameObject
@@ -243,6 +245,62 @@ function ActivityLostSpaceMapWindow:registerEvent()
 		self:updateAutoBtnShow()
 		self:testClick()
 	end)
+	UIEventListener.Get(self.sweepBtn.gameObject).onClick = handler(self, function ()
+		local needItemInfo = xyd.tables.miscTable:split2num("activity_lost_space_item_cost", "value", "#")
+		local energy = xyd.models.backpack:getItemNumByID(needItemInfo[1])
+
+		if energy < 5 then
+			xyd.alertTips(__("ACTIVITY_LOST_SPACE_TEXT12"))
+
+			return
+		end
+
+		if self.activityData:getIsTreasure() then
+			xyd.alertTips(__("ACTIVITY_LOST_SPACE_TEXT16"))
+
+			return
+		end
+
+		local map_info = self.activityData:getContentArr()
+
+		for key, content in pairs(map_info) do
+			if type(content) == "string" and #content > 0 then
+				local events = xyd.split(content, "#")
+
+				if events[1] == "e" then
+					local eventId = tonumber(events[2])
+
+					if eventId == xyd.ActivityLostSpaceEventType.EXIT and self.gridArr[key]:getState() == PLACE_STATE.EVENT then
+						xyd.alertTips(__("ACTIVITY_LOST_SPACE_TEXT16"))
+
+						return
+					end
+				end
+			end
+		end
+
+		local timeStamp = xyd.db.misc:getValue("activity_lost_space_sweep_time_stamp")
+
+		if not timeStamp or not xyd.isSameDay(tonumber(timeStamp), xyd.getServerTime(), true) then
+			xyd.WindowManager.get():openWindow("gamble_tips_window", {
+				type = "activity_lost_space_sweep",
+				callback = function ()
+					xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_LOST_SPACE, json.encode({
+						type = xyd.ActivityLostSpaceType.SWEEP
+					}))
+				end,
+				closeCallback = function ()
+				end,
+				text = __("ACTIVITY_LOST_SPACE_TEXT17")
+			})
+
+			return
+		else
+			xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_LOST_SPACE, json.encode({
+				type = xyd.ActivityLostSpaceType.SWEEP
+			}))
+		end
+	end)
 	UIEventListener.Get(self.autoEventBtn.gameObject).onClick = handler(self, function ()
 		self.isAutoClickDoor = not self.isAutoClickDoor
 
@@ -325,6 +383,7 @@ end
 
 function ActivityLostSpaceMapWindow:layout()
 	self.autoGetAwardBtnLabel.text = __("ACTIVITY_LOST_SPACE_AUTO_GET")
+	self.sweepLabel.text = __("ACTIVITY_LOST_SPACE_TEXT11")
 
 	self:setOnTouchGetAwardType(xyd.ActivityLostSpaceTouchType.DEFAULT)
 
@@ -920,6 +979,37 @@ function ActivityLostSpaceMapWindow:onGridEventBack(event)
 		self:updateSkillShow()
 	elseif data.detail.type == xyd.ActivityLostSpaceType.USE_SKILL then
 		self:updateSkillShow()
+	elseif data.detail.type == xyd.ActivityLostSpaceType.SWEEP then
+		self:updateUpAwardScroller()
+		self:updateDoubleLabel()
+		self:updateTreasurePartLabel()
+		self:updateSkillShow()
+		self:updateGridState()
+
+		local needItemInfo = xyd.tables.miscTable:split2num("activity_lost_space_item_cost", "value", "#")
+		local data1 = {
+			{
+				349,
+				data.detail.num * needItemInfo[2]
+			}
+		}
+		local data2 = {}
+
+		for item_id, item_num in pairs(data.detail.items) do
+			table.insert(data2, {
+				tonumber(item_id),
+				tonumber(item_num)
+			})
+		end
+
+		xyd.WindowManager.get():openWindow("common_activity_award_preview1_window", {
+			specialCenterAndShowNum = true,
+			groupTitleText1 = __("ACTIVITY_LOST_SPACE_TEXT14"),
+			awardData1 = data1,
+			groupTitleText2 = __("ACTIVITY_LOST_SPACE_TEXT15"),
+			awardData2 = data2,
+			winTitleText = __("ACTIVITY_LOST_SPACE_TEXT13")
+		})
 	end
 
 	self:updateDoubleLabel()

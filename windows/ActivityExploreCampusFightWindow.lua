@@ -7,9 +7,10 @@ local HeroIcon = import("app.components.HeroIcon")
 local BUFFS_TYPE = {
 	SECOND_POINT = 3,
 	FIRST_POINT = 2,
-	DEFAULT = 1
+	DEFAULT = 1,
+	HARD_POINT = 4
 }
-local TYPE_LENGTH = 3
+local TYPE_LENGTH = 4
 local FIRST_SET_LOCAL_BUFFS = 1
 local LOCAL_BUFFS = nil
 
@@ -25,56 +26,78 @@ function ActivityExploreCampusFightWindow:initWindow()
 	self.choiceBuffArr = {}
 	self.choiceBuffItemArr = {}
 	self.baseScore = xyd.tables.oldBuildingStageTable:getPoint(self.params_.levelId)
+
+	xyd.models.oldSchool:clearFloorHistory()
+
 	self.curScore = self.baseScore
 	self.curChoiceState = nil
 	local cjson = require("cjson")
 	local detail = xyd.db.misc:getValue("old_building_buffs_choice_local_all")
-	detail = detail and cjson.decode(detail)
+	local detail_ = nil
+
+	if detail then
+		detail = cjson.decode(detail)
+		detail_ = {}
+
+		for key, value in pairs(detail) do
+			detail_[tonumber(key)] = value
+		end
+	end
+
 	local curLevelDetail = {}
 	local seasonIdsLength = #xyd.tables.oldBuildingStageTable:getIdsByType(xyd.models.oldSchool:seasonType())
 
-	if detail and type(detail[(self.params_.levelId - 1) % seasonIdsLength + 1]) == "userdata" then
-		detail[(self.params_.levelId - 1) % seasonIdsLength + 1] = {}
+	if detail_ and type(detail_[(self.params_.levelId - 1) % seasonIdsLength + 1]) == "userdata" then
+		detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] = {}
 	end
 
-	if xyd.models.oldSchool:getAllInfo().season_info.count ~= xyd.models.oldSchool:getSaveLocalBuffsCount() and detail then
-		if not detail[(self.params_.levelId - 1) % seasonIdsLength + 1] then
-			detail[(self.params_.levelId - 1) % seasonIdsLength + 1] = {}
+	self.maxCanScore = 0
+
+	if xyd.models.oldSchool:getAllInfo().season_info.count ~= xyd.models.oldSchool:getSaveLocalBuffsCount() and detail_ then
+		if not detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] then
+			detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] = {}
 		end
 
 		for i, id in pairs(xyd.tables.oldBuildingStageTable:getIdsByType(xyd.models.oldSchool:seasonType())) do
 			if (id - 1) % seasonIdsLength + 1 ~= (self.params_.levelId - 1) % seasonIdsLength + 1 then
-				detail[(id - 1) % seasonIdsLength + 1] = {}
+				detail_[(id - 1) % seasonIdsLength + 1] = {}
 			end
 		end
 
 		local curSeasonBuffs = xyd.tables.oldBuildingBuffTable:getBuffBelongArr(xyd.models.oldSchool:seasonType())
 
-		for i in pairs(detail[(self.params_.levelId - 1) % seasonIdsLength + 1]) do
+		for i in pairs(detail_[(self.params_.levelId - 1) % seasonIdsLength + 1]) do
 			for k in pairs(curSeasonBuffs) do
-				if detail[(self.params_.levelId - 1) % seasonIdsLength + 1][i] == curSeasonBuffs[k] then
+				if detail_[(self.params_.levelId - 1) % seasonIdsLength + 1][i] == curSeasonBuffs[k] then
 					local buffTable = xyd.tables.oldBuildingBuffTable
 					local isLock = false
-					local lockState = buffTable:needUnlock(tonumber(detail[(self.params_.levelId - 1) % seasonIdsLength + 1][i]))
-					local needPoint = buffTable:getUnlockCost(tonumber(detail[(self.params_.levelId - 1) % seasonIdsLength + 1][i]))[1]
+					local lockState = buffTable:needUnlock(tonumber(detail_[(self.params_.levelId - 1) % seasonIdsLength + 1][i]))
+					local needPoint = buffTable:getUnlockCost(tonumber(detail_[(self.params_.levelId - 1) % seasonIdsLength + 1][i]))[1]
+					local floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId)
 
-					if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+					if floor_id < 9 and self.index == BUFFS_TYPE.HARD_POINT then
+						isLock = true
+					elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
 						isLock = true
 					end
 
+					if floor_id == 11 then
+						isLock = false
+					end
+
 					if not isLock then
-						table.insert(curLevelDetail, detail[(self.params_.levelId - 1) % seasonIdsLength + 1][i])
+						table.insert(curLevelDetail, detail_[(self.params_.levelId - 1) % seasonIdsLength + 1][i])
 					end
 				end
 			end
 		end
 
-		detail[(self.params_.levelId - 1) % seasonIdsLength + 1] = curLevelDetail
+		detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] = curLevelDetail
 
 		xyd.models.oldSchool:setSaveLocalBuffsCount(xyd.models.oldSchool:getAllInfo().season_info.count)
 
-		local detailAll = cjson.encode(detail)
-		local detailCur = cjson.encode(detail[(self.params_.levelId - 1) % seasonIdsLength + 1])
+		local detailAll = cjson.encode(detail_)
+		local detailCur = cjson.encode(detail_[(self.params_.levelId - 1) % seasonIdsLength + 1])
 
 		xyd.db.misc:setValue({
 			key = "old_building_buffs_choice_local_all",
@@ -89,9 +112,9 @@ function ActivityExploreCampusFightWindow:initWindow()
 	LOCAL_BUFFS = nil
 	FIRST_SET_LOCAL_BUFFS = 1
 
-	if detail ~= nil then
-		if detail[(self.params_.levelId - 1) % seasonIdsLength + 1] and #detail[(self.params_.levelId - 1) % seasonIdsLength + 1] ~= 0 then
-			LOCAL_BUFFS = detail[(self.params_.levelId - 1) % seasonIdsLength + 1]
+	if detail_ ~= nil then
+		if detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] and #detail_[(self.params_.levelId - 1) % seasonIdsLength + 1] ~= 0 then
+			LOCAL_BUFFS = detail_[(self.params_.levelId - 1) % seasonIdsLength + 1]
 		else
 			local detailCommon = xyd.db.misc:getValue("old_building_buffs_choice_common")
 
@@ -109,6 +132,14 @@ function ActivityExploreCampusFightWindow:initWindow()
 
 	self:initUIComponent()
 	self:register()
+
+	if xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId) == 11 then
+		for i in pairs(self.itemArr) do
+			self.itemArr[i]:selectAllClick()
+		end
+
+		self.explainAllScoreText.gameObject:SetActive(false)
+	end
 end
 
 function ActivityExploreCampusFightWindow:getUIComponent()
@@ -150,6 +181,8 @@ function ActivityExploreCampusFightWindow:getUIComponent()
 	self.skip_btn_label = self.skip_btn:ComponentByName("button_label", typeof(UILabel))
 	self.selected_icon = self.skip_btn:ComponentByName("selected_icon", typeof(UISprite))
 	self.selected_icon_bg = self.skip_btn:ComponentByName("selected_icon_bg", typeof(UISprite))
+	self.fight_setting_btn = self.partnerGroup:NodeByName("fight_setting_btn").gameObject
+	self.fightRed_ = self.partnerGroup:NodeByName("fight_setting_btn/red_point").gameObject
 	self.setting_btn = self.partnerGroup:NodeByName("setting_btn").gameObject
 	self.setting_btn_label = self.setting_btn:ComponentByName("button_label", typeof(UILabel))
 	self.leftGroup = self.partnerGroup:NodeByName("leftGroup").gameObject
@@ -239,6 +272,44 @@ function ActivityExploreCampusFightWindow:initUIComponent()
 	end
 
 	self:updateHeroIcons(self.params_.formation)
+	self:updateFightRed()
+end
+
+function ActivityExploreCampusFightWindow:updateFightRed()
+	local score = xyd.models.oldSchool:getSelfScore()
+	local selectInfo = xyd.db.misc:getValue("old_building_setting")
+
+	if selectInfo and type(selectInfo) == "string" then
+		local cjson = require("cjson")
+		selectInfo = cjson.decode(selectInfo)
+	else
+		selectInfo = nil
+	end
+
+	local flag = false
+
+	if score >= 1500 and (not selectInfo or selectInfo.select <= 0) then
+		flag = true
+	end
+
+	local curStageScore = tonumber(self.curScore)
+	local maxCanScore = tonumber(self.maxCanScore)
+	local floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId)
+	local stageScore = tonumber(xyd.models.oldSchool:getAllInfo().floor_infos[floor_id].score)
+
+	if maxCanScore <= curStageScore then
+		flag = false
+	end
+
+	if stageScore >= 3 * maxCanScore then
+		flag = false
+	end
+
+	if floor_id == 11 then
+		flag = false
+	end
+
+	self.fightRed_:SetActive(flag)
 end
 
 function ActivityExploreCampusFightWindow:getLevelId()
@@ -308,6 +379,12 @@ function ActivityExploreCampusFightWindow:register()
 		end
 	end)
 	UIEventListener.Get(self.resetBtn.gameObject).onClick = handler(self, function ()
+		if xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId) == 11 then
+			xyd.alertTips(__("OLD_SCHOOL_FLOOR_11_TEXT10"))
+
+			return
+		end
+
 		if #self.choiceBuffArr > 0 then
 			xyd.alertYesNo(__("OLD_SCHOOL_DELETE_ALL_BUFFS"), function (yes_no)
 				if not yes_no then
@@ -341,6 +418,14 @@ function ActivityExploreCampusFightWindow:register()
 			isCurFloorZero = self.params_.isCurFloorZero
 		})
 	end)
+
+	UIEventListener.Get(self.fight_setting_btn).onClick = function ()
+		self.fightRed_:SetActive(false)
+		xyd.WindowManager.get():openWindow("old_building_setting_window", {
+			floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.params_.levelId)
+		})
+	end
+
 	UIEventListener.Get(self.battle_btn.gameObject).onClick = handler(self, function ()
 		if xyd.models.oldSchool:getChallengeEndTime() <= xyd.getServerTime() then
 			xyd.alertTips(__("ACTIVITY_END_YET"))
@@ -349,7 +434,7 @@ function ActivityExploreCampusFightWindow:register()
 		end
 
 		if xyd.models.activity:getExploreOldCampusIsFight() == false then
-			xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_LIMIT_TIME", 3))
+			xyd.alertTips(__("ACTIVITY_EXPLORE_CAMPUS_LIMIT_TIME", 1))
 
 			return
 		end
@@ -366,15 +451,20 @@ function ActivityExploreCampusFightWindow:register()
 
 		local cjson = require("cjson")
 		local detail = xyd.db.misc:getValue("old_building_buffs_choice_local_all")
+		local detail_ = {}
 
 		if detail then
 			detail = cjson.decode(detail)
+
+			for key, value in pairs(detail) do
+				detail_[tonumber(key)] = value
+			end
 		else
-			detail = {}
+			detail_ = {}
 
 			for i, id in pairs(xyd.tables.oldBuildingStageTable:getIdsByType(xyd.models.oldSchool:seasonType())) do
 				if id ~= self.params_.levelId then
-					detail[id] = {}
+					detail_[tostring(id)] = {}
 				end
 			end
 		end
@@ -382,9 +472,9 @@ function ActivityExploreCampusFightWindow:register()
 		local seasonIdsLength = #xyd.tables.oldBuildingStageTable:getIdsByType(xyd.models.oldSchool:seasonType())
 
 		if #self.choiceBuffArr ~= 0 then
-			detail[(self.params_.levelId - 1) % seasonIdsLength + 1] = self.choiceBuffArr
+			detail_[tostring((self.params_.levelId - 1) % seasonIdsLength + 1)] = self.choiceBuffArr
 			local detailCur = cjson.encode(self.choiceBuffArr)
-			local detailAll = cjson.encode(detail)
+			local detailAll = cjson.encode(detail_)
 
 			xyd.db.misc:setValue({
 				key = "old_building_buffs_choice_local_all",
@@ -399,9 +489,9 @@ function ActivityExploreCampusFightWindow:register()
 
 			table.insert(tempArr, -1)
 
-			detail[(self.params_.levelId - 1) % seasonIdsLength + 1] = tempArr
+			detail_[tostring((self.params_.levelId - 1) % seasonIdsLength + 1)] = tempArr
 			local detailCur = cjson.encode(tempArr)
-			local detailAll = cjson.encode(detail)
+			local detailAll = cjson.encode(detail_)
 
 			xyd.db.misc:setValue({
 				key = "old_building_buffs_choice_local_all",
@@ -688,6 +778,8 @@ function BuffsItem:initItem()
 		self.levelLabel.text = __("OLD_SCHOLL_BUFF_NAME2")
 	elseif self.index == BUFFS_TYPE.SECOND_POINT then
 		self.levelLabel.text = __("OLD_SCHOLL_BUFF_NAME3")
+	elseif self.index == BUFFS_TYPE.HARD_POINT then
+		self.levelLabel.text = __("OLD_SCHOOL_FLOOR_11_TEXT08")
 	end
 
 	table.sort(finalBuffArr, function (a, b)
@@ -706,9 +798,19 @@ function BuffsItem:initItem()
 		local isLock = false
 		local lockState = buffTable:needUnlock(tonumber(finalBuffArr[i].buff_id))
 		local needPoint = buffTable:getUnlockCost(tonumber(finalBuffArr[i].buff_id))[1]
+		local floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.parent.params_.levelId)
 
-		if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+		if floor_id < 9 and self.index == BUFFS_TYPE.HARD_POINT then
 			isLock = true
+		elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
+			isLock = true
+			self.parent.maxCanScore = tonumber(finalBuffArr[i].point) + self.parent.maxCanScore
+		else
+			self.parent.maxCanScore = tonumber(finalBuffArr[i].point) + self.parent.maxCanScore
+		end
+
+		if floor_id == 11 then
+			isLock = false
 		end
 
 		local params = {
@@ -716,6 +818,12 @@ function BuffsItem:initItem()
 			scale = 0.825,
 			dragScrollView = self.parent.buffsScroller_scrollView,
 			callBack = function (buff_id)
+				if floor_id == 11 then
+					xyd.alertTips(__("OLD_SCHOOL_FLOOR_11_TEXT10"))
+
+					return
+				end
+
 				xyd.WindowManager.get():openWindow("activity_explore_old_campus_way_buy_window", {
 					id = finalBuffArr[i].buff_id,
 					area_id = self.parent.params_.area_id
@@ -728,9 +836,16 @@ function BuffsItem:initItem()
 				local buffTable = xyd.tables.oldBuildingBuffTable
 				local lockState = buffTable:needUnlock(tonumber(buff_id))
 				local needPoint = buffTable:getUnlockCost(tonumber(buff_id))[1]
+				local floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.parent.params_.levelId)
 
-				if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+				if floor_id < 9 and self.index == BUFFS_TYPE.HARD_POINT then
 					isLock = true
+				elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
+					isLock = true
+				end
+
+				if floor_id == 11 then
+					isLock = false
 				end
 
 				if isLock == false then
@@ -753,6 +868,10 @@ function BuffsItem:initItem()
 
 		skillIcon:setInfo(finalBuffArr[i].buff_id, params)
 
+		if floor_id == 11 then
+			skillIcon:setTipsClickOpen(false)
+		end
+
 		local arrInfo = {
 			icon = skillIcon,
 			id = finalBuffArr[i].buff_id
@@ -770,9 +889,20 @@ function BuffsItem:updateItemBuffs()
 		local buffTable = xyd.tables.oldBuildingBuffTable
 		local lockState = buffTable:needUnlock(tonumber(self.buffsItemArr[i].id))
 		local needPoint = buffTable:getUnlockCost(tonumber(self.buffsItemArr[i].id))[1]
+		local floor_id = xyd.tables.oldBuildingStageTable:getFloor(self.parent.params_.levelId)
 
-		if lockState and lockState == 1 and xyd.models.oldSchool:getAllInfo().max_score < needPoint then
+		if floor_id < 9 and self.index == BUFFS_TYPE.HARD_POINT then
 			isLock = true
+		elseif lockState and lockState == 1 and tonumber(xyd.models.oldSchool:getAllInfo().max_score) < needPoint then
+			isLock = true
+		end
+
+		if floor_id == 11 then
+			isLock = false
+
+			value.icon:setTipsClickOpen(false)
+		else
+			value.icon:setTipsClickOpen(true)
 		end
 
 		if isLock == true then
@@ -780,8 +910,6 @@ function BuffsItem:updateItemBuffs()
 		else
 			value.icon:setLock(false)
 		end
-
-		value.icon:setTipsClickOpen(true)
 	end
 
 	if FIRST_SET_LOCAL_BUFFS <= #xyd.tables.oldBuildingBuffTable:getAllTypeBuffs() then

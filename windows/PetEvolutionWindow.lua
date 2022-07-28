@@ -189,6 +189,10 @@ function PetEvolutionWindow:updateContent()
 
 	self.reSetBtn:SetActive(exLv > 1)
 
+	if self.petType == xyd.PetFormationType.ENTRANCE_TEST then
+		self.reSetBtn:SetActive(false)
+	end
+
 	if exLv == 0 then
 		self.labelSkillLv.text = __("PET_EXSKILL_TEXT_01", 1) .. "/" .. self.maxLev
 		self.labelLevelUp.text = __("UNLOCK_TEXT")
@@ -385,6 +389,12 @@ function PetEvolutionWindow:clearLongTouch()
 end
 
 function PetEvolutionWindow:getLev()
+	if self.petType == xyd.PetFormationType.ENTRANCE_TEST then
+		local entranceActivityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+
+		return xyd.tables.activityEntranceTestRankTable:getPetExskill(entranceActivityData:getLevel())
+	end
+
 	return self.pet_:getExLv() + self.fakeLev_
 end
 

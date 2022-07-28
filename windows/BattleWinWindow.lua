@@ -2,6 +2,7 @@ local BattleWinWindow = class("BattleWinWindow", import(".BaseWindow"))
 local Partner = import("app.models.Partner")
 local HeroIcon = import("app.components.HeroIcon")
 local PlayerIcon = import("app.components.PlayerIcon")
+local json = require("cjson")
 
 function BattleWinWindow:ctor(name, params)
 	BattleWinWindow.super.ctor(self, name, params)
@@ -46,7 +47,8 @@ function BattleWinWindow:ctor(name, params)
 		xyd.BattleType.FAIR_ARENA,
 		xyd.BattleType.NEW_PARTNER_WARMUP,
 		xyd.BattleType.ACADEMY_ASSESSMENT,
-		xyd.BattleType.SHRINE_HURDLE_REPORT
+		xyd.BattleType.SHRINE_HURDLE_REPORT,
+		xyd.BattleType.ENTRANCE_TEST_REPORT
 	}
 	self.isReportType = false
 	self.isNewVer = params.is_new
@@ -459,7 +461,7 @@ function BattleWinWindow:playDialog()
 end
 
 function BattleWinWindow:checkShowBoard()
-	if self.battleType == xyd.BattleType.HERO_CHALLENGE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SKIN_PLAY or (self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY) and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.FAIRY_TALE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS and not self.battleParams.is_score_up then
+	if self.battleType == xyd.BattleType.HERO_CHALLENGE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SKIN_PLAY or (self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY) and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.FAIRY_TALE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS and not self.battleParams.is_score_up then
 		return false
 	end
 
@@ -474,7 +476,7 @@ function BattleWinWindow:initReviewBtn()
 		eventName = xyd.event.NEW_TRIAL_FIGHT
 	elseif self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE then
 		eventName = xyd.event.TOWER_SELF_REPORT
-	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.HERO_CHALLENGE_SPEED or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
+	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.HERO_CHALLENGE_SPEED or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
 		eventName = xyd.event.PARTNER_CHALLENGE_GET_REPORT
 	elseif self.battleType == xyd.BattleType.FRIEND then
 		eventName = xyd.event.FRIEND_FIGHT_FRIEND
@@ -508,6 +510,14 @@ function BattleWinWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onSpfarmBattle(data)
+		elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
+			xyd.BattleController.get():onActivityFight({
+				data = {
+					isReview = true,
+					detail = self.battleParams,
+					activity_id = xyd.ActivityID.ENTRANCE_TEST
+				}
+			})
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -527,7 +537,12 @@ function BattleWinWindow:initLayout()
 			self.battleReviewBtn:SetActive(true)
 		elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
 			self.battleDetailBtn:X(230)
-		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+
+			if self.initNext_ then
+				self.battleDetailBtn.transform:X(255)
+				self.battleReviewBtn.transform:X(320)
+			end
+		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM or self.battleType == xyd.BattleType.ENTRANCE_TEST then
 			self.battleDetailBtn.transform:X(260)
 		else
 			self.battleDetailBtn:X(290)
@@ -608,7 +623,7 @@ function BattleWinWindow:initLayout()
 	elseif self.battleType == xyd.BattleType.SPORTS_PVP then
 		self:initSport()
 		pvpFun()
-	elseif self.battleType == xyd.BattleType.ARENA or self.battleType == xyd.BattleType.ENTRANCE_TEST then
+	elseif self.battleType == xyd.BattleType.ARENA then
 		self:initArena()
 		pvpFun()
 	elseif self.battleType == xyd.BattleType.ARENA_3v3 then
@@ -665,7 +680,7 @@ function BattleWinWindow:initLayout()
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
 		self:initHeroChallenge()
 		pveFun()
-	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT then
+	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT then
 		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
 	elseif self.battleType == xyd.BattleType.NEW_PARTNER_WARMUP then
 		local rewardList = xyd.tables.newPartnerWarmUpStageTable:getReward(self.stageId)
@@ -734,6 +749,13 @@ function BattleWinWindow:initLayout()
 		pveFun()
 	elseif self.battleType == xyd.BattleType.GUILD_COMPETITION then
 		self:initGuildCompetition()
+		self.pveDropGroup.gameObject:SetActive(true)
+		self.pveDropGroup.transform:SetLocalScale(0, 0, 0)
+		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
+		self:initEntranceTest()
+		self.battleReviewBtn:SetActive(true)
+		self:initReviewBtn()
 		self.pveDropGroup.gameObject:SetActive(true)
 		self.pveDropGroup.transform:SetLocalScale(0, 0, 0)
 		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
@@ -891,10 +913,25 @@ function BattleWinWindow:closeSelf()
 end
 
 function BattleWinWindow:updateScroePart()
+	local stage_id = self.battleParams.stage_id
+	local floor_id = xyd.tables.oldBuildingStageTable:getFloor(stage_id)
+
+	if floor_id == 11 then
+		self.buffIds_ = {}
+		local allBuffs = xyd.models.oldSchool:getBuffs()
+
+		for index, list in ipairs(allBuffs) do
+			for key, value in ipairs(list) do
+				table.insert(self.buffIds_, value)
+			end
+		end
+	end
+
+	xyd.models.oldSchool.failNum_ = 0
+
 	if self.battleParams.is_score_up then
 		self.oldBuildingScoreGroup_:SetActive(true)
 
-		local stage_id = self.battleParams.stage_id
 		local floorIndex = xyd.tables.oldBuildingStageTable:getFloorIndex(stage_id)
 		local floorInfo = self.battleParams.floor_info
 		local scoreBefore = self.battleParams.beforeScore
@@ -905,10 +942,101 @@ function BattleWinWindow:updateScroePart()
 		end
 
 		local nowScore = floorInfo.score
-		self.labelScoreNow_.text = __("ACTIVITY_EXPLORE_CAMPUS_SCORE_CUR") .. "[c][0069cc]" .. curScore .. "[-][/c]"
-		self.labelScoreTips_.text = __("ACTIVITY_EXPLORE_CAMPUS_SCORE_UP_TIPS")
+
+		if floor_id == 11 then
+			self.labelScoreNow_.text = __("OLD_SCHOOL_FLOOR_11_TEXT16") .. "[c][0069cc]" .. curScore .. "[-][/c]"
+			self.labelScoreTips_.text = __("OLD_SCHOOL_FLOOR_11_TEXT17")
+		else
+			self.labelScoreNow_.text = __("ACTIVITY_EXPLORE_CAMPUS_SCORE_CUR") .. "[c][0069cc]" .. curScore .. "[-][/c]"
+			self.labelScoreTips_.text = __("ACTIVITY_EXPLORE_CAMPUS_SCORE_UP_TIPS")
+		end
+
 		self.scoreBefore_.text = scoreBefore
 		self.scoreAfter_.text = nowScore
+	end
+
+	local nextId = xyd.models.oldSchool:getNextStage(stage_id)
+	local selectInfo = xyd.db.misc:getValue("old_building_setting")
+
+	if selectInfo then
+		selectInfo = json.decode(selectInfo)
+	else
+		selectInfo = {}
+	end
+
+	if nextId > 0 and selectInfo.select and tonumber(selectInfo.select) ~= 0 then
+		local function callback()
+			local win = xyd.WindowManager.get():getWindow(self.name_)
+
+			if not win then
+				return
+			end
+
+			if self.autoBattle and self.stopAutoBattle then
+				self.autoBattle = false
+
+				return
+			end
+
+			xyd.models.oldSchool:autoBattle(nextId)
+			self:close()
+		end
+
+		self:initNextBtn("NEXT_BATTLE", callback)
+		self.nextBtn_.transform:X(120)
+
+		self.nextBtn_:GetComponent(typeof(UIWidget)).width = 192
+
+		self.confirmBtn.transform:X(-120)
+
+		self.confirmBtn:GetComponent(typeof(UIWidget)).width = 192
+		self.initNext_ = true
+
+		if not self.labelTime then
+			self.labelTime = NGUITools.AddChild(self.winGroup.gameObject, self.nextBtn_button_label.gameObject):GetComponent(typeof(UILabel))
+			self.labelTime.transform.name = "labelTime"
+		end
+
+		self.labelTime:SetActive(true)
+
+		self.labelTime.color = Color.New2(4292346111.0)
+		self.labelTime.fontSize = 28
+
+		if self.isNewVer then
+			self.labelTime:SetLocalPosition(120, -622, 0)
+		else
+			self.labelTime:SetLocalPosition(120, -309, 0)
+		end
+
+		local countdown = 3
+		local setTime = nil
+
+		function setTime()
+			self.labelTime.text = tostring(countdown) .. "s"
+
+			self:waitForTime(1, setTime)
+
+			if countdown <= 0 then
+				self.labelTime:SetActive(false)
+
+				return
+			end
+
+			countdown = countdown - 1
+		end
+
+		setTime()
+
+		self.nextBtn_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
+		self:waitForTime(1, function ()
+			self.nextBtn_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+		end)
+		self:waitForTime(3, function ()
+			self.autoBattle = true
+
+			callback()
+		end)
 	end
 end
 
@@ -1408,7 +1536,7 @@ function BattleWinWindow:initNextBtn(str, callback)
 
 	if self.isNewVer then
 		self.confirmBtn:SetLocalPosition(-140, 0, 0)
-		self.nextBtn_:SetLocalPosition(140, -567, 0)
+		self.nextBtn_:SetLocalPosition(140, -569, 0)
 	else
 		self.confirmBtn:SetLocalPosition(-140, -254, 0)
 		self.nextBtn_:SetLocalPosition(140, -254, 0)
@@ -2006,6 +2134,62 @@ function BattleWinWindow:initGuildCompetition()
 	end
 end
 
+function BattleWinWindow:initEntranceTest()
+	if self.name_ == "battle_win_v2_window" then
+		self.damageGroup:GetComponent(typeof(UILayout)).enabled = false
+	elseif self.name_ == "battle_win_window" then
+		local damageGroupUITable = self.damageGroup:GetComponent(typeof(UITable))
+
+		if damageGroupUITable then
+			damageGroupUITable:Destroy()
+		end
+
+		local layout = self.damageGroup:AddComponent(typeof(UILayout))
+		layout.gap = Vector2(15, 0)
+	end
+
+	self.labelDamage1.gameObject:X(0)
+
+	self.labelDamage1.color = Color.New2(1128218623)
+	self.labelDamage1.effectStyle = UILabel.Effect.None
+	self.labelDamage1.fontSize = 24
+
+	self.labelDamage2.gameObject:X(0)
+
+	self.labelDamage2.color = Color.New2(4182721023.0)
+	self.labelDamage2.effectColor = Color.New2(4294967295.0)
+	self.labelDamage2.effectStyle = UILabel.Effect.Outline8
+	self.labelDamage2.fontSize = 28
+	self.labelDamage1.text = __("ACTIVITY_NEW_WARMUP_TEXT29")
+
+	if self.name_ == "battle_win_v2_window" then
+		self.damageGroup:Y(-250)
+	elseif self.name_ == "battle_win_window" then
+		self.damageGroup:Y(-15)
+	end
+
+	self.labelDamage2.text = xyd.getDisplayNumber(math.floor(self.battleParams.total_harm))
+
+	self.damageGroup:GetComponent(typeof(UILayout)):Reposition()
+	self.damageGroup:SetActive(true)
+
+	if self.battleParams.is_fake and self.battleParams.is_fake == 1 then
+		-- Nothing
+	elseif self.battleParams.isFirstPass or self.battleParams.isShowNewHarm then
+		local newImg = NGUITools.AddChild(self.winGroup.gameObject, "newImg")
+		local newImgUISprite = newImg:AddComponent(typeof(UISprite))
+		newImgUISprite.depth = 20
+
+		newImg.gameObject:SetLocalPosition(123, -103, 0)
+
+		if self.battleParams.isFirstPass then
+			xyd.setUISpriteAsync(newImgUISprite, nil, "activity_entrance_bg_sctg_" .. xyd.Global.lang, nil, , true)
+		elseif self.battleParams.isShowNewHarm then
+			xyd.setUISpriteAsync(newImgUISprite, nil, "activity_entrance_bg_xjl_" .. xyd.Global.lang, nil, , true)
+		end
+	end
+end
+
 function BattleWinWindow:initWorldBoss()
 	local awardsDataList = self.battleParams.items
 
@@ -2069,6 +2253,11 @@ function BattleWinWindow:willClose()
 			xyd.models.trial:checkFunctionOpen()
 			win:checkCampaignRedState()
 		end
+	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
+		xyd.WindowManager.get():openWindow("activity_entrance_test_pve_window", {
+			testType = self.battleParams.boss_id,
+			isFirstPass = self.battleParams.isFirstPass
+		})
 	end
 end
 
