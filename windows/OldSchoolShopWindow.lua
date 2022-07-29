@@ -269,13 +269,13 @@ function OldSchoolShopGroupItem:setInfo(params)
 			self.textLabel_.text = xyd.split(__("OLD_SCHOOL_SHOP_TEXT5"), "|")[self.index]
 		end
 	else
-		local hisScores = tonumber(xyd.models.oldSchool:getAllInfo().history_scores)
+		local hisScores = xyd.models.oldSchool:getAllInfo().history_scores
 		local curScores = tonumber(xyd.models.oldSchool:getAllInfo().score)
 		local hasNum = 0
 
 		if hisScores then
 			for _, score in pairs(hisScores) do
-				if params.point <= score then
+				if params.point <= tonumber(score) then
 					hasNum = hasNum + 1
 				end
 			end
@@ -474,13 +474,13 @@ function OldSchoolShopItem:updateShaddow()
 	if self.group == 1 then
 		hideBg = tonumber(xyd.models.oldSchool:getAllInfo().score) < self.needPoint_
 	else
-		local hisScores = tonumber(xyd.models.oldSchool:getAllInfo().history_scores)
+		local hisScores = xyd.models.oldSchool:getAllInfo().history_scores
 		local curScores = tonumber(xyd.models.oldSchool:getAllInfo().score)
 		local hasNum = 0
 
 		if hisScores then
 			for _, score in pairs(hisScores) do
-				if self.needPoint_ <= score then
+				if self.needPoint_ <= tonumber(score) then
 					hasNum = hasNum + 1
 				end
 			end

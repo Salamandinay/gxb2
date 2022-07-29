@@ -488,7 +488,7 @@ function OldSchool:isCheckFloorCanGetAward()
 	if xyd.getServerTime() < self:getChallengeEndTime() and self:getStartTime() < xyd.getServerTime() then
 		for i, floor_infos in pairs(self.allInfo.floor_infos) do
 			for k in pairs(floor_infos.awards) do
-				if floor_infos.awards[k] == 0 then
+				if floor_infos.awards[k] == 0 and tonumber(i) < 11 then
 					local complete_num = floor_infos.complete_num
 
 					if k <= complete_num then
