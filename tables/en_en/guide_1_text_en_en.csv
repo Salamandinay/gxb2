@@ -19,8 +19,8 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 18,,friend_team_boss_crop5,0|0,,
 19,,,,,
 20,,,,,
-21,"Hey Senpai, you've collected some [c][d76500]Girl Shards [-][/c]!\nTap on your Bag to put them together.",buttoncrop_1,0|0,,
-22,"Here, you can [c][d76500]Summon[-][/c] Girls with shards!",buttoncrop_11,0|2,,
+21,"Hey Senpai, you've collected some [c][d76500]Girl Shards [-][/c]!\nSelect your bag to put them together.",buttoncrop_1,0|0,,
+22,"Here, you can [c][d76500]Summon[-][/c] Girls with shards!",buttoncrop_38,0|2,,
 23,"When you have enough Girl Shards, you can tap the icon to summon the corresponding Girl.",,,,
 24,,,,,
 25,,,,,
@@ -110,8 +110,8 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 109,Over here~! Tap the [c][d76500]Guild[-][/c] icon to join or create a Guild~!,,,,
 110,"Wow, Senpai! Yuki senses a unique charm in you. You must be the ""Chosen One!""",buttoncrop_26,0|0,,
 111,"Lucky for you, the Guilds are recruiting right now. How about creating your own guild. As the ""Chosen One,"" you can create your own Guild for free!",,,,
-112,Hey Senpai. You've collected some [c][d76500]Girl Shards[-][/c]!\nTap your bag to piece them together.,buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
-113,"Here, you can [c][d76500]Summon[-][/c] Girls with shards!",buttoncrop_11,0|6,,
+112,"Hey Senpai, you've collected some [c][d76500]Girl Shards[-][/c]!\nSelect your bag to put them together.",buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
+113,"Here, you can [c][d76500]Summon[-][/c] Girls with shards!",buttoncrop_38,0|6,,
 114,,,,,
 115,,buttoncrop_27,0|0,buttoncrop_27_h5,0|0
 116,,,,,
@@ -149,3 +149,5 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 154,,,,,
 155,,,,,
 156,Senpai! This is Lineup Preset.You can preset your lineups here~,,,,
+157,,,,,
+158,,buttoncrop_26,0|0,buttoncrop_26_h5,

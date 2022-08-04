@@ -65,6 +65,7 @@ function ActivityVampireTask:getUIComponent()
 	self.progressBar = self.progressGroup:ComponentByName("progressBar", typeof(UISprite))
 	self.progressLabel = self.progressGroup:ComponentByName("progressLabel", typeof(UILabel))
 	self.progressLevelLabel = self.progressGroup:ComponentByName("progressLevelLabel", typeof(UILabel))
+	self.modelGroup = self.trans:ComponentByName("modelGroup", typeof(UITexture))
 end
 
 function ActivityVampireTask:initUIComponent()
@@ -73,7 +74,14 @@ function ActivityVampireTask:initUIComponent()
 	self.buyLabel.text = __("ACTIVITY_VAMPIRE_TASK_GIFTBAG")
 	self.giftBagId = xyd.tables.miscTable:getNumber("activity_vampire_giftbag", "value")
 	self.levItemId = xyd.tables.miscTable:getNumber("activity_vampire_battlepass_item", "value")
+	local picParams = xyd.tables.miscTable:split2Cost("activity_vampire_task_pic", "value", "|#")
+	local picPos = picParams[3]
+	local picScale = picParams[2]
 
+	xyd.setUITextureByNameAsync(self.modelGroup, xyd.tables.partnerPictureTable:getPartnerPic(picParams[1][1]), true)
+	self.modelGroup.gameObject.transform:SetLocalScale(picScale[1], picScale[2], 1)
+	self.modelGroup:X(picPos[1])
+	self.modelGroup:Y(picPos[2])
 	self:updateLev()
 	self:initNav()
 	self:register()
@@ -523,6 +531,10 @@ function AwardItem:update(index, data)
 		end
 	end
 
+	for i = 1, #freeItems do
+		self.freeItemsArr[i]:SetActive(true)
+	end
+
 	if #freeItems < #self.freeItemsArr then
 		for i = #freeItems + 1, #self.freeItemsArr do
 			self.freeItemsArr[i]:SetActive(false)
@@ -583,6 +595,10 @@ function AwardItem:update(index, data)
 		end
 	end
 
+	for i = 1, #paidItems do
+		self.paidItemsArr[i]:SetActive(true)
+	end
+
 	if #paidItems < #self.paidItemsArr then
 		for i = #paidItems + 1, #self.paidItemsArr do
 			self.paidItemsArr[i]:SetActive(false)
@@ -630,11 +646,15 @@ function TaskItem:initUI()
 	self.progressBarUIProgressBar = self.task_item:ComponentByName("progressBar_", typeof(UIProgressBar))
 	self.progressImg = self.progressBar:ComponentByName("progressImg", typeof(UISprite))
 	self.progressLabel = self.progressBar:ComponentByName("progressLabel", typeof(UILabel))
+	self.tipsBtn = self.task_item:ComponentByName("tipsBtn", typeof(UISprite))
+	self.tips = self.task_item:NodeByName("tips").gameObject
 	self.itemsGroup = self.task_item:NodeByName("itemsGroup").gameObject
 	self.itemsGroupUILayout = self.task_item:ComponentByName("itemsGroup", typeof(UILayout))
 	self.labelTitle = self.task_item:ComponentByName("labelTitle", typeof(UILabel))
 	self.completeNum = self.task_item:ComponentByName("completeNum", typeof(UILabel))
 	self.bg = self.task_item:ComponentByName("e:Image", typeof(UISprite))
+	self.tipsBg = self.tips:ComponentByName("bg_", typeof(UISprite))
+	self.tipsContent = self.tips:ComponentByName("content", typeof(UILabel))
 	UIEventListener.Get(self.bg.gameObject).onClick = handler(self, function ()
 		xyd.goWay(xyd.tables.activityVampireTaskTable:getGetway(self.id), nil, , function ()
 			xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_VAMPIRE_TASK)
@@ -653,6 +673,25 @@ function TaskItem:update(index, data)
 
 	self.id = data.id
 	self.labelTitle.text = xyd.tables.activityVampireTaskTextTable:getBrief(self.id)
+
+	if xyd.tables.activityVampireTaskTable:getTips(self.id) == 0 then
+		self.tipsBtn:SetActive(false)
+	else
+		self.tipsBtn:SetActive(true)
+
+		self.labelTipsText = xyd.tables.activityVampireTaskTextTable:getText(self.id)
+		self.tipsContent.text = self.labelTipsText
+		self.tipsBg.width = self.tipsContent.width + 30
+
+		UIEventListener.Get(self.tipsBtn.gameObject).onPress = function (go, isPressed)
+			if isPressed then
+				self.tips:SetActive(true)
+			else
+				self.tips:SetActive(false)
+			end
+		end
+	end
+
 	local limit = xyd.tables.activityVampireTaskTable:getLimit(self.id)
 	local curLimitNum = self.parent:getActivityData().detail.mission_awarded[self.id]
 	local completeValue = xyd.tables.activityVampireTaskTable:getCompleteValue(self.id)
@@ -702,9 +741,15 @@ function TaskItem:update(index, data)
 		end
 	end
 
+	for i = 1, #awardItems do
+		self.awardItemsArr[i]:SetActive(true)
+	end
+
 	if #awardItems < #self.awardItemsArr then
-		for i = #awardItems, #self.awardItemsArr do
-			self.awardItemsArr[i]:SetActive(false)
+		for i = #awardItems + 1, #self.awardItemsArr do
+			if self.awardItemsArr[i] then
+				self.awardItemsArr[i]:SetActive(false)
+			end
 		end
 	end
 

@@ -9,7 +9,7 @@ id,desc
 8,In max. {1} Runden abschließen
 9,In max. {1} Runden abschließen
 10,In max. {1} Runden abschließen
-11,Erleide max. {1} Mal Kontrolleff.
+11,Erleide max. {1} Mal die Kontrolleffekte
 12,Min. {1}%% HP nach dem Kampf
 13,Min. {1}%% HP nach dem Kampf
 14,Min. {1}%% HP nach dem Kampf
@@ -19,12 +19,12 @@ id,desc
 18,Max. {1} Verbündete gestorben
 19,Max. {1} Verbündete gestorben
 20,Max. {1} Verbündete gestorben
-21,Keine Verbündete gestorben
+21,Alle Mädchen deines Teams überleben den Kampf
 22,Keine Geister-Mädchen im Team
-23,Keine Mensch-Mädchen im Team
+23,Keine Menschen-Mädchen im Team
 24,Keine Monster-Mädchen im Team
 25,Keine Feen-Mädchen im Team
-26,Keine Dämon-Mädchen im Team
+26,Keine Dämonen-Mädchen im Team
 27,Keine Engel-Mädchen im Team
 28,Stelle Monica im Team auf
 29,Erleide insg. max. {1} Schaden
@@ -32,3 +32,11 @@ id,desc
 31,Stelle Monica im Team auf
 32,Keine Mädchen in der Frontline
 33,Keine Mädchen in der Backline
+35,"Fügt den Gegnern die Effekte Blutschaden, Giftschaden und Brennschaden jeweils einmal zu."
+36,"Der Gesamtschaden, den ein einzelnes Mädchen in deinem Team erlitten hat, liegt höher als {1}."
+37,Die gesamten regenerierten HP deiner Mädchen liegen höher als {1}.
+38,Fügt den Gegnern {1} Mal die Kontrolleffkte zu
+39,Min. {1} Mädchen in deinem Team überleben den Kampf.
+40,Schließe {1} Runden im Kampf ab
+41,Fügt den Gegnern {1} Mal die Kontrolleffkte zu
+42,"Fügt den Gegnern die Effekte Blutschaden, Giftschaden und Brennschaden jeweils {1} Mal zu."

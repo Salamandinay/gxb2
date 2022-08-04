@@ -663,7 +663,7 @@ function Slot:onRegister()
 	self:registerEvent(xyd.event.DECOMPOSE_PARTNERS, handler(self, self.onDecomposePartners))
 	self:registerEvent(xyd.event.PROPHET_REPLACE, handler(self, self.onReplacePartner))
 	self:registerEvent(xyd.event.PROPHET_REPLACE_SAVE, handler(self, self.onReplacePartnerSave))
-	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.onChristmasExchange))
+	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.onGetActivityAward))
 	self:registerEvent(xyd.event.REPLACE_10_STAR, handler(self, self.onTenStarReplace))
 	self:registerEvent(xyd.event.SUIT_SKILL, handler(self, self.onChangeSuitSkill))
 	self:registerEvent(xyd.event.PARTNER_LEVUP, function (self, event)
@@ -1189,6 +1189,41 @@ end
 function Slot:onReplacePartner(event)
 	self.replacePartner_ = event.data.partner_id
 	self.replaceTableID_ = event.data.replace_id
+end
+
+function Slot:onGetActivityAward(event)
+	local data = event.data
+
+	if data.activity_id == xyd.ActivityID.ACTIVITY_CHRISTMAS_EXCHANGE then
+		self:onChristmasExchange(event)
+	elseif data.activity_id == xyd.ActivityID.ACTIVITY_FREE_REVERGE then
+		self:onFreeReverge(event)
+	end
+end
+
+function Slot:onFreeReverge(event)
+	local data = event.data
+
+	if data.activity_id == xyd.ActivityID.ACTIVITY_FREE_REVERGE then
+		local detail = json.decode(data.detail)
+
+		if detail and detail.partners and detail.partners[1] then
+			local partners = detail.partners
+
+			self:delPartners({
+				self.tempFreeRevergePartnerID
+			})
+
+			self.tempFreeRevergePartnerID = nil
+
+			self:addPartners(partners)
+			self:initAwakMatStatus()
+		end
+	end
+end
+
+function Slot:saveTempFreeRevergePartnerID(partnerID)
+	self.tempFreeRevergePartnerID = partnerID
 end
 
 function Slot:onChristmasExchange(event)

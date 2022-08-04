@@ -1,5 +1,13 @@
 local ChoosePartnerDebrisWindow = class("ChoosePartnerDebrisWindow", import(".BaseWindow"))
-local BackpackItem = import(".BackpackWindow"):getBackpackItemClass()
+local BackpackItem = class("BackpackItem")
+local ItemIcon = import("app.components.ItemIcon")
+local HeroIcon = import("app.components.HeroIcon")
+local Partner = import("app.models.Partner")
+local ItemTable = xyd.tables.itemTable
+local EquipTable = xyd.tables.equipTable
+local PartnerTable = xyd.tables.partnerTable
+local SummonTable = xyd.tables.summonTable
+local Slot = xyd.models.slot
 
 function ChoosePartnerDebrisWindow:ctor(name, params)
 	ChoosePartnerDebrisWindow.super.ctor(self, name, params)
@@ -9,6 +17,8 @@ function ChoosePartnerDebrisWindow:ctor(name, params)
 	self.mTableIDList_ = self.params_.mTableIDList
 	self.clickId_ = self.params_.clickId
 	self.closeCallBack = self.params_.closeCallback
+	self.showBaoxiang = params.showBaoxiang
+	self.notShowGetWayBtn = params.notShowGetWayBtn
 	self.collectionBefore_ = xyd.models.slot:getCollection()
 end
 
@@ -40,20 +50,19 @@ end
 function ChoosePartnerDebrisWindow:initDebris()
 	local debrisDatas = xyd.models.backpack:getCanComposeDebris()
 	local itemList = {}
+	local mTableIDList = {}
+
+	if self.mTableIDList_ then
+		mTableIDList = self.mTableIDList_
+	else
+		mTableIDList = {
+			self.mTableID_
+		}
+	end
 
 	if self.params_.isShelter then
 		itemList = self:shelterDebrisFilter(debrisDatas)
 	else
-		local mTableIDList = {}
-
-		if self.mTableIDList_ then
-			mTableIDList = self.mTableIDList_
-		else
-			mTableIDList = {
-				self.mTableID_
-			}
-		end
-
 		for _, mTableID in ipairs(mTableIDList) do
 			if tonumber(mTableID) % 1000 == 999 then
 				local group = math.floor(tonumber(mTableID) % 10000 / 1000)
@@ -61,7 +70,7 @@ function ChoosePartnerDebrisWindow:initDebris()
 
 				if star < 6 then
 					if debrisDatas and debrisDatas[group] and debrisDatas[group][star] then
-						itemList = debrisDatas[group][star]
+						itemList = xyd.deepCopy(debrisDatas[group][star])
 					end
 				elseif star == 6 then
 					if debrisDatas and debrisDatas[group] and debrisDatas[group][6] then
@@ -108,6 +117,76 @@ function ChoosePartnerDebrisWindow:initDebris()
 			end
 		end
 	end
+
+	if self.showBaoxiang then
+		local baoxiangItems = xyd.models.backpack:getBaoxiangItems()
+		local baoxiangRecordArr = {}
+
+		for _, mTableID in ipairs(mTableIDList) do
+			if tonumber(mTableID) % 1000 == 999 then
+				local group = math.floor(tonumber(mTableID) % 10000 / 1000)
+				local star = math.floor(tonumber(mTableID) / 10000)
+
+				for _, baoxiangItem in ipairs(baoxiangItems) do
+					if not baoxiangRecordArr[baoxiangItem.itemID] then
+						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+
+						for __, debrisItem in ipairs(optionalDebrisIDs) do
+							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
+							local partnerTableID = partnerCost[1]
+							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
+							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+
+							if partnerGroup == group and partnerStar == star and not baoxiangRecordArr[baoxiangItem.itemID] then
+								table.insert(itemList, {
+									isBaoxiang = true,
+									itemID = baoxiangItem.itemID,
+									itemNum = baoxiangItem.itemNum
+								})
+
+								baoxiangRecordArr[baoxiangItem.itemID] = true
+							end
+						end
+					end
+				end
+			else
+				local itemID = xyd.tables.partnerTable:getPartnerShard(mTableID)
+
+				for _, baoxiangItem in ipairs(baoxiangItems) do
+					if not baoxiangRecordArr[baoxiangItem.itemID] then
+						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+
+						for __, debrisItem in ipairs(optionalDebrisIDs) do
+							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
+							local partnerTableID = partnerCost[1]
+							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
+							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+
+							if debrisItem.itemID == itemID and not baoxiangRecordArr[baoxiangItem.itemID] then
+								table.insert(itemList, {
+									isBaoxiang = true,
+									itemID = baoxiangItem.itemID,
+									itemNum = baoxiangItem.itemNum
+								})
+
+								baoxiangRecordArr[baoxiangItem.itemID] = true
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	table.sort(itemList, function (a, b)
+		if a.isBaoxiang and b.isBaoxiang then
+			return b.itemID < a.itemID
+		elseif not a.isBaoxiang and not b.isBaoxiang then
+			return b.itemID < a.itemID
+		else
+			return a.isBaoxiang
+		end
+	end)
 
 	self.itemList_ = itemList
 
@@ -294,6 +373,179 @@ function ChoosePartnerDebrisWindow:willClose()
 	if self.isCloseAll then
 		return
 	end
+end
+
+function BackpackItem:ctor(go, backpackWindow)
+	self.go = go
+	self.selfNum = 0
+	self.curID = 0
+	self.backpackWindow = backpackWindow
+	self.progress = go:ComponentByName("progress", typeof(UIProgressBar))
+	self.progressSp = self.progress:ComponentByName("thumb", typeof(UISprite))
+	self.progressLabel = self.progress:ComponentByName("label", typeof(UILabel))
+end
+
+function BackpackItem:iconNew(state)
+	if state == "item" then
+		self.itemIcon = ItemIcon.new(self.go:NodeByName("item").gameObject)
+
+		self.itemIcon:setDragScrollView(self.backpackWindow.scrollView)
+	elseif state == "hero" then
+		self.heroIcon = HeroIcon.new(self.go:NodeByName("item").gameObject)
+
+		self.heroIcon:setDragScrollView(self.backpackWindow.scrollView)
+	end
+end
+
+function BackpackItem:update(index, realIndex, info)
+	if not info then
+		self.go:SetActive(false)
+
+		return
+	else
+		self.go:SetActive(true)
+	end
+
+	if self.curID == info.itemID and self.selfNum == info.itemNum then
+		return
+	end
+
+	self.data = info
+	self.itemIndex = index
+	local itemID = self.data.itemID
+	local itemNum = self.data.itemNum
+	self.selfNum = itemNum
+	self.curID = itemID
+	self.notShowGetWayBtn = self.backpackWindow.notShowGetWayBtn
+
+	if ItemTable:showInBagType(itemID) == xyd.BackpackShowType.DEBRIS then
+		self.progress:SetActive(true)
+
+		local type_ = ItemTable:getType(itemID)
+		local partnerCost = ItemTable:partnerCost(itemID)
+		local notShowGetWayBtn = self.notShowGetWayBtn
+
+		if type_ == xyd.ItemType.ARTIFACT_DEBRIS or type_ == xyd.ItemType.DRESS_DEBRIS then
+			if self.itemIcon == nil then
+				self:iconNew("item")
+			end
+
+			self.itemIcon:SetActive(true)
+
+			if self.heroIcon ~= nil then
+				self.heroIcon:SetActive(false)
+			end
+
+			if type_ == xyd.ItemType.ARTIFACT_DEBRIS then
+				partnerCost = ItemTable:treasureCost(itemID)
+			elseif type_ == xyd.ItemType.DRESS_DEBRIS then
+				local dress_summon_id = xyd.tables.itemTable:getSummonID(itemID)
+				partnerCost = xyd.tables.summonDressTable:getCost(dress_summon_id)
+			end
+
+			self.itemIcon:setInfo({
+				itemID = itemID,
+				num = itemNum,
+				notShowGetWayBtn = notShowGetWayBtn,
+				wndType = xyd.ItemTipsWndType.BACKPACK,
+				callback = handler(self, self.onClickIcon)
+			})
+			self.itemIcon:setNum()
+		else
+			if self.heroIcon == nil then
+				self:iconNew("hero")
+			end
+
+			if self.itemIcon ~= nil then
+				self.itemIcon:SetActive(false)
+			end
+
+			self.heroIcon:SetActive(true)
+			self.heroIcon:setInfo({
+				show_has_num = true,
+				itemID = itemID,
+				itemNum = itemNum,
+				notShowGetWayBtn = notShowGetWayBtn,
+				wndType = xyd.ItemTipsWndType.BACKPACK,
+				callback = handler(self, self.onClickIcon)
+			})
+		end
+
+		local str = itemNum .. "/" .. partnerCost[2]
+		self.progressLabel.text = str
+		self.progress.value = math.min(itemNum / partnerCost[2], 1)
+
+		if partnerCost[2] <= itemNum then
+			xyd.setUISprite(self.progressSp, xyd.Atlas.COMMON_UI, "bp_bar_green")
+		else
+			xyd.setUISprite(self.progressSp, xyd.Atlas.COMMON_UI, "bp_bar_blue_png")
+		end
+
+		if xyd.isIosTest() then
+			xyd.setUISprite(self.progressSp, nil, self.progressSp.spriteName .. "_ios_test")
+			xyd.setUISprite(self.progress:ComponentByName("bg", typeof(UISprite)), nil, "bp_bar_bg_ios_test")
+		end
+	else
+		if self.itemIcon == nil then
+			self:iconNew("item")
+		end
+
+		self.progress:SetActive(false)
+		self.itemIcon:SetActive(true)
+
+		if self.heroIcon ~= nil then
+			self.heroIcon:SetActive(false)
+		end
+
+		local notShowGetWayBtn = self.notShowGetWayBtn
+
+		if itemID == xyd.ItemID.LUCKYBOXES_COIN then
+			notShowGetWayBtn = true
+		end
+
+		self.itemIcon:setInfo({
+			itemID = itemID,
+			num = itemNum,
+			wndType = xyd.ItemTipsWndType.BACKPACK,
+			notShowGetWayBtn = notShowGetWayBtn,
+			callback = handler(self, self.onClickIcon)
+		})
+	end
+
+	self.name = "backpack_item_" .. self.itemIndex
+end
+
+function BackpackItem:setOrder(order)
+	self.order_ = order
+end
+
+function BackpackItem:getOrder(order)
+	return self.order_
+end
+
+function BackpackItem:onClickIcon()
+	local params = {
+		itemID = self.data.itemID,
+		itemNum = self.data.itemNum,
+		wndType = xyd.ItemTipsWndType.BACKPACK,
+		notShowGetWayBtn = self.backpackWindow.notShowGetWayBtn
+	}
+
+	if self.data.isBaoxiang then
+		xyd.openWindow("award_select_window", {
+			itemID = self.data.itemID,
+			itemNum = self.data.itemNum,
+			itemType = xyd.ItemType.OPTIONAL_TREASURE_CHEST,
+			longPressItemCallback = function ()
+			end
+		})
+	else
+		xyd.WindowManager.get():openWindow("item_tips_window", params)
+	end
+end
+
+function BackpackItem:getGameObject()
+	return self.go
 end
 
 return ChoosePartnerDebrisWindow

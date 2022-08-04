@@ -2019,6 +2019,17 @@ function BattleWinWindow:initGuildBoss()
 end
 
 function BattleWinWindow:initGuildCompetition()
+	local targetArr = self.battleParams.battle_report.purposes
+	local targetCompleteNum = 0
+
+	if targetArr then
+		for i in pairs(targetArr) do
+			if targetArr[i] == 1 then
+				targetCompleteNum = targetCompleteNum + 1
+			end
+		end
+	end
+
 	if self.battleParams.type == 1 then
 		local awardsDataList = self.battleParams.items
 
@@ -2060,7 +2071,7 @@ function BattleWinWindow:initGuildCompetition()
 		local labelDamage1_1 = tmp:ComponentByName("labelDamage1", typeof(UILabel))
 		local labelDamage2_1 = tmp:ComponentByName("labelDamage2", typeof(UILabel))
 		labelDamage1_1.text = __("BOSS_POINT")
-		labelDamage2_1.text = self.battleParams.point
+		labelDamage2_1.text = math.floor(tonumber(self.battleParams.point)) .. " (+" .. targetCompleteNum * 10 .. "%)"
 
 		if self.name_ == "battle_win_v2_window" then
 			self.damageGroup:Y(-295)
@@ -2098,7 +2109,7 @@ function BattleWinWindow:initGuildCompetition()
 		local labelDamage1_1 = tmp:ComponentByName("labelDamage1", typeof(UILabel))
 		local labelDamage2_1 = tmp:ComponentByName("labelDamage2", typeof(UILabel))
 		labelDamage1_1.text = __("BOSS_POINT")
-		labelDamage2_1.text = self.battleParams.point
+		labelDamage2_1.text = math.floor(tonumber(self.battleParams.point)) .. " (+" .. targetCompleteNum * 10 .. "%)"
 
 		if self.name_ == "battle_win_v2_window" then
 			self.damageGroup:Y(-250)
@@ -2132,6 +2143,69 @@ function BattleWinWindow:initGuildCompetition()
 			self.damageGroup_1:GetComponent(typeof(UITable)):Reposition()
 		end
 	end
+
+	local guildCompetitionTipsBtn = nil
+
+	if self.name_ == "battle_win_v2_window" then
+		guildCompetitionTipsBtn = NGUITools.AddChild(self.bottomNode.gameObject, self.battleDetailBtn.gameObject)
+
+		guildCompetitionTipsBtn.gameObject:X(220)
+		guildCompetitionTipsBtn.gameObject:Y(360)
+	elseif self.name_ == "battle_win_window" then
+		guildCompetitionTipsBtn = NGUITools.AddChild(self.winGroup.gameObject, self.battleDetailBtn.gameObject)
+
+		guildCompetitionTipsBtn.gameObject:X(226)
+		guildCompetitionTipsBtn.gameObject:Y(-138)
+	end
+
+	local guildCompetitionTipsBtnUISprite = guildCompetitionTipsBtn:GetComponent(typeof(UISprite))
+
+	xyd.setUISpriteAsyncWithAtlas(guildCompetitionTipsBtnUISprite, "CommonBtn", "btn_tips", function ()
+		guildCompetitionTipsBtnUISprite.width = 55
+		guildCompetitionTipsBtnUISprite.height = 55
+	end)
+
+	guildCompetitionTipsBtnUISprite.depth = 155
+	UIEventListener.Get(guildCompetitionTipsBtn.gameObject).onClick = handler(self, function ()
+		if not self.guildCompetitionTargetGroup then
+			local targetObj = NGUITools.AddChild(self.winGroup.gameObject, "targetObj")
+			local targetObjUIWidget = targetObj:AddComponent(typeof(UIWidget))
+			targetObjUIWidget.depth = 150
+			local bossTable = xyd.tables.guildCompetitionBossTable
+			local targetArr = bossTable["getBattleChallenge" .. self.battleParams.boss_id](bossTable, self.battleParams.battle_lv)
+			local params = {
+				isHasStar = true,
+				targetArr = targetArr,
+				completeArr = self.battleParams.battle_report.purposes
+			}
+			self.guildCompetitionTargetGroup = import("app.components.GuildCompetitionChallengeGroup").new(targetObjUIWidget.gameObject, params)
+
+			self.guildCompetitionTargetGroup:setBgClickHide()
+
+			self.guildCompetitionTargetGroup:getGameObject():GetComponent(typeof(UIWidget)).alpha = 0.02
+		elseif self.guildCompetitionTargetGroup:getGameObject().activeSelf then
+			self.guildCompetitionTargetGroup:SetActive(false)
+		else
+			self.guildCompetitionTargetGroup:SetActive(true)
+		end
+
+		local function setGroupPos()
+			if self.guildCompetitionTargetGroup and self.guildCompetitionTargetGroup:getGameObject().activeSelf then
+				if self.name_ == "battle_win_window" then
+					self.guildCompetitionTargetGroup:getGameObject():Y(self.guildCompetitionTargetGroup:getHeight() - 223)
+				elseif self.name_ == "battle_win_v2_window" then
+					self.guildCompetitionTargetGroup:getGameObject():Y(self.guildCompetitionTargetGroup:getHeight() - 299)
+				end
+			end
+		end
+
+		setGroupPos()
+		self:waitForFrame(3, function ()
+			setGroupPos()
+
+			self.guildCompetitionTargetGroup:getGameObject():GetComponent(typeof(UIWidget)).alpha = 1
+		end)
+	end)
 end
 
 function BattleWinWindow:initEntranceTest()

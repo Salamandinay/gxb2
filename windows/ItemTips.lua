@@ -1012,7 +1012,7 @@ function ItemTips:canSummon()
 		partnerCost = xyd.tables.summonDressTable:getCost(dress_summon_id)
 	end
 
-	if self.showBagType_ == xyd.BackpackShowType.DEBRIS and partnerCost[2] <= self.itemNum then
+	if self.showBagType_ and partnerCost and partnerCost[2] and self.itemNum and (self.showBagType_ == xyd.BackpackShowType.DEBRIS or self.showBagType_ == xyd.BackpackShowType.CONSUMABLES) and partnerCost[2] <= self.itemNum then
 		return true
 	end
 

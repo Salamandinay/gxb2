@@ -102,21 +102,27 @@ end
 function SuitSkillDetailWindow:onClickConfirmBtn()
 	if self.isFake_ then
 		self.partner_.skill_index = self.index_
-		local win = xyd.WindowManager.get():getWindow("activity_entrance_test_partner_window")
+		local entranceWin = xyd.WindowManager.get():getWindow("activity_entrance_test_partner_window")
 
-		if win then
-			win:updateSuitStatus()
-			win:updateEquipRed()
+		if entranceWin then
+			entranceWin:updateSuitStatus()
+			entranceWin:updateEquipRed()
+
+			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+			self.partner_.time = xyd.getServerTime()
+
+			activityData:setPartnerTime(self.partner_)
+
+			activityData.dataHasChange = true
+
+			activityData:setSkillIndex(self.partner_:getTableID(), self.index_)
 		end
 
-		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
-		self.partner_.time = xyd.getServerTime()
+		local guildCompetitionWin = xyd.WindowManager.get():getWindow("guild_competition_special_partner_window")
 
-		activityData:setPartnerTime(self.partner_)
-
-		activityData.dataHasChange = true
-
-		activityData:setSkillIndex(self.partner_:getTableID(), self.index_)
+		if guildCompetitionWin then
+			guildCompetitionWin:updateData()
+		end
 	elseif self.quickItem_ then
 		self.partner_.skill_index = self.index_
 

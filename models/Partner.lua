@@ -767,8 +767,6 @@ function Partner:gradeUp()
 end
 
 function Partner:equip(equipments)
-	dump(self:getEquipment(), "走的這裡")
-
 	if self:getGroup() == xyd.PartnerGroup.TIANYI and self:getStar() >= 13 then
 		local partnerDetailWd = xyd.WindowManager.get():getWindow("partner_detail_window")
 
@@ -1064,6 +1062,8 @@ function Partner:getActiveIndex()
 end
 
 function Partner:getPotentialByOrder()
+	print("tst:", self.tableID)
+
 	return xyd.tables.partnerTable:getPotential(self.tableID)
 end
 

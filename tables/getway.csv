@@ -37,7 +37,7 @@ id,name,lv_limit,function_id,stage,go_window,go_params,is_close,close_win_name,l
 37,-1,0,10,,summon_window,,1,,,
 38,-1,0,10,,summon_window,,1,activity_growth_plan_window|activity_growth_plan_award_window|activity_christmas_exchange_award_select_window,,
 39,-1,0,10,,summon_window,,1,,,
-40,-1,0,,,backpack_window,type:3,1,summon_result_window|summon_window|item_tips_window|award_item_tips_window|award_select_window|drop_probability_window|activity_wine_award_preview_window|parnter_info_window|activity_jackpot_machine_giftbag_window|gamble_rewards_window|item_tips_window|drop_probability_window|activity_window|mail_detail_window|mail_window|activity_recharge_lottery_window|activity_recharge_lottery_box_detail_window|activity_childhood_shop_gacha_probability_window|activity_childhood_shop_gacha_window|activity_common_select_award_window|activity_dragonboat2022_award_select_window,,
+40,-1,0,,,slot_window,type:3,1,summon_result_window|summon_window|item_tips_window|award_item_tips_window|award_select_window|drop_probability_window|activity_wine_award_preview_window|parnter_info_window|activity_jackpot_machine_giftbag_window|gamble_rewards_window|item_tips_window|drop_probability_window|activity_window|mail_detail_window|mail_window|activity_recharge_lottery_window|activity_recharge_lottery_box_detail_window|activity_childhood_shop_gacha_probability_window|activity_childhood_shop_gacha_window|activity_common_select_award_window|activity_dragonboat2022_award_select_window,,
 41,-1,25,16,,prophet_window,type:2,1,,,
 42,-1,0,,,vip_window,type:2,1,item_tips_window|award_item_tips_window|award_select_window|drop_probability_window|activity_wine_award_preview_window|parnter_info_window|activity_window|activity_jackpot_machine_giftbag_window|gamble_rewards_window|item_tips_window|drop_probability_window|mail_detail_window|mail_window|activity_recharge_lottery_window|activity_recharge_lottery_box_detail_window|activity_childhood_shop_gacha_probability_window|activity_childhood_shop_gacha_window|activity_common_select_award_window|activity_dragonboat2022_award_select_window,,
 43,-1,0,,,item_purchase_window,exchange_id:3,1,,,
@@ -232,3 +232,4 @@ id,name,lv_limit,function_id,stage,go_window,go_params,is_close,close_win_name,l
 233,-1,0,14,,arena_window,,1,,,
 234,-1,0,39,,old_school_main_window,,1,,,
 235,-1,0,49,,chime_main_window,,1,,,
+236,-1,0,,,pet_start_window,,1,,,

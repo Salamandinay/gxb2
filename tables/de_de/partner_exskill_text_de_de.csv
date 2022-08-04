@@ -301,9 +301,9 @@ id,name,skill_name,ex_skill_desc
 752002045,趙雲,冰凍弱點,Erhöht den Extraschaden auf {1} des AW.
 752003011,大喬,迷途之音,Erhöht den Angriffsschaden auf {1} des AW.
 752003012,大喬,迷途之音,Erhöht den Angriffsschaden auf {1} des AW.
-752003013,大喬,迷途之音,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
-752003014,大喬,迷途之音,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
-752003015,大喬,迷途之音,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+752003013,大喬,迷途之音,Erhöht den Angriffsschaden auf {1} des AW.
+752003014,大喬,迷途之音,Erhöht den Angriffsschaden auf {1} des AW.
+752003015,大喬,迷途之音,Erhöht den Angriffsschaden auf {1} des AW.
 752003021,大喬,魔音壁,Erhöht den Angriff um {1}.
 752003022,大喬,魔音壁,Erhöht den Angriff um {1} und die HP um {2}.
 752003023,大喬,魔音壁,Erhöht den Angriff um {1} und die HP um {2}.
@@ -318,7 +318,7 @@ id,name,skill_name,ex_skill_desc
 752003042,大喬,魅惑,Erhöht den Angriffsschaden auf {1} des AW.
 752003043,大喬,魅惑,Erhöht den Angriffsschaden auf {1} des AW.
 752003044,大喬,魅惑,Erhöht den Angriffsschaden auf {1} des AW.
-752003045,大喬,魅惑,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+752003045,大喬,魅惑,Erhöht den Angriffsschaden auf {1} des AW.
 752004011,夏侯淵,爆炸射擊,Erhöht den Angriffsschaden auf {1} des AW und den [c][01a310]Blutschaden[-][/c] auf {2} des AW.
 752004012,夏侯淵,爆炸射擊,Erhöht den Angriffsschaden auf {1} des AW und den [c][01a310]Blutschaden[-][/c] auf {2} des AW.
 752004013,夏侯淵,爆炸射擊,Erhöht den Angriffsschaden auf {1} des AW und den [c][01a310]Blutschaden[-][/c] auf {2} des AW.
@@ -739,11 +739,11 @@ id,name,skill_name,ex_skill_desc
 753010043,黃月英,反噬,"Erhöht die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {1}."
 753010044,黃月英,反噬,"Erhöht die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {1}."
 753010045,黃月英,反噬,"Erhöht die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {1}."
-753011011,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW. Neu: Es besteht eine {2}ige Wahrscheinlichkeit, 1 Debuff aller Mädchen des eigenen Teams zu entfernen."
-753011012,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, Debuffs zu entfernen, auf {2}."
-753011013,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, Debuffs zu entfernen, auf {2}."
-753011014,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW und die Wahrscheinlichkeit, Debuffs zu entfernen, auf {2}."
-753011015,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW, eigenen Angriff um {2}, die Schadensreduzierungsrate aller Mädchen des eigenen Teams um {3} und die Wahrscheinlichkeit, die Debuffs zu entfernen, auf {4}."
+753011011,圖靈,聚變打擊,Erhöht den Angriffsschaden auf {1} des AW.
+753011012,圖靈,聚變打擊,Erhöht den Angriffsschaden auf {1} des AW.
+753011013,圖靈,聚變打擊,Erhöht den Angriffsschaden auf {1} des AW.
+753011014,圖靈,聚變打擊,Erhöht den Angriffsschaden auf {1} des AW.
+753011015,圖靈,聚變打擊,"Erhöht den Angriffsschaden auf {1} des AW, eigenen Angriff um {2} und die Schadensreduzierungsrate aller Mädchen des eigenen Teams um {3}."
 753011021,圖靈,呼叫支援,Erhöht den Angriffsschaden auf {1} des AW.
 753011022,圖靈,呼叫支援,Erhöht den Angriffsschaden auf {1} des AW.
 753011023,圖靈,呼叫支援,Erhöht den Angriffsschaden auf {1} des AW.

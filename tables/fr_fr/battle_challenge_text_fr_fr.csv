@@ -9,17 +9,17 @@ id,desc
 8,Passer l'Étape en moins de (≤) {1} tour(s)
 9,Passer l'Étape en moins de (≤) {1} tour(s)
 10,Passer l'Étape en moins de (≤) {1} tour(s)
-11,Recevoir moins de (≤) {1} Effet de Contrôle
+11,Recevoir moins de (≤) {1} Effet(s) de Contrôle
 12,Total des PV restants supérieur (≥) à {1}%%
 13,Total des PV restants supérieur (≥) à {1}%%
 14,Total des PV restants supérieur (≥) à {1}%%
 15,Total des PV restants supérieur (≥) à {1}%%
-16,Moins de (≤) {1} Filles vaincue à la fin du combat
-17,Moins de (≤) {1} Filles vaincue à la fin du combat
-18,Moins de (≤) {1} Filles vaincue à la fin du combat
-19,Moins de (≤) {1} Filles vaincue à la fin du combat
-20,Moins de (≤) {1} Filles vaincue à la fin du combat
-21,Terminer avec toutes les Filles de votre équipe en vie
+16,Moins de (≤) {1} Fille(s) vaincue(s) à la fin du combat
+17,Moins de (≤) {1} Fille(s) vaincue(s) à la fin du combat
+18,Moins de (≤) {1} Fille(s) vaincue(s) à la fin du combat
+19,Moins de (≤) {1} Fille(s) vaincue(s) à la fin du combat
+20,Moins de (≤) {1} Fille(s) vaincue(s) à la fin du combat
+21,Aucune Fille vaincue dans votre équipe
 22,Aucune Fille de Maison Fantôme dans votre Équipe
 23,Aucune Fille de Maison Humain dans votre Équipe
 24,Aucune Fille de Maison Monstre dans votre Équipe
@@ -32,3 +32,11 @@ id,desc
 31,Ajouter Monica à votre Équipe
 32,Aucune Fille sur la ligne avant
 33,Aucune Fille sur la ligne arrière
+35,"Infliger Saignement, Empoisonnement et Brûlure aux ennemis 1 fois."
+36,Une Fille de votre Équipe doit subir plus de {1} de dégâts.
+37,Le Soin total de votre Équipe doit dépasser {1}.
+38,Infliger un Effet de Contrôle aux ennemis {1} fois.
+39,Au minimum {1} Fille(s) alliée(s) invaincue(s) à la fin de la bataille
+40,Compléter la bataille en {1} tours
+41,Infliger un Effet de Contrôle aux ennemis {1} fois.
+42,"Infliger Saignement, Empoisonnement et Brûlure {1} fois aux ennemis."

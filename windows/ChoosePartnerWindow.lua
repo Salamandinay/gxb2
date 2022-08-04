@@ -59,6 +59,9 @@ function ChoosePartnerWindow:ctor(name, params)
 	self.id_ = params.id
 	self.type_ = params.type
 	self.isShowLovePoint_ = params.isShowLovePoint
+	self.showBtnDebris = params.showBtnDebris
+	self.showBaoxiang = params.showBaoxiang
+	self.notShowGetWayBtn = params.notShowGetWayBtn
 
 	for _, id in pairs(self.selected) do
 		self.choosePartners[id] = true
@@ -116,7 +119,11 @@ function ChoosePartnerWindow:initWindow()
 end
 
 function ChoosePartnerWindow:initDebrisBtn()
-	local showBtnDebris = true
+	local showBtnDebris = self.showBtnDebris
+
+	if showBtnDebris == nil then
+		showBtnDebris = true
+	end
 
 	if showBtnDebris then
 		self.btnDebris:SetActive(true)
@@ -126,11 +133,13 @@ function ChoosePartnerWindow:initDebrisBtn()
 		xyd.setBgColorType(self.btnDebris, xyd.ButtonBgColorType.blue_btn_70_70)
 
 		UIEventListener.Get(self.btnDebris).onClick = function ()
-			if self:checkHasDebris() then
+			if self:checkHasDebris() or self:checkBaoxiang() then
 				local params = {
 					mTableID = self.mTableID_,
 					mTableIDList = self.mTableIDList_,
-					clickId = self.id_
+					clickId = self.id_,
+					showBaoxiang = self.showBaoxiang,
+					notShowGetWayBtn = self.notShowGetWayBtn
 				}
 
 				function params.closeCallback()
@@ -259,6 +268,67 @@ function ChoosePartnerWindow:checkHasDebris()
 	end
 end
 
+function ChoosePartnerWindow:checkBaoxiang()
+	if self.showBaoxiang then
+		local baoxiangItems = xyd.models.backpack:getBaoxiangItems()
+		local baoxiangRecordArr = {}
+		local mTableIDList = {}
+
+		if self.mTableIDList_ then
+			mTableIDList = self.mTableIDList_
+		else
+			mTableIDList = {
+				self.mTableID_
+			}
+		end
+
+		for _, mTableID in ipairs(mTableIDList) do
+			if tonumber(mTableID) % 1000 == 999 then
+				local group = math.floor(tonumber(mTableID) % 10000 / 1000)
+				local star = math.floor(tonumber(mTableID) / 10000)
+
+				for _, baoxiangItem in ipairs(baoxiangItems) do
+					if not baoxiangRecordArr[baoxiangItem.itemID] then
+						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+
+						for __, debrisItem in ipairs(optionalDebrisIDs) do
+							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
+							local partnerTableID = partnerCost[1]
+							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
+							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+
+							if partnerGroup == group and partnerStar == star and not baoxiangRecordArr[baoxiangItem.itemID] then
+								return true
+							end
+						end
+					end
+				end
+			else
+				local itemID = xyd.tables.partnerTable:getPartnerShard(mTableID)
+
+				for _, baoxiangItem in ipairs(baoxiangItems) do
+					if not baoxiangRecordArr[baoxiangItem.itemID] then
+						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+
+						for __, debrisItem in ipairs(optionalDebrisIDs) do
+							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
+							local partnerTableID = partnerCost[1]
+							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
+							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+
+							if debrisItem.itemID == itemID and not baoxiangRecordArr[baoxiangItem.itemID] then
+								return true
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	return false
+end
+
 function ChoosePartnerWindow:addPartnerToContainer(partner)
 	local partnerID = partner:getPartnerID()
 	local params = partner:getInfo()
@@ -304,7 +374,7 @@ function ChoosePartnerWindow:addPartnerToContainer(partner)
 
 		local choose = self.choosePartners[partnerID]
 
-		if not choose and self.type_ == "ACTIVITY_PROMOTION_LADDER" and self.needNum <= #self.selected then
+		if not choose and (self.type_ == "ACTIVITY_PROMOTION_LADDER" or self.type_ == "ACTIVITY_FREE_REVERGE") and self.needNum <= #self.selected then
 			self:clearChoose()
 		end
 
@@ -343,7 +413,7 @@ function ChoosePartnerWindow:clearChoose()
 	end
 
 	for i in pairs(self.multiWrap_.items_) do
-		if self.multiWrap_.items_[i].heroIcon then
+		if self.multiWrap_.items_[i].heroIcon and self.multiWrap_.items_[i].data then
 			self.multiWrap_.items_[i].heroIcon.choose = false
 
 			if self.multiWrap_.items_[i].data.lockType ~= 0 then

@@ -49,11 +49,11 @@ function BackpackItem:update(index, realIndex, info)
 	local itemNum = self.data.itemNum
 	self.selfNum = itemNum
 	self.curID = itemID
+	local type_ = ItemTable:getType(itemID)
 
-	if ItemTable:showInBagType(itemID) == xyd.BackpackShowType.DEBRIS then
+	if type_ == xyd.ItemType.ARTIFACT_DEBRIS or type_ == xyd.ItemType.DRESS_DEBRIS then
 		self.progress:SetActive(true)
 
-		local type_ = ItemTable:getType(itemID)
 		local partnerCost = ItemTable:partnerCost(itemID)
 
 		if type_ == xyd.ItemType.ARTIFACT_DEBRIS or type_ == xyd.ItemType.DRESS_DEBRIS then
@@ -77,6 +77,7 @@ function BackpackItem:update(index, realIndex, info)
 			self.itemIcon:setInfo({
 				itemID = itemID,
 				num = itemNum,
+				itemNum = itemNum,
 				wndType = xyd.ItemTipsWndType.BACKPACK
 			})
 			self.itemIcon:setNum()
@@ -176,14 +177,16 @@ local CommonTabBar = import("app.common.ui.CommonTabBar")
 local TabName = {
 	"EQUIP",
 	"ITEM",
-	"DEBRIS",
+	"CONSUMABLES",
 	"ARTIFACT"
 }
 local TabName2 = {
 	"NO_EQUIP",
 	"NO_ITEM",
-	"NO_DEBRIS",
-	"NO_ARTIFACT"
+	"NO_CONSUMABLES",
+	"NO_ARTIFACT",
+	nil,
+	"NO_CONSUMABLES"
 }
 
 function BackpackWindow:ctor(name, params)
@@ -202,7 +205,9 @@ function BackpackWindow:ctor(name, params)
 	self.is_ITEM_first_data = true
 	self.is_ARTIFACT_first_data = true
 	self.is_DEBRIS_first_data = true
+	self.is_CONSUMABLES_first_data = true
 	self.sortType = 0
+	self.sortType2 = 0
 end
 
 function BackpackWindow:initWindow()
@@ -231,13 +236,20 @@ end
 
 function BackpackWindow:registerEvent()
 	self.tab = CommonTabBar.new(self.nav, 4, function (index)
-		self:onTabTouch(index)
+		local helpArr = {
+			xyd.BackpackShowType.EQUIP,
+			xyd.BackpackShowType.ITEM,
+			xyd.BackpackShowType.CONSUMABLES,
+			xyd.BackpackShowType.ARTIFACT
+		}
+
+		self:onTabTouch(helpArr[index])
 	end)
 
 	self.tab:setTexts({
 		__("EQUIP"),
 		__("ITEM"),
-		__("DEBRIS"),
+		__("CONSUMABLES"),
 		__("ARTIFACT")
 	})
 
@@ -250,6 +262,9 @@ function BackpackWindow:registerEvent()
 	xyd.setDarkenBtnBehavior(self.btnSmith_, self, self.onSmithyTouch)
 	xyd.setDarkenBtnBehavior(self.btnArtifactList_, self, self.onArtifactListTouch)
 	xyd.setDarkenBtnBehavior(self.btnSort_, self, self.onSortTouch)
+	xyd.setDarkenBtnBehavior(self.btnSort2_, self, function ()
+		self:onSortTouch(xyd.BackpackShowType.CONSUMABLES)
+	end)
 	self.eventProxy_:addEventListener(xyd.event.SUMMON, handler(self, self.summonCallback))
 	self.eventProxy_:addEventListener(xyd.event.SUMMON_WISH, handler(self, self.summonCallback))
 	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, handler(self, self.onItemChange))
@@ -263,8 +278,8 @@ function BackpackWindow:getUIComponent()
 	self.bottomBtns_ = go:NodeByName("groupMain/bottomBtns_").gameObject
 	self.groupNone_ = go:NodeByName("groupMain/groupNone_").gameObject
 	self.labelNoneTips_ = go:ComponentByName("groupMain/groupNone_/labelNoneTips_", typeof(UILabel))
-	self.imgDebrisRed_ = go:ComponentByName("groupMain/top/imgDebrisRed_", typeof(UISprite))
-	self.imgDebrisRed2_ = go:ComponentByName("groupMain/top/imgDebrisRed2_", typeof(UISprite))
+	self.imgTab3Red_ = go:ComponentByName("groupMain/top/imgTab3Red_", typeof(UISprite))
+	self.imgTab3Red2_ = go:ComponentByName("groupMain/top/imgTab3Red2_", typeof(UISprite))
 	local btnCircles = self.bottomBtns_:NodeByName("btnCircles").gameObject
 
 	for i = 1, 7 do
@@ -280,8 +295,17 @@ function BackpackWindow:getUIComponent()
 	self.btnSortLabel_ = self.btnSort_:ComponentByName("button_label", typeof(UILabel))
 	self.chooseGroup = self.btnSortGroup_:NodeByName("chooseGroup").gameObject
 
-	for i = 0, 4 do
+	for i = 0, 3 do
 		self["sort" .. tostring(i)] = self.chooseGroup:NodeByName("sort" .. i).gameObject
+	end
+
+	self.btnSortGroup2_ = self.bottomBtns_:NodeByName("btnSortGroup2_").gameObject
+	self.btnSort2_ = self.btnSortGroup2_:NodeByName("btnSort_").gameObject
+	self.btnSortLabel2_ = self.btnSort2_:ComponentByName("button_label", typeof(UILabel))
+	self.chooseGroup2 = self.btnSortGroup2_:NodeByName("chooseGroup").gameObject
+
+	for i = 0, 6 do
+		self["sortConsumables" .. tostring(i)] = self.chooseGroup2:NodeByName("sort" .. i).gameObject
 	end
 
 	self.btnQualityChosen = btnCircles:NodeByName("btnQualityChosen").gameObject
@@ -303,6 +327,12 @@ function BackpackWindow:initUIComponent()
 		self.btnSortLabel_.transform:X(-10)
 	end
 
+	self.btnSortLabel2_.text = __("ALTAR_FILTER_TEXT")
+
+	if xyd.Global.lang == "de_de" or xyd.Global.lang == "fr_fr" then
+		self.btnSortLabel2_.transform:X(-10)
+	end
+
 	self:initQuality()
 	self:initSortBtn()
 end
@@ -312,12 +342,7 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 
 	self.showBagType = i
 
-	if self.showBagType == xyd.BackpackShowType.DEBRIS then
-		self.wrapContent_:setItemSize(154)
-	else
-		self.wrapContent_:setItemSize(132)
-	end
-
+	self.wrapContent_:setItemSize(132)
 	xyd.SoundManager.get():playSound(xyd.SoundID.TAB)
 
 	local showBgTabNum = self.showQuality
@@ -331,26 +356,29 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 		self.btnSmith_:SetActive(true)
 		self.btnArtifactList_:SetActive(false)
 		self.btnSortGroup_:SetActive(false)
+		self.btnSortGroup2_:SetActive(false)
 		self.bottomBtns_:SetActive(true)
 		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
 	elseif self.showBagType == xyd.BackpackShowType.ARTIFACT then
 		self.btnSmith_:SetActive(false)
 		self.btnArtifactList_:SetActive(true)
 		self.btnSortGroup_:SetActive(false)
+		self.btnSortGroup2_:SetActive(false)
 		self.bottomBtns_:SetActive(true)
 		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
 	elseif self.showBagType == xyd.BackpackShowType.ITEM then
 		self.btnSmith_:SetActive(false)
 		self.btnArtifactList_:SetActive(false)
-		self.btnSortGroup_:SetActive(true)
 		self.bottomBtns_:SetActive(true)
+		self.btnSortGroup_:SetActive(true)
+		self.btnSortGroup2_:SetActive(false)
 		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
 
 		local alertTime = xyd.db.misc:getValue("backpack_over_item_alert")
 		local overItem = xyd.models.backpack:checkOverItem()
 
 		if overItem and (not alertTime or not xyd.isSameDay(alertTime, xyd.getServerTime())) then
-			self.imgDebrisRed2_:SetActive(false)
+			self.imgTab3Red2_:SetActive(false)
 
 			local itemList = xyd.models.backpack:getOverItems()
 
@@ -365,10 +393,18 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 				value = xyd.getServerTime()
 			})
 		end
+	elseif self.showBagType == xyd.BackpackShowType.CONSUMABLES then
+		self.btnSmith_:SetActive(false)
+		self.btnArtifactList_:SetActive(false)
+		self.bottomBtns_:SetActive(true)
+		self.btnSortGroup_:SetActive(false)
+		self.btnSortGroup2_:SetActive(true)
+		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
 	else
 		self.btnSmith_:SetActive(false)
 		self.btnArtifactList_:SetActive(false)
 		self.btnSortGroup_:SetActive(false)
+		self.btnSortGroup2_:SetActive(false)
 		self.bottomBtns_:SetActive(false)
 		self.scrollPanel:SetBottomAnchor(self.window_, 0, 126)
 
@@ -441,7 +477,7 @@ end
 
 function BackpackWindow:initData(index)
 	if index == nil then
-		for i = 0, 4 do
+		for i = 0, 6 do
 			self.items_[i] = {}
 
 			for j = 0, 7 do
@@ -457,19 +493,18 @@ function BackpackWindow:initData(index)
 	end
 
 	if not xyd.checkRedMarkSetting(xyd.RedMarkType.BACKPACK) then
-		self.imgDebrisRed_:SetActive(false)
+		self.imgTab3Red_:SetActive(false)
 	else
-		local datas_DEBRIS = xyd.models.backpack:getItems_withBagType(xyd.BackpackShowType.DEBRIS)
-		local canCompose = xyd.models.backpack:checkCanCompose()
+		local canCompose = xyd.models.backpack:checkCanCompose(xyd.BackpackShowType.CONSUMABLES)
 
-		self.imgDebrisRed_:SetActive(canCompose)
+		self.imgTab3Red_:SetActive(canCompose)
 	end
 
 	local alertTime = xyd.db.misc:getValue("backpack_over_item_alert")
 	local overItem = xyd.models.backpack:checkOverItem()
 
 	if overItem and (not alertTime or not xyd.isSameDay(alertTime, xyd.getServerTime())) then
-		self.imgDebrisRed2_:SetActive(true)
+		self.imgTab3Red2_:SetActive(true)
 	end
 
 	if index == nil then
@@ -498,11 +533,11 @@ function BackpackWindow:dataCheck(index)
 
 		isretun = false
 		self.is_ARTIFACT_first_data = false
-	elseif self.is_DEBRIS_first_data == true and index == xyd.BackpackShowType.DEBRIS then
-		self:sortDebris(tmpDatas or {})
+	elseif self.is_CONSUMABLES_first_data == true and index == xyd.BackpackShowType.CONSUMABLES then
+		self:sortConsumables(tmpDatas or {})
 
 		isretun = false
-		self.is_DEBRIS_first_data = false
+		self.is_CONSUMABLES_first_data = false
 	end
 
 	if isretun then
@@ -521,7 +556,7 @@ end
 function BackpackWindow:getInfos()
 	local quality = xyd.QualityColor.ALL
 
-	if self.showBagType == xyd.BackpackShowType.EQUIP or self.showBagType == xyd.BackpackShowType.ARTIFACT or self.showBagType == xyd.BackpackShowType.ITEM then
+	if self.showBagType == xyd.BackpackShowType.EQUIP or self.showBagType == xyd.BackpackShowType.ARTIFACT or self.showBagType == xyd.BackpackShowType.ITEM or self.showBagType == xyd.BackpackShowType.CONSUMABLES then
 		quality = self.showQuality
 	end
 
@@ -532,6 +567,16 @@ function BackpackWindow:getInfos()
 
 		for _, item in ipairs(items[quality]) do
 			if xyd.tables.itemTable:getFilterType(item.itemID) == self.sortType then
+				table.insert(filterItems, item)
+			end
+		end
+
+		return filterItems
+	elseif self.showBagType == xyd.BackpackShowType.CONSUMABLES and self.sortType2 and self.sortType2 > 0 then
+		local filterItems = {}
+
+		for _, item in ipairs(items[quality]) do
+			if xyd.tables.itemTable:getFilterType(item.itemID) == self.sortType2 then
 				table.insert(filterItems, item)
 			end
 		end
@@ -684,8 +729,8 @@ function BackpackWindow:onItemChange(event)
 	local flags = {
 		[xyd.BackpackShowType.EQUIP] = false,
 		[xyd.BackpackShowType.ITEM] = false,
-		[xyd.BackpackShowType.DEBRIS] = false,
-		[xyd.BackpackShowType.ARTIFACT] = false
+		[xyd.BackpackShowType.ARTIFACT] = false,
+		[xyd.BackpackShowType.CONSUMABLES] = false
 	}
 
 	for i = 1, #items do
@@ -705,8 +750,8 @@ function BackpackWindow:onItemChange(event)
 				self.is_ITEM_first_data = true
 			elseif type == xyd.BackpackShowType.ARTIFACT then
 				self.is_ARTIFACT_first_data = true
-			elseif type == xyd.BackpackShowType.DEBRIS then
-				self.is_DEBRIS_first_data = true
+			elseif type == xyd.BackpackShowType.CONSUMABLES then
+				self.is_CONSUMABLES_first_data = true
 			end
 
 			self:initData(type)
@@ -768,63 +813,37 @@ function BackpackWindow:sortArtifact(data)
 	end)
 end
 
-function BackpackWindow:sortDebris(data)
+function BackpackWindow:sortConsumables(data)
 	table.sort(data, function (a, b)
-		local aType = ItemTable:getType(a.itemID)
-		local bType = ItemTable:getType(b.itemID)
-
-		if aType == bType then
-			if aType == xyd.ItemType.ARTIFACT_DEBRIS then
-				return b.itemID < a.itemID
-			elseif aType == xyd.ItemType.DRESS_DEBRIS then
-				return b.itemID < a.itemID
-			elseif aType == xyd.ItemType.HERO_RANDOM_DEBRIS then
-				local aCost = ItemTable:partnerCost(a.itemID)
-				local bCost = ItemTable:partnerCost(b.itemID)
-
-				if bCost[2] < aCost[2] then
-					return true
-				elseif aCost[2] == bCost[2] then
-					local aGroup = ItemTable:getGroup(a.itemID)
-					local bGroup = ItemTable:getGroup(b.itemID)
-
-					return aGroup < bGroup
-				end
-			elseif aType == xyd.ItemType.HERO_DEBRIS then
-				local aCost = ItemTable:partnerCost(a.itemID)
-				local bCost = ItemTable:partnerCost(b.itemID)
-				local aVal = 0
-				local bVal = 0
-				aVal = xyd.checkCondition(a.itemNum < aCost[2], 0, 1000)
-				bVal = xyd.checkCondition(b.itemNum < bCost[2], 0, 1000)
-				local starA = PartnerTable:getStar(aCost[1])
-				local starB = PartnerTable:getStar(bCost[1])
-				aVal = aVal + xyd.checkCondition(starB < starA, 100, 0)
-				bVal = bVal + xyd.checkCondition(starA < starB, 100, 0)
-				local groupA = PartnerTable:getGroup(aCost[1])
-				local groupB = PartnerTable:getGroup(bCost[1])
-				aVal = aVal + xyd.checkCondition(groupB < groupA, 10, 0)
-				bVal = bVal + xyd.checkCondition(groupA < groupB, 10, 0)
-				aVal = aVal + xyd.checkCondition(bCost[1] < aCost[1], 1, 0)
-				bVal = bVal + xyd.checkCondition(aCost[1] < bCost[1], 1, 0)
-
-				return aVal > bVal
-			end
-		elseif aType == xyd.ItemType.ARTIFACT_DEBRIS then
-			return true
-		elseif bType == xyd.ItemType.ARTIFACT_DEBRIS then
-			return false
-		elseif aType == xyd.ItemType.DRESS_DEBRIS then
-			return true
-		elseif bType == xyd.ItemType.DRESS_DEBRIS then
-			return false
-		elseif aType == xyd.ItemType.HERO_RANDOM_DEBRIS then
-			return true
-		else
+		if a == nil or b == nil then
 			return false
 		end
 
-		return false
+		local aSortForward = ItemTable:getSortForward(a.itemID)
+		local bSortForward = ItemTable:getSortForward(b.itemID)
+
+		if aSortForward == 0 then
+			aSortForward = 99999
+		end
+
+		if bSortForward == 0 then
+			bSortForward = 99999
+		end
+
+		if aSortForward ~= bSortForward then
+			return aSortForward < bSortForward
+		else
+			local aQlt = ItemTable:getQuality(a.itemID)
+			local bQlt = ItemTable:getQuality(b.itemID)
+
+			if bQlt < aQlt then
+				return true
+			elseif aQlt == bQlt and b.itemID < a.itemID then
+				return true
+			else
+				return false
+			end
+		end
 	end)
 end
 
@@ -866,7 +885,7 @@ end
 function BackpackWindow:initSortBtn()
 	local ItemFilterTypeTextTable = xyd.tables.itemFilterTypeTextTable
 
-	for i = 0, 4 do
+	for i = 0, 3 do
 		local sortBtn = self["sort" .. i]
 		sortBtn:ComponentByName("label", typeof(UILabel)).text = ItemFilterTypeTextTable:getDesc(i) or __("HOUSE_TEXT_13")
 
@@ -874,10 +893,37 @@ function BackpackWindow:initSortBtn()
 			self:onSortSelectTouch(i)
 		end
 	end
+
+	local consomablesFilterTypeTextTable = xyd.tables.itemFilterTypeTextTable
+
+	for i = 0, 6 do
+		local sortBtn = self["sortConsumables" .. i]
+
+		if i > 0 then
+			sortBtn:ComponentByName("label", typeof(UILabel)).text = ItemFilterTypeTextTable:getDesc(i + 4) or __("HOUSE_TEXT_13")
+		else
+			sortBtn:ComponentByName("label", typeof(UILabel)).text = __("HOUSE_TEXT_13")
+		end
+
+		UIEventListener.Get(sortBtn).onClick = function ()
+			self:onSortSelectTouch(i, xyd.BackpackShowType.CONSUMABLES)
+		end
+	end
 end
 
-function BackpackWindow:onSortSelectTouch(index)
-	if self.sortType ~= index then
+function BackpackWindow:onSortSelectTouch(index, type)
+	if type and type == xyd.BackpackShowType.CONSUMABLES then
+		if self.sortType2 ~= index then
+			self.sortType2 = index
+
+			self:updateSortChosen(type)
+			self:onSortTouch(type)
+
+			local infos = self:getInfos()
+
+			self.wrapContent_:setInfos(infos, {})
+		end
+	elseif self.sortType ~= index then
 		self.sortType = index
 
 		self:updateSortChosen()
@@ -889,55 +935,101 @@ function BackpackWindow:onSortSelectTouch(index)
 	end
 end
 
-function BackpackWindow:onSortTouch()
-	self:updateSortChosen()
+function BackpackWindow:onSortTouch(type)
+	if type and type == xyd.BackpackShowType.CONSUMABLES then
+		self:updateSortChosen(type)
 
-	local arrow = self.btnSort_:NodeByName("arrow").gameObject
-	local scale = arrow.transform.localScale
+		local arrow = self.btnSort2_:NodeByName("arrow").gameObject
+		local scale = arrow.transform.localScale
 
-	arrow.transform:SetLocalScale(scale.x, -1 * scale.y, scale.z)
+		arrow.transform:SetLocalScale(scale.x, -1 * scale.y, scale.z)
 
-	arrow.transform.localEulerAngles = -arrow.transform.localEulerAngles
+		arrow.transform.localEulerAngles = -arrow.transform.localEulerAngles
 
-	self:moveGroupSort()
+		self:moveGroupSort(type)
+	else
+		self:updateSortChosen()
+
+		local arrow = self.btnSort_:NodeByName("arrow").gameObject
+		local scale = arrow.transform.localScale
+
+		arrow.transform:SetLocalScale(scale.x, -1 * scale.y, scale.z)
+
+		arrow.transform.localEulerAngles = -arrow.transform.localEulerAngles
+
+		self:moveGroupSort()
+	end
 end
 
-function BackpackWindow:updateSortChosen()
-	for i = 0, 4 do
-		local sort = self["sort" .. tostring(i)]
-		local btn = sort:GetComponent(typeof(UIButton))
-		local label = sort:ComponentByName("label", typeof(UILabel))
+function BackpackWindow:updateSortChosen(type)
+	if type and type == xyd.BackpackShowType.CONSUMABLES then
+		for i = 0, 6 do
+			local sort = self["sortConsumables" .. tostring(i)]
+			local btn = sort:GetComponent(typeof(UIButton))
+			local label = sort:ComponentByName("label", typeof(UILabel))
 
-		if i == self.sortType then
-			btn:SetEnabled(false)
+			if i == self.sortType2 then
+				btn:SetEnabled(false)
 
-			label.color = Color.New2(4294967295.0)
-			label.effectStyle = UILabel.Effect.Outline
-			label.effectColor = Color.New2(1012112383)
-		else
-			btn:SetEnabled(true)
+				label.color = Color.New2(4294967295.0)
+				label.effectStyle = UILabel.Effect.Outline
+				label.effectColor = Color.New2(1012112383)
+			else
+				btn:SetEnabled(true)
 
-			label.color = Color.New2(960513791)
-			label.effectStyle = UILabel.Effect.None
+				label.color = Color.New2(960513791)
+				label.effectStyle = UILabel.Effect.None
+			end
+		end
+	else
+		for i = 0, 3 do
+			local sort = self["sort" .. tostring(i)]
+			local btn = sort:GetComponent(typeof(UIButton))
+			local label = sort:ComponentByName("label", typeof(UILabel))
+
+			if i == self.sortType then
+				btn:SetEnabled(false)
+
+				label.color = Color.New2(4294967295.0)
+				label.effectStyle = UILabel.Effect.Outline
+				label.effectColor = Color.New2(1012112383)
+			else
+				btn:SetEnabled(true)
+
+				label.color = Color.New2(960513791)
+				label.effectStyle = UILabel.Effect.None
+			end
 		end
 	end
 end
 
-function BackpackWindow:moveGroupSort()
-	local w = self.chooseGroup:GetComponent(typeof(UIWidget))
-	local height = w.height
-	local transform = self.chooseGroup.transform
+function BackpackWindow:moveGroupSort(type)
+	local w, transform = nil
 	local action = DG.Tweening.DOTween.Sequence()
-	local arrow = self.btnSort_:NodeByName("arrow").gameObject
+	local arrow, chooseGroup = nil
+
+	if type and type == xyd.BackpackShowType.CONSUMABLES then
+		w = self.chooseGroup2:GetComponent(typeof(UIWidget))
+		transform = self.chooseGroup2.transform
+		arrow = self.btnSort2_:NodeByName("arrow").gameObject
+		chooseGroup = self.chooseGroup2
+	else
+		w = self.chooseGroup:GetComponent(typeof(UIWidget))
+		transform = self.chooseGroup.transform
+		arrow = self.btnSort_:NodeByName("arrow").gameObject
+		chooseGroup = self.chooseGroup
+	end
+
+	local height = w.height
 	local scaleY = arrow.transform.localScale.y
 
 	if scaleY == 1 then
 		action:Append(transform:DOLocalMove(Vector3(0, height + 17, 0), 0.067)):Append(transform:DOLocalMove(Vector3(0, height - 58, 0), 0.1)):Join(xyd.getTweenAlpha(w, 0.01, 0.1)):AppendCallback(function ()
-			self.chooseGroup:SetActive(false)
+			chooseGroup:SetActive(false)
 			transform:SetLocalPosition(0, 0, 0)
 		end)
 	else
-		self.chooseGroup:SetActive(true)
+		chooseGroup:SetActive(true)
 
 		w.alpha = 0.01
 

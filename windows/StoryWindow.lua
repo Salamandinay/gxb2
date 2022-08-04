@@ -450,7 +450,7 @@ function StoryWindow:onSkipTouch()
 		end
 
 		if yes then
-			if self.storyType_ == xyd.StoryType.OTHER or self.storyType_ == xyd.StoryType.PARTNER or self.storyType_ == xyd.StoryType.ACTIVITY then
+			if (self.storyType_ == xyd.StoryType.OTHER or self.storyType_ == xyd.StoryType.PARTNER or self.storyType_ == xyd.StoryType.ACTIVITY) and self.storyID_ then
 				local msg = messages_pb:log_partner_data_touch_req()
 				msg.touch_id = xyd.DaDian.STORY_SKIP
 				msg.desc = self.storyID_ .. "," .. self.storyType_

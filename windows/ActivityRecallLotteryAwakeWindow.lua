@@ -60,15 +60,18 @@ function ActivityRecallLotteryAwakeWindow:initUIComponent()
 	local windowBG = self.window_.transform:NodeByName("WINDOWBG"):GetComponent(typeof(UISprite))
 	windowBG.color = Color.New2(204)
 
-	self.award3:NodeByName("imgIcon").gameObject:SetActive(false)
+	for i = 1, 3 do
+		self["award" .. i]:NodeByName("imgIcon").gameObject:SetActive(false)
+		self["award" .. i]:ComponentByName("labelNum", typeof(UILabel)):SetActive(true)
 
-	self.award3Icon = xyd.getItemIcon({
-		scale = 0.5185185185185185,
-		itemID = 930219,
-		num = 50,
-		noClick = true,
-		uiRoot = self.award3.gameObject
-	})
+		self["award" .. i]:ComponentByName("labelNum", typeof(UILabel)).text = "x" .. xyd.tables.activityVampireGrowTable:getAward(i)[1][2]
+		self["award" .. i .. "Icon"] = xyd.getItemIcon({
+			noClick = true,
+			scale = 0.5185185185185185,
+			uiRoot = self["award" .. i].gameObject,
+			itemID = xyd.tables.activityVampireGrowTable:getAward(i)[1][1]
+		})
+	end
 
 	self:updateAwards()
 	self:initModel()

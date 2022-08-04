@@ -352,8 +352,7 @@ function Arena3v3RecordDetailWindow:onRecordDetail(event)
 end
 
 function Arena3v3RecordDetailWindow:onGetAllServerReport(event)
-	local data = xyd.decodeProtoBuf(event.data)
-	self.reportsInfo = data.reports
+	self.reportsInfo = event.data.reports
 
 	NGUITools.DestroyChildren(self.gContainer.transform)
 

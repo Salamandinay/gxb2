@@ -581,6 +581,7 @@ function ActivitySportsGuessItem:update(_, _, info)
 
 	self.labelTips_.text = self.data.dateStr
 	local awardArr = xyd.tables.miscTable:split2Cost("activity_warmup_arena_guess_award", "value", "|#")
+	local costArr = xyd.tables.miscTable:split2Cost("activity_warmup_arena_guess_cost", "value", "|#")
 
 	if guessOk then
 		xyd.setUISpriteAsync(self.imgIsHit_, nil, "arena_as_win_" .. xyd.Global.lang)
@@ -597,8 +598,8 @@ function ActivitySportsGuessItem:update(_, _, info)
 	if guessOk then
 		manaStr = "+" .. tostring(xyd.getRoughDisplayNumber(awardArr[math.abs(self.data.selfBet)][2]))
 		self.labelMana_.color = Color.New2(227172351)
-	elseif awardArr[math.abs(self.data.selfBet)] and awardArr[math.abs(self.data.selfBet)][2] then
-		manaStr = "-" .. tostring(xyd.getRoughDisplayNumber(awardArr[math.abs(self.data.selfBet)][2]))
+	elseif costArr[math.abs(self.data.selfBet)] and costArr[math.abs(self.data.selfBet)][2] then
+		manaStr = "-" .. tostring(xyd.getRoughDisplayNumber(costArr[math.abs(self.data.selfBet)][2]))
 	else
 		manaStr = "0"
 		self.labelMana_.color = Color.New2(3865139711.0)

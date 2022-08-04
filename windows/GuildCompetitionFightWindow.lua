@@ -5,6 +5,7 @@ local HeroIcon = import("app.components.HeroIcon")
 local Partner = import("app.models.Partner")
 local NewSkillIcon = import("app.components.NewSkillIcon")
 local skillDetail = import("app.components.NewSkillIconWayAlert")
+local GuildCompetitionChallengeGroup = import("app.components.GuildCompetitionChallengeGroup")
 
 function GuildCompetitionFightWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -18,15 +19,6 @@ function GuildCompetitionFightWindow:ctor(name, params)
 	self.info = params.info
 	self.bossIndex = params.bossIndex
 	self.roundIndex = params.roundIndex
-end
-
-function GuildCompetitionFightWindow:initWindow()
-	GuildCompetitionFightWindow.super.initWindow(self)
-	self:getUIComponents()
-	self:register()
-	self:layout()
-	self:updateUI()
-	self:updateGuildCompetitionTime()
 end
 
 function GuildCompetitionFightWindow:getUIComponents()
@@ -77,6 +69,32 @@ function GuildCompetitionFightWindow:getUIComponents()
 	self.timeCon_UILayout = self.downCon:ComponentByName("timeCon", typeof(UILayout))
 	self.timeText = self.timeCon:ComponentByName("timeText", typeof(UILabel))
 	self.endText = self.timeCon:ComponentByName("endText", typeof(UILabel))
+	self.studyBtn = self.downCon:NodeByName("studyBtn").gameObject
+	self.studyBtnText = self.studyBtn:ComponentByName("studyBtnText", typeof(UILabel))
+end
+
+function GuildCompetitionFightWindow:initWindow()
+	GuildCompetitionFightWindow.super.initWindow(self)
+	self:getUIComponents()
+	self:register()
+	self:layout()
+	self:updateUI()
+	self:updateGuildCompetitionTime()
+	self:initTargetGroup()
+	self:checkTipsShow()
+end
+
+function GuildCompetitionFightWindow:initTargetGroup()
+	local bossTable = xyd.tables.guildCompetitionBossTable
+	local targetArr = bossTable["getBattleChallenge" .. self.bossIndex](bossTable, self.roundIndex)
+	local params = {
+		isHasStar = false,
+		targetArr = targetArr
+	}
+	self.targetGroup = GuildCompetitionChallengeGroup.new(self.groupAction.gameObject, params)
+
+	self.groupAction:Y(104)
+	self.targetGroup:getGameObject():Y(-443)
 end
 
 function GuildCompetitionFightWindow:updateGuildCompetitionTime()
@@ -171,6 +189,9 @@ function GuildCompetitionFightWindow:register()
 
 		xyd.Backend.get():request(xyd.mid.GUILD_COMPETITION_BOSS_RANK, msg)
 	end)
+	UIEventListener.Get(self.studyBtn.gameObject).onClick = handler(self, function ()
+		xyd.WindowManager.get():openWindow("guild_competition_partner_study_window", {})
+	end)
 
 	self.eventProxy_:addEventListener(xyd.event.GUILD_COMPETITION_BOSS_RANK, handler(self, function (__, event)
 		local data = xyd.decodeProtoBuf(event.data)
@@ -194,6 +215,7 @@ function GuildCompetitionFightWindow:layout()
 	self.rewardText.text = __("GUILD_BOSS_AWARD_2")
 	self.canChallengeText.text = __("GUILD_COMPETITION_BOSS_LIMIT")
 	self.labelPreviewTitle_.text = __("DUNGEON_MONSTER_PREVIEW")
+	self.studyBtnText.text = __("GUILD_COMPETITION_PARTNER_TITLE")
 
 	while true do
 		if self.canChallengeText.width <= 250 then
@@ -412,6 +434,67 @@ end
 function GuildCompetitionFightWindow:hideEffect()
 	if self.effect_ then
 		self.effect_:SetActive(false)
+	end
+end
+
+function GuildCompetitionFightWindow:checkTipsShow()
+	local timeData = xyd.models.guild:getGuildCompetitionLeftTime()
+
+	if timeData.type ~= 2 then
+		return
+	end
+
+	local lastTipsTime = xyd.db.misc:getValue("guild_competition_boss_high_tips")
+
+	if lastTipsTime then
+		lastTipsTime = tonumber(lastTipsTime)
+		local guildCompetitionData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_COMPETITION)
+
+		if lastTipsTime < guildCompetitionData:startTime() or guildCompetitionData:getEndTime() <= lastTipsTime then
+			for i = 1, 3 do
+				xyd.db.misc:setValue({
+					value = 0,
+					key = "guild_competition_boss_high_tips_with_boss_" .. i
+				})
+			end
+
+			xyd.db.misc:setValue({
+				key = "guild_competition_boss_high_tips",
+				value = xyd.getServerTime()
+			})
+		end
+	else
+		for i = 1, 3 do
+			xyd.db.misc:setValue({
+				value = 0,
+				key = "guild_competition_boss_high_tips_with_boss_" .. i
+			})
+		end
+
+		xyd.db.misc:setValue({
+			key = "guild_competition_boss_high_tips",
+			value = xyd.getServerTime()
+		})
+	end
+
+	local bossTable = xyd.tables.guildCompetitionBossTable
+	local isTips = bossTable["getSkillTips" .. self.bossIndex](bossTable, self.roundIndex)
+
+	if isTips and isTips > 0 then
+		local lastCheckTipsRound = 0
+		local localCheckTipsRound = xyd.db.misc:getValue("guild_competition_boss_high_tips_with_boss_" .. self.bossIndex)
+
+		if localCheckTipsRound then
+			lastCheckTipsRound = tonumber(localCheckTipsRound)
+		end
+
+		if lastCheckTipsRound < self.roundIndex then
+			xyd.alertConfirm(__("GUILD_COMPETITION_SKILL_TIPS"), nil, __("SURE"))
+			xyd.db.misc:setValue({
+				key = "guild_competition_boss_high_tips_with_boss_" .. self.bossIndex,
+				value = self.roundIndex
+			})
+		end
 	end
 end
 

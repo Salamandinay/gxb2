@@ -437,7 +437,7 @@ function PetListItem:detailTouch()
 	xyd.WindowManager.get():openWindow("pet_detail_window", {
 		pet_id = self.id
 	})
-	xyd.WindowManager.get():closeWindow("pet_window")
+	xyd.WindowManager.get():closeWindow("pet_window", nil, , true)
 end
 
 function PetListItem:showActiveEffect()

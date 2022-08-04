@@ -97,6 +97,7 @@ function ModelManager:ctor()
 	metatable.shrineHurdleModel = "app.models.ShrineHurdleModel"
 	metatable.gameAssistant = "app.models.GameAssistant"
 	metatable.quickFormation = "app.models.QuickFormation"
+	metatable.growthDiary = "app.models.GrowthDiary"
 end
 
 function ModelManager:reset()

@@ -1647,15 +1647,16 @@ function Arena3v3BattleFormationWindow:willClose()
 
 	if self.chooseGroup then
 		self.chooseGroup:SetActive(false)
-		NGUITools.DestroyChildren(self.chooseGroup.transform)
-		NGUITools.Destroy(self.chooseGroup)
 	end
 
 	if self.callback then
 		self:callback()
 	end
 
-	self.chooseGroup:SetActive(false)
+	if not tolua.isnull(self.window_) then
+		self.chooseGroup:SetActive(false)
+	end
+
 	self.delayGroup:SetActive(false)
 end
 

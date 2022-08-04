@@ -761,11 +761,14 @@ function ActivitySandShopLayerItem:initUI()
 			if xyd.models.backpack:getItemNumByID(cost[1]) < cost[2] then
 				xyd.showToast(__("NOT_ENOUGH", xyd.tables.itemTextTable:getName(cost[1])))
 			else
+				local buyTimes = self.parent.activityData.detail_.buy_times[self.data[i]]
+				local limit = xyd.tables.activitySandShopTable:getLimit(self.data[i]) - buyTimes
+
 				xyd.WindowManager.get():openWindow("item_buy_window", {
 					hide_min_max = false,
 					item_no_click = false,
 					cost = cost,
-					max_num = self.leftTime,
+					max_num = limit,
 					itemParams = {
 						itemID = xyd.tables.activitySandShopTable:getAwards(self.data[i])[1],
 						num = xyd.tables.activitySandShopTable:getAwards(self.data[i])[2]
@@ -835,7 +838,6 @@ function ActivitySandShopLayerItem:refresh()
 
 			local buyTimes = self.parent.activityData.detail_.buy_times[self.data[i]]
 			local limit = xyd.tables.activitySandShopTable:getLimit(self.data[i]) - buyTimes
-			self.leftTime = limit
 			self["labelLimit" .. i].text = __("BUY_GIFTBAG_LIMIT", limit)
 
 			if limit <= 0 then

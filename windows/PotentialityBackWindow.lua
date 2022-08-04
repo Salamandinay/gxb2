@@ -1,6 +1,7 @@
 local PotentialityBackWindow = class("PotentialityBackWindow", import(".BaseWindow"))
 local PotentialityBackWindowItem = class("PotentialityBackWindowItem", import("app.components.CopyComponent"))
 local HeroIcon = import("app.components.HeroIcon")
+local json = require("cjson")
 
 function PotentialityBackWindow:ctor(name, params)
 	PotentialityBackWindow.super.ctor(self, name, params)
@@ -8,6 +9,7 @@ function PotentialityBackWindow:ctor(name, params)
 	self.partner_ = params.partner
 	self.will_summon = 0
 	self.item_cost_ = tonumber(xyd.tables.miscTable:split2Cost("activity_10_replace_cost", "value", "#")[2])
+	self.freeActivity = params.freeActivity
 end
 
 function PotentialityBackWindow:initWindow()
@@ -46,12 +48,25 @@ function PotentialityBackWindow:layoutUI()
 	end
 
 	UIEventListener.Get(self.helpBtn_).onClick = function ()
-		xyd.WindowManager.get():openWindow("help_window", {
-			key = self.name_ .. "_HELP"
-		})
+		if self.freeActivity then
+			xyd.WindowManager.get():openWindow("help_window", {
+				key = "ACTIVITY_FREE_REVERT_TEXT04"
+			})
+		else
+			xyd.WindowManager.get():openWindow("help_window", {
+				key = self.name_ .. "_HELP"
+			})
+		end
 	end
 
 	self.eventProxy_:addEventListener(xyd.event.ROLLBACK_PARTNER, function ()
+		xyd.WindowManager.get():closeWindow(self.name_)
+	end)
+	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, function (event)
+		if event.data.activity_id ~= xyd.ActivityID.ACTIVITY_FREE_REVERGE then
+			return
+		end
+
 		xyd.WindowManager.get():closeWindow(self.name_)
 	end)
 
@@ -77,7 +92,7 @@ function PotentialityBackWindow:layoutUI()
 	local backBtnLabel = self.backBtn_:ComponentByName("label", typeof(UILabel))
 	local cost = xyd.tables.partnerReturnRule2Table:getCost(star)
 
-	if cost == nil or cost == 0 or cost[1] == 0 then
+	if cost == nil or cost == 0 or cost[1] == 0 or self.freeActivity then
 		needIcon:SetActive(false)
 		backBtnLabel:X(0)
 	else
@@ -91,7 +106,12 @@ function PotentialityBackWindow:layoutUI()
 
 	local partnerID = self.partner_:getPartnerID()
 	local partners = nil
-	partners, self.will_summon = xyd.tables.partnerReturnRule2Table:getReturnPartnerByPartner(self.partner_)
+
+	if self.freeActivity then
+		partners, self.will_summon = xyd.tables.activityFreeRevertTable:getReturnPartnerByPartner(self.partner_)
+	else
+		partners, self.will_summon = xyd.tables.partnerReturnRule2Table:getReturnPartnerByPartner(self.partner_)
+	end
 
 	if not self.previewItemIcons then
 		self.previewItemIcons = {}
@@ -131,10 +151,8 @@ function PotentialityBackWindow:layoutUI()
 			if star == 6 then
 				local data = xyd.tables.partnerReturnRule2Table:getReturnPartnerInfo(partnerID)
 
-				for _, v in ipairs(data) do
-					if v[1][1] and v[1][1] == partners[i].table_id and v[2][2] and v[2][2] > 0 then
-						star = star + v[2][2]
-					end
+				if data and data[i] and data[i][1] and data[i][1][1] and data[i][1][1] == partners[i].table_id and data[i][2][2] and data[i][2][2] > 0 then
+					star = star + data[i][2][2]
 				end
 
 				params.star = star
@@ -151,7 +169,12 @@ function PotentialityBackWindow:layoutUI()
 	end
 
 	local items = {}
-	local items = xyd.tables.partnerReturnRule2Table:getAllItemsByPartner(self.partner_)
+
+	if self.freeActivity then
+		items = xyd.tables.activityFreeRevertTable:getAllItemsByPartner(self.partner_)
+	else
+		items = xyd.tables.partnerReturnRule2Table:getAllItemsByPartner(self.partner_)
+	end
 
 	for i = 1, #items do
 		local params = {
@@ -165,7 +188,13 @@ function PotentialityBackWindow:layoutUI()
 		}
 
 		if items[i][1] == xyd.ItemID.MAGIC_DUST then
-			local crystal = xyd.tables.partnerReturnRule2Table:getCrystalByPartner(self.partner_)
+			local crystal = nil
+
+			if self.freeActivity then
+				crystal = xyd.tables.activityFreeRevertTable:getCrystalByPartner(self.partner_)
+			else
+				crystal = xyd.tables.partnerReturnRule2Table:getCrystalByPartner(self.partner_)
+			end
 
 			if crystal and crystal == 1 then
 				params.num = math.ceil(params.num * (1 - xyd.models.dress:getBuffTypeAttr(xyd.DressBuffAttrType.CRYSTAL_KNIFE)))
@@ -205,9 +234,7 @@ function PotentialityBackWindow:onClickBack()
 		local star = self.partner_:getStar()
 		local cost = xyd.tables.partnerReturnRule2Table:getCost(star)
 
-		dump(cost)
-
-		if cost and cost ~= 0 and cost[1] ~= 0 and xyd.models.backpack:getItemNumByID(cost[1]) < cost[2] then
+		if cost and cost ~= 0 and cost[1] ~= 0 and xyd.models.backpack:getItemNumByID(cost[1]) < cost[2] and not self.freeActivity then
 			xyd.showToast(__("NOT_ENOUGH", xyd.tables.itemTextTable:getName(cost[1])))
 
 			return
@@ -219,10 +246,20 @@ function PotentialityBackWindow:onClickBack()
 					return
 				end
 
-				local msg = messages_pb.rollback_partner_req()
-				msg.partner_id = self.partner_:getPartnerID()
+				if self.freeActivity then
+					xyd.models.slot:saveTempFreeRevergePartnerID(self.partner_:getPartnerID())
 
-				xyd.Backend.get():request(xyd.mid.ROLLBACK_PARTNER, msg)
+					local params = json.encode({
+						partner_id = self.partner_:getPartnerID()
+					})
+
+					xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_FREE_REVERGE, params)
+				else
+					local msg = messages_pb.rollback_partner_req()
+					msg.partner_id = self.partner_:getPartnerID()
+
+					xyd.Backend.get():request(xyd.mid.ROLLBACK_PARTNER, msg)
+				end
 			end)
 		end
 

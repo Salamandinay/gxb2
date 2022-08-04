@@ -59,7 +59,6 @@ end
 
 function Backpack:onBackpackInfo(event)
 	if event.data then
-		dump(xyd.decodeProtoBuf(event.data))
 		self:resetInfo()
 
 		self.items_ = event.data.items
@@ -79,7 +78,7 @@ function Backpack:updateRedMark()
 	if flag ~= self.redPoint_ then
 		self.redPoint_ = flag
 
-		xyd.models.redMark:setMark(xyd.RedMarkType.BACKPACK, flag)
+		xyd.models.redMark:setMark(xyd.RedMarkType.COMPOSE, flag)
 	end
 
 	local flag2 = self:checkOverItem()
@@ -203,6 +202,8 @@ function Backpack:updateItems(items)
 			xyd.models.activity:updateNeedOpenActivityAloneEnter(xyd.AcitvityLimt.LV, newLev)
 		end
 	end
+
+	self.baoxiangDatas = nil
 
 	if self.isDebrisChange_ then
 		self.isDebrisChange_ = false
@@ -678,8 +679,9 @@ function Backpack:clearNewPictures()
 	self.newPictures_ = {}
 end
 
-function Backpack:checkCanCompose()
-	local datas = self:getItems_withBagType(xyd.BackpackShowType.DEBRIS)
+function Backpack:checkCanCompose(type)
+	type = type or xyd.BackpackShowType.DEBRIS
+	local datas = self:getItems_withBagType(type)
 	local canCompose = false
 
 	for i in pairs(datas) do
@@ -699,7 +701,7 @@ function Backpack:checkCanCompose()
 				cost = ItemTable:treasureCost(itemID)
 			end
 
-			if cost[2] <= itemNum then
+			if cost and cost[2] and cost[2] <= itemNum then
 				canCompose = true
 
 				break
@@ -1088,6 +1090,31 @@ function Backpack:getCanComposeDebris()
 	end
 
 	return self.canComposeDebrisDatas
+end
+
+function Backpack:getBaoxiangItems()
+	if not self.baoxiangDatas then
+		local baoxiangDatas = {}
+		local datas = self:getItems_withBagType(xyd.BackpackShowType.CONSUMABLES)
+
+		for i = 1, #datas do
+			local itemID = datas[i].itemID
+			local itemNum = tonumber(datas[i].itemNum)
+			local item = {
+				itemID = itemID,
+				itemNum = itemNum
+			}
+			local itemFilterType = ItemTable:getFilterType(itemID)
+
+			if itemFilterType == xyd.ConsumablesItemFilterType.PARTNER_BAOXIANG then
+				table.insert(baoxiangDatas, item)
+			end
+		end
+
+		self.baoxiangDatas = baoxiangDatas
+	end
+
+	return self.baoxiangDatas
 end
 
 function Backpack:giftBuyTest(event)

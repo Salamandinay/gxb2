@@ -7,6 +7,7 @@ function ActivityEntranceTestCrystalWindow:ctor(name, params)
 
 	self.partner = params.partner
 	self.itemsArr = {}
+	self.windowType = params.windowType or xyd.TestCrystalOrSoulWindowType.ENTRANCE_TEST
 end
 
 function ActivityEntranceTestCrystalWindow:initWindow()
@@ -40,15 +41,30 @@ function ActivityEntranceTestCrystalWindow:freshCrystal()
 		self.itemsArr[i]:updateItem()
 	end
 
-	local win = xyd.WindowManager.get():getWindow("activity_entrance_test_partner_window")
+	if self.windowType == xyd.TestCrystalOrSoulWindowType.ENTRANCE_TEST then
+		local win = xyd.WindowManager.get():getWindow("activity_entrance_test_partner_window")
 
-	win:updateData()
+		win:updateData()
+	elseif self.windowType == xyd.TestCrystalOrSoulWindowType.GUILD_COMPETITION_SPECIAL then
+		local win = xyd.WindowManager.get():getWindow("guild_competition_special_partner_window")
+
+		win:updateData()
+	end
 end
 
 function ActivityEntranceTestCrystalWindow:updateListShow()
 	local list = {}
+	local ids = {}
 
-	for key, id in pairs(xyd.tables.activityWarmupArenaEquipTable:getIdsByType(xyd.WarmupItemType.CRYSTAL)) do
+	if self.windowType == xyd.TestCrystalOrSoulWindowType.ENTRANCE_TEST then
+		ids = xyd.tables.activityWarmupArenaEquipTable:getIdsByType(xyd.WarmupItemType.CRYSTAL)
+	elseif self.windowType == xyd.TestCrystalOrSoulWindowType.GUILD_COMPETITION_SPECIAL then
+		ids = xyd.models.guild:getCompetitionSpecialPartnerCrystalIds()
+	end
+
+	dump(ids, "test1111111")
+
+	for key, id in pairs(ids) do
 		local params = {
 			id = id,
 			partner = self.partner
@@ -61,7 +77,7 @@ function ActivityEntranceTestCrystalWindow:updateListShow()
 
 	for i in ipairs(list) do
 		local tmp = NGUITools.AddChild(self.listContainer.gameObject, self.activity_Entrance_Test_Crystal_Item.gameObject)
-		local item = EntranceTestCrystalItemRenderer.new(tmp, list[i])
+		local item = EntranceTestCrystalItemRenderer.new(tmp, list[i], self.windowType)
 
 		table.insert(self.itemsArr, item)
 	end
@@ -69,15 +85,22 @@ function ActivityEntranceTestCrystalWindow:updateListShow()
 	self.activity_Entrance_Test_Crystal_Item:SetActive(false)
 end
 
-function EntranceTestCrystalItemRenderer:ctor(goItem, itemdata)
+function EntranceTestCrystalItemRenderer:ctor(goItem, itemdata, windowType)
 	self.goItem_ = goItem
 	local transGo = goItem.transform
 	self.data = itemdata
+	self.windowType = windowType
 	self.allbg = transGo:NodeByName("allbg").gameObject
 	self.icon = transGo:NodeByName("icon").gameObject
 	self.name_text = transGo:ComponentByName("name_text", typeof(UILabel))
 	self.des_text = transGo:ComponentByName("des_text", typeof(UILabel))
 	self.shaddow_node = transGo:NodeByName("shaddow_node").gameObject
+
+	if self.windowType == xyd.TestCrystalOrSoulWindowType.ENTRANCE_TEST then
+		self.equipId = xyd.tables.activityWarmupArenaEquipTable:getEquipId(self.data.id)
+	elseif self.windowType == xyd.TestCrystalOrSoulWindowType.GUILD_COMPETITION_SPECIAL then
+		self.equipId = self.data.id
+	end
 
 	self:createChildren()
 	self:updateItem()
@@ -86,34 +109,33 @@ end
 function EntranceTestCrystalItemRenderer:createChildren()
 	UIEventListener.Get(self.allbg.gameObject).onClick = handler(self, function ()
 		if not self.shaddow_node.activeSelf then
-			local equipId = xyd.tables.activityWarmupArenaEquipTable:getEquipId(self.data.id)
-			self.data.partner.equipments[5] = equipId
+			self.data.partner.equipments[5] = self.equipId
 			self.data.partner.time = xyd.getServerTime()
 			local win = xyd.WindowManager.get():getWindow("activity_entrance_test_crystal_window")
 
 			win:freshCrystal()
 
-			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
+			if self.windowType == xyd.TestCrystalOrSoulWindowType.ENTRANCE_TEST then
+				local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
 
-			activityData:setPartnerTime(self.data.partner)
+				activityData:setPartnerTime(self.data.partner)
 
-			activityData.dataHasChange = true
+				activityData.dataHasChange = true
+			end
 		end
 	end)
-	local equipId = xyd.tables.activityWarmupArenaEquipTable:getEquipId(self.data.id)
 	local item = {
-		itemID = equipId,
+		itemID = self.equipId,
 		uiRoot = self.icon.gameObject
 	}
 	local icon = xyd.getItemIcon(item)
 end
 
 function EntranceTestCrystalItemRenderer:updateItem()
-	local equipId = xyd.tables.activityWarmupArenaEquipTable:getEquipId(self.data.id)
-	self.name_text.text = xyd.tables.itemTable:getName(equipId)
-	self.des_text.text = xyd.tables.equipTable:getDesc(equipId)
+	self.name_text.text = xyd.tables.itemTable:getName(self.equipId)
+	self.des_text.text = xyd.tables.equipTable:getDesc(self.equipId)
 
-	self.shaddow_node:SetActive(equipId == self.data.partner.equipments[5])
+	self.shaddow_node:SetActive(self.equipId == self.data.partner.equipments[5])
 
 	self.name = "item_" .. tostring(self.itemIndex)
 end

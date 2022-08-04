@@ -13,6 +13,7 @@ function PotentialitySwitchWindow:ctor(name, params)
 	self.isEntrance_ = params.isEntrance
 	self.callback_ = params.callback
 	self.quickItem_ = params.quickItem
+	self.isGuildCompetitionSpecial = params.isGuildCompetitionSpecial
 end
 
 function PotentialitySwitchWindow:initWindow()
@@ -47,7 +48,7 @@ function PotentialitySwitchWindow:getComponent()
 	self.effectGroup_ = groupTrans:NodeByName("effectGroup").gameObject
 	self.itemGroup_ = groupTrans:ComponentByName("itemGroup", typeof(UIGrid))
 
-	if self.isEntrance_ or self.quickItem_ then
+	if self.isEntrance_ or self.quickItem_ or self.isGuildCompetitionSpecial then
 		self.switchBtn:SetActive(false)
 		self.switchBtnLabel_.gameObject:SetActive(false)
 	end
@@ -71,6 +72,17 @@ function PotentialitySwitchWindow:register()
 			local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
 			activityData.dataHasChange = true
 			self.partner_.potentials[self.select_row_] = self.select_col_
+
+			xyd.EventDispatcher.inner():dispatchEvent({
+				name = xyd.event.CHOOSE_PARTNER_POTENTIAL
+			})
+		elseif self.isGuildCompetitionSpecial then
+			self.partner_.potentials[self.select_row_] = self.select_col_
+			local guildCompetitionWin = xyd.WindowManager.get():getWindow("guild_competition_special_partner_window")
+
+			if guildCompetitionWin then
+				guildCompetitionWin:updateData()
+			end
 
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = xyd.event.CHOOSE_PARTNER_POTENTIAL

@@ -2271,7 +2271,8 @@ function MainWindow:initRedMark()
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.NEW_FIVE_STAR,
 		xyd.RedMarkType.AVAILABLE_EQUIPMENT,
-		xyd.RedMarkType.PROMOTABLE_PARTNER
+		xyd.RedMarkType.PROMOTABLE_PARTNER,
+		xyd.RedMarkType.COMPOSE
 	}, self.MainwinBottomBtn_red_img_2:getRedPoint())
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.JOIN_GUILD,
@@ -2280,7 +2281,8 @@ function MainWindow:initRedMark()
 		xyd.RedMarkType.GUILD_MEMBER,
 		xyd.RedMarkType.GUILD_CHECKIN,
 		xyd.RedMarkType.GUILD_BOSS,
-		xyd.RedMarkType.GUILD_COMPETITION
+		xyd.RedMarkType.GUILD_COMPETITION,
+		xyd.RedMarkType.GUILD_COMPETITION_TASK_RED
 	}, self.MainwinBottomBtn_red_img_5:getRedPoint())
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.CHAT_RED_NORMAL

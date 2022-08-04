@@ -1754,6 +1754,9 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_SAND_MISSION] = function ()
 		return require("app.windows.activity.ActivitySandMission")
+	end,
+	[xyd.ActivityID.ACTIVITY_FREE_REVERGE] = function ()
+		return require("app.windows.activity.ActivityFreeRevert")
 	end
 }
 

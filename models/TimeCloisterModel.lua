@@ -163,6 +163,10 @@ function TimeCloisterModel:onGetRedInfo(event)
 
 			self:checkBattleRedStateAfterTwo(cloister)
 		end
+
+		if cloister and cloister - 2 > 0 then
+			self.battleRedState[cloister - 2] = false
+		end
 	end
 
 	self:updateBattleRedState()

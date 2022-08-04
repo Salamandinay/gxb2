@@ -1,5 +1,6 @@
 local BaseModel = import(".BaseModel")
 local Guild = class("Guild", BaseModel, true)
+local json = require("cjson")
 
 function Guild:ctor()
 	BaseModel.ctor(self)
@@ -1363,7 +1364,13 @@ function Guild:updateGuildCompetitionInfo(info)
 		self.guildCompetitionInfo.boss_harms = info.boss_harms
 		self.guildCompetitionInfo.boss_info = info.boss_info
 		local json = require("cjson")
-		self.guildCompetitionInfo.boss_info.enemies = json.decode(self.guildCompetitionInfo.boss_info.enemies)
+
+		if type(self.guildCompetitionInfo.boss_info.enemies) == "string" then
+			self.guildCompetitionInfo.boss_info.enemies = json.decode(self.guildCompetitionInfo.boss_info.enemies)
+		else
+			self.guildCompetitionInfo.boss_info.enemies = self.guildCompetitionInfo.boss_info.enemies
+		end
+
 		self.guildCompetitionInfo.times = info.times
 		self.guildCompetitionInfo.total_harm = info.total_harm
 		self.guildCompetitionInfo.update_time = info.update_time
@@ -1372,6 +1379,9 @@ function Guild:updateGuildCompetitionInfo(info)
 			self.guildCompetitionInfo.guild_rank = info.guild_rank.rank
 			self.guildCompetitionInfo.guild_rank_sum = info.guild_rank.sum
 		end
+
+		self.guildCompetitionInfo.mission_infos = info.mission_infos
+		self.guildCompetitionInfo.used_prs = info.used_prs
 	end
 
 	self:updateGuildCompetitionTerritoryWindow()
@@ -1387,6 +1397,8 @@ function Guild:updateGuildCompetitionInfo(info)
 		else
 			xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION, false)
 		end
+
+		self:checkGuildCompetitionMissionRed()
 	end
 end
 
@@ -1408,6 +1420,74 @@ end
 
 function Guild:getGuildCompetitionInfo()
 	return self.guildCompetitionInfo
+end
+
+function Guild:getGuildCompetitionMissionInfo(id)
+	for i, info in pairs(self.guildCompetitionInfo.mission_infos) do
+		if info.mission_id == id then
+			return info
+		end
+	end
+end
+
+function Guild:setGuildCompetitionMissionInfo(mission_infos)
+	self.guildCompetitionInfo.mission_infos = mission_infos
+
+	self:checkGuildCompetitionMissionRed()
+end
+
+function Guild:checkGuildCompetitionMissionRed()
+	if self:getGuildCompetitionInfo() then
+		if self:getGuildCompetitionLeftTime().type == 1 then
+			xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, false)
+
+			return
+		end
+
+		local lastDayTime = xyd.db.misc:getValue("guidl_competition_mission_red_day_time")
+
+		if not lastDayTime then
+			xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
+
+			return
+		else
+			lastDayTime = tonumber(lastDayTime)
+
+			if not xyd.isSameDay(tonumber(lastDayTime), xyd.getServerTime(), true) then
+				xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
+
+				return
+			end
+		end
+
+		for i, info in pairs(self.guildCompetitionInfo.mission_infos) do
+			if info.is_completed == 1 and info.is_awarded == 0 then
+				xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
+
+				return
+			end
+		end
+	end
+
+	xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, false)
+end
+
+function Guild:getGuildCompetitionUsedPrs()
+	return self.guildCompetitionInfo.used_prs
+end
+
+function Guild:setGuildCompetitionUsedPrs(used_prs)
+	self.guildCompetitionInfo.used_prs = used_prs
+end
+
+function Guild:isUsedGuildCompetitionUsedPrsToday(table_id)
+	local heroList = xyd.tables.partnerTable:getHeroList(table_id)
+
+	if xyd.arrayIndexOf(self:getGuildCompetitionUsedPrs(), heroList[1]) > 0 then
+		return true
+	end
+
+	return false
 end
 
 function Guild:getGuildCompetitionLeftTime()
@@ -1494,6 +1574,22 @@ function Guild:addMsgPartners(info)
 	PartnersMsg.partner_id = info.partner_id
 	PartnersMsg.pos = info.pos
 
+	if info.is_fake_partner == 1 then
+		PartnersMsg.skill_index = info.skill_index
+		PartnersMsg.super = info.super
+		PartnersMsg.table_id = info.table_id
+		PartnersMsg.lv = info.lv
+		PartnersMsg.awake = info.awake
+
+		for i, id in pairs(info.equips) do
+			table.insert(PartnersMsg.equips, id)
+		end
+
+		for i, id in pairs(info.potentials) do
+			table.insert(PartnersMsg.potentials, id)
+		end
+	end
+
 	return PartnersMsg
 end
 
@@ -1533,6 +1629,178 @@ function Guild:updateCompetitionRankInfo(event)
 		if guildCompetitionMainWd then
 			guildCompetitionMainWd:updateRank()
 		end
+	end
+end
+
+function Guild:getCompetitionSpecialPartnerCrystalIds()
+	if self.competitionSpecialPartnerCrystalIds then
+		return self.competitionSpecialPartnerCrystalIds
+	end
+
+	local ids = {}
+	local allEquipsIds = xyd.tables.equipTable:getIDs()
+
+	for i, id in pairs(allEquipsIds) do
+		if xyd.tables.equipTable:getType(id) == 10 and xyd.tables.equipTable:getItemLev(id) == 23 then
+			table.insert(ids, id)
+		end
+	end
+
+	self.competitionSpecialPartnerCrystalIds = ids
+
+	return self.competitionSpecialPartnerCrystalIds
+end
+
+function Guild:isChangeCompetitionSpecialPartnering()
+	local win = xyd.WindowManager.get():getWindow("guild_competition_special_partner_window")
+
+	if win then
+		return true
+	end
+
+	return false
+end
+
+function Guild:getCompetitionSpecialPartner()
+	local isHas = xyd.db.misc:getValue("is_has_guild_competition_special_partner")
+
+	if isHas and tonumber(isHas) == 1 then
+		if self.competitionSpecialPartner then
+			if self:getCompetitionSpecialTruePartnerInfo() then
+				local checkTruePartnerId = self:getCompetitionSpecialTruePartnerInfo().truePartnerID
+
+				if not xyd.models.slot:getPartner(checkTruePartnerId) then
+					self:clearCompetitionSpecialPartner()
+
+					return nil
+				end
+			end
+
+			if self:isUsedGuildCompetitionUsedPrsToday(self.competitionSpecialPartner:getTableID()) then
+				self:clearCompetitionSpecialPartner()
+
+				return nil
+			end
+
+			return self.competitionSpecialPartner
+		end
+
+		local localInfo = xyd.db.misc:getValue("guild_competition_special_partner")
+
+		if localInfo then
+			if self:getCompetitionSpecialTruePartnerInfo() then
+				local checkTruePartnerId = self:getCompetitionSpecialTruePartnerInfo().truePartnerID
+
+				if not xyd.models.slot:getPartner(checkTruePartnerId) then
+					self:clearCompetitionSpecialPartner()
+
+					return nil
+				end
+			end
+
+			localInfo = json.decode(localInfo)
+
+			if self:isUsedGuildCompetitionUsedPrsToday(localInfo.tableID) then
+				self:clearCompetitionSpecialPartner()
+
+				return nil
+			end
+
+			local Partner = import("app.models.Partner")
+			local copyPartner = Partner.new()
+
+			copyPartner:populate(localInfo)
+
+			self.competitionSpecialPartner = copyPartner
+
+			return self.competitionSpecialPartner
+		end
+	end
+
+	return nil
+end
+
+function Guild:setCompetitionSpecialPartner(partner)
+	self.competitionSpecialPartner = partner
+
+	xyd.db.misc:setValue({
+		key = "guild_competition_special_partner",
+		value = json.encode(self.competitionSpecialPartner:getInfo())
+	})
+	xyd.db.misc:setValue({
+		value = 1,
+		key = "is_has_guild_competition_special_partner"
+	})
+end
+
+function Guild:getCompetitionSpecialTruePartnerInfo()
+	if self.competitionSpecialTruePartnerInfo then
+		return self.competitionSpecialTruePartnerInfo
+	end
+
+	local isHas = xyd.db.misc:getValue("is_has_guild_competition_special_partner")
+
+	if isHas and tonumber(isHas) == 1 then
+		local localInfo = xyd.db.misc:getValue("guild_competition_special_true_partner_info")
+
+		if localInfo then
+			localInfo = json.decode(localInfo)
+			self.competitionSpecialTruePartnerInfo = localInfo
+
+			return self.competitionSpecialTruePartnerInfo
+		end
+	end
+
+	return nil
+end
+
+function Guild:setCompetitionSpecialTruePartnerInfo(partnerInfo)
+	self.competitionSpecialTruePartnerInfo = partnerInfo
+
+	xyd.db.misc:setValue({
+		key = "guild_competition_special_true_partner_info",
+		value = json.encode(self.competitionSpecialTruePartnerInfo)
+	})
+end
+
+function Guild:getCompetitionSpecialPartnerId()
+	return -1
+end
+
+function Guild:clearCompetitionSpecialPartner()
+	self.competitionSpecialPartner = nil
+	self.competitionSpecialTruePartnerInfo = nil
+
+	xyd.db.misc:setValue({
+		value = 0,
+		key = "is_has_guild_competition_special_partner"
+	})
+end
+
+function Guild:isCanUpdateCompetitionActiveMissionCheck()
+	if self.isCanUpdateCompetitionActiveMission == nil then
+		self.isCanUpdateCompetitionActiveMission = true
+	end
+
+	return self.isCanUpdateCompetitionActiveMission
+end
+
+function Guild:setCanUpdateCompetitionActiveMissionCheck(state)
+	self.isCanUpdateCompetitionActiveMission = state
+end
+
+function Guild:checkCanUpdateCompetitionActiveMissionWithTime()
+	if not self.isCanUpdateCompetitionActiveMission then
+		if self.isCanUpdateCompetitionActiveMissionTimeKey then
+			xyd.removeGlobalTimer(self.isCanUpdateCompetitionActiveMissionTimeKey)
+
+			self.isCanUpdateCompetitionActiveMissionTimeKey = nil
+		end
+
+		self.isCanUpdateCompetitionActiveMissionTimeKey = xyd.addGlobalTimer(function ()
+			self.isCanUpdateCompetitionActiveMission = true
+			self.isCanUpdateCompetitionActiveMissionTimeKey = nil
+		end, 60, 1)
 	end
 end
 

@@ -512,7 +512,7 @@ function ArenaAllServerNew:reqReport(ids)
 
 	if self.reports_[curStr] then
 		xyd.EventDispatcher:inner():dispatchEvent({
-			name = xyd.event.ARENA_ALL_SERVER_GET_RECORD,
+			name = xyd.event.ARENA_ALL_SERVER_GET_RECORD_NEW2,
 			data = self.reports_[curStr]
 		})
 
@@ -525,7 +525,8 @@ function ArenaAllServerNew:reqReport(ids)
 end
 
 function ArenaAllServerNew:onGetReport(event)
-	local reports = event.data.reports
+	local data = xyd.decodeProtoBuf(event.data)
+	local reports = data.reports
 	self.reports_[self.curReqReport_] = {
 		reports = {}
 	}

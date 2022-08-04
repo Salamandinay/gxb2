@@ -459,7 +459,12 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 5200301,Chevalir,Metal Storm,"Deals (75% of Attack) damage against Back-line enemies and (20% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5200401,Saint,Dimension Sword Spell,"Deals (80% of Attack) damage against all enemies and [c][01a310]Burns[-][/c] them, dealing extra (25% of Attack) damage each round for 3 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5200501,Javelin,Ice Lance,"Deals (95% of Attack) damage against Back-line enemies and (25% chance) to [c][01a310]Freeze[-][/c] them for 2 rounds.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-5200601,Geisha,Lost Voice,"Deals (123% of Attack) damage against 3 random enemies and (25% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+5200601,Geisha,Lost Voice,"
+Geisha deals (123% of Attack) damage to 4 random enemies and has a 25% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (100% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 5200701,Sonya,Flame Hurricane,"Deals (126% of Attack) damage against 3 random enemies, and reduces 24% of their Armor and 10% of their Block. This attack will also deal an extra (32% of Attack) [c][01a310]Burn[-][/c] damage each round for 3 rounds. If the target is a Warrior, the [c][01a310]Burn[-][/c] damage will increase by 60%.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5200801,Caitlyn,Explosive Shot,"Deals (100% of Attack) damage against 2 random enemies, dealing extra (60% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5200901,Guan Yin,Invincible,Deals (145% of Attack) damage against Front-line enemies and gains self 25% Attack for 2 rounds.
@@ -573,7 +578,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65100601,Giana,Fire Fox,"Deals (120% of Attack) damage against all enemies and has a 75% chance to [c][01a310]Silence[-][/c] Warrior class enemies for 2 rounds.\n[c][01a310]Silence:[-][/c]\nA control effect. During this effect, girls affected will not be able to release their Active Skills."
 65100701,Chevalir,Metal Storm,"Deals (90% of Attack) damage against Back-line enemies and (25% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65100801,Javelin,Ice Lance,"Deals (120% of Attack) damage against all enemies and (25% chance) to [c][01a310]Freeze[-][/c] them for 2 rounds.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-65100901,Geisha,Lost Voice,"Deals (120% of Attack) damage against 4 random enemies and (30% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65100901,Geisha,Lost Voice,"
+Geisha deals (150% of Attack) damage to 4 random enemies and has a 30% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (150% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101001,Caitlyn,Explosive Shot,"Deals (152% of Attack) damage against 2 random enemies, dealing extra (86% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101101,Ennmaya,Poison Mind,"
 Deals (190% of Attack) damage against 2 random Back-line enemies, dealing extra (56% of Attack) damage each round for 6 rounds. Has (45% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.
@@ -680,7 +690,12 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 75101001,Sakura,Sakura Dance,"Deals (192% of Attack) damage against Back-line enemies and (35% chance) to [c][01a310]Petrify[-][/c] them for 2 rounds, reducing their 30% Armor for 3 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75200101,Chevalir,Metal Storm,"Deals (136% of Attack) damage against Back-line enemies and (30% chance) to [c][01a310]Stun[-][/c] them for 2 rounds. Increases self Damage Reduction by 30% for 3 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75200201,Javelin,Ice Lance,"Deals (148% of Attack) damage against all enemies, (30% chance) to [c][01a310]Freeze[-][/c] them for 2 rounds, increasing self 30 Energy.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75200301,Geisha,Lost Voice,"Deals (116% of Attack) damage against all enemies and (25% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+75200301,Geisha,Lost Voice,"
+Geisha deals (200% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 75200401,Caitlyn,Explosive Shot,"Deals (220% of Attack) damage against 2 random enemies, dealing extra (102% of Attack) [c][01a310]Bleed[-][/c] damage each round for 4 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75200501,Guan Yin,Invincible,"
 Deals (162% of Attack) damage against 4 random enemies, dealing extra (45% of Attack) [c][01a310]Bleed[-][/c] damage and extra (45% of Attack) [c][01a310]Poison[-][/c] damage for 3 rounds and gains 50% Attack for 3 rounds.
@@ -1141,7 +1156,12 @@ During this effect, girls affected will not be able to deal Basic Attack, releas
 5200303,Chevalir,Revenge Spear,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (100% of Attack) damage."
 5200403,Saint,Soul Reaper,"Whenever an enemy Girl dies, gains Crit by 12%."
 5200503,Javelin,Dragon Fury,"When attacked (Counterattack not included), reduces 4% Attack of the attacker and gains 4% Attack for 3 rounds."
-5200603,Geisha,Final Movement,"After death, has 40% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+5200603,Geisha,Final Movement,"
+When Geisha is defeated, she has a 25% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 10% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 5200703,Sonya,Wild Nature,"Increases Armor by 24%, Attack by 15%, HP by 15%, and Precision by 10%."
 5200803,Caitlyn,Killing Hall,Increases Block rate by 25% and Attack by 20%.
 5200903,Guan Yin,Reflection,Each Basic Attack increases self Block rate by 5% and Attack by 10%.
@@ -1233,7 +1253,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65100603,Giana,Flower Engulf II,"Increases Damage Reduction by 18%, HP by 25% and Attack by 30%."
 65100703,Chevalir,Revenge Spear II,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (120% of Attack) damage."
 65100803,Javelin,Dragon Fury II,"While taking damage, reduces attacker 7% Attack and increases self 7% Attack for 3 rounds."
-65100903,Geisha,Final Movement II,"After death, has 55% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65100903,Geisha,Final Movement II,"
+When Geisha is defeated, she has a 35% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 15% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101003,Caitlyn,Killing Hall II,Increases Block rate by 30% and Attack by 30%.
 65101103,Ennmaya,Stun Body II,"Attack has 75% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65101203,Cynthia,Vision Body II,"When attacked (Counterattack not included), has 100% chance to [c][01a310]Burn[-][/c] enemy, dealing (16% of Attack) damage each round until death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -1312,7 +1337,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 75101003,Sakura,Killing Mark,"Deals extra 160% damage to [c][01a310]Petrified[-][/c] targets, Basic Attack changed to Deals (95% of Attack) damage against Back-line enemies and has 20% chance to [c][01a310]Petrify[-][/c] them for 2 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75200103,Chevalir,Revenge Spear III,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (140% of Attack) damage."
 75200203,Javelin,Dragon Fury III,"When attacked (Counterattack not included), reduces the attacker's Attack by 9% and increases self Attack by 9%. Last for 3 rounds."
-75200303,Geisha,Final Movement III,"After death, has 90% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+75200303,Geisha,Final Movement III,"
+When Geisha is defeated, she has a 50% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 75200403,Caitlyn,Killing Hall III,Increases Block rate by 35% and Attack by 40%.
 75200503,Guan Yin,Reflection III,Each Basic Attack increases self Block rate by 10% and Attack by 16%.
 75200603,Librarian,Word: None III,"Increases 95% Skill Damage and 50% HP, increases 30% Precision."
@@ -1437,7 +1467,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65100604,Giana,Summon Soul II,"After death, deals (300% of Attack) damage against all enemies."
 65100704,Chevalir,Armor Shield II,"While below 50% health, increases allies' Armor by 60% for 3 rounds. (Can only trigger once)"
 65100804,Javelin,Freezing Weakness II,"Deals extra 60% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-65100904,Geisha,Captivation II,"Basic Attack targets all enemies, deals (90% of Attack) damage and has 27% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65100904,Geisha,Captivation II,"
+Geisha\'s Basic Attack will deal (90% of Attack) damage to 3 random enemies and has a 27% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101004,Caitlyn,Break Shot II,"Basic Attack targets the enemy with the lowest HP, steal targets' Attack by 10% for 3 rounds."
 65101104,Ennmaya,Dark Potion II,"While below 50% health, [c][01a310]Poisons[-][/c] 2 random back-line enemies, dealing (150% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101204,Cynthia,Endless Flame II,"After death, [c][01a310]Burns[-][/c] all enemies, dealing (27% of Attack) damage each round till the enemies die.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -1524,7 +1559,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 75101004,Sakura,Zanshin,"While below 50% health, increases Damage Reduction to self by 50% for 3 rounds. (Can only trigger once)"
 75200104,Chevalir,Armor Shield III,"While below 50% health, increases allies' Armor by 100% and Block Rate by 20% for 3 rounds. (Can only trigger once)"
 75200204,Javelin,Freezing Weakness III,"Deals extra 110% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75200304,Geisha,Captivation III,"Basic Attack targets all enemies, deals (100% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+75200304,Geisha,Captivation III,"
+Geisha\'s Basic Attack will deal (100% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 75200404,Caitlyn,Break Shot III,"Basic Attack targets the enemy with lowest HP, dealing (120% of Attack) damage, steals 20% of Attack from the target for 3 rounds"
 75200504,Guan Yin,Quick Attack III,"
 Basic Attack changed to deal (95% of Attack) damage against front-line enemies and additional (10% of Attack) [c][01a310]Bleed[-][/c] damage and (10% of Attack) [c][01a310]Poison[-][/c] damage for 2 rounds.
@@ -1666,7 +1706,12 @@ During this effect, girls affected will not be able to deal Basic Attack, releas
 65100613,Giana,Flower Engulf III,"Increases Damage Reduction by 24%, HP by 30% and Attack by 35%."
 65100713,Chevalir,Revenge Spear III,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (140% of Attack) damage."
 65100813,Javelin,Dragon Fury III,"When attacked (Counterattack not included), reduces the attacker's Attack by 9% and increases self Attack by 9%. Last for 3 rounds."
-65100913,Geisha,Final Movement III,"After death, has 90% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65100913,Geisha,Final Movement III,"
+When Geisha is defeated, she has a 50% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101013,Caitlyn,Killing Hall III,Increases Block rate by 35% and Attack by 40%.
 65101113,Ennmaya,Stun Body III,"Attack has 100% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65101213,Cynthia,Vision Body III,"When attacked (Counterattack not included), has a 100% chance to [c][01a310]Burn[-][/c] the target, dealing (18% of Attack) damage each round till its death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -1741,7 +1786,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65100614,Giana,Summon Soul III,"After death, deals (400% of Attack) damage against all enemies."
 65100714,Chevalir,Armor Shield III,"While below 50% health, increases allies' Armor by 100% and Block Rate by 20% for 3 rounds. (Can only trigger once)"
 65100814,Javelin,Freezing Weakness III,"Deals extra 110% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-65100914,Geisha,Captivation III,"Basic Attack targets all enemies, deals (100% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65100914,Geisha,Captivation III,"
+Geisha\'s Basic Attack will deal (100% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101014,Caitlyn,Break Shot III,"Basic Attack targets the enemy with lowest HP, dealing (120% of Attack) damage, steals 20% of Attack from the target for 3 rounds"
 65101114,Ennmaya,Dark Potion III,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (200% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101214,Cynthia,Endless Flame III,"After death, [c][01a310]Burns[-][/c] all enemies, dealing (36% of Attack) damage each round till the enemies die.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -2451,29 +2501,62 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 278,Valeera,普攻替换,普攻替换
 279,Valeera,普攻替换,普攻替换
 5101101,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she read, dealing (125% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (75% of Attack) damage each round for 3 rounds. This attack has 12% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 12% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (150% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (75% of Attack) damage each round for 3 rounds.
+This Active Skill has a 12% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 12% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 12% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101801,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she read, dealing (165% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (100% of Attack) damage each round for 3 rounds. This attack has 15% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 15% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (200% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (100% of Attack) damage each round for 3 rounds.
+This Active Skill has a 15% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 15% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 15% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 75101101,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she read, dealing (235% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (150% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (275% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (150% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 5101102,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (95% of Attack) damage, has (100% chance) to steal 10% of targets' Attack for 3 rounds and reduce their Control Immunity by 5% for 2 rounds."
 65101802,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (105% of Attack) damage, has (100% chance) to steal 12% of targets' Attack for 3 rounds and reduce their Control Immunity by 10% for 2 rounds."
 65101812,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (120% of Attack) damage, has (100% chance) to steal 20% of targets' Attack for 3 rounds and reduce their Control Immunity by 15% for 2 rounds."
@@ -2511,29 +2594,97 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 [c][01a310]Petrify:[-][/c]
 A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5101104,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (200% of Attack) HP and gains 5% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 10 Energy and gains 5% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (200% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 10 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 5% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 2% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101804,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (240% of Attack) HP and gains 7% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 15 Energy and gains 7% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (240% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 15 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 7% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 4% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101814,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (280% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (280% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 75101104,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (280% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (280% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 100001601,,Terrorize,"Deal great damage to all the enemies in the backline, and control one of them and let her attack her teammates for 2 rounds, turn one teammate into his own separate, the separate will inherit the attribute of the girl, but deals and takes double damage."
 100001602,,Mind Control,"Dark Knight's Basic Attack has 50% chance to control the enemy for 2 rounds, the enemy controlled will randomly attack a character on her team in her move."
 100001603,,Strength in Number,Dark Knight and his separates will gain extra attack and armor break for each separate existing in the battle.
@@ -2668,21 +2819,46 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 282,Turin,普攻替换,Basic Attack Switch
 283,Turin,普攻替换,Basic Attack Switch
 284,Turin,普攻替换,Basic Attack Switch
-5300701,Turin,Nuclear Strike,"Deals (100% of Attack) damage against all Back-line enemies, increasing self 15% Damage Reduction and 20% Attack for 3 rounds. Provides additional 6% Damage Reduction for the whole team for 3 rounds. (This team buff cannot be stacked)"
-65301801,Turin,Nuclear Strike,"Deals (135% of Attack) damage against all Back-line enemies, increasing self 25% Damage Reduction and 30% Attack for 3 rounds. Provides additional 9% Damage Reduction for the whole team for 3 rounds. (This team buff cannot be stacked)"
-75301101,Turin,Nuclear Strike,"Deals (250% of Attack) damage against all backline enemies, increasing self 35% Damage Reduction and 40% Attack for 3 rounds. Provides additional 12% Damage Reduction for the whole team for 3 rounds. (This team buff cannot be stacked)"
+5300701,Turin,Nuclear Strike,"Turin deals (125% of Attack) damage to all Backline enemies. She will increase her Damage Reduction by 15% and her Attack by 20% for 3 rounds, and recover (10% of self Maximum HP) HP. She will also provide an additional 6% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)"
+65301801,Turin,Nuclear Strike,"Turin deals (175% of Attack) damage to all Backline enemies. She will increase her Damage Reduction by 25% and her Attack by 30% for 3 rounds, and recover (15% of self Maximum HP) HP. She will also provide an additional 9% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)"
+75301101,Turin,Nuclear Strike,"
+Turin deals (300% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 40% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 12% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
 5300702,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (95% of Attack) against 4 random enemies, has a 12% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65301802,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (110% of Attack) against 4 random enemies, has an 18% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65301812,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (125% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75301102,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (125% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-5300703,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 15%, Attack by 15%, gains 20% Control Immunity and deals 30% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-65301803,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 25%, Attack by 25%, gains 25% Control Immunity and deals 60% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-65301813,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 40%, Attack by 35%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75301103,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 40%, Attack by 35%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-5300704,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 10% for 1 round and has a 45% chance to deal a counterattack on each enemy, dealing (70% of Attack) damage. "
-65301804,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 20% for 1 round and has a 60% chance to deal a counterattack on each enemy, dealing (110% of Attack) damage. "
-65301814,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (150% of Attack) damage. "
-75301104,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (150% of Attack) damage. "
+5300703,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 25%, Attack by 25%, Control Immunity by 20%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 30%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+65301803,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 35%, Attack by 30%, Control Immunity by 25%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 60%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+65301813,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 40%, Attack by 35%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+75301103,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 40%, Attack by 35%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+5300704,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 10% for 1 round and has a 45% chance to deal a counterattack to each enemy, dealing (70% of Attack) damage."
+65301804,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 20% for 1 round and has a 60% chance to deal a counterattack to each enemy, dealing (110% of Attack) damage."
+65301814,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (150% of Attack) damage."
+75301104,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (150% of Attack) damage."
 100101,Potential- Stage 1,Potential：Life,HP increases by 12%
 100102,Potential- Stage 1,Potential：Attack,Increases ATK by 8%
 100103,Potential- Stage 1,Potential：Speed,"Increases SPD by 20, HP by 5% and ATK by 3%"
@@ -2742,21 +2918,80 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 288,Mio,普攻替换,普攻替换
 289,Mio,普攻替换,普攻替换
 290,Mio,普攻替换,普攻替换
-5401101,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (123% of Attack) damage to 3 random enemies and steals 9% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (8% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65401801,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (147% of Attack) damage to 3 random enemies and steals 12% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (13% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-75401101,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (162% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+5401101,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (123% of Attack) damage to 3 random enemies and steals 9% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (8% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+65401801,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (147% of Attack) damage to 3 random enemies and steals 12% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (13% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+75401101,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (162% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 5401102,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 15%, Attack by 10%, Crit by 15%."
 65401802,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 25%, Attack by 15%, Crit by 20%"
 65401812,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 35%, Attack by 25%, Crit by 30%"
 75401102,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 35%, Attack by 25%, Crit by 30%"
-5401103,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (75% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 6% of their Attack and [c][01a310]Burns[-][/c] away (2% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65401803,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (85% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 9% of their Attack and [c][01a310]Burns[-][/c] away (4% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65401813,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-75401103,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-5401104,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (100% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (1% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65401804,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (150% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (2% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65401814,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (200% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-75401104,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (200% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+5401103,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (75% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 6% of their Attack and [c][01a310]Burns[-][/c] away (2% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+65401803,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (85% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 9% of their Attack and [c][01a310]Burns[-][/c] away (4% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+65401813,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+75401103,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+5401104,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 5% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (100% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (1% of Mio’s Maximum HP) damage per round. 
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+65401804,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 10% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (150% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (2% of Mio’s Maximum HP) damage per round. 
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+65401814,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (200% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+75401104,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (200% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 100002700,,,
 100002702,,,
 100002703,,,
@@ -4130,45 +4365,100 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 751010044,Sakura,Zanshin,"While below 50% health, increases Damage Reduction to self by 54.5% for 3 rounds. (Can only trigger once)"
 751010045,Sakura,Zanshin,"While below 50% health, increases Damage Reduction to self by 55% for 3 rounds. (Can only trigger once)"
 751011011,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she reads, dealing (240% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (150% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (280% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (150% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011012,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she reads, dealing (240% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (153% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (280% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (153% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011013,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she reads, dealing (250% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (153% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (290% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (153% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011014,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she reads, dealing (250% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (159% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (290% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (159% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011015,Valeera,Dark Tales,"
-Valeera summons elemental magic from the tales she reads, dealing (260% of Attack) damage to 4 random opponents and [c][01a310]Poisons[-][/c] them, dealing (165% of Attack) damage each round for 3 rounds. This attack has 25% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds and 25% chance to [c][01a310]Petrify[-][/c] the target for 2 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Valeera summons elemental magic from the tales she read, dealing (300% of Attack) damage to 4 random enemies and [c][01a310]Poisons[-][/c] them, dealing (165% of Attack) damage each round for 3 rounds.
+This Active Skill has a 25% chance to [c][01a310]Freeze[-][/c] the targets for 2 rounds, a 25% chance to [c][01a310]Petrify[-][/c] the targets for 2 rounds, and a 25% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011021,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (123% of Attack) damage, has (100% chance) to steal 20% of targets' Attack for 3 rounds and reduce their Control Immunity by 15% for 2 rounds."
 751011022,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (123% of Attack) damage, has (100% chance) to steal 22% of targets' Attack for 3 rounds and reduce their Control Immunity by 15% for 2 rounds."
 751011023,Valeera,Speed Reading,"Valeera speed reads through her new storybook. Basic Attack changed to attack Front-line enemies, dealing (128% of Attack) damage, has (100% chance) to steal 22% of targets' Attack for 3 rounds and reduce their Control Immunity by 15% for 2 rounds."
@@ -4215,35 +4505,120 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 [c][01a310]Petrify:[-][/c]
 A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 751011041,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (285% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (285% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011042,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (290% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (290% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011043,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (295% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (295% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011044,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (300% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 20 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (300% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751011045,Valeera,Mana Drain,"
-Valeera restores her Mana by collecting some from the controlled enemies. When an opponent is [c][01a310]Petrified[-][/c], restores (305% of Attack) HP and gains 10% Attack for 3 rounds. When an opponent is [c][01a310]Frozen[-][/c], regenerates 25 Energy and gains 10% Attack for 3 rounds.
-[c][01a310]Freeze:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Petrify:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+Valeera restores her Mana by collecting some from the controlled enemies.
+
+Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (305% of Attack) HP every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 25 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
+At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect. 
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 751012011,Fenrir,Devastation,"Fenrir attacks her enemies by changing the terrain with her club, deals (210% of Attack) damage against 3 random enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (100% of Attack) damage each round. If the target is in Front-line, she will also deal (15% of the target's Maximum Hp) extra damage (no more than 1500% of Attack), if the target is in Back-line, she will deal (108% of Attack) extra damage that will Crit.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 751012012,Fenrir,Devastation,"Fenrir attacks her enemies by changing the terrain with her club, deals (214% of Attack) damage against 3 random enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (100% of Attack) damage each round. If the target is in Front-line, she will also deal (15% of the target's Maximum Hp) extra damage (no more than 1500% of Attack), if the target is in Back-line, she will deal (108% of Attack) extra damage that will Crit.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 751012013,Fenrir,Devastation,"Fenrir attacks her enemies by changing the terrain with her club, deals (218% of Attack) damage against 3 random enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (100% of Attack) damage each round. If the target is in Front-line, she will also deal (15% of the target's Maximum Hp) extra damage (no more than 1500% of Attack), if the target is in Back-line, she will deal (108% of Attack) extra damage that will Crit.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -4364,26 +4739,101 @@ Skill effect, when Vivian takes damage, the enemy tagged with Galaxy will also r
 752002043,Javelin,Freezing Weakness,"Deals extra 116% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 752002044,Javelin,Freezing Weakness,"Deals extra 118% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 752002045,Javelin,Freezing Weakness,"Deals extra 120% damage against [c][01a310]Frozen[-][/c] enemies.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003011,Geisha,Lost Voice,"Deals (118% of Attack) damage against all enemies and (25% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003012,Geisha,Lost Voice,"Deals (120% of Attack) damage against all enemies and (25% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003013,Geisha,Lost Voice,"Deals (122% of Attack) damage against all enemies and (30% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003014,Geisha,Lost Voice,"Deals (124% of Attack) damage against all enemies and (30% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003015,Geisha,Lost Voice,"Deals (126% of Attack) damage against all enemies and (35% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+752003011,Geisha,Lost Voice,"
+Geisha deals (202% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003012,Geisha,Lost Voice,"
+Geisha deals (204% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003013,Geisha,Lost Voice,"
+Geisha deals (206% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003014,Geisha,Lost Voice,"
+Geisha deals (208% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003015,Geisha,Lost Voice,"
+Geisha deals (210% of Attack) damage to 4 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds. If the target is already [c][01a310]Stunned[-][/c], Geisha will deal (250% of Attack) extra damage to it.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 752003021,Geisha,Magic Wall,Increases Attack by 27% and HP by 35%.
 752003022,Geisha,Magic Wall,"Increases Attack by 27%, HP by 37%."
 752003023,Geisha,Magic Wall,"Increases Attack by 27.5%, HP by 37%."
 752003024,Geisha,Magic Wall,"Increases Attack by 27.5%, HP by 37.5%."
 752003025,Geisha,Magic Wall,"Increases Attack by 28%, HP by 38%."
-752003031,Geisha,Final Movement,"After death, has 92% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003032,Geisha,Final Movement,"After death, has 94% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003033,Geisha,Final Movement,"After death, has 96% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003034,Geisha,Final Movement,"After death, has 98% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003035,Geisha,Final Movement,"After death, has 100% chance to [c][01a310]Stun[-][/c] Back-line enemies for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003041,Geisha,Captivation,"Basic Attack targets all enemies, deals (102% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003042,Geisha,Captivation,"Basic Attack targets all enemies, deals (104% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003043,Geisha,Captivation,"Basic Attack targets all enemies, deals (106% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003044,Geisha,Captivation,"Basic Attack targets all enemies, deals (108% of Attack) damage and has 65% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-752003045,Geisha,Captivation,"Basic Attack targets all enemies, deals (110% of Attack) damage and has 70% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+752003031,Geisha,Final Movement,"
+When Geisha is defeated, she has a 51% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003032,Geisha,Final Movement,"
+When Geisha is defeated, she has a 52% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003033,Geisha,Final Movement,"
+When Geisha is defeated, she has a 53% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003034,Geisha,Final Movement,"
+When Geisha is defeated, she has a 54% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003035,Geisha,Final Movement,"
+When Geisha is defeated, she has a 55% chance to [c][01a310]Stun[-][/c] her Backline enemies for 2 rounds. She will also grant 25% Damage Reduction that lasts for 2 rounds to all allies.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003041,Geisha,Captivation,"
+Geisha\'s Basic Attack will deal (102% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003042,Geisha,Captivation,"
+Geisha\'s Basic Attack will deal (104% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003043,Geisha,Captivation,"
+Geisha\'s Basic Attack will deal (106% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003044,Geisha,Captivation,"
+Geisha\'s Basic Attack will deal (108% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+752003045,Geisha,Captivation,"
+Geisha\'s Basic Attack will deal (110% of Attack) damage to 3 random enemies and has a 40% chance to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 752004011,Caitlyn,Explosive Shot,"Deals (224% of Attack) damage against 2 Back-line enemies, dealing extra (104% of Attack) damage each round for 4 rounds."
 752004012,Caitlyn,Explosive Shot,"Deals (228% of Attack) damage against 2 Back-line enemies, dealing extra (106% of Attack) damage each round for 4 rounds."
 752004013,Caitlyn,Explosive Shot,"Deals (232% of Attack) damage against 2 Back-line enemies, dealing extra (108% of Attack) damage each round for 4 rounds."
@@ -5169,26 +5619,76 @@ Mark effect, girls with this mark will take 55% extra damage, can\'t stack."
 753010043,Psychic,Bite Back,"While below 50% health, has 79% chance of dealing a 2-round [c][01a310]Stun[-][/c] on every enemy. (Can only be triggered once)\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753010044,Psychic,Bite Back,"While below 50% health, has 80% chance of dealing a 2-round [c][01a310]Stun[-][/c] on every enemy. (Can only be triggered once)\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753010045,Psychic,Bite Back,"While below 50% health, has 83% chance of dealing a 2-round [c][01a310]Stun[-][/c] on every enemy. (Can only be triggered once)\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011011,Turin,Nuclear Strike,"Deals (255% of Attack) damage against all backline enemies, increasing own Damage Reduction by 35% and Attack by 40% for 3 rounds. Provides additional 12% Damage Reduction for the whole team for 3 rounds (team buff cannot be stacked) and simultaneously has a 10% chance to remove 1 debuff from all allies including herself."
-753011012,Turin,Nuclear Strike,"Deals (260% of Attack) damage against all backline enemies, increasing own Damage Reduction by 35% and Attack by 40% for 3 rounds. Provides additional 12% Damage Reduction for the whole team for 3 rounds (team buff cannot be stacked) and simultaneously has a 20% chance to remove 1 debuff from all allies including herself."
-753011013,Turin,Nuclear Strike,"Deals (265% of Attack) damage against all backline enemies, increasing own Damage Reduction by 35% and Attack by 40% for 3 rounds. Provides additional 12% Damage Reduction for the whole team for 3 rounds (team buff cannot be stacked) and simultaneously has a 40% chance to remove 1 debuff from all allies including herself."
-753011014,Turin,Nuclear Strike,"Deals (270% of Attack) damage against all backline enemies, increasing own Damage Reduction by 35% and Attack by 40% for 3 rounds. Provides additional 12% Damage Reduction for the whole team for 3 rounds (team buff cannot be stacked) and simultaneously has a 70% chance to remove 1 debuff from all allies including herself."
-753011015,Turin,Nuclear Strike,"Deals (275% of Attack) damage against all backline enemies, increasing own Damage Reduction by 35% and Attack by 44% for 3 rounds. Provides additional 14% Damage Reduction for the whole team for 3 rounds (team buff cannot be stacked) and simultaneously removes 1 debuff from all allies including herself."
+753011011,Turin,Nuclear Strike,"
+Turin deals (305% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 40% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 12% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
+753011012,Turin,Nuclear Strike,"
+Turin deals (310% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 40% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 12% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
+753011013,Turin,Nuclear Strike,"
+Turin deals (315% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 40% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 12% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
+753011014,Turin,Nuclear Strike,"
+Turin deals (320% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 40% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 12% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
+753011015,Turin,Nuclear Strike,"
+Turin deals (325% of Attack) damage to all Backline enemies and has a 50% chance to [c][e28002]Taunt[-][/c] the targets for 2 rounds. She will increase her Damage Reduction by 35% and her Attack by 44% for 3 rounds, and recover (20% of self Maximum HP) HP. She will also provide an additional 14% Damage Reduction that lasts 3 rounds for all allies. (This buff cannot be stacked)
+
+[c][e28002]Taunt[-][/c]:
+A Control Effect.
+The Taunted target will compulsively target the caster of this Effect when releasing their Active Skill, dealing a Basic Attack, or triggering a Passive Skill that affects the enemies."
 753011021,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (127.5% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753011022,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (130% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753011023,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (132.5% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753011024,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (135% of Attack) against 4 random enemies, has a 30% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753011025,Turin,Call for Reinforce,"Turin controls 4 α bits to engage her enemies. Basic attack changed to deal (137% of Attack) against 4 random enemies, has a 35% chance to [c][01a310]Stun[-][/c] the targets for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011031,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 42%, Attack by 35%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011032,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 42%, Attack by 37%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011033,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 42.5%, Attack by 37%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011034,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 42.5%, Attack by 37.5%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011035,Turin,Plasma Field,"Turin stands in a plasma field, increases her HP by 43%, Attack by 38%, gains 35% Control Immunity and deals 100% extra damage to the [c][01a310]Stunned[-][/c] targets.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-753011041,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (153% of Attack) damage."
-753011042,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (156% of Attack) damage."
-753011043,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (159% of Attack) damage."
-753011044,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 30% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (162% of Attack) damage."
-753011045,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack. When attacked (counterattack not included) increases self Attack by 33% for 1 round and has a 100% chance to deal a counterattack on all enemies, dealing (165% of Attack) damage."
+753011031,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 42%, Attack by 35%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+753011032,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 42%, Attack by 37%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+753011033,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 42.5%, Attack by 37%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+753011034,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 42.5%, Attack by 37.5%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+753011035,Turin,Plasma Field,"
+Turin stands in a plasma field which increases her HP by 43%, Attack by 38%, Control Immunity by 35%, and damage dealt to [c][01a310]Stunned[-][/c] enemies by 100%.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
+753011041,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (153% of Attack) damage."
+753011042,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (156% of Attack) damage."
+753011043,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (159% of Attack) damage."
+753011044,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 30% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (162% of Attack) damage."
+753011045,Turin,Reverse the Tide,"Turin's bits will seek out the weak spots of her enemies during their attack.\n\nWhen attacked (counterattack not included), she increases her Attack by 33% and Damage Reduction by 10% for 1 round, has a 20% chance to remove 1 Debuff from all allies (This effect can only be triggered once per round), and has 100% chance to deal a counterattack to each enemy, dealing (165% of Attack) damage."
 753012011,N-Gen Iron Fist,Butterfly Whirlwind,"Iron Fist hovers above her enemies and seeks for their weak point to attack. Deals (204% of Attack) damage against 3 random enemies. If the target is not [c][01a310]Stunned[-][/c], the skill will have a 70% chance to [c][01a310]Stun[-][/c] the target for 2 rounds. If the target is [c][01a310]Stunned[-][/c], she will deal an additional (100% of Attack) damage that will Crit.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753012012,N-Gen Iron Fist,Butterfly Whirlwind,"Iron Fist hovers above her enemies and seeks for their weak point to attack. Deals (208% of Attack) damage against 3 random enemies. If the target is not [c][01a310]Stunned[-][/c], the skill will have a 70% chance to [c][01a310]Stun[-][/c] the target for 2 rounds. If the target is [c][01a310]Stunned[-][/c], she will deal an additional (100% of Attack) damage that will Crit.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 753012013,N-Gen Iron Fist,Butterfly Whirlwind,"Iron Fist hovers above her enemies and seeks for their weak point to attack. Deals (212% of Attack) damage against 3 random enemies. If the target is not [c][01a310]Stunned[-][/c], the skill will have a 70% chance to [c][01a310]Stun[-][/c] the target for 2 rounds. If the target is [c][01a310]Stunned[-][/c], she will deal an additional (100% of Attack) damage that will Crit.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -5629,26 +6129,106 @@ Basic Attack targets 2 random enemies, deals (121% of Attack) damage and tags th
 
 [c][e28002]Hornet Mark:[-][/c]
 Mark effect, increases the target\'s damage taken by 35%. Hornet Marks can stack. (Maximum damage that Hornet Mark can stack is 300%)"
-754011011,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (165% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011012,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (168% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011013,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (171% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011014,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (174% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011015,Mio,Searing Claws,"Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (178% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (20% of Mio's MAXIMUM HP) of their HP for 2 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+754011011,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (165% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011012,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (168% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011013,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (171% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011014,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (174% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (18% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011015,Mio,Searing Claws,"
+Mio subdues her enemies, allowing Rumpy to scratch them with his claws, dealing (178% of Attack) damage to 3 random enemies and steals 15% of their Attack for 3 rounds. This skill will also [c][01a310]Burn[-][/c] the enemy with the highest HP, burning away (20% of Mio\'s MAXIMUM HP) of their HP for 2 rounds.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754011021,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 37%, Attack by 25%, Crit by 30%"
 754011022,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 37%, Attack by 27%, Crit by 30%"
 754011023,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 37.5%, Attack by 27%, Crit by 30%"
 754011024,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 37.5%, Attack by 27.5%, Crit by 30%"
 754011025,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 38%, Attack by 28%, Crit by 30%"
-754011031,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (97% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011032,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (99% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011033,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (101% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011034,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (103% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 12% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011035,Mio,Tango of Flames,"Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (105% of Attack) damage against 3 random enemies. This attack suffocates them in gusts of hot winds, lowers 14% of their Attack and [c][01a310]Burns[-][/c] away (6% of Mio's MAXIMUM HP) of their HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011041,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (204% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011042,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (208% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011043,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (212% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011044,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (216% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-754011045,Mio,Burning Embers,"When Mio is controlled, the crystal shard on her dagger will protect her by healing herself (220% of Attack) Hp for 3 rounds and [c][01a310]Burns[-][/c] away (3.5% of Mio's MAXIMUM HP) of 3 random enemies' HP for 1 round.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+754011031,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (97% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011032,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (99% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011033,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (101% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011034,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (103% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011035,Mio,Tango of Flames,"
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (105% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 14% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011041,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (204% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011042,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (208% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011043,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (212% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011044,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (216% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+754011045,Mio,Burning Embers,"
+When Mio is affected by a Control Effect for the first time, the crystal shard on her dagger will protect her by immediately removing the Control Effect and increasing her Maximum HP by 20% permanently in this battle.
+Whenever Mio is affected by a Control Effect, she will recover (220% of Attack) HP every round for 3 rounds and [c][01a310]Burn[-][/c] 3 random enemies for 1 round, dealing (3.5% of Mio’s Maximum HP) damage per round. She will also [c][01a310]Burn[-][/c] the caster of the Control Effect for 1 round, dealing (5% of Mio\'s Maximum HP) damage per round.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754012011,Krystal,Divine Punishment,"
 Crystal shines and releases divine power from the sky, inflicting divine punishment on 3 random enemies. Deals (194% of Attack) damage to the 1st enemy and will [c][e28002]Crystallize[-][/c] them for 2 rounds. Deals (240% of Attack) damage to the 2nd enemy and tags the enemy with [c][e28002]Crystal Seal[-][/c] (activates after 1 round). Deals (286% of Attack) damage to the 3rd enemy and tags the enemy with a [c][e28002]Crystal Seal [-][/c] (activates after 2 rounds).
 
@@ -15331,3 +15911,6 @@ Damage is dealt once when Bleed is inflicted and at the beginning of each round 
 [c][e28002]Untainted[-][/c]:
 A Skill Effect that cannot stack.
 The owner of this Effect will recover 16% of lost HP and gain 12% Attack when they take damage from Basic Attacks and Active Skills of targets afflicted with [c][01a310]Bleed[-][/c]."
+501115,Sky Island,Control Resist I,Reduces the duration of Control Effects that affect Sky Island Enemies by 1 round.
+501116,Sky Island,Control Resist II,Reduces the duration of Control Effects that affect Sky Island Enemies by 2 rounds.
+503118,Sky Island,Weak Pulse,Sky Island Cupid will not gain [c][e28002]Heartbeat[-][/c] stacks.

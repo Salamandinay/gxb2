@@ -1,5 +1,6 @@
 local UnityEngine = UnityEngine
 local PartnerCard = import("app.components.PartnerCard")
+local Partner = import("app.models.Partner")
 local jobIds = {
 	xyd.PartnerJob.WARRIOR,
 	xyd.PartnerJob.MAGE,
@@ -147,6 +148,98 @@ function SlotPartnerCard:getGameObject()
 	return self.go
 end
 
+local DebrisItem = class("DebrisItem")
+local ItemTable = xyd.tables.itemTable
+
+function DebrisItem:ctor(go, parent)
+	self.go = go
+	self.selfNum = 0
+	self.curID = 0
+	self.parent = parent
+	self.progress = go:ComponentByName("progress", typeof(UIProgressBar))
+	self.progressSp = self.progress:ComponentByName("thumb", typeof(UISprite))
+	self.progressLabel = self.progress:ComponentByName("label", typeof(UILabel))
+	self.iconPos = self.go:NodeByName("iconPos").gameObject
+end
+
+function DebrisItem:update(index, realIndex, info)
+	if not info then
+		self.go:SetActive(false)
+
+		return
+	else
+		self.go:SetActive(true)
+	end
+
+	if self.curID == info.itemID and self.selfNum == info.itemNum then
+		return
+	end
+
+	self.data = info
+	self.itemIndex = index
+	local itemID = self.data.itemID
+	local itemNum = self.data.itemNum
+	self.selfNum = itemNum
+	self.curID = itemID
+	local params = {
+		show_has_num = true,
+		uiRoot = self.iconPos,
+		itemID = itemID,
+		itemNum = itemNum,
+		wndType = xyd.ItemTipsWndType.BACKPACK,
+		dragScrollView = self.parent.scrollViewDebris_
+	}
+
+	if ItemTable:showInBagType(itemID) == xyd.BackpackShowType.DEBRIS then
+		self.progress:SetActive(true)
+
+		local type_ = ItemTable:getType(itemID)
+		local partnerCost = ItemTable:partnerCost(itemID)
+
+		if type_ == xyd.ItemType.ARTIFACT_DEBRIS or type_ == xyd.ItemType.DRESS_DEBRIS then
+			if type_ == xyd.ItemType.ARTIFACT_DEBRIS then
+				partnerCost = ItemTable:treasureCost(itemID)
+			elseif type_ == xyd.ItemType.DRESS_DEBRIS then
+				local dress_summon_id = xyd.tables.itemTable:getSummonID(itemID)
+				partnerCost = xyd.tables.summonDressTable:getCost(dress_summon_id)
+			end
+		end
+
+		local str = itemNum .. "/" .. partnerCost[2]
+		self.progressLabel.text = str
+		self.progress.value = math.min(itemNum / partnerCost[2], 1)
+
+		if partnerCost[2] <= itemNum then
+			xyd.setUISprite(self.progressSp, xyd.Atlas.COMMON_UI, "bp_bar_green")
+		else
+			xyd.setUISprite(self.progressSp, xyd.Atlas.COMMON_UI, "bp_bar_blue_png")
+		end
+
+		if xyd.isIosTest() then
+			xyd.setUISprite(self.progressSp, nil, self.progressSp.spriteName .. "_ios_test")
+			xyd.setUISprite(self.progress:ComponentByName("bg", typeof(UISprite)), nil, "bp_bar_bg_ios_test")
+		end
+	else
+		self.progress:SetActive(false)
+
+		if itemID == xyd.ItemID.LUCKYBOXES_COIN then
+			params.notShowGetWayBtn = true
+		end
+	end
+
+	if not self.icon then
+		self.icon = xyd.getItemIcon(params, xyd.ItemIconType.ADVANCE_ICON)
+	else
+		self.icon:setInfo(params)
+	end
+
+	self.name = "debris_item_" .. self.itemIndex
+end
+
+function DebrisItem:getGameObject()
+	return self.go
+end
+
 local SlotWindow = class("SlotWindow", import(".BaseWindow"))
 local CommonTabBar = import("app.common.ui.CommonTabBar")
 local WindowTop = import("app.components.WindowTop")
@@ -165,6 +258,7 @@ function SlotWindow:ctor(name, params)
 	self.currentJobId = 0
 	self.guideChosenGroup = 1
 	self.currentGuideJobId = 0
+	self.collectionBefore = xyd.models.slot:getCollectionCopy()
 	local sortType = xyd.db.misc:getValue("slow_window_sort_type")
 
 	if sortType then
@@ -193,6 +287,7 @@ function SlotWindow:initWindow()
 	self:initLayout()
 	self:registerEvent()
 	self:initFixedMultiWrapContent(self.scrollView_, self.wrapContent_, self.partnerCard_, self.SlotPartnerCard)
+	self:initDebrisFixedMultiWrapContent(self.scrollViewDebris_, self.wrapContentDebris_, self.debrisItem_, DebrisItem)
 	self:initData()
 
 	if self.params_.type and tonumber(self.params_.type) > 0 then
@@ -211,6 +306,9 @@ function SlotWindow:getUIComponent()
 	self.nav = winTrans:NodeByName("middle/nav").gameObject
 	self.labelHero = self.nav:ComponentByName("tab_1/label", typeof(UILabel))
 	self.labelGuide = self.nav:ComponentByName("tab_2/label", typeof(UILabel))
+	self.labelDebris = self.nav:ComponentByName("tab_3/label", typeof(UILabel))
+	self.imgDebrisRed_ = self.nav:ComponentByName("tab_3/imgDebrisRed_", typeof(UISprite))
+	self.tab_3 = self.nav:NodeByName("tab_3").gameObject
 	self.partnerNone = winTrans:NodeByName("middle/partnerNone").gameObject
 	self.labelNoneTips = self.partnerNone:ComponentByName("labelNoneTips", typeof(UILabel))
 	local content = winTrans:NodeByName("middle/content").gameObject
@@ -222,6 +320,7 @@ function SlotWindow:getUIComponent()
 	self.guideNumLabel = content:ComponentByName("guideNumLabel", typeof(UILabel))
 	self.guideNumLabel.text = __("HAD_COLLECTED")
 	local container = self.window_:NodeByName("middle/content/main_container")
+	self.mainContainer = container
 	local scrollView = container:ComponentByName("scroll_view", typeof(UIScrollView))
 	self.scrollView_ = scrollView
 	self.renderPanel = container:ComponentByName("scroll_view", typeof(UIPanel))
@@ -233,6 +332,15 @@ function SlotWindow:getUIComponent()
 	dragScrollView.scrollView = scrollView
 
 	partnerCard:SetActive(false)
+
+	local containerDebris = self.window_:NodeByName("middle/content/debris_container")
+	self.debrisContainer = containerDebris
+	self.scrollViewDebris_ = containerDebris:ComponentByName("scroll_view", typeof(UIScrollView))
+	self.renderPanelDebris = containerDebris:ComponentByName("scroll_view", typeof(UIPanel))
+	self.wrapContentDebris_ = self.scrollViewDebris_:ComponentByName("wrap_content", typeof(MultiRowWrapContent))
+	self.debrisItem_ = containerDebris:NodeByName("debrisItem").gameObject
+
+	self.debrisItem_:SetActive(false)
 
 	self.filter = {}
 	self.filterChosen = {}
@@ -319,32 +427,59 @@ function SlotWindow:initFixedMultiWrapContent(scrollView, wrapContent_, partnerC
 	self.multiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(scrollView, wrapContent_, partnerCard, SlotPartnerCard, self)
 end
 
+function SlotWindow:initDebrisFixedMultiWrapContent(scrollView, wrapContent_, item, itemClasss)
+	self.debrisMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(scrollView, wrapContent_, item, itemClasss, self)
+end
+
 function SlotWindow:registerEvent()
 	UIEventListener.Get(self.addSlotBtn).onClick = handler(self, self.addSlotSpace)
-	self.topBar_ = CommonTabBar.new(self.nav, 2, function (index)
+	self.topBar_ = CommonTabBar.new(self.nav, 3, function (index)
 		local win = xyd.getWindow("slot_window")
 
 		if not win then
 			return
 		end
 
+		self.curTabIndex = index
+
 		if index == 1 then
 			xyd.SoundManager.get():playSound(xyd.SoundID.TAB)
 			self.guideFilterNode:SetActive(false)
 			self.filterNode:SetActive(true)
+			self.sortBtnNew:SetActive(true)
 			self.addSlotGroup:SetActive(true)
+			self.mainContainer:SetActive(true)
+			self.debrisContainer:SetActive(false)
 			self:updateDataGroup()
+			self:resetJobSelectBtn()
+			self.groupSelectLabel:SetActive(true)
 
 			self.groupSelectLabel.text = tonumber(self.chosenGroup) == 0 and "" or __("GROUP_" .. self.chosenGroup)
-		else
+		elseif index == 2 then
 			xyd.SoundManager.get():playSound(xyd.SoundID.TAB)
 			xyd.SoundManager.get():playSound(2128)
 			self.guideFilterNode:SetActive(true)
 			self.filterNode:SetActive(false)
+			self.sortBtnNew:SetActive(false)
 			self.addSlotGroup:SetActive(false)
+			self.mainContainer:SetActive(true)
+			self.debrisContainer:SetActive(false)
 			self:updateDataGroup(true)
+			self:resetJobSelectBtn()
+			self.groupSelectLabel:SetActive(true)
 
 			self.groupSelectLabel.text = __("GROUP_" .. self.guideChosenGroup)
+		else
+			xyd.SoundManager.get():playSound(xyd.SoundID.TAB)
+			xyd.SoundManager.get():playSound(2128)
+			self.guideFilterNode:SetActive(false)
+			self.filterNode:SetActive(true)
+			self.sortBtnNew:SetActive(false)
+			self.addSlotGroup:SetActive(false)
+			self.mainContainer:SetActive(false)
+			self.debrisContainer:SetActive(true)
+			self.groupSelectLabel:SetActive(false)
+			self:updateDataGroup()
 		end
 	end)
 	self.sortTab = CommonTabBar.new(self.sortPop, 11, function (index)
@@ -369,6 +504,179 @@ function SlotWindow:registerEvent()
 		local slotNum = xyd.models.slot:getSlotNum()
 		self.slotNum.text = tostring(#self.sortedPartners[tostring(self.sortType) .. "_0"]) .. "/" .. tostring(slotNum)
 	end)
+	self.eventProxy_:addEventListener(xyd.event.SUMMON, handler(self, self.summonCallback))
+	self.eventProxy_:addEventListener(xyd.event.SUMMON_WISH, handler(self, self.summonCallback))
+	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, handler(self, self.onItemChange))
+	self.eventProxy_:addEventListener(xyd.event.SELL_ITEM, handler(self, self.sellCallback))
+end
+
+function SlotWindow:onItemChange(event)
+	self.needCheckPartnerData = true
+	local items = event.data.items
+	local flags = {
+		[xyd.BackpackShowType.EQUIP] = false,
+		[xyd.BackpackShowType.ITEM] = false,
+		[xyd.BackpackShowType.DEBRIS] = false,
+		[xyd.BackpackShowType.ARTIFACT] = false
+	}
+
+	for i = 1, #items do
+		local item = items[i]
+		local item_id = item.item_id
+		local type = ItemTable:showInBagType(item_id)
+		flags[type] = true
+	end
+
+	for type, flagValue in pairs(flags) do
+		if flagValue and type == xyd.BackpackShowType.DEBRIS then
+			self:checkDebrisData()
+
+			if self.curTabIndex and self.curTabIndex == 3 then
+				self.debrisMultiWrap_:setInfos(self.debrisData[self.chosenGroup][self.currentJobId], {
+					keepPosition = true
+				})
+
+				if #self.debrisData[self.chosenGroup][self.currentJobId] <= 0 then
+					self.partnerNone:SetActive(true)
+
+					self.labelNoneTips.text = __("NO_DEBRIS")
+				else
+					self.partnerNone:SetActive(false)
+				end
+			end
+		end
+	end
+end
+
+function SlotWindow:summonCallback(event)
+	dump(self.collectionBefore, "self.collectionBefore")
+
+	local items = event.data.summon_result.items
+	local partners = event.data.summon_result.partners
+	local prophet_window = xyd.WindowManager.get():getWindow("prophet_window")
+
+	if tonumber(event.data.summon_id) == 10 or tonumber(event.data.summon_id) == 17 then
+		return
+	elseif prophet_window then
+		return
+	end
+
+	local params = {}
+	local flag = false
+	local itemID_ = 0
+	local callback = nil
+	local hasFive = false
+
+	local function checkMore(itemID)
+		if itemID_ ~= 0 and itemID_ ~= itemID then
+			flag = true
+		else
+			itemID_ = itemID
+		end
+	end
+
+	if #items > 0 then
+		for i in ipairs(items) do
+			table.insert(params, items[i])
+			checkMore(items[i].item_id)
+		end
+	end
+
+	local new5stars = {}
+
+	if #partners > 0 then
+		new5stars = self:isHasNew(event)
+
+		for i in ipairs(partners) do
+			local star = xyd.tables.partnerTable:getStar(partners[i].table_id) + partners[i].awake
+
+			table.insert(params, {
+				item_num = 1,
+				item_id = partners[i].table_id,
+				star = star
+			})
+			checkMore(partners[i].table_id)
+
+			if not hasFive then
+				local star = xyd.tables.partnerTable:getStar(partners[i].table_id)
+
+				if star >= 5 then
+					hasFive = true
+				end
+			end
+		end
+	end
+
+	local effectCallBack = nil
+
+	function effectCallBack()
+		xyd.WindowManager:get():closeWindow("summon_res_window")
+
+		self.collectionBefore = xyd.models.slot:getCollectionCopy()
+
+		dump(self.collectionBefore, "self.collectionBefore")
+
+		if flag then
+			xyd.WindowManager.get():openWindow("alert_heros_window", {
+				data = params,
+				callback = callback
+			})
+		else
+			xyd.alertItems(params, callback, __("SUMMON"))
+		end
+
+		if hasFive then
+			print("评分引导监听")
+
+			local evaluate_have_closed = xyd.db.misc:getValue("evaluate_have_closed") or false
+			local lastTime = xyd.db.misc:getValue("evaluate_last_time") or 0
+
+			print(evaluate_have_closed)
+			print(not evaluate_have_closed and lastTime)
+			print(not evaluate_have_closed and lastTime and xyd.getServerTime() - lastTime > 3 * xyd.DAY_TIME)
+
+			if not evaluate_have_closed and lastTime and xyd.getServerTime() - lastTime > 3 * xyd.DAY_TIME then
+				local win = xyd.getWindow("main_window")
+
+				print("评分引导监听成功")
+				win:setHasEvaluateWindow(true, xyd.EvaluateFromType.COMPOSE)
+			end
+		end
+	end
+
+	if #new5stars > 0 then
+		xyd.onGetNewPartnersOrSkins({
+			partners = new5stars,
+			callback = effectCallBack
+		})
+	else
+		effectCallBack()
+	end
+end
+
+function SlotWindow:isHasNew(event)
+	local partners = event.data.summon_result.partners
+	local new5stars = {}
+
+	for i = 1, #partners do
+		local np = Partner.new()
+
+		np:populate(partners[i])
+
+		if not self.collectionBefore[np:getTableID()] then
+			table.insert(new5stars, np:getTableID())
+		end
+	end
+
+	return new5stars
+end
+
+function SlotWindow:sellCallback(event)
+	local items = event.data.items
+
+	if #items > 0 then
+		xyd.alertItems(items)
+	end
 end
 
 function SlotWindow:addSlotSpace()
@@ -612,8 +920,11 @@ function SlotWindow:initLayout()
 	self.sortBtnLable.text = __("SORT")
 	self.labelHero.text = __("PARTNER2")
 	self.labelGuide.text = __("TUJIAN")
+	self.labelDebris.text = __("DEBRIS")
 	self.labelLev.text = __("LEV")
 	self.labelQuality.text = __("GRADE")
+
+	self:checkDebrisRed()
 end
 
 function SlotWindow:onClickSortBtn()
@@ -628,6 +939,16 @@ function SlotWindow:onJobSelectBtn()
 		self.jobArrowDown:SetActive(true)
 		self.jobGroup:SetActive(true)
 	else
+		self.jobArrowState = true
+
+		self.jobArrowUp:SetActive(true)
+		self.jobArrowDown:SetActive(false)
+		self.jobGroup:SetActive(false)
+	end
+end
+
+function SlotWindow:resetJobSelectBtn()
+	if not self.jobArrowState then
 		self.jobArrowState = true
 
 		self.jobArrowUp:SetActive(true)
@@ -821,9 +1142,34 @@ function SlotWindow:updateDataGroup(isGuide, isEvent)
 
 		self.guideNum:SetActive(true)
 		self.guideNumLabel:SetActive(true)
+	elseif self.curTabIndex and self.curTabIndex == 3 then
+		self:checkDebrisData()
+		self.debrisMultiWrap_:setInfos(self.debrisData[self.chosenGroup][self.currentJobId], {})
+
+		if #self.debrisData[self.chosenGroup][self.currentJobId] <= 0 then
+			self.partnerNone:SetActive(true)
+
+			self.labelNoneTips.text = __("NO_DEBRIS")
+		else
+			self.partnerNone:SetActive(false)
+		end
+
+		self.guideNum:SetActive(false)
+		self.guideNumLabel:SetActive(false)
 	else
 		self.guideNum:SetActive(false)
 		self.guideNumLabel:SetActive(false)
+
+		if self.needCheckPartnerData then
+			self.sortedPartners = {}
+			local sortedPartners = xyd.models.slot:getSortedPartners()
+
+			self:addSortedPartners(sortedPartners)
+
+			local slotNum = xyd.models.slot:getSlotNum()
+			self.slotNum.text = tostring(#sortedPartners[tostring(self.sortType) .. "_0"]) .. "/" .. tostring(slotNum)
+			self.needCheckPartnerData = false
+		end
 
 		local key = nil
 
@@ -851,6 +1197,112 @@ function SlotWindow:updateDataGroup(isGuide, isEvent)
 			self.partnerNone:SetActive(false)
 		end
 	end
+end
+
+function SlotWindow:checkDebrisRed()
+	if not xyd.checkRedMarkSetting(xyd.RedMarkType.COMPOSE) then
+		self.imgDebrisRed_:SetActive(false)
+	else
+		local datas_DEBRIS = xyd.models.backpack:getItems_withBagType(xyd.BackpackShowType.DEBRIS)
+		local canCompose = xyd.models.backpack:checkCanCompose()
+
+		self.imgDebrisRed_:SetActive(canCompose)
+	end
+end
+
+function SlotWindow:checkDebrisData()
+	self.debrisData = {}
+
+	for i = 0, xyd.GROUP_NUM do
+		self.debrisData[i] = {}
+
+		for j = 0, xyd.PartnerJob.LENGTH do
+			self.debrisData[i][j] = {}
+		end
+	end
+
+	self:checkDebrisRed()
+
+	local tmpDatas = xyd.models.backpack:getItems_withBagType(xyd.BackpackShowType.DEBRIS)
+	local datas = {}
+
+	for index, data in pairs(tmpDatas) do
+		local type = ItemTable:getType(data.itemID)
+
+		if type == xyd.ItemType.HERO_DEBRIS or type == xyd.ItemType.HERO_RANDOM_DEBRIS then
+			table.insert(self.debrisData[0][0], data)
+		end
+	end
+
+	self:sortDebris(self.debrisData[0][0] or {})
+
+	for _, data in pairs(self.debrisData[0][0]) do
+		local group = ItemTable:getGroup(data.itemID)
+		local cost = ItemTable:partnerCost(data.itemID)
+		local job = xyd.tables.partnerTable:getJob(cost[1])
+
+		if group and group > 0 then
+			if job and job > 0 then
+				table.insert(self.debrisData[group][job], data)
+			end
+
+			table.insert(self.debrisData[group][0], data)
+		end
+
+		if job and job > 0 then
+			table.insert(self.debrisData[0][job], data)
+		end
+	end
+end
+
+function SlotWindow:sortDebris(data)
+	table.sort(data, function (a, b)
+		local aType = ItemTable:getType(a.itemID)
+		local bType = ItemTable:getType(b.itemID)
+
+		if aType == bType then
+			if aType == xyd.ItemType.HERO_RANDOM_DEBRIS then
+				local aCost = ItemTable:partnerCost(a.itemID)
+				local bCost = ItemTable:partnerCost(b.itemID)
+
+				if bCost[2] < aCost[2] then
+					return true
+				elseif aCost[2] == bCost[2] then
+					local aGroup = ItemTable:getGroup(a.itemID)
+					local bGroup = ItemTable:getGroup(b.itemID)
+
+					return aGroup < bGroup
+				end
+			elseif aType == xyd.ItemType.HERO_DEBRIS then
+				local aCost = ItemTable:partnerCost(a.itemID)
+				local bCost = ItemTable:partnerCost(b.itemID)
+				local aVal = 0
+				local bVal = 0
+				aVal = xyd.checkCondition(a.itemNum < aCost[2], 0, 10000)
+				bVal = xyd.checkCondition(b.itemNum < bCost[2], 0, 10000)
+				local starA = xyd.tables.partnerTable:getStar(aCost[1])
+				local starB = xyd.tables.partnerTable:getStar(bCost[1])
+				aVal = aVal + xyd.checkCondition(starB < starA, 1000, 0)
+				bVal = bVal + xyd.checkCondition(starA < starB, 1000, 0)
+				local groupA = xyd.tables.partnerTable:getGroup(aCost[1])
+				local groupB = xyd.tables.partnerTable:getGroup(bCost[1])
+				aVal = aVal + xyd.checkCondition(groupB < groupA, 100, 0)
+				bVal = bVal + xyd.checkCondition(groupA < groupB, 100, 0)
+				aVal = aVal + xyd.checkCondition(bCost[1] < aCost[1], 10, 0)
+				bVal = bVal + xyd.checkCondition(aCost[1] < bCost[1], 10, 0)
+				aVal = aVal + xyd.checkCondition(b.itemID < a.itemID, 1, 0)
+				bVal = bVal + xyd.checkCondition(a.itemID < b.itemID, 1, 0)
+
+				return aVal > bVal
+			end
+		elseif aType == xyd.ItemType.HERO_RANDOM_DEBRIS then
+			return true
+		else
+			return false
+		end
+
+		return false
+	end)
 end
 
 function SlotWindow:updateByDetailWnd(params)
@@ -942,7 +1394,7 @@ function SlotWindow:iosTestChangeUI()
 
 	xyd.setUITexture(iosBG, "Textures/texture_ios/bg_ios_test")
 
-	for i = 1, 2 do
+	for i = 1, 3 do
 		xyd.setUISprite(self.nav:ComponentByName("tab_" .. i .. "/chosen", typeof(UISprite)), nil, "nav_btn_blue_ios_test")
 		xyd.setUISprite(self.nav:ComponentByName("tab_" .. i .. "/unchosen", typeof(UISprite)), nil, "nav_btn_white_ios_test")
 	end

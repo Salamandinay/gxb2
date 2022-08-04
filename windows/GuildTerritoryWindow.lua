@@ -176,7 +176,10 @@ function GuildTerritoryWindow:registerEvent()
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GUILD_BOSS, self.redPoint4)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GUILD_WAR, self.redPoint5)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GUILD_CHAT, self.chatRed)
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GUILD_COMPETITION, self.guildCompetitionRedPoint)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.GUILD_COMPETITION,
+		xyd.RedMarkType.GUILD_COMPETITION_TASK_RED
+	}, self.guildCompetitionRedPoint)
 end
 
 function GuildTerritoryWindow:onTouchButton(type)

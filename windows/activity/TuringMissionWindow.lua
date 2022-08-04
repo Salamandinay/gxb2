@@ -192,6 +192,10 @@ function TuringMissionWindowItem:getUIComponent()
 	self.labelTitle_ = transGo:ComponentByName("labelTitle", typeof(UILabel))
 	self.label1 = transGo:ComponentByName("label1", typeof(UILabel))
 	self.label2 = transGo:ComponentByName("label2", typeof(UILabel))
+	self.tipsBtn = transGo:ComponentByName("tipsBtn", typeof(UISprite))
+	self.tips = transGo:NodeByName("tips").gameObject
+	self.tipsBg = self.tips:ComponentByName("tipsBg", typeof(UISprite))
+	self.tipsContent = self.tips:ComponentByName("tipsContent", typeof(UILabel))
 	self.itemsGroup_ = transGo:Find("itemsGroup")
 	self.itemsGroup_UILayout = transGo:ComponentByName("itemsGroup", typeof(UILayout))
 	self.touchField = transGo:NodeByName("touchField").gameObject
@@ -241,6 +245,23 @@ function TuringMissionWindowItem:initItem()
 	end
 
 	self.itemsGroup_UILayout:Reposition()
+
+	if xyd.tables.activityTuringMissionTable:getTips(self.id) == 0 then
+		self.tipsBtn:SetActive(false)
+	else
+		self.tipsBtn:SetActive(true)
+
+		self.labelTipsText = xyd.tables.activityTuringTextTable:getText(self.id)
+		self.tipsContent.text = self.labelTipsText
+
+		UIEventListener.Get(self.tipsBtn.gameObject).onPress = function (go, isPressed)
+			if isPressed then
+				self.tips:SetActive(true)
+			else
+				self.tips:SetActive(false)
+			end
+		end
+	end
 end
 
 return TuringMissionWindow

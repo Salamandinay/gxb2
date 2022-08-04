@@ -1296,6 +1296,7 @@ function PartnerDetailWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.UPGRADE_PARTNER_EX_SKILL, handler(self, self.onExUpgrade))
 	self.eventProxy_:addEventListener(xyd.event.RESET_PARTNER_EX_SKILL, handler(self, self.onExUpgrade))
 	self.eventProxy_:addEventListener(xyd.event.WINDOW_WILL_CLOSE, handler(self, self.onWindowWillClose))
+	self.eventProxy_:addEventListener(xyd.event.USE_OPTIONAL_GIFTBOX, handler(self, self.onUseOptionalGiftBox))
 end
 
 function PartnerDetailWindow:onWindowWillClose(event)
@@ -1321,6 +1322,29 @@ function PartnerDetailWindow:onExUpgrade(event)
 	self.partner_:updateAttrs()
 	self:updateSkill()
 	self:updateAttr()
+end
+
+function PartnerDetailWindow:onUseOptionalGiftBox(event)
+	if event.data ~= nil then
+		local item = {
+			event.data
+		}
+		local itemData = xyd.decodeProtoBuf(event.data)
+
+		if itemData.item_id and xyd.tables.itemTable:getType(itemData.item_id) == xyd.ItemType.SKIN then
+			xyd.onGetNewPartnersOrSkins({
+				destory_res = false,
+				skins = {
+					tonumber(itemData.item_id)
+				},
+				callback = function ()
+					xyd.alertItems(item)
+				end
+			})
+		else
+			xyd.alertItems(item)
+		end
+	end
 end
 
 function PartnerDetailWindow:onMarked()
@@ -4380,6 +4404,8 @@ function PartnerDetailWindow:onClickHeroIcon(params, this_icon, this_label, this
 	params.this_icon = this_icon
 	params.this_label = this_label
 	params.this_imgPlus = this_imgPlus
+	params.showBaoxiang = true
+	params.notShowGetWayBtn = true
 
 	xyd.WindowManager:get():openWindow("choose_partner_window", params)
 end
@@ -5627,7 +5653,9 @@ function PartnerDetailWindow:onSelectContainer(id)
 		end,
 		mTableID = mTableID,
 		needNum = self.materialNeedNumList_[tostring(mTableID)],
-		this_icon = self["shenxueFeed" .. id]
+		this_icon = self["shenxueFeed" .. id],
+		showBaoxiang = true,
+		notShowGetWayBtn = true
 	}
 
 	xyd.WindowManager.get():openWindow("choose_partner_window", params)
@@ -6088,7 +6116,6 @@ function PartnerDetailWindow:onRollBack(event)
 			data = datas
 		}, function ()
 			xyd.alertItems(new_items, nil, __("GET_ITEMS"))
-			dump(new_items)
 		end)
 	end)
 end
@@ -6164,9 +6191,6 @@ function PartnerDetailWindow:checkOpenPartnerBackWindow(event)
 	if self.checkOpenPartnerBackWindowFlag == true then
 		self.checkOpenPartnerBackWindowFlag = false
 		local data = xyd.decodeProtoBuf(event.data)
-
-		dump(data.partner_info.partner_id)
-		dump(self.partner_:getPartnerID())
 
 		if data.partner_info.partner_id == self.partner_:getPartnerID() then
 			xyd.WindowManager.get():openWindow("potentiality_back_window", {

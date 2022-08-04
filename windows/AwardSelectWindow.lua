@@ -332,10 +332,13 @@ function AwardSelectItem:onSelectItem()
 		self.parent.selectedItemIcon = self.itemIcon
 
 		if xyd.tables.itemTable:checkJobBoxID(self.data.itemID) then
+			local giftID = xyd.tables.itemTable:getGiftID(self.data.itemID)
+			local awards = xyd.tables.giftTable:getAwards(giftID)
+
 			if not self.parent.jobGiftBoxItemList then
 				self.parent.jobGiftBoxItemList = {}
 
-				for i = 1, 4 do
+				for i = 1, #awards do
 					local icon = xyd.getItemIcon({
 						uiRoot = self.parent.jobGiftBoxDes
 					})
@@ -346,6 +349,9 @@ function AwardSelectItem:onSelectItem()
 			end
 
 			self.parent.jobGiftBoxDes:SetActive(true)
+
+			self.parent.jobGiftBoxDes:GetComponent(typeof(UIWidget)).width = 100 * #awards + 60
+
 			self.parent.jobGiftBoxArrow:SetActive(true)
 
 			local itemGroupX = self.parent.itemGroup.transform.localPosition.x
@@ -356,14 +362,11 @@ function AwardSelectItem:onSelectItem()
 			self.parent.jobGiftBoxDes:Y(-140 + offsetY)
 			self.parent.jobGiftBoxArrow:Y(-77 + offsetY)
 
-			local x = itemGroupX + offsetX + 165 < 90 and itemGroupX + offsetX + 165 or 90
+			local x = itemGroupX + offsetX + #awards * 60 - 75 < -(#awards) * 40 + 250 and itemGroupX + offsetX + #awards * 60 - 75 or -(#awards) * 40 + 250
 
 			self.parent.jobGiftBoxDes:X(x)
 
-			local giftID = xyd.tables.itemTable:getGiftID(self.data.itemID)
-			local awards = xyd.tables.giftTable:getAwards(giftID)
-
-			for i = 1, 4 do
+			for i = 1, #awards do
 				self.parent.jobGiftBoxItemList[i]:setInfo({
 					itemID = awards[i][1],
 					num = awards[i][2],

@@ -163,24 +163,37 @@ function FormationItem:update(index, realIndex, info)
 				self.heroIcon_:setLock(false)
 			end
 		end
+	elseif battleType == xyd.BattleType.GUILD_COMPETITION and xyd.models.guild:getCompetitionSpecialPartner() and self.partner_:getPartnerID() == xyd.models.guild:getCompetitionSpecialTruePartnerInfo().truePartnerID then
+		self.heroIcon_:setLock(true)
 	end
 
 	local friendHelpBattleType = self.parent_.battleType
 
-	if friendHelpBattleType and (friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_EXTRA or friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_BATTLE) then
+	if friendHelpBattleType and (friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_EXTRA or friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_BATTLE or friendHelpBattleType == xyd.BattleType.GUILD_COMPETITION) then
 		if self.partnerId_ < 0 then
 			if not self.friendHelpIcon then
 				self.friendHelpIcon = NGUITools.AddChild(self.uiRoot_.gameObject, "frientHelpIcon")
 				self.friendHelpIconUISprite = self.friendHelpIcon:AddComponent(typeof(UISprite))
 
-				xyd.setUISpriteAsync(self.friendHelpIconUISprite, nil, "friend_boss_assist", nil, , )
+				if friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_EXTRA or friendHelpBattleType == xyd.BattleType.TIME_CLOISTER_BATTLE then
+					xyd.setUISpriteAsync(self.friendHelpIconUISprite, nil, "friend_boss_assist", nil, , )
 
-				local friendHelpIconUIWidget = self.friendHelpIcon:GetComponent(typeof(UIWidget))
-				friendHelpIconUIWidget.depth = self.uiRoot_:GetComponent(typeof(UIWidget)).depth + 50
-				friendHelpIconUIWidget.width = 36
-				friendHelpIconUIWidget.height = 34
+					local friendHelpIconUIWidget = self.friendHelpIcon:GetComponent(typeof(UIWidget))
+					friendHelpIconUIWidget.depth = self.uiRoot_:GetComponent(typeof(UIWidget)).depth + 50
+					friendHelpIconUIWidget.width = 36
+					friendHelpIconUIWidget.height = 34
 
-				self.friendHelpIcon.gameObject:SetLocalPosition(37, -40, 0)
+					self.friendHelpIcon.gameObject:SetLocalPosition(37, -40, 0)
+				elseif friendHelpBattleType == xyd.BattleType.GUILD_COMPETITION then
+					xyd.setUISpriteAsync(self.friendHelpIconUISprite, nil, "guild_competition_bg_gh", nil, , )
+
+					local friendHelpIconUIWidget = self.friendHelpIcon:GetComponent(typeof(UIWidget))
+					friendHelpIconUIWidget.depth = self.uiRoot_:GetComponent(typeof(UIWidget)).depth + 50
+					friendHelpIconUIWidget.width = 34
+					friendHelpIconUIWidget.height = 30
+
+					self.friendHelpIcon.gameObject:SetLocalPosition(37, -40, 0)
+				end
 			else
 				self.friendHelpIcon.gameObject:SetActive(true)
 			end
@@ -216,6 +229,10 @@ function FormationItem:onClick()
 				return
 			end
 		end
+	elseif battleType == xyd.BattleType.GUILD_COMPETITION and xyd.models.guild:getCompetitionSpecialPartner() and self.partner_:getPartnerID() == xyd.models.guild:getCompetitionSpecialTruePartnerInfo().truePartnerID then
+		xyd.alertTips(__("GUILD_COMPETITION_PARTNER_TEXT07"))
+
+		return
 	end
 
 	local isItemChoose = true
@@ -1623,7 +1640,7 @@ function BattleFormationWindow:campaignBattle(partnerParams)
 	end
 
 	xyd.Backend.get():request(xyd.mid.MAP_FIGHT, msg)
-	xyd.closeWindow("campaign_window")
+	xyd.closeWindow("campaign_window", nil, , true)
 end
 
 function BattleFormationWindow:towerBattle(partnerParams)
@@ -2409,7 +2426,48 @@ function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 	local params_data = self.params_
 	local pet_data = self.pet
 
+	dump(partnerParams, "Test1")
+
+	local isHasFakePartner = false
+
+	for i, info in pairs(partnerParams) do
+		if tonumber(info.partner_id) == -1 then
+			local trueInfo = xyd.models.guild:getCompetitionSpecialTruePartnerInfo()
+			local fakePartner = xyd.models.guild:getCompetitionSpecialPartner()
+			info.partner_id = trueInfo.truePartnerID
+			info.table_id = trueInfo.trueTableID
+			info.super = 1
+			info.equips = fakePartner:getEquipment()
+			info.potentials = fakePartner:getPotential()
+			info.skill_index = fakePartner:getSkillIndex()
+			info.is_fake_partner = 1
+			info.lv = fakePartner:getLevel()
+			info.awake = fakePartner:getAwake()
+			isHasFakePartner = true
+		end
+	end
+
+	dump(partnerParams, "Test2")
+
 	if params_data.type == 1 then
+		if isHasFakePartner then
+			local cost = xyd.tables.miscTable:split2num("guild_competition_partner_cost", "value", "#")
+
+			xyd.alertYesNo(__("GUILD_COMPETITION_PARTNER_TEXT03"), function (yes)
+				if yes then
+					if xyd.models.backpack:getItemNumByID(cost[1]) < cost[2] then
+						xyd.alertTips(__("NOT_ENOUGH", xyd.tables.itemTable:getName(cost[1])))
+
+						return
+					end
+
+					xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
+				end
+			end)
+
+			return
+		end
+
 		xyd.alertYesNo(__("GUILD_COMPETITION_FIGHT_TIME"), function (yes)
 			if yes then
 				xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
@@ -2672,6 +2730,10 @@ function BattleFormationWindow:getPartnerByPartnerId(partnerId)
 		partnerInfo = partner
 	end
 
+	if self.battleType == xyd.BattleType.GUILD_COMPETITION and xyd.models.guild:getCompetitionSpecialPartner() and tonumber(partnerId) < 0 then
+		partnerInfo = xyd.models.guild:getCompetitionSpecialPartner()
+	end
+
 	return partnerInfo
 end
 
@@ -2700,6 +2762,33 @@ function BattleFormationWindow:initNormalPartnerData(groupID, needUpdateTop)
 		end
 
 		table.insert(tempArr, 1, tonumber(self.params_.cloisterExtraPartnerId))
+
+		lvSortedList = tempArr
+	end
+
+	if self.battleType == xyd.BattleType.GUILD_COMPETITION then
+		local tempArr = {}
+		local searchFakePartnerId = nil
+
+		if xyd.models.guild:getCompetitionSpecialPartner() then
+			searchFakePartnerId = xyd.models.guild:getCompetitionSpecialTruePartnerInfo().truePartnerID
+		end
+
+		for i in pairs(lvSortedList) do
+			local isAdd = true
+
+			if searchFakePartnerId and searchFakePartnerId == lvSortedList[i] then
+				isAdd = false
+			end
+
+			if isAdd then
+				table.insert(tempArr, lvSortedList[i])
+			end
+		end
+
+		if xyd.models.guild:getCompetitionSpecialPartner() then
+			table.insert(tempArr, 1, tonumber(xyd.models.guild:getCompetitionSpecialPartnerId()))
+		end
 
 		lvSortedList = tempArr
 	end
@@ -3682,6 +3771,32 @@ function BattleFormationWindow:showPartnerDetail(partnerInfo)
 		local partnerParams = formationData.partnerParams
 		params.partnerParams = partnerParams
 		wndName = "activity_entrance_test_partner_window"
+	elseif self.battleType == xyd.BattleType.GUILD_COMPETITION and partnerInfo.partnerID < 0 then
+		if partnerInfo.partnerID < 0 then
+			local PartnerGuild = import("app.models.Partner")
+			local guildCopyPartner = nil
+			local copyPartner = xyd.models.guild:getCompetitionSpecialPartner()
+
+			if copyPartner then
+				guildCopyPartner = copyPartner
+			else
+				guildCopyPartner = PartnerGuild.new()
+
+				guildCopyPartner:populate(partnerInfo)
+			end
+
+			local params = {
+				hide_btn = false,
+				index = 1,
+				partner = guildCopyPartner,
+				table_id = partnerInfo.tableID,
+				partner_list = {}
+			}
+
+			xyd.WindowManager.get():openWindow("guild_competition_special_partner_window", params)
+
+			return
+		end
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		wndName = "partner_detail_window"
 		params.isTrial = true
@@ -3744,7 +3859,21 @@ end
 
 function BattleFormationWindow:saveLocalformation(formation)
 	if self.battleType and xyd.arrayIndexOf(self.showFormationTeamTypeArr, self.battleType) > 0 and self.isEditorQuickTeam then
+		local dbParams = {
+			key = self.battleType .. "_quick",
+			value = self.chooseQuickTeam_
+		}
+
+		xyd.db.formation:addOrUpdate(dbParams)
+
 		return
+	else
+		local dbParams = {
+			key = self.battleType .. "_quick",
+			value = 0
+		}
+
+		xyd.db.formation:addOrUpdate(dbParams)
 	end
 
 	local dbParams = {
@@ -4121,6 +4250,16 @@ function BattleFormationWindow:getBattleType()
 end
 
 function BattleFormationWindow:readStorageFormation()
+	if self.battleType and xyd.arrayIndexOf(self.showFormationTeamTypeArr, self.battleType) > 0 then
+		local dbVal = tonumber(xyd.db.formation:getValue(self.battleType .. "_quick"))
+
+		if dbVal and dbVal > 0 then
+			self.storageTeam_ = dbVal
+
+			return
+		end
+	end
+
 	local dbVal = xyd.db.formation:getValue(self.battleType)
 
 	if self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
@@ -4241,6 +4380,16 @@ function BattleFormationWindow:readStorageFormation()
 				end
 			elseif self.battleType == xyd.BattleType.QUICK_TEAM_SET then
 				-- Nothing
+			elseif self.battleType == xyd.BattleType.GUILD_COMPETITION then
+				if xyd.models.guild:getCompetitionSpecialPartner() and sPartnerID and sPartnerID == xyd.models.guild:getCompetitionSpecialTruePartnerInfo().truePartnerID then
+					tmpPartnerList[i] = nil
+					self.nowPartnerList[i] = nil
+				end
+
+				if sPartnerID and sPartnerID < 0 then
+					tmpPartnerList[i] = nil
+					self.nowPartnerList[i] = nil
+				end
 			elseif self.ifChooseEnemy then
 				-- Nothing
 			elseif not self:getPartnerByPartnerId(sPartnerID) then
@@ -4419,6 +4568,12 @@ function BattleFormationWindow:initQuickFormationTeam()
 				self:onTouchFormationQuickTeam(index)
 			end)
 		end
+
+		if self.storageTeam_ and self.storageTeam_ > 0 then
+			self:waitForFrame(5, function ()
+				self:onTouchFormationQuickTeam(self.storageTeam_, true)
+			end)
+		end
 	end
 end
 
@@ -4473,17 +4628,22 @@ function BattleFormationWindow:moveQuickFormationTeamGroup()
 	end
 end
 
-function BattleFormationWindow:onTouchFormationQuickTeam(index)
+function BattleFormationWindow:onTouchFormationQuickTeam(index, is_smart)
 	if self.redStatus_[index] == 1 then
 		xyd.alertTips(__("QUICK_FORMATION_TEXT11"))
 	end
 
-	if index ~= 0 then
+	if index == 0 then
+		-- Nothing
+	else
 		self.isEditorQuickTeam = true
 
 		self.chooseGroup:SetActive(false)
 		self.formationTeamEditorDownShow:SetActive(true)
-		self:onQuickFormationTeamBtnTouch()
+
+		if not is_smart then
+			self:onQuickFormationTeamBtnTouch()
+		end
 	end
 
 	if index == 0 then
@@ -4493,6 +4653,8 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index)
 		self:onChoosePet({
 			0
 		})
+
+		self.battleFormationTeamBtnLabel.text = __("QUICK_FORMATION_TEXT05")
 	else
 		self:clearPartners()
 
@@ -4537,6 +4699,9 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index)
 		self:onChoosePet({
 			xyd.models.quickFormation:getPet(index)
 		})
+
+		local name = xyd.models.quickFormation:getTeamName(index)
+		self.battleFormationTeamBtnLabel.text = name
 	end
 end
 

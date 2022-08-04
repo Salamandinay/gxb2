@@ -450,12 +450,24 @@ function PartnerInfoWindow:extraCheck()
 
 	if activity_firework_shop_wd then
 		self.btnWays_.gameObject:SetActive(false)
+
+		return
+	end
+
+	local choose_partner_debris_wd = xyd.WindowManager.get():getWindow("choose_partner_debris_window")
+
+	if choose_partner_debris_wd then
+		self.btnWays_.gameObject:SetActive(false)
+
+		return
 	end
 
 	local activity_wnd = xyd.WindowManager.get():getWindow("activity_window")
 
 	if activity_wnd and (xyd.Global.curActivityID == 286 or xyd.Global.curActivityID == 290) then
 		self.btnWays_.gameObject:SetActive(false)
+
+		return
 	end
 end
 

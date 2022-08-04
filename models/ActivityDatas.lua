@@ -295,7 +295,8 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_SAND_SEARCH] = require("app.models.datas.ActivitySandSearchData"),
 	[xyd.ActivityID.ACTIVITY_SAND_GIFTBAG] = require("app.models.datas.ActivitySandGiftbagData"),
 	[xyd.ActivityID.ACTIVITY_SAND_SHOP] = require("app.models.datas.ActivitySandShopData"),
-	[xyd.ActivityID.ACTIVITY_SAND_MISSION] = require("app.models.datas.ActivitySandMissionData")
+	[xyd.ActivityID.ACTIVITY_SAND_MISSION] = require("app.models.datas.ActivitySandMissionData"),
+	[xyd.ActivityID.ACTIVITY_FREE_REVERGE] = require("app.models.datas.ActivityFreeRevertData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

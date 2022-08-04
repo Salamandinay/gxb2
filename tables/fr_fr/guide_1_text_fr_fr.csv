@@ -20,7 +20,7 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 19,,,,,
 20,,,,,
 21,"Senpai, vous avez obtenu des [c][d76500]Fragments[-][/c] !\nAppuyez ici pour les utiliser !",buttoncrop_1,0|0,,
-22,"Senpai, ici vous pouvez [c][d76500]invoquer[-][/c] une Fille avec vos Fragments !",buttoncrop_11,0|2,,
+22,"Senpai, ici vous pouvez [c][d76500]invoquer[-][/c] une Fille avec vos Fragments !",buttoncrop_38,0|2,,
 23,"Si vous avez assez de Fragments, vous pourrez appuyer sur l'avatar de la Fille pour l'invoquer !",,,,
 24,,,,,
 25,,,,,
@@ -110,8 +110,8 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 109,Venez voir ! Appuyez sur [c][d76500]Guilde[-][/c] pour rejoindre ou créer une Guilde !,,,,
 110,"Senpai, je sens quelque chose de particulier chez toi, tu dois être... ""l'Élu"" !",buttoncrop_26,0|0,,
 111,"En ce moment, c'est la période de Recrutement des Guildes. Que dirais-tu de créer ta propre guilde? Tu peux créer ta propre Guilde gratuitement la première fois !",,,,
-112,"Senpai, vous avez obtenu des Fragments !\nAppuyez ici pour les [c][d76500]invoquer[-][/c] !",buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
-113,"Senpai, ici vous pouvez [c][d76500]invoquer[-][/c] une Fille avec des Fragments !",buttoncrop_11,0|6,,
+112,"Senpai, vous avez obtenu des [c][d76500]Fragments[-][/c] !\nAppuyez ici pour les utiliser !",buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
+113,"Senpai, ici vous pouvez [c][d76500]invoquer[-][/c] une Fille avec des Fragments !",buttoncrop_38,0|6,,
 114,,,,,
 115,,buttoncrop_27,0|0,buttoncrop_27_h5,0|0
 116,,,,,
@@ -149,3 +149,5 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 154,,,,,
 155,,,,,
 156,"Voici l'accès à la Configuration d'Équipe, appuyez pour prédéfinir vos équipes, Senpai~",,,,
+157,,,,,
+158,,buttoncrop_26,0|0,buttoncrop_26_h5,

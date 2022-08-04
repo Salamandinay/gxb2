@@ -19,9 +19,9 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 18,first_battle,1,5,,1,battle_window,,btnPause_,,,,,,2,friend_team_boss_crop5,0|0,,,1,0,1,,,,1,,,,,,shenji,
 19,first_battle,1,5,,1,battle_tips_window,,,,battleTip,,,,,,,,,,1,1,,,,,,,,,,,
 20,first_battle,1,5,,1,battle_win_v2_window,,confirmBtn,,hideGuide,,,,,,,,,,1,1,,,,,,,,,,,
-21,compose,1,6,,1,main_window,,MainwinBottomBtn_3,,,,,,0,buttoncrop_1,0|0,1|1.5,,,,1,-1,-320|-57,,,,,,,,,
-22,compose,1,6,,1,backpack_window,1,nav|tab_3,,,,,,2,buttoncrop_11,0|2,,,,,1,-1,-330|295,,,,,,,,,
-23,compose,1,6,,1,backpack_window,1,wrapContent|1/item/hero_icon,,,,,,,,,,,,1,1,-1,460|350,1,,,0.1,,,altar,,
+21,compose,1,6,,1,main_window,,MainwinBottomBtn_2,,,,,,0,buttoncrop_1,0|0,1|1.5,,,,1,-1,-176|-176,,,,,,,,,
+22,compose,1,6,,1,slot_window,1,nav|tab_3,,,,,,2,buttoncrop_38,0|0,,,,,1,-1,-330|295,,,,,,,,,
+23,compose,1,6,,1,slot_window,1,wrapContentDebris_|1/iconPos/advance_icon/hero_icon,,,,,,,,,,,,1,1,-1,460|350,1,,,0.1,,,altar,,
 24,compose,1,6,,1,item_tips_window,4,itemTips_|btnBotRight_,,,,,,,,,,,,1,1,,,,,,0.1,,,,,
 25,compose,1,6,,1,debris_summon_window,,btnSummon_,,,,1,,,,,,,,1,1,,,,,,,,,,,
 26,compose,1,6,,1,alert_award_window,,btnSure_,,,,,,,,,,,,1,1,,,,,,0.2,,,,,
@@ -110,8 +110,8 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 109,guild_free,1,36,,,main_window,,MainwinBottomBtn_5,,,,,,0,,,1|1.5,,1,,1,-1,-399|-107,,,,0.2,,,,,
 110,guild_free,1,36,,,guild_join_window,,-1,,,,,,,,,,,,,2,-1,-350|-140,,,,0.2,,,,,
 111,guild_free,1,36,,,guild_join_window,,-1,,,,1,36,,buttoncrop_31,0|0,,,,,2,-1,-350|240,,,,0.2,,,,,
-112,compose_five,1,37,,,main_window,,MainwinBottomBtn_3,,,,,,0,buttoncrop_1,0|0,1|1.5,,,,1,-1,-329|-62,,,,,,,,,1
-113,compose_five,1,37,1,,backpack_window,1,nav|tab_3,,,,1,,2,buttoncrop_11,0|6,,,,,1,-1,-330|295,,,,,,,,,1
+112,compose_five,1,37,,,main_window,,MainwinBottomBtn_2,,,,,,0,buttoncrop_1,0|0,1|1.5,,,,1,-1,-176|-176,,,,,,,,,1
+113,compose_five,1,37,1,,slot_window,1,nav|tab_3,,,,1,,2,buttoncrop_38,0|6,,,,,1,-1,-330|295,,,,,,,,,1
 114,old_building,1,42,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,0.5,,,,,
 115,old_building,1,42,,,main_window,,arenaBtn,,,,,,2,buttoncrop_27,0|0,1.2|1.2,,1,,,,,,,,0.2,,,,,
 116,old_building,1,42,,,battle_choose_window,,gTower,,,,,,0,,,,,,,,,,,,,0.36,,,,,

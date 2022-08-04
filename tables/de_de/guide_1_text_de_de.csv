@@ -19,8 +19,8 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 18,,friend_team_boss_crop5,0|0,,
 19,,,,,
 20,,,,,
-21,"Hey Senpai, du hast einige [c][d76500]Mädchen-Fragmente[-][/c] gesammelt!\nTippe auf deinen Rucksack, um sie zusammenzusetzen~",buttoncrop_1,0|0,,
-22,"Senpai, hier geht es zur [c][d76500]Synthetisierung[-][/c]~",buttoncrop_11,0|2,,
+21,"Hey Senpai, du hast einige [c][d76500]Mädchen-Fragmente[-][/c] gesammelt!\nGehe auf die Mädchen-Seite, um sie zusammenzusetzen~",buttoncrop_1,0|0,,
+22,"Senpai, hier geht es zur [c][d76500]Synthetisierung[-][/c]~",buttoncrop_38,0|2,,
 23,Mit genug Fragmenten kannst du das Mädchen beschwören~,,,,
 24,,,,,
 25,,,,,
@@ -110,8 +110,8 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 109,"Hier~ Tippe auf [c][d76500]Gilde[-][/c], um einer Gilde beizutreten oder eine zu erstellen~",,,,
 110,"Oh Senpai, ich sehe etwas Besonderes in dir! Du bist sicher der Auserwählte.",buttoncrop_26,0|0,,
 111,"Wie passend. Die Gilden rekrutieren gerade ihre Leute. Wie wäre es, wenn du selber eine Gilde gründest? Als ""Auserwählter"" ist das beim ersten Mal umsonst!",,,,
-112,"Hey Senpai. Du hast einige Mädchen-Fragmente gesammelt!\nTippe auf deinen Rucksack, um sie zu [c][d76500]synthetisieren[-][/c]~",buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
-113,"Senpai, hier kannst du [c][d76500]Fragmente synthetisieren[-][/c]~",buttoncrop_11,0|6,,
+112,"Hey Senpai, du hast einige [c][d76500]Mädchen-Fragmente[-][/c] gesammelt!\nGehe auf die Mädchen-Seite, um sie zusammenzusetzen~",buttoncrop_27,-1|-1,buttoncrop_27_h5,0|0
+113,"Senpai, hier kannst du [c][d76500]Fragmente synthetisieren[-][/c]~",buttoncrop_38,0|6,,
 114,,,,,
 115,,buttoncrop_27,0|0,buttoncrop_27_h5,0|0
 116,,,,,
@@ -149,3 +149,5 @@ id,desc,mask_icon,icon_offset,mask_icon_h5,icon_offset_h5
 154,,,,,
 155,,,,,
 156,Hier ist der Eingang zum Voraufstellen. Hier kannst du gewünschte Teams vorher aufstellen~,,,,
+157,,,,,
+158,,buttoncrop_26,0|0,buttoncrop_26_h5,

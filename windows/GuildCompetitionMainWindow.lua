@@ -191,7 +191,13 @@ function GuildCompetitionMainWindow:getUIComponent()
 	self.noRecordTipsText = self.recordCon:ComponentByName("noRecordTipsText", typeof(UILabel))
 	self.recordNameText = self.recordCon:ComponentByName("recordNameText", typeof(UILabel))
 	self.challengeTimesText = self.recordCon:ComponentByName("challengeTimesText", typeof(UILabel))
+	self.taskBtn = self.recordCon:NodeByName("taskBtn").gameObject
+	self.taskRedPoint = self.taskBtn:ComponentByName("taskRedPoint", typeof(UISprite)).gameObject
 
+	self.taskRedPoint:SetActive(false)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.GUILD_COMPETITION_TASK_RED
+	}, self.taskRedPoint)
 	self.recordCon:Y(small_y)
 
 	self.personGroupItem = self.groupAction:NodeByName("personGroupItem").gameObject
@@ -390,6 +396,27 @@ function GuildCompetitionMainWindow:registerEvent()
 		xyd.WindowManager.get():openWindow("guild_competition_record_window", {
 			isAllGuildAward = true
 		})
+	end)
+	UIEventListener.Get(self.taskBtn.gameObject).onClick = handler(self, function ()
+		local timeInfo = xyd.models.guild:getGuildCompetitionLeftTime()
+
+		if timeInfo.type == 1 then
+			local duration = timeInfo.curEndTime - xyd.getServerTime()
+			local hour = duration / 3600
+			local secType = xyd.SecondsStrType.NORMAL
+
+			if hour > 48 then
+				secType = xyd.SecondsStrType.NOMINU
+			else
+				secType = xyd.SecondsStrType.NORMAL
+			end
+
+			xyd.alertTips(__("GUILD_COMPETITION_START_TIME", xyd.secondsToString(duration, secType)))
+
+			return
+		end
+
+		xyd.WindowManager.get():openWindow("guild_competition_active_window", {})
 	end)
 	UIEventListener.Get(self.showMoreRecordBtn.gameObject).onClick = handler(self, self.showRecordBtnClick)
 

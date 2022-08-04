@@ -90,7 +90,11 @@ function ActivityPromotionLadder:initUIComponent()
 	end
 
 	if #targetPartner5StarTableID == 1 then
+		self.targetIndex = 1
+
 		self.groupArrow:SetActive(false)
+		self:playTargetModelLoopEffect()
+		self:playPartnerPictureLoopEffect()
 	else
 		self:playArrowEffect()
 		self:playTargetModelLoopEffect()
@@ -134,6 +138,10 @@ function ActivityPromotionLadder:playTargetModelLoopEffect()
 		self.targetModelLoopEffect:play("idle", 0, 1)
 	end)
 
+	if #targetPartner5StarTableID == 1 then
+		return
+	end
+
 	local function setter(value)
 		self.modelLoop.alpha = value
 	end
@@ -160,6 +168,10 @@ function ActivityPromotionLadder:playPartnerPictureLoopEffect()
 	xyd.setUITextureByNameAsync(self.partnerPictureLoop, pictureInfo[1], true)
 	self.partnerPictureLoop:SetLocalPosition(pictureInfo[3], pictureInfo[4], 0)
 	self.partnerPictureLoop:SetLocalScale(pictureInfo[2], pictureInfo[2], 1)
+
+	if #targetPartner5StarTableID == 1 then
+		return
+	end
 
 	local function setter(value)
 		self.partnerPictureLoop.alpha = value
@@ -590,7 +602,7 @@ function ActivityPromotionLadder:loadTarget()
 	local targetIndex = tonumber(xyd.db.misc:getValue("activity_promotion_ladder_target_record" .. self.activityData:getUpdateTime()))
 	self.targetIndex = targetIndex
 
-	if self.targetIndex and #targetPartner5StarTableID == 1 then
+	if #targetPartner5StarTableID == 1 then
 		self.targetIndex = 1
 	end
 end

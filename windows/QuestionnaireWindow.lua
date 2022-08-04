@@ -686,6 +686,7 @@ function QuestionnaireMatrixItem:ctor(params, parentGo, scrollerGo)
 	self.titleLabel_ = itemTrans:ComponentByName("group/titleLabel", typeof(UILabel))
 	self.img_ = itemTrans:ComponentByName("group/img", typeof(UISprite))
 	self.itemGroup_ = itemTrans:NodeByName("group/itemGroup").gameObject
+	self.btnJump = itemTrans:NodeByName("group/btnJump").gameObject
 
 	self:init(parentGo)
 end
@@ -696,6 +697,54 @@ end
 
 function QuestionnaireMatrixItem:init(parentGo)
 	self.titleLabel_.text = xyd.tables.questionnaireTextTable:getText(self.id_)
+	local checkType = xyd.tables.questionnaireTable:getCheckType(self.id_)
+
+	if checkType and checkType > 0 then
+		self.btnJump:SetActive(true)
+
+		local jumpID = xyd.tables.questionnaireTable:getCheckID(self.id_)
+		UIEventListener.Get(self.btnJump).onClick = handler(self, function ()
+			if checkType == 1 then
+				xyd.WindowManager.get():openWindow("guide_detail_window", {
+					partners = {
+						{
+							table_id = jumpID
+						}
+					},
+					table_id = jumpID,
+					closeCallBack = function ()
+						xyd.WindowManager.get():openWindow("questionnaire_window", {
+							current_id = self.main_id_
+						})
+					end
+				})
+				xyd.WindowManager.get():closeWindowsOnLayer(6)
+			elseif checkType == 2 then
+				xyd.WindowManager.get():openWindow("collection_skin_detail_window", {
+					skin_id = jumpID,
+					closeCallBack = function ()
+						xyd.WindowManager.get():openWindow("questionnaire_window", {
+							current_id = self.main_id_
+						})
+					end
+				})
+				xyd.WindowManager.get():closeWindowsOnLayer(6)
+			elseif checkType == 3 then
+				local office_id = xyd.tables.senpaiDressItemTable:getGroup(jumpID)
+
+				xyd.WindowManager.get():openWindow("dress_check_office_window", {
+					showALL = true,
+					office_id = office_id
+				})
+			end
+		end)
+	else
+		self.titleLabel_:X(-295)
+
+		self.titleLabel_.width = 590
+
+		self.btnJump:SetActive(false)
+	end
 
 	for i = 1, #self.options_ do
 		local obj = NGUITools.AddChild(self.itemGroup_, "icon" .. i)
