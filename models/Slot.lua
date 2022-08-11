@@ -1031,7 +1031,8 @@ function Slot:addPartner(partnerInfo)
 end
 
 function Slot:onRobPartnerUpdate(event, callback)
-	local params = event.data.target_partner_info
+	local dataInfo = xyd.decodeProtoBuf(event.data)
+	local params = dataInfo.target_partner_info
 
 	if params then
 		params = params.partner_info
@@ -1074,7 +1075,7 @@ function Slot:onRobPartnerUpdate(event, callback)
 		end
 	end
 
-	params = event.data.from_partner_info.partner_info
+	params = dataInfo.from_partner_info.partner_info
 	local partner_info_1 = {
 		tableID = params.table_id,
 		equipments = params.equips,

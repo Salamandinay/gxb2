@@ -2839,12 +2839,12 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 100002700,,,
 100002702,,,
 100002703,,,
-646101,Lame Enflammée 1,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 1 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-646201,Lame Enflammée 2,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 1 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-646301,Lame Enflammée 3,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 2 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-646401,Lame Enflammée 4,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 2 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-646501,Lame Enflammée 5,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-646601,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
+646101,Lame Enflammée 1,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 1 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+646201,Lame Enflammée 2,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 1 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+646301,Lame Enflammée 3,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 2 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+646401,Lame Enflammée 4,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 2 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+646501,Lame Enflammée 5,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+646601,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
 5201200,Ithil,Attaque Basique,Attaque Basique
 65201900,Ithil,Attaque Basique,Attaque Basique
 75201200,Ithil,Attaque Basique,Attaque Basique
@@ -3551,7 +3551,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 100402,Potentiel- 4,Potentiel：Attaque,Augmente l'Attaque de 8%.
 100403,Potentiel- 4,Potentiel：Vitesse,"Augmente la Vitesse de 20, les PV de 5%, l'Attaque de 3%."
 100501,Potentiel- 5,Potentiel：Coordination,"Après avoir lancé une Compétence Active ou une Attaque Basique, inflige 100% d'Attaque à la/aux cible(s) et leur inflige aléatoirement des Dégâts sur la Durée (Saignement, Empoisonnement, Brûlure) équivalent à 100% de sa propre Attaque pendant 2 tours."
-100502,Potentiel- 5,Potentiel：Gardien,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs ou les Dégâts sur la Durée 3 fois."
+100502,Potentiel- 5,Potentiel：Gardien,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs ou les Dégâts sur la Durée 3 fois."
 100503,Potentiel- 5,Potentiel：Hargne,"Après avoir été attaqué, récupère 4% de ses PV Max (Ne peut être déclenché au maximum 3 fois à chaque tour)"
 5201400,Rina,Attaque Basique,Attaque Basique
 65202100,Rina,Attaque Basique,Attaque Basique
@@ -9478,9 +9478,9 @@ Après que la cible marquée ait lancé sa Compétence Active ou son Attaque Bas
 6442101,Ailes d'Icare,Compétence de l'Antiquité,"À la fin du tour, augmente l'Attaque de 4% de la porteuse et les dégâts infligés de 1%."
 6442201,Ailes d'Icare,Compétence de l'Antiquité,"À la fin du tour, augmente l'Attaque de 7% de la porteuse et les dégâts infligés de 2%."
 6442301,Ailes d'Icare,Compétence de l'Antiquité,"À la fin du tour, augmente l'Attaque de 11% de la porteuse et les dégâts infligés de 4%."
-6706101,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige Blessure Mortelle à l'ennemi ayant le moins de PV pendant 1 tour.\nBlessure Mortelle：Effet de Compétence, non cumulable, qui réduit les Soins Reçus et la Résistance Totale de 10% de l'ennemi dans cet état, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
-6706201,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige Blessure Mortelle à l'ennemi ayant le moins de PV pendant 1 tour. \nBlessure Mortelle：Effet de Compétence, non cumulable, qui réduit les Soins Reçus et la Résistance Totale de 20% de l'ennemi dans cet état, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
-6706301,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige Blessure Mortelle à l'ennemi ayant le moins de PV pendant 1 tour. \nBlessure Mortelle：Effet de Compétence, non cumulable, qui réduit les Soins Reçus et la Résistance Totale de 30% de l'ennemi dans cet état, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
+6706101,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige [c][e28002]Blessure Mortelle[-][/c] à l'ennemi ayant le moins de PV pendant 1 tour.\n[c][e28002]Blessure Mortelle (Effet de Compétence, non cumulable) :[-][/c]\nRéduit les Soins Reçus et la Résistance Totale de 10% de la cible marquée, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
+6706201,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige [c][e28002]Blessure Mortelle[-][/c] à l'ennemi ayant le moins de PV pendant 1 tour.\n[c][e28002]Blessure Mortelle (Effet de Compétence, non cumulable) :[-][/c]\nRéduit les Soins Reçus et la Résistance Totale de 20% de la cible marquée, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
+6706301,Hikari,Compétence de l'Antiquité,"Lorsque la porteuse lance sa Compétence Active ou son Attaque Basique, elle inflige [c][e28002]Blessure Mortelle[-][/c] à l'ennemi ayant le moins de PV pendant 1 tour.\n[c][e28002]Blessure Mortelle (Effet de Compétence, non cumulable) :[-][/c]\nRéduit les Soins Reçus et la Résistance Totale de 30% de la cible marquée, ces pourcentages peuvent être remplacés par de meilleurs pourcentages."
 5201700,Monica,Attaque Basique,Attaque Basique
 65202400,Monica,Attaque Basique,Attaque Basique
 75201700,Monica,Attaque Basique,Attaque Basique
@@ -9795,13 +9795,13 @@ Après la mort de ce meurtrier, inflige des dégâts à tous les ennemis. (33% d
 6460201,Bâton des Jumelles,Compétence de l'Antiquité,"Lorsque la porteuse subit des dégâts (n'inclut pas les dégâts infligés par Bénédiction Maudite - Compétence Passive d'Izanami), réduit ces dégâts de l'équivalent de 100% de l'Attaque de la porteuse. Si elle subit encore des dégâts malgré cette réduction de dégâts, elle récupérera des PV équivalent à 30% de son Attaque."
 6460301,Bâton des Jumelles,Compétence de l'Antiquité,"Lorsque la porteuse subit des dégâts (n'inclut pas les dégâts infligés par Bénédiction Maudite - Compétence Passive d'Izanami), réduit ces dégâts de l'équivalent de 200% de l'Attaque de la porteuse. Si elle subit encore des dégâts malgré cette réduction de dégâts, elle récupérera des PV équivalent à 50% de son Attaque."
 6466101,Lame Enflammée,Compétence de l'Antiquité,"Une fois que le bouclier est détruit, la porteuse récupérera 5% de ses PV Max et sa Résistance Totale augmentera de 10% pendant 2 tours."
-6466202,Lame Enflammée,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 4 fois; une fois que le bouclier est détruit, la porteuse récupérera 10% de ses PV Max et sa Résistance Total augmentera de 15% pendant 2 tours."
-6466302,Lame Enflammée,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 4 fois; une fois que le bouclier est détruit, la porteuse récupérera 20% de ses PV Max et sa Résistance Total augmentera de 25% pendant 3 tours."
+6466202,Lame Enflammée,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 4 fois (ne peut être déclenché qu'une fois dans chaque bataille).\nUne fois que le bouclier est détruit, la porteuse récupérera 10% de ses PV Max et sa Résistance Total augmentera de 15% pendant 2 tours."
+6466302,Lame Enflammée,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 4 fois (ne peut être déclenché qu'une fois dans chaque bataille).\nUne fois que le bouclier est détruit, la porteuse récupérera 20% de ses PV Max et sa Résistance Total augmentera de 25% pendant 3 tours."
 6478101,Lame d'Imagination,Compétence de l'Antiquité,Augmente les Chances de Contrôle de 10% et la Vitesse de 10 de la porteuse en bataille.
 6478201,Lame d'Imagination,Compétence de l'Antiquité,Augmente les Chances de Contrôle de 15% et la Vitesse de 20 de la porteuse en bataille.
 6478301,Lame d'Imagination,Compétence de l'Antiquité,Augmente les Chances de Contrôle de 20% et la Vitesse de 30 de la porteuse en bataille.
-6466201,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
-6466301,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, obtient un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (Ne peut être déclenché qu'une fois dans chaque bataille)."
+6466201,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
+6466301,Lame Enflammée 6,Compétence de l'Antiquité,"Après avoir reçu un coup mortel, la porteuse obtiendra un bouclier immunisant contre les dégâts directs et les Dégâts sur la Durée 3 fois (ne peut être déclenché qu'une fois dans chaque bataille)."
 5301600,Ruben,Attaque Basique,Attaque Basique
 65302300,Ruben,Attaque Basique,Attaque Basique
 75301600,Ruben,Attaque Basique,Attaque Basique
@@ -11300,12 +11300,12 @@ La première fois que ses PV seront inférieurs à 30%, elle récupérera imméd
 
 [c][e28002]Amplification Matricielle (Effet de Compétence, cumulable) : [-][/c]
 Augmente l\'Immunité de la cible 10% et sa Précision de 5% (5 couches au maximum)."
-675501,Cri du Vent,Compétence de l'Antiquité,+10% Soins Reçus
-675601,Cri du Vent,Compétence de l'Antiquité,+13% Soins Reçus
-675701,Cri du Vent,Compétence de l'Antiquité,+16% Soins Reçus
-675801,Cri du Vent,Compétence de l'Antiquité,+19% Soins Reçus
-675901,Cri du Vent,Compétence de l'Antiquité,+22% Soins Reçus
-676001,Cri du Vent,Compétence de l'Antiquité,+25% Soins Reçus
+675501,Cri du Vent,Compétence de l'Antiquité,+10.0% Soins Reçus
+675601,Cri du Vent,Compétence de l'Antiquité,+13.0% Soins Reçus
+675701,Cri du Vent,Compétence de l'Antiquité,+16.0% Soins Reçus
+675801,Cri du Vent,Compétence de l'Antiquité,+19.0% Soins Reçus
+675901,Cri du Vent,Compétence de l'Antiquité,+22.0% Soins Reçus
+676001,Cri du Vent,Compétence de l'Antiquité,+25.0% Soins Reçus
 6760101,Cri du Vent,Compétence de l'Antiquité,"
 Au début de la bataille, convertit 50% des PV de la porteuse en Barrière et se marque avec [c][e28002]Bénédiction du Vent[-][/c].
 [c][e28002]Bénédiction du Vent (Effet de Compétence) :[-][/c]

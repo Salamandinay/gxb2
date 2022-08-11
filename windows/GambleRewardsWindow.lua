@@ -159,7 +159,9 @@ function GambleRewardsWindow:loadEffects(flag)
 	end
 
 	self:initData()
-	self:playAnimation()
+	self:playAnimation(function ()
+		self:playChangeImgAni()
+	end)
 end
 
 function GambleRewardsWindow:playOpenAnimation(callback)
@@ -173,7 +175,10 @@ function GambleRewardsWindow:playOpenAnimation(callback)
 		end
 
 		self:initData()
-		self:playAnimation(callback)
+		self:playAnimation(function ()
+			self:playChangeImgAni()
+			callback()
+		end)
 	end)
 end
 
@@ -414,7 +419,9 @@ function GambleRewardsWindow:initData()
 		for i = 1, childCount do
 			local go = self.itemRoot_.transform:GetChild(i - 1)
 
-			UnityEngine.Object.Destroy(go.gameObject)
+			if go.name ~= "item2Root" then
+				UnityEngine.Object.Destroy(go.gameObject)
+			end
 		end
 
 		self.itemRoot_:GetComponent(typeof(UIWidget)).alpha = 0
@@ -438,10 +445,27 @@ function GambleRewardsWindow:initData()
 				end
 			end
 
+			local changeWidget = nil
+
+			if itemData.changeItem and tonumber(itemData.changeItem) > 0 then
+				local changeRoot = itemIcon.go
+				local icon2 = xyd.getItemIcon({
+					hideText = true,
+					uiRoot = changeRoot,
+					itemID = itemData.changeItem,
+					dragScrollView = self.scrollView_
+				}, itemData.iconType)
+
+				icon2:setDepth(40)
+
+				changeWidget = icon2.go:GetComponent(typeof(UIWidget))
+			end
+
 			table.insert(self.items_, {
 				obj = itemIcon:getGameObject(),
 				item = itemIcon,
-				itemData = itemData
+				itemData = itemData,
+				changeWidget = changeWidget
 			})
 		end
 
@@ -492,10 +516,25 @@ function GambleRewardsWindow:initData()
 				self.gridOfItems_:Y(46)
 			end
 
+			local changeWidget = nil
+
+			if itemData.changeItem and tonumber(itemData.changeItem) > 0 then
+				local changeRoot = uiRoot:NodeByName("item2Root").gameObject
+				changeWidget = changeRoot:GetComponent(typeof(UIWidget))
+
+				xyd.getItemIcon({
+					hideText = true,
+					uiRoot = changeRoot,
+					itemID = itemData.changeItem,
+					dragScrollView = self.scrollView_
+				}, itemData.iconType)
+			end
+
 			table.insert(self.items_, {
 				obj = uiRoot.gameObject,
 				item = itemIcon,
-				itemData = itemData
+				itemData = itemData,
+				changeWidget = changeWidget
 			})
 		end
 
@@ -507,6 +546,28 @@ function GambleRewardsWindow:initData()
 
 		self.item_root_.gameObject:SetActive(false)
 	end
+end
+
+function GambleRewardsWindow:playChangeImgAni()
+	for _, item in ipairs(self.items_) do
+		if item.changeWidget then
+			item.changeWidget.alpha = 1
+		end
+	end
+
+	local function setter(val)
+		for _, item in ipairs(self.items_) do
+			if item.changeWidget then
+				item.changeWidget.alpha = val
+			end
+		end
+	end
+
+	self.seq = self:getSequence()
+
+	self.seq:SetLoops(-1)
+	self.seq:Append(DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter), 1, 0, 1.5))
+	self.seq:Append(DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter), 0, 1, 1.5))
 end
 
 function GambleRewardsWindow:register()

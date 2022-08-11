@@ -315,6 +315,10 @@ function CollectionShopGroupItem:refreshItem(itemInfo, group)
 		end
 
 		shopItem:setInfo(itemData, group)
+
+		if _ == 1 then
+			shopItem:checkNameHeight()
+		end
 	end
 
 	self.groupItem_:Reposition()
@@ -423,6 +427,12 @@ function CollectionShopItem:updateShaddow()
 
 	self.shadow_:SetActive(limit <= self.buyTimes_ or hideBg)
 	self.buyNode_:SetActive(limit <= self.buyTimes_)
+end
+
+function CollectionShopItem:checkNameHeight()
+	if xyd.Global.lang == "de_de" then
+		self.name_text_.height = 44
+	end
 end
 
 return CollectionShopWindow

@@ -4769,11 +4769,11 @@ DRESS_ITEM_UP_WINDOW_3,No shard is needed
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,Event details
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,Vote
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,Champion
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"In the event Miss Yume Skin Election, “Heaven’s Light” skin has been decided as the new skin for our “Miss Yume” candidate--- Nephilim.\nWe are very excited to show you the progress we made on this skin. Furthermore, we've prepared 4 color design plans for the skin. We hope you can vote and decide which color design plan would be best suited for this skin!"
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,Plan A
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,Plan B
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,Plan C
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,Plan D
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,Lord Dracula has won Miss Yume Pageant after a fierce competition!\nThe designers on campus have prepared 4 skin design plans for her. And it's up to you to decide which design plan we will apply!
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,Dark Ambassador
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,Miss Yume
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,Inner Demon
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,All Hail the Queen
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT09,Confirm
 DRESS_CHOOSE_SHOW_WINDOW_1,Selected Outfit Shards
 DRESS_CHOOSE_SHOW_WINDOW_2,Unselected Outfit Shards
@@ -5728,7 +5728,7 @@ ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,Tap the maps to switch your current Area
 ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,"All Rewards are claimed, switching to another Area"
 ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"All Rewards are claimed, Area {1} is unlocked, move on to the next Area?"
 ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"You have obtained all rewards in this area, resetting the rewards."
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,K. M. Enlightened has already been summoned
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Nymphaea is already summoned!
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Travel
 SHRINE_HURDLE,Realm of Trials
 SHRINE_TREE,Tree of Chimes
@@ -6934,7 +6934,7 @@ GROWTH_DIARY_TEXT05,Unlock after completing all tasks
 GROWTH_DIARY_TEXT06,Unlock after the previous chapter is completed
 GROWTH_DIARY_TEXT07,Claimed
 GROWTH_DIARY_TEXT08,This Chapter is locked!
-GROWTH_DIARY_TEXT09,The Tasks marked with | can only be completed on the current page
+GROWTH_DIARY_TEXT09,Progress of a | task will only begin once it's been unlocked
 ACTIVITY_NEW_WARMUP_TEXT38,Confirm to place your bet on this team?
 GUILD_COMPETITION_ACTIVE_TEXT01,Active Pt. Tasks
 GUILD_COMPETITION_ACTIVE_TEXT02,Active Pt.
@@ -6962,3 +6962,98 @@ GROWTH_DIARY_TEXT11,Claimed
 GUILD_COMPETITION_PARTNER_TEXT07,This Girl is sent for Extra Course
 GROWTH_DIARY_TEXT12,Claim
 ACTIVITY_FREE_REVERT_TEXT08,Only specific Girls that are obtained/Graduated/Awaked before the event can be Reversed in this event
+ACTIVITY_GOLDFISH_HELP,"1. Hermes has opened her business on the beach, let's go check it out!|2. Get corresponding rewards by scooping fish with Paper Scoops. For each regular goldfish scooped, 200 Goldfish Coins will be added to the general reward pool. For each special goldfish scooped (the one carrying Cupid or Promethea Chest will be considered as a regular goldfish), you will be able to get your share in percentage of Goldfish Coins from the general reward pool. (The actual percentage of Goldfish Coins you can get each time might be different for each special goldfish you scoop).|3. Hermes will predict a vague number of Goldfish Coins you can get according to the number of Paper Scoops used. If the actual number of Goldfish Coins you obtained is below her prediction, you will receive additional Goldfish Coins on the last day of the event to mend the difference. You will not be able to scoop fish on the last day of the event!|4. Goldfish Coins can be used to exchange rewards in the event store. The first section of the event store is open by default, the following sections will be unlocked according to the number of Paper Scoops used.|5. You will receive additional rewards after using a certain number of Paper Scoops.|6. Once this event ends, any remaining Paper Scoops and Goldfish Coins will be automatically exchanged into 50K Coins per Paper Scoop and 100 Coins per Goldfish Coin. The Coins will be sent via Mail."
+ACTIVITY_GOLDFISH_BUTTON01,x1
+ACTIVITY_GOLDFISH_BUTTON02,x10
+ACTIVITY_GOLDFISH_TEXT01,"You have scooped [c][35a7ef]{1}[-][/c] time(s), I think you can get [c][ffa82b]{2}[-][/c] Goldfish Coins, but you've actually obtained [c][ffa82b]{3}[-][/c] Goldfish Coins. So you will get [c][ffa82b]{4}[-][/c] additional Goldfish Coins on the last day of the event!"
+ACTIVITY_GOLDFISH_TEXT02,"You have scooped [c][35a7ef]{1}[-][/c] time(s), I think you can get [c][ffa82b]{2}[-][/c] Goldfish Coins. The actual number of Goldfish Coins you've obtained ([c][ffa82b]{3}[-][/c]) is beyond my prediction! You are really a lucky scooper!"
+ACTIVITY_GOLDFISH_TEXT03,[c][ff8a00]+200[-][/c] Goldfish Coins for each regular goldfish obtained
+ACTIVITY_GOLDFISH_TEXT04,General Reward Pool
+ACTIVITY_GOLDFISH_TEXT05,Breaking news! Senpai {1} has just obtained {2} Goldfish Coins!
+ACTIVITY_GOLDFISH_PREVIEW_TEXT01,Special Goldfish
+ACTIVITY_GOLDFISH_PREVIEW_TEXT02,Regular Goldfish
+ACTIVITY_GOLDFISH_SHOP_TEXT01,You will receive [c][ffa82b]{1}[-][/c] Goldfish Coins on the last day of the event. Please don't forget to exchange more rewards with them!
+ACTIVITY_GOLDFISH_SHOP_TEXT02,Exclusive Rewards awaiting!
+ACTIVITY_GOLDFISH_SHOP_TEXT03,Tier {1}
+ACTIVITY_GOLDFISH_SHOP_TEXT04,Scoop Time:
+ACTIVITY_GOLDFISH_SHOP_TEXT05,Goldfish Coin Obtained:
+ACTIVITY_GOLDFISH_SHOP_TEXT06,Hermes's Prediction:
+ACTIVITY_GOLDFISH_SHOP_TEXT07,Additional Goldfish Coins:
+ACTIVITY_GOLDFISH_SHOP_TIPS01,Unlock after {1} Paper Scoops consumed
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Scoop {1} Times
+ACTIVITY_GOLDFISH_PACK_TEXT01,2 additional purchase chances for Gem-purchase packs will be added after this pack is purchased
+STARRY_ALTAR_TEXT14,Reward · Surprise Mode
+STARRY_ALTAR_TEXT15,Reward · Accumulate Mode
+STARRY_ALTAR_TEXT16,Additional Customized 10-star Cosmos Girls Shards will be given for every 40 draws completed
+STARRY_ALTAR_TEXT17,"Please select your reward mode by tapping the ""+"" button in the top right corner of this page"
+STARRY_ALTAR_TEXT18,[c][ffe241]0.25%%[-][/c] chance to obtain a Cosmos Girl for each draw
+STARRY_ALTAR_TEXT19,Additional [c][56db32]10-star Cosmos Girls Shard * 10[-][/c] in [c][ffe241]{1}[-][/c] draw(s)
+STARRY_ALTAR_TEXT20,You can apply one of the 2 Reward Modes
+GROWTH_DIARY_TEXT13,Servant Training is not unlocked
+GALAXY_TRIP_TEXT01,Galaxy Voyage
+GALAXY_TRIP_TEXT02,Obtain Cosmos Girls
+GALAXY_TRIP_TEXT03,Get Astral Core Resources
+GALAXY_TRIP_TEXT04,Galaxy Voyage
+GALAXY_TRIP_TEXT05,Exploring...
+GALAXY_TRIP_TEXT06,Cleared
+GALAXY_TRIP_TEXT07,Unknown Galaxy
+GALAXY_TRIP_TEXT08,Progress
+GALAXY_TRIP_TEXT09,Galaxy:
+GALAXY_TRIP_TEXT10,獲得探索積分
+GALAXY_TRIP_TEXT11,Enter
+GALAXY_TRIP_TEXT12,Exploration completed
+GALAXY_TRIP_TEXT13,Galaxy Explored:
+GALAXY_TRIP_TEXT14,Area cleared: {1}
+GALAXY_TRIP_TEXT15,Total duration: {1}
+GALAXY_TRIP_TEXT16,Explore Site: No. {1}
+GALAXY_TRIP_TEXT17,Explore Duration: {1}
+GALAXY_TRIP_TEXT18,Result: Exploration Succeeded
+GALAXY_TRIP_TEXT19,Result: Exploration Failed
+GALAXY_TRIP_TEXT20,Confirm
+GALAXY_TRIP_TEXT21,Return
+GALAXY_TRIP_TEXT22,Team
+GALAXY_TRIP_TEXT23,Route
+GALAXY_TRIP_TEXT24,Recall
+GALAXY_TRIP_TEXT25,Team Setup
+GALAXY_TRIP_TEXT26,Save Team
+GALAXY_TRIP_TEXT27,{1} Hour(s)
+GALAXY_TRIP_TEXT28,Explore
+GALAXY_TRIP_TEXT29,Exploring
+GALAXY_TRIP_TEXT30,Exploration Reward
+GALAXY_TRIP_TEXT31,Exploration Buff
+GALAXY_TRIP_TEXT32,Enemy Details
+GALAXY_TRIP_TEXT33,Choose Difficulty
+GALAXY_TRIP_TEXT34,Challenge
+GALAXY_TRIP_TEXT35,Current Progress
+GALAXY_TRIP_TEXT36,Clear Requirement:
+GALAXY_TRIP_TEXT37,Defeat Boss ({1}/{2})
+GALAXY_TRIP_TEXT38,Discover Treasure ({1}/{2})
+GALAXY_TRIP_TEXT39,Connect Entrance and Exit ({1}/{2})
+GALAXY_TRIP_TEXT40,Combat Buff collected ({1}/{2})
+GALAXY_TRIP_TEXT41,Save
+GALAXY_TRIP_TEXT42,Planning the Exploration...
+GALAXY_TRIP_TEXT43,Time Remaining：{1}
+GALAXY_TRIP_TEXT44,Details
+GALAXY_TRIP_TEXT45,Instant Reward:
+GALAXY_TRIP_TEXT46,Total Reward after purchase:
+GALAXY_TRIP_TEXT47,Basic
+GALAXY_TRIP_TEXT48,Tasks
+GALAXY_TRIP_TEXT50,Extra
+GALAXY_TRIP_TIPS_01,No Undergoing Exploration
+GALAXY_TRIP_TIPS_02,Cannot adjust the route during the exploration
+GALAXY_TRIP_TIPS_03,You need to setup a team first
+GALAXY_TRIP_TIPS_04,You need to clear the previous galaxy first
+GALAXY_TRIP_TIPS_05,"Unknown area, coming soon"
+GALAXY_TRIP_TIPS_06,Please select the area you wish the explore in this exploration
+GALAXY_TRIP_TIPS_07,"You will give up the current exploration if you Recall, confirm to continue?"
+ACTIVITY_GOLDFISH_RK,Summer Deals
+GALAXY_TRIP_TIPS_08,No area is available for exploration
+GALAXY_TRIP_TIPS_09,This area is currently unavailable
+GALAXY_TRIP_TIPS_10,"If you lose a battle when encountering an enemy in a planned route, your team will continue to retry the battle until all challenge chances have been used, confirm to continue?"
+GALAXY_TRIP_TEXT51,Voyager Passport
+GALAXY_TRIP_TEXT52,---Voyager's Diary
+ACTIVITY_GOLDFISH_TEXT06,"Fish Scooping is over, but you can still exchange your rewards in the event store on the last day of the event, please don't forget to check it out!"
+ACTIVITY_GOLDFISH_TEXT07,Scoop special Goldfish to get Goldfish Coins from the general reward pool!
+GALAXY_TRIP_TEXT53,Details
+GALAXY_TRIP_TEXT54,Current Progress
+GALAXY_TRIP_TEXT55,探索積分獲得

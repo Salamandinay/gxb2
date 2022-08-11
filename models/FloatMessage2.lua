@@ -41,7 +41,9 @@ function FloatMessage2:ctor()
 		"arctic_expedition_rank_window",
 		"arctic_expedition_record_window",
 		"arctic_expedition_record_window2",
-		"arctic_expedition_cell_window"
+		"arctic_expedition_cell_window",
+		"activity_window",
+		"gamble_rewards_window"
 	}
 end
 

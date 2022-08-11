@@ -31,7 +31,7 @@ function NewPartnerWarmupData:getRedMarkState()
 		self.defRedMark = false
 		local curDays = math.ceil((xyd.getServerTime() - self.start_time) / 86400)
 
-		for i = 1, 4 do
+		for i = 1, 3 do
 			local unlockDay = xyd.tables.newPartnerWarmUpStageTable:getUnlockDay(i)
 
 			if unlockDay <= curDays and self.detail.current_stage == i then

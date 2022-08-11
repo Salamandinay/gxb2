@@ -53,7 +53,7 @@ function PetStartWindow:registerEvent()
 	for i = 1, 2 do
 		UIEventListener.Get(self["group" .. tostring(i)]).onClick = function ()
 			xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
-			xyd.WindowManager.get():closeWindow("pet_start_window")
+			xyd.WindowManager.get():closeWindow("pet_start_window", nil, , true)
 
 			local winName = winNames[i]
 

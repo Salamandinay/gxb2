@@ -35,7 +35,7 @@ end
 function GrowthDiary:reqMissionData(chapter_id)
 	chapter_id = chapter_id or self.chapter_id
 
-	if chapter_id < self.chapter_id then
+	if chapter_id < self.chapter_id or self:checkFinish() then
 		local ids = xyd.tables.grouthDiaryMissionTable:getIDsByChapter(chapter_id)
 
 		for _, id in ipairs(ids) do
@@ -92,6 +92,16 @@ function GrowthDiary:onGetChapterAwards(event)
 	self.awardsData_[id] = 1
 
 	self:updateRedMark()
+
+	local long = xyd.tables.grouthDiaryMissionTable:getChapterLong()
+
+	if long <= id then
+		local wnd = xyd.getWindow("main_window")
+
+		if wnd then
+			wnd:checkTrBtn()
+		end
+	end
 end
 
 function GrowthDiary:onGetMissionList(event)
@@ -145,6 +155,19 @@ function GrowthDiary:updateChapter()
 			self.chapter_id = index + 1
 		end
 	end
+
+	local long = xyd.tables.grouthDiaryMissionTable:getChapterLong()
+
+	print("self.chapter_id   ", self.chapter_id, "long  ", long)
+
+	if long < self.chapter_id then
+		self.chapter_id = long
+		self.isFinish_ = true
+	end
+end
+
+function GrowthDiary:checkFinish()
+	return self.isFinish_
 end
 
 function GrowthDiary:getMissionInfo(mission_id)
@@ -159,7 +182,12 @@ function GrowthDiary:onRedMarkInfo(event)
 	local funID = event.data.function_id
 
 	if tonumber(funID) == xyd.FunctionID.GROWTH_DIARY then
-		xyd.models.redMark:setMark(xyd.RedMarkType.GROWTH_DIARY, true)
+		local value = event.data.value
+		local chapter = xyd.tables.grouthDiaryMissionTable:getChapterID(value)
+
+		if chapter <= self.chapter_id then
+			xyd.models.redMark:setMark(xyd.RedMarkType.GROWTH_DIARY, true)
+		end
 	end
 end
 

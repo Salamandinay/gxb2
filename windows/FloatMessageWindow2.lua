@@ -159,6 +159,8 @@ function FloatMessageWindow2:getText(data)
 		local y = cellPos[2]
 		cellName = cellName .. "(" .. x .. " , " .. y .. ")"
 		text = xyd.stringFormat(str, groupName, data.player_name, cellName)
+	elseif data.broadcast_type == xyd.SysBroadcast.ACTIVITY_GOLDFISH then
+		text = xyd.stringFormat(str, data.player_name, data.table_id)
 	else
 		local itemName = xyd.tables.itemTable:getName(data.table_id)
 		text = xyd.stringFormat(str, data.player_name, itemName)

@@ -4835,11 +4835,11 @@ DRESS_ITEM_UP_WINDOW_3,Ne nécessite pas de Fragment
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,Détails du Sondage
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,Voter
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,Vainqueur
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Lors du sondage du Skin de Miss Yume, le skin ""Lueur des Cieux"" a été nominé pour notre grande gagnante - Lucifael.\n Suite à ce choix, nous vous avons préparé 4 modèles de différentes couleurs. Libre à vous de choisir et voter pour le modèle qui selon vous conviendrait le mieux pour ce skin !"
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,Modèle 1
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,Modèle 2
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,Modèle 3
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,Modèle 4
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Comme vous le savez déjà, notre chère Lord Dracula est la grande gagnante des Élections de Miss Yume 2022 !\nUn skin lui sera confectionné... Mais lequel ? Nous vous proposons 4 esquisses différentes, à vous de voter pour celle qui vous plaît le plus ! L'esquisse ayant le plus (+) de vote sera le modèle du Skin exclusif qui sera dédié à Lord Dracula !"
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A. L'Ambassadrice
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B. Miss Yume
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C. Démon Intérieur
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,D. La Dame Noire
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT09,Voter
 DRESS_CHOOSE_SHOW_WINDOW_1,Fragment de Tenue sélectionné
 DRESS_CHOOSE_SHOW_WINDOW_2,Aucun Fragment de Tenue sélectionné
@@ -5789,7 +5789,7 @@ ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,Vous pouvez appuyer sur une autre Destinatio
 ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,"Toutes les récompenses de cette Destination ont été collectées, le système vous aidera à changer la Destination."
 ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,"Toutes les récompenses de cette Destination ont été collectées, la Destination - {1} est débloquée. Voulez-vous vous y rendre ?"
 ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,"Vous avez obtenu toutes les récompenses de cette Destination, les récompenses de la Destination - Temple d'Honneur ont été rafraîchies."
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Vous avez déjà invoqué une K.M Érudite...
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,"Vous avez déjà obtenu les Fragments de Nymphéa, Senpai~"
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Utiliser
 SHRINE_HURDLE,Dojo
 SHRINE_TREE,Arbre Divin
@@ -6185,7 +6185,7 @@ ACTIVITY_SIMULATION_GACHA_TEXT17,Voulez-vous utiliser {1} Gemmes pour débloquer
 ACTIVITY_SIMULATION_GACHA_TEXT18,1. Utilisez un Jeton de Simulation pour échanger les Filles d'un résultat sauvegardé.|2. Les emplacements de Résultat I et II sont débloqués par défaut.|3. Utilisez des Gemmes pour débloquer l'emplacement de Résultat III/IV/V.|4. Moyen d'obtention de Jeton de Simulation : Pack du Capsu-Simulator.
 ACTIVITY_SIMULATION_GACHA_TEXT19,Aucun résultat de simulation n'a été sauvegardé
 ACTIVITY_SIMULATION_GACHA_TEXT20,Veuillez sélectionner un résultat sauvegardé.
-ACTIVITY_SIMULATION_GACHA_TEXT21,Jeton de Stimulation insuffisant !
+ACTIVITY_SIMULATION_GACHA_TEXT21,Jeton de Simulation insuffisant !
 ACTIVITY_SIMULATION_GACHA_TEXT22,Résultat I
 ACTIVITY_SIMULATION_GACHA_TEXT23,Résultat II
 ACTIVITY_SIMULATION_GACHA_TEXT24,Résultat III
@@ -6312,7 +6312,7 @@ ENTRANCE_TEST_SKILL_UNSURE,Ses compétences sont sujettes à des modifications.
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,Quitter
 PARTNER_WARMUP_HELP,"1. Durant cet événement, un épisode de l'histoire sera débloqué chaque jour. Après l'avoir visionné, vous obtiendrez des récompenses."
 PARTNER_WARMUP_TEXT01,Récompenses
-PARTNER_WARMUP_TEXT02,Voir Épisode {1}
+PARTNER_WARMUP_TEXT02,Visionner l'Épisode {1}
 PARTNER_WARMUP_TEXT03,Veuillez visionner l'histoire précédente.
 PARTNER_WARMUP_TEXT04,Voulez-vous revisionner l'histoire ?
 ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Terminez les tâches pour obtenir des Fragments Astraux et des Jetons de Capsule Cosmique Limités.|2. Utilisez les Fragments Astraux pour les échanger contre des récompenses.|3. Les Jetons de Capsule Cosmique Limités sont utilisables dans l'Autel Stellaire (Attention : Après la fin de l'événement, les Jetons de Capsule Cosmique Limités seront retirés de votre Sac).|4. Après la fin de l'événement, les les Fragments Astraux non utilisés seront convertis en Pièce d'Or, 1 Fragment Astral = 50 000 Pièce d'Or qui vous seront distribuées par courrier."
@@ -6329,7 +6329,7 @@ GAME_ASSISTANT_TEXT106,Tirer 10 fois
 GAME_ASSISTANT_TEXT107,"Il y a eu des modifications dans la composition de votre équipe d'Arène, voulez-vous faire des ajustements ?"
 GAME_ASSISTANT_TEXT108,"Il y a eu des modifications dans la composition de votre équipe de Gymnase, voulez-vous faire des ajustements ?"
 GUILD_TEXT75,Guilde invalide
-STAR_ALTAR_TITLE,天河漫繪
+STAR_ALTAR_TITLE,La Peintre\ndes Étoiles
 GROUP_7,Cosmos
 BATTLE_TIPS_DESC3,Cette Maison n'est sous l'influence d'aucune rivalité de Maison.
 SKILL_RESONATE_HELP,"1. Les Compétences de Résonance sont une fonctionnalité exclusive aux Filles de la Maison Cosmos.|2. Vous pouvez consommer des Sphères Luisantes et des Sphères Ternes pour améliorer le niveau de compétence des Filles, la somme des 4 niveaux de compétences des Filles est son niveau de Résonance.|3. Une fois qu'une compétence a été améliorée à un certain niveau, vous devrez améliorer les 3 autres compétences au niveau requis avant de pouvoir continuer.|4. En fonction du Niveau de Résonance des Filles, vous obtiendrez un Bonus d'Attributs.|5. Si la Compétence de Résonnance d'une Fille a été améliorée, vous pouvez consommer un certain nombre de Gemmes pour réinitialiser son niveau de Résonance et tous les matériaux d'amélioration que vous aurez consommés vous seront rendus."
@@ -7058,16 +7058,16 @@ ACTIVITY_FREE_REVERT_TEXT01,Inverser
 ACTIVITY_FREE_REVERT_TEXT02,Êtes-vous sûr de vouloir inverser cette Fille ?
 ACTIVITY_FREE_REVERT_TEXT03,"1. Durant cet événement, vous pouvez inverser les Filles proposées gratuitement.|2. Si vous avez obtenu une des Filles proposées avant cet événement, vous pourrez l'inverser gratuitement dans cet événement. Vous ne pourrez pas inverser gratuitement les Filles proposées que vous avez obtenues après l'ouverture de cet événement.|3. Toutes les ressources utilisées pour améliorer la Fille que vous avez choisie vous seront rendues."
 ACTIVITY_FREE_REVERT_TEXT04,"1. Les Filles (sauf 6 étoiles) peuvent être Inversées et les Poupées ne peuvent pas être Éveillées, Échangées, Inversées ou Transférées, elles ne peuvent pas recevoir de cadeau ou être placées dans le Dortoir.|2. Les équipements et les Antiquités des Filles ayant été inversées vous seront envoyés dans le Sac.|3. Détails d'Inverse：|Fille 1-5 étoile(s) Inversée：Copie de cette Fille au même nombre d'étoile(s)*1|Fille 7 étoiles Inversée：Poupée de la même Maison 5 étoiles*8 + Copie de cette Fille 5 étoiles*2|Fille 8 étoiles Inversée：Poupée de la même Maison 6 étoiles*1 + Poupée de la même Maison 5 étoiles*11 + Copie de cette Fille 5 étoiles*2|Fille 9 étoiles Inversée：Poupée de la même Maison 6 étoiles*2 + Poupée de la même Maison 5 étoiles*13 + Copie de cette Fille 5 étoiles*3|Fille 10 étoiles Inversée：Poupée de la même Maison 9 étoiles*1 + Poupée de la même Maison 6 étoiles*3 + Pouoée de la même Maison 5 étoiles*13 + Copie de cette Fille 5 étoiles*5|LB 1 Inversée：Poupée de la même Maison 9 étoiles*2 + Poupée de la même Maison 6 étoiles*3 + Poupée de la même Maison 5 étoiles*13 +Copie de cette Fille 5 étoiles*6|LB 2 Inversée：Poupée de la même Maison 9 étoiles*3 + Poupée de la même Maison 6 étoiles*3 + Poupée de la même Maison 5 étoiles*13 +Copie de cette Fille 5 étoiles*7|LB 3 Inversée：Poupée de la même Maison 10 étoiles*1 + Poupée de la même Maison 9 étoiles*3 + Poupée de la même Maison 6 étoiles*3 + Poupée de la même Maison 5 étoiles*13 + Copie de cette Fille 5 étoiles*7|LB 4 Inversée：Poupée de la même Maison 10 étoiles*2 + Poupée de la même Masion 9 étoiles*3 + Poupée de la même Maison 6 étoiles*3 + Poupée de la même Maison 5 étoiles*13 + Copie de cette Fille 5 étoiles*8|LB 5 Inversée：Poupée de la même Maison 10 étoiles*3 + Poupée de la même Maison 9 étoiles*3 + Poupée de la même Maison 6 étoiles*3 + Poupée de la même Maison 5 étoiles*13 + Copie de cette Fille 5 étoiles*9|4. Après avoir inversé une Fille 1-15 étoile(s), vous recevrez toutes les ressources utilisées.|5. Durant cet événement, vous pouvez inverser les Filles proposées gratuitement et toutes les ressources utilisées pour améliorer cette Fille vous seront rendues.|6. La Faveur et le Serment seront rendus à l'une des copies rendues de cette Fille.|7. Les Filles 5/ 9/10 étoiles obtenues dans l'Inverse ne seront pas comptabilisées dans l'Evénement Mensuel."
-GROWTH_DIARY_TITLE,Journal
+GROWTH_DIARY_TITLE,Journal d'Évolution
 GROWTH_DIARY_TEXT01,Chapitre {1}
-GROWTH_DIARY_TEXT02,Progression
-GROWTH_DIARY_TEXT03,Récompense du Chapitre
+GROWTH_DIARY_TEXT02,Avancée
+GROWTH_DIARY_TEXT03,Récompenses
 GROWTH_DIARY_TEXT04,Collecter
-GROWTH_DIARY_TEXT05,Débloqué après avoir complété les Tâches du Chapitre
-GROWTH_DIARY_TEXT06,Débloqué après avoir terminé le Chapitre précédent
+GROWTH_DIARY_TEXT05,Débloqué après avoir complété toutes les Tâches du Chapitre !
+GROWTH_DIARY_TEXT06,Débloqué après avoir terminé le Chapitre précédent !
 GROWTH_DIARY_TEXT07,Collecté
-GROWTH_DIARY_TEXT08,Vous n'avez pas encore débloqué ce Chapitre
-GROWTH_DIARY_TEXT09,Les tâches marquées par | ne peuvent être complétées que dans l'interface actuelle.
+GROWTH_DIARY_TEXT08,Vous n'avez pas encore débloqué ce Chapitre !
+GROWTH_DIARY_TEXT09,Vous pourrez compléter la tâche avec | après l'avoir débloquée
 ACTIVITY_NEW_WARMUP_TEXT38,Voulez-vous placer votre pari sur cette équipe ?
 GUILD_COMPETITION_ACTIVE_TEXT01,Tâche de Points d'Activité
 GUILD_COMPETITION_ACTIVE_TEXT02,Point d'Activité
@@ -7084,7 +7084,7 @@ GUILD_COMPETITION_CHALLENGE_TEXT01,Objectif
 GUILD_COMPETITION_CHALLENGE_TEXT02,Vos points obtenus augmenteront de 10%% pour chaque objectif atteint.
 ACTIVITY_FREE_REVERT_TEXT05,Aperçu
 CONSUMABLES,Consommable
-GROWTH_DIARY,Journal d'Évolution
+GROWTH_DIARY,Journal
 NO_CONSUMABLES,Pas d'objets…
 ACTIVITY_FREE_REVERT_TEXT06,Filles à inverser gratuitement
 ACTIVITY_FREE_REVERT_TEXT07,Vous n'avez choisi aucune Fille.
@@ -7095,3 +7095,99 @@ GROWTH_DIARY_TEXT11,Collecté
 GUILD_COMPETITION_PARTNER_TEXT07,"Cette Fille est actuellement dans Formation Avancée, impossible de la sélectionner."
 GROWTH_DIARY_TEXT12,Collecter
 ACTIVITY_FREE_REVERT_TEXT08,*Seules les Filles proposées peuvent être inversées gratuitement
+ACTIVITY_GOLDFISH_HELP,"1. Mercure a ouvert un nouveau business pour cet été, allons voir ce qu’elle nous réserve !|2. Utilisez les Épuisettes pour attraper des poissons et recevoir les récompenses correspondantes. Pour chaque Poisson Rouge attrapé, 200 Pièces d'Écaille seront ajoutées au Bassin des Pièces. Pour chaque Poisson Doré attrapé, vous obtiendrez le pourcentage correspondant de Pièce d'Écaille du Bassin des Pièces. Le Bassin de Pièces est initialement à 10K Pièces d'Écaille (le pourcentage de Pièce d'Écaille que vous pouvez obtenir à chaque fois peut être différent pour chaque Poisson Doré que vous attrapez.) (Si vous obtenez la Boîte de Cupidon&Prométhéa, vous ne recevrez pas de Pièces d'Écaille).|3. En fonction du nombre d'Épuisettes que vous utilisez, vous recevrez des Pièces d'Écaille garanties. Si vous recevez moins de Pièces d'Écaille que la quantité garantie, des Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac le dernier jour de l'événement. Attention : vous ne pourrez plus attraper de poisson le dernier jour de l'événement.|4. Échangez vos Pièces d'Écaille contre des récompenses. Le premier niveau de récompenses est débloqué par défaut, et les niveaux suivants seront déblocables en fonction du nombre d’Épuisettes utilisées.|5. Vous recevrez également des récompenses de palier en fonction du nombre d'Épuisettes utilisées.|6. Après la fin de l’événement, les Épuisettes et les Pièces d'Écaille non-utilisées seront automatiquement converties en Pièce d’or, 1 Épuisette=50K Pièces d'Or et 1 Pièce d'Écaille=100 Pièces d’Or."
+ACTIVITY_GOLDFISH_BUTTON01,Utiliser x1
+ACTIVITY_GOLDFISH_BUTTON02,Utiliser x10
+ACTIVITY_GOLDFISH_TEXT01,"Vous avez utilisé [c][35a7ef]{1}[-][/c] Épuisette(s), Mercure prédit que vous devriez obtenir [c][ffa82b]{2}[-][/c] Pièces d'Écaille. Vous en avez obtenu [c][ffa82b]{3}[-][/c] seulement. [c][ffa82b]{4}[-][/c] Pièces d'Écaille supplémentaires vous seront envoyées dans votre Sac le dernier jour de l'événement."
+ACTIVITY_GOLDFISH_TEXT02,"Vous avez utilisé [c][35a7ef]{1}[-][/c] Épuisette(s), Mercure prédit que vous devriez obtenir [c][ffa82b]{2}[-][/c] Pièces d'Écaille. Vous en avez en réalité obtenu [c][ffa82b]{3}[-][/c]. C'est bien plus que sa prédiction, vous faites partie des pêcheurs chanceux !"
+ACTIVITY_GOLDFISH_TEXT03,[c][ff8a00]200[-][/c] Pièces d'Écaille ajoutées au Bassin pour chaque Poisson Rouge attrapé
+ACTIVITY_GOLDFISH_TEXT04,Bassin des Pièces
+ACTIVITY_GOLDFISH_TEXT05,Félicitations ! Senpai {1} a obtenu {2} Pièces d'Écaille !
+ACTIVITY_GOLDFISH_PREVIEW_TEXT01,Poisson Doré
+ACTIVITY_GOLDFISH_PREVIEW_TEXT02,Poisson Rouge
+ACTIVITY_GOLDFISH_SHOP_TEXT01,[c][ffa82b]{1}[-][/c] Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac lors du dernier jour de l'événement. N'oubliez pas de les échanger contre des récompenses !
+ACTIVITY_GOLDFISH_SHOP_TEXT02,Des récompenses exclusives vous attendent !
+ACTIVITY_GOLDFISH_SHOP_TEXT03,{1}e Palier
+ACTIVITY_GOLDFISH_SHOP_TEXT04,Épuisette utilisée :
+ACTIVITY_GOLDFISH_SHOP_TEXT05,Pièce d'Écaille obtenue：
+ACTIVITY_GOLDFISH_SHOP_TEXT06,Prédiction de Mercure：
+ACTIVITY_GOLDFISH_SHOP_TEXT07,Pièce d'Écaille due :
+ACTIVITY_GOLDFISH_SHOP_TIPS01,Débloqué après avoir utilisé {1} Épuisettes !
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Utiliser {1} Épuisettes
+ACTIVITY_GOLDFISH_PACK_TEXT01,2 chances supplémentaires d'acheter le pack de Gemmes ci-dessus après avoir fait l'achat de ce Pack !
+STARRY_ALTAR_TEXT14,Récompense · Mode Surprise
+STARRY_ALTAR_TEXT15,Récompense · Mode Cumulative
+STARRY_ALTAR_TEXT16,Vous pouvez obtenir des Fragments du Cosmos 10 étoiles supplémentaires après avoir tiré 40 fois.
+STARRY_ALTAR_TEXT17,Veuillez cliquer en haut à droite pour définir le mode de récompense.
+STARRY_ALTAR_TEXT18,Vous avez [c][ffe241]0.25%%[-][/c] de chance d'obtenir une Fille Cosmos.
+STARRY_ALTAR_TEXT19,[c][56db32]Fragments du Cosmos 10 étoiles *10[-][/c] garantis après avoir tiré [c][ffe241]{1}[-][/c] fois
+STARRY_ALTAR_TEXT20,Vous pouvez choisir l'un des deux modes de récompense suivants
+GROWTH_DIARY_TEXT13,La fonction - Entraînement du Serviteur n'est pas encore débloquée !
+GALAXY_TRIP_TEXT01,星旅
+GALAXY_TRIP_TEXT02,抽取天異學院戰姬
+GALAXY_TRIP_TEXT03,獲取星源相關資源
+GALAXY_TRIP_TEXT04,星系之旅
+GALAXY_TRIP_TEXT05,探索中…
+GALAXY_TRIP_TEXT06,已通關
+GALAXY_TRIP_TEXT07,未知星系
+GALAXY_TRIP_TEXT08,探索進度
+GALAXY_TRIP_TEXT09,探索星系：
+GALAXY_TRIP_TEXT10,獲得探索積分
+GALAXY_TRIP_TEXT11,進入
+GALAXY_TRIP_TEXT12,探索完成
+GALAXY_TRIP_TEXT13,探索星系：
+GALAXY_TRIP_TEXT14,成功探索地點：{1}個
+GALAXY_TRIP_TEXT15,總時長：{1}
+GALAXY_TRIP_TEXT16,探索地點：{1}號
+GALAXY_TRIP_TEXT17,探索時長：{1}
+GALAXY_TRIP_TEXT18,探索結果：探索成功
+GALAXY_TRIP_TEXT19,探索結果：探索失敗
+GALAXY_TRIP_TEXT20,確認
+GALAXY_TRIP_TEXT21,返回
+GALAXY_TRIP_TEXT22,隊伍
+GALAXY_TRIP_TEXT23,線路
+GALAXY_TRIP_TEXT24,召回
+GALAXY_TRIP_TEXT25,設置隊伍
+GALAXY_TRIP_TEXT26,保存隊伍
+GALAXY_TRIP_TEXT27,{1}小時
+GALAXY_TRIP_TEXT28,探索
+GALAXY_TRIP_TEXT29,探索中
+GALAXY_TRIP_TEXT30,探索獎勵
+GALAXY_TRIP_TEXT31,探索加成
+GALAXY_TRIP_TEXT32,敵人資訊
+GALAXY_TRIP_TEXT33,難度選擇
+GALAXY_TRIP_TEXT34,挑戰
+GALAXY_TRIP_TEXT35,當前通關進度
+GALAXY_TRIP_TEXT36,通關當前星系條件：
+GALAXY_TRIP_TEXT37,擊敗首領（{1}/{2}）
+GALAXY_TRIP_TEXT38,發現寶箱（{1}/{2}）
+GALAXY_TRIP_TEXT39,連通起點和終點（{1}/{2}）
+GALAXY_TRIP_TEXT40,戰鬥加成匯總（{1}/{2}）
+GALAXY_TRIP_TEXT41,保存
+GALAXY_TRIP_TEXT42,規劃探索中…
+GALAXY_TRIP_TEXT43,剩餘時間：{1}
+GALAXY_TRIP_TEXT44,探索詳情
+GALAXY_TRIP_TEXT45,購買後立即獲得：
+GALAXY_TRIP_TEXT46,購買後可累計獲得：
+GALAXY_TRIP_TEXT47,探險積分
+GALAXY_TRIP_TEXT48,任務
+GALAXY_TRIP_TEXT49,基礎獎勵
+GALAXY_TRIP_TEXT50,額外獎勵
+GALAXY_TRIP_TIPS_01,當前未進行任何探索
+GALAXY_TRIP_TIPS_02,當前正在探索中，無法進行線路規劃
+GALAXY_TRIP_TIPS_03,需要先設置隊伍
+GALAXY_TRIP_TIPS_04,需要通關前置星系
+GALAXY_TRIP_TIPS_05,未知區域，敬請期待
+GALAXY_TRIP_TIPS_06,請選擇規劃探索的地點
+GALAXY_TRIP_TIPS_07,召回將放棄探索當前地點，是否繼續？
+ACTIVITY_GOLDFISH_RK,Bon Plan Estival
+GALAXY_TRIP_TIPS_08,當前沒有可探索的地點
+GALAXY_TRIP_TIPS_09,該地點當前無法加入線路規劃
+GALAXY_TRIP_TIPS_10,線路規劃中挑戰敵人若失敗，將繼續挑戰直到沒有挑戰次數，是否繼續？
+GALAXY_TRIP_TEXT51,星旅通行證
+GALAXY_TRIP_TEXT52,——《星旅記》
+ACTIVITY_GOLDFISH_TEXT06,"L'événement - Maître de la Pêche est désormais terminé. La boutique limitée d'échange est ouverte pendant encore 1 jour ! N'oubliez pas d'échanger vos récompenses, Senpai~"
+ACTIVITY_GOLDFISH_TEXT07,"Utilisez vos Épuisettes pour attraper des Poissons Dorés, et obtenez des Pièces d'Écaille pour les échanger dans la boutique limitée~"
+GALAXY_TRIP_TEXT53,探索詳情
+GALAXY_TRIP_TEXT54,當前進度
+GALAXY_TRIP_TEXT55,探索積分獲得

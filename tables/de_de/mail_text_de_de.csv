@@ -11,7 +11,7 @@ id,name,from,content
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
 11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Schaufel *2 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
-13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100, Grüne Jade *5, Goldene Jade *1 und Party Getränk *3 zu erhalten. Hier sind deine Belohnungen."
+13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Schöpfnetz *2 zu erhalten. Hier sind deine Belohnungen!"
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
 15,Tötungsbelohnungen,Systembenachrichtigung,Herzlichen Glückwunsch! Der Freundesboss wurde von dir getötet. Du erhältst die folgenden Belohnungen!
 16,Belohnungen (Freundesboss),Systembenachrichtigung,Der Freund BOSS wurde erfolgreich besiegt. Herzlichen Glückwunsch zu den folgenden Belohnungen!
@@ -19,7 +19,7 @@ id,name,from,content
 18,Belohnungen - Mädchenversammlung,Systembenachrichtigung,Herzliche Glückwünsche! Du hast beim Mädchen-Versammlungsevent ein bestimmtes Ziel erreicht. Hier sind die entsprechenden Belohnungen!
 19,Beta-Aufladungsrabatt,Systembenachrichtigung,"Vielen Dank, dass du während der Testphase {1} gekauft hast. Hier ist deine Bonusbelohnung für die Unterstützung!"
 20,Lottobelohnungen,Systembenachrichtigung,Herzliche Glückwünsche! Du hast {1} Punkte beim Lottoevent erreicht! Hier sind deine Belohnungen!
-21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100, Grüne Jade *5, Goldene Jade *1 und Party Getränk *3 zu erhalten. Hier sind deine Belohnungen."
+21,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Schöpfnetz *2 zu erhalten. Hier sind deine Belohnungen!"
 22,Belohnungen - Jobaufgaben,Systembenachrichtigung,Herzlichen Glückwünsche! Du hast während des Jobaufgaben-Events die {1}-Sterne Jobaufgaben abgeschlossen! Hier sind deine Belohnungen!
 23,Auflade-Nachricht,Systembenachrichtigung,"Vielen Dank, dass du dich für {1} entschieden hast. Deine Items sind im Rucksack erhältlich. Schau nach~"
 24,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Steuer *4, Dias *150, Angelrute *5, Glücksmünze *2, Grüne Jade *5 und Goldene Jade *1 zu erhalten. Hier sind deine Belohnungen."
@@ -235,7 +235,7 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 213,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast dem Chaos-Lord einen hohen Schaden zugefügt und er hat sich zurückgezogen! Sammle die Belohnungen ein und kämpfe weiter! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 214,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast den Chaos-Lord erfolgreich besiegt und bist in ein gefährlicheres Gebiet eingetreten. Bitte sammle die Belohnungen ein! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 215,Weihnachtsaustausch geht bald zu Ende,Event-Mail,"Lieber Senpai,\n\ndas Event ""Weihnachtsaustausch"" geht bald zu Ende. Vergiss bitte nicht, deine gewünschten Geschenke zu tauschen!"
-216,Belohnungen (Weihnachtselfe),Event-Mail,"Gratuliere, du hast im Event ""Weihnachtselfe"" insgesamt {1} Weihnachtssocken aufgehängt und folgende Belohnungen erhalten!"
+216,Belohnungen zum Fischmeister,Event-Mail,"Gratuliere, du hast im Event ""Fischmeister"" {1} Fische gefangen! Hier sind deine Belohnungen."
 217,Alter Campus endet bald,Systembenachrichtigung,"Lieber Senpai, Alter Campus wird in 24 Stunden geschlossen. Bitte begebe dich schnell auf den Campus, um höhere Etagen zu erobern!"
 218,Letzter Tag für limitierte Pakete!,Systembenachrichtigung,"Lieber Senpai, das Paket-Event ""{1}"" wird in 1 Tag beendet! Verpass die preiswerten Pakete bloß nicht!"
 219,Bonus zum Feuerwerksspektakel,Systembenachrichtigung,"Lieber Senpai, hast du heute schon am Event ""Feuerwerksspektakel"" teilgenommen? Hier, ich schick dir noch ein Streichholz als Bonus!"
@@ -290,3 +290,5 @@ GXB2 Entwicklungsteam"
 245,Segen von Cupid,Event-Mail,"Liebe(r) Senpai,\n\ndeine Chance fürs Beten sind automatisch zurückgesetzt. Insgesamt sind {1} Chance(n) nicht genutzt und sie werden für Dias recycelt. Bitte sammle sie ein!"
 246,Alter Campus - Schadensbelohnung,Systembenachrichtigung,"Gratuliere, du hast den {1}. Platz auf der Schadensrangliste der 11. Etage im ""Alten Campus"" belegt. Hier sind deine Belohnungen!"
 247,Belohnung zu Aktiv-Punkten (Himmelsinsel),Systembenachrichtigung,"Gratuliere, während des Gilden-Events ""Himmelsinsel"" hat deine Gilde {1} Aktiv-Punkte erhalten. Hier sind deine Belohnungen!"
+248,Fischmünzen zu Sommerangeboten,Event-Mail,"Liebe(r) Senpai, die dir fehlenden {1} Fischmünzen wurden bereits in deinen Rucksack gesendet. Prüfe schnell die Belohnungen, um sie rechtzeitig zu tauschen~"
+249,Glaxisreise - Rangbelohnungen,Systembenachrichtigung,"Gratuliere, du hast den {1}. Platz in der Reise durch die Galaxis belegt. Hier sind deine Belohnungen!"

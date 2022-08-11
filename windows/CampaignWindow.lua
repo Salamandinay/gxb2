@@ -1875,7 +1875,7 @@ function CampaignWindow:willClose()
 		self.campaignEffect1 = nil
 	end
 
-	if self.isOpenLastWindow and self.params_ and self.params_.lastWindow and self.name_ ~= "smithy_window" and self.name_ ~= "enhance_window" then
+	if self.isOpenLastWindow and self.params_ and self.params_.lastWindow and tostring(self.params_.lastWindow) ~= "" and tonumber(self.params_.lastWindow) ~= 0 and self.name_ ~= "smithy_window" and self.name_ ~= "enhance_window" then
 		xyd.WindowManager.get():openWindow(self.params_.lastWindow)
 	end
 end

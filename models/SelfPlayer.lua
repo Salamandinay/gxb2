@@ -581,6 +581,7 @@ function SelfPlayer:onLoginInfo_(event)
 		})
 	end
 
+	xyd.models.growthDiary:onLoginInfo(params.growth_diary_info)
 	self:onlineInfo({
 		name = xyd.event.PLAYER_INFO,
 		data = params.online_info

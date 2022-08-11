@@ -263,7 +263,7 @@ end
 
 function GuildCompetitionPartnerStudyWindow:initNormalPartnerData(groupID, needUpdateTop)
 	local partnerList = self:getPartners()
-	local lvSortedList = partnerList[tostring(xyd.partnerSortType.isCollected) .. "_0"]
+	local lvSortedList = partnerList[tostring(xyd.partnerSortType.LEV) .. "_0"]
 	local partnerDataList = {}
 	self.power = 0
 
@@ -434,12 +434,28 @@ function GuildCompetitionPartnerStudyWindow:getCloneInfo(baseInfo)
 		star_origin[i] = baseInfo.star_origin[i]
 	end
 
+	local copyEquipments = {
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0
+	}
+
+	for i in pairs(copyEquipments) do
+		if baseInfo.equipments[i] then
+			copyEquipments = baseInfo.equipments[i]
+		end
+	end
+
 	return {
 		tableID = xyd.getCopy(baseInfo.tableID),
 		star = xyd.getCopy(baseInfo.star),
 		lev = xyd.getCopy(baseInfo.lev),
 		partnerID = xyd.getCopy(baseInfo.partnerID),
-		equipments = xyd.getCopy(baseInfo.equipments),
+		equipments = copyEquipments,
 		grade = xyd.getCopy(baseInfo.grade),
 		awake = xyd.getCopy(baseInfo.awake),
 		lockFlags = xyd.getCopy(baseInfo.lockFlags),

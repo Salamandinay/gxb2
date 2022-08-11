@@ -821,7 +821,7 @@ end
 function GuildCompetitionSpecialPartnerWindow:checkPartnerBackBtn()
 end
 
-function PartnerDetailWindow:updateNavState()
+function GuildCompetitionSpecialPartnerWindow:updateNavState()
 	self.status_ = "POTENTIALITY"
 end
 

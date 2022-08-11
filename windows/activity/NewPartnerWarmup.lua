@@ -12,13 +12,12 @@ end
 
 function NewPartnerWarmup:resizeToParent()
 	NewPartnerWarmup.super.resizeToParent(self)
-	self:resizePosY(self.bg, 30, 0)
-	self:resizePosY(self.imgText, 35, 7)
-	self:resizePosY(self.groupTime, -237, -267)
-	self:resizePosY(self.itemStage1, -346, -376)
-	self:resizePosY(self.itemStage2, -496, -526)
-	self:resizePosY(self.itemStage3, -646, -676)
-	self:resizePosY(self.itemStage4, -796, -826)
+	self:resizePosY(self.bg, 64, 0)
+	self:resizePosY(self.imgText, 35, -22)
+	self:resizePosY(self.groupTime, -272, -336)
+	self:resizePosY(self.itemStage1, -428, -493)
+	self:resizePosY(self.itemStage2, -607, -674)
+	self:resizePosY(self.itemStage3, -784, -854)
 end
 
 function NewPartnerWarmup:initUI()
@@ -61,7 +60,7 @@ function NewPartnerWarmup:initUIComponent()
 
 	self.curDays = math.ceil((xyd.getServerTime() - self.activityData.start_time) / 86400)
 
-	for i = 1, 4 do
+	for i = 1, 3 do
 		local plotID = xyd.tables.newPartnerWarmUpStageTable:getPlotIds(i)
 		self["labelStage" .. i].text = xyd.tables.partnerWarmUpPlotTextTable:getTitle(plotID[2])
 		local unlockDay = xyd.tables.newPartnerWarmUpStageTable:getUnlockDay(i)
@@ -75,7 +74,7 @@ function NewPartnerWarmup:initUIComponent()
 end
 
 function NewPartnerWarmup:updateRedPoint()
-	for i = 1, 4 do
+	for i = 1, 3 do
 		local unlockDay = xyd.tables.newPartnerWarmUpStageTable:getUnlockDay(i)
 
 		if unlockDay <= self.curDays and self.activityData.detail.current_stage == i then
@@ -92,7 +91,7 @@ function NewPartnerWarmup:register()
 	self:registerEvent(xyd.event.NEW_PARTNER_WARMUP_FIGHT, function (event)
 		self:updateRedPoint()
 
-		local curStage = self.activityData.detail.current_stage == -1 and 4 or self.activityData.detail.current_stage - 1
+		local curStage = self.activityData.detail.current_stage == -1 and 3 or self.activityData.detail.current_stage - 1
 		local battleID = xyd.tables.newPartnerWarmUpStageTable:getBattleID(curStage)
 
 		if not battleID or battleID == 0 then
@@ -127,7 +126,7 @@ function NewPartnerWarmup:register()
 		xyd.WindowManager:get():openWindow("new_partner_warmup_preview_window")
 	end
 
-	for i = 1, 4 do
+	for i = 1, 3 do
 		local function clickFunc()
 			local unlockDay = xyd.tables.newPartnerWarmUpStageTable:getUnlockDay(i)
 

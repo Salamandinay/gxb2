@@ -154,7 +154,8 @@ function MainTopRightBtn:ctor(goItem, id)
 			"QUIZ",
 			"PET",
 			"TRAVEL_TITLE",
-			"STARRY_ALTAR"
+			"STARRY_ALTAR",
+			"GROWTH_DIARY"
 		},
 		img = {
 			"right_friend_icon_v3",
@@ -162,7 +163,8 @@ function MainTopRightBtn:ctor(goItem, id)
 			"right_quiz_icon_v3",
 			"left_pet_icon",
 			"right_explore_icon",
-			"right_starry_altar_icon"
+			"right_starry_altar_icon",
+			"growth_diary_icon"
 		},
 		funcId = {
 			xyd.FunctionID.FRIEND,
@@ -170,7 +172,8 @@ function MainTopRightBtn:ctor(goItem, id)
 			xyd.FunctionID.QUIZ,
 			xyd.FunctionID.PET,
 			xyd.FunctionID.EXPLORE,
-			xyd.FunctionID.STARRY_ALTAR
+			xyd.FunctionID.STARRY_ALTAR,
+			xyd.FunctionID.GROWTH_DIARY
 		}
 	}
 	self.id = id
@@ -218,6 +221,12 @@ function MainTopRightBtn:ctor(goItem, id)
 		self.goItem_:SetActive(false)
 	end
 
+	print(self.trans.funcId[id])
+
+	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
+		self.goItem_:SetActive(false)
+	end
+
 	if self.id == 4 then
 		self:updateUpIcon()
 	end
@@ -257,6 +266,10 @@ function MainTopRightBtn:levChange()
 	if (self.trans.funcId[id] == 0 or xyd.checkFunctionOpen(self.trans.funcId[id], true)) and (xyd.Global.isReview ~= 1 or self.id ~= 2) then
 		self.goItem_:SetActive(true)
 	else
+		self.goItem_:SetActive(false)
+	end
+
+	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
 		self.goItem_:SetActive(false)
 	end
 end
@@ -1002,10 +1015,18 @@ function MainWindow:initTopBtnGroup()
 
 			xyd.WindowManager.get():openWindow("starry_altar_window")
 			MainMap:stopSound()
+		end,
+		function ()
+			if not xyd.checkFunctionOpen(xyd.FunctionID.GROWTH_DIARY) then
+				return
+			end
+
+			xyd.WindowManager.get():openWindow("growth_dairy_window")
+			MainMap:stopSound()
 		end
 	}
 
-	for i = 1, 6 do
+	for i = 1, 7 do
 		local go = NGUITools.AddChild(self.transTopR.gameObject, self.topRightBtn.gameObject)
 
 		go:SetActive(true)
@@ -1028,6 +1049,18 @@ function MainWindow:initTopBtnGroup()
 	self.btnQuiz_ = self.trBtnList_[3]
 
 	self:showProperTopBtn()
+end
+
+function MainWindow:checkTrBtn()
+	if self.trBtnList_ then
+		for i = 1, #self.trBtnList_ do
+			if self.trBtnList_[i].id == 7 and xyd.models.growthDiary:checkFinish() then
+				self.trBtnList_[i].goItem_:SetActive(false)
+			end
+		end
+
+		self.transTopR:GetComponent(typeof(UIGrid)):Reposition()
+	end
 end
 
 function MainWindow:updateUpIcon()
@@ -2295,6 +2328,7 @@ function MainWindow:initRedMark()
 	}, self.btnChat_redIcon3.gameObject)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.FRIEND, self.trBtnList_[1]:getRedPoint())
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.PET, self.trBtnList_[4]:getRedPoint())
+	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GROWTH_DIARY, self.trBtnList_[7]:getRedPoint())
 	xyd.models.backpack:checkCollectionShopRed()
 
 	local funcs = {

@@ -201,10 +201,12 @@ function MidAutumnActivity:onAward(evt)
 		table.remove(self.cur_choose, 1)
 
 		if realIndex ~= self.activityFestivalId then
-			local item = self.itemList[realIndex]
+			for key, item in pairs(self.itemList) do
+				if item.realIndex_ == realIndex then
+					item:setBuyCnt(self.activityData.detail.buy_times[id])
 
-			if item then
-				item:setBuyCnt(self.activityData.detail.buy_times[id])
+					break
+				end
 			end
 		end
 

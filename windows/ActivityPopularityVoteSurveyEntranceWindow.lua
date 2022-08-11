@@ -30,7 +30,7 @@ function ActivityPopularityVoteSurveyEntranceWindow:initUIComponent()
 
 	self.labelTitle.text = __("ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01")
 	self.labelDesc.text = __("ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04")
-	self.labelName.text = xyd.tables.partnerTable:getName(56006)
+	self.labelName.text = xyd.tables.partnerTable:getName(51017)
 	self.labelTicket.text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT1")
 	self.btnEntranceLabel.text = __("ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02")
 end

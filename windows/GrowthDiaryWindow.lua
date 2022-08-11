@@ -102,6 +102,8 @@ function MissionItem:jumpFunction()
 
 	if not isUnlock then
 		xyd.alertTips(__("GROWTH_DIARY_TEXT06"))
+
+		return
 	end
 
 	local jumpID = xyd.tables.grouthDiaryMissionTable:getGetWay(self.missionID_)
@@ -132,6 +134,12 @@ function GrowthDiaryWindow:ctor(name, params)
 	GrowthDiaryWindow.super.ctor(self, name, params)
 
 	self.chapter_ = xyd.models.growthDiary:getChapter() or 1
+
+	if self.chapter_ == 30 or self.chapter_ == 12 or self.chapter_ == 27 then
+		xyd.models.heroChallenge:reqHeroChallengeInfo()
+		xyd.models.heroChallenge:reqHeroChallengeChessInfo()
+	end
+
 	self.chapterAwardList_ = {}
 	self.missionList_ = {}
 end
@@ -184,6 +192,17 @@ function GrowthDiaryWindow:getUIComponent()
 	self.awardLabel_.text = __("GROWTH_DIARY_TEXT03")
 	self.labelTip1_.text = tips[1]
 	self.labelTip2_.text = tips[2]
+
+	if xyd.Global.lang == "en_en" then
+		self.labelTip1_.fontSize = 16
+		self.labelTip2_.fontSize = 16
+	elseif xyd.Global.lang == "fr_fr" then
+		self.labelTip1_.fontSize = 17
+		self.labelTip2_.fontSize = 17
+	elseif xyd.Global.lang == "de_de" then
+		self.labelTip1_.fontSize = 18
+		self.labelTip2_.fontSize = 18
+	end
 end
 
 function GrowthDiaryWindow:initProgress()
@@ -340,6 +359,10 @@ function GrowthDiaryWindow:onGetChapterAwards(event)
 
 		if length >= chapter_id + 1 then
 			self:changePageAni(1)
+		else
+			self:updateTopAward()
+			self:updateMissionList()
+			self:initProgress()
 		end
 	end)
 end

@@ -28,7 +28,7 @@ end
 function NewPartnerWarmupPreviewWindow:initUIComponent()
 	self.labelTitle.text = __("PARTNER_WARMUP_TEXT01")
 
-	for i = 1, 4 do
+	for i = 1, 3 do
 		local go = NGUITools.AddChild(self.groupItem, self.item)
 		local labelDesc = go:ComponentByName("labelDesc", typeof(UILabel))
 		local groupIcon = go:NodeByName("groupIcon").gameObject

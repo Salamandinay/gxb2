@@ -4771,11 +4771,11 @@ DRESS_ITEM_UP_WINDOW_3,조각 필요하지 않음
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,이벤트 정보
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,투표
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,우승 소녀
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,지난 설문조사에서 '수호 천사' 스킨은 많은 선배님의 사랑을 받았습니다.\n해당 스킨을 위해 저희는 4가지 색상 플랜을 디자인하였습니다. 최종 색상은 본 설문지 결과에 따라 결정됩니다. 소중한 한 표를 행사하시기 바랍니다.
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,플랜 A
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,플랜 B
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,플랜 C
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,플랜 D
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,19일간의 투표 진행 후 지금 인기 소녀 선발대회의 결과가 나왔습니다! 우승자는 원초·드라큘라입니다!\n저희는 우승자를 위해 스킨 초안 4개 만들었습니다. 이번 설문 조사 결과에 따라 스킨이 정해집니다~ 어서 그녀를 위해 투표하세요!
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A. 어둠의 여왕
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B. 미스 유몽학원
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C. 카오스의 마왕
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,D. 여신 강림
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT09,투표
 DRESS_CHOOSE_SHOW_WINDOW_1,선택된 디자인 조각
 DRESS_CHOOSE_SHOW_WINDOW_2,조각을 선택하지 않았습니다
@@ -5723,7 +5723,7 @@ ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,지도를 클릭하여 모험을 바꿀 수 
 ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,모든 보상을 획득하셨어요! 자동으로 다른 모험지로 이동합니다.
 ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,모든 보상을 획득하셨어요! {1}의 지도가 해제되었으니 해당 모험지로 이동하겠습니다.
 ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,모든 보상을 획득하셨어요! 명예의 전당의 모험이 리셋됩니다.
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,천기•제갈량을 이미 소환하셨으니 다시 소환할 필요 없습니다.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,연화를 이미 획득하셨습니다~!
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,다시하기
 SHRINE_HURDLE,시공의 틈
 SHRINE_TREE,풍경 나무
@@ -6260,7 +6260,7 @@ GAME_ASSISTANT_TEXT106,10회 뽑기
 GAME_ASSISTANT_TEXT107,학원 리그 진영은 변화가 생겼습니다. 진영을 조정하시겠습니까?
 GAME_ASSISTANT_TEXT108,체육관 전투 진영은 변화가 생겼습니다. 진영을 조정하시겠습니까?
 GUILD_TEXT75,일치하는 동아리를 찾지 못 했습니다.
-STAR_ALTAR_TITLE,天河漫繪
+STAR_ALTAR_TITLE,별 그리기
 GROUP_7,천이
 BATTLE_TIPS_DESC3,다른 학부에 유리하지 않고 공합도 없습니다.
 SKILL_RESONATE_HELP,1. 스킬 공명은 천이 학부 소녀만 가지고 있는 기능입니다.|2. '찬란 공명석'과 '심원 공명석'을 소모해 소녀의 스킬 레벨을 올릴 수 있습니다. 4개 스킬의 총 레벨은 공명 레벨입니다.|3. 스킬 하나가 일정 레벨까지 도달 후 남은 스킬을 전부 다 지정한 레벨까지 올린 후 다시 레벨업 가능합니다.|4. 소녀의 공명 레벨에 따라 얻을 속성 부스트도 많아집니다.|5. 소녀의 스킬 공명이 이미 레벨업된 상태일 경우 일정 수량의 다이아를 사용해 공명 레벨을 리셋할 수 있습니다. 레벨업 과정 중 소모한 모든 재료가 반환됩니다.
@@ -6906,7 +6906,7 @@ GROWTH_DIARY_TEXT05,모든 미션 완료 시 해제
 GROWTH_DIARY_TEXT06,앞의 챕터를 먼저 완성해야 해당 챕터를 해제 가능합니다.
 GROWTH_DIARY_TEXT07,수령완료
 GROWTH_DIARY_TEXT08,해당 챕터는 해제되지 않았습니다.
-GROWTH_DIARY_TEXT09,|로 기재되어 있는 미션은 현재 화면에서만 클리어 가능합니다.
+GROWTH_DIARY_TEXT09,|로 표시된 미션이 대응하는 챕터 잠금 해제 후 완성 가능
 ACTIVITY_NEW_WARMUP_TEXT38,해당 팀을 선택하시겠습니까?
 GUILD_COMPETITION_ACTIVE_TEXT01,활약도 미션
 GUILD_COMPETITION_ACTIVE_TEXT02,활약도
@@ -6934,3 +6934,99 @@ GROWTH_DIARY_TEXT11,수령 완료
 GUILD_COMPETITION_PARTNER_TEXT07,해당 소녀는 이미 연수되었으니 선택할 수 없습니다.
 GROWTH_DIARY_TEXT12,수령
 ACTIVITY_FREE_REVERT_TEXT08,*이벤트 오픈 전 획득한 소녀만 재입학 가능합니다.
+ACTIVITY_GOLDFISH_HELP,"1. 헤르메스의 상점이 오픈됐어요~ 어서 구경하러 오세요!|2. '뜰채'를 사용해 금붕어를 잡으면 대응하는 보상을 획득할 수 있습니다. 일반 금붕어를 잡으면 보너스 풀에 '금붕어 코인' 200개 추가됩니다. 특별 금붕어를 잡으면 대응하는 비례로 보너스 풀 안에 '금붕어 코인'을 획득합니다. (큐피드 & 프로메테우스 선택 팩 획득 시, 금붕어 코인 획득하지 않음.) 초기 보너스 풀 안에 '금붕어 코인' 10000개 있습니다.|3. 금붕어 잡기 횟수에 따라 획득할 금붕어 코인의 기대치가 정해집니다. 만약 실제 획득한 금붕어 코인이 기대치에 미치지 못했으면 이벤트 마지막 날에 남은 나머지 금붕어 코인이 가방으로 발송됩니다. 이벤트 마지막 날에 금붕어를 잡을 수 없습니다.|4. 금붕어 코인을 사용해 보상과 교환할 수 있습니다. 첫번째 단계는 자동으로 해제되며 그 이후의 단계는 일정 잡기 횟수 달성 시 해제됩니다.|5. 잡기 횟수에 따라 누적 보상이 발송됩니다.|6. 이벤트 종료 후 미사용한 뜰채 및 금붕어 코인은 자동으로 골드로 변환되며, 변환될 골드는 메일로 발송됩니다. 뜰채*1=골드*50000, 금붕어 코인*1=골드*100"
+ACTIVITY_GOLDFISH_BUTTON01,1회
+ACTIVITY_GOLDFISH_BUTTON02,10회
+ACTIVITY_GOLDFISH_TEXT01,선배님께서 이미 금붕어 잡기 [c][35a7ef]{1}[-][/c]회 완성하셨습니다. 금붕어 코인 기대치는 [c][ffa82b]{2}[-][/c]개입니다. 지금 금붕어 코인 [c][ffa82b]{3}[-][/c]개 획득하셨으니 이벤트 마지막 날에 남은 금붕어 코인 [c][ffa82b]{4}[-][/c]개가 가방으로 발송될 것입니다~
+ACTIVITY_GOLDFISH_TEXT02,선배님께서 이미 금붕어 잡기 [c][35a7ef]{1}[-][/c]회 완성하셨습니다. 금붕어 코인 기대치는 [c][ffa82b]{2}[-][/c]개입니다. 지금 금붕어 코인 [c][ffa82b]{3}[-][/c]개 획득하셨습니다. 선배님의 운이 대박이네요!
+ACTIVITY_GOLDFISH_TEXT03,일반 금붕어 잡을 때마다 보너스 풀에 금붕어 코인 [c][ff8a00]200[-][/c]개 추가됩니다.
+ACTIVITY_GOLDFISH_TEXT04,보너스 풀
+ACTIVITY_GOLDFISH_TEXT05,축하드립니다! {1} 선배님께서 금붕어 코인 {2}개 획득하셨습니다~
+ACTIVITY_GOLDFISH_PREVIEW_TEXT01,특별 금붕어
+ACTIVITY_GOLDFISH_PREVIEW_TEXT02,일반 금붕어
+ACTIVITY_GOLDFISH_SHOP_TEXT01,이벤트 마지막 날에 금붕어 코인 [c][ffa82b]{1}[-][/c]개가 가방으로 발송될 것입니다~
+ACTIVITY_GOLDFISH_SHOP_TEXT02,기간 한정 보상이 선배님을 기다리고 있답니다~!
+ACTIVITY_GOLDFISH_SHOP_TEXT03,{1}단계
+ACTIVITY_GOLDFISH_SHOP_TEXT04,잡기 횟수：
+ACTIVITY_GOLDFISH_SHOP_TEXT05,획득한 금붕어 코인：
+ACTIVITY_GOLDFISH_SHOP_TEXT06,금붕어 코인 기대치：
+ACTIVITY_GOLDFISH_SHOP_TEXT07,반환될 금붕어 코인：
+ACTIVITY_GOLDFISH_SHOP_TIPS01,금붕어 잡기 {1}회 완성 후 해당 단계 해제 가능합니다~
+ACTIVITY_GOLDFISH_AWARD_TEXT01,{1}회 잡기
+ACTIVITY_GOLDFISH_PACK_TEXT01,구입 후 추가로 다이아 팩 구매 기회 2번 획득~
+STARRY_ALTAR_TEXT14,보상 · 서프라이즈 모드
+STARRY_ALTAR_TEXT15,보상 · 누적 모드
+STARRY_ALTAR_TEXT16,누적 뽑기 40회 완성할 때마다 기초 보상 외에 추가로 10성 천이 소녀 조각 획득
+STARRY_ALTAR_TEXT17,우측 상단에 있는 +버튼을 클릭하여 보상 모드를 선택하세요.
+STARRY_ALTAR_TEXT18,1회 뽑을 때마다 [c][ffe241]0.25%%[-][/c]의 확률로 천이 소녀 획득 가능
+STARRY_ALTAR_TEXT19,[c][ffe241]{1}[-][/c]회 뽑기 더 진행하면 [c][56db32]10성 천이 소녀 조각*10[-][/c] 반드시 획득
+STARRY_ALTAR_TEXT20,2가지 보상 모드 중 하나를 선택하실 수 있습니다.
+GROWTH_DIARY_TEXT13,사역마 트레이닝이 해제되어 있지 않습니다
+GALAXY_TRIP_TEXT01,별빛 여정
+GALAXY_TRIP_TEXT02,천이 학부 소녀 뽑기
+GALAXY_TRIP_TEXT03,獲取星源相關資源
+GALAXY_TRIP_TEXT04,별빛 여정
+GALAXY_TRIP_TEXT05,探索中…
+GALAXY_TRIP_TEXT06,클리어
+GALAXY_TRIP_TEXT07,未知星系
+GALAXY_TRIP_TEXT08,探索進度
+GALAXY_TRIP_TEXT09,探索星系：
+GALAXY_TRIP_TEXT10,獲得探索積分
+GALAXY_TRIP_TEXT11,進入
+GALAXY_TRIP_TEXT12,探索完成
+GALAXY_TRIP_TEXT13,探索星系：
+GALAXY_TRIP_TEXT14,成功探索地點：{1}個
+GALAXY_TRIP_TEXT15,總時長：{1}
+GALAXY_TRIP_TEXT16,探索地點：{1}號
+GALAXY_TRIP_TEXT17,探索時長：{1}
+GALAXY_TRIP_TEXT18,探索結果：探索成功
+GALAXY_TRIP_TEXT19,探索結果：探索失敗
+GALAXY_TRIP_TEXT20,確認
+GALAXY_TRIP_TEXT21,返回
+GALAXY_TRIP_TEXT22,隊伍
+GALAXY_TRIP_TEXT23,線路
+GALAXY_TRIP_TEXT24,召回
+GALAXY_TRIP_TEXT25,設置隊伍
+GALAXY_TRIP_TEXT26,保存隊伍
+GALAXY_TRIP_TEXT27,{1}小時
+GALAXY_TRIP_TEXT28,探索
+GALAXY_TRIP_TEXT29,探索中
+GALAXY_TRIP_TEXT30,探索獎勵
+GALAXY_TRIP_TEXT31,探索加成
+GALAXY_TRIP_TEXT32,敵人資訊
+GALAXY_TRIP_TEXT33,難度選擇
+GALAXY_TRIP_TEXT34,挑戰
+GALAXY_TRIP_TEXT35,當前通關進度
+GALAXY_TRIP_TEXT36,通關當前星系條件：
+GALAXY_TRIP_TEXT37,擊敗首領（{1}/{2}）
+GALAXY_TRIP_TEXT38,發現寶箱（{1}/{2}）
+GALAXY_TRIP_TEXT39,連通起點和終點（{1}/{2}）
+GALAXY_TRIP_TEXT40,戰鬥加成匯總（{1}/{2}）
+GALAXY_TRIP_TEXT41,保存
+GALAXY_TRIP_TEXT42,規劃探索中…
+GALAXY_TRIP_TEXT43,剩餘時間：{1}
+GALAXY_TRIP_TEXT44,探索詳情
+GALAXY_TRIP_TEXT45,購買後立即獲得：
+GALAXY_TRIP_TEXT46,購買後可累計獲得：
+GALAXY_TRIP_TEXT47,探險積分
+GALAXY_TRIP_TEXT48,任務
+GALAXY_TRIP_TEXT49,基礎獎勵
+GALAXY_TRIP_TEXT50,額外獎勵
+GALAXY_TRIP_TIPS_01,當前未進行任何探索
+GALAXY_TRIP_TIPS_02,當前正在探索中，無法進行線路規劃
+GALAXY_TRIP_TIPS_03,需要先設置隊伍
+GALAXY_TRIP_TIPS_04,需要通關前置星系
+GALAXY_TRIP_TIPS_05,未知區域，敬請期待
+GALAXY_TRIP_TIPS_06,請選擇規劃探索的地點
+GALAXY_TRIP_TIPS_07,召回將放棄探索當前地點，是否繼續？
+ACTIVITY_GOLDFISH_RK,여름 대방출
+GALAXY_TRIP_TIPS_08,當前沒有可探索的地點
+GALAXY_TRIP_TIPS_09,該地點當前無法加入線路規劃
+GALAXY_TRIP_TIPS_10,線路規劃中挑戰敵人若失敗，將繼續挑戰直到沒有挑戰次數，是否繼續？
+GALAXY_TRIP_TEXT51,星旅通行證
+GALAXY_TRIP_TEXT52,——《星旅記》
+ACTIVITY_GOLDFISH_TEXT06,금붕어 잡기 이벤트가 종료되었습니다. 하지만 교환 상점이 마지막 날에도 오픈되니 어서 원하시는 보상과 교환하세요!
+ACTIVITY_GOLDFISH_TEXT07,뜰채를 사용해 특별 금붕어를 잡으면 금붕어 코인을 획들할 수 있으며 아이템 교환 가능합니다~!
+GALAXY_TRIP_TEXT53,探索詳情
+GALAXY_TRIP_TEXT54,當前進度
+GALAXY_TRIP_TEXT55,探索積分獲得

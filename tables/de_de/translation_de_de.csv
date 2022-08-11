@@ -4774,11 +4774,11 @@ DRESS_ITEM_UP_WINDOW_3,Keine Fragmente benötigt
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,Eventinfo
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,Abstimmen
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,Gewinnerin
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Bei der letzten Abstimmung hat das Kostüm ""Engel des Lichts"" gewonnen!\nWir haben für dieses Kostüm 4 verschiedene Farbkonzepte entworfen und weitere Optimierungen durchgeführt. Stimmt jetzt für euer Lieblingsfarbkonzept!"
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A. Farbkonzept 1
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B. Farbkonzept 2
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C. Farbkonzept 3
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,D. Farbkonzept 4
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Nach der 19-tägigen Abstimmung haben wir die Miss Yume ausgewählt. Der Champion ist ----- Lord Dracula!\nWir haben hierzu für Lord Dracula 4 Kostüme entworfen und es wird nun von dir bestimmt, welches zum offiziellen Kostüm der Miss Yume ausgewählt wird!"
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A. Dunkle Kaiserin
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B. Miss Yume
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C. Lord Erlkönigin
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,D. Eure Majestät
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT09,Abstimmen
 DRESS_CHOOSE_SHOW_WINDOW_1,Bereits ausgewählte Outfit-Fragmente
 DRESS_CHOOSE_SHOW_WINDOW_2,Keine Fragmente ausgewählt
@@ -5728,7 +5728,7 @@ ACTIVITY_VAMPIRE_GAMBLE_CHANGE_TIPS,"Tippe auf die Bilder, um das Reiseziel zu w
 ACTIVITY_VAMPIRE_GAMBLE_AUTO_TIPS,Alle Reisebelohnungen an diesem Ort erhalten. Das Reiseziel wird automatisch gewechselt.
 ACTIVITY_VAMPIRE_GAMBLE_FIVE_TIPS,Alle Reisebelohnungen an diesem Ort erhalten und {1} entsperrt. Reise zum nächste Ziel beginnen?
 ACTIVITY_VAMPIRE_GAMBLE_SIX_TIPS,Alle Reisebelohnungen an diesem Ort erhalten. Die Reise zum Ehrenschloss wird zurückgesetzt.
-ACTIVITY_VAMPIRE_GAMBLE_TEXT04,K.M. Erleuchterin bereits herbeigerufen. Sie muss nicht nochmal herbeigerufen werden.
+ACTIVITY_VAMPIRE_GAMBLE_TEXT04,Du hast Nymphäa bereits herbeigerufen!
 ACTIVITY_VAMPIRE_GAMBLE_TEXT05,Reisen
 SHRINE_HURDLE,Prüfung der Götter
 SHRINE_TREE,Baum der Ahnen
@@ -6265,7 +6265,7 @@ GAME_ASSISTANT_TEXT106,Ziehe 10 Mal
 GAME_ASSISTANT_TEXT107,Mädchen als Kämpfer in der Arena angepasst. Willst du deine Aufstellung anpassen?
 GAME_ASSISTANT_TEXT108,Mädchen als Kämpfer im Gym angepasst. Willst du deine Aufstellung anpassen?
 GUILD_TEXT75,Passende Gilden nicht gefunden
-STAR_ALTAR_TITLE,天河漫繪
+STAR_ALTAR_TITLE,Malerin der Sterne
 GROUP_7,Meteore
 BATTLE_TIPS_DESC3,Es besteht kein Rivalitätsverhältnis zwischen Meteoren und den anderen Fraktionen.
 SKILL_RESONATE_HELP,"1. Die Funktion ""Skill-Resonanz"" ist nur für die Mädchen der Meteore-Fraktion verfügbar.|2. Verwende die Items ""Kugel des Glanzes"" und ""Kugel der Finsternis"", um die Fertigkeiten der Meteore-Mädchen zu leveln. Das Gesamtlevel der 4 Fertigkeiten eines Meteore-Mädchens ist genau das Resonanzlevel dieses Mädchens.|3. Wird eine Fertigkeit auf einem bestimmten Level gelevelt , müssen die anderen 3 Fertigkeiten jeweils auf einem geforderten Level gelevelt werden, damit diese Fertigkeit weiter gelevelt werden kann.|4. Dem Resonanzlevel des Mädchens entsprechend werden dem Mädchen allerlei Attributsboni verliehen.|5. Die gelevelte Resonanz kann zurückgesetzt werden, indem du eine bestimmte Menge an Dias ausgibst. Nach dem Zurücksetzen werden alle dafür verwendeten Ressourcen zurückgesendet."
@@ -6935,7 +6935,7 @@ GROWTH_DIARY_TEXT05,Wird nach dem Abschließen aller Aufgaben entsperrt
 GROWTH_DIARY_TEXT06,Wird nach dem Abschließen des letzten Kapitels entsperrt
 GROWTH_DIARY_TEXT07,Gesammelt
 GROWTH_DIARY_TEXT08,Kapitel Gesperrt
-GROWTH_DIARY_TEXT09,Mit | markierten Aufgaben können nur auf dieser Seite abgeschlossen werden.
+GROWTH_DIARY_TEXT09,Aufgaben mit | starten erst nach der Entsperrung.
 ACTIVITY_NEW_WARMUP_TEXT38,Willst du sicher auf diese Aufstellung wetten?
 GUILD_COMPETITION_ACTIVE_TEXT01,Aufgaben zu Aktiv-Punkten
 GUILD_COMPETITION_ACTIVE_TEXT02,Aktiv-Pkt.
@@ -6952,7 +6952,7 @@ GUILD_COMPETITION_CHALLENGE_TEXT01,Ziele
 GUILD_COMPETITION_CHALLENGE_TEXT02,"Erreiche 1/2/3 Ziel(e), um die erhaltenen Punkte jeweils um 10%%/20%%/30%% zu erhöhen."
 ACTIVITY_FREE_REVERT_TEXT05,Vorschau
 CONSUMABLES,Verbrauchbar
-GROWTH_DIARY,Wachstumstagebuch
+GROWTH_DIARY,Tage-\nbuch
 NO_CONSUMABLES,Noch keine Verbrauchsgüter...
 ACTIVITY_FREE_REVERT_TEXT06,Mädchen zum Umkehren
 ACTIVITY_FREE_REVERT_TEXT07,Wähle zunächt ein Mädchen aus
@@ -6963,3 +6963,99 @@ GROWTH_DIARY_TEXT11,Gesammelt
 GUILD_COMPETITION_PARTNER_TEXT07,Das Mädchen wurde bereits fortgebildet
 GROWTH_DIARY_TEXT12,Sammeln
 ACTIVITY_FREE_REVERT_TEXT08,Nur die vor dem Beginn des Events erhaltenen Mädchen können in diesem Event zurückgesetzt werden.
+ACTIVITY_GOLDFISH_HELP,"1. Hermes hat ihren Laden an dem Strand eröffnet. Lass uns sie mal besuchen!|2. Verwende die ""Schöpfnetze"", um die Fische zu fangen und deren Belohnungen zu erhalten. Es gibt mitten einen Pool der Fischmünzen und zu Beginn sind 10.000 Fischmünzen eingesetzt. Hast du einen roten Fisch gefangen, dann werden 200 weitere Fischmünzen in den Pool eingeworfen. Hast du einen goldenen Fisch gefangen, dann erhältst du im gewissen Verhältnis einige Fischmünzen im Pool. Hast du die Auswahlbox von Promethea & Cupid gefangen, erhältst du keine Fischmünzen.|3. Deinen Fangen-Malen entsprechend wird eine bestimmte Menge an Fischmünzen vom System festgelegt, die du zu 100%% sicher erhalten kannst. Falls du diese versprochenen Fischmünzen nicht vollständig erhalten kannst, werden die fehlenden Fischmünzen am letzten Tag des Events automatisch in deinen Rucksack gesendet. Am letzten Tag ist das Fangen nicht mehr möglich.|4. Die Fischmünzen können gegen allerlei Belohnungen ausgetauscht werden. Die Belohnungen der ersten Stufe werden zu Beginn des Events entsperrt, während die weiteren Stufen deinen Fangen-Malen entsprechend entsperrt werden.|5. Deinen Fangen-Malen entsprechend werden noch weitere Belohnungen gesendet.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Schöpfnetze"" und ""Fischmünzen"" per Mail recycelt. Jedes Schöpfnetz entspricht 50000 Münzen und jede Fischmünze 100."
+ACTIVITY_GOLDFISH_BUTTON01,1 Mal
+ACTIVITY_GOLDFISH_BUTTON02,10  Mal
+ACTIVITY_GOLDFISH_TEXT01,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Die fehlenden [c][ffa82b]{4}[-][/c] Fischmünzen werden am letzten Tag des Events in deinen Rucksack gesendet!
+ACTIVITY_GOLDFISH_TEXT02,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du alle [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Da hast du aber tolles Glück gehabt!
+ACTIVITY_GOLDFISH_TEXT03,[c][ff8a00]+200[-][/c] Fischmünzen für jeden gefangenen roten Fisch
+ACTIVITY_GOLDFISH_TEXT04,Pool der Fischmünzen
+ACTIVITY_GOLDFISH_TEXT05,Gratuliere! Senpai {1} hat {2} Fischmünzen erhalten!
+ACTIVITY_GOLDFISH_PREVIEW_TEXT01,Goldene Fische
+ACTIVITY_GOLDFISH_PREVIEW_TEXT02,Rote Fische
+ACTIVITY_GOLDFISH_SHOP_TEXT01,"[c][ffa82b]{1}[-][/c] Fischmünzen werden am letzten Tag des Events in deinen Rucksack gesendet. Vergiss bloß nicht, sie rechtzeitig zu verwenden~"
+ACTIVITY_GOLDFISH_SHOP_TEXT02,Preiswerte Belohnungen erwarten dich!
+ACTIVITY_GOLDFISH_SHOP_TEXT03,Stufe {1}
+ACTIVITY_GOLDFISH_SHOP_TEXT04,Fangen-Male:
+ACTIVITY_GOLDFISH_SHOP_TEXT05,Erhaltene Münzen:
+ACTIVITY_GOLDFISH_SHOP_TEXT06,Versprochene Münzen:
+ACTIVITY_GOLDFISH_SHOP_TEXT07,Fehlende Münzen:
+ACTIVITY_GOLDFISH_SHOP_TIPS01,"Fange noch {1} Mal, um diese Stufe zu entsperren."
+ACTIVITY_GOLDFISH_AWARD_TEXT01,{1} Mal fangen
+ACTIVITY_GOLDFISH_PACK_TEXT01,Nach dem Kauf dieses Pakets kannst du das 1. Paket noch 2 Mal kaufen~
+STARRY_ALTAR_TEXT14,Belohnung · Überraschungsmodus
+STARRY_ALTAR_TEXT15,Belohnung · Standardmodus
+STARRY_ALTAR_TEXT16,Alle 40 Züge erhältst du neben den Grundbelohnungen sicher die 10-Sterne Fragmente der Meteore-Fraktion.
+STARRY_ALTAR_TEXT17,"Tippe auf das Pluszeichen oben rechts, um Modus der Belohnungen einzustellen."
+STARRY_ALTAR_TEXT18,"Gewährt bei jedem Zug eine [c][ffe241]0,25%%ige[-][/c] Wahrscheinlichkeit, Meteore-Mädchen zu erhalten."
+STARRY_ALTAR_TEXT19,"Ziehe noch [c][ffe241]{1}[-][/c] Mal, um [c][56db32]10* 10-Sterne Fragment der Meteore-Mädchen[-][/c] sicher zu erhalten."
+STARRY_ALTAR_TEXT20,Wähle einen der 2 Modi aus
+GROWTH_DIARY_TEXT13,"""Diener weiterbilden"" noch nicht entsperrt"
+GALAXY_TRIP_TEXT01,Galaxis-\nReise
+GALAXY_TRIP_TEXT02,Meteore-Mädchen ziehen
+GALAXY_TRIP_TEXT03,Ressourcen für Sternkerne erhalten
+GALAXY_TRIP_TEXT04,Reise durch die Galaxis
+GALAXY_TRIP_TEXT05,Wird erkundet...
+GALAXY_TRIP_TEXT06,Erledigt
+GALAXY_TRIP_TEXT07,Unbekannte Galaxie
+GALAXY_TRIP_TEXT08,Fortschritt
+GALAXY_TRIP_TEXT09,Galaxie:
+GALAXY_TRIP_TEXT10,Erhaltene Reise-Punkte
+GALAXY_TRIP_TEXT11,Eintreten
+GALAXY_TRIP_TEXT12,Erkunden fertig
+GALAXY_TRIP_TEXT13,Galaxie:
+GALAXY_TRIP_TEXT14,Fertig erkundet: {1} Feld(er)
+GALAXY_TRIP_TEXT15,Gesamtdauer: {1}
+GALAXY_TRIP_TEXT16,Erkundetes Feld: Nr.{1}
+GALAXY_TRIP_TEXT17,Dauer: {1}
+GALAXY_TRIP_TEXT18,Ergebnis: Erkunden erfolgreich
+GALAXY_TRIP_TEXT19,Ergebnis: Erkunden fehlgeschlagen
+GALAXY_TRIP_TEXT20,Bestätigen
+GALAXY_TRIP_TEXT21,Zurück
+GALAXY_TRIP_TEXT22,Team
+GALAXY_TRIP_TEXT23,Route
+GALAXY_TRIP_TEXT24,Zurückrufen
+GALAXY_TRIP_TEXT25,Team aufstellen
+GALAXY_TRIP_TEXT26,Speichern
+GALAXY_TRIP_TEXT27,{1} St.
+GALAXY_TRIP_TEXT28,Erkunden
+GALAXY_TRIP_TEXT29,Wird erkundet...
+GALAXY_TRIP_TEXT30,Erkundungsbelohnungen
+GALAXY_TRIP_TEXT31,Buffs zum Erkunden
+GALAXY_TRIP_TEXT32,Feinde-Info
+GALAXY_TRIP_TEXT33,Schwierigkeit
+GALAXY_TRIP_TEXT34,Kämpfen
+GALAXY_TRIP_TEXT35,Akt. Fortschritt
+GALAXY_TRIP_TEXT36,Bedingungen zum Abschließen der akt. Galaxie:
+GALAXY_TRIP_TEXT37,Boss besiegen ({1}/{2})
+GALAXY_TRIP_TEXT38,Schatzbox entdecken ({1}/{2})
+GALAXY_TRIP_TEXT39,Anfang und Ende verbinden ({1}/{2})
+GALAXY_TRIP_TEXT40,Erhaltene Buffs ({1}/{2})
+GALAXY_TRIP_TEXT41,Speichern
+GALAXY_TRIP_TEXT42,Vorausgeplante Erkundung läuft...
+GALAXY_TRIP_TEXT43,Verbleibende Zeit: {1}
+GALAXY_TRIP_TEXT44,Details
+GALAXY_TRIP_TEXT45,Sofort erhältlich nach dem Kauf:
+GALAXY_TRIP_TEXT46,Insgesamt erhältlich nach dem Kauf:
+GALAXY_TRIP_TEXT47,Reise-Punkte
+GALAXY_TRIP_TEXT48,Aufgaben
+GALAXY_TRIP_TEXT49,Grundbelohnungen
+GALAXY_TRIP_TEXT50,Zusatzbelohnungen
+GALAXY_TRIP_TIPS_01,Keine laufende Erkundung
+GALAXY_TRIP_TIPS_02,Während der Erkundung ist das Vorausplanen einer Route nicht möglich.
+GALAXY_TRIP_TIPS_03,Stelle zunächst ein Team auf
+GALAXY_TRIP_TIPS_04,Schließe zunächst die vorherige Galaxis ab
+GALAXY_TRIP_TIPS_05,Unbekannte Galaxien... Bitte bleib daran.
+GALAXY_TRIP_TIPS_06,Wähle die Felder für die Erkundung aus
+GALAXY_TRIP_TIPS_07,Nach dem Zurückrufen wird die Erkundung des aktuellen Feldes abgebrochen. Fortfahren?
+ACTIVITY_GOLDFISH_RK,Sommer-\nangebote
+GALAXY_TRIP_TIPS_08,Keine verfügbaren Felder
+GALAXY_TRIP_TIPS_09,Das Feld kann nicht gewählt werden
+GALAXY_TRIP_TIPS_10,"Wirst du während der Erkundung von den Gegnern besiegt, wirst du weiter herausfordern, bis alle Chancen verwendet werden. Fortfahren?"
+GALAXY_TRIP_TEXT51,Pass zur\nGalaxisreise
+GALAXY_TRIP_TEXT52,----- »Reisebericht der Galaxis«
+ACTIVITY_GOLDFISH_TEXT06,Heute ist das Fangen nicht möglich und der Shop wird nur noch für 1 Tag geöffnet. Verpass die Belohnungen nicht~
+ACTIVITY_GOLDFISH_TEXT07,"Fange mit den Schöpfnetzen die goldenen Fische, um Fischmünzen aus dem Pool zu erhalten~"
+GALAXY_TRIP_TEXT53,Details
+GALAXY_TRIP_TEXT54,Akt. Fortschritt
+GALAXY_TRIP_TEXT55,Reise-Punkte erhalten

@@ -23,6 +23,7 @@ function ActivityContent:ctor(parentGO, params, parent)
 		})
 	end
 
+	print("self.id             ", self.id)
 	ActivityContent.super.ctor(self, parentGO)
 end
 

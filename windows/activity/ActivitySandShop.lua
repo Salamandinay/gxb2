@@ -570,6 +570,7 @@ function ActivitySandShop:onAward(event)
 	end
 
 	local buyId = self.activityData.buyId
+	local buyNum = self.activityData.buyNum
 	local type = xyd.tables.activitySandShopTable:getType(buyId)
 
 	if type ~= 3 then
@@ -590,7 +591,7 @@ function ActivitySandShop:onAward(event)
 		xyd.itemFloat({
 			{
 				item_id = award[1],
-				item_num = award[2]
+				item_num = award[2] * buyNum
 			}
 		})
 		__TRACE("222")

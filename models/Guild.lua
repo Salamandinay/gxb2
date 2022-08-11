@@ -1444,19 +1444,21 @@ function Guild:checkGuildCompetitionMissionRed()
 			return
 		end
 
-		local lastDayTime = xyd.db.misc:getValue("guidl_competition_mission_red_day_time")
+		if self:getGuildCompetitionLeftTime().type == 2 then
+			local lastDayTime = xyd.db.misc:getValue("guidl_competition_mission_red_day_time")
 
-		if not lastDayTime then
-			xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
-
-			return
-		else
-			lastDayTime = tonumber(lastDayTime)
-
-			if not xyd.isSameDay(tonumber(lastDayTime), xyd.getServerTime(), true) then
+			if not lastDayTime then
 				xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
 
 				return
+			else
+				lastDayTime = tonumber(lastDayTime)
+
+				if not xyd.isSameDay(tonumber(lastDayTime), xyd.getServerTime(), true) then
+					xyd.models.redMark:setMark(xyd.RedMarkType.GUILD_COMPETITION_TASK_RED, true)
+
+					return
+				end
 			end
 		end
 

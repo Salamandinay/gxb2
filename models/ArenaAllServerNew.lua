@@ -497,7 +497,18 @@ function ArenaAllServerNew:getSeasons()
 end
 
 function ArenaAllServerNew:getMaxHistorySeason()
-	return self:getCurMatchNum() - 1
+	local firstTime = xyd.tables.miscTable:getNumber("new_arena_all_server_time", "value")
+	local serverTime = xyd.getServerTime()
+	local onceTime = 28 * xyd.DAY_TIME
+	local xiusanTime = xyd.tables.miscTable:split2Cost("arena_all_server_schedule", "value", "|")[5] * xyd.DAY_TIME
+	local num = math.floor((serverTime - firstTime) / onceTime)
+	local leftTime = (serverTime - firstTime) % onceTime
+
+	if leftTime > onceTime - xiusanTime then
+		num = num + 1
+	end
+
+	return num
 end
 
 function ArenaAllServerNew:reqReport(ids)

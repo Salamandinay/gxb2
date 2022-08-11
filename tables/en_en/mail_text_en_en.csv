@@ -11,7 +11,7 @@ id,name,from,content
 10,Summon Girl Rewards,Summon Rewards,Congratulations on summoning {1} during the event. Your rewards are available in Mail on the FrontPage.
 11,Daily Rewards,System Message,"Login every day during the event and you will receive Adv. Capsule Coin x 3, Sand Shovel x 2. Your rewards are attached."
 12,Capsule Reward,System Message,"Congratulations, you've completed {1} Adv. Capsule Draws during event Girls X Capsule Points, here's your reward."
-13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 100, Jade Crane x 5, Gilded Crane x 1, Party Drink x 3. Your rewards are attached."
+13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 100, Paper Scoop x 2. Your rewards are attached."
 14,Enroll Rewards,System Message,Congratulations on reaching {1} points during the Enroll event. Here are your rewards~!
 15,Boss Fight Rewards,System Message,Congratulations on defeating your friend's Boss. You have received the following rewards for your service!
 16,Boss Fight Rewards,System Message,The friend BOSS you found has been defeated. You have received the following rewards for your help!
@@ -19,7 +19,7 @@ id,name,from,content
 18,Girls Assembly Rewards,System Message,Congratulations! You reached a goal during the Girls Assembly Event. The following are your rewards.
 19,Beta Period Reload Rebate,System Message,Thank you for purchasing {1}. Here is your bonus reward for supporting us during the testing phase!
 20,Lottery Rewards,System Message,Congratulations! You reached {1} points during the Slot Machine Event! Here are your rewards~!
-21,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 100, Jade Crane x 5, Gilded Crane x 1, Party Drink x 3. Your rewards are attached."
+21,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 1000, Paper Scool x 2. Your rewards are attached."
 22,Internship Rewards,System Message,Congratulations! You've completed {1} star internship quest during the Internship Event! Here are your rewards.
 23,Reload Notice,System Message,Thank you for purchasing {1}. Your items are available in Bag. Have a look~!
 24,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Fishing Rod x 5, Lucky Coin x 2, Jade Crane x 5, and Gilded Crane x 1. Your rewards are attached."
@@ -220,7 +220,7 @@ Yuki apologizes for the inconvenience, for any further queries, please don’t h
 213,Reward,System Message,"You have dealt great damage to Chaos Boss, and he's retreating for now, please claim your reward and pursue. (Outfit Bonus triggered, you received additional Crystal Chisels!)"
 214,Reward,System Message,"You have successfully purified the Chaos Boss and have entered a more dangerous area, please claim your reward. (Outfit Bonus triggered, you received additional Crystal Chisels!)"
 215,Christmas Exchange Notice,Event Mail,"Dear Senpai, the event: ""Christmas Exchange"" is about to end, please don't forget to exchange the gifts you want!"
-216,Above the Fireplace,Event Mail,"Congratulations, you've hung {1} Christmas Socks in event: ""Above the Fireplace""! Here's your reward!"
+216,Scooper Reward,Event Mail,"Congratulations for Scooping {1} Fish during the event, here's your reward!"
 217,Old Campus Exploration Hint,System Message,"Dear Senpai, Old Campus Exploration will end in less than 24 hours! Don't forget to check it out!"
 218,Exclusive Packs Hint,System Message,"Dear Senpai, {1} will expire in 24 hours! Don't miss this exclusive chance to get it!"
 219,Firework Carnival Invitation,System Message,"Dear Senpai, do you plan to join our Firework Carnival today? Here are some matches you might need to light the fireworks!"
@@ -274,3 +274,5 @@ GXB2 Admin Team"
 245,Cupid's Gift,Event Mail,"Dear Senpai, your Pray Limit has been refreshed. The Gems compensation for your remaining {1} chance(s) to Pray before the refresh are attached, please check it out!"
 246,Exploration Damage Reward,System Message,"Congratulations, Senpai! Your damage record in Level 11 has reached No. {1} in this season of Old Campus Exploration, here's your reward!"
 247,Sky Island Participation Rewards,System Message,Congratulations for getting {1} Active Pt. in Sky Island! Here are your rewards!
+248,Summer Deals Notice,Event Mail,"Dear Senpai, Hermes has just added {1} Goldfish Coins in your Bag, don't forget to exchange more rewards with them!"
+249,Voyage Ranking Reward,System Message,Congratulations for reaching No. {1} in the current season of Galaxy Voyage! Here's your reward!

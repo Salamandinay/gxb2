@@ -1757,6 +1757,15 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_FREE_REVERGE] = function ()
 		return require("app.windows.activity.ActivityFreeRevert")
+	end,
+	[xyd.ActivityID.ACTIVITY_GOLDFISH] = function ()
+		return require("app.windows.activity.ActivityGoldfish")
+	end,
+	[xyd.ActivityID.ACTIVITY_GOLDFISH_GIFTBAG] = function ()
+		return require("app.windows.activity.ActivityGoldfishGiftbag")
+	end,
+	[xyd.ActivityID.ACTIVITY_GOLDFISH_AWARDS] = function ()
+		return require("app.windows.activity.ActivityGoldfishAwards")
 	end
 }
 
