@@ -466,13 +466,6 @@ end
 
 function PartnerDirectionSkillComponent:onRegister()
 	UIEventListener.Get(self.skillIconRoot).onClick = function ()
-		self.skillIcon:showTips(true, self.skillIcon.showGroup, true, nil, 0)
-		self.parentWnd:clearSkillTips()
-		self.parentWnd:setGroupY(self.skillIcon)
-		self.parentWnd.imgSkill:SetActive(true)
-		XYDCo.WaitForFrame(1, function ()
-			self.showGroup:SetActive(true)
-		end, nil)
 	end
 end
 

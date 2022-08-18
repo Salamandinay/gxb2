@@ -124,6 +124,7 @@ function PartnerInfoWindow:getUIComponent()
 	self.skillGroup = self.skill:NodeByName("skillGroup").gameObject
 	self.skillGroupGrid = self.skillGroup:GetComponent(typeof(UIGrid))
 	self.skillDesc = self.skill:NodeByName("skillDesc").gameObject
+	self.clickToCloseNode = self.skill:NodeByName("clickToCloseNode").gameObject
 	self.groupDesc_ = content:NodeByName("groupDesc_").gameObject
 	self.descBg = self.groupDesc_:NodeByName("descBg").gameObject
 	self.labelDescWays_ = self.groupDesc_:ComponentByName("labelDescWays_", typeof(UILabel))
@@ -151,6 +152,11 @@ function PartnerInfoWindow:registerEvent()
 
 	UIEventListener.Get(self.btnWays_).onClick = function ()
 		self:getWaysTouch()
+	end
+
+	UIEventListener.Get(self.clickToCloseNode).onClick = function ()
+		self:clearSkillTips()
+		self.clickToCloseNode:SetActive(false)
 	end
 end
 
@@ -196,6 +202,7 @@ function PartnerInfoWindow:setLayout()
 		self.layoutRecommoned:GetComponent(typeof(UILayout)):Reposition()
 	end
 
+	self.clickToCloseNode:SetActive(false)
 	self:createWays()
 	self:extraCheck()
 end
@@ -306,12 +313,9 @@ function PartnerInfoWindow:setSkillItems()
 		})
 		icon:setScale(0.9)
 
-		UIEventListener.Get(icon.go).onPress = function (go, isPressed)
-			if isPressed == true then
-				icon:showTips(true, self.skillDesc, true)
-			else
-				self:clearSkillTips()
-			end
+		UIEventListener.Get(icon.go).onClick = function ()
+			icon:showTips(true, self.skillDesc, 640)
+			self.clickToCloseNode:SetActive(true)
 		end
 
 		table.insert(self.skillIcons, icon)

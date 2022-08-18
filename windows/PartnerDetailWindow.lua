@@ -52,6 +52,7 @@ function PartnerDetailWindow:ctor(name, params)
 
 	self.battleData = params.battleData
 	self.if3v3 = params.if3v3 and params.if3v3 or false
+	self.ifGalaxy = params.ifGalaxy
 	self.isFairyTale_ = params.isFairyTale
 	self.isTrial_ = params.isTrial
 	self.isSpfarm_ = params.isSpfarm
@@ -1225,6 +1226,10 @@ function PartnerDetailWindow:registerEvent()
 		})
 	end
 
+	UIEventListener.Get(self.skillMask).onClick = function ()
+		self:clearSkillTips()
+	end
+
 	self.eventProxy_:addEventListener(xyd.event.ROLLBACK_PARTNER, self.onRollBack, self)
 	self.eventProxy_:addEventListener(xyd.event.VOW, handler(self, self.onPartnerVow))
 	self.eventProxy_:addEventListener(xyd.event.REPLACE_10_STAR, function ()
@@ -1623,12 +1628,6 @@ function PartnerDetailWindow:updateSkill()
 		if tonumber(key) > #self.skillIcons then
 			icon = SkillIcon.new(self.skillGroup)
 			self.skillIcons[key] = icon
-
-			UIEventListener.Get(icon.go).onSelect = function (go, isSelect)
-				if isSelect == false then
-					self:clearSkillTips()
-				end
-			end
 		else
 			icon = self.skillIcons[key]
 		end
@@ -2049,13 +2048,14 @@ function PartnerDetailWindow:handleSkillTips(icon)
 	self.showSkillTips = true
 	self.showSkillIcon = icon
 
-	icon:showTips(true, icon.showGroup, true)
+	icon:showTips(true, icon.showGroup, 1000)
 	self.skillMask:SetActive(true)
 end
 
 function PartnerDetailWindow:clearSkillTips()
 	if self.showSkillIcon then
 		self.showSkillIcon:showTips(false, self.showSkillIcon.showGroup)
+		self.skillMask:SetActive(false)
 	end
 
 	self.showSkillTips = false
@@ -4789,7 +4789,7 @@ function PartnerDetailWindow:updateStarOriginGroup()
 		})
 	end
 
-	if nodeType == 2 then
+	if nodeType and nodeType[1] and nodeType[2] then
 		local allUnlock = true
 
 		for i = 1, #starIDs do
@@ -4801,11 +4801,11 @@ function PartnerDetailWindow:updateStarOriginGroup()
 		if allUnlock then
 			local state = 2
 
-			if self.starOriginNodeItems[#starIDs].lev > 0 then
+			if self.starOriginNodeItems[nodeType[2]].lev > 0 then
 				state = 3
 			end
 
-			self.starOriginNodeItems[1]:setLineByPreNodeID(starIDs[#starIDs], state)
+			self.starOriginNodeItems[nodeType[1]]:setLineByPreNodeID(starIDs[nodeType[2]], state)
 		end
 	end
 end
@@ -5221,6 +5221,10 @@ function PartnerDetailWindow:willClose()
 
 		if self.isSpfarm_ then
 			wndName = "battle_formation_spfarm_window"
+		end
+
+		if self.ifGalaxy then
+			wndName = "galaxy_trip_formation_window"
 		end
 
 		if self.battleData.battleType ~= xyd.BattleType.EXPLORE_ADVENTURE and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER_DEF and self.battleData.battleType ~= xyd.BattleType.ARENA_ALL_SERVER_DEF_2 then

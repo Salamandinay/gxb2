@@ -47,7 +47,8 @@ function BattleFailWindow:ctor(name, params)
 		xyd.BattleType.FAIR_ARENA,
 		xyd.BattleType.NEW_PARTNER_WARMUP,
 		xyd.BattleType.ACADEMY_ASSESSMENT,
-		[13] = xyd.BattleType.ENTRANCE_TEST_REPORT
+		[13] = xyd.BattleType.ENTRANCE_TEST_REPORT,
+		[14] = xyd.BattleType.GALAXY_TRIP_BATTLE
 	}
 	self.isReportType = false
 	local battleReportData = params.real_battle_report
@@ -385,6 +386,8 @@ function BattleFailWindow:initReviewBtn()
 		eventName = xyd.event.NEW_PARTNER_WARMUP_FIGHT
 	elseif self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
 		eventName = xyd.event.ACADEMY_ASSESSMENT_REPORT
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		eventName = xyd.event.GALAXY_TRIP_GRID_BATTLE
 	end
 
 	UIEventListener.Get(self.battleReviewBtn).onClick = function ()
@@ -405,6 +408,11 @@ function BattleFailWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onSpfarmBattle(data)
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onGalayTripGridBattleReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -439,6 +447,10 @@ function BattleFailWindow:initLayout()
 				self.battleReviewBtn.transform:X(320)
 			end
 		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+			self.battleDetailBtn.transform:X(260)
+			self.battleReviewBtn.transform:X(320)
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+			self.battleReviewBtn:SetActive(true)
 			self.battleDetailBtn.transform:X(260)
 			self.battleReviewBtn.transform:X(320)
 		else
@@ -640,6 +652,10 @@ function BattleFailWindow:initLayout()
 		self.battleReviewBtn:SetActive(true)
 		self:initSpfarm()
 		pvpFun()
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		self.battleReviewBtn:SetActive(true)
+		self:initImproveGroup()
+		pveFun()
 	else
 		pvpFun()
 	end

@@ -1,15 +1,20 @@
 local StarryAltarWindow = class("StarryAltarWindow", import(".BaseWindow"))
 local WindowTop = import("app.components.WindowTop")
 local StarryAltarTable = xyd.tables.starryAltarTable
-local NORMAL_SUMMON_ID = 1
-local ACT_SUMMON_ID = 2
+local NORMAL_SUMMON1_ID = 1
+local NORMAL_SUMMON2_ID = 3
+local ACT_SUMMON1_ID = 4
+local ACT_SUMMON2_ID = 5
+local ACT_SUMMON1_NEWCOST_ID = 6
+local ACT_SUMMON2_NEWCOST_ID = 7
 
 function StarryAltarWindow:ctor(name, params)
 	StarryAltarWindow.super.ctor(self, name, params)
 
-	self.summonOneId = NORMAL_SUMMON_ID
-	self.summonTenId = NORMAL_SUMMON_ID
-	self.chooseIndex = 0
+	self.summonOneId = NORMAL_SUMMON1_ID
+	self.summonTenId = NORMAL_SUMMON1_ID
+	self.chooseMode = xyd.db.misc:getValue("starry_altar_mode") or 1
+	self.chooseMode = tonumber(self.chooseMode)
 end
 
 function StarryAltarWindow:initWindow()
@@ -40,6 +45,8 @@ function StarryAltarWindow:getUIComponent()
 	self.mask = self.window_:NodeByName("mask").gameObject
 	self.centerProb = self.window_:NodeByName("center_prob").gameObject
 	self.summonEffectNode = self.window_:NodeByName("summon_effect_node").gameObject
+	self.labelTips = self.window_:ComponentByName("tipsGroup/labelTips", typeof(UILabel))
+	self.groupBg = self.window_:ComponentByName("groupBg", typeof(UISprite))
 end
 
 function StarryAltarWindow:reSize()
@@ -89,41 +96,27 @@ function StarryAltarWindow:register()
 end
 
 function StarryAltarWindow:switchAward()
-	local items = {}
+	xyd.WindowManager:get():openWindow("starry_select_award_window", {
+		sureCallback = function (mode, index)
+			self.chooseIndex = index
+			self.chooseMode = mode
 
-	for _, v in ipairs(self.chooseAwards) do
-		local item = {
-			v,
-			1
-		}
+			self:checkSummonId()
 
-		table.insert(items, item)
-	end
-
-	xyd.WindowManager:get():openWindow("activity_common_select_award_window", {
-		mustChoose = true,
-		items = items,
-		sureCallback = function (index)
-			if index == 0 then
-				return
+			if mode == 1 then
+				xyd.models.summon:setStarrySummonAward({
+					self.summonOneId
+				}, {
+					index
+				})
 			end
 
-			xyd.models.summon:setStarrySummonAward({
-				1
-			}, {
-				index
-			})
-
-			self.chooseIndex = index
-
 			self:updateChooseAward()
+			self:updateModeContent()
+			self:saveData()
 		end,
-		buttomTitleText = __("ACTIVITY_CLOCKGIFTBAG_TEXT02"),
-		titleText = __("ACTIVITY_CLOCKGIFTBAG_TEXT01"),
-		sureBtnText = __("SURE"),
-		cancelBtnText = __("CANCEL"),
-		tipsText = __(""),
-		selectedIndex = self.chooseIndex
+		curMode = self.chooseMode,
+		curSelectAwardIndex = self.chooseIndex
 	})
 end
 
@@ -137,24 +130,55 @@ function StarryAltarWindow:layout()
 		self.summonEffect_:SetLocalPosition(0, 115, 0)
 		self.summonEffect_:play("idle", 0)
 	end)
-	self:setSummonBtn(self.summonOneButton, self.costOne, __("STARRY_ALTAR_TEXT01"))
-	self:setSummonBtn(self.summonTenButton, self.costTen, __("STARRY_ALTAR_TEXT02"), 10)
 	self:initActivityLayout()
 end
 
 function StarryAltarWindow:updateChooseAward()
-	if self.chooseIndex > 0 then
-		local awardId = self.chooseAwards[self.chooseIndex]
+	local params = {
+		switch = true,
+		scale = 0.8611111111111112,
+		uiRoot = self.iconNode,
+		switch_func = self.switchAward
+	}
 
-		NGUITools.DestroyChildren(self.iconNode.transform)
-		xyd.getItemIcon({
-			switch = true,
-			scale = 0.8611111111111112,
-			uiRoot = self.iconNode,
-			itemID = awardId,
-			switch_func = self.switchAward
-		})
+	self.groupBg:SetActive(false)
+
+	if self.chooseMode == 1 and self.chooseIndex > 0 then
+		local awardId = self.chooseAward
+		params.itemID = awardId
+
+		if not self.specialIcon then
+			self.specialIcon = xyd.getItemIcon(params, xyd.ItemIconType.ADVANCE_ICON)
+		else
+			self.specialIcon:setInfo(params)
+		end
+
+		self.groupBg:SetActive(true)
+		xyd.setUISpriteAsync(self.groupBg, nil, "starry_star_img_" .. self.chooseIndex)
+	elseif self.chooseMode == 2 then
+		local award = self.chooseAward
+		params.itemID = award[1]
+		params.num = award[2]
+
+		if not self.specialIcon then
+			self.specialIcon = xyd.getItemIcon(params, xyd.ItemIconType.ADVANCE_ICON)
+		else
+			self.specialIcon:setInfo(params)
+		end
 	end
+end
+
+function StarryAltarWindow:updateModeContent()
+	if self.chooseMode == 0 then
+		self.labelTips.text = __("STARRY_ALTAR_TEXT17")
+	elseif self.chooseMode == 1 then
+		self.labelTips.text = __("STARRY_ALTAR_TEXT18")
+	else
+		self.labelTips.text = __("STARRY_ALTAR_TEXT19", self.leftTimeToSpecialAward)
+	end
+
+	self:setSummonBtn(self.summonOneButton, self.costOne, __("STARRY_ALTAR_TEXT01"))
+	self:setSummonBtn(self.summonTenButton, self.costTen, __("STARRY_ALTAR_TEXT02"), 10)
 end
 
 function StarryAltarWindow:setSummonBtn(go, cost, text, times)
@@ -197,7 +221,7 @@ function StarryAltarWindow:initTop()
 	}
 
 	if self.isActOpen then
-		local cost = self.actCost
+		local cost = StarryAltarTable:getCost(ACT_SUMMON1_NEWCOST_ID)
 
 		table.insert(items, {
 			id = cost[1]
@@ -257,7 +281,13 @@ function StarryAltarWindow:initActivityLayout()
 end
 
 function StarryAltarWindow:starrySummon(summonId, times)
-	if self.chooseIndex <= 0 then
+	if self.chooseMode <= 0 then
+		xyd.alertConfirm(__("STARRY_ALTAR_TEXT17"))
+
+		return
+	end
+
+	if self.chooseMode == 1 and self.chooseIndex <= 0 then
 		xyd.alertConfirm(__("STARRY_ALTAR_TEXT13"))
 
 		return
@@ -285,46 +315,83 @@ function StarryAltarWindow:starrySummon(summonId, times)
 end
 
 function StarryAltarWindow:checkSummonId()
-	local actId = StarryAltarTable:getActivity(ACT_SUMMON_ID)
-	self.actId = actId
-	self.actCost = StarryAltarTable:getCost(ACT_SUMMON_ID)
-	self.normalCost = StarryAltarTable:getCost(NORMAL_SUMMON_ID)
-	self.costOne = self.normalCost
-	self.costTen = self.normalCost
-	self.summonOneId = NORMAL_SUMMON_ID
-	self.summonTenId = NORMAL_SUMMON_ID
-	self.chooseAwards = StarryAltarTable:getOptionalAwards(NORMAL_SUMMON_ID)
+	local normalID, actCost1ID, actCost2ID = nil
+
+	if self.chooseMode == 1 then
+		normalID = NORMAL_SUMMON1_ID
+		actCost1ID = ACT_SUMMON1_ID
+		actCost2ID = ACT_SUMMON1_NEWCOST_ID
+	elseif self.chooseMode == 2 then
+		normalID = NORMAL_SUMMON2_ID
+		actCost1ID = ACT_SUMMON2_ID
+		actCost2ID = ACT_SUMMON2_NEWCOST_ID
+	end
+
+	local actId = StarryAltarTable:getActivity(actCost2ID)
 	local isActOpen = false
 
 	if actId then
 		isActOpen = xyd.models.activity:isOpen(actId)
+		self.actId = actId
 	end
 
 	self.isActOpen = isActOpen
 
-	if isActOpen then
+	if not isActOpen then
+		self.summonOneId = normalID
+		self.summonTenId = normalID
+		self.mode1ID = NORMAL_SUMMON1_ID
+		self.mode2ID = NORMAL_SUMMON2_ID
+	else
 		self.actData = xyd.models.activity:getActivity(actId)
-		local costItemId = self.actCost[1]
-		local hasNum = xyd.models.backpack:getItemNumByID(costItemId)
+		local cost2 = StarryAltarTable:getCost(actCost2ID)
+		local hasNum = xyd.models.backpack:getItemNumByID(cost2[1])
+		self.mode1ID = ACT_SUMMON1_ID
+		self.mode2ID = ACT_SUMMON2_ID
 
 		if hasNum >= 1 then
-			self.summonOneId = ACT_SUMMON_ID
-			self.costOne = self.actCost
+			self.summonOneId = actCost2ID
+			self.costOne = StarryAltarTable:getCost(actCost2ID)
+		else
+			self.summonOneId = actCost1ID
+			self.costOne = StarryAltarTable:getCost(actCost1ID)
 		end
 
 		if hasNum >= 10 then
-			self.summonTenId = ACT_SUMMON_ID
-			self.costTen = self.actCost
+			self.summonTenId = actCost2ID
+			self.costTen = StarryAltarTable:getCost(actCost2ID)
+		else
+			self.summonTenId = actCost1ID
+			self.costTen = StarryAltarTable:getCost(actCost1ID)
 		end
 	end
+
+	if not self.chooseIndex or self.chooseIndex == 0 then
+		self.chooseIndex = #StarryAltarTable:getOptionalAwards(self.summonOneId)
+	end
+
+	if self.chooseMode == 1 then
+		if self.chooseIndex and self.chooseIndex > 0 then
+			self.chooseAward = StarryAltarTable:getOptionalAwards(self.summonOneId)[self.chooseIndex]
+		end
+	elseif self.chooseMode == 2 then
+		self.chooseAward = StarryAltarTable:getType2Award(self.summonOneId)[2]
+	end
+
+	self.costOne = StarryAltarTable:getCost(self.summonOneId)
+	self.costTen = StarryAltarTable:getCost(self.summonTenId)
 end
 
 function StarryAltarWindow:onGetStarrySummonInfo(event)
 	local params = event.data
 	local starrySelects = params.selects
-	self.chooseIndex = tonumber(starrySelects[NORMAL_SUMMON_ID]) or 0
+	local type_2 = params.type_2 or 0
+	self.chooseIndex = tonumber(starrySelects[xyd.checkCondition(self.mode1ID > 1, 2, 1)]) or 0
+	self.leftTimeToSpecialAward = StarryAltarTable:getType2Award(self.mode2ID)[1][1] - type_2
 
+	self:checkSummonId()
 	self:updateChooseAward()
+	self:updateModeContent()
 end
 
 function StarryAltarWindow:onStarrySummon(event)
@@ -336,11 +403,14 @@ function StarryAltarWindow:onStarrySummon(event)
 	local partners = summonResult.partners
 	local index = data.index
 	local summonInfo = data.summon_info
+	local type_2 = summonInfo.type_2 or 0
 	local effectName = "texiao01"
 
 	if itemsExtra and #itemsExtra > 0 then
 		effectName = "texiao02"
 	end
+
+	self.leftTimeToSpecialAward = StarryAltarTable:getType2Award(self.mode2ID)[1][1] - type_2
 
 	self:checkSummonId()
 
@@ -386,8 +456,12 @@ function StarryAltarWindow:onStarrySummon(event)
 		times = 10
 	end
 
-	self:setSummonBtn(self.summonOneButton, self.costOne, __("STARRY_ALTAR_TEXT01"))
-	self:setSummonBtn(self.summonTenButton, self.costTen, __("STARRY_ALTAR_TEXT02"), 10)
+	self:updateChooseAward()
+	self:updateModeContent()
+
+	if #partners > 0 then
+		xyd.models.activity:reqActivityByID(self.actId)
+	end
 
 	if self.summonEffect_ then
 		self.mask:SetActive(true)
@@ -422,6 +496,17 @@ function StarryAltarWindow:onStarrySummon(event)
 			end
 		end)
 	end
+end
+
+function StarryAltarWindow:saveData()
+	xyd.db.misc:setValue({
+		key = "starry_altar_mode",
+		value = self.chooseMode
+	})
+	xyd.db.misc:setValue({
+		key = "starry_altar_choose_award",
+		value = self.chooseIndex
+	})
 end
 
 return StarryAltarWindow

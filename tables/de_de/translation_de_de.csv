@@ -155,7 +155,7 @@ CLOSE_WINDOW_GUIDE,"Tippe auf eine beliebige Stelle auf dem Bildschirm oder auf 
 PERSON_EDIT_NAME,Namen ändern
 PERSON_EDIT_TIPS1,Bitte gebe einen neuen Namen ein
 PERSON_EDIT_TIPS2,4 - 12 Zeichen
-SURE,OK
+SURE,Bestätigen
 PERSON_NO_CRYSTAL,Dias nicht ausreichend!
 PERSON_INFO,Persönliche Informationen
 ALTAR_WINDOW_HELP,"1. Das Übertragen eines Mädchens kann Ressourcen wie EXP-Saft, Brotdosen und Ordner einbringen.|2. EXP-Saft kann verwendet werden, um das Level der Mädchen zu verbessern.|3. Die Brotdosen können verwendet werden, um die Klasse der Mädchen zu erhöhen und ihre Sternanzahl zu erhöhen, wodurch ihre Attribute verstärkt werden und neue passive Fähigkeiten freigeschaltet werden.|4. Die Ordner können verwendet werden, um im Mädchenladen (unter Einkaufsstraße - Tauschbörse) Mädchen zu erhalten. |5. Bei der Mengenwahl kannst du die Anzahl der zu tauschenden 3-Sterne Mädchen bestimmen und sie dann übertragen.|6. Bei der Mengenwahl werden jeweils 20 3-Sterne Mädchen der Geister-, Menschen-, Monster- und Feen-Fraktion und jeweils 4 Mädchen von Dämonen- und Engel-Fraktion automatisch aufbewahrt."
@@ -378,7 +378,7 @@ SUMMON_HELP_1,"1. Normale Kapseln ermöglichen es dir, Mädchen mit niedrigem Ra
 SUMMON_HELP_2,"Die Chancen der Super Kapsel sind:| 78,42%% für 3 Sterne, 20%% für 4 Sterne und 1,58%% für 5 Sterne ||Während des Kapsel Pack-Events betragen die Chancen für die Super Kapseln:| 77,84%% für 3 Sterne, 19%% für 4 Sterne und 3,16%% für 5 Sterne.||Die Chancen der BFF Kapseln sind:| 32%% für 2 Sterne, 54%% für 3 Sterne, 13,2%% für 4 Sterne und 0,8%% für 5 Sterne.||Die Chancen der Normalen Kapseln sind:| 56%% für 1 Stern, 34%% für 2 Sterne, 8,5%% für 3 Sterne, 1,45%% für 4 Sterne und 0,05%% für 5 Sterne."
 SUMMON_HELP_3,"Aus der Super Kapsel kannst du Energie für das goldene Ei erhalten. Wenn die Energie voll ist, kannst du das goldene Ei öffnen und aus der BFF Kapsel ein zufälliges 5-Sterne Mädchen erhalten. Du musst den VIP3-Status erreichen, um das goldene Ei öffnen zu können."
 NIUDANJI,Kapsel
-SURE_2,OK
+SURE_2,Bestätigen
 LEV_UP_AWARD,Belohnung
 LEV_UP_CLICK_TIPS,"Tippe auf den Bildschirm, um fortzufahren"
 MAIL_TIPS,Keine einsammelbaren Belohnungen
@@ -817,7 +817,7 @@ DONATE,Spenden
 NO_ORDERS,Keine Bestellungen
 UPGRADE_ORDER_TIPS,"Das Bestellungslevel zu optimieren kostet {1} Dias, willst du fortfahren?"
 WELCOME_SCHOOL,Willkommen an der Akademie
-FOR_SURE,OK
+FOR_SURE,Bestätigen
 PERSON_EDIT_TIPS4,4-16 Zeichen
 CHAT_CONFIG_3,Gildenchat blockieren
 CHAT_CONFIG_4,Gildenanfragen blockieren
@@ -2478,7 +2478,7 @@ HOUSE_TEXT_52,Erfolgreich geteilt
 HOUSE_TEXT_53,Heute geteilt
 SCRATCH_CARD_COUNT,Geöffnet: {1} / {2}
 ACTIVITY_SCRATCH_CARD_GET_ALL,Alles sammeln
-ACTIVITY_SCRATCH_CARD_CONFIRM,OK
+ACTIVITY_SCRATCH_CARD_CONFIRM,Bestätigen
 ACTIVITY_SCRATCH_CARD_MOVE,"Kratze, um die Belohnung zu erreichen"
 ACTIVITY_SCRATCH_CARD_RES_TITLE1,Zusätzliche Belohnungen
 ACTIVITY_SCRATCH_CARD_RES_TITLE2,Sichere Belohnungen
@@ -6225,7 +6225,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Benötigte Energie: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,Nach dem Wechseln der Fertigkeiten werden deine Laserenergien auf 0 zurückgesetzt. Willst du sicher die Fertigkeit wechseln?
 ACTIVITY_LOST_SPACE_NAV1,Spezialereignisse
 ACTIVITY_LOST_SPACE_NAV2,Hilfe
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Lotto Glücksboni, Raumstation-Versorgung, Personalisierte Pakete, Geschenk zum Monatsanfang.|8. Hast du mehr als 4 Detektoren, wird das ""Autom. Erkunden"" entsperrt. Das Autom. Erkunden wird abgebrochen, bis der Sprungpunkt der aktuellen Raumstation entdeckt wird oder deine Detektoren nicht genügen.|9. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. Verwende die Detektoren, um die Gebiete in der Raumstation zu erkunden. Hast du ein Gebiet erkundet, erhältst du eine Belohnung und die Gebiete neben dem erkundeten Gebiet (oben, unten, links und rechts jeweils 1) werden als erkundbar angezeigt.|2. In jeder Raumstation gibt es einen Sprungpunkt. Sammle alle Belohnungen in einer Raumstation und tippe auf dem Sprungpunkt, um die Raumstation-Box der Raumstation, in der du dich befindest, zu erhalten und zur nächsten Raumstation zu gehen.|3. In bestimmten Raumstationen gibt es die Versorgungskoordinate. Sobald du 3 Versorgungskoordinaten gesammelt hast, wird der Versorgungsdepot angezeigt. Tippe auf dem Versorgungsdepot, um zur Versorgungsraumstation zu gehen und reichhaltige Belohnungen zu erhalten.|4. Du kannst eine Fertigkeit auswählen, um das Erkunden leichter abzuschließen.  Durch jedes Erkunden erhältst du 1 Laserenergie. Bei vollen Laserenergien kann die Fertigkeit durchgeführt werden, damit die bestimmten Gebiete schnell erkundet werden können.|5. Die Fertigkeit kann zu jeder Zeit gewechselt werden aber nach dem Wechseln werden alle bereits erhaltenen Laserenergien auf 0 zurückggesetzt. Bei vollen Laserenergien erhältst du durch weiteres Erkunden auch keine Laserenergien mehr.|6. Die entdeckten Belohnungen und ausgelösten Spezialereignisse müssen manuell gesammelt werden. Tippe auf ""Alles sammeln"", um alle sammelbaren Belohnungen schnell zu sammeln. wobei die Spezialereignisse nicht enthalten werden.|7. Erhalten der Detektoren: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Lotto Glücksboni, Raumstation-Versorgung.|8. Hast du mehr als 4 Detektoren, wird das ""Autom. Erkunden"" entsperrt. Das Autom. Erkunden wird abgebrochen, bis der Sprungpunkt der aktuellen Raumstation entdeckt wird oder deine Detektoren nicht genügen.|9. Nach dem Ende des Events werden die Detektoren automatisch per Mail recycelt und jeder Detektor entspricht 1000K Münzen."
 GAME_ASSISTANT_TEXT103,Cafeteria - Belohnungen der Bestellungen
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,Volle Laserenergien gespeichert. Willst du sicher keine Fertigkeit durchführen?
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,Keine verfügbaren Gebiete
@@ -6967,7 +6967,7 @@ ACTIVITY_GOLDFISH_HELP,"1. Hermes hat ihren Laden an dem Strand eröffnet. Lass 
 ACTIVITY_GOLDFISH_BUTTON01,1 Mal
 ACTIVITY_GOLDFISH_BUTTON02,10  Mal
 ACTIVITY_GOLDFISH_TEXT01,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Die fehlenden [c][ffa82b]{4}[-][/c] Fischmünzen werden am letzten Tag des Events in deinen Rucksack gesendet!
-ACTIVITY_GOLDFISH_TEXT02,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du alle [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Da hast du aber tolles Glück gehabt!
+ACTIVITY_GOLDFISH_TEXT02,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Da hast du aber tolles Glück gehabt!
 ACTIVITY_GOLDFISH_TEXT03,[c][ff8a00]+200[-][/c] Fischmünzen für jeden gefangenen roten Fisch
 ACTIVITY_GOLDFISH_TEXT04,Pool der Fischmünzen
 ACTIVITY_GOLDFISH_TEXT05,Gratuliere! Senpai {1} hat {2} Fischmünzen erhalten!
@@ -6987,50 +6987,50 @@ STARRY_ALTAR_TEXT14,Belohnung · Überraschungsmodus
 STARRY_ALTAR_TEXT15,Belohnung · Standardmodus
 STARRY_ALTAR_TEXT16,Alle 40 Züge erhältst du neben den Grundbelohnungen sicher die 10-Sterne Fragmente der Meteore-Fraktion.
 STARRY_ALTAR_TEXT17,"Tippe auf das Pluszeichen oben rechts, um Modus der Belohnungen einzustellen."
-STARRY_ALTAR_TEXT18,"Gewährt bei jedem Zug eine [c][ffe241]0,25%%ige[-][/c] Wahrscheinlichkeit, Meteore-Mädchen zu erhalten."
-STARRY_ALTAR_TEXT19,"Ziehe noch [c][ffe241]{1}[-][/c] Mal, um [c][56db32]10* 10-Sterne Fragment der Meteore-Mädchen[-][/c] sicher zu erhalten."
+STARRY_ALTAR_TEXT18,"Gewährt bei jedem Zug eine [c][ffe241]0,25%%ige[-][/c] Wkt. fürs gewählte Meteore-Mädchen"
+STARRY_ALTAR_TEXT19,Sichere [c][56db32]10* Fragmente der 10-Sterne Meteore-Mädchen[-][/c] in [c][ffe241]{1}[-][/c] Zügen (Zug)
 STARRY_ALTAR_TEXT20,Wähle einen der 2 Modi aus
 GROWTH_DIARY_TEXT13,"""Diener weiterbilden"" noch nicht entsperrt"
 GALAXY_TRIP_TEXT01,Galaxis-\nReise
-GALAXY_TRIP_TEXT02,Meteore-Mädchen ziehen
-GALAXY_TRIP_TEXT03,Ressourcen für Sternkerne erhalten
+GALAXY_TRIP_TEXT02,Ziehe die seltenen Meteore-Mädchen!
+GALAXY_TRIP_TEXT03,Erhalte die Ressourcen für die Sternkerne!
 GALAXY_TRIP_TEXT04,Reise durch die Galaxis
 GALAXY_TRIP_TEXT05,Wird erkundet...
 GALAXY_TRIP_TEXT06,Erledigt
-GALAXY_TRIP_TEXT07,Unbekannte Galaxie
+GALAXY_TRIP_TEXT07,Unbekannter Planet
 GALAXY_TRIP_TEXT08,Fortschritt
-GALAXY_TRIP_TEXT09,Galaxie:
+GALAXY_TRIP_TEXT09,Erkundungsort:
 GALAXY_TRIP_TEXT10,Erhaltene Reise-Punkte
 GALAXY_TRIP_TEXT11,Eintreten
 GALAXY_TRIP_TEXT12,Erkunden fertig
-GALAXY_TRIP_TEXT13,Galaxie:
-GALAXY_TRIP_TEXT14,Fertig erkundet: {1} Feld(er)
+GALAXY_TRIP_TEXT13,Erkundungsort: {1}
+GALAXY_TRIP_TEXT14,Erkundete Felder: {1}
 GALAXY_TRIP_TEXT15,Gesamtdauer: {1}
 GALAXY_TRIP_TEXT16,Erkundetes Feld: Nr.{1}
 GALAXY_TRIP_TEXT17,Dauer: {1}
-GALAXY_TRIP_TEXT18,Ergebnis: Erkunden erfolgreich
-GALAXY_TRIP_TEXT19,Ergebnis: Erkunden fehlgeschlagen
+GALAXY_TRIP_TEXT18,Ergebnis: {1}
+GALAXY_TRIP_TEXT19,Erkunden erfolgreich
 GALAXY_TRIP_TEXT20,Bestätigen
 GALAXY_TRIP_TEXT21,Zurück
-GALAXY_TRIP_TEXT22,Team
+GALAXY_TRIP_TEXT22,Teams
 GALAXY_TRIP_TEXT23,Route
 GALAXY_TRIP_TEXT24,Zurückrufen
-GALAXY_TRIP_TEXT25,Team aufstellen
+GALAXY_TRIP_TEXT25,Aufstellen
 GALAXY_TRIP_TEXT26,Speichern
 GALAXY_TRIP_TEXT27,{1} St.
 GALAXY_TRIP_TEXT28,Erkunden
 GALAXY_TRIP_TEXT29,Wird erkundet...
 GALAXY_TRIP_TEXT30,Erkundungsbelohnungen
 GALAXY_TRIP_TEXT31,Buffs zum Erkunden
-GALAXY_TRIP_TEXT32,Feinde-Info
+GALAXY_TRIP_TEXT32,Gegner-Info
 GALAXY_TRIP_TEXT33,Schwierigkeit
 GALAXY_TRIP_TEXT34,Kämpfen
-GALAXY_TRIP_TEXT35,Akt. Fortschritt
-GALAXY_TRIP_TEXT36,Bedingungen zum Abschließen der akt. Galaxie:
+GALAXY_TRIP_TEXT35,Aktueller Fortschritt
+GALAXY_TRIP_TEXT36,Bedingungen zum Entsperren nächstes Planeten:
 GALAXY_TRIP_TEXT37,Boss besiegen ({1}/{2})
-GALAXY_TRIP_TEXT38,Schatzbox entdecken ({1}/{2})
+GALAXY_TRIP_TEXT38,Geöffnete Versorgungskisten ({1}/{2})
 GALAXY_TRIP_TEXT39,Anfang und Ende verbinden ({1}/{2})
-GALAXY_TRIP_TEXT40,Erhaltene Buffs ({1}/{2})
+GALAXY_TRIP_TEXT40,Buffs zum Kampf
 GALAXY_TRIP_TEXT41,Speichern
 GALAXY_TRIP_TEXT42,Vorausgeplante Erkundung läuft...
 GALAXY_TRIP_TEXT43,Verbleibende Zeit: {1}
@@ -7044,18 +7044,49 @@ GALAXY_TRIP_TEXT50,Zusatzbelohnungen
 GALAXY_TRIP_TIPS_01,Keine laufende Erkundung
 GALAXY_TRIP_TIPS_02,Während der Erkundung ist das Vorausplanen einer Route nicht möglich.
 GALAXY_TRIP_TIPS_03,Stelle zunächst ein Team auf
-GALAXY_TRIP_TIPS_04,Schließe zunächst die vorherige Galaxis ab
+GALAXY_TRIP_TIPS_04,Erfülle auf dem vorherigen Planeten die geforderten Bedingungen
 GALAXY_TRIP_TIPS_05,Unbekannte Galaxien... Bitte bleib daran.
-GALAXY_TRIP_TIPS_06,Wähle die Felder für die Erkundung aus
-GALAXY_TRIP_TIPS_07,Nach dem Zurückrufen wird die Erkundung des aktuellen Feldes abgebrochen. Fortfahren?
+GALAXY_TRIP_TIPS_06,Wähle die zu erkundenden Felder für die Route aus
+GALAXY_TRIP_TIPS_07,Nach dem Zurückrufen werden die noch nicht fertig erkundeten Felder aufgegeben. Fortfahren?
 ACTIVITY_GOLDFISH_RK,Sommer-\nangebote
 GALAXY_TRIP_TIPS_08,Keine verfügbaren Felder
 GALAXY_TRIP_TIPS_09,Das Feld kann nicht gewählt werden
-GALAXY_TRIP_TIPS_10,"Wirst du während der Erkundung von den Gegnern besiegt, wirst du weiter herausfordern, bis alle Chancen verwendet werden. Fortfahren?"
+GALAXY_TRIP_TIPS_10,"Wirst du während der Erkundung auf einer Route von den Gegnern besiegt, wirst du weiter herausfordern, bis alle Chancen verwendet werden. Fortfahren?"
 GALAXY_TRIP_TEXT51,Pass zur\nGalaxisreise
-GALAXY_TRIP_TEXT52,----- »Reisebericht der Galaxis«
+GALAXY_TRIP_TEXT52,----- »Journal der Galaxisreise«
 ACTIVITY_GOLDFISH_TEXT06,Heute ist das Fangen nicht möglich und der Shop wird nur noch für 1 Tag geöffnet. Verpass die Belohnungen nicht~
 ACTIVITY_GOLDFISH_TEXT07,"Fange mit den Schöpfnetzen die goldenen Fische, um Fischmünzen aus dem Pool zu erhalten~"
 GALAXY_TRIP_TEXT53,Details
 GALAXY_TRIP_TEXT54,Akt. Fortschritt
-GALAXY_TRIP_TEXT55,Reise-Punkte erhalten
+GALAXY_TRIP_TEXT55,Erhaltene Reise-Punkte
+GALAXY_TRIP_TEXT56,Alle sammeln
+GALAXY_TRIP_TIPS_11,Die Belohnungen auf einigen Feldern dieses Planeten werden noch nicht gesammelt. Willst du sie sammeln?
+GALAXY_TRIP_TIPS_12,"Startest du die Erkundung eines neuen Planeten, wird die aktuelle laufende Erkundung abgebrochen und deren Fortschritt auf 0 zurückgesetzt. Fortfahren?"
+GALAXY_TRIP_HELP01,"Bedingungen zum Entsperren & Dauer der Saison|1. Die Reise durch die Galaxis findet in Saisonform statt. Jede Saison dauert 28 Tage, darunter 27 Tage für die Erkundung und 1 Tag für die Auswertung.|2. Sobald du Runde 16-4 im Abenteuer abgeschlossen und 1 10-Sterne Mädchen erhalten hast, wird diese Funktion entsperrt.||Vorstellung der Funktion|1. Während der Reise durch die Galaxis kannst du die Felder auf mehreren Planeten erkunden. Der Schwierigkeitsgrad der Herausforderung auf allen Planeten wird der Reihe der Planeten nach erhöht. Je stärker die Gegner sind, desto reichhaltigere Belohnungen erhältst du.|2. Auf jedem Planeten werden auf den Feldern allerlei Ereignisse ausgelöst. Die Ereignisse enthalten auch die Gegner. Besiege die Gegner, um das Feld fertig zu erkunden und die entsprechenden Belohnungen sofort zu erhalten. Bei den anderen Ereignissen musst du eine bestimmte Weile warten, bis das Feld fertig erkundet wird.|3. Zu Beginn der Saison kannst du nur den 1. Planet erkunden. Erfülle während der Erkundung bestimmte Bedingungen, um die nachfolgenden Planeten zu entsperren. (Details der Bedingungen prüfst du unter ""Fortschritt"".)|4. Mehrere Planeten können nicht zur gleichen Zeit erkundet werden. Willst du während der Erkundung einen anderen Planeten erkunden, musst du zuerst die Erkundung des aktuellen Planeten aufgeben und der Erkundungsfortschritt wird zurückegesetzt. Die bereits erhaltenen Reise-Punkte bleiben erhalten.|5. Sobald du das Ende auf dem 4. Planeten erfolgreich erkundet hast, wird der versteckte Planet ----- Planet der Ewigkeit entsperrt, wo du die Galaxis-Piraten und den Ewigen Gebieter bekämpfen musst, um noch mehr Belohnungen erwerben zu können.|6. Deinen Reise-Punkten entsprechend erhältst du reichhaltige Belohnungen im Pass zur Galaxisreise. Die Galaxis-Steine können im Shop gegen saisonale und permanente Belohnungen ausgetauscht werden.|7. Nach dem Ende der Saison werden alle Reise-Punkte entfernt. Bitte verwende sie rechtzeitig unter ""Pass zur Galaxisreise""."
+GALAXY_TRIP_HELP02,"Details der Planeten|1. Fürs Abschließen der identischen Ereignisse in allen Galaxien werden gleichwertige Reise-Punkte gegeben, aber die anderen erhältlichen Belohnungen werden der Reihe der Galaxien nach vermehrt. Details der Ereignisse wie folgt:|Normaler Monster: Besiege den Gegner, um 2 Reise-Punkte zu erhalten. Die HP des Gegners werden nach jedem Kampfes nicht zurückgesetzt.|Elite Monster: Besiege den Gegner, um 4 Reise-Punkte zu erhalten. Die HP des Gegners werden nach jedem Kampfes nicht zurückgesetzt.|Gebieter: Besiege in einem Kampf den Gebieter, um 10 Reise-Punkte zu erhalten.|Verlassener Raum: Die Erkundung kostet dich 2 Stunden und gewährt dir 1 Reise-Punkt.|Mystische Sterne: Die Erkundung kostet dich 1 Stunde und gewährt dir 1 Reise-Punkt sowie einige Buffs, die sich nur auf die Kämpfe in der aktuellen Galaxis auswirken.|Versorgungskiste: Die Erkundung kostet dich 12 Stunden und gewährt dir 1 Reise-Punkt sowie zusätzliche Belohnungen.|Galaxis-Pirat: Besiege in einem Kampf den Galaxis-Pirat, um 10 Reise-Punkte zu erhalten.|Ewiger Gebieter: Besiege in einem Kampf den Ewigen Gebieter und die erhaltenen Reise-Punkte werden mit der Erhöhung des Schwierigkeitsgrads vermehrt.|2. Der Anfang und das Ende des Planeten befinden sich jeweils ganz unten und ganz oben auf der Landkarte. Neben dem Anfang-Feld kannst du nur die Felder um dem neuesten Erkundungsfeld (oben, unten, rechts und links) erkunden.|3. Du kannst ein Feld wählen, um es zu erkunden, oder auf ""Route"" tippen, um mehrere Felder (Felder mit Gegnern nicht eingeschlossen) auf einmal zu wählen und sie der Reihe nach schnell zu erkunden.|4. Während der Erkundung auf einer vorausgeplanten Route kannst du auf ""Zurückrufen"" tippen, um die Erkundung abzubrechen und die Belohnungen der bereits erkundeten Felder sofort zu erhalten. Danach kannst du eine neue Route vorausplanen.|5. Sobald der Erkundungsfortschritt auf einem Planeten (Planet der Ewigkeit nicht eingeschlossen) 20%% erreicht, wird jedes weiteres erkundetes Feld den Angriff und die HP des Gebieters jeweils um 1%% reduzieren und maximal um 40%%.|6. Zum Kampf auf den Planeten (Planet der Ewigkeit nicht eingeschlossen) werden die Galaxis-Kampftickets benötigt. Täglich erhältst du 10 Galaxis-Kampftickets und maximal kannst du 25 im Besitz haben."
+GALAXY_TRIP_TEXT57,Weitere Felder können nicht mehr gewählt werden
+GALAXY_TRIP_TEXT58,Wird erkundet...
+GALAXY_TRIP_TEXT59,Noch nicht erkundet
+GALAXY_TRIP_TIPS_13,Die Felder auf dem aktuellen Planeten werden noch nicht fertig erkundet. Erkundung auf einem anderen Planeten kann nicht gestartet werden.
+GALAXY_TRIP_TEXT60,Anfang
+GALAXY_TRIP_TEXT61,Ende
+GALAXY_TRIP_TEXT62,Schwäche
+GALAXY_TRIP_TEXT63,Reduziert die HP des Gebieters um {1}
+GALAXY_TRIP_TEXT64,Frustration
+GALAXY_TRIP_TEXT65,Reduziert den Angriff des Gebieters um {1}
+GALAXY_TRIP_TIPS_14,Das ist während der Erkundung in einer geplanten Route nicht möglich
+GALAXY_TRIP_TIPS_15,Planeten für die neue Saison werden in paar Minuten entdeckt... Bitte bleib daran!
+GALAXY_TRIP_HELP03,"Teams für Reise durch die Galaxis|1. Es gibt insgesamt 3 Teams. Sobald das Gesamtsternlevel (wird erst ab 11-Sterne gezählt) der Mädchen in einem Team 5/10/15/20/25/30 erreicht, gewährt dir das Team einen entsprechenden Buff. Jedes Team gewährt verschiedene Buffs, einschließlich Buffs zum Kampf, Belohnungsbonus zur Erkundung und Verkürzung der Erkundungsdauer.2. Die in diesen Teams aufgestellten Mädchen können auch zum Kampf während der Erweckung entsandt werden.|3. Während der Erkundung eines Feldes können die Teams nicht bearbeitet werden."
+BATTLE_INFORMATION_TANK,Schadens-\naufnahme
+GALAXY_TRIP_TIPS_16,Während der Erkundung ist das nicht möglich
+GALAXY_TRIP_TIPS_17,Sammle zunächst die Belohnungen auf den fertig erkundeten Feldern ein
+GALAXY_TRIP_TIPS_18,Schließe zunächst die Erkundung auf dem {1}. Planeten ab
+GALAXY_TRIP_TEXT66,Erkunden fehlgeschlagen
+GALAXY_TRIP_TEXT67,Derzeit keine Belohnungen
+GALAXY_TRIP_TEXT68,Galaxis-Shop
+GALAXY_TRIP_TEXT69,In 10 Sekunden nach dem Beginn der Erkundung ist das Zurückrufen nicht möglich
+GALAXY_TRIP_TEXT70,In 10 Sekunden vor dem Ende der Erkundung ist das Zurückrufen nicht möglich
+GALAXY_TRIP_TEXT71,Pass zur Galaxisreise
+GALAXY_TRIP_TEXT72,Glaxisreise
+GALAXY_TRIP_TEXT73,Altar\nunter Sternen
+GALAXY_TRIP_TIPS_19,Die Galaxis der Ewigkeit ist am Freitag verfügbar. Bitte bleib daran!

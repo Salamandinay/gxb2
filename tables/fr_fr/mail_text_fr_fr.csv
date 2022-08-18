@@ -1,7 +1,7 @@
 id,name,from,content
 1,Arène Journalière,Courrier de l'Arène,"Félicitations, vous avez atteint la {2}e place dans l'Arène du {1}, voici vos récompenses !"
 2,Fin de Saison,Courrier de l'Arène,"En tant que représentant de l'Académie Yume, je voudrais vous féliciter pour avoir atteint la {1}e place dans l'Arène, voici vos récompenses !"
-3,Bonus de Nouveau Serveur,Courrier du Système,"Durant la période des événements, connectez-vous quotidiennement et obtenez Gemme*50, Ticket du Distributeur*2, Ticket d'Arène*2.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
+3,Bonus de Nouveau Serveur,Courrier du Système,"Bonjour Senpai,\nconnectez-vous quotidiennement et obtenez Gemme*50, Ticket du Distributeur*2, Ticket d'Arène*2.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
 4,Carte Mensuelle,Carte Mensuelle,"Félicitations ! Du {1}, vous obtiendrez 370 Gemmes tous les jours à 00:00 (GMT 0). Les Gemmes du premier jour vous seront envoyées directement après l'achat."
 5,Carte Mensuelle,Carte Mensuelle,"Cher Senpai VIP{1}, voici vos récompenses de la journée. Votre Carte Mensuelle expirera dans {2} jours."
 6,La Carte Mensuelle a expiré,Carte Mensuelle,"Cher Senpai,\n votre Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 13 fois plus de Gemmes qu'en achetant individuellement."
@@ -9,7 +9,7 @@ id,name,from,content
 8,Petite Carte Mensuelle,Petite Carte Mensuelle,"Cher Senpai,\n voici vos récompenses. Votre Petite Carte Mensuelle expirera dans {1} jours."
 9,Petite Carte Mensuelle a expiré,Petite Carte Mensuelle,"Dear Senpai, votre Petite Carte Mensuelle a expiré. Allez dans la Foire pour renouveler votre abonnement. Avec l'abonnement vous obtiendrez 10 fois plus de Gemmes qu'en achetant individuellement."
 10,Recruter une Fille,Recrutement,Félicitations vous avez recruté {1} Filles durant l'événement. Voici vos récompenses.
-11,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Capsule Avancée *3, Pelle *2.\nVoici vos récompenses, veuillez les récupérer~"
+11,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour obtenir Capsule Avancée*3 et Pelle*2.\nVoici vos récompenses, veuillez les récupérer~"
 12,Récompenses de Capsules utilisées,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement Capsule de Nouvelle Fille, veuillez collecter vos récompenses !"
 13,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau *1, Orbe Élémentaire *100 et Épuisette *2, voici vos récompenses, veuillez les récupérer !"
 14,Recrutement,Courrier du Système,"Félicitations vous avez obtenu {1} points pendant l'événement - Examen d'admission, voici vos récompenses, veuillez les récupérer~"
@@ -19,7 +19,7 @@ id,name,from,content
 18,Rassemblement,Courrier du Système,Félicitations ! Vous avez terminé une Tâche lors du rassemblement des Filles. Voici vos récompenses
 19,Remise de Recharge de la Béta,Courrier du Système,"Merci d'avoir acheté {1}, voici vos récompenses bonus !"
 20,Bonus du Distributeur,Courrier du Système,"Félicitations, Senpai ! Vous avez obtenu {1} points durant l'Evénement de Bonus de Distributeur, voici vos récompenses ! Veuillez les récupérer !"
-21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau *1, Orbe Élémentaire *100 et Épuisette *2, voici vos récompenses, veuillez les récupérer !"
+21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau*1, Orbe Élémentaire*100 et Épuisette*2, voici vos récompenses, veuillez les récupérer !"
 22,Récompense de Jobs,Courrier du Système,"Félicitations ! Vous avez fini un Job {1} étoiles durant l'événement, voici vos récompenses."
 23,Avis de Recharge,Courrier du Système,"Merci d'avoir acheté {1}, vos récompenses ont été envoyés dans votre sac."
 24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150, Canne à pêche*5, Pièce de Fortune*2, Grue Jadéite Vert*5 et Grue Jadéite Jaune*1, voici vos récompenses, veuillez les récupérer~"
@@ -83,7 +83,7 @@ id,name,from,content
 82,Équipe de Sécurité,Courrier du Système,"Cher Senpai,\n vous avez purifié le Seigneur du Chaos et êtes entré dans une zone encore plus dangereuse.\nVoici vos récompenses, veuillez les récupérer~"
 83,Questionnaire,Courrier du Système,"Merci d'avoir rempli le questionnaire ! Voici vos récompenses, veuillez les récupérer~"
 84,Fête de la musique,Courrier du Système,Félicitations ! Vous avez fini le puzzle de la Fête de la Musique et vous avez obtenu Nani Skin Concert de Rock. Voici vos récompenses.
-85,Programme de Motivation,Courrier du Système,Félicitations ! Vous avez atteint le Niv.{1}. Voici vos récompenses.
+85,Programme de Motivation,Courrier du Système,"Félicitations ! Vous avez atteint le Niv.{1}.\nVoici vos récompenses, veuillez les récupérer~"
 86,Show,Courrier du Système,Félicitations ! Vous avez débloqué le mode difficile du Show en direct ! Vous avez obtenu Hexa Skin Tambour.
 87,Classement du Show,Courrier du Système,Félicitations ! Vous vous êtes classé {1}e dans le mode difficile du Show en direct ! Voici vos récompenses.
 88,Arène Ultime Ouverte,Courrier du Système,Cher Senpai ! La nouvelle saison de l'Arène Ultime a commencé ! Vous pourrez parier après que la Phase de Qualification débute.
@@ -280,7 +280,7 @@ Tous les entraînements en cours ont été terminés d\'avance.
 Voici les récompenses, veuillez les récupérer~"
 233,Pass du Sanctuaire,Courrier du Système,"Cher Senpai,\nEn raison de la réinitialisation de l'événement mensuel, vous ne pouvez pas améliorer le niveau du Pass du Sanctuaire au maximum pendant la durée restante de l'événement après son achat.\nVoici vos récompenses dues, veuillez les récupérer~"
 234,Rappel de la fin de Cité aux Trésors,Courrier du Système,"Cher Senpai,\nL'événement - Cité aux Trésors va prendre fin dans 24 heures ! Alllez vite pour trouver des trésors !"
-235,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour recevoir Ticket Avancé du Distributeur*1, Détecteur Spatial*15, Pelle*2 et Baguette*1.\nVoici vos récompenses, veuillez les récupérer~"
+235,Récompense Quotidienne,Courrier du Système,"Pendant l'événement, connectez-vous quotidiennement pour recevoir Ticket Avancé du Distributeur*1, Détecteur Spatial*15.\nVoici vos récompenses, veuillez les récupérer~"
 236,Rappel de la fin de Reconstitution du Livre,Courrier du Système,"
 Cher Senpai,
 La saison actuelle - Reconstitution du Livre va prendre fin dans 24 heures.
@@ -303,4 +303,4 @@ Si vous avez des questions n\'hésitez pas à contacter Yuki."
 246,Exploration du Vieux Campus,Courrier du Système,"Félicitations ! Vos dégâts infligés dans 11ème étape se sont classés {1}e dans l'événement - Exploration du Vieux Campus ! Voici vos récompenses, veuillez les récupérer~"
 247,Îles Célestes,Courrier du Système,"Félicitations Senpai ! Votre Guilde a obtenu {1} Points d'Activité, voici vos récompenses, veuillez les récupérer~"
 248,Bon Plan Estival,Courrier du Système,"Bonjour Senpai,\n{1} Pièces d'Écaille supplémentaires vous ont été automatiquement envoyées dans votre sac.\nN'oubliez pas les utiliser pour échanger contre des récompenses~"
-249,星系之旅排名獎勵,Courrier du Système,恭喜學長在本期星系探索的排名中獲得第{1}名，獎勵請見附件！。
+249,Voyage Galactique,Courrier du Système,"Félicitations Senpai ! Vous vous êtes classé {1}e dans Voyage Galactique durant cette saison.\nVoici les récompenses, veuillez les récupérer~"

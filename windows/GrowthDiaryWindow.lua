@@ -345,6 +345,9 @@ end
 function GrowthDiaryWindow:onGetChapterAwards(event)
 	local chapter_id = event.data.id
 	local awards = xyd.tables.grouthDiaryMissionTable:getChapterAwards(chapter_id)
+
+	self.awardBtnMask_:SetActive(false)
+
 	local items = {}
 
 	for _, item in ipairs(awards) do

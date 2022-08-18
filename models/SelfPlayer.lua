@@ -68,6 +68,7 @@ end
 function SelfPlayer:updateGbobalTimer()
 	for i in ipairs(self.globalTimerCallBack) do
 		if self.globalTimerCallBack ~= nil and self.globalTimerCallBack[i] ~= nil then
+			local keyId = self.globalTimerCallBack[i].keyid
 			self.globalTimerCallBack[i].time_yet = self.globalTimerCallBack[i].time_yet + 1
 
 			if self.globalTimerCallBack[i].timeDis <= self.globalTimerCallBack[i].time_yet then
@@ -75,7 +76,7 @@ function SelfPlayer:updateGbobalTimer()
 					self.globalTimerCallBack[i].callBack()
 				end
 
-				if self.globalTimerCallBack[i] ~= nil then
+				if self.globalTimerCallBack[i] ~= nil and keyId == self.globalTimerCallBack[i].keyid then
 					self.globalTimerCallBack[i].time_yet = 0
 
 					if self.globalTimerCallBack[i].alltimes ~= -1 then
@@ -235,7 +236,8 @@ function SelfPlayer:initModelAfterLogin()
 		"dress",
 		"community",
 		"arenaAllServerScore",
-		"shrine"
+		"shrine",
+		"galaxyTrip"
 	}
 
 	for _, v in ipairs(modelList) do
@@ -659,6 +661,7 @@ function SelfPlayer:onLoginInfo_(event)
 	end
 
 	xyd.models.quickFormation:reqTeamsInfo()
+	xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
 end
 
 function SelfPlayer:setOpenedFunc(ids)

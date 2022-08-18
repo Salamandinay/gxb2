@@ -122,6 +122,7 @@ function QuickFormation:updatePartnerInfo()
 					partner_info.ex_skills = partnerInfo.ex_skills
 					partner_info.star_origin = partnerInfo.star_origin
 					partner_info.treasures = partnerInfo.treasures
+					partner_info.travel = partnerInfo.travel
 
 					if partnerInfo.tableID and partnerInfo.tableID > 0 then
 						if partner_info.tableID ~= partnerInfo.tableID then

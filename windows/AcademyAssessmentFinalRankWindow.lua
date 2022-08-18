@@ -120,6 +120,8 @@ function AcademyAssessmentFinalRankWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.GET_SCHOOL_USED_PARTNERS, function (event)
 		local data = event.data
 
+		dump()
+
 		if #data.partners <= 0 then
 			xyd.showToast(__("SCHOOL_PRACTISE_RANK_TIP"))
 
@@ -409,6 +411,8 @@ function AcademyAssessmentFinalRankWindow:initRankList(groupId)
 			rank = data.rank
 		end
 
+		dump(data)
+
 		local params = {
 			group = 0,
 			avatar_id = data.avatar_id,
@@ -419,7 +423,8 @@ function AcademyAssessmentFinalRankWindow:initRankList(groupId)
 			point = data.score,
 			rank = rank,
 			player_id = data.player_id,
-			type = NAV_TYPE.RANK_NOW
+			type = NAV_TYPE.RANK_NOW,
+			dress_style = data.dress_style
 		}
 
 		if data.avatar_id then
@@ -462,7 +467,8 @@ function AcademyAssessmentFinalRankWindow:refreshSelfRank(groupId, isRefresh)
 		server_id = xyd.models.selfPlayer:getServerID(),
 		point = selfScore,
 		rank = rankText,
-		player_id = xyd.models.selfPlayer:getPlayerID()
+		player_id = xyd.models.selfPlayer:getPlayerID(),
+		dress_style = xyd.models.dress:getEffectEquipedStyles()
 	}
 
 	if isRefresh == nil or isRefresh == false then
@@ -630,6 +636,9 @@ function EntranceRankItem:update(index, info)
 
 	if params then
 		self.params = params
+
+		dump(self.params)
+
 		self.hide_bg_ = params.hide_bg
 		self.avatar_id_ = tonumber(params.avatar_id)
 		self.frame_id_ = tonumber(params.frame_id)

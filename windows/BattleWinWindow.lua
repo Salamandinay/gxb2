@@ -48,7 +48,8 @@ function BattleWinWindow:ctor(name, params)
 		xyd.BattleType.NEW_PARTNER_WARMUP,
 		xyd.BattleType.ACADEMY_ASSESSMENT,
 		xyd.BattleType.SHRINE_HURDLE_REPORT,
-		xyd.BattleType.ENTRANCE_TEST_REPORT
+		xyd.BattleType.ENTRANCE_TEST_REPORT,
+		xyd.BattleType.GALAXY_TRIP_BATTLE
 	}
 	self.isReportType = false
 	self.isNewVer = params.is_new
@@ -518,6 +519,11 @@ function BattleWinWindow:initReviewBtn()
 					activity_id = xyd.ActivityID.ENTRANCE_TEST
 				}
 			})
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onGalayTripGridBattleReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -543,6 +549,9 @@ function BattleWinWindow:initLayout()
 				self.battleReviewBtn.transform:X(320)
 			end
 		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM or self.battleType == xyd.BattleType.ENTRANCE_TEST then
+			self.battleDetailBtn.transform:X(260)
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+			self.battleReviewBtn:SetActive(true)
 			self.battleDetailBtn.transform:X(260)
 		else
 			self.battleDetailBtn:X(290)
@@ -851,6 +860,21 @@ function BattleWinWindow:initLayout()
 		self.battleReviewBtn:SetActive(true)
 		self:initSpfarm()
 		pvpFun()
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		self.pveDropGroup.transform:SetLocalScale(0, 0, 1)
+
+		local seq = DG.Tweening.DOTween.Sequence()
+
+		seq:Insert(0, self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+		self:initHeroChallenge()
+		pveFun()
+
+		local gridId = self.battleParams.gridId
+		local gridState = xyd.models.galaxyTrip:getGridState(gridId, xyd.models.galaxyTrip:getGalaxyTripGetCurMap())
+
+		if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
+			self.confirmBtnLabel.text = __("GET2")
+		end
 	end
 
 	UIEventListener.Get(self.battleDetailBtn).onClick = function ()
@@ -906,6 +930,15 @@ function BattleWinWindow:closeSelf()
 		local timeCloisterBattleWd = xyd.WindowManager.get():getWindow("time_cloister_battle_window")
 
 		timeCloisterBattleWd:showClearLastRankTips()
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		local gridId = self.battleParams.gridId
+		local gridState = xyd.models.galaxyTrip:getGridState(gridId, xyd.models.galaxyTrip:getGalaxyTripGetCurMap())
+
+		if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
+			xyd.models.galaxyTrip:getAwards({
+				gridId
+			})
+		end
 	end
 
 	xyd.WindowManager.get():closeWindow("battle_window")

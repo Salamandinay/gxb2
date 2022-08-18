@@ -210,7 +210,7 @@ function StarOriginDetailWindow:initStarGroup()
 		})
 	end
 
-	if nodeType == 2 then
+	if nodeType and nodeType[1] and nodeType[2] then
 		local allUnlock = true
 
 		for i = 1, #starIDs do
@@ -222,11 +222,11 @@ function StarOriginDetailWindow:initStarGroup()
 		if allUnlock then
 			local state = 2
 
-			if self.nodeItems[#starIDs].lev > 0 then
+			if self.nodeItems[nodeType[2]].lev > 0 then
 				state = 3
 			end
 
-			self.nodeItems[1]:setLineByPreNodeID(starIDs[#starIDs], state)
+			self.nodeItems[nodeType[1]]:setLineByPreNodeID(starIDs[nodeType[2]], state)
 		end
 	end
 end
@@ -709,6 +709,7 @@ function starNodeItem:initUI()
 	self.labelBg = self.go:ComponentByName("labelBg", typeof(UISprite))
 	self.redPoint = self.go:ComponentByName("redPoint", typeof(UISprite))
 	self.line = self.go:ComponentByName("line", typeof(UISprite))
+	self.line2 = self.go:ComponentByName("line2", typeof(UISprite))
 
 	UIEventListener.Get(self.go.gameObject).onClick = function ()
 		self.parent.curSelectNodeItem = self
@@ -767,6 +768,10 @@ function starNodeItem:setInfo(data)
 	else
 		self.label:SetActive(false)
 	end
+
+	if self.line2 then
+		self.line2:SetActive(false)
+	end
 end
 
 function starNodeItem:checkSelectState()
@@ -777,17 +782,17 @@ function starNodeItem:setLineByPreNodeID(preNodeTableID, state)
 	local lineImgName = self.parent.lineImgNameByState[state]
 	local xy = xyd.tables.starOriginNodeTable:getXy(self.nodeTableID)
 
-	xyd.setUISpriteAsync(self.line, nil, lineImgName, function ()
+	xyd.setUISpriteAsync(self.line2, nil, lineImgName, function ()
 		local preNodeXY = xyd.tables.starOriginNodeTable:getXy(preNodeTableID)
 
-		self.line:X((preNodeXY[1] - xy[1]) / 2)
-		self.line:Y((preNodeXY[2] - xy[2]) / 2)
+		self.line2:X((preNodeXY[1] - xy[1]) / 2)
+		self.line2:Y((preNodeXY[2] - xy[2]) / 2)
 
 		local angle = math.atan2(preNodeXY[2] - xy[2], preNodeXY[1] - xy[1]) * 180 / math.pi
-		self.line.gameObject.transform.localEulerAngles = Vector3(0, 0, angle + 90)
-		self.line.height = math.sqrt((preNodeXY[1] - xy[1]) * (preNodeXY[1] - xy[1]) + (preNodeXY[2] - xy[2]) * (preNodeXY[2] - xy[2]))
+		self.line2.gameObject.transform.localEulerAngles = Vector3(0, 0, angle + 90)
+		self.line2.height = math.sqrt((preNodeXY[1] - xy[1]) * (preNodeXY[1] - xy[1]) + (preNodeXY[2] - xy[2]) * (preNodeXY[2] - xy[2]))
 
-		self.line:SetActive(true)
+		self.line2:SetActive(true)
 	end, nil, true)
 end
 

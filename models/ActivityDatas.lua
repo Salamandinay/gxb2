@@ -299,7 +299,8 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_FREE_REVERGE] = require("app.models.datas.ActivityFreeRevertData"),
 	[xyd.ActivityID.ACTIVITY_GOLDFISH] = require("app.models.datas.ActivityGoldfishData"),
 	[xyd.ActivityID.ACTIVITY_GOLDFISH_GIFTBAG] = require("app.models.datas.ActivityGoldfishGiftbagData"),
-	[xyd.ActivityID.ACTIVITY_GOLDFISH_AWARDS] = require("app.models.datas.ActivityGoldfishAwardsData")
+	[xyd.ActivityID.ACTIVITY_GOLDFISH_AWARDS] = require("app.models.datas.ActivityGoldfishAwardsData"),
+	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION] = require("app.models.datas.ActivityGalaxyTripMissionData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

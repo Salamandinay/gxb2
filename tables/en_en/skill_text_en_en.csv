@@ -449,11 +449,15 @@ id,unknown_2,name,desc
 5100801,Sakura,Sakura Dance,"Deals (103% of Attack) damage against Back-line enemies and (22% chance) to [c][01a310]Petrify[-][/c] them for 2 rounds, reducing their 15% Armor for 3 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5100901,Giana,Fire Fox,"Deals (90% of Attack) damage against all enemies and has a 75% chance to [c][01a310]Silence[-][/c] Warrior class enemies for 2 rounds.\n[c][01a310]Silence:[-][/c]\nA control effect. During this effect, girls affected will not be able to release their Active Skills."
 5101001,Ennmaya,Poison Mind,"
-Deals (180% of Attack) damage against 1 Back-line random enemy, dealing extra (45% of Attack) damage each round for 6 rounds. Has (35% chance) to [c][01a310]Stun[-][/c] for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Deals (180% of Attack) damage against 1 Back-line random enemy, dealing extra (45% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has (35% chance) to [c][01a310]Stun[-][/c] for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 5200101,Hottie,Tasty Poison,Deals (110% of Attack) damage against Back-line enemies and increases Back-line allies 15 speed for 2 rounds.
 5200201,Blowie,Storm Rush,Deals (110% of Attack) damage against 1 random Back-line enemy and heals all allies for (65% of Attack) HP for 3 rounds.
 5200301,Chevalir,Metal Storm,"Deals (75% of Attack) damage against Back-line enemies and (20% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -586,11 +590,15 @@ A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101001,Caitlyn,Explosive Shot,"Deals (152% of Attack) damage against 2 random enemies, dealing extra (86% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101101,Ennmaya,Poison Mind,"
-Deals (190% of Attack) damage against 2 random Back-line enemies, dealing extra (56% of Attack) damage each round for 6 rounds. Has (45% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+Deals (190% of Attack) damage against 2 random Back-line enemies, dealing extra (56% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has (45% chance) to [c][01a310]Stun[-][/c] them for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 65101201,Cynthia,Butterfly Effect,"Deals (100% of Attack) damage against 4 random enemies, dealing extra (30% of Attack) damage each round till their death."
 65101301,Werewolf,Wind Attack,Deals (192% of Attack) damage against 2 random Back-line enemies and gains 25% Armor Break for 2 rounds.
 65101401,Nona,Winner's Crown,"Deals (147% of Attack) damage against Front-line enemies and has a 40% chance to [c][01a310]Freeze[-][/c] them for 2 rounds, heals 3 random allies for (180% of Attack) HP.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -681,10 +689,14 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75100701,Ennmaya,Poison Mind,"
 Deals (220% of Attack) damage against 2 random Back-line enemies, dealing extra (66% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 50% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 75100801,Gambler,Danger Card,"Deals (148% of Attack) damage against 3 random enemies, dealing extra (140% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds and heals self for (170% of Attack) HP, the damage will be increased to 202% of Attack against Ranger class enemies.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75100901,Fencer,Cold Fury,"Deals (174% of Attack) damage against frontline enemies and has a 70% chance to [c][01a310]Freeze[-][/c] them for 2 rounds, heals self for (25% of MAXIMUM HP) HP.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75101001,Sakura,Sakura Dance,"Deals (192% of Attack) damage against Back-line enemies and (35% chance) to [c][01a310]Petrify[-][/c] them for 2 rounds, reducing their 30% Armor for 3 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -873,7 +885,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 5100702,Wildtress,Wild Mind,Increases HP by 20% and Armor Break by 20%.
 5100802,Sakura,Heart of Kendo,"Increases Attack by 15%, HP by 20% and Armor by 10%, immune to [c][01a310]Petrification[-][/c].\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5100902,Giana,Cold Blood,"Whenever an ally is defeated, increase Crit by 10%, Attack by 18% and Control Immunity by 6%."
-5101002,Ennmaya,Blood Poison,"Increases Armor Break by 10%, Attack by 20% and HP by 8%, increases 10% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+5101002,Ennmaya,Blood Poison,"
+Increases Armor Break by 10%, Attack by 20% and HP by 8%, increases 10% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 5200102,Hottie,Bathrobe,Increases HP by 20% and Speed by 20.
 5200202,Blowie,Soft Wind,"Attack has a 100% chance to deal extra (30% of Attack) [c][01a310]Burn[-][/c] damage and heal a random ally for (25% of Attack) HP each round for 3 rounds.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 5200302,Chevalir,Lord Shield,Increases Armor by 32% and HP by 20%.
@@ -969,7 +986,12 @@ During this effect, girls affected will not be able to deal Basic Attack, releas
 65100802,Javelin,Lance Talent II,"Increases Armor Break by 35%, Attack by 30% and HP by 20%."
 65100902,Geisha,Magic Wall II,Increases Attack by 20% and HP by 30%.
 65101002,Caitlyn,Gun Master II,"Attack has a 70% chance to [c][01a310]Bleed[-][/c] the target, dealing (60% of Attack) damage each round for 2 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65101102,Ennmaya,Blood Poison II,"Increases Armor Break by 15%, Attack by 30% and HP by 12%, increases 15% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+65101102,Ennmaya,Blood Poison II,"
+Increases Armor Break by 15%, Attack by 30% and HP by 12%, increases 15% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 65101202,Cynthia,True Flame II,"Attack has a 100% chance to [c][01a310]Burn[-][/c] the target, dealing (20% of Attack) damage each round till its death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101302,Werewolf,Armor Break II,Increases Armor Break by 64% and HP by 10%.
 65101402,Nona,Win Win II,Increases HP by 30% and Precision by 30%.
@@ -1036,7 +1058,12 @@ During this effect, girls affected will not be able to deal Basic Attack, releas
 75100402,Giana,Cold Blood III,"Whenever an ally is defeated, increase Crit by 20%, Attack by 36% and Control Immunity by 12%."
 75100502,Sapphire,Fox Fire,Basic attack changed to deal (105% of Attack) damage against Front-line enemies and reduce their Block rate by 20% for 3 rounds.
 75100602,Wu Kong,Stun III,"Attack has a 75% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75100702,Ennmaya,Blood Poison III,"Increases Armor Break by 20%, Attack by 35% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+75100702,Ennmaya,Blood Poison III,"
+Increases Armor Break by 20%, Attack by 35% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 75100802,Gambler,Blood Anger III,"Attack has a 100% chance to [c][01a310]Bleed[-][/c] the target, dealing (45% of Attack) damage each round for 4 rounds and gains Armor Break by 16.8% for 4 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75100902,Fencer,Icy Land,"When attacked (Counterattack not included) by the non-warrior target, has a 20% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds. When attacked (Counterattack not included) by the warrior target, has a 35% chance to [c][01a310]Freeze[-][/c] the target for 2 rounds.\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75101002,Sakura,Heart of Kendo,"Increases Attack by 35%, HP by 25% and Armor by 20%, immune to [c][01a310]Petrification[-][/c].\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -1150,7 +1177,12 @@ During this effect, girls affected will not be able to deal Basic Attack, releas
 5100703,Wildtress,First Power,Gains Armor Break by 8.4% and Crit by 8% with each Attack.
 5100803,Sakura,Killing Mark,"Deals extra 80% damage to [c][01a310]Petrified[-][/c] targets, Basic Attack changed to Deals (75% of Attack) damage against Back-line enemies and has 10% chance to [c][01a310]Petrify[-][/c] them for 2 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5100903,Giana,Flower Engulf,"Increases Damage Reduction by 12%, HP by 25% and Attack by 25%."
-5101003,Ennmaya,Stun Body,"Attack has a 50% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+5101003,Ennmaya,Stun Body,"
+Attack has a 50% chance to [c][01a310]Stun[-][/c] the target for 2 round.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 5200103,Hottie,Mind Shock,"Basic Attack targets 2 random enemies, dealing (70% of Attack) damage."
 5200203,Blowie,Soul of Wind,Increases HP by 20% and Attack by 20%.
 5200303,Chevalir,Revenge Spear,"When critical attacked (Counterattack not included), has a 100% chance to Counterattack, dealing (100% of Attack) damage."
@@ -1260,7 +1292,12 @@ When Geisha is defeated, she has a 35% chance to [c][01a310]Stun[-][/c] her Back
 A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101003,Caitlyn,Killing Hall II,Increases Block rate by 30% and Attack by 30%.
-65101103,Ennmaya,Stun Body II,"Attack has 75% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65101103,Ennmaya,Stun Body II,"
+Attack has 75% chance to [c][01a310]Stun[-][/c] the target for 2 round.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65101203,Cynthia,Vision Body II,"When attacked (Counterattack not included), has 100% chance to [c][01a310]Burn[-][/c] enemy, dealing (16% of Attack) damage each round until death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101303,Werewolf,Fury Fire II,"Whenever an enemy Girl dies, gains Crit by 25%."
 65101403,Nona,Last Chance II,"While below 30% HP, increases self 85% Attack for 3 rounds. Skill can be triggered only once."
@@ -1331,7 +1368,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 75100403,Giana,Flower Engulf III,"Increases Damage Reduction by 24%, HP by 30% and Attack by 35%."
 75100503,Sapphire,Trick Shadow,"Increases Precision by 45%, Attack by 45%, HP by 20%"
 75100603,Wu Kong,Weaken Hit III,"Deals extra 125% damage to [c][01a310]Stunned[-][/c] enemies.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-75100703,Ennmaya,Stun Body III,"Attack has 100% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+75100703,Ennmaya,Stun Body III,"
+Attack has 100% chance to [c][01a310]Stun[-][/c] the target for 2 round.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75100803,Gambler,Killing Heart III,"Increases Precision by 25%, Attack by 30%, HP by 30% and Armor Break by 32%, dealing extra 140% damage on [c][01a310]Bleeding[-][/c] enemies.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 75100903,Fencer,Winter is Coming,"Increases Attack by 15%, HP by 40% and Armor by 30%, immune to [c][01a310]Freeze[-][/c].\n[c][01a310]Freeze:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 75101003,Sakura,Killing Mark,"Deals extra 160% damage to [c][01a310]Petrified[-][/c] targets, Basic Attack changed to Deals (95% of Attack) damage against Back-line enemies and has 20% chance to [c][01a310]Petrify[-][/c] them for 2 rounds.\n[c][01a310]Petrify:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
@@ -1411,7 +1453,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 5100504,Wu Kong,Weak Point,Increases Armor Break by 32% and Attack by 20%.
 5100604,Fencer,Total Zero,"While below 50% health, heals self for (240% of Attack) HP for 3 rounds continuously. (Can only trigger once)"
 5100804,Sakura,Zanshin,"While below 50% health, increases Damage Reduction to self by 30% for 3 rounds. (Can only trigger once)"
-5101004,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] 2 random back-line enemies, dealing (100% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+5101004,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] 2 random back-line enemies, dealing (100% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 5200104,Hottie,Desire,"While below 50% health, increases allies' Attack by 15% and reduces all enemies' Armor by 15% for 3 rounds. (Can only trigger once)"
 5200204,Blowie,Wind Fairy,"While below 30% HP, heals all allies for (60% of Attack) HP. (Can only trigger once)"
 5200404,Saint,Flame Power,Increases HP by 30% and Attack by 10%.
@@ -1474,7 +1521,12 @@ Geisha\'s Basic Attack will deal (90% of Attack) damage to 3 random enemies and 
 A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101004,Caitlyn,Break Shot II,"Basic Attack targets the enemy with the lowest HP, steal targets' Attack by 10% for 3 rounds."
-65101104,Ennmaya,Dark Potion II,"While below 50% health, [c][01a310]Poisons[-][/c] 2 random back-line enemies, dealing (150% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+65101104,Ennmaya,Dark Potion II,"
+While below 50% health, [c][01a310]Poisons[-][/c] 2 random back-line enemies, dealing (150% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 65101204,Cynthia,Endless Flame II,"After death, [c][01a310]Burns[-][/c] all enemies, dealing (27% of Attack) damage each round till the enemies die.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101304,Werewolf,Wolf Legend II,Each attack grants self with 21% Crit Damage.
 65101404,Nona,Heal II,Attack has a 100% chance to heal 1 random ally for (90% of Attack) HP.
@@ -1553,7 +1605,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 75100404,Giana,Summon Soul III,"After death, deals (400% of Attack) damage against all enemies."
 75100504,Sapphire,Missing Tune,"While below 50% HP, increases own Attack by 100% and Attack by 30% for all allies for 3 rounds (can only trigger once)."
 75100604,Wu Kong,Weak Point III,Increases Armor Break by 40% and Attack by 35%.
-75100704,Ennmaya,Dark Potion III,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (200% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+75100704,Ennmaya,Dark Potion III,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (200% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 75100804,Gambler,Blood Absorb III,"Whenever an enemy girl dies, heals self for (180% of Attack) HP."
 75100904,Fencer,Total Zero,"While below 50% health, heals self for (30% of self maximum HP) HP for 2 rounds continuously. (Can only trigger once)"
 75101004,Sakura,Zanshin,"While below 50% health, increases Damage Reduction to self by 50% for 3 rounds. (Can only trigger once)"
@@ -1637,7 +1694,12 @@ Mark effect, if the target takes crit damage, the Critical Strike Mark will be r
 65100812,Javelin,Lance Talent III,"Increases Armor Break by 40%, Attack by 40% and HP by 25%."
 65100912,Geisha,Magic Wall III,Increases Attack by 25% and HP by 35%.
 65101012,Caitlyn,Gun Master III,"Attack has a 100% chance to [c][01a310]Bleed[-][/c] the target, dealing (96% of Attack) damage each round for 2 rounds.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-65101112,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 35% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+65101112,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 35% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 65101212,Cynthia,True Flame III,"Each attack has a 100% chance to [c][01a310]Burn[-][/c] the target, dealing (25% of Attack) damage each round till its death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101312,Werewolf,Armor Break III,Increases Armor Break by 64% and HP by 20%.
 65101412,Nona,Win Win III,Increases HP by 35% and Precision by 35%.
@@ -1713,7 +1775,12 @@ When Geisha is defeated, she has a 50% chance to [c][01a310]Stun[-][/c] her Back
 A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101013,Caitlyn,Killing Hall III,Increases Block rate by 35% and Attack by 40%.
-65101113,Ennmaya,Stun Body III,"Attack has 100% chance to [c][01a310]Stun[-][/c] the target for 2 round.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+65101113,Ennmaya,Stun Body III,"
+Attack has 100% chance to [c][01a310]Stun[-][/c] the target for 2 round.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
 65101213,Cynthia,Vision Body III,"When attacked (Counterattack not included), has a 100% chance to [c][01a310]Burn[-][/c] the target, dealing (18% of Attack) damage each round till its death.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101313,Werewolf,Fury Fire III,"Whenever an enemy Girl dies, gains Crit by 30%."
 65101413,Nona,Last Chance III,"While below 30% HP, increase Attack by 100% for 3 rounds. Skill can be triggered only once."
@@ -1793,7 +1860,12 @@ Geisha\'s Basic Attack will deal (100% of Attack) damage to 3 random enemies and
 A Control Effect.
 During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt or Counterattack."
 65101014,Caitlyn,Break Shot III,"Basic Attack targets the enemy with lowest HP, dealing (120% of Attack) damage, steals 20% of Attack from the target for 3 rounds"
-65101114,Ennmaya,Dark Potion III,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (200% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+65101114,Ennmaya,Dark Potion III,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (200% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 65101214,Cynthia,Endless Flame III,"After death, [c][01a310]Burns[-][/c] all enemies, dealing (36% of Attack) damage each round till the enemies die.\n[c][01a310]Burn:[-][/c]\nA damage over time. Damage is dealt once when burn is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 65101314,Werewolf,Wolf Legend III,Each attack grants self with 24.5% Crit Damage.
 65101414,Nona,Heal III,Attack has a 100% chance to heal 1 random ally for (120% of Attack) HP.
@@ -2597,7 +2669,7 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (200% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 10 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 10 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 5% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 2% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -2620,7 +2692,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (240% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 15 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 15 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 7% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 4% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -2643,7 +2715,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (280% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -2666,7 +2738,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (280% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -2941,25 +3013,25 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 65401812,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 35%, Attack by 25%, Crit by 30%"
 75401102,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 35%, Attack by 25%, Crit by 30%"
 5401103,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (75% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 6% of their Attack and [c][01a310]Burns[-][/c] away (2% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (75% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 6% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (2% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 65401803,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (85% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 9% of their Attack and [c][01a310]Burns[-][/c] away (4% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (85% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 9% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (4% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 65401813,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 75401103,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (95% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -4261,49 +4333,144 @@ A damage over time. Damage is dealt once when poison is inflicted and during the
 751006045,Wu Kong,Weak Point,Increases Armor Break by 43% and Attack by 38%.
 751007011,Ennmaya,Poison Mind,"
 Deals (224% of Attack) damage against 2 random Back-line enemies, dealing extra (68% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 50% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 751007012,Ennmaya,Poison Mind,"
 Deals (228% of Attack) damage against 2 random Back-line enemies, dealing extra (69% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 50% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 751007013,Ennmaya,Poison Mind,"
 Deals (232% of Attack) damage against 2 random Back-line enemies, dealing extra (70% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 50% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 751007014,Ennmaya,Poison Mind,"
 Deals (236% of Attack) damage against 2 random Back-line enemies, dealing extra (71% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 50% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 751007015,Ennmaya,Poison Mind,"
 Deals (240% of Attack) damage against 2 random Back-line enemies, dealing extra (72% of Attack) [c][01a310]Poison[-][/c] damage each round for 6 rounds. Has a 55% chance to [c][01a310]Stun[-][/c] them for 2 rounds. Increases Damage Reduction by 65% for 2 rounds.
-[c][01a310]Stun:[-][/c]
-A control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
-[c][01a310]Poison:[-][/c]
-A damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007021,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 37% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007022,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 37% and HP by 17%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007023,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 37.5% and HP by 17%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007024,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 37.5% and HP by 17.5%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007025,Ennmaya,Blood Poison,"Increases Armor Break by 20%, Attack by 38% and HP by 18%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007031,Ennmaya,Stun Body,"Basic Attack deals(102% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-751007032,Ennmaya,Stun Body,"Basic Attack deals(104% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-751007033,Ennmaya,Stun Body,"Basic Attack deals(106% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-751007034,Ennmaya,Stun Body,"Basic Attack deals(108% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-751007035,Ennmaya,Stun Body,"Basic Attack deals(110% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.\n[c][01a310]Stun:[-][/c]\nA control effect. During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
-751007041,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (204% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007042,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (208% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007043,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (212% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007044,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (216% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-751007045,Ennmaya,Dark Potion,"While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (220% of Attack) damage for 4 rounds. (Can only trigger once)\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007021,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 37% and HP by 15%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007022,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 37% and HP by 17%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007023,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 37.5% and HP by 17%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007024,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 37.5% and HP by 17.5%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007025,Ennmaya,Blood Poison,"
+Increases Armor Break by 20%, Attack by 38% and HP by 18%, increases 20% damage on [c][01a310]Poisoned[-][/c] enemies.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007031,Ennmaya,Stun Body,"
+Basic Attack deals(102% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+751007032,Ennmaya,Stun Body,"
+Basic Attack deals(104% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+751007033,Ennmaya,Stun Body,"
+Basic Attack deals(106% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+751007034,Ennmaya,Stun Body,"
+Basic Attack deals(108% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+751007035,Ennmaya,Stun Body,"
+Basic Attack deals(110% of Attack) damage and has 100% chance to [c][01a310]Stun[-][/c] the target for 2 rounds.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack."
+751007041,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (204% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007042,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (208% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007043,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (212% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007044,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (216% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
+751007045,Ennmaya,Dark Potion,"
+While below 50% health, [c][01a310]Poisons[-][/c] all back-line enemies, dealing (220% of Attack) damage for 4 rounds. (Can only trigger once)
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect."
 751008011,Gambler,Danger Card,"Deals (154% of Attack) damage against 3 random enemies, dealing extra (145% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds and heals self for (170% of Attack) HP, the damage will be increased to 202% of Attack against Ranger class enemies.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 751008012,Gambler,Danger Card,"Deals (156% of Attack) damage against 3 random enemies, dealing extra (147% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds and heals self for (170% of Attack) HP, the damage will be increased to 202% of Attack against Ranger class enemies.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 751008013,Gambler,Danger Card,"Deals (158% of Attack) damage against 3 random enemies, dealing extra (149% of Attack) [c][01a310]Bleed[-][/c] damage each round for 2 rounds and heals self for (170% of Attack) HP, the damage will be increased to 202% of Attack against Ranger class enemies.\n[c][01a310]Bleed:[-][/c]\nA damage over time. Damage is dealt once when bleed is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -4508,7 +4675,7 @@ A control effect. During this effect, girls affected will not be able to deal Ba
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (285% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -4531,7 +4698,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (290% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -4554,7 +4721,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (295% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -4577,7 +4744,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (300% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 20 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -4600,7 +4767,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 Valeera restores her Mana by collecting some from the controlled enemies.
 
 Whenever an enemy is [c][01a310]Petrified[-][/c], she will recover (305% of Attack) HP every round for 3 rounds.
-Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 25 Energy every round for 3 rounds.
+Whenever an enemy is [c][01a310]Frozen[-][/c], she will regenerate 25 Energy.
 Whenever an enemy is [c][01a310]Stunned[-][/c], she will gain 10% Attack that lasts for 3 rounds.
 At the start of every round, she will steal 6% Attack that lasts for 1 round from enemies afflicted with [c][01a310]Poison[-][/c].
 
@@ -6165,31 +6332,31 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 754011024,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 37.5%, Attack by 27.5%, Crit by 30%"
 754011025,Mio,Master Huntress,"The experience in the wild makes Mio a master in hunting, increases her HP by 38%, Attack by 28%, Crit by 30%"
 754011031,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (97% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (97% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754011032,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (99% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (99% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754011033,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (101% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (101% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754011034,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (103% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (103% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 12% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
 Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
 754011035,Mio,Tango of Flames,"
-Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (105% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 14% of their Attack and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
+Mio swings her dagger, creating burning storms in her Basic Attacks, which deals (105% of Attack) damage to 3 random enemies. This attack suffocates them in gusts of hot winds, steals 14% of their Attack for 2 rounds and [c][01a310]Burns[-][/c] away (5% of Mio\'s MAXIMUM HP) of their HP for 1 round.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15914,3 +16081,844 @@ The owner of this Effect will recover 16% of lost HP and gain 12% Attack when th
 501115,Sky Island,Control Resist I,Reduces the duration of Control Effects that affect Sky Island Enemies by 1 round.
 501116,Sky Island,Control Resist II,Reduces the duration of Control Effects that affect Sky Island Enemies by 2 rounds.
 503118,Sky Island,Weak Pulse,Sky Island Cupid will not gain [c][e28002]Heartbeat[-][/c] stacks.
+75700200,Elysia,Basic Attack,Basic Attack
+757002101,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (800% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 8.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 40%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 30%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 20%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 60%."
+757002102,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (816% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.1% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 9.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.1%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.1%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 40.8%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 30.6%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 20.4%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 61.2%."
+757002103,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (832% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.2% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 10.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.2%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.2%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 41.6%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 31.2%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 20.8%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 62.4%. "
+757002104,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (848% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.3% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 11.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.3%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.3%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 42.4%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 31.8%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 21.2%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 63.6%."
+757002105,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (864% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.4% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 12.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.4%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.4%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 43.2%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 32.4%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 21.6%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 64.8%."
+757002106,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (880% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 13.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.5%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.5%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 44%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 33%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 22%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 66%."
+757002107,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (896% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.6% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 14.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.6%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.6%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 44.8%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 33.6%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 22.4%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 67.2%."
+757002108,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (912% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.7% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 15.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.7%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.1%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 45.6%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 34.2%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 22.8%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 68.4%."
+757002109,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (928% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.8% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 16.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.8%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.3%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 46.4%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 34.8%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 23.2%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 69.6%. "
+757002110,Elysia,Celestial Painter,"
+From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
+Elysia deals (960% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (6% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
+
+Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
+Primal Red + Primal Blue = [c][e28002]Hybrid Purple[-][/c];
+Primal Yellow + Primal Blue = [c][e28002]Hybrid Green[-][/c];
+Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 20.
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 6%.
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 6%.
+[c][e28002]Hybrid Orange[-][/c]:
+A Skill Effect that cannot stack.
+This Effect increases all damage taken by the owner of this Effect by 48%.
+[c][e28002]Hybrid Purple[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 36%.
+[c][e28002]Hybrid Green[-][/c]:
+A Skill Effect that cannot stack.
+This Effect reduces all damage dealt by the owner of this Effect by 24%.
+[c][e28002]Faded[-][/c]:
+This effect cannot stack, but can be removed.
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 72%."
+757002201,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 8.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5%."
+757002202,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 9.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.1%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.1%."
+757002203,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 10.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.2%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.2%."
+757002204,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 11.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.3%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.3%."
+757002205,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 12.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.4%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.4%."
+757002206,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 13.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.5%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.5%."
+757002207,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 14.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.6%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.6%."
+757002208,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 15.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.7%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.7%."
+757002209,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 16.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.8%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.8%."
+757002210,Elysia,Fantasy Palette,"
+One can make every color there is with merely three colors.
+
+Whenever Elysia’s ally deals a Basic Attack, Elysia will paint the target with 1 stack of [c][e28002]Primal Red[-][/c] that lasts for 3 rounds.
+Whenever Elysia’s ally releases an Active Skill, Elysia will paint the target with 1 stack of [c][e28002]Primal Yellow[-][/c] that lasts for 3 rounds.
+Whenever Elysia takes a Critical Strike from the enemy, she will paint the attacker with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 20.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 6%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 6%."
+757002301,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1600% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 40% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 40% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002302,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1632% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 40.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 40.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002303,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1664% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 41.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 41.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002304,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1696% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 42.4% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 42.4% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002305,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1728% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 43.2% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 43.2% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002306,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1760% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 44% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 44% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002307,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1792% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 44.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 44.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002308,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1824% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 45.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 45.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002309,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1856% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 46.4% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 46.4% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002310,Elysia,Twin Fishes,"
+Are these inanimate products of paint and canvas, or living, breathing creatures?
+
+Elysia will deal (1920% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 48% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 48% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+
+[c][01a310]Silence[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to release their Active Skills.
+
+[c][e28002]Terrorize[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to perform Basic Attacks."
+757002401,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 8.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 10% and Crit Damage Mitigation by 20%."
+757002402,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 9.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.1%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.1%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 10.2% and Crit Damage Mitigation by 20.4%."
+757002403,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 10.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.2%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.2%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 10.4% and Crit Damage Mitigation by 20.8%."
+757002404,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 11.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.3%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.3%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 10.6% and Crit Damage Mitigation by 21.2%."
+757002405,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 12.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.4%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.4%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 10.8% and Crit Damage Mitigation by 21.6%."
+757002406,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 13.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.5%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.5%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 11% and Crit Damage Mitigation by 22%."
+757002407,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 14.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.6%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.6%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 11.2% and Crit Damage Mitigation by 22.4%."
+757002408,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 15.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.7%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.7%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 11.4% and Crit Damage Mitigation by 22.8%."
+757002409,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 16.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 5.8%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 5.8%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 11.6% and Crit Damage Mitigation by 23.2%."
+757002410,Elysia,Blessing of Pisces,"
+The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
+
+At the start of the battle, Elysia paints 2 random enemies with 1 stack of [c][e28002]Primal Red[-][/c], 1 stack of [c][e28002]Primal Yellow[-][/c], and 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds each.
+At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift[-][/c]. When she has 3 stacks of [c][e28002]Pisces’ Gift[-][/c], she will consume 2 stacks and paint 2 random enemies with 1 stack of [c][e28002]Primal Blue[-][/c] that lasts for 3 rounds.
+
+[c][e28002]Primal Red[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Speed of the owner of this Effect by 20.
+
+[c][e28002]Primal Yellow[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Armor of the owner of this Effect by 6%.
+
+[c][e28002]Primal Blue[-][/c]:
+A Skill Effect that can stack up to 5 stacks.
+Every stack reduces the Attack of the owner of this Effect by 6%.
+
+[c][e28002]Pisces\' Gift[-][/c]:
+A Mark Effect that can stack up to 3 stacks.
+Every stack increases the owner’s Extra Control Rate by 12% and Crit Damage Mitigation by 24%."

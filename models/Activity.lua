@@ -157,8 +157,8 @@ function Activity:onActivityList(event)
 		dump(a, "查看全部活动数据。。。。。。。。")
 
 		for i, v in pairs(a.activity_list) do
-			if tonumber(v.activity_id) == 317 then
-				dump(v, "317===========================")
+			if tonumber(v.activity_id) == 319 then
+				dump(v, "319===========================")
 			end
 		end
 
@@ -219,6 +219,10 @@ function Activity:onActivityList(event)
 				end
 
 				if index > 0 or xyd.getServerTime() <= tonumber(data.start_time) + 604800 then
+					self:setActivityData(data)
+				end
+			elseif id == xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+				if xyd.checkFunctionOpen(xyd.FunctionID.GALAXY_TRIP, true) == true then
 					self:setActivityData(data)
 				end
 			else

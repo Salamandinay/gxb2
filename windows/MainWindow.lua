@@ -227,6 +227,12 @@ function MainTopRightBtn:ctor(goItem, id)
 		self.goItem_:SetActive(false)
 	end
 
+	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
+		self.goItem_:SetActive(false)
+	end
+
+	self:checkGalaxy()
+
 	if self.id == 4 then
 		self:updateUpIcon()
 	end
@@ -237,6 +243,30 @@ end
 function MainTopRightBtn:updateSound()
 	if self.trans.funcId[self.id] == xyd.FunctionID.QUIZ and self.soundComponent then
 		self.soundComponent.tableId = 2122
+	end
+end
+
+function MainTopRightBtn:checkGalaxy()
+	if self.id == 6 then
+		local openFuncsIndex = xyd.models.functionOpen:getOpenFuncIndex()
+		local starryOpen = openFuncsIndex[tostring(xyd.FunctionID.STARRY_ALTAR)]
+		local galaxyOpen = openFuncsIndex[tostring(xyd.FunctionID.GALAXY_TRIP)]
+		galaxyOpen = galaxyOpen and xyd.models.galaxyTrip:getLeftTime() > 0
+
+		if starryOpen and galaxyOpen then
+			self.trBtnLabel_.text = __("GALAXY_TRIP_TEXT01")
+
+			xyd.setUISprite(self.trBtnImg_, nil, "activity_galaxy_trip_mission_icon_xxzl_yd")
+			self.goItem_:SetActive(true)
+		elseif not galaxyOpen and starryOpen then
+			self.trBtnLabel_.text = __(self.trans.label[self.id])
+			local imgName = self.trans.img[self.id]
+
+			xyd.setUISprite(self.trBtnImg_, nil, imgName)
+			self.goItem_:SetActive(true)
+		else
+			self.goItem_:SetActive(false)
+		end
 	end
 end
 
@@ -1013,7 +1043,14 @@ function MainWindow:initTopBtnGroup()
 				return
 			end
 
-			xyd.WindowManager.get():openWindow("starry_altar_window")
+			local galaxyOpen = xyd.checkFunctionOpen(xyd.FunctionID.GALAXY_TRIP, true)
+
+			if galaxyOpen then
+				xyd.WindowManager.get():openWindow("galaxy_start_window")
+			else
+				xyd.WindowManager.get():openWindow("starry_altar_window")
+			end
+
 			MainMap:stopSound()
 		end,
 		function ()
@@ -1056,6 +1093,8 @@ function MainWindow:checkTrBtn()
 		for i = 1, #self.trBtnList_ do
 			if self.trBtnList_[i].id == 7 and xyd.models.growthDiary:checkFinish() then
 				self.trBtnList_[i].goItem_:SetActive(false)
+			elseif self.trBtnList_[i].id == 6 then
+				self.trBtnList_[i]:checkGalaxy()
 			end
 		end
 
@@ -2329,6 +2368,10 @@ function MainWindow:initRedMark()
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.FRIEND, self.trBtnList_[1]:getRedPoint())
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.PET, self.trBtnList_[4]:getRedPoint())
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GROWTH_DIARY, self.trBtnList_[7]:getRedPoint())
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.GALAXY_TRIP,
+		xyd.RedMarkType.GALAXY_TRIP_MAP_CAN_GET_POINT
+	}, self.trBtnList_[6]:getRedPoint())
 	xyd.models.backpack:checkCollectionShopRed()
 
 	local funcs = {
@@ -2869,6 +2912,10 @@ function MainWindow:onWindowClose(event)
 				self:backToMainWindowUpdatePartner()
 			end
 		end
+	end
+
+	if self.win_list_[1] == "main_window" and #self.win_list_ == 1 then
+		self:checkTrBtn()
 	end
 
 	if self.win_list_ and windowNum <= 3 then

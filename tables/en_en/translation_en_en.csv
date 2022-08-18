@@ -6225,7 +6225,7 @@ ACTIVITY_LOST_SPACE_SKILL_ENERGY_COST,Energy Cost: {1}
 ACTIVITY_LOST_SPACE_SKILL_CHANGE,"Laser Energy will be reset to 0 after switching the skill, confirm to continue?"
 ACTIVITY_LOST_SPACE_NAV1,Special Event
 ACTIVITY_LOST_SPACE_NAV2,Help
-ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Lucky Bonus, Customization Pack, Monthly Kick Off and Space Station Supply.|8. Auto Explore will be available when you have 5 or more Space Radars. During Auto Explore the system will automatically trigger the special events and your skill. Auto Explore will be stopped if your Space Radars are all consumed or a Portal is found.|9. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
+ACTIVITY_LOST_SPACE_HELP_TEXT,"1. During the event, you are able to explore the Space Zone with Space Radars. You will get a reward for each block of area explored. But only the blocks neighboring the explored blocks can be explored.|2. There is a portal hidden in each Space Zone. After finding and tapping the portal (but you need to claim the rewards in your current Space Zone first), you can get a reward for the current Space Zone and enter the next Space Zone.|3. Supply Coordinates will appear in certain Space Zones. After collecting 3 Supply Coordinates, a Supply Stash will appear. You can enter the Supply Space Zone and gain huge rewards by tapping on its icon.|4. You can select a skill to support you in your exploration. 1 Laser Energy will be provided for each Space Radar consumed. The skill you select will be able to be triggered to explore multiple blocks of area once your Laser Energy is full.|5. You can adjust your skill selection any time you want. But your Laser Energy will be reset to 0 once you switch your skill. Once your Laser Energy is full, you won't be able to obtain more Laser Energy.|6. The rewards you find during the exploration will need to be claimed, there's a button in the event page that can help you to claim the rewards in bulk. But the special events will need you to tap and trigger manually.|7. Space Radars can be obtained through Daily Mail, purchasing Mega Value Pack, Special Skin Pack, Special Gift Pack, Lucky Bonus, and Space Station Supply.|8. Auto Explore will be available when you have 5 or more Space Radars. During Auto Explore the system will automatically trigger the special events and your skill. Auto Explore will be stopped if your Space Radars are all consumed or a portal is found.|9. Once the event ends, the remaining Space Radars will automatically be exchanged into Coins at a rate of 1000K Coins each. The Coins will be sent via Mail."
 GAME_ASSISTANT_TEXT103,Cafeteria - Order Rewards
 ACTIVITY_LOST_SPACE_SKILL_ENERGY_TIPS,"Laser Energy is full, confirm not to trigger the skill?"
 ACTIVITY_LOST_SPACE_SKILL_NO_USE,No explorable area is in your current skill range
@@ -6990,25 +6990,25 @@ STARRY_ALTAR_TEXT18,[c][ffe241]0.25%%[-][/c] chance to obtain a Cosmos Girl for 
 STARRY_ALTAR_TEXT19,Additional [c][56db32]10-star Cosmos Girls Shard * 10[-][/c] in [c][ffe241]{1}[-][/c] draw(s)
 STARRY_ALTAR_TEXT20,You can apply one of the 2 Reward Modes
 GROWTH_DIARY_TEXT13,Servant Training is not unlocked
-GALAXY_TRIP_TEXT01,Galaxy Voyage
+GALAXY_TRIP_TEXT01,Cosmos Portal
 GALAXY_TRIP_TEXT02,Obtain Cosmos Girls
 GALAXY_TRIP_TEXT03,Get Astral Core Resources
 GALAXY_TRIP_TEXT04,Galaxy Voyage
 GALAXY_TRIP_TEXT05,Exploring...
 GALAXY_TRIP_TEXT06,Cleared
-GALAXY_TRIP_TEXT07,Unknown Galaxy
+GALAXY_TRIP_TEXT07,Unknown System
 GALAXY_TRIP_TEXT08,Progress
-GALAXY_TRIP_TEXT09,Galaxy:
-GALAXY_TRIP_TEXT10,獲得探索積分
+GALAXY_TRIP_TEXT09,System:
+GALAXY_TRIP_TEXT10,Exploration Point
 GALAXY_TRIP_TEXT11,Enter
 GALAXY_TRIP_TEXT12,Exploration completed
-GALAXY_TRIP_TEXT13,Galaxy Explored:
-GALAXY_TRIP_TEXT14,Area cleared: {1}
+GALAXY_TRIP_TEXT13,Explore System: {1}
+GALAXY_TRIP_TEXT14,Explored Area: {1}
 GALAXY_TRIP_TEXT15,Total duration: {1}
-GALAXY_TRIP_TEXT16,Explore Site: No. {1}
+GALAXY_TRIP_TEXT16,Explore Site: {1}
 GALAXY_TRIP_TEXT17,Explore Duration: {1}
-GALAXY_TRIP_TEXT18,Result: Exploration Succeeded
-GALAXY_TRIP_TEXT19,Result: Exploration Failed
+GALAXY_TRIP_TEXT18,Explore Result: {1}
+GALAXY_TRIP_TEXT19,Exploration Succeeded
 GALAXY_TRIP_TEXT20,Confirm
 GALAXY_TRIP_TEXT21,Return
 GALAXY_TRIP_TEXT22,Team
@@ -7025,27 +7025,28 @@ GALAXY_TRIP_TEXT32,Enemy Details
 GALAXY_TRIP_TEXT33,Choose Difficulty
 GALAXY_TRIP_TEXT34,Challenge
 GALAXY_TRIP_TEXT35,Current Progress
-GALAXY_TRIP_TEXT36,Clear Requirement:
+GALAXY_TRIP_TEXT36,Requirement:
 GALAXY_TRIP_TEXT37,Defeat Boss ({1}/{2})
-GALAXY_TRIP_TEXT38,Discover Treasure ({1}/{2})
+GALAXY_TRIP_TEXT38,Supply Crates Discovered ({1}/{2})
 GALAXY_TRIP_TEXT39,Connect Entrance and Exit ({1}/{2})
-GALAXY_TRIP_TEXT40,Combat Buff collected ({1}/{2})
+GALAXY_TRIP_TEXT40,Battle Buffs
 GALAXY_TRIP_TEXT41,Save
 GALAXY_TRIP_TEXT42,Planning the Exploration...
 GALAXY_TRIP_TEXT43,Time Remaining：{1}
 GALAXY_TRIP_TEXT44,Details
 GALAXY_TRIP_TEXT45,Instant Reward:
 GALAXY_TRIP_TEXT46,Total Reward after purchase:
-GALAXY_TRIP_TEXT47,Basic
+GALAXY_TRIP_TEXT47,Exploration Point
 GALAXY_TRIP_TEXT48,Tasks
+GALAXY_TRIP_TEXT49,Basic
 GALAXY_TRIP_TEXT50,Extra
 GALAXY_TRIP_TIPS_01,No Undergoing Exploration
 GALAXY_TRIP_TIPS_02,Cannot adjust the route during the exploration
 GALAXY_TRIP_TIPS_03,You need to setup a team first
-GALAXY_TRIP_TIPS_04,You need to clear the previous galaxy first
+GALAXY_TRIP_TIPS_04,You need to meet all the unlock requirements in the previous System
 GALAXY_TRIP_TIPS_05,"Unknown area, coming soon"
 GALAXY_TRIP_TIPS_06,Please select the area you wish the explore in this exploration
-GALAXY_TRIP_TIPS_07,"You will give up the current exploration if you Recall, confirm to continue?"
+GALAXY_TRIP_TIPS_07,"The ongoing Exploration for the uncompleted areas will be canceled if you Recall, confirm to continue?"
 ACTIVITY_GOLDFISH_RK,Summer Deals
 GALAXY_TRIP_TIPS_08,No area is available for exploration
 GALAXY_TRIP_TIPS_09,This area is currently unavailable
@@ -7056,4 +7057,35 @@ ACTIVITY_GOLDFISH_TEXT06,"Fish Scooping is over, but you can still exchange your
 ACTIVITY_GOLDFISH_TEXT07,Scoop special Goldfish to get Goldfish Coins from the general reward pool!
 GALAXY_TRIP_TEXT53,Details
 GALAXY_TRIP_TEXT54,Current Progress
-GALAXY_TRIP_TEXT55,探索積分獲得
+GALAXY_TRIP_TEXT55,Exploration Point
+GALAXY_TRIP_TEXT56,Claim All
+GALAXY_TRIP_TIPS_11,"There are still uncollected rewards in your current System, do you wish to check it out?"
+GALAXY_TRIP_TIPS_12,"The Exploration Progress in this System will be reset if you move to another System, confirm to continue?"
+GALAXY_TRIP_HELP01,"Requirement & Duration|1. Galaxy Voyage will occur in seasons, consisting of an exploration period (29 days) and a result phase (1 day).|2. The feature will be unlocked after passing Campaign Stage 16-4 and when you have at least one 10-star Girl.|Feature Introduction|1. You can explore the galaxy in Galaxy Voyage. The enemy will become stronger and the rewards will become better as you explore further on your voyage.|2. Special events will occur during your explorations. You can clear an area instantly and claim the reward for exploring the area in an enemy encounter after defeating the enemy. For other special events, it will take you some time to complete the exploration.|3. Only the first System is available for exploration at the beginning of each season. You will need to meet certain requirements to unlock more Systems. View more details by tapping on ""Progress"" in the System maps.|4. You can only explore 1 System at a time. If you decide to swap to another System, the exploration progress you made in your current System will not be saved (Exploration Points and Galaxy Stones you obtained from the System, however, will be saved).|5. System of Eternity will be unlocked after you pass the previous 4 Systems in each season. You can obtain more rewards by defeating Space Pirates and Galaxy Tyrant in the System.|6. You can obtain rewards in Voyager Passport after the number of your Exploration Points reaches certain requirements. You can also exchange more rewards with Galaxy Stones in the store of this feature.|7. Your Exploration Points and Exploration Progress will be reset at the beginning of each season, please remember to claim your rewards unlocked in Voyager Passport."
+GALAXY_TRIP_HELP02,"System Map Introduction|1. Exploration Points for completing a same special event in different Systems will be the same, but other rewards will be different according to the System you're in.|Special Event Details:|Normal Enemy - HP won't reset to 100%% after being challenged (obtainable Exploration Points: 2)|Elite Enemy - HP won't be reset to 100%% after being challenged (obtainable Exploration Points: 4)|Ruler – Enemies need to be defeated in 1 challenge attempt (obtainable Exploration Points: 10)|Blank Space – To explore a Blank Space requires 2 hours (obtainable Exploration Points: 1)|Mystery Planet – To explore a Mystery Planet requires 2 hours (obtainable Exploration Points: 1 and a battle buff which will only be effective in your current System)|Supply Crate - To explore a Supply Crate requires 12 hours (obtainable Exploration Points: 1 and additional rewards)|Space Pirate - Enemies need to be defeated in 1 challenge attempt (obtainable Exploration Points: 10)|Galaxy Tyrant - Enemies need to be defeated in 1 challenge attempt (obtainable Exploration Points depends on difficulty level)|2. The starting point and the end point of a System are at the top and bottom of the map. You can explore the 4 Areas beside (↑↓←→) the starting point or beside the Areas that have been Explored.|3. You can explore a System by tapping on the Exploration Areas (The areas with enemies excluded). But you can also preset an exploration plan to explore multiple Exploration Areas by tapping the ""Route"" button.|4. When you're exploring according to a route you have preset, you can tap on the ""Recall"" button to cancel your current Exploration instantly and claim the rewards of the special events completed already. After that, you can adjust your Exploration Route for the next Exploration.|5. In the first 4 Systems, you are able to reduce the HP and Attack of the Ruler of the System by 1%% for every area you explore further after your Exploration Progress reaches 30%%. (You can reduce the HP and Attack of each Ruler by 40%% at most in this way)|6. You will need to consume 1 Galaxy Challenge Coupon for each challenge attempt against enemies in the Systems (Enemies in System of Eternity excluded). The number of Galaxy Challenge Coupon you have will increase by 10 each day. You can own 25 Galaxy Challenge Coupons at most at the same time."
+GALAXY_TRIP_TEXT57,Number of Areas to Explore has reached the limit
+GALAXY_TRIP_TEXT58,Exploring
+GALAXY_TRIP_TEXT59,Unexplored
+GALAXY_TRIP_TIPS_13,You need to Recall your current Exploration before moving to another System.
+GALAXY_TRIP_TEXT60,Starting Point
+GALAXY_TRIP_TEXT61,End Point
+GALAXY_TRIP_TEXT62,Decay
+GALAXY_TRIP_TEXT63,Ruler HP -{1}
+GALAXY_TRIP_TEXT64,Frustration
+GALAXY_TRIP_TEXT65,Ruler Attack -{1}
+GALAXY_TRIP_TIPS_14,This cannot be done during an ongoing Exploration
+GALAXY_TRIP_TIPS_15,"Maps of the Systems to be Explored in this season will be ready in a few minutes, please standby!"
+GALAXY_TRIP_HELP03,"Voyage Team Introduction|1. You can set up 3 Voyage teams in the feature to provide additional battle buffs, Exploration Time Reduction, and Exploration Loot Increase in Galaxy Voyage. The bonus effect each Voyage Team provides will be increased if the Total Limit Break Stage of the Girls in the team reaches 5/10/15/20/25/30. But if the total Limit Break Stage of your Girls in a team is below 5, no buff will be provided by that team.|2. If a Girl is assigned to a Voyage Team, she can still be available for the battles you encounter in Galaxy Voyage.|3. You cannot adjust your Voyage Teams during an ongoing Exploration."
+BATTLE_INFORMATION_TANK,Damage Taken
+GALAXY_TRIP_TIPS_16,Cannot do this during an ongoing Exploration
+GALAXY_TRIP_TIPS_17,Please claim your Exploration Reward first
+GALAXY_TRIP_TIPS_18,Unlock after Exploring the end point of No.{1} System
+GALAXY_TRIP_TEXT66,Exploration Failed
+GALAXY_TRIP_TEXT67,No Reward Yet
+GALAXY_TRIP_TEXT68,Voyage Shop
+GALAXY_TRIP_TEXT69,You cannot Recall in the first 10 seconds of an Exploration.
+GALAXY_TRIP_TEXT70,"The Exploration will end in 10 seconds, you cannot Recall now."
+GALAXY_TRIP_TEXT71,Voyager Passport
+GALAXY_TRIP_TEXT72,Cosmos Portal
+GALAXY_TRIP_TEXT73,Stellar Altar
+GALAXY_TRIP_TIPS_19,System of Eternity will be updated this Friday!

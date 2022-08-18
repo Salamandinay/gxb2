@@ -571,6 +571,20 @@ function HeroAttr:excuteShrine(hero, attribs)
 			end
 		end
 	end
+
+	if hero.galaxyData then
+		for k, v in pairs(hero.galaxyData) do
+			local preKey = string.sub(k, 1, -2)
+
+			if attribs[preKey] then
+				attribs[preKey] = attribs[preKey] * v
+			elseif attribs[k] then
+				attribs[k] = attribs[k] + v
+			elseif not attribs[k] then
+				attribs[k] = v
+			end
+		end
+	end
 end
 
 function HeroAttr:getChimeAttr(hero, chimeInfo)

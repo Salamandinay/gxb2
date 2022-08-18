@@ -199,6 +199,8 @@ function GambleTipsWindow:register()
 			self.closeFun()
 		end
 
+		self.btnClose_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
 		xyd.closeWindow("gamble_tips_window")
 	end
 
@@ -214,6 +216,8 @@ function GambleTipsWindow:register()
 		if self.callback_ then
 			self.callback_()
 		end
+
+		self.btnYes_:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 
 		if self.hasSelect_ then
 			xyd.db.misc:setValue({

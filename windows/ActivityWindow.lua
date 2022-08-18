@@ -1766,6 +1766,9 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_GOLDFISH_AWARDS] = function ()
 		return require("app.windows.activity.ActivityGoldfishAwards")
+	end,
+	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION] = function ()
+		return require("app.windows.activity.ActivityGalaxyTripMission")
 	end
 }
 

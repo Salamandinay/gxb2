@@ -146,12 +146,6 @@ function GuideDetailWindow:updateSkill()
 		if tonumber(key) > #self.skillIcons then
 			icon = SkillIcon.new(self.skillGroup)
 			self.skillIcons[key] = icon
-
-			UIEventListener.Get(icon.go).onSelect = function (go, isSelect)
-				if isSelect == false then
-					self:clearSkillTips()
-				end
-			end
 		else
 			icon = self.skillIcons[key]
 		end

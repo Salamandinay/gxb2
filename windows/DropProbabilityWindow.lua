@@ -60,6 +60,9 @@ function DropProbabilityWindow:initItemGroupOptionalTreasureChest()
 
 	if type == xyd.ItemType.HERO_RANDOM_DEBRIS and xyd.tables.itemTable:getGroup(self.params_.itemId) == xyd.PartnerGroup.TIANYI then
 		local sommum_group7_ids = xyd.tables.miscTable:split2num("partner_group7_summon", "value", "|")
+		local itemsListNew = {}
+		local arr = xyd.tables.miscTable:split2Cost("partner_group7_summon_time", "value", "|#")
+		local nowTime = xyd.getServerTime()
 		local items = {}
 
 		for i, summon_id in pairs(sommum_group7_ids) do
@@ -70,10 +73,18 @@ function DropProbabilityWindow:initItemGroupOptionalTreasureChest()
 				for k, id in pairs(showAwards.list) do
 					local item = xyd.tables.dropboxShowTable:getItem(id)
 
-					table.insert(items, {
-						itemID = item[1],
-						itemNum = item[2]
-					})
+					for j = 1, #arr do
+						if arr[j][1] == item[1] and nowTime < arr[j][2] then
+							break
+						end
+
+						if j == #arr then
+							table.insert(items, {
+								itemID = item[1],
+								itemNum = item[2]
+							})
+						end
+					end
 				end
 			end
 		end

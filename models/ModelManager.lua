@@ -98,6 +98,7 @@ function ModelManager:ctor()
 	metatable.gameAssistant = "app.models.GameAssistant"
 	metatable.quickFormation = "app.models.QuickFormation"
 	metatable.growthDiary = "app.models.GrowthDiary"
+	metatable.galaxyTrip = "app.models.GalaxyTrip"
 end
 
 function ModelManager:reset()

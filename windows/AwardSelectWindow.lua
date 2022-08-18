@@ -93,6 +93,26 @@ function AwardSelectWindow:initItemGroup()
 		itemsList = xyd.tables.giftBoxOptionalTable:getItems(self.params_.itemID)
 	end
 
+	local itemsListNew = {}
+	local arr = xyd.tables.miscTable:split2Cost("partner_group7_summon_time", "value", "|#")
+	local nowTime = xyd.getServerTime()
+
+	for i = 1, #itemsList do
+		local itemID = itemsList[i].itemID
+
+		for j = 1, #arr do
+			if arr[j][1] == itemID and nowTime < arr[j][2] then
+				break
+			end
+
+			if j == #arr then
+				table.insert(itemsListNew, itemsList[i])
+			end
+		end
+	end
+
+	itemsList = itemsListNew
+
 	self.wrapContent:setInfos(itemsList, {})
 
 	for i = 1, #itemsList do

@@ -1377,7 +1377,8 @@ function BattleFormationWindow:onClickBattleBtn()
 		[xyd.BattleType.GAME_ASSISTANT_ARENA] = self.gameAssistantArenaBattle,
 		[xyd.BattleType.GAME_ASSISTANT_GUILD] = self.gameAssistantGuildBattle,
 		[xyd.BattleType.ACTIVITY_SPFARM] = self.spfarmFight,
-		[xyd.BattleType.QUICK_TEAM_SET] = self.quickSetTeam
+		[xyd.BattleType.QUICK_TEAM_SET] = self.quickSetTeam,
+		[xyd.BattleType.GALAXY_TRIP_BATTLE] = self.galaxyTripBattle
 	}
 
 	if battleFunc[self.battleType] then
@@ -2425,9 +2426,6 @@ end
 function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 	local params_data = self.params_
 	local pet_data = self.pet
-
-	dump(partnerParams, "Test1")
-
 	local isHasFakePartner = false
 
 	for i, info in pairs(partnerParams) do
@@ -2446,8 +2444,6 @@ function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 			isHasFakePartner = true
 		end
 	end
-
-	dump(partnerParams, "Test2")
 
 	if params_data.type == 1 then
 		if isHasFakePartner then
@@ -2476,6 +2472,14 @@ function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 	else
 		xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
 	end
+end
+
+function BattleFormationWindow:galaxyTripBattle(partnerParams)
+	local params_data = self.params_
+	local pet_data = self.pet
+
+	xyd.WindowManager.get():closeWindow("galaxy_trip_fight_window")
+	xyd.models.galaxyTrip:setGridBattleFight(params_data.gridId, partnerParams, pet_data)
 end
 
 function BattleFormationWindow:initLabel()
