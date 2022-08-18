@@ -202,7 +202,7 @@ function StarrySelectAwardWindow:updateContent()
 		end
 	end
 
-	xyd.setUITextureByNameAsync(self.bg, "starry_bg_jlxz_" .. self.curSelectAwardIndex)
+	xyd.setUITextureByNameAsync(self.bg, "starry_bg_jlxz_group_" .. self.curSelectAwardIndex)
 end
 
 return StarrySelectAwardWindow

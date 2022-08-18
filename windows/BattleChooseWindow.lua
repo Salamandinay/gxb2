@@ -530,7 +530,6 @@ function BattleChooseWindow:layoutPVE()
 			self.tmeTrial.gameObject:SetActive(true)
 
 			local data = xyd.models.trial:getData()
-			local boss_id = data.boss_id
 
 			if data.is_open and data.is_open ~= 0 then
 				self.labelTimeTrial.text = __("TRIAL_CLOSE_COUNTDOWN")

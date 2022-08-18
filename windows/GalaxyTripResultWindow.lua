@@ -335,7 +335,7 @@ function GalaxyTripResultWindow:updateShow(index)
 		self.label1.text = __("GALAXY_TRIP_TEXT16", index)
 
 		if self.defaultStates[index] == xyd.GalaxyTripGridStateType.CAN_GET then
-			self.label2.text = __("GALAXY_TRIP_TEXT17", xyd.secondsToString(self.timeArr[index], xyd.SECOND2STR.HOUR_MIN))
+			self.label2.text = __("GALAXY_TRIP_TEXT17", xyd.secondsToString(self.timeArr[index], xyd.SecondsStrType.NORMAL))
 		else
 			self.label2.text = " "
 		end

@@ -241,7 +241,7 @@ function GalaxyTripFightWindow:initUp()
 		local allGetNum = xyd.models.galaxyTrip:getGalaxyGridAllGetNum(self.ballId)
 		local progressValue = xyd.models.galaxyTrip:getCurBallProress(self.ballId)
 
-		if arr[1] < progressValue then
+		if arr[1] <= progressValue then
 			local buffValue = math.min((allGetNum - math.floor(arr[1] * allNum)) * arr[2], arr[3]) * 100 .. "%"
 
 			dump(buffValue)

@@ -957,21 +957,17 @@ function GridClass:updateGridState()
 
 					if disTime > 0 then
 						self.timeCount = import("app.components.CountDown").new(self.timeShow)
-						local secondStrType = xyd.SECOND2STR.HOUR_MIN
-
-						if disTime < 60 then
-							secondStrType = xyd.SECOND2STR.MIN_SEC
-						end
+						local secondStrType = xyd.SecondsStrType.NORMAL
 
 						self.timeCount:setInfo({
 							duration = disTime,
 							callback = function ()
-								self.timeShow.text = "00:00"
+								self.timeShow.text = "00:00:00"
 							end,
 							secondStrType = secondStrType
 						})
 					else
-						self.timeShow.text = "00:00"
+						self.timeShow.text = "00:00:00"
 					end
 				end
 

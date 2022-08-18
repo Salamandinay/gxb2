@@ -186,7 +186,7 @@ function CommonRankWithAwardWindow:initRankList()
 	NGUITools.DestroyChildren(self.selfRankRoot_.transform)
 
 	local rankInfo = self.rankData
-	self.rank_data_ = rankInfo.list
+	self.rank_data_ = rankInfo.list or {}
 	self.self_data_ = {
 		rank = rankInfo.self_rank,
 		score = rankInfo.self_score,
