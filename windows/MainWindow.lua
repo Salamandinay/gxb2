@@ -929,12 +929,17 @@ function MainWindow:initOnceActivityInfo()
 end
 
 function MainWindow:initLayout()
+	self:reSize()
 	self:initResItem()
 	self:initTopBtnGroup()
 	self:initBottomGroup()
 	self:initAvatar()
 	self:initPlayerInfo()
 	self:initPartnerSwitchArrow()
+end
+
+function MainWindow:reSize()
+	self:resizePosY(self.arrGroup.gameObject, 360, 433)
 end
 
 function MainWindow:initAvatar()

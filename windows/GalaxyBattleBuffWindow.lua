@@ -37,12 +37,18 @@ function GalaxyBattleBuffWindow:initUIComponent()
 	self.labelTitle.text = __("GALAXY_TRIP_TEXT40")
 	local eventIDs = xyd.tables.galaxyTripEventTable:getIDsByMap(self.mapID)
 	local limit = 0
+	local helpArr = {}
 
 	for i = 1, #eventIDs do
-		local skillID = xyd.tables.galaxyTripEventTable:getSkillId(eventIDs[i])
+		local eventType = xyd.tables.galaxyTripEventTable:getType(eventIDs[i])
 
-		if skillID and skillID > 0 then
+		if xyd.models.galaxyTrip:getIsBuff(eventType) then
 			limit = limit + xyd.tables.galaxyTripEventTable:getAmount(eventIDs[i])
+			local skillID = xyd.tables.galaxyTripEventTable:getSkillId(eventIDs[i])
+
+			if skillID and not helpArr[skillID] then
+				helpArr[skillID] = 1
+			end
 		end
 	end
 
@@ -52,7 +58,7 @@ function GalaxyBattleBuffWindow:initUIComponent()
 	for i = 1, #self.skillIDs do
 		local skillID = self.skillIDs[i]
 
-		if skillID and skillID > 0 then
+		if skillID and skillID > 0 and helpArr[skillID] then
 			activeNum = activeNum + 1
 			local effectID = xyd.tables.skillTable:getEffects(skillID)[1][1]
 			local buff = xyd.tables.effectTable:getType(effectID)

@@ -19,7 +19,7 @@ function GalaxyTrip:onRegister()
 	self:registerEvent(xyd.event.GALAXY_TRIP_SET_TEAMS, self.onSetGalaxyTripFormation, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_GET_RANK_LIST, self.onGetRankInfo, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_STOP_BACK_GRID, self.onGalaxyTripStopBackGrid, self)
-	self:registerEvent(xyd.event.FUNCTION_OPEN, function (event)
+	self:registerEvent(xyd.event.FUNCTION_OPEN_MODEL, function (event)
 		local funID = event.data.functionID
 
 		if funID == xyd.FunctionID.GALAXY_TRIP then
@@ -202,6 +202,10 @@ function GalaxyTrip:openBallMapWindow(ballId)
 
 		xyd.Backend.get():request(xyd.mid.GALAXY_TRIP_SELECT_MAP, msg)
 	end
+end
+
+function GalaxyTrip:getMainInfo()
+	return self.mainInfo
 end
 
 function GalaxyTrip:getGalaxyTripGetMainAwards()
@@ -766,7 +770,37 @@ end
 
 function GalaxyTrip:onSetGalaxyTripFormation(event)
 	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.mainInfo.teams and #self.mainInfo.teams > 0 then
+		for i = 1, 3 do
+			local team = self.mainInfo.teams[i]
+
+			if team and team.partners then
+				for key, value in pairs(team.partners) do
+					local partnerID = value.partner_id
+					local partner = xyd.models.slot:getPartner(partnerID)
+
+					partner:setLock(0, xyd.PartnerFlag.GALAXY_TRIP_FORMATION)
+					dump(partnerID)
+				end
+			end
+		end
+	end
+
 	self.mainInfo.teams = data.teams
+
+	for i = 1, 3 do
+		local team = self.mainInfo.teams[i]
+
+		if team and team.partners then
+			for key, value in pairs(team.partners) do
+				local partnerID = value.partner_id
+				local partner = xyd.models.slot:getPartner(partnerID)
+
+				partner:setLock(1, xyd.PartnerFlag.GALAXY_TRIP_FORMATION)
+			end
+		end
+	end
 end
 
 function GalaxyTrip:getBuffPlaceAddNum()
@@ -1262,24 +1296,44 @@ function GalaxyTrip:checkRedPoint()
 end
 
 function GalaxyTrip:getIsHasCanGetPoint()
+	local isHasRed = false
+
 	if self.mainInfo then
 		local curMapId = self.mainInfo.map_id
 
 		if curMapId and curMapId > 0 then
-			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(curMapId)
-			local ballMap = ballMapInfo.map
+			if self.mainInfo.is_batch and self.mainInfo.is_batch == 1 then
+				if self.mainInfo.ids then
+					local isBatchAllCheck = true
 
-			for i in pairs(ballMap) do
-				local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curMapId)
+					for i in pairs(self.mainInfo.ids) do
+						if not self.mainInfo.awards or not self.mainInfo.awards[i] or self.mainInfo.awards[i] ~= 1 then
+							isBatchAllCheck = false
 
-				if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
-					return true
+							break
+						end
+					end
+
+					if isBatchAllCheck then
+						isHasRed = true
+					end
+				end
+			else
+				local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(curMapId)
+				local ballMap = ballMapInfo.map
+
+				for i in pairs(ballMap) do
+					local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curMapId)
+
+					if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
+						isHasRed = true
+					end
 				end
 			end
 		end
 	end
 
-	return false
+	return isHasRed
 end
 
 return GalaxyTrip

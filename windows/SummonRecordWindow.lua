@@ -413,7 +413,8 @@ function SummonRecordWindowIconItem:updateItemIcon(itemId, num)
 			scale = 0.7962962962962963,
 			noClick = true,
 			itemID = itemId,
-			num = num
+			num = num,
+			panel = self.parent.parent.scrollPanel
 		})
 	else
 		self.itemIcon = ItemIcon.new(self.icon)
@@ -422,7 +423,8 @@ function SummonRecordWindowIconItem:updateItemIcon(itemId, num)
 			scale = 0.7962962962962963,
 			noClick = true,
 			itemID = itemId,
-			num = num
+			num = num,
+			panel = self.parent.parent.scrollPanel
 		})
 	end
 
@@ -440,7 +442,8 @@ function SummonRecordWindowIconItem:updatePartnerIcon(partnerID, isPartner, num)
 			scale = 0.7962962962962963,
 			noClick = true,
 			itemID = partnerID,
-			num = num
+			num = num,
+			panel = self.parent.parent.scrollPanel
 		})
 
 		if isPartner then
@@ -459,7 +462,8 @@ function SummonRecordWindowIconItem:updatePartnerIcon(partnerID, isPartner, num)
 			scale = 0.7962962962962963,
 			noClick = true,
 			itemID = partnerID,
-			num = num
+			num = num,
+			panel = self.parent.parent.scrollPanel
 		})
 
 		if isPartner then

@@ -113,6 +113,8 @@ function ChoosePartnerWithFilterWindow:addPartnerToContainer(partner)
 				xyd.showToast(__("DATE_LOCK_FAIL"))
 			elseif xyd.checkQuickFormation(partner) then
 				xyd.showToast(__("QUICK_FORMATION_TEXT21"))
+			elseif xyd.checkGalaxyFormation(partner) then
+				xyd.showToast(__("GALAXY_TRIP_TIPS_20"))
 			else
 				local str = __("IF_UNLOCK_HERO_3")
 

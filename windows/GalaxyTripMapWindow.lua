@@ -942,7 +942,7 @@ function GridClass:updateGridState()
 					self.timeShow.text = ""
 
 					if self.eventType == xyd.GalaxyTripGridEventType.BOX or self.eventType == xyd.GalaxyTripGridEventType.EMPTY or self.eventType == xyd.GalaxyTripGridEventType.BUFF_4 or self.eventType == xyd.GalaxyTripGridEventType.BUFF_5 or self.eventType == xyd.GalaxyTripGridEventType.BUFF_6 or self.eventType == xyd.GalaxyTripGridEventType.BUFF_7 or self.eventType == xyd.GalaxyTripGridEventType.BUFF_8 then
-						self.timeShow.text = "00:00"
+						self.timeShow.text = "00:00:00"
 					end
 				elseif gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
 					local next_time = xyd.models.galaxyTrip:getGalaxyTripGetMainNextTime()

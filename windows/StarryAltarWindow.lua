@@ -368,6 +368,12 @@ function StarryAltarWindow:checkSummonId()
 
 	if not self.chooseIndex or self.chooseIndex == 0 then
 		self.chooseIndex = #StarryAltarTable:getOptionalAwards(self.summonOneId)
+
+		xyd.models.summon:setStarrySummonAward({
+			self.summonOneId
+		}, {
+			self.chooseIndex
+		})
 	end
 
 	if self.chooseMode == 1 then

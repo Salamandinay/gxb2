@@ -84,6 +84,12 @@ function GalaxyStartWindow:layout()
 	end
 
 	self.timeGroupLayout:Reposition()
+
+	local mainInfo = xyd.models.galaxyTrip:getMainInfo()
+
+	if not mainInfo then
+		xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
+	end
 end
 
 function GalaxyStartWindow:registerEvent()
@@ -97,6 +103,33 @@ function GalaxyStartWindow:registerEvent()
 		xyd.FunctionID.STARRY_ALTAR,
 		xyd.FunctionID.GALAXY_TRIP
 	}
+
+	self.eventProxy_:addEventListener(xyd.event.GALAXY_TRIP_GET_MAIN_INFO, function ()
+		local leftTime = xyd.models.galaxyTrip:getLeftTime()
+
+		if leftTime <= 2 * xyd.DAY_TIME and leftTime > 0 then
+			self.labelWillFinish.text = __("SCHOOL_PRACTICE_FINISH")
+
+			self.labelWillFinish:SetActive(true)
+
+			local action = self:getSequence()
+			local transform = self.labelWillFinish.gameObject.transform
+			local position = transform.localPosition
+			local x = position.x
+			local y = position.y
+
+			action:Append(transform:DOScale(Vector3(1.2, 1.2, 1.2), 0.5))
+			action:Append(transform:DOScale(Vector3(1, 1, 1), 0.5))
+			action:Append(transform:DOScale(Vector3(1.2, 1.2, 1.2), 0.5))
+			action:Append(transform:DOScale(Vector3(1, 1, 1), 0.5))
+			action:SetLoops(-1)
+		else
+			self.labelWillFinish:SetActive(false)
+		end
+
+		self.countdown:setCountDownTime(leftTime)
+		self.timeGroupLayout:Reposition()
+	end)
 
 	for i = 1, 2 do
 		UIEventListener.Get(self["group" .. tostring(i)]).onClick = function ()
