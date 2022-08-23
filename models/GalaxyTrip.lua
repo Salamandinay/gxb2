@@ -831,6 +831,34 @@ function GalaxyTrip:getBuffPlaceAddNum()
 	return placeAdd
 end
 
+function GalaxyTrip:getBuffExploreTimeCut()
+	local text = ""
+	local timecut = 0
+	local placeAdd = 0
+	local teams = self:getGalaxyTripGetMainTeamsInfo()
+
+	if teams and teams[2] and teams[2].partners then
+		local totalAwakeStar = 0
+
+		for j = 1, 6 do
+			local index = j
+
+			if teams[2].partners[index] then
+				local partner = xyd.models.slot:getPartner(tonumber(teams[2].partners[index].partner_id))
+				local star = partner:getStar()
+
+				if star > 10 then
+					totalAwakeStar = totalAwakeStar + star - 10
+				end
+			end
+		end
+
+		text, timecut, placeAdd = xyd.tables.galaxyTripTeamTable:getDesc(totalAwakeStar, 2)
+	end
+
+	return timecut
+end
+
 function GalaxyTrip:getPalningNum()
 	local defaultNum = xyd.tables.miscTable:getNumber("galaxy_trip_explore_place", "value") + self:getBuffPlaceAddNum()
 
@@ -1334,6 +1362,9 @@ function GalaxyTrip:getIsHasCanGetPoint()
 	end
 
 	return isHasRed
+end
+
+function GalaxyTrip:countOverDeal()
 end
 
 return GalaxyTrip

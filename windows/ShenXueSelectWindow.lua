@@ -337,9 +337,9 @@ function ShenXueSelectWindow:onClickheroIcon(heroIcon)
 			xyd.alert(xyd.AlertType.TIPS, __("UNLOCK_FAILED"))
 		elseif xyd.checkDateLock(partner) then
 			xyd.alert(xyd.AlertType.TIPS, __("DATE_LOCK_FAIL"))
-		elseif xyd.checkQuickFormation(self.partner_) then
+		elseif xyd.checkQuickFormation(partner) then
 			xyd.showToast(__("QUICK_FORMATION_TEXT21"))
-		elseif xyd.checkGalaxyFormation(self.partner_) then
+		elseif xyd.checkGalaxyFormation(partner) then
 			xyd.showToast(__("GALAXY_TRIP_TIPS_20"))
 		else
 			local str = nil

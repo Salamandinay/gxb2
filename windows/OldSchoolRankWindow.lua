@@ -131,10 +131,10 @@ function OldSchoolRankWindow:initRankInfo()
 		self.self_data_.score = data.self_score
 	end
 
-	for i = 1, #self.rank_data_ do
+	for i = 1, 50 do
 		local info = self.rank_data_[i]
 
-		if info.player_id == xyd.Global.playerID then
+		if info and info.player_id == xyd.Global.playerID then
 			self.self_data_ = {
 				rank = i,
 				score = tonumber(info.score),
@@ -317,20 +317,23 @@ function OldSchoolRankWindow:initRankList()
 	selfRankItem:update(nil, params)
 	selfRankItem:setDepth(15)
 
-	for i = 1, #self.rank_data_ do
+	for i = 1, 50 do
 		local data = self.rank_data_[i]
-		local params = {
-			avatar_id = data.avatar_id,
-			avatar_frame_id = data.avatar_frame_id,
-			player_id = data.player_id,
-			lev = data.lev,
-			player_name = data.player_name,
-			score = tonumber(data.score),
-			server_id = data.server_id,
-			rank = tonumber(i)
-		}
 
-		table.insert(self.rankListInfo_, params)
+		if data and data.player_id and data.player_id > 0 then
+			local params = {
+				avatar_id = data.avatar_id,
+				avatar_frame_id = data.avatar_frame_id,
+				player_id = data.player_id,
+				lev = data.lev,
+				player_name = data.player_name,
+				score = tonumber(data.score),
+				server_id = data.server_id,
+				rank = tonumber(i)
+			}
+
+			table.insert(self.rankListInfo_, params)
+		end
 	end
 
 	self.wrapContent:setInfos(self.rankListInfo_, {})

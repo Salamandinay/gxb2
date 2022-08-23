@@ -621,7 +621,7 @@ function GalaxyTripMapWindow:updatePlaningCon()
 				local eventId = eventArr[1]
 				local eventType = xyd.tables.galaxyTripEventTable:getType(eventId)
 				local time = xyd.tables.galaxyTripEventTypeTable:getTime(eventType)
-				curEndTime = curEndTime + time
+				curEndTime = curEndTime + math.floor(time * (1 - xyd.models.galaxyTrip:getBuffExploreTimeCut()))
 			end
 
 			local disTime = curEndTime - xyd.getServerTime()
@@ -1216,8 +1216,10 @@ function GridClass:getBoderArr()
 	end
 
 	if self.posId % mapSize[1] ~= 0 then
-		for i = 1, evetNeedGrid[2] do
-			table.insert(borderArr, self.posId + evetNeedGrid[1] + mapSize[1] * (i - 1))
+		if (self.posId + evetNeedGrid[1] - 1) % mapSize[1] ~= 0 then
+			for i = 1, evetNeedGrid[2] do
+				table.insert(borderArr, self.posId + evetNeedGrid[1] + mapSize[1] * (i - 1))
+			end
 		end
 	end
 
