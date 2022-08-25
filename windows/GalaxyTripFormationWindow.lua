@@ -264,6 +264,40 @@ function GalaxyTripFormationWindow:onClickBtnSave()
 		return
 	end
 
+	local curMapId = xyd.models.galaxyTrip:getGalaxyTripGetCurMap()
+
+	if curMapId ~= 0 then
+		local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
+
+		if isBatch and isBatch == 1 then
+			xyd.alertTips(__("GALAXY_TRIP_TIPS_14"))
+
+			return
+		end
+
+		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(curMapId)
+
+		if ballMapInfo then
+			local ballMap = ballMapInfo.map
+
+			for i in pairs(ballMap) do
+				local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curMapId)
+
+				if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
+					xyd.alertTips(__("GALAXY_TRIP_TIPS_17"))
+
+					return
+				end
+
+				if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
+					xyd.alertTips(__("GALAXY_TRIP_TIPS_16"))
+
+					return
+				end
+			end
+		end
+	end
+
 	local formation = {
 		pet_ids = self.pets,
 		partners = formationIds

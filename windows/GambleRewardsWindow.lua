@@ -50,6 +50,7 @@ function GambleRewardsWindow:initWindow()
 
 	local winTrans = self.window_.transform
 	self.content_ = winTrans:Find("content")
+	self.addComponentPart_ = winTrans:NodeByName("addComponentPart").gameObject
 	self.scrollView_ = self.content_:GetComponent(typeof(UIScrollView))
 	self.gridOfItems_ = winTrans:ComponentByName("content/itemsGrid", typeof(UIGrid))
 	self.item_root_ = winTrans:NodeByName("content/item_root").gameObject
@@ -81,6 +82,12 @@ function GambleRewardsWindow:initWindow()
 	xyd.setUITextureByNameAsync(self.textImg, "huodewupin_" .. xyd.Global.lang, true)
 	self:layout()
 	self:register()
+end
+
+function GambleRewardsWindow:setBtnEnable(state)
+	self.btnBuy_.transform:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = state
+	self.btnBuy2_.transform:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = state
+	self.btnSure_.transform:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = state
 end
 
 function GambleRewardsWindow:layout()
@@ -1011,6 +1018,10 @@ function GambleRewardsWindow:excuteCallBack(isCloseAll)
 	if self.callback_ then
 		self.callback_()
 	end
+end
+
+function GambleRewardsWindow:getAddComponentRoot()
+	return self.addComponentPart_
 end
 
 GambleRewardsWindow.WindowType = {

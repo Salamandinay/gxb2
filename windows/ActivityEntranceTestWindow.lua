@@ -134,7 +134,7 @@ function ActivityEntranceTestWindow:playOpenAnimation(callback)
 			self.actionLeftNode:Kill(true)
 		end)
 	end))
-	self:resizePosY(self.bg.gameObject, -77, 13)
+	self:resizePosY(self.bg.gameObject, -77, 9)
 	self:resizePosY(self.leftBg.gameObject, 159, 245)
 	self:resizePosY(self.pveDownGroup.gameObject, -383, -457)
 	self.rightBg:Y(-95 + 76 * self.scale_num_contrary)
@@ -233,6 +233,11 @@ function ActivityEntranceTestWindow:layout()
 	self.showsBtnLabel.text = __("ACTIVITY_ENTRANCE_TEST_TEXT01")
 
 	xyd.setUISpriteAsync(self.logo, nil, "activity_entrance_test_logo_" .. xyd.Global.lang, nil, , true)
+	xyd.db.misc:setValue({
+		value = "1",
+		key = "ActivityFirstRedMark_" .. xyd.ActivityID.ENTRANCE_TEST .. "_" .. self.activityData.end_time
+	})
+	self.activityData:getRedMarkState()
 
 	local partnerID = xyd.tables.miscTable:split2Cost("activity_gacha_partners", "value", "|")
 
@@ -294,7 +299,7 @@ function ActivityEntranceTestWindow:layout()
 	self.showsBtnIconEffect:setInfo("fx_warmup_arena_bubble", function ()
 		self.showsBtnIconEffect:setRenderTarget(self.showsBtnEffect, 1)
 
-		if self.activityData:isCanGuess() then
+		if self.activityData:isCanGuess() and xyd.getServerTime() < self.activityData:getEndTime() - xyd.DAY_TIME then
 			self.showsBtnIconEffect:play("texiao01", 0)
 		else
 			self.showsBtnIconEffect:setToSetupPose()

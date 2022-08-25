@@ -49,7 +49,8 @@ function BattleWinWindow:ctor(name, params)
 		xyd.BattleType.ACADEMY_ASSESSMENT,
 		xyd.BattleType.SHRINE_HURDLE_REPORT,
 		xyd.BattleType.ENTRANCE_TEST_REPORT,
-		xyd.BattleType.GALAXY_TRIP_BATTLE
+		xyd.BattleType.GALAXY_TRIP_BATTLE,
+		xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
 	}
 	self.isReportType = false
 	self.isNewVer = params.is_new
@@ -524,6 +525,11 @@ function BattleWinWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onGalayTripGridBattleReport(data)
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onGalayTripSpecialBossBattleReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -550,7 +556,7 @@ function BattleWinWindow:initLayout()
 			end
 		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM or self.battleType == xyd.BattleType.ENTRANCE_TEST then
 			self.battleDetailBtn.transform:X(260)
-		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE or self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
 			self.battleReviewBtn:SetActive(true)
 			self.battleDetailBtn.transform:X(260)
 		else
@@ -874,6 +880,29 @@ function BattleWinWindow:initLayout()
 
 		if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
 			self.confirmBtnLabel.text = __("GET2")
+		end
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
+		self.pveDropGroup.transform:SetLocalScale(0, 0, 1)
+
+		local seq = DG.Tweening.DOTween.Sequence()
+
+		seq:Insert(0, self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+		self:initHeroChallenge()
+		pveFun()
+
+		local items = self.battleParams.items
+
+		if not items or #items <= 0 then
+			self.labelDamage1.color = Color.New2(960513791)
+			self.labelDamage1.effectColor = Color.New2(4294967295.0)
+			self.labelDamage1.effectStyle = UILabel.Effect.Outline8
+			self.labelDamage1.fontSize = 24
+			self.labelDamage1.text = __("GALAXY_TRIP_TEXT77")
+
+			self.labelDamage2.gameObject:SetActive(false)
+			self.labelDamage1:X(0)
+			self.damageGroup:SetActive(true)
+			self.damageGroup.gameObject:Y(-38)
 		end
 	end
 

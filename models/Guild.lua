@@ -282,6 +282,18 @@ function Guild:getGuildBossTime()
 	end
 end
 
+function Guild:setGuildBossTime(index)
+	local time = xyd.getServerTime()
+
+	if self.self_info_ and self.self_info_.fight_time_patch then
+		self.self_info_.fight_time_patch[index] = time
+	elseif self.self_info_ and not self.self_info_.fight_time_patch then
+		self.self_info_.fight_time_patch = {
+			[index] = time
+		}
+	end
+end
+
 function Guild:getRecruitTime()
 	return self.recruit_time or 0
 end

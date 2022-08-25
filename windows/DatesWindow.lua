@@ -757,6 +757,7 @@ function DatesWindow:updateBg(voice)
 
 	local showID = self.partner:getShowID()
 	showID = showID or self.partner:getTableID()
+	self.showID = showID
 
 	if self.partnerImg:getItemID() == showID then
 		return
@@ -1108,10 +1109,16 @@ function DatesWindow:onclickPartnerImg()
 	end, self.timer)
 
 	self.currentDialog = dialogInfo
+
+	self.partnerImg:effectClickFunction()
 end
 
 function DatesWindow:onTouchShake()
 	if self.isGroupShake then
+		return
+	end
+
+	if xyd.tables.girlsModelTable:getIsSpecail(xyd.tables.partnerPictureTable:getDragonBone(self.showID)) == 1 then
 		return
 	end
 

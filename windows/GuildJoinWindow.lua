@@ -385,6 +385,10 @@ function GuildCreate:createReq()
 		notice = ""
 	end
 
+	if name == __("GUILD_TEXT22") then
+		name = ""
+	end
+
 	if GuildNameChangeWindow:isNameValid(name) then
 		xyd.models.guild:guildCreate(name, self.flag, notice, tonumber(self.language), self.openType_, self.limitPowerNum_, self.choosePolicy_)
 	end

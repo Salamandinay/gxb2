@@ -1378,7 +1378,8 @@ function BattleFormationWindow:onClickBattleBtn()
 		[xyd.BattleType.GAME_ASSISTANT_GUILD] = self.gameAssistantGuildBattle,
 		[xyd.BattleType.ACTIVITY_SPFARM] = self.spfarmFight,
 		[xyd.BattleType.QUICK_TEAM_SET] = self.quickSetTeam,
-		[xyd.BattleType.GALAXY_TRIP_BATTLE] = self.galaxyTripBattle
+		[xyd.BattleType.GALAXY_TRIP_BATTLE] = self.galaxyTripBattle,
+		[xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE] = self.galaxyTripSpecialBossBattle
 	}
 
 	if battleFunc[self.battleType] then
@@ -2480,6 +2481,14 @@ function BattleFormationWindow:galaxyTripBattle(partnerParams)
 
 	xyd.WindowManager.get():closeWindow("galaxy_trip_fight_window")
 	xyd.models.galaxyTrip:setGridBattleFight(params_data.gridId, partnerParams, pet_data)
+end
+
+function BattleFormationWindow:galaxyTripSpecialBossBattle(partnerParams)
+	local params_data = self.params_
+	local pet_data = self.pet
+
+	xyd.WindowManager.get():closeWindow("galaxy_trip_fight_window")
+	xyd.models.galaxyTrip:setSpecialBossBattleFight(params_data.specialId, partnerParams, pet_data, params_data.isBoss)
 end
 
 function BattleFormationWindow:initLabel()

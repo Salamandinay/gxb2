@@ -81,6 +81,12 @@ function GalaxyTripBuffWindow:registerEvent()
 				end
 			end
 
+			if xyd.models.galaxyTrip:isShowTime() then
+				xyd.alertTips(__("GALAXY_TRIP_TIPS_21"))
+
+				return
+			end
+
 			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
 			local ballMap = ballMapInfo.map
 			local msg = messages_pb:galaxy_trip_grid_ids_req()
@@ -190,6 +196,10 @@ function GalaxyTripBuffWindow:updateStateLabel()
 			num = xyd.models.galaxyTrip:getAwardNumWithBuff(award1[i][2], 1)
 		}
 		local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+
+		if self.gridState == xyd.GalaxyTripGridStateType.GET_YET then
+			icon:setChoose(true)
+		end
 	end
 
 	local award2 = xyd.tables.galaxyTripEventTable:getAward2(self.eventId)
@@ -202,6 +212,10 @@ function GalaxyTripBuffWindow:updateStateLabel()
 			num = xyd.models.galaxyTrip:getAwardNumWithBuff(award2[i][2], 2)
 		}
 		local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+
+		if self.gridState == xyd.GalaxyTripGridStateType.GET_YET then
+			icon:setChoose(true)
+		end
 	end
 
 	local award3 = xyd.tables.galaxyTripEventTable:getAward3(self.eventId)
@@ -214,6 +228,10 @@ function GalaxyTripBuffWindow:updateStateLabel()
 			num = award3[i][2]
 		}
 		local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+
+		if self.gridState == xyd.GalaxyTripGridStateType.GET_YET then
+			icon:setChoose(true)
+		end
 	end
 
 	self.centerConLayout2UILayout:Reposition()
@@ -290,6 +308,14 @@ function GalaxyTripBuffWindow:needUpdateShowInfo()
 			self.challengeBtnBoxCollider.enabled = true
 
 			self.stateLabel.gameObject:SetActive(false)
+		elseif self.gridState == xyd.GalaxyTripGridStateType.GET_YET then
+			xyd.applyChildrenGrey(self.challengeBtn)
+
+			self.challengeBtnBoxCollider.enabled = false
+
+			self.stateLabel.gameObject:SetActive(false)
+
+			self.challengeBtnLabel.text = __("GALAXY_TRIP_TEXT74")
 		end
 	end
 end

@@ -166,7 +166,7 @@ function HeroAttr:attr(hero, params)
 					if power > 0 then
 						otherPower = otherPower + power
 					else
-						for j = 1, 3 do
+						for j = 1, 4 do
 							local attr = self.equipTable:getBase(id, j)
 
 							if #attr > 0 then
@@ -491,7 +491,7 @@ function HeroAttr:attr(hero, params)
 				local power = self.equipTable:getPower(id)
 
 				if power and power > 0 then
-					for j = 1, 3 do
+					for j = 1, 4 do
 						local attr = self.equipTable:getBase(id, j)
 
 						if #attr > 0 then

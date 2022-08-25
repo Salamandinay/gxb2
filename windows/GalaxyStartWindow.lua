@@ -50,8 +50,28 @@ function GalaxyStartWindow:layout()
 	self.labelTitle.text = __("GALAXY_TRIP_TEXT72")
 	self.countdown = import("app.components.CountDown").new(self.timeLabel_)
 	local leftTime = xyd.models.galaxyTrip:getLeftTime()
+	local startTime = xyd.models.galaxyTrip:getStartTime()
 
-	if leftTime <= 2 * xyd.DAY_TIME and leftTime > 0 then
+	if startTime < xyd.getServerTime() and xyd.getServerTime() < startTime + 600 then
+		self.countdown:setInfo({
+			duration = startTime + 600 - xyd.getServerTime(),
+			callback = function ()
+				self.countdown:setInfo({
+					duration = xyd.models.galaxyTrip:getLeftTime(),
+					callback = function ()
+					end
+				})
+			end
+		})
+	else
+		self.countdown:setInfo({
+			duration = leftTime,
+			callback = function ()
+			end
+		})
+	end
+
+	if leftTime <= 2 * xyd.DAY_TIME and xyd.DAY_TIME < leftTime and leftTime > 0 then
 		self.labelWillFinish.text = __("SCHOOL_PRACTICE_FINISH")
 
 		self.labelWillFinish:SetActive(true)
@@ -68,8 +88,6 @@ function GalaxyStartWindow:layout()
 		action:Append(transform:DOScale(Vector3(1, 1, 1), 0.5))
 		action:SetLoops(-1)
 	end
-
-	self.countdown:setCountDownTime(leftTime)
 
 	if xyd.Global.lang == "fr_fr" then
 		self.endLabel_.transform:SetSiblingIndex(0)
@@ -134,11 +152,22 @@ function GalaxyStartWindow:registerEvent()
 	for i = 1, 2 do
 		UIEventListener.Get(self["group" .. tostring(i)]).onClick = function ()
 			xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
-			xyd.WindowManager.get():closeWindow(self.name_, nil, , true)
 
 			local winName = winNames[i]
 
-			xyd.WindowManager:get():openWindow(winName)
+			if winName == "galaxy_trip_main_window" then
+				local startTime = xyd.models.galaxyTrip:getGalaxyTripGetMainStartTime()
+
+				if xyd.getServerTime() - startTime < 600 or xyd.models.galaxyTrip:getLeftTime() <= 0 then
+					xyd.alertTips(__("GALAXY_TRIP_TIPS_15"))
+
+					return
+				end
+			end
+
+			xyd.WindowManager:get():openWindow(winName, {}, function ()
+				xyd.WindowManager.get():closeWindow(self.name_, nil, , true)
+			end)
 		end
 	end
 end

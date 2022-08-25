@@ -144,18 +144,21 @@ function PartnerStationBattleDetailItem:registerEvent()
 		local table_id = np.tableID
 		local params = {
 			hide_btn = true,
+			hideBtnCheck = true,
 			partner = self.info,
 			table_id = table_id,
 			partner_list = self.list,
 			index = self.index
 		}
 
-		xyd.WindowManager.get():openWindow("activity_entrance_test_partner_window", params)
+		xyd.WindowManager.get():openWindow("partner_info", {
+			partner = self.info
+		})
 	end
 end
 
 function PartnerStationBattleDetailItem:layout()
-	self.btnAttrDetail:SetActive(false)
+	self.btnAttrDetail:SetActive(true)
 
 	local partner = self.info
 	local info = partner:getInfo()

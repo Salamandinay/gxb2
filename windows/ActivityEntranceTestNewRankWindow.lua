@@ -197,7 +197,7 @@ function ActivityEntranceTestNewRankWindowItem:update(index, info)
 	self.go:SetActive(true)
 
 	self.labelPlayerName.text = data.player_name
-	self.labelDesc.text = __("WORLD_BOSS_DESC_TEXT")
+	self.labelDesc.text = __("GACHA_LIMIT_BOSS_LABEL_1")
 	self.labelLevel.text = data.lev
 	self.labelScore.text = tostring(data.score)
 

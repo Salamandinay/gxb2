@@ -22,7 +22,7 @@ id,name,from,content
 21,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Sceau*1, Orbe Élémentaire*100 et Épuisette*2, voici vos récompenses, veuillez les récupérer !"
 22,Récompense de Jobs,Courrier du Système,"Félicitations ! Vous avez fini un Job {1} étoiles durant l'événement, voici vos récompenses."
 23,Avis de Recharge,Courrier du Système,"Merci d'avoir acheté {1}, vos récompenses ont été envoyés dans votre sac."
-24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150, Canne à pêche*5, Pièce de Fortune*2, Grue Jadéite Vert*5 et Grue Jadéite Jaune*1, voici vos récompenses, veuillez les récupérer~"
+24,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150, Bouteille Usée*5 et Pièce de Fortune*2.\nVoici vos récompenses, veuillez les récupérer !"
 25,Bataille dans l'Arène,Courrier du Système,Félicitations ! Vous avez atteint un objectif durant l'événement. Voici vos récompenses.
 26,Abonnement,Pass de Pièces Hebdomadaire,Félicitations ! Vous avez désormais un Pass de Pièces Hebdomadaire. Votre butin de Pièces augmentera de 100% pour les prochaines 168 heures. Ce bonus peut-être combiné avec celui des bénéfices VIP
 27,L'abonnement se termine,Pass de Pièces Hebdomadaire,Votre Pass de Pièces Hebdomadaire se termine aujourd'hui. Veuillez renouveler votre abonnement pour continuer à profiter des bénéfices. Les Pièces du butin sont augmentés de 100% lorsque l'abonnement est actif !
@@ -154,7 +154,7 @@ Veuillez récupérer vos récompenses, Senpai~"
 149,Récompense de Débutant (1),Courrier du Système,"Senpai ! Félicitations ! Vous avez terminé les Tâches de 7 jours, voici les récompenses non collectées, n'oubliez pas de les récupérer !"
 150,Récompense de Débutant (2),Courrier du Système,"Félicitations Senpai ! Vous avez obtenu {1} point(s) dans l'événement de Tâches de 7 jours, voici vos récompenses non collectées, n'oubliez pas de les récupérer !"
 151,Récompense du Périple de Lavli,Courrier d'Événement,"Félicitations ! Vous avez collecté {1} Corails dans Le Périple de Lavli. Voici vos récompenses, veuillez les récupérer~"
-152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150, Canne à pêche*5, Pièce de Fortune*2, Grue Jadéite Vert*5 et Grue Jadéite Jaune*1, voici vos récompenses, veuillez les récupérer~"
+152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150, Bouteille Usée*5 et Pièce de Fortune*2.\nVoici vos récompenses, veuillez les récupérer !"
 153,Récupération d'objet d'événement,Courrier du Système,"
 Bonjour Senpai,
 L\'événement - {1} est à présent terminé.
@@ -304,3 +304,7 @@ Si vous avez des questions n\'hésitez pas à contacter Yuki."
 247,Îles Célestes,Courrier du Système,"Félicitations Senpai ! Votre Guilde a obtenu {1} Points d'Activité, voici vos récompenses, veuillez les récupérer~"
 248,Bon Plan Estival,Courrier du Système,"Bonjour Senpai,\n{1} Pièces d'Écaille supplémentaires vous ont été automatiquement envoyées dans votre sac.\nN'oubliez pas les utiliser pour échanger contre des récompenses~"
 249,Voyage Galactique,Courrier du Système,"Félicitations Senpai ! Vous vous êtes classé {1}e dans Voyage Galactique durant cette saison.\nVoici les récompenses, veuillez les récupérer~"
+250,階段目標達成獎勵,Courrier du Système,恭喜學長達成新生邀請 {1} 階段目標，獲得以下獎勵！
+251,初次綁定獎勵,Courrier du Système,恭喜學長完成新生邀請綁定，獲得以下獎勵！快去和前輩打個招呼吧~
+252,新生邀請獎勵,Courrier du Système,新生{1} 達成{2}階段目標，給學長帶來以下獎勵！
+253,每週分享獎勵,Courrier du Système,感謝學長本週完成首次分享，獎勵請見附件！

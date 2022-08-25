@@ -275,9 +275,9 @@ function ActivityStarAltarMission:onClickNav(index)
 		self.chooseIndex_ = index
 
 		for i = 1, 2 do
-			self["navSelect" .. i]:SetActive(i == index)
+			self["navSelect" .. i]:SetActive(i ~= index)
 
-			if i == index then
+			if i ~= index then
 				self["navLabel" .. i].color = Color.New2(3907117055.0)
 			else
 				self["navLabel" .. i].color = Color.New2(1010253567)

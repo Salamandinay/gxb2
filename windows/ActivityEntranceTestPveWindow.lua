@@ -1,6 +1,7 @@
 local ActivityEntranceTestPveWindow = class("ActivityEntranceTestPveWindow", import(".BaseWindow"))
 local CountDown = import("app.components.CountDown")
 local ItemRender = class("ItemRender", import("app.components.CopyComponent"))
+local HeroIcon = import("app.components.HeroIcon")
 
 function ActivityEntranceTestPveWindow:ctor(name, params)
 	ActivityEntranceTestPveWindow.super.ctor(self, name, params)
@@ -61,6 +62,12 @@ function ActivityEntranceTestPveWindow:getUIComponent()
 	self.timeText = self.timeCon:ComponentByName("timeText", typeof(UILabel))
 	self.endText = self.timeCon:ComponentByName("endText", typeof(UILabel))
 	self.heroItemRender = self.downCon:NodeByName("heroItemRender").gameObject
+	self.groupPreview_ = self.groupAction:NodeByName("groupPreview_").gameObject
+	self.labelPreviewTitle_ = self.groupPreview_:ComponentByName("labelPreviewTitle_", typeof(UILabel))
+	self.groupPreviewHeros_ = self.groupPreview_:NodeByName("groupPreviewHeros_").gameObject
+	self.groupPreviewHeros_UILayout = self.groupPreview_:ComponentByName("groupPreviewHeros_", typeof(UILayout))
+	self.groupPreviewTipsCancel = self.groupAction:NodeByName("groupPreviewTipsCancel").gameObject
+	self.groupPreviewBg_ = self.groupPreview_:ComponentByName("e:Image", typeof(UIWidget))
 end
 
 function ActivityEntranceTestPveWindow:reSize()
@@ -84,6 +91,7 @@ function ActivityEntranceTestPveWindow:registerEvent()
 			self.testType = self.activityData:getPveMaxStage()
 		end
 
+		self.initEnemies = false
 		self.isFirstPass = false
 
 		self:updateShow()
@@ -95,6 +103,7 @@ function ActivityEntranceTestPveWindow:registerEvent()
 			self.testType = self.testType + 1
 		end
 
+		self.initEnemies = false
 		self.isFirstPass = false
 
 		self:updateShow()
@@ -148,6 +157,11 @@ function ActivityEntranceTestPveWindow:registerEvent()
 			end
 		})
 	end)
+	UIEventListener.Get(self.personClickCon.gameObject).onClick = handler(self, self.showEnemy)
+	UIEventListener.Get(self.groupPreviewTipsCancel.gameObject).onClick = handler(self, function ()
+		self.groupPreview_:SetActive(false)
+		self.groupPreviewTipsCancel:SetActive(false)
+	end)
 end
 
 function ActivityEntranceTestPveWindow:layout()
@@ -157,6 +171,7 @@ function ActivityEntranceTestPveWindow:layout()
 	self.overChallengeText.text = __("ACTIVITY_NEW_WARMUP_TEXT19")
 	self.fakeFightText.text = __("ACTIVITY_NEW_WARMUP_TEXT20")
 	self.fightText.text = __("ACTIVITY_NEW_WARMUP_TEXT21")
+	self.labelPreviewTitle_.text = __("ENEMY_PREVIEW")
 
 	self.fightBtnLayoutConUILayout:Reposition()
 
@@ -303,6 +318,41 @@ function ActivityEntranceTestPveWindow:getTestType()
 	return self.testType
 end
 
+function ActivityEntranceTestPveWindow:showEnemy()
+	if not self.initEnemies then
+		local bossTable = xyd.tables.activityWarmupArenaBossTable
+		local battleId = bossTable:getBattleId(self.testType)
+		local enemies = xyd.tables.battleTable:getMonsters(battleId)
+
+		if #enemies > 0 then
+			self.groupPreviewTipsCancel:SetActive(true)
+			NGUITools.DestroyChildren(self.groupPreviewHeros_.transform)
+
+			for i = 1, #enemies do
+				local tableID = enemies[i]
+				local id = xyd.tables.monsterTable:getPartnerLink(tableID)
+				local lev = xyd.tables.monsterTable:getShowLev(tableID)
+				local icon = HeroIcon.new(self.groupPreviewHeros_)
+
+				icon:setInfo({
+					noClick = true,
+					scale = 0.7037037037037037,
+					tableID = id,
+					lev = lev
+				})
+			end
+
+			self.groupPreview_:SetActive(true)
+			self.groupPreviewHeros_UILayout:Reposition()
+		end
+
+		self.initEnemies = true
+	else
+		self.groupPreview_:SetActive(true)
+		self.groupPreviewTipsCancel:SetActive(true)
+	end
+end
+
 function ItemRender:ctor(go, parent)
 	ItemRender.super.ctor(self, go)
 
@@ -385,6 +435,8 @@ function ItemRender:setInfo(info)
 			self.lockEffect:SetActive(true)
 		end
 	end
+
+	self.heroIcon:setMask(self.parent.activityData:getPvePartnerIsLock(self.parent:getTestType()))
 end
 
 return ActivityEntranceTestPveWindow

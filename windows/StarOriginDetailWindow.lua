@@ -11,6 +11,8 @@ function StarOriginDetailWindow:ctor(name, params)
 	StarOriginDetailWindow.super.ctor(self, name, params)
 
 	self.partnerID = params.partnerID
+	self.partner = params.partner
+	self.onlySee = params.onlySee
 	self.isQuickFormation = params.isQuickFormation
 	self.starImgNameByState = {
 		"star_origin_bg_xy_sj_zh",
@@ -104,7 +106,10 @@ function StarOriginDetailWindow:registerEvent()
 end
 
 function StarOriginDetailWindow:layout()
-	self.partner = xyd.models.slot:getPartner(self.partnerID)
+	if not self.partner then
+		self.partner = xyd.models.slot:getPartner(self.partnerID)
+	end
+
 	self.group = self.partner:getGroup()
 	self.partnerTableID = self.partner:getTableID()
 	self.listTableID = xyd.tables.partnerTable:getStarOrigin(self.partnerTableID)
@@ -138,6 +143,12 @@ function StarOriginDetailWindow:layout()
 
 	self.winTop:setItem(items)
 	self.winTop:hideBg()
+
+	if self.onlySee then
+		self.btnReset:SetActive(false)
+		self.btnHelp:SetActive(false)
+		self.winTop:SetActive(false)
+	end
 
 	if not self.firstInit then
 		self.firstInit = true

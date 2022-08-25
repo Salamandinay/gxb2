@@ -27,7 +27,11 @@ function ActivityStarAltarMissionData:getRedMarkState()
 		return false
 	end
 
-	return self:getRedStateShop() or self:getRedStateMission()
+	local flag = self:getRedStateShop() or self:getRedStateMission()
+
+	xyd.models.redMark:setMark(xyd.RedMarkType.NEW_PARTNER_WARMUP_ACTIVITIES, flag)
+
+	return flag
 end
 
 function ActivityStarAltarMissionData:getRedStateShop()

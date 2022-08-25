@@ -116,14 +116,13 @@ function GalaxyTripMapWindow:registerEvent()
 		if self.isPlanReady then
 			self:setIsOpenPlanReady(false)
 		else
-			xyd.openWindow("galaxy_trip_main_window", {})
-			self:close()
+			xyd.openWindow("galaxy_trip_main_window", {}, function ()
+				self:close()
+			end)
 		end
 	end)
 	UIEventListener.Get(self.lineBtn.gameObject).onClick = handler(self, function ()
 		local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
-
-		print("isBatch:", isBatch)
 
 		if isBatch and isBatch == 1 then
 			xyd.alertTips(__("GALAXY_TRIP_TIPS_14"))
@@ -163,7 +162,6 @@ function GalaxyTripMapWindow:registerEvent()
 	UIEventListener.Get(self.buffBtn.gameObject).onClick = handler(self, function ()
 		local mapID = self.ballId
 
-		dump(xyd.models.galaxyTrip:getBallInfo(self.ballId).god_skills)
 		xyd.openWindow("galaxy_battle_buff_window", {
 			mapID = self.ballId,
 			skillIDs = xyd.models.galaxyTrip:getBallInfo(self.ballId).god_skills or {}
@@ -183,34 +181,6 @@ function GalaxyTripMapWindow:registerEvent()
 		xyd.openWindow("common_shop_window", params)
 	end)
 	UIEventListener.Get(self.teamBtn.gameObject).onClick = handler(self, function ()
-		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
-		local ballMap = ballMapInfo.map
-
-		for i in pairs(ballMap) do
-			local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, self.ballId)
-
-			if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
-				xyd.alertTips(__("GALAXY_TRIP_TIPS_17"))
-
-				return
-			end
-
-			if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
-				xyd.alertTips(__("GALAXY_TRIP_TIPS_16"))
-
-				return
-			end
-		end
-
-		local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
-
-		if isBatch and isBatch == 1 then
-			xyd.alertTips(__("GALAXY_TRIP_TIPS_14"))
-
-			return
-		end
-
-		dump(xyd.models.galaxyTrip:getGalaxyTripGetMainTeamsInfo())
 		xyd.openWindow("galaxy_trip_formation_window", {
 			formation = xyd.models.galaxyTrip:getGalaxyTripGetMainTeamsInfo()
 		})
@@ -286,19 +256,35 @@ function GalaxyTripMapWindow:layout()
 	local wnd = xyd.getWindow("galaxy_trip_main_window")
 
 	if wnd then
-		xyd.closeWindow("galaxy_trip_main_window")
+		self:waitForFrame(5, function ()
+			xyd.closeWindow("galaxy_trip_main_window")
+		end)
 	end
 
 	self:initTop()
 	self:updateProgress()
 	self:updateGridShow()
 	self:updatePlaningCon()
+
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		self.lineBtnCon.gameObject:SetActive(false)
+		self.progressBtnCon.gameObject:SetActive(false)
+		self.returnBtnCon.gameObject:SetActive(false)
+		self.buffBtn.gameObject:SetActive(false)
+	end
+
+	self:waitForTime(1, function ()
+		if xyd.models.galaxyTrip:isShowTime() then
+			xyd.models.galaxyTrip:mustReturn()
+		end
+	end)
 end
 
 function GalaxyTripMapWindow:initTop()
 	self.windowTop = WindowTop.new(self.window_, self.name_, 50, nil, function ()
-		xyd.openWindow("galaxy_trip_main_window", {})
-		xyd.WindowManager:get():closeWindow(self.name_)
+		xyd.openWindow("galaxy_trip_main_window", {}, function ()
+			self:close()
+		end)
 	end)
 	local items = {
 		{
@@ -462,6 +448,10 @@ function GalaxyTripMapWindow:onGetGalaxyTripMapAwardsBack(event)
 end
 
 function GalaxyTripMapWindow:setIsOpenPlanReady(state)
+	if self:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+		return
+	end
+
 	if state then
 		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self:getBallId())
 		local ballMap = ballMapInfo.map
@@ -578,9 +568,11 @@ function GalaxyTripMapWindow:willClose()
 end
 
 function GalaxyTripMapWindow:updatePlaningCon()
-	local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		return
+	end
 
-	print("isBatch：", isBatch)
+	local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
 
 	if isBatch and isBatch == 1 then
 		self.planingCon.gameObject:SetActive(true)
@@ -675,8 +667,6 @@ function GalaxyTripMapWindow:onGalaxyTripStopBackGrid(event)
 
 	local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
 
-	print("isBatch：", isBatch)
-
 	if self.planingTimeCount then
 		self.planingTimeCount:dispose()
 
@@ -712,8 +702,6 @@ function GalaxyTripMapWindow:onClickProgressBtn()
 		local ballOpened = ballMapInfo.opened
 		local task2 = 0
 
-		dump(ballMapInfo.chests)
-
 		if ballMapInfo.chests and ballMapInfo.chests[1] then
 			for key, value in pairs(ballMapInfo.chests) do
 				if value and value > 0 then
@@ -721,8 +709,6 @@ function GalaxyTripMapWindow:onClickProgressBtn()
 				end
 			end
 		end
-
-		dump(task2)
 
 		local task3 = 0
 
@@ -743,8 +729,9 @@ function GalaxyTripMapWindow:onClickProgressBtn()
 end
 
 function GalaxyTripMapWindow:onClickEscBack(event)
-	xyd.openWindow("galaxy_trip_main_window", {})
-	xyd.closeWindow(self.name_)
+	xyd.openWindow("galaxy_trip_main_window", {}, function ()
+		self:close()
+	end)
 end
 
 function GridClass:ctor(goItem, posId, parent)
@@ -803,6 +790,7 @@ function GridClass:updateGridState()
 		self.eventType = eventId
 	else
 		self.eventType = eventType
+		local gridState = xyd.models.galaxyTrip:getGridState(self.gridId, self.parent:getBallId())
 
 		local function updateMoreLinkEventGrid()
 			local evetNeedGrid = xyd.tables.galaxyTripEventTypeTable:getSize(self.eventType)
@@ -830,6 +818,16 @@ function GridClass:updateGridState()
 			if evetNeedGrid[1] ~= 1 or evetNeedGrid[2] ~= 1 then
 				updateMoreLinkEventGrid()
 			end
+
+			if xyd.models.galaxyTrip:getIsBuff(self.eventType) then
+				local iconStr = xyd.tables.galaxyTripEventTypeTable:getIconText(eventType)
+
+				xyd.setUISpriteAsync(self.gridEventImg, nil, iconStr, nil, , true)
+
+				if gridState == xyd.GalaxyTripGridStateType.GET_YET then
+					self.gridEventImg:SetActive(true)
+				end
+			end
 		else
 			local iconStr = xyd.tables.galaxyTripEventTypeTable:getIconText(eventType)
 
@@ -845,32 +843,32 @@ function GridClass:updateGridState()
 				updateMoreLinkEventGrid()
 			end
 
-			local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
+			if self.parent:getBallId() ~= xyd.models.galaxyTrip:getBossMapId() then
+				local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
 
-			if isBatch and isBatch == 1 then
-				local ids = xyd.models.galaxyTrip:getGalaxyTripGetMainIds()
+				if isBatch and isBatch == 1 then
+					local ids = xyd.models.galaxyTrip:getGalaxyTripGetMainIds()
 
-				for i in pairs(ids) do
-					if ids[i] == self.gridId then
-						self:setPlanConVisible(true)
-						self.planCon:X(self.gridBorder.width / 2)
-						self.planCon:Y(-self.gridBorder.width / 2)
+					for i in pairs(ids) do
+						if ids[i] == self.gridId then
+							self:setPlanConVisible(true)
+							self.planCon:X(self.gridBorder.width / 2)
+							self.planCon:Y(-self.gridBorder.width / 2)
 
-						local scale = self.gridBorder.width / self.planConUIWidget.width
+							local scale = self.gridBorder.width / self.planConUIWidget.width
 
-						self.planCon:SetLocalScale(scale, scale, scale)
-						self.planGridMark.gameObject:SetActive(true)
+							self.planCon:SetLocalScale(scale, scale, scale)
+							self.planGridMark.gameObject:SetActive(true)
 
-						self.planGridLabel.text = tostring(i)
+							self.planGridLabel.text = tostring(i)
 
-						self.gridEventImg:SetActive(false)
+							self.gridEventImg:SetActive(false)
 
-						return
+							return
+						end
 					end
 				end
 			end
-
-			local gridState = xyd.models.galaxyTrip:getGridState(self.gridId, self.parent:getBallId())
 
 			if xyd.models.galaxyTrip:getIsMonster(self.eventType) and (gridState == xyd.GalaxyTripGridStateType.NO_OPEN or gridState == xyd.GalaxyTripGridStateType.CAN_GET) then
 				local enemies = xyd.models.galaxyTrip:getGalaxyTripEnemiesHpInfo(self.gridId)
@@ -973,6 +971,40 @@ function GridClass:updateGridState()
 
 				if xyd.models.galaxyTrip:getIsMonster(self.eventType) then
 					self.timeShow.text = " "
+				end
+			end
+
+			if self.eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
+				self:setAnotherConVisible(false)
+
+				local expire_time = ballMap[self.posId].expire_time
+				local disTime = expire_time - xyd.getServerTime()
+
+				if self.timeCount then
+					self.timeCount:dispose()
+
+					self.timeCount = nil
+				end
+
+				if disTime > 0 then
+					self.gridEventImg:SetActive(true)
+					self:setAnotherConVisible(true)
+					self.getEffectCon.gameObject:SetActive(false)
+
+					local secondStrType = xyd.SecondsStrType.NORMAL
+					self.timeCount = import("app.components.CountDown").new(self.timeShow)
+
+					self.timeCount:setInfo({
+						duration = disTime,
+						callback = function ()
+							self.timeShow.text = " "
+
+							self.gridEventImg:SetActive(false)
+						end,
+						secondStrType = secondStrType
+					})
+				else
+					self.gridEventImg:SetActive(false)
 				end
 			end
 		end
@@ -1101,6 +1133,12 @@ function GridClass:getAssignGridEventType(posId)
 end
 
 function GridClass:checkCurGridIsCanSearch()
+	if self.parent:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+		self.isCanSearch = true
+
+		return
+	end
+
 	self.isCanSearch = false
 	self.isLock = false
 
@@ -1144,6 +1182,10 @@ end
 
 function GridClass:checkCurGridIsCanPlanReady()
 	self.isCanReady = false
+
+	if self.parent:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+		return
+	end
 
 	self:setPlanConVisible(false)
 
@@ -1241,7 +1283,23 @@ end
 function GridClass:onTouch()
 	local gridState = xyd.models.galaxyTrip:getGridState(self.gridId, self.parent:getBallId())
 
-	if gridState == xyd.GalaxyTripGridStateType.GET_YET then
+	if self.parent:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+		if self.eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
+			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.parent:getBallId())
+			local ballMap = ballMapInfo.map
+			local expire_time = ballMap[self.posId].expire_time
+
+			if expire_time and xyd.getServerTime() < expire_time then
+				self:openEventWindow()
+			end
+		elseif self.eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+			self:openEventWindow()
+		end
+
+		return
+	end
+
+	if gridState == xyd.GalaxyTripGridStateType.GET_YET and not xyd.models.galaxyTrip:getIsBuff(self.eventType) then
 		return
 	end
 
@@ -1279,7 +1337,7 @@ function GridClass:onTouch()
 end
 
 function GridClass:openEventWindow()
-	if xyd.models.galaxyTrip:getIsMonster(self.eventType) then
+	if xyd.models.galaxyTrip:getIsMonster(self.eventType) or self.eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY or self.eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
 		xyd.WindowManager.get():openWindow("galaxy_trip_fight_window", {
 			posId = self.posId,
 			eventId = self.eventId,
@@ -1287,6 +1345,10 @@ function GridClass:openEventWindow()
 			isLock = self.isLock
 		})
 	elseif self.eventType == xyd.GalaxyTripGridEventType.BOX or self.eventType == xyd.GalaxyTripGridEventType.EMPTY then
+		if self.parent:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+			return
+		end
+
 		xyd.WindowManager.get():openWindow("galaxy_trip_common_event_window", {
 			posId = self.posId,
 			eventId = self.eventId,
@@ -1294,6 +1356,10 @@ function GridClass:openEventWindow()
 			isLock = self.isLock
 		})
 	elseif xyd.models.galaxyTrip:getIsBuff(self.eventType) then
+		if self.parent:getBallId() == xyd.models.galaxyTrip:getBossMapId() then
+			return
+		end
+
 		xyd.WindowManager.get():openWindow("galaxy_trip_buff_window", {
 			posId = self.posId,
 			eventId = self.eventId,
@@ -1314,6 +1380,8 @@ function GridClass:getAnotherCon()
 		local yScale = 1.1 * evetNeedGrid[2]
 		local yPos = -4.5 * evetNeedGrid[2]
 
+		self.anotherCon:X(self.gridBorder.width / 2)
+		self.anotherCon:Y(-self.gridBorder.height / 2)
 		self.getEffectCon.gameObject:SetLocalScale(0.9 * xScale, 0.9 * yScale, 1)
 		self.getEffectCon.gameObject:Y(yPos)
 	end

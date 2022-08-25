@@ -8553,7 +8553,7 @@ Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts cor
 753015045,Estelle,Force de l'Amitié,"Maman m'a dit de toujours tout partager avec ses amis ! À la fin de chaque tour, elle copie aléatoirement 1 Effet Négatif (Dégâts sur la Durée ou Malus d'Attribut) d'un de ses ennemis à 2 autres ennemis aléatoires. (Elle peut copier 4 Effets Négatifs au maximum chaque fois). Chaque effet peut être copié 3 fois au maximum. Elle a également 55% de chance d'enlever 1 Effet Négatif (Dégâts sur la Durée, Malus d'Attribut, Effet de Contrôle et Marque)."
 501101,Îles Célestes,Purifier I,"À la fin du tour, l'ennemi enlève aléatoirement 1 de ses Effets Négatifs."
 501102,Îles Célestes,Purifier II,"À la fin du tour, l'ennemi enlève aléatoirement 3 de ses Effets Négatifs."
-502101,Îles Célestes,Corps Unifié,"Lorsque un des ennemis subit des dégâts, les dégâts seront partagés entre tous les ennemis."
+502101,Îles Célestes,Corps Unifié,"Lorsqu'un des ennemis subit des dégâts, les dégâts seront partagés entre tous les ennemis."
 503101,Îles Célestes,Bénédiction I,"Pendant les 2 premiers tours de la bataille, à la fin du tour, tous les ennemis récupèrent 50 points d'Énergie."
 503102,Îles Célestes,Bénédiction II,"Pendant les 2 premiers tours de la bataille, à la fin du tour, tous les ennemis récupèrent 100 points d'Énergie."
 5101500,Éléanor,Attaque Basique,Attaque Basique
@@ -14223,3 +14223,216 @@ Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible rédu
 Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 6%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
 Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 12% et la Résistance aux Dégâts Critiques de 24%, d\'Élisa."
+5101900,Melly,Attaque Basique,
+65102600,Melly,Attaque Basique,
+75101900,Melly,Attaque Basique,
+5101901,Melly,Rage de Dragon,"
+Inflige 150% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (100% de l\'Attaque de Melly) pendant 3 tours, et augmente de 10% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 6% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 12% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+65102601,Melly,Rage de Dragon,"
+Inflige 300% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (200% de l\'Attaque de Melly) pendant 3 tours, et augmente de 20% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 12% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 24% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+75101901,Melly,Rage de Dragon,"
+Inflige 600% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (400% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 20% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+5101902,Melly,Descendante de Dragon,"Augmente les PV de 20%, l'Attaque de 10%, les Critiques de 10%, la Pénétration d'Armure de 20%, et la Résistance aux Dégâts de 10%."
+65102602,Melly,Descendante de Dragon,"Augmente les PV de 30%, l'Attaque de 15%, les Critiques de 20%, la Pénétration d'Armure de 30%, et la Résistance aux Dégâts de 20%."
+65102612,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 50%, et la Résistance aux Dégâts de 30%."
+75101902,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 50%, et la Résistance aux Dégâts de 30%."
+5101903,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 120% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (6% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 10% les Critiques et de 10% le Blocage de la cible marquée."
+65102603,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 180% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (8% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les Critiques et de 20% le Blocage de la cible marquée."
+65102613,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée."
+75101903,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée."
+5101904,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 6% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 10% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 10% les Critiques et de 10% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 15% les Dégâts Divins et de 15% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (100% de l\'Attaque de Melly) et lancera également une attaque (8% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 50% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+65102604,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 12% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 20% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les Critiques et de 20% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 20% les Dégâts Divins et de 20% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (200% de l\'Attaque de Melly) et lancera également une attaque (16% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 70% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+65102614,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (500% de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+75101904,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (500% de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019011,Melly,Rage de Dragon,"
+Inflige 612% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (408% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 22% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+751019012,Melly,Rage de Dragon,"
+Inflige 624% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (416% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 24% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+751019013,Melly,Rage de Dragon,"
+Inflige 636% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (424% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 26% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+751019014,Melly,Rage de Dragon,"
+Inflige 648% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (432% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 28% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+751019015,Melly,Rage de Dragon,"
+Inflige 660% d\'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] (440% de l\'Attaque de Melly) pendant 3 tours, et augmente de 30% l\'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.
+Si Melly est placée sur la ligne avant, augmente de 30% la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours.
+
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+751019021,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 52%, et la Résistance aux Dégâts de 30%."
+751019022,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 54%, et la Résistance aux Dégâts de 30%."
+751019023,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 56%, et la Résistance aux Dégâts de 30%."
+751019024,Melly,Descendante de Dragon,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de 58%, et la Résistance aux Dégâts de 30%."
+751019025,Melly,Descendante de Dragon,"Augmente les PV de 43%, l'Attaque de 23%, les Critiques de 30%, la Pénétration d'Armure de 60%, et la Résistance aux Dégâts de 30%."
+751019031,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 31% les Critiques et de 31% le Blocage de la cible marquée."
+751019032,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 32% les Critiques et de 32% le Blocage de la cible marquée."
+751019033,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 33% les Critiques et de 33% le Blocage de la cible marquée."
+751019034,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 34% les Critiques et de 34% le Blocage de la cible marquée."
+751019035,Melly,Corne Argentée,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (15% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 35% les Critiques et de 35% le Blocage de la cible marquée."
+751019041,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (510% de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019042,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (520% de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019043,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (530% de l\'Attaque de Melly) et lancera également une attaque (27% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019044,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (540% de l\'Attaque de Melly) et lancera également une attaque (27% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019045,Melly,Âme Immortelle,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 35% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (550% de l\'Attaque de Melly) et lancera également une attaque (30% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."

@@ -22,7 +22,7 @@ id,name,from,content
 21,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 1000, Paper Scool x 2. Your rewards are attached."
 22,Internship Rewards,System Message,Congratulations! You've completed {1} star internship quest during the Internship Event! Here are your rewards.
 23,Reload Notice,System Message,Thank you for purchasing {1}. Your items are available in Bag. Have a look~!
-24,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Fishing Rod x 5, Lucky Coin x 2, Jade Crane x 5, and Gilded Crane x 1. Your rewards are attached."
+24,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Ragged Bottle x 5, Lucky Coin x 2. Your rewards are attached."
 25,League Battle Rewards,System Message,Congratulations! You reached a goal during the League event. Here are your rewards~!
 26,Subscription,Subscription,Congratulations! You are a Weekly Pass holder. Your Coin Loot will increase by 100% for the next 168 hours. This benefit is combined with VIP benefits.
 27,Weekly Pass will expire,Weekly Pass,Your Weekly Pass expires today. Please renew your Weekly Pass to continue enjoying the benefits. Looting Coin is increased 100% while the pass is active~!
@@ -150,7 +150,7 @@ id,name,from,content
 149,Newbie Benefit Reward,System Message,"Senpai, congratulations for completing the task. Here's the reward you forgot to claim at the event page!"
 150,Newbie Benefit Progress,System Message,"Senpai, congratulations for getting {1} points in Newbie Benefit! Here's the reward you forgot to claim in the event page!"
 151,Luvly's Reward,Event Mail,"Senpai, congratulations for collecting {1} Coral Branch(es), here's your reward!"
-152,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Fishing Rod x 5, Lucky Coin x 2, Jade Crane x 5, and Gilded Crane x 1. Your rewards are attached."
+152,Daily Rewards,System Message,"Login every day during the event and you will receive Rudder x 4, Gem x 150, Ragged Bottle x 5, Lucky Coin x 2. Your rewards are attached."
 153,Event Item Retrieve,System Message,"Dear Senpai, event: {1} is ended, {2} x {3} of yours have been retrieved."
 154,Exploration Ranking Reward,System Message,"Congratulations, Senpai! You're No. {1} in this season of Old Campus Exploration, here's your reward!"
 155,Exploration Reward,System Message,"Dear Senpai, the event: Old Campus Exploration has ended, here's your unclaimed reward!"
@@ -276,3 +276,7 @@ GXB2 Admin Team"
 247,Sky Island Participation Rewards,System Message,Congratulations for getting {1} Active Pt. in Sky Island! Here are your rewards!
 248,Summer Deals Notice,Event Mail,"Dear Senpai, Hermes has just added {1} Goldfish Coins in your Bag, don't forget to exchange more rewards with them!"
 249,Voyage Ranking Reward,System Message,Congratulations for reaching No. {1} in the current season of Galaxy Voyage! Here's your reward!
+250,Progress Reward,System Message,恭喜學長達成新生邀請 {1} 階段目標，獲得以下獎勵！
+251,初次綁定獎勵,系統信件,恭喜學長完成新生邀請綁定，獲得以下獎勵！快去和前輩打個招呼吧~
+252,新生邀請獎勵,系統信件,新生{1} 達成{2}階段目標，給學長帶來以下獎勵！
+253,每週分享獎勵,系統信件,感謝學長本週完成首次分享，獎勵請見附件！

@@ -159,6 +159,4 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 158,growth_diary,1,52,,,main_window,1,transTopR|tr_btn_7,,,,1,54,2,buttoncrop_26,0|0,1.2|1.2,,1,,,,,,2,,0.42,,,,,
 159,galaxy_trip,1,53,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
 160,galaxy_trip,1,53,,,main_window,1,transTopR|tr_btn_6,,,,,,2,buttoncrop_26,0|0,,,1,,,,,,2,,0.42,,,,,
-161,galaxy_trip,1,53,,,galaxy_start_window,,group2,,,,,,,,,,,,,,-1,-300|300,,,,,,,,,
-162,galaxy_trip,1,53,,,galaxy_trip_main_window,,firstBallObj,,,,,,,,,,,,,,-1,-100|300,,,,,,,,,
-163,galaxy_trip,1,53,,,galaxy_trip_enter_window,,enterBtn,,,,1,55,,,,,,,,,-1,-320|250,,,,,,,,,
+161,galaxy_trip,1,53,,,galaxy_start_window,,group2,,,,1,55,,,,,,,,,-1,-300|300,,,,,,,,,

@@ -75,6 +75,12 @@ function GalaxyTripCommonEventWindow:registerEvent()
 				end
 			end
 
+			if xyd.models.galaxyTrip:isShowTime() then
+				xyd.alertTips(__("GALAXY_TRIP_TIPS_21"))
+
+				return
+			end
+
 			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
 			local ballMap = ballMapInfo.map
 			local msg = messages_pb:galaxy_trip_grid_ids_req()

@@ -3761,23 +3761,98 @@ Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible rédu
 Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 6%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
 Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de {1} et la Résistance aux Dégâts Critiques de {2}, d\'Élisa."
-751019011,羅蘭維亞,精英技能-主动,
-751019012,羅蘭維亞,精英技能-主动,
-751019013,羅蘭維亞,精英技能-主动,
-751019014,羅蘭維亞,精英技能-主动,
-751019015,羅蘭維亞,精英技能-主动,
-751019021,羅蘭維亞,精英技能-被动1,
-751019022,羅蘭維亞,精英技能-被动1,
-751019023,羅蘭維亞,精英技能-被动1,
-751019024,羅蘭維亞,精英技能-被动1,
-751019025,羅蘭維亞,精英技能-被动1,
-751019031,羅蘭維亞,精英技能-被动2,
-751019032,羅蘭維亞,精英技能-被动2,
-751019033,羅蘭維亞,精英技能-被动2,
-751019034,羅蘭維亞,精英技能-被动2,
-751019035,羅蘭維亞,精英技能-被动2,
-751019041,羅蘭維亞,精英技能-被动3,
-751019042,羅蘭維亞,精英技能-被动3,
-751019043,羅蘭維亞,精英技能-被动3,
-751019044,羅蘭維亞,精英技能-被动3,
-751019045,羅蘭維亞,精英技能-被动3,
+751019011,羅蘭維亞,化龍,"Inflige {1} d'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] ({2} de l'Attaque de Melly) pendant 3 tours, et augmente de 30% l'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.\nSi Melly est placée sur la ligne avant, augmente de {3} la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours."
+751019012,羅蘭維亞,化龍,"Inflige {1} d'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] ({2} de l'Attaque de Melly) pendant 3 tours, et augmente de 30% l'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.\nSi Melly est placée sur la ligne avant, augmente de {3} la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours."
+751019013,羅蘭維亞,化龍,"Inflige {1} d'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] ({2} de l'Attaque de Melly) pendant 3 tours, et augmente de 30% l'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.\nSi Melly est placée sur la ligne avant, augmente de {3} la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours."
+751019014,羅蘭維亞,化龍,"Inflige {1} d'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] ({2} de l'Attaque de Melly) pendant 3 tours, et augmente de 30% l'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.\nSi Melly est placée sur la ligne avant, augmente de {3} la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours."
+751019015,羅蘭維亞,化龍,"Inflige {1} d'Attaque aux ennemis de la ligne arrière, en leur infligeant des dégâts de [c][01a310]Saignement[-][/c] ({2} de l'Attaque de Melly) pendant 3 tours, et augmente de 30% l'Armure de toutes ses alliées (inclut Melly) pendant 3 tours.\nSi Melly est placée sur la ligne avant, augmente de {3} la Résistance aux Dégâts de ses alliées de la ligne avant pendant 3 tours. Si Melly est placée sur la ligne arrière, augmente de 36% la Précision de ses alliées de la ligne arrière pendant 3 tours."
+751019021,羅蘭維亞,龍血核心,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de {1}, et la Résistance aux Dégâts de 30%."
+751019022,羅蘭維亞,龍血核心,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de {1}, et la Résistance aux Dégâts de 30%."
+751019023,羅蘭維亞,龍血核心,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de {1}, et la Résistance aux Dégâts de 30%."
+751019024,羅蘭維亞,龍血核心,"Augmente les PV de 40%, l'Attaque de 20%, les Critiques de 30%, la Pénétration d'Armure de {1}, et la Résistance aux Dégâts de 30%."
+751019025,羅蘭維亞,龍血核心,"Augmente les PV de {1}, l'Attaque de {2}, les Critiques de 30%, la Pénétration d'Armure de {3}, et la Résistance aux Dégâts de 30%."
+751019031,羅蘭維亞,銀骨權柄,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {1} les Critiques et de {2} le Blocage de la cible marquée."
+751019032,羅蘭維亞,銀骨權柄,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {1} les Critiques et de {2} le Blocage de la cible marquée."
+751019033,羅蘭維亞,銀骨權柄,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {1} les Critiques et de {2} le Blocage de la cible marquée."
+751019034,羅蘭維亞,銀骨權柄,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires (12% des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {1} les Critiques et de {2} le Blocage de la cible marquée."
+751019035,羅蘭維亞,銀骨權柄,"
+L\'Attaque Basique inflige 300% d’Attaque aux ennemis de la ligne avant, en leur infligeant des dégâts supplémentaires ({1} des PV Max de la cible attaquée, 1500% de la valeur de l\'Attaque de Melly au maximum), et marque 1 ennemi aléatoire avec [c][e28002]Corne Malheureuse[-][/c] pendant 3 tours (Melly choisira en priorité l\'ennemi n\'ayant pas été marqué avec Corne Malheureuse). 
+
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {2} les Critiques et de {3} le Blocage de la cible marquée."
+751019041,羅蘭維亞,不滅龍魂,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts ({1} de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019042,羅蘭維亞,不滅龍魂,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts ({1} de l\'Attaque de Melly) et lancera également une attaque (24% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019043,羅蘭維亞,不滅龍魂,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts ({1} de l\'Attaque de Melly) et lancera également une attaque ({2} des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019044,羅蘭維亞,不滅龍魂,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir 30% de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts ({1} de l\'Attaque de Melly) et lancera également une attaque (27% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+751019045,羅蘭維亞,不滅龍魂,"
+Au début de la bataille, marque son alliée ayant l\'Attaque la plus élevée avec [c][e28002]Écaille Argentée[-][/c].
+Après que Melly soit vaincue, augmente de 20% la Résistance aux Dégâts de toutes ses alliées pendant 3 tours, marquant tous les ennemis avec [c][e28002]Corne Malheureuse [-][/c]pendant 3 tours, et l\'alliée ayant l\'Attaque la plus élevée sera possédée par Melly et sous la [c][e28002]Bénédiction du Dragon[-][/c].
+
+[c][e28002]Écaille Argentée (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée est attaquée, Melly l\'aidera à subir {1} de dégâts infligés (la Résistance Totale de chacune des alliées influera sur les dégâts qui leur seront infligés respectivement).
+[c][e28002]Corne Malheureuse (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée. 
+[c][e28002]Bénédiction du Dragon (Effet de Compétence) :[-][/c]
+Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
+Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts ({2} de l\'Attaque de Melly) et lancera également une attaque ({3} des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
+Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."

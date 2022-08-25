@@ -583,7 +583,9 @@ function ActivitySportsGuessItem:update(_, _, info)
 	local awardArr = xyd.tables.miscTable:split2Cost("activity_warmup_arena_guess_award", "value", "|#")
 	local costArr = xyd.tables.miscTable:split2Cost("activity_warmup_arena_guess_cost", "value", "|#")
 
-	if guessOk then
+	if not self.data.selfBet or self.data.selfBet == 0 then
+		xyd.setUISpriteAsync(self.imgIsHit_, nil, "arena_as_bg_wcy_" .. xyd.Global.lang)
+	elseif guessOk then
 		xyd.setUISpriteAsync(self.imgIsHit_, nil, "arena_as_win_" .. xyd.Global.lang)
 	else
 		xyd.setUISpriteAsync(self.imgIsHit_, nil, "arena_as_lose_" .. xyd.Global.lang)

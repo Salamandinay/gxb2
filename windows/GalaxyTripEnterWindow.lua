@@ -16,6 +16,7 @@ end
 
 function GalaxyTripEnterWindow:getUIComponent()
 	self.groupAction = self.window_:NodeByName("groupAction")
+	self.bg = self.groupAction:ComponentByName("bg", typeof(UISprite))
 	self.titleGroup = self.groupAction:NodeByName("titleGroup").gameObject
 	self.labelTitle = self.titleGroup:ComponentByName("labelTitle", typeof(UILabel))
 	self.closeBtn = self.titleGroup:NodeByName("closeBtn").gameObject
@@ -61,6 +62,37 @@ function GalaxyTripEnterWindow:registerEvent()
 		self:close()
 	end)
 	UIEventListener.Get(self.enterBtn.gameObject).onClick = handler(self, function ()
+		if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+			local isNeedSend = false
+
+			if ballMapInfo then
+				local enemies = ballMapInfo.enemies
+
+				if enemies then
+					for i in pairs(enemies) do
+						if enemies[i].expire_time <= xyd.getServerTime() then
+							isNeedSend = true
+
+							break
+						end
+					end
+				end
+			end
+
+			if not ballMapInfo or isNeedSend then
+				xyd.models.galaxyTrip:sendGalaxyTripGetMapBlackHoleBack(true)
+			else
+				xyd.WindowManager.get():openWindow("galaxy_trip_map_window", {
+					ballId = self.ballId
+				})
+			end
+
+			self:close()
+
+			return
+		end
+
 		local curIngBallId = xyd.models.galaxyTrip:getGalaxyTripGetCurMap()
 
 		if curIngBallId == self.ballId or curIngBallId == 0 then
@@ -73,6 +105,12 @@ function GalaxyTripEnterWindow:registerEvent()
 			for i in pairs(ballMap) do
 				local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curIngBallId)
 
+				if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
+					xyd.alertTips(__("GALAXY_TRIP_TIPS_13"))
+
+					return
+				end
+
 				if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
 					xyd.alertYesNo(__("GALAXY_TRIP_TIPS_11"), function (yes_no)
 						if yes_no then
@@ -82,12 +120,6 @@ function GalaxyTripEnterWindow:registerEvent()
 							return
 						end
 					end)
-
-					return
-				end
-
-				if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
-					xyd.alertTips(__("GALAXY_TRIP_TIPS_13"))
 
 					return
 				end
@@ -110,6 +142,11 @@ function GalaxyTripEnterWindow:layout()
 	self.textName2.text = __("GALAXY_TRIP_TEXT55")
 
 	self:initUp()
+
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		self.textCon1.gameObject:SetActive(false)
+		self.textCon2.gameObject:Y(-18)
+	end
 end
 
 function GalaxyTripEnterWindow:initUp()
@@ -152,6 +189,12 @@ function GalaxyTripEnterWindow:updateStateLabel()
 		self.stateLabel.text = " "
 		self.textNameNum1.text = "0%"
 		self.textNameNum2.text = tostring(0)
+	end
+
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		self.centerCon.gameObject:SetActive(false)
+
+		self.bg.height = 445
 	end
 end
 

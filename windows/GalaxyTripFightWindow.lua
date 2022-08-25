@@ -8,6 +8,25 @@ function GalaxyTripFightWindow:ctor(name, params)
 	self.ballId = params.ballId
 	self.posId = params.posId
 	self.isLock = params.isLock
+	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
+
+	if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+		local ballInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+		local diff = ballInfo.diff
+		local galaxy_trip_boss_max_level = xyd.tables.miscTable:split2num("galaxy_trip_boss_max_level", "value", "|")
+		local defaultShowLev = diff + 1
+
+		if galaxy_trip_boss_max_level[3] < defaultShowLev then
+			defaultShowLev = galaxy_trip_boss_max_level[3]
+		end
+
+		local events = xyd.tables.galaxyTripMapTable:getEvents(self.ballId)
+		self.eventId = events[defaultShowLev]
+		self.curReadyDiff = defaultShowLev
+	end
+
+	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
+	self.eventType = eventType
 end
 
 function GalaxyTripFightWindow:initWindow()
@@ -73,6 +92,46 @@ function GalaxyTripFightWindow:registerEvent()
 		self:close()
 	end)
 	UIEventListener.Get(self.challengeBtn.gameObject).onClick = handler(self, function ()
+		print("test1:", self.eventType)
+
+		if self.eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY or self.eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+			if xyd.models.galaxyTrip:isShowTime() then
+				xyd.alertTips(__("GALAXY_TRIP_TIPS_21"))
+
+				return
+			end
+
+			local specialId, isBoss = nil
+
+			if self.eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+				specialId = self.eventId
+				isBoss = 1
+			elseif self.eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
+				local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+				local enemiesKey = ballMapInfo.map[self.posId].enemiesKeyId
+				specialId = enemiesKey
+				isBoss = 0
+			end
+
+			xyd.WindowManager.get():openWindow("battle_formation_window", {
+				showSkip = true,
+				battleType = xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE,
+				isBoss = isBoss,
+				specialId = specialId,
+				skipState = xyd.checkCondition(tonumber(xyd.db.misc:getValue("galaxy_trip_special_boss_fight_skip_report")) == 1, true, false),
+				btnSkipCallback = function (flag)
+					local valuedata = xyd.checkCondition(flag, 1, 0)
+
+					xyd.db.misc:setValue({
+						key = "galaxy_trip_special_boss_fight_skip_report",
+						value = valuedata
+					})
+				end
+			})
+
+			return
+		end
+
 		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
 		local ballMap = ballMapInfo.map
 		local gridId = ballMap[self.posId].gridId
@@ -96,6 +155,12 @@ function GalaxyTripFightWindow:registerEvent()
 
 					return
 				end
+			end
+
+			if xyd.models.galaxyTrip:isShowTime() then
+				xyd.alertTips(__("GALAXY_TRIP_TIPS_21"))
+
+				return
 			end
 
 			xyd.WindowManager.get():openWindow("battle_formation_window", {
@@ -154,6 +219,7 @@ function GalaxyTripFightWindow:layout()
 	self.challengeBtnLabel.text = __("GALAXY_TRIP_TEXT34")
 	self.centerConName1.text = __("GALAXY_TRIP_TEXT32")
 	self.centerConName2.text = __("GALAXY_TRIP_TEXT30")
+	self.selectLabel.text = __("GALAXY_TRIP_TEXT33")
 	local ticketArr = xyd.tables.miscTable:split2num("galaxy_trip_challenge", "value", "|")
 	self.res_num_label.text = tostring(xyd.models.galaxyTrip:getGalaxyTripGetMainTicket()) .. "/" .. ticketArr[3]
 	local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
@@ -183,7 +249,7 @@ function GalaxyTripFightWindow:layout()
 		self.challengeBtnBoxCollider.enabled = false
 	end
 
-	if xyd.models.galaxyTrip:getGalaxyTripGetMainTicket() <= 0 then
+	if xyd.models.galaxyTrip:getGalaxyTripGetMainTicket() <= 0 and gridState ~= xyd.GalaxyTripGridStateType.CAN_GET then
 		xyd.applyChildrenGrey(self.challengeBtn)
 
 		self.challengeBtnBoxCollider.enabled = false
@@ -193,6 +259,66 @@ function GalaxyTripFightWindow:layout()
 		self.res_icon:SetLocalScale(0.5, 0.5, 1)
 	end, true)
 	self:initUp()
+
+	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
+
+	if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+		self.selectCon:SetActive(true)
+		self.ticketCon:SetActive(false)
+
+		if not self.selectItem then
+			self.pointerSelectNum = import("app.components.SelectNum").new(self.selectGroup, "default")
+			local ballInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+			local events = xyd.tables.galaxyTripMapTable:getEvents(self.ballId)
+
+			self.pointerSelectNum:setInfo({
+				minNum = 1,
+				maxNum = ballInfo.max_diff,
+				curNum = self.curReadyDiff,
+				callback = function (num)
+					self.eventId = events[num]
+
+					self:updateStateLabel()
+				end,
+				addCallback = function ()
+					local checkCurChoiceDiffIndex = 1
+					local events = xyd.tables.galaxyTripMapTable:getEvents(self.ballId)
+
+					for i in pairs(events) do
+						if tonumber(events[i]) == tonumber(self.eventId) then
+							checkCurChoiceDiffIndex = i
+
+							break
+						end
+					end
+
+					local ballInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+					local galaxy_trip_boss_max_level = xyd.tables.miscTable:split2num("galaxy_trip_boss_max_level", "value", "|")
+
+					if galaxy_trip_boss_max_level[3] <= checkCurChoiceDiffIndex then
+						xyd.alertTips(__("GALAXY_TRIP_TEXT79"))
+
+						return
+					end
+
+					local maxDiff = ballInfo.max_diff
+
+					if maxDiff <= checkCurChoiceDiffIndex then
+						xyd.alertTips(__("GALAXY_TRIP_TEXT78"))
+
+						return
+					end
+				end
+			})
+		end
+	else
+		self.selectCon:SetActive(false)
+		self.ticketCon:SetActive(true)
+
+		if eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
+			self.ticketCon:SetActive(false)
+		end
+	end
 end
 
 function GalaxyTripFightWindow:initUp()
@@ -231,7 +357,13 @@ function GalaxyTripFightWindow:initUp()
 
 	local imgIcon = xyd.tables.galaxyTripEventTypeTable:getIconBigText(eventTypeId)
 
-	xyd.setUISpriteAsync(self.upGalaxyIcon, nil, imgIcon, nil, , true)
+	xyd.setUISpriteAsync(self.upGalaxyIcon, nil, imgIcon, function ()
+		local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
+
+		if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+			self.upGalaxyIcon:SetLocalScale(0.8, 0.8, 0.8)
+		end
+	end, nil, true)
 
 	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
 
@@ -270,92 +402,209 @@ end
 
 function GalaxyTripFightWindow:updateStateLabel()
 	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
+	local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
 
-	if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
-		self.selectCon:SetActive(true)
-		self.ticketCon:SetActive(false)
+	if eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
+		local enemies = ballMapInfo.enemies
+		local enemiesKey = ballMapInfo.map[self.posId].enemiesKeyId
+		local isSearch = false
 
-		if not self.selectItem then
-			local lastChoiceNum = xyd.db.misc:getValue("galaxy_trip_fight_last_choice_num")
-			lastChoiceNum = not lastChoiceNum and 1 or tonumber(lastChoiceNum)
-			self.selectNum = lastChoiceNum
-			self.pointerSelectNum = import("app.components.SelectNum").new(self.selectGroup, "default")
+		for i in pairs(enemies) do
+			if enemies[i].id == enemiesKey then
+				isSearch = true
+				local partners = enemies[i].partners
 
-			self.pointerSelectNum:setInfo({
-				minNum = 1,
-				maxNum = 20,
-				curNum = lastChoiceNum,
-				callback = function (num)
-					self.selectNum = num
+				dump(partners, "partners:" .. enemiesKey)
+
+				for k in pairs(partners) do
+					local partenrInfo = {
+						id = partners[k].table_id,
+						lev = partners[k].lev
+					}
+					local tmp = NGUITools.AddChild(self.centerConLayout1.gameObject, self.centerConEnemyItem.gameObject)
+					local item = EnemyClass.new(tmp, enemies[i], self, i, partenrInfo)
 				end
-			})
+
+				break
+			end
+		end
+
+		if not isSearch then
+			xyd.alertTips(__("GALAXY_TRIP_TIPS_24"))
 		end
 	else
-		self.selectCon:SetActive(false)
-		self.ticketCon:SetActive(true)
-
-		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
 		local ballMap = ballMapInfo.map
 		local eventArr = xyd.split(ballMap[self.posId].info, "#", true)
 		local battleId = eventArr[2]
+
+		if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+			local holeBossAllBattleIds = xyd.tables.galaxyTripEventTable:getBattleId(self.eventId)
+			local curCount = xyd.models.galaxyTrip:getGalaxyTripGetMainCount()
+			local index = curCount % #holeBossAllBattleIds
+
+			if index == 0 then
+				index = #holeBossAllBattleIds
+			end
+
+			battleId = holeBossAllBattleIds[index]
+		end
+
 		local enemies = xyd.tables.battleTable:getMonsters(battleId)
 
 		if #enemies > 0 then
 			for i in pairs(enemies) do
-				local tmp = NGUITools.AddChild(self.centerConLayout1.gameObject, self.centerConEnemyItem.gameObject)
-				local item = EnemyClass.new(tmp, enemies[i], self, i)
+				if not self.enemyClassArr then
+					self.enemyClassArr = {}
+				end
+
+				if self.enemyClassArr[i] then
+					self.enemyClassArr[i]:setInfo(enemies[i], i)
+				else
+					local tmp = NGUITools.AddChild(self.centerConLayout1.gameObject, self.centerConEnemyItem.gameObject)
+					local item = EnemyClass.new(tmp, enemies[i], self, i)
+					self.enemyClassArr[i] = item
+				end
 			end
 		end
 
-		self.centerConLayout1UILayout:Reposition()
-
-		local award1 = xyd.tables.galaxyTripEventTable:getAward1(self.eventId)
-
-		for i in pairs(award1) do
-			local item = {
-				scale = 0.7037037037037037,
-				uiRoot = self.centerConLayout2.gameObject,
-				itemID = award1[i][1],
-				num = xyd.models.galaxyTrip:getAwardNumWithBuff(award1[i][2], 1)
-			}
-			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+		for i in pairs(enemies) do
+			self.enemyClassArr[i]:SetActive(true)
 		end
 
-		local award2 = xyd.tables.galaxyTripEventTable:getAward2(self.eventId)
-
-		for i in pairs(award2) do
-			local item = {
-				scale = 0.7037037037037037,
-				uiRoot = self.centerConLayout2.gameObject,
-				itemID = award2[i][1],
-				num = xyd.models.galaxyTrip:getAwardNumWithBuff(award2[i][2], 2)
-			}
-			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+		for i = #enemies + 1, #self.enemyClassArr do
+			self.enemyClassArr[i]:SetActive(false)
 		end
-
-		local award3 = xyd.tables.galaxyTripEventTable:getAward3(self.eventId)
-
-		for i in pairs(award3) do
-			local item = {
-				scale = 0.7037037037037037,
-				uiRoot = self.centerConLayout2.gameObject,
-				itemID = award3[i][1],
-				num = award3[i][2]
-			}
-			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
-		end
-
-		self.centerConLayout2UILayout:Reposition()
 	end
+
+	self.centerConLayout1UILayout:Reposition()
+
+	if not self.awardArr then
+		self.awardArr = {}
+	end
+
+	local searchIndex = 1
+	local award1 = xyd.tables.galaxyTripEventTable:getAward1(self.eventId)
+
+	for i in pairs(award1) do
+		local num = xyd.models.galaxyTrip:getAwardNumWithBuff(award1[i][2], 1)
+
+		if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+			num = award1[i][2]
+		end
+
+		local item = {
+			scale = 0.7037037037037037,
+			uiRoot = self.centerConLayout2.gameObject,
+			itemID = award1[i][1],
+			num = num
+		}
+
+		if self.awardArr[searchIndex] then
+			self.awardArr[searchIndex]:setInfo(item)
+		else
+			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+			self.awardArr[searchIndex] = icon
+		end
+
+		searchIndex = searchIndex + 1
+	end
+
+	local award2 = xyd.tables.galaxyTripEventTable:getAward2(self.eventId)
+
+	for i in pairs(award2) do
+		local num = xyd.models.galaxyTrip:getAwardNumWithBuff(award2[i][2], 2)
+
+		if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+			num = award2[i][2]
+		end
+
+		local item = {
+			scale = 0.7037037037037037,
+			uiRoot = self.centerConLayout2.gameObject,
+			itemID = award2[i][1],
+			num = num
+		}
+
+		if self.awardArr[searchIndex] then
+			self.awardArr[searchIndex]:setInfo(item)
+		else
+			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+			self.awardArr[searchIndex] = icon
+		end
+
+		searchIndex = searchIndex + 1
+	end
+
+	local award3 = xyd.tables.galaxyTripEventTable:getAward3(self.eventId)
+
+	for i in pairs(award3) do
+		local item = {
+			scale = 0.7037037037037037,
+			uiRoot = self.centerConLayout2.gameObject,
+			itemID = award3[i][1],
+			num = award3[i][2]
+		}
+
+		if self.awardArr[searchIndex] then
+			self.awardArr[searchIndex]:setInfo(item)
+		else
+			local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+			self.awardArr[searchIndex] = icon
+		end
+
+		searchIndex = searchIndex + 1
+	end
+
+	local checkCurChoiceDiffIndex = 1
+
+	if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+		local events = xyd.tables.galaxyTripMapTable:getEvents(self.ballId)
+
+		for i in pairs(events) do
+			if tonumber(events[i]) == tonumber(self.eventId) then
+				checkCurChoiceDiffIndex = i
+
+				break
+			end
+		end
+	end
+
+	for i = 1, searchIndex - 1 do
+		self.awardArr[i]:SetActive(true)
+		self.awardArr[i]:setChoose(false)
+
+		if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+			local ballInfo = xyd.models.galaxyTrip:getBallInfo(self.ballId)
+			local diff = ballInfo.diff
+
+			if checkCurChoiceDiffIndex <= diff then
+				self.awardArr[i]:setChoose(true)
+			end
+		end
+	end
+
+	for i = searchIndex, #self.awardArr do
+		self.awardArr[i]:SetActive(false)
+	end
+
+	self.centerConLayout2UILayout:Reposition()
 end
 
-function EnemyClass:ctor(goItem, enemyId, parent, index)
+function EnemyClass:ctor(goItem, enemyId, parent, index, anotherPartnerInfo)
 	self.goItem_ = goItem
 	self.parent = parent
 	self.enemyId = enemyId
 	self.index = index
+	self.anotherPartnerInfo = anotherPartnerInfo
 
 	EnemyClass.super.ctor(self, goItem)
+end
+
+function EnemyClass:setInfo(enemyId, index)
+	self.enemyId = enemyId
+	self.index = index
+
+	self:initShow()
 end
 
 function EnemyClass:initUI()
@@ -372,8 +621,16 @@ function EnemyClass:getUIComponent()
 end
 
 function EnemyClass:initShow()
-	local id = xyd.tables.monsterTable:getPartnerLink(self.enemyId)
-	local lev = xyd.tables.monsterTable:getShowLev(self.enemyId)
+	local id, lev = nil
+
+	if not self.anotherPartnerInfo then
+		id = xyd.tables.monsterTable:getPartnerLink(self.enemyId)
+		lev = xyd.tables.monsterTable:getShowLev(self.enemyId)
+	else
+		id = self.anotherPartnerInfo.id
+		lev = self.anotherPartnerInfo.lev
+	end
+
 	local item = {
 		scale = 0.7037037037037037,
 		noClick = true,
@@ -381,12 +638,17 @@ function EnemyClass:initShow()
 		itemID = id,
 		lev = lev
 	}
-	local icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+
+	if self.icon then
+		self.icon:setInfo(item)
+	else
+		self.icon = xyd.getItemIcon(item, xyd.ItemIconType.ADVANCE_ICON)
+	end
+
 	self.hpBarUISlider.value = 1
 	local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self.parent.ballId)
 	local ballMap = ballMapInfo.map
 	local gridId = ballMap[self.parent.posId].gridId
-	local enemies = xyd.models.galaxyTrip:getGalaxyTripEnemiesHpInfo(gridId)
 	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
 	local gridState = xyd.models.galaxyTrip:getGridState(gridId, self.parent.ballId)
 
@@ -395,6 +657,14 @@ function EnemyClass:initShow()
 
 		return
 	end
+
+	if self.parent.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		self.hpBarUISlider.value = 1
+
+		return
+	end
+
+	local enemies = xyd.models.galaxyTrip:getGalaxyTripEnemiesHpInfo(gridId)
 
 	if enemies then
 		local status = enemies.status

@@ -79,6 +79,12 @@ end
 function GuildFinalBossWindow:refreshData()
 	local num = xyd.models.guild:getFinalBossLeftCount()
 	self.labelLeftCount_.text = __("GUILD_BOSS_TEXT01", num)
+	local fightTime = xyd.models.guild:getGuildBossTime()[1] or 0
+
+	if xyd.isToday(fightTime) then
+		self.labelLeftCount_.text = __("GUILD_BOSS_TEXT01", 0)
+	end
+
 	self.bossData_ = xyd.models.guild:getBossInfo(self.bossId_)
 	local bossTableId = xyd.tables.monsterTable:getPartnerLink(self.bossData_.bossInfo.enemies[1].table_id)
 	local skillIds = {

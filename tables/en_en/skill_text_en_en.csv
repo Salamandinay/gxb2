@@ -16922,3 +16922,346 @@ Every stack reduces the Attack of the owner of this Effect by 6%.
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
 Every stack increases the owner’s Extra Control Rate by 12% and Crit Damage Mitigation by 24%."
+5101900,Raenvya,Basic Attack,
+65102600,Raenvya,Basic Attack,
+75101900,Raenvya,Basic Attack,
+5101901,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (150% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (100% of Attack) damage per round. She will also increase the Armor of all allies by 10% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 6% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 12% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+65102601,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (300% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (200% of Attack) damage per round. She will also increase the Armor of all allies by 20% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 12% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 24% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+75101901,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (600% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (400% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 20% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+5101902,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 20%, Attack by 10%, Crit by 10%, Armor Break by 20%, and Damage Reduction by 10%."
+65102602,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 30%, Attack by 15%, Crit by 20%, Armor Break by 30%, and Damage Reduction by 20%."
+65102612,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 50%, and Damage Reduction by 30%."
+75101902,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 50%, and Damage Reduction by 30%."
+5101903,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (120% of Attack) damage and (6% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 10% and their Block reduced by 10%."
+65102603,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (180% of Attack) damage and (8% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 20% and their Block reduced by 20%."
+65102613,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%."
+75101903,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%."
+5101904,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 6% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 10% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 10% and their Block reduced by 10%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 15% and Damage Depletion increased by 15%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (100% of Attack) damage and (8% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 50% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+65102604,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 12% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 20% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 20% and their Block reduced by 20%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 20% and Damage Depletion increased by 20%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (200% of Attack) damage and (16% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 70% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+65102614,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (500% of Attack) damage and (24% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+75101904,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (500% of Attack) damage and (24% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+751019011,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (612% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (408% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 22% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+751019012,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (624% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (416% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 24% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+751019013,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (636% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (424% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 26% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+751019014,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (648% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (432% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 28% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+751019015,Raenvya,True Form,"
+The power within Raenvya\'s draconic core transforms her into her Drake form.
+
+
+Raenvya deals (660% of Attack) damage to Backline enemies and [c][01a310]Bleeds[-][/c] them for 3 rounds, dealing (440% of Attack) damage per round. She will also increase the Armor of all allies by 30% for 3 rounds.
+If Raenvya is in the Frontline, she will grant 30% Damage Reduction that lasts for 3 rounds to all Frontline allies.
+If Raenvya is in the Backline, she will grant 36% Precision that lasts for 3 rounds to all Backline allies.
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect. 
+Damage is dealt once when Bleed is inflicted and at the beginning of each round during the period of effect."
+751019021,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 52%, and Damage Reduction by 30%."
+751019022,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 54%, and Damage Reduction by 30%."
+751019023,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 56%, and Damage Reduction by 30%."
+751019024,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 40%, Attack by 20%, Crit by 30%, Armor Break by 58%, and Damage Reduction by 30%."
+751019025,Raenvya,Exalted Blood,"Raenvya's Drake blood grants her tenacity in both mind and body.\n\nIncreases Raenvya's HP by 43%, Attack by 23%, Crit by 30%, Armor Break by 60%, and Damage Reduction by 30%."
+751019031,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 31% and their Block reduced by 31%."
+751019032,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 32% and their Block reduced by 32%."
+751019033,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 33% and their Block reduced by 33%."
+751019034,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (12% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 34% and their Block reduced by 34%."
+751019035,Raenvya,Argent Bone,"
+Raenvya wields the Argent Bone, a sword crafted out of Dragonbone, as if it is an extension of her own arm.
+
+Raenvya’s Basic Attack deals (300% of Attack) damage and (15% of target’s Maximum HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack) to Frontline enemies, and casts [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to 1 random enemy (Raenvya will prioritize enemies not afflicted with [c][e28002]Dragon\'s Curse[-][/c]).
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 35% and their Block reduced by 35%."
+751019041,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (510% of Attack) damage and (24% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+751019042,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (520% of Attack) damage and (24% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+751019043,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (530% of Attack) damage and (27% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+751019044,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 30% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (540% of Attack) damage and (27% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+751019045,Raenvya,Spirit of Valor,"
+The soul shall never fade away as long as its ideals persist.
+
+When the battle starts, Raenvya will cast [c][e28002]Dragon’s Favor[-][/c] to the ally with the highest Attack attribute.
+When Raenvya is defeated, she will inflict [c][e28002]Dragon\'s Curse[-][/c] that lasts for 3 rounds to all enemies, increase the Damage Reduction of all allies by 20% for 3 rounds, and possess the ally with the highest Attack attribute with her [c][e28002]Dragon Soul[-][/c].
+
+[c][e28002]Dragon\'s Favor[-][/c]:
+A Skill Effect that cannot stack.
+When the owner of this Effect takes damage from Basic Attacks, Active Skills, or Hunts, the caster of this Effect will take 35% of the damage for the owner. (Damage taken will be reduced by the owner’s Damage Depletion. Raenvya will not take damage for the owner when she is possessing her ally with [c][e28002]Dragon Soul[-][/c].)
+
+[c][e28002]Dragon\'s Curse[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Crit reduced by 30% and their Block reduced by 30%.
+
+[c][e28002]Dragon Soul[-][/c]:
+A Skill Effect.
+The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
+When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (550% of Attack) damage and (30% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
+If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."

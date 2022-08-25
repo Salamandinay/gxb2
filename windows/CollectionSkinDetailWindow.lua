@@ -577,6 +577,8 @@ function CollectionSkinDetailWindow:onclickPartnerImg()
 		self.bubbleRoot_:SetActive(false)
 	end, self, dialogInfo.time * 1000)
 	self.currentDialog_ = dialogInfo
+
+	self.partnerImg_:effectClickFunction()
 end
 
 function CollectionSkinDetailWindow:onModelTouch()

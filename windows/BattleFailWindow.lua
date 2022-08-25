@@ -48,7 +48,8 @@ function BattleFailWindow:ctor(name, params)
 		xyd.BattleType.NEW_PARTNER_WARMUP,
 		xyd.BattleType.ACADEMY_ASSESSMENT,
 		[13] = xyd.BattleType.ENTRANCE_TEST_REPORT,
-		[14] = xyd.BattleType.GALAXY_TRIP_BATTLE
+		[14] = xyd.BattleType.GALAXY_TRIP_BATTLE,
+		[14] = xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
 	}
 	self.isReportType = false
 	local battleReportData = params.real_battle_report
@@ -388,6 +389,8 @@ function BattleFailWindow:initReviewBtn()
 		eventName = xyd.event.ACADEMY_ASSESSMENT_REPORT
 	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
 		eventName = xyd.event.GALAXY_TRIP_GRID_BATTLE
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
+		eventName = xyd.event.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
 	end
 
 	UIEventListener.Get(self.battleReviewBtn).onClick = function ()
@@ -413,6 +416,11 @@ function BattleFailWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onGalayTripGridBattleReport(data)
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onGalayTripSpecialBossBattleReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -449,7 +457,7 @@ function BattleFailWindow:initLayout()
 		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			self.battleDetailBtn.transform:X(260)
 			self.battleReviewBtn.transform:X(320)
-		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE or self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
 			self.battleReviewBtn:SetActive(true)
 			self.battleDetailBtn.transform:X(260)
 			self.battleReviewBtn.transform:X(320)
@@ -652,7 +660,7 @@ function BattleFailWindow:initLayout()
 		self.battleReviewBtn:SetActive(true)
 		self:initSpfarm()
 		pvpFun()
-	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE then
+	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE or self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
 		self.battleReviewBtn:SetActive(true)
 		self:initImproveGroup()
 		pveFun()

@@ -13,12 +13,14 @@ end
 function GalaxyTrip:onRegister()
 	self:registerEvent(xyd.event.GALAXY_TRIP_GET_MAIN_INFO, self.onGetGalaxyTripGetMainBack, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_GET_MAP_INFO, self.onGetGalaxyTripMapInfoBack, self)
+	self:registerEvent(xyd.event.GALAXY_TRIP_GET_MAP_BLACK_HOLE, self.onGalaxyTripGetMapBlackHoleBack, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_SELECT_MAP, self.onGetGalaxyTripMapInfoBack, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_GET_MAP_AWARDS, self.onGetGalaxyTripMapAwardsBack, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_GRID_IDS, self.onGetGalaxyTripGridBack, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_SET_TEAMS, self.onSetGalaxyTripFormation, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_GET_RANK_LIST, self.onGetRankInfo, self)
 	self:registerEvent(xyd.event.GALAXY_TRIP_STOP_BACK_GRID, self.onGalaxyTripStopBackGrid, self)
+	self:registerEvent(xyd.event.GALAXY_TRIP_SPECIAL_BOSS_BATTLE, self.onGalayTripSpecialBossBattleBack, self)
 	self:registerEvent(xyd.event.FUNCTION_OPEN_MODEL, function (event)
 		local funID = event.data.functionID
 
@@ -31,6 +33,10 @@ end
 
 function GalaxyTrip:getBossMapId()
 	return 999
+end
+
+function GalaxyTrip:getRobberEnemyEventId()
+	return "11001"
 end
 
 function GalaxyTrip:sendGalaxyTripGetMainBack()
@@ -49,6 +55,8 @@ function GalaxyTrip:onGetGalaxyTripGetMainBack(event)
 
 	self:checkOpendWithAwards()
 
+	local periodTime = xyd.tables.miscTable:getNumber("galaxy_trip_time", "value")
+
 	if self.ballInfoArr[self.mainInfo.map_id] then
 		self:checkNextTimeDeal()
 	end
@@ -58,11 +66,338 @@ function GalaxyTrip:onGetGalaxyTripGetMainBack(event)
 
 	local curMapId = self.mainInfo.map_id
 
-	if self.mainInfo.map_id > 0 and not self.ballInfoArr[curMapId] then
+	if self.mainInfo.map_id > 0 and (not self.ballInfoArr[curMapId] or self.isMustSearchTimeOverSend) then
 		local msg = messages_pb:galaxy_trip_get_map_info_req()
 		msg.id = curMapId
 
 		xyd.Backend.get():request(xyd.mid.GALAXY_TRIP_GET_MAP_INFO, msg)
+
+		if self.isMustSearchTimeOverSend then
+			self.isMustSearchTimeOverSend = false
+		end
+	end
+
+	if self.mainInfo.start_time + periodTime <= xyd.getServerTime() then
+		xyd.addGlobalTimer(function ()
+			self:sendGalaxyTripGetMainBack()
+		end, 5, 1)
+	end
+
+	local disTime = xyd.models.galaxyTrip:getLeftTime()
+
+	if xyd.DAY_TIME < disTime then
+		disTime = disTime - xyd.DAY_TIME
+
+		if self.searchTimeOverTimeKey then
+			xyd.removeGlobalTimer(self.searchTimeOverTimeKey)
+
+			self.searchTimeOverTimeKey = nil
+		end
+
+		self.searchTimeOverTimeKey = xyd.addGlobalTimer(function ()
+			self:searchTimeOver()
+		end, disTime, 1)
+	elseif disTime > 0 then
+		if self.cutCountOverTimeKey then
+			xyd.removeGlobalTimer(self.cutCountOverTimeKey)
+
+			self.cutCountOverTimeKey = nil
+		end
+
+		self.cutCountOverTimeKey = xyd.addGlobalTimer(function ()
+			self:cutCountOver()
+		end, disTime, 1)
+	end
+end
+
+function GalaxyTrip:sendGalaxyTripGetMapBlackHoleBack(isNeedOpen)
+	self.isNeedOpenBlackMap = false
+
+	if isNeedOpen then
+		self.isNeedOpenBlackMap = true
+	end
+
+	local msg = messages_pb:galaxy_trip_get_map_black_hole_req()
+	msg.id = self:getBossMapId()
+
+	xyd.Backend.get():request(xyd.mid.GALAXY_TRIP_GET_MAP_BLACK_HOLE, msg)
+end
+
+function GalaxyTrip:onGalaxyTripGetMapBlackHoleBack(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local ballId = data.id
+	self.ballInfoArr[ballId] = data
+	self.ballInfoArr[ballId].map = {}
+	local noMapIndex = {
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		16,
+		17,
+		18,
+		19,
+		20,
+		26,
+		27,
+		28,
+		36,
+		64,
+		72,
+		73,
+		74,
+		80,
+		81,
+		82,
+		83,
+		84,
+		88,
+		89,
+		90
+	}
+	local bossIndex = {
+		40,
+		41,
+		42,
+		49,
+		50,
+		51,
+		58,
+		59,
+		60
+	}
+
+	for i = 1, 90 do
+		local infoArr = "10001"
+
+		if xyd.arrayIndexOf(noMapIndex, i) > 0 then
+			infoArr = "-1"
+		end
+
+		if xyd.arrayIndexOf(bossIndex, i) > 0 then
+			infoArr = "12001"
+		end
+
+		table.insert(self.ballInfoArr[ballId].map, {
+			borderIndex = 999,
+			info = infoArr,
+			gridId = i
+		})
+	end
+
+	local nowMap = self.ballInfoArr[ballId].map
+	local commonPosArr = {}
+
+	for i = 1, 90 do
+		if xyd.arrayIndexOf(noMapIndex, i) <= 0 and xyd.arrayIndexOf(bossIndex, i) <= 0 then
+			table.insert(commonPosArr, i)
+
+			self.ballInfoArr[ballId].map[i].isRobberPos = true
+		end
+	end
+
+	for i, id in pairs(commonPosArr) do
+		self:checkAddBoderNum(ballId, id)
+	end
+
+	local allCanSetArr = {}
+
+	for i = 1, 90 do
+		if self.ballInfoArr[ballId].map[i].borderIndex < 2 and self.ballInfoArr[ballId].map[i].info ~= self:getRobberEnemyEventId() then
+			table.insert(allCanSetArr, i)
+		end
+	end
+
+	local saveBossMapRobberAenemyPosToLocalArr = xyd.db.misc:getValue("galaxy_save_boss_map_robber_enemy_pos_to_local")
+
+	if saveBossMapRobberAenemyPosToLocalArr then
+		saveBossMapRobberAenemyPosToLocalArr = require("cjson").decode(saveBossMapRobberAenemyPosToLocalArr)
+	else
+		saveBossMapRobberAenemyPosToLocalArr = {}
+	end
+
+	local yetSetEnemiesKeyArr = {}
+	local enemies = self.ballInfoArr[ballId].enemies
+	enemies = enemies or {}
+
+	local function newAllCanSetFun()
+		local newAllCanSetArr = {}
+
+		for j in pairs(allCanSetArr) do
+			if self.ballInfoArr[ballId].map[allCanSetArr[j]].borderIndex < 2 then
+				table.insert(newAllCanSetArr, allCanSetArr[j])
+			end
+		end
+
+		allCanSetArr = newAllCanSetArr
+	end
+
+	for i = 1, #enemies do
+		if saveBossMapRobberAenemyPosToLocalArr[tostring(enemies[i].id)] and xyd.getServerTime() < enemies[i].expire_time then
+			local posId = tonumber(saveBossMapRobberAenemyPosToLocalArr[tostring(enemies[i].id)])
+			self.ballInfoArr[ballId].map[posId].info = self:getRobberEnemyEventId()
+			self.ballInfoArr[ballId].map[posId].enemiesKeyId = enemies[i].id
+			self.ballInfoArr[ballId].map[posId].expire_time = enemies[i].expire_time
+			local index = xyd.arrayIndexOf(allCanSetArr, posId)
+
+			if index > 0 then
+				table.remove(allCanSetArr, index)
+			end
+
+			newAllCanSetFun()
+			table.insert(yetSetEnemiesKeyArr, enemies[i].id)
+		end
+	end
+
+	for i = 1, #enemies do
+		if xyd.getServerTime() < enemies[i].expire_time and xyd.arrayIndexOf(yetSetEnemiesKeyArr, enemies[i].id) <= 0 and allCanSetArr and #allCanSetArr > 0 then
+			local randomIndex = math.ceil(math.random() * #allCanSetArr)
+			local id = allCanSetArr[randomIndex]
+			self.ballInfoArr[ballId].map[id].info = self:getRobberEnemyEventId()
+			self.ballInfoArr[ballId].map[id].enemiesKeyId = enemies[i].id
+			self.ballInfoArr[ballId].map[id].expire_time = enemies[i].expire_time
+
+			table.remove(allCanSetArr, randomIndex)
+			self:checkAddBoderNum(ballId, id)
+			newAllCanSetFun()
+		end
+	end
+
+	if self.isNeedOpenBlackMap then
+		self.isNeedOpenBlackMap = false
+
+		xyd.WindowManager.get():openWindow("galaxy_trip_map_window", {
+			ballId = ballId
+		})
+	end
+
+	self:saveBossMapRobberEnemyPosToLocal()
+end
+
+function GalaxyTrip:saveBossMapRobberEnemyPosToLocal()
+	local ballId = self:getBossMapId()
+	local saveArr = {}
+
+	for i = 1, 90 do
+		if self.ballInfoArr[ballId].map[i].info == self:getRobberEnemyEventId() then
+			local enemiesKeyId = self.ballInfoArr[ballId].map[i].enemiesKeyId
+			saveArr[tostring(enemiesKeyId)] = i
+		end
+	end
+
+	xyd.db.misc:setValue({
+		key = "galaxy_save_boss_map_robber_enemy_pos_to_local",
+		value = require("cjson").encode(saveArr)
+	})
+end
+
+function GalaxyTrip:checkSpecialBossDiff(id)
+	local ballId = self:getBossMapId()
+	local ballInfo = self:getBallInfo(ballId)
+
+	if ballInfo then
+		local galaxy_trip_boss_max_level = xyd.tables.miscTable:split2num("galaxy_trip_boss_max_level", "value", "|")
+
+		if ballInfo.max_diff <= id then
+			ballInfo.max_diff = ballInfo.max_diff + galaxy_trip_boss_max_level[2]
+
+			if galaxy_trip_boss_max_level[3] < ballInfo.max_diff then
+				ballInfo.max_diff = galaxy_trip_boss_max_level[3]
+			end
+		end
+
+		if ballInfo.diff < id then
+			ballInfo.diff = id
+		end
+	end
+end
+
+function GalaxyTrip:checkSpecialBossRobberEnemyRemove(id)
+	local ballId = self:getBossMapId()
+	local ballInfo = self:getBallInfo(ballId)
+
+	if ballInfo then
+		local enemies = ballInfo.enemies
+
+		if enemies and enemies[id] then
+			local keyId = enemies[id].id
+
+			table.remove(enemies, id)
+
+			local map = ballInfo.map
+
+			for i in pairs(map) do
+				if tonumber(map[i].enemiesKeyId) == tonumber(keyId) then
+					map[i].info = "10001"
+					map[i].enemiesKeyId = nil
+					map[i].expire_time = nil
+
+					break
+				end
+			end
+		end
+	end
+end
+
+function GalaxyTrip:checkAddBoderNum(ballId, id)
+	local function checkFourTimes(otherId)
+		if self.ballInfoArr[ballId].map[id].info == self:getRobberEnemyEventId() then
+			if self.ballInfoArr[ballId].map[otherId].info ~= self:getRobberEnemyEventId() then
+				self.ballInfoArr[ballId].map[otherId].borderIndex = 999
+
+				self:checkAddBoderNum(ballId, otherId)
+			end
+		elseif self.ballInfoArr[ballId].map[otherId].isRobberPos then
+			if self.ballInfoArr[ballId].map[id].borderIndex == 999 then
+				self.ballInfoArr[ballId].map[id].borderIndex = 0
+			end
+
+			if self.ballInfoArr[ballId].map[otherId].info == self:getRobberEnemyEventId() then
+				self.ballInfoArr[ballId].map[id].borderIndex = self.ballInfoArr[ballId].map[id].borderIndex + 1
+			end
+		end
+	end
+
+	local otherId = -1
+	local mapSize = {
+		9,
+		10
+	}
+	local evetNeedGrid = {
+		1,
+		1
+	}
+
+	if id % mapSize[1] ~= 1 then
+		otherId = id - 1
+
+		checkFourTimes(otherId)
+	end
+
+	if id % mapSize[1] ~= 0 then
+		otherId = id + 1
+
+		checkFourTimes(otherId)
+	end
+
+	if math.floor((id - 1) / mapSize[1]) ~= 0 then
+		otherId = id - mapSize[1]
+
+		checkFourTimes(otherId)
+	end
+
+	if math.floor((id - 1) / mapSize[1]) ~= mapSize[2] - 1 then
+		otherId = id + mapSize[1]
+
+		checkFourTimes(otherId)
 	end
 end
 
@@ -79,6 +414,10 @@ function GalaxyTrip:onGetGalaxyTripMapInfoBack(event)
 		end
 
 		data = data.map_info
+		local msg = messages_pb.log_partner_data_touch_req()
+		msg.touch_id = xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY
+
+		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
 	end
 
 	local ballId = data.id
@@ -138,6 +477,10 @@ function GalaxyTrip:onGetGalaxyTripMapInfoBack(event)
 	end
 
 	self:checkRedPoint()
+
+	if self:isShowTime() then
+		self:mustReturn()
+	end
 end
 
 function GalaxyTrip:dealBallMapInfo(ballId, map)
@@ -232,6 +575,10 @@ end
 
 function GalaxyTrip:getGalaxyTripGetMainNextTime()
 	return self.mainInfo.next_time
+end
+
+function GalaxyTrip:getGalaxyTripGetMainStartTime()
+	return self.mainInfo.start_time
 end
 
 function GalaxyTrip:getGalaxyTripGetMainScore()
@@ -401,6 +748,10 @@ function GalaxyTrip:getGridState(gridId, ballId)
 	local mapInfo = self:getBallInfo(ballId)
 	local opened = mapInfo.opened
 
+	if ballId == self:getBossMapId() then
+		return xyd.GalaxyTripGridStateType.NO_OPEN
+	end
+
 	if opened[tostring(gridId)] then
 		local idsArr = self:getGalaxyTripGetMainIds()
 
@@ -494,11 +845,8 @@ function GalaxyTrip:checkNextTimeDeal()
 
 			for i in pairs(idsArr) do
 				self:checkOpendWithAwards()
-				print("回來了")
 
 				if awardsArr[i] == nil and i == 1 or awardsArr[i] == nil and awardsArr[i - 1] == 1 then
-					print("置入了1")
-
 					awardsArr[i] = 1
 					self.ballInfoArr[self:getGalaxyTripGetCurMap()].opened[tostring(idsArr[i])] = "1#1"
 
@@ -513,6 +861,7 @@ function GalaxyTrip:checkNextTimeDeal()
 						local eventId = eventArr[1]
 						local eventType = xyd.tables.galaxyTripEventTable:getType(eventId)
 						local needTime = xyd.tables.galaxyTripEventTypeTable:getTime(eventType)
+						needTime = math.floor(needTime * (1 - xyd.models.galaxyTrip:getBuffExploreTimeCut()))
 
 						self:setGalaxyTripGetMainNextTime(xyd.getServerTime() + needTime)
 					end
@@ -534,8 +883,6 @@ function GalaxyTrip:checkOpendWithAwards()
 	if self.mainInfo.ids then
 		for i in pairs(self.mainInfo.ids) do
 			if self.mainInfo.awards and self.mainInfo.awards[i] and self.mainInfo.awards[i] == 1 and self.mainInfo.map_id and self.mainInfo.map_id ~= 0 and self.ballInfoArr[self.mainInfo.map_id] and not self.ballInfoArr[self.mainInfo.map_id].opened[tostring(self.mainInfo.ids[i])] then
-				print("置入了2")
-
 				self.ballInfoArr[self.mainInfo.map_id].opened[tostring(self.mainInfo.ids[i])] = "1#1"
 			end
 
@@ -653,6 +1000,10 @@ function GalaxyTrip:onGetGalaxyTripMapAwardsBack(event)
 	self:checkRedPoint()
 end
 
+function GalaxyTrip:onGalayTripSpecialBossBattleBack()
+	self:checkRedPoint()
+end
+
 function GalaxyTrip:checkCurMapLockInfo(ids)
 	local curMapId = self:getGalaxyTripGetCurMap()
 
@@ -729,8 +1080,61 @@ function GalaxyTrip:addMsgPartners(info)
 	return PartnersMsg
 end
 
+function GalaxyTrip:setSpecialBossBattleFight(specialId, partners, petID, isBoss)
+	local ballId = self:getBossMapId()
+	specialId = tonumber(specialId)
+	local msg = messages_pb:galaxy_trip_special_boss_battle_req()
+
+	if isBoss == 1 then
+		local events = xyd.tables.galaxyTripMapTable:getEvents(ballId)
+		local searchIndex = -1
+
+		for i in pairs(events) do
+			if events[i] == specialId then
+				searchIndex = i
+
+				break
+			end
+		end
+
+		msg.id = searchIndex
+	else
+		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(ballId)
+		local enemies = ballMapInfo.enemies
+		local isSearchIndex = -1
+
+		for i in pairs(enemies) do
+			if enemies[i].id == specialId and xyd.getServerTime() < enemies[i].expire_time then
+				isSearchIndex = i
+
+				break
+			end
+		end
+
+		if isSearchIndex == -1 then
+			xyd.alertTips(__("GALAXY_TRIP_TIPS_24"))
+
+			return
+		end
+
+		msg.id = isSearchIndex
+		msg.expire_time = specialId
+	end
+
+	msg.map_id = ballId
+	msg.is_boss = isBoss
+
+	for _, v in pairs(partners) do
+		table.insert(msg.partners, self:addMsgPartners(v))
+	end
+
+	msg.pet_id = petID
+
+	xyd.Backend.get():request(xyd.mid.GALAXY_TRIP_SPECIAL_BOSS_BATTLE, msg)
+end
+
 function GalaxyTrip:getIsMonster(eventType)
-	if eventType == xyd.GalaxyTripGridEventType.COMMON_ENEMY or eventType == xyd.GalaxyTripGridEventType.ELITE_ENEMY or eventType == xyd.GalaxyTripGridEventType.COMMON_BOSS or eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY or eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+	if eventType == xyd.GalaxyTripGridEventType.COMMON_ENEMY or eventType == xyd.GalaxyTripGridEventType.ELITE_ENEMY or eventType == xyd.GalaxyTripGridEventType.COMMON_BOSS then
 		return true
 	end
 
@@ -781,7 +1185,6 @@ function GalaxyTrip:onSetGalaxyTripFormation(event)
 					local partner = xyd.models.slot:getPartner(partnerID)
 
 					partner:setLock(0, xyd.PartnerFlag.GALAXY_TRIP_FORMATION)
-					dump(partnerID)
 				end
 			end
 		end
@@ -1084,8 +1487,19 @@ end
 function GalaxyTrip:getLeftTime()
 	if self.mainInfo and self.mainInfo.start_time then
 		local periodTime = xyd.tables.miscTable:getNumber("galaxy_trip_time", "value")
+		local disTime = periodTime + self.mainInfo.start_time - xyd.getServerTime()
 
-		return periodTime + self.mainInfo.start_time - xyd.getServerTime()
+		if disTime > 0 then
+			return disTime
+		end
+	end
+
+	return 0
+end
+
+function GalaxyTrip:getStartTime()
+	if self.mainInfo and self.mainInfo.start_time then
+		return self.mainInfo.start_time
 	end
 
 	return 0
@@ -1311,6 +1725,10 @@ function GalaxyTrip:checkRedPoint()
 		end
 	end
 
+	if self:getLeftTime() <= 0 then
+		isHasGetPoint = false
+	end
+
 	xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_MAP_CAN_GET_POINT, isHasGetPoint)
 
 	local isHasPassPoint = false
@@ -1318,6 +1736,10 @@ function GalaxyTrip:checkRedPoint()
 
 	if activityGalaxyTripMissionData and activityGalaxyTripMissionData:checkRedMaskOfAward() then
 		isHasPassPoint = true
+	end
+
+	if self:getLeftTime() <= 0 then
+		isHasPassPoint = false
 	end
 
 	xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP, isHasPassPoint)
@@ -1364,7 +1786,123 @@ function GalaxyTrip:getIsHasCanGetPoint()
 	return isHasRed
 end
 
-function GalaxyTrip:countOverDeal()
+function GalaxyTrip:mustReturn()
+	local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self:getGalaxyTripGetCurMap())
+
+	if ballMapInfo then
+		local ballMap = ballMapInfo.map
+		local isHasSearching = false
+
+		for i in pairs(ballMap) do
+			local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, self:getGalaxyTripGetCurMap())
+
+			if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
+				isHasSearching = true
+			end
+		end
+
+		if isHasSearching then
+			local msg = messages_pb:galaxy_trip_stop_back_grid_req()
+
+			xyd.Backend.get():request(xyd.mid.GALAXY_TRIP_STOP_BACK_GRID, msg)
+		end
+	end
+end
+
+function GalaxyTrip:searchTimeOver()
+	local galaxyTripMainWd = xyd.WindowManager.get():getWindow("galaxy_trip_main_window")
+	local galaxyTripMapWd = xyd.WindowManager.get():getWindow("galaxy_trip_map_window")
+
+	if galaxyTripMainWd or galaxyTripMapWd then
+		xyd.WindowManager.get():closeAllWindows({
+			main_window = true
+		})
+		xyd.alertTips(__("GALAXY_TRIP_TIPS_22"))
+	end
+
+	self:mustReturn()
+	self:timeOverDeal()
+
+	if self.mainInfo then
+		self.mainInfo.next_time = 0
+	end
+
+	xyd.addGlobalTimer(function ()
+		self.isMustSearchTimeOverSend = true
+
+		self:sendGalaxyTripGetMainBack()
+	end, 1, 1)
+	self:checkRedPoint()
+end
+
+function GalaxyTrip:cutCountOver()
+	local galaxyTripMainWd = xyd.WindowManager.get():getWindow("galaxy_trip_main_window")
+	local galaxyTripMapWd = xyd.WindowManager.get():getWindow("galaxy_trip_map_window")
+
+	if galaxyTripMainWd or galaxyTripMapWd then
+		xyd.WindowManager.get():closeAllWindows({
+			main_window = true
+		})
+		xyd.alertTips(__("GALAXY_TRIP_TIPS_23"))
+	end
+
+	self:timeOverDeal()
+
+	if self.mainInfo then
+		self.mainInfo.ids = {}
+		self.mainInfo.awards = {}
+		self.mainInfo.next_time = 0
+		self.mainInfo.is_batch = 0
+		self.mainInfo.map_id = 0
+		self.mainInfo.max_id = 0
+		self.mainInfo.teams = {}
+		self.mainInfo.god_skills = {}
+	end
+
+	if self.ballInfoArr then
+		for i in pairs(self.ballInfoArr) do
+			self.ballInfoArr[i] = nil
+		end
+	end
+
+	xyd.db.misc:setValue({
+		value = 0,
+		key = "galaxy_last_send_check_time"
+	})
+	xyd.addGlobalTimer(function ()
+		self:sendGalaxyTripGetMainBack()
+	end, 1, 2)
+	self:checkRedPoint()
+end
+
+function GalaxyTrip:timeOverDeal()
+	local cloneTimeIndex = self.timeIndex
+	local cloneTimeArr = xyd.cloneTable(self.timeArr)
+
+	for i = 1, cloneTimeIndex do
+		if cloneTimeArr[i] and cloneTimeArr[i] ~= -1 then
+			xyd.removeGlobalTimer(cloneTimeArr[i])
+
+			cloneTimeArr[i] = -1
+		end
+	end
+
+	local galaxyTripMainWd = xyd.WindowManager.get():getWindow("galaxy_trip_main_window")
+	local galaxyTripMapWd = xyd.WindowManager.get():getWindow("galaxy_trip_map_window")
+
+	if galaxyTripMainWd or galaxyTripMapWd then
+		xyd.WindowManager.get():closeAllWindows({
+			main_window = true
+		})
+	end
+end
+
+function GalaxyTrip:isShowTime()
+	if self:getLeftTime() < xyd.DAY_TIME then
+		return true
+	end
+
+	return false
 end
 
 return GalaxyTrip

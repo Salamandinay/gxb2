@@ -57,6 +57,7 @@ function ActivityEntranceTestPartnerWindow:ctor(name, params)
 	self.sort_type = params.sort_type
 	self.current_group = params.current_group or 0
 	self.partnerParams = params.partnerParams
+	self.hideBtnCheck = params.hideBtnCheck
 
 	if self.sort_key == "0_0" or not self.sort_key then
 		self.sort_key = "0_0_0"
@@ -529,6 +530,7 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 			end,
 			leftLabel = __("REMOVE"),
 			leftColor = xyd.ButtonBgColorType.red_btn_65_65,
+			hideBtnCheck = self.hideBtnCheck,
 			leftCallback = function ()
 				self.partner_.equipments[6] = 0
 				self.activityData.dataHasChange = true
@@ -537,6 +539,10 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 				xyd.WindowManager.get():closeWindow("item_tips_window")
 			end
 		}
+
+		if self.hideBtnCheck then
+			params.btnLayout = 0
+		end
 
 		xyd.WindowManager.get():openWindow("item_tips_window", params)
 	end
@@ -549,7 +555,8 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 		itemID = itemID,
 		equips = equips,
 		upArrowCallback = upArrowCallback,
-		fakePartner = self.partner_
+		fakePartner = self.partner_,
+		hideBtnCheck = self.hideBtnCheck
 	}
 
 	xyd.WindowManager.get():openWindow("item_tips_window", params)
@@ -671,7 +678,8 @@ function ActivityEntranceTestPartnerWindow:updateEquips()
 								equipedPartner = self.partner_,
 								itemID = itemID,
 								equips = equips,
-								fakePartner = self.partner_
+								fakePartner = self.partner_,
+								hideBtnCheck = self.hideBtnCheck
 							}
 
 							xyd.WindowManager.get():openWindow("item_tips_window", params)
@@ -958,6 +966,10 @@ function ActivityEntranceTestPartnerWindow:checkStarOriginUpdate()
 end
 
 function ActivityEntranceTestPartnerWindow:onClickStarOriginBtn()
+	xyd.openWindow("star_origin_detail_window", {
+		onlySee = true,
+		partner = self.partner_
+	})
 end
 
 function ActivityEntranceTestPartnerWindow:getStarOriginNodeLev(nodeTableID)
@@ -1065,6 +1077,11 @@ function ActivityEntranceTestPartnerWindow:updateData()
 	if self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID) then
 		self.defaultTab:setTabActive(1, true)
 	end
+end
+
+function ActivityEntranceTestPartnerWindow:onlySeeMode()
+	self.bg:SetActive(false)
+	self.suitGroup_:SetActive(false)
 end
 
 return ActivityEntranceTestPartnerWindow

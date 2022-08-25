@@ -18,12 +18,15 @@ function HouseHero:ctor(parentGO)
 	self.isPlayDialog_ = false
 	self.houseIdleCount_ = 1
 	self.houseIdleNum_ = 0
+	self.specailTouchNum_ = 0
 	self.actions = {
-		TOUCH = "hurt",
 		IDLE2 = "idle",
-		IDLE = "houseidle",
-		LIE = "lie",
 		TOUCH2 = "hit",
+		TOUCH_SPECAIL = "hit2",
+		LIE = "lie",
+		IDLE_SPECAIL = "specail_idle",
+		TOUCH = "hurt",
+		IDLE = "houseidle",
 		WALK = "walk",
 		SIT = "sit",
 		MOVE = "move"
@@ -331,11 +334,21 @@ function HouseHero:touch()
 		return
 	end
 
+	local random = math.random(6)
 	self.curActionType = xyd.HouseItemActionType.TOUCH
 	local actionName = self.actions.TOUCH
 
 	if self.heroModel_:hasAnimationName(self.actions.TOUCH2) then
 		actionName = self.actions.TOUCH2
+	end
+
+	if self.heroModel_:hasAnimationName(self.actions.TOUCH_SPECAIL) then
+		self.specailTouchNum_ = self.specailTouchNum_ + 1
+
+		if random < self.specailTouchNum_ then
+			actionName = self.actions.TOUCH_SPECAIL
+			self.specailTouchNum_ = 0
+		end
 	end
 
 	self:checkResetState()

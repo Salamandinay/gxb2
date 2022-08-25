@@ -883,9 +883,13 @@ end
 function ActivityEntranceTestData:getRedMarkState()
 	if not self:isFunctionOnOpen() then
 		return false
+	elseif self:isFirstRedMark() then
+		xyd.models.redMark:setMark(xyd.RedMarkType.ENTRANCE_TEST, true)
+
+		return true
 	end
 
-	local red = tonumber(self:getFreeTimes()) > 0
+	local red = false
 
 	if self:getEndTime() < xyd.getServerTime() then
 		red = false
@@ -908,7 +912,7 @@ function ActivityEntranceTestData:getBetRed()
 	else
 		betTime = tonumber(betTime)
 
-		if self:startTime() <= betTime and betTime < self:getEndTime() then
+		if betTime < self:startTime() + xyd.DAY_TIME * 3 or betTime > self:startTime() + xyd.DAY_TIME * 6 or xyd.isSameDay(betTime, tonumber(xyd.getServerTime())) then
 			return false
 		else
 			return true
@@ -1271,6 +1275,14 @@ function ActivityEntranceTestData:reqGambleInfo()
 end
 
 function ActivityEntranceTestData:getGambleInfo(dayIndex)
+	local partners = self.recordGamblePartners[dayIndex]
+
+	for i = 1, 6 do
+		if partners then
+			local partnerInfo = partners[1] and partners[1][i] and partners[1][i]
+		end
+	end
+
 	return self.recordGamblePartners[dayIndex] or {}
 end
 
@@ -1294,9 +1306,10 @@ function ActivityEntranceTestData:onGetGambleInfo(event)
 				lev = tonumber(p.level),
 				grade = tonumber(p.grade),
 				awake = tonumber(p.awake),
-				equips = tonumber(p.equips),
+				equips = p.equips,
+				equipments = p.equips,
 				partner_id = tonumber(p.partner_id),
-				potentials = tonumber(p.potentials),
+				potentials = p.potentials,
 				ex_skills = p.ex_skills,
 				skill_index = tonumber(p.skill_index),
 				pos = tonumber(p.pos)
@@ -1316,9 +1329,10 @@ function ActivityEntranceTestData:onGetGambleInfo(event)
 				lev = tonumber(p.level),
 				grade = tonumber(p.grade),
 				awake = tonumber(p.awake),
-				equips = tonumber(p.equips),
+				equips = p.equips,
+				equipments = p.equips,
 				partner_id = tonumber(p.partner_id),
-				potentials = tonumber(p.potentials),
+				potentials = p.potentials,
 				ex_skills = p.ex_skills,
 				skill_index = tonumber(p.skill_index),
 				pos = tonumber(p.pos)
@@ -1328,6 +1342,14 @@ function ActivityEntranceTestData:onGetGambleInfo(event)
 		end
 
 		self.recordGamblePartners[self.recordGambleDay] = result
+		local partners = self.recordGamblePartners[self.recordGambleDay]
+
+		for i = 1, 6 do
+			if partners then
+				local partnerInfo = partners[1] and partners[1][i] and partners[1][i]
+			end
+		end
+
 		self.recordGambleDay = nil
 
 		self:reqGambleInfo()

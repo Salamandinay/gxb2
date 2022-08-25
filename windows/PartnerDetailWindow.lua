@@ -5004,6 +5004,8 @@ function PartnerDetailWindow:onclickPartnerImg(cancel)
 		self.bubble:SetActive(false)
 	end, self, dialogInfo.time * 1000)
 	self.currentDialog = dialogInfo
+
+	self.partnerImg:effectClickFunction()
 end
 
 function PartnerDetailWindow:onclickShare()

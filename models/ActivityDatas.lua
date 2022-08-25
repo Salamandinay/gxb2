@@ -300,7 +300,9 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_GOLDFISH] = require("app.models.datas.ActivityGoldfishData"),
 	[xyd.ActivityID.ACTIVITY_GOLDFISH_GIFTBAG] = require("app.models.datas.ActivityGoldfishGiftbagData"),
 	[xyd.ActivityID.ACTIVITY_GOLDFISH_AWARDS] = require("app.models.datas.ActivityGoldfishAwardsData"),
-	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION] = require("app.models.datas.ActivityGalaxyTripMissionData")
+	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION] = require("app.models.datas.ActivityGalaxyTripMissionData"),
+	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN] = require("app.models.datas.ActivityLegendarySkinData"),
+	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN_GIFTBAG] = require("app.models.datas.ActivityLegendarySkinGiftbagData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

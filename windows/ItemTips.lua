@@ -57,6 +57,7 @@ function ItemTips:ctor(parentGO, params, windowDepth)
 	self.is_spare_crystal = params.is_spare_crystal
 	self.collectionInfo_ = params.collectionInfo
 	self.windowDepth_ = windowDepth
+	self.hideBtnCheck = params.hideBtnCheck
 
 	self:initLayout()
 end
@@ -1390,6 +1391,10 @@ function ItemTips:showArtifactDesc()
 					label3.color = Color.New2(2593823487.0)
 					label2.text = __("EQUIP_LEVELUP_TEXT_9")
 				end
+			end
+
+			if self.hideBtnCheck then
+				check_button:SetActive(false)
 			end
 
 			table.insert(self.descs_, label2)

@@ -225,7 +225,7 @@ GAMBLE_UP_WOMAN_TALK_4,Distributeur Avancé Parole 4
 GAMBLE_UP_WOMAN_TALK_5,Distributeur Avancé Parole 5
 OPEN_SLOT_TIPS,Voulez-vous utiliser {1} Gemmes pour augmenter la Capacité Max de Fille de {2} ?
 NOT_ENOUGH,{1} insuffisant(e)
-LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans l'équipe de l'Arène Ultime|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans le Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire|Cette Fille est dans l'équipe configurée.
+LOCK_PARTNER_TIPS,Cette Fille est verrouillée|Cette Fille est dans l'équipe de l'Arène|Cette Fille est dans l'équipe de l'Arène d'Élite|Cette Fille est dans l'équipe de l'Arène 3V3|Cette Fille est dans l'équipe de l'Arène Ultime|Cette Fille est dans la liste de Fille du fond d'écran|Cette Fille est dans votre Dortoir|Cette Fille est dans le Gîte d'Excursion Scolaire|Cette Fille est dans les Bâtiments d'Excursion Scolaire|Cette Fille est dans l'équipe configurée|Cette Fille est dans l'équipe de Bonus d'Exploration.
 ALTAR_DECOMPOSE_TIP,Êtes-vous sûr de vouloir transférer une Fille supérieure à 3 étoiles ?
 ALTAR_HERO_NUM_TEXT,Restant：
 ALTAR_SMART_TEXT,Auto
@@ -1445,7 +1445,7 @@ TEN_STAR_EXCHANGE_TEXT01,Choisissez la même Fille
 TEN_STAR_EXCHANGE_TEXT02,Choisissez une Fille 10 étoiles !
 TEN_STAR_EXCHANGE_TEXT04,Choisissez les matériaux nécessaires
 TEN_STAR_EXCHANGE_SUMMARY,"En utilisant 5 Filles Cibles et des Diplômes, vous pourrez échanger une Fille 10 étoiles contre la Fille Cible 10 étoiles de la même Maison. Les équipements et le niveau resteront identiques !"
-TEN_STAR_EXCHANGE_HELP,"1. Échanger une Fille 10 étoiles (ou plus) vous permet d'échanger une Fille 10 étoiles (ou plus) contre celle de votre choix dans la même Maison.（Les 5 copies de la Fille que vous avez choisies disparaîtront）|2. Échanger une Fille 10 étoiles nécessite d'utiliser 5 Diplômes et un certain nombre de Filles Matérielles 5 étoiles. Plus le niveau de Libération est élevé, plus il faut de Filles 5 étoiles.|3. Le Niveau, le grade, les équipements, le cristal, l'antiquité et niveau de libération de la Fille seront transférés sur la nouvelle Fille.|4. La Fille héritera de la Faveur de la Fille 5 étoiles ayant le plus de Faveur.|5. Si une des Filles 5 étoiles a un Serment avec vous, la Fille 10 étoile aura également un Serment avec vous après le remplacement. Les Bagues de Serment portées par les autres Filles ne vous seront pas rendues.|6. Les Filles utilisées seront transformées en Pièces, Jus d'EXP et Plateau-Repas après l'échange.|7. Les Diplômes peuvent être obtenus dans les événements exclusifs."
+TEN_STAR_EXCHANGE_HELP,"1. Cette fonction vous permet d'échanger une Fille 10 étoiles (ou plus) contre celle de votre choix dans la même Maison (les copies de la Fille Matérielle que vous avez choisies disparaîtront après l'échange).|2. Échanger une Fille 10 étoiles nécessite d'utiliser 5 Diplômes et un certain nombre des copies de Fille Matérielle 5 étoiles.|3. Le Niveau, le Grade, les Équipements, le Cristal, l'Antiquité et le niveau de Libération de la Fille seront transférés sur la nouvelle Fille.|4. La nouevlle Fille obtenue via l'échange héritera de la Faveur d'une copie de Fille Matérielle 5 étoiles ayant le plus de Faveur.|5. Si une des Filles Matérielles 5 étoiles a un Serment avec vous, la Fille 10 étoiles (ou plus) aura également un Serment avec vous après l'échange (les Bagues de Serment portées par les autres Filles ne vous seront pas rendues).|6. Les Filles Matérielles utilisées seront transformées en Pièce d'Or, Jus d'EXP et Plateau-Repas après l'échange.|7. Les Diplômes peuvent être obtenus dans les événements exclusifs."
 TEN_STAR_EXCHANGE_TEXT05,Échanger {1} 10 étoiles ?
 TEN_STAR_EXCHANGE_TEXT06,Vous ne pouvez pas choisir la Fille 10 étoiles sélectionnée contre elle-même
 TEN_STAR_EXCHANGE_TEXT03,Êtes-vous sûr de vouloir échanger ?
@@ -4835,11 +4835,11 @@ DRESS_ITEM_UP_WINDOW_3,Ne nécessite pas de Fragment
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,Détails du Sondage
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,Voter
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,Vainqueur
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Comme vous le savez déjà, notre chère Lord Dracula est la grande gagnante des Élections de Miss Yume 2022 !\nUn skin lui sera confectionné... Mais lequel ? Nous vous proposons 4 esquisses différentes, à vous de voter pour celle qui vous plaît le plus ! L'esquisse ayant le plus (+) de vote sera le modèle du Skin exclusif qui sera dédié à Lord Dracula !"
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A. L'Ambassadrice
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B. Miss Yume
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C. Démon Intérieur
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,D. La Dame Noire
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,"Selon notre dernier sondage, l'esquisse - L'Ambassadrice de Lord Dracula a obtenu le plus de vote pour son nouveau Skin.\nVeuillez choisir parmi les 4 modèles suivants~"
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,Modèle 1
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,Modèle 2
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,Modèle 3
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT08,Modèle 4
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT09,Voter
 DRESS_CHOOSE_SHOW_WINDOW_1,Fragment de Tenue sélectionné
 DRESS_CHOOSE_SHOW_WINDOW_2,Aucun Fragment de Tenue sélectionné
@@ -4976,7 +4976,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Des Larmes Partagées
+WARMUP_ARENA_TASK_INFO_2,Le Secret de Melly
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -7155,7 +7155,7 @@ GALAXY_TRIP_TEXT29,En cours...
 GALAXY_TRIP_TEXT30,Récompenses
 GALAXY_TRIP_TEXT31,Bonus
 GALAXY_TRIP_TEXT32,Ennemis
-GALAXY_TRIP_TEXT33,Difficulté
+GALAXY_TRIP_TEXT33,Niveau
 GALAXY_TRIP_TEXT34,Défier
 GALAXY_TRIP_TEXT35,Avancée Actuelle
 GALAXY_TRIP_TEXT36,Accès à la Planète suivante
@@ -7198,8 +7198,8 @@ GALAXY_TRIP_HELP01,"
 Conditions d\'ouverture et durée de la saison|1. Le Voyage Galactique est ouvert en continu pendant une saison.
 Durée d\'une saison : 28 jours
 Période d\'exploration : 27 jours
-Période d\'affichage : 1 jour|2. Cette fonctionnalité est débloquée après avoir passé l\'étape 16-4 dans Campagne et en possédant 1 Fille 10 étoiles.|Règles|1. Le Voyage Galactique comprend plusieurs Planètes dans lesquelles vous explorerez des Sites. Plus vous voyagerez loin dans la galaxie, plus les ennemis que vous rencontrerez seront forts et plus les récompenses que vous pourrez obtenir seront nombreuses.|2. Chaque Planète comprend différents obstacles. Si vous explorez un Site où se trouve un ennemi, vous pourrez immédiatement terminer l\'exploration de ce Site en le vainquant, puis recevoir une récompense. Si vous explorez un Site où il n\'y a pas d\'ennemi, le temps de complétion du Site sera plus long (dépendamment du Site en question), avant de pouvoir recevoir les récompenses correspondantes.|3. Vous commencerez votre exploration dans la Planète de départ. Remplissez les conditions requises pour pouvoir déverrouiller la Planète Suivante (appuyez sur - Avancée dans la Carte de la Planète pour voir les conditions requises).|4. Vous ne pouvez explorer qu\'une seule Planète à la fois. Si vous changez de Planète au milieu d\'une exploration en cours, vous perdrez votre avancée actuelle dans cette Planète. Toutefois, vos Points d\'Exploration obtenus ne seront pas affectés.|5. Après avoir passé le Point d\'Arrivée de la quatrième Planète, vous débloquerez la Planète de l\'Éternité dans laquelle vous serez amenez à vaincre les Pirates de l\'Espace et le Tyran de la Galaxie pour obtenir plus de récompenses.|6. Vos Points d\'Exploration peuvent être utilisés dans le Pass du Voyageur pour obtenir les récompenses correspondantes. Vous pouvez échanger des Pierres Galactiques contre les récompenses saisonnières et les récompenses permanentes de la Boutique Galactique. |7. À la fin de la saison, toutes vos Avancées d\'Exploration et vos Points d\'Exploration seront perdus, alors n\'oubliez pas de récupérer vos récompenses dans le Pass du Voyageur."
-GALAXY_TRIP_HELP02,"Remarques - Carte des Planètes|1. Le nombre de Points d'Exploration obtenables est identique dans chaque Planète, cependant, les récompenses que vous obtiendrez seront plus grandes à mesure que vous explorerez la galaxie.|Détails :|Ennemi Ordinaire : Défiable en plusieurs fois, +2 Points d'Exploration après l'avoir vaincu.|Ennemi Élite : Défiable en plusieurs fois, +4 Points d'Exploration après l'avoir vaincu.|Ennemi Suprême : À vaincre en un seul défi, +10 Points d'Exploration après l'avoir vaincu.|Néant : À explorer pendant 2 heures, +1 Point d'Exploration.|Satellite Mystérieux : À explorer pendant 1 heure, +1 Point d'Exploration et un Bonus de combat disponible dans la Planète actuelle après l'avoir explorée.|Caisse de Provision : À explorer pendant 12 heures, +1 Point d'Exploration et une récompense supplémentaire après l'avoir explorée.|Pirate de l'Espace : À vaincre en un seul défi, +10 Points d'Exploration après l'avoir vaincu.|Tyran de la Galaxie : À vaincre en un seul défi, le nombre de Points d'Exploration obtenables varie selon le niveau de difficulté du Tyran de la Galaxie.|2. Le Point Départ et le Point d'Arrivée se situent respectivement en bas et en haut de la Carte. Commencez votre Exploration par la case Point de Départ, puis explorez les Sites qui se trouvent autour des Sites déjà explorés.|3. Appuyez sur Itinéraire puis sélectionnez un ou plusieurs Sites à explorer afin que l'Exploration commence dans cet ordre-ci. (Impossible d'ajouter des Sites d'ennemis à votre itinéraire !) |4. En appuyant sur Rappeler après avoir sélectionné votre Itinéraire, vous interromperez l'Exploration en cours, et recevrez des récompenses immédiatement. Vous pourrez ensuite sélectionner un nouvel itinéraire et relancer une nouvelle Exploration.|5. Chaque Site exploré après avoir atteint 30%% d'Avancée d'Exploration sur une Planète (Planète de l'Éternité non-inclue), réduira l'Attaque et les PV de l'Ennemi Suprême de la Planète de 1%% (40%% de réduction au maximum).|6. Vous recevrez 10 Coupons de Défi chaque tour (Stockage maximum : 25 Coupons de Défi). Consommez 1 Coupon de Défi pour défier 1 fois un ennemi d'une Planète (défier les ennemis de la Planète de l'Éternité ne vous consommera aucun Coupon de Défi)."
+Période d\'affichage : 1 jour|2. Cette fonctionnalité est débloquée après avoir passé l\'étape 16-4 dans Campagne et en possédant 1 Fille 10 étoiles.|Règles|1. Le Voyage Galactique comprend plusieurs Planètes dans lesquelles vous explorerez des Sites. Plus vous voyagerez loin dans la galaxie, plus les ennemis que vous rencontrerez seront forts et plus les récompenses que vous pourrez obtenir seront nombreuses.|2. Chaque Planète comprend différents obstacles. Si vous explorez un Site où se trouve un ennemi, vous pourrez immédiatement terminer l\'exploration de ce Site en le vainquant, puis recevoir une récompense. Si vous explorez un Site où il n\'y a pas d\'ennemi, le temps de complétion du Site sera plus long (dépendamment du Site en question), avant de pouvoir recevoir les récompenses correspondantes.|3. Vous commencerez votre exploration dans la Planète de départ. Remplissez les conditions requises pour pouvoir déverrouiller la Planète Suivante (appuyez sur - Avancée dans la Carte de la Planète pour voir les conditions requises).|4. Vous ne pouvez explorer qu\'une seule Planète à la fois. Si vous changez de Planète au milieu d\'une exploration en cours, vous perdrez votre avancée actuelle dans cette Planète. Toutefois, vos Points d\'Exploration obtenus ne seront pas affectés.|5. Après avoir rempli les conditions de la quatrième Planète, vous débloquerez la Planète de l\'Éternité dans laquelle vous serez amenez à vaincre les Pirates de l\'Espace et le Tyran de la Galaxie pour obtenir plus de récompenses.|6. Vos Points d\'Exploration peuvent être utilisés dans le Pass du Voyageur pour obtenir les récompenses correspondantes. Vous pouvez échanger des Pierres Galactiques contre les récompenses saisonnières et les récompenses permanentes de la Boutique Galactique.|7. À la fin de la Phase d\'Exploration, toutes les explorations en cours seront immédiatement rappelées et les récompenses pour les Sites terminés pourront toujours être récupérées pendant la Période d\'Affichage. Cependant les Points d\'Exploration obtenus ne seront pas comptabilisés dans pour le Classement.|8. À la fin de la Période d\'Affichage, toutes vos Avancées d\'Exploration et vos Points d\'Exploration seront perdus, alors n\'oubliez pas de récupérer vos récompenses dans le Pass du Voyageur."
+GALAXY_TRIP_HELP02,"Remarques - Carte des Planètes|1. Le nombre de Points d'Exploration obtenables est identique dans chaque Planète, cependant, les récompenses que vous obtiendrez seront plus grandes à mesure que vous explorerez la galaxie.|Détails :|Ennemi Ordinaire : Défiable en plusieurs fois, +2 Points d'Exploration après l'avoir vaincu.|Ennemi Élite : Défiable en plusieurs fois, +4 Points d'Exploration après l'avoir vaincu.|Ennemi Suprême : À vaincre en un seul défi, +10 Points d'Exploration après l'avoir vaincu.|Néant : À explorer pendant 2 heures, +1 Point d'Exploration.|Satellite Mystérieux : À explorer pendant 1 heure, +1 Point d'Exploration et un Bonus de combat disponible dans la Planète actuelle après l'avoir explorée.|Caisse de Provision : À explorer pendant 12 heures, +1 Point d'Exploration et une récompense supplémentaire après l'avoir explorée.|Pirate de l'Espace : À vaincre en un seul défi, +10 Points d'Exploration après l'avoir vaincu.|Tyran de la Galaxie : À vaincre en un seul défi, le nombre de Points d'Exploration obtenables varie selon le niveau de difficulté du Tyran de la Galaxie.|2. Le Point Départ et le Point d'Arrivée se situent respectivement en bas et en haut de la Carte. Commencez votre Exploration par la case Point de Départ, puis explorez les Sites qui se trouvent autour des Sites déjà explorés.|3. Appuyez sur Itinéraire puis sélectionnez un ou plusieurs Sites à explorer afin que l'Exploration commence dans cet ordre-ci. (Impossible d'ajouter des Sites d'ennemis à votre itinéraire !) |4. En appuyant sur Rappeler après avoir sélectionné votre Itinéraire, vous interromperez l'Exploration en cours, et recevrez des récompenses immédiatement. Vous pourrez ensuite sélectionner un nouvel itinéraire et relancer une nouvelle Exploration.|5. Chaque Site exploré après avoir atteint 30%% d'Avancée d'Exploration sur une Planète (Planète de l'Éternité non-inclue), réduira l'Attaque et les PV de l'Ennemi Suprême de la Planète de 1%% (40%% de réduction au maximum).|6. Vous recevrez 10 Coupons de Défi chaque jour (Stockage maximum : 25 Coupons de Défi). Consommez 1 Coupon de Défi pour défier 1 fois un ennemi d'une Planète (défier les ennemis de la Planète de l'Éternité ne vous consommera aucun Coupon de Défi).|7. Après avoir débloqué la dernière planète, des Pirates de l'Espaces envahiront la Planète de l'Éternité à chaque jour de connexion. Le nombre de nouveaux Pirates de l'Espaces augmentera en fonction du nombre de planètes débloquées. Les Pirate de l'Espaces disparaîtront après 72 heures, ne les laissez pas s'enfuir !|8. Après avoir vaincu un Tyran de la Galaxie d'un certain niveau de difficulté, vous pourrez immédiatement récupérer ses récompenses correspondantes, et celles des niveaux plus bas (si ces dernières n'ont pas encore été récupérées)."
 GALAXY_TRIP_TEXT57,Vous avez atteint votre limite de Site explorable par itinéraire !
 GALAXY_TRIP_TEXT58,En cours d'Exploration
 GALAXY_TRIP_TEXT59,Inexploré
@@ -7214,9 +7214,9 @@ GALAXY_TRIP_TIPS_14,Impossible durant une exploration en cours !
 GALAXY_TRIP_TIPS_15,"Contenu à venir, veuillez patienter~"
 GALAXY_TRIP_HELP03,"Équipe de Bonus d'Exploration|1. Configurez trois équipes pour obtenir des bonus lors de vos explorations. Chacune de ces équipes vous apportera des bonus différents : Bonus de Combat, Bonus de Gains d'Exploration et Bonus de Réduction de Temps d'Exploration.|2. Les bonus apportés par ces équipes varieront en fonction du niveau de Libération de vos Filles placées (le Bonus sera renforcé lorsque le niveau total de Libération de vos Filles atteint 5/10/15/20/25/30). Si aucune de vos Filles placées dans votre Équipe de Bonus n'est au minimum à 11 étoiles (Libérée 1), aucun bonus ne sera fourni à votre équipe d'exploration. |3. Les Filles placées dans vos Équipes de Bonus peuvent également être utilisées dans votre équipe de bataille dans le Voyage Galactique.|4. Vous ne pouvez pas modifier votre Équipe de Bonus pendant une exploration en cours."
 BATTLE_INFORMATION_TANK,Dégâts subis
-GALAXY_TRIP_TIPS_16,Inaccessible pendant une exploration en cours
+GALAXY_TRIP_TIPS_16,Inaccessible pendant une exploration en cours !
 GALAXY_TRIP_TIPS_17,Veuillez d'abord récupérer les récompenses des Sites explorés.
-GALAXY_TRIP_TIPS_18,Débloquée après avoir atteint le Point d'Arrivée de la {1}e Planète.
+GALAXY_TRIP_TIPS_18,Débloquée après avoir rempli les conditions de la {1}e Planète
 GALAXY_TRIP_TEXT66,Échoué
 GALAXY_TRIP_TEXT67,Aucune Récompense
 GALAXY_TRIP_TEXT68,Boutique Galactique
@@ -7226,4 +7226,64 @@ GALAXY_TRIP_TEXT71,Pass du Voyageur
 GALAXY_TRIP_TEXT72,Portail du Cosmos
 GALAXY_TRIP_TEXT73,Autel\nStellaire
 GALAXY_TRIP_TIPS_19,"La Planète de l'Éternité sera débloquée ce vendredi, veuillez patienter~"
-GALAXY_TRIP_TIPS_20,Impossible lorsque la Fille est dans votre équipe d'Exploration Galactique
+ACTIVITY_LEGENDARY_SKIN_HELP,"1. Durant cet événement, consommez vos Patrons de Couture et obtenez un Skin Légendaire.|2. Pour chaque Patron de Couture consommé, vous obtiendrez des Bobines de Fil, une récompense aléatoire et 10 Créations Haute-Couture.|3. Lorsque vous aurez obtenu 4000 Bobines de Fil, vous obtiendrez automatiquement un Skin Légendaire.|4. Échangez vos Créations Haute-Couture contre des récompenses dans la boutique.|5. Les Patrons de Couture sont obtenables dans le Pack du Grand Couturier.|6. Après la fin de l'événement, les Patrons de Couture, Créations Haute-Couture et Bobines de Fil non-utilisés seront conservés, et vous pourrez les utiliser lors de la réouverture de l'événement."
+ACTIVITY_LEGENDARY_SKIN_TEXT01,Taux d'obtention
+ACTIVITY_LEGENDARY_SKIN_TEXT04,Récompense Basique
+ACTIVITY_LEGENDARY_SKIN_TEXT05,"Pour chaque Patron de Couture consommé, obtenez 10 Créations Haute-Couture."
+ACTIVITY_LEGENDARY_SKIN_TEXT06,Récompense Avancée
+ACTIVITY_LEGENDARY_SKIN_TEXT07,"Pour chaque Patron de Couture consommé, obtenez une certaine quantité de Bobine de Fil."
+ACTIVITY_LEGENDARY_SKIN_TEXT02,Récompense Aléatoire
+ACTIVITY_LEGENDARY_SKIN_TEXT03,"Pour chaque Patron de Couture consommé, obtenez aléatoirement une récompense ci-dessous."
+ACTIVITY_LEGENDARY_SKIN_TEXT08,Récompense(s) Obtenue(s)
+ACTIVITY_LEGENDARY_SKIN_TEXT09,Boutique d'Échange
+ACTIVITY_LEGENDARY_SKIN_TEXT10,Consommez [c][ff8b45]{1}[-][/c] Bobines de Fil et obtenez \nle Skin Légendaire de Maïa - [c][ff8b45]{2}[-][/c]
+ACTIVITY_LEGENDARY_SKIN_GIFTBAG_TEXT01,Aller à
+GALAXY_TRIP_TIPS_20,Impossible de déverrouiller cette Fille qui est dans votre équipe d'Exploration Galactique !
+GALAXY_TRIP_TEXT74,Exploré
+GALAXY_TRIP_TEXT75,Phase d'Exploration
+GALAXY_TRIP_TEXT76,Période d'Affichage
+GALAXY_TRIP_TIPS_21,Impossible durant la Période d'Affichage !
+GALAXY_TRIP_TIPS_22,"La Phase d'Exploration est désormais terminée, les résultats s'afficheront sous peu..."
+GALAXY_TRIP_TIPS_23,"La Période d'Affichage est désormais terminée, la nouvelle saison va bientôt commencer."
+GALAXY_TRIP_TIPS_24,Cet ennemi a disparu !
+SHRINE_HURDLE_AUTO_HELP,1.開始自動戰鬥後，學長將以設定好的陣容戰鬥並進入下一層。|2.進入下一層時，將優先選擇非戰鬥層，獎勵層和回復層都將默認選擇第1個選項。學長可選擇是否進入回復層或商店層。|3.如選擇進入商店層，則將會按順序依次購買或升級增益直至試煉金幣不足，學長可選擇是否在進入商店層時停止自動。|4.進入最終BOSS層或離開試煉介面將停止自動戰鬥。學長可選擇有戰姬死亡時是否停止自動，如選擇否，則將按順序自動填充戰姬繼續戰鬥直至所有戰姬死亡。
+SHRINE_HURDLE_AUTO_TEXT01,自動戰鬥
+SHRINE_HURDLE_AUTO_TEXT02,戰姬死亡停止自動
+SHRINE_HURDLE_AUTO_TEXT03,是否進入回複層
+SHRINE_HURDLE_AUTO_TEXT04,是否進入商店層？
+SHRINE_HURDLE_AUTO_TEXT05,進入商店層停止自動
+SHRINE_HURDLE_AUTO_TEXT06,戰鬥層陣容
+SHRINE_HURDLE_AUTO_TEXT07,設置陣容
+SHRINE_HURDLE_AUTO_TEXT08,開始
+INVITATION_ENTRANCE,邀請
+INVITATION_SWITCH,切換身份
+INVITATION_HELP,幫助文本待填充
+INVITATION_TEXT01,新生列表
+INVITATION_TEXT02,我的邀請碼
+INVITATION_TEXT03,複製鏈接
+INVITATION_TEXT04,一鍵分享
+INVITATION_TEXT05,5日未登入遊戲可解除綁定
+INVITATION_TEXT06,是否解除綁定該新生？
+INVITATION_TEXT07,每週首次
+INVITATION_TEXT08,我的前輩
+INVITATION_TEXT09,輸入邀請碼
+INVITATION_TEXT10,完成邀請綁定立即獲得獎勵
+INVITATION_TEXT11,階段{1}
+INVITATION_TEXT12,目標
+INVITATION_TEXT13,完成成長日記第{1}章
+INVITATION_TEXT14,Récompense
+INVITATION_TEXT15,完成邀請綁定後發放獎勵
+INVITATION_TEXT16,Les récompenses seront envoyées par courrier
+INVITATION_RANK_TEXT01,Classement
+INVITATION_RANK_TEXT02,Points
+INVITATION_AWARD_TEXT01,Récompense
+INVITATION_AWARD_TEXT02,新生達成階段目標 {1}
+INVITATION_GIFT_TEXT01,收下
+GALAXY_TRIP_TEXT77,Les récompenses de ce niveau ont déjà été collectées.
+ACTIVITY_LEGENDARY_SKIN_TEXT11,1 fois
+ACTIVITY_LEGENDARY_SKIN_TEXT12,10 fois
+ACTIVITY_FOOD_CONSUME_HELP,1.活動期間，使用戰姬即可交換獲得指定道具。其中，6星戰姬必須使用指定戰姬，9星和10星戰姬交換時不做限制。|2.完成交換後，將會返還等同於回退此戰姬而獲得的資源（不包括戰姬碎片和娃娃）。
+ACTIVITY_FOOD_CONSUME_TEXT01,是否確認交換？
+ACTIVITY_FOOD_CONSUME_TEXT02,交換已達次數上限，無法進行交換哦~
+GALAXY_TRIP_TEXT78,Le niveau max a été atteint !
+GALAXY_TRIP_TEXT79,Le niveau max a été atteint !

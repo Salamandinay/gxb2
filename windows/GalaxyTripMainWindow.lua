@@ -151,40 +151,6 @@ function GalaxyTripMainWindow:registerEvent()
 		})
 	end)
 	UIEventListener.Get(self.teamBtn.gameObject).onClick = handler(self, function ()
-		local curMapId = xyd.models.galaxyTrip:getGalaxyTripGetCurMap()
-
-		if curMapId ~= 0 then
-			local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(curMapId)
-
-			if ballMapInfo then
-				local ballMap = ballMapInfo.map
-
-				for i in pairs(ballMap) do
-					local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curMapId)
-
-					if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
-						xyd.alertTips(__("GALAXY_TRIP_TIPS_17"))
-
-						return
-					end
-
-					if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
-						xyd.alertTips(__("GALAXY_TRIP_TIPS_16"))
-
-						return
-					end
-				end
-			end
-
-			local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
-
-			if isBatch and isBatch == 1 then
-				xyd.alertTips(__("GALAXY_TRIP_TIPS_14"))
-
-				return
-			end
-		end
-
 		dump(xyd.models.galaxyTrip:getGalaxyTripGetMainTeamsInfo())
 		xyd.openWindow("galaxy_trip_formation_window", {
 			formation = xyd.models.galaxyTrip:getGalaxyTripGetMainTeamsInfo()
@@ -193,12 +159,22 @@ function GalaxyTripMainWindow:registerEvent()
 end
 
 function GalaxyTripMainWindow:layout()
-	self.endLabel.text = __("END")
+	self.endLabel.transform:SetSiblingIndex(0)
+	self.timeLabel.transform:SetSiblingIndex(1)
+
+	self.endLabel.text = __("GALAXY_TRIP_TEXT75")
 	self.teamBtnLabel.text = __("GALAXY_TRIP_TEXT22")
 	self.timeCount = import("app.components.CountDown").new(self.timeLabel)
+	local disTime = xyd.models.galaxyTrip:getLeftTime()
+
+	if xyd.DAY_TIME < disTime then
+		disTime = disTime - xyd.DAY_TIME
+	else
+		self.endLabel.text = __("GALAXY_TRIP_TEXT76")
+	end
 
 	self.timeCount:setInfo({
-		duration = xyd.models.galaxyTrip:getLeftTime(),
+		duration = disTime,
 		callback = function ()
 			self:waitForTime(2, function ()
 				self.timeLabel.text = "00:00:00"
@@ -206,9 +182,10 @@ function GalaxyTripMainWindow:layout()
 		end
 	})
 
-	if xyd.Global.lang == "fr_fr" then
-		self.endLabel.transform:SetSiblingIndex(0)
-		self.timeLabel.transform:SetSiblingIndex(1)
+	local wnd = xyd.getWindow("galaxy_trip_map_window")
+
+	if wnd then
+		xyd.closeWindow("galaxy_trip_map_window")
 	end
 
 	self.backBtnLabel.text = __("GALAXY_TRIP_TEXT21")
@@ -338,12 +315,24 @@ function GalaxyItemClass:update(index, realIndex, info)
 	local allMaxId = xyd.models.galaxyTrip:getGalaxyTripGetMaxMap()
 	local mapSeason = xyd.tables.galaxyTripMapTable:getBeginSeason(self.ballId)
 
-	if allMaxId < self.ballId or xyd.models.galaxyTrip:getGalaxyTripGetMainCount() < mapSeason then
+	if self.ballId ~= xyd.models.galaxyTrip:getBossMapId() and (allMaxId < self.ballId or xyd.models.galaxyTrip:getGalaxyTripGetMainCount() < mapSeason) then
 		xyd.setUISpriteAsync(self.galaxyImg, nil, "galaxy_trip_ball_lock", nil, , true)
 	else
 		local imgIcon = xyd.tables.galaxyTripMapTable:getIconText(self.ballId)
 
 		xyd.setUISpriteAsync(self.galaxyImg, nil, imgIcon, nil, , true)
+	end
+
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		local numArr = xyd.tables.miscTable:split2num("galaxy_trip_black_hole_open", "value", "|")
+
+		if numArr[1] < allMaxId then
+			local imgIcon = xyd.tables.galaxyTripMapTable:getIconText(self.ballId)
+
+			xyd.setUISpriteAsync(self.galaxyImg, nil, imgIcon, nil, , true)
+		else
+			xyd.setUISpriteAsync(self.galaxyImg, nil, "galaxy_trip_ball_lock", nil, , true)
+		end
 	end
 
 	self.redPoint.gameObject:SetActive(false)
@@ -367,6 +356,14 @@ function GalaxyItemClass:update(index, realIndex, info)
 	else
 		self.galaxyStateCon.gameObject:SetActive(false)
 	end
+
+	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
+		self.progress.gameObject:SetActive(false)
+
+		self.galaxyName.alignment = NGUIText.Alignment.Center
+
+		self.galaxyName:X(-72)
+	end
 end
 
 function GalaxyItemClass:getGameObject()
@@ -379,14 +376,18 @@ function GalaxyItemClass:onTouch()
 	if self.ballId == xyd.models.galaxyTrip:getBossMapId() then
 		local numArr = xyd.tables.miscTable:split2num("galaxy_trip_black_hole_open", "value", "|")
 
-		if numArr[1] >= allMaxId then
+		if numArr[1] < allMaxId then
+			if xyd.getServerTime() < xyd.tables.miscTable:getNumber("galaxy_trip_black_hole_open_time", "value") then
+				xyd.alertTips(__("GALAXY_TRIP_TIPS_19"))
+
+				return
+			end
+
+			xyd.WindowManager.get():openWindow("galaxy_trip_enter_window", {
+				ballId = self.ballId
+			})
+		else
 			xyd.alertTips(__("GALAXY_TRIP_TIPS_18", numArr[1]))
-
-			return
-		end
-
-		if xyd.getServerTime() < xyd.tables.miscTable:getNumber("galaxy_trip_black_hole_open_time", "value") then
-			xyd.alertTips(__("GALAXY_TRIP_TIPS_19"))
 
 			return
 		end

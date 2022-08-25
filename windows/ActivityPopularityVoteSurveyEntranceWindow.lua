@@ -33,6 +33,11 @@ function ActivityPopularityVoteSurveyEntranceWindow:initUIComponent()
 	self.labelName.text = xyd.tables.partnerTable:getName(51017)
 	self.labelTicket.text = __("ACTIVITY_POPULARITY_VOTE_TITLETEXT1")
 	self.btnEntranceLabel.text = __("ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02")
+
+	if xyd.Global.lang == "en_en" then
+		self.labelTitle:Y(327)
+		self.labelDesc:Y(297)
+	end
 end
 
 function ActivityPopularityVoteSurveyEntranceWindow:register()
