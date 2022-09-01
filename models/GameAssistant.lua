@@ -595,6 +595,14 @@ function GameAssistant:reqArenaBattle()
 		return false
 	end
 
+	if xyd.models.arena:getIsOld() ~= nil then
+		local newArenaStartTimeLeft = xyd.models.arena:getStartTime() + xyd.models.arena:getNewSeasonOpenTime() - xyd.getServerTime()
+
+		if newArenaStartTimeLeft > 0 and newArenaStartTimeLeft < xyd.models.arena:getNewSeasonOpenTime() then
+			return false
+		end
+	end
+
 	local msg = messages_pb.arena_fight_batch_req()
 	msg.pet_id = battleInfo.pet_id
 
@@ -1364,8 +1372,17 @@ function GameAssistant:jungeIfCanDoTab1()
 	end
 
 	if self.presetData.arena == true and self.todayHaveDoneData.arena == false then
-		self.ifCanDo.arena = true
-		flag = true
+		if xyd.models.arena:getIsOld() ~= nil then
+			local newArenaStartTimeLeft = xyd.models.arena:getStartTime() + xyd.models.arena:getNewSeasonOpenTime() - xyd.getServerTime()
+
+			if newArenaStartTimeLeft <= 0 or newArenaStartTimeLeft >= xyd.models.arena:getNewSeasonOpenTime() then
+				self.ifCanDo.arena = true
+				flag = true
+			end
+		else
+			self.ifCanDo.arena = true
+			flag = true
+		end
 	end
 
 	if self.todayHaveDoneData.tavern == false then

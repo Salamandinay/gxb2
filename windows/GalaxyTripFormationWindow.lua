@@ -4,6 +4,7 @@ local FixedMultiWrapContent = import("app.common.ui.FixedMultiWrapContent")
 local PartnerFilter = import("app.components.PartnerFilter")
 local HeroIcon = import("app.components.HeroIcon")
 local cjson = require("cjson")
+local Partner = import("app.models.Partner")
 local FormationItem = class("FormationItem")
 
 function FormationItem:ctor(go, parent)
@@ -109,6 +110,7 @@ function GalaxyTripFormationWindow:ctor(name, params)
 		0
 	}
 	self.data = params
+	self.partnerInfoArr = {}
 
 	if params.formation then
 		self.localPartnerList = {}
@@ -124,6 +126,11 @@ function GalaxyTripFormationWindow:ctor(name, params)
 
 				if self.SlotModel:getPartner(info.partner_id) then
 					self.nowPartnerList[index] = info.partner_id
+					local p = Partner.new()
+
+					p:populate(info)
+
+					self.partnerInfoArr[info.partner_id] = p
 				end
 			end
 		end
@@ -659,7 +666,7 @@ function GalaxyTripFormationWindow:checkBuff()
 			local index = (i - 1) * 6 + j
 
 			if self.nowPartnerList[index] then
-				local partner = self.SlotModel:getPartner(tonumber(self.nowPartnerList[index]))
+				local partner = self:getPartner(tonumber(self.nowPartnerList[index]))
 				local star = partner:getStar()
 
 				if star > 10 then
@@ -945,6 +952,13 @@ function GalaxyTripFormationWindow:willClose()
 	end
 
 	self.delayGroup:SetActive(false)
+end
+
+function GalaxyTripFormationWindow:getPartner(partnerID)
+	local partner = self.partnerInfoArr[partnerID]
+	partner = partner or self.SlotModel:getPartner(partnerID)
+
+	return partner
 end
 
 return GalaxyTripFormationWindow

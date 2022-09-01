@@ -68,6 +68,9 @@ function SettingUpWindow:getUIComponent()
 	self.endLabel = self.btnQuestionnare_:ComponentByName("endLabel", typeof(UILabel))
 	self.bubble = groupMain_:ComponentByName("bubble", typeof(UIWidget))
 	self.labelBindBubble = self.bubble:ComponentByName("labelBindBubble", typeof(UILabel))
+	self.btnInvitationSenior = groupMain_:NodeByName("btnInvitationSenior").gameObject
+	self.btnInvitationSeniorLabel = self.btnInvitationSenior:ComponentByName("btnInvitationSeniorLabel", typeof(UILabel))
+	self.btnInvitationRedPoint = self.btnInvitationSenior:ComponentByName("redPoint", typeof(UISprite))
 
 	if xyd.Global.lang == "de_de" then
 		self.btnBackground_.transform:X(-225)
@@ -128,6 +131,7 @@ function SettingUpWindow:layout()
 	self.labelQuestionnare.text = __("QUESTIONNAIRE_ICON")
 	self.labelGM.text = __("CHAT_LABEL_1")
 	self.btnGameNoticeLabel_.text = __("SETTING_UP_11")
+	self.btnInvitationSeniorLabel.text = xyd.tables.activityTextTable:getTitle(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
 
 	if xyd.Global.lang == "ja_jp" then
 		self.labelAgreement.text = __("SETTING_UP_AGREEMENT")
@@ -156,6 +160,9 @@ function SettingUpWindow:layout()
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.QUESTIONNAIRE, self.btnQuestionnare_redPoint)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GM_CHAT, self.btnGM_redPoint)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.COMMUNITY_ACTIVITY, self.btnCommunity_redPoint)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
+	}, self.btnInvitationRedPoint)
 end
 
 function SettingUpWindow:initResItem()
@@ -184,6 +191,7 @@ function SettingUpWindow:registerEvent()
 	UIEventListener.Get(self.btnBackground_).onClick = handler(self, self.onBackgroundTouch)
 	UIEventListener.Get(self.btnQuestionnare_).onClick = handler(self, self.onQuestionnareTouch)
 	UIEventListener.Get(self.btnGM_).onClick = handler(self, self.onBtnGMTouch)
+	UIEventListener.Get(self.btnInvitationSenior).onClick = handler(self, self.onBtnInvitationSenior)
 
 	if xyd.Global.lang == "ja_jp" then
 		UIEventListener.Get(self.btnAgreement_).onClick = handler(self, self.onAgreementTouch)
@@ -192,6 +200,8 @@ function SettingUpWindow:registerEvent()
 	UIEventListener.Get(self.btnGameNotice_).onClick = function ()
 		xyd.WindowManager.get():openWindow("new_notice_window", {})
 	end
+
+	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.onGetActivityInfoBack))
 end
 
 function SettingUpWindow:onBackgroundTouch()
@@ -336,6 +346,8 @@ function SettingUpWindow.bindFunc(func, this, ...)
 end
 
 function SettingUpWindow:playOpenAnimation(callback)
+	local otherBtnsPosArr = {}
+
 	SettingUpWindow.super.playOpenAnimation(self, callback)
 
 	local action = self:getSequence()
@@ -376,14 +388,29 @@ function SettingUpWindow:playOpenAnimation(callback)
 	if xyd.Global.lang ~= "de_de" then
 		action:AppendInterval(0.034)
 		action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnComic_))
+		table.insert(otherBtnsPosArr, self.btnComic_)
 	end
 
 	action:AppendInterval(0.034)
 	action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnBackground_))
+	table.insert(otherBtnsPosArr, self.btnBackground_)
 
 	if xyd.Global.isReview ~= 1 then
 		action:AppendInterval(0.034)
 		action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnAward_))
+		table.insert(otherBtnsPosArr, self.btnAward_)
+	end
+
+	local activityInvitationSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if activityInvitationSeniorData and activityInvitationSeniorData:isShowSettingUpEnter() then
+		action:AppendInterval(0.034)
+		action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnInvitationSenior))
+		table.insert(otherBtnsPosArr, self.btnInvitationSenior)
+	end
+
+	if xyd.Global.lang == "ja_jp" then
+		table.insert(otherBtnsPosArr, self.btnGameNotice_)
 	end
 
 	local st_time = xyd.tables.miscTable:getNumber("new_questionnaire_begin_time", "value")
@@ -401,15 +428,14 @@ function SettingUpWindow:playOpenAnimation(callback)
 
 		self.timeLabel.right = 20
 
-		if xyd.Global.lang == "ja_jp" then
-			self.btnGameNotice_:SetLocalPosition(0, -139, 0)
-		end
+		table.insert(otherBtnsPosArr, self.btnQuestionnare_)
 	else
-		if xyd.Global.lang == "ja_jp" then
-			self.btnGameNotice_:SetLocalPosition(-225, -139, 0)
-		end
-
 		action:AppendCallback(self.bindFunc(self.setWndComplete, self))
+	end
+
+	for i in pairs(otherBtnsPosArr) do
+		otherBtnsPosArr[i]:X(-225 + (i - 1) % 3 * 225)
+		otherBtnsPosArr[i]:Y(-46 - math.floor((i - 1) / 3) * 93)
 	end
 end
 
@@ -467,6 +493,52 @@ function SettingUpWindow:lineAnimation(groupBot_, imgBot1, imgBot2, labelName_)
 	action:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter3), 0.01, 1, 0.2))
 	action:Insert(0.2, imgBot1.transform:DOLocalMove(Vector3(-176, y1, 0), 0.2))
 	action:Insert(0.2, imgBot2.transform:DOLocalMove(Vector3(176, y2, 0), 0.2))
+end
+
+function SettingUpWindow:onBtnInvitationSenior()
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if not activityData then
+		xyd.alertTips(__("NO_OPEN"))
+
+		return
+	end
+
+	local isNeedSend = false
+	local lastSendTime = xyd.db.misc:getValue("ctivity_invitation_senior_send_check_time")
+
+	if not lastSendTime then
+		isNeedSend = true
+	else
+		lastSendTime = tonumber(lastSendTime)
+
+		if xyd.getServerTime() - lastSendTime > 60 then
+			isNeedSend = true
+		end
+	end
+
+	if isNeedSend then
+		xyd.db.misc:setValue({
+			key = "ctivity_invitation_senior_send_check_time",
+			value = xyd.getServerTime()
+		})
+
+		self.isNeedOpenActivityInvitationSenior = true
+
+		xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+	else
+		xyd.WindowManager.get():openWindow("activity_invitation_senior_main_window")
+	end
+end
+
+function SettingUpWindow:onGetActivityInfoBack(event)
+	local activity_id = event.data.activity_id
+
+	if activity_id == xyd.ActivityID.ACTIVITY_INVITATION_SENIOR and self.isNeedOpenActivityInvitationSenior then
+		xyd.WindowManager.get():openWindow("activity_invitation_senior_main_window")
+
+		self.isNeedOpenActivityInvitationSenior = false
+	end
 end
 
 return SettingUpWindow

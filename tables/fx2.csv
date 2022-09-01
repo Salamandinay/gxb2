@@ -1,3 +1,15 @@
 id,type,next_texiao,res_name,res_path,texiao_name,texiao_is_pos,target_pos,is_loop,retain,scale,speed,hurt_split_percent,hurt_split_delay,hurt_second_delay,position,layer,shake,is_aoe,x,y,dandao_xy,dandao_point,width,is_parallel,is_pass,sp_unit_pos,speed_reduce,frameskip
 2076,2,,lianhua_pifu01_hurt02,assets/Effects/hero/lianhua,texiao02,,,,,0.7,,,,,1,1,1,,,,,,,,,,,
 2077,2,,luolanweiya_buff02,assets/Effects/hero/luolanweiya,texiao02,,,1,1,0.7,,,,,,1,,,,,,,,,,,,
+2078,2,,luolanweiya_zhuiji,assets/Effects/hero/luolanweiya,texiao01,,,,,0.7,8,,,,1,,,,,,,,,,,,,
+2079,2,,luolanweiya_zhuiji,assets/Effects/hero/luolanweiya,texiao02,,,,,0.7,,,,,1,1,,,,,,,,,,,,
+2080,2,,luolanweiya_awaken_zhuiji,assets/Effects/hero/luolanweiya,texiao01,,,,,0.7,8,,,,1,,,,,,,,,,,,,
+2081,2,,luolanweiya_awaken_zhuiji,assets/Effects/hero/luolanweiya,texiao02,,,,,0.7,,,,,1,1,,,,,,,,,,,,
+2082,3,,qianhezi_pifu02_unit01,assets/Effects/hero/qianhezi,,,,,,0.7,,,,,,,,,,,,,,,,,,
+2083,2,,qianhezi_pifu02_hurt01,assets/Effects/hero/qianhezi,,,,,,0.7,1,,,,,,,,,,,,,,,,,
+2084,1,,qianhezi_pifu02_hurt02,assets/Effects/hero/qianhezi,texiao01,,,,,0.7,,,,,,,,1,350,650,,,,,,,,2
+2085,2,,qianhezi_pifu02_hurt02,assets/Effects/hero/qianhezi,texiao02,,,,,0.7,123,,,,,,,,,,,,,,,,,
+2086,3,,yifu_pifu02_unit01,assets/Effects/hero/yifu,,,,,,0.7,,,,,,,,,,,,,,,,,,
+2087,2,,yifu_pifu02_hurt01,assets/Effects/hero/yifu,,,,,,0.7,0,,,,,,,,,,,,,,,,,
+2088,1,,yifu_pifu02_hurt02,assets/Effects/hero/yifu,,,,,,0.5,15,,,,1,,,1,350,650,,,,,,,,
+2089,2,,yifu_pifu02_hurt02,assets/Effects/hero/yifu,texiao02,,,,,0.7,,,,,1,,,,,,,,,,,,,

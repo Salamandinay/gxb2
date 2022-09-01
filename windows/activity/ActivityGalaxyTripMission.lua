@@ -4,6 +4,8 @@ local FixedWrapContent = import("app.common.ui.FixedWrapContent")
 local ActivityGalaxyTripMissionItem1 = class("ActivityGalaxyTripMissionItem1", import("app.common.ui.FixedWrapContentItem"))
 local ActivityGalaxyTripMissionItem2 = class("ActivityGalaxyTripMissionItem2", import("app.common.ui.FixedWrapContentItem"))
 local ItemTable = xyd.tables.itemTable
+local awardTalbe = xyd.tables.galaxyTripBattlepassTable
+local missionTalbe = xyd.tables.galaxyTripMissionTable
 local json = require("cjson")
 
 function ActivityGalaxyTripMission:ctor(parentGO, params, parent)
@@ -15,7 +17,15 @@ function ActivityGalaxyTripMission:getPrefabPath()
 end
 
 function ActivityGalaxyTripMission:initUI()
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+	if self.id == xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+		awardTalbe = xyd.tables.galaxyTripBattlepassTable
+		missionTalbe = xyd.tables.galaxyTripMissionTable
+	elseif self.id == xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2 then
+		awardTalbe = xyd.tables.galaxyTripBattlepass2Table
+		missionTalbe = xyd.tables.galaxyTripMission2Table
+	end
+
+	self.activityData = xyd.models.activity:getActivity(self.id)
 	self.effectList = {}
 	self.curTabIndex = 1
 
@@ -76,7 +86,7 @@ function ActivityGalaxyTripMission:register()
 	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, function (event)
 		local data = event.data
 
-		if data.activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+		if data.activity_id ~= self.id then
 			return
 		end
 
@@ -93,7 +103,9 @@ function ActivityGalaxyTripMission:register()
 	end)
 
 	UIEventListener.Get(self.buyBtn).onClick = function ()
-		xyd.WindowManager.get():openWindow("galaxy_battle_pass_preview_window")
+		xyd.WindowManager.get():openWindow("galaxy_battle_pass_preview_window", {
+			activityID = self.id
+		})
 	end
 
 	UIEventListener.Get(self.btnTab1).onClick = handler(self, function ()
@@ -174,18 +186,18 @@ function ActivityGalaxyTripMission:initData()
 
 	self.curSeason = self.activityData:getCurSeason()
 	self.data2 = {}
-	local ids = xyd.tables.galaxyTripMissionTable:getIDsBySeason(self.curSeason)
+	local ids = missionTalbe:getIDsBySeason(self.curSeason)
 
 	for i = 1, #ids do
 		local id = tonumber(ids[i])
 
 		table.insert(self.data2, {
 			id = tonumber(id),
-			needCompleteValue = xyd.tables.galaxyTripMissionTable:getComplete(id),
+			needCompleteValue = missionTalbe:getComplete(id),
 			completeValue = self.activityData:getTaskCompleteValue(id),
-			desc = xyd.tables.galaxyTripMissionTable:getDesc(id),
+			desc = missionTalbe:getDesc(id),
 			isCompleted = self.activityData:getTaskAwarded(id),
-			energyValue = xyd.tables.galaxyTripMissionTable:getExplorePoints(id),
+			energyValue = missionTalbe:getExplorePoints(id),
 			isAwarded = self.activityData:getTaskAwarded(id)
 		})
 	end
@@ -212,22 +224,22 @@ function ActivityGalaxyTripMission:initData()
 	self.wrapContent2:setInfos(self.data2, {})
 
 	self.data1 = {}
-	local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+	local ids = awardTalbe:getIDs(self.activityData:getCurSeason())
 	local maxEnergy = 0
 
 	for i = 1, #ids do
 		local id = tonumber(ids[i])
 
-		if maxEnergy < xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) then
-			maxEnergy = xyd.tables.galaxyTripBattlepassTable:getPointLimit(id)
+		if maxEnergy < awardTalbe:getPointLimit(id) then
+			maxEnergy = awardTalbe:getPointLimit(id)
 		end
 
 		table.insert(self.data1, {
 			id = tonumber(id),
 			freeAwarded = self.activityData:getFreeAwardAwarded(id),
 			paidAwarded = self.activityData:getPaidAwardAwarded(id),
-			isCompleted = xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) <= self.activityData:getTotalEnergy(),
-			needEnergy = xyd.tables.galaxyTripBattlepassTable:getPointLimit(id)
+			isCompleted = awardTalbe:getPointLimit(id) <= self.activityData:getTotalEnergy(),
+			needEnergy = awardTalbe:getPointLimit(id)
 		})
 	end
 
@@ -245,14 +257,14 @@ function ActivityGalaxyTripMission:initData()
 	self.wrapContent1:setInfos(self.data1, {})
 
 	self.totalEnergyNum.text = self.activityData:getTotalEnergy()
-	local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+	local ids = awardTalbe:getIDs(self.activityData:getCurSeason())
 	local totalEnergy = self.activityData:getTotalEnergy()
 	local baseProgrssValue = 0
 	local value = 0
 
 	for i = 1, #ids do
 		local id = i
-		local needEnergy = xyd.tables.galaxyTripBattlepassTable:getPointLimit(id)
+		local needEnergy = awardTalbe:getPointLimit(id)
 
 		if i == 1 then
 			if totalEnergy < needEnergy then
@@ -261,8 +273,8 @@ function ActivityGalaxyTripMission:initData()
 				value = baseProgrssValue
 			end
 		elseif totalEnergy < needEnergy then
-			if xyd.tables.galaxyTripBattlepassTable:getPointLimit(id - 1) < totalEnergy then
-				value = value + (totalEnergy - xyd.tables.galaxyTripBattlepassTable:getPointLimit(id - 1)) / (needEnergy - xyd.tables.galaxyTripBattlepassTable:getPointLimit(id - 1)) * (1 - baseProgrssValue) / (#ids - 1)
+			if awardTalbe:getPointLimit(id - 1) < totalEnergy then
+				value = value + (totalEnergy - awardTalbe:getPointLimit(id - 1)) / (needEnergy - awardTalbe:getPointLimit(id - 1)) * (1 - baseProgrssValue) / (#ids - 1)
 			end
 		elseif needEnergy <= totalEnergy then
 			value = value + (1 - baseProgrssValue) / (#ids - 1)
@@ -280,6 +292,10 @@ function ActivityGalaxyTripMission:initData()
 	end
 
 	self:checkRedPoint()
+
+	local ids = awardTalbe:getIDs(self.activityData:getCurSeason())
+	self.progressBar:ComponentByName("", typeof(UISprite)).height = 98 * (#ids - 1)
+	self.progressBar:ComponentByName("progress", typeof(UISprite)).height = 98 * (#ids - 1) - 10
 end
 
 function ActivityGalaxyTripMission:initListPositon()
@@ -287,12 +303,12 @@ function ActivityGalaxyTripMission:initListPositon()
 		local moveIndex = 1
 		local index = 1
 		local flag = false
-		local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+		local ids = awardTalbe:getIDs(self.activityData:getCurSeason())
 
 		for i = #ids, 1, -1 do
 			local id = i
 
-			if xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) <= self.activityData:getTotalEnergy() and (not self.activityData:getFreeAwardAwarded(id) or not self.activityData:getPaidAwardAwarded(id) and self.activityData:IfBuyGiftBag() == true) then
+			if awardTalbe:getPointLimit(id) <= self.activityData:getTotalEnergy() and (not self.activityData:getFreeAwardAwarded(id) or not self.activityData:getPaidAwardAwarded(id) and self.activityData:IfBuyGiftBag() == true) then
 				moveIndex = id
 				flag = true
 			end
@@ -302,7 +318,7 @@ function ActivityGalaxyTripMission:initListPositon()
 			for i = #ids, 1, -1 do
 				local id = i
 
-				if self.activityData:getTotalEnergy() < xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) then
+				if self.activityData:getTotalEnergy() < awardTalbe:getPointLimit(id) then
 					moveIndex = id
 				end
 			end
@@ -361,16 +377,16 @@ function ActivityGalaxyTripMission:onGetAward(event)
 end
 
 function ActivityGalaxyTripMission:GetAward()
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+	self.activityData = xyd.models.activity:getActivity(self.id)
 	local param = {
 		batches = {}
 	}
-	local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+	local ids = awardTalbe:getIDs(self.activityData:getCurSeason())
 
 	for i = 1, #ids do
 		local id = tonumber(ids[i])
 
-		if xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) <= self.activityData:getTotalEnergy() then
+		if awardTalbe:getPointLimit(id) <= self.activityData:getTotalEnergy() then
 			if not self.activityData:getFreeAwardAwarded(id) then
 				table.insert(param.batches, {
 					index = 1,
@@ -389,7 +405,7 @@ function ActivityGalaxyTripMission:GetAward()
 
 	local param2 = require("cjson").encode(param)
 	local msg = messages_pb.get_activity_award_req()
-	msg.activity_id = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+	msg.activity_id = self.id
 	msg.params = param2
 
 	xyd.Backend.get():request(xyd.mid.GET_ACTIVITY_AWARD, msg)
@@ -436,7 +452,7 @@ function ActivityGalaxyTripMissionItem1:updateInfo()
 		xyd.setUISpriteAsync(self.energyGroup, nil, "activity_galaxy_trip_mission_bg_jf_3")
 	end
 
-	self.freeAwards = xyd.tables.galaxyTripBattlepassTable:getFreeAwards(self.id)
+	self.freeAwards = awardTalbe:getFreeAwards(self.id)
 
 	for i = 1, #self.freeIcons do
 		self.freeIcons[i]:SetActive(false)
@@ -490,7 +506,7 @@ function ActivityGalaxyTripMissionItem1:updateInfo()
 
 	self.freeAwardItemGroupLayout:Reposition()
 
-	self.paidAwards = xyd.tables.galaxyTripBattlepassTable:getPayAwards(self.id)
+	self.paidAwards = awardTalbe:getPayAwards(self.id)
 
 	for i = 1, #self.paidIcons do
 		self.paidIcons[i]:SetActive(false)

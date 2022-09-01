@@ -787,7 +787,8 @@ function ShopWindow:initItems()
 					cost = tempItem.cost,
 					buy_times = tempItem.buy_times,
 					index = i,
-					not_selling = tempItem.not_selling
+					not_selling = tempItem.not_selling,
+					group = group
 				})
 			end
 		end
@@ -796,6 +797,10 @@ function ShopWindow:initItems()
 
 		if self.shopType_ == xyd.ShopType.SHOP_HERO_NEW then
 			self:sortItems()
+		else
+			table.sort(self.items_, function (a, b)
+				return xyd.tables.shopArtifactTable:getRank(a.index) < xyd.tables.shopArtifactTable:getRank(b.index)
+			end)
 		end
 	end
 

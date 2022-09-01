@@ -101,6 +101,8 @@ function SummonWindow:getUIComponent()
 	self.seniorSummonTitle = self.groupSenior:ComponentByName("seniorSummonTitle", typeof(UISprite))
 	self.senior_cost_group = self.groupSenior:NodeByName("senior_cost_group").gameObject
 	self.senior_cost_label = self.senior_cost_group:ComponentByName("cost_label", typeof(UILabel))
+	self.act_tips_text = self.groupSenior:ComponentByName("act_tips_text", typeof(UILabel))
+	self.senior_inner_bg = self.groupSenior:ComponentByName("senior_inner_bg", typeof(UIWidget))
 	self.limit_cost_group = self.groupSenior:NodeByName("limit_cost_group").gameObject
 	self.limit_cost_scroll_label = self.limit_cost_group:ComponentByName("cost_label_1", typeof(UILabel))
 	self.limit_cost_ten_label = self.limit_cost_group:ComponentByName("cost_label_2", typeof(UILabel))
@@ -637,6 +639,8 @@ function SummonWindow:onSummon(event)
 			end)
 		end)
 	end
+
+	self:updateActTips()
 end
 
 function SummonWindow:playAnimation(callback)
@@ -1947,6 +1951,23 @@ function SummonWindow:initSummonGiftUIComponent()
 			else
 				self.limitEndLabel:SetActive(false)
 			end
+		end
+	end
+
+	self:updateActTips()
+end
+
+function SummonWindow:updateActTips()
+	self.act_tips_text.text = ""
+	self.senior_inner_bg.height = 230
+
+	if self:checkSummonGiftBagOpen() then
+		self.senior_inner_bg.height = 255
+		local index = Summon:getFortyIndex()
+
+		if index >= 0 then
+			index = xyd.tables.miscTable:getNumber("gacha_ensure_guarantee_star5_times", "value") - index
+			self.act_tips_text.text = __("GACHA_ENSURE_STAR5_TEXT01", index)
 		end
 	end
 end

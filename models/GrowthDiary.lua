@@ -90,7 +90,12 @@ end
 function GrowthDiary:onGetChapterAwards(event)
 	local id = event.data.id
 	self.awardsData_[id] = 1
+	local msg = messages_pb.log_partner_data_touch_req()
+	msg.touch_id = xyd.DaDian.GROWTH_DIARY
+	msg.desc = tostring(id)
 
+	xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+	self:updateChapter()
 	self:updateRedMark()
 
 	local long = xyd.tables.grouthDiaryMissionTable:getChapterLong()
@@ -163,6 +168,12 @@ function GrowthDiary:updateChapter()
 	if long < self.chapter_id then
 		self.chapter_id = long
 		self.isFinish_ = true
+	end
+
+	local activityInvitationSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if activityInvitationSeniorData then
+		activityInvitationSeniorData:checkRedPoint()
 	end
 end
 

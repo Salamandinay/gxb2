@@ -1,6 +1,20 @@
 local ActivityData = import("app.models.ActivityData")
 local ActivityGalaxyTripMissionData = class("ActivityGalaxyTripMissionData", ActivityData, true)
 local json = require("cjson")
+local awardTalbe = xyd.tables.galaxyTripBattlepassTable
+local missionTalbe = xyd.tables.galaxyTripMissionTable
+
+function ActivityGalaxyTripMissionData:ctor(params)
+	ActivityData.ctor(self, params)
+
+	if self.activity_id == xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+		awardTalbe = xyd.tables.galaxyTripBattlepassTable
+		missionTalbe = xyd.tables.galaxyTripMissionTable
+	elseif self.activity_id == xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2 then
+		awardTalbe = xyd.tables.galaxyTripBattlepass2Table
+		missionTalbe = xyd.tables.galaxyTripMission2Table
+	end
+end
 
 function ActivityGalaxyTripMissionData:getUpdateTime()
 	return self:getEndTime()
@@ -63,12 +77,12 @@ end
 
 function ActivityGalaxyTripMissionData:checkRedMaskOfAward()
 	local red = false
-	local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+	local ids = awardTalbe:getIDs(self:getCurSeason())
 
 	for i = 1, #ids do
 		local id = tonumber(ids[i])
 
-		if xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) <= self:getTotalEnergy() and (not self:getFreeAwardAwarded(id) or not self:getPaidAwardAwarded(id) and self:IfBuyGiftBag() == true) then
+		if awardTalbe:getPointLimit(id) <= self:getTotalEnergy() and (not self:getFreeAwardAwarded(id) or not self:getPaidAwardAwarded(id) and self:IfBuyGiftBag() == true) then
 			red = true
 		end
 	end
@@ -99,7 +113,7 @@ end
 
 function ActivityGalaxyTripMissionData:reqTaskInfo()
 	local msg = messages_pb:galaxy_trip_get_missions_info_req()
-	local ids = xyd.tables.galaxyTripMissionTable:getIDs()
+	local ids = missionTalbe:getIDs()
 
 	for _, id in ipairs(ids) do
 		table.insert(msg.mission_ids, id)
@@ -111,11 +125,11 @@ end
 function ActivityGalaxyTripMissionData:onGetAward(event)
 	local data = event.data
 
-	if data.activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+	if data.activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION and data.activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2 then
 		return
 	end
 
-	local ids = xyd.tables.galaxyTripBattlepassTable:getIDs()
+	local ids = awardTalbe:getIDs(self:getCurSeason())
 
 	for i = 1, #ids do
 		local id = tonumber(ids[i])
@@ -125,7 +139,7 @@ function ActivityGalaxyTripMissionData:onGetAward(event)
 		dump(self.detail_.awarded)
 		dump(self.detail_.paid_awarded)
 
-		if xyd.tables.galaxyTripBattlepassTable:getPointLimit(id) <= self:getTotalEnergy() then
+		if awardTalbe:getPointLimit(id) <= self:getTotalEnergy() then
 			if not self:getFreeAwardAwarded(id) then
 				self.detail_.awarded[id] = 1
 			end

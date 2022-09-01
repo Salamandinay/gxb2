@@ -686,6 +686,7 @@ function MainWindow:initWindow()
 	self.btnLimitDress = self.midBtnGroup:Find("limit_dress_btn")
 	self.btnNotice = self.midBtnGroup:NodeByName("notice_btn").gameObject
 	self.btnNoticeEffect = self.midBtnGroup:NodeByName("notice_btn/spineRoot").gameObject
+	self.btnDailyGift = self.midBtnGroup:NodeByName("daily_gift_btn").gameObject
 	self.redPointStory = self.btnStory:NodeByName("redPointStory").gameObject
 	self.upIcon = self.btnStory:NodeByName("upIcon").gameObject
 	self.bottomBtn = self.bottomGroup:Find("bottom_btn")
@@ -751,6 +752,7 @@ function MainWindow:initWindow()
 	self:initActivityBtn()
 	self:initChat()
 	self:initGameAssistantBtn()
+	self:updateBtnDailyGift()
 
 	self.hideStatus_ = {
 		{
@@ -1367,6 +1369,23 @@ function MainWindow:initBottomGroup()
 
 	UIEventListener.Get(self.btnNotice).onClick = function ()
 		xyd.WindowManager.get():openWindow("new_notice_window", {})
+	end
+
+	UIEventListener.Get(self.btnDailyGift).onClick = function ()
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+		local info = activityData:getInviterInfo()
+		local textSenderName = ""
+
+		if info and info.player_name then
+			textSenderName = info.player_name
+		end
+
+		local textReceiverName = xyd.Global.playerName .. " :"
+
+		xyd.WindowManager.get():openWindow("invitation_daily_gift_window", {
+			textSenderName = textSenderName,
+			textReceiverName = textReceiverName
+		})
 	end
 end
 
@@ -2388,7 +2407,8 @@ function MainWindow:initRedMark()
 		xyd.RedMarkType.COLLECTION_SHOP_2,
 		xyd.RedMarkType.BACKGROUND,
 		xyd.RedMarkType.COMMUNITY_ACTIVITY,
-		xyd.RedMarkType.GAME_NOTICE
+		xyd.RedMarkType.GAME_NOTICE,
+		xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
 	}
 
 	if xyd.Global.lang == "ko_kr" then
@@ -2401,8 +2421,15 @@ function MainWindow:initRedMark()
 			xyd.RedMarkType.COLLECTION_SHOP_2,
 			xyd.RedMarkType.BACKGROUND,
 			xyd.RedMarkType.GAME_NOTICE,
-			xyd.RedMarkType.COMMUNITY_ACTIVITY
+			xyd.RedMarkType.COMMUNITY_ACTIVITY,
+			xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
 		}
+	end
+
+	local activityInvitataionSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if activityInvitataionSeniorData then
+		activityInvitataionSeniorData:checkRedPoint()
 	end
 
 	xyd.models.redMark:setJointMarkImg(funcs, self.MainwinBottomBtn_red_img_6:getRedPoint())
@@ -2972,6 +2999,44 @@ function MainWindow:updateBtnNotice()
 		sequence:Insert(0, self.btnNotice.transform:DOLocalMove(Vector3(300, -180, 0), 1))
 	else
 		self.btnNotice:SetActive(false)
+	end
+end
+
+function MainWindow:updateBtnDailyGift()
+	print("=============updateBtnDailyGift=========")
+
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if activityData and activityData:checkHaveDailyGift() then
+		self.btnDailyGift:SetActive(true)
+
+		self.btnNotice:GetComponent(typeof(UIWidget)).alpha = 0.01
+
+		if self.btnDailyGiftSequence then
+			self.btnDailyGiftSequence:Kill(false)
+
+			self.btnDailyGiftSequence = nil
+		end
+
+		if self.btnDailyGiftEffect == nil then
+			self.btnDailyGiftEffectPos = self.btnDailyGift:ComponentByName("effectRoot", typeof(UITexture))
+			self.btnDailyGiftEffect = xyd.Spine.new(self.btnDailyGiftEffectPos.gameObject)
+
+			self.btnDailyGiftEffect:setInfo("fx_act_icon_2", function ()
+				self.btnDailyGiftEffect:play("texiao01", 0)
+			end)
+		end
+
+		self.btnDailyGiftSequence = self:getSequence()
+		local transform = self.btnDailyGift.gameObject.transform
+
+		self.btnDailyGiftSequence:Append(transform:DOLocalRotate(Vector3(0, 0, 5), 0.25))
+		self.btnDailyGiftSequence:Append(transform:DOLocalRotate(Vector3(0, 0, -5), 0.25))
+		self.btnDailyGiftSequence:SetLoops(-1)
+	else
+		self.btnDailyGift:SetActive(false)
+
+		self.btnNotice:GetComponent(typeof(UIWidget)).alpha = 1
 	end
 end
 

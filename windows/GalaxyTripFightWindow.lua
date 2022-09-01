@@ -263,6 +263,10 @@ function GalaxyTripFightWindow:layout()
 	local eventType = xyd.tables.galaxyTripEventTable:getType(self.eventId)
 
 	if eventType == xyd.GalaxyTripGridEventType.BLACK_HOLE_BOSS then
+		xyd.applyChildrenOrigin(self.challengeBtn)
+
+		self.challengeBtnBoxCollider.enabled = true
+
 		self.selectCon:SetActive(true)
 		self.ticketCon:SetActive(false)
 
@@ -317,6 +321,9 @@ function GalaxyTripFightWindow:layout()
 
 		if eventType == xyd.GalaxyTripGridEventType.ROBBER_ENEMY then
 			self.ticketCon:SetActive(false)
+			xyd.applyChildrenOrigin(self.challengeBtn)
+
+			self.challengeBtnBoxCollider.enabled = true
 		end
 	end
 end

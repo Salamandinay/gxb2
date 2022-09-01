@@ -133,24 +133,26 @@ function ChoosePartnerWindow:initDebrisBtn()
 		xyd.setBgColorType(self.btnDebris, xyd.ButtonBgColorType.blue_btn_70_70)
 
 		UIEventListener.Get(self.btnDebris).onClick = function ()
-			if self:checkHasDebris() or self:checkBaoxiang() then
+			local flag1 = self:checkHasDebris()
+			local flag2 = self:checkBaoxiang()
+
+			if flag1 or flag2 then
 				local params = {
 					mTableID = self.mTableID_,
 					mTableIDList = self.mTableIDList_,
 					clickId = self.id_,
 					showBaoxiang = self.showBaoxiang,
-					notShowGetWayBtn = self.notShowGetWayBtn
-				}
+					notShowGetWayBtn = self.notShowGetWayBtn,
+					closeCallback = function ()
+						local partnerDetailWindow = xyd.WindowManager.get():getWindow("partner_detail_window")
 
-				function params.closeCallback()
-					local partnerDetailWindow = xyd.WindowManager.get():getWindow("partner_detail_window")
-
-					if partnerDetailWindow and self.id_ then
-						partnerDetailWindow:refreshShenxueMaterials()
-						partnerDetailWindow:autoPutMaterial()
-						partnerDetailWindow:onSelectContainer(self.id_)
+						if partnerDetailWindow and self.id_ then
+							partnerDetailWindow:refreshShenxueMaterials()
+							partnerDetailWindow:autoPutMaterial()
+							partnerDetailWindow:onSelectContainer(self.id_)
+						end
 					end
-				end
+				}
 
 				if not self.isShenxue then
 					function params.closeCallback()
@@ -290,14 +292,22 @@ function ChoosePartnerWindow:checkBaoxiang()
 				for _, baoxiangItem in ipairs(baoxiangItems) do
 					if not baoxiangRecordArr[baoxiangItem.itemID] then
 						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+						local giftBoxStar = xyd.tables.giftBoxOptionalTable:getStars(baoxiangItem.itemID)
 
 						for __, debrisItem in ipairs(optionalDebrisIDs) do
 							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
 							local partnerTableID = partnerCost[1]
 							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
 							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+							local starFlag = false
 
-							if partnerGroup == group and partnerStar == star and not baoxiangRecordArr[baoxiangItem.itemID] then
+							if giftBoxStar and giftBoxStar > 0 and giftBoxStar == star then
+								starFlag = true
+							elseif (not giftBoxStar or giftBoxStar == 0) and partnerStar == star then
+								starFlag = true
+							end
+
+							if (partnerGroup == group or group == 9) and starFlag and not baoxiangRecordArr[baoxiangItem.itemID] then
 								return true
 							end
 						end
@@ -376,7 +386,7 @@ function ChoosePartnerWindow:addPartnerToContainer(partner)
 
 		local choose = self.choosePartners[partnerID]
 
-		if not choose and (self.type_ == "ACTIVITY_PROMOTION_LADDER" or self.type_ == "ACTIVITY_FREE_REVERGE") and self.needNum <= #self.selected then
+		if not choose and (self.type_ == "ACTIVITY_PROMOTION_LADDER" or self.type_ == "ACTIVITY_FREE_REVERGE" or self.type_ == "ACTIVITY_FOOD_CONSUME") and self.needNum <= #self.selected then
 			self:clearChoose()
 		end
 

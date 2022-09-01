@@ -156,7 +156,7 @@ function Trial:onTrialInfo(event)
 
 	if data.boss_id and data.boss_id > 0 then
 		infos.boss_id = data.boss_id
-	else
+	elseif self.data_ and tonumber(self.data_.boss_id) and self.data_.boss_id > 0 then
 		infos.boss_id = self.data_.boss_id
 	end
 

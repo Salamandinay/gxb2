@@ -264,6 +264,8 @@ function PotentialityUnlockWindow:onClickHeroIcon(params, this_icon, this_label,
 	params.this_icon = this_icon
 	params.this_label = this_label
 	params.this_imgPlus = this_imgPlus
+	params.showBaoxiang = true
+	params.notShowGetWayBtn = true
 
 	xyd.WindowManager.get():openWindow("choose_partner_window", params)
 end

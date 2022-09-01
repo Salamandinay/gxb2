@@ -98,6 +98,7 @@ function ChatWindow:getUIComponent()
 	self.btnSend1 = self.groupBottom0:NodeByName("btnSend1").gameObject
 	self.btnEmo1 = self.groupBottom0:NodeByName("btnEmo1").gameObject
 	self.textEdit1 = self.groupBottom0:ComponentByName("e:Group/textEdit1", typeof(UILabel))
+	self.groupWarningClick = self.groupWarning:NodeByName("e:Group").gameObject
 	self.labelWarning_ = self.groupWarning:ComponentByName("e:Group/labelWarning_", typeof(UILabel))
 	self.btnBack = self.groupDetail:NodeByName("groupTop/btnBack").gameObject
 	self.btnDelete = self.groupDetail:NodeByName("groupTop/delBtn").gameObject
@@ -386,7 +387,7 @@ function ChatWindow:registerEvent()
 	UIEventListener.Get(self.btnSendImg).onClick = handler(self, self.onSendImgTouch)
 	UIEventListener.Get(self.btnEmo1).onClick = handler(self, self.onEmo)
 	UIEventListener.Get(self.btnSend1).onClick = handler(self, self.onSend)
-	UIEventListener.Get(self.groupWarning).onClick = handler(self, self.onWarning)
+	UIEventListener.Get(self.groupWarningClick).onClick = handler(self, self.onWarning)
 
 	self.eventProxy_:addEventListener(xyd.event.CHAT_MESSAGE, handler(self, self.onMessage))
 	self.eventProxy_:addEventListener(xyd.event.GUILD_APPLY, handler(self, self.onGuildApply))

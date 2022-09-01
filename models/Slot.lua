@@ -1199,6 +1199,8 @@ function Slot:onGetActivityAward(event)
 		self:onChristmasExchange(event)
 	elseif data.activity_id == xyd.ActivityID.ACTIVITY_FREE_REVERGE then
 		self:onFreeReverge(event)
+	elseif data.activity_id == xyd.ActivityID.ACTIVITY_FOOD_CONSUME then
+		self:onFoodConsume(event)
 	end
 end
 
@@ -1219,6 +1221,22 @@ function Slot:onFreeReverge(event)
 
 			self:addPartners(partners)
 			self:initAwakMatStatus()
+		end
+	end
+end
+
+function Slot:onFoodConsume(event)
+	local data = event.data
+
+	if data.activity_id == xyd.ActivityID.ACTIVITY_FOOD_CONSUME then
+		local detail = json.decode(data.detail)
+
+		if detail and detail.partner_id then
+			local partnerID = tonumber(detail.partner_id)
+
+			self:delPartners({
+				partnerID
+			})
 		end
 	end
 end

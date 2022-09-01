@@ -6,8 +6,9 @@ function GalaxyBattlePassPreviewWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
 	self.params = params
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
-	self.giftbagID = xyd.tables.activityTable:getGiftBag(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)[1]
+	self.id = params.activityID
+	self.activityData = xyd.models.activity:getActivity(self.id)
+	self.giftbagID = xyd.tables.activityTable:getGiftBag(self.id)[1]
 	self.icons1 = {}
 end
 

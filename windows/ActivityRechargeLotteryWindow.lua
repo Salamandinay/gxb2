@@ -113,7 +113,9 @@ function ActivityRechargeLotteryWindow:initUIComponent()
 
 	for i = 1, 12 do
 		if i % 3 ~= 1 then
-			local award = xyd.tables.activityLotteryTable:getAwards(i)[1]
+			local pos = i
+			local id = xyd.tables.activityLotteryTable:getIdByPos(pos)
+			local award = xyd.tables.activityLotteryTable:getAwards(id)[1]
 			self.icons[i] = xyd.getItemIcon({
 				showGetWays = false,
 				notShowGetWayBtn = true,
@@ -245,9 +247,11 @@ function ActivityRechargeLotteryWindow:register()
 
 	for i = 1, 12 do
 		UIEventListener.Get(self["award" .. i]).onClick = function ()
+			local id = xyd.tables.activityLotteryTable:getIdByPos(i)
+
 			xyd.WindowManager:get():openWindow("activity_recharge_lottery_box_detail_window", {
 				type = xyd.tables.activityLotteryTable:getType2(i),
-				boxID = i
+				boxID = id
 			})
 		end
 	end
@@ -265,6 +269,12 @@ function ActivityRechargeLotteryWindow:register()
 
 		self.stopAniFlag = self.stopAniFlag + 1
 		local awardID = self.activityData.awardID
+
+		print("awardID   ", awardID)
+
+		local pos = xyd.tables.activityLotteryTable:getPos(awardID)
+
+		print("pos    ", pos)
 
 		local function updateState()
 			self.isFinish = true
@@ -286,11 +296,11 @@ function ActivityRechargeLotteryWindow:register()
 				xyd.setEnabled(self.btnDraw.gameObject, true)
 			end
 
-			if awardID % 3 ~= 1 then
-				self.icons[awardID]:setChoose(true)
+			if pos % 3 ~= 1 then
+				self.icons[pos]:setChoose(true)
 			else
-				self["award" .. awardID]:NodeByName("mask").gameObject:SetActive(true)
-				self["award" .. awardID]:NodeByName("imgSelect").gameObject:SetActive(true)
+				self["award" .. pos]:NodeByName("mask").gameObject:SetActive(true)
+				self["award" .. pos]:NodeByName("imgSelect").gameObject:SetActive(true)
 			end
 		end
 
@@ -316,7 +326,7 @@ function ActivityRechargeLotteryWindow:register()
 			pushNewItems()
 			self["awardChoose" .. self.curID]:SetActive(false)
 
-			self.curID = awardID
+			self.curID = pos
 
 			self["awardChoose" .. self.curID]:SetActive(true)
 
@@ -340,7 +350,7 @@ function ActivityRechargeLotteryWindow:register()
 
 				self["awardChoose" .. self.curID]:SetActive(true)
 				self:waitForTime(0.06, function ()
-					if self.curID == awardID then
+					if self.curID == pos then
 						fastAniRound = fastAniRound - 1
 					end
 
@@ -359,7 +369,7 @@ function ActivityRechargeLotteryWindow:register()
 
 				self["awardChoose" .. self.curID]:SetActive(true)
 				self:waitForTime(0.2, function ()
-					if self.curID ~= awardID then
+					if self.curID ~= pos then
 						slowAniFunction()
 					else
 						updateState()

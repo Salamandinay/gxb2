@@ -593,9 +593,6 @@ function ShenXueWindow:onComposePartner(event)
 	end
 
 	self.singleShenXue = false
-
-	self:setClickMask(false)
-
 	local params = event.data
 	local pInfo = params.partner_info
 	self.lastTableId = pInfo.table_id
@@ -622,6 +619,7 @@ function ShenXueWindow:onComposePartner(event)
 				callback = function ()
 					xyd.models.itemFloatModel:pushNewItems(items)
 					self:onClickheroIcon(self.lastSelected_)
+					self:setClickMask(false)
 				end
 			}
 
@@ -681,6 +679,7 @@ function ShenXueWindow:onComposePartner(event)
 		self:refreshRedPoint(groupId)
 		self:onClickheroIcon(self.lastSelected_)
 		self:updateBatchShenXueBtn()
+		self:setClickMask(false)
 	end
 end
 
@@ -694,9 +693,6 @@ function ShenXueWindow:onAwakePartner(event)
 	end
 
 	self.singleAwake = false
-
-	self:setClickMask(false)
-
 	local params = event.data
 	local pInfo = params.partner_info
 	self.lastTableId = pInfo.table_id
@@ -771,6 +767,7 @@ function ShenXueWindow:onAwakePartner(event)
 	self:refreshRedPoint(groupId)
 	self:onClickheroIcon(self.lastSelected_)
 	self:updateBatchShenXueBtn()
+	self:setClickMask(false)
 end
 
 function ShenXueWindow:playEffect(callback)
@@ -1501,6 +1498,7 @@ function ShenXueWindow:initMidGroup(partnerInfo)
 	local lastTableID = nil
 	self.materialKeyList_ = {}
 	self.materialIdList_ = {}
+	self.allOptionalList_ = {}
 	self.totalShenxueMatNum = 1
 
 	for _, mTableID in ipairs(material) do

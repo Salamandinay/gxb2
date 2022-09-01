@@ -1770,11 +1770,17 @@ ActivityWindow.ContentClass = {
 	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION] = function ()
 		return require("app.windows.activity.ActivityGalaxyTripMission")
 	end,
+	[xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2] = function ()
+		return require("app.windows.activity.ActivityGalaxyTripMission")
+	end,
 	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN] = function ()
 		return require("app.windows.activity.ActivityLengarySkin")
 	end,
 	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN_GIFTBAG] = function ()
 		return require("app.windows.activity.ActivityLegendarySkinGiftbag")
+	end,
+	[xyd.ActivityID.ACTIVITY_FOOD_CONSUME] = function ()
+		return require("app.windows.activity.ActivityFoodConsume")
 	end
 }
 

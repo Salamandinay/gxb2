@@ -28,6 +28,7 @@ function ArenaFormationWindow:ctor(name, params)
 	self.not_show_mail = params.not_show_mail
 	self.notShowGuildBtn_ = params.not_show_guild_btn
 	self.show_short_bg = params.show_short_bg
+	self.isNewDeleteBtnCalback = params.isNewDeleteBtnCalback
 
 	self:initBlackList()
 end
@@ -140,6 +141,8 @@ function ArenaFormationWindow:initWindow()
 
 		self.bgWidght:Y(270)
 	end
+
+	self:updateOtherBtns()
 end
 
 function ArenaFormationWindow:updateBgHeight()
@@ -200,6 +203,11 @@ function ArenaFormationWindow:getUIComponent()
 	self.personCon = content:NodeByName("personCon").gameObject
 	self.personBottom = self.personCon:ComponentByName("personBottom", typeof(UISprite))
 	self.personEffect = self.personCon:NodeByName("personEffect").gameObject
+	self.newBtnPanel = content:NodeByName("newBtnPanel").gameObject
+
+	if self.newBtnPanel then
+		self.otherDeleteBtn = self.newBtnPanel:NodeByName("otherDeleteBtn").gameObject
+	end
 end
 
 function ArenaFormationWindow:initBlackList()
@@ -285,6 +293,14 @@ function ArenaFormationWindow:register()
 			msg.guild_id = self.guildId_
 
 			xyd.Backend:get():request(xyd.mid.GET_INFO_BY_GUILD_ID, msg)
+		end
+	end
+
+	if self.otherDeleteBtn then
+		UIEventListener.Get(self.otherDeleteBtn).onClick = function ()
+			if self.isNewDeleteBtnCalback then
+				self.isNewDeleteBtnCalback()
+			end
 		end
 	end
 end
@@ -655,6 +671,12 @@ function ArenaFormationWindow:initDress()
 			ids = styleID
 		})
 	end)
+end
+
+function ArenaFormationWindow:updateOtherBtns()
+	if self.isNewDeleteBtnCalback and self.otherDeleteBtn then
+		self.otherDeleteBtn:SetActive(true)
+	end
 end
 
 return ArenaFormationWindow

@@ -1,6 +1,7 @@
 local BaseModel = import(".BaseModel")
 local GalaxyTrip = class("GalaxyTrip", BaseModel, true)
 local json = require("cjson")
+local Partner = import("app.models.Partner")
 
 function GalaxyTrip:ctor()
 	BaseModel.ctor(self)
@@ -8,6 +9,7 @@ function GalaxyTrip:ctor()
 	self.ballInfoArr = {}
 	self.timeArr = {}
 	self.timeIndex = 1
+	self.partnerInfoArr = {}
 end
 
 function GalaxyTrip:onRegister()
@@ -108,6 +110,23 @@ function GalaxyTrip:onGetGalaxyTripGetMainBack(event)
 			self:cutCountOver()
 		end, disTime, 1)
 	end
+
+	if self.mainInfo.teams then
+		for i = 1, 3 do
+			local team = self.mainInfo.teams[i]
+
+			if team and team.partners then
+				for key, value in pairs(team.partners) do
+					local partnerID = value.partner_id
+					local p = Partner.new()
+
+					p:populate(value)
+
+					self.partnerInfoArr[partnerID] = p
+				end
+			end
+		end
+	end
 end
 
 function GalaxyTrip:sendGalaxyTripGetMapBlackHoleBack(isNeedOpen)
@@ -126,6 +145,13 @@ end
 function GalaxyTrip:onGalaxyTripGetMapBlackHoleBack(event)
 	local data = xyd.decodeProtoBuf(event.data)
 	local ballId = data.id
+	local msg = messages_pb.log_partner_data_touch_req()
+	msg.touch_id = xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY
+	msg.desc = tostring(ballId)
+
+	print("send_da_dian-----touch_id:", xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY .. "    desc:" .. tostring(ballId))
+	xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+
 	self.ballInfoArr[ballId] = data
 	self.ballInfoArr[ballId].map = {}
 	local noMapIndex = {
@@ -416,7 +442,9 @@ function GalaxyTrip:onGetGalaxyTripMapInfoBack(event)
 		data = data.map_info
 		local msg = messages_pb.log_partner_data_touch_req()
 		msg.touch_id = xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY
+		msg.desc = tostring(data.table_id)
 
+		print("send_da_dian-----touch_id:", xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY .. "    desc:" .. tostring(data.table_id))
 		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
 	end
 
@@ -1174,6 +1202,7 @@ end
 
 function GalaxyTrip:onSetGalaxyTripFormation(event)
 	local data = xyd.decodeProtoBuf(event.data)
+	self.partnerInfoArr = {}
 
 	if self.mainInfo.teams and #self.mainInfo.teams > 0 then
 		for i = 1, 3 do
@@ -1201,6 +1230,15 @@ function GalaxyTrip:onSetGalaxyTripFormation(event)
 				local partner = xyd.models.slot:getPartner(partnerID)
 
 				partner:setLock(1, xyd.PartnerFlag.GALAXY_TRIP_FORMATION)
+
+				value.star = partner:getStar()
+				value.tableID = partner:getTableID()
+				value.awake = partner:getAwake()
+				local p = Partner.new()
+
+				p:populate(value)
+
+				self.partnerInfoArr[partnerID] = p
 			end
 		end
 	end
@@ -1218,8 +1256,10 @@ function GalaxyTrip:getBuffPlaceAddNum()
 		for j = 1, 6 do
 			local index = j
 
+			dump(teams[2].partners[index])
+
 			if teams[2].partners[index] then
-				local partner = xyd.models.slot:getPartner(tonumber(teams[2].partners[index].partner_id))
+				local partner = self:getPartner(tonumber(teams[2].partners[index].partner_id))
 				local star = partner:getStar()
 
 				if star > 10 then
@@ -1247,7 +1287,7 @@ function GalaxyTrip:getBuffExploreTimeCut()
 			local index = j
 
 			if teams[2].partners[index] then
-				local partner = xyd.models.slot:getPartner(tonumber(teams[2].partners[index].partner_id))
+				local partner = self:getPartner(tonumber(teams[2].partners[index].partner_id))
 				local star = partner:getStar()
 
 				if star > 10 then
@@ -1281,7 +1321,7 @@ function GalaxyTrip:getAwardNumWithBuff(num, awardID)
 			local index = j
 
 			if teams[3].partners[index] then
-				local partner = xyd.models.slot:getPartner(tonumber(teams[3].partners[index].partner_id))
+				local partner = self:getPartner(tonumber(teams[3].partners[index].partner_id))
 				local star = partner:getStar()
 
 				if star > 10 then
@@ -1732,7 +1772,29 @@ function GalaxyTrip:checkRedPoint()
 	xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_MAP_CAN_GET_POINT, isHasGetPoint)
 
 	local isHasPassPoint = false
-	local activityGalaxyTripMissionData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+	local activityData1 = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+	local activityData2 = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2)
+	local activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+
+	if activityData1 then
+		local endTime = activityData1:getEndTime()
+
+		if tonumber(endTime) <= tonumber(xyd.getServerTime()) then
+			activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2
+		else
+			activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+		end
+	elseif activityData2 then
+		local endTime = activityData2:getEndTime()
+
+		if tonumber(endTime) <= tonumber(xyd.getServerTime()) then
+			activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+		else
+			activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2
+		end
+	end
+
+	local activityGalaxyTripMissionData = xyd.models.activity:getActivity(activityID)
 
 	if activityGalaxyTripMissionData and activityGalaxyTripMissionData:checkRedMaskOfAward() then
 		isHasPassPoint = true
@@ -1903,6 +1965,10 @@ function GalaxyTrip:isShowTime()
 	end
 
 	return false
+end
+
+function GalaxyTrip:getPartner(partnerID)
+	return self.partnerInfoArr[partnerID]
 end
 
 return GalaxyTrip

@@ -120,7 +120,7 @@ function TimeCloisterModel:onGetRedInfo(event)
 		return
 	end
 
-	local data = event.data
+	local data = xyd.decodeProtoBuf(event.data)
 	self.loginInfo = event.data
 
 	if data.cloister_id == 0 then
@@ -128,7 +128,7 @@ function TimeCloisterModel:onGetRedInfo(event)
 	else
 		redMark:setMark(xyd.RedMarkType.TIME_CLOISTER_CAN_PROBE, false)
 
-		if data.stop_time > 0 then
+		if data.stop_time and data.stop_time > 0 then
 			redMark:setMark(xyd.RedMarkType.TIME_CLOISTER_PROBE_COMPLETED, true)
 		else
 			redMark:setMark(xyd.RedMarkType.TIME_CLOISTER_PROBE_COMPLETED, false)

@@ -130,14 +130,22 @@ function ChoosePartnerDebrisWindow:initDebris()
 				for _, baoxiangItem in ipairs(baoxiangItems) do
 					if not baoxiangRecordArr[baoxiangItem.itemID] then
 						local optionalDebrisIDs = xyd.tables.giftBoxOptionalTable:getItems(baoxiangItem.itemID)
+						local giftBoxStar = xyd.tables.giftBoxOptionalTable:getStars(baoxiangItem.itemID)
 
 						for __, debrisItem in ipairs(optionalDebrisIDs) do
 							local partnerCost = xyd.tables.itemTable:partnerCost(debrisItem.itemID)
 							local partnerTableID = partnerCost[1]
 							local partnerGroup = xyd.tables.partnerTable:getGroup(partnerTableID)
 							local partnerStar = xyd.tables.partnerTable:getStar(partnerTableID)
+							local starFlag = false
 
-							if partnerGroup == group and partnerStar == star and not baoxiangRecordArr[baoxiangItem.itemID] then
+							if giftBoxStar and giftBoxStar > 0 and giftBoxStar == star then
+								starFlag = true
+							elseif (not giftBoxStar or giftBoxStar == 0) and partnerStar == star then
+								starFlag = true
+							end
+
+							if (partnerGroup == group or group == 9) and starFlag and not baoxiangRecordArr[baoxiangItem.itemID] then
 								table.insert(itemList, {
 									isBaoxiang = true,
 									itemID = baoxiangItem.itemID,

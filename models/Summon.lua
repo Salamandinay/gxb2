@@ -64,6 +64,7 @@ function Summon:onLoadData(event)
 		self.baseSummonFreeTime_ = tonumber(data.last_time_3) or 0
 		self.seniorSummonFreeTime_ = tonumber(data.last_time_8) or 0
 		self.wishSummonFreeTime_ = tonumber(data.last_time_26) or 0
+		self.fortyIndex = tonumber(data.forty_index) or 0
 		self.loaded = true
 		local seniorInterval = xyd.tables.summonTable:getFreeTimeInterval(xyd.SummonType.SENIOR_FREE)
 
@@ -127,6 +128,7 @@ function Summon:onUpdateData(event)
 	self.baseSummonFreeTime_ = tonumber(data.last_time_3) or 0
 	self.seniorSummonFreeTime_ = tonumber(data.last_time_8) or 0
 	self.wishSummonFreeTime_ = tonumber(data.last_time_26) or 0
+	self.fortyIndex = tonumber(data.forty_index) or 0
 	self.loaded = true
 	local seniorInterval = xyd.tables.summonTable:getFreeTimeInterval(xyd.SummonType.SENIOR_FREE)
 
@@ -265,6 +267,10 @@ end
 
 function Summon:getWishSummonFreeTime()
 	return self.wishSummonFreeTime_
+end
+
+function Summon:getFortyIndex()
+	return self.fortyIndex
 end
 
 function Summon:getBaseScrollNum()

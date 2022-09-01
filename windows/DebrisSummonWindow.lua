@@ -83,12 +83,14 @@ end
 
 function DebrisSummonWindow:initbar()
 	self.bar_.value = self.itemNum / self.partnerCost[2]
-	self.labelbar.text = self.itemNum .. "/" .. self.partnerCost[2]
+	self.labelbar.text = xyd.getRoughDisplayNumber(self.itemNum) .. "/" .. xyd.getRoughDisplayNumber(self.partnerCost[2] * self.curNum_)
 end
 
 function DebrisSummonWindow:initTextInput()
 	local function callback(num)
 		self.curNum_ = num
+
+		self:initbar()
 	end
 
 	self.selectNum_:setInfo({

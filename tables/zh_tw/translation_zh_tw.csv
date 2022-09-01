@@ -1063,7 +1063,7 @@ ARENA_TEAM_NO_TEAM_TIPS,學長快去集會組隊吧~
 ARENA_TEAM_FORCE_LIMIT,戰力需求只能在1~1999999之間喔~
 ARENA_TEAM_NAME_LIMIT,請輸入2~6個文字的隊伍名稱
 RESET_TEAM,隊伍調整
-ARENA_TEAM_HELP,戰鬥規則|1.組隊聯賽開啟時間：每週星期二0點至星期五0點(UTC/GMT 0)開啟|2.進入組隊聯賽後可以選擇一支隊伍加入，也可以建立一支隊伍邀請其他學長加入|3.只有同伺服器的學長才能組成隊伍，不同伺服器學長無法組成隊伍|4.每隻隊伍由隊長排列出戰順序，選擇隊伍挑戰，其他隊員只能查看戰鬥記錄|5.隊伍創建後初始有6點體力，每隔1個小時恢復1點體力，恢復上限為12點體力。每挑戰一次消耗1點體力，體力為0時無法進行挑戰|6.組隊聯賽的陣容至少需要1名以上的戰姬上陣，學長可以隨時調整自己的陣容|7.戰鬥採取三局兩勝制，先勝兩場的隊伍勝出|8.擊敗對方全部戰姬獲得一場戰鬥的勝利|9.競技場戰鬥若超過15回合，則雙方戰姬每回合都會提升攻擊力並降低受治療量，直到分出勝負。|10.戰鬥後會有積分結算，勝利獲得積分，失敗扣除積分，所有隊伍按照積分進行排名|11.戰鬥記錄中可以查看最近10場戰鬥的回放|12.組成小隊并出戰後，將不能再變更小隊成員。||獎勵規則|賽季結束後根據排名發放獎勵
+ARENA_TEAM_HELP,戰鬥規則|1.組隊聯賽開啟時間：每週星期二0點至星期五0點(UTC/GMT 0)開啟|2.進入組隊聯賽後可以選擇一支隊伍加入，也可以建立一支隊伍邀請其他學長加入|3.只有同伺服器的學長才能組成隊伍，不同伺服器學長無法組成隊伍|4.每隻隊伍由隊長排列出戰順序，選擇隊伍挑戰，其他隊員只能查看戰鬥記錄|5.隊伍創建後初始有6點體力，每隔1個小時恢復1點體力，恢復上限為12點體力。每挑戰一次消耗1點體力，體力為0時無法進行挑戰|6.組隊聯賽的陣容至少需要1名以上的戰姬上陣，學長可以隨時調整自己的陣容|7.戰鬥採取三局兩勝制，先勝兩場的隊伍勝出|8.擊敗對方全部戰姬獲得一場戰鬥的勝利|9.競技場戰鬥若超過15回合，則雙方戰姬每回合都會提升攻擊力並降低受治療量，直到分出勝負。|10.戰鬥後會有積分結算，勝利獲得積分，失敗扣除積分，所有隊伍按照積分進行排名|11.戰鬥記錄中可以查看最近10場戰鬥的回放|12.組成小隊並出戰後，將不能再變更小隊成員。||獎勵規則|賽季結束後根據排名發放獎勵
 NEXT_RECOVER_TIME,下次體力恢復時間：
 ARENA_TEAM_AWARDS_NO_TEAM_TIPS,您還沒有隊伍，所以沒有排名！快加入隊伍吧，就能至少獲得以下獎勵喔~
 ARENA_TEAM_RECORD_NO_TEAM_TIPS,請先加入組隊聯賽的戰鬥！
@@ -4757,7 +4757,7 @@ DRESS_ITEM_UP_WINDOW_3,不需要碎片
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT01,活動說明
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT02,參與投票
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT03,冠軍戰姬
-ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,經過上次的問卷調查，獲得最多支持的造型方案是「暗黑使者」。\n我們為戰姬的冠軍造型設計了4份配色方案，并豐富了一些設計細節。請學長獻上您寶貴的一票來決定後續的方向！
+ACTIVITY_POPULARITY_VOTE_SURVEYTEXT04,經過上次的問卷調查，獲得最多支持的造型方案是「暗黑使者」。\n我們為戰姬的冠軍造型設計了4份配色方案，並豐富了一些設計細節。請學長獻上您寶貴的一票來決定後續的方向！
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT05,A.配色方案一
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT06,B.配色方案二
 ACTIVITY_POPULARITY_VOTE_SURVEYTEXT07,C.配色方案三
@@ -5676,7 +5676,7 @@ FIREWORK_EXPLAIN_TEXT10,「火柴」
 HOUSE_TEXT_64,未擁有
 POTENTIALITY_BACK_TEXT04,當前戰姬列表剩餘空間不足
 ACTIVITY_VAMPIRE_GAMBLE_HELP,1.活動期間，選定地圖後消耗「歷練體力」即可進行歷練，歷練後可以獲得「歷練地圖」解鎖下一張地圖或是獲得本地圖中一份歷練獎勵。在不同地圖歷練消耗的「歷練體力」數量不同。|2.在每張地圖內歷練時，若沒有獲得「歷練地圖」，則下一次歷練時，「歷練地圖」的出現機率將有所增加，並獲得隨機一份歷練獎勵（歷練獎勵在獲得後不會重複獲得）。若獲得了「歷練地圖」則直接解鎖下一張地圖，本次歷練不再獲得歷練獎勵。|3.歷練時，默認開放第一張地圖。第一張到第四張地圖中，每張地圖均有一張「歷練地圖」，獲得「歷練地圖」後才能解鎖下一張地圖。第五張地圖中沒有「歷練地圖」，獲得地圖內所有歷練獎勵即可解鎖第六張地圖。第六張地圖中的歷練獎勵全部獲得後，將重置該地圖的獎勵。|4.若已解鎖的地圖中仍有尚未獲得的歷練獎勵，可以重新選定地圖，再次進行歷練。|5.在歷練祝福介面，消耗「祝福寶石」還可召喚羅蘭維亞一同進行歷練，祝福值滿後將獲得1個5星羅蘭維亞（碎片形式）。|6.「祝福寶石」可透過榮耀委託獲得。「歷練體力」可透過榮耀委託，扭蛋迎新，探險家禮包，超值禮包，特惠禮包，造型禮包獲得。|7.活動結束後，未使用完的「歷練體力」，「祝福寶石」，「歷練地圖」將會自動回收，「祝福寶石」每個價格為20K金幣，「歷練體力」每個價格為50K金幣，「歷練地圖」每個價格為100K金幣。
-ACTIVITY_VAMPIRE_TASK_HELP,1.活動期間，完成指定任務，收集「榮耀殘頁」即可升級委託完成等級（1張「榮耀殘頁」對應1點進度條），升級後免費領取普通獎勵。|2.學長可以透過購買榮耀委託贈禮，解鎖額外獎勵。任意時間購買後均可立即領取當前等級之前的額外獎勵內容。|3.獲得1個五星羅蘭維亞，以及將羅蘭維亞升至6、9、10星的任務無法通過置換或參與晉升之梯活動完成。
+ACTIVITY_VAMPIRE_TASK_HELP,1.活動期間，完成指定任務，收集「榮耀殘頁」即可升級委託完成等級（1張「榮耀殘頁」對應1點進度條），升級後免費領取普通獎勵。|2.學長可以透過購買榮耀委託贈禮，解鎖額外獎勵。任意時間購買後均可立即領取當前等級之前的額外獎勵內容。|3.獲得1個五星羅蘭維亞，以及將羅蘭維亞升至6、9、10星的任務無法透過置換或參與晉升之梯活動完成。
 ACTIVITY_VAMPIRE_TASK_GIFTBAG,購買後立即獲得
 ACTIVITY_VAMPIRE_TASK_LABEL01,獎勵
 ACTIVITY_VAMPIRE_TASK_LABEL02,任務
@@ -6345,17 +6345,17 @@ ENTRANCE_TEST_STAR_ORIGIN_LOCK,達到S檔後解鎖
 OLD_SCHOOL_TIPS01,是否選擇所有方案？
 ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該花果?
 ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換花果?
-ACTIVITY_DRAGONBOAT2022_BUTTON01,食用艾草糕
+ACTIVITY_DRAGONBOAT2022_BUTTON01,放花燈
 ACTIVITY_DRAGONBOAT2022_BUTTON02,艾葉祈福
-ACTIVITY_DRAGONBOAT2022_HELP,1.端午節來臨，快來和于吉學妹一起食用艾草糕吧！每次食用2塊「艾草糕」便可增加一點飽腹度。每次食用時，可隨機獲得1份基礎獎勵。同時，機率獲得一份驚喜獎勵，即端午驚喜禮盒，打開禮盒後可以自選。|2.食用「艾草糕」之前，還可自選祈福獎勵，達到一定飽腹度後獲得。|3.每達到一定飽腹度，可獲得一份飽腹度獎勵，獎勵通過信件形式發放。|4.「艾草糕」可透過每日信件，在拉夫麗漂流記活動中消耗1個「船舵」或「遙控船舵」，戰姬專屬任務，漂流特惠補給，超值禮包，特惠禮包，造型禮包獲得。|5.活動結束後，未使用的「艾草糕」將會自動兌換為金幣，每個價格為50000，回收獲得的金幣將透過信件發放。
+ACTIVITY_DRAGONBOAT2022_HELP,1. 幽夢學院一年一度的中秋燈會開始啦！學長快來和千鶴子一起放花燈吧~|2. 每放飛1個花燈，將會獲得一份隨機獎勵，機率獲得額外獎勵哦。同時，將有x%%機率增加1點花燈進度，x%%機率增加2點花燈進度，x%%機率增加3點花燈進度。|3. 每達到一定花燈進度，燈會也將進入不同階段，學長也將獲得一份自選的階段獎勵哦。|4. 根據放飛的【花燈】數量，將發放累計獎勵。|5. 【花燈】可透過xxxxxxxx獲得。|6. 活動結束後，未使用的【花燈】將會自動兌換為金幣，每個價格為xxx，回收獲得的金幣將透過信件發放。
 ACTIVITY_DRAGONBOAT2022_TEXT01,飽腹度
 ACTIVITY_DRAGONBOAT2022_TEXT02,驚喜獎勵
 ACTIVITY_DRAGONBOAT2022_TEXT03,基礎獎勵
-ACTIVITY_DRAGONBOAT2022_TEXT04,預先進行獎勵祈福，達到對應飽腹度後即可領取獎勵哦~
-ACTIVITY_DRAGONBOAT2022_TEXT05,請選擇祈福獎勵
-ACTIVITY_DRAGONBOAT2022_TEXT06,飽腹度達到{1}時獲得
-ACTIVITY_DRAGONBOAT2022_TEXT07,請輸入增加的飽腹度
-ACTIVITY_DRAGONBOAT2022_TIPS01,請優先選擇祈福獎勵
+ACTIVITY_DRAGONBOAT2022_TEXT04,預先進行花燈階段獎勵，達到對應階段後即可領取獎勵哦~
+ACTIVITY_DRAGONBOAT2022_TEXT05,請選擇階段獎勵
+ACTIVITY_DRAGONBOAT2022_TEXT06,花燈進度達到{1}時獲得
+ACTIVITY_DRAGONBOAT2022_TEXT07,請輸入放飛的花燈數量
+ACTIVITY_DRAGONBOAT2022_TIPS01,請優先選擇花燈階段獎勵
 PARTNER_CHALLENGE_CHESS_TEXT11,獲取精英戰姬
 PARTNER_CHALLENGE_CHESS_TEXT12,獲得一個精英戰姬後將會自動刷新
 ACTIVITY_DRAGONBOAT2022_TEXT08,暫未獲得獎勵哦~
@@ -6372,7 +6372,7 @@ CHIME_TEXT17,分解
 ACTIVITY_SPFARM_TEXT29,無法更換本體花果
 ACTIVITY_SPFARM_TEXT30,本次活動不再提示
 CHIME_TEXT18,玉振碎片溢出後才可分解
-ACTIVITY_SPFARM_TEXT31,點擊其他格子并與其交換位置
+ACTIVITY_SPFARM_TEXT31,點擊其他格子並與其交換位置
 ACTIVITY_SPFARM_TEXT32,是否確定與該格子進行交換？
 ACTIVITY_SPFARM_TEXT33,無法與莊園中心交換位置
 ACTIVITY_SPFARM_TEXT34,莊園中心周圍4格位置無法設置守軍，繼續交換位置將會撤下當前的守軍，是否繼續？
@@ -6504,7 +6504,7 @@ SHENXUE_TEXT02,{1}星戰姬批量升學
 SHENXUE_TEXT03,{1}星戰姬批量覺醒
 SHENXUE_TEXT04,材料戰姬設置
 LOGIN_TIPS_ERROR_1,封禁
-LOGIN_TIPS_ERROR_2,該賬號已被封禁，請切換伺服器。
+LOGIN_TIPS_ERROR_2,該帳號已被封禁，請切換伺服器。
 SHENXUE_TEXT05,批量覺醒
 SHENXUE_TEXT06,覺醒中……
 ACTIVITY_LOST_SPACE_TEXT10,1.購買太空站禮包后，太空站寶箱將升級為豪華寶箱，每層開啟寶箱後都將額外獲得一份獎勵。|2.購買禮包後，已通關太空站層數的額外獎勵會透過信件發送給學長。
@@ -6790,7 +6790,7 @@ ACTIVITY_CUPID_GIFT_TEXT8,每週五 8:00刷新次數
 ACTIVITY_CUPID_GIFT_TEXT9,剩餘{1}週
 ACTIVITY_CUPID_GIFT_TEXT10,暫未選擇自選獎勵
 ACTIVITY_CUPID_GIFT_TEXT11,祈願次數不足
-DELETE_ACCOUNT_TEXT14,賬號隱私協議2（法語專用，其他語言不翻譯）
+DELETE_ACCOUNT_TEXT14,帳號隱私協議2（法語專用，其他語言不翻譯）
 ACTIVITY_CHIME_TEXT10,使用{1}
 ACTIVITY_CHIME_TEXT11,請選擇使用數量
 ACTIVITY_CUPID_GIFT_TEXT12,祈願五次
@@ -7033,7 +7033,7 @@ GALAXY_TRIP_TEXT71,星旅通行證
 GALAXY_TRIP_TEXT72,星旅
 GALAXY_TRIP_TEXT73,星空祭壇
 GALAXY_TRIP_TIPS_19,永恒星域将在本週五開啟，敬請期待
-ACTIVITY_LEGENDARY_SKIN_HELP,1.學長可在活動期間消耗「服裝訂單」獲取本期傳奇造型。|2.每消耗1個「服裝訂單」，可隨機獲得若干點「訂單進度」，同時獲得1份隨機獎勵和10個「服裝訂購憑證」。|3.「訂單進度」積累到4000個時，將自動消耗并兌換本期傳奇造型。|4.消耗「服裝訂購憑證」，可在活動商店中兌換本期物品獎勵。|5.「服裝訂單」可在服裝訂購禮包中購買獲得。|6.活動結束後，未使用的「服裝訂單」「服裝訂購憑證」「訂單進度」均可保留，活動再次開啟後可繼續使用。
+ACTIVITY_LEGENDARY_SKIN_HELP,1.學長可在活動期間消耗「服裝訂單」獲取本期傳奇造型。|2.每消耗1個「服裝訂單」，可隨機獲得若干點「訂單進度」，同時獲得1份隨機獎勵和10個「服裝訂購憑證」。|3.「訂單進度」積累到4000個時，將自動消耗並兌換本期傳奇造型。|4.消耗「服裝訂購憑證」，可在活動商店中兌換本期物品獎勵。|5.「服裝訂單」可在服裝訂購禮包中購買獲得。|6.活動結束後，未使用的「服裝訂單」「服裝訂購憑證」「訂單進度」均可保留，活動再次開啟後可繼續使用。
 ACTIVITY_LEGENDARY_SKIN_TEXT01,機率說明
 ACTIVITY_LEGENDARY_SKIN_TEXT04,基礎獎勵
 ACTIVITY_LEGENDARY_SKIN_TEXT05,每消耗1個「服裝訂單」必定獲得以下獎勵
@@ -7064,17 +7064,12 @@ SHRINE_HURDLE_AUTO_TEXT07,設置陣容
 SHRINE_HURDLE_AUTO_TEXT08,開始
 INVITATION_ENTRANCE,邀請
 INVITATION_SWITCH,切換身份
-INVITATION_HELP,"
-新生邀請
-
-1.完成成長日記第20章的玩家可擁有成為前輩的資格，分享邀請碼並與新生（等級低於70級）完成綁定即可獲得豐厚獎勵，新生完成階段目標後還將額外獲取一份獎勵~|2.前輩最多可同時綁定10名新生，綁定的新生7日未登入遊戲可解除綁定。新生完成所有階段任務後自動解除綁定。同賬號不同服務器的角色無法相互綁定。|3.前輩每日可免費為新生贈送一份禮物，不要忘記哦~|4.每週首次分享可獲得鑽石獎勵，每週一0點刷新(UTC/GMT 0)。|新生入學
-
-1.新玩家（等級低於70級）可輸入前輩的邀請碼完成綁定並立即獲得一份獎勵，完成階段目標後可領取獎勵。"
+INVITATION_HELP,新生邀請|1.完成成長日記第20章的玩家可擁有成為前輩的資格，分享邀請碼並與新生（等級低於70級）完成綁定即可獲得豐厚獎勵，新生完成階段目標後還將額外獲取一份獎勵~|2.前輩最多可同時綁定10名新生，綁定的新生7日未登入遊戲可解除綁定。新生完成所有階段任務後自動解除綁定。同帳號不同服務器的角色無法相互綁定。|3.前輩每日可免費為新生贈送一份禮物，不要忘記哦~|4.每週首次分享可獲得鑽石獎勵，每週一0點刷新(UTC/GMT 0)。\n\n新生入學|1.新玩家（等級低於70級）可輸入前輩的邀請碼完成綁定並立即獲得一份獎勵，完成階段目標後可領取獎勵。
 INVITATION_TEXT01,新生列表
 INVITATION_TEXT02,我的邀請碼
 INVITATION_TEXT03,複製
 INVITATION_TEXT04,一鍵分享
-INVITATION_TEXT05,5日未登入遊戲可解除綁定
+INVITATION_TEXT05,新生7日未登入遊戲可解除綁定
 INVITATION_TEXT06,是否解除綁定該新生？
 INVITATION_TEXT07,每週首次
 INVITATION_TEXT08,我的前輩
@@ -7094,7 +7089,7 @@ INVITATION_GIFT_TEXT01,收下
 GALAXY_TRIP_TEXT77,該難度獎勵已領取
 ACTIVITY_LEGENDARY_SKIN_TEXT11,抽1次
 ACTIVITY_LEGENDARY_SKIN_TEXT12,抽10次
-ACTIVITY_FOOD_CONSUME_HELP,1.活動期間，使用戰姬即可交換獲得指定道具。其中，6星戰姬必須使用指定戰姬，9星和10星戰姬交換時不做限制。|2.完成交換後，將會返還等同於回退此戰姬而獲得的資源（不包括戰姬碎片和娃娃）。
+ACTIVITY_FOOD_CONSUME_HELP,1.活動期間，使用滿足條件的戰姬即可交換獲得對應獎勵。可交換的戰姬不包括娃娃和天異戰姬。|2.完成交換後，將會返還等同於回退此戰姬而獲得的資源（返還的資源不包括戰姬碎片和娃娃）。消耗6星戰姬時也將返還部分資源，包括經驗飲料、水晶刻刀和金幣（戰姬升級消耗的金幣不會返還）。
 ACTIVITY_FOOD_CONSUME_TEXT01,是否確認交換？
 ACTIVITY_FOOD_CONSUME_TEXT02,交換已達次數上限，無法進行交換哦~
 GALAXY_TRIP_TEXT78,已達到當前可挑戰的最大難度
@@ -7105,3 +7100,17 @@ ACTIVITY_FOOD_CONSUME_TEXT04,9星
 ACTIVITY_FOOD_CONSUME_TEXT05,10星
 ACTIVITY_FOOD_CONSUME_TEXT06,交換獎勵
 ACTIVITY_FOOD_CONSUME_TEXT07,交換
+QUICK_FORMATION_TEXT24,編隊
+INVITATION_TEXT18,邀請{1}名新生
+INVITATION_TEXT19,無效的邀請碼
+INVITATION_TEXT20,快去邀請新生吧~
+INVITATION_TEXT21,贈送成功
+INVITATION_TEXT22,解綁成功
+INVITATION_TEXT23,綁定成功
+GACHA_ENSURE_STAR5_TEXT01,[c][f03c14]{1}[-][/c]次十連内必出5星戰姬
+ACTIVITY_FOOD_CONSUME_TEXT08,請選擇交換戰姬
+ACTIVITY_DRAGONBOAT2022_TEXT09,20%%機率增加3點進度
+ACTIVITY_DRAGONBOAT2022_TEXT10,總熱度:{1}
+ACTIVITY_DRAGONBOAT2022_TIPS02,增加{1}點花燈進度
+GALAXY_TRIP_TIPS_25,有戰姬的突破階級變化，保存后更新
+GALAXY_TRIP_TIPS_26,保存成功

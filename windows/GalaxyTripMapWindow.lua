@@ -100,11 +100,13 @@ function GalaxyTripMapWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_INFO_BY_ID, function (event)
 		local activity_id = event.data.activity_id
 
-		if activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION then
+		if activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION and activity_id ~= xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2 then
 			return
 		end
 
-		xyd.openWindow("galaxy_battle_pass_window", {})
+		xyd.openWindow("galaxy_battle_pass_window", {
+			activityID = activity_id
+		})
 
 		self.isReqingActivity = false
 	end)
@@ -170,7 +172,30 @@ function GalaxyTripMapWindow:registerEvent()
 	UIEventListener.Get(self.passBtn.gameObject).onClick = handler(self, function ()
 		if not self.isReqingActivity then
 			xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
-			xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+
+			local activityData1 = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION)
+			local activityData2 = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2)
+			local activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+
+			if activityData1 then
+				local endTime = activityData1:getEndTime()
+
+				if tonumber(endTime) <= tonumber(xyd.getServerTime()) then
+					activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2
+				else
+					activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+				end
+			elseif activityData2 then
+				local endTime = activityData2:getEndTime()
+
+				if tonumber(endTime) <= tonumber(xyd.getServerTime()) then
+					activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION
+				else
+					activityID = xyd.ActivityID.ACTIVITY_GALAXY_TRIP_MISSION2
+				end
+			end
+
+			xyd.models.activity:reqActivityByID(activityID)
 
 			self.isReqingActivity = true
 		end
