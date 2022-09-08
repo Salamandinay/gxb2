@@ -738,7 +738,7 @@ function GalaxyTrip:setFightWin(gridId)
 end
 
 function GalaxyTrip:getGalaxyTripGetMainIsBatch()
-	if self.mainInfo.is_batch and self.mainInfo.is_batch == 1 and self:getGalaxyTripGetMainNextTime() <= xyd.getServerTime() then
+	if self.mainInfo.is_batch and self.mainInfo.is_batch == 1 and self:getGalaxyTripGetMainNextTime() <= xyd.getServerTime() and self:getGalaxyTripGetCurMap() and self:getGalaxyTripGetCurMap() > 0 and xyd.models.galaxyTrip:getBallInfo(self:getGalaxyTripGetCurMap()) then
 		local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(self:getGalaxyTripGetCurMap())
 		local ballOpened = ballMapInfo.opened
 		local isAllGet = true
