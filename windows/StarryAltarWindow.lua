@@ -138,6 +138,7 @@ function StarryAltarWindow:updateChooseAward()
 		switch = true,
 		scale = 0.8611111111111112,
 		uiRoot = self.iconNode,
+		wndType = xyd.ItemTipsWndType.ACTIVITY,
 		switch_func = self.switchAward
 	}
 

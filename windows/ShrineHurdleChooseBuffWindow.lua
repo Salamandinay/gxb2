@@ -193,6 +193,7 @@ function ShrineHurdleChooseBuffWindow:initWindow()
 	self:checkGuide()
 	self:updateNav()
 	self:updateCardItems()
+	self:checkAutoStep(1)
 end
 
 function ShrineHurdleChooseBuffWindow:register()
@@ -260,6 +261,7 @@ function ShrineHurdleChooseBuffWindow:register()
 	end
 
 	UIEventListener.Get(self.chooseBtn_).onClick = handler(self, self.onClickChoose)
+	UIEventListener.Get(self.autoBtn_).onClick = handler(self, self.onClickAutoBtn)
 
 	self.eventProxy_:addEventListener(xyd.event.SHRINE_HURDLE_CHALLENGE, handler(self, self.onChallenge))
 	self.eventProxy_:addEventListener(xyd.event.SHRINE_HURDLE_GET_RECORDS, handler(self, self.onGetRecords))
@@ -300,6 +302,12 @@ function ShrineHurdleChooseBuffWindow:close(callback, skipAnimation)
 
 		xyd.WindowManager.get():closeWindow(self.name_, callback, skipAnimation)
 		self:cleanDefaultBgClick()
+	end
+
+	local win = xyd.WindowManager.get():getWindow("shrine_hurdle_window")
+
+	if win then
+		win:autoNext(1)
 	end
 end
 
@@ -376,9 +384,15 @@ end
 function ShrineHurdleChooseBuffWindow:onChallenge(event)
 	if self.wndType_ == 2 and event.data.choice == 1 then
 		xyd.alertTips(__("SHRINE_HURDLE_TEXT31"))
+
+		self.canClose_ = true
+
 		self:close()
 	elseif self.wndType_ == 2 and event.data.choice == 2 then
 		xyd.alertTips(__("SHRINE_HURDLE_TEXT35"))
+
+		self.canClose_ = true
+
 		self:close()
 	elseif self.wndType_ == 3 then
 		if self.index_ == 1 then
@@ -389,8 +403,12 @@ function ShrineHurdleChooseBuffWindow:onChallenge(event)
 
 		self:updateCardSelect(0)
 		self:updateCardItems()
+		self:checkAutoStep(0.1)
 	elseif self.wndType_ == 4 then
 		xyd.alertTips(__("SHRINE_HURDLE_TEXT34"))
+
+		self.canClose_ = true
+
 		self:close()
 	end
 end
@@ -518,6 +536,9 @@ function ShrineHurdleChooseBuffWindow:getUIComponent()
 	end
 
 	local infoGroup = self.window_:NodeByName("infoGroup").gameObject
+	self.autoBtn_ = infoGroup:NodeByName("autoBtn").gameObject
+	self.autoLabel_ = infoGroup:ComponentByName("autoBtnLabel", typeof(UILabel))
+	self.autoMask_ = infoGroup:NodeByName("autoMask").gameObject
 	self.helpBtn_ = infoGroup:NodeByName("btnGroup/helpBtn").gameObject
 	self.recordBtn_ = infoGroup:NodeByName("btnGroup/recordBtn").gameObject
 	self.partnerBtn_ = infoGroup:NodeByName("btnGroup/partnerBtn").gameObject
@@ -529,7 +550,16 @@ function ShrineHurdleChooseBuffWindow:getUIComponent()
 	self.navBtnLabel1.text = __("SHRINE_HURDLE_SHOP_TAB1")
 	self.navBtnLabel2.text = __("SHRINE_HURDLE_SHOP_TAB2")
 	self.chooseBtnLabel_.text = __("SHRINE_HURDLE_TEXT17")
+	self.autoLabel_.text = __("SHRINE_HURDLE_AUTO_TEXT01")
 	self.destroyBtnLabel_.text = __("SHRINE_HURDLE_TEXT18")
+	local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoInfo.is_auto ~= 1 then
+		self.autoLabel_.gameObject:SetActive(false)
+		self.autoBtn_:SetActive(false)
+	else
+		self:updateAutonBtn()
+	end
 end
 
 function ShrineHurdleChooseBuffWindow:updateCardSelect(card_index, skill_id, skill_lev, cost)
@@ -589,6 +619,170 @@ function ShrineHurdleChooseBuffWindow:checkGuide()
 			guide_type = xyd.CommonTriggerGuideType.SHRINE_HURDLE_6
 		})
 	end
+end
+
+function ShrineHurdleChooseBuffWindow:checkAutoStep(wait_time)
+	print("ShrineHurdleChooseBuffWindow   checkAutoStep  wait_time  ", wait_time)
+
+	local function autoFunction()
+		local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+		if autoInfo.is_auto ~= 1 then
+			return
+		end
+
+		if self.wndType_ == 2 then
+			xyd.models.shrineHurdleModel:challengeSelect(1, 1)
+		elseif self.wndType_ == 4 then
+			xyd.models.shrineHurdleModel:challengeSelect(1, 0)
+		elseif self.wndType_ == 3 then
+			if autoInfo.stop_shop == 1 then
+				xyd.models.shrineHurdleModel:setAutoInfo(0)
+
+				return
+			end
+
+			local extra = xyd.models.shrineHurdleModel:getExtra()
+			local buy_index = 0
+
+			for i = 1, 3 do
+				local skill_id = extra.buys[i]
+				local skill_lev = xyd.models.shrineHurdleModel:getSkillLv(skill_id)
+				local cost = xyd.tables.shrineHurdleBuffTable:getCost(skill_id)
+
+				if (not skill_lev or skill_lev == 0) and cost[2] <= xyd.models.shrineHurdleModel:getGold() then
+					buy_index = i
+
+					break
+				end
+			end
+
+			if buy_index == 0 then
+				self:onClickNav(2)
+
+				local upgrade_index = 0
+
+				for i = 1, 3 do
+					local skill_id = extra.upgrades[i]
+					local skill_lev = xyd.models.shrineHurdleModel:getSkillLv(skill_id)
+
+					if skill_lev == 1 then
+						local cost = xyd.tables.shrineHurdleBuffTable:getUpgrade1(skill_id)
+
+						if cost[2] <= xyd.models.shrineHurdleModel:getGold() then
+							upgrade_index = i
+
+							break
+						end
+					elseif skill_lev == 2 then
+						local cost = xyd.tables.shrineHurdleBuffTable:getUpgrade2(skill_id)
+
+						if cost[2] <= xyd.models.shrineHurdleModel:getGold() then
+							upgrade_index = i
+
+							break
+						end
+					end
+				end
+
+				if upgrade_index == 0 then
+					self.canClose_ = true
+
+					self:close()
+				else
+					xyd.models.shrineHurdleModel:challengeSelect(2, upgrade_index)
+				end
+			else
+				xyd.models.shrineHurdleModel:challengeSelect(1, buy_index)
+			end
+		end
+	end
+
+	if not wait_time then
+		autoFunction()
+	else
+		self:waitForTime(wait_time, function ()
+			autoFunction()
+		end)
+	end
+end
+
+function ShrineHurdleChooseBuffWindow:onClickAutoBtn()
+	local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoInfo.is_auto == 1 then
+		xyd.models.shrineHurdleModel:setAutoInfo(0)
+		self.autoLabel_.gameObject:SetActive(false)
+		self.autoBtn_:SetActive(false)
+	else
+		xyd.WindowManager.get():openWindow("shrine_hurdle_auto_setting_window", {})
+	end
+end
+
+function ShrineHurdleChooseBuffWindow:updateAutonBtn()
+	if self.sequence1_ then
+		self.sequence1_:Kill(false)
+
+		self.sequence1_ = nil
+	end
+
+	if self.sequence2_ then
+		self.sequence2_:Kill(false)
+
+		self.sequence2_ = nil
+	end
+
+	local function setter1(value)
+		self.autoBtn_.transform.localEulerAngles = Vector3(0, 0, value)
+	end
+
+	function self.playAni2_()
+		local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+		if autoInfo.is_auto ~= 1 then
+			return self.autoMask_:SetActive(false)
+		end
+
+		self.autoMask_:SetActive(true)
+
+		if not self.sequence2_ then
+			self.sequence2_ = self:getSequence()
+
+			self.sequence2_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 360, 0.8):SetEase(DG.Tweening.Ease.Linear))
+			self.sequence2_:AppendCallback(function ()
+				self.playAni1_()
+			end)
+			self.sequence2_:SetAutoKill(false)
+		else
+			self.sequence2_:Restart()
+		end
+	end
+
+	function self.playAni1_()
+		local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+		if autoInfo.is_auto ~= 1 then
+			self.autoMask_:SetActive(false)
+
+			return
+		end
+
+		self.autoMask_:SetActive(true)
+
+		if not self.sequence1_ then
+			self.sequence1_ = self:getSequence()
+
+			self.sequence1_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 360, 0.8):SetEase(DG.Tweening.Ease.Linear))
+			self.sequence1_:AppendCallback(function ()
+				self.playAni2_()
+			end)
+			self.sequence1_:SetAutoKill(false)
+		else
+			self.sequence1_:Restart()
+		end
+	end
+
+	self.playAni1_()
 end
 
 return ShrineHurdleChooseBuffWindow

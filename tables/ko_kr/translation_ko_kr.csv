@@ -443,7 +443,7 @@ EDGE_OUT_NOTIFY,"이 계정은 다른 단말기에 로그인되어 있습니다,
 FORGET_PASSWORD,비밀번호 분실
 CANCEL,취소
 SHENXUE_WINDOW_HELP,"1. 졸업 가능한 소녀를 1개 골라 지정된 재료 소녀를 선택하고 조건을 충족시키면 해당 소녀를 졸업시킬 수 있습니다.|2. 졸업한 소녀의 레벨, 랭킹과 장비는 그대로 유지됩니다.|3. 사용된 재료 소녀에 상응하는 경험치 드링크와 도시락은 가방으로 반환됩니다. 또한 사용했던 장비 역시 가방으로 반환됩니다.|4. 졸업 후 소녀는 더욱 강한 속성과 스킬을 얻게 됩니다.|5. 호감도가 있는 소녀를 졸업 재료로 삼을 경우, 졸업하는 소녀의 호감도 레벨을 이어받게 됩니다.|6. 일괄 졸업 페이지에서 재료 소녀를 선택해 소녀들을 일괄 졸업시킬 수 있습니다. 일괄 졸업 시 선택하신 소녀들을 자동으로 재료 소녀로 간주됩니다."
-TOWER_WINDOW_HELP,"1. 옥상 정복 전투 참여에는 통행권이 필요합니다. 최소 1장의 통행증이 있어야 전투에 참여할 수 있으며, 전투에 승리할 경우 소모되지 않습니다.|2. 통행권은 30분마다 1장 획득할 수 있으며, 10장까지 적립될 경우 더 이상 획득할 수 없게 됩니다.|3. 층의 높이에 따라 난이도가 높아지며, 해당 층을 수호하는 적을 처치할 경우 푸짐한 보상이 주어집니다.|4. 옥상 정복 랭킹은 선배의 통과 층수에 따라 집계됩니다.|5. 옥상 정복 스테이지 200에 도달하면 전투 '스킵' 기능이 해제됩니다."
+TOWER_WINDOW_HELP,"1. 옥상 정복 전투 참여에는 통행권이 필요합니다. 최소 1장의 통행증이 있어야 전투에 참여할 수 있으며, 전투에 승리할 경우 소모되지 않습니다.|2. 통행권은 30분마다 1장 획득할 수 있으며, 10장까지 적립될 경우 더 이상 획득할 수 없게 됩니다.|3. 층의 높이에 따라 난이도가 높아지며, 해당 층을 수호하는 적을 처치할 경우 푸짐한 보상이 주어집니다.|4. 옥상 정복 랭킹은 선배님의 통과 층수에 따라 집계됩니다."
 DUNGEON_WINDOW_HELP,"1. 학원 순찰은 개방 후 48시간 후에 종료하고 종료로부터 48시간 후에 다시 개방됩니다.|2. 소녀는 최소 1명에서 최대 5명까지 출전이 가능하며 확인 버튼 클릭 이후에는 그 회차의 출전 소녀를 변경할 수 없게 되고 아울러 이번 라운드의 출전 소녀는 모두 확인 시의 속성, 상태로 보존된다.(장비 및 잠재능력 포함)|3. 각 파에서는 랜덤으로 적을 내보내며, 나타난 적을 클릭하면 적의 정보를 확인할 수 있습니다. 플레이어는 수동으로 1명의 소녀를 내보내 이 적과 대결할 수 있습니다.|4. 플레이어는 스킵을 선택해서 직접 결과를 볼 수 있으며, 전투를 선택하고 각 파 별로 전투 과정을 보며 전투 종료 후에 결과를 볼 수 있습니다.|5. 각 파의 전투가 끝날 때 아군 소녀와 적의 HP량은 보존됩니다. 쓰러진 소녀는 이후 전투에 참가할 수 없게 됩니다.|6. 각 파 별로 전투 라운드 수는 15 라운드까지입니다. 15라운드 내에 모든 적을 쓰러뜨리면 승리, 아군 소녀가 패배하거나 전투가 15 라운드를 넘어가면 실패로 판정됩니다.|7. 전투 승리시 다음의 3종류의 전투 결과를 얻을 수 있습니다: 고양이의 보물상자 획득, 상인과의 만남 및 아이템 획득. 전투에 승리할 때마다 랜덤으로 1종류가 나타납니다.|8. 고양이의 보물상자: 고양이 보물상자에서는 골드나 다이아 등의 보상을 랜덤으로 획득할 수 있습니다.|9. 상인: 상인을 클릭하면 아이템 구입이 가능하며 화면 하단에 있는 버튼을 누르면 전투에 돌아갈 수 있습니다. 상인의 아이템은 랜덤으로 나옵니다.|10. 아이템: 학용품과 주먹밥 두 종류. 소녀에게 주먹밥을 먹임으로써 회복효과를 획득할 수 있으며, 학용품을 사용하면 버프를 획득할 수 있습니다. 각각의 소녀들은 학용품 획득 횟수에 한도가 있습니다.|11. 주먹밥은 이번 학원 순찰 끝날 때까지 보류할 수 있으며 사용하고 싶을 때 버튼을 탭하면 사용 가능합니다.|12. 모든 아군 소녀가 쓰러졌을 때 그 도전은 종료 됩니다.|13. 학원 순찰은 일반, 보통, 어려움, 극한, 환상, 나이트메어 6개의 난이도로 나뉘어 있습니다. 난이도당 100개의 스테이지가 있으며 모두 클리어하면 다음 난이도부터 도전이 가능합니다.|14. 학원 순찰이 개방될 때마다 클리어 후의 난이도(해당 난이도를 통과하는 50스테이지)는 자동으로 스킵되며 보상을 받을 수 있습니다."
 GET_WAY_EQUIP,{1}-{2}로 이동
 PARTNER_LIST_FULL,"소녀 목록이 꽉 찼습니다. VIP 레벨을 올리거나, 소녀 보유 한도를 구입함으로써 한도를 늘릴 수 있습니다. 지금 바로 구매하시겠습니까?"
@@ -6359,17 +6359,17 @@ ENTRANCE_TEST_STAR_ORIGIN_LOCK,S 단계 도달 후 해제
 OLD_SCHOOL_TIPS01,모든 탐구 플랜을 선택하시겠습니까?
 ACTIVITY_SPFARM_TEXT18,{2} {1}개 사용해 해당 꽃을 심겠습니까?
 ACTIVITY_SPFARM_TEXT19,{2} {1}개 사용해 꽃을 변경하시겠습니까?
-ACTIVITY_DRAGONBOAT2022_BUTTON01,맛보기
+ACTIVITY_DRAGONBOAT2022_BUTTON01,등불 날리기
 ACTIVITY_DRAGONBOAT2022_BUTTON02,쑥떡 기복
-ACTIVITY_DRAGONBOAT2022_HELP,"1. 단오절에 우길과 같이 쑥떡을 먹어봅시다! 맛보기할 때마다 쑥떡 2개가 소모되며 포만도 1포인트가 증가됩니다. 맛보기할 때마다 랜덤으로 기초 보상 1개 획득 가능합니다. 이와 동시 일정 확률로 서프라이즈 보상 1개 즉 단오 서프라이즈 상자를 획득할 수 있습니다. 오픈 후 보상을 선택할 수 있습니다.|2. '쑥떡'을 맛보기 전 기복 보상을 선택할 수 있으며 일정 포인트 달성 시 획득 가능합니다.|3. 일정 포만도 달성할 때마다 대응하는 포만도 보상을 얻을 수 있습니다. 메일로 보상이 발송됩니다. |4. '쑥떡'을 일일 메일, 러블리 표류기에서 '배 키' 또는 '조종 키' 1개 소모, 소녀 전속 미션, 표류기 보급, 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩으로 획득 가능합니다.|5. 이벤트 종료 시, 사용하지 않은 '쑥떡'은 자동으로 회수되며 개당 50000 골드로 반환됩니다. 반환된 골드는 메일을 통해 발송됩니다."
+ACTIVITY_DRAGONBOAT2022_HELP,"1. 한해에 단 한번 하는 유몽 등불 축제가 오픈됐어요~ 어서 시즈코와 함께 등불을 날리세요~|2. 날릴 때마다 등불 2개 필요하며 일정 확률로 추가 보상도 획득할 수 있습니다. 동시에 33.33%%의 확률로 등불 진도 1포인드 추가되며 33.33%%의 확률로 등불 진도 2포인트 추가되며 33.33%%의 확률로 등불 진도 3포인트 추가됩니다.|3. 등불 진도에 따라 등불 축제 단계가 달라집니다. 단계마다 선택 가능한 그랜드 보상 하나 획득 가능합니다.|4. 날린 '등불'의 수량에 따라 누적 보상이 발송됩니다.|5. '등불'은 일일 메일, 신입생 모집, 소녀 집결, 등불 축제 팩, 슈퍼 팩, 스페셜 스킨 팩, 스패셜 팩으로 획득 가능합니다.|6. 이벤트 종료 후, 미사용한 '등불'은 자동으로 골드로 반환됩니다.(등불*1=골드*50000) 반환될 골드는 메일을 통해 발송됩니다."
 ACTIVITY_DRAGONBOAT2022_TEXT01,포만도
-ACTIVITY_DRAGONBOAT2022_TEXT02,서프라이즈 보상
-ACTIVITY_DRAGONBOAT2022_TEXT03,기초 보상
-ACTIVITY_DRAGONBOAT2022_TEXT04,기복 보상을 먼저 설정하시면 대응하는 포만도를 달성 시 보상을 획득할 수 있어요~
-ACTIVITY_DRAGONBOAT2022_TEXT05,기복 보상을 선택하세요.
-ACTIVITY_DRAGONBOAT2022_TEXT06,포만도 {1} 달성 시 획득 가능
-ACTIVITY_DRAGONBOAT2022_TEXT07,증가하고 싶은 포만도를 입력하세요.
-ACTIVITY_DRAGONBOAT2022_TIPS01,기복 보상을 먼저 선택하세요.
+ACTIVITY_DRAGONBOAT2022_TEXT02,추가 보상
+ACTIVITY_DRAGONBOAT2022_TEXT03,랜덤 보상
+ACTIVITY_DRAGONBOAT2022_TEXT04,먼저 단계 보상을 선택하세요~ 각 단계 달성 후 대응하는 보상을 획득할 수 있습니다!
+ACTIVITY_DRAGONBOAT2022_TEXT05,단계 보상을 선택하세요.
+ACTIVITY_DRAGONBOAT2022_TEXT06,등불 진도가 {1} 달성 시 획득
+ACTIVITY_DRAGONBOAT2022_TEXT07,날릴 횟수를 입력하세요
+ACTIVITY_DRAGONBOAT2022_TIPS01,먼저 등불 단계 보상 선택하세요
 PARTNER_CHALLENGE_CHESS_TEXT11,엘리트 소녀 획득
 PARTNER_CHALLENGE_CHESS_TEXT12,엘리트 소녀 1명 획득 후 자동 리셋
 ACTIVITY_DRAGONBOAT2022_TEXT08,획득한 보상이 아직 없습니다~
@@ -6952,7 +6952,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,획득한 금붕어 코인：
 ACTIVITY_GOLDFISH_SHOP_TEXT06,금붕어 코인 기대치：
 ACTIVITY_GOLDFISH_SHOP_TEXT07,반환될 금붕어 코인：
 ACTIVITY_GOLDFISH_SHOP_TIPS01,금붕어 잡기 {1}회 완성 후 해당 단계 해제 가능합니다~
-ACTIVITY_GOLDFISH_AWARD_TEXT01,{1}회 잡기
+ACTIVITY_GOLDFISH_AWARD_TEXT01,등불 {1}개 날리기
 ACTIVITY_GOLDFISH_PACK_TEXT01,구입 후 추가로 다이아 팩 구매 기회 2번 획득~
 STARRY_ALTAR_TEXT14,보상 · 서프라이즈 모드
 STARRY_ALTAR_TEXT15,보상 · 누적 모드
@@ -7081,7 +7081,7 @@ GALAXY_TRIP_TIPS_21,전시 기간 동안 해당 조작을 진행할 수 없습�
 GALAXY_TRIP_TIPS_22,탐색 기간이 종료되며 전시 기간에 곧 들어갑니다.
 GALAXY_TRIP_TIPS_23,전시 기간이 종료되며 새로운 시즌이 곧 오픈됩니다.
 GALAXY_TRIP_TIPS_24,해당 적이 이미 사라졌습니다.
-SHRINE_HURDLE_AUTO_HELP,"1. 자동 전투 시작 후, 선배님이 설정한 팀으로 출전하며 자동으로 다음 스테이지로 넘어갑니다.|2. 다음 스테이지로 진입 시, 전투 스테이지가 아닌 스테이지를 우선적으로 선택됩니다. 자동으로 보상 스테이지 및 회복 스테이지의 첫번째 선택지가 선택되며 선배님이 회복 스테이지 및 상점 스테이지 진입 여부를 선택할 수 있습니다.|3. 상점 스테이지 선택 시, 시련 코인 다 사용될 때 까지 순서대로 버프 구매 및 강화를 할 것입니다. 상점 진입 전 자동 일시 정시 선택 가능합니다.|4. 최종 보스 스테이지 진입 및 시련 떠날 시 자동 전투 중단됩니다. 소녀가 쓰러질 때 자동 전투 중단 여부를 선택 가능합니다. 계속 전투 선택 시 순서대로 소녀들이 모두 쓰러질 때 까지 전투합니다."
+SHRINE_HURDLE_AUTO_HELP,"1. 자동 전투 시작 후, 선배님께서 설정한 팀으로 출전하며 자동으로 다음 스테이지로 넘어갑니다.|2. 다음 스테이지로 진입 시, 전투 스테이지가 아닌 스테이지가 우선적으로 선택됩니다. 자동으로 보상 스테이지 및 회복 스테이지의 첫번째 선택지가 선택되며 선배님께서 회복 스테이지 및 상점 스테이지 진입 여부를 선택할 수 있습니다.|3. 상점 스테이지 선택 시, 시련 코인 다 사용될 때 까지 순서대로 버프 구매 및 강화를 할 것입니다. 상점 진입 시 자동 전투 기능 중단 여부를 선택 가능합니다.|4. 최종 보스 스테이지 진입 및 시련 떠날 시 자동 전투 중단됩니다. |5. 매 전투 스테이지 끝난 후, 자동으로 출전 가능한 소녀들 순서대로 출전시키며 소녀들이 모두 쓰러질 때 자동 전투 중단됩니다. 소녀가 쓰러질 때 자동 전투 기능 중단 여부를 선택 가능합니다."
 SHRINE_HURDLE_AUTO_TEXT01,자동 전투
 SHRINE_HURDLE_AUTO_TEXT02,소녀 쓰러질 때 자동 전투 중지
 SHRINE_HURDLE_AUTO_TEXT03,회복 스테이지에 진입하시겠습니까?
@@ -7137,3 +7137,102 @@ INVITATION_TEXT22,관계 해제 완료
 INVITATION_TEXT23,선후배 관계 맺기 완료
 GACHA_ENSURE_STAR5_TEXT01,10회 뽑기 [c][f03c14]{1}[-][/c]번 이내 진행 시 반드시 5성 소녀 획득
 ACTIVITY_FOOD_CONSUME_TEXT08,교환할 소녀를 선택하세요.
+ACTIVITY_DRAGONBOAT2022_TEXT09,33.33%%의 확률로 진도 3포인트 추가
+ACTIVITY_DRAGONBOAT2022_TEXT10,등불 진도: {1}
+ACTIVITY_DRAGONBOAT2022_TIPS02,등불 진도 {1}포인트 추가
+GALAXY_TRIP_TIPS_25,성급 변화가 생긴 소녀가 있습니다. 저장 후 업데이트됩니다.
+GALAXY_TRIP_TIPS_26,저장 성공
+TIME_CLOISTER_TEXT118,시간 회랑 관측 한 번 완성하며 '은하 파편' 획득 후 해제 가능
+ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,크로스 서버 톱 리그 오픈까지：
+ACTIVITY_REPAIR_CONSOLE_TEXT01,遊戲機故障……快幫助助手醬收集電能塊，激活核心芯片還可領取豐厚獎勵（先不翻譯，待定）
+ACTIVITY_REPAIR_CONSOLE_TEXT02,每次可隨機為1~3個電能站充電
+ACTIVITY_REPAIR_CONSOLE_TEXT03,보상 미리 보기
+ACTIVITY_REPAIR_CONSOLE_TEXT04,充電
+ACTIVITY_REPAIR_CONSOLE_TEXT05,핵심 보상
+ACTIVITY_REPAIR_CONSOLE_TEXT06,일반 보상
+ACTIVITY_REPAIR_CONSOLE_TEXT07,제{1}라운드
+ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}라운드 이후
+ACTIVITY_REPAIR_CONSOLE_HELP,幫助文本，待定
+GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
+GUILD_NEW_WAR_TIPS01,休息期結束，即將進入備戰期
+GUILD_NEW_WAR_TIPS02,戰鬥期結束，即將進入休息期
+GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
+GUILD_NEW_WAR_TIPS04,當前挑戰次數不足
+GUILD_NEW_WAR_TIPS05,需要加入社團
+GUILD_NEW_WAR_TIPS06,社團等級需達到12級且成員達到5人
+GUILD_NEW_WAR_TIPS07,已達到最大值
+GUILD_NEW_WAR_TXET01,賽季
+GUILD_NEW_WAR_TXET02,下場對決開始：
+GUILD_NEW_WAR_TXET03,賽季排名
+GUILD_NEW_WAR_TXET04,對決記錄
+GUILD_NEW_WAR_TXET05,新賽季對決開始:
+GUILD_NEW_WAR_TXET06,對決{1}
+GUILD_NEW_WAR_TXET07,暫無對決記錄
+GUILD_NEW_WAR_TXET08,備戰期
+GUILD_NEW_WAR_TXET09,戰鬥期
+GUILD_NEW_WAR_TXET10,總戰力
+GUILD_NEW_WAR_TXET11,社長
+GUILD_NEW_WAR_TXET12,比賽積分
+GUILD_NEW_WAR_TXET13,獎勵
+GUILD_NEW_WAR_TXET14,對決勝利獎勵
+GUILD_NEW_WAR_TXET15,對決失敗獎勵
+GUILD_NEW_WAR_TXET16,進入場地
+GUILD_NEW_WAR_TXET17,駐守 {1}/{2}
+GUILD_NEW_WAR_TXET18,防守陣容
+GUILD_NEW_WAR_TXET19,戰報
+GUILD_NEW_WAR_TXET20,聊天
+GUILD_NEW_WAR_TXET21,獎勵
+GUILD_NEW_WAR_TXET22,集火
+GUILD_NEW_WAR_TXET23,每次拆除減少旗幟30點耐久
+GUILD_NEW_WAR_TXET24,{1}號旗幟
+GUILD_NEW_WAR_TXET25,耐久：{1}/{2}
+GUILD_NEW_WAR_TXET26,可以派遣防守成員
+GUILD_NEW_WAR_TXET27,調整
+GUILD_NEW_WAR_TXET28,防守社員
+GUILD_NEW_WAR_TXET29,空閒
+GUILD_NEW_WAR_TXET30,主壘
+GUILD_NEW_WAR_TXET31,中壘{1}
+GUILD_NEW_WAR_TXET32,前壘{1}
+GUILD_NEW_WAR_TXET33,旗幟
+GUILD_NEW_WAR_TXET34,戰力
+GUILD_NEW_WAR_TXET35,取消
+GUILD_NEW_WAR_TXET36,確定
+GUILD_NEW_WAR_TXET37,個人貢獻積分：{1}
+GUILD_NEW_WAR_TXET38,進攻次數：{1}/{2}
+GUILD_NEW_WAR_TXET39,賽季結束
+GUILD_NEW_WAR_TXET40,社團排名
+GUILD_NEW_WAR_TXET41,個人排名
+GUILD_NEW_WAR_TXET42,獎勵
+GUILD_NEW_WAR_TXET43,社團獎勵
+GUILD_NEW_WAR_TXET44,個人獎勵
+GUILD_NEW_WAR_TXET45,賽季結算獎勵：
+GUILD_NEW_WAR_TXET46,對決結算獎勵：
+GUILD_NEW_WAR_TXET47,--
+GUILD_NEW_WAR_TXET48,對戰資訊
+GUILD_NEW_WAR_TXET49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TXET50,挑戰
+GUILD_NEW_WAR_TXET51,旗幟資訊
+GUILD_NEW_WAR_TXET52,每次攻擊扣除20點耐久
+GUILD_NEW_WAR_TXET53,進攻獎勵
+GUILD_NEW_WAR_TXET54,進攻
+GUILD_NEW_WAR_TXET55,個人貢獻積分 +{1}
+GUILD_NEW_WAR_TXET56,獎勵
+GUILD_NEW_WAR_TXET57,敵方防守成員勇氣 -{1}
+GUILD_NEW_WAR_TXET58,第{1}場對決
+GUILD_NEW_WAR_TXET59,個人積分社團排名
+GUILD_NEW_WAR_TXET60,個人積分
+GUILD_NEW_WAR_TXET61,社團積分 +{1}
+GUILD_NEW_WAR_TXET62,獎勵通過郵件發放
+GUILD_NEW_WAR_TXET63,{玩家某某}進攻了敵方{左前壘}的{8}號旗幟，消耗了敵人{100}點勇氣
+GUILD_NEW_WAR_TXET64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
+GUILD_NEW_WAR_TXET65,{1}摧毀了敵方{2}
+GUILD_NEW_WAR_TXET66,結束
+GUILD_NEW_WAR_TXET67,對戰{1}
+GUILD_NEW_WAR_TXET68,挑戰次數：{1}
+GUILD_NEW_WAR_TXET69,戰鬥中...
+GUILD_NEW_WAR_TXET70,戰鬥記錄
+GUILD_NEW_WAR_TXET71,個人積分
+GUILD_NEW_WAR_TXET72,敵方勇氣
+GUILD_NEW_WAR_TXET73,清理場地
+GUILD_NEW_WAR_TXET74,我方
+GUILD_NEW_WAR_TXET75,敵方

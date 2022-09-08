@@ -669,6 +669,9 @@ function MailContent.Json2Table(jsonName)
 		end,
 		shrine_hurdle_route_text = function ()
 			table = xyd.tables.shrineHurdleRouteTextTable
+		end,
+		activity_dragonboat2022_text = function ()
+			table = xyd.tables.activityDragonboat2022TextTable
 		end
 	}
 

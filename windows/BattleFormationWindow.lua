@@ -885,7 +885,7 @@ function BattleFormationWindow:getUIComponent()
 	self.partnerListWarpContent_ = self.chooseGroup:ComponentByName("partner_scroller/partner_container", typeof(MultiRowWrapContent))
 	self.heroRoot = self.chooseGroup:Find("hero_root").gameObject
 
-	if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+	if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
 		self.progress1 = self.container1:ComponentByName("progress1", typeof(UIProgressBar))
 		self.progress2 = self.container2:ComponentByName("progress2", typeof(UIProgressBar))
 		self.progress3 = self.container3:ComponentByName("progress3", typeof(UIProgressBar))
@@ -968,7 +968,7 @@ function BattleFormationWindow:getUIComponent()
 
 		local y = 137
 
-		if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
+		if self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET or self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 			y = 170
 		end
 
@@ -1379,7 +1379,8 @@ function BattleFormationWindow:onClickBattleBtn()
 		[xyd.BattleType.ACTIVITY_SPFARM] = self.spfarmFight,
 		[xyd.BattleType.QUICK_TEAM_SET] = self.quickSetTeam,
 		[xyd.BattleType.GALAXY_TRIP_BATTLE] = self.galaxyTripBattle,
-		[xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE] = self.galaxyTripSpecialBossBattle
+		[xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE] = self.galaxyTripSpecialBossBattle,
+		[xyd.BattleType.SHRINE_HURDLE_SET] = self.shrineHurdleSetTeam
 	}
 
 	if battleFunc[self.battleType] then
@@ -2124,6 +2125,17 @@ function BattleFormationWindow:shrineHurdleBattle(partnerParams)
 	xyd.closeWindow("battle_formation_trial_window")
 end
 
+function BattleFormationWindow:shrineHurdleSetTeam(partnerParams)
+	local win = xyd.WindowManager.get():getWindow("shrine_hurdle_auto_setting_window")
+
+	if win then
+		win:setPartnerList(partnerParams, self.pet)
+		win:updatePartnerList()
+	end
+
+	xyd.closeWindow("battle_formation_trial_window")
+end
+
 function BattleFormationWindow:gameAssistantArenaBattle(partnerParams)
 	local partners = xyd.models.arena:getDefFormation()
 
@@ -2666,7 +2678,7 @@ function BattleFormationWindow:initPartnerList()
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItemWithHP, self)
 	elseif self.battleType == xyd.BattleType.ARCTIC_EXPEDITION then
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItemWithStateIcon, self)
-	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
+	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItemShrineHurdle, self)
 	else
 		self.partnerMultiWrap_ = require("app.common.ui.FixedMultiWrapContent").new(self.partnerScrollView, self.partnerListWarpContent_, self.heroRoot, FormationItem, self)
@@ -2936,10 +2948,10 @@ function BattleFormationWindow:initSHPartnerData(groupID, needUpdateTop)
 	table.sort(partnerDataList, function (a, b)
 		local lva = a.partnerInfo.lv or a.partnerInfo.level
 		local lvb = b.partnerInfo.lv or b.partnerInfo.level
-		local table_id_a = a.partnerInfo.table_id
-		local table_id_b = b.partnerInfo.table_id
+		local table_id_a = a.partnerInfo.table_id * 1000
+		local table_id_b = b.partnerInfo.table_id * 1000
 
-		return lva * 10000000 + table_id_a > lvb * 10000000 + table_id_b
+		return lva * 1000000000 + table_id_a + a.partnerInfo.partnerID > lvb * 1000000000 + table_id_b + b.partnerInfo.partnerID
 	end)
 
 	for i in pairs(self.nowPartnerList) do
@@ -3276,7 +3288,7 @@ function BattleFormationWindow:iniPartnerData(groupID, needUpdateTop)
 		partnerDataList = self:initBeachIslandPartnerData(groupID, needUpdateTop)
 	elseif self.battleType == xyd.BattleType.ARCTIC_EXPEDITION then
 		partnerDataList = self:initPartnerDataWithLev(groupID, needUpdateTop, 100)
-	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
+	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
 		partnerDataList = self:initSHPartnerData(groupID, needUpdateTop)
 	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then
 		if self.spFarmType == xyd.ActivitySpfarmOpenBattleFormationType.DEF then
@@ -3456,7 +3468,7 @@ function BattleFormationWindow:onClickheroIcon(partnerInfo, isChoose, pos, needA
 			end
 
 			self["progress" .. tostring(tostring(posId))].value = hp / 100
-		elseif xyd.BattleType.SHRINE_HURDLE == self.battleType then
+		elseif xyd.BattleType.SHRINE_HURDLE == self.battleType or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
 			local hp = partnerInfo.status.hp
 			self["progress" .. tostring(tostring(posId))].value = hp / 100
 		elseif xyd.BattleType.ARCTIC_EXPEDITION == self.battleType then
@@ -3810,7 +3822,7 @@ function BattleFormationWindow:showPartnerDetail(partnerInfo)
 
 			return
 		end
-	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
+	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
 		wndName = "partner_detail_window"
 		params.isTrial = true
 		params.isShrineHurdle = true
@@ -3899,6 +3911,8 @@ function BattleFormationWindow:saveLocalformation(formation)
 		dbParams.key = self.battleType .. "_" .. self.params_.fortID
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		dbParams.key = self.battleType .. "_1"
+	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
+		dbParams.key = "shrine_hurdle_auto_partner"
 	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
 		dbParams.key = self.battleType .. "_" .. self.data.enemy_id
 		local entranceTestActivityData = xyd.models.activity:getActivity(xyd.ActivityID.ENTRANCE_TEST)
@@ -3972,7 +3986,7 @@ function BattleFormationWindow:iconTapHandler(copyPartnerInfo, isFriendPartner)
 	self:updateForceNum()
 	self:updateBuff()
 
-	if xyd.BattleType.TRIAL == self.battleType or xyd.BattleType.SHRINE_HURDLE == self.battleType or xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
+	if xyd.BattleType.TRIAL == self.battleType or xyd.BattleType.SHRINE_HURDLE == self.battleType or self.battleType == xyd.BattleType.SHRINE_HURDLE_SET or xyd.BattleType.ACTIVITY_SPFARM == self.battleType then
 		local copyIconInfo = copyPartnerInfo
 		local posId = copyIconInfo.posId
 
@@ -4281,6 +4295,8 @@ function BattleFormationWindow:readStorageFormation()
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_" .. self.params_.fortID)
 	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE then
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_1")
+	elseif self.battleType == xyd.BattleType.SHRINE_HURDLE_SET then
+		dbVal = xyd.db.formation:getValue("shrine_hurdle_auto_partner")
 	elseif self.battleType == xyd.BattleType.ENTRANCE_TEST then
 		dbVal = xyd.db.formation:getValue(self.battleType .. "_" .. self.data.enemy_id)
 	end
@@ -4353,7 +4369,7 @@ function BattleFormationWindow:readStorageFormation()
 				tmpPartnerList[i] = nil
 				self.nowPartnerList[i] = nil
 			end
-		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE and tonumber(sPartnerID) and tonumber(sPartnerID) > 0 then
+		elseif self.battleType == xyd.BattleType.SHRINE_HURDLE_SET or self.battleType == xyd.BattleType.SHRINE_HURDLE and tonumber(sPartnerID) and tonumber(sPartnerID) > 0 then
 			local partnerInfo = xyd.models.shrineHurdleModel:getPartner(sPartnerID)
 
 			if not partnerInfo then

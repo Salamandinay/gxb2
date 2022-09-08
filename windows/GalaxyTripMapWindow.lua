@@ -19,6 +19,7 @@ end
 
 function GalaxyTripMapWindow:getUIComponent()
 	self.groupAction = self.window_:NodeByName("groupAction")
+	self.bgBottom = self.groupAction:ComponentByName("bgBottom", typeof(UITexture))
 	self.bg = self.groupAction:ComponentByName("bg", typeof(UITexture))
 	self.upCon = self.groupAction:NodeByName("upCon").gameObject
 	self.tipsBtn = self.upCon:NodeByName("tipsBtn").gameObject
@@ -52,6 +53,12 @@ function GalaxyTripMapWindow:getUIComponent()
 	self.backBtnLabel = self.backBtnCon:ComponentByName("backBtnLabel", typeof(UILabel))
 	self.teamBtnCon = self.downCon:NodeByName("teamBtnCon").gameObject
 	self.teamBtn = self.teamBtnCon:NodeByName("teamBtn").gameObject
+	self.teamBtnRedPoint = self.teamBtn:NodeByName("teamBtnRedPoint").gameObject
+
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.GALAXY_TRIP_TEAM
+	}, self.teamBtnRedPoint)
+
 	self.teamBtnLabel = self.teamBtnCon:ComponentByName("teamBtnLabel", typeof(UILabel))
 	self.returnBtnCon = self.downCon:NodeByName("returnBtnCon").gameObject
 	self.returnBtn = self.returnBtnCon:NodeByName("returnBtn").gameObject
@@ -68,6 +75,7 @@ function GalaxyTripMapWindow:getUIComponent()
 	self.canGetCon = self.centerCon:NodeByName("canGetCon").gameObject
 	self.planGridCon = self.centerCon:NodeByName("planGridCon").gameObject
 	self.gridHpCon = self.centerCon:NodeByName("gridHpCon").gameObject
+	self.startEndCon = self.centerCon:NodeByName("startEndCon").gameObject
 	self.planMaskPanel = self.centerCon:NodeByName("planMaskPanel").gameObject
 	self.maskUISprite = self.planMaskPanel:ComponentByName("mask", typeof(UISprite))
 	self.maskBoxCollider = self.planMaskPanel:ComponentByName("mask", typeof(UnityEngine.BoxCollider))
@@ -85,6 +93,7 @@ end
 function GalaxyTripMapWindow:reSize()
 	self:resizePosY(self.upCon, 500, 558)
 	self:resizePosY(self.downCon, -510, -576)
+	self:resizePosY(self.bgBottom, -136, -73)
 end
 
 function GalaxyTripMapWindow:registerEvent()
@@ -1032,6 +1041,29 @@ function GridClass:updateGridState()
 					self.gridEventImg:SetActive(false)
 				end
 			end
+
+			self:setStartEndConVisible(false)
+
+			if self.parent:getBallId() ~= xyd.models.galaxyTrip:getBossMapId() then
+				local mapSize = xyd.tables.galaxyTripMapTable:getSize(self.parent:getBallId())
+				local imgStr = "galaxy_trip_text_qd_" .. xyd.Global.lang
+				local isShowStartEnd = false
+				local posChangeY = 10
+
+				if math.floor((self.posId - 1) / mapSize[1]) == mapSize[2] - 1 then
+					isShowStartEnd = true
+				elseif math.floor((self.posId - 1) / mapSize[1]) == 0 then
+					isShowStartEnd = true
+					imgStr = "galaxy_trip_text_zd_" .. xyd.Global.lang
+					posChangeY = 6
+				end
+
+				if isShowStartEnd then
+					self:setStartEndConVisible(true)
+					self.startEndCon:Y(-self.gridBorder.height / 2 + posChangeY)
+					xyd.setUISpriteAsync(self.startEndImg, nil, imgStr, nil, , true)
+				end
+			end
 		end
 	end
 
@@ -1472,6 +1504,27 @@ function GridClass:setHpConVisible(visible)
 
 	if self.hpCon then
 		self.hpCon:SetActive(visible)
+	end
+end
+
+function GridClass:getStartEndCon()
+	if not self.startEndCon then
+		self.startEndCon = NGUITools.AddChild(self.go.gameObject, self.parent.startEndCon.gameObject)
+		self.startEndImg = self.startEndCon:ComponentByName("startEndImg", typeof(UISprite))
+
+		self.startEndCon:X(self.gridBorder.width / 2)
+	end
+
+	return self.startEndCon
+end
+
+function GridClass:setStartEndConVisible(visible)
+	if visible and not self.startEndCon then
+		self:getStartEndCon()
+	end
+
+	if self.startEndCon then
+		self.startEndCon:SetActive(visible)
 	end
 end
 

@@ -480,6 +480,7 @@ function ArenaAllServerQuizRecord:onVideoTouch()
 	end
 
 	xyd.WindowManager:get():openWindow("arena_3v3_record_detail_window", {
+		isAsAfter = true,
 		report_ids = self.reportIDs_,
 		model = ArenaAllServer
 	})

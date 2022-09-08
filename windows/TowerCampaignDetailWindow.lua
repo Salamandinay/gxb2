@@ -133,7 +133,8 @@ function TowerCampaignDetailWindow:requestBattle()
 		return
 	end
 
-	local showSkip = xyd.checkCondition(self.stageID >= 200, true, false)
+	local skipStage = tonumber(xyd.tables.miscTable:getVal("tower_skipfight_floor"))
+	local showSkip = xyd.checkCondition(skipStage <= self.stageID, true, false)
 
 	if self.type == xyd.BattleType.TOWER_PRACTICE then
 		showSkip = true

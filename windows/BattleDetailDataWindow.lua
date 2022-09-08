@@ -15,6 +15,7 @@ function BattleDetailItem:ctor(node, params)
 	self.rightPartner_ = params.rightPartner
 	self.maxDamage_ = params.maxDamage
 	self.maxHeal_ = params.maxHeal
+	self.maxTank_ = params.maxTank
 
 	self:initUI()
 	self:initLayout()
@@ -50,7 +51,7 @@ function BattleDetailItem:refreshProgressBar(showType, needDuration)
 		if self.rightPartner_ then
 			self.rightNum_ = xyd.getBattleNum(self.rightPartner_.hurt.hurt)
 		end
-	else
+	elseif self.showType_ == 2 then
 		xyd.setUISpriteAsync(self.leftThumb, xyd.Atlas.COMMON_UI, "battle_detail_progress_2")
 		xyd.setUISpriteAsync(self.rightThumb, xyd.Atlas.COMMON_UI, "battle_detail_progress_2")
 
@@ -63,6 +64,27 @@ function BattleDetailItem:refreshProgressBar(showType, needDuration)
 		if self.rightPartner_ then
 			self.rightNum_ = xyd.getBattleNum(self.rightPartner_.hurt.heal)
 		end
+	elseif self.showType_ == 3 then
+		xyd.setUISpriteAsync(self.leftThumb, xyd.Atlas.COMMON_UI, "battle_detail_progress_3")
+		xyd.setUISpriteAsync(self.rightThumb, xyd.Atlas.COMMON_UI, "battle_detail_progress_3")
+
+		self.TotalNum_ = self.maxTank_
+
+		if self.leftPartner_ then
+			self.leftNum_ = xyd.getBattleNum(self.leftPartner_.hurt.tank)
+		end
+
+		if self.rightPartner_ then
+			self.rightNum_ = xyd.getBattleNum(self.rightPartner_.hurt.tank)
+		end
+	end
+
+	if not self.leftNum_ then
+		self.leftNum_ = 0
+	end
+
+	if not self.rightNum_ then
+		self.rightNum_ = 0
 	end
 
 	local leftSequence = DG.Tweening.DOTween.Sequence()
@@ -193,6 +215,7 @@ function BattleDetailItem:getIcon(data, parentGo)
 				awake = data.awake,
 				show_skin = data.show_skin,
 				is_vowed = data.is_vowed,
+				star_origin = data.star_origin,
 				equips = {
 					0,
 					0,
@@ -287,6 +310,7 @@ function BattleDetailDataWindow:getUIComponent()
 	local mainObj = winTrans:NodeByName("groupAction").gameObject
 	self.damageBtn = mainObj:NodeByName("damageBtn").gameObject
 	self.healBtn = mainObj:NodeByName("healBtn").gameObject
+	self.tankBtn = mainObj:NodeByName("tankBtn").gameObject
 	self.labelSelf = mainObj:ComponentByName("labelSelf", typeof(UILabel))
 	self.labelEnemy = mainObj:ComponentByName("labelEnemy", typeof(UILabel))
 	self.imgBattle_ = mainObj:ComponentByName("imgBattle_", typeof(UISprite))
@@ -299,23 +323,37 @@ end
 
 function BattleDetailDataWindow:registerEvent()
 	UIEventListener.Get(self.damageBtn).onClick = function ()
-		if self.showType == 2 then
+		if self.showType == 2 or self.showType == 3 then
 			self.showType = 1
 
 			self:clearItemAction()
-			self:changeColor(self.damageBtn, true)
 			self:changeColor(self.healBtn, false)
+			self:changeColor(self.tankBtn, false)
+			self:changeColor(self.damageBtn, true)
 			self:refreshListGroup()
 		end
 	end
 
 	UIEventListener.Get(self.healBtn).onClick = function ()
-		if self.showType == 1 then
+		if self.showType == 1 or self.showType == 3 then
 			self.showType = 2
 
 			self:clearItemAction()
 			self:changeColor(self.damageBtn, false)
+			self:changeColor(self.tankBtn, false)
 			self:changeColor(self.healBtn, true)
+			self:refreshListGroup()
+		end
+	end
+
+	UIEventListener.Get(self.tankBtn).onClick = function ()
+		if self.showType == 1 or self.showType == 2 then
+			self.showType = 3
+
+			self:clearItemAction()
+			self:changeColor(self.damageBtn, false)
+			self:changeColor(self.healBtn, false)
+			self:changeColor(self.tankBtn, true)
 			self:refreshListGroup()
 		end
 	end
@@ -369,7 +407,8 @@ function BattleDetailDataWindow:getTeamInfo(team, dieInfo, isTeamB)
 			love_point = team[i].love_point,
 			equips = team[i].equips,
 			potentials = team[i].potentials,
-			is_die = is_die
+			is_die = is_die,
+			star_origin = team[i].star_origin
 		}
 
 		table.insert(infos, info)
@@ -398,6 +437,7 @@ function BattleDetailDataWindow:initLayout()
 	self.labelEnemy.text = __("ENEMY")
 	self.damageBtn:ComponentByName("button_label", typeof(UILabel)).text = __("DAMAGE")
 	self.healBtn:ComponentByName("button_label", typeof(UILabel)).text = __("HEAL")
+	self.tankBtn:ComponentByName("button_label", typeof(UILabel)).text = __("BATTLE_INFORMATION_TANK")
 	local battleReport = self.params_.real_battle_report or self.battleParams.battle_report
 	local die_info = battleReport.die_info
 
@@ -417,6 +457,7 @@ function BattleDetailDataWindow:initLayout()
 
 	local maxDamage = 0
 	local maxHeal = 0
+	local maxTank = 0
 	local hurtList = {}
 
 	for _, hurtData in ipairs(hurts) do
@@ -424,6 +465,8 @@ function BattleDetailDataWindow:initLayout()
 		hurtList[pos] = hurtData
 		local hurt = xyd.getBattleNum(hurtData.hurt)
 		local heal = xyd.getBattleNum(hurtData.heal)
+		local tank = xyd.getBattleNum(hurtData.tank)
+		tank = tank or 0
 
 		if maxDamage <= hurt then
 			maxDamage = hurt
@@ -431,6 +474,10 @@ function BattleDetailDataWindow:initLayout()
 
 		if maxHeal <= heal then
 			maxHeal = heal
+		end
+
+		if maxTank <= tank then
+			maxTank = tank
 		end
 	end
 
@@ -467,6 +514,7 @@ function BattleDetailDataWindow:initLayout()
 			rightPartner = rightPartner,
 			maxDamage = maxDamage,
 			maxHeal = maxHeal,
+			maxTank = maxTank,
 			showType = self.showType,
 			battleType = battleReport.battle_type
 		}

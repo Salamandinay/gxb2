@@ -126,10 +126,6 @@ function ActivityHalloweenTrickPreviewWindow:layout()
 		self.labelTitle.text = __("ACTIVITY_TRICKORTREAT_TEXT03")
 		self.labelSuperAward.text = self.params.superAwardText
 		self.labelCommonAward.text = self.params.commonAwardText
-		self.groupAction.height = 521
-		self.bgCommonAward.height = 208
-
-		self.labelCommonAward:Y(-16.5)
 
 		for i in ipairs(self.params.superAwards) do
 			local tmp = NGUITools.AddChild(self.groupSuperAward.gameObject, self.itemCell.gameObject)

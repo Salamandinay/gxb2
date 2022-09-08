@@ -238,6 +238,21 @@ function ShrineHurdleModel:onSelectRt(event)
 	self.ticket_ = data.ticket
 	self.partnerInfos_ = data.partner_infos or {}
 	self.pr_num_ = #self.partnerInfos_ or 0
+	self.powerPartnerList_ = {}
+
+	if self.partnerInfos_ and #self.partnerInfos_ > 0 then
+		for partner_id, partner_info in pairs(self.partnerInfos_) do
+			table.insert(self.powerPartnerList_, partner_id)
+		end
+
+		table.sort(self.powerPartnerList_, function (a, b)
+			local partnerInfoA = self:getPartner(a)
+			local partnerInfoB = self:getPartner(b)
+
+			return partnerInfoB.power < partnerInfoA.power
+		end)
+	end
+
 	self.floor_id_ = data.floor_id
 	self.route_id_ = data.route_id
 	self.floor_index_ = data.floor_index
@@ -374,6 +389,7 @@ function ShrineHurdleModel:onChallenge(event)
 		end
 	else
 		local battle_report = data.battle_result.battle_report
+		local autoInfo = self:getAutoInfo()
 
 		if battle_report.isWin and battle_report.isWin == 1 then
 			self.extra_.can_next = 1
@@ -394,6 +410,70 @@ function ShrineHurdleModel:onChallenge(event)
 
 			if partner_id and partner_id > 0 then
 				self.partnerInfos_[partner_id].status.hp = hp
+			end
+		end
+
+		if autoInfo.is_auto == 1 then
+			local partnerNum = 0
+			local partnerList, pet = self:getAutoTeam()
+
+			for index, partner_id in pairs(partnerList) do
+				if tonumber(partner_id) and tonumber(partner_id) > 0 and self:getPartner(partner_id) then
+					local hp = self:getPartner(partner_id).status.hp
+
+					if hp and hp <= 0 then
+						partnerList[index] = nil
+
+						if autoInfo.stop_dead and autoInfo.stop_dead == 1 then
+							self:setAutoInfo(0)
+						end
+					end
+				end
+			end
+
+			for i = 1, 6 do
+				if tonumber(partnerList[i]) and tonumber(partnerList[i]) > 0 then
+					partnerNum = partnerNum + 1
+				end
+			end
+
+			local newautoInfo = self:getAutoInfo()
+
+			if partnerNum < 6 and newautoInfo.is_auto == 1 then
+				for i = 1, 6 - partnerNum do
+					local posList = {}
+					local partners = {}
+
+					for pos, partner_id in pairs(partnerList) do
+						if tonumber(partner_id) and tonumber(partner_id) > 0 then
+							table.insert(posList, pos)
+							table.insert(partners, partner_id)
+						end
+					end
+
+					local resPos = 0
+
+					for j = 1, 6 do
+						if xyd.arrayIndexOf(posList, j) <= 0 then
+							resPos = j
+						end
+					end
+
+					if resPos > 0 then
+						for n = 1, #self.powerPartnerList_ do
+							local partner_id = self.powerPartnerList_[n]
+							local partnerInfo = self:getPartner(tonumber(partner_id))
+
+							if tonumber(partner_id) and tonumber(partner_id) > 0 and xyd.arrayIndexOf(partners, partner_id) < 0 and partnerInfo and partnerInfo.status.hp > 0 then
+								partnerList[resPos] = tonumber(partner_id)
+
+								break
+							end
+						end
+					end
+				end
+
+				self:setAutoTeam(partnerList, pet)
 			end
 		end
 
@@ -548,6 +628,18 @@ end
 function ShrineHurdleModel:onGetPartners(event)
 	local data = xyd.decodeProtoBuf(event.data)
 	self.partnerInfos_ = data.partner_infos or {}
+	self.powerPartnerList_ = {}
+
+	for partner_id, partner_info in pairs(self.partnerInfos_) do
+		table.insert(self.powerPartnerList_, partner_id)
+	end
+
+	table.sort(self.powerPartnerList_, function (a, b)
+		local partnerInfoA = self:getPartner(a)
+		local partnerInfoB = self:getPartner(b)
+
+		return partnerInfoB.power < partnerInfoA.power
+	end)
 end
 
 function ShrineHurdleModel:getPartners()
@@ -997,6 +1089,80 @@ function ShrineHurdleModel:checkIsCanOpen()
 	end
 
 	return true
+end
+
+function ShrineHurdleModel:getAutoInfo()
+	local dbVal = xyd.db.misc:getValue("shrine_hurdle_auto_info")
+	local data = {}
+
+	if dbVal then
+		data = json.decode(dbVal)
+	end
+
+	return data
+end
+
+function ShrineHurdleModel:setAutoTeam(partnerParams, pet)
+	local autoPartner = xyd.db.misc:getValue("shrine_hurdle_auto_partner")
+	pet = pet or 0
+
+	if not partnerParams then
+		autoPartner = json.decode(autoPartner)
+		partnerParams = autoPartner.partners
+		pet = pet or autoPartner.pet_id or 0
+	end
+
+	local formation = {
+		pet_id = pet,
+		partners = partnerParams
+	}
+	local dbParams = {
+		key = "shrine_hurdle_auto_partner",
+		value = json.encode(formation)
+	}
+
+	xyd.db.formation:addOrUpdate(dbParams)
+end
+
+function ShrineHurdleModel:getAutoTeam()
+	local formation = xyd.db.formation:getValue("shrine_hurdle_auto_partner")
+	local partnerParams = {}
+	local pet = 0
+
+	if formation then
+		formation = json.decode(formation)
+		partnerParams = formation.partners
+		pet = formation.pet_id
+	end
+
+	return partnerParams, pet
+end
+
+function ShrineHurdleModel:setAutoInfo(is_auto, stop_dead, reply, go_shop, stop_shop)
+	__TRACE("setAutoInfo     is_auto==", is_auto)
+
+	local dbVal = xyd.db.misc:getValue("shrine_hurdle_auto_info")
+	local data = {}
+
+	if dbVal then
+		data = json.decode(dbVal)
+	end
+
+	data.is_auto = is_auto
+	data.stop_dead = stop_dead or data.stop_dead
+	data.reply = reply or data.reply
+	data.go_shop = go_shop or data.go_shop
+	data.stop_shop = stop_shop or data.stop_shop
+	local newData = json.encode(data)
+
+	xyd.db.misc:setValue({
+		key = "shrine_hurdle_auto_info",
+		value = newData
+	})
+
+	if is_auto == 1 then
+		self:setSkipReport(true)
+	end
 end
 
 return ShrineHurdleModel

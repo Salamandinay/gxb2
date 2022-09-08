@@ -978,30 +978,7 @@ function BattleChooseWindow:layoutPVP()
 	local nowTime = xyd.getServerTime()
 
 	self:updateArenaShow()
-
-	if xyd.models.arena3v3:checkFunctionOpen() then
-		self.group3v3Time:SetActive(true)
-
-		if xyd.models.arena3v3:checkOpen() then
-			self.labelTime3v3.text = __("ARENA_ALL_SERVER_CLOSE_COUNTDOWN")
-			self.time3v3Count = CountDown.new(self.time3v3, {
-				duration = xyd.models.arena3v3:getDDL() - nowTime
-			})
-		else
-			self.labelTime3v3.text = __("ARENA_ALL_SERVER_NEW_COUNTDOWN")
-			self.time3v3Count = CountDown.new(self.time3v3, {
-				duration = xyd.models.arena3v3:getStartTime() - nowTime
-			})
-		end
-
-		local width1 = self.labelTime3v3.width
-		local width2 = self.time3v3.width
-
-		self.labelTime3v3:X(-width1 / 2 - width2 / 2)
-		self.time3v3:X(width1 / 2 - width2 / 2)
-	else
-		self.group3v3Time:SetActive(false)
-	end
+	self:updateArena3v3Show()
 
 	if xyd.models.arenaTeam:checkFunctionOpen() then
 		self.groupTeamTime:SetActive(true)
@@ -1210,8 +1187,8 @@ function BattleChooseWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.START_HANG, handler(self, self.setTimeCloisterInfo))
 	self.eventProxy_:addEventListener(xyd.event.GET_HANG, handler(self, self.setTimeCloisterInfo))
 	self.eventProxy_:addEventListener(xyd.event.SPEED_UP_HANG, handler(self, self.setTimeCloisterInfo))
-	self.eventProxy_:addEventListener(xyd.event.GET_ARENA_ALL_SERVER_INFO, handler(self, self.updateArenaLabel))
-	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_SELF_INFO_NEW, handler(self, self.updateArenaLabel))
+	self.eventProxy_:addEventListener(xyd.event.GET_ARENA_ALL_SERVER_INFO, handler(self, self.updateArenaAllServerNewLabel))
+	self.eventProxy_:addEventListener(xyd.event.ARENA_ALL_SERVER_GET_SELF_INFO_NEW, handler(self, self.updateArenaAllServerNewLabel))
 	self.eventProxy_:addEventListener(xyd.event.SHRINE_HURDLE_GET_INFO, handler(self, self.onGetShrineInfo))
 	self.eventProxy_:addEventListener(xyd.event.GET_TRIAL_INFO, handler(self, self.onGetTrialInfo))
 end
@@ -1270,7 +1247,7 @@ function BattleChooseWindow:onGetShrineInfo()
 	end
 end
 
-function BattleChooseWindow:updateArenaLabel()
+function BattleChooseWindow:updateArenaAllServerNewLabel()
 	if xyd.models.arenaAllServerNew:checkFunctionOpen() then
 		self.groupAllServerTime:SetActive(true)
 
@@ -1662,6 +1639,34 @@ function BattleChooseWindow:updateArenaLabel(state)
 		else
 			self.arenaLabel2:Y(-5)
 		end
+	end
+end
+
+function BattleChooseWindow:updateArena3v3Show()
+	if xyd.models.arena3v3:checkFunctionOpen() then
+		local nowTime = xyd.getServerTime()
+
+		self.group3v3Time:SetActive(true)
+
+		if xyd.models.arena3v3:checkOpen() then
+			self.labelTime3v3.text = __("ARENA_ALL_SERVER_CLOSE_COUNTDOWN")
+			self.time3v3Count = CountDown.new(self.time3v3, {
+				duration = xyd.models.arena3v3:getDDL() - nowTime
+			})
+		else
+			self.labelTime3v3.text = __("ARENA_ALL_SERVER_NEW_COUNTDOWN")
+			self.time3v3Count = CountDown.new(self.time3v3, {
+				duration = xyd.models.arena3v3:getStartTime() - nowTime
+			})
+		end
+
+		local width1 = self.labelTime3v3.width
+		local width2 = self.time3v3.width
+
+		self.labelTime3v3:X(-width1 / 2 - width2 / 2)
+		self.time3v3:X(width1 / 2 - width2 / 2)
+	else
+		self.group3v3Time:SetActive(false)
 	end
 end
 

@@ -160,3 +160,7 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 159,galaxy_trip,1,53,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
 160,galaxy_trip,1,53,,,main_window,1,transTopR|tr_btn_6,,,,,,2,buttoncrop_26,0|0,,,1,,,,,,2,,0.42,,,,,
 161,galaxy_trip,1,53,,,galaxy_start_window,,group2,,,,1,55,,,,,,,,,-1,-300|300,,,,,,,,,
+162,month_practice,1,54,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,,,,,,
+163,month_practice,1,54,,,main_window,4,limitBtn_|icon,,,,,,2,buttoncrop_15,0|0,,,,,,,,1,,,0.42,,,,,
+164,month_practice,1,54,,,activity_window,,tab3,,,,,,,,,,,,,,-1,-505|320,,,,,,,,,
+165,month_practice,1,54,,,activity_window,,month_practice_item,,,,1,43,,,,,,1,,,-1,-180|310,,,,0.42,,,,,

@@ -163,6 +163,10 @@ function GalaxyTripFormationWindow:initWindow()
 	self:initPartnerList()
 
 	self.needSound = true
+
+	if xyd.models.galaxyTrip:checkFormationNeedUpdate() then
+		xyd.alertTips(__("GALAXY_TRIP_TIPS_25"))
+	end
 end
 
 function GalaxyTripFormationWindow:getUIComponents()

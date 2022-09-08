@@ -81,6 +81,12 @@ function GalaxyTripMainWindow:getUIComponent()
 	self.teamBtnCon = self.downCon:NodeByName("teamBtnCon").gameObject
 	self.teamBtn = self.teamBtnCon:NodeByName("teamBtn").gameObject
 	self.teamBtnLabel = self.teamBtnCon:ComponentByName("teamBtnLabel", typeof(UILabel))
+	self.teamBtnRedPoint = self.teamBtn:NodeByName("teamBtnRedPoint").gameObject
+
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.GALAXY_TRIP_TEAM
+	}, self.teamBtnRedPoint)
+
 	self.returnBtnCon = self.downCon:NodeByName("returnBtnCon").gameObject
 	self.returnBtn = self.returnBtnCon:NodeByName("returnBtn").gameObject
 	self.returnBtnLabel = self.returnBtnCon:ComponentByName("returnBtnLabel", typeof(UILabel))
@@ -219,6 +225,7 @@ function GalaxyTripMainWindow:layout()
 	self:initTop()
 	self:updateProgress()
 	self:updateBallShow()
+	xyd.models.galaxyTrip:checkFormationNeedUpdate()
 end
 
 function GalaxyTripMainWindow:initTop()

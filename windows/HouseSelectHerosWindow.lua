@@ -42,6 +42,7 @@ function HouseSelectHeroItem:updateInfo()
 		tableID = tableID,
 		lev = partner:getLevel(),
 		star = partner:getStar(),
+		partnerID = self.data.partner_id,
 		skin_id = partner.skin_id,
 		is_vowed = partner.is_vowed,
 		love_point = partner.love_point,

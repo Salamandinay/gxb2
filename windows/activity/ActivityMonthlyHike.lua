@@ -159,6 +159,8 @@ function ActivityMonthlyHike:getUIComponent()
 	self.btnClearLabel = self.enemyGroup:ComponentByName("btnClear/label", typeof(UILabel))
 	self.pageBtnLeft = goTrans:ComponentByName("pageBtnLeft", typeof(UISprite))
 	self.pageBtnRight = goTrans:ComponentByName("pageBtnRight", typeof(UISprite))
+
+	print("===================self.btnFight=======================", self.btnFight.gameObject)
 end
 
 function ActivityMonthlyHike:initPointGroup()

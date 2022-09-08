@@ -116,6 +116,12 @@ function GambleRewardsWindow:layout()
 	if self.layoutCenter then
 		self.gridOfItems_.pivot = UIWidget.Pivot.Top
 
+		if self.data_ and #self.data_ <= 5 then
+			self.gridOfItems_:Y(-38)
+		else
+			self.gridOfItems_:Y(40)
+		end
+
 		self.gridOfItems_:X(0)
 	end
 

@@ -7,10 +7,10 @@ id,desc
 6,"You can use ""Time Essence"" to speed up the observation and collect the rewards earlier."
 7,"Senpai, you've obtained ""Time Essence"", tap here to use it!"
 8,"This observation is over, you will need to enter the result page manually."
-9,"This is the card deck, you can check the cards that can be triggered during your observation."
-10,"Here's the observation record, you can check the cards you triggered during your current observation here."
-11,"This is the reward preview, you will be able to claim the rewards after the observation is over."
-12,Tap here to enter the result page and finish this observation.
+99999,"This is the card deck, you can check the cards that can be triggered during your observation."
+99998,"Here's the observation record, you can check the cards you triggered during your current observation here."
+9,"This is the reward preview, you will be able to claim the rewards after the observation is over."
+10,Tap here to enter the result page and finish this observation.
 13,"You can consume ""Time Shards"" to upgrade the technologies in Planetarium to aid you in your observations."
 14,"You've collected some ""Time Shards"" in your past observations, tap here to enter the Planetarium and upgrade technologies with them!"
 15,"There are 2 sets of technologies for this world of time, tap here to check the details of the technologies in Planetarium I."
@@ -42,3 +42,9 @@ id,desc
 41,The defenders around the Snow Mountain start to fade away as the crisis is solved.
 42,"Please tap ""Enter"""
 43,"If the block of territory is near the Snow Mountain(can be reached within 3 blocks), the number of defenders will be reduced by 25% at 0:00 (UTC/GMT 0) every day."
+44,A random Card will be triggered for every 5 minutes of observation
+45,
+46,Tap here to check all the Cards you can trigger during this Observation
+47,Tap here to check all the Cards you triggered during this Observation
+48,All we need to do now is to wait till the Observation ends!
+49,Tap here to see the rules. You can find the answers to your questions here!

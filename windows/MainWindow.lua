@@ -221,12 +221,6 @@ function MainTopRightBtn:ctor(goItem, id)
 		self.goItem_:SetActive(false)
 	end
 
-	print(self.trans.funcId[id])
-
-	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
-		self.goItem_:SetActive(false)
-	end
-
 	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
 		self.goItem_:SetActive(false)
 	end

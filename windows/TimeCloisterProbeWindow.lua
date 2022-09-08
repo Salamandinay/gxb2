@@ -48,6 +48,10 @@ function TimeCloisterProbeWindow:initWindow()
 	self:registerEvent()
 	dump(timeCloister:getTechInfoByCloister(self.cloister), "test tec tree")
 
+	if timeCloister:getChosenCloister() ~= 0 then
+		self.hangInfo = timeCloister:getHangInfo()
+	end
+
 	local isGuide = self:checkGuide()
 
 	if timeCloister:getChosenCloister() ~= 0 then
@@ -169,17 +173,8 @@ function TimeCloisterProbeWindow:showSpeedUpTips()
 		return
 	end
 
-	if not xyd.db.misc:getValue("time_cloister_speed_up_hand") and xyd.models.backpack:getItemNumByID(xyd.ItemID.TIME_CLOISTR_SPEED_UP) > 0 then
-		self.hand3 = xyd.Spine.new(self.handNode3)
-
-		self.hand3:setInfo("fx_ui_dianji", function ()
-			self.hand3:play("texiao01", 0)
-		end)
-		self.speedUpRedPoint:SetActive(false)
-	else
-		self.handNode1:SetActive(false)
-		self.speedUpRedPoint:SetActive(xyd.models.backpack:getItemNumByID(xyd.ItemID.TIME_CLOISTR_SPEED_UP) > 0)
-	end
+	self.handNode1:SetActive(false)
+	self.speedUpRedPoint:SetActive(xyd.models.backpack:getItemNumByID(xyd.ItemID.TIME_CLOISTR_SPEED_UP) > 0)
 end
 
 function TimeCloisterProbeWindow:getCloisterImg(str)
@@ -258,6 +253,7 @@ function TimeCloisterProbeWindow:initHangPartner()
 			parnterInfo = {
 				tableID = partner_infos[i].table_id,
 				lev = partner_infos[i].lv,
+				partnerID = partner_infos[i].partner_id,
 				isVowed = partner_infos[i].is_vowed,
 				star = xyd.tables.partnerTable:getStar(partner_infos[i].table_id) + partner_infos[i].awake,
 				skin_id = partner_infos[i].equips[7]
@@ -691,7 +687,10 @@ function TimeCloisterProbeWindow:playSpeedUpCardAnimation(num)
 			end
 
 			if isHasCommonCard then
-				xyd.WindowManager.get():openWindow("time_cloister_card_record_window")
+				xyd.WindowManager.get():openWindow("time_cloister_card_record_window", {
+					isSpeedHandUpBack = true,
+					cloister = self.cloister
+				})
 			end
 		end
 
@@ -948,6 +947,24 @@ function TimeCloisterProbeWindow:registerEvent()
 			})
 		end
 
+		if self.cloister == xyd.TimeCloisterMissionType.ONE then
+			local skills = timeCloister:getTechInfoByCloister(self.cloister)
+
+			if skills then
+				local skills_total = 0
+
+				for i in pairs(skills) do
+					skills_total = skills_total + tonumber(skills[i].curNum)
+				end
+
+				if skills_total <= 0 and xyd.models.backpack:getItemNumByID(xyd.ItemID.TIME_CLOISTR_TEC) <= 0 then
+					xyd.alertTips(__("TIME_CLOISTER_TEXT118"))
+
+					return
+				end
+			end
+		end
+
 		xyd.WindowManager.get():openWindow("time_cloister_tech_window", {
 			cloister = self.cloister
 		})
@@ -1108,8 +1125,10 @@ function TimeCloisterProbeWindow:autoOpenExtraEventWindow()
 end
 
 function TimeCloisterProbeWindow:checkGuide(type)
+	local exskillGuideWd = xyd.WindowManager.get():getWindow("exskill_guide_window")
+
 	if self.cloister == xyd.TimeCloisterMissionType.ONE then
-		if not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_3) then
+		if not exskillGuideWd and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_3) then
 			local skills = timeCloister:getTechInfoByCloister(self.cloister)
 			local skills_total = 0
 
@@ -1132,7 +1151,7 @@ function TimeCloisterProbeWindow:checkGuide(type)
 			end
 		end
 
-		if (not type or type == xyd.GuideType.TIME_CLOISTER_2) and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_2) then
+		if (not type or type == xyd.GuideType.TIME_CLOISTER_2) and not exskillGuideWd and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_2) then
 			local cloisterInfo = timeCloister:getCloisterInfo()
 			local info = cloisterInfo[self.cloister]
 
@@ -1152,7 +1171,7 @@ function TimeCloisterProbeWindow:checkGuide(type)
 		end
 	end
 
-	if (not type or type == xyd.GuideType.TIME_CLOISTER_1) and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_1) then
+	if (not type or type == xyd.GuideType.TIME_CLOISTER_1) and not exskillGuideWd and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_1) then
 		if self.hangInfo and self.hangInfo.stop_time and self.hangInfo.stop_time > 0 then
 			-- Nothing
 		elseif xyd.models.backpack:getItemNumByID(xyd.ItemID.TIME_CLOISTR_SPEED_UP) > 0 then

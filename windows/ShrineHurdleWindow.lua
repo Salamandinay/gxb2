@@ -29,6 +29,7 @@ function ShrineHurdleWindow:initWindow()
 		not_auto_open = false
 	end
 
+	self:updateAutonBtn()
 	self:updateShowState(not_auto_open)
 	self:checkGuide()
 	self:register()
@@ -165,6 +166,10 @@ function ShrineHurdleWindow:getUIComponent()
 	self.labelLevel_ = winTrans:NodeByName("levelPart/labelLevel").gameObject
 	self.labelLevelTips_ = winTrans:ComponentByName("levelPart/labelLevelTips", typeof(UILabel))
 	self.outBtn_ = winTrans:NodeByName("outBtn").gameObject
+	self.autoBtn_ = winTrans:NodeByName("autoBtn").gameObject
+	self.autoLabel_ = winTrans:ComponentByName("autoBtnLabel", typeof(UILabel))
+	self.autoLabel_.text = __("SHRINE_HURDLE_AUTO_TEXT01")
+	self.autoMask_ = winTrans:NodeByName("autoMask").gameObject
 	self.contentPart_ = winTrans:NodeByName("contentPart").gameObject
 	self.bgImg1_ = self.contentPart_:NodeByName("bgImg1").gameObject
 	self.bgImg2_ = winTrans:ComponentByName("bgImg2", typeof(UIWidget))
@@ -271,6 +276,8 @@ function ShrineHurdleWindow:register()
 			is_show = true
 		})
 	end
+
+	UIEventListener.Get(self.autoBtn_).onClick = handler(self, self.onClickAutoBtn)
 end
 
 function ShrineHurdleWindow:onGetRecords(event)
@@ -348,6 +355,7 @@ function ShrineHurdleWindow:onNextFloor(index)
 			self.battleWidgt_.alpha = 1
 
 			self:updateShowState(false)
+			self:autoNext(1, true)
 			self:checkGuide()
 			self.numLabel:Reposition()
 			self:waitForFrame(10, function ()
@@ -763,6 +771,11 @@ function ShrineHurdleWindow:updateFightInfo(type)
 
 		self.partnerSpine_ = sp
 	end
+
+	if type == 2 then
+		self.autoBtn_:SetActive(false)
+		self.autoLabel_.gameObject:SetActive(false)
+	end
 end
 
 function ShrineHurdleWindow:showPartnerDead()
@@ -816,6 +829,11 @@ end
 function ShrineHurdleWindow:checkGuide()
 	local guideIndex = xyd.models.shrineHurdleModel:checkInGuide()
 
+	if guideIndex and guideIndex > 0 then
+		self.autoBtn_:SetActive(false)
+		self.autoLabel_.gameObject:SetActive(false)
+	end
+
 	if guideIndex and guideIndex == 3 then
 		self:ShowNextClickBox()
 		xyd.WindowManager:get():openWindow("common_trigger_guide_window", {
@@ -858,6 +876,192 @@ function ShrineHurdleWindow:guideGoNext()
 	elseif guideIndex and guideIndex == 8 then
 		xyd.models.shrineHurdleModel:setFlag(nil, 8)
 		self:onNextFloor(1)
+	end
+
+	if guideIndex and guideIndex > 0 then
+		self.autoBtn_:SetActive(false)
+		self.autoLabel_.gameObject:SetActive(false)
+	end
+end
+
+function ShrineHurdleWindow:autoNext(wait_time, by_go_next)
+	__TRACE(" wait_time    ==========", wait_time)
+
+	if not wait_time then
+		self:autoStepFunc(by_go_next)
+	else
+		self:waitForTime(wait_time, function ()
+			self:autoStepFunc(by_go_next)
+		end)
+	end
+end
+
+function ShrineHurdleWindow:autoStepFunc(by_go_next)
+	local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoInfo.is_auto ~= 1 then
+		return
+	end
+
+	if not by_go_next and self.extraData_.can_next and tonumber(self.extraData_.can_next) == 1 then
+		local nextId = xyd.tables.shrineHurdleTable:getNextId(self.floor_id)
+		local nextHurdle = xyd.tables.shrineHurdleTable:getHurdle(nextId)
+
+		if nextHurdle and #nextHurdle <= 1 then
+			xyd.models.shrineHurdleModel:nextFloor(1)
+		else
+			local nextType1 = nextHurdle[1]
+			local nextType2 = nextHurdle[2]
+			local rate1 = 0
+			local rate2 = 0
+
+			if nextType1 == 1 then
+				rate1 = rate1 + 1
+			elseif nextType1 == 2 then
+				rate1 = rate1 + 1000
+			elseif nextType1 == 3 and autoInfo.go_shop == 1 then
+				rate1 = rate1 + 10
+			elseif nextType1 == 4 and autoInfo.reply == 1 then
+				rate1 = rate1 + 100
+			end
+
+			if nextType2 == 1 then
+				rate2 = rate2 + 1
+			elseif nextType2 == 2 then
+				rate2 = rate2 + 1000
+			elseif nextType2 == 3 and autoInfo.go_shop == 1 then
+				rate2 = rate2 + 10
+			elseif nextType2 == 4 and autoInfo.reply == 1 then
+				rate2 = rate2 + 100
+			end
+
+			local goIndex = 1
+
+			if rate1 < rate2 then
+				goIndex = 2
+			end
+
+			xyd.models.shrineHurdleModel:nextFloor(goIndex)
+		end
+
+		return
+	end
+
+	if self.floorType == FLOORTYPE.FIGHT then
+		local partnerList, pet = xyd.models.shrineHurdleModel:getAutoTeam()
+		local partnerParams = {}
+
+		for pos, partner_id in pairs(partnerList) do
+			if tonumber(partner_id) and tonumber(partner_id) > 0 then
+				local partnerInfo = xyd.models.shrineHurdleModel:getPartner(partner_id)
+				local hp = partnerInfo.status.hp
+
+				if not hp or hp > 0 then
+					table.insert(partnerParams, {
+						partner_id = tonumber(partner_id),
+						pos = pos
+					})
+				end
+			end
+		end
+
+		if #partnerParams <= 0 then
+			xyd.models.shrineHurdleModel:setAutoInfo(0)
+		else
+			xyd.models.shrineHurdleModel:challengeFight(partnerParams, pet)
+		end
+	elseif self.floorType == FLOORTYPE.AWARD and not by_go_next then
+		xyd.WindowManager.get():openWindow("shrine_hurdle_choose_buff_window", {
+			window_type = self.floorType
+		})
+	elseif self.floorType == FLOORTYPE.SHOP then
+		if by_go_next and autoInfo.stop_shop == 1 then
+			xyd.models.shrineHurdleModel:setAutoInfo(0)
+		end
+	elseif self.floorType == FLOORTYPE.REST and not by_go_next then
+		xyd.WindowManager.get():openWindow("shrine_hurdle_choose_buff_window", {
+			window_type = self.floorType
+		})
+	elseif self.floorType == FLOORTYPE.BOSS then
+		xyd.models.shrineHurdleModel:setAutoInfo(0)
+	end
+end
+
+function ShrineHurdleWindow:updateAutonBtn()
+	if self.sequence1_ then
+		self.sequence1_:Kill(false)
+
+		self.sequence1_ = nil
+	end
+
+	if self.sequence2_ then
+		self.sequence2_:Kill(false)
+
+		self.sequence2_ = nil
+	end
+
+	local function setter1(value)
+		self.autoBtn_.transform.localEulerAngles = Vector3(0, 0, value)
+	end
+
+	function self.playAni2_()
+		local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+		if autoInfo.is_auto ~= 1 then
+			self.autoMask_:SetActive(false)
+
+			return
+		end
+
+		self.autoMask_:SetActive(true)
+
+		if not self.sequence2_ then
+			self.sequence2_ = self:getSequence()
+
+			self.sequence2_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 360, 0.8):SetEase(DG.Tweening.Ease.Linear))
+			self.sequence2_:AppendCallback(function ()
+				self.playAni1_()
+			end)
+			self.sequence2_:SetAutoKill(false)
+		else
+			self.sequence2_:Restart()
+		end
+	end
+
+	function self.playAni1_()
+		local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+		if autoInfo.is_auto ~= 1 then
+			self.autoMask_:SetActive(false)
+
+			return
+		end
+
+		self.autoMask_:SetActive(true)
+
+		if not self.sequence1_ then
+			self.sequence1_ = self:getSequence()
+
+			self.sequence1_:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter1), 0, 360, 0.8):SetEase(DG.Tweening.Ease.Linear))
+			self.sequence1_:AppendCallback(function ()
+				self.playAni2_()
+			end)
+			self.sequence1_:SetAutoKill(false)
+		else
+			self.sequence1_:Restart()
+		end
+	end
+
+	self.playAni1_()
+end
+
+function ShrineHurdleWindow:onClickAutoBtn()
+	local autoInfo = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoInfo.is_auto == 1 then
+		xyd.models.shrineHurdleModel:setAutoInfo(0)
+	else
+		xyd.WindowManager.get():openWindow("shrine_hurdle_auto_setting_window", {})
 	end
 end
 

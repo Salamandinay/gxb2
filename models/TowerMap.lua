@@ -307,7 +307,9 @@ function TowerMap:TowerBattle(stage_id)
 end
 
 function TowerMap:isSkipReport(state)
-	if state == xyd.BattleType.TOWER and self.stage_ < 200 then
+	local skipStage = tonumber(xyd.tables.miscTable:getVal("tower_skipfight_floor"))
+
+	if state == xyd.BattleType.TOWER and self.stage_ < skipStage then
 		return false
 	end
 

@@ -30,6 +30,7 @@ function AltarItem:update(index, realIndex, info)
 	local params = {
 		noClickSelected = true,
 		tableID = self.tableID_,
+		partnerID = self.partnerId_,
 		lev = self.partner_:getLevel(),
 		star = self.partner_:getStar(),
 		skin_id = self.partner_.skin_id,
@@ -146,6 +147,7 @@ function BackItem:update(index, realIndex, info)
 	local params = {
 		noClickSelected = true,
 		tableID = self.tableID_,
+		partnerID = self.partnerId_,
 		lev = self.partner_:getLevel(),
 		star = self.partner_:getStar(),
 		skin_id = self.partner_.skin_id,
@@ -1382,6 +1384,7 @@ function AltarWindow:selectHero(partnerID, iconChoose, heroIcon, smart)
 					star = partner:getStar(),
 					is_vowed = partner.is_vowed,
 					skin_id = partner.skin_id,
+					partnerID = partnerID,
 					callback = function ()
 						if not heroIcon then
 							heroIcon = self:getHeroIconByPartnerID(partnerID)
@@ -1525,6 +1528,7 @@ function AltarWindow:selectHero_back(partnerID, heroIcon)
 		local params = {
 			scale = 0.9259259259259259,
 			tableID = tableID,
+			partnerID = partnerID,
 			lev = partner:getLevel(),
 			star = partner:getStar(),
 			skin_id = partner.skin_id,

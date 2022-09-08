@@ -198,6 +198,12 @@ function ActivityInvitationSeniorData:checkRedPoint()
 		end
 	end
 
+	if self:getIsShareOpen() and self:getState() == xyd.ActivityInvitationSeniorState.OLD and not self:getWeeklyShareIsSameWeek() then
+		xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR, true)
+
+		return
+	end
+
 	xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR, false)
 end
 
@@ -336,6 +342,20 @@ function ActivityInvitationSeniorData:onGetDailyAward(event)
 	end
 
 	xyd.itemFloat(realItems)
+end
+
+function ActivityInvitationSeniorData:getIsShareOpen()
+	local pkgName = XYDDef.PkgName
+	local languages = xyd.package2Language[pkgName]
+
+	dump(pkgName, "pkg1")
+	dump(languages, "pkg2")
+
+	if UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.ANDROID_INVITE_SHARE_VERSION) >= 0 or UNITY_IOS and languages[1] == "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_INVITE_SHARE_VERSION_JP) >= 0 or UNITY_IOS and languages[1] ~= "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_INVITE_SHARE_VERSION) >= 0 then
+		return true
+	end
+
+	return false
 end
 
 return ActivityInvitationSeniorData

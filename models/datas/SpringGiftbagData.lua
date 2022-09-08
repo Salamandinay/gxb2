@@ -6,11 +6,19 @@ function SpringGiftbagData:getUpdateTime()
 	return self:getEndTime()
 end
 
-function SpringGiftbagData:onAward(giftbagId)
-	for _, charge in pairs(self.detail_.charges) do
-		if charge.table_id == giftbagId then
-			charge.buy_times = charge.buy_times + 1
+function SpringGiftbagData:onAward(data)
+	if type(data) == "number" then
+		for _, charge in pairs(self.detail_.charges) do
+			if charge.table_id == data then
+				charge.buy_times = charge.buy_times + 1
+			end
 		end
+	else
+		if not self.detail.buy_times then
+			self.detail.buy_times = 0
+		end
+
+		self.detail.buy_times = self.detail.buy_times + 1
 	end
 end
 
@@ -50,6 +58,14 @@ function SpringGiftbagData:selectSpecialAward(giftbagId, chooseIndex)
 	end
 
 	self:updateChooseIndex(giftbagId, chooseIndex)
+end
+
+function SpringGiftbagData:reqFreeAward()
+	xyd.models.activity:reqAwardWithParams(xyd.ActivityID.SPRING_GIFTBAG, json.encode({}))
+end
+
+function SpringGiftbagData:getFreeGiftBuyTimes()
+	return self.detail.buy_times
 end
 
 return SpringGiftbagData

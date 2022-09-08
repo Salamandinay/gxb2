@@ -40,6 +40,7 @@ function TavernDetailItem:update(index, realIndex, info)
 		job = self.partner_:getJob(),
 		skin_id = self.partner_.skin_id,
 		is_vowed = self.partner_.isVowed,
+		partnerID = self.partneId_,
 		dragScrollView = self.parent_.heroSelectScrollView_,
 		callback = function ()
 			self.heroIcon_.selected = false
@@ -470,6 +471,7 @@ function TavernDetailWindow:selectHero(partner_id, notMove, posBefore)
 		star = partner:getStar(),
 		is_vowed = partner.isVowed,
 		skin_id = partner.skin_id,
+		partnerID = partner_id,
 		callback = function ()
 			copyHero.selected = false
 			local item = self:getHeroIconByID(partner_id)

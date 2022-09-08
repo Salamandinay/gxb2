@@ -25,6 +25,7 @@ function FormationItem:update(index, realIndex, info)
 	local params = {
 		noClickSelected = true,
 		tableID = self.partner_.tableID,
+		partnerID = self.partnerId_,
 		lev = self.partner_.lev,
 		star = self.partner_.star,
 		skin_id = self.partner_.skin_id,

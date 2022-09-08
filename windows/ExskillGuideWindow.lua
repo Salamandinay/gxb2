@@ -475,7 +475,7 @@ function ExskillGuideWindow:dispose()
 end
 
 function ExskillGuideWindow:isTimeCloister()
-	if self.curGuideType_ == xyd.GuideType.TIME_CLOISTER or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_1 or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_2 or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_3 then
+	if self.curGuideType_ == xyd.GuideType.TIME_CLOISTER or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_1 or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_2 or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_3 or self.curGuideType_ == xyd.GuideType.TIME_CLOISTER_4 then
 		return true
 	end
 

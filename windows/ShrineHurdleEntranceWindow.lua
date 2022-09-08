@@ -5,6 +5,7 @@ local CountDown = import("app.components.CountDown")
 function ShrineHurdleEntranceWindow:ctor(name, params)
 	ShrineHurdleEntranceWindow.super.ctor(self, name, params)
 	xyd.models.shrineHurdleModel:checkReqPartnerInfos()
+	xyd.models.shrineHurdleModel:setAutoInfo(0)
 end
 
 function ShrineHurdleEntranceWindow:initWindow()

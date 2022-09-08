@@ -51,6 +51,14 @@ function ErrorModel:onError(event)
 		end
 	end
 
+	if tonumber(errorCode) == xyd.ErrorCode.FRIEND_NOT_SERVER then
+		local arenaFormationWindow = xyd.WindowManager.get():getWindow("arena_formation_window")
+
+		if arenaFormationWindow then
+			xyd.WindowManager.get():closeWindow("arena_formation_window")
+		end
+	end
+
 	local text = xyd.tables.errorInfoTextTable:getText(errorCode)
 
 	if text and text ~= "" then

@@ -227,6 +227,13 @@ function BattleFailWindow:getUIComponent()
 		self.confirmBtnLabel = self.confirmBtn:ComponentByName("button_label", typeof(UILabel))
 	end
 
+	local autoData = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoData and autoData.is_auto == 1 and self.battleType == xyd.BattleType.SHRINE_HURDLE then
+		self.battleDetailBtn:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+		self.battleReviewBtn:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	end
+
 	if self.onOpenCallback then
 		self.mask_:SetActive(true)
 	end
@@ -654,6 +661,13 @@ function BattleFailWindow:initLayout()
 		self.battleReviewBtn:SetActive(true)
 		self.battleDetailBtn.transform:X(260)
 		self:updateShrineHurdlePart()
+		self:waitForTime(1, function ()
+			local autoData = xyd.models.shrineHurdleModel:getAutoInfo()
+
+			if autoData and autoData.is_auto == 1 then
+				self:closeSelf()
+			end
+		end)
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
 		self.layeoutSequence:Append(self.pveDropGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
 	elseif self.battleType == xyd.BattleType.ACTIVITY_SPFARM then

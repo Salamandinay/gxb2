@@ -242,6 +242,13 @@ function BattleWinWindow:getUIComponent()
 	if self.onOpenCallback then
 		self.mask_:SetActive(true)
 	end
+
+	local autoData = xyd.models.shrineHurdleModel:getAutoInfo()
+
+	if autoData and autoData.is_auto == 1 and self.battleType == xyd.BattleType.SHRINE_HURDLE then
+		self.battleDetailBtn:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+		self.battleReviewBtn:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	end
 end
 
 function BattleWinWindow:initWindow()
@@ -301,6 +308,16 @@ function BattleWinWindow:initWindow()
 			if self.onOpenCallback then
 				self.onOpenCallback()
 				self.mask_:SetActive(false)
+			end
+
+			if self.battleType == xyd.BattleType.SHRINE_HURDLE then
+				self:waitForTime(1, function ()
+					local autoData = xyd.models.shrineHurdleModel:getAutoInfo()
+
+					if autoData and autoData.is_auto == 1 then
+						self:closeSelf()
+					end
+				end)
 			end
 		end)
 

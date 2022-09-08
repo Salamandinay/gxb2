@@ -443,7 +443,7 @@ EDGE_OUT_NOTIFY,"此帳號已在其他裝置登入,是否刷新遊戲?"
 FORGET_PASSWORD,忘記密碼
 CANCEL,取 消
 SHENXUE_WINDOW_HELP,1.選擇一個可升學的戰姬，再放入指定材料戰姬，滿足條件後可為指定戰姬升學。|2.升學戰姬將保留其等級、階級、裝備。|3.被消耗的材料戰姬將返還對應價值的經驗飲料和便當到背包。穿戴的裝備將放入背包。|4.升學後的戰姬將獲得更強的屬性和技能效果。|5.擁有好感度的戰姬作爲升學主戰姬時，升學所得戰姬將會繼承升學主戰姬的好感度等級。|6.可在批量升學介面設置材料戰姬，批量升學時將自動選擇勾選的戰姬作為材料。
-TOWER_WINDOW_HELP,1.上頂樓戰鬥失敗會消耗通行證，勝利將不會消耗，最少需要1張通行證才能進行戰鬥。|2.通行證每30分鐘可自動獲得一張，通行證數量到達10張後不再繼續獲得。|3.每層樓的難度逐步遞增，戰勝當前樓層中的守衛可以獲得豐厚的獎勵。|4.上頂樓排行榜會根據學長的層數進行排名。|5.上頂樓抵達200層，即可開放「跳過戰鬥」功能。
+TOWER_WINDOW_HELP,1.上頂樓戰鬥失敗會消耗通行證，勝利將不會消耗，最少需要1張通行證才能進行戰鬥。|2.通行證每30分鐘可自動獲得一張，通行證數量到達10張後不再繼續獲得。|3.每層樓的難度逐步遞增，戰勝當前樓層中的守衛可以獲得豐厚的獎勵。|4.上頂樓排行榜會根據學長的層數進行排名。
 DUNGEON_WINDOW_HELP,1.守護校園開啟48小時後關閉，間隔48小時再次開啟。|2.學長需要至少選擇1位戰姬，最多選擇5位戰姬出戰，確認後本次挑戰賽將無法更改出戰的戰姬。同時本次挑戰賽出戰戰姬均為確認時的屬性及狀態（包括裝備及潛能等）。|3.每波戰鬥會隨機出敵人，點擊敵人查看敵人資訊，學長可手動選擇派出1位戰姬與該波敵人對戰。|4.學長可選擇快速戰鬥跳過每波戰鬥過程直接查看結果，或者選擇正常戰鬥在觀看每波戰鬥過程並在戰鬥結束後查看結果。|5.每波戰鬥結束後己方戰姬和敵方敵人的血量都會保存，已陣亡的戰姬無法再參加戰鬥。|6.每波戰鬥回合限定15回合，在15回合內擊敗所有敵方敵人戰鬥勝利，己方戰姬死亡或戰鬥超時戰鬥失敗。|7.戰鬥勝利總共有三種戰鬥結果：獲得貓咪寶箱、遇到商人以及獲得道具，每波戰鬥勝利會隨機出現一種戰鬥結果。|8.貓咪寶箱：貓咪寶箱開啟後可獲得金幣、鑽石等隨機獎勵。|9.商人：點擊商人購買道具，點擊螢幕下方的跳過按鈕可跳過商人繼續戰鬥。商人販賣的道具多種多樣隨機出現。|10.道具：分為文具和飯糰，選擇戰姬使用飯糰獲得對應的恢復效果，文具可獲得增益buff，每位戰姬可獲得文具有次數上限。|11.飯糰數量可以保存至本次守護校園結束，想要使用時，點擊圖示按鈕進行使用。 |12.當己方所有戰姬全部陣亡，本次挑戰賽結束。|13.守護校園分為簡單、普通、困難、極限、幻境、夢魘6個難度，每個難度100關，通過100關後下次可從下一難度開始挑戰。|14.每次開啟守護校園會自動掃蕩已通關的難度(通過該難度的50層)並獲得獎勵。
 GET_WAY_EQUIP,前往 {1}-{2}
 PARTNER_LIST_FULL,戰姬列表已滿，您可以提升VIP等級或購買戰姬攜帶數量，是否前往購買？
@@ -6347,14 +6347,14 @@ ACTIVITY_SPFARM_TEXT18,是否消耗{1}個{2}來種植該花果?
 ACTIVITY_SPFARM_TEXT19,是否消耗{1}個{2}來更換花果?
 ACTIVITY_DRAGONBOAT2022_BUTTON01,放花燈
 ACTIVITY_DRAGONBOAT2022_BUTTON02,艾葉祈福
-ACTIVITY_DRAGONBOAT2022_HELP,1. 幽夢學院一年一度的中秋燈會開始啦！學長快來和千鶴子一起放花燈吧~|2. 每放飛1個花燈，將會獲得一份隨機獎勵，機率獲得額外獎勵哦。同時，將有x%%機率增加1點花燈進度，x%%機率增加2點花燈進度，x%%機率增加3點花燈進度。|3. 每達到一定花燈進度，燈會也將進入不同階段，學長也將獲得一份自選的階段獎勵哦。|4. 根據放飛的【花燈】數量，將發放累計獎勵。|5. 【花燈】可透過xxxxxxxx獲得。|6. 活動結束後，未使用的【花燈】將會自動兌換為金幣，每個價格為xxx，回收獲得的金幣將透過信件發放。
+ACTIVITY_DRAGONBOAT2022_HELP,1. 幽夢學院一年一度的中秋燈會開始啦！學長快來和千鶴子一起放花燈吧~|2. 每次放飛需要消耗2個花燈，獲得一份隨機獎勵，並有一定機率獲得額外獎勵哦。同時，將有33.33%%機率增加1點花燈進度，33.33%%機率增加2點花燈進度，33.33%%機率增加3點花燈進度。|3. 每達到一定花燈進度，燈會也將進入不同階段，學長也將獲得一份自選的階段獎勵哦。|4. 根據放飛的【花燈】數量，將發放累計獎勵。|5. 【花燈】可透過每日信件，招生，戰姬集結，燈會特供，超值禮包，造型禮包，特惠禮包獲得。|6. 活動結束後，未使用的【花燈】將會自動兌換為金幣，每個價格為50000，回收獲得的金幣將透過信件發放。
 ACTIVITY_DRAGONBOAT2022_TEXT01,飽腹度
-ACTIVITY_DRAGONBOAT2022_TEXT02,驚喜獎勵
-ACTIVITY_DRAGONBOAT2022_TEXT03,基礎獎勵
-ACTIVITY_DRAGONBOAT2022_TEXT04,預先進行花燈階段獎勵，達到對應階段後即可領取獎勵哦~
+ACTIVITY_DRAGONBOAT2022_TEXT02,額外獎勵
+ACTIVITY_DRAGONBOAT2022_TEXT03,隨機獎勵
+ACTIVITY_DRAGONBOAT2022_TEXT04,預先選擇花燈階段獎勵，達到對應階段後即可領取獎勵哦~
 ACTIVITY_DRAGONBOAT2022_TEXT05,請選擇階段獎勵
 ACTIVITY_DRAGONBOAT2022_TEXT06,花燈進度達到{1}時獲得
-ACTIVITY_DRAGONBOAT2022_TEXT07,請輸入放飛的花燈數量
+ACTIVITY_DRAGONBOAT2022_TEXT07,請輸入放飛次數
 ACTIVITY_DRAGONBOAT2022_TIPS01,請優先選擇花燈階段獎勵
 PARTNER_CHALLENGE_CHESS_TEXT11,獲取精英戰姬
 PARTNER_CHALLENGE_CHESS_TEXT12,獲得一個精英戰姬後將會自動刷新
@@ -6924,7 +6924,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,已得小魚幣：
 ACTIVITY_GOLDFISH_SHOP_TEXT06,預估獲得小魚幣：
 ACTIVITY_GOLDFISH_SHOP_TEXT07,返還小魚幣：
 ACTIVITY_GOLDFISH_SHOP_TIPS01,撈魚{1}次後才能解鎖該檔位哦~
-ACTIVITY_GOLDFISH_AWARD_TEXT01,撈魚{1}次
+ACTIVITY_GOLDFISH_AWARD_TEXT01,放飛{1}個花燈
 ACTIVITY_GOLDFISH_PACK_TEXT01,購買後解鎖額外2次鑽石禮包購買機會~
 STARRY_ALTAR_TEXT14,獎勵·驚喜模式
 STARRY_ALTAR_TEXT15,獎勵·積累模式
@@ -7053,7 +7053,7 @@ GALAXY_TRIP_TIPS_21,展示期無法進行該操作
 GALAXY_TRIP_TIPS_22,探索期已經結束，即將進入展示期
 GALAXY_TRIP_TIPS_23,展示期已經結束，新賽季即將開始
 GALAXY_TRIP_TIPS_24,該敵人已消失
-SHRINE_HURDLE_AUTO_HELP,1.開始自動戰鬥後，學長將以設定好的陣容戰鬥並進入下一層。|2.進入下一層時，將優先選擇非戰鬥層，獎勵層和回復層都將預設選擇第1個選項。學長可選擇是否進入回復層或商店層。|3.如選擇進入商店層，則將會按順序依次購買或升級增益直至試煉金幣不足，學長可選擇是否在進入商店層時停止自動。|4.進入最終BOSS層或離開試煉介面將停止自動戰鬥。學長可選擇有戰姬死亡時是否停止自動，如選擇否，則將按順序自動填充戰姬繼續戰鬥直至所有戰姬死亡。
+SHRINE_HURDLE_AUTO_HELP,1.開始自動戰鬥後，學長將以設定好的陣容戰鬥並進入下一層。|2.進入下一層時，將優先選擇非戰鬥層，獎勵層和回復層都將預設選擇第1個選項。學長可選擇是否進入回復層或商店層。|3.如選擇進入商店層，則將會按順序依次購買或升級增益直至試煉金幣不足，學長可選擇是否在進入商店層時停止自動。|4.進入最終BOSS層或離開試煉介面將停止自動戰鬥。|5.每次戰鬥層結束後，將按順序自動填充戰姬繼續戰鬥直至所有戰姬死亡，學長可選擇有戰姬死亡時是否停止自動。
 SHRINE_HURDLE_AUTO_TEXT01,自動戰鬥
 SHRINE_HURDLE_AUTO_TEXT02,戰姬死亡停止自動
 SHRINE_HURDLE_AUTO_TEXT03,是否進入回復層
@@ -7064,7 +7064,7 @@ SHRINE_HURDLE_AUTO_TEXT07,設置陣容
 SHRINE_HURDLE_AUTO_TEXT08,開始
 INVITATION_ENTRANCE,邀請
 INVITATION_SWITCH,切換身份
-INVITATION_HELP,新生邀請|1.完成成長日記第20章的玩家可擁有成為前輩的資格，分享邀請碼並與新生（等級低於70級）完成綁定即可獲得豐厚獎勵，新生完成階段目標後還將額外獲取一份獎勵~|2.前輩最多可同時綁定10名新生，綁定的新生7日未登入遊戲可解除綁定。新生完成所有階段任務後自動解除綁定。同帳號不同服務器的角色無法相互綁定。|3.前輩每日可免費為新生贈送一份禮物，不要忘記哦~|4.每週首次分享可獲得鑽石獎勵，每週一0點刷新(UTC/GMT 0)。\n\n新生入學|1.新玩家（等級低於70級）可輸入前輩的邀請碼完成綁定並立即獲得一份獎勵，完成階段目標後可領取獎勵。
+INVITATION_HELP,新生邀請|1.完成成長日記第20章的玩家可擁有成為前輩的資格，分享邀請碼並與新生（等級低於70級）完成綁定即可獲得豐厚獎勵，新生完成階段目標後還將額外獲取一份獎勵~|2.前輩最多可同時綁定10名新生，綁定的新生7日未登入遊戲可解除綁定。新生完成所有階段任務後自動解除綁定。同帳號不同伺服器的角色無法相互綁定。|3.前輩每日可免費為新生贈送一份禮物，不要忘記哦~|4.每週首次分享可獲得鑽石獎勵，每週一0點刷新(UTC/GMT 0)。\n\n新生入學|1.新玩家（等級低於70級）可輸入前輩的邀請碼完成綁定並立即獲得一份獎勵，完成階段目標後可領取獎勵。
 INVITATION_TEXT01,新生列表
 INVITATION_TEXT02,我的邀請碼
 INVITATION_TEXT03,複製
@@ -7109,8 +7109,102 @@ INVITATION_TEXT22,解綁成功
 INVITATION_TEXT23,綁定成功
 GACHA_ENSURE_STAR5_TEXT01,[c][f03c14]{1}[-][/c]次十連内必出5星戰姬
 ACTIVITY_FOOD_CONSUME_TEXT08,請選擇交換戰姬
-ACTIVITY_DRAGONBOAT2022_TEXT09,20%%機率增加3點進度
-ACTIVITY_DRAGONBOAT2022_TEXT10,總熱度:{1}
+ACTIVITY_DRAGONBOAT2022_TEXT09,33.33%%機率增加3點進度
+ACTIVITY_DRAGONBOAT2022_TEXT10,花燈總進度:{1}
 ACTIVITY_DRAGONBOAT2022_TIPS02,增加{1}點花燈進度
-GALAXY_TRIP_TIPS_25,有戰姬的突破階級變化，保存后更新
+GALAXY_TRIP_TIPS_25,有戰姬的星級發生變化，保存後更新
 GALAXY_TRIP_TIPS_26,保存成功
+TIME_CLOISTER_TEXT118,完成一次迴廊觀測，獲取「星空碎片」后解鎖
+ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,跨服巔峰聯賽開啟倒計時：
+ACTIVITY_REPAIR_CONSOLE_TEXT01,遊戲機故障……快幫助助手醬收集電能塊，激活核心芯片還可領取豐厚獎勵（先不翻譯，待定）
+ACTIVITY_REPAIR_CONSOLE_TEXT02,每次可隨機為1~3個電能站充電
+ACTIVITY_REPAIR_CONSOLE_TEXT03,獎勵預覽
+ACTIVITY_REPAIR_CONSOLE_TEXT04,充電
+ACTIVITY_REPAIR_CONSOLE_TEXT05,核心獎勵
+ACTIVITY_REPAIR_CONSOLE_TEXT06,普通獎勵
+ACTIVITY_REPAIR_CONSOLE_TEXT07,第{1}輪
+ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}輪及之後
+ACTIVITY_REPAIR_CONSOLE_HELP,幫助文本，待定
+GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
+GUILD_NEW_WAR_TIPS01,休息期結束，即將進入備戰期
+GUILD_NEW_WAR_TIPS02,戰鬥期結束，即將進入休息期
+GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
+GUILD_NEW_WAR_TIPS04,當前挑戰次數不足
+GUILD_NEW_WAR_TIPS05,需要加入社團
+GUILD_NEW_WAR_TIPS06,社團等級需達到12級且成員達到5人
+GUILD_NEW_WAR_TIPS07,已達到最大值
+GUILD_NEW_WAR_TXET01,賽季
+GUILD_NEW_WAR_TXET02,下場對決開始：
+GUILD_NEW_WAR_TXET03,賽季排名
+GUILD_NEW_WAR_TXET04,對決記錄
+GUILD_NEW_WAR_TXET05,新賽季對決開始:
+GUILD_NEW_WAR_TXET06,對決{1}
+GUILD_NEW_WAR_TXET07,暫無對決記錄
+GUILD_NEW_WAR_TXET08,備戰期
+GUILD_NEW_WAR_TXET09,戰鬥期
+GUILD_NEW_WAR_TXET10,總戰力
+GUILD_NEW_WAR_TXET11,社長
+GUILD_NEW_WAR_TXET12,比賽積分
+GUILD_NEW_WAR_TXET13,獎勵
+GUILD_NEW_WAR_TXET14,對決勝利獎勵
+GUILD_NEW_WAR_TXET15,對決失敗獎勵
+GUILD_NEW_WAR_TXET16,進入場地
+GUILD_NEW_WAR_TXET17,駐守 {1}/{2}
+GUILD_NEW_WAR_TXET18,防守陣容
+GUILD_NEW_WAR_TXET19,戰報
+GUILD_NEW_WAR_TXET20,聊天
+GUILD_NEW_WAR_TXET21,獎勵
+GUILD_NEW_WAR_TXET22,集火
+GUILD_NEW_WAR_TXET23,每次拆除減少旗幟30點耐久
+GUILD_NEW_WAR_TXET24,{1}號旗幟
+GUILD_NEW_WAR_TXET25,耐久：{1}/{2}
+GUILD_NEW_WAR_TXET26,可以派遣防守成員
+GUILD_NEW_WAR_TXET27,調整
+GUILD_NEW_WAR_TXET28,防守社員
+GUILD_NEW_WAR_TXET29,空閒
+GUILD_NEW_WAR_TXET30,主壘
+GUILD_NEW_WAR_TXET31,中壘{1}
+GUILD_NEW_WAR_TXET32,前壘{1}
+GUILD_NEW_WAR_TXET33,旗幟
+GUILD_NEW_WAR_TXET34,戰力
+GUILD_NEW_WAR_TXET35,取消
+GUILD_NEW_WAR_TXET36,確定
+GUILD_NEW_WAR_TXET37,個人貢獻積分：{1}
+GUILD_NEW_WAR_TXET38,進攻次數：{1}/{2}
+GUILD_NEW_WAR_TXET39,賽季結束
+GUILD_NEW_WAR_TXET40,社團排名
+GUILD_NEW_WAR_TXET41,個人排名
+GUILD_NEW_WAR_TXET42,獎勵
+GUILD_NEW_WAR_TXET43,社團獎勵
+GUILD_NEW_WAR_TXET44,個人獎勵
+GUILD_NEW_WAR_TXET45,賽季結算獎勵：
+GUILD_NEW_WAR_TXET46,對決結算獎勵：
+GUILD_NEW_WAR_TXET47,--
+GUILD_NEW_WAR_TXET48,對戰資訊
+GUILD_NEW_WAR_TXET49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TXET50,挑戰
+GUILD_NEW_WAR_TXET51,旗幟資訊
+GUILD_NEW_WAR_TXET52,每次攻擊扣除20點耐久
+GUILD_NEW_WAR_TXET53,進攻獎勵
+GUILD_NEW_WAR_TXET54,進攻
+GUILD_NEW_WAR_TXET55,個人貢獻積分 +{1}
+GUILD_NEW_WAR_TXET56,獎勵
+GUILD_NEW_WAR_TXET57,敵方防守成員勇氣 -{1}
+GUILD_NEW_WAR_TXET58,第{1}場對決
+GUILD_NEW_WAR_TXET59,個人積分社團排名
+GUILD_NEW_WAR_TXET60,個人積分
+GUILD_NEW_WAR_TXET61,社團積分 +{1}
+GUILD_NEW_WAR_TXET62,獎勵通過郵件發放
+GUILD_NEW_WAR_TXET63,{玩家某某}進攻了敵方{左前壘}的{8}號旗幟，消耗了敵人{100}點勇氣
+GUILD_NEW_WAR_TXET64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
+GUILD_NEW_WAR_TXET65,{1}摧毀了敵方{2}
+GUILD_NEW_WAR_TXET66,結束
+GUILD_NEW_WAR_TXET67,對戰{1}
+GUILD_NEW_WAR_TXET68,挑戰次數：{1}
+GUILD_NEW_WAR_TXET69,戰鬥中...
+GUILD_NEW_WAR_TXET70,戰鬥記錄
+GUILD_NEW_WAR_TXET71,個人積分
+GUILD_NEW_WAR_TXET72,敵方勇氣
+GUILD_NEW_WAR_TXET73,清理場地
+GUILD_NEW_WAR_TXET74,我方
+GUILD_NEW_WAR_TXET75,敵方

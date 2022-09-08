@@ -22,7 +22,7 @@ function PartnerIcon:update(index, info)
 	self.go:SetActive(true)
 	self.heroIcon:setInfo(info)
 
-	if self.parent.choosePartners[info.tableID] then
+	if self.parent.choosePartners[info.tableID] and self.parent.choosePartners[info.tableID] == info.star then
 		self.heroIcon.choose = true
 	else
 		self.heroIcon.choose = false
@@ -1212,7 +1212,7 @@ function ShenXueWindow:onClickheroIcon(heroIcon)
 
 	local partnerInfo = heroIcon:getPartnerInfo()
 	heroIcon.choose = true
-	self.choosePartners[partnerInfo.tableID] = true
+	self.choosePartners[partnerInfo.tableID] = partnerInfo.star
 	self.lastSelected_ = heroIcon
 	self.lastSelectId_ = self.lastSelected_:getPartnerInfo().tableID
 	self.lastSelectTableID = partnerInfo.tableID

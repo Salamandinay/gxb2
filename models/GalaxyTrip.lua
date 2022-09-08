@@ -127,6 +127,14 @@ function GalaxyTrip:onGetGalaxyTripGetMainBack(event)
 			end
 		end
 	end
+
+	self:checkFormationNeedUpdate()
+
+	local wnd = xyd.getWindow("main_window")
+
+	if wnd then
+		wnd:checkTrBtn()
+	end
 end
 
 function GalaxyTrip:sendGalaxyTripGetMapBlackHoleBack(isNeedOpen)
@@ -1242,6 +1250,9 @@ function GalaxyTrip:onSetGalaxyTripFormation(event)
 			end
 		end
 	end
+
+	self:checkFormationNeedUpdate()
+	xyd.alertTips(__("GALAXY_TRIP_TIPS_26"))
 end
 
 function GalaxyTrip:getBuffPlaceAddNum()
@@ -1919,6 +1930,7 @@ function GalaxyTrip:cutCountOver()
 		self.mainInfo.max_id = 0
 		self.mainInfo.teams = {}
 		self.mainInfo.god_skills = {}
+		self.partnerInfoArr = {}
 	end
 
 	if self.ballInfoArr then
@@ -1969,6 +1981,58 @@ end
 
 function GalaxyTrip:getPartner(partnerID)
 	return self.partnerInfoArr[partnerID]
+end
+
+function GalaxyTrip:checkFormationNeedUpdate()
+	for k, v in pairs(self.partnerInfoArr) do
+		local oldPartner = v
+		local partnerID = k
+		local nowPartner = xyd.models.slot:getPartner(partnerID)
+
+		if nowPartner and nowPartner:getStar() ~= oldPartner:getStar() then
+			local curMapId = xyd.models.galaxyTrip:getGalaxyTripGetCurMap()
+
+			if curMapId ~= 0 then
+				local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
+
+				if isBatch and isBatch == 1 then
+					xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_TEAM, false)
+
+					return true
+				end
+
+				local ballMapInfo = xyd.models.galaxyTrip:getBallInfo(curMapId)
+
+				if ballMapInfo then
+					local ballMap = ballMapInfo.map
+
+					for i in pairs(ballMap) do
+						local gridState = xyd.models.galaxyTrip:getGridState(ballMap[i].gridId, curMapId)
+
+						if gridState == xyd.GalaxyTripGridStateType.CAN_GET then
+							xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_TEAM, false)
+
+							return true
+						end
+
+						if gridState == xyd.GalaxyTripGridStateType.SEARCH_ING then
+							xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_TEAM, false)
+
+							return true
+						end
+					end
+				end
+			end
+
+			xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_TEAM, true)
+
+			return true
+		end
+	end
+
+	xyd.models.redMark:setMark(xyd.RedMarkType.GALAXY_TRIP_TEAM, false)
+
+	return false
 end
 
 return GalaxyTrip

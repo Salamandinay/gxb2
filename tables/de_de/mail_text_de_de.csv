@@ -11,7 +11,7 @@ id,name,from,content
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
 11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
-13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Schöpfnetz *2 zu erhalten. Hier sind deine Belohnungen!"
+13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Himmelslaterne *5 zu erhalten. Hier sind deine Belohnungen!"
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
 15,Tötungsbelohnungen,Systembenachrichtigung,Herzlichen Glückwunsch! Der Freundesboss wurde von dir getötet. Du erhältst die folgenden Belohnungen!
 16,Belohnungen (Freundesboss),Systembenachrichtigung,Der Freund BOSS wurde erfolgreich besiegt. Herzlichen Glückwunsch zu den folgenden Belohnungen!
@@ -235,7 +235,7 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 213,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast dem Chaos-Lord einen hohen Schaden zugefügt und er hat sich zurückgezogen! Sammle die Belohnungen ein und kämpfe weiter! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 214,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast den Chaos-Lord erfolgreich besiegt und bist in ein gefährlicheres Gebiet eingetreten. Bitte sammle die Belohnungen ein! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 215,Weihnachtsaustausch geht bald zu Ende,Event-Mail,"Lieber Senpai,\n\ndas Event ""Weihnachtsaustausch"" geht bald zu Ende. Vergiss bitte nicht, deine gewünschten Geschenke zu tauschen!"
-216,Belohnungen zum Fischmeister,Event-Mail,"Gratuliere, du hast im Event ""Fischmeister"" {1} Fische gefangen! Hier sind deine Belohnungen."
+216,Belohnungen zum Laternenfest,Systembenachrichtigung,"Gratuliere, du hast am Laternenfest insgesamt {1} Himmelslaternen steigen lassen und folgende Belohnungen erhalten!"
 217,Alter Campus endet bald,Systembenachrichtigung,"Lieber Senpai, Alter Campus wird in 24 Stunden geschlossen. Bitte begebe dich schnell auf den Campus, um höhere Etagen zu erobern!"
 218,Letzter Tag für limitierte Pakete!,Systembenachrichtigung,"Lieber Senpai, das Paket-Event ""{1}"" wird in 1 Tag beendet! Verpass die preiswerten Pakete bloß nicht!"
 219,Bonus zum Feuerwerksspektakel,Systembenachrichtigung,"Lieber Senpai, hast du heute schon am Event ""Feuerwerksspektakel"" teilgenommen? Hier, ich schick dir noch ein Streichholz als Bonus!"
@@ -280,7 +280,7 @@ das Event „Boni zum Altar“ wurde bereits beendet. Der Anzahl deiner Ziehunge
 Vielen Dank für deine Unterstützung zu GXB2. Solltest du irgendwelche Fragen über das Event haben, wende dich bitte gerne an unseren Support!
 
 GXB2 Entwicklungsteam"
-239,Belohnungen zu Duft des Beifuß,Systembenachrichtigung,"Gratuliere, dein Sättigungsgefühl im Event ""Duft des Beifuß"" hat {1} erreicht und du hast folgende Belohnungen erhalten!"
+239,Belohnungen zum Laternenfest,Systembenachrichtigung,"Gratuliere, du hast am Laternenfest insgesamt {1} Himmelslaternen steigen lassen und folgende Belohnungen erhalten!"
 237,Exklusives Paket (Einsatz ins Manor),Event-Mail,"Liebe(r) Senpai,\n\ndie heutigen Belohnungen des exklusiven Pakets ({1} x3) zum Manor wurden bereits gesendet. Los zum Manor, um die anderen Spieler zu plündern!"
 238,Einsatz ins Manor,Event-Mail,"Liebe(r) Senpai,\n\ndein Abenteuer im Manor ist beendet und die Besichtigungsphase beginnt! Danke für deine fleißige Arbeit!"
 241,Zusatzbelohnung (Verlassene Raumstation),Event-Mail,"Liebe(r) Senpai,\n\ndu hast die zusätzlichen Belohnungen im Event ""Verlassene Raumstation"" entsperrt! Deinen abgeschlossenen Raumstationen entsprechend werden folgende Belohnungen gesendet. Bitte sammle sie ein!"
@@ -294,5 +294,7 @@ GXB2 Entwicklungsteam"
 249,Glaxisreise - Rangbelohnungen,Systembenachrichtigung,"Gratuliere, du hast den {1}. Platz in der Reise durch die Galaxis belegt. Hier sind deine Belohnungen!"
 250,Phase-Belohnungen,Systembenachrichtigung,"Gratuliere, du hast die Ziele der {1}. Phase im Event ""Einladung zur Einschulung"" erreicht und folgende Belohnungen erhalten!"
 251,Belohnungen zur Verbindung,Systembenachrichtigung,"Gratuliere, du wurdest von einem Spieler zur Einschulung erfolgreich eingeladen und folgende Belohnungen erhalten. Grüße dich mal mit deinem Senior~"
-252,Belohnungen zur Einschulung,Systembenachrichtigung,Spieler {1} hat die Ziele der {2}. Phase erreicht. Als Senior erhältst du folgende Belohnungen!
+252,Belohnungen für Senior,Systembenachrichtigung,Der Neuling {1} hat das Ziel der {2}. Phase erreicht. Als Senior erhältst du folgende Belohnungen!
 253,Belohnungen zum Teilen,Systembenachrichtigung,"Gratuliere, du hast in dieser Woche zum ersten Mal die Spielinhalte geteilt und folgende Belohnungen erhalten!"
+254,Phasenbelohnungen zum Laternenfest,Event-Mail,"Gratuliere, du hast das Laternenfest Yumes bis zur Phase ""{1}"" veranstaltet und folgende Belohnungen erhalten!"
+257,Neue Elite Arena hat begonnen!,Systembenachrichtigung,"Liebe(r) Senpai, die brandneue Elite Arena im Überserver-Modus wurde bereits eingeführt. Fordere schnell stärkere Gegner heraus!"

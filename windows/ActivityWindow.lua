@@ -90,8 +90,10 @@ function ActivityWindow:getUIComponent()
 	self.bg02 = go:ComponentByName("groupMain/bg02_panel/bg02", typeof(UISprite))
 	self.groupContent = go:ComponentByName("groupMain/groupContent", typeof(UIPanel))
 	self.nav = go:ComponentByName("nav", typeof(UIWidget))
+	self.tab2 = self.nav.gameObject:NodeByName("tab_2").gameObject
 	self.clickTipsTab2 = self.nav.gameObject:NodeByName("tab_2/clickTips").gameObject
 	self.clickTipsTab2_box = self.nav.gameObject:NodeByName("tab_2/clickTips/clickTipsBox").gameObject
+	self.tab3 = self.nav.gameObject:NodeByName("tab_3").gameObject
 	self.clickTipsTab3 = self.nav.gameObject:NodeByName("tab_3/clickTips").gameObject
 	self.clickTipsTab3_box = self.nav.gameObject:NodeByName("tab_3/clickTips/clickTipsBox").gameObject
 	self.scroll = go:NodeByName("groupMain/scroll").gameObject
@@ -452,18 +454,6 @@ function ActivityWindow:setNormalDisplay()
 	end
 
 	for i = 1, #self.idsList do
-		if self.idsList[i] == xyd.ActivitySandMissionEnum.TEST_DUMMY_SAND_MAIN_PAGE_ID then
-			local targetActID = xyd.ActivityID.ACTIVITY_SAND_MISSION
-			local activityData = xyd.models.activity:getActivity(targetActID)
-
-			if xyd.ActivitySandMissionEnum.TEST_FLAG_DUMMY_GIFTBAG_PAGE and activityData:isOpen() and UNITY_EDITOR then
-				table.insert(self.idsList, targetActID)
-				table.insert(self.idsList, xyd.ActivityID.ACTIVITY_SAND_GIFTBAG)
-			end
-		end
-	end
-
-	for i = 1, #self.idsList do
 		local id = self.idsList[i]
 		local title = ActivityTitleItem.new(self.titleGroup, {
 			type = 1,
@@ -538,6 +528,19 @@ function ActivityWindow:setActivityDisplay()
 		end
 
 		self.jumpToAnotherNav = false
+	end
+
+	if xyd.GuideController.get():isPlayGuide() then
+		self.month_practice_item = nil
+		local list = self.titlesList
+
+		if list and #list > 0 then
+			for i in pairs(list) do
+				if list[i] and list[i]:getId() == 246 then
+					self.month_practice_item = list[i]:getSelfGo()
+				end
+			end
+		end
 	end
 
 	if selectTitle then

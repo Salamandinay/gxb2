@@ -36,12 +36,23 @@ end
 
 function TimeCloisterCardRecordWindow:ctor(name, params)
 	TimeCloisterCardRecordWindow.super.ctor(self, name, params)
+
+	if params then
+		if params.cloister then
+			self.cloister = params.cloister
+		end
+
+		if params.isSpeedHandUpBack ~= nil then
+			self.isSpeedHandUpBack = params.isSpeedHandUpBack
+		end
+	end
 end
 
 function TimeCloisterCardRecordWindow:initWindow()
 	self:getUIComponent()
 	self:layout()
 	self:registerEvent()
+	self:checkGuide()
 end
 
 function TimeCloisterCardRecordWindow:getUIComponent()
@@ -81,6 +92,10 @@ end
 
 function TimeCloisterCardRecordWindow:registerEvent()
 	UIEventListener.Get(self.closeBtn).onClick = function ()
+		if self.isNeedguide then
+			return
+		end
+
 		self:close()
 	end
 end
@@ -93,6 +108,49 @@ function TimeCloisterCardRecordWindow:willClose()
 	if time_cloister_probe_wd then
 		time_cloister_probe_wd:checkGuide(xyd.GuideType.TIME_CLOISTER_2)
 	end
+end
+
+function TimeCloisterCardRecordWindow:checkGuide()
+	if self.isSpeedHandUpBack and self.cloister and self.cloister == xyd.TimeCloisterMissionType.ONE then
+		local exskillGuideWd = xyd.WindowManager.get():getWindow("exskill_guide_window")
+
+		if not exskillGuideWd and not xyd.db.misc:getValue("time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_4) then
+			self.isNeedguide = true
+
+			self:waitForTime(0.6, function ()
+				xyd.WindowManager:get():openWindow("exskill_guide_window", {
+					wnd = self,
+					table = xyd.tables.timeCloisterGuideTable,
+					guide_type = xyd.GuideType.TIME_CLOISTER_4
+				})
+				xyd.db.misc:setValue({
+					value = "1",
+					key = "time_cloister_guide_" .. xyd.GuideType.TIME_CLOISTER_4
+				})
+				self:waitForTime(0.1, function ()
+					self.isNeedguide = false
+				end)
+			end)
+		end
+	end
+end
+
+function TimeCloisterCardRecordWindow:onClickCloseButton()
+	if self.isNeedguide then
+		return
+	end
+
+	TimeCloisterCardRecordWindow.super.onClickCloseButton(self)
+end
+
+function TimeCloisterCardRecordWindow:playOpenAnimation(callback)
+	local function myCallBack()
+		if callback then
+			callback()
+		end
+	end
+
+	TimeCloisterCardRecordWindow.super.playOpenAnimation(self, myCallBack)
 end
 
 return TimeCloisterCardRecordWindow

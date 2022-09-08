@@ -9,6 +9,8 @@ function ActivityDragonboat2022AwardSelectWindow:ctor(name, params)
 end
 
 function ActivityDragonboat2022AwardSelectWindow:initWindow()
+	self.icons = {}
+
 	self:getUIComponent()
 	ActivityDragonboat2022AwardSelectWindow.super.initWindow(self)
 	self:initUIComponent()
@@ -21,38 +23,40 @@ function ActivityDragonboat2022AwardSelectWindow:getUIComponent()
 	self.model = self.groupAction:ComponentByName("model", typeof(UITexture))
 	self.labelTalk = self.groupAction:ComponentByName("talk/label", typeof(UILabel))
 
-	for i = 1, 3 do
+	for i = 1, 4 do
 		self["item" .. i] = self.groupAction:NodeByName("award" .. i).gameObject
-		self["awardGroup" .. i] = self["item" .. i]:NodeByName("award").gameObject
+		self["iconPos" .. i] = self["item" .. i]:NodeByName("iconPos").gameObject
 		self["changeBtn" .. i] = self["item" .. i]:NodeByName("changeBtn").gameObject
-		self["point" .. i] = self["item" .. i]:ComponentByName("point/num", typeof(UILabel))
-		self["groupMb" .. i] = self["item" .. i]:NodeByName("groupMb").gameObject
+		self["num" .. i] = self["item" .. i]:ComponentByName("num", typeof(UILabel))
 	end
+
+	self.labelTotalPoint = self.groupAction:ComponentByName("tipsGroup/labelTotalPoint", typeof(UILabel))
 end
 
 function ActivityDragonboat2022AwardSelectWindow:initUIComponent()
 	self.partnerEffect = xyd.Spine.new(self.model.gameObject)
 
-	self.partnerEffect:setInfo("anyue_pifu01", function ()
+	self.partnerEffect:setInfo("qianhezi_pifu02", function ()
 		self.partnerEffect:play("idle", 0)
 	end)
 
 	self.labelTalk.text = __("ACTIVITY_DRAGONBOAT2022_TEXT04")
+	self.labelTotalPoint.text = __("ACTIVITY_DRAGONBOAT2022_TEXT10", self.activityData.detail.point2)
 
-	for i = 1, 3 do
+	for i = 1, 4 do
 		local point = xyd.tables.activityDragonboat2022ChoseTable:getPoint(i)
-		self["point" .. i].text = point
+		self["num" .. i].text = point
 	end
 
 	self:update()
 end
 
 function ActivityDragonboat2022AwardSelectWindow:update()
-	for i = 1, 3 do
-		NGUITools.DestroyChildren(self["awardGroup" .. i].transform)
+	for i = 1, 4 do
+		NGUITools.DestroyChildren(self["iconPos" .. i].transform)
 
 		if self.activityData.detail.chosen_ids and self.activityData.detail.chosen_ids[i] and self.activityData.detail.chosen_ids[i] ~= 0 then
-			self["awardGroup" .. i]:SetActive(true)
+			self["iconPos" .. i]:SetActive(true)
 			self["changeBtn" .. i]:SetActive(true)
 
 			local awards = xyd.tables.activityDragonboat2022ChoseTable:getAwards(i)
@@ -62,29 +66,28 @@ function ActivityDragonboat2022AwardSelectWindow:update()
 				notShowGetWayBtn = true,
 				scale = 0.6018518518518519,
 				noClick = true,
-				uiRoot = self["awardGroup" .. i],
+				uiRoot = self["iconPos" .. i],
 				itemID = awardChosen[1],
 				num = awardChosen[2],
 				wndType = xyd.ItemTipsWndType.ACTIVITY
 			})
+			self.icons[i] = icon
 			local point = xyd.tables.activityDragonboat2022ChoseTable:getPoint(i)
 
-			if point <= self.activityData.detail.point and (not self.activityData.detail.awarded_chosen or not self.activityData.detail.awarded_chosen[i] or self.activityData.detail.awarded_chosen[i] == 0) then
+			if point <= self.activityData.detail.point2 and (not self.activityData.detail.awarded_chosen or not self.activityData.detail.awarded_chosen[i] or self.activityData.detail.awarded_chosen[i] == 0) then
 				icon:setEffect(true, "fx_ui_bp_available", {
 					effectPos = Vector3(3, 6, 0),
 					effectScale = Vector3(1.1, 1.1, 1.1)
 				})
 			end
 		else
-			self["awardGroup" .. i]:SetActive(false)
+			self["iconPos" .. i]:SetActive(false)
 			self["changeBtn" .. i]:SetActive(false)
 		end
 
 		if self.activityData.detail.awarded_chosen and self.activityData.detail.awarded_chosen[i] and self.activityData.detail.awarded_chosen[i] ~= 0 then
-			self["groupMb" .. i]:SetActive(true)
+			self.icons[i]:setChoose(true)
 			self["changeBtn" .. i]:SetActive(false)
-		else
-			self["groupMb" .. i]:SetActive(false)
 		end
 	end
 end
@@ -95,12 +98,12 @@ function ActivityDragonboat2022AwardSelectWindow:register()
 		self:update()
 	end)
 
-	for i = 1, 3 do
+	for i = 1, 4 do
 		UIEventListener.Get(self["item" .. i]).onClick = function ()
 			if self.activityData.detail.chosen_ids and self.activityData.detail.chosen_ids[i] and self.activityData.detail.chosen_ids[i] ~= 0 then
 				local point = xyd.tables.activityDragonboat2022ChoseTable:getPoint(i)
 
-				if point <= self.activityData.detail.point then
+				if point <= self.activityData.detail.point2 then
 					if not self.activityData.detail.awarded_chosen or not self.activityData.detail.awarded_chosen[i] or self.activityData.detail.awarded_chosen[i] == 0 then
 						xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_DRAGONBOAT2022, cjson.encode({
 							award_type = 3,
@@ -122,10 +125,11 @@ function ActivityDragonboat2022AwardSelectWindow:register()
 						local indexs = {
 							0,
 							0,
+							0,
 							0
 						}
 
-						for j = 1, 3 do
+						for j = 1, 4 do
 							if self.activityData.detail.chosen_ids and self.activityData.detail.chosen_ids[j] and self.activityData.detail.chosen_ids[j] ~= 0 then
 								indexs[j] = self.activityData.detail.chosen_ids[j]
 							end
@@ -161,7 +165,7 @@ function ActivityDragonboat2022AwardSelectWindow:register()
 						0
 					}
 
-					for j = 1, 3 do
+					for j = 1, 4 do
 						if self.activityData.detail.chosen_ids and self.activityData.detail.chosen_ids[j] and self.activityData.detail.chosen_ids[j] ~= 0 then
 							indexs[j] = self.activityData.detail.chosen_ids[j]
 						end

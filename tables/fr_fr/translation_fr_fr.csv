@@ -443,7 +443,7 @@ EDGE_OUT_NOTIFY,"Ce compte a été connecté sur un autre appareil, voulez-vous 
 FORGET_PASSWORD,Mot de passe\noublié
 CANCEL,Annuler
 SHENXUE_WINDOW_HELP,"1. Choisissez une Fille à améliorer, puis ajouter les Filles Matérielles nécessaires ; si vous avez ce qu'il faut votre Fille sera améliorée.|2. La Fille gardera son niveau d'origine et ses équipements.|3. Les Filles Matérielles seront transformées en Jus d'EXP et en Plateaux Repas et les équipements seront envoyés dans votre Sac.|4. Après la graduation, la Fille aura des attributs et des capacités plus puissantes.|5. Seule la Faveur de la Fille graduée est conservée.|6. Sélectionnez les Filles matérielles nécessaires pour graduer votre Fille."
-TOWER_WINDOW_HELP,"1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport à l'Étape du Test qu'ils ont atteint. |5. Atteignez l'Étape 200 pour débloquer la fonction ""Passer le combat""."
+TOWER_WINDOW_HELP,1. Vous devez au moins avoir un Pass afin de pouvoir faire le Test. Une défaite dépensera un seul Pass.|2. Vous récupérerez 1 Pass toutes les 30 minutes. Vous ne pouvez avoir que 10 Pass à la fois.|3. La difficulté augmente à chaque étape. Vaincre un Gardien du Test augmentera vos récompenses.|4. Les joueurs seront classés par rapport au niveau du Test qu'ils ont atteint.
 DUNGEON_WINDOW_HELP,"1. La Patrouille dure 48 heures et rouvre de nouveau 48 heures après (cycle de 4 jours).|2. Le joueur doit choisir au minimum 1 Fille dans son équipe de Patrouille (5 Filles au maximum). L'équipe ne peut pas être modifiée avant la prochaine ouverture (les attributs, équipements et potentiels ne seront pas mis à jour non plus).|3. Touchez pour voir les informations de l'ennemi et choisissez une Fille manuellement pour combattre les ennemis.|4. Cochez ""passer"" le combat et voir directement le résultat, ou décochez ""passer"" pour voir le déroulement du combat et voir le résultat à la fin.|5. Après la fin du combat, les PV restants des Filles de votre équipe et des Filles ennemis seront gardés. Les Filles qui n'ont plus de PV ne peuvent plus participer aux combats.|6. Chaque combat dure 15 tours. L'équipe qui tue l'ennemi dans les 15 tours gagnera. Un combat qui dure plus de 15 tours est considéré comme une défaite.|7. Une victoire a 3 résultats aléatoires possible：obtenir un Coffre, rencontrer le Marchand ou obtenir un objet.|8. Coffre：Obtienez des récompenses aléatoires telles que Pièces d'Or, Gemmes ou bien d'autres.|9. Marchand：Cliquez sur le Marchand pour acheter des objets ou cliquez sur le bouton au milieu de l'écran pour passer le Marchand et continuer à vous battre.|10. Objet：Divisé en 2 catégories -- Papeterie et Boulette. Cliquez sur la Boulette pour obtenir l'effet correspondant et cliquez sur une des Papeteries pour recevoir un bonus, l'utilisation des Papeteries est limitée pour chaque Fille.|11. Les Boulettes ne peuvent pas être préservées jusque la prochaine Patrouille.|12. Le Défi s'achève lorsque toutes les Filles présentes n'ont plus de PV.|13. La Patrouille a 6 niveaux : Facile, Normal, Difficile, Extrême, Fantaisie et Cauchemar. Il y a 100 Étages pour chaque niveau. Gagner le 100ème Étage vous permet de débloquer le niveau suivant.|14. Après avoir fait 50 Étages d'un niveau (disponible pour chaque niveau), vous pouvez choisir le mode Auto la prochaine fois que la Patrouille sera disponible."
 GET_WAY_EQUIP,Aller à {1}-{2}
 PARTNER_LIST_FULL,La liste des Filles est pleine. Vous pouvez augmenter le nombre d'emplacement disponible en augmentant votre niveau VIP ou en achetant des places supplémentaires. Voulez-vous acheter plus d'emplacement?
@@ -6428,17 +6428,17 @@ ENTRANCE_TEST_STAR_ORIGIN_LOCK,Débloqué après avoir atteint le Rang S
 OLD_SCHOOL_TIPS01,Voulez-vous choisir tous les Bonus ?
 ACTIVITY_SPFARM_TEXT18,Voulez-vous utiliser {2}*{1} pour planter cette Fleur ?
 ACTIVITY_SPFARM_TEXT19,Voulez-vous utiliser {2}*{1} pour changer la Fleur actuelle ?
-ACTIVITY_DRAGONBOAT2022_BUTTON01,Savourer
+ACTIVITY_DRAGONBOAT2022_BUTTON01,Lancer
 ACTIVITY_DRAGONBOAT2022_BUTTON02,Vertus de\nl'Armoise
-ACTIVITY_DRAGONBOAT2022_HELP,"1. La fête des Bateaux-Dragon est arrivée ! Venez savourer des Gâteaux à l’Armoise avec Scythe ! Chaque fois que vous consommez 2 Gâteaux à l’Armoise, votre Avancée augmentera de 1 et vous obtiendrez une Récompense Basique, vous aurez également une chance d’obtenir une Récompense Supplémentaire - Boîte de la fête des Bateaux-Dragon. |2. Avant de savourer des Gâteaux à l’Armoise avec Scythe, veuillez d’abord toucher « Vertus de l'Armoise » pour choisir les récompenses que vous voulez obtenir. Après avoir savouré un certain nombre de Gâteau à l’Armoise, vous obtiendrez les récompenses de votre choix. |3. Après avoir savouré un certain nombre du Gâteau à l’Armoise, vous obtiendrez également des récompenses de palier.|4. Moyen d’obtention de Gâteau à l’Armoise : Courrier Quotidien, Utiliser 1 Gouvernail ou Gouvernail Avancé dans l’événement - Le Périple de Lavli, Offres de Lavli, Tâche des Filles, Pack de Grande Valeur, Pack Surprise, Pack Surprise de Skin. |5. Après la fin de l’événement, les Gâteaux à l’Armoise non utilisés seront automatiquement convertis en Pièce d’Or, 1 Gâteau à l’Armoise = 50K Pièces d’Or."
+ACTIVITY_DRAGONBOAT2022_HELP,"1. À l'occasion de la Fête de la Lune, lancez des Lanternes Célestes dans le ciel avec Chizuko !|2. Chaque fois que vous consommez 2 Lanternes, obtenez une récompense aléatoire, une chance d'obtenir une récompense supplémentaire, et vous aurez 33,33%% de chance d'obtenir 1 point de Festivité, 33,33%% de chance d'en obtenir 2 et 33,33%% de chance d'en obtenir 3.|3. Après avoir lancé un certain nombre de Lanterne Céleste, vous accèderez à différents Niveaux de Festivité.|4. En fonction du nombre de Lanternes Célestes lancées, vous recevrez des récompenses cumulatives.|5. Moyen d'obtention des Lanternes Célestes : Courrier Quotidien, Recruter, Rassemblement, Pack de Lanterne, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise. |6. Après la fin de l'événement, les Lanternes Célestes non utilisées seront automatiquement converties en Pièce d'Or, 1 Lanterne Céleste = 50K Pièces d'Or."
 ACTIVITY_DRAGONBOAT2022_TEXT01,Avancée
 ACTIVITY_DRAGONBOAT2022_TEXT02,Récompense Supplémentaire
-ACTIVITY_DRAGONBOAT2022_TEXT03,Récompense Basique
-ACTIVITY_DRAGONBOAT2022_TEXT04,Savourez un certain nombre de Gâteaux à l'Armoise pour obtenir les récompenses de votre choix~
-ACTIVITY_DRAGONBOAT2022_TEXT05,Choisissez votre récompense
-ACTIVITY_DRAGONBOAT2022_TEXT06,Obtenable après que votre Avancée ait atteint {1}
-ACTIVITY_DRAGONBOAT2022_TEXT07,De combien voulez-vous augmenter votre Avancée ?
-ACTIVITY_DRAGONBOAT2022_TIPS01,"Veuillez toucher ""+"" pour choisir les récompenses que vous voulez obtenir~"
+ACTIVITY_DRAGONBOAT2022_TEXT03,Récompense Aléatoire
+ACTIVITY_DRAGONBOAT2022_TEXT04,"Senpai, sélectionne d'abord tes Récompenses de Palier pour ensuite les obtenir après avoir passé les différents Niveaux de Festivité~"
+ACTIVITY_DRAGONBOAT2022_TEXT05,Sélectionnez votre Récompense de Palier
+ACTIVITY_DRAGONBOAT2022_TEXT06,Après avoir obtenu {1} points de Festivité
+ACTIVITY_DRAGONBOAT2022_TEXT07,Nombre de Lanterne Céleste à lancer
+ACTIVITY_DRAGONBOAT2022_TIPS01,Veuillez d'abord choisir vos récompenses de Palier
 PARTNER_CHALLENGE_CHESS_TEXT11,Filles Élites proposées :
 PARTNER_CHALLENGE_CHESS_TEXT12,La liste sera actualisée une fois que vous aurez obtenu une Fille Élite.
 ACTIVITY_DRAGONBOAT2022_TEXT08,Aucune récompense obtenue
@@ -7113,7 +7113,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,Pièce d'Écaille obtenue：
 ACTIVITY_GOLDFISH_SHOP_TEXT06,Prédiction de Mercure：
 ACTIVITY_GOLDFISH_SHOP_TEXT07,Pièce d'Écaille due :
 ACTIVITY_GOLDFISH_SHOP_TIPS01,Débloqué après avoir utilisé {1} Épuisettes !
-ACTIVITY_GOLDFISH_AWARD_TEXT01,Utiliser {1} Épuisettes
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Lancer {1} Lanternes Célestes
 ACTIVITY_GOLDFISH_PACK_TEXT01,2 chances supplémentaires d'acheter le pack de Gemmes ci-dessus après avoir fait l'achat de ce Pack !
 STARRY_ALTAR_TEXT14,Récompense · Mode Surprise
 STARRY_ALTAR_TEXT15,Récompense · Mode Cumulatif
@@ -7246,18 +7246,18 @@ GALAXY_TRIP_TIPS_21,Impossible durant la Période d'Affichage !
 GALAXY_TRIP_TIPS_22,"La Phase d'Exploration est désormais terminée, les résultats s'afficheront sous peu..."
 GALAXY_TRIP_TIPS_23,"La Période d'Affichage est désormais terminée, la nouvelle saison va bientôt commencer."
 GALAXY_TRIP_TIPS_24,Cet ennemi a disparu !
-SHRINE_HURDLE_AUTO_HELP,"1. Une fois que le mode Auto-Bataille est activé, vous entrerez dans l'étape suivante avec votre équipe configurée.|2. Une fois entré dans l'étape suivante, le système essaiera d'éviter d'entrer dans les étapes de Combat. Lorsque vous serez amenés à choisir un bonus ou un soin, le système sélectionnera la première option par défaut. En fonction de vos réglages d'Auto-Bataille, vous pouvez choisir d'entrer dans l'Étape Guerison ou l'Étape Boutique.|3. Si vous choisissez d'entrer dans l'Étape Boutique, vous achèterez ou améliorerez les Bonus dans l'ordre jusqu'à ce que vous n'ayez plus de Jeton de Dojo. Vous pouvez choisir d'arrêter l'Auto-Bataille lorsque vous entrez dans l'Étape Boutique.|4. En entrant dans la dernière étape du Boss ou si vous quittez l'interface du Dojo, l'Auto-Bataille s'arrêtera. Vous pouvez choisir d'arrêter l'Auto-Bataille lorsqu'une Fille est vaincue. Si vous continuez l'Auto-Bataille, les Filles poursuivront automatiquement le combat jusqu'à ce que toutes les Filles soient vaincues."
+SHRINE_HURDLE_AUTO_HELP,"1. Une fois que le mode Auto-Bataille est activé, vous entrerez dans l'étape suivante avec votre équipe configurée.|2. Une fois entré dans l'étape suivante, le système essaiera d'éviter d'entrer dans les étapes de Combat. Lorsque vous serez amenés à choisir un bonus ou un soin, le système sélectionnera la première option par défaut. En fonction de vos réglages d'Auto-Bataille, vous pouvez choisir d'entrer dans l'Étape Guerison ou l'Étape Boutique.|3. Si vous choisissez d'entrer dans l'Étape Boutique, vous achèterez ou améliorerez les Bonus dans l'ordre jusqu'à ce que vous n'ayez plus de Jeton de Dojo. Vous pouvez choisir d'arrêter l'Auto-Bataille lorsque vous entrez dans l'Étape Boutique.|4. En entrant dans la dernière étape du Boss ou si vous quittez l'interface du Dojo, l'Auto-Bataille s'arrêtera.|5. À la fin de chaque bataille, les Filles poursuivront automatiquement le combat jusqu'à ce que toutes les Filles soient vaincues. Vous pouvez choisir d'arrêter l'Auto-Bataille lorsqu'une Fille est vaincue."
 SHRINE_HURDLE_AUTO_TEXT01,Auto-Bataille
 SHRINE_HURDLE_AUTO_TEXT02,Arrêter l'Auto-Bataille quand une Fille est vaincue
-SHRINE_HURDLE_AUTO_TEXT03,Voulez-vous entrer dans l'Étape Guérison ?
-SHRINE_HURDLE_AUTO_TEXT04,Voulez-vous entrer dans l'Étape Boutique ?
-SHRINE_HURDLE_AUTO_TEXT05,Arrêter l'Auto-Combat quand vous entrez dans l'Étape Boutique
+SHRINE_HURDLE_AUTO_TEXT03,Entrer dans l'Étape Guérison
+SHRINE_HURDLE_AUTO_TEXT04,Entrer dans l'Étape Boutique
+SHRINE_HURDLE_AUTO_TEXT05,Arrêter l'Auto-Bataille en entrant dans l'Étape Boutique
 SHRINE_HURDLE_AUTO_TEXT06,Équipe de l'Étape Combat
 SHRINE_HURDLE_AUTO_TEXT07,Configurer
 SHRINE_HURDLE_AUTO_TEXT08,Combattre
 INVITATION_ENTRANCE,Invitation
 INVITATION_SWITCH,Changer
-INVITATION_HELP,"Mentor du Campus|1. Après avoir terminé le 20e Chapitre du Journal d’Évolution, vous aurez accès au titre de Mentor. Une fois le titre Mentor acquit, partagez votre code d’invitation pour vous lier avec un Débutant (niveau de joueur inférieur à 70), et recevez une grande récompense. Une fois que le Débutant aura complété les tâches de toutes les Étapes, le Mentor obtiendra des récompenses supplémentaires.|2. Vous pouvez vous lier avec 10 Débutants en même temps (notez que les comptes ayant le même UID ne peuvent pas se lier entre eux). Si un Débutant ne s’est pas connecté pendant 7 jours, vous avez la possibilité de vous délier de ce joueur manuellement. Les Débutants ayant complétés les tâches de toutes les Étapes seront automatiquement déliés.|3. Vous avez la possibilité d’offrir un cadeau gratuitement à un Débutant chaque jour.|4. Vous pouvez obtenir une récompense de Gemmes pour avoir partagé le lien (en tant que Mentor) chaque semaine. La récompense sera réinitialisée à 0:00 (UTC/GMT 0) chaque lundi.\n\nVisite du Campus|1. Vous pouvez entrer le code d’invitation du Mentor pour vous lier et recevoir immédiatement une récompense, obtenez plus de récompenses en complétant les tâches des différentes Étapes."
+INVITATION_HELP,"Mentor du Campus|1. Après avoir terminé le 20e Chapitre du Journal d'Évolution, vous aurez accès au titre de Mentor. Une fois le titre Mentor acquit, partagez votre code d'invitation pour vous lier avec un Débutant (niveau de joueur inférieur à 70), et recevez une grande récompense. Une fois que le Débutant aura complété les tâches de toutes les Étapes, le Mentor obtiendra des récompenses supplémentaires.|2. Vous pouvez vous lier avec 10 Débutants en même temps (notez que les comptes ayant le même UID ne peuvent pas se lier entre eux). Si un Débutant ne s'est pas connecté pendant 7 jours, vous avez la possibilité de vous délier de ce joueur manuellement. Les Débutants ayant complétés les tâches de toutes les Étapes seront automatiquement déliés.|3. Vous avez la possibilité d'offrir un cadeau gratuitement à un Débutant chaque jour.|4. Vous pouvez obtenir une récompense de Gemmes pour avoir partagé le lien (en tant que Mentor) chaque semaine. La récompense sera réinitialisée à 0:00 (UTC/GMT 0) chaque lundi.\n\nVisite du Campus|1. Vous pouvez entrer le code d'invitation du Mentor pour vous lier et recevoir immédiatement une récompense, obtenez plus de récompenses en complétant les tâches des différentes Étapes."
 INVITATION_TEXT01,Liste des Débutants
 INVITATION_TEXT02,Mon code d'invitation
 INVITATION_TEXT03,Copier
@@ -7302,3 +7302,102 @@ INVITATION_TEXT22,Liaison déliée !
 INVITATION_TEXT23,Liaison réussie !
 GACHA_ENSURE_STAR5_TEXT01,Fille 5 étoiles garantie après avoir tiré moins de [c][f03c14]{1}[-][/c] fois Capsule Avancée*10
 ACTIVITY_FOOD_CONSUME_TEXT08,Veuillez choisir votre Fille à échanger !
+ACTIVITY_DRAGONBOAT2022_TEXT09,"33,33%% de chance d'obtenir 3 points"
+ACTIVITY_DRAGONBOAT2022_TEXT10,Niveau de Festivité : {1}
+ACTIVITY_DRAGONBOAT2022_TIPS02,+{1} points de Festivité
+GALAXY_TRIP_TIPS_25,"Vous avez amélioré votre Fille à un niveau d'étoile supérieur, veuillez à nouveau configurer votre équipe."
+GALAXY_TRIP_TIPS_26,Sauvegardé !
+TIME_CLOISTER_TEXT118,Déblocable après avoir complété une Exploration et obtenu des Fragments Galactiques.
+ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,Arène d'Élite Interserveur commence dans：
+ACTIVITY_REPAIR_CONSOLE_TEXT01,遊戲機故障……快幫助助手醬收集電能塊，激活核心芯片還可領取豐厚獎勵（先不翻譯，待定）
+ACTIVITY_REPAIR_CONSOLE_TEXT02,每次可隨機為1~3個電能站充電
+ACTIVITY_REPAIR_CONSOLE_TEXT03,獎勵預覽
+ACTIVITY_REPAIR_CONSOLE_TEXT04,充電
+ACTIVITY_REPAIR_CONSOLE_TEXT05,核心獎勵
+ACTIVITY_REPAIR_CONSOLE_TEXT06,普通獎勵
+ACTIVITY_REPAIR_CONSOLE_TEXT07,第{1}輪
+ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}輪及之後
+ACTIVITY_REPAIR_CONSOLE_HELP,幫助文本，待定
+GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
+GUILD_NEW_WAR_TIPS01,休息期結束，即將進入備戰期
+GUILD_NEW_WAR_TIPS02,戰鬥期結束，即將進入休息期
+GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
+GUILD_NEW_WAR_TIPS04,當前挑戰次數不足
+GUILD_NEW_WAR_TIPS05,需要加入社團
+GUILD_NEW_WAR_TIPS06,社團等級需達到12級且成員達到5人
+GUILD_NEW_WAR_TIPS07,已達到最大值
+GUILD_NEW_WAR_TXET01,賽季
+GUILD_NEW_WAR_TXET02,下場對決開始：
+GUILD_NEW_WAR_TXET03,賽季排名
+GUILD_NEW_WAR_TXET04,對決記錄
+GUILD_NEW_WAR_TXET05,新賽季對決開始:
+GUILD_NEW_WAR_TXET06,對決{1}
+GUILD_NEW_WAR_TXET07,暫無對決記錄
+GUILD_NEW_WAR_TXET08,備戰期
+GUILD_NEW_WAR_TXET09,戰鬥期
+GUILD_NEW_WAR_TXET10,總戰力
+GUILD_NEW_WAR_TXET11,社長
+GUILD_NEW_WAR_TXET12,比賽積分
+GUILD_NEW_WAR_TXET13,獎勵
+GUILD_NEW_WAR_TXET14,對決勝利獎勵
+GUILD_NEW_WAR_TXET15,對決失敗獎勵
+GUILD_NEW_WAR_TXET16,進入場地
+GUILD_NEW_WAR_TXET17,駐守 {1}/{2}
+GUILD_NEW_WAR_TXET18,防守陣容
+GUILD_NEW_WAR_TXET19,戰報
+GUILD_NEW_WAR_TXET20,聊天
+GUILD_NEW_WAR_TXET21,獎勵
+GUILD_NEW_WAR_TXET22,集火
+GUILD_NEW_WAR_TXET23,每次拆除減少旗幟30點耐久
+GUILD_NEW_WAR_TXET24,{1}號旗幟
+GUILD_NEW_WAR_TXET25,耐久：{1}/{2}
+GUILD_NEW_WAR_TXET26,可以派遣防守成員
+GUILD_NEW_WAR_TXET27,調整
+GUILD_NEW_WAR_TXET28,防守社員
+GUILD_NEW_WAR_TXET29,空閒
+GUILD_NEW_WAR_TXET30,主壘
+GUILD_NEW_WAR_TXET31,中壘{1}
+GUILD_NEW_WAR_TXET32,前壘{1}
+GUILD_NEW_WAR_TXET33,旗幟
+GUILD_NEW_WAR_TXET34,戰力
+GUILD_NEW_WAR_TXET35,取消
+GUILD_NEW_WAR_TXET36,確定
+GUILD_NEW_WAR_TXET37,個人貢獻積分：{1}
+GUILD_NEW_WAR_TXET38,進攻次數：{1}/{2}
+GUILD_NEW_WAR_TXET39,賽季結束
+GUILD_NEW_WAR_TXET40,社團排名
+GUILD_NEW_WAR_TXET41,個人排名
+GUILD_NEW_WAR_TXET42,獎勵
+GUILD_NEW_WAR_TXET43,社團獎勵
+GUILD_NEW_WAR_TXET44,個人獎勵
+GUILD_NEW_WAR_TXET45,賽季結算獎勵：
+GUILD_NEW_WAR_TXET46,對決結算獎勵：
+GUILD_NEW_WAR_TXET47,--
+GUILD_NEW_WAR_TXET48,對戰資訊
+GUILD_NEW_WAR_TXET49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TXET50,挑戰
+GUILD_NEW_WAR_TXET51,旗幟資訊
+GUILD_NEW_WAR_TXET52,每次攻擊扣除20點耐久
+GUILD_NEW_WAR_TXET53,進攻獎勵
+GUILD_NEW_WAR_TXET54,進攻
+GUILD_NEW_WAR_TXET55,個人貢獻積分 +{1}
+GUILD_NEW_WAR_TXET56,獎勵
+GUILD_NEW_WAR_TXET57,敵方防守成員勇氣 -{1}
+GUILD_NEW_WAR_TXET58,第{1}場對決
+GUILD_NEW_WAR_TXET59,個人積分社團排名
+GUILD_NEW_WAR_TXET60,個人積分
+GUILD_NEW_WAR_TXET61,社團積分 +{1}
+GUILD_NEW_WAR_TXET62,Les récompenses seront envoyées par courrier
+GUILD_NEW_WAR_TXET63,{玩家某某}進攻了敵方{左前壘}的{8}號旗幟，消耗了敵人{100}點勇氣
+GUILD_NEW_WAR_TXET64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
+GUILD_NEW_WAR_TXET65,{1}摧毀了敵方{2}
+GUILD_NEW_WAR_TXET66,結束
+GUILD_NEW_WAR_TXET67,對戰{1}
+GUILD_NEW_WAR_TXET68,挑戰次數：{1}
+GUILD_NEW_WAR_TXET69,戰鬥中...
+GUILD_NEW_WAR_TXET70,戰鬥記錄
+GUILD_NEW_WAR_TXET71,個人積分
+GUILD_NEW_WAR_TXET72,敵方勇氣
+GUILD_NEW_WAR_TXET73,清理場地
+GUILD_NEW_WAR_TXET74,我方
+GUILD_NEW_WAR_TXET75,Ennemi
