@@ -937,7 +937,7 @@ PASSWORD_INVALID,비밀번호를 입력해 주세요!
 END_TEXT,종료
 SKILL_UNLOCK,스킬 활성화
 ARENA_CHOOSE_WINDOW,토너먼트
-ARENA_3V3_HELP,"전투 규칙|1. 우선 3팀의 소녀를 편성합니다. 각 팀에는 소녀가 1명 이상 필요합니다. 자신의 방어 팀은 항상 조정할 수 있습니다.|2. 전투는 3전 중 2승제입니다. 먼저 2승을 한 플레이어의 승리입니다.| 3. 적 소녀를 모두 격파하면 전투 승리로 판정됩니다.|4. 토너먼트의 전투는 라운드 제한이 없습니다. 전투가 15라운드를 넘기면, 승패가 판정될 때까지 매 라운드마다 적과 아군의 공격력을 증가하고 받은 치료 효과를 감소한다.|5. 전투 후에는 포인트가 집계되고 플레이어의 포인트에 따라 순위가 결정됩니다.|6. 전투 이력으로 최근 10번의 전투 결과를 확인할 수 있습니다.||보상 규칙|시즌 종료시 랭킹에 따라 보상을 얻을 수 있습니다."
+ARENA_3V3_HELP,"전투 규칙|1. 우선 3팀의 소녀를 편성합니다. 각 팀에는 소녀가 1명 이상 필요합니다. 자신의 방어 팀은 항상 조정할 수 있습니다.|2. 전투는 3전 중 2승제입니다. 먼저 2승을 한 플레이어의 승리입니다.|3. 적 소녀를 모두 격파하면 전투 승리로 판정됩니다.|4. 토너먼트의 전투는 라운드 제한이 없습니다. 전투가 15라운드를 넘기면, 승패가 판정될 때까지 매 라운드마다 적과 아군의 공격력을 증가하고 받은 치료 효과를 감소합니다.|5. 전투 후에는 포인트가 집계되고 플레이어의 포인트에 따라 순위가 결정됩니다.|6. 전투 기록에서 최근 10번 전투의 다시보기를 확인할 수 있습니다.||보상 규칙|시즌 종료시 랭킹에 따라 보상을 얻을 수 있습니다."
 SET_DEF_FORMATION,팀 설정
 SAVE_DEF_FORMATION,라인업 저장
 ARENA3V3_BATTLE_FORMATION_WINDOW,전투
@@ -2566,7 +2566,7 @@ SUMMON_DROP_NAV1,우정 캡슐 뽑기
 SUMMON_DROP_NAV2,일반 캡슐 뽑기
 MAKE_COFFEE_TEXT17,모든 주문을 완성했습니다 .
 MAKE_COFFEE_TEXT18,시작
-ACTIVITY_PRAY_HELP,"1. 이벤트 기간 동안, 소원 연못에서 원하시는 소녀 5명을 선택할 수 있습니다(학부 제한 없음)|2. 임의 1개의 학부에서 '소원 코인' 1개를 사용하시면 대응하는 학부의 '소원 조각'을 획득할 수 있으며 일정 확률로 '무지개 조각'을 획득할 수 있습니다.|3. 진성, 수라 학부의 소원 연못에서 소원을 빌면 13%%의 확률로 2배의 보상과 '소원 조각'을 획득할 수 있으며 2%%의 확률로 3배 획득 가능합니다. 은신, 신위, 풍견, 담화 학부의 소원 연못에서 소원을 빌면 30%%의 확률로 2배의 보상과 '소원 조각'을 획득할 수 있으며 10%%의 확률로 3배 획득 가능합니다.|4. 일정 수량의 동일한 학부의 '소원 조각'을 수집한 후 합성하여 대응하는 학부의 소원 연못에서 랜덤으로 소녀 1명을 획득할 수 있습니다. 일정 수량의 '무지개 조각'을 수집하여 합성하면 6개 학부 중 임의의 학부에서 원하시는 소녀 1명을 획득하실 수 있습니다.|5. 대량으로 소원을 빌 시 '소원 조각'의 상한에 도달하면 자동으로 남은 소원 코인을 반환합니다. 일정 확률로 2배 또는 3배로 획득한 넘쳐난 '소원 조각'과 보상은 반환되지 않습니다.|6. 다이아 500개를 소모하여 선택한 소녀를 변경할 수 있습니다.|7. 소녀를 획득한 후 소녀를 다시 선택할 때까지 동일 소녀를 획득할 수 없습니다. 선택한 5명의 소녀를 모두 획득하면 무료로 다시 소녀를 선택할 수 있습니다.|8. 본 이벤트에서 획득한 소녀 수량에 따라 누적 보상을 획득할 수 있습니다.|9. '소원 코인'을 소모할 때마다 랜덤으로 아래 아이템 중 하나 획득 가능: 골드*200000, 경험치 드링크*200000, 도시락*200, 크리스탈 검*200, 꿈의 석판*1, 럭키 크리스탈*1, 에센스*10.|10. '소원 코인' 획득 방법: 일일 보상, 다이아로 구매(다이아를 사용하여 최대 200개 '소원 코인' 구매 가능), 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩, 소원성취 팩, 우주 화물선, 슬롯 머신 포인트, 럭키 보너스.|11. 이벤트 종료 후, 사용하지 않은 아이템은 개당 아래 내용으로 회수 진행되며 보상은 메일로 발송됩니다. 소원 조각: 골드*20000, 무지개 조각: 골드*30000, 소원 코인: 골드*25000."
+ACTIVITY_PRAY_HELP,"1. 이벤트 기간 동안, 소원 연못에서 원하시는 소녀 5명을 선택할 수 있습니다(학부 제한 없음)|2. 임의 1개의 학부에서 '소원 코인' 1개를 사용하시면 대응하는 학부의 '소원 조각'을 획득할 수 있으며 일정 확률로 '무지개 조각'을 획득할 수 있습니다.|3. 진성, 수라 학부의 소원 연못에서 소원을 빌면 13%%의 확률로 2배의 보상과 '소원 조각'을 획득할 수 있으며 2%%의 확률로 3배 획득 가능합니다. 은신, 신위, 풍견, 담화 학부의 소원 연못에서 소원을 빌면 30%%의 확률로 2배의 보상과 '소원 조각'을 획득할 수 있으며 10%%의 확률로 3배 획득 가능합니다.|4. 일정 수량의 동일한 학부의 '소원 조각'을 수집한 후 합성하여 대응하는 학부의 소원 연못에서 랜덤으로 소녀 1명을 획득할 수 있습니다. 일정 수량의 '무지개 조각'을 수집하여 합성하면 6개 학부 중 임의의 학부에서 원하시는 소녀 1명을 획득하실 수 있습니다.|5. 대량으로 소원을 빌 시 '소원 조각'의 상한에 도달하면 자동으로 남은 소원 코인을 반환합니다. 일정 확률로 2배 또는 3배로 획득한 넘쳐난 '소원 조각'과 보상은 반환되지 않습니다.|6. 다이아 500개를 소모하여 선택한 소녀를 변경할 수 있습니다.|7. 소녀를 획득한 후 소녀를 다시 선택할 때까지 동일 소녀를 획득할 수 없습니다. 선택한 5명의 소녀를 모두 획득하면 무료로 다시 소녀를 선택할 수 있습니다.|8. 본 이벤트에서 획득한 소녀 수량에 따라 누적 보상을 획득할 수 있습니다.|9. '소원 코인'을 소모할 때마다 랜덤으로 아래 아이템 중 하나 획득 가능: 골드*200000, 경험치 드링크*200000, 도시락*200, 크리스탈 검*200, 꿈의 석판*1, 럭키 크리스탈*1, 에센스*10.|10. '소원 코인' 획득 방법: 일일 보상, 다이아로 구매(다이아를 사용하여 최대 200개 '소원 코인' 구매 가능), 슈퍼 팩, 스페셜 스킨 팩, 스페셜 팩, 소원성취 팩, 슬롯 머신 포인트 럭키 보너스.|11. 이벤트 종료 후, 사용하지 않은 아이템은 개당 아래 내용으로 회수 진행되며 보상은 메일로 발송됩니다. 소원 조각: 골드*20000, 무지개 조각: 골드*30000, 소원 코인: 골드*25000."
 ACTIVITY_PRAY_GROUP1,은신 학부
 ACTIVITY_PRAY_GROUP2,신위 학부
 ACTIVITY_PRAY_GROUP3,풍견 학부
@@ -6944,7 +6944,7 @@ ACTIVITY_GOLDFISH_TEXT04,보너스 풀
 ACTIVITY_GOLDFISH_TEXT05,축하드립니다! {1} 선배님께서 금붕어 코인 {2}개 획득하셨습니다~
 ACTIVITY_GOLDFISH_PREVIEW_TEXT01,특별 금붕어
 ACTIVITY_GOLDFISH_PREVIEW_TEXT02,일반 금붕어
-ACTIVITY_GOLDFISH_SHOP_TEXT01,이벤트 마지막 날에 금붕어 코인 [c][ffa82b]{1}[-][/c]개가 가방으로 발송될 것입니다~
+ACTIVITY_GOLDFISH_SHOP_TEXT01,이벤트 마지막 날에 금붕어 코인[c][ffa82b]{1}[-][/c]개가 가방으로 발송될 것입니다~
 ACTIVITY_GOLDFISH_SHOP_TEXT02,기간 한정 보상이 선배님을 기다리고 있답니다~!
 ACTIVITY_GOLDFISH_SHOP_TEXT03,{1}단계
 ACTIVITY_GOLDFISH_SHOP_TEXT04,잡기 횟수：
@@ -7144,95 +7144,103 @@ GALAXY_TRIP_TIPS_25,성급 변화가 생긴 소녀가 있습니다. 저장 후 �
 GALAXY_TRIP_TIPS_26,저장 성공
 TIME_CLOISTER_TEXT118,시간 회랑 관측 한 번 완성하며 '은하 파편' 획득 후 해제 가능
 ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,크로스 서버 톱 리그 오픈까지：
-ACTIVITY_REPAIR_CONSOLE_TEXT01,遊戲機故障……快幫助助手醬收集電能塊，激活核心芯片還可領取豐厚獎勵（先不翻譯，待定）
-ACTIVITY_REPAIR_CONSOLE_TEXT02,每次可隨機為1~3個電能站充電
+ACTIVITY_REPAIR_CONSOLE_TEXT01,전자 회로의 노드를 활성화하여 푸짐한 보상 수령하세요!
+ACTIVITY_REPAIR_CONSOLE_TEXT02,매번 랜덤으로 노드 [c][fd6317]1-3[-][/c]개를 충전 가능합니다.
 ACTIVITY_REPAIR_CONSOLE_TEXT03,보상 미리 보기
-ACTIVITY_REPAIR_CONSOLE_TEXT04,充電
-ACTIVITY_REPAIR_CONSOLE_TEXT05,핵심 보상
+ACTIVITY_REPAIR_CONSOLE_TEXT04,충전
+ACTIVITY_REPAIR_CONSOLE_TEXT05,그랜드 보상
 ACTIVITY_REPAIR_CONSOLE_TEXT06,일반 보상
 ACTIVITY_REPAIR_CONSOLE_TEXT07,제{1}라운드
 ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}라운드 이후
-ACTIVITY_REPAIR_CONSOLE_HELP,幫助文本，待定
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. 이벤트 기간 동안 배터리를 사용해 전자 회로에 있는 노드를 충전할 수 있습니다. 배터리 1개 사용할 때마다 랜덤으로 노드 1-3개를 충전할 수 있습니다.|2. 가로줄 혹은 세로줄의 노드 5개가 모두 충전 완성 시 각줄 대응하는 일반 보상을 수령할 수 있습니다.|3. 특정 대각선줄의 노드 5개 모두 충전 완성 시 해당 라운드의 그랜드 보상을 획득할 수 있으며 다음 라운드로 넘어갑니다.|4. 보상 미리 보기 버튼을 클릭하여 일반 보상 및 그랜드 보상의 내용을 미리 확인할 수 있습니다.|5. 배터리는 배터리 충전 팩, 보니의 체크 리스트를 통해 획득 가능합니다."
 GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
-GUILD_NEW_WAR_TIPS01,休息期結束，即將進入備戰期
-GUILD_NEW_WAR_TIPS02,戰鬥期結束，即將進入休息期
-GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
-GUILD_NEW_WAR_TIPS04,當前挑戰次數不足
-GUILD_NEW_WAR_TIPS05,需要加入社團
-GUILD_NEW_WAR_TIPS06,社團等級需達到12級且成員達到5人
-GUILD_NEW_WAR_TIPS07,已達到最大值
-GUILD_NEW_WAR_TXET01,賽季
-GUILD_NEW_WAR_TXET02,下場對決開始：
-GUILD_NEW_WAR_TXET03,賽季排名
-GUILD_NEW_WAR_TXET04,對決記錄
-GUILD_NEW_WAR_TXET05,新賽季對決開始:
-GUILD_NEW_WAR_TXET06,對決{1}
-GUILD_NEW_WAR_TXET07,暫無對決記錄
-GUILD_NEW_WAR_TXET08,備戰期
-GUILD_NEW_WAR_TXET09,戰鬥期
-GUILD_NEW_WAR_TXET10,總戰力
-GUILD_NEW_WAR_TXET11,社長
-GUILD_NEW_WAR_TXET12,比賽積分
-GUILD_NEW_WAR_TXET13,獎勵
-GUILD_NEW_WAR_TXET14,對決勝利獎勵
-GUILD_NEW_WAR_TXET15,對決失敗獎勵
-GUILD_NEW_WAR_TXET16,進入場地
-GUILD_NEW_WAR_TXET17,駐守 {1}/{2}
-GUILD_NEW_WAR_TXET18,防守陣容
-GUILD_NEW_WAR_TXET19,戰報
-GUILD_NEW_WAR_TXET20,聊天
-GUILD_NEW_WAR_TXET21,獎勵
-GUILD_NEW_WAR_TXET22,集火
-GUILD_NEW_WAR_TXET23,每次拆除減少旗幟30點耐久
-GUILD_NEW_WAR_TXET24,{1}號旗幟
-GUILD_NEW_WAR_TXET25,耐久：{1}/{2}
-GUILD_NEW_WAR_TXET26,可以派遣防守成員
-GUILD_NEW_WAR_TXET27,調整
-GUILD_NEW_WAR_TXET28,防守社員
-GUILD_NEW_WAR_TXET29,空閒
-GUILD_NEW_WAR_TXET30,主壘
-GUILD_NEW_WAR_TXET31,中壘{1}
-GUILD_NEW_WAR_TXET32,前壘{1}
-GUILD_NEW_WAR_TXET33,旗幟
-GUILD_NEW_WAR_TXET34,戰力
-GUILD_NEW_WAR_TXET35,取消
-GUILD_NEW_WAR_TXET36,確定
-GUILD_NEW_WAR_TXET37,個人貢獻積分：{1}
-GUILD_NEW_WAR_TXET38,進攻次數：{1}/{2}
-GUILD_NEW_WAR_TXET39,賽季結束
-GUILD_NEW_WAR_TXET40,社團排名
-GUILD_NEW_WAR_TXET41,個人排名
-GUILD_NEW_WAR_TXET42,獎勵
-GUILD_NEW_WAR_TXET43,社團獎勵
-GUILD_NEW_WAR_TXET44,個人獎勵
-GUILD_NEW_WAR_TXET45,賽季結算獎勵：
-GUILD_NEW_WAR_TXET46,對決結算獎勵：
-GUILD_NEW_WAR_TXET47,--
-GUILD_NEW_WAR_TXET48,對戰資訊
-GUILD_NEW_WAR_TXET49,可以拖動或點擊進行調整
-GUILD_NEW_WAR_TXET50,挑戰
-GUILD_NEW_WAR_TXET51,旗幟資訊
-GUILD_NEW_WAR_TXET52,每次攻擊扣除20點耐久
-GUILD_NEW_WAR_TXET53,進攻獎勵
-GUILD_NEW_WAR_TXET54,進攻
-GUILD_NEW_WAR_TXET55,個人貢獻積分 +{1}
-GUILD_NEW_WAR_TXET56,獎勵
-GUILD_NEW_WAR_TXET57,敵方防守成員勇氣 -{1}
-GUILD_NEW_WAR_TXET58,第{1}場對決
-GUILD_NEW_WAR_TXET59,個人積分社團排名
-GUILD_NEW_WAR_TXET60,個人積分
-GUILD_NEW_WAR_TXET61,社團積分 +{1}
-GUILD_NEW_WAR_TXET62,獎勵通過郵件發放
-GUILD_NEW_WAR_TXET63,{玩家某某}進攻了敵方{左前壘}的{8}號旗幟，消耗了敵人{100}點勇氣
-GUILD_NEW_WAR_TXET64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
-GUILD_NEW_WAR_TXET65,{1}摧毀了敵方{2}
-GUILD_NEW_WAR_TXET66,結束
-GUILD_NEW_WAR_TXET67,對戰{1}
-GUILD_NEW_WAR_TXET68,挑戰次數：{1}
-GUILD_NEW_WAR_TXET69,戰鬥中...
-GUILD_NEW_WAR_TXET70,戰鬥記錄
-GUILD_NEW_WAR_TXET71,個人積分
-GUILD_NEW_WAR_TXET72,敵方勇氣
-GUILD_NEW_WAR_TXET73,清理場地
-GUILD_NEW_WAR_TXET74,我方
-GUILD_NEW_WAR_TXET75,敵方
+GUILD_NEW_WAR_TIPS01,휴식 기간 종료. 전투 준비 기간이 곧 시작.
+GUILD_NEW_WAR_TIPS02,전투 기간 종료. 휴식 기간이 곧 시작.
+GUILD_NEW_WAR_TIPS03,동아리 회장 및 부회장만 가능
+GUILD_NEW_WAR_TIPS04,현재 도전 횟수 부족
+GUILD_NEW_WAR_TIPS05,먼저 동아리 가입하셔야 합니다.
+GUILD_NEW_WAR_TIPS06,동아리 레렙 Lv.12 달성 및 동아리원 최소 5인 필요.
+GUILD_NEW_WAR_TIPS07,MAX 도달
+GUILD_NEW_WAR_TEXT01,시즌
+GUILD_NEW_WAR_TEXT02,下場對決開始：
+GUILD_NEW_WAR_TEXT03,시즌 순위
+GUILD_NEW_WAR_TEXT04,對決記錄
+GUILD_NEW_WAR_TEXT05,新賽季對決開始:
+GUILD_NEW_WAR_TEXT06,對決{1}
+GUILD_NEW_WAR_TEXT07,暫無對決記錄
+GUILD_NEW_WAR_TEXT08,備戰期
+GUILD_NEW_WAR_TEXT09,戰鬥期
+GUILD_NEW_WAR_TEXT10,總戰力
+GUILD_NEW_WAR_TEXT11,社長
+GUILD_NEW_WAR_TEXT12,比賽積分
+GUILD_NEW_WAR_TEXT13,獎勵
+GUILD_NEW_WAR_TEXT14,對決勝利獎勵
+GUILD_NEW_WAR_TEXT15,對決失敗獎勵
+GUILD_NEW_WAR_TEXT16,進入場地
+GUILD_NEW_WAR_TEXT17,駐守 {1}/{2}
+GUILD_NEW_WAR_TEXT18,防守陣容
+GUILD_NEW_WAR_TEXT19,戰報
+GUILD_NEW_WAR_TEXT20,聊天
+GUILD_NEW_WAR_TEXT21,獎勵
+GUILD_NEW_WAR_TEXT22,集火
+GUILD_NEW_WAR_TEXT23,每次拆除減少旗幟30點耐久
+GUILD_NEW_WAR_TEXT24,{1}號旗幟
+GUILD_NEW_WAR_TEXT25,耐久：{1}/{2}
+GUILD_NEW_WAR_TEXT26,可以派遣防守成員
+GUILD_NEW_WAR_TEXT27,調整
+GUILD_NEW_WAR_TEXT28,防守社員
+GUILD_NEW_WAR_TEXT29,空閒
+GUILD_NEW_WAR_TEXT30,主壘
+GUILD_NEW_WAR_TEXT31,中壘{1}
+GUILD_NEW_WAR_TEXT32,前壘{1}
+GUILD_NEW_WAR_TEXT33,旗幟
+GUILD_NEW_WAR_TEXT34,戰力
+GUILD_NEW_WAR_TEXT35,取消
+GUILD_NEW_WAR_TEXT36,確定
+GUILD_NEW_WAR_TEXT37,個人貢獻：{1}
+GUILD_NEW_WAR_TEXT38,進攻次數：{1}/{2}
+GUILD_NEW_WAR_TEXT39,賽季結束
+GUILD_NEW_WAR_TEXT40,社團排名
+GUILD_NEW_WAR_TEXT41,個人排名
+GUILD_NEW_WAR_TEXT42,獎勵
+GUILD_NEW_WAR_TEXT43,社團獎勵
+GUILD_NEW_WAR_TEXT44,個人獎勵
+GUILD_NEW_WAR_TEXT45,賽季結算獎勵：
+GUILD_NEW_WAR_TEXT46,對決結算獎勵：
+GUILD_NEW_WAR_TEXT47,--
+GUILD_NEW_WAR_TEXT48,對戰資訊
+GUILD_NEW_WAR_TEXT49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TEXT50,挑戰
+GUILD_NEW_WAR_TEXT51,旗幟資訊
+GUILD_NEW_WAR_TEXT52,每次攻擊扣除20點耐久
+GUILD_NEW_WAR_TEXT53,進攻獎勵
+GUILD_NEW_WAR_TEXT54,進攻
+GUILD_NEW_WAR_TEXT55,個人貢獻 +{1}
+GUILD_NEW_WAR_TEXT56,獎勵
+GUILD_NEW_WAR_TEXT57,敵方防守成員精力 -{1}
+GUILD_NEW_WAR_TEXT58,第{1}場對決
+GUILD_NEW_WAR_TEXT59,個人貢獻社團排名
+GUILD_NEW_WAR_TEXT60,個人貢獻
+GUILD_NEW_WAR_TEXT61,社團積分 +{1}
+GUILD_NEW_WAR_TEXT62,獎勵透過信件發放
+GUILD_NEW_WAR_TEXT63,{1}進攻了敵方{2}的{3}號旗幟，消耗了敵人{4}點精力
+GUILD_NEW_WAR_TEXT64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
+GUILD_NEW_WAR_TEXT65,{1}摧毀了敵方{2}
+GUILD_NEW_WAR_TEXT66,結束
+GUILD_NEW_WAR_TEXT67,對戰{1}
+GUILD_NEW_WAR_TEXT68,挑戰次數：{1}
+GUILD_NEW_WAR_TEXT69,戰鬥中...
+GUILD_NEW_WAR_TEXT70,戰鬥記錄
+GUILD_NEW_WAR_TEXT71,個人貢獻
+GUILD_NEW_WAR_TEXT72,敵方精力
+GUILD_NEW_WAR_TEXT73,清理場地
+GUILD_NEW_WAR_TEXT74,我方
+GUILD_NEW_WAR_TEXT75,敵方
+ACTIVITY_LAFULI_RUDDER_TITLE,러블리의 도전
+ACTIVITY_LAFULI_RUDDER_TEXT,배 키 {1}개 사용(조종 키 제외)
+GUILD_NEW_WAR_TEXT76,當前排名
+GUILD_NEW_WAR_TEXT77,當前排名獎勵
+ACTIVITY_REPAIR_CONSOLE_TEXT09,본 라운드의 그랜드 보상을 이미 수령하셨습니다. 일부 일반 보상은 아직 해제 안 하며 미수령 상태입니다. 다음 라운드로 넘어가겠습니까?
+ACTIVITY_REPAIR_CONSOLE_TEXT10,이번 라운드 다시하기
+ACTIVITY_REPAIR_CONSOLE_TEXT11,다음 라운드
+QUICK_FORMATION_TEXT25,팀 저장

@@ -95,7 +95,11 @@ function BattleAllBuffsWindowItem:getIcon(data, parentGo)
 	local icon = nil
 	local tableId = data.tableID_
 	local lev = data.level
-	local partnerInfo = nil
+	local partnerInfo, star_origin = nil
+
+	if data.heroData and data.heroData.star_origin then
+		star_origin = data.heroData.star_origin
+	end
 
 	if data.isMonster then
 		lev = xyd.tables.monsterTable:getShowLev(tableId)
@@ -115,6 +119,7 @@ function BattleAllBuffsWindowItem:getIcon(data, parentGo)
 			table_id = tableId,
 			lev = lev,
 			awake = data.awake,
+			star_origin = star_origin,
 			show_skin = data.isShowSkin_,
 			equips = {
 				0,

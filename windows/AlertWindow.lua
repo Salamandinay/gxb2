@@ -3,7 +3,7 @@ local ALERT_WINDOW_NAME = "alert_window"
 local ALERT_TIPS_WINDOW_NAME = "alert_tips_window"
 local costComponent = import("app.components.BaseCost")
 
-function xyd.alert(alertType, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+function xyd.alert(alertType, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime, cancelText)
 	local params = {
 		alertType = alertType,
 		message = message,
@@ -16,7 +16,8 @@ function xyd.alert(alertType, message, callback, confirmText, noClose, cost, tit
 		tipsInitY_ = tipsInitY_,
 		tipsHeightOffset = tipsHeightOffset,
 		fontSize = fontSize,
-		freezeTime = freezeTime
+		freezeTime = freezeTime,
+		cancelText = cancelText
 	}
 
 	if alertType == xyd.AlertType.TIPS then
@@ -34,15 +35,15 @@ function xyd.alert(alertType, message, callback, confirmText, noClose, cost, tit
 	end
 end
 
-function xyd.alertTips(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+function xyd.alertTips(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime, cancelText)
 	return xyd.alert(xyd.AlertType.TIPS, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
-function xyd.alertYesNo(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+function xyd.alertYesNo(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime, cancelText)
 	return xyd.alert(xyd.AlertType.YES_NO, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
-function xyd.alertConfirm(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
+function xyd.alertConfirm(message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime, cancelText)
 	return xyd.alert(xyd.AlertType.CONFIRM, message, callback, confirmText, noClose, cost, title, tipsInitY_, closeCallback, tipsHeightOffset, fontSize, freezeTime)
 end
 
@@ -63,6 +64,7 @@ function AlertWindow:ctor(name, params)
 	self.callback = params.callback
 	self.noClose = params.noClose
 	self.confirmText = params.confirmText or __("YES")
+	self.cancelText = params.cancelText or __("NO")
 	self.cost_ = params.cost or {}
 	self.titleText = params.title
 	self.tipsInitY_ = params.tipsInitY_
@@ -287,7 +289,7 @@ function AlertWindow:setupButtons()
 		self.closeBtn:SetActive(false)
 
 		local label2 = self.btnCancel_:ComponentByName("button_label", typeof(UILabel))
-		label2.text = __("NO")
+		label2.text = self.cancelText
 		self.cancelBtnUILabel = label2
 		costBtn = self.btnSure_
 	end

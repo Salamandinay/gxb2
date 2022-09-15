@@ -672,6 +672,12 @@ function MailContent.Json2Table(jsonName)
 		end,
 		activity_dragonboat2022_text = function ()
 			table = xyd.tables.activityDragonboat2022TextTable
+		end,
+		activity_lafuli_rudder = function ()
+			table = xyd.tables.activityLafuliRudderTable
+		end,
+		activity_repair_console_mission_text = function ()
+			table = xyd.tables.activityRepairConsoleMissionTextTable
 		end
 	}
 

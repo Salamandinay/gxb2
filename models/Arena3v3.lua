@@ -39,6 +39,7 @@ function Arena3v3:onRegister()
 			self:reqArenaInfo()
 		end
 	end, self)
+	self:registerEvent(xyd.event.GET_ARENA_3V3_NEW_RANK_LIST, handler(self, self.onGetArena3v3NewRankListBack))
 end
 
 function Arena3v3:updateRedMark()
@@ -68,6 +69,7 @@ end
 function Arena3v3:onGetArenaInfo(event)
 	local data = xyd.decodeProtoBuf(event.data)
 
+	dump(data, "3v3=====================================================")
 	self:updateLock(data.teams)
 	self:updateFormation(data.teams)
 	self:updateRank(data.rank)
@@ -80,6 +82,18 @@ function Arena3v3:onGetArenaInfo(event)
 	self.startTime = data.start_time or 0
 	self.freeTimes = data.free_times
 	self.power = data.power
+
+	if data.is_old then
+		self.is_old = data.is_old
+	end
+
+	if data.is_last then
+		self.is_last = data.is_last
+	end
+
+	if data.slave_ids then
+		self.slave_ids = data.slave_ids
+	end
 
 	self:updateRedMark()
 end
@@ -153,6 +167,18 @@ end
 
 function Arena3v3:getStartTime()
 	return self.startTime or 0
+end
+
+function Arena3v3:getIsLast()
+	return self.is_last
+end
+
+function Arena3v3:getIsOld()
+	return self.is_old
+end
+
+function Arena3v3:getSlaveIds()
+	return self.slave_ids
 end
 
 function Arena3v3:getFreeTimes()
@@ -303,7 +329,7 @@ function Arena3v3:getEnemyList()
 	return xyd.slice(self.enemyList, 1, 3)
 end
 
-function Arena3v3:fight(enemyID, partners, petIDs, is_revenge)
+function Arena3v3:fight(enemyID, partners, petIDs, is_revenge, is_revenge_index)
 	local msg = messages_pb:arena_3v3_fight_req()
 
 	if petIDs == nil then
@@ -339,6 +365,10 @@ function Arena3v3:fight(enemyID, partners, petIDs, is_revenge)
 
 	msg.enemy_id = enemyID
 	msg.is_revenge = is_revenge
+
+	if is_revenge_index then
+		msg.index = is_revenge_index
+	end
 
 	xyd.Backend.get():request(xyd.mid.ARENA_3v3_FIGHT, msg)
 end
@@ -415,6 +445,27 @@ end
 
 function Arena3v3:isSkipReport()
 	return self.skipReport
+end
+
+function Arena3v3:getArena3v3NewRankList()
+	local msg = messages_pb:get_arena_3v3_new_rank_list_req()
+
+	xyd.Backend.get():request(xyd.mid.GET_ARENA_3V3_NEW_RANK_LIST, msg)
+end
+
+function Arena3v3:onGetArena3v3NewRankListBack(event)
+	local arenaNewSeasonServerRankWd = xyd.WindowManager.get():getWindow("arena_new_season_server_rank_window")
+
+	if not arenaNewSeasonServerRankWd then
+		local player_infos = xyd.decodeProtoBuf(event.data).player_infos
+		player_infos = player_infos or {}
+
+		xyd.WindowManager.get():openWindow("arena_new_season_server_rank_window", {
+			type = "arena3v3",
+			infos = player_infos,
+			slaveIds = self:getSlaveIds()
+		})
+	end
 end
 
 return Arena3v3

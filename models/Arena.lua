@@ -368,15 +368,10 @@ function Arena:onGetArenaNewRankListBack(event)
 
 	if not arenaNewSeasonServerRankWd then
 		xyd.WindowManager.get():openWindow("arena_new_season_server_rank_window", {
-			infos = xyd.decodeProtoBuf(event.data).player_infos
+			infos = xyd.decodeProtoBuf(event.data).player_infos,
+			slaveIds = self:getSlaveIds()
 		})
 	end
-end
-
-function Arena:getArenaNewRankList()
-	local msg = messages_pb:get_arena_new_rank_list_req()
-
-	xyd.Backend.get():request(xyd.mid.GET_ARENA_NEW_RANK_LIST, msg)
 end
 
 function Arena:getIsLast()

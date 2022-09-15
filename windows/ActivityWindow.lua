@@ -1784,6 +1784,15 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_FOOD_CONSUME] = function ()
 		return require("app.windows.activity.ActivityFoodConsume")
+	end,
+	[xyd.ActivityID.ACTIVITY_REPAIR_CONSOLE] = function ()
+		return require("app.windows.activity.ActivityRepairConsole")
+	end,
+	[xyd.ActivityID.ACTIVITY_REPAIR_GIFTBAG] = function ()
+		return require("app.windows.activity.ActivityRepairGiftBag")
+	end,
+	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = function ()
+		return require("app.windows.activity.ActivityRepairMission")
 	end
 }
 

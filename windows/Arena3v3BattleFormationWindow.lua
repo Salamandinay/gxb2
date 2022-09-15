@@ -749,7 +749,7 @@ function Arena3v3BattleFormationWindow:arena3v3Battle(params)
 		xyd.models.arena3v3.hasCheck = true
 	end
 
-	xyd.models.arena3v3:fight(self.params_.enemy_id, params, self.pets, self.params_.is_revenge)
+	xyd.models.arena3v3:fight(self.params_.enemy_id, params, self.pets, self.params_.is_revenge, self.params_.index)
 end
 
 function Arena3v3BattleFormationWindow:arena3v3BattleDef(params)

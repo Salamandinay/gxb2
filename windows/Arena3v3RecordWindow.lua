@@ -62,6 +62,16 @@ function Arena3v3RecordItem:setState(state)
 			self.fight:SetActive(false)
 		end
 	end
+
+	if self.fight.gameObject.activeSelf and state == "lose" then
+		local can_revenge_times = xyd.tables.miscTable:getNumber("top_arena_revenge", "value")
+
+		if self.params.challenge and can_revenge_times <= self.params.challenge then
+			self.fight:SetActive(false)
+		else
+			self.fight:SetActive(true)
+		end
+	end
 end
 
 function Arena3v3RecordItem:setInfo(params)
@@ -213,6 +223,7 @@ function Arena3v3RecordItem:onclickFight()
 			xyd.WindowManager.get():openWindow("arena_3v3_battle_formation_window", {
 				showSkip = true,
 				is_revenge = 1,
+				index = self.params.index,
 				battleType = xyd.BattleType.ARENA_3v3,
 				formation = xyd.models.arena3v3:getDefFormation(),
 				mapType = xyd.MapType.ARENA_3v3,
@@ -341,6 +352,7 @@ function Arena3v3RecordWindow:onGetData(event)
 
 		for i = 1, #records do
 			records[i].isClose = isClose
+			records[i].index = i
 		end
 	end
 

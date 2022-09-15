@@ -157,9 +157,15 @@ function CommonRankWithAwardWindow:setCountDown()
 		effect:play("texiao1", 0)
 	end)
 
-	self.labelRefreshTime_ = CountDown.new(self.labelTimeLeft_, {
-		duration = self.durationTime
-	})
+	if self.durationTime and self.durationTime > 0 then
+		self.countDown = CountDown.new(self.labelTimeLeft_, {
+			duration = self.durationTime
+		})
+	else
+		self.labelAward2_:SetActive(false)
+		self.effectGroup_:SetActive(false)
+		self.labelTimeLeft_:SetActive(false)
+	end
 end
 
 function CommonRankWithAwardWindow:initNav()

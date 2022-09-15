@@ -458,9 +458,9 @@ RECORD,Rapport
 DEFFORMATION,Défense
 DAILY_AWARD,Quotidienne
 SEASON_AWARD,Saisonnière
-NOW_RANK,Classement Actuel
+NOW_RANK,Classement
 TOP_RANK,Meilleur Classement
-NOW_AWARD,Récompense Actuelle :
+NOW_AWARD,Récompense :
 ARENA_RANK_DESC1,Envoyées tous les jours à 21h (GMT 0)
 ARENA_RANK_DESC2,Les récompenses seront envoyées par courrier
 BATTLE_RECORD,Historique
@@ -1816,7 +1816,7 @@ DAILY_QUIZ_DESC,Touchez ici pour défier un niveau supérieur et obtenir plus de
 DAILY_QUIZ_FIGHT_FIRST,Veuillez cliquer sur l'image à gauche pour changer le niveau du Quiz
 SENIOR_SCROLL_IF_BUY,プレミアムガチャコインが足りません、購入しますか？
 TOWER_LEVEL,Étape {1}
-MAKE_CAKE_HELP,"1. Utilisez {1} afin d'échanger des récompenses dans l’interface de l’événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l’interface de l’événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Vous ne pourrez échanger les récompenses qu'au 15ème jour.|5. Moyen d'obtention de {1}：Butin de la Bataille Automatique, achat de Pack de Grande Valeur, de Pack Surprise et de Pack Surprise de Skin, événement de Capsules de Nouvelle Fille (du 10/06 au 16/06) et Examen d'admission (du 17/06 au 23/06). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en pièces d'or, 1 {1} contre 20k, et distribuées par courrier."
+MAKE_CAKE_HELP,"1. Utilisez {1} afin d'échanger des récompenses dans l'interface de l'événement.|2. Il y a en tout 5 récompenses différentes. La première est obtenue par défaut. La suivante doit être débloquée en échangeant un des objets de la récompense précédente.|3. Chaque fois que vous échangez des objets vous pourrez obtenir des récompenses supplémentaires. Les récompenses supplémentaires sont différentes et visibles depuis l'interface de l'événement.|4. L'interface d'échange sera ouvert pendant 15 jours. Vous ne pourrez échanger les récompenses qu'au 15ème jour.|5. Moyen d'obtention de {1}：Butin de la Bataille Automatique, achat de Pack de Grande Valeur, de Pack Surprise et de Pack Surprise de Skin, événement de Capsules de Nouvelle Fille (du 10/06 au 16/06) et Examen d'admission (du 17/06 au 23/06). |6. Après l'événement, les {1} inutilisé(e)s seront automatiquement converti(e)s en pièces d'or, 1 {1} contre 20k, et distribuées par courrier."
 MAKE_CAKE_ITEM_TEXT1,1er
 MAKE_CAKE_ITEM_TEXT2,2ème
 MAKE_CAKE_ITEM_TEXT3,3ème
@@ -2158,7 +2158,7 @@ FRIEND_TEAM_BOSS_AWARD_WINDOW,Récompense
 FRIEND_TEAM_BOSS_RELEGATION_AWARD,Récompense de\nProtection
 FRIEND_TEAM_BOSS_Up_AWARD,Récompense de\nPromotion
 FRIEND_TEAM_BOSS_DOWN_AWARD,Récompense de\nRétrogradation
-FRIEND_TEAM_BOSS_KILL_AWARD,Récompense Actuelle：
+FRIEND_TEAM_BOSS_KILL_AWARD,Récompense：
 FRIEND_TEAM_BOSS,Équipe
 FRIEND_TEAM_BOSS_NAME1,Seigneur du Chaos
 FRIEND_TEAM_BOSS_NAME2,Chevalier Noir
@@ -2617,7 +2617,7 @@ SUMMON_DROP_NAV1,Capsule d'Amitié
 SUMMON_DROP_NAV2,Capsule Normale
 MAKE_COFFEE_TEXT17,Vous avez terminé toutes les commandes
 MAKE_COFFEE_TEXT18,Commencer
-ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 1 Pièce à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Fragments de la Maison et vous aurez également une certaine chance d'obtenir des Fragments Chanceux.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 13%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 30%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 10%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante.|4. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Lorsque vous faites plusieurs vœux à la fois et obtenez 200 Fragments de la Maison correspondante, alors le surplus de Pièce à vœux vous sera retourné. Cependant, en raison des récompenses doublées et triplées, si vous avez obtenu plus de 200 Fragments d'une même Maison, alors le surplus de Fragments ne vous sera pas retourné.|6. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|7. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|8. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|9. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination, 10 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes (200 Pièces à vœux au maximum), Courrier Quoitidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack à Souhait, Pack de l'Espace, Distribution Chanceuse et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
+ACTIVITY_PRAY_HELP,"1. Durant cet événement, obtenez les Filles que vous souhaitez grâce à la Fontaine à vœux ! Sélectionnez une Maison, puis choisissez 5 Filles de la liste de cette Maison afin de les ajouter à votre Fontaine à vœux.|2. Utilisez 1 Pièce à vœux pour faire un vœu. Après avoir fait un vœu, la Fontaine à vœux vous donnera des Fragments de la Maison et vous aurez également une certaine chance d'obtenir des Fragments Chanceux.|3. Lorsque vous faites un vœu dans la Fontaine Ange ou Démon, vous avez 13%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 2%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante. Lorsque vous faites un vœu dans la Fontaine Fantôme, Monstre, Humain ou Fée, vous avez 30%% de chance d'obtenir des récompenses doublées et des Fragments de la Maison correspondante, et 10%% de chance d'obtenir des récompenses triplées et des Fragments de la Maison correspondante.|4. Collectez le nombre de Fragments de Maison nécessaire afin de pouvoir invoquer aléatoirement une Fille de la liste choisie au préalable. Après avoir collecté le nombre de Fragments Chanceux nécessaire, choisissez une Fille parmi une liste de Filles (toutes Maisons confondues) à invoquer.|5. Lorsque vous faites plusieurs vœux à la fois et obtenez 200 Fragments de la Maison correspondante, alors le surplus de Pièce à vœux vous sera retourné. Cependant, en raison des récompenses doublées et triplées, si vous avez obtenu plus de 200 Fragments d'une même Maison, alors le surplus de Fragments ne vous sera pas retourné.|6. Si vous souhaitez modifier votre liste de Filles à vœux, vous devrez dépenser 500 Gemmes.|7. Après avoir obtenu une Fille de la Fontaine à vœux, vous n'obtiendrez pas de doublon à moins de modifier votre liste de Filles à vœux disponibles. Lorsque toutes les Filles de votre liste ont été obtenues, vous pourrez à nouveau choisir vos Filles à vœux.|8. Vous obtiendrez des récompenses supplémentaires en fonction du nombre de Filles à vœux obtenues tout au long de l'événement.|9. Pour chaque Pièce à vœux utilisée, vous obtiendrez aléatoirement une des récompenses suivantes : 200k Pièces d'Or, 200k Jus d'EXP, 200 Plateaux Repas, 200 Ciseaux de Cristal, 1 Gravure de Rune, 1 Cristal de Divination, 10 Essences.|10. Vous pouvez obtenir des Pièces à vœux grâce aux procédés suivants : Acheter avec des Gemmes (200 Pièces à vœux au maximum), Courrier Quoitidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Pack à Souhait, Distribution Chanceuse et Bonus de Distributeur.|11. Après la fin de cet événement, les Fragments de Maison et les Fragments Chanceux non-utilisés seront automatiquement convertis en Pièces d'Or, respectivement 20k et 30k. Les Pièces à vœux non-utilisées seront automatiquement converties en Pièce d'Or, 25k chacune."
 ACTIVITY_PRAY_GROUP1,Maison Fantôme
 ACTIVITY_PRAY_GROUP2,Maison Humain
 ACTIVITY_PRAY_GROUP3,Maison Monstre
@@ -3481,7 +3481,7 @@ SETTLEMENT_AWARD,Total de récompenses
 TOP_SCORE,Record :
 PUT_OUT_AWARD_ACCORDING_TO_SCORE,Vous recevrez des récompenses différentes en fonction du total de vos points
 NOW_SCORE,Points actuels：
-NOW_AWARD_ACCORDING_TO_SCORE,Récompense Actuelle :
+NOW_AWARD_ACCORDING_TO_SCORE,Récompense：
 ACADEMY_ASSESSMENT_FIRST_PASS_AWARD,1ère Récompense : 
 ACTIVITY_RED_RIDING_HOOD_HELP,"1. Vous pouvez choisir un des paliers différents de l'événement Panier du Chaperon Rouge et l'acheter.|2. Vous pouvez obtenir les objets que vous avez choisi une fois par jour pendant sept jours après l'achat. |3. Après l'achat, vous obtiendrez immédiatement les Récompenses Quotidiennes correspondant au jour de l'événement.|4. Les récompenses vous seront envoyées par courrier."
 ACTIVITY_RED_RIDING_HOOD_TIP,"Achat effectué, veuillez vérifier votre Courrier"
@@ -4256,7 +4256,7 @@ GUILD_ROAM_TEXT11,Tous les membres obtiendrons：
 GUILD_ROAM_HELP,"1. Si votre Guilde a atteint le niveau 4, la Marchande Ambulante y passera tous les lundi, mercredi, vendredi et samedi, elle y restera de 00:00 à 00:00 (GMT 0) jusqu'au lendemain.|2. Achetez le Colis de Guilde ou le Colis du Membre, et chaque membre de la Guilde recevra un cadeau.|3. L'achat de Colis de Guilde est limité par membre ainsi que le total d'achat de Pack. Premier arrivé, premier servi.|4. Chaque fois que la Marchande Ambulante repassera à la Guilde, les limites d'achat seront réinitialisées.|5. Plus le niveau de votre Guilde est élevé, plus vos récompenses seront importantes !|6. Les nouveaux membres de la Guilde ne peuvent ni acheter de Colis, ni recevoir les cadeaux des Colis. |7. Les nouveaux membres peuvent recevoir des récompenses par courrier de la part d'autres membres qui achètent les Colis de la Marchande Ambulante après avoir rejoint le club. |8. Pendant la période où la Marchande Ambulante arrive, les contenus des Colis ne seront pas actualisés jusqu'à ce que la prochaine Marchande apparaisse."
 GUILD_ROAM_TEXT12,Marchande Ambulante
 GUILD_WINDOW_HELP_U3,"1. La Guilde commence au niveau 1. Vous pouvez augmenter le niveau de la Guilde en obtenant de l'EXP de Guilde en cliquant sur le bonus de connexion de l'office dans la Guilde. Le gain d'EXP de la Guilde ne peut pas dépasser la limite de capacité de membres de la Guilde.|2. La limite de base de membres de la Guilde est de 15 membres. Vous pouvez augmenter cette limite en augmentant le niveau de la Guilde jusqu'à ce que la Guilde puisse avoir 30 membres.|3. Les Seconds ont les pouvoirs suivants：Changer le nom de la Guilde, les informations de la Guilde, le logo de la Guilde, envoyer des messages à tous les membres, s'occuper des inscriptions des joueurs et exclure les membres.|4. Le Chef de la Guilde a les mêmes pouvoir que les Seconds mais ils peuvent également ajouter ou enlever un Second, exclure des Seconds de la Guilde, et dissoudre la Guilde.|5. Vous ne pouvez nommer que 3 Seconds.|6. Si le Chef ne s'est pas connecté pendant 7 jours, le système transmettra le poste au Seconde; Si le Seconde ne s'est pas connecté pendant 7 jours, le système transmettra le poste au joueur ayant le plus haut niveau s'étant connecté dans les 7 derniers jours.| 7. Les Pièces de Guilde seront préservées si vous quittez la Guilde.| 8. Lorsque votre Guilde aura atteint le niveau 4, une Marchande Ambulante passera tous les lundi, mercredi, vendredi et samedi pour vous vendre des Packs Limité - Offres de Guilde."
-GUILD_LAB_WINDOW_HELP_U3,"1. Améliorez les capacités dans le Laboratoire afin d'augmenter les attributs de vos Filles.|2. Les améliorations du Laboratoire n'auront effet que sur vos Filles à vous. Les capacités améliorées seront gardées, si vous changez de Guilde.|3. La 2ème page d'amélioration des capacités sera débloquée une fois que vous aurez amélioré l'intégralité de la 1ère page.|4. Les capacités peuvent être réinitialisées en utilisant des Gemmes (La 1ère réinitialisation sera gratuite), toutes les ressources utilisées vous seront rendues.|5. La réinitialisation s'effectuera uniquement pour la page sur laquelle vous êtes, autrement dit la réinitialisation de la 1ère page se fera pas automatiquement en réinitialisant la 2ème page."
+GUILD_LAB_WINDOW_HELP_U3,"1. Améliorez les capacités dans le Laboratoire afin d'augmenter les attributs de vos Filles.|2. Les améliorations du Laboratoire n'auront effet que sur vos Filles à vous. Les capacités améliorées seront gardées, si vous changez de Guilde.|3. La 2ème page d'amélioration des capacités sera débloquée une fois que vous aurez amélioré l'intégralité de la 1ère page.|4. Les capacités peuvent être réinitialisées en utilisant des Gemmes (la 1ère réinitialisation sera gratuite), toutes les ressources utilisées vous seront rendues.|5. La réinitialisation s'effectuera uniquement pour la page sur laquelle vous êtes, autrement dit la réinitialisation de la 1ère page se fera pas automatiquement en réinitialisant la 2ème page."
 TRAVEL_EXPLORE_HELP_U3,"1. Utilisez Pain Délicieux*10 pour participer à l'Aventure de l'Excursion Scolaire où vous rencontrerez des événements aléatoires.|2. Le Pain Délicieux peut être produit dans la Boulangerie ou vous pouvez directement en acheter.|3. Les différents événements aléatoires dans l'Aventure sont : Ennemi d'Aventure, Coffre Sauvage, Vagabonde, Boulangerie et Marché.|Ennemi d'Aventure : un combat se déclenche et vous devez éliminer les ennemis pour obtenir des Coffres. Vous rencontrerez des ennemis élites après chaque cycle de 5 victoires. En vous débarrassant des ennemis élites, vous obtiendrez des Coffres de meilleure qualité.|Coffre Sauvage : vous obtiendrez directement un Coffre.|Vagabonde : vous obtiendrez une tâche à compléter. En la complétant vous obtiendrez un Coffre.|Boulangerie : vous obtiendrez une quantité de Pains Délicieux.|Marché : vous pourrez y dépenser de l'Or pour obtenir des Coffres de meilleure qualité.|4. Les Coffres que vous obtenez seront déverrouillables après un certain temps mais vous pourrez utiliser des Gemmes pour les déverrouiller instantanément pour obtenir les récompenses qu'ils contiennent.|5. Si vos emplacements de Coffres sont pleins, vous ne pourrez plus en obtenir.|6. Améliorez votre niveau d'Aventure pour améliorer la qualité des Coffres obtenus et obtenir plus d'emplacements de Coffres, mais attention, le niveau de difficulté des ennemis augmentera également.|7. Une fois que votre Aventure aura atteint le niveau 3, le mode -Aventure Auto sera débloqué et vous pourrez activer la fonction passer la Bataille lorsqu'un ennemi vous provoque."
 GUILD_BOSS_CANT_FIGHT,Vous ne pouvez plus défier ce BOSS car vous en avez déjà défié un autre aujourd'hui.
 GUILD_COMPETITION_SIMULATE_DAMAGE,Dégâts de Bataille Démo：
@@ -4341,7 +4341,7 @@ FAIR_ARENA_AWARDS,Récompenses
 FAIR_ARENA_AWARDS_RANK,Classement
 FAIR_ARENA_AWARDS_LEVEL,Coffre
 FAIR_ARENA_RANK_NOW,Classement：
-FAIR_ARENA_AWARDS_LEVEL_NOW,Récompense Actuelle：
+FAIR_ARENA_AWARDS_LEVEL_NOW,Récompense：
 FAIR_ARENA_DESC_AWARDS,Les récompenses seront envoyées après la fin d'événement
 FAIR_ARENA_RANK_HISTORY_MAX,Meilleur Classement：
 FAIR_ARENA_HISTORY_EXPLORE,{1}e Exploration
@@ -5224,7 +5224,7 @@ NEW_ARENA_ALL_SERVER_TEXT_10,Débloqué après avoir atteint le Rang Or
 NEW_ARENA_ALL_SERVER_TEXT_11,Débloqué après avoir atteint le Rang Diamant
 NEW_ARENA_ALL_SERVER_TEXT_12,Actualiser({1})
 NEW_ARENA_ALL_SERVER_TEXT_13,Rang Actuel :
-NEW_ARENA_ALL_SERVER_TEXT_14,Récompense Actuelle :
+NEW_ARENA_ALL_SERVER_TEXT_14,Récompense：
 NEW_ARENA_ALL_SERVER_TEXT_15,Les récompenses seront envoyées selon votre Rang après la fin de Ruée de Point (Condition de récupération : avoir lancé 10 combats ou + )
 NEW_ARENA_ALL_SERVER_TEXT_16,Retourner les cartes automatiquement aujourd'hui
 NEW_ARENA_ALL_SERVER_TEXT_17,Groupe {1}
@@ -5636,7 +5636,7 @@ SHOW_WINDOW_TEXT17,Cet emplacement ne peut uniquement exposer un élément de Te
 SHOW_WINDOW_TEXT18,Récompenses
 SHOW_WINDOW_TEXT19,Points actuels：
 SHOW_WINDOW_TEXT20,Niveau actuel：
-SHOW_WINDOW_TEXT21,Récompense actuelle :
+SHOW_WINDOW_TEXT21,Récompense：
 SHOW_WINDOW_TEXT22,Récompenses envoyées tous les jours à 00:00 (GMT 0)
 SHOW_WINDOW_TEXT23,Points de Vitrine：
 SHOW_WINDOW_TEXT24,Emplacement {1}
@@ -5804,7 +5804,7 @@ SHRINE_NOTICE_TAB4,Succès
 SHRINE_NOTICE_TEXT01,Temps restant
 SHRINE_NOTICE_TEXT02,Points totaux
 SHRINE_NOTICE_TEXT03,Classement : [c][0069cc]{1}[-][/c]
-SHRINE_NOTICE_TEXT04,Récompenses：
+SHRINE_NOTICE_TEXT04,Récompense：
 SHRINE_NOTICE_TEXT05,Aucun Classement
 SHRINE_POOL_TEXT01,Saisonnier
 SHRINE_POOL_TEXT02,Permanent
@@ -6143,7 +6143,7 @@ ACTIVITY_CLOCK_SHOW_TEXT03,Récompense du tour actuel
 ACTIVITY_CLOCK_SHOW_TEXT04,Récompense Finale
 ACTIVITY_CLOCK_SHOW_TEXT05,Tour {1}
 ACTIVITY_CLOCK_AWARD_GET,"Vous avez obtenu toutes les Récompenses Finales du tour actuel, ce qui vous permet d'obtenir les récompenses restantes !"
-ACTIVITY_CLOCK_HELP,"1. Durant cet événement, utilisez 1 Pièce Mystère pour faire tourner la Roue Mystère une fois (en fonction du nombre d'aiguille) et obtenir une récompense. Si vous choisissez plusieurs aiguilles, vous recevrez plusieurs récompenses, cependant le nombre de Pièces Mystères correspondantes sera utilisé.|2. Les récompenses dans la Roue Mystère sont divisées en Récompense Normale et en Récompense Finale. Les Récompenses Normales peuvent être obtenues plusieurs fois (le centre de la Roue Mystère indique le nombre de fois que les récompenses peuvent être gagnées). Chacune des Récompenses Finales peuvent être obtenues qu’une seule fois. Une fois que vous avez gagné tous les Récompenses Finales du tour actuel, vous recevrez toutes les récompenses restantes de la Roue Mystère.|3. Après avoir obtenu toutes les récompenses du tour actuel, vous pourrez accéder au tour suivant. Il y a 5 tours au total. Après avoir obtenu toutes les récompenses du 5ème tour, ce dernier sera répété et les récompenses ne changeront plus.|4. Vous recevrez des récompenses en fonction du nombre de Pièce Mystère que vous utilisez.|5. Moyen d'obtention des Pièces Mystère : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Sous le Chapiteau, Pack du Poisson d'Avril, Bonus de Distributeur et Célébration du Mois.|6. Après la fin de l'événement, les Pièces Mystères non-utilisées seront automatiquement converties en Pièce d'Or, 1 Pièce Mystère = 20 000 Pièces d'Or et seront distribuées par courrier."
+ACTIVITY_CLOCK_HELP,"1. Durant cet événement, utilisez 1 Pièce Mystère pour faire tourner la Roue Mystère une fois (en fonction du nombre d'aiguille) et obtenir une récompense. Si vous choisissez plusieurs aiguilles, vous recevrez plusieurs récompenses, cependant le nombre de Pièces Mystères correspondantes sera utilisé.|2. Les récompenses dans la Roue Mystère sont divisées en Récompense Normale et en Récompense Finale. Les Récompenses Normales peuvent être obtenues plusieurs fois (le centre de la Roue Mystère indique le nombre de fois que les récompenses peuvent être gagnées). Chacune des Récompenses Finales peuvent être obtenues qu'une seule fois. Une fois que vous avez gagné tous les Récompenses Finales du tour actuel, vous recevrez toutes les récompenses restantes de la Roue Mystère.|3. Après avoir obtenu toutes les récompenses du tour actuel, vous pourrez accéder au tour suivant. Il y a 5 tours au total. Après avoir obtenu toutes les récompenses du 5ème tour, ce dernier sera répété et les récompenses ne changeront plus.|4. Vous recevrez des récompenses en fonction du nombre de Pièce Mystère que vous utilisez.|5. Moyen d'obtention des Pièces Mystère : Courrier Quotidien, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise, Sous le Chapiteau, Pack du Poisson d'Avril, Bonus de Distributeur et Célébration du Mois.|6. Après la fin de l'événement, les Pièces Mystères non-utilisées seront automatiquement converties en Pièce d'Or, 1 Pièce Mystère = 20 000 Pièces d'Or et seront distribuées par courrier."
 ACTIVITY_CLOCK_TASK,"Durant cet événement, terminez les tâches pour obtenir des Pièces Mystères que vous pourrez utiliser dans La Roue Mystère."
 ACTIVITY_CLOCK_TITLE,Poisson\nd'Avril
 ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Récompenses
@@ -6198,7 +6198,7 @@ NEW_TRIAL_SEA_SECRET,Portail Abyssal
 NEW_TRIAL_MAIN_WINDOW_TEXT01,{1} est ouvert !
 NEW_TRIAL_MAIN_WINDOW_TEXT02,Pass\ndu Sanctuaire
 NEW_TRIAL_BATTLEPASS_SELECT_TEXT01,Récompense Principale
-NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Sélectionnez votre Récompense Principale de cette saison. (La seule et même récompense pour la saison actuelle)
+NEW_TRIAL_BATTLEPASS_SELECT_TEXT02,Sélectionnez votre Récompense Principale de cette saison (la seule et même récompense pour la saison actuelle).
 NEW_TRIAL_BATTLEPASS_TEXT01,Choisissez une de ces récompenses
 NEW_TRIAL_BATTLEPASS_TEXT02,Point du Sanctuaire
 NEW_TRIAL_BATTLEPASS_TEXT03,Acheter
@@ -6404,8 +6404,8 @@ ACTIVITY_CHILDREN_TITLE,Les Bambins\nde Yume
 ACTIVITY_SPFARM_TEXT01,"Je t'en prie, entre dans mon manoir et trouves-y ce dont tu as besoin..."
 ACTIVITY_SPFARM_TEXT02,Niv. du Jardin
 ACTIVITY_SPFARM_TEXT03,Entrer
-ACTIVITY_SPFARM_HELP1,"1. Cet événement dure 15 jours. Lors des 14 permiers jours, plantez des Fleurs et pillez le manoir des autres joueurs pour obtenir des ressources. Le 15e jour de cet événement est le jour d’affichage, durant lequel vous ne pourrez plus piller les ressources des autres joueurs et les Fleurs ne produiront plus de ressources (n'inclut pas la fonction - accélération).|2. Touchez une case pour planter vos Fleurs. Vous pourrez collecter les ressources correspondantes chaque jour à 00 : 00 (UTC/GMT 0). |3. Utilisez 100 Graines Paranormales pour planter une Fleur ou augmenter son niveau de 1. Vous pouvez également changer le type de vos Fleurs en utilisant des Graines Paranormales (50 x niveau actuel de la Fleur que vous avez choisie). |4. Déplacez vos Fleurs en appuyant longtemps dessus. Déployez-y une Armée Défensive afin de protéger vos Fleurs des pillages.|5. Utilisez des Mégaphones pour appliquer une Stratégie.|6. Une fois avoir appliqué 3 Stratégies, votre Manoir gagnera 1 de Prestige et vous obtiendrez également des récompenses.|7. Utilisez 1 Ticket de Pillage pour piller 1 fois les ressources d’un autre joueur. 3 Tickets de Pillage vous seront envoyés chaque jour au cours des 14 premiers jours de cet événement. Vous pouvez également acheter des Tickets de Pillage en utilisant des Gemmes (15 Tickets de Pillage achetables au maximum).|8. Plus le niveau de votre Jardin sera haut, plus la quantité de ressources pillables chez un autre joueur sera élevée.|9. Lorsque le Prestige de votre manoir atteint 10, la fonction - accélération sera débloquée. Utilisez 1000 Graines Paranoramles pour obtenir immédiatement les ressources quotidiennes de Fleur (cela n'influencera pas la production quotidienne).|10. Après l'événement, les Fruits Paranormaux, les Mégaphones et les Tickets de Pillage seront automatiquement convertis en Pièce d'Or, 1 Fruit Paranormal = 1K Pièce d'Or, 1 Mégaphone = 50K Pièce d'Or, 1 Ticket de Pillage = 20K Pièce d'Or."
-ACTIVITY_SPFARM_HELP2,"1. À chaque pillage, vous serez transporté au Manoir d’un autre joueur (se trouvant au centre de la carte).|2. Au début du pillage, toutes les cases seront face cachée à l’exception de la case du Manoir. Vous commencerez par retourner les cases une des 4 cases perpendiculairement adjacentes au Manoir (↑↓←→).|3. Toutes les cases étant face cachée, vous devrez les retourner pour découvrir ce qu’il se trouve en dessous.|4. En retournant une case - Armée Défensive, vous devrez vaincre cette dernière avant de pouvoir retourner les cases avoisinantes.|5. Si vous retournez une case - Fleur, vous pourrez piller 20%% de la Production/Jour de cette Fleur et les mettre dans votre Sac.|6. Cliquez sur le Manoir du joueur que vous pillez pour mettre fin au pillage et vous recevrez les récompenses que vous avez pillées à l’intérieur votre sac."
+ACTIVITY_SPFARM_HELP1,"1. Cet événement dure 15 jours. Lors des 14 permiers jours, plantez des Fleurs et pillez le manoir des autres joueurs pour obtenir des ressources. Le 15e jour de cet événement est le jour d'affichage, durant lequel vous ne pourrez plus piller les ressources des autres joueurs et les Fleurs ne produiront plus de ressources (n'inclut pas la fonction - accélération).|2. Touchez une case pour planter vos Fleurs. Vous pourrez collecter les ressources correspondantes chaque jour à 00 : 00 (UTC/GMT 0). |3. Utilisez 100 Graines Paranormales pour planter une Fleur ou augmenter son niveau de 1. Vous pouvez également changer le type de vos Fleurs en utilisant des Graines Paranormales (50 x niveau actuel de la Fleur que vous avez choisie). |4. Déplacez vos Fleurs en appuyant longtemps dessus. Déployez-y une Armée Défensive afin de protéger vos Fleurs des pillages.|5. Utilisez des Mégaphones pour appliquer une Stratégie.|6. Une fois avoir appliqué 3 Stratégies, votre Manoir gagnera 1 de Prestige et vous obtiendrez également des récompenses.|7. Utilisez 1 Ticket de Pillage pour piller 1 fois les ressources d'un autre joueur. 3 Tickets de Pillage vous seront envoyés chaque jour au cours des 14 premiers jours de cet événement. Vous pouvez également acheter des Tickets de Pillage en utilisant des Gemmes (15 Tickets de Pillage achetables au maximum).|8. Plus le niveau de votre Jardin sera haut, plus la quantité de ressources pillables chez un autre joueur sera élevée.|9. Lorsque le Prestige de votre manoir atteint 10, la fonction - accélération sera débloquée. Utilisez 1000 Graines Paranoramles pour obtenir immédiatement les ressources quotidiennes de Fleur (cela n'influencera pas la production quotidienne).|10. Après l'événement, les Fruits Paranormaux, les Mégaphones et les Tickets de Pillage seront automatiquement convertis en Pièce d'Or, 1 Fruit Paranormal = 1K Pièce d'Or, 1 Mégaphone = 50K Pièce d'Or, 1 Ticket de Pillage = 20K Pièce d'Or."
+ACTIVITY_SPFARM_HELP2,"1. À chaque pillage, vous serez transporté au Manoir d'un autre joueur (se trouvant au centre de la carte).|2. Au début du pillage, toutes les cases seront face cachée à l'exception de la case du Manoir. Vous commencerez par retourner les cases une des 4 cases perpendiculairement adjacentes au Manoir (↑↓←→).|3. Toutes les cases étant face cachée, vous devrez les retourner pour découvrir ce qu'il se trouve en dessous.|4. En retournant une case - Armée Défensive, vous devrez vaincre cette dernière avant de pouvoir retourner les cases avoisinantes.|5. Si vous retournez une case - Fleur, vous pourrez piller 20%% de la Production/Jour de cette Fleur et les mettre dans votre Sac.|6. Cliquez sur le Manoir du joueur que vous pillez pour mettre fin au pillage et vous recevrez les récompenses que vous avez pillées à l'intérieur votre sac."
 ACTIVITY_SPFARM_TEXT04,Prestige：[c][10F520]{1}[-][/c]
 ACTIVITY_SPFARM_TEXT05,Piller
 ACTIVITY_SPFARM_TEXT06,Récompense de Prestige
@@ -6430,7 +6430,7 @@ ACTIVITY_SPFARM_TEXT18,Voulez-vous utiliser {2}*{1} pour planter cette Fleur ?
 ACTIVITY_SPFARM_TEXT19,Voulez-vous utiliser {2}*{1} pour changer la Fleur actuelle ?
 ACTIVITY_DRAGONBOAT2022_BUTTON01,Lâcher
 ACTIVITY_DRAGONBOAT2022_BUTTON02,Vertus de\nl'Armoise
-ACTIVITY_DRAGONBOAT2022_HELP,"1. À l'occasion de la Fête de la Lune, lâchez des Lanternes Célestes dans le ciel avec Chizuko !|2. Chaque fois que vous consommez 2 Lanternes, obtenez une récompense aléatoire, une chance d'obtenir une récompense supplémentaire, et vous aurez 33,33%% de chance d'obtenir 1 point de Festivité, 33,33%% de chance d'en obtenir 2 et 33,33%% de chance d'en obtenir 3.|3. Après avoir lâché un certain nombre de Lanterne Céleste, vous accèderez à différents Niveaux de Festivité.|4. En fonction du nombre de Lanternes Célestes lâchées, vous recevrez des récompenses cumulatives.|5. Moyen d'obtention des Lanternes Célestes : Courrier Quotidien, Recruter, Rassemblement, Pack de Lanterne, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise. |6. Après la fin de l'événement, les Lanternes Célestes non utilisées seront automatiquement converties en Pièce d'Or, 1 Lanterne Céleste = 50K Pièces d'Or."
+ACTIVITY_DRAGONBOAT2022_HELP,"1. À l'occasion de la Fête de la Lune, lâchez des Lanternes Célestes dans le ciel avec Chizuko !|2. Chaque fois que vous consommez 2 Lanternes, obtenez une récompense aléatoire, une chance d'obtenir une récompense supplémentaire, et vous aurez 33,33%% de chance d'obtenir 1 point de Festivité, 33,33%% de chance d'en obtenir 2 et 33,33%% de chance d'en obtenir 3.|3. Après avoir lâché un certain nombre de Lanterne Céleste, vous accèderez à différents Niveaux de Festivité.|4. En fonction du nombre de Lanternes Célestes lâchées, vous recevrez des récompenses cumulatives.|5. Moyen d'obtention des Lanternes Célestes : Courrier Quotidien, Examen d'Admission, Rassemblement, Pack de Lanterne, Pack de Grande Valeur, Pack Surprise de Skin, Pack Surprise.|6. Après la fin de l'événement, les Lanternes Célestes non utilisées seront automatiquement converties en Pièce d'Or, 1 Lanterne Céleste = 50K Pièces d'Or."
 ACTIVITY_DRAGONBOAT2022_TEXT01,Avancée
 ACTIVITY_DRAGONBOAT2022_TEXT02,Récompense Supplémentaire
 ACTIVITY_DRAGONBOAT2022_TEXT03,Récompense Aléatoire
@@ -6544,7 +6544,7 @@ ACTIVITY_SPFARM_TEXT116,"Vous ne pourrez pas collecter les récompenses des Fleu
 COLLECTION_SENPAI_DRESS,Tenue
 SENPAI_DRESS,Tenue
 COLLECTION_SKIN_UNLOCK_TEXT,Débloqué après avoir obtenu {1} Skins.
-COLLECTION_SKIN_HELP,"1. La Galerie de Skins recueille tous les Skins que vous possédez.|2. Les Skins sont classés en 4 cactégories de rareté : Commun, Rare, Épique et Légendaire. Plus votre Skin sera d’une grande rareté, plus vous obtiendrez de Points de Skin.|3. Chaque Skin que vous débloquerez pour la première fois vous fournira des Points de Skin.|4. Tous les Skins seront filtrés par Thème. Obtenez des Points de Skin supplémentaires en possédant plusieurs Skins d'un même Thème.|5. Améliorez votre niveau de Fashion en obtenant un maximum de Points de Skin. Un niveau de Fashion élevé fournira de meilleurs Attributs à vos Filles équipées d’un Skin."
+COLLECTION_SKIN_HELP,"1. La Galerie de Skins recueille tous les Skins que vous possédez.|2. Les Skins sont classés en 4 cactégories de rareté : Commun, Rare, Épique et Légendaire. Plus votre Skin sera d'une grande rareté, plus vous obtiendrez de Points de Skin.|3. Chaque Skin que vous débloquerez pour la première fois vous fournira des Points de Skin.|4. Tous les Skins seront filtrés par Thème. Obtenez des Points de Skin supplémentaires en possédant plusieurs Skins d'un même Thème.|5. Améliorez votre niveau de Fashion en obtenant un maximum de Points de Skin. Un niveau de Fashion élevé fournira de meilleurs Attributs à vos Filles équipées d'un Skin."
 COLLECTION_SKIN_TEXT01,Niveau de Fashion
 COLLECTION_SKIN_TEXT02,Niveau de Fashion amélioré !
 COLLECTION_SKIN_TEXT03,Bonus d'Attribut：
@@ -6590,7 +6590,7 @@ LOGIN_TIPS_ERROR_1,Votre compte a été banni
 LOGIN_TIPS_ERROR_2,"Votre compte actuel a été banni, veuillez changer de Serveur."
 SHENXUE_TEXT05,Éveiller
 SHENXUE_TEXT06,En cours d'éveil...
-ACTIVITY_LOST_SPACE_TEXT10,"1. Après avoir acheté le Pack de l’Espace, vous obtiendrez une récompense supplémentaire en passant chaque étape.|2. Si vous avez passé des étapes avant d'avoir acheté ce pack, les récompenses manquantes vous seront envoyées par courrier."
+ACTIVITY_LOST_SPACE_TEXT10,"1. Après avoir acheté le Pack de l'Espace, vous obtiendrez une récompense supplémentaire en passant chaque étape.|2. Si vous avez passé des étapes avant d'avoir acheté ce pack, les récompenses manquantes vous seront envoyées par courrier."
 PARTNER_RECOMMEND_TIPS,Fille Recommandée
 ACTIVITY_LAFULI_CASTLE_TEXT15,Utilisez encore {1} Sables Fins au total pour colorer cette surface~
 ACTIVITY_LAFULI_CASTLE_TEXT16,Utilisez encore {1} Sables Célestes au total pour colorer cette surface~
@@ -6630,7 +6630,7 @@ Nous pouvons envoyer des notifications locales à votre appareil mobile pour fou
 Lorsque vous accédez à nos sites Web ou jouez à nos jeux, nous collectons également les éléments suivants:
 1) Certaines informations techniques concernant votre appareil mobile ou votre système informatique, y compris l\'adresse MAC, l\'adresse IP et l\'identifiant de l\'appareil mobile
 2) Des statistiques d\'utilisation sur vos interactions avec le Service. Ces informations sont généralement collectées à l\'aide de fichiers journaux serveur ou de fichiers journaux Web («Fichiers journaux»), de kits de développement de logiciels mobiles et de technologies de suivi telles que les cookies de navigateur pour collecter et analyser certains types d\'informations techniques. Certains des cookies que le Service place sur votre ordinateur sont liés à votre (vos) numéro (s) d\'identification.
-Pour plus d\'informations sur la façon dont nous utilisons les cookies et autres technologies de suivi, veuillez consulter la partie «Cookies et Collection d’Information Automatique» de la section 3 («Comment nous collectons les informations vous concernant»).
+Pour plus d\'informations sur la façon dont nous utilisons les cookies et autres technologies de suivi, veuillez consulter la partie «Cookies et Collection d\'Information Automatique» de la section 3 («Comment nous collectons les informations vous concernant»).
 1.2 Comment nous recueillons des informations sur vous
 Nous pouvons collecter des informations vous concernant de l\'une ou plusieurs des façons suivantes: Lorsque vous jouez à l\'un de nos jeux, Yottagames collecte et stocke certaines informations que vous fournissez directement ou via le SNS ou un autre site Web tiers proposant notre jeu. Pour offrir un jeu et une expérience sociale plus riches, nous recueillons également des informations sur votre jeu et votre interaction avec les autres joueurs et le service. La majeure partie de ces informations est collectée et stockée grâce à l\'utilisation de fichiers journaux, qui sont des fichiers sur nos serveurs Web qui enregistrent les actions prises sur nos jeux et sites Web.
 Vous pouvez participer à certaines activités sur nos sites Web ou à des jeux qui vous permettent de communiquer ou de partager des informations non seulement avec Yottagames, mais aussi avec d\'autres utilisateurs de notre service. Ceux-ci inclus:
@@ -6749,9 +6749,9 @@ ACTIVITY_4ANIVERSARY_SIGN_TEXT08,"€5,49"
 ACTIVITY_4ANIVERSARY_SIGN_TEXT09,€ 32.99
 ACTIVITY_4ANIVERSARY_SIGN_TEXT10,€ 21.99
 ACTIVITY_4ANIVERSARY_SIGN_TEXT11,€ 54.99
-ACTIVITY_4BIRTHDAY_HELP,"1. Rejoignez-nous pour une danse au bal d’anniversaire, Senpai~|2. Offrez 1 Mocktail à Prométhéa ou Selkis pour les inviter à danser. Pour chaque Mocktail offert, l’avancée de la Fille correspondante augmentera de 1 et vous obtiendrez une récompense aléatoire ajoutée d’1 Clef Rythmique utilisable dans l’événement - Cadence Harmonique.|3. Vous obtiendrez les récompenses correspondantes en fonction de l’avancée des 2 Filles.|4. Lorsque l’avancée totale aura atteint 1400, vous obtiendrez la récompense finale et vous accéderez à la Boutique du Bal où vous pourrez échanger les Mocktails contre d’autres objets (vous n’obtiendrez pas de récompense aléatoire ni Clef Rythmique via l’échange).|5. Touchez « Histoire du Bal » pour lire à propos de cette soirée au bal du 4ème anniversaire (un épisode sera débloqué chaque jour).|6. Après la fin de l’événement, les Mocktails non-utilisés seront automatiquement convertis en Pièce d’Or, 1 Mocktail = 50K Pièce d’Or."
-ACTIVITY_4BIRTHDAY_TASK_HELP,"1. Complétez les tâches pour obtenir de la Crème Pâtissière, et décorer le gâteau d’anniversaire. |2. Pour chaque rangée ou colonne du gâteau complétée, vous obtiendrez la récompense correspondante. |3. Après avoir entièrement décoré le gâteau (12 cases), vous obtiendrez la récompense finale. |4. Après la fin de l’événement, les Crèmes Pâtissières non-utilisées seront automatiquement converties en Pièce d’Or, 1 Crème Pâtissière = 20K Pièce d’Or."
-ACTIVITY_4BIRTHDAY_GAMBLE_HELP,"1. Carmen et Bianca sont en train de préparer un concert symphonique pour l'anniversaire, allons y jeter un coup d'œil, Senpai !|2. Leur concert symphonique se joue en 3 parties : Prélude, Interlude et Finale. Pour chaque partie, sélectionnez les récompenses que vous souhaitez à l'avance et utilisez les Clefs Rythmiques pour les obtenir (vous obtiendrez pour chaque Clef Rythmique utilisée, une des récompenses sélectionnées).|3. Une fois que vous aurez obtenu toutes les récompenses sélectionnées des 3 parties, la pièce musicale suivante sera débloquée.|4. Après la fin de l’événement, les Clefs Rythmique non-utilisées seront automatiquement converties en Pièce d’Or, 1 Clef Rythmique = 30K Pièce d’Or."
+ACTIVITY_4BIRTHDAY_HELP,"1. Rejoignez-nous pour une danse au bal d'anniversaire, Senpai~|2. Offrez 1 Mocktail à Prométhéa ou Selkis pour les inviter à danser. Pour chaque Mocktail offert, l'avancée de la Fille correspondante augmentera de 1 et vous obtiendrez une récompense aléatoire ajoutée d'1 Clef Rythmique utilisable dans l'événement - Cadence Harmonique.|3. Vous obtiendrez les récompenses correspondantes en fonction de l'avancée des 2 Filles.|4. Lorsque l'avancée totale aura atteint 1400, vous obtiendrez la récompense finale et vous accéderez à la Boutique du Bal où vous pourrez échanger les Mocktails contre d'autres objets (vous n'obtiendrez pas de récompense aléatoire ni Clef Rythmique via l'échange).|5. Touchez « Histoire du Bal » pour lire à propos de cette soirée au bal du 4ème anniversaire (un épisode sera débloqué chaque jour).|6. Après la fin de l'événement, les Mocktails non-utilisés seront automatiquement convertis en Pièce d'Or, 1 Mocktail = 50K Pièce d'Or."
+ACTIVITY_4BIRTHDAY_TASK_HELP,"1. Complétez les tâches pour obtenir de la Crème Pâtissière, et décorer le gâteau d'anniversaire. |2. Pour chaque rangée ou colonne du gâteau complétée, vous obtiendrez la récompense correspondante. |3. Après avoir entièrement décoré le gâteau (12 cases), vous obtiendrez la récompense finale. |4. Après la fin de l'événement, les Crèmes Pâtissières non-utilisées seront automatiquement converties en Pièce d'Or, 1 Crème Pâtissière = 20K Pièce d'Or."
+ACTIVITY_4BIRTHDAY_GAMBLE_HELP,"1. Carmen et Bianca sont en train de préparer un concert symphonique pour l'anniversaire, allons y jeter un coup d'œil, Senpai !|2. Leur concert symphonique se joue en 3 parties : Prélude, Interlude et Finale. Pour chaque partie, sélectionnez les récompenses que vous souhaitez à l'avance et utilisez les Clefs Rythmiques pour les obtenir (vous obtiendrez pour chaque Clef Rythmique utilisée, une des récompenses sélectionnées).|3. Une fois que vous aurez obtenu toutes les récompenses sélectionnées des 3 parties, la pièce musicale suivante sera débloquée.|4. Après la fin de l'événement, les Clefs Rythmique non-utilisées seront automatiquement converties en Pièce d'Or, 1 Clef Rythmique = 30K Pièce d'Or."
 ACTIVITY_4BIRTHDAY_TASK_TEXT01,Gâteau
 ACTIVITY_4BIRTHDAY_TASK_TEXT02,Tâche
 ACTIVITY_4BIRTHDAY_TASK_TIPS01,Crème Pâtissière Insuffisante ! Complétez les tâches pour en obtenir plus !
@@ -6785,7 +6785,7 @@ ACTIVITY_4BIRTHDAY_TIPS02,"Récompense finale débloquée, vous pourrez accéder
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS03,Vous avez sélectionné toutes les récompenses de cette pièce musicale.
 ACTIVITY_4ANIVERSARY_SIGN_TEXT12,Connectez-vous encore quelques jours pour pouvoir débloquer {1} !
 ACTIVITY_4BIRTHDAY_TEXT07,"Pour chaque Mocktail offert,\nvous obtiendrez une des récompenses suivantes :"
-ACTIVITY_4BIRTHDAY_TIPS03,Vous pouvez dès maintenant accéder à la Boutique du bal où vous pourrez échanger les Mocktails contre d’autres objets !
+ACTIVITY_4BIRTHDAY_TIPS03,Vous pouvez dès maintenant accéder à la Boutique du bal où vous pourrez échanger les Mocktails contre d'autres objets !
 ACTIVITY_4BIRTHDAY_TEXT08,"Vous ne pouvez plus offrir des Mocktails à {1}, veuillez inviter une autre Fille pour essayer~"
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,"Impossible, plus que 5 récompenses restantes !"
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,"La musique est en train de jouer, veuillez patienter~"
@@ -6910,7 +6910,7 @@ Nous pouvons envoyer des notifications locales à votre appareil mobile pour fou
 Lorsque vous accédez à nos sites Web ou jouez à nos jeux, nous collectons également les éléments suivants:
 1) Certaines informations techniques concernant votre appareil mobile ou votre système informatique, y compris l\'adresse MAC, l\'adresse IP et l\'identifiant de l\'appareil mobile
 2) Des statistiques d\'utilisation sur vos interactions avec le Service. Ces informations sont généralement collectées à l\'aide de fichiers journaux serveur ou de fichiers journaux Web («Fichiers journaux»), de kits de développement de logiciels mobiles et de technologies de suivi telles que les cookies de navigateur pour collecter et analyser certains types d\'informations techniques. Certains des cookies que le Service place sur votre ordinateur sont liés à votre (vos) numéro (s) d\'identification.
-Pour plus d\'informations sur la façon dont nous utilisons les cookies et autres technologies de suivi, veuillez consulter la partie «Cookies et Collection d’Information Automatique» de la section 3 («Comment nous collectons les informations vous concernant»).
+Pour plus d\'informations sur la façon dont nous utilisons les cookies et autres technologies de suivi, veuillez consulter la partie «Cookies et Collection d\'Information Automatique» de la section 3 («Comment nous collectons les informations vous concernant»).
 |1.2 Comment nous recueillons des informations sur vous
 Nous pouvons collecter des informations vous concernant de l\'une ou plusieurs des façons suivantes: Lorsque vous jouez à l\'un de nos jeux, Yottagames collecte et stocke certaines informations que vous fournissez directement ou via le SNS ou un autre site Web tiers proposant notre jeu. Pour offrir un jeu et une expérience sociale plus riches, nous recueillons également des informations sur votre jeu et votre interaction avec les autres joueurs et le service. La majeure partie de ces informations est collectée et stockée grâce à l\'utilisation de fichiers journaux, qui sont des fichiers sur nos serveurs Web qui enregistrent les actions prises sur nos jeux et sites Web.
 Vous pouvez participer à certaines activités sur nos sites Web ou à des jeux qui vous permettent de communiquer ou de partager des informations non seulement avec Yottagames, mais aussi avec d\'autres utilisateurs de notre service. Ceux-ci inclus:
@@ -7078,7 +7078,7 @@ GUILD_COMPETITION_PARTNER_HELP,"1. Les Filles qui peuvent être libérées à 15
 GUILD_COMPETITION_PARTNER_TITLE,Formation Avancée
 GUILD_COMPETITION_PARTNER_TEXT01,Choisissez une Fille
 GUILD_COMPETITION_PARTNER_TEXT02,Les Filles portant le même nom ne peuvent plus être placée en Formation Avancée aujourd'hui.
-GUILD_COMPETITION_PARTNER_TEXT03,Voulez-vous consommer 50K Pièces d’Or pour utiliser votre Fille dans Formation Avancée à combattre dans une Bataille Réelle ?
+GUILD_COMPETITION_PARTNER_TEXT03,Voulez-vous consommer 50K Pièces d'Or pour utiliser votre Fille dans Formation Avancée à combattre dans une Bataille Réelle ?
 GUILD_COMPETITION_SKILL_TIPS,"L'ennemie est devenue plus puissante,\nn'oubliez pas d'aller voir ses compétences !"
 GUILD_COMPETITION_CHALLENGE_TEXT01,Objectif
 GUILD_COMPETITION_CHALLENGE_TEXT02,Vos points obtenus augmenteront de 10%% pour chaque objectif atteint.
@@ -7095,7 +7095,7 @@ GROWTH_DIARY_TEXT11,Collecté
 GUILD_COMPETITION_PARTNER_TEXT07,"Cette Fille est actuellement dans Formation Avancée, impossible de la sélectionner."
 GROWTH_DIARY_TEXT12,Collecter
 ACTIVITY_FREE_REVERT_TEXT08,*Seules les Filles proposées peuvent être inversées gratuitement
-ACTIVITY_GOLDFISH_HELP,"1. Mercure a ouvert un nouveau business pour cet été, allons voir ce qu’elle nous réserve !|2. Utilisez les Épuisettes pour attraper des poissons et recevoir les récompenses correspondantes. Pour chaque Poisson Rouge attrapé, 200 Pièces d'Écaille seront ajoutées au Bassin des Pièces. Pour chaque Poisson Doré attrapé, vous obtiendrez le pourcentage correspondant de Pièce d'Écaille du Bassin des Pièces. Le Bassin de Pièces est initialement à 10K Pièces d'Écaille (le pourcentage de Pièce d'Écaille que vous pouvez obtenir à chaque fois peut être différent pour chaque Poisson Doré que vous attrapez. Si vous obtenez la Boîte de Cupidon&Prométhéa, vous ne recevrez pas de Pièces d'Écaille).|3. En fonction du nombre d'Épuisettes que vous utilisez, vous recevrez des Pièces d'Écaille garanties. Si vous recevez moins de Pièces d'Écaille que la quantité garantie, des Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac le dernier jour de l'événement. Attention : vous ne pourrez plus attraper de poisson le dernier jour de l'événement.|4. Échangez vos Pièces d'Écaille contre des récompenses. Le premier niveau de récompenses est débloqué par défaut, et les niveaux suivants seront déblocables en fonction du nombre d’Épuisettes utilisées.|5. Vous recevrez également des récompenses de palier en fonction du nombre d'Épuisettes utilisées.|6. Après la fin de l’événement, les Épuisettes et les Pièces d'Écaille non-utilisées seront automatiquement converties en Pièce d’or, 1 Épuisette=50K Pièces d'Or et 1 Pièce d'Écaille=100 Pièces d’Or."
+ACTIVITY_GOLDFISH_HELP,"1. Mercure a ouvert un nouveau business pour cet été, allons voir ce qu'elle nous réserve !|2. Utilisez les Épuisettes pour attraper des poissons et recevoir les récompenses correspondantes. Pour chaque Poisson Rouge attrapé, 200 Pièces d'Écaille seront ajoutées au Bassin des Pièces. Pour chaque Poisson Doré attrapé, vous obtiendrez le pourcentage correspondant de Pièce d'Écaille du Bassin des Pièces. Le Bassin de Pièces est initialement à 10K Pièces d'Écaille (le pourcentage de Pièce d'Écaille que vous pouvez obtenir à chaque fois peut être différent pour chaque Poisson Doré que vous attrapez. Si vous obtenez la Boîte de Cupidon&Prométhéa, vous ne recevrez pas de Pièces d'Écaille).|3. En fonction du nombre d'Épuisettes que vous utilisez, vous recevrez des Pièces d'Écaille garanties. Si vous recevez moins de Pièces d'Écaille que la quantité garantie, des Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac le dernier jour de l'événement. Attention : vous ne pourrez plus attraper de poisson le dernier jour de l'événement.|4. Échangez vos Pièces d'Écaille contre des récompenses. Le premier niveau de récompenses est débloqué par défaut, et les niveaux suivants seront déblocables en fonction du nombre d'Épuisettes utilisées.|5. Vous recevrez également des récompenses de palier en fonction du nombre d'Épuisettes utilisées.|6. Après la fin de l'événement, les Épuisettes et les Pièces d'Écaille non-utilisées seront automatiquement converties en Pièce d'or, 1 Épuisette=50K Pièces d'Or et 1 Pièce d'Écaille=100 Pièces d'Or."
 ACTIVITY_GOLDFISH_BUTTON01,Utiliser x1
 ACTIVITY_GOLDFISH_BUTTON02,Utiliser x10
 ACTIVITY_GOLDFISH_TEXT01,"Vous avez utilisé [c][35a7ef]{1}[-][/c] Épuisette(s), Mercure prédit que vous devriez obtenir [c][ffa82b]{2}[-][/c] Pièces d'Écaille. Vous en avez obtenu [c][ffa82b]{3}[-][/c] seulement. [c][ffa82b]{4}[-][/c] Pièces d'Écaille supplémentaires vous seront envoyées dans votre Sac le dernier jour de l'événement."
@@ -7276,8 +7276,8 @@ INVITATION_TEXT15,Veuillez entrer le code d'invitation pour pouvoir obtenir ces 
 INVITATION_TEXT16,Les récompenses vous seront envoyées par courrier
 INVITATION_RANK_TEXT01,Classement
 INVITATION_RANK_TEXT02,Points
-INVITATION_AWARD_TEXT01,Récompense
-INVITATION_AWARD_TEXT02,Inviter 1 Débutant à compléter l'Étape {1}
+INVITATION_AWARD_TEXT01,Récompenses
+INVITATION_AWARD_TEXT02,Étape {1} complétée par un Débutant
 INVITATION_GIFT_TEXT01,Collecter
 GALAXY_TRIP_TEXT77,Les récompenses de ce niveau ont déjà été collectées.
 ACTIVITY_LEGENDARY_SKIN_TEXT11,1 fois
@@ -7309,95 +7309,103 @@ GALAXY_TRIP_TIPS_25,"Vous avez amélioré votre Fille à un niveau d'étoile sup
 GALAXY_TRIP_TIPS_26,Sauvegardé !
 TIME_CLOISTER_TEXT118,Déblocable après avoir complété une Exploration et obtenu des Fragments Galactiques.
 ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,Arène d'Élite Interserveur commence dans：
-ACTIVITY_REPAIR_CONSOLE_TEXT01,遊戲機故障……快幫助助手醬收集電能塊，激活核心芯片還可領取豐厚獎勵（先不翻譯，待定）
-ACTIVITY_REPAIR_CONSOLE_TEXT02,每次可隨機為1~3個電能站充電
-ACTIVITY_REPAIR_CONSOLE_TEXT03,獎勵預覽
-ACTIVITY_REPAIR_CONSOLE_TEXT04,充電
-ACTIVITY_REPAIR_CONSOLE_TEXT05,核心獎勵
-ACTIVITY_REPAIR_CONSOLE_TEXT06,普通獎勵
-ACTIVITY_REPAIR_CONSOLE_TEXT07,第{1}輪
-ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}輪及之後
-ACTIVITY_REPAIR_CONSOLE_HELP,幫助文本，待定
+ACTIVITY_REPAIR_CONSOLE_TEXT01,Rétablissez l'alimentation du circuit électrique et débloquez les récompenses !
+ACTIVITY_REPAIR_CONSOLE_TEXT02,Utilisez 1 Batterie pour allumer [c][fd6317]1 à 3[-][/c] Diodes
+ACTIVITY_REPAIR_CONSOLE_TEXT03,Récompenses
+ACTIVITY_REPAIR_CONSOLE_TEXT04,Utiliser
+ACTIVITY_REPAIR_CONSOLE_TEXT05,Récompense Principale
+ACTIVITY_REPAIR_CONSOLE_TEXT06,Récompense Basique
+ACTIVITY_REPAIR_CONSOLE_TEXT07,Tour {1}
+ACTIVITY_REPAIR_CONSOLE_TEXT08,Tour {1} (et +)
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. Durant cet événement, utilisez des Batteries pour rétablir l'alimentation du circuit électrique. Consommez 1 Batterie pour allumer aléatoirement 1 à 3 Diodes.|2. Lorsque les 5 Diodes d'une ligne ou colonne sont allumées, vous obtiendrez une Récompense Basique.|3. Une fois que les 5 Diodes en diagonale sont allumées (d'en haut à gauche jusqu'en bas à droite), vous obtiendrez la Récompense Principale du tour actuel et passerez au tour suivant.|4. Appuyez sur Récompenses pour voir les détails des récompenses par tour.|5. Moyen d'obtention des Batteries : Les Missions de Polly et Pack de Réparation."
 GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
-GUILD_NEW_WAR_TIPS01,休息期結束，即將進入備戰期
-GUILD_NEW_WAR_TIPS02,戰鬥期結束，即將進入休息期
+GUILD_NEW_WAR_TIPS01,"La phase : Trêve est terminée, la phase : Préparation commencera bientôt..."
+GUILD_NEW_WAR_TIPS02,"La phase : Bataille est terminée, la phase : Trêve commencera bientôt..."
 GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
-GUILD_NEW_WAR_TIPS04,當前挑戰次數不足
-GUILD_NEW_WAR_TIPS05,需要加入社團
-GUILD_NEW_WAR_TIPS06,社團等級需達到12級且成員達到5人
+GUILD_NEW_WAR_TIPS04,Chance de Défi insuffisante !
+GUILD_NEW_WAR_TIPS05,Veuillez d'abord rejoindre une Guilde.
+GUILD_NEW_WAR_TIPS06,Nécessite que le niveau de votre Guilde ait atteint 12 et votre Guilde ait eu au moins 5 membres !
 GUILD_NEW_WAR_TIPS07,已達到最大值
-GUILD_NEW_WAR_TXET01,賽季
-GUILD_NEW_WAR_TXET02,下場對決開始：
-GUILD_NEW_WAR_TXET03,賽季排名
-GUILD_NEW_WAR_TXET04,對決記錄
-GUILD_NEW_WAR_TXET05,新賽季對決開始:
-GUILD_NEW_WAR_TXET06,對決{1}
-GUILD_NEW_WAR_TXET07,暫無對決記錄
-GUILD_NEW_WAR_TXET08,備戰期
-GUILD_NEW_WAR_TXET09,戰鬥期
-GUILD_NEW_WAR_TXET10,總戰力
-GUILD_NEW_WAR_TXET11,社長
-GUILD_NEW_WAR_TXET12,比賽積分
-GUILD_NEW_WAR_TXET13,獎勵
-GUILD_NEW_WAR_TXET14,對決勝利獎勵
-GUILD_NEW_WAR_TXET15,對決失敗獎勵
-GUILD_NEW_WAR_TXET16,進入場地
-GUILD_NEW_WAR_TXET17,駐守 {1}/{2}
-GUILD_NEW_WAR_TXET18,防守陣容
-GUILD_NEW_WAR_TXET19,戰報
-GUILD_NEW_WAR_TXET20,聊天
-GUILD_NEW_WAR_TXET21,獎勵
-GUILD_NEW_WAR_TXET22,集火
-GUILD_NEW_WAR_TXET23,每次拆除減少旗幟30點耐久
-GUILD_NEW_WAR_TXET24,{1}號旗幟
-GUILD_NEW_WAR_TXET25,耐久：{1}/{2}
-GUILD_NEW_WAR_TXET26,可以派遣防守成員
-GUILD_NEW_WAR_TXET27,調整
-GUILD_NEW_WAR_TXET28,防守社員
-GUILD_NEW_WAR_TXET29,空閒
-GUILD_NEW_WAR_TXET30,主壘
-GUILD_NEW_WAR_TXET31,中壘{1}
-GUILD_NEW_WAR_TXET32,前壘{1}
-GUILD_NEW_WAR_TXET33,旗幟
-GUILD_NEW_WAR_TXET34,戰力
-GUILD_NEW_WAR_TXET35,取消
-GUILD_NEW_WAR_TXET36,確定
-GUILD_NEW_WAR_TXET37,個人貢獻積分：{1}
-GUILD_NEW_WAR_TXET38,進攻次數：{1}/{2}
-GUILD_NEW_WAR_TXET39,賽季結束
-GUILD_NEW_WAR_TXET40,社團排名
-GUILD_NEW_WAR_TXET41,個人排名
-GUILD_NEW_WAR_TXET42,獎勵
-GUILD_NEW_WAR_TXET43,社團獎勵
-GUILD_NEW_WAR_TXET44,個人獎勵
-GUILD_NEW_WAR_TXET45,賽季結算獎勵：
-GUILD_NEW_WAR_TXET46,對決結算獎勵：
-GUILD_NEW_WAR_TXET47,--
-GUILD_NEW_WAR_TXET48,對戰資訊
-GUILD_NEW_WAR_TXET49,可以拖動或點擊進行調整
-GUILD_NEW_WAR_TXET50,挑戰
-GUILD_NEW_WAR_TXET51,旗幟資訊
-GUILD_NEW_WAR_TXET52,每次攻擊扣除20點耐久
-GUILD_NEW_WAR_TXET53,進攻獎勵
-GUILD_NEW_WAR_TXET54,進攻
-GUILD_NEW_WAR_TXET55,個人貢獻積分 +{1}
-GUILD_NEW_WAR_TXET56,獎勵
-GUILD_NEW_WAR_TXET57,敵方防守成員勇氣 -{1}
-GUILD_NEW_WAR_TXET58,第{1}場對決
-GUILD_NEW_WAR_TXET59,個人積分社團排名
-GUILD_NEW_WAR_TXET60,個人積分
-GUILD_NEW_WAR_TXET61,社團積分 +{1}
-GUILD_NEW_WAR_TXET62,Les récompenses seront envoyées par courrier
-GUILD_NEW_WAR_TXET63,{玩家某某}進攻了敵方{左前壘}的{8}號旗幟，消耗了敵人{100}點勇氣
-GUILD_NEW_WAR_TXET64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
-GUILD_NEW_WAR_TXET65,{1}摧毀了敵方{2}
-GUILD_NEW_WAR_TXET66,結束
-GUILD_NEW_WAR_TXET67,對戰{1}
-GUILD_NEW_WAR_TXET68,挑戰次數：{1}
-GUILD_NEW_WAR_TXET69,戰鬥中...
-GUILD_NEW_WAR_TXET70,戰鬥記錄
-GUILD_NEW_WAR_TXET71,個人積分
-GUILD_NEW_WAR_TXET72,敵方勇氣
-GUILD_NEW_WAR_TXET73,清理場地
-GUILD_NEW_WAR_TXET74,我方
-GUILD_NEW_WAR_TXET75,Ennemi
+GUILD_NEW_WAR_TEXT01,Saison
+GUILD_NEW_WAR_TEXT02,Prochaine Bataille：
+GUILD_NEW_WAR_TEXT03,Classement
+GUILD_NEW_WAR_TEXT04,Historique
+GUILD_NEW_WAR_TEXT05,Bataille de Nouvelle Saison :
+GUILD_NEW_WAR_TEXT06,Bataille {1}
+GUILD_NEW_WAR_TEXT07,Aucun Historique
+GUILD_NEW_WAR_TEXT08,Phase de Préparation
+GUILD_NEW_WAR_TEXT09,Phase de Bataille
+GUILD_NEW_WAR_TEXT10,Puissance Totale
+GUILD_NEW_WAR_TEXT11,Chef
+GUILD_NEW_WAR_TEXT12,Point de Guilde
+GUILD_NEW_WAR_TEXT13,Récompense
+GUILD_NEW_WAR_TEXT14,Victoire
+GUILD_NEW_WAR_TEXT15,Défaite
+GUILD_NEW_WAR_TEXT16,Entrer
+GUILD_NEW_WAR_TEXT17,Déployé {1}/{2}
+GUILD_NEW_WAR_TEXT18,Formation Défensive
+GUILD_NEW_WAR_TEXT19,Rapport
+GUILD_NEW_WAR_TEXT20,Tchat
+GUILD_NEW_WAR_TEXT21,Récompense
+GUILD_NEW_WAR_TEXT22,Raid
+GUILD_NEW_WAR_TEXT23,每次拆除減少旗幟30點耐久
+GUILD_NEW_WAR_TEXT24,Drapeau {1}
+GUILD_NEW_WAR_TEXT25,Durabilité：{1}/{2}
+GUILD_NEW_WAR_TEXT26,Déployez un membre pour défendre le Drapeau
+GUILD_NEW_WAR_TEXT27,Modifier
+GUILD_NEW_WAR_TEXT28,Armée Défensive
+GUILD_NEW_WAR_TEXT29,Disponible
+GUILD_NEW_WAR_TEXT30,Extrémité
+GUILD_NEW_WAR_TEXT31,中壘{1}
+GUILD_NEW_WAR_TEXT32,前壘{1}
+GUILD_NEW_WAR_TEXT33,Drapeau
+GUILD_NEW_WAR_TEXT34,Puissance
+GUILD_NEW_WAR_TEXT35,Annuler
+GUILD_NEW_WAR_TEXT36,Confirmer
+GUILD_NEW_WAR_TEXT37,Contribution Individuelle：{1}
+GUILD_NEW_WAR_TEXT38,Chance d'Attaque：{1}/{2}
+GUILD_NEW_WAR_TEXT39,Fin de Saison
+GUILD_NEW_WAR_TEXT40,Guilde
+GUILD_NEW_WAR_TEXT41,Individuel
+GUILD_NEW_WAR_TEXT42,Récompense
+GUILD_NEW_WAR_TEXT43,Guilde
+GUILD_NEW_WAR_TEXT44,Individuel
+GUILD_NEW_WAR_TEXT45,Calcul des récompenses saisonnières：
+GUILD_NEW_WAR_TEXT46,Calcul des récompenses de Bataille：
+GUILD_NEW_WAR_TEXT47,--
+GUILD_NEW_WAR_TEXT48,Détails de Bataille
+GUILD_NEW_WAR_TEXT49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TEXT50,Défier
+GUILD_NEW_WAR_TEXT51,Détails de Drapeau
+GUILD_NEW_WAR_TEXT52,Réduit de 20 la durabilité du Drapeau pour chaque attaque !
+GUILD_NEW_WAR_TEXT53,Récompense d'Attaque
+GUILD_NEW_WAR_TEXT54,Attaquer
+GUILD_NEW_WAR_TEXT55,Contribution Individuelle +{1}
+GUILD_NEW_WAR_TEXT56,Récompense
+GUILD_NEW_WAR_TEXT57,Moral d'ennemi -{1}
+GUILD_NEW_WAR_TEXT58,{1}e Bataille
+GUILD_NEW_WAR_TEXT59,Classement Individuel
+GUILD_NEW_WAR_TEXT60,Contribution Individuelle
+GUILD_NEW_WAR_TEXT61,Point de Guilde +{1}
+GUILD_NEW_WAR_TEXT62,Les récompenses vous seront envoyées par courrier
+GUILD_NEW_WAR_TEXT63,{1}進攻了敵方{2}的{3}號旗幟，消耗了敵人{4}點精力
+GUILD_NEW_WAR_TEXT64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
+GUILD_NEW_WAR_TEXT65,{1}摧毀了敵方{2}
+GUILD_NEW_WAR_TEXT66,Fins dans
+GUILD_NEW_WAR_TEXT67,Bataille {1}
+GUILD_NEW_WAR_TEXT68,Chances de Défi：{1}
+GUILD_NEW_WAR_TEXT69,En cours de Bataille...
+GUILD_NEW_WAR_TEXT70,Historique
+GUILD_NEW_WAR_TEXT71,Contribution Individuelle
+GUILD_NEW_WAR_TEXT72,Moral d'ennemi
+GUILD_NEW_WAR_TEXT73,清理場地
+GUILD_NEW_WAR_TEXT74,Allié
+GUILD_NEW_WAR_TEXT75,Ennemi
+ACTIVITY_LAFULI_RUDDER_TITLE,Le Défi de Lavli
+ACTIVITY_LAFULI_RUDDER_TEXT,Consommer {1} Gouvernails (n'inclut pas Gouvernail Avancé)
+GUILD_NEW_WAR_TEXT76,Classement
+GUILD_NEW_WAR_TEXT77,Récompense
+ACTIVITY_REPAIR_CONSOLE_TEXT09,"Vous avez collecté la Récompense Principale de ce tour, cependant il vous reste des Récompenses Basiques à débloquer, voulez-vous tout de même passer au tour suivant ?"
+ACTIVITY_REPAIR_CONSOLE_TEXT10,Continuer
+ACTIVITY_REPAIR_CONSOLE_TEXT11,Oui
+QUICK_FORMATION_TEXT25,Sauvegarder

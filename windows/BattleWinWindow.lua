@@ -1190,7 +1190,8 @@ function BattleWinWindow:updateShrineHurdlePart()
 				awake = partner_info.awake,
 				equips = partner_info.equips,
 				uiRoot = self.shrinePartnerGroup_.gameObject,
-				is_vowed = partner_info.is_vowed
+				is_vowed = partner_info.is_vowed,
+				star_origin = partner_info.star_origin
 			}
 			local icon = xyd.getHeroIcon(paramsA)
 
@@ -1934,6 +1935,9 @@ end
 
 function BattleWinWindow:initTowerPractice()
 	local battleReport = self.battleParams.battle_report
+
+	dump(battleReport, "battleReport")
+
 	local teamA = battleReport.teamA
 	local petA = battleReport.petA
 
@@ -1944,6 +1948,7 @@ function BattleWinWindow:initTowerPractice()
 			local icon = nil
 			local tableId = data.table_id
 			local lev = data.level
+			local partnerID = data.partner_id
 			local partnerInfo = nil
 			local partner = Partner.new()
 
@@ -1952,6 +1957,8 @@ function BattleWinWindow:initTowerPractice()
 				lev = lev,
 				awake = data.awake,
 				show_skin = data.show_skin,
+				partnerID = partnerID,
+				star_origin = data.star_origin,
 				is_vowed = data.is_vowed,
 				equips = {
 					0,

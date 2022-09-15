@@ -92,7 +92,14 @@ function FortItem:ctor(go, params)
 end
 
 function FortItem:initItem()
-	self.maxFortId = self.stageTable:getFortID(self.maxStage + 1)
+	local nextMaxStage = self.maxStage + 1
+	local maxTableID = xyd.tables.stageTable:getMaxID()
+
+	if maxTableID < nextMaxStage then
+		nextMaxStage = maxTableID
+	end
+
+	self.maxFortId = self.stageTable:getFortID(nextMaxStage)
 
 	xyd.setUISprite(self.fortImg, xyd.Atlas.CAMPAIGIN_01, self.fortTable:getFortImgId(self.fortId))
 
@@ -388,7 +395,13 @@ end
 function CampaignFortWindow:initLvButton()
 	NGUITools.DestroyChildren(self.buttonsGroup)
 
-	local maxLv = self.fortTable:getLv(self.stageTable:getFortID(self.stageTable:getNextStage(self.maxStage)))
+	local nextStage = self.stageTable:getNextStage(self.maxStage)
+
+	if nextStage == -1 then
+		nextStage = self.stageTable:getMaxID()
+	end
+
+	local maxLv = self.fortTable:getLv(self.stageTable:getFortID(nextStage))
 	self.fortBtnList = {}
 
 	for i = 1, 5 do

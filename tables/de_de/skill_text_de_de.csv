@@ -8572,8 +8572,8 @@ Er hält seine schützende Hand über mir und behütet mich. Wird ihr irgendein 
 Effekt: Wird für die Auslösung von ""Die Hand Gottes"" benötigt."
 502102,Himmelsinsel,Schutzunterstand I,"Krit. Widerstand aller Gegner um 10% erhöht (Bei der Berechnung, ob der Angriff ein kritischer Treffer wird oder nicht, wird die Krit. Rate des Angreifers um den Wert des Krit. Widerstands des Ziels verringert)."
 502103,Himmelsinsel,Schutzunterstand II,"Krit. Widerstand aller Gegner um 20% erhöht (Bei der Berechnung, ob der Angriff ein kritischer Treffer wird oder nicht, wird die Krit. Rate des Angreifers um den Wert des Krit. Widerstands des Ziels verringert)."
-503103,Himmelsinsel,Gesteigerter Kampfgeist I,Zum Ende der Runde wird der Angriff aller Gegner um 1% erhöht.
-503104,Himmelsinsel,Gesteigerter Kampfgeist II,Zum Ende der Runde wird der Angriff aller Gegner um 2% erhöht.
+503103,Himmelsinsel,Gesteigerter Kampfgeist I,Erhöht zum Ende der Runde den Angriff aller Gegner der Himmelsinsel um 2%
+503104,Himmelsinsel,Gesteigerter Kampfgeist II,Erhöht zum Ende der Runde den Angriff aller Gegner der Himmelsinsel um 5%
 509999,Himmelsinsel,Unheilbar,Die Gegner können ihre HP während des Kampfes nicht regenerieren.
 502104,Himmelsinsel,Immunität,Die Gegner sind in den ersten 2 Runden des Kampfes immun gegen Debuffs.
 5501000,Fiona,Standardangriff,Standardangriff
@@ -9740,8 +9740,8 @@ Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminde
 753017044,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 125% gesteigert und ihre erlittenen Schäden um max. 40% gesenkt (sind nur noch 40% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 125% bzw. 40%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 66% ihrer max. HP erhöhen."
 753017045,Robbie,Protokoll 4: Overdrive,"Das wird unser letzter Kampf! Je niedriger die HP von Robbie fallen, desto weiter erhöhen sich ihr Schadensoutput und ihre Schadensreduzierung aller Schäden. Ihr zugefügter Schaden wird max. um 130% gesteigert und ihre erlittenen Schäden um max. 44% gesenkt (sind nur noch 40% ihrer max. HP vorhanden, werden diese beiden Effekte sofort vollständig freigesetzt (direkt auf 130% bzw. 44%)). Fallen ihre HP das erste Mal unter 30% ihrer max. HP, dann wird sie ihre HP um 70% ihrer max. HP erhöhen."
 501108,Himmelsinsel,Energieumwandlung,"Bevor Angie ihre Fertigkeiten einsetzen wird, verwendet sie ihre alle Energie und erhöht den Schaden eigenes Standardangriffs um 10%."
-501109,Himmelsinsel,Zweiter Angriff I,"Die gegnerische Silcotti hat eine 50%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen, aber ihr Angriff wird um 5% reduziert."
-501110,Himmelsinsel,Zweiter Angriff II,"Die gegnerische Silcotti hat eine 100%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen, aber ihr Angriff wird um 10% reduziert."
+501109,Himmelsinsel,Zweiter Angriff I,"Die Gegner der Himmelsinsel haben eine 50%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen."
+501110,Himmelsinsel,Zweiter Angriff II,"Die Gegner der Himmelsinsel haben eine 100%ige Wahrscheinlichkeit, Standardangriff 2 Mal durchzuführen."
 502108,Himmelsinsel,Kristallisieren - Angriffsraub,"Wird eines deiner Mädchen kristallisiert, wird ihr Angriff 3 Runden lang um 20% verringert und der Angriff aller Gegner 3 Runden lang um 5% erhöht."
 502109,Himmelsinsel,Kristallisieren - Energieraub,"Wird eines deiner Mädchen kristallisiert, wird ihre Energie um 100 verringert und die Energie aller Gegner um 50 erhöht."
 503112,Himmelsinsel,Schadensreduzierung,"Erleidet ein Mädchen auf dem Schlachtfeld (Gegner eingeschlossen) kontinuierlichen Schaden, wird die Schadensreduzierungsrate aller Gegner 3 Runden lang um 5% erhöht."
@@ -13153,3 +13153,10 @@ Fertigkeitseffekt. Kann nicht gestapelt werden. Wird der Träger angegriffen, wi
 Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Krit. Rate um 30% und die Blockade um 30%.
 [c][e28002]Drachenseele[-][/c]
 Fertigkeitseffekt. Erhöht den heiligen Schaden der besessenen Verbündeten um 30% und die Reduzierung aller Schäden um 30%. Führt das besessene Mädchen aktive Fertigkeit oder Standardangriffe durch, wird Raenvya den Zielen durch Aufladung einen Schaden in Höhe von 550% des AW und einen weiteren Schaden in Höhe von 30% der verlorenen HP der Ziele (maximal 1500% von Raenvyas AW) zufügen. Hat Raenvya während der Besessenheit durch eigene Aufladung einen Gegner getötet, wird sie sich zu Beginn nächster Runde mit 100% HP wiederbeleben. Ist das besessene Mädchen während der Besessenheit gestorben, dann verschwindet dieser Fertigkeitseffekt und Raenvya stirbt auch."
+503119,Himmelsinsel,Seufzer der Drachenseele,Der Fertigkeitseffekt [c][e28002]Drachenseele[-][/c] ermöglich deiner Raenvya keine Wiederbelebung mehr.
+503120,Himmelsinsel,Verteidigungshaltung,"Jedes Mal wenn der Boss von Standardangriffen oder aktiven Fertigkeiten angegriffen wird, wird seine Reduzierung aller Schäden um 5% erhöht, was entfernt wird, sobald er aktive Fertigkeit durchführt."
+502118,Himmelsinsel,Entfernung I,Zum Ende jeder Runde wird dem Boss 1 Schicht von zufälligen kontinuierlichen Schäden entfernt.
+502119,Himmelsinsel,Entfernung II,Zum Ende jeder Runde werden dem Boss 3 Schichten von zufälligen kontinuierlichen Schäden entfernt.
+502120,Himmelsinsel,Entfernung III,Zum Ende jeder Runde werden dem Boss 5 Schichten von zufälligen kontinuierlichen Schäden entfernt.
+502121,Himmelsinsel,Gleichwertiger Austausch I,"Der Boss erhöht den Schaden gegen Ziele unter Kontrolle um 10%. Wird er kontrolliert, wird der von ihm erlittenen Schaden um 10% erhöht."
+502122,Himmelsinsel,Gleichwertiger Austausch II,"Der Boss erhöht den Schaden gegen Ziele unter Kontrolle um 20%. Wird er kontrolliert, wird der von ihm erlittenen Schaden um 20% erhöht."

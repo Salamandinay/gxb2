@@ -306,7 +306,10 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN_GIFTBAG] = require("app.models.datas.ActivityLegendarySkinGiftbagData"),
 	[xyd.ActivityID.ACTIVITY_LEGENDARY_SKIN_GIFTBAG] = require("app.models.datas.ActivityLegendarySkinGiftbagData"),
 	[xyd.ActivityID.ACTIVITY_INVITATION_SENIOR] = require("app.models.datas.ActivityInvitationSeniorData"),
-	[xyd.ActivityID.ACTIVITY_FOOD_CONSUME] = require("app.models.datas.ActivityFoodConsumeData")
+	[xyd.ActivityID.ACTIVITY_FOOD_CONSUME] = require("app.models.datas.ActivityFoodConsumeData"),
+	[xyd.ActivityID.ACTIVITY_REPAIR_CONSOLE] = require("app.models.datas.ActivityRepairConsoleData"),
+	[xyd.ActivityID.ACTIVITY_REPAIR_GIFTBAG] = require("app.models.datas.ActivityRepairGiftBag"),
+	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = require("app.models.datas.ActivityRepairMissionData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

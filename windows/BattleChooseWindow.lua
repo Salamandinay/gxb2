@@ -280,6 +280,7 @@ function BattleChooseWindow:getUIComponet()
 	self.labelTimeTeam = self.groupTeamTime:ComponentByName("timeGroup/labelTimeTeam", typeof(UILabel))
 	self.timeTeam = self.groupTeamTime:ComponentByName("timeGroup/timeTeam", typeof(UILabel))
 	self.gArena3v3 = self.groupPVP:NodeByName("gArena3v3").gameObject
+	self.arena3v3Image = self.gArena3v3:ComponentByName("e:Image", typeof(UISprite))
 	self.arena3v3Label = self.gArena3v3:ComponentByName("arena3v3Label", typeof(UISprite))
 	self.arena3v3Label2 = self.gArena3v3:ComponentByName("arena3v3Label2", typeof(UILabel))
 	self.alertImg4 = self.gArena3v3:ComponentByName("alertImg4", typeof(UISprite))
@@ -1667,6 +1668,12 @@ function BattleChooseWindow:updateArena3v3Show()
 		self.time3v3:X(width1 / 2 - width2 / 2)
 	else
 		self.group3v3Time:SetActive(false)
+	end
+
+	if xyd.models.arena3v3:getIsOld() ~= nil then
+		xyd.setUISpriteAsync(self.arena3v3Image, nil, "btn_arena_3v3_new")
+	else
+		xyd.setUISpriteAsync(self.arena3v3Image, nil, "btn_arena_3v3")
 	end
 end
 

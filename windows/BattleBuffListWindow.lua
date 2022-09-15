@@ -52,6 +52,12 @@ end
 function BattleBuffListWindow:updateFighterIcon()
 	local icon = nil
 	local data = self.fighter
+	local star_origin = nil
+
+	if data.heroData and data.heroData.star_origin then
+		star_origin = data.heroData.star_origin
+	end
+
 	local tableId = data.tableID_
 	local lev = data.level
 	local partnerInfo = nil
@@ -66,6 +72,7 @@ function BattleBuffListWindow:updateFighterIcon()
 			tableID = pTableID,
 			lev = lev,
 			star = star,
+			star_origin = star_origin,
 			skin_id = data:getSkin()
 		}
 	else
@@ -76,6 +83,7 @@ function BattleBuffListWindow:updateFighterIcon()
 			lev = lev,
 			awake = data.awake,
 			show_skin = data.isShowSkin_,
+			star_origin = star_origin,
 			equips = {
 				0,
 				0,

@@ -9089,8 +9089,8 @@ Lorsque Térèsa est marquée, elle consomme 1 couche de [c][e28002]Marque Divin
 Utilisée pour déclencher la Compétence Passive ""Protection du Seigneur"" de Térèsa."
 502102,Îles Célestes,Barrière I,Augmente la Résistance aux Crit. des ennemis de 10% (La Résistance aux Crit. peut diminuer la probabilité de subir un Coup Critique)
 502103,Îles Célestes,Barrière II,Augmente la Résistance aux Crit. des ennemis de 20% (La Résistance aux Crit. peut diminuer la probabilité de subir un Coup Critique)
-503103,Îles Célestes,Slogan Mobilisateur I,"À la fin du chaque tour, augmente l'Attaque de tous les ennemis de 1%."
-503104,Îles Célestes,Slogan Mobilisateur I,"À la fin du chaque tour, augmente l'Attaque de tous les ennemis de 2%."
+503103,Îles Célestes,Slogan Mobilisateur I,"À la fin de chaque tour, augmente l'Attaque de tous les ennemis de 2%."
+503104,Îles Célestes,Slogan Mobilisateur I,"À la fin de chaque tour, augmente l'Attaque de tous les ennemis de 5%."
 509999,Îles Célestes,Blessure Incurable,Tous les ennemis ne peuvent pas se soigner.
 502104,Îles Célestes,Immunisation,Tous les ennemis sont immunisés contre les Effets Négatifs pendant les 2 premiers tours.
 5501000,Frexie,Attaque Basique,Attaque Basique
@@ -10272,8 +10272,8 @@ Chaque couche de Charge Laser augmente sa Résistance à la réduction d\'Énerg
 753017044,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 40%, elle pourra augmenter ses dégâts infligés de 125% au maximum et sa Résistance Totale de 40% au maximum.\nLa première fois que ses PV seront inférieurs à 30%, elle récupérera 66% de ses PV Max."
 753017045,Robbie,Code 4：Déchaînement,"Ce code ne sera activé que dans les situations les plus extrêmes ! Plus elle perdra de PV durant la bataille, plus ses dégâts infligés et sa Résistance Totale seront augmentés. Lorsque ses PV sont inférieurs à 40%, elle pourra augmenter ses dégâts infligés de 130% au maximum et sa Résistance Totale de 44% au maximum.\nLa première fois que ses PV seront inférieurs à 30%, elle récupérera 70% de ses PV Max."
 501108,Îles Célestes,Conversion d'Énergie,"Avant qu'Angélique n'attaque, toutes ses Énergies seront réduites et les dégâts infligés par son Attaque Basique seront augmentés de 10%."
-501109,Îles Célestes,Double Attaque I,"L'ennemie Selkis a 50% de chance de lancer son Attaque Basique une seconde fois, mais son Attaque sera réduite de 5%."
-501110,Îles Célestes,Double Attaque II,"L'ennemie Selkis a 100% de chance de lancer son Attaque Basique une seconde fois, mais son Attaque sera réduite de 10%."
+501109,Îles Célestes,Double Attaque I,L'ennemi a 50% de chance de lancer son Attaque Basique 2 fois.
+501110,Îles Célestes,Double Attaque II,L'ennemi a 100% de chance de lancer son Attaque Basique 2 fois.
 502108,Îles Célestes,Cristallisation - Absorption d'Attaque,"Lorsqu'une alliée est cristallisée, son Attaque sera réduite de 20% et l'Attaque de tous les ennemis sera augmentée de 5% pendant 3 tours."
 502109,Îles Célestes,Cristallisation - Absorption d'Énergie,"Lorsqu'une alliée est cristallisée, ses Énergies seront réduites de 100 et tous les ennemis récupéreront 50 Énergies."
 503112,Îles Célestes,Résistance aux Dégâts,"Lorsqu'une alliée ou un ennemi subit des Dégâts sur la Durée, la Résistance aux Dégâts de tous les ennemis sera augmentée de 5% pendant 3 tours."
@@ -14436,3 +14436,10 @@ Réduit de 30% les Critiques et de 30% le Blocage de la cible marquée.
 Augmente de 30% les Dégâts Divins et de 30% la Résistance Totale de la cible sous la Bénédiction du Dragon.
 Lorsque cette cible lance sa Compétence Active ou son Attaque Basique aux ennemis, Melly leur infligera des dégâts (550% de l\'Attaque de Melly) et lancera également une attaque (30% des PV perdus de chaque ennemi attaqué, 1500% de la valeur de l\'Attaque de Melly au maximum).
 Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, elle se ressuscitera avec 100% de ses PV au tour suivant. Si cette cible est vaincue, la Bénédiction du Dragon disparaîtra (Melly disparaîtra également et ne pourra plus attaquer)."
+503119,Îles Célestes,Dragon Éteint,L'ennemie Melly ne se ressuscitera pas même si elle aide une alliée sous la [c][e28002]Bénédiction du Dragon[-][/c] à vaincre un ennemi.
+503120,Îles Célestes,État Défensif,Augmente de 5% la Résistance Totale d'un ennemi à chaque fois qu'il subit des dégâts (cet effet sera enlevé après qu'il ait lancé sa Compétence Active).
+502118,Îles Célestes,Purge I,"À la fin du tour, l'ennemi enlève aléatoirement 1 couche parmi ses Dégâts sur la Durée subis."
+502119,Îles Célestes,Purge II,"À la fin du tour, l'ennemi enlève aléatoirement 3 couches parmi ses Dégâts sur la Durée subis."
+502120,Îles Célestes,Purge III,"À la fin du tour, l'ennemi enlève aléatoirement 5 couches parmi ses Dégâts sur la Durée subis."
+502121,Îles Célestes,Échange Égal I,L'ennemi subit 10% de dégâts supplémentaires lorsqu'il est contrôlé et inflige 10% de dégâts supplémentaires à la cible contrôlée.
+502122,Îles Célestes,Échange Égal II,L'ennemi subit 20% de dégâts supplémentaires lorsqu'il est contrôlé et inflige 20% de dégâts supplémentaires à la cible contrôlée.

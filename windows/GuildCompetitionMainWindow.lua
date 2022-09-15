@@ -34,6 +34,10 @@ function PersonItem:ctor(goItem, itemdata)
 
 	self:initItem(itemdata)
 	self:initBaseInfo(itemdata)
+
+	if xyd.Global.lang == "fr_fr" then
+		self.progressNameText.text = "PV"
+	end
 end
 
 function PersonItem:initBaseInfo(itemdata)

@@ -103,6 +103,7 @@ function Dungeon:getNewPartners(partners)
 			},
 			show_skin = partner.show_skin,
 			equips = partner.equips,
+			star_origin = partner.star_origin,
 			is_vowed = partner.is_vowed
 		}
 

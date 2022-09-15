@@ -7,6 +7,12 @@ function ArenaNewSeasonServerRankWindow:ctor(name, params)
 	ArenaNewSeasonServerRankWindow.super.ctor(self, name, params)
 
 	self.infos = params.infos
+	self.slaveIds = params.slaveIds
+	self.type = "arena"
+
+	if params.type then
+		self.type = params.type
+	end
 end
 
 function ArenaNewSeasonServerRankWindow:initWindow()
@@ -41,10 +47,14 @@ function ArenaNewSeasonServerRankWindow:registerEvent()
 end
 
 function ArenaNewSeasonServerRankWindow:layout()
-	local slaveIds = xyd.models.arena:getSlaveIds()
+	local slaveIds = self.slaveIds
 
 	if slaveIds ~= nil and #slaveIds > 0 then
+		slaveIds = xyd.cloneTable(slaveIds)
+
 		table.sort(slaveIds)
+	else
+		slaveIds = {}
 	end
 
 	local allInfoArr = {}
@@ -110,6 +120,7 @@ function ArenaNewSeasonServerRankWindow:layout()
 		self.topBgImg2.height = 83 + 113 * length
 	end
 
+	dump(setInfos, "放進去的東西")
 	self:waitForFrame(2, function ()
 		self.wrapContent:setInfos(setInfos, {})
 		self.rankListScrollerUIScrollView:ResetPosition()
@@ -199,10 +210,16 @@ function ArenaNewSeasonServerRankItem:update(index, allInfo)
 		avatar_frame_id = info.avatar_frame_id,
 		callback = function ()
 			if info.player_id ~= xyd.Global.playerID then
-				xyd.WindowManager.get():openWindow("arena_formation_window", {
-					player_id = info.player_id,
-					is_robot = info.is_robot
-				})
+				if self.parent.type == "arena" then
+					xyd.WindowManager.get():openWindow("arena_formation_window", {
+						player_id = info.player_id,
+						is_robot = info.is_robot
+					})
+				elseif self.parent.type == "arena3v3" then
+					xyd.WindowManager.get():openWindow("arena_3v3_formation_window", {
+						player_id = info.player_id
+					})
+				end
 			end
 		end
 	})

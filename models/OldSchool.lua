@@ -126,7 +126,13 @@ function OldSchool:updateRankList()
 	end
 
 	table.sort(self.extraRank_, function (a, b)
-		return tonumber(b.score) < tonumber(a.score)
+		if tonumber(a.score) ~= tonumber(b.score) then
+			return tonumber(b.score) < tonumber(a.score)
+		elseif a.time and b.time then
+			return a.time < b.time
+		else
+			return false
+		end
 	end)
 end
 

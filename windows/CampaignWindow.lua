@@ -451,11 +451,13 @@ function CampaignWindow:checkCampaignRedState()
 		local maxStage = self.mapInfo.max_stage or 0
 		local maxTableID = xyd.tables.stageTable:getMaxID()
 		local fort_id = xyd.tables.stageTable:getFortID(maxStage) or 1
-		local fort_id2 = xyd.tables.stageTable:getFortID(maxStage + 1)
+		local nextMaxStage = maxStage + 1
 
-		if maxTableID <= fort_id2 then
-			fort_id2 = maxTableID
+		if maxTableID < nextMaxStage then
+			nextMaxStage = maxTableID
 		end
+
+		local fort_id2 = xyd.tables.stageTable:getFortID(nextMaxStage)
 
 		if fort_id <= fort_id2 then
 			fort_id = fort_id2

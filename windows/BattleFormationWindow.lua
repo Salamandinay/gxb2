@@ -2160,7 +2160,6 @@ function BattleFormationWindow:gameAssistantArenaBattle(partnerParams)
 		power = self.power
 	}
 
-	dump(presetData.arenaBattleFormationInfo)
 	xyd.closeWindow("battle_formation_window")
 end
 
@@ -2172,16 +2171,12 @@ function BattleFormationWindow:gameAssistantGuildBattle(partnerParams)
 	end
 
 	local presetData = xyd.models.gameAssistant.presetData
-
-	dump(presetData.guildBattleFormationInfo)
-
 	presetData.guildBattleFormationInfo = {
 		pet_id = self.pet,
 		partners = partnerParams,
 		power = self.power
 	}
 
-	dump(xyd.models.gameAssistant.presetData.guildBattleFormationInfo)
 	xyd.closeWindow("battle_formation_window")
 end
 
@@ -2948,10 +2943,12 @@ function BattleFormationWindow:initSHPartnerData(groupID, needUpdateTop)
 	table.sort(partnerDataList, function (a, b)
 		local lva = a.partnerInfo.lv or a.partnerInfo.level
 		local lvb = b.partnerInfo.lv or b.partnerInfo.level
-		local table_id_a = a.partnerInfo.table_id * 1000
-		local table_id_b = b.partnerInfo.table_id * 1000
+		local table_id_a = a.partnerInfo.table_id * 100
+		local table_id_b = b.partnerInfo.table_id * 100
+		local a_partner_id = a.partnerInfo.pr_id or a.partnerInfo.partnerID
+		local b_partner_id = b.partnerInfo.pr_id or b.partnerInfo.partnerID
 
-		return lva * 1000000000 + table_id_a + a.partnerInfo.partnerID > lvb * 1000000000 + table_id_b + b.partnerInfo.partnerID
+		return lva * 1000000000 + table_id_a + a_partner_id < lvb * 1000000000 + table_id_b + b_partner_id
 	end)
 
 	for i in pairs(self.nowPartnerList) do
@@ -3423,6 +3420,7 @@ function BattleFormationWindow:onClickheroIcon(partnerInfo, isChoose, pos, needA
 			potentials = partnerInfo.potentials,
 			skill_index = partnerInfo.skill_index,
 			love_point = partnerInfo.love_point,
+			star_origin = partnerInfo.star_origin,
 			travel = partnerInfo.travel
 		}
 		local copyIcon = import("app.components.HeroIcon").new(self["container" .. tostring(posId)].gameObject)

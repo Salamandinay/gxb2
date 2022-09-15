@@ -159,8 +159,15 @@ function Arena3v3Window:ctor(name, params)
 
 	table.insert(needLoadRes, xyd.getTexturePath("arena3v3_title_bg"))
 	table.insert(needLoadRes, xyd.getTexturePath("arena_operator_bg"))
-	table.insert(needLoadRes, xyd.getTexturePath("arena_3v3_scene"))
-	table.insert(needLoadRes, xyd.getTexturePath("arena3v3_title_" .. tostring(xyd.Global.lang)))
+
+	if xyd.models.arena3v3:getIsOld() ~= nil then
+		table.insert(needLoadRes, xyd.getTexturePath("arena_3v3_new_scene"))
+		table.insert(needLoadRes, xyd.getTexturePath("arena3v3_title_new_" .. tostring(xyd.Global.lang)))
+	else
+		table.insert(needLoadRes, xyd.getTexturePath("arena_3v3_scene"))
+		table.insert(needLoadRes, xyd.getTexturePath("arena3v3_title_" .. tostring(xyd.Global.lang)))
+	end
+
 	self:setResourcePaths(needLoadRes)
 end
 
@@ -173,11 +180,15 @@ function Arena3v3Window:getUIComponent()
 	self.top = self.main:NodeByName("top").gameObject
 	self.btnShop = self.top:NodeByName("btnShop").gameObject
 	self.btnHelp = self.top:NodeByName("btnHelp").gameObject
+	self.btnNewRank = self.top:NodeByName("btnNewRank").gameObject
+	self.btnNewRankRedPoint = self.btnNewRank:NodeByName("btnNewRankRedPoint").gameObject
 	self.imgBg = self.top:ComponentByName("imgBg", typeof(UITexture))
 	self.imgBg0 = self.top:ComponentByName("imgBg0", typeof(UITexture))
 	self.imgTitle = self.top:ComponentByName("imgTitle", typeof(UITexture))
-	self.labelTime = self.top:ComponentByName("labelTime", typeof(UILabel))
-	self.labelDDL = self.top:ComponentByName("labelDDL", typeof(UILabel))
+	self.timeGroup = self.top:NodeByName("timeGroup").gameObject
+	self.timeGroupUILayout = self.top:ComponentByName("timeGroup", typeof(UILayout))
+	self.labelTime = self.timeGroup:ComponentByName("labelTime", typeof(UILabel))
+	self.labelDDL = self.timeGroup:ComponentByName("labelDDL", typeof(UILabel))
 	self.groupRank = self.main:NodeByName("groupRank").gameObject
 	self.scrollView = self.groupRank:ComponentByName("scrollview", typeof(UIScrollView))
 	self.scrollView_uipanel = self.groupRank:ComponentByName("scrollview", typeof(UIPanel))
@@ -236,12 +247,24 @@ function Arena3v3Window:initWindow()
 end
 
 function Arena3v3Window:initLayout()
-	xyd.setUITextureByNameAsync(self.imgBg, "arena3v3_title_bg")
-	xyd.setUITextureByNameAsync(self.imgBg0, "arena3v3_title_bg")
+	if xyd.models.arena3v3:getIsOld() ~= nil then
+		self.imgBg:SetActive(false)
+		self.imgBg0:SetActive(false)
+		xyd.setUITextureByNameAsync(self.imgBg, "arena_title_bg_new")
+		xyd.setUITextureByNameAsync(self.imgBg0, "arena_title_bg_new")
+		xyd.setUITextureByNameAsync(self.imgTitle, "arena3v3_title_new_" .. tostring(xyd.Global.lang), true)
+		xyd.setUITextureByNameAsync(self.bg_, "arena_3v3_new_scene")
+	else
+		self.imgBg:SetActive(true)
+		self.imgBg0:SetActive(true)
+		xyd.setUITextureByNameAsync(self.imgBg, "arena3v3_title_bg")
+		xyd.setUITextureByNameAsync(self.imgBg0, "arena3v3_title_bg")
+		xyd.setUITextureByNameAsync(self.imgTitle, "arena3v3_title_" .. tostring(xyd.Global.lang), true)
+		xyd.setUITextureByNameAsync(self.bg_, "arena_3v3_scene")
+	end
+
 	xyd.setUITextureByNameAsync(self.imgDetailBg01, "arena_operator_bg")
 	xyd.setUITextureByNameAsync(self.imgDetailBg02, "arena_operator_bg")
-	xyd.setUITextureByNameAsync(self.bg_, "arena_3v3_scene")
-	xyd.setUITextureByNameAsync(self.imgTitle, "arena3v3_title_" .. tostring(xyd.Global.lang), true)
 	xyd.setUITextureByNameAsync(self.imgSeasonOpen01, "arena_operator_bg")
 	xyd.setUITextureByNameAsync(self.imgSeasonOpen02, "arena_operator_bg")
 	self.btnShop:SetActive(true)
@@ -259,7 +282,7 @@ function Arena3v3Window:initLayout()
 		xyd.WindowManager.get():closeWindow(self.name_)
 	end
 
-	self.windowTop = WindowTop.new(self.window_, self.name_, 1, true, callback)
+	self.windowTop = WindowTop.new(self.window_, self.name_, 50, true, callback)
 	local items = {
 		{
 			id = xyd.ItemID.CRYSTAL
@@ -268,6 +291,24 @@ function Arena3v3Window:initLayout()
 			id = xyd.ItemID.MANA
 		}
 	}
+
+	if xyd.models.arena3v3:getIsOld() ~= nil then
+		local startTime = self.model_:getStartTime() - xyd.getServerTime()
+
+		if startTime < 0 then
+			self.btnNewRank.gameObject:SetActive(true)
+		end
+
+		local newArenaRankRed = xyd.db.misc:getValue("new_arena_3v3_rank_red")
+
+		if not newArenaRankRed then
+			self.btnNewRankRedPoint.gameObject:SetActive(true)
+		elseif tonumber(newArenaRankRed) < xyd.models.arena3v3:getDDL() then
+			self.btnNewRankRedPoint.gameObject:SetActive(true)
+		else
+			self.btnNewRankRedPoint.gameObject:SetActive(false)
+		end
+	end
 
 	self.windowTop:setItem(items)
 	self.windowTop:setCanRefresh(false)
@@ -304,6 +345,15 @@ function Arena3v3Window:initLayout()
 	elseif xyd.Global.lang == "fr_fr" then
 		self.seasonLabel:X(-165)
 		self.seasonCountDown:X(42)
+		self.imgTitle:X(0)
+	elseif xyd.Global.lang == "ko_kr" then
+		self.imgTitle:X(0)
+	end
+
+	if xyd.models.arena3v3:getIsOld() ~= nil then
+		self.imgTitle:Y(-4)
+		self.imgTitle:X(0)
+		self.timeGroup:Y(-49)
 	end
 
 	self.btnFightLabel.text = __("FIGHT2")
@@ -389,6 +439,8 @@ function Arena3v3Window:updateDDL()
 		self.labelTime:SetActive(true)
 		self.btnRecord:SetActive(true)
 	end
+
+	self.timeGroupUILayout:Reposition()
 end
 
 function Arena3v3Window:onGetRankList()
@@ -461,6 +513,18 @@ function Arena3v3Window:registerEvent()
 			formation = self.model_:getDefFormation(),
 			mapType = xyd.MapType.ARENA_3v3
 		})
+	end
+
+	UIEventListener.Get(self.btnNewRank).onClick = function ()
+		xyd.models.arena3v3:getArena3v3NewRankList()
+
+		if self.btnNewRankRedPoint.gameObject.activeSelf then
+			xyd.db.misc:setValue({
+				key = "new_arena_3v3_rank_red",
+				value = xyd.models.arena3v3:getDDL()
+			})
+			self.btnNewRankRedPoint.gameObject:SetActive(false)
+		end
 	end
 
 	self.eventProxy_:addEventListener(xyd.event.GET_ARENA_3v3_INFO, handler(self, self.onGetArenaInfo))

@@ -41,6 +41,7 @@ function TavernDetailItem:update(index, realIndex, info)
 		skin_id = self.partner_.skin_id,
 		is_vowed = self.partner_.isVowed,
 		partnerID = self.partneId_,
+		star_origin = self.partner_:getStarOrigin(),
 		dragScrollView = self.parent_.heroSelectScrollView_,
 		callback = function ()
 			self.heroIcon_.selected = false
@@ -314,6 +315,8 @@ function TavernDetailWindow:initMissionHeros()
 	for _, info in ipairs(details) do
 		local tableID = info.table_id
 		local star = xyd.tables.partnerTable:getStar(tableID) + (info.awake or 0)
+		local star_origin = info.star_origin
+		local partnerID = info.partner_id
 		local skinID = nil
 
 		if info.show_skin and info.show_skin == 1 and info.equips and info.equips[7] and info.equips[7] > 0 then
@@ -327,11 +330,13 @@ function TavernDetailWindow:initMissionHeros()
 		local copyHero = import("app.components.HeroIcon").new(tempItem)
 
 		copyHero:setInfo({
-			noClick = true,
 			hideText = true,
+			noClick = true,
 			tableID = tableID,
+			partnerID = partnerID,
 			star = star,
 			skin_id = skinID,
+			star_origin = star_origin,
 			uiRoot = tempItem
 		})
 		table.insert(self.heroIconList_, copyHero)

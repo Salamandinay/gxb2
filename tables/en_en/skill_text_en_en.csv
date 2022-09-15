@@ -9520,8 +9520,8 @@ A Skill effect.
 Will be consumed when Teresa\'s Passive Skill ""Righteous Protection"" is triggered."
 502102,Sky Island,Barrier I,Increase your enemies' Crit Resist by 10%(Crit Resist can lower the rate to take a Crit hit: the Crit Rate of the Attacker will be lowered by the amount of Crit Resist the target has)
 502103,Sky Island,Barrier II,Increase your enemies' Crit Resist by 20%(Crit Resist can lower the rate to take a Crit hit: the Crit Rate of the Attacker will be lowered by the amount of Crit Resist the target has)
-503103,Sky Island,High Morale I,Your enemies will gain an extra 1% of their Attack at the end of each round
-503104,Sky Island,High Morale II,Your enemies will gain an extra 2% of their Attack at the end of each round
+503103,Sky Island,High Morale I,Your enemies will gain an extra 2% of their Attack at the end of each round.
+503104,Sky Island,High Morale II,Your enemies will gain an extra 5% of their Attack at the end of each round.
 509999,Sky Island,Unhealable Wound,Your enemies will not be able to recover HP during the battle
 502104,Sky Island,Immunity,All enemies are immune to debuffs in the first 2 rounds of battle.
 5501000,Frexie,Basic Attack,Basic Attack
@@ -11119,8 +11119,8 @@ This protocol will only be activated in the direst situations, when there is no 
 The more HP Robbie loses in battle, the more Damage Depletion and Damage Boost she will gain. She can gain at most 130% Damage Boost and 44% Damage Depletion from this skill. (The cap will be reached when she has 40% of her maximum HP remaining)
 When Robbie\'s current HP drops below 30% of her maximum HP for the first time in the battle, she will recover (70% of Maximum HP) HP."
 501108,Sky Island,Energy Conversion,"Before Angelica attacks, she removes all Energy from herself and deals 10% more damage with her Basic Attack."
-501109,Sky Island,Double Tap I,"The Enemy Syrcotte has a 50% chance to repeat her Basic Attack, but her Attack will be reduced by 5%."
-501110,Sky Island,Double Tap II,"The Enemy Syrcotte has 100% chance to repeat her Basic Attack, but her Attack will be reduced by 10%."
+501109,Sky Island,Double Tap I,There is a 50% chance for the enemy to deal their Basic Attack twice.
+501110,Sky Island,Double Tap II,There is a 100% chance for the enemy to deal their Basic Attack twice.
 502108,Sky Island,Crystallize - Attack Absorption,"When an ally is [c][e28002]Crystallized[-][/c], her Attack will be lowered by 20%, and all enemies will gain 5% Attack. Both effects last for 3 Rounds."
 502109,Sky Island,Crystallize - Energy Absorption,"When an ally is Crystallized, she will lose 100 Energy, and all enemies will gain 50 Energy."
 503112,Sky Island,Damage Denial,"When a DoT Effect is afflicted to an ally or an enemy, all enemies will gain 5% Damage Reduction for 3 Rounds."
@@ -17265,3 +17265,10 @@ A Skill Effect.
 The owner of this Effect will have their Holy Damage increased by 30% and Damage Depletion increased by 30%.
 When the owner deals a Basic Attack or releases an Active Skill, Raenvya will Hunt the targets, dealing (550% of Attack) damage and (30% of the target’s lost HP) extra damage (extra damage dealt will not surpass 1500% of Raenvya’s Attack).
 If Raenvya defeats an enemy when she is possessing her ally, she will revive at the start of the next round with 100% HP. If the possessed ally is defeated during possession, this Effect will disappear and Raenvya will die."
+503119,Sky Island,Dragon's Lament,The enemy Raenvya will not revive when she possesses her ally with [c][e28002]Dragon Soul[-][/c].
+503120,Sky Island,Defensive Stance,The Enemy gains 5% Damage Depletion whenever it takes damage from Basic Attacks or Active Skills. All Damage Depletion gained from this skill will be removed after the Enemy releases its Active Skill.
+502118,Sky Island,Purge I,The Enemy will randomly remove 1 stack of Damage Over Time Effect from itself at the end of each round.
+502119,Sky Island,Purge II,The Enemy will randomly remove 3 stacks of Damage Over Time Effect from itself at the end of each round.
+502120,Sky Island,Purge III,The Enemy will randomly remove 5 stacks of Damage Over Time Effect from itself at the end of each round.
+502121,Sky Island,Equivalent Exchange I,The Enemy takes 10% more damage when it is affected by Control Effects and deals 10% more damage to targets affected by Control Effects.
+502122,Sky Island,Equivalent Exchange II,The Enemy takes 20% more damage when it is affected by Control Effects and deals 20% more damage to targets affected by Control Effects.

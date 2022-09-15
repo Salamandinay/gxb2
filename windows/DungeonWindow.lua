@@ -412,6 +412,7 @@ function DungeonWindow:initHeros()
 					tableID = partner.table_id,
 					lev = partner.lv,
 					star = PartnerTable:getStar(partner.table_id) + partner.awake,
+					star_origin = partner.star_origin,
 					status = partner.status,
 					skin_id = skinID,
 					is_vowed = partner.is_vowed,
@@ -600,7 +601,6 @@ function DungeonWindow:initPartner(isSkipAni)
 		local bone = sp:getBone("Phead")
 
 		if bone then
-			dump("++++++++++++")
 			dump(PartnerTable:getModelID(partner.table_id))
 
 			if skinID > 0 then

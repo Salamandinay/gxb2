@@ -266,6 +266,12 @@ end
 function ActivityMonthlyItem:createChildren()
 	self.textLabel.text = xyd.tables.activityMonthlyTextTable:getText(self.id_)
 	self.descLabel.text = __("ACTIVITY_MONTHLY_TEXT007")
+	local limitValue = xyd.tables.activityMonthlyTable:getValue(self.id_)
+
+	if self.is_award_ then
+		self.value_ = limitValue
+	end
+
 	self.countLabel.text = "" .. tostring(self.value_) .. "/" .. tostring(xyd.tables.activityMonthlyTable:getValue(self.id_))
 
 	self:initItem()
