@@ -1044,7 +1044,11 @@ function Backpack:useOptionalGiftBox(itemId, itemNum, chosenIndex, chosenId)
 	msg.item.item_num = itemNum
 	msg.chosen_index = chosenIndex
 	msg.chosen_id = chosenId
+	local msg2 = messages_pb.log_partner_data_touch_req()
+	msg2.touch_id = xyd.DaDian.CHOOSE_BOX
+	msg2.desc = "item_id," .. itemId .. ",choose_index," .. chosenIndex .. ",choose_id," .. chosenId
 
+	xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg2)
 	xyd.Backend.get():request(xyd.mid.USE_OPTIONAL_GIFTBOX, msg)
 end
 

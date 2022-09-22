@@ -890,7 +890,7 @@ GUILD_TEXT55,Kaufmann
 GUILD_TEXT56,Gilden Mail
 GUILD_TEXT57,Limit für Stellvertreter erreicht
 GUILD_TEXT58,Gildenlimit erreicht
-GUILD_TEXT59,Du bist bereits in einer anderen Gilde
+GUILD_TEXT59,Der Spieler ist bereits einer Gilde beigetreten
 GUILD_TEXT60,Willst du sicher deinen Posten jemand anderem geben?
 GUILD_TEXT61,Tippe um die Gilden Ankündigung zu ändern
 GUILD_TEXT62,3-12 Buchstaben
@@ -3262,7 +3262,7 @@ ACT_RETURN_FRIEND_NAV_1,Empfohlene Freunde
 ACT_RETURN_FRIEND_NAV_2,Empfohlene Gilden
 ACTIVITY_RETURN_COMMEND_TIPS,"Senpai, lange nicht gesehen~ Die Akademie hat ein paar Freunde und Gilden, die sie dir empfehlen möchte~ Schau mal noch. Vielleicht findest du passende Freunde~"
 ACTIVITY_RETURN_COMMEND_GUILD_TIPS,Empfohlene Gilden:
-ACTIVITY_RETURN_COMMEND_HAS_GUILD,Senpai du bist bereits in einer Gilde~
+ACTIVITY_RETURN_COMMEND_HAS_GUILD,Du bist bereits in einer Gilde~
 ACTIVITY_RETURN_COMMEND_HELP,Hilfe für Freunde- und Gildenempfehlung
 ACTIVITY_RETURN_COMMEND_LABEL_LEV,Hohes Level
 ACTIVITY_RETURN_COMMEND_LABEL_ACTIVE,Aktiv
@@ -4913,7 +4913,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Näch. Stufe ab
 WARMUP_ARENA_REACH_RANK_HELP,"1. In diesem Event gibt es insgesamt 4 Stufen: B, A, S, S+. Du kannst nur die Spieler derselben Stufe herausfordern. Zu Beginn des Events werden alle Spieler in der Stufe B starten.|2. Hast du täglich um 0 Uhr (UTC/GMT 0) die Bedingungen zum Stufenaufstieg erfüllt (bestimmten Rang in deiner Stufe erreicht), wird deine Stufe um 1 Stufe erhöht, ansonsten bleibst du in deiner aktuellen Stufe.|3. Anpassung der Mädchen in den verschiedenen Stufen:|Ab Stufe {1}:|{2}|Ab Stufe {3}:|{4}|Ab Stufe {5}:|{6}|4. Dein angezeigter Rang ist dein Rang in deiner aktuellen Stufe. (Die Anzahl der Spieler jeder Stufe wird durch die täglichen Stufenanpassungen um 0 Uhr (UTC/GMT 0) beeinflusst. Solltest du es nicht schaffen in die nächste Stufe aufzusteigen, kann es sein, dass dein Rang deiner aktuellen Stufe nach der Aktualisierung höher ist als vorher.)"
 ENTRANCE_TEST_LEVEL_UP_ING,Stufe wird bestimmt...
 WARMUP_ARENA_TASK_INFO_1,Neulings-Herausforderung
-WARMUP_ARENA_TASK_INFO_2,Raenvyas Geheimnis
+WARMUP_ARENA_TASK_INFO_2,Ein Star sein
 WARMUP_ARENA_TASK_INFO_3,Aufgaben
 WARMUP_ARENA_TASK_INFO_4,Paket-Boni
 WARMUP_ARENA_TASK_INFO_5,Wird nach dem Abschließen der mit Sternen markierten Aufgaben entsperrt
@@ -7173,7 +7173,7 @@ GALAXY_TRIP_TIPS_25,Das Sternlevel einiger Mädchen in den Teams wurde inzwische
 GALAXY_TRIP_TIPS_26,Erfolgreich gespeichert
 TIME_CLOISTER_TEXT118,"Schließe einmal das Ansehen ab und erhalte die Sternfragmente, um es zu entsperren"
 ARENA_3V3_NEW_SEASON_SERVER_TIME_TEXT,Überserver-Elitearena startet in:
-ACTIVITY_REPAIR_CONSOLE_TEXT01,"Lade die Energieknoten auf dem Chip auf, um sie zu erleuchten und reichhaltige Belohnungen zu erhalten!"
+ACTIVITY_REPAIR_CONSOLE_TEXT01,Erleuchte die Energieknoten für reichhaltige Belohnungen!
 ACTIVITY_REPAIR_CONSOLE_TEXT02,Erleutet jedesmal zufällig [c][fd6317]1~3[-][/c] Energieknoten
 ACTIVITY_REPAIR_CONSOLE_TEXT03,Belohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT04,Erleuchten
@@ -7181,95 +7181,142 @@ ACTIVITY_REPAIR_CONSOLE_TEXT05,Kernbelohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT06,Standardbelohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Runde {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Ab Runde {1}
-ACTIVITY_REPAIR_CONSOLE_HELP,"1. Verwende die Batterien, um die Energieknoten auf dem Chip aufzuladen und zu erleuchten. Mit jeder Batterie können zufällig 1 bis 3 Energieknoten erleuchtet werden.|2. Sobald alle 5 Energieknoten einer Reihe oder einer Spalte erleuchtet werden, kannst du die entsprechenden normale Reihen- oder Spaltenbelohnungen sammeln.|3. Werden alle 5 Energieknoten auf der Diagonale erleuchtet, kannst du die Kernbelohnungen dieser Runde sammeln und zur nächsten Runde gehen.|4. Die normalen Belohnungen und Kernbelohnungen können unten rechts geprüft werden.|5. Erhalten der Batterien: Batterieversorgung, Pollys To-Do-Liste."
-GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
-GUILD_NEW_WAR_TIPS01,Ruhezeit beendet. Bald beginnt die Vorbereitungsphase...
-GUILD_NEW_WAR_TIPS02,Kampfphase beendet. Bald beginnt die Ruhezeit...
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. Verwende die Batterien, um die Energieknoten auf dem Chip aufzuladen und zu erleuchten. Mit jeder Batterie können zufällig 1 bis 3 Energieknoten erleuchtet werden.|2. Sobald alle 5 Energieknoten einer Reihe oder einer Spalte erleuchtet sind, kannst du die entsprechenden normalen Reihen- oder Spaltenbelohnungen sammeln.|3. Sind alle 5 Energieknoten auf der Diagonale erleuchtet, kannst du die Kernbelohnungen dieser Runde sammeln und zur nächsten Runde gehen.|4. Die normalen Belohnungen und Kernbelohnungen können unten rechts geprüft werden.|5. Erhalten der Batterien: Batterieversorgung, Pollys To-Do-Liste."
+GUILD_NEW_WAR_HELP01,"[c][699be9]Teilnahme[-][/c]|1. Die Gilde muss Lv.12 erreicht haben und mindestens 5 Mitglieder haben, die sich in der letzten Woche angemeldet haben.|2. Wenn eine Gilde diese 2 Bedingungen erfüllt, kann ein beliebigies Mitglied auf den Eingang zum Event tippen, und die Gilde nimmt automatisch am Gilden-Wettbewerb teil.|[c][699be9]Regeln[-][/c]|1. Das Event findet in Saisonform und auf allen Servern statt. In jeder Saison finden 8 Wettbewerbe im Kampfmodus 1V1 statt.|2. Jeder Wettbewerb dauert insgesamt 3 Tage, darunter 1 Tag für die Vorbereitung und 2 Tage für den Kampf. Die beiden Gilden haben jeweils 1 Hauptbasis, 3 Mittelbasen und 2 Frontbasen. In jeder Basis gibt es Flaggen, die von Gildenmitgliedern verteidigt werden müssen.|3. Die ganze Saison wird in 3 Phasen aufgeteilt: Ruhezeit, Vorbereitungsphase und Kampfphase. Zu Beginn und zum Ende der Saison haben die Gilden jeweils eine Ruhezeit von 3 und 4 Tagen. Ansonsten ist der wöchentliche Zeitplan wie folgt:|Montag ---- Ruhezeit. Du kannst die Gilden-Rangliste und den Kampfverlauf der vergangenen Saisons prüfen.|Dienstag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Mittwoch, Donnerstag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|Freitag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Samstag, Sonntag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|4. Zu Beginn der Kampfphase werden die aufgestellten Teams der Gilden-Mitglieder nach Kampfkraft geordnet zu Hauptbasis, Mittelbasen und zuletzt Frontbasen entsandt. Gildenleiter und Stellvertreter können die Platzierung der Aufstellungen ändern. Gewöhnliche Mitglieder können ihre eigenen Verteidigungsaufstellungen frei anpassen und speichern. Nach dem Speichern musst du eigenhändig aktualisieren.|5. In der Kampfphase können alle Mitglieder die Flaggen der gegnerischen Gilde angreifen. Ist die Flagge von den gegnerischen Mitgliedern geschützt, dann müssen sie zunächst besiegt werden. Sind alle Flaggen einer Basis zerstört, ist die Erstürmung abgeschlossen. Sobald deine Gilde eine beliebige Frontbasis erstürmt hat, kann eine Mittelbasis angegriffen werden. Wenn eine Mittelbasis erstürmt wurde, kann die Hauptbasis angegriffen werden. Nachdem alle Basen erstürmt worden sind, kann deine Gilde eine beliebige Basis säubern, um zusätzliche Gilden-Punkte und persönliche Beiträge zu erhalten.|6. Nach dem Ende des Wettbewerbs wird ein Kampfergebnis basierend auf den erhaltenen Gilden-Punkten der beiden Gilden erstellt. Wer die meisten Gilden-Punkte erworben hat, der gewinnt den Wettbewerb. Bei gleichen Gildenpunkten gibt es ein Remis.|[c][699be9]Gilden-Match & Rangliste[-][/c]|1. Den Gilden, die zum ersten Mal am Gilden-Wettbewerb teilnehmen, wird basierend auf der Höchstkampfkraft aller Mitglieder eine bestimmte Anzahl an Gilden-Punkten verliehen. Anderen Gilden erhalten Gilden-Punkte basierend auf ihrem Rang im letzten Gilden-Wettbewerb. Je höher der Rang ist, desto mehr Gilden-Punkte erhält die Gilde zu Beginn des neuen Wettbewerbs.|2. Die Gilden-Rangliste ist durch die aktuellen Gilden-Punkten aller Gilden gegeben. Haben 2 Gilden die gleiche Anzahl von Gilden-Punkten erworben, dann erhält die Gilde, die diese Gilden-Punkte zuerst erworben hat, den höheren Rang.|3. Bei der Gegnerermittlung werden Gilden mit einer vergleichbaren Anzahl von Gilden-Punkten zufällig ausgewählt, gegeneinader anzutreten.|[c][699be9]Gilden-Punkte[-][/c]|1. Die Zerstöung einer Flagge in Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 100, 150 und 300 Gilden-Punkte.|2. Das Erstürmen einer Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 500, 1000 und 2000 Gilden-Punkte.|3. Sieg, Niederlage und Remis verleihen der Gilde jeweils 2000, 1000 und 1000 Gilden-Punkte.|4. Bei jeder Säuberung erhält die Gilde 10 Gilden-Punkte.|[c][699be9]Persönliche Beiträge[-][/c]|1. Beim Angriff auf eine Verteidigungsaufstellung finden 3 aufeinanderfolgende Kämpfe statt. Grundsätzlich erhältst du immer 15 persönliche Beiträge. 0/1/2/3 Sieg(e) entspricht jeweils 15/15/20/20 persönlichen Beiträgen.|2. Jeder Angriff gegen die Flaggen verleiht dir 15 persönliche Beiträge.|3. Bei jeder Säuberung erhältst du 5 persönliche Beiträge.|[c][699be9]Belohnungen[-][/c]|1. Gilden-Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die die Gilde verteidigt und persönliche Beiträge erworben haben, entsprechende Gilden-Belohnungen per Mail gesendet.|2. Persönliche Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die persönliche Beiträge erworben haben, entsprechende persönliche Belohnungen per Mail gesendet.|3. Saisonbelohnungen zum Gilden-Rang: Nach dem Ende der Saison werden den Mitgliedern, die ihre Gilden verteidigt und persönliche Beiträge erworben haben, basierend auf dem Gilden-Rang entsprechende Saisonbelohnungen per Mail gesendet.|4. Kämpfe gegen Gegner, Angriffe gegen die Flaggen und Säuberung der erstürmten Basen verleihen dir ebenfalls zusätzliche Belohnungen."
+GUILD_NEW_WAR_TIPS01,Ruhezeit beendet. Ein wertvoller Gegner wird gesucht...
+GUILD_NEW_WAR_TIPS02,Kampfphase beendet. Die Belohnungen werden abgerechnet...
 GUILD_NEW_WAR_TIPS03,Das kann nur von dem Gildenleiter oder Stellvertreter vorgenommen werden.
 GUILD_NEW_WAR_TIPS04,Keine Chance mehr
 GUILD_NEW_WAR_TIPS05,Tritt zunächst einer Gilde bei
-GUILD_NEW_WAR_TIPS06,Die Gilde muss Lv.12 erreichen und sich mindestens aus 5 Mitgliedern zusammensetzen.
+GUILD_NEW_WAR_TIPS06,"Die Gilde muss Lv.12 erreicht haben und 5 Mitglieder haben, die sich in den letzten 7 Tagen angemeldet haben."
 GUILD_NEW_WAR_TIPS07,Limit erreicht
 GUILD_NEW_WAR_TEXT01,Saison
 GUILD_NEW_WAR_TEXT02,Nächster Wettbewerb beginnt in:
 GUILD_NEW_WAR_TEXT03,Saison-Rang
 GUILD_NEW_WAR_TEXT04,Kampfverlauf
-GUILD_NEW_WAR_TEXT05,Kampf neuer Saison beginnt in:
+GUILD_NEW_WAR_TEXT05,Neue Saison hat begonnen!
 GUILD_NEW_WAR_TEXT06,Kampf {1}
 GUILD_NEW_WAR_TEXT07,Kein Kampfverlauf
 GUILD_NEW_WAR_TEXT08,Vorbereitungsphase
-GUILD_NEW_WAR_TEXT09,Kampfkraft
+GUILD_NEW_WAR_TEXT09,Kampfphase
 GUILD_NEW_WAR_TEXT10,Gesamtkraft
 GUILD_NEW_WAR_TEXT11,Gildenleiter
-GUILD_NEW_WAR_TEXT12,Punkte
+GUILD_NEW_WAR_TEXT12,Gilden-Punkte
 GUILD_NEW_WAR_TEXT13,Belohnung
-GUILD_NEW_WAR_TEXT14,Belohnung für Sieg
-GUILD_NEW_WAR_TEXT15,Belohnung für Niederlage
+GUILD_NEW_WAR_TEXT14,Belohnungen\nfür Sieg
+GUILD_NEW_WAR_TEXT15,Belohnungen\nfür Niederlage
 GUILD_NEW_WAR_TEXT16,Zum Kampffeld
-GUILD_NEW_WAR_TEXT17,Besatzung {1}/{2}
+GUILD_NEW_WAR_TEXT17,Verteidiger {1}/{2}
 GUILD_NEW_WAR_TEXT18,Verteidigung
 GUILD_NEW_WAR_TEXT19,Kampfbericht
 GUILD_NEW_WAR_TEXT20,Chat
 GUILD_NEW_WAR_TEXT21,Belohnung
-GUILD_NEW_WAR_TEXT22,Angreifen
-GUILD_NEW_WAR_TEXT23,Jeder Abbruch reduziert die Ausdauer der Flagge um 30
+GUILD_NEW_WAR_TEXT22,Sturmangriff
+GUILD_NEW_WAR_TEXT23,Jeder Angriff reduziert die Widerstandskraft der Flagge um 50
 GUILD_NEW_WAR_TEXT24,Flagge Nr.{1}
-GUILD_NEW_WAR_TEXT25,Ausdauer: {1}/{2}
+GUILD_NEW_WAR_TEXT25,Widerstandskraft: {2}/{1}
 GUILD_NEW_WAR_TEXT26,Du kannst Mädchen zur Verteidigung entsenden
 GUILD_NEW_WAR_TEXT27,Anpassen
 GUILD_NEW_WAR_TEXT28,Mitglieder zur Verteidigung
 GUILD_NEW_WAR_TEXT29,Bereit
-GUILD_NEW_WAR_TEXT30,Hauptfort
-GUILD_NEW_WAR_TEXT31,Mittelfort {1}
-GUILD_NEW_WAR_TEXT32,Frontfort {1}
+GUILD_NEW_WAR_TEXT30,Hauptbasis
+GUILD_NEW_WAR_TEXT31,Mittelbasis {1}
+GUILD_NEW_WAR_TEXT32,Frontbasis {1}
 GUILD_NEW_WAR_TEXT33,Flagge
 GUILD_NEW_WAR_TEXT34,Kampfkraft
 GUILD_NEW_WAR_TEXT35,Abbrechen
 GUILD_NEW_WAR_TEXT36,Bestätigen
-GUILD_NEW_WAR_TEXT37,Persönliche Beiträge: {1} Pkt.
-GUILD_NEW_WAR_TEXT38,Angriffs-Male: {1}/{2}
+GUILD_NEW_WAR_TEXT37,Pers. Beiträge: {1}
+GUILD_NEW_WAR_TEXT38,Kampf-Chance: {1}/{2}
 GUILD_NEW_WAR_TEXT39,Saison beendet
 GUILD_NEW_WAR_TEXT40,Gilden-Rang
 GUILD_NEW_WAR_TEXT41,Persönlicher Rang
 GUILD_NEW_WAR_TEXT42,Belohnung
 GUILD_NEW_WAR_TEXT43,Gilden-Belohnung
 GUILD_NEW_WAR_TEXT44,Persönliche Belohnung
-GUILD_NEW_WAR_TEXT45,Belohnung zum Saisonende:
-GUILD_NEW_WAR_TEXT46,Belohnung zum Wettbewerb:
+GUILD_NEW_WAR_TEXT45,Belohnungen zum Saisonende
+GUILD_NEW_WAR_TEXT46,Belohnung zum Wettbewerb
 GUILD_NEW_WAR_TEXT47,--
 GUILD_NEW_WAR_TEXT48,Kampf-Details
-GUILD_NEW_WAR_TEXT49,Kann durch Ziehen oder Klicken angepasst werden
+GUILD_NEW_WAR_TEXT49,"Tippe oder ziehe, um die Aufstellungen anzupassen"
 GUILD_NEW_WAR_TEXT50,Kampf
 GUILD_NEW_WAR_TEXT51,Flaggen-Info
-GUILD_NEW_WAR_TEXT52,Zu jedem Angriff werden 20 Punkte Ausdauer benötigt
+GUILD_NEW_WAR_TEXT52,Jeder Angriff reduziert die Widerstandskraft um 50
 GUILD_NEW_WAR_TEXT53,Angriffsbelohnung
 GUILD_NEW_WAR_TEXT54,Angreifen
 GUILD_NEW_WAR_TEXT55,Persönliche Beiträge +{1}
 GUILD_NEW_WAR_TEXT56,Belohnungen
-GUILD_NEW_WAR_TEXT57,Ausdauer des gegnerischen Verteidigers -{1}
-GUILD_NEW_WAR_TEXT58,Kampf {1}
-GUILD_NEW_WAR_TEXT59,Rang der persönlichen Punkte (in der Gilde)
-GUILD_NEW_WAR_TEXT60,Perslnliche Beiträge
+GUILD_NEW_WAR_TEXT57,Energie des gegnerischen Verteidigers -{1}
+GUILD_NEW_WAR_TEXT58,{1}. Wettbewerb
+GUILD_NEW_WAR_TEXT59,Pers. Beiträge
+GUILD_NEW_WAR_TEXT60,Rang (in der Gilde)
 GUILD_NEW_WAR_TEXT61,Gilden-Punkte +{1}
 GUILD_NEW_WAR_TEXT62,Die Belohnungen werden per Mail gesendet
-GUILD_NEW_WAR_TEXT63,{1} hat die Flagge Nr.{3} am {2} angegriffen und die Ausdauer des Gegners um {4} reduziert!
-GUILD_NEW_WAR_TEXT64,{1} hat die Flagge Nr.{3} am {2} angegriffen und die Ausdauer der Flagge um {4} reduziert!
+GUILD_NEW_WAR_TEXT63,{1} hat die Flagge Nr.{3} der {2} angegriffen und die Energie des Verteidigers um {4} reduziert.
+GUILD_NEW_WAR_TEXT64,{1} hat die Flagge Nr.{3} der {2} angegriffen und die Widerstandskraft der Flagge um {4} reduziert.
 GUILD_NEW_WAR_TEXT65,{1} hat das {2} des Gegners zerstört!
 GUILD_NEW_WAR_TEXT66,Beenden
-GUILD_NEW_WAR_TEXT67,Kampf {1}
-GUILD_NEW_WAR_TEXT68,Angriffs-Chance: {1}
+GUILD_NEW_WAR_TEXT67,{1}. Kampf
+GUILD_NEW_WAR_TEXT68,Chance: {1}
 GUILD_NEW_WAR_TEXT69,Im Kampf...
 GUILD_NEW_WAR_TEXT70,Kampfverlauf
-GUILD_NEW_WAR_TEXT71,Perslnliche Beiträge
-GUILD_NEW_WAR_TEXT72,Ausdauer des Gegners
-GUILD_NEW_WAR_TEXT73,Kampffeld säubern
-GUILD_NEW_WAR_TEXT74,Verbündete
-GUILD_NEW_WAR_TEXT75,Gegner
+GUILD_NEW_WAR_TEXT71,Persönliche Beiträge
+GUILD_NEW_WAR_TEXT72,Energie des Gegners
+GUILD_NEW_WAR_TEXT73,Säubern
+GUILD_NEW_WAR_TEXT74,Meine Gilde
+GUILD_NEW_WAR_TEXT75,Gegnerische Gilde
 ACTIVITY_LAFULI_RUDDER_TITLE,Luvlys Aufgaben
-ACTIVITY_LAFULI_RUDDER_TEXT,Verwende {1} Steuer (Fernsteuer nicht eingeschlossen)
+ACTIVITY_LAFULI_RUDDER_TEXT,Verwende {1} Steuer\n(Fernsteuer nicht eingeschlossen)
 GUILD_NEW_WAR_TEXT76,Aktueller Rang
 GUILD_NEW_WAR_TEXT77,Rangbelohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT09,Die Kernbelohnungen der aktuellen Runde wurden bereits gesammelt aber die normalen Belohnungen teilweise noch nicht. Willst du sicher zur nächsten Runde gehen?
 ACTIVITY_REPAIR_CONSOLE_TEXT10,Nein
 ACTIVITY_REPAIR_CONSOLE_TEXT11,Ja
 QUICK_FORMATION_TEXT25,Speichern
+QUICK_FORMATION_TEXT26,Nach dem Speichern wird die frühere Aufstellung ersetzt. Fortfahren?
+GUILD_NEW_WAR_TEXT78,Wettbewerb endet in:
+QUICK_FORMATION_TEXT27,Stelle mindestens 1 Mädchen auf
+GUILD_NEW_WAR_TEXT79,Keine Rangliste vorhanden
+GUILD_NEW_WAR_HELP02,"1. In allen Basen werden jeweils mehrere Flaggen aufgerichtet und jede Flagge kann von einem Mitglied verteidigt werden. Zu Beginn hat der Verteidiger 200 Energie.|2. Beim Angriff auf den Verteidiger einer Flagge finden 3 aufeinanderfolgende Kämpfe statt. Die Energie des Verteidigers wird bei jedem Angriff um mindestens 5 reduziert und jeder Sieg des Angriffsteams senkt die Energie des Verteidigers um weitere 5.|3. Ist die Energie des Verteidigers auf 0 gefallen, wird er besiegt und die Flagge zerstört. Danach können die anderen Flaggen angegriffen werden. Jeder Angriff reduziert die Widerstandskraft der Flagge um einen bestimmten Wert. Ist die Widerstandskraft der Flagge auf 0 gefallen, gilt sie als zerstört.|4. Sind alle Flaggen einer Basis zerstört, gilt die Basis als erstürmt. Sind alle Basen erstürmt, kann die Angriffsgilde eine beliebige Basis säubern.|5. In der Kampfphase erhältst du täglich 10x die Möglichkeit zu kämpfen, Flaggen anzugreifen und erstürmte Basen zu säubern.|6. Jedes Mal wenn eine gegnerische Mittelbasis erstürmt ist, erhalten alle Mädchen der eigenen Gilde im aktuellen Wettbewerb folgende Buffs: Angriff +10%%, HP +20%%, Reduzierung aller Schäden +10%%. Die Buffs können gestappelt werden und werden nach dem Ende des Wettbewerbs deaktiviert. Sobald die gegnerische Hauptbasis erstürmt ist, werden die jeweiligen erhaltenen Gilden-Punkte für die Dauer des Wettberwerbs um 50 erhöht.|7. Gildenleiter oder Stellvertreter können eine beliebige Basis als Hauptziel zum Sturmangriff bestimmen. Beim Angriff gegen diese Basis werden alle Schäden aller Mädchen der Gilde um 10%% erhöht. Nachdem eine Basis als Hauptziel für einen Sturmangriff bestimmt wurde, muss die Gilde 12 Stunden warten, um die Basis zu wechseln."
+GUILD_NEW_WAR_TEXT80,{1} hat die Flagge Nr.{3} der gegnerischen {2} zerstört
+ACTIVITY_PIRATE_TEXT01,Fertig gelesene Spieler
+ACTIVITY_PIRATE_TEXT02,Server-\nPaket
+ACTIVITY_PIRATE_TEXT03,Sammlungsfortschritt
+ACTIVITY_PIRATE_TEXT04,Gelesen:
+ACTIVITY_PIRATE_TEXT05,Raid
+ACTIVITY_PIRATE_TEXT06,Zum Sammeln
+ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT01,Sammeln
+ACTIVITY_PIRATE_SHOP_TEXT02,Gesperrt
+ACTIVITY_PIRATE_SHOP_TEXT03,Geheimer Schatzkammer
+ACTIVITY_PIRATE_SHOP_TEXT04,Normaler Schatzkammer
+ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+GUILD_NEW_WAR_TIPS08,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs kann man die Gilde nicht verlassen.
+GUILD_NEW_WAR_TIPS09,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs können die Mitglieder nicht gekickt werden.
+GUILD_NEW_WAR_TIPS10,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs kann die Gilde nicht aufgelöst werden.
+GUILD_NEW_WAR_TEXT81,Kein Kampfbericht vorhanden
+GUILD_NEW_WAR_TEXT82,Kampfbericht
+GUILD_NEW_WAR_TEXT83,[c][53a52a]Bereit[-][/c]
+GUILD_NEW_WAR_TEXT84,Restl. Widerstandskraft ist auf 0 gefallen
+GUILD_NEW_WAR_TEXT85,Fertig angepasst
+GUILD_NEW_WAR_TEXT86,Abkühlungszeit endet in {1}
+GUILD_NEW_WAR_TEXT87,Zerstören
+GUILD_NEW_WAR_TEXT88,Zerstört
+GUILD_NEW_WAR_TEXT89,Stelle zunächst die Aufstellungen auf
+GUILD_NEW_WAR_TEXT90,Keine Verteidiger vorhanden
+GUILD_NEW_WAR_TEXT91,Keine Buffs
+GUILD_NEW_WAR_TEXT92,Unter Sturmangriff
+GUILD_NEW_WAR_TEXT93,Beim Sturmangriff auf diese Basis werden alle Schäden deiner Mädchen um 10%% erhöht
+GUILD_NEW_WAR_TIPS11,Während der Kampfphase können die Verteidigungsaufstellungen nicht angepasst werden.
+GUILD_NEW_WAR_TIPS12,Erstürme zunächst eine beliebige Frontbasis
+GUILD_NEW_WAR_TIPS13,Erstürme zunächst eine beliebige Mittelbasis
+ACTIVITY_PIRATE_PLACE1,Meerespalast
+ACTIVITY_PIRATE_PLACE2,近海區
+ACTIVITY_PIRATE_PLACE3,遠海區
+ACTIVITY_PIRATE_PLACE4,Strand
+ACTIVITY_PIRATE_PLACE5,Drachenpalast
+GUILD_NEW_WAR_TEXT94,Rang
+GUILD_NEW_WAR_TEXT95,Widerstandskraft -{1}
+GUILD_NEW_WAR_TEXT96,Gilde aufgelöst
+GUILD_NEW_WAR_TEXT97,Kampfkraft↑
+GUILD_NEW_WAR_TEXT98,Kampfkraft↓

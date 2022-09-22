@@ -157,8 +157,8 @@ function Activity:onActivityList(event)
 		dump(a, "查看全部活动数据。。。。。。。。")
 
 		for i, v in pairs(a.activity_list) do
-			if tonumber(v.activity_id) == 324 then
-				dump(v, "324===========================")
+			if tonumber(v.activity_id) == 328 then
+				dump(v, "328===========================")
 			end
 		end
 

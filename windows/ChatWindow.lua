@@ -60,6 +60,7 @@ function ChatWindow:getUIComponent()
 	local winTrans = self.window_.transform
 	local groupAction = winTrans:NodeByName("groupAction").gameObject
 	self.groupAction_ = groupAction
+	self.allBg = groupAction:ComponentByName("e:Image", typeof(UISprite))
 	self.mainList_ = groupAction:NodeByName("mainList").gameObject
 	self.labelWinTitle = groupAction:ComponentByName("labelWinTitle", typeof(UILabel))
 	self.closeBtn = groupAction:NodeByName("closeBtn").gameObject
@@ -219,10 +220,24 @@ function ChatWindow:initDataGroup()
 		self.chatPageList_[self.curSelect_] = ChatPage.new(newGameObject, self)
 		self.chatPage_ = self.chatPageList_[self.curSelect_]
 
+		if msgType == xyd.MsgType.GUILD and xyd.models.guild.guildID > 0 then
+			self.guildOnlineGroup:SetActive(true)
+			self:getScrollerUiPanel():GetComponent(typeof(UIRect)):SetTopAnchor(self.guildOnlineGroupBg.gameObject, 0, -10)
+
+			self.onlineLabel.text = __("GUILD_CHAT_ONLINE_TEXT", xyd.models.guild:getOnlineCount())
+		end
+
 		self.chatPage_:setInfoType(msgType)
 		self.chatPage_:init()
 	else
 		self.chatPage_ = self.chatPageList_[self.curSelect_]
+
+		if msgType == xyd.MsgType.GUILD and xyd.models.guild.guildID > 0 then
+			self.guildOnlineGroup:SetActive(true)
+			self:getScrollerUiPanel():GetComponent(typeof(UIRect)):SetTopAnchor(self.guildOnlineGroupBg.gameObject, 0, -10)
+
+			self.onlineLabel.text = __("GUILD_CHAT_ONLINE_TEXT", xyd.models.guild:getOnlineCount())
+		end
 
 		self.chatPage_:setInfoType(msgType)
 	end
@@ -233,13 +248,6 @@ function ChatWindow:initDataGroup()
 		else
 			item.go_:SetActive(true)
 		end
-	end
-
-	if msgType == xyd.MsgType.GUILD and xyd.models.guild.guildID > 0 then
-		self.guildOnlineGroup:SetActive(true)
-		self:getScrollerUiPanel():GetComponent(typeof(UIRect)):SetTopAnchor(self.guildOnlineGroupBg.gameObject, 0, -10)
-
-		self.onlineLabel.text = __("GUILD_CHAT_ONLINE_TEXT", xyd.models.guild:getOnlineCount())
 	end
 end
 
@@ -254,10 +262,24 @@ function ChatWindow:updateDataGroup()
 		self.chatPageList_[self.curSelect_] = ChatPage.new(newGameObject, self)
 		self.chatPage_ = self.chatPageList_[self.curSelect_]
 
+		if msgType == xyd.MsgType.GUILD and xyd.models.guild.guildID > 0 then
+			self.guildOnlineGroup:SetActive(true)
+			self:getScrollerUiPanel():GetComponent(typeof(UIRect)):SetTopAnchor(self.guildOnlineGroupBg.gameObject, 0, -10)
+
+			self.onlineLabel.text = __("GUILD_CHAT_ONLINE_TEXT", xyd.models.guild:getOnlineCount())
+		end
+
 		self.chatPage_:setInfoType(msgType)
 		self.chatPage_:init()
 	else
 		self.chatPage_ = self.chatPageList_[self.curSelect_]
+
+		if msgType == xyd.MsgType.GUILD and xyd.models.guild.guildID > 0 then
+			self.guildOnlineGroup:SetActive(true)
+			self:getScrollerUiPanel():GetComponent(typeof(UIRect)):SetTopAnchor(self.guildOnlineGroupBg.gameObject, 0, -10)
+
+			self.onlineLabel.text = __("GUILD_CHAT_ONLINE_TEXT", xyd.models.guild:getOnlineCount())
+		end
 
 		self.chatPage_:setInfoType(msgType)
 	end
@@ -1355,6 +1377,16 @@ function ChatWindow:willClose()
 	end
 
 	ChatWindow.super.willClose(self)
+end
+
+function ChatWindow:specialShowGuildLabFromGuildNewWar()
+	self.groupTop.gameObject:SetActive(false)
+
+	self.allBg.height = 840
+
+	self.allBg:Y(-30)
+	self.closeBtn:Y(365)
+	self.labelWinTitle:Y(365)
 end
 
 return ChatWindow

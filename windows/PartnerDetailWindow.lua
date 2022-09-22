@@ -541,8 +541,6 @@ function PartnerDetailWindow:initVars()
 		local partners = self.model_:getPartners()
 		self.partner_ = partners[partner_id]
 	end
-
-	dump(self.partner_, "self.partner_")
 end
 
 function PartnerDetailWindow:updateMiscObj()
@@ -774,29 +772,7 @@ function PartnerDetailWindow:updateNameTag()
 	self.partnerNameTag:setInfo(self.partner_)
 
 	local str = "potentiality_nametag_star"
-	local isMaxStar = false
-
-	if not self.partner_.star_origin or self.partner_.star_origin == {} then
-		isMaxStar = false
-	else
-		local starOrigin = self.partner_.star_origin
-		local partnerTableID = self.partner_:getTableID()
-		local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
-		local beginIDs = xyd.tables.starOriginListTable:getStartIDs(listTableID)
-
-		for i, lv in pairs(starOrigin) do
-			local maxLev = xyd.tables.starOriginTable:getMaxLevByBeginID(beginIDs[i])
-
-			if lv ~= maxLev then
-				isMaxStar = false
-
-				break
-			end
-
-			isMaxStar = true
-		end
-	end
-
+	local isMaxStar = xyd.isMaxStarOrigin(nil, self.partner_)
 	local group = self.partner_:getGroup()
 
 	if group and group > 0 then
@@ -4740,9 +4716,6 @@ function PartnerDetailWindow:updateStarOriginGroup()
 	local group = self.partner_:getGroup()
 	local partnerTableID = self.partner_:getTableID()
 	local listTableID = xyd.tables.partnerTable:getStarOrigin(partnerTableID)
-
-	dump(listTableID, "listTableID")
-
 	local starIDs = xyd.tables.starOriginListTable:getNode(listTableID)
 	local xy = xyd.tables.starOriginListTable:getXY(listTableID)
 	local nodeType = xyd.tables.starOriginListTable:getNodeType(listTableID)

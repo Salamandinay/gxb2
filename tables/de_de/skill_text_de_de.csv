@@ -13160,3 +13160,234 @@ Fertigkeitseffekt. Erhöht den heiligen Schaden der besessenen Verbündeten um 3
 502120,Himmelsinsel,Entfernung III,Zum Ende jeder Runde werden dem Boss 5 Schichten von zufälligen kontinuierlichen Schäden entfernt.
 502121,Himmelsinsel,Gleichwertiger Austausch I,"Der Boss erhöht den Schaden gegen Ziele unter Kontrolle um 10%. Wird er kontrolliert, wird der von ihm erlittenen Schaden um 10% erhöht."
 502122,Himmelsinsel,Gleichwertiger Austausch II,"Der Boss erhöht den Schaden gegen Ziele unter Kontrolle um 20%. Wird er kontrolliert, wird der von ihm erlittenen Schaden um 20% erhöht."
+20220901,Gilden-Wettbewerb,Unwiderstehlichkeit,"Jedes Mal wenn eine Mittelbasis zerstört ist, wird der Angriff aller Mädchen des Angriffsteams um 10%, die HP um 20% und die Reduzierung aller Schäden um 10% erhöht."
+20220902,Gilden-Wettbewerb,Siegesfreude,"Ist die Hauptbasis der gegnerischen Gilde zerstört, werden die jeweiligen erhaltenen Gilden-Punkte des Angriffsteams um 50 erhöht."
+20220903,Gilden-Wettbewerb,Sturmangriff,Beim Angriff gegen die Ziele unter Sturmangriff werden alle Schäden aller Angriffsmädchen um 10% erhöht.
+5202000,Azucena,Standardangriff,Standardangriff
+65202700,Azucena,Standardangriff,Standardangriff
+75202000,Azucena,Standardangriff,Standardangriff
+5202001,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 160% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 120% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 160% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 20% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 5% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 10%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 100% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+65202701,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 320% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 240% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 160% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 30% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 10% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 15%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 300% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+75202001,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 800% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 640% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 800% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+5202002,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 10%, den Angriff um 20%, die Krit. Rate um 10%, die Kontrollimmunitätsrate um 10% und den Speed um 20."
+65202702,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 20%, den Angriff um 30%, die Krit. Rate um 20%, die Kontrollimmunitätsrate um 20% und den Speed um 40."
+65202712,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 60."
+75202002,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 60."
+5202003,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 120% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 100% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 20% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 5% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden u m 10%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 100% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+65202703,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 180% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 120% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 30% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 10% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 15%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 300% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+65202713,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 320% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 240% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+75202003,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 320% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 240% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+5202004,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 70%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 160% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 10%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 20% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 5% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 10%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 100% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+65202704,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 80%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 320% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 15%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 30% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 10% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 15%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 300% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+65202714,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 800% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 30%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+75202004,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 800% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 30%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020011,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 816% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 672% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 816% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020012,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 832% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 704% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 832% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020013,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 848% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 736% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 848% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020014,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 864% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 768% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 864% des AW, der die Rüstung ignoriert, und 1 Schicht [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020015,Azucena,Tanz des Pfaus,"
+Das ist doch selbstverständlich, dass mein Tanz alle Zuschauer verzaubern kann. Fügt den 2 Gegnern mit den niedrigsten HP Schaden in Höhe von 880% des AW und einen [c][01a310]Giftschaden[-][/c] in Höhe von 800% des AW zu, der 3 Runden lang anhält. Fügt allen Gegnern mit von ihr zugefügter [c][e28002]Pfauenfeder[-][/c] einen weiteren Schaden in Höhe von 880% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Gratzie[-][/c] zu, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020021,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 62."
+752020022,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 64."
+752020023,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 66."
+752020024,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 30%, den Angriff um 40%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 68."
+752020025,Azucena,Tanzvorbereitung,"Kannst du kaum warten, mich tanzen zu sehen? Erhöht die HP um 33%, den Angriff um 43%, die Krit. Rate um 30%, die Kontrollimmunitätsrate um 30% und den Speed um 70."
+752020031,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 336% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 252% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020032,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 352% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 264% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020033,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 368% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 276% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020034,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 384% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 288% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, wird ihm zusätzlich 1 Schicht [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020035,Azucena,Begleitende Glocken,"
+Hast du die Glocken gehört? Die Klänge sind eine Warnung vor deiner Geistesabwesenheit. Standardangriff fügt dem Gegmer mit den niedrigsten HP Schaden in Höhe von 400% des AW, [c][01a310]Giftschaden[-][/c] in Höhe von 300% des AW, der 2 Runden lang anhält, und 2 Runden lang die [c][e28002]Pfauenfeder[-][/c] zu. Hat das Ziel schon eine [c][e28002]Pfauenfeder[-][/c] auf sich, werden ihm zusätzlich 2 Schichten [c][01a310]Grazie[-][/c] zugefügt, die 2 Runden lang anhält.
+
+[c][01a310]Giftschaden[-][/c]
+Kontinuierlicher Schaden. Beim Zufügen eines Giftschadens wird dem Ziel zunächst ein einmaliger Schaden und dann kontinuierlich zu Beginn jeder Runde ein weiterer Schaden zugefügt.
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020041,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 816% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 32%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020042,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 832% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 34%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020043,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 848% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 36%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020044,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 864% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 38%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."
+752020045,Azucena,Tanzfalle,"
+Der Tanzvorführung ist schon längst vorbei aber jemand scheint mich nicht vergessen zu können. Zu Beginn des Kampfes und zum Ende jede Runde hat Azucena eine 100%ige Wahrscheinlichkeit, 2 zufälligen Gegnern die [c][e28002]Pfauenfeder[-][/c] 2 Runden lang zuzufügen. Wird Azucena vom Gegner mit [c][e28002]Pfauenfeder[-][/c] angegriffen, fügt sie diesem Angreifer Schaden in Höhe von 880% des AW, der die Rüstung ignoriert, und 2 Schichten [c][01a310]Grazie[-][/c] zu, die 2 Runden lang anhält, und reduziert 2 Runden lang die Krit. Rate des Angreifers um 40%.
+
+[c][e28002]Pfauenfeder[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Alle von Azucena erlittenen Schäden, die durch Mädchen mit von dieser Azucena zugefügter [c][e28002]Pfauenfeder[-][/c] verursacht wurden, werden um 50% reduziert, und beim Erleiden dieser Schäden wandelt Azucena 20% davon zum eigenen Schutzwall um.
+[c][01a310]Grazie[-][/c]
+Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%. Beim Zufügen dieses Schadens und zu Beginn jeder Runde wird dem Träger ein Schaden in Höhe von 600% eigenes AW (maximal 2500% von Azucenas AW) zugefügt."

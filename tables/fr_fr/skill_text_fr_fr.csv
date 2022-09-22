@@ -14443,3 +14443,269 @@ Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, ell
 502120,Îles Célestes,Purge III,"À la fin du tour, l'ennemi enlève aléatoirement 5 couches parmi ses Dégâts sur la Durée subis."
 502121,Îles Célestes,Échange Égal I,L'ennemi subit 10% de dégâts supplémentaires lorsqu'il est contrôlé et inflige 10% de dégâts supplémentaires à la cible contrôlée.
 502122,Îles Célestes,Échange Égal II,L'ennemi subit 20% de dégâts supplémentaires lorsqu'il est contrôlé et inflige 20% de dégâts supplémentaires à la cible contrôlée.
+20220901,Championnat de Guilde,Inarrêtable,"Pour chaque base Milieu détruite, augmente l'Attaque de 10%, les PV de 20% et la Résistance Totale de 10% pour toutes les Filles de la Guilde Attaquante."
+20220902,Championnat de Guilde,Désir de Victoire,"Après avoir détruit la base Extrémité de l'ennemi, la Guilde Attaquante obtiendra 50 Points de Guilde à chaque fois qu'elle gagnera des Points de Guilde."
+20220903,Championnat de Guilde,Raid,Augmente de 10% les dégâts infligés par les Filles de la Guilde Attaquante lorsque les membres rejoignent le raid contre une base.
+5202000,Asmae,Attaque Basique,Attaque Basique
+65202700,Asmae,Attaque Basique,Attaque Basique
+75202000,Asmae,Attaque Basique,Attaque Basique
+5202001,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 160% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (120% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (160% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 5% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 10% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (100% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+65202701,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 320% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (240% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (320% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 10% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 15% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (300% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+75202001,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 800% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (640% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (800% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+5202002,Asmae,Préparation du Spectacle,"Augmente les PV de 10%, l'Attaque de 20%, les Critiques de 10%, l'Immunité de 10% et la Vitesse de 20."
+65202702,Asmae,Préparation du Spectacle,"Augmente les PV de 20%, l'Attaque de 30%, les Critiques de 20%, l'Immunité de 20% et la Vitesse de 40."
+65202712,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 60."
+75202002,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 60."
+5202003,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 120% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (100% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 5% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 10% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (100% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+65202703,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 180% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (120% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 10% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 15% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (300% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+65202713,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 320% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (240% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+75202003,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 320% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (240% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+5202004,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 70% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (160% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 10% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 5% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 10% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (100% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+65202704,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 80% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (320% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 15% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 30% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 10% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 15% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (300% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+65202714,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (800% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 30% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+75202004,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (800% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 30% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020011,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 816% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (672% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (816% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020012,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 832% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (704% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (832% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020013,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 848% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (736% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (848% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020014,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 864% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (768% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (864% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020015,Asmae,Plume de Paon,"
+Rare sont ceux qui résistent au charme de ma danse. Inflige 880% d\'Attaque aux 2 ennemis ayant le moins de PV tout en leur infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (800% de l\'Attaque d\'Asmae) pendant 3 tours.
+Inflige des dégâts (880% de l\'Attaque d\'Asmae) à tous les ennemis marqués avec [c][e28002]Plume de Paon[-][/c] tout en ignorant leur Armure, puis les marque avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020021,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 62."
+752020022,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 64."
+752020023,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 66."
+752020024,Asmae,Préparation du Spectacle,"Augmente les PV de 30%, l'Attaque de 40%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 68."
+752020025,Asmae,Préparation du Spectacle,"Augmente les PV de 33%, l'Attaque de 43%, les Critiques de 30%, l'Immunité de 30% et la Vitesse de 70."
+752020031,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 336% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (252% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020032,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 352% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (264% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020033,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 368% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (276% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020034,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 384% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (288% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 1 couche d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020035,Asmae,Clochette Rythmique,"
+As-tu entendu le tintement de mes clochettes ? L\'Attaque Basique inflige 400% d\'Attaque à l\'ennemi ayant le moins de PV, en lui infligeant des dégâts d\'[c][01a310]Empoisonnement[-][/c] (300% de l\'Attaque d\'Asmae)
+pendant 2 tours, et le marque avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Si cet ennemi a été marqué avec [c][e28002]Plume de Paon[-][/c], alors Asmae le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020041,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (816% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 32% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020042,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (832% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 34% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020043,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (848% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 36% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020044,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (864% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 38% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."
+752020045,Asmae,Position Finale,"
+Voilà ce que j\'appelle finir en beauté pour marquer mes spectateurs ! Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.
+Lorsqu\'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts (880% de l\'Attaque d\'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d\'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de 40% les Critiques de cet ennemi pendant 2 tours.
+
+[c][e28002]Plume de Paon (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% les dégâts infligés par la cible marquée lorsqu\'elle lance une attaque sur Asmae, puis Asmae convertira ces 20% de dégâts en Barrière.
+[c][01a310]Ensorcellement :[-][/c]
+Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible marquée subit. La cible marquée subira des dégâts d\'Ensorcellement et également ces mêmes dégâts au début de chaque tour et ce, jusqu\'à la fin de l\'effet (600% de l\'Attaque de la cible marquée, 2500% de la valeur de l\'Attaque d\'Asmae au maximum)."

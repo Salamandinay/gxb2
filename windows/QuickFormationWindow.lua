@@ -451,7 +451,8 @@ function QuickFormationPartner:onclickEquip(itemID, key)
 		leftCallback = function ()
 			self:unEquipSingle(itemID)
 			xyd.WindowManager:get():closeWindow("item_tips_window")
-		end
+		end,
+		quickItem = self
 	}
 
 	xyd.WindowManager:get():openWindow("item_tips_window", params)
@@ -1166,6 +1167,10 @@ function QuickFormationWindow:checkHasChange()
 
 			local equips = partners[i]:getEquipment()
 			local equips2 = partner_info[i]:getEquipment()
+
+			if partners[i].skill_index ~= partner_info[i].skill_index then
+				return true
+			end
 
 			for j = 1, 6 do
 				if equips[j] and equips[j] ~= equips2[j] or not equips[j] and equips2[j] and equips2[j] ~= 0 then

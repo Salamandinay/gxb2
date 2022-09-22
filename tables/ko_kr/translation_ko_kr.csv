@@ -3887,7 +3887,7 @@ GAMBLE_PLUS_TEXT_2,하트 A {1}개 수집
 FRIEND_TEAM_MSG_TEXT01,"[c][0066cc]{1}[-][/c] 지난번 보스 공격 기간에 전투를 참가하지 않았습니다. 선배님, 어서 같이 참가하세요~"
 FRIEND_TEAM_MSG_TEXT02,팀원 [c][0066cc]{1}[-][/c] 오랫동안 로그인하지 않았습니다. 팀장은 해당 팀원의 프로필을 클릭하여 [c][cc0011]추방[-][/c]하실 수 있습니다.
 FRIEND_TEAM_MSG_TEXT03,팀장 [c][0066cc]{1}[-][/c] 오랫동안 로그인하지 않았으므로 선배님께서 [c][cc0011]팀을 탈퇴[-][/c]하여 새로운 팀을 만드실 수 있습니다.
-ACTIVITY_GAMBLE_PLUS_HELP,1. 이벤트 기간 동안 미션을 완성하여 '하트 A'를 수집하면 풍부한 보상을 획득하실 수 있습니다. 일정 수량 획득 후 보상을 클릭하여 수령할 수 있습니다.|2. 팩을 구매하면 특별 보상을 해제하실 수 있으며 바로 팩 내 아이템을 획득할 수 있습니다.|3. '하트 A'는 이벤트 종료 후 소멸되므로 잊지 말고 사용하세요.
+ACTIVITY_GAMBLE_PLUS_HELP,1. 이벤트 기간 동안 미션을 완성하여 '하트 A'를 수집하면 풍부한 보상을 획득하실 수 있습니다. 일정 수량 획득 후 보상을 클릭하여 수령할 수 있습니다.|2. 팩을 구매하면 특별 보상을 해제하실 수 있으며 바로 팩 내 아이템을 획득할 수 있습니다.|3. '하트 A'는 이벤트 종료 후 소멸되므로 대응하는 보상을 잊지 마시고 수령하세요~
 WEDDING_VOTE_RANK_TITLE,전 시즌 TOP3
 WEDDING_VOTE_RANK_SESSION,제 {1}기 사랑과 맹세의 총선거
 ACTIVITY_NEWBEE_GACHA_TEXT03,[c][ef4037]5[-][/c]성 소녀 획득 확률 [c][ef4037]5[-][/c]배 증가!
@@ -4908,7 +4908,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,진급 조건
 WARMUP_ARENA_REACH_RANK_HELP,"1. 본 이벤트에는 각각 'B', 'A', 'S', 'S+', 총 4가지 계급이 있으며, 선배님은 자신과 같은 계급인 플레이어에게 도전할 수 있습니다. 모든 플레이어는 B 계급으로 이벤트를 시작합니다.|2. 매일 9시(한국 시간)에, 랭킹이 진급 기준에 도달한 선배님은 다음 계급으로 진급됩니다.|3. 각 계급 소개: |{1} 계급 도달 후:|{2}|{3} 계급 도달 후:|{4}|{5} 계급 도달 후:|{6}|4. 이벤트 중 전시된 랭킹은 선배님이 현재 소속된 계급 내 랭킹입니다.(진급 규칙으로 인해 매일 9시(한국 시간)에 각 계급 내의 플레이어 인원수가 변화합니다. 선배님이 다음 계급으로 진급하지 못하였을 경우 랭킹이 전날보다 떨어지는 상황이 발생할 수 있습니다.)"
 ENTRANCE_TEST_LEVEL_UP_ING,단계 확인 중...
 WARMUP_ARENA_TASK_INFO_1,신입생 챌린지
-WARMUP_ARENA_TASK_INFO_2,레비야의 비밀
+WARMUP_ARENA_TASK_INFO_2,아름다운 춤
 WARMUP_ARENA_TASK_INFO_3,챌린지 미션
 WARMUP_ARENA_TASK_INFO_4,입학 세트 보상
 WARMUP_ARENA_TASK_INFO_5,별 미션 완료 후 해제
@@ -6944,7 +6944,7 @@ ACTIVITY_GOLDFISH_TEXT04,보너스 풀
 ACTIVITY_GOLDFISH_TEXT05,축하드립니다! {1} 선배님께서 금붕어 코인 {2}개 획득하셨습니다~
 ACTIVITY_GOLDFISH_PREVIEW_TEXT01,특별 금붕어
 ACTIVITY_GOLDFISH_PREVIEW_TEXT02,일반 금붕어
-ACTIVITY_GOLDFISH_SHOP_TEXT01,이벤트 마지막 날에 금붕어 코인[c][ffa82b]{1}[-][/c]개가 가방으로 발송될 것입니다~
+ACTIVITY_GOLDFISH_SHOP_TEXT01,이벤트 마지막 날에 금붕어 코인 [c][ffa82b]{1}[-][/c]개가 가방으로 발송될 것입니다~
 ACTIVITY_GOLDFISH_SHOP_TEXT02,기간 한정 보상이 선배님을 기다리고 있답니다~!
 ACTIVITY_GOLDFISH_SHOP_TEXT03,{1}단계
 ACTIVITY_GOLDFISH_SHOP_TEXT04,잡기 횟수：
@@ -7016,7 +7016,7 @@ GALAXY_TRIP_TIPS_01,진행 중인 탐색이 없습니다
 GALAXY_TRIP_TIPS_02,탐색 중이라 노선 계획할 수 없습니다!
 GALAXY_TRIP_TIPS_03,팀 미리 설치하셔야 합니다.
 GALAXY_TRIP_TIPS_04,전 행성에서 대응하는 해제 조건을 먼저 달성하셔야 합니다.
-GALAXY_TRIP_TIPS_05,미지의 영역입니다...
+GALAXY_TRIP_TIPS_05,미지의 영역입니다. 추후 오픈될 예정입니다.
 GALAXY_TRIP_TIPS_06,탐색하고 싶은 지점을 선택하세요
 GALAXY_TRIP_TIPS_07,소환하면 지금 탐색 미완성 지점을 포기하셔야 합니다. 그래도 소환하시겠습니까?
 ACTIVITY_GOLDFISH_RK,여름 대방출
@@ -7153,94 +7153,141 @@ ACTIVITY_REPAIR_CONSOLE_TEXT06,일반 보상
 ACTIVITY_REPAIR_CONSOLE_TEXT07,제{1}라운드
 ACTIVITY_REPAIR_CONSOLE_TEXT08,{1}라운드 이후
 ACTIVITY_REPAIR_CONSOLE_HELP,"1. 이벤트 기간 동안 배터리를 사용해 전자 회로에 있는 노드를 충전할 수 있습니다. 배터리 1개 사용할 때마다 랜덤으로 노드 1-3개를 충전할 수 있습니다.|2. 가로줄 혹은 세로줄의 노드 5개가 모두 충전 완성 시 각줄 대응하는 일반 보상을 수령할 수 있습니다.|3. 특정 대각선줄의 노드 5개 모두 충전 완성 시 해당 라운드의 그랜드 보상을 획득할 수 있으며 다음 라운드로 넘어갑니다.|4. 보상 미리 보기 버튼을 클릭하여 일반 보상 및 그랜드 보상의 내용을 미리 확인할 수 있습니다.|5. 배터리는 배터리 충전 팩, 보니의 체크 리스트를 통해 획득 가능합니다."
-GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
-GUILD_NEW_WAR_TIPS01,휴식 기간 종료. 전투 준비 기간이 곧 시작.
-GUILD_NEW_WAR_TIPS02,전투 기간 종료. 휴식 기간이 곧 시작.
+GUILD_NEW_WAR_HELP01,"[c][699be9]참여[-][/c]|1. 선배님 소속 동아리는 Lv.12 달성 및 최근 일주일 동안 접속한 유저가 5인 이상일 경우 참여 가능합니다.|2. 조건 달성한 동아리 소속 임의의 동아리원이 본 이벤트 입구를 클릭해 이벤트 페이지에 들어가면 해당 동아리는 자동으로 참여됩니다.|[c][699be9]규칙[-][/c]|1. 본 이벤트는 시즌제이며 모든 서버가 참여 가능합니다. 매 시즌에 동아리 간 1대1의 대결 8회 진행합니다.|2. 매번 대결은 3일 동안 지속됩니다. 그 중 하루는 전투 준비 기간이며 이틀은 전투 기간입니다. 아군과 적이 각각 메인 베이스 1개, 중앙 베이스 3개, 앞 베이스 2개가 있습니다. 베이스마다 동아리원이 수비할 수 있는 깃발이 있습니다.|3. 각 시즌은 3가지 기간이 있으며 각각 휴식 기간, 전투 준비 기간 및 전투 기간입니다. 매 시즌 시작 및 종료 시에 추가로 3일과 4일의 휴식 기간이 있는 것 외에 매주의 기간은 다음과 같습니다.|월요일: 휴식 기간. 동아리 랭킹 및 시즌 대결 기록을 확인할 수 있습니다.|화요일: 전투 준비 기간. 방어팀을 조정헐 수 있습니다.|수, 목요일: 전투 기간. 동아리 간 대결합니다.|금요일: 전투 준비 기간. 수비팀을 조정헐 수 있습니다.|토, 일요일: 전투 기간. 동아리 간 대결합니다.|4. 전투 준비 기간 들어갈 때마다 시스템이 자동으로 수비팀에 참여하는 동아리원을 전투력 순위에 따라 배치합니다. 우선 순위: 메인 메이스＞중앙 베이스＞앞 베이스. 동아리 회장 및 부회장은 동아리원의 수비 위치를 조정할 수 있습니다. 동아리원은 자신의 수비 진영을 조정할 수 있습니다.(조정할 때마다 저장 후 업데이트됩니다.)|5. 전투 기간에 진입 후 선배님께서 적 베이스의 깃발을 공격할 수 있으며 만약 수비팀이 있으면 먼저 수비팀을 격파해야 됩니다. 베이스 중 모든 깃발을 제거 후 해당 베이스 격파됩니다. 임의의 앞 베이스 격파 후 중앙 베이스 공격 가능합니다. 임의의 중앙 베이스 격파 후 메인 베이스 공격 가능합니다. 모든 베이스 격파 후 장소를 청소할 수 있으며 추가로 동아리 포인트, 개인 기여도 등 푸짐한 보상을 획득할 수 있습니다.|6. 매 대결 종료 후, 전투 기간에 동아리 포인트를 많이 획득하는 동아리가 승리하며 포인트 일치할 때 무승부로 판정됩니다.|[c][699be9]매칭&랭킹[-][/c]|1. 동아리가 처음 대결에 나갈 때 현재 모든 동아리원의 역사 최고 전투력에 의해 초기 동아리 포인트 획득합니다. 처음이 아닐 경우, 지난번 최종 랭킹에 의해 포인트 획득하며 랭킹  순위가 높을 수록 포인트가 높습니다.|2. 현재 동아리 포인트에 따라 동아리 랭킹이 판정됩니다. 포인트 동일할 때 먼저 달성한 동아리의 랭킹이 높습니다.|3. 현재 동아리 포인트에 따라 일정 범위 내에 랜덤으로 매칭됩니다. |[c][699be9]동아리 포인트[-][/c]|1. 적 앞 베이스, 중앙 베이스, 메인 베이스의 깃발 제거 시 각각 100, 150, 300 동아리 포인트 획득합니다.|2. 적 앞 베이스, 중앙 베이스, 메인 베이스 격파 시 각각 500, 1000, 2000 동아리 포인트 획득합니다.|3. 대결 승리, 패배 및 무승부 시 각각 2000, 1000, 1000 동아리 포인트 획득합니다.|4. 장소 청소 할 때마다 10 동아리 포인트 획득합니다.|[c][699be9]개인 기여도[-][/c]|1. 적 수비대원 1명을 선택해 그의 팀 3개를 일일히 도전합니다. 승리 횟수는 0/1/2/3회일 때, 각각 15/15/20/20 개인 기여도 획득합니다.|2. 적 깃발 공격할 때마다 15 개인 기여도 획득합니다.|3. 장소 청소할 때마다 5 개인 기여도 획득합니다.|[c][699be9]보상[-][/c]|1. 동아리 대결 보상. 대결 끝날 때마다 동아리 내 수비에 참여하며 개인 기여도가 0보다 많은 동아리원에게 메일로 보상을 발송합니다.|2. 개인 대결 보상. 시즌 종료 후, 개인 기여도가 0보다 많은 동아리원에게 메일로 보상을 발송합니다.|3. 동아리전 시즌 보상. 시즌 종료 후, 각 동아리의 최종 랭킹에 따라 수비에 참여하며 개인 기여도가 0보다 많은 동아리원에게 메일로 보상을 발송합니다.|4. 적을 도전 시, 깃발 공격 시, 장소 청소 시 모두 추가 보상 받을 수 있습니다."
+GUILD_NEW_WAR_TIPS01,휴식 기간 종료. 매칭 중.
+GUILD_NEW_WAR_TIPS02,전투 시간 종료. 정산 중.
 GUILD_NEW_WAR_TIPS03,동아리 회장 및 부회장만 가능
 GUILD_NEW_WAR_TIPS04,현재 도전 횟수 부족
 GUILD_NEW_WAR_TIPS05,먼저 동아리 가입하셔야 합니다.
-GUILD_NEW_WAR_TIPS06,동아리 레렙 Lv.12 달성 및 동아리원 최소 5인 필요.
+GUILD_NEW_WAR_TIPS06,동아리 레렙 Lv.12 달성 및 최근 7일 동안 접속 동아리원 5인 이상.
 GUILD_NEW_WAR_TIPS07,MAX 도달
 GUILD_NEW_WAR_TEXT01,시즌
-GUILD_NEW_WAR_TEXT02,下場對決開始：
+GUILD_NEW_WAR_TEXT02,다음 대결 시작
 GUILD_NEW_WAR_TEXT03,시즌 순위
-GUILD_NEW_WAR_TEXT04,對決記錄
-GUILD_NEW_WAR_TEXT05,新賽季對決開始:
-GUILD_NEW_WAR_TEXT06,對決{1}
-GUILD_NEW_WAR_TEXT07,暫無對決記錄
-GUILD_NEW_WAR_TEXT08,備戰期
-GUILD_NEW_WAR_TEXT09,戰鬥期
-GUILD_NEW_WAR_TEXT10,總戰力
-GUILD_NEW_WAR_TEXT11,社長
-GUILD_NEW_WAR_TEXT12,比賽積分
-GUILD_NEW_WAR_TEXT13,獎勵
-GUILD_NEW_WAR_TEXT14,對決勝利獎勵
-GUILD_NEW_WAR_TEXT15,對決失敗獎勵
-GUILD_NEW_WAR_TEXT16,進入場地
-GUILD_NEW_WAR_TEXT17,駐守 {1}/{2}
-GUILD_NEW_WAR_TEXT18,防守陣容
-GUILD_NEW_WAR_TEXT19,戰報
-GUILD_NEW_WAR_TEXT20,聊天
-GUILD_NEW_WAR_TEXT21,獎勵
-GUILD_NEW_WAR_TEXT22,集火
-GUILD_NEW_WAR_TEXT23,每次拆除減少旗幟30點耐久
-GUILD_NEW_WAR_TEXT24,{1}號旗幟
-GUILD_NEW_WAR_TEXT25,耐久：{1}/{2}
-GUILD_NEW_WAR_TEXT26,可以派遣防守成員
-GUILD_NEW_WAR_TEXT27,調整
-GUILD_NEW_WAR_TEXT28,防守社員
-GUILD_NEW_WAR_TEXT29,空閒
-GUILD_NEW_WAR_TEXT30,主壘
-GUILD_NEW_WAR_TEXT31,中壘{1}
-GUILD_NEW_WAR_TEXT32,前壘{1}
-GUILD_NEW_WAR_TEXT33,旗幟
-GUILD_NEW_WAR_TEXT34,戰力
-GUILD_NEW_WAR_TEXT35,取消
-GUILD_NEW_WAR_TEXT36,確定
-GUILD_NEW_WAR_TEXT37,個人貢獻：{1}
-GUILD_NEW_WAR_TEXT38,進攻次數：{1}/{2}
-GUILD_NEW_WAR_TEXT39,賽季結束
-GUILD_NEW_WAR_TEXT40,社團排名
-GUILD_NEW_WAR_TEXT41,個人排名
-GUILD_NEW_WAR_TEXT42,獎勵
-GUILD_NEW_WAR_TEXT43,社團獎勵
-GUILD_NEW_WAR_TEXT44,個人獎勵
-GUILD_NEW_WAR_TEXT45,賽季結算獎勵：
-GUILD_NEW_WAR_TEXT46,對決結算獎勵：
+GUILD_NEW_WAR_TEXT04,대결 기록
+GUILD_NEW_WAR_TEXT05,새로운 시즌의 대결 시작
+GUILD_NEW_WAR_TEXT06,대결{1}
+GUILD_NEW_WAR_TEXT07,대결 기록이 없음
+GUILD_NEW_WAR_TEXT08,준비 기간
+GUILD_NEW_WAR_TEXT09,전투 기간
+GUILD_NEW_WAR_TEXT10,총 전투력
+GUILD_NEW_WAR_TEXT11,회장
+GUILD_NEW_WAR_TEXT12,동아리 포인트
+GUILD_NEW_WAR_TEXT13,보상
+GUILD_NEW_WAR_TEXT14,대결 승리 보상
+GUILD_NEW_WAR_TEXT15,대결 실패 보상
+GUILD_NEW_WAR_TEXT16,들어가기
+GUILD_NEW_WAR_TEXT17,방어{1}/{2}
+GUILD_NEW_WAR_TEXT18,수비 진영
+GUILD_NEW_WAR_TEXT19,전투 기록
+GUILD_NEW_WAR_TEXT20,채팅
+GUILD_NEW_WAR_TEXT21,보상
+GUILD_NEW_WAR_TEXT22,집중 공격
+GUILD_NEW_WAR_TEXT23,공격할 때마다 깃발의 지구력 50pt 감소.
+GUILD_NEW_WAR_TEXT24,{1}번 깃발
+GUILD_NEW_WAR_TEXT25,지구력: {2}/{1}
+GUILD_NEW_WAR_TEXT26,수비대원 파견 가능
+GUILD_NEW_WAR_TEXT27,조정
+GUILD_NEW_WAR_TEXT28,수비대원
+GUILD_NEW_WAR_TEXT29,대기중
+GUILD_NEW_WAR_TEXT30,메인 베이스
+GUILD_NEW_WAR_TEXT31,중앙 베이스{1}
+GUILD_NEW_WAR_TEXT32,앞 베이스{1}
+GUILD_NEW_WAR_TEXT33,깃발
+GUILD_NEW_WAR_TEXT34,전투력
+GUILD_NEW_WAR_TEXT35,취소
+GUILD_NEW_WAR_TEXT36,확인
+GUILD_NEW_WAR_TEXT37,개인 기여도: {1}
+GUILD_NEW_WAR_TEXT38,도전 횟수: {1}/{2}
+GUILD_NEW_WAR_TEXT39,시즌 종료
+GUILD_NEW_WAR_TEXT40,동아리 랭킹
+GUILD_NEW_WAR_TEXT41,개인 랭킹
+GUILD_NEW_WAR_TEXT42,보상
+GUILD_NEW_WAR_TEXT43,동아리 보상
+GUILD_NEW_WAR_TEXT44,개인 보상
+GUILD_NEW_WAR_TEXT45,시즌 결산 보상
+GUILD_NEW_WAR_TEXT46,대결 결산 보상
 GUILD_NEW_WAR_TEXT47,--
-GUILD_NEW_WAR_TEXT48,對戰資訊
-GUILD_NEW_WAR_TEXT49,可以拖動或點擊進行調整
-GUILD_NEW_WAR_TEXT50,挑戰
-GUILD_NEW_WAR_TEXT51,旗幟資訊
-GUILD_NEW_WAR_TEXT52,每次攻擊扣除20點耐久
-GUILD_NEW_WAR_TEXT53,進攻獎勵
-GUILD_NEW_WAR_TEXT54,進攻
-GUILD_NEW_WAR_TEXT55,個人貢獻 +{1}
-GUILD_NEW_WAR_TEXT56,獎勵
-GUILD_NEW_WAR_TEXT57,敵方防守成員精力 -{1}
-GUILD_NEW_WAR_TEXT58,第{1}場對決
-GUILD_NEW_WAR_TEXT59,個人貢獻社團排名
-GUILD_NEW_WAR_TEXT60,個人貢獻
-GUILD_NEW_WAR_TEXT61,社團積分 +{1}
-GUILD_NEW_WAR_TEXT62,獎勵透過信件發放
-GUILD_NEW_WAR_TEXT63,{1}進攻了敵方{2}的{3}號旗幟，消耗了敵人{4}點精力
-GUILD_NEW_WAR_TEXT64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
-GUILD_NEW_WAR_TEXT65,{1}摧毀了敵方{2}
-GUILD_NEW_WAR_TEXT66,結束
-GUILD_NEW_WAR_TEXT67,對戰{1}
-GUILD_NEW_WAR_TEXT68,挑戰次數：{1}
-GUILD_NEW_WAR_TEXT69,戰鬥中...
-GUILD_NEW_WAR_TEXT70,戰鬥記錄
-GUILD_NEW_WAR_TEXT71,個人貢獻
-GUILD_NEW_WAR_TEXT72,敵方精力
-GUILD_NEW_WAR_TEXT73,清理場地
-GUILD_NEW_WAR_TEXT74,我方
-GUILD_NEW_WAR_TEXT75,敵方
+GUILD_NEW_WAR_TEXT48,대결 정보
+GUILD_NEW_WAR_TEXT49,길게 누르거나 클릭하면 조정 가능합니다.
+GUILD_NEW_WAR_TEXT50,도전
+GUILD_NEW_WAR_TEXT51,깃발 정보
+GUILD_NEW_WAR_TEXT52,공격할 때마다 지구력 50pt 감소
+GUILD_NEW_WAR_TEXT53,공격 보상
+GUILD_NEW_WAR_TEXT54,공격
+GUILD_NEW_WAR_TEXT55,개인 기여도 +{1}
+GUILD_NEW_WAR_TEXT56,보상
+GUILD_NEW_WAR_TEXT57,적 방어 팀원의 에너지 -{1}
+GUILD_NEW_WAR_TEXT58,{1}번째 대결
+GUILD_NEW_WAR_TEXT59,개인 기여도
+GUILD_NEW_WAR_TEXT60,개인 기여도 랭킹(동아리 내)
+GUILD_NEW_WAR_TEXT61,동아리 포인트 +{1}
+GUILD_NEW_WAR_TEXT62,보상은 메일로 발송됩니다.
+GUILD_NEW_WAR_TEXT63,{1}님께서 적 {2}의 {3}번 깃발을 공격하며 적 에너지 {4}pt 감소됩니다.
+GUILD_NEW_WAR_TEXT64,{1}님께서 적 {2}의 {3}번 깃발을 공격하며 깃발의 지구력 {4}pt 감소됩니다.
+GUILD_NEW_WAR_TEXT65,{1}님께서 적의 {2} 격파했습니다.
+GUILD_NEW_WAR_TEXT66,종료
+GUILD_NEW_WAR_TEXT67,대결{1}
+GUILD_NEW_WAR_TEXT68,도전 횟수: {1}
+GUILD_NEW_WAR_TEXT69,전투 중...
+GUILD_NEW_WAR_TEXT70,전투 기록
+GUILD_NEW_WAR_TEXT71,개인 기여도
+GUILD_NEW_WAR_TEXT72,적 에너지
+GUILD_NEW_WAR_TEXT73,장소 청소
+GUILD_NEW_WAR_TEXT74,아군
+GUILD_NEW_WAR_TEXT75,적
 ACTIVITY_LAFULI_RUDDER_TITLE,러블리의 도전
 ACTIVITY_LAFULI_RUDDER_TEXT,배 키 {1}개 사용(조종 키 제외)
-GUILD_NEW_WAR_TEXT76,當前排名
-GUILD_NEW_WAR_TEXT77,當前排名獎勵
+GUILD_NEW_WAR_TEXT76,현재 랭킹
+GUILD_NEW_WAR_TEXT77,현재 랭킹 보상
 ACTIVITY_REPAIR_CONSOLE_TEXT09,본 라운드의 그랜드 보상을 이미 수령하셨습니다. 일부 일반 보상은 아직 해제 안 하며 미수령 상태입니다. 다음 라운드로 넘어가겠습니까?
 ACTIVITY_REPAIR_CONSOLE_TEXT10,이번 라운드 다시하기
 ACTIVITY_REPAIR_CONSOLE_TEXT11,다음 라운드
 QUICK_FORMATION_TEXT25,팀 저장
+QUICK_FORMATION_TEXT26,저장 후 원래 기록이 지워지고 현재 팀으로 저장됩니다. 계속하시겠습니까?
+GUILD_NEW_WAR_TEXT78,이번 대결 종료
+QUICK_FORMATION_TEXT27,최소 소녀 1명을 출전하세요.
+GUILD_NEW_WAR_TEXT79,랭깅 정보가 없습니다.
+GUILD_NEW_WAR_HELP02,"1. 아군 베이스마다 깃발 여러 개가 있으며 동아리원 1명은 깃발 하나를 수비할 수 있습니다. 수비 초기에 에너지 200포인트가 있습니다.|2. 적 수비대원 1명을 선택해 그의 팀3개를 일일히 도전합니다. 승리 횟수는 0/1/2/3일 때 적 에너지 각각 5/10/15/20 포인트 감소됩니다.|3. 수비대원의 에너지가 0이 될 때 격파로 간주되며 선배님께서 다시 깃발을 공격할 수 있습니다. 공격할 때마다 깃발의 지구력이 감소되며 지구력이 0일 때 해당 깃발이 제거됩니다.|4. 모든 깃발이 제거된 후 해당 베이스는 격파됩니다. 모든 베이스가 격파되면 공격측은 임의의 베이스에서 장소 청소 가능합니다.|5. 전투 기간에 선배님께서 매일 도전 횟수 10회를 획득할 수 있습니다. 적 도전, 깃발 공격 및 장소 청소는 각각 도전 횟수 1회 소모되며 대응하는 보상을 받을 수 있습니다.|6. 적 중앙 베이스 격파할 때마다 아군이 해당 대결의 이후 대결 중 모든 출전 소녀에게 공격력+10, HP+20%%, 모든 대미지 감소+10%%를 제공할 수 있으며 버프가 중복 가능하며 대결 종료 시 사라집니다. 적의 메인 베이스 격파 시 아군이 이번 대결 중 동아리 포인트 획득할 때마다 추가로 50 동아리 포인트 획득합니다.|7. 동아리 회장 및 부회장은 임의의 베이스를 집중 공격 대상으로 지정할 수 있으며 동아리원이 해당 베이스 공격할 때마다 모든 소녀에게 모든 대미지+10%%를 제공할 수 있습니다. 12시간이 지난 후 집중 공격 대상을 바꿀 수 있습니다."
+GUILD_NEW_WAR_TEXT80,{1}님께서 적 {2}의 {3}번 깃발을 격파했습니다.
+ACTIVITY_PIRATE_TEXT01,전 서버 스토리 클리어 인원
+ACTIVITY_PIRATE_TEXT02,전 서버 팩
+ACTIVITY_PIRATE_TEXT03,수집 진도
+ACTIVITY_PIRATE_TEXT04,스토리 진척
+ACTIVITY_PIRATE_TEXT05,소탕
+ACTIVITY_PIRATE_TEXT06,받기
+ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT01,보상 수집
+ACTIVITY_PIRATE_SHOP_TEXT02,잠겨 있음
+ACTIVITY_PIRATE_SHOP_TEXT03,보물 창고
+ACTIVITY_PIRATE_SHOP_TEXT04,보물 창고(보통)
+ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+GUILD_NEW_WAR_TIPS08,깃발 도전 준비 기간과 전투 기간 중에는 동아리를 탈퇴할 수 없습니다.
+GUILD_NEW_WAR_TIPS09,깃발 도전 준비 기간과 전투 기간 중에는 멤버를 탈퇴시킬 수 없습니다.
+GUILD_NEW_WAR_TIPS10,깃발 도전 준비 기간과 전투 기간 중에는 동아리를 해산할 수 없습니다.
+GUILD_NEW_WAR_TEXT81,전투 기록 정보가 없습니다.
+GUILD_NEW_WAR_TEXT82,전투 기록 정보
+GUILD_NEW_WAR_TEXT83,[c][53a52a]대기[-][/c]
+GUILD_NEW_WAR_TEXT84,남은 지구력이 0입니다.
+GUILD_NEW_WAR_TEXT85,조정 완료
+GUILD_NEW_WAR_TEXT86,지금 조작 불가. {1} 남음
+GUILD_NEW_WAR_TEXT87,제거
+GUILD_NEW_WAR_TEXT88,제거 완료
+GUILD_NEW_WAR_TEXT89,먼저 출전팀을 설정하셔야 합니다.
+GUILD_NEW_WAR_TEXT90,현재 수비대원이 없습니다.
+GUILD_NEW_WAR_TEXT91,버프가 없습니다.
+GUILD_NEW_WAR_TEXT92,집중 공격 중
+GUILD_NEW_WAR_TEXT93,해당 베이스 공격 시 소녀의 모든 대미지+10%%
+GUILD_NEW_WAR_TIPS11,전투 기간에 방어 진영을 바꿀 수 없습니다.
+GUILD_NEW_WAR_TIPS12,먼저 임의의 앞 베이스를 격파해야 합니다.
+GUILD_NEW_WAR_TIPS13,먼저 임의의 중앙 베이스를 격파해야 합니다.
+ACTIVITY_PIRATE_PLACE1,海神殿
+ACTIVITY_PIRATE_PLACE2,近海區
+ACTIVITY_PIRATE_PLACE3,遠海區
+ACTIVITY_PIRATE_PLACE4,沙灘
+ACTIVITY_PIRATE_PLACE5,深海龍宮
+GUILD_NEW_WAR_TEXT94,랭킹
+GUILD_NEW_WAR_TEXT95,깃발 지구력 -{1}
+GUILD_NEW_WAR_TEXT96,해산됨
+GUILD_NEW_WAR_TEXT97,전투력↑
+GUILD_NEW_WAR_TEXT98,전투력↓

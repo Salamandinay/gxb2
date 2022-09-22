@@ -32,7 +32,6 @@ function ActivityGoldfishAwards:getUIComponent()
 	self.groupItem_uigrid = self.groupItem:GetComponent(typeof(UIGrid))
 	self.costLabel = self.activityGroup:ComponentByName("costGroup/label", typeof(UILabel))
 	self.costBtn = self.activityGroup:NodeByName("costGroup/btn").gameObject
-	self.costIcon = self.activityGroup:ComponentByName("costGroup/icon", typeof(UISprite))
 	self.itemCell = go:NodeByName("itemCell").gameObject
 	self.partnerGroup = self.activityGroup:NodeByName("partnerGroup").gameObject
 end
@@ -40,8 +39,16 @@ end
 function ActivityGoldfishAwards:initUIComponent()
 	xyd.setUISpriteAsync(self.textImg, nil, "goldfish_awards_title_" .. xyd.Global.lang, nil, )
 	self:setText()
-	xyd.models.activity:reqActivityByID(self.id)
-	self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.setItem))
+
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GOLDFISH)
+
+	if activityData:checkNeedUpdate() then
+		xyd.models.activity:reqActivityByID(self.id)
+		self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.setItem))
+	else
+		self:setItem()
+	end
+
 	self:setEffect()
 	self:eventRegister()
 
@@ -69,10 +76,10 @@ function ActivityGoldfishAwards:setEffect()
 	else
 		local effect = xyd.Spine.new(self.partnerGroup.gameObject)
 
-		effect:setInfo("luban_pifu01_lihui01", function ()
+		effect:setInfo("kaixi_pifu04_lihui01", function ()
 			effect:setRenderTarget(self.partnerGroup:GetComponent(typeof(UITexture)), 3)
-			effect:SetLocalScale(0.52, 0.52, 0.52)
-			effect:SetLocalPosition(0, -554 + 6 * self.scale_num_contrary, 0)
+			effect:SetLocalScale(0.46, 0.46, 0.46)
+			effect:SetLocalPosition(0, -474 + 6 * self.scale_num_contrary, 0)
 			effect:play("animation", 0)
 		end)
 	end
@@ -84,10 +91,7 @@ function ActivityGoldfishAwards:setText()
 	end
 
 	self.endLabel.text = __("TEXT_END")
-	local costItemID = xyd.tables.miscTable:getNumber("accumulated_consume_item01", "value")
-	self.costLabel.text = xyd.models.backpack:getItemNumByID(costItemID)
-
-	xyd.setUISpriteAsync(self.costIcon, nil, xyd.tables.itemTable:getIcon(costItemID), nil, )
+	self.costLabel.text = xyd.models.backpack:getItemNumByID(xyd.ItemID.FISHING_NET)
 end
 
 function ActivityGoldfishAwards:setItem()
@@ -125,8 +129,8 @@ end
 function ActivityGoldfishAwards:eventRegister()
 	UIEventListener.Get(self.costBtn).onClick = function ()
 		xyd.goToActivityWindowAgain({
-			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_DRAGONBOAT2022),
-			select = xyd.ActivityID.ACTIVITY_DRAGONBOAT2022
+			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_GOLDFISH),
+			select = xyd.ActivityID.ACTIVITY_GOLDFISH
 		})
 	end
 end

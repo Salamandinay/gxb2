@@ -2392,42 +2392,6 @@ function MainWindow:initRedMark()
 	}, self.trBtnList_[6]:getRedPoint())
 	xyd.models.backpack:checkCollectionShopRed()
 
-	local funcs = {
-		xyd.RedMarkType.STORY_LIST_MEMORY,
-		xyd.RedMarkType.QUESTIONNAIRE,
-		xyd.RedMarkType.GM_CHAT,
-		xyd.RedMarkType.COMIC,
-		xyd.RedMarkType.COLLECTION_SHOP,
-		xyd.RedMarkType.COLLECTION_SHOP_2,
-		xyd.RedMarkType.BACKGROUND,
-		xyd.RedMarkType.COMMUNITY_ACTIVITY,
-		xyd.RedMarkType.GAME_NOTICE,
-		xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
-	}
-
-	if xyd.Global.lang == "ko_kr" then
-		funcs = {
-			xyd.RedMarkType.STORY_LIST_MEMORY,
-			xyd.RedMarkType.QUESTIONNAIRE,
-			xyd.RedMarkType.GM_CHAT,
-			xyd.RedMarkType.COMIC,
-			xyd.RedMarkType.COLLECTION_SHOP,
-			xyd.RedMarkType.COLLECTION_SHOP_2,
-			xyd.RedMarkType.BACKGROUND,
-			xyd.RedMarkType.GAME_NOTICE,
-			xyd.RedMarkType.COMMUNITY_ACTIVITY,
-			xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
-		}
-	end
-
-	local activityInvitataionSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
-
-	if activityInvitataionSeniorData then
-		activityInvitataionSeniorData:checkRedPoint()
-	end
-
-	xyd.models.redMark:setJointMarkImg(funcs, self.MainwinBottomBtn_red_img_6:getRedPoint())
-
 	local data = xyd.models.activity:getBattlePassData()
 
 	if data then
@@ -2439,25 +2403,28 @@ function MainWindow:initRedMark()
 			xyd.RedMarkType.BATTLE_PASS_MISSION2,
 			xyd.RedMarkType.BATTLE_PASS_MISSION3
 		}, self.btnMission_:getRedPoint())
-		xyd.models.redMark:setJointMarkImg({
-			xyd.RedMarkType.STORY_LIST_MEMORY,
-			xyd.RedMarkType.QUESTIONNAIRE,
-			xyd.RedMarkType.GM_CHAT,
-			xyd.RedMarkType.COMIC,
-			xyd.RedMarkType.BACKGROUND,
-			xyd.RedMarkType.COMMUNITY_ACTIVITY
-		}, self.MainwinBottomBtn_red_img_6:getRedPoint())
 		data:getRedMarkState()
 	else
 		xyd.models.redMark:setMarkImg(xyd.RedMarkType.MISSION, self.btnMission_:getRedPoint())
-		xyd.models.redMark:setJointMarkImg({
-			xyd.RedMarkType.STORY_LIST_MEMORY,
-			xyd.RedMarkType.QUESTIONNAIRE,
-			xyd.RedMarkType.GM_CHAT,
-			xyd.RedMarkType.COMIC,
-			xyd.RedMarkType.BACKGROUND,
-			xyd.RedMarkType.COMMUNITY_ACTIVITY
-		}, self.MainwinBottomBtn_red_img_6:getRedPoint())
+	end
+
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.STORY_LIST_MEMORY,
+		xyd.RedMarkType.QUESTIONNAIRE,
+		xyd.RedMarkType.GM_CHAT,
+		xyd.RedMarkType.COMIC,
+		xyd.RedMarkType.COLLECTION_SHOP,
+		xyd.RedMarkType.COLLECTION_SHOP_2,
+		xyd.RedMarkType.BACKGROUND,
+		xyd.RedMarkType.COMMUNITY_ACTIVITY,
+		xyd.RedMarkType.GAME_NOTICE,
+		xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR
+	}, self.MainwinBottomBtn_red_img_6:getRedPoint())
+
+	local activityInvitataionSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
+
+	if activityInvitataionSeniorData then
+		activityInvitataionSeniorData:checkRedPoint()
 	end
 
 	xyd.models.redMark:setJointMarkImg({

@@ -17272,3 +17272,441 @@ If Raenvya defeats an enemy when she is possessing her ally, she will revive at 
 502120,Sky Island,Purge III,The Enemy will randomly remove 5 stacks of Damage Over Time Effect from itself at the end of each round.
 502121,Sky Island,Equivalent Exchange I,The Enemy takes 10% more damage when it is affected by Control Effects and deals 10% more damage to targets affected by Control Effects.
 502122,Sky Island,Equivalent Exchange II,The Enemy takes 20% more damage when it is affected by Control Effects and deals 20% more damage to targets affected by Control Effects.
+20220901,Guild Championship,Unstoppable,"All Girls in the Attacking Guild gain 10% extra Attack, 20% extra HP, and 10% extra Damage Depletion for every Center Base the Attacking Guild destroys."
+20220902,Guild Championship,Victor's Spoils,"After destroying the Main Base of the opposing Guild, the Attacking Guild will gain 50 extra Guild Points whenever it gains Guild Points."
+20220903,Guild Championship,Focus Attack,"When attacking targets under Focus Attack, all damage dealt by Girls in the Attacking Team will be increased by 10%."
+5202000,Azucena,Basic Attack,Basic Attack
+65202700,Azucena,Basic Attack,Basic Attack
+75202000,Azucena,Basic Attack,Basic Attack
+5202001,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (160% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (120% of Attack) damage every round for 3 rounds.
+She will also deal (160% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 20%. When the owner deals damage to the caster, the caster will absorb and transform 5% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 10% more damage from Damage Over Time Effects.
+The owner takes (100% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+65202701,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (320% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (240% of Attack) damage every round for 3 rounds.
+She will also deal (320% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 30%. When the owner deals damage to the caster, the caster will absorb and transform 10% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 15% more damage from Damage Over Time Effects.
+The owner takes (300% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+75202001,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (800% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (640% of Attack) damage every round for 3 rounds.
+She will also deal (800% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+5202002,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 10%, Attack by 20%, Crit by 10%, Control Immunity by 10%, and Speed by 20."
+65202702,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 20%, Attack by 30%, Crit by 20%, Control Immunity by 20%, and Speed by 40."
+65202712,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 60."
+75202002,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 60."
+5202003,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (120% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (100% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 20%. When the owner deals damage to the caster, the caster will absorb and transform 5% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 10% more damage from Damage Over Time Effects.
+The owner takes (100% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+65202703,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (180% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (120% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 30%. When the owner deals damage to the caster, the caster will absorb and transform 10% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 15% more damage from Damage Over Time Effects.
+The owner takes (300% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+65202713,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (320% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (240% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+75202003,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (320% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (240% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+5202004,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has a 70% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (160% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 10% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 20%. When the owner deals damage to the caster, the caster will absorb and transform 5% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 10% more damage from Damage Over Time Effects.
+The owner takes (100% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+65202704,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has an 80% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (320% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 15% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 30%. When the owner deals damage to the caster, the caster will absorb and transform 10% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 15% more damage from Damage Over Time Effects.
+The owner takes (300% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+65202714,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (800% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 30% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+75202004,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (800% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 30% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020011,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (816% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (672% of Attack) damage every round for 3 rounds.
+She will also deal (816% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020012,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (832% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (704% of Attack) damage every round for 3 rounds.
+She will also deal (832% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020013,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (848% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (736% of Attack) damage every round for 3 rounds.
+She will also deal (848% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020014,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (864% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (768% of Attack) damage every round for 3 rounds.
+She will also deal (864% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020015,Azucena,Graceful Dancer,"
+It’s only natural to be enchanted by my dance.
+
+Azucena deals (880% of Attack) damage to 2 enemies with the lowest HP and [c][01a310]Poisons[-][/c] them, dealing (800% of Attack) damage every round for 3 rounds.
+She will also deal (880% of Attack) damage that ignores Armor to all targets afflicted with [c][e28002]Peacock Feather[-][/c] and inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to them.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020021,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 62."
+752020022,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 64."
+752020023,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 66."
+752020024,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 30%, Attack by 40%, Crit by 30%, Control Immunity by 30%, and Speed by 68."
+752020025,Azucena,Show Preparation,"Are you lookin' forward to my performance?\n\nIncreases Azucena's HP by 33%, Attack by 43%, Crit by 30%, Control Immunity by 30%, and Speed by 70."
+752020031,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (336% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (252% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020032,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (352% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (264% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020033,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (368% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (276% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020034,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (384% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (288% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 1 stack of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020035,Azucena,Rhythmic Bells,"
+Have you heard the tinklin\' of bells? It signifies the start of my performance.
+
+Azucena’s Basic Attack deals (400% of Attack) damage to the enemy with the lowest HP, [c][01a310]Poisons[-][/c] the target for 2 rounds, dealing (300% of Attack) damage per round, and inflicts [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to the target. If the target is already inflicted with a [c][e28002]Peacock Feather[-][/c], then Azucena will inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that lasts for 2 rounds to it.
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when Poison is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020041,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (816% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 32% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020042,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (832% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 34% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020043,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (848% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 36% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020044,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin\' impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (864% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 38% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"
+752020045,Azucena,Ending Pose,"
+Finish with a flourish to leave a lastin’ impression on the audience\'s minds.
+
+At the beginning of the battle and at the end of each round, Azucena has 100% chance to inflict a [c][e28002]Peacock Feather[-][/c] that lasts for 2 rounds to 2 random enemies.
+When Azucena take damage from the Basic Attacks or Active Skills of an enemy afflicted with [c][e28002]Peacock Feather[-][/c], she will deal (880% of Attack) damage that ignores Armor to the Attacker, inflict 2 stacks of [c][01a310]Mesmerize[-][/c] that last for 2 rounds to it, and reduce its Crit by 40% for 2 rounds.
+
+[c][e28002]Peacock Feather[-][/c]:
+A Skill Effect that cannot stack.
+All damage dealt by the owner of this Effect to the caster of this Effect will be reduced by 50%. When the owner deals damage to the caster, the caster will absorb and transform 20% of damage taken into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP.
+
+[c][01a310]Mesmerize[-][/c]:
+A Damage Over Time Effect.
+The owner of this Effect takes 25% more damage from Damage Over Time Effects.
+The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicted and at the beginning of each round during the period of effect. (Damage dealt will not surpass 2500% of the caster’s Attack.)"

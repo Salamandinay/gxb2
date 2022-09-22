@@ -198,7 +198,7 @@ function ActivityInvitationSeniorData:checkRedPoint()
 		end
 	end
 
-	if self:getIsShareOpen() and self:getState() == xyd.ActivityInvitationSeniorState.OLD and not self:getWeeklyShareIsSameWeek() then
+	if self:getState() == xyd.ActivityInvitationSeniorState.OLD and not self:getWeeklyShareIsSameWeek() then
 		xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_INVITATION_SENIOR, true)
 
 		return

@@ -86,6 +86,7 @@ function Dungeon:reqSkipReport()
 end
 
 function Dungeon:getNewPartners(partners)
+	local partners = xyd.decodeProtoBufData(partners, "partners")
 	local newPartners = {}
 
 	for i = 1, #partners do

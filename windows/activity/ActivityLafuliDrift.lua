@@ -141,6 +141,8 @@ function ActivityLafuliDrift:getUIComponent()
 	self.mainGroup = go:NodeByName("main").gameObject
 	self.helpBtn = self.mainGroup:NodeByName("btnGroup/helpBtn").gameObject
 	self.chestBtn = self.mainGroup:NodeByName("btnGroup/chestBtn").gameObject
+	self.rudderBtn = self.mainGroup:NodeByName("btnGroup/rudderBtn").gameObject
+	self.rudderBtnRedMark = self.rudderBtn:NodeByName("redMark").gameObject
 	self.shopBtn = self.mainGroup:NodeByName("btnGroup/shopBtn").gameObject
 	self.shopNum = self.shopBtn:ComponentByName("num", typeof(UILabel))
 	self.textImg = self.mainGroup:ComponentByName("textImg", typeof(UITexture))
@@ -491,6 +493,12 @@ function ActivityLafuliDrift:refresh()
 	else
 		self.chestBtn:SetActive(false)
 	end
+
+	if xyd.db.misc:getValue("lafuli_drift_rudder_time") == nil or xyd.db.misc:getValue("lafuli_drift_rudder_time") - self.activityData.start_time < 0 then
+		self.rudderBtnRedMark:SetActive(true)
+	else
+		self.rudderBtnRedMark:SetActive(false)
+	end
 end
 
 function ActivityLafuliDrift:refreshx2()
@@ -731,6 +739,24 @@ function ActivityLafuliDrift:registEvent()
 		xyd.WindowManager.get():openWindow("activity_drift_chest_window", {
 			items = self.activityData.detail.items
 		})
+	end)
+	UIEventListener.Get(self.rudderBtn).onClick = handler(self, function ()
+		xyd.WindowManager.get():openWindow("activity_lafuli_rudder_window", {
+			point = self.activityData.detail.cost_sum
+		})
+
+		if xyd.db.misc:getValue("lafuli_drift_rudder_time") == nil or xyd.db.misc:getValue("lafuli_drift_rudder_time") - self.activityData.start_time < 0 then
+			xyd.db.misc:setValue({
+				key = "lafuli_drift_rudder_time",
+				value = xyd.getServerTime()
+			})
+			self.rudderBtnRedMark:SetActive(false)
+
+			local msg = messages_pb.log_partner_data_touch_req()
+			msg.touch_id = xyd.DaDian.ACTIVITY_LAFULI_DRIFT
+
+			xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
+		end
 	end)
 	UIEventListener.Get(self.helpBtn).onClick = handler(self, function ()
 		xyd.WindowManager:get():openWindow("help_window", {
@@ -1032,6 +1058,7 @@ function ActivityLafuliDrift:registEvent()
 		self.resAward = award
 		self.resSteps = steps
 		self.activityData.detail.slot_lvs = detail.info.slot_lvs
+		self.activityData.detail.cost_sum = detail.info.cost_sum
 
 		if next(award) ~= nil then
 			for i = 1, #award do

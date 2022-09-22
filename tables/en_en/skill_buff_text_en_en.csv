@@ -128,3 +128,5 @@ id,buff_id,plus_minus,name,sec
 131,longnvDebuff,,Dragon's Curse,A Skill Effect. Reduces the Crit and Block of the owner of this Effect.
 132,shareByHurt,,Dragon's Favor,A Skill Effect. The caster of this Effect will take some damage for the owner of this Effect.
 133,longnvDead,,Dragon Soul,A Skill Effect. Raenvya's Soul resides within the owner of this Effect.
+134,ansunaToShield,,Peacock Feather,"A Skill Effect. The owner of this Effect deals less damage to the caster of this Effect. When the owner deals damage to the caster, the caster will absorb and transform a portion of damage dealt into a [c][e28002]Magick Barrier[-][/c] with the equivalent amount of BP."
+135,ansunaDot,,Mesmerize,A Damage Over Time Effect. The owner receives more damage from Damage Over Time effects and takes damage both when this Effect is inflicted and at the start of the round.

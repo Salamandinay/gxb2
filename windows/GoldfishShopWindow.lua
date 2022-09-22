@@ -33,13 +33,14 @@ function GoldfishShopItem:setInfo(params)
 
 	NGUITools.DestroyChildren(self.itemRoot_.transform)
 	xyd.getItemIcon({
-		show_has_num = true,
 		notShowGetWayBtn = true,
 		scale = 0.7962962962962963,
+		show_has_num = true,
 		uiRoot = self.itemRoot_,
 		itemID = self.awards_[1],
 		num = self.awards_[2],
-		wndType = xyd.ItemTipsWndType.ACTIVITY
+		wndType = xyd.ItemTipsWndType.ACTIVITY,
+		dragScrollView = self.parent_.scrollerView_
 	})
 
 	self.limitLabel_.text = __("BUY_GIFTBAG_LIMIT", self.limit_time - self.buyTimes_)
@@ -78,7 +79,6 @@ end
 
 function GoldfishShopWindow:initWindow()
 	self:getUIComponent()
-	self:updateNav()
 	self:layout()
 	self:updateItemNum()
 	self:initDescLabel()
@@ -105,23 +105,9 @@ function GoldfishShopWindow:getUIComponent()
 		self["tipsLabel" .. i] = winTrans:ComponentByName("awardsGroup/label" .. i, typeof(UILabel))
 	end
 
-	self.navGroup_ = winTrans:NodeByName("navGroup").gameObject
-
-	for i = 1, 4 do
-		self["nav" .. i] = self.navGroup_:NodeByName("nav" .. i).gameObject
-		self["selectImg" .. i] = self["nav" .. i]:NodeByName("selectImg").gameObject
-		self["lockImg" .. i] = self["nav" .. i]:NodeByName("lockImg").gameObject
-		self["navLabel" .. i] = self["nav" .. i]:ComponentByName("label", typeof(UILabel))
-
-		UIEventListener.Get(self["nav" .. i]).onClick = function ()
-			self:onClickNav(i)
-		end
-
-		self["navLabel" .. i].text = __("ACTIVITY_GOLDFISH_SHOP_TEXT03", i)
-	end
-
-	self.itemGroup_ = winTrans:ComponentByName("itemGroup", typeof(UIGrid))
+	self.itemGroup_ = winTrans:ComponentByName("scrollView/itemGroup", typeof(UIGrid))
 	self.itemContent_ = winTrans:NodeByName("itemContent").gameObject
+	self.scrollerView_ = winTrans:ComponentByName("scrollView", typeof(UIScrollView))
 end
 
 function GoldfishShopWindow:updateItemNum()
@@ -162,43 +148,6 @@ function GoldfishShopWindow:initDescLabel()
 	self.valueLabel4.text = xyd.checkCondition(hisCoin < expectPoint, expectPoint - hisCoin, 0)
 end
 
-function GoldfishShopWindow:onClickNav(index)
-	if self.select_ ~= index then
-		self.select_ = index
-
-		self:updateNav(true)
-		self:layout()
-	end
-end
-
-function GoldfishShopWindow:updateNav(isClick)
-	for i = 1, 4 do
-		self["selectImg" .. i]:SetActive(self.select_ == i)
-
-		if self.activityData:checkUnlock(i) then
-			self["lockImg" .. i]:SetActive(false)
-			self["navLabel" .. i].transform:X(0)
-		else
-			self["lockImg" .. i]:SetActive(true)
-			self["navLabel" .. i].transform:X(17)
-
-			if isClick and self.select_ == i then
-				local limitNum = xyd.tables.activityGoldfishShopTable:getLimitNumByIndex(self.select_)
-
-				xyd.alertTips(__("ACTIVITY_GOLDFISH_SHOP_TIPS01", limitNum))
-			end
-		end
-
-		if self.select_ == i then
-			self["navLabel" .. i].effectColor = Color.New2(932432127)
-			self["navLabel" .. i].color = Color.New2(4294967295.0)
-		else
-			self["navLabel" .. i].effectColor = Color.New2(4294967295.0)
-			self["navLabel" .. i].color = Color.New2(1285475327)
-		end
-	end
-end
-
 function GoldfishShopWindow:layout()
 	local ids = xyd.tables.activityGoldfishShopTable:getIDsByLimitNum(self.select_)
 
@@ -232,6 +181,7 @@ function GoldfishShopWindow:layout()
 	end
 
 	self.itemGroup_:Reposition()
+	self.scrollerView_:ResetPosition()
 end
 
 function GoldfishShopWindow:register()

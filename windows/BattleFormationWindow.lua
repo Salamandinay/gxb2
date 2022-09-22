@@ -1064,12 +1064,20 @@ function BattleFormationWindow:register()
 		UIEventListener.Get(self.formationQuickTeamMask).onClick = handler(self, function ()
 			self:onQuickFormationTeamBtnTouch()
 		end)
+		UIEventListener.Get(self.saveTeamBtn).onClick = handler(self, function ()
+			self:onSaveTeamBtnTouch(true)
+		end)
+		UIEventListener.Get(self.saveTeamMask).onClick = handler(self, function ()
+			self:onSaveTeamBtnTouch()
+		end)
 		UIEventListener.Get(self.formationPetBtn).onClick = handler(self, function ()
 			self:petChoose()
 		end)
 		UIEventListener.Get(self.formationTeamQuitEditorBtn).onClick = handler(self, function ()
 			self:onQuickFormationTeamQuit()
 		end)
+
+		self.eventProxy_:addEventListener(xyd.event.SET_QUICK_TEAM, handler(self, self.updateQuickRed))
 	end
 end
 
@@ -2948,7 +2956,7 @@ function BattleFormationWindow:initSHPartnerData(groupID, needUpdateTop)
 		local a_partner_id = a.partnerInfo.pr_id or a.partnerInfo.partnerID
 		local b_partner_id = b.partnerInfo.pr_id or b.partnerInfo.partnerID
 
-		return lva * 1000000000 + table_id_a + a_partner_id < lvb * 1000000000 + table_id_b + b_partner_id
+		return lva * 1000000000 + table_id_a + a_partner_id > lvb * 1000000000 + table_id_b + b_partner_id
 	end)
 
 	for i in pairs(self.nowPartnerList) do
@@ -4527,6 +4535,12 @@ function BattleFormationWindow:initQuickFormationTeam()
 				self.battleFormationTeamBtnLabel.width = 100
 			end
 
+			self.saveBottom = obj:NodeByName("saveBottom").gameObject
+			self.saveTeamMask = self.saveBottom:NodeByName("saveTeamMask").gameObject
+			self.saveTeamBtn = self.saveBottom:NodeByName("saveTeamBtn").gameObject
+			self.saveTeamBtnBtnLabel = self.saveTeamBtn:ComponentByName("saveTeamBtnLabel", typeof(UILabel))
+			self.saveTeamArrowImg = self.saveTeamBtn:NodeByName("saveTeamArrowImg").gameObject
+			self.saveTeamBtnBtnLabel.text = __("QUICK_FORMATION_TEXT25")
 			self.formationPetBtn = obj:NodeByName("formationPetBtn").gameObject
 			self.formationPetBtnIcon = self.formationPetBtn:ComponentByName("formationPetBtnIcon", typeof(UISprite))
 			self.formationPetBtnLev = self.formationPetBtnIcon:ComponentByName("formationPetBtnLev", typeof(UILabel))
@@ -4547,6 +4561,7 @@ function BattleFormationWindow:initQuickFormationTeam()
 			self.formationTeamQuitEditorBtnLabel.text = __("QUICK_FORMATION_TEXT06")
 			self.formationTeamEditorTips.text = __("QUICK_FORMATION_TEXT07")
 			local tabTeam = obj:NodeByName("tab_team").gameObject
+			local saveTeam = obj:NodeByName("tab_save_team").gameObject
 			self.sorPopCon = self.sortPop:NodeByName("sorPopCon").gameObject
 			local teamNum = xyd.models.quickFormation:getTeamNum()
 			local itemHeight = 52
@@ -4591,6 +4606,36 @@ function BattleFormationWindow:initQuickFormationTeam()
 				end
 			end
 
+			self.saveBottomCon = self.saveBottom:NodeByName("saveBottomCon").gameObject
+
+			for i = 1, teamNum do
+				local tmp = NGUITools.AddChild(self.saveBottomCon.gameObject, saveTeam.gameObject)
+				tmp.name = "tab_" .. i
+
+				tmp.gameObject:Y((i - 1) * itemHeight)
+
+				local label = tmp:ComponentByName("label", typeof(UILabel))
+				label.text = xyd.models.quickFormation:getTeamName(i)
+				self["saveTeamBtnRedPoint" .. i] = tmp:NodeByName("redPoint").gameObject
+
+				if i == 1 or i == teamNum then
+					local unchosen = tmp:ComponentByName("unchosen", typeof(UISprite))
+					local unchosenStr = "partner_sort_bg_unchosen_03"
+
+					if i == teamNum then
+						unchosenStr = "partner_sort_bg_unchosen_01"
+					elseif i == 1 then
+						unchosenStr = "partner_sort_bg_unchosen_02"
+					end
+
+					xyd.setUISpriteAsync(unchosen, nil, unchosenStr)
+				end
+
+				UIEventListener.Get(tmp).onClick = function ()
+					self:onClickSaveTeam(i)
+				end
+			end
+
 			self.formationQuickTeamTab = require("app.common.ui.CommonTabBar").new(self.sorPopCon.gameObject, teamNum, function (index)
 				self:onTouchFormationQuickTeam(index)
 			end)
@@ -4619,6 +4664,41 @@ function BattleFormationWindow:onQuickFormationTeamBtnTouch(update_red)
 		for i = 1, teamNum do
 			self["formationQuickTeamBtnRedPoint" .. i]:SetActive(self.redStatus_[i] == 1)
 		end
+	end
+end
+
+function BattleFormationWindow:onSaveTeamBtnTouch(update_red)
+	if self.formationQuickTeamMask.activeSelf then
+		self:onQuickFormationTeamBtnTouch()
+	end
+
+	if self.saveTeamSortStation then
+		self.saveTeamArrowImg.gameObject:SetLocalScale(1, 1, 1)
+	else
+		self.saveTeamArrowImg.gameObject:SetLocalScale(1, -1, 1)
+	end
+
+	local teamNum = xyd.models.quickFormation:getTeamNum()
+
+	self:moveSaveTeamGroup()
+
+	if update_red then
+		for i = 1, teamNum do
+			self["saveTeamBtnRedPoint" .. i]:SetActive(self.redStatus_[i] == 1)
+		end
+	end
+end
+
+function BattleFormationWindow:updateQuickRed()
+	self.redStatus_ = xyd.models.quickFormation:getRedStatus()
+	local teamNum = xyd.models.quickFormation:getTeamNum()
+
+	for i = 1, teamNum do
+		self["saveTeamBtnRedPoint" .. i]:SetActive(self.redStatus_[i] == 1)
+	end
+
+	for i = 1, teamNum do
+		self["formationQuickTeamBtnRedPoint" .. i]:SetActive(self.redStatus_[i] == 1)
 	end
 end
 
@@ -4655,6 +4735,39 @@ function BattleFormationWindow:moveQuickFormationTeamGroup()
 	end
 end
 
+function BattleFormationWindow:moveSaveTeamGroup()
+	if self.saveTeamSortStation == nil then
+		self.saveTeamSortStation = false
+	end
+
+	local groupSort = self.saveBottomCon.transform
+
+	if self.saveTeamSortStation then
+		self.saveTeamMask:SetActive(false)
+
+		local sequence = self:getSequence()
+
+		sequence:Append(groupSort:DOLocalMoveY(95, 0.067)):Append(groupSort:DOLocalMoveY(30, 0.1)):Join(xyd.getTweenAlpha(self.saveBottomCon:GetComponent(typeof(UIWidget)), 0.01, 0.1)):AppendCallback(function ()
+			self.saveBottomCon:SetActive(false)
+		end)
+
+		self.saveTeamSortStation = not self.saveTeamSortStation
+	else
+		self.saveTeamMask:SetActive(true)
+		self.saveBottomCon:SetActive(true)
+
+		self.saveBottomCon:GetComponent(typeof(UIWidget)).alpha = 0.01
+
+		self.saveBottomCon:SetLocalPosition(groupSort.localPosition.x, 20, 0)
+
+		local sequence = self:getSequence()
+
+		sequence:Append(groupSort:DOLocalMoveY(101, 0.1)):Join(xyd.getTweenAlpha(self.saveBottomCon:GetComponent(typeof(UIWidget)), 1, 0.1)):Append(groupSort:DOLocalMoveY(106, 0.2))
+
+		self.saveTeamSortStation = not self.saveTeamSortStation
+	end
+end
+
 function BattleFormationWindow:onTouchFormationQuickTeam(index, is_smart)
 	if self.redStatus_[index] == 1 then
 		xyd.alertTips(__("QUICK_FORMATION_TEXT11"))
@@ -4665,6 +4778,7 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index, is_smart)
 	else
 		self.isEditorQuickTeam = true
 
+		self.saveBottom:SetActive(false)
 		self.chooseGroup:SetActive(false)
 		self.formationTeamEditorDownShow:SetActive(true)
 
@@ -4676,7 +4790,7 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index, is_smart)
 	if index == 0 then
 		self.chooseQuickTeam_ = index
 
-		self:clearPartners()
+		self:clearPartners(true)
 		self:onChoosePet({
 			0
 		})
@@ -4732,16 +4846,61 @@ function BattleFormationWindow:onTouchFormationQuickTeam(index, is_smart)
 	end
 end
 
+function BattleFormationWindow:onClickSaveTeam(index)
+	local formationData = self:getFormationData()
+	local partnerParams = formationData.partnerParams
+
+	if #partnerParams <= 0 then
+		xyd.alertTips(__("QUICK_FORMATION_TEXT27"))
+
+		return
+	end
+
+	xyd.alertYesNo(__("QUICK_FORMATION_TEXT26"), function (yes_no)
+		if yes_no then
+			self:onSaveTeamBtnTouch()
+
+			local partnerData = {}
+
+			for _, prInfo in ipairs(partnerParams) do
+				local pos = prInfo.pos
+				local partner_id = prInfo.partner_id
+				local partner_info = xyd.models.slot:getPartner(partner_id)
+				local params = {
+					pos = pos,
+					skill_index = partner_info.skill_index,
+					potentials = partner_info.potentials,
+					partner_id = partner_id,
+					equips = {}
+				}
+				local equipments = partner_info:getEquipment()
+
+				for index, equip in pairs(equipments) do
+					params.equips[index] = {
+						id = equip,
+						from_partner_id = partner_id
+					}
+				end
+
+				table.insert(partnerData, params)
+			end
+
+			xyd.models.quickFormation:setTeamInfo(index, self.pet, partnerData)
+		end
+	end)
+end
+
 function BattleFormationWindow:onQuickFormationTeamQuit()
 	self.isEditorQuickTeam = false
 
 	self.chooseGroup:SetActive(true)
+	self.saveBottom:SetActive(true)
 	self.formationTeamEditorDownShow:SetActive(false)
 	self.formationQuickTeamTab:clearChoose()
 	self:onTouchFormationQuickTeam(0)
 end
 
-function BattleFormationWindow:clearPartners()
+function BattleFormationWindow:clearPartners(reset)
 	self.nowPartnerList = {}
 
 	for i, _ in pairs(self.copyIconList) do
@@ -4753,6 +4912,10 @@ function BattleFormationWindow:clearPartners()
 	self.copyIconList = {}
 	self.selectedNum = 0
 	self.chooseQuickTeam_ = nil
+
+	if reset then
+		self:readStorageFormation()
+	end
 
 	self:iniPartnerData(self.currentGroup_, true)
 end

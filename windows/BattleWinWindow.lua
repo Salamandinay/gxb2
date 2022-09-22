@@ -5,6 +5,7 @@ local PlayerIcon = import("app.components.PlayerIcon")
 local json = require("cjson")
 
 function BattleWinWindow:ctor(name, params)
+	__TRACE("++++++++++++++++battleWinWindow++++++++++++")
 	BattleWinWindow.super.ctor(self, name, params)
 
 	self.callback = nil
@@ -215,6 +216,12 @@ function BattleWinWindow:getUIComponent()
 	self.shrineHurdlehHurtTips_ = self.shrineHurdleHurtGroup_:ComponentByName("hurtTips", typeof(UILabel))
 	self.shrineHurdlehHurt_ = self.shrineHurdleHurtGroup_:ComponentByName("hurt", typeof(UILabel))
 	self.shrinePartnerGroup_ = self.shrineHurdleScoreGroup_:ComponentByName("partnerGroup", typeof(UILayout))
+	self.guildNewWarGroup = winGroup:NodeByName("guildNewWarGroup").gameObject
+	self.labelGuildNewWarAwardText = self.guildNewWarGroup:ComponentByName("labelGuildNewWarAwardText", typeof(UILabel))
+	self.labelGuildNewWarSelfPoint = self.guildNewWarGroup:ComponentByName("labelGuildNewWarSelfPoint", typeof(UILabel))
+	self.labelGuildNewWarEnemyPoint = self.guildNewWarGroup:ComponentByName("labelGuildNewWarEnemyPoint", typeof(UILabel))
+	self.itemGroupGuildNewWar = self.guildNewWarGroup:NodeByName("itemGroupGuildNewWar").gameObject
+	self.itemGroupGuildNewWarLayout = self.guildNewWarGroup:ComponentByName("itemGroupGuildNewWar", typeof(UILayout))
 	self.labelRecord_ = winTrans:ComponentByName("labelRecord", typeof(UILabel))
 
 	if self.isNewVer then
@@ -547,6 +554,11 @@ function BattleWinWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onGalayTripSpecialBossBattleReport(data)
+		elseif self.battleType == xyd.BattleType.GUILD_NEW_WAR then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onGuildNewWarFightResult(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -576,6 +588,10 @@ function BattleWinWindow:initLayout()
 		elseif self.battleType == xyd.BattleType.GALAXY_TRIP_BATTLE or self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
 			self.battleReviewBtn:SetActive(true)
 			self.battleDetailBtn.transform:X(260)
+		elseif self.battleType == xyd.BattleType.GUILD_NEW_WAR then
+			self.itemGroupGuildNewWar:SetActive(true)
+			self.itemGroupGuildNewWarLayout:Reposition()
+			self.battleDetailBtn:X(290)
 		else
 			self.battleDetailBtn:X(290)
 		end
@@ -921,6 +937,11 @@ function BattleWinWindow:initLayout()
 			self.damageGroup:SetActive(true)
 			self.damageGroup.gameObject:Y(-38)
 		end
+	elseif self.battleType == xyd.BattleType.GUILD_NEW_WAR then
+		pvpFun()
+		self:updateGuildNewWarPart()
+		self.guildNewWarGroup:SetLocalScale(0, 0, 1)
+		self.layeoutSequence:Append(self.guildNewWarGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
 	end
 
 	UIEventListener.Get(self.battleDetailBtn).onClick = function ()
@@ -1201,6 +1222,93 @@ function BattleWinWindow:updateShrineHurdlePart()
 		self.shrinePartnerGroup_:Reposition()
 		self.scoreGroup_:SetActive(false)
 	end
+end
+
+function BattleWinWindow:updateGuildNewWarPart()
+	local model = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+	local selfInfo = model:getTempBattleSelfInfo()
+	local enemyInfo = model:getTempBattleEnemyInfo()
+	self.labelLeftPlayerName.text = selfInfo.player_name
+	self.labelRightPlayerName.text = enemyInfo.player_name
+	local paramsA = {
+		avatarID = selfInfo.avatar_id,
+		lev = selfInfo.lev,
+		avatar_frame_id = selfInfo.avatar_frame_id
+	}
+	local paramsB = {
+		avatarID = enemyInfo.avatar_id,
+		lev = enemyInfo.lev,
+		avatar_frame_id = enemyInfo.avatar_frame_id
+	}
+	local iconA = PlayerIcon.new(self.groupLeftIcon_)
+	local iconB = PlayerIcon.new(self.groupRightIcon_)
+
+	iconA:setInfo(paramsA)
+	iconB:setInfo(paramsB)
+
+	if not self.params_.is_last then
+		self.confirmBtnLabel.text = __("NEXT_BATTLE")
+
+		self.guildNewWarGroup:SetActive(false)
+	else
+		self.pvpGroup:SetActive(false)
+		self.guildNewWarGroup:SetActive(true)
+		self.confirmBtn:Y(-317)
+
+		local leftIconPos = self.guildNewWarGroup:NodeByName("leftPlayerGroup/iconPos").gameObject
+		local rightIconPos = self.guildNewWarGroup:NodeByName("rightPlayerGroup/iconPos").gameObject
+		local leftName = self.guildNewWarGroup:ComponentByName("leftPlayerGroup/labelName", typeof(UILabel))
+		local rightName = self.guildNewWarGroup:ComponentByName("rightPlayerGroup/labelName", typeof(UILabel))
+		local pointGoup = self.guildNewWarGroup:NodeByName("pointGoup").gameObject
+		local leftPoint = self.guildNewWarGroup:ComponentByName("pointGoup/pointL", typeof(UISprite))
+		local rightPoint = self.guildNewWarGroup:ComponentByName("pointGoup/pointR", typeof(UISprite))
+		local iconA = PlayerIcon.new(leftIconPos)
+		local iconB = PlayerIcon.new(rightIconPos)
+		paramsA.scale = 0.7017543859649122
+		paramsB.scale = 0.7017543859649122
+
+		iconA:setInfo(paramsA)
+		iconB:setInfo(paramsB)
+
+		leftName.text = selfInfo.player_name
+		rightName.text = enemyInfo.player_name
+		local battleID = self.data.battleParams.battle_report.info.battle_id
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+		local info = activityData:getShowInfoByBattleID(battleID)
+		local awards = info.awards
+		local winTime = info.winTime or 0
+		local lostTime = info.lostTime or 0
+
+		xyd.setUISpriteAsync(leftPoint, nil, "battle_round_num_" .. winTime, nil, , true)
+		xyd.setUISpriteAsync(rightPoint, nil, "battle_round_num_" .. lostTime, nil, , true)
+		pointGoup:SetActive(true)
+
+		self.labelGuildNewWarAwardText.text = __("AWARD")
+		self.labelGuildNewWarSelfPoint.text = __("GUILD_NEW_WAR_TEXT55", info.selfPoint)
+		self.labelGuildNewWarEnemyPoint.text = __("GUILD_NEW_WAR_TEXT57", info.enemyPoint)
+
+		if awards then
+			for key, award in pairs(awards) do
+				local params = {
+					scale = 0.7037037037037037,
+					uiRoot = self.itemGroupGuildNewWar,
+					itemID = award[1],
+					num = award[2]
+				}
+				local icon = xyd.getItemIcon(params, xyd.ItemIconType.ADVANCE_ICON)
+			end
+
+			self.itemGroupGuildNewWarLayout:Reposition()
+			self.itemGroupGuildNewWar:SetActive(false)
+		end
+	end
+
+	self.labelLeftScoreText:SetActive(false)
+	self.labelRightScoreText:SetActive(false)
+	self.labelLeftScore:SetActive(false)
+	self.labelRightScore:SetActive(false)
+	self.labelLeftScoreChange:SetActive(false)
+	self.labelRightScoreChange:SetActive(false)
 end
 
 function BattleWinWindow:checkNewTrialEnd()
@@ -1509,6 +1617,7 @@ function BattleWinWindow:initDungeon()
 		lev = teamA[1].level,
 		isMonster = teamA[1].isMonster,
 		awake = teamA[1].awake,
+		star_origin = teamA[1].star_origin,
 		show_skin = teamA[1].show_skin,
 		equips = {
 			0,
@@ -1538,6 +1647,7 @@ function BattleWinWindow:initDungeon()
 		lev = teamB[index].level,
 		isMonster = teamB[index].isMonster,
 		awake = teamB[index].awake,
+		star_origin = teamB[index].star_origin,
 		uiRoot = self.groupRightIcon_
 	}
 	local iconB = xyd.getHeroIcon(paramsB)
@@ -1935,9 +2045,6 @@ end
 
 function BattleWinWindow:initTowerPractice()
 	local battleReport = self.battleParams.battle_report
-
-	dump(battleReport, "battleReport")
-
 	local teamA = battleReport.teamA
 	local petA = battleReport.petA
 

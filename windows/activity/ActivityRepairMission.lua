@@ -139,6 +139,10 @@ end
 
 function FundItem:initBaseInfo(itemdata)
 	self.labelTitle_.text = itemdata.text
+
+	if xyd.Global.lang == "fr_fr" then
+		self.labelTitle_.fontSize = 20
+	end
 end
 
 function FundItem:initItem(itemdata)

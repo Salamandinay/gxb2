@@ -52,7 +52,11 @@ function Prophet:reqProphetSummon()
 	local msg = messages_pb:summon_req()
 	msg.summon_id = id
 	msg.times = 1
+	local msg2 = messages_pb.log_partner_data_touch_req()
+	msg2.touch_id = xyd.DaDian.PROPHET
+	msg2.desc = tostring(self.currentGroup_)
 
+	xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg2)
 	xyd.Backend:get():request(xyd.mid.SUMMON, msg)
 end
 

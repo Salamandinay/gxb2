@@ -260,6 +260,19 @@ function GuildSettingWindow:guildDissolveOrCancel()
 			return
 		end
 
+		local newGuildWarData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+		if newGuildWarData then
+			local endTime, curPeriod = nil
+			curPeriod, endTime = newGuildWarData:getCurPeriod()
+
+			if curPeriod ~= xyd.GuildNewWarPeroid.BEGIN_RELAX and curPeriod ~= xyd.GuildNewWarPeroid.END_RELAX and (curPeriod ~= xyd.GuildNewWarPeroid.NORMAL_RELAX or endTime - xyd.getServerTime() <= 7260) then
+				xyd.showToast(__("GUILD_NEW_WAR_TIPS10"))
+
+				return
+			end
+		end
+
 		xyd.alert(xyd.AlertType.YES_NO, __("GUILD_DISSOLVE_TIPS"), function (yes_no)
 			if not yes_no then
 				return

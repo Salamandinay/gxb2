@@ -204,6 +204,7 @@ function ShrineHurdleSelectPartnerWindow:initHeroList(groupID)
 			partnerInfo.noClick = true
 			partnerInfo.skin_id = partnerInfo.equips[7]
 			partnerInfo.star = xyd.tables.partnerTable:getStar(partnerInfo.table_id) + partnerInfo.awake
+			partnerInfo.partnerID = partnerId
 			local pGroupID = xyd.tables.partnerTable:getGroup(partnerInfo.table_id)
 			local isS = self:isSelect(partnerId)
 			local data = {
@@ -231,8 +232,10 @@ function ShrineHurdleSelectPartnerWindow:initHeroList(groupID)
 			local lvb = b.partnerInfo.lv
 			local table_id_a = a.partnerInfo.table_id
 			local table_id_b = b.partnerInfo.table_id
+			local a_partner_id = a.partnerInfo.pr_id or a.partnerInfo.partnerID
+			local b_partner_id = b.partnerInfo.pr_id or b.partnerInfo.partnerID
 
-			return lva * 10000000 + table_id_a > lvb * 10000000 + table_id_b
+			return lva * 1000000000 + table_id_a + a_partner_id > lvb * 1000000000 + table_id_b + b_partner_id
 		end)
 	end
 

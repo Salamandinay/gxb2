@@ -361,6 +361,7 @@ function ActivityEntranceTestPartnerWindow:onclickArrow(partnerInfo)
 	self:checkContentState()
 	self:checkStarOriginUpdate()
 	self:checkBtnCommentShow()
+	self:clearSkillTips()
 end
 
 function ActivityEntranceTestPartnerWindow:playOpenAnimation(callback)
@@ -563,7 +564,7 @@ function ActivityEntranceTestPartnerWindow:onclickEquip(itemID, equips)
 end
 
 function ActivityEntranceTestPartnerWindow:updateAttr()
-	local fullStarOrigin = not self.activityData:getPvePartnerIsLockByTableId(self.partner_.tableID)
+	local fullStarOrigin = true
 
 	self.partner_:updateAttrs({
 		isEntrance = true,

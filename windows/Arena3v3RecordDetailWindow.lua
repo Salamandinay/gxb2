@@ -262,6 +262,7 @@ function Arena3v3RecordDetailWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
 	self.model_ = params.model or xyd.models.arena3v3
+	self.windowType = params.windowType
 
 	if params.model or params.isAsAfter then
 		self.if3v3 = false
@@ -277,6 +278,10 @@ function Arena3v3RecordDetailWindow:ctor(name, params)
 	if params.isAsAfter then
 		self.isAsAfter = true
 		self.model_ = xyd.models.arenaAllServerNew
+	end
+
+	if self.windowType and self.windowType == xyd.Record3v3Type.GUILD_NEW_WAR then
+		self.model_ = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
 	end
 end
 

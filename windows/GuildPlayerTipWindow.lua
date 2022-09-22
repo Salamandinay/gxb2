@@ -148,6 +148,18 @@ function GuildPlayerTipWindow:onTouchRemove()
 		return
 	end
 
+	local newGuildWarData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+	if newGuildWarData then
+		local curPeriod = newGuildWarData:getCurPeriod()
+
+		if curPeriod ~= xyd.GuildNewWarPeroid.BEGIN_RELAX and curPeriod ~= xyd.GuildNewWarPeroid.END_RELAX and curPeriod ~= xyd.GuildNewWarPeroid.NORMAL_RELAX then
+			xyd.showToast(__("GUILD_NEW_WAR_TIPS09"))
+
+			return
+		end
+	end
+
 	xyd.alert(xyd.AlertType.YES_NO, __("GUILD_KICK_TIPS"), function (yes_no)
 		if yes_no then
 			xyd.models.guild:removeMember(self.playerID)

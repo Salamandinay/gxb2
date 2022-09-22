@@ -181,6 +181,7 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 
 	if self.battleType == xyd.BattleType.ARENA_3v3 and #self.nowPartnerList <= 0 then
 		local formation = xyd.models.arena3v3:getDefFormation()
+		formation = formation and formation.teams
 
 		for i, _ in pairs(formation) do
 			if formation[i] then
@@ -199,6 +200,62 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 		for i = 1, self.data.levelNum do
 			table.insert(self.teamIndex, i)
 		end
+	end
+
+	if self.battleType == xyd.BattleType.GUILD_NEW_WAR_DEF and params.formation then
+		self.localPartnerList = {}
+		self.nowPartnerList = {}
+
+		dump(params.formation)
+
+		for i = 1, 3 do
+			for j = 1, 6 do
+				if params.formation.teams[i] and params.formation.teams[i].partners[j] and self.SlotModel:getPartner(params.formation.teams[i].partners[j].partner_id) then
+					self.nowPartnerList[(i - 1) * 6 + j] = params.formation.teams[i].partners[j].partner_id
+				end
+			end
+
+			if params.formation.teams[i].pet and params.formation.teams[i].pet.pet_id then
+				self.pets[i + 1] = params.formation.teams[i].pet.pet_id
+			end
+		end
+
+		dump(self.nowPartnerList)
+		dump(self.pets)
+	end
+
+	dump(self.battleType == xyd.BattleType.GUILD_NEW_WAR)
+	dump(#self.nowPartnerList <= 0)
+	dump(self.nowPartnerList)
+
+	if self.battleType == xyd.BattleType.GUILD_NEW_WAR then
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+		local formation = activityData:getPvPBattleFormation()
+
+		dump(formation)
+		dump(xyd.decodeProtoBufData(formation.teams, "teams"))
+
+		self.nowPartnerList = {}
+		self.pets = {
+			0,
+			0,
+			0,
+			0
+		}
+
+		for i = 1, 3 do
+			for j = 1, 6 do
+				if formation.teams[i] and formation.teams[i].partners and formation.teams[i].partners[j] then
+					self.nowPartnerList[(i - 1) * 6 + j] = formation.teams[i].partners[j].partner_id or formation.teams[i].partners[j].partnerID
+				end
+			end
+
+			if formation.teams[i] and formation.teams[i].pet and formation.teams[i].pet.pet_id then
+				self.pets[i + 1] = formation.teams[i].pet.pet_id
+			end
+		end
+
+		dump(self.nowPartnerList)
 	end
 end
 
@@ -629,6 +686,19 @@ function Arena3v3BattleFormationWindow:onClickBattleBtn()
 		self:arena3v3Battle(partnerParams)
 	elseif self.battleType == xyd.BattleType.ARENA_3v3_DEF then
 		self:arena3v3BattleDef(partnerParams)
+	elseif self.battleType == xyd.BattleType.GUILD_NEW_WAR then
+		self:guildNewWarBattle(partnerParams)
+	elseif self.battleType == xyd.BattleType.GUILD_NEW_WAR_DEF then
+		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+		if activityData:getCurPeriod() == xyd.GuildNewWarPeroid.FIGHTING1 or activityData:getCurPeriod() == xyd.GuildNewWarPeroid.FIGHTING2 then
+			xyd.alertTips(__("GUILD_NEW_WAR_TIPS11"))
+			xyd.WindowManager.get():closeWindow("arena_3v3_battle_formation_window")
+
+			return
+		end
+
+		self:setGuildNewWarDef(partnerParams)
 	elseif self.battleType == xyd.BattleType.ARENA_ALL_SERVER_DEF then
 		self:arenaAllServerBattleDef(partnerParams)
 	elseif self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
@@ -774,6 +844,24 @@ function Arena3v3BattleFormationWindow:arenaAllServerBattleDef(params)
 	xyd.models.arenaAllServer:reqSetTeams(params, self.pets)
 end
 
+function Arena3v3BattleFormationWindow:setGuildNewWarDef(params)
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+	activityData:setDefFormation(params, self.pets)
+end
+
+function Arena3v3BattleFormationWindow:guildNewWarBattle(params)
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+	activityData:setPvPBattleFormation(params, self.pets)
+
+	local wnd = xyd.getWindow("guild_new_war_fight_window")
+
+	if wnd then
+		wnd:updateMidGroup()
+	end
+end
+
 function Arena3v3BattleFormationWindow:initLayOut()
 	self.labelFront1.text = __("FRONT_ROW")
 	self.labelBack1.text = __("BACK_ROW")
@@ -783,9 +871,9 @@ function Arena3v3BattleFormationWindow:initLayOut()
 	self.labelBack3.text = __("BACK_ROW")
 	self.setBtnLabel.text = __("SET_DEF_FORMATION")
 
-	if self.battleType == xyd.BattleType.ARENA_3v3 then
+	if self.battleType == xyd.BattleType.ARENA_3v3 or self.battleType == xyd.BattleType.GUILD_NEW_WAR then
 		self.battleBtnLabel.text = __("BATTLE_START")
-	elseif self.battleType == xyd.BattleType.ARENA_3v3_DEF or self.battleType == xyd.BattleType.ARENA_ALL_SERVER_DEF or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS then
+	elseif self.battleType == xyd.BattleType.ARENA_3v3_DEF or self.battleType == xyd.BattleType.ARENA_ALL_SERVER_DEF or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS or self.battleType == xyd.BattleType.GUILD_NEW_WAR_DEF then
 		self.battleBtnLabel.text = __("SAVE_DEF_FORMATION")
 	end
 

@@ -79,10 +79,18 @@ function GalaxyTrip:onGetGalaxyTripGetMainBack(event)
 		end
 	end
 
+	if not self.newMainInfoGetTimes then
+		self.newMainInfoGetTimes = 0
+	end
+
 	if self.mainInfo.start_time + periodTime <= xyd.getServerTime() then
-		xyd.addGlobalTimer(function ()
-			self:sendGalaxyTripGetMainBack()
-		end, 5, 1)
+		self.newMainInfoGetTimes = self.newMainInfoGetTimes + 1
+
+		if self.newMainInfoGetTimes <= 5 then
+			xyd.addGlobalTimer(function ()
+				self:sendGalaxyTripGetMainBack()
+			end, 5, 1)
+		end
 	end
 
 	local disTime = xyd.models.galaxyTrip:getLeftTime()
@@ -1367,6 +1375,7 @@ end
 
 function GalaxyTrip:getShopData()
 	local curSeason = self:getGalaxyTripGetMainCount()
+	local curScore = self:getCurSeasonScore()
 	local layerRankArr1 = xyd.tables.galaxyTripStore1Table:getLayerRankArr(curSeason)
 	local layerRankArr2 = xyd.tables.galaxyTripStore2Table:getLayerRankArr(curSeason)
 	local itemLayerKeyData1 = xyd.tables.galaxyTripStore1Table:getItemLayerKeyData(curSeason)
@@ -1379,7 +1388,6 @@ function GalaxyTrip:getShopData()
 	local titleLockText2 = {}
 
 	for i = 1, #layerRankArr1 do
-		local curScore = self:getCurSeasonScore()
 		unlockRankData1[i] = layerRankArr1[i] <= curScore
 		local text = xyd.tables.galaxyTripStoreTextTable:getDesc(xyd.tables.galaxyTripStore1Table:getTextId(i))
 		titleUnlockText1[i] = xyd.stringFormat(text, layerRankArr1[i])
@@ -1397,6 +1405,10 @@ function GalaxyTrip:getShopData()
 			if needPoint <= historyScore[j] then
 				count = count + 1
 			end
+		end
+
+		if needPoint <= curScore then
+			count = count + 1
 		end
 
 		local text = xyd.tables.galaxyTripStoreTextTable:getDesc(xyd.tables.galaxyTripStore2Table:getTextId(i))
@@ -1513,7 +1525,7 @@ function GalaxyTrip:getRankData()
 			self_score = self.rankInfo.self_score
 		},
 		awardData = awardData,
-		durationTime = self:getLeftTime(),
+		durationTime = math.max(0, self:getLeftTime() - xyd.DAY_TIME),
 		timeDescText = __("ARENA_RANK_DESC2"),
 		RankDescText = __("GALAXY_TRIP_TEXT47")
 	}

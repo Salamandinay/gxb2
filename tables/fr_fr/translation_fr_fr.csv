@@ -896,7 +896,7 @@ GUILD_TEXT55,Marchand
 GUILD_TEXT56,Courrier de la Guilde
 GUILD_TEXT57,Nombre maximum de second atteint
 GUILD_TEXT58,Nombre de membre maximum atteint
-GUILD_TEXT59,Vous avez rejoint une autre Guilde
+GUILD_TEXT59,Ce joueur a rejoint une autre Guilde !
 GUILD_TEXT60,Êtes-vous sûr de vouloir transmettre le Chef à un autre membre ?
 GUILD_TEXT61,Touchez pour changer l'Annonce
 GUILD_TEXT62,3-12 caractères alphanumériques
@@ -949,7 +949,7 @@ MATCH_NUM1,1er tour
 MATCH_NUM2,2ème tour
 MATCH_NUM3,3ème tour
 OPEN_AFTER,Commence dans
-AT_LEAST_ONE_HERO_PER_TEAM,Chaque équipe doit contenir au moins une Fille
+AT_LEAST_ONE_HERO_PER_TEAM,Chaque équipe doit comprendre au moins une Fille !
 NO_SLOT_FOR_FIGHTERS,Plus de place dans la formation
 UNLOCK_TEXT,Débloquer
 ARENA_NO_RECORD,Pas d'historique
@@ -4094,8 +4094,8 @@ ACTIVITY_SPROUTS_NEW_TEXT04,Obtenir Vanessa
 ACTIVITY_SPROUTS_NEW_TEXT05,Obtenir Vanessa {1} fois
 ACTIVITY_SPROUTS_NEW_HELP,1. Vous obtiendrez Fleurette*10 au 10ème arrosage.|2. Vous obtiendrez Fragment de Vanessa*50 après avoir collecté Fleurette*80. (Répétable)
 ACTIVITY_NEWBEE_FUND_HELP,"1. Cet événement se divise en 2 périodes : Période d'achat et Période de collection.|2. Après la période d'achat, cet événement disparaîtra, ne ratez pas cette occasion !|3. Après l'avoir acheté, vous pouvez obtenir des Gemmes immédiatement et collecter les récompenses pendant les 20 jours suivants.|4. Vous pouvez également recollecter les récompenses non collectées en utilisant des Gemmes après l'avoir acheté."
-ACTIVITY_NEWBEE_FUND_TEXT01,"Obtenez Investissement de Débutant, et collectez des récompenses de grandes valeurs pendant 20 jours !"
-ACTIVITY_NEWBEE_FUND_TEXT02,Collectez des récompenses quotidiennes en obtenant Investissement de Débutant !
+ACTIVITY_NEWBEE_FUND_TEXT01,"Obtenez Investissement du Débutant, et collectez des récompenses de grandes valeurs pendant 20 jours !"
+ACTIVITY_NEWBEE_FUND_TEXT02,Collectez des récompenses quotidiennes en obtenant Investissement du Débutant !
 HOUSE_SETTING,Régler
 TRAVEL_MAIN_TEXT54,Montez à
 TRAVEL_MAIN_TEXT55,Limite : {1}
@@ -4976,7 +4976,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Rang\nSupérieur
 WARMUP_ARENA_REACH_RANK_HELP,"1. Cet événement compte 4 Rangs : B, A, S, S+. Vous ne pouvez uniquement défier les joueurs du même rang que vous. Au début de l'événement, tous les joueurs commenceront au Rang B.|2. Chaque jour à 00:00 (UTC/GMT 0), le classement des joueurs sera mis à jour. Si votre classement répond aux conditions requises, vous passerez au rang suivant. Dans le cas contraire, vous resterez au rang actuel.|3. Détails des Rangs : |Après avoir atteint {1} : |{2}|Après avoir atteint le Rang{3} : |{4}|Après avoir atteint le Rang{5} : |{6}|4. Le classement affiché sur l'interface est votre Classement actuel au Rang actuel. Le nombre total de joueurs affecté à un Rang peut être différent à chaque mise à jour de rang (chaque jour à 0:00 (UTC/GMT 0)). Si vous ne parvenez pas à passer au rang suivant, vous aurez d'office un meilleur classement lors de la prochaine mise à jour de rang."
 ENTRANCE_TEST_LEVEL_UP_ING,En cours de calcul...
 WARMUP_ARENA_TASK_INFO_1,Défi de la Nouvelle Fille
-WARMUP_ARENA_TASK_INFO_2,Le Secret de Melly
+WARMUP_ARENA_TASK_INFO_2,La Danseuse\nde notre Dame
 WARMUP_ARENA_TASK_INFO_3,Tâches de la Nouvelle Fille
 WARMUP_ARENA_TASK_INFO_4,Avis d'Admission
 WARMUP_ARENA_TASK_INFO_5,Débloqué après avoir complété les Tâches comprenant une étoile
@@ -7318,87 +7318,87 @@ ACTIVITY_REPAIR_CONSOLE_TEXT06,Récompense Basique
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Tour {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Tour {1} (et +)
 ACTIVITY_REPAIR_CONSOLE_HELP,"1. Durant cet événement, utilisez des Batteries pour rétablir l'alimentation du circuit électrique. Consommez 1 Batterie pour allumer aléatoirement 1 à 3 Diodes.|2. Lorsque les 5 Diodes d'une ligne ou colonne sont allumées, vous obtiendrez une Récompense Basique.|3. Une fois que les 5 Diodes en diagonale sont allumées (d'en haut à gauche jusqu'en bas à droite), vous obtiendrez la Récompense Principale du tour actuel et passerez au tour suivant.|4. Appuyez sur Récompenses pour voir les détails des récompenses par tour.|5. Moyen d'obtention des Batteries : Les Missions de Polly et Pack de Réparation."
-GUILD_NEW_WAR_HELP01,（暫不翻譯）總規則文本...
-GUILD_NEW_WAR_TIPS01,"La phase : Trêve est terminée, la phase : Préparation commencera bientôt..."
-GUILD_NEW_WAR_TIPS02,"La phase : Bataille est terminée, la phase : Trêve commencera bientôt..."
-GUILD_NEW_WAR_TIPS03,僅社長或副社長可以操作
+GUILD_NEW_WAR_HELP01,"[c][699be9]Condition d'accès[-][/c]|1. Votre Guilde doit avoir atteint le niveau 12 et comprendre au minimum 5 membres actifs tout au long de la semaine précédente.|2. Une fois qu'une Guilde a rempli les conditions requises mentionnées précédemment et qu'un des membres ait appuyé sur ""Entrer"" pour rejoindre le Duel, la Guilde sera automatiquement considérée comme Guilde participante au Championnat de la saison actuelle.|[c][699be9]Règles[-][/c]|1. Le Championnat inclut les Guildes de tous les serveurs confondus. Chaque Guilde participera à 8 duels chaque saison.|2. Chaque duel dure 3 jours : Préparation (1 jour) et Bataille (2 jours). Chaque Guilde compte 1 base Extrémité, 3 bases Milieu et 2 bases Front. Chacune de ces bases dispose de plusieurs drapeaux que les membres doivent défendre.|3. Chaque saison est divisée en 3 phases : Trêve, Préparation et Bataille. Les 3 premiers jours et 4 derniers jours de la saison sont considérés comme une période de trêve. Durant la saison, le Championnat se déroulera hebdomadairement, tel mentionné ci-dessous : |Lundi - Trêve : Affichage des classements des Guildes et des historiques de la saison actuelle.|Mardi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Mercredi & Jeudi -Bataille : Deux Guildes s'affrontent en duel.|Vendredi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Samedi & Dimanche -Bataille : Deux Guildes s'affrontent en duel.|4. Au début de la phase de Préparation, les membres de votre Guilde seront automatiquement déployer sur votre camp en fonction de leur puissance (Ordre de priorité : Extrémité > Milieu > Front). Le Chef et les Seconds de Guilde ont le droit de changer la position défensive de leurs membres. Chaque membre a le droit de modifier sa formation défensive (N'oubliez pas de sauvegarder votre formation défensive afin qu'elle puisse prendre effet dans la bataille).|5. Durant la phase de Bataille, chaque membre peut lancer une attaque sur les Drapeaux d'une base ennemie. Si un ennemi est placé sur ce Drapeau en défense, il vous faudra d'abord le vaincre avant de pouvoir lancer une attaque sur ce dernier. Une base sera considérée comme détruite lorsque tous ses Drapeaux seront tombés. Votre Guilde doit détruire une des bases Front ennemie avant de pouvoir attaquer une base Milieu ennemie. Votre Guilde doit détruire une des bases Milieu ennemie avant de pouvoir attaquer la base Extrémité ennemie. Lorsque toutes les bases du camp ennemi seront détruites, les membres de votre Guilde pourront piller n'importe quelle base ennemie et obtenir des Points de Guilde, Contributions Individuelles et récompenses supplémentaires.|6. Après la fin d'un duel, la Guilde ayant obtenu le plus de Points de Guilde sera celle qui remportera le duel. (Dans le cas où les deux Guildes ont obtenu le même nombre de Points de Guilde, le duel sera considéré comme match nul).|[c][699be9]Appariemmment de Guilde & Classement[-][/c]|1. La première fois qu'une Guilde participe au Championnat, elle obtiendra un certain nombre de Points de Guilde initiaux en fonction de la puissance totale des membres actuels. Quant aux Guildes qui ont déjà participé au Championnat, elles obtiendront des Points de Guilde initiaux en fonction de leur classement lors du dernier Championnat auquel elle auront participé. Plus le classement de la Guilde est élevé, plus ses Points de Guilde initiaux seront importants.|2. Le classement des Guildes sera déterminé en fonction de leurs Points de Guilde actuels, la Guilde ayant le plus de point sera la première du classement. Dans le cas où plusieurs Guildes ont obtenu le même nombre de Points de Guilde, la Guilde qui a obtenu ces Points de Guilde en premier sera en tête du classement.|3. Le système recherchera automatiquement une Guilde adversaire en fonction des Points de Guilde actuels obtenus par votre Guilde.|[c][699be9]Point de Guilde[-][/c]|1. +100 Pts de Guilde/ Drapeau d'une base Front tombé|+200 Pts de Guilde/ Drapeau d'une base Milieu tombé +300 Pts de Guilde/ Drapeau d'une base Extrémité tombé|2. +500 Pts de Guilde/ Base Front détruite |+1000 Pts de Guilde/ Base Milieu détruite| +2000 Pts de Guilde/ Base Extrémité détruite|3. +2000 Pts de Guilde/ Victoire d'un duel | +1000 Pts de Guilde/ Défaite d'un duel |+1000 Pts de Guilde/ Match nul d'un duel |4. +10 Pts de Guilde/ Pillage sur une base ennemie.|[c][699be9]Contribution Individuelle[-][/c]|1. Déployez 3 équipes pour défier un ennemi, ces 3 équipes s’affronteront une par une contre les équipes ennemies. Vous obtiendrez des Contributions Individuelles en fonction du nombre de victoire de bataille :|0 victoire : +15 Contributions Individuelles|1 victoire : +15 Contributions Individuelles|2 victoires : +20 Contributions Individuelles|3 victoires : +20 Contributions Individuelles|2. Chaque fois que vous lancez une attaque vers un Drapeau ennemi, vous obtiendrez 15 Contributions Individuelles.|3. Chaque fois que vous pillez une base ennemie, vous obtiendrez 5 Contributions Individuelles.|[c][699be9]Récompenses[-][/c]|1. Récompenses de Duel : Envoyées par courrier, après la fin d’un Duel, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|2. Récompenses Individuelles : Envoyées par courrier, aux membres ayant défié un ennemi. (À condition que leur Contribution Individuelle soit supérieure à 0.)|3. Récompenses de Classement : Envoyées par courrier, en fonction du classement de votre Guilde après la fin d'une saison, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|4. Tout membre défiant un ennemi, lançant une attaque vers un Drapeau ennemi ou pillant une base ennemie, récupèrera également des récompenses supplémentaires."
+GUILD_NEW_WAR_TIPS01,"Phase de Trêve terminée, le système est en train de chercher un adversaire de taille pour votre Guilde..."
+GUILD_NEW_WAR_TIPS02,"Phase de Bataille terminée, calcul en cours..."
+GUILD_NEW_WAR_TIPS03,Seuls le Chef et les Seconds ont le droit de modifier.
 GUILD_NEW_WAR_TIPS04,Chance de Défi insuffisante !
 GUILD_NEW_WAR_TIPS05,Veuillez d'abord rejoindre une Guilde.
-GUILD_NEW_WAR_TIPS06,Nécessite que le niveau de votre Guilde ait atteint 12 et votre Guilde ait eu au moins 5 membres !
-GUILD_NEW_WAR_TIPS07,已達到最大值
+GUILD_NEW_WAR_TIPS06,Requiert que votre Guilde ait atteint le niv. 12 et comprenne au minimum 5 membres actifs tout au long de la semaine précédente.
+GUILD_NEW_WAR_TIPS07,Limite atteinte !
 GUILD_NEW_WAR_TEXT01,Saison
-GUILD_NEW_WAR_TEXT02,Prochaine Bataille：
+GUILD_NEW_WAR_TEXT02,Prochain Duel dans
 GUILD_NEW_WAR_TEXT03,Classement
 GUILD_NEW_WAR_TEXT04,Historique
-GUILD_NEW_WAR_TEXT05,Bataille de Nouvelle Saison :
-GUILD_NEW_WAR_TEXT06,Bataille {1}
+GUILD_NEW_WAR_TEXT05,Que les duels de la nouvelle saison commencent !
+GUILD_NEW_WAR_TEXT06,Duel {1}
 GUILD_NEW_WAR_TEXT07,Aucun Historique
-GUILD_NEW_WAR_TEXT08,Phase de Préparation
-GUILD_NEW_WAR_TEXT09,Phase de Bataille
+GUILD_NEW_WAR_TEXT08,Préparation :
+GUILD_NEW_WAR_TEXT09,Bataille :
 GUILD_NEW_WAR_TEXT10,Puissance Totale
 GUILD_NEW_WAR_TEXT11,Chef
 GUILD_NEW_WAR_TEXT12,Point de Guilde
-GUILD_NEW_WAR_TEXT13,Récompense
+GUILD_NEW_WAR_TEXT13,Récompenses
 GUILD_NEW_WAR_TEXT14,Victoire
 GUILD_NEW_WAR_TEXT15,Défaite
 GUILD_NEW_WAR_TEXT16,Entrer
 GUILD_NEW_WAR_TEXT17,Déployé {1}/{2}
-GUILD_NEW_WAR_TEXT18,Formation Défensive
+GUILD_NEW_WAR_TEXT18,Défense
 GUILD_NEW_WAR_TEXT19,Rapport
 GUILD_NEW_WAR_TEXT20,Tchat
-GUILD_NEW_WAR_TEXT21,Récompense
+GUILD_NEW_WAR_TEXT21,Récompenses
 GUILD_NEW_WAR_TEXT22,Raid
-GUILD_NEW_WAR_TEXT23,每次拆除減少旗幟30點耐久
-GUILD_NEW_WAR_TEXT24,Drapeau {1}
-GUILD_NEW_WAR_TEXT25,Durabilité：{1}/{2}
+GUILD_NEW_WAR_TEXT23,Chaque attaque réduit de 50 la Durabilité du Drapeau
+GUILD_NEW_WAR_TEXT24,{1}e Drapeau
+GUILD_NEW_WAR_TEXT25,Durabilité : {2}/{1}
 GUILD_NEW_WAR_TEXT26,Déployez un membre pour défendre le Drapeau
 GUILD_NEW_WAR_TEXT27,Modifier
-GUILD_NEW_WAR_TEXT28,Armée Défensive
+GUILD_NEW_WAR_TEXT28,Défense
 GUILD_NEW_WAR_TEXT29,Disponible
 GUILD_NEW_WAR_TEXT30,Extrémité
-GUILD_NEW_WAR_TEXT31,中壘{1}
-GUILD_NEW_WAR_TEXT32,前壘{1}
+GUILD_NEW_WAR_TEXT31,Milieu {1}
+GUILD_NEW_WAR_TEXT32,Front {1}
 GUILD_NEW_WAR_TEXT33,Drapeau
 GUILD_NEW_WAR_TEXT34,Puissance
 GUILD_NEW_WAR_TEXT35,Annuler
 GUILD_NEW_WAR_TEXT36,Confirmer
-GUILD_NEW_WAR_TEXT37,Contribution Individuelle：{1}
-GUILD_NEW_WAR_TEXT38,Chance d'Attaque：{1}/{2}
-GUILD_NEW_WAR_TEXT39,Fin de Saison
+GUILD_NEW_WAR_TEXT37,Votre Contribution : {1}
+GUILD_NEW_WAR_TEXT38,Chance d'Assaut : {1}/{2}
+GUILD_NEW_WAR_TEXT39,Fin de Saison dans
 GUILD_NEW_WAR_TEXT40,Guilde
-GUILD_NEW_WAR_TEXT41,Individuel
-GUILD_NEW_WAR_TEXT42,Récompense
+GUILD_NEW_WAR_TEXT41,Classement
+GUILD_NEW_WAR_TEXT42,Récompenses
 GUILD_NEW_WAR_TEXT43,Guilde
 GUILD_NEW_WAR_TEXT44,Individuel
-GUILD_NEW_WAR_TEXT45,Calcul des récompenses saisonnières：
-GUILD_NEW_WAR_TEXT46,Calcul des récompenses de Bataille：
+GUILD_NEW_WAR_TEXT45,Calcul des récompenses saisonnières dans
+GUILD_NEW_WAR_TEXT46,Calcul des récompenses de Duel dans
 GUILD_NEW_WAR_TEXT47,--
-GUILD_NEW_WAR_TEXT48,Détails de Bataille
-GUILD_NEW_WAR_TEXT49,可以拖動或點擊進行調整
+GUILD_NEW_WAR_TEXT48,Détails
+GUILD_NEW_WAR_TEXT49,Appuyez ou faites glisser pour ajuster l'ordre des équipes défensives.
 GUILD_NEW_WAR_TEXT50,Défier
-GUILD_NEW_WAR_TEXT51,Détails de Drapeau
-GUILD_NEW_WAR_TEXT52,Réduit de 20 la durabilité du Drapeau pour chaque attaque !
+GUILD_NEW_WAR_TEXT51,Détails du Drapeau
+GUILD_NEW_WAR_TEXT52,Chaque attaque réduit de 50 la Durabilité du Drapeau
 GUILD_NEW_WAR_TEXT53,Récompense d'Attaque
 GUILD_NEW_WAR_TEXT54,Attaquer
-GUILD_NEW_WAR_TEXT55,Contribution Individuelle +{1}
-GUILD_NEW_WAR_TEXT56,Récompense
-GUILD_NEW_WAR_TEXT57,Moral d'ennemi -{1}
-GUILD_NEW_WAR_TEXT58,{1}e Bataille
-GUILD_NEW_WAR_TEXT59,Classement Individuel
-GUILD_NEW_WAR_TEXT60,Contribution Individuelle
+GUILD_NEW_WAR_TEXT55,Contribution +{1}
+GUILD_NEW_WAR_TEXT56,Récompenses
+GUILD_NEW_WAR_TEXT57,Endurance de l'ennemi -{1}
+GUILD_NEW_WAR_TEXT58,{1}e Duel
+GUILD_NEW_WAR_TEXT59,Contribution Individuelle
+GUILD_NEW_WAR_TEXT60,Classement Individuel
 GUILD_NEW_WAR_TEXT61,Point de Guilde +{1}
 GUILD_NEW_WAR_TEXT62,Les récompenses vous seront envoyées par courrier
-GUILD_NEW_WAR_TEXT63,{1}進攻了敵方{2}的{3}號旗幟，消耗了敵人{4}點精力
-GUILD_NEW_WAR_TEXT64,{1}進攻了敵方{2}的{3}號旗幟，消耗了旗幟{4}點耐久
-GUILD_NEW_WAR_TEXT65,{1}摧毀了敵方{2}
-GUILD_NEW_WAR_TEXT66,Fins dans
-GUILD_NEW_WAR_TEXT67,Bataille {1}
-GUILD_NEW_WAR_TEXT68,Chances de Défi：{1}
-GUILD_NEW_WAR_TEXT69,En cours de Bataille...
+GUILD_NEW_WAR_TEXT63,{1} a lancé une attaque vers le {3}e Drapeau placé dans la base {2} ennemie et a réduit de {4} l'Endurance de l'ennemi !
+GUILD_NEW_WAR_TEXT64,{1} a lancé une attaque vers le {3}e Drapeau placé dans la base {2} ennemie et a réduit de {4} la Durabilité de ce Drapeau !
+GUILD_NEW_WAR_TEXT65,{1} a détruit la base {2} ennemie !
+GUILD_NEW_WAR_TEXT66,Fins de la saison dans
+GUILD_NEW_WAR_TEXT67,Duel {1}
+GUILD_NEW_WAR_TEXT68,Chance d'Assaut : {1}
+GUILD_NEW_WAR_TEXT69,Bataille en cours...
 GUILD_NEW_WAR_TEXT70,Historique
 GUILD_NEW_WAR_TEXT71,Contribution Individuelle
-GUILD_NEW_WAR_TEXT72,Moral d'ennemi
-GUILD_NEW_WAR_TEXT73,清理場地
+GUILD_NEW_WAR_TEXT72,Endurance de l'ennemi
+GUILD_NEW_WAR_TEXT73,Piller
 GUILD_NEW_WAR_TEXT74,Allié
 GUILD_NEW_WAR_TEXT75,Ennemi
 ACTIVITY_LAFULI_RUDDER_TITLE,Le Défi de Lavli
@@ -7409,3 +7409,50 @@ ACTIVITY_REPAIR_CONSOLE_TEXT09,"Vous avez collecté la Récompense Principale de
 ACTIVITY_REPAIR_CONSOLE_TEXT10,Continuer
 ACTIVITY_REPAIR_CONSOLE_TEXT11,Oui
 QUICK_FORMATION_TEXT25,Sauvegarder
+QUICK_FORMATION_TEXT26,"En sauvegardant cette nouvelle formation défensive, la précédente sera perdue. Voulez-vous continuer ?"
+GUILD_NEW_WAR_TEXT78,Fin du duel dans
+QUICK_FORMATION_TEXT27,Veuillez sélectionner au moins une Fille dans votre équipe.
+GUILD_NEW_WAR_TEXT79,Aucun Classement
+GUILD_NEW_WAR_HELP02,"1. Chaque base compte plusieurs drapeaux. Chaque Drapeau peut être défendu par un membre de la Guilde. Au début de la Phase de Bataille, chaque membre commence avec 200 d’Endurances.|2. Il vous faudra 3 équipes pour pouvoir défier un ennemi, chaque équipe s’affrontera l’une après l’autre. L’Endurance de l’ennemi sera réduite en fonction du résultat de la Bataille : |0 victoire : -5 d’Endurance de l’ennemi|1 victoire : -10 d’Endurance de l’ennemi|2 victoires : -15 d’Endurance de l’ennemi|3 victoires : -20 d’Endurance de l’ennemi|3. Lorsque l’Endurance d’un ennemi est réduite à 0, il sera considéré comme vaincu. Vous pourrez alors lancer une attaque vers le Drapeau qu’il défendait. Chaque attaque réduira la durabilité du Drapeau. Lorsque la durabilité d’un Drapeau est réduite à 0, ce dernier tombera.|4. Une base sera considérée comme détruite, une fois que tous ses Drapeaux seront tombés. Une fois que toutes les bases ennemie seront détruites, vos alliés et vous-mêmes pourrez piller n’importe quelle base ennemie.|5. Durant la phase de Bataille, vous aurez 10 chances d'assaut par jour. Défier un ennemi, lancer une attaque vers un Drapeau ou piller une base, vous consommera 1 chance d'assaut et vous obtiendrez également des récompenses.|6. Pour chaque base Milieu détruite, augmente l’Attaque de 10%%, les PV de 20%% et la Résistance Totale de 10%% des Filles déployées par tous vos membres lors des prochaines batailles (ce bonus est cumulable, invalide après la fin d’un Duel). Après avoir détruit la base Extrémité ennemie, votre Guilde obtiendra 50 Points supplémentaires à chaque obtention de Points de Guilde.|7. Seuls le Chef et les Seconds ont le droit de lancer un raid contre une base ennemie. Chaque raid founira un bonus de 10%% de dégâts supplémentaires infligés par les Filles déployées par vos alliés. (Le Chef ou les Seconds peuvent lancer un nouveau raid sur l’ennemi toutes les 12 heures.)"
+GUILD_NEW_WAR_TEXT80,{1} a fait tombé le {3}e Drapeau placé dans la base {2} ennemie !
+ACTIVITY_PIRATE_TEXT01,全服劇情完成人數
+ACTIVITY_PIRATE_TEXT02,全服禮包
+ACTIVITY_PIRATE_TEXT03,收集進度
+ACTIVITY_PIRATE_TEXT04,Avancée de l'histoire
+ACTIVITY_PIRATE_TEXT05,掃蕩
+ACTIVITY_PIRATE_TEXT06,Collecter
+ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT01,收集獎勵
+ACTIVITY_PIRATE_SHOP_TEXT02,Bloqué
+ACTIVITY_PIRATE_SHOP_TEXT03,秘寶庫
+ACTIVITY_PIRATE_SHOP_TEXT04,普通寶庫
+ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+GUILD_NEW_WAR_TIPS08,Vous ne pouvez pas quitter votre Guilde durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
+GUILD_NEW_WAR_TIPS09,Vous ne pouvez pas expluser vos membres durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
+GUILD_NEW_WAR_TIPS10,Vous ne pouvez pas dissoudre votre Guilde durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
+GUILD_NEW_WAR_TEXT81,Aucun Rapport
+GUILD_NEW_WAR_TEXT82,Détails
+GUILD_NEW_WAR_TEXT83,[c][53a52a]Disponible[-][/c]
+GUILD_NEW_WAR_TEXT84,La Durabilité du Drapeau est à 0.
+GUILD_NEW_WAR_TEXT85,Modifié !
+GUILD_NEW_WAR_TEXT86,{1} restant avant le lancement du raid suivant
+GUILD_NEW_WAR_TEXT87,Attaquer
+GUILD_NEW_WAR_TEXT88,Drapeau Tombé !
+GUILD_NEW_WAR_TEXT89,Veuillez d'abord configurer votre formation défensive.
+GUILD_NEW_WAR_TEXT90,Aucun membre défensif actuellement
+GUILD_NEW_WAR_TEXT91,Aucun Bonus
+GUILD_NEW_WAR_TEXT92,Raid en cours
+GUILD_NEW_WAR_TEXT93,Augmente de 10%% les dégâts infligés par toutes les Filles en attaquant cette base.
+GUILD_NEW_WAR_TIPS11,Impossible de modifier votre formation défensive durant la phase de Bataille.
+GUILD_NEW_WAR_TIPS12,Veuillez d'abord détruire une base Front !
+GUILD_NEW_WAR_TIPS13,Veuillez d'abord détruire une base Milieu !
+ACTIVITY_PIRATE_PLACE1,海神殿
+ACTIVITY_PIRATE_PLACE2,近海區
+ACTIVITY_PIRATE_PLACE3,遠海區
+ACTIVITY_PIRATE_PLACE4,沙灘
+ACTIVITY_PIRATE_PLACE5,深海龍宮
+GUILD_NEW_WAR_TEXT94,Classement
+GUILD_NEW_WAR_TEXT95,Durabilité du Drapeau -{1}
+GUILD_NEW_WAR_TEXT96,Guilde dissoute !
+GUILD_NEW_WAR_TEXT97,Puissance ↑
+GUILD_NEW_WAR_TEXT98,Puissance ↓

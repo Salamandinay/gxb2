@@ -280,6 +280,12 @@ function SelfPlayer:onLoginInfo_(event)
 		}
 	end
 
+	local versionInfo = event.data.version_info
+
+	if versionInfo and versionInfo.ios_price_version and versionInfo.ios_price_version > 0 then
+		xyd.Global.IOS_PRICE_VERSION = versionInfo.ios_price_version
+	end
+
 	self:onPlayerInfo_({
 		name = xyd.event.PLAYER_INFO,
 		data = params.player_info

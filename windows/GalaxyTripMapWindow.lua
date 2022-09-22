@@ -133,6 +133,12 @@ function GalaxyTripMapWindow:registerEvent()
 		end
 	end)
 	UIEventListener.Get(self.lineBtn.gameObject).onClick = handler(self, function ()
+		if xyd.models.galaxyTrip:isShowTime() then
+			xyd.alertTips(__("GALAXY_TRIP_TIPS_21"))
+
+			return
+		end
+
 		local isBatch = xyd.models.galaxyTrip:getGalaxyTripGetMainIsBatch()
 
 		if isBatch and isBatch == 1 then

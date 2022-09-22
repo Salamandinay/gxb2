@@ -890,7 +890,7 @@ GUILD_TEXT55,Merchant
 GUILD_TEXT56,Guild Mail
 GUILD_TEXT57,Deputy Leader limit reached
 GUILD_TEXT58,Guild capacity maxed
-GUILD_TEXT59,You are already in a Guild!
+GUILD_TEXT59,The player has joined another Guild
 GUILD_TEXT60,Are you sure you want to transfer leadership?
 GUILD_TEXT61,Tap to change Guild Notice
 GUILD_TEXT62,3-12 characters
@@ -4909,7 +4909,7 @@ ENTRANCE_TEST_LEVEL_UP_NEED,Required\nRanking
 WARMUP_ARENA_REACH_RANK_HELP,"1. There are 4 Divisions in this event (B, A, S, and S+). You are only able to challenge the players in the same Division. At the start of the event, all players will be in Division B.|2. If your ranking status meets the requirement to promote your Division at 0:00 (UTC/GMT 0) every day, you will be promoted to a higher.|3. Division description: |After reaching Division {1}:|{2}|After reaching Division {3}:|{4}|After reaching Division {5}:|{6}|4. The ranking displayed on the event page is your current position in your current Division. (Maybe you will find that your current ranking has met the requirement to promote, but you didn't move on to the next Division after 0:00 (UTC/GMT 0), this is because you've taken the place of the players that have been promoted to a higher Division)"
 ENTRANCE_TEST_LEVEL_UP_ING,Results are being calculated...
 WARMUP_ARENA_TASK_INFO_1,New Girl Missions
-WARMUP_ARENA_TASK_INFO_2,Raenvya's Secret
+WARMUP_ARENA_TASK_INFO_2,Dancer & Merchant
 WARMUP_ARENA_TASK_INFO_3,Mission Rewards
 WARMUP_ARENA_TASK_INFO_4,Extra Rewards
 WARMUP_ARENA_TASK_INFO_5,Unlock after completing star-marked missions
@@ -7181,26 +7181,26 @@ ACTIVITY_REPAIR_CONSOLE_TEXT06,Basic Rewards
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Round {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Round {1}\nand above
 ACTIVITY_REPAIR_CONSOLE_HELP,"1. During the event, you need to recharge Energy Nodes on the circuit board with Bonnie's Batteries. Each Bonnie's Battery can be used to charge up 1 to 3 Energy Nodes.|2. If a row or column of Energy Nodes are all fully charged, you can unlock a corresponding reward. Once a reward is unlocked, tap on the reward to acquire it. |3. After the 5 Energy Nodes that are linked by the extra circuit (from top left to bottom right) are all fully charged, you can unlock and acquire the main reward of your current round and enter the next round.|4. You can check out the reward details of a round by tapping on the ""Preview"" button.|5. Bonnie's Batteries can be obtained by completing Bonnie's To-Do List or by purchasing Battery Supply Pack."
-GUILD_NEW_WAR_HELP01,General Rule Text
-GUILD_NEW_WAR_TIPS01,The Break Period is over and the Preparation Period will soon begin.
-GUILD_NEW_WAR_TIPS02,The Battle Period is over and the Break Period will soon begin.
+GUILD_NEW_WAR_HELP01,"[c][699be9]Registration Requirements[-][/c]|1. Your Guild must have at least reached Lv. 12 and have over 5 active members in the past week.|2. A Guild that meets the requirements will automatically be registered for the current season of Guild Championship once any Guild member enters the Guild Championship event page.|[c][699be9]Rules[-][/c]|1. Guild Championship will be divided into seasons. There will be 8 competitions between 2 Guilds in each season;|2. Each competition between 2 Guilds will last for 3 days (1 day of preparation and 2 days of battle period); Each Guild will start with 1 Main Base, 3 Center Bases, and 2 Front Bases. Your Guild will need to prevent the Bases from being destroyed by protecting the Flags inside the Bases.|3. Each season is separated into 3 different periods: Break Period, Preparation Period, and Battle Period. The first 3 days and the last 4 days of each season are Break Periods. The details during the season are as follow: Monday: Break Period, you can check the Guild details and battle record of the season during this period.|Tuesday: Preparation Period, you can adjust your Guild defense during this period.|Wednesday & Thursday: Battle Period, your Guild will compete with another Guild in a Battle Period.|Friday: Preparation Period, you can adjust your Guild defense during this period.|Saturday & Sunday: Battle Period, your Guild will compete with another Guild in a Battle Period.|4. The system will automatically assign Guild Members to defend the Flags in the bases according to their Power. The players with higher Power will be assigned to the Bases with higher priority (Base Priority: Main Base > Center Base > Front Base). Guild Members can adjust their own defense lineups. Guild Leaders and Deputy Leaders can also adjust the position of all Guild Members manually (your defense lineup will be updated after saving your defense lineup).|5. During the Battle Period, you can attack the Flags in enemy Bases, if there's a player guarding a Flag, you will need to defeat the player (by reducing the player's Moral to 0) before attacking the Flag; After all Flags in a Base are removed, the Base will be destroyed; You will need to destroy at least 1 Front Base before attacking a Center Base; You need to destroy at least 1 Center Base before attacking the Main Base; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards including Guild Points and Personal Contribution.|6. After a Battle Period ends, the Guild with more Guild Points in the 2 competing Guilds will win this Battle Period. If the 2 Guilds win the same number of Guild Points, the battle will be a draw.|[c][699be9]Matching & Ranking[-][/c]|1. A Guild will gain basic Guild Points at the beginning of each season according to its ranking in the last season. For Guilds that enter the competition for the first time, the basic Guild Points of a Guild when it first enters the competition will be concluded according to the total Power of its Guild Members.|2. The position of Guilds in the Guild Ranking will be sorted according to their current Guild Points. If 2 Guilds have the same number of Guild Points, the Guild that reaches the number of Guild Points first will take the higher position in the list.|3. The opponent will be another Guild with the number of Guild Points close to the Guild.|[c][699be9]Guild Points[-][/c]|1. Your Guild will get 100/150/300 Guild Points for removing a Flag in the Front Base/Center Base/Main Base.|2. Your Guild will get 500/1000/2000 Guild Points for destroying the enemy Front Base/Center Base/Main Base.|3. Your Guild will get 2000/1000/1000 for winning/losing/draw in a competition.|4. Your Guild will get 10 Guild Points every time a Guild Member Cleans Up the field.|[c][699be9]Personal Contribution[-][/c]|1. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. The battle can be considered a ""Best of Three"". The player who wins 2 battles is the winner. You can get 15 points of Personal Contribution for losing the battle and 20 points of Personal Contribution for winning the battle;|2. You can get 15 points of Personal Contribution for attacking a Flag.|3. You can get 5 points of Personal Contribution every time you Clean Up the field.|[c][699be9]Reward[-][/c]|1. Guild Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition and have participated in the Base defense at the end of each competition.|2. Personal Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition at the end of each competition.|3. Guild Championship Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution and have participated in the Base defense in the competition at the end of each competition. The reward will be different according to the position of your Guild in the Ranking list.|4. You can get an additional reward each time you attack a defender, attack a Flag or Clean Up the field."
+GUILD_NEW_WAR_TIPS01,"Break Period is over, finding a worthy opponent"
+GUILD_NEW_WAR_TIPS02,"Battle Period is over, concluding the result"
 GUILD_NEW_WAR_TIPS03,Leader or Deputy Leader only
 GUILD_NEW_WAR_TIPS04,Insufficient Challenge Chance
 GUILD_NEW_WAR_TIPS05,You need to join a Guild first
-GUILD_NEW_WAR_TIPS06,Guild must reach Lv.12 and have at least 5 members.
+GUILD_NEW_WAR_TIPS06,Guild must reach Lv.12 and have at least 5 active members (last log-in time no more than a week)
 GUILD_NEW_WAR_TIPS07,Limit Reached
 GUILD_NEW_WAR_TEXT01,Season
-GUILD_NEW_WAR_TEXT02,Next battle begins in:
+GUILD_NEW_WAR_TEXT02,Next battle begins in
 GUILD_NEW_WAR_TEXT03,Season Rank
 GUILD_NEW_WAR_TEXT04,Battle Record
-GUILD_NEW_WAR_TEXT05,Battle of new Season starts in:
+GUILD_NEW_WAR_TEXT05,Battle of new Season starts!
 GUILD_NEW_WAR_TEXT06,Battle {1}
 GUILD_NEW_WAR_TEXT07,No record yet
 GUILD_NEW_WAR_TEXT08,Preparation Period
 GUILD_NEW_WAR_TEXT09,Battle Period
 GUILD_NEW_WAR_TEXT10,Total Power
 GUILD_NEW_WAR_TEXT11,Leader
-GUILD_NEW_WAR_TEXT12,Point
+GUILD_NEW_WAR_TEXT12,Guild Point
 GUILD_NEW_WAR_TEXT13,Reward
 GUILD_NEW_WAR_TEXT14,Victory Reward
 GUILD_NEW_WAR_TEXT15,Defeat Reward
@@ -7211,9 +7211,9 @@ GUILD_NEW_WAR_TEXT19,Battle Report
 GUILD_NEW_WAR_TEXT20,Chat
 GUILD_NEW_WAR_TEXT21,Reward
 GUILD_NEW_WAR_TEXT22,Focus Attack
-GUILD_NEW_WAR_TEXT23,You can reduce the Durability of the Flag by 30 for each demolition
+GUILD_NEW_WAR_TEXT23,You can reduce the Durability of the Flag by 50 for each attack
 GUILD_NEW_WAR_TEXT24,Flag {1}
-GUILD_NEW_WAR_TEXT25,Durability: {1}/{2}
+GUILD_NEW_WAR_TEXT25,Durability: {2}/{1}
 GUILD_NEW_WAR_TEXT26,You can assign defenders
 GUILD_NEW_WAR_TEXT27,Adjust
 GUILD_NEW_WAR_TEXT28,Defender
@@ -7226,32 +7226,32 @@ GUILD_NEW_WAR_TEXT34,Power
 GUILD_NEW_WAR_TEXT35,Cancel
 GUILD_NEW_WAR_TEXT36,Confirm
 GUILD_NEW_WAR_TEXT37,Personal Contribution: {1}
-GUILD_NEW_WAR_TEXT38,Attack Chance: {1}/{2}
+GUILD_NEW_WAR_TEXT38,Challenge Chance: {1}/{2}
 GUILD_NEW_WAR_TEXT39,Season Ended
 GUILD_NEW_WAR_TEXT40,Guild Rank
 GUILD_NEW_WAR_TEXT41,Personal Rank
 GUILD_NEW_WAR_TEXT42,Reward
 GUILD_NEW_WAR_TEXT43,Guild Reward
 GUILD_NEW_WAR_TEXT44,Personal Reward
-GUILD_NEW_WAR_TEXT45,End of Season Reward:
-GUILD_NEW_WAR_TEXT46,Competition Reward:
+GUILD_NEW_WAR_TEXT45,End of Season Reward
+GUILD_NEW_WAR_TEXT46,Competition Reward
 GUILD_NEW_WAR_TEXT47,--
 GUILD_NEW_WAR_TEXT48,Battle Info
 GUILD_NEW_WAR_TEXT49,Tap or drag to adjust lineup order
 GUILD_NEW_WAR_TEXT50,Challenge
 GUILD_NEW_WAR_TEXT51,Flag info
-GUILD_NEW_WAR_TEXT52,You can reduce the Durability of the Flag by 20 for each attack
+GUILD_NEW_WAR_TEXT52,You can reduce the Durability by 50 for each attack
 GUILD_NEW_WAR_TEXT53,Attack Reward
 GUILD_NEW_WAR_TEXT54,Attack
 GUILD_NEW_WAR_TEXT55,Personal Contribution +{1}
 GUILD_NEW_WAR_TEXT56,Reward
 GUILD_NEW_WAR_TEXT57,Enemy Moral -{1}
 GUILD_NEW_WAR_TEXT58,Fight {1}
-GUILD_NEW_WAR_TEXT59,Personal Rank (in your Guild)
-GUILD_NEW_WAR_TEXT60,Personal Contribution
+GUILD_NEW_WAR_TEXT59,Personal Contribution
+GUILD_NEW_WAR_TEXT60,Personal Rank (in your Guild)
 GUILD_NEW_WAR_TEXT61,Guild Point +{1}
 GUILD_NEW_WAR_TEXT62,Rewards will be issued via Mail
-GUILD_NEW_WAR_TEXT63,{1} has attacked enemy Flag {3} in {2} and reduced enemy's Valor by {4}
+GUILD_NEW_WAR_TEXT63,{1} has attacked enemy Flag {3} in {2} and reduced enemy's Moral by {4}
 GUILD_NEW_WAR_TEXT64,{1} has attacked enemy Flag {3} in {2} and reduced the Flag's Durability by {4}
 GUILD_NEW_WAR_TEXT65,{1} has destoryed enemy {2}
 GUILD_NEW_WAR_TEXT66,End
@@ -7272,3 +7272,50 @@ ACTIVITY_REPAIR_CONSOLE_TEXT09,You have collected the Core Reward for this round
 ACTIVITY_REPAIR_CONSOLE_TEXT10,Stay
 ACTIVITY_REPAIR_CONSOLE_TEXT11,Next Round
 QUICK_FORMATION_TEXT25,Save Lineup
+QUICK_FORMATION_TEXT26,The previous lineup will be replaced after saving the current lineup. Confirm to continue?
+GUILD_NEW_WAR_TEXT78,Competition ends in
+QUICK_FORMATION_TEXT27,Need at least 1 Girl in this lineup
+GUILD_NEW_WAR_TEXT79,No other Ranking Info
+GUILD_NEW_WAR_HELP02,"1. There are multiple Flags set in each base your Guild controls. You can assign 1 Guild Member as the protector of each Flag. Each defender has 200 Moral when assigned.|2. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. You will at least reduce the Moral of the defender by 5 for each attack. The Moral reduction will increase by 5 for each victory in the 3 battles.|3. The defender will be defeated after the Moral is reduced to 0. You will then be able to attack the unguarded Flag. You can reduce the Durability of the Flag for each attack in this situation. After a Flag loses all its Durability, it will be removed.|4. After all Flags in a Base are removed, the Base will be destroyed; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards.|5. During the battle period, there will be 10 Challenge Chances daily. To challenge enemies, attack the Flags and Clean Up the field, one chance will be consumed and the corresponding rewards can be received after.|6. All your Girls in your attack lineup will gain 10%% extra Attack, 20%% extra HP, and 10%% extra Damage Depletion for every Center Base your Guild destroys in this competition; After destroying the Main Base of the opposing Guild, the Attacking Guild will gain 50 extra Guild Points whenever it gains Guild Points in this competition.|7. Guild Leaders and Deputy Leaders can mark one of the enemy Base as a target to focus attack on. When attacking the target, all damage dealt by the Girls on the Attacking Team will be increased by 10%%. Focus attack targets can be re-selected 12 hours after the last focus attack target is selected."
+GUILD_NEW_WAR_TEXT80,{1} has destroyed Flag {3} in enemy {2}
+ACTIVITY_PIRATE_TEXT01,Story Complete Count
+ACTIVITY_PIRATE_TEXT02,Server Pack
+ACTIVITY_PIRATE_TEXT03,Collection Progress
+ACTIVITY_PIRATE_TEXT04,Story Progress
+ACTIVITY_PIRATE_TEXT05,Raid
+ACTIVITY_PIRATE_TEXT06,Go
+ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT01,Claim
+ACTIVITY_PIRATE_SHOP_TEXT02,Locked
+ACTIVITY_PIRATE_SHOP_TEXT03,Secret Vault
+ACTIVITY_PIRATE_SHOP_TEXT04,Ordinary Vault
+ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+GUILD_NEW_WAR_TIPS08,Cannot quit the Guild in Preparation or Battle Period of Guild Championship
+GUILD_NEW_WAR_TIPS09,Cannot remove Member from Guild in Preparation or Battle Period of Guild Championship
+GUILD_NEW_WAR_TIPS10,Cannot dismiss the Guild in Preparation or Battle Period of Guild Championship
+GUILD_NEW_WAR_TEXT81,No battle report yet
+GUILD_NEW_WAR_TEXT82,Battle Report
+GUILD_NEW_WAR_TEXT83,[c][53a52a]Free[-][/c]
+GUILD_NEW_WAR_TEXT84,Durability reached 0
+GUILD_NEW_WAR_TEXT85,Adjustment Complete
+GUILD_NEW_WAR_TEXT86,Cannot adjust in {1}
+GUILD_NEW_WAR_TEXT87,Attack
+GUILD_NEW_WAR_TEXT88,Removed
+GUILD_NEW_WAR_TEXT89,You need to set up your lineup first
+GUILD_NEW_WAR_TEXT90,No defender here
+GUILD_NEW_WAR_TEXT91,No Special Buff
+GUILD_NEW_WAR_TEXT92,Focus Attack
+GUILD_NEW_WAR_TEXT93,Increase All Damage dealt by 10%% when attacking Main Base
+GUILD_NEW_WAR_TIPS11,Cannot adjust defense lineup during Battle Period
+GUILD_NEW_WAR_TIPS12,Need to destroy 1 of the Front Bases first
+GUILD_NEW_WAR_TIPS13,Need to destroy 1 of the Center Bases first
+ACTIVITY_PIRATE_PLACE1,海神殿
+ACTIVITY_PIRATE_PLACE2,近海區
+ACTIVITY_PIRATE_PLACE3,遠海區
+ACTIVITY_PIRATE_PLACE4,沙灘
+ACTIVITY_PIRATE_PLACE5,深海龍宮
+GUILD_NEW_WAR_TEXT94,Rank
+GUILD_NEW_WAR_TEXT95,Flag Durability -{1}
+GUILD_NEW_WAR_TEXT96,Dismissed
+GUILD_NEW_WAR_TEXT97,Power↑
+GUILD_NEW_WAR_TEXT98,Power↓

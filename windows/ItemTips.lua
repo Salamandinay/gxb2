@@ -58,6 +58,7 @@ function ItemTips:ctor(parentGO, params, windowDepth)
 	self.collectionInfo_ = params.collectionInfo
 	self.windowDepth_ = windowDepth
 	self.hideBtnCheck = params.hideBtnCheck
+	self.quickItem_ = params.quickItem
 
 	self:initLayout()
 end
@@ -1404,6 +1405,15 @@ function ItemTips:showArtifactDesc()
 					xyd.WindowManager.get():openWindow("suit_skill_preview_window", {
 						skill_list = suitSkills,
 						levelUp = self.data.levelUp
+					})
+				elseif self.quickItem_ then
+					xyd.WindowManager.get():openWindow("suit_skill_detail_window", {
+						partner_id = self.data.equipedPartner and self.data.equipedPartner:getPartnerID(),
+						skill_list = suitSkills,
+						enough = formCount == 4,
+						skillIndex = skillIndex,
+						partner = self.data.equipedPartner,
+						quickItem = self.quickItem_
 					})
 				else
 					xyd.WindowManager.get():openWindow("suit_skill_detail_window", {

@@ -315,6 +315,18 @@ function GuildWindow:onTouchQuit()
 		return
 	end
 
+	local newGuildWarData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
+
+	if newGuildWarData then
+		local curPeriod = newGuildWarData:getCurPeriod()
+
+		if curPeriod ~= xyd.GuildNewWarPeroid.BEGIN_RELAX and curPeriod ~= xyd.GuildNewWarPeroid.END_RELAX and curPeriod ~= xyd.GuildNewWarPeroid.NORMAL_RELAX then
+			xyd.showToast(__("GUILD_NEW_WAR_TIPS08"))
+
+			return
+		end
+	end
+
 	xyd.alertYesNo(__("GUILD_TEXT06"), function (yes_no)
 		if not yes_no then
 			return

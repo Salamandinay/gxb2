@@ -53,17 +53,21 @@ function ActivityLostSpace:onRegister()
 end
 
 function ActivityLostSpace:initUIComponent()
-	local storyId = xyd.tables.miscTable:getNumber("activity_lost_space_plot", "value")
+	local storyWindow = xyd.WindowManager.get():getWindow("story_window")
 
-	if xyd.arrayIndexOf(self.activityData.detail.plots, storyId) < 0 then
-		xyd.WindowManager.get():openWindow("story_window", {
-			story_id = storyId,
-			story_type = xyd.StoryType.ACTIVITY
-		})
-		xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_LOST_SPACE, json.encode({
-			type = xyd.ActivityLostSpaceType.STORY_OLOT,
-			id = storyId
-		}))
+	if not storyWindow then
+		local storyId = xyd.tables.miscTable:getNumber("activity_lost_space_plot", "value")
+
+		if xyd.arrayIndexOf(self.activityData.detail.plots, storyId) < 0 then
+			xyd.models.activity:reqAwardWithParams(xyd.ActivityID.ACTIVITY_LOST_SPACE, json.encode({
+				type = xyd.ActivityLostSpaceType.STORY_OLOT,
+				id = storyId
+			}))
+			xyd.WindowManager.get():openWindow("story_window", {
+				story_id = storyId,
+				story_type = xyd.StoryType.ACTIVITY
+			})
+		end
 	end
 
 	self.goBtnLabel.text = __("ACTIVITY_LOST_SPACE_SKILL_START")
