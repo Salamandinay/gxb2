@@ -181,7 +181,6 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 
 	if self.battleType == xyd.BattleType.ARENA_3v3 and #self.nowPartnerList <= 0 then
 		local formation = xyd.models.arena3v3:getDefFormation()
-		formation = formation and formation.teams
 
 		for i, _ in pairs(formation) do
 			if formation[i] then

@@ -497,8 +497,8 @@ MINI_MONTH_CARD_TEXT02,30天每天獲得85鑽石
 MINI_MONTH_CARD_TEXT03,累計2900鑽石
 MINI_MONTH_CARD_TEXT04,原價: NT$170
 PERSON_CREATE_NAME,創建名稱
-MONTH_CARD_HELP1,當購買月卡後，你將會立即得到900鑽石和750VIP經驗。|在之後的30天內，我們每天將在信箱中發放370鑽石。|總共有12000鑽石！來得到這個超值的商品吧！|首次購買月卡時，將提供一個特別優惠。購買過一次後，價格將變回原價。
-MONTH_CARD_HELP2,當購買小月卡後，你將會立即得到350鑽石和250VIP經驗。|在之後的30天內，我們每天將在信箱中發放85鑽石。|小月卡沒有VIP額外每日獎勵，可以和月卡一起購買！|首次購買小月卡時，將提供一個特別優惠。購買過一次後，價格將變回原價。
+MONTH_CARD_HELP1,當購買月卡後，你將會立即得到900鑽石和750VIP經驗。|在之後的30天內，我們每天將在信箱中發放370鑽石。|總共有12000鑽石！來得到這個超值的商品吧！|首次購買月卡時，將提供一個特別優惠。購買過一次後，價格將變回原價。|購買月卡后，每日會根據玩家的VIP等級，發放對應的額外獎勵。|購買月卡后，完成所有每日任務后會額外獲得100鑽石。
+MONTH_CARD_HELP2,當購買小月卡後，你將會立即得到350鑽石和250VIP經驗。|在之後的30天內，我們每天將在信箱中發放85鑽石。|小月卡沒有VIP額外每日獎勵，可以和月卡一起購買！|首次購買小月卡時，將提供一個特別優惠。購買過一次後，價格將變回原價。|小月卡持續期間，每日刷新的打工任務次數加一
 RESET,重置
 BUY_GIFTBAG_LIMIT,限購：{1}
 GOTO,前往
@@ -7263,3 +7263,17 @@ GUILD_NEW_WAR_TEXT95,旗幟耐久 [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT96,已解散
 GUILD_NEW_WAR_TEXT97,戰鬥力↑
 GUILD_NEW_WAR_TEXT98,戰鬥力↓
+MONTH_CARD_EXTRA_TEXT01,每日打工任務刷新次數加一
+MONTH_CARD_EXTRA_TEXT02,每日任務獲得額外鑽石
+MONTH_CARD_EXTRA_TEXT03,VIP額外每日獎勵
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT01,第1~3輪
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT02,第4~8輪
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT03,第9輪及之後
+ACTIVITY_PIRATE_SHOP_TEXT06,{1}-掃蕩
+ACTIVITY_PIRATE_SHOP_TEXT07,劇情回顧
+ACTIVITY_PIRATE_SHOP_TEXT08,每次掃蕩掉落獎勵
+ACTIVITY_PIRATE_SHOP_TEXT09,固定掉落
+ACTIVITY_PIRATE_SHOP_TEXT10,隨機掉落
+ACTIVITY_PIRATE_SHOP_TEXT11,請選擇掃蕩次數
+ACTIVITY_PIRATE_SHOP_TEXT12,再掃蕩[c][db7224]{1}[-][/c]次可以獲得[c][db7224]寶箱[-][/c]
+INVITATION_TEXT24,完成成長日記第20章後開啟

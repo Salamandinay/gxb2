@@ -243,8 +243,8 @@ end
 function MainTopRightBtn:checkGalaxy()
 	if self.id == 6 then
 		local openFuncsIndex = xyd.models.functionOpen:getOpenFuncIndex()
-		local starryOpen = openFuncsIndex[tostring(xyd.FunctionID.STARRY_ALTAR)]
-		local galaxyOpen = openFuncsIndex[tostring(xyd.FunctionID.GALAXY_TRIP)]
+		local starryOpen = xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR, true)
+		local galaxyOpen = xyd.checkFunctionOpen(xyd.FunctionID.GALAXY_TRIP, true)
 		galaxyOpen = galaxyOpen and xyd.models.galaxyTrip:getLeftTime() > 0
 
 		if starryOpen and galaxyOpen then
@@ -2907,7 +2907,8 @@ function MainWindow:onWindowClose(event)
 		end
 	end
 
-	if self.win_list_[1] == "main_window" and #self.win_list_ == 1 then
+	if self.win_list_[1] == "main_window" and #self.win_list_ <= 3 then
+		dump("刷新右侧按钮")
 		self:checkTrBtn()
 	end
 
