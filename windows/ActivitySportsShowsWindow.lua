@@ -101,7 +101,9 @@ function ActivitySportsShowsWindow:registerEvent()
 end
 
 function ActivitySportsShowsWindow:onReport(event)
-	xyd.BattleController.get():sportShowsBattle(event.data.battle_result)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	xyd.BattleController.get():sportShowsBattle(data.battle_result)
 end
 
 function ActivitySportsShowsWindow:onSportsBet(event)
@@ -451,8 +453,8 @@ function ActivitySportsGuessItem:updatePartnerList()
 			end
 
 			local params = {
+				isMonster_ = true,
 				scale = 0.49074074074074076,
-				isMonster = true,
 				noClick = true,
 				uiRoot = parent_.gameObject,
 				tableID = tableID,
@@ -464,7 +466,9 @@ function ActivitySportsGuessItem:updatePartnerList()
 				self.monster1List_[i]:SetActive(true)
 				self.monster1List_[i]:setInfo(params)
 			else
-				self.monster1List_[i] = xyd.getHeroIcon(params)
+				self.monster1List_[i] = import("app.components.HeroIcon").new(parent_.gameObject)
+
+				self.monster1List_[i]:setInfo(params)
 			end
 		elseif self.monster1List_[i] then
 			self.monster1List_[i]:SetActive(false)
@@ -482,8 +486,8 @@ function ActivitySportsGuessItem:updatePartnerList()
 			end
 
 			local params = {
+				isMonster_ = true,
 				scale = 0.49074074074074076,
-				isMonster = true,
 				noClick = true,
 				uiRoot = parent_.gameObject,
 				tableID = tableID,
@@ -495,7 +499,9 @@ function ActivitySportsGuessItem:updatePartnerList()
 				self.monster2List_[i]:SetActive(true)
 				self.monster2List_[i]:setInfo(params)
 			else
-				self.monster2List_[i] = xyd.getHeroIcon(params)
+				self.monster2List_[i] = import("app.components.HeroIcon").new(parent_.gameObject)
+
+				self.monster2List_[i]:setInfo(params)
 			end
 		elseif self.monster2List_[i] then
 			self.monster2List_[i]:SetActive(false)

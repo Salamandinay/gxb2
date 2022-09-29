@@ -229,10 +229,6 @@ function GuildNewWarData:reqFlagInfo(callback)
 	local msg = messages_pb:guild_new_war_get_flag_info_req()
 
 	xyd.Backend.get():request(xyd.mid.GUILD_NEW_WAR_GET_FLAG_INFO, msg)
-
-	if not self.allPlayerDefFormation[xyd.Global.playerID] then
-		self:reqOtherDefFormation(xyd.Global.playerID)
-	end
 end
 
 function GuildNewWarData:onGetFlagInfo(event)
@@ -727,6 +723,7 @@ function GuildNewWarData:reqSweep(nodeID, num, callback)
 	end
 
 	self.reqSweepCallBack = callback
+	self.tempSweepTime = num
 	local msg = messages_pb:guild_new_war_sweep_req()
 	msg.base_id = nodeID
 	msg.num = num
@@ -736,6 +733,7 @@ end
 
 function GuildNewWarData:onGetSweep(event)
 	local data = xyd.decodeProtoBuf(event.data)
+	self.baseInfo.self_info.ticket = 0
 	self.tempAddSelfScore = data.self_score - self.baseInfo.self_info.score
 	self.baseInfo.self_info.score = data.self_score
 
@@ -811,6 +809,19 @@ end
 function GuildNewWarData:onGetOtherDefFormation(event)
 	local data = xyd.decodeProtoBuf(event.data)
 	self.allPlayerDefFormation[self.tempReqOtherID] = data
+
+	if self.allPlayerDefFormation[self.tempReqOtherID] and not self.allPlayerDefFormation[self.tempReqOtherID].star then
+		for i = 1, 3 do
+			for j = 1, 6 do
+				local infoPartner = data.teams[i].partners[j]
+
+				if infoPartner then
+					local star = xyd.tables.partnerTable:getStar(infoPartner.table_id) + (infoPartner.awake or 0)
+					infoPartner.star = star
+				end
+			end
+		end
+	end
 
 	if self.tempReqOtherID == xyd.Global.playerID then
 		local wnd = xyd.getWindow("guild_new_war_map_window")

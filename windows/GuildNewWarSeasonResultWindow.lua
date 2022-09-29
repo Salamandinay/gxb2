@@ -39,11 +39,9 @@ function GuildNewWarSeasonResultWindow:getUIComponent()
 	self.labelMyRank = self.midGroup:ComponentByName("labelMyRank", typeof(UILabel))
 	self.labelMyPoint = self.midGroup:ComponentByName("labelMyPoint", typeof(UILabel))
 	self.titleGroup = self.groupAction:NodeByName("titleGroup").gameObject
-	self.textGroup = self.titleGroup:NodeByName("textGroup").gameObject
-	self.textGroupUILayout = self.titleGroup:ComponentByName("textGroup", typeof(UILayout))
-	self.imgS = self.titleGroup:ComponentByName("textGroup/imgS", typeof(UISprite))
-	self.imgNum = self.titleGroup:ComponentByName("textGroup/imgNum", typeof(UISprite))
-	self.labelTextSeason = self.titleGroup:ComponentByName("textGroup/labelTextSeason", typeof(UILabel))
+	self.seasonCon = self.titleGroup:NodeByName("seasonCon").gameObject
+	self.seasonConLayout = self.titleGroup:ComponentByName("seasonCon", typeof(UILayout))
+	self.seasonIcon = self.seasonCon:ComponentByName("seasonIcon", typeof(UISprite))
 	self.img1 = self.titleGroup:ComponentByName("img1", typeof(UISprite))
 	self.bg = self.groupAction:ComponentByName("bg", typeof(UISprite))
 	self.imgResultBg1 = self.midGroup:ComponentByName("imgResultBg1", typeof(UISprite))
@@ -54,7 +52,6 @@ function GuildNewWarSeasonResultWindow:registerEvent()
 end
 
 function GuildNewWarSeasonResultWindow:layout()
-	self.labelTextSeason.text = ""
 	self.labelVSIndex.text = __("GUILD_NEW_WAR_TEXT58", self.vsIndex)
 	self.labelTextMyRank.text = __("GUILD_NEW_WAR_TEXT59")
 	self.labelMyRank.text = self.selfRank
@@ -69,9 +66,22 @@ function GuildNewWarSeasonResultWindow:layout()
 
 	self.labelTip.text = __("GUILD_NEW_WAR_TEXT62")
 	self.labelAwardText.text = __("GUILD_NEW_WAR_TEXT56")
+	local season = tostring(self.season)
 
-	xyd.setUISpriteAsync(self.imgNum, nil, "guild_new_war2_" .. self.season)
-	self.textGroupUILayout:Reposition()
+	self.seasonIcon.gameObject.transform:SetSiblingIndex(0)
+
+	for i = 1, #season do
+		local tmp = NGUITools.AddChild(self.seasonCon.gameObject, self.seasonIcon.gameObject)
+		local strNum = string.sub(season, i, i)
+		local tmpUISprite = tmp:GetComponent(typeof(UISprite))
+
+		xyd.setUISpriteAsync(tmpUISprite, nil, "guild_new_war2_" .. strNum)
+		tmp.transform:SetSiblingIndex(i)
+		tmp:SetLocalScale(0.45714285714285713, 0.45714285714285713, 1)
+	end
+
+	xyd.setUISpriteAsync(self.seasonIcon, nil, "guild_new_war2_S")
+	self.seasonConLayout:Reposition()
 
 	local spriteName = ""
 	spriteName = not self.isWin and "battle_lost_common_bg" or "battle_win_common_bg"

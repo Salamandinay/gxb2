@@ -94,6 +94,10 @@ function ActivityContent:resizePosY(obj, y_short, y_phoneX)
 	obj:Y(y_short + (y_phoneX - y_short) * self.scale_num_contrary)
 end
 
+function ActivityContent:resizePosX(obj, x_short, x_phoneX)
+	obj:X(x_short + (x_phoneX - x_short) * self.scale_num_contrary)
+end
+
 function ActivityContent:getActivityContentID()
 	return self.id
 end

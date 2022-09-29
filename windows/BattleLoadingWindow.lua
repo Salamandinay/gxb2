@@ -421,8 +421,18 @@ function BattleLoadingWindow:setBattleData(data)
 		others = xyd.arrayMerge(others, effects)
 	end
 
-	local enemyInfo = data.event_data.enemy_info
-	local selfInfo = data.event_data.self_info
+	local enemyInfo = nil
+
+	if data.event_data.enemy_info then
+		enemyInfo = data.event_data.enemy_info
+	end
+
+	local selfInfo = nil
+
+	if data.event_data.self_info then
+		selfInfo = data.event_data.self_info
+	end
+
 	local styleList = self:getSenpaiDressList(enemyInfo, selfInfo, battleType)
 
 	if styleList and next(styleList) then

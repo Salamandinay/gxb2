@@ -60,7 +60,10 @@ function ArenaWindow:initWindow()
 	self:initLayout()
 	self:onGetArenaInfo()
 	self:onGetRankList()
-	self:register()
+
+	if not self.isEndClose then
+		self:register()
+	end
 end
 
 function ArenaWindow:getUIComponent()
@@ -243,6 +246,14 @@ end
 function ArenaWindow:onGetArenaInfo()
 	local partners = self.model_:getDefFormation()
 
+	if xyd.models.arena:getIsSettlementing(true) then
+		self.isEndClose = true
+
+		xyd.models.arena:timeEndCloseWindow()
+
+		return
+	end
+
 	if #partners <= 0 then
 		xyd.WindowManager.get():openWindow("battle_formation_window", {
 			alpha = 0.01,
@@ -267,9 +278,12 @@ function ArenaWindow:onGetArenaInfo()
 	end
 
 	self:updateDDL()
-	self:updateRank()
-	self:updateScore()
-	self:setMask(false)
+
+	if not self.isEndClose then
+		self:updateRank()
+		self:updateScore()
+		self:setMask(false)
+	end
 end
 
 function ArenaWindow:updateRank()
@@ -297,11 +311,13 @@ function ArenaWindow:updateDDL()
 	elseif ddl <= 0 then
 		self.labelDDL.text = "00:00:00"
 
-		if not UNITY_EDITOR then
-			self:close()
+		self:close()
+		xyd.models.arena:timeEndCloseWindow()
+		xyd.alertTips(__("ARENA_SETTLEMENT_TIPS"))
 
-			return
-		end
+		self.isEndClose = true
+
+		return
 	end
 
 	self.labelGroupUITable:Reposition()

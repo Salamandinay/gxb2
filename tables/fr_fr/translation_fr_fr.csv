@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratuit
 PUB_MISSION_COMPLETE2,Finir
 PUB_TICKET_NO_ENOUGH1,Parchemins de Jobs Insuffisants !
 PUB_TICKET_NO_ENOUGH2,Parchemins de Jobs Avancés Insuffisants !
-TAVERN_WINDOW_TIPS,"1. Finissez un Job et obtenez diverses récompenses. Chaque Fille ne peut prendre part qu'à un seul Job à la fois.|2. Le nombre de Job quotidien (actualisé par le système) est limité. Augmentez cette limite en améliorant votre niveau de Vip.|3. Si vous ne souhaitez pas faire certains Jobs, vous pouvez choisir de les réinitialiser tant que vous ne les avez pas encore commencé, en utilisant des Gemmes.|4. Utilisez des Parchemins de Jobs pour obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps et ainsi finir les Jobs.|6. Taux d'obtention de Job：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Taux d'obtention de Job en utilisant des Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Taux d'obtenir de Job en utilisant des Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles.|9. Stockage maximal de Parchemin de Jobs/Avancés : 999."
+TAVERN_WINDOW_TIPS,"1. Finissez un Job et obtenez diverses récompenses. Chaque Fille ne peut prendre part qu'à un seul Job à la fois.|2. Le nombre de Job quotidien (actualisé par le système) est limité. Augmentez cette limite en améliorant votre niveau de Vip ou en achatant la Petite Carte.|3. Si vous ne souhaitez pas faire certains Jobs, vous pouvez choisir de les réinitialiser tant que vous ne les avez pas encore commencé, en utilisant des Gemmes.|4. Utilisez des Parchemins de Jobs pour obtenir des Jobs supplémentaires.|5. Vous pouvez utiliser des Gemmes pour accélérer le temps et ainsi finir les Jobs.|6. Taux d'obtention de Job：|25,6%% pour 1 étoile, 27%% pour 2 étoiles, 23,2%% pour 3 étoiles, 15%% pour 4 étoiles, 8%% pour 5 étoiles, 1%% pour 6 étoiles et 0,2%% pour 7 étoiles.|7. Taux d'obtention de Job en utilisant des Parchemins de Jobs：20%% pour 1 étoile, 27%% pour 2 étoiles, 35%% pour 3 étoiles, 18%% pour 4 étoiles.|8. Taux d'obtenir de Job en utilisant des Parchemins de Jobs Avancés：56%% pour 4 étoiles, 35%% pour 5 étoiles, 7%% pour 6 étoiles, 2%% pour 7 étoiles.|9. Stockage maximal de Parchemin de Jobs/Avancés : 999."
 ITEM_SUMMON,Invoquer
 ITEM_SELL,Vendre
 ITEM_DETAIL,Détails
@@ -488,17 +488,17 @@ BACK_POS,Arrière
 DEF_PARTNER,Fille défensive
 ATK_PARTNER,Fille offensive
 BATTLE_TIPS,Conseil de Bataille
-MONTH_CARD_TEXT01,Obtenez 900 Gemmes immédiatement après\nl'achat
-MONTH_CARD_TEXT02,Recevez 370 Gemmes tous les jours pendant 30 jours
-MONTH_CARD_TEXT03,12k Gemmes au total
+MONTH_CARD_TEXT01,Obtenez 1500 Gemmes immédiatement après\nl'achat
+MONTH_CARD_TEXT02,Recevez 450 Gemmes tous les jours pendant 30 jours
+MONTH_CARD_TEXT03,15000 Gemmes au total
 MONTH_CARD_TEXT04,Prix d'Origine : 16.99€
-MINI_MONTH_CARD_TEXT01,Obtenez 350 Gemmes immédiatement après\nl'achat
-MINI_MONTH_CARD_TEXT02,Recevez 85 Gemmes tous les jours pendant 30 jours
-MINI_MONTH_CARD_TEXT03,2900 Gemmes au total
+MINI_MONTH_CARD_TEXT01,Obtenez 500 Gemmes immédiatement après\nl'achat
+MINI_MONTH_CARD_TEXT02,Recevez 150 Gemmes tous les jours pendant 30 jours
+MINI_MONTH_CARD_TEXT03,5000 Gemmes au total
 MINI_MONTH_CARD_TEXT04,Prix d'Origine : €5.49
 PERSON_CREATE_NAME,Choisir un Nom
-MONTH_CARD_HELP1,"Après avoir acheté la Carte Mensuelle, vous recevrez 900 Gemmes et 750 EXP VIP immédiatement.|Vous recevrez ensuite 370 Gemmes par jour pendant 30 jours.|Pour un total de 12000 Gemmes! Prenez-la sans plus attendre !|La réduction n'est valable que pour le premier achat."
-MONTH_CARD_HELP2,"Après avoir acheté la Carte Mensuelle, vous recevrez 900 Gemmes et 750 EXP VIP immédiatement.|Vous recevrez ensuite 370 Gemmes par jour pendant 30 jours.|Pour un total de 12000 Gemmes ! Prenez-la sans plus attendre !|La réduction n'est valable que pour le premier achat."
+MONTH_CARD_HELP1,Privilèges après l'achat de la Carte Mensuelle : |1. Vous recevrez 1500 Gemmes et 750 VIP EXP immédiatement.|2. Vous recevrez 450 Gemmes tous les jours pendant les 30 jours qui suivront l'achat (équivalent à un total de 15 000 Gemmes).|3. Vous recevrez 100 Gemmes supplémentaires par jour après avoir terminé toutes les Quêtes Journalières du Livre.|4. Vous recevrez des Bonus Journaliers Supplémentaires en fonction de votre niveau VIP.|Attention : la réduction est valable uniquement pour le premier achat de la Carte Mensuelle.
+MONTH_CARD_HELP2,"Privilèges après l'achat de la Petite Carte Mensuelle : |1. Vous recevrez 500 Gemmes et 250 VIP EXP immédiatement.|2. Vous recevrez 150 Gemmes tous les jours pendant les 30 jours qui suivront l'achat.|3. Le nombre d'actualisation quotidienne des Jobs sera augmenté de 1.|Attention : si vous achetez la Petite Carte Mensuelle, vous ne recevrez pas de Bonus Journaliers Supplémentaires.|Attention : la réduction est valable uniquement pour le premier achat de la Petite Carte Mensuelle."
 RESET,Réinitialiser
 BUY_GIFTBAG_LIMIT,Restant：{1}
 GOTO,Aller à
@@ -3875,8 +3875,8 @@ OLD_SCHOOL_SHOP_TEXT4,Atteindre un Score de {4} dans {1} Saison(s) ({2}/{3})
 OLD_SCHOOL_SHOP_TEXT5,1er Palier|2e Palier|3e Palier|4e Palier|5e Palier
 OLD_SCHOOL_SHOP_TEXT6,1er Palier|2e Palier|3e Palier|4e Palier|5e Palier|6e Palier|7e Palier|8e Palier|9e Palier|10e Palier|11e Palier|12e Palier
 OLD_SCHOOL_SHOP_WINDOW,Boutique
-GIFTBAG_TURIN_TEXT1,4000
-GIFTBAG_TURIN_TEXT2,3000
+GIFTBAG_TURIN_TEXT1,4500
+GIFTBAG_TURIN_TEXT2,4000
 OLD_SCHOOL_BUFF_LOCK_TEXT,*Débloqué après avoir obtenu {1} Scores dans n'importe quel Défi
 OLD_SCHOOL_FLOOR_GET_AWARD_TEXT,Passez les Défis de cet Étage sans ajuster votre formation pour obtenir les récompenses correspondantes (à récupérer manuellement)
 OLD_SCHOOL_SCORE_GET_AWARD_TEXT,N'oubliez pas de récupérer les récompenses manuellement
@@ -3913,7 +3913,7 @@ NEWBEE_10GACHA_TEXT1,Fille 5 étoiles
 NEWBEE_10GACHA_TEXT2,Fille 4 étoiles
 EX_SKILL_TIPS_TEXT,Aucune Compétence d'Élite
 ACTIVITY_MISSION_POINT_TEXT13,Collectable
-ACTIVITY_NEWBEE_FUND_DES,Récupérez les récompenses chaque jour pendant 30 jours après l'achat. Collectez les récompenses non récupérées contre des Gemmes.
+ACTIVITY_NEWBEE_FUND_DES,Récupérez les récompenses chaque jour pendant les 20 jours après l'achat.\nUtilisez les Gemmes pour collecter les récompenses non récupérées.
 LARGE_ACTIVITY_NEWBEE_TEXT,Capsules\nde Débutant
 ACTIVITY_MISSION_POINT_TEXT14,Commencez\nmaintenant
 ACTIVITY_MISSION_POINT_TEXT15,Touchez ici pour entrer l'Antiquaire
@@ -4743,7 +4743,7 @@ TRAVEL_MAIN_TEXT72,Marché
 MONTH_CARD_TEXT001,Obtention Immédiate
 MONTH_CARD_TEXT002,Bonus Journaliers
 MONTH_CARD_TEXT003,Bonus Journaliers Supplémentaires
-MONTH_CARD_TEXT004,"1. Après l'achat de la Carte Mensuelle：|Vous recevrez 900 Gemmes et 750 VIP EXP immédiatement. Vous recevrez 370 Gemmes tous les jours pendant les 30 jours qui suivent (équivalent à un total de 12 000 Gemmes) !|Après avoir atteint VIP2, vous recevrez également des Bonus Journaliers Supplémentaires ! Plus votre niveau de VIP est élevé, plus les Bonus seront importants !|2. Après l'achat de la Petite Carte Mensuelle：|Vous recevrez 350 Gemmes et 250 VIP EXP immédiatement. Vous recevrez 85 Gemmes tous les jours pendant les 30 jours qui suivent.|Attention : Si vous achetez la Petite Carte Mensuelle, vous ne recevrez pas de Bonus Journaliers Supplémentaires.|3. La réduction est valable uniquement pour le premier achat."
+MONTH_CARD_TEXT004,"1. Après l'achat de la Carte Mensuelle：|Vous recevrez 1500 Gemmes et 750 VIP EXP immédiatement. Vous recevrez 450 Gemmes tous les jours pendant les 30 jours qui suivent (équivalent à un total de 15 000 Gemmes) !|Après avoir atteint VIP2, vous recevrez également des Bonus Journaliers Supplémentaires ! Plus votre niveau de VIP est élevé, plus les Bonus seront importants !|2. Après l'achat de la Petite Carte Mensuelle：|Vous recevrez 500 Gemmes et 250 VIP EXP immédiatement. Vous recevrez 150 Gemmes tous les jours pendant les 30 jours qui suivent.|Attention : si vous achetez la Petite Carte Mensuelle, vous ne recevrez pas de Bonus Journaliers Supplémentaires.|3. La réduction est valable uniquement pour le premier achat."
 GUILD_POLICY_CHANGED_TIP,Modifié !
 GUILD_OPEN_TYPE_LABEL2,Admission
 GUILD_OPWER_LIMIT_LABEL2,Seuil de Puissance
@@ -5063,8 +5063,8 @@ ACTIVITY_PRAY_LIMIT_BUY,Limite d'Achat：{1}/{2}
 ACTIVITY_TEA_TITLE1,Aller à
 ACTIVITY_TEA_TITLE2,Autour d'un Thé
 ACTIVITY_TEA_TITLE3,Pack Spécial\nde Miss Yume
-ACTIVITY_TEA_TEXT1,"1. Teminez les Quêtes Journalières du Livre pour obtenir des Tasses de Thé.|2. Collectez le nombre requis de Tasses de Thé (10/20/40/60) pour débloquer les diffférents chapitres de l'histoire de Lucifael. Après les avoir lues, vous pourrez obtenir les récompenses correspondantes (à récupérer manuellement).|3. En achetant le Pack Spécial de Miss Yume, vous obtiendrez toutes les Tasses de Thé nécessaires pour débloquer tous les chapitres de l'histoire de Lucifael."
-ACTIVITY_TEA_TEXT2,Obtenez le skin unique & limité de Lucifael et plein d'autres récompenses !
+ACTIVITY_TEA_TEXT1,"1. Teminez les Quêtes Journalières du Livre pour obtenir des Tasses de Thé.|2. Collectez le nombre requis de Tasses de Thé (10/20/40/60) pour débloquer les diffférents chapitres de l'histoire de Lord Dracula. Après les avoir lues, vous pourrez obtenir les récompenses correspondantes (à récupérer manuellement).|3. En achetant le Pack Spécial de Miss Yume, vous obtiendrez toutes les Tasses de Thé nécessaires pour débloquer tous les chapitres de l'histoire de Lord Dracula."
+ACTIVITY_TEA_TEXT2,Obtenez le skin unique & limité de Lord Dracula et plein d'autres récompenses !
 ACTIVITY_TEA_TEXT3,Débloqué après avoir lu le chapitre précédent
 ACTIVITY_TEA_TEXT4,Progression
 ACTIVITY_TEA_TEXT5,Lisez l'histoire pour collecter la récompense !
@@ -5391,7 +5391,7 @@ ACTIVITY_GROWTH_PLAN_TEXT09,Basique
 ACTIVITY_GROWTH_PLAN_TEXT10,Supplémentaire
 ACTIVITY_GROWTH_PLAN_TEXT11,Après l'achat :
 ACTIVITY_GROWTH_PLAN_TEXT12,Choisissez une des Filles proposées et faites lui suivre un Entraînement Avancé !\nComplétez les Quêtes Journalières pour obtenir des Points et recevoir les Récompenses Basiques.\nDébloquez les Récompenses Supplémentaires en achetant le Pack de l'Entraînement Avancé.
-ACTIVITY_GROWTH_PLAN_TEXT13,"1. Durant l'événement, vous obtiendrez 5 Points pour chaque Quête Journalière terminée. Après avoir collectez assez de Points, vous pourrez collecter les récompenses manuellement.|2. Vous n'obtiendrez aucun Point en accomplissant【Terminer toutes les Quêtes Journalières】.|3. Vous pouvez choisir une Fille proposée et lui faire suivre un Entraînement Avancé. Les récompenses de l'Entraînement Avancé diffèrent dépendamment de la Fille choisie. Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie.|4. Après avoir acheté le Pack d'Entraînement Avancé, vous pourrez débloquer les Récompenses Supplémentaires.|5. Dans le cas où vous n'avez pas complété une Quête Journalière ou que vous avez oublié de collecter les récompenses, vous aurez la possibilité le lendemain, de récupérer ces Points manquants en les achetant avec des Gemmes (4 Gemmes/Point)."
+ACTIVITY_GROWTH_PLAN_TEXT13,"1. Durant l'événement, vous obtiendrez 5 Points pour chaque Quête Journalière terminée. Après avoir collectez assez de Points, vous pourrez collecter les récompenses manuellement.|2. Vous n'obtiendrez aucun Point en accomplissant【Terminer toutes les Quêtes Journalières】.|3. Vous pouvez choisir une Fille proposée et lui faire suivre un Entraînement Avancé. Les récompenses de l'Entraînement Avancé diffèrent dépendamment de la Fille choisie. Après avoir collecté les récompenses, vous ne pourrez plus changer la Fille choisie.|4. Après avoir acheté le Pack d'Entraînement Avancé, vous pourrez débloquer les Récompenses Supplémentaires.|5. Dans le cas où vous n'avez pas complété une Quête Journalière ou que vous avez oublié de collecter les récompenses, vous aurez la possibilité le lendemain, de récupérer ces Points manquants en les achetant avec des Gemmes (2 Gemmes/Point)."
 TIME_CLOISTER_TEXT61,Contenu à venir
 SENPAI_DRESS_GIFTBOX_WARN,"Vous avez déjà possédé cet élément de Tenue, voulez-vous continuer de choisir ?"
 TIME_CLOISTER_TEXT62,Améliorez les techniques correspondantes du Planétarium pour monter le niveau de cette carte.
@@ -5516,7 +5516,7 @@ TIME_CLOISTER_HELP05,"1. Une Fille Suppléante est disponible dans les Défis de
 TIME_CLOISTER_TEXT65,Technique · Fille Suppléante
 TIME_CLOISTER_TEXT66,Utilisez les Points de Cauchemar pour améliorer le niveau et les Compétences Avancées de la Fille Suppléante.
 TIME_CLOISTER_TEXT67,Montrer
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant. (Note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1)|4. Moyen d'obtention de Pièce de Fortune : Courrier Quotidien, Pack de Fortune et les tâches suivantes|——Utiliser 3 Tickets d'Arène = 1 Pièce de Fortune (10 fois au maximum)|——Dépenser 200 Gemmes = 1 Pièce de Fortune(20 fois au maximum)|——Finir un Job 3 étoiles ou plus = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 200 Ciseaux de Cristal = 1 Pièce de Fortune(20 fois au maximum)|——Utiliser 1 Gouvernail = 1 Pièce de Fortune(80 fois au maximum)|——Obtenir 250 VIP EXP = 2 Pièces de Fortune(100 fois au maximum)|5. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Utilisez des Pièces de Fortune pour tirer des récompenses dans le Distributeur de Fortune. Sélectionnez votre Récompense Finale puis tirez des Pièces pour obtenir les Récompenses Normales ou les Récompenses Finales du Distributeur de Fortune.|2. Obtenez 2 points de Fortune pour chaque tirage. Après avoir collecté 100 points de Fortune, vous obtiendrez obligatoirement la Récompense Finale que vous avez sélectionné. Après avoir obtenu la Récompense Finale, la barre de Fortune sera réinitialisée.|3. Chaque tour compte 3 Récompenses Finales. Après avoir obtenu les 3 Récompenses Finales du tour actuel, vous pouvez sélectionner la Récompense Finale du tour suivant (note : Après avoir obtenu toutes les Récompenses Finales des 6 tours, toutes les Récompenses Finales seront rafraîchies et vous recommencerez à parti du tour 1).|4. Après la fin de l'événement, vos Pièces de Fortune, points de Fortune et avancée des Récompenses Finales seront conservés jusqu'au prochain événement."
 ACTIVITY_LUCKYBOXES_TEXT15,"Après la fin de l'événement, vos Pièces de Fortune, les points de Fortune et la progression des Récompenses Finales seront conservés jusqu'au prochain événement."
 TIME_CLOISTER_TEXT68,Veuillez montrer une {1} pour compléter cette tâche.
 TIME_CLOISTER_TEXT69,Veuillez choisir la Tenue requise à montrer.
@@ -6153,7 +6153,7 @@ ACTIVITY_FREEBUY_TEXT09,Obtention\nImmédiate
 ACTIVITY_FREEBUY_TEXT10,Récompense du lendemain :
 ACTIVITY_FREEBUY_TEXT11,Obtenu：
 ACTIVITY_FREEBUY_TEXT12,"La période d'achat a été terminée, impossible à acheter ce pack pour le moment..."
-ACTIVITY_NEWBEE_FUND_TEXT03,Récompense Partielle： 
+ACTIVITY_NEWBEE_FUND_TEXT03,Récompenses Partielles： 
 ACTIVITY_NEWBEE_FUND_TEXT04,Valeur Totale： 
 ACTIVITY_CLOCK_TEXT03,Tourner en masse
 ACTIVITY_CLOCK_TEXT04,Choisissez une quantité de Pièce Mystère à utiliser pour faire tourner la Roue
@@ -7095,7 +7095,7 @@ GROWTH_DIARY_TEXT11,Collecté
 GUILD_COMPETITION_PARTNER_TEXT07,"Cette Fille est actuellement dans Formation Avancée, impossible de la sélectionner."
 GROWTH_DIARY_TEXT12,Collecter
 ACTIVITY_FREE_REVERT_TEXT08,*Seules les Filles proposées peuvent être inversées gratuitement
-ACTIVITY_GOLDFISH_HELP,"1. Mercure a ouvert un nouveau business pour cet été, allons voir ce qu'elle nous réserve !|2. Utilisez les Épuisettes pour attraper des poissons et recevoir les récompenses correspondantes. Pour chaque Poisson Rouge attrapé, 200 Pièces d'Écaille seront ajoutées au Bassin des Pièces. Pour chaque Poisson Doré attrapé, vous obtiendrez le pourcentage correspondant de Pièce d'Écaille du Bassin des Pièces. Le Bassin de Pièces est initialement à 10K Pièces d'Écaille (le pourcentage de Pièce d'Écaille que vous pouvez obtenir à chaque fois peut être différent pour chaque Poisson Doré que vous attrapez. Si vous obtenez la Boîte de Cupidon&Prométhéa, vous ne recevrez pas de Pièces d'Écaille).|3. En fonction du nombre d'Épuisettes que vous utilisez, vous recevrez des Pièces d'Écaille garanties. Si vous recevez moins de Pièces d'Écaille que la quantité garantie, des Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac le dernier jour de l'événement. Attention : vous ne pourrez plus attraper de poisson le dernier jour de l'événement.|4. Échangez vos Pièces d'Écaille contre des récompenses. Le premier niveau de récompenses est débloqué par défaut, et les niveaux suivants seront déblocables en fonction du nombre d'Épuisettes utilisées.|5. Vous recevrez également des récompenses de palier en fonction du nombre d'Épuisettes utilisées.|6. Après la fin de l'événement, les Épuisettes et les Pièces d'Écaille non-utilisées seront automatiquement converties en Pièce d'or, 1 Épuisette=50K Pièces d'Or et 1 Pièce d'Écaille=100 Pièces d'Or."
+ACTIVITY_GOLDFISH_HELP,"1. Mercure a ouvert un nouveau business pour cet été, allons voir ce qu'elle nous réserve !|2. Utilisez les Épuisettes pour attraper des poissons et recevoir les récompenses correspondantes. Pour chaque Poisson Rouge attrapé, 200 Pièces d'Écaille seront ajoutées au Bassin des Pièces. Pour chaque Poisson Doré attrapé, vous obtiendrez le pourcentage correspondant de Pièce d'Écaille du Bassin des Pièces. Le Bassin de Pièces est initialement à 10K Pièces d'Écaille (le pourcentage de Pièce d'Écaille que vous pouvez obtenir à chaque fois peut être différent pour chaque Poisson Doré que vous attrapez. Si vous obtenez la Boîte de Cupidon&Prométhéa, vous ne recevrez pas de Pièces d'Écaille).|3. En fonction du nombre d'Épuisettes que vous utilisez, vous recevrez des Pièces d'Écaille garanties. Si vous recevez moins de Pièces d'Écaille que la quantité garantie, des Pièces d'Écaille supplémentaires vous seront automatiquement envoyées dans votre sac le dernier jour de l'événement. Attention : vous ne pourrez plus attraper de poisson le dernier jour de l'événement.|4. Échangez vos Pièces d'Écaille contre des récompenses.|5. Vous recevrez également des récompenses de palier en fonction du nombre d'Épuisettes utilisées.|6. Après la fin de l'événement, les Épuisettes et les Pièces d'Écaille non-utilisées seront automatiquement converties en Pièce d'Or, 1 Épuisette=50K Pièces d'Or et 1 Pièce d'Écaille=100 Pièces d'Or."
 ACTIVITY_GOLDFISH_BUTTON01,Utiliser x1
 ACTIVITY_GOLDFISH_BUTTON02,Utiliser x10
 ACTIVITY_GOLDFISH_TEXT01,"Vous avez utilisé [c][35a7ef]{1}[-][/c] Épuisette(s), Mercure prédit que vous devriez obtenir [c][ffa82b]{2}[-][/c] Pièces d'Écaille. Vous en avez obtenu [c][ffa82b]{3}[-][/c] seulement. [c][ffa82b]{4}[-][/c] Pièces d'Écaille supplémentaires vous seront envoyées dans votre Sac le dernier jour de l'événement."
@@ -7113,7 +7113,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,Pièce d'Écaille obtenue：
 ACTIVITY_GOLDFISH_SHOP_TEXT06,Prédiction de Mercure：
 ACTIVITY_GOLDFISH_SHOP_TEXT07,Pièce d'Écaille due :
 ACTIVITY_GOLDFISH_SHOP_TIPS01,Débloqué après avoir utilisé {1} Épuisettes !
-ACTIVITY_GOLDFISH_AWARD_TEXT01,Lâcher {1} Lanternes Célestes
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Utiliser {1} Épuisettes
 ACTIVITY_GOLDFISH_PACK_TEXT01,2 chances supplémentaires d'acheter le pack de Gemmes ci-dessus après avoir fait l'achat de ce Pack !
 STARRY_ALTAR_TEXT14,Récompense · Mode Surprise
 STARRY_ALTAR_TEXT15,Récompense · Mode Cumulatif
@@ -7317,8 +7317,8 @@ ACTIVITY_REPAIR_CONSOLE_TEXT05,Récompense Principale
 ACTIVITY_REPAIR_CONSOLE_TEXT06,Récompense Basique
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Tour {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Tour {1} (et +)
-ACTIVITY_REPAIR_CONSOLE_HELP,"1. Durant cet événement, utilisez des Batteries pour rétablir l'alimentation du circuit électrique. Consommez 1 Batterie pour allumer aléatoirement 1 à 3 Diodes.|2. Lorsque les 5 Diodes d'une ligne ou colonne sont allumées, vous obtiendrez une Récompense Basique.|3. Une fois que les 5 Diodes en diagonale sont allumées (d'en haut à gauche jusqu'en bas à droite), vous obtiendrez la Récompense Principale du tour actuel et passerez au tour suivant.|4. Appuyez sur Récompenses pour voir les détails des récompenses par tour.|5. Moyen d'obtention des Batteries : Les Missions de Polly et Pack de Réparation."
-GUILD_NEW_WAR_HELP01,"[c][699be9]Condition d'accès[-][/c]|1. Votre Guilde doit avoir atteint le niveau 12 et comprendre au minimum 5 membres actifs tout au long de la semaine précédente.|2. Une fois qu'une Guilde a rempli les conditions requises mentionnées précédemment et qu'un des membres ait appuyé sur ""Entrer"" pour rejoindre le Duel, la Guilde sera automatiquement considérée comme Guilde participante au Championnat de la saison actuelle.|[c][699be9]Règles[-][/c]|1. Le Championnat inclut les Guildes de tous les serveurs confondus. Chaque Guilde participera à 8 duels chaque saison.|2. Chaque duel dure 3 jours : Préparation (1 jour) et Bataille (2 jours). Chaque Guilde compte 1 base Extrémité, 3 bases Milieu et 2 bases Front. Chacune de ces bases dispose de plusieurs drapeaux que les membres doivent défendre.|3. Chaque saison est divisée en 3 phases : Trêve, Préparation et Bataille. Les 3 premiers jours et 4 derniers jours de la saison sont considérés comme une période de trêve. Durant la saison, le Championnat se déroulera hebdomadairement, tel mentionné ci-dessous : |Lundi - Trêve : Affichage des classements des Guildes et des historiques de la saison actuelle.|Mardi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Mercredi & Jeudi -Bataille : Deux Guildes s'affrontent en duel.|Vendredi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Samedi & Dimanche -Bataille : Deux Guildes s'affrontent en duel.|4. Au début de la phase de Préparation, les membres de votre Guilde seront automatiquement déployer sur votre camp en fonction de leur puissance (Ordre de priorité : Extrémité > Milieu > Front). Le Chef et les Seconds de Guilde ont le droit de changer la position défensive de leurs membres. Chaque membre a le droit de modifier sa formation défensive (N'oubliez pas de sauvegarder votre formation défensive afin qu'elle puisse prendre effet dans la bataille).|5. Durant la phase de Bataille, chaque membre peut lancer une attaque sur les Drapeaux d'une base ennemie. Si un ennemi est placé sur ce Drapeau en défense, il vous faudra d'abord le vaincre avant de pouvoir lancer une attaque sur ce dernier. Une base sera considérée comme détruite lorsque tous ses Drapeaux seront tombés. Votre Guilde doit détruire une des bases Front ennemie avant de pouvoir attaquer une base Milieu ennemie. Votre Guilde doit détruire une des bases Milieu ennemie avant de pouvoir attaquer la base Extrémité ennemie. Lorsque toutes les bases du camp ennemi seront détruites, les membres de votre Guilde pourront piller n'importe quelle base ennemie et obtenir des Points de Guilde, Contributions Individuelles et récompenses supplémentaires.|6. Après la fin d'un duel, la Guilde ayant obtenu le plus de Points de Guilde sera celle qui remportera le duel. (Dans le cas où les deux Guildes ont obtenu le même nombre de Points de Guilde, le duel sera considéré comme match nul).|[c][699be9]Appariemmment de Guilde & Classement[-][/c]|1. La première fois qu'une Guilde participe au Championnat, elle obtiendra un certain nombre de Points de Guilde initiaux en fonction de la puissance totale des membres actuels. Quant aux Guildes qui ont déjà participé au Championnat, elles obtiendront des Points de Guilde initiaux en fonction de leur classement lors du dernier Championnat auquel elle auront participé. Plus le classement de la Guilde est élevé, plus ses Points de Guilde initiaux seront importants.|2. Le classement des Guildes sera déterminé en fonction de leurs Points de Guilde actuels, la Guilde ayant le plus de point sera la première du classement. Dans le cas où plusieurs Guildes ont obtenu le même nombre de Points de Guilde, la Guilde qui a obtenu ces Points de Guilde en premier sera en tête du classement.|3. Le système recherchera automatiquement une Guilde adversaire en fonction des Points de Guilde actuels obtenus par votre Guilde.|[c][699be9]Point de Guilde[-][/c]|1. +100 Pts de Guilde/ Drapeau d'une base Front tombé|+200 Pts de Guilde/ Drapeau d'une base Milieu tombé +300 Pts de Guilde/ Drapeau d'une base Extrémité tombé|2. +500 Pts de Guilde/ Base Front détruite |+1000 Pts de Guilde/ Base Milieu détruite| +2000 Pts de Guilde/ Base Extrémité détruite|3. +2000 Pts de Guilde/ Victoire d'un duel | +1000 Pts de Guilde/ Défaite d'un duel |+1000 Pts de Guilde/ Match nul d'un duel |4. +10 Pts de Guilde/ Pillage sur une base ennemie.|[c][699be9]Contribution Individuelle[-][/c]|1. Déployez 3 équipes pour défier un ennemi, ces 3 équipes s’affronteront une par une contre les équipes ennemies. Vous obtiendrez des Contributions Individuelles en fonction du nombre de victoire de bataille :|0 victoire : +15 Contributions Individuelles|1 victoire : +15 Contributions Individuelles|2 victoires : +20 Contributions Individuelles|3 victoires : +20 Contributions Individuelles|2. Chaque fois que vous lancez une attaque vers un Drapeau ennemi, vous obtiendrez 15 Contributions Individuelles.|3. Chaque fois que vous pillez une base ennemie, vous obtiendrez 5 Contributions Individuelles.|[c][699be9]Récompenses[-][/c]|1. Récompenses de Duel : Envoyées par courrier, après la fin d’un Duel, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|2. Récompenses Individuelles : Envoyées par courrier, aux membres ayant défié un ennemi. (À condition que leur Contribution Individuelle soit supérieure à 0.)|3. Récompenses de Classement : Envoyées par courrier, en fonction du classement de votre Guilde après la fin d'une saison, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|4. Tout membre défiant un ennemi, lançant une attaque vers un Drapeau ennemi ou pillant une base ennemie, récupèrera également des récompenses supplémentaires."
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. Durant cet événement, utilisez des Batteries pour rétablir l'alimentation du circuit électrique. Consommez 1 Batterie pour allumer aléatoirement 1 à 3 Diodes.|2. Lorsque les 5 Diodes d'une ligne ou colonne sont allumées, vous obtiendrez une Récompense Basique.|3. Une fois que les 5 Diodes en diagonale sont allumées (d'en haut à gauche jusqu'en bas à droite), vous obtiendrez la Récompense Principale du tour actuel et passerez au tour suivant.|4. Appuyez sur Récompenses pour voir les détails des récompenses par tour.|5. Moyen d'obtention des Batteries : Les Missions de Polly et Pack de Réparation.|6. Les récompenses de l'événement - Les Missions de Polly vous seront envoyées par courrier.|7. Après la fin de l'événement, les Batteries non utilisées seront converties en Pièce d'Or, 1 Batterie = 1000k Pièce d'Or."
+GUILD_NEW_WAR_HELP01,"[c][699be9]Condition d'accès[-][/c]|1. Votre Guilde doit avoir atteint le niveau 12 et comprendre au minimum 5 membres actifs tout au long de la semaine précédente.|2. Une fois qu'une Guilde a rempli les conditions requises mentionnées précédemment et qu'un des membres ait appuyé sur ""Entrer"" pour rejoindre le Duel, la Guilde sera automatiquement considérée comme Guilde participante au Championnat de la saison actuelle.|3. Vous ne pouvez pas quitter votre Guilde, expluser les membres de Guilde ou dissoudre votre Guilde durant la phase de Préparation et Bataille.|[c][699be9]Règles[-][/c]|1. Le Championnat inclut les Guildes de tous les serveurs confondus. Chaque Guilde participera à 8 duels chaque saison.|2. Chaque duel dure 3 jours : Préparation (1 jour) et Bataille (2 jours). Chaque Guilde compte 1 base Extrémité, 3 bases Milieu et 2 bases Front. Chacune de ces bases dispose de plusieurs drapeaux que les membres doivent défendre.|3. Chaque saison est divisée en 3 phases : Trêve, Préparation et Bataille. Les 3 premiers jours et 4 derniers jours de la saison sont considérés comme une période de trêve. Durant la saison, le Championnat se déroulera hebdomadairement, tel mentionné ci-dessous : |Lundi - Trêve : Affichage des classements des Guildes et des historiques de la saison actuelle.|Mardi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Mercredi & Jeudi - Bataille : Deux Guildes s'affrontent en duel.|Vendredi - Préparation : Le Chef et les Seconds de Guilde peuvent changer la position de leurs membres pour défendre leur base.|Samedi & Dimanche - Bataille : Deux Guildes s'affrontent en duel.|4. Au début de la phase de Préparation, les membres de votre Guilde seront automatiquement déployer sur votre camp en fonction de leur puissance (Ordre de priorité : Extrémité > Milieu > Front). Le Chef et les Seconds de Guilde ont le droit de changer la position défensive de leurs membres. Chaque membre a le droit de modifier sa formation défensive (N'oubliez pas de sauvegarder votre formation défensive afin qu'elle puisse prendre effet dans la bataille).|5. Durant la phase de Bataille, chaque membre peut lancer une attaque sur les Drapeaux d'une base ennemie. Si un ennemi est placé sur ce Drapeau en défense, il vous faudra d'abord le vaincre avant de pouvoir lancer une attaque sur ce dernier. Une base sera considérée comme détruite lorsque tous ses Drapeaux seront tombés. Votre Guilde doit détruire une des bases Front ennemie avant de pouvoir attaquer une base Milieu ennemie. Votre Guilde doit détruire une des bases Milieu ennemie avant de pouvoir attaquer la base Extrémité ennemie. Lorsque toutes les bases du camp ennemi seront détruites, les membres de votre Guilde pourront piller n'importe quelle base ennemie et obtenir des Points de Guilde, Contributions Individuelles et récompenses supplémentaires.|6. Après la fin d'un duel, la Guilde ayant obtenu le plus de Points de Guilde sera celle qui remportera le duel (dans le cas où les deux Guildes ont obtenu le même nombre de Points de Guilde, celle ayant la puissance totale la plus élevée gagnera).|[c][699be9]Appariemmment de Guilde & Classement[-][/c]|1. La première fois qu'une Guilde participe au Championnat, elle obtiendra un certain nombre de Points de Guilde initiaux en fonction de la puissance totale des membres actuels. Quant aux Guildes qui ont déjà participé au Championnat, elles obtiendront des Points de Guilde initiaux en fonction de leur classement lors du dernier Championnat auquel elle auront participé. Plus le classement de la Guilde est élevé, plus ses Points de Guilde initiaux seront importants.|2. Le classement des Guildes sera déterminé en fonction de leurs Points de Guilde actuels, la Guilde ayant le plus de point sera la première du classement. Dans le cas où plusieurs Guildes ont obtenu le même nombre de Points de Guilde, la Guilde qui a obtenu ces Points de Guilde en premier sera en tête du classement.|3. Le système recherchera automatiquement une Guilde adversaire en fonction des Points de Guilde actuels obtenus par votre Guilde.|[c][699be9]Point de Guilde[-][/c]|1. +100 Pts de Guilde/ Drapeau d'une base Front tombé|+200 Pts de Guilde/ Drapeau d'une base Milieu tombé +300 Pts de Guilde/ Drapeau d'une base Extrémité tombé|2. +500 Pts de Guilde/ Base Front détruite |+1000 Pts de Guilde/ Base Milieu détruite| +2000 Pts de Guilde/ Base Extrémité détruite|3. +2000 Pts de Guilde/ Victoire d'un duel | +1000 Pts de Guilde/ Défaite d'un duel|4. +10 Pts de Guilde/ Pillage sur une base ennemie.|[c][699be9]Contribution Individuelle[-][/c]|1. Déployez 3 équipes pour défier un ennemi, ces 3 équipes s’affronteront une par une contre les équipes ennemies. Vous obtiendrez des Contributions Individuelles en fonction du nombre de victoire de bataille :|0 victoire : +15 Contributions Individuelles|1 victoire : +15 Contributions Individuelles|2 victoires : +20 Contributions Individuelles|3 victoires : +20 Contributions Individuelles|2. Chaque fois que vous lancez une attaque vers un Drapeau ennemi, vous obtiendrez 15 Contributions Individuelles.|3. Chaque fois que vous pillez une base ennemie, vous obtiendrez 5 Contributions Individuelles.|[c][699be9]Récompenses[-][/c]|1. Récompenses de Duel : Envoyées par courrier, après la fin d’un Duel, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|2. Récompenses Individuelles : Envoyées par courrier, aux membres ayant défié un ennemi. (À condition que leur Contribution Individuelle soit supérieure à 0.)|3. Récompenses de Classement : Envoyées par courrier, en fonction du classement de votre Guilde après la fin d'une saison, aux membres ayant participé à défendre le camp de leur Guilde. (À condition que leur Contribution Individuelle soit supérieure à 0.)|4. Tout membre défiant un ennemi, lançant une attaque vers un Drapeau ennemi ou pillant une base ennemie, récupèrera également des récompenses supplémentaires."
 GUILD_NEW_WAR_TIPS01,"Phase de Trêve terminée, le système est en train de chercher un adversaire de taille pour votre Guilde..."
 GUILD_NEW_WAR_TIPS02,"Phase de Bataille terminée, calcul en cours..."
 GUILD_NEW_WAR_TIPS03,Seuls le Chef et les Seconds ont le droit de modifier.
@@ -7380,13 +7380,13 @@ GUILD_NEW_WAR_TEXT51,Détails du Drapeau
 GUILD_NEW_WAR_TEXT52,Chaque attaque réduit de 50 la Durabilité du Drapeau
 GUILD_NEW_WAR_TEXT53,Récompense d'Attaque
 GUILD_NEW_WAR_TEXT54,Attaquer
-GUILD_NEW_WAR_TEXT55,Contribution +{1}
+GUILD_NEW_WAR_TEXT55,Contribution Individuelle [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT56,Récompenses
-GUILD_NEW_WAR_TEXT57,Endurance de l'ennemi -{1}
+GUILD_NEW_WAR_TEXT57,Endurance de l'ennemi [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT58,{1}e Duel
-GUILD_NEW_WAR_TEXT59,Contribution Individuelle
-GUILD_NEW_WAR_TEXT60,Classement Individuel
-GUILD_NEW_WAR_TEXT61,Point de Guilde +{1}
+GUILD_NEW_WAR_TEXT59,Classement Individuel
+GUILD_NEW_WAR_TEXT60,Contribution Individuelle
+GUILD_NEW_WAR_TEXT61,Point de Guilde [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT62,Les récompenses vous seront envoyées par courrier
 GUILD_NEW_WAR_TEXT63,{1} a lancé une attaque vers le {3}e Drapeau placé dans la base {2} ennemie et a réduit de {4} l'Endurance de l'ennemi !
 GUILD_NEW_WAR_TEXT64,{1} a lancé une attaque vers le {3}e Drapeau placé dans la base {2} ennemie et a réduit de {4} la Durabilité de ce Drapeau !
@@ -7409,24 +7409,24 @@ ACTIVITY_REPAIR_CONSOLE_TEXT09,"Vous avez collecté la Récompense Principale de
 ACTIVITY_REPAIR_CONSOLE_TEXT10,Continuer
 ACTIVITY_REPAIR_CONSOLE_TEXT11,Oui
 QUICK_FORMATION_TEXT25,Sauvegarder
-QUICK_FORMATION_TEXT26,"En sauvegardant cette nouvelle formation défensive, la précédente sera perdue. Voulez-vous continuer ?"
+QUICK_FORMATION_TEXT26,"En sauvegardant cette nouvelle équipe, la précédente sera perdue. Voulez-vous continuer ?"
 GUILD_NEW_WAR_TEXT78,Fin du duel dans
 QUICK_FORMATION_TEXT27,Veuillez sélectionner au moins une Fille dans votre équipe.
 GUILD_NEW_WAR_TEXT79,Aucun Classement
 GUILD_NEW_WAR_HELP02,"1. Chaque base compte plusieurs drapeaux. Chaque Drapeau peut être défendu par un membre de la Guilde. Au début de la Phase de Bataille, chaque membre commence avec 200 d’Endurances.|2. Il vous faudra 3 équipes pour pouvoir défier un ennemi, chaque équipe s’affrontera l’une après l’autre. L’Endurance de l’ennemi sera réduite en fonction du résultat de la Bataille : |0 victoire : -5 d’Endurance de l’ennemi|1 victoire : -10 d’Endurance de l’ennemi|2 victoires : -15 d’Endurance de l’ennemi|3 victoires : -20 d’Endurance de l’ennemi|3. Lorsque l’Endurance d’un ennemi est réduite à 0, il sera considéré comme vaincu. Vous pourrez alors lancer une attaque vers le Drapeau qu’il défendait. Chaque attaque réduira la durabilité du Drapeau. Lorsque la durabilité d’un Drapeau est réduite à 0, ce dernier tombera.|4. Une base sera considérée comme détruite, une fois que tous ses Drapeaux seront tombés. Une fois que toutes les bases ennemie seront détruites, vos alliés et vous-mêmes pourrez piller n’importe quelle base ennemie.|5. Durant la phase de Bataille, vous aurez 10 chances d'assaut par jour. Défier un ennemi, lancer une attaque vers un Drapeau ou piller une base, vous consommera 1 chance d'assaut et vous obtiendrez également des récompenses.|6. Pour chaque base Milieu détruite, augmente l’Attaque de 10%%, les PV de 20%% et la Résistance Totale de 10%% des Filles déployées par tous vos membres lors des prochaines batailles (ce bonus est cumulable, invalide après la fin d’un Duel). Après avoir détruit la base Extrémité ennemie, votre Guilde obtiendra 50 Points supplémentaires à chaque obtention de Points de Guilde.|7. Seuls le Chef et les Seconds ont le droit de lancer un raid contre une base ennemie. Chaque raid founira un bonus de 10%% de dégâts supplémentaires infligés par les Filles déployées par vos alliés. (Le Chef ou les Seconds peuvent lancer un nouveau raid sur l’ennemi toutes les 12 heures.)"
 GUILD_NEW_WAR_TEXT80,{1} a fait tombé le {3}e Drapeau placé dans la base {2} ennemie !
-ACTIVITY_PIRATE_TEXT01,全服劇情完成人數
-ACTIVITY_PIRATE_TEXT02,全服禮包
-ACTIVITY_PIRATE_TEXT03,收集進度
-ACTIVITY_PIRATE_TEXT04,Avancée de l'histoire
-ACTIVITY_PIRATE_TEXT05,掃蕩
-ACTIVITY_PIRATE_TEXT06,Collecter
-ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
-ACTIVITY_PIRATE_SHOP_TEXT01,收集獎勵
+ACTIVITY_PIRATE_TEXT01,Tous serveurs confondus
+ACTIVITY_PIRATE_TEXT02,PACKS
+ACTIVITY_PIRATE_TEXT03,Collection des Coffres
+ACTIVITY_PIRATE_TEXT04,Avancée :
+ACTIVITY_PIRATE_TEXT05,Raid
+ACTIVITY_PIRATE_TEXT06,Voir
+ACTIVITY_PIRATE_HELP,"1. Durant cet événement, déclenchez différents événements en appuyant sur l'avatar d’une Fille. Vous déclencherez soit un chapitre de l'histoire soit une carte de péripétie.|2. La carte comprend 5 lieux : le Palais du Dragon, la Cité Engloutie, le Lagon des Tentacules, le Bord de Mer et la Haute Mer. Après avoir visionné tous les événements d'un lieu, la fonction - Raid sera disponible.|3. Tous les joueurs pourront récupérer une récompense gratuite une fois que l'Avancée de tous les serveurs confondus aura atteint 100%%.|4. Utilisez 1 Boussole pour lancer un Raid sur un des lieux et obtenez les récompenses correspondantes (20 Écus de Pirate + une Récompense Fixe du lieu choisi + 20%% de chance d'obtenir un Coffre).|5. Si vous obtenez un Coffre, vous obtiendrez aléatoirement un des différents types de Coffre. Chaque type de Coffre vous fournira un nombre d’Écu de Pirate :|Coffre Bois = 30 Écus de Pirate|Coffre Fer = 60 Écus de Pirate|Coffre Épique = 80 Écus de Pirate|Coffre Mythique = 100 Écus de Pirate|Coffre Légendaire = 120 Écus de Pirate|5. Moyen d’obtention de Boussole : Pack de l’événement - Joyaux des Fonds Marins, Récompense Quotidienne (par courrier), l’événement – Capsule de Nouvelle Fille, Pack Surprise, Pack de Grande Valeur, Sac d’Aventurier.|6. Touchez le bouton “Carte” (en dessous d'aide) pour revoir les histoires de cet événement.|7. Après la fin de l’événement, les Boussoles et les Écus de Pirate non utilisés seront convertis en Pièce d’Or, 1 Boussole = 500k Pièce d’Or, 1 Écu de Pirate = 1000 Pièce d’Or, et les Pièces d’Or vous seront envoyées par courrier (attention : les Coffres ne seront pas convertis en Pièces d’Or)."
+ACTIVITY_PIRATE_SHOP_TEXT01,Coffres-Fort
 ACTIVITY_PIRATE_SHOP_TEXT02,Bloqué
-ACTIVITY_PIRATE_SHOP_TEXT03,秘寶庫
-ACTIVITY_PIRATE_SHOP_TEXT04,普通寶庫
-ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT03,Chambre Forte
+ACTIVITY_PIRATE_SHOP_TEXT04,Voulez-vous échanger {1} Écus de Pirate contre cette récompense ?
+ACTIVITY_PIRATE_SHOP_TEXT05,"1. Obtenez des Écus de Pirate en lançant des raids dans l'événement - Joyaux des Fonds Marins.|2. Utilisez les Écus de Pirate pour les échanger contre des récompenses dans la Chambre Forte du Dragon.|3. Utilisez un certain nombre d'Écu de Pirate puis, débloquez les récompenses de différents paliers.|4. Collectez les différents Coffres pour obtenir des récompenses.\n(Attention : les récompenses de collection d’un Coffre ne peuvent être récupérées qu’une seule fois.)"
 GUILD_NEW_WAR_TIPS08,Vous ne pouvez pas quitter votre Guilde durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
 GUILD_NEW_WAR_TIPS09,Vous ne pouvez pas expluser vos membres durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
 GUILD_NEW_WAR_TIPS10,Vous ne pouvez pas dissoudre votre Guilde durant la phase de Préparation ou Bataille de l'événement - Championnat de Guilde.
@@ -7446,13 +7446,39 @@ GUILD_NEW_WAR_TEXT93,Augmente de 10%% les dégâts infligés par toutes les Fill
 GUILD_NEW_WAR_TIPS11,Impossible de modifier votre formation défensive durant la phase de Bataille.
 GUILD_NEW_WAR_TIPS12,Veuillez d'abord détruire une base Front !
 GUILD_NEW_WAR_TIPS13,Veuillez d'abord détruire une base Milieu !
-ACTIVITY_PIRATE_PLACE1,海神殿
-ACTIVITY_PIRATE_PLACE2,近海區
-ACTIVITY_PIRATE_PLACE3,遠海區
-ACTIVITY_PIRATE_PLACE4,沙灘
-ACTIVITY_PIRATE_PLACE5,深海龍宮
+ACTIVITY_PIRATE_PLACE1,Cité Engloutie
+ACTIVITY_PIRATE_PLACE3,Lagon des Tentacules
+ACTIVITY_PIRATE_PLACE4,Haute Mer
+ACTIVITY_PIRATE_PLACE2,Bord de Mer
+ACTIVITY_PIRATE_PLACE5,Palais du Dragon
 GUILD_NEW_WAR_TEXT94,Classement
-GUILD_NEW_WAR_TEXT95,Durabilité du Drapeau -{1}
+GUILD_NEW_WAR_TEXT95,Durabilité du Drapeau [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT96,Guilde dissoute !
 GUILD_NEW_WAR_TEXT97,Puissance ↑
 GUILD_NEW_WAR_TEXT98,Puissance ↓
+MONTH_CARD_EXTRA_TEXT01,* Ajout de [c][e28002]1[-][/c] chance quotidienne d'actualisation de Job
+MONTH_CARD_EXTRA_TEXT02,* [c][e28002]100[-][/c] Gemmes suppl. après avoir terminé toutes les Quêtes Journalières
+MONTH_CARD_EXTRA_TEXT03,* Bonus Journaliers VIP
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT01,Tour 1-3
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT02,Tour 4-8
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT03,Après le Tour 9
+ACTIVITY_PIRATE_SHOP_TEXT06,- Écu de Pirate : [c][fdc97d]{1}/{2}[-][/c]
+ACTIVITY_PIRATE_TEXT07,Carte
+ACTIVITY_PIRATE_TEXT08,Récompenses de Raid
+ACTIVITY_PIRATE_TEXT09,Fixe
+ACTIVITY_PIRATE_TEXT10,Coffre
+ACTIVITY_PIRATE_TEXT11,Sélectionnez le nombre de Raid
+ACTIVITY_PIRATE_TEXT12,Un [c][db7224]Coffre[-][/c] garanti après avoir lancé encore [c][db7224]{1}[-][/c] Raid(s).
+INVITATION_TEXT24,Débloqué après avoir terminé le 20e Chapitre de Journal d'Évolution.
+ACTIVITY_PIRATE_SHOP_TEXT13,Raid - {1}
+ACTIVITY_PIRATE_BOX1,Chambre Abandonnée
+ACTIVITY_PIRATE_BOX2,Chambre Sans Défense
+ACTIVITY_PIRATE_BOX3,Chambre Scellée
+ACTIVITY_PIRATE_BOX4,Chambre Dissimulée
+ACTIVITY_PIRATE_BOX5,Chambre Fortifiée
+ACTIVITY_PIRATE_BOX6,Chambre Secrète
+MONTH_CARD_EXTRA_TEXT04,Privilèges
+ACTIVITY_PIRATE_TEXT13,Voulez-vous consommer {1} Boussole(s) pour lancer un raid contre {2} ?
+ACTIVITY_PIRATE_TEXT14,Ce pack n'est pas encore débloqué !
+ACTIVITY_PIRATE_TEXT15,Gratuit
+ACTIVITY_YEAR_FUND_INNER_TITLE2,Aperçu des Récompenses

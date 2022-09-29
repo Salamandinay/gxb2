@@ -1523,7 +1523,7 @@ function BattleWinWindow:initArena()
 		avatar_frame_id = self.battleParams.enemy_info.avatar_frame_id
 	}
 
-	if self.battleParams.enemy_info.is_robot == 1 then
+	if self.battleParams.enemy_info.is_robot == 1 and not self.battleParams.enemy_info.avatar_id then
 		local allInfo = xyd.tables.activityEntranceTestRobotTable:getAllInfo(tonumber(self.battleParams.enemy_info.player_id))
 		self.labelRightPlayerName.text = allInfo.name
 		paramsB.avatarID = allInfo.avatar

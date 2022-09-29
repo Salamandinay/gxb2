@@ -88,6 +88,7 @@ function GuildNewWarDestroyResultWindow:layout()
 
 			if self.isCleanFight then
 				awards = xyd.tables.guildNewWarBaseTable:getSweepAwards(self.nodeType)
+				self.num = self.activityData.tempSweepTime
 			end
 
 			for i = 1, #awards do

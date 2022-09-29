@@ -70,9 +70,6 @@ function GoldfishShopWindow:ctor(name, params)
 	GoldfishShopWindow.super.ctor(self, name, params)
 
 	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GOLDFISH)
-
-	dump(self.activityData.detail)
-
 	self.select_ = self.activityData:getStartSelect()
 	self.shopItemList_ = {}
 end
@@ -266,12 +263,21 @@ function GoldfishShopWindow:onGetAward(event)
 			local index = self.tempItem.index
 			local award = xyd.tables.activityGoldfishShopTable:getAwards(id)
 
-			xyd.alertItems({
-				{
-					item_id = award[1],
-					item_num = award[2] * self.tempItem.award_num
-				}
-			})
+			if xyd.tables.itemTable:getType(award[1]) == xyd.ItemType.SKIN then
+				xyd.onGetNewPartnersOrSkins({
+					destory_res = false,
+					skins = {
+						award[1]
+					}
+				})
+			else
+				xyd.alertItems({
+					{
+						item_id = award[1],
+						item_num = award[2] * self.tempItem.award_num
+					}
+				})
+			end
 
 			self.tempItem = nil
 			local awards = self.activityData.detail.awarded or {}

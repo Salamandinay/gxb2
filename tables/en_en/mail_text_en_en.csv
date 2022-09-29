@@ -2,16 +2,16 @@ id,name,from,content
 1,Daily League Rewards,League Mail,Congratulations on achieving rank {2} in League of {1}. Your rewards will be sent to you by Mail on the FrontPage.
 2,End of Season Rewards,League Mail,"As the Principal of the Yume Academy, I would like to congratulate you for achieving rank {1} in Junior Varsity. Your excellent skills and bravery have won you the following rewards."
 3,New Server Bonus,System Message,"Login every day during the event and you will receive Gems x 50, Normal Slot Tickets x 2, League Tickets x 2. Your rewards are attached."
-4,Monthly Pass,Monthly Pass,"Congratulations! From {1}, you will get 370 gems each day at 00:00 am (UTC/GMT 0). The Gems from the first day will be sent immediately after purchasing the Monthly Pass."
+4,Monthly Pass,Monthly Pass,"Congratulations! From {1}, you will get 450 gems each day at 00:00 am (UTC/GMT 0). The Gems from the first day will be sent immediately after purchasing the Monthly Pass."
 5,Monthly Pass Rewards,Monthly Pass,"Dear VIP {1} player, please collect the following rewards in time. Your Monthly Pass will expire in {2} days."
 6,Monthly Pass Expired,Monthly Pass,"Dear Senpai, your Monthly Pass has expired. Please visit the Homework section to renew your Monthly Pass. As a reminder, the Monthly pass is 13 times cheaper than buying Gems individually!"
-7,Mini Pass,Mini Pass,"Congratulations! From {1}, you will get 85 gems each day at 00:00 am (UTC/GMC 0). The Gems from the first day will be sent immediately after purchasing the Mini Pass."
+7,Mini Pass,Mini Pass,"Congratulations! From {1}, you will get 150 gems each day at 00:00 am (UTC/GMC 0). The Gems from the first day will be sent immediately after purchasing the Mini Pass."
 8,Mini Pass Rewards,Mini Pass,"Dear Senpai, please collect the following rewards in time. Your Mini Pass will expire in {1} day(s)."
 9,Mini Pass Expired,Mini Pass,"Dear Senpai, your Mini Pass has expired. Please visit the Homework section to renew your Mini Pass. As a reminder, the Mini pass is 10 times cheaper than buying Gems individually!"
 10,Summon Girl Rewards,Summon Rewards,Congratulations on summoning {1} during the event. Your rewards are available in Mail on the FrontPage.
-11,Daily Rewards,System Message,Login daily during the event to get Adv. Capsule Coin x3. Your rewards are attached.
+11,Daily Rewards,System Message,"Login every day during the event and you will receive Adv. Capsule Coin x 3, Voyager Compass x 5, Lucky Coin x 2. Your rewards are attached."
 12,Capsule Reward,System Message,"Congratulations, you've completed {1} Adv. Capsule Draws during event Girls X Capsule Points, here's your reward."
-13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 100, Rabbit Lantern x 5. Your rewards are attached."
+13,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 100, Paper Scoop x 2. Your rewards are attached."
 14,Enroll Rewards,System Message,Congratulations on reaching {1} points during the Enroll event. Here are your rewards~!
 15,Boss Fight Rewards,System Message,Congratulations on defeating your friend's Boss. You have received the following rewards for your service!
 16,Boss Fight Rewards,System Message,The friend BOSS you found has been defeated. You have received the following rewards for your help!
@@ -220,7 +220,7 @@ Yuki apologizes for the inconvenience, for any further queries, please don’t h
 213,Reward,System Message,"You have dealt great damage to Chaos Boss, and he's retreating for now, please claim your reward and pursue. (Outfit Bonus triggered, you received additional Crystal Chisels!)"
 214,Reward,System Message,"You have successfully purified the Chaos Boss and have entered a more dangerous area, please claim your reward. (Outfit Bonus triggered, you received additional Crystal Chisels!)"
 215,Christmas Exchange Notice,Event Mail,"Dear Senpai, the event: ""Christmas Exchange"" is about to end, please don't forget to exchange the gifts you want!"
-216,Lantern Reward,System Message,Congratulations for consuming {1} Rabbit Lanterns in event: Yume Lantern Fair! Here's your reward!
+216,Scooper Reward,System Message,"Congratulations, you've Scooped {1} fish in event: ""Goldfish Scooper""! Here's your reward!"
 217,Old Campus Exploration Hint,System Message,"Dear Senpai, Old Campus Exploration will end in less than 24 hours! Don't forget to check it out!"
 218,Exclusive Packs Hint,System Message,"Dear Senpai, {1} will expire in 24 hours! Don't miss this exclusive chance to get it!"
 219,Firework Carnival Invitation,System Message,"Dear Senpai, do you plan to join our Firework Carnival today? Here are some matches you might need to light the fireworks!"
@@ -264,7 +264,7 @@ Thank you for your support of GXB2. If you have any questions or doubts regardin
 
 Regards,
 GXB2 Admin Team"
-239,Lantern Reward,System Message,Congratulations for consuming {1} Rabbit Lanterns in event: Yume Lantern Fair! Here's your reward!
+239,Scooper Reward,System Message,"Congratulations, you've Scooped {1} fish in event: ""Goldfish Scooper""! Here's your reward!"
 237,Manor Special Offer,Event Mail,"Dear Senpai, the additional {1}s have been issued to your account, please check it out in Dimensional Manor!"
 238,Manor Message,Event Mail,"Dear Senpai, Dimensional Manor has entered the Display Period, thank you again for your hard work!"
 241,Lost Space Zone Compensation,Event Mail,"Congratulations, Senpai! You've unlocked the extra rewards for Lost Space Zone. Please check it out!"
@@ -285,5 +285,9 @@ GXB2 Admin Team"
 256,Personal Championship Reward,System Message,"Congratulations, you reached No. {1} in your Guild in this season of Guild Championship! Here's your reward!"
 257,Varsity Notice,System Message,"Dear Senpai, Cross-Server Varsity is now available, please check it out!"
 258,Luvly's Challenge Reward,System Message,Congratulations for completing the challenge of consuming {1} Rudders in Luvly's Challenge! Here's your reward!
-259,Bonnie's To-Do List,Event Mail,"Congratulations for completing {1} in Bonnie's To-Do List, here's your reward!"
+259,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Daily Login ({1}/7)"" in Bonnie's To-Do List, here's your reward!"
 260,Guild Championship Battle Reward,System Message,Thank you for your contribution in the last battle! Here's your reward!
+261,Vault Collection Reward,Event Mail,"Congratulations for completing the mission of collecting 1 {1}, here's your reward!"
+262,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Complete a 4-star or higher Internship Quest ({1}/10)"" in Bonnie's To-Do List, here's your reward!"
+263,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Complete 3 battles in Junior Varsity ({1}/10)"" in Bonnie's To-Do List, here's your reward!"
+264,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Consume 10 Seals ({1}/10)"" in Bonnie's To-Do List, here's your reward!"

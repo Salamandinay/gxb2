@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Gratis
 PUB_MISSION_COMPLETE2,Fertig
 PUB_TICKET_NO_ENOUGH1,Normale Job-Pergamente nicht ausreichend!
 PUB_TICKET_NO_ENOUGH2,Super Job-Pergamente nicht ausreichend!
-TAVERN_WINDOW_TIPS,"1. Für das Abschließen von Jobaufträgen in der angegebenen Zeit werden großzügige Belohnungen vergeben. Jedes Mädchen kann jeweils nur eine Aufgabe ausführen. |2. Die Anzahl der täglich verfügbaren Jobaufgaben, die automatisch erneuert werden, ist begrenzt. Du kannst das Limit erhöhen, indem du dein VIP-Level erhöhst. |3. Noch nicht gestartete Jobaufgaben können aktualisiert werden. Du kannst Dias ausgeben, um Jobs zu aktualisieren, die du nicht erledigen möchtest. |4. Du kannst Job-Pergamente verwenden, um zusätzliche Jobs hinzuzufügen. |5. Du kannst Dias ausgeben, um Aufgaben schneller zu erledigen. |6. Erneuerst du die Jobs, hast du folgende Chancenverteilung bei den neuen Aufgaben: 1-Stern-Aufgaben: 25,6%%, 2-Stern-Aufgaben: 27%%, 3-Stern-Aufgaben: 23,2%%, 4-Stern-Aufgaben: 15%%, 5-Stern-Aufgaben: 8%%, 6-Stern-Aufgaben: 1%%, 7-Sterne-Aufgaben: 0,2%%. |7. Verwendest du normale Job-Pergamente, so kannst du 1-4-Sterne-Aufgaben bekommen. Chancenverteilung:|1-Stern-Aufgabe: 20%%, 2-Sterne-Aufgabe: 27%%, 3-Sterne-Aufgabe: 35%%, 4-Sterne-Aufgabe: 18%%.|Verwendest du super Job-Pergamente, so kannst du 4-7-Sterne-Aufgaben bekommen. Chancenverteilung:|4-Stern-Aufgabe: 56%%, 5-Sterne-Aufgabe: 35%%, 6-Sterne-Aufgabe: 7%%, 7-Sterne-Aufgabe: 2%%.|8. Maximal kannst du 999 normale Job-Pergamente und 999 Super Job-Pergamente auf einmal besitzen. Alle darüber hinaus erhaltene Pergamente werden nicht gespeichert."
+TAVERN_WINDOW_TIPS,"1. Für das Abschließen von Jobaufträgen in der angegebenen Zeit werden großzügige Belohnungen vergeben. Jedes Mädchen kann jeweils nur eine Aufgabe ausführen. |2. Die Anzahl der täglich verfügbaren Jobaufgaben, die automatisch erneuert werden, ist begrenzt. Du kannst das Limit erhöhen, indem du dein VIP-Level erhöhst und die Mini Monatskarte kaufst. |3. Noch nicht gestartete Jobaufgaben können aktualisiert werden. Du kannst Dias ausgeben, um Jobs zu aktualisieren, die du nicht erledigen möchtest. |4. Du kannst Job-Pergamente verwenden, um zusätzliche Jobs hinzuzufügen. |5. Du kannst Dias ausgeben, um Aufgaben schneller zu erledigen. |6. Erneuerst du die Jobs, hast du folgende Chancenverteilung bei den neuen Aufgaben: 1-Stern-Aufgaben: 25,6%%, 2-Stern-Aufgaben: 27%%, 3-Stern-Aufgaben: 23,2%%, 4-Stern-Aufgaben: 15%%, 5-Stern-Aufgaben: 8%%, 6-Stern-Aufgaben: 1%%, 7-Sterne-Aufgaben: 0,2%%. |7. Verwendest du normale Job-Pergamente, so kannst du 1-4-Sterne-Aufgaben bekommen. Chancenverteilung:|1-Stern-Aufgabe: 20%%, 2-Sterne-Aufgabe: 27%%, 3-Sterne-Aufgabe: 35%%, 4-Sterne-Aufgabe: 18%%.|Verwendest du super Job-Pergamente, so kannst du 4-7-Sterne-Aufgaben bekommen. Chancenverteilung:|4-Stern-Aufgabe: 56%%, 5-Sterne-Aufgabe: 35%%, 6-Sterne-Aufgabe: 7%%, 7-Sterne-Aufgabe: 2%%.|8. Maximal kannst du 999 normale Job-Pergamente und 999 Super Job-Pergamente auf einmal besitzen. Alle darüber hinaus erhaltene Pergamente werden nicht gespeichert."
 ITEM_SUMMON,Beschwören
 ITEM_SELL,Verkaufen
 ITEM_DETAIL,Details
@@ -488,16 +488,16 @@ BACK_POS,Back
 DEF_PARTNER,Verteidigung
 ATK_PARTNER,Angriff
 BATTLE_TIPS,Kampferklärung
-MONTH_CARD_TEXT01,Erhalte nach dem Kauf sofort 900 Dias
-MONTH_CARD_TEXT02,Erhalte 30 Tage\ntäglich 370 Dias
-MONTH_CARD_TEXT03,Insgesamt 2900 Dias
+MONTH_CARD_TEXT01,Erhalte nach dem Kauf sofort 1500 Dias
+MONTH_CARD_TEXT02,Erhalte 30 Tage\ntäglich 450 Dias
+MONTH_CARD_TEXT03,Insgesamt 5000 Dias
 MONTH_CARD_TEXT04,"Alter Preis: €16,99"
-MINI_MONTH_CARD_TEXT01,Erhalte nach dem Kauf sofort 350 Dias
-MINI_MONTH_CARD_TEXT02,Erhalte 30 Tage\ntäglich 85 Dias
+MINI_MONTH_CARD_TEXT01,Erhalte nach dem Kauf sofort 500 Dias
+MINI_MONTH_CARD_TEXT02,Erhalte 30 Tage\ntäglich 150 Dias
 MINI_MONTH_CARD_TEXT04,"Alter Preis: €5,49"
 PERSON_CREATE_NAME,Wähle einen Namen
-MONTH_CARD_HELP1,"Nach dem Kauf der Monatskarte erhältst du sofort 900 Dias und 750 VIP-EXP.|Zusätzlich erhälst du nach dem Kauf täglich 370 Dias per Mail, die 30 Tage lang versendet werden.|Das sind insgesamt 12000 Dias! Greife jetzt zu!|Beim ersten Kauf der Monatskarte erhältst du einen speziellen Erstkaufrabatt. Nachdem du mit diesem Rabatt die Monatskarte einmal gekauft hast, wird sie wieder danach wieder zum normalen Preis angeboten."
-MONTH_CARD_HELP2,"Nach dem Kauf der Mini Monatskarte erhältst du sofort 350 Dias und 250 VIP-EXP.|Zusätzlich erhälst du nach dem Kauf täglich 85 Dias per Mail, die 30 Tage lang versendet werden.|Es gibt keine zusätzlichen täglichen VIP-Belohnungen für Kauf der Mini Monatskarte. Es wird empfohlen, die beiden Monatskarten zu kaufen.|Beim ersten Kauf der Mini Monatskarte erhältst du einen speziellen Erstkaufrabatt. Nachdem du mit diesem Rabatt die Mini Monatskarte einmal gekauft hast, wird sie wieder danach wieder zum normalen Preis angeboten."
+MONTH_CARD_HELP1,"Nach dem Kauf der Monatskarte erhältst du sofort 1500 Dias und 750 VIP-EXP.|In den folgenden 30 Tagen werden dir täglich 450 Dias per Mail gesendet.|Insgesamt 15000 Dias für dich!|Beim Erstkauf der Monatskarte wird ein Sonderrabatt angeboten und danach wird der Preis  zum alten Preis angepasst.|Nach dem Kauf der Monatskarte werden dir deinem VIP-Level entsprechend zusätzliche Belohnungen gesendet.|Nach dem Kauf der Monatskarte werden dir täglich zusätzlich 100 Dias gesendet, sobald du alle täglichen Aufgaben des Tages abgeschlossen hast."
+MONTH_CARD_HELP2,Nach dem Kauf der Mini Monatskarte erhältst du sofort 500 Dias und 250 VIP-EXP.|In den folgenden 30 Tagen werden dir täglich 150 Dias per Mail gesendet.|Mini Monatskarte gewährt dem VIP-Spieler keine zusätzlichen Belohnungen und kann mit der Monatskarte zusammen gekauft werden!|Beim Erstkauf der Mini Monatskarte wird ein Sonderrabatt angeboten und danach wird der Preis  zum alten Preis angepasst.|Nach dem Kauf der Mini Monatskarte wird die Anzahl deiner täglichen neuen Jobaufgaben um 1 erhöht.
 RESET,Zurücksetzen
 BUY_GIFTBAG_LIMIT,Limit: {1}
 GOTO,Los
@@ -1100,7 +1100,7 @@ WEEKCARD_REPEAT_ERROR,"Du hast bereits den doppelten Münzenbonus. Du musst wart
 WEEKCARD_REPEAT_ERROR_AND,"Bitte gehe zuerst in den Google Play Store, um dein aktuelles Abonnement zu kündigen."
 GUILD_CHAT_ONLINE_TEXT,Online Gilden Mitglieder: {1}
 MY_TEAM,Mein Team
-SET_FORMATION,Team\nfestlegen
+SET_FORMATION,Aufstellen
 GUILD_WAR_INFO_WWINDOW,Sportplatz
 NO_TEAMS,Kein Team
 REOCRD,Verlauf
@@ -1114,7 +1114,7 @@ GUILD_WAR_HELP,"Der Sportplatz ist nach Jahreszeiten gegliedert und jede Saison 
 GUILD_WAR_FORMATION,Gildenkampf-Team
 GUILD_WAR_FORMATION_WINDOW,Team Info
 GUILD_WAR_SWITCH_TEAM_WINDOW,Wähle um auszutauschen
-GUILD_WAR_SET_ALL_FORMATION_WINDOW,Aufstellung
+GUILD_WAR_SET_ALL_FORMATION_WINDOW,Aufstellen
 GUILD_WAR_MIN_NUM,Bitte setze mindestens {1} Teams ein
 GUILD_WAR_SAVE_CONFIRM,Willst du nach der Korrektur diese Komposition speichern?
 NEXT_ENERGY,Körperliche Erholung
@@ -3691,7 +3691,7 @@ BATTLE_PASS_BUY_LAST_HOUR,{1} St. übrig
 PRIVILEGE_CARD_ACTIVE_AND_LEFT_TIME,Aktiviert. Verbleibende Zeit:
 PRIVILEGE_CARD_ACTIVE,Aktiviert
 PRIVILEGE_CARD_IN_ACTIVE,Nicht aktiviert
-NEW_RECHARGE_TEXT01,"Lade eine [c][dd7324]beliebige Summe[-][/c]\nauf, um eine [c][dd7324]5-Sterne[-][/c] Hexa und weitere Belohnungen für 3 aufeinanderfolgende Tage zu erhalten!"
+NEW_RECHARGE_TEXT01,"Lade eine [c][dd7324]beliebige Summe[-][/c]\nauf, um eine [c][dd7324]5-Sterne[-][/c] Lucifal und weitere Belohnungen für 3 aufeinanderfolgende Tage zu erhalten!"
 NEW_RECHARGE_TEXT02,Lange Kampfdauer und immer stärkerer Kampfwille
 NEW_RECHARGE_TEXT03,Vorschau
 NEW_RECHARGE_TEXT04,AI Mädchen voller Lebenslust - Turin\nAbwehr- und Angriffsfähiges Mädchen voller Potenzial!
@@ -3831,8 +3831,8 @@ OLD_SCHOOL_SHOP_TEXT4,Erreiche jeweils {4} Punkte in {1} ({2}/{3}) Saison(s)
 OLD_SCHOOL_SHOP_TEXT5,Lv.1|Lv.2|Lv.3|Lv.4|Lv.5
 OLD_SCHOOL_SHOP_TEXT6,Lv.1|Lv.2|Lv.3|Lv.4|Lv.5|Lv.6|Lv.7|Lv.8|Lv.9|Lv.10|Lv.11|Lv.12
 OLD_SCHOOL_SHOP_WINDOW,Campusladen
-GIFTBAG_TURIN_TEXT1,4000
-GIFTBAG_TURIN_TEXT2,3000
+GIFTBAG_TURIN_TEXT1,4500
+GIFTBAG_TURIN_TEXT2,4000
 OLD_SCHOOL_BUFF_LOCK_TEXT,*Entsperrt bei {1} Punkten in irgendeiner Stufe
 OLD_SCHOOL_FLOOR_GET_AWARD_TEXT,Schließe mit demselben Team eine bestimmte Menge von Stufen dieser Etage ab um die entsprechenden Belohnungen (manuell) zu sammeln.
 OLD_SCHOOL_SCORE_GET_AWARD_TEXT,Die Punktbelohnungen müssen manuell gesammelt werden
@@ -3869,7 +3869,7 @@ NEWBEE_10GACHA_TEXT1,Normale 5-Sterne
 NEWBEE_10GACHA_TEXT2,4-Sterne
 EX_SKILL_TIPS_TEXT,Das Mädchen hat zurzeit noch keine Elitefertigkeiten. Bitte bleib daran.
 ACTIVITY_MISSION_POINT_TEXT13,Abhilfe
-ACTIVITY_NEWBEE_FUND_DES,Entsperre den Neulingsfonds um reiche Belohnungen für 30 aufeinanderfolgende Tage zu sammeln! Die verpassten Belohnungen können mit Dias nachträglich gesammelt werden!
+ACTIVITY_NEWBEE_FUND_DES,Entsperre den Neulingsfonds um reiche Belohnungen für 20 aufeinanderfolgende Tage zu sammeln! Die verpassten Belohnungen können mit Dias nachträglich gesammelt werden!
 LARGE_ACTIVITY_NEWBEE_TEXT,Kapseln\nfür Anfänger
 ACTIVITY_MISSION_POINT_TEXT14,Starten
 ACTIVITY_MISSION_POINT_TEXT15,Tippe auf mich un in den Antiquitätsladen einzutreten!
@@ -4682,7 +4682,7 @@ TRAVEL_MAIN_TEXT72,Laden
 MONTH_CARD_TEXT001,Sofortige Belohnungen
 MONTH_CARD_TEXT002,Tägliche Belohnungen
 MONTH_CARD_TEXT003,Tägl. Zusatzbelohn. (Monatskarte)
-MONTH_CARD_TEXT004,"1. Monatskarte:|Nachdem du die Monatskarte gekauft hast, bekommst du sofort 900 Dias und 750 VIP-EXP. In den folgenden 30 Tagen bekommst du täglich 370 Dias, die per Mail gesendet werden. Insgesamt also 12000 Dias!|Des weiteren kannst du tägliche Zusatzbelohnungen erhalten, sobald dein VIP-Level Lv.2 erreicht hat. Je höher dein VIP-Level ist, desto mehr tägliche Zusatzbelohnungen erhältst du!|2. Mini Monatskarte:|Nachdem du die Mini Monatskarte gekauft hast, bekommst du sofort 350 Dias und 250 VIP-EXP. In den folgenden 30 Tagen bekommst du täglich 85 Dias, die per Mail gesendet werden.|Die Mini Monatskarte gewährt keine täglichen Zusatzbelohnungen. Sie kann aber zusätzlich zu der Monatskarte gekauft werden!|3. Beim Erstkauf der Monatskarte oder Mini Monatskarte wird ein Erstkaufrabatt angeboten, der nur einmal verfügbar ist."
+MONTH_CARD_TEXT004,"1. Monatskarte:|Nachdem du die Monatskarte gekauft hast, bekommst du sofort 1500 Dias und 750 VIP-EXP. In den folgenden 30 Tagen bekommst du täglich 450 Dias, die per Mail gesendet werden. Insgesamt also 15000 Dias!|Des weiteren kannst du tägliche Zusatzbelohnungen erhalten, sobald dein VIP-Level Lv.2 erreicht hat. Je höher dein VIP-Level ist, desto mehr tägliche Zusatzbelohnungen erhältst du!|2. Mini Monatskarte:|Nachdem du die Mini Monatskarte gekauft hast, bekommst du sofort 500 Dias und 250 VIP-EXP. In den folgenden 30 Tagen bekommst du täglich 150 Dias, die per Mail gesendet werden.|Die Mini Monatskarte gewährt keine täglichen Zusatzbelohnungen. Sie kann aber zusätzlich zu der Monatskarte gekauft werden!|3. Beim Erstkauf der Monatskarte oder Mini Monatskarte wird ein Erstkaufrabatt angeboten, der nur einmal verfügbar ist."
 GUILD_POLICY_CHANGED_TIP,Die Spielweise der Gilde wurde erfolgreich geändert
 GUILD_OPEN_TYPE_LABEL2,Aufnahme
 GUILD_OPWER_LIMIT_LABEL2,Erford. Kraft
@@ -4998,10 +4998,10 @@ SPACE_EXPLORE_AUTO_TIPS,Entsperrt ab Etage {1}
 SPACE_EXPLORE_AUTO_TIPS2,Auto-\nExpedition
 ACTIVITY_PRAY_LIMIT_BUY,Kauflimit: {1}/{2}
 ACTIVITY_TEA_TITLE1,Aufgaben
-ACTIVITY_TEA_TITLE2,Teehaus\ndes Engels
-ACTIVITY_TEA_TITLE3,Bonuspaket\nzum Teehaus
-ACTIVITY_TEA_TEXT1,"1. Schließe die täglichen Aufgaben ab, um Punkte des Teehauses zu erhalten. Jede Aufgabe entspricht 1 Teehaus-Punkt.|2. Nachdem du eine bestimmte Menge von Teehaus-Punkten (10 Punkte, 20 Punkte, 40 Punkte und 60 Punkte) gesammelt hast, kannst du die entsprechenden Kapitel von Lucifals Geschichte entsperren. Schließe die Geschichte ab, um reichhaltige Belohnungen zu erhalten. Die Belohnungen müssen manuell eingesammelt werden.|3. Sobald du das Bonuspaket zum Teehaus des Engels gekauft hast, werden die Teehaus-Punkte sofort auf den maximalen Wert erhöht und alle Kapitel entsperrt."
-ACTIVITY_TEA_TEXT2,Preiswertes Bonuspaket mit reichhaltigen Belohnungen und einem einzigartigen Kostüm für die Miss Yume Lucifal!
+ACTIVITY_TEA_TITLE2,Scharlachrote\nTeestunde
+ACTIVITY_TEA_TITLE3,Bonuspaket\nzur Teestunde
+ACTIVITY_TEA_TEXT1,"1. Schließe die täglichen Aufgaben ab, um Punkte des Teehauses zu erhalten. Jede Aufgabe entspricht 1 Teehaus-Punkt.|2. Nachdem du eine bestimmte Menge von Teehaus-Punkten (10 Punkte, 20 Punkte, 40 Punkte und 60 Punkte) gesammelt hast, kannst du die entsprechenden Kapitel von Lord Draculas Geschichten entsperren. Schließe die Geschichte ab, um reichhaltige Belohnungen zu erhalten. Die Belohnungen müssen manuell eingesammelt werden.|3. Sobald du das Bonuspaket zur Teestunde gekauft hast, werden die Teehaus-Punkte sofort auf den maximalen Wert erhöht und alle Kapitel entsperrt."
+ACTIVITY_TEA_TEXT2,Preiswertes Bonuspaket mit reichhaltigen Belohnungen und einem einzigartigen Kostüm für die Miss Yume Lord Dracula!
 ACTIVITY_TEA_TEXT3,Schließe zuerst das vorherige Kapitel ab
 ACTIVITY_TEA_TEXT4,Teehaus-Fortschritt
 ACTIVITY_TEA_TEXT5,"Schließe die entsprechenden Kapitel ab, um Belohnungen zu bekommen."
@@ -5330,7 +5330,7 @@ ACTIVITY_GROWTH_PLAN_TEXT09,Standardbelohnung
 ACTIVITY_GROWTH_PLAN_TEXT10,Premium Belohnung
 ACTIVITY_GROWTH_PLAN_TEXT11,Premium Ausbildungsplan
 ACTIVITY_GROWTH_PLAN_TEXT12,"Wähle zunächst ein Mädchen für die Sonderausbildung. Schließe die täglichen Aufgaben ab, um Ausbildungspunkte zu sammeln und die Standardbelohnungen zu erhalten! Kaufst du einen Ausbildungsplan, werden die zusätzlichen Premium Belohnungen entsperrt!"
-ACTIVITY_GROWTH_PLAN_TEXT13,"1. Jede tägliche Aufgabe (unter ""Buch der Illusion"") gibt 5 Ausbildungspunkte. Sobald du eine bestimmte Menge von Ausbildungspunkten gesammelt hast, kannst du die entsprechenden Belohnungen (manuell) sammeln.|2. Hast du die Aufgabe ""Schließe alle täglichen Aufgaben ab"" abgeschlossen, erhältst du keine weiteren Ausbildungspunkte.|3. Wähle zunächst ein Mädchen für die Sonderausbildung. Die Belohnungen der ""Sonderausbildung"" werden diesem Mädchen angepasst. Sobald du eine Belohnung gesammelt hast, kann das ausgewählte Mädchen nicht mehr geändert werden.|4. Solange du während des Events den Premium Ausbildungsplan gekauft hast (egal zu welchem Zeitpunkt des Events), erhältst du ALLE zusätzlichen Belohnungen, die deinem aktuellen Punktfortschritt entsprechen.|5. Solltest du während des Events einmal vergessen, Aufgaben rechtzeitig abzuschließen oder Belohnungen einiger Aufgaben rechtzeitig einzusammeln, wodurch dir Punkte entgangen sind, kannst du am nächsten Tag oder später diese Punkte nachträglich erhalten, indem du auf das Pluszeichen tippst. 1 Punkt kostet 4 Dias."
+ACTIVITY_GROWTH_PLAN_TEXT13,"1. Jede tägliche Aufgabe (unter ""Buch der Illusion"") gibt 5 Ausbildungspunkte. Sobald du eine bestimmte Menge von Ausbildungspunkten gesammelt hast, kannst du die entsprechenden Belohnungen (manuell) sammeln.|2. Hast du die Aufgabe ""Schließe alle täglichen Aufgaben ab"" abgeschlossen, erhältst du keine weiteren Ausbildungspunkte.|3. Wähle zunächst ein Mädchen für die Sonderausbildung. Die Belohnungen der ""Sonderausbildung"" werden diesem Mädchen angepasst. Sobald du eine Belohnung gesammelt hast, kann das ausgewählte Mädchen nicht mehr geändert werden.|4. Solange du während des Events den Premium Ausbildungsplan gekauft hast (egal zu welchem Zeitpunkt des Events), erhältst du ALLE zusätzlichen Belohnungen, die deinem aktuellen Punktfortschritt entsprechen.|5. Solltest du während des Events einmal vergessen, Aufgaben rechtzeitig abzuschließen oder Belohnungen einiger Aufgaben rechtzeitig einzusammeln, wodurch dir Punkte entgangen sind, kannst du am nächsten Tag oder später diese Punkte nachträglich erhalten, indem du auf das Pluszeichen tippst. 1 Punkt kostet 2 Dias."
 TIME_CLOISTER_TEXT61,Dieser Korridor ist noch\nnicht zugänglich.
 SENPAI_DRESS_GIFTBOX_WARN,Dieses Outfit-Teil hast du bereits erhalten. Willst du dennoch weiter tauschen?
 TIME_CLOISTER_TEXT62,"Level die Zweige im Sternkreisel, um diese Karte zu leveln."
@@ -5455,7 +5455,7 @@ TIME_CLOISTER_HELP05,"1. Forderst du in diesem Korridor eine Stufe heraus oder l
 TIME_CLOISTER_TEXT65,Gruppenzweige · Unterstützung
 TIME_CLOISTER_TEXT66,"Verwende die ""Alptraumpunkte"", um die Unterstützungsmädchen und deren Extraskills aufzuleveln."
 TIME_CLOISTER_TEXT67,Zeigen
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Verwende die Glücksmünzen, um Belohnungen der Glückslotterie zu ziehen. Im Belohnungspool gibt es normale Belohnungen und ultimative Belohnungen. Die ultimativen Belohnungen müssen manuell eingestellt werden.|2. Jedes Mal, wenn du einmal gezogen hast, wird der Glückswert um 2 erhöht. Sobald du die ultimative Belohnung gezogen hast, wird der Glückswert auf 0 zurückgesetzt. Erreicht der Glückswert 100, erhältst du beim nächsten Ziehen sicher die ultimative Belohnung.|2. Jeder Runde gibt es 3 ultimative Belohnungen. Werden die 3 ultimative Belohnungen einer Runde fertig gezogen, werden sie zu neuen ultimativen Belohnungen nächster Runde geändert. (Hast du die ultimativen Belohnungen aller 6 Runden gezogen, werden die ultimativen Belohnungen zu denen der 1 Runde geändert und alles Weitere folgt.)|4. Erhalten der Glücksmünzen: Tägliche Mail, Pakete zu Glückslotterie, Abschließen der folgenden Aufgaben:|--- Verwende 3 Arenatickets (1 Glücksmünze als Belohnung, Limit: 10 Mal)|--- Gib 200 Dias aus (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Schließe eine 3/4/5/6/7-Sterne Jobaufgabe (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 200 Kristallmeißel (1 Glücksmünze als Belohnung, Limit: 20 Mal)|--- Verwende 1 Steuer (1 Glücksmünze als Belohnung, Limit: 80 Mal)|--- Erhalte während des Events 250 VIP-EXP (2 Glücksmünzen als Belohnung, Limit: 100 Mal)|5. Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsforschritt bis zum nächsten Event aufbewahrt."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Verwende die Glücksmünzen, um Belohnungen der Glückslotterie zu ziehen. Im Belohnungspool gibt es normale Belohnungen und ultimative Belohnungen. Die ultimativen Belohnungen müssen manuell eingestellt werden.|2. Jedes Mal, wenn du einmal gezogen hast, wird der Glückswert um 2 erhöht. Sobald du die ultimative Belohnung gezogen hast, wird der Glückswert auf 0 zurückgesetzt. Erreicht der Glückswert 100, erhältst du beim nächsten Ziehen sicher die ultimative Belohnung.|2. Jeder Runde gibt es 3 ultimative Belohnungen. Werden die 3 ultimative Belohnungen einer Runde fertig gezogen, werden sie zu neuen ultimativen Belohnungen nächster Runde geändert. (Hast du die ultimativen Belohnungen aller 6 Runden gezogen, werden die ultimativen Belohnungen zu denen der 1 Runde geändert und alles Weitere folgt.)|4. Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsforschritt bis zum nächsten Event aufbewahrt."
 ACTIVITY_LUCKYBOXES_TEXT15,"Nach dem Ende des Events werden die Glücksmünzen, der Glückswert und der Ziehungsfortschritt bis zum nächsten Event aufbewahrt."
 TIME_CLOISTER_TEXT68,"Bitte zeige 1 {1}, um die Kartenaufgabe abzuschließen"
 TIME_CLOISTER_TEXT69,Bitte wähle ein passendes Outfit-Teil
@@ -5933,7 +5933,7 @@ GAME_ASSISTANT_TEXT11,Kauflimit einstellen
 GAME_ASSISTANT_TEXT12,Kampfausbeute sammeln
 GAME_ASSISTANT_TEXT13,Beloh. im Wohnheim sammeln
 GAME_ASSISTANT_TEXT14,Tägliches Quiz
-GAME_ASSISTANT_TEXT15,Gratis Belohnungen sammeln
+GAME_ASSISTANT_TEXT15,Gratis
 GAME_ASSISTANT_TEXT16,Mit Dias Chancen kaufen
 GAME_ASSISTANT_TEXT17,Kapseln
 GAME_ASSISTANT_TEXT18,Super Kapsel
@@ -6089,7 +6089,7 @@ ACTIVITY_FREEBUY_TEXT09,Sofortige Belohnungen
 ACTIVITY_FREEBUY_TEXT10,Morgen sammelbar:
 ACTIVITY_FREEBUY_TEXT11,Gesammelt:
 ACTIVITY_FREEBUY_TEXT12,Kaufzeit beendet. Das Paket kann nicht mehr gekauft werden.
-ACTIVITY_NEWBEE_FUND_TEXT03,Belohnungswert (teilweise):
+ACTIVITY_NEWBEE_FUND_TEXT03,Belohnungen (teilweise):
 ACTIVITY_NEWBEE_FUND_TEXT04,Gesamtwert:
 ACTIVITY_CLOCK_TEXT03,Schnell drehen
 ACTIVITY_CLOCK_TEXT04,Gib die Anzahl der zu verwendenden Kleemünzen ein
@@ -6963,7 +6963,7 @@ GROWTH_DIARY_TEXT11,Gesammelt
 GUILD_COMPETITION_PARTNER_TEXT07,Das Mädchen wurde bereits fortgebildet
 GROWTH_DIARY_TEXT12,Sammeln
 ACTIVITY_FREE_REVERT_TEXT08,Nur die vor dem Beginn des Events erhaltenen Mädchen können in diesem Event zurückgesetzt werden.
-ACTIVITY_GOLDFISH_HELP,"1. Hermes hat ihren Laden an dem Strand eröffnet. Lass uns sie mal besuchen!|2. Verwende die ""Schöpfnetze"", um die Fische zu fangen und deren Belohnungen zu erhalten. Es gibt mitten einen Pool der Fischmünzen und zu Beginn sind 10.000 Fischmünzen eingesetzt. Hast du einen roten Fisch gefangen, dann werden 200 weitere Fischmünzen in den Pool eingeworfen. Hast du einen goldenen Fisch gefangen, dann erhältst du im gewissen Verhältnis einige Fischmünzen im Pool. Hast du die Auswahlbox von Promethea & Cupid gefangen, erhältst du keine Fischmünzen.|3. Deinen Fangen-Malen entsprechend wird eine bestimmte Menge an Fischmünzen vom System festgelegt, die du zu 100%% sicher erhalten kannst. Falls du diese versprochenen Fischmünzen nicht vollständig erhalten kannst, werden die fehlenden Fischmünzen am letzten Tag des Events automatisch in deinen Rucksack gesendet. Am letzten Tag ist das Fangen nicht mehr möglich.|4. Die Fischmünzen können gegen allerlei Belohnungen ausgetauscht werden. Die Belohnungen der ersten Stufe werden zu Beginn des Events entsperrt, während die weiteren Stufen deinen Fangen-Malen entsprechend entsperrt werden.|5. Deinen Fangen-Malen entsprechend werden noch weitere Belohnungen gesendet.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Schöpfnetze"" und ""Fischmünzen"" per Mail recycelt. Jedes Schöpfnetz entspricht 50000 Münzen und jede Fischmünze 100."
+ACTIVITY_GOLDFISH_HELP,"1. Hermes hat ihren Laden an dem Strand eröffnet. Lass uns sie mal besuchen!|2. Verwende die ""Schöpfnetze"", um die Fische zu fangen und deren Belohnungen zu erhalten. Es gibt mitten einen Pool der Fischmünzen und zu Beginn sind 10.000 Fischmünzen eingesetzt. Hast du einen roten Fisch gefangen, dann werden 200 weitere Fischmünzen in den Pool eingeworfen. Hast du einen goldenen Fisch gefangen, dann erhältst du im gewissen Verhältnis einige Fischmünzen im Pool. Hast du die Auswahlbox von Promethea & Cupid gefangen, erhältst du keine Fischmünzen.|3. Deinen Fangen-Malen entsprechend wird eine bestimmte Menge an Fischmünzen vom System festgelegt, die du zu 100%% sicher erhalten kannst. Falls du diese versprochenen Fischmünzen nicht vollständig erhalten kannst, werden die fehlenden Fischmünzen am letzten Tag des Events automatisch in deinen Rucksack gesendet. Am letzten Tag ist das Fangen nicht mehr möglich.|4. Die Fischmünzen können gegen allerlei Belohnungen ausgetauscht werden.|5. Deinen Fangen-Malen entsprechend werden noch weitere Belohnungen gesendet.|6. Nach dem Ende des Events werden die noch nicht verwendeten ""Schöpfnetze"" und ""Fischmünzen"" per Mail recycelt. Jedes Schöpfnetz entspricht 50000 Münzen und jede Fischmünze 100."
 ACTIVITY_GOLDFISH_BUTTON01,1 Mal
 ACTIVITY_GOLDFISH_BUTTON02,10  Mal
 ACTIVITY_GOLDFISH_TEXT01,Du hast [c][35a7ef]{1}[-][/c] Mal gefangen und Hermes verspricht dir [c][ffa82b]{2}[-][/c] Fischmünzen. Bisher hast du [c][ffa82b]{3}[-][/c] Fischmünzen erhalten. Die fehlenden [c][ffa82b]{4}[-][/c] Fischmünzen werden am letzten Tag des Events in deinen Rucksack gesendet!
@@ -6981,7 +6981,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,Erhaltene Münzen:
 ACTIVITY_GOLDFISH_SHOP_TEXT06,Versprochene Münzen:
 ACTIVITY_GOLDFISH_SHOP_TEXT07,Fehlende Münzen:
 ACTIVITY_GOLDFISH_SHOP_TIPS01,"Fange noch {1} Mal, um diese Stufe zu entsperren."
-ACTIVITY_GOLDFISH_AWARD_TEXT01,Lass {1} Himmelslaternen steigen
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Fange {1} Fische
 ACTIVITY_GOLDFISH_PACK_TEXT01,Nach dem Kauf dieses Pakets kannst du das 1. Paket noch 2 Mal kaufen~
 STARRY_ALTAR_TEXT14,Belohnung · Überraschungsmodus
 STARRY_ALTAR_TEXT15,Belohnung · Standardmodus
@@ -7181,8 +7181,8 @@ ACTIVITY_REPAIR_CONSOLE_TEXT05,Kernbelohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT06,Standardbelohnungen
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Runde {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Ab Runde {1}
-ACTIVITY_REPAIR_CONSOLE_HELP,"1. Verwende die Batterien, um die Energieknoten auf dem Chip aufzuladen und zu erleuchten. Mit jeder Batterie können zufällig 1 bis 3 Energieknoten erleuchtet werden.|2. Sobald alle 5 Energieknoten einer Reihe oder einer Spalte erleuchtet sind, kannst du die entsprechenden normalen Reihen- oder Spaltenbelohnungen sammeln.|3. Sind alle 5 Energieknoten auf der Diagonale erleuchtet, kannst du die Kernbelohnungen dieser Runde sammeln und zur nächsten Runde gehen.|4. Die normalen Belohnungen und Kernbelohnungen können unten rechts geprüft werden.|5. Erhalten der Batterien: Batterieversorgung, Pollys To-Do-Liste."
-GUILD_NEW_WAR_HELP01,"[c][699be9]Teilnahme[-][/c]|1. Die Gilde muss Lv.12 erreicht haben und mindestens 5 Mitglieder haben, die sich in der letzten Woche angemeldet haben.|2. Wenn eine Gilde diese 2 Bedingungen erfüllt, kann ein beliebigies Mitglied auf den Eingang zum Event tippen, und die Gilde nimmt automatisch am Gilden-Wettbewerb teil.|[c][699be9]Regeln[-][/c]|1. Das Event findet in Saisonform und auf allen Servern statt. In jeder Saison finden 8 Wettbewerbe im Kampfmodus 1V1 statt.|2. Jeder Wettbewerb dauert insgesamt 3 Tage, darunter 1 Tag für die Vorbereitung und 2 Tage für den Kampf. Die beiden Gilden haben jeweils 1 Hauptbasis, 3 Mittelbasen und 2 Frontbasen. In jeder Basis gibt es Flaggen, die von Gildenmitgliedern verteidigt werden müssen.|3. Die ganze Saison wird in 3 Phasen aufgeteilt: Ruhezeit, Vorbereitungsphase und Kampfphase. Zu Beginn und zum Ende der Saison haben die Gilden jeweils eine Ruhezeit von 3 und 4 Tagen. Ansonsten ist der wöchentliche Zeitplan wie folgt:|Montag ---- Ruhezeit. Du kannst die Gilden-Rangliste und den Kampfverlauf der vergangenen Saisons prüfen.|Dienstag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Mittwoch, Donnerstag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|Freitag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Samstag, Sonntag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|4. Zu Beginn der Kampfphase werden die aufgestellten Teams der Gilden-Mitglieder nach Kampfkraft geordnet zu Hauptbasis, Mittelbasen und zuletzt Frontbasen entsandt. Gildenleiter und Stellvertreter können die Platzierung der Aufstellungen ändern. Gewöhnliche Mitglieder können ihre eigenen Verteidigungsaufstellungen frei anpassen und speichern. Nach dem Speichern musst du eigenhändig aktualisieren.|5. In der Kampfphase können alle Mitglieder die Flaggen der gegnerischen Gilde angreifen. Ist die Flagge von den gegnerischen Mitgliedern geschützt, dann müssen sie zunächst besiegt werden. Sind alle Flaggen einer Basis zerstört, ist die Erstürmung abgeschlossen. Sobald deine Gilde eine beliebige Frontbasis erstürmt hat, kann eine Mittelbasis angegriffen werden. Wenn eine Mittelbasis erstürmt wurde, kann die Hauptbasis angegriffen werden. Nachdem alle Basen erstürmt worden sind, kann deine Gilde eine beliebige Basis säubern, um zusätzliche Gilden-Punkte und persönliche Beiträge zu erhalten.|6. Nach dem Ende des Wettbewerbs wird ein Kampfergebnis basierend auf den erhaltenen Gilden-Punkten der beiden Gilden erstellt. Wer die meisten Gilden-Punkte erworben hat, der gewinnt den Wettbewerb. Bei gleichen Gildenpunkten gibt es ein Remis.|[c][699be9]Gilden-Match & Rangliste[-][/c]|1. Den Gilden, die zum ersten Mal am Gilden-Wettbewerb teilnehmen, wird basierend auf der Höchstkampfkraft aller Mitglieder eine bestimmte Anzahl an Gilden-Punkten verliehen. Anderen Gilden erhalten Gilden-Punkte basierend auf ihrem Rang im letzten Gilden-Wettbewerb. Je höher der Rang ist, desto mehr Gilden-Punkte erhält die Gilde zu Beginn des neuen Wettbewerbs.|2. Die Gilden-Rangliste ist durch die aktuellen Gilden-Punkten aller Gilden gegeben. Haben 2 Gilden die gleiche Anzahl von Gilden-Punkten erworben, dann erhält die Gilde, die diese Gilden-Punkte zuerst erworben hat, den höheren Rang.|3. Bei der Gegnerermittlung werden Gilden mit einer vergleichbaren Anzahl von Gilden-Punkten zufällig ausgewählt, gegeneinader anzutreten.|[c][699be9]Gilden-Punkte[-][/c]|1. Die Zerstöung einer Flagge in Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 100, 150 und 300 Gilden-Punkte.|2. Das Erstürmen einer Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 500, 1000 und 2000 Gilden-Punkte.|3. Sieg, Niederlage und Remis verleihen der Gilde jeweils 2000, 1000 und 1000 Gilden-Punkte.|4. Bei jeder Säuberung erhält die Gilde 10 Gilden-Punkte.|[c][699be9]Persönliche Beiträge[-][/c]|1. Beim Angriff auf eine Verteidigungsaufstellung finden 3 aufeinanderfolgende Kämpfe statt. Grundsätzlich erhältst du immer 15 persönliche Beiträge. 0/1/2/3 Sieg(e) entspricht jeweils 15/15/20/20 persönlichen Beiträgen.|2. Jeder Angriff gegen die Flaggen verleiht dir 15 persönliche Beiträge.|3. Bei jeder Säuberung erhältst du 5 persönliche Beiträge.|[c][699be9]Belohnungen[-][/c]|1. Gilden-Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die die Gilde verteidigt und persönliche Beiträge erworben haben, entsprechende Gilden-Belohnungen per Mail gesendet.|2. Persönliche Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die persönliche Beiträge erworben haben, entsprechende persönliche Belohnungen per Mail gesendet.|3. Saisonbelohnungen zum Gilden-Rang: Nach dem Ende der Saison werden den Mitgliedern, die ihre Gilden verteidigt und persönliche Beiträge erworben haben, basierend auf dem Gilden-Rang entsprechende Saisonbelohnungen per Mail gesendet.|4. Kämpfe gegen Gegner, Angriffe gegen die Flaggen und Säuberung der erstürmten Basen verleihen dir ebenfalls zusätzliche Belohnungen."
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. Verwende die Batterien, um die Energieknoten auf dem Chip aufzuladen und zu erleuchten. Mit jeder Batterie können zufällig 1 bis 3 Energieknoten erleuchtet werden.|2. Sobald alle 5 Energieknoten einer Reihe oder einer Spalte erleuchtet sind, kannst du die entsprechenden normalen Reihen- oder Spaltenbelohnungen sammeln.|3. Sind alle 5 Energieknoten auf der Diagonale erleuchtet, kannst du die Kernbelohnungen dieser Runde sammeln und zur nächsten Runde gehen.|4. Die normalen Belohnungen und Kernbelohnungen können unten rechts geprüft werden.|5. Erhalten der Batterien: Batterieversorgung, Pollys To-Do-Liste. Die Belohnungen für Pollys To-Do-Liste werden per Mail gesendet.|6. Nach dem Ende des Events werden die Batterien automatisch per Mail recycelt. Jede Batterie entspricht 1000K Münzen."
+GUILD_NEW_WAR_HELP01,"[c][699be9]Teilnahme[-][/c]|1. Die Gilde muss Lv.12 erreicht haben und mindestens 5 Mitglieder haben, die sich in der letzten Woche angemeldet haben.|2. Wenn eine Gilde diese 2 Bedingungen erfüllt, kann ein beliebigies Mitglied auf den Eingang zum Event tippen, und die Gilde nimmt automatisch am Gilden-Wettbewerb teil.|3. Außerhalb der Ruhezeit kann man weder die Gilde verlassen oder auflösen noch Mitglieder kicken. Das Gründen oder Beitreten einer Gilde werden aber nicht beschränkt.|[c][699be9]Regeln[-][/c]|1. Das Event findet in Saisonform und auf allen Servern statt. In jeder Saison finden 8 Wettbewerbe im Kampfmodus 1V1 statt.|2. Jeder Wettbewerb dauert insgesamt 3 Tage, darunter 1 Tag für die Vorbereitung und 2 Tage für den Kampf. Die beiden Gilden haben jeweils 1 Hauptbasis, 3 Mittelbasen und 2 Frontbasen. In jeder Basis gibt es Flaggen, die von Gildenmitgliedern verteidigt werden müssen.|3. Die ganze Saison wird in 3 Phasen aufgeteilt: Ruhezeit, Vorbereitungsphase und Kampfphase. Zu Beginn und zum Ende der Saison haben die Gilden jeweils eine Ruhezeit von 3 und 4 Tagen. Ansonsten ist der wöchentliche Zeitplan wie folgt:|Montag ---- Ruhezeit. Du kannst die Gilden-Rangliste und den Kampfverlauf der vergangenen Saisons prüfen.|Dienstag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Mittwoch, Donnerstag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|Freitag ---- Vorbereitungsphase. Du kannst deine Mädchen zur Verteidigung deiner Gilde aufstellen und anpassen.|Samstag, Sonntag ---- Kampfphase. Die beiden Gilden kämpfen gegeneinander, um den Wettbewerb zu gewinnen.|4. Zu Beginn der Kampfphase werden die aufgestellten Teams der Gilden-Mitglieder nach Kampfkraft geordnet zu Hauptbasis, Mittelbasen und zuletzt Frontbasen entsandt. Gildenleiter und Stellvertreter können die Platzierung der Aufstellungen ändern. Gewöhnliche Mitglieder können ihre eigenen Verteidigungsaufstellungen frei anpassen und speichern. Nach dem Speichern musst du eigenhändig aktualisieren.|5. In der Kampfphase können alle Mitglieder die Flaggen der gegnerischen Gilde angreifen. Ist die Flagge von den gegnerischen Mitgliedern geschützt, dann müssen sie zunächst besiegt werden. Sind alle Flaggen einer Basis zerstört, ist die Erstürmung abgeschlossen. Sobald deine Gilde eine beliebige Frontbasis erstürmt hat, kann eine Mittelbasis angegriffen werden. Wenn eine Mittelbasis erstürmt wurde, kann die Hauptbasis angegriffen werden. Nachdem alle Basen erstürmt worden sind, kann deine Gilde eine beliebige Basis säubern, um zusätzliche Gilden-Punkte und persönliche Beiträge zu erhalten.|6. Nach dem Ende des Wettbewerbs wird ein Kampfergebnis basierend auf den erhaltenen Gilden-Punkten der beiden Gilden erstellt. Wer die meisten Gilden-Punkte erworben hat, der gewinnt den Wettbewerb. Bei gleichen Gildenpunkten gewinnt die Gilde, deren Gesamtverteidigungskraft höher liegt.|[c][699be9]Gilden-Match & Rangliste[-][/c]|1. Den Gilden, die zum ersten Mal am Gilden-Wettbewerb teilnehmen, wird basierend auf der Höchstkampfkraft aller Mitglieder eine bestimmte Anzahl an Gilden-Punkten verliehen. Anderen Gilden erhalten Gilden-Punkte basierend auf ihrem Rang im letzten Gilden-Wettbewerb. Je höher der Rang ist, desto mehr Gilden-Punkte erhält die Gilde zu Beginn des neuen Wettbewerbs.|2. Die Gilden-Rangliste ist durch die aktuellen Gilden-Punkten aller Gilden gegeben. Haben 2 Gilden die gleiche Anzahl von Gilden-Punkten erworben, dann erhält die Gilde, die diese Gilden-Punkte zuerst erworben hat, den höheren Rang.|3. Bei der Gegnerermittlung werden Gilden mit einer vergleichbaren Anzahl von Gilden-Punkten zufällig ausgewählt, gegeneinader anzutreten.|[c][699be9]Gilden-Punkte[-][/c]|1. Die Zerstöung einer Flagge in Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 100, 150 und 300 Gilden-Punkte.|2. Das Erstürmen einer Frontbasis, Mittelbasis oder Hauptbasis verleiht der Gilde jeweils 500, 1000 und 2000 Gilden-Punkte.|3. Sieg und Niederlage verleihen der Gilde jeweils 2000 und1000 Gilden-Punkte.|4. Bei jeder Säuberung erhält die Gilde 10 Gilden-Punkte.|[c][699be9]Persönliche Beiträge[-][/c]|1. Beim Angriff auf eine Verteidigungsaufstellung finden 3 aufeinanderfolgende Kämpfe statt. Grundsätzlich erhältst du immer 15 persönliche Beiträge. 0/1/2/3 Sieg(e) entspricht jeweils 15/15/20/20 persönlichen Beiträgen.|2. Jeder Angriff gegen die Flaggen verleiht dir 15 persönliche Beiträge.|3. Bei jeder Säuberung erhältst du 5 persönliche Beiträge.|[c][699be9]Belohnungen[-][/c]|1. Gilden-Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die die Gilde verteidigt und persönliche Beiträge erworben haben, entsprechende Gilden-Belohnungen per Mail gesendet.|2. Persönliche Belohnungen zum Wettbewerb: Nach dem Ende jedes Wettbewerbs werden den Mitgliedern, die persönliche Beiträge erworben haben, entsprechende persönliche Belohnungen per Mail gesendet.|3. Saisonbelohnungen zum Gilden-Rang: Nach dem Ende der Saison werden den Mitgliedern, die ihre Gilden verteidigt und persönliche Beiträge erworben haben, basierend auf dem Gilden-Rang entsprechende Saisonbelohnungen per Mail gesendet.|4. Kämpfe gegen Gegner, Angriffe gegen die Flaggen und Säuberung der erstürmten Basen verleihen dir ebenfalls zusätzliche Belohnungen."
 GUILD_NEW_WAR_TIPS01,Ruhezeit beendet. Ein wertvoller Gegner wird gesucht...
 GUILD_NEW_WAR_TIPS02,Kampfphase beendet. Die Belohnungen werden abgerechnet...
 GUILD_NEW_WAR_TIPS03,Das kann nur von dem Gildenleiter oder Stellvertreter vorgenommen werden.
@@ -7244,13 +7244,13 @@ GUILD_NEW_WAR_TEXT51,Flaggen-Info
 GUILD_NEW_WAR_TEXT52,Jeder Angriff reduziert die Widerstandskraft um 50
 GUILD_NEW_WAR_TEXT53,Angriffsbelohnung
 GUILD_NEW_WAR_TEXT54,Angreifen
-GUILD_NEW_WAR_TEXT55,Persönliche Beiträge +{1}
+GUILD_NEW_WAR_TEXT55,Persönliche Beiträge  [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT56,Belohnungen
-GUILD_NEW_WAR_TEXT57,Energie des gegnerischen Verteidigers -{1}
+GUILD_NEW_WAR_TEXT57,Energie des Verteidigers [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT58,{1}. Wettbewerb
-GUILD_NEW_WAR_TEXT59,Pers. Beiträge
-GUILD_NEW_WAR_TEXT60,Rang (in der Gilde)
-GUILD_NEW_WAR_TEXT61,Gilden-Punkte +{1}
+GUILD_NEW_WAR_TEXT59,Rang (in der Gilde)
+GUILD_NEW_WAR_TEXT60,Persönliche Beiträge
+GUILD_NEW_WAR_TEXT61,Gilden-Punkte [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT62,Die Belohnungen werden per Mail gesendet
 GUILD_NEW_WAR_TEXT63,{1} hat die Flagge Nr.{3} der {2} angegriffen und die Energie des Verteidigers um {4} reduziert.
 GUILD_NEW_WAR_TEXT64,{1} hat die Flagge Nr.{3} der {2} angegriffen und die Widerstandskraft der Flagge um {4} reduziert.
@@ -7279,18 +7279,18 @@ QUICK_FORMATION_TEXT27,Stelle mindestens 1 Mädchen auf
 GUILD_NEW_WAR_TEXT79,Keine Rangliste vorhanden
 GUILD_NEW_WAR_HELP02,"1. In allen Basen werden jeweils mehrere Flaggen aufgerichtet und jede Flagge kann von einem Mitglied verteidigt werden. Zu Beginn hat der Verteidiger 200 Energie.|2. Beim Angriff auf den Verteidiger einer Flagge finden 3 aufeinanderfolgende Kämpfe statt. Die Energie des Verteidigers wird bei jedem Angriff um mindestens 5 reduziert und jeder Sieg des Angriffsteams senkt die Energie des Verteidigers um weitere 5.|3. Ist die Energie des Verteidigers auf 0 gefallen, wird er besiegt und die Flagge zerstört. Danach können die anderen Flaggen angegriffen werden. Jeder Angriff reduziert die Widerstandskraft der Flagge um einen bestimmten Wert. Ist die Widerstandskraft der Flagge auf 0 gefallen, gilt sie als zerstört.|4. Sind alle Flaggen einer Basis zerstört, gilt die Basis als erstürmt. Sind alle Basen erstürmt, kann die Angriffsgilde eine beliebige Basis säubern.|5. In der Kampfphase erhältst du täglich 10x die Möglichkeit zu kämpfen, Flaggen anzugreifen und erstürmte Basen zu säubern.|6. Jedes Mal wenn eine gegnerische Mittelbasis erstürmt ist, erhalten alle Mädchen der eigenen Gilde im aktuellen Wettbewerb folgende Buffs: Angriff +10%%, HP +20%%, Reduzierung aller Schäden +10%%. Die Buffs können gestappelt werden und werden nach dem Ende des Wettbewerbs deaktiviert. Sobald die gegnerische Hauptbasis erstürmt ist, werden die jeweiligen erhaltenen Gilden-Punkte für die Dauer des Wettberwerbs um 50 erhöht.|7. Gildenleiter oder Stellvertreter können eine beliebige Basis als Hauptziel zum Sturmangriff bestimmen. Beim Angriff gegen diese Basis werden alle Schäden aller Mädchen der Gilde um 10%% erhöht. Nachdem eine Basis als Hauptziel für einen Sturmangriff bestimmt wurde, muss die Gilde 12 Stunden warten, um die Basis zu wechseln."
 GUILD_NEW_WAR_TEXT80,{1} hat die Flagge Nr.{3} der gegnerischen {2} zerstört
-ACTIVITY_PIRATE_TEXT01,Fertig gelesene Spieler
-ACTIVITY_PIRATE_TEXT02,Server-\nPaket
+ACTIVITY_PIRATE_TEXT01,Server-Lesefortschritt
+ACTIVITY_PIRATE_TEXT02,Server-\nPakete
 ACTIVITY_PIRATE_TEXT03,Sammlungsfortschritt
 ACTIVITY_PIRATE_TEXT04,Gelesen:
 ACTIVITY_PIRATE_TEXT05,Raid
-ACTIVITY_PIRATE_TEXT06,Zum Sammeln
-ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
-ACTIVITY_PIRATE_SHOP_TEXT01,Sammeln
+ACTIVITY_PIRATE_TEXT06,Prüfen
+ACTIVITY_PIRATE_HELP,"1. Tippe auf die Avatars der Mädchen auf der Event-Seite, um Storys auszulösen.|2. Es gibt im Event 5 Orte: Meerespalast, Strand, Neritische Zone, Piratenschiff und Drachenpalast. An jedem Ort können Storys entsperrt und gelesen werden. Sobald alle Storys an einem Ort fertig gelesen sind, kannst du den Raid an diesem Ort durchführen.|3. Sobald die geforderte Anzahl an Spielern, die alle Storys fertig gelesen haben, erreicht ist, wird das Server-Paket entsperrt, damit großzügige Belohnungen gratig gesammelt werden können!|4. Zum Raid wird jedesmal 1 Kompass benötigt. Durch den Raid erhältst du 20 Piratenmünzen und 1 Raid-Belohnung des Ortes.|5. Bei jedem Raid gibt es noch eine 20%%ige Wahrscheinlichkeit, eine Schatztruhe zu erhalten. Die Schatztruhen von verschiedenen Qualitäten gewähren dir eine bestimmte Menge an Piratenmünzen. Eine Holzschatztruhe gibt dir 30 Piratenmünzen, Eisenschatztruhe 60, Silberschatztruhe 80, Goldschatztruhe 100 und Luxus-Schatztruhe 120.|6. Erhalten der Kompasse: Server-Paket, Tägliche Mail, Willkommenskapseln, Entdecker-Pakete, Geschenk zum Monatsanfang, Geschenke des Grafen, Superpakete, Kostümpakete, Glückspakete.|7. Die entsperrten Storys können oben links auf der Event-Seite erneut gelesen werden.|8. Nach dem Ende des Events werden die Eventmaterialien automatisch per Mail recycelt. Jeder Kompass entspricht 500K Münzen und jede Piratenmünze 1000K."
+ACTIVITY_PIRATE_SHOP_TEXT01,Sammlungs-\nbelohnungen
 ACTIVITY_PIRATE_SHOP_TEXT02,Gesperrt
-ACTIVITY_PIRATE_SHOP_TEXT03,Geheimer Schatzkammer
-ACTIVITY_PIRATE_SHOP_TEXT04,Normaler Schatzkammer
-ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT03,Schatzkammer
+ACTIVITY_PIRATE_SHOP_TEXT04,Willst du sicher {1} Piratenmünzen zum Kauf verwenden?
+ACTIVITY_PIRATE_SHOP_TEXT05,"1. Durch den Raid unter ""Schatzsuche in der Tiefsee"" erhältst du die Piratenmünzen.|2. Im Drachenpalast kannst du deine Piratenmünzen gegen allerlei Belohnungen austauschen.|3. Basierend auf der Anzahl an verwendeten Piratenmünzen werden weitere Schatzkammern mit neuen Belohnungen entsperrt.|4. Unter ""Sammlungs-Belohnungen"" können die Sammlungs-Fortschritte aller Schatztruhen und die Belohnungen geprüft werden.|5. Die Sammlungs-Belohnungen können nur einmal gesammelt werden."
 GUILD_NEW_WAR_TIPS08,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs kann man die Gilde nicht verlassen.
 GUILD_NEW_WAR_TIPS09,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs können die Mitglieder nicht gekickt werden.
 GUILD_NEW_WAR_TIPS10,Während der Vorbereitungsphase oder der Kampfphase des Gilden-Wettbewerbs kann die Gilde nicht aufgelöst werden.
@@ -7311,12 +7311,38 @@ GUILD_NEW_WAR_TIPS11,Während der Kampfphase können die Verteidigungsaufstellun
 GUILD_NEW_WAR_TIPS12,Erstürme zunächst eine beliebige Frontbasis
 GUILD_NEW_WAR_TIPS13,Erstürme zunächst eine beliebige Mittelbasis
 ACTIVITY_PIRATE_PLACE1,Meerespalast
-ACTIVITY_PIRATE_PLACE2,Neritische Zone
-ACTIVITY_PIRATE_PLACE3,Piratenschiff
-ACTIVITY_PIRATE_PLACE4,Strand
+ACTIVITY_PIRATE_PLACE3,Neritische Zone
+ACTIVITY_PIRATE_PLACE4,Piratenschiff
+ACTIVITY_PIRATE_PLACE2,Strand
 ACTIVITY_PIRATE_PLACE5,Drachenpalast
 GUILD_NEW_WAR_TEXT94,Rang
-GUILD_NEW_WAR_TEXT95,Widerstandskraft -{1}
+GUILD_NEW_WAR_TEXT95,Widerstandskraft der Flagge [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT96,Gilde aufgelöst
 GUILD_NEW_WAR_TEXT97,Kampfkraft↑
 GUILD_NEW_WAR_TEXT98,Kampfkraft↓
+MONTH_CARD_EXTRA_TEXT01,*Tägliche neue Jobaufgaben [c][e28002]+1[-][/c]
+MONTH_CARD_EXTRA_TEXT02,*Dias fürs Abschließen aller täglichen Aufgaben [c][e28002]+100[-][/c]
+MONTH_CARD_EXTRA_TEXT03,*Zusatzbelohnungen für VIP-Spieler
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT01,Runde 1~3
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT02,Runde 4~8
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT03,Ab Runde 9
+ACTIVITY_PIRATE_SHOP_TEXT06,(Verwendete Münzen: [c][fdc97d]{1}/{2}[-][/c])
+ACTIVITY_PIRATE_TEXT07,Rückblick
+ACTIVITY_PIRATE_TEXT08,Belohnungen zum Raid
+ACTIVITY_PIRATE_TEXT09,Raid-Belohnungen
+ACTIVITY_PIRATE_TEXT10,Schatztruhen
+ACTIVITY_PIRATE_TEXT11,Gib die Anzahl des Raids ein
+ACTIVITY_PIRATE_TEXT12,Sichere [c][db7224]Schatztruhe[-][/c] in [c][db7224]{1}x[-][/c] Raid(s)
+INVITATION_TEXT24,"Schließe das 20. Kapitel des Wachstumsbuchs ab, um es zu entsperren."
+ACTIVITY_PIRATE_SHOP_TEXT13,{1} - Raid
+ACTIVITY_PIRATE_BOX1,Schatzkammer Lv.1
+ACTIVITY_PIRATE_BOX2,Schatzkammer Lv.2
+ACTIVITY_PIRATE_BOX3,Schatzkammer Lv.3
+ACTIVITY_PIRATE_BOX4,Schatzkammer Lv.4
+ACTIVITY_PIRATE_BOX5,Schatzkammer Lv.5
+ACTIVITY_PIRATE_BOX6,Schatzkammer Lv.6
+MONTH_CARD_EXTRA_TEXT04,Vorteile
+ACTIVITY_PIRATE_TEXT13,"Willst du sicher {1} Kompass(e) zum Raid am Ort ""{2}"" verwenden?"
+ACTIVITY_PIRATE_TEXT14,Die Server-Pakete werden noch nicht entsperrt!
+ACTIVITY_PIRATE_TEXT15,Gratis
+ACTIVITY_YEAR_FUND_INNER_TITLE2,Belohnungsvorschau

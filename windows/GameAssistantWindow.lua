@@ -481,14 +481,20 @@ function GameAssistantWindow:updateMidasPart()
 			maxCallback = function ()
 				self.presetData.midas.paid = data.left_canBuy + buyTimes
 				labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:buyMidasTotalCost(self.presetData.midas.paid))
-			end,
-			minCallback = function ()
-				self.presetData.midas.paid = buyTimes
-				labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. 0
+				local msg = messages_pb.log_partner_data_touch_req()
+				msg.touch_id = xyd.DaDian.GAMEASSISTANT
+				msg.desc = tostring(self.presetData.midas.paid)
+
+				xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
 			end,
 			callback = function (num)
 				self.presetData.midas.paid = num
 				labelCost.text = xyd.getRoughDisplayNumber(xyd.models.backpack:getItemNumByID(xyd.ItemID.CRYSTAL)) .. "/" .. xyd.getRoughDisplayNumber(self.model:buyMidasTotalCost(self.presetData.midas.paid))
+				local msg = messages_pb.log_partner_data_touch_req()
+				msg.touch_id = xyd.DaDian.GAMEASSISTANT
+				msg.desc = tostring(self.presetData.midas.paid)
+
+				xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)
 			end
 		})
 		self.midasSelectNum:setFontSize(24, 24)

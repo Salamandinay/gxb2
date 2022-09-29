@@ -1,4 +1,5 @@
 local NewbeeFundPopupWindow = class("NewbeeFundPopupWindow", import(".BaseWindow"))
+local CountDown = import("app.components.CountDown")
 
 function NewbeeFundPopupWindow:ctor(name, params)
 	NewbeeFundPopupWindow.super.ctor(self, name, params)
@@ -6,17 +7,70 @@ function NewbeeFundPopupWindow:ctor(name, params)
 		key = "newbee_fund_popup_check",
 		value = xyd.getServerTime()
 	})
+
+	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_NEWBEE_FUND)
 end
 
 function NewbeeFundPopupWindow:initWindow()
 	self:getUIComponent()
 
+	UIEventListener.Get(self.buyBtn_).onClick = function ()
+		xyd.WindowManager.get():closeWindow(self.name_)
+		xyd.WindowManager.get():openWindow("activity_window", {
+			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_NEWBEE_FUND3)
+		})
+	end
+
+	xyd.setUISpriteAsync(self.logoImg_, nil, "activity_new_newbee_fund_popup_logo_" .. xyd.Global.lang)
+	CountDown.new(self.timeLabel_, {
+		duration = self.activityData:getUpdateTime() - xyd.getServerTime()
+	})
+
+	self.endLabel_.text = __("END")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.endLabel_.transform:SetSiblingIndex(0)
+	end
+
 	self.buyBtnLabel_.text = __("BUY")
 	self.descLabel_.text = __("ACTIVITY_NEWBEE_FUND_TEXT02")
+	self.tipLabel_.text = __("ACTIVITY_NEWBEE_FUND_TEXT03")
+	self.totalLabel_.text = __("ACTIVITY_NEWBEE_FUND_TEXT04")
+	local previewIDs = xyd.tables.miscTable:split2Cost("activity_newbee_fund_4items_preview2", "value", "|")
+	local infos = {}
 
-	if xyd.Global.lang then
-		self.descLabel_.fontSize = 20
+	for _, itemID in ipairs(previewIDs) do
+		infos[tonumber(itemID)] = 0
 	end
+
+	local ids = xyd.tables.activityNewbeeFundTable2:getIds()
+
+	for _, id in pairs(ids) do
+		local award = xyd.tables.activityNewbeeFundTable2:getAwards(id)
+
+		if infos[award[1]] then
+			infos[award[1]] = infos[award[1]] + award[2]
+		end
+	end
+
+	self.crystalNum_.text = "45000"
+
+	for _, itemID in ipairs(previewIDs) do
+		if infos[tonumber(itemID)] ~= 0 then
+			xyd.getItemIcon({
+				show_has_num = true,
+				showGetWays = false,
+				scale = 0.7962962962962963,
+				notShowGetWayBtn = true,
+				itemID = tonumber(itemID),
+				num = infos[tonumber(itemID)],
+				uiRoot = self.awardGroup_,
+				wndType = xyd.ItemTipsWndType.ACTIVITY
+			})
+		end
+	end
+
+	self.awardGroup_:GetComponent(typeof(UILayout)):Reposition()
 end
 
 function NewbeeFundPopupWindow:playOpenAnimation(callback)
@@ -42,16 +96,12 @@ function NewbeeFundPopupWindow:getUIComponent()
 	self.buyBtn_ = goTrans:NodeByName("buyBtn").gameObject
 	self.buyBtnLabel_ = goTrans:ComponentByName("buyBtn/label", typeof(UILabel))
 	self.descLabel_ = goTrans:ComponentByName("descLabel", typeof(UILabel))
-
-	UIEventListener.Get(self.buyBtn_).onClick = function ()
-		xyd.WindowManager.get():closeWindow(self.name_)
-		xyd.WindowManager.get():openWindow("activity_window", {
-			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_NEWBEE_FUND)
-		})
-	end
-
-	xyd.setUISpriteAsync(self.logoImg_, nil, "activity_newbee_fund_popup_logo_" .. xyd.Global.lang)
-	xyd.setUISpriteAsync(self.bgImg_, nil, "activity_newbee_fund_popup_bg", nil, , true)
+	self.tipLabel_ = goTrans:ComponentByName("tipLabel", typeof(UILabel))
+	self.timeLabel_ = goTrans:ComponentByName("timeGroup/timeLabel", typeof(UILabel))
+	self.endLabel_ = goTrans:ComponentByName("timeGroup/endLabel", typeof(UILabel))
+	self.awardGroup_ = goTrans:NodeByName("awardGroup").gameObject
+	self.totalLabel_ = goTrans:ComponentByName("totalGroup/totalLabel", typeof(UILabel))
+	self.crystalNum_ = goTrans:ComponentByName("totalGroup/crystalNum", typeof(UILabel))
 end
 
 function NewbeeFundPopupWindow:didClose()

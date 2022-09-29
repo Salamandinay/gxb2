@@ -290,9 +290,9 @@ function ActivityGoldfish:summon(num)
 		return
 	end
 
-	local start_time = self.activityData:startTime()
+	local end_time = self.activityData:getEndTime()
 
-	if xyd.getServerTime() - start_time > xyd.DAY_TIME * 7 then
+	if end_time - xyd.getServerTime() <= xyd.DAY_TIME then
 		xyd.alertTips(__("ACTIVITY_GOLDFISH_TEXT06"))
 
 		return

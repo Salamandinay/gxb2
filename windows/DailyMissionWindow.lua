@@ -128,6 +128,11 @@ function DailyMissionItem:onClickGo()
 	end
 
 	local goWin = xyd.tables.dailyMissionTable:getGoWindow(self.missionInfo_.mission_id)
+
+	if goWin and goWin == "arena_window" and xyd.models.arena:getIsSettlementing(true) then
+		return
+	end
+
 	local params = xyd.tables.dailyMissionTable:getGoParams(self.missionInfo_.mission_id)
 
 	xyd.WindowManager.get():closeWindow("daily_mission_window", function ()

@@ -42,7 +42,6 @@ end
 function MonthCard:getUIComponent()
 	local go = self.go
 	self.helpBtn = go:NodeByName("helpBtn").gameObject
-	self.awardBtn = go:NodeByName("awardBtn").gameObject
 	local groupMain = go:NodeByName("groupMain").gameObject
 
 	groupMain:Y(-566 + self.scale_num_ * 62)
@@ -72,7 +71,11 @@ function MonthCard:getUIComponent()
 		self["discountTime" .. i] = month_card:NodeByName("discountTime").gameObject
 		self["textLabel" .. i] = self["discountTime" .. i]:ComponentByName("textLabel", typeof(UILabel))
 		self["timeLabel" .. i] = self["discountTime" .. i]:ComponentByName("timeLabel", typeof(UILabel))
+		self["privilegeLabel" .. i] = month_card:ComponentByName("privilegeLabel", typeof(UILabel))
+		self["labelTip" .. i] = month_card:ComponentByName("privilegeLabel/labelTip", typeof(UILabel))
 	end
+
+	self.awardBtn = groupMain:NodeByName("month_card_2").gameObject:NodeByName("awardBtn").gameObject
 end
 
 function MonthCard:layout()
@@ -89,6 +92,7 @@ function MonthCard:layout()
 		self["labelEveryday_" .. i].text = __("MONTH_CARD_TEXT002")
 		self["labelDiscount" .. i].text = "66%"
 		self["labelOff" .. i].text = "OFF"
+		self["labelTip" .. i].text = __("MONTH_CARD_EXTRA_TEXT04")
 
 		self:setLimitDiscount(i)
 		self:setBtnState(i)
@@ -110,10 +114,17 @@ function MonthCard:layout()
 		end
 	end
 
-	self.labelGetNum_1.text = "350"
-	self.labelGetNum_2.text = "900"
-	self.labelEverydayNum_1.text = "85"
-	self.labelEverydayNum_2.text = "370"
+	self.privilegeLabel1.text = __("MONTH_CARD_EXTRA_TEXT01")
+	self.privilegeLabel2.text = __("MONTH_CARD_EXTRA_TEXT02") .. "\n" .. __("MONTH_CARD_EXTRA_TEXT03")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.privilegeLabel1.fontSize = 15
+	end
+
+	self.labelGetNum_1.text = "500"
+	self.labelGetNum_2.text = "1500"
+	self.labelEverydayNum_1.text = "150"
+	self.labelEverydayNum_2.text = "450"
 end
 
 function MonthCard:setLimitDiscount(i)

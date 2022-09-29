@@ -60,8 +60,8 @@ function ActivitySportsRank1Window:getUIComponent()
 	local content = main:NodeByName("content").gameObject
 	self.labelDesc = content:ComponentByName("labelDesc", typeof(UILabel))
 	self.clock = content:NodeByName("clock").gameObject
-	local ddl1 = content:ComponentByName("ddl1", typeof(UILabel))
-	self.ddl1 = CountDown.new(ddl1)
+	self.ddl1UILabel = content:ComponentByName("ddl1", typeof(UILabel))
+	self.ddl1 = CountDown.new(self.ddl1UILabel)
 	local ddl2 = content:ComponentByName("ddl2Num", typeof(UILabel))
 
 	ddl2:SetActive(false)
@@ -126,6 +126,10 @@ function ActivitySportsRank1Window:updateDDL1()
 		self.ddl1:setInfo({
 			duration = endTime
 		})
+	else
+		self.clock.gameObject:SetActive(false)
+
+		self.ddl1UILabel.text = " "
 	end
 end
 

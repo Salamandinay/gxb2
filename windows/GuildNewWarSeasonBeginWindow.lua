@@ -23,8 +23,9 @@ function GuildNewWarSeasonBeginWindow:getUIComponent()
 	self.groupAction = winTrans:NodeByName("groupAction").gameObject
 	self.midGroup = self.groupAction:NodeByName("midGroup").gameObject
 	self.labelAwardText = self.midGroup:ComponentByName("labelAwardText", typeof(UILabel))
-	self.imgS = self.midGroup:ComponentByName("imgS", typeof(UISprite))
-	self.imgNum = self.midGroup:ComponentByName("imgNum", typeof(UISprite))
+	self.seasonCon = self.midGroup:NodeByName("seasonCon").gameObject
+	self.seasonConLayout = self.midGroup:ComponentByName("seasonCon", typeof(UILayout))
+	self.seasonIcon = self.seasonCon:ComponentByName("seasonIcon", typeof(UISprite))
 end
 
 function GuildNewWarSeasonBeginWindow:registerEvent()
@@ -32,8 +33,22 @@ end
 
 function GuildNewWarSeasonBeginWindow:layout()
 	self.labelAwardText.text = __("GUILD_NEW_WAR_TEXT05")
+	local season = tostring(self.season)
 
-	xyd.setUISpriteAsync(self.imgNum, nil, "guild_new_war2_" .. self.season)
+	self.seasonIcon.gameObject.transform:SetSiblingIndex(0)
+
+	for i = 1, #season do
+		local tmp = NGUITools.AddChild(self.seasonCon.gameObject, self.seasonIcon.gameObject)
+		local strNum = string.sub(season, i, i)
+		local tmpUISprite = tmp:GetComponent(typeof(UISprite))
+
+		xyd.setUISpriteAsync(tmpUISprite, nil, "guild_new_war2_" .. strNum)
+		tmp.transform:SetSiblingIndex(i)
+		tmp:SetLocalScale(1, 1, 1)
+	end
+
+	xyd.setUISpriteAsync(self.seasonIcon, nil, "guild_new_war2_S")
+	self.seasonConLayout:Reposition()
 	self.activityData:getRedMarkState()
 end
 

@@ -300,7 +300,7 @@ function ChatWindow:initPrivatePage()
 end
 
 function ChatWindow:setEmotionVisible()
-	self.groupEmotion.visible = false
+	self.groupEmotion:SetActive(false)
 end
 
 function ChatWindow:changeData(isTouchTap)
@@ -464,10 +464,13 @@ function ChatWindow:onCopyPlayerName(event)
 end
 
 function ChatWindow:onHideEmotion()
+	print("=========onHideEmotion   ========")
 	self.groupEmotion:SetActive(false)
 end
 
 function ChatWindow:onEmo()
+	print("============   onEmo  =============")
+
 	local v = not self.groupEmotion.activeSelf
 
 	self.groupEmotion:SetActive(v)

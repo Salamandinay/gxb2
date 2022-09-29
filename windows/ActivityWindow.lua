@@ -1793,6 +1793,12 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = function ()
 		return require("app.windows.activity.ActivityRepairMission")
+	end,
+	[xyd.ActivityID.ACTIVITY_PIRATE] = function ()
+		return require("app.windows.activity.ActivityPirate")
+	end,
+	[xyd.ActivityID.ACTIVITY_PIRATE_SHOP] = function ()
+		return require("app.windows.activity.ActivityPirateShop")
 	end
 }
 

@@ -780,7 +780,21 @@ function TavernWindow:initTimer()
 	local timeDesc = self.content_.transform:ComponentByName("topPos/labelCon/labelTimeTips", typeof(UILabel))
 	local labelCon_layout = self.content_.transform:ComponentByName("topPos/labelCon", typeof(UILayout))
 	self.timerLabel_ = self.content_.transform:ComponentByName("topPos/labelCon/labelTimeCount", typeof(UILabel))
-	timeDesc.text = __("PUB_MISSION_TIME", #TavernModel:getMissions(), xyd.tables.vipTable:getPubMissionNum(backpackModel:getVipLev()))
+	local miniMonthCard = xyd.models.activity:getActivity(xyd.ActivityID.MINI_MONTH_CARD)
+	local endTime = miniMonthCard.detail_.charges[2].end_time or 0
+
+	if miniMonthCard.detail_.charges[1] and miniMonthCard.detail_.charges[1].end_time then
+		endTime = miniMonthCard.detail_.charges[1].end_time
+	end
+
+	local days = math.floor((endTime - xyd:getServerTime() + xyd:getServerTime() % 86400) / 86400)
+	local miniMonthCardNum = 0
+
+	if days > 0 then
+		miniMonthCardNum = 1
+	end
+
+	timeDesc.text = __("PUB_MISSION_TIME", #TavernModel:getMissions(), xyd.tables.vipTable:getPubMissionNum(backpackModel:getVipLev()) + miniMonthCardNum)
 	local duration = TavernModel:getEndTime() - xyd.getServerTime()
 	self.duration_ = duration
 	self.timerLabel_.text = xyd.secondsToString(self.duration_)

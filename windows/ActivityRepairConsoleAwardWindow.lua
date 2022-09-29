@@ -159,10 +159,12 @@ function ActivityRepairConsoleAwardWindow:initItems(parentGo, awardsData, scroll
 
 			self.awardRoundText = awardItemList:ComponentByName("title_bg/title_label", typeof(UILabel))
 
-			if id == self.maxRound then
-				self.awardRoundText.text = __("ACTIVITY_REPAIR_CONSOLE_TEXT08", id)
+			if id == 1 then
+				self.awardRoundText.text = __("ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT01")
+			elseif id == 2 then
+				self.awardRoundText.text = __("ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT02")
 			else
-				self.awardRoundText.text = __("ACTIVITY_REPAIR_CONSOLE_TEXT07", id)
+				self.awardRoundText.text = __("ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT03")
 			end
 		end
 	end

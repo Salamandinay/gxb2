@@ -7,7 +7,6 @@ function ActivityRepairConsoleWindow:ctor(parentGO, params)
 	self.missionItems_ = {}
 	self.itemIcon = {}
 
-	xyd.models.activity:reqActivityByID(xyd.ActivityID.ACTIVITY_REPAIR_CONSOLE)
 	ActivityRepairConsoleWindow.super.ctor(self, parentGO, params)
 end
 
@@ -67,7 +66,7 @@ function ActivityRepairConsoleWindow:updateAwards()
 				num = award[2],
 				uiRoot = self["item" .. i],
 				scale = Vector3(scale / 108, scale / 108, 1)
-			})
+			}, xyd.ItemIconType.ADVANCE_ICON)
 		end
 	end
 end
@@ -139,8 +138,6 @@ function ActivityRepairConsoleWindow:register()
 
 					for _, i in pairs(self.activityData.activateLines) do
 						self:waitForTime(1.5333333333333334, function ()
-							self:updateLine(i, true)
-
 							if i >= 1 and i <= 5 then
 								self:playLineEffect(i, "texiao01", 1)
 								self:playAwardEffect(i, "texiao01", 1)
@@ -155,18 +152,21 @@ function ActivityRepairConsoleWindow:register()
 								self:playLineEffect(i, "texiao03", 1)
 								self:playAwardEffect(i, "texiao03", 1)
 							end
+
+							self:waitForTime(0.8333333333333334, function ()
+								self:updateLine(i, true)
+							end)
 						end)
 					end
 				end
 
-				self:waitForTime((55 + lineTime) / 30, function ()
+				self:waitForTime((50 + lineTime) / 30, function ()
 					if #surprise ~= 0 then
 						xyd.openWindow("gamble_rewards_window", {
 							wnd_type = 2,
 							isNeedCostBtn = false,
 							data = surprise,
 							callback = function ()
-								xyd.itemFloat(surprise)
 								xyd.itemFloat(items)
 
 								if self.activityData.jumpToNextRound then
@@ -197,6 +197,7 @@ function ActivityRepairConsoleWindow:register()
 					end
 
 					self:updateMap()
+					self:updateAwards()
 					self:setButtons(true)
 				end)
 			else

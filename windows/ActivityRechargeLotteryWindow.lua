@@ -128,12 +128,17 @@ function ActivityRechargeLotteryWindow:initUIComponent()
 				wndType = xyd.ItemTipsWndType.ACTIVITY
 			})
 
-			if self.activityData.detail.awards[i] == 1 then
+			if self.activityData.detail.awards[id] == 1 then
 				self.icons[i]:setChoose(true)
 			end
-		elseif self.activityData.detail.awards[i] == 1 then
-			self["award" .. i]:NodeByName("mask").gameObject:SetActive(true)
-			self["award" .. i]:NodeByName("imgSelect").gameObject:SetActive(true)
+		else
+			local pos = i
+			local id = xyd.tables.activityLotteryTable:getIdByPos(pos)
+
+			if self.activityData.detail.awards[id] == 1 then
+				self["award" .. i]:NodeByName("mask").gameObject:SetActive(true)
+				self["award" .. i]:NodeByName("imgSelect").gameObject:SetActive(true)
+			end
 		end
 
 		self["awardChoose" .. i]:SetActive(false)
@@ -250,7 +255,7 @@ function ActivityRechargeLotteryWindow:register()
 			local id = xyd.tables.activityLotteryTable:getIdByPos(i)
 
 			xyd.WindowManager:get():openWindow("activity_recharge_lottery_box_detail_window", {
-				type = xyd.tables.activityLotteryTable:getType2(i),
+				type = xyd.tables.activityLotteryTable:getType2(id),
 				boxID = id
 			})
 		end

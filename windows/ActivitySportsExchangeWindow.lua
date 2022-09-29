@@ -109,7 +109,7 @@ function ActivitySportsExchangeWindow:onTouch(index)
 end
 
 function ActivitySportsExchangeWindow:initTask()
-	if self.activityData:isFinalDay() then
+	if self.activityData:isFinalDay() or self.activityData:isFinalBeforeDay() then
 		self.groupNone_:SetActive(true)
 
 		return

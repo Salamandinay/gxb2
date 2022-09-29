@@ -54,6 +54,7 @@ function ItemBuyWindow:initUIComponent()
 	params = {
 		uiRoot = self.groupIcon_,
 		itemID = self.itemParams_.itemID,
+		num = self.itemParams_.num,
 		noClick = self.itemNoClick
 	}
 

@@ -603,6 +603,10 @@ function GameAssistant:reqArenaBattle()
 		end
 	end
 
+	if xyd.models.arena:getIsSettlementing() then
+		return false
+	end
+
 	local msg = messages_pb.arena_fight_batch_req()
 	msg.pet_id = battleInfo.pet_id
 
@@ -1372,7 +1376,9 @@ function GameAssistant:jungeIfCanDoTab1()
 	end
 
 	if self.presetData.arena == true and self.todayHaveDoneData.arena == false then
-		if xyd.models.arena:getIsOld() ~= nil then
+		if xyd.models.arena:getIsSettlementing() then
+			-- Nothing
+		elseif xyd.models.arena:getIsOld() ~= nil then
 			local newArenaStartTimeLeft = xyd.models.arena:getStartTime() + xyd.models.arena:getNewSeasonOpenTime() - xyd.getServerTime()
 
 			if newArenaStartTimeLeft <= 0 or newArenaStartTimeLeft >= xyd.models.arena:getNewSeasonOpenTime() then

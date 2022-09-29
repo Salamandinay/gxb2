@@ -144,7 +144,7 @@ PUB_SPEED_FREE,Free
 PUB_MISSION_COMPLETE2,Finish
 PUB_TICKET_NO_ENOUGH1,You don't have any Internship Scrolls!
 PUB_TICKET_NO_ENOUGH2,Not enough Advanced Internship Scrolls!
-TAVERN_WINDOW_TIPS,"1. Rewards will be given for completing Internships in the given amount of time. Each Girl can only perform 1 task at a time.|2. There is a daily limit for Internships that are automatically refreshed. You can increase this limit by upgrading your VIP level.|3. Internships that have not yet been started can be refreshed. You can spend Gems to refresh Internships that you don't want.|4. You can use Internship Scrolls to get additional Internships (The Internships acquired this way can also be refreshed).|5. You can spend Gems to speed up the process.|6. Odds for refreshing Internships: 1-star quest: 25.6%%, 2-star quest: 27%%, 3-star quest: 23.2%%, 4-star quest: 15%%, 5-star quest: 8%%, 6-star quest: 1%%, 7-star quest: 0.2%%.|Odds for using Internship Scroll: 1-star quest: 20%%, 2-star quest: 27%%, 3-star quest: 35%%, 4-star quest: 18%%.|Odds for using Advance Internship Scroll: 4-star quest: 56%%, 5-star quest: 35%%, 6-star quest: 7%%, 7-star quest: 2%%.|8. Players can own 999 Internship Scrolls and 999 Advance Internship Scrolls at most."
+TAVERN_WINDOW_TIPS,"1. Rewards will be given for completing Internships in the given amount of time. Each Girl can only perform 1 task at a time.|2. There is a daily limit for available Internships. You can increase this limit by upgrading your VIP level or by purchasing Mini Pass.|3. Internships that have not yet been started can be refreshed. You can spend Gems to refresh Internships that you don't want.|4. You can use Internship Scrolls to get additional Internships (The Internships acquired this way can also be refreshed).|5. You can spend Gems to speed up the process.|6. Odds for refreshing Internships: 1-star quest: 25.6%%, 2-star quest: 27%%, 3-star quest: 23.2%%, 4-star quest: 15%%, 5-star quest: 8%%, 6-star quest: 1%%, 7-star quest: 0.2%%.|Odds for using Internship Scroll: 1-star quest: 20%%, 2-star quest: 27%%, 3-star quest: 35%%, 4-star quest: 18%%.|Odds for using Advance Internship Scroll: 4-star quest: 56%%, 5-star quest: 35%%, 6-star quest: 7%%, 7-star quest: 2%%.|8. You can hold 999 Internship Scrolls and 999 Advanced Internship Scrolls at most at the same time."
 ITEM_SUMMON,Summon
 ITEM_SELL,Sell
 ITEM_DETAIL,Details
@@ -488,17 +488,17 @@ BACK_POS,Back
 DEF_PARTNER,Defense Girl
 ATK_PARTNER,Strike Girl
 BATTLE_TIPS,Battle Tips
-MONTH_CARD_TEXT01,Get 900 Gems instantly after purchasing the pass
-MONTH_CARD_TEXT02,Receive 370 Gems each day for the next 30 days
-MONTH_CARD_TEXT03,12K Gems in Total
+MONTH_CARD_TEXT01,Get 1500 Gems instantly after purchasing the pass
+MONTH_CARD_TEXT02,Receive 450 Gems each day for the next 30 days
+MONTH_CARD_TEXT03,15K Gems in Total
 MONTH_CARD_TEXT04,Original Price: $14.99
-MINI_MONTH_CARD_TEXT01,Get 350 Gems instantly after purchasing the pass
-MINI_MONTH_CARD_TEXT02,Receive 85 Gems each day for the next 30 days
-MINI_MONTH_CARD_TEXT03,2900 Gems in Total
+MINI_MONTH_CARD_TEXT01,Get 500 Gems instantly after purchasing the pass
+MINI_MONTH_CARD_TEXT02,Receive 150 Gems each day for the next 30 days
+MINI_MONTH_CARD_TEXT03,5K Gems in Total
 MINI_MONTH_CARD_TEXT04,Original Price: $4.99
 PERSON_CREATE_NAME,Choose a Name
-MONTH_CARD_HELP1,"After purchasing the Monthly Pass, you will immediately receive 900 gems and 750 VIP points.|In addition, you will receive 370 Gems in Mail every day after purchasing, which will last for 30 days.|A combined total of 12000 Gems! This is by far the best deal in the game!|You will get a special discount for your first purchase on Monthly Pass!"
-MONTH_CARD_HELP2,"After purchasing the Pass, you will receive 350 Gems and 250 VIP Exp immediately.|In addition, you will receive 85 Gems in Mail each day for the next 30 days.|The Mini Pass doesn't include daily VIP bonus, which is only awarded with the regular Monthly Pass.|You will get a special discount for your first purchase on Mini Pass!"
+MONTH_CARD_HELP1,"After purchasing the Monthly Pass, you will immediately receive 1500 gems and 750 VIP points.|In addition, you will receive 450 Gems in Mail every day after purchasing, which will last for 30 days.|A combined total of 15000 Gems! Don't miss it out!|You will get a special discount for your first purchase on Monthly Pass!|If a Monthly Pass is active, you can get 100 additional Gems for completing all Daily Tasks each day."
+MONTH_CARD_HELP2,"After purchasing the Pass, you will receive 500 Gems and 250 VIP Exp immediately.|In addition, you will receive 150 Gems in Mail each day for the next 30 days.|The Mini Pass doesn't include daily VIP bonus, which is only awarded with the regular Monthly Pass.|You will get a special discount for your first purchase on Mini Pass!|If a Mini Pass is active, daily limit for Internships that are automatically refreshed will be increased by 1."
 RESET,Reset
 BUY_GIFTBAG_LIMIT,Limit：{1}
 GOTO,Go to
@@ -3695,7 +3695,7 @@ BATTLE_PASS_BUY_LAST_HOUR,{1} Hours Left
 PRIVILEGE_CARD_ACTIVE_AND_LEFT_TIME,"Activated, remaining:"
 PRIVILEGE_CARD_ACTIVE,Activated
 PRIVILEGE_CARD_IN_ACTIVE,Unactivated
-NEW_RECHARGE_TEXT01,Get [c][dd7324]5-Star[-][/c] Hexa for your [c][dd7324]first recharge[-][/c]. You can also get more other rewards in 3 continuous days!
+NEW_RECHARGE_TEXT01,Get [c][dd7324]5-Star[-][/c] Nephilim for your [c][dd7324]first recharge[-][/c]. You can also get more other rewards in 3 continuous days!
 NEW_RECHARGE_TEXT02,Powerful Endurance and Battle Expert
 NEW_RECHARGE_TEXT03,Preview
 NEW_RECHARGE_TEXT04,AI Girl---Turin\nFearless Juggernaut!
@@ -3835,8 +3835,8 @@ OLD_SCHOOL_SHOP_TEXT4,Reach {4} total points in {1} season(s).({2}/{3})
 OLD_SCHOOL_SHOP_TEXT5,Level 1|Level 2|Level 3|Level 4|Level 5
 OLD_SCHOOL_SHOP_TEXT6,Level 1|Level 2|Level 3|Level 4|Level 5|Level 6|Level 7|Level 8|Level 9|Level 10|Level 11|Level 12
 OLD_SCHOOL_SHOP_WINDOW,Old Campus Store
-GIFTBAG_TURIN_TEXT1,4000
-GIFTBAG_TURIN_TEXT2,3000
+GIFTBAG_TURIN_TEXT1,4500
+GIFTBAG_TURIN_TEXT2,4000
 OLD_SCHOOL_BUFF_LOCK_TEXT,*Unlock after acquiring {1} Points in a stage
 OLD_SCHOOL_FLOOR_GET_AWARD_TEXT,Pass stages without adjusting your lineup on a level to get corresponding rewards (rewards need to be claimed manually).
 OLD_SCHOOL_SCORE_GET_AWARD_TEXT,Score Reward will need to be claimed manually
@@ -3873,7 +3873,7 @@ NEWBEE_10GACHA_TEXT1,Normal 5-star
 NEWBEE_10GACHA_TEXT2,4-star
 EX_SKILL_TIPS_TEXT,Coming Soon
 ACTIVITY_MISSION_POINT_TEXT13,Make up
-ACTIVITY_NEWBEE_FUND_DES,Obtain rewards for 30 days upon starting Beginner Funds! You can reclaim the rewards in previous days with Gems!
+ACTIVITY_NEWBEE_FUND_DES,Obtain rewards for 20 days upon starting Beginner Funds! You can reclaim the rewards in previous days with Gems!
 LARGE_ACTIVITY_NEWBEE_TEXT,Beginner's\nCapsule
 ACTIVITY_MISSION_POINT_TEXT14,Start Now
 ACTIVITY_MISSION_POINT_TEXT15,Tap here to enter the Antique Store!
@@ -4677,7 +4677,7 @@ TRAVEL_MAIN_TEXT72,Market
 MONTH_CARD_TEXT001,Instant Reward
 MONTH_CARD_TEXT002,Daily Reward
 MONTH_CARD_TEXT003,Monthly Pass Additional Reward
-MONTH_CARD_TEXT004,"1. After purchasing Monthly Pass, you will instantly receive 900 Gems and 750 VIP points. You will also receive 370 Gems in Mail every day after the purchase for 30 days (amounting to a total of 12,000 Gems for purchasing the Monthly Pass).|In addition, after you reach VIP Level 2, you will get a daily bonus reward along with the Daily Gems before the Monthly Pass expires. The reward gets better as your VIP level increases!|2. After purchasing Mini Pass, you will instantly receive 350 Gems and 250 VIP points. You will also receive 85 Gems in Mail every day after the purchase for 30 days.|Mini Pass does not provide the additional daily reward according to VIP level, but can be activated with a Monthly Pass at the same time!|3. A special discount will be given when purchasing a Monthly Pass or a Mini Pass for the first time. The discount will no longer be valid after your first purchase on each Pass."
+MONTH_CARD_TEXT004,"1. After purchasing Monthly Pass, you will instantly receive 1500 Gems and 750 VIP points. You will also receive 450 Gems in Mail every day after the purchase for 30 days (amounting to a total of 15,000 Gems for purchasing the Monthly Pass).|In addition, after you reach VIP Level 2, you will get a daily bonus reward along with the Daily Gems before the Monthly Pass expires. The reward gets better as your VIP level increases!|2. After purchasing Mini Pass, you will instantly receive 500 Gems and 250 VIP points. You will also receive 150 Gems in Mail every day after the purchase for 30 days.|Mini Pass does not provide the additional daily reward according to VIP level, but can be activated with a Monthly Pass at the same time!|3. A special discount will be given when purchasing a Monthly Pass or a Mini Pass for the first time. The discount will no longer be valid after your first purchase on each Pass."
 GUILD_POLICY_CHANGED_TIP,Guild Priority changed successfully
 GUILD_OPEN_TYPE_LABEL2,Verification
 GUILD_OPWER_LIMIT_LABEL2,Power Limit
@@ -4994,10 +4994,10 @@ SPACE_EXPLORE_AUTO_TIPS,Available after reaching Stage {1}
 SPACE_EXPLORE_AUTO_TIPS2,Auto Explore
 ACTIVITY_PRAY_LIMIT_BUY,Purchase Limit: {1}/{2}
 ACTIVITY_TEA_TITLE1,Task
-ACTIVITY_TEA_TITLE2,Angel Tea Party
-ACTIVITY_TEA_TITLE3,Angel Tea Party\nSpecial Pack
-ACTIVITY_TEA_TEXT1,"1. During the event, complete Daily Tasks to obtain Tea Party Points. 1 Tea Party Point will be rewarded for each Daily Task completed.|2. After obtaining 10, 20, 40, and 60 Tea Party Points, you will be able to unlock Nephilim’s story and claim rewards for completing the story. The rewards mentioned need to be collected manually.|3. Purchase the Angel Tea Party special pack to reach max Tea Party Points immediately and unlock all stories."
-ACTIVITY_TEA_TEXT2,Special gift pack with great rewards and Nephilim's Heaven's Light skin!
+ACTIVITY_TEA_TITLE2,Vampire's\nTea Time
+ACTIVITY_TEA_TITLE3,Vampire's Tea Time\nSpecial Pack
+ACTIVITY_TEA_TEXT1,"1. During the event, complete Daily Tasks to obtain Tea Party Points. 1 Tea Party Point will be rewarded for each Daily Task completed.|2. After obtaining 10, 20, 40, and 60 Tea Party Points, you will be able to unlock Lord Dracula’s story and claim rewards for completing the story. The rewards mentioned need to be collected manually.|3. Purchase the Vampire's Tea Time special pack to reach max Tea Party Points immediately and unlock all stories."
+ACTIVITY_TEA_TEXT2,Special gift pack with great rewards and Lord Dracula's Dark Ambassador skin!
 ACTIVITY_TEA_TEXT3,Unlock after completing the previous chapter
 ACTIVITY_TEA_TEXT4,Progress
 ACTIVITY_TEA_TEXT5,Complete chapters to get corresponding rewards
@@ -5330,7 +5330,7 @@ ACTIVITY_GROWTH_PLAN_TEXT09,Basic Rewards
 ACTIVITY_GROWTH_PLAN_TEXT10,Extra Rewards
 ACTIVITY_GROWTH_PLAN_TEXT11,Purchase Training Plan
 ACTIVITY_GROWTH_PLAN_TEXT12,"Choose a girl for Promotion Program. Complete the daily tasks to earn Growth Points and receive the Basic rewards! If you purchase the Training Plan, the Extra rewards of Promotion Program will be unlocked."
-ACTIVITY_GROWTH_PLAN_TEXT13,"1. During the event, 5 Growth Points can be obtained for completing 1 Daily Task in Fantasy Book. Once the required amount for the task has been reached, rewards can be claimed manually.|2. Growth Points cannot be obtained from the Fantasy Book Daily Task “Complete All Daily Tasks”.|3. During the event, you can select one Girl for the Promotion Program, the rewards of the Promotion Program might be different according to the Girl you choose. You will not be able to change your selection once you have collected any reward from the event.|4. During the event, you will be able to acquire the Extra Rewards that your Growth Points have reached instantly after you purchase Training Plan, and the remaining Extra Reward will also be unlocked and become available after your Growth Points reach the requirement.|5. If you fail to acquire all Growth Points from the previous day as you forgot to claim Daily Task rewards or failed to complete Daily Tasks, you can still make up the Growth Points with Gems. 1 point can be purchased with 4 Gems."
+ACTIVITY_GROWTH_PLAN_TEXT13,"1. During the event, 5 Growth Points can be obtained for completing 1 Daily Task in Fantasy Book. Once the required amount for the task has been reached, rewards can be claimed manually.|2. Growth Points cannot be obtained from the Fantasy Book Daily Task “Complete All Daily Tasks”.|3. During the event, you can select one Girl for the Promotion Program, the rewards of the Promotion Program might be different according to the Girl you choose. You will not be able to change your selection once you have collected any reward from the event.|4. During the event, you will be able to acquire the Extra Rewards that your Growth Points have reached instantly after you purchase Training Plan, and the remaining Extra Reward will also be unlocked and become available after your Growth Points reach the requirement.|5. If you fail to acquire all Growth Points from the previous day as you forgot to claim Daily Task rewards or failed to complete Daily Tasks, you can still make up the Growth Points with Gems. 1 point can be purchased with 2 Gems."
 TIME_CLOISTER_TEXT61,Coming soon
 SENPAI_DRESS_GIFTBOX_WARN,You already own this Outfit piece. Would you still like to choose it?
 TIME_CLOISTER_TEXT62,Upgrade corresponding technologies in the Planetarium to level up this Card.
@@ -5455,7 +5455,7 @@ TIME_CLOISTER_HELP05,"1. A Support Girl can be available in Stage battles and Sk
 TIME_CLOISTER_TEXT65,Technology · Support
 TIME_CLOISTER_TEXT66,"Upgrade your Support Girl or promote her Advanced Skills with ""Nightmare Points"""
 TIME_CLOISTER_TEXT67,Display
-ACTIVITY_LUCKYBOXES_TEXT14,"1. Lucky Coins can be used to draw from the Lucky Dips machine and get rewards during the event. Normal rewards or Ultimate Prizes can be obtained from the machine. The Ultimate Prize will need to be manually selected.|2. 2 Lucky points can be obtained from each draw. When 100 Lucky Points are reached, there is a 100%% chance to obtain an Ultimate Prize in the next draw, once an Ultimate Prize is claimed, your Lucky Points will reset to 0.|3. There are 3 Ultimate Prizes in each round. Once all 3 Ultimate Prizes are obtained, you will enter the next round and the selection for Ultimate Prizes will be updated. After you've completed 6 rounds, the Ultimate Prize selection will be refreshed back to the 1st round.|4. Lucky Coins can be obtained from Daily Mails, by purchasing Lucky Dips Pack, or completing the tasks below:|---Get 1 Lucky Coin for every 3 League Tickets consumed (10 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Gems consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for each 3-star or above Internship Quest completed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every 200 Crystal Chisels consumed (20 Lucky Coins can be obtained in this way)|---Get 1 Lucky Coin for every Rudder used (80 Lucky Coins can be obtained in this way)|---Get 2 Lucky Coins for every 250 VIP EXP obtained during the event (200 Lucky Coins can be obtained in this way)|5. Once the event ends, your Lucky Coins, Lucky Points, and Reward Progress will be kept till the next event."
+ACTIVITY_LUCKYBOXES_TEXT14,"1. Lucky Coins can be used to draw from the Lucky Dips machine and get rewards during the event. Normal rewards or Ultimate Prizes can be obtained from the machine. The Ultimate Prize will need to be manually selected.|2. 2 Lucky points can be obtained from each draw. When 100 Lucky Points are reached, there is a 100%% chance to obtain an Ultimate Prize in the next draw, once an Ultimate Prize is claimed, your Lucky Points will reset to 0.|3. There are 3 Ultimate Prizes in each round. Once all 3 Ultimate Prizes are obtained, you will enter the next round and the selection for Ultimate Prizes will be updated. After you've completed 6 rounds, the Ultimate Prize selection will be refreshed back to the 1st round.|4. Once the event ends, your Lucky Coins, Lucky Points, and Reward Progress will be kept till the next event."
 ACTIVITY_LUCKYBOXES_TEXT15,"After the end of the event, your Lucky Coins, Lucky Points, and the Reward Progress will be kept until the next event."
 TIME_CLOISTER_TEXT68,Please display an {1} to complete the request.
 TIME_CLOISTER_TEXT69,Please display an Outfit piece that reaches the requirement
@@ -6962,7 +6962,7 @@ GROWTH_DIARY_TEXT11,Claimed
 GUILD_COMPETITION_PARTNER_TEXT07,This Girl is sent for Extra Course
 GROWTH_DIARY_TEXT12,Claim
 ACTIVITY_FREE_REVERT_TEXT08,Only specific Girls that are obtained/Graduated/Awaked before the event can be Reversed in this event
-ACTIVITY_GOLDFISH_HELP,"1. Hermes has opened her business on the beach, let's go check it out!|2. Get corresponding rewards by scooping fish with Paper Scoops. For each regular goldfish scooped, 200 Goldfish Coins will be added to the general reward pool. For each special goldfish scooped (the one carrying Cupid or Promethea Chest will be considered as a regular goldfish), you will be able to get your share in percentage of Goldfish Coins from the general reward pool. (The actual percentage of Goldfish Coins you can get each time might be different for each special goldfish you scoop).|3. Hermes will predict a vague number of Goldfish Coins you can get according to the number of Paper Scoops used. If the actual number of Goldfish Coins you obtained is below her prediction, you will receive additional Goldfish Coins on the last day of the event to mend the difference. You will not be able to scoop fish on the last day of the event!|4. Goldfish Coins can be used to exchange rewards in the event store. The first section of the event store is open by default, the following sections will be unlocked according to the number of Paper Scoops used.|5. You will receive additional rewards after using a certain number of Paper Scoops.|6. Once this event ends, any remaining Paper Scoops and Goldfish Coins will be automatically exchanged into 50K Coins per Paper Scoop and 100 Coins per Goldfish Coin. The Coins will be sent via Mail."
+ACTIVITY_GOLDFISH_HELP,"1. Hermes has opened her business on the beach, let's go check it out!|2. Get corresponding rewards by scooping fish with Paper Scoops. For each regular goldfish scooped, 200 Goldfish Coins will be added to the general reward pool. For each special goldfish scooped (the one carrying Cupid or Promethea Chest will be considered as a regular goldfish), you will be able to get your share in percentage of Goldfish Coins from the general reward pool. (The actual percentage of Goldfish Coins you can get each time might be different for each special goldfish you scoop).|3. Hermes will predict a vague number of Goldfish Coins you can get according to the number of Paper Scoops used. If the actual number of Goldfish Coins you obtained is below her prediction, you will receive additional Goldfish Coins on the last day of the event to mend the difference. You will not be able to scoop fish on the last day of the event!|4. Goldfish Coins can be used to exchange rewards in the event store. |5. You will receive additional rewards after using a certain number of Paper Scoops.|6. Once this event ends, any remaining Paper Scoops and Goldfish Coins will be automatically exchanged into 50K Coins per Paper Scoop and 100 Coins per Goldfish Coin. The Coins will be sent via Mail."
 ACTIVITY_GOLDFISH_BUTTON01,x1
 ACTIVITY_GOLDFISH_BUTTON02,x10
 ACTIVITY_GOLDFISH_TEXT01,"You have scooped [c][35a7ef]{1}[-][/c] time(s), I think you can get [c][ffa82b]{2}[-][/c] Goldfish Coins, but you've actually obtained [c][ffa82b]{3}[-][/c] Goldfish Coins. So you will get [c][ffa82b]{4}[-][/c] additional Goldfish Coins on the last day of the event!"
@@ -6980,7 +6980,7 @@ ACTIVITY_GOLDFISH_SHOP_TEXT05,Goldfish Coin Obtained:
 ACTIVITY_GOLDFISH_SHOP_TEXT06,Hermes's Prediction:
 ACTIVITY_GOLDFISH_SHOP_TEXT07,Additional Goldfish Coins:
 ACTIVITY_GOLDFISH_SHOP_TIPS01,Unlock after {1} Paper Scoops consumed
-ACTIVITY_GOLDFISH_AWARD_TEXT01,Consume {1} Rabbit Lanterns
+ACTIVITY_GOLDFISH_AWARD_TEXT01,Scoop {1} fish
 ACTIVITY_GOLDFISH_PACK_TEXT01,2 additional purchase chances for Gem-purchase packs will be added after this pack is purchased
 STARRY_ALTAR_TEXT14,Reward · Surprise Mode
 STARRY_ALTAR_TEXT15,Reward · Accumulate Mode
@@ -7180,8 +7180,8 @@ ACTIVITY_REPAIR_CONSOLE_TEXT05,Core Rewards
 ACTIVITY_REPAIR_CONSOLE_TEXT06,Basic Rewards
 ACTIVITY_REPAIR_CONSOLE_TEXT07,Round {1}
 ACTIVITY_REPAIR_CONSOLE_TEXT08,Round {1}\nand above
-ACTIVITY_REPAIR_CONSOLE_HELP,"1. During the event, you need to recharge Energy Nodes on the circuit board with Bonnie's Batteries. Each Bonnie's Battery can be used to charge up 1 to 3 Energy Nodes.|2. If a row or column of Energy Nodes are all fully charged, you can unlock a corresponding reward. Once a reward is unlocked, tap on the reward to acquire it. |3. After the 5 Energy Nodes that are linked by the extra circuit (from top left to bottom right) are all fully charged, you can unlock and acquire the main reward of your current round and enter the next round.|4. You can check out the reward details of a round by tapping on the ""Preview"" button.|5. Bonnie's Batteries can be obtained by completing Bonnie's To-Do List or by purchasing Battery Supply Pack."
-GUILD_NEW_WAR_HELP01,"[c][699be9]Registration Requirements[-][/c]|1. Your Guild must have at least reached Lv. 12 and have over 5 active members in the past week.|2. A Guild that meets the requirements will automatically be registered for the current season of Guild Championship once any Guild member enters the Guild Championship event page.|[c][699be9]Rules[-][/c]|1. Guild Championship will be divided into seasons. There will be 8 competitions between 2 Guilds in each season;|2. Each competition between 2 Guilds will last for 3 days (1 day of preparation and 2 days of battle period); Each Guild will start with 1 Main Base, 3 Center Bases, and 2 Front Bases. Your Guild will need to prevent the Bases from being destroyed by protecting the Flags inside the Bases.|3. Each season is separated into 3 different periods: Break Period, Preparation Period, and Battle Period. The first 3 days and the last 4 days of each season are Break Periods. The details during the season are as follow: Monday: Break Period, you can check the Guild details and battle record of the season during this period.|Tuesday: Preparation Period, you can adjust your Guild defense during this period.|Wednesday & Thursday: Battle Period, your Guild will compete with another Guild in a Battle Period.|Friday: Preparation Period, you can adjust your Guild defense during this period.|Saturday & Sunday: Battle Period, your Guild will compete with another Guild in a Battle Period.|4. The system will automatically assign Guild Members to defend the Flags in the bases according to their Power. The players with higher Power will be assigned to the Bases with higher priority (Base Priority: Main Base > Center Base > Front Base). Guild Members can adjust their own defense lineups. Guild Leaders and Deputy Leaders can also adjust the position of all Guild Members manually (your defense lineup will be updated after saving your defense lineup).|5. During the Battle Period, you can attack the Flags in enemy Bases, if there's a player guarding a Flag, you will need to defeat the player (by reducing the player's Moral to 0) before attacking the Flag; After all Flags in a Base are removed, the Base will be destroyed; You will need to destroy at least 1 Front Base before attacking a Center Base; You need to destroy at least 1 Center Base before attacking the Main Base; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards including Guild Points and Personal Contribution.|6. After a Battle Period ends, the Guild with more Guild Points in the 2 competing Guilds will win this Battle Period. If the 2 Guilds win the same number of Guild Points, the battle will be a draw.|[c][699be9]Matching & Ranking[-][/c]|1. A Guild will gain basic Guild Points at the beginning of each season according to its ranking in the last season. For Guilds that enter the competition for the first time, the basic Guild Points of a Guild when it first enters the competition will be concluded according to the total Power of its Guild Members.|2. The position of Guilds in the Guild Ranking will be sorted according to their current Guild Points. If 2 Guilds have the same number of Guild Points, the Guild that reaches the number of Guild Points first will take the higher position in the list.|3. The opponent will be another Guild with the number of Guild Points close to the Guild.|[c][699be9]Guild Points[-][/c]|1. Your Guild will get 100/150/300 Guild Points for removing a Flag in the Front Base/Center Base/Main Base.|2. Your Guild will get 500/1000/2000 Guild Points for destroying the enemy Front Base/Center Base/Main Base.|3. Your Guild will get 2000/1000/1000 for winning/losing/draw in a competition.|4. Your Guild will get 10 Guild Points every time a Guild Member Cleans Up the field.|[c][699be9]Personal Contribution[-][/c]|1. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. The battle can be considered a ""Best of Three"". The player who wins 2 battles is the winner. You can get 15 points of Personal Contribution for losing the battle and 20 points of Personal Contribution for winning the battle;|2. You can get 15 points of Personal Contribution for attacking a Flag.|3. You can get 5 points of Personal Contribution every time you Clean Up the field.|[c][699be9]Reward[-][/c]|1. Guild Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition and have participated in the Base defense at the end of each competition.|2. Personal Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition at the end of each competition.|3. Guild Championship Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution and have participated in the Base defense in the competition at the end of each competition. The reward will be different according to the position of your Guild in the Ranking list.|4. You can get an additional reward each time you attack a defender, attack a Flag or Clean Up the field."
+ACTIVITY_REPAIR_CONSOLE_HELP,"1. During the event, you need to recharge Energy Nodes on the circuit board with Bonnie's Batteries. Each Bonnie's Battery can be used to charge up 1 to 3 Energy Nodes.|2. If a row or column of Energy Nodes are all fully charged, you can unlock a corresponding reward. Once a reward is unlocked, tap on the reward to acquire it. |3. After the 5 Energy Nodes that are linked by the extra circuit (from top left to bottom right) are all fully charged, you can unlock and acquire the Core Reward of your current round and enter the next round.|4. You can check out the reward details of a round by tapping on the ""Preview"" button.|5. Bonnie's Batteries can be obtained by completing Bonnie's To-Do List or by purchasing Battery Supply Pack. The rewards for completing Bonnie's To-Do List will be issued via Mail.|6. Once the event ends, the remaining ""Bonnie's Batteries"" will automatically be recycled into Coins at a rate of 1000k each."
+GUILD_NEW_WAR_HELP01,"[c][699be9]Registration Requirements[-][/c]|1. Your Guild must have at least reached Lv. 12 and have over 5 active members in the past week.|2. A Guild that meets the requirements will automatically be registered for the current season of Guild Championship once any Guild member enters the Guild Championship event page.|[c][699be9]Rules[-][/c]|1. Guild Championship will be divided into seasons. There will be 8 competitions between 2 Guilds in each season;|2. Each competition between 2 Guilds will last for 3 days (1 day of preparation and 2 days of battle period); Each Guild will start with 1 Main Base, 3 Center Bases, and 2 Front Bases. Your Guild will need to prevent the Bases from being destroyed by protecting the Flags inside the Bases.|3. Each season is separated into 3 different periods: Break Period, Preparation Period, and Battle Period. The first 3 days and the last 4 days of each season are Break Periods. The details during the season are as follow: Monday: Break Period, you can check the Guild details and battle record of the season during this period.|Tuesday: Preparation Period, you can adjust your Guild defense during this period.|Wednesday & Thursday: Battle Period, your Guild will compete with another Guild in a Battle Period.|Friday: Preparation Period, you can adjust your Guild defense during this period.|Saturday & Sunday: Battle Period, your Guild will compete with another Guild in a Battle Period.|4. The system will automatically assign Guild Members to defend the Flags in the bases according to their Power. The players with higher Power will be assigned to the Bases with higher priority (Base Priority: Main Base > Center Base > Front Base). Guild Members can adjust their own defense lineups. Guild Leaders and Deputy Leaders can also adjust the position of all Guild Members manually (your defense lineup will be updated after saving your defense lineup).|5. During the Battle Period, you can attack the Flags in enemy Bases, if there's a player guarding a Flag, you will need to defeat the player (by reducing the player's Moral to 0) before attacking the Flag; After all Flags in a Base are removed, the Base will be destroyed; You will need to destroy at least 1 Front Base before attacking a Center Base; You need to destroy at least 1 Center Base before attacking the Main Base; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards including Guild Points and Personal Contribution.|6. After a Battle Period ends, the Guild that wins more Guild Points during the Battle Period will win. If the 2 Guilds win the same number of Guild Points, the Guild that has higher Power will win.|[c][699be9]Matching & Ranking[-][/c]|1. A Guild will gain basic Guild Points at the beginning of each season according to its ranking in the last season. For Guilds that enter the competition for the first time, the basic Guild Points of a Guild when it first enters the competition will be concluded according to the total Power of its Guild Members.|2. The position of Guilds in the Guild Ranking will be sorted according to their current Guild Points. If 2 Guilds have the same number of Guild Points, the Guild that reaches the number of Guild Points first will take the higher position in the list.|3. The opponent will be another Guild with the number of Guild Points close to the Guild.|[c][699be9]Guild Points[-][/c]|1. Your Guild will get 100/150/300 Guild Points for removing a Flag in the Front Base/Center Base/Main Base.|2. Your Guild will get 500/1000/2000 Guild Points for destroying the enemy Front Base/Center Base/Main Base.|3. Your Guild will get 2000/1000 for winning/losing in a competition.|4. Your Guild will get 10 Guild Points every time a Guild Member Cleans Up the field.|[c][699be9]Personal Contribution[-][/c]|1. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. The battle can be considered a ""Best of Three"". The player who wins 2 battles is the winner. You can get 15 points of Personal Contribution for losing the battle and 20 points of Personal Contribution for winning the battle;|2. You can get 15 points of Personal Contribution for attacking a Flag.|3. You can get 5 points of Personal Contribution every time you Clean Up the field.|[c][699be9]Reward[-][/c]|1. Guild Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition and have participated in the Base defense at the end of each competition.|2. Personal Battle Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution in the competition at the end of each competition.|3. Guild Championship Reward will be issued to Guild Members who have earned at least 1 point of Personal Contribution and have participated in the Base defense in the competition at the end of each competition. The reward will be different according to the position of your Guild in the Ranking list.|4. You can get an additional reward each time you attack a defender, attack a Flag or Clean Up the field."
 GUILD_NEW_WAR_TIPS01,"Break Period is over, finding a worthy opponent"
 GUILD_NEW_WAR_TIPS02,"Battle Period is over, concluding the result"
 GUILD_NEW_WAR_TIPS03,Leader or Deputy Leader only
@@ -7243,13 +7243,13 @@ GUILD_NEW_WAR_TEXT51,Flag info
 GUILD_NEW_WAR_TEXT52,You can reduce the Durability by 50 for each attack
 GUILD_NEW_WAR_TEXT53,Attack Reward
 GUILD_NEW_WAR_TEXT54,Attack
-GUILD_NEW_WAR_TEXT55,Personal Contribution +{1}
+GUILD_NEW_WAR_TEXT55,Personal Contribution [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT56,Reward
-GUILD_NEW_WAR_TEXT57,Enemy Moral -{1}
+GUILD_NEW_WAR_TEXT57,Defender Moral [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT58,Fight {1}
-GUILD_NEW_WAR_TEXT59,Personal Contribution
-GUILD_NEW_WAR_TEXT60,Personal Rank (in your Guild)
-GUILD_NEW_WAR_TEXT61,Guild Point +{1}
+GUILD_NEW_WAR_TEXT59,Personal Rank (in your Guild)
+GUILD_NEW_WAR_TEXT60,Personal Contribution
+GUILD_NEW_WAR_TEXT61,Guild Point [c][2d7bce]+{1}[-][/c]
 GUILD_NEW_WAR_TEXT62,Rewards will be issued via Mail
 GUILD_NEW_WAR_TEXT63,{1} has attacked enemy Flag {3} in {2} and reduced enemy's Moral by {4}
 GUILD_NEW_WAR_TEXT64,{1} has attacked enemy Flag {3} in {2} and reduced the Flag's Durability by {4}
@@ -7278,18 +7278,18 @@ QUICK_FORMATION_TEXT27,Need at least 1 Girl in this lineup
 GUILD_NEW_WAR_TEXT79,No other Ranking Info
 GUILD_NEW_WAR_HELP02,"1. There are multiple Flags set in each base your Guild controls. You can assign 1 Guild Member as the protector of each Flag. Each defender has 200 Moral when assigned.|2. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. You will at least reduce the Moral of the defender by 5 for each attack. The Moral reduction will increase by 5 for each victory in the 3 battles.|3. The defender will be defeated after the Moral is reduced to 0. You will then be able to attack the unguarded Flag. You can reduce the Durability of the Flag for each attack in this situation. After a Flag loses all its Durability, it will be removed.|4. After all Flags in a Base are removed, the Base will be destroyed; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards.|5. During the battle period, there will be 10 Challenge Chances daily. To challenge enemies, attack the Flags and Clean Up the field, one chance will be consumed and the corresponding rewards can be received after.|6. All your Girls in your attack lineup will gain 10%% extra Attack, 20%% extra HP, and 10%% extra Damage Depletion for every Center Base your Guild destroys in this competition; After destroying the Main Base of the opposing Guild, the Attacking Guild will gain 50 extra Guild Points whenever it gains Guild Points in this competition.|7. Guild Leaders and Deputy Leaders can mark one of the enemy Base as a target to focus attack on. When attacking the target, all damage dealt by the Girls on the Attacking Team will be increased by 10%%. Focus attack targets can be re-selected 12 hours after the last focus attack target is selected."
 GUILD_NEW_WAR_TEXT80,{1} has destroyed Flag {3} in enemy {2}
-ACTIVITY_PIRATE_TEXT01,Story Complete Count
+ACTIVITY_PIRATE_TEXT01,Story Progress
 ACTIVITY_PIRATE_TEXT02,Server Pack
 ACTIVITY_PIRATE_TEXT03,Collection Progress
 ACTIVITY_PIRATE_TEXT04,Story Progress
 ACTIVITY_PIRATE_TEXT05,Raid
 ACTIVITY_PIRATE_TEXT06,Go
-ACTIVITY_PIRATE_HELP,幫助文本，待定，無需翻譯
-ACTIVITY_PIRATE_SHOP_TEXT01,Claim
+ACTIVITY_PIRATE_HELP,"1. During the event, you can trigger stories by tapping on the Girls' avatars on the event page. The story you trigger could be part of the main event story or a side story.|2. There're 5 locations available to check: Sea Lord's Palace, Coastal Waters, Open Sea, The Beach, and Abyssal Palace. After you complete all the main event stories in a location, Raid feature will become available for the location.|3. All players will be able to claim a free reward after Story Progress reaches the requirement.|4. 1 Voyager Compass will be consumed for each Raid. You will get a fixed (according to your current location) reward, 20 Pirate Coins and have a 20%% chance to get an additional random chest reward for each Raid.|5. You will get random types of chests as random rewards. Each type of Chest will provide you a different number of Pirate Coins:|Wooden Chest: 30 Pirate Coins|Iron Chest: 60 Pirate Coins|Silver Chest: 80 Pirate Coins|Gold Chest: 100 Pirate Coins|Platinum Chest: 120 Pirate Coins|6. Voyager Compass can be obtained from Story Progress Reward, Daily Mail, by completing Girls X Capsule Points, or by purchasing Special Skin Pack, Special Gift Pack, Value Pack, Explorer Pack, Monthly Kick Off, and Count's Mystery Gift.|7. You can review the completed main event stories in ""Review"".|8. Once the event ends, the remaining ""Voyager Compasses"" and ""Pirate Coins"" will automatically be recycled into Coins at a rate of 500k per Voyager Compass and 1000 per Pirate Coin."
+ACTIVITY_PIRATE_SHOP_TEXT01,Collection Reward
 ACTIVITY_PIRATE_SHOP_TEXT02,Locked
 ACTIVITY_PIRATE_SHOP_TEXT03,Secret Vault
-ACTIVITY_PIRATE_SHOP_TEXT04,Ordinary Vault
-ACTIVITY_PIRATE_SHOP_TEXT05,幫助文本，待定，無需翻譯
+ACTIVITY_PIRATE_SHOP_TEXT04,Confirm to exchange with {1} Pirate Coins?
+ACTIVITY_PIRATE_SHOP_TEXT05,1. You can obtain Pirate Coins by Raiding in the event: Deep Sea Treasures.|2. Pirate Coins can be used to exchange rewards in the event: Palace Vaults.|3. Larger vaults will be unlocked after you consume a certain number of Pirate Coins.|4. You can view your current collection progress and reward details of the reward chests on the Collection Reward page.|5. All rewards claimable on the Collection Reward page can be claimed once only.
 GUILD_NEW_WAR_TIPS08,Cannot quit the Guild in Preparation or Battle Period of Guild Championship
 GUILD_NEW_WAR_TIPS09,Cannot remove Member from Guild in Preparation or Battle Period of Guild Championship
 GUILD_NEW_WAR_TIPS10,Cannot dismiss the Guild in Preparation or Battle Period of Guild Championship
@@ -7309,13 +7309,39 @@ GUILD_NEW_WAR_TEXT93,Increase All Damage dealt by 10%% when attacking Main Base
 GUILD_NEW_WAR_TIPS11,Cannot adjust defense lineup during Battle Period
 GUILD_NEW_WAR_TIPS12,Need to destroy 1 of the Front Bases first
 GUILD_NEW_WAR_TIPS13,Need to destroy 1 of the Center Bases first
-ACTIVITY_PIRATE_PLACE1,海神殿
-ACTIVITY_PIRATE_PLACE2,近海區
-ACTIVITY_PIRATE_PLACE3,遠海區
-ACTIVITY_PIRATE_PLACE4,沙灘
-ACTIVITY_PIRATE_PLACE5,深海龍宮
+ACTIVITY_PIRATE_PLACE1,Sea Lord's Palace
+ACTIVITY_PIRATE_PLACE3,Coastal Waters
+ACTIVITY_PIRATE_PLACE4,Open Sea
+ACTIVITY_PIRATE_PLACE2,The Beach
+ACTIVITY_PIRATE_PLACE5,Abyssal Palace
 GUILD_NEW_WAR_TEXT94,Rank
-GUILD_NEW_WAR_TEXT95,Flag Durability -{1}
+GUILD_NEW_WAR_TEXT95,Flag Durability [c][2d7bce]-{1}[-][/c]
 GUILD_NEW_WAR_TEXT96,Dismissed
 GUILD_NEW_WAR_TEXT97,Power↑
 GUILD_NEW_WAR_TEXT98,Power↓
+MONTH_CARD_EXTRA_TEXT01,*Intenrship Quest Limit [c][e28002]+1[-][/c]
+MONTH_CARD_EXTRA_TEXT02,*Gem Reward for completing all Daily Tasks [c][e28002]+100[-][/c]
+MONTH_CARD_EXTRA_TEXT03,*VIP Daily Bonus
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT01,Round 1~3
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT02,Round 4~8
+ACTIVITY_REPAIR_CONSOLE_AWARDS_TEXT03,Round 9 and above
+ACTIVITY_PIRATE_SHOP_TEXT06,(Pirate Coins consumed: [c][fdc97d]{1}/{2}[-][/c])
+ACTIVITY_PIRATE_TEXT07,Review
+ACTIVITY_PIRATE_TEXT08,Reward for each Raid
+ACTIVITY_PIRATE_TEXT09,Reward
+ACTIVITY_PIRATE_TEXT10,Chest
+ACTIVITY_PIRATE_TEXT11,Select quantity
+ACTIVITY_PIRATE_TEXT12,Guaranteed [c][db7224]Chest[-][/c] in [c][db7224]{1}[-][/c] Raid(s)
+INVITATION_TEXT24,Available after completing Chapter 20 in Growth Diary
+ACTIVITY_PIRATE_SHOP_TEXT13,{1}-Raid
+ACTIVITY_PIRATE_BOX1,Battered Vault
+ACTIVITY_PIRATE_BOX2,Unguarded Vault
+ACTIVITY_PIRATE_BOX3,Locked Vault
+ACTIVITY_PIRATE_BOX4,Double-Locked Vault
+ACTIVITY_PIRATE_BOX5,Fortified Vault
+ACTIVITY_PIRATE_BOX6,Secret Vault
+MONTH_CARD_EXTRA_TEXT04,Privileges
+ACTIVITY_PIRATE_TEXT13,Confirm to consume {1} Voyager Compasses and Raid in {2}?
+ACTIVITY_PIRATE_TEXT14,This Reward is still locked!
+ACTIVITY_PIRATE_TEXT15,Claim
+ACTIVITY_YEAR_FUND_INNER_TITLE2,Preview

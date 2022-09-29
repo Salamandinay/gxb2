@@ -205,8 +205,6 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 		self.localPartnerList = {}
 		self.nowPartnerList = {}
 
-		dump(params.formation)
-
 		for i = 1, 3 do
 			for j = 1, 6 do
 				if params.formation.teams[i] and params.formation.teams[i].partners[j] and self.SlotModel:getPartner(params.formation.teams[i].partners[j].partner_id) then
@@ -218,22 +216,11 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 				self.pets[i + 1] = params.formation.teams[i].pet.pet_id
 			end
 		end
-
-		dump(self.nowPartnerList)
-		dump(self.pets)
 	end
-
-	dump(self.battleType == xyd.BattleType.GUILD_NEW_WAR)
-	dump(#self.nowPartnerList <= 0)
-	dump(self.nowPartnerList)
 
 	if self.battleType == xyd.BattleType.GUILD_NEW_WAR then
 		local activityData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_NEW_WAR)
 		local formation = activityData:getPvPBattleFormation()
-
-		dump(formation)
-		dump(xyd.decodeProtoBufData(formation.teams, "teams"))
-
 		self.nowPartnerList = {}
 		self.pets = {
 			0,
@@ -249,12 +236,10 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 				end
 			end
 
-			if formation.teams[i] and formation.teams[i].pet and formation.teams[i].pet.pet_id then
-				self.pets[i + 1] = formation.teams[i].pet.pet_id
+			if formation.teams[i] and formation.teams[i].pet and (formation.teams[i].pet.pet_id or formation.teams[i].pet.petID) then
+				self.pets[i + 1] = formation.teams[i].pet.pet_id or formation.teams[i].pet.petID
 			end
 		end
-
-		dump(self.nowPartnerList)
 	end
 end
 

@@ -68,7 +68,7 @@ function ActivityNewbeeFundData:onAward(data)
 		local detail = json.decode(data.detail)
 		self.detail.info.awards = detail.info.awards
 
-		xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_YEAR_FUND, self:getRedMarkState())
+		xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_NEWBEE_FUND, self:getRedMarkState())
 	end)
 end
 

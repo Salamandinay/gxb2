@@ -242,6 +242,10 @@ function GuildNewWarMapWindow:layout()
 
 	self.windowTop = winTop
 
+	if not self.activityData.allPlayerDefFormation[xyd.Global.playerID] then
+		self.activityData:reqOtherDefFormation(xyd.Global.playerID)
+	end
+
 	self:updateCountDown()
 	self:updateGuildInfo()
 	self:updateMapNodes()

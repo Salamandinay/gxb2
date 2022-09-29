@@ -264,7 +264,7 @@ function PvpVsWindow:initPlayer(parentGo, data)
 	local isRobot = data.playerInfo.is_robot
 	local playerId = data.playerInfo.player_id
 
-	if not isRobot or isRobot == 0 then
+	if not isRobot or isRobot == 0 or data.playerInfo.player_name then
 		playerName.text = data.playerInfo.player_name
 
 		pIcon:setInfo({

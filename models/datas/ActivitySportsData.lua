@@ -59,6 +59,20 @@ function ActivitySportsData:getNowState()
 	end
 end
 
+function ActivitySportsData:isFinalBeforeDay()
+	local state = self:getNowState()
+
+	if state == 4 then
+		local daysArr = xyd.tables.miscTable:split2num("activity_sports_time_interval", "value", "|")
+
+		if xyd.getServerTime() >= self.start_time + daysArr[1] + daysArr[2] + daysArr[3] + daysArr[4] - xyd.DAY_TIME then
+			return true
+		end
+	end
+
+	return false
+end
+
 function ActivitySportsData:isFinalDay()
 	local state = self:getNowState()
 
@@ -94,7 +108,7 @@ function ActivitySportsData:getMissionRed()
 	local state = self:getNowState()
 	local missions = xyd.tables.activitySportsMissionTable:getIds()
 
-	if state == xyd.ActivitySportsTime.SHOW then
+	if state == xyd.ActivitySportsTime.SHOW or self:isFinalBeforeDay() then
 		return false
 	else
 		local missionCount = self.detail.mission_count or {}

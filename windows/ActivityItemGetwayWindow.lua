@@ -74,11 +74,16 @@ function ActivityItemGetwayWindow:GoWnd(index)
 		return
 	end
 
+	local windows = GetWayTable:getGoWindow(id)
+
+	if xyd.arrayIndexOf(windows, "arena_window") > 0 and xyd.models.arena:getIsSettlementing(true) then
+		return
+	end
+
 	if self.callback then
 		self.callback()
 	end
 
-	local windows = GetWayTable:getGoWindow(id)
 	local params = GetWayTable:getGoParam(id)
 	local close = false
 	local openWindowDepthTypes = {}

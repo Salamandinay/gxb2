@@ -7,11 +7,34 @@ ActivityRepairMission.FundItem = FundItem
 function ActivityRepairMission:ctor(parentGO, params)
 	ActivityContent.ctor(self, parentGO, params)
 
+	if self.activityData:isFirstTimeEnter() == true then
+		local msg = messages_pb:get_activity_info_by_id_req()
+		msg.activity_id = self.id
+
+		xyd.Backend.get():request(xyd.mid.GET_ACTIVITY_INFO_BY_ID, msg)
+		self.activityData:setFirstTimeEnter(false)
+	end
+
 	self.currentState = xyd.Global.lang
 	self.data = {}
 
 	self:getUIComponent()
 	self:euiComplete()
+	self:checkIfMove()
+end
+
+function ActivityRepairMission:onRegister()
+	self:registerEvent(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.updateData))
+end
+
+function ActivityRepairMission:updateData(event)
+	local data = event.data
+
+	if data.activity_id ~= self.id then
+		return
+	end
+
+	self:setItem()
 	self:checkIfMove()
 end
 
@@ -69,16 +92,19 @@ function ActivityRepairMission:setItem()
 	for i, v in pairs(ids) do
 		local id = ids[i]
 		local is_completed = self.activityData.detail.missions[id].is_completed
+		local limit = xyd.tables.activityRepairMissionTable:getLimit(id)
 		local awards_info = xyd.tables.activityRepairMissionTable:getAwards(id)
 		local value = self.activityData.detail.missions[id].value
 		local maxValue = xyd.tables.activityRepairMissionTable:getComplete(id)
 		local awardTimes = self.activityData.detail.missions[i].is_awarded ~= 0
-		local text = xyd.tables.activityRepairConsoleMissionTextTable:getDesc(id)
+		local text = xyd.stringFormat(xyd.tables.activityRepairConsoleMissionTextTable:getDesc(id), is_completed)
 		local realValue = math.min(value, maxValue) / maxValue
 		local gotten = false
 
-		if realValue >= 1 then
+		if is_completed > 0 and value == 0 or limit <= is_completed or realValue == 1 then
 			gotten = true
+			realValue = 1
+			value = maxValue
 		end
 
 		local param = {
@@ -115,9 +141,11 @@ function ActivityRepairMission:setItem()
 end
 
 function ActivityRepairMission:checkIfMove()
-	self.fundGroupWidget.height = 516 + (self.groupItem_uigrid.cellHeight * 5 + 25 - 516) * self.scale_num_contrary
+	self.fundGroupWidget.height = #self.data * self.groupItem_uigrid.cellHeight + 18
 
-	self:resizePosY(self.fundGroup, -357, -467)
+	self:resizePosY(self.fundGroup, -400, -580)
+	self.groupItem_uigrid:Reposition()
+	self.e_Scroller:ResetPosition()
 end
 
 function FundItem:ctor(goItem, itemdata)
@@ -142,6 +170,10 @@ function FundItem:initBaseInfo(itemdata)
 
 	if xyd.Global.lang == "fr_fr" then
 		self.labelTitle_.fontSize = 20
+	end
+
+	if xyd.Global.lang == "ko_kr" then
+		self.labelTitle_.width = 400
 	end
 end
 
@@ -175,7 +207,9 @@ function FundItem:initItem(itemdata)
 
 	if self.getWayId_ and tonumber(self.getWayId_) > 0 then
 		local function onClick()
-			xyd.goWay(self.getWayId_, nil, , )
+			xyd.goWay(self.getWayId_, nil, , function ()
+				xyd.WindowManager.get():closeWindow("activity_window")
+			end)
 		end
 
 		UIEventListener.Get(self.goItem_.gameObject).onClick = onClick

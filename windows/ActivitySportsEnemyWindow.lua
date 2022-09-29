@@ -86,7 +86,8 @@ function ActivitySportsEnemyWindow:layout()
 				lev = self.matchInfo.partners[i].lv,
 				awake = self.matchInfo.partners[i].awake,
 				grade = self.matchInfo.partners[i].grade,
-				star = self.matchInfo.partners[i].star
+				star = self.matchInfo.partners[i].star,
+				star_origin = self.matchInfo.partners[i].star_origin
 			}
 
 			if params.awake then

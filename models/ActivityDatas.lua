@@ -310,7 +310,9 @@ local ModelClass = {
 	[xyd.ActivityID.GUILD_NEW_WAR] = require("app.models.datas.GuildNewWarData"),
 	[xyd.ActivityID.ACTIVITY_REPAIR_CONSOLE] = require("app.models.datas.ActivityRepairConsoleData"),
 	[xyd.ActivityID.ACTIVITY_REPAIR_GIFTBAG] = require("app.models.datas.ActivityRepairGiftBag"),
-	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = require("app.models.datas.ActivityRepairMissionData")
+	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = require("app.models.datas.ActivityRepairMissionData"),
+	[xyd.ActivityID.ACTIVITY_PIRATE] = require("app.models.datas.ActivityPirateData"),
+	[xyd.ActivityID.ACTIVITY_PIRATE_SHOP] = require("app.models.datas.ActivityPirateShopData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

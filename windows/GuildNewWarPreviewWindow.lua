@@ -125,7 +125,7 @@ function GuildNewWarPreviewWindow:registerEvent()
 			return
 		end
 
-		self.activityData:reqSweep(self.nodeIndex, 1, function ()
+		self.activityData:reqSweep(self.nodeIndex, self.activityData:getLeftAttackTime(), function ()
 		end)
 	end
 end

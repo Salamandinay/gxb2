@@ -80,33 +80,35 @@ function Arena:onGetArenaBaseInfo(event)
 
 	if self:getIsSettlementing() then
 		print("testtestsend==========================test" .. xyd.getServerTime())
+		self:timeEndCloseWindow()
 
-		local arenaWd = xyd.WindowManager.get():getWindow("arena_window")
+		if self.reqInfoKey1 then
+			xyd.removeGlobalTimer(self.reqInfoKey1)
 
-		if arenaWd then
-			xyd.WindowManager.get():closeWindow("arena_window")
+			self.reqInfoKey1 = nil
 		end
 
-		xyd.addGlobalTimer(function ()
+		self.reqInfoKey1 = xyd.addGlobalTimer(function ()
 			xyd.models.arena:reqArenaInfo()
 			xyd.models.arena:reqRankList()
-		end, 30, 1)
+		end, 60, 1)
+
+		if self.reqInfoKey2 then
+			xyd.removeGlobalTimer(self.reqInfoKey2)
+
+			self.reqInfoKey2 = nil
+		end
 	end
 
 	local arenaEndTime = self:getDDL() - xyd.getServerTime()
 
-	if arenaEndTime > 0 and (not self.globalEndTime or self.globalEndTime and self.globalEndTime < self:getDDL()) then
-		self.globalEndTime = self:getDDL()
-
-		xyd.addGlobalTimer(function ()
-			local arenaWd = xyd.WindowManager.get():getWindow("arena_window")
-
-			if arenaWd then
-				xyd.WindowManager.get():closeWindow("arena_window")
-			end
-
+	if arenaEndTime > 0 and not self.reqInfoKey2 then
+		self.reqInfoKey2 = xyd.addGlobalTimer(function ()
+			self:timeEndCloseWindow()
 			xyd.models.arena:reqArenaInfo()
 			xyd.models.arena:reqRankList()
+
+			self.reqInfoKey2 = nil
 		end, arenaEndTime + 1, 1)
 	end
 end
@@ -390,10 +392,10 @@ function Arena:getSlaveIds()
 	return self.slave_ids
 end
 
-function Arena:getIsSettlementing()
+function Arena:getIsSettlementing(isTips)
 	if self:getDDL() and self:getDDL() <= xyd.getServerTime() then
-		if UNITY_EDITOR then
-			return false
+		if isTips then
+			xyd.alert(xyd.AlertType.TIPS, __("ARENA_SETTLEMENT_TIPS"))
 		end
 
 		return true
@@ -404,6 +406,32 @@ end
 
 function Arena:getNewSeasonOpenTime()
 	return 3600
+end
+
+function Arena:timeEndCloseWindow()
+	local arenaWd = xyd.WindowManager.get():getWindow("arena_window")
+
+	if arenaWd then
+		xyd.WindowManager.get():closeWindow("arena_window")
+	end
+
+	local battleFormationWd = xyd.WindowManager.get():getWindow("battle_formation_window")
+
+	if battleFormationWd then
+		xyd.WindowManager.get():closeWindow("battle_formation_window")
+	end
+
+	local imgGuideWd = xyd.WindowManager.get():getWindow("img_guide_window")
+
+	if imgGuideWd then
+		xyd.WindowManager.get():closeWindow("img_guide_window")
+	end
+
+	local arenaTipsWd = xyd.WindowManager.get():getWindow("arena_tips_window")
+
+	if arenaTipsWd then
+		xyd.WindowManager.get():closeWindow("arena_tips_window")
+	end
 end
 
 Arena.INSTANCE = nil

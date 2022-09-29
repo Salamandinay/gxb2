@@ -1735,7 +1735,11 @@ function ItemTips:skinDetailTouch()
 		end
 	}
 	local win = xyd.WindowManager.get():getWindow("item_tips_window")
-	local winType = win:getWinType()
+	local winType = nil
+
+	if win then
+		winType = win:getWinType()
+	end
 
 	xyd.WindowManager.get():openWindow("collection_skin_window", {
 		closeCallBack = function ()

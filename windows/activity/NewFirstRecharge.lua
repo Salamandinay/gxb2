@@ -28,7 +28,7 @@ end
 function NewFirstRecharge:initUI()
 	self:getUIComponent()
 	NewFirstRecharge.super.initUI(self)
-	xyd.setUITextureByNameAsync(self.imgText, "new_first_recharge_logo_" .. xyd.Global.lang, true)
+	xyd.setUITextureByNameAsync(self.imgText, "new_first_recharge_logo_" .. xyd.Global.lang)
 	xyd.setUISpriteAsync(self.img_, nil, "ft_" .. xyd.Global.lang)
 
 	self.descLabel.text = __("NEW_RECHARGE_TEXT01")
@@ -179,7 +179,7 @@ function NewFirstRecharge:onRegister()
 		xyd.openWindow("partner_info", {
 			grade = 6,
 			lev = 100,
-			table_id = 53010
+			table_id = 56006
 		})
 	end
 

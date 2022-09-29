@@ -2,16 +2,16 @@ id,name,from,content
 1,Tägliche Arena-Belohnungen,Arena-Mail,"Herzlichen Glückwunsch, du hast Rang {2} in der Arena am {1} erreicht. Deine Belohnungen werden dir per Mail gesendet."
 2,Belohnungen zum Saisonende,Arena-Mail,"Als Direktor der Yume Akademie möchte ich dir gratulieren, dass du den Rang {1} in der Arena erreicht hast. Deine hervorragenden Fähigkeiten und dein Mut haben dir folgende Belohnungen eingebracht."
 3,Neuer Server Bonus,Systembenachrichtigung,"Melde dich jeden Tag während des Events an und erhalte 50 x Dias, 2 x normale Lottoscheine, 2x Arena Tickets. Hier sind deine Belohnungen."
-4,Monatskarte,Monatskarte,Herzliche Glückwünsche! Von {1} an erhältst du täglich um 00:00 Uhr (UTC/GMT 0) 370 Dias. Die Dias vom ersten Tag werden sofort nach dem Kauf der Monatskarte verschickt.
+4,Monatskarte,Monatskarte,Herzliche Glückwünsche! Von {1} an erhältst du täglich um 00:00 Uhr (UTC/GMT 0) 450 Dias. Die Dias vom ersten Tag werden sofort nach dem Kauf der Monatskarte verschickt.
 5,Monatskarten Belohnungen,Monatskarte,"Sehr geehrter Vip{1}-Spieler, bitte sammle die folgenden Belohnungen rechtzeitig ein. Deine Monatskarte läuft in {2} Tagen ab."
 6,Monatskarte abgelaufen,Monatskarte,"Sehr geehrter Senpai, deine Monatskarte ist abgelaufen. Unter Aufladen kannst du deine Monatskarte verlängern. Zur Erinnerung: Die Monatskarte ist 13-mal billiger als der Einzelkauf der Dias!"
-7,Mini Monatskarte,Mini Monatskarte,Herzliche Glückwünsche! Von {1} an erhältst du täglich um 00:00 Uhr (UTC/GMT 0) 85 Dias. Die Dias vom ersten Tag werden sofort nach dem Kauf der Mini Monatskarte verschickt.
+7,Mini Monatskarte,Mini Monatskarte,Herzliche Glückwünsche! Von {1} an erhältst du täglich um 00:00 Uhr (UTC/GMT 0) 150 Dias. Die Dias vom ersten Tag werden sofort nach dem Kauf der Mini Monatskarte verschickt.
 8,Mini Monatskarten Belohnung,Mini Monatskarte,"Lieber Senpai, bitte sammle die folgenden Belohnungen rechtzeitig. Deine Mini-Monatskarte läuft in {1} Tag(en) ab."
 9,Mini Monatskarte abgelaufen,Mini Monatskarte,"Sehr geehrter Senpai, deine Mini-Monatskarte ist abgelaufen. Unter Aufladen kannst du deine Mini-Monatskarte verlängern. Zur Erinnerung: Die Mini-Monatskarte ist zehnmal billiger als der Einzelkauf der Dias!"
 10,Belohnungen - Mädchen beschwören,Beschwörungs-Belohnungen,Herzlichen Glückwunsch zur Beschwörung des Mädchens {1} während des Events. Hier sind deine Belohnungen!
-11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 zu erhalten. Hier sind deine Belohnungen."
+11,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3, Kompass *5 und Glücksmünze *2 zu erhalten. Hier sind deine Belohnungen."
 12,Ziehungsbelohnungen,Systembenachrichtigung,"Gratuliere, du hast im Event Willkommenskapseln insgesamt {1} Super Kapseln gezogen und erhältst die folgenden Belohnungen!"
-13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Himmelslaterne *5 zu erhalten. Hier sind deine Belohnungen!"
+13,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Stempel *1, Elementarkugel *100 und Schöpfnetz *2 zu erhalten. Hier sind deine Belohnungen!"
 14,Einschreiben-Aufgaben,Systembenachrichtigung,Herzlichen Glückwunsch zum Erreichen von {1} Punkten während des Einschreibeevents. Hier sind deine Belohnungen!
 15,Tötungsbelohnungen,Systembenachrichtigung,Herzlichen Glückwunsch! Der Freundesboss wurde von dir getötet. Du erhältst die folgenden Belohnungen!
 16,Belohnungen (Freundesboss),Systembenachrichtigung,Der Freund BOSS wurde erfolgreich besiegt. Herzlichen Glückwunsch zu den folgenden Belohnungen!
@@ -235,7 +235,7 @@ Bitte entschuldigt die Unannehmlichkeit. Hierzu werden 300 Dias als Entschädigu
 213,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast dem Chaos-Lord einen hohen Schaden zugefügt und er hat sich zurückgezogen! Sammle die Belohnungen ein und kämpfe weiter! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 214,Belohnungen (Sicherheitstrupp),Systembenachrichtigung,Du hast den Chaos-Lord erfolgreich besiegt und bist in ein gefährlicheres Gebiet eingetreten. Bitte sammle die Belohnungen ein! (Der Bonus des Outfits wurde ausgelöst und du erhältst zusätzliche Kristallmeißel.)
 215,Weihnachtsaustausch geht bald zu Ende,Event-Mail,"Lieber Senpai,\n\ndas Event ""Weihnachtsaustausch"" geht bald zu Ende. Vergiss bitte nicht, deine gewünschten Geschenke zu tauschen!"
-216,Belohnungen zum Laternenfest,Systembenachrichtigung,"Gratuliere, du hast am Laternenfest insgesamt {1} Himmelslaternen steigen lassen und folgende Belohnungen erhalten!"
+216,Belohnungen zum Fischmeister,Systembenachrichtigung,"Gratuliere, du hast im Event ""Sommerangebote"" insgesamt {1} Fische gefangen und folgende Belohnungen erhalten!"
 217,Alter Campus endet bald,Systembenachrichtigung,"Lieber Senpai, Alter Campus wird in 24 Stunden geschlossen. Bitte begebe dich schnell auf den Campus, um höhere Etagen zu erobern!"
 218,Letzter Tag für limitierte Pakete!,Systembenachrichtigung,"Lieber Senpai, das Paket-Event ""{1}"" wird in 1 Tag beendet! Verpass die preiswerten Pakete bloß nicht!"
 219,Bonus zum Feuerwerksspektakel,Systembenachrichtigung,"Lieber Senpai, hast du heute schon am Event ""Feuerwerksspektakel"" teilgenommen? Hier, ich schick dir noch ein Streichholz als Bonus!"
@@ -280,7 +280,7 @@ das Event „Boni zum Altar“ wurde bereits beendet. Der Anzahl deiner Ziehunge
 Vielen Dank für deine Unterstützung zu GXB2. Solltest du irgendwelche Fragen über das Event haben, wende dich bitte gerne an unseren Support!
 
 GXB2 Entwicklungsteam"
-239,Belohnungen zum Laternenfest,Systembenachrichtigung,"Gratuliere, du hast am Laternenfest insgesamt {1} Himmelslaternen steigen lassen und folgende Belohnungen erhalten!"
+239,Belohnungen zum Fischmeister,Systembenachrichtigung,"Gratuliere, du hast im Event ""Sommerangebote"" insgesamt {1} Fische gefangen und folgende Belohnungen erhalten!"
 237,Exklusives Paket (Einsatz ins Manor),Event-Mail,"Liebe(r) Senpai,\n\ndie heutigen Belohnungen des exklusiven Pakets ({1} x3) zum Manor wurden bereits gesendet. Los zum Manor, um die anderen Spieler zu plündern!"
 238,Einsatz ins Manor,Event-Mail,"Liebe(r) Senpai,\n\ndein Abenteuer im Manor ist beendet und die Besichtigungsphase beginnt! Danke für deine fleißige Arbeit!"
 241,Zusatzbelohnung (Verlassene Raumstation),Event-Mail,"Liebe(r) Senpai,\n\ndu hast die zusätzlichen Belohnungen im Event ""Verlassene Raumstation"" entsperrt! Deinen abgeschlossenen Raumstationen entsprechend werden folgende Belohnungen gesendet. Bitte sammle sie ein!"
@@ -301,5 +301,9 @@ GXB2 Entwicklungsteam"
 256,Per. Beloh. zum Gilden-Wettbewerb,Systembenachrichtigung,"Gratuliere, du hast im Gilden-Wettbewerb den {1}. Platz in deiner Gilde belegt. Hier sind deine Belohnungen!"
 257,Neue Elite Arena hat begonnen!,Systembenachrichtigung,"Liebe(r) Senpai, die brandneue Elite Arena im Überserver-Modus wurde bereits eingeführt. Fordere schnell stärkere Gegner heraus!"
 258,Belohnungen zu Luvlys Aufgaben,Systembenachrichtigung,"Gratuliere, du hast im Event ""Luvlys Inselreise"" {1} Steuer verwendet und die Aufgabe von Lulvy abgeschlossen! Hier sind die Belohnungen!"
-259,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""{1}"" auf der To-Do-Liste von Polly abgeschlossen und folgende Belohnungen erhalten!"
+259,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Tägliches Anmelden ({1}/7)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"
 260,Gilden-Beloh. zum Gilden-Wettbewerb,Systembenachrichtigung,Vielen Dank für deine Teilnahme am Gilden-Wettbewerb. Hier sind die Belohnungen zum letzten Gilden-Wettbewerb!
+261,Belohnungen zum Drachenpalast,Event-Mail,"Gratuliere, du hast die Aufgabe ""Sammle 1 {1} ein"" abgeschlossen und folgende Belohnungen erhalten!"
+262,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Schließe eine 4/5/6/7-Sterne Jobaufgabe ab ({1}/10)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"
+263,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Schließe 3 Kämpfe in der Arena ab ({1}/10)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"
+264,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Verwende 10 Stempel ({1}/10)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"

@@ -109,10 +109,12 @@ function ActivityGoldfishAwards:setItem()
 	table.sort(awards, function (a, b)
 		local maxPoint = xyd.tables.activityGoldfishAwardTable:getPoint(xyd.tables.activityGoldfishAwardTable:getIDs()[#xyd.tables.activityGoldfishAwardTable:getIDs()])
 
-		if a.point <= math.fmod(a.curPoint, maxPoint) == (b.point <= math.fmod(b.curPoint, maxPoint)) then
+		dump(a)
+
+		if a.point <= a.curPoint == (b.point <= b.curPoint) then
 			return a.point < b.point
 		else
-			return math.fmod(a.curPoint, maxPoint) < a.point
+			return a.curPoint < a.point
 		end
 	end)
 	NGUITools.DestroyChildren(self.groupItem.transform)
