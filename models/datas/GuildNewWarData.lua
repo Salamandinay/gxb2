@@ -813,11 +813,13 @@ function GuildNewWarData:onGetOtherDefFormation(event)
 	if self.allPlayerDefFormation[self.tempReqOtherID] and not self.allPlayerDefFormation[self.tempReqOtherID].star then
 		for i = 1, 3 do
 			for j = 1, 6 do
-				local infoPartner = data.teams[i].partners[j]
+				if data.teams and data.teams[i] and data.teams[i].partners then
+					local infoPartner = data.teams[i].partners[j]
 
-				if infoPartner then
-					local star = xyd.tables.partnerTable:getStar(infoPartner.table_id) + (infoPartner.awake or 0)
-					infoPartner.star = star
+					if infoPartner then
+						local star = xyd.tables.partnerTable:getStar(infoPartner.table_id) + (infoPartner.awake or 0)
+						infoPartner.star = star
+					end
 				end
 			end
 		end

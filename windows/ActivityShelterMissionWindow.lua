@@ -355,7 +355,9 @@ function ActivityShelterGiftBagItem:setRedPoint(flag)
 end
 
 function ActivityShelterGiftBagItem:setPlus(flag)
-	self.plusImg_:SetActive(flag)
+	if self.plusImg_ and not tolua.isnull(self.plusImg_) then
+		self.plusImg_:SetActive(flag)
+	end
 end
 
 function ActivityShelterGiftBagItem:setIconSource(iconName)

@@ -145,6 +145,11 @@ end
 function PirateLandItem:onClickStory(id, text_type)
 	if text_type == 1 then
 		local start_id = xyd.tables.activityPiratePlotListTable:getPlotIdById(id)
+		local win = xyd.WindowManager.get():getWindow("story_window")
+
+		if win then
+			return
+		end
 
 		xyd.WindowManager.get():openWindow("story_window", {
 			story_type = xyd.StoryType.ACTIVITY_PIRATE,
@@ -159,9 +164,19 @@ function PirateLandItem:onClickStory(id, text_type)
 			end
 		})
 	else
-		xyd.WindowManager.get():openWindow("activity_pirate_story_window", {
-			story_id = id
-		})
+		local win = xyd.WindowManager.get():getWindow("activity_pirate_story_window")
+
+		if not win then
+			xyd.WindowManager.get():openWindow("activity_pirate_story_window", {
+				story_id = id
+			})
+		else
+			xyd.WindowManager.get():closeWindow("activity_pirate_story_window", function ()
+				xyd.openWindow("activity_pirate_story_window", {
+					story_id = id
+				})
+			end)
+		end
 	end
 end
 
@@ -185,6 +200,11 @@ function ActivityPirate:initUI()
 
 	if xyd.arrayIndexOf(self.activityData.detail.story_ids, 1) <= 0 and not xyd.GuideController.get():isPlayGuide() then
 		local start_id = xyd.tables.activityPiratePlotListTable:getPlotIdById(1)
+		local win = xyd.WindowManager.get():getWindow("story_window")
+
+		if win then
+			return
+		end
 
 		xyd.WindowManager.get():openWindow("story_window", {
 			story_type = xyd.StoryType.ACTIVITY_PIRATE,

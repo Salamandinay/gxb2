@@ -45,7 +45,7 @@ function ActivityAngleTeaPartyData:onAward(event)
 end
 
 function ActivityAngleTeaPartyData:register()
-	self:registerEvent(xyd.event.GET_MISSION_AWARD, function ()
+	self:registerEvent(xyd.event.GET_MISSION_AWARDS, function ()
 		local msg = messages_pb:get_activity_info_by_id_req()
 		msg.activity_id = xyd.ActivityID.ACTIVITY_ANGLE_TEA_PARTY
 

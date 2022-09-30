@@ -280,7 +280,6 @@ end
 function ActivityAngleTeaPartyWindow:loadModel()
 	local partnerID = 56006
 	local modelID = 5600606
-	local scale = xyd.tables.modelTable:getScale(modelID)
 	local name = xyd.tables.modelTable:getModelName(modelID)
 
 	if self.skinModel then
@@ -293,9 +292,9 @@ function ActivityAngleTeaPartyWindow:loadModel()
 
 	local model = xyd.Spine.new(self.modelGroup)
 
-	model:setInfo("luxifeier_pifu05_lihui01", function ()
+	model:setInfo("spdegula_pifu05_lihui01", function ()
 		model:SetLocalPosition(0, 0, 0)
-		model:SetLocalScale(scale, scale, 1)
+		model:SetLocalScale(1.1, 1.1, 1)
 		model:setRenderTarget(self.modelGroup:GetComponent(typeof(UITexture)), 1)
 		model:play("animation", 0)
 	end)

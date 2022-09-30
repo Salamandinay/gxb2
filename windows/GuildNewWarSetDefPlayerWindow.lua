@@ -83,7 +83,16 @@ function GuildNewWarSetDefPlayerWindow:initUIComponent()
 		self.sortType = index
 
 		self:updateSortGroup()
-	end)
+	end, nil, {
+		chosen = {
+			color = Color.New2(4294967295.0),
+			effectColor = Color.New2(1012112383)
+		},
+		unchosen = {
+			color = Color.New2(960513791),
+			effectColor = Color.New2(4294967295.0)
+		}
+	})
 
 	self:updateTabGroup()
 	self:updateSortGroup()
@@ -155,6 +164,14 @@ end
 function GuildNewWarSetDefPlayerWindow:updateTabGroup()
 	for i = 1, 3 do
 		self["filterChosen" .. i]:SetActive(i == self.filterIndex)
+
+		if i == self.filterIndex then
+			self["labelTab" .. i].color = Color.New2(4294967295.0)
+			self["labelTab" .. i].effectColor = Color.New2(1012112383)
+		else
+			self["labelTab" .. i].color = Color.New2(960648191)
+			self["labelTab" .. i].effectColor = Color.New2(4294967295.0)
+		end
 	end
 end
 
