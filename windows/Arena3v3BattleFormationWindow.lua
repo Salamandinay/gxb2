@@ -204,6 +204,12 @@ function Arena3v3BattleFormationWindow:ctor(name, params)
 	if self.battleType == xyd.BattleType.GUILD_NEW_WAR_DEF and params.formation then
 		self.localPartnerList = {}
 		self.nowPartnerList = {}
+		self.pets = {
+			0,
+			0,
+			0,
+			0
+		}
 
 		for i = 1, 3 do
 			for j = 1, 6 do

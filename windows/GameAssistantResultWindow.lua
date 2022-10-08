@@ -1322,6 +1322,23 @@ function GameAssistantResultWindow:onGetMissionAwardMsg(event)
 					end
 				end
 
+				if mission_id == xyd.models.mission:getFinalMissionInfo().mission_id then
+					local miniMonthCard = xyd.models.activity:getActivity(xyd.ActivityID.MONTH_CARD)
+					local endTime = 0
+
+					if miniMonthCard and miniMonthCard.detail_.charges[2] and miniMonthCard.detail_.charges[2].end_time then
+						endTime = miniMonthCard.detail_.charges[2].end_time
+					end
+
+					if miniMonthCard and miniMonthCard.detail_.charges[1] and miniMonthCard.detail_.charges[1].end_time then
+						endTime = miniMonthCard.detail_.charges[1].end_time
+					end
+
+					if xyd:getServerTime() < endTime and itemId == xyd.ItemID.CRYSTAL then
+						num = num * 2
+					end
+				end
+
 				table.insert(self.tempItems, {
 					item_id = itemId,
 					item_num = num

@@ -88,7 +88,16 @@ function GuildNewWarFightWindow:registerEvent()
 
 			for j = 1, 6 do
 				if tmpPartner[j] ~= nil then
-					havePartner = true
+					local partnerID = tmpPartner[j].partner_id or tmpPartner[j].partnerID
+					local partner = nil
+
+					if partnerID then
+						partner = xyd.models.slot:getPartner(partnerID)
+					end
+
+					if partner then
+						havePartner = true
+					end
 				end
 			end
 
@@ -266,8 +275,19 @@ function GuildNewWarFightWindow:updateMidGroup()
 		for j = 1, 6 do
 			local beginX = 23
 			local infoSelfPartner = self.attackFormationData.teams[i].partners[j]
+			local partnerID = nil
 
 			if infoSelfPartner then
+				partnerID = infoSelfPartner.partner_id or infoSelfPartner.partnerID
+			end
+
+			local partner = nil
+
+			if partnerID then
+				partner = xyd.models.slot:getPartner(partnerID)
+			end
+
+			if partner then
 				local params1 = infoSelfPartner
 				params1.uiRoot = self["itemGoupSelf" .. i]
 				params1.scale = 0.4444444444444444

@@ -343,11 +343,16 @@ function GuildNewWarData:reqFight(nodeID, flagID, is_revenge, is_revenge_index, 
 
 		for j = 1, 6 do
 			if tmpPartner[j] ~= nil then
-				local fight_partner = messages_pb:fight_partner()
-				fight_partner.partner_id = tmpPartner[j].partner_id or tmpPartner[j].partnerID
-				fight_partner.pos = j
+				local partnerID = tmpPartner[j].partner_id or tmpPartner[j].partnerID
+				local partner = xyd.models.slot:getPartner(partnerID)
 
-				table.insert(teamOne.partners, fight_partner)
+				if partner then
+					local fight_partner = messages_pb:fight_partner()
+					fight_partner.partner_id = tmpPartner[j].partner_id or tmpPartner[j].partnerID
+					fight_partner.pos = j
+
+					table.insert(teamOne.partners, fight_partner)
+				end
 			end
 		end
 
@@ -1037,7 +1042,64 @@ function GuildNewWarData:getDefFormation()
 end
 
 function GuildNewWarData:getPvPBattleFormation()
-	local formationData = self:getDefFormation()
+	local DefFormationData = self:getDefFormation()
+	local formationData = {
+		power = 0,
+		teams = {
+			{
+				partners = {}
+			},
+			{
+				partners = {}
+			},
+			{
+				partners = {}
+			}
+		}
+	}
+
+	for i = 1, 18 do
+		local row = 1
+		local col = i
+
+		if i > 12 then
+			row = 3
+			col = i - 12
+		elseif i > 6 then
+			row = 2
+			col = i - 6
+		end
+
+		local partnerID = nil
+
+		if DefFormationData.teams[row].partners[col] then
+			partnerID = tonumber(DefFormationData.teams[row].partners[col].partner_id)
+		end
+
+		local petID = nil
+
+		if DefFormationData.teams[row].pet then
+			petID = tonumber(DefFormationData.teams[row].pet)
+		end
+
+		if partnerID then
+			local partner = xyd.models.slot:getPartner(partnerID)
+
+			if partner then
+				formationData.teams[row].partners[col] = partner
+			end
+		end
+
+		if petID then
+			local pet = xyd.models.petSlot:getPetByID(petID)
+
+			if pet then
+				formationData.teams[row].pet = pet
+			end
+		end
+	end
+
+	formationData.power = DefFormationData.power
 
 	if not self.pvpPartners then
 		local dbVal = xyd.db.formation:getValue(xyd.BattleType.GUILD_NEW_WAR)
