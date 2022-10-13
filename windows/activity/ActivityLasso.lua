@@ -117,13 +117,39 @@ function ActivityLasso:registListener()
 	end
 
 	UIEventListener.Get(self.addBtn).onClick = function ()
-		local params = {
-			showGetWays = true,
+		xyd.WindowManager:get():openWindow("activity_item_getway_window", {
+			activityData = self.activityData.detail,
 			itemID = xyd.ItemID.LASSO,
-			wndType = xyd.ItemTipsWndType.ACTIVITY
-		}
+			activityID = xyd.ActivityID.ACTIVITY_LASSO,
+			openItemBuyWnd = function ()
+				local limit = xyd.tables.miscTable:getNumber("activity_lasso_buy_limit", "value")
 
-		xyd.WindowManager.get():openWindow("item_tips_window", params)
+				if limit <= self.activityData.detail.buy_times then
+					xyd.alertTips(__("FULL_BUY_SLOT_TIME"))
+
+					return
+				end
+
+				xyd.WindowManager.get():openWindow("item_buy_window", {
+					hide_min_max = false,
+					item_no_click = false,
+					cost = xyd.tables.miscTable:split2Cost("activity_lasso_buy", "value", "|#")[1],
+					max_num = limit - self.activityData.detail.buy_times,
+					itemParams = {
+						num = 1,
+						itemID = xyd.ItemID.LASSO
+					},
+					buyCallback = function (num)
+						local msg = messages_pb.boss_buy_req()
+						msg.activity_id = xyd.ActivityID.ACTIVITY_LASSO
+						msg.num = num
+
+						xyd.Backend.get():request(xyd.mid.BOSS_BUY, msg)
+					end,
+					limitText = __("BUY_GIFTBAG_LIMIT", self.activityData.detail.buy_times .. "/" .. limit)
+				})
+			end
+		})
 	end
 
 	for i = 1, 15 do

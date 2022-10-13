@@ -711,13 +711,17 @@ function HouseItem:updateEffectPos()
 	local selfPos = self:getGameObject().transform.localPosition
 	local x_ = pos.x - selfPos.x + offX
 	local y_ = pos.y - selfPos.y - offY
-
-	effect:SetLocalPosition(x_, y_, 0)
-
 	local scale_ = HouseFurnitureEffectTable:scale(texiaoID)
 	local info = self:getInfo()
 	local scaleX = info.is_flip == 0 and scale_ or -scale_
+	local type = HouseFurnitureTable:type(self.itemID_)
 
+	if type == xyd.HouseItemType.WALL_DECORATION and info.cur_grid_type == xyd.HouseGridType.RIGHT_WALL then
+		scaleX = -1 * scaleX
+		x_ = -1 * x_
+	end
+
+	effect:SetLocalPosition(x_, y_, 0)
 	effect:SetLocalScale(scaleX, scale_, 1)
 end
 

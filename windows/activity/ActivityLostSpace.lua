@@ -55,7 +55,7 @@ end
 function ActivityLostSpace:initUIComponent()
 	local storyWindow = xyd.WindowManager.get():getWindow("story_window")
 
-	if not storyWindow then
+	if not storyWindow and not xyd.GuideController.get():isPlayGuide() then
 		local storyId = xyd.tables.miscTable:getNumber("activity_lost_space_plot", "value")
 
 		if xyd.arrayIndexOf(self.activityData.detail.plots, storyId) < 0 then

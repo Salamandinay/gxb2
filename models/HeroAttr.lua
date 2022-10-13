@@ -385,6 +385,7 @@ function HeroAttr:attr(hero, params)
 			resist_ck = calculateOne(nil, "resist_ck"),
 			resist_yx = calculateOne(nil, "resist_yx"),
 			allDmgRate = calculateOne(xyd.BUFF_ALL_DMG_RATE),
+			critTimeLimit = calculateOne(xyd.BUFF_CRIT_TIME_LIMIT),
 			power = power
 		}
 
@@ -438,6 +439,7 @@ function HeroAttr:attr(hero, params)
 				resist_ck = calculateOne(nil, "resist_ck"),
 				resist_yx = calculateOne(nil, "resist_yx"),
 				allDmgRate = attribs.allDmgRate,
+				critTimeLimit = attribs.critTimeLimit,
 				power = attribs.power
 			}
 

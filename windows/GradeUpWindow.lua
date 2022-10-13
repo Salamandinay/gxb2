@@ -151,7 +151,7 @@ function GradeUpWindow:initAttrLabel()
 
 		params[1] = string.upper(params[1])
 
-		AttrLabel.new(self.attrChangeGroup, "change", params)
+		AttrLabel.new(self.attrChangeGroup, "change", params, attrs)
 	end
 
 	self.partner_.grade = self.partner_.grade - 1

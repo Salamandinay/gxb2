@@ -299,10 +299,10 @@ function TimeCloisterHelpPartnerWindow:updateGroupAllAttr()
 		local label = self.groupAllAttrLables[i]
 
 		if label == nil then
-			label = AttrLabel.new(self.groupAllAttr, "large", params)
+			label = AttrLabel.new(self.groupAllAttr, "large", params, attrs)
 			self.groupAllAttrLables[i] = label
 		else
-			label:setValue(params)
+			label:setValue(params, attrs)
 		end
 
 		if xyd.Global.lang == "de_de" then

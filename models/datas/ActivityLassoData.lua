@@ -7,6 +7,24 @@ function ActivityLassoData:ctor(params)
 
 	self.isCheckBackPackNum = true
 	self.isNeedBackShowRed = false
+
+	self:registerEvent(xyd.event.BOSS_BUY, handler(self, self.onItemBuyBack))
+end
+
+function ActivityLassoData:onItemBuyBack(event)
+	if event.data.activity_id and event.data.activity_id == xyd.ActivityID.ACTIVITY_LASSO then
+		local getCost = xyd.tables.miscTable:split2Cost("activity_lasso_buy", "value", "|#")[2]
+		local timesDis = event.data.buy_times - self.detail.buy_times
+
+		xyd.models.itemFloatModel:pushNewItems({
+			{
+				item_id = getCost[1],
+				item_num = getCost[2] * timesDis
+			}
+		})
+
+		self.detail.buy_times = event.data.buy_times
+	end
 end
 
 function ActivityLassoData:getUpdateTime()

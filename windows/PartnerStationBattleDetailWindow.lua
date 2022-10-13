@@ -138,7 +138,7 @@ function PartnerStationBattleDetailWindow:updateGroupAllAttr(partnerInfo)
 		local label = AttrLabel.new(self.groupAllAttr, "large", {
 			string.upper(key),
 			value
-		})
+		}, attrs)
 	end
 
 	self.groupAllAttr:GetComponent(typeof(UILayout)):Reposition()

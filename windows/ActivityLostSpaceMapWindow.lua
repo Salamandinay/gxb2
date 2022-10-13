@@ -133,7 +133,7 @@ function ActivityLostSpaceMapWindow:registerEvent()
 		local awardsArr = {}
 
 		for i = 1, 29 do
-			local awards = xyd.tables.activityLostSpaceAwardsTable:getAward(i)
+			local awards = xyd.tables.activityLostSpaceAwardsTable:getAward(i)[1]
 			local param = {
 				isShowMark = false,
 				itemId = awards[1],
@@ -149,7 +149,7 @@ function ActivityLostSpaceMapWindow:registerEvent()
 			table.insert(awardsArr, param)
 		end
 
-		local awards = xyd.tables.activityLostSpaceAwardsTable:getAward(30)
+		local awards = xyd.tables.activityLostSpaceAwardsTable:getAward(30)[1]
 		local allLength = #xyd.tables.activityLostSpaceAwardsTable:getIDs()
 		local param = {
 			isShowMark = false,
@@ -1828,7 +1828,7 @@ function rewardItem:update(_, info)
 	end
 
 	self.info = info
-	local award = xyd.tables.activityLostSpaceAwardsTable:getAward(info.id)
+	local award = xyd.tables.activityLostSpaceAwardsTable:getAward(info.id)[1]
 	local params = {
 		isAddUIDragScrollView = true,
 		isShowSelected = false,

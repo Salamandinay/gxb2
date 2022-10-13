@@ -634,10 +634,10 @@ function DressItemUpWindow:dressUpgradeDressBack()
 		self:updateCostInfo()
 	end
 
-	if self.curShowRightItemId and self.curShowRightItemId > 0 then
-		local dress_id = xyd.tables.senpaiDressItemTable:getDressId(self.curShowRightItemId)
+	if curRightId and curRightId > 0 then
+		local dress_id = xyd.tables.senpaiDressItemTable:getDressId(curRightId)
 
-		xyd.models.dress:updateGroupItems(self.curShowRightItemId, dress_id, true)
+		xyd.models.dress:updateGroupItems(curRightId, dress_id, true)
 	end
 end
 

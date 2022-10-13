@@ -47,6 +47,8 @@ function SpaceExploreAwardItem:update(_, _, id)
 	local awardItem = xyd.tables.activitySpfarmAwardTable:getAwards(self.id_)
 
 	for idx, itemInfo in ipairs(awardItem) do
+		local isNew = itemInfo[1] == 6773
+
 		if not self.itemList_[idx] then
 			self.itemList_[idx] = xyd.getItemIcon({
 				notPlaySaoguang = true,
@@ -56,7 +58,8 @@ function SpaceExploreAwardItem:update(_, _, id)
 				itemID = itemInfo[1],
 				num = itemInfo[2],
 				dragScrollView = self.parent_.scrollView_,
-				callback = funcClick
+				callback = funcClick,
+				isNew = isNew
 			})
 		else
 			NGUITools.Destroy(self.itemList_[idx]:getGameObject())
@@ -69,7 +72,8 @@ function SpaceExploreAwardItem:update(_, _, id)
 				itemID = itemInfo[1],
 				num = itemInfo[2],
 				dragScrollView = self.parent_.scrollView_,
-				callback = funcClick
+				callback = funcClick,
+				isNew = isNew
 			})
 		end
 

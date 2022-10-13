@@ -16,6 +16,26 @@ function ActivitySpfarmSupplyData:onAward(event)
 			break
 		end
 	end
+
+	local charges2 = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_SPFARM).detail.charges
+
+	for i = 1, #charges2 do
+		if charges2[i].table_id == giftbag_id then
+			charges2[i].buy_times = charges2[i].buy_times + 1
+
+			break
+		end
+	end
+end
+
+function ActivitySpfarmSupplyData:checkSpecialBuy()
+	for i = 1, #self.detail.charges do
+		if self.detail.charges[i].table_id == 438 then
+			return self.detail.charges[i].buy_times >= 1
+		end
+	end
+
+	return false
 end
 
 function ActivitySpfarmSupplyData:getRedMarkState()

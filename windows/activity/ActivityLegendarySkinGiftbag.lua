@@ -67,15 +67,15 @@ function ActivityLegendarySkinGiftbag:layout()
 	local skin_id = xyd.tables.activityLengarySkinTable:getShowSkin(self.lengarySkinID_)
 
 	self.partnerImg:setImg({
-		girl_model_height = 2,
+		girl_model_height = 2000,
 		showResLoading = true,
 		windowName = self.name_,
 		itemID = skin_id
 	})
 
-	local offset = xyd.tables.activityLengarySkinTable:getSkinOffest(self.lengarySkinID_)
-	local scale = xyd.tables.activityLengarySkinTable:getSkinScale(self.lengarySkinID_) * 0.8
-	self.effectRoot_.transform.localPosition = Vector3(-225, -700, 0)
+	local offset = xyd.tables.activityLengarySkinTable:getSkinOffest2(self.lengarySkinID_)
+	local scale = xyd.tables.activityLengarySkinTable:getSkinScale(self.lengarySkinID_)
+	self.effectRoot_.transform.localPosition = Vector3(offset[1], offset[2], 0)
 	self.effectRoot_.transform.localScale = Vector3(scale, scale, scale)
 end
 

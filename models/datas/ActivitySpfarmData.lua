@@ -257,6 +257,19 @@ function ActivitySpfarmData:onAward(data)
 		xyd.itemFloat(itemList)
 	elseif type == xyd.ActivitySpfarmType.RANK_LIST then
 		self.rankList_ = info.list
+	elseif type == xyd.ActivitySpfarmType.BATTLE_PASS_AWARD then
+		local batch_result = info.batch_result
+
+		for _, info in ipairs(batch_result) do
+			local index = info.index
+			local id = info.id
+
+			if index == 1 then
+				self.detail_.awarded[id] = 1
+			else
+				self.detail_.paid_awarded[id] = 1
+			end
+		end
 	elseif type == xyd.ActivitySpfarmType.RANK_LIST_FRIEND then
 		local friendList = info.list
 		self.rankFriend_ = {
@@ -825,6 +838,18 @@ function ActivitySpfarmData:isGridAllEmpty()
 	end
 
 	return true
+end
+
+function ActivitySpfarmData:checkSpecialBuy()
+	if self.detail.charges then
+		for i = 1, #self.detail.charges do
+			if self.detail.charges[i].table_id == 438 then
+				return self.detail.charges[i].buy_times >= 1
+			end
+		end
+	end
+
+	return false
 end
 
 return ActivitySpfarmData

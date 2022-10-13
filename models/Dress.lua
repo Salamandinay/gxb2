@@ -333,8 +333,6 @@ function Dress:getGroupItems(group)
 end
 
 function Dress:onGetData(event)
-	dump(xyd.decodeProtoBuf(event.data), "test get data==========")
-
 	self.base_info = xyd.decodeProtoBuf(event.data)
 
 	if not self.base_info.equiped_styles then
@@ -699,6 +697,10 @@ function Dress:dressUpgradeDressBack(event)
 		}
 	end
 
+	if self:getBaseInfo().dynamics[tostring(self.summon_count_skill_id)] then
+		self:countAttrs(self:getBaseInfo().dynamics[tostring(self.summon_count_skill_id)])
+	end
+
 	for i in pairs(self:getBaseInfo().attrs) do
 		self:getBaseInfo().attrs[i] = self:getBaseInfo().attrs[i] - self.summon_attrs[i]
 	end
@@ -1011,7 +1013,6 @@ function Dress:dressSpecialBuffBack(event)
 		elseif data.buff_id == xyd.DressBuffAttrType.GAMBLE_COMMON_GET or data.buff_id == xyd.DressBuffAttrType.GAMBLE_COMMON then
 			self:waitBuffsMerge(7, data.buff_id, time)
 		else
-			print("显示了日志:", data.buff_id)
 			self:checkDelayShowBuffTips(data.buff_id)
 		end
 	end

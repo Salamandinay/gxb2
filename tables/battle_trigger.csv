@@ -179,3 +179,7 @@ id,trigger,desc,is_god_skill,limit_times,is_die_pas,is_hp_pas,is_can_use_by_pas,
 178,SELF_ATTACKED_ONCE,-1,,,,,1,1
 179,FRIEND_SKILL_WITHOUT_SELF_H_2,-1,,,,,,
 180,SELF_ATTACKED_BY_ANSUNA_TO_SHIELD,-1,,,,,,
+181,FRIEND_ATTACKED_BY_BLIND,-1,,,,,,
+182,SELF_HEAL_ONCE,-1,,,,,1,1
+183,SELF_ROUND_END_NO_SKILL,-1,,,,,,
+184,SELF_NO_BLOCK,-1,,,,,1,

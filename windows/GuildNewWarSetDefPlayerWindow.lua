@@ -43,6 +43,7 @@ function GuildNewWarSetDefPlayerWindow:getUIComponent()
 	for i = 1, 3 do
 		self["tab" .. i] = self.nav:NodeByName("tab_" .. i).gameObject
 		self["labelTab" .. i] = self["tab" .. i]:ComponentByName("label", typeof(UILabel))
+		self["iconTab" .. i] = self["tab" .. i]:ComponentByName("icon", typeof(UISprite))
 		self["filterChosen" .. i] = self["tab" .. i]:ComponentByName("chosen", typeof(UISprite))
 	end
 
@@ -162,15 +163,30 @@ function GuildNewWarSetDefPlayerWindow:updateContent()
 end
 
 function GuildNewWarSetDefPlayerWindow:updateTabGroup()
+	local iconUnchosenArr = {
+		"guild_new_war2_bg_qianl_1",
+		"guild_new_war2_bg_zhongl_1",
+		"guild_new_war2_bg_hou_1"
+	}
+	local iconChosenArr = {
+		"guild_new_war2_bg_qianl",
+		"guild_new_war2_bg_zhongl",
+		"guild_new_war2_bg_houl"
+	}
+
 	for i = 1, 3 do
 		self["filterChosen" .. i]:SetActive(i == self.filterIndex)
 
 		if i == self.filterIndex then
 			self["labelTab" .. i].color = Color.New2(4294967295.0)
 			self["labelTab" .. i].effectColor = Color.New2(1012112383)
+
+			xyd.setUISpriteAsync(self["iconTab" .. i], nil, iconChosenArr[i])
 		else
 			self["labelTab" .. i].color = Color.New2(960648191)
 			self["labelTab" .. i].effectColor = Color.New2(4294967295.0)
+
+			xyd.setUISpriteAsync(self["iconTab" .. i], nil, iconUnchosenArr[i])
 		end
 	end
 end

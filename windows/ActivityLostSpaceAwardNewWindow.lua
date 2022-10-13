@@ -189,33 +189,44 @@ function LittleItem:update(index, info)
 	self.index = info.index
 	local allLength = #xyd.tables.activityLostSpaceAwardsTable:getIDs()
 	local baseAwards = xyd.tables.activityLostSpaceAwardsTable:getAward(self.index)
-	local baseParams = {
-		isAddUIDragScrollView = true,
-		isShowSelected = false,
-		uiRoot = self.baseItemGroup.gameObject,
-		itemID = baseAwards[1],
-		num = baseAwards[2]
-	}
 
-	if not self.baseIcon then
-		self.baseIcon = xyd.getItemIcon(baseParams, xyd.ItemIconType.ADVANCE_ICON)
-	else
-		self.baseIcon:SetActive(true)
-		self.baseIcon:setInfo(baseParams)
+	for i in pairs(baseAwards) do
+		if not self.baseIcon then
+			self.baseIcon = {}
+		end
+
+		local baseParams = {
+			isAddUIDragScrollView = true,
+			isShowSelected = false,
+			uiRoot = self.baseItemGroup.gameObject,
+			itemID = baseAwards[i][1],
+			num = baseAwards[i][2]
+		}
+
+		if not self.baseIcon[i] then
+			self.baseIcon[i] = xyd.getItemIcon(baseParams, xyd.ItemIconType.ADVANCE_ICON)
+		else
+			self.baseIcon[i]:SetActive(true)
+			self.baseIcon[i]:setInfo(baseParams)
+		end
+
+		self.baseIcon[i]:setScale(0.7037037037037037)
+
+		if self.index < baseCommonAwardNum then
+			if self.index < self.parent.activityData.detail.stage_id then
+				self.baseIcon[i]:setChoose(true)
+			else
+				self.baseIcon[i]:setChoose(false)
+			end
+		elseif self.parent.activityData.detail.stage_id <= allLength then
+			self.baseIcon[i]:setChoose(false)
+		else
+			self.baseIcon[i]:setChoose(true)
+		end
 	end
 
-	self.baseIcon:setScale(0.7037037037037037)
-
-	if self.index < baseCommonAwardNum then
-		if self.index < self.parent.activityData.detail.stage_id then
-			self.baseIcon:setChoose(true)
-		else
-			self.baseIcon:setChoose(false)
-		end
-	elseif self.parent.activityData.detail.stage_id <= allLength then
-		self.baseIcon:setChoose(false)
-	else
-		self.baseIcon:setChoose(true)
+	for i = #baseAwards + 1, #self.baseIcon do
+		self.baseIcon[i]:SetActive(false)
 	end
 
 	if self.index == baseCommonAwardNum then

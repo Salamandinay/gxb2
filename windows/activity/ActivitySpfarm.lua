@@ -5,6 +5,7 @@ local json = require("cjson")
 
 function ActivitySpfarm:ctor(parentGO, params, parent)
 	ActivitySpfarm.super.ctor(self, parentGO, params, parent)
+	dump(self.activityData.detail)
 end
 
 function ActivitySpfarm:getPrefabPath()

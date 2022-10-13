@@ -49,7 +49,13 @@ function ActivitySpfarmSupply:initUIComponent()
 	xyd.setUISpriteAsync(self.textImg_, nil, "activity_spfarm_giftbag_text_" .. xyd.Global.lang)
 
 	self.textLabel01_.text = __("ACTIVITY_SPFARM_TEXT99")
-	self.tipLabel_.text = __("SPACE_EXPLORE_SUPPLY_TEXT02")
+	self.tipLabel_.text = __("ACTIVITY_SPFARM_BATTLEPASS_TEXT07")
+
+	if xyd.Global.lang == "fr_fr" then
+		self.tipLabel_.width = 80
+		self.tipLabel_.height = 80
+	end
+
 	self.itemTips1.text = __("ACTIVITY_SPFARM_TEXT90")
 
 	if xyd.Global.lang == "en_en" then

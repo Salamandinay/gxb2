@@ -90,6 +90,10 @@ function ShrineHurdleAutoSettingWindow:layout()
 end
 
 function ShrineHurdleAutoSettingWindow:updatePartnerList()
+	if not self.autoTeam then
+		self.autoTeam = {}
+	end
+
 	for i = 1, 6 do
 		local pos = i
 		local partner_id = self.autoTeam[i]

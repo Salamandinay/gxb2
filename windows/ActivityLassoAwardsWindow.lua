@@ -137,7 +137,8 @@ function AwardItem:update(index, info)
 				itemID = awards[i][1],
 				num = awards[i][2],
 				wndType = xyd.ItemTipsWndType.ACTIVITY,
-				dragScrollView = self.parent.scroller
+				dragScrollView = self.parent.scroller,
+				isNew = awards[i][1] == 6773
 			}
 
 			if self.icons[i] == nil then

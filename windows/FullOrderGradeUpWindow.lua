@@ -234,7 +234,7 @@ function FullOrderGradeUpWindow:initAttrLabel()
 
 		params[1] = string.upper(params[1])
 
-		AttrLabel.new(self.attrChangeGroup, "change", params)
+		AttrLabel.new(self.attrChangeGroup, "change", params, attrs)
 	end
 
 	self.attrChangeGroupGrid:Reposition()

@@ -22,9 +22,9 @@ function HouseHero:ctor(parentGO)
 	self.actions = {
 		IDLE2 = "idle",
 		TOUCH2 = "hit",
-		TOUCH_SPECAIL = "hit2",
+		TOUCH_SPECAIL = "hit1",
 		LIE = "lie",
-		IDLE_SPECAIL = "specail_idle",
+		IDLE_SPECAIL = "houseidle1",
 		TOUCH = "hurt",
 		IDLE = "houseidle",
 		WALK = "walk",
@@ -288,7 +288,10 @@ function HouseHero:idle()
 		self:checkResetStatePlayAtFrame()
 	else
 		self:checkResetState()
-		self.heroModel_:play(self.actions.IDLE, 0)
+
+		local playName = self:checkHouseIdle1(self.actions.IDLE)
+
+		self.heroModel_:play(playName, 0)
 		self:checkResetStatePlayAtFrame()
 	end
 end
@@ -318,7 +321,7 @@ function HouseHero:interactIdle()
 		return
 	end
 
-	local idleName = self.actions.IDLE
+	local idleName = self:checkHouseIdle1(self.actions.IDLE)
 
 	if not self.heroModel_:hasAnimationName(idleName) then
 		idleName = self.actions.IDLE2
@@ -752,7 +755,10 @@ function HouseHero:initIdle2Action(isNewUpdateZorder)
 		end)
 	else
 		self:checkResetState()
-		self.heroModel_:play(self.actions.IDLE, 2, 1, function ()
+
+		local playName = self:checkHouseIdle1(self.actions.IDLE)
+
+		self.heroModel_:play(playName, 2, 1, function ()
 			if self.curActionType == xyd.HouseItemActionType.IDLE2 then
 				self.curActionType = xyd.HouseItemActionType.NONE
 			end
@@ -945,7 +951,10 @@ function HouseHero:playDialogMove(params)
 		params.is_end = true
 
 		self:checkResetState()
-		self.heroModel_:play(self.actions.IDLE, 0)
+
+		local playName = self:checkHouseIdle1(self.actions.IDLE)
+
+		self.heroModel_:play(playName, 0)
 		self:checkResetStatePlayAtFrame()
 
 		return
@@ -1042,6 +1051,14 @@ function HouseHero:checkResetStatePlayAtFrame()
 	if resetState and resetState == 1 then
 		self.heroModel_:startAtFrame(0)
 	end
+end
+
+function HouseHero:checkHouseIdle1(name)
+	if name == self.actions.IDLE and name == "houseidle" and self.heroModel_:hasAnimationName(self.actions.IDLE_SPECAIL) and math.random() > 0.8 then
+		return self.actions.IDLE_SPECAIL
+	end
+
+	return name
 end
 
 return HouseHero

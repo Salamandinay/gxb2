@@ -443,9 +443,9 @@ function PartnerInfoWindow:setAttrLabel()
 			string.upper(key),
 			str
 		}
-		local label = AttrLabel.new(self.groupAllAttr, "large", params)
+		local label = AttrLabel.new(self.groupAllAttr, "large", params, attrs)
 
-		label:setValue(params)
+		label:setValue(params, attrs)
 	end
 end
 

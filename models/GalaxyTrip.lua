@@ -455,10 +455,11 @@ function GalaxyTrip:onGetGalaxyTripMapInfoBack(event)
 			self.mainInfo.count = 1
 		end
 
+		local sendTouchId = data.table_id
 		data = data.map_info
 		local msg = messages_pb.log_partner_data_touch_req()
 		msg.touch_id = xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY
-		msg.desc = tostring(data.table_id)
+		msg.desc = tostring(sendTouchId)
 
 		print("send_da_dian-----touch_id:", xyd.DaDian.GALAXY_TRIP_CHOICE_GALAXY .. "    desc:" .. tostring(data.table_id))
 		xyd.Backend.get():request(xyd.mid.LOG_PARTNER_DATA_TOUCH, msg)

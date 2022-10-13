@@ -130,7 +130,6 @@ function StarryAltarWindow:layout()
 		self.summonEffect_:SetLocalPosition(0, 115, 0)
 		self.summonEffect_:play("idle", 0)
 	end)
-	self:initActivityLayout()
 end
 
 function StarryAltarWindow:updateChooseAward()
@@ -393,12 +392,12 @@ function StarryAltarWindow:onGetStarrySummonInfo(event)
 	local params = event.data
 	local starrySelects = params.selects
 	local type_2 = params.type_2 or 0
-	self.chooseIndex = tonumber(starrySelects[xyd.checkCondition(self.mode1ID > 1, 2, 1)]) or 0
 	self.leftTimeToSpecialAward = StarryAltarTable:getType2Award(self.mode2ID)[1][1] - type_2
 
 	self:checkSummonId()
 	self:updateChooseAward()
 	self:updateModeContent()
+	self:initActivityLayout()
 end
 
 function StarryAltarWindow:onStarrySummon(event)

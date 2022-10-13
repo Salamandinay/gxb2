@@ -23,6 +23,7 @@ function ModifyAccountWindow:getUIComponent()
 	self.mid = self.main_:NodeByName("mid").gameObject
 	self.btnFacebook_ = self.mid:NodeByName("btnFacebook_").gameObject
 	self.btnGoogle_ = self.mid:NodeByName("btnGoogle_").gameObject
+	self.handTipsEffect = self.btnGoogle_:ComponentByName("handTipsEffect", typeof(UITexture))
 	self.btnLine_ = self.mid:NodeByName("btnLine_").gameObject
 	self.btnGameCenter_ = self.mid:NodeByName("btnGameCenter_").gameObject
 	self.bot = self.main_:NodeByName("bot").gameObject
@@ -62,6 +63,15 @@ function ModifyAccountWindow:layout()
 		btnLinelabel = __("LINE_REGISTER")
 		btnGameCenterlabel = __("GAMECENTER_REGISTER")
 		btnApplelabel = "Sign in with Apple"
+
+		if not self.googleHandEffect then
+			self.googleHandEffect = xyd.Spine.new(self.handTipsEffect.gameObject)
+
+			self.googleHandEffect:setInfo("fx_ui_dianji", function ()
+				self.googleHandEffect:play("texiao01", 0, 1, function ()
+				end)
+			end)
+		end
 	end
 
 	self.btnOther_:ComponentByName("button_label", typeof(UILabel)).text = btnOtherlabel

@@ -44,6 +44,9 @@ function ActivitySpfarmMapWindow:getUIComponent()
 	self.recordUpLayoutCon = self.recordUpBtn:NodeByName("recordUpLayoutCon").gameObject
 	self.recordUpLayoutConUILayout = self.recordUpBtn:ComponentByName("recordUpLayoutCon", typeof(UILayout))
 	self.recordUpBtnLabel = self.recordUpLayoutCon:ComponentByName("recordUpBtnLabel", typeof(UILabel))
+	self.battlePassBtn = self.rightUpCon:NodeByName("battlePassBtn").gameObject
+	self.battlePassBtnLabel = self.rightUpCon:ComponentByName("battlePassBtn/label", typeof(UILabel))
+	self.battlePassRed = self.rightUpCon:NodeByName("battlePassBtn/redPoint").gameObject
 	self.upCon = self.groupAction:NodeByName("upCon").gameObject
 	self.logoImg = self.upCon:ComponentByName("logoImg", typeof(UISprite))
 	self.famousLabel = self.upCon:ComponentByName("famousLabel", typeof(UILabel))
@@ -269,6 +272,15 @@ function ActivitySpfarmMapWindow:registerEvent()
 	UIEventListener.Get(self.recordUpBtn).onClick = function ()
 		self.activityData:reqRecord()
 	end
+
+	UIEventListener.Get(self.battlePassBtn).onClick = function ()
+		xyd.WindowManager.get():openWindow("activity_spfarm_battlepass_window", {})
+		self.battlePassRed:SetActive(false)
+		xyd.db.misc:setValue({
+			key = "spfarm_battlepass_click",
+			value = xyd.getServerTime()
+		})
+	end
 end
 
 function ActivitySpfarmMapWindow:initTop()
@@ -312,6 +324,7 @@ function ActivitySpfarmMapWindow:layout()
 	end
 
 	self.recordUpBtnLabel.text = __("REOCRD")
+	self.battlePassBtnLabel.text = __("ACTIVITY_SPFARM_BATTLEPASS_BUTTON01")
 
 	self.recordUpLayoutConUILayout:Reposition()
 
@@ -364,6 +377,14 @@ function ActivitySpfarmMapWindow:layout()
 	end
 
 	self:updateResItem()
+
+	local clickTime = xyd.db.misc:getValue("spfarm_battlepass_click")
+
+	if tonumber(clickTime) and xyd.isSameDay(tonumber(clickTime), xyd.getServerTime()) then
+		self.battlePassRed:SetActive(false)
+	else
+		self.battlePassRed:SetActive(true)
+	end
 end
 
 function ActivitySpfarmMapWindow:updateFamousNum()

@@ -141,14 +141,18 @@ function ActivityLostSpaceMaskWindow:close(callback, skipAnimation)
 		end
 
 		local award = xyd.tables.activityLostSpaceAwardsTable:getAward(stage_id)
+		local dataParams = {}
+
+		for i in pairs(award) do
+			table.insert(dataParams, {
+				item_id = award[i][1],
+				item_num = award[i][2]
+			})
+		end
+
 		local param = {
 			isNeedCostBtn = false,
-			data = {
-				{
-					item_id = award[1],
-					item_num = award[2]
-				}
-			},
+			data = dataParams,
 			wnd_type = xyd.GambleWindowType.ACTIVITY
 		}
 		local checkData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_LOST_SPACE_GIFTBAG)
