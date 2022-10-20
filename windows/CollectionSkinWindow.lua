@@ -2,8 +2,8 @@ local CollectionSkinWindow = class("CollectionSkinWindow", import(".BaseWindow")
 local PartnerCardRender = class("PartnerCardRender", import("app.common.ui.FixedMultiWrapContentItem"))
 local PartnerCard = import("app.components.PartnerCard")
 local CommonTabBar = import("app.common.ui.CommonTabBar")
-local ThemeItem = class("ThemeItem", import("app.common.ui.FlexibleWrapContentItem"))
-local LuaFlexibleWrapContent = import("app.common.ui.FlexibleWrapContent")
+local ThemeItem = class("ThemeItem", import("app.common.ui.UnequalWrapContentItem"))
+local UnequalWrapContent = import("app.common.ui.UnequalWrapContent")
 
 function CollectionSkinWindow:ctor(name, params)
 	CollectionSkinWindow.super.ctor(self, name, params)
@@ -531,21 +531,23 @@ function CollectionSkinWindow:updateContent()
 		self.themeDatas = collection
 
 		if not self.themeWrapContent then
-			self.themeWrapContent = LuaFlexibleWrapContent.new(self.themeScrollView.gameObject, ThemeItem, self.theme_item, self.themeItemContent, self.themeScrollView, nil, self)
+			local wrapContent = self.themeItemContent:ComponentByName("", typeof(FlexibleWrapContent))
+			self.themeWrapContent = UnequalWrapContent.new(self.themeScrollView, wrapContent, self.theme_item, ThemeItem, self)
 		end
 
-		self.themeWrapContent:update()
-		self.themeWrapContent:setDataNum(#self.themeDatas)
+		self.themeWrapContent:setInfos(self.themeDatas, {})
 	elseif self.sortType == 4 then
 		self.themeScrollView.gameObject:SetActive(true)
 		self.scrollView_.gameObject:SetActive(false)
 
 		if not self.themeWrapContent then
-			self.themeWrapContent = LuaFlexibleWrapContent.new(self.themeScrollView.gameObject, ThemeItem, self.theme_item, self.themeItemContent, self.themeScrollView, nil, self)
+			local wrapContent = self.themeItemContent:ComponentByName("", typeof(FlexibleWrapContent))
+			self.themeWrapContent = UnequalWrapContent.new(self.themeScrollView, wrapContent, self.theme_item, ThemeItem, self)
 		end
 
-		self.themeWrapContent:update()
-		self.themeWrapContent:setDataNum(#collection)
+		self.themeWrapContent:setInfos(collection, {
+			keepPosition = true
+		})
 	else
 		self.scrollView_.gameObject:SetActive(true)
 		self.themeScrollView.gameObject:SetActive(false)
@@ -849,21 +851,7 @@ function ThemeItem:initUI()
 	self.panel = self.parent.scrollView_.gameObject:GetComponent(typeof(UIPanel))
 end
 
-function ThemeItem:refresh()
-	if self.parent.sortType == 2 then
-		self.data = self.parent.collectionDatasByTheme[-self.realIndex]
-	elseif self.parent.sortType == 4 then
-		self.data = self.parent.collectionDatasByPartner[-self.realIndex]
-	end
-
-	if not self.data then
-		self.go.gameObject:SetActive(false)
-
-		return
-	else
-		self.go.gameObject:SetActive(true)
-	end
-
+function ThemeItem:updateInfo()
 	self.partnerTableID = self.data.partnerTableID
 	self.themeID = self.data.themeID
 	self.showIDs = self.data.showIDs
@@ -971,8 +959,6 @@ function ThemeItem:refresh()
 		self.labelNum.text = self.gotNum .. "/" .. self.skinNums
 	end
 
-	self.go:ComponentByName("", typeof(UIWidget)).height = self:getHeight()
-
 	self.contentGroup_Layout:Reposition()
 end
 
@@ -982,17 +968,11 @@ end
 
 function ThemeItem:getHeight()
 	if self.parent.sortType == 4 then
-		local data = self.parent.collectionDatasByPartner[-self.realIndex]
-
-		if data and data.partnerTableID then
-			return math.ceil(math.max(#data.showIDs - 4, 0) / 4) * 265 + 315
+		if self.data and self.data.partnerTableID then
+			return math.ceil(math.max(#self.data.showIDs - 4, 0) / 4) * 265 + 315
 		end
-	else
-		local data = self.parent.collectionDatasByTheme[-self.realIndex]
-
-		if data and data.themeID then
-			return math.ceil(math.max(#data.showIDs - 4, 0) / 4) * 265 + 315
-		end
+	elseif self.data and self.data.themeID then
+		return math.ceil(math.max(#self.data.showIDs - 4, 0) / 4) * 265 + 315
 	end
 
 	return 315

@@ -1596,7 +1596,7 @@ PERSON_MUSIC2,Classic
 PERSON_BTN_7,Music
 NORMAL_SLOT_MACHINE,Slot Machine
 HIGH_SLOT_MACHINE,Super Slot Machine
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. There are abundant rewards in each Gift Bag. Players can claim rewards in unlocked Gift Bags by signing in daily. |2. Locked Gift Bags will still hold their rewards. Players can claim all rewards stacked in them once when they're unlocked. |3. Click the Gift Bag to check the rewards. |4. The 3rd Gift Bag will be unlocked once the $69.99 Special Gift Pack is purchased.|5. Once the event ends, the remaining Seaside Coupons will automatically be exchanged into Coins at a rate of 20K Coins each. The Coins will be sent via Mail."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. There are abundant rewards in each Gift Bag. Players can claim rewards in unlocked Gift Bags by signing in daily. |2. Locked Gift Bags will still hold their rewards. Players can claim all rewards stacked in them once when they're unlocked. |3. Click the Gift Bag to check the rewards. |4. The 3rd Gift Bag will be unlocked once the $69.99 Special Gift Pack is purchased.|5. Once the event ends, the remaining Autumn Coupons will automatically be exchanged into Coins at a rate of 20K Coins each. The Coins will be sent via Mail."
 CHAPTER_COUNT,Chapter {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,This Chapter is locked.
@@ -6265,7 +6265,7 @@ GAME_ASSISTANT_TEXT106,Draw 10 Times
 GAME_ASSISTANT_TEXT107,"Lineup change in Junior Varsity detected, do you want to go and adjust your lineup?"
 GAME_ASSISTANT_TEXT108,"Lineup change in Gym detected, do you want to go and adjust your lineup?"
 GUILD_TEXT75,Guild not found
-STAR_ALTAR_TITLE,Painting the Stars
+STAR_ALTAR_TITLE,Shoot for\nthe Stars
 GROUP_7,Cosmos
 BATTLE_TIPS_DESC3,Won't be affected by Faction Rivalry
 SKILL_RESONATE_HELP,"1. Skill-Synchronize is exclusive for Girls from House Cosmos.|2. You can upgrade the Girls' skill level by consuming Brilliant Spheres and Tarnished Spheres. The Synchronize Level of a Girl will be the total level of her skills.|3. When a skill is upgraded to a certain level, it will require the other 3 skills to reach a certain level to become available to upgrade again.|4. Cosmos Girls will also gain additional Attribute bonuses as their Synchronize Level goes up.|5. You can reset the Synchronize Level and retrieve all the material that was used to upgrade the Synchronize Level with Gems."
@@ -7366,3 +7366,162 @@ ACTIVITY_2LOVE_HELP,"1. You can use Arrows of Love to reveal the cards during th
 ACTIVITY_2LOVE_TEXT10,Recharge Task
 ACTIVITY_SPFARM_BATTLEPASS_TEXT07,Unlock\nPrivilege
 ACTIVITY_SPFARM_BATTLEPASS_TIPS02,Dimensional Supply is not available during the display period
+SOUL_EQUIP_HELP,"1. Anima Gear Slots will be unlocked for Girls that reach Lv. 270. A Girl can equip 1 Anima Artifact and 4 Anima Stones (for slot 1-4) at the same time.|2. Each Anima Artifact has a fixed basic attribute. You can increase the attribute of an Anima Artifact by upgrading its level or promoting its star rank. You can also provide additional infuse attributes by infusing the Anima Artifacts.|3. Anima Stones can provide primary attributes and secondary attributes (the attribute types for each Anima Stone are at random). You can upgrade the Anima Stones to increase the attributes. You can also try to refresh the secondary attributes for the Anima Stones that have reached max level with the ""Pray"" feature.|4. The percentage of HP/Attack boosts that are provided by Anima Artifacts will only boost the corresponding attributes that are provided by Anima Gears (the attributes provided by Anima Gear will not be affected by any other percentage boosts except this one).|5. Each Anima Stone belongs to an exclusive set. A set skill will be triggered if the 4 Anima Stones equipped by a Girl belongs to 1 set.|6. You can preset Anima Gear equip plans for your Girls to face different types of battles."
+SOUL_EQUIP_TEXT01,Anima Gear
+SOUL_EQUIP_TEXT02,Overview
+SOUL_EQUIP_TEXT03,Replace
+SOUL_EQUIP_TEXT04,Plan
+SOUL_EQUIP_TEXT05,Attributes
+SOUL_EQUIP_TEXT06,Unequip
+SOUL_EQUIP_TEXT07,Infuse Attribute
+SOUL_EQUIP_TEXT08,Secondary Attribute
+SOUL_EQUIP_TEXT09,Filter by Set
+SOUL_EQUIP_TEXT10,Filter by Attribute
+SOUL_EQUIP_TEXT11,Sort
+SOUL_EQUIP_TEXT12,Level
+SOUL_EQUIP_TEXT13,Star Rank
+SOUL_EQUIP_TEXT14,Quality
+SOUL_EQUIP_TEXT15,Release
+SOUL_EQUIP_TEXT16,Slot 1
+SOUL_EQUIP_TEXT17,Slot 2
+SOUL_EQUIP_TEXT18,Slot 3
+SOUL_EQUIP_TEXT19,Slot 4
+SOUL_EQUIP_TEXT20,All
+SOUL_EQUIP_TEXT21,Details
+SOUL_EQUIP_TEXT22,Cancel
+SOUL_EQUIP_TEXT23,Confirm
+SOUL_EQUIP_TEXT24,Current
+SOUL_EQUIP_TEXT25,Save
+SOUL_EQUIP_TEXT26,Edit
+SOUL_EQUIP_TEXT27,Replace
+SOUL_EQUIP_TEXT28,Save Plan
+SOUL_EQUIP_TEXT29,4-12 Characters
+SOUL_EQUIP_TEXT30,"It is currently equipped by another Girl, confirm to continue?"
+SOUL_EQUIP_TEXT31,Plan Edit
+SOUL_EQUIP_TEXT32,Reach Lv.{1}
+SOUL_EQUIP_TEXT33,No Anima Artifact
+SOUL_EQUIP_TEXT34,No Anima Stone
+SOUL_EQUIP_TEXT35,Confirm to delete Plan {1}?
+SOUL_EQUIP_TEXT36,Star up
+SOUL_EQUIP_TEXT37,Upgrade
+SOUL_EQUIP_TEXT38,Infuse
+SOUL_EQUIP_TEXT39,Star Rank
+SOUL_EQUIP_TEXT40,Max Level
+SOUL_EQUIP_TEXT41,Infuse Capacity
+SOUL_EQUIP_TEXT42,{1}
+SOUL_EQUIP_TEXT43,Basic Attribute
+SOUL_EQUIP_TEXT44,Star up
+SOUL_EQUIP_TEXT45,Level
+SOUL_EQUIP_TEXT46,Infuse Attribute
+SOUL_EQUIP_TEXT47,Unlock after the Anima Artifact reaches {1}-star
+SOUL_EQUIP_TEXT48,Upgrade
+SOUL_EQUIP_TEXT49,Infuse Attributes will also be improved after upgrading the Anima Artifacts
+SOUL_EQUIP_TEXT50,Infuse Attribute · I
+SOUL_EQUIP_TEXT51,Infuse Attribute · II
+SOUL_EQUIP_TEXT52,Infuse Attribute · III
+SOUL_EQUIP_TEXT53,Infuse Attribute · IV
+SOUL_EQUIP_TEXT54,Infuse Attribute · V
+SOUL_EQUIP_TEXT55,Infuse
+SOUL_EQUIP_TEXT56,Convert
+SOUL_EQUIP_TEXT57,Unknown Attribute
+SOUL_EQUIP_TEXT58,Save
+SOUL_EQUIP_TEXT59,Upgrade
+SOUL_EQUIP_TEXT60,Promote
+SOUL_EQUIP_TEXT61,Pray
+SOUL_EQUIP_TEXT62,Select All
+SOUL_EQUIP_TEXT63,Type
+SOUL_EQUIP_TEXT64,Anima Stone upgrade material
+SOUL_EQUIP_TEXT65,Anima Stone
+SOUL_EQUIP_TEXT66,Star-rank
+SOUL_EQUIP_TEXT67,Bulk Upgrade
+SOUL_EQUIP_TEXT68,Confirm
+SOUL_EQUIP_TEXT69,Quality
+SOUL_EQUIP_TEXT70,Primary Attribute
+SOUL_EQUIP_TEXT71,Secondary Attribute
+SOUL_EQUIP_TEXT72,"Some Gems will be used to reverse the quality of the Anima Stone, all resources used to promote the quality of the Anima Stone will be returned after the reverse."
+SOUL_EQUIP_TEXT73,Reached the highest quality
+SOUL_EQUIP_TEXT74,Origin Secondary Attributes
+SOUL_EQUIP_TEXT75,You are able to reset the Secondary Attributes (Origin Secondary Attributes excluded) of an Anima Stone that has reached max level by consuming Soul Charms
+SOUL_EQUIP_TEXT76,Current
+SOUL_EQUIP_TEXT77,Result
+SOUL_EQUIP_TEXT78,Pray
+SOUL_EQUIP_TEXT79,Save
+SOUL_EQUIP_TEXT80,Pray will be available after upgrading the Anima Stone to max Level
+SOUL_EQUIP_TEXT81,Pray Completed
+SOUL_LAND_HELP,"1. Land of Souls feature will be unlocked after you own a Girl that has reached Lv. 270. Each season of Land of Souls will last for 28 days.|2. There are multiple areas available in Land of Souls, each area provides multiple stages for you to challenge. After defeating all enemies in your current stage in 1 challenge attempt, you will be able to pass the stage and move on to the next stage.|3. You will need to consume 1 Soul Challenge Ticket to start a challenge. You will get 10 free Soul Challenge Tickets each day (the max capacity for Soul Challenge Ticket is 100). You can also purchase additional Soul Challenge Tickets with Gems (the number of Soul Challenge Tickets can exceed max capacity with this method).|4. You can obtain a pass reward for completing a stage for the first time each season.|5. You can start to collect idle loot rewards from Land of Souls after passing at least 1 stage in the current season. The amount of loot rewards will increase as you pass more stages.|6. You can exchange rewards in the store of this feature by consuming Soul Branches. The purchase limit for the merchandise in the store will be refreshed at the start of each season. You can draw new Anima Stones from Anima Stone Ritual by consuming Soul Tokens and Shiny Soul Tokens.|7. Your Ritual will gain Ritual Exp for each Soul Token/Shiny Soul Token consumed. After obtaining a certain amount of Ritual Exp, your Ritual can be upgraded. After this, the chance to get better items from the Ritual will be also increased. The level of your Ritual will not be refreshed each season."
+SOUL_LAND_TEXT01,Remaining Time:
+SOUL_LAND_TEXT02,Pass
+SOUL_LAND_TEXT03,Progress: {1}/{2}
+SOUL_LAND_TEXT04,{1}/5 min
+SOUL_LAND_TEXT05,Collect
+SOUL_LAND_TEXT06,{1} - {2}
+SOUL_LAND_TEXT07,Enemy
+SOUL_LAND_TEXT08,Reward
+SOUL_LAND_TEXT09,Stage Details
+SOUL_LAND_TEXT10,Fight
+SOUL_LAND_TEXT11,[c][size=32]1x[-][/c] Draw
+SOUL_LAND_TEXT12,[c][size=32]10x[-][/c] Draw
+SOUL_LAND_TEXT13,Rate
+SOUL_LAND_TEXT14,Obtainable Rewards
+SOUL_LAND_TEXT15,You can obtain the Anima Stones from the following sets displayed below from this ritual.
+SOUL_LAND_TEXT16,Rate
+SOUL_LAND_TEXT17,The quality of all Anima Stones you can get from the Ritual are Blue. But their star-rank may be different according to the level of the Ritual and the type of Soul Token you use for the Ritual
+SOUL_LAND_TEXT18,Current
+SOUL_LAND_TEXT19,Next
+SOUL_LAND_AREA_TEXT01,Woods of Wonder
+SOUL_LAND_AREA_TEXT02,Ocean of Eternity
+SOUL_LAND_AREA_TEXT03,Steppe of Blessings
+SOUL_LAND_BATTLEPASS_HELP,"1. Soul Pass is designed for the Land of Souls feature. You can gain 10 points for your Soul Pass by passing each stage in Land of Souls. After obtaining certain amounts of points, you can obtain rewards from Soul Pass.|2. There are Basic Rewards and Advanced Rewards. The Advanced Rewards will be unlocked and become available to be claimed after reaching the required points.|3. Each season of Soul Pass will last for 28 days. The unlocked but unclaimed rewards for the last season of Soul Pass will be issued via Mail.|4. You can purchase additional points for Soul Pass each season, but the number of points that can be purchased each season is limited."
+SOUL_LAND_BATTLEPASS_TEXT01,Ends In {1}
+SOUL_LAND_BATTLEPASS_TEXT02,Current Points:
+SOUL_LAND_BATTLEPASS_TEXT03,Purchase Points
+SOUL_LAND_BATTLEPASS_TEXT04,Point
+SOUL_LAND_BATTLEPASS_TEXT05,Basic Reward
+SOUL_LAND_BATTLEPASS_TEXT06,Advanced Reward
+SOUL_LAND_BATTLEPASS_TEXT07,Purchase
+SOUL_LAND_BATTLEPASS_TEXT08,Obtain points by passing the stages to get the rewards from the pass. Advanced rewards will be unlocked and can be collected once you reach the requirement after purchasing the pass
+SOUL_LAND_BATTLEPASS_TEXT09,Purchase Points for Soul Pass
+SOUL_LAND_BATTLEPASS_TEXT10,Remaining Points availalbe: {1}
+DAILY_QUIZ_TITLE_TIPS,Unlock after completing all Quizzes
+DAILY_QUIZ_TITLE_DESC,Complete Daily Quizzes to get additional resources!
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON01,Preview
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,普通雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,高級雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,如果連續10次高級雕刻都沒有獲得xxx，則第11次必得xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,1.消耗xxx可以xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,南瓜燈獎勵
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,基礎獎勵
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,批量雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,請輸入批量雕刻數量
+ACTIVITY_HALLOWEEN2022_SHOP_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,前往雕刻
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,全服進度
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,免費獎勵
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,專屬禮包
+ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,全服進度達到xxx時解鎖
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,已購買，無法重複購買
+SOUL_LAND_TEXT20,All stages in this area are cleared!
+SOUL_LAND_BATTLEPASS_TEXT11,Confirm to purchase {2} Soul Pass Point(s) with {1} Gem(s)?
+SOUL_EQUIP_TEXT82,No Infuse Attribute yet
+SOUL_EQUIP_TEXT83,Plan {1}
+SOUL_LAND_BATTLEPASS_TEXT12,Purchase limit reached!
+SOUL_LAND_BATTLEPASS_TEXT13,Purchase limit reached!
+SOUL_EQUIP_TEXT84,Don't need to reset
+QUICK_FORMATION_TEXT28,Invalid Girl detected!
+SOUL_LAND_SUMMON_HELP,"1. You can get Anima Stones from Anima Stone Ritual by consuming Soul Tokens and Shiny Soul Tokens. Shiny Soul Tokens will give you a higher chance of obtaining better Anima Stones and double the amount of Exp to upgrade your Anima Stone Ritual.|2. The level of your Anima Stone Ritual will be upgraded automatically once you've obtained enough amount of Exp. The level of your Ritual will not be refreshed each season.|3. After your Ritual is upgraded, the chance to get better Anima Stones from the Ritual will also be increased. You can check out the details of the rewards you can obtain from your current Ritual by tapping the magnifying glass icon on the page."
+SOUL_LAND_TEXT21,Shop
+SOULEQUIP,Anima Gear
+SOUL_EQUIP_TEXT85,Anima Artifact
+SOUL_EQUIP_BAGMAX_TIPS,No enough space for your Anima Gear storage!
+SOUL_LAND_TEXT22,New season for Land of Souls has begun!
+SOUL_LAND_UNLOCK_TIPS,Unlocks after you have a Girl over Lv.270
+SOUL_EQUIP_TEXT86,You will need to promote the star-rank of this Anima Artifact to increase its level capacity
+SOUL_EQUIP_TEXT87,Anima Stone set skill activated
+SOUL_EQUIP_TEXT88,Promote
+SOUL_EQUIP_TEXT89,Pray
+SOUL_LAND_TEXT23,Stage
+SOUL_EQUIP_TEXT90,Anima\nGear
+SOUL_EQUIP_TEXT91,The number of saved plans has reached the limit
+NO_SOULEQUIP,No Anima Gear yet
+SOUL_EQUIP_TEXT92,You have added enough material to upgrade this to max level!

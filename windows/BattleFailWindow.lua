@@ -49,7 +49,8 @@ function BattleFailWindow:ctor(name, params)
 		xyd.BattleType.ACADEMY_ASSESSMENT,
 		[13] = xyd.BattleType.ENTRANCE_TEST_REPORT,
 		[14] = xyd.BattleType.GALAXY_TRIP_BATTLE,
-		[14] = xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
+		[15] = xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE,
+		[16] = xyd.BattleType.SOUL_LAND
 	}
 	self.isReportType = false
 	local battleReportData = params.real_battle_report
@@ -404,6 +405,8 @@ function BattleFailWindow:initReviewBtn()
 		eventName = xyd.event.GALAXY_TRIP_GRID_BATTLE
 	elseif self.battleType == xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE then
 		eventName = xyd.event.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
+	elseif self.battleType == xyd.BattleType.SOUL_LAND then
+		eventName = xyd.event.SOUL_LAND_FIGHT
 	end
 
 	UIEventListener.Get(self.battleReviewBtn).onClick = function ()
@@ -439,6 +442,11 @@ function BattleFailWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onGuildNewWarFightResult(data)
+		elseif self.battleType == xyd.BattleType.SOUL_LAND then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onSoulLandFightReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -483,6 +491,10 @@ function BattleFailWindow:initLayout()
 			self.itemGroupGuildNewWar:SetActive(true)
 			self.itemGroupGuildNewWarLayout:Reposition()
 			self.battleDetailBtn:X(290)
+		elseif self.battleType == xyd.BattleType.SOUL_LAND then
+			self.battleReviewBtn:SetActive(true)
+			self.battleDetailBtn.transform:X(260)
+			self.battleReviewBtn.transform:X(320)
 		else
 			self.battleDetailBtn:X(290)
 		end
@@ -529,7 +541,7 @@ function BattleFailWindow:initLayout()
 		end
 	end
 
-	if self.battleType == xyd.BattleType.CAMPAIGN or self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT or self.battleType == xyd.BattleType.DAILY_QUIZ or self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE or self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.EXPLORE_ADVENTURE or self.battleType == xyd.BattleType.TIME_CLOISTER_BATTLE or self.battleType == xyd.BattleType.TIME_CLOISTER_EXTRA or self.battleType == xyd.BattleType.ENTRANCE_TEST then
+	if self.battleType == xyd.BattleType.CAMPAIGN or self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT or self.battleType == xyd.BattleType.DAILY_QUIZ or self.battleType == xyd.BattleType.TOWER or self.battleType == xyd.BattleType.TOWER_PRACTICE or self.battleType == xyd.BattleType.TRIAL or self.battleType == xyd.BattleType.EXPLORE_ADVENTURE or self.battleType == xyd.BattleType.TIME_CLOISTER_BATTLE or self.battleType == xyd.BattleType.TIME_CLOISTER_EXTRA or self.battleType == xyd.BattleType.ENTRANCE_TEST or self.battleType == xyd.BattleType.SOUL_LAND then
 		self:initImproveGroup()
 		pveFun()
 	elseif self.battleType == xyd.BattleType.SPORTS_PVP then
@@ -749,6 +761,8 @@ function BattleFailWindow:closeSelf()
 		if time_cloister_probe_wd then
 			time_cloister_probe_wd:showItemsTween(self.battleParams.items, xyd.TimeCloisterExtraEvent.ENCOUNTER_BATTLE)
 		end
+	elseif self.battleType == xyd.BattleType.SOUL_LAND then
+		xyd.models.soulLand:openFightWindow(tonumber(self.battleParams.fortId))
 	end
 
 	xyd.WindowManager.get():closeWindow("battle_window")

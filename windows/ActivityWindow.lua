@@ -1799,6 +1799,9 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_PIRATE_SHOP] = function ()
 		return require("app.windows.activity.ActivityPirateShop")
+	end,
+	[xyd.ActivityID.SOUL_LAND_BATTLE_PASS] = function ()
+		return require("app.windows.activity.SoulLandBattlePass")
 	end
 }
 

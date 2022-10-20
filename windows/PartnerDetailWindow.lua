@@ -74,6 +74,7 @@ function PartnerDetailWindow:ctor(name, params)
 
 	self.needExSkillGuide = false
 	self.needStarOriginGuide = false
+	self.needSoulEquipGuide = false
 
 	self:initCurIndex(params)
 	self:checkEnterType()
@@ -354,6 +355,8 @@ function PartnerDetailWindow:getUIComponent()
 	self.btnShare = self.midBtns:NodeByName("btnShare").gameObject
 	self.btnExSkill = self.midBtns:NodeByName("btnExSkill").gameObject
 	self.btnPartnerBack = self.midBtns:NodeByName("btnPartnerBack").gameObject
+	self.btnSoulEquip = self.midBtns:NodeByName("btnSoulEquip").gameObject
+	self.redPointBtnSoulEquip = self.btnSoulEquip:NodeByName("redPoint").gameObject
 
 	if xyd.Global.lang == "de_de" then
 		self.labelAttr.fontSize = 18
@@ -425,6 +428,7 @@ function PartnerDetailWindow:firstInit()
 	self:checkExSkillGuide()
 	self:checkBtnCommentShow()
 	self:checkStarOriginGuide()
+	self:checkSoulEquipGuide()
 
 	if self.enterType == xyd.PARTNER_DETAIL_ENTER_TYPE.STAR10 then
 		self:changeInitNav(4)
@@ -470,6 +474,7 @@ function PartnerDetailWindow:initMarkedBtn()
 
 	self:checkExSkillBtn()
 	self:checkPartnerBackBtn()
+	self:checkSoulEquipBtn()
 end
 
 function PartnerDetailWindow:checkExSkillBtn()
@@ -489,6 +494,7 @@ function PartnerDetailWindow:checkExSkillBtn()
 
 			if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "en_en" then
 				self.btnExSkill:X(-595)
+				self.btnSoulEquip:X(-595)
 			end
 
 			xyd.setUISpriteAsync(self.btnExSkillUISprite, nil, "skill_resonate_icon", nil, , true)
@@ -506,6 +512,7 @@ function PartnerDetailWindow:checkExSkillBtn()
 
 		if xyd.Global.lang == "fr_fr" then
 			self.btnExSkill:X(-595)
+			self.btnSoulEquip:X(-595)
 		end
 
 		if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 then
@@ -530,6 +537,25 @@ function PartnerDetailWindow:checkPartnerBackBtn()
 	end
 
 	self.btnPartnerBack:SetActive(false)
+end
+
+function PartnerDetailWindow:checkSoulEquipBtn()
+	if self.partner_:getLevel() >= 270 then
+		self.btnSoulEquip:SetActive(true)
+
+		self.btnSoulEquip:ComponentByName("label", typeof(UILabel)).text = __("SOUL_EQUIP_TEXT90")
+		local timeStamp = xyd.db.misc:getValue("btn_soul_equip_redpoint")
+
+		if not timeStamp then
+			self.redPointBtnSoulEquip:SetActive(true)
+		else
+			self.redPointBtnSoulEquip:SetActive(false)
+		end
+
+		return
+	end
+
+	self.btnSoulEquip:SetActive(false)
 end
 
 function PartnerDetailWindow:initVars()
@@ -614,6 +640,7 @@ function PartnerDetailWindow:updateData()
 	self:checkStarOriginTab()
 	self:checkEquipTab()
 	self:checkStarOriginGuide()
+	self:checkSoulEquipGuide()
 end
 
 function PartnerDetailWindow:closeSelf()
@@ -974,6 +1001,26 @@ function PartnerDetailWindow:registerEvent()
 			})
 		end
 	end)
+	UIEventListener.Get(self.btnSoulEquip).onClick = handler(self, function ()
+		if self:checkLongTouch() then
+			return
+		end
+
+		if self.partner_:getLevel() < 270 then
+			xyd.alertTips(__("error"))
+
+			return
+		end
+
+		xyd.db.misc:setValue({
+			value = 1,
+			key = "btn_soul_equip_redpoint"
+		})
+		self.redPointBtnSoulEquip:SetActive(false)
+		xyd.WindowManager.get():openWindow("soul_equip_info_window", {
+			partner = self.partner_
+		})
+	end)
 	UIEventListener.Get(self.btnGradeUp).onClick = handler(self, function ()
 		xyd.WindowManager:get():openWindow("grade_up_window", self.partner_)
 	end)
@@ -1040,6 +1087,8 @@ function PartnerDetailWindow:registerEvent()
 		self:updateLevUp()
 		self:updateSkill()
 		self:updateEquips()
+		self:checkSoulEquipBtn()
+		self:checkSoulEquipGuide()
 
 		local levUpEffect = nil
 
@@ -1087,6 +1136,8 @@ function PartnerDetailWindow:registerEvent()
 		self:initFullOrderGradeUp()
 		self:setAttrChange()
 		self:updateData()
+		self:checkSoulEquipBtn()
+		self:checkSoulEquipGuide()
 	end)
 	self.eventProxy_:addEventListener(xyd.event.SET_SHOW_ID, function (self, event)
 		self:preViewBg()
@@ -1121,6 +1172,7 @@ function PartnerDetailWindow:registerEvent()
 		self:setAttrChange()
 		self:checkExSkillBtn()
 		self:checkPartnerBackBtn()
+		self:checkSoulEquipBtn()
 		self:onAwakePartner(event)
 		self:updateData()
 
@@ -4895,6 +4947,62 @@ function PartnerDetailWindow:onClickStarOriginBtn()
 	})
 end
 
+function PartnerDetailWindow:checkSoulEquipGuide()
+	local wnd1 = xyd.getWindow("alert_award_window")
+	local wnd2 = xyd.getWindow("potentiality_success_window")
+	local wnd3 = xyd.getWindow("alert_item_window")
+
+	if wnd1 or wnd2 or wnd3 then
+		return
+	end
+
+	if self.isShrineHurdle_ then
+		return
+	end
+
+	if self.needExSkillGuide then
+		return
+	end
+
+	if self.needStarOriginGuide then
+		return
+	end
+
+	if not self:isWndComplete() then
+		return
+	end
+
+	if self.isPlayingSwitchAnimation then
+		return
+	end
+
+	local slotWd = xyd.WindowManager.get():getWindow("slot_window")
+
+	if not slotWd then
+		return
+	end
+
+	local isHasGoSoulEquipGuide = xyd.db.misc:getValue("is_has_go_soul_equip_guide")
+
+	if isHasGoSoulEquipGuide and tonumber(isHasGoSoulEquipGuide) == 1 then
+		return
+	else
+		if self.partner_:getLevel() < 270 then
+			return
+		end
+
+		self.needSoulEquipGuide = false
+
+		xyd.WindowManager:get():openWindow("common_trigger_guide_window", {
+			guide_type = xyd.CommonTriggerGuideType.SOUL_EQUIP
+		})
+		xyd.db.misc:setValue({
+			value = 1,
+			key = "is_has_go_soul_equip_guide"
+		})
+	end
+end
+
 function PartnerDetailWindow:onclickArrow(delta)
 	if self:checkLongTouch() then
 		return
@@ -4928,6 +5036,7 @@ function PartnerDetailWindow:onclickArrow(delta)
 	self:updateNameTag()
 	self:checkExSkillBtn()
 	self:checkPartnerBackBtn()
+	self:checkSoulEquipBtn()
 	xyd.SoundManager.get():playSound(xyd.SoundID.SWITCH_PAGE)
 	self:updateRedPointShow()
 	self:initMarkedBtn()
@@ -5127,6 +5236,7 @@ function PartnerDetailWindow:playSwitchAnimation()
 
 		self:checkExSkillGuide()
 		self:checkStarOriginGuide()
+		self:checkSoulEquipGuide()
 	end)
 end
 
@@ -5181,6 +5291,7 @@ function PartnerDetailWindow:playOpenAnimation(callback)
 			self:setWndComplete()
 			self:checkExSkillGuide()
 			self:checkStarOriginGuide()
+			self:checkSoulEquipGuide()
 		end)
 	end, nil)
 	callback()
@@ -5885,6 +5996,7 @@ function PartnerDetailWindow:onShenxue(event)
 	end
 
 	self:checkPartnerBackBtn()
+	self:checkSoulEquipBtn()
 end
 
 function PartnerDetailWindow:onComposePartner(event)

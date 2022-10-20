@@ -1,5 +1,8 @@
 local Slot = class("Slot", import("app.models.BaseModel"))
 local Partner = import("app.models.Partner")
+local SoulEquip1 = import("app.models.SoulEquip1")
+local SoulEquip2 = import("app.models.SoulEquip2")
+local Partner = import("app.models.Partner")
 local json = require("cjson")
 local Map = xyd.models.map
 local PartnerTable = xyd.tables.partnerTable
@@ -28,6 +31,10 @@ function Slot:ctor(...)
 	self.hasRefreshShenxue = false
 	self.equipsOfPartner = {}
 	self.isCollected = {}
+	self.soulEquips = {}
+	self.soulEquip1s = {}
+	self.soulEquip2s = {}
+	self.soulEquipCombinationList = {}
 	self.sortFuncList = {
 		[xyd.partnerSortType.LEV] = handler(self, self.levSort),
 		[xyd.partnerSortType.STAR] = handler(self, self.starSort),
@@ -669,6 +676,12 @@ function Slot:onRegister()
 	self:registerEvent(xyd.event.PARTNER_LEVUP, function (self, event)
 		self:onPartnerUpdate(event)
 		self:checkPromotablePartner()
+
+		local params = event.data.partner_info
+
+		if params.lv then
+			xyd.models.soulLand:partnerLvUpCheckOpen(params.lv)
+		end
 	end, self)
 	self:registerEvent(xyd.event.PARTNER_GRADEUP, function (self, event)
 		self:onPartnerUpdate(event)
@@ -834,6 +847,22 @@ function Slot:onRegister()
 	self:registerEvent(xyd.event.VOW, handler(self, self.onPartnerVow))
 	self:registerEvent(xyd.event.CHOOSE_PARTNER_POTENTIAL, handler(self, self.onChoosePotential))
 	self:registerEvent(xyd.event.UPGRADE_STAR_ORIGIN, handler(self, self.onGetMsgLevelUpStarOrigin))
+	self:registerEvent(xyd.event.SOUL_EQUIP_GET_INFO, handler(self, self.onReqAllSoulEquipInfo))
+	self:registerEvent(xyd.event.SOUL_LAND_SUMMON, handler(self, self.onSoulLandSummonBack))
+	self:registerEvent(xyd.event.EQUIP_SOUL_EQUIP, handler(self, self.onReqSetSoulEquip))
+	self:registerEvent(xyd.event.SOUL_EQUIP_LOCK, handler(self, self.onReqLockSoulEquip))
+	self:registerEvent(xyd.event.SOUL_EQUIP_GET_SETS, handler(self, self.onReqAllSoulEquipCombination))
+	self:registerEvent(xyd.event.SOUL_EQUIP_SAVE_SET, handler(self, self.onSetSoulEquipCombination))
+	self:registerEvent(xyd.event.SOUL_EQUIP_AWAKE, handler(self, self.onReqAwakeSoulEquip1))
+	self:registerEvent(xyd.event.SOUL_EQUIP_LV_UP, handler(self, self.onReqLevelUpSoulEquip1))
+	self:registerEvent(xyd.event.SOUL_EQUIP_ZHULING, handler(self, self.onReqChangeExBuff1))
+	self:registerEvent(xyd.event.SOUL_EQUIP_SAVE, handler(self, self.onReqSaveExBuff1))
+	self:registerEvent(xyd.event.SOUL_EQUIP_AWAKE2, handler(self, self.onReqAwakeSoulEquip2))
+	self:registerEvent(xyd.event.SOUL_EQUIP_LV_UP2, handler(self, self.onReqLevelUpSoulEquip2))
+	self:registerEvent(xyd.event.SOUL_EQUIP_INIT, handler(self, self.onReqChangeExBuff2))
+	self:registerEvent(xyd.event.SOUL_EQUIP_SAVE2, handler(self, self.onReqSaveExBuff2))
+	self:registerEvent(xyd.event.SOUL_EQUIP_RESET_AWAKE, handler(self, self.onReqSoulEquipResetAwake2))
+	self:registerEvent(xyd.event.GET_NEW_SOUL_EQUIP_PUSH_BACK, self.oGetNewSoulEquipPushBack, self)
 end
 
 function Slot:onUpdateSummonPartners(event)
@@ -1306,6 +1335,7 @@ function Slot:onTenStarReplace(event)
 	}
 	oldPinfo.star_origin = {}
 
+	dump(oldPinfo)
 	self:addPartners({
 		oldPinfo
 	})
@@ -1477,6 +1507,20 @@ function Slot:delPartner(partnerID)
 			local hasNew = xyd.checkCondition(#npList > 0, true, false)
 
 			xyd.models.redMark:setMark(xyd.RedMarkType.NEW_FIVE_STAR, hasNew, redParams)
+		end
+
+		local souls = hero:getSoulEquips()
+
+		if souls then
+			for k, equipID in pairs(souls) do
+				if equipID and equipID > 0 then
+					local equip = xyd.models.slot:getSoulEquip(equipID)
+
+					if equip then
+						equip:setOwnerID()
+					end
+				end
+			end
 		end
 
 		xyd.EventDispatcher:outer():dispatchEvent({
@@ -2742,6 +2786,632 @@ function Slot:checkExGallery(partner_)
 			end
 		end
 	end
+end
+
+function Slot:reqAllSoulEquipInfo(types, callback)
+	self.reqAllSoulEquipInfoCallBack = callback
+	local msg = messages_pb:soul_equip_get_info_req()
+
+	for key, value in pairs(types) do
+		table.insert(msg.types, value)
+	end
+
+	self.soulEquip1s = {}
+	self.soulEquip2s = {}
+	self.soulEquips = {}
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_GET_INFO, msg)
+end
+
+function Slot:onReqAllSoulEquipInfo(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	for _, list1 in pairs(data.list) do
+		for key, list in pairs(list1) do
+			for key, info in pairs(list) do
+				if info and info.equip_id then
+					local itemType = xyd.tables.itemTable:getType(info.table_id)
+					local equip = nil
+
+					if itemType == xyd.ItemType.SOUL_EQUIP1 then
+						equip = SoulEquip1.new()
+						self.soulEquip1s[info.equip_id] = equip
+					else
+						equip = SoulEquip2.new()
+						self.soulEquip2s[info.equip_id] = equip
+					end
+
+					info.ownerID = info.pos
+
+					equip:populate(info)
+
+					self.soulEquips[info.equip_id] = equip
+				end
+			end
+		end
+	end
+
+	if self.reqAllSoulEquipInfoCallBack then
+		self.reqAllSoulEquipInfoCallBack()
+	end
+end
+
+function Slot:oGetNewSoulEquipPushBack(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	for key, info in pairs(data.items) do
+		if info and info.equip_id then
+			local itemType = xyd.tables.itemTable:getType(info.table_id)
+			local equip = nil
+
+			if itemType == xyd.ItemType.SOUL_EQUIP1 then
+				equip = SoulEquip1.new()
+				self.soulEquip1s[info.equip_id] = equip
+			else
+				equip = SoulEquip2.new()
+				self.soulEquip2s[info.equip_id] = equip
+			end
+
+			info.ownerID = info.pos
+
+			equip:populate(info)
+
+			self.soulEquips[info.equip_id] = equip
+		end
+	end
+
+	if data.mid then
+		self.equipIdPushBackWithMid = {
+			mid = data.mid,
+			items = xyd.cloneTable(data.items)
+		}
+
+		if self.newEquipDealInfo and self.newEquipDealInfo.mid == data.mid then
+			self.newEquipDealInfo.equipDealFun()
+		end
+	end
+end
+
+function Slot:getEquipIdPushBackWithMid()
+	return self.equipIdPushBackWithMid
+end
+
+function Slot:clearEquipIdPushBackWithMid()
+	self.equipIdPushBackWithMid = nil
+end
+
+function Slot:setWaitEquipIdPushBackWithMid(newEquipDealInfo)
+	self.newEquipDealInfo = newEquipDealInfo
+end
+
+function Slot:onSoulLandSummonBack(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	for key, info in pairs(data.summon_result.items) do
+		if info and info.equip_id then
+			local itemType = xyd.tables.itemTable:getType(info.table_id)
+			local equip = nil
+
+			if itemType == xyd.ItemType.SOUL_EQUIP1 then
+				equip = SoulEquip1.new()
+				self.soulEquip1s[info.equip_id] = equip
+			else
+				equip = SoulEquip2.new()
+				self.soulEquip2s[info.equip_id] = equip
+			end
+
+			info.ownerID = info.pos
+
+			equip:populate(info)
+
+			self.soulEquips[info.equip_id] = equip
+		end
+	end
+end
+
+function Slot:reqAwakeSoulEquip1(equipID, materialEquipIDs, callback)
+	self.reqAwakeSoulEquip1CallBack = callback
+	local msg = messages_pb:soul_equip_awake_req()
+
+	for i = 1, #materialEquipIDs do
+		table.insert(msg.ids, materialEquipIDs[i])
+	end
+
+	msg.id = equipID
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_AWAKE, msg)
+end
+
+function Slot:onReqAwakeSoulEquip1(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local items = data.items
+	local id = data.id
+	local ids = data.ids
+	local awakeEquip = self:getSoulEquip(id)
+
+	awakeEquip:setAwake(awakeEquip:getAwake() + 1)
+
+	local ownerID = awakeEquip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+
+	for i = 1, #ids do
+		local equip = self:getSoulEquip(ids[i])
+
+		if equip then
+			self:delSoulEquip(ids[i])
+		end
+	end
+
+	if self.reqAwakeSoulEquip1CallBack then
+		self.reqAwakeSoulEquip1CallBack(items)
+	end
+end
+
+function Slot:reqAwakeSoulEquip2(equipID, callback)
+	self.reqAwakeSoulEquip2CallBack = callback
+	local msg = messages_pb:soul_equip_awake2_req()
+	msg.id = equipID
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_AWAKE2, msg)
+end
+
+function Slot:onReqAwakeSoulEquip2(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local id = data.id
+	local awakeEquip = self:getSoulEquip(id)
+
+	awakeEquip:setAwake(awakeEquip:getAwake() + 1)
+
+	local ownerID = awakeEquip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+
+	if self.reqAwakeSoulEquip2CallBack then
+		self.reqAwakeSoulEquip2CallBack()
+	end
+end
+
+function Slot:reqLevelUpSoulEquip1(equipID, incr_lv, callback)
+	self.reqLevelUpSoulEquip1CallBack = callback
+	local msg = messages_pb:soul_equip_lv_up_req()
+	msg.id = equipID
+	msg.incr_lv = incr_lv
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_LV_UP, msg)
+end
+
+function Slot:onReqLevelUpSoulEquip1(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local id = data.id
+	local lv = data.lv
+	local awakeEquip = self:getSoulEquip(id)
+
+	awakeEquip:setLevel(lv)
+
+	local ownerID = awakeEquip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+
+	if self.reqLevelUpSoulEquip1CallBack then
+		self.reqLevelUpSoulEquip1CallBack()
+	end
+end
+
+function Slot:reqLevelUpSoulEquip2(equipID, num, materialEquipIDs, incr_lv, callback)
+	self.reqLevelUpSoulEquip2CallBack = callback
+	local msg = messages_pb:soul_equip_lv_up2_req()
+	msg.id = equipID
+	msg.incr_lv = incr_lv
+
+	for equipID, value in pairs(materialEquipIDs) do
+		table.insert(msg.ids, equipID)
+	end
+
+	msg.num = num or 0
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_LV_UP2, msg)
+end
+
+function Slot:onReqLevelUpSoulEquip2(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local id = data.equip_id
+	local lv = data.lv
+	local exp = data.exp
+	local ids = data.ids or {}
+	local ex_attrs = data.ex_attrs
+	local awakeEquip = self:getSoulEquip(id)
+
+	awakeEquip:setLevel(lv)
+	awakeEquip:setExp(exp)
+
+	local ownerID = awakeEquip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+
+	for i = 1, #ids do
+		local equip = self:getSoulEquip(ids[i])
+
+		if equip then
+			self:delSoulEquip(ids[i])
+		end
+	end
+
+	local ex_attr_ids = {}
+	local ex_factors = {}
+	local temp = ex_attrs
+
+	if temp then
+		for i = 1, #temp do
+			local arr = xyd.split(temp[i], "#")
+			ex_attr_ids[i] = tonumber(arr[1])
+			ex_factors[i] = tonumber(arr[2])
+		end
+	end
+
+	if self.reqLevelUpSoulEquip2CallBack then
+		self.reqLevelUpSoulEquip2CallBack(ex_attr_ids, ex_factors)
+	end
+end
+
+function Slot:reqSetSoulEquip(equipID, type, partnerID, callback)
+	self.reqSetSoulEquipCallBack = callback
+
+	if type == 1 or type == 2 then
+		local new_equips = equipID
+		local msg = messages_pb:equip_soul_equip_req()
+
+		for i = 1, 5 do
+			table.insert(msg.equips, new_equips[i] or 0)
+		end
+
+		msg.partner_id = partnerID
+
+		xyd.Backend.get():request(xyd.mid.EQUIP_SOUL_EQUIP, msg)
+	end
+end
+
+function Slot:onReqSetSoulEquip(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.reqSetSoulEquipCallBack then
+		self.reqSetSoulEquipCallBack()
+	end
+end
+
+function Slot:reqLockSoulEquip(equipID, islock, callback)
+	self.reqLockSoulEquipCallBack = callback
+	local msg = messages_pb:soul_equip_lock_req()
+	msg.id = equipID
+	msg.lock = islock
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_LOCK, msg)
+end
+
+function Slot:onReqLockSoulEquip(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.reqLockSoulEquipCallBack then
+		self.reqLockSoulEquipCallBack()
+	end
+end
+
+function Slot:reqChangeExBuff1(equipID, pos, callback)
+	self.reqChangeExBuff1CallBack = callback
+	local msg = messages_pb:soul_equip_zhuling_req()
+	msg.id = equipID
+	msg.pos = pos
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_ZHULING, msg)
+end
+
+function Slot:onReqChangeExBuff1(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local newExID = data.attr
+
+	if self.reqChangeExBuff1CallBack then
+		self.reqChangeExBuff1CallBack(newExID)
+	end
+end
+
+function Slot:reqChangeExBuff2(equipID, callback)
+	self.reqChangeExBuff2CallBack = callback
+	local msg = messages_pb:soul_equip_init_req()
+	msg.id = equipID
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_INIT, msg)
+end
+
+function Slot:onReqChangeExBuff2(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local replaces = data.replaces
+	local ex_attr_ids = {}
+	local ex_factors = {}
+	local temp = replaces
+
+	if temp then
+		for i = 1, #temp do
+			local arr = xyd.split(temp[i], "#")
+			ex_attr_ids[i] = tonumber(arr[1])
+			ex_factors[i] = tonumber(arr[2])
+		end
+	end
+
+	if self.reqChangeExBuff2CallBack then
+		self.reqChangeExBuff2CallBack(ex_attr_ids, ex_factors)
+	end
+end
+
+function Slot:reqSaveExBuff1(equipID, pos, callback)
+	self.reqSaveExBuff1CallBack = callback
+	local msg = messages_pb:soul_equip_save_req()
+	msg.id = equipID
+	msg.pos = pos
+	msg.is_save = 1
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_SAVE, msg)
+end
+
+function Slot:onReqSaveExBuff1(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.reqSaveExBuff1CallBack then
+		self.reqSaveExBuff1CallBack()
+	end
+
+	local awakeEquip = self:getSoulEquip(data.equip_id)
+	local ownerID = awakeEquip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+end
+
+function Slot:reqSaveExBuff2(equipID, callback)
+	self.reqSaveExBuff2CallBack = callback
+	local msg = messages_pb:soul_equip_save2_req()
+	msg.id = equipID
+	msg.is_save = 1
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_SAVE2, msg)
+end
+
+function Slot:onReqSaveExBuff2(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.reqSaveExBuff2CallBack then
+		self.reqSaveExBuff2CallBack()
+	end
+end
+
+function Slot:reqSoulEquipResetAwake2(equipID, callback)
+	self.reqSoulEquipResetAwake2CallBack = callback
+	local msg = messages_pb:soul_equip_reset_awake_req()
+	msg.id = equipID
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_RESET_AWAKE, msg)
+end
+
+function Slot:onReqSoulEquipResetAwake2(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local id = data.id
+	local equip = self:getSoulEquip(id)
+
+	equip:setAwake(0)
+
+	local ownerID = equip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			owner:updateAttrs()
+		end
+	end
+
+	if self.reqSoulEquipResetAwake2CallBack then
+		self.reqSoulEquipResetAwake2CallBack()
+	end
+end
+
+function Slot:reqAllSoulEquipCombination(types, callback)
+	self.reqAllSoulEquipCombinationCallBack = callback
+	local msg = messages_pb:soul_equip_get_sets_req()
+	self.soulEquipCombinationList = {}
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_GET_SETS, msg)
+end
+
+function Slot:onReqAllSoulEquipCombination(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if data.sets then
+		for index, sets in pairs(data.sets) do
+			local set = sets.set
+
+			if set and set[1] and set[1] ~= "-1" then
+				local combination = {
+					id = tonumber(index),
+					name = set[6],
+					equipIDs = {}
+				}
+
+				for i = 1, 5 do
+					combination.equipIDs[i] = 0
+
+					if set[i] then
+						combination.equipIDs[i] = tonumber(set[i])
+					end
+				end
+
+				self.soulEquipCombinationList[index] = combination
+			end
+		end
+	end
+
+	if self.reqAllSoulEquipCombinationCallBack then
+		self.reqAllSoulEquipCombinationCallBack()
+	end
+end
+
+function Slot:setSoulEquipCombination(data, type, callback)
+	self.setSoulEquipCombinationCallBack = callback
+	local msg = messages_pb:soul_equip_save_set_req()
+
+	if type == 2 then
+		for index, combination in pairs(self.soulEquipCombinationList) do
+			if combination.id == data.combination.id then
+				self.soulEquipCombinationList[index] = nil
+			end
+		end
+
+		msg.pos = data.combination.id
+
+		for i = 1, 6 do
+			local id = "-1"
+
+			table.insert(msg.set, id)
+		end
+	else
+		self.soulEquipCombinationList[data.combination.id] = data.combination
+		msg.pos = data.combination.id
+
+		for i = 1, 5 do
+			local id = "0"
+
+			if data.combination.equipIDs[i] then
+				id = tostring(data.combination.equipIDs[i])
+			end
+
+			table.insert(msg.set, id)
+		end
+
+		table.insert(msg.set, data.combination.name)
+	end
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_SAVE_SET, msg)
+end
+
+function Slot:onSetSoulEquipCombination(event)
+	local data = xyd.decodeProtoBuf(event.data)
+
+	if self.setSoulEquipCombinationCallBack then
+		self.setSoulEquipCombinationCallBack()
+	end
+end
+
+function Slot:getSoulEquip1s()
+	return self.soulEquip1s or {}
+end
+
+function Slot:getSoulEquip2s()
+	return self.soulEquip2s or {}
+end
+
+function Slot:getSoulEquip(soulEquipID)
+	return self.soulEquips[soulEquipID]
+end
+
+function Slot:getAllSoulEquip()
+	return self.soulEquips or {}
+end
+
+function Slot:getSoulEquipLength()
+	local arr = self:getAllSoulEquip()
+	local len = 0
+
+	for i in pairs(arr) do
+		if arr[i] then
+			len = len + 1
+		end
+	end
+
+	return len
+end
+
+function Slot:delSoulEquip(soulEquipID)
+	local equip = self.soulEquips[soulEquipID]
+	local ownerID = equip:getOwnerPartnerID()
+
+	if ownerID and ownerID > 0 then
+		local owner = self:getPartner(ownerID)
+
+		if owner then
+			local souls = owner:getSoulEquips()
+			local newSouls = {}
+
+			for i = 1, 5 do
+				if souls[i] == soulEquipID then
+					newSouls[i] = nil
+				else
+					newSouls[i] = souls[i]
+				end
+			end
+
+			owner:setSoulEquips(newSouls)
+			owner:updateAttrs()
+		end
+	end
+
+	self.soulEquips[soulEquipID] = nil
+	self.soulEquip1s[soulEquipID] = nil
+	self.soulEquip2s[soulEquipID] = nil
+end
+
+function Slot:getAllSoulEquipCombination()
+	return self.soulEquipCombinationList
+end
+
+function Slot:getSoulEquipCombination(id)
+	for index, combination in pairs(self.soulEquipCombinationList) do
+		if combination.id == id then
+			return combination
+		end
+	end
+
+	return nil
+end
+
+function Slot:getSoulEquipCombinationNum()
+	local num = 0
+
+	for index, combination in pairs(self.soulEquipCombinationList) do
+		num = num + 1
+	end
+
+	return num
+end
+
+function Slot:getSoulEquipCombinationLimitNum()
+	return tonumber(xyd.tables.miscTable:getNumber("soul_equip_save_limit", "value"))
 end
 
 return Slot

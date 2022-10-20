@@ -6083,14 +6083,14 @@ Humain/Monstre/Fée.
 27311,Rayon du Tournesol,Skin,Skin de Chizuko - Rayon du Tournesol
 7312,Cadence Envoûtante,Skin,Skin de Prométhéa - Cadence Envoûtante
 27312,Cadence Envoûtante,Skin,Skin de Prométhéa - Cadence Envoûtante
-417,魂石,Objet Spécial,用於靈識裝備·靈匣的升級
-418,聚靈鏡,Objet Spécial,用於靈識裝備·靈匣的注靈
-419,煉咒,Objet Spécial,用於靈識裝備·煉晶的突破
-420,御守,Objet Spécial,用於靈識裝備·煉晶的祈願
-421,境界馭靈挑戰券,Objet Spécial,用於境界馭靈的挑戰
-422,馭靈枝,Objet Spécial,用於購買境界馭靈商店中的物品
-423,馭靈幣,Objet Spécial,用於抽取境界馭靈的煉晶獎池
-424,稀有馭靈幣,Objet Spécial,用於抽取境界馭靈的煉晶獎池
+417,Lotus de Nacre,Objet Spécial,À utiliser pour améliorer le niveau d'Artefact d'Âme
+418,Miroir Enchanteur,Objet Spécial,À utiliser pour débloquer les Attributs d'Âme d'Artefact d'Âme
+419,Dée Spirituel,Objet Spécial,À utiliser pour améliorer le Grade de Pierre d'Âme
+420,Amulette de Charme,Objet Spécial,À utiliser pour réinitialiser les Attributs Secondaires de Pierre d'Âme
+421,Ticket - Terre des Âmes,Objet Spécial,À utiliser pour défier les ennemis d'une étape dans la Terre des Âmes
+422,Rameau d'Âme,Objet Spécial,À utiliser pour échanger des récompenses dans la Boutique de Terre des Âmes
+423,Jeton d'Âme,Objet Spécial,À utiliser pour tirer des récompenses dans le Rituel de Terre des Âmes
+424,Jeton Rare d'Âme,Objet Spécial,À utiliser pour tirer des récompenses dans le Rituel de Terre des Âmes
 6773,Flèche Constellée,Antiquité,
 6774,Flèche Constellée,Antiquité,
 6775,Flèche Constellée,Antiquité,
@@ -6127,3 +6127,291 @@ Humain/Monstre/Fée/Ange/Démon.
 4201039,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir l'une des récompenses suivantes après son ouverture：Biscuit de Serviteur *4000, Biscuit Spiritueux *500, Cristal du Serviteur *250, Document Préparatoire *10000, Document Préparatoire Avancé *2000, Pièce de Guilde *3000"
 8083,Torii aux Tournesols,Cadre d'Avatar,Obtenable dans le Pack du Grand Couturier
 9134,Je t'en remercie.,Émoji,Émoji de Chizuko - Je t'en remercie.
+5100001,Plume d'Éden,Artefact d'Âme,
+5100002,Corne de Cerf,Artefact d'Âme,
+5100003,Gland d'Abondance,Artefact d'Âme,
+5100004,Fendoir Écaillé,Artefact d'Âme,
+5100005,Cristal d'Amanite,Artefact d'Âme,
+5100006,Fossile Enseveli,Artefact d'Âme,
+5100007,Bouteille de Sable,Artefact d'Âme,
+5100008,Papillon Mystique,Artefact d'Âme,
+5100009,Tentacule Inusitée,Artefact d'Âme,
+5100010,Masque Kitsune,Artefact d'Âme,
+5100011,Coquillage Chantant,Artefact d'Âme,
+5100012,Œil du Prédateur,Artefact d'Âme,
+5100013,Amulette Abyssale,Artefact d'Âme,
+5100014,Cornes des Bois,Artefact d'Âme,
+5100015,Griffe de Chat,Artefact d'Âme,
+5100016,Attrape-Rêves,Artefact d'Âme,
+5100017,Malédiction de la Vipère,Artefact d'Âme,
+5100018,Potion des Tourtereaux,Artefact d'Âme,
+5100019,Force de la Nature,Artefact d'Âme,
+5200001,Poisson de Fortune,Pierre d'Âme Intégrale,"À chaque fois que la porteuse subit des dégâts, ces dégâts ne peuvent pas dépasser 30% de ses PV Max (déclenchable 3 fois au maximum à chaque tour)."
+5200002,Méduse Flottante,Pierre d'Âme Intégrale,"Durant la bataille, la Résistance aux Dégâts de la porteuse sera augmentée de 0,5% pour chaque 1% de sa Résistance aux Critiques. Lorsque la porteuse reçoit un Coup Critique, sa Résistance aux Critiques sera augmentée de 30% pendant 1 tour."
+5200003,Crabe Incisif,Pierre d'Âme Intégrale,"Au début de la bataille, la porteuse obtient 1 couche de Carapace du Crabe.\nCarapace du Crabe (Effet de Compétence) : Lorsque la porteuse subit des dégâts, 1 couche de Carapace du Crabe sera consommée pour neutraliser ces dégâts."
+5200004,Chèvre Fantôme,Pierre d'Âme Intégrale,"À chaque fois que la porteuse a lancé 3 attaques, les dégâts de la prochaine attaque seront augmentés de 60%."
+5200005,Qilin de Feu,Pierre d'Âme Intégrale,Augmente de 40% les dégâts infligés à la cible dont ses PV sont supérieurs à 80%.
+5200006,Lézard Rusé,Pierre d'Âme Intégrale,Augmente de 50% les dégâts infligés à Boss ennemi.
+5200007,Jeune Kumiho,Pierre d'Âme Intégrale,"À la fin de chaque tour, si durant le tour, la porteuse a lancé son Attaque Basique ou bien n'a lancé aucune attaque, alors augmente de 15% le Blocage et de 15% l'Immunité de toutes ses alliées pendant 2 tours (non cumulable)."
+5200008,Chat Brodeur,Pierre d'Âme Intégrale,"Augmente de 25% la valeur de Barrière obtenue. Lorsque la porteuse sous la protection d'une Barrière lance sa Compétence Active, elle fournit une Barrière (20% des PV Max de la cible) à l'alliée ayant le moins de PV."
+5200009,Phénix Majestueux,Pierre d'Âme Intégrale,"Augmente les Soins de 25%. Lorsque la porteuse récupère des PV, elle enlèvera 1 Effet Négatif (Dégâts sur la Durée, Malus d'Attribut, Marque, Effet de Contrôle) sur 1 alliée aléatoire (déclenchable qu'une seule fois à chaque tour)."
+5200101,Éclat d'une Pierre d'Âme Bleue 1 étoile,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 1 étoile (touchez la loupe pour en savoir plus)
+5200102,Éclat d'une Pierre d'Âme Bleue 2 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 2 étoiles (touchez la loupe pour en savoir plus)
+5200103,Éclat d'une Pierre d'Âme Bleue 3 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 3 étoiles (touchez la loupe pour en savoir plus)
+5200104,Éclat d'une Pierre d'Âme Bleue 4 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 4 étoiles (touchez la loupe pour en savoir plus)
+5201101,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201102,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201103,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201104,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201105,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201106,Poisson de Fortune · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : Attaque"
+5201201,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201202,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201203,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201204,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201205,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201206,Poisson de Fortune · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Poisson de Fortune, Attribut Principal : PV"
+5201301,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201302,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201303,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201304,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201305,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201306,Poisson de Fortune · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5201401,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5201402,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5201403,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5201404,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5201405,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5201406,Poisson de Fortune · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Poisson de Fortune, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202101,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202102,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202103,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202104,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202105,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202106,Méduse Flottante · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Méduse Flottante, Attribut Principal : Attaque"
+5202201,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202202,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202203,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202204,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202205,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202206,Méduse Flottante · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Méduse Flottante, Attribut Principal : PV"
+5202301,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202302,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202303,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202304,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202305,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202306,Méduse Flottante · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5202401,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202402,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202403,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202404,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202405,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5202406,Méduse Flottante · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Méduse Flottante, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203101,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203102,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203103,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203104,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203105,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203106,Crabe Incisif · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Crabe Incisif, Attribut Principal : Attaque"
+5203201,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203202,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203203,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203204,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203205,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203206,Crabe Incisif · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Crabe Incisif, Attribut Principal : PV"
+5203301,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203302,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203303,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203304,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203305,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203306,Crabe Incisif · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5203401,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203402,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203403,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203404,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203405,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5203406,Crabe Incisif · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Crabe Incisif, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204101,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204102,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204103,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204104,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204105,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204106,Chèvre Fantôme · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : Attaque"
+5204201,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204202,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204203,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204204,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204205,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204206,Chèvre Fantôme · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chèvre Fantôme, Attribut Principal : PV"
+5204301,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204302,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204303,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204304,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204305,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204306,Chèvre Fantôme · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5204401,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204402,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204403,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204404,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204405,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5204406,Chèvre Fantôme · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chèvre Fantôme, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205101,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205102,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205103,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205104,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205105,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205106,Qilin de Feu · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Qilin de Feu, Attribut Principal : Attaque"
+5205201,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205202,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205203,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205204,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205205,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205206,Qilin de Feu · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Qilin de Feu, Attribut Principal : PV"
+5205301,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205302,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205303,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205304,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205305,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205306,Qilin de Feu · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5205401,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205402,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205403,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205404,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205405,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5205406,Qilin de Feu · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Qilin de Feu, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206101,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206102,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206103,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206104,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206105,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206106,Lézard Rusé · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Lézard Rusé, Attribut Principal : Attaque"
+5206201,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206202,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206203,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206204,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206205,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206206,Lézard Rusé · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Lézard Rusé, Attribut Principal : PV"
+5206301,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206302,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206303,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206304,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206305,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206306,Lézard Rusé · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5206401,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206402,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206403,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206404,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206405,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5206406,Lézard Rusé · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Lézard Rusé, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207101,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207102,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207103,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207104,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207105,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207106,Jeune Kumiho · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : Attaque"
+5207201,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207202,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207203,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207204,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207205,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207206,Jeune Kumiho · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Jeune Kumiho, Attribut Principal : PV"
+5207301,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207302,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207303,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207304,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207305,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207306,Jeune Kumiho · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5207401,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207402,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207403,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207404,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207405,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5207406,Jeune Kumiho · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Jeune Kumiho, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208101,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208102,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208103,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208104,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208105,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208106,Chat Brodeur · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Chat Brodeur, Attribut Principal : Attaque"
+5208201,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208202,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208203,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208204,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208205,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208206,Chat Brodeur · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Chat Brodeur, Attribut Principal : PV"
+5208301,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208302,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208303,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208304,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208305,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208306,Chat Brodeur · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5208401,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208402,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208403,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208404,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208405,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5208406,Chat Brodeur · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Chat Brodeur, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209101,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209102,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209103,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209104,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209105,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209106,Phénix Majestueux · 1,Éclat de\nPierre d'Âme,"Éclat 1 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : Attaque"
+5209201,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209202,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209203,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209204,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209205,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209206,Phénix Majestueux · 2,Éclat de\nPierre d'Âme,"Éclat 2 de Pierre d'Âme - Phénix Majestueux, Attribut Principal : PV"
+5209301,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209302,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209303,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209304,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209305,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209306,Phénix Majestueux · 3,Éclat de\nPierre d'Âme,"Éclat 3 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Critique/Précision/Soins/Chance de Contrôle/Dégâts Divins/Dégâts des Compétences"
+5209401,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209402,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209403,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209404,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209405,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+5209406,Phénix Majestueux · 4,Éclat de\nPierre d'Âme,"Éclat 4 de Pierre d'Âme - Phénix Majestueux, obtenez l'un des Attributs Principaux suivants : Résistance aux Critiques/Blocage/Soins Reçus/Immunité/Dégâts Divins/Dégâts des Compétences"
+7313,Spectre Charmeur,Skin,Skin de Cupidon - Spectre Charmeur
+27313,Spectre Charmeur,Skin,Skin de Cupidon - Spectre Charmeur
+7314,Jet Spatial,Skin,Skin de Shina - Jet Spatial
+27314,Jet Spatial,Skin,Skin de Shina - Jet Spatial
+435,Boîte d'Artefact d'Âme,Boîte à choix,"Obtenez aléatoirement un Artefact d'Âme, à équiper sur une Fille au niv. 270 minimum. (touchez la loupe pour en savoir plus)"
+4302045,Boîte de Skin Avancé,Boîte à choix,"À utiliser pour choisir d'obtenir un Skin. (touchez la loupe pour en savoir plus, le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)"
+4302046,Boîte de Skin Avancé (Le Périple de Lavli-S25),Boîte à choix,"À utiliser pour choisir d'obtenir un Skin. (touchez la loupe pour en savoir plus, le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)"
+4203017,Boîte de Ressources,Boîte à choix,"À utiliser pour choisir d'obtenir une des récompenses suivantes après son ouverture：Pièce d'Or *10M, Jus d'EXP *10M"
+4102052,Boîte de Fille Ange/Démon (Le Périple de Lavli-S25),Boîte à choix,À utiliser pour choisir d'obtenir une Fille 5 étoiles de la Maison Ange/Démon.\n(le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)
+4101068,Boîte de Fille (Le Périple de Lavli-S25),Boîte à choix,"
+À utiliser pour choisir une Fille
+5 étoiles de la Maison Fantôme/
+Humain/Monstre/Fée.
+(le contenu disponible ne changera pas dépendamment de la date d\'ouverture de cette boîte)"
+4601049,Boîte de Tenue Orange (Objet),Boîte à choix,"À utiliser pour choisir d'obtenir 1 élément (Objet) de Tenue Orange (touchez la loupe pour en savoir plus, le contenu disponible ne changera pas dépendamment de la date d'ouverture de cette boîte)"
+52000010,炫尾魚-测试用,,
+52000020,璨海花-测试用,,
+52000030,盤岩蟹-测试用,,
+52000040,幻靈羊-测试用,,
+52000050,玉麒麟-测试用,,
+52000060,攀陸蜥-测试用,,
+52000070,九命狐-测试用,,
+52000080,風隱貓-测试用,,
+52000090,真彩凰-测试用,,
+436,Cadeaux d'Automne,,"Après l'avoir acheté, vous pourrez débloquer Cadeaux d'Automne III et vous recevrez Ticket d'Automne *1, Capsule Avancée *5, Gemme *500 et Jeton de Capsule Cosmique *2 par jour durant cet événement"
+437,Ticket d'Automne,Matériel d'Événement,"Matériel d'Événement, à utiliser dans l'événement - Cadeaux d'Automne"
+757003,Effie,Fille,Effie 10 étoiles de la Maison Cosmos
+930230,Effie 10 étoiles,Invoquer une Fille,Collectez 100 Fragments pour invoquer cette Fille
+800003,Effie,,Effie Skin 13 étoiles
+5200105,Éclat d'une Pierre d'Âme Bleue 1 étoile,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 1 étoile (touchez la loupe pour en savoir plus)
+5200106,Éclat d'une Pierre d'Âme Bleue 2 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 2 étoiles (touchez la loupe pour en savoir plus)
+5200107,Éclat d'une Pierre d'Âme Bleue 3 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 3 étoiles (touchez la loupe pour en savoir plus)
+5200108,Éclat d'une Pierre d'Âme Bleue 4 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 4 étoiles (touchez la loupe pour en savoir plus)
+5200109,Éclat d'une Pierre d'Âme Bleue 1 étoile,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 1 étoile (touchez la loupe pour en savoir plus)
+5200110,Éclat d'une Pierre d'Âme Bleue 2 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 2 étoiles (touchez la loupe pour en savoir plus)
+5200111,Éclat d'une Pierre d'Âme Bleue 3 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 3 étoiles (touchez la loupe pour en savoir plus)
+5200112,Éclat d'une Pierre d'Âme Bleue 4 étoiles,Récompense Aléatoire,À utiliser pour obtenir aléatoirement 1 Éclat de Pierre d'Âme Bleu 4 étoiles (touchez la loupe pour en savoir plus)
+426,Essence d'Âme,Objet Spécial,"À utiliser pour augmenter le niveau de Pierre d'Âme, 1 Essence d'Âme fournit 1 Exp"
+900003,Effie,,Effie Skin 15 étoiles
+20001087,Avatar Exclusif d'Effie,Avatar Spécial,Avatar Exclusif d'Effie

@@ -182,4 +182,5 @@ id,trigger,desc,is_god_skill,limit_times,is_die_pas,is_hp_pas,is_can_use_by_pas,
 181,FRIEND_ATTACKED_BY_BLIND,-1,,,,,,
 182,SELF_HEAL_ONCE,-1,,,,,1,1
 183,SELF_ROUND_END_NO_SKILL,-1,,,,,,
-184,SELF_NO_BLOCK,-1,,,,,1,
+184,FRIEND_NO_BLOCK,-1,,,,,1,
+185,SELF_SKILL_WITH_CRIT,-1,,,,,,

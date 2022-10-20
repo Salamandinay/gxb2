@@ -6,13 +6,23 @@ local Partner = import("app.models.Partner")
 local json = require("cjson")
 
 function TowerVideoWindow:ctor(name, params)
+	self.state = params.state
+
+	if not self.state then
+		self.state = xyd.CommonViewState.TOWER
+	end
+
 	TowerVideoWindow.super.ctor(self, name, params)
 
 	self.records = {}
 	self.stageID = params.stage
 
-	if not xyd.models.towerMap:getTowerRecord(self.stageID) then
-		xyd.models.towerMap:reqStageRecord(self.stageID)
+	if self.state == xyd.CommonViewState.TOWER then
+		if not xyd.models.towerMap:getTowerRecord(self.stageID) then
+			xyd.models.towerMap:reqStageRecord(self.stageID)
+		end
+	elseif self.state == xyd.CommonViewState.SOUL_LAND and not xyd.models.soulLand:getSoulLandRecord(self.stageID) then
+		xyd.models.soulLand:reqStageRecord(self.stageID)
 	end
 end
 
@@ -22,7 +32,11 @@ function TowerVideoWindow:initWindow()
 	self:initUIComponent()
 	self:register()
 
-	if xyd.models.towerMap:getTowerRecord(self.stageID) then
+	if self.state == xyd.CommonViewState.TOWER then
+		if xyd.models.towerMap:getTowerRecord(self.stageID) then
+			self:onTowerRecord()
+		end
+	elseif self.state == xyd.CommonViewState.SOUL_LAND and xyd.models.soulLand:getSoulLandRecord(self.stageID) then
 		self:onTowerRecord()
 	end
 end
@@ -63,6 +77,7 @@ end
 function TowerVideoWindow:register()
 	TowerVideoWindow.super.register(self)
 	self.eventProxy_:addEventListener(xyd.event.TOWER_RECORDS, self.onTowerRecord, self)
+	self.eventProxy_:addEventListener(xyd.event.SOUL_LAND_RECORDS, self.onTowerRecord, self)
 
 	UIEventListener.Get(self.closeBtn_).onClick = function ()
 		self:onClickCloseButton()
@@ -70,7 +85,13 @@ function TowerVideoWindow:register()
 end
 
 function TowerVideoWindow:onTowerRecord()
-	local records = xyd.models.towerMap:getTowerRecord(self.stageID)
+	local records = nil
+
+	if self.state == xyd.CommonViewState.TOWER then
+		records = xyd.models.towerMap:getTowerRecord(self.stageID)
+	elseif self.state == xyd.CommonViewState.SOUL_LAND then
+		records = xyd.models.soulLand:getSoulLandRecord(self.stageID)
+	end
 
 	if not records then
 		return
@@ -200,15 +221,28 @@ function TowerVideoWindow:initBaseContent(index, isNew)
 	})
 
 	UIEventListener.Get(btnVideo).onClick = function ()
-		local data = xyd.models.towerMap:getTowerReport(self.stageID, self.records[index].record_id)
+		if self.state == xyd.CommonViewState.TOWER then
+			local data = xyd.models.towerMap:getTowerReport(self.stageID, self.records[index].record_id)
 
-		if data then
-			xyd.EventDispatcher:inner():dispatchEvent({
-				name = xyd.event.TOWER_REPORT,
-				data = data
-			})
-		else
-			xyd.models.towerMap:reqTowerReport(self.stageID, self.records[index].record_id)
+			if data then
+				xyd.EventDispatcher:inner():dispatchEvent({
+					name = xyd.event.TOWER_REPORT,
+					data = data
+				})
+			else
+				xyd.models.towerMap:reqTowerReport(self.stageID, self.records[index].record_id)
+			end
+		elseif self.state == xyd.CommonViewState.SOUL_LAND then
+			local data = xyd.models.soulLand:getSoulLandReport(self.stageID, self.records[index].record_id)
+
+			if data then
+				xyd.EventDispatcher:inner():dispatchEvent({
+					name = xyd.event.SOUL_LAND_REPORT,
+					data = data
+				})
+			else
+				xyd.models.soulLand:reqSoulLandReport(self.stageID, self.records[index].record_id)
+			end
 		end
 	end
 end

@@ -13,6 +13,12 @@ function HeroAttr:ctor()
 	self.starOriginListTable = xyd.tables.starOriginListTable
 	self.collectionSkinEffectTable = xyd.tables.collectionSkinEffectTable
 	self.starOriginTable = xyd.tables.starOriginTable
+	self.soulEquip1Table = xyd.tables.soulEquip1Table
+	self.soulEquip1ExBuffTable = xyd.tables.soulEquip1ExBuffTable
+	self.soulEquip2Table = xyd.tables.soulEquip2Table
+	self.soulEquip2BaseBuffTable = xyd.tables.soulEquip2BaseBuffTable
+	self.soulEquip2ExBuffTable = xyd.tables.soulEquip2ExBuffTable
+	self.soulEquip2GroupTable = xyd.tables.soulEquip2GroupTable
 	self.isPercent = nil
 
 	self:init()
@@ -124,6 +130,14 @@ function HeroAttr:attr(hero, params)
 	end
 
 	calSkinEffect()
+
+	local souls = {}
+
+	local function calSouls()
+		souls = self:getSouls(hero.souls)
+	end
+
+	calSouls()
 
 	local extra = {}
 	local isPercent = self.isPercent
@@ -263,6 +277,10 @@ function HeroAttr:attr(hero, params)
 
 				n = n + starOrigin[nameP]
 			end
+		end
+
+		if souls and souls[name] then
+			n = n + math.floor(souls[name])
 		end
 
 		if skinEffects and skinEffects[name] then
@@ -699,6 +717,86 @@ function HeroAttr:getSkinEffect(hero, lev)
 		end
 
 		result[arr[1]] = result[arr[1]] + arr[2]
+	end
+
+	return result
+end
+
+function HeroAttr:getSouls(souls)
+	local result = {}
+
+	if not souls then
+		return result
+	end
+
+	local function addAttr(name, value)
+		if result[name] then
+			result[name] = result[name] + value
+		else
+			result[name] = value
+		end
+	end
+
+	if souls[1] and souls[1].table_id then
+		local bases = self.soulEquip1Table:getBase(souls[1].table_id)
+		local grows = self.soulEquip1Table:getGrow(souls[1].table_id)
+		local star = self.soulEquip1Table:getStarGrow(souls[1].table_id)[souls[1].awake + 1]
+
+		for i = 1, #bases do
+			local value = (bases[i][2] + grows[i][2] * souls[1].lv) * star
+
+			addAttr(bases[i][1], value)
+		end
+
+		for k, v in ipairs(souls[1].attrs) do
+			if tonumber(v) > 0 then
+				local value = self.soulEquip1ExBuffTable:getBase(tonumber(v)) + self.soulEquip1ExBuffTable:getGrow(tonumber(v)) * souls[1].lv
+
+				addAttr(self.soulEquip1ExBuffTable:getBuff(tonumber(v)), value)
+			end
+		end
+	end
+
+	for i = 2, #souls do
+		local soul = souls[i]
+
+		if soul and soul.table_id then
+			local star = self.soulEquip2BaseBuffTable:getStarGrow(soul.main)[self.soulEquip2Table:getStar(soul.table_id)]
+			local qlt = self.soulEquip2BaseBuffTable:getQltGrow(soul.main)[soul.awake + 1]
+			local mainValue = (self.soulEquip2BaseBuffTable:getBase(soul.main) + self.soulEquip2BaseBuffTable:getGrow(soul.main) * soul.lv) * star * qlt
+
+			addAttr(self.soulEquip2BaseBuffTable:getBuff(soul.main), mainValue)
+
+			local attrs = {}
+
+			for k, v in ipairs(soul.attrs) do
+				table.insert(attrs, v)
+			end
+
+			for k, v in ipairs(soul.ex_attrs) do
+				table.insert(attrs, v)
+			end
+
+			for k, v in ipairs(attrs) do
+				local attrArr = xyd.splitToNumber(v, "#")
+				local base = self.soulEquip2ExBuffTable:getBase(attrArr[1])
+				local star = self.soulEquip2ExBuffTable:getStarGrow(attrArr[1])[self.soulEquip2Table:getStar(soul.table_id)]
+				local qlt = self.soulEquip2ExBuffTable:getQltGrow(attrArr[1])[soul.awake + 1]
+				local value = base * attrArr[2] * star * qlt
+
+				addAttr(self.soulEquip2ExBuffTable:getBuff(attrArr[1]), value)
+			end
+		end
+	end
+
+	if result.atk and result.atkP then
+		result.atk = result.atk * (1 + result.atkP)
+		result.atkP = nil
+	end
+
+	if result.hp and result.hpP then
+		result.hp = result.hp * (1 + result.hpP)
+		result.hpP = nil
 	end
 
 	return result

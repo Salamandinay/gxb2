@@ -60,7 +60,7 @@ gacha_ensure_partner_handbook,52020#652027#752020,-1
 daily_mail_awards_gacha,2|58|43,-1
 daily_mail_awards_tree,3|18|57,-1
 daily_mail_awards_gamble,,-1
-daily_mail_awards_drift,30|6,-1
+daily_mail_awards_drift,30|6|40,-1
 daily_mail_awards_lost_space,4|50|47,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
@@ -456,7 +456,7 @@ act_summon_energy_cost,2000,-1
 act_summon_energy_limit,200|500,-1
 act_summon_energy_num,10|10,-1
 is_unity_initial_background_girl,27030,-1
-activity_45_hero_model,qiubite_pifu03_lihui01|422|-1606|0.8|5601004|7305,-1
+activity_45_hero_model,qiubite_pifu03_lihui01|421|-1407|0.8|5601004|7305,-1
 act_summon_energy_item,136,-1
 activity_chose_gift_free,10115|10121,-1
 activity_date_buydice_limit,3,-1
@@ -479,7 +479,7 @@ comic_comment_length_limit_ko_kr,12|120,-1
 activity_letter,36#10|2#1000|940002#50,-1
 activity_birthday_colour_awards,1#18000|1#16000,-1
 activity_birthday_colour_limit,100000,-1
-activity_44_hero_model,yifu_pifu03_lihui01|480|-1768|0.7|5201904|7304,-1
+activity_44_hero_model,qiubite_pifu04_lihui01|444|-1447|0.75|5601005|7313,-1
 activity_birthday_colour_cost,147#1,-1
 activity_birthday_cake_cost,148#1,-1
 activity_birthday_cake_rounds_limit,25,-1
@@ -990,7 +990,7 @@ firework_fire_weights,0|50|50|50|50|50|20|0,-1
 firework_energy,30,-1
 firework_ratio_5_unlock,5|50,-1
 firework_energy_init,0,-1
-activity_276_hero_model,puluomixiusi_pifu03_lihui01|481|-1689|0.7|5501204|7303,-1
+activity_276_hero_model,xifeng_pifu02_lihui01|511|-1560|0.75|5301403|7314,-1
 new_pingfen_stage_id,12|22|42|52|62|72|82|92|102|112|122|132|142,-1
 new_pingfen_level_limit,35,-1
 defense_team_save,1.5,-1
@@ -1277,7 +1277,7 @@ soul_equip_open_lvl,270,-1
 soul_land_ticket_init,421#10,-1
 soul_land_ticket_max,421#50,-1
 soul_land_ticket_daliy,421#10,-1
-soul_land_battlepass_point,1000|2#100,-1
+soul_land_battlepass_point,500|2#8,-1
 soul_equip2_lvl_exp_cost,0.5,-1
 activity_newbee_fund_4items_preview2,2|36|93|940016,-1
 soul_equip2_sp_item,426#1#100,-1
@@ -1285,3 +1285,12 @@ activity_2love_random_cost,427#1,-1
 activity_lasso_buy,2#200|343#1,-1
 activity_lasso_buy_limit,30,-1
 soul_land_start_time,1666310400,-1
+soul_land_award_time_max,86400,-1
+soul_land_open_lvl,270,-1
+soul_equip2_qlt_cost,2#500,-1
+activity_halloween2022_insure,10,-1
+activity_halloween2022_point,431#1|432#1|433#1,-1
+activity_halloween2022_limit_max,260000,-1
+activity_halloween2022_get,433,-1
+activity_5week_cost,434#1,-1
+soul_land_cycle_time,2419200,-1

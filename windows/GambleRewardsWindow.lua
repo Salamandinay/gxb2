@@ -440,7 +440,7 @@ function GambleRewardsWindow:initData()
 		self.itemRoot_:GetComponent(typeof(UIWidget)).alpha = 0
 
 		for _, itemData in ipairs(self.data_) do
-			local itemIcon = xyd.getItemIcon({
+			local params = {
 				show_has_num = true,
 				hideText = true,
 				uiRoot = self.itemRoot_.gameObject,
@@ -448,7 +448,17 @@ function GambleRewardsWindow:initData()
 				num = itemData.item_num,
 				dragScrollView = self.scrollView_,
 				showLev = itemData.showLev
-			}, itemData.iconType)
+			}
+
+			if itemData.soulEquipInfo then
+				params.soulEquipInfo = itemData.soulEquipInfo
+			end
+
+			if itemData.show_has_num ~= nil then
+				params.show_has_num = itemData.show_has_num
+			end
+
+			local itemIcon = xyd.getItemIcon(params, itemData.iconType)
 
 			if itemData.belowText then
 				if itemData.belowTextColor then
@@ -507,7 +517,7 @@ function GambleRewardsWindow:initData()
 
 		for _, itemData in ipairs(self.data_) do
 			local uiRoot = NGUITools.AddChild(self.gridOfItems_.gameObject, self.item_root_.gameObject)
-			local itemIcon = xyd.getItemIcon({
+			local params = {
 				show_has_num = true,
 				hideText = true,
 				uiRoot = uiRoot.gameObject,
@@ -515,7 +525,17 @@ function GambleRewardsWindow:initData()
 				num = itemData.item_num,
 				dragScrollView = self.scrollView_,
 				showLev = itemData.showLev
-			}, itemData.iconType)
+			}
+
+			if itemData.soulEquipInfo then
+				params.soulEquipInfo = itemData.soulEquipInfo
+			end
+
+			if itemData.show_has_num ~= nil then
+				params.show_has_num = itemData.show_has_num
+			end
+
+			local itemIcon = xyd.getItemIcon(params, itemData.iconType)
 
 			if itemData.belowText then
 				if itemData.belowTextColor then

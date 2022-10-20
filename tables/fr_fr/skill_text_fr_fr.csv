@@ -12851,8 +12851,8 @@ Lorsque la Barrière de la cible marquée avec Protection Canine est brisée, ce
 501114,Îles Célestes,Cœur de Scorpion,"La compétence de Selkis - Cœur de Scorpion ne lui fournit pas de Barrière, cependant sa Résistance Totale sera augmentée de 10% pendant 1 tour."
 502113,Îles Célestes,Protection Canine,"La Protection Canine d'ennemie Éva ne soigne pas des PV, cependant elle augmente de 10% l'Attaque de la cible marquée pendant 2 tours."
 503117,Îles Célestes,Mille Grues,"Les Compétences d'ennemie Chizuko (n'inclut pas Protection Céleste) ne peuvent pas fournir des Barrières, cependant sa compétence - Clochette de Kagura sera renforcée : ennemie Chizuko enlèvera aléatoirement 3 Effets Négatifs sur l'ennemi ayant le moins de PV."
-502114,Îles Célestes,Frappe Violente I,"Si un ennemi est sou la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 50% de chance d'étourdir vos Filles pendant 2 tours."
-502116,Îles Célestes,Frappe Violente II,"Si un ennemi est sou la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 100% de chance d'étourdir vos Filles pendant 2 tours."
+502114,Îles Célestes,Frappe Violente I,"Si un ennemi est sous la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 50% de chance d'étourdir vos Filles pendant 2 tours."
+502116,Îles Célestes,Frappe Violente II,"Si un ennemi est sous la protection d'une Barrière ou lorsqu'il obtient une Barrière, son Attaque Basique et sa Compétence Active auront 100% de chance d'étourdir vos Filles pendant 2 tours."
 5601000,Cupidon,Attaque Basique,
 65602000,Cupidon,Attaque Basique,
 75601000,Cupidon,Attaque Basique,
@@ -14718,3 +14718,93 @@ Dégâts sur la Durée. Augmente de 25% les Dégâts sur la Durée que la cible 
 6778101,Flèche Constellée,Compétence de l'Antiquité,"Augmente de 30% la limite maximum des Dégâts Critiques. Lorsque la porteuse fait un Coup Critique en lançant son Attaque Basique ou sa Compétence Active sur un ennemi, ce dernier subira des dégâts supplémentaires (10% de ces Dégâts Critiques)."
 6778201,Flèche Constellée,Compétence de l'Antiquité,"Augmente de 60% la limite maximum des Dégâts Critiques. Lorsque la porteuse fait un Coup Critique en lançant son Attaque Basique ou sa Compétence Active sur un ennemi, ce dernier subira des dégâts supplémentaires (20% de ces Dégâts Critiques)."
 6778301,Flèche Constellée,Compétence de l'Antiquité,"Augmente de 100% la limite maximum des Dégâts Critiques. Lorsque la porteuse fait un Coup Critique en lançant son Attaque Basique ou sa Compétence Active sur un ennemi, ce dernier subira des dégâts supplémentaires (30% de ces Dégâts Critiques)."
+5200001,Pierre d'Âme Intégrale,Poisson de Fortune,"Chaque fois que la porteuse subit des dégâts, ces dégâts ne peuvent pas dépasser 30% de ses PV Max (déclenchable 3 fois au maximum à chaque tour)."
+5200002,Pierre d'Âme Intégrale,Méduse Flottante,"Durant la bataille, la Résistance aux Dégâts de la porteuse sera augmentée de 0,5% pour chaque 1% de sa Résistance aux Critiques. Lorsque la porteuse reçoit un Coup Critique, sa Résistance aux Critiques sera augmentée de 30% pendant 1 tour."
+5200003,Pierre d'Âme Intégrale,Crabe Incisif,"Au début de la bataille, la porteuse obtient 1 couche de Carapace du Crabe.\nCarapace du Crabe (Effet de Compétence) : Lorsque la porteuse subit des dégâts, 1 couche de Carapace du Crabe sera consommée pour neutraliser ces dégâts."
+5200004,Pierre d'Âme Intégrale,Chèvre Fantôme,"À chaque fois que la porteuse aura lancé 3 attaques, les dégâts de la prochaine attaque seront augmentés de 60%."
+5200005,Pierre d'Âme Intégrale,Qilin de Feu,Augmente de 40% les dégâts infligés à la cible dont ses PV sont supérieurs à 80%.
+5200006,Pierre d'Âme Intégrale,Lézard Rusé,Augmente de 50% les dégâts infligés au Boss ennemi.
+5200007,Pierre d'Âme Intégrale,Jeune Kumiho,"À la fin de chaque tour, si durant le tour, la porteuse a lancé son Attaque Basique ou bien n'a lancé aucune attaque, alors augmente de 15% le Blocage et de 15% l'Immunité de toutes ses alliées pendant 2 tours (non cumulable)."
+5200008,Pierre d'Âme Intégrale,Chat Brodeur,"Augmente de 25% la valeur de la Barrière obtenue. Lorsque la porteuse sous la protection d'une Barrière lance sa Compétence Active, elle fournit une Barrière (20% des PV Max de la cible) à l'alliée ayant le moins de PV."
+5200009,Pierre d'Âme Intégrale,Phénix Majestueux,"Augmente les Soins de 25%. Lorsque la porteuse récupère des PV, elle enlèvera 1 Effet Négatif (Dégâts sur la Durée, Malus d'Attribut, Marque, Effet de Contrôle) sur 1 alliée aléatoire (déclenchable qu'une seule fois par tour)."
+5210101,Terre des Âmes,Étape - Blocage 1,"
+À chaque fois que votre Fille ne réussit pas à bloquer des dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 5% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 5% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210102,Terre des Âmes,Étape - Blocage 2,"
+À chaque fois que votre Fille ne réussit pas à bloquer les dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 10% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 10% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210103,Terre des Âmes,Étape - Blocage 3,"
+À chaque fois que votre Fille ne réussit pas à bloquer les dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 20% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 20% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210104,Terre des Âmes,Étape - Blocage 4,"
+À chaque fois que votre Fille ne réussit pas à bloquer les dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 40% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 40% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210105,Terre des Âmes,Étape - Blocage 5,"
+À chaque fois que votre Fille ne réussit pas à bloquer les dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 60% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 60% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210106,Terre des Âmes,Étape - Blocage 6,"
+À chaque fois que votre Fille ne réussit pas à bloquer les dégâts, elle obtiendra 1 couche d\'Ombre Mortelle.
+Ombre Mortelle (Effet de Compétence, cumulable) : Réduit de 80% l\'Attaque de la cible marquée lorsqu\'elle obtient 3 couches d\'Ombre Mortelle.
+La cible marqueé a 80% de chance d\'être étourdie au début de chaque tour lorsqu\'elle obtient 5 couches d\'Ombre Mortelle.
+La cible marquée sera immédiatement vaincue lorsqu\'elle obtient 15 couches d\'Ombre Mortelle."
+5210201,Terre des Âmes,Étape - Critique 1,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 5% les dégâts subis, inflige des dégâts (100% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 10."
+5210202,Terre des Âmes,Étape - Critique 2,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 10% les dégâts subis, inflige des dégâts (200% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 20."
+5210203,Terre des Âmes,Étape - Critique3,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 20% les dégâts subis, inflige des dégâts (300% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 30."
+5210204,Terre des Âmes,Étape - Critique4,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 40% les dégâts subis, inflige des dégâts (600% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 50."
+5210205,Terre des Âmes,Étape - Critique 5,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 60% les dégâts subis, inflige des dégâts (900% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 70."
+5210206,Terre des Âmes,Étape - Critique 6,"Lorsqu'un ennemi fait un Coup Critique, il inflige des dégâts fixes (50% des PV Max de la cible) à la cible attaquée et la marque avec Souffrance pendant 2 tours.\nSouffrance (Effet de Compétence, non cumulable) : Augmente de 100% les dégâts subis, inflige des dégâts (1500% de l'Attaque de la cible marquée) lorsqu'elle est marquée et aussi une seconde fois à la fin de chaque tour, en même temps, son Énergie sera réduite de 100."
+5210301,Terre des Âmes,Étape - Récupération1,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 5% les Soins Reçus et de 5% la valeur de Barrière obtenue."
+5210302,Terre des Âmes,Étape - Récupération2,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 10% les Soins Reçus et de 10% la valeur de Barrière obtenue."
+5210303,Terre des Âmes,Étape - Récupération3,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 20% les Soins Reçus et de 20% la valeur de Barrière obtenue."
+5210304,Terre des Âmes,Étape - Récupération4,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 40% les Soins Reçus et de 40% la valeur de Barrière obtenue."
+5210305,Terre des Âmes,Étape - Récupération5,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 70% les Soins Reçus et de 70% la valeur de Barrière obtenue."
+5210306,Terre des Âmes,Étape - Récupération6,"Au début de la bataille, toutes vos Filles seront marquées avec Faiblesse.\nFaiblesse (Effet de Compétence)：Réduit de 100% les Soins Reçus et de 100% la valeur de Barrière obtenue."
+2000037000,Boss de la Terre des Âmes (Critique),Attaque Basique,Inflige des dégâts (800% de l'Attaque de la cible) à 2 ennemis ayant l'Attaque la plus élevée et augmente sa propre Critique de 20% pendant 2 tours.
+2000037010,Boss de la Terre des Âmes (Critique),Compétence Active,"
+Inflige 800% d\'Attaque à tous les ennemis. Si ces dégâts font un Coup Critique, son Attaque sera augmentée de 20% pendant 4 tours et il infligera des dégâts d\'[c][01a310]Empoisonnement[-][/c] (600% de l\'Attaque de la cible qui reçoit un Coup Critique par ces dégâts), des dégâts de [c][01a310]Saignement[-][/c] (600% de l\'Attaque de la cible qui reçoit un Coup Critique par ces dégâts) et des dégâts de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de la cible qui reçoit un Coup Critique par ces dégâts) aux ennemis recevrant un Coup Critique par ces dégâts pendant 2 tours.
+
+[c][01a310]Empoisonnement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][01a310]Saignement :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
+[c][01a310]Brûlure :[-][/c]
+Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet."
+2000038000,Boss de la Terre des Âmes (Récupération),Attaque Basique,"
+Inflige des dégâts (20% des PV Max de la cible attaquée) à 2 ennemis ayant le moins de PV et réduit de 10% leurs Soins Reçus et de 10% la valeur de [c][e28002]Barrière[-][/c] qu\'elles obtiendront pendant 2 tours.
+
+[c][e28002]Barrière (Effet de Compétence, cumulable)[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
+2000038010,Boss de la Terre des Âmes (Récupération),Compétence Active,"
+Inflige 800% d\'Attaque à tous les ennemis.
+Inflige des dégâts supplémentaires (25% des PV Max de la cible) à l\'ennemi dont ses PV sont supérieurs à 50% et le marque avec 1 couche de [c][e28002]Cicatrice du Chaos[-][/c] pendant 6 tours.
+Inflige des dégâts supplémentaires (25% des PV perdus de la cible) à l\'ennemi dont ses PV sont inférieurs à 50% et le marque avec 1 couche de [c][e28002]Bénédiction Maudite[-][/c].
+
+[c][e28002]Cicatrice du Chaos (Effet de Compétence, cumulable)：[-][/c]
+Chaque couche de Cicatrice du Chaos consomme 10% des PV Max des ennemis marqués et réduit leurs Soins Reçus de 5% (cet effet peut au maximum, consommer 40% des PV Max des ennemis marqués et réduire leurs Soins Reçus de 40%. Les PV perdus dû à la Cicatrice du Chaos ne peuvent pas être soignés).
+[c][e28002]Bénédiction Maudite (Effet de Compétence)：[-][/c]
+Neutralise le prochain effet de Soin et convertit 100% des Soins que la cible devait recevoir en dégâts. (N\'inclut pas les Soins des Serviteurs)"
+2000039000,Boss de la Terre des Âmes (Blocage),Attaque Basique,Inflige 800% d'Attaque à 2 ennemis aléatoires et sa propre Précision sera augmentée de 20% pendant 2 tours.
+2000039010,Boss de la Terre des Âmes (Blocage),Compétence Active,"
+Inflige 800% d\'Attaque à tous les ennemis et réduit leur Blocage de 20% pendant 2 tours.
+Inflige 600% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur Armure, ayant 30% de chance de les [c][01a310]gêler[-][/c] pendant 2 tours, 30% de chance de les [c][01a310]pétrifier[-][/c] pendant 2 tours, 30% de chance de les [c][01a310]étourdir[-][/c] pendant 2 tours, les marquant avec [c][e28002]Marque Étoilée[-][/c] pendant 2 tours, et se marque avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+
+[c][01a310]Geler :[-][/c]
+Effet de Contrôle. La Fille sera temporairement incapable d\'utiliser sa Compétence Active ou d\'attaquer les ennemis.
+[c][01a310]Pétrifier :[-][/c]
+Effet de Contrôle. La Fille sera temporairement incapable d\'utiliser sa Compétence Active ou d\'attaquer les ennemis.
+[c][01a310]Étourdir :[-][/c]
+Effet de Contrôle. La Fille sera temporairement incapable d\'utiliser sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Marque Étoilée (Effet de Compétence)：[-][/c]
+Lorsque la cible marquée est attaquée, l\'ennemi marqué avec ses Marques Étoilées subira l\'équivalent de 25% des dégâts que Viviane subit. Lorsque la cible marquée reçoit des Effets Négatifs, elle a 15% de chance de donner ces Effets Négatifs aux ennemis marqués avec ses Marques Étoilées. Lorsque la cible marquée est vaincue, ses Marques Étoilées seront enlevées des ennemis marqués.
+[c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."

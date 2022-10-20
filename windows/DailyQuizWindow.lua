@@ -1,5 +1,6 @@
 local BaseWindow = import(".BaseWindow")
 local DailyQuizWindow = class("DailyQuizWindow", BaseWindow)
+local WindowTop = import("app.components.WindowTop")
 local DailyQuizTable = xyd.tables.dailyQuizTable
 local Backpack = xyd.models.backpack
 
@@ -12,10 +13,10 @@ end
 function DailyQuizWindow:getUIComponent()
 	local trans = self.window_.transform
 	local groupMain = trans:NodeByName("groupAction").gameObject
-	self.labelTitle_ = groupMain:ComponentByName("labelTitle_", typeof(UILabel))
-	self.upIcon = groupMain:NodeByName("labelTitle_/upIcon").gameObject
+	self.labelTitleGroup = groupMain:NodeByName("labelTitleGroup").gameObject
+	self.labelTitle_ = groupMain:ComponentByName("labelTitleGroup/labelTitle_", typeof(UILabel))
+	self.upIcon = groupMain:NodeByName("labelTitleGroup/labelTitle_/upIcon").gameObject
 	self.content_ = groupMain:NodeByName("content_").gameObject
-	self.closeBtn = groupMain:ComponentByName("closeBtn", typeof(UISprite)).gameObject
 	self.helpBtn_ = groupMain:NodeByName("helpBtn").gameObject
 	local group1 = self.content_:NodeByName("group1").gameObject
 	self.groupTouch1 = group1:NodeByName("groupTouch1").gameObject
@@ -59,11 +60,16 @@ function DailyQuizWindow:getUIComponent()
 	self.labelAward3 = self.btnAward3:ComponentByName("labelAward3", typeof(UILabel))
 	self.btnMask3 = self.btnAward3:ComponentByName("btnMask3", typeof(UISprite))
 	self.tipsGroup3 = groupLeft3:NodeByName("tipsGroup3").gameObject
+	self.btnBuyGroup = groupMain:NodeByName("btnBuyGroup").gameObject
+	self.btnBuy = groupMain:NodeByName("btnBuyGroup/btnBuy").gameObject
+	self.btnBuyLabel = self.btnBuy:ComponentByName("labelBuy", typeof(UILabel))
 end
 
 function DailyQuizWindow:initWindow()
 	DailyQuizWindow.super.initWindow(self)
 	self:getUIComponent()
+	self:initWindowTop(self)
+	self:resizePosition()
 	self:registerEvent()
 
 	if #self.dailyQuiz:getQuizzes() > 0 then
@@ -74,6 +80,32 @@ function DailyQuizWindow:initWindow()
 	end
 
 	self:updateUpIcon()
+end
+
+function DailyQuizWindow:initWindowTop(self)
+	local winTop = WindowTop.new(self.window_, self.name_, 1, true)
+	local items = {
+		{
+			id = xyd.ItemID.CRYSTAL
+		},
+		{
+			id = xyd.ItemID.MANA
+		}
+	}
+
+	winTop:setItem(items)
+end
+
+function DailyQuizWindow:resizePosition()
+	self.content_:GetComponent(typeof(UIWidget)).height = 912 + 28 * self.scale_num_contrary
+	self.content_:GetComponent(typeof(UILayout)).gap = Vector2(0, 0 + 20 * self.scale_num_contrary)
+
+	self:resizePosY(self.helpBtn_, 522, 588)
+	self:resizePosY(self.labelTitleGroup, 522, 588)
+	self:resizePosY(self.content_, 24, 54)
+	self:resizePosY(self.btnBuyGroup, -613, -613)
+	self:resizePosY(self.btnBuy, 133, 77)
+	self.content_:GetComponent(typeof(UILayout)):Reposition()
 end
 
 function DailyQuizWindow:updateUpIcon()
@@ -139,7 +171,17 @@ function DailyQuizWindow:layout()
 
 		self:updateCountLabel(i)
 		self:updateBtnAwardAndDesc(i)
+
+		if xyd.Global.lang == "de_de" then
+			self["label" .. tostring(i)].gameObject:X(40)
+		end
+
+		if xyd.Global.lang == "en_en" then
+			self["label" .. tostring(i)].gameObject:X(110)
+		end
 	end
+
+	self.btnBuyLabel.text = __("DAILY_QUIZ_TEXT01")
 end
 
 function DailyQuizWindow:updateBtnAwardAndDesc(index)
@@ -258,6 +300,10 @@ function DailyQuizWindow:registerEvent()
 			key = "DAILY_QUIZ_HELP_4"
 		})
 	end)
+
+	UIEventListener.Get(self.btnBuy).onClick = function ()
+		xyd.alert(xyd.AlertType.TIPS, __("DAILY_QUIZ_TITLE_TIPS"))
+	end
 
 	self.eventProxy_:addEventListener(xyd.event.GET_QUIZ_LIST, handler(self, self.onDailyQuizInfo))
 	self.eventProxy_:addEventListener(xyd.event.QUIZ_BUY, handler(self, self.onBuy))

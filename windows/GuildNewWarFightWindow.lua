@@ -290,7 +290,6 @@ function GuildNewWarFightWindow:updateMidGroup()
 			if partner then
 				local params1 = infoSelfPartner
 				params1.uiRoot = self["itemGoupSelf" .. i]
-				params1.scale = 0.4444444444444444
 				params1.noClick = true
 
 				if self.iconsSelf[i][j] then
@@ -300,6 +299,8 @@ function GuildNewWarFightWindow:updateMidGroup()
 					self.iconsSelf[i][j] = xyd.getItemIcon(params1, xyd.ItemIconType.ADVANCE_ICON)
 					local offsetDepth = self["itemGoupSelf" .. i]:ComponentByName("", typeof(UIWidget)).depth
 				end
+
+				self.iconsSelf[i][j]:setScale(0.4444444444444444)
 			elseif self.iconsSelf[i][j] then
 				self.iconsSelf[i][j]:SetActive(false)
 			end
@@ -314,7 +315,6 @@ function GuildNewWarFightWindow:updateMidGroup()
 			if infoEnemyPartner then
 				local params2 = infoEnemyPartner
 				params2.uiRoot = self["itemGoupEnnemy" .. i]
-				params2.scale = 0.4444444444444444
 				params2.noClick = true
 
 				if self.iconsEnemy[i][j] then
@@ -323,6 +323,8 @@ function GuildNewWarFightWindow:updateMidGroup()
 				else
 					self.iconsEnemy[i][j] = xyd.getItemIcon(params2, xyd.ItemIconType.ADVANCE_ICON)
 				end
+
+				self.iconsEnemy[i][j]:setScale(0.4444444444444444)
 			elseif self.iconsEnemy[i][j] then
 				self.iconsEnemy[i][j]:SetActive(false)
 			end

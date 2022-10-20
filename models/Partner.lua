@@ -88,6 +88,13 @@ function Partner:populate(params)
 		table.insert(self.star_origin, v)
 	end
 
+	self.souls_data = {}
+	self.souls = {}
+
+	for _, v in ipairs(params.souls or params.souls or {}) do
+		table.insert(self.souls_data, v)
+	end
+
 	self.treasures = xyd.checkCondition(params.treasures and params.treasures[1], params.treasures, {})
 	self.select_treasure = params.select_treasure or 1
 	self.isCollected_ = self:isCollected()
@@ -174,6 +181,8 @@ end
 function Partner:updateAttrs(params)
 	local changed_attr = {}
 	local old_attr = self.attrs
+
+	self:setSoulEquips(self.souls_data)
 
 	if params then
 		for key, _ in pairs(params) do
@@ -940,7 +949,8 @@ function Partner:getInfo()
 		travel = self.travel,
 		potentials_bak = self.potentials_bak,
 		treasures = self.treasures,
-		star_origin = self.star_origin
+		star_origin = self.star_origin,
+		souls = self.souls
 	}
 end
 
@@ -1131,6 +1141,165 @@ end
 
 function Partner:getIsMoveOffSevenSkinState()
 	return self.isMoveOffSevenSkinState
+end
+
+function Partner:getSoulEquips()
+	return self.souls_data
+end
+
+function Partner:setSoulEquips(souls)
+	self.souls_data = souls or {}
+	local result = {}
+
+	for k, v in ipairs(self.souls_data) do
+		if v == 0 then
+			table.insert(result, {})
+		elseif xyd.models.slot:getSoulEquip(v) then
+			table.insert(result, xyd.models.slot:getSoulEquip(v):getParams())
+		else
+			table.insert(result, {})
+		end
+	end
+
+	self.souls = result
+end
+
+function Partner:culSoulEquipAttr()
+	return xyd.culSoulEquipAttr(self:getSoulEquips())
+end
+
+function Partner:getSoulEquipSkill()
+	return xyd.getSoulEquipSkill(self:getSoulEquips())
+end
+
+function Partner:takeOffSoulEquip(equipID, callbalck)
+	local equip = xyd.models.slot:getSoulEquip(equipID)
+	local now_equips = {}
+
+	for k, v in pairs(self:getSoulEquips()) do
+		now_equips[k] = v
+	end
+
+	for key in pairs(now_equips) do
+		if now_equips[key] == equipID then
+			now_equips[key] = nil
+		end
+	end
+
+	xyd.models.slot:reqSetSoulEquip(now_equips, 2, self:getPartnerID(), function ()
+		equip:setOwnerID()
+		self:setSoulEquips(now_equips)
+		self:updateAttrs()
+		xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_ON)
+
+		if callbalck then
+			callbalck()
+		end
+	end)
+end
+
+function Partner:takeOnSoulEquip(equipID, callbalck)
+	local equip = xyd.models.slot:getSoulEquip(equipID)
+	local pos = equip:getPos()
+
+	local function takeOnCallback()
+		local oldEquipID = self:getSoulEquips()[pos]
+
+		if oldEquipID and oldEquipID > 0 then
+			local oldEquip = xyd.models.slot:getSoulEquip(oldEquipID)
+
+			oldEquip:setOwnerID()
+		end
+
+		local now_equips = {}
+
+		for k, v in pairs(self:getSoulEquips()) do
+			now_equips[k] = v
+		end
+
+		now_equips[pos] = equipID
+
+		xyd.models.slot:reqSetSoulEquip(now_equips, 1, self:getPartnerID(), function ()
+			equip:setOwnerID(self:getPartnerID())
+			xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_ON)
+			self:setSoulEquips(now_equips)
+			self:updateAttrs()
+
+			if callbalck then
+				callbalck()
+			end
+		end)
+	end
+
+	local oldOwnerID = equip:getOwnerPartnerID()
+
+	if oldOwnerID and oldOwnerID > 0 and oldOwnerID ~= self:getPartnerID() then
+		local oldOwner = xyd.models.slot:getPartner(oldOwnerID)
+
+		if oldOwner then
+			oldOwner:takeOffSoulEquip(equipID, takeOnCallback)
+		else
+			takeOnCallback()
+		end
+	else
+		takeOnCallback()
+	end
+end
+
+function Partner:takeOnSoulEquips(equipIDs, callbalck)
+	for i = 1, 5 do
+		local oldEquipID = self:getSoulEquips()[i]
+
+		if oldEquipID and oldEquipID > 0 then
+			local oldEquip = xyd.models.slot:getSoulEquip(oldEquipID)
+
+			oldEquip:setOwnerID()
+		end
+
+		local equipID = equipIDs[i] or 0
+		local equip = xyd.models.slot:getSoulEquip(equipID)
+
+		if equip then
+			local pos = equip:getPos()
+			local oldOwnerID = equip:getOwnerPartnerID()
+
+			if oldOwnerID and oldOwnerID > 0 and oldOwnerID ~= self:getPartnerID() then
+				local oldOwner = xyd.models.slot:getPartner(oldOwnerID)
+
+				if oldOwner then
+					oldOwner:takeOffSoulEquip(equipID, function ()
+						self:takeOnSoulEquips(equipIDs, callbalck)
+					end)
+
+					return
+				end
+			end
+		end
+	end
+
+	local now_equips = {}
+
+	for i = 1, 5 do
+		now_equips[i] = equipIDs[i]
+	end
+
+	self:setSoulEquips(now_equips)
+	self:updateAttrs()
+	xyd.models.slot:reqSetSoulEquip(now_equips, 1, self:getPartnerID(), function ()
+		for i = 1, 5 do
+			if self.souls_data[i] and self.souls_data[i] > 0 then
+				local equip = xyd.models.slot:getSoulEquip(self.souls_data[i])
+
+				equip:setOwnerID(self:getPartnerID())
+			end
+		end
+
+		xyd.SoundManager.get():playSound(xyd.SoundID.EQUIP_ON)
+
+		if callbalck then
+			callbalck()
+		end
+	end)
 end
 
 return Partner

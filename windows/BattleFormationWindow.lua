@@ -629,10 +629,13 @@ function BattleFormationWindow:ctor(name, params)
 		xyd.BattleType.ACADEMY_ASSESSMENT,
 		xyd.BattleType.TIME_CLOISTER_BATTLE,
 		xyd.BattleType.ARENA,
+		xyd.BattleType.ARENADEF,
 		xyd.BattleType.GUILD_BOSS,
 		xyd.BattleType.FRIEND,
 		xyd.BattleType.TOWER_PRACTICE,
-		xyd.BattleType.TIME_CLOISTER_EXTRA
+		xyd.BattleType.TIME_CLOISTER_EXTRA,
+		xyd.BattleType.ARENA_TEAM_DEF,
+		xyd.BattleType.GUILD_COMPETITION
 	}
 
 	if self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
@@ -1388,7 +1391,8 @@ function BattleFormationWindow:onClickBattleBtn()
 		[xyd.BattleType.QUICK_TEAM_SET] = self.quickSetTeam,
 		[xyd.BattleType.GALAXY_TRIP_BATTLE] = self.galaxyTripBattle,
 		[xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE] = self.galaxyTripSpecialBossBattle,
-		[xyd.BattleType.SHRINE_HURDLE_SET] = self.shrineHurdleSetTeam
+		[xyd.BattleType.SHRINE_HURDLE_SET] = self.shrineHurdleSetTeam,
+		[xyd.BattleType.SOUL_LAND] = self.soulLandFight
 	}
 
 	if battleFunc[self.battleType] then
@@ -1436,7 +1440,7 @@ end
 
 function BattleFormationWindow:arenaBattleDef(partnerParams)
 	local msg = messages_pb.set_partners_req()
-	msg.pet_id = self.pet
+	msg.pet_id = self.pet or 0
 
 	if self.chooseQuickTeam_ and self.chooseQuickTeam_ > 0 then
 		local partner_list = xyd.models.quickFormation:getPartnerList(self.chooseQuickTeam_)
@@ -2144,6 +2148,10 @@ function BattleFormationWindow:shrineHurdleSetTeam(partnerParams)
 	xyd.closeWindow("battle_formation_trial_window")
 end
 
+function BattleFormationWindow:soulLandFight(partnerParams)
+	xyd.models.soulLand:reqFight(self.params_.fortId, self.params_.stageId, partnerParams, self.pet)
+end
+
 function BattleFormationWindow:gameAssistantArenaBattle(partnerParams)
 	local partners = xyd.models.arena:getDefFormation()
 
@@ -2442,6 +2450,24 @@ end
 function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 	local params_data = self.params_
 	local pet_data = self.pet
+
+	if self.chooseQuickTeam_ and self.chooseQuickTeam_ > 0 then
+		local partner_list = xyd.models.quickFormation:getPartnerList(self.chooseQuickTeam_)
+		local canFight = false
+
+		for i = 1, 6 do
+			if partner_list[i] then
+				canFight = true
+			end
+		end
+
+		if not canFight then
+			xyd.alertTips(__("QUICK_FORMATION_TEXT09"))
+
+			return
+		end
+	end
+
 	local isHasFakePartner = false
 
 	for i, info in pairs(partnerParams) do
@@ -2473,7 +2499,7 @@ function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 						return
 					end
 
-					xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
+					xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data, self.chooseQuickTeam_)
 				end
 			end)
 
@@ -2482,11 +2508,11 @@ function BattleFormationWindow:guildCompetitionBattle(partnerParams)
 
 		xyd.alertYesNo(__("GUILD_COMPETITION_FIGHT_TIME"), function (yes)
 			if yes then
-				xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
+				xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data, self.chooseQuickTeam_)
 			end
 		end)
 	else
-		xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data)
+		xyd.models.guild:setGuildCompetitionFight(params_data.boss_id, params_data.type, partnerParams, pet_data, self.chooseQuickTeam_)
 	end
 end
 
@@ -4852,6 +4878,20 @@ function BattleFormationWindow:onClickSaveTeam(index)
 
 	if #partnerParams <= 0 then
 		xyd.alertTips(__("QUICK_FORMATION_TEXT27"))
+
+		return
+	end
+
+	local isHasFakePartner = false
+
+	for i, info in pairs(partnerParams) do
+		if tonumber(info.partner_id) == -1 then
+			isHasFakePartner = true
+		end
+	end
+
+	if isHasFakePartner then
+		xyd.alertTips(__("QUICK_FORMATION_TEXT28"))
 
 		return
 	end

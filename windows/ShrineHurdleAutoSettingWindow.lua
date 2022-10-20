@@ -100,7 +100,11 @@ function ShrineHurdleAutoSettingWindow:updatePartnerList()
 
 		if partner_id and tonumber(partner_id) and tonumber(partner_id) > 0 then
 			local partnerInfo = xyd.models.shrineHurdleModel:getPartner(partner_id)
-			local hp = partnerInfo.status.hp
+			local hp = nil
+
+			if partnerInfo and partnerInfo.status and partnerInfo.status.hp then
+				hp = partnerInfo.status.hp
+			end
 
 			if hp and hp <= 0 then
 				self["hero" .. tostring(pos)]:SetActive(false)

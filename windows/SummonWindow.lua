@@ -1843,7 +1843,7 @@ function SummonWindow:playPage()
 	end
 
 	function self.playAni2_()
-		self.sequence2_ = DG.Tweening.DOTween.Sequence()
+		self.sequence2_ = self:getSequence()
 
 		self.sequence2_:Insert(0, self.btnLeft_.transform:DOLocalMoveX(positionLeft - 10, 1))
 		self.sequence2_:Insert(1, self.btnLeft_.transform:DOLocalMoveX(positionLeft + 10, 1))
@@ -1855,7 +1855,7 @@ function SummonWindow:playPage()
 	end
 
 	function self.playAni1_()
-		self.sequence1_ = DG.Tweening.DOTween.Sequence()
+		self.sequence1_ = self:getSequence()
 
 		self.sequence1_:Insert(0, self.btnLeft_.transform:DOLocalMoveX(positionLeft - 10, 1))
 		self.sequence1_:Insert(1, self.btnLeft_.transform:DOLocalMoveX(positionLeft + 10, 1))

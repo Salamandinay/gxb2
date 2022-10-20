@@ -237,7 +237,8 @@ function SelfPlayer:initModelAfterLogin()
 		"community",
 		"arenaAllServerScore",
 		"shrine",
-		"galaxyTrip"
+		"galaxyTrip",
+		"soulLand"
 	}
 
 	for _, v in ipairs(modelList) do
@@ -623,6 +624,13 @@ function SelfPlayer:onLoginInfo_(event)
 	xyd.models.shrineHurdleModel:reqShineHurdleInfo()
 	xyd.models.shrineHurdleModel:getHistoryInfo()
 	xyd.models.house:reqHouseInfo()
+	xyd.models.slot:reqAllSoulEquipInfo({
+		1,
+		2
+	}, function ()
+		xyd.models.slot:updateAllPartnersAttrs()
+	end)
+	xyd.models.slot:reqAllSoulEquipCombination()
 
 	local functionId = xyd.tables.shopConfigTable:getFunctionID(xyd.ShopType.SHOP_ARENA)
 
@@ -668,6 +676,7 @@ function SelfPlayer:onLoginInfo_(event)
 
 	xyd.models.quickFormation:reqTeamsInfo()
 	xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
+	xyd.models.soulLand:reqCheckOpen()
 end
 
 function SelfPlayer:setOpenedFunc(ids)

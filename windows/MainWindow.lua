@@ -144,187 +144,6 @@ function MainBottomBtn:change(status)
 	end
 end
 
-local MainTopRightBtn = class("MainTopRightBtn")
-
-function MainTopRightBtn:ctor(goItem, id)
-	self.trans = {
-		label = {
-			"FRIEND",
-			"BP_TITLE",
-			"QUIZ",
-			"PET",
-			"TRAVEL_TITLE",
-			"STARRY_ALTAR",
-			"GROWTH_DIARY"
-		},
-		img = {
-			"right_friend_icon_v3",
-			"right_battlepass_icon_v4",
-			"right_quiz_icon_v3",
-			"left_pet_icon",
-			"right_explore_icon",
-			"right_starry_altar_icon",
-			"growth_diary_icon"
-		},
-		funcId = {
-			xyd.FunctionID.FRIEND,
-			xyd.FunctionID.MISSION,
-			xyd.FunctionID.QUIZ,
-			xyd.FunctionID.PET,
-			xyd.FunctionID.EXPLORE,
-			xyd.FunctionID.STARRY_ALTAR,
-			xyd.FunctionID.GROWTH_DIARY
-		}
-	}
-	self.id = id
-	self.goItem_ = goItem
-	self.name_ = self.trans.label[id]
-	local transGo = goItem.transform
-	self.transGo_sprite = transGo:GetComponent(typeof(UISprite))
-	self.transGo_UIWidget = transGo:GetComponent(typeof(UIWidget))
-	self.trBtnImg_ = transGo:ComponentByName("tr_btn_img", typeof(UISprite))
-	self.trBtnLabel_ = transGo:ComponentByName("tr_btn_label", typeof(UILabel))
-	self.btnAlertImg_ = transGo:ComponentByName("red_point", typeof(UISprite))
-	self.upIcon = transGo:NodeByName("upIcon").gameObject
-
-	if UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.ANDROID_1_5_138) >= 0 or UNITY_IOS and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_71_3_204) >= 0 or UNITY_EDITOR then
-		self.soundComponent = transGo:GetComponent(typeof(UIPlaySound))
-	end
-
-	self.trBtnImg_:SetActive(false)
-
-	local imgName = self.trans.img[id]
-
-	if xyd.isH5() then
-		imgName = "left_btn_bg_v3"
-
-		xyd.setUISprite(self.trBtnImg_, nil, self.trans.img[id] .. "_h5", function ()
-			self.trBtnImg_:MakePixelPerfect()
-		end)
-		self.trBtnImg_:SetActive(true)
-
-		self.transGo_UIWidget.width = 80
-		self.transGo_UIWidget.height = 83
-	end
-
-	xyd.setUISprite(self.transGo_sprite, nil, imgName)
-
-	self.trBtnLabel_.text = __(self.trans.label[id])
-
-	self.btnAlertImg_.gameObject:SetActive(false)
-
-	local openFuncsIndex = xyd.models.functionOpen:getOpenFuncIndex()
-
-	if self.trans.funcId[id] == 0 or openFuncsIndex[tostring(self.trans.funcId[id])] then
-		self.goItem_:SetActive(true)
-	else
-		self.goItem_:SetActive(false)
-	end
-
-	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
-		self.goItem_:SetActive(false)
-	end
-
-	self:checkGalaxy()
-
-	if self.id == 4 then
-		self:updateUpIcon()
-	end
-
-	self:updateSound()
-end
-
-function MainTopRightBtn:updateSound()
-	if self.trans.funcId[self.id] == xyd.FunctionID.QUIZ and self.soundComponent then
-		self.soundComponent.tableId = 2122
-	end
-end
-
-function MainTopRightBtn:checkGalaxy()
-	if self.id == 6 then
-		local openFuncsIndex = xyd.models.functionOpen:getOpenFuncIndex()
-		local starryOpen = xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR, true)
-		local galaxyOpen = xyd.checkFunctionOpen(xyd.FunctionID.GALAXY_TRIP, true)
-		galaxyOpen = galaxyOpen and xyd.models.galaxyTrip:getLeftTime() > 0
-
-		if starryOpen and galaxyOpen then
-			self.trBtnLabel_.text = __("GALAXY_TRIP_TEXT01")
-
-			xyd.setUISprite(self.trBtnImg_, nil, "activity_galaxy_trip_mission_icon_xxzl_yd")
-			self.goItem_:SetActive(true)
-		elseif not galaxyOpen and starryOpen then
-			self.trBtnLabel_.text = __(self.trans.label[self.id])
-			local imgName = self.trans.img[self.id]
-
-			xyd.setUISprite(self.trBtnImg_, nil, imgName)
-			self.goItem_:SetActive(true)
-		else
-			self.goItem_:SetActive(false)
-		end
-	end
-end
-
-function MainTopRightBtn:updateUpIcon()
-	if self.id == 3 then
-		if xyd.models.activity:isResidentReturnAddTime() then
-			self.upIcon:SetActive(xyd.models.activity:isResidentReturnAddTime())
-
-			local return_multiple = xyd.tables.activityReturn2AddTable:getMultiple(xyd.ActivityResidentReturnAddType.DAILY_QUIZ)
-
-			xyd.setUISpriteAsync(self.upIcon.gameObject:GetComponent(typeof(UISprite)), nil, "common_tips_up_" .. return_multiple, nil, , )
-		else
-			self.upIcon:SetActive(xyd.getReturnBackIsDoubleTime() or xyd.getIsQuizDoubleDrop())
-			xyd.setUISpriteAsync(self.upIcon.gameObject:GetComponent(typeof(UISprite)), nil, "common_tips_up_2", nil, , )
-		end
-
-		if xyd.isH5() then
-			self.upIcon:X(30)
-			self.upIcon:Y(-3)
-		end
-	end
-end
-
-function MainTopRightBtn:levChange()
-	local id = self.id
-
-	if (self.trans.funcId[id] == 0 or xyd.checkFunctionOpen(self.trans.funcId[id], true)) and (xyd.Global.isReview ~= 1 or self.id ~= 2) then
-		self.goItem_:SetActive(true)
-	else
-		self.goItem_:SetActive(false)
-	end
-
-	if self.trans.funcId[id] == xyd.FunctionID.GROWTH_DIARY and xyd.models.growthDiary:checkFinish() then
-		self.goItem_:SetActive(false)
-	end
-end
-
-function MainTopRightBtn:getGameObject()
-	return self.goItem_
-end
-
-function MainTopRightBtn:setUISprite(spriteName)
-	if xyd.isH5() then
-		xyd.setUISprite(self.trBtnImg_, nil, spriteName .. "_h5")
-		self.trBtnImg_:MakePixelPerfect()
-
-		return
-	end
-
-	xyd.setUISprite(self.transGo_sprite, nil, spriteName)
-end
-
-function MainTopRightBtn:setLabel(label)
-	self.trBtnLabel_.text = label
-end
-
-function MainTopRightBtn:getName()
-	return self.name_
-end
-
-function MainTopRightBtn:getRedPoint()
-	return self.btnAlertImg_
-end
-
 local MainUIActivityItem = class("MainUIActivityItem")
 
 function MainUIActivityItem:ctor(goItem, itemdata, scrollerPanel)
@@ -601,7 +420,6 @@ function MainWindow:ctor(name, params)
 	self.isShake = false
 	self.currentIndex = 0
 	self.bottomBtnList_ = {}
-	self.trBtnList_ = {}
 	self.rightSelectId = 0
 	self.redIcons = {}
 	self.isPlayAnimation = false
@@ -647,7 +465,6 @@ function MainWindow:initWindow()
 	self.transTopL = self.transTopTween:Find("top_L_group")
 	local transTopM = self.transTopTween:Find("top_M_group")
 	self.transTopR = self.transTopTween:Find("top_R_group")
-	self.transTopR_uiRect = self.transTopR:GetComponent(typeof(UIRect))
 	self.leftUpCon = import("app.components.MainWindowLeftUpCon").new(self.transTopL.gameObject, {}, self)
 	self.arrGroup = self.bottomGroup:NodeByName("arrGroup").gameObject
 	self.partnerSwitchArrow1 = self.arrGroup:NodeByName("leftArr").gameObject
@@ -691,6 +508,7 @@ function MainWindow:initWindow()
 
 	self.topRightBtn.gameObject:SetActive(false)
 
+	self.rightUpCon = import("app.components.MainWindowRightUpCon").new(self.transTopR.gameObject, {}, self, self.topRightBtn)
 	self.storyBubble = self.btnStory:Find("story_bubble")
 	self.storyBubble1 = self.storyBubble:Find("story_bubble1")
 	self.storyBubble2 = self.storyBubble:Find("story_bubble2")
@@ -794,7 +612,7 @@ function MainWindow:initWindow()
 	self:initOnceActivityInfo()
 	self:updateWindowDisplay(MainWindow.HideType.KIND0)
 	self:initRedMark()
-	self:updateUpIcon()
+	self.rightUpCon:updateUpIcon()
 	self:changeChristmasEffect()
 	xyd.models.activityPointTips:initData()
 end
@@ -927,7 +745,6 @@ end
 function MainWindow:initLayout()
 	self:reSize()
 	self:initResItem()
-	self:initTopBtnGroup()
 	self:initBottomGroup()
 	self:initAvatar()
 	self:initPlayerInfo()
@@ -990,124 +807,7 @@ function MainWindow:initResItem()
 	table.insert(self.resItemList, self.crystalItem)
 end
 
-function MainWindow:initTopBtnGroup()
-	local callbackList = {
-		function ()
-			MainMap:stopSound()
-			xyd.WindowManager.get():openWindow("friend_window")
-		end,
-		function ()
-			if not xyd.checkFunctionOpen(xyd.FunctionID.MISSION) then
-				return
-			end
-
-			if xyd.models.activity:getActivity(xyd.ActivityID.BATTLE_PASS) or xyd.models.activity:getActivity(xyd.ActivityID.BATTLE_PASS_2) then
-				xyd.WindowManager.get():openWindow("battle_pass_window", {})
-			else
-				xyd.WindowManager.get():openWindow("daily_mission_window")
-			end
-
-			MainMap:stopSound()
-		end,
-		function ()
-			MainMap:stopSound()
-			xyd.db.misc:setValue({
-				key = "daily_quize_redmark",
-				value = xyd.getServerTime()
-			})
-			xyd.models.redMark:setMark(xyd.RedMarkType.DAILY_QUIZ, false)
-
-			if xyd.models.dailyQuiz:isAllMaxLev() then
-				xyd.WindowManager.get():openWindow("daily_quiz2_window")
-			else
-				xyd.WindowManager.get():openWindow("daily_quiz_window")
-			end
-		end,
-		function ()
-			MainMap:stopSound()
-
-			if xyd.models.petTraining:isTrainOpen() then
-				xyd.WindowManager.get():openWindow("pet_start_window")
-			else
-				xyd.WindowManager.get():openWindow("pet_window")
-			end
-		end,
-		function ()
-			MainMap:stopSound()
-
-			if xyd.models.exploreModel:getTrainRoomsInfo() then
-				xyd.WindowManager.get():openWindow("explore_window")
-			end
-		end,
-		function ()
-			if not xyd.checkFunctionOpen(xyd.FunctionID.STARRY_ALTAR) then
-				return
-			end
-
-			local galaxyOpen = xyd.checkFunctionOpen(xyd.FunctionID.GALAXY_TRIP, true)
-
-			if galaxyOpen then
-				xyd.WindowManager.get():openWindow("galaxy_start_window")
-			else
-				xyd.WindowManager.get():openWindow("starry_altar_window")
-			end
-
-			MainMap:stopSound()
-		end,
-		function ()
-			if not xyd.checkFunctionOpen(xyd.FunctionID.GROWTH_DIARY) then
-				return
-			end
-
-			xyd.WindowManager.get():openWindow("growth_dairy_window")
-			MainMap:stopSound()
-		end
-	}
-
-	for i = 1, 7 do
-		local go = NGUITools.AddChild(self.transTopR.gameObject, self.topRightBtn.gameObject)
-
-		go:SetActive(true)
-
-		go.name = "tr_btn_" .. i
-		local btn = MainTopRightBtn.new(go, i)
-
-		table.insert(self.trBtnList_, btn)
-
-		UIEventListener.Get(go).onClick = callbackList[i]
-	end
-
-	self.func2Btn = {
-		[xyd.FunctionID.MISSION] = self.trBtnList_[2],
-		[xyd.FunctionID.QUIZ] = self.trBtnList_[3],
-		[xyd.FunctionID.PET] = self.trBtnList_[4]
-	}
-	self.btnMission_ = self.trBtnList_[2]
-	self.btnExplore_ = self.trBtnList_[5]
-	self.btnQuiz_ = self.trBtnList_[3]
-
-	self:showProperTopBtn()
-end
-
-function MainWindow:checkTrBtn()
-	if self.trBtnList_ then
-		for i = 1, #self.trBtnList_ do
-			if self.trBtnList_[i].id == 7 and xyd.models.growthDiary:checkFinish() then
-				self.trBtnList_[i].goItem_:SetActive(false)
-			elseif self.trBtnList_[i].id == 6 then
-				self.trBtnList_[i]:checkGalaxy()
-			end
-		end
-
-		self.transTopR:GetComponent(typeof(UIGrid)):Reposition()
-	end
-end
-
 function MainWindow:updateUpIcon()
-	for i in pairs(self.trBtnList_) do
-		self.trBtnList_[i]:updateUpIcon()
-	end
-
 	if xyd.models.activity:isResidentReturnAddTime() then
 		self.upIcon:SetActive(xyd.models.activity:isResidentReturnAddTime())
 
@@ -1131,18 +831,6 @@ function MainWindow:showProperTopBtn()
 		xyd.applyChildrenGrey(self.arenaBtn.gameObject)
 	end
 
-	for i = 1, #self.trBtnList_ do
-		if self.trBtnList_[i] then
-			self.trBtnList_[i]:levChange()
-		end
-	end
-
-	if xyd.isH5() then
-		self.transTopR_uiRect:SetLeftAnchor(self.transTop, 1, -88)
-		self.transTopR_uiRect:SetRightAnchor(self.transTop, 1, -16)
-	end
-
-	self.transTopR:GetComponent(typeof(UIGrid)):Reposition()
 	self:initGameAssistantBtn()
 end
 
@@ -2383,31 +2071,7 @@ function MainWindow:initRedMark()
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.CHAT_RED_PRIVATE
 	}, self.btnChat_redIcon3.gameObject)
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.FRIEND, self.trBtnList_[1]:getRedPoint())
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.PET, self.trBtnList_[4]:getRedPoint())
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.GROWTH_DIARY, self.trBtnList_[7]:getRedPoint())
-	xyd.models.redMark:setJointMarkImg({
-		xyd.RedMarkType.GALAXY_TRIP,
-		xyd.RedMarkType.GALAXY_TRIP_MAP_CAN_GET_POINT
-	}, self.trBtnList_[6]:getRedPoint())
 	xyd.models.backpack:checkCollectionShopRed()
-
-	local data = xyd.models.activity:getBattlePassData()
-
-	if data then
-		xyd.models.redMark:setJointMarkImg({
-			xyd.RedMarkType.BATTLE_PASS,
-			xyd.RedMarkType.ACHIEVEMENT,
-			xyd.RedMarkType.MISSION,
-			xyd.RedMarkType.BATTLE_PASS_MISSION1,
-			xyd.RedMarkType.BATTLE_PASS_MISSION2,
-			xyd.RedMarkType.BATTLE_PASS_MISSION3
-		}, self.btnMission_:getRedPoint())
-		data:getRedMarkState()
-	else
-		xyd.models.redMark:setMarkImg(xyd.RedMarkType.MISSION, self.btnMission_:getRedPoint())
-	end
-
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.STORY_LIST_MEMORY,
 		xyd.RedMarkType.QUESTIONNAIRE,
@@ -2454,7 +2118,9 @@ function MainWindow:initRedMark()
 		xyd.RedMarkType.TIME_CLOISTER_ACHIEVEMENT,
 		xyd.RedMarkType.TIME_CLOISTER_BATTLE,
 		xyd.RedMarkType.ARENA_ALL_SERVER,
-		xyd.RedMarkType.ARENA_ALL_SERVER_SCORE_MISSION
+		xyd.RedMarkType.ARENA_ALL_SERVER_SCORE_MISSION,
+		xyd.RedMarkType.SOUL_LAND_SUMMON_TEN,
+		xyd.RedMarkType.SOUL_LAND_BATTLE_PASS_GET
 	}, self.redPointBattle)
 	self:updateLargeScrollerBtnRedPoint()
 	xyd.models.redMark:setJointMarkImg({
@@ -2462,18 +2128,6 @@ function MainWindow:initRedMark()
 	}, self.redIconVip.gameObject)
 	xyd.models.slot:checkPromotablePartner()
 	xyd.models.backpack:checkAvailableEquipment()
-	xyd.models.redMark:setJointMarkImg({
-		xyd.RedMarkType.EXPLORE_OUPUT_AWARD,
-		xyd.RedMarkType.EXPLORE_ADVENTURE_BOX_CAN_OPEN
-	}, self.btnExplore_:getRedPoint())
-
-	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.YEARS_SUMMARY)
-
-	if activityData then
-		activityData:checkReadState()
-	end
-
-	xyd.models.redMark:setMarkImg(xyd.RedMarkType.DAILY_QUIZ, self.btnQuiz_:getRedPoint())
 end
 
 function MainWindow:updateLargeScrollerBtnRedPoint()
@@ -2742,12 +2396,6 @@ function MainWindow:iosTestChangeUI()
 	xyd.setUISprite(self.arenaBtn:GetComponent(typeof(UISprite)), nil, "top_arena_icon_v3_ios_test")
 	xyd.setUISprite(self.btnStory:GetComponent(typeof(UISprite)), nil, "top_story_icon_v3_ios_test")
 
-	for i = 1, 5 do
-		local item = self.trBtnList_[i]
-
-		xyd.setUISprite(item.transGo_sprite, nil, item.trans.img[item.id] .. "_ios_test")
-	end
-
 	for i = 1, 6 do
 		local item = self.bottomBtnList_[i]
 
@@ -2908,7 +2556,6 @@ function MainWindow:onWindowClose(event)
 	end
 
 	if self.win_list_[1] == "main_window" and #self.win_list_ <= 3 then
-		dump("刷新右侧按钮")
 		self:checkTrBtn()
 	end
 
@@ -3025,6 +2672,10 @@ end
 
 function MainWindow:setStopClickBottomBtn(flag)
 	self.stopClickBottomBtn = flag
+end
+
+function MainWindow:checkTrBtn(type)
+	self.rightUpCon:checkTrBtn(type)
 end
 
 return MainWindow

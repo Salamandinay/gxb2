@@ -1568,13 +1568,17 @@ function Guild:getGuildCompetitionBossPress(index)
 	}
 end
 
-function Guild:setGuildCompetitionFight(boss_id, type, partners, petID)
+function Guild:setGuildCompetitionFight(boss_id, type, partners, petID, team_index)
 	local msg = messages_pb:guild_competition_battle_req()
 	msg.boss_id = boss_id
 	msg.activity_id = xyd.ActivityID.GUILD_COMPETITION
 
-	for _, v in pairs(partners) do
-		table.insert(msg.partners, self:addMsgPartners(v))
+	if team_index and team_index > 0 then
+		msg.formation_id = team_index
+	else
+		for _, v in pairs(partners) do
+			table.insert(msg.partners, self:addMsgPartners(v))
+		end
 	end
 
 	msg.pet_id = petID

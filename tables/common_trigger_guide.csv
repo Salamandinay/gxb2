@@ -33,3 +33,9 @@ id,type,mark,obj_id,no_click,record,mask_type,offset,mask_icon,icon_offset,obj_s
 1106,12,,bgCostGroupObj,1,0,2,,partner_exskill_guide_4,,,,,,1,0|200,,,0,0,star_origin_detail_window,,,0
 1107,12,,btnReset,1,0,2,,friend_team_boss_crop5,,,,,,1,200|0,1,,0,0,star_origin_detail_window,,,0
 1108,12,,btnHelp,1,0,2,,friend_team_boss_crop5,,,,,,1,-200|0,,,0,0,star_origin_detail_window,,,0
+1201,13,,-1,1,0,,,,,,,,,1,0|0,,,0,0,partner_detail_window,,,
+1202,13,,btnSoulEquip,0,0,2,,partner_exskill_guide_1,0|0,,,,,1,200|20,1,,0,0,partner_detail_window,,,0
+1203,13,,bgHuaWen,1,0,2,,skill_resonate_guide1,,,,,,1,0|-300,,,0,0,soul_equip_info_window,10,,
+1204,13,,nav,1,0,0,,,,,,,,1,0|-200,,,0,0,soul_equip_info_window,,,
+1205,13,,bg2,1,0,0,,,,,,,,1,0|-200,,,0,0,soul_equip_info_window,,,
+1206,13,,btnHelp,0,0,2,,partner_exskill_guide_5,,,,,,1,300|-250,1,,0,0,soul_equip_info_window,,-20|-50,

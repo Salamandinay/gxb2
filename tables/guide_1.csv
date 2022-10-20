@@ -164,3 +164,6 @@ id,name,step,mark,condition,forced,window_name,obj_type,obj_id,no_click,special_
 163,month_practice,1,54,,,main_window,4,limitBtn_|icon,,,,,,2,buttoncrop_15,0|0,,,,,,,,1,,,0.42,,,,,
 164,month_practice,1,54,,,activity_window,,tab3,,,,,,,,,,,,,,-1,-505|320,,,,,,,,,
 165,month_practice,1,54,,,activity_window,,month_practice_item,,,,1,43,,,,,,1,,,-1,-180|310,,,,0.42,,,,,
+166,soul_land,1,55,,,func_open_window,,btnGo_,,,,,,,,,,,,1,,,,,,,0.2,,,,,
+167,soul_land,1,55,,,main_window,,arenaBtn,,,,,,2,buttoncrop_27,0|0,1.2|1.2,,1,,,,,,,,,,,,,
+168,soul_land,1,55,,,battle_choose_window,,soulLand,,,,1,56,0,,,,,,,,,,,,,,,,,,

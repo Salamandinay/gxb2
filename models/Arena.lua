@@ -208,6 +208,8 @@ function Arena:setDefFormation(partners, pet_id)
 
 	if pet_id then
 		msg.pet_id = pet_id
+	else
+		msg.pet_id = 0
 	end
 
 	xyd.Backend:get():request(xyd.mid.SET_PARTNERS, msg)

@@ -269,7 +269,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 137,Ermäßigte Monatskarte,5.49,€,Ermäßigte Monatskarte,5.99,5.99
 138,Rotkäppchen-Paket,21.99,€,Rotkäppchen-Paket,23.99,23.99
 139,Limitiertes Paket zum Valentinstag 1,10.99,€,Limitiertes Paket zum Valentinstag 1,11.99,11.99
-140,Paket zum Valentinstag 1,10.99,€,Paket zum Valentinstag 1,11.99,11.99
+140,Krystals Mirakel 1,10.99,€,Krystals Mirakel 1,11.99,11.99
 141,Testfonds,10.99,€,Testfonds,11.99,11.99
 142,Testfonds 2,21.99,€,Testfonds 2,23.99,23.99
 143,Testfonds 3,32.99,€,Testfonds 3,35.99,35.99
@@ -378,8 +378,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 199,Monatspaket 9,109.99,€,Monatspaket,119.99,119.99
 200,Wochenpaket 5,89.99,€,Wochenpaket,94.99,94.99
 201,Wochenpaket 6,109.99,€,Wochenpaket,119.99,119.99
-202,Paket zum Valentinstag 2,54.99,€,Paket zum Valentinstag 2,59.99,59.99
-203,Paket zum Valentinstag 3,109.99,€,Paket zum Valentinstag 3,119.99,119.99
+202,Krystals Mirakel 2,54.99,€,Krystals Mirakel 2,59.99,59.99
+203,Krystals Mirakel 3,109.99,€,Krystals Mirakel 3,119.99,119.99
 204,Diener-Wachstumspaket 1,5.49,€,Diener-Wachstumspaket 1,5.99,5.99
 205,Diener-Wachstumspaket 2,10.99,€,Diener-Wachstumspaket 2,11.99,11.99
 206,Diener-Wachstumspaket 3,32.99,€,Diener-Wachstumspaket 3,35.99,35.99
@@ -387,9 +387,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 208,Diener-Wachstumspaket 5,109.99,€,Diener-Wachstumspaket 5,119.99,119.99
 209,Paket zu Ostern 1,32.99,€,Paket zu Ostern 1,35.99,35.99
 210,Paket zu Ostern 2,109.99,€,Paket zu Ostern 2,119.99,119.99
-211,"Paket 1 zu ""Extra süß""",109.99,€,"Paket 1 zu ""Extra süß""",119.99,119.99
-212,"Paket 2 zu ""Extra süß""",54.99,€,"Paket 2 zu ""Extra süß""",59.99,59.99
-213,"Paket 3 zu ""Extra süß""",32.99,€,"Paket 3 zu ""Extra süß""",35.99,35.99
+211,Pakete zur Flaschenpost,109.99,€,Pakete zur Flaschenpost,119.99,119.99
+212,Pakete zur Flaschenpost,54.99,€,Pakete zur Flaschenpost,59.99,59.99
+213,Pakete zur Flaschenpost,32.99,€,Pakete zur Flaschenpost,35.99,35.99
 1600101,Mädchen-Wachstumspaket 1,5.49,€,Pippis Absolvierungsplan 1,5.99,5.99
 1600102,Mädchen-Wachstumspaket 2,21.99,€,Pippis Absolvierungsplan 2,23.99,23.99
 1600103,Mädchen-Wachstumspaket 3,54.99,€,Pippis Absolvierungsplan 3,59.99,59.99
@@ -689,3 +689,4 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 474,Batterieversorgung 4,54.99,€,Batterieversorgung,59.99,59.99
 475,Paket zur Schatzsuche in der Tiefsee,54.99,€,Paket zur Schatzsuche in der Tiefsee,59.99,59.99
 476,Batterieversorgung 5,109.99,€,Batterieversorgung,119.99,119.99
+477,Pass für Seelensammler,21.99,€,Pass für\nSeelensammler,23.99,23.99

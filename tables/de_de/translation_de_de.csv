@@ -1605,7 +1605,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,Musik
 NORMAL_SLOT_MACHINE,Normaler Glücksautomat
 HIGH_SLOT_MACHINE,Super Glücksautomat
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenkpaket enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die bereits entsperrten Geschenke erhalten.|2. Nicht entsperrte Geschenkpakete speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf das Geschenkpaket tippst, kannst du die Geschenke im Inneren prüfen. |4. Das 3. Geschenkpaket wird entsperrt, nachdem das zweite Glückspaket gekauft wurde.|5. Nach dem Ende des Events werden die noch nicht verwendeten Gutscheine zum Strand automatisch per Mail recycelt. Jeder entspricht 20K Münzen."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. Jedes Geschenkpaket enthält täglich Belohnungen. Spieler können durch tägliches Anmelden die bereits entsperrten Geschenke erhalten.|2. Nicht entsperrte Geschenkpakete speichern die Geschenke, die nach dem Öffenen alle aufeinmal gesammelt werden können. |3. Wenn du auf das Geschenkpaket tippst, kannst du die Geschenke im Inneren prüfen. |4. Das 3. Geschenkpaket wird entsperrt, nachdem das zweite Glückspaket gekauft wurde.|5. Nach dem Ende des Events werden die noch nicht verwendeten Gutscheine zum Herbst automatisch per Mail recycelt. Jeder entspricht 20K Münzen."
 CHAPTER_COUNT,Kapitel {1}
 CHAPTER_TITLE,{1}-{2}   {3}
 LOCK_STORY_LIST,Dieses Kapitel ist noch nicht entsperrt
@@ -1811,7 +1811,7 @@ IMG_GUIDE_BEACH_9,Die Belohnung muss [c][cc0011]manuell eingesammelt werden[-][/
 IMG_GUIDE_BEACH_10,Erhalte Punkte im Strandspiel-Event und entsperre Preise in der Fortgeschrittenen Belohnungsliste!
 GOVERN_TEAM_RULE,"1. Stelle dein Team für die Yume Akademie zusammen! Du kannst nur Freunde von deinem Server oder von Servern, die mit deinem Server zusammengelegt wurden, zu deinem Sicherheitsteam einladen. |2. Jeden Montag und Donnerstag erscheint der Chaoslord, der 48 Stunden bleibt. Die Belohnungen werden berechnet, nachdem der Countdown 0 erreicht hat.|3. Wenn ein Chaoslord anwesend ist, kannst du weder dein Team verlassen noch neue Mitglieder rekrutieren. Passe dein Team also während der Erholungszeiten an. Tippe auf den roten Button unten rechts auf der Team-Seite, um aus dem Team auszutreten. Tippe auf die Profilbilder der anderen Mitgliedern des Teams, um sie aus dem Team zu kicken.|4. Wenn der Chaoslord mehr als 50%% HP hat und der Countdown 0 erreicht, sinkt deine Sicherheitsstufe um 1 und du erhältst eine Teilnahmebelohnung. Wenn der Chaoslord weniger als 50%% HP hat, aber nicht besiegt wurde, erhältst du eine Klassenerhaltsbelohnung. Wenn der Chaoslord besiegt wird, erhöht sich deine Sicherheitsstufe um 1 und du erhältst eine Aufstiegsbelohnung.|5. Sicherheitsstufe: Jeder Spieler hat seine eigene Sicherheitsstufe. Wenn du dich mit anderen Spielern zusammenschließt, erscheint entsprechend des Spielers mit der niedrigsten Sicherheitsstufe der Chaoslord.|6. Ein Chaoslord wird mit 2 dunklen Rittern an seiner Seite erscheinen. Pro getötetem Ritter fügst du dem Chaoslord 20%% Schaden zu.|7. Du hast 2 Chancen, den Chaoslord anzugreifen, nachdem er erschienen ist. Jedes Mitglied deines Teams kann außerdem während jedes Spawns 1 zusätzliche Angriffschance mit Münzen erwerben. Wählt eure begrenzten Chancen mit Bedacht."
 FORT_BTN_LABEL_5,Albtraum
-TOWER_PRACTICE_WIN_TIPS,Aktuelle Aufstellung
+TOWER_PRACTICE_WIN_TIPS,Aufstellung
 HERO_CHALLENGE_TITLE,Mädchen-Aufgaben
 HERO_CHALLENGE_TIPS1,Zurücksetzen nicht notwendig
 HERO_CHALLENGE_TIPS2,Herausforderungsgutscheine nicht ausreichend. Du musst {1} Herausforderungsgutscheine verwenden
@@ -2109,7 +2109,7 @@ LEFT_TIMES,Chance(n): {1}
 FRIEND_TEAM_BOSS_BUY_LIMIT,Während jeder Sicherheitstour kannst du eine Herausforderungs-Chance kaufen
 FRIEND_TEAM_BOSS_FLAG_WINDOW,Flagge modifizieren
 FRIEND_TEAM_BOSS_AWARD_WINDOW,Belohnung
-FRIEND_TEAM_BOSS_RELEGATION_AWARD,Klassenerhaltsbelohnung
+FRIEND_TEAM_BOSS_RELEGATION_AWARD,Klassenerhaltsbeloh.
 FRIEND_TEAM_BOSS_Up_AWARD,Aufstiegsbelohnung
 FRIEND_TEAM_BOSS_DOWN_AWARD,Teilnahmebelohnung
 FRIEND_TEAM_BOSS_KILL_AWARD,Aktuelle Belohnungen:
@@ -4868,7 +4868,7 @@ QUICK_STARS_TEXT02,4-Sterne Mädchen absolvieren
 QUICK_STARS_TEXT03,Mengen-\nAbsolvierung
 QUICK_STARS_TEXT04,Kein Mädchen-Material verfügbar
 ACTIVITY_ANTIQUE_LEVELUP_TEXT15,Du hast die Obergrenze für Saphire bereits erreicht. Willst du trotzdem weiter Antiquitäten aufbrechen?\n(Wird auto. 1:1 in Entwicklungstränke umgewandelt)
-ACTIVITY_ANTIQUE_LEVELUP_TEXT16,Diese Antiquität wird von einem Mädchen\nbenutzt. Trotzdem fortfahren?
+ACTIVITY_ANTIQUE_LEVELUP_TEXT16,Diese Ausrüstung wird von einem Mädchen\nbenutzt. Trotzdem fortfahren?
 DAILY_QUIZ_TEXT04,"Brauchst du noch mehr Chancen,\ndann gib bitte deine Anzahl ein:"
 PUB_MISSION_AUTO_TEXT1,Schnell\neinsammeln
 ENTRANCE_TEST_ARTIFACT_CHOOSE_TIPS,*Die Antiquität ist nur in der Aufnahmeprüfung verfügbar
@@ -6246,7 +6246,7 @@ ACTIVITY_LOST_SPACE_SKILL_MASK_TREASURE_EXIT_TIPS3,Verfügbares Versorgungsdepot
 ACTIVITY_LOST_SPACE_SKILL_CHOOSE,Auswählen
 ENTRANCE_TEST_SKILL_UNSURE,*Ihre Fertigkeiten können noch angepasst werden.
 ACTIVITY_VAMPIRE_GAMBLE_RETURN,Zurück
-PARTNER_WARMUP_HELP,"1. Während des Events wird jeden Tag ein Kapitel der Geschichte entsperrt. Lies die entsperrten Kapitel durch, um die entsprechenden Belohnungen zu erhalten."
+PARTNER_WARMUP_HELP,"Während des Events wird jeden Tag ein Kapitel der Geschichte entsperrt. Lies die entsperrten Kapitel durch, um die entsprechenden Belohnungen zu erhalten."
 PARTNER_WARMUP_TEXT01,Vorschau
 PARTNER_WARMUP_TEXT02,Lies das {1}. Kapitel durch
 PARTNER_WARMUP_TEXT03,Lies zunächst das vorherige Kapitel durch
@@ -6265,7 +6265,7 @@ GAME_ASSISTANT_TEXT106,Ziehe 10 Mal
 GAME_ASSISTANT_TEXT107,Mädchen als Kämpfer in der Arena angepasst. Willst du deine Aufstellung anpassen?
 GAME_ASSISTANT_TEXT108,Mädchen als Kämpfer im Gym angepasst. Willst du deine Aufstellung anpassen?
 GUILD_TEXT75,Passende Gilden nicht gefunden
-STAR_ALTAR_TITLE,Malerin der Sterne
+STAR_ALTAR_TITLE,Eingefangene\nSterne
 GROUP_7,Meteore
 BATTLE_TIPS_DESC3,Es besteht kein Rivalitätsverhältnis zwischen Meteoren und den anderen Fraktionen.
 SKILL_RESONATE_HELP,"1. Die Funktion ""Skill-Resonanz"" ist nur für die Mädchen der Meteore-Fraktion verfügbar.|2. Verwende die Items ""Kugel des Glanzes"" und ""Kugel der Finsternis"", um die Fertigkeiten der Meteore-Mädchen zu leveln. Das Gesamtlevel der 4 Fertigkeiten eines Meteore-Mädchens ist genau das Resonanzlevel dieses Mädchens.|3. Wird eine Fertigkeit auf einem bestimmten Level gelevelt , müssen die anderen 3 Fertigkeiten jeweils auf einem geforderten Level gelevelt werden, damit diese Fertigkeit weiter gelevelt werden kann.|4. Dem Resonanzlevel des Mädchens entsprechend werden dem Mädchen allerlei Attributsboni verliehen.|5. Die gelevelte Resonanz kann zurückgesetzt werden, indem du eine bestimmte Menge an Dias ausgibst. Nach dem Zurücksetzen werden alle dafür verwendeten Ressourcen zurückgesendet."
@@ -7367,3 +7367,162 @@ ACTIVITY_2LOVE_HELP,"1. Verwende die Pfeile der Liebe, um die Karten aufzudecken
 ACTIVITY_2LOVE_TEXT10,Aufgaben
 ACTIVITY_SPFARM_BATTLEPASS_TEXT07,Zusatzbeloh.\nentsperren
 ACTIVITY_SPFARM_BATTLEPASS_TIPS02,Während der Besichtigungsphase ist der Eingang zur Einsatzversorgung geschlossen.
+SOUL_EQUIP_HELP,"1. Sobald das Mädchen Lv.270 erreicht hat, werden bei ihr die Slots der Seelenrüstungen entsperrt, darunter 1 Slot für Seelengefäß und 4 Slots für Seelensteine.|2. Jedes Seelengefäß hat ein festes Grundattribut, das durch ""Leveln"" und ""Stern Up""  erhöht werden kann, und allerlei Schliff-Attribute, die druchs ""Schleifen"" aktiviert sowie erneuert werden können.|3. Die Seelensteine haben Haupt- und Nebenattribute, deren Typen zu Beginn immer zufällig bestimmt werden. Die Attributen können durch ""Leveln"" und ""Verfeinern"" erhöht werden. Die Nebenattribute der Seelensteine auf max. Level können durchs ""Segnen"" zufällig erneuert werden.|4. Einige Seelengefäße können die Attribute Angriff und HP, die von den Seelenausrüstungen angeboten sind und nicht durch andere Antiquitäten oder Buffs usw. angepasst werden können, um einen bestimmten Wert erhöhen.|5. Jeder Seelenstein gehört zu einem Set. Wird ein Mädchen mit 4 Seelensteinen desselben Sets ausgerüstet, dann wird die Fertigkeit dieses Sets aktiviert.|6. Die Sets der Seelenausrüstungen (Seelengefäß und -steine) können gespeichert und für verschiedene Mädchen schnell wechselnd verwendet werden."
+SOUL_EQUIP_TEXT01,Seelenausrüstungen
+SOUL_EQUIP_TEXT02,Überblick
+SOUL_EQUIP_TEXT03,Wechseln
+SOUL_EQUIP_TEXT04,Set
+SOUL_EQUIP_TEXT05,Übersicht der Attribute
+SOUL_EQUIP_TEXT06,Ablegen
+SOUL_EQUIP_TEXT07,Schliff-Attribute
+SOUL_EQUIP_TEXT08,Nebenattribute
+SOUL_EQUIP_TEXT09,Sets
+SOUL_EQUIP_TEXT10,Attribute
+SOUL_EQUIP_TEXT11,Reihenfolge
+SOUL_EQUIP_TEXT12,Level
+SOUL_EQUIP_TEXT13,Sternlevel
+SOUL_EQUIP_TEXT14,Qualität
+SOUL_EQUIP_TEXT15,Zeitlich
+SOUL_EQUIP_TEXT16,Slot 1
+SOUL_EQUIP_TEXT17,Slot 2
+SOUL_EQUIP_TEXT18,Slot 3
+SOUL_EQUIP_TEXT19,Slot 4
+SOUL_EQUIP_TEXT20,Alle
+SOUL_EQUIP_TEXT21,Details
+SOUL_EQUIP_TEXT22,Abbrechen
+SOUL_EQUIP_TEXT23,Bestätigen
+SOUL_EQUIP_TEXT24,Aktuelles Set
+SOUL_EQUIP_TEXT25,Speichern
+SOUL_EQUIP_TEXT26,Bearbeiten
+SOUL_EQUIP_TEXT27,Ausrüsten
+SOUL_EQUIP_TEXT28,Speichern
+SOUL_EQUIP_TEXT29,4 - 12 Zeichen
+SOUL_EQUIP_TEXT30,Gerade in Benutzung. Willst du dennoch das Set verwenden?
+SOUL_EQUIP_TEXT31,Set bearbeiten
+SOUL_EQUIP_TEXT32,Ab Lv.{1}
+SOUL_EQUIP_TEXT33,Kein Seelengefäß vorhanden
+SOUL_EQUIP_TEXT34,Kein Seelenstein vorhanden
+SOUL_EQUIP_TEXT35,Willst du sicher das Set {1} löschen?
+SOUL_EQUIP_TEXT36,Stern Up
+SOUL_EQUIP_TEXT37,Leveln
+SOUL_EQUIP_TEXT38,Schleifen
+SOUL_EQUIP_TEXT39,Sternlevel
+SOUL_EQUIP_TEXT40,Max. Level
+SOUL_EQUIP_TEXT41,Schleifbare Attr.
+SOUL_EQUIP_TEXT42,{1} Attribute
+SOUL_EQUIP_TEXT43,Grundattribute
+SOUL_EQUIP_TEXT44,Stern Up
+SOUL_EQUIP_TEXT45,Level
+SOUL_EQUIP_TEXT46,Schliff-Attribute
+SOUL_EQUIP_TEXT47,Entsperrt ab Seelengefäß Lv.{1}
+SOUL_EQUIP_TEXT48,Leveln
+SOUL_EQUIP_TEXT49,Die Schliff-Attribute können durchs Leveln des Seelengefäßes verstärkt werden.
+SOUL_EQUIP_TEXT50,Schliff-Attribut · I
+SOUL_EQUIP_TEXT51,Schliff-Attribut · II
+SOUL_EQUIP_TEXT52,Schliff-Attribut · III
+SOUL_EQUIP_TEXT53,Schliff-Attribut · IV
+SOUL_EQUIP_TEXT54,Schliff-Attribut · V
+SOUL_EQUIP_TEXT55,Schleifen
+SOUL_EQUIP_TEXT56,Erneuern
+SOUL_EQUIP_TEXT57,Unbekanntes Attribut
+SOUL_EQUIP_TEXT58,Speichern
+SOUL_EQUIP_TEXT59,Leveln
+SOUL_EQUIP_TEXT60,Verfeinern
+SOUL_EQUIP_TEXT61,Segnen
+SOUL_EQUIP_TEXT62,Schnell-Wahl
+SOUL_EQUIP_TEXT63,Typen der Materialien
+SOUL_EQUIP_TEXT64,Materialien zum Leveln der Seelensteine
+SOUL_EQUIP_TEXT65,Seelensteine
+SOUL_EQUIP_TEXT66,Sternlevel wählen
+SOUL_EQUIP_TEXT67,Ziellevel
+SOUL_EQUIP_TEXT68,Bestätigen
+SOUL_EQUIP_TEXT69,Qualität
+SOUL_EQUIP_TEXT70,Hauptattribut
+SOUL_EQUIP_TEXT71,Nebenattribute
+SOUL_EQUIP_TEXT72,Das Zurücksetzen des Seelensteines kostet Dias und gibt dir die zum Verfeinern verwendeten Materialien zurück.
+SOUL_EQUIP_TEXT73,Höchste Qualität erreicht
+SOUL_EQUIP_TEXT74,Ursprüngliche Nebenattribute
+SOUL_EQUIP_TEXT75,"Verwende die Seelenbeutel, um basierend auf den ursprünglichen Nebenattributen die aktuellen Nebenattribute der Seelensteine zu erneuern."
+SOUL_EQUIP_TEXT76,Aktuelle Nebenattribute
+SOUL_EQUIP_TEXT77,Gesegnete Nebenattribute
+SOUL_EQUIP_TEXT78,Segnen
+SOUL_EQUIP_TEXT79,Speichern
+SOUL_EQUIP_TEXT80,"Level die Seelensteine max. Level, um sie segnen zu können."
+SOUL_EQUIP_TEXT81,Erfolgreich gesegnet
+SOUL_LAND_HELP,"1. Sobald ein beliebiges Mädchen Lv.270 erreicht, wird die Funktion ""Land der Seelen"" entsperrt. Die Funktion findet in Saisonform statt und jede Saison dauert 28 Tage.|2. Das Land der Seelen ist in mehrere Gebiete eingeteilt, auf denen mehrere Stufen herausgefordert werden können. Töte in einem Kampf alle Gegner der Stufe, um diese Stufe abzuschließen und die Nächste entsperren zu können.|3. Zur Herausforderung werden die Seelentickets zum Land der Seelen benötigt. Täglich werden 10 Seelentickets gesendet und mengenmäßig können sie maximal bis auf 100 gespeichert werden. Du kannst auch Dias ausgeben, um weitere Seelentickets direkt zu kaufen. Nach dem Ende der Saison werden die noch nicht verwendeten Seelentickets entfernt.|4. Sobald du eine Stufe abgeschlossen hast, erhältst du die Abschlussbelohnungen, die jede Saision nur einmal gesammelt werden können.|5. Basierend auf der Menge an gesamten abgeschlossenen Stufen (mindestens 1) werden alle 5 Minuten die Kampfbeute einmal abgerechnet, die zu jeder Zeit gesammelt werden können. Die Ansammlung von Belohnungen geht max. 24 Stunden und wird erst wieder aufgenommen, wenn du die neueste Kampfbeute sammelst.|6. Die Seelenzweige können zum Tausch im Shop verwendet werden. Nach dem Ende der Saison wird das Tauschlimit der Items zurückgesetzt. Die Seelenmünzen und seltenen Seelenmünzen können zum Ziehen der Seelensteine beim Ritual verwendet werden.|7. Durchs Ziehen im Ritual erhältst du noch die Ritual-EXP. Der Menge an erhaltenen Ritual-EXP entsprechend wird das Ritual-Level erhöht, bzw. die Qualität der Belohnungen beim Ritual verbessert. (Das Ritual-Level wird nicht in neuen Saisons zurückgesetzt.)"
+SOUL_LAND_TEXT01,Restliche Zeit:
+SOUL_LAND_TEXT02,Pass
+SOUL_LAND_TEXT03,Fortschritt: {1}/{2}
+SOUL_LAND_TEXT04,{1}x/5 Min.
+SOUL_LAND_TEXT05,Sammeln
+SOUL_LAND_TEXT06,{1} - {2}
+SOUL_LAND_TEXT07,Gegner
+SOUL_LAND_TEXT08,Belohnungen
+SOUL_LAND_TEXT09,Debuffs
+SOUL_LAND_TEXT10,Kämpfen
+SOUL_LAND_TEXT11,[c][size=32]1[-][/c] Mal
+SOUL_LAND_TEXT12,[c][size=32]10[-][/c] Mal
+SOUL_LAND_TEXT13,Wahrscheinlichkeit
+SOUL_LAND_TEXT14,Erhältliche Belohnungen
+SOUL_LAND_TEXT15,Jeder Zug im Ritual gewährt dir einen zufälligen Seelenstein der folgenden Sets.
+SOUL_LAND_TEXT16,Wahrscheinlichkeit
+SOUL_LAND_TEXT17,Alle Seelensteine beim Ritual sind von blauer Qualität. Sternlevel der gezogenen Seelensteine hängen von Ritual-Level und Items zum Ziehen ab.
+SOUL_LAND_TEXT18,Aktuelle
+SOUL_LAND_TEXT19,Nächste
+SOUL_LAND_AREA_TEXT01,Wunderwald
+SOUL_LAND_AREA_TEXT02,Totes Meer
+SOUL_LAND_AREA_TEXT03,Sturmebene
+SOUL_LAND_BATTLEPASS_HELP,"1. Pass für Seelensammler ist ein exklusiver Pass zur Funktion ""Land der Seelen"". Schließe die Stufen da ab, um Pass-Punkte und die entsprechenden Belohnungen zu erhalten. Abschluss einer Stufe gibt 10 Pass-Punkte.|2. Der Pass gewährt dir die Standardbelohnungen und die Premium Belohnungen. Die Premium Belohnungen werden erst entsperrt, wenn du den Pass für Seelensammler gekauft hast.|3. Die Dauer des Passes ist gleich wie die der Saison vom Land der Seelen. Zu Beginn der neuen Saison vom Land der Seelen wird der Pass für Seelensammler auch zurückgesetzt. Die im Pass nicht gesammelten Belohnungen werden per Mail gesendet, während die nicht abgeschlossen Punkte-Stufen nicht weiterhin erreicht werden können.|4. Du kannst Dias ausgeben, um Pass-Punkte zu kaufen. Jede Saison darfst du mit Dias nur eine bestimmte Menge an Pass-Punkten kaufen."
+SOUL_LAND_BATTLEPASS_TEXT01,{1} bis zum Ende
+SOUL_LAND_BATTLEPASS_TEXT02,Aktuelle Punkte:
+SOUL_LAND_BATTLEPASS_TEXT03,Punkte kaufen
+SOUL_LAND_BATTLEPASS_TEXT04,Punkte
+SOUL_LAND_BATTLEPASS_TEXT05,Standard-\nbelohnungen
+SOUL_LAND_BATTLEPASS_TEXT06,Premium Belohnungen
+SOUL_LAND_BATTLEPASS_TEXT07,Pass kaufen
+SOUL_LAND_BATTLEPASS_TEXT08,"Schließe die Stufen auf dem Land der Seelen ab, um Pass-Punkte und deren Standardbelohnungen zu erhalten. Nach dem Kauf des Passes werden die Premium Belohnungen entsperrt!"
+SOUL_LAND_BATTLEPASS_TEXT09,Pass-Punkte kaufen
+SOUL_LAND_BATTLEPASS_TEXT10,Kaufbare Pass-Punkte: {1}
+DAILY_QUIZ_TITLE_TIPS,Wird nach dem Abschließen aller Quiz entsperrt
+DAILY_QUIZ_TITLE_DESC,Sammle reichhaltige Ressourcen im täglichen Quiz ein
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON01,Belohnungen
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,Normale Schnitzerei
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,Premium Schnitzerei
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,如果連續10次高級雕刻都沒有獲得xxx，則第11次必得xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,1.消耗xxx可以xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,Belohnungen der Kürbislaterne
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,Grundbelohnungen
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,Schnell schnitzen
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,"Gib ein, wievielmal du schnitzen willst"
+ACTIVITY_HALLOWEEN2022_SHOP_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,Zum Schnitzen
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,Server-Fortschritt
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,Gratis
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,Halloween-Pakete
+ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,全服進度達到xxx時解鎖
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,Das hast du bereits gekauft und kann nicht wiederholt gekauft werden!
+SOUL_LAND_TEXT20,Alle Stufen auf diesem Land sind abgeschlossen
+SOUL_LAND_BATTLEPASS_TEXT11,"Willst du sicher {1} Dias ausgeben, um {2} Pass-Punkt(e) zu kaufen?"
+SOUL_EQUIP_TEXT82,Keine Schliff-Attribute
+SOUL_EQUIP_TEXT83,Seelenset - {1}
+SOUL_LAND_BATTLEPASS_TEXT12,Limit der kaufbaren Pass-Punkte erreicht. Weitere Punkte können nicht mehr gekauft werden.
+SOUL_LAND_BATTLEPASS_TEXT13,Keine kaufbaren Pass-Punkte
+SOUL_EQUIP_TEXT84,Zurücksetzen nicht notwendig
+QUICK_FORMATION_TEXT28,Ungültige(s) Mädchen. Speichern fehlgeschlagen!
+SOUL_LAND_SUMMON_HELP,"1. Verwende die Seelenmünzen oder die seltenen Seelenmünzen, um Seelensteine beim Ritual zu ziehen. Mit den seltenen Seelenmünzen sind Seelensteine auf höherem Sternlevel zu erhalten.|2. Durchs Ziehen beim Ritual erhältst du neben den Belohnungen noch die Ritual-EXP. Die mit seltenen Seelenmünzen erhaltene Menge an Ritual-EXP ist doppelt so viele wie die mit Seelenmünzen.|3. Mit der Ansammlung der Ritual-EXP wird dementsprechend das Ritual-Level erhöht, das nicht in neuen Saisons zurückgesetzt werden.|4. Je höher das Ritual-Level ist, desto Seelensteine auf höheren Sternlevel kannst du möglicherweise ziehen. Tippe auf die Lupe oben links, um die erhältlichen Sets der Seelensteine und die detaillierten Wahrscheinlichkeiten zu prüfen."
+SOUL_LAND_TEXT21,Shop
+SOULEQUIP,Seelenausr.
+SOUL_EQUIP_TEXT85,Seelengefäß
+SOUL_EQUIP_BAGMAX_TIPS,Für die Seelenausrüstungen reichen die Plätze im Rucksack nicht aus. Räume erstmal deinen Rucksack!
+SOUL_LAND_TEXT22,Die neue Saison vom Land der Seelen hat begonnen!
+SOUL_LAND_UNLOCK_TIPS,"Level ein beliebiges Mädchen auf Lv.270, um es zu entsperren!"
+SOUL_EQUIP_TEXT86,"Level das Sternlevel des Seelengefäßes auf, um es weiter leveln zu können."
+SOUL_EQUIP_TEXT87,Fertigkeit vom Set der Seelensteine aktiviert!
+SOUL_EQUIP_TEXT88,Verfeinern
+SOUL_EQUIP_TEXT89,Segnen
+SOUL_LAND_TEXT23,Stufen
+SOUL_EQUIP_TEXT90,Seelen-\n  ausrüstung
+SOUL_EQUIP_TEXT91,Limit der speicherbare Sets erreicht
+NO_SOULEQUIP,Keine Seelenausrüstungen
+SOUL_EQUIP_TEXT92,Genügende Materialien zum Leveln auf max. Level gewählt

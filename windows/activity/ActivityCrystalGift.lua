@@ -39,8 +39,8 @@ function ActivityCrystalGift:resizeToParent()
 	local p_height = self.go.transform.parent:GetComponent(typeof(UIPanel)).height
 
 	self.contentGroup:Y(874 - p_height)
-	self:resizePosY(self.titleImg.gameObject, -203, -243)
-	self:resizePosY(self.timeGroup.gameObject, -289, -329)
+	self:resizePosY(self.titleImg.gameObject, -162, -197)
+	self:resizePosY(self.timeGroup.gameObject, -307, -382)
 	self:resizePosY(self.contentGroup.gameObject, 0, -115)
 end
 

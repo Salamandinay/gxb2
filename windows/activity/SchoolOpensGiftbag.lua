@@ -23,10 +23,9 @@ end
 function SchoolOpensGiftbag:resizeToParent()
 	SchoolOpensGiftbag.super.resizeToParent(self)
 	self:resizePosY(self.exchangeBtn, -785, -962)
-	self:resizePosY(self.item1, -556, -726)
-	self:resizePosY(self.item2, -684, -855)
-	self:resizePosY(self.item3, -567, -738)
-	self:resizePosY(self.effect, -795, -826)
+	self:resizePosY(self.item1, -349, -406)
+	self:resizePosY(self.item2, -523, -606)
+	self:resizePosY(self.item3, -655, -771)
 end
 
 function SchoolOpensGiftbag:getUIComponent()
@@ -41,24 +40,16 @@ function SchoolOpensGiftbag:getUIComponent()
 	for i = 1, 3 do
 		self["item" .. i] = self.itemGroup:NodeByName("item" .. i).gameObject
 	end
-
-	self.effect = go:NodeByName("effect").gameObject
 end
 
 function SchoolOpensGiftbag:initUIComponent()
-	xyd.setUISpriteAsync(self.textImg, nil, "activity_opens_giftbag3_logo_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.textImg, nil, "activity_opens_giftbag4_logo_" .. xyd.Global.lang)
 
 	self.exchangeBtnLabel.text = __("SCHOOL_GIFTBAG_EXCHANGE_TEXT01")
 
 	if xyd.Global.lang == "ja_jp" then
 		self.exchangeBtnLabel.fontSize = 22
 	end
-
-	local effect = xyd.Spine.new(self.effect)
-
-	effect:setInfo("zuoci_pifu05_lihui01", function ()
-		effect:play("animation", 0)
-	end)
 
 	local ids = xyd.tables.activitySchoolGiftTable:getIDs()
 
@@ -78,10 +69,6 @@ function SchoolOpensGiftbag:initUIComponent()
 	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "de_de" or xyd.Global.lang == "en_en" then
 		self.exchangeBtnLabel.width = 130
 	end
-
-	if xyd.Global.lang == "de_de" then
-		self.textImg:Y(60)
-	end
 end
 
 function SchoolOpensGiftbag:initItems()
@@ -97,7 +84,7 @@ function SchoolOpensGiftbag:initItems()
 		}
 		local item = self.itemGroup:NodeByName("item" .. tostring(params.id)).gameObject
 		local unlockBtn = item:NodeByName("unlockBtn").gameObject
-		local imgBg = item:ComponentByName("imgBg", typeof(UISprite))
+		local imgBg_ = item:ComponentByName("imgBg", typeof(UISprite))
 		local buttonLabel = item:ComponentByName("unlockBtn/button_label", typeof(UILabel))
 		local iconImg = unlockBtn:ComponentByName("iconImg", typeof(UISprite))
 
@@ -105,12 +92,12 @@ function SchoolOpensGiftbag:initItems()
 		self:updateInfo(params.id)
 
 		if params.status == 1 and params.counts ~= 0 then
-			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
+			xyd.setUISpriteAsync(imgBg_, nil, "activity_opens_giftbag4_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
 		else
-			xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
+			xyd.setUISpriteAsync(imgBg_, nil, "activity_opens_giftbag4_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
 		end
 
-		UIEventListener.Get(imgBg.gameObject).onClick = function ()
+		UIEventListener.Get(imgBg_.gameObject).onClick = function ()
 			local items = {}
 			local awards = xyd.tables.activitySchoolGiftTable:getDailyAwards(aItemId)
 			local status = self.activityData.detail.box_lock_status[tonumber(aItemId)]
@@ -153,7 +140,7 @@ function SchoolOpensGiftbag:updateInfo(id)
 	}
 	local item = self.itemGroup:NodeByName("item" .. tostring(params.id)).gameObject
 	local unlockBtn = item:NodeByName("unlockBtn").gameObject
-	local imgBg = item:ComponentByName("imgBg", typeof(UISprite))
+	local imgBg_ = item:ComponentByName("imgBg", typeof(UISprite))
 	local buttonLabel = item:ComponentByName("unlockBtn/button_label", typeof(UILabel))
 	local iconImg = unlockBtn:ComponentByName("iconImg", typeof(UISprite))
 
@@ -174,9 +161,9 @@ function SchoolOpensGiftbag:updateInfo(id)
 	end
 
 	if params.status == 1 and params.counts ~= 0 then
-		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
+		xyd.setUISpriteAsync(imgBg_, nil, "activity_opens_giftbag4_icon" .. tostring(params.id) .. "_" .. "1", nil, , true)
 	else
-		xyd.setUISpriteAsync(imgBg, nil, "activity_opens_giftbag3_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
+		xyd.setUISpriteAsync(imgBg_, nil, "activity_opens_giftbag4_icon" .. tostring(params.id) .. "_" .. "0", nil, , true)
 	end
 end
 
@@ -321,8 +308,8 @@ function SchoolOpensGiftbag:touchType3(id)
 
 	xyd.WindowManager.get():closeWindow("activity_window", function ()
 		xyd.openWindow("activity_window", {
-			activity_type = xyd.EventType.COOL,
-			select = xyd.ActivityID.BENEFIT_GIFTBAG06
+			select = 90,
+			activity_type = xyd.EventType.COOL
 		})
 	end)
 end

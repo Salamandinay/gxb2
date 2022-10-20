@@ -5783,11 +5783,11 @@ This book was only an experimental product that was created with well-known stor
 27311,Sun Dance,Skins,Sun Dance skin of Chizuko
 7312,Entrancing Dance,Skins,Entrancing Dance skin of Promethea
 27312,Entrancing Dance,Skins,Entrancing Dance skin of Promethea
-417,Soul Gem,Special Item,Used to upgrade Anima Gear·Anima Artifact
-418,Soul Mirror,Special Item,Used to Infuse Anima Gear·Anima Artifact
-419,Soul Dice,Special Item,Used for the evolution of Anima Gear·Anima Stone
-420,Soul Charm,Special Item,Used for the refinement of Anima Gear·Anima Stone
-421,Challenge Ticket: Land of Souls,Special Item,Used in challenge battles in Land of Souls feature
+417,Soul Gem,Special Item,Used to upgrade Anima Artifact
+418,Soul Mirror,Special Item,Used to Infuse Anima Artifact
+419,Soul Dice,Special Item,Used for the evolution of Anima Stone
+420,Soul Charm,Special Item,Used for the refinement of Anima Stone
+421,Soul Challenge Ticket,Special Item,Used in challenge battles in Land of Souls feature
 422,Soul Branch,Special Item,Use to buy items in Store of Land of Souls.
 423,Soul Token,Special Item,Used to draw rewards from Anima Stone Ritual in Land of Souls
 424,Shiny Soul Token,Special Item,Used to draw rewards from Anima Stone Ritual in Land of Souls
@@ -5811,3 +5811,287 @@ This book was only an experimental product that was created with well-known stor
 4201039,Regular Customized Resource Chest,Customized Chest,"You can choose one of the rewards after opening this chest:「Servant Cookie*4000, Spirit Cookie*500, Servant Crystal*250, Standard File*10000, Exclusive File*2000, Guild Coin*3000」"
 8083,Torii Gate,Frame,Obtained from Master Designer Pack
 9134,Appreciate that,Chat emoji,「Appreciate that」chat emoji of Chizuko
+5100001,Emerald Quill,Anima Artifact,
+5100002,Dreamy Antlers,Anima Artifact,
+5100003,Acorn of Plenty,Anima Artifact,
+5100004,Scaled Cleaver,Anima Artifact,
+5100005,Fungirite,Anima Artifact,
+5100006,Buried Fossil,Anima Artifact,
+5100007,Bottle of Sand,Anima Artifact,
+5100008,Mystical Butterfly,Anima Artifact,
+5100009,Unearthly Tentacle,Anima Artifact,
+5100010,Kitsune Mask,Anima Artifact,
+5100011,Singing Shell,Anima Artifact,
+5100012,Predator's Gaze,Anima Artifact,
+5100013,Abyssal Amulet,Anima Artifact,
+5100014,Force of Nature,Anima Artifact,
+5100015,Kitty Claws,Anima Artifact,
+5100016,Dream Catcher,Anima Artifact,
+5100017,Viper's Curse,Anima Artifact,
+5100018,Lovebird's Potion,Anima Artifact,
+5100019,Horned Headdress,Anima Artifact,
+5200001,Lucky Goldfish,Anima Set,Every instance of damage taken will not surpass 30% of self Maximum HP (This effect can only be triggered 3 times per Round).
+5200002,Floating Jellyfish,Anima Set,"In battle, the owner of this set gains 0.5% Damage Reduction for every 1% Crit Resist she has. When she takes a Critical Strike from Basic Attacks or Active Skills, she will gain 30% Crit Resist that lasts for 1 Round."
+5200003,Rock Crab,Anima Set,"At the start of the Round, the owner of this Set gains 1 stack of Carapace.\nCarapace: Whenever the owner of this Effect takes damage, she will consume 1 stack of Carapace to nullify the damage."
+5200004,Ghostly Goat,Anima Set,"For every 3 instances of damage dealt, the owner of this Set will deal 60% more damage in the next instance of damage she deals."
+5200005,Fiery Qilin,Anima Set,Increases damage dealt to enemies with more than 80% HP by 40%.
+5200006,Cunning Lizard,Anima Set,Increases damage dealt to Boss enemies by 50%.
+5200007,Nine-Tailed Fox,Anima Set,"At the end of the Round, if the owner of this Set dealt a Basic Attack or were unable to attack in the Round, all allies will gain 15% Block and 15% Control Immunity that lasts for 2 Rounds (Cannot stack)."
+5200008,Weaver Kitty,Anima Set,"Increase the amount of BP gained by 25%. When the owner of this Set releases her Active Skill, if she is protected by a [c][e28002]Magick Barrier[-][/c], her ally with the lowest HP will gain a [c][e28002]Magick Barrier[-][/c] with (20% of the ally's Maximum HP) BP."
+5200009,Majestic Phoenix,Anima Set,"Increase Heal Amount by 25%. When the owner of this Set is healed, 1 random Debuff (Damage Over Time, Attribute Reduction, Mark, Control Effect) will be removed from 1 random ally (This effect can only be triggered once per Round)."
+5200101,Random 1-star Blue Anima Stone,Random Reward,A random 1-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200102,Random 2-star Blue Anima Stone,Random Reward,A random 2-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200103,Random 3-star Blue Anima Stone,Random Reward,A random 3-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200104,Random 4-star Blue Anima Stone,Random Reward,A random 4-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5201101,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201102,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201103,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201104,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201105,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201106,Lucky Goldfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201201,Lucky Goldfish · 2,Anima Stone,"Slot 1 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional Attack"
+5201202,Lucky Goldfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional HP"
+5201203,Lucky Goldfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional HP"
+5201204,Lucky Goldfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional HP"
+5201205,Lucky Goldfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional HP"
+5201206,Lucky Goldfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides additional HP"
+5201301,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201302,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201303,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201304,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201305,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201306,Lucky Goldfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5201401,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5201402,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5201403,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5201404,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5201405,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5201406,Lucky Goldfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Lucky Goldfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202101,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202102,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202103,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202104,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202105,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202106,Floating Jellyfish · 1,Anima Stone,"Slot 1 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional Attack"
+5202201,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202202,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202203,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202204,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202205,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202206,Floating Jellyfish · 2,Anima Stone,"Slot 2 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides additional HP"
+5202301,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202302,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202303,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202304,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202305,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202306,Floating Jellyfish · 3,Anima Stone,"Slot 3 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5202401,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202402,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202403,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202404,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202405,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5202406,Floating Jellyfish · 4,Anima Stone,"Slot 4 Anima Stone of ""Floating Jellyfish"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203101,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203102,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203103,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203104,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203105,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203106,Rock Crab · 1,Anima Stone,"Slot 1 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional Attack"
+5203201,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203202,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203203,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203204,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203205,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203206,Rock Crab · 2,Anima Stone,"Slot 2 Anima Stone of ""Rock Crab"" set, Primary Attribute provides additional HP"
+5203301,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203302,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203303,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203304,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203305,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203306,Rock Crab · 3,Anima Stone,"Slot 3 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5203401,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203402,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203403,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203404,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203405,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5203406,Rock Crab · 4,Anima Stone,"Slot 4 Anima Stone of ""Rock Crab"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204101,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204102,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204103,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204104,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204105,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204106,Ghostly Goat · 1,Anima Stone,"Slot 1 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional Attack"
+5204201,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204202,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204203,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204204,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204205,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204206,Ghostly Goat · 2,Anima Stone,"Slot 2 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides additional HP"
+5204301,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204302,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204303,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204304,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204305,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204306,Ghostly Goat · 3,Anima Stone,"Slot 3 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5204401,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204402,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204403,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204404,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204405,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5204406,Ghostly Goat · 4,Anima Stone,"Slot 4 Anima Stone of ""Ghostly Goat"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205101,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205102,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205103,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205104,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205105,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205106,Fiery Qilin · 1,Anima Stone,"Slot 1 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional Attack"
+5205201,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205202,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205203,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205204,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205205,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205206,Fiery Qilin · 2,Anima Stone,"Slot 2 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides additional HP"
+5205301,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205302,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205303,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205304,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205305,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205306,Fiery Qilin · 3,Anima Stone,"Slot 3 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5205401,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205402,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205403,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205404,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205405,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5205406,Fiery Qilin · 4,Anima Stone,"Slot 4 Anima Stone of ""Fiery Qilin"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206101,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206102,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206103,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206104,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206105,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206106,Cunning Lizard · 1,Anima Stone,"Slot 1 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional Attack"
+5206201,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206202,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206203,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206204,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206205,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206206,Cunning Lizard · 2,Anima Stone,"Slot 2 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides additional HP"
+5206301,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206302,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206303,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206304,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206305,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206306,Cunning Lizard · 3,Anima Stone,"Slot 3 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5206401,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206402,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206403,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206404,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206405,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5206406,Cunning Lizard · 4,Anima Stone,"Slot 4 Anima Stone of ""Cunning Lizard"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207101,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207102,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207103,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207104,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207105,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207106,Nine-Tailed Fox · 1,Anima Stone,"Slot 1 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional Attack"
+5207201,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207202,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207203,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207204,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207205,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207206,Nine-Tailed Fox · 2,Anima Stone,"Slot 2 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides additional HP"
+5207301,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207302,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207303,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207304,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207305,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207306,Nine-Tailed Fox · 3,Anima Stone,"Slot 3 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5207401,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207402,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207403,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207404,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207405,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5207406,Nine-Tailed Fox · 4,Anima Stone,"Slot 4 Anima Stone of ""Nine-Tailed Fox"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208101,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208102,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208103,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208104,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208105,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208106,Weaver Kitty · 1,Anima Stone,"Slot 1 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional Attack"
+5208201,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208202,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208203,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208204,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208205,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208206,Weaver Kitty · 2,Anima Stone,"Slot 2 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides additional HP"
+5208301,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208302,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208303,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208304,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208305,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208306,Weaver Kitty · 3,Anima Stone,"Slot 3 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5208401,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208402,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208403,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208404,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208405,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5208406,Weaver Kitty · 4,Anima Stone,"Slot 4 Anima Stone of ""Weaver Kitty"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209101,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209102,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209103,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209104,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209105,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209106,Majestic Phoenix · 1,Anima Stone,"Slot 1 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional Attack"
+5209201,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209202,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209203,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209204,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209205,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209206,Majestic Phoenix · 2,Anima Stone,"Slot 2 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides additional HP"
+5209301,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209302,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209303,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209304,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209305,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209306,Majestic Phoenix · 3,Anima Stone,"Slot 3 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit/Precision/Heal Amount/Extra Control Rate/Holy Damage/Skill Damage"
+5209401,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209402,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209403,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209404,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209405,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+5209406,Majestic Phoenix · 4,Anima Stone,"Slot 4 Anima Stone of ""Majestic Phoenix"" set, Primary Attribute provides boosts for one of the following attributes: Crit Resist/Block/Heal Received/Control Immunity/Holy Damage/Skill Damage"
+7313,Lovely Specter,Skins,Lovely Specter skin of Cupid
+27313,Lovely Specter,Skins,Lovely Specter skin of Cupid
+7314,Space Jet,Skin,Space Jet skin of Skye
+27314,Space Jet,Skins,Space Jet skin of Skye
+435,Random Anima Artifact Chest,Anima Artifact Chest,You can get a random Anima Gear for opening this chest. ( in the item for the details) (Anima Gears can be equipped on Girls over Lv.270)
+4302045,Premium Customized Skin Chest,Customized Chest,You can select to get a skin for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4302046,Customized Skin Chest (Luvly's Journey S25),Customized Chest,You can select to get a skin for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4203017,Customized Resource Chest (Regular),Customized Chest,"You can choose one of the rewards after opening this chest: 「Coin*10M, Exp Juice*10M」"
+4102052,Customized L&D Chest (Luvly's Journey S25),Customized Chest,"Select a 5-Star Girl from Angel/Demon faction from the list after opening this chest. (Once this chest is obtained, the contents of this chest will not be updated.)"
+4101068,Customized Girls Chest (Luvly's Journey S25),Customized Chest,You can select to get 50 shards of a certain 5-Star Girl of Ghost/Human/Monster/Fairy faction from the list after opening this chest. (Contents of this chest will not be updated.)
+4601049,Orange Outfit Customized Chest (Accessories),Customized Chest,You can choose to get one Outfit (Accessories) piece from the options available for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+52000010,Lucky Goldfish (Test),,
+52000020,Floating Jellyfish (Test),,
+52000030,Rock Crab (Test),,
+52000040,Ghostly Goat (Test),,
+52000050,Fiery Qilin (Test),,
+52000060,Cunning Lizard (Test),,
+52000070,Nine-Tailed Fox (Test),,
+52000080,Weaver Kitty (Test),,
+52000090,Majestic Phoenix (Test),,
+436,Autumn Gifts,,"You will unlock the 3rd gift bag in Autumn Gifts by purchasing this pack and get 「1 Autumn Coupon, 5 Adv. Capsule Coins, 500 Gems, and 2 Star Tokens」 each day from the 3rd gift."
+437,Autumn Coupon,Event Material,"Event material, used in event: ""Autumn Gifts"""
+757003,Effy,Girl,10-star Effy (Cosmos)
+930230,10-star Effy,Summon,Collect 100 shards to summon Girl
+800003,Effy,,13-star skin of Effy
+5200105,Random 1-star Blue Anima Stone,Random Reward,A random 1-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200106,Random 2-star Blue Anima Stone,Random Reward,A random 2-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200107,Random 3-star Blue Anima Stone,Random Reward,A random 3-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200108,Random 4-star Blue Anima Stone,Random Reward,A random 4-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200109,Random 1-star Blue Anima Stone,Random Reward,A random 1-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200110,Random 2-star Blue Anima Stone,Random Reward,A random 2-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200111,Random 3-star Blue Anima Stone,Random Reward,A random 3-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+5200112,Random 4-star Blue Anima Stone,Random Reward,A random 4-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
+426,Soul Essence,Special Item,Used to upgrade Anima Gear · Anima Sone. Each Soul Essence provides 1 Exp.
+900003,Effy,,15-star skin of Effy
+20001087,Limited: Effy,Special Avatar,Limited avatar of Effy. Shh... She's taking a picture!

@@ -9,7 +9,8 @@ local funcNameToDrag = {
 	time_cloister = "timeCloister",
 	old_building = "gTower",
 	friend_team_boss = "gFriendTeamBoss",
-	shrine_hurdle = "shrineHurdle"
+	shrine_hurdle = "shrineHurdle",
+	soul_land = "soulLand"
 }
 
 function BattleChooseWindow:ctor(name, params)
@@ -32,7 +33,7 @@ function BattleChooseWindow:ctor(name, params)
 
 		print("=========self.guideName===========", self.guideName)
 
-		if funcName == "hero challenge" or funcName == "friend_team_boss" or funcName == "tower" or funcName == "old_building" or funcName == "time_cloister" or funcName == "shrine_hurdle" then
+		if funcName == "hero challenge" or funcName == "friend_team_boss" or funcName == "tower" or funcName == "old_building" or funcName == "time_cloister" or funcName == "shrine_hurdle" or funcName == "soul_land" then
 			self.curShowIndex = 1
 		else
 			self.curShowIndex = 2
@@ -242,6 +243,16 @@ function BattleChooseWindow:getUIComponet()
 	self.shrineHurdleTimeGroup = self.shrineHurdle:ComponentByName("timeGroup/timeGroup", typeof(UILayout))
 	self.shrineHurdleTimeLabelTimeTips = self.shrineHurdle:ComponentByName("timeGroup/timeGroup/labelTips", typeof(UILabel))
 	self.shrineHurdleTimeLabelTime = self.shrineHurdle:ComponentByName("timeGroup/timeGroup/time", typeof(UILabel))
+	self.soulLand = self.groupPVE:NodeByName("soulLand").gameObject
+	self.soulLandAlertImg11 = self.soulLand:ComponentByName("alertImg11", typeof(UISprite)).gameObject
+	self.soulLandtextImg3 = self.soulLand:ComponentByName("textImg3", typeof(UISprite))
+	self.soulLandLabelDesc = self.soulLand:ComponentByName("labelDesc", typeof(UILabel))
+	self.soulLandImgMask = self.soulLand:ComponentByName("imgMask", typeof(UISprite))
+	self.soulLandTestServerBtn = self.soulLand:NodeByName("testServerBtn").gameObject
+	self.gQuiz = self.groupPVE:NodeByName("gQuiz").gameObject
+	self.textImg11 = self.gQuiz:ComponentByName("textImg11", typeof(UISprite))
+	self.label_11_1 = self.gQuiz:ComponentByName("label_11_1", typeof(UILabel))
+	self.alertImg11 = self.gQuiz:NodeByName("redPoint").gameObject
 	self.orderPVE = {
 		self.gTower,
 		self.gTrial,
@@ -250,7 +261,9 @@ function BattleChooseWindow:getUIComponet()
 		self.gHeroChallenge,
 		self.gFriendTeamBoss,
 		self.gAcademyAssessment,
-		self.shrineHurdle
+		self.shrineHurdle,
+		self.gQuiz,
+		self.soulLand
 	}
 	self.pveRedList = {
 		self.gTower_redPoint,
@@ -260,7 +273,9 @@ function BattleChooseWindow:getUIComponet()
 		self.alertImg7.gameObject,
 		self.alertImg8,
 		self.alertImg9,
-		self.alertImg10
+		self.alertImg10,
+		self.alertImg11,
+		self.soulLandAlertImg11
 	}
 	self.groupPVP = self.main:NodeByName("groupPVP").gameObject
 	self.gArena = self.groupPVP:NodeByName("gArena").gameObject
@@ -434,6 +449,11 @@ function BattleChooseWindow:layout()
 		self.timeCloister:NodeByName("imgMask").gameObject:SetActive(true)
 		self.timeCloister:NodeByName("groupTime").gameObject:SetActive(false)
 	end
+
+	if not xyd.checkFunctionOpen(xyd.FunctionID.QUIZ, true) then
+		self.gQuiz:NodeByName("imgMask").gameObject:SetActive(true)
+		xyd.models.redMark:setMark(xyd.RedMarkType.DAILY_QUIZ, false)
+	end
 end
 
 function BattleChooseWindow:initResItem()
@@ -467,6 +487,10 @@ function BattleChooseWindow:layoutPVE()
 	xyd.setUISpriteAsync(self.imgAcademyAssessment, nil, "academy_assessment_label_" .. xyd.Global.lang, function ()
 	end, false, true)
 	xyd.setUISpriteAsync(self.imgTimeCloister, nil, "time_cloister_text_" .. xyd.Global.lang, nil, false, true)
+	xyd.setUISpriteAsync(self.textImg11, nil, "quize_text_" .. xyd.Global.lang, function ()
+	end, false, true)
+	xyd.setUISpriteAsync(self.soulLandtextImg3, nil, "soul_land_enter_logo_" .. xyd.Global.lang, function ()
+	end, false, true)
 
 	self.labelTimeCloister.text = __("TIME_CLOISTER_MISC")
 	self.labelAcademyAssessment.text = __("ACADEMY_ASSESSMENT_MISC")
@@ -476,6 +500,12 @@ function BattleChooseWindow:layoutPVE()
 	self.label_2_1.text = __("TRIAL_MISC")
 	self.label_3_1.text = __("DUNGEON_MISC")
 	self.label_5_1.text = __("FRIEND_TEAM_BOSS_DESC")
+	self.label_11_1.text = __("DAILY_QUIZ_TITLE_DESC")
+	self.soulLandLabelDesc.text = xyd.tables.functionTextTable:getDesc(xyd.FunctionID.SOUL_LAND)
+
+	if not xyd.models.soulLand:checkIsOpen() or xyd.models.soulLand:isBeforStartTime() then
+		self.soulLandImgMask:SetActive(true)
+	end
 
 	self:updateOpenBlock(self.gTower, xyd.FunctionID.TOWER)
 	self:updateOpenBlock(self.gDungeon, xyd.FunctionID.DUNGEON)
@@ -486,6 +516,7 @@ function BattleChooseWindow:layoutPVE()
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.DUNGEON, self.alertImg3.gameObject)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.HERO_CHALLENGE, self.alertImg7.gameObject)
 	xyd.models.redMark:setMarkImg(xyd.RedMarkType.ACADEMY_ASSESSMENT, self.alertImg1.gameObject)
+	xyd.models.redMark:setMarkImg(xyd.RedMarkType.DAILY_QUIZ, self.alertImg11)
 	xyd.models.redMark:setJointMarkImg({
 		xyd.RedMarkType.OLD_SCHOOL,
 		xyd.RedMarkType.TOWER_FUND_GIFTBAG
@@ -507,6 +538,10 @@ function BattleChooseWindow:layoutPVE()
 		xyd.RedMarkType.SHRINE_CHIME,
 		xyd.RedMarkType.SHRINE_NOTICE
 	}, self.alertImg10)
+	xyd.models.redMark:setJointMarkImg({
+		xyd.RedMarkType.SOUL_LAND_SUMMON_TEN,
+		xyd.RedMarkType.SOUL_LAND_BATTLE_PASS_GET
+	}, self.soulLandAlertImg11)
 	xyd.models.trial:setRedMark()
 	xyd.models.academyAssessment:setRedMark()
 
@@ -658,10 +693,27 @@ function BattleChooseWindow:layoutPVE()
 				self.gDungeon,
 				self.gHeroChallenge,
 				self.gFriendTeamBoss,
-				self.gAcademyAssessment
+				self.gAcademyAssessment,
+				self.gQuiz,
+				self.soulLand
 			}
 
 			self.shrineHurdle.transform:SetSiblingIndex(1)
+		elseif funcName == "soul_land" then
+			self.orderPVE = {
+				self.gTower,
+				self.soulLand,
+				self.shrineHurdle,
+				self.gTrial,
+				self.timeCloister,
+				self.gDungeon,
+				self.gHeroChallenge,
+				self.gFriendTeamBoss,
+				self.gAcademyAssessment,
+				self.gQuiz
+			}
+
+			self.soulLand.transform:SetSiblingIndex(1)
 		end
 
 		local componentName = funcNameToDrag[funcName]
@@ -783,8 +835,11 @@ function BattleChooseWindow:changePVEorder()
 		self.timeCloister,
 		self.gAcademyAssessment,
 		self.gFriendTeamBoss,
-		self.shrineHurdle
+		self.shrineHurdle,
+		self.gQuiz,
+		self.soulLand
 	}
+	local orderPVELen = #self.orderPVE
 
 	if xyd.checkFunctionOpen(xyd.FunctionID.ACADEMY_ASSESSMENT, true) then
 		self.timeCloister.transform:SetSiblingIndex(4)
@@ -794,7 +849,7 @@ function BattleChooseWindow:changePVEorder()
 	local trialData = xyd.models.trial:getData()
 
 	if not trialData or not trialData.is_open or trialData.is_open == 0 then
-		self.gTrial.transform:SetSiblingIndex(7)
+		self.gTrial.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gTrial then
@@ -808,7 +863,7 @@ function BattleChooseWindow:changePVEorder()
 	end
 
 	if not xyd.models.redMark:getRedState(xyd.RedMarkType.HERO_CHALLENGE) then
-		self.gHeroChallenge.transform:SetSiblingIndex(7)
+		self.gHeroChallenge.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gHeroChallenge then
@@ -824,7 +879,7 @@ function BattleChooseWindow:changePVEorder()
 	local dungeonData = xyd.models.dungeon:getData()
 
 	if not dungeonData and not dungeonData.is_open or dungeonData.is_open == 0 then
-		self.gDungeon.transform:SetSiblingIndex(7)
+		self.gDungeon.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gDungeon then
@@ -838,7 +893,7 @@ function BattleChooseWindow:changePVEorder()
 	end
 
 	if not xyd.models.heroChallenge:checkNeedShowRed() then
-		self.gHeroChallenge.transform:SetSiblingIndex(7)
+		self.gHeroChallenge.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gHeroChallenge then
@@ -857,7 +912,7 @@ function BattleChooseWindow:changePVEorder()
 	local tmpTime = startTime + allTime - showTime
 
 	if not xyd.checkFunctionOpen(xyd.FunctionID.ACADEMY_ASSESSMENT, true) or xyd.getServerTime() < startTime + allTime and tmpTime <= xyd.getServerTime() then
-		self.gAcademyAssessment.transform:SetSiblingIndex(7)
+		self.gAcademyAssessment.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gAcademyAssessment then
@@ -871,7 +926,7 @@ function BattleChooseWindow:changePVEorder()
 	end
 
 	if not xyd.models.shrineHurdleModel:checkFuctionOpen() or not xyd.models.shrineHurdleModel:checkInBattleTime() then
-		self.shrineHurdle.transform:SetSiblingIndex(7)
+		self.shrineHurdle.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.shrineHurdle then
@@ -885,7 +940,7 @@ function BattleChooseWindow:changePVEorder()
 	end
 
 	if not xyd.models.friendTeamBoss:checkInFight() then
-		self.gFriendTeamBoss.transform:SetSiblingIndex(7)
+		self.gFriendTeamBoss.transform:SetSiblingIndex(orderPVELen - 1)
 
 		for i, item in ipairs(self.orderPVE) do
 			if item == self.gFriendTeamBoss then
@@ -896,6 +951,43 @@ function BattleChooseWindow:changePVEorder()
 		end
 
 		table.insert(self.orderPVE, self.gFriendTeamBoss)
+	end
+
+	local flag = xyd.checkFunctionOpen(xyd.FunctionID.QUIZ, true)
+
+	if flag == false then
+		self.gQuiz.transform:SetSiblingIndex(orderPVELen - 1)
+
+		for i, item in ipairs(self.orderPVE) do
+			if item == self.gQuiz then
+				table.remove(self.orderPVE, i)
+
+				break
+			end
+		end
+
+		table.insert(self.orderPVE, self.gQuiz)
+	else
+		local index = 1
+
+		for i, item in ipairs(self.orderPVE) do
+			if item == self.gTower then
+				index = i
+
+				break
+			end
+		end
+
+		for i, item in ipairs(self.orderPVE) do
+			if item == self.gQuiz then
+				table.remove(self.orderPVE, i)
+
+				break
+			end
+		end
+
+		self.gQuiz.transform:SetSiblingIndex(index)
+		table.insert(self.orderPVE, index + 1, self.gQuiz)
 	end
 end
 
@@ -1178,6 +1270,69 @@ function BattleChooseWindow:registerEvent()
 			})
 		else
 			self:checkAndOpen("shrine_hurdle_entrance_window", xyd.FunctionID.SHRINE_HURDLE)
+		end
+	end
+
+	UIEventListener.Get(self.soulLand).onClick = function ()
+		if xyd.models.soulLand:isBeforStartTime() then
+			local startTime = xyd.tables.miscTable:getNumber("soul_land_start_time", "value")
+
+			if xyd.getServerTime() < startTime then
+				local leftTime = xyd.getRoughDisplayTime(startTime - xyd.getServerTime())
+
+				xyd.alertTips(__("OPEN_AFTER_TIME", leftTime))
+
+				return
+			end
+		end
+
+		if self.guideName == "soul_land" then
+			self.timeCloister:GetComponent(typeof(UIDragScrollView)).enabled = true
+		end
+
+		if not xyd.models.soulLand:checkIsOpen() then
+			xyd.alertTips(__("SOUL_LAND_UNLOCK_TIPS"))
+
+			return
+		end
+
+		xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
+		xyd.WindowManager.get():openWindow("soul_land_main_window", {})
+		xyd.models.soulLand:onSendLandBaseInfo()
+		self.soulLandImgMask:SetActive(false)
+	end
+
+	self.soulLandTestServerBtn:SetActive(false)
+
+	if XYDUtils.IsTest() or UNITY_EDITOR then
+		self.soulLandTestServerBtn:SetActive(true)
+	end
+
+	UIEventListener.Get(self.soulLandTestServerBtn).onClick = function ()
+		if not xyd.models.soulLand:checkIsOpen() then
+			xyd.alertTips(__("SOUL_LAND_UNLOCK_TIPS"))
+
+			return
+		end
+
+		xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
+		xyd.WindowManager.get():openWindow("soul_land_main_window", {})
+		xyd.models.soulLand:onSendLandBaseInfo()
+		self.soulLandImgMask:SetActive(false)
+	end
+
+	UIEventListener.Get(self.gQuiz).onClick = function ()
+		xyd.SoundManager.get():playSound(xyd.SoundID.BUTTON)
+		xyd.db.misc:setValue({
+			key = "daily_quize_redmark",
+			value = xyd.getServerTime()
+		})
+		xyd.models.redMark:setMark(xyd.RedMarkType.DAILY_QUIZ, false)
+
+		if xyd.models.dailyQuiz:isAllMaxLev() then
+			self:checkAndOpen("daily_quiz2_window", xyd.FunctionID.QUIZ)
+		else
+			self:checkAndOpen("daily_quiz_window", xyd.FunctionID.QUIZ)
 		end
 	end
 

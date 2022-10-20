@@ -313,7 +313,8 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_REPAIR_MISSION] = require("app.models.datas.ActivityRepairMissionData"),
 	[xyd.ActivityID.ACTIVITY_PIRATE] = require("app.models.datas.ActivityPirateData"),
 	[xyd.ActivityID.ACTIVITY_PIRATE_SHOP] = require("app.models.datas.ActivityPirateShopData"),
-	[xyd.ActivityID.ACTIVITY_2LOVE] = require("app.models.datas.Activity2LoveData")
+	[xyd.ActivityID.ACTIVITY_2LOVE] = require("app.models.datas.Activity2LoveData"),
+	[xyd.ActivityID.SOUL_LAND_BATTLE_PASS] = require("app.models.datas.SoulLandBattlePassData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

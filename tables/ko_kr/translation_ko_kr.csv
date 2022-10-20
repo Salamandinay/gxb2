@@ -1557,7 +1557,7 @@ TEST_FEEDBACK_TEXT_11,평가 수정
 TEST_FEEDBACK_TEXT_12,평점을 선택해 주세요.
 TEST_FEEDBACK_TEXT_13,제출 성공
 TOWER_MISC,학원 내 톱을 목표로 하자!
-TRIAL_MISC,책의 정령 성역을탐색하고\n과거의 전쟁에 도전하라!
+TRIAL_MISC,책의 정령 성역을 탐색하고\n과거의 전쟁에 도전하라!
 DUNGEON_MISC,카오스 증후군 퇴치!
 ARENA_MISC,소녀들과 함께 영광을 쟁취하라!
 ARENA_3V3_MISC,적 발견\n즉시 출격!
@@ -1601,7 +1601,7 @@ PERSON_MUSIC2,Ver.2
 PERSON_BTN_7,음악
 NORMAL_SLOT_MACHINE,일반 슬롯 머신
 HIGH_SLOT_MACHINE,프리미엄 슬롯 머신
-ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. 각 선물은 매일 보충됩니다. 매일 로그인 후, 이미 해제된 선물을 받을 수 있습니다.|2. 아직 해제되지 않은 선물 상자는 선물을 저장하며, 잠금 해제 후 모든 선물을 한 번에 받게 됩니다.|3. 선물을 클릭하여 내용을 확인할 수 있습니다.|4. 3단계 선물은 스페셜 팩의 2단계 구입 후 해제됩니다.|5. 이벤트 종료 후 미사용한 해변의 선물 점수 재료는 자동으로 한 개당 20k 골드로 반환됩니다. 반환될 골드는 메일을 통해 발송됩니다."
+ACTIVITY_SCHOOL_GIFTBAG_HELP_TEXT,"1. 각 선물은 매일 보충됩니다. 매일 로그인 후, 이미 해제된 선물을 받을 수 있습니다.|2. 아직 해제되지 않은 선물 상자는 선물을 저장하며, 잠금 해제 후 모든 선물을 한 번에 받게 됩니다.|3. 선물을 클릭하여 내용을 확인할 수 있습니다.|4. 3단계 선물은 스페셜 팩의 2단계 구입 후 해제됩니다.|5. 이벤트 종료 후 미사용한 가을의 선물 점수 재료는 자동으로 한 개당 20k 골드로 반환됩니다. 반환될 골드는 메일을 통해 발송됩니다."
 CHAPTER_COUNT,챕터 {1}
 CHAPTER_TITLE,{1}-{2} {3}
 LOCK_STORY_LIST,잠금중
@@ -6260,7 +6260,7 @@ GAME_ASSISTANT_TEXT106,10회 뽑기
 GAME_ASSISTANT_TEXT107,학원 리그 진영은 변화가 생겼습니다. 진영을 조정하시겠습니까?
 GAME_ASSISTANT_TEXT108,체육관 전투 진영은 변화가 생겼습니다. 진영을 조정하시겠습니까?
 GUILD_TEXT75,일치하는 동아리를 찾지 못 했습니다.
-STAR_ALTAR_TITLE,별 그리기
+STAR_ALTAR_TITLE,눈부신 화살
 GROUP_7,천이
 BATTLE_TIPS_DESC3,다른 학부에 유리하지 않고 공합도 없습니다.
 SKILL_RESONATE_HELP,1. 스킬 공명은 천이 학부 소녀만 가지고 있는 기능입니다.|2. '찬란 공명석'과 '심원 공명석'을 소모해 소녀의 스킬 레벨을 올릴 수 있습니다. 4개 스킬의 총 레벨은 공명 레벨입니다.|3. 스킬 하나가 일정 레벨까지 도달 후 남은 스킬을 전부 다 지정한 레벨까지 올린 후 다시 레벨업 가능합니다.|4. 소녀의 공명 레벨에 따라 얻을 속성 부스트도 많아집니다.|5. 소녀의 스킬 공명이 이미 레벨업된 상태일 경우 일정 수량의 다이아를 사용해 공명 레벨을 리셋할 수 있습니다. 레벨업 과정 중 소모한 모든 재료가 반환됩니다.
@@ -7338,3 +7338,162 @@ ACTIVITY_2LOVE_HELP,1. 이벤트 기간 동안 '사랑의 화살' 하나 사용�
 ACTIVITY_2LOVE_TEXT10,누적 충전 미션
 ACTIVITY_SPFARM_BATTLEPASS_TEXT07,특권\n해제
 ACTIVITY_SPFARM_BATTLEPASS_TIPS02,구경 기간이므로 보상 입구를 사용 불가합니다.
+SOUL_EQUIP_HELP,"1. 소녀 레벨이 Lv.270 달성 후 영혼 장비 칸이 해제되며 영혼 도구 1개 및 각각 다른 부위의 영혼 결정체를 착용 가능합니다.|2. 각종 영혼 도구는 고정된 기초 특성이 있으며 업그레이드, 성급 업을 통해 특성을 강화할 수 있으며 영혼 주입을 통해 영혼 주입 특성을 강화 및 변경할 수 있습니다.|3. 영혼 결정체는 랜덤으로 메인 특성 및 보조 특성을 부여받습니다. 업그레이드 및 돌파를 통해 특성을 강화할 수 있습니다. 또한 기원을 통해 최대치에 달성한 영혼 결정체의 보조 특성을 랜덤으로 리셋할 수 있습니다.|4. 일부 영혼 도구가 제공되는 HP 및 공격력이 영혼 장비에만 적용되며 백분율로 기제된 특성 부스트의 영향을 받지 않습니다.|5. 영혼 결정체마다 속하는 세트가 있으며 소녀 1명이 착용하는 결정체 4개는 같은 세트이면 해당 세트의 세트 스킬이 활성화됩니다.|6. 영혼 장비 세트를 저장할 수 있습니다."
+SOUL_EQUIP_TEXT01,영혼 장비
+SOUL_EQUIP_TEXT02,모아보기
+SOUL_EQUIP_TEXT03,변경
+SOUL_EQUIP_TEXT04,조합
+SOUL_EQUIP_TEXT05,특성 보기
+SOUL_EQUIP_TEXT06,제거
+SOUL_EQUIP_TEXT07,영혼 주입 특성
+SOUL_EQUIP_TEXT08,보조 특성
+SOUL_EQUIP_TEXT09,세트로 분류
+SOUL_EQUIP_TEXT10,특성으로 분류
+SOUL_EQUIP_TEXT11,순서
+SOUL_EQUIP_TEXT12,레벨
+SOUL_EQUIP_TEXT13,성급
+SOUL_EQUIP_TEXT14,품질
+SOUL_EQUIP_TEXT15,시간
+SOUL_EQUIP_TEXT16,1번째 칸
+SOUL_EQUIP_TEXT17,2번째 칸
+SOUL_EQUIP_TEXT18,3번째 칸
+SOUL_EQUIP_TEXT19,4번째 칸
+SOUL_EQUIP_TEXT20,전체
+SOUL_EQUIP_TEXT21,상세 장보
+SOUL_EQUIP_TEXT22,취소
+SOUL_EQUIP_TEXT23,확인
+SOUL_EQUIP_TEXT24,착용중
+SOUL_EQUIP_TEXT25,저장
+SOUL_EQUIP_TEXT26,조정
+SOUL_EQUIP_TEXT27,변경
+SOUL_EQUIP_TEXT28,저장
+SOUL_EQUIP_TEXT29,2-6개 글자 또는 4-12개 영문자
+SOUL_EQUIP_TEXT30,사용 중인 장비입니다. 정말로 변경하시겠습니까?
+SOUL_EQUIP_TEXT31,세트 조정
+SOUL_EQUIP_TEXT32,Lv.{1} 시 해제
+SOUL_EQUIP_TEXT33,영혼 도구 없음
+SOUL_EQUIP_TEXT34,영혼 결정체 없음
+SOUL_EQUIP_TEXT35,세트 {1} 삭제하시겠습니까?
+SOUL_EQUIP_TEXT36,성급 업
+SOUL_EQUIP_TEXT37,업그레이드
+SOUL_EQUIP_TEXT38,영혼 주입
+SOUL_EQUIP_TEXT39,성급
+SOUL_EQUIP_TEXT40,최대 레벨
+SOUL_EQUIP_TEXT41,영혼 주입 최대치
+SOUL_EQUIP_TEXT42,{1}
+SOUL_EQUIP_TEXT43,기초 특성
+SOUL_EQUIP_TEXT44,성급 업
+SOUL_EQUIP_TEXT45,레벨
+SOUL_EQUIP_TEXT46,영혼 주입 특성
+SOUL_EQUIP_TEXT47,{1}성 달성 시 해당 영혼 도구 잠금 해제
+SOUL_EQUIP_TEXT48,업그레이드
+SOUL_EQUIP_TEXT49,영혼 도구 업그레이드하면 영혼 주입 특성을 증강시킬 수 있습니다.
+SOUL_EQUIP_TEXT50,영혼 주입 특성 · I
+SOUL_EQUIP_TEXT51,영혼 주입 특성 · II
+SOUL_EQUIP_TEXT52,영혼 주입 특성 · III
+SOUL_EQUIP_TEXT53,영혼 주입 특성 · IV
+SOUL_EQUIP_TEXT54,영혼 주입 특성 · V
+SOUL_EQUIP_TEXT55,영혼 주입
+SOUL_EQUIP_TEXT56,전환
+SOUL_EQUIP_TEXT57,미지의 특성
+SOUL_EQUIP_TEXT58,저장
+SOUL_EQUIP_TEXT59,업그레이드
+SOUL_EQUIP_TEXT60,돌파
+SOUL_EQUIP_TEXT61,기원
+SOUL_EQUIP_TEXT62,일괄 선택
+SOUL_EQUIP_TEXT63,분류
+SOUL_EQUIP_TEXT64,영혼 결정체 업그레이드 재료
+SOUL_EQUIP_TEXT65,영혼 결정체
+SOUL_EQUIP_TEXT66,성급 선택
+SOUL_EQUIP_TEXT67,업그레이드 목표치
+SOUL_EQUIP_TEXT68,확인
+SOUL_EQUIP_TEXT69,품질
+SOUL_EQUIP_TEXT70,메인 특성
+SOUL_EQUIP_TEXT71,보조 특성
+SOUL_EQUIP_TEXT72,영혼 결정체의 품질을 리셋하면 일정 수량의 다이아가 필요하며 품질 돌파 시 사용된 아이템이 반환됩니다.
+SOUL_EQUIP_TEXT73,최고 품질에 도달했습니다.
+SOUL_EQUIP_TEXT74,초기 보조 특성
+SOUL_EQUIP_TEXT75,'부적'을 사용하면 초기 보조 특성의 바탕 위에 최대치 달성한 영혼 결정체의 보조 특성을 리셋할 수 있습니다.
+SOUL_EQUIP_TEXT76,현재 보조 특성
+SOUL_EQUIP_TEXT77,기원 보조 특성
+SOUL_EQUIP_TEXT78,기원
+SOUL_EQUIP_TEXT79,저장
+SOUL_EQUIP_TEXT80,영혼 결정체가 최대 레벨 달성 시 기원 가능
+SOUL_EQUIP_TEXT81,기원 성공
+SOUL_LAND_HELP,1. 임의의 소녀가 Lv.270 달성 후 영혼의 대륙이 오픈됩니다. 한 시즌은 28일입니다.|2. 영혼의 대륙은 여러 구역으로 구성되어 있으며 매 구역에 스테이지 여러 개 있습니다. 도전 스테이지 중 모든 적을 격파 후 해당 도전 완성되고 다음 구역 해제됩니다.|3. 임의의 스테이지 도전 시 도전 티켓 1장 필요하며 매일 도전 티켓 10장 무료로 획득할 수 있으며 다이아를 사용해 구매 가능합니다.(사용하지 않을 때 저장 상한이 있음. 상한치:100장) 매 시즌 종료 시 사용하지 않은 도전 티켓이 회수됩니다.|4. 스테이지 도전 성공 시 해당 스테이지의 클리어 보상 획득할 수 있습니다.|5. 이미 클리어한 총 스테이지 수량에 따라 5분마다 자동 모드 보상을 수령할 수 있습니다. 자동 모드 보상 언제든지 수령 가능합니다.(24시간 초과하면 더 이상 보상 획득할 수 없습니다.)|6. '영혼의 나뭇가지'를 사용해 상점에서 아이템과 교환할 수 있습니다. 아이템은 한정 구매이며 시즌마다 구매 횟수 리셋됩니다. '영혼 코인' 혹은 '희귀 영혼 코인'을 사용해 보상풀에서 영혼 결정체를 뽑을 수 있습니다.|7. 보상풀에서 보상을 뽑을 때마다 보상풀 경험치 획득할 수 있습니다. 경험치 일정 수치 달성 시 보상풀 레벨이 자동으로 업그레이드됩니다.(보상풀 레벨은 시즌 리셋에 따라 리셋되지 않습니다.)
+SOUL_LAND_TEXT01,남은 도전 시간：
+SOUL_LAND_TEXT02,패스
+SOUL_LAND_TEXT03,진도：{1}/{2}
+SOUL_LAND_TEXT04,{1}개/5분
+SOUL_LAND_TEXT05,수집
+SOUL_LAND_TEXT06,{1}-{2}
+SOUL_LAND_TEXT07,적
+SOUL_LAND_TEXT08,보상
+SOUL_LAND_TEXT09,스테이지 정보
+SOUL_LAND_TEXT10,전투
+SOUL_LAND_TEXT11,[c][size=32]1[-][/c]회 뽑기
+SOUL_LAND_TEXT12,[c][size=32]10[-][/c]회 뽑기
+SOUL_LAND_TEXT13,확률 설명
+SOUL_LAND_TEXT14,뽑기 범위
+SOUL_LAND_TEXT15,보상풀에서 뽑을 때마다 일정 확률로 다음과 같은 세트 중에 랜덤 부위의 영혼 결정체를 획득할 수 있습니다.
+SOUL_LAND_TEXT16,확률
+SOUL_LAND_TEXT17,보상풀 안에 영혼 결정체의 품질은 모두 푸른색 품질이며 성급이 보상풀 레벨 및 뽑기 코인에 따라 다릅니다.
+SOUL_LAND_TEXT18,현재
+SOUL_LAND_TEXT19,다음
+SOUL_LAND_AREA_TEXT01,기적의 산
+SOUL_LAND_AREA_TEXT02,영원한 바다
+SOUL_LAND_AREA_TEXT03,넓은 땅
+SOUL_LAND_BATTLEPASS_HELP,1. 영혼의 대륙 전용 패스. 임의의 스테이지 클리어 시 10포인트 획득할 수 있으며 특정 포인트 달성 시 대응하는 보상을 획득할 수 있습니다|2. 기초 보상 및 진급 보상이 있으며 패스 구입 후 진급 보상 획득 가능합니다.|3. 패스의 주기는 영혼 대륙의 주기와 일치하며 영혼 대륙이 리셋되면 패스도 같이 리셋됩니다. 달성하지만 수령하지 않은 보상이 메일로 보충 발송합니다.|4. 다이아로 패스 포인트 구매 가능합니다.
+SOUL_LAND_BATTLEPASS_TEXT01,{1} 종료
+SOUL_LAND_BATTLEPASS_TEXT02,현재 포인트：
+SOUL_LAND_BATTLEPASS_TEXT03,포인트 구입
+SOUL_LAND_BATTLEPASS_TEXT04,포인트
+SOUL_LAND_BATTLEPASS_TEXT05,기초 보상
+SOUL_LAND_BATTLEPASS_TEXT06,진급 보상
+SOUL_LAND_BATTLEPASS_TEXT07,패스 구매
+SOUL_LAND_BATTLEPASS_TEXT08,이번 시즌의 영혼의 대륙 종료 전 도전 스테이지 클리어로 포인트 획득 가능. 패스 구입 후 포인트 누적 시 다음과 같은 보상 획득할 수 있습니다.
+SOUL_LAND_BATTLEPASS_TEXT09,패스 포인트 구매
+SOUL_LAND_BATTLEPASS_TEXT10,남은 구매 가능한 패스 포인트 : {1}
+DAILY_QUIZ_TITLE_TIPS,모든 도전 완료 시 해제
+DAILY_QUIZ_TITLE_DESC,매일 퀴즈에 참여하여\n육성 자원을 획득해보세요!
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON01,보상 미리 보기
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,普通雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,高級雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,如果連續10次高級雕刻都沒有獲得xxx，則第11次必得xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,1.消耗xxx可以xxx
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,南瓜燈獎勵
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,基礎獎勵
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,批量雕刻
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,請輸入批量雕刻數量
+ACTIVITY_HALLOWEEN2022_SHOP_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,前往雕刻
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,全服進度
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,免費獎勵
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,專屬禮包
+ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,全服進度達到xxx時解鎖
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,구입 성공. 중복 구입 불가.
+SOUL_LAND_TEXT20,해당 구역의 스테이즈를 이미 다 클리어하셨습니다.
+SOUL_LAND_BATTLEPASS_TEXT11,다이아 {1}개를 소모해 {2}점의 패스 포인트를 구입하시겠습니까?
+SOUL_EQUIP_TEXT82,영혼 주입 특성 없음
+SOUL_EQUIP_TEXT83,플랜{1}
+SOUL_LAND_BATTLEPASS_TEXT12,획득한 영혼 대륙의 패스 포인트가 이미 이번 시즌의 최대치에 달했으니 더 이상 패스 포인트를 구매할 수 없습니다.
+SOUL_LAND_BATTLEPASS_TEXT13,이번 시즌에 더 이상 구매 가능한 패스 포인트가 없습니다.
+SOUL_EQUIP_TEXT84,초기화 필요없음
+QUICK_FORMATION_TEXT28,무효 소녀가 있으니 저장할 수 없습니다!
+SOUL_LAND_SUMMON_HELP,1. '영혼 코인' 혹은 '희귀 영혼 코인'을 사용해 보상풀에서 경정체를 뽑을 수 있습니다.
+SOUL_LAND_TEXT21,상점
+SOULEQUIP,영혼 장비
+SOUL_EQUIP_TEXT85,영혼 도구
+SOUL_EQUIP_BAGMAX_TIPS,영혼 장비의 가방 저장 공간이 부족합니다!
+SOUL_LAND_TEXT22,새로운 시즌의 영혼의 대륙이 오픈되었습니다!
+SOUL_LAND_UNLOCK_TIPS,임의의 소녀가 Lv.270 달성 시 오픈
+SOUL_EQUIP_TEXT86,영혼 도구의 성급을 올린 후 업그레이드 가능합니다.
+SOUL_EQUIP_TEXT87,결정체 세트 스킬 이미 활성화되었습니다.
+SOUL_EQUIP_TEXT88,돌파
+SOUL_EQUIP_TEXT89,기원
+SOUL_LAND_TEXT23,스테이지
+SOUL_EQUIP_TEXT90,영혼 장비
+SOUL_EQUIP_TEXT91,저장 가능한 세트 수량이 이미 상한에 달했습니다.
+NO_SOULEQUIP,영혼 장비가 없습니다.
+SOUL_EQUIP_TEXT92,이미 최대 레벨에 도달했습니다.

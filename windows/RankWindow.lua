@@ -7,6 +7,7 @@ local RankItem = class("RankItem", BaseComponent)
 local RankItemComponent = class("RankItemComponent", BaseComponent)
 local CampaignRankItemComponent = class("CampaignRankItemComponent", RankItemComponent)
 local TowerRankItemComponent = class("TowerRankItemComponent", RankItemComponent)
+local SoulLandRankItemComponent = class("SoulLandRankItemComponent", RankItemComponent)
 local DungeonRankItemComponent = class("DungeonRankItemComponent", RankItemComponent)
 local FriendRankItemComponent = class("FriendRankItemComponent", RankItemComponent)
 local FairyRankItemComponent = class("FairyRankItemComponent", RankItemComponent)
@@ -17,7 +18,8 @@ local RANK_ITEM_COMPONENT_LIST = {
 	[xyd.MapType.TOWER] = TowerRankItemComponent,
 	[xyd.MapType.FRIEND_RANK] = FriendRankItemComponent,
 	[xyd.MapType.ACTIVITY_FAIRT_TALE] = FairyRankItemComponent,
-	[xyd.MapType.LIMIT_CALL_BOSS] = LimitCallBossRankItemComponent
+	[xyd.MapType.LIMIT_CALL_BOSS] = LimitCallBossRankItemComponent,
+	[xyd.MapType.SOUL_LAND] = SoulLandRankItemComponent
 }
 local ItemRender = class("ItemRender")
 
@@ -99,7 +101,7 @@ end
 function RankWindow:layout()
 	self.rankInfo_ = self.MapModel:getMapRank(self.mapType_)
 
-	if not self.rankInfo_ then
+	if not self.rankInfo_ or self.mapType_ == xyd.MapType.SOUL_LAND then
 		self.MapModel:getRank(self.mapType_)
 	else
 		self:initRankList()
@@ -112,6 +114,7 @@ function RankWindow:register()
 	self.eventProxy_:addEventListener(xyd.event.FRIEND_GET_RANK, handler(self, self.onMapRank))
 	self.eventProxy_:addEventListener(xyd.event.GET_FAIRY_RANK_LIST, handler(self, self.onMapRank))
 	self.eventProxy_:addEventListener(xyd.event.LIMIT_GACHA_BOSS_ACTIVITY_GET_RANK_LIST, handler(self, self.onMapRank))
+	self.eventProxy_:addEventListener(xyd.event.GET_SOUL_LAND_MAP_RANK, handler(self, self.onMapRank))
 end
 
 function RankWindow:onMapRank(event)
@@ -150,7 +153,7 @@ end
 function RankWindow:checkHideSelfRank()
 	local flag = false
 
-	if self.mapType_ == xyd.MapType.TOWER then
+	if self.mapType_ == xyd.MapType.TOWER or self.mapType_ == xyd.MapType.SOUL_LAND then
 		flag = true
 	elseif self.mapType_ == xyd.MapType.DUNGEON then
 		if self.rankInfo_.score == 0 then
@@ -338,6 +341,24 @@ function TowerRankItemComponent:setInfo(params)
 	local widget = self.go:GetComponent(typeof(UIWidget))
 	widget.width = 624
 	self.labelDesText.text = __("RANK_TEXT02")
+end
+
+function SoulLandRankItemComponent:ctor(parentGo, parent)
+	self.parent = parent
+
+	RankItemComponent.ctor(self, parentGo, parent)
+end
+
+function SoulLandRankItemComponent:setChildren()
+	RankItemComponent.setChildren(self)
+end
+
+function SoulLandRankItemComponent:setInfo(params)
+	RankItemComponent.setInfo(self, params)
+
+	local widget = self.go:GetComponent(typeof(UIWidget))
+	widget.width = 624
+	self.labelDesText.text = __("SOUL_LAND_TEXT23")
 end
 
 function DungeonRankItemComponent:ctor(parentGo, parent)

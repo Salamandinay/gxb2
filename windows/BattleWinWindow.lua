@@ -36,6 +36,7 @@ function BattleWinWindow:ctor(name, params)
 	self.data = params
 	self.battleType = self.battleParams.battle_type or params.battle_type
 	self.trialSaveItems = {}
+	battleReportData[16] = xyd.BattleType.SOUL_LAND_REPORT
 	self.reportTypeList = {
 		xyd.BattleType.TRIAL,
 		xyd.BattleType.TOWER,
@@ -51,7 +52,8 @@ function BattleWinWindow:ctor(name, params)
 		xyd.BattleType.SHRINE_HURDLE_REPORT,
 		xyd.BattleType.ENTRANCE_TEST_REPORT,
 		xyd.BattleType.GALAXY_TRIP_BATTLE,
-		xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE
+		xyd.BattleType.GALAXY_TRIP_SPECIAL_BOSS_BATTLE,
+		xyd.BattleType.SOUL_LAND
 	}
 	self.isReportType = false
 	self.isNewVer = params.is_new
@@ -516,6 +518,8 @@ function BattleWinWindow:initReviewBtn()
 		eventName = xyd.event.ACADEMY_ASSESSMENT_REPORT
 	elseif self.battleType == xyd.BattleType.ACADEMY_ASSESSMENT then
 		eventName = xyd.event.TIME_CLOISTER_EXTRA
+	elseif self.battleType == xyd.BattleType.SOUL_LAND_REPORT then
+		eventName = xyd.event.SOUL_LAND_REPORT
 	end
 
 	UIEventListener.Get(self.battleReviewBtn).onClick = function ()
@@ -559,6 +563,11 @@ function BattleWinWindow:initReviewBtn()
 			data.battle_report.battle_version = verson
 
 			xyd.BattleController.get():onGuildNewWarFightResult(data)
+		elseif self.battleType == xyd.BattleType.SOUL_LAND then
+			local verson = xyd.tables.miscTable:getNumber("battle_version", "value") or 0
+			data.battle_report.battle_version = verson
+
+			xyd.BattleController.get():onSoulLandFightReport(data)
 		else
 			xyd.EventDispatcher.inner():dispatchEvent({
 				name = eventName,
@@ -592,6 +601,9 @@ function BattleWinWindow:initLayout()
 			self.itemGroupGuildNewWar:SetActive(true)
 			self.itemGroupGuildNewWarLayout:Reposition()
 			self.battleDetailBtn:X(290)
+		elseif self.battleType == xyd.BattleType.SOUL_LAND then
+			self.battleReviewBtn:SetActive(true)
+			self.battleDetailBtn.transform:X(260)
 		else
 			self.battleDetailBtn:X(290)
 		end
@@ -665,7 +677,7 @@ function BattleWinWindow:initLayout()
 			self:initTowerPractice()
 			self.formationGroup:SetActive(true)
 		end
-	elseif self.battleType == xyd.BattleType.TOWER_PRACTICE then
+	elseif self.battleType == xyd.BattleType.TOWER_PRACTICE or self.battleType == xyd.BattleType.SOUL_LAND_REPORT then
 		self:initTowerPractice()
 		self.formationGroup:SetActive(true)
 	elseif self.battleType == xyd.BattleType.SPORTS_PVP then
@@ -725,7 +737,7 @@ function BattleWinWindow:initLayout()
 	elseif self.battleType == xyd.BattleType.GUILD_WAR then
 		self:initGuildWar()
 		pvpFun()
-	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS then
+	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.SOUL_LAND then
 		self:initHeroChallenge()
 		pveFun()
 	elseif self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT then
@@ -1006,6 +1018,8 @@ function BattleWinWindow:closeSelf()
 				gridId
 			})
 		end
+	elseif self.battleType == xyd.BattleType.SOUL_LAND then
+		xyd.models.soulLand:openFightWindow(tonumber(self.battleParams.fortId))
 	end
 
 	xyd.WindowManager.get():closeWindow("battle_window")
@@ -1568,10 +1582,6 @@ end
 function BattleWinWindow:initGuildWar()
 	self.labelLeftPlayerName.text = self.battleParams.self_info.player_name
 	self.labelRightPlayerName.text = self.battleParams.enemy_info.player_name
-
-	dump(self.battleParams, "傳進來的數據09090990909090909090")
-	__TRACE("測試進來的東西")
-
 	local paramsA = {
 		avatarID = self.battleParams.self_info.avatar_id,
 		lev = self.battleParams.self_info.lev
@@ -1697,11 +1707,31 @@ function BattleWinWindow:initHeroChallenge()
 
 	if items and #items > 0 then
 		for _, item in ipairs(items) do
-			xyd.getItemIcon({
+			local param = {
 				itemID = tonumber(item.item_id),
 				num = math.floor(tonumber(item.item_num)),
 				uiRoot = self.pveDropGroup
-			})
+			}
+			local info = item.soulEquipInfo
+
+			if info then
+				local itemType = xyd.tables.itemTable:getType(info.table_id)
+				local equip = nil
+
+				if itemType == xyd.ItemType.SOUL_EQUIP1 then
+					equip = import("app.models.SoulEquip1").new()
+				else
+					equip = import("app.models.SoulEquip2").new()
+				end
+
+				info.ownerID = info.pos
+
+				equip:populate(info)
+
+				param.soulEquipInfo = equip:getSoulEquipInfo()
+			end
+
+			xyd.getItemIcon(param)
 		end
 
 		self.pveDropGroup:GetComponent(typeof(UIGrid)):Reposition()

@@ -22,7 +22,7 @@ id,name,from,content
 21,Daily Rewards,System Message,"Login every day during the event and you will receive Seal x 1, Elemental Orb x 1000, Paper Scool x 2. Your rewards are attached."
 22,Internship Rewards,System Message,Congratulations! You've completed {1} star internship quest during the Internship Event! Here are your rewards.
 23,Reload Notice,System Message,Thank you for purchasing {1}. Your items are available in Bag. Have a look~!
-24,Daily Rewards,System Message,Login daily during the event to get Rudder x 4 and Gem x 150. Your rewards are attached.
+24,Daily Rewards,System Message,活動期間，每日登入即可領取船舵*4、鑽石*150、陳舊的漂流瓶*5，獎勵見附件。
 25,League Battle Rewards,System Message,Congratulations! You reached a goal during the League event. Here are your rewards~!
 26,Subscription,Subscription,Congratulations! You are a Weekly Pass holder. Your Coin Loot will increase by 100% for the next 168 hours. This benefit is combined with VIP benefits.
 27,Weekly Pass will expire,Weekly Pass,Your Weekly Pass expires today. Please renew your Weekly Pass to continue enjoying the benefits. Looting Coin is increased 100% while the pass is active~!
@@ -150,7 +150,7 @@ id,name,from,content
 149,Newbie Benefit Reward,System Message,"Senpai, congratulations for completing the task. Here's the reward you forgot to claim at the event page!"
 150,Newbie Benefit Progress,System Message,"Senpai, congratulations for getting {1} points in Newbie Benefit! Here's the reward you forgot to claim in the event page!"
 151,Luvly's Reward,Event Mail,"Senpai, congratulations for collecting {1} Coral Branch(es), here's your reward!"
-152,Daily Rewards,System Message,Login daily during the event to get Rudder x 4 and Gem x 150. Your rewards are attached.
+152,Daily Rewards,System Message,活動期間，每日登入即可領取船舵*4、鑽石*150、陳舊的漂流瓶*5，獎勵見附件。
 153,Event Item Retrieve,System Message,"Dear Senpai, event: {1} is ended, {2} x {3} of yours have been retrieved."
 154,Exploration Ranking Reward,System Message,"Congratulations, Senpai! You're No. {1} in this season of Old Campus Exploration, here's your reward!"
 155,Exploration Reward,System Message,"Dear Senpai, the event: Old Campus Exploration has ended, here's your unclaimed reward!"
@@ -291,3 +291,4 @@ GXB2 Admin Team"
 262,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Complete a 4-star or higher Internship Quest ({1}/10)"" in Bonnie's To-Do List, here's your reward!"
 263,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Complete 3 battles in Junior Varsity ({1}/10)"" in Bonnie's To-Do List, here's your reward!"
 264,Bonnie's To-Do List,Event Mail,"Congratulations for completing the task that requires you to ""Consume 10 Seals ({1}/10)"" in Bonnie's To-Do List, here's your reward!"
+265,境界馭靈通行證獎勵補發,系統信件,親愛的學長，上期「境界馭靈」已結束，您有已達成但未領取的獎勵。這是為您補發的未領取獎勵，請學長查收！

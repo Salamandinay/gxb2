@@ -131,12 +131,18 @@ function BackpackItem:update(index, realIndex, info)
 			notShowGetWayBtn = true
 		end
 
-		self.itemIcon:setInfo({
+		local param = {
 			itemID = itemID,
 			num = itemNum,
 			wndType = xyd.ItemTipsWndType.BACKPACK,
 			notShowGetWayBtn = notShowGetWayBtn
-		})
+		}
+
+		if type_ == xyd.ItemType.SOUL_EQUIP1 or type_ == xyd.ItemType.SOUL_EQUIP2_POS1 or type_ == xyd.ItemType.SOUL_EQUIP2_POS2 or type_ == xyd.ItemType.SOUL_EQUIP2_POS3 or type_ == xyd.ItemType.SOUL_EQUIP2_POS4 then
+			param.soulEquipInfo = self.data:getSoulEquipInfo()
+		end
+
+		self.itemIcon:setInfo(param)
 	end
 
 	self.name = "backpack_item_" .. self.itemIndex
@@ -186,7 +192,8 @@ local TabName2 = {
 	"NO_CONSUMABLES",
 	"NO_ARTIFACT",
 	nil,
-	"NO_CONSUMABLES"
+	"NO_CONSUMABLES",
+	"NO_SOULEQUIP"
 }
 
 function BackpackWindow:ctor(name, params)
@@ -206,6 +213,7 @@ function BackpackWindow:ctor(name, params)
 	self.is_ARTIFACT_first_data = true
 	self.is_DEBRIS_first_data = true
 	self.is_CONSUMABLES_first_data = true
+	self.is_soulequip_first_data = true
 	self.sortType = 0
 	self.sortType2 = 0
 end
@@ -235,22 +243,35 @@ function BackpackWindow:initTopGroup()
 end
 
 function BackpackWindow:registerEvent()
-	self.tab = CommonTabBar.new(self.nav, 4, function (index)
+	local tabNums = 5
+	self.tab = CommonTabBar.new(self.nav, tabNums, function (index)
 		local helpArr = {
 			xyd.BackpackShowType.EQUIP,
 			xyd.BackpackShowType.ITEM,
 			xyd.BackpackShowType.CONSUMABLES,
-			xyd.BackpackShowType.ARTIFACT
+			xyd.BackpackShowType.ARTIFACT,
+			xyd.BackpackShowType.SOUL_EUQIP
 		}
 
 		self:onTabTouch(helpArr[index])
 	end)
 
+	for i = 1, tabNums do
+		local label = self.nav:ComponentByName("tab_" .. i .. "/label", typeof(UILabel))
+
+		if xyd.Global.lang == "de_de" then
+			label.fontSize = 18
+		elseif xyd.Global.lang == "en_en" then
+			label.fontSize = 20
+		end
+	end
+
 	self.tab:setTexts({
 		__("EQUIP"),
 		__("ITEM"),
 		__("CONSUMABLES"),
-		__("ARTIFACT")
+		__("ARTIFACT"),
+		__("SOULEQUIP")
 	})
 
 	for k = 1, 7 do
@@ -289,6 +310,7 @@ function BackpackWindow:getUIComponent()
 	self.btnSmith_ = self.bottomBtns_:NodeByName("btnSmith_").gameObject
 	self.btnArtifactList_ = self.bottomBtns_:NodeByName("btnArtifactList_").gameObject
 	self.labelSmith_ = self.bottomBtns_:ComponentByName("btnSmith_/button_label", typeof(UILabel))
+	self.numLimitShow = self.bottomBtns_:ComponentByName("numLimitShow", typeof(UILabel))
 	self.labelArtifactList_ = self.bottomBtns_:ComponentByName("btnArtifactList_/button_label", typeof(UILabel))
 	self.btnSortGroup_ = self.bottomBtns_:NodeByName("btnSortGroup_").gameObject
 	self.btnSort_ = self.btnSortGroup_:NodeByName("btnSort_").gameObject
@@ -351,6 +373,7 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 	self.wrapContent_:setInfos(infos, {
 		keepPosition = isUpdate
 	})
+	self.numLimitShow.gameObject:SetActive(false)
 
 	if self.showBagType == xyd.BackpackShowType.EQUIP then
 		self.btnSmith_:SetActive(true)
@@ -400,6 +423,16 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 		self.btnSortGroup_:SetActive(false)
 		self.btnSortGroup2_:SetActive(true)
 		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
+	elseif self.showBagType == xyd.BackpackShowType.SOUL_EUQIP then
+		self.btnSmith_:SetActive(false)
+		self.btnArtifactList_:SetActive(false)
+		self.btnSortGroup_:SetActive(false)
+		self.btnSortGroup2_:SetActive(false)
+		self.bottomBtns_:SetActive(true)
+		self.scrollPanel:SetBottomAnchor(self.window_, 0, 223)
+		self.numLimitShow.gameObject:SetActive(true)
+
+		self.numLimitShow.text = xyd.models.slot:getSoulEquipLength() .. "/" .. xyd.tables.miscTable:getNumber("soul_equip_limit", "value")
 	else
 		self.btnSmith_:SetActive(false)
 		self.btnArtifactList_:SetActive(false)
@@ -413,7 +446,11 @@ function BackpackWindow:onTabTouch(i, isUpdate)
 
 	self.labelNoneTips_.text = __(TabName2[self.showBagType])
 
-	self.groupNone_:SetActive(#self.items_[self.showBagType][showBgTabNum] == 0)
+	if self.showBagType == xyd.BackpackShowType.SOUL_EQUIP then
+		self.groupNone_:SetActive(xyd.models.slot:getSoulEquipLength() == 0)
+	else
+		self.groupNone_:SetActive(#self.items_[self.showBagType][showBgTabNum] == 0)
+	end
 end
 
 function BackpackWindow:onQualityBtn(i)
@@ -477,7 +514,7 @@ end
 
 function BackpackWindow:initData(index)
 	if index == nil then
-		for i = 0, 6 do
+		for i = 0, 7 do
 			self.items_[i] = {}
 
 			for j = 0, 7 do
@@ -538,25 +575,58 @@ function BackpackWindow:dataCheck(index)
 
 		isretun = false
 		self.is_CONSUMABLES_first_data = false
+	elseif self.is_soulequip_first_data == true and index == xyd.BackpackShowType.SOUL_EUQIP then
+		tmpDatas = {}
+		local data = xyd.models.slot:getAllSoulEquip()
+
+		for key, value in pairs(data) do
+			tmpDatas[key] = value
+		end
+
+		self:sortSoulEquip(tmpDatas or {})
+
+		isretun = false
+		self.is_soulequip_first_data = false
 	end
 
 	if isretun then
 		return
 	end
 
-	for j, _ in pairs(tmpDatas) do
-		local item = tmpDatas[j]
-		local quality = ItemTable:getQuality(item.itemID)
+	if index == xyd.BackpackShowType.SOUL_EUQIP then
+		for j, _ in pairs(tmpDatas) do
+			local item = tmpDatas[j]
 
-		table.insert(self.items_[index][quality], item)
-		table.insert(self.items_[index][0], item)
+			if item then
+				local quality = item.qlt
+				item.itemID = item.tableID
+
+				if quality == nil then
+					quality = ItemTable:getQuality(item.tableID)
+				end
+
+				table.insert(self.items_[index][quality], item)
+				table.insert(self.items_[index][0], item)
+			end
+		end
+	else
+		for j, _ in pairs(tmpDatas) do
+			local item = tmpDatas[j]
+
+			if item then
+				local quality = ItemTable:getQuality(item.itemID)
+
+				table.insert(self.items_[index][quality], item)
+				table.insert(self.items_[index][0], item)
+			end
+		end
 	end
 end
 
 function BackpackWindow:getInfos()
 	local quality = xyd.QualityColor.ALL
 
-	if self.showBagType == xyd.BackpackShowType.EQUIP or self.showBagType == xyd.BackpackShowType.ARTIFACT or self.showBagType == xyd.BackpackShowType.ITEM or self.showBagType == xyd.BackpackShowType.CONSUMABLES then
+	if self.showBagType == xyd.BackpackShowType.EQUIP or self.showBagType == xyd.BackpackShowType.ARTIFACT or self.showBagType == xyd.BackpackShowType.ITEM or self.showBagType == xyd.BackpackShowType.CONSUMABLES or self.showBagType == xyd.BackpackShowType.SOUL_EUQIP then
 		quality = self.showQuality
 	end
 
@@ -588,8 +658,6 @@ function BackpackWindow:getInfos()
 end
 
 function BackpackWindow:summonCallback(event)
-	dump(self.collectionBefore, "self.collectionBefore")
-
 	local items = event.data.summon_result.items
 	local partners = event.data.summon_result.partners
 	local prophet_window = xyd.WindowManager.get():getWindow("prophet_window")
@@ -652,8 +720,6 @@ function BackpackWindow:summonCallback(event)
 		xyd.WindowManager:get():closeWindow("summon_res_window")
 
 		self.collectionBefore = Slot:getCollectionCopy()
-
-		dump(self.collectionBefore, "self.collectionBefore")
 
 		if flag then
 			xyd.WindowManager.get():openWindow("alert_heros_window", {
@@ -844,6 +910,16 @@ function BackpackWindow:sortConsumables(data)
 				return false
 			end
 		end
+	end)
+end
+
+function BackpackWindow:sortSoulEquip(data)
+	table.sort(data, function (a, b)
+		if a == nil or b == nil then
+			return false
+		end
+
+		return a.tableID < b.tableID
 	end)
 end
 

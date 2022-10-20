@@ -10,6 +10,9 @@ local Backpack = xyd.models.backpack
 local ActivityModel = xyd.models.activity
 local Summon = xyd.models.summon
 local Slot = xyd.models.slot
+local SoulEquip1 = import("app.models.SoulEquip1")
+local SoulEquip2 = import("app.models.SoulEquip2")
+local CommonTabBar = import("app.common.ui.CommonTabBar")
 local HeroIcon = require("app.components.HeroIcon")
 local SingleWayItem = import("app.components.SingleWayItem")
 local BtnLayoutType = {
@@ -59,6 +62,7 @@ function ItemTips:ctor(parentGO, params, windowDepth)
 	self.windowDepth_ = windowDepth
 	self.hideBtnCheck = params.hideBtnCheck
 	self.quickItem_ = params.quickItem
+	self.soulEquipInfo = params.soulEquipInfo
 
 	self:initLayout()
 end
@@ -132,6 +136,10 @@ function ItemTips:registerEvent()
 
 	if self.resetBtn and self.data.resetCallBack then
 		xyd.setDarkenBtnBehavior(self.resetBtn.gameObject, self, self.data.resetCallBack)
+	end
+
+	if self.btnLock and self.data.lockClickCallBack and self.data.lockStateCallBack then
+		xyd.setDarkenBtnBehavior(self.btnLock.gameObject, self, self.data.lockClickCallBack)
 	end
 end
 
@@ -258,6 +266,11 @@ function ItemTips:getUIComponent()
 	self.btnDesc_ = go:NodeByName("groupMain_/btnDesc").gameObject
 	self.btnArtifactUp_ = go:NodeByName("groupMain_/btnArtifactUp")
 	self.resetBtn = self.groupMain_.gameObject:NodeByName("resetBtn")
+	self.btnLock = self.groupMain_.gameObject:NodeByName("btnLock")
+
+	if self.btnLock then
+		self.lockImg = self.btnLock:ComponentByName("", typeof(UISprite))
+	end
 
 	if self.wndType_ == xyd.ItemTipsWndType.DRESS_COLLECTION then
 		self.btnDressSuit_ = go:NodeByName("groupMain_/btnDressSuit_").gameObject
@@ -442,7 +455,8 @@ function ItemTips:initIcon()
 		noClick = true,
 		uiRoot = self.groupIcon_.gameObject,
 		itemID = self.itemID,
-		hideText = self.hideText
+		hideText = self.hideText,
+		soulEquipInfo = self.soulEquipInfo
 	}
 	local icon = xyd.getItemIcon(params)
 
@@ -614,6 +628,16 @@ function ItemTips:initNormalBtn()
 
 	if self.resetBtn and self.data.resetCallBack then
 		self.resetBtn.gameObject:SetActive(true)
+	end
+
+	if self.btnLock and self.data.lockClickCallBack and self.data.lockStateCallBack then
+		self.btnLock.gameObject:SetActive(true)
+
+		if self.lockImg and self.data.lockStateCallBack(self.data) then
+			xyd.setUISpriteAsync(self.lockImg, nil, "partner_lock_btn")
+		else
+			xyd.setUISpriteAsync(self.lockImg, nil, "partner_unlock_btn")
+		end
 	end
 
 	local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
@@ -1024,6 +1048,7 @@ end
 function ItemTips:getDesc()
 	local desc = ""
 	local color = nil
+	local item_type = ItemTable:getType(self.itemID)
 
 	if self.showBagType_ == xyd.BackpackShowType.EQUIP or self.showBagType_ == xyd.BackpackShowType.ARTIFACT or ItemTable:getType(self.itemID) == xyd.ItemType.CRYSTAL or self.showBagType_ == xyd.BackpackShowType.SKIN then
 		desc = EquipTable:getDesc(self.itemID)
@@ -1057,6 +1082,8 @@ function ItemTips:getDesc()
 
 		local descNum = xyd.getRoughDisplayNumber(num)
 		desc = desc .. descNum
+	elseif self.soulEquipInfo and (self.soulEquipInfo.soulEquipID or self.soulEquipInfo.tableID) and (item_type == xyd.ItemType.SOUL_EQUIP1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS2 or item_type == xyd.ItemType.SOUL_EQUIP2_POS3 or item_type == xyd.ItemType.SOUL_EQUIP2_POS4) then
+		desc = ""
 	end
 
 	return {
@@ -1089,6 +1116,14 @@ function ItemTips:initDesc()
 
 	if ItemTable:getType(self.itemID) == xyd.ItemType.DRESS then
 		self:showDressDesc()
+	end
+
+	local item_type = ItemTable:getType(self.itemID)
+
+	if self.soulEquipInfo and (self.soulEquipInfo.soulEquipID or self.soulEquipInfo.tableID) and (item_type == xyd.ItemType.SOUL_EQUIP1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS2 or item_type == xyd.ItemType.SOUL_EQUIP2_POS3 or item_type == xyd.ItemType.SOUL_EQUIP2_POS4) then
+		self:showSoulEquipDesc()
+	elseif (not self.soulEquipInfo or not self.soulEquipInfo.soulEquipID and not self.soulEquipInfo.tableID) and item_type == xyd.ItemType.SOUL_EQUIP1 then
+		self:showFakeSoulEquip1Desc()
 	end
 
 	self:showArtifactDesc()
@@ -1582,6 +1617,231 @@ function ItemTips:showDressDesc()
 	end
 end
 
+function ItemTips:showSoulEquipDesc()
+	local type = ItemTable:getType(self.itemID)
+	local equip = nil
+
+	if self.soulEquipInfo.soulEquipID and xyd.models.slot:getSoulEquip(self.soulEquipInfo.soulEquipID) then
+		equip = xyd.models.slot:getSoulEquip(self.soulEquipInfo.soulEquipID)
+	elseif type == xyd.ItemType.SOUL_EQUIP1 then
+		equip = SoulEquip1.new()
+
+		equip:populate(self.soulEquipInfo)
+	else
+		equip = SoulEquip2.new()
+
+		equip:populate(self.soulEquipInfo)
+	end
+
+	if not equip then
+		return
+	end
+
+	self.labelName_.text = self.labelName_.text .. "  +" .. equip:getLevel()
+	self.labelName_.color = xyd.getQualityColor(equip:getQlt())
+	local baseAttr = equip:getBaseAttr()
+
+	for i = 1, #baseAttr do
+		local attr = baseAttr[i]
+
+		if attr then
+			local desc = DBuffTable:translationDesc(attr, true, true)
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = desc
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+
+	local exAttr = equip:getExAttr()
+
+	if exAttr and #exAttr > 0 or type == xyd.ItemType.SOUL_EQUIP1 then
+		local title = nil
+
+		if type == xyd.ItemType.SOUL_EQUIP1 then
+			title = __("SOUL_EQUIP_TEXT07")
+		else
+			title = __("SOUL_EQUIP_TEXT08")
+		end
+
+		local label = xyd.getLabel({
+			c = 3613720831.0,
+			w = 432,
+			s = 22,
+			uiRoot = self.groupDesc_,
+			t = title
+		})
+
+		table.insert(self.descs_, label)
+	end
+
+	if not exAttr or #exAttr <= 0 then
+		local title = nil
+
+		if type == xyd.ItemType.SOUL_EQUIP1 then
+			title = __("SOUL_EQUIP_TEXT82")
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = title
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+
+	for i = 1, #exAttr do
+		local attr = exAttr[i]
+
+		if attr then
+			local desc = DBuffTable:translationDesc(attr, true, true)
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = desc
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+
+	if self.params.noShowSoulEquipSuit then
+		return
+	end
+
+	if type ~= xyd.ItemType.SOUL_EQUIP1 then
+		local suitSkillID = equip:getSuitID()
+
+		if suitSkillID and suitSkillID > 0 then
+			local skillName = xyd.tables.skillTextTable:getName(suitSkillID)
+			local containEquipIDs = xyd.tables.soulEquip2GroupTable:getEquip(xyd.tables.soulEquip2Table:getGroup(equip:getTableID()))
+			local labelName = xyd.getLabel({
+				c = 3613720831.0,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = skillName .. "(" .. #containEquipIDs .. ")"
+			})
+
+			table.insert(self.descs_, labelName)
+
+			local skillDesc = xyd.tables.skillTextTable:getDesc(suitSkillID)
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = skillDesc
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+end
+
+function ItemTips:showFakeSoulEquip1Desc()
+	local type = ItemTable:getType(self.itemID)
+	local equip = nil
+	local awake = 0
+	equip = SoulEquip1.new()
+
+	equip:populate({
+		lev = 0,
+		tableID = self.itemID,
+		awake = awake
+	})
+
+	if not equip then
+		return
+	end
+
+	self.labelName_.text = self.labelName_.text .. "  +" .. equip:getLevel()
+	self.labelName_.color = xyd.getQualityColor(equip:getQlt())
+	local baseAttr = equip:getBaseAttr()
+
+	for i = 1, #baseAttr do
+		local attr = baseAttr[i]
+
+		if attr then
+			local desc = DBuffTable:translationDesc(attr, true, true)
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = desc
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+
+	local exAttr = equip:getExAttr()
+
+	if exAttr and #exAttr > 0 or type == xyd.ItemType.SOUL_EQUIP1 then
+		local title = nil
+
+		if type == xyd.ItemType.SOUL_EQUIP1 then
+			title = __("SOUL_EQUIP_TEXT07")
+		else
+			title = __("SOUL_EQUIP_TEXT08")
+		end
+
+		local label = xyd.getLabel({
+			c = 3613720831.0,
+			w = 432,
+			s = 22,
+			uiRoot = self.groupDesc_,
+			t = title
+		})
+
+		table.insert(self.descs_, label)
+	end
+
+	if not exAttr or #exAttr <= 0 then
+		local title = nil
+
+		if type == xyd.ItemType.SOUL_EQUIP1 then
+			title = __("SOUL_EQUIP_TEXT82")
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = title
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+
+	for i = 1, #exAttr do
+		local attr = exAttr[i]
+
+		if attr then
+			local desc = DBuffTable:translationDesc(attr, true, true)
+			local label = xyd.getLabel({
+				c = 960513791,
+				w = 432,
+				s = 22,
+				uiRoot = self.groupDesc_,
+				t = desc
+			})
+
+			table.insert(self.descs_, label)
+		end
+	end
+end
+
 function ItemTips:changeMainSize()
 	local exSkill = EquipTable:exSkillId(self.itemID)
 	local showArtifactDesc = false
@@ -1724,16 +1984,6 @@ function ItemTips:skinDetailTouch()
 		return
 	end
 
-	local params = {
-		skin_id = self.itemID,
-		closeCallBack = function ()
-			local win = xyd.WindowManager.get():getWindow("collection_skin_window")
-
-			if not win:getFromSchoolChoose() then
-				xyd.WindowManager.get():closeWindow("collection_skin_window")
-			end
-		end
-	}
 	local win = xyd.WindowManager.get():getWindow("item_tips_window")
 	local winType = nil
 
@@ -1741,8 +1991,16 @@ function ItemTips:skinDetailTouch()
 		winType = win:getWinType()
 	end
 
-	xyd.WindowManager.get():openWindow("collection_skin_window", {
+	local params = {
+		skin_id = self.itemID,
+		collectionID = xyd.tables.itemTable:getCollectionId(self.itemID),
 		closeCallBack = function ()
+			local win = xyd.WindowManager.get():getWindow("collection_skin_window")
+
+			if win and not win:getFromSchoolChoose() then
+				xyd.WindowManager.get():closeWindow("collection_skin_window")
+			end
+
 			if self.parent_item_ and tonumber(self.parent_item_) > 0 then
 				local params = {
 					showGetWays = false,
@@ -1759,12 +2017,11 @@ function ItemTips:skinDetailTouch()
 					})
 				end)
 			end
-		end,
-		collectionInfo = self.collectionInfo_
-	}, function ()
-		xyd.WindowManager.get():openWindow("collection_skin_detail_window", params, function ()
-			xyd.WindowManager.get():closeWindowsOnLayer(6)
-		end)
+		end
+	}
+
+	xyd.WindowManager.get():openWindow("collection_skin_detail_window", params, function ()
+		xyd.WindowManager.get():closeWindowsOnLayer(6)
 	end)
 end
 
@@ -2397,6 +2654,14 @@ function ItemTips:showCollectionGroup()
 	self:waitForFrame(1, function ()
 		top_left:Y(top_left.gameObject.transform.localPosition.y - 70)
 	end)
+end
+
+function ItemTips:setBtnLockState(lock)
+	if lock then
+		xyd.setUISpriteAsync(self.lockImg, nil, "partner_lock_btn")
+	else
+		xyd.setUISpriteAsync(self.lockImg, nil, "partner_unlock_btn")
+	end
 end
 
 return ItemTips

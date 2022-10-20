@@ -99,6 +99,7 @@ function ModelManager:ctor()
 	metatable.quickFormation = "app.models.QuickFormation"
 	metatable.growthDiary = "app.models.GrowthDiary"
 	metatable.galaxyTrip = "app.models.GalaxyTrip"
+	metatable.soulLand = "app.models.SoulLand"
 end
 
 function ModelManager:reset()

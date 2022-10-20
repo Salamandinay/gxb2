@@ -22,6 +22,7 @@ function MapsModel:onRegister()
 	self:registerEvent(xyd.event.FRIEND_GET_RANK, handler(self, self.onFriendRank))
 	self:registerEvent(xyd.event.GET_FAIRY_RANK_LIST, handler(self, self.onFairyRank))
 	self:registerEvent(xyd.event.LIMIT_GACHA_BOSS_ACTIVITY_GET_RANK_LIST, handler(self, self.onLimitCallBossRank))
+	self:registerEvent(xyd.event.GET_SOUL_LAND_MAP_RANK, handler(self, self.onSoulLandMapRank))
 end
 
 function MapsModel:populate(params)
@@ -61,6 +62,10 @@ function MapsModel:getRank(mapType)
 		msg.activity_id = xyd.ActivityID.LIMIT_CALL_BOSS
 
 		xyd.Backend.get():request(xyd.mid.LIMIT_GACHA_BOSS_ACTIVITY_GET_RANK_LIST, msg)
+	elseif mapType == xyd.MapType.SOUL_LAND then
+		local msg = messages_pb.get_soul_land_map_rank_req()
+
+		xyd.Backend.get():request(xyd.mid.GET_SOUL_LAND_MAP_RANK, msg)
 	else
 		local msg = messages_pb:get_map_rank_req()
 		msg.map_type = tonumber(mapType)
@@ -295,6 +300,38 @@ function MapsModel:onMapRank(event)
 	end
 
 	self.mapRankList_[params.map_type] = infos
+end
+
+function MapsModel:onSoulLandMapRank(event)
+	local params = event.data
+
+	if self.mapRankList_[xyd.MapType.SOUL_LAND] == nil then
+		self.mapRankList_[xyd.MapType.SOUL_LAND] = {}
+	end
+
+	local infos = {
+		rank = params.rank,
+		score = params.score,
+		map_type = xyd.MapType.SOUL_LAND,
+		list = {}
+	}
+
+	for i = 1, #params.list do
+		local list = params.list[i]
+		infos.list[i] = {
+			score = list.score,
+			player_name = list.player_name,
+			avatar_id = list.avatar_id,
+			avatar_frame_id = list.avatar_frame_id,
+			lev = list.lev,
+			player_id = list.player_id,
+			time = list.time,
+			mapType = params.map_type,
+			rank = i
+		}
+	end
+
+	self.mapRankList_[xyd.MapType.SOUL_LAND] = infos
 end
 
 function MapsModel:onFriendRank(event)

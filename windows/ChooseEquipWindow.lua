@@ -129,7 +129,7 @@ function ChooseEquipWindow:initWindow()
 		end
 	end
 
-	self.labelTitle.text = __("ChooseEquipWindow")
+	self.labelTitle.text = __("CHOOSE_ARTIFACT")
 	self.chooseLabel.text = __("CHOOSE_EQUIP")
 	self.selectLabel.text = __("NOT_EQUIPPED")
 end

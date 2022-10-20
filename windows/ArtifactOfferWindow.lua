@@ -145,6 +145,8 @@ end
 
 function ArtifactOfferWindow:initDesc()
 	local data = self:getDesc()
+	local itemSoulEquipMaterial = xyd.tables.miscTable:split2Cost("soul_equip2_sp_item", "value", "#")
+	local itemSoulEquipID = itemSoulEquipMaterial[1]
 
 	if data.text ~= "" then
 		local label = xyd.getLabel({
@@ -159,7 +161,9 @@ function ArtifactOfferWindow:initDesc()
 		table.insert(self.descs_, label)
 	end
 
-	if self.itemTable:getType(self.itemID) ~= xyd.ItemType.DRESS_FRAGMENT then
+	if self.itemTable:getType(self.itemID) == xyd.ItemType.DRESS_FRAGMENT then
+		-- Nothing
+	elseif self.itemID ~= itemSoulEquipID then
 		self:showArtifactDesc()
 	end
 

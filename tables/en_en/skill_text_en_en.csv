@@ -17719,3 +17719,179 @@ The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicte
 6778101,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 30%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 10% of damage dealt with this Critical Strike will be dealt to the target."
 6778201,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 60%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 20% of damage dealt with this Critical Strike will be dealt to the target."
 6778301,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 100%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 30% of damage dealt with this Critical Strike will be dealt to the target."
+5200001,Anima Set Skill,Lucky Goldfish,Every instance of damage taken will not surpass 30% of self Maximum HP (This effect can only be triggered 3 times per Round).
+5200002,Anima Set Skill,Floating Jellyfish,"In battle, the owner of the Set gains 0.5% Damage Reduction for every 1% Crit Resist she has. When she takes a Critical Strike from Basic Attacks or Active Skills, she will gain 30% Crit Resist that lasts for 1 Round."
+5200003,Anima Set Skill,Rock Crab,"
+At the start of the Round, the owner of the Set gains 1 stack of Carapace.
+
+Carapace: A Skill Effect.
+Whenever the owner of this Effect takes damage, she will consume 1 stack of Carapace to nullify the damage."
+5200004,Anima Set Skill,Ghostly Goat,"For every 3 instances of damage dealt, the owner of the Set will deal 60% more damage in the next instance of damage she deals."
+5200005,Anima Set Skill,Fiery Qilin,Increases damage dealt to enemies with more than 80% HP by 40%.
+5200006,Anima Set Skill,Cunning Lizard,Increases damage dealt to Boss enemies by 50%.
+5200007,Anima Set Skill,Nine-Tailed Fox,"At the end of the Round, if the owner of the Set dealt a Basic Attack or were unable to attack in the Round, all allies will gain 15% Block and 15% Control Immunity that lasts for 2 Rounds (Cannot stack)."
+5200008,Anima Set Skill,Weaver Kitty,"Increase the amount of BP gained by 25%. When the owner of the Set releases her Active Skill, if she is protected by a [c][e28002]Magick Barrier[-][/c], her ally with the lowest HP will gain a [c][e28002]Magick Barrier[-][/c] with (20% of the ally's Maximum HP) BP."
+5200009,Anima Set Skill,Majestic Phoenix,"Increase Heal Amount by 25%. When the owner of this Set is healed, 1 random Debuff (Damage Over Time, Attribute Reduction, Mark, Control Effect) will be removed from 1 random ally (This effect can only be triggered once per Round)."
+5210101,Land of Souls,1. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 5%. If the owner has 5 stacks, she has a 5% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210102,Land of Souls,2. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 10%. If the owner has 5 stacks, she has a 10% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210103,Land of Souls,3. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 20%. If the owner has 5 stacks, she has a 20% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210104,Land of Souls,4. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 40%. If the owner has 5 stacks, she has a 40% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210105,Land of Souls,5. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 60%. If the owner has 5 stacks, she has a 60% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210106,Land of Souls,6. Block Stage,"
+Whenever an ally takes damage without Blocking it, she will gain 1 stack of Death\'s Shadow.
+
+Death\'s Shadow:
+A Skill Effect.
+If the owner of this Effect has 3 stacks of this Effect, her Attack will be reduced by 80%. If the owner has 5 stacks, she has a 80% chance to be stunned at the start of every Round. If the owner has 15 stacks, she will be defeated immediately when the Round ends."
+5210201,Land of Souls,1. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 5%. Deals (100% of the owner\'s Attack) damage to the owner and reduces their Energy by 10 when inflicted and at the end of every Round."
+5210202,Land of Souls,2. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 10%. Deals (200% of the owner\'s Attack) damage to the owner and reduces their Energy by 20 when inflicted and at the end of every Round."
+5210203,Land of Souls,3. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 20%. Deals (300% of the owner\'s Attack) damage to the owner and reduces their Energy by 30 when inflicted and at the end of every Round."
+5210204,Land of Souls,4. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 40%. Deals (600% of the owner\'s Attack) damage to the owner and reduces their Energy by 50 when inflicted and at the end of every Round."
+5210205,Land of Souls,5. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 60%. Deals (900% of the owner\'s Attack) damage to the owner and reduces their Energy by 70 when inflicted and at the end of every Round."
+5210206,Land of Souls,6. Crit Stage,"
+When the enemy deals a Critical Strike, it will deal (50% of the target\'s Maximum HP) extra damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target and inflict Piercing Gaze that lasts for 2 Rounds to it.
+
+Piercing Gaze:
+A Skill Effect that cannot stack.
+Increases damage taken by the owner of this Effect by 100%. Deals (1500% of the owner\'s Attack) damage to the owner and reduces their Energy by 100 when inflicted and at the end of every Round."
+5210301,Land of Souls,1. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 5%."
+5210302,Land of Souls,2. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 10%."
+5210303,Land of Souls,3. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 20%."
+5210304,Land of Souls,4. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 40%."
+5210305,Land of Souls,5. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 70%."
+5210306,Land of Souls,6. Regeneration Stage,"
+When the battle starts, all allies will be inflicted with Despair.
+
+Despair:
+A Skill Effect.
+Reduce Heal Received and amount of BP received by all Ally Girls by 100%."
+2000037000,Land of Seals Boss (Crit),Basic Attack,Deals (800% of target's Attack) damage to 2 enemies with the highest Attack and gains 20% Crit that lasts for 2 rounds.
+2000037010,Land of Seals Boss (Crit),Active Skill,"
+Deals (800% of Attack) damage to all enemies. If the damage becomes a Critical Strike, the target taking the Critical damage will also be afflicted with [c][01a310]Poison[-][/c], [c][01a310]Bleed[-][/c], and [c][01a310]Burn[-][/c] that lasts for 2 rounds, each Damage Over Time effect dealing (600% of Attack) damage per round. Self Attack will also be increased by 20% for 4 rounds. 
+
+[c][01a310]Poison[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when poison is inflicted and at the beginning of each round during the period of effect. 
+
+[c][01a310]Bleed[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when bleed is inflicted and at the beginning of each round during the period of effect.
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect."
+2000038000,Land of Seals Boss (Regeneration),Basic Attack,"
+Deals (20% of target\'s Maximum HP) damage to 2 enemies with the lowest HP and reduces 10% of their Heal Received and BP gained for [c][e28002]Magick Barrier[-][/c].
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+2000038010,Land of Seals Boss (Regeneration),Active Skill,"
+Deals (800% of Attack) damage to all enemies.
+Deals (25% of target’s Maximum HP) extra damage to enemies with 50% or more HP and inflict 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to them.
+Deals (25% of target’s lost HP) extra damage to enemies whose HP is lower than 50% and inflict 1 stack of [c][e28002]Healing Curse[-][/c] to them.
+
+[c][e28002]Chaos Scar[-][/c]:
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 10% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c].
+
+[c][e28002]Healing Curse[-][/c]:
+A Skill Effect.
+Neutralizes next healing effect target receives and deals (100% of Neutralized HP) damage.(Won\'t affect the healing dealt by Servant)"
+2000039000,Land of Seals Boss (Block),Basic Attack,Deals (800% of Attack) damage to 2 random enemies and gains 20% Precision that lasts for 2 rounds.
+2000039010,Land of Seals Boss (Block),Active Skill,"
+Deals (800% of Attack) damage to all enemies and reduces their Block by 20% for 2 rounds. Deals (600% of Attack) extra damage that ignores Armor to 2 random enemies and has a 30% chance to [c][01a310]Freeze[-][/c] them for 2 rounds, a 30% chance to [c][01a310]Petrify[-][/c] them for 2 rounds, and a 30% chance to [c][01a310]Stun[-][/c] them for 2 rounds. This skill will also inflict [c][e28002]Galaxy[-][/c] that lasts for 2 rounds to the targets and grant [c][e28002]Starflare[-][/c] that lasts for 2 rounds to self.
+
+[c][01a310]Freeze[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Petrify[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attack, release their Active Skills, Hunt or Counterattack.
+
+[c][e28002]Galaxy[-][/c]:
+A Skill Effect. When the caster of this Effect takes damage, the enemy tagged with [c][e28002]Galaxy[-][/c] will also receive 25% of damage taken. When the caster is tagged with a debuff, there is a 15% chance that the enemy tagged with [c][e28002]Galaxy[-][/c] will receive the same effect. When the caster is defeated, the [c][e28002]Galaxy[-][/c] Effect the caster has inflicted to the enemy will be removed.
+
+[c][e28002]Starflare[-][/c]:
+A Skill Effect that cannot stack.
+Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
