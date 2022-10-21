@@ -220,6 +220,7 @@ function SoulEquipInfoWindow:register()
 					self.content2_2Con:changeFilterPos(i)
 				end
 
+				self.content3:SetActive(false)
 				self:updateTopGroup()
 				self:updateContent2()
 				self:checkOpenItemTips(i)
@@ -300,6 +301,16 @@ function SoulEquipInfoWindow:updateTopGroup()
 
 		self.labelCombinationName.text = self.curCombinationModeData.name
 		equips = self.curCombinationModeData.equips
+
+		for i = 1, 5 do
+			if equips[i] then
+				local id = equips[i]:getSoulEquipID()
+
+				if not xyd.models.slot:getSoulEquip(id) then
+					equips[i] = nil
+				end
+			end
+		end
 	elseif self.curSelectCombinationID then
 		self.labelCombinationMode:SetActive(false)
 		self.btnSaveCombination:SetActive(false)

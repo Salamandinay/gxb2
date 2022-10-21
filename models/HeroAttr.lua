@@ -757,7 +757,7 @@ function HeroAttr:getSouls(souls)
 		end
 	end
 
-	for i = 2, #souls do
+	for i = 2, 5 do
 		local soul = souls[i]
 
 		if soul and soul.table_id then

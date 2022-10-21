@@ -950,7 +950,7 @@ function Partner:getInfo()
 		potentials_bak = self.potentials_bak,
 		treasures = self.treasures,
 		star_origin = self.star_origin,
-		souls = self.souls
+		soul_infos = self.souls
 	}
 end
 
@@ -1151,11 +1151,13 @@ function Partner:setSoulEquips(souls)
 	self.souls_data = souls or {}
 	local result = {}
 
-	for k, v in ipairs(self.souls_data) do
-		if v == 0 then
+	for i = 1, 5 do
+		local data = self.souls_data[i] or 0
+
+		if data == 0 then
 			table.insert(result, {})
-		elseif xyd.models.slot:getSoulEquip(v) then
-			table.insert(result, xyd.models.slot:getSoulEquip(v):getParams())
+		elseif xyd.models.slot:getSoulEquip(data) then
+			table.insert(result, xyd.models.slot:getSoulEquip(data):getParams())
 		else
 			table.insert(result, {})
 		end

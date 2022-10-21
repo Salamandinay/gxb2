@@ -497,31 +497,15 @@ end
 function SoulLand:onItemChangeBack(event)
 	local cost1 = xyd.tables.soulLandEquip2GachaTable:getCost(1)
 	local cost2 = xyd.tables.soulLandEquip2GachaTable:getCost(2)
+	local hasTen = false
 
-	if event then
-		local items = event.data.items
-		local isHasSummonCostTen = false
-
-		for i = 1, #items do
-			if (items[i].item_id == cost1[1] or items[i].item_id == cost2[1]) and xyd.models.backpack:getItemNumByID(items[i].item_id) >= 10 then
-				isHasSummonCostTen = true
-
-				break
-			end
-		end
-
-		xyd.models.redMark:setMark(xyd.RedMarkType.SOUL_LAND_SUMMON_TEN, isHasSummonCostTen)
-	else
-		local hasTen = false
-
-		if xyd.models.backpack:getItemNumByID(cost1[1]) >= 10 then
-			hasTen = true
-		elseif xyd.models.backpack:getItemNumByID(cost2[1]) >= 10 then
-			hasTen = true
-		end
-
-		xyd.models.redMark:setMark(xyd.RedMarkType.SOUL_LAND_SUMMON_TEN, hasTen)
+	if xyd.models.backpack:getItemNumByID(cost1[1]) >= 10 then
+		hasTen = true
+	elseif xyd.models.backpack:getItemNumByID(cost2[1]) >= 10 then
+		hasTen = true
 	end
+
+	xyd.models.redMark:setMark(xyd.RedMarkType.SOUL_LAND_SUMMON_TEN, hasTen)
 end
 
 return SoulLand

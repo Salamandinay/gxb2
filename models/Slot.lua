@@ -2868,6 +2868,8 @@ function Slot:oGetNewSoulEquipPushBack(event)
 
 		if self.newEquipDealInfo and self.newEquipDealInfo.mid == data.mid then
 			self.newEquipDealInfo.equipDealFun()
+
+			self.newEquipDealInfo = nil
 		end
 	end
 end

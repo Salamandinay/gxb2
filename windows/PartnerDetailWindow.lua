@@ -540,7 +540,7 @@ function PartnerDetailWindow:checkPartnerBackBtn()
 end
 
 function PartnerDetailWindow:checkSoulEquipBtn()
-	if self.partner_:getLevel() >= 270 then
+	if xyd.tables.miscTable:getNumber("soul_equip_open_lvl", "value") <= self.partner_:getLevel() then
 		self.btnSoulEquip:SetActive(true)
 
 		self.btnSoulEquip:ComponentByName("label", typeof(UILabel)).text = __("SOUL_EQUIP_TEXT90")
@@ -1006,7 +1006,7 @@ function PartnerDetailWindow:registerEvent()
 			return
 		end
 
-		if self.partner_:getLevel() < 270 then
+		if self.partner_:getLevel() < xyd.tables.miscTable:getNumber("soul_equip_open_lvl", "value") then
 			xyd.alertTips(__("error"))
 
 			return
@@ -4982,12 +4982,16 @@ function PartnerDetailWindow:checkSoulEquipGuide()
 		return
 	end
 
+	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
 	local isHasGoSoulEquipGuide = xyd.db.misc:getValue("is_has_go_soul_equip_guide")
 
 	if isHasGoSoulEquipGuide and tonumber(isHasGoSoulEquipGuide) == 1 then
 		return
 	else
-		if self.partner_:getLevel() < 270 then
+		if self.partner_:getLevel() < xyd.tables.miscTable:getNumber("soul_equip_open_lvl", "value") then
 			return
 		end
 
