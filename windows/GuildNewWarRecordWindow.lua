@@ -223,7 +223,7 @@ function GuildNewWarRecordItem:updateInfo()
 	self.labelPoint1.text = scoreSelf
 	self.labelPoint2.text = scoreEnemy
 
-	if params.is_win == 1 then
+	if params.is_win == true then
 		self.currentState = "win"
 
 		self:setState("win")

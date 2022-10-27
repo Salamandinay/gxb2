@@ -59,7 +59,7 @@ id,name,from,content
 58,Gildenkampf Finale Runde,Systembenachrichtigung,Herzlichen Glückwunsch! Deine Gilde belegte in der Endrunde des Gildenkriegs Platz {1}. Hier sind deine Belohnungen!
 59,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Zweitplatzierte in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
 60,Gildenkampf Finale Runde,Systembenachrichtigung,"Herzlichen Glückwunsch! Deine Gilde war der Champion in der Finalrunde des Gildenkrieges! Hier ist dein Preis, um dein Können und deine Tapferkeit zu belohnen!"
-61,Grußkarte zum 4. Jubiläum,Systembenachrichtigung,Du bist ein Lv.{1} Spieler und heute erhältst du die folgenden Belohnungen. Deine Grußkarte zum 4. Jubiläum läuft in {3} Tag(en) ab!
+61,Grußkarte zu Halloween,Systembenachrichtigung,Du bist ein Lv.{1} Spieler und heute erhältst du die folgenden Belohnungen. Deine Grußkarte zu Halloween läuft in {3} Tag(en) ab!
 62,Monatskarten-Verlängerung erfolgreich,Monatskarte,"Vielen Dank, dass du deine Monatskarte verlängert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 63,Mini Monatskarten-Verländerung erfolgreich,Mini Monatskarte,"Vielen Dank, dass du deine Mini Monatskarte erneuert hast. Dein aktuelles Abonnement läuft in {1} Tagen ab."
 64,Puzzleevent,Event Mail,Herzliche Glückwünsche! Du hast {1} Puzzles abgeschlossen. Du hast die folgenden Belohnungen verdient!
@@ -308,3 +308,8 @@ GXB2 Entwicklungsteam"
 263,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Schließe 3 Kämpfe in der Arena ab ({1}/10)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"
 264,Belohnungen zu Pollys To-Do-Liste,Event-Mail,"Gratuliere, du hast die Aufgabe ""Verwende 10 Stempel ({1}/10)"" in Pollys To-Do-Liste abgeschlossen und folgende Belohnungen erhalten!"
 265,Belohnungen zu Pass für Seelensammler,Systembenachrichtigung,"Liebe(r) Senpai,\n\ndie letzte Saison vom ""Land der Seelen"" wurde bereits beendet. Die mittlerweile nicht gesammelten Belohnungen werden nachträglich gesendet. Bitte sammle sie ein!"
+268,Galaxisreise endet bald!,Systembenachrichtigung,"Liebe(r) Senpai,\n\ndie Erkundungsphase der aktuellen Saison der Galaxisreise endet in 24 Stunden. Erkunde schnell noch mehr Gebiete in der Galaxis!"
+266,Belohnungen zur Schnitzerei,Systembenachrichtigung,"Gratuliere, du hast im Event ""Kürbislaterne"" {1} {2}se geschnitzt und folgende Belohnungen erhalten!"
+267,Beitragsbelohnung zur Schnitzerei,Systembenachrichtigung,"Gratuliere, du hast im Event ""Kürbislaterne"" den {1}. Platz auf der Beitragsrangliste belegt und folgende Belohnungen erhalten!"
+269,Tägliche Belohnungen,Systembenachrichtigung,"Melde dich während der Events an, um täglich Super Kapselmünze *3 und Kürbisdolch *5 zu erhalten. Hier sind deine Belohnungen."
+270,Aufladeprämien,Event-Mail,"Gratuliere, du hast {1} VIP-EXP erhalten und folgende Belohnungen im Event ""Aufladeprämien"" erhalten!"

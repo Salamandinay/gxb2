@@ -314,7 +314,13 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_PIRATE] = require("app.models.datas.ActivityPirateData"),
 	[xyd.ActivityID.ACTIVITY_PIRATE_SHOP] = require("app.models.datas.ActivityPirateShopData"),
 	[xyd.ActivityID.ACTIVITY_2LOVE] = require("app.models.datas.Activity2LoveData"),
-	[xyd.ActivityID.SOUL_LAND_BATTLE_PASS] = require("app.models.datas.SoulLandBattlePassData")
+	[xyd.ActivityID.SOUL_LAND_BATTLE_PASS] = require("app.models.datas.SoulLandBattlePassData"),
+	[xyd.ActivityID.ACTIVITY_RELAY_GIFT_NEW] = require("app.models.datas.ActivityRelayGiftNewData"),
+	[xyd.ActivityID.ACTIVITY_HW2022] = require("app.models.datas.ActivityHw2022Data"),
+	[xyd.ActivityID.ACTIVITY_LIMIT_CULTIVATE] = require("app.models.datas.ActivityLimitCultivateData"),
+	[xyd.ActivityID.ACTIVITY_HW2022_SHOP] = require("app.models.datas.ActivityHw2022ShopData"),
+	[xyd.ActivityID.ACTIVITY_HW2022_SUPPLY] = require("app.models.datas.ActivityHw2022SupplyData"),
+	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = require("app.models.datas.ActivityPromotionLadder2Data")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

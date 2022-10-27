@@ -62,6 +62,7 @@ function ChoosePartnerWindow:ctor(name, params)
 	self.showBtnDebris = params.showBtnDebris
 	self.showBaoxiang = params.showBaoxiang
 	self.notShowGetWayBtn = params.notShowGetWayBtn
+	self.titleText = params.titleText
 
 	for _, id in pairs(self.selected) do
 		self.choosePartners[id] = true
@@ -93,7 +94,7 @@ function ChoosePartnerWindow:initWindow()
 	self:getUIComponent()
 	self:initDebrisBtn()
 
-	self.title.text = __("CHOOSE_MATERIAL_PARTNER")
+	self.title.text = self.titleText or __("CHOOSE_MATERIAL_PARTNER")
 	self.btnYesLabel.text = __("CONFIRM")
 
 	xyd.setBgColorType(self.btnYes, xyd.ButtonBgColorType.blue_btn_70_70)
@@ -386,7 +387,7 @@ function ChoosePartnerWindow:addPartnerToContainer(partner)
 
 		local choose = self.choosePartners[partnerID]
 
-		if not choose and (self.type_ == "ACTIVITY_PROMOTION_LADDER" or self.type_ == "ACTIVITY_FREE_REVERGE" or self.type_ == "ACTIVITY_FOOD_CONSUME") and self.needNum <= #self.selected then
+		if not choose and (self.type_ == "ACTIVITY_PROMOTION_LADDER" or self.type_ == "ACTIVITY_FREE_REVERGE" or self.type_ == "ACTIVITY_FOOD_CONSUME" or self.type_ == "ACTIVITY_PROMOTION_LADDER2") and self.needNum <= #self.selected then
 			self:clearChoose()
 		end
 

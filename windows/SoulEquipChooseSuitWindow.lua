@@ -226,6 +226,11 @@ function SoulEquipChooseSuitCompleteItem:updateInfo(index)
 	self.labelHaveNum.text = "x" .. self.data.hasNum
 
 	xyd.setUISpriteAsync(self.icon, nil, xyd.tables.soulEquip2GroupTable:getIcon(self.data.suitID))
+
+	if xyd.Global.lang == "fr_fr" then
+		self.labelSkillDesc.fontSize = 18
+	end
+
 	self:checkChoose()
 end
 

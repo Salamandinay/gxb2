@@ -290,7 +290,7 @@ function Summon:getBaodiEnergyNum()
 end
 
 function Summon:getLimitTenScrollId()
-	local summonGiftData = xyd.models.activity:getActivity(xyd.ActivityID.NEW_SUMMON_GIFTBAG)
+	local summonGiftData = xyd.models.activity:getActivity(xyd.ActivityID.WISH_CAPSULE)
 
 	if summonGiftData and xyd.getServerTime() < summonGiftData:getEndTime() then
 		local costData = SummonTable:getCost(xyd.SummonType.ACT_LIMIT_TEN)

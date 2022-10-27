@@ -61,12 +61,12 @@ end
 function ActivityFoodFestivalExchangeWindow:initResItem()
 	if #self.costs == 1 then
 		local data = self.costs[1]
-		local sprite = xyd.tables.itemTable:getIcon(data[1]) .. "_small"
+		local sprite = xyd.tables.itemTable:getIcon(data[1])
 		local uiSprite = self.groupRes:ComponentByName("resItem", typeof(UISprite))
 		local hasNum = Backpack:getItemNumByID(data[1])
 
 		xyd.setUISpriteAsync(uiSprite, nil, sprite, function ()
-		end, false, true)
+		end, false)
 
 		self.curNum_ = math.floor(hasNum / data[2])
 
@@ -86,12 +86,12 @@ function ActivityFoodFestivalExchangeWindow:initResItem()
 	elseif #self.costs == 2 then
 		for i = 1, 2 do
 			local data = self.costs[i]
-			local sprite = xyd.tables.itemTable:getIcon(data[1]) .. "_small"
+			local sprite = xyd.tables.itemTable:getIcon(data[1])
 			local uiSprite = self["groupRes" .. i]:ComponentByName("resItem", typeof(UISprite))
 			local hasNum = Backpack:getItemNumByID(data[1])
 
 			xyd.setUISpriteAsync(uiSprite, nil, sprite, function ()
-			end, false, true)
+			end, false)
 
 			self.curNum_ = math.floor(hasNum / data[2])
 
@@ -110,12 +110,12 @@ function ActivityFoodFestivalExchangeWindow:initResItem()
 		self.btnCompose_:Y(-110)
 	elseif #self.costs == 3 then
 		local data = self.costs[1]
-		local sprite = xyd.tables.itemTable:getIcon(data[1]) .. "_small"
+		local sprite = xyd.tables.itemTable:getIcon(data[1])
 		local uiSprite = self.groupRes:ComponentByName("resItem", typeof(UISprite))
 		local hasNum = Backpack:getItemNumByID(data[1])
 
 		xyd.setUISpriteAsync(uiSprite, nil, sprite, function ()
-		end, false, true)
+		end, false)
 
 		self.curNum_ = math.floor(hasNum / data[2])
 
@@ -127,12 +127,12 @@ function ActivityFoodFestivalExchangeWindow:initResItem()
 
 		for i = 1, 2 do
 			local data = self.costs[i + 1]
-			local sprite = xyd.tables.itemTable:getIcon(data[1]) .. "_small"
+			local sprite = xyd.tables.itemTable:getIcon(data[1])
 			local uiSprite = self["groupRes" .. i]:ComponentByName("resItem", typeof(UISprite))
 			local hasNum = Backpack:getItemNumByID(data[1])
 
 			xyd.setUISpriteAsync(uiSprite, nil, sprite, function ()
-			end, false, true)
+			end, false)
 
 			self.curNum_ = math.floor(hasNum / data[2])
 

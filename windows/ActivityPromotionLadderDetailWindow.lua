@@ -1,7 +1,6 @@
 local BaseWindow = import(".BaseWindow")
 local ActivityPromotionLadderDetailWindow = class("ActivityPromotionLadderDetailWindow", BaseWindow)
 local HeroIcon = import("app.components.HeroIcon")
-local activityID = xyd.ActivityID.ACTIVITY_PROMOTION_LADDER
 local costBase = xyd.tables.miscTable:split2Cost("activity_promotion_ladder_basenum", "value", "#")
 local costIncreaseInterval = xyd.tables.miscTable:getNumber("activity_promotion_ladder_interval", "value")
 local costIncrease = xyd.tables.miscTable:split2Cost("activity_promotion_ladder_increasenum", "value", "#")
@@ -10,7 +9,21 @@ local materialPartnerTableID = xyd.tables.miscTable:split2Cost("activity_promoti
 function ActivityPromotionLadderDetailWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
+	local activityID = xyd.ActivityID.ACTIVITY_PROMOTION_LADDER
+
+	if params and params.activityID then
+		activityID = params.activityID
+	end
+
 	self.activityData = xyd.models.activity:getActivity(activityID)
+
+	if activityID == xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2 then
+		activityID = xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2
+		costBase = xyd.tables.miscTable:split2Cost("activity_promotion_ladder_basenum2", "value", "#")
+		costIncreaseInterval = xyd.tables.miscTable:getNumber("activity_promotion_ladder_interval2", "value")
+		costIncrease = xyd.tables.miscTable:split2Cost("activity_promotion_ladder_increasenum2", "value", "#")
+		materialPartnerTableID = xyd.tables.miscTable:split2Cost("activity_promotion_ladder_material2", "value", "|")
+	end
 end
 
 function ActivityPromotionLadderDetailWindow:initWindow()

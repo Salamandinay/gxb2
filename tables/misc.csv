@@ -65,6 +65,7 @@ daily_mail_awards_lost_space,4|50|47,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
+daily_mail_awards_wish,2|59,-1
 partner_force_req_lev,29|39|49|59|79|99|139|159|179|199|249|259|269|289,-1
 friend_energy_cd,7200,-1
 friend_energy_max,10,-1
@@ -490,7 +491,7 @@ activity_privileged_card_trial_rewards,1*2000|15*2000,-1
 activity_privileged_card_dungeon_rewards,1*1000|2*1000|10*1000|26*1000|27*1000,-1
 activity_privileged_card_dungeon_drugs,2,-1
 activity_birthday_colour_progress_bit,0.1,-1
-merge_server_now_next,586|602|1963570800,-1
+merge_server_now_next,586|602|1667804400,-1
 activity_privileged_card_ui_type,0#0|1#0,-1
 arena_revenge_cd,300,-1
 activity_swimsuit_cost,154#1,-1
@@ -518,7 +519,7 @@ house_furniture_type_num,10,-1
 activity_fairytale_energy_init,166#10,-1
 activity_fairytale_energy_cd,7200,-1
 activity_fairytale_energy_max,10,-1
-wish_gacha_partners,51018|51017|51016|51015|52018|52017|52016|52015|53018|53017|53016|53015|54018|54017|54016|54015|55011|55010|55009|55008|56009|56008|56007|56006,-1
+wish_gacha_partners,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55012|55011|55010|55009|56010|56009|56008|56007,-1
 wish_gacha_dropbox_id,10009,-1
 wish_gacha_weight_ini_total,1000000,-1
 wish_gacha_weight_ini_get,100,-1
@@ -557,7 +558,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,ailishe_pifu01_lihui01|475|-1987|0.7|75700202|7310,-1
+activity_147_hero_model,ansuna_pifu01_lihui01|586|-2084|0.7|5202002|7315,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -702,8 +703,8 @@ partner_equip_job2,1269|2269|3269|4269,-1
 partner_equip_job3,1369|2369|3369|4369,-1
 partner_equip_job4,1469|2469|3469|4469,-1
 partner_equip_job5,1569|2569|3569|4569,-1
-guild_competition_boss_model,756009|757002|751019,-1
-guild_competition_frame_time,1666569600,-1
+guild_competition_boss_model,757003|755009|752020,-1
+guild_competition_frame_time,1670198400,-1
 activity_puppet_item,217,-1
 pet_exskill_open_level,120,-1
 bp_lottery_cost,221#50,-1
@@ -830,7 +831,7 @@ dress_common_fragment_qlt_item_ids,3999991|3999992|3999993|3999994|3999995|39999
 dress_gacha_show,3101171|3101177|3101183|3101189|3101195,-1
 dress_gacha_free1,86400|1,-1
 dress_gacha_free2,43200|1,-1
-activity_equip_decompose,262|60000|6000,-1
+activity_equip_decompose,262|999999999999|6000,-1
 activity_warmup_arena_score_start,0,-1
 activity_warmup_arena_awards_rank,0,-1
 activity_warmup_arena_awards,8063#1,-1
@@ -840,7 +841,7 @@ activity_warmup_arena_buy_costs,2#20,-1
 activity_warmup_arena_partners,752020,-1
 activity_warmup_arena_revenge,1,-1
 guild_quick_order_open,5,-1
-gacha_10drawcard_endtime,1665100800,-1
+gacha_10drawcard_endtime,1667520000,-1
 dress_gacha_activity_show,40,-1
 activity_equip_exchange_cost,268#3|268#6|268#9|268#12,-1
 activity_equip_exchange_6,1166|2166|3166|4166#1266|2266|3266|4266#1366|2366|3366|4366#1466|2466|3466|4466#1566|2566|3566|4566,-1
@@ -1093,7 +1094,7 @@ activity_lost_space_buy_limit,40,-1
 activity_lost_space_plot,5875,-1
 skill_resonate_reset_cost,2#500,-1
 star_origin_reset_cost,2#500,-1
-partner_group7_summon,10270|10276,-1
+partner_group7_summon,10270|10276|10280,-1
 star_origin_drawcard_endtime,1661472000,-1
 skill_resonate_level_limit,0|0|1|1|3|3|5|5|7|-1,-1
 starry_altar_open_time,1653004800,-1
@@ -1203,7 +1204,7 @@ galaxy_trip_boss_max_level,5|5|20,-1
 galaxy_trip_stop_time_limit,10,-1
 galaxy_trip_black_hole_open_time,1661472000,-1
 galaxy_trip_mail,86400|268,-1
-partner_group7_summon_time,757002#1660867200,-1
+partner_group7_summon_time,757003#1666915200,-1
 legendary_skin_giftbag_limit,2,-1
 legendary_skin_giftbag_cost,2#2000@403#10|36#4,-1
 activity_legendary_skin_cost,403#1,-1
@@ -1213,7 +1214,7 @@ invitation_senpai_num,10,-1
 invitation_new,70,-1
 invitation_new_awards,2#10|35#10,-1
 invitation_daily_gift,1#100000|9#100000,-1
-invitation_delete_day,7,-1
+invitation_delete_day,30,-1
 invitation_weekly_share_awards,2#100,-1
 gacha_ensure_guarantee_star5_times,4,-1
 gacha_ensure_guarantee_star5_dropbox1,10013,-1
@@ -1289,10 +1290,20 @@ soul_land_start_time,1666310400,-1
 soul_land_award_time_max,86400,-1
 soul_land_open_lvl,200,-1
 soul_equip2_qlt_cost,2#500,-1
-activity_halloween2022_insure,10,-1
-activity_halloween2022_point,431#1|432#1|433#1,-1
-activity_halloween2022_limit_max,260000,-1
+activity_halloween2022_insure,9,-1
+activity_halloween2022_point,431#1|432#5|433#25,-1
+activity_halloween2022_limit_max,20000000,-1
 activity_halloween2022_get,433,-1
 activity_halloween2022_gamble_max,20,-1
 activity_5week_cost,434#1,-1
 soul_land_cycle_time,2419200,-1
+activity_promotion_ladder_material2,52020|51019|53019|55012|56010,-1
+activity_promotion_ladder_target2,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55012|55011|55010|55009|56010|56009|56008|56007,-1
+activity_promotion_ladder_star2,5#1|6#2|7#2|8#2|9#3|10#5|11#6|12#7|13#7|14#8|15#9,-1
+activity_promotion_ladder_basenum2,341#10,-1
+activity_promotion_ladder_interval2,9,-1
+activity_promotion_ladder_increasenum2,341#5,-1
+activity_promotion_ladder_picture2,partner_picture_52020#0.6#-155#-547,-1
+activity_blind_box_cost,438#1,-1
+activity_blind_box_select_num,1|1|3|3,-1
+activity_blind_box_guarantee_time,9,-1

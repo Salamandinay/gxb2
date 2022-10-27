@@ -199,6 +199,8 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1197,battle_sound_web/sound_luolanweiya_skill,3,1,1,0,1,,50,1,,1
 1198,battle_sound_web/sound_ansuna_attack,2,1,1,0,1,,75,1,,1
 1199,battle_sound_web/sound_ansuna_skill,3,1,1,0,1,,75,1,,1
+1200,battle_sound_web/sound_aifei_attack,2,1,1,0,1,,75,1,,1
+1201,battle_sound_web/sound_aifei_skill,4,1,1,0,1,,75,1,,1
 2001,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
 2002,ui_sound/battle_bg_music_1,21,0,,0,2,-1,30,0,,
 2003,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
@@ -4998,5 +5000,3 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 530132601,partner_sound/53013_web/530132601,6,1,0,0,1,0,70,1,0.2,
 530132801,partner_sound/53013_web/530132801,8,1,0,0,1,0,70,1,0.2,
 530140201,partner_sound/53014_web/530140201,7,1,0,0,1,0,70,1,0.2,
-530140202,partner_sound/53014_web/530140202,9,1,0,0,1,0,70,1,0.2,
-530140203,partner_sound/53014_web/530140203,13,1,0,0,1,0,70,1,0.2,

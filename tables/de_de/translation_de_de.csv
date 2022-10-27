@@ -4847,7 +4847,7 @@ Pinke 1-Stern-Antiquität = orangene 6-Stern-Antiquität (gleicher Typ) + orange
 
 Pinke 2-Sterne-Antiquität = Pinke 1-Stern-Antiquität (gleicher Typ) + orangene Antiquität (gleicher Typ) mit beliebigem Sternenlevel + 10 000 Saphire
 
-Pinke 3-Sterne-Antiquität = Pinke 2-Sterne-Antiquität (gleicher Typ) + orangene Antiquität (gleicher Typ) mit beliebigem Sternenlevel + 14 000 Saphire.|3. Wählst du eine orangene Antiquität als Material, dessen Sternelevel höher als 1 beträgt, erhältst du alle für das Aufleveln dieser Antiquität aufgewendeten Ressourcen (in Form von Entwicklungstränken) zurück.|4.Saphire können durch das Aufbrechen von Antiquitäten erhalten werden (pinke Antiquitäten können nicht aufgebrochen werden).|5. Die Anzahl der Saphire, die man in einem Eventzeitraum erhalten kann, ist auf 60 000 beschränkt. Alles was darüber hinausgeht, wird automatisch 1:1 in Entwicklungstränke umgewandelt.|6. Verbesserte pinke Antiquitäten können auch wieder zurückgesetzt werden. Dabei erhält man auch die dafür aufgewendeten Materialien zurück."
+Pinke 3-Sterne-Antiquität = Pinke 2-Sterne-Antiquität (gleicher Typ) + orangene Antiquität (gleicher Typ) mit beliebigem Sternenlevel + 14 000 Saphire.|3. Wählst du eine orangene Antiquität als Material, dessen Sternelevel höher als 1 beträgt, erhältst du alle für das Aufleveln dieser Antiquität aufgewendeten Ressourcen (in Form von Entwicklungstränken) zurück.|4.Saphire können durch das Aufbrechen von Antiquitäten erhalten werden (pinke Antiquitäten können nicht aufgebrochen werden).|5. Verbesserte pinke Antiquitäten können auch wieder zurückgesetzt werden. Dabei erhält man auch die dafür aufgewendeten Materialien zurück."
 ACTIVITY_ANTIQUE_LEVELUP_TEXT01,Verbessern
 ACTIVITY_ANTIQUE_LEVELUP_TEXT02,Zurücksetzen
 ACTIVITY_ANTIQUE_LEVELUP_TEXT03,Antiquität wählen
@@ -6080,7 +6080,7 @@ ACTIVITY_CLOCK_SHOW_TEXT04,Ultimative Beloh.
 ACTIVITY_CLOCK_SHOW_TEXT05,Runde {1}
 ACTIVITY_CLOCK_AWARD_GET,Du hast alle ultimativen Belohnungen dieser Runde erhalten. Alle restlichen Belohnungen dieser Runde erhältst du auch!
 ACTIVITY_CLOCK_HELP,"1. Verwende deine ""Kleemünzen"", um das Glücksrad drehen zu können und die Belohnungen zu erhalten. Wird nur ein Zeiger aktiviert, dann wird für jedes Drehen 1 Kleemünze verwendet. Werden mehrere Zeiger aktiviert, dann kannst du auch mehrere Belohungen erhalten. Dementsprechend werden auch weitere Kleemünzen verwendet.|2. Auf dem Glücksrad gibt es normale und ultimativen Belohnungen. Die normalen Belohnungen können wiederholt erhalten werden. (In der Mitte des Glücksrads wird gezeigt, wievielmal die jeweiligen normalen Belohnungen noch erhalten werden können.) Jede ultimative Belohnung kann nur einmal erhalten werden. Sobald du alle ultiamtiven Belohnungen einer Runde erhalten hast, erhältst du direkt die restlichen normalen Belohnungen.|3. Sobald du alle Belohnungen erhalten hast, wird die nächste Runde entsperrt. Es gibt insgesamt 5 Runden und ab der 5. Runde werden die selben Belohnungen eingestellt.|4. Entsprechend der Menge an verwendeten Kleemünzen werden noch weitere Belohnungen gegeben.|5. Erhalten der Kleemünzen: Tägliche Mail, Superpakete, Kostümpakete, Glückspakete, Aprilaufgaben, Aprilscherz, Lottoevent und Geschenk zum Monatsanfang.|6. Nach dem Ende des Events werden die noch nicht verwendeten Kleemünzen automatisch per Mail recycelt. Jede Kleemünze entspricht 20K Münzen."
-ACTIVITY_CLOCK_TASK,"Schließe die Aufgaben ab, um Kleemünzen zum Glücksrad zu erhalten!"
+ACTIVITY_CLOCK_TASK,"Schließe die Aufgaben ab, um Materialien zum Kürbis-Schnitzen zu sammeln."
 ACTIVITY_CLOCK_TITLE,Der erste\nApril
 ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Belohnungsvorschau
 ACTIVITY_CLOCK_TEXT02,Belohnung
@@ -7121,12 +7121,12 @@ SHRINE_HURDLE_AUTO_TEXT07,Aufstellen
 SHRINE_HURDLE_AUTO_TEXT08,Starten
 INVITATION_ENTRANCE,Einladen
 INVITATION_SWITCH,Wechseln
-INVITATION_HELP,"Einladung zur Einschulung|1. Spieler, die das 20. Kapitel des Tagebuchs abgeschlossen hat, kann als Senior mit Neulingen verbunden werden. Teile den Einladungscode und schließe eine Verbindung mit den Neulingen (Niedriger als Lv.70) ab, um reichhaltige Belohnungen zu erhalten. Haben die Neulinge die Ziele verschiedener Phasen erreicht, erhält der Senior noch eine zusätzliche Belohnung.|2. Ein Senior kann maximal mit 10 Neulingen verbunden werden. Erst wenn der Neuling sich für 7 Tage nicht angemeldet hat, kann die Verbindung entfernt werden. Die mit demselben Benutzernamen erstellten Konten können nicht miteinander verbunden werden, auch wenn sie auf verschiedenen Servern gespielt werden.|3. Täglich kann der Senior den Neulingen ein Geschenk senden.|4. Beim wöchentlichen ersten Teilen des Einladungscodes werden Dias als Belohnungen gegeben und das wird wöchentlich am Montag um 2 Uhr (UTC/GMT plus 2) zurückgesetzt.||Einschulung in die Akademie|1. Spieler unter Lv.70 können den von dem Senior geteilten Einladungscode eingeben, um mit dem Senior zu verbinden und eine Belohnung sofort zu erhalten. Erreiche danach die Ziele verschiedener Phasen, um weitere Belohnungen erhalten zu können."
+INVITATION_HELP,"Einladung zur Einschulung|1. Spieler, die das 20. Kapitel des Tagebuchs abgeschlossen hat, kann als Senior mit Neulingen verbunden werden. Teile den Einladungscode und schließe eine Verbindung mit den Neulingen (Niedriger als Lv.70) ab, um reichhaltige Belohnungen zu erhalten. Haben die Neulinge die Ziele verschiedener Phasen erreicht, erhält der Senior noch eine zusätzliche Belohnung.|2. Ein Senior kann maximal mit 10 Neulingen verbunden werden. Erst wenn der Neuling sich für 30 Tage nicht angemeldet hat, kann die Verbindung entfernt werden. Die mit demselben Benutzernamen erstellten Konten können nicht miteinander verbunden werden, auch wenn sie auf verschiedenen Servern gespielt werden.|3. Täglich kann der Senior den Neulingen ein Geschenk senden.|4. Beim wöchentlichen ersten Teilen des Einladungscodes werden Dias als Belohnungen gegeben und das wird wöchentlich am Montag um 2 Uhr (UTC/GMT plus 2) zurückgesetzt.||Einschulung in die Akademie|1. Spieler unter Lv.70 können den von dem Senior geteilten Einladungscode eingeben, um mit dem Senior zu verbinden und eine Belohnung sofort zu erhalten. Erreiche danach die Ziele verschiedener Phasen, um weitere Belohnungen erhalten zu können."
 INVITATION_TEXT01,Liste der Neulinge
 INVITATION_TEXT02,Mein Einladungscode
 INVITATION_TEXT03,Kopieren
 INVITATION_TEXT04,Teilen
-INVITATION_TEXT05,"Erst wenn der Neuling sich für 7 Tage nicht angemeldet hat, kannst du die Verbindung mit ihm entfernen."
+INVITATION_TEXT05,"Erst wenn der Neuling sich für 30 Tage nicht angemeldet hat, kannst du die Verbindung mit ihm entfernen."
 INVITATION_TEXT06,Willst du sicher die Verbindung mit diesem Neuling entfernen?
 INVITATION_TEXT07,Fürs 1. Teilen\nder Woche:
 INVITATION_TEXT08,Mein Senior
@@ -7277,7 +7277,7 @@ QUICK_FORMATION_TEXT26,Nach dem Speichern wird die frühere Aufstellung ersetzt.
 GUILD_NEW_WAR_TEXT78,Wettbewerb endet in:
 QUICK_FORMATION_TEXT27,Stelle mindestens 1 Mädchen auf
 GUILD_NEW_WAR_TEXT79,Keine Rangliste vorhanden
-GUILD_NEW_WAR_HELP02,"1. In allen Basen werden jeweils mehrere Flaggen aufgerichtet und jede Flagge kann von einem Mitglied verteidigt werden. Zu Beginn hat der Verteidiger 200 Energie.|2. Beim Angriff auf den Verteidiger einer Flagge finden 3 aufeinanderfolgende Kämpfe statt. Die Energie des Verteidigers wird bei jedem Angriff um mindestens 5 reduziert und jeder Sieg des Angriffsteams senkt die Energie des Verteidigers um weitere 5.|3. Ist die Energie des Verteidigers auf 0 gefallen, wird er besiegt und die Flagge zerstört. Danach können die anderen Flaggen angegriffen werden. Jeder Angriff reduziert die Widerstandskraft der Flagge um einen bestimmten Wert. Ist die Widerstandskraft der Flagge auf 0 gefallen, gilt sie als zerstört.|4. Sind alle Flaggen einer Basis zerstört, gilt die Basis als erstürmt. Sind alle Basen erstürmt, kann die Angriffsgilde eine beliebige Basis säubern.|5. In der Kampfphase erhältst du täglich 10x die Möglichkeit zu kämpfen, Flaggen anzugreifen und erstürmte Basen zu säubern.|6. Jedes Mal wenn eine gegnerische Mittelbasis erstürmt ist, erhalten alle Mädchen der eigenen Gilde im aktuellen Wettbewerb folgende Buffs: Angriff +10%%, HP +20%%, Reduzierung aller Schäden +10%%. Die Buffs können gestappelt werden und werden nach dem Ende des Wettbewerbs deaktiviert. Sobald die gegnerische Hauptbasis erstürmt ist, werden die jeweiligen erhaltenen Gilden-Punkte für die Dauer des Wettberwerbs um 50 erhöht.|7. Gildenleiter oder Stellvertreter können eine beliebige Basis als Hauptziel zum Sturmangriff bestimmen. Beim Angriff gegen diese Basis werden alle Schäden aller Mädchen der Gilde um 10%% erhöht. Nachdem eine Basis als Hauptziel für einen Sturmangriff bestimmt wurde, muss die Gilde 12 Stunden warten, um die Basis zu wechseln."
+GUILD_NEW_WAR_HELP02,"1. In allen Basen werden jeweils mehrere Flaggen aufgerichtet und jede Flagge kann von einem Mitglied verteidigt werden. Zu Beginn hat der Verteidiger 200 Energie.|2. Beim Angriff auf den Verteidiger einer Flagge finden 3 aufeinanderfolgende Kämpfe statt. Die Energie des Verteidigers wird bei jedem Angriff um mindestens 5 reduziert und jeder Sieg des Angriffsteams senkt die Energie des Verteidigers um weitere 5.|3. Ist die Energie des Verteidigers auf 0 gefallen, wird er besiegt und die Flagge zerstört. Danach können die anderen Flaggen angegriffen werden. Jeder Angriff reduziert die Widerstandskraft der Flagge um einen bestimmten Wert. Ist die Widerstandskraft der Flagge auf 0 gefallen, gilt sie als zerstört.|4. Sind alle Flaggen einer Basis zerstört, gilt die Basis als erstürmt. Sind alle Basen erstürmt, kann die Angriffsgilde eine beliebige Basis säubern.|5. In der Kampfphase erhältst du täglich 10x die Möglichkeit zu kämpfen, Flaggen anzugreifen und erstürmte Basen zu säubern, nachdem du das Event betreten hast.|6. Jedes Mal wenn eine gegnerische Mittelbasis erstürmt ist, erhalten alle Mädchen der eigenen Gilde im aktuellen Wettbewerb folgende Buffs: Angriff +10%%, HP +20%%, Reduzierung aller Schäden +10%%. Die Buffs können gestappelt werden und werden nach dem Ende des Wettbewerbs deaktiviert. Sobald die gegnerische Hauptbasis erstürmt ist, werden die jeweiligen erhaltenen Gilden-Punkte für die Dauer des Wettberwerbs um 50 erhöht.|7. Gildenleiter oder Stellvertreter können eine beliebige Basis als Hauptziel zum Sturmangriff bestimmen. Beim Angriff gegen diese Basis werden alle Schäden aller Mädchen der Gilde um 10%% erhöht. Nachdem eine Basis als Hauptziel für einen Sturmangriff bestimmt wurde, muss die Gilde 12 Stunden warten, um die Basis zu wechseln."
 GUILD_NEW_WAR_TEXT80,{1} hat die Flagge Nr.{3} der gegnerischen {2} zerstört
 ACTIVITY_PIRATE_TEXT01,Server-Lesefortschritt
 ACTIVITY_PIRATE_TEXT02,Server-\nPakete
@@ -7488,19 +7488,19 @@ DAILY_QUIZ_TITLE_DESC,Sammle reichhaltige Ressourcen im täglichen Quiz ein
 ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON01,Belohnungen
 ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,Normale Schnitzerei
 ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,Premium Schnitzerei
-ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,如果連續10次高級雕刻都沒有獲得xxx，則第11次必得xxx
-ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,1.消耗xxx可以xxx
-ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,Belohnungen der Kürbislaterne
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,Erhalte mindestens 1 Dämonenkürbis\nin 10 Premium Schnitzereien
+ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,"1. Das Halloween steht vor der Tür und Cupid lädt dich zur Schnitzerei der Kürbislaternen ein!|2. Verwende die Halloween-Kerzen, Kürbisdolche und die Zaubertränke, um die Kürbisse zu schnitzen. Jede Schnitzerei gewährt dir eine zufällige Grundbelohnung und einen zufälligen Kürbis.|3. Die normale Schnitzerei und die Premium Schnitzerei unterscheiden sich voneinander und bietet zum Erwerben der Kürbisse auch verschiedene Wahrscheinlichkeiten. In 10 Premium Schnitzereien erhältst du mindestens 1 Dämonenkürbis.|4. Der Menge an jeweiligen geschnitzten Kürbissen entsprechend werden dir zusätzliche Belohnungen zugeschickt.|5. Die durchs Schnitzen erworbenen Kürbisse geben dir verschiedene Menge an Beitragspunkten. Teufelskürbis entspricht 1 Punkt, Vampire-Kürbis 5 Punkten und Dämonenkürbis 25 Punkten. Basierend auf euren Beitragspunkten werden eine Rangliste erstellt und die entsprechenden Rangbelohnungen nach dem Ende des Events gesendet.|6. Die durchs Schitzen erworbenen Kürbisse können im Event ""Kürbisgeheimnis"" gegen Belohnungen umgetauscht werden.|7. Erhalten der Halloween-Kerzen: Halloween-Abenteuer, Wunschkapsel.\nErhalten der Kürbisdolche: Tägliche Mail, Halloween-Abenteuer, Extra zu Halloween.\nErhalten der Zaubertränke: Entdecker-Pakete, Beitragspakete im Event ""Extra zu Halloween"", Pakete zu Halloween, Geschenk zum Monatsanfang, Superpakete, Kostümpakete, Glückspakete.|8. Nach dem Ende des Events werden die nicht verwendeten Halloween-Kerzen, Kürbisdolche und Zaubertränke automatisch per Mail recycelt. Jede Halloween-Kerze entspricht 500K Münzen, jeder Kürbisdolch 100K und jeder Zaubertrank 1000K."
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,Kürbis-Belohnungen
 ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,Grundbelohnungen
 ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,Schnell schnitzen
 ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,"Gib ein, wievielmal du schnitzen willst"
-ACTIVITY_HALLOWEEN2022_SHOP_HELP,XXXX
+ACTIVITY_HALLOWEEN2022_SHOP_HELP,"1. Die Teufelkürbisse, Vampir-Kürbisse, Dämonenkürbisse und die Zaubertränke können für verschiedene Belohnungen eingetauscht werden.|2. Die drei Kürbisse können im Event ""Kürbislaterne"" erhalten werden."
 ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,Zum Schnitzen
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,Server-Fortschritt
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,Fortschritt
 ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,Gratis
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,Halloween-Pakete
-ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,XXXX
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,全服進度達到xxx時解鎖
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,Beitragspakete
+ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,"1. Die im Event ""Kürbislaterne"" erworbenen Kürbisse geben dir verschiedene Menge an Beitragspunkten. Der Teufelskürbis gibt 1 Punkt, der Vampir-Kürbis 5 Punkten und der Dämonenkürbis 25 Punkten.|2. Sobald die Server-Beitragspunkte eine bestimmte Menge erreicht hat, erhältst du eine gratis Belohnung. Zugleich wird ein extra Beitragspaket zu Halloween entsperrt."
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,Wird bei {1} Server-Beitragspunkten entsperrt
 ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,Das hast du bereits gekauft und kann nicht wiederholt gekauft werden!
 SOUL_LAND_TEXT20,Alle Stufen auf diesem Land sind abgeschlossen
 SOUL_LAND_BATTLEPASS_TEXT11,"Willst du sicher {1} Dias ausgeben, um {2} Pass-Punkt(e) zu kaufen?"
@@ -7526,3 +7526,35 @@ SOUL_EQUIP_TEXT90,Seelen-\n  ausrüstung
 SOUL_EQUIP_TEXT91,Limit der speicherbare Sets erreicht
 NO_SOULEQUIP,Keine Seelenausrüstungen
 SOUL_EQUIP_TEXT92,Genügende Materialien zum Leveln auf max. Level gewählt
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT04,Erhalte {1} {2}se
+ACTIVITY_HALLOWEEN2022_RANK_TEXT01,Beitragsrang
+ACTIVITY_HALLOWEEN2022_RANK_TEXT02,Beitragsbelohnungen
+ACTIVITY_HALLOWEEN2022_RANK_TEXT03,Wird nach dem Ende des Events gesendet
+ACTIVITY_5WEEK_TEXT01,Drehen
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT05,{1} nicht ausreichend!
+ACTIVITY_5WEEK_HELP,"1. Verwende den Glücksschlüssel, um das Rad zu drehen und eine zufällige Belohnung auf dem Rad zu erhalten. (Die gezogenen Belohnungen werden sofort entfernt.)|2. Zusätzliche Belohnungen werden danach gesendet, wievielmal du am Rad gezogen hast.|3. Die Glücksschlüssel können durch Kauf des Pakets ""Wachstums-Booster"" erhalten werden.|4. Nach dem Ende des Events werden die noch nicht verwendeten Glücksschlüssel automatisch per Mail recycelt. Jeder Glücksschlüssel entspricht 100K Münzen."
+ACTIVITY_5WEEK_TEXT02,Fortschritt
+ACTIVITY_5WEEK_TEXT03,Schnell drehen
+ACTIVITY_5WEEK_TEXT04,Gib die Anzahl des Drehens ein
+ACTIVITY_5WEEK_TEXT05,Wachstums-Booster {1}
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT04,Kaufen
+ACTIVITY_HALLOWEEN2022_RANK_TEXT04,Punkte
+ACTIVITY_PROMOTION_LADDER_TEXT13,Wähle das Zielmädchen aus
+ACTIVITY_5WEEK_TEXT06,Du hast alle Belohnungen auf dem Rad erhalten~
+ACTIVITY_BLIND_BOX_TEXT01,Menge: {1}
+ACTIVITY_BLIND_BOX_TEXT02,1 Box öffnen
+ACTIVITY_BLIND_BOX_TEXT03,5 Boxen öffnen
+ACTIVITY_BLIND_BOX_TEXT04,{1}. Stufe - Wähle {2} Belohnungen aus
+ACTIVITY_BLIND_BOX_TEXT05,{1} Runde - Auswahlbelohnung der {2}. Stufe
+ACTIVITY_BLIND_BOX_TEXT06,Wähle die Belohnungen aus
+ACTIVITY_BLIND_BOX_TEXT07,Willst du sicher Belohnungen ziehen? Danach können die Auswahlbelohnungen nicht mehr gewechselt werden.
+ACTIVITY_BLIND_BOX_TEXT08,Willst du sicher zur 2. Runde gehen? Danach können die Auswahlbelohnungen der 1. Runde nicht mehr gezogen werden.
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT01,Insgesamt erhältlich
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT02,Sofortige Belohnungen
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,Einloggen
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT04,Bonus
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT05,Premium
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT06,Luxus
+ACTIVITY_BLIND_BOX_MISSION,Erhalte {1} VIP-EXP
+ACTIVITY_HALLOWEEN2022_TITLE,Frohes\nHalloween
+ACTIVITY_HALLOWEEN2022_RANK_HELP,"1. Die durchs Schnitzen erhaltenen Kürbisse geben dir verschiedene Menge an Beitragspunkten im Event ""Extra zu Halloween"". Teufelskürbis gibt 1 Punkt, Vampir-Kürbis gibt 5 Punkte, Dämonenkürbis gibt 25 Punkte.|2. Euren Beitragspunkten entsprechend werden nach dem Ende des Events die Rangbelohnungen gesendet."

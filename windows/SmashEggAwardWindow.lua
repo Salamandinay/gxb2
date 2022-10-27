@@ -6,6 +6,12 @@ local AwardTable = xyd.tables.activitySmashEggAwardsTable
 
 function SmashEggAwardWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
+
+	self.keyword_ = params.keyword
+
+	if params.award_table then
+		AwardTable = params.award_table
+	end
 end
 
 function SmashEggAwardWindow:initWindow()
@@ -56,6 +62,8 @@ function SmashEggAwardWindow:addTitle()
 end
 
 function AwardItem:ctor(go, parent)
+	self.parent_ = parent
+
 	AwardItem.super.ctor(self, go, parent)
 end
 
@@ -74,8 +82,13 @@ function AwardItem:updateInfo()
 	self.value = self.data.value or 0
 	self.is_completed = self.data.is_completed
 	local value_ = AwardTable:getValue(self.id)
-	local itemId = xyd.tables.activitySmashEggTable:getCost(value_[1])[1]
-	self.labelReadyNum.text = __("DRIFT_BOTTLE_TEXT_06", value_[2], xyd.tables.itemTable:getName(itemId))
+
+	if self.parent_.keyword_ then
+		self.labelReadyNum.text = __(self.parent_.keyword_, value_[2], xyd.tables.itemTable:getName(value_[1]))
+	else
+		local itemId = xyd.tables.activitySmashEggTable:getCost(value_[1])[1]
+		self.labelReadyNum.text = __("DRIFT_BOTTLE_TEXT_06", value_[2], xyd.tables.itemTable:getName(itemId))
+	end
 
 	NGUITools.DestroyChildren(self.awardGroup.transform)
 

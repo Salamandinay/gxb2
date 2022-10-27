@@ -107,6 +107,26 @@ function AlertWindow:bgAnimation(alpha)
 	DG.Tweening.DOTween.ToAlpha(getter, setter, alpha, 2 * xyd.TweenDeltaTime):SetEase(DG.Tweening.Ease.Linear)
 end
 
+function AlertWindow:adjustWindowDepth()
+	local layer = xyd.WindowManager.get():getUILayer(self.layerType_)
+
+	if tolua.isnull(self.window_) or tolua.isnull(layer) then
+		return
+	end
+
+	local minDepth = xyd.LayerType2Depth[self.layerType_] + 21
+
+	assert(minDepth)
+
+	local needDepth = Mathf.Clamp(XYDUtils.GetMaxTargetDepth(layer, false) + 1, minDepth, XYDUtils.MaxInt)
+
+	if self.minDepth_ ~= needDepth then
+		XYDUtils.SetTargetMinPanel(self.window_, needDepth)
+
+		self.minDepth_ = needDepth
+	end
+end
+
 function AlertWindow:initWindow()
 	AlertWindow.super.initWindow(self)
 	self:getUIComponent()

@@ -379,6 +379,12 @@ function ItemTips:initUIComponent()
 		if xyd.tables.itemTable:getType(self.itemID) == xyd.ItemType.HERO_RANDOM_DEBRIS and self.wndType_ == xyd.ItemTipsWndType.BACKPACK then
 			self.labelHasNum_:SetActive(false)
 		end
+
+		local item_type = ItemTable:getType(self.itemID)
+
+		if item_type == xyd.ItemType.SOUL_EQUIP1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS1 or item_type == xyd.ItemType.SOUL_EQUIP2_POS2 or item_type == xyd.ItemType.SOUL_EQUIP2_POS3 or item_type == xyd.ItemType.SOUL_EQUIP2_POS4 then
+			self.labelHasNum_:SetActive(false)
+		end
 	end
 
 	self:initIcon()

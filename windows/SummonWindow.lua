@@ -103,12 +103,6 @@ function SummonWindow:getUIComponent()
 	self.senior_cost_label = self.senior_cost_group:ComponentByName("cost_label", typeof(UILabel))
 	self.act_tips_text = self.groupSenior:ComponentByName("act_tips_text", typeof(UILabel))
 	self.senior_inner_bg = self.groupSenior:ComponentByName("senior_inner_bg", typeof(UIWidget))
-	self.limit_cost_group = self.groupSenior:NodeByName("limit_cost_group").gameObject
-	self.limit_cost_scroll_label = self.limit_cost_group:ComponentByName("cost_label_1", typeof(UILabel))
-	self.limit_cost_ten_label = self.limit_cost_group:ComponentByName("cost_label_2", typeof(UILabel))
-	self.limitBuyBtn = self.limit_cost_group:NodeByName("limitBuyBtn").gameObject
-	self.limitEndBtn = self.limit_cost_group:NodeByName("limitEndBtn").gameObject
-	self.limitEndLabel = self.limit_cost_group:NodeByName("limit_end_label").gameObject
 	self.senior_switch_btn = self.groupSenior:NodeByName("senior_switch_btn").gameObject
 	self.auto_altar_group = self.groupSenior:NodeByName("auto_altar_group").gameObject
 	self.groupSeniorFree = self.groupSenior:NodeByName("groupSeniorFree").gameObject
@@ -116,9 +110,7 @@ function SummonWindow:getUIComponent()
 	self.next_senior_free_countdown = self.groupSenior:ComponentByName("groupSeniorFree/next_senior_free_countdown", typeof(UILabel))
 	self.senior_summon_one = self.groupSenior:NodeByName("senior_summon_one").gameObject
 	self.senior_summon_ten = self.groupSenior:NodeByName("senior_summon_ten").gameObject
-	self.limit_summon_ten = self.groupSenior:NodeByName("limit_summon_ten").gameObject
 	self.senior_cost_group = self.groupSenior:NodeByName("senior_cost_group").gameObject
-	self.groupLimitFree = self.groupSenior:NodeByName("groupLimitFree").gameObject
 	self.activityEntryBtn = self.groupSenior:NodeByName("activityEntryBtn").gameObject
 	self.activityEntryBtn_label = self.groupSenior:ComponentByName("activityEntryBtn/activityEntryBtn_label", typeof(UILabel))
 	self.entryBtn = self.groupSenior:NodeByName("entryBtn").gameObject
@@ -142,6 +134,16 @@ function SummonWindow:getUIComponent()
 	self.friend_summon_ten = go:NodeByName("funcGroup/groupFriend/friend_summon_ten").gameObject
 	self.bgBottom_ = go:ComponentByName("bgBottom_", typeof(UIWidget))
 	self.windowMask = go:NodeByName("windowMask").gameObject
+	self.groupWish = go:NodeByName("funcGroup/groupMiddle/groupWish").gameObject
+	self.limit_summon_ten = self.groupWish:NodeByName("limit_summon_ten").gameObject
+	self.groupLimitFree = self.groupWish:NodeByName("groupLimitFree").gameObject
+	self.limit_cost_group = self.groupWish:NodeByName("limit_cost_group").gameObject
+	self.limit_cost_scroll_label = self.limit_cost_group:ComponentByName("cost_label_1", typeof(UILabel))
+	self.limit_cost_ten_label = self.limit_cost_group:ComponentByName("cost_label_2", typeof(UILabel))
+	self.limitBuyBtn = self.limit_cost_group:NodeByName("limitBuyBtn").gameObject
+	self.limitEndBtn = self.limit_cost_group:NodeByName("limitEndBtn").gameObject
+	self.limitEndLabel = self.limit_cost_group:NodeByName("limit_end_label").gameObject
+	self.costBgImg = self.groupWish:NodeByName("costBgImg").gameObject
 end
 
 function SummonWindow:initUIComponent()
@@ -372,6 +374,25 @@ function SummonWindow:onSummonEvent(event)
 	if summon_id == xyd.SummonType.SENIOR_FREE or summon_id == xyd.SummonType.WISH_FREE then
 		xyd.models.summon:updateRedPoint()
 	end
+
+	if summon_id == xyd.SummonType.ACT_LIMIT_TEN then
+		xyd.models.activity:reqActivityByID(xyd.ActivityID.WISH_CAPSULE)
+	end
+
+	self.senior_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+	self.senior_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+
+	if self.wish_summon_one then
+		self.wish_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+	end
+
+	if self.wish_summon_ten then
+		self.wish_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+	end
+
+	self.base_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+	self.base_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
+	self.limit_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = true
 end
 
 function SummonWindow:onItemChange()
@@ -1022,6 +1043,20 @@ function SummonWindow:onSeniorSummon(num, costType)
 end
 
 function SummonWindow:onLimitSummonTen()
+	local wishData = xyd.models.activity:getActivity(xyd.ActivityID.WISH_CAPSULE)
+
+	if wishData == nil or wishData and wishData:getEndTime() < xyd.getServerTime() then
+		xyd.alertTips(__("ACTIVITY_END_YET"))
+
+		return
+	end
+
+	if wishData and wishData.detail and wishData.detail.select_id and wishData.detail.select_id == 0 then
+		xyd.WindowManager.get():openWindow("wish_capsule_select_window")
+
+		return
+	end
+
 	self.collectionBefore = xyd.deepCopy(xyd.models.slot:getCollection())
 	self.isItemChange = false
 	self.isSummon = false
@@ -1216,6 +1251,8 @@ function SummonWindow:initWishGroup(page)
 		self.wishEndLabel.fontSize = 16
 	end
 
+	local limitTenLabel = self.groupLimitFree:ComponentByName("next_senior_free_label", typeof(UILabel))
+	limitTenLabel.text = __("LIMITED_FOR_ACTIVITY")
 	UIEventListener.Get(self.btnLeft_.gameObject).onClick = handler(self, self.onLastPage)
 	UIEventListener.Get(self.btnRight_.gameObject).onClick = handler(self, self.onNextPage)
 
@@ -1399,7 +1436,7 @@ function SummonWindow:playWishHeroEffect()
 	self.wishExchangeBtn:SetActive(true)
 
 	self.probLabel1.text = __("WISH_GACHA_TEXT3")
-	self.psLabel.text = "★" .. __("WISH_GACHA_TEXT10")
+	self.psLabel.text = ""
 	local modelID = xyd.tables.partnerTable:getModelID(tonumber(wishData.detail.select_id))
 	local name = xyd.tables.modelTable:getModelName(modelID)
 	local scale = xyd.tables.modelTable:getScale(modelID)
@@ -1935,8 +1972,6 @@ function SummonWindow:initSummonGiftUIComponent()
 	end
 
 	self.senior_probLabel1.text = __("SUMMON_RATE")
-	local limitTenLabel = self.groupLimitFree:ComponentByName("next_senior_free_label", typeof(UILabel))
-	limitTenLabel.text = __("LIMITED_FOR_ACTIVITY")
 	local endTime = xyd.tables.miscTable:getNumber("gacha_10drawcard_endtime", "value")
 	local nowTime = xyd.getServerTime()
 	local leftTime = endTime - nowTime
@@ -1974,13 +2009,22 @@ end
 
 function SummonWindow:refreshLimitTen(summonIndex)
 	if Summon:getLimitTenScrollNum() > 0 then
-		self.senior_summon_ten:SetActive(false)
-		self.senior_cost_group:SetActive(false)
+		self.wish_summon_ten:SetActive(false)
 
 		local cost = SummonTable:getCost(xyd.SummonType.ACT_LIMIT_TEN)
 
 		self:setSummonBtn(self.limit_summon_ten, cost, __("SUMMON_X_TIME2", 10))
+
+		if self.wish_scroll_label then
+			self.wish_scroll_label.gameObject:SetActive(false)
+		end
+
 		self.limit_summon_ten:SetActive(true)
+
+		if self.costBgImg then
+			self.costBgImg:SetActive(false)
+		end
+
 		self.limit_cost_group:SetActive(true)
 		self.groupLimitFree:SetActive(true)
 		self.seniorBuyBtn_:SetActive(false)
@@ -1995,8 +2039,18 @@ function SummonWindow:refreshLimitTen(summonIndex)
 			self.senior_switch_btn:SetActive(false)
 		end
 	else
-		self.senior_summon_ten:SetActive(true)
-		self.senior_cost_group:SetActive(true)
+		if self.costBgImg then
+			self.costBgImg:SetActive(true)
+		end
+
+		if self.wish_summon_ten then
+			self.wish_summon_ten:SetActive(true)
+		end
+
+		if self.wish_scroll_label then
+			self.wish_scroll_label.gameObject:SetActive(true)
+		end
+
 		self.limit_summon_ten:SetActive(false)
 		self.limit_cost_group:SetActive(false)
 		self.groupLimitFree:SetActive(false)
@@ -2242,6 +2296,21 @@ function SummonWindow:summonPartner(id, times, index)
 end
 
 function SummonWindow:stopClick()
+	self.senior_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	self.senior_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
+	if self.wish_summon_one then
+		self.wish_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	end
+
+	if self.wish_summon_ten then
+		self.wish_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	end
+
+	self.base_summon_one:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	self.base_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+	self.limit_summon_ten:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
+
 	xyd.MainController.get():removeEscListener()
 	self.windowMask:SetActive(true)
 

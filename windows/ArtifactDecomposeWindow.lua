@@ -74,7 +74,7 @@ function ArtifactDecomposeWindow:layout()
 
 	self:getDecomLimit()
 
-	self.countLabel.text = self.decomNum .. "/" .. self.decomLimit
+	self.countLabel.text = self.decomNum
 	self.selectList = {}
 
 	self.item:SetActive(false)
@@ -183,7 +183,7 @@ function ArtifactDecomposeWindow:updateDecomNum(itemID, num, isAdd)
 		self.decomNum = self.decomNum - exp * num / 10
 	end
 
-	self.countLabel.text = self.decomNum .. "/" .. self.decomLimit
+	self.countLabel.text = self.decomNum
 end
 
 function ArtifactDecomposeWindow:getDecomLimit()
@@ -367,13 +367,7 @@ function ArtifactDecomposeWindow:reqDecompose()
 	end
 
 	if #infos > 0 then
-		local tipsStr = nil
-
-		if self.decomLimit > 0 then
-			tipsStr = __("ACTIVITY_ANTIQUE_LEVELUP_TEXT12")
-		else
-			tipsStr = __("ACTIVITY_ANTIQUE_LEVELUP_TEXT15")
-		end
+		local tipsStr = __("ACTIVITY_ANTIQUE_LEVELUP_TEXT12")
 
 		xyd.alert(xyd.AlertType.YES_NO, tipsStr, function (yes)
 			if yes then
@@ -403,7 +397,7 @@ function ArtifactDecomposeWindow:onDecompose(event)
 	local data = xyd.split(xyd.tables.miscTable:getVal("activity_equip_decompose"), "|", true)
 	self.decomLimit = data[2] - trans_num
 	self.decomNum = 0
-	self.countLabel.text = self.decomNum .. "/" .. self.decomLimit
+	self.countLabel.text = self.decomNum
 
 	for i = 1, #self.selectList do
 		local item = self.selectList[i]

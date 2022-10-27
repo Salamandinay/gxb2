@@ -13,3 +13,10 @@ id,name,pr_table_id,level,effect_show,effect
 12,-1,757002,30,sklP#450,sklP#900|free#180|unfree#200
 13,-1,757002,35,free#180,sklP#900|free#360|unfree#200
 14,-1,757002,40,unfree#200,sklP#900|free#360|unfree#400
+15,-1,757003,0,,crit#0|critTime#0|sklP#0
+16,-1,757003,10,crit#300,crit#300|critTime#0|sklP#0
+17,-1,757003,20,critTime#600,crit#300|critTime#600|sklP#0
+18,-1,757003,25,sklP#200,crit#300|critTime#600|sklP#200
+19,-1,757003,30,crit#300,crit#600|critTime#600|sklP#200
+20,-1,757003,35,critTime#600,crit#600|critTime#1200|sklP#200
+21,-1,757003,40,sklP#200,crit#600|critTime#1200|sklP#400

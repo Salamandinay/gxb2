@@ -220,14 +220,6 @@ function StarryAltarWindow:initTop()
 		}
 	}
 
-	if self.isActOpen then
-		local cost = StarryAltarTable:getCost(ACT_SUMMON1_NEWCOST_ID)
-
-		table.insert(items, {
-			id = cost[1]
-		})
-	end
-
 	self.windowTop:setItem(items)
 end
 

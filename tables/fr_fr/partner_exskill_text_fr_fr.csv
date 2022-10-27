@@ -3876,3 +3876,282 @@ Si Melly aide la cible sous la Bénédiction du Dragon à vaincre un ennemi, ell
 752020043,安蘇娜,魅影幽然,"Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.\nLorsqu'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts ({1} de l'Attaque d'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de {2} les Critiques de cet ennemi pendant 2 tours."
 752020044,安蘇娜,魅影幽然,"Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.\nLorsqu'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts ({1} de l'Attaque d'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de {2} les Critiques de cet ennemi pendant 2 tours."
 752020045,安蘇娜,魅影幽然,"Au début de la bataille et à la fin de chaque tour, Asmae a 100% de chance de marquer 2 ennemis aléatoires avec [c][e28002]Plume de Paon[-][/c] pendant 2 tours.\nLorsqu'Asmae subit des dégâts infligés par un ennemi marqué avec [c][e28002]Plume de Paon[-][/c], elle lui infligera des dégâts ({1} de l'Attaque d'Asmae) tout en ignorant son Armure, le marquera avec 2 couches d'[c][01a310]Ensorcellement[-][/c] pendant 2 tours, puis réduira de {2} les Critiques de cet ennemi pendant 2 tours."
+757003102,艾菲,射手之怒,"
+Inflige 816% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 410% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 816% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 51% la Précision, de 51% le Blocage et de 51% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 30,6% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 59,2% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 40,8% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,2% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003103,艾菲,射手之怒,"
+Inflige 832% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 420% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 832% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 52% la Précision, de 52% le Blocage et de 52% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 31,2% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 58,4% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 41,6% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,4% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003104,艾菲,射手之怒,"
+Inflige 848% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 430% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 848% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 53% la Précision, de 53% le Blocage et de 53% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 31,8% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 57,6% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 42,4% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,6% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003105,艾菲,射手之怒,"
+Inflige 864% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 440% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 864% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 54% la Précision, de 54% le Blocage et de 54% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 32,4% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 56,8% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 43,2% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,8% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003106,艾菲,射手之怒,"
+Inflige 880% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 450% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 880% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 55% la Précision, de 55% le Blocage et de 55% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 33% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 56% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 44% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003107,艾菲,射手之怒,"
+Inflige 896% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 460% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 896% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 56% la Précision, de 56% le Blocage et de 56% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 33,6% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 55,2% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 44,8% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,2% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003108,艾菲,射手之怒,"
+Inflige 912% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 470% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 912% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 57% la Précision, de 57% le Blocage et de 57% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 34,2% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 54,4% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 45,6% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,4% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003109,艾菲,射手之怒,"
+Inflige 928% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 480% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 928% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 58% la Précision, de 58% le Blocage et de 58% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 34,8% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 53,6% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 46,4% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,6% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003110,艾菲,射手之怒,"
+Inflige 960% d\'Attaque à tous les ennemis et lance plusieurs attaques (chaque attaque inflige 500% d\'Attaque à la cible) aux ennemis marqués avec [c][e28002]Cadrage Cosmique[-][/c] (3 attaques par défaut, le nombre d\'attaque augmentera de 1 par tour, 5 attaques au maximum, ces attaques ne peuvent pas être affectées par des bonus ou malus de dégâts, ni faire un Coup Critique).
+Si Effie vainc un ennemi marqué avec [c][e28002]Flèche Stellaire[-][/c], elle infligera 960% d\'Attaque à tous les ennemis, en enlevant toutes les [c][e28002]Flèches Stellaires[-][/c] des ennemis non-vaincus, puis marquera ces derniers avec [c][e28002]Proie du Centaure[-][/c] pendant 2 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 60% la Précision, de 60% le Blocage et de 60% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles.
+[c][e28002]Proie du Centaure (Effet de Compétence, non cumulable) :[-][/c]
+Lorsque la cible marquée lance son attaque, elle subira des 36% de ses dégâts infligés (2500% de la valeur de l\'Attaque d\'Effie au maximum). Seulement 2 cibles peuvent être marquées avec Proie du Centaure à la fois.
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 52% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 48% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (12% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum)."
+757003202,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003203,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003204,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003205,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003206,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003207,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003208,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003209,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003210,艾菲,爆裂閃光,"
+Lorsqu\'Effie lance son Attaque Basique, inflige {1} d\'Attaque à l\'ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c] et a {2} de chance de marquer tous les ennemis avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+Au début de la bataille, réduit de {3} ses Critiques et sa limite maximale de Dégâts Critiques de {4} (ses Compétences Passives peuvent infliger des Dégâts Critiques).
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de {5} la Précision, de {5} le Blocage et de {5} l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003302,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (5,5% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 59,2% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 40,8% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,2% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 51% la Précision, de 51% le Blocage et de 51% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003303,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (6% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 58.4% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 41,6% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,4% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 52% la Précision, de 52% le Blocage et de 52% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003304,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (6,5% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 57,6% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 42,4% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,6% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 53% la Précision, de 53% le Blocage et de 53% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003305,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (7% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 56,8% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 43,2% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (10,8% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 54% la Précision, de 54% le Blocage et de 54% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003306,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (7,5% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 56% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 44% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 55% la Précision, de 55% le Blocage et de 55% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003307,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (8% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 55.2% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 44,8% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,2% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 56% la Précision, de 56% le Blocage et de 56% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003308,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (8% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 55.2% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 44,8% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,2% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 56% la Précision, de 56% le Blocage et de 56% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003309,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (9% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 53.6% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 46.4% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,6% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 58% la Précision, de 58% le Blocage et de 58% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003310,艾菲,星光咒印,"
+Au début de chaque tour, Effie marque 1 ennemi aléatoire avec [c][e28002]Flèche Stellaire[-][/c] pendant 2 tours (Effie choisira 1 ennemi qui n\'est pas marqué avec [c][e28002]Flèche Stellaire[-][/c] en priorité) et a 50% de chance de marquer 3 ennemis aléatoires avec [c][e28002]Cadrage Cosmique[-][/c] pendant 2 tours.
+À la fin de chaque tour, Effie inflige des dégâts fixes (9% des PV Max de la cible, 2500% de la valeur de l\'Attaque d\'Effie au maximum) aux ennemis marqués avec [c][e28002]Flèche Stellaire[-][/c] et à 1 ennemi aléatoire.
+
+[c][e28002]Flèche Stellaire (Effet de Compétence, non cumulable) :[-][/c]
+Retarde les effets de Soins. Lorsque la cible est soignée, elle récupère d\'abord 53.6% des Soins reçus, puis après que la [c][e28002]Flèche Stellaire[-][/c] lui ait été enlevée, elle récupèrera les 46.4% restants de Soin.
+Lorsque la cible est attaquée, elle subira également des dégâts fixes (11,6% de ses PV Max, 2500% de la valeur de l\'Attaque d\'Effie au maximum).
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 58% la Précision, de 58% le Blocage et de 58% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003402,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 51% la Précision, de 51% le Blocage et de 51% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003403,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 52% la Précision, de 52% le Blocage et de 52% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003404,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 53% la Précision, de 53% le Blocage et de 53% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003405,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 54% la Précision, de 54% le Blocage et de 54% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003406,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 55% la Précision, de 55% le Blocage et de 55% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003407,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 56% la Précision, de 56% le Blocage et de 56% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003408,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 57% la Précision, de 57% le Blocage et de 57% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003409,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 58% la Précision, de 58% le Blocage et de 58% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
+757003410,艾菲,星光之束,"
+Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][e28002]Cadrage Cosmique[-][/c], l\'alliée ayant l\'Attaque la plus élevée infligera {1} d\'Attaque à cet ennemi, en augmentera de {2} les dégâts infligés par Effie pendant 5 tours.
+
+[c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 60% la Précision, de 60% le Blocage et de 60% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."

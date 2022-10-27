@@ -48,13 +48,9 @@ end
 
 function ActivityMidautumnCard:resizeToParent()
 	ActivityMidautumnCard.super.resizeToParent(self)
-	self:resizePosY(self.bg, 90, 0)
-	self:resizePosY(self.imgTitle, -178, -277)
+	self:resizePosY(self.bg, 30, -5)
+	self:resizePosY(self.imgTitle, -180, -260)
 	self:resizePosY(self.buttomGroup, -625, -730)
-
-	if xyd.Global.lang == "fr_fr" or xyd.Global.lang == "de_de" or xyd.Global.lang == "ko_kr" then
-		self.dayGroup:Y(146)
-	end
 end
 
 function ActivityMidautumnCard:initUIComponet()

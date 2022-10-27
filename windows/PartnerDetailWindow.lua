@@ -540,6 +540,10 @@ function PartnerDetailWindow:checkPartnerBackBtn()
 end
 
 function PartnerDetailWindow:checkSoulEquipBtn()
+	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
 	if xyd.tables.miscTable:getNumber("soul_equip_open_lvl", "value") <= self.partner_:getLevel() then
 		self.btnSoulEquip:SetActive(true)
 
@@ -4671,8 +4675,12 @@ function PartnerDetailWindow:onAwake(event)
 	win_params.skillOldList = skillOldList
 	win_params.skillNewList = skillNewList
 
-	if self.partner_:getStar() == 10 and xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI then
-		self.needExSkillGuide = true
+	if self.partner_:getStar() == 10 then
+		local wnd = xyd.getWindow("common_trigger_guide_window")
+
+		if xyd.tables.partnerTable:getExSkill(self.partner_:getTableID()) == 1 and self.partner_:getGroup() ~= xyd.PartnerGroup.TIANYI and not wnd then
+			self.needExSkillGuide = true
+		end
 	end
 
 	local newStar = self.partner_:getStar()
@@ -4983,6 +4991,12 @@ function PartnerDetailWindow:checkSoulEquipGuide()
 	end
 
 	if self.name_ ~= "partner_detail_window" then
+		return
+	end
+
+	local wnd = xyd.getWindow("exskill_guide_window")
+
+	if wnd then
 		return
 	end
 
@@ -6352,6 +6366,12 @@ function PartnerDetailWindow:checkExSkillGuide()
 	local slotWd = xyd.WindowManager.get():getWindow("slot_window")
 
 	if not slotWd then
+		return
+	end
+
+	local wnd = xyd.getWindow("common_trigger_guide_window")
+
+	if wnd then
 		return
 	end
 

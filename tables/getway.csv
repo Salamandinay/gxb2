@@ -242,3 +242,7 @@ id,name,lv_limit,function_id,stage,go_window,go_params,is_close,close_win_name,l
 243,-1,0,,,activity_window,"select:104,activity_type2:1",1,,,
 244,-1,0,56,,soul_land_main_window,,1,soul_land_shop_window|soul_land_summon_window|soul_equip_info_window|soul_equip2_strengthen_window|soul_equip1_strengthen_window,,
 245,-1,0,,,activity_window,"select:145,activity_type2:1",1,soul_land_shop_window|soul_land_summon_window|soul_equip_info_window|soul_equip2_strengthen_window|soul_equip1_strengthen_window,,
+246,-1,0,,,activity_window,select:217,1,,,
+247,-1,0,,,activity_window,"select:140,activity_type2:1",1,,,
+248,-1,0,,,activity_window,select:334,1,,,
+249,-1,0,,,activity_window,select:332,1,,,

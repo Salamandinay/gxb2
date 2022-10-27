@@ -13400,13 +13400,13 @@ Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%
 6778101,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 30%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 10% dieses kritischen Schadens zu.
 6778201,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 60%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 20% dieses kritischen Schadens zu.
 6778301,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 100%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 30% dieses kritischen Schadens zu.
-5200001,Fertigkeit vom Set der Seelensteine,Koi des Glücks,Der erlittene Einzelschaden liegt maximal bei 30% der eigenen max. HP. (Kann jede Runde maximal 3 Mal ausgelöst werden.)
+5200001,Fertigkeit vom Set der Seelensteine,Koi des Glücks,Der erlittene Einzelschaden liegt maximal bei 30% der eigenen max. HP. (Die reduzierten Schäden liegen maximal bei 100% der eigenen max. HP. Es kann jede Runde maximal 3 Mal ausgelöst werden.)
 5200002,Fertigkeit vom Set der Seelensteine,Schwimmende Qualle,"Pro 1%iger Krit. Widerstand des Besitzers erhöht seine Schadensreduzierungsrate um 0,5%. Erleidet der Besitzer einen kritischen Schlag, wird sein Krit. Widerstand um 30% 1 Runde lang erhöht."
 5200003,Fertigkeit vom Set der Seelensteine,Felsenkrabbe,"Zu Beginn der Runde erhält der Besitzer 1 Schicht Krabbenschale. Krabbenschale: Fertigkeitseffekt. Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."
 5200004,Fertigkeit vom Set der Seelensteine,Geisterhafte Ziege,"Jedes Mal wenn der Besitzer den Gegnern Schaden 3 Mal zugefügt hat, erhöht sich der nächste Schaden um 60%."
 5200005,Fertigkeit vom Set der Seelensteine,Feuerseinhorn,"Erhöht den Schaden gegen die Ziele, deren HP noch höher als 80% liegen, um 40% ."
 5200006,Fertigkeit vom Set der Seelensteine,Tückische Eidechse,Erhöht den Schaden gegen Gegner als Boss um 50%.
-5200007,Fertigkeit vom Set der Seelensteine,Neunschwänziger Fuchs,"Hat der Besitzer in einer Runde Standardangriff durchgeführt oder konnte er sich mittlerweile nicht bewegen, werden Blockade und Kontrollimmunitätsrate aller Mädchen des eigenen Teams zum Ende dieser Runde 2 Runden lang jeweils um 15% erhöht. (Kann nicht gestapelt werden.)"
+5200007,Fertigkeit vom Set der Seelensteine,Neunschwänziger Fuchs,"Hat der Besitzer in einer Runde Standardangriff durchgeführt oder konnte er sich mittlerweile nicht bewegen, werden Blockade und Kontrollimmunitätsrate aller Mädchen des eigenen Teams zum Ende dieser Runde 2 Runden lang jeweils um 15% erhöht."
 5200008,Fertigkeit vom Set der Seelensteine,Katzenweber,"Erhöht die Regenerierung des Schutzwall-Wertes um 25%. Hat der Besitzer einen Schutzwall auf sich, wird der Schutzwall-Wert der Verbündeten mit den niedrigsten HP um 20% ihrer max. HP erhöht, wenn der Besitzer aktive Fertigkeit durchführt."
 5200009,Fertigkeit vom Set der Seelensteine,Königsphönix,"Erhöht die Heilung um 25%. Während der Regenerierung eigener HP wird 1 zufälliger Debuff (kontinuierlicher Schaden, Attributs-Schwächung, Zeichen, Kontrolleffkete) einer zufälligen Verbündeten entfernt. (Kann jeder Runde maximal 1 Mal ausgelöst werden.)"
 5210101,Land der Seelen,1. Stufe der Blockade,"Jedes Mal wenn ein Mädchen des eignen Teams den zu erleidenden Schaden nicht blockiert hat, erhält sie 1 Schicht Verurteilung.\nVerurteilung: Fertigkeitseffekt. Hat das Mädchen mindestens 3 Schichten Verurteilung auf sich, wird ihr Angriff um 5% reduziert. Hat das Mädchen mindestens 5 Schichten auf sich, besteht zu Beginn jeder Runde eine 5%ige Wahrscheinlichkeit, dass sie betäubt wird. Hat das Mädchen mindestens 15 Schichten auf sich, wird sie zum Ende der Runde sofort sterben."
@@ -13463,3 +13463,264 @@ Kontrolleffekt. Betäubte Mädchen können weder ihre aktive Fertigkeit noch ein
 Fertigkeitseffekt. Wenn Boss Schaden erleidet, erleidet der Gegner mit ""Stern & Mond"" auch 25% davon. Wenn Boss einen Debuff erleidet, hat er eine 15%ige Wahrscheinlichkeit, dem Gegner mit [c][e28002]Stern & Mond[-][/c] den gleichen Debuff zuzufügen. Wenn Boss stirbt, wird der Effekt ""Stern & Mond"" vom Gegner entfernt.
 [c][e28002]Feuerstern[-][/c]
 Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert alle erlittenen Schäden um 20%. Wird der Träger angegriffen, fügt er dem Angreifer einen Schaden in Höhe von 20% des von sich selber erlittenen Schadens als Rückschlag zu (fixierter Schaden nicht eingeschlossen)."
+75700300,Effy,Standardangriff,Standardangriff
+757003101,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 800% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 400% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 800% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 50%, die Blockade um 50%, die Kontrollimmunitätsrate um 50%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 30% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 40% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003102,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 816% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 410% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 816% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 51%, die Blockade um 51%, die Kontrollimmunitätsrate um 51%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 30,6% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 40,8% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,2% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003103,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 832% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 420% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 832% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 52%, die Blockade um 52%, die Kontrollimmunitätsrate um 52%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 31,2% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 41,6% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,4% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003104,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 848% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 430% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 848% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 53%, die Blockade um 53%, die Kontrollimmunitätsrate um 53%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 31,8% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 42,4% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,6% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003105,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 864% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 440% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 864% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 54%, die Blockade um 54%, die Kontrollimmunitätsrate um 54%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 32,4% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 43,2% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,8% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003106,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 880% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 450% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 880% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 55%, die Blockade um 55%, die Kontrollimmunitätsrate um 55%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 30% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 44% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003107,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 896% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 460% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 896% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 56%, die Blockade um 56%, die Kontrollimmunitätsrate um 56%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 33,6% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 44,8% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,2% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003108,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 912% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 470% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 912% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 57%, die Blockade um 57%, die Kontrollimmunitätsrate um 57%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 34,2% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 45,6% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,4% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003109,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 928% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 480% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 928% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 58%, die Blockade um 58%, die Kontrollimmunitätsrate um 58%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 34,8% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 46,4% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,6% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003110,Effy,Zorn des Schützen,"
+O Schütze, möge dein Segen immer mit mir sein! Fügt allen Gegnern einen Schaden in Höhe von 960% des AW und den Träger mit [c][e28002]Sternenlicht[-][/c] zusätzlich mehrmals einen festen Schaden in Höhe von 500% des AW zu (zu Beginn 3 Mal und dann mit jeder abgeschlossenen Runde einmal mehr, maximal 5 Mal. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.). Wird der Gegner mit [c][e28002]Sturmpfeil[-][/c] getötet, fügt sie allen Gegnern weiterhin einen Schaden in Höhe von 960% des AW zu und ersetzt die bestehenen [c][e28002]Sturmpfeile[-][/c] auf den Gegnern durch den [c][e28002]Drehpfeil[-][/c], der 2 Runden lang anhält.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 60%, die Blockade um 60%, die Kontrollimmunitätsrate um 60%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen.
+[c][e28002]Drehpfeil[-][/c]
+Der Träger erleidet nach dem eigenen Angriff 36% des zugefügten Schadens (maximal 1500% von Effys AW). Maximal dürfen 2 Gegner gleichzeitig den [c][e28002]Drehpfeil[-][/c] auf sich haben.
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 48% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 12% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)."
+757003201,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 600% des AW zu und hat 30%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 50% und erhöht eigenen max. Krit. Schaden um 100%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 50%, die Blockade um 50%, die Kontrollimmunitätsrate um 50%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003202,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 612% des AW zu und hat 30,6%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 48% und erhöht eigenen max. Krit. Schaden um 102%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 51%, die Blockade um 51%, die Kontrollimmunitätsrate um 51%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003203,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 624% des AW zu und hat 31,2%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 46% und erhöht eigenen max. Krit. Schaden um 104%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 52%, die Blockade um 52%, die Kontrollimmunitätsrate um 52%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003204,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 636% des AW zu und hat 31,8%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 44% und erhöht eigenen max. Krit. Schaden um 106%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 53%, die Blockade um 53%, die Kontrollimmunitätsrate um 53%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003205,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 648% des AW zu und hat 32,4%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 42% und erhöht eigenen max. Krit. Schaden um 108%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 54%, die Blockade um 54%, die Kontrollimmunitätsrate um 54%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003206,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 660% des AW zu und hat 33%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 40% und erhöht eigenen max. Krit. Schaden um 110%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 55%, die Blockade um 55%, die Kontrollimmunitätsrate um 55%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003207,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 672% des AW zu und hat 33%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 38% und erhöht eigenen max. Krit. Schaden um 112%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 56%, die Blockade um 56%, die Kontrollimmunitätsrate um 56%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003208,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 684% des AW zu und hat 34,2%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 36% und erhöht eigenen max. Krit. Schaden um 114%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 57%, die Blockade um 57%, die Kontrollimmunitätsrate um 57%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003209,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 696% des AW zu und hat 34,8%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 34% und erhöht eigenen max. Krit. Schaden um 116%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 58%, die Blockade um 58%, die Kontrollimmunitätsrate um 58%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003210,Effy,Explosionslicht,"
+Du hast direkt in meine Kamera gesehen und das musst du teuer bezahlen! Standardangriff fügt den Gegnern mit [c][e28002]Sternenlicht[-][/c] einen zusätzlichen Schaden in Höhe von 720% des AW zu und hat 36%ige Wahrscheinlichkeit, allen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Reduziert eigene Krit. Rate um 30% und erhöht eigenen max. Krit. Schaden um 120%. Eigene passive Fertigkeit kann einen kritischen Schlag auslösen.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 60%, die Blockade um 60%, die Kontrollimmunitätsrate um 60%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003301,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 5% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 40% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 50%, die Blockade um 50%, die Kontrollimmunitätsrate um 50%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003302,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 5,5% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 40,8% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,2% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 51%, die Blockade um 51%, die Kontrollimmunitätsrate um 51%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003303,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 6% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 41,6% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,4% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 52%, die Blockade um 52%, die Kontrollimmunitätsrate um 52%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003304,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 6,5% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 42,4% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,6% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 53%, die Blockade um 53%, die Kontrollimmunitätsrate um 53%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003305,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 7% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 43,2% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 10,8% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 54%, die Blockade um 54%, die Kontrollimmunitätsrate um 54%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003306,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 7,5% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 44% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 55%, die Blockade um 55%, die Kontrollimmunitätsrate um 55%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003307,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 8% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 44,8% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,2% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 56%, die Blockade um 56%, die Kontrollimmunitätsrate um 56%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003308,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 8,5% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 45,6% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,4% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 57%, die Blockade um 57%, die Kontrollimmunitätsrate um 57%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003309,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 9% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 46,4% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 11,6% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 58%, die Blockade um 58%, die Kontrollimmunitätsrate um 58%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003310,Effy,Fluch der Sterne,"
+Vom Sternenlicht bekommen wir nicht nur den Segen, sondern auch den Fluch. Fügt zu Beginn jeder Runde einem zufälligen Gegner (Gegner ohne [c][e28002]Sturmpfeil[-][/c] auf sich wird bevorzugt gewählt.) 2 Runden lang den [c][e28002]Sturmpfeil[-][/c] zu. Hat eine 50%ige Wahrscheinlichkeit, 3 zufälligen Gegnern das [c][e28002]Sternenlicht[-][/c] 2 Runden lang zuzufügen. Fügt zum Ende der Runde den Gegnern mit [c][e28002]Sturmpfeil[-][/c] auf sich und noch einem zufälligen Gegner einen festen Schaden in Höhe von 10% der max. HP der Ziele zu (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.)
+
+[c][e28002]Sturmpfeil[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. 48% der von dem Träger erhaltenen Heilung wird bei HP mitgerechnet, erst wenn der [c][e28002]Sturmpfeil[-][/c] auf sich entfernt ist. Wird der Träger angegriffen, erleidet er einen festen Schaden in Höhe von 12% eigener max. HP (maximal von 2500% des AW von Effy. Der feste Schaden wird weder durch andere Angriffe erhöht oder reduziert noch zum kritischen Schlag führen.).
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 60%, die Blockade um 60%, die Kontrollimmunitätsrate um 60%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003401,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 700% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 10% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 50%, die Blockade um 50%, die Kontrollimmunitätsrate um 50%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003402,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 710% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 10,2% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 51%, die Blockade um 51%, die Kontrollimmunitätsrate um 51%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003403,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 720% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 10,4% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 52%, die Blockade um 52%, die Kontrollimmunitätsrate um 52%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003404,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 730% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 10,6% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 53%, die Blockade um 53%, die Kontrollimmunitätsrate um 53%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003405,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 740% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 10,8% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 54%, die Blockade um 54%, die Kontrollimmunitätsrate um 54%. Der Träger hat beim Angriff eine 52%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003406,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 750% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 11% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 55%, die Blockade um 55%, die Kontrollimmunitätsrate um 55%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003407,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 760% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 11,2% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 56%, die Blockade um 56%, die Kontrollimmunitätsrate um 56%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003408,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 770% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 11,4% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 57%, die Blockade um 57%, die Kontrollimmunitätsrate um 57%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003409,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 780% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 11,6% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 58%, die Blockade um 58%, die Kontrollimmunitätsrate um 58%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+757003410,Effy,Fessel des Lichtes,"
+Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das Mädchen des eigenen Teams vom Gegner mit [c][e28002]Sternenlicht[-][/c] auf sich angegriffen, wird die Verbündete mit dem höchsten AW diesem Gegner einen Schaden in Höhe von 800% des AW zufügen und alle Schäden von Effy selber werden 5 Runden lang um 12% erhöht.
+
+[c][e28002]Sternenlicht[-][/c]
+Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 60%, die Blockade um 60%, die Kontrollimmunitätsrate um 60%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."

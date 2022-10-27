@@ -17,11 +17,6 @@ function TuringMissionWindow:resizeToParent()
 
 	local allHeight = self.go:GetComponent(typeof(UIWidget)).height
 	local heightDis = allHeight - 874
-
-	self:resizePosY(self.textImg.gameObject, 0, -102)
-	self:resizePosY(self.textLabel.gameObject, -285, -392)
-	self:resizePosY(self.resItem.gameObject, -312, -486)
-	self:resizePosY(self.timerGroup.gameObject, -222, -328)
 end
 
 function TuringMissionWindow:getPrefabPath()
@@ -31,7 +26,7 @@ end
 function TuringMissionWindow:initUI()
 	self:getUIComponent()
 	TuringMissionWindow.super.initUI(self)
-	xyd.setUISpriteAsync(self.textImg, nil, "turing_mission_title_" .. xyd.Global.lang, nil, , true)
+	xyd.setUISpriteAsync(self.textImg, nil, "activity_hw2022_mission_logo_" .. xyd.Global.lang, nil, , true)
 	self:setText()
 
 	if xyd.getServerTime() < self.activityData:getUpdateTime() then
@@ -193,9 +188,8 @@ function TuringMissionWindowItem:getUIComponent()
 	self.label1 = transGo:ComponentByName("label1", typeof(UILabel))
 	self.label2 = transGo:ComponentByName("label2", typeof(UILabel))
 	self.tipsBtn = transGo:ComponentByName("tipsBtn", typeof(UISprite))
-	self.tips = transGo:NodeByName("tips").gameObject
-	self.tipsBg = self.tips:ComponentByName("tipsBg", typeof(UISprite))
-	self.tipsContent = self.tips:ComponentByName("tipsContent", typeof(UILabel))
+	self.tipsBg = transGo:ComponentByName("tipsBg", typeof(UISprite))
+	self.tipsContent = transGo:ComponentByName("tipsContent", typeof(UILabel))
 	self.itemsGroup_ = transGo:Find("itemsGroup")
 	self.itemsGroup_UILayout = transGo:ComponentByName("itemsGroup", typeof(UILayout))
 	self.touchField = transGo:NodeByName("touchField").gameObject
@@ -254,11 +248,15 @@ function TuringMissionWindowItem:initItem()
 		self.labelTipsText = xyd.tables.activityTuringTextTable:getText(self.id)
 		self.tipsContent.text = self.labelTipsText
 
+		xyd.setUISpriteAsync(self.tipsBg, nil, "turing_mission_bg_tips")
+
 		UIEventListener.Get(self.tipsBtn.gameObject).onPress = function (go, isPressed)
 			if isPressed then
-				self.tips:SetActive(true)
+				self.tipsBg.gameObject:SetActive(true)
+				self.tipsContent.gameObject:SetActive(true)
 			else
-				self.tips:SetActive(false)
+				self.tipsBg.gameObject:SetActive(false)
+				self.tipsContent.gameObject:SetActive(false)
 			end
 		end
 	end

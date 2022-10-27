@@ -164,6 +164,15 @@ function MapsModel:onMapsInfo(event)
 	if updateMainActivityEnter then
 		xyd.models.activity:updateNeedOpenActivityAloneEnter(xyd.AcitvityLimt.STAGE, params.max_stage)
 	end
+
+	if params.map_type == xyd.MapType.CAMPAIGN then
+		local data = {
+			name = xyd.event.UPDATE_MAX_SATGE_TO_UPDATE_FUNCTION_OPEN,
+			params = {}
+		}
+
+		xyd.EventDispatcher.outer():dispatchEvent(data)
+	end
 end
 
 function MapsModel:checkHangTeam()

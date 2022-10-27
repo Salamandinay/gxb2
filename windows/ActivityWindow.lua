@@ -1802,6 +1802,21 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.SOUL_LAND_BATTLE_PASS] = function ()
 		return require("app.windows.activity.SoulLandBattlePass")
+	end,
+	[xyd.ActivityID.ACTIVITY_RELAY_GIFT_NEW] = function ()
+		return require("app.windows.activity.ActivityRelayGiftNew")
+	end,
+	[xyd.ActivityID.ACTIVITY_HW2022] = function ()
+		return require("app.windows.activity.ActivityHw2022")
+	end,
+	[xyd.ActivityID.ACTIVITY_HW2022_SHOP] = function ()
+		return require("app.windows.activity.ActivityHw2022Shop")
+	end,
+	[xyd.ActivityID.ACTIVITY_HW2022_SUPPLY] = function ()
+		return require("app.windows.activity.ActivityHw2022Supply")
+	end,
+	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = function ()
+		return require("app.windows.activity.ActivityPromotionLadder2")
 	end
 }
 

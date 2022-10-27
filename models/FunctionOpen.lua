@@ -10,6 +10,7 @@ end
 function FunctionOpen:onRegister()
 	FunctionOpen.super.onRegister(self)
 	self:registerEvent(xyd.event.LEV_CHANGE, handler(self, self.onFunctionStageChange))
+	self:registerEvent(xyd.event.UPDATE_MAX_SATGE_TO_UPDATE_FUNCTION_OPEN, handler(self, self.onFunctionStageChange))
 end
 
 function FunctionOpen:getOpenFunctions()

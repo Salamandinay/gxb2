@@ -4843,7 +4843,7 @@ ACTIVITY_ANTIQUE_LEVELUP_HELP,"
 1. You are able to upgrade Orange Antiques to Pink Antiques in Antique Laboratory.|2. Upgrade rule:
 1-star Pink Antique=6-star Orange Antique + any star of the same Antique of orange quality + 6,000 Antique Extracts
 2-star Pink Antique=1-star Pink Antique + any star of the same Antique of orange quality + 10,000 Antique Extracts
-3-star Pink Antique=2-star Pink Antique + any star of the same Antique of orange quality + 14,000 Antique Extracts|3. If the ""any star of the same Antique of orange quality"" that is mentioned above is used as material, the materials used to upgrade the Antique will be returned in the form of Afterglow.|4. You can Disassemble Antiques in the Antique Laboratory and get Antique Extracts. (Pink Antiques cannot be Disassembled).|5. There is a limited amount of Antique Extracts that can be obtained in the Antique Laboratory each season, once the limit has been reached (60,000 Antique Extracts for each season), Afterglow will be obtained thereafter in place of Antique Extracts at the rate of 1:1.|6. Players can reverse pink Antiques in the Antique Laboratory and retrieve the Antique materials used before the upgrade."
+3-star Pink Antique=2-star Pink Antique + any star of the same Antique of orange quality + 14,000 Antique Extracts|3. If the ""any star of the same Antique of orange quality"" that is mentioned above is used as material, the materials used to upgrade the Antique will be returned in the form of Afterglow.|4. You can Disassemble Antiques in the Antique Laboratory and get Antique Extracts. (Pink Antiques cannot be Disassembled).|5. Players can reverse pink Antiques in the Antique Laboratory and retrieve the Antique materials used before the upgrade."
 ACTIVITY_ANTIQUE_LEVELUP_TEXT01,Improve
 ACTIVITY_ANTIQUE_LEVELUP_TEXT02,Reverse
 ACTIVITY_ANTIQUE_LEVELUP_TEXT03,Select Antique
@@ -6080,7 +6080,7 @@ ACTIVITY_CLOCK_SHOW_TEXT04,Round Rewards
 ACTIVITY_CLOCK_SHOW_TEXT05,Round {1}
 ACTIVITY_CLOCK_AWARD_GET,You obtained all Grand Rewards of this round. The remaining rewards this round are also obtained!
 ACTIVITY_CLOCK_HELP,"1. During the event, 1 Clockwork Coin can be consumed to spin the one-pointer spinner once and obtain its reward. If multiple pointers are used for the spinner, you will get multiple rewards for the spin, but the Clockwork Coins required will also thus be increased.|2. There are Grand Rewards and Regular Rewards displayed on the spinner, Regular Rewards can be obtained multiple times (the number of rewards that haven't been claimed in this round yet are displayed in the center of the spinner). Each Grand Reward can be obtained only once. After obtaining all the Grand Rewards in a round, the remaining rewards on the spinner will be automatically obtained without consuming additional Clockwork Coins.|3. After obtaining all rewards displayed on the spinner, you will enter the next round. Rewards will be different in the first 5 rounds, whereas starting from the 6th round, the rewards will be the same as in the 5th round.|4. You will get additional rewards according to the number of Clockwork Coins you've consumed.|5. Clockwork Coins can be obtained from Daily Mail, by participating in the Prank War, Slot Points event, or by purchasing Mega Value Pack, Special Gift Pack, Special Skin Pack, April Fools Pack, or Monthly Kickoff.|6. After this event ends, any remaining Clockwork Coins will be automatically exchanged into 20K Coins each. The Coins will be sent via Mail."
-ACTIVITY_CLOCK_TASK,"You can obtain Clockwork Coins by completing the tasks! Clockwork Coins can be used in event: ""Spin the Wheel!"" and get rewards!"
+ACTIVITY_CLOCK_TASK,Complete the tasks to obtain the materials you need to carve the pumpkins!
 ACTIVITY_CLOCK_TITLE,April Fools'\nDay
 ACTIVITY_CLOCK_AWARD_PREVIEW_WINDOW,Preview
 ACTIVITY_CLOCK_TEXT02,Rewards
@@ -7120,12 +7120,12 @@ SHRINE_HURDLE_AUTO_TEXT07,Set Team
 SHRINE_HURDLE_AUTO_TEXT08,Start
 INVITATION_ENTRANCE,Invite
 INVITATION_SWITCH,Switch
-INVITATION_HELP,"Campus Guide:|1. After completing the first 20 chapters in Growth Diary, you can enter this feature as a ""Tutor"" and share your invitation code to beginners (players below level 70). Your Tutor-Beginner relationship will be formed once the beginner player enters your invitation code in this feature, of which then you will receive rewards as a Tutor. Additional rewards as a Tutor can be obtained after a beginner player you're guiding completes the tasks in this feature.|2. A Tutor-Beginner relationship will end after the beginner player completes all the tasks. A Tutor can guide at most 10 beginner players at the same time. (Accounts under the same UID cannot start a Tutor-Beginner relationship). If a beginner you're guiding has been inactive in the last 7 days, you are able to end this relationship manually.|3. You can provide a gift for each beginner player you're guiding each day for free. Please don't forget to support them with these additional gifts!|4. You can get a Gem reward for sharing your progress (as a Tutor) in this feature each week. The reward will be refreshed at 0:00 (UTC/GMT 0) each Monday.\n\nNew on Campus:|1. You can enter the invitation code of a Tutor before you reach player level 70 to start a Tutor-Beginner relationship with the Tutor and get a reward. You can get more rewards for completing the tasks on this page."
+INVITATION_HELP,"Campus Guide:|1. After completing the first 20 chapters in Growth Diary, you can enter this feature as a ""Tutor"" and share your invitation code to beginners (players below level 70). Your Tutor-Beginner relationship will be formed once the beginner player enters your invitation code in this feature, of which then you will receive rewards as a Tutor. Additional rewards as a Tutor can be obtained after a beginner player you're guiding completes the tasks in this feature.|2. A Tutor-Beginner relationship will end after the beginner player completes all the tasks. A Tutor can guide at most 10 beginner players at the same time. (Accounts under the same UID cannot start a Tutor-Beginner relationship). If a beginner you're guiding has been inactive in the last 30 days, you are able to end this relationship manually.|3. You can provide a gift for each beginner player you're guiding each day for free. Please don't forget to support them with these additional gifts!|4. You can get a Gem reward for sharing your progress (as a Tutor) in this feature each week. The reward will be refreshed at 0:00 (UTC/GMT 0) each Monday.\n\nNew on Campus:|1. You can enter the invitation code of a Tutor before you reach player level 70 to start a Tutor-Beginner relationship with the Tutor and get a reward. You can get more rewards for completing the tasks on this page."
 INVITATION_TEXT01,Newbie List
 INVITATION_TEXT02,My Invitation Code
 INVITATION_TEXT03,Copy
 INVITATION_TEXT04,Share
-INVITATION_TEXT05,You can end the relationship if a Beginner has been inactive in the last 7 days
+INVITATION_TEXT05,You can end the relationship if a Beginner has been inactive in the last 30 days
 INVITATION_TEXT06,Confirm to end your Tutor-Beginner Relationship?
 INVITATION_TEXT07,Share
 INVITATION_TEXT08,My Tutor
@@ -7276,7 +7276,7 @@ QUICK_FORMATION_TEXT26,The previous lineup will be replaced after saving the cur
 GUILD_NEW_WAR_TEXT78,Competition ends in
 QUICK_FORMATION_TEXT27,Need at least 1 Girl in this lineup
 GUILD_NEW_WAR_TEXT79,No other Ranking Info
-GUILD_NEW_WAR_HELP02,"1. There are multiple Flags set in each base your Guild controls. You can assign 1 Guild Member as the protector of each Flag. Each defender has 200 Moral when assigned.|2. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. You will at least reduce the Moral of the defender by 5 for each attack. The Moral reduction will increase by 5 for each victory in the 3 battles.|3. The defender will be defeated after the Moral is reduced to 0. You will then be able to attack the unguarded Flag. You can reduce the Durability of the Flag for each attack in this situation. After a Flag loses all its Durability, it will be removed.|4. After all Flags in a Base are removed, the Base will be destroyed; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards.|5. During the battle period, there will be 10 Challenge Chances daily. To challenge enemies, attack the Flags and Clean Up the field, one chance will be consumed and the corresponding rewards can be received after.|6. All your Girls in your attack lineup will gain 10%% extra Attack, 20%% extra HP, and 10%% extra Damage Depletion for every Center Base your Guild destroys in this competition; After destroying the Main Base of the opposing Guild, the Attacking Guild will gain 50 extra Guild Points whenever it gains Guild Points in this competition.|7. Guild Leaders and Deputy Leaders can mark one of the enemy Base as a target to focus attack on. When attacking the target, all damage dealt by the Girls on the Attacking Team will be increased by 10%%. Focus attack targets can be re-selected 12 hours after the last focus attack target is selected."
+GUILD_NEW_WAR_HELP02,"1. There are multiple Flags set in each base your Guild controls. You can assign 1 Guild Member as the protector of each Flag. Each defender has 200 Moral when assigned.|2. When attacking a defender, the system will conduct 3 battles with the 6 (3+3) lineups you and your opponent set. You will at least reduce the Moral of the defender by 5 for each attack. The Moral reduction will increase by 5 for each victory in the 3 battles.|3. The defender will be defeated after the Moral is reduced to 0. You will then be able to attack the unguarded Flag. You can reduce the Durability of the Flag for each attack in this situation. After a Flag loses all its Durability, it will be removed.|4. After all Flags in a Base are removed, the Base will be destroyed; After all enemy Bases are destroyed, you will be able to consume your remaining Challenge Chances to Clean Up the field and get additional rewards.|5. During the battle period, you can get 10 Challenge chances for your first time entering the event each day. To challenge enemies, attack the Flags and Clean Up the field, one chance will be consumed and the corresponding rewards can be received after.|6. All your Girls in your attack lineup will gain 10%% extra Attack, 20%% extra HP, and 10%% extra Damage Depletion for every Center Base your Guild destroys in this competition; After destroying the Main Base of the opposing Guild, the Attacking Guild will gain 50 extra Guild Points whenever it gains Guild Points in this competition.|7. Guild Leaders and Deputy Leaders can mark one of the enemy Base as a target to focus attack on. When attacking the target, all damage dealt by the Girls on the Attacking Team will be increased by 10%%. Focus attack targets can be re-selected 12 hours after the last focus attack target is selected."
 GUILD_NEW_WAR_TEXT80,{1} has destroyed Flag {3} in enemy {2}
 ACTIVITY_PIRATE_TEXT01,Story Progress
 ACTIVITY_PIRATE_TEXT02,Server Pack
@@ -7485,22 +7485,22 @@ SOUL_LAND_BATTLEPASS_TEXT10,Remaining Points availalbe: {1}
 DAILY_QUIZ_TITLE_TIPS,Unlock after completing all Quizzes
 DAILY_QUIZ_TITLE_DESC,Complete Daily Quizzes to get additional resources!
 ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON01,Preview
-ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,普通雕刻
-ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,高級雕刻
-ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,如果連續10次高級雕刻都沒有獲得xxx，則第11次必得xxx
-ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,1.消耗xxx可以xxx
-ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,南瓜燈獎勵
-ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,基礎獎勵
-ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,批量雕刻
-ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,請輸入批量雕刻數量
-ACTIVITY_HALLOWEEN2022_SHOP_HELP,XXXX
-ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,前往雕刻
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,全服進度
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,免費獎勵
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,專屬禮包
-ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,XXXX
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,全服進度達到xxx時解鎖
-ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,已購買，無法重複購買
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON02,Regular Carving
+ACTIVITY_HALLOWEEN2022_GAMBLE_BUTTON03,Master Carving
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT01,At least 1 IM PUMPKIN will be completed in 10 Master Carvings
+ACTIVITY_HALLOWEEN2022_GAMBLE_HELP,"1. Cupid needs your help to carve more Pumpkin Lanterns this Halloween!|2. You will need to complete the carvings with Halloween Candles, Carving Knives, and Witch's Potions. You can obtain 1 random reward and the Pumpkin Lanterns you completed.|3. There are 2 carving methods for you to choose from, Regular Carving and Master Carving. By choosing the Master Carving method, it would give you a higher chance to get better Pumpkin Lanterns. An IM PUMPKIN (the best Pumpkin Lantern) is guaranteed on the 10th carving if you did not obtain it in within the previous 9 carvings.|4. You can win additional rewards by completing the required numbers of Pumpkin Lanterns (of different types).|5. You will get contribution points for each Pumpkin Lantern you complete:|Horned Pumpkin: 1 Point|Winged Pumpkin: 5 Points|IM PUMPKIN: 25 Points.|You will receive an additional ranking reward according to your position in the Contribution Point Ranking at the end of the event.|6. The Pumpkin Lanterns you get can also be used to exchange for rewards in the event: Lantern Secrets.|7. Halloween Candles can be obtained from Halloween Adventures and Wish Capsule. Carving Knives can be obtained from Daily Mail, Halloween Adventrues, and Halloween Delights. Witch's Potions can be obtained from purchasing Explorer Pack, the Contribution Pack in Halloween Delights, Halloween Surprise Packs, Monthly Kick Off, Value Packs, Special Gift Pack, and Special Skin Pack.|8. Once the event ends, the remaining Halloween Candles, Carving Knives, and Witch's Potions will automatically be changed into Coins at a rate of 500k per Halloween Candle, 100k per Carving Knife, and 1000k per Witch’s Potion."
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW01,Rate
+ACTIVITY_HALLOWEEN2022_GAMBLE_PREVIEW02,Basic Rewards
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT02,Carve in Bulk
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT03,Select Quantity
+ACTIVITY_HALLOWEEN2022_SHOP_HELP,"1. Let's check out the secrets hidden in these Pumpkin Lanterns!|2. Exchange various rewards with Horned Pumpkins, Winged Pumpkins, IM PUMPKINs, or Witch's Potions.|3. The Pumpkin Lanterns required for the exchanges can be obtained from the ""Pumpkin Artisan"" event."
+ACTIVITY_HALLOWEEN2022_GIFTBAG_BUTTON01,Go
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT01,Progress
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT02,Free Reward
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT03,Exclusive Pack
+ACTIVITY_HALLOWEEN2022_GIFTBAG_HELP,"1. You will get contribution points for each Pumpkin Lantern you complete:|Horned Pumpkin: 1 Point|Winged Pumpkin: 5 Points|IM PUMPKIN: 25 Points.|2. After the total contribution points of all players of the game reach the requirement, you will be able to claim a free reward. In addition, a Halloween Contribution Pack will also be unlocked and become available for purchase."
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS01,Unlocks after progress reaches {1}
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TIPS02,The pack is purchased already!
 SOUL_LAND_TEXT20,All stages in this area are cleared!
 SOUL_LAND_BATTLEPASS_TEXT11,Confirm to purchase {2} Soul Pass Point(s) with {1} Gem(s)?
 SOUL_EQUIP_TEXT82,No Infuse Attribute yet
@@ -7525,3 +7525,35 @@ SOUL_EQUIP_TEXT90,Anima\nGear
 SOUL_EQUIP_TEXT91,The number of saved plans has reached the limit
 NO_SOULEQUIP,No Anima Gear yet
 SOUL_EQUIP_TEXT92,You have added enough material to upgrade this to max level!
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT04,Carve {1} {2}(s)
+ACTIVITY_HALLOWEEN2022_RANK_TEXT01,Contribution Ranking
+ACTIVITY_HALLOWEEN2022_RANK_TEXT02,Contribution Reward
+ACTIVITY_HALLOWEEN2022_RANK_TEXT03,Rewards based on rank at end of the event
+ACTIVITY_5WEEK_TEXT01,Spin
+ACTIVITY_HALLOWEEN2022_GAMBLE_TEXT05,Not enough {1}
+ACTIVITY_5WEEK_HELP,"1. You can spin the wheel in event: Girl Upgrade Booster and win its rewards by consuming Keys of Luck. After a reward is obtained, you won't get it again from the following spins.|2. You will get additional rewards according to the number of times you've spun the wheel.|3. Keys of Luck can be obtained by purchasing Upgrade Booster Pack.|4. Once the event ends, the remaining Keys of Luck will automatically be exchanged into Coins at a rate of 100k Coins each. The Coins will be sent via Mail."
+ACTIVITY_5WEEK_TEXT02,Progress
+ACTIVITY_5WEEK_TEXT03,Spin in Bulk
+ACTIVITY_5WEEK_TEXT04,Select Quantity
+ACTIVITY_5WEEK_TEXT05,Upgrade Booster Pack {1}
+ACTIVITY_HALLOWEEN2022_GIFTBAG_TEXT04,Purchase
+ACTIVITY_HALLOWEEN2022_RANK_TEXT04,Points
+ACTIVITY_PROMOTION_LADDER_TEXT13,Choose a Girl
+ACTIVITY_5WEEK_TEXT06,You've obtained all the rewards available!
+ACTIVITY_BLIND_BOX_TEXT01,Quantity: {1}
+ACTIVITY_BLIND_BOX_TEXT02,x1 Open
+ACTIVITY_BLIND_BOX_TEXT03,x5 Open
+ACTIVITY_BLIND_BOX_TEXT04,Please select {2} rewards in tier {1}
+ACTIVITY_BLIND_BOX_TEXT05,Round {1} - Tier {2} Customized Rewards
+ACTIVITY_BLIND_BOX_TEXT06,Please select the reward you want
+ACTIVITY_BLIND_BOX_TEXT07,"You will not be able to adjust your customized reward selection after you obtain one of the rewards, confirm to continue?"
+ACTIVITY_BLIND_BOX_TEXT08,"You will not be able to obtain the customized rewards in Round 1 after entering Round 2, confirm to continue?"
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT01,Obtained
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT02,Instant Reward
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,Login
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT04,Bonus
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT05,Fancy
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT06,Deluxe
+ACTIVITY_BLIND_BOX_MISSION,Acquire {1} VIP Exp
+ACTIVITY_HALLOWEEN2022_TITLE,Halloween\nCarnival
+ACTIVITY_HALLOWEEN2022_RANK_HELP,1. You will get contribution points for each Pumpkin Lantern you complete:|Horned Pumpkin: 1 Point|Winged Pumpkin: 5 Points|IM PUMPKIN: 25 Points.|2. You will receive an additional ranking reward according to your position in the Contribution Point Ranking at the end of the event.

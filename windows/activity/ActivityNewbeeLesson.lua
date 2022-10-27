@@ -365,10 +365,7 @@ function AccumulateTask:onClickGetBtn()
 
 		xyd.models.activity:reqAwardWithParams(self.activityID, params)
 	else
-		xyd.WindowManager.get():closeWindow("activity_window")
-		xyd.WindowManager.get():openWindow("activity_window", {
-			select = xyd.ActivityID.NEWBEE_LESSON_GIFTBAG
-		})
+		xyd.goWay(xyd.GoWayId.ACITVITY_NEWBEE_LESSON_GIFTBAG_2)
 	end
 end
 
