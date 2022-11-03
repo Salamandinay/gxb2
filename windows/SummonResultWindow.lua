@@ -970,12 +970,12 @@ function SummonResultWindow:registerEvent()
 			if self.showLimitTen then
 				flag = win:onLimitSummonTen()
 			elseif #self.params_.items <= 1 then
-				flag = win:onSeniorSummon(1, xyd.SummonType.SENIOR_SCROLL)
+				flag = win:onWishSummon(1, xyd.SummonType.WISH_SCROLL)
 			elseif #self.params_.items == 10 then
 				if xyd.Global.lang ~= "ja_jp" then
-					flag = win:onSeniorSummon(10, xyd.SummonType.SENIOR_SCROLL_TEN)
+					flag = win:onWishSummon(10, xyd.SummonType.WISH_SCROLL_TEN)
 				else
-					flag = win:onSeniorSummon(1, xyd.SummonType.SENIOR_SCROLL)
+					flag = win:onWishSummon(1, xyd.SummonType.WISH_SCROLL)
 				end
 			end
 		end

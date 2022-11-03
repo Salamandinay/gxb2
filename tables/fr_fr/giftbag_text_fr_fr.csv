@@ -38,7 +38,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 35,Pack de Recharge Gratuit,2.29,€,Pack de Recharge Gratuit,2.49,2.49
 37,Pack Limité de Filles 5 étoiles,1.09,€,Pack Limité de Filles 5 étoiles,1.19,1.19
 38,Abonnement,0.99,€,Abonnement,0.99,0.99
-39,Carte de la\nFête du Printemps,10.99,€,Carte de la\nFête du Printemps,11.99,11.99
+39,Carte de la Fête du Printemps,10.99,€,Carte de la Fête du Printemps,11.99,11.99
 40,Abonnement Hebdomadaire,0.99,€,Abonnement Hebdomadaire,0.99,0.99
 41,Mensuel,4.49,€,Mensuel,3.99,3.99
 42,Trimestriel,10.49,€,Trimestriel,10.49,10.49
@@ -55,9 +55,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 53,Abonnement Hebdomadaire,0.99,€,Abonnement Hebdomadaire,0.99,0.99
 54,Mensuel,4.49,€,Mensuel,3.99,3.99
 55,Trimestriel,10.49,€,Trimestriel,10.49,10.49
-56,Pack Surprise de Skin 1,5.49,€,Pack\nSurprise,5.99,5.99
-57,Pack\nSurprise 1,5.49,€,Pack\nSurprise,5.99,5.99
-65,Pack\nSurprise 2,54.99,€,Pack\nSurprise,59.99,59.99
+56,Pack Surprise de Skin 1,5.49,€,Pack Surprise,5.99,5.99
+57,Pack Surprise 1,5.49,€,Pack Surprise,5.99,5.99
+65,Pack Surprise 2,54.99,€,Pack Surprise,59.99,59.99
 58,7 jours Gratuit,0,€,7 jours Gratuit,0,0
 59,7 jours Gratuit,0,€,7 jours Gratuit,0,0
 60,7 jours Gratuit,0,€,7 jours Gratuit,0,0
@@ -69,7 +69,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 67,Pack de Croissance,10.99,€,Pack de Croissance,11.99,11.99
 68,Pack de Grande Valeur 6,5.49,€,Pack de Grande Valeur,5.99,5.99
 70,Débloquer Récompenses Spéciales,21.99,€,Débloquer des Récompenses Spéciales,23.99,23.99
-71,Pack Surprise de Skin 2,54.99,€,Pack\nSurprise,59.99,59.99
+71,Pack Surprise de Skin 2,54.99,€,Pack Surprise,59.99,59.99
 72,Carte du 4ème Anniversaire,21.99,€,Carte du 4ème Anniversaire,23.99,23.99
 73,Pack Exclusif de Noël,54.99,€,Pack Exclusif de Noël,59.99,59.99
 74,Programme de Motivation,10.99,€,Programme de Motivation,11.99,11.99
@@ -192,8 +192,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 81,Pack de Grande Valeur 4,10.99,€,Pack de Grande Valeur,11.99,11.99
 82,Pack de Grande Valeur 5,5.49,€,Pack de Grande Valeur,5.99,5.99
 83,Pack de Grande Valeur 6,5.49,€,Pack de Grande Valeur,5.99,5.99
-84,Pack Surprise 1,5.49,€,Pack\nSurprise,5.99,5.99
-85,Pack\nSurprise 2,74.99,€,Pack\nSurprise,84.99,84.99
+84,Pack Surprise 1,5.49,€,Pack Surprise,5.99,5.99
+85,Pack Surprise 2,74.99,€,Pack Surprise,84.99,84.99
 86,Pack de Recharge Gratuit,2.29,€,Pack de Recharge Gratuit,2.49,2.49
 1090101,Pack Surprise de Capsules,32.99,€,Pack Bonus de Capsules,35.99,35.99
 1090102,Pack Surprise de Capsules,54.99,€,Pack Bonus de Capsules,59.99,59.99
@@ -209,18 +209,18 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 21,Pack Mensuel 6,89.99,€,Pack Mensuel,94.99,94.99
 87,Pack Hebdomadaire 5,89.99,€,Pack Hebdomadaire,94.99,94.99
 105,Avis d'Admission,21.99,€,Avis d'Admission,23.99,23.99
-92,Pack\nQuotidien 1,1.09,€,Pack\nQuotidien,1.19,1.19
-93,Pack\nQuotidien 2,2.29,€,Pack\nQuotidien,2.49,2.49
-94,Pack\nQuotidien 3,5.49,€,Pack\nQuotidien,5.99,5.99
-95,Pack\nQuotidien 4,5.49,€,Pack\nQuotidien,5.99,5.99
-96,Pack\nQuotidien 5,5.49,€,Pack\nQuotidien,5.99,5.99
-97,Pack\nQuotidien 6,5.49,€,Pack\nQuotidien,5.99,5.99
-99,Pack\nQuotidien 1,1.09,€,Pack\nQuotidien,1.19,1.19
-100,Pack\nQuotidien 2,2.29,€,Pack\nQuotidien,2.49,2.49
-101,Pack\nQuotidien 3,5.49,€,Pack\nQuotidien,5.99,5.99
-102,Pack\nQuotidien 4,5.49,€,Pack\nQuotidien,5.99,5.99
-103,Pack\nQuotidien 5,5.49,€,Pack\nQuotidien,5.99,5.99
-104,Pack\nQuotidien 6,5.49,€,Pack\nQuotidien,5.99,5.99
+92,Pack Quotidien 1,1.09,€,Pack Quotidien,1.19,1.19
+93,Pack Quotidien 2,2.29,€,Pack Quotidien,2.49,2.49
+94,Pack Quotidien 3,5.49,€,Pack Quotidien,5.99,5.99
+95,Pack Quotidien 4,5.49,€,Pack Quotidien,5.99,5.99
+96,Pack Quotidien 5,5.49,€,Pack Quotidien,5.99,5.99
+97,Pack Quotidien 6,5.49,€,Pack Quotidien,5.99,5.99
+99,Pack Quotidien 1,1.09,€,Pack Quotidien,1.19,1.19
+100,Pack Quotidien 2,2.29,€,Pack Quotidien,2.49,2.49
+101,Pack Quotidien 3,5.49,€,Pack Quotidien,5.99,5.99
+102,Pack Quotidien 4,5.49,€,Pack Quotidien,5.99,5.99
+103,Pack Quotidien 5,5.49,€,Pack Quotidien,5.99,5.99
+104,Pack Quotidien 6,5.49,€,Pack Quotidien,5.99,5.99
 1100101,Pack d'Entraînement de Filles 7 étoiles,54.99,€,Pack d'Entraînement de Filles,59.99,59.99
 1100102,Pack d'Entraînement de Filles 7 étoiles,54.99,€,Pack d'Entraînement de Filles,59.99,59.99
 1100103,Pack d'Entraînement de Filles 7 étoiles,54.99,€,Pack d'Entraînement de Filles,59.99,59.99
@@ -258,7 +258,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 126,Pack Surprise 2,74.99,€,Pack Surprise,84.99,84.99
 127,Parchemin de Sanctuaire,5.49,€,Parchemin de Sanctuaire,5.99,5.99
 128,Permis de Patrouille,5.49,€,Permis de Patrouille,5.99,5.99
-129,Pack de\nSoda,10.99,€,Pack de\nSoda,11.99,11.99
+129,Pack de Soda,10.99,€,Pack de Soda,11.99,11.99
 130,Boîte Magique 1,109.99,€,Boîte Magique 1,119.99,119.99
 131,Boîte Magique 2,54.99,€,Boîte Magique 2,59.99,59.99
 132,Boîte Magique 3,21.99,€,Boîte Magique 3,23.99,23.99
@@ -374,7 +374,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 195,Offres Exclusives de Débutant,10.99,€,Offres Exclusives de Débutant,11.99,11.99
 196,Offres Exclusives de Débutant,32.99,€,Offres Exclusives de Débutant,35.99,35.99
 197,Offres Exclusives de Débutant,54.99,€,Offres Exclusives de Débutant,59.99,59.99
-198,Pack\nQuotidien 7,5.49,€,Pack\nQuotidien,5.99,5.99
+198,Pack Quotidien 7,5.49,€,Pack Quotidien,5.99,5.99
 199,Pack Mensuel 9,109.99,€,Pack Mensuel,119.99,119.99
 200,Pack Hebdomadaire 5,89.99,€,Pack Hebdomadaire,94.99,94.99
 201,Pack Hebdomadaire 6,109.99,€,Pack Hebdomadaire,119.99,119.99
@@ -460,7 +460,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 277,Offres Magiques 2,74.99,€,Offres Magiques 2,84.99,84.99
 278,Offres Magiques 3,109.99,€,Offres Magiques 3,119.99,119.99
 279,Pack Personnalisé 1,74.99,€,Pack Personnalisé 1,84.99,84.99
-280,Personnalisé 2,21.99,€,Pack Personnalisé 2,23.99,23.99
+280,Pack Personnalisé 2,21.99,€,Pack Personnalisé 2,23.99,23.99
 281,Pack Personnalisé 3,10.99,€,Pack Personnalisé 3,11.99,11.99
 282,Carte Mensuelle,10.99,€,Carte Mensuelle - Réduc. du 1er achat,11.99,11.99
 283,Petite Carte Mensuelle,2.29,€,Petite Carte Mensuelle - Réduc. du 1er achat,2.49,2.49
@@ -522,9 +522,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 309,Pack d'Été 4,21.99,€,Pack d'Été,23.99,23.99
 310,Pack d'Été 5,5.49,€,Pack d'Été,5.99,5.99
 311,Pack d'Été 6,1.09,€,Pack d'Été,1.19,1.19
-1709101,Offre\nPersonnalisée,32.99,€,Offre\nPersonnalisée,35.99,35.99
-1709102,Offre\nPersonnalisée,74.99,€,Offre\nPersonnalisée,84.99,84.99
-1709103,Offre\nPersonnalisée,109.99,€,Offre\nPersonnalisée,119.99,119.99
+1709101,Offre Personnalisée,32.99,€,Offre Personnalisée,35.99,35.99
+1709102,Offre Personnalisée,74.99,€,Offre Personnalisée,84.99,84.99
+1709103,Offre Personnalisée,109.99,€,Offre Personnalisée,119.99,119.99
 312,Pack de Tenue 1,5.49,€,Pack de Tenue 1,5.99,5.99
 313,Pack de Tenue 2,10.99,€,Pack de Tenue 2,11.99,11.99
 314,Pack de Tenue 3,21.99,€,Pack de Tenue 3,23.99,23.99
@@ -533,7 +533,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 317,Panier du Chaperon Rouge,5.49,€,Panier du Chaperon Rouge,5.99,5.99
 318,Panier du Chaperon Rouge,16.99,€,Panier du Chaperon Rouge,17.99,17.99
 319,Pack Spécial de Miss Yume 2022,16.99,€,Pack Spécial de Miss Yume 2022,17.99,17.99
-320,Capsules\nde Débutant,21.99,€,Capsules\nde Débutant,23.99,23.99
+320,Capsules de Débutant,21.99,€,Capsules de Débutant,23.99,23.99
 321,Investissement du Débutant,21.99,€,Investissement du Débutant,23.99,23.99
 322,Surprise d'Halloween 1,10.99,€,Surprise d'Halloween 1,11.99,11.99
 323,Surprise d'Halloween 2,54.99,€,Surprise d'Halloween 2,59.99,59.99
@@ -632,7 +632,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 417,Pack du Capsu-Simulator 2,10.99,€,Pack du Capsu-Simulator 2,11.99,11.99
 418,Pack du Capsu-Simulator 3,21.99,€,Pack du Capsu-Simulator 3,23.99,23.99
 419,Pack du Capsu-Simulator 4,54.99,€,Pack du Capsu-Simulator 4,59.99,59.99
-420,Pass du\nSanctuaire,21.99,€,Pass du\nSanctuaire,23.99,23.99
+420,Pass du Sanctuaire,21.99,€,Pass du Sanctuaire,23.99,23.99
 421,Pack des Relayeurs 1,5.49,€,Pack des Relayeurs 1,5.99,5.99
 422,Pack des Relayeurs 3,1.09,€,Pack des Relayeurs 3,1.19,1.19
 423,Pack des Relayeurs 4,16.99,€,Pack des Relayeurs 4,17.99,17.99
@@ -691,9 +691,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 476,Pack de Réparation 5,109.99,€,Pack de Réparation,119.99,119.99
 477,Pass des Âmes,21.99,€,Pass des Âmes,23.99,23.99
 478,Pack du Booster Optimal 1,5.49,€,Pack du Booster Optimal 1,5.99,5.99
-479,Pack de Halloween,2.29,€,Pack de Halloween 1,2.49,2.49
-480,Pack de Boîte Inédite,109.99,€,Pack de Boîte Inédite,119.99,119.99
-481,Pack de Boîte Deluxe,109.99,€,Pack de Boîte Deluxe,119.99,119.99
+479,Pack de Halloween 1,2.29,€,Pack de Halloween 1,2.49,2.49
+480,Pack de Boîte Inédite,17.99,€,Pack de Boîte Inédite,17.99,17.99
+481,Pack de Boîte Deluxe,35.99,€,Pack de Boîte Deluxe,35.99,35.99
 482,Pack du Booster Optimal 3,1.09,€,Pack du Booster Optimal 3,1.19,1.19
 483,Pack du Booster Optimal 4,16.99,€,Pack du Booster Optimal 4,17.99,17.99
 484,Pack du Booster Optimal 6,2.29,€,Pack du Booster Optimal 6,2.49,2.49
@@ -703,3 +703,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 488,Pack de Halloween 3,10.99,€,Pack de Halloween 3,11.99,11.99
 489,Pack de Halloween 4,21.99,€,Pack de Halloween 4,23.99,23.99
 490,Pack de Halloween 5,32.99,€,Pack de Halloween 5,35.99,35.99
+492,Pack de Bulles 1 (Quotidien),,,Pack de Bulles 1 (Quotidien),,
+493,Pack de Bulles 2 (Quotidien),,,Pack de Bulles 2 (Quotidien),,
+494,Pack de Bulles 3 (Quotidien),,,Pack de Bulles 3 (Quotidien),,
+495,Pack de Bulles 4 (Quotidien),,,Pack de Bulles 4 (Quotidien),,
+496,Pack de Bulles 5 (Quotidien),,,Pack de Bulles 5 (Quotidien),,
+497,Pack de Bulles 6 (Quotidien),,,Pack de Bulles 6 (Quotidien),,

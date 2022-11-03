@@ -3329,7 +3329,7 @@ WISH_GACHA_TIPS_2,Touchez ici pour choisir votre Fille Souhaitée
 WISH_GACHA_TIPS_3,"Choisissez votre Fille Souhaitée et changez-la à tout moment ! Plus vous tirerez de Capsule, plus vos chances d'obtenir la Fille Souhaitée seront élevées (Changer de Fille Souhaitée ne réinitialisera PAS votre progression actuelle)."
 WISH_GACHA_SELECT_PARTNER_WINDOW,Choisissez votre Fille Souhaitée
 WISH_GACHA_SELECT_PARTNER_TIPS_1,Choisissez votre Fille Souhaitée
-WISH_GACHA_SELECT_PARTNER_TIPS_2,Êtes -vous sûr de vouloir changer votre Fille à Souhait ?
+WISH_GACHA_SELECT_PARTNER_TIPS_2,Êtes-vous sûr de vouloir changer votre Fille à Souhait ?
 PET_STORY_UNLOCK,Déverouillé au palier {1} de Serviteur
 THE_PET_HAS_NOT_DATA,Aucune Histoire de ce Serviteur
 ACTIVITY_ENTRANCE_TEST_BUY_TILI_WINDOW,Acheter les Certificats
@@ -6012,7 +6012,7 @@ GAME_ASSISTANT_TEXT26,Distributeur Normal
 GAME_ASSISTANT_TEXT27,Marché
 GAME_ASSISTANT_TEXT28,Vous n'avez choisi aucun objet
 GAME_ASSISTANT_TEXT29,Choisir
-GAME_ASSISTANT_TEXT30,Récompense de Galeries de Tenues
+GAME_ASSISTANT_TEXT30,Récompenses de Galeries de Tenues
 GAME_ASSISTANT_TEXT31,Réinitialiser
 GAME_ASSISTANT_TEXT32,Confirmer
 GAME_ASSISTANT_TEXT33,Patrouille
@@ -6055,7 +6055,7 @@ GAME_ASSISTANT_TEXT69,Aucune Maison choisie à défier
 GAME_ASSISTANT_TEXT70,Aucune Étape disponible à défier
 GAME_ASSISTANT_TEXT71,Récompense - Alchimie
 GAME_ASSISTANT_TEXT72,Récompense - Quiz
-GAME_ASSISTANT_TEXT73,Récompense - Arène : {1} fois
+GAME_ASSISTANT_TEXT73,Récompenses - Arène : {1} fois
 GAME_ASSISTANT_TEXT74,Récompense - Job
 GAME_ASSISTANT_TEXT75,{1} Tirage(s) dans le Distributeur Normal
 GAME_ASSISTANT_TEXT76,Récompense de Raid - Patrouille : {1} fois
@@ -6315,7 +6315,7 @@ PARTNER_WARMUP_TEXT01,Récompenses
 PARTNER_WARMUP_TEXT02,Visionner l'Épisode {1}
 PARTNER_WARMUP_TEXT03,Veuillez visionner l'histoire précédente.
 PARTNER_WARMUP_TEXT04,Voulez-vous revisionner l'histoire ?
-ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Terminez les tâches pour obtenir des Fragments Astraux et des Jetons de Capsule Cosmique Limités.|2. Utilisez les Fragments Astraux pour les échanger contre des récompenses.|3. Les Jetons de Capsule Cosmique Limités sont utilisables dans l'Autel Stellaire (Attention : Après la fin de l'événement, les Jetons de Capsule Cosmique Limités seront retirés de votre Sac).|4. Après la fin de l'événement, les Fragments Astraux non utilisés seront convertis en Pièce d'Or, 1 Fragment Astral = 50 000 Pièce d'Or qui vous seront distribuées par courrier."
+ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Terminez les tâches pour obtenir des Fragments Astraux et des Jetons de Capsule Cosmique.|2. Utilisez les Fragments Astraux pour les échanger contre des récompenses.|3. Après la fin de l'événement, les Fragments Astraux non utilisés seront convertis en Pièce d'Or, 1 Fragment Astral =50 000 Pièce d'Or qui vous seront distribuées par courrier."
 ACTIVITY_STAR_ALTAR_MISSION_TITLE01,Tâche
 ACTIVITY_STAR_ALTAR_MISSION_TITLE02,Échange
 PUB_MISSION_NOT_USE,Vous n'avez pas encore choisi le Parchemin de Jobs !
@@ -6787,7 +6787,7 @@ ACTIVITY_4ANIVERSARY_SIGN_TEXT12,Connectez-vous encore quelques jours pour pouvo
 ACTIVITY_4BIRTHDAY_TEXT07,"Pour chaque Mocktail offert,\nvous obtiendrez une des récompenses suivantes :"
 ACTIVITY_4BIRTHDAY_TIPS03,Vous pouvez dès maintenant accéder à la Boutique du bal où vous pourrez échanger les Mocktails contre d'autres objets !
 ACTIVITY_4BIRTHDAY_TEXT08,"Vous ne pouvez plus offrir des Mocktails à {1}, veuillez inviter une autre Fille pour essayer~"
-ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,"Impossible, plus que 5 récompenses restantes !"
+ACTIVITY_4BIRTHDAY_GAMBLE_TIPS04,"Impossible, moins de 5 récompenses restantes !"
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS05,"La musique est en train de jouer, veuillez patienter~"
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS06,"Vous avez obtenu cette récompense, impossible de changer."
 ACTIVITY_4BIRTHDAY_GAMBLE_TIPS07,Veuillez ajouter des récompenses dans les cases vides. Les récompenses précédemment sélectionnées ont déjà été ajoutées.
@@ -7682,19 +7682,30 @@ ACTIVITY_HALLOWEEN2022_RANK_TEXT04,Points
 ACTIVITY_PROMOTION_LADDER_TEXT13,Choisissez une Fille
 ACTIVITY_5WEEK_TEXT06,"Vous avez obtenu toutes les récompenses, Senpai~"
 ACTIVITY_BLIND_BOX_TEXT01,Quantité：{1}
-ACTIVITY_BLIND_BOX_TEXT02,拆盒1次
-ACTIVITY_BLIND_BOX_TEXT03,拆盒5次
-ACTIVITY_BLIND_BOX_TEXT04,第{1}档-请选择{2}个奖励
-ACTIVITY_BLIND_BOX_TEXT05,第{1}轮-第{2}档自选奖励
-ACTIVITY_BLIND_BOX_TEXT06,請選擇自選獎勵
-ACTIVITY_BLIND_BOX_TEXT07,是否確認抽取獎勵，抽取後，自選獎勵不可更改。
-ACTIVITY_BLIND_BOX_TEXT08,是否確認進入第2輪抽獎，進入第二輪後，第1輪的自選獎勵將不可抽取。
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT01,累計獲得
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT02,Obtention\nImmédiate
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,登入
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT04,福利
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT05,超值
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT06,豪華
+ACTIVITY_BLIND_BOX_TEXT02,Ouvrir x1
+ACTIVITY_BLIND_BOX_TEXT03,Ouvrir x5
+ACTIVITY_BLIND_BOX_TEXT04,{1}e Palier - Veuillez choisir {2} récompense(s)
+ACTIVITY_BLIND_BOX_TEXT05,{1}e Tour - Récompenses au choix du {2}e Palier
+ACTIVITY_BLIND_BOX_TEXT06,Veuillez d'abord choisir toutes les récompenses avant de pouvoir commencer à ouvrir les Boîtes Mystères.
+ACTIVITY_BLIND_BOX_TEXT07,"Une fois que vous aurez obtenu une récompense, vous ne pourrez plus modifier les récompenses du tour actuel. Voulez-vous continuer ?"
+ACTIVITY_BLIND_BOX_TEXT08,"Une fois au 2e Tour, vous ne pourrez plus obtenir les récompenses au choix du 1e Tour. Voulez-vous accéder au 2e Tour ?"
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT01,Récompense\ntotale
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT02,Obtention\nimmédiate
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,Jour
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT04,Gratuit
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT05,Inédite
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT06,Deluxe
 ACTIVITY_BLIND_BOX_MISSION,Obtenir {1} VIP EXP
 ACTIVITY_HALLOWEEN2022_TITLE,Halloween !
 ACTIVITY_HALLOWEEN2022_RANK_HELP,"1. Les Citrouilles que vous sculptez vous permettront d'accumuler des Points de Halloween : Épouvantrouille = 1 point, Chauve-Citrouille = 5 points, CHUITROUILLE = 25 points.|2. Les récompenses de classement vous seront envoyées en fonction des Points de Halloween que vous aurez accumulés."
+SOUL_EQUIP1_STRENGTHEN_HELP,"Optimisez vos Artefacts en améliorant leur Étoile, Niveau et Attribut.||Étoile|1. Améliorez le niveau d’Étoile d'un Artefact d'Âme avec un artefact identique 1 étoile (du même nom). Si le niveau d'Étoile d'un Artefact d'Âme a déjà été amélioré, ce dernier ne pourra plus être consommé pour améliorer un autre Artefact d'Âme.|2. Le Niveau maximum de l'Artefact d'Âme et la capacité de ses Attributs d'Âme augmenteront en fonction de son niveau d'Étoile.|3. Les Attributs Basiques de l'Artefact d'Âme augmenteront à mesure de son niveau d’Étoile (Attention : Améliorer le niveau d'Étoile d'un Artefact d'Âme ne renforce pas ses Attributs d'Âme).||Niveau|1. Utilisez des Pièces d'Or et des Lotus de Nacre pour améliorer le Niveau d'un Artefact d'Âme.|2. Les Attributs Basiques et les Attributs d’Âme augmenteront à mesure de son niveau (si vous avez d'abord amélioré le niveau d'un Artefact d'Âme et puis changé un de ses Attributs d'Âme, ces derniers augmenteront également).||Attribut d'Âme|1. La capacité d'Attribut d'Âme d'un Artefact dépend de son niveau d'Étoile actuel.|2. Consommez des Ciseaux de Cristal et des Miroirs Enchanteurs pour obtenir des Attributs d'Âme.|3. Si vous voulez changer les Attributs d'Âme, vous pourrez également consommer des Ciseaux de Cristal et des Miroirs Enchanteurs pour les changer.|4. Type des Attributs d'Âme：Attaque (+)/Attaque (%%)/PV (+)/PV (%%)/Précision/Blocage/Critique/Résistance aux Critiques/Dégâts des Compétences/Dégâts Divins/Chance de Contrôle/Immunité/Soins Reçus/Soins."
+SOUL_EQUIP2_STRENGTHEN_HELP,"Améliorez le niveau et le Grade d'une Pierre d'Âme pour la rendre plus puissante !||Étoile|1. Le rang d'étoile de chaque Pierre d’Âme est fixé lors de son obtention, et ne peut pas être amélioré. |2. Une Pierre d'Âme d'un rang d’étoile supérieur dispose de meilleurs Attributs Principaux, Attributs Secondaires, et son Niveau maximum sera également élevé.||Niveau|1. Consommez fdes Pierres d'Âme matérielles pour monter le niveau d'un Éclat de Pierre d'Âme que vous souhaitez améliorer.|2. Montez le niveau d'une Pierre d'Âme pour renforcer ses Attributs Principaux. 1 nouvel Attribut Secondaire sera déverrouillé tous les 5 niveaux améliorés (Si une Pierre d’Âme possède les 4 Attributs Secondaires dès son obtention, alors un de ses 4 Attributs Secondaires sera aléatoirement renforcé, tous les 5 niveaux améliorés).||Grade|1. Consommez des Pièces d'Or et des Dées Spirituels pour améliorer le Grade d'une Pierre d'Âme.|2. Après avoir amélioré le Grade d'une Pierre d'Âme, ses Attributs Principaux et ses Attributs Secondaires seront renforcés.|3. Vous pouvez également réinitialiser le Grade d'une Pierre d'Âme en utilisant des Gemmes, ainsi les matériaux utilisés pour améliorer son Grade vous seront rendus.||Attribut|1. Après avoir monté le niveau d'une Pierre d'Âme à son maximum, vous pourrez consommer des Gemmes et Amulettes de Charme pour changer ses Attribus Secondaires.|2. Les Attributs Secondaires d'une Pierre d'Âme sont aléatoirement déterminés lors de son obtention (2 Attributs Secondaires au minimum, 4 au maximum).|3.Type des Attributs Secondaires：|Attaque/PV/Précision/Blocage/Critique/Résistance aux Critiques/Dégâts des Compétences/Dégâts Divins/Chance de Contrôle/Immunité/Soins Reçus/Soins|4. Les statistiques des Attributs Secondaires les plus élevées possibles pour une Pierre d'Âme Orange 6 étoiles sont les suivantes：|+1726 Attaque|+60759 PV|+1,28%% Précision|+1,28%% Blocage|+1,28%% Blocage|+0,64%% Critique|+0,96%% Résistance aux Critiques|+0,96%% Dégâts des Compétences|+0,48%% Dégâts Divins|+0,96%% Chance de Contrôle|+0,96%% Immunité|+0.64%% Soins Reçus|+0.64%% Soins."
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT07,2100%%
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT08,2000%%
+ACTIVITY_BLIND_BOX_HELP,"1. Durant cet événement, choisissez vos récompenses des quatre paliers parmi les options de récompenses.|2. Une fois avoir choisi vos récompenses, vous pourrez consommer des Tickets et ouvrir les Boîtes Mystères.|3. Une fois que vous aurez obtenu une récompense, vous ne pourrez plus modifier les récompenses du tour actuel.|4. 1e & 2e Palier : 3 récompenses à choisir\n3e & 4e Palier : 1 récompense à choisir\nUne Récompense Finale à obtenir dans chaque tour.|5. Après avoir obtenu la Récompense Finale, vous pourrez accéder au tour suivant. Cet événement comprends 2 tours au total.|6. Récompense Finale garantie à la 30ème ouverture de Boîte Mystère.|6. Après la fin de l'événement, les Tickets de Boîte Mystère non utilisés seront automatiquement converties en Pièce d'Or, 1 Ticket de Boîte Mystère = 500K Pièces d'Or.|8. Moyen d'obtention des Tickets de Boîte Mystère : Pass, Bonus de Recharge."
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT09,Valeur
+ACTIVITY_BLIND_BOX_TITLE,Boîte\nMystère
+ACTIVITY_BLIND_BOX_TEXT09,{1}e Tour - Récompense Finale
+ACTIVITY_BLIND_BOX_TEXT10,Veuillez sélectionner plus de récompenses !
+ACTIVITY_BLIND_BOX_TEXT11,"Félicitations, vous avez obtenu la Récompense Finale du 2e Tour !\nVous avez encore la possibilité d'obtenir des récompenses durant ce tour, continuez à ouvrir des Boîtes Mystères, Senpai~"
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT10,{1}

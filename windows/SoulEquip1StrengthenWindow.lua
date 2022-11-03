@@ -83,11 +83,18 @@ function SoulEquip1StrengthenWindow:getUIComponent()
 	self.labelTips = self.content3:ComponentByName("labelTips", typeof(UILabel))
 	local wrapContent = self.exScroller:ComponentByName("itemGroup", typeof(UIWrapContent))
 	self.wrapContent = FixedWrapContent.new(self.exScrollView, wrapContent, self.exItem, SoulEquip1ExItem, self)
+	self.btnHelp = self.groupAction:NodeByName("btnHelp").gameObject
 end
 
 function SoulEquip1StrengthenWindow:register()
 	UIEventListener.Get(self.closeBtn).onClick = function ()
 		xyd.WindowManager.get():closeWindow(self.name_)
+	end
+
+	UIEventListener.Get(self.btnHelp).onClick = function ()
+		xyd.WindowManager:get():openWindow("help_window", {
+			key = "SOUL_EQUIP1_STRENGTHEN_HELP"
+		})
 	end
 
 	UIEventListener.Get(self.btnLevelUpStar).onClick = function ()
@@ -684,6 +691,14 @@ function SoulEquip1StrengthenWindow:dispose()
 			if wnd then
 				wnd:onClickTab()
 			end
+
+			local wnd2 = xyd.getWindow("backpack_window")
+
+			if wnd2 then
+				wnd2.is_soulequip_first_data = true
+
+				wnd2:onTabTouch(xyd.BackpackShowType.SOUL_EUQIP)
+			end
 		end)
 
 		self.hasSendLevleUpMsg = true
@@ -692,6 +707,14 @@ function SoulEquip1StrengthenWindow:dispose()
 
 		if wnd then
 			wnd:onClickTab()
+		end
+
+		local wnd2 = xyd.getWindow("backpack_window")
+
+		if wnd2 then
+			wnd2.is_soulequip_first_data = true
+
+			wnd2:onTabTouch(xyd.BackpackShowType.SOUL_EUQIP)
 		end
 	end
 end

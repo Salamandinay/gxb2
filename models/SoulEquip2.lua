@@ -63,6 +63,10 @@ function SoulEquip2:populate(params)
 end
 
 function SoulEquip2:getParams()
+	self.params.lv = self.lev
+	self.params.awake = self.awake
+	self.params.ownerID = self.ownerID
+
 	return self.params
 end
 
@@ -277,10 +281,6 @@ end
 
 function SoulEquip2:setLevel(lv)
 	self.lev = lv
-end
-
-function SoulEquip2:setExp(exp)
-	self.exp = exp
 end
 
 function SoulEquip2:setExp(exp)

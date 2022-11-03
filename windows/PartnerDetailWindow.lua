@@ -2142,17 +2142,19 @@ function PartnerDetailWindow:onAttrChange(event)
 	end
 
 	for key in pairs(changed_attr) do
-		index = index + 1
-		local tip = nil
+		if key ~= xyd.BUFF_CRIT_TIME_LIMIT then
+			index = index + 1
+			local tip = nil
 
-		if self.attrTipsItems[index] == nil then
-			self.attrTipsItems[index] = AttrTipsItem.new(self.attrChangeGroup)
+			if self.attrTipsItems[index] == nil then
+				self.attrTipsItems[index] = AttrTipsItem.new(self.attrChangeGroup)
+			end
+
+			tip = self.attrTipsItems[index]
+
+			tip:SetActive(true)
+			tip:setInfo(key, changed_attr[key])
 		end
-
-		tip = self.attrTipsItems[index]
-
-		tip:SetActive(true)
-		tip:setInfo(key, changed_attr[key])
 	end
 
 	for i = index + 1, #self.attrTipsItems do

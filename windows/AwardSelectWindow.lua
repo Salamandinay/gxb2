@@ -225,6 +225,14 @@ end
 function AwardSelectWindow:useFunction()
 	if self.itemType == xyd.ItemType.OPTIONAL_TREASURE_CHEST then
 		if self.curNum_ > 0 and self.curNum_ <= self.itemNum then
+			if xyd.tables.itemTable:isSoulEquipBox(self.itemID) then
+				local wnd = xyd.getWindow("backpack_window")
+
+				if wnd then
+					wnd.haveReqOpen = true
+				end
+			end
+
 			xyd.models.backpack:useOptionalGiftBox(self.itemID, self.curNum_, self:getOptionIndex(self.selectedItemId), self.selectedItemId)
 			self:close()
 

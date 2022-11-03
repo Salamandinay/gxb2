@@ -1,5 +1,7 @@
 local BaseWindow = import(".BaseWindow")
 local ItemUseWindow = class("ItemUseWindow", BaseWindow)
+local SoulEquip1 = import("app.models.SoulEquip1")
+local SoulEquip2 = import("app.models.SoulEquip2")
 local SelectNum = import("app.components.SelectNum")
 local SingleWayItem = import("app.components.SingleWayItem")
 
@@ -112,6 +114,7 @@ function ItemUseWindow:registerEvent()
 	xyd.setDarkenBtnBehavior(self.btnUse_, self, self.useTouch)
 	xyd.setDarkenBtnBehavior(self.btnGetWay_, self, self.getWayTouch)
 	self.eventProxy_:addEventListener(xyd.event.USE_ITEM, handler(self, self.useCallback))
+	self.eventProxy_:addEventListener(xyd.event.GET_NEW_SOUL_EQUIP_PUSH_BACK, self.oGetNewSoulEquipPushBack, self)
 end
 
 function ItemUseWindow:useTouch()
@@ -155,6 +158,8 @@ function ItemUseWindow:useTouch()
 			self.itemCallback(self.curNum_)
 			self:close()
 		else
+			self.haveReqOpen = true
+
 			xyd.models.backpack:useItem(tonumber(self.itemID), self.curNum_)
 		end
 	end
@@ -233,7 +238,7 @@ function ItemUseWindow:useCallback(event)
 				xyd.closeWindow("item_use_window")
 			end)
 		end
-	else
+	elseif not xyd.tables.itemTable:isSoulEquipBox(self.itemID) then
 		if xyd.WindowManager.get():isOpen("item_tips_window") then
 			xyd.WindowManager.get():closeWindow("item_tips_window")
 		end
@@ -405,6 +410,55 @@ function ItemUseWindow:setMultilingualText()
 	if (self.itemID == xyd.ItemID.NEWYEAR_WELFARE_GIFTBAG2022 or xyd.ItemID.NEWYEAR_SUPER_GIFTBAG2022) and xyd.Global.lang == "fr_fr" then
 		self.labelName_.fontSize = 20
 	end
+end
+
+function ItemUseWindow:oGetNewSoulEquipPushBack(event)
+	if not self.haveReqOpen then
+		return
+	end
+
+	local data = xyd.decodeProtoBuf(event.data)
+	local items = {}
+
+	for key, info in pairs(data.items) do
+		if info and info.equip_id then
+			local itemType = xyd.tables.itemTable:getType(info.table_id)
+			local equip = nil
+
+			if itemType == xyd.ItemType.SOUL_EQUIP1 then
+				equip = SoulEquip1.new()
+			else
+				equip = SoulEquip2.new()
+			end
+
+			info.ownerID = info.pos
+
+			equip:populate(info)
+			table.insert(items, {
+				item_num = 1,
+				item_id = equip:getTableID(),
+				soulEquipInfo = equip:getSoulEquipInfo()
+			})
+		end
+	end
+
+	if xyd.WindowManager.get():isOpen("item_tips_window") then
+		xyd.WindowManager.get():closeWindow("item_tips_window")
+	end
+
+	if xyd.WindowManager.get():isOpen("award_item_tips_window") then
+		xyd.WindowManager.get():closeWindow("award_item_tips_window")
+	end
+
+	self:close(function ()
+		if #items > 0 then
+			local params = {
+				items = items
+			}
+
+			xyd.WindowManager.get():openWindow("alert_item_window", params)
+		end
+	end)
 end
 
 return ItemUseWindow

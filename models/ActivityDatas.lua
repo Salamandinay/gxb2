@@ -320,7 +320,10 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_LIMIT_CULTIVATE] = require("app.models.datas.ActivityLimitCultivateData"),
 	[xyd.ActivityID.ACTIVITY_HW2022_SHOP] = require("app.models.datas.ActivityHw2022ShopData"),
 	[xyd.ActivityID.ACTIVITY_HW2022_SUPPLY] = require("app.models.datas.ActivityHw2022SupplyData"),
-	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = require("app.models.datas.ActivityPromotionLadder2Data")
+	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = require("app.models.datas.ActivityPromotionLadder2Data"),
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX] = require("app.models.datas.ActivityBlindBoxData"),
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX_BATTLE_PASS] = require("app.models.datas.ActivityBlindBoxBattlePassData"),
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = require("app.models.datas.ActivityBlindBoxMissionData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

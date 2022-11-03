@@ -31,6 +31,7 @@ function AlertAwardWindow:initData()
 	local starData = {}
 	local levData = {}
 	local noWaysData = {}
+	local equipInfoData = {}
 
 	for i = 1, #self.items do
 		local item = self.items[i]
@@ -38,6 +39,7 @@ function AlertAwardWindow:initData()
 		starData[item.item_id] = item.star
 		levData[item.item_id] = item.lev
 		noWaysData[item.item_id] = item.noWays
+		equipInfoData[item.item_id] = item.soulEquipInfo
 	end
 
 	self.items = {}
@@ -48,7 +50,8 @@ function AlertAwardWindow:initData()
 			item_num = v,
 			star = starData[id],
 			lev = levData[id],
-			noWays = noWaysData[id]
+			noWays = noWaysData[id],
+			soulEquipInfo = equipInfoData[id]
 		})
 	end
 
@@ -158,7 +161,8 @@ function AlertAwardWindow:createItem(data)
 
 		itemIcon:setInfo({
 			itemID = data.item_id,
-			num = data.item_num
+			num = data.item_num,
+			soulEquipInfo = data.soulEquipInfo
 		})
 	else
 		itemIcon = ItemIcon.new(self.groupItem_)
@@ -166,7 +170,8 @@ function AlertAwardWindow:createItem(data)
 		itemIcon:setInfo({
 			hideText = true,
 			itemID = data.item_id,
-			num = data.item_num
+			num = data.item_num,
+			soulEquipInfo = data.soulEquipInfo
 		})
 	end
 

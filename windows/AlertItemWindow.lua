@@ -91,8 +91,60 @@ function AlertItemWindow:initUIComponent()
 			num = v.item_num,
 			heroShowNum = self.heroShowNum,
 			star = v.star,
-			is_vowed = v.is_vowed
+			is_vowed = v.is_vowed,
+			soulEquipInfo = v.soulEquipInfo
 		}
+
+		if params.soulEquipInfo and params.soulEquipInfo.soulEquipID then
+			function params.callback()
+				local params1 = {
+					itemNum = 1,
+					hideText = true,
+					show_has_num = false,
+					itemID = v.item_id,
+					soulEquipInfo = v.soulEquipInfo
+				}
+
+				function params1.lockClickCallBack()
+					local equipID = params.soulEquipInfo.soulEquipID
+					local equip = xyd.models.slot:getSoulEquip(equipID)
+
+					if equip then
+						local lockFlag = equip:getIsLock()
+						local lock = 1
+
+						if lockFlag then
+							lock = 0
+						end
+
+						xyd.models.slot:reqLockSoulEquip(equip:getSoulEquipID(), lock, function ()
+							equip:setLock(lock)
+
+							local win = xyd.getWindow("item_tips_window")
+
+							if win and win.diffItemTips then
+								win.diffItemTips:setBtnLockState(equip:getIsLock())
+							elseif win and win.itemTips_ then
+								win.itemTips_:setBtnLockState(equip:getIsLock())
+							end
+						end)
+					end
+				end
+
+				function params1.lockStateCallBack()
+					local equipID = params.soulEquipInfo.soulEquipID
+					local equip = xyd.models.slot:getSoulEquip(equipID)
+
+					if equip then
+						return equip:getIsLock()
+					else
+						return false
+					end
+				end
+
+				xyd.WindowManager.get():openWindow("item_tips_window", params1)
+			end
+		end
 
 		table.insert(infos, params)
 	end

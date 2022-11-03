@@ -42,6 +42,10 @@ function SoulEquip1:populate(params)
 end
 
 function SoulEquip1:getParams()
+	self.params.lv = self.lev
+	self.params.awake = self.awake
+	self.params.ownerID = self.ownerID
+
 	return self.params
 end
 

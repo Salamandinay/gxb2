@@ -675,6 +675,9 @@ function MailContent.Json2Table(jsonName)
 		end,
 		activity_repair_console_mission_text = function ()
 			table = xyd.tables.activityRepairConsoleMissionTextTable
+		end,
+		activity_blind_box_mission = function ()
+			table = xyd.tables.activityBlindBoxMissionTable
 		end
 	}
 

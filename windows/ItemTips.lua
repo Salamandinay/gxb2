@@ -754,6 +754,16 @@ function ItemTips:initBackpackBtn()
 		self.btnTop_:SetActive(false)
 	end
 
+	if self.btnLock and self.data.lockClickCallBack and self.data.lockStateCallBack then
+		self.btnLock.gameObject:SetActive(true)
+
+		if self.lockImg and self.data.lockStateCallBack(self.data) then
+			xyd.setUISpriteAsync(self.lockImg, nil, "partner_lock_btn")
+		else
+			xyd.setUISpriteAsync(self.lockImg, nil, "partner_unlock_btn")
+		end
+	end
+
 	local box_id = xyd.tables.itemTable:getDropBoxShow(self.itemID)
 
 	if box_id ~= nil and box_id ~= 0 or self.type_ == xyd.ItemType.OPTIONAL_TREASURE_CHEST or xyd.tables.itemTable:checkJobBoxID(self.itemID) then

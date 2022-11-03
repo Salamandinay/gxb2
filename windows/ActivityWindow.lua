@@ -1817,6 +1817,15 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = function ()
 		return require("app.windows.activity.ActivityPromotionLadder2")
+	end,
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX] = function ()
+		return require("app.windows.activity.ActivityBlindBox")
+	end,
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX_BATTLE_PASS] = function ()
+		return require("app.windows.activity.ActivityBlindBoxBattlePass")
+	end,
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = function ()
+		return require("app.windows.activity.ActivityBlindBoxMission")
 	end
 }
 

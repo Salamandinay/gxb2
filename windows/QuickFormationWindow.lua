@@ -1226,7 +1226,7 @@ function QuickFormationWindow:setPartnerList(partnerParams, pet)
 
 		np.equipments = {}
 		np.potentials = {}
-		np.souls_data = partnerInfo.souls_data
+		np.souls_data = partnerInfo:getSoulEquips()
 		local potentials = partnerInfo:getPotential()
 		local equips = partnerInfo:getEquipment()
 
@@ -1289,6 +1289,10 @@ function QuickFormationWindow:updatePartnerInfos()
 			end
 
 			np.select_treasure = partnerInfo.select_treasure
+			np.souls_data = partnerInfo:getSoulEquips()
+
+			np:updateAttrs()
+
 			self.partnerInfos_[self.selectTeam][pos] = np
 			self.partnerInfoTmp_[self.selectTeam][np:getPartnerID()] = np
 		end

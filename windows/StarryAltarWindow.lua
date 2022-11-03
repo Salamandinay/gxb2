@@ -227,7 +227,7 @@ function StarryAltarWindow:updateActivityLayout()
 	local missionId = 2
 	local limit = xyd.tables.activityStarAltarMissionTable:getLimit(missionId)
 
-	if self.actData.detail.is_completeds[missionId] < limit then
+	if self.actData and self.actData.detail and self.actData.detail.is_completeds[missionId] < limit then
 		local value = self.actData.detail.values[missionId]
 		local completeValue = xyd.tables.activityStarAltarMissionTable:getCompValue(missionId)
 		local actName = xyd.tables.activityTextTable:getTitle(self.actId)

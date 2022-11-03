@@ -141,6 +141,7 @@ function SoulEquip2StrengthenWindow:getUIComponent()
 	self.labelRes32NeedNum = self.iconRes32:ComponentByName("labelRes2NeedNum", typeof(UILabel))
 	local wrapContent = self.equip2Scroller:ComponentByName("itemGroup", typeof(MultiRowWrapContent))
 	self.multiWrap = require("app.common.ui.FixedMultiWrapContent").new(self.equip2ScrollView, wrapContent, self.equip2Item, SoulEquip2StrengthenItem, self)
+	self.btnHelp = self.groupAction:NodeByName("btnHelp").gameObject
 end
 
 function SoulEquip2StrengthenWindow:register()
@@ -149,6 +150,12 @@ function SoulEquip2StrengthenWindow:register()
 
 	UIEventListener.Get(self.closeBtn).onClick = function ()
 		xyd.WindowManager.get():closeWindow(self.name_)
+	end
+
+	UIEventListener.Get(self.btnHelp).onClick = function ()
+		xyd.WindowManager:get():openWindow("help_window", {
+			key = "SOUL_EQUIP2_STRENGTHEN_HELP"
+		})
 	end
 
 	UIEventListener.Get(self.btnLevelUp).onClick = function ()
@@ -599,7 +606,7 @@ function SoulEquip2StrengthenWindow:updateContent1(notUpdateWrapContent)
 	for id, equip in pairs(equips) do
 		local pos = equip:getPos()
 
-		if self.filterIndex == 0 or pos == self.filterIndex then
+		if (self.filterIndex == 0 or pos == self.filterIndex) and equip:getSoulEquipID() ~= self.equip:getSoulEquipID() then
 			local flag = true
 
 			if self.filterSuit > 0 and self.filterSuit ~= xyd.tables.soulEquip2Table:getGroup(equip:getTableID()) then
@@ -1343,6 +1350,14 @@ function SoulEquip2StrengthenWindow:dispose()
 	if wnd then
 		wnd:onClickTab()
 	end
+
+	local wnd2 = xyd.getWindow("backpack_window")
+
+	if wnd2 then
+		wnd2.is_soulequip_first_data = true
+
+		wnd2:onTabTouch(xyd.BackpackShowType.SOUL_EUQIP)
+	end
 end
 
 function SoulEquip2StrengthenItem:ctor(go, parent)
@@ -1437,7 +1452,7 @@ function SoulEquip2StrengthenItem:onClickIcon()
 			end,
 			maxLimitNum = max_num,
 			curNumInit = curNumInit,
-			tipsLabelText = __("沒配"),
+			tipsLabelText = __("ACTIVITY_ICE_SUMMER_INPUT"),
 			maxLimitTips = __("SOUL_EQUIP_TEXT92")
 		}
 

@@ -36,6 +36,8 @@ function QuickFormation:onGetTeamsInfo(event)
 end
 
 function QuickFormation:initFomations(formation_list)
+	print("<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>")
+
 	for _, info in ipairs(formation_list) do
 		local id = info.id
 
@@ -62,6 +64,8 @@ function QuickFormation:setFomationInfo(id, info)
 		self.partnersInfo_[id] = {}
 
 		if info.partners then
+			print("id           ", id)
+
 			for _, partner_info in ipairs(info.partners) do
 				local partnerID = partner_info.partner_id
 				local pos = tonumber(partner_info.pos)
@@ -70,18 +74,20 @@ function QuickFormation:setFomationInfo(id, info)
 				partnerInfo:setLock(1, xyd.PartnerFlag.QUICK_FORMATION)
 
 				local np = Partner.new()
-				local info = partnerInfo:getInfo()
+				local partner = partnerInfo:getInfo()
 
 				if partner_info.table_id and partner_info.table_id > 0 then
-					if info.tableID ~= partner_info.table_id then
+					if partner.tableID ~= partner_info.table_id then
 						np.awakeTableChange = true
 					end
 
-					info.tableID = partner_info.table_id
+					partner.tableID = partner_info.table_id
 				end
 
-				np:populate(info)
+				np:populate(partner)
 				np:setEquip(partner_info.equips)
+
+				np.souls_data = partnerInfo:getSoulEquips()
 
 				if np.equipments and np.equipments[5] then
 					local treasures = np.treasures
@@ -94,6 +100,8 @@ function QuickFormation:setFomationInfo(id, info)
 				np.skill_index = partner_info.skill_index
 				self.formationInfo_[id].partners[pos] = np
 				self.partnersInfo_[id][tonumber(partner_info.partner_id)] = np
+
+				np:updateAttrs()
 			end
 		end
 	end
@@ -123,7 +131,7 @@ function QuickFormation:updatePartnerInfo()
 					partner_info.star_origin = partnerInfo.star_origin
 					partner_info.treasures = partnerInfo.treasures
 					partner_info.travel = partnerInfo.travel
-					partner_info.souls_data = partnerInfo.souls_data
+					partner_info.souls_data = partner:getSoulEquips()
 
 					if partnerInfo.tableID and partnerInfo.tableID > 0 then
 						if partner_info.tableID ~= partnerInfo.tableID then

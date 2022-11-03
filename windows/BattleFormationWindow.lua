@@ -2977,12 +2977,16 @@ function BattleFormationWindow:initSHPartnerData(groupID, needUpdateTop)
 	table.sort(partnerDataList, function (a, b)
 		local lva = a.partnerInfo.lv or a.partnerInfo.level
 		local lvb = b.partnerInfo.lv or b.partnerInfo.level
-		local table_id_a = a.partnerInfo.table_id * 100
-		local table_id_b = b.partnerInfo.table_id * 100
 		local a_partner_id = a.partnerInfo.pr_id or a.partnerInfo.partnerID
 		local b_partner_id = b.partnerInfo.pr_id or b.partnerInfo.partnerID
 
-		return lva * 1000000000 + table_id_a + a_partner_id > lvb * 1000000000 + table_id_b + b_partner_id
+		if lva - lvb ~= 0 then
+			return lvb < lva
+		elseif a.partnerInfo.table_id == b.partnerInfo.table_id then
+			return b_partner_id < a_partner_id
+		else
+			return a.partnerInfo.table_id < b.partnerInfo.table_id
+		end
 	end)
 
 	for i in pairs(self.nowPartnerList) do

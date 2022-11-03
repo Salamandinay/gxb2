@@ -2,6 +2,8 @@ local ItemIcon = import("app.components.ItemIcon")
 local HeroIcon = import("app.components.HeroIcon")
 local Partner = import("app.models.Partner")
 local BackpackItem = class("BackpackItem")
+local SoulEquip1 = import("app.models.SoulEquip1")
+local SoulEquip2 = import("app.models.SoulEquip2")
 local ItemTable = xyd.tables.itemTable
 local EquipTable = xyd.tables.equipTable
 local PartnerTable = xyd.tables.partnerTable
@@ -39,7 +41,7 @@ function BackpackItem:update(index, realIndex, info)
 		self.go:SetActive(true)
 	end
 
-	if self.curID == info.itemID and self.selfNum == info.itemNum then
+	if self.curID == info.itemID and self.selfNum == info.itemNum and not info.soulEquipID then
 		return
 	end
 
@@ -140,6 +142,94 @@ function BackpackItem:update(index, realIndex, info)
 
 		if type_ == xyd.ItemType.SOUL_EQUIP1 or type_ == xyd.ItemType.SOUL_EQUIP2_POS1 or type_ == xyd.ItemType.SOUL_EQUIP2_POS2 or type_ == xyd.ItemType.SOUL_EQUIP2_POS3 or type_ == xyd.ItemType.SOUL_EQUIP2_POS4 then
 			param.soulEquipInfo = self.data:getSoulEquipInfo()
+			local equipID1 = param.soulEquipInfo.soulEquipID
+			local equip1 = xyd.models.slot:getSoulEquip(equipID1)
+
+			if equip1 then
+				local partnerID1 = equip1:getOwnerPartnerID()
+
+				if partnerID1 and partnerID1 > 0 and xyd.models.slot:getPartner(partnerID1) then
+					param.partner_id = partnerID1
+				end
+			end
+
+			function param.callback()
+				local params1 = {
+					itemNum = 1,
+					hideText = true,
+					show_has_num = false,
+					itemID = itemID,
+					soulEquipInfo = param.soulEquipInfo,
+					wndType = xyd.ItemTipsWndType.BACKPACK,
+					notShowGetWayBtn = notShowGetWayBtn,
+					upArrowCallback = function ()
+						local equipID = param.soulEquipInfo.soulEquipID
+						local itemType = xyd.tables.itemTable:getType(itemID)
+
+						if itemType == xyd.ItemType.SOUL_EQUIP1 then
+							xyd.openWindow("soul_equip1_strengthen_window", {
+								equipID = equipID
+							})
+						else
+							xyd.openWindow("soul_equip2_strengthen_window", {
+								equipID = equipID
+							})
+						end
+
+						xyd.WindowManager:get():closeWindow("item_tips_window")
+					end
+				}
+
+				function params1.lockClickCallBack()
+					local equipID = param.soulEquipInfo.soulEquipID
+					local equip = xyd.models.slot:getSoulEquip(equipID)
+
+					if equip then
+						local lockFlag = equip:getIsLock()
+						local lock = 1
+
+						if lockFlag then
+							lock = 0
+						end
+
+						xyd.models.slot:reqLockSoulEquip(equip:getSoulEquipID(), lock, function ()
+							equip:setLock(lock)
+
+							local win = xyd.getWindow("item_tips_window")
+
+							if win and win.diffItemTips then
+								win.diffItemTips:setBtnLockState(equip:getIsLock())
+							elseif win and win.itemTips_ then
+								win.itemTips_:setBtnLockState(equip:getIsLock())
+							end
+						end)
+					end
+				end
+
+				function params1.lockStateCallBack()
+					local equipID = param.soulEquipInfo.soulEquipID
+					local equip = xyd.models.slot:getSoulEquip(equipID)
+
+					if equip then
+						return equip:getIsLock()
+					else
+						return false
+					end
+				end
+
+				local equipID = param.soulEquipInfo.soulEquipID
+				local equip = xyd.models.slot:getSoulEquip(equipID)
+
+				if equip then
+					local partnerID = equip:getOwnerPartnerID()
+
+					if partnerID and partnerID > 0 and xyd.models.slot:getPartner(partnerID) then
+						params1.equipedOn = xyd.models.slot:getPartner(partnerID)
+					end
+				end
+
+				xyd.WindowManager.get():openWindow("item_tips_window", params1)
+			end
 		end
 
 		self.itemIcon:setInfo(param)
@@ -291,6 +381,7 @@ function BackpackWindow:registerEvent()
 	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, handler(self, self.onItemChange))
 	self.eventProxy_:addEventListener(xyd.event.SELL_ITEM, handler(self, self.sellCallback))
 	self.eventProxy_:addEventListener(xyd.event.USE_OPTIONAL_GIFTBOX, handler(self, self.onUseOptionalGiftBox))
+	self.eventProxy_:addEventListener(xyd.event.GET_NEW_SOUL_EQUIP_PUSH_BACK, handler(self, self.oGetNewSoulEquipPushBack))
 end
 
 function BackpackWindow:getUIComponent()
@@ -594,6 +685,12 @@ function BackpackWindow:dataCheck(index)
 	end
 
 	if index == xyd.BackpackShowType.SOUL_EUQIP then
+		self.items_[index] = {}
+
+		for j = 0, 7 do
+			self.items_[index][j] = {}
+		end
+
 		for j, _ in pairs(tmpDatas) do
 			local item = tmpDatas[j]
 
@@ -784,9 +881,57 @@ function BackpackWindow:onUseOptionalGiftBox(event)
 					xyd.alertItems(item)
 				end
 			})
+		elseif itemData.item_id then
+			if xyd.tables.itemTable:getType(itemData.item_id) ~= xyd.ItemType.SOUL_EQUIP1 and xyd.tables.itemTable:getType(itemData.item_id) ~= xyd.ItemType.SOUL_EQUIP2_POS1 and xyd.tables.itemTable:getType(itemData.item_id) ~= xyd.ItemType.SOUL_EQUIP2_POS2 and xyd.tables.itemTable:getType(itemData.item_id) ~= xyd.ItemType.SOUL_EQUIP2_POS3 then
+				if xyd.tables.itemTable:getType(itemData.item_id) == xyd.ItemType.SOUL_EQUIP2_POS4 then
+					-- Nothing
+				end
+			end
 		else
 			xyd.alertItems(item)
 		end
+	end
+end
+
+function BackpackWindow:oGetNewSoulEquipPushBack(event)
+	self.is_soulequip_first_data = true
+
+	if not self.haveReqOpen then
+		return
+	end
+
+	self.haveReqOpen = false
+	local data = xyd.decodeProtoBuf(event.data)
+	local items = {}
+
+	for key, info in pairs(data.items) do
+		if info and info.equip_id then
+			local itemType = xyd.tables.itemTable:getType(info.table_id)
+			local equip = nil
+
+			if itemType == xyd.ItemType.SOUL_EQUIP1 then
+				equip = SoulEquip1.new()
+			else
+				equip = SoulEquip2.new()
+			end
+
+			info.ownerID = info.pos
+
+			equip:populate(info)
+			table.insert(items, {
+				item_num = 1,
+				item_id = equip:getTableID(),
+				soulEquipInfo = equip:getSoulEquipInfo()
+			})
+		end
+	end
+
+	if #items > 0 then
+		local params = {
+			items = items
+		}
+
+		xyd.WindowManager.get():openWindow("alert_item_window", params)
 	end
 end
 

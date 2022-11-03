@@ -498,7 +498,7 @@ MINI_MONTH_CARD_TEXT04,"Alter Preis: €5,49"
 PERSON_CREATE_NAME,Wähle einen Namen
 MONTH_CARD_HELP1,"Nach dem Kauf der Monatskarte erhältst du sofort 1500 Dias und 750 VIP-EXP.|In den folgenden 30 Tagen werden dir täglich 450 Dias per Mail gesendet.|Insgesamt 15000 Dias für dich!|Beim Erstkauf der Monatskarte wird ein Sonderrabatt angeboten und danach wird der Preis  zum alten Preis angepasst.|Nach dem Kauf der Monatskarte werden dir deinem VIP-Level entsprechend zusätzliche Belohnungen gesendet.|Nach dem Kauf der Monatskarte werden dir täglich zusätzlich 100 Dias gesendet, sobald du alle täglichen Aufgaben des Tages abgeschlossen hast."
 MONTH_CARD_HELP2,Nach dem Kauf der Mini Monatskarte erhältst du sofort 500 Dias und 250 VIP-EXP.|In den folgenden 30 Tagen werden dir täglich 150 Dias per Mail gesendet.|Mini Monatskarte gewährt dem VIP-Spieler keine zusätzlichen Belohnungen und kann mit der Monatskarte zusammen gekauft werden!|Beim Erstkauf der Mini Monatskarte wird ein Sonderrabatt angeboten und danach wird der Preis  zum alten Preis angepasst.|Nach dem Kauf der Mini Monatskarte wird die Anzahl deiner täglichen neuen Jobaufgaben um 1 erhöht.
-RESET,Zurücksetzen
+RESET,Zurücksetzen:
 BUY_GIFTBAG_LIMIT,Limit: {1}
 GOTO,Los
 ENHANCE_WINDOW,Ich möchte stärker werden
@@ -6251,7 +6251,7 @@ PARTNER_WARMUP_TEXT01,Vorschau
 PARTNER_WARMUP_TEXT02,Lies das {1}. Kapitel durch
 PARTNER_WARMUP_TEXT03,Lies zunächst das vorherige Kapitel durch
 PARTNER_WARMUP_TEXT04,Willst du das Kapitel nochmal lesen?
-ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Schließe die bestimmten Aufgaben ab, um Sternfragmente, limitierte Sternmünzen und andere reichhaltigen Belohnungen zu erhalten.|2. Die Sternfragmente können zum Tausch der wertvollen Ressourcen verwendet werden.|3. Die limitierten Sternmünzen können am Altar unter Sternen verwendet werden, um Belohnungen zu ziehen. Nach dem Ende des Events werden die limitierten Sternmünzen recycelt. Bitte denk daran, sie rechtzeitig zu verwende.|4. Nach dem Ende des Events werden die noch nicht verwendeten Sternfragmente automatisch per Mail recycelt. Jedes Sternfragment entspricht 50K Münzen."
+ACTIVITY_STAR_ALTAR_MISSION_HELP,"1. Schließe die bestimmten Aufgaben ab, um Sternfragmente, limitierte Sternmünzen und andere reichhaltigen Belohnungen zu erhalten.|2. Die Sternfragmente können zum Tausch der wertvollen Ressourcen verwendet werden.|3. Nach dem Ende des Events werden die noch nicht verwendeten Sternfragmente automatisch per Mail recycelt. Jedes Sternfragment entspricht 50K Münzen."
 ACTIVITY_STAR_ALTAR_MISSION_TITLE01,Aufgaben
 ACTIVITY_STAR_ALTAR_MISSION_TITLE02,Tauschen
 PUB_MISSION_NOT_USE,Noch keine Job-Pergamente gewählt!
@@ -6991,7 +6991,7 @@ STARRY_ALTAR_TEXT18,"Gewährt bei jedem Zug eine [c][ffe241]0,25%%ige[-][/c] Wkt
 STARRY_ALTAR_TEXT19,Sichere [c][56db32]10* Fragmente der 10-Sterne Meteore-Mädchen[-][/c] in [c][ffe241]{1}[-][/c] Zügen (Zug)
 STARRY_ALTAR_TEXT20,Wähle einen der 2 Modi aus
 GROWTH_DIARY_TEXT13,"""Diener weiterbilden"" noch nicht entsperrt"
-GALAXY_TRIP_TEXT01,Galaxis-\nReise
+GALAXY_TRIP_TEXT01,Galaxis-\nreise
 GALAXY_TRIP_TEXT02,Ziehe die seltenen Meteore-Mädchen!
 GALAXY_TRIP_TEXT03,Erhalte die Ressourcen für die Sternkerne!
 GALAXY_TRIP_TEXT04,Reise durch die Galaxis
@@ -7544,17 +7544,28 @@ ACTIVITY_5WEEK_TEXT06,Du hast alle Belohnungen auf dem Rad erhalten~
 ACTIVITY_BLIND_BOX_TEXT01,Menge: {1}
 ACTIVITY_BLIND_BOX_TEXT02,1 Box öffnen
 ACTIVITY_BLIND_BOX_TEXT03,5 Boxen öffnen
-ACTIVITY_BLIND_BOX_TEXT04,{1}. Stufe - Wähle {2} Belohnungen aus
-ACTIVITY_BLIND_BOX_TEXT05,{1} Runde - Auswahlbelohnung der {2}. Stufe
+ACTIVITY_BLIND_BOX_TEXT04,{1}. Stufe - Wähle {2} Belohnung(en) aus
+ACTIVITY_BLIND_BOX_TEXT05,{1}. Runde - Auswahlbelohnung(en) der {2}. Stufe
 ACTIVITY_BLIND_BOX_TEXT06,Wähle die Belohnungen aus
 ACTIVITY_BLIND_BOX_TEXT07,Willst du sicher Belohnungen ziehen? Danach können die Auswahlbelohnungen nicht mehr gewechselt werden.
-ACTIVITY_BLIND_BOX_TEXT08,Willst du sicher zur 2. Runde gehen? Danach können die Auswahlbelohnungen der 1. Runde nicht mehr gezogen werden.
+ACTIVITY_BLIND_BOX_TEXT08,Willst du sicher zur 2. Runde mit besseren Belohnungen gehen? Danach können die Auswahlbelohnungen der 1. Runde nicht mehr gezogen werden.
 ACTIVITY_BLIND_BOX_GIFTBAG_TEXT01,Insgesamt erhältlich
 ACTIVITY_BLIND_BOX_GIFTBAG_TEXT02,Sofortige Belohnungen
-ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,Einloggen
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT03,Tage
 ACTIVITY_BLIND_BOX_GIFTBAG_TEXT04,Bonus
 ACTIVITY_BLIND_BOX_GIFTBAG_TEXT05,Premium
 ACTIVITY_BLIND_BOX_GIFTBAG_TEXT06,Luxus
 ACTIVITY_BLIND_BOX_MISSION,Erhalte {1} VIP-EXP
 ACTIVITY_HALLOWEEN2022_TITLE,Frohes\nHalloween
 ACTIVITY_HALLOWEEN2022_RANK_HELP,"1. Die durchs Schnitzen erhaltenen Kürbisse geben dir verschiedene Menge an Beitragspunkten im Event ""Extra zu Halloween"". Teufelskürbis gibt 1 Punkt, Vampir-Kürbis gibt 5 Punkte, Dämonenkürbis gibt 25 Punkte.|2. Euren Beitragspunkten entsprechend werden nach dem Ende des Events die Rangbelohnungen gesendet."
+SOUL_EQUIP1_STRENGTHEN_HELP,"Durch ""Stern Up"", ""Leveln"" und ""Schleifen"" können die Seelengefäße verstärkt werden.||Stern Up|1. Zum Leveln des Sternlevels des Seelengefäßes wird eine Kopie desselben Seelengefäßes benötigt und danach kann das Gefäß nicht mehr als Material zu Stern Up verwendet werden.|2. Durch ""Stern Up"" erhöhen sich das max. Level und die Anzahl der schleifbaren Attribute des Seelengefäßes. Je besser die Qualität des Seelengefäßes ist, desto höher ist dessen max. Sternlevel.|3. Nach der Erhöhnung des Sternlevels werden die Grundattribute des Seelengefäßes angepasst, während die Schliff-Attribute nicht davon beeinflusst werden.||Leveln|1. Zum Leveln des Seelengefäßes werden Münzen und Seelensteine benötigt.|2. Das Leveln betrifft die Grund- und die Schliff-Attribute des Seelengefäßes. (Neue oder erneuerte Schliff-Attribute werden nicht davon beeinflusst.)||Schleifen|1. Die Anzahl der schleifbaren Attribute hängt von dem Sternlevel des Seelengefäßes ab.|2. Zu Beginn werden keine festgestellten Schliff-Attribute gegeben.|3. Zum Schleifen werden Kristallmeißel und Seelenspiegel benötigt. Beim ersten Schliff eines leeren Schliff-Slots wird 1 zufälliges Schliff-Attribut erhalten, wozu relativ mehr Materialien benötigt werden.|4. Das erneuerte Schliff-Attribut kann gespeichert oder abgebrochen werden.|5. Betreffende Schliff-Attribute:|Angriff, HP, Präzision, Blockade, Krit. Rate, Krit. Widerstand, Skill-Bonusschaden, Heiliger Schaden, Extra Kontrollrate, Kontrollimunitätsrate, Erhaltene Heilung, Heilung."
+SOUL_EQUIP2_STRENGTHEN_HELP,"Durch ""Leveln"" und ""Verfeinern"" können die Seelensteine verstärkt werden.||Sternlevel|1. Das Sternlevel des Seelensteines wird beim Erhalten sofort festgelegt und kann nicht weiter gelevelt werden.|2. Je höher das Sternlevel des Seelensteines ist, desto höher sind sein max. Level, seine Haupt- und Nebenattribute.||Leveln|1. Alle Seelenteine können zum Leveln des Zielseelensteines verwendet werden. Gelevelte Seelensteine bieten mehr EXP.|2. Nach dem Leveln werden die Hauptattribute des Seelensteines erhöht. Alle 5 Level wird dem Seelenstein ein neues Nebenattribut verliehen. (Hat der Seelensteine bereits 4 verschiedene Nebenattribute, dann ist das nächste neu Nebenattribut sicher eines der 4 bereits erhaltenen Nebenattribute.)||Verfeinern|1. Zum Verfeinern werden Münzen und Seelenwürfel benötigt.|2. Das Verfeinern betrifft die Haupt- und die Nebenattribute des Seelensteines.|3. Die verfeinerten Seelensteine können zurückgesetzt werden, indem du Dias ausgibst, und die entsprechenden Materialien werden zurückgesendet.||Segnen|1. Die Nebenattribute des Seelensteines auf max. Level können basierend auf den ursrünglichen Nebenattributen zurückgesetzt werden, indem du Münzen und Seelenbeutel verwendest.|2. Die ursprünglichen Nebenattribute des Seelensteines sowie deren Werte werden beim Erhalten zufällig festgelegt, mindestens gibt es 2 Nebenattribute und maximal 4.|3. Betreffende Nebenattribute:|Angriff, HP, Präzision, Blockade, Krit. Rate, Krit. Widerstand, Skill-Bonusschaden, Heiliger Schaden, Extra Kontrollrate, Kontrollimmunitätsrate, Erhaltene Heilung, Heilung.|4. Möglicherweise erhaltene max. Nebenattribute eines 6-Sterne orangenen Seelensteines:|+1726 Angriff|+60759 HP|+1.28%% Präzision|+1.28%% Blockade|+0.64%% Krit. Rate|+0.96%% Krit. Widerstand|+0.96%% Skill-Bonusschaden|+0.48%% Heiliger Schaden|+0.96%% Extra Kontrollrate|+0.96%% Kontrllimmunitätsrate|+0.64%% Erhaltene Heilung|+0.64%% Heilung."
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT07,2100%%
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT08,2000%%
+ACTIVITY_BLIND_BOX_HELP,"1. Wähle zu Beginn des Events verschiedene Menge an Belohnungen aus den 4 Stufen der Auswahlbelohnungen aus.|2. Verwende die Gutscheine zu Mystery Boxen, um Belohnungen zu ziehen.|3. Sobald du eine Belohnung gezogen hast, können die Auswahlbelohnungen nicht mehr gewechselt werden.|4. Bei den 1.~4. Stufen können jeweils 3, 3, 1 und 1 Auswahlbelohnung(en) gewählt werden. Jede Runde gibt es eine feste ultimative Belohnung.|5. Sobald die ultimative Belohnung gezogen ist, wird die nächste Runde entsperrt. Es gibt insgesamt 2 Runden.|6. In jeder Runde wird die ultimative Belohnung sicher in 30 Zügen gezogen.|7. Erhalten der Gutscheine zu Mystery Boxen: Bonus der Mystery Boxen, Aufladeprämien. Die Gutscheine im Event ""Aufladeprämien"" werden per Mail gesendet.|8. Nach dem Ende des Events werden die nicht verwendeten Gutscheine zu Mystery Boxen automatisch per Mail recycelt. Jeder Gutschein entspricht 500K Münzen."
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT09,Premium
+ACTIVITY_BLIND_BOX_TITLE,Mystery\nBoxen
+ACTIVITY_BLIND_BOX_TEXT09,{1}. Runde - Feste ult. Belohnung
+ACTIVITY_BLIND_BOX_TEXT10,Wähle fertig die Auswahlbelohnungen aus!
+ACTIVITY_BLIND_BOX_TEXT11,"Gratuliere, du hast die ult. Belohnung der 2. Runde gezogen! Jetzt ziehen wir weiter die übrigen Auswahlbelohnungen!"
+ACTIVITY_BLIND_BOX_GIFTBAG_TEXT10,Tag {1}

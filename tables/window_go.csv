@@ -168,3 +168,6 @@ id,name,params,activity_id,function_id,desc
 167,activity_limit_cultivate_window,,336,,-1
 168,activity_window,"{'select':332,'activity_type2':1}",332,,-1
 169,activity_window,"{'select':341,'activity_type2':1}",341,,-1
+170,activity_window,"{'select':338,'activity_ids':[338,339,340], 'activity_type':7}",338,,-1
+171,activity_window,"{'select':339,'activity_ids':[338,339,340], 'activity_type':7}",339,,-1
+172,activity_window,"{'select':340,'activity_ids':[338,339,340], 'activity_type':7}",340,,-1

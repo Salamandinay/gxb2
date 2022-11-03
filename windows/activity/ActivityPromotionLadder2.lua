@@ -283,7 +283,7 @@ function ActivityPromotionLadder2:updateModelAndIcon()
 end
 
 function ActivityPromotionLadder2:updateBtn()
-	if not self.materialPartner or not self.targetIndex then
+	if not self.materialPartner or not self.targetIndex or self.targetIndex <= 0 then
 		xyd.setEnabled(self.btnPromote.gameObject, false)
 
 		self.labelPromoteNum.text = 0
