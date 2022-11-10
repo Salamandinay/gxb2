@@ -323,7 +323,9 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_PROMOTION_LADDER2] = require("app.models.datas.ActivityPromotionLadder2Data"),
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX] = require("app.models.datas.ActivityBlindBoxData"),
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX_BATTLE_PASS] = require("app.models.datas.ActivityBlindBoxBattlePassData"),
-	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = require("app.models.datas.ActivityBlindBoxMissionData")
+	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = require("app.models.datas.ActivityBlindBoxMissionData"),
+	[xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN] = require("app.models.datas.ActivityNewGrowthPlanData"),
+	[xyd.ActivityID.ACTIVITY_DAILY_RECHARGE] = require("app.models.datas.ActivityDailyRechargeData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

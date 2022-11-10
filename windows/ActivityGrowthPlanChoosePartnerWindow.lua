@@ -4,15 +4,28 @@ local ActivityGrowthPlanChoosePartnerItem = class("ActivityGrowthPlanChoosePartn
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
 local ativityGrowthPlanTable = xyd.tables.ativityGrowthPlanTable
 local PartnerCard = import("app.components.PartnerCard")
+local activityID = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
 
 function ActivityGrowthPlanChoosePartnerWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
+
+	if params and params.ActivityID and params.ActivityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		activityID = xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN
+	else
+		activityID = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+	end
+
+	if activityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		self.preText = "ACTIVITY_NEW_GROWTH_PLAN_TEXT"
+	else
+		self.preText = self.preText .. ""
+	end
 end
 
 function ActivityGrowthPlanChoosePartnerWindow:initWindow()
 	ActivityGrowthPlanChoosePartnerWindow.super.initWindow(self)
 
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GROWTH_PLAN)
+	self.activityData = xyd.models.activity:getActivity(activityID)
 
 	self:getUIComponent()
 	self:initUIComponent()
@@ -35,9 +48,18 @@ function ActivityGrowthPlanChoosePartnerWindow:getUIComponent()
 end
 
 function ActivityGrowthPlanChoosePartnerWindow:initUIComponent()
-	self.labelTitle_.text = __("ACTIVITY_GROWTH_PLAN_TEXT03")
-	self.labelTip.text = __("ACTIVITY_GROWTH_PLAN_TEXT02")
+	self.labelTitle_.text = __(self.preText .. "03")
+	self.labelTip.text = __(self.preText .. "02")
 	local ids = xyd.tables.miscTable:split2Cost("activity_growth_plan_partner", "value", "|")
+
+	if activityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		dump(ids)
+
+		ids = xyd.tables.miscTable:split2Cost("activity_new_growth_plan_partner", "value", "|")
+	end
+
+	dump(ids)
+
 	local datas = {}
 
 	for i = 1, #ids do
@@ -80,7 +102,7 @@ function ActivityGrowthPlanChoosePartnerItem:initUI()
 	self.cardNode.transform:SetLocalScale(1, 1, 1)
 
 	self.partnerCard = PartnerCard.new(self.cardNode, self.parent.renderPanel)
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GROWTH_PLAN)
+	self.activityData = xyd.models.activity:getActivity(activityID)
 
 	UIEventListener.Get(self.clickMask).onClick = function ()
 		local params = {
@@ -114,7 +136,7 @@ function ActivityGrowthPlanChoosePartnerItem:updateInfo()
 
 	self.partnerCard:setInfo(info)
 
-	self.label.text = __("ACTIVITY_GROWTH_PLAN_TEXT03")
+	self.label.text = __(self.parent.preText .. "03")
 	self.labeTitle.text = __("PARTNER_STATION_DESC_TITLE")
 	local comment_id = xyd.tables.partnerTable:getCommentID(self.partnerID)
 	self.labeDesc.text = xyd.tables.partnerDirectTable:getDesc(comment_id)

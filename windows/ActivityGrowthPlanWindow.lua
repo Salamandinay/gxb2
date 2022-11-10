@@ -7,7 +7,19 @@ local GiftBagTextTable = xyd.tables.giftBagTextTable
 local activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
 
 function ActivityGrowthPlanWindow:ctor(name, params)
-	self.id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+	if params and params.ActivityID and params.ActivityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		activityGrowthPlanTable = xyd.tables.activityNewGrowthAwardTable
+		self.id = xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN
+	else
+		self.id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+	end
+
+	if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		self.preText = "ACTIVITY_NEW_GROWTH_PLAN_TEXT"
+	else
+		self.preText = "ACTIVITY_GROWTH_PLAN_TEXT"
+	end
+
 	self.giftBagID = xyd.tables.activityTable:getGiftBag(self.id)[1] or 334
 	self.giftID = xyd.tables.giftBagTable:getGiftID(self.giftBagID)
 
@@ -36,7 +48,8 @@ end
 function ActivityGrowthPlanWindow:getUIComponent()
 	local winTrans = self.window_.transform
 	local groupAction = winTrans:NodeByName("groupAction").gameObject
-	self.textImg_ = groupAction:ComponentByName("textImg_", typeof(UITexture))
+	self.Bg_ = groupAction:ComponentByName("Bg_", typeof(UITexture))
+	self.textImg_ = groupAction:ComponentByName("textImg_", typeof(UISprite))
 	self.partnerImg = groupAction:ComponentByName("partnerImgGroup/partnerImg", typeof(UITexture))
 	self.partnerImgGroup = groupAction:NodeByName("partnerImgGroup").gameObject
 	self.jianyingImg = groupAction:ComponentByName("jianyingImg", typeof(UITexture))
@@ -78,21 +91,33 @@ function ActivityGrowthPlanWindow:getUIComponent()
 end
 
 function ActivityGrowthPlanWindow:initUIComponent()
-	xyd.setUITextureByNameAsync(self.textImg_, "activity_growth_plan_logo_" .. xyd.Global.lang, true)
-
-	self.desLabel_.text = __("ACTIVITY_GROWTH_PLAN_TEXT12")
+	self.desLabel_.text = __(self.preText .. "12")
 	self.endLabel_.text = __("END")
-	self.scoreLabel_.text = __("ACTIVITY_GROWTH_PLAN_TEXT04")
-	self.textLabel01_.text = __("ACTIVITY_GROWTH_PLAN_TEXT08")
-	self.textLabel02_.text = __("ACTIVITY_GROWTH_PLAN_TEXT09")
-	self.textLabel03_.text = __("ACTIVITY_GROWTH_PLAN_TEXT10")
-	self.tipLabel_.text = __("ACTIVITY_GROWTH_PLAN_TEXT11")
-	self.labelGotoBtn_.text = __("ACTIVITY_GROWTH_PLAN_TEXT05")
-	self.labelGetAllAwardBtn_.text = __("ACTIVITY_GROWTH_PLAN_TEXT07")
-	self.labelChoosePartnerBtn_.text = __("ACTIVITY_GROWTH_PLAN_TEXT01")
-	self.labelChangePartnerBtn_.text = __("ACTIVITY_GROWTH_PLAN_TEXT06")
+	self.scoreLabel_.text = __(self.preText .. "04")
+	self.textLabel01_.text = __(self.preText .. "08")
+	self.textLabel02_.text = __(self.preText .. "09")
+	self.textLabel03_.text = __(self.preText .. "10")
+	self.tipLabel_.text = __(self.preText .. "11")
+	self.labelGotoBtn_.text = __(self.preText .. "05")
+	self.labelGetAllAwardBtn_.text = __(self.preText .. "07")
+	self.labelChoosePartnerBtn_.text = __(self.preText .. "01")
+	self.labelChangePartnerBtn_.text = __(self.preText .. "06")
 	self.expLabel_.text = __("MONTH_CARD_VIP", xyd.tables.giftBagTable:getVipExp(self.giftBagID))
 	self.buyBtn_label.text = GiftBagTextTable:getCurrency(self.giftBagID) .. " " .. GiftBagTextTable:getCharge(self.giftBagID)
+
+	if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		xyd.setUITextureByNameAsync(self.Bg_, "activity_new_growth_plan_bg_banner", true)
+		xyd.setUISpriteAsync(self.textImg_, nil, "activity_new_growth_plan_logo_" .. xyd.Global.lang, nil, , true)
+
+		if xyd.Global.lang == "de_de" then
+			self.textLabel01_.fontSize = 18
+			self.textLabel02_.fontSize = 18
+			self.textLabel03_.fontSize = 18
+		end
+	else
+		xyd.setUITextureByNameAsync(self.Bg_, "activity_growth_plan_bg_banner", true)
+		xyd.setUISpriteAsync(self.textImg_, nil, "activity_growth_plan_logo_" .. xyd.Global.lang, nil, , true)
+	end
 
 	if xyd.Global.lang == "en_en" then
 		self.addBtn_:X(-126)
@@ -101,7 +126,28 @@ end
 
 function ActivityGrowthPlanWindow:register()
 	ActivityGrowthPlanWindow.super.register(self)
-	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, handler(self, self.onGetAward))
+	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_AWARD, function (event)
+		local data = xyd.decodeProtoBuf(event.data)
+
+		if data then
+			local json = require("cjson")
+			local detail = json.decode(data.detail)
+
+			if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+				local type = detail.type
+
+				if type == 3 then
+					self:onGetResitScoreMsg(event)
+				elseif type == 2 then
+					self:onConfirmPartner(event)
+				else
+					self:onGetAward(event)
+				end
+			else
+				self:onGetAward(event)
+			end
+		end
+	end)
 	self.eventProxy_:addEventListener(xyd.event.GET_ACTIVITY_INFO_BY_ID, handler(self, self.onGetData))
 	self.eventProxy_:addEventListener(xyd.event.RECHARGE, handler(self, self.onRecharge))
 	self.eventProxy_:addEventListener(xyd.event.BATTLE_PASS_SP_BUY_POINT, handler(self, self.onGetResitScoreMsg))
@@ -113,15 +159,17 @@ function ActivityGrowthPlanWindow:register()
 
 	UIEventListener.Get(self.addBtn_).onClick = function ()
 		if self.addFlag then
-			xyd.openWindow("activity_growth_plan_score_window")
+			xyd.openWindow("activity_growth_plan_score_window", {
+				ActivityID = self.id
+			})
 		else
-			xyd.alert(xyd.AlertType.TIPS, __("ACTIVITY_GROWTH_PLAN_TEXT14"))
+			xyd.alert(xyd.AlertType.TIPS, __(self.preText .. "14"))
 		end
 	end
 
 	UIEventListener.Get(self.helpBtn_).onClick = function ()
 		xyd.openWindow("help_window", {
-			key = "ACTIVITY_GROWTH_PLAN_TEXT13"
+			key = self.preText .. "13"
 		})
 	end
 
@@ -189,16 +237,16 @@ function ActivityGrowthPlanWindow:register()
 			end)
 
 			local params = {
-				groupTitleText1 = __("ACTIVITY_GROWTH_PLAN_TEXT10"),
+				groupTitleText1 = __(self.preText .. "10"),
 				awardData1 = awards_1,
-				groupTitleText2 = __("ACTIVITY_GROWTH_PLAN_TEXT09"),
+				groupTitleText2 = __(self.preText .. "09"),
 				awardData2 = awards_2,
 				winTitleText = __("ACTIVITY_MISSION_POINT_TEXT09")
 			}
 
 			xyd.openWindow("common_activity_award_preview1_window", params)
 		else
-			xyd.alertTips(__("ACTIVITY_GROWTH_PLAN_TEXT17"))
+			xyd.alertTips(__(self.preText .. "17"))
 		end
 	end
 
@@ -211,18 +259,62 @@ function ActivityGrowthPlanWindow:register()
 			value = xyd.getServerTime()
 		})
 
-		local getwayID = xyd.tables.miscTable:split2Cost("activity_tea_getway", "value", "|")[1] or 14
+		if self.id ~= xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+			local getwayID = xyd.tables.miscTable:split2Cost("activity_tea_getway", "value", "|")[1] or 14
 
-		xyd.goWay(getwayID, nil, function ()
-			xyd.closeWindow("activity_growth_plan_window")
-		end)
+			xyd.goWay(getwayID, nil, function ()
+				xyd.closeWindow("activity_growth_plan_window")
+			end)
+
+			return
+		end
+
+		local missions = self.activityData:getMissionList()
+		local missionList = {}
+
+		for idx, missionData in ipairs(missions) do
+			local mt = xyd.tables.activityNewGrowthPlanTaskTable
+			local progressLimitValue = mt:getCompleteValue(missionData.mission_id)
+			local curProgressValue = missionData.value
+
+			if missionData.is_completed > 0 then
+				curProgressValue = progressLimitValue
+			end
+
+			table.insert(missionList, {
+				id = missionData.mission_id,
+				desc = mt:getDesc(missionData.mission_id),
+				progressLimitValue = progressLimitValue,
+				curProgressValue = curProgressValue,
+				state = (missionData.is_completed or 0) + 1
+			})
+		end
+
+		xyd.openWindow("common_activity_task2_window", {
+			wnd_type = "activity_new_growth_plan",
+			all_info = missionList,
+			title_text = __("DAILY_MISSION"),
+			clickBgCallback = function (mission_id)
+				local table = xyd.tables.activityNewGrowthPlanTaskTable
+				local funId = table:getActivityId(mission_id)
+
+				if funId ~= 0 and not xyd.checkFunctionOpen(funId) then
+					return
+				end
+
+				xyd.closeWindow("common_activity_task2_window")
+				self:close()
+				xyd.goWay(table:getGetway(mission_id))
+			end
+		})
 	end
 
 	UIEventListener.Get(self.changePartnerBtn_).onClick = function ()
 		xyd.openWindow("activity_growth_plan_choose_partner_window", {
 			closeCallBack = function ()
 				self:initContent()
-			end
+			end,
+			ActivityID = self.id
 		})
 	end
 
@@ -230,7 +322,8 @@ function ActivityGrowthPlanWindow:register()
 		xyd.openWindow("activity_growth_plan_choose_partner_window", {
 			closeCallBack = function ()
 				self:initContent()
-			end
+			end,
+			ActivityID = self.id
 		})
 	end
 
@@ -249,9 +342,15 @@ end
 
 function ActivityGrowthPlanWindow:initContent()
 	if self.getData and self:isWndComplete() then
-		CountDown.new(self.timeLabel_, {
-			duration = self.activityData:getEndTime() - xyd.getServerTime()
-		})
+		if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+			CountDown.new(self.timeLabel_, {
+				duration = self.activityData.detail.start_time + xyd.tables.miscTable:getNumber("activity_new_growth_plan_start3", "value") * 24 * 60 * 60 - xyd.getServerTime()
+			})
+		else
+			CountDown.new(self.timeLabel_, {
+				duration = self.activityData:getEndTime() - xyd.getServerTime()
+			})
+		end
 
 		local wrapContent = self.itemGroup:GetComponent(typeof(UIWrapContent))
 
@@ -348,8 +447,15 @@ function ActivityGrowthPlanWindow:updatePartnerGroup()
 		local scale = xyd.tables.partnerPictureTable:getPartnerPicScale(self.selectedPartnerID)
 
 		xyd.setUITextureByNameAsync(self.partnerImg, "partner_picture_" .. self.selectedPartnerID, false, function ()
-			local pic_params = xyd.tables.miscTable:split2Cost("activity_growth_plan_picture", "value", "|#")[self.activityData:getCurPartnerIndex()]
-			local cut_params = xyd.tables.miscTable:split2Cost("activity_growth_plan_cut", "value", "|#")[self.activityData:getCurPartnerIndex()]
+			local pic_params, cut_params = nil
+
+			if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+				pic_params = xyd.tables.miscTable:split2Cost("activity_new_growth_plan_picture", "value", "|#")[self.activityData:getCurPartnerIndex()]
+				cut_params = xyd.tables.miscTable:split2Cost("activity_new_growth_plan_cut", "value", "|#")[self.activityData:getCurPartnerIndex()]
+			else
+				pic_params = xyd.tables.miscTable:split2Cost("activity_growth_plan_picture", "value", "|#")[self.activityData:getCurPartnerIndex()]
+				cut_params = xyd.tables.miscTable:split2Cost("activity_growth_plan_cut", "value", "|#")[self.activityData:getCurPartnerIndex()]
+			end
 
 			if xy and scale then
 				self.partnerImg.gameObject.transform:SetLocalPosition(pic_params[1], pic_params[2], 0)
@@ -447,7 +553,7 @@ end
 
 function ActivityGrowthPlanWindow:getAward()
 	if self.activityData:getSelectedPartnerID() == nil then
-		xyd.alertTips(__("ACTIVITY_GROWTH_PLAN_TEXT17"))
+		xyd.alertTips(__(self.preText .. "17"))
 
 		return
 	end
@@ -485,25 +591,37 @@ function ActivityGrowthPlanWindow:getAward()
 	if self.activityData:getConfirmedPartnerID() == nil then
 		local function callback(flag)
 			if flag == true then
-				local msg = messages_pb:battle_pass_sp_set_index_req()
-				msg.index = self.activityData:getCurPartnerIndex()
-				msg.activity_id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+				if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+					local msg = messages_pb:get_activity_award_req()
+					msg.params = require("cjson").encode({
+						type = 2,
+						index = self.activityData:getCurPartnerIndex()
+					})
+					msg.activity_id = self.id
 
-				xyd.Backend.get():request(xyd.mid.BATTLE_PASS_SP_SET_INDEX, msg)
+					xyd.Backend.get():request(xyd.mid.GET_ACTIVITY_AWARD, msg)
+				else
+					local msg = messages_pb:battle_pass_sp_set_index_req()
+					msg.index = self.activityData:getCurPartnerIndex()
+					msg.activity_id = self.id
+
+					xyd.Backend.get():request(xyd.mid.BATTLE_PASS_SP_SET_INDEX, msg)
+				end
 			end
 		end
 
-		xyd.alertYesNo(__("ACTIVITY_GROWTH_PLAN_TEXT18"), callback, __("YES"), false, nil, __("ACTIVITY_GROWTH_PLAN_TEXT01"), nil, , , )
+		xyd.alertYesNo(__(self.preText .. "18"), callback, __("YES"), false, nil, __(self.preText .. "01"), nil, , , )
 
 		return
 	end
 
 	local params = require("cjson").encode({
+		type = 1,
 		batches = data
 	})
 	local msg = messages_pb:get_activity_award_req()
 	msg.params = params
-	msg.activity_id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+	msg.activity_id = self.id
 
 	xyd.Backend.get():request(xyd.mid.GET_ACTIVITY_AWARD, msg)
 end
@@ -608,7 +726,13 @@ function ActivityGrowthPlanItem:updateInfo()
 	self.extraIsAwarded = self.data.extraIsAwarded
 	self.scoreLabel_.text = self.score
 	self.panel = self.data.panel
-	local partnerNum = #xyd.tables.miscTable:split2Cost("activity_growth_plan_partner", "value", "|")
+	local partnerNum = nil
+
+	if self.parent.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		partnerNum = #xyd.tables.miscTable:split2Cost("activity_new_growth_plan_partner", "value", "|")
+	else
+		partnerNum = #xyd.tables.miscTable:split2Cost("activity_growth_plan_partner", "value", "|")
+	end
 
 	if self.imgUnknow_base then
 		self.imgUnknow_base:SetActive(false)
@@ -823,8 +947,13 @@ function ActivityGrowthPlanItem:updateInfo()
 		end
 
 		self.extraIcons[i]:setEffectState(false)
+		self.extraIcons[i]:setGEffectShow(false)
 		self.extraIcons[i]:setBackEffect(false)
 		self.extraIcons[i]:setInfo(params)
+
+		if self.hasBuy and self.isComplete and not self.extraIsAwarded then
+			self.extraIcons[i]:setGEffectShow(true)
+		end
 
 		if type == xyd.ItemType.HERO_DEBRIS or type == xyd.ItemType.HERO_RANDOM_DEBRIS then
 			self.extraIcons[i]:showDebris(true)

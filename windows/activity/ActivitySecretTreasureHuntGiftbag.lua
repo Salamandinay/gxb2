@@ -74,19 +74,6 @@ function ActivitySecretTreasureHuntGiftbag:initGroup()
 	local passedTotalTime = xyd.getServerTime() - self.activityData:startTime()
 	local round = math.ceil(passedTotalTime / xyd.TimePeriod.WEEK_TIME)
 	local freeIDs = xyd.tables.activitySecretTreasureHuntGiftTable:getIds()
-
-	for i = 1, #freeIDs do
-		local tmpItem = NGUITools.AddChild(self.itemGroup.gameObject, self.giftbag_item)
-		self.freeItem = GiftbagItem.new(tmpItem, self.scroller_, self)
-
-		self.freeItem:setInfos({
-			table_id = freeIDs[i],
-			limit_times = round * 5,
-			buy_times = self.activityData.detail.buy_times[1]
-		}, true)
-		xyd.setDragScrollView(self.freeItem.go, self.scroller_)
-	end
-
 	local charges = self.activityData.detail.charges
 
 	table.sort(charges, function (a, b)
@@ -217,7 +204,7 @@ function GiftbagItem:setInfos(params, isfree)
 			if award[1] ~= xyd.ItemID.VIP_EXP then
 				xyd.getItemIcon({
 					show_has_num = true,
-					scale = 0.7037037037037037,
+					scale = 0.6296296296296297,
 					uiRoot = self.itemGroup,
 					itemID = award[1],
 					num = award[2],
@@ -247,7 +234,7 @@ function GiftbagItem:setInfos(params, isfree)
 			if award[1] ~= xyd.ItemID.VIP_EXP then
 				xyd.getItemIcon({
 					show_has_num = true,
-					scale = 0.7037037037037037,
+					scale = 0.6296296296296297,
 					uiRoot = self.itemGroup,
 					itemID = award[1],
 					num = award[2],

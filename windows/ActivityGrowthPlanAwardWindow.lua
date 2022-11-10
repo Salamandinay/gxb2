@@ -4,12 +4,25 @@ local activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
 
 function ActivityGrowthPlanAwardWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
+
+	if params and params.ActivityID and params.ActivityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		activityGrowthPlanTable = xyd.tables.activityNewGrowthAwardTable
+		self.id = xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN
+	else
+		self.id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
+	end
+
+	if self.id == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
+		self.preText = "ACTIVITY_NEW_GROWTH_PLAN_TEXT"
+	else
+		self.preText = "ACTIVITY_GROWTH_PLAN_TEXT"
+	end
 end
 
 function ActivityGrowthPlanAwardWindow:initWindow()
 	ActivityGrowthPlanAwardWindow.super.initWindow(self)
 
-	self.activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_GROWTH_PLAN)
+	self.activityData = xyd.models.activity:getActivity(self.id)
 
 	self:getUIComponent()
 	self:initUIComponent()
@@ -34,8 +47,8 @@ end
 
 function ActivityGrowthPlanAwardWindow:initUIComponent()
 	self.labelTitle_.text = __("ACTIVITY_MISSION_POINT_TEXT09")
-	self.titleLabel1.text = __("ACTIVITY_GROWTH_PLAN_TEXT10")
-	self.titleLabel2.text = __("ACTIVITY_GROWTH_PLAN_TEXT09")
+	self.titleLabel1.text = __(self.preText .. "10")
+	self.titleLabel2.text = __(self.preText .. "09")
 	self.bg_.height = 502
 
 	self.bg_:Y(-47)

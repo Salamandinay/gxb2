@@ -17722,7 +17722,7 @@ The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicte
 5200001,Anima Set Skill,Lucky Goldfish,Every instance of damage taken will not surpass 30% of self Maximum HP (The amount of damage reduced will not exceed 100% of the owner's Maximum HP. This effect can only be triggered 3 times per Round).
 5200002,Anima Set Skill,Floating Jellyfish,"In battle, the owner of the Set gains 0.5% Damage Reduction for every 1% Crit Resist she has. When she takes a Critical Strike from Basic Attacks or Active Skills, she will gain 30% Crit Resist that lasts for 1 Round."
 5200003,Anima Set Skill,Rock Crab,"
-At the start of the Round, the owner of the Set gains 1 stack of Carapace.
+At the start of the Round, the owner of the Set gains 1 stack of Carapace that lasts for 1 round.
 
 Carapace: A Skill Effect.
 Whenever the owner of this Effect takes damage, she will consume 1 stack of Carapace to nullify the damage."
@@ -18386,3 +18386,4 @@ When an ally is attacked by an enemy afflicted with [c][e28002]Afterimage[-][/c]
 [c][e28002]Afterimage[-][/c]:
 A Skill Effect that cannot stack.
 Reduces the owner’s Precision by 60%, Block by 60%, and Control Immunity by 60%. When the owner of this Effect deals a Basic Attack or an Active Skill, it has a 50% chance to miss."
+,,,Basic Attack

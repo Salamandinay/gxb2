@@ -301,7 +301,7 @@ function AwardSelectItem:updateInfo()
 			uiRoot = self.icon,
 			itemID = self.data.itemID,
 			num = self.data.itemNum
-		})
+		}, xyd.ItemIconType.ADVANCE_ICON)
 		UIEventListener.Get(self.itemIcon:getGameObject()).onClick = handler(self, self.onSelectItem)
 
 		UIEventListener.Get(self.itemIcon:getGameObject()).onLongPress = function ()

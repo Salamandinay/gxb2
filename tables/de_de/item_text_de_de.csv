@@ -2745,7 +2745,7 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 3569,Priester-Kreuz,Schmuck,
 4569,Priester-Schuhe,Unterteil,
 183,Metall-Lager,Eventmaterial,"Spezielles Material, das beim Event ""Ausrüstungs-Auflevelparty"" gegen Items eingetauscht werden kann."
-184,Fragment des Meteorits,Eventmaterial,"Spezielles Material, das beim Event ""Ausrüstungs-Auflevelparty"" durch Tausch erhältlich ist und mit dem man während des Events Rüstungssets aufleveln kann."
+184,Fragment des Meteorits,Eventmaterial,"Spezielles Material, das beim Event ""Ausrüstungs-Auflevelparty"" durch Tausch im Shop erhältlich ist und mit dem man während des Events Rüstungssets aufleveln kann."
 7061,Süßes oder Saures,Kostüm,Minos Kostüm Süßes oder Saures
 27061,Süßes oder Saures,Kostüm,Minos Kostüm Süßes oder Saures
 7133,Liebesgericht,Kostüm,Lucifals Kostüm Liebesgericht
@@ -5831,7 +5831,7 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 5100019,Ziegenhörner,Seelenausrüstung·\nSeelengefäß,
 5200001,Koi des Glücks,Set der Seelensteine,Der erlittene Einzelschaden liegt maximal bei 30% der eigenen max. HP. (Die reduzierten Schäden liegen maximal bei 100% der eigenen max. HP. Es kann jede Runde maximal 3 Mal ausgelöst werden.)
 5200002,Schwimmende Qualle,Set der Seelensteine,"Pro 1%iger Krit. Widerstand des Besitzers erhöht seine Schadensreduzierungsrate um 0,5%. Erleidet der Besitzer einen kritischen Schlag, wird sein Krit. Widerstand um 30% 1 Runde lang erhöht."
-5200003,Felsenkrabbe,Set der Seelensteine,"Zu Beginn der Runde erhält der Besitzer 1 Schicht Krabbenschale. Krabbenschale: Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."
+5200003,Felsenkrabbe,Set der Seelensteine,"Zu Beginn der Runde erhält der Besitzer 1 Runde lang 1 Schicht Krabbenschale. Krabbenschale: Fertigkeitseffekt. Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."
 5200004,Geisterhafte Ziege,Set der Seelensteine,"Jedes Mal wenn der Besitzer den Gegnern Schaden 3 Mal zugefügt hat, erhöht sich der nächste Schaden um 60%."
 5200005,Feuerseinhorn,Set der Seelensteine,"Erhöht den Schaden gegen die Ziele, deren HP noch höher als 80% liegen, um 40% ."
 5200006,Tückische Eidechse,Set der Seelensteine,Erhöht den Schaden gegen Gegner als Boss um 50%.
@@ -6129,3 +6129,44 @@ Dieses Buch war nur ein Experiment, weshalb Eggret einfach ein paar alte und ber
 452,Auswahlbox der 6-Sterne blauen Seelensteine,Seelensteinbox,"Nach dem Öffnen kannst du dir einen Seelenstein (Seelenausrüstung) aussuchen, der gültig für die Mädchen ab Lv.200 ist. (Tippe auf die Lupe oben rechts, um die zur Wahl stehenden Seelensteine zu prüfen.)"
 453,Zufallsbox vom Set der Seelensteine,Seelensteinbox,"Nach dem Öffnen erhältst du ein zufälliges vollständiges 6-Sterne Set der Seelensteine von blauer Qualität, das gültig für die Mädchen ab Lv.200 ist. (Tippe auf die Lupe oben rechts, um die erhältlichen Sets der Seelensteine zu prüfen.)"
 4901001,Auswahlbox von orangenen Seelengefäßen,Auswahlbox,"Nach dem Öffnen kannst du dir eine der zur Wahl stehenden Belohnungen aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Truhe erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4201041,Normale Ressourcenauswahlbox,Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eine der folgenden Belohnungen aussuchen: Münze *1500K, EXP Saft *1500K, Brotdose *1000, Kristallmeißel *1000, Diener-Keks *600, Spirit-Keks *75, Diener-Kristall *35, Leitfadenmaterial *1500, Geheimmaterial *300, Kugel der Finsternis *500 und Kugel des Glanzes *50."
+930232,5-Sterne Poseidia,Mädchen beschwören,"Sammle 50 Fragmente, um das Mädchen zu beschwören."
+56011,Poseidia,,
+656021,Poseidia,,
+756011,Poseidia,,
+930233,5-Sterne Hadea,Mädchen beschwören,"Sammle 50 Fragmente, um das Mädchen zu beschwören."
+55013,Hadea,,
+655022,Hadea,,
+755012,Hadea,,
+4302048,Premium Kostümauswahlbox (Verlassene Raumstation),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4104020,5-Sterne Auswahlbox (Verlassene Raumstation),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster, Feen, Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4102053,5-Sterne Auswahlbox (Verlassene Raumstation),Auswahlbox,"Nach dem Öffnen kannst du dir ein Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4101069,5-Sterne Auswahlbox (Verlassene Raumstation),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+930234,5-Sterne Zeusia,Mädchen beschwören,"Sammle 50 Fragmente, um das Mädchen zu beschwören."
+56012,Zeusia,,
+656022,Zeusia,,
+756012,Zeusia,,
+6779,青雲翠仙,Antiquität,
+6780,青雲翠仙,Antiquität,
+6781,青雲翠仙,Antiquität,
+6782,青雲翠仙,Antiquität,
+6783,青雲翠仙,Antiquität,
+6784,青雲翠仙,Antiquität,
+67841,青雲翠仙,Antiquität,
+67842,青雲翠仙,Antiquität,
+67843,青雲翠仙,Antiquität,
+6785,天際畫筆,Antiquität,
+6786,天際畫筆,Antiquität,
+6787,天際畫筆,Antiquität,
+6788,天際畫筆,Antiquität,
+6789,天際畫筆,Antiquität,
+6790,天際畫筆,Antiquität,
+67901,天際畫筆,Antiquität,
+67902,天際畫筆,Antiquität,
+67903,天際畫筆,Antiquität,
+7317,Rabenkuss,Kostüm,"Lord Draculas Kostüm ""Rabenkuss"""
+27317,Rabenkuss,Kostüm,"Lord Draculas Kostüm ""Rabenkuss"""
+4601050,Auswahlbox vom orangenen Outfit (Unterkörper),Auswahlbox,"Wertvolle Schatzbox. Nach dem Öffnen kannst du dir einen Kopf von einem orangenen Outfit-Set aussuchen. (Tippe auf die Lupe oben rechts für mehr Details. Nachdem du die Box erhalten hast, werden sich deren Inhalte nicht mehr ändern.)"
+4302049,Premium Kostümauswahlbox (Luvlys Inselreise),Auswahlbox,"Wertvolle Schatzbox: Nach dem Öffnen kannst du dir eines der zur Wahl stehenden Kostüme aussuchen. (Tippe auf die Lupe oben rechts, um die Kostüme anzuschauen. Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4101070,5-Sterne Auswahlbox (Luvlys Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Geister, Menschen, Monster oder Feen 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"
+4102054,5-Sterne Auswahlbox (Luvlys Inselreise),Auswahlbox,"Nach dem Öffnen kannst du dir ein Dämonen oder Engel 5-Sterne Mädchen als Belohnung aussuchen. (Nachdem du die Box erhalten hast, werden sich die Belohnungen nicht mehr ändern.)"

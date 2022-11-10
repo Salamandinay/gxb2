@@ -30,6 +30,7 @@ function LoginUpWindow:getUIComponent()
 	self.closeBtn = self.groupMain_:NodeByName("closeBtn").gameObject
 	self.btnLeft_ = self.groupMain_:NodeByName("btnLeft_").gameObject
 	self.btnRight_ = self.groupMain_:NodeByName("btnRight_").gameObject
+	self.btnRight_BoxCollider = self.groupMain_:ComponentByName("btnRight_", typeof(UnityEngine.BoxCollider))
 	self.labelTitle_ = self.groupMain_:ComponentByName("labelTitle_", typeof(UILabel))
 	self.labelAccount_ = self.groupMain_:ComponentByName("labelAccount_", typeof(UILabel))
 	self.labelPassword_ = self.groupMain_:ComponentByName("labelPassword_", typeof(UILabel))
@@ -223,6 +224,12 @@ function LoginUpWindow:onRightTouch()
 
 			UnityEngine.PlayerPrefs.SetString("local_accout_name_arr", json.encode(self.localAccoutArr))
 			xyd.SdkManager.get():accountLogin(account, self.password_)
+
+			self.btnRight_BoxCollider.enabled = false
+
+			self:waitForTime(1.5, function ()
+				self.btnRight_BoxCollider.enabled = true
+			end)
 		else
 			xyd.alert(xyd.AlertType.TIPS, __("PASSWORD_INVALID"))
 		end

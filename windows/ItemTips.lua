@@ -2122,6 +2122,12 @@ function ItemTips:summonTouch()
 			}
 
 			function tempParams.sureCallback(itemID, num)
+				if xyd.models.slot:getCanSummonNum() <= 0 then
+					xyd.openWindow("partner_slot_increase_window")
+
+					return
+				end
+
 				for i, item in pairs(items) do
 					if item.itemID == itemID then
 						Summon:summonPartner(item.summonID, num)

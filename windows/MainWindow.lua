@@ -2579,6 +2579,20 @@ function MainWindow:onWindowClose(event)
 
 		self.evaluationWhereFrom = nil
 		self.hasEvaluateWindow = nil
+
+		return
+	end
+
+	local activityData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN)
+
+	if activityData and xyd.getServerTime() < activityData:getEndTime() and activityData:isOpen() then
+		local timeStamp = xyd.db.misc:getValue("activity_new_growth_plan_preview_time_stamp")
+
+		if (not timeStamp or not xyd.isSameDay(xyd.getServerTime(), tonumber(timeStamp))) and self.win_list_[1] == "main_window" and windowNum == 1 and win_name ~= "func_open_window" and win_name ~= "guide_window" and not self.isJumping and xyd.GuideController.get():isGuideComplete() then
+			xyd.openWindow("activity_growth_help_preview_window")
+
+			return
+		end
 	end
 end
 

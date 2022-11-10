@@ -1826,6 +1826,9 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = function ()
 		return require("app.windows.activity.ActivityBlindBoxMission")
+	end,
+	[xyd.ActivityID.ACTIVITY_DAILY_RECHARGE] = function ()
+		return require("app.windows.activity.ActivityDailyRecharge")
 	end
 }
 

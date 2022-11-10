@@ -5832,7 +5832,11 @@ This book was only an experimental product that was created with well-known stor
 5100019,Horned Headdress,Anima Artifact,
 5200001,Lucky Goldfish,Anima Set,Every instance of damage taken will not surpass 30% of self Maximum HP (The amount of damage reduced will not exceed 100% of the owner's Maximum HP. This effect can only be triggered 3 times per Round).
 5200002,Floating Jellyfish,Anima Set,"In battle, the owner of this set gains 0.5% Damage Reduction for every 1% Crit Resist she has. When she takes a Critical Strike from Basic Attacks or Active Skills, she will gain 30% Crit Resist that lasts for 1 Round."
-5200003,Rock Crab,Anima Set,"At the start of the Round, the owner of this Set gains 1 stack of Carapace.\nCarapace: Whenever the owner of this Effect takes damage, she will consume 1 stack of Carapace to nullify the damage."
+5200003,Rock Crab,Anima Set,"
+At the start of the Round, the owner of the Set gains 1 stack of Carapace that lasts for 1 round.
+
+Carapace: A Skill Effect.
+Whenever the owner of this Effect takes damage, she will consume 1 stack of Carapace to nullify the damage."
 5200004,Ghostly Goat,Anima Set,"For every 3 instances of damage dealt, the owner of the Set will deal 60% more damage in the next instance of damage she deals."
 5200005,Fiery Qilin,Anima Set,Increases damage dealt to enemies with more than 80% HP by 40%.
 5200006,Cunning Lizard,Anima Set,Increases damage dealt to Boss enemies by 50%.
@@ -6092,7 +6096,7 @@ This book was only an experimental product that was created with well-known stor
 5200110,Random 2-star Blue Anima Stone,Random Reward,A random 2-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
 5200111,Random 3-star Blue Anima Stone,Random Reward,A random 3-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
 5200112,Random 4-star Blue Anima Stone,Random Reward,A random 4-star Blue Anima Stone that fits in a random slot and from a random set. (Tap the magnifying glass for the reward details)
-426,Soul Essence,Special Item,Used to upgrade Anima Gear · Anima Sone. Each Soul Essence provides 1 Exp.
+426,Soul Essence,Special Item,Used to upgrade Anima Gear · Anima Stone. Each Soul Essence provides 1 Exp.
 900003,Effy,,15-star skin of Effy
 20001087,Limited: Effy,Special Avatar,Limited avatar of Effy. Shh... She's taking a picture!
 7315,Sweet Surprise,Skins,Sweet Surprise skin of Azucena
@@ -6130,3 +6134,44 @@ This book was only an experimental product that was created with well-known stor
 452,Customized 6-star Blue Anima Stone Chest,Anima Artifact Chest,You can choose to get a 6-star Blue Anima Stone for opening this chest. ( in the item for the details) (Anima Gears can be equipped on Girls over Lv.200)
 453,Random Anima Stone Set Chest,Anima Artifact Chest,You can get a random 6-star Blue Anima Stone Set for opening this chest. ( in the item for the details) (Anima Gears can be equipped on Girls over Lv.200)
 4901001,Customized Orange Anima Artifact Chest,Customized Chest,You can select to get a reward for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4201041,Regular Customized Resource Chest,Customized Chest,"You can select to get one of the following rewards for opening this chest:「Coin*1500k, Exp Juice*1500k, Lunch Box*1000, Crystal Chisel*1000, Servant Cookie*600, Spirit Cookie*75, Servant Crystal*35, Standard File*1500, Exclusive File*300, Tarnished Sphere*500, Brilliant Sphere*50」"
+930232,5-star Poseidia,Summon,Collect 50 shards to summon the girl.
+56011,Poseidia,,
+656021,Poseidia,,
+756011,Poseidia,,
+930233,5-star Hadea,Summon Girl,Collect 50 shards to summon the girl
+55013,Hadea,,
+655022,Hadea,,
+755012,Hadea,,
+4302048,Customized Skin Chest (Lost Space Zone),Customized Chest,You can select to get a skin for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4104020,Customized Girls Chest (6 factions) (Lost Space Zone),Customized Chest,You can select to get 50 shards of a certain 5-Star Girl from Ghost/Human/Monster/Fairy/Angel/Demon Faction for opening this chest. (The options for this chest won't be updated in the future)
+4102053,Customized L&D Chest (Lost Space Zone),Customized Chest,"Select a 5-Star Girl from Angel/Demon faction from the list after opening this chest. (Once this chest is obtained, the contents of this chest will not be updated.)"
+4101069,Customized Girls Chest (Lost Space Zone),Customized Chest,You can select to get 50 shards of a certain 5-Star Girl of Ghost/Human/Monster/Fairy faction from the list after opening this chest. (Contents of this chest will not be updated.)
+930234,5-star Zeusia,Summon Girl,Collect 50 shards to summon the girl
+56012,Zeusia,,
+656022,Zeusia,,
+756012,Zeusia,,
+6779,Peacock Tambourine,Antique,
+6780,Peacock Tambourine,Antique,
+6781,Peacock Tambourine,Antique,
+6782,Peacock Tambourine,Antique,
+6783,Peacock Tambourine,Antique,
+6784,Peacock Tambourine,Antique,
+67841,Peacock Tambourine,Antique,
+67842,Peacock Tambourine,Antique,
+67843,Peacock Tambourine,Antique,
+6785,天際畫筆,魂器,
+6786,天際畫筆,魂器,
+6787,天際畫筆,魂器,
+6788,天際畫筆,魂器,
+6789,天際畫筆,魂器,
+6790,天際畫筆,魂器,
+67901,天際畫筆,魂器,
+67902,天際畫筆,魂器,
+67903,天際畫筆,魂器,
+7317,Blood Oath,Skins,Blood Oath skin of Lord Dracula
+27317,Blood Oath,Skins,Blood Oath skin of Lord Dracula
+4601050,Orange Outfit Customized Chest (Legs),Customized Chest,You can choose to get one full Orange Outfit set from the options available for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4302049,Customized Skin Chest (Luvly's Journey),Customized Chest,You can select to get a skin for opening this chest. (Tap the magnifying glass in the item for the option details; The options here won't be updated)
+4101070,Customized Girls Chest (Luvly's Journey),Customized Chest,You can select to get 50 shards of a certain 5-Star Girl of Ghost/Human/Monster/Fairy faction from the list after opening this chest. (Contents of this chest will not be updated.)
+4102054,Customized L&D Chest (Luvly's Journey),Customized Chest,You can select to get 50 shards of a certain 5-Star Girl from Angel/Demon Faction for opening this chest. (The options for this chest won't be updated in the future)

@@ -13402,7 +13402,7 @@ Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%
 6778301,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 100%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 30% dieses kritischen Schadens zu.
 5200001,Fertigkeit vom Set der Seelensteine,Koi des Glücks,Der erlittene Einzelschaden liegt maximal bei 30% der eigenen max. HP. (Die reduzierten Schäden liegen maximal bei 100% der eigenen max. HP. Es kann jede Runde maximal 3 Mal ausgelöst werden.)
 5200002,Fertigkeit vom Set der Seelensteine,Schwimmende Qualle,"Pro 1%iger Krit. Widerstand des Besitzers erhöht seine Schadensreduzierungsrate um 0,5%. Erleidet der Besitzer einen kritischen Schlag, wird sein Krit. Widerstand um 30% 1 Runde lang erhöht."
-5200003,Fertigkeit vom Set der Seelensteine,Felsenkrabbe,"Zu Beginn der Runde erhält der Besitzer 1 Schicht Krabbenschale. Krabbenschale: Fertigkeitseffekt. Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."
+5200003,Fertigkeit vom Set der Seelensteine,Felsenkrabbe,"Zu Beginn der Runde erhält der Besitzer 1 Runde lang 1 Schicht Krabbenschale. Krabbenschale: Fertigkeitseffekt. Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."
 5200004,Fertigkeit vom Set der Seelensteine,Geisterhafte Ziege,"Jedes Mal wenn der Besitzer den Gegnern Schaden 3 Mal zugefügt hat, erhöht sich der nächste Schaden um 60%."
 5200005,Fertigkeit vom Set der Seelensteine,Feuerseinhorn,"Erhöht den Schaden gegen die Ziele, deren HP noch höher als 80% liegen, um 40% ."
 5200006,Fertigkeit vom Set der Seelensteine,Tückische Eidechse,Erhöht den Schaden gegen Gegner als Boss um 50%.
@@ -13724,3 +13724,4 @@ Im Notfall werde ich mithilfe des Sternenlichtes dich kontrollieren. Wird das M�
 
 [c][e28002]Sternenlicht[-][/c]
 Fertigkeitseffekt. Kann nicht gestapelt werden. Reduziert die Präzision um 60%, die Blockade um 60%, die Kontrollimmunitätsrate um 60%. Der Träger hat beim Angriff eine 50%ige Wahrscheinlichkeit, die Ziele zu verfehlen."
+,,,Standardangriff

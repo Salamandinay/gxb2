@@ -428,6 +428,8 @@ function ActivityAllStarsPrayHerosWindow:unSelectHero(copyIcon)
 		self.nowPartnerList[posId + 1] = nil
 
 		self:delLocalPartnerList(partnerInfo.partnerID)
+
+		self.isMoving = false
 	end
 
 	local nowVectoryPos = moveToTarget:getIconRoot().transform.position
@@ -496,6 +498,14 @@ function ActivityAllStarsPrayHerosWindow:isPartnerSelected(partnerID)
 end
 
 function ActivityAllStarsPrayHerosWindow:onClickheroIcon(heroIcon, isChoose, needAnimation, posId)
+	if needAnimation then
+		if self.isMoving then
+			return
+		end
+
+		self.isMoving = true
+	end
+
 	if posId == nil then
 		posId = 0
 	end
@@ -556,6 +566,7 @@ function ActivityAllStarsPrayHerosWindow:onClickheroIcon(heroIcon, isChoose, nee
 
 		self["testMove1_" .. posId]:Append(tmpIcon:getIconRoot().transform:DOMove(zeroVectoryPos, 0.2))
 		self["testMove1_" .. posId]:AppendCallback(function ()
+			self.isMoving = false
 			self.isAnimation_ = false
 		end)
 	end
