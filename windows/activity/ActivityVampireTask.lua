@@ -428,16 +428,18 @@ function ActivityVampireTask:updateSecondScroller()
 	local yetArr = {}
 
 	for i in pairs(ids) do
-		local limit = xyd.tables.activityVampireTaskTable:getLimit(ids[i])
+		if ids[i] ~= 5 then
+			local limit = xyd.tables.activityVampireTaskTable:getLimit(ids[i])
 
-		if limit <= self:getActivityData().detail.mission_awarded[ids[i]] then
-			table.insert(yetArr, {
-				id = ids[i]
-			})
-		else
-			table.insert(arr, {
-				id = ids[i]
-			})
+			if limit <= self:getActivityData().detail.mission_awarded[ids[i]] then
+				table.insert(yetArr, {
+					id = ids[i]
+				})
+			else
+				table.insert(arr, {
+					id = ids[i]
+				})
+			end
 		end
 	end
 

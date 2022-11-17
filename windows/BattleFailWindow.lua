@@ -266,6 +266,7 @@ function BattleFailWindow:initWindow()
 				self.onOpenCallback()
 			end
 		end)
+		sp1:startAtFrame(0)
 
 		if self:checkShowBoard() then
 			local sp2 = xyd.Spine.new(self.effectTarget_)
@@ -374,7 +375,7 @@ function BattleFailWindow:playDialog()
 end
 
 function BattleFailWindow:checkShowBoard()
-	if self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS then
+	if self.battleType == xyd.BattleType.HERO_CHALLENGE or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.FRIEND_BOSS or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS or self.battleType == xyd.BattleType.PARTNER_STATION or self.battleType == xyd.BattleType.ICE_SECRET_BOSS or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS or self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY or self.battleType == xyd.BattleType.LIMIT_CALL_BOSS or self.battleType == xyd.BattleType.DOG_MINI_GAME then
 		return false
 	end
 
@@ -457,7 +458,7 @@ function BattleFailWindow:initReviewBtn()
 end
 
 function BattleFailWindow:checkShowDetail()
-	if self.battleType == xyd.BattleType.DUNGEON or self.battleType == xyd.BattleType.ACTIVITY_SPACE_EXPLORE then
+	if self.battleType == xyd.BattleType.DUNGEON or self.battleType == xyd.BattleType.ACTIVITY_SPACE_EXPLORE or self.battleType == xyd.BattleType.DOG_MINI_GAME then
 		return false
 	end
 
@@ -710,6 +711,8 @@ function BattleFailWindow:initLayout()
 		self:updateGuildNewWarPart()
 		self.guildNewWarGroup:SetLocalScale(0, 0, 1)
 		self.layeoutSequence:Append(self.guildNewWarGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+	elseif self.battleType == xyd.BattleType.DOG_MINI_GAME then
+		self:initDogMiniGame()
 	else
 		pvpFun()
 	end
@@ -763,6 +766,8 @@ function BattleFailWindow:closeSelf()
 		end
 	elseif self.battleType == xyd.BattleType.SOUL_LAND then
 		xyd.models.soulLand:openFightWindow(tonumber(self.battleParams.fortId))
+	elseif self.battleType == xyd.BattleType.DOG_MINI_GAME and self.params_.dogMiniGameRightBtnFun then
+		self.params_.dogMiniGameRightBtnFun()
 	end
 
 	xyd.WindowManager.get():closeWindow("battle_window")
@@ -1800,6 +1805,60 @@ function BattleFailWindow:initSpfarm()
 	self.labelRightScore:SetActive(false)
 	self.labelLeftScoreChange:SetActive(false)
 	self.labelRightScoreChange:SetActive(false)
+end
+
+function BattleFailWindow:initDogMiniGame()
+	self.confirmBtn.gameObject:SetLocalPosition(120, -116, 0)
+
+	self.confirmBtnLabel.text = __("DOG_MINI_GAME_RESET_LABEL")
+	local leftBtn = NGUITools.AddChild(self.confirmBtn.gameObject.transform.parent.gameObject, self.confirmBtn.gameObject)
+
+	leftBtn.gameObject:SetLocalPosition(-120, -116, 0)
+
+	local leftBtnUISprite = leftBtn:GetComponent(typeof(UISprite))
+
+	xyd.setUISpriteAsync(leftBtnUISprite, nil, "red_btn_65_65")
+
+	local leftBtnUILabel = leftBtn:ComponentByName("button_label", typeof(UILabel))
+	leftBtnUILabel.text = __("DOG_MINI_GAME_EXIT_LABEL")
+
+	if not xyd.GuideController.get():isGuideComplete() then
+		leftBtnUILabel.text = __("DOG_MINI_GAME_SKIP_LABEL")
+		UIEventListener.Get(leftBtn.gameObject).onClick = handler(self, function ()
+			xyd.WindowManager.get():openWindow("battle_win_window", {
+				battleParams = {
+					items = {}
+				},
+				battle_type = xyd.BattleType.DOG_MINI_GAME,
+				dogMiniGameLeftBtnFun = function ()
+					local dogMiniGameWd = xyd.WindowManager.get():getWindow("dog_mini_game_window")
+
+					if dogMiniGameWd then
+						xyd.WindowManager.get():closeWindow("dog_mini_game_window")
+					end
+
+					local dogMiniGameChoiceLevelWd = xyd.WindowManager.get():getWindow("dog_mini_game_choice_level_window")
+
+					if dogMiniGameChoiceLevelWd then
+						xyd.WindowManager.get():closeWindow("dog_mini_game_choice_level_window")
+					end
+				end,
+				items = xyd.tables.dogMiniGameLevelTable:getAwards(self.params_.dogLevel),
+				dogLevel = self.params_.dogLevel,
+				dogIsShowItems = xyd.models.selfPlayer:getDogMiniPassLevel() < self.params_.dogLevel
+			})
+			xyd.models.selfPlayer:sendDogMiniLevel(self.params_.dogLevel)
+			xyd.WindowManager.get():closeWindow(self.name_)
+		end)
+	else
+		UIEventListener.Get(leftBtn.gameObject).onClick = handler(self, function ()
+			if self.params_.dogMiniGameLeftBtnFun then
+				self.params_.dogMiniGameLeftBtnFun()
+			end
+
+			xyd.WindowManager.get():closeWindow(self.name_)
+		end)
+	end
 end
 
 return BattleFailWindow

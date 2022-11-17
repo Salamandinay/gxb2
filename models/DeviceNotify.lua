@@ -264,8 +264,7 @@ function DeviceNotify:setRedMark(id, status)
 end
 
 function DeviceNotify:onAppPause(pause, fromLogin)
-	dump("===============DeviceNotify === onAppPause")
-	dump(pause)
+	print("进来了============")
 	xyd.SdkManager.get():setServerNotification(pause)
 
 	if pause then
@@ -321,6 +320,14 @@ function DeviceNotify:onAppPause(pause, fromLogin)
 		end, nil)
 		LocalNotification.CancelAllNotifications()
 		xyd.SdkManager.get():clearAllNotify()
+
+		if xyd.Global.isLoginInfoReceived then
+			local dogMiniGameWd = xyd.WindowManager.get():getWindow("dog_mini_game_window")
+
+			if dogMiniGameWd then
+				dogMiniGameWd:reStartByOnAppPause()
+			end
+		end
 	end
 end
 

@@ -23,8 +23,8 @@ end
 function SchoolOpensGiftbag:resizeToParent()
 	SchoolOpensGiftbag.super.resizeToParent(self)
 	self:resizePosY(self.exchangeBtn, -785, -962)
-	self:resizePosY(self.item1, -349, -406)
-	self:resizePosY(self.item2, -523, -606)
+	self:resizePosY(self.item1, -269, -381)
+	self:resizePosY(self.item2, -474, -586)
 	self:resizePosY(self.item3, -655, -771)
 end
 

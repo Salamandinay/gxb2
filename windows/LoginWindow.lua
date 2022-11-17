@@ -84,6 +84,7 @@ end
 function LoginWindow:initWindow()
 	LoginWindow.super.initWindow(self)
 	self:getUIComponent()
+	dump("3333")
 	self:initEffect()
 	xyd.setUITextureByNameAsync(self.backImg, "login_scene", false, function ()
 		self:onBgLoad()
@@ -298,6 +299,7 @@ function LoginWindow:changeServerIdShow()
 end
 
 function LoginWindow:onBgLoad()
+	dump("2222")
 	UIManager.Close("ui_loading")
 
 	self.isBgLoad_ = true

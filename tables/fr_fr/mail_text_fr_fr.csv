@@ -31,7 +31,7 @@ id,name,from,content
 30,BOSS de la Guilde,Courrier de la Guilde,"Félicitations ! Votre Guilde a vaincu le BOSS. Voici vos récompenses concernant votre classement, veuillez les collecter !"
 31,BOSS de la Guilde,Courrier de la Guilde,Félicitations ! Vous avez vaincu le BOSS de la Guilde. Voici vos récompenses.
 32,BOSS de Guilde,Courrier de la Guilde,"Vous avez vaincu ce BOSS plusieurs fois, vous ne pouvez plus recevoir de récompenses."
-33,Nomination au poste de Chef,Courrier de la Guilde,{1} n'est plus le Chef de la Guilde. {2} est le nouveau Chef de la Guilde {3}
+33,Nomination au poste de Chef,Courrier de la Guilde,{1} n'est plus le Chef de la Guilde. {2} est le nouveau Chef de la Guilde {3}.
 34,Nomination au poste de Second,Courrier de la Guilde,Vous avez été nommé Second de la Guilde {1}
 35,Licenciement du poste de Second,Courrier de la Guilde,Vous n'êtes plus le Second de la Guilde {1}
 36,Banni de la Guilde,Courrier de la Guilde,Vous avez été banni. Vous n'êtes plus un membre de la Guilde {1}
@@ -46,7 +46,7 @@ id,name,from,content
 45,Exploration,Courrier du Système,"Vous avez vaincu le Boss dans l'Exploration ! Voici vos récompenses, veuillez les récupérer~"
 46,L'Arène d'Elite se termine,Courrier du Système,"Cher Senpai,\nl'Arène d'Elite se terminera dans 24 heures ! Allez vite dans l'Arène d'Elite pour défendre votre Gloire !"
 47,Partage de Voix,Courrier du Système,Merci d'avoir participé à l'événement de Voix ! Voici vos récompenses.
-48,Récompense Quotidienne,Courrier du Système,"Voici vos récompenses pour vous être connecté(e) quotidiennement. Veuillez collecter vos récompenses : Ticket du Distributeur*1, Carte Pratique*5."
+48,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir les récompenses suivantes, n'oubliez pas de collecter vos récompenses, Senpai~"
 49,Pratique Extra-Scolaire,Courrier du Système,"Senpai ! La Pratique Extra-Scolaire a débuté ! Voici pour vous Carte Pratique*4, vous en aurez besoin !"
 50,Arène 3v3 est disponible,Courrier de l'Arène,"Senpai ! L'Arène 3v3 est désormais disponible, allez-y vite vous battre !"
 51,L'Arène 3v3 se termine,Courrier de l'Arène,"Cher Senpai,\nl'Arène 3v3 se terminera dans 24 heures ! Allez vite dans l'Arène 3v3 pour défendre votre Gloire !"
@@ -59,7 +59,7 @@ id,name,from,content
 58,Final de la Bataille de Guilde,Courrier du Système,Félicitations ! Votre Guilde s'est classée {1}e dans la Finale de la Bataille de Guilde. Voici vos récompenses.
 59,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde a atteint la Deuxième Place dans la Bataille de Guilde ! Voici vos récompenses !
 60,Final de la Bataille,Courrier du Système,Félicitations ! Votre Guilde est Championne de la Bataille de la Guilde. Voici vos récompenses.
-61,Carte de Halloween,Courrier du Système,"Bonjour Senpai,\nvous êtes un joueur au niveau {1}, voici vos récompenses d'aujourd'hui, veuillez les collecter.\nVotre Carte de Halloween expirera dans {3} jours !"
+61,Récompense de Carte de Chaton,Courrier du Système,"Bonjour Senpai,\nvous êtes un joueur au niveau {1}, voici vos récompenses d'aujourd'hui, veuillez les collecter.\nVotre Carte de Chaton expirera dans {3} jours !"
 62,Carte Mensuelle Renouvelée,Carte Mensuelle,Félicitations ! Vous avez renouvelé votre carte mensuelle. Votre abonnement actuel finira dans {1} jours
 63,Petite Carte Mensuelle Renouvelée,Petite Carte Mensuelle,Félicitations ! Vous avez renouvelé votre petite carte mensuelle. Votre abonnement actuel finira dans {1} jours
 64,Événement de Puzzle,Courrier du Système,Félicitations ! Vous avez complété {1} Puzzles. Voici vos récompenses.
@@ -134,7 +134,7 @@ Veuillez récupérer vos récompenses, Senpai~"
 129,Récompense de Tâches du Retour,Courrier du Système,"Vous avez complété la Tâches du Retour, veuillez collecter les récompenses !"
 130,Récompense de Tâches Co-op.,Courrier du Système,"Vous avez complété la Tâches Co-op., veuillez collecter les récompenses !"
 131,Récompenses de Capsules à Souhait,Courrier du Système,"Félicitations ! Vous avez tiré Capsules Avancées {1} fois dans l'événement de Capsules à Souhait, veuillez collecter les récompenses !"
-132,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Baguette*1.\nVoici vos récompenses, veuillez les récupérer, Senpai~"
+132,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir les récompenses suivantes, n'oubliez pas de collecter vos récompenses, Senpai~"
 133,Aventure Fantastique,Courrier du Système,"Félicitations ! Vous avez atteint Niveau.{1} dans l'Aventure Fantastique, voici vos récompenses, veuillez les collecter !"
 134,Nouveau Chef,Courrier de la Guilde,"Puisque {1} ne s'est pas connecté depuis 7 jours, le poste de chef a été automatiquement transféré par le système. {2} est maintenant le nouveau chef de la Guilde {3}."
 135,Rappel de la fin d'Arène,Courrier de l'Arène,"Cher Senpai,\nl'Arène se terminera dans 24 heures ! Rends-toi vite dans l'Arène pour prouver ta valeur !"
@@ -154,7 +154,7 @@ Veuillez récupérer vos récompenses, Senpai~"
 149,Récompense de Débutant (1),Courrier du Système,"Senpai ! Félicitations ! Vous avez terminé les Tâches de 7 jours, voici les récompenses non collectées, n'oubliez pas de les récupérer !"
 150,Récompense de Débutant (2),Courrier du Système,"Félicitations Senpai ! Vous avez obtenu {1} point(s) dans l'événement de Tâches de 7 jours, voici vos récompenses non collectées, n'oubliez pas de les récupérer !"
 151,Récompense du Périple de Lavli,Courrier d'Événement,"Félicitations ! Vous avez collecté {1} Corails dans Le Périple de Lavli. Voici vos récompenses, veuillez les récupérer~"
-152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir Gouvernail*4, Gemme*150 et Bouteille Usée*5. Voici vos récompenses, veuillez les récupérer~"
+152,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir les récompenses suivantes, n'oubliez pas de collecter vos récompenses, Senpai~"
 153,Récupération d'objet d'événement,Courrier du Système,"
 Bonjour Senpai,
 L\'événement - {1} est à présent terminé.
@@ -325,4 +325,4 @@ Si vous avez des questions n\'hésitez pas à contacter Yuki."
 267,L'Atelier de la Citrouille,Courrier du Système,"Félicitations Senpai !\nVous vous êtes classé {1}e dans l'événement - L'Atelier de la Citrouille ! Voici vos récompenses, veuillez les récupérer~"
 269,Récompense Quotidienne,Courrier du Système,"Durant l'événement, connectez-vous chaque jour pour obtenir les récompenses suivantes, n'oubliez pas de collecter vos récompenses, Senpai~"
 270,Bonus de Recharge,Courrier du Système,"Bonjour Senpai,\nVous avez obtenu {1} VIP EXP durant cet événement, voici vos récompenses, veuillez les récupérer~"
-271,Bonus Stellaire,Courrier du Système,"Bonjour Senpai,\nvoici les récompenses que vous avez obtenues dans l'événement - Bonus Stellaire, veuillez les récupérer~"
+271,Bonus Stellaire,Courrier du Système,"Bonjour Senpai,\nVoici les récompenses que vous avez obtenues dans l'événement - Bonus Stellaire, veuillez les récupérer~"

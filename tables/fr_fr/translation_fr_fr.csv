@@ -719,7 +719,7 @@ GAMBLE_NO_RECORDS,Vide
 PUB_MISSION_GIFTBAG_TEXT01,"Cet événement sera réinitialisé tous les mois, finissez les Jobs requis afin de récupérer les récompenses."
 PUB_MISSION_WITH_STAR,Job {1} étoiles
 CHAT_RECORD_NUM,{1} messages
-TRIAL_ENTER_WINDOW_HELP,"1. Le Sanctuaire sera ouvert pendant 47 heures, après cette période vous devrez attendre 1 heure avant sa réouverture.|2. Il y a 2 Sanctuaires : Portail Volcanique et Portail Abyssal sera alternativement ouvert.|3. Les Filles (Niv. 40+) peuvent rejoindre le Sanctuaire (les Filles ne récupèrent pas leurs PV après chaque combat).|4. La puissance de l'ennemi sera modifiée en fonction de la puissance de vos 6 Filles les plus puissantes.|5. Les Filles n'ayant plus de PV ne peuvent plus continuer à combattre dans le Sanctuaire.|6. Il y a 9 étapes dans le Sanctuaire. Après avoir terminé l'étape 1, l'étape 2, l'étape 3, l'étape 5, l'étape 6 et l'étape 7, vous pourrez choisir 1 Bonus de combat. À l'étpa 4, vous pouvez choisir 1 Effet de Guérison. À l'étape 8, toutes vos Filles pourront récupérer 100%% de leurs PV. |7. Jusqu'à l'étape 7, vous pouvez combattre autant de fois que vous le pouvez pour compléter les étapes. À l'étape 9, vous n'aurez qu'une seule chance à défier le Boss, les récompenses d'étape 9 vous seront envoyées selon vos dégâts infligés. |8. Les Livres Sacrés pourront être échangés contre les objets dans la Boutique du Sanctuaire."
+TRIAL_ENTER_WINDOW_HELP,"1. Le Sanctuaire sera ouvert pendant 47 heures, après cette période vous devrez attendre 1 heure avant sa réouverture.|2. Il y a 2 Sanctuaires : Portail Volcanique et Portail Abyssal sera alternativement ouvert.|3. Les Filles (Niv. 40+) peuvent rejoindre le Sanctuaire (les Filles ne récupèrent pas leurs PV après chaque combat).|4. La puissance de l'ennemi sera modifiée en fonction de la puissance de vos 6 Filles les plus puissantes.|5. Les Filles n'ayant plus de PV ne peuvent plus continuer à combattre dans le Sanctuaire.|6. Il y a 9 étapes dans le Sanctuaire. Après avoir terminé l'étape 1, l'étape 2, l'étape 3, l'étape 5, l'étape 6 et l'étape 7, vous pourrez choisir 1 Bonus de combat. À l'étape 4, vous pouvez choisir 1 Effet de Guérison. À l'étape 8, toutes vos Filles pourront récupérer 100%% de leurs PV. |7. Jusqu'à l'étape 7, vous pouvez combattre autant de fois que vous le pouvez pour compléter les étapes. À l'étape 9, vous n'aurez qu'une seule chance à défier le Boss, les récompenses d'étape 9 vous seront envoyées selon vos dégâts infligés. |8. Les Livres Sacrés pourront être échangés contre les objets dans la Boutique du Sanctuaire."
 TRIAL_AWARD_WINDOW,Récompense d'étage
 EMOTION_LIMIT_TIME,Attendez {1} secondes pour envoyer un emoji
 TRIAL_TEXT01,Restant :
@@ -2492,7 +2492,7 @@ GUILD_BOSS_TEXT03,Calcul hebdomaire des récompenses：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Niveau {1}
 SUMMON_CONFIRM,"Utiliser {2} Gemmes pour tirer {1} fois les Capsules, voulez-vous continuer ?"
 TURING_TASK_LIMIT,Limite
-TURING_TASK_TEXT01,"Durant l'événement, terminez les tâches pour obtenir des Tickets du Black Friday !\nLes récompenses vous seront envoyées directement dans votre Sac."
+TURING_TASK_TEXT01,Terminez les tâches pour obtenir les récompenses correspondantes qui seront envoyées directement dans votre Sac.
 WELFARE_TEXT01,Utilisez des Sceaux pour débloquer plus de récompenses !
 WELFARE_TEXT02,Débloqué après avoir utilisé {1} Sceaux dans Recruter.
 BEGINNER_QUEST_LOCKED,Bloqué
@@ -5608,8 +5608,8 @@ ACTIVITY_SOCKS_CHANGE_TEXT10,Veuillez sélectionner le Matériel d'échange et v
 ACTIVITY_SOCKS_CHANGE_TEXT11,Veuillez sélectionner le Matériel d'échange.
 A_AND_B,{1} et {2}
 ACTIVITY_SOCKS_CHANGE_TEXT12,Veuillez sélectionner le Matériel d'échange
-BAG_NUM_LIMIT_TEXT1,"Vous Stockage de {1} a atteint sa limite maximale, veuillez les utiliser."
-BAG_NUM_LIMIT_TEXT2,"Vous Stockage de {1} a atteint/ a bientôt atteint sa limite maximale, veuillez les utiliser à temps."
+BAG_NUM_LIMIT_TEXT1,"Votre Stockage de {1} a atteint sa limite maximale, veuillez les utiliser."
+BAG_NUM_LIMIT_TEXT2,"Votre Stockage de {1} a atteint/ a bientôt atteint sa limite maximale, veuillez les utiliser à temps."
 ALTAR_INFO_5,Cette Fille ne peut pas être inversée.
 ALTAR_INFO_6,"Cette Fille n'a pas été améliorée, nul besoin de l'inverser."
 GAMBLE_JUMP_CARTOON,Ne plus afficher
@@ -7742,14 +7742,14 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT22,Aperçu Partiel
 DOG_MINI_GAME_EXIT_LABEL,Quitter
 DOG_MINI_GAME_NEXT_LABEL,Suivant
 DOG_MINI_GAME_RESET_LABEL,Recommencer
-ACTIVITY_PAY_DAY_TEXT08,3400%%
-ACTIVITY_STAR_ALTAR_GAMBLE_HELP,1.活動期間，每消耗1枚星空幣即可累計1點星願值。|2.星願值填滿一個星願瓶後即可領取一份星願回饋獎勵，並解鎖下一檔星願瓶。
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,星願瓶
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,消耗1枚星空幣即可累計1點星願值
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,前往消耗
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON02,回饋專享
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,快人一步體驗新陣營戰姬！
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT04,今日登入獎勵
+ACTIVITY_PAY_DAY_TEXT08,2700%%
+ACTIVITY_STAR_ALTAR_GAMBLE_HELP,"1. Obtenez 1 étoile pour chaque Jeton de Capsule Cosmique consommé.|2. Lorsqu'un Vase Cosmique est rempli d'étoile, vous obtiendrez la récompense correspondante, puis un nouveau Vase Cosmique sera débloqué."
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,Vase Cosmique
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,Obtenez 1 étoile pour chaque\nJeton de Capsule Cosmique consommé
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,Aller à
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON02,Pack du\nBonus Stellaire
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,Votre Cosmos progressera en un rien de temps !
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT04,Récompense Quotidienne
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT05,Ne plus rappeler aujourd'hui
 ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON03,Collecter
 ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON04,Aller à
@@ -7757,11 +7757,23 @@ ACTIVITY_STAR_ALTAR_LOGIN_TEXT01,Connexion {1}/7
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT02,Jour {1}
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,Collecter
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,Recollecter
-DOG_MINI_GAME_LEVEL_LABEL,關卡選擇
+DOG_MINI_GAME_LEVEL_LABEL,Étape à sélectionner
 DOG_MINI_GAME_STAGE_LABEL,Étape - {1}
-DOG_MINI_GAME_NAME_LABEL,狗頭名字
-DOG_MINI_GAME_BEFORE_LABEL,請完成前置關卡
+DOG_MINI_GAME_NAME_LABEL,Sauvez\nHatchi
+DOG_MINI_GAME_BEFORE_LABEL,Veuillez d'abord passer l'étape précédente !
 WARMUP_ARENA_TASK_INFO_2_1,不認識的神王
 DOG_MINI_GAME_SKIP_LABEL,Passer
 ACTIVITY_PAY_DAY_TEXT09,Pack de Bulles
-ACTIVITY_STAR_ALTAR_LOGIN_HELP,1.活動期間，每日登入即可領取初入星系的登入獎勵。|2.未及時領取的登入獎勵可以消耗鑽石*50進行補簽哦。
+ACTIVITY_STAR_ALTAR_LOGIN_HELP,"1. Durant cet événement, connectez-vous chaque jour pour obtenir les récompenses quotidiennes de votre Premier Voyage.|2. Consommez 50 Gemmes pour recollecter les récompenses manquées."
+TURING_MISSION02_TEXT01,Terminez les tâches pour obtenir les récompenses correspondantes qui seront envoyées directement dans votre Sac.
+TURING_MISSION03_TEXT01,Terminez les tâches pour obtenir les récompenses correspondantes qui seront envoyées directement dans votre Sac.
+TURING_MISSION04_TEXT01,Terminez les tâches pour obtenir les récompenses correspondantes qui seront envoyées directement dans votre Sac.
+ACTIVITY_STAR_PLAN_HELP,1.消耗娃娃幣即可在星空娃娃機中抓取一個娃娃。娃娃機裡的天蝎娃娃、射手娃娃和雙魚娃娃被抓取後將自動轉換為對應的票據，抓取到娃娃禮盒後將獲得1份隨機獎勵。|2.娃娃被抓取後不放回。在娃娃機裡抓取達到一定次數，還將投入額外的娃娃進娃娃機中。若娃娃機中的娃娃少於默認值，學長可以手動將娃娃數量補充至默認值哦（通過累計獎勵途徑獲得的額外娃娃不會被扣除）。|3.獲得的票據可以兌換為相應的獎勵道具。
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT01,Récompense de Poupée
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT02,Récompense de Boîte
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT03,Récompenses
+ACTIVITY_STAR_PLAN_BUTTON01,1 fois
+ACTIVITY_STAR_PLAN_BUTTON02,10 fois
+ACTIVITY_STAR_PLAN_AWARDS_BUTTON,Récompenses
+ACTIVITY_STAR_PLAN_AWARDS_TEXT,累計抓取{1}次[c][7cff35]({1}/{2})[-][/c]
+ACTIVITY_STAR_PLAN_TIPS01,是否重置本輪獎池？\n（額外獲得的娃娃不會重置消失）

@@ -489,7 +489,7 @@ function BattleWinWindow:playDialog()
 end
 
 function BattleWinWindow:checkShowBoard()
-	if self.battleType == xyd.BattleType.HERO_CHALLENGE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SKIN_PLAY or (self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY) and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.FAIRY_TALE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS and not self.battleParams.is_score_up then
+	if self.battleType == xyd.BattleType.HERO_CHALLENGE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.HERO_CHALLENGE_CHESS and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.SPORTS_SHOW or self.battleType == xyd.BattleType.HERO_CHALLENGE_REPORT or self.battleType == xyd.BattleType.ENTRANCE_TEST_REPORT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT or self.battleType == xyd.BattleType.LIBRARY_WATCHER_STAGE_FIGHT2 or self.battleType == xyd.BattleType.SKIN_PLAY or (self.battleType == xyd.BattleType.BEACH_ISLAND or self.battleType == xyd.BattleType.ENCOUNTER_STORY) and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.FAIRY_TALE and (not self.battleParams.items or #self.battleParams.items <= 0) or self.battleType == xyd.BattleType.EXPLORE_OLD_CAMPUS and not self.battleParams.is_score_up or self.battleType == xyd.BattleType.DOG_MINI_GAME and not self.params_.dogIsShowItems then
 		return false
 	end
 
@@ -954,6 +954,8 @@ function BattleWinWindow:initLayout()
 		self:updateGuildNewWarPart()
 		self.guildNewWarGroup:SetLocalScale(0, 0, 1)
 		self.layeoutSequence:Append(self.guildNewWarGroup.transform:DOScale(Vector3(1, 1, 1), 0.16))
+	elseif self.battleType == xyd.BattleType.DOG_MINI_GAME then
+		self:initDogMiniGame()
 	end
 
 	UIEventListener.Get(self.battleDetailBtn).onClick = function ()
@@ -1020,6 +1022,8 @@ function BattleWinWindow:closeSelf()
 		end
 	elseif self.battleType == xyd.BattleType.SOUL_LAND then
 		xyd.models.soulLand:openFightWindow(tonumber(self.battleParams.fortId))
+	elseif self.battleType == xyd.BattleType.DOG_MINI_GAME and self.params_.dogMiniGameRightBtnFun then
+		self.params_.dogMiniGameRightBtnFun()
 	end
 
 	xyd.WindowManager.get():closeWindow("battle_window")
@@ -1334,7 +1338,7 @@ function BattleWinWindow:checkNewTrialEnd()
 end
 
 function BattleWinWindow:checkShowDetail()
-	if self.battleType == xyd.BattleType.DUNGEON or self.battleType == xyd.BattleType.ACTIVITY_SPACE_EXPLORE then
+	if self.battleType == xyd.BattleType.DUNGEON or self.battleType == xyd.BattleType.ACTIVITY_SPACE_EXPLORE or self.battleType == xyd.BattleType.DOG_MINI_GAME then
 		return false
 	end
 
@@ -2944,6 +2948,57 @@ end
 
 function BattleWinWindow:iosTestChangeUI()
 	xyd.setUISprite(self.confirmBtn:GetComponent(typeof(UISprite)), nil, "blue_btn70_70_ios_test")
+end
+
+function BattleWinWindow:initDogMiniGame()
+	self.confirmBtnLabel.text = __("DOG_MINI_GAME_NEXT_LABEL")
+	local allLevelIds = xyd.tables.dogMiniGameLevelTable:getIDs()
+
+	if allLevelIds[#allLevelIds] <= self.params_.dogLevel then
+		self.confirmBtnLabel.text = __("DOG_MINI_GAME_RESET_LABEL")
+	end
+
+	local leftBtn = NGUITools.AddChild(self.confirmBtn.gameObject.transform.parent.gameObject, self.confirmBtn.gameObject)
+	local leftBtnUISprite = leftBtn:GetComponent(typeof(UISprite))
+
+	xyd.setUISpriteAsync(leftBtnUISprite, nil, "red_btn_65_65")
+
+	local leftBtnUILabel = leftBtn:ComponentByName("button_label", typeof(UILabel))
+	leftBtnUILabel.text = __("DOG_MINI_GAME_EXIT_LABEL")
+	self.dogMiniGameWinGuideBtn = leftBtn
+	UIEventListener.Get(leftBtn.gameObject).onClick = handler(self, function ()
+		if self.params_.dogMiniGameLeftBtnFun then
+			self.params_.dogMiniGameLeftBtnFun()
+		end
+
+		xyd.WindowManager.get():closeWindow(self.name_)
+	end)
+
+	if self.params_.dogIsShowItems then
+		if self.params_.items and #self.params_.items > 0 then
+			for _, itemData in ipairs(self.params_.items) do
+				local itemIcon = xyd.getItemIcon({
+					showSellLable = false,
+					itemID = itemData[1],
+					num = itemData[2],
+					uiRoot = self.pveDropGroup
+				})
+			end
+
+			self.pveDropGroup:SetActive(true)
+		end
+
+		self.confirmBtn.gameObject:SetLocalPosition(120, -254, 0)
+		leftBtn.gameObject:SetLocalPosition(-120, -254, 0)
+	else
+		self.confirmBtn.gameObject:SetLocalPosition(120, -116, 0)
+		leftBtn.gameObject:SetLocalPosition(-120, -116, 0)
+	end
+
+	if not xyd.GuideController.get():isGuideComplete() then
+		self.confirmBtn.gameObject:X(3000)
+		leftBtn.gameObject:X(0)
+	end
 end
 
 return BattleWinWindow

@@ -325,7 +325,11 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX_BATTLE_PASS] = require("app.models.datas.ActivityBlindBoxBattlePassData"),
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = require("app.models.datas.ActivityBlindBoxMissionData"),
 	[xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN] = require("app.models.datas.ActivityNewGrowthPlanData"),
-	[xyd.ActivityID.ACTIVITY_DAILY_RECHARGE] = require("app.models.datas.ActivityDailyRechargeData")
+	[xyd.ActivityID.ACTIVITY_DAILY_RECHARGE] = require("app.models.datas.ActivityDailyRechargeData"),
+	[xyd.ActivityID.ACTIVITY_START_ALTAR_LOGIN] = require("app.models.datas.ActivityAltarLoginData"),
+	[xyd.ActivityID.ACTIVITY_START_ALTAR_CHARGE] = require("app.models.datas.ActivityAltarChargeData"),
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION2] = require("app.models.datas.ActivityTuringMission2Data"),
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION3] = require("app.models.datas.ActivityTuringMission3Data")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

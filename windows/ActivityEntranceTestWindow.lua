@@ -108,7 +108,7 @@ function ActivityEntranceTestWindow:getUIComponent()
 	self.missionBtnLabel = self.missionBtn:ComponentByName("label", typeof(UILabel))
 	self.missionBtnRed = self.leftNode:NodeByName("missionBtn/redPoint").gameObject
 	self.countDownText = CountDown.new(countDownText)
-	self.bg = trans:NodeByName("e:image").gameObject
+	self.bg = trans:ComponentByName("e:image", typeof(UITexture))
 	self.pveDownGroup = self.window_:NodeByName("pveDownGroup").gameObject
 	self.showsBtn = self.pveDownGroup:NodeByName("showsBtn").gameObject
 	self.showsBtnRed = self.showsBtn:ComponentByName("redPoint", typeof(UISprite))
@@ -134,10 +134,10 @@ function ActivityEntranceTestWindow:playOpenAnimation(callback)
 			self.actionLeftNode:Kill(true)
 		end)
 	end))
-	self:resizePosY(self.bg.gameObject, -77, 9)
-	self:resizePosY(self.leftBg.gameObject, 159, 245)
+	self:resizePosY(self.bg.gameObject, -49, 9)
+	self:resizePosY(self.leftBg.gameObject, 74, 87)
 	self:resizePosY(self.pveDownGroup.gameObject, -383, -457)
-	self.rightBg:Y(-95 + 76 * self.scale_num_contrary)
+	self.rightBg:Y(-178 + 11 * self.scale_num_contrary)
 
 	self.logoNode_widget.alpha = 0.01
 
@@ -233,6 +233,13 @@ function ActivityEntranceTestWindow:layout()
 	self.showsBtnLabel.text = __("ACTIVITY_ENTRANCE_TEST_TEXT01")
 
 	xyd.setUISpriteAsync(self.logo, nil, "activity_entrance_test_logo_" .. xyd.Global.lang, nil, , true)
+
+	if xyd.getServerTime() < 1673568000 then
+		xyd.setUITextureByNameAsync(self.bg, "entrance_test_bg_rxcy_3")
+	else
+		xyd.setUITextureByNameAsync(self.bg, "entrance_test_bg_rxcy_4")
+	end
+
 	xyd.db.misc:setValue({
 		value = "1",
 		key = "ActivityFirstRedMark_" .. xyd.ActivityID.ENTRANCE_TEST .. "_" .. self.activityData.end_time

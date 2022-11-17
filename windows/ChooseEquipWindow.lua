@@ -39,6 +39,7 @@ function ChooseEquipWindow:ctor(name, params)
 	self.equipedPartner = params.equipedPartner
 	self.isAll = true
 	self.quickItem = params.quickItem
+	self.titleText = params.titleText
 
 	self:sortEquips()
 end
@@ -129,7 +130,7 @@ function ChooseEquipWindow:initWindow()
 		end
 	end
 
-	self.labelTitle.text = __("CHOOSE_ARTIFACT")
+	self.labelTitle.text = self.titleText or __("ChooseEquipWindow")
 	self.chooseLabel.text = __("CHOOSE_EQUIP")
 	self.selectLabel.text = __("NOT_EQUIPPED")
 end

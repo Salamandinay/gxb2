@@ -2781,7 +2781,7 @@ During this effect, girls affected will not be able to deal Basic Attacks, relea
 6010014,Elixir,Medical Waste,"Deals 3923 damage to enemies in the front-line, dealing 2458 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 6010015,Elixir,Medical Waste,"Deals 4146 damage to enemies in the front-line, dealing 2612 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 6010016,Elixir,Medical Waste,"Deals 4369 damage to enemies in the front-line, dealing 2766 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
-6010017,Painkiller,Medical Waste,"Deals 4592 damage to enemies in the front-line, dealing 2920 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
+6010017,Elixir,Medical Waste,"Deals 4592 damage to enemies in the front-line, dealing 2920 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 6010018,Elixir,Medical Waste,"Deals 4815 damage to enemies in the front-line, dealing 3074 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 6010019,Elixir,Medical Waste,"Deals 5038 damage to enemies in the front-line, dealing 3228 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
 6010020,Elixir,Medical Waste,"Deals 5261 damage to enemies in the front-line, dealing 3382 [c][01a310]Poison[-][/c] damage each round for 3 rounds\n[c][01a310]Poison:[-][/c]\nA damage over time. Damage is dealt once when poison is inflicted and during the period of effect, damage will be dealt at the beginning of each round."
@@ -18386,4 +18386,691 @@ When an ally is attacked by an enemy afflicted with [c][e28002]Afterimage[-][/c]
 [c][e28002]Afterimage[-][/c]:
 A Skill Effect that cannot stack.
 Reduces the owner’s Precision by 60%, Block by 60%, and Control Immunity by 60%. When the owner of this Effect deals a Basic Attack or an Active Skill, it has a 50% chance to miss."
-,,,Basic Attack
+5601100,Poseidia,Basic Attack,
+65602100,Poseidia,Basic Attack,
+75601100,Poseidia,Basic Attack,
+5601101,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 40% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 100%, 130%, and 160% of Attack respectively.
+She will also increase the Block of all allies by 20% for 3 rounds (this effect can stack)."
+65602101,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 60% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 200%, 260%, and 320% of Attack respectively.
+She will also increase the Block of all allies by 25% for 3 rounds (this effect can stack)."
+75601101,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 500%, 660%, and 810% of Attack respectively.
+She will also increase the Block of all allies by 35% for 3 rounds (this effect can stack)."
+5601102,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 20%, Attack by 10%, Block by 20%, Control Immunity by 10%, and Crit Resist by 10%."
+65602102,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 30%, Attack by 20%, Block by 30%, Control Immunity by 20%, and Crit Resist by 20%."
+65602112,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 50%, Control Immunity by 30%, and Crit Resist by 30%."
+75601102,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 50%, Control Immunity by 30%, and Crit Resist by 30%."
+5601103,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (10% of lost HP) HP, reduces the Precision of all enemies by 8% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 20% for 3 rounds."
+65602103,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (20% of lost HP) HP, reduces the Precision of all enemies by 10% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 25% for 3 rounds."
+65602113,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (30% of lost HP) HP, reduces the Precision of all enemies by 15% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 35% for 3 rounds."
+75601103,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (30% of lost HP) HP, reduces the Precision of all enemies by 15% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 35% for 3 rounds."
+5601105,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (3% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 6% Attack and 6% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+65602105,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (5% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 10% Attack and 10% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+65602115,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (10% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+75601105,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (10% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+756011011,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 510%, 670%, and 826% of Attack respectively.
+She will also increase the Block of all allies by 36% for 3 rounds (this effect can stack)."
+756011012,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 520%, 680%, and 842% of Attack respectively.
+She will also increase the Block of all allies by 37% for 3 rounds (this effect can stack)."
+756011013,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 530%, 690%, and 858% of Attack respectively.
+She will also increase the Block of all allies by 38% for 3 rounds (this effect can stack)."
+756011014,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 540%, 700%, and 874% of Attack respectively.
+She will also increase the Block of all allies by 39% for 3 rounds (this effect can stack)."
+756011015,Poseidia,Abyssal Vortex,"
+The sea\'s secrets far surpass your imagination.
+
+Poseidia reduces the Armor of 1 random enemy by 80% for 3 rounds then attacks the enemy 3 times, dealing damage equivalent to 550%, 710%, and 900% of Attack respectively.
+She will also increase the Block of all allies by 40% for 3 rounds (this effect can stack)."
+756011021,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 52%, Control Immunity by 30%, and Crit Resist by 30%."
+756011022,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 54%, Control Immunity by 30%, and Crit Resist by 30%."
+756011023,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 56%, Control Immunity by 30%, and Crit Resist by 30%."
+756011024,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 40%, Attack by 30%, Block by 58%, Control Immunity by 30%, and Crit Resist by 30%."
+756011025,Poseidia,Stormy Seas,"One does not cross the Lord of the Seas without consequences!\n\nIncreases Poseidia's HP by 45%, Attack by 35%, Block by 60%, Control Immunity by 30%, and Crit Resist by 30%."
+756011031,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (31% of lost HP) HP, reduces the Precision of all enemies by 17% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 36% for 3 rounds."
+756011032,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (32% of lost HP) HP, reduces the Precision of all enemies by 19% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 37% for 3 rounds."
+756011033,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (33% of lost HP) HP, reduces the Precision of all enemies by 21% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 38% for 3 rounds."
+756011034,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (34% of lost HP) HP, reduces the Precision of all enemies by 23% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 39% for 3 rounds."
+756011035,Poseidia,Illustrious Trident,"'Tis time to unleash the true powers of my trident.\n\nPoseidia’s Basic Attack heals her for (35% of lost HP) HP, reduces the Precision of all enemies by 25% for 3 rounds (this effect can stack), and increases the Block of her Front Row allies by 40% for 3 rounds."
+756011051,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (12% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+756011052,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (14% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+756011053,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (16% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+756011054,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (18% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 20% Attack and 20% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+756011055,Poseidia,Oceanic Spirit,"
+I draw my power from the roaring waves!
+
+Poseidia gains 1 stack of [c][e28002]Gift of the Sea[-][/c], recovers (20% of lost HP) HP, and has a 50% chance to [c][e28002] Crystallize[-][/c] 2 random enemies for 2 rounds whenever an ally blocks an attack.
+When the battle starts, she has 100% chance to [c][e28002]Taunt[-][/c] all enemies for 2 rounds.
+
+[c][e28002]Gift of the Sea[-][/c]:
+A Skill Effect.
+When the owner gains 6 stacks of this Effect, she will consume all stacks and grant 30% Attack and 30% Armor that last for 3 rounds to all allies. The effects will double for Poseidia herself.
+
+[c][e28002]Crystallize[-][/c]:
+A Control Effect.
+Crystallized targets will not be able to use their Active Skill, deal Basic Attacks, Hunt the targets, or Counterattack after being attacked for 2 rounds. This effect can stack.
+
+[c][e28002]Taunt[-][/c]:
+A Control effect.
+The Taunted target will compulsively target the caster of this Control Effect when releasing their Active Skill, when dealing a Basic Attack, or when triggering a Passive Skill that affects the enemies."
+5501300,Hadea,Basic Attack,
+65502200,Hadea,Basic Attack,
+75501200,Hadea,Basic Attack,
+5501301,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成600%攻擊傷害，追加目標生命上限15%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低30%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低10%、獲得屏障量降低10%。"
+65502201,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成800%攻擊傷害，追加目標生命上限20%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低40%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低15%、獲得屏障量降低15%。"
+75501201,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1200%攻擊傷害，追加目標生命上限25%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。"
+5501302,Hadea,Lord of the Underworld,萬物皆有一死。生命增加10%，攻擊增加10%，暴擊傷害增加20%，技能傷害率增加20%，速度增加40。
+65502202,Hadea,Lord of the Underworld,萬物皆有一死。生命增加20%，攻擊增加20%，暴擊傷害增加30%，技能傷害率增加30%，速度增加60。
+65502212,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加50%，速度增加80。
+75501202,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加50%，速度增加80。
+5501303,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成150%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身30點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限25%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬50點速度3回合，可疊加；並回復各自生命上限10%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低30%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低10%、獲得屏障量降低10%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+65502203,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成300%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身50點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限30%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬60點速度3回合，可疊加；並回復各自生命上限20%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低40%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低15%、獲得屏障量降低15%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+65502213,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成800%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限40%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+75501203,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成800%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限40%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+5501304,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限10%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成10%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+65502204,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限15%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成15%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+65502214,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限20%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成20%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+75501204,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限20%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成20%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+755012011,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1240%攻擊傷害，追加目標生命上限26%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低26%、獲得屏障量降低26%。"
+755012012,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1280%攻擊傷害，追加目標生命上限27%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。"
+755012013,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1320%攻擊傷害，追加目標生命上限28%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低28%、獲得屏障量降低28%。"
+755012014,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1360%攻擊傷害，追加目標生命上限29%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低29%、獲得屏障量降低29%。"
+755012015,Hadea,Endless Shift,"
+無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1400%攻擊傷害，追加目標生命上限30%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低30%、獲得屏障量降低30%。"
+755012021,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加52%，速度增加80。
+755012022,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加54%，速度增加80。
+755012023,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加56%，速度增加80。
+755012024,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加58%，速度增加80。
+755012025,Hadea,Lord of the Underworld,萬物皆有一死。生命增加35%，攻擊增加45%，暴擊傷害增加50%，技能傷害率增加60%，速度增加80。
+755012031,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成820%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限42%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低26%、獲得屏障量降低26%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+755012032,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成840%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限44%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+755012033,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成860%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限46%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+755012034,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成880%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限48%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低29%、獲得屏障量降低29%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+755012035,Hadea,Underworld Guardian,"
+看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成900%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限50%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+
+[c][e28002]亡故[-][/c]
+技能特效，不可疊加。能量獲取效率降低50%。
+[c][e28002]判決[-][/c]
+技能特效，最多可疊加3層。治療量降低30%、獲得屏障量降低30%。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+755012041,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限21%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成21%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+755012042,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限22%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成22%已損失生命的傷害（不超過哈迪斯自身攻擊力的3001%）。
+755012043,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限23%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成23%已損失生命的傷害（不超過哈迪斯自身攻擊力的3002%）。
+755012044,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限24%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成24%已損失生命的傷害（不超過哈迪斯自身攻擊力的3003%）。
+755012045,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限25%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成25%已損失生命的傷害（不超過哈迪斯自身攻擊力的3004%）。
+5601200,Zeusia,Basic Attack,Basic Attack
+65602200,Zeusia,Basic Attack,Basic Attack
+75601200,Zeusia,Basic Attack,Basic Attack
+5601201,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成120%攻擊傷害，造成120%[c][01a310]燃燒[-][/c]傷害2回合；降低目標10%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升5%持續4回合，可疊加。回復自身生命上限5%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成5%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標15%攻擊2回合，並有15%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+65602201,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成240%攻擊傷害，造成240%[c][01a310]燃燒[-][/c]傷害2回合；降低目標15%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升10%持續4回合，可疊加。回復自身生命上限10%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成10%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標20%攻擊2回合，並有15%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+75601201,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成400%[c][01a310]燃燒[-][/c]傷害2回合；降低目標20%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+5601202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加10%，攻擊增加10%，神聖傷害增加10%，減傷率增加10%，速度增加40。
+65602202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加20%，攻擊增加15%，神聖傷害增加20%，減傷率增加20%，速度增加60。
+65602212,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加30%，減傷率增加30%，速度增加80。
+75601202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加30%，減傷率增加30%，速度增加80。
+5601203,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成120%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升5%持續4回合，並降低目標10%精準3回合，10%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。"
+65602203,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成240%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升10%持續4回合，並降低目標15%精準3回合，15%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。"
+65602213,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成400%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標20%精準3回合，20%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+75601203,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成400%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標20%精準3回合，20%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+5601204,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身24%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成5%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標15%攻擊2回合，並有15%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+65602204,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身36%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成10%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標20%攻擊2回合，並有20%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+65602214,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身60%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+75601204,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身60%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012011,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成420%[c][01a310]燃燒[-][/c]傷害2回合；降低目標22%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升22%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012012,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成440%[c][01a310]燃燒[-][/c]傷害2回合；降低目標24%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升24%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012013,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成460%[c][01a310]燃燒[-][/c]傷害2回合；降低目標26%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升26%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012014,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成480%[c][01a310]燃燒[-][/c]傷害2回合；降低目標28%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升28%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012015,Zeusia,Ruler's Might,"
+王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成500%[c][01a310]燃燒[-][/c]傷害2回合；降低目標30%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升30%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得6層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]屏障[-][/c]
+技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012021,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加32%，減傷率增加30%，速度增加80。
+756012022,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加34%，減傷率增加30%，速度增加80。
+756012023,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加36%，減傷率增加30%，速度增加80。
+756012024,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加38%，減傷率增加30%，速度增加80。
+756012025,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加35%，攻擊增加35%，神聖傷害增加40%，減傷率增加30%，速度增加80。
+756012031,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成408%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標22%精準3回合，22%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+756012032,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成416%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標24%精準3回合，24%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+756012033,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成424%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標26%精準3回合，26%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+756012034,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成432%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標28%精準3回合，28%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+756012035,Zeusia,Lord of the Sky,"
+雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成440%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標30%精準3回合，30%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+
+[c][01a310]燃燒[-][/c]
+持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+756012041,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身62.4%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012042,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身64.8%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012043,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身67.2%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012044,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身69.6%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+756012045,Zeusia,Divine Charisma,"
+無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得2層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身72%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+
+[c][e28002]神性[-][/c]
+技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
+[c][e28002]雷脈[-][/c]
+技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
+[c][e28002]灼目[-][/c]
+控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+677901,Peacock Tambourine,Antique Skill,能量獲取效率增加10%
+678001,Peacock Tambourine,Antique Skill,能量獲取效率增加13%
+678101,Peacock Tambourine,Antique Skill,能量獲取效率增加16%
+678201,Peacock Tambourine,Antique Skill,能量獲取效率增加19%
+678301,Peacock Tambourine,Antique Skill,能量獲取效率增加22%
+678401,Peacock Tambourine,Antique Skill,能量獲取效率增加25%
+6784101,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得10點能量；回合開始時，有50%概率獲得30點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.3%。
+6784201,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得20點能量；回合開始時，有50%概率獲得40點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.4%。
+6784301,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得30點能量；回合開始時，有50%概率獲得50點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.5%。
+678501,Galaxy Paintbrush,Antique Skill,+25 能量
+678601,Galaxy Paintbrush,Antique Skill,+30 能量
+678701,Galaxy Paintbrush,Antique Skill,+35 能量
+678801,Galaxy Paintbrush,Antique Skill,+40 能量
+678901,Galaxy Paintbrush,Antique Skill,+45 能量
+679001,Galaxy Paintbrush,Antique Skill,+50 能量
+6790101,Galaxy Paintbrush,Antique Skill,施放主動技能後，有15%概率再次施放一次主動技能。
+6790201,Galaxy Paintbrush,Antique Skill,施放主動技能後，有20%概率再次施放一次主動技能。
+6790301,Galaxy Paintbrush,Antique Skill,施放主動技能後，有25%概率再次施放一次主動技能。
+5501400,Apollis,Basic Attack,普攻
+65502300,Apollis,Basic Attack,普攻
+75501300,Apollis,Basic Attack,普攻
+5501401,Apollis,主動技能,對隨機2名敵人造成160%攻擊力傷害，並有70%概率對其中1名敵人施加 BUFF1 15回合
+65502301,Apollis,主動技能,對隨機2名敵人造成220%攻擊力傷害，並有100%概率對其中1名敵人施加 BUFF1 15回合
+75501301,Apollis,主動技能,對隨機2名敵人造成300%攻擊力傷害，並有100%概率對其中1名敵人施加 BUFF1 15回合，有65%概率對其中一名敵人施加 BUFF1 15回合，自身獲得2層 BUFF2
+5501402,Apollis,被動技能1,生命值增加10%，攻擊增加15%，減傷率增加10%，速度增加20
+65502302,Apollis,被動技能1,生命值增加20%，攻擊增加20%，減傷率增加20%，速度增加30
+65502312,Apollis,被動技能1,生命值增加30%，攻擊增加25%，減傷率增加30%，速度增加40
+75501302,Apollis,被動技能1,生命值增加30%，攻擊增加25%，減傷率增加30%，速度增加40
+5501403,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身50%概率獲得1層BUFF2
+65502303,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2
+65502313,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2，有50%概率額外獲得1層BUFF2；普通攻擊變為：對隨機1名敵人造成100%攻擊傷害，並有50%概率對目標施加 BUFF1 15回合
+75501303,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2，有50%概率額外獲得1層BUFF2；普通攻擊變為：對隨機1名敵人造成100%攻擊傷害，並有50%概率對目標施加 BUFF1 15回合
+5501404,Apollis,被動技能3,自身被施加印記時，消耗2層 BUFF2 解除自身1種印記；自身受到控制時，消耗2層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗3層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
+65502304,Apollis,被動技能3,自身被施加印記時，消耗2（50%概率消耗1層）層 BUFF2 解除自身1種印記；自身受到控制時，消耗2（50%概率消耗1層）層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗3（50%概率消耗2層）層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
+65502314,Apollis,被動技能3,自身被施加印記時，消耗1層 BUFF2 解除自身1種印記；自身受到控制時，消耗1層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗2層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
+75501304,Apollis,被動技能3,自身被施加印記時，消耗1層 BUFF2 解除自身1種印記；自身受到控制時，消耗1層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗2層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
+755013011,Apollis,精英技能-主动,
+755013012,Apollis,精英技能-主动,
+755013013,Apollis,精英技能-主动,
+755013014,Apollis,精英技能-主动,
+755013015,Apollis,精英技能-主动,
+755013021,Apollis,精英技能-被动1,
+755013022,Apollis,精英技能-被动1,
+755013023,Apollis,精英技能-被动1,
+755013024,Apollis,精英技能-被动1,
+755013025,Apollis,精英技能-被动1,
+755013031,Apollis,精英技能-被动2,
+755013032,Apollis,精英技能-被动2,
+755013033,Apollis,精英技能-被动2,
+755013034,Apollis,精英技能-被动2,
+755013035,Apollis,精英技能-被动2,
+755013041,Apollis,精英技能-被动3,
+755013042,Apollis,精英技能-被动3,
+755013043,Apollis,精英技能-被动3,
+755013044,Apollis,精英技能-被动3,
+755013045,Apollis,精英技能-被动3,

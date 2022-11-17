@@ -88,6 +88,12 @@ function ActivityEntranceTestChallengeTaskWindow:initUIComponent()
 	self.tabBar.tabs[2].label.text = __("WARMUP_ARENA_TASK_INFO_7")
 	self.giftbagAwardLabel.text = __("WARMUP_ARENA_TASK_INFO_4")
 
+	if xyd.getServerTime() < 1673568000 then
+		xyd.setUISpriteAsync(self.charterImg_, nil, "activity_entrance_test_bg_xstz_1")
+	else
+		xyd.setUISpriteAsync(self.charterImg_, nil, "activity_entrance_test_bg_xstz_2")
+	end
+
 	if xyd.Global.lang == "de_de" then
 		self.giftBagLabel:ComponentByName("", typeof(UILabel)).fontSize = 20
 	end

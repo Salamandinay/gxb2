@@ -361,7 +361,7 @@ SKILL_UP,Steigerung der Fähigkeiten
 TOWER_WINDOW,Test
 PROPHET_WINDOW,Einschreiben
 ALTAR_WINDOW,Übertragen
-MAX_AWAKE,Das Mädchen ist bereits komplett wach
+MAX_AWAKE,Das Mädchen ist bereits vollständig erweckt worden
 SAVE_FORMATION,Speichern
 BATTLE_START,Kampf
 LOGIN,Anmelden
@@ -2446,7 +2446,7 @@ GUILD_BOSS_TEXT03,Wöchentliche Belohnung:
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Lv.{1}
 SUMMON_CONFIRM,"Um {1} Male zu ziehen, musst du {2} Dias ausgeben. Willst du fortfahren?"
 TURING_TASK_LIMIT,Limit
-TURING_TASK_TEXT01,"Schließe die bestimmten Aufgaben ab, um Einkaufsgutscheine zu erhalten. Die Belohnungen werden direkt in deinem Rucksack gesendet."
+TURING_TASK_TEXT01,"Schließe die bestimmten Aufgaben ab, um Materialien zum Schnitzen der Kürbislaternen zu sammeln. Die Belohnungen werden direkt in deinem Rucksack gesendet."
 WELFARE_TEXT01,"Schreibe eine gewisse Anzahl an Mädchen ein, um den Kauf von wertvollen Items zu entsperren!"
 WELFARE_TEXT02,"Schreibe {1} Mal während des Events ein, um zu entsperren"
 BEGINNER_QUEST_LOCKED,Gesperrt
@@ -7577,7 +7577,7 @@ ACTIVITY_PAY_DAY_TEXT04,Gratis
 ACTIVITY_PAY_DAY_TEXT05,Keine Chance mehr
 ACTIVITY_PAY_DAY_TEXT06,Massen-\nkauf
 ACTIVITY_PAY_DAY_TEXT07,Beim Massenkauf gibt es im Vergleich zum Kauf einzelnes Glückspaketes noch günstigere Preismöglichkeiten. Nach dem Kauf dieses Paketes geht heute der Massenkauf nicht. Willst du dennoch nur dieses Paket kaufen?
-ACTIVITY_NEW_GROWTH_PLAN_TEXT01,Wähle ein Mädchen aus
+ACTIVITY_NEW_GROWTH_PLAN_TEXT01,Hinweis
 ACTIVITY_NEW_GROWTH_PLAN_TEXT02,"Wähle ein Mädchen für die ""Neulings-Sonderausbildung"" aus. Die Belohnungen richten sich nach deinem gewählten Mädchen."
 ACTIVITY_NEW_GROWTH_PLAN_TEXT03,Wählen
 ACTIVITY_NEW_GROWTH_PLAN_TEXT04,Punkte
@@ -7589,7 +7589,7 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT09,Standardbelohnungen
 ACTIVITY_NEW_GROWTH_PLAN_TEXT10,Premium Belohnungen
 ACTIVITY_NEW_GROWTH_PLAN_TEXT11,Kaufen
 ACTIVITY_NEW_GROWTH_PLAN_TEXT12,"Wähle zunächst ein Mädchen für die Neulings-Sonderausbildung. Schließe die täglichen Aufgaben ab, um Ausbildungspunkte zu sammeln und die Standardbelohnungen zu erhalten! Kaufst du den Neulings-Ausbildungsplan, werden die zusätzlichen Premium Belohnungen entsperrt!"
-ACTIVITY_NEW_GROWTH_PLAN_TEXT13,"1. Jede Aufgabe gibt 2 Punkte. Sobald du eine bestimmte Menge von Punkten gesammelt hast, kannst du die entsprechenden Belohnungen (manuell) sammeln.|2. Wähle zunächst ein Mädchen für die Neulings-Sonderausbildung. Die Belohnungen der ""Neuling-Sonderausbildung"" werden diesem Mädchen angepasst. Sobald du eine Belohnung gesammelt hast, kann das ausgewählte Mädchen nicht mehr geändert werden.|3. Solange du während des Events den Premium Neulings-Ausbildungsplan gekauft hast (egal zu welchem Zeitpunkt des Events), erhältst du ALLE zusätzlichen Belohnungen, die deinem aktuellen Punktfortschritt entsprechen.|4. Solltest du während des Events einmal vergessen, Aufgaben rechtzeitig abzuschließen oder Belohnungen einiger Aufgaben rechtzeitig einzusammeln, wodurch dir Punkte entgangen sind, kannst du am nächsten Tag oder später diese Punkte nachträglich erhalten, indem du auf das Pluszeichen tippst. 1 Punkt kostet 2 Dias."
+ACTIVITY_NEW_GROWTH_PLAN_TEXT13,"1. Jede Aufgabe gibt 2 Punkte. Sobald du eine bestimmte Menge von Punkten gesammelt hast, kannst du die entsprechenden Belohnungen (manuell) sammeln.|2. Wähle zunächst ein Mädchen für die Neulings-Sonderausbildung. Die Belohnungen der ""Neuling-Sonderausbildung"" werden diesem Mädchen angepasst. Sobald du eine Belohnung gesammelt hast, kann das ausgewählte Mädchen nicht mehr geändert werden.|3. Solange du während des Events den Premium Neulings-Ausbildungsplan gekauft hast (egal zu welchem Zeitpunkt des Events), erhältst du ALLE zusätzlichen Belohnungen, die deinem aktuellen Punktfortschritt entsprechen.|3. Solltest du während des Events einmal vergessen, Aufgaben rechtzeitig abzuschließen oder Belohnungen einiger Aufgaben rechtzeitig einzusammeln, wodurch dir Punkte entgangen sind, kannst du am nächsten Tag oder später diese Punkte nachträglich erhalten, indem du auf das Pluszeichen tippst. 1 Punkt kostet 2 Dias."
 ACTIVITY_NEW_GROWTH_PLAN_TEXT14,Keine verpassten Punkte
 ACTIVITY_NEW_GROWTH_PLAN_TEXT15,Verpasste Punkte: {1}
 ACTIVITY_NEW_GROWTH_PLAN_TEXT16,(N) Sonder-\nausbildung
@@ -7602,13 +7602,13 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT22,Belohnungsvorschau (teilweise)
 DOG_MINI_GAME_EXIT_LABEL,Verlassen
 DOG_MINI_GAME_NEXT_LABEL,Nächste Stufe
 DOG_MINI_GAME_RESET_LABEL,Nochmal
-ACTIVITY_PAY_DAY_TEXT08,3400%%
-ACTIVITY_STAR_ALTAR_GAMBLE_HELP,"1. Jede während des Events verwendete Sternmünze erhöht den Wunschwert auf 1.|2. Sobald eine Sternwunschflasche mit der Erhöhung des Wunschwertes erfüllt ist, kannst du eine Wunschbelohnung sammeln und die nächste Sternwunschflasche entsperren."
+ACTIVITY_PAY_DAY_TEXT08,2700%%
+ACTIVITY_STAR_ALTAR_GAMBLE_HELP,"1. Jede während des Events verwendete Sternmünze erhöht den Wunschwert um 1.|2. Sobald eine Sternwunschflasche mit der Erhöhung des Wunschwertes erfüllt ist, kannst du eine Wunschbelohnung sammeln und die nächste Sternwunschflasche entsperren. Die Wunschbelohnungen werden per Mail gesendet."
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,Sternflasche
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,"Verwende 1 Sternmünze, um den Wunschwert auf 1 zu erhöhen."
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,Sternmünzen verwenden
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,Jede verwendete Sternmünze erhöht den Wunschwert um 1
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,Sternmünzen\nverwenden
 ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON02,Extra zum\nSternenwunsch
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,Vorheriges Spielerlebnis mit den neuen Meteore-Mädchen!
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,Beschwöre die Meteore-Mädchen schneller als alle anderen!
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT04,Login-Belohnungen
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT05,Heute nicht mehr anzeigen
 ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON03,Sammeln
@@ -7617,11 +7617,23 @@ ACTIVITY_STAR_ALTAR_LOGIN_TEXT01,Angemeldet: {1}/7
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT02,Tag {1}
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,Anmelden
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,Nachholen
-DOG_MINI_GAME_LEVEL_LABEL,Stufen wählen
+DOG_MINI_GAME_LEVEL_LABEL,Stufe wählen
 DOG_MINI_GAME_STAGE_LABEL,Stufe {1}
-DOG_MINI_GAME_NAME_LABEL,狗頭名字
+DOG_MINI_GAME_NAME_LABEL,Hunde-\nrettung
 DOG_MINI_GAME_BEFORE_LABEL,Schließe zunächst die vorherige Stufe ab
-WARMUP_ARENA_TASK_INFO_2_1,不認識的神王
+WARMUP_ARENA_TASK_INFO_2_1,Die Gottkönigin
 DOG_MINI_GAME_SKIP_LABEL,Skip
 ACTIVITY_PAY_DAY_TEXT09,Tägliche Glückspakete
 ACTIVITY_STAR_ALTAR_LOGIN_HELP,"1. Melde dich während des Events an, um täglich die Login-Belohnungen zum ersten Besuch der Sterne zu sammeln.|2. Die verpassten Login-Belohnungen eines Tages können nachträglich gesammelt werden, indem du 50 Dias ausgibst."
+TURING_MISSION02_TEXT01,"Schließe die bestimmten Aufgaben ab, um Einkaufsgutscheine zu erhalten. Die Belohnungen werden direkt in deinem Rucksack gesendet."
+TURING_MISSION03_TEXT01,"Schließe die bestimmten Aufgaben ab, um verlorene Weihnachtssocken zu erhalten. Die Belohnungen werden direkt in deinem Rucksack gesendet."
+TURING_MISSION04_TEXT01,"Schließe während des Events bestimmte Aufgaben ab, um entsprechende Belohnungen zu erhalten. Die Belohnungen werden direkt in deinen Rucksack gesendet."
+ACTIVITY_STAR_PLAN_HELP,1.消耗娃娃幣即可在星空娃娃機中抓取一個娃娃。娃娃機裡的天蝎娃娃、射手娃娃和雙魚娃娃被抓取後將自動轉換為對應的票據，抓取到娃娃禮盒後將獲得1份隨機獎勵。|2.娃娃被抓取後不放回。在娃娃機裡抓取達到一定次數，還將投入額外的娃娃進娃娃機中。若娃娃機中的娃娃少於默認值，學長可以手動將娃娃數量補充至默認值哦（通過累計獎勵途徑獲得的額外娃娃不會被扣除）。|3.獲得的票據可以兌換為相應的獎勵道具。
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT01,Puppenbelohnungen
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT02,Boxbelohnungen
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT03,Vorschau
+ACTIVITY_STAR_PLAN_BUTTON01,1 Mal
+ACTIVITY_STAR_PLAN_BUTTON02,10 Mal
+ACTIVITY_STAR_PLAN_AWARDS_BUTTON,Gesamte Belohnungen
+ACTIVITY_STAR_PLAN_AWARDS_TEXT,Greife {1} Mal die Puppen/Puppenboxen [c][7cff35]({1}/{2})[-][/c]
+ACTIVITY_STAR_PLAN_TIPS01,Willst du sicher den Belohnungspool dieser Runde zurücksetzen? (Die zusätzlich erhaltenen Puppen bleiben erhalten.)

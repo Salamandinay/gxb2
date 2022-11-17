@@ -1433,7 +1433,7 @@ end
 
 function PartnerDetailWindow:onclickEmptySoul()
 	if self.bpEquips[6] and #self.bpEquips[6] > 0 then
-		self:onclickEmptyEquip(self.bpEquips[6])
+		self:onclickEmptyEquip(self.bpEquips[6], __("CHOOSE_ARTIFACT"))
 	else
 		xyd.alert(xyd.AlertType.TIPS, __("GET_FROM_STAGE", "9-9"))
 	end
@@ -2589,17 +2589,21 @@ function PartnerDetailWindow:onclickEquip(itemID, equips)
 	end
 
 	local itemTable = xyd.tables.itemTable
-	local upArrowCallback = nil
+	local upArrowCallback, titleText = nil
 
-	if itemTable:getType(itemID) == xyd.ItemType.ARTIFACT and xyd.tables.equipTable:getArtifactUpNext(itemID) ~= 0 then
-		function upArrowCallback()
-			xyd.WindowManager:get():openWindow("artifact_up_window", {
-				itemID = itemID,
-				equips = equips,
-				equipedPartnerID = self.partner_:getPartnerID(),
-				equipedPartner = self.partner_
-			})
-			xyd.WindowManager:get():closeWindow("item_tips_window")
+	if itemTable:getType(itemID) == xyd.ItemType.ARTIFACT then
+		titleText = __("CHOOSE_ARTIFACT")
+
+		if xyd.tables.equipTable:getArtifactUpNext(itemID) ~= 0 then
+			function upArrowCallback()
+				xyd.WindowManager:get():openWindow("artifact_up_window", {
+					itemID = itemID,
+					equips = equips,
+					equipedPartnerID = self.partner_:getPartnerID(),
+					equipedPartner = self.partner_
+				})
+				xyd.WindowManager:get():closeWindow("item_tips_window")
+			end
 		end
 	end
 
@@ -2618,7 +2622,8 @@ function PartnerDetailWindow:onclickEquip(itemID, equips)
 				now_equip = itemID,
 				equipedOn = self.partner_:getInfo(),
 				equipedPartnerID = self.partner_:getPartnerID(),
-				equipedPartner = self.partner_
+				equipedPartner = self.partner_,
+				titleText = titleText
 			})
 			xyd.WindowManager:get():closeWindow("item_tips_window")
 		end,
@@ -2633,7 +2638,7 @@ function PartnerDetailWindow:onclickEquip(itemID, equips)
 	xyd.WindowManager:get():openWindow("item_tips_window", params)
 end
 
-function PartnerDetailWindow:onclickEmptyEquip(equips)
+function PartnerDetailWindow:onclickEmptyEquip(equips, text)
 	if self.isShrineHurdle_ then
 		xyd.showToast(__("IS_IN_SHRINE_FORMATION"))
 
@@ -2643,7 +2648,8 @@ function PartnerDetailWindow:onclickEmptyEquip(equips)
 	xyd.WindowManager:get():openWindow("choose_equip_window", {
 		equips = equips,
 		equipedPartnerID = self.partner_:getPartnerID(),
-		equipedPartner = self.partner_
+		equipedPartner = self.partner_,
+		titleText = text
 	})
 end
 

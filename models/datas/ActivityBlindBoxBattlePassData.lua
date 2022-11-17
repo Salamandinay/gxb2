@@ -26,9 +26,13 @@ function ActivityBlindBoxBattlePassData:getRedMarkState()
 
 	for _, info in ipairs(fundItemList) do
 		if info.dayNeed <= info.dayNow and info.isBaseAwarded == false or info.dayNeed <= info.dayNow and info.isAdvanceAwarded == false and info.giftBag1Buy == true or info.dayNeed <= info.dayNow and info.isSuperAwarded == false and info.giftBag2Buy == true then
+			xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_BLIND_BOX_BATTLE_PASS, true)
+
 			return true
 		end
 	end
+
+	xyd.models.redMark:setMark(xyd.RedMarkType.ACTIVITY_BLIND_BOX_BATTLE_PASS, false)
 
 	return false
 end

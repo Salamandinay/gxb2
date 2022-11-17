@@ -367,6 +367,16 @@ function CampaignWindow:initWindow()
 	self.showAwardBg = self.showAwardCon:ComponentByName("showAwardBg", typeof(UISprite))
 	self.iconCon1 = self.showAwardCon:NodeByName("iconCon1").gameObject
 	self.iconCon2 = self.showAwardCon:NodeByName("iconCon2").gameObject
+	self.dogMiniGameBtn = self.hangGroup:NodeByName("dog_mini_game_btn").gameObject
+	self.redPoint = self.dogMiniGameBtn:ComponentByName("redPoint", typeof(UISprite))
+	self.dogMiniGameBtnLabel = self.dogMiniGameBtn:ComponentByName("label", typeof(UILabel))
+
+	if xyd.models.selfPlayer:isDogVersionOpen() then
+		self.dogMiniGameBtn:SetActive(true)
+	else
+		self.dogMiniGameBtn:SetActive(false)
+	end
+
 	self.mapGroup = winTrans:Find("map_panel/map_group")
 	self.goldEffectDownGroup = self.mapGroup:Find("gold_effect_down_group")
 	self.goldEffectUpGroup = self.mapGroup:Find("gold_effect_up_group")
@@ -432,6 +442,7 @@ function CampaignWindow:initWindow()
 	end
 
 	self:checkCampaignRedState()
+	self:checkDogMiniBtn()
 end
 
 function CampaignWindow:checkCampaignRedState()
@@ -817,6 +828,10 @@ function CampaignWindow:register()
 
 	UIEventListener.Get(self.campaignAwardBtn).onClick = function ()
 		xyd.WindowManager.get():openWindow("campaign_award_window", {})
+	end
+
+	UIEventListener.Get(self.dogMiniGameBtn).onClick = function ()
+		xyd.WindowManager.get():openWindow("dog_mini_game_choice_level_window", {})
 	end
 
 	self.eventProxy_:addEventListener(xyd.event.STAGE_HANG, handler(self, self.refresh))
@@ -1940,6 +1955,10 @@ function CampaignWindow:onClickEscBack()
 	self.isOpenLastWindow = true
 
 	CampaignWindow.super.onClickEscBack(self)
+end
+
+function CampaignWindow:checkDogMiniBtn()
+	self.dogMiniGameBtnLabel.text = __("DOG_MINI_GAME_NAME_LABEL")
 end
 
 return CampaignWindow

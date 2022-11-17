@@ -19,7 +19,8 @@ end
 
 function ThanksgivingGiftbag:resizeToParent()
 	ThanksgivingGiftbag.super.resizeToParent(self)
-	self:resizePosY(self.arrowDown, -847.5, -1024.5)
+	self:resizePosY(self.arrowDown, -846.5, -1022.5)
+	self:resizePosY(self.groupModel, -160, -200)
 end
 
 function ThanksgivingGiftbag:initUI()
@@ -34,6 +35,7 @@ function ThanksgivingGiftbag:getUIComponent()
 	self.textImg = go:ComponentByName("panelLogo/textImg", typeof(UISprite))
 	self.groupModel = go:NodeByName("groupModel").gameObject
 	self.timeGroup = go:NodeByName("panelLogo/timeGroup").gameObject
+	self.timeLayout = self.timeGroup:ComponentByName("", typeof(UILayout))
 	self.timeLabel = self.timeGroup:ComponentByName("timeLabel", typeof(UILabel))
 	self.endLabel = self.timeGroup:ComponentByName("endLabel", typeof(UILabel))
 	self.scrollView = go:ComponentByName("scrollView", typeof(UIScrollView))
@@ -43,16 +45,26 @@ function ThanksgivingGiftbag:getUIComponent()
 	self.arrowUp = self.groupArrow:ComponentByName("arrowUp", typeof(UISprite))
 	self.arrowDown = self.groupArrow:ComponentByName("arrowDown", typeof(UISprite))
 	self.giftbagItem = go:NodeByName("thanksgiving_giftbag_item").gameObject
-	self.emptyItem = go:NodeByName("empty_item").gameObject
 
 	self.giftbagItem:SetActive(false)
-	self.emptyItem:SetActive(false)
 	self.arrowUp:SetActive(false)
 	self.arrowDown:SetActive(false)
 end
 
 function ThanksgivingGiftbag:initUIComponent()
 	xyd.setUISpriteAsync(self.textImg, nil, "thanksgiving_giftbag_text_" .. xyd.Global.lang, nil, , true)
+
+	if xyd.Global.lang == "fr_fr" then
+		self.endLabel.transform:SetSiblingIndex(0)
+	end
+
+	CountDown.new(self.timeLabel, {
+		duration = self.activityData:getUpdateTime() - xyd.getServerTime()
+	})
+
+	self.endLabel.text = __("END")
+
+	self.timeLayout:Reposition()
 
 	local infos = {}
 
@@ -100,18 +112,24 @@ function ThanksgivingGiftbag:initUIComponent()
 		table.insert(self.items, item)
 	end
 
-	local extraGo = NGUITools.AddChild(self.groupItems.gameObject, self.emptyItem.gameObject)
-
 	self.groupItems:GetComponent(typeof(UILayout)):Reposition()
 	self.scrollView:ResetPosition()
 	self:waitForTime(0.3, function ()
 		self:updateArrow()
 	end)
+
+	self.modelEffect = xyd.Spine.new(self.groupModel)
+
+	self.modelEffect:setInfo("zhurong_pifu02_lihui01", function ()
+		self.modelEffect:play("animation", 0)
+		self.modelEffect:SetLocalScale(0.68, 0.68, 1)
+		self.modelEffect:SetLocalPosition(-175, -860, 0)
+	end)
 end
 
 function ThanksgivingGiftbag:updateArrow()
-	local topDelta = 288 - self.scrollPanel.clipOffset.y
-	local topNum = math.floor(topDelta / 314 + 0.5)
+	local topDelta = 166 - self.scrollPanel.clipOffset.y
+	local topNum = math.floor(topDelta / 293 + 0.6)
 	local arrowUp = false
 
 	for i = 1, topNum do
@@ -121,8 +139,8 @@ function ThanksgivingGiftbag:updateArrow()
 	self.arrowUp:SetActive(arrowUp)
 
 	local nums = #self.items
-	local botDelta = nums * 314 - self.scrollPanel.height - topDelta
-	local botNum = math.floor(botDelta / 314 + 0.5)
+	local botDelta = nums * 293 + 11 - self.scrollPanel.height - topDelta
+	local botNum = math.floor(botDelta / 293 + 0.6)
 	local arrowDown = false
 
 	if botNum >= 1 then
@@ -141,7 +159,7 @@ function ThanksgivingGiftbag:register()
 	UIEventListener.Get(self.arrowUp.gameObject).onClick = function ()
 		local sp = self.scrollView.gameObject:GetComponent(typeof(SpringPanel))
 
-		sp.Begin(sp.gameObject, Vector3(148, -810, 0), 16)
+		sp.Begin(sp.gameObject, Vector3(152, -786, 0), 16)
 		self:waitForTime(0.3, function ()
 			self:updateArrow()
 		end)
@@ -150,7 +168,7 @@ function ThanksgivingGiftbag:register()
 	UIEventListener.Get(self.arrowDown.gameObject).onClick = function ()
 		local sp = self.scrollView.gameObject:GetComponent(typeof(SpringPanel))
 
-		sp.Begin(sp.gameObject, Vector3(148, -232 - 178 * self.scale_num_contrary, 0), 16)
+		sp.Begin(sp.gameObject, Vector3(152, -283 - 177 * self.scale_num_contrary, 0), 16)
 		self:waitForTime(0.3, function ()
 			self:updateArrow()
 		end)
@@ -236,7 +254,6 @@ function ThanksgivingGiftbagItem:ctor(go, parent)
 end
 
 function ThanksgivingGiftbagItem:initUIComponent()
-	self.bg = self.go:NodeByName("bg").gameObject
 	self.itemGroup1 = self.go:NodeByName("itemGroup1").gameObject
 	self.itemGroup2 = self.go:NodeByName("itemGroup2").gameObject
 	self.itemGroup3 = self.go:NodeByName("itemGroup3").gameObject
@@ -246,8 +263,6 @@ function ThanksgivingGiftbagItem:initUIComponent()
 	self.purchaseBtnBg = self.purchaseBtn:GetComponent(typeof(UISprite))
 	self.purchaseBtnLabel = self.purchaseBtn:ComponentByName("button_label", typeof(UILabel))
 	self.purchaseBtnIcon = self.purchaseBtn:NodeByName("icon").gameObject
-
-	self.bg:SetLocalPosition(-10, -10, 0)
 end
 
 function ThanksgivingGiftbagItem:setInfo(params)
@@ -264,11 +279,11 @@ function ThanksgivingGiftbagItem:setInfo(params)
 
 			self.purchaseBtnLabel:X(16)
 			self.purchaseBtnLabel:Y(-1)
-			self.itemGroup1:Y(54.5)
-			self.itemGroup2:Y(-14.5)
-			self.itemGroup3:Y(60.5)
-			self.purchaseBtn:Y(-83)
-			self.limitLabel:Y(-125.5)
+			self.itemGroup1:Y(75)
+			self.itemGroup2:Y(12)
+			self.itemGroup3:Y(81)
+			self.purchaseBtn:Y(-60)
+			self.limitLabel:Y(-107.5)
 			self.vipLabel:SetActive(false)
 
 			local cost = xyd.tables.miscTable:split2Cost("thanksgiving_giftcost", "value", "#")
@@ -287,7 +302,7 @@ function ThanksgivingGiftbagItem:setInfo(params)
 						itemID = data[1],
 						num = data[2],
 						wndType = xyd.ItemTipsWndType.ACTIVITY,
-						scale = awardNum == 2 and 0.7037037037037037 or 0.5925925925925926,
+						scale = awardNum == 2 and 0.6666666666666666 or 0.5555555555555556,
 						dragScrollView = self.parent.scrollView,
 						isNew = xyd.tables.itemTable:getType(data[1]) == xyd.ItemType.SKIN
 					})
@@ -318,7 +333,7 @@ function ThanksgivingGiftbagItem:setInfo(params)
 						itemID = data[1],
 						num = data[2],
 						wndType = xyd.ItemTipsWndType.ACTIVITY,
-						scale = awardNum == 2 and 0.7037037037037037 or 0.5925925925925926,
+						scale = awardNum == 2 and 0.6666666666666666 or 0.5555555555555556,
 						dragScrollView = self.parent.scrollView,
 						isNew = xyd.tables.itemTable:getType(data[1]) == xyd.ItemType.SKIN
 					})
@@ -340,21 +355,6 @@ function ThanksgivingGiftbagItem:setInfo(params)
 			self.purchaseBtn:GetComponent(typeof(UnityEngine.BoxCollider)).enabled = false
 
 			xyd.applyChildrenGrey(self.purchaseBtn.gameObject)
-		end
-	end
-
-	local allChildren = self.itemGroup2.gameObject:GetComponentsInChildren(typeof(UnityEngine.Transform), true)
-
-	if allChildren.Length == 1 then
-		self.itemGroup1.gameObject:Y(31)
-		self.itemGroup3.gameObject:Y(37)
-		self.purchaseBtn.gameObject:Y(-60)
-
-		if self.vipLabel.gameObject.activeSelf then
-			self.vipLabel.gameObject:Y(-106)
-			self.limitLabel.gameObject:Y(-126)
-		else
-			self.limitLabel.gameObject:Y(-102)
 		end
 	end
 end

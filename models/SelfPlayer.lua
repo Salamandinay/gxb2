@@ -43,6 +43,7 @@ function SelfPlayer:ctor(...)
 	self.globalTimerCallBack = {}
 	self.slotChangeTableId = {}
 	self.globalTimer_Keyid = 1
+	self.actTables = {}
 
 	self:initGlobalTimer()
 end
@@ -155,6 +156,8 @@ function SelfPlayer:onRegister()
 	self:registerEvent(xyd.event.ANSWER_QUESTIONNAIRE, handler(self, self.onAnswerQuestion))
 	self:registerEvent(xyd.event.BACK_QUESTION, handler(self, self.onBackQustion))
 	self:registerEvent(xyd.event.NEW_PLAYER_TIPS_BACK, handler(self, self.onNewPlayerTipsInfo))
+	self:registerEvent(xyd.event.GET_DOG_MINI_GAME_LEVEL, handler(self, self.getDogMiniPassLevelBack))
+	self:registerEvent(xyd.event.SEND_DOG_MINI_GAME_PASS, handler(self, self.onDogMiniLevelBack))
 end
 
 function SelfPlayer:onAnswerQuestion(event)
@@ -448,6 +451,12 @@ function SelfPlayer:onLoginInfo_(event)
 			name = xyd.event.GET_ACTIVITY_LIST,
 			data = params.activity_list
 		})
+
+		local list = xyd.decodeProtoBuf(params.activity_list)
+
+		if list.act_tables and list.act_tables ~= "" then
+			self.actTables = JSON.decode(list.act_tables)
+		end
 	end
 
 	if tostring(params.friend_info) ~= "" then
@@ -677,6 +686,10 @@ function SelfPlayer:onLoginInfo_(event)
 	xyd.models.quickFormation:reqTeamsInfo()
 	xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
 	xyd.models.soulLand:reqCheckOpen()
+
+	if self:isDogVersionOpen() then
+		self:getDogMiniPassLevelReq()
+	end
 end
 
 function SelfPlayer:setOpenedFunc(ids)
@@ -1234,8 +1247,6 @@ function SelfPlayer:getAllChosenPartner()
 end
 
 function SelfPlayer:onNewPlayerTipsInfo(event)
-	dump(xyd.decodeProtoBuf(event.data), "測試推送回來")
-
 	local data = xyd.decodeProtoBuf(event.data)
 	local msgData = nil
 
@@ -1245,8 +1256,6 @@ function SelfPlayer:onNewPlayerTipsInfo(event)
 
 	if data.misc_push_type == xyd.CommonPushType.NEW_PLAYER_TIPS and msgData then
 		self.showNewPlayerTipsId = msgData.id
-
-		dump(msgData, "測試")
 	end
 end
 
@@ -1276,6 +1285,50 @@ function SelfPlayer:backToMainWindowUpdatePartner()
 
 	self.pictureID_ = self.allChosenPartner[newId]
 	self.curIndex = newId
+end
+
+function SelfPlayer:getDogMiniPassLevelReq()
+	local msg = messages_pb:get_dog_mini_game_level_req()
+
+	xyd.Backend.get():request(xyd.mid.GET_DOG_MINI_GAME_LEVEL, msg)
+end
+
+function SelfPlayer:getDogMiniPassLevelBack(event)
+	self.dogMIniGameLevel = event.data.id
+end
+
+function SelfPlayer:getDogMiniPassLevel()
+	if not self.dogMIniGameLevel then
+		self.dogMIniGameLevel = 0
+	end
+
+	return self.dogMIniGameLevel
+end
+
+function SelfPlayer:sendDogMiniLevel(level)
+	local msg = messages_pb:send_dog_mini_game_pass_req()
+	msg.id = level
+
+	xyd.Backend.get():request(xyd.mid.SEND_DOG_MINI_GAME_PASS, msg)
+end
+
+function SelfPlayer:onDogMiniLevelBack(event)
+	self.dogMIniGameLevel = event.data.id
+end
+
+function SelfPlayer:isDogVersionOpen()
+	local pkgName = XYDDef.PkgName
+	local languages = xyd.package2Language[pkgName]
+
+	if UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.ANDROID_DOG_MINI_GAME) >= 0 or UNITY_IOS and languages[1] == "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_DOG_MINI_GAME_JP) >= 0 or UNITY_IOS and languages[1] ~= "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_DOG_MINI_GAME) >= 0 then
+		return true
+	end
+
+	return false
+end
+
+function SelfPlayer:getActTables()
+	return self.actTables
 end
 
 return SelfPlayer

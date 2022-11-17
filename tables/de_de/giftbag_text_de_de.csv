@@ -12,8 +12,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 11,Lv.48 Paket,10.99,€,Lv.48 Paket,11.99,11.99
 12,Lv.58 Paket,32.99,€,Lv.58 Paket,35.99,35.99
 13,Lv.78 Paket,54.99,€,Lv.78 Paket,59.99,59.99
-14,4-Sterne-Mädchen-Trainingspaket,5.49,€,4-Sterne-Mädchen-Trainingspaket,5.99,5.99
-15,5-Sterne-Mädchen-Trainingspaket,10.99,€,5-Sterne-Mädchen-Trainingspaket,11.99,11.99
+14,4-Sterne-Mädchen-Trainingspaket,5.49,€,4-Sterne-Mädchen-Trainingspaket,Sterne,Mädchen
+15,5-Sterne-Mädchen-Trainingspaket,10.99,€,5-Sterne-Mädchen-Trainingspaket,Sterne,Mädchen
 16,Monatspaket 1,5.49,€,Monatspaket,5.99,5.99
 17,Monatspaket 2,10.99,€,Monatspaket,11.99,11.99
 18,Monatspaket 3,32.99,€,Monatspaket,35.99,35.99
@@ -36,7 +36,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 36,Superpaket 5,5.49,€,Superpaket,5.99,5.99
 69,Superpaket 6,5.49,€,Superpaket,5.99,5.99
 35,Gratis Auflade Paket,2.29,€,Gratis Auflade Paket,2.49,2.49
-37,5-Sterne Paket,1.09,€,5-Sterne Paket,1.19,1.19
+37,5-Sterne Paket,1.09,€,5-Sterne Paket,Sterne Paket,1.19
 38,Abonnieren,0.99,€,Abonnement,0.99,0.99
 39,Karte zum Frühlingsfest,10.99,€,Karte zum Frühlingsfest,11.99,11.99
 40,Wöchentliches Abonnement,0.99,€,Wöchentliches Abonnement,0.99,0.99
@@ -58,12 +58,12 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 56,Kostümpaket 1,5.49,€,Glückspaket,5.99,5.99
 57,Glückspaket 1,5.49,€,Glückspaket,5.99,5.99
 65,Glückspaket 2,54.99,€,Glückspaket,59.99,59.99
-58,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
-59,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
-60,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
-61,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
-62,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
-63,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
+58,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
+59,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
+60,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
+61,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
+62,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
+63,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,tägige kostenlose Testversion,0
 64,Rundenpaket,10.99,€,Rundenpaket,11.99,11.99
 66,Ehering,21.99,€,Ehering,23.99,23.99
 67,Wachstumspaket,10.99,€,Wachstumspaket,11.99,11.99
@@ -232,20 +232,20 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 106,Buch der Weisheit,16.99,€,Buch der Weisheit,17.99,17.99
 107,Buch der Zauber 2,21.99,€,Buch der Zauber 2,23.99,23.99
 108,Buch der Zauber 1,32.99,€,Buch der Zauber 1,35.99,35.99
-1100301,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100302,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100303,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100304,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100305,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100306,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,84.99,84.99
-1100401,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
-1100402,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
-1100403,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
-1100404,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
-1100405,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
-1100406,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
+1100301,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100302,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100303,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100304,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100305,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100306,9-Sterne Ausbildungspaket 2,74.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,84.99
+1100401,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
+1100402,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
+1100403,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
+1100404,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
+1100405,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
+1100406,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,Sterne Ausbildungspaket,119.99
 109,1250 Dias Paket,27.99,€,Dias Paket,29.99,29.99
-110,Herzkristalle-Paket,21.99,€,Herzkristalle-Paket,23.99,23.99
+110,Herzkristalle-Paket,21.99,€,Herzkristalle-Paket,Paket,23.99
 10116,Geschenke des Grafen 1,10.99,€,Geschenke des Grafen 1,11.99,11.99
 10117,Geschenke des Grafen 2,32.99,€,Geschenke des Grafen 2,35.99,35.99
 10118,Geschenke des Grafen 3,54.99,€,Geschenke des Grafen 3,59.99,59.99
@@ -256,9 +256,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 123,Buch der Zauber 1,32.99,€,Buch der Zauber 1,35.99,35.99
 125,Glückspaket 1,5.49,€,Glückspaket,5.99,5.99
 126,Glückspaket 2,74.99,€,Glückspaket,84.99,84.99
-127,Buchheiligtum-Vorteilskarte,5.49,€,Buchheiligtum-Vorteilskarte,5.99,5.99
+127,Buchheiligtum-Vorteilskarte,5.49,€,Buchheiligtum-Vorteilskarte,Vorteilskarte,5.99
 128,Patrouillen Vorteilskarte,5.49,€,Patrouillen Vorteilskarte,5.99,5.99
-129,Soda-Paket,10.99,€,Soda-Pakete,11.99,11.99
+129,Soda-Paket,10.99,€,Soda-Pakete,Pakete,11.99
 130,Zauberbox 1,109.99,€,Zauberbox 1,119.99,119.99
 131,Zauberbox 2,54.99,€,Zauberbox 2,59.99,59.99
 132,Zauberbox 3,21.99,€,Zauberbox 3,23.99,23.99
@@ -267,7 +267,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 135,Besondere Mädchenbox 1,54.99,€,Besondere Mädchenbox 1,59.99,59.99
 136,Besondere Mädchenbox 2,74.99,€,Besondere Mädchenbox 2,84.99,84.99
 137,Ermäßigte Monatskarte,5.49,€,Ermäßigte Monatskarte,5.99,5.99
-138,Rotkäppchen-Paket,21.99,€,Rotkäppchen-Paket,23.99,23.99
+138,Rotkäppchen-Paket,21.99,€,Rotkäppchen-Paket,Paket,23.99
 139,Limitiertes Paket zum Valentinstag 1,10.99,€,Limitiertes Paket zum Valentinstag 1,11.99,11.99
 140,Krystals Mirakel 1,10.99,€,Krystals Mirakel 1,11.99,11.99
 141,Testfonds,10.99,€,Testfonds,11.99,11.99
@@ -380,11 +380,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 201,Wochenpaket 6,109.99,€,Wochenpaket,119.99,119.99
 202,Krystals Mirakel 2,54.99,€,Krystals Mirakel 2,59.99,59.99
 203,Krystals Mirakel 3,109.99,€,Krystals Mirakel 3,119.99,119.99
-204,Diener-Wachstumspaket 1,5.49,€,Diener-Wachstumspaket 1,5.99,5.99
-205,Diener-Wachstumspaket 2,10.99,€,Diener-Wachstumspaket 2,11.99,11.99
-206,Diener-Wachstumspaket 3,32.99,€,Diener-Wachstumspaket 3,35.99,35.99
-207,Diener-Wachstumspaket 4,54.99,€,Diener-Wachstumspaket 4,59.99,59.99
-208,Diener-Wachstumspaket 5,109.99,€,Diener-Wachstumspaket 5,119.99,119.99
+204,Diener-Wachstumspaket 1,5.49,€,Diener-Wachstumspaket 1,Wachstumspaket 1,5.99
+205,Diener-Wachstumspaket 2,10.99,€,Diener-Wachstumspaket 2,Wachstumspaket 2,11.99
+206,Diener-Wachstumspaket 3,32.99,€,Diener-Wachstumspaket 3,Wachstumspaket 3,35.99
+207,Diener-Wachstumspaket 4,54.99,€,Diener-Wachstumspaket 4,Wachstumspaket 4,59.99
+208,Diener-Wachstumspaket 5,109.99,€,Diener-Wachstumspaket 5,Wachstumspaket 5,119.99
 209,Paket zu Ostern 1,32.99,€,Paket zu Ostern 1,35.99,35.99
 210,Paket zu Ostern 2,109.99,€,Paket zu Ostern 2,119.99,119.99
 211,Paket zur Flaschenpost 1,109.99,€,Paket zur Flaschenpost 1,119.99,119.99
@@ -452,18 +452,18 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 266,Limitiertes Paket für Gilde Lv.8,54.99,€,Limitiertes Paket für Gilde Lv.8,59.99,59.99
 267,Limitiertes Paket für Gilde Lv.9,54.99,€,Limitiertes Paket für Gilde Lv.9,59.99,59.99
 275,Tagespaket 7,5.49,€,Tagespaket,5.99,5.99
-268,Kursplan-Paket 1,5.49,€,Kursplan-Paket 1,5.99,5.99
-269,Kursplan-Paket 2,5.49,€,Kursplan-Paket 2,5.99,5.99
-270,Kursplan-Paket 3,10.99,€,Kursplan-Paket 3,11.99,11.99
-271,Kursplan-Paket 4,21.99,€,Kursplan-Paket 4,23.99,23.99
+268,Kursplan-Paket 1,5.49,€,Kursplan-Paket 1,Paket 1,5.99
+269,Kursplan-Paket 2,5.49,€,Kursplan-Paket 2,Paket 2,5.99
+270,Kursplan-Paket 3,10.99,€,Kursplan-Paket 3,Paket 3,11.99
+271,Kursplan-Paket 4,21.99,€,Kursplan-Paket 4,Paket 4,23.99
 276,Magische Reserven 1,32.99,€,Magische Reserven,35.99,35.99
 277,Magische Reserven 2,74.99,€,Magische Reserven,84.99,84.99
 278,Magische Reserven 3,109.99,€,Magische Reserven,119.99,119.99
 279,Personalisiertes Paket 1,74.99,€,Personalisiertes Paket,84.99,84.99
 280,Personalisiertes Paket 2,21.99,€,Personalisiertes Paket,23.99,23.99
 281,Personalisiertes Paket 3,10.99,€,Personalisiertes Paket,11.99,11.99
-282,Monatskarte,10.99,€,Monatskarte - Erstkaufrabatt,11.99,11.99
-283,Mini Monatskarte,2.29,€,Mini Monatskarte - Erstkaufrabatt,2.49,2.49
+282,Monatskarte,10.99,€,Monatskarte - Erstkaufrabatt, Erstkaufrabatt,11.99
+283,Mini Monatskarte,2.29,€,Mini Monatskarte - Erstkaufrabatt, Erstkaufrabatt,2.49
 284,Testfonds 4,54.99,€,Testfonds 4,59.99,59.99
 285,Sondernachschub (empfohlen),21.99,€,Sondernachschub (empfohlen),23.99,23.99
 286,Sondernachschub 1,5.49,€,Sondernachschub 1,5.99,5.99
@@ -483,16 +483,16 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1701001,Personalisierter Nachschub Lv.155,89.99,€,Personalisierter Nachschub Lv.155,94.99,94.99
 1701101,Personalisierter Nachschub Lv.165,89.99,€,Personalisierter Nachschub Lv.165,94.99,94.99
 1701201,Personalisierter Nachschub Lv.180,89.99,€,Personalisierter Nachschub Lv.180,94.99,94.99
-293,Kursplan-Paket 1,1.09,€,Kursplan-Paket 1,1.19,1.19
-294,Kursplan-Paket 2,5.49,€,Kursplan-Paket 2,5.99,5.99
-295,Kursplan-Paket 3,10.99,€,Kursplan-Paket 3,11.99,11.99
-296,Kursplan-Paket 4,21.99,€,Kursplan-Paket 4,23.99,23.99
+293,Kursplan-Paket 1,1.09,€,Kursplan-Paket 1,Paket 1,1.19
+294,Kursplan-Paket 2,5.49,€,Kursplan-Paket 2,Paket 2,5.99
+295,Kursplan-Paket 3,10.99,€,Kursplan-Paket 3,Paket 3,11.99
+296,Kursplan-Paket 4,21.99,€,Kursplan-Paket 4,Paket 4,23.99
 297,Limitiertes Gildenpaket,32.99,€,Limitiertes Gildenpaket,35.99,35.99
-299,Rückkehrer-Wachstumspaket 1,32.99,€,Rückkehrer-Wachstumspaket 1,35.99,35.99
-300,Rückkehrer-Wachstumspaket 2,54.99,€,Rückkehrer-Wachstumspaket 2,59.99,59.99
-301,Paket zur Rückkehrer-Hilfe,32.99,€,Paket zur Rückkehrer-Hilfe,35.99,35.99
-302,Rückkehrer-Monatskarte,5.49,€,Rückkehrer-Monatskarte,5.99,5.99
-303,Rückkehrer-Monatsthema,2.29,€,Rückkehrer-Monatsthema,2.49,2.49
+299,Rückkehrer-Wachstumspaket 1,32.99,€,Rückkehrer-Wachstumspaket 1,Wachstumspaket 1,35.99
+300,Rückkehrer-Wachstumspaket 2,54.99,€,Rückkehrer-Wachstumspaket 2,Wachstumspaket 2,59.99
+301,Paket zur Rückkehrer-Hilfe,32.99,€,Paket zur Rückkehrer-Hilfe,Hilfe,35.99
+302,Rückkehrer-Monatskarte,5.49,€,Rückkehrer-Monatskarte,Monatskarte,5.99
+303,Rückkehrer-Monatsthema,2.29,€,Rückkehrer-Monatsthema,Monatsthema,2.49
 1701301,Personalisierter Nachschub Lv.15,2.29,€,Personalisierter Nachschub Lv.15,2.49,2.49
 1701401,Personalisierter Nachschub Lv.35,5.49,€,Personalisierter Nachschub Lv.35,5.99,5.99
 1701501,Personalisierter Nachschub Lv.48,10.99,€,Personalisierter Nachschub Lv.48,11.99,11.99
@@ -525,11 +525,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1709101,Personalisierter Nachschub,32.99,€,Personalisierter Nachschub,35.99,35.99
 1709102,Personalisierter Nachschub,74.99,€,Personalisierter Nachschub,84.99,84.99
 1709103,Personalisierter Nachschub,109.99,€,Personalisierter Nachschub,119.99,119.99
-312,Limitiertes Outfit-Paket 1,5.49,€,Limitiertes Outfit-Paket 1,5.99,5.99
-313,Limitiertes Outfit-Paket 2,10.99,€,Limitiertes Outfit-Paket 2,11.99,11.99
-314,Limitiertes Outfit-Paket 3,21.99,€,Limitiertes Outfit-Paket 3,23.99,23.99
-315,Limitiertes Outfit-Paket 4,54.99,€,Limitiertes Outfit-Paket 4,59.99,59.99
-316,Limitiertes Outfit-Paket 5,109.99,€,Limitiertes Outfit-Paket 5,119.99,119.99
+312,Limitiertes Outfit-Paket 1,5.49,€,Limitiertes Outfit-Paket 1,Paket 1,5.99
+313,Limitiertes Outfit-Paket 2,10.99,€,Limitiertes Outfit-Paket 2,Paket 2,11.99
+314,Limitiertes Outfit-Paket 3,21.99,€,Limitiertes Outfit-Paket 3,Paket 3,23.99
+315,Limitiertes Outfit-Paket 4,54.99,€,Limitiertes Outfit-Paket 4,Paket 4,59.99
+316,Limitiertes Outfit-Paket 5,109.99,€,Limitiertes Outfit-Paket 5,Paket 5,119.99
 317,Rotkäppchens Geschenk,5.49,€,Rotkäppchens Geschenk,5.99,5.99
 318,Rotkäppchens Geschenk,16.99,€,Rotkäppchens Geschenk,17.99,17.99
 319,Bonuspaket zur Teestunde,16.99,€,Bonuspaket zur Teestunde,17.99,17.99
@@ -546,9 +546,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 331,Reiseproviant 4,54.99,€,Reiseproviant 4,59.99,59.99
 332,Reiseproviant 5,74.99,€,Reiseproviant 5,84.99,84.99
 333,Reiseproviant 6,109.99,€,Reiseproviant 6,119.99,119.99
-334,Paket zu Ostern,10.99,€,Paket zu Ostern,11.99,11.99
-335,Paket zu Ostern,54.99,€,Paket zu Ostern,59.99,59.99
-336,Paket zu Ostern,109.99,€,Paket zu Ostern,119.99,119.99
+334,Paket zu Thanksgiving 1,1.09,€,Paket zu Thanksgiving 1,1.19,1.19
+335,Paket zu Thanksgiving 2,10.99,€,Paket zu Thanksgiving 2,11.99,11.99
+336,Paket zu Thanksgiving 3,54.99,€,Paket zu Thanksgiving 3,59.99,59.99
 337,Adventspaket 1,1.09,€,Adventspaket 1,1.19,1.19
 338,Adventspaket 2,1.09,€,Adventspaket 2,1.19,1.19
 339,Adventspaket 3,1.09,€,Adventspaket 3,1.19,1.19
@@ -600,8 +600,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 385,Tagespaket mit Rabatt 4,2.29,€,Tagespaket mit Rabatt 4,2.49,2.49
 386,Tagespaket mit Rabatt 5,2.29,€,Tagespaket mit Rabatt 5,2.49,2.49
 387,Tagespaket mit Rabatt 6,2.29,€,Tagespaket mit Rabatt 6,2.49,2.49
-388,Buchheiliftum-Vorteilskarte mit Rabatt,2.29,€,Buchheiliftum-Vorteilskarte mit Rabatt,2.49,2.49
-389,Patrouillen-Vorteilskarte mit Rabatt,2.29,€,Patrouillen-Vorteilskarte mit Rabatt,2.49,2.49
+388,Buchheiliftum-Vorteilskarte mit Rabatt,2.29,€,Buchheiliftum-Vorteilskarte mit Rabatt,Vorteilskarte mit Rabatt,2.49
+389,Patrouillen-Vorteilskarte mit Rabatt,2.29,€,Patrouillen-Vorteilskarte mit Rabatt,Vorteilskarte mit Rabatt,2.49
 390,Tagespaket mit Rabatt 7,2.29,€,Tagespaket mit Rabatt 7,2.49,2.49
 391,Tagespaket mit Rabatt 7,2.29,€,Tagespaket mit Rabatt 7,2.49,2.49
 392,Paket zur Glückslotterie 1,5.49,€,Paket zur Glückslotterie 1,5.99,5.99
@@ -643,7 +643,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 429,Paket zum Laternenfest 1,109.99,€,Paket zum Laternenfest 1,119.99,119.99
 430,Paket zum Laternenfest 2,54.99,€,Paket zum Laternenfest 2,59.99,59.99
 431,Paket zum Laternenfest 4,10.99,€,Paket zum Laternenfest 4,11.99,11.99
-427,Raumstation-Versorgung,32.99,€,Raumstation-Versorgung,35.99,35.99
+427,Raumstation-Versorgung,32.99,€,Raumstation-Versorgung,Versorgung,35.99
 432,Geschenk der Sterne 1,109.99,€,Geschenk der Sterne,119.99,119.99
 433,Geschenk der Sterne 2,54.99,€,Geschenk der Sterne,59.99,59.99
 434,Paket unter Sternen 1,109.99,€,Paket unter Sternen,119.99,119.99
@@ -656,10 +656,10 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 441,Sondernachschub 3,54.99,€,Sondernachschub,59.99,59.99
 442,Sondernachschub 4,109.99,€,Sondernachschub,119.99,119.99
 443,Rotkäppchens Geschenk,54.99,€,Rotkäppchens Geschenk,59.99,59.99
-444,Login-Paket 1,1.09,€,Login-Paket 1,1.19,1.19
-445,Login-Paket 2,10.99,€,Login-Paket 2,11.99,11.99
-446,Login-Paket 3,5.49,€,Login-Paket 3,5.99,5.99
-447,Login-Paket 4,16.99,€,Login-Paket 4,17.99,17.99
+444,Login-Paket 1,1.09,€,Login-Paket 1,Paket 1,1.19
+445,Login-Paket 2,10.99,€,Login-Paket 2,Paket 2,11.99
+446,Login-Paket 3,5.49,€,Login-Paket 3,Paket 3,5.99
+447,Login-Paket 4,16.99,€,Login-Paket 4,Paket 4,17.99
 448,Glücksbringer (Exklusiv),32.99,€,Glücksbringer (Exklusiv),35.99,35.99
 449,Glücksbringer 1,109.99,€,Glücksbringer,119.99,119.99
 450,Glücksbringer 2,54.99,€,Glücksbringer,59.99,59.99
@@ -690,15 +690,15 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 475,Paket zur Schatzsuche in der Tiefsee,54.99,€,Paket zur Schatzsuche in der Tiefsee,59.99,59.99
 476,Batterieversorgung 5,109.99,€,Batterieversorgung,119.99,119.99
 477,Pass für Seelensammler,21.99,€,Pass für\nSeelensammler,23.99,23.99
-478,Wachstums-Booster 1,5.49,€,Wachstums-Booster 1,5.99,5.99
+478,Wachstums-Booster 1,5.49,€,Wachstums-Booster 1,Booster 1,5.99
 479,Beitragspaket zu Halloween,2.29,€,Beitragspaket zu Halloween 1,2.49,2.49
-480,Premium-Paket (Bonus der Mystery Boxen),16.99,€,Premium-Paket (Bonus der Mystery Boxen),17.99,17.99
+480,Premium-Paket (Bonus der Mystery Boxen),16.99,€,Premium-Paket (Bonus der Mystery Boxen),Paket (Bonus der Mystery Boxen),17.99
 481,Luxuspaket (Bonus der Mystery Boxen),32.99,€,Luxuspaket (Bonus der Mystery Boxen),35.99,35.99
-482,Wachstums-Booster 3,1.09,€,Wachstums-Booster 3,1.19,1.19
-483,Wachstums-Booster 4,16.99,€,Wachstums-Booster 4,17.99,17.99
-484,Wachstums-Booster 6,2.29,€,Wachstums-Booster 6,2.49,2.49
-485,Wachstums-Booster 7,32.99,€,Wachstums-Booster 7,35.99,35.99
-486,Wachstums-Booster 9,74.99,€,Wachstums-Booster 9,84.99,84.99
+482,Wachstums-Booster 3,1.09,€,Wachstums-Booster 3,Booster 3,1.19
+483,Wachstums-Booster 4,16.99,€,Wachstums-Booster 4,Booster 4,17.99
+484,Wachstums-Booster 6,2.29,€,Wachstums-Booster 6,Booster 6,2.49
+485,Wachstums-Booster 7,32.99,€,Wachstums-Booster 7,Booster 7,35.99
+486,Wachstums-Booster 9,74.99,€,Wachstums-Booster 9,Booster 9,84.99
 487,Beitragspaket zu Halloween 2,5.49,€,Beitragspaket zu Halloween 2,5.99,5.99
 488,Beitragspaket zu Halloween 3,10.99,€,Beitragspaket zu Halloween 3,11.99,11.99
 489,Beitragspaket zu Halloween 4,21.99,€,Beitragspaket zu Halloween 4,23.99,23.99
@@ -710,3 +710,4 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 496,Tägliches Glückspaket 5,10.99,€,Tägliches Glückspaket 5,11.99,11.99
 497,Tägliches Glückspaket 6,10.99,€,Tägliches Glückspaket 6,11.99,11.99
 498,Neulings-Ausbildungsplan,32.99,€,Neulings-Ausbildungsplan,35.99,35.99
+491,Extra zum Sternenwunsch,32.99,€,Extra zum Sternenwunsch,35.99,35.99

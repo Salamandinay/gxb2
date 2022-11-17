@@ -2442,7 +2442,7 @@ GUILD_BOSS_TEXT03,Weekly Reward:
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Level {1}
 SUMMON_CONFIRM,"{1} Draws will cost you {2} Gems, are you sure to continue?"
 TURING_TASK_LIMIT,Limit
-TURING_TASK_TEXT01,Complete the tasks to get Black Friday Coupons during the event. The rewards will be sent directly to your Bag.
+TURING_TASK_TEXT01,Complete the tasks to get Event Materials for Pumpkin Artisan during the event. The rewards will be sent directly to your Bag.
 WELFARE_TEXT01,Unlock the chance to purchase the limited pack with gems by enrolling certain times in Enroll!
 WELFARE_TEXT02,Unlock after Enroll {1} times during the event
 BEGINNER_QUEST_LOCKED,Locked
@@ -7577,7 +7577,7 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT09,Basic
 ACTIVITY_NEW_GROWTH_PLAN_TEXT10,Advanced
 ACTIVITY_NEW_GROWTH_PLAN_TEXT11,Purchase
 ACTIVITY_NEW_GROWTH_PLAN_TEXT12,"Choose a girl for Newcomer Support. Complete the daily tasks to earn Points and receive the Basic rewards! If you purchase the Newcomer Support Pack, the Advanced rewards of Newcomer Support will be unlocked."
-ACTIVITY_NEW_GROWTH_PLAN_TEXT13,"1. During the event, 2 Points can be obtained for completing 1 Daily Task in Fantasy Book. Once the required amount for the task has been reached, rewards can be claimed manually.|2. During the event, you can select one Girl for the Newcomer Support, the rewards of the Newcomer Support might be different according to the Girl you choose. You will not be able to change your selection once you have collected any reward from the event.|3. During the event, you will be able to acquire the Advanced Rewards that your Points have reached instantly after you purchase Newcomer Support Pack, and the remaining Advanced Rewards will also be unlocked and become available after your Points reach the requirement.|4. If you fail to acquire all Points from the previous day as you forgot to claim Daily Task rewards or failed to complete Daily Tasks, you can still make up the Points with Gems. 1 point can be purchased with 2 Gems."
+ACTIVITY_NEW_GROWTH_PLAN_TEXT13,"1. During the event, 2 Points can be obtained for completing 1 Daily Event Task. Once the required amount of points has been reached, rewards can be claimed manually.|2. During the event, you can select one Girl for the Newcomer Support, the rewards of the Newcomer Support might be different according to the Girl you choose. You will not be able to change your selection once you have collected any reward from the event.|3. During the event, you will be able to acquire the Advanced Rewards that your Points have reached instantly after you purchase Newcomer Support Pack, and the remaining Advanced Rewards will also be unlocked and become available after your Points reach the requirement.|4. If you fail to acquire all Points from the previous day as you forgot to claim Daily Task rewards or failed to complete Daily Tasks, you can still make up the Points with Gems. 1 point can be purchased with 2 Gems."
 ACTIVITY_NEW_GROWTH_PLAN_TEXT14,No reclaimable Points now!
 ACTIVITY_NEW_GROWTH_PLAN_TEXT15,Reclaimable Points: {1}
 ACTIVITY_NEW_GROWTH_PLAN_TEXT16,Newcomer Support
@@ -7590,7 +7590,7 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT22,Reward Preview
 DOG_MINI_GAME_EXIT_LABEL,Quit
 DOG_MINI_GAME_NEXT_LABEL,Next Stage
 DOG_MINI_GAME_RESET_LABEL,Retry
-ACTIVITY_PAY_DAY_TEXT08,3400%%
+ACTIVITY_PAY_DAY_TEXT08,2700%%
 ACTIVITY_STAR_ALTAR_GAMBLE_HELP,"1. You can get 1 Starry Point for each Star Token consumed.|2. After the Starry Points you've obtained fill up a Starry Bottle, you will be able to claim the reward for that bottle and unlock the next Starry Bottle."
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,Starry Bottle
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,You can get 1 Starry Point for each Star Token consumed
@@ -7607,9 +7607,21 @@ ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,Sign in
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,Reclaim
 DOG_MINI_GAME_LEVEL_LABEL,Stage Select
 DOG_MINI_GAME_STAGE_LABEL,Stage {1}
-DOG_MINI_GAME_NAME_LABEL,dog head name
+DOG_MINI_GAME_NAME_LABEL,Protect the Doggy
 DOG_MINI_GAME_BEFORE_LABEL,Please clear the previous stage first
 WARMUP_ARENA_TASK_INFO_2_1,Ruler of Gods
 DOG_MINI_GAME_SKIP_LABEL,Skip
 ACTIVITY_PAY_DAY_TEXT09,Bubble Treasures\nPack
 ACTIVITY_STAR_ALTAR_LOGIN_HELP,1. You can claim a login reward from First Voyage each day during the event.|2. You can reclaim each reward you failed to collect in the previous days by consuming 50 Gems.
+TURING_MISSION02_TEXT01,Complete the tasks to get Black Friday Coupons during the event. The rewards will be sent directly to your Bag.
+TURING_MISSION03_TEXT01,Complete the tasks to get Christmas Socks during the event. The rewards will be sent directly to your Bag.
+TURING_MISSION04_TEXT01,"Complete the tasks to get corresponding rewards, the rewards will be issued directly to your Bag."
+ACTIVITY_STAR_PLAN_HELP,1.消耗娃娃幣即可在星空娃娃機中抓取一個娃娃。娃娃機裡的天蝎娃娃、射手娃娃和雙魚娃娃被抓取後將自動轉換為對應的票據，抓取到娃娃禮盒後將獲得1份隨機獎勵。|2.娃娃被抓取後不放回。在娃娃機裡抓取達到一定次數，還將投入額外的娃娃進娃娃機中。若娃娃機中的娃娃少於默認值，學長可以手動將娃娃數量補充至默認值哦（通過累計獎勵途徑獲得的額外娃娃不會被扣除）。|3.獲得的票據可以兌換為相應的獎勵道具。
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT01,Doll Reward
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT02,Chest Reward
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT03,Preview
+ACTIVITY_STAR_PLAN_BUTTON01,x1
+ACTIVITY_STAR_PLAN_BUTTON02,x10
+ACTIVITY_STAR_PLAN_AWARDS_BUTTON,Rewards
+ACTIVITY_STAR_PLAN_AWARDS_TEXT,累計抓取{1}次[c][7cff35]({1}/{2})[-][/c]
+ACTIVITY_STAR_PLAN_TIPS01,Confirm to reset the reward pool?\n(the additional Dolls you get will remain)

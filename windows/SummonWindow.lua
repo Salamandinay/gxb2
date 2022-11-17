@@ -157,6 +157,14 @@ function SummonWindow:initUIComponent()
 		self.friendSummonTitle:MakePixelPerfect()
 	end)
 
+	if xyd.getServerTime() >= 1673568000 then
+		xyd.setUISpriteAsync(self.bgSenior, nil, "summon_super_bg2")
+	elseif xyd.getServerTime() >= 1671148800 then
+		xyd.setUISpriteAsync(self.bgSenior, nil, "summon_super_bg_3")
+	else
+		xyd.setUISpriteAsync(self.bgSenior, nil, "summon_super_bg")
+	end
+
 	self.skipAnimation = Summon:getSkipAnimation()
 
 	if self.skipAnimation then

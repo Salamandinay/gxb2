@@ -168,7 +168,6 @@ function ActivityDailyRecharge:register()
 
 	self:registerEvent(xyd.event.GET_ACTIVITY_AWARD, function (event)
 		local data = event.data
-		local detail = json.decode(data.detail)
 
 		if data.activity_id ~= xyd.ActivityID.ACTIVITY_DAILY_RECHARGE then
 			return

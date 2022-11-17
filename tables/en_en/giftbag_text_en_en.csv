@@ -12,8 +12,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 11,LV 48 Pack,9.99,$,LV 48 Pack,9.99,9.99
 12,LV 58 Pack,29.99,$,LV 58 Pack,29.99,29.99
 13,LV 78 Pack,49.99,$,LV 78 Pack,49.99,49.99
-14,4-Star Girl Training Pack,4.99,$,4-Star Girl Training Pack,4.99,4.99
-15,5-Star Girl Training Pack,9.99,$,5-Star Girl Training Pack,9.99,9.99
+14,4-Star Girl Training Pack,4.99,$,4-Star Girl Training Pack,Star Girl Training Pack,4.99
+15,5-Star Girl Training Pack,9.99,$,5-Star Girl Training Pack,Star Girl Training Pack,9.99
 16,Monthly Pack 1,4.99,$,Monthly Pack,4.99,4.99
 17,Monthly Pack 2,9.99,$,Monthly Pack,9.99,9.99
 18,Monthly Pack 3,29.99,$,Monthly Pack,29.99,29.99
@@ -36,7 +36,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 36,Value Pack 5,4.99,$,Value Pack,4.99,4.99
 69,Value Pack 6,4.99,$,Value Pack,4.99,4.99
 35,Free Reload Pack,1.99,$,Free Reload Pack,1.99,1.99
-37,Limited Edition 5-star Girl Pack,0.99,$,Limited Edition 5-star Girl Pack,0.99,0.99
+37,Limited Edition 5-star Girl Pack,0.99,$,Limited Edition 5-star Girl Pack,star Girl Pack,0.99
 38,Subscription,0.99,$,Subscription,0.99,0.99
 39,Spring Festival\nCard,9.99,$,Spring Festival\nCard,9.99,9.99
 40,Weekly Subscription,0.99,$,Weekly Subscription,0.99,0.99
@@ -58,12 +58,12 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 56,Special Skin Pack 1,4.99,$,Special Gift Pack,4.99,4.99
 57,Special Gift Pack 1,4.99,$,Special Gift Pack,4.99,4.99
 65,Special Gift Pack 2,49.99,$,Special Gift Pack,49.99,49.99
-58,7-Day Free Trial,0,$,7-Day Free Trial,0,0
-59,7-Day Free Trial,0,$,7-Day Free Trial,0,0
-60,7-Day Free Trial,0,$,7-Day Free Trial,0,0
-61,7-Day Free Trial,0,$,7-Day Free Trial,0,0
-62,7-Day Free Trial,0,$,7-Day Free Trial,0,0
-63,7-Day Free Trial,0,$,7-Day Free Trial,0,0
+58,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
+59,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
+60,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
+61,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
+62,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
+63,7-Day Free Trial,0,$,7-Day Free Trial,Day Free Trial,0
 64,Stage Pack,9.99,$,Stage Pack,9.99,9.99
 66,Oath Ring,19.99,$,Oath Ring,19.99,19.99
 67,Growth Pack,9.99,$,Growth Pack,9.99,9.99
@@ -232,18 +232,18 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 106,Luxury Book,14.99,$,Luxury Book,14.99,14.99
 107,Collector's Book 2,19.99,$,Collector's Book 2,19.99,19.99
 108,Collector's Book 1,29.99,$,Collector's Book 1,29.99,29.99
-1100301,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100302,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100303,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100304,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100305,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100306,9-Star Training Pack 2,69.99,$,9-Star Training Pack,69.99,69.99
-1100401,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
-1100402,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
-1100403,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
-1100404,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
-1100405,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
-1100406,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
+1100301,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100302,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100303,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100304,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100305,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100306,9-Star Training Pack 2,69.99,$,9-Star Training Pack,Star Training Pack,69.99
+1100401,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
+1100402,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
+1100403,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
+1100404,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
+1100405,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
+1100406,9-Star Training Pack 1,99.99,$,9-Star Training Pack,Star Training Pack,99.99
 109,1250 Gems pack,24.99,$,Gem Pack,24.99,24.99
 110,Date Preparation Pack,19.99,$,Date Preparation Pack,19.99,19.99
 10116,Count's Mystery Gift 1,9.99,$,Count's Mystery Gift 1,9.99,9.99
@@ -462,8 +462,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 279,Customization Pack 1,69.99,$,Customization Pack,69.99,69.99
 280,Customization Pack 2,19.99,$,Customization Pack,19.99,19.99
 281,Customization Pack 3,9.99,$,Customization Pack,9.99,9.99
-282,Monthly Pass,9.99,$,Monthly Pass - First Purchase Discount,9.99,9.99
-283,Mini Pass,1.99,$,Mini Pass - First Purchase Discount,1.99,1.99
+282,Monthly Pass,9.99,$,Monthly Pass - First Purchase Discount, First Purchase Discount,9.99
+283,Mini Pass,1.99,$,Mini Pass - First Purchase Discount, First Purchase Discount,1.99
 284,Test Fund 4,49.99,$,Test Fund 4,49.99,49.99
 285,Bizarre Supply (Special Offer),19.99,$,Bizarre Supply (Special Offer),19.99,19.99
 286,Bizarre Supply 1,4.99,$,Bizarre Supply 1,4.99,4.99
@@ -491,8 +491,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 299,Return Customized Growth Pack 1,29.99,$,Return Customized Growth Pack 1,29.99,29.99
 300,Return Customized Growth Pack 2,49.99,$,Return Customized Growth Pack 2,49.99,49.99
 301,Return Support,29.99,$,Return Support,29.99,29.99
-302,Monthly Pass - Return,4.99,$,Monthly Pass - Return,4.99,4.99
-303,Monthly Event Deluxe Pass - Return,1.99,$,Monthly Event Deluxe Pass - Return,1.99,1.99
+302,Monthly Pass - Return,4.99,$,Monthly Pass - Return, Return,4.99
+303,Monthly Event Deluxe Pass - Return,1.99,$,Monthly Event Deluxe Pass - Return, Return,1.99
 1701301,LV. 15 Customized Supply,1.99,$,LV. 15 Customized Supply,1.99,1.99
 1701401,LV. 35 Customized Supply,4.99,$,LV. 35 Customized Supply,4.99,4.99
 1701501,LV. 48 Customized Supply,9.99,$,LV. 48 Customized Supply,9.99,9.99
@@ -546,9 +546,9 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 331,Raider's Supply 4,49.99,$,Raider's Supply 4,49.99,49.99
 332,Raider's Supply 5,69.99,$,Raider's Supply 5,69.99,69.99
 333,Raider's Supply 6,99.99,$,Raider's Supply 6,99.99,99.99
-334,Easter Pack,9.99,$,Easter Pack,9.99,9.99
-335,Easter Pack,49.99,$,Easter Pack,49.99,49.99
-336,Easter Pack,99.99,$,Easter Pack,99.99,99.99
+334,Thanksgiving Feast Pack 1,0.99,$,Thanksgiving Feast Pack 1,0.99,0.99
+335,Thanksgiving Feast Pack 2,9.99,$,Thanksgiving Feast Pack 2,9.99,9.99
+336,Thanksgiving Feast Pack 3,49.99,$,Thanksgiving Feast Pack 3,49.99,49.99
 337,Advent Calendar Gift Pack 1,0.99,$,Advent Calendar Gift Pack 1,0.99,0.99
 338,Advent Calendar Gift Pack 2,0.99,$,Advent Calendar Gift Pack 2,0.99,0.99
 339,Advent Calendar Gift Pack 3,0.99,$,Advent Calendar Gift Pack 3,0.99,0.99
@@ -692,8 +692,8 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 477,Soul Pass,19.99,$,Soul Pass,19.99,19.99
 478,Upgrade Booster Pack 1,4.99,$,Upgrade Booster Pack 1,4.99,4.99
 479,Halloween Contribution Pack,1.99,$,Halloween Contribution Pack 1,1.99,1.99
-480,Blind Box Bonus - Fancy Box,14.99,$,Blind Box Bonus - Fancy Box,14.99,14.99
-481,Blind Box Bonus - Deluxe Box,29.99,$,Blind Box Bonus - Deluxe Box Box,29.99,29.99
+480,Blind Box Bonus - Fancy Box,14.99,$,Blind Box Bonus - Fancy Box, Fancy Box,14.99
+481,Blind Box Bonus - Deluxe Box,29.99,$,Blind Box Bonus - Deluxe Box Box, Deluxe Box Box,29.99
 482,Upgrade Booster Pack 3,0.99,$,Upgrade Booster Pack 3,0.99,0.99
 483,Upgrade Booster Pack 4,14.99,$,Upgrade Booster Pack 4,14.99,14.99
 484,Upgrade Booster Pack 6,1.99,$,Upgrade Booster Pack 6,1.99,1.99
@@ -710,3 +710,4 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 496,Bubble Treasures Pack 5,9.99,$,Bubble Treasures Pack 5,9.99,9.99
 497,Bubble Treasures Pack 6,9.99,$,Bubble Treasures Pack 6,9.99,9.99
 498,Newcomer Support Pack,29.99,$,Newcomer Support Pack,29.99,29.99
+491,Starry Bonus Pack,29.99,$,Starry Bonus Pack,29.99,29.99

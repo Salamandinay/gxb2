@@ -55,12 +55,12 @@ function ActivityDailyRechargeData:register()
 		dump(self.detail.award_times)
 
 		local data = event.data
-		local detail = json.decode(data.detail)
 
 		if data.activity_id ~= xyd.ActivityID.ACTIVITY_DAILY_RECHARGE then
 			return
 		end
 
+		local detail = json.decode(data.detail)
 		self.detail = detail.info
 
 		if detail.type == 2 then

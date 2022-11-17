@@ -477,6 +477,11 @@ function SoulEquip2StrengthenWindow:updateProgressGroup()
 
 	self.progressGroup.value = self.fakeExp / xyd.tables.expSoulEquip2Table:getCost(nextLevel)
 	self.progressLabel.text = self.fakeExp .. "/" .. xyd.tables.expSoulEquip2Table:getCost(nextLevel)
+
+	if maxLev <= self.fakeLev then
+		self.progressGroup.value = 1
+		self.progressLabel.text = xyd.tables.expSoulEquip2Table:getCost(nextLevel) .. "/" .. xyd.tables.expSoulEquip2Table:getCost(nextLevel)
+	end
 end
 
 function SoulEquip2StrengthenWindow:updateItemTipsGroup(show, params)

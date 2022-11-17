@@ -38,6 +38,7 @@ end
 
 function SummonSeniorGiftBagTipsWindow:getUIComponent()
 	local groupAction = self.window_:NodeByName("groupAction").gameObject
+	self.Bg_ = groupAction:ComponentByName("Bg_", typeof(UISprite))
 	self.timeLabel = groupAction:ComponentByName("timeGroup/timeLabel", typeof(UILabel))
 	self.endLabel = groupAction:ComponentByName("timeGroup/endLabel", typeof(UILabel))
 	self.modelGroup = groupAction:NodeByName("modelGroup").gameObject
@@ -81,6 +82,17 @@ function SummonSeniorGiftBagTipsWindow:initUIComponent()
 		if i ~= count then
 			self["groupProbNum" .. i].text = __("WISH_GACHA_NUM" .. tostring(i + 5))
 		end
+	end
+
+	if xyd.getServerTime() < 1673568000 then
+		xyd.setUISpriteAsync(self.Bg_, nil, "summon_senior_giftbag_bg002", nil, , true)
+	else
+		xyd.setUISpriteAsync(self.Bg_, nil, "summon_senior_giftbag_bg001", nil, , true)
+		self.Bg_:Y(-32)
+
+		local modelGroup = self.modelGroup:NodeByName("model_1").gameObject
+
+		modelGroup:X(203)
 	end
 
 	self.indexText = {

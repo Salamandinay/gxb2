@@ -2443,7 +2443,7 @@ GUILD_BOSS_TEXT03,每週結算獎勵：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Level {1}
 SUMMON_CONFIRM,扭{1}次需要消耗{2}鑽石，是否繼續？
 TURING_TASK_LIMIT,完成上限
-TURING_TASK_TEXT01,活動期間，完成指定任務，可以獲得購物券。獎勵直接發放至背包
+TURING_TASK_TEXT01,活動期間，完成指定任務，即可獲得雕刻南瓜的原材料。獎勵直接發放至背包
 WELFARE_TEXT01,活動期間，招生達到一定的次數，可以解鎖對應的超值福利道具購買資格！
 WELFARE_TEXT02,活動期間，招生達到{1}次後解鎖
 BEGINNER_QUEST_LOCKED,未解鎖
@@ -7532,7 +7532,7 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT09,基礎獎勵
 ACTIVITY_NEW_GROWTH_PLAN_TEXT10,進階獎勵
 ACTIVITY_NEW_GROWTH_PLAN_TEXT11,購買
 ACTIVITY_NEW_GROWTH_PLAN_TEXT12,選擇一個戰姬作為助力戰姬，完成每日任務累計積分，可獲得基礎獎勵。購買新手戰姬助力禮包後更有豐厚進階獎勵。
-ACTIVITY_NEW_GROWTH_PLAN_TEXT13,1.活動期間，每完成1個活動任務可獲得2點積分。積分滿足條件可獲得獎勵，需要手動領取。|2.活動期間，學長可以選擇一個戰姬作為助力戰姬，新手戰姬助力的獎勵内容會根據助力戰姬而定。領取獎勵後將無法再更改助力戰姬。|4.活動期間，任何時間購買新手戰姬助力禮包後，都可以獲得積分已達標的進階獎勵。|5.活動期間，學長若有未完成/未領取的每日任務而錯失積分，仍可在次日及之後點擊補分按鍵補足成長積分。1點積分需要消耗2鑽石。
+ACTIVITY_NEW_GROWTH_PLAN_TEXT13,1.活動期間，每完成1個活動任務可獲得2點積分。積分滿足條件可獲得獎勵，需要手動領取。|2.活動期間，學長可以選擇一個戰姬作為助力戰姬，新手戰姬助力的獎勵内容會根據助力戰姬而定。領取獎勵後將無法再更改助力戰姬。|3.活動期間，任何時間購買新手戰姬助力禮包後，都可以獲得積分已達標的進階獎勵。|4.活動期間，學長若有未完成/未領取的每日任務而錯失積分，仍可在次日及之後點擊補分按鍵補足成長積分。1點積分需要消耗2鑽石。
 ACTIVITY_NEW_GROWTH_PLAN_TEXT14,當前沒有需要補的積分
 ACTIVITY_NEW_GROWTH_PLAN_TEXT15,當前可以補的積分：{1}分
 ACTIVITY_NEW_GROWTH_PLAN_TEXT16,新手戰姬助力
@@ -7545,7 +7545,7 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT22,部分獎勵一覽
 DOG_MINI_GAME_EXIT_LABEL,退出
 DOG_MINI_GAME_NEXT_LABEL,下一關
 DOG_MINI_GAME_RESET_LABEL,重來
-ACTIVITY_PAY_DAY_TEXT08,3400%%
+ACTIVITY_PAY_DAY_TEXT08,2700%%
 ACTIVITY_STAR_ALTAR_GAMBLE_HELP,1.活動期間，每消耗1枚星空幣即可累計1點星願值。|2.星願值填滿一個星願瓶後即可領取一份星願回饋獎勵，並解鎖下一檔星願瓶。
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,星願瓶
 ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,消耗1枚星空幣即可累計1點星願值
@@ -7562,9 +7562,21 @@ ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,簽到
 ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,補簽
 DOG_MINI_GAME_LEVEL_LABEL,關卡選擇
 DOG_MINI_GAME_STAGE_LABEL,第{1}關
-DOG_MINI_GAME_NAME_LABEL,狗頭名字
+DOG_MINI_GAME_NAME_LABEL,救救狗狗
 DOG_MINI_GAME_BEFORE_LABEL,請完成前置關卡
 WARMUP_ARENA_TASK_INFO_2_1,不認識的神王
-DOG_MINI_GAME_SKIP_LABEL,跳过
+DOG_MINI_GAME_SKIP_LABEL,跳過
 ACTIVITY_PAY_DAY_TEXT09,每日限時禮包
-ACTIVITY_STAR_ALTAR_LOGIN_HELP,1.活動期間，每日登入即可領取初入星系的登入獎勵。|2.未及時領取的登入獎勵可以消耗鑽石*50進行補簽哦。
+ACTIVITY_STAR_ALTAR_LOGIN_HELP,1.活動期間，每日登入即可領取初探星系的登入獎勵。|2.未及時領取的登入獎勵可以消耗鑽石*50進行補簽哦。
+TURING_MISSION02_TEXT01,活動期間，完成指定任務，即可獲得購物券。獎勵直接發放至背包
+TURING_MISSION03_TEXT01,活動期間，完成指定任務，即可收集學園裡散落的聖誕襪哦。獎勵直接發放至背包
+TURING_MISSION04_TEXT01,活動期間，完成指定任務，即可獲得豐厚獎勵。獎勵直接發放至背包
+ACTIVITY_STAR_PLAN_HELP,1.消耗娃娃幣即可在星空娃娃機中抓取一個娃娃。娃娃機裡的天蝎娃娃、射手娃娃和雙魚娃娃被抓取後將自動轉換為對應的票據，抓取到娃娃禮盒後將獲得1份隨機獎勵。|2.娃娃被抓取後不放回。在娃娃機裡抓取達到一定次數，還將投入額外的娃娃進娃娃機中。若娃娃機中的娃娃少於默認值，學長可以手動將娃娃數量補充至默認值哦（通過累計獎勵途徑獲得的額外娃娃不會被扣除）。|3.獲得的票據可以兌換為相應的獎勵道具。
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT01,娃娃獎勵
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT02,禮盒獎勵
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT03,獎勵預覽
+ACTIVITY_STAR_PLAN_BUTTON01,抓1次
+ACTIVITY_STAR_PLAN_BUTTON02,抓10次
+ACTIVITY_STAR_PLAN_AWARDS_BUTTON,累計獎勵
+ACTIVITY_STAR_PLAN_AWARDS_TEXT,累計抓取{1}次[c][7cff35]({1}/{2})[-][/c]
+ACTIVITY_STAR_PLAN_TIPS01,是否重置本輪獎池？\n（額外獲得的娃娃不會重置消失）

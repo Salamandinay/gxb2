@@ -2441,7 +2441,7 @@ GUILD_BOSS_TEXT03,주간 결산 보상：
 ACTIVITY_WORLD_BOSS_LEVEL_TIPS,Level {1}
 SUMMON_CONFIRM,{1}회 뽑기마다 {2}다이아가 사용됩니다. 계속 하시겠습니까?
 TURING_TASK_LIMIT,한도 도달
-TURING_TASK_TEXT01,"이벤트 기간 동안, 지정한 미션을 완성한 후 쇼핑 티켓을 획득하실 수 있습니다. (보상은 직접 가방으로 발송됩니다.)"
+TURING_TASK_TEXT01,이벤트 기간 동안 지정한 미션을 완성 후 호박 조각에 필요한 재료를 획득할 수 있습니다. 보상은 가방으로 발송됩니다.
 WELFARE_TEXT01,"이벤트 기간 중, 신입생 모집이 일정 사용 횟수에 도달하면 한정 팩을 구매할 수 있는 기회를 해제할 수 있습니다!"
 WELFARE_TEXT02,이벤트 기간 동안 신입생 모집 {1}회 달성 후 잠금 해제
 BEGINNER_QUEST_LOCKED,미활성화
@@ -7573,26 +7573,38 @@ ACTIVITY_NEW_GROWTH_PLAN_TEXT22,보상 미리보기(부분)
 DOG_MINI_GAME_EXIT_LABEL,나가기
 DOG_MINI_GAME_NEXT_LABEL,다음 스테이지
 DOG_MINI_GAME_RESET_LABEL,다시 시작
-ACTIVITY_PAY_DAY_TEXT08,3400%%
-ACTIVITY_STAR_ALTAR_GAMBLE_HELP,1.活動期間，每消耗1枚星空幣即可累計1點星願值。|2.星願值填滿一個星願瓶後即可領取一份星願回饋獎勵，並解鎖下一檔星願瓶。
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,星願瓶
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,消耗1枚星空幣即可累計1點星願值
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,前往消耗
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON02,回饋專享
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,快人一步體驗新陣營戰姬！
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT04,今日登入獎勵
-ACTIVITY_STAR_ALTAR_GAMBLE_TEXT05,今日不再提示
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON03,領取
-ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON04,前往參與
-ACTIVITY_STAR_ALTAR_LOGIN_TEXT01,簽到次數{1}/7
-ACTIVITY_STAR_ALTAR_LOGIN_TEXT02,第{1}天
-ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,簽到
-ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,補簽
-DOG_MINI_GAME_LEVEL_LABEL,關卡選擇
-DOG_MINI_GAME_STAGE_LABEL,第{1}關
-DOG_MINI_GAME_NAME_LABEL,狗頭名字
-DOG_MINI_GAME_BEFORE_LABEL,請完成前置關卡
-WARMUP_ARENA_TASK_INFO_2_1,不認識的神王
-DOG_MINI_GAME_SKIP_LABEL,跳过
+ACTIVITY_PAY_DAY_TEXT08,2700%%
+ACTIVITY_STAR_ALTAR_GAMBLE_HELP,1. 이벤트 기간 동안 별빛 코인 1개 소모할 때마다 기원 포인트 1pt 획득할 수 있습니다.|2. 기원 포인트로 별의 소원병 1개 채운 후 별의 답례 보상 1개 받을 수 있으며 다음 단계의 별의 소원병이 해제됩니다.
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT01,별의 소원병
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT02,별빛 코인 1개 소모할 때마다 기원 포인트 1pt 획득할 수 있습니다.
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON01,바로가기
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON02,별의 답례 팩
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT03,남들보다 더 빨리 천이 학부 소녀를 사용하기!
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT04,일일 로그인 보상
+ACTIVITY_STAR_ALTAR_GAMBLE_TEXT05,오늘 다시 보지 않기
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON03,수령
+ACTIVITY_STAR_ALTAR_GAMBLE_BUTTON04,바로 가기
+ACTIVITY_STAR_ALTAR_LOGIN_TEXT01,출첵 횟수: {1}/7
+ACTIVITY_STAR_ALTAR_LOGIN_TEXT02,{1}일차
+ACTIVITY_STAR_ALTAR_LOGIN_TEXT03,출석 체크
+ACTIVITY_STAR_ALTAR_LOGIN_TEXT04,추가 출석 체크
+DOG_MINI_GAME_LEVEL_LABEL,스테이지 선택
+DOG_MINI_GAME_STAGE_LABEL,스테이지 {1}
+DOG_MINI_GAME_NAME_LABEL,강아지를\n도와주세요
+DOG_MINI_GAME_BEFORE_LABEL,이전 스테이지를 먼저 클리어하세요!
+WARMUP_ARENA_TASK_INFO_2_1,낯선 바다의 왕
+DOG_MINI_GAME_SKIP_LABEL,스킵
 ACTIVITY_PAY_DAY_TEXT09,매일 한정 팩
-ACTIVITY_STAR_ALTAR_LOGIN_HELP,1.活動期間，每日登入即可領取初入星系的登入獎勵。|2.未及時領取的登入獎勵可以消耗鑽石*50進行補簽哦。
+ACTIVITY_STAR_ALTAR_LOGIN_HELP,1. 이벤트 기간 동안 매일 로그인 시 '첫 여정 출첵' 이벤트의 로그인 보상을 수령할 수 있습니다.|2. 다이아*50을 소모하여 놓치신 이전의 로그인 보상을 보충 수령 가능합니다.
+TURING_MISSION02_TEXT01,"이벤트 기간 동안, 지정된 미션을 완성한 후 쇼핑 티켓을 획득하실 수 있습니다. (보상은 직접 가방으로 발송됩니다.)"
+TURING_MISSION03_TEXT01,이벤트 기간 동안 지정된 미션을 완성 후 유몽 학원 구석에 숨겨진 크리스마스 양말을 수집할 수 있습니다. 보상은 가방으로 발송됩니다.
+TURING_MISSION04_TEXT01,이벤트 기간 동안 지정된 미션을 완성 시 푸짐한 보상을 획득할 수 있습니다. 보상은 가방으로 발송됩니다.
+ACTIVITY_STAR_PLAN_HELP,1.消耗娃娃幣即可在星空娃娃機中抓取一個娃娃。娃娃機裡的天蝎娃娃、射手娃娃和雙魚娃娃被抓取後將自動轉換為對應的票據，抓取到娃娃禮盒後將獲得1份隨機獎勵。|2.娃娃被抓取後不放回。在娃娃機裡抓取達到一定次數，還將投入額外的娃娃進娃娃機中。若娃娃機中的娃娃少於默認值，學長可以手動將娃娃數量補充至默認值哦（通過累計獎勵途徑獲得的額外娃娃不會被扣除）。|3.獲得的票據可以兌換為相應的獎勵道具。
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT01,인형 보상
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT02,팩 보상
+ACTIVITY_STAR_PLAN_PREVIEW_TEXT03,보상 미리 보기
+ACTIVITY_STAR_PLAN_BUTTON01,1회
+ACTIVITY_STAR_PLAN_BUTTON02,10회
+ACTIVITY_STAR_PLAN_AWARDS_BUTTON,총 획득 가능
+ACTIVITY_STAR_PLAN_AWARDS_TEXT,累計抓取{1}次[c][7cff35]({1}/{2})[-][/c]
+ACTIVITY_STAR_PLAN_TIPS01,해당 라운드의 보상풀을 리셋하시겠습니까?\n(추가로 획득하신 인형은 리셋되지 않음)

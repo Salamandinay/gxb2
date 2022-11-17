@@ -49,6 +49,9 @@ function WindowManager:ctor()
 	self.uiRoot_ = self.ngui_:GetComponent(typeof(UIRoot))
 	self.nguiCamera_ = XYDUtils.FindGameObject("NguiCamera"):GetComponent(typeof(Camera))
 	self.uiCamera_ = self.ngui_:ComponentByName("UICamera", typeof(Camera))
+
+	self:changeNguiCameraSize()
+
 	self.uiLayers_ = {}
 	self.windowMap_ = {}
 	self.windowMainQueue_ = {}
@@ -113,6 +116,9 @@ function WindowManager:initClick()
 		local touchPanelNode = ResCache.AddGameObject(self.ngui_, "Prefabs/Components/touch_node")
 		local panel = touchPanelNode:GetComponent(typeof(UIPanel))
 		panel.depth = xyd.UILayerDepth.MAX
+
+		self:changeNguiObjScale(touchPanelNode)
+
 		local effectNode = touchPanelNode:NodeByName("effectNode").gameObject
 		self.touchEffectParent = effectNode.transform
 		self.touchEffect = xyd.Spine.new(effectNode)
@@ -652,6 +658,9 @@ function WindowManager:getUILayer(layerType)
 	if tolua.isnull(layer) then
 		layer = NGUITools.AddChild(self.ngui_, "WindowLayer_" .. layerType)
 		layer.transform.localPosition = Vector3(0, 0, layerType * -500)
+
+		self:changeNguiObjScale(layer)
+
 		self.uiLayers_[layerType] = layer
 	end
 
@@ -1203,6 +1212,18 @@ function WindowManager:screenToWorldPoint(positon)
 	end
 
 	return self.nguiCamera_:ScreenToWorldPoint(positon)
+end
+
+function WindowManager:changeNguiCameraSize()
+	if xyd.models.selfPlayer:isDogVersionOpen() then
+		self.uiCamera_.orthographicSize = 40
+	end
+end
+
+function WindowManager:changeNguiObjScale(obj)
+	if xyd.models.selfPlayer:isDogVersionOpen() then
+		obj.gameObject:SetLocalScale(40, 40, 1)
+	end
 end
 
 return WindowManager

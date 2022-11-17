@@ -23,7 +23,7 @@ Les dégâts de cette compétence sont élevés contre les assassins ce qui fait
 2. Elle a une bonne compétence de contrôle : pétrifier les Filles de la ligne arrière et réduire également l\'Armure de la cible. 
 3. Elle a de la Résistance aux Dégâts élevée et est immunisée contre les pétrifications. 
 4. Il est recommandé de la faire évoluer si vous n\'avez pas d\'autre Fille de Contrôle.","Compétence Active : Attaque les Filles de la ligne arrière et a une certaine probabilité de les pétrifier, réduit également l'Armure de la cible.",Compétence de Renforcement : Augmente l'Attaque et la survie et est immunisée contre la pétrification.,"Compétence de Renforcement : L'Attaque Basique cible les ennemis de la ligne arrière et a une certaine probabilité de les pétrifier , elle inflige plus des dégâts aux cibles déjà pétrifiées.","Compétence de Renforcement : Lorsqu'elle est blessée, elle augmente sa Résistance aux Dégâts, augmentant ses chances de survie."
-851009,Giana,"1. Mage de la Maison Fantôme. \n2. Quand elle meurt, elle inflige des dégâts incroyables. \n3. Elle peut être d'une grande aide pour les Filles qui peuvent bénéficier de sa mort (comme Saint, Ésaü et Jacob).","Compétence Active : Attaque toutes les ennemies, elle peut également rendre les guerrières au silence.\nAprès avoir atteint 10 étoiles, augmente également l'attaque de manière continu, augmentant ses dégâts.","Compétence de Renforcement : Lorsqu'une alliée meurt, augmente les Critiques et l'Attaque, augmente incroyablement les dégâts.",Compétence de Renforcement : Augmente la survie et les dégâts.,Compétence Principale : Inflige des dégâts à tous les ennemis lorsqu'elle meurt.
+851009,Giana,"1. Mage de la Maison Fantôme. \n2. Quand elle meurt, elle inflige des dégâts incroyables. \n3. Elle peut être d'une grande aide pour les Filles qui peuvent bénéficier de sa mort (comme Saint, Ésaü et Jacob).","Compétence Active : Attaque toutes les ennemies, elle peut également rendre les guerrières au silence.\nAprès avoir atteint 10 étoiles, augmente également l'attaque de manière continu, augmentant ses dégâts.","Compétence de Renforcement : Lorsqu'une alliée est vaincue, augmente les Critiques et l'Attaque, augmente incroyablement les dégâts.",Compétence de Renforcement : Augmente la survie et les dégâts.,Compétence Principale : Inflige des dégâts à tous les ennemis lorsqu'elle meurt.
 851010,Ennmaya,"
 1. Assassin de la Maison Fantôme.
 2.L\'Attaque Basique cilbe 1 ennemi de la ligne arrière.
@@ -338,6 +338,19 @@ Compétence de Renforcement : La première fois que les PV de Prométhéa seront
 4. Elle réduit ses propres Critiques pour augmenter sa limite maximale de Dégâts Critiques.
 5. Elle marque les ennemis avec Flèche Stellaire qui retarde leurs effets de Soin. Lorsque la cible marquée avec Flèche Stellaire est attaquée, elle subira des dégâts fixes en fonction de ses PV Max.
 6. Elle enlève les Flèches Stellaires sur les ennemis et puis les marque avec Proie du Centaure qui leur fait subir des dégâts lorsqu\'ils lancent leurs attaques.","Compétence Active : Inflige des dégâts à tous les ennemis et lance plusieurs attaques aux ennemis marqués avec Cadrage Cosmique.\nSi Effie vainc un ennemi marqué avec Flèche Stellaire, elle infligera une seconde fois des dégâts à tous les ennemis.\nElle enlève les Flèches Stellaires des ennemis, pour ensuite les marquer avec Proie du Centaure.","Compétence de Renforcement : Son Attaque Basique inflige des dégâts supplémentaires aux ennemis marqués avec Cadrage Cosmique, et elle a des chances de marquer tous les ennemis avec Cadrage Cosmique.\nAu début de la bataille, elle réduit ses Critiques pour augmenter sa limite maximale de Dégâts Critiques.","Compétence de Renforcement : Au début de chaque tour, elle marque 1 ennemi aléatoire avec Flèche Stellaire et a de la chance de marquer 3 ennemis aléatoires avec Cadrage Cosmique.\nÀ la fin de chaque tour, elle inflige des dégâts aux ennemis marqués avec Flèche Stellaire et à 1 ennemi aléatoire.","Compétence de Renforcement : Lorsqu'une alliée subit des dégâts infligés par un ennemi marqué avec Cadrage Cosmique, l'alliée ayant l'Attaque la plus élevée infligera des dégâts à cet ennemi, tout en augmentant les dégâts infligés par Effie."
-856011,Neptuna,,,,,
-855013,Nadès,,,,,
-856012,Zeusia,,,,,
+856011,Neptuna,"
+1.辰星學院中的戰士型學妹；
+2.主動技能降低敵方護甲，造成多段傷害，並提升我方全體戰姬格擋。
+3.普通攻擊恢復生命，提高我方前排戰姬格擋。
+4.戰鬥開始時，對敵方所有戰姬施加嘲諷；我方戰姬格擋時，積累一層海洋珍貝，並有機率對隨機2名敵方戰姬施加結晶。",主動技能降低隨機1名敵方戰姬的護甲，並造成3段傷害，提高我方全體戰姬的護甲。,強化技能，增加生命、攻擊力、格擋、免控率和暴擊抵抗。,強化技能，普通攻擊恢復自身已損失的生命，降低所以敵人的精准，並提高我方前排戰姬的格擋。,強化技能，我方戰姬格擋時，積累一層海洋珍貝，並有機率對隨機2名敵方戰姬施加結晶；戰鬥開始時，對所有敵方戰姬施加嘲諷。
+855013,Nadès,"
+1.修羅學院中的輸出型學妹；
+2.主動技能對生命最低的2名敵人造成傷害，並對敵方所有戰姬施加亡故和判決。
+3.自身死亡或者隊友死亡時，都會產生改變局勢的效果。
+4.回合結束時，根據敵方戰姬生命百分比，造成不同的傷害效果。",主動技能對生命最低的2名敵人造成傷害，追加目標生命上限的傷害，並對敵方所有戰姬施加亡故和判決。,強化技能，增加生命、攻擊、暴擊傷害、技能傷害率和速度。,強化技能，普通攻擊變為對能量最高的敵人造成無視護甲的攻擊傷害，施加判決，隨後增加自身能量。自身死亡時，對敵方所有戰姬造成目標生命上限的傷害；隊友死亡時，提升我方全體戰姬速度，回復生命和等量的屏障。,強化技能，回合結束時，根據敵方生命百分比，對全體敵人造成一次傷害。
+856012,Zeusia,"
+1.辰星學院中的輸出型學妹；
+2.主動技能對敵方所有戰姬造成傷害，降低攻擊力，提高目標受到的燃燒傷害。
+3.釋放主動技能時，若敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]效果；若敵方戰姬未並持有[c][e28002]雷脈[-][/c]，則獲得[c][e28002]神性[-][/c]。
+4.[c][e28002]神性[-][/c]達到12層時，會對敵方全體戰姬施加[c][e28002]雷脈[-][/c]。",主動技能對敵方所有戰姬造成傷害，降低攻擊力，提高目標受到的燃燒傷害；釋放主動技能時，若敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]效果；若敵方戰姬未並持有[c][e28002]雷脈[-][/c]，則獲得[c][e28002]神性[-][/c]。,強化技能，增加生命、攻擊力、神聖傷害、減傷率和速度。,強化技能，普通攻擊對隨機3名敵方戰姬造成傷害，並提高目標受到的燃燒傷害，降低目標精准和攻擊，自身獲得[c][e28002]神性[-][/c]。,強化技能，我方戰姬釋放主動技能時，獲得[c][e28002]神性[-][/c]，[c][e28002]神性[-][/c]達到12層時，會對敵方全體戰姬施加[c][e28002]雷脈[-][/c]。
+855014,阿波羅,,,,,

@@ -404,8 +404,8 @@ function ActivityWindow:setNormalDisplay()
 	for i = 1, #sortedIDs do
 		local id = sortedIDs[i]
 
-		if id == 298 then
-			dump("111111111111")
+		if id == 250 then
+			-- Nothing
 		end
 
 		local activityData = activityList[id]
@@ -452,6 +452,8 @@ function ActivityWindow:setNormalDisplay()
 	if #self.idsList <= 4 then
 		itemType = "big"
 	end
+
+	dump(self.idsList, "self.idsList")
 
 	for i = 1, #self.idsList do
 		local id = self.idsList[i]
@@ -1827,8 +1829,20 @@ ActivityWindow.ContentClass = {
 	[xyd.ActivityID.ACTIVITY_BLIND_BOX_MISSION] = function ()
 		return require("app.windows.activity.ActivityBlindBoxMission")
 	end,
+	[xyd.ActivityID.ACTIVITY_START_ALTAR_LOGIN] = function ()
+		return require("app.windows.activity.ActivityAltarLogin")
+	end,
 	[xyd.ActivityID.ACTIVITY_DAILY_RECHARGE] = function ()
 		return require("app.windows.activity.ActivityDailyRecharge")
+	end,
+	[xyd.ActivityID.ACTIVITY_START_ALTAR_CHARGE] = function ()
+		return require("app.windows.activity.ActivityAltarCharge")
+	end,
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION2] = function ()
+		return require("app.windows.activity.ActivityTuringMission2")
+	end,
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION3] = function ()
+		return require("app.windows.activity.ActivityTuringMission3")
 	end
 }
 

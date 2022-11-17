@@ -10,6 +10,7 @@ function SchoolGiftbagExchangeWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
 
 	self.collection = {}
+	self.costItem = ActivitySchoolGiftExchangeTable:getCost(1)[1]
 end
 
 function SchoolGiftbagExchangeWindow:getUIComponent()
@@ -23,11 +24,14 @@ function SchoolGiftbagExchangeWindow:getUIComponent()
 	self.wrapContent = FixedMultiWrapContent.new(self.scroller, wrapContent, self.item, SchoolGiftbagExchangeWindowItem, self)
 	self.closeBtn = groupAction:NodeByName("closeBtn").gameObject
 	self.numLabel = groupAction:ComponentByName("numLabel", typeof(UILabel))
+	self.iconImg = groupAction:ComponentByName("iconImg", typeof(UISprite))
 end
 
 function SchoolGiftbagExchangeWindow:initUIComponent()
 	self.titleLabel.text = __("SCHOOL_GIFTBAG_EXCHANGE_TEXT01")
-	self.numLabel.text = Backpack:getItemNumByID(xyd.ItemID.AUTUMN_COIN)
+	self.numLabel.text = Backpack:getItemNumByID(self.costItem)
+
+	xyd.setUISpriteAsync(self.iconImg, nil, "icon_" .. self.costItem)
 end
 
 function SchoolGiftbagExchangeWindow:register()
@@ -50,7 +54,7 @@ function SchoolGiftbagExchangeWindow:register()
 		end
 	end)
 	self.eventProxy_:addEventListener(xyd.event.ITEM_CHANGE, function ()
-		self.numLabel.text = tostring(Backpack:getItemNumByID(xyd.ItemID.AUTUMN_COIN))
+		self.numLabel.text = tostring(Backpack:getItemNumByID(self.costItem))
 	end)
 end
 
@@ -229,7 +233,11 @@ function SchoolGiftbagExchangeWindowItem:updateButton()
 	local status = self.status_
 	local acquireBtn_label = self.acquireBtn:ComponentByName("button_label", typeof(UILabel))
 	local lockImg = self.acquireBtn:ComponentByName("lock", typeof(UISprite))
+	local itemImg = self.acquireBtn:ComponentByName("icon", typeof(UISprite))
 	local cost = ActivitySchoolGiftExchangeTable:getCost(self.id_)
+
+	xyd.setUISpriteAsync(itemImg, nil, "icon_" .. cost[1])
+
 	self.acquireBtn:ComponentByName("numLabel", typeof(UILabel)).text = tostring(cost[2])
 	acquireBtn_label.text = __("EXCHANGE")
 
