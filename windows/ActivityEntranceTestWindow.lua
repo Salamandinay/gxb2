@@ -139,6 +139,16 @@ function ActivityEntranceTestWindow:playOpenAnimation(callback)
 	self:resizePosY(self.pveDownGroup.gameObject, -383, -457)
 	self.rightBg:Y(-178 + 11 * self.scale_num_contrary)
 
+	local parters = xyd.tables.miscTable:split2num("activity_warmup_arena_partners", "value", "|")
+
+	if #parters >= 1 then
+		self.leftBg:SetActive(true)
+	end
+
+	if #parters >= 2 then
+		self.rightBg:SetActive(true)
+	end
+
 	self.logoNode_widget.alpha = 0.01
 
 	self:waitForTime(0.1, handler(self, function ()
@@ -246,7 +256,7 @@ function ActivityEntranceTestWindow:layout()
 	})
 	self.activityData:getRedMarkState()
 
-	local partnerID = xyd.tables.miscTable:split2Cost("activity_gacha_partners", "value", "|")
+	local partnerID = xyd.tables.miscTable:split2Cost("activity_warmup_arena_partners", "value", "|")
 
 	for i = 1, 2 do
 		if partnerID[i] then

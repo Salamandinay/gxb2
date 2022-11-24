@@ -863,6 +863,7 @@ function Slot:onRegister()
 	self:registerEvent(xyd.event.SOUL_EQUIP_SAVE2, handler(self, self.onReqSaveExBuff2))
 	self:registerEvent(xyd.event.SOUL_EQUIP_RESET_AWAKE, handler(self, self.onReqSoulEquipResetAwake2))
 	self:registerEvent(xyd.event.GET_NEW_SOUL_EQUIP_PUSH_BACK, self.oGetNewSoulEquipPushBack, self)
+	self:registerEvent(xyd.event.SOUL_EQUIP_DECOMPOSE, handler(self, self.onReqSellSoulEquip))
 end
 
 function Slot:onUpdateSummonPartners(event)
@@ -3327,6 +3328,35 @@ function Slot:onSetSoulEquipCombination(event)
 
 	if self.setSoulEquipCombinationCallBack then
 		self.setSoulEquipCombinationCallBack()
+	end
+end
+
+function Slot:reqSellSoulEquip(equipIDs, callback)
+	self.reqSellSoulEquipCallBack = callback
+	local msg = messages_pb:soul_equip_decompose_req()
+
+	for key, equipID in pairs(equipIDs) do
+		table.insert(msg.ids, equipID)
+	end
+
+	xyd.Backend.get():request(xyd.mid.SOUL_EQUIP_DECOMPOSE, msg)
+end
+
+function Slot:onReqSellSoulEquip(event)
+	local data = xyd.decodeProtoBuf(event.data)
+	local ids = data.ids or {}
+	local items = data.items
+
+	for i = 1, #ids do
+		local equip = self:getSoulEquip(ids[i])
+
+		if equip then
+			self:delSoulEquip(ids[i])
+		end
+	end
+
+	if self.reqSellSoulEquipCallBack then
+		self.reqSellSoulEquipCallBack(items)
 	end
 end
 

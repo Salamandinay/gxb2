@@ -1843,6 +1843,18 @@ ActivityWindow.ContentClass = {
 	end,
 	[xyd.ActivityID.ACTIVITY_TURING_MISSION3] = function ()
 		return require("app.windows.activity.ActivityTuringMission3")
+	end,
+	[xyd.ActivityID.ACTIVITY_STAR_PLAN] = function ()
+		return require("app.windows.activity.ActivityStarPlan")
+	end,
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION4] = function ()
+		return require("app.windows.activity.ActivityTuringMission4")
+	end,
+	[xyd.ActivityID.ACTIVITY_GIFTBAG_THREE_FIVE_ZERO] = function ()
+		return require("app.windows.activity.ActivityGiftbagThreeFiveZero")
+	end,
+	[xyd.ActivityID.ACTIVITY_GIFTBAG_THREE_FIVE_ONE] = function ()
+		return require("app.windows.activity.ActivityGiftbagThreeFiveZero")
 	end
 }
 

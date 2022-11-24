@@ -84,11 +84,39 @@ end
 function LoginWindow:initWindow()
 	LoginWindow.super.initWindow(self)
 	self:getUIComponent()
-	dump("3333")
-	self:initEffect()
-	xyd.setUITextureByNameAsync(self.backImg, "login_scene", false, function ()
-		self:onBgLoad()
-	end, true)
+
+	local tableID = xyd.tables.miscTable:getNumber("loading_renew", "value")
+	local height = self:getScreenHeight()
+	local srcImgName = tostring(xyd.tables.customBackgroundTable:getEffectBackground(tableID))
+	local srcSpineName = xyd.tables.customBackgroundTable:getEffect(tableID)
+	local res = xyd.getEffectFilesByNames({
+		srcSpineName
+	})
+	local path1 = xyd.getSpritePath(srcImgName)
+
+	table.insert(res, path1)
+
+	self.allHasRes = xyd.isAllPathLoad(res)
+
+	if self.allHasRes then
+		xyd.setUITextureByNameAsync(self.backImg, srcImgName, true, function ()
+			local height = self:getScreenHeight()
+			local scale = height / self.backImg.height
+
+			self.backImg:SetLocalScale(scale, scale, 1)
+			self:onBgLoad()
+			self:initEffect()
+		end, true)
+	else
+		ResCache.DownloadAssets("login_window_effect_and_sprite", res, function (success)
+		end, function (progress)
+		end, 1)
+		self:initEffect()
+		xyd.setUITextureByNameAsync(self.backImg, "login_scene", false, function ()
+			self:onBgLoad()
+		end, true)
+	end
+
 	self:layout()
 	self:registerEvent()
 
@@ -299,7 +327,6 @@ function LoginWindow:changeServerIdShow()
 end
 
 function LoginWindow:onBgLoad()
-	dump("2222")
 	UIManager.Close("ui_loading")
 
 	self.isBgLoad_ = true
@@ -334,6 +361,32 @@ function LoginWindow:initEffect()
 	end
 
 	local sp2 = xyd.Spine.new(self.effectGroup_)
+
+	if self.allHasRes then
+		local tableID = xyd.tables.miscTable:getNumber("loading_renew", "value")
+		local spineName = xyd.tables.customBackgroundTable:getEffect(tableID)
+		local animation = xyd.tables.customBackgroundTable:getAnimation(tableID)
+
+		sp2:setInfo(spineName, function ()
+			local height = self:getScreenHeight()
+			local effect_scale = height / self.backImg.height * 0.656 * 1.0517241379310345
+
+			dump(height)
+			dump(self.backImg.height)
+			sp2:SetLocalScale(effect_scale, effect_scale, 1)
+
+			local effect_offset = xyd.tables.customBackgroundTable:getOffset(tableID)
+			local effect_offect_scale = height / self.backImg.height / 1.25
+
+			if effect_offset then
+				self.effectGroup_.transform:SetLocalPosition(effect_offset[1] * effect_offect_scale, -effect_offset[2] * effect_offect_scale, 0)
+			end
+
+			sp2:play(animation, 0, 1)
+		end)
+
+		return
+	end
 
 	sp2:setInfo("loading1", function ()
 		sp2:SetLocalPosition(0, -775, 0)
@@ -425,6 +478,20 @@ function LoginWindow:initChoiceOtherServer()
 	UIEventListener.Get(self.serverChangeBtn).onClick = function ()
 		xyd.WindowManager.get():openWindow("service_window", {})
 	end
+end
+
+function LoginWindow:getScreenHeight()
+	local width, height = xyd.getScreenSize()
+
+	if height > 1458 then
+		height = 1458
+	end
+
+	if UnityEngine.Screen.height / UnityEngine.Screen.width > xyd.Global.getRealHeight() / xyd.Global.getRealWidth() then
+		return xyd.Global.getMaxBgHeight()
+	end
+
+	return height
 end
 
 return LoginWindow

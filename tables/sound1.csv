@@ -201,6 +201,12 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 1199,battle_sound_web/sound_ansuna_skill,3,1,1,0,1,,75,1,,1
 1200,battle_sound_web/sound_aifei_attack,2,1,1,0,1,,75,1,,1
 1201,battle_sound_web/sound_aifei_skill,4,1,1,0,1,,75,1,,1
+1202,battle_sound_web/sound_bosaidong_attack,2,1,1,0,1,,75,1,,1
+1203,battle_sound_web/sound_bosaidong_skill,3,1,1,0,1,,75,1,,1
+1204,battle_sound_web/sound_hadisi_attack,2,1,1,0,1,,75,1,,1
+1205,battle_sound_web/sound_hadisi_skill,3,1,1,0,1,,75,1,,1
+1206,battle_sound_web/sound_zhousi_attack,2,1,1,0,1,,75,1,,1
+1207,battle_sound_web/sound_zhousi_skill,4,1,1,0,1,,75,1,,1
 2001,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
 2002,ui_sound/battle_bg_music_1,21,0,,0,2,-1,30,0,,
 2003,ui_sound_web/campaign_bg_music,30,0,,0,2,-1,100,0,,
@@ -4994,9 +5000,3 @@ id,res,length,loops,is_play_self,delay,type,desc,volume,destroy,pause_bg,is_ogg
 530132001,partner_sound/53013_web/530132001,9,1,0,0,1,0,70,1,0.2,
 530132101,partner_sound/53013_web/530132101,4,1,0,0,1,0,70,1,0.2,
 530132201,partner_sound/53013_web/530132201,7,1,0,0,1,0,70,1,0.2,
-530132301,partner_sound/53013_web/530132301,6,1,0,0,1,0,70,1,0.2,
-530132401,partner_sound/53013_web/530132401,8,1,0,0,1,0,70,1,0.2,
-530132501,partner_sound/53013_web/530132501,10,1,0,0,1,0,70,1,0.2,
-530132601,partner_sound/53013_web/530132601,6,1,0,0,1,0,70,1,0.2,
-530132801,partner_sound/53013_web/530132801,8,1,0,0,1,0,70,1,0.2,
-530140201,partner_sound/53014_web/530140201,7,1,0,0,1,0,70,1,0.2,

@@ -264,7 +264,6 @@ function DeviceNotify:setRedMark(id, status)
 end
 
 function DeviceNotify:onAppPause(pause, fromLogin)
-	print("进来了============")
 	xyd.SdkManager.get():setServerNotification(pause)
 
 	if pause then

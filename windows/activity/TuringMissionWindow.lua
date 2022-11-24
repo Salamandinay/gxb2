@@ -173,7 +173,11 @@ end
 
 function TuringMissionWindowItem:registEvent()
 	UIEventListener.Get(self.touchField).onClick = handler(self, function ()
-		xyd.goWay(ActivityTuringMissionTable:getGetway(self.id))
+		local wayID = ActivityTuringMissionTable:getGetway(self.id)
+
+		if wayID and wayID > 0 then
+			xyd.goWay(wayID)
+		end
 	end)
 
 	xyd.setDragScrollView(self.touchField, self.scrollerView)

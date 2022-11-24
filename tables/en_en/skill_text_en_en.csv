@@ -18604,473 +18604,1085 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 65502200,Hadea,Basic Attack,
 75501200,Hadea,Basic Attack,
 5501301,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成600%攻擊傷害，追加目標生命上限15%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低30%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低10%、獲得屏障量降低10%。"
+Hadea deals (600% of Attack) damage to 2 enemies with the lowest HP and deals (15% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 30%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 10% and amount of BP received reduced by 10%."
 65502201,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成800%攻擊傷害，追加目標生命上限20%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低40%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低15%、獲得屏障量降低15%。"
+Hadea deals (800% of Attack) damage to 2 enemies with the lowest HP and deals (20% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 40%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 15% and amount of BP received reduced by 15%."
 75501201,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1200%攻擊傷害，追加目標生命上限25%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。"
-5501302,Hadea,Lord of the Underworld,萬物皆有一死。生命增加10%，攻擊增加10%，暴擊傷害增加20%，技能傷害率增加20%，速度增加40。
-65502202,Hadea,Lord of the Underworld,萬物皆有一死。生命增加20%，攻擊增加20%，暴擊傷害增加30%，技能傷害率增加30%，速度增加60。
-65502212,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加50%，速度增加80。
-75501202,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加50%，速度增加80。
+Hadea deals (1200% of Attack) damage to 2 enemies with the lowest HP and deals (25% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 25% and amount of BP received reduced by 25%."
+5501302,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 10%, Attack by 10%, Crit Damage by 20%, Skill Damage by 20%, and Speed by 40."
+65502202,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 20%, Attack by 20%, Crit Damage by 30%, Skill Damage by 30%, and Speed by 60."
+65502212,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 50%, and Speed by 80."
+75501202,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 50%, and Speed by 80."
 5501303,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成150%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身30點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限25%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬50點速度3回合，可疊加；並回復各自生命上限10%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低30%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低10%、獲得屏障量降低10%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (150% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 30 Energy.
+When Hadea is defeated, she will deal (25% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 50 for 3 rounds (this effect can stack), heal them for (10% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 30%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 10% and amount of BP received reduced by 10%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 65502203,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成300%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身50點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限30%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬60點速度3回合，可疊加；並回復各自生命上限20%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低40%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低15%、獲得屏障量降低15%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (300% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 50 Energy.
+When Hadea is defeated, she will deal (30% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 60 for 3 rounds (this effect can stack), heal them for (20% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 40%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 15% and amount of BP received reduced by 15%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 65502213,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成800%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限40%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (800% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (40% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 25% and amount of BP received reduced by 25%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 75501203,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成800%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限40%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低25%、獲得屏障量降低25%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-5501304,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限10%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成10%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
-65502204,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限15%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成15%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
-65502214,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限20%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成20%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
-75501204,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限20%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成20%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
+Hadea’s Basic Attack deals (800% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (40% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 25% and amount of BP received reduced by 25%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
+5501304,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (10% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (10% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+65502204,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (15% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (15% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+65502214,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (20% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (20% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+75501204,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (20% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (20% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
 755012011,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1240%攻擊傷害，追加目標生命上限26%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低26%、獲得屏障量降低26%。"
+Hadea deals (1240% of Attack) damage to 2 enemies with the lowest HP and deals (26% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 26% and amount of BP received reduced by 26%."
 755012012,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1280%攻擊傷害，追加目標生命上限27%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。"
+Hadea deals (1280% of Attack) damage to 2 enemies with the lowest HP and deals (27% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 27% and amount of BP received reduced by 27%."
 755012013,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1320%攻擊傷害，追加目標生命上限28%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低28%、獲得屏障量降低28%。"
+Hadea deals (1320% of Attack) damage to 2 enemies with the lowest HP and deals (28% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 28% and amount of BP received reduced by 28%."
 755012014,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1360%攻擊傷害，追加目標生命上限29%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低29%、獲得屏障量降低29%。"
+Hadea deals (1360% of Attack) damage to 2 enemies with the lowest HP and deals (29% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 29% and amount of BP received reduced by 29%."
 755012015,Hadea,Endless Shift,"
-無論白天還是夜晚，對我來說只有無盡的加班。對生命最低的2名敵方戰姬造成1400%攻擊傷害，追加目標生命上限30%的傷害（不超過自身攻擊力的3000%）；並對敵方全體施加[c][e28002]亡故[-][/c]，持續3回合；對敵方全體戰姬施加[c][e28002]判決[-][/c]，持續3回合。
+Be it night or day, my workload never lessens.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低30%、獲得屏障量降低30%。"
-755012021,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加52%，速度增加80。
-755012022,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加54%，速度增加80。
-755012023,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加56%，速度增加80。
-755012024,Hadea,Lord of the Underworld,萬物皆有一死。生命增加30%，攻擊增加40%，暴擊傷害增加50%，技能傷害率增加58%，速度增加80。
-755012025,Hadea,Lord of the Underworld,萬物皆有一死。生命增加35%，攻擊增加45%，暴擊傷害增加50%，技能傷害率增加60%，速度增加80。
+Hadea deals (1400% of Attack) damage to 2 enemies with the lowest HP and deals (30% of the target’s Maximum HP) extra damage to them (damage dealt will not surpass 3000% of Hadea’s Attack). She will also cast [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds and [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to all enemies.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 30% and amount of BP received reduced by 30%."
+755012021,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 52%, and Speed by 80."
+755012022,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 54%, and Speed by 80."
+755012023,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 56%, and Speed by 80."
+755012024,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 30%, Attack by 40%, Crit Damage by 50%, Skill Damage by 58%, and Speed by 80."
+755012025,Hadea,Lord of the Underworld,"Death is inevitable.\n\nIncreases Hadea's HP by 35%, Attack by 45%, Crit Damage by 50%, Skill Damage by 60%, and Speed by 80."
 755012031,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成820%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限42%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低26%、獲得屏障量降低26%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (820% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (42% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 26% and amount of BP received reduced by 26%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 755012032,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成840%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限44%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (840% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (44% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 27% and amount of BP received reduced by 27%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 755012033,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成860%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限46%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低27%、獲得屏障量降低27%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (860% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (46% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 27% and amount of BP received reduced by 27%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 755012034,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成880%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限48%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低29%、獲得屏障量降低29%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+Hadea’s Basic Attack deals (880% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (48% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 29% and amount of BP received reduced by 29%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
 755012035,Hadea,Underworld Guardian,"
-看守著地獄之門的骨鳥本來應該是飛翔在天空中。普通攻擊變為對能量最高的1名敵方戰姬造成900%無視護甲的攻擊傷害，施加[c][e28002]亡故[-][/c]，持續3回合，隨後增加自身70點能量。自身死亡時，對敵方全體戰姬造成其自身生命上限50%的傷害（不超過自身攻擊力的4000%）,並施加[c][e28002]判決[-][/c]，持續3回合；隊友死亡時，提升我方全體戰姬70點速度3回合，可疊加；並回復各自生命上限25%的生命值並獲得等量的屏障。
+Instead of soaring in the skies, this bird now guards the Gates of the Underworld.
 
-[c][e28002]亡故[-][/c]
-技能特效，不可疊加。能量獲取效率降低50%。
-[c][e28002]判決[-][/c]
-技能特效，最多可疊加3層。治療量降低30%、獲得屏障量降低30%。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵銷受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
-755012041,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限21%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成21%已損失生命的傷害（不超過哈迪斯自身攻擊力的3000%）。
-755012042,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限22%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成22%已損失生命的傷害（不超過哈迪斯自身攻擊力的3001%）。
-755012043,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限23%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成23%已損失生命的傷害（不超過哈迪斯自身攻擊力的3002%）。
-755012044,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限24%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成24%已損失生命的傷害（不超過哈迪斯自身攻擊力的3003%）。
-755012045,Hadea,Life's End,對不起打擾一下，我要開始我的工作了。回合結束時，對敵方生命大於等於50%的目標造成其生命上限25%的傷害（不超過哈迪斯自身攻擊力的3000%）；對敵方生命低於50%的目標造成25%已損失生命的傷害（不超過哈迪斯自身攻擊力的3004%）。
+Hadea’s Basic Attack deals (900% of Attack) damage that ignore Armor to 1 enemy with the most Energy and casts [c][e28002]Irreversible Death[-][/c] that lasts for 3 rounds to it. She will also gain 70 Energy.
+When Hadea is defeated, she will deal (50% of the target’s Maximum HP) damage to all enemies (damage dealt will not surpass 4000% of Hadea’s Attack) and cast [c][e28002]Doom\'s Arrival[-][/c] that lasts for 3 rounds to them.
+When an ally is defeated, Hadea will increase the Speed of all allies by 70 for 3 rounds (this effect can stack), heal them for (25% of the target’s Maximum HP) HP, and grant them a [c][e28002]Magick Barrier[-][/c] with the same amount of BP as the amount of HP healed.
+
+[c][e28002]Irreversible Death[-][/c]:
+A Skill Effect that cannot stack.
+The owner of this Effect will have their Energy gain reduced by 50%.
+
+[c][e28002]Doom\'s Arrival[-][/c]:
+A Skill Effect that can stack up to 3 stacks.
+The owner of this Effect will have their Heal Received reduced by 30% and amount of BP received reduced by 30%.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of the owner\'s maximum HP) BP."
+755012041,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (21% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (21% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+755012042,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (22% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (22% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+755012043,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (23% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (23% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+755012044,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (24% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (24% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
+755012045,Hadea,Life's End,"You are now officially a citizen of the Underworld.\n\nAt the end of the round, Hadea will deal (25% of target’s Maximum HP) damage to enemies with 50% or more HP left (damage dealt will not surpass 3000% of Hadea’s Attack), and (25% of target’s lost HP) damage to enemies with less than 50% HP left (damage dealt will not surpass 3000% of Hadea’s Attack)."
 5601200,Zeusia,Basic Attack,Basic Attack
 65602200,Zeusia,Basic Attack,Basic Attack
 75601200,Zeusia,Basic Attack,Basic Attack
 5601201,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成120%攻擊傷害，造成120%[c][01a310]燃燒[-][/c]傷害2回合；降低目標10%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升5%持續4回合，可疊加。回復自身生命上限5%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成5%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標15%攻擊2回合，並有15%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (120% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (120% of Attack) damage each round. She reduces the targets’ Attack by 10% for 2 rounds and causes the targets to take 5% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (5% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (5% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 15% for 2 rounds, and has a 15% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 2%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 65602201,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成240%攻擊傷害，造成240%[c][01a310]燃燒[-][/c]傷害2回合；降低目標15%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升10%持續4回合，可疊加。回復自身生命上限10%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成10%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標20%攻擊2回合，並有15%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (240% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (240% of Attack) damage each round. She reduces the targets’ Attack by 15% for 2 rounds and causes the targets to take 10% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (10% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (10% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 20% for 2 rounds, and has a 20% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 3%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 75601201,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成400%[c][01a310]燃燒[-][/c]傷害2回合；降低目標20%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
-5601202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加10%，攻擊增加10%，神聖傷害增加10%，減傷率增加10%，速度增加40。
-65602202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加20%，攻擊增加15%，神聖傷害增加20%，減傷率增加20%，速度增加60。
-65602212,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加30%，減傷率增加30%，速度增加80。
-75601202,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加30%，減傷率增加30%，速度增加80。
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (400% of Attack) damage each round. She reduces the targets’ Attack by 20% for 2 rounds and causes the targets to take 20% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
+5601202,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 10%, Attack by 10%, Holy Damage by 10%, Damage Reduction by 10%, and Speed by 40."
+65602202,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 20%, Attack by 15%, Holy Damage by 20%, Damage Reduction by 20%, and Speed by 60."
+65602212,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 30%, Damage Reduction by 30%, and Speed by 80."
+75601202,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 30%, Damage Reduction by 30%, and Speed by 80."
 5601203,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成120%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升5%持續4回合，並降低目標10%精準3回合，10%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。"
+Zeusia’s Basic Attack deals (120% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 5% for 4 rounds, and reduces their Precision by 10% for 3 rounds and their Attack by 10% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 2%."
 65602203,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成240%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升10%持續4回合，並降低目標15%精準3回合，15%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。"
+Zeusia’s Basic Attack deals (240% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 10% for 4 rounds, and reduces their Precision by 15% for 3 rounds and their Attack by 15% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 3%."
 65602213,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成400%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標20%精準3回合，20%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (400% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 20% for 3 rounds and their Attack by 20% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 75601203,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成400%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標20%精準3回合，20%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (400% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 20% for 3 rounds and their Attack by 20% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 5601204,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身24%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身2%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成5%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標15%攻擊2回合，並有15%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 24% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 2%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (5% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 15% for 2 rounds, and has a 15% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 65602204,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身36%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身3%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成10%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標20%攻擊2回合，並有20%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 36% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 3%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (10% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 20% for 2 rounds, and has a 20% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 65602214,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身60%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 60% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 75601204,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身60%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 60% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012011,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成420%[c][01a310]燃燒[-][/c]傷害2回合；降低目標22%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升22%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (420% of Attack) damage each round. She reduces the targets’ Attack by 22% for 2 rounds and causes the targets to take 22% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012012,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成440%[c][01a310]燃燒[-][/c]傷害2回合；降低目標24%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升24%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (440% of Attack) damage each round. She reduces the targets’ Attack by 24% for 2 rounds and causes the targets to take 24% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012013,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成460%[c][01a310]燃燒[-][/c]傷害2回合；降低目標26%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升26%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (460% of Attack) damage each round. She reduces the targets’ Attack by 26% for 2 rounds and causes the targets to take 26% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012014,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成480%[c][01a310]燃燒[-][/c]傷害2回合；降低目標28%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升28%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得5層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (480% of Attack) damage each round. She reduces the targets’ Attack by 28% for 2 rounds and causes the targets to take 28% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 5 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012015,Zeusia,Ruler's Might,"
-王者歸來，雷霆齊鳴。對所有敵方戰姬造成400%攻擊傷害，造成500%[c][01a310]燃燒[-][/c]傷害2回合；降低目標30%攻擊2回合，並使目標受到的[c][01a310]燃燒[-][/c]傷害提升30%持續4回合，可疊加。回復自身生命上限15%的生命值並獲得等量的屏障，持續2回合。如果釋放技能時敵方戰姬持有[c][e28002]雷脈[-][/c]，則立即觸發一次[c][e28002]雷脈[-][/c]的效果；如果釋放技能時敵方未持有[c][e28002]雷脈[-][/c]，則自身獲得6層[c][e28002]神性[-][/c]。
+The roaring thunder heralds the Ruler\'s arrival.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有35%概率施加灼目2回合。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
-756012021,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加32%，減傷率增加30%，速度增加80。
-756012022,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加34%，減傷率增加30%，速度增加80。
-756012023,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加36%，減傷率增加30%，速度增加80。
-756012024,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加30%，攻擊增加30%，神聖傷害增加38%，減傷率增加30%，速度增加80。
-756012025,Zeusia,Majestic Crown,王冠之重，已承千年。生命增加35%，攻擊增加35%，神聖傷害增加40%，減傷率增加30%，速度增加80。
+Zeusia deals (400% of Attack) damage to all enemies and [c][01a310]Burns[-][/c] them for 2 rounds, dealing (500% of Attack) damage each round. She reduces the targets’ Attack by 30% for 2 rounds and causes the targets to take 30% more damage from [c][01a310]Burn[-][/c] effects for 4 rounds (this effect can stack).
+She will also recover (15% of Zeusia’s Maximum HP) HP for 2 rounds and gain a [c][e28002]Magick Barrier[-][/c] in each round. The BP of said [c][e28002]Magick Barrier[-][/c] is equivalent to the amount of HP recovered.
+If the target is afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, its effects will be triggered once immediately.
+If the target is not afflicted with [c][e28002]Thunderbolt[-][/c] when Zeusia uses her Active Skill, she will gain 6 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
+756012021,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 32%, Damage Reduction by 30%, and Speed by 80."
+756012022,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 34%, Damage Reduction by 30%, and Speed by 80."
+756012023,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 36%, Damage Reduction by 30%, and Speed by 80."
+756012024,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 30%, Attack by 30%, Holy Damage by 38%, Damage Reduction by 30%, and Speed by 80."
+756012025,Zeusia,Majestic Crown,"This crown symbolizes my authority and power.\n\nIncreases Zeusia's HP by 35%, Attack by 35%, Holy Damage by 40%, Damage Reduction by 30%, and Speed by 80."
 756012031,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成408%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標22%精準3回合，22%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (408% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 22% for 3 rounds and their Attack by 22% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 756012032,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成416%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標24%精準3回合，24%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (416% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 24% for 3 rounds and their Attack by 24% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 756012033,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成424%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標26%精準3回合，26%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (424% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 26% for 3 rounds and their Attack by 26% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 756012034,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成432%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標28%精準3回合，28%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (432% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 28% for 3 rounds and their Attack by 28% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 756012035,Zeusia,Lord of the Sky,"
-雷霆之威，力壓萬鈞。普通攻擊變為對隨機3名敵方戰姬造成440%的攻擊傷害，使目標受到的[c][01a310]燃燒[-][/c]傷害提升20%持續4回合，並降低目標30%精準3回合，30%攻擊力3回合，可疊加；宙斯自身獲得2層[c][e28002]神性[-][/c]。
+As the Lord of the Sky, I have full control over lightning and thunder.
 
-[c][01a310]燃燒[-][/c]
-持續傷害，燃燒在施加時會造成一次傷害，在燃燒生效期間，每回合開始時造成傷害。
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。"
+Zeusia’s Basic Attack deals (440% of Attack) damage to 3 random enemies, increases the damage they take from [c][01a310]Burn[-][/c] effects by 20% for 4 rounds, and reduces their Precision by 30% for 3 rounds and their Attack by 30% for 3 rounds (this effect can stack). She will also gain 2 stacks of [c][e28002]Divinity[-][/c].
+
+[c][01a310]Burn[-][/c]:
+A Damage Over Time Effect.
+Damage is dealt once when burn is inflicted and at the beginning of each round during the period of effect.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%."
 756012041,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身62.4%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 62.4% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012042,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身64.8%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 64.8% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012043,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身67.2%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 67.2% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012044,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得1層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身69.6%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
+Zeusia gains 1 stack of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 69.6% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
 756012045,Zeusia,Divine Charisma,"
-無心之愛，誘及世人。我方戰姬釋放主動技能時，宙斯自身獲得2層[c][e28002]神性[-][/c]；當自身[c][e28002]神性[-][/c]達到12層時，提高自身72%神聖傷害4回合；並消耗12層[c][e28002]神性[-][/c]，為敵方全體施加[c][e28002]雷脈[-][/c]持續4回合。
+Little to no effort is required for Zeusia to charm the mortals.
 
-[c][e28002]神性[-][/c]
-技能特效，每層[c][e28002]神性[-][/c]提高自身5%神聖傷害。
-[c][e28002]雷脈[-][/c]
-技能特效，可疊加。[c][e28002]雷脈[-][/c]在釋放和回合結束時對持有者造成20%最大生命的燃燒傷害2回合（不超過宙斯攻擊的3000%），降低目標25%攻擊2回合，並有30%概率施加灼目2回合。
-[c][e28002]灼目[-][/c]
-控制效果，被施加灼目的目標在釋放主動技能、進行普通攻擊或觸發對敵人造成影響的被動技能時，選取目標變為隨機1名敵人（該效果會被嘲諷效果覆蓋）。"
-677901,Peacock Tambourine,Antique Skill,能量獲取效率增加10%
-678001,Peacock Tambourine,Antique Skill,能量獲取效率增加13%
-678101,Peacock Tambourine,Antique Skill,能量獲取效率增加16%
-678201,Peacock Tambourine,Antique Skill,能量獲取效率增加19%
-678301,Peacock Tambourine,Antique Skill,能量獲取效率增加22%
-678401,Peacock Tambourine,Antique Skill,能量獲取效率增加25%
-6784101,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得10點能量；回合開始時，有50%概率獲得30點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.3%。
-6784201,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得20點能量；回合開始時，有50%概率獲得40點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.4%。
-6784301,Peacock Tambourine,Antique Skill,戰鬥開始時，獲得30點能量；回合開始時，有50%概率獲得50點能量。造成傷害時，每擁有1點能量，造成的傷害提升0.5%。
-678501,Galaxy Paintbrush,Antique Skill,+25 能量
-678601,Galaxy Paintbrush,Antique Skill,+30 能量
-678701,Galaxy Paintbrush,Antique Skill,+35 能量
-678801,Galaxy Paintbrush,Antique Skill,+40 能量
-678901,Galaxy Paintbrush,Antique Skill,+45 能量
-679001,Galaxy Paintbrush,Antique Skill,+50 能量
-6790101,Galaxy Paintbrush,Antique Skill,施放主動技能後，有15%概率再次施放一次主動技能。
-6790201,Galaxy Paintbrush,Antique Skill,施放主動技能後，有20%概率再次施放一次主動技能。
-6790301,Galaxy Paintbrush,Antique Skill,施放主動技能後，有25%概率再次施放一次主動技能。
-5501400,Apollis,Basic Attack,普攻
-65502300,Apollis,Basic Attack,普攻
-75501300,Apollis,Basic Attack,普攻
-5501401,Apollis,主動技能,對隨機2名敵人造成160%攻擊力傷害，並有70%概率對其中1名敵人施加 BUFF1 15回合
-65502301,Apollis,主動技能,對隨機2名敵人造成220%攻擊力傷害，並有100%概率對其中1名敵人施加 BUFF1 15回合
-75501301,Apollis,主動技能,對隨機2名敵人造成300%攻擊力傷害，並有100%概率對其中1名敵人施加 BUFF1 15回合，有65%概率對其中一名敵人施加 BUFF1 15回合，自身獲得2層 BUFF2
-5501402,Apollis,被動技能1,生命值增加10%，攻擊增加15%，減傷率增加10%，速度增加20
-65502302,Apollis,被動技能1,生命值增加20%，攻擊增加20%，減傷率增加20%，速度增加30
-65502312,Apollis,被動技能1,生命值增加30%，攻擊增加25%，減傷率增加30%，速度增加40
-75501302,Apollis,被動技能1,生命值增加30%，攻擊增加25%，減傷率增加30%，速度增加40
-5501403,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身50%概率獲得1層BUFF2
-65502303,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2
-65502313,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2，有50%概率額外獲得1層BUFF2；普通攻擊變為：對隨機1名敵人造成100%攻擊傷害，並有50%概率對目標施加 BUFF1 15回合
-75501303,Apollis,被動技能2,戰鬥開始時，自身獲得3層BUFF2；第一回合之後每回合結束時，自身100%概率獲得1層BUFF2，有50%概率額外獲得1層BUFF2；普通攻擊變為：對隨機1名敵人造成100%攻擊傷害，並有50%概率對目標施加 BUFF1 15回合
-5501404,Apollis,被動技能3,自身被施加印記時，消耗2層 BUFF2 解除自身1種印記；自身受到控制時，消耗2層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗3層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
-65502304,Apollis,被動技能3,自身被施加印記時，消耗2（50%概率消耗1層）層 BUFF2 解除自身1種印記；自身受到控制時，消耗2（50%概率消耗1層）層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗3（50%概率消耗2層）層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
-65502314,Apollis,被動技能3,自身被施加印記時，消耗1層 BUFF2 解除自身1種印記；自身受到控制時，消耗1層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗2層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
-75501304,Apollis,被動技能3,自身被施加印記時，消耗1層 BUFF2 解除自身1種印記；自身受到控制時，消耗1層 BUFF2 將自身1種控制轉移給隨機1名敵方戰姬（隨機選擇身上一種控制轉移）；自身生命每次低於30%時，消耗2層 BUFF2 使自身與當前生命值最高的敵人生命互換（交換的生命值不超過自身攻擊力的5000%）
-755013011,Apollis,精英技能-主动,
-755013012,Apollis,精英技能-主动,
-755013013,Apollis,精英技能-主动,
-755013014,Apollis,精英技能-主动,
-755013015,Apollis,精英技能-主动,
-755013021,Apollis,精英技能-被动1,
-755013022,Apollis,精英技能-被动1,
-755013023,Apollis,精英技能-被动1,
-755013024,Apollis,精英技能-被动1,
-755013025,Apollis,精英技能-被动1,
-755013031,Apollis,精英技能-被动2,
-755013032,Apollis,精英技能-被动2,
-755013033,Apollis,精英技能-被动2,
-755013034,Apollis,精英技能-被动2,
-755013035,Apollis,精英技能-被动2,
-755013041,Apollis,精英技能-被动3,
-755013042,Apollis,精英技能-被动3,
-755013043,Apollis,精英技能-被动3,
-755013044,Apollis,精英技能-被动3,
-755013045,Apollis,精英技能-被动3,
+Zeusia gains 2 stacks of [c][e28002]Divinity[-][/c] whenever an ally uses her Active Skill.
+When Zeusia has 12 stacks of [c][e28002]Divinity[-][/c], she will gain 72% Holy Damage for 4 rounds and consume 12 stacks of [c][e28002]Divinity[-][/c] to cast [c][e28002]Thunderbolt[-][/c] that lasts for 4 rounds to all enemies.
+
+[c][e28002]Divinity[-][/c]:
+A Skill Effect.
+Every stack of [c][e28002]Divinity[-][/c] increases the owner’s Holy Damage by 5%.
+
+[c][e28002]Thunderbolt[-][/c]:
+A Skill Effect that can stack.
+Deals (20% of owner’s Maximum HP) [c][01a310]Burn[-][/c] damage to the owner of this Effect when inflicted and at the end of each round for 2 rounds (damage dealt will not surpass 3000% of Zeusia’s Attack), reduces the owner’s Attack by 25% for 2 rounds, and has a 35% chance to inflict [c][e28002]Dazed[-][/c] that lasts for 2 rounds to the owner.
+
+[c][e28002]Dazed[-][/c]:
+A Control Effect.
+Targets affected by Dazed will compulsively target 1 random target when they use their Active Skills, deals a Basic Attack, or triggers Passive Skills that affect enemies (however, this effect can be replaced by Taunt)"
+677901,Peacock Tambourine,Antique Skill,Increase Energy Gain by 10%.
+678001,Peacock Tambourine,Antique Skill,Increase Energy Gain by 13%.
+678101,Peacock Tambourine,Antique Skill,Increase Energy Gain by 16%.
+678201,Peacock Tambourine,Antique Skill,Increase Energy Gain by 19%.
+678301,Peacock Tambourine,Antique Skill,Increase Energy Gain by 22%.
+678401,Peacock Tambourine,Antique Skill,Increase Energy Gain by 25%.
+6784101,Peacock Tambourine,Antique Skill,"The owner of this Antique gains 10 Energy when the battle starts. At the start of every round, the owner has a 50% chance to obtain 30 Energy.\nDamage dealt by the owner will be increased by 0.3% for every 1 Energy the owner has."
+6784201,Peacock Tambourine,Antique Skill,"The owner of this Antique gains 20 Energy when the battle starts. At the start of every round, the owner has a 50% chance to obtain 40 Energy.\nDamage dealt by the owner will be increased by 0.4% for every 1 Energy the owner has."
+6784301,Peacock Tambourine,Antique Skill,"The owner of this Antique gains 30 Energy when the battle starts. At the start of every round, the owner has a 50% chance to obtain 50 Energy.\nDamage dealt by the owner will be increased by 0.5% for every 1 Energy the owner has."
+678501,Galaxy Paintbrush,Antique Skill,+25 Energy
+678601,Galaxy Paintbrush,Antique Skill,+30 Energy
+678701,Galaxy Paintbrush,Antique Skill,+35 Energy
+678801,Galaxy Paintbrush,Antique Skill,+40 Energy
+678901,Galaxy Paintbrush,Antique Skill,+45 Energy
+679001,Galaxy Paintbrush,Antique Skill,+50 Energy
+6790101,Galaxy Paintbrush,Antique Skill,"After releasing her Active Skill, the owner of this Antique has a 15% chance to use her Active Skill again."
+6790201,Galaxy Paintbrush,Antique Skill,"After releasing her Active Skill, the owner of this Antique has a 20% chance to use her Active Skill again."
+6790301,Galaxy Paintbrush,Antique Skill,"After releasing her Active Skill, the owner of this Antique has a 25% chance to use her Active Skill again."
+5501400,Apollis,Basic Attack,Basic Attack
+65502300,Apollis,Basic Attack,Basic Attack
+75501300,Apollis,Basic Attack,Basic Attack
+5501401,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (120% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (40% of damage dealt) HP.
+She will also steal 20% Attack that lasts for 3 rounds and 20% Armor that lasts for 3 rounds from 2 random enemies and deal (120% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (100% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65502301,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (800% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (50% of damage dealt) HP.
+She will also steal 30% Attack that lasts for 3 rounds and 30% Armor that lasts for 3 rounds from 2 random enemies and deal (360% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (300% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75501301,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (800% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (600% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+5501402,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 10%, Attack by 10%, Damage Reduction by 10%, Crit by 10%, and Speed by 40."
+65502302,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 20%, Attack by 20%, Damage Reduction by 20%, Crit by 30%, and Speed by 60."
+65502312,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 40%, and Speed by 100."
+75501302,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 40%, and Speed by 100."
+5501403,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (100% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (40% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (150% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65502303,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (600% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (50% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (300% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (100% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65502313,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (700% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (200% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75501303,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (700% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (200% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+5501404,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 5% for 3 rounds and her Speed by 5 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 10% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 10% Attack from the attacker for 3 rounds, deal (10% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65502304,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 10% for 3 rounds and her Speed by 10 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 15% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 20% Attack from the attacker for 3 rounds, deal (15% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+65502314,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 20 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 30% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+75501304,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 20 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 30% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013011,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (840% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (610% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013012,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (880% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (620% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013013,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (920% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (630% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013014,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (960% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (640% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013015,Apollis,Sun Devourer,"
+Look, your precious sun is vanishing piece by piece!
+
+Apollis deals (1500% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 4 random enemies and heals self for (60% of damage dealt) HP.
+She will also steal 40% Attack that lasts for 3 rounds and 40% Armor that lasts for 3 rounds from 2 random enemies and deal (1000% of Attack) extra damage that ignores Armor to them. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (650% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013021,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 42%, and Speed by 100."
+755013022,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 44%, and Speed by 100."
+755013023,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 46%, and Speed by 100."
+755013024,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 40%, Attack by 40%, Damage Reduction by 30%, Crit by 48%, and Speed by 100."
+755013025,Apollis,Bell of Radiance,"The peals this bell make herald your demise.\n\nIncreases Apollis' HP by 45%, Attack by 45%, Damage Reduction by 30%, Crit by 50%, and Speed by 100."
+755013031,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (740% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (204% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013032,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (780% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (208% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013033,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (820% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (212% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013034,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (860% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (216% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013035,Apollis,All-seeing Eye,"
+You may try to run, but you will never escape.
+
+Apollis’ Basic Attack deals (1400% of Attack) damage that ignores [c][e28002]Magick Barrier[-][/c] to 2 random enemies and heals her for (60% of damage dealt) HP.
+She will also steal 50 Energy from 1 random enemy and deal (900% of Attack) damage to it. Then, she will gain a [c][e28002]Magick Barrier[-][/c] with (220% of Attack) BP and increase her own chance to Dodge enemies’ Basic Attacks and Active Skills by 20% for 3 rounds.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013041,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 22 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 32% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013042,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 24 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 34% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013043,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 26 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 36% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013044,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 28 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 38% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."
+755013045,Apollis,Unending Tolls,"
+You missed... So it\'s my turn now!
+
+When any Debuff that is not a Control Effect is inflicted to Apollis, she will increase her Precision by 20% for 3 rounds and her Speed by 30 for 3 rounds (these effects can stack).
+When Apollis is affected by a Control Effect, she has a 40% chance to [c][01a310]Stun[-][/c] 1 random enemy for 2 rounds.
+When Apollis takes damage from Basic Attack or Active Skills, she will steal 40% Attack from the attacker for 3 rounds, deal (25% of target’s Maximum HP) damage to all enemies (damage dealt will not surpass 3000% of Apollis’ Attack), and gain a [c][e28002]Magick Barrier[-][/c] with (50% of Attack) BP.
+When Apollis takes Lethal Damage, she will ignore this damage and all other damages taken in this round. (This effect can only be triggered once per battle)
+
+[c][01a310]Stun[-][/c]:
+A Control Effect.
+During this effect, girls affected will not be able to deal Basic Attacks, release their Active Skills, Hunt, or Counterattack.
+
+[c][e28002]Magick Barrier[-][/c]:
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP."

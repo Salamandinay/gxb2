@@ -327,6 +327,11 @@ function ActivityChristmasSaleItem:setBtnPosition()
 
 	self.button_label:X(width1 / 2 + 5.5)
 	self.button_icon:X(-5.5 - width2 / 2)
+
+	if self.button_label.width > 85 then
+		self.button_label:X(12)
+		self.button_icon:X(-49)
+	end
 end
 
 function ActivityChristmasSaleItem:setOpAward(opAwards)

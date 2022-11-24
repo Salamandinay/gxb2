@@ -295,7 +295,14 @@ function GuildCompetitionFightWindow:layout()
 
 	self.buffsCon_UILayout:Reposition()
 
-	local partnerArr = xyd.tables.miscTable:split2num("guild_competition_boss_model", "value", "|")
+	local guildCompetitionData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_COMPETITION)
+	local miscReadCount = 1
+
+	if guildCompetitionData then
+		miscReadCount = guildCompetitionData:getCount()
+	end
+
+	local partnerArr = xyd.tables.miscTable:split2Cost("guild_competition_boss_model", "value", "|#", true)[miscReadCount]
 	local modelId = xyd.tables.partnerTable:getModelID(partnerArr[self.bossIndex])
 	local effectName = xyd.tables.modelTable:getModelName(modelId)
 	local effectScale = xyd.tables.modelTable:getScale(modelId)

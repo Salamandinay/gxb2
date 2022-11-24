@@ -2092,39 +2092,79 @@ Erhöht den Schaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP 
 757003408,艾菲,星光之束,Erhöht den Angriffsschaden auf {1} des AW und alle Schäden von Effy um {2}.
 757003409,艾菲,星光之束,Erhöht den Angriffsschaden auf {1} des AW und alle Schäden von Effy um {2}.
 757003410,艾菲,星光之束,Erhöht den Angriffsschaden auf {1} des AW und alle Schäden von Effy um {2}.
-756011011,波賽頓,精英技能-主动,
-756011012,波賽頓,精英技能-主动,
-756011013,波賽頓,精英技能-主动,
-756011014,波賽頓,精英技能-主动,
-756011015,波賽頓,精英技能-主动,
-756011021,波賽頓,精英技能-被动1,
-756011022,波賽頓,精英技能-被动1,
-756011023,波賽頓,精英技能-被动1,
-756011024,波賽頓,精英技能-被动1,
-756011025,波賽頓,精英技能-被动1,
-756011031,波賽頓,精英技能-被动2,
-756011032,波賽頓,精英技能-被动2,
-756011033,波賽頓,精英技能-被动2,
-756011034,波賽頓,精英技能-被动2,
-756011035,波賽頓,精英技能-被动2,
-756011051,波賽頓,精英技能-被动3,
-755012011,黑帝斯,精英技能-主动,
-755012012,黑帝斯,精英技能-主动,
-755012013,黑帝斯,精英技能-主动,
-755012014,黑帝斯,精英技能-主动,
-755012015,黑帝斯,精英技能-主动,
-755012021,黑帝斯,精英技能-被动1,
-755012022,黑帝斯,精英技能-被动1,
-755012023,黑帝斯,精英技能-被动1,
-755012024,黑帝斯,精英技能-被动1,
-755012025,黑帝斯,精英技能-被动1,
-755012031,黑帝斯,精英技能-被动2,
-755012032,黑帝斯,精英技能-被动2,
-755012033,黑帝斯,精英技能-被动2,
-755012034,黑帝斯,精英技能-被动2,
-755012035,黑帝斯,精英技能-被动2,
-755012041,黑帝斯,精英技能-被动3,
-755012042,黑帝斯,精英技能-被动3,
-755012043,黑帝斯,精英技能-被动3,
-755012044,黑帝斯,精英技能-被动3,
-755012045,黑帝斯,精英技能-被动3,
+756011011,波賽頓,海底螺旋,"Erhöht die 3 Angriffsschäden jeweils auf {1}, {2} und {3} des AW und die Blockade um {4}."
+756011012,波賽頓,海底螺旋,"Erhöht die 3 Angriffsschäden jeweils auf {1}, {2} und {3} des AW und die Blockade um {4}."
+756011013,波賽頓,海底螺旋,"Erhöht die 3 Angriffsschäden jeweils auf {1}, {2} und {3} des AW und die Blockade um {4}."
+756011014,波賽頓,海底螺旋,"Erhöht die 3 Angriffsschäden jeweils auf {1}, {2} und {3} des AW und die Blockade um {4}."
+756011015,波賽頓,海底螺旋,"Erhöht die 3 Angriffsschäden jeweils auf {1}, {2} und {3} des AW und die Blockade um {4}."
+756011021,波賽頓,風起雲湧,Erhöht die Blockade um {1}
+756011022,波賽頓,風起雲湧,Erhöht die Blockade um {1}
+756011023,波賽頓,風起雲湧,Erhöht die Blockade um {1}
+756011024,波賽頓,風起雲湧,Erhöht die Blockade um {1}
+756011025,波賽頓,風起雲湧,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011031,波賽頓,至尊三叉,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011032,波賽頓,至尊三叉,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011033,波賽頓,至尊三叉,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011034,波賽頓,至尊三叉,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011035,波賽頓,至尊三叉,"Erhöht die HP um {1}, den Angriff um {2} und die Blockade um {3}."
+756011051,波賽頓,大海之靈,Erhöht die HP um {1} eigener verlorenen HP. Jede Schicht [c][e28002]Meeresmuschel[-][/c] erhöht den Angriff um {2} und die Rüstung um {3}.
+755012011,黑帝斯,漫漫長夜,Erhöht den Angriffsschaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP der Ziele. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012012,黑帝斯,漫漫長夜,Erhöht den Angriffsschaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP der Ziele. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012013,黑帝斯,漫漫長夜,Erhöht den Angriffsschaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP der Ziele. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012014,黑帝斯,漫漫長夜,Erhöht den Angriffsschaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP der Ziele. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012015,黑帝斯,漫漫長夜,Erhöht den Angriffsschaden auf {1} des AW und den weiteren Schaden auf {2} der max. HP der Ziele. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012021,黑帝斯,寂寂死神,Erhöht den Skill-Bonusschaden um {1}
+755012022,黑帝斯,寂寂死神,Erhöht den Skill-Bonusschaden um {1}
+755012023,黑帝斯,寂寂死神,Erhöht den Skill-Bonusschaden um {1}
+755012024,黑帝斯,寂寂死神,Erhöht den Skill-Bonusschaden um {1}
+755012025,黑帝斯,寂寂死神,"Erhöht die HP um {1}, den Angriff um {2} und den Skill-Bonusschaden um {3}."
+755012031,黑帝斯,幽幽骨鳥,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW. Beim eigenen Tod fügt sie allen Gegnern einen Schaden in Höhe von {2} der max. HP der Ziele zu. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012032,黑帝斯,幽幽骨鳥,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW. Beim eigenen Tod fügt sie allen Gegnern einen Schaden in Höhe von {2} der max. HP der Ziele zu. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012033,黑帝斯,幽幽骨鳥,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW. Beim eigenen Tod fügt sie allen Gegnern einen Schaden in Höhe von {2} der max. HP der Ziele zu. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012034,黑帝斯,幽幽骨鳥,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW. Beim eigenen Tod fügt sie allen Gegnern einen Schaden in Höhe von {2} der max. HP der Ziele zu. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012035,黑帝斯,幽幽骨鳥,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW. Beim eigenen Tod fügt sie allen Gegnern einen Schaden in Höhe von {2} der max. HP der Ziele zu. [c][e28002]Todesblick[-][/c] reduziert die Heilung um {3} und die erhaltenen Schutzwall-Werte um {4}.
+755012041,黑帝斯,森森墓碑,"Fügt den Gegnern, deren HP bei 50% oder höher liegen, einen Schaden in Höhe von {1} der max. HP der Ziele und den anderen Gegnern einen Schaden in Höhe von {2} der verlorenen HP der Ziele zu."
+755012042,黑帝斯,森森墓碑,"Fügt den Gegnern, deren HP bei 50% oder höher liegen, einen Schaden in Höhe von {1} der max. HP der Ziele und den anderen Gegnern einen Schaden in Höhe von {2} der verlorenen HP der Ziele zu."
+755012043,黑帝斯,森森墓碑,"Fügt den Gegnern, deren HP bei 50% oder höher liegen, einen Schaden in Höhe von {1} der max. HP der Ziele und den anderen Gegnern einen Schaden in Höhe von {2} der verlorenen HP der Ziele zu."
+755012044,黑帝斯,森森墓碑,"Fügt den Gegnern, deren HP bei 50% oder höher liegen, einen Schaden in Höhe von {1} der max. HP der Ziele und den anderen Gegnern einen Schaden in Höhe von {2} der verlorenen HP der Ziele zu."
+755012045,黑帝斯,森森墓碑,"Fügt den Gegnern, deren HP bei 50% oder höher liegen, einen Schaden in Höhe von {1} der max. HP der Ziele und den anderen Gegnern einen Schaden in Höhe von {2} der verlorenen HP der Ziele zu."
+756012011,宙斯,王者歸來,Erhöht den Brennschaden auf {1} des AW. Reduziert den Angriff um {2} und erhöht den von den Zielen erlittenen Brennschaden um {3}.
+756012012,宙斯,王者歸來,Erhöht den Brennschaden auf {1} des AW. Reduziert den Angriff um {2} und erhöht den von den Zielen erlittenen Brennschaden um {3}.
+756012013,宙斯,王者歸來,Erhöht den Brennschaden auf {1} des AW. Reduziert den Angriff um {2} und erhöht den von den Zielen erlittenen Brennschaden um {3}.
+756012014,宙斯,王者歸來,Erhöht den Brennschaden auf {1} des AW. Reduziert den Angriff um {2} und erhöht den von den Zielen erlittenen Brennschaden um {3}.
+756012015,宙斯,王者歸來,Erhöht den Brennschaden auf {1} des AW. Reduziert den Angriff um {2} und erhöht den von den Zielen erlittenen Brennschaden um {3}. Erhöht die Anzahl an erhaltenen Schichten von [c][e28002]Heiligen Blitzen[-][/c] auf {4}.
+756012021,宙斯,王者之冠,Erhöht den heiligen Schaden um {1}
+756012022,宙斯,王者之冠,Erhöht den heiligen Schaden um {1}
+756012023,宙斯,王者之冠,Erhöht den heiligen Schaden um {1}
+756012024,宙斯,王者之冠,Erhöht den heiligen Schaden um {1}
+756012025,宙斯,王者之冠,"Erhöht die HP um {1}, den Angriff um {2} und den heiligen Schaden um {3}."
+756012031,宙斯,雷霆權柄,Erhöht den Angriffsschaden auf {1} des AW. Reduziert den Angriff um {2} und die Präzision um {3}.
+756012032,宙斯,雷霆權柄,Erhöht den Angriffsschaden auf {1} des AW. Reduziert den Angriff um {2} und die Präzision um {3}.
+756012033,宙斯,雷霆權柄,Erhöht den Angriffsschaden auf {1} des AW. Reduziert den Angriff um {2} und die Präzision um {3}.
+756012034,宙斯,雷霆權柄,Erhöht den Angriffsschaden auf {1} des AW. Reduziert den Angriff um {2} und die Präzision um {3}.
+756012035,宙斯,雷霆權柄,Erhöht den Angriffsschaden auf {1} des AW. Reduziert den Angriff um {2} und die Präzision um {3}.
+756012041,宙斯,如電穿心,Erhöht eigenen heiligen Schaden um {1}
+756012042,宙斯,如電穿心,Erhöht eigenen heiligen Schaden um {1}
+756012043,宙斯,如電穿心,Erhöht eigenen heiligen Schaden um {1}
+756012044,宙斯,如電穿心,Erhöht eigenen heiligen Schaden um {1}
+756012045,宙斯,如電穿心,Erhöht eigenen heiligen Schaden um {1} und die Anzahl an erhaltenen Schichten von [c][e28002]Heiligen Blitzen[-][/c] auf {2}.
+755013011,阿波羅,食日之時,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013012,阿波羅,食日之時,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013013,阿波羅,食日之時,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013014,阿波羅,食日之時,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013015,阿波羅,食日之時,Erhöht den die Rüstung ignorierenden Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013021,阿波羅,搖鈴之聲,Erhöht die Krit. Rate um {1}
+755013022,阿波羅,搖鈴之聲,Erhöht die Krit. Rate um {1}
+755013023,阿波羅,搖鈴之聲,Erhöht die Krit. Rate um {1}
+755013024,阿波羅,搖鈴之聲,Erhöht die Krit. Rate um {1}
+755013025,阿波羅,搖鈴之聲,"Erhöht die HP um {1}, den Angriff um {2} und die Krit. Rate um {3}"
+755013031,阿波羅,覬覦之眼,Erhöht den weiteren Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013032,阿波羅,覬覦之眼,Erhöht den weiteren Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013033,阿波羅,覬覦之眼,Erhöht den weiteren Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013034,阿波羅,覬覦之眼,Erhöht den weiteren Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013035,阿波羅,覬覦之眼,Erhöht den weiteren Schaden auf {1} des AW und eigene [c][e28002]Schutzwall[-][/c]-Werte um {2} des AW.
+755013041,阿波羅,長鳴之鐘,"Erhöht den Speed um {1} und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+755013042,阿波羅,長鳴之鐘,"Erhöht den Speed um {1} und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+755013043,阿波羅,長鳴之鐘,"Erhöht den Speed um {1} und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+755013044,阿波羅,長鳴之鐘,"Erhöht den Speed um {1} und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."
+755013045,阿波羅,長鳴之鐘,"Erhöht den Speed um {1} und die Wahrscheinlichkeit, die Gegner zu [c][01a310]betäuben[-][/c], auf {2}."

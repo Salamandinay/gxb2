@@ -687,7 +687,7 @@ function SelfPlayer:onLoginInfo_(event)
 	xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
 	xyd.models.soulLand:reqCheckOpen()
 
-	if self:isDogVersionOpen() then
+	if xyd.isDogVersionOpen() then
 		self:getDogMiniPassLevelReq()
 	end
 end
@@ -1314,17 +1314,6 @@ end
 
 function SelfPlayer:onDogMiniLevelBack(event)
 	self.dogMIniGameLevel = event.data.id
-end
-
-function SelfPlayer:isDogVersionOpen()
-	local pkgName = XYDDef.PkgName
-	local languages = xyd.package2Language[pkgName]
-
-	if UNITY_EDITOR or UNITY_ANDROID and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.ANDROID_DOG_MINI_GAME) >= 0 or UNITY_IOS and languages[1] == "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_DOG_MINI_GAME_JP) >= 0 or UNITY_IOS and languages[1] ~= "ja_jp" and XYDUtils.CompVersion(UnityEngine.Application.version, xyd.IOS_DOG_MINI_GAME) >= 0 then
-		return true
-	end
-
-	return false
 end
 
 function SelfPlayer:getActTables()

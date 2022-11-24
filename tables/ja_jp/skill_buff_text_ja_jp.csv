@@ -137,8 +137,8 @@ id,buff_id,plus_minus,name,sec
 140,blind,,星の光,ブレイク、ブロック、拘束耐性が減少し、攻撃が50%の確率で敵に当たらない。
 141,soulTear,,残光,攻撃後、自身が与えたダメージの一部のダメージを受ける。
 142,soulSeal,,星空の矢,治療を受ける時、一部のHP回復効果は「星空の矢」が解除された後にHPを回復する。攻撃を受けた時、追加で自身の最大HP上限の固定ダメージを受ける。
-143,bosaidongMark,,buff1,
-144,hadisiEnergyGetRate,,buff1,
-145,hadisiDebuff,,buff2,
-146,zhousiTrueAtk,,buff2,
-147,zhousiDot,,buff1,
+143,bosaidongMark,,深海の貝殻,6スタックたまると、全スタックを消費して味方戦姫全員の攻撃力と防御力をアップさせる。ポセイドン自身に対してはその倍アップする。
+144,hadisiEnergyGetRate,,死の誘い,エネルギー獲得率を減少させる。
+145,hadisiDebuff,,審判,受ける治療効果とバリアの回復量を減少させる。
+146,zhousiTrueAtk,,雷電,付与時とターン終了時、所持者にHP最大上限の燃焼ダメージを与え、攻撃力が減少し、一定の確率で盲目を付与する。
+147,zhousiDot,,神性,防御貫通がアップする。

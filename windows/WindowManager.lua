@@ -1215,13 +1215,13 @@ function WindowManager:screenToWorldPoint(positon)
 end
 
 function WindowManager:changeNguiCameraSize()
-	if xyd.models.selfPlayer:isDogVersionOpen() then
+	if xyd.isDogVersionOpen() then
 		self.uiCamera_.orthographicSize = 40
 	end
 end
 
 function WindowManager:changeNguiObjScale(obj)
-	if xyd.models.selfPlayer:isDogVersionOpen() then
+	if xyd.isDogVersionOpen() then
 		obj.gameObject:SetLocalScale(40, 40, 1)
 	end
 end

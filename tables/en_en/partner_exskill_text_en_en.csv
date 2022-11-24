@@ -2387,39 +2387,127 @@ Amount of Precision, Block, and Control Immunity reduced by [c][e28002]Afterimag
 757003408,艾菲,星光之束,Damage dealt increases to {1} of Attack.\nBoost to all damage dealt by Effy increases to {2}.
 757003409,艾菲,星光之束,Damage dealt increases to {1} of Attack.\nBoost to all damage dealt by Effy increases to {2}.
 757003410,艾菲,星光之束,Damage dealt increases to {1} of Attack.\nBoost to all damage dealt by Effy increases to {2}.
-756011011,波賽頓,精英技能-主动,
-756011012,波賽頓,精英技能-主动,
-756011013,波賽頓,精英技能-主动,
-756011014,波賽頓,精英技能-主动,
-756011015,波賽頓,精英技能-主动,
-756011021,波賽頓,精英技能-被动1,
-756011022,波賽頓,精英技能-被动1,
-756011023,波賽頓,精英技能-被动1,
-756011024,波賽頓,精英技能-被动1,
-756011025,波賽頓,精英技能-被动1,
-756011031,波賽頓,精英技能-被动2,
-756011032,波賽頓,精英技能-被动2,
-756011033,波賽頓,精英技能-被动2,
-756011034,波賽頓,精英技能-被动2,
-756011035,波賽頓,精英技能-被动2,
-756011051,波賽頓,精英技能-被动3,
-755012011,黑帝斯,精英技能-主动,
-755012012,黑帝斯,精英技能-主动,
-755012013,黑帝斯,精英技能-主动,
-755012014,黑帝斯,精英技能-主动,
-755012015,黑帝斯,精英技能-主动,
-755012021,黑帝斯,精英技能-被动1,
-755012022,黑帝斯,精英技能-被动1,
-755012023,黑帝斯,精英技能-被动1,
-755012024,黑帝斯,精英技能-被动1,
-755012025,黑帝斯,精英技能-被动1,
-755012031,黑帝斯,精英技能-被动2,
-755012032,黑帝斯,精英技能-被动2,
-755012033,黑帝斯,精英技能-被动2,
-755012034,黑帝斯,精英技能-被动2,
-755012035,黑帝斯,精英技能-被动2,
-755012041,黑帝斯,精英技能-被动3,
-755012042,黑帝斯,精英技能-被动3,
-755012043,黑帝斯,精英技能-被动3,
-755012044,黑帝斯,精英技能-被动3,
-755012045,黑帝斯,精英技能-被动3,
+756011011,波賽頓,海底螺旋,"Damage dealt by the 3 attacks increases to {1} of Attack, {2} of Attack, and {3} of Attack.\nAmount of increased Block increases to {4}."
+756011012,波賽頓,海底螺旋,"Damage dealt by the 3 attacks increases to {1} of Attack, {2} of Attack, and {3} of Attack.\nAmount of increased Block increases to {4}."
+756011013,波賽頓,海底螺旋,"Damage dealt by the 3 attacks increases to {1} of Attack, {2} of Attack, and {3} of Attack.\nAmount of increased Block increases to {4}."
+756011014,波賽頓,海底螺旋,"Damage dealt by the 3 attacks increases to {1} of Attack, {2} of Attack, and {3} of Attack.\nAmount of increased Block increases to {4}."
+756011015,波賽頓,海底螺旋,"Damage dealt by the 3 attacks increases to {1} of Attack, {2} of Attack, and {3} of Attack.\nAmount of increased Block increases to {4}."
+756011021,波賽頓,風起雲湧,Block increase increases to {1}.
+756011022,波賽頓,風起雲湧,Block increase increases to {1}.
+756011023,波賽頓,風起雲湧,Block increase increases to {1}.
+756011024,波賽頓,風起雲湧,Block increase increases to {1}.
+756011025,波賽頓,風起雲湧,HP increase increases to {1}.\nAttack increase increases to {2}.\nBlock increase increases to {3}.
+756011031,波賽頓,至尊三叉,Amount of recovered HP increases to {1} of lost HP.\nAmount of reduced Precision increases to {2}.\nBlock increase increases to {3}.
+756011032,波賽頓,至尊三叉,Amount of recovered HP increases to {1} of lost HP.\nAmount of reduced Precision increases to {2}.\nBlock increase increases to {3}.
+756011033,波賽頓,至尊三叉,Amount of recovered HP increases to {1} of lost HP.\nAmount of reduced Precision increases to {2}.\nBlock increase increases to {3}.
+756011034,波賽頓,至尊三叉,Amount of recovered HP increases to {1} of lost HP.\nAmount of reduced Precision increases to {2}.\nBlock increase increases to {3}.
+756011035,波賽頓,至尊三叉,Amount of recovered HP increases to {1} of lost HP.\nAmount of reduced Precision increases to {2}.\nBlock increase increases to {3}.
+756011051,波賽頓,大海之靈,"
+Amount of recovered HP increases to {1} of lost HP.
+
+Amount of Attack granted by [c][e28002]Gift of the Sea[-][/c] increases to {2}.
+Amount of Armor granted by [c][e28002]Gift of the Sea[-][/c] increases to {3}."
+755012011,黑帝斯,漫漫長夜,"
+Damage dealt increases to {1} of Hadea\'s Attack.
+Extra damage dealt increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012012,黑帝斯,漫漫長夜,"
+Damage dealt increases to {1} of Hadea\'s Attack.
+Extra damage dealt increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012013,黑帝斯,漫漫長夜,"
+Damage dealt increases to {1} of Hadea\'s Attack.
+Extra damage dealt increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012014,黑帝斯,漫漫長夜,"
+Damage dealt increases to {1} of Hadea\'s Attack.
+Extra damage dealt increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012015,黑帝斯,漫漫長夜,"
+Damage dealt increases to {1} of Hadea\'s Attack.
+Extra damage dealt increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012021,黑帝斯,寂寂死神,Skill Damage increase increases to {1}.
+755012022,黑帝斯,寂寂死神,Skill Damage increase increases to {1}.
+755012023,黑帝斯,寂寂死神,Skill Damage increase increases to {1}.
+755012024,黑帝斯,寂寂死神,Skill Damage increase increases to {1}.
+755012025,黑帝斯,寂寂死神,HP increase increases to {1}.\nAttack increase increases to {2}.\nSkill Damage increase increases to {3}.
+755012031,黑帝斯,幽幽骨鳥,"
+Damage that ignores Armor increases to {1} of Attack.
+Damage dealt when Hadea is defeated increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012032,黑帝斯,幽幽骨鳥,"
+Damage that ignores Armor increases to {1} of Attack.
+Damage dealt when Hadea is defeated increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012033,黑帝斯,幽幽骨鳥,"
+Damage that ignores Armor increases to {1} of Attack.
+Damage dealt when Hadea is defeated increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012034,黑帝斯,幽幽骨鳥,"
+Damage that ignores Armor increases to {1} of Attack.
+Damage dealt when Hadea is defeated increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012035,黑帝斯,幽幽骨鳥,"
+Damage that ignores Armor increases to {1} of Attack.
+Damage dealt when Hadea is defeated increases to {2} of the target\'s Maximum HP.
+Heal Amount reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {3}.
+Amount of BP received reduced by [c][e28002]Doom\'s Arrival[-][/c] increases to {4}."
+755012041,黑帝斯,森森墓碑,Damage dealt to enemies with 50% or more HP left increases to {1} of the target's Maximum HP.\nDamage dealt to enemies with less than 50% HP left increases to {2} of the target's lost HP.
+755012042,黑帝斯,森森墓碑,Damage dealt to enemies with 50% or more HP left increases to {1} of the target's Maximum HP.\nDamage dealt to enemies with less than 50% HP left increases to {2} of the target's lost HP.
+755012043,黑帝斯,森森墓碑,Damage dealt to enemies with 50% or more HP left increases to {1} of the target's Maximum HP.\nDamage dealt to enemies with less than 50% HP left increases to {2} of the target's lost HP.
+755012044,黑帝斯,森森墓碑,Damage dealt to enemies with 50% or more HP left increases to {1} of the target's Maximum HP.\nDamage dealt to enemies with less than 50% HP left increases to {2} of the target's lost HP.
+755012045,黑帝斯,森森墓碑,Damage dealt to enemies with 50% or more HP left increases to {1} of the target's Maximum HP.\nDamage dealt to enemies with less than 50% HP left increases to {2} of the target's lost HP.
+756012011,宙斯,王者歸來,Damage from [c][01a310]Burn[-][/c] increases to {1} of Attack.\nAmount of reduced Attack increases to {2}.\nAmount of increased [c][01a310]Burn[-][/c] damage taken increases to {3}.
+756012012,宙斯,王者歸來,Damage from [c][01a310]Burn[-][/c] increases to {1} of Attack.\nAmount of reduced Attack increases to {2}.\nAmount of increased [c][01a310]Burn[-][/c] damage taken increases to {3}.
+756012013,宙斯,王者歸來,Damage from [c][01a310]Burn[-][/c] increases to {1} of Attack.\nAmount of reduced Attack increases to {2}.\nAmount of increased [c][01a310]Burn[-][/c] damage taken increases to {3}.
+756012014,宙斯,王者歸來,Damage from [c][01a310]Burn[-][/c] increases to {1} of Attack.\nAmount of reduced Attack increases to {2}.\nAmount of increased [c][01a310]Burn[-][/c] damage taken increases to {3}.
+756012015,宙斯,王者歸來,"
+Damage from [c][01a310]Burn[-][/c] increases to {1} of Attack.
+Amount of reduced Attack increases to {2}.
+Amount of increased [c][01a310]Burn[-][/c] damage taken increases to {3}.
+Number of [c][e28002]Divinity[-][/c] stacks obtained increases to {4} stacks."
+756012021,宙斯,王者之冠,Holy Damage increase increases to {1}.
+756012022,宙斯,王者之冠,Holy Damage increase increases to {1}.
+756012023,宙斯,王者之冠,Holy Damage increase increases to {1}.
+756012024,宙斯,王者之冠,Holy Damage increase increases to {1}.
+756012025,宙斯,王者之冠,HP increase increases to {1}.\nAttack increase increases to {2}.\nHoly Damage increase increases to {3}.
+756012031,宙斯,雷霆權柄,Damage dealt increases to {1} of Attack.\nAmount of reduced Attack increases to {2}. Amount of reduced Precision increases to {3}.
+756012032,宙斯,雷霆權柄,Damage dealt increases to {1} of Attack.\nAmount of reduced Attack increases to {2}. Amount of reduced Precision increases to {3}.
+756012033,宙斯,雷霆權柄,Damage dealt increases to {1} of Attack.\nAmount of reduced Attack increases to {2}. Amount of reduced Precision increases to {3}.
+756012034,宙斯,雷霆權柄,Damage dealt increases to {1} of Attack.\nAmount of reduced Attack increases to {2}. Amount of reduced Precision increases to {3}.
+756012035,宙斯,雷霆權柄,Damage dealt increases to {1} of Attack.\nAmount of reduced Attack increases to {2}. Amount of reduced Precision increases to {3}.
+756012041,宙斯,如電穿心,Holy Damage increase increases to {1}.
+756012042,宙斯,如電穿心,Holy Damage increase increases to {1}.
+756012043,宙斯,如電穿心,Holy Damage increase increases to {1}.
+756012044,宙斯,如電穿心,Holy Damage increase increases to {1}.
+756012045,宙斯,如電穿心,Holy Damage increase increases to {1}.\nNumber of [c][e28002]Divinity[-][/c] stacks gained when an ally releases her Active Skill increases to {2} stacks.
+755013011,阿波羅,食日之時,Damage that ignores Armor increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013012,阿波羅,食日之時,Damage that ignores Armor increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013013,阿波羅,食日之時,Damage that ignores Armor increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013014,阿波羅,食日之時,Damage that ignores Armor increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013015,阿波羅,食日之時,Damage that ignores Armor increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013021,阿波羅,搖鈴之聲,Crit increase increases to {1}.
+755013022,阿波羅,搖鈴之聲,Crit increase increases to {1}.
+755013023,阿波羅,搖鈴之聲,Crit increase increases to {1}.
+755013024,阿波羅,搖鈴之聲,Crit increase increases to {1}.
+755013025,阿波羅,搖鈴之聲,HP increase increases to {1}.\nAttack increase increases to {2}.\nCrit increase increases to {3}.
+755013031,阿波羅,覬覦之眼,Extra damage increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013032,阿波羅,覬覦之眼,Extra damage increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013033,阿波羅,覬覦之眼,Extra damage increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013034,阿波羅,覬覦之眼,Extra damage increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013035,阿波羅,覬覦之眼,Extra damage increases to {1} of Attack.\nBP of [c][e28002]Magick Barrier[-][/c] gained increases to {2} of Attack.
+755013041,阿波羅,長鳴之鐘,Speed increase increases to {1}.\nChance to[c][01a310]Stun[-][/c] increases to {2}.
+755013042,阿波羅,長鳴之鐘,Speed increase increases to {1}.\nChance to[c][01a310]Stun[-][/c] increases to {2}.
+755013043,阿波羅,長鳴之鐘,Speed increase increases to {1}.\nChance to[c][01a310]Stun[-][/c] increases to {2}.
+755013044,阿波羅,長鳴之鐘,Speed increase increases to {1}.\nChance to[c][01a310]Stun[-][/c] increases to {2}.
+755013045,阿波羅,長鳴之鐘,Speed increase increases to {1}.\nChance to[c][01a310]Stun[-][/c] increases to {2}.

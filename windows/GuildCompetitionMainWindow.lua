@@ -119,7 +119,14 @@ function GuildCompetitionRecordItem:update(index, info)
 	self.detailsText:SetActive(true)
 	self.detailsGoBtn:SetActive(true)
 
-	local partnerArr = xyd.tables.miscTable:split2num("guild_competition_boss_model", "value", "|")
+	local guildCompetitionData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_COMPETITION)
+	local miscReadCount = 1
+
+	if guildCompetitionData then
+		miscReadCount = guildCompetitionData:getCount()
+	end
+
+	local partnerArr = xyd.tables.miscTable:split2Cost("guild_competition_boss_model", "value", "|#", true)[miscReadCount]
 	local bossName = xyd.tables.partnerTextTable:getName(partnerArr[self.info.boss_id])
 	self.nameText.text = __("GUILD_COMPETITION_HURT_TEXT", self.info.show_info.player_name, bossName, xyd.getRoughDisplayNumber3(tonumber(self.info.total_harm)))
 	self.timeText.text = xyd.getReceiveTime(self.info.time)
@@ -577,7 +584,14 @@ end
 function GuildCompetitionMainWindow:updatePersonGroup(index)
 	if not self.personItemArr then
 		self.personItemArr = {}
-		local partnerArr = xyd.tables.miscTable:split2num("guild_competition_boss_model", "value", "|")
+		local guildCompetitionData = xyd.models.activity:getActivity(xyd.ActivityID.GUILD_COMPETITION)
+		local miscReadCount = 1
+
+		if guildCompetitionData then
+			miscReadCount = guildCompetitionData:getCount()
+		end
+
+		local partnerArr = xyd.tables.miscTable:split2Cost("guild_competition_boss_model", "value", "|#", true)[miscReadCount]
 
 		for i in pairs(partnerArr) do
 			local bossInfo = {

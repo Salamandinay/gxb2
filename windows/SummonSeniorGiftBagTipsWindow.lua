@@ -112,6 +112,11 @@ function SummonSeniorGiftBagTipsWindow:initModel()
 		local partnerIDs_model = partnerIDs_models[num]
 		local partnerIDs_check = partnerIDs_checks[num]
 		local modelGroup = self.modelGroup:NodeByName("model_" .. num).gameObject
+
+		if modelGroup then
+			modelGroup:SetActive(true)
+		end
+
 		local modelClickArea = modelGroup:NodeByName("platformBg_").gameObject
 		local modelScoller = modelGroup:NodeByName("scroller_")
 

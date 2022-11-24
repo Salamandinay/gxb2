@@ -137,8 +137,8 @@ id,buff_id,plus_minus,name,sec
 140,blind,,Cadrage Cosmique,"Effet de Compétence : réduit la Précision, le Blocage, l'Immunité de la cible marquée, et cette dernière a 50% de chance de manquer ses ennemis."
 141,soulTear,,Proie du Centaure,"Effet de Compétence : lorsque la cible marquée lance son attaque, elle subira une partie de ses dégâts infligés (2500% de la valeur de l'Attaque d'Effie au maximum). Seules 2 cibles peuvent être simultanément marquées avec Proie du Centaure."
 142,soulSeal,,Flèche Stellaire,"Effet de Compétence : retarde les effets de Soins. Lorsque la cible est soignée, elle récupère une partie des Soins reçus, puis après que la Flèche Stellaire lui ait été enlevée, elle récupèrera les restants de Soin.\nLorsque la cible est attaquée, elle subira également des dégâts fixes."
-143,bosaidongMark,,buff1,
-144,hadisiEnergyGetRate,,buff1,
-145,hadisiDebuff,,buff2,
-146,zhousiTrueAtk,,buff2,
-147,zhousiDot,,buff1,
+143,bosaidongMark,,Perle de l'Océan,"Effet de Compétence : après que Neptuna ait obtenu 6 couches de Perle de l'Océan, elle les consommera pour augmenter l'Attaque et l'Armure de toutes ses alliées ((inclut Neptuna, ce bonus fourni à Neptuna sera doublé)."
+144,hadisiEnergyGetRate,,Porte de l'Enfer,Effet de Compétence : réduit la valeur de récupération d'Énergie.
+145,hadisiDebuff,,Danger de Mort,Effet de Compétence : réduit les Soins Reçus et la valeur de Barrière obtenue.
+146,zhousiTrueAtk,,Coup de Tonnerre,"Effet de Compétence : inflige des dégâts de Brûlure (en fonction des PV Max de la cible) à la cible marquée pendant 2 tours (lorsqu'Coup de Tonnerre est déclenché et à la fin du tour actuel), réduit l'Attaque de la cible marquée et a de la chance de lui donner un Coup de Soleil."
+147,zhousiDot,,Divinité,Effet de Compétence : augmente les Dégâts Divins.

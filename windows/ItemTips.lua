@@ -2047,7 +2047,8 @@ function ItemTips:sellTouch()
 	if canSell then
 		xyd.WindowManager.get():openWindow("item_sell_window", {
 			itemID = self.itemID,
-			itemNum = self.itemNum
+			itemNum = self.itemNum,
+			soulEquipInfo = self.soulEquipInfo
 		})
 	else
 		xyd.alertTips(__("NOT_SELL"))

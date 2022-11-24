@@ -39,4 +39,18 @@ function ActivityGuildCompetitionData:addUsedPrs(tableId)
 	xyd.models.guild:setGuildCompetitionUsedPrs(self.detail.used_prs)
 end
 
+function ActivityGuildCompetitionData:getActCount()
+	return self.detail.act_count or 1
+end
+
+function ActivityGuildCompetitionData:getCount()
+	local count = self:getActCount() % 3
+
+	if count == 0 then
+		count = 3
+	end
+
+	return count
+end
+
 return ActivityGuildCompetitionData

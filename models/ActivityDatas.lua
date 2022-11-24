@@ -329,7 +329,11 @@ local ModelClass = {
 	[xyd.ActivityID.ACTIVITY_START_ALTAR_LOGIN] = require("app.models.datas.ActivityAltarLoginData"),
 	[xyd.ActivityID.ACTIVITY_START_ALTAR_CHARGE] = require("app.models.datas.ActivityAltarChargeData"),
 	[xyd.ActivityID.ACTIVITY_TURING_MISSION2] = require("app.models.datas.ActivityTuringMission2Data"),
-	[xyd.ActivityID.ACTIVITY_TURING_MISSION3] = require("app.models.datas.ActivityTuringMission3Data")
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION3] = require("app.models.datas.ActivityTuringMission3Data"),
+	[xyd.ActivityID.ACTIVITY_STAR_PLAN] = require("app.models.datas.ActivityStarPlanData"),
+	[xyd.ActivityID.ACTIVITY_TURING_MISSION4] = require("app.models.datas.ActivityTuringMission4Data"),
+	[xyd.ActivityID.ACTIVITY_GIFTBAG_THREE_FIVE_ZERO] = require("app.models.datas.ActivityGiftbagThreeFiveZeroData"),
+	[xyd.ActivityID.ACTIVITY_GIFTBAG_THREE_FIVE_ONE] = require("app.models.datas.ActivityGiftbagThreeFiveZeroData")
 }
 local TableClass = {
 	[xyd.ActivityID.CHECKIN] = function ()

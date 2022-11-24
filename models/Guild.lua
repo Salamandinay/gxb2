@@ -1547,6 +1547,9 @@ function Guild:getGuildCompetitionBossPress(index)
 	local allBlood = 0
 	local curBlood = 0
 	local bossTable = xyd.tables.guildCompetitionBossTable
+
+	print(index, roundIndex)
+
 	local battleId = bossTable["getBattleId" .. index](bossTable, roundIndex)
 	local monsters = xyd.tables.battleTable:getMonsters(battleId)
 

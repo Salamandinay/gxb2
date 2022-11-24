@@ -137,8 +137,8 @@ id,buff_id,plus_minus,name,sec
 140,blind,,강한 별빛,"정밀, 가드, 면역력 감소. 공격 시 50%의 확률로 적을 명중하지 못 한다."
 141,soulTear,,화살의 잔광,공격 후 자신은 자신이 입힌 대미지의 일부 받는다.
 142,soulSeal,,하늘의 화살,치료 받을 때 일부 HP 회복 효과는 하늘의 화살 제거 시 적용한다. 공격 받을 때 추가로 자신 최대 HP에 따른 고정 대미지를 받는다.
-143,bosaidongMark,,buff1,
-144,hadisiEnergyGetRate,,buff1,
-145,hadisiDebuff,,buff2,
-146,zhousiTrueAtk,,buff2,
-147,zhousiDot,,buff1,
+143,bosaidongMark,,바다의 보물,"6스택까지 쌓일 때 쌓인 모든 스택이 제거되며 모든 아군 소녀의 공격력, 방어력 증가시킨다. 해당 효과가 포세이돈 자신에게 적용 시 2배로 적용된다."
+144,hadisiEnergyGetRate,,죽음의 유혹,에너지 획득량 감소.
+145,hadisiDebuff,,심판,"받은 치료 효과, 보호막 획득량 감소."
+146,zhousiTrueAtk,,천둥과 번개,"발동 및 라운드 종료 시, 소지자에게 최대 HP에 의한 연소 대미지를 가하며 목표의 공격력 감소시키며 일정 확률로 눈부신 빛을 부여한다."
+147,zhousiDot,,신성,신성 대미지 증가시킨다.

@@ -267,17 +267,14 @@ function BattlePassBuyWindow:updateLayout()
 		0.65,
 		0.7962962962962963
 	}
-
-	for i = 1, 2 do
-		local ItemIconSpecil = nil
-		local iconItem = xyd.getItemIcon({
-			itemID = awards2[i][1],
-			num = awards2[i][2],
-			scale = scales[i],
-			itemIconSpecil = ItemIconSpecil,
-			uiRoot = self.itemGroup
-		})
-	end
+	local ItemIconSpecil = nil
+	local iconItem = xyd.getItemIcon({
+		itemID = awards2[1][1],
+		num = awards2[1][2],
+		scale = scales[1],
+		itemIconSpecil = ItemIconSpecil,
+		uiRoot = self.itemGroup
+	})
 
 	self.itemGroup:GetComponent(typeof(UILayout)):Reposition()
 

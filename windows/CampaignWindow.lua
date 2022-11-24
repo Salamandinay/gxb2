@@ -371,7 +371,7 @@ function CampaignWindow:initWindow()
 	self.redPoint = self.dogMiniGameBtn:ComponentByName("redPoint", typeof(UISprite))
 	self.dogMiniGameBtnLabel = self.dogMiniGameBtn:ComponentByName("label", typeof(UILabel))
 
-	if xyd.models.selfPlayer:isDogVersionOpen() then
+	if xyd.isDogVersionOpen() then
 		self.dogMiniGameBtn:SetActive(true)
 	else
 		self.dogMiniGameBtn:SetActive(false)

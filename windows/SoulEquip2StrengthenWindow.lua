@@ -1353,6 +1353,7 @@ function SoulEquip2StrengthenWindow:dispose()
 	local wnd = xyd.getWindow("soul_equip_info_window")
 
 	if wnd then
+		wnd:initData()
 		wnd:onClickTab()
 	end
 

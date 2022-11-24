@@ -4155,79 +4155,174 @@ Lorsqu\'une alliée subit des dégâts infligés par un ennemi marqué avec [c][
 
 [c][e28002]Cadrage Cosmique (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 60% la Précision, de 60% le Blocage et de 60% l\'Immunité de la cible marquée. Lorsque la cible marquée lance son attaque, elle a 50% de chance de manquer ses cibles."
-756011011,波賽頓,海底螺旋,3次攻擊傷害提升為{1}、{2}、{3}，格擋提升為{4}。
-756011012,波賽頓,海底螺旋,3次攻擊傷害提升為{1}、{2}、{3}，格擋提升為{4}。
-756011013,波賽頓,海底螺旋,3次攻擊傷害提升為{1}、{2}、{3}，格擋提升為{4}。
-756011014,波賽頓,海底螺旋,3次攻擊傷害提升為{1}、{2}、{3}，格擋提升為{4}。
-756011015,波賽頓,海底螺旋,3次攻擊傷害提升為{1}、{2}、{3}，格擋提升為{4}。
+756011011,波賽頓,海底螺旋,"Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques ({1}/{2}/{3} de l'Attaque de Neptuna) et augmente de {4} le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
+756011012,波賽頓,海底螺旋,"Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques ({1}/{2}/{3} de l'Attaque de Neptuna) et augmente de {4} le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
+756011013,波賽頓,海底螺旋,"Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques ({1}/{2}/{3} de l'Attaque de Neptuna) et augmente de {4} le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
+756011014,波賽頓,海底螺旋,"Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques ({1}/{2}/{3} de l'Attaque de Neptuna) et augmente de {4} le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
+756011015,波賽頓,海底螺旋,"Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques ({1}/{2}/{3} de l'Attaque de Neptuna) et augmente de {4} le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
 756011021,波賽頓,風起雲湧,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de {1}, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011022,波賽頓,風起雲湧,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de {1}, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011023,波賽頓,風起雲湧,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de {1}, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011024,波賽頓,風起雲湧,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de {1}, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011025,波賽頓,風起雲湧,"Augmente les PV de {1}, l'Attaque de {2}, le Blocage de {3}, l'Immunité de 30%, la Résistance aux Critiques de 30%."
-756011031,波賽頓,至尊三叉,恢復生命提升為{1}，精準降低提升為{2}，格擋加成提升為{3}。
-756011032,波賽頓,至尊三叉,恢復生命提升為{1}，精準降低提升為{2}，格擋加成提升為{3}。
-756011033,波賽頓,至尊三叉,恢復生命提升為{1}，精準降低提升為{2}，格擋加成提升為{3}。
-756011034,波賽頓,至尊三叉,恢復生命提升為{1}，精準降低提升為{2}，格擋加成提升為{3}。
-756011035,波賽頓,至尊三叉,恢復生命提升為{1}，精準降低提升為{2}，格擋加成提升為{3}。
-756011051,波賽頓,大海之靈,恢復生命提升為{1}，[c][e28002]海洋珍貝[-][/c]攻擊增加提升為{2}，護甲增加提升為{3}。
-755012011,黑帝斯,漫漫長夜,攻擊傷害提升為{1}，生命上限傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012012,黑帝斯,漫漫長夜,攻擊傷害提升為{1}，生命上限傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012013,黑帝斯,漫漫長夜,攻擊傷害提升為{1}，生命上限傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012014,黑帝斯,漫漫長夜,攻擊傷害提升為{1}，生命上限傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012015,黑帝斯,漫漫長夜,攻擊傷害提升為{1}，生命上限傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
+756011031,波賽頓,至尊三叉,"Lorsque Neptuna lance son Attaque Basique, elle récupère des PV ({1} de ses PV perdus), réduit de {2} la Précision de tous les ennemis pendant 3 tours (cumulable) et augmente de {3} le Blocage de ses alliées de la ligne avant pendant 3 tours."
+756011032,波賽頓,至尊三叉,"Lorsque Neptuna lance son Attaque Basique, elle récupère des PV ({1} de ses PV perdus), réduit de {2} la Précision de tous les ennemis pendant 3 tours (cumulable) et augmente de {3} le Blocage de ses alliées de la ligne avant pendant 3 tours."
+756011033,波賽頓,至尊三叉,"Lorsque Neptuna lance son Attaque Basique, elle récupère des PV ({1} de ses PV perdus), réduit de {2} la Précision de tous les ennemis pendant 3 tours (cumulable) et augmente de {3} le Blocage de ses alliées de la ligne avant pendant 3 tours."
+756011034,波賽頓,至尊三叉,"Lorsque Neptuna lance son Attaque Basique, elle récupère des PV ({1} de ses PV perdus), réduit de {2} la Précision de tous les ennemis pendant 3 tours (cumulable) et augmente de {3} le Blocage de ses alliées de la ligne avant pendant 3 tours."
+756011035,波賽頓,至尊三叉,"Lorsque Neptuna lance son Attaque Basique, elle récupère des PV ({1} de ses PV perdus), réduit de {2} la Précision de tous les ennemis pendant 3 tours (cumulable) et augmente de {3} le Blocage de ses alliées de la ligne avant pendant 3 tours."
+756011051,波賽頓,大海之靈,"
+Lorsqu\'une de ses alliées réussit à bloquer une attaque, Neptuna obtient 1 couche de [c][e28002]Perle de l\'Océan[-][/c], récupère des PV ({1} de ses PV perdus) et a 50% de chance d\'infliger [c][e28002]Cristallisation[-][/c] à 2 ennemis aléatoires pendant 2 tours.
+Au début de la bataille, elle a 100% de chance de [c][e28002]provoquer[-][/c] tous les ennemis pendant 2 tours.
+
+[c][e28002]Perle de l\'Océan (Effet de Compétence, cumulable) :[-][/c]
+Après que Neptuna ait obtenu 6 couches de Perle de l\'Océan, elle les consommera pour augmenter l\'Attaque et l\'Armure de toutes ses alliées de {2} pendant 3 tours (inclut Neptuna, ce bonus fourni à Neptuna sera doublé)."
+755012011,黑帝斯,漫漫長夜,"
+Inflige {1} d\'Attaque aux 2 ennemis ayant le moins de PV, et leur inflige des dégâts supplémentaires ({2} de leurs PV Max, 3000% de la valeur de l\'Attaque de Nadès au maximum) et marque tous les ennemis avec [c][e28002]Porte de l\'Enfer[-][/c] et [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de la Barrière obtenue (3 couches au maximum)."
+755012012,黑帝斯,漫漫長夜,"
+Inflige {1} d\'Attaque aux 2 ennemis ayant le moins de PV, et leur inflige des dégâts supplémentaires ({2} de leurs PV Max, 3000% de la valeur de l\'Attaque de Nadès au maximum) et marque tous les ennemis avec [c][e28002]Porte de l\'Enfer[-][/c] et [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de la Barrière obtenue (3 couches au maximum)."
+755012013,黑帝斯,漫漫長夜,"
+Inflige {1} d\'Attaque aux 2 ennemis ayant le moins de PV, et leur inflige des dégâts supplémentaires ({2} de leurs PV Max, 3000% de la valeur de l\'Attaque de Nadès au maximum) et marque tous les ennemis avec [c][e28002]Porte de l\'Enfer[-][/c] et [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de la Barrière obtenue (3 couches au maximum)."
+755012014,黑帝斯,漫漫長夜,"
+Inflige {1} d\'Attaque aux 2 ennemis ayant le moins de PV, et leur inflige des dégâts supplémentaires ({2} de leurs PV Max, 3000% de la valeur de l\'Attaque de Nadès au maximum) et marque tous les ennemis avec [c][e28002]Porte de l\'Enfer[-][/c] et [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de la Barrière obtenue (3 couches au maximum)."
+755012015,黑帝斯,漫漫長夜,"
+Inflige {1} d\'Attaque aux 2 ennemis ayant le moins de PV, et leur inflige des dégâts supplémentaires ({2} de leurs PV Max, 3000% de la valeur de l\'Attaque de Nadès au maximum) et marque tous les ennemis avec [c][e28002]Porte de l\'Enfer[-][/c] et [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de la Barrière obtenue (3 couches au maximum)."
 755012021,黑帝斯,寂寂死神,"Augmente les PV de 30%, l'Attaque de 40%, les Dégâts Critiques de 50%, les Dégâts des Compétences de {1} et la Vitesse de 80."
 755012022,黑帝斯,寂寂死神,"Augmente les PV de 30%, l'Attaque de 40%, les Dégâts Critiques de 50%, les Dégâts des Compétences de {1} et la Vitesse de 80."
 755012023,黑帝斯,寂寂死神,"Augmente les PV de 30%, l'Attaque de 40%, les Dégâts Critiques de 50%, les Dégâts des Compétences de {1} et la Vitesse de 80."
 755012024,黑帝斯,寂寂死神,"Augmente les PV de 30%, l'Attaque de 40%, les Dégâts Critiques de 50%, les Dégâts des Compétences de {1} et la Vitesse de 80."
 755012025,黑帝斯,寂寂死神,"Augmente les PV de {1}, l'Attaque de {2}, les Dégâts Critiques de 50%, les Dégâts des Compétences de {3} et la Vitesse de 80."
-755012031,黑帝斯,幽幽骨鳥,無視護甲的攻擊傷害提升為{1}，自身死亡時造成的生命百分比傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012032,黑帝斯,幽幽骨鳥,無視護甲的攻擊傷害提升為{1}，自身死亡時造成的生命百分比傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012033,黑帝斯,幽幽骨鳥,無視護甲的攻擊傷害提升為{1}，自身死亡時造成的生命百分比傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012034,黑帝斯,幽幽骨鳥,無視護甲的攻擊傷害提升為{1}，自身死亡時造成的生命百分比傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012035,黑帝斯,幽幽骨鳥,無視護甲的攻擊傷害提升為{1}，自身死亡時造成的生命百分比傷害提升為{2}，[c][e28002]判決[-][/c]的治療量降低提升為{3}，獲得屏障量降低提升為{4}。
-755012041,黑帝斯,森森墓碑,對敵方生命大於等於50%的目標生命百分比傷害提升為{1}，生命低於50%的目標生命百分比傷害提升為{2}。
-755012042,黑帝斯,森森墓碑,對敵方生命大於等於50%的目標生命百分比傷害提升為{1}，生命低於50%的目標生命百分比傷害提升為{2}。
-755012043,黑帝斯,森森墓碑,對敵方生命大於等於50%的目標生命百分比傷害提升為{1}，生命低於50%的目標生命百分比傷害提升為{2}。
-755012044,黑帝斯,森森墓碑,對敵方生命大於等於50%的目標生命百分比傷害提升為{1}，生命低於50%的目標生命百分比傷害提升為{2}。
-755012045,黑帝斯,森森墓碑,對敵方生命大於等於50%的目標生命百分比傷害提升為{1}，生命低於50%的目標生命百分比傷害提升為{2}。
-756012011,宙斯,王者歸來,燃燒傷害提升為{1}，攻擊降低提升為{2}，受到的燃燒傷害加成提升為{3}。
-756012012,宙斯,王者歸來,燃燒傷害提升為{1}，攻擊降低提升為{2}，受到的燃燒傷害加成提升為{3}。
-756012013,宙斯,王者歸來,燃燒傷害提升為{1}，攻擊降低提升為{2}，受到的燃燒傷害加成提升為{3}。
-756012014,宙斯,王者歸來,燃燒傷害提升為{1}，攻擊降低提升為{2}，受到的燃燒傷害加成提升為{3}。
-756012015,宙斯,王者歸來,燃燒傷害提升為{1}，攻擊降低提升為{2}，受到的燃燒傷害加成提升為{3}，獲得[c][e28002]神性[-][/c]層數提升為{4}。
+755012031,黑帝斯,幽幽骨鳥,"
+L\'Attaque Basique inflige {1} d\'Attaque à l\'ennemi ayant le plus de l\'Énergie tout en ignorant son Armure, le marque avec [c][e28002]Porte de l\'Enfer[-][/c] pendant 3 tours, et fournit 70 d\'Énergies à Nadès.
+Lorsque Nadès est vaincue, elle inflige des dégâts ({2} des PV Max de la cible, 4000% de la valeur de l\'Attaque de Nadès au maximum) à tous les ennemis et les marque avec [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toutes ses alliées (inclut Nadès) pendant 3 tours (cumulable), les soigne de 25% de leurs PV Max et leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de Barrière obtenue (3 couches au maximum)."
+755012032,黑帝斯,幽幽骨鳥,"
+L\'Attaque Basique inflige {1} d\'Attaque à l\'ennemi ayant le plus de l\'Énergie tout en ignorant son Armure, le marque avec [c][e28002]Porte de l\'Enfer[-][/c] pendant 3 tours, et fournit 70 d\'Énergies à Nadès.
+Lorsque Nadès est vaincue, elle inflige des dégâts ({2} des PV Max de la cible, 4000% de la valeur de l\'Attaque de Nadès au maximum) à tous les ennemis et les marque avec [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toutes ses alliées (inclut Nadès) pendant 3 tours (cumulable), les soigne de 25% de leurs PV Max et leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de Barrière obtenue (3 couches au maximum)."
+755012033,黑帝斯,幽幽骨鳥,"
+L\'Attaque Basique inflige {1} d\'Attaque à l\'ennemi ayant le plus de l\'Énergie tout en ignorant son Armure, le marque avec [c][e28002]Porte de l\'Enfer[-][/c] pendant 3 tours, et fournit 70 d\'Énergies à Nadès.
+Lorsque Nadès est vaincue, elle inflige des dégâts ({2} des PV Max de la cible, 4000% de la valeur de l\'Attaque de Nadès au maximum) à tous les ennemis et les marque avec [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toutes ses alliées (inclut Nadès) pendant 3 tours (cumulable), les soigne de 25% de leurs PV Max et leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de Barrière obtenue (3 couches au maximum)."
+755012034,黑帝斯,幽幽骨鳥,"
+L\'Attaque Basique inflige {1} d\'Attaque à l\'ennemi ayant le plus de l\'Énergie tout en ignorant son Armure, le marque avec [c][e28002]Porte de l\'Enfer[-][/c] pendant 3 tours, et fournit 70 d\'Énergies à Nadès.
+Lorsque Nadès est vaincue, elle inflige des dégâts ({2} des PV Max de la cible, 4000% de la valeur de l\'Attaque de Nadès au maximum) à tous les ennemis et les marque avec [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toutes ses alliées (inclut Nadès) pendant 3 tours (cumulable), les soigne de 25% de leurs PV Max et leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de Barrière obtenue (3 couches au maximum)."
+755012035,黑帝斯,幽幽骨鳥,"
+L\'Attaque Basique inflige {1} d\'Attaque à l\'ennemi ayant le plus de l\'Énergie tout en ignorant son Armure, le marque avec [c][e28002]Porte de l\'Enfer[-][/c] pendant 3 tours, et fournit 70 d\'Énergies à Nadès.
+Lorsque Nadès est vaincue, elle inflige des dégâts ({2} des PV Max de la cible, 4000% de la valeur de l\'Attaque de Nadès au maximum) à tous les ennemis et les marque avec [c][e28002]Danger de Mort[-][/c] pendant 3 tours.
+Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toutes ses alliées (inclut Nadès) pendant 3 tours (cumulable), les soigne de 25% de leurs PV Max et leur fournit une [c][e28002]Barrière[-][/c] de cette même valeur.
+
+[c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
+Réduit de 50% la valeur de récupération d\'Énergie.
+[c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
+Réduit de {3} les Soins Reçus et de {4} la valeur de Barrière obtenue (3 couches au maximum)."
+755012041,黑帝斯,森森墓碑,"À la fin de chaque tour, inflige des dégâts ({1} des PV Max de la cible) aux ennemis dont les PV sont supérieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum).\nÀ la fin de chaque tour, inflige des dégâts ({2} des PV perdus de la cible) aux ennemis dont les PV sont inférieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum)."
+755012042,黑帝斯,森森墓碑,"À la fin de chaque tour, inflige des dégâts ({1} des PV Max de la cible) aux ennemis dont les PV sont supérieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum).\nÀ la fin de chaque tour, inflige des dégâts ({2} des PV perdus de la cible) aux ennemis dont les PV sont inférieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum)."
+755012043,黑帝斯,森森墓碑,"À la fin de chaque tour, inflige des dégâts ({1} des PV Max de la cible) aux ennemis dont les PV sont supérieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum).\nÀ la fin de chaque tour, inflige des dégâts ({2} des PV perdus de la cible) aux ennemis dont les PV sont inférieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum)."
+755012044,黑帝斯,森森墓碑,"À la fin de chaque tour, inflige des dégâts ({1} des PV Max de la cible) aux ennemis dont les PV sont supérieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum).\nÀ la fin de chaque tour, inflige des dégâts ({2} des PV perdus de la cible) aux ennemis dont les PV sont inférieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum)."
+755012045,黑帝斯,森森墓碑,"À la fin de chaque tour, inflige des dégâts ({1} des PV Max de la cible) aux ennemis dont les PV sont supérieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum).\nÀ la fin de chaque tour, inflige des dégâts ({2} des PV perdus de la cible) aux ennemis dont les PV sont inférieurs à 50% (3000% de la valeur de l'Attaque de Nadès au maximum)."
+756012011,宙斯,王者歸來,"
+Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] ({1} de l\'Attaque de Zeusia) pendant 2 tours, réduit de {2} l\'Attaque de tous les ennemis pendant 2 tours, et augmente de {3} les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
+Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c]."
+756012012,宙斯,王者歸來,"
+Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] ({1} de l\'Attaque de Zeusia) pendant 2 tours, réduit de {2} l\'Attaque de tous les ennemis pendant 2 tours, et augmente de {3} les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
+Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c]."
+756012013,宙斯,王者歸來,"
+Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] ({1} de l\'Attaque de Zeusia) pendant 2 tours, réduit de {2} l\'Attaque de tous les ennemis pendant 2 tours, et augmente de {3} les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
+Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c]."
+756012014,宙斯,王者歸來,"
+Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] ({1} de l\'Attaque de Zeusia) pendant 2 tours, réduit de {2} l\'Attaque de tous les ennemis pendant 2 tours, et augmente de {3} les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
+Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c]."
+756012015,宙斯,王者歸來,"
+Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] ({1} de l\'Attaque de Zeusia) pendant 2 tours, réduit de {2} l\'Attaque de tous les ennemis pendant 2 tours, et augmente de {3} les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
+Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra {4} couches de <font color=0xe28002>Divinité[-][/c]."
 756012021,宙斯,王者之冠,"Augmente les PV de 30%, l'Attaque de 30%, les Dégâts Divins de {1}, la Résistance aux Dégâts de 30% et la Vitesse de 80."
 756012022,宙斯,王者之冠,"Augmente les PV de 30%, l'Attaque de 30%, les Dégâts Divins de {1}, la Résistance aux Dégâts de 30% et la Vitesse de 80."
 756012023,宙斯,王者之冠,"Augmente les PV de 30%, l'Attaque de 30%, les Dégâts Divins de {1}, la Résistance aux Dégâts de 30% et la Vitesse de 80."
 756012024,宙斯,王者之冠,"Augmente les PV de 30%, l'Attaque de 30%, les Dégâts Divins de {1}, la Résistance aux Dégâts de 30% et la Vitesse de 80."
 756012025,宙斯,王者之冠,"Augmente les PV de {1}, l'Attaque de {2}, les Dégâts Divins de {3}, la Résistance aux Dégâts de 30% et la Vitesse de 80."
-756012031,宙斯,雷霆權柄,攻擊傷害提升為{1}，攻擊降低提升為{2}，精準降低提升為{3}。
-756012032,宙斯,雷霆權柄,攻擊傷害提升為{1}，攻擊降低提升為{2}，精準降低提升為{3}。
-756012033,宙斯,雷霆權柄,攻擊傷害提升為{1}，攻擊降低提升為{2}，精準降低提升為{3}。
-756012034,宙斯,雷霆權柄,攻擊傷害提升為{1}，攻擊降低提升為{2}，精準降低提升為{3}。
-756012035,宙斯,雷霆權柄,攻擊傷害提升為{1}，攻擊降低提升為{2}，精準降低提升為{3}。
-756012041,宙斯,如電穿心,自身神聖傷害加成提升為{1}。
-756012042,宙斯,如電穿心,自身神聖傷害加成提升為{1}。
-756012043,宙斯,如電穿心,自身神聖傷害加成提升為{1}。
-756012044,宙斯,如電穿心,自身神聖傷害加成提升為{1}。
-756012045,宙斯,如電穿心,自身神聖傷害加成提升為{1}，獲得[c][e28002]神性[-][/c]層數提升為{2}。
-755013011,阿波羅,精英技能-主动,
-755013012,阿波羅,精英技能-主动,
-755013013,阿波羅,精英技能-主动,
-755013014,阿波羅,精英技能-主动,
-755013015,阿波羅,精英技能-主动,
-755013021,阿波羅,精英技能-被动1,
-755013022,阿波羅,精英技能-被动1,
-755013023,阿波羅,精英技能-被动1,
-755013024,阿波羅,精英技能-被动1,
-755013025,阿波羅,精英技能-被动1,
-755013031,阿波羅,精英技能-被动2,
-755013032,阿波羅,精英技能-被动2,
-755013033,阿波羅,精英技能-被动2,
-755013034,阿波羅,精英技能-被动2,
-755013035,阿波羅,精英技能-被动2,
-755013041,阿波羅,精英技能-被动3,
-755013042,阿波羅,精英技能-被动3,
-755013043,阿波羅,精英技能-被动3,
-755013044,阿波羅,精英技能-被动3,
-755013045,阿波羅,精英技能-被动3,
+756012031,宙斯,雷霆權柄,"L'Attaque Basique inflige {1} d'Attaque à 3 ennemis aléatoires, en augmentant de 20% les dégâts de [c][01a310]Brûlure[-][/c] qu'ils subissent pendant 4 tours, réduit la Précision de {2} et l'Attaque de {3} de ces 3 ennemis pendant 3 tours (cumulable).\nZeusia obtient 2 couches de [c][e28002]Divinité[-][/c]."
+756012032,宙斯,雷霆權柄,"L'Attaque Basique inflige {1} d'Attaque à 3 ennemis aléatoires, en augmentant de 20% les dégâts de [c][01a310]Brûlure[-][/c] qu'ils subissent pendant 4 tours, réduit la Précision de {2} et l'Attaque de {3} de ces 3 ennemis pendant 3 tours (cumulable).\nZeusia obtient 2 couches de [c][e28002]Divinité[-][/c]."
+756012033,宙斯,雷霆權柄,"L'Attaque Basique inflige {1} d'Attaque à 3 ennemis aléatoires, en augmentant de 20% les dégâts de [c][01a310]Brûlure[-][/c] qu'ils subissent pendant 4 tours, réduit la Précision de {2} et l'Attaque de {3} de ces 3 ennemis pendant 3 tours (cumulable).\nZeusia obtient 2 couches de [c][e28002]Divinité[-][/c]."
+756012034,宙斯,雷霆權柄,"L'Attaque Basique inflige {1} d'Attaque à 3 ennemis aléatoires, en augmentant de 20% les dégâts de [c][01a310]Brûlure[-][/c] qu'ils subissent pendant 4 tours, réduit la Précision de {2} et l'Attaque de {3} de ces 3 ennemis pendant 3 tours (cumulable).\nZeusia obtient 2 couches de [c][e28002]Divinité[-][/c]."
+756012035,宙斯,雷霆權柄,"L'Attaque Basique inflige {1} d'Attaque à 3 ennemis aléatoires, en augmentant de 20% les dégâts de [c][01a310]Brûlure[-][/c] qu'ils subissent pendant 4 tours, réduit la Précision de {2} et l'Attaque de {3} de ces 3 ennemis pendant 3 tours (cumulable).\nZeusia obtient 2 couches de [c][e28002]Divinité[-][/c]."
+756012041,宙斯,如電穿心,"Lorsqu'une alliée lance sa Compétence Active, Zeusia obtient 1 couche de [c][e28002]Divinité[-][/c].\nSi Zeusia obtient 12 couches de [c][e28002]Divinité[-][/c], elle les consommera pour augmenter ses Dégâts Divins de {1} pendant 4 tours et marquera tous les ennemis avec [c][e28002]Coup de Tonnerre[-][/c] pendant 4 tours."
+756012042,宙斯,如電穿心,"Lorsqu'une alliée lance sa Compétence Active, Zeusia obtient 1 couche de [c][e28002]Divinité[-][/c].\nSi Zeusia obtient 12 couches de [c][e28002]Divinité[-][/c], elle les consommera pour augmenter ses Dégâts Divins de {1} pendant 4 tours et marquera tous les ennemis avec [c][e28002]Coup de Tonnerre[-][/c] pendant 4 tours."
+756012043,宙斯,如電穿心,"Lorsqu'une alliée lance sa Compétence Active, Zeusia obtient 1 couche de [c][e28002]Divinité[-][/c].\nSi Zeusia obtient 12 couches de [c][e28002]Divinité[-][/c], elle les consommera pour augmenter ses Dégâts Divins de {1} pendant 4 tours et marquera tous les ennemis avec [c][e28002]Coup de Tonnerre[-][/c] pendant 4 tours."
+756012044,宙斯,如電穿心,"Lorsqu'une alliée lance sa Compétence Active, Zeusia obtient 1 couche de [c][e28002]Divinité[-][/c].\nSi Zeusia obtient 12 couches de [c][e28002]Divinité[-][/c], elle les consommera pour augmenter ses Dégâts Divins de {1} pendant 4 tours et marquera tous les ennemis avec [c][e28002]Coup de Tonnerre[-][/c] pendant 4 tours."
+756012045,宙斯,如電穿心,"Lorsqu'une alliée lance sa Compétence Active, Zeusia obtient {2} couches de [c][e28002]Divinité[-][/c].\nSi Zeusia obtient 12 couches de [c][e28002]Divinité[-][/c], elle les consommera pour augmenter ses Dégâts Divins de {1} pendant 4 tours et marquera tous les ennemis avec [c][e28002]Coup de Tonnerre[-][/c] pendant 4 tours."
+755013011,阿波羅,食日之時,無視護甲的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013012,阿波羅,食日之時,無視護甲的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013013,阿波羅,食日之時,無視護甲的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013014,阿波羅,食日之時,無視護甲的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013015,阿波羅,食日之時,無視護甲的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013021,阿波羅,搖鈴之聲,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de {1} et la Vitesse de 100."
+755013022,阿波羅,搖鈴之聲,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de {1} et la Vitesse de 100."
+755013023,阿波羅,搖鈴之聲,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de {1} et la Vitesse de 100."
+755013024,阿波羅,搖鈴之聲,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de {1} et la Vitesse de 100."
+755013025,阿波羅,搖鈴之聲,"Augmente les PV de {1}, l'Attaque de {2}, la Résistance aux Dégâts de 30%, les Critiques de {3} et la Vitesse de 100."
+755013031,阿波羅,覬覦之眼,追加的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013032,阿波羅,覬覦之眼,追加的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013033,阿波羅,覬覦之眼,追加的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013034,阿波羅,覬覦之眼,追加的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013035,阿波羅,覬覦之眼,追加的攻擊傷害提升為{1}，恢復攻擊的[c][e28002]屏障[-][/c]提升為{2}。
+755013041,阿波羅,長鳴之鐘,速度提升為{1}，[c][01a310]暈眩[-][/c]機率提升為{2}。
+755013042,阿波羅,長鳴之鐘,速度提升為{1}，[c][01a310]暈眩[-][/c]機率提升為{2}。
+755013043,阿波羅,長鳴之鐘,速度提升為{1}，[c][01a310]暈眩[-][/c]機率提升為{2}。
+755013044,阿波羅,長鳴之鐘,速度提升為{1}，[c][01a310]暈眩[-][/c]機率提升為{2}。
+755013045,阿波羅,長鳴之鐘,速度提升為{1}，[c][01a310]暈眩[-][/c]機率提升為{2}。

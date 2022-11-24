@@ -62,7 +62,7 @@ id,tables
 61,
 62,
 63,activity_make_cake
-64,
+64,activity_jackpot_award|activity_jackpot_machine
 65,
 66,
 67,
@@ -101,7 +101,7 @@ id,tables
 100,
 101,
 102,activity_sports_rank_award1|activity_sports_rank_award2|activity_sports_rank_award3
-103,
+103,gift
 104,
 105,
 106,battlepass_award
@@ -166,7 +166,7 @@ id,tables
 165,
 166,activity_lafuli_award|activity_lafuli_shop|activity|misc|gift|giftbag|giftbox_optional|item
 167,
-168,activity_gacha_partner_award|activity|misc|gift|giftbag|giftbox_optional|item
+168,activity_gacha_partner_award|activity|misc|gift|giftbag|giftbox_optional
 169,activity_christmas_sale_awards
 170,
 171,
@@ -256,7 +256,7 @@ id,tables
 255,
 256,
 257,
-258,
+258,activity_jackpot_gamble
 259,activity_growth_plan
 260,activity_luckyboxes_award|activity_luckyboxes_mission
 261,
@@ -312,7 +312,7 @@ id,tables
 311,
 312,activity_sand_shop
 313,activity_cupid_gift_award
-314,
+314,summon|misc|activity_warmup_arena_partner|activity_warmup_arena_equip|activity_warmup_arena_boss|activity_warmup_arena_taskaward
 315,
 316,activity_goldfish|activity_goldfish_shop
 317,activity_goldfish_awards

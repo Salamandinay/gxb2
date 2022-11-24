@@ -1282,7 +1282,12 @@ function Partner:takeOnSoulEquips(equipIDs, callbalck)
 	local now_equips = {}
 
 	for i = 1, 5 do
-		now_equips[i] = equipIDs[i]
+		local equipID = equipIDs[i] or 0
+		local equip = xyd.models.slot:getSoulEquip(equipID)
+
+		if equip then
+			now_equips[i] = equipIDs[i]
+		end
 	end
 
 	self:setSoulEquips(now_equips)
