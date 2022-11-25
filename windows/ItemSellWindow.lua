@@ -37,7 +37,7 @@ function ItemSellWindow:initUIComponent()
 	self.labelName_.text = name
 	self.btnSell_label.text = __("ITEM_SELL")
 
-	if self.soulEquipInfo then
+	if self.soulEquipInfo and self.soulEquipInfo.soulEquipID then
 		if self.soulEquipInfo.soulEquipID and xyd.models.slot:getSoulEquip(self.soulEquipInfo.soulEquipID) then
 			self.equip = xyd.models.slot:getSoulEquip(self.soulEquipInfo.soulEquipID)
 			self.labelName_.color = xyd.getQualityColor(self.equip:getQlt())
