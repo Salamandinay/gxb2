@@ -1,4 +1,6 @@
 id,name,brief,desc,name1,type,type_config,qlt,group,is_economy,stack_limit,level,icon,light_effect,gift_id,is_auto_open,equip,pub_scroll_type,partner_cost,treasure_cost,get_ways,go_window,getway_item,dropbox_show,is_sell,sell_price,summon_id,show_in_bag,show_bag_type,filter_type,show_in_forge,skin_id,collection_id,para,avatar_frame_effect,effect_mask,dress_id,clear_act,jobGiftBoxID,is_change_border,sort_forward,is_soul_equip_box
+8064,-1,-1,-1,,19,,5,,0,,1,frame_8064,,,,,,,,,,,,,,,0,,,,,32064,,frame_arena64,,,,,,,
+8065,-1,-1,-1,,19,,5,,0,,1,frame_8065,,,,,,,,,,,,,,,0,,,,,32065,,frame_arena8,,,,,,,
 8066,-1,-1,-1,,19,,5,,0,,1,frame_8066,,,,,,,,,,,,,,,0,,,,,32066,,frame_arena4,,,,,,,
 8067,-1,-1,-1,,19,,5,,0,,1,frame_8067,,,,,,,,,,,,,,,0,,,,,32067,,frame_arena1,,,,,,,
 8068,-1,-1,-1,,19,,5,,0,,1,frame_8068,,,,,,,,,,,,,,,0,,,,,32068,,,,,,,,,
@@ -98,6 +100,7 @@ id,name,brief,desc,name1,type,type_config,qlt,group,is_economy,stack_limit,level
 9312,-1,-1,,,20,,3,,,,,,,,,,,,,,,,,,,,,,,,,72012,,,,,,,,,
 9313,-1,-1,,,20,,4,,,,,emotion_dynamic_40_en_en,,,,,,,,,,,,,,,,,,,,72040,,,,,,,,,
 9314,-1,-1,,,20,,4,,,,,emotion_dynamic_41_en_en,,,,,,,,,,,,,,,,,,,,72041,,,,,,,,,
+9315,-1,-1,,,20,,4,,,,,,,,,,,,,,,,,,,,,,,,,72051,,,,,,,,,
 101001,-1,,,-1,13,1002,,,0,,,icon_15,,,,,,,,7,,,,,,,0,,,,,,,,,,,,,,
 101002,-1,,,-1,13,1002,,,0,,,icon_16,,,,,,,,7,,,,,,,0,,,,,,,,,,,,,,
 101003,-1,,,-1,13,1002,,,0,,,icon_17,,,,,,,,7,,,,,,,0,,,,,,,,,,,,,,
@@ -1424,6 +1427,3 @@ id,name,brief,desc,name1,type,type_config,qlt,group,is_economy,stack_limit,level
 2000069,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50069,,,,,,,,,
 2000070,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50070,,,,,,,,,
 2000071,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50071,,,,,,,,,
-2000072,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50072,,,,,,,,,
-2000073,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50073,,,,,,,,,
-2000074,-1,-1,,-1,21,,1,,0,,1,,,,,,,,,,,,,,,,0,,,,,50074,,,,,,,,,

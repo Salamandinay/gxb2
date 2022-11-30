@@ -15177,7 +15177,7 @@ La cible provoquée retournera son Attaque Basique et sa Compétence Active sur 
 756011012,Neptuna,Gouffre Sans Fond,"Vous n'avez pas conscience de l'étendue du pouvoir de l'océan. Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques (520%/680%/842% de l'Attaque de Neptuna) et augmente de 37% le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
 756011013,Neptuna,Gouffre Sans Fond,"Vous n'avez pas conscience de l'étendue du pouvoir de l'océan. Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques (530%/690%/858% de l'Attaque de Neptuna) et augmente de 38% le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
 756011014,Neptuna,Gouffre Sans Fond,"Vous n'avez pas conscience de l'étendue du pouvoir de l'océan. Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques (540%/700%/874% de l'Attaque de Neptuna) et augmente de 39% le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
-756011015,Neptuna,Gouffre Sans Fond,"Vous n'avez pas conscience de l'étendue du pouvoir de l'océan. Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques (545%/710%/900% de l'Attaque de Neptuna) et augmente de 40% le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
+756011015,Neptuna,Gouffre Sans Fond,"Vous n'avez pas conscience de l'étendue du pouvoir de l'océan. Réduit de 80% le Blocage d'un ennemi aléatoire pendant 3 tours, lui lance 3 attaques (545%/710%/890% de l'Attaque de Neptuna) et augmente de 40% le Blocage de toutes ses alliées (inclut Neptuna) pendant 3 tours (cumulable)."
 756011021,Neptuna,Tourbillon Funeste,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 52%, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011022,Neptuna,Tourbillon Funeste,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 54%, l'Immunité de 30%, la Résistance aux Critiques de 30%."
 756011023,Neptuna,Tourbillon Funeste,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 56%, l'Immunité de 30%, la Résistance aux Critiques de 30%."
@@ -15384,7 +15384,7 @@ Lorsqu\'une de ses alliées est vaincue, elle augmente de 70 la Vitesse de toute
 [c][e28002]Porte de l\'Enfer (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 50% la valeur de récupération d\'Énergie.
 [c][e28002]Danger de Mort (Effet de Compétence, cumulable) :[-][/c]
-Réduit de 27% les Soins Reçus et de 27% la valeur de Barrière obtenue (3 couches au maximum).
+Réduit de 28% les Soins Reçus et de 28% la valeur de Barrière obtenue (3 couches au maximum).
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755012034,Nadès,Oiseaux Osseux,"
@@ -15420,8 +15420,8 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 5601201,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 120% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (120% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 10% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 5% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 5% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15436,8 +15436,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 65602201,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 240% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (240% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 15% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 10% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 10% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15452,8 +15452,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 75601201,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (400% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 20% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 20% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15544,8 +15544,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 756012011,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (420% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 22% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 22% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15560,8 +15560,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 756012012,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (440% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 24% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 24% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15576,8 +15576,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 756012013,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (460% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 26% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 26% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15592,8 +15592,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 756012014,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (480% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 28% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 28% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 5 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 5 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15608,8 +15608,8 @@ En lançant une Compétence Active, une Attaque Basique ou une Compétence Passi
 756012015,Zeusia,Pouvoir de la Foi,"
 Le grondement du tonnerre annonce l\'arrivée de la grande souveraine. Inflige 400% d\'Attaque à tous les ennemis, et leur inflige des dégâts de [c][01a310]Brûlure[-][/c] (500% de l\'Attaque de Zeusia) pendant 2 tours, réduit de 30% l\'Attaque de tous les ennemis pendant 2 tours, et augmente de 30% les dégâts de [c][01a310]Brûlure[-][/c] subis par les ennemis pendant 4 tours (cumulable).
 Zeusia récupère des PV équivalent à 15% de ses PV Max et obtient une Barrière de cette même valeur pendant 2 tours.
-Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre$/font>, alors cet effet sera immédiatement déclenché.
-Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec <font color=0xe28002>Coup de Tonnerre$/font>, alors Zeusia obtiendra 6 couches de <font color=0xe28002>Divinité[-][/c].
+Si, lorsque Zeusia lance sa Compétence Active, des ennemis sont marqués avec [c][e28002]Coup de Tonnerre[-][/c], alors cet effet sera immédiatement déclenché.
+Si, lorsque Zeusia lance sa Compétence Active, 1 (ou +) ennemi n\'est pas marqué avec [c][e28002]Coup de Tonnerre[-][/c], alors Zeusia obtiendra 6 couches de [c][e28002]Divinité[-][/c].
 
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
@@ -15744,15 +15744,17 @@ Vole 20% de l\'Attaque et 20% de l\'Armure à 2 ennemis aléatoires pendant 3 to
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65502301,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成800%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將50%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬30%攻擊力持續3回合，30%護甲持續3回合，追加360%無視護甲的攻擊傷害，恢復自身300%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 800% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (50% de ces dégâts infligés).
+Vole 30% de l\'Attaque et 30% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (360% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (300% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75501301,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加800%無視護甲的攻擊傷害，恢復自身600%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (800% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (600% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 5501402,Apolline,Cloche Radiante,"Augmente les PV de 10%, l'Attaque de 10%, la Résistance aux Dégâts de 10%, les Critiques de 20% et la Vitesse de 40."
 65502302,Apolline,Cloche Radiante,"Augmente les PV de 20%, l'Attaque de 20%, la Résistance aux Dégâts de 20%, les Critiques de 30% et la Vitesse de 60."
 65502312,Apolline,Cloche Radiante,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de 40% et la Vitesse de 100."
@@ -15764,138 +15766,175 @@ Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts suppléme
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65502303,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成600%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將50%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加300%攻擊傷害，恢復自身100%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 600% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (50% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (300% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (100% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65502313,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加700%攻擊傷害，恢復自身200%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (700% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (200% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75501303,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加700%攻擊傷害，恢復自身200%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (700% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (200% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 5501404,Apolline,Timbre Sans Fin,"
-Lorsque Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente de 5% sa Précision et de 5 sa Vitesse pendant 3 tours.
-Lorsque Apolline reçoit un Effet de Contrôle, elle a 10% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
-Lorsque Apolline est attaquée, elle vole 10% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (10% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
-Lorsque Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 5% et sa Vitesse de 5 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 10% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 10% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (10% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
 [c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65502304,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身10%精準持續3回合，提升自身10點速度持續3回合，可疊加；自己被控制時，有15%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者20%攻擊力持續3回合，對敵方全體造成目標生命上限15%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 10% et sa Vitesse de 10 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 15% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 20% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (15% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 65502314,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身20點速度持續3回合，可疊加；自己被控制時，有30%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 20 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 30% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 75501304,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身20點速度持續3回合，可疊加；自己被控制時，有30%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 20 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 30% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013011,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加840%無視護甲的攻擊傷害，恢復自身610%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (840% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (610% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013012,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加880%無視護甲的攻擊傷害，恢復自身620%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (880% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (620% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013013,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加920%無視護甲的攻擊傷害，恢復自身630%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (920% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (630% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013014,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加960%無視護甲的攻擊傷害，恢復自身640%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (960% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (640% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013015,Apolline,Dévoreur de Soleil,"
-你們一天到晚崇拜的太陽被吃掉了呢。對隨機4名敵方戰姬造成1500%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；額外偷取隨機2名敵方戰姬40%攻擊力持續3回合，40%護甲持續3回合，追加1000%無視護甲的攻擊傷害，恢復自身650%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Regarde ton précieux soleil se détruire morceau par morceau ! Inflige 1500% d\'Attaque à 4 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c], puis récupère des PV (60% de ces dégâts infligés).
+Vole 40% de l\'Attaque et 40% de l\'Armure à 2 ennemis aléatoires pendant 3 tours, et leur inflige des dégâts supplémentaires (1000% de l\'Attaque d\'Apolline) tout en ignorant leur Armure, et obtient une [c][e28002]Barrière[-][/c] (650% de l\'Attaque d\'Apolline) et augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013021,Apolline,Cloche Radiante,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de 42% et la Vitesse de 100."
 755013022,Apolline,Cloche Radiante,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de 44% et la Vitesse de 100."
 755013023,Apolline,Cloche Radiante,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de 46% et la Vitesse de 100."
 755013024,Apolline,Cloche Radiante,"Augmente les PV de 40%, l'Attaque de 40%, la Résistance aux Dégâts de 30%, les Critiques de 48% et la Vitesse de 100."
 755013025,Apolline,Cloche Radiante,"Augmente les PV de 45%, l'Attaque de 45%, la Résistance aux Dégâts de 30%, les Critiques de 50% et la Vitesse de 100."
 755013031,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加740%攻擊傷害，恢復自身204%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (740% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (204% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013032,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加780%攻擊傷害，恢復自身208%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (780% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (208% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013033,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加820%攻擊傷害，恢復自身212%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (820% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (212% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013034,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加860%攻擊傷害，恢復自身216%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (860% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (216% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013035,Apolline,Œil de la Providence,"
-逃吧，逃吧，你永遠逃不掉的哈哈哈哈哈。普通攻擊變為，對隨機2名敵方戰姬造成1400%無視[c][e28002]屏障[-][/c]的攻擊傷害，並將60%傷害轉化為自己的生命；隨後隨機選中1名敵方戰姬，偷取目標50點能量，追加900%攻擊傷害，恢復自身220%攻擊的[c][e28002]屏障[-][/c]，提升20%閃避，持續3回合。
+Tu peux tenter de t\'enfuir, mais tu ne m\'échapperas pas. L\'Attaque Basique inflige 1400% d\'Attaque à 2 ennemis aléatoires tout en ignorant leur [c][e28002]Barrière[-][/c] et récupère des PV (60% de ces dégâts infligés).
+Vole 50 d\'Énergie à 1 de ces 2 ennemis, et lui inflige des dégâts supplémentaires (900% de l\'Attaque d\'Apolline), obtient une [c][e28002]Barrière[-][/c] (220% de l\'Attaque d\'Apolline), puis augmente son Esquive de 20% pendant 3 tours.
 
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013041,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身22點速度持續3回合，可疊加；自己被控制時，有32%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 22 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 32% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013042,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身24點速度持續3回合，可疊加；自己被控制時，有34%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 24 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 34% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013043,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身26點速度持續3回合，可疊加；自己被控制時，有36%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 26 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 36% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013044,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身28點速度持續3回合，可疊加；自己被控制時，有38%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 28 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 38% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
 755013045,Apolline,Timbre Sans Fin,"
-打不到喲，打不到喲，下一次到我了！自己被施加非控制減益效果時，提升自身20%精準持續3回合，提升自身30點速度持續3回合，可疊加；自己被控制時，有40%機率[c][01a310]暈眩[-][/c]隨機1名敵方戰姬2回合；自己被攻擊時，偷取攻擊者40%攻擊力持續3回合，對敵方全體造成目標生命上限25%的傷害（不超過自身攻擊的3000%），恢復自身50%攻擊的[c][e28002]屏障[-][/c]；受到致命傷害時，免疫該回合下來受到的所有傷害（每場戰鬥僅觸發一次）。
+Manqué... C\'est mon tour maintenant ! Lorsqu\'Apolline reçoit un Effet Négatif (n\'inclut pas l\'Effet de Contrôle), augmente sa Précision de 20% et sa Vitesse de 30 pendant 3 tours.
+Lorsqu\'Apolline reçoit un Effet de Contrôle, elle a 40% de chance d\'[c][01a310]étourdir[-][/c] 1 ennemi aléatoire pendant 2 tours.
+Lorsqu\'Apolline est attaquée, elle vole 40% de l\'Attaque à l\'attaquant pendant 3 tours, inflige des dégâts (25% des PV Max de la cible, 3000% de la valeur de l\'Attaque d\'Apolline au maximum) et obtient une [c][e28002]Barrière[-][/c] (50% de l\'Attaque d\'Apolline).
+Lorsqu\'Apolline reçoit un Coup Mortel, elle l\'évite et s\'immunisera contre tous les dégâts du tour actuel (déclenchable qu\'une seule fois dans chaque batatille).
 
-[c][01a310]暈眩[-][/c]
-控制效果，在暈眩生效期間，受到該效果的戰姬無法釋放主動技能，無法進行普通攻擊、追擊和反擊。
-[c][e28002]屏障[-][/c]
-技能特效，可疊加。抵消受到的任意傷害，當屏障值為0時屏障消失；屏障值上限不超過擁有者自身生命值的100%。"
+[c][01a310]Étourdir (Effet de Contrôle) :[-][/c]
+La cible sera temporairement incapable de lancer sa Compétence Active ou d\'attaquer les ennemis.
+[c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
+Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0."
