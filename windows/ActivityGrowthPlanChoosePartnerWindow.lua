@@ -18,7 +18,7 @@ function ActivityGrowthPlanChoosePartnerWindow:ctor(name, params)
 	if activityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
 		self.preText = "ACTIVITY_NEW_GROWTH_PLAN_TEXT"
 	else
-		self.preText = self.preText .. ""
+		self.preText = "ACTIVITY_GROWTH_PLAN_TEXT"
 	end
 end
 
