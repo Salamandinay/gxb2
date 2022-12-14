@@ -4,13 +4,14 @@ local ActivityGrowthPlanItem = class("ActivityGrowthPlanItem", import("app.commo
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
 local CountDown = import("app.components.CountDown")
 local GiftBagTextTable = xyd.tables.giftBagTextTable
-local activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
+local activityGrowthPlanTable = nil
 
 function ActivityGrowthPlanWindow:ctor(name, params)
 	if params and params.ActivityID and params.ActivityID == xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN then
 		activityGrowthPlanTable = xyd.tables.activityNewGrowthAwardTable
 		self.id = xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN
 	else
+		activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
 		self.id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
 	end
 

@@ -1,6 +1,6 @@
 local BaseWindow = import(".BaseWindow")
 local ActivityGrowthPlanAwardWindow = class("ActivityGrowthPlanAwardWindow", BaseWindow)
-local activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
+local activityGrowthPlanTable = nil
 
 function ActivityGrowthPlanAwardWindow:ctor(name, params)
 	BaseWindow.ctor(self, name, params)
@@ -9,6 +9,7 @@ function ActivityGrowthPlanAwardWindow:ctor(name, params)
 		activityGrowthPlanTable = xyd.tables.activityNewGrowthAwardTable
 		self.id = xyd.ActivityID.ACTIVITY_NEW_GROWTH_PLAN
 	else
+		activityGrowthPlanTable = xyd.tables.activityGrowthPlanTable
 		self.id = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
 	end
 

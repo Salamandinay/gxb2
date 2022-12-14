@@ -2,7 +2,7 @@ local BaseWindow = import(".BaseWindow")
 local ActivityGrowthPlanChoosePartnerWindow = class("ActivityGrowthPlanChoosePartnerWindow", BaseWindow)
 local ActivityGrowthPlanChoosePartnerItem = class("ActivityGrowthPlanChoosePartnerItem", import("app.common.ui.FixedWrapContentItem"))
 local FixedWrapContent = import("app.common.ui.FixedWrapContent")
-local ativityGrowthPlanTable = xyd.tables.ativityGrowthPlanTable
+local ativityGrowthPlanTable = nil
 local PartnerCard = import("app.components.PartnerCard")
 local activityID = xyd.ActivityID.ACTIVITY_GROWTH_PLAN
 
