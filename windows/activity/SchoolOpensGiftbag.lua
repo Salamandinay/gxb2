@@ -306,10 +306,12 @@ function SchoolOpensGiftbag:touchType3(id)
 		return
 	end
 
+	local jump_act_id = xyd.tables.miscTable:getVal("open_school_giftbag_jump_act_id")
+
 	xyd.WindowManager.get():closeWindow("activity_window", function ()
 		xyd.openWindow("activity_window", {
-			select = 90,
-			activity_type = xyd.EventType.COOL
+			activity_type = xyd.EventType.COOL,
+			select = tonumber(jump_act_id)
 		})
 	end)
 end

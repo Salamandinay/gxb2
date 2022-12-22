@@ -57,7 +57,7 @@ gacha_ensure_add_num,100,-1
 gacha_ensure_guarantee,500,-1
 gacha_ensure_partner,55013#655022#755012|56011#656021#756011,-1
 gacha_ensure_partner_handbook,55013#655022#755012|56011#656021#756011,-1
-daily_mail_awards_gacha,2|58|43,-1
+daily_mail_awards_gacha,2|44|60|61,-1
 daily_mail_awards_tree,3|18|57|43,-1
 daily_mail_awards_gamble,,-1
 daily_mail_awards_drift,30|6|40|54|55|60,-1
@@ -558,7 +558,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,ailishe_pifu02_lihui01|600|-1400|0.6|75700203|7325,-1
+activity_147_hero_model,aifei_pifu01_lihui01|600|-620|0.6|75700302|7321,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -991,7 +991,7 @@ firework_fire_weights,0|50|50|50|50|50|20|0,-1
 firework_energy,30,-1
 firework_ratio_5_unlock,5|50,-1
 firework_energy_init,0,-1
-activity_276_hero_model,xifeng_pifu02_lihui01|511|-1560|0.75|5301403|7314,-1
+activity_276_hero_model,bosaidong_pifu01_lihui01|620|-1840|0.6|5601102|7324,-1
 new_pingfen_stage_id,12|22|42|52|62|72|82|92|102|112|122|132|142,-1
 new_pingfen_level_limit,35,-1
 defense_team_save,1.5,-1
@@ -1026,13 +1026,13 @@ activity_lflcastle_dropbox,1300001|1300002|1300003|1300004,-1
 activity_lflcastle_energy,20,-1
 activity_lflcastle_task_award,1|336#1,-1
 activity_lflcastle_task_award_limit,100,-1
-activity_promotion_ladder_material,52019|56010|55012|53019|51019,-1
-activity_promotion_ladder_target,52020,-1
+activity_promotion_ladder_material,52020|56010|55012|53019|51019,-1
+activity_promotion_ladder_target,55013|56011,-1
 activity_promotion_ladder_star,5#1|6#2|7#2|8#2|9#3|10#5|11#6|12#7|13#7|14#8|15#9,-1
 activity_promotion_ladder_basenum,341#10,-1
 activity_promotion_ladder_interval,9,-1
 activity_promotion_ladder_increasenum,341#5,-1
-activity_promotion_test_picture,6,-1
+activity_promotion_test_picture,1,-1
 activity_promotion_test_giftbag,407|408,-1
 crystal_card_box_refresh,15,-1
 activity_lasso_end,26,-1
@@ -1043,7 +1043,7 @@ activity_lasso_dropbox_weight,1|2|100,-1
 time_cloister_crystal_card_item,338|339|340,-1
 activity_lasso_cost,343#1,-1
 assistant_open_limit,3|3|8|5,-1
-activity_promotion_ladder_picture,partner_picture_52020#0.6#-155#-547,-1
+activity_promotion_ladder_picture,partner_picture_55013#0.6#-155#-547|partner_picture_56011#0.6#-155#-547,-1
 activity_lottery_vip_exp,50|250|500|750|1000|1500|2000|2500|2500|3500|3500,-1
 time_cloister_crystal_card_buy_tips,500|500|500,-1
 activity_clock_cost,345#1,-1
@@ -1148,7 +1148,7 @@ activity_4birthday_fx,3,-1
 activity_4anniversary_sign_cost,2#50,-1
 activity_4anniversary_sign_giftbag_limit,444#3|445#6|446#9|447#12,-1
 vip_award_version,2,-1
-gacha_guarantee_double_partner,icon_4102043,-1
+gacha_guarantee_double_partner,icon_3999991,-1
 year_summary_star_10,755011|756010,-1
 year_summary_star_5,55012|56010,-1
 activity_4birthday_plot_en_en,162|176|162|162|162|339|339,-1
@@ -1327,4 +1327,5 @@ activity_star_plan_dropbox,461|32022,-1
 activity_star_plan_list,4|3|4|3|4|2|4|3|4|3|4|3|4|2|1|4|2|4|3|4|2|4|3|4|3|4|3|4|2|3|4,-1
 activity_star_plan_buy,2#100|20,-1
 activity_star_altar_cost_time,604800,-1
-loading_renew,77,-1
+loading_renew,78,-1
+open_school_giftbag_jump_act_id,148,-1
