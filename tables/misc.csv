@@ -43,8 +43,8 @@ qa_content_length,500,-1
 tower_top,1000,-1
 dungeon_top,600,-1
 activity_gacha_partner_awards,53012#20002,-1
-activity_gacha_partners,55013|56011,-1
-activity_gacha_partner_show,55013|56011,-1
+activity_gacha_partners,56012,-1
+activity_gacha_partner_show,56012,-1
 gacha_ensure_dropbox_id,10006,-1
 gacha_ensure_weight_ini_total,1000000,-1
 gacha_ensure_weight_ini_get,180,-1
@@ -55,8 +55,8 @@ gacha_ensure_weight_wish_get,100,-1
 gacha_ensure_weight_wish_add,100,-1
 gacha_ensure_add_num,100,-1
 gacha_ensure_guarantee,500,-1
-gacha_ensure_partner,55013#655022#755012|56011#656021#756011,-1
-gacha_ensure_partner_handbook,55013#655022#755012|56011#656021#756011,-1
+gacha_ensure_partner,56012#656022#756012,-1
+gacha_ensure_partner_handbook,56012#656022#756012,-1
 daily_mail_awards_gacha,2|44|60|61,-1
 daily_mail_awards_tree,3|18|31|32|43|42,-1
 daily_mail_awards_gamble,,-1
@@ -838,10 +838,10 @@ activity_warmup_arena_awards,8063#1,-1
 activity_warmup_arena_energy_start,3,-1
 activity_warmup_arena_energy_reset,10,-1
 activity_warmup_arena_buy_costs,2#20,-1
-activity_warmup_arena_partners,756011|755012,-1
+activity_warmup_arena_partners,756012,-1
 activity_warmup_arena_revenge,1,-1
 guild_quick_order_open,5,-1
-gacha_10drawcard_endtime,1672358400,-1
+gacha_10drawcard_endtime,1674777600,-1
 dress_gacha_activity_show,40,-1
 activity_equip_exchange_cost,268#3|268#6|268#9|268#12,-1
 activity_equip_exchange_6,1166|2166|3166|4166#1266|2266|3266|4266#1366|2366|3366|4366#1466|2466|3466|4466#1566|2566|3566|4566,-1
@@ -866,7 +866,7 @@ activity_pray_buy_get,269#1,-1
 activity_tea_point,1,-1
 space_explore_auto_level,31,-1
 custom_skin_summer_houyi_or_feisina,2#300,-1
-entrance_test_help_show,755012|756011,-1
+entrance_test_help_show,756012,-1
 activity_lafuli_get,283#0,-1
 house_senpai_sit,-20|-30,-1
 house_senpai_lie,15|-40,-1
@@ -1163,7 +1163,7 @@ activity_chime_get,20,-1
 activity_cupid_gift_award,32019,-1
 activity_cupid_gift_draw,387#1,-1
 activity_cupid_gift_mail_award,2#100,-1
-activity_warmup_arena_boss_model,752020|757003|756008,-1
+activity_warmup_arena_boss_model,752015|751017|757003,-1
 old_building_floor11_point,1000,-1
 activity_sand_gift,456,-1
 activity_sand_cost,390#1,-1
