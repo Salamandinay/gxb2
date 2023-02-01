@@ -24,7 +24,7 @@ function FairArenaFormationItem:updateShowEquip()
 end
 
 function FairArenaBattleFormationWindow:ctor(name, params)
-	BaseWindow.ctor(self, name, params)
+	FairArenaBattleFormationWindow.super.ctor(self, name, params)
 
 	self.skipBtnCallback = nil
 	self.ifMove = false

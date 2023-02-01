@@ -18,6 +18,9 @@ function FairArenaChooseEquipWindow:getUIComponent()
 	local content = winTrans:NodeByName("content").gameObject
 	self.backBtn = content:NodeByName("backBtn").gameObject
 	self.labelTitle = content:ComponentByName("labelTitle", typeof(UILabel))
+
+	content:NodeByName("selelctBtn").gameObject:SetActive(false)
+
 	local middle = content:NodeByName("middle").gameObject
 	self.noEquip = middle:NodeByName("noEquip").gameObject
 	self.noEquipLabel = self.noEquip:ComponentByName("noEquipLabel", typeof(UILabel))
