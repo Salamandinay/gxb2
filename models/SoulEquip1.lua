@@ -182,6 +182,10 @@ end
 
 function SoulEquip1:setExAttr(ex_attr_id, pos)
 	self.ex_attr_ids[pos] = ex_attr_id
+
+	if self.params and self.params.attrs and self.params.attrs[pos] then
+		self.params.attrs[pos] = tostring(ex_attr_id)
+	end
 end
 
 function SoulEquip1:setLock(lock)

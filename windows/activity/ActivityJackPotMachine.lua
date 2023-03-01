@@ -616,7 +616,7 @@ end
 function JackpotMachineItem:updateImages(imgUrls)
 	self:waitForFrame(2, function ()
 		self.iconWrap_:setInfos(imgUrls)
-		self.scroller:MoveAbsolute(Vector3(0, 169, 0))
+		self.scroller:MoveAbsolute(Vector3(0, 0, 0))
 		self.scroller:ResetPosition()
 	end)
 end
@@ -629,6 +629,10 @@ function JackpotMachineItem:play(callback)
 	end
 
 	local function setter(value)
+		if tolua.isnull(self.scroller) then
+			return
+		end
+
 		if self.scroller and value ~= nil then
 			self.scroller.transform.localPosition = Vector3(0, value, 0)
 			local co = self.scroller.panel.clipOffset
