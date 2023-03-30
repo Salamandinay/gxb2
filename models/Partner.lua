@@ -1249,6 +1249,30 @@ function Partner:takeOnSoulEquip(equipID, callbalck)
 end
 
 function Partner:takeOnSoulEquips(equipIDs, callbalck)
+	local isSame = true
+
+	for i = 1, 5 do
+		local oldEquipID = self:getSoulEquips()[i]
+
+		if oldEquipID and oldEquipID > 0 and (not equipIDs[i] or equipIDs[i] <= 0) then
+			isSame = false
+		end
+
+		if (not oldEquipID or oldEquipID <= 0) and equipIDs[i] and equipIDs[i] > 0 then
+			isSame = false
+		end
+
+		if oldEquipID and oldEquipID > 0 and equipIDs[i] and equipIDs[i] > 0 and oldEquipID ~= equipIDs[i] then
+			isSame = false
+		end
+	end
+
+	if isSame then
+		callbalck()
+
+		return
+	end
+
 	for i = 1, 5 do
 		local oldEquipID = self:getSoulEquips()[i]
 
