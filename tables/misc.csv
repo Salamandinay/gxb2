@@ -65,7 +65,7 @@ daily_mail_awards_lost_space,50|4|51|48,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
-daily_mail_awards_wish,2|62,-1
+daily_mail_awards_wish,2|58|60,-1
 partner_force_req_lev,29|39|49|59|79|99|139|159|179|199|249|259|269|289,-1
 friend_energy_cd,7200,-1
 friend_energy_max,10,-1
@@ -115,7 +115,7 @@ activity_boss_open_award,9,-1
 activity_cv_share_award,2#100,-1
 stage_activity_dropbox,74,-1
 stage_activity_dropbox2,16,-1
-stage_activity_dropbox3,74,-1
+stage_activity_dropbox3,140,-1
 stage_activity_dropbox4,74,-1
 guild_transfer_cd,604800,-1
 activity_guard_boss_hp,100,-1
@@ -519,7 +519,7 @@ house_furniture_type_num,10,-1
 activity_fairytale_energy_init,166#10,-1
 activity_fairytale_energy_cd,7200,-1
 activity_fairytale_energy_max,10,-1
-wish_gacha_partners,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55013|55012|55011|55010|56012|56011|56010|56009,-1
+wish_gacha_partners,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55014|55013|55012|55011|56012|56011|56010|56009,-1
 wish_gacha_dropbox_id,10009,-1
 wish_gacha_weight_ini_total,1000000,-1
 wish_gacha_weight_ini_get,100,-1
@@ -558,7 +558,7 @@ partner_challenge_chess_award2,10,-1
 partner_challenge_chess_hp,50,-1
 partner_challenge_chess_sell,2|7,-1
 entrance_test_slot_sort_type_show_list,9|4|5|6|7|0|1|8,-1
-activity_147_hero_model,luolanweiya_pifu01_lihui01|507|-972|0.67|5101902|7308,-1
+activity_147_hero_model,puluomixiusi_pifu04_lihui01|510|-1999|0.67|5501205|7312,-1
 school_practise_ticket02_default_2,25,-1
 school_practise_new_help_tips,2,-1
 plot_fade_time,0.5,-1
@@ -1262,7 +1262,7 @@ activity_pirate_plot_list_member,1#173|2#174|3#175|4#176|5#177|6#178|7#179|8#180
 activity_pirate_shop_unlock_item,411,-1
 activity_pirate_drop_awards,411#20,-1
 ios_price_version,1,-1
-activity_pirate_giftbag_free_awards,316#10|410#25|36#10|4201042#1,-1
+activity_pirate_giftbag_free_awards,2#500|410#25|36#10|4201042#3,-1
 activity_pirate_giftbag_free_awards_limit,1,-1
 activity_pirate_giftbag_limit_max,250000,-1
 soul_equip1_ex_num,2|2|3|3|4|5,-1
@@ -1297,13 +1297,13 @@ activity_halloween2022_get,433,-1
 activity_halloween2022_gamble_max,20,-1
 activity_5week_cost,434#1,-1
 soul_land_cycle_time,2419200,-1
-activity_promotion_ladder_material2,52020|51019|55013|56011|56012,-1
-activity_promotion_ladder_target2,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55013|55012|55011|55010|56012|56011|56010|56009,-1
+activity_promotion_ladder_material2,52020|55013|55014|56011|56012,-1
+activity_promotion_ladder_target2,51019|51018|51017|51016|52020|52019|52018|52017|53019|53018|53017|53016|54018|54017|54016|54015|55014|55013|55012|55011|56012|56011|56010|56009,-1
 activity_promotion_ladder_star2,5#1|6#2|7#2|8#2|9#3|10#5|11#6|12#7|13#7|14#8|15#9,-1
 activity_promotion_ladder_basenum2,341#10,-1
 activity_promotion_ladder_interval2,9,-1
 activity_promotion_ladder_increasenum2,341#5,-1
-activity_promotion_ladder_picture2,partner_picture_56012#0.7#-188#-640,-1
+activity_promotion_ladder_picture2,partner_picture_55014#0.7#-137#-547,-1
 activity_blind_box_cost,438#1,-1
 activity_blind_box_select_num,3|3|1|1,-1
 activity_blind_box_guarantee_time,29,-1
