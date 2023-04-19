@@ -766,7 +766,13 @@ function ProphetReplace:setChildren()
 		self.btnCancel:SetActive(false)
 
 		local partner = xyd.models.slot:getPartner(partnerID)
-		local data = xyd.tables.partnerReplaceTable:getCost(partner:getTableID())
+
+		print("+++++++++++++++++++exchangePartner++++++++++", partner:getTableID())
+
+		local data = xyd.tables.partnerReplaceTable:getCost(partner:getTableID()) or {
+			2,
+			999999999
+		}
 		self.btnReplaceCostImg.spriteName = xyd.tables.itemTable:getIcon(data[1])
 		self.btnReplaceCostLabel.text = data[2]
 

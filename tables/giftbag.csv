@@ -32,12 +32,12 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,mail_id,rank,char
 28,-1,Value Package 3,Pack de Grande Valeur 3,-1,-1,슈퍼 팩 3,Superpaket 3,12,,0,29.99,,0,,,1500,1500,10028,8,-1,,,com.carolgames.moemoegirls.overflow3,29.99,,,,,,604800,5,,1,0,0,
 29,-1,Value Package 4,Pack de Grande Valeur 4,-1,-1,슈퍼 팩 4,Superpaket 4,12,,0,9.99,,0,,,500,500,10029,8,-1,,,com.carolgames.moemoegirls.overflow4,9.99,,,,,,604800,5,,1,0,0,
 30,-1,Value Package 5,Pack de Grande Valeur 5,-1,-1,슈퍼 팩 5,Superpaket 5,12,,0,4.99,,0,,,250,250,10030,8,-1,,,com.carolgames.moemoegirls.overflow5,4.99,,,,,,604800,5,,1,0,0,
-31,-1,Value Package 1,Pack de Grande Valeur 1,-1,-1,슈퍼 팩 1,Superpaket 1,15,,0,99.99,,0,,,5000,5000,10031,9,-1,,,com.carolgames.moemoegirls.overflow_b1,99.99,,,,,,604800,8,,1,0,0,
-32,-1,Value Package 2,Pack de Grande Valeur 2,-1,-1,슈퍼 팩 2,Superpaket 2,15,,0,69.99,,0,,,3500,3500,10032,9,-1,,,com.carolgames.moemoegirls.overflow_b2,69.99,,,,,,604800,7,,1,0,0,
-33,-1,Value Package 3,Pack de Grande Valeur 3,-1,-1,슈퍼 팩 3,Superpaket 3,15,,0,29.99,,0,,,1500,1500,10033,9,-1,,,com.carolgames.moemoegirls.overflow_b3,29.99,,,,,,604800,5,,1,0,0,
-34,-1,Value Package 4,Pack de Grande Valeur 4,-1,-1,슈퍼 팩 4,Superpaket 4,15,,0,19.99,,0,,,1000,1000,10034,9,-1,,,com.carolgames.moemoegirls.overflow_b4,19.99,,,,,,604800,5,,1,0,0,
+31,-1,Value Package 1,Pack de Grande Valeur 1,-1,-1,슈퍼 팩 1,Superpaket 1,15,,0,49.99,,0,,,5000,5000,10031,9,-1,,,com.carolgames.moemoegirls.overflow_b1,49.99,,,,,,604800,8,,1,0,1,
+32,-1,Value Package 2,Pack de Grande Valeur 2,-1,-1,슈퍼 팩 2,Superpaket 2,15,,0,29.99,,0,,,3500,3500,10032,9,-1,,,com.carolgames.moemoegirls.overflow_b2,29.99,,,,,,604800,7,,1,0,1,
+33,-1,Value Package 3,Pack de Grande Valeur 3,-1,-1,슈퍼 팩 3,Superpaket 3,15,,0,14.99,,0,,,1500,1500,10033,9,-1,,,com.carolgames.moemoegirls.overflow_b3,14.99,,,,,,604800,5,,1,0,1,
+34,-1,Value Package 4,Pack de Grande Valeur 4,-1,-1,슈퍼 팩 4,Superpaket 4,15,,0,9.99,,0,,,500,500,10034,9,-1,,,com.carolgames.moemoegirls.overflow_b4,9.99,,,,,,604800,5,,1,0,1,
 35,-1,Free Recharge Package,Pack de Recharge Gratuit,-1,-1,무료 구입 커스텀 팩,Gratis Auflade Paket,19,,0,1.98,,0,,,100,50,10035,10,-1,,,com.carolgames.moemoegirls.60t,1.98,,,,,,,1,,1,0,0,
-36,-1,Value Package 5,Pack de Grande Valeur 5,-1,-1,슈퍼 팩 5,Superpaket 5,15,,0,4.99,,0,,,250,250,10036,9,-1,,,com.carolgames.moemoegirls.overflow_b5,4.99,,,,,,604800,5,,1,0,0,
+36,-1,Value Package 5,Pack de Grande Valeur 5,-1,-1,슈퍼 팩 5,Superpaket 5,15,,0,1.99,,0,,,250,250,10036,9,-1,,,com.carolgames.moemoegirls.overflow_b5,1.99,,,,,,604800,5,,1,0,1,
 37,-1,Limit 5-star Girl Pack,Pack Limité de Filles 5 étoiles,-1,-1,기간 한정 5성 특가 팩,5-Sterne Paket,31,,0,1.99,,0,,,100,50,10035,11,-1,,,com.carolgames.moemoegirls.limittime5star,1.99,,,,,,604800,1,,1,0,0,
 38,-1,Coin Subscription,Abonnement,-1,-1,구독,Abonnieren,38,,3,0.99,NT$,0,,,,50,10003,13,-1,,7,com.carolgames.moemoegirls.weeksub,0.99,vip_icon10_png,,,,,,,,1,0,0,
 39,-1,Black Friday Card,Carte du Vendredi Noir,-1,Xmasパス,블랙 프라이데이 카드,Black Friday-Karte,36,,0,9.99,,0,,,500,500,10039,12,-1,,7,com.carolgames.moemoegirls.blackcard,9.99,,,,,,,,,1,0,0,
@@ -410,7 +410,7 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,mail_id,rank,char
 436,-1,Starlight Pack 3,Pack Stellaire 3,-1,-1,별하늘 팩3,Paket unter Sternen 3,297,,0,19.99,,0,,,1000,1000,10436,131,-1,,,com.carolgames.moemoegirls.star.weekly3,19.99,,,,,,604800,10,,1,0,0,
 437,-1,Starlight Pack 4,Pack Stellaire 4,-1,-1,별하늘 팩4,Paket unter Sternen 4,297,,0,9.99,,0,,,500,500,10437,131,-1,,,com.carolgames.moemoegirls.star.weekly4,9.99,,,,,,604800,10,,1,0,0,
 438,-1,Special Offer,Offre Unique,-1,スペシャルパック,특별 혜택,Exklusives Paket,302,,0,19.99,,0,,,1000,1000,10438,132,-1,,,com.carolgames.moemoegirls.spfarm.special,19.99,,,,,,1209600,1,,1,0,1,1|1|1209600
-439,-1,Dimensional Supply 1,Pack Inter-dimensionnel 1,-1,グリードパック1,이계 보급1,Sondernachschub 1,302,,0,9.99,,0,,,250,250,10439,132,-1,,,com.carolgames.moemoegirls.spfarm.gift1,9.99,,,,,,1209600,2,,1,0,1,1|1|604800
+439,-1,Dimensional Supply 1,Pack Inter-dimensionnel 1,-1,グリードパック1,이계 보급1,Sondernachschub 1,302,,0,9.99,,0,,,500,500,10439,132,-1,,,com.carolgames.moemoegirls.spfarm.gift1,9.99,,,,,,1209600,2,,1,0,1,1|1|604800
 440,-1,Dimensional Supply 2,Pack Inter-dimensionnel 2,-1,グリードパック2,이계 보급2,Sondernachschub 2,302,,0,29.99,,0,,,1500,1500,10440,132,-1,,,com.carolgames.moemoegirls.spfarm.gift2,29.99,,,,,,1209600,2,,1,0,1,1|1|604800
 441,-1,Dimensional Supply 3,Pack Inter-dimensionnel 3,-1,グリードパック3,이계 보급3,Sondernachschub 3,302,,0,49.99,,0,,,2500,2500,10441,132,-1,,,com.carolgames.moemoegirls.spfarm.gift3,49.99,,,,,,1209600,4,,1,0,1,2|2|604800
 442,-1,Dimensional Supply 4,Pack Inter-dimensionnel 4,-1,グリードパック4,이계 보급4,Sondernachschub 4,302,,0,99.99,,0,,,5000,5000,10442,132,-1,,,com.carolgames.moemoegirls.spfarm.gift4,99.99,,,,,,1209600,6,,1,0,1,3|3|604800
@@ -434,7 +434,7 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,mail_id,rank,char
 460,-1,Beach Supply 4,Pack aux Trésors 4,-1,-1,보물찾기 보급4,Strandversorgung 4,311,,0,9.99,,0,,,500,500,10460,136,-1,,,com.carolgames.moemoegirls.sand_gift4,9.99,,,,,,1209600,10,,1,0,0,5|5|604800
 461,-1,Beach Supply 5,Pack aux Trésors 5,-1,-1,보물찾기 보급5,Strandversorgung 5,311,,0,4.99,,0,,,250,250,10461,136,-1,,,com.carolgames.moemoegirls.sand_gift5,4.99,,,,,,1209600,8,,1,0,0,4|4|604800
 462,-1,Beach Supply 6,Pack aux Trésors 6,-1,-1,보물찾기 보급6,Strandversorgung 6,311,,0,0.99,,0,,,50,50,10462,136,-1,,,com.carolgames.moemoegirls.sand_gift6,0.99,,,,,,1209600,6,,1,0,0,3|3|604800
-463,-1,Summer Sale,Pack de Pêche,-1,-1,금붕어 잡기 보급,Paket zum Fischschöpfen,318,,0,49.99,,0,,,2500,2500,10463,137,-1,,,com.carolgames.moemoegirls.goldfish,49.99,,,,,,604800,1,,1,0,0,
+463,-1,Summer Sale,Pack de Pêche,-1,-1,금붕어 잡기 보급,Paket zum Fischschöpfen,318,,0,49.99,,0,,,2500,2500,10463,137,-1,,,com.carolgames.moemoegirls.goldfish,49.99,,,,,,604800,2,,1,0,0,
 464,-1,Voyager Passport,Pass du Voyageur,-1,-1,별빛 여정 패스,Pass zur Galaxisreise,319,,0,19.99,,0,,,1000,1000,10464,138,-1,,,com.carolgames.moemoegirls.trialbattlepass,19.99,,,,,,,1,,1,0,1,
 465,-1,Master Designer Pack 1,Pack du Grand Couturier 1,-1,-1,스킨 주문 팩1,Pakete zur Modemesse 1,321,,0,9.99,,0,,,500,500,10465,139,-1,,,com.carolgames.moemoegirls.legendary_skin_gift1,9.99,,,,,,604800,1,,1,0,1,
 466,-1,Master Designer Pack 2,Pack du Grand Couturier 2,-1,-1,스킨 주문 팩2,Pakete zur Modemesse 2,321,,0,19.99,,0,,,1000,1000,10466,139,-1,,,com.carolgames.moemoegirls.legendary_skin_gift2,19.99,,,,,,604800,1,,1,0,1,
@@ -468,9 +468,9 @@ id,name,desc_1,desc_2,desc_4,desc_5,desc_6,desc_11,activity_id,mail_id,rank,char
 496,-1,Bubble Treasures Pack 5,Pack de Bulles 5 (Quotidien),-1,-1,매일 한정 팩5,Tägliches Glückspaket 5,344,,0,9.99,,0,,,500,500,10496,148,-1,,,com.carolgames.moemoegirls.daylimit.giftbag5,9.99,,,,,,86400,1,,1,0,1,
 497,-1,Bubble Treasures Pack 6,Pack de Bulles 6 (Quotidien),-1,-1,매일 한정 팩6,Tägliches Glückspaket 6,344,,0,9.99,,0,,,500,500,10497,148,-1,,,com.carolgames.moemoegirls.daylimit.giftbag6,9.99,,,,,,86400,1,,1,0,1,
 498,-1,Newcomer Support Pack,Renforcement du Débutant,-1,-1,초보자 초고속 육성 팩,Neulings-Ausbildungsplan,345,,0,29.99,,0,,,1500,1500,10346,150,-1,,,com.carolgames.moemoegirls.growthplan,29.99,,,,,,86400,1,,1,0,0,
-499,-1,Hermes' Special 1,Les Offres de Mercure 1,-1,サプライズパック1,서프라이즈 팩1,Überraschungspaket 1,350,,0,9.99,,0,,,500,500,10499,151,-1,,,com.carolgames.moemoegirls.suiprise,9.99,,,,,,604800,2,,1,0,0,
-500,-1,Hermes' Special 2,Les Offres de Mercure 2,-1,サプライズパック2,서프라이즈 팩2,Überraschungspaket 2,350,,0,49.99,,0,,,2500,2500,10500,151,-1,,,com.carolgames.moemoegirls.suiprise,49.99,,,,,,604800,2,,1,0,0,
-501,-1,Hermes' Special 3,Les Offres de Mercure 3,-1,サプライズパック3,서프라이즈 팩3,Überraschungspaket 3,350,,0,99.99,,0,,,5000,5000,10501,151,-1,,,com.carolgames.moemoegirls.suiprise,99.99,,,,,,604800,2,,1,0,0,
+499,-1,Hermes' Special 1,Les Offres de Mercure 1,-1,サプライズパック1,서프라이즈 팩1,Überraschungspaket 1,350,,0,4.99,,0,,,250,250,10499,151,-1,,,com.carolgames.moemoegirls.suiprise,4.99,,,,,,604800,4,,1,0,1,
+500,-1,Hermes' Special 2,Les Offres de Mercure 2,-1,サプライズパック2,서프라이즈 팩2,Überraschungspaket 2,350,,0,29.99,,0,,,1500,1500,10500,151,-1,,,com.carolgames.moemoegirls.suiprise,29.99,,,,,,604800,4,,1,0,1,
+501,-1,Hermes' Special 3,Les Offres de Mercure 3,-1,サプライズパック3,서프라이즈 팩3,Überraschungspaket 3,350,,0,69.99,,0,,,3500,3500,10501,151,-1,,,com.carolgames.moemoegirls.suiprise,69.99,,,,,,604800,4,,1,0,1,
 502,-1,Hermes' Special 1,Les Offres de Mercure 1,-1,サプライズパック1,서프라이즈 팩1,Überraschungspaket 1,351,,0,4.99,,0,,,250,250,10502,152,-1,,,com.carolgames.moemoegirls.suiprise,4.99,,,,,,604800,4,,1,0,1,
 503,-1,Hermes' Special 2,Les Offres de Mercure 2,-1,サプライズパック2,서프라이즈 팩2,Überraschungspaket 2,351,,0,29.99,,0,,,1500,1500,10503,152,-1,,,com.carolgames.moemoegirls.suiprise,29.99,,,,,,604800,4,,1,0,1,
 504,-1,Hermes' Special 3,Les Offres de Mercure 3,-1,サプライズパック3,서프라이즈 팩3,Überraschungspaket 3,351,,0,69.99,,0,,,3500,3500,10504,152,-1,,,com.carolgames.moemoegirls.suiprise,69.99,,,,,,604800,4,,1,0,1,
