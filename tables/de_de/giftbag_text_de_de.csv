@@ -24,11 +24,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 23,Wochenpaket 2,21.99,€,Wochenpaket,23.99,23.99
 24,Wochenpaket 3,54.99,€,Wochenpaket,59.99,59.99
 25,Wochenpaket 4,74.99,€,Wochenpaket,84.99,84.99
-26,Superpaket 1,109.99,€,Superpaket,119.99,119.99
-27,Superpaket 2,74.99,€,Superpaket,84.99,84.99
-28,Superpaket 3,32.99,€,Superpaket,35.99,35.99
-29,Superpaket 4,10.99,€,Superpaket,11.99,11.99
-30,Superpaket 5,5.49,€,Superpaket,5.99,5.99
+26,Superpaket 1,54.99,€,Superpaket,59.99,59.99
+27,Superpaket 2,32.99,€,Superpaket,35.99,35.99
+28,Superpaket 3,16.99,€,Superpaket,17.99,17.99
+29,Superpaket 4,5.49,€,Superpaket,5.99,5.99
+30,Superpaket 5,4.49,€,Superpaket,3.99,3.99
 31,Superpaket 1,54.99,€,Superpaket,59.99,59.99
 32,Superpaket 2,32.99,€,Superpaket,35.99,35.99
 33,Superpaket 3,16.99,€,Superpaket,17.99,17.99
@@ -55,7 +55,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 53,Wöchentliches Abonnement,0.99,€,Wöchentliches Abonnement,0.99,0.99
 54,Monatliches Abonnement,4.49,€,Monatliches Abonnement,3.99,3.99
 55,Vierteljähriges Abonnement,10.49,€,Vierteljähriges Abonnement,10.49,10.49
-56,Kostümpaket 1,5.49,€,Glückspaket,5.99,5.99
+56,Kostümpaket 1,4.49,€,Glückspaket,3.99,3.99
 57,Glückspaket 1,5.49,€,Glückspaket,5.99,5.99
 65,Glückspaket 2,54.99,€,Glückspaket,59.99,59.99
 58,7-tägige kostenlose Testversion,0,€,7-tägige kostenlose Testversion,0,0
@@ -69,7 +69,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 67,Wachstumspaket,10.99,€,Wachstumspaket,11.99,11.99
 68,Superpaket 6,5.49,€,Superpaket,5.99,5.99
 70,Entsperre Deluxe Bonus,21.99,€,Deluxe Bonus,23.99,23.99
-71,Kostümpaket 2,54.99,€,Glückspaket,59.99,59.99
+71,Kostümpaket 2,32.99,€,Glückspaket,35.99,35.99
 72,Grußkarte zum 4. Jubiläum,21.99,€,Grußkarte zum 4. Jubiläum,23.99,23.99
 73,Weihnachtspaket,54.99,€,Weihnachtspaket,59.99,59.99
 74,Studiumplan,10.99,€,Studiumplan,11.99,11.99
@@ -186,14 +186,14 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1081301,Test Paket-600,10.99,€,Test Paket,11.99,11.99
 1081302,Test Paket-600,21.99,€,Test Paket,23.99,23.99
 1081303,Test Paket-600,54.99,€,Test Paket,59.99,59.99
-78,Superpaket 1,109.99,€,Superpaket,119.99,119.99
-79,Superpaket 2,74.99,€,Superpaket,84.99,84.99
-80,Superpaket 3,32.99,€,Superpaket,35.99,35.99
-81,Superpaket 4,10.99,€,Superpaket,11.99,11.99
-82,Superpaket 5,5.49,€,Superpaket,5.99,5.99
+78,Superpaket 1,54.99,€,Superpaket,59.99,59.99
+79,Superpaket 2,32.99,€,Superpaket,35.99,35.99
+80,Superpaket 3,16.99,€,Superpaket,17.99,17.99
+81,Superpaket 4,5.49,€,Superpaket,5.99,5.99
+82,Superpaket 5,4.49,€,Superpaket,3.99,3.99
 83,Superpaket 6,5.49,€,Superpaket,5.99,5.99
-84,Glückspaket 1,5.49,€,Glückspaket,5.99,5.99
-85,Glückspaket 2,74.99,€,Glückspaket,84.99,84.99
+84,Glückspaket 1,4.49,€,Glückspaket,3.99,3.99
+85,Glückspaket 2,54.99,€,Glückspaket,59.99,59.99
 86,Gratis Aufladepaket,2.29,€,Gratis Aufladepaket,2.49,2.49
 1090101,Kapsel Paket 1,32.99,€,Kapsel Paket,35.99,35.99
 1090102,Kapsel Paket 1,54.99,€,Kapsel Paket,59.99,59.99
@@ -246,10 +246,10 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1100406,9-Sterne Ausbildungspaket 1,109.99,€,9-Sterne Ausbildungspaket,119.99,119.99
 109,1250 Dias Paket,27.99,€,Dias Paket,29.99,29.99
 110,Herzkristalle-Paket,21.99,€,Herzkristalle-Paket,23.99,23.99
-10116,Geschenke des Grafen 1,10.99,€,Geschenke des Grafen 1,11.99,11.99
-10117,Geschenke des Grafen 2,32.99,€,Geschenke des Grafen 2,35.99,35.99
-10118,Geschenke des Grafen 3,54.99,€,Geschenke des Grafen 3,59.99,59.99
-10119,Geschenke des Grafen 4,74.99,€,Geschenke des Grafen 4,84.99,84.99
+10116,Geschenke des Grafen 1,5.49,€,Geschenke des Grafen 1,5.99,5.99
+10117,Geschenke des Grafen 2,16.99,€,Geschenke des Grafen 2,17.99,17.99
+10118,Geschenke des Grafen 3,32.99,€,Geschenke des Grafen 3,35.99,35.99
+10119,Geschenke des Grafen 4,54.99,€,Geschenke des Grafen 4,59.99,59.99
 120,SP Energiekarte,16.99,€,SP Energiekarte,17.99,17.99
 121,Buch der Weisheit,16.99,€,Buch der Weisheit,17.99,17.99
 122,Buch der Zauber 2,21.99,€,Buch der Zauber 2,23.99,23.99
@@ -273,11 +273,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 141,Testfonds,10.99,€,Testfonds,11.99,11.99
 142,Testfonds 2,21.99,€,Testfonds 2,23.99,23.99
 143,Testfonds 3,32.99,€,Testfonds 3,35.99,35.99
-144,Kostümpaket 1,5.49,€,Kostümpaket,5.99,5.99
-145,Kostümpaket 2,54.99,€,Kostümpaket,59.99,59.99
-146,Glückspaket 1,5.49,€,Glückspaket,5.99,5.99
-147,Glückspaket 2,74.99,€,Glückspaket,84.99,84.99
-10148,Geschenke des Grafen 5,109.99,€,Geschenke des Grafen 5,119.99,119.99
+144,Kostümpaket 1,4.49,€,Kostümpaket,3.99,3.99
+145,Kostümpaket 2,32.99,€,Kostümpaket,35.99,35.99
+146,Glückspaket 1,4.49,€,Glückspaket,3.99,3.99
+147,Glückspaket 2,54.99,€,Glückspaket,59.99,59.99
+10148,Geschenke des Grafen 5,74.99,€,Geschenke des Grafen 5,84.99,84.99
 1200101,Versorgungskristallmeißel,5.49,€,Versorgungskristallmeißel,5.99,5.99
 1200102,Versorgungskristallmeißel,10.99,€,Versorgungskristallmeißel,11.99,11.99
 1200103,Versorgungskristallmeißel,21.99,€,Versorgungskristallmeißel,23.99,23.99
@@ -351,10 +351,10 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 168,Neulingspaket 3,32.99,€,Neulingspaket 3,35.99,35.99
 177,Black Friday Sonderangebot 1,54.99,€,Black Friday Sonderangebot 1,59.99,59.99
 178,Black Friday Sonderangebot 2,109.99,€,Black Friday Sonderangebot 2,119.99,119.99
-180,Monatsanfangspaket 2,32.99,€,Monatsanfangspaket 2,35.99,35.99
-181,Monatsanfangspaket 3,54.99,€,Monatsanfangspaket 3,59.99,59.99
-182,Monatsanfangspaket 4,74.99,€,Monatsanfangspaket 4,84.99,84.99
-183,Monatsanfangspaket 5,109.99,€,Monatsanfangspaket 5,119.99,119.99
+180,Monatsanfangspaket 2,16.99,€,Monatsanfangspaket 2,17.99,17.99
+181,Monatsanfangspaket 3,21.99,€,Monatsanfangspaket 3,23.99,23.99
+182,Monatsanfangspaket 4,32.99,€,Monatsanfangspaket 4,35.99,35.99
+183,Monatsanfangspaket 5,54.99,€,Monatsanfangspaket 5,59.99,59.99
 1071001,Rundenpaket-1-12,1.09,€,Rundenpaket,1.19,1.19
 1071002,Rundenpaket-1-12,5.49,€,Rundenpaket,5.99,5.99
 1071101,Rundenpaket-2-10,2.29,€,Rundenpaket,2.49,2.49
@@ -370,7 +370,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 192,Premiumzüge für Anfänger,10.99,€,Premiumzüge für Anfänger,11.99,11.99
 193,Premiumzüge für Anfänger,16.99,€,Premiumzüge für Anfänger,17.99,17.99
 194,Lotto Glücksboni,32.99,€,Lotto Glücksboni,35.99,35.99
-179,Monatsanfangspaket 1,10.99,€,Monatsanfangspaket 1,11.99,11.99
+179,Monatsanfangspaket 1,5.49,€,Monatsanfangspaket 1,5.99,5.99
 195,Kapselpaket für Anfänger,10.99,€,Kapselpaket für Anfänger,11.99,11.99
 196,Kapselpaket für Anfänger,32.99,€,Kapselpaket für Anfänger,35.99,35.99
 197,Kapselpaket für Anfänger,54.99,€,Kapselpaket für Anfänger,59.99,59.99

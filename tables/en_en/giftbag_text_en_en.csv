@@ -24,11 +24,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 23,Weekly Pack 2,19.99,$,Weekly Pack,19.99,19.99
 24,Weekly Pack 3,49.99,$,Weekly Pack,49.99,49.99
 25,Weekly Pack 4,69.99,$,Weekly Pack,69.99,69.99
-26,Value Pack 1,99.99,$,Value Pack,99.99,99.99
-27,Value Pack 2,69.99,$,Value Pack,69.99,69.99
-28,Value Pack 3,29.99,$,Value Pack,29.99,29.99
-29,Value Pack 4,9.99,$,Value Pack,9.99,9.99
-30,Value Pack 5,4.99,$,Value Pack,4.99,4.99
+26,Value Pack 1,49.99,$,Value Pack,49.99,49.99
+27,Value Pack 2,29.99,$,Value Pack,29.99,29.99
+28,Value Pack 3,14.99,$,Value Pack,14.99,14.99
+29,Value Pack 4,4.99,$,Value Pack,4.99,4.99
+30,Value Pack 5,3.99,$,Value Pack,3.99,3.99
 31,Value Pack 1,49.99,$,Value Pack,49.99,49.99
 32,Value Pack 2,29.99,$,Value Pack,29.99,29.99
 33,Value Pack 3,14.99,$,Value Pack,14.99,14.99
@@ -55,7 +55,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 53,Weekly Subscription,0.99,$,Weekly Subscription,0.99,0.99
 54,Monthly Subscription,3.99,$,Monthly Subscription,3.99,3.99
 55,Quarterly Subscription,9.99,$,Quarterly Subscription,9.99,9.99
-56,Special Skin Pack 1,4.99,$,Special Gift Pack,4.99,4.99
+56,Special Skin Pack 1,3.99,$,Special Gift Pack,3.99,3.99
 57,Special Gift Pack 1,4.99,$,Special Gift Pack,4.99,4.99
 65,Special Gift Pack 2,49.99,$,Special Gift Pack,49.99,49.99
 58,7-Day Free Trial,0,$,7-Day Free Trial,0,0
@@ -69,7 +69,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 67,Growth Pack,9.99,$,Growth Pack,9.99,9.99
 68,Value Pack 6,4.99,$,Value Pack,4.99,4.99
 70,Unlock Special Rewards,19.99,$,Unlock Special Rewards,19.99,19.99
-71,Special Skin Pack 2,49.99,$,Special Gift Pack,49.99,49.99
+71,Special Skin Pack 2,29.99,$,Special Gift Pack,29.99,29.99
 72,4th Anniversary Card,19.99,$,4th Anniversary Card,19.99,19.99
 73,Jingle Bell Pack,49.99,$,Jingle Bell Pack,49.99,49.99
 74,Motivation Program,9.99,$,Motivation Program,9.99,9.99
@@ -186,14 +186,14 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1081301,Test Booster,9.99,$,Test Booster,9.99,9.99
 1081302,Test Booster,19.99,$,Test Booster,19.99,19.99
 1081303,Test Booster,49.99,$,Test Booster,49.99,49.99
-78,Value Pack 1,99.99,$,Value Pack,99.99,99.99
-79,Value Pack 2,69.99,$,Value Pack,69.99,69.99
-80,Value Pack 3,29.99,$,Value Pack,29.99,29.99
-81,Value Pack 4,9.99,$,Value Pack,9.99,9.99
-82,Value Pack 5,4.99,$,Value Pack,4.99,4.99
+78,Value Pack 1,49.99,$,Value Pack,49.99,49.99
+79,Value Pack 2,29.99,$,Value Pack,29.99,29.99
+80,Value Pack 3,14.99,$,Value Pack,14.99,14.99
+81,Value Pack 4,4.99,$,Value Pack,4.99,4.99
+82,Value Pack 5,3.99,$,Value Pack,3.99,3.99
 83,Value Pack 6,4.99,$,Value Pack,4.99,4.99
-84,Special Gift Pack 1,4.99,$,Special Gift Pack,4.99,4.99
-85,Special Gift Pack 2,69.99,$,Special Gift Pack,69.99,69.99
+84,Special Gift Pack 1,3.99,$,Special Gift Pack,3.99,3.99
+85,Special Gift Pack 2,49.99,$,Special Gift Pack,49.99,49.99
 86,Free Reload Pack,1.99,$,Free Reload Pack,1.99,1.99
 1090101,Capsule Bonus Pack,29.99,$,Capsule Bonus Pack,29.99,29.99
 1090102,Capsule Bonus Pack,49.99,$,Capsule Bonus Pack,49.99,49.99
@@ -246,10 +246,10 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 1100406,9-Star Training Pack 1,99.99,$,9-Star Training Pack,99.99,99.99
 109,1250 Gems pack,24.99,$,Gem Pack,24.99,24.99
 110,Date Preparation Pack,19.99,$,Date Preparation Pack,19.99,19.99
-10116,Count's Mystery Gift 1,9.99,$,Count's Mystery Gift 1,9.99,9.99
-10117,Count's Mystery Gift 2,29.99,$,Count's Mystery Gift 2,29.99,29.99
-10118,Count's Mystery Gift 3,49.99,$,Count's Mystery Gift 3,49.99,49.99
-10119,Count's Mystery Gift 4,69.99,$,Count's Mystery Gift 4,69.99,69.99
+10116,Count's Mystery Gift 1,4.99,$,Count's Mystery Gift 1,4.99,4.99
+10117,Count's Mystery Gift 2,14.99,$,Count's Mystery Gift 2,14.99,14.99
+10118,Count's Mystery Gift 3,29.99,$,Count's Mystery Gift 3,29.99,29.99
+10119,Count's Mystery Gift 4,49.99,$,Count's Mystery Gift 4,49.99,49.99
 120,SP. Energy Card,14.99,$,Energy Card,14.99,14.99
 121,Luxury Book,14.99,$,Luxury Book,14.99,14.99
 122,Collector's Book 2,19.99,$,Collector's Book 2,19.99,19.99
@@ -273,11 +273,11 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 141,Test Fund,9.99,$,Test Fund,9.99,9.99
 142,Test Fund 2,19.99,$,Test Fund 2,19.99,19.99
 143,Test Fund 3,29.99,$,Test Fund 3,29.99,29.99
-144,Special Skin Pack 1,4.99,$,Special Skin Pack,4.99,4.99
-145,Special Skin Pack 2,49.99,$,Special Skin Pack,49.99,49.99
-146,Special Gift Pack 1,4.99,$,Special Gift Pack,4.99,4.99
-147,Special Gift Pack 2,69.99,$,Special Gift Pack,69.99,69.99
-10148,Count's Mystery Gift 5,99.99,$,Count's Mystery Gift 5,99.99,99.99
+144,Special Skin Pack 1,3.99,$,Special Skin Pack,3.99,3.99
+145,Special Skin Pack 2,29.99,$,Special Skin Pack,29.99,29.99
+146,Special Gift Pack 1,3.99,$,Special Gift Pack,3.99,3.99
+147,Special Gift Pack 2,49.99,$,Special Gift Pack,49.99,49.99
+10148,Count's Mystery Gift 5,69.99,$,Count's Mystery Gift 5,69.99,69.99
 1200101,Crystal Chisel Supply,4.99,$,Crystal Chisel Supply,4.99,4.99
 1200102,Crystal Chisel Supply,9.99,$,Crystal Chisel Supply,9.99,9.99
 1200103,Crystal Chisel Supply,19.99,$,Crystal Chisel Supply,19.99,19.99
@@ -351,10 +351,10 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 168,Beginner Pack 3,29.99,$,Beginner Pack 3,29.99,29.99
 177,Black Friday Crazy Sale 1,49.99,$,Black Friday Crazy Sale 1,49.99,49.99
 178,Black Friday Crazy Sale 2,99.99,$,Black Friday Crazy Sale 2,99.99,99.99
-180,Monthly Kick Off 2,29.99,$,Monthly Kick Off 2,29.99,29.99
-181,Monthly Kick Off 3,49.99,$,Monthly Kick Off 3,49.99,49.99
-182,Monthly Kick Off 4,69.99,$,Monthly Kick Off 4,69.99,69.99
-183,Monthly Kick Off 5,99.99,$,Monthly Kick Off 5,99.99,99.99
+180,Monthly Kick Off 2,14.99,$,Monthly Kick Off 2,14.99,14.99
+181,Monthly Kick Off 3,19.99,$,Monthly Kick Off 3,19.99,19.99
+182,Monthly Kick Off 4,29.99,$,Monthly Kick Off 4,29.99,29.99
+183,Monthly Kick Off 5,49.99,$,Monthly Kick Off 5,49.99,49.99
 1071001,Stage Pack -1-12,0.99,$,Stage Pack,0.99,0.99
 1071002,Stage Pack -1-12,4.99,$,Stage Pack,4.99,4.99
 1071101,Stage Pack -2-10,1.99,$,Stage Pack,1.99,1.99
@@ -370,7 +370,7 @@ id,name,charge,currency,show_name,charge_ios,charge_ios_new
 192,Beginner's Capsule,9.99,$,Beginner's Capsule,9.99,9.99
 193,Beginner's Capsule,14.99,$,Beginner's Capsule,14.99,14.99
 194,Lucky Bonus,29.99,$,Lucky Bonus,29.99,29.99
-179,Monthly Kick Off 1,9.99,$,Monthly Kick Off 1,9.99,9.99
+179,Monthly Kick Off 1,4.99,$,Monthly Kick Off 1,4.99,4.99
 195,Beginner's Limited Capsule Pack,9.99,$,Beginner's Limited Capsule Pack,9.99,9.99
 196,Beginner's Limited Capsule Pack,29.99,$,Beginner's Limited Capsule Pack,29.99,29.99
 197,Beginner's Limited Capsule Pack,49.99,$,Beginner's Limited Capsule Pack,49.99,49.99
