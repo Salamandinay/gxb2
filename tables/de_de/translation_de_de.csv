@@ -2487,7 +2487,7 @@ ACTIVITY_SCRATCH_CARD_ONE,Verwende 1\nRubbellos
 ACTIVITY_SCRATCH_CARD_TEN,Verwende 10\nRubbellose
 ACTIVITY_SCRATCH_CARD_BUY_TITLE,Kaufen
 ACTIVITY_SCRATCH_CARD_LIMIT,Kauf nicht ausreichend
-ACTIVITY_SCRATCH_CARD_HELP,"1. Mit einem Rubbellos kannst du 5 zufällige 3-Sterne Mädchen-Fragmente erhalten.|2. Wenn du während des Events eine der folgenden Kombinationen auf dem Rubbelllos freirubbelst, erhältst du nicht nur Rubbelkartenbelohnungen, sondern auch eine zusätzliche Belohnung von Babel:| - 2 Mädchen aus demselben Haus: 5* 4-Sterne Mädchen-Fragmente| - 3 Mädchen aus demselben Haus: 30* 4-Sterne Mädchen-Fragmente.| - 4 Mädchen aus demselben Haus: 50* Elite 5-Sterne Mädchen-Fragmente| - 5 Mädchen aus demselben Haus: 5* Sternmünze| - 5 Mädchen aus verschiedenen Häusern: 10* Super Kapselmünze|3. Nach dem Event kannst du das Rubbellos weiterhin im Rucksack verwenden, aber du kannst nur 3 Sterne Mädchen-Fragmente erhalten und kannst keine zusätzlichen Belohnungen erhalten.|4. Tippe oben rechts im Verlauf auf das Ereignisinterface, um den Verlauf bei den Rubbellosen zu prüfen."
+ACTIVITY_SCRATCH_CARD_HELP,"1. Mit einem Rubbellos kannst du 5 zufällige 3-Sterne Mädchen-Fragmente erhalten.|2. Wenn du während des Events eine der folgenden Kombinationen auf dem Rubbelllos freirubbelst, erhältst du nicht nur Rubbelkartenbelohnungen, sondern auch eine zusätzliche Belohnung von Babel:| - 2 Mädchen aus demselben Haus: 5* 4-Sterne Mädchen-Fragmente| - 3 Mädchen aus demselben Haus: 30* 4-Sterne Mädchen-Fragmente.| - 4 Mädchen aus demselben Haus: 50* Elite 5-Sterne Mädchen-Fragmente| - 5 Mädchen aus demselben Haus: 25* Wahrsagekristall| - 5 Mädchen aus verschiedenen Häusern: 5* Zufallsseelengefäßbox|3. Nach dem Event kannst du das Rubbellos weiterhin im Rucksack verwenden, aber du kannst nur 3 Sterne Mädchen-Fragmente erhalten und kannst keine zusätzlichen Belohnungen erhalten.|4. Tippe oben rechts im Verlauf auf das Ereignisinterface, um den Verlauf bei den Rubbellosen zu prüfen."
 ACTIVITY_SCRATCH_RECORD,Verlauf
 HOUSE_TEXT_54,Tritt einer Gilde bei um Gilden-Chat zu öffnen
 UNFOLD_SKIN,Liste
@@ -3934,9 +3934,9 @@ ACTIVITY_NEWYEAR_WELFARE_TEXT01,Endet in:
 ACTIVITY_NEWYEAR_WELFARE_TEXT02,Dias
 ACTIVITY_NEWYEAR_WELFARE_TEXT03,Münzen
 GACHA_LIMIT_PARTNER,UP
-SPRING_FESTIVAL_HELP,"1. Verwende während des Events die ""Glückssäcke"", um gegen Mädchen der verschiedenen Fraktionen zu tauschen.|2. Nachdem eine bestimmte Menge von Mädchen getauscht wurde, erhältst du die Belohnungen. Je öfter du getauscht hast, desto größer sind die Belohnungen.|3. Nachdem du die Mädchen jeder Fraktion jeweils einmal getauscht hast, kannst du wieder von vorne beginnen. Jedes Mädchen kann nur einmal eingetauscht werden.|4. Erhalten der ""Glückssäcke"":| - 3K Dias verbrauchen - 30x erhältlich ({1}/1)| - 30M Münzen verbrauchen - 30x erhältlich ({2}/1)| - 100 Arena-Tickets verbrauchen - 30x erhältlich ({3}/1)| - 1 Steuer verwenden - 2x erhältlich ({4}/100)| - Superpakete| - Glückspakete| - Kostümpakete|5. Nach dem Ende des Events werden die noch nicht verwendeten ""Glückssäcke"" im Verhältlich 1:1 automatisch gegen Runensteine umgetauscht. Die Runensteine werden per Mail gesendet."
-SPRING_FESTIVAL_TEXT01,Wähle Mädchen aus
-SPRING_FESTIVAL_TEXT02,"Ertausche dir Mädchen aus allen Fraktionen,\num hier nochmal zu tauschen"
+SPRING_FESTIVAL_HELP,"1. Verwende während des Events die ""Glückssäcke"", um gegen Mädchen der verschiedenen Fraktionen zu tauschen.|2. Nachdem eine bestimmte Menge von Mädchen getauscht wurde, erhältst du die Belohnungen. Je öfter du getauscht hast, desto größer sind die Belohnungen.|3. Nachdem du die Mädchen jeder Fraktion jeweils einmal getauscht hast, kannst du wieder von vorne beginnen. Jedes Mädchen kann nur einmal eingetauscht werden.|4. Erhalten der ""Glückssäcke"":| - 3K Dias verbrauchen - 30x erhältlich ({1}/1)| - 30M Münzen verbrauchen - 30x erhältlich ({2}/1)| - 100 Arena-Tickets verbrauchen - 30x erhältlich ({3}/1)| - 1 Steuer verwenden - 2x erhältlich ({4}/100)| - Superpakete| - Glückspakete| - Kostümpakete| - Überraschungspakete|5. Nach dem Ende des Events werden die noch nicht verwendeten ""Glückssäcke"" im Verhältlich 1:1 automatisch gegen Runensteine umgetauscht. Die Runensteine werden per Mail gesendet."
+SPRING_FESTIVAL_TEXT01,Wähle ein Mädchen aus
+SPRING_FESTIVAL_TEXT02,"Ertausche dir einmal Mädchen aus allen Fraktionen,\num hier nochmal zu tauschen"
 GAMBLE_BUY_TWENTY,20 X
 GAMBLE_BUY_FIFTY,50 X
 GAMBLE_BUY_POINTS_TEXT01,Zum Lottoevent
@@ -4697,7 +4697,7 @@ ACTIVITY_BEACH_ISLAND_TEXT07,Ziel
 ACTIVITY_BEACH_ISLAND_TEXT08,Belohnung
 ACTIVITY_BEACH_ISLAND_TEXT09,Erhaltene Sterne:
 ACTIVITY_BEACH_ISLAND_TEXT10,Erhalte insgesamt [c][d76500]{1}[-][/c] Sterne
-ACTIVITY_BEACH_PUZZLE_HELP,"1. Verwende den farbigen Sand, um ein zufälliges Gebiet zu färben. Jedes Mal wenn du ein Gebiet färbst, bekommst du eine zufällige Belohnung.|2. Wenn bestimmte Gebiete vollständig eingefärbt sind, bekommst du die Belohnungen dieser Gebiete. Wenn alle Gebiete fertig eingefärbt sind, bekommst du die Belohnungen fürs Malen für die aktuelle Runde und die nächste Runde wird entsperrt.|3. Nach dem Ende des Events werden der noch nicht verwendete farbige Sand und die Beach-Kostüm-Tickets automatisch in Münzen umgetauscht. 1 farbiger Sand gibt 18K Münzen und 1 Beach-Kostüm-Ticket 100K Münzen."
+ACTIVITY_BEACH_PUZZLE_HELP,"1. Verwende den farbigen Sand, um ein zufälliges Gebiet zu färben. Jedes Mal wenn du ein Gebiet färbst, bekommst du eine zufällige Belohnung.|2. Wenn bestimmte Gebiete vollständig eingefärbt sind, bekommst du die Belohnungen dieser Gebiete. Wenn alle Gebiete fertig eingefärbt sind, bekommst du die Belohnungen fürs Malen für die aktuelle Runde und die nächste Runde wird entsperrt.|3. Nach dem Ende des Events wird der noch nicht verwendete farbige Sand automatisch in Münzen umgetauscht. 1 farbiger Sand gibt 18K Münzen."
 ACTIVITY_BEACH_PUZZLE_TEXT01,Färben
 ACTIVITY_BEACH_PUZZLE_TEXT02,NEXT
 ACTIVITY_BEACH_PUZZLE_TEXT03,"Willst du {1}x {2} verwenden, um die Fläche einzufärben?"
@@ -4708,7 +4708,7 @@ ACTIVITY_BEACH_PUZZLE_TEXT07,Vervollständige {1} Bild(er)
 ACTIVITY_BEACH_SHOP_TEXT01,Neu!
 ACTIVITY_BEACH_SHOP_TEXT02,2020
 ACTIVITY_BEACH_SHOP_TEXT03,Willst du {2} x{1} zum Tausch verwenden?
-ACTIVITY_BEACH_MAIN_WINDOW_TEXT01,Die Beach-Kostüme warten auf dich!
+ACTIVITY_BEACH_MAIN_WINDOW_TEXT01, 
 ACTIVITY_BEACH_MAIN_WINDOW_TEXT02,Los
 ACTIVITY_BEACH_MAIN_WINDOW_TEXT03,"Tippe auf den weißen Bereich, um das Fenster zu schließen"
 DAILY_QUIZ_TEXT01,Alle sammeln

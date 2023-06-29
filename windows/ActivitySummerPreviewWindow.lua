@@ -123,8 +123,8 @@ function ActivitySummerPreviewWindow:registerEvent()
 	UIEventListener.Get(self.gotoBtn_).onClick = function ()
 		xyd.WindowManager.get():clearStackWindow()
 		xyd.WindowManager.get():closeThenOpenWindow("activity_summer_preview_window", "activity_window", {
-			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_SAND_SEARCH),
-			select = xyd.ActivityID.ACTIVITY_SAND_SEARCH
+			activity_type = xyd.tables.activityTable:getType(xyd.ActivityID.ACTIVITY_BEACH_PUZZLE),
+			select = xyd.ActivityID.ACTIVITY_BEACH_PUZZLE
 		})
 	end
 

@@ -104,7 +104,7 @@ function ActivityBeachGiftbag:onRegister()
 		local params = {
 			notShowGetWayBtn = true,
 			showGetWays = false,
-			itemID = 254,
+			itemID = 358,
 			show_has_num = true,
 			wndType = xyd.ItemTipsWndType.ACTIVITY
 		}
@@ -127,9 +127,9 @@ function ActivityBeachGiftbag:updateSpecialItem()
 	local giftbagID = xyd.tables.activityTable:getGiftBag(self.id)[1]
 	local limitTimes = self.activityData.detail.charges[1].limit_times - self.activityData.detail.charges[1].buy_times
 
-	xyd.setUISpriteAsync(self.specialItemIcon_, nil, "icon_254", nil, , true)
+	xyd.setUISpriteAsync(self.specialItemIcon_, nil, "icon_358", nil, , true)
 
-	self.specialItemNumLabel_.text = "X120"
+	self.specialItemNumLabel_.text = "X100"
 	self.specialItemLimitLabel_.text = __("BUY_GIFTBAG_LIMIT") .. tostring(limitTimes)
 	self.specialItemExpLabel_.text = "+" .. xyd.tables.giftBagTable:getVipExp(giftbagID) .. " VIP EXP"
 	self.specialItemChargeBtnLabel_.text = xyd.tables.giftBagTextTable:getCurrency(giftbagID) .. " " .. xyd.tables.giftBagTextTable:getCharge(giftbagID)
