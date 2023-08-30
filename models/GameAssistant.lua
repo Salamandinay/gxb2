@@ -729,7 +729,12 @@ function GameAssistant:reqGamble(time)
 				xyd.models.gamble:reqGetAward(1, 1)
 			end
 		elseif time == 1 then
-			xyd.models.gamble:reqGetAward(1, 2)
+			local index = nil
+			local selfVip = xyd.models.backpack:getVipLev()
+			local needVip = xyd.tables.gambleConfigTable:needVip(1)
+			index = needVip[2] <= selfVip and 2 or 3
+
+			xyd.models.gamble:reqGetAward(1, index)
 		end
 
 		return true
