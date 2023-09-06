@@ -9275,9 +9275,9 @@ Fertigkeitseffekt. Kann nicht gestapelt werden. Zum Ende der Runde wird dem Ziel
 503107,Himmelsinsel,Energiewiederherstellung,Ab der 3. Runde wird die Energie aller Gegner zum Ende der Runde um 50 erhöht.
 503108,Himmelsinsel,Zeit zum Verteidigen,In ungeradzahligen Runden wird die Blockade aller Gegner der Frontline um 50% erhöht.
 503109,Himmelsinsel,Zeit zum Angreifen,In geradzahligen Runden wird der Krit. Schaden aller Gegner der Backline um 50% erhöht.
-6448101,Dornenherz,Antiquitätenfertigkeit,Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 10% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)
-6448201,Dornenherz,Antiquitätenfertigkeit,"Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 17,5% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)"
-6448301,Dornenherz,Antiquitätenfertigkeit,Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 25% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)
+6448101,Dornenherz,Antiquitätenfertigkeit,Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 20% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)
+6448201,Dornenherz,Antiquitätenfertigkeit,Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 35% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)
+6448301,Dornenherz,Antiquitätenfertigkeit,Kritische Treffer fügen dem Ziel einen zusätzlichen Schaden von 50% seiner max. HP zu. (Maximal 2500% vom eigenen Angriffswert. Die von passiven Fertigkeiten ausgelösten Krit. werden diesen Effekt nicht auslösen.)
 6490101,Steinklingen-Axt,Antiquitätenfertigkeit,"Aktive Fertigkeit und Standardangriff erhöhen die eigenen HP um 30% des zugefügten Schadens. (Kontinuierlicher Schaden, Schaden durch passive Fertigkeiten und zusätzlich zugefügter Schaden werden nicht mitgerechnet.)"
 6490201,Steinklingen-Axt,Antiquitätenfertigkeit,"Aktive Fertigkeit und Standardangriff erhöhen die eigenen HP um 60% des zugefügten Schadens. (Kontinuierlicher Schaden, Schaden durch passive Fertigkeiten und zusätzlich zugefügter Schaden werden nicht mitgerechnet.)"
 6490301,Steinklingen-Axt,Antiquitätenfertigkeit,"Aktive Fertigkeit und Standardangriff erhöhen die eigenen HP um 90% des zugefügten Schadens. (Kontinuierlicher Schaden, Schaden durch passive Fertigkeiten und zusätzlich zugefügter Schaden werden nicht mitgerechnet.)"
@@ -9752,9 +9752,9 @@ Fertigkeitseffekt. Jede Schicht erhöht ihre Widerstandskraft gegen Energieminde
 643401,Schicksalskristall,Antiquitätenfertigkeit,+40 Energie
 643501,Schicksalskristall,Antiquitätenfertigkeit,+45 Energie
 643601,Schicksalskristall,Antiquitätenfertigkeit,+50 Energie
-6742101,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 5% und verringert den Krit. Widerstand des Gegners um 5%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 1%. Diese Effekte dauern 1 Runde."
-6742201,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 10% und verringert den Krit. Widerstand des Gegners um 5%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 1,5%. Diese Effekte dauern 1 Runde."
-6742301,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 15% und verringert den Krit. Widerstand des Gegners um 5%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 2%. Diese Effekte dauern 1 Runde."
+6742101,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 15% und verringert den Krit. Widerstand des Gegners um 25%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 1,5%. Diese Effekte dauern 1 Runde."
+6742201,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 30% und verringert den Krit. Widerstand des Gegners um 25%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 2%. Diese Effekte dauern 1 Runde."
+6742301,Klingenpistole,Antiquitätenfertigkeit,"Bevor die Besitzerin ihre aktive Fertigkeit einsetzen wird, erhöht sie die Krit. Rate um 45% und verringert den Krit. Widerstand des Gegners um 25%. Jede 1%ige Krit. Rate erhöht ihren Krit. Schaden um 3%. Diese Effekte dauern 2 Runden."
 5600900,Carmen & Bonnie,Standardangriff,Standardangriff
 65601900,Carmen & Bonnie,Standardangriff,Standardangriff
 75600900,Carmen & Bonnie,Standardangriff,Standardangriff
@@ -13397,9 +13397,9 @@ Kontinuierlicher Schaden. Erhöht den erlittenen kontinuierlichen Schaden um 25%
 677601,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den kritischen Schaden um 80%
 677701,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den kritischen Schaden um 90%
 677801,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den kritischen Schaden um 100%
-6778101,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 30%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 10% dieses kritischen Schadens zu.
-6778201,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 60%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 20% dieses kritischen Schadens zu.
-6778301,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 100%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 30% dieses kritischen Schadens zu.
+6778101,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 30%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 30% dieses kritischen Schadens zu.
+6778201,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 60%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 40% dieses kritischen Schadens zu.
+6778301,Nachtpfeil,Antiquitätenfertigkeit,Erhöht den max. kritischen Schaden um 100%. Fügt beim kritischen Schlag dem Gegner einen festen Schaden in Höhe von 50% dieses kritischen Schadens zu.
 5200001,Fertigkeit vom Set der Seelensteine,Koi des Glücks,Der erlittene Einzelschaden liegt maximal bei 30% der eigenen max. HP. (Die reduzierten Schäden liegen maximal bei 100% der eigenen max. HP. Es kann jede Runde maximal 3 Mal ausgelöst werden.)
 5200002,Fertigkeit vom Set der Seelensteine,Schwimmende Qualle,"Pro 1%iger Krit. Widerstand des Besitzers erhöht seine Schadensreduzierungsrate um 0,5%. Erleidet der Besitzer einen kritischen Schlag, wird sein Krit. Widerstand um 30% 1 Runde lang erhöht."
 5200003,Fertigkeit vom Set der Seelensteine,Felsenkrabbe,"Zu Beginn der Runde erhält der Besitzer 1 Runde lang 1 Schicht Krabbenschale. Krabbenschale: Fertigkeitseffekt. Erleidet der Besitzer einen beliebigen Schaden, wird 1 Schicht Krabbenschale zur Abwehr dieses Schadens entfernt."

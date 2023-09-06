@@ -10351,9 +10351,9 @@ Skill Effect, cannot be stacked. At the end of each Round, the owner of [c][e280
 503107,Sky Island,Energy Recovery,"Starting from Round 3, all Backline enemies recover 50 Energy at the end of each Round."
 503108,Sky Island,Take Cover,"In odd-number Rounds, all Frontline enemies gain 50% Block."
 503109,Sky Island,Time to Attack,"In even-number Rounds, all Backline enemies gain 50% Crit Damage."
-6448101,Thorn's Heart,Antique Skill,"Deals (10% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
-6448201,Thorn's Heart,Antique Skill,"Deals (17.5% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
-6448301,Thorn's Heart,Antique Skill,"Deals (25% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
+6448101,Thorn's Heart,Antique Skill,"Deals (20% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
+6448201,Thorn's Heart,Antique Skill,"Deals (35% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
+6448301,Thorn's Heart,Antique Skill,"Deals (50% of target's maximum HP, no more than 2500% of owner's Attack) extra damage when Crit is triggered with Basic Attack or Active skill."
 6490101,Chainblade Axe,Antique Skill,"When the owner deals Active Skills or Basic Attacks, heals the owner by 30% of the damage dealt. (the extra damages mentioned in Active Skills or Passive skills will not be calculated)"
 6490201,Chainblade Axe,Antique Skill,"When the owner deals Active Skills or Basic Attacks, heals the owner by 60% of the damage dealt. (the extra damages mentioned in Active Skills or Passive skills will not be calculated)"
 6490301,Chainblade Axe,Antique Skill,"When the owner deals Active Skills or Basic Attacks, heals the owner by 90% of the damage dealt. (the extra damages mentioned in Active Skills or Passive skills will not be calculated)"
@@ -11131,9 +11131,9 @@ When Robbie\'s current HP drops below 30% of her maximum HP for the first time i
 643401,Fate Crystal,Antique Skill,+40 Energy
 643501,Fate Crystal,Antique Skill,+45 Energy
 643601,Fate Crystal,Antique Skill,+50 Energy
-6742101,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 5% Crit, her attacks will ignore 5% of the targets' Crit Resist, and every 1% Crit that she has will grant her 1% extra Crit Damage. All of the aforementioned effects last for 1 round."
-6742201,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 10% Crit, her attacks will ignore 5% of the targets' Crit Resist, and every 1% Crit that she has will grant her 1.5% extra Crit Damage. All of the aforementioned effects last for 1 round."
-6742301,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 15% Crit, her attacks will ignore 5% of the targets' Crit Resist, and every 1% Crit that she has will grant her 2% extra Crit Damage. All of the aforementioned effects last for 1 round."
+6742101,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 15% Crit, her attacks will ignore 25% of the targets' Crit Resist, and every 1% Crit that she has will grant her 1.5% extra Crit Damage. All of the aforementioned effects last for 1 round."
+6742201,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 30% Crit, her attacks will ignore 25% of the targets' Crit Resist, and every 1% Crit that she has will grant her 2% extra Crit Damage. All of the aforementioned effects last for 1 round."
+6742301,Tool of Trade,Antique Skill,"Before the owner releases her Active Skill, she gains 45% Crit, her attacks will ignore 25% of the targets' Crit Resist, and every 1% Crit that she has will grant her 3% extra Crit Damage. All of the aforementioned effects last for 2 rounds."
 5600900,Gwen & Brigit,Basic Attack,Basic Attack
 65601900,Gwen & Brigit,Basic Attack,Basic Attack
 75600900,Gwen & Brigit,Basic Attack,Basic Attack
@@ -17716,9 +17716,9 @@ The owner takes (600% of the owner’s Attack) damage when Mesmerize is inflicte
 677601,Midnight Star,Antique Skill,Increases Crit Damage by 80%.
 677701,Midnight Star,Antique Skill,Increases Crit Damage by 90%.
 677801,Midnight Star,Antique Skill,Increases Crit Damage by 100%.
-6778101,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 30%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 10% of damage dealt with this Critical Strike will be dealt to the target."
-6778201,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 60%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 20% of damage dealt with this Critical Strike will be dealt to the target."
-6778301,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 100%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 30% of damage dealt with this Critical Strike will be dealt to the target."
+6778101,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 30%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 30% of damage dealt with this Critical Strike will be dealt to the target."
+6778201,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 60%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 40% of damage dealt with this Critical Strike will be dealt to the target."
+6778301,Midnight Star,Antique Skill,"Increases the Maximum Limit of Crit Damage by 100%. When the owner of this Antique deals a Critical Strike with her Basic Attack or Active Skill, an additional fixed damage equivalent to 50% of damage dealt with this Critical Strike will be dealt to the target."
 5200001,Anima Set Skill,Lucky Goldfish,Every instance of damage taken will not surpass 30% of self Maximum HP (The amount of damage reduced will not exceed 100% of the owner's Maximum HP. This effect can only be triggered 3 times per Round).
 5200002,Anima Set Skill,Floating Jellyfish,"In battle, the owner of the Set gains 0.5% Damage Reduction for every 1% Crit Resist she has. When she takes a Critical Strike from Basic Attacks or Active Skills, she will gain 30% Crit Resist that lasts for 1 Round."
 5200003,Anima Set Skill,Rock Crab,"
