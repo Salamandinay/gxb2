@@ -396,9 +396,7 @@ function SettingUpWindow:playOpenAnimation(callback)
 	table.insert(otherBtnsPosArr, self.btnBackground_)
 
 	if xyd.Global.isReview ~= 1 then
-		action:AppendInterval(0.034)
-		action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnAward_))
-		table.insert(otherBtnsPosArr, self.btnAward_)
+		-- Nothing
 	end
 
 	local activityInvitationSeniorData = xyd.models.activity:getActivity(xyd.ActivityID.ACTIVITY_INVITATION_SENIOR)
