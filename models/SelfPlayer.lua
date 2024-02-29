@@ -158,6 +158,7 @@ function SelfPlayer:onRegister()
 	self:registerEvent(xyd.event.NEW_PLAYER_TIPS_BACK, handler(self, self.onNewPlayerTipsInfo))
 	self:registerEvent(xyd.event.GET_DOG_MINI_GAME_LEVEL, handler(self, self.getDogMiniPassLevelBack))
 	self:registerEvent(xyd.event.SEND_DOG_MINI_GAME_PASS, handler(self, self.onDogMiniLevelBack))
+	self:registerEvent(xyd.event.SDK_GET_PRIVACY_STATE, handler(self, self.onGetPrivacyState))
 end
 
 function SelfPlayer:onAnswerQuestion(event)
@@ -686,6 +687,7 @@ function SelfPlayer:onLoginInfo_(event)
 	xyd.models.quickFormation:reqTeamsInfo()
 	xyd.models.galaxyTrip:sendGalaxyTripGetMainBack()
 	xyd.models.soulLand:reqCheckOpen()
+	xyd.SdkManager.get():getPrivacyState()
 
 	if xyd.isDogVersionOpen() then
 		self:getDogMiniPassLevelReq()
@@ -1287,6 +1289,10 @@ function SelfPlayer:backToMainWindowUpdatePartner()
 	self.curIndex = newId
 end
 
+function SelfPlayer:getActTables()
+	return self.actTables
+end
+
 function SelfPlayer:getDogMiniPassLevelReq()
 	local msg = messages_pb:get_dog_mini_game_level_req()
 
@@ -1316,8 +1322,24 @@ function SelfPlayer:onDogMiniLevelBack(event)
 	self.dogMIniGameLevel = event.data.id
 end
 
-function SelfPlayer:getActTables()
-	return self.actTables
+function SelfPlayer:onGetPrivacyState(event)
+	local params = event.params
+
+	dump(params, "onGetPrivacyState ====")
+
+	local status = tonumber(params.status)
+
+	if status == 1 then
+		local isPrivacyStrictLocation = tonumber(params.isPrivacyStrictLocation)
+
+		if isPrivacyStrictLocation == 1 then
+			self.isShowPrivacyStrictLocation = true
+		end
+	end
+end
+
+function SelfPlayer:getIsShowPrivacy()
+	return self.isShowPrivacyStrictLocation
 end
 
 return SelfPlayer

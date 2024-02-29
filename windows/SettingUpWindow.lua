@@ -48,6 +48,8 @@ function SettingUpWindow:getUIComponent()
 	self.labelGM = self.btnGM_:ComponentByName("labelGM", typeof(UILabel))
 	self.btnAgreement_ = groupMain_:ComponentByName("btnAgreement_", typeof(UISprite)).gameObject
 	self.labelAgreement = self.btnAgreement_:ComponentByName("labelAgreement", typeof(UILabel))
+	self.btnPrivacy = groupMain_:ComponentByName("btnPrivacy", typeof(UISprite)).gameObject
+	self.labelPrivacy = self.btnPrivacy:ComponentByName("labelPrivacy", typeof(UILabel))
 	self.gLace_2 = groupMain_:ComponentByName("gLace_2", typeof(UIWidget))
 	self.lace_2_left = groupMain_:ComponentByName("gLace_2/lace_2_left", typeof(UIWidget))
 	self.lace_2_right = groupMain_:ComponentByName("gLace_2/lace_2_right", typeof(UIWidget))
@@ -137,6 +139,8 @@ function SettingUpWindow:layout()
 		self.labelAgreement.text = __("SETTING_UP_AGREEMENT")
 	end
 
+	self.labelPrivacy.text = __("PRIVACY_TEXT_01")
+
 	if xyd.Global.isReview == 1 then
 		self.btnAgreement_:X(259)
 		self.btnAward_:X(-259)
@@ -196,6 +200,8 @@ function SettingUpWindow:registerEvent()
 	if xyd.Global.lang == "ja_jp" then
 		UIEventListener.Get(self.btnAgreement_).onClick = handler(self, self.onAgreementTouch)
 	end
+
+	UIEventListener.Get(self.btnPrivacy).onClick = handler(self, self.onTouchPrivacy)
 
 	UIEventListener.Get(self.btnGameNotice_).onClick = function ()
 		xyd.WindowManager.get():openWindow("new_notice_window", {})
@@ -407,7 +413,7 @@ function SettingUpWindow:playOpenAnimation(callback)
 		table.insert(otherBtnsPosArr, self.btnInvitationSenior)
 	end
 
-	if xyd.Global.lang == "ja_jp" then
+	if xyd.Global.lang == "ja_jp" and xyd.models.settingUp:getShowNoticeBtn() then
 		table.insert(otherBtnsPosArr, self.btnGameNotice_)
 	end
 
@@ -429,6 +435,11 @@ function SettingUpWindow:playOpenAnimation(callback)
 		table.insert(otherBtnsPosArr, self.btnQuestionnare_)
 	else
 		action:AppendCallback(self.bindFunc(self.setWndComplete, self))
+	end
+
+	if xyd.models.selfPlayer:getIsShowPrivacy() then
+		action:AppendCallback(self.bindFunc(self.itemAnimation, self, self.btnPrivacy))
+		table.insert(otherBtnsPosArr, self.btnPrivacy)
 	end
 
 	for i in pairs(otherBtnsPosArr) do
@@ -491,6 +502,10 @@ function SettingUpWindow:lineAnimation(groupBot_, imgBot1, imgBot2, labelName_)
 	action:Insert(0, DG.Tweening.DOTween.To(DG.Tweening.Core.DOSetter_float(setter3), 0.01, 1, 0.2))
 	action:Insert(0.2, imgBot1.transform:DOLocalMove(Vector3(-176, y1, 0), 0.2))
 	action:Insert(0.2, imgBot2.transform:DOLocalMove(Vector3(176, y2, 0), 0.2))
+end
+
+function SettingUpWindow:onTouchPrivacy()
+	xyd.SdkManager.get():showPrivacyDialogView()
 end
 
 function SettingUpWindow:onBtnInvitationSenior()
