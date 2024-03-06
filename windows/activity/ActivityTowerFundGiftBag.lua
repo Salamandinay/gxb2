@@ -83,6 +83,7 @@ function ActivityTowerFundGiftBag:ctor(parentGO, params)
 	self.giftBagId_ = xyd.tables.activityTowerFundGiftBagTable:getGiftBagID(1)
 	self.activityData_ = xyd.models.activity:getActivity(xyd.ActivityID.TOWER_FUND_GIFTBAG)
 
+	self:updateLevel()
 	self:getUIComponent()
 	self:onRegisterEvent()
 
@@ -102,9 +103,10 @@ function ActivityTowerFundGiftBag:getUIComponent()
 	self.imgPageNum_ = go:ComponentByName("imgPageNum_", typeof(UISprite))
 	local group1 = go:NodeByName("group1").gameObject
 	local scroller = group1:NodeByName("scroller").gameObject
+	local itemNode = scroller:NodeByName("itemGroup").gameObject
 
-	for i = 1, 5 do
-		self["itemsGroup" .. i] = scroller:NodeByName("itemsGroup" .. i).gameObject
+	for i = 1, self.levelMax_ do
+		self["itemsGroup" .. i] = NGUITools.AddChild(scroller, itemNode)
 		self["itemsGroup_uiLayout" .. i] = self["itemsGroup" .. i]:GetComponent(typeof(UILayout))
 	end
 
@@ -132,9 +134,6 @@ end
 
 function ActivityTowerFundGiftBag:layout()
 	self.chargeData_ = self.activityData_.detail.charges
-
-	self:updateLevel()
-
 	local startLevel = self.levelMax_
 
 	for i = 1, self.levelMax_ do
@@ -178,7 +177,7 @@ function ActivityTowerFundGiftBag:updateTexture()
 	else
 		self.imgPageNum_.gameObject:SetActive(true)
 		xyd.setUISpriteAsync(self.imgTitle_, nil, "tower_fund_giftbag_logo_" .. xyd.Global.lang .. "2", nil, , true)
-		xyd.setUISpriteAsync(self.imgPageNum_, nil, "tower_fund_giftbag_page_" .. self.level_)
+		xyd.setUISpriteAsync(self.imgPageNum_, nil, "activity_sports_num_" .. self.level_)
 	end
 end
 
@@ -244,7 +243,7 @@ end
 function ActivityTowerFundGiftBag:updateItemList()
 	local itemsGroup = self["itemsGroup" .. self.level_]
 
-	for i = 1, 5 do
+	for i = 1, self.levelMax_ do
 		self["itemsGroup" .. i]:SetActive(self.level_ == i)
 	end
 
