@@ -128,7 +128,8 @@ function ActivityTowerFundGiftBag:getUIComponent()
 	self.labelDesc_ = go:ComponentByName("descLabel", typeof(UILabel))
 	self.arrowLeft_ = go:ComponentByName("arrowLeft", typeof(UISprite))
 	self.arrowRight_ = go:ComponentByName("arrowRight", typeof(UISprite))
-	self.awardGroup_ = go:ComponentByName("awardGroup", typeof(UIGrid))
+	self.awardScroll_ = go:ComponentByName("scroll", typeof(UIScrollView))
+	self.awardGroup_ = go:ComponentByName("scroll/awardGroup", typeof(UILayout))
 	self.littleItem = go.transform:Find("fund_item")
 end
 
@@ -164,7 +165,6 @@ function ActivityTowerFundGiftBag:layout()
 		self.labelDesc_.height = 120
 
 		self.labelDesc_:X(50)
-		self.awardGroup_:Y(-290)
 	end
 
 	self.labelText_.text = __("ACTIVITY_WARMUP_PACK_TEXT05")
@@ -305,6 +305,7 @@ function ActivityTowerFundGiftBag:pageChange(changeNum)
 	self:updateBtnState()
 	self:updateAwardItems()
 	self:updateItemList()
+	self.awardScroll_:ResetPosition()
 end
 
 function ActivityTowerFundGiftBag:updateAwardItems()
@@ -337,6 +338,8 @@ function ActivityTowerFundGiftBag:updateAwardItems()
 
 			self.topItemList_[idx] = xyd.getItemIcon(params)
 		end
+
+		xyd.setDragScrollView(self.topItemList_[idx].go, self.awardScroll_)
 	end
 
 	for idx, itemIcon in ipairs(self.topItemList_) do
@@ -348,12 +351,7 @@ function ActivityTowerFundGiftBag:updateAwardItems()
 	end
 
 	self.awardGroup_:Reposition()
-
-	if #datas >= 5 then
-		self.awardGroup_.transform:X(170 - (#datas - 4) * 40)
-	else
-		self.awardGroup_.transform:X(170)
-	end
+	self.awardGroup_.transform:X(-98)
 end
 
 function ActivityTowerFundGiftBag:updateBtnState()

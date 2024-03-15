@@ -65,7 +65,7 @@ daily_mail_awards_lost_space,50|4|24|60,-1
 daily_mail_awards_week,18|22,-1
 daily_mail_awards_arena,30|8|19,-1
 daily_mail_awards_boss,4|10,-1
-daily_mail_awards_wish,2|19|46,-1
+daily_mail_awards_wish,2|27|58,-1
 partner_force_req_lev,29|39|49|59|79|99|139|159|179|199|249|259|269|289,-1
 friend_energy_cd,7200,-1
 friend_energy_max,10,-1
@@ -116,7 +116,7 @@ activity_cv_share_award,2#100,-1
 stage_activity_dropbox,74,-1
 stage_activity_dropbox2,16,-1
 stage_activity_dropbox3,292,-1
-stage_activity_dropbox4,74,-1
+stage_activity_dropbox4,140|16,-1
 guild_transfer_cd,604800,-1
 activity_guard_boss_hp,100,-1
 activity_guard_item_atk,49#10,-1
@@ -550,7 +550,7 @@ activity_red_riding_hood_awards_1,424#7|418#17,-1
 school_practise_effect_pos,1#-45#-45|1#-130#-10|1#-60#-5|1#0#0|-1#470#-70|-1#540#-90,-1
 treasure_reserve_unlock,2#0|2#1000|2#2000,-1
 altar_6up_day_limit,5,-1
-activity_tower_fund_bonus,4200|5000|5000|5000|5000,-1
+activity_tower_fund_bonus,4200|5000|5000|5000|5000|6000|7000|8000|9000,-1
 slot_sort_type_show_list,10|9|4|5|6|7|0|1|8,-1
 partner_challenge_chess_cost1,3,-1
 partner_challenge_chess_cost2,1,-1
@@ -592,6 +592,8 @@ tower_giftbag_floors2,220|280|340|400,-1
 tower_giftbag_floors3,420|480|540|600,-1
 tower_giftbag_floors4,620|680|740|800,-1
 tower_giftbag_floors5,820|880|940|900,-1
+tower_giftbag_floors6,1050|1100|1150|1200,-1
+tower_giftbag_floors7,1300|1350|1400|1450,-1
 level_fund_window_lvl,40|50|60,-1
 battle_pass_time,7|3|1,-1
 battle_pass_level,10,-1

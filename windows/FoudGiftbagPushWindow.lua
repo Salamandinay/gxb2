@@ -25,7 +25,8 @@ function FoudGiftbagPushWindow:getUIComponent()
 	self.label2_ = conTrans:ComponentByName("label2_", typeof(UILabel))
 	self.icon1_ = conTrans:ComponentByName("icon1_", typeof(UITexture))
 	self.icon2_ = conTrans:ComponentByName("icon2_", typeof(UISprite))
-	self.itemGroup = conTrans:NodeByName("itemGroup").gameObject
+	self.itemScroll = conTrans:ComponentByName("scroller", typeof(UIScrollView))
+	self.itemGroup = conTrans:NodeByName("scroller/itemGroup").gameObject
 	self.buyBtn = conTrans:NodeByName("buyBtn").gameObject
 	self.buyBtnLabel = conTrans:ComponentByName("buyBtn/label", typeof(UILabel))
 	self.groupCrystal = conTrans:NodeByName("groupCrystal").gameObject
@@ -194,7 +195,7 @@ function FoudGiftbagPushWindow:setTowerFoudUIComponent(giftbag_id)
 	else
 		self.imgPageNum_.gameObject:SetActive(true)
 		xyd.setUISpriteAsync(self.imgTitle_, nil, "tower_fund_giftbag_logo_" .. xyd.Global.lang .. "2", nil, , true)
-		xyd.setUISpriteAsync(self.imgPageNum_, nil, "tower_fund_giftbag_page_" .. level_)
+		xyd.setUISpriteAsync(self.imgPageNum_, nil, "activity_sports_num_" .. level_)
 	end
 
 	self.buyBtnLabel.text = __("NEW_RECHARGE_TEXT08")
@@ -216,7 +217,6 @@ function FoudGiftbagPushWindow:setTowerFoudUIComponent(giftbag_id)
 	self.label2_:Y(-120)
 	self.icon1_:Y(-120)
 	self.buyBtn:Y(-365)
-	self.itemGroup:Y(-205)
 	NGUITools.DestroyChildren(self.itemGroup.transform)
 	self.itemGroup:SetActive(true)
 
@@ -237,9 +237,12 @@ function FoudGiftbagPushWindow:setTowerFoudUIComponent(giftbag_id)
 			num = v,
 			scale = scale
 		})
+
+		xyd.setDragScrollView(item.go, self.itemScroll)
 	end
 
 	layout:Reposition()
+	self.itemScroll:ResetPosition()
 
 	UIEventListener.Get(self.buyBtn).onClick = function ()
 		local select = xyd.ActivityID.TOWER_FUND_GIFTBAG

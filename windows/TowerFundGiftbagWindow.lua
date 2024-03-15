@@ -93,6 +93,7 @@ function TowerFundGiftbagWindow:ctor(name, params)
 		key = "ActivityFirstRedMark_" .. xyd.ActivityID.TOWER_FUND_GIFTBAG .. "_" .. self.activityData.end_time
 	})
 	self.activityData:updateRedMarkState()
+	self:updateLevel()
 end
 
 function TowerFundGiftbagWindow:initWindow()
@@ -109,9 +110,10 @@ function TowerFundGiftbagWindow:getUIComponent()
 	self.imgPageNum_ = winTrans:ComponentByName("imgPageNum_", typeof(UISprite))
 	local group1 = winTrans:NodeByName("group1").gameObject
 	local scroller = group1:NodeByName("scroller").gameObject
+	local itemNode = scroller:NodeByName("itemsGroup").gameObject
 
-	for i = 1, 5 do
-		self["itemsGroup" .. i] = scroller:NodeByName("itemsGroup" .. i).gameObject
+	for i = 1, self.levelMax_ do
+		self["itemsGroup" .. i] = NGUITools.AddChild(scroller, itemNode)
 		self["itemsGroup_uiLayout" .. i] = self["itemsGroup" .. i]:GetComponent(typeof(UILayout))
 	end
 
@@ -133,15 +135,13 @@ function TowerFundGiftbagWindow:getUIComponent()
 	self.labelDesc_ = winTrans:ComponentByName("descLabel", typeof(UILabel))
 	self.arrowLeft_ = winTrans:ComponentByName("arrowLeft", typeof(UISprite))
 	self.arrowRight_ = winTrans:ComponentByName("arrowRight", typeof(UISprite))
-	self.awardGroup_ = winTrans:ComponentByName("awardGroup", typeof(UIGrid))
+	self.awardScroll_ = winTrans:ComponentByName("scroll", typeof(UIScrollView))
+	self.awardGroup_ = winTrans:ComponentByName("scroll/awardGroup", typeof(UILayout))
 	self.littleItem = winTrans.transform:Find("fund_item")
 end
 
 function TowerFundGiftbagWindow:layout()
 	self.chargeData_ = self.activityData_.detail.charges
-
-	self:updateLevel()
-
 	local startLevel = self.levelMax_
 
 	for i = 1, self.levelMax_ do
@@ -172,7 +172,6 @@ function TowerFundGiftbagWindow:layout()
 		self.labelDesc_.height = 120
 
 		self.labelDesc_:X(50)
-		self.awardGroup_:Y(-290)
 	end
 
 	self.labelText_.text = __("ACTIVITY_WARMUP_PACK_TEXT05")
@@ -185,7 +184,7 @@ function TowerFundGiftbagWindow:updateTexture()
 	else
 		self.imgPageNum_.gameObject:SetActive(true)
 		xyd.setUISpriteAsync(self.imgTitle_, nil, "tower_fund_giftbag_logo_" .. xyd.Global.lang .. "2", nil, , true)
-		xyd.setUISpriteAsync(self.imgPageNum_, nil, "tower_fund_giftbag_page_" .. self.level_)
+		xyd.setUISpriteAsync(self.imgPageNum_, nil, "activity_sports_num_" .. self.level_)
 	end
 end
 
@@ -239,7 +238,7 @@ end
 function TowerFundGiftbagWindow:updateItemList()
 	local itemsGroup = self["itemsGroup" .. self.level_]
 
-	for i = 1, 5 do
+	for i = 1, self.levelMax_ do
 		self["itemsGroup" .. i]:SetActive(self.level_ == i)
 	end
 
@@ -299,6 +298,7 @@ function TowerFundGiftbagWindow:pageChange(changeNum)
 	self:updateBtnState()
 	self:updateAwardItems()
 	self:updateItemList()
+	self.awardScroll_:ResetPosition()
 end
 
 function TowerFundGiftbagWindow:updateAwardItems()
@@ -331,6 +331,8 @@ function TowerFundGiftbagWindow:updateAwardItems()
 
 			self.topItemList_[idx] = xyd.getItemIcon(params)
 		end
+
+		xyd.setDragScrollView(self.topItemList_[idx].go, self.awardScroll_)
 	end
 
 	for idx, itemIcon in ipairs(self.topItemList_) do
@@ -342,12 +344,7 @@ function TowerFundGiftbagWindow:updateAwardItems()
 	end
 
 	self.awardGroup_:Reposition()
-
-	if #datas >= 5 then
-		self.awardGroup_.transform:X(160 - (#datas - 4) * 40)
-	else
-		self.awardGroup_.transform:X(160)
-	end
+	self.awardGroup_.transform:X(-98)
 end
 
 function TowerFundGiftbagWindow:updateBtnState()
