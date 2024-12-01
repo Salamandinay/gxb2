@@ -15187,7 +15187,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
 Promethea deals (100% of target’s Attack) damage to 3 random enemies, reduces their Energy by 20, and has a 20% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15200,7 +15200,7 @@ Reduces all damage taken by 10%, and reflect 10% of damage taken by the owner of
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
 Promethea deals (300% of target’s Attack) damage to 3 random enemies, reduces their Energy by 40, and has a 30% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15212,8 +15212,8 @@ Reduces all damage taken by 15%, and reflect 15% of damage taken by the owner of
 75501101,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (600% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (1800% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15221,16 +15221,16 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 5501202,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 20%, Attack by 20%, Block by 10%, Heal Received by 10%, and Crit Resist by 10%."
 65502102,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 30%, Attack by 25%, Block by 20%, Heal Received by 15%, and Crit Resist by 20%."
-65502112,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 30%, Heal Received by 20%, and Crit Resist by 30%."
-75501102,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 30%, Heal Received by 20%, and Crit Resist by 30%."
+65502112,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 50%, Heal Received by 60%, and Crit Resist by 90%."
+75501102,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 50%, Heal Received by 60%, and Crit Resist by 90%."
 5501203,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (60% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 20% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
@@ -15251,8 +15251,8 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 65502103,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (60% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 30% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
@@ -15273,13 +15273,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 65502113,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (60% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15287,7 +15287,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15295,13 +15295,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 75501103,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (20% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (60% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 60% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15309,7 +15309,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15320,8 +15320,8 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (20% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (100% of target’s Attack) damage every round (damage dealt will not surpass 500% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15340,8 +15340,8 @@ I shall protect you no matter what it takes!
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (40% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
 When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (300% of target’s Attack) damage every round (damage dealt will not surpass 1500% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15359,9 +15359,9 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (2400% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15369,19 +15369,19 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 75501104,Promethea,Reversal of Origins,"
 I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (600% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (2400% of target’s Attack) damage every round (damage dealt will not surpass 3000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15389,16 +15389,16 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 755011011,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (640% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (1920% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15406,12 +15406,12 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011012,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (680% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (2040% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15419,12 +15419,12 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011013,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (720% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (2160% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15432,12 +15432,12 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011014,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (760% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (2280% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15445,12 +15445,12 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
 755011015,Promethea,Guiding Torchlight,"
 Humans\' fears of wild beasts and the night were dispelled by fire.
 
-Promethea deals (800% of target’s Attack) damage to 3 random enemies, reduces their Energy by 60, and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
-She consumes (20% of Promethea\'s Maximum HP) HP to deal (20% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+Promethea deals (2400% of target’s Attack) damage to 3 random enemies, reduces their Energy by 100, and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
+She consumes (20% of Promethea\'s Maximum HP) HP to deal (80% of Promethea’s Maximum HP) damage to Frontline enemies, and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15458,22 +15458,22 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
-755011021,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 31%, Heal Received by 20%, and Crit Resist by 30%."
-755011022,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 32%, Heal Received by 20%, and Crit Resist by 30%."
-755011023,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 33%, Heal Received by 20%, and Crit Resist by 30%."
-755011024,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 40%, Attack by 30%, Block by 34%, Heal Received by 20%, and Crit Resist by 30%."
-755011025,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 43%, Attack by 33%, Block by 35%, Heal Received by 20%, and Crit Resist by 30%."
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)"
+755011021,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 52%, Heal Received by 60%, and Crit Resist by 90%."
+755011022,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 54%, Heal Received by 60%, and Crit Resist by 90%."
+755011023,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 56%, Heal Received by 60%, and Crit Resist by 90%."
+755011024,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 60%, Attack by 50%, Block by 58%, Heal Received by 60%, and Crit Resist by 90%."
+755011025,Promethea,Sacred Scar,"Dim as it is, this halo still protects me, just as I would like to protect you.\n\nIncreases Promethea's HP by 70%, Attack by 55%, Block by 60%, Heal Received by 60%, and Crit Resist by 90%."
 755011031,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (22% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (64% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 68% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15481,7 +15481,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15489,13 +15489,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011032,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (24% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (68% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 76% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15503,7 +15503,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15511,13 +15511,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011033,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (26% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (72% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 84% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15525,7 +15525,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15533,13 +15533,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011034,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (28% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (76% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has a 92% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15547,7 +15547,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15555,13 +15555,13 @@ The Taunted target will compulsively target the caster of this Control Effect wh
 755011035,Promethea,Winged Embrace,"
 Hide under my wings; they will shield you from harm.
 
-At the start of the battle, Promethea steals 100 Speed that lasts for 3 rounds and 50 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
-When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (30% of Promethea’s Maximum HP) BP to Backline allies.
+At the start of the battle, Promethea steals 200 Speed that lasts for 3 rounds and 100 Energy from the enemy with the most Energy and casts [c][e28002]Starflare[-][/c] that lasts for 2 rounds to Backline allies.
+When Promethea deals a Basic Attack, she will consume (20% of Promethea’s Maximum HP) HP and grant a [c][e28002]Magick Barrier[-][/c] with (80% of Promethea’s Maximum HP) BP to Backline allies.
 She will afflict [c][e28002]Hellfire[-][/c] to Frontline enemies and has 100% chance to [c][e28002]Taunt[-][/c] them for 2 rounds.
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Magick Barrier[-][/c]:
 A Skill Effect that can stack.
@@ -15569,7 +15569,7 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy.
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy.
 
 [c][e28002]Taunt[-][/c]:
 A Control effect.
@@ -15579,9 +15579,9 @@ I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (640% of target’s Attack) damage every round (damage dealt will not surpass 3200% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (2560% of target’s Attack) damage every round (damage dealt will not surpass 3200% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15589,19 +15589,19 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 755011042,Promethea,Reversal of Origins,"
 I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (680% of target’s Attack) damage every round (damage dealt will not surpass 3400% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (2720% of target’s Attack) damage every round (damage dealt will not surpass 3400% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15609,19 +15609,19 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 755011043,Promethea,Reversal of Origins,"
 I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (720% of target’s Attack) damage every round (damage dealt will not surpass 3600% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (2880% of target’s Attack) damage every round (damage dealt will not surpass 3600% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15629,19 +15629,19 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 755011044,Promethea,Reversal of Origins,"
 I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (760% of target’s Attack) damage every round (damage dealt will not surpass 3800% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 20% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 20% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (3040% of target’s Attack) damage every round (damage dealt will not surpass 3800% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 40% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15649,19 +15649,19 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 755011045,Promethea,Reversal of Origins,"
 I shall protect you no matter what it takes!
 
 When Promethea’s HP drops below 30% of her Maximum HP for the first time in a battle or at the start of Round 5, she will become immune to all damage taken in that round, immediately recover (70% of Promethea’s Maximum HP) HP, and have her abilities enhanced:
 Her Active Skills and Basic Attacks will no longer consume her own HP;
-When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (800% of target’s Attack) damage every round (damage dealt will not surpass 4000% of Promethea’s Attack);
-When she casts [c][e28002]Starflare[-][/c], she will provide an extra 25% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
-When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 30% more damage.
+When she releases her Active Skill, she will [c][01a310]Burn[-][/c] her Backline enemies for 2 rounds, dealing (3200% of target’s Attack) damage every round (damage dealt will not surpass 4000% of Promethea’s Attack);
+When she casts [c][e28002]Starflare[-][/c], she will provide an extra 30% Damage Depletion to the owner of the Effect. If Promethea is in the Frontline, she can gain [c][e28002]Starflare[-][/c] as well, and all damage reduced by the Skill Effect will be doubled for her.
+When she casts [c][e28002]Hellfire[-][/c], it will cause the owner of the Effect to take 50% more damage.
 
 [c][01a310]Burn[-][/c]:
 A Damage Over Time Effect.
@@ -15669,11 +15669,11 @@ Damage is dealt once when burn is inflicted and at the beginning of each round d
 
 [c][e28002]Starflare[-][/c]:
 A Skill Effect that cannot stack.
-Reduces all damage taken by 20%, and reflect 20% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
+Reduces all damage taken by 20%, and reflect 80% of damage taken by the owner of this Effect to the attacker. (Fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target cannot be reflected)
 
 [c][e28002]Hellfire[-][/c]:
 A Skill Effect that cannot stack.
-The owner of this Effect will have their Heal Received reduced by 30%, their Block reduced by 50%, and gain 50% less Energy."
+The owner of this Effect will have their Heal Received reduced by 90%, their Block reduced by 100%, and gain 100% less Energy."
 676701,Torch of Despair,Antique Skill,Increases Crit Resist by 8%.
 676801,Torch of Despair,Antique Skill,Increases Crit Resist by 8.8%.
 676901,Torch of Despair,Antique Skill,Increases Crit Resist by 9.6%.
@@ -16084,7 +16084,7 @@ The owner of this Effect will recover 16% of lost HP and gain 12% Attack when th
 75700200,Elysia,Basic Attack,Basic Attack
 757002101,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (800% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4000% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (25% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16094,28 +16094,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 8.
+Every stack reduces the Speed of the owner of this Effect by 28.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5%.
+Every stack reduces the Armor of the owner of this Effect by 20%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5%.
+Every stack reduces the Attack of the owner of this Effect by 20%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 40%.
+This Effect increases all damage taken by the owner of this Effect by 100%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 30%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 75%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 20%.
+This Effect reduces all damage dealt by the owner of this Effect by 75%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 60%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 150%."
 757002102,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (816% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.1% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4080% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (25.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16125,28 +16125,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 9.
+Every stack reduces the Speed of the owner of this Effect by 29.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.1%.
+Every stack reduces the Armor of the owner of this Effect by 20.4%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.1%.
+Every stack reduces the Attack of the owner of this Effect by 20.4%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 40.8%.
+This Effect increases all damage taken by the owner of this Effect by 102%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 30.6%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 76.5%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 20.4%.
+This Effect reduces all damage dealt by the owner of this Effect by 76.5%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 61.2%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 153%."
 757002103,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (832% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.2% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4160% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (26% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16156,28 +16156,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 10.
+Every stack reduces the Speed of the owner of this Effect by 30.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.2%.
+Every stack reduces the Armor of the owner of this Effect by 20.8%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.2%.
+Every stack reduces the Attack of the owner of this Effect by 20.8%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 41.6%.
+This Effect increases all damage taken by the owner of this Effect by 104%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 31.2%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 78%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 20.8%.
+This Effect reduces all damage dealt by the owner of this Effect by 78%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 62.4%. "
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 156%. "
 757002104,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (848% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.3% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4240% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (26.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16187,28 +16187,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 11.
+Every stack reduces the Speed of the owner of this Effect by 31.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.3%.
+Every stack reduces the Armor of the owner of this Effect by 21.2%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.3%.
+Every stack reduces the Attack of the owner of this Effect by 21.2%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 42.4%.
+This Effect increases all damage taken by the owner of this Effect by 106%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 31.8%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 79.5%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 21.2%.
+This Effect reduces all damage dealt by the owner of this Effect by 79.5%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 63.6%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 159%."
 757002105,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (864% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.4% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4320% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (27% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16218,28 +16218,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 12.
+Every stack reduces the Speed of the owner of this Effect by 32.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.4%.
+Every stack reduces the Armor of the owner of this Effect by 21.6%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.4%.
+Every stack reduces the Attack of the owner of this Effect by 21.6%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 43.2%.
+This Effect increases all damage taken by the owner of this Effect by 108%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 32.4%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 81%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 21.6%.
+This Effect reduces all damage dealt by the owner of this Effect by 81%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 64.8%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 162%."
 757002106,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (880% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4400% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (27.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16249,28 +16249,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 13.
+Every stack reduces the Speed of the owner of this Effect by 33.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.5%.
+Every stack reduces the Armor of the owner of this Effect by 22%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.5%.
+Every stack reduces the Attack of the owner of this Effect by 22%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 44%.
+This Effect increases all damage taken by the owner of this Effect by 110%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 33%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 82.5%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 22%.
+This Effect reduces all damage dealt by the owner of this Effect by 82.5%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 66%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 165%."
 757002107,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (896% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.6% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4480% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (28% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16280,28 +16280,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 14.
+Every stack reduces the Speed of the owner of this Effect by 34.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.6%.
+Every stack reduces the Armor of the owner of this Effect by 22.4%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.6%.
+Every stack reduces the Attack of the owner of this Effect by 22.4%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 44.8%.
+This Effect increases all damage taken by the owner of this Effect by 112%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 33.6%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 84%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 22.4%.
+This Effect reduces all damage dealt by the owner of this Effect by 84%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 67.2%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 168%."
 757002108,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (912% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.7% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4560% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (28.5% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16311,28 +16311,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 15.
+Every stack reduces the Speed of the owner of this Effect by 35.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.7%.
+Every stack reduces the Armor of the owner of this Effect by 22.8%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.1%.
+Every stack reduces the Attack of the owner of this Effect by 22.8%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 45.6%.
+This Effect increases all damage taken by the owner of this Effect by 114%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 34.2%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 85.5%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 22.8%.
+This Effect reduces all damage dealt by the owner of this Effect by 85.5%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 68.4%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 171%."
 757002109,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (928% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (5.8% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4640% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (29% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16342,28 +16342,28 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 16.
+Every stack reduces the Speed of the owner of this Effect by 36.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.8%.
+Every stack reduces the Armor of the owner of this Effect by 23.2%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.3%.
+Every stack reduces the Attack of the owner of this Effect by 23.2%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 46.4%.
+This Effect increases all damage taken by the owner of this Effect by 116%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 34.8%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 87%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 23.2%.
+This Effect reduces all damage dealt by the owner of this Effect by 87%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 69.6%. "
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 174%. "
 757002110,Elysia,Celestial Painter,"
 From the tip of Elysia\'s paintbrush flows colors from the deepest core of the galaxy, ones that never should be seen on Earth.
-Elysia deals (960% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (6% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
+Elysia deals (4800% of Attack) damage to all enemies and Hunts them multiple times, every Hunt dealing (30% of targets\' Maximum HP) damage (The number of Hunts depends on how many types of Primal Colors the target has, damage dealt will not surpass 2500% of Elysia\'s Attack).
 She then removes all Primal Colors from them and paints them with Hybrid Colors that last for 2 rounds or cast [c][e28002]Faded[-][/c] that lasts for 2 rounds to them according to the Primal Colors they had.
 
 Primal Red + Primal Yellow = [c][e28002]Hybrid Orange[-][/c];
@@ -16373,25 +16373,25 @@ Primal Red + Primal Yellow + Primal Blue = [c][e28002]Faded[-][/c].
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 20.
+Every stack reduces the Speed of the owner of this Effect by 50.
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 6%.
+Every stack reduces the Armor of the owner of this Effect by 24%.
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 6%.
+Every stack reduces the Attack of the owner of this Effect by 24%.
 [c][e28002]Hybrid Orange[-][/c]:
 A Skill Effect that cannot stack.
-This Effect increases all damage taken by the owner of this Effect by 48%.
+This Effect increases all damage taken by the owner of this Effect by 120%.
 [c][e28002]Hybrid Purple[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 36%.
+This Effect reduces the amount of healing and Barrier Points received by the owner of this Effect by 90%.
 [c][e28002]Hybrid Green[-][/c]:
 A Skill Effect that cannot stack.
-This Effect reduces all damage dealt by the owner of this Effect by 24%.
+This Effect reduces all damage dealt by the owner of this Effect by 90%.
 [c][e28002]Faded[-][/c]:
 This effect cannot stack, but can be removed.
-The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 72%."
+The owner of this Effect cannot release Active Skills, deal Basic Attacks, Hunt, or Counterattack, nor can they recover HP, regenerate Energy, replenish Barrier Points, or gain new [c][e28002]Magick Barriers[-][/c]. All damage taken by them will also be increased by 180%."
 757002201,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16401,15 +16401,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 8.
+Every stack reduces the Speed of the owner of this Effect by 28.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5%.
+Every stack reduces the Armor of the owner of this Effect by 20%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5%."
+Every stack reduces the Attack of the owner of this Effect by 20%."
 757002202,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16419,15 +16419,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 9.
+Every stack reduces the Speed of the owner of this Effect by 29.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.1%.
+Every stack reduces the Armor of the owner of this Effect by 20.4%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.1%."
+Every stack reduces the Attack of the owner of this Effect by 20.4%."
 757002203,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16437,15 +16437,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 10.
+Every stack reduces the Speed of the owner of this Effect by 30.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.2%.
+Every stack reduces the Armor of the owner of this Effect by 20.8%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.2%."
+Every stack reduces the Attack of the owner of this Effect by 20.8%."
 757002204,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16455,15 +16455,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 11.
+Every stack reduces the Speed of the owner of this Effect by 31.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.3%.
+Every stack reduces the Armor of the owner of this Effect by 21.2%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.3%."
+Every stack reduces the Attack of the owner of this Effect by 21.2%."
 757002205,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16473,15 +16473,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 12.
+Every stack reduces the Speed of the owner of this Effect by 32.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.4%.
+Every stack reduces the Armor of the owner of this Effect by 21.6%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.4%."
+Every stack reduces the Attack of the owner of this Effect by 21.6%."
 757002206,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16491,15 +16491,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 13.
+Every stack reduces the Speed of the owner of this Effect by 33.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.5%.
+Every stack reduces the Armor of the owner of this Effect by 22%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.5%."
+Every stack reduces the Attack of the owner of this Effect by 22%."
 757002207,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16509,15 +16509,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 14.
+Every stack reduces the Speed of the owner of this Effect by 34.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.6%.
+Every stack reduces the Armor of the owner of this Effect by 22.4%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.6%."
+Every stack reduces the Attack of the owner of this Effect by 22.4%."
 757002208,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16527,15 +16527,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 15.
+Every stack reduces the Speed of the owner of this Effect by 35.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.7%.
+Every stack reduces the Armor of the owner of this Effect by 22.8%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.7%."
+Every stack reduces the Attack of the owner of this Effect by 22.8%."
 757002209,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16545,15 +16545,15 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 16.
+Every stack reduces the Speed of the owner of this Effect by 36.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.8%.
+Every stack reduces the Armor of the owner of this Effect by 23.2%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.8%."
+Every stack reduces the Attack of the owner of this Effect by 23.2%."
 757002210,Elysia,Fantasy Palette,"
 One can make every color there is with merely three colors.
 
@@ -16563,21 +16563,21 @@ Whenever Elysia takes a Critical Strike from the enemy, she will paint the attac
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 20.
+Every stack reduces the Speed of the owner of this Effect by 50.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 6%.
+Every stack reduces the Armor of the owner of this Effect by 24%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 6%."
+Every stack reduces the Attack of the owner of this Effect by 24%."
 757002301,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1600% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 40% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 40% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4000% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 80% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 80% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16589,9 +16589,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002302,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1632% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 40.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 40.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4080% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 81.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 81.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16603,9 +16603,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002303,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1664% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 41.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 41.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4160% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 83.2% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 83.2% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16617,9 +16617,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002304,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1696% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 42.4% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 42.4% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4240% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 84.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 84.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16631,9 +16631,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002305,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1728% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 43.2% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 43.2% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4320% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 86.4% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 86.4% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16645,9 +16645,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002306,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1760% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 44% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 44% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4400% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 88% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 88% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16659,9 +16659,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002307,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1792% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 44.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 44.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4480% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 89.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 89.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16673,9 +16673,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002308,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1824% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 45.6% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 45.6% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4560% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 91.2% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 91.2% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16687,9 +16687,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002309,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1856% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 46.4% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 46.4% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4640% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 92.8% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 92.8% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16701,9 +16701,9 @@ During this effect, girls affected will not be able to perform Basic Attacks."
 757002310,Elysia,Twin Fishes,"
 Are these inanimate products of paint and canvas, or living, breathing creatures?
 
-Elysia will deal (1920% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
-If the targets have 100 or more Energy, she has a 48% chance to [c][01a310]Silence[-][/c] them for 1 round.
-If the targets have less than 100 Energy, she has a 48% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
+Elysia will deal (4800% of Attack) extra damage to all enemies painted with Primal Colors at the start of each round.
+If the targets have 100 or more Energy, she has a 96% chance to [c][01a310]Silence[-][/c] them for 1 round.
+If the targets have less than 100 Energy, she has a 96% chance to [c][e28002]Terrorize[-][/c] them for 1 round.
 
 [c][01a310]Silence[-][/c]:
 A Control Effect.
@@ -16720,19 +16720,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 8.
+Every stack reduces the Speed of the owner of this Effect by 28.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5%.
+Every stack reduces the Armor of the owner of this Effect by 20%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5%.
+Every stack reduces the Attack of the owner of this Effect by 20%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 10% and Crit Damage Mitigation by 20%."
+Every stack increases the owner’s Extra Control Rate by 30% and Crit Damage Mitigation by 80%."
 757002402,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16741,19 +16741,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 9.
+Every stack reduces the Speed of the owner of this Effect by 29.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.1%.
+Every stack reduces the Armor of the owner of this Effect by 20.4%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.1%.
+Every stack reduces the Attack of the owner of this Effect by 20.4%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 10.2% and Crit Damage Mitigation by 20.4%."
+Every stack increases the owner’s Extra Control Rate by 30.6% and Crit Damage Mitigation by 81.6%."
 757002403,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16762,19 +16762,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 10.
+Every stack reduces the Speed of the owner of this Effect by 30.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.2%.
+Every stack reduces the Armor of the owner of this Effect by 20.8%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.2%.
+Every stack reduces the Attack of the owner of this Effect by 20.8%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 10.4% and Crit Damage Mitigation by 20.8%."
+Every stack increases the owner’s Extra Control Rate by 31.2% and Crit Damage Mitigation by 83.2%."
 757002404,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16783,19 +16783,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 11.
+Every stack reduces the Speed of the owner of this Effect by 31.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.3%.
+Every stack reduces the Armor of the owner of this Effect by 21.2%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.3%.
+Every stack reduces the Attack of the owner of this Effect by 21.2%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 10.6% and Crit Damage Mitigation by 21.2%."
+Every stack increases the owner’s Extra Control Rate by 31.8% and Crit Damage Mitigation by 84.8%."
 757002405,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16804,19 +16804,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 12.
+Every stack reduces the Speed of the owner of this Effect by 32.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.4%.
+Every stack reduces the Armor of the owner of this Effect by 21.6%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.4%.
+Every stack reduces the Attack of the owner of this Effect by 21.6%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 10.8% and Crit Damage Mitigation by 21.6%."
+Every stack increases the owner’s Extra Control Rate by 32.4% and Crit Damage Mitigation by 86.4%."
 757002406,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16825,19 +16825,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 13.
+Every stack reduces the Speed of the owner of this Effect by 33.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.5%.
+Every stack reduces the Armor of the owner of this Effect by 22%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.5%.
+Every stack reduces the Attack of the owner of this Effect by 22%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 11% and Crit Damage Mitigation by 22%."
+Every stack increases the owner’s Extra Control Rate by 33% and Crit Damage Mitigation by 88%."
 757002407,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16846,19 +16846,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 14.
+Every stack reduces the Speed of the owner of this Effect by 34.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.6%.
+Every stack reduces the Armor of the owner of this Effect by 22.4%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.6%.
+Every stack reduces the Attack of the owner of this Effect by 22.4%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 11.2% and Crit Damage Mitigation by 22.4%."
+Every stack increases the owner’s Extra Control Rate by 33.6% and Crit Damage Mitigation by 89.6%."
 757002408,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16867,19 +16867,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 15.
+Every stack reduces the Speed of the owner of this Effect by 35.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.7%.
+Every stack reduces the Armor of the owner of this Effect by 22.8%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.7%.
+Every stack reduces the Attack of the owner of this Effect by 22.8%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 11.4% and Crit Damage Mitigation by 22.8%."
+Every stack increases the owner’s Extra Control Rate by 34.2% and Crit Damage Mitigation by 91.2%."
 757002409,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16888,19 +16888,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 16.
+Every stack reduces the Speed of the owner of this Effect by 36.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 5.8%.
+Every stack reduces the Armor of the owner of this Effect by 23.2%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 5.8%.
+Every stack reduces the Attack of the owner of this Effect by 23.2%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 11.6% and Crit Damage Mitigation by 23.2%."
+Every stack increases the owner’s Extra Control Rate by 34.8% and Crit Damage Mitigation by 92.8%."
 757002410,Elysia,Blessing of Pisces,"
 The prodigy has placed herself in the good graces of the stars with her unmatched talent for painting.
 
@@ -16909,19 +16909,19 @@ At the end of every round, Elysia will gain 1 stack of [c][e28002]Pisces’ Gift
 
 [c][e28002]Primal Red[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Speed of the owner of this Effect by 20.
+Every stack reduces the Speed of the owner of this Effect by 50.
 
 [c][e28002]Primal Yellow[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Armor of the owner of this Effect by 6%.
+Every stack reduces the Armor of the owner of this Effect by 24%.
 
 [c][e28002]Primal Blue[-][/c]:
 A Skill Effect that can stack up to 5 stacks.
-Every stack reduces the Attack of the owner of this Effect by 6%.
+Every stack reduces the Attack of the owner of this Effect by 24%.
 
 [c][e28002]Pisces\' Gift[-][/c]:
 A Mark Effect that can stack up to 3 stacks.
-Every stack increases the owner’s Extra Control Rate by 12% and Crit Damage Mitigation by 24%."
+Every stack increases the owner’s Extra Control Rate by 36% and Crit Damage Mitigation by 96%."
 5101900,Raenvya,Basic Attack,
 65102600,Raenvya,Basic Attack,
 75101900,Raenvya,Basic Attack,
