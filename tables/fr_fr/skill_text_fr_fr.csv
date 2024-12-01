@@ -13096,7 +13096,7 @@ Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne pe
 75501100,Prométhéa,Attaque Basique,
 5501201,Prométhéa,Flambeau de Disgrâce,"
 Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (100% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 20 et a 20% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
@@ -13104,27 +13104,27 @@ La cible provoquée retournera son Attaque Basique et sa Compétence Active sur 
 Réduit de 10% les dégâts subis de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 65502101,Prométhéa,Flambeau de Disgrâce,"
 Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (300% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 40 et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 15% les dégâts subis de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 75501101,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (600% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (1800% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 5501202,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 20%, l'Attaque de 20%, le Blocage de 10%, les Soins Reçus de 10% et la Résistance aux Critiques de 10%."
 65502102,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 30%, l'Attaque de 25%, le Blocage de 20%, les Soins Reçus de 15% et la Résistance aux Critiques de 20%."
-65502112,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 30%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
-75501102,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 30%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
+65502112,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 30%, le Blocage de 50%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
+75501102,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 50%, le Blocage de 50%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
 5501203,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 20% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (60% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 20% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 10% les dégâts subis de la cible marquée et renvoie 10% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
@@ -13135,8 +13135,8 @@ Réduit de 10% les Soins Reçus, de 10% la récupération d\'Énergie et de 10% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 65502103,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (60% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 30% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
 Réduit de 15% les dégâts subis de la cible marquée et renvoie 15% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
@@ -13147,36 +13147,36 @@ Réduit de 20% les Soins Reçus, de 25% la récupération d\'Énergie et de 25% 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 65502113,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (60% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 75501103,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (20% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (60% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 60% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 5501204,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 20% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
 2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (100% de l\'Attaque de la cible, 500% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
@@ -13190,9 +13190,9 @@ Réduit de 10% les Soins Reçus, de 10% la récupération d\'Énergie et de 10% 
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 40% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
 2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (300% de l\'Attaque de la cible, 5100% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
@@ -13205,220 +13205,220 @@ Réduit de 20% les Soins Reçus, de 25% la récupération d\'Énergie et de 25% 
 65502114,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (2400% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 75501104,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (600% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (2400% de l\'Attaque de la cible, 3000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 755011011,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (640% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (1920% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 755011012,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (680% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (2040% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 755011013,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (720% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (2160% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 755011014,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (760% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (2280% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
 755011015,Prométhéa,Flambeau de Disgrâce,"
-Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (800% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 60 et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
-Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (20% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Le feu bannit la frayeur des humains pour les bêtes sauvages et l\'obscurité. Inflige des dégâts (2400% de l\'Attaque de la cible) à 3 ennemis, réduit leurs Énergies de 100 et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Prométhéa consomme 20% de ses PV Max en infligeant des dégâts (80% des PV Max de Prométhéa) aux ennemis de la ligne avant et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
 
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues).
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
-755011021,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 31%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
-755011022,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 32%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
-755011023,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 33%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
-755011024,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 40%, l'Attaque de 30%, le Blocage de 34%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
-755011025,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 43%, l'Attaque de 33%, le Blocage de 35%, les Soins Reçus de 20% et la Résistance aux Critiques de 30%."
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes)."
+755011021,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 50%, le Blocage de 52%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
+755011022,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 50%, le Blocage de 54%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
+755011023,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 50%, le Blocage de 56%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
+755011024,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 60%, l'Attaque de 50%, le Blocage de 58%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
+755011025,Prométhéa,Cicatrice Sacrée,"Augmente les PV de 70%, l'Attaque de 55%, le Blocage de 60%, les Soins Reçus de 60% et la Résistance aux Critiques de 90%."
 755011031,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (22% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (64% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 68% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 755011032,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (24% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (68% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 76% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 755011033,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (26% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (72% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 84% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 755011034,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (28% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (76% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 92% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 755011035,Prométhéa,Ailes Sombres,"
-Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 50 Énergies et 100 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
-Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (30% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
+Abrite-toi sous mes ailes, elles te protégeront du mal. Au début de la bataille, Prométhéa vole 100 Énergies et 200 Vitesses à l’ennemi ayant le plus d’Énergie (le vol de Vitesse peut prendre effet pendant 3 tours) et marque ses alliées de la ligne arrière avec [c][e28002]Pentacle Protecteur[-][/c] pendant 2 tours.
+Lorsqu\'elle lance son Attaque Basique, elle consomme 20% de ses PV Max pour fournir une [c][e28002]Barrière[-][/c] (80% des PV Max de Prométhéa) aux alliées de la ligne arrière, marque les ennemis de la ligne avant avec [c][e28002]Flamme des Enfers[-][/c], et a 100% de chance de les [c][e28002]provoquer[-][/c] pendant 2 tours.
 
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Barrière (Effet de Compétence, cumulable) :[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée.
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée.
 [c][e28002]Provoquer (Effet de Contrôle) :[-][/c]
 La cible provoquée retournera son Attaque Basique et sa Compétence Active sur la provocatrice (Attaques multi-ciblées inclues)."
 755011041,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (640% de l\'Attaque de la cible, 3200% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (2560% de l\'Attaque de la cible, 3200% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 755011042,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (680% de l\'Attaque de la cible, 3400% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (2720% de l\'Attaque de la cible, 3400% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 755011043,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (720% de l\'Attaque de la cible, 3600% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (2880% de l\'Attaque de la cible, 3600% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 755011044,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (760% de l\'Attaque de la cible, 3800% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 20% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (3040% de l\'Attaque de la cible, 3800% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 40%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 20% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 40% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 755011045,Prométhéa,Origine Inversée,"
 Je te protègera coûte que coûte ! La première fois que les PV de Prométhéa seront inférieures à 30% ou au début du 5ème tour, elle récupèrera immédiatement 70% de ses PV Max, sera immunisée contre tous les dégâts du tour actuel, et ses compétences seront renforcées :
 1) Lorsqu\'elle lancera son Attaque Basique et sa Compétence Active, elle ne consommera plus ses PV.
-2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (800% de l\'Attaque de la cible, 4000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
-3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 25% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 50%).
+2) En lançant sa Compétence Active, elle infligera des dégâts supplémentaires de [c][01a310]Brûlure[-][/c] (3200% de l\'Attaque de la cible, 4000% de la valeur de l\'Attaque de Prométhéa au maximum) aux ennemis de la ligne arrière pendant 2 tours.
+3) [c][e28002]Pentacle Protecteur[-][/c] fournira un nouveau bonus additionnel : augmente de 30% la Résistance Totale de la cible marquée (si la cible est Prométhéa, sa Résistance Totale sera augmentée de 50%).
 4) Si Prométhéa est déployée sur la ligne avant, elle pourra se marquer avec [c][e28002]Pentacle Protecteur[-][/c].
-5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 30% les dégâts subis de la cible marquée.
+5) [c][e28002]Flamme des Enfers[-][/c] fournira un nouveau bonus additionnel : augmente de 50% les dégâts subis de la cible marquée.
 
 [c][e28002]Barrière (Effet de Compétence, cumulable)：[-][/c]
 Absorbe les dégâts infligés par les ennemis. La valeur d\'une Barrière ne peut pas dépasser 100% des PV Max de la Fille étant sous la protection de cette Barrière. Celle-ci se désintégrera lorsque sa valeur sera à 0.
 [c][01a310]Brûlure :[-][/c]
 Dégâts sur la Durée. La cible affectée par cet effet subira des dégâts correspondants au début de chaque tour jusqu\'à la fin de cet effet.
 [c][e28002]Pentacle Protecteur (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 20% les dégâts subis de la cible marquée et renvoie 20% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
+Réduit de 20% les dégâts subis de la cible marquée et renvoie 80% des dégâts subis de la cible marquée à l\'attaquant (n\'inclut pas les dégâts fixes).
 [c][e28002]Flamme des Enfers (Effet de Compétence, non cumulable) :[-][/c]
-Réduit de 30% les Soins Reçus, de 50% la récupération d\'Énergie et de 50% le Blocage de la cible marquée."
+Réduit de 90% les Soins Reçus, de 100% la récupération d\'Énergie et de 100% le Blocage de la cible marquée."
 676701,Flambeau de Disgrâce,Compétence de l'Antiquité,+8% Résistance aux Critiques
 676801,Flambeau de Disgrâce,Compétence de l'Antiquité,"+8,8% Résistance aux Critiques"
 676901,Flambeau de Disgrâce,Compétence de l'Antiquité,"+9,6% Résistance aux Critiques"
@@ -13674,7 +13674,7 @@ Lorsqu\'une cible marquée subit des dégâts infligés par un ennemi qui est en
 503118,Îles Célestes,Pulsion Faillible,L'ennemie Cupidon n'obtiendra pas de [c][e28002]Magie d'Amour[-][/c].
 75700200,Élisa,Attaque Basique,Attaque Basique
 757002101,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 800% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4000% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (25% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13683,21 +13683,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 8.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 28.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 40% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 100% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 30% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 75% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 20% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 75% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 60% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
+Augmente de 150% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
 757002102,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 816% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5.1% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4080% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (25,5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13706,21 +13706,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 9.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 29.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,1%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,4%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,1%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,4%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 40,8% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 102% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 30,6% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 76,5% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 20,4% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 76,5% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 61,2% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
+Augmente de 153% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
 757002103,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 816% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,2% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4160% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (26% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13729,21 +13729,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 10.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 30.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,2%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,8%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,2%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,8%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 41,6% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 104% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 31,2% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 78% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, noncumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 20,8% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 78% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 62,4% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
+Augmente de 156% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
 757002104,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 848% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,3% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4240% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (26,5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13752,21 +13752,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 11.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 31.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,3%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,2%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,3%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,2%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 42,4% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 106% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 31,8% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 79,5% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 21,2% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 79,5% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 63,6% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
+Augmente de 159% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
 757002105,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 864% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,4 des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4320% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (27% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13775,21 +13775,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 12.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 32.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,4%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,6%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,4%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,6%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 43,2% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 108% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 32,4% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 81% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 21,6% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 81% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 64,8% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
+Augmente de 162% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
 757002106,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 880% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4400% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (27,5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13798,21 +13798,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 13.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 33.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,5%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 44% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 110% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 33% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 82,5% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 22% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 82,5% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 66% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
+Augmente de 165% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
 757002107,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 896% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,6% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4480% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (28% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13821,21 +13821,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 14.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 34.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22,4%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,6%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22,4%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 44,8% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 112% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 33,6% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 84% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 22,4% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 84% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 67,2% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
+Augmente de 168% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
 757002108,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 912% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,7% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4560% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (28,5% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13844,21 +13844,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 15.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 35.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,7%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22,8%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,7%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22,8%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 45,6% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 114% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 34,2% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 85,5% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, noncumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 22,8% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 85,5% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 68,4% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
+Augmente de 171% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
 757002109,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 928% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (5,8% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4640% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (29% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13867,21 +13867,21 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 16.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 36.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,8%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 23,2%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,8%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 23,2%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 46,4% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 116% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 34,8% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 87% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 23,2% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 87% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 69,6% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
+Augmente de 174% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé).."
 757002110,Élisa,Peintre des Astres,"
-Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 960% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (6% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
+Du bout du pinceau d\'Élisa émanent les couleurs du plus profond de la galaxie, des couleurs qui ne devraient pas être vues sur la Terre. Inflige 4800% d\'Attaque à tous les ennemis, en leur lançant une attaque en plusieurs fois (30% des PV Max de la cible, en fonction du nombre de Couleur Primaire qu\'Élisa leur a appliqué, ces dégâts ne peuvent pas dépasser 2500% de l\'Attaque d\'Élisa) et ce, en ignorant leur Barrière.
 Élisa efface toutes les Couleurs Primaires de tous les ennemis et leur fait entrer dans l\'état [c][e28002]Coloration ou Décoloration[-][/c] (en fonction des Couleurs Primaires effacées) pendant 2 tours.
 [c][e28002]Coloration :[-][/c]
 Couleur Primaire · Rouge + Couleur Primaire · Jaune：[c][e28002]Couleur Secondaire · Orange[-][/c]
@@ -13890,214 +13890,214 @@ Couleur Primaire · Jaune + Couleur Primaire · Bleu：[c][e28002]Couleur Second
 Couleur Primaire · Rouge + Couleur Primaire · Jaune + Primaire · Bleu ：[c][e28002]Décoloration[-][/c]
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 20.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 50.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 24%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 6%.
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 24%.
 [c][e28002]Couleur Secondaire · Orange (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 48% ses dégâts subis.
+Chaque couche de Couleur Secondaire · Orange qu\'Élisa applique à sa cible augmente de 120% ses dégâts subis.
 [c][e28002]Couleur Secondaire · Violet (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 36% ses Soins Reçus et la valeur de sa Barrière obtenue.
+Chaque couche de Couleur Secondaire · Violet qu\'Élisa applique à sa cible réduit de 90% ses Soins Reçus et la valeur de sa Barrière obtenue.
 [c][e28002]Couleur Secondaire · Vert (Effet de Compétence, non cumulable) :[-][/c]
-Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 24% ses dégâts infligés.
+Chaque couche de Couleur Secondaire · Vert qu\'Élisa applique à sa cible réduit de 90% ses dégâts infligés.
 [c][e28002]Décoloration (non cumulable) :[-][/c]
-Augmente de 72% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
+Augmente de 180% les dégâts subis de la cible dans cet état, sans qu\'elle puisse lancer une attaque ni récupérer des PV, Énergies et Barrières (cet effet peut être enlevé)."
 757002201,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 8.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 28.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20%."
 757002202,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 9.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 29.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,1%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,4%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,1%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,4%."
 757002203,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 10.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 30.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,2%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,8%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,2%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,8%."
 757002204,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 11.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 31.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,3%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,2%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,3%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,2%."
 757002205,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 12.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 32.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,4%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,6%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,4%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,6%."
 757002206,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 13.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 33.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,5%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22%."
 757002207,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 14.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 34.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22,4%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,6%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22,4%."
 757002208,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 15.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 35.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,7%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22,8%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,7%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22,8%."
 757002209,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 16.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 36.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,8%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 23,2%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,8%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 23,2%."
 757002210,Élisa,Palette Fantaisiste,"
 Tant de couleurs peuvent être créées à partir d\'uniquement trois couleurs. Lorsqu\'une alliée lance son Attaque Basique, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'une alliée lance sa Compétence Active, Élisa appliquera également 1 couche de [c][e28002]Couleur Primaire · Jaune[-][/c] sur la cible attaquée pendant 3 tours.
 Lorsqu\'Élisa reçoit un Coup Critique, elle appliquera 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur l\'attaquant pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 20.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 50.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 24%.
 [c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 6%."
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 24%."
 757002301,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1600% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 40% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 40% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4000% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 80% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 80% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002302,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1632% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 40,8% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 40,8% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4080% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 81,6% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 81,6% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002303,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1664% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 41,6% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 41,6% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4160% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 83,2% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 83,2% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002304,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1696% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 42,4% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 42,4% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4240% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 84,8% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 84,8% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002305,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1728% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 43,2% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 43,2% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4320% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 86,4% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 86,4% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002306,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1760% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 44% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 44% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4400% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 88% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 88% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002307,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1792% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 44% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 44% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4480% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 89,6% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 89,6% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002308,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1824% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 45% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 45% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4560% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 91,2% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 91,2% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002309,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1856% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 46% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 46% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4640% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 92,8% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 92,8% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
 [c][e28002]Effrayer (Effet de Contrôle)[-][/c]
 La cible sera temporairement incapable de lancer son Attaque Basique."
 757002310,Élisa,Poissons Jumeaux,"
-Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (1920% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
-Parmi ceux qui ont plus de 100 Énergies, Élisa a 48% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
-Parmi ceux qui ont moins de 100 Énergies, Élisa a 48% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
+Serait-ce un objet inanimé, fruit de ma peinture, ou bien une créature réellement vivante ? Au début de la bataille, elle inflige des dégâts supplémentaires (4800% de l\'Attaque d\'Élisa) à l\'ennemi sur qui elle a appliqué une Couleur Primaire. Dans le cas où il y aurait plus d\'1 ennemi sur qui elle a appliqué une Couleur Primaire :
+Parmi ceux qui ont plus de 100 Énergies, Élisa a 96% de chance de rendre ces ennemis au [c][01a310]Silence[-][/c] pendant 1 tour.
+Parmi ceux qui ont moins de 100 Énergies, Élisa a 96% de chance de les [c][e28002]effrayer[-][/c] pendant 1 tour.
 
 [c][01a310]Silence (Effet de Contrôle) :[-][/c]
 La cible sera temporairement incapable de lancer sa Compétence Active.
@@ -14109,120 +14109,120 @@ Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de l
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 8.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 28.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 10% et la Résistance aux Dégâts Critiques de 20%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 30% et la Résistance aux Dégâts Critiques de 80%, d\'Élisa."
 757002402,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 9.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 29.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,1%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,1%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,4%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,4%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 10,2% et la Résistance aux Dégâts Critiques de 20,4%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 30,6% et la Résistance aux Dégâts Critiques de 81,6%, d\'Élisa."
 757002403,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 10.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 30.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,2%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,2%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 20,8%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 20,8%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 10,4% et la Résistance aux Dégâts Critiques de 20,8%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 31,2% et la Résistance aux Dégâts Critiques de 83,2%, d\'Élisa."
 757002404,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 11.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 31.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,3%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,3%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,2%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,2%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 10,6% et la Résistance aux Dégâts Critiques de 21,2%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 31,8% et la Résistance aux Dégâts Critiques de 84,8%, d\'Élisa."
 757002405,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 12.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 32.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,4%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,4%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 21,6%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 21,6%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 10,8% et la Résistance aux Dégâts Critiques de 21,6%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 32,4% et la Résistance aux Dégâts Critiques de 86,4%, d\'Élisa."
 757002406,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 13.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 33.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,5%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,5%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 11% et la Résistance aux Dégâts Critiques de 22%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 33% et la Résistance aux Dégâts Critiques de 88%, d\'Élisa."
 757002407,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 14.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 34.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,6%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22.4%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22.4%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 11,2% et la Résistance aux Dégâts Critiques de 22,4%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 33,6% et la Résistance aux Dégâts Critiques de 89,6%, d\'Élisa."
 757002408,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 15.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 35.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,7%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,7%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 22.8%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 22.8%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 11,4% et la Résistance aux Dégâts Critiques de 22,8%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 34,2% et la Résistance aux Dégâts Critiques de 91,2%, d\'Élisa."
 757002409,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 16.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 36.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 5,8%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 5,8%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 23.2%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 23.2%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 11,6% et la Résistance aux Dégâts Critiques de 23,2%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 34,8% et la Résistance aux Dégâts Critiques de 92,8%, d\'Élisa."
 757002410,Élisa,Bénédiction des Poissons,"
 Cette prodige au talent de peinture s\'est adonnée aux étoiles. Au début de la bataille, Élisa applique 1 couche de [c][e28002]Couleur Primaire · Rouge[-][/c], [c][e28002]Couleur Primaire · Jaune [-][/c] et [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 À la fin de chaque tour, Élisa se marque avec 1 couche d\'[c][e28002]Inspiration Artistique[-][/c].
 Lorsqu\'Élisa obtient 3 couches d\'[c][e28002]Inspiration Artistique[-][/c], elle consommera 2 couches d\'[c][e28002]Inspiration Artistique[-][/c] pour appliquer 1 couche de [c][e28002]Couleur Primaire · Bleu[-][/c] sur 2 ennemis aléatoires pendant 3 tours.
 
 [c][e28002]Couleur Primaire · Rouge (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 20.
+Chaque couche de Couleur Primaire · Rouge qu\'Élisa applique à sa cible réduit sa Vitesse de 50.
 [c][e28002]Couleur Primaire · Jaune (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 6%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
-Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 6%.
+Chaque couche de Couleur Primaire · Jaune qu\'Élisa applique à sa cible réduit son Blocage de 24%.[c][e28002]Couleur Primaire · Bleu (Effet de Compétence, 5 couches au maximum) :[-][/c]
+Chaque couche de Couleur Primaire · Bleu qu\'Élisa applique à sa cible réduit son Attaque de 24%.
 [c][e28002]Inspiration Artistique (Marque, 3 couches au maximum) :[-][/c]
-Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 12% et la Résistance aux Dégâts Critiques de 24%, d\'Élisa."
+Chaque couche d\'Inspiration Artistique augmente la Chance de Contrôle de 36% et la Résistance aux Dégâts Critiques de 96%, d\'Élisa."
 5101900,Melly,Attaque Basique,
 65102600,Melly,Attaque Basique,
 75101900,Melly,Attaque Basique,
