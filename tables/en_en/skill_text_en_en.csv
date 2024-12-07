@@ -11174,24 +11174,24 @@ If the target isn’t defeated after taking this damage, Gwen & Brigit will deal
 75600901,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (500% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (500% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (500% of Attack) damage to the target for a second time.
+Deals (1500% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1500% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1500% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1200% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (4800% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
 5600902,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 20%, Crit by 10%, Holy Damage by 40%, Control Immunity by 10%, and Speed by 20."
 65601902,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 30%, Crit by 20%, Holy Damage by 60%, Control Immunity by 20%, and Speed by 40."
-65601912,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 80%, Control Immunity by 30%, and Speed by 60."
-75600902,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 80%, Control Immunity by 30%, and Speed by 60."
+65601912,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 100%, Control Immunity by 30%, and Speed by 100."
+75600902,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 100%, Control Immunity by 80%, and Speed by 100."
 5600903,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
@@ -11217,25 +11217,25 @@ When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is att
 65601913,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (300% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (300% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (900% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (900% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 75600903,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (300% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (300% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (900% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (900% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 5600904,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
@@ -11253,7 +11253,7 @@ When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is att
 65601904,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (150% of Gwen & Brigit\'s Attack) BP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (150% of Gwen & Brigit\'s Attack) BP.
 When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 50% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11267,8 +11267,8 @@ When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is att
 65601914,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP.
-When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 70% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP.
+When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 80% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -11276,13 +11276,13 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 75600904,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP.
-When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 70% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP.
+When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 80% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
 A Skill Effect that can stack.
@@ -11290,157 +11290,157 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009011,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (510% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (510% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (510% of Attack) damage to the target for a second time.
+Deals (1600% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1600% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1600% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1260% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (5040% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
 756009012,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (520% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (520% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (520% of Attack) damage to the target for a second time.
+Deals (1700% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1700% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1700% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1320% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (5280% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
 756009013,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (530% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (530% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (530% of Attack) damage to the target for a second time.
+Deals (1800% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1800% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1800% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1380% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (5520% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
 756009014,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (540% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (540% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (540% of Attack) damage to the target for a second time.
+Deals (1900% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1800% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1800% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1440% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (5760% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
 756009015,Gwen & Brigit,Winged Deaths,"
 O butterfly, fluttereth thy wings!
 
-Deals (550% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
- If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (550% of Attack) damage to the target.
- If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (550% of Attack) damage to the target for a second time.
+Deals (2000% of Attack) damage to 3 random enemies (will target enemies afflicted with more stacks of [c][e28002]Gilded Butterflies[-][/c] first).
+ If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (2000% of Attack) damage to the target.
+ If the target is afflicted by at least 3 stacks of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (2000% of Attack) damage to the target for a second time.
  If the target is afflicted by at least 5 stacks of [c][e28002]Gilded Butterflies[-][/c], clears all but 2 stacks of [c][e28002]Gilded Butterflies[-][/c] from the target, and casts [c][e28002]Harbingers of Death[-][/c] to the target.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her.
 
 [c][e28002]Harbingers of Death:[-][/c]
 A Skill Effect, cannot be stacked. 
-Deals (1500% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
+Deals (6000% of Attack) fixed damage that will neither Crit nor be affected by attributes or effects that increase or reduce damage to the target. 
 If the target isn’t defeated after taking this damage, Gwen & Brigit will deal a Basic Attack."
-756009021,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 80%, Control Immunity by 30%, and Speed by 62."
-756009022,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 80%, Control Immunity by 30%, and Speed by 64."
-756009023,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 84%, Control Immunity by 30%, and Speed by 66."
-756009024,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 40%, Crit by 30%, Holy Damage by 84%, Control Immunity by 30%, and Speed by 68."
-756009025,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 43%, Crit by 30%, Holy Damage by 88%, Control Immunity by 30%, and Speed by 70."
+756009021,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 100%, Control Immunity by 80%, and Speed by 110."
+756009022,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 100%, Control Immunity by 80%, and Speed by 120."
+756009023,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 110%, Control Immunity by 80%, and Speed by 130."
+756009024,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 60%, Crit by 60%, Holy Damage by 110%, Control Immunity by 80%, and Speed by 140."
+756009025,Gwen & Brigit,Eternal Companions,"We are inseparable.\n\nIncreases Gwen & Brigit's Attack by 70%, Crit by 60%, Holy Damage by 120%, Control Immunity by 80%, and Speed by 150."
 756009031,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (306% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (306% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (920% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (920% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009032,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (312% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (312% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (940% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (940% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009033,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (318% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (318% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (960% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (960% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009034,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (324% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (324% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (980% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (980% of Attack) damage to it, and has 100% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009035,Gwen & Brigit,Cage of Concealment,"
 Brigit: “This Cage is perfect for hiding our spoils!”
 
-Basic Attack changed to deal (330% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (330% of Attack) damage to it, and has 100% chance to afflict 2 stacks of [c][e28002]Gilded Butterflies[-][/c] to the target.
+Basic Attack changed to deal (1000% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1000% of Attack) damage to it, and has 100% chance to afflict 2 stacks of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 2 stacks of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009041,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (318% of Gwen & Brigit\'s Attack) BP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1100% of Gwen & Brigit\'s Attack) BP.
 When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 80% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11449,12 +11449,12 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009042,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (346% of Gwen & Brigit\'s Attack) BP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1200% of Gwen & Brigit\'s Attack) BP.
 When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 80% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11463,40 +11463,12 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 756009043,Gwen & Brigit,Hour of Need,"
 Gwen: “Wealth belongs to those who need it the most.”
 
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (374% of Gwen & Brigit\'s Attack) BP.
-When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 85% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
-
-[c][e28002]Magick Barrier:[-][/c]
-A Skill Effect that can stack.
-Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
-
-[c][e28002]Gilded Butterflies: [-][/c]
-A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
-756009044,Gwen & Brigit,Hour of Need,"
-Gwen: “Wealth belongs to those who need it the most.”
-
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (402% of Gwen & Brigit\'s Attack) BP.
-When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 85% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
-
-[c][e28002]Magick Barrier:[-][/c]
-A Skill Effect that can stack.
-Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
-
-[c][e28002]Gilded Butterflies: [-][/c]
-A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
-756009045,Gwen & Brigit,Hour of Need,"
-Gwen: “Wealth belongs to those who need it the most.”
-
-When an ally deals a Critical Strike, she gains 10 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (430% of Gwen & Brigit\'s Attack) BP.
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1300% of Gwen & Brigit\'s Attack) BP.
 When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 90% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
 
 [c][e28002]Magick Barrier:[-][/c]
@@ -11505,8 +11477,36 @@ Nullifies all incoming damage for the owner. The Magick Barrier\'s durability de
 
 [c][e28002]Gilded Butterflies: [-][/c]
 A Skill Effect, can be stacked. 
-For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 5% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 5%.
-When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (300% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+756009044,Gwen & Brigit,Hour of Need,"
+Gwen: “Wealth belongs to those who need it the most.”
+
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1400% of Gwen & Brigit\'s Attack) BP.
+When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 90% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Gilded Butterflies: [-][/c]
+A Skill Effect, can be stacked. 
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
+756009045,Gwen & Brigit,Hour of Need,"
+Gwen: “Wealth belongs to those who need it the most.”
+
+When an ally deals a Critical Strike, she gains 100 Speed that lasts for 2 rounds and a [c][e28002]Magick Barrier[-][/c] with (1500% of Gwen & Brigit\'s Attack) BP.
+When other allies releases Active Skills or deals Basic Attacks, Gwen & Brigit has a 99% chance to afflict 1 stack of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to 3 enemies with the lowest HP.
+
+[c][e28002]Magick Barrier:[-][/c]
+A Skill Effect that can stack.
+Nullifies all incoming damage for the owner. The Magick Barrier\'s durability depends on how many Barrier Points (BP) it has: 1 BP nullifies 1 damage. When the Magick Barrier\'s BP reaches 0, it will shatter and disappear. A Magick Barrier can have up to (100% of owner\'s maximum HP) BP.
+
+[c][e28002]Gilded Butterflies: [-][/c]
+A Skill Effect, can be stacked. 
+For each stack of [c][e28002]Gilded Butterflies[-][/c] that the target has, it will have 15% more chance to take Critical Strikes from the Gwen & Brigit who afflicted this effect and Crit Damage of the Critical Strikes dealt by the aforementioned Gwen & Brigit will be increased by 30%.
+When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is attacked by the target afflicted by this effect, her Front-line allies will help take 30% of damage dealt and split the damage taken between themselves. (Damage that the Frontline allies take for her will be reduced by their own Damage Depletion attribute. When there are no allies in the Front-line to take damage for her, this effect will not be activated.) Gwen & Brigit will also grant a [c][e28002]Magick Barrier[-][/c] with (1000% of Gwen & Brigit\'s Attack) BP to her Front-line allies when they take damage for her."
 5501100,Maia,Basic Attack,Basic Attack
 65502000,Maia,Basic Attack,Basic Attack
 75501000,Maia,Basic Attack,Basic Attack
