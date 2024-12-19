@@ -11430,7 +11430,7 @@ When the Gwen & Brigit who afflicted [c][e28002]Gilded Butterflies[-][/c] is att
 Brigit: “This Cage is perfect for hiding our spoils!”
 
 Basic Attack changed to deal (1000% of Attack) damage to 3 enemies with the lowest HP on the battlefield.
-If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1000% of Attack) damage to it, and has 100% chance to afflict 2 stacks of [c][e28002]Gilded Butterflies[-][/c] to the target.
+If the target is afflicted by at least 1 stack of [c][e28002]Gilded Butterflies[-][/c], Gwen & Brigit will deal an extra (1000% of Attack) damage to it, and has 100% chance to afflict 3 stacks of [c][e28002]Gilded Butterflies[-][/c] to the target.
 At the start of the battle, Gwen & Brigit afflicts 2 stacks of [c][e28002]Gilded Butterflies[-][/c] that lasts for 4 rounds to all enemies.
 
 [c][e28002]Gilded Butterflies: [-][/c]
@@ -11516,7 +11516,7 @@ Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 Deals (200% of Attack) damage to 4 random enemies, has a 30% chance to remove 1 Attribute Increase Buff from the target and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
+A Skill Effect, can be stacked.
 [c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (300% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 65502001,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
@@ -11524,56 +11524,72 @@ Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 Deals (300% of Attack) damage to 4 random enemies, has a 50% chance to remove 1 Attribute Increase Buff from the target and afflict 2 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
+A Skill Effect, can be stacked.
 [c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 75501001,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (800% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (3600% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 5501102,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 10%, Attack by 20%, Heal Received by 10%, Control Immunity by 10%, and Speed by 40."
 65502002,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 20%, Attack by 30%, Heal Received by 20%, Control Immunity by 20%, and Speed by 60."
-65502012,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 80."
-75501002,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 80."
+65502012,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 175."
+75501002,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 175."
 5501103,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (200% of Attack) damage to 2 enemies with highest Attack attribute, lowers all damage they deal by 10% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (200% of Attack) damage to 2 enemies with highest Attack attribute, lowers all damage they deal by 10% (can be lowered for at most 40%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (300% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (300% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 4% of the target’s Maximum HP and 2% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 65502003,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (300% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 15% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (300% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 15% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
 A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 6% of the target’s Maximum HP and 3% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 65502013,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (600% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3000% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 75501003,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (600% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3000% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1500% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 5501104,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
@@ -11597,163 +11613,183 @@ Every stack of [c][e28002]Chaos Scar[-][/c] lowers 6% of the target’s Maximum 
 65502014,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (30% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (20% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (50% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (66% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]. "
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]. "
 75501004,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (30% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (20% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (50% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (66% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010011,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (880% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (3840% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1600% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5200% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 755010012,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (960% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (4080% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1700% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5400% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 755010013,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (1040% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (4320% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1800% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5600% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 755010014,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (1120% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (4560% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1900% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5800% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
 755010015,Maia,Calamity Claws,"
 Maia draws power from mortals’ desperation, wreaking havoc on her enemies.
 
-Deals (1200% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 3 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
+Deals (4800% of Attack) damage to 4 random enemies, has 100% chance to remove 1 Attribute Increase Buff from the target and afflict 6 stacks of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to it.
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (2000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
-755010021,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 82."
-755010022,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 84."
-755010023,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 86."
-755010024,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 30%, Attack by 40%, Heal Received by 30%, Control Immunity by 30%, and Speed by 88."
-755010025,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 33%, Attack by 43%, Heal Received by 30%, Control Immunity by 30%, and Speed by 90."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (6000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after being triggered."
+755010021,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 190."
+755010022,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 205."
+755010023,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 220."
+755010024,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 60%, Attack by 75%, Heal Received by 90%, Control Immunity by 90%, and Speed by 235."
+755010025,Maia,Goddess of Chaos,"As the Goddess of Chaos, Maia holds unimaginable powers.\n\nIncreases Maia's HP by 66%, Attack by 80%, Heal Received by 90%, Control Immunity by 90%, and Speed by 250."
 755010031,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (660% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3200% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1600% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5200% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010032,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (720% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3400% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1700% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5400% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010033,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (780% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3600% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1800% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5600% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010034,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (840% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 20% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (5% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (3800% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 40% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (20% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (1900% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (5800% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010035,Maia,Disciple Delirium,"
 Her maniac worshippers carry out her orders before her orders reach them.
 
-Basic Attack changes to deal (900% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 22% (can be lowered for at most 40%), and afflict 1 stack of [c][e28002]Malediction[-][/c] that lasts for 3 rounds to the targets.
-When attacked by Basic Attacks or Active Skills, Maia steals 10 Energy from the attacker and heals herself for (8% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
+Basic Attack changes to deal (4000% of Attack) damage to 2 enemies with highest Attack attribute, lower all damage they deal by 50% (can be lowered for at most 90%), and afflict 3 stack of [c][e28002]Malediction[-][/c] and 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 3 rounds to the targets.
+When attacked by Basic Attacks or Active Skills, Maia steals 60 Energy from the attacker and heals herself for (25% of Maia\'s Maximum HP) HP (She will only heal herself due to this effect for at most 6 times in a round).
 
 [c][e28002]Malediction:[-][/c]
-A Mark Effect, can be stacked.
-[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (2000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered."
+A Skill Effect, can be stacked.
+[c][e28002]Malediction[-][/c] will be triggered when the owner gains an Attribute Increase Buff. When triggered, it will remove 1 stack of Attribute Increase Buff and deal (6000% of Maia’s Attack) damage to the target. Stacks of [c][e28002]Malediction[-][/c] will be removed after triggered.
+
+[c][e28002]Chaos Scar:[-][/c]
+A Skill Effect, can be stacked.
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 30% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010041,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (32% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (20% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (55% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (66% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010042,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (34% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (20% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (60% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (66% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010043,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (36% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (23% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (65% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (75% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010044,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (8% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (38% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (23% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (30% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (70% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (75% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 8% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 25% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 755010045,Maia,Curse of Chaos,"
 Those who wish for the power of Chaos will only be scarred for eternity.
 
-At the end of each round, deals (10% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
-Deals (40% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
-When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (25% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
+At the end of each round, deals (33% of target’s Maximum HP) damage (No more than 2500% of Maia’s Attack) to all enemies and afflicts 1 stack of [c][e28002]Chaos Scar[-][/c] that lasts for 6 rounds to the targets. 
+Deals (75% of target\'s lost HP) extra damage (No more than 2500% of Maia’s Attack) to 2 enemies with the highest Attack attribute.
+When Maia takes Lethal damage, she will ignore this damage and all other damages taken in this round, and will recover (80% of Maia’s Maximum HP) HP at the end of each round starting from this round and in the 2 following rounds. (This effect can only be triggered once per battle)
 
 [c][e28002]Chaos Scar:[-][/c]
 A Skill Effect, can be stacked.
-Every stack of [c][e28002]Chaos Scar[-][/c] lowers 10% of the target’s Maximum HP and 5% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 40% Maximum HP and 40% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
+Every stack of [c][e28002]Chaos Scar[-][/c] lowers 30% of the target’s Maximum HP and 30% of Heal Received. Maximum HP lowered by [c][e28002]Chaos Scar[-][/c] cannot be recovered through healing effects. At most 90% Maximum HP and 90% Heal Received can be lowered by [c][e28002]Chaos Scar[-][/c]."
 200001101,Avalanchee,Skyward Wail,"
 Bone-chilling cold and bitterness form an urge to howl into the unknown...
 
